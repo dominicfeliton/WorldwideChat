@@ -577,4 +577,11 @@ Messages:
   wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima pogrešno podešavanje tabele.
     Otkucajte sledeću komandu za više informacija: /vvcd checkdb'
   wwctGUIRateButtonLore: 'Trenutna granica brzine: {0} Sekundi'
+  wwcConfigGUIVaultSupportButton: Prebacite podršku za trezor
+  wwcConfigConversationVaultSupportSuccess: Podrška za trezor uspešno je prebačena.
+  wwcVaultEnabled: Omogućena je podrška za trezor.
+  wwcVaultFoundButDisabled: Pronađen trezor, ali postojeći dodatak za ćaskanje nije
+    registrovan. Onemogućavanje podrške za Vault...
+  wwcConfigGUIToggleRestartRequired: Za primenu ove postavke potrebno je potpuno ponovno
+    pokretanje servera.
 

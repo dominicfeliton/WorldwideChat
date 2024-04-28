@@ -592,4 +592,11 @@ Messages:
   wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập bảng không chính xác.
     Nhập lệnh sau để biết thêm thông tin: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Giới hạn tỷ lệ hiện tại: {0} Giây'
+  wwcConfigGUIVaultSupportButton: Chuyển đổi hỗ trợ Vault
+  wwcConfigConversationVaultSupportSuccess: Hỗ trợ Vault đã bật thành công.
+  wwcVaultEnabled: Hỗ trợ Vault đã được kích hoạt.
+  wwcVaultFoundButDisabled: Vault được tìm thấy, nhưng không có plugin trò chuyện
+    hiện có nào được đăng ký. Vô hiệu hóa hỗ trợ Vault...
+  wwcConfigGUIToggleRestartRequired: Cần phải khởi động lại máy chủ đầy đủ để áp dụng
+    cài đặt này.
 

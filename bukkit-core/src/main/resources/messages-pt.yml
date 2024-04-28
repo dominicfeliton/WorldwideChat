@@ -604,4 +604,11 @@ Messages:
   wwcOldDatabaseStruct: 'O banco de dados escolhido tem uma configuração de tabela
     incorreta. Digite o seguinte comando para obter mais informações: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Limite de taxa atual: {0} segundos'
+  wwcConfigGUIVaultSupportButton: Alterne o suporte do Vault
+  wwcConfigConversationVaultSupportSuccess: O suporte do Vault foi ativado com sucesso.
+  wwcVaultEnabled: O suporte do Vault foi ativado.
+  wwcVaultFoundButDisabled: O cofre foi encontrado, mas nenhum plug-in de bate-papo
+    existente foi registrado. Desativando o suporte do Vault...
+  wwcConfigGUIToggleRestartRequired: É necessário reiniciar completamente o servidor
+    para aplicar essa configuração.
 

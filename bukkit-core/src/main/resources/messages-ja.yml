@@ -462,4 +462,9 @@ Messages:
   wwcdBadTable: テーブル {0} が内部定義に見つかりません。開発者に問い合わせてください。
   wwcOldDatabaseStruct: 選択したデータベースのテーブル設定が正しくありません。詳細については、次のコマンドを入力してください。/wwcd checkdb
   wwctGUIRateButtonLore: 現在のレート制限:{0} 秒
+  wwcConfigGUIVaultSupportButton: Vault サポートの切り替え
+  wwcConfigConversationVaultSupportSuccess: Vault サポートは正常に切り替えられました。
+  wwcVaultEnabled: Vault サポートが有効になりました。
+  wwcVaultFoundButDisabled: Vault は見つかりましたが、既存のチャットプラグインが登録されていません。Vault サポートを無効化中...
+  wwcConfigGUIToggleRestartRequired: この設定を適用するには、サーバーを完全に再起動する必要があります。
 

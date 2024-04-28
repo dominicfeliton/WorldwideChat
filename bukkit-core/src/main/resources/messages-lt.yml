@@ -593,4 +593,11 @@ Messages:
   wwcOldDatabaseStruct: 'Jūsų pasirinktoje duomenų bazėje yra neteisinga lentelės
     sąranka. Norėdami gauti daugiau informacijos, įveskite šią komandą: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Dabartinis greičio limitas: {0} Sekundės'
+  wwcConfigGUIVaultSupportButton: Perjungti Vault palaikymą
+  wwcConfigConversationVaultSupportSuccess: Vault palaikymas sėkmingai perjungtas.
+  wwcVaultEnabled: Vault palaikymas buvo įjungtas.
+  wwcVaultFoundButDisabled: Vault rastas, tačiau esamas pokalbių papildinys nebuvo
+    užregistruotas. Vault palaikymo išjungimas...
+  wwcConfigGUIToggleRestartRequired: Norint pritaikyti šį nustatymą, reikalingas visas
+    serverio paleidimas iš naujo.
 

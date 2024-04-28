@@ -637,4 +637,12 @@ Messages:
     avez choisie est incorrecte. Pour plus d''informations, tapez la commande suivante:
     /wwcd checkdb'
   wwctGUIRateButtonLore: 'Limite de débit actuelle: {0} secondes'
+  wwcConfigGUIVaultSupportButton: Toggle Vault Support
+  wwcConfigConversationVaultSupportSuccess: La prise en charge du coffre-fort s'est
+    déroulé avec succès.
+  wwcVaultEnabled: La prise en charge du coffre-fort a été activée.
+  wwcVaultFoundButDisabled: Vault trouvé, mais aucun plugin de chat existant n'a été
+    enregistré. Désactivation de la prise en charge de Vault...
+  wwcConfigGUIToggleRestartRequired: Un redémarrage complet du serveur est nécessaire
+    pour appliquer ce paramètre.
 

@@ -283,7 +283,7 @@ public class ConfigurationHandler {
 		}
 		// List of Errors to Ignore Settings
 		try {
-			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getList("Storage.errorsToIgnore"));
+			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getList("Translator.errorsToIgnore"));
 			main.getLogger().info(
 					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess", null));
 		} catch (Exception e) {

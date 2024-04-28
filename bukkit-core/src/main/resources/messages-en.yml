@@ -34,6 +34,8 @@ Messages:
   wwcSupportedVersion: 'Enabling features for version {0}...'
   wwcInvalidStorageSession: '{0} is enabled in your config, but a connection is not established. Please try reloading to fix this, but please contact the developer if you previously received a successful connection message from {0}.'
   wwcOldDatabaseStruct: 'Your chosen database has an incorrect table setup. Type the following command for more information: /wwcd checkdb'
+  wwcVaultEnabled: 'Vault support has been enabled.'
+  wwcVaultFoundButDisabled: 'Vault found, but no existing chat plugin has been registered. Disabling Vault support...'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'
@@ -65,6 +67,7 @@ Messages:
   wwcUpdaterFailedGeneric: 'Unable to check for WorldwideChat updates.'
   wwcUpdaterOutOfDateChat: 'WorldwideChat is out of date. Please update to the latest version.'
   #------------------- Configuration Messages -------------------
+  wwcConfigGUIToggleRestartRequired: 'A full server restart is required to apply this setting.'
   wwcConfigYAMLDefault: 'Defaulted to YAML for data storage.'
   wwcConfigConnectionSuccess: 'Successfully connected to {0}!'
   wwcConfigConnectionFail: 'Failed to connect to {0}.'
@@ -181,6 +184,7 @@ Messages:
   wwcConfigGUIResponseLimitButton: 'Change Translator Response Timeout'
   wwcConfigGUICharacterLimitButton: 'Change Message Character Limit'
   wwcConfigGUIIgnoreErrorsButton: 'Change Errors to Ignore'
+  wwcConfigGUIVaultSupportButton: 'Toggle Vault Support'
   wwcConfigGUICurrentPlayerLang: 'This is your current localization.'
   wwcConfigConversationAmazonTranslateToggleSuccess: 'Successfully toggled Amazon Translate. Reload for the change to take effect.'
   wwcConfigConversationGoogleTranslateToggleSuccess: 'Successfully toggled Google Translate. Reload for the change to take effect.'
@@ -288,6 +292,7 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: 'Successfully changed the PostgreSQL username.'
   wwcConfigConversationTogglePostgresSSLSuccess: 'SSL for PostgreSQL toggled successfully.'
   wwcConfigConversationPersistentCacheSuccess: 'Persistent cache toggled successfully.'
+  wwcConfigConversationVaultSupportSuccess: 'Vault support toggled successfully.'
   wwcConfigPersistentCacheEnabled: 'Cache data will persist across reloads.'
   wwcConfigPersistentCacheInvalid: 'Invalid persistent cache entry in config.yml. Defaulting to false...'
   #------------------- /wwcr Messages -------------------

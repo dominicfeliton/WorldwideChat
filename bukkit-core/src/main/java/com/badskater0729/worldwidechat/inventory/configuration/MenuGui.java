@@ -110,6 +110,7 @@ public class MenuGui implements InventoryProvider {
 				new GeneralSettingsConvos.SyncUserData()));
 		generalSet.add(new ToggleElement(1, 6, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats"));
 		generalSet.add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode"));
+		//generalSet.add(new ToggleElement(2, 1, "wwcConfigGUIVaultSupportButton", "wwcConfigConversationVaultSupportSuccess", "General.enableVaultSupport", true));
 		generalSet.add(new CommonElement(2, 4, "Quit"));
 		generalSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		generalSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.GEN_SET.ordinal()+1 + ""}));
@@ -129,7 +130,7 @@ public class MenuGui implements InventoryProvider {
 		// SQL
 		sqlSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		sqlSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleSQLButton", "wwcConfigConversationToggleSQLSuccess",
-				"Storage.useSQL", storageToggles));
+				"Storage.useSQL", storageToggles, false));
 		sqlSet.add(new ConvoElement(1, 2, "wwcConfigGUISQLHostnameButton", XMaterial.NAME_TAG,
 				new SQLSettingsConvos.Hostname()));
 		sqlSet.add(new ConvoElement(1, 3, "wwcConfigGUISQLPortButton", XMaterial.NAME_TAG,
@@ -150,7 +151,7 @@ public class MenuGui implements InventoryProvider {
 		// MongoDB
 		mongoSet.add(new BorderElement(XMaterial.ORANGE_STAINED_GLASS_PANE));
 		mongoSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleMongoButton", "wwcConfigConversationToggleMongoSuccess",
-				"Storage.useMongoDB", storageToggles));
+				"Storage.useMongoDB", storageToggles, false));
 		mongoSet.add(new ConvoElement(1, 2, "wwcConfigGUIMongoHostnameButton", XMaterial.NAME_TAG,
 				new MongoSettingsConvos.Hostname()));
 		mongoSet.add(new ConvoElement(1, 3, "wwcConfigGUIMongoPortButton", XMaterial.NAME_TAG,
@@ -170,7 +171,7 @@ public class MenuGui implements InventoryProvider {
 		// PostgreSQL
 		postgresSet.add(new BorderElement(XMaterial.GRAY_STAINED_GLASS_PANE));
 		postgresSet.add(new ToggleElement(1, 1, "wwcConfigGUITogglePostgresButton", "wwcConfigConversationTogglePostgresSuccess",
-				"Storage.usePostgreSQL", storageToggles));
+				"Storage.usePostgreSQL", storageToggles, false));
 		postgresSet.add(new ConvoElement(1, 2, "wwcConfigGUIPostgresHostnameButton", XMaterial.NAME_TAG,
 				new PostgresSettingsConvos.Hostname()));
 		postgresSet.add(new ConvoElement(1, 3, "wwcConfigGUIPostgresPortButton", XMaterial.NAME_TAG,
@@ -232,7 +233,7 @@ public class MenuGui implements InventoryProvider {
 		// Watson Translator
 		transWatsonSet.add(new BorderElement(XMaterial.LIGHT_BLUE_STAINED_GLASS_PANE));
 		transWatsonSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleWatsonTranslateButton", "wwcConfigConversationWatsonTranslateToggleSuccess",
-				"Translator.useWatsonTranslate", translatorToggles));
+				"Translator.useWatsonTranslate", translatorToggles, false));
 		transWatsonSet.add(new ConvoElement(1, 2, "wwcConfigGUIWatsonAPIKeyButton", XMaterial.NAME_TAG, 
 				new WatsonSettingsConvos.ApiKey()));
 		transWatsonSet.add(new ConvoElement(1, 3, "wwcConfigGUIWatsonURLButton", XMaterial.NAME_TAG,
@@ -244,7 +245,7 @@ public class MenuGui implements InventoryProvider {
 		// Google Translator
 		transGoogleSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
 		transGoogleSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleGoogleTranslateButton", "wwcConfigConversationGoogleTranslateToggleSuccess",
-				"Translator.useGoogleTranslate", translatorToggles));
+				"Translator.useGoogleTranslate", translatorToggles, false));
 		transGoogleSet.add(new ConvoElement(1, 2, "wwcConfigGUIGoogleTranslateAPIKeyButton", XMaterial.NAME_TAG, 
 				new GoogleSettingsConvos.ApiKey()));
 		transGoogleSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
@@ -254,7 +255,7 @@ public class MenuGui implements InventoryProvider {
 		// Amazon Translator
 		transAmazonSet.add(new BorderElement(XMaterial.YELLOW_STAINED_GLASS_PANE));
 		transAmazonSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleAmazonTranslateButton", "wwcConfigConversationAmazonTranslateToggleSuccess",
-				"Translator.useAmazonTranslate", translatorToggles));
+				"Translator.useAmazonTranslate", translatorToggles, false));
 		transAmazonSet.add(new ConvoElement(1, 2, "wwcConfigGUIAmazonTranslateAccessKeyButton", XMaterial.NAME_TAG,
 				new AmazonSettingsConvos.AccessKey()));
 		transAmazonSet.add(new ConvoElement(1, 3, "wwcConfigGUIAmazonTranslateSecretKeyButton", XMaterial.NAME_TAG, 
@@ -268,7 +269,7 @@ public class MenuGui implements InventoryProvider {
 		// Libre Translator
 		transLibreSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		transLibreSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleLibreTranslateButton", "wwcConfigConversationLibreTranslateToggleSuccess",
-				"Translator.useLibreTranslate", translatorToggles));
+				"Translator.useLibreTranslate", translatorToggles, false));
 	    transLibreSet.add(new ConvoElement(1, 2, "wwcConfigGUILibreTranslateURLButton", XMaterial.NAME_TAG,
 	    		new LibreSettingsConvos.Url()));
 		transLibreSet.add(new ConvoElement(1, 3, "wwcConfigGUILibreTranslateApiKeyButton", XMaterial.NAME_TAG,
@@ -280,7 +281,7 @@ public class MenuGui implements InventoryProvider {
 		// DeepL Translator
 		transDeepSet.add(new BorderElement(XMaterial.BLUE_STAINED_GLASS_PANE));
 		transDeepSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleDeepLTranslateButton", "wwcConfigConversationDeepLTranslateToggleSuccess",
-				"Translator.useDeepLTranslate", translatorToggles));
+				"Translator.useDeepLTranslate", translatorToggles, false));
 		transDeepSet.add(new ConvoElement(1, 2, "wwcConfigGUIDeepLTranslateApiKeyButton", XMaterial.NAME_TAG,
 	    		new DeepLSettingsConvos.ApiKey()));
 		transDeepSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
@@ -290,7 +291,7 @@ public class MenuGui implements InventoryProvider {
 		// Azure Translator
 		transAzureSet.add(new BorderElement(XMaterial.GREEN_STAINED_GLASS_PANE));
 		transAzureSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleAzureTranslateButton", "wwcConfigConversationAzureTranslateToggleSuccess",
-				"Translator.useAzureTranslate", translatorToggles));
+				"Translator.useAzureTranslate", translatorToggles, false));
 		transAzureSet.add(new ConvoElement(1, 2, "wwcConfigGUIAzureTranslateApiKeyButton", XMaterial.NAME_TAG,
 				new AzureSettingsConvos.ApiKey()));
 		transAzureSet.add(new ConvoElement(1, 3, "wwcConfigGUIAzureTranslateRegionButton", XMaterial.NAME_TAG,
@@ -302,7 +303,7 @@ public class MenuGui implements InventoryProvider {
 		// Systran Translator
 		transSystranSet.add(new BorderElement(XMaterial.CYAN_STAINED_GLASS_PANE));
 		transSystranSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleSystranTranslateButton", "wwcConfigConversationSystranTranslateToggleSuccess",
-				"Translator.useSystranTranslate", translatorToggles));
+				"Translator.useSystranTranslate", translatorToggles, false));
 		transSystranSet.add(new ConvoElement(1, 2, "wwcConfigGUISystranTranslateApiKeyButton", XMaterial.NAME_TAG,
 				new SystranSettingsConvos.ApiKey()));
 		transSystranSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
@@ -358,14 +359,21 @@ public class MenuGui implements InventoryProvider {
 		public List<String> configValsToDisable = new ArrayList<>();
 
 		private WWCInventoryManager invManager = instance.getInventoryManager();
-		
+
+		private boolean restartRequired;
+
+		public ToggleElement(int x_, int y_, String buttonName_, String onSuccess_, String configName_, boolean serverRestartRequired_) {
+			this(x_, y_, buttonName_, onSuccess_, configName_, null, serverRestartRequired_);
+		}
+
 		public ToggleElement(int x_, int y_, String buttonName_, String onSuccess_, String configName_) {
-			this(x_, y_, buttonName_, onSuccess_, configName_, null);
+			this(x_, y_, buttonName_, onSuccess_, configName_, null, false);
 		}
 		
-		public ToggleElement(int x_, int y_, String buttonName_, String onSuccess_, String configName_, List<String> configValsToDisable_) {
+		public ToggleElement(int x_, int y_, String buttonName_, String onSuccess_, String configName_, List<String> configValsToDisable_, boolean serverRestartRequired_) {
 			super(x_, y_, buttonName_, null);
-			
+
+			restartRequired = serverRestartRequired_;
 			configName = configName_;
 			onSuccess = onSuccess_;
 			if (configValsToDisable_ != null) {
@@ -377,7 +385,7 @@ public class MenuGui implements InventoryProvider {
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
 			invManager.genericToggleButton(x, y, player, contents, buttonName,
-					onSuccess, configName, configValsToDisable);
+					onSuccess, configName, configValsToDisable, restartRequired);
 		}
 		
 	}

@@ -604,4 +604,11 @@ Messages:
   wwcOldDatabaseStruct: 'De door u gekozen database heeft een onjuiste tabelconfiguratie.
     Typ de volgende opdracht voor meer informatie: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Huidige snelheidslimiet: {0} seconden'
+  wwcConfigGUIVaultSupportButton: Toggle Vault-ondersteuning
+  wwcConfigConversationVaultSupportSuccess: Vault-ondersteuning is succesvol omgeschakeld.
+  wwcVaultEnabled: Vault-ondersteuning is ingeschakeld.
+  wwcVaultFoundButDisabled: Vault gevonden, maar er is geen bestaande chatplug-in
+    geregistreerd. Vault-ondersteuning uitschakelen...
+  wwcConfigGUIToggleRestartRequired: Een volledige herstart van de server is vereist
+    om deze instelling toe te passen.
 

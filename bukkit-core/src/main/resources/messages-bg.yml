@@ -598,4 +598,11 @@ Messages:
   wwcOldDatabaseStruct: 'Избраната от вас база данни има неправилна настройка на таблицата.
     Въведете следната команда за повече информация: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Ограничение на текущата скорост: {0} секунди'
+  wwcConfigGUIVaultSupportButton: Превключване на поддръжката на трезора
+  wwcConfigConversationVaultSupportSuccess: Поддръжката на трезора се превключва успешно.
+  wwcVaultEnabled: Поддръжката на трезора е активирана.
+  wwcVaultFoundButDisabled: Намерен е трезор, но не е регистриран съществуващ приставка
+    за чат. Деактивиране на поддръжката на Vault...
+  wwcConfigGUIToggleRestartRequired: За да приложите тази настройка, е необходимо
+    пълно рестартиране на сървъра.
 

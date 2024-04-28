@@ -1069,6 +1069,11 @@ public class CommonRefs {
 			return true;
 		}
 
+		if (main.getErrorsToIgnore().isEmpty()) {
+			debugMsg("Errors to ignore is empty!");
+			return false;
+		}
+
 		// This is a special character. If the user puts this character, then we ignore all errors.
 		if (main.getErrorsToIgnore().contains("*")) return true;
 

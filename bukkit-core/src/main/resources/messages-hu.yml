@@ -598,4 +598,11 @@ Messages:
   wwcOldDatabaseStruct: 'A kiválasztott adatbázis helytelen táblázatbeállítással rendelkezik.
     További információkért írja be a következő parancsot: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Jelenlegi sebességkorlátozás: {0} Másodperc'
+  wwcConfigGUIVaultSupportButton: Váltsa át a Vault támogatást
+  wwcConfigConversationVaultSupportSuccess: A Vault támogatás sikeresen váltott.
+  wwcVaultEnabled: A Vault támogatás engedélyezve van.
+  wwcVaultFoundButDisabled: Vault található, de nem regisztráltak meglévő csevegőbővítményt.
+    A Vault támogatás letiltása...
+  wwcConfigGUIToggleRestartRequired: A beállítás alkalmazásához teljes kiszolgáló
+    újraindítása szükséges.
 

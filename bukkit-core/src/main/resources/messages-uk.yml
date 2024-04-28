@@ -583,4 +583,11 @@ Messages:
   wwcOldDatabaseStruct: 'Вибрана вами база даних має неправильне налаштування таблиці.
     Введіть наступну команду для отримання додаткової інформації: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Поточний ліміт швидкості: {0} секунди'
+  wwcConfigGUIVaultSupportButton: Увімкнути підтримку сховища
+  wwcConfigConversationVaultSupportSuccess: Підтримка сховища успішно переключена.
+  wwcVaultEnabled: Підтримка сховища увімкнена.
+  wwcVaultFoundButDisabled: Знайдено сховище, але жоден існуючий плагін чату не зареєстрований.
+    Відключення підтримки сховища...
+  wwcConfigGUIToggleRestartRequired: Щоб застосувати цей параметр, необхідний повний
+    перезапуск сервера.
 

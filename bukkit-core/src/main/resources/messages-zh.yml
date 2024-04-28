@@ -452,4 +452,9 @@ Messages:
   wwcdBadTable: 在内部定义中找不到表 {0}。请联系开发者。
   wwcOldDatabaseStruct: 您选择的数据库的表设置不正确。键入以下命令以获取更多信息：/wwcd checkdb
   wwctGUIRateButtonLore: 当前速率限制：{0} 秒
+  wwcConfigGUIVaultSupportButton: 切换保管库支持
+  wwcConfigConversationVaultSupportSuccess: 保管库支持已成功切换。
+  wwcVaultEnabled: 保管库支持已启用。
+  wwcVaultFoundButDisabled: 已找到保管库，但尚未注册任何现有的聊天插件。禁用保管库支持...
+  wwcConfigGUIToggleRestartRequired: 要应用此设置，需要完全重新启动服务器。
 

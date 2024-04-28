@@ -590,4 +590,11 @@ Messages:
   wwcOldDatabaseStruct: 'Izbrana zbirka podatkov ima napačno nastavitev tabele. Za
     več informacij vnesite naslednji ukaz: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Trenutna omejitev hitrosti: {0} Sekunde'
+  wwcConfigGUIVaultSupportButton: Preklopi podporo za Vault
+  wwcConfigConversationVaultSupportSuccess: Podpora za trezorje je bila uspešno preklopljena.
+  wwcVaultEnabled: Podpora za trezor je omogočena.
+  wwcVaultFoundButDisabled: Najden je trezor, vendar ni registriran noben obstoječi
+    vtičnik za klepet. Onemogočanje podpore za Vault...
+  wwcConfigGUIToggleRestartRequired: Za uporabo te nastavitve je potreben popoln ponovni
+    zagon strežnika.
 

@@ -639,3 +639,11 @@ Messages:
     avez choisie est incorrecte. Tapez la commande suivante pour plus d''informations:
     /wwcd checkdb'
   wwctGUIRateButtonLore: 'Limite de débit actuelle: {0} secondes'
+  wwcConfigGUIVaultSupportButton: Assistance Toggle Vault
+  wwcConfigConversationVaultSupportSuccess: La prise en charge de Vault a été activée
+    avec succès.
+  wwcVaultEnabled: La prise en charge de Vault a été activée.
+  wwcVaultFoundButDisabled: Vault a été trouvé, mais aucun plugin de chat existant
+    n'a été enregistré. Désactivation de la prise en charge de Vault...
+  wwcConfigGUIToggleRestartRequired: Un redémarrage complet du serveur est nécessaire
+    pour appliquer ce paramètre.

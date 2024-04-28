@@ -561,4 +561,11 @@ Messages:
   wwcOldDatabaseStruct: 'Teie valitud andmebaasis on vale tabeli seadistus. Lisateabe
     saamiseks tippige järgmine käsk: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Praegune kiiruse piirang: {0} Sekundid'
+  wwcConfigGUIVaultSupportButton: Lülitage Vaulti tugi
+  wwcConfigConversationVaultSupportSuccess: Vault-tugi lülitati edukalt.
+  wwcVaultEnabled: Vault-tugi on lubatud.
+  wwcVaultFoundButDisabled: Vault leiti, kuid olemasolevat vestluse pistikprogrammi
+    pole registreeritud. Vaulti toe keelamine...
+  wwcConfigGUIToggleRestartRequired: Selle sätte rakendamiseks on vajalik serveri
+    täielik taaskäivitamine.
 

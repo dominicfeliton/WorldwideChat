@@ -392,6 +392,41 @@ public class WorldwideChatTests {
 		testCommands.runPlayerTest("wwcg player1 en es", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwcl player1 en
+		testCommands.runPlayerTest("wwcl player1 en", player1);
+		PlayerRecord currRecord = plugin.getPlayerRecord(player1, false);
+		assertEquals("en", currRecord.getLocalizationCode());
+
+		// Player - /wwcl player1 stop
+		testCommands.runPlayerTest("wwcl player1 stop", player1);
+		currRecord = plugin.getPlayerRecord(player1, false);
+		assertEquals("", currRecord.getLocalizationCode());
+
+		// Player - /wwcl en
+		testCommands.runPlayerTest("wwcl en", player1);
+		currRecord = plugin.getPlayerRecord(player1, false);
+		assertEquals("en", currRecord.getLocalizationCode());
+
+		// Player - /wwcl stop
+		testCommands.runPlayerTest("wwcl stop", player1);
+		currRecord = plugin.getPlayerRecord(player1, false);
+		assertEquals("", currRecord.getLocalizationCode());
+
+		// Player - /wwcl player1 en (using another player)
+		testCommands.runPlayerTest("wwcl player2 en", player1);
+		currRecord = plugin.getPlayerRecord(player2, false);
+		PlayerRecord currRecord2 = plugin.getPlayerRecord(player1, false);
+		assertEquals("en", currRecord.getLocalizationCode());
+		assertEquals("", currRecord2.getLocalizationCode());
+
+		// Player - /wwcl player1 stop (using another player)
+		testCommands.runPlayerTest("wwcl player2 stop", player1);
+		testCommands.runPlayerTest("wwcl player1 en", player1);
+		currRecord = plugin.getPlayerRecord(player2, false);
+		currRecord2 = plugin.getPlayerRecord(player1, false);
+		assertEquals("", currRecord.getLocalizationCode());
+		assertEquals("en", currRecord2.getLocalizationCode());
 		
 		/* Print finished message */
 		sendCompletedMessage();

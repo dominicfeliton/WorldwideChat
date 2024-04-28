@@ -582,4 +582,12 @@ Messages:
   wwcOldDatabaseStruct: 'Den valgte database har en forkert tabelopsætning. Skriv
     følgende kommando for at få flere oplysninger: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Nuværende hastighedsgrænse: {0} sekunder'
+  wwcConfigGUIVaultSupportButton: Skift til understøttelse af Vault
+  wwcConfigConversationVaultSupportSuccess: Understøttelse af Vault er slået til med
+    succes.
+  wwcVaultEnabled: Understøttelse af Vault er blevet aktiveret.
+  wwcVaultFoundButDisabled: Vault fundet, men der er ikke registreret nogen eksisterende
+    chat-plugin. Deaktivering af Vault-understøttelse...
+  wwcConfigGUIToggleRestartRequired: En fuld servergenstart er påkrævet for at anvende
+    denne indstilling.
 

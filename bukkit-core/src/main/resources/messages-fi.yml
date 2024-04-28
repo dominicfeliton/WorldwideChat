@@ -577,4 +577,11 @@ Messages:
   wwcOldDatabaseStruct: 'Valitsemassasi tietokannassa on virheellinen taulukon asetukset.
     Kirjoita seuraava komento saadaksesi lisätietoja: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Nykyinen nopeusraja: {0} sekuntia'
+  wwcConfigGUIVaultSupportButton: Vaihda säilytystilan tuki
+  wwcConfigConversationVaultSupportSuccess: Holvin tuki vaihdettiin onnistuneesti.
+  wwcVaultEnabled: Säilytystuki on otettu käyttöön.
+  wwcVaultFoundButDisabled: Vault löytyi, mutta olemassa olevaa chat-laajennusta ei
+    ole rekisteröity. Vault-tuen poistaminen käytöstä...
+  wwcConfigGUIToggleRestartRequired: Tämän asetuksen käyttäminen edellyttää palvelimen
+    täydellistä uudelleenkäynnistystä.
 

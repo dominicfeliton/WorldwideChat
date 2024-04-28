@@ -1,0 +1,618 @@
+Messages:
+  wwcgAutoTranslateStart: இப்போது உலகளாவிய அரட்டை {0} க்கு மொழிபெயர்க்கிறது.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: உலகளாவிய அரட்டை {0} க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: அமேசான் அணுகல் விசையை மாற்றவும்
+  wwcrFail: WorldWideSaat மீண்டும் ஏற்றத் தவறியது.
+  wwcConfigGUIUpdateCheckerButton: மேம்படுத்தல்கள் தாமதத்திற்கான சரிபார்க்கவும்
+  wwcUpdaterFailedGeneric: WorldWideSat மேம்படுத்தல்கள் சரிபார்க்க முடியவில்லை.
+  wwcConfigConversationUpdateCheckerInput: புதுப்பிப்பு சரிபார்ப்பு தற்போதைய தாமதம்
+    {0} விநாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 10 விட அதிகமாக எதையும் தட்டச்சு,
+    அல்லது மீண்டும் செல்ல 10 குறைவாக எதையும்.
+  wwctGUIMainMenuGlobal: உலகளாவிய மொழிபெயர்ப்பு பட்டி
+  wwcConfigConversationPluginUpdateChatSuccess: செருகுநிரல் மேம்படுத்தல் அரட்டை நினைவூட்டல்
+    வெற்றிகரமாக மாற்றப்பட்டது.
+  wwctbOnTarget: '{0} க்கு புத்தக மொழிபெயர்ப்பு இயக்கப்பட்டது.'
+  wwcsNotATranslator: '{0} க்கு இதுவரை பதிவுகள் எதுவும் கிடைக்கவில்லை.'
+  wwcConfigGUIbStatsButton: மாற்று bStats
+  wwctGUINewTranslationSource: மூல மொழியைத் தேர்வு செய்க
+  wwcConfigConnectionFailed: '{0} உடன் இணைக்கத் தவறியது. உங்கள் சான்றுகள் மற்றும்
+    ஃபயர்வால் சரியாக உள்ளமைக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்!'
+  wwcConfigEnabledbStats: BStATகளை இயக்கினார்.
+  wwctGUIMainMenuPlayer: '{0} இன் மொழிபெயர்ப்பு பட்டி'
+  wwctGUIBookButton: மாற்று நூல் மொழிபெயர்ப்பு
+  wwcLangDetected: கண்டறியப்பட்ட மொழி {0}.
+  wwcBookTranslateStart: இலக்கு புத்தகத்தை மொழிபெயர்த்தல்...
+  wwcConfigDisabledbStats: முடக்கப்பட்டது bStats.
+  wwctsOffSender: கையெழுத்திட மொழிபெயர்ப்பு முட
+  wwcUpdaterParserFailed: கிட்ஹப் இருந்து புதுப்பிப்பு தரவை பாகுபடுத்தத் தவறியது.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: தற்போதைய இரகசிய விசை {0} ஆகும்.
+    தயவுசெய்து உள்ளீடு செய்க அமேசான் ஒரு இரகசிய விசையை, அல்லது திரும்பி செல்ல 0 தட்டச்சு
+    செய்யவும்.
+  wwctbOffSender: புத்தக மொழிபெயர்ப்பு முடக்கப்பட்டது.
+  wwcConfigGUIAmazonTranslateButton: அமேசான் மொழிபெயர்ப்பு
+  wwcConfigConversationLangSuccess: சொருகி மொழி வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcsSuccessfulTranslations: 'வெற்றிகரமான மொழிபெயர்ப்புகள்: {0}'
+  wwcConfigConversationTranslationCacheInput: தற்போதைய மொழிபெயர்ப்பு கேச் வரம்பு {0}
+    சொற்றொடர்கள் ஆகும். ஒரு புதிய மதிப்பை அமைக்க 0 ஐ விட அதிகமான எதையும் தட்டச்சு
+    செய்யவும் அல்லது மொழிபெயர்ப்பு கேச் முடக்குவதற்கு 0 ஐ தட்டச்சு செய்யவும். திரும்பி
+    செல்ல 0 குறைவாக எதையும் தட்டச்சு செய்யவும்.
+  wwctbOffTarget: '{0} க்கு புத்தக மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.'
+  wwcConfigGUIGeneralSettings: பொதுக் கட்டமைப்பு
+  wwcInvalidLang: உங்கள் config.yml உள்ள தவறான மொழி. en க்கு இயல்புநிலைக்கு...
+  wwcConfigConversationAmazonTranslateRegionSuccess: அமேசான் பிராந்தியம் வெற்றிகரமாக
+    அமைக்க.
+  wwcConfigRateLimitEnabled: உலகளாவிய வீத வரம்பு இயக்கப்பட்டு, {0} வினாடிகளுக்கு அமைக்கப்பட்டது.
+  wwcConfigGUILangButton: சொருகி மொழியை மாற்ற
+  wwctGUISignButton: மாற்று சைகை மொழிபெயர்ப்பு
+  wwcUpdaterOutOfDate: WorldWideSat தேதி இல்லை. தயவுசெய்து சமீபத்திய பதிப்பு, {0}
+    க்கு புதுப்பிக்கவும்.
+  wwcConfigGUINextPageButton: அடுத்த பக்கம்
+  wwcConfigInvalidTranslatorSettings: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள்! உங்கள் config.yml
+    ஒரே ஒரு மொழிபெயர்ப்பாளர் செயல்படுத்த கொள்ளவும்.
+  wwcConfigGUIQuitButton: மாற்றங்களை வெளியேறவும் சேமிக்கவும்
+  wwctPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
+  wwcConfigGUIAmazonTranslateRegionButton: அமேசான் பிராந்தியம் மாற்ற
+  wwcConfigConversationLangInvalid: செல்லுபடியாகாத மொழி குறியீடு!
+  wwcConfigGUIWatsonAPIKeyButton: மாற்றம் வாட்சன் ஏபிஐ சாவி
+  wwcEnabled: செயல்படுத்தப்பட்டது WorldWideSat பதிப்பு {0}.
+  wwctbOnSender: புத்தக மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு புத்தகம்
+    வைத்திருக்கும் போது வலது கிளிக்!
+  wwcListenersInitialized: கேட்போர் துவக்கினார்.
+  wwcConfigGUIPluginUpdateChatButton: செருகுநிரல் மேம்படுத்தல்கள் அரட்டை நினைவூட்டல்
+    அனுப்பவும்
+  wwcConfigConversationSendTranslationChatSuccess: செயலில் மொழிபெயர்ப்பாளர் அரட்டை
+    நினைவூட்டல் வெற்றிகரமாக மாற்றப்பட்டது.
+  wwctsOffTarget: '{0} க்கு உள்நுழை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.'
+  wwcUpdaterConnectionFailed: Github இல் சமீபத்திய புதுப்பிப்புகளைச் சரிபார்க்க முடியவில்லை.
+  watsonNotFoundExceptionNotification: எந்த மேலும் உங்கள் உள்ளீடு மொழிபெயர்க்க முடியவில்லை.
+  wwcConfigConversationWatsonAPIKeyInput: தற்போதைய API விசை உள்ளீடு வாட்சன் ஒரு API
+    விசை, அல்லது திரும்பி செல்ல 0 வகை தயவு செய்து.
+  wwctGUIStopButton: மொழிபெயர்ப்பு நிறுத்து
+  wwcgTranslationStopped: உலகளாவிய அரட்டை மொழிபெயர்ப்பு நிறுத்தப்பட்டுள்ளது.
+  wwcUpdaterFutureDate: WorldWideSaat இந்த நிகழ்வில் சமீபத்திய பொது ஒரு விட அதிக பதிப்பு
+    உள்ளது.
+  wwcConfigConversationPrefixSuccess: முன்னொட்டு வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Google மொழிபெயர்க்க API விசையை மாற்ற
+  wwcSignDeletedOrTooLong: 'இலக்கு அடையாளம் ஒன்று நீக்கப்பட்டது அல்லது மொழிபெயர்ப்பு
+    நீண்ட இருந்தது. மொழிபெயர்ப்பு:'
+  wwctsOnTarget: '{0} க்கு உள்நுழை மொழிபெயர்ப்பு இயக்கப்பட்டது.'
+  wwcConfigCacheDisabled: மொழிபெயர்ப்பாளர் கேச் முடக்கப்பட்டுள்ளது.
+  wwcConfigConversationWatsonURLInput: தற்போதைய URL {0} ஆகும். வாட்சனுக்கு ஒரு சேவை
+    URL ஐ உள்ளிடவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும்.
+  wwcBookDone: புத்தகம் வெற்றிகரமாக மொழிபெயர்க்கப்பட்டது.
+  wwctsOnSender: சைகை மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு அடையாளம் வலது
+    கிளிக்!
+  watsonColorCodeWarning: வண்ண குறியீடுகள் பயன்படுத்தி நீங்கள் எதிர்பாராத முடிவுகளை
+    கொடுக்க கூடும்.
+  wwctGUITranslationButton: மொழிபெயர்ப்பைத் தொடங்குங்கள்
+  wwctGUIAutoDetectButton: தன்னியக்க கண்டறிய மூல மொழி
+  wwcUpdaterUpToDate: WorldWideSat தேதி வரை உள்ளது!
+  wwcConfigConversationAmazonTranslateRegionInput: தற்போதைய பிராந்தியம் {0} ஆகும்.
+    அமேசான் ஒரு பிராந்தியத்தை உள்ளிடவும் அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
+  wwcNoConsole: இந்த கட்டளை ஒரு வீரர் மட்டுமே ஓட முடியும்.
+  wwcInitializationFail: WorldWideSaட்டை துவக்கத் தவறியது.
+  wwcrSuccess: வெற்றிகரமாக WorldWideSat ஏற்றப்பட்டது.
+  wwcPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
+  wwcUpdaterOutOfDateChat: WorldWideSat தேதி இல்லை. சமீபத்திய பதிப்பு புதுப்பிக்கவும்.
+  wwcConfigConversationRateLimitSuccess: விகிதம் எல்லை வெற்றிகரமாக அமைக்க.
+  wwcConfigConversationWatsonURLSuccess: வாட்சன் URL ஐ வெற்றிகரமாக அமைக்க.
+  wwctbPlayerNotFound: ஆட்டக்காரர் {0} ஒன்று காணப்படவில்லை, அல்லது செயலூக்க மொழிபெயர்ப்பாளர்
+    அல்ல.
+  wwcConfigConversationTranslationCacheSuccess: மொழிபெயர்ப்பு கேச் எல்லை வெற்றிகரமாக
+    அமைக்க.
+  wwctInvalidArgs: செல்லுபடியாகும் வாதங்கள் வழங்கப்படும்!
+  wwcConfigGUIPrefixButton: சொருகி முன்னொட்டு மாற்றவும்
+  wwctSameLangError: அதே மொழிக்கு நீங்கள் மொழிபெயர்க்க முடியாது!
+  wwctGUINewTranslationTarget: இலக்கு மொழியைத் தேர்வுசெய்க
+  wwcConfigConnectionSuccess: வெற்றிகரமாக இணைக்கப்பட்டது {0}!
+  wwcConfigGUIGoogleTranslateButton: கூகிள் மொழிபெயர்ப்பு
+  wwcConfigGUIPreviousPageButton: முந்தைய பக்கம்
+  wwcConfigGUITranslatorCacheButton: மொழிபெயர்ப்பு கேச் வரம்பை மாற்றவும்
+  wwcConfigConversationbStatsSuccess: வெற்றிகரமாக BStATக்களை மாற்றியது.
+  wwcSignDone: உள்நுழை வெற்றிகரமாக மொழிபெயர்க்கப்பட்டது.
+  wwcConfigInvalidPrefixSettings: உங்கள் முன்னொட்டைப் படிக்கத் தவறியது. இயல்புநிலை
+    பயன்படுத்தி...
+  wwcConfigRateLimitInvalid: மோசமான விகிதம் எல்லை config.yml அமைக்க. 0 விநாடிகளுக்கு
+    இயல்புநிலைக்கு...
+  wwcSignTranslateStart: இலக்கு அடையாளம் மொழிபெயர்ப்பது...
+  wwcConfigGUIChatSettings: அரட்டை கட்டமைப்பு
+  wwcConfigGUIWatsonURLButton: வாட்சன் சேவை URL ஐ மாற்றவும்
+  wwcConfigConversationUpdateCheckerSuccess: புதுப்பிக்கப்பட்டது சரிபார்ப்பு தாமதம்
+    வெற்றிகரமாக அமைக்க.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: குளோபல் அரட்டை {0} இலிருந்து {1}
+    க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
+  wwcConfigGUITranslatorSettings: மொழிபெயர்ப்பாளர் கட்டமைப்பு
+  wwcConfigConversationGoogleTranslateAPIKeyInput: தற்போதைய API விசை {0} ஆகும். Google
+    Translate க்கான API விசையை உள்ளிடவும், அல்லது மீண்டும் செல்ல 0 ஐ தட்டச்சு செய்யவும்.
+  wwcConfigConversationRateLimitInput: ஒரு மொழிபெயர்ப்புக்கு தற்போதைய உலகளாவிய வீத
+    வரம்பு {0} வினாடிகள் ஆகும். ஒரு புதிய மதிப்பை அமைக்க 0 ஐ விட அதிகமான எதையும் தட்டச்சு
+    செய்யவும் அல்லது வரம்பை முடக்க 0 ஐ தட்டச்சு செய்யவும். திரும்பி செல்ல 0 குறைவாக
+    எதையும் தட்டச்சு செய்யவும்.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google மொழிபெயர்க்க API விசை
+    தொகுப்பு வெற்றிகரமாக.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: அமேசான் இரகசிய சாவி மாற்ற
+  wwcVersion: WorldWideSat, பதிப்பு
+  wwcsAttemptedTranslations: 'முயற்சித்த மொழிபெயர்ப்புகள்: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: வெற்றிகரமாக அமேசான் இரகசிய
+    முக்கிய தொகுப்பு.
+  wwcConfigConversationWatsonAPIKeySuccess: வாட்சன் ஏபிஐ விசையை வெற்றிகரமாக அமைக்க.
+  wwcRateLimit: உங்கள் மொழிபெயர்ப்பு விகிதம் குறைவாக உள்ளன. தயவுசெய்து மற்ற {0} வினாடிகள்
+    காத்திருக்கவும்.
+  wwcConfigCacheEnabled: மொழிபெயர்ப்பாளர் கேச் செயல்படுத்தப்பட்டு, {0} வரம்புக்கு
+    அமைக்கப்பட்டது.
+  wwctGUIExistingTranslationButton: தற்போதைய மொழிபெயர்ப்புக் கூட்டத்தை மேலெழுத
+  wwcUserDataReloaded: அனைத்து சேமிக்கப்பட்ட பயனர் தரவு ஏற்றப்பட்டது.
+  wwcConfigGUISendTranslationChatButton: உள்நுழைவில் செயலில் மொழிபெயர்ப்பாளருக்கு
+    அரட்டை நினைவூட்டல் அனுப்பவும்
+  wwcsLastTranslationTime: 'கடைசியாக (வெற்றிகரமான) மொழிபெயர்ப்பு நேரம்: {0}'
+  wwctbNotATranslator: நீங்கள் ஒரு செயலில் மொழிபெயர்ப்பாளர் இல்லை! உறுதி/wwct/உடன்
+    இந்த அமைக்க வேண்டும்.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: தற்போதைய அணுகல் விசை {0} ஆகும்.
+    தயவுசெய்து அமேசான் ஒரு அணுகல் விசையை உள்ளிடவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு
+    செய்யவும்.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: அமேசான் அணுகல் விசையை வெற்றிகரமாக
+    அமைக்க.
+  wwcConfigBadUpdateDelay: தவறான மேம்படுத்தல் தாமதம் config.yml அமைக்க. 86400 விநாடிகளுக்கு
+    இயல்புநிலைக்கு...
+  wwctrlRateLimitOffSender: உங்கள் வீத வரம்பை முடக்கியது.
+  wwctrlRateLimitAlreadyOffTarget: '{0} வீத வரம்பு ஏற்கனவே முடக்கப்பட்டுள்ளது.'
+  wwctrlPlayerNotFound: ஆட்டக்காரர் {0} ஒன்று காணப்படவில்லை, அல்லது செயலூக்க மொழிபெயர்ப்பாளர்
+    அல்ல.
+  wwctrlRateLimitSetSender: உங்கள் வீத வரம்பை {0} வினாடிகளில் அமைக்கவும்.
+  wwctrlRateLimitOffTarget: '{0} வீத வரம்பை முடக்கியது.'
+  wwctrlNotATranslator: நீங்கள் ஒரு செயலில் மொழிபெயர்ப்பாளர் இல்லை! உறுதி/wwct/உடன்
+    இந்த அமைக்க வேண்டும்.
+  wwctrlRateLimitAlreadyOffSender: உங்கள் விகிதம் வரம்பு ஏற்கனவே முடக்கப்பட்டுள்ளது.
+  wwctGUIRateButton: வீத வரம்பை அமை
+  wwctGUIConversationRateLimit: மொழிபெயர்ப்புக்கு வீத வரம்பு தற்போது {0} வினாடிகள்
+    ஆகும். ஒரு புதிய மதிப்பை அமைக்க 0 ஐ விட அதிகமான எதையும் தட்டச்சு செய்யவும் அல்லது
+    வரம்பை முடக்க 0 ஐ தட்டச்சு செய்யவும். திரும்பி செல்ல 0 குறைவாக எதையும் தட்டச்சு
+    செய்யவும்.
+  wwctGUITargetPlayerNull: இலக்கு வீரர் சர்வரில் இருந்து துண்டிக்கப்பட்டது.
+  wwcConfigConversationSyncUserDataDelayInput: பயனர் தரவின் ஒத்திசைவுக்கு தற்போதைய
+    தாமதம் {0} விநாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 10 விட அதிகமாக எதையும் தட்டச்சு,
+    அல்லது மீண்டும் செல்ல 10 குறைவாக எதையும்.
+  wwcConfigGUISyncUserDataButton: பயனர் தரவு ஒத்திசைவு தாமதத்தை மாற்றவும்
+  wwcConfigSyncDelayEnabled: பயனர் தரவு ஒத்திசைக்கு {0} விநாடிகளுக்கு அமைக்கப்படும்
+    தாமதம்.
+  wwcConfigConversationSyncUserDataDelaySuccess: பயனர் தரவு ஒத்திசைவு தாமதம் வெற்றிகரமாக
+    அமைக்க.
+  wwcConfigSyncDelayInvalid: தவறான பயனர் தரவு ஒத்திசைவு தாமதம் config.yml அமைக்க.
+    7200 விநாடிகளுக்கு இயல்புநிலைக்கு...
+  wwcConfigCacheInvalid: மொழிபெயர்ப்பாளர் கேச் அளவு தவறானது. 10 க்கு இயல்புநிலைக்கு...
+  wwcInventoryErrorPlayer: பிழை உங்கள் வரைகலை கண்டறியப்பட்டது. ஒரு பதிவு பணியகத்திற்கு
+    அனுப்பப்பட்டுள்ளது.
+  wwcInventoryError: பயனர் {0} இன் GUI உடன் கண்டறியப்பட்ட பிழை. இந்த சிக்கலை உருவாக்குநருக்கு
+    தெரிவிக்கவும்.
+  wwctiOffTarget: பொருள் மொழிபெயர்ப்பு {0} க்கு முடக்கப்பட்டது.
+  wwctiOffSender: பொருள் மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது
+  wwcItemTranslateTitleStock: இயல்புநிலை உருப்படியின் பெயர்களை மொழிபெயர்க்க முடியவில்லை.
+  wwctGUIItemButton: உருப்படி மொழிபெயர்ப்பு
+  wwcItemTranslateTitleDone: மொழிபெயர்க்கப்பட்ட உருப்படியை தலைப்பு வெற்றிகரமாக.
+  wwcGUITempItem: உருப்படிக் காட்சி
+  wwcItemTranslateStart: இலக்கு உருப்படியை மொழிபெயர்த்தல்...
+  wwcBookTranslateTitleSuccess: 'மொழிபெயர்க்கப்பட்ட புத்தகத் தலைப்பு: {0}'
+  wwctiOnSender: பொருள் மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க உங்கள் முக்கிய
+    கையில் ஒரு உருப்படியை வலது கிளிக் செய்யவும்!
+  wwcItemTranslateLoreStart: இலக்கு உருப்படியை லோர் மொழிபெயர்ப்பது...
+  wwcItemTranslateLoreDone: மொழிபெயர்க்கப்பட்ட உருப்படியை லோ
+  wwctiOnTarget: '{0} க்கு உருப்படி மொழிபெயர்ப்பு இயக்கப்பட்டது.'
+  wwcInvalidTranslator: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
+    உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.
+  wwcConfigGUIEachTranslatorSettings: '{0} உள்ளமைவு'
+  wwcConfigGUIWatsonButton: வாட்சன்
+  wwcServerReloadWarning: WorldWideSHat /reloadஇன் பயன்பாடு மறுக்கவில்லை. எச்சரிக்கையுடன்
+    தொடரவும்.
+  wwcConfigEnabledDebugMode: பிழைதிருப்பு முறையில் இயக்கப்பட்டது. நீங்கள் ஒரு டெவலப்பர்
+    அல்லது சரிசெய்தல் இல்லை என்றால், நீங்கள் இந்த அணைக்க வேண்டும்.
+  wwcTranslatorErrorThresholdReached: பிழை வாசல் அடைந்தது. இந்த சொருகி இப்போது மீண்டும்
+    ஏற்று, அனைத்து மொழிபெயர்ப்பாளர்களையும் முடக்கும்.
+  wwcConfigErrorLimitEnabled: மொழிபெயர்ப்பாளர் பிழை வரம்பு {0} க்கு அமைக்கப்பட்டது.
+  wwcTranslatorError: உங்கள் மொழிபெயர்ப்பு முயற்சிக்கும் போது ஒரு பிரச்சனை ஏற்பட்டது.
+    மீண்டும் முயற்சிக்கவும்.
+  wwcConfigErrorLimitInvalid: தவறான மொழிபெயர்ப்பாளர் பிழை எல்லை config.yml அமைக்க.
+    5 க்கு இயல்புநிலைக்கு...
+  wwcTranslatorErrorThresholdReachedCheckLogs: மேலும் தகவலுக்கு WorldWideSat சொருகி
+    கோப்புறையில் errorLog.txt சரிபார்க்கவும்.
+  wwctInvalidInputLangCode: 'செல்லுபடியாகும் உள்ளீடு மொழி குறியீடு வழங்கப்படும்!
+    செல்லுபடியாகும் லாங் குறியீடுகள்: {0}'
+  wwctInvalidOutputLangCode: 'செல்லுபடியாகும் வெளியீடு மொழி குறியீடு வழங்கப்படும்!
+    செல்லுபடியாகும் லாங் குறியீடுகள்: {0}'
+  wwctGUISourceTranslationSelected: இந்த மொழியை நீங்கள் தேர்ந்தெடுத்துள்ளீர்கள்.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: நீக்கு மேலெழுதி
+  wwcConfigConversationOverrideTextChange: இந்த மேலெழுதலுக்கான புதிய செய்தியை தட்டச்சு
+    செய்யவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும். நீங்கள் அசல் செய்தியில்
+    பார்க்க சதவீதம் அறிகுறிகள் தொடங்கி எந்த மாறிகள் சேர்க்க நினைவில்.
+  wwctGUISourceOrTargetTranslationAlreadyActive: இந்த மொழி ஏற்கனவே செயலில் உள்ளது!
+  wwcConfigGUIChatMessagesPossibleOverrides: செய்தியைத் தேர்வு செய்க
+  wwcConfigGUIChatMessagesModifyOverride: தற்போதுள்ள மேலெழுதலை மாற்றவும்
+  wwcConfigConversationOverrideDeletionSuccess: விருப்ப செய்தி மேலெழுதி நீக்கப்பட்டது.
+  wwcConfigGUIChatMessagesDeadOverride: இந்த மேலெழுதி தவறானது, அல்லது அசல் செய்தி
+    நீக்கப்பட்டது. இதை நீக்க வேண்டும்.
+  wwcConfigGUIMessagesAlreadyOverriden: நீங்கள் ஏற்கனவே இந்த செய்தியை ஒரு மேலெழுதி
+    வேண்டும்!
+  wwcConfigGUIChatMessagesOverrideNewButton: ஒரு புதிய மேலெழுதைச் சேர்க்கவும்
+  wwcConfigGUIMessagesOverrideCustomLabel: புதிய செய்தி
+  wwcConfigConversationOverrideTextChangeSuccess: புதிய செய்தி வெற்றிகரமாக அமைக்க.
+  wwcConfigGUIChatMessagesOverrideChangeButton: ஏற்கனவே உள்ள உரையை மாற்றவும்
+  wwcExampleMessage: இது ஒரு போலி செய்தி, மற்றும் ஒரு உதாரணம் மேலெழுதப்பட வேண்டும்
+    என்று பொருள்.
+  wwcConfigGUIMessagesOverrideOriginalLabel: மூலச் செய்தி
+  wwcConfigGUIDebugModeButton: மாற்று பிழைதிருப்பு முறை
+  wwcConfigConversationDebugModeSuccess: பிழைதிருப்பு முறையில் வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigGUIErrorLimitButton: மொழிபெயர்ப்பாளர் பிழை வரம்பை மாற்றவும்
+  wwcConfigConversationErrorLimitSuccess: பிழை எல்லை வெற்றிகரமாக அமைக்க.
+  wwcEntityTranslateStart: இலக்கு நிறுவனம் மொழிபெயர்ப்பது...
+  wwcConfigGUICharacterLimitButton: செய்தி எழுத்து வரம்பை மாற்றுக
+  wwcConfigMessageCharLimitInvalid: செய்தி ஒன்றுக்கு தவறான எல்லை config.yml அமைக்க.
+    255 எழுத்துகளுக்கு இயல்புநிலைக்கு...
+  wwcConfigConversationCharacterLimitSuccess: எழுத்து வரம்பு வெற்றிகரமாக அமைக்கப்பட்டது.
+  wwcteOnTarget: '{0} க்கு நிறுவன மொழிபெயர்ப்பு இயக்கப்பட்டது.'
+  wwcEntityTranslateDone: 'மொழிபெயர்க்கப்பட்ட நிறுவனத்தின் பெயர்: {0}'
+  wwcEntityTranslateNoName: நிறுவனத்திற்கு தனிப்பயன் பெயர் இல்லை.
+  wwcConfigConversationErrorLimitInput: ஒவ்வொரு மொழிபெயர்ப்பாளருக்கும் தற்போதைய பிழை
+    வரம்பு {0} ஆகும். ஒரு புதிய மதிப்பை அமைக்க 0 ஐ விட அதிகமான எதையும் தட்டச்சு செய்யவும்,
+    அல்லது திரும்பி செல்ல 0 க்கு குறைவாக அல்லது சமமான எதையும் தட்டச்சு செய்யவும்.
+  wwcConfigGUIGlobalRateLimitButton: உலகளாவிய வீத வரம்பை மாற்றவும்
+  wwcteOnSender: நிறுவனம் மொழிபெயர்ப்பு இயக்கப்பட்டது. அதன் பெயரை மொழிபெயர்க்க ஒரு
+    நிறுவனத்தின் மீது வலது கிளிக் செய்யவும்!
+  wwcConfigGUIResponseLimitButton: மொழிபெயர்ப்பாளர் பதில் நேர முடிவை மாற்றவும்
+  wwcConfigMessageCharLimitEnabled: செய்திக்கு எழுத்து வரம்பு {0} எழுத்துக்களுக்கு
+    அமைக்கப்பட்டுள்ளது.
+  wwcteOffTarget: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது {0}.
+  wwcCharLimit: உங்கள் செய்தி மிக நீளமாக உள்ளது! தயவுசெய்து உங்கள் செய்தி {0} எழுத்துக்களுக்கு
+    குறைவாக உள்ளதா என்பதை உறுதிப்படுத்தவும்.
+  wwcteOffSender: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது.
+  wwctGUIEntityButton: மாற்று நிறுவனம் மொழிபெயர்ப்பு
+  wwctrlRateLimitBadInt: உங்கள் வீத வரம்பு செல்லுபடியாகும் முழு எண் அல்ல.
+  wwcTranslatorErrorConsole: பயனர் {0} அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது
+    ஒரு சிக்கல் ஏற்பட்டது. மேலும் விவரங்களுக்கு errorLog.txt சரிபார்க்கவும்.
+  wwctGUIChatButton: அரட்டை மொழிபெயர்ப்பு
+  wwcrBegin: WorldWideSat மீண்டும் ஏற்றுகிறது...
+  wwctTranslationStoppedOtherPlayer: '{0} க்கு மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
+    ஆனால் உங்களுக்கு {0} இலிருந்து {1} க்கு செயலில் மொழிபெயர்ப்பு அமர்வு உள்ளது.
+  wwctCannotTranslateConsole: நீங்கள் கன்சோல் ஒரு மொழிபெயர்ப்பு அமர்வு தொடங்க முடியாது!
+  wwcOnJoinTranslationNotificationSourceLang: உங்களுக்கு {0} இலிருந்து {1} இலிருந்தே
+    செயலில் மொழிபெயர்ப்பு அமர்வு உள்ளது.
+  wwctTranslationStopped: உங்கள் மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.
+  wwctAutoTranslateStart: '{0} க்கு ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
+  wwcOnJoinTranslationNotificationNoSourceLang: உங்களுக்கு {0} க்கு செயலில் மொழிபெயர்ப்பு
+    அமர்வு உள்ளது.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
+    ஆனால் உங்களுக்கு {0} க்கு செயலில் உள்ள மொழிபெயர்ப்பு அமர்வு உள்ளது.
+  wwcConfigGUIChangesNotSaved: நீங்கள் /wwcc சிவப்பு தடையை கிளிக் செய்யும் வரை உங்கள்
+    மாற்றங்கள் அமல்படுத்தாது.
+  wwctciOffSender: உள்வரும் அரட்டை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.
+  wwctGUIChatIncomingButton: உள்வரும் அரட்டை மொழிபெயர்ப்பு மாற்று
+  wwctcoOffSender: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.
+  wwctcoOnSender: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு செயல்படுத்தப்படும். நீங்கள்
+    சொல்லும் எதையும் மொழிபெயர்க்கப்படும்!
+  wwctciOnSender: உள்வரும் அரட்டை மொழிபெயர்ப்பு செயல்படுத்தப்படும். நீங்கள் பெறும்
+    எதையும் மொழிபெயர்க்க வேண்டும்!
+  wwctGUIChatMenu: அரட்டை மொழிபெயர்ப்பு பட்டி மாற்று
+  wwctcoOnTarget: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு {0} க்கு செயல்படுத்தப்பட்டது.
+  wwctcoOffTarget: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு {0} க்கு முடக்கப்பட்டுள்ளது.
+  wwctGUIChatOutgoingButton: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு மாற்று
+  wwctciOnTarget: உள்வரும் அரட்டை மொழிபெயர்ப்பு {0} க்கு செயல்படுத்தப்பட்டது.
+  wwctciOffTarget: உள்வரும் அரட்டை மொழிபெயர்ப்பு {0} க்கு முடக்கப்பட்டுள்ளது.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: மிதவை உரை வெற்றிகரமாக மாற்று
+    போன்ற அசல் உள்வரும் அரட்டை மொழிபெயர்ப்பு இணைக்கப்பட்ட.
+  wwcConfigGUISendIncomingHoverTextChatButton: ஹோவர் உரையாக அசல் உள்வரும் செய்திகளைச்
+    சேர்க்கவும்
+  wwctGUIExistingChatOutgoingEnabled: 'வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது:
+    {0}'
+  wwctGUIExistingTranslationInput: 'உள்ளீட்டு மொழி: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'உள்வரும் அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது:
+    {0}'
+  wwctGUIExistingTranslationOutput: 'வெளியீட்டு மொழி: {0}'
+  wwcTranslatorAttempt: config.yml மொழிபெயர்ப்பாளர் இணைக்க முயற்சிக்கிறது... ( {0}/
+    {0} ஐ முயற்சிக்க)
+  wwcTimeoutExceptionConsole: பிளேயர் % நான் அவர்களின் மிக சமீபத்திய கோரிக்கை நேரம்
+    முடிந்தது. இந்த பிழை அபாயகரமானது அல்ல, ஆனால் அது தொடர்ந்து நடந்தால் WorldwideChat
+    மீண்டும் ஏற்றப்பட வேண்டும்.
+  wwcGUIPageNumber: 'பக்க எண்: {0}'
+  wwcConfigYAMLFallback: YAML க்கு மீண்டும் வீழ்ச்சி...
+  wwcConfigGUIToggleSQLButton: SQL ஐ மாற்று
+  wwcConfigConversationToggleSQLSuccess: SQL வெற்றிகரமாக மாறுகிறது. மாற்றம் நடைமுறைக்கு
+    ஏற்றவும்.
+  wwcConfigConversationGoogleTranslateToggleSuccess: வெற்றிகரமாக மாற்றக்கூடிய Google
+    மொழிபெயர். மாற்றம் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigYAMLDefault: தரவு சேமிப்புக்காக YAML க்கு இயல்புநிலை.
+  wwcConfigGUISQLMenuButton: SQL அமைப்புகளை மாற்றவும்
+  wwcConfigConversationWatsonTranslateToggleSuccess: வெற்றிகரமாக மாற்று வாட்சன் மொழிபெயர்.
+    மாற்றம் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigGUIToggleGoogleTranslateButton: Google மொழிபெயர் மாற்று
+  wwcConfigGUIToggleWatsonTranslateButton: வாட்சன் மொழிபெயர் மாற்று
+  wwcConfigGUIToggleAmazonTranslateButton: அமேசான் மொழிபெயர் மாற்று
+  wwcConfigGUIStorageSettings: சேமிப்பக உள்ளமைவு
+  wwcConfigConversationAmazonTranslateToggleSuccess: வெற்றிகரமாக மாற்று அமேசான் மொழிபெயர்.
+    மாற்றம் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigGUISQLPortButton: SQL போர்ட் மாற்ற
+  wwcConfigGUISQLOptionalArgsButton: SQL விருப்ப வாதங்கள் மாற்ற
+  wwcConfigConversationToggleSQLSSLSuccess: SQL க்கான SSL வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigConversationSQLPortInput: தற்போதைய துறைமுகம் {0} ஆகும். ஒரு புதிய துறைமுகத்தை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும், அல்லது திரும்பி செல்ல 0 தட்டச்சு
+    செய்யவும்.
+  wwcConfigGUISQLPasswordButton: SQL கடவுச்சொல்லை மாற்ற
+  wwcConfigConversationSQLHostnameSuccess: வெற்றிகரமாக SQL புரவலன் பெயர் மாற்றப்பட்டது.
+  wwcConfigConversationSQLHostnameInput: தற்போதைய ஹோஸ்ட்பெயர் {0}. ஒரு புதிய ஹோஸ்ட்பெயரை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க, அல்லது திரும்பி செல்ல 0 என தட்டச்சு
+    செய்க.
+  wwcConfigGUISQLHostnameButton: SQL ஹோஸ்ட்பெயரை மாற்றவும்
+  wwcConfigConversationSQLOptionalArgsSuccess: வெற்றிகரமாக விருப்ப SQL வாதங்கள் மாற்றப்பட்டது.
+  wwcConfigConversationSQLPasswordSuccess: வெற்றிகரமாக SQL கடவுச்சொல்லை மாற்றப்பட்டது.
+  wwcConfigConversationSQLPasswordInput: தற்போதைய கடவுச்சொல்லை {0} ஆகும். ஒரு புதிய
+    கடவுச்சொல்லை அமைக்க 0 ஐ தவிர வேறு எதையும் தட்டச்சு செய்க, அல்லது திரும்பி செல்ல
+    0 என தட்டச்சு செய்க.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ஐ மாற்று
+  wwcConfigConversationSQLUsernameSuccess: வெற்றிகரமாக SQL பயனர்பெயர் மாற்றப்பட்டது.
+  wwcConfigConversationSQLUsernameInput: தற்போதைய பயனர்பெயர் {0} ஆகும். ஒரு புதிய
+    பயனர்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும், அல்லது திரும்பி செல்ல
+    0 தட்டச்சு செய்யவும்.
+  wwcConfigConversationSQLPortSuccess: SQL துறைமுகத்தை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUISQLUsernameButton: SQL பயனர்பெயரை மாற்றவும்
+  wwcConfigConversationSQLOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்கப்படும்.
+  wwcConfigConversationSQLOptionalArgsInput: 'தற்போதைய விருப்பமான SQL வாதங்கள்: {0}.
+    காற்புள்ளியால் பிரிக்கப்பட்ட வாதங்கள் (key=value, key2=value2), அல்லது தற்போதைய
+    வளைவுகளை துடைக்க தெளிவாகத் தட்டச்சு செய்யவும் அல்லது திரும்பிச் செல்ல 0 தட்டச்சு
+    செய்யவும்.'
+  wwcConfigConversationSQLDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் {0} ஆகும். ஒரு
+    புதிய தரவுத்தள பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க, அல்லது திரும்பி
+    செல்ல 0 தட்டச்சு செய்க.
+  wwcConfigGUISQLDatabaseNameButton: SQL தரவுத்தள மாற்ற
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL தரவுத்தள பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationFatalAsyncAbort: அனைத்து async பணிகளையும் நீக்குவதற்கான தற்போதைய
+    நேரம் முடிவு {0} வினாடிகள் ஆகும். ஒரு புதிய நேர முடிவை அமைக்க 7 க்கு மேலே எதையும்
+    தட்டச்சு செய்க, அல்லது அதற்கு கீழே உள்ள எதையும் திரும்பிச் செல்ல.
+  wwcConfigConversationFatalAsyncSuccess: Async பணி நேர முடிவின் வெற்றிகரமாக அமைக்க.
+  wwcConfigGUIFatalAsyncAbortButton: Async பணி நேர முடிவை மாற்றவும்
+  libreHttp400: மொழிபெயர்ப்பு இலவச அனுப்பப்படும் பேட் கோரிக்கை! நீங்கள் ஏதாவது செய்கிறீர்கள்
+    வரை நீங்கள் கூடாது என்று, நீங்கள் இந்த பெற கூடாது. டெவலப்பர் தொடர்பு கொள்ளவும்!
+  wwcConfigGUILibreTranslateApiKeyButton: மாற்றம் இலவச ஏபிஐ விசை மொழிபெயர்
+  libreHttp403: இலவச மொழிபெயர்க்க ஏபிஐ சாவி காணாமல், அல்லது நீங்கள் சர்வரில் இருந்து
+    தடை செய்யப்பட்டுள்ளன!
+  wwcConfigConversationLibreURLSuccess: இலவச URL வெற்றிகரமாக அமைக்க.
+  wwcConfigConversationLibreTranslateApiKeyInput: தற்போதைய API விசை {0} ஆகும். Libre
+    க்கு ஒரு API விசை உள்ளீடு செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
+  wwcConfigGUILibreTranslateButton: இலவச மொழிபெயர்க்க
+  libreHttp429: சர்வரில் இருந்து விகிதம் வரம்பு காரணமாக நம்பிக்கை இல்லை.
+  wwcConfigGUIToggleLibreTranslateButton: இலவச மொழிபெயர்க்க மாற்று
+  wwcConfigConversationLibreTranslateToggleSuccess: வெற்றிகரமாக லிப்ரே மொழிபெயர்க்கவும்
+    மாற்றி. மாற்றங்கள் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigConversationLibreTranslateApiKeySuccess: லிப்ரே ஏபிஐ விசை வெற்றிகரமாக அமைக்கப்பட்டது.
+  wwcConfigConversationLibreURLInput: தற்போதைய URL {0} ஆகும். Libre க்கான URL ஐ உள்ளீடு
+    செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
+  libreHttpUnknown: 'தெரியாத http பிழை: {0}'
+  wwcConfigGUILibreTranslateURLButton: இலவச மொழிபெயர்க்க URL ஐ மாற்றவும்
+  wwcConfigConnectionFail: '{0} உடன் இணைக்கத் தவறியது.'
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB தரவுத்தள பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigGUIMongoHostnameButton: MongoDB புரவலன் பெயரை மாற்றவும்
+  wwcConfigConversationMongoPasswordInput: தற்போதைய கடவுச்சொல் {0} ஆகும். புதிய கடவுச்சொல்லை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 என்று தட்டச்சு
+    செய்யவும்.
+  wwcConfigConversationMongoPortInput: தற்போதைய துறைமுகம் {0} ஆகும். ஒரு புதிய துறைமுகத்தை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 தட்டச்சு
+    செய்யவும்.
+  wwcConfigConversationToggleMongoSuccess: MongoDB வெற்றிகரமாக மாற்றி. மாற்றம் நடைமுறைக்கு
+    ஏற்றவும்.
+  wwcConfigConversationMongoHostnameInput: தற்போதைய புரவலன் பெயர் {0} ஆகும். புதிய
+    ஹோஸ்ட்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல
+    0 என்று தட்டச்சு செய்யவும்.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB புரவலன் பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUIMongoMenuButton: MongoDB அமைப்புகளை மாற்றவும்
+  wwcConfigGUIToggleMongoButton: மாற்று மாங்கோடிபி
+  wwcConfigConversationMongoDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் {0} ஆகும்.
+    புதிய தரவுத்தளப் பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி
+    செல்ல 0 தட்டச்சு செய்யவும்.
+  wwcConfigConversationMongoOptionalArgsInput: 'தற்போதைய விருப்ப MongoDB வாதங்கள்:
+    {0}. ஒரு கமா (விசை = மதிப்பு, key2=value2) பிரிக்கப்பட்ட வாதங்கள் தட்டச்சு, அல்லது
+    தற்போதைய வளைவுகள் துடைக்க தெளிவான தட்டச்சு, அல்லது திரும்பி செல்ல 0 வகை.'
+  wwcConfigGUIMongoDatabaseNameButton: மாற்ற MongoDB தரவுத்தளம்
+  wwcConfigConversationMongoUsernameInput: தற்போதைய பயனர்பெயர் {0} ஆகும். ஒரு புதிய
+    பயனர்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல
+    0 தட்டச்சு செய்யவும்.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB விருப்ப வாதங்கள் மாற்ற
+  wwcConfigConversationMongoUsernameSuccess: MongoDB பயனர்பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB கடவுச்சொல்லை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationMongoPortSuccess: MongoDB துறைமுகத்தை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUIMongoUsernameButton: MongoDB பயனர் பெயரை மாற்றவும்
+  wwcConfigGUIMongoPasswordButton: MongoDB கடவுச்சொல்லை
+  wwcConfigConversationMongoOptionalArgsSuccess: விருப்ப MongoDB வாதங்கள் வெற்றிகரமாக
+    மாற்றப்பட்டது.
+  wwcConfigConversationMongoOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்கப்படும்.
+  wwcConfigGUIMongoPortButton: மொங்கோடிபி துறைமுகத்தை மாற்றவும்
+  wwcConfigInvalidFatalAsyncTimeout: தவறான அபாயகரமான ஒத்திசைவு நேர முடிவின் தொகுப்பு.
+    10 விநாடிகள் வரை இயல்புநிலைக்கு...
+  libreHttp500: நீங்கள் தேர்ந்தெடுத்த உள்ளீடு மற்றும் வெளியீடு மொழி ஜோடி ஆதரவு இல்லை.
+    வேறு மொழி தொகுப்பு தேர்வு செய்க!
+  wwcConfigGUIDeepLTranslateButton: மாற்று DeepL மொழிபெயர்க்க
+  wwcConfigConversationDeepLTranslateToggleSuccess: வெற்றிகரமாக Toggled DePL மொழிபெயர்க்கவும்.
+    மாற்றங்கள் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigGUIDeepLTranslateApiKeyButton: மாற்றம் DeepL மொழிபெயர்க்க ஏபிஐ விசை
+  wwcConfigGUIToggleDeepLTranslateButton: மாற்று DeepL மொழிபெயர்க்க
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API விசை வெற்றிகரமாக அமைக்க.
+  wwcConfigConversationDeepLTranslateApiKeyInput: தற்போதைய API விசை {0} ஆகும். DeepL
+    க்கு ஒரு API விசை உள்ளீடு செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
+  wwcConfigErrorsToIgnoreSuccess: புறக்கணிக்க வெற்றிகரமாக பதிவு மொழிபெயர்ப்பாளர்
+    பிழைகள்.
+  wwcConfigErrorsToIgnoreInvalid: தவறான மொழிபெயர்ப்பாளர் பிழைகள் config.yml அமைக்க
+    புறக்கணிக்க. இயல்புநிலைக்கு பதிவு செய்தல்...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: சொற்றொடர்களை புறக்கணிக்க மொழிபெயர்ப்பாளர்
+    பிழைகளை வெற்றிகரமாக மாற்றினார்.
+  wwcConfigGUIIgnoreErrorsButton: புறக்கணிப்பதற்கு பிழைகளை மாற்றுக
+  wwcConfigConversationIgnoreErrorsInput: 'புறக்கணிக்க மொழிபெயர்ப்புப் பிழைகளில் உள்ள
+    சொற்றொடர்களின் தற்போதைய பட்டியல்: {0}. ஒரு கமா (key=மதிப்பு, key2=value2) மூலம்
+    பிரிக்கப்பட்ட வாதங்களை தட்டச்சு செய்யவும் அல்லது தற்போதைய வளைவுகளைத் துடைக்க தெளிவான
+    வகையிடுக, அல்லது திரும்பி செல்ல 0 என்று தட்டச்சு செய்யவும். கூடுதலாக, “*” தட்டச்சு
+    சொருகி எந்த மொழிபெயர்ப்பாளர் பிழைகள் சரிபார்க்க முடியாது ஏற்படுத்தும்.'
+  wwcConfigConversationIgnoreErrorsCleared: மொழிபெயர்ப்பாளர் பிழைகள் வெற்றிகரமாக
+    அழிக்கப்படும் சொற்றொடர்களை புறக்கணிக்க.
+  wwcSupportedServer: '{0} க்கான WorldWideSat துவக்குதல்...'
+  wwcSupportedVersion: பதிப்பு அம்சங்களை செயல்படுத்துதல் {0}...
+  wwcBadPerms: 'இந்த கட்டளையை செயல்படுத்த தேவையான அனுமதிகள் உங்களிடம் இல்லை: {0}'
+  wwcsIsActiveTranslator: 'செயலில் உள்ள மொழிபெயர்ப்பாளரா: {0}'
+  wwcsActiveTransPrevRate: 'முந்தைய விகித வரம்பு நேரம்: {0}'
+  wwcsActiveTransSaved: 'வட்டில் சேமிக்கப்பட்டது: {0}'
+  wwcsActiveTransIncoming: 'உள்வரும் அரட்டை மொழிபெயர்ப்பது: {0}'
+  wwcsActiveTransOutLang: 'வெளியீட்டு மொழி: {0}'
+  wwcsActiveTransInLang: 'உள்ளீட்டு மொழி: {0}'
+  wwcsActiveTransBook: 'மொழிபெயர்ப்பு புத்தகம்: {0}'
+  wwcsActiveTransSign: 'மொழிபெயர்ப்பு அடையாளம்: {0}'
+  wwcsActiveTransUUID: 'வீட்: {0}'
+  wwcsActiveTransRateLimit: 'விகித வரம்பு: {0}'
+  wwcsActiveTransColorWarning: 'பெறப்பட்ட வண்ண எச்சரிக்கை: {0}'
+  wwcsActiveTransSignWarning: 'பெறப்பட்ட அடையாளத்தைத் திருத்து எச்சரிக்கை: {0}'
+  wwcsTitle: '{0} பதிவு'
+  wwcsActiveTransOutgoing: 'வெளியேறும் அரட்டை மொழிபெயர்ப்பது: {0}'
+  wwcsActiveTransItem: 'மொழிபெயர்க்கும் பொருள்: {0}'
+  wwcsActiveTransEntity: 'மொழிபெயர்க்கும் நிறுவனம்: {0}'
+  wwctsWarning: நீங்கள் அறிகுறிகளை மொழிபெயர்க்கும்போது அடையாளம் மாற்றம் முடக்கப்படுகிறது.
+  wwcConfigConversationAzureTranslateToggleSuccess: வெற்றிகரமாக அஜூர் மொழிபெயர்ப்பை
+    மாற்றங்கள் நடைமுறைக்கு வருவதற்கு மீண்டும் ஏற்றவும்.
+  wwcConfigGUIAzureTranslateButton: அசூர் மொழிபெய
+  wwcConfigGUIAzureTranslateApiKeyButton: அசூர் மொழிபெயர்ப்பு API விசையை
+  wwcConfigGUIAzureTranslateRegionButton: Azure மொழிபெயர்ப்பு பகுதியை
+  wwcConfigConversationAzureTranslateRegionSuccess: அசூர் பகுதி வெற்றிகரமாக அமைக்கப்பட்டது
+  wwcConfigConversationAzureTranslateApiKeyInput: தற்போதைய API விசை {0} ஆகும். Azure
+    க்கான API விசையை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API விசை வெற்றிகரமாக அமைக்கப்பட்டது.
+  wwcConfigConversationAzureTranslateRegionInput: தற்போதைய பகுதி {0} ஆகும். Azure
+    க்கான ஒரு பகுதியை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIToggleAzureTranslateButton: Azure மொழிபெயர்ப்பை மாற்றவும்
+  wwcConfigGUISystranTranslateApiKeyButton: சிஸ்ட்ரான் மொழிபெயர்ப்பு API விசையை
+  wwcConfigGUIToggleSystranTranslateButton: சிஸ்ட்ரான் மொழிபெயர்ப்பை மாற்றவும்
+  wwcConfigConversationSystranTranslateApiKeyInput: தற்போதைய API விசை {0} ஆகும். தயவுசெய்து
+    சிஸ்ட்ரானுக்கான API விசையை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcISOJSONFail: ISO JSON உடன் மொழி பொருள்களை சரிசெய்ய முடியவில்லை.
+  wwcConfigConversationSystranTranslateToggleSuccess: வெற்றிகரமாக சிஸ்ட்ரான் மொழிபெயர்ப்பை
+    மாற்ற மாற்றங்கள் நடைமுறைக்கு வருவதற்கு மீண்டும் ஏற்றவும்.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API விசை வெற்றிகரமாக
+    அமைக்கப்பட்டது.
+  wwcConfigGUISystranTranslateButton: சிஸ்ட்ரான் மொழிபெய
+  wwcrTransFail: WorldwideChat ஐ மீண்டும் ஏற்றப்பட்டது, ஆனால் ஒரு மொழிபெயர்ப்பாளரை
+    இயக்கத் தவறிவிட்டது
+  wwcdCacheCleared: மொழிபெயர்ப்பு கேச் அழிக்கப்பட்டது.
+  wwcdInvalidCmd: தவறான வாதங்கள்!
+  systranHttpUnknown: 'அறியப்படாத http பிழை: {0}'
+  systranHttp400: மோசமான அளவுருக்கள் சிஸ்ட்ரானுக்கு அனுப்ப மோசமான மொழி ஜோடியாக இருக்கலாம்?
+  systranHttp500: சிஸ்ட்ரான் இறுதிப் புள்ளியிலிருந்து உள் சேவையக பிழை ({0}).
+  wwcInvalidStorageSession: உங்கள் உள்ளமைவில் {0} இயக்கப்பட்டுள்ளது, ஆனால் இணைப்பு
+    நிறுவப்படவில்லை. இதை சரிசெய்ய மறுசீரமைக்க முயற்சிக்கவும், ஆனால் முன்னர் {0} இலிருந்து
+    வெற்றிகரமான இணைப்பு செய்தியைப் பெற்றிருந்தால் டெவலப்பரைத் தொடர்பு கொள்ளவும்.
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL தரவுத்தள பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigConversationPostgresOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்க
+  wwcConfigConversationPostgresPortInput: தற்போதைய துறைமுகம் {0} ஆகும். புதிய போர்ட்டை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு
+    செய்க.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL பயனர்பெயரை மாற்றவும்
+  wwcConfigConversationPostgresOptionalArgsSuccess: விருப்ப PostgreSQL வாதங்களை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL க்கான SSL வெற்றிகரமாக
+    மாற்றப்பட்டது.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL கடவுச்சொல்லை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL போர்ட்டை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationPostgresUsernameInput: தற்போதைய பயனர்பெயர் {0} ஆகும். புதிய
+    பயனர்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0
+    ஐ தட்டச்சு செய்க.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL வெற்றிகரமாக மாற்றப்பட்டது.
+    மாற்றம் நடைமுறைக்கு வர மீண்டும் ஏற்றவும்.
+  wwcConfigGUITogglePostgresButton: PostgreSQL ஐ மாற்றவும்
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL கடவுச்சொல்லை மாற்றவும்
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL விருப்ப வாதங்களை மாற்றவும்
+  wwcConfigGUIPostgresMenuButton: PostgreSQL அமைப்புகளை மாற்றவும்
+  wwcConfigConversationPostgresPasswordInput: தற்போதைய கடவுச்சொல் {0} ஆகும். புதிய
+    கடவுச்சொல்லை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல
+    0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationPostgresHostnameInput: தற்போதைய ஹோஸ்ட் பெயர் {0} ஆகும். புதிய
+    ஹோஸ்ட் பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல
+    0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIPostgresPortButton: போஸ்ட்க்ரெஸ்க்எல் போர்ட்டை மாற்றவும்
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL ஹோஸ்ட் பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL ஹோஸ்ட் பெயரை மாற்றவும்
+  wwcConfigConversationPostgresDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் {0} ஆகும்.
+    புதிய தரவுத்தள பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச்
+    செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationPostgresOptionalArgsInput: 'தற்போதைய விருப்ப PostgreSQL வாதங்கள்:
+    {0}. காமா மூலம் பிரிக்கப்பட்ட வாதங்களை தட்டச்சு செய்க (key = value, key2 = value2),
+    அல்லது தற்போதைய ஆர்க்களை துடைக்க தெளிவாக தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல
+    0 ஐ தட்டச்சு செய்க.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL ஐ மாற்றவும்
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL தரவுத்தளத்தை மாற்றவும்
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL பயனர்பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigGUIStorageTypeSettings: '{0} உள்ளமைவு'
+  wwcConfigConversationPrefixInput: தற்போதைய முன்னொட்டு {0} ஆகும். தயவுசெய்து புதியதை
+    தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationLangInput: தற்போதைய சொருகி மொழி {0} ஆகும். தயவுசெய்து செல்லுபடியாகும்
+    மொழி குறியீட்டை உள்ளிடவும் அல்லது ரத்து செய்ய 0 ஐ தட்டச்சு செல்லுபடியாகும் மொழி
+    குறியீடுகள் {1}
+  wwcdCacheSize: கேச் அளவு தற்போது {0} ஆகும், இது {1} என்ற வரம்புடன்.
+  wwcdCacheTerm: '{0}. கேசிட்டிரான்ஸ்லேஷன்:இன்புட்லாங் = {1}, அவுட்புட்லாங்க்= {2},
+    உள்ளீடுவார்த்தை= {3} | வெளியீட்டு சொற்றொடர்= {4}'
+  wwctLangToLangStart: '{0} முதல் {1} வரை புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குகிறது.'
+  wwctAutoTranslateStartOtherPlayer: '{0} முதல் {1} க்கு புதிய மொழிபெயர்ப்பு அமர்வைத்
+    தொடங்குகிறது.'
+  wwctLangToLangStartOtherPlayer: '{1} முதல் {2} வரை {0} க்கான புதிய மொழிபெயர்ப்பு
+    அமர்வைத் தொடங்குகிறது.'
+  wwcgLangToLangStart: இப்போது உலகளாவிய அரட்டை {0} இலிருந்து {1} க்கு மொழிபெயர்க்க
+  wwctrlRateLimitSetTarget: '{0} என்ற விகித வரம்பை {1} விநாடிகளாக அமைக்கவும்.'
+  wwcTimeoutException: உங்கள் கோரிக்கை நேரம் முடிவடைந்தது. மீண்டும் முயற்சிக்கவும்.
+  wwctbNoMoreOldBooks: உங்கள் சேவையக பதிப்பில் புத்தக மொழிபெயர்ப்பு செயல்படாது. நீங்கள்
+    Minecraft இன் சமீபத்திய பதிப்பில் இருந்தால், இந்த பிழையைப் பெற்றால், தயவுசெய்து
+    டெவலப்பரைத் தொடர்பு கொள்ளவும்.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: உள்ளூர்மயமாக்க
+  wwcConfigGUIMessagesOverridePickChatButton: இயல்புநிலை சொருகி செய்திகளை மீற
+  wwcConfigGUIChatMessagesOverrideSettings: இயல்புநிலை செய்திகளை மீறவும் ({0})
+  wwcConfigGUIMessagesServerLang: இது config.yml இல் சொருகியின் இயல்புநிலை மொழி.
+  wwclLangStopped: உங்கள் உள்ளூர்மயமாக்கல் சேவையக இயல்புநிலைக்கு மீட்டம
+  wwclLangInvalid: '{0} செல்லுபடியாகும் உள்ளூர்மயமாக்கல் அல்ல. ஆதரிக்கப்படும் உள்ளூர்மயமாக்கங்கள்:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: சேவையக இயல்புநிலைக்கு {0} உள்ளமயமாக்கலை மீட்டமைக்கவும்.
+  wwclLangPlayerNotValid: '{0} செல்லுபடியாகும் வீரர் அல்ல.'
+  wwclLangChangedOtherPlayerSender: '{0} என்ற உள்ளூர்மயமாக்கலை {1} ஆக மாற்றியது.'
+  wwclLangChanged: உங்கள் உள்ளூர்மயமாக்கல் {0} என மாற்றப்பட்டது.
+  wwcsLocalization: 'உள்ளூர்மயமாக்கம்: {0}'
+  wwclLangAlreadyStopped: உங்களிடம் உள்ளூர்மயமாக்கல் தொகுப்பு இல்லை.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} உள்ளூர்மயமாக்கல் தொகுப்பு இல்லை.'
+  wwctGUILocalizeExistingValue: 'தற்போதைய உள்ளடக்கம்: {0}'
+  wwctGUILocalizationButton: உள்ளூர்மயமாக்க
+  wwctGUILocalizeStopButton: சேவையக இயல்புநிலைக்கு உள்ளமைவு
+  wwctGUILocalizeTitle: உள்ளமைவு மெனு
+  wwctGUISourceSameLang: இந்த மொழி உங்கள் மூல மொழியைப் போலவே இருக்கும்.
+  wwcConfigGUICurrentPlayerLang: இது உங்கள் தற்போதைய உள்ளூர்மயமாக்கம்.
+  wwctGUILocalizationSameAsServer: இது WorldwideChat க்கான இயல்புநிலை உள்ளூர்மயமாக்கல்
+    ஆகும்.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: இந்த மொழி ஏற்கனவே உலகளவில் செயல்படுகிறது!
+  wwcrStorageTranslatorFail: WorldwideChat-ஐ மீண்டும் ஏற்றப்பட்டது, ஆனால் மொழிபெயர்ப்பாளரை
+    இயக்கவும் உங்கள் சேமிப்பக உள்ளமைவுடன் இணைக்கவும் தோல்வியடைந்த
+  wwcrStorageFail: WorldwideChat-ஐ மீண்டும் ஏற்றி மொழிபெயர்ப்பாளரை வெற்றிகரமாக இயக்கியது,
+    ஆனால் உங்கள் சேமிப்பக உள்ளமைவு இணைக்கத் தோல்விய
+  wwcConfigPersistentCacheInvalid: config.yml இல் தவறான தொடர்ச்சியான கேச் உள்ளீடு.
+    தவறாக இயல்பாதது...
+  wwcConfigGUIPersistentCacheButton: தொடர்ச்சியான கேச் மாற்று
+  wwcConfigConversationPersistentCacheSuccess: தொடர்ச்சியான கேச் வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigPersistentCacheEnabled: மறுபதிப்புகள் முழுவதும் கேச் தரவு தொடரும்.
+  wwcConfigConversationCharacterLimitInput: ஒரு செய்திக்கு தற்போதைய எழுத்து வரம்பு
+    {0} எழுத்துக்கள் ஆகும். புதிய மதிப்பை அமைக்க 0 க்கும் அதிகமான எதையும் (ஆனால் 256
+    க்கும் குறைவாக) தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcdOutdatedSQLStruct: உங்கள் MySQL அல்லது PostgreSQL அட்டவணைகளில் ஒன்று அல்லது
+    அதற்கு மேற்பட்ட தவறான/காலாவதியான வடிவமைப்பைக் கொண்டிருப்பதாகத் தெரிகிறது. இந்த
+    சிக்கலைப் பற்றிய கூடுதல் விரிவான தகவல்கள் உங்கள் கன்சோலில் அச்சிடப்பட்டுள்ளன;
+    இதை நீங்கள் கைமுறையாக சரிசெய்ய முடியும்.
+  wwcdSQLAllSet: உங்கள் MySQL/PostgreSQL அட்டவணைகள் சரியாக வடிவமைக்கப்பட்டுள்ளன.
+  wwcdColumnBadType: அட்டவணை {1} இல் {0} நெடுவரிசை {2} வகையைக் கொண்டுள்ளது ஆனால் எதிர்பார்க்கப்படும்
+    வகை {3}.
+  wwcdColumnMissing: அட்டவணை {1} இல் நெடுவரிசை {0} இல்லை.
+  wwcdGoodTable: '{0} அட்டவணை ({1}) சரியான வடிவம்.'
+  wwcdBadTable: அட்டவணை {0} உள் வரையறைகளில் காணப்படவில்லை. தயவுசெய்து டெவலப்பரை தொடர்பு
+    கொள்ளவும்.
+  wwcOldDatabaseStruct: 'நீங்கள் தேர்ந்தெடுத்த தரவுத்தளத்தில் தவறான அட்டவணை அமைப்பு
+    உள்ளது மேலும் தகவலுக்கு பின்வரும் கட்டளையைத் தட்டச்சு செய்க: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'தற்போதைய வீத வரம்பு: {0} விநாடிகள்'
+

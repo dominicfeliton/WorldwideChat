@@ -599,4 +599,11 @@ Messages:
   wwcOldDatabaseStruct: 'आपके चुने हुए डेटाबेस में गलत तालिका सेटअप है। अधिक जानकारी
     के लिए निम्न कमांड टाइप करें: /wwcd checkdb'
   wwctGUIRateButtonLore: 'वर्तमान दर सीमा: {0} सेकंड'
+  wwcConfigGUIVaultSupportButton: टॉगल वॉल्ट सपोर्ट
+  wwcConfigConversationVaultSupportSuccess: वॉल्ट समर्थन सफलतापूर्वक टॉगल किया गया।
+  wwcVaultEnabled: वॉल्ट समर्थन सक्षम किया गया है।
+  wwcVaultFoundButDisabled: वॉल्ट मिला, लेकिन कोई मौजूदा चैट प्लगइन पंजीकृत नहीं किया
+    गया है। वॉल्ट समर्थन अक्षम किया जा रहा है...
+  wwcConfigGUIToggleRestartRequired: इस सेटिंग को लागू करने के लिए एक पूर्ण सर्वर
+    रीस्टार्ट आवश्यक है।
 

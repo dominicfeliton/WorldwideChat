@@ -603,4 +603,11 @@ Messages:
   wwcOldDatabaseStruct: 'Вашата избрана база на податоци има неточно поставување на
     табелата. Внесете ја следнава команда за повеќе информации: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Тековно ограничување на стапката: {0} секунди'
+  wwcConfigGUIVaultSupportButton: Вклучете ја поддршката за трезорот
+  wwcConfigConversationVaultSupportSuccess: Поддршката за трезорот успешно се вклучи.
+  wwcVaultEnabled: Поддршката за трезорот е овозможена.
+  wwcVaultFoundButDisabled: Пронајден трезор, но не е регистриран постоечки приклучок
+    за разговор. Оневозможување на поддршката за Vault...
+  wwcConfigGUIToggleRestartRequired: Потребно е целосно рестартирање на серверот за
+    да се примени оваа поставка.
 

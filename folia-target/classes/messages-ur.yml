@@ -1,0 +1,595 @@
+Messages:
+  wwcgAutoTranslateStart: اب گلوبل چیٹ کا {0} میں ترجمہ کر رہا ہے۔
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ {0} میں کیا
+    جا رہا ہے۔
+  wwcConfigGUIAmazonTranslateAccessKeyButton: ایمیزون رسائی کلید تبدیل
+  wwcrFail: WorldwideChat دوبارہ لوڈ کرنے میں ناکام رہی۔
+  wwcConfigGUIUpdateCheckerButton: اپ ڈیٹس کی تاخیر کے لئے چیک کریں
+  wwcUpdaterFailedGeneric: WorldwideChat اپ ڈیٹس کی جانچ پڑتال سے قاصر
+  wwcConfigConversationUpdateCheckerInput: اپ ڈیٹ چیکر پر موجودہ تاخیر {0} سیکنڈ ہے.
+    ایک نئی قیمت مقرر کرنے کے لئے 10 سے زیادہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے
+    10 سے کم کچھ بھی.
+  wwctGUIMainMenuGlobal: عالمی ترجمہ مینو
+  wwcConfigConversationPluginUpdateChatSuccess: پلگ ان اپ ڈیٹ چیٹ یاد دہانی کامیابی
+    سے ٹوگل
+  wwctbOnTarget: '{0} کے لئے کتاب ترجمے کو فعال کیا گیا ہے۔'
+  wwcsNotATranslator: '{0} کے لئے ابھی تک کوئی ریکارڈ دستیاب نہیں ہے۔'
+  wwcConfigGUIbStatsButton: bStats ٹوگل کریں
+  wwctGUINewTranslationSource: ماخذ زبان کا انتخاب کریں
+  wwcConfigConnectionFailed: '{0} سے منسلک ہونے میں ناکامی. یقینی بنائیں کہ آپ کی
+    اسناد اور فائر وال درست طریقے سے ترتیب دیے گئے ہیں!'
+  wwcConfigEnabledbStats: فعال bStats.
+  wwctGUIMainMenuPlayer: '{0} کا ترجمہ مینو'
+  wwctGUIBookButton: کتاب ترجمہ ٹوگل کریں
+  wwcLangDetected: سراغ لگایا گیا زبان {0}.
+  wwcBookTranslateStart: ہدف کتاب کا ترجمہ...
+  wwcConfigDisabledbStats: غیر فعال bStats.
+  wwctsOffSender: معذور سائن ترجمہ.
+  wwcUpdaterParserFailed: Github سے اپ ڈیٹ ڈیٹا کا تجزیہ کرنے میں ناکام.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: موجودہ خفیہ کلید {0} ہے، برائے
+    مہربانی ایمیزون کے لئے ایک خفیہ کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwctbOffSender: کتاب ترجمہ معذور.
+  wwcConfigGUIAmazonTranslateButton: ایمیزون ترجمہ
+  wwcConfigConversationLangSuccess: پلگ ان کی زبان کامیابی سے تبدیل ہو گئی۔
+  wwcsSuccessfulTranslations: 'کامیاب ترجمہ: {0}'
+  wwcConfigConversationTranslationCacheInput: موجودہ ترجمہ کی کیش کی حد {0} جملے ہے۔
+    نئی قدر مقرر کرنے کے لئے 0 سے زیادہ کچھ ٹائپ کریں، یا ترجمہ کیش کو غیر فعال کرنے
+    کے لئے 0 ٹائپ کریں. واپس جانے کے لئے 0 سے کم کچھ بھی ٹائپ کریں.
+  wwctbOffTarget: '{0} کے لئے کتاب کا ترجمہ معذور ہے۔'
+  wwcConfigGUIGeneralSettings: جنرل ترتیب
+  wwcInvalidLang: آپ کے config.yml میں غلط زبان. حادثے کے لئے...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ایمیزون علاقے کامیابی سے سیٹ.
+  wwcConfigRateLimitEnabled: گلوبل ریٹ کی حد فعال اور {0} سیکنڈ پر مقرر کی گئی
+  wwcConfigGUILangButton: پلگ ان زبان تبدیل کریں
+  wwctGUISignButton: سائن ترجمہ ٹوگل کریں
+  wwcUpdaterOutOfDate: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. برائے مہربانی تازہ ترین ورژن،
+    {0} میں اپ ڈیٹ کریں۔
+  wwcConfigGUINextPageButton: اگلا صفحہ
+  wwcConfigInvalidTranslatorSettings: غلط مترجم کی ترتیبات! براہ کرم اپنے config.yml
+    میں صرف ایک مترجم کو فعال کریں.
+  wwcConfigGUIQuitButton: تبدیلی سے باہر نکلیں اور محفوظ کریں
+  wwctPlayerNotFound: کھلاڑی میں %مجھے نہیں ملا
+  wwcConfigGUIAmazonTranslateRegionButton: ایمیزون علاقہ تبدیل کریں
+  wwcConfigConversationLangInvalid: غلط زبان کا کوڈ!
+  wwcConfigGUIWatsonAPIKeyButton: واٹسن API کی کلید تبدیل کریں
+  wwcEnabled: فعال ورلڈ وائڈ ہاٹ ورژن {0}.
+  wwctbOnSender: کتاب ترجمہ فعال. ترجمہ کرنے کے لئے کتاب کا انعقاد کرتے ہوئے دائیں
+    کلک کریں!
+  wwcListenersInitialized: ابتدائی سامعین.
+  wwcConfigGUIPluginUpdateChatButton: پلگ ان اپ ڈیٹس کے لئے چیٹ یاد
+  wwcConfigConversationSendTranslationChatSuccess: فعال مترجم چیٹ یاددہانی کامیابی
+    کے ساتھ ٹوگل
+  wwctsOffTarget: '{0} کے لئے معذور سائن ترجمہ.'
+  wwcUpdaterConnectionFailed: Github پر تازہ ترین اپ ڈیٹس کی جانچ پڑتال کرنے کے قابل
+  watsonNotFoundExceptionNotification: کسی بھی مزید آپ کی ان پٹ ترجمہ کرنے کے قابل
+    نہیں.
+  wwcConfigConversationWatsonAPIKeyInput: موجودہ API کلید {0} ہے. ان پٹ واٹسن کے لئے
+    API کلید، یا 0 ٹائپ واپس جانے کے لئے.
+  wwctGUIStopButton: ترجمے کو روکیں
+  wwcgTranslationStopped: گلوبل چیٹ ترجمہ روک دیا گیا ہے.
+  wwcUpdaterFutureDate: WorldwideChat کی یہ مثال تازہ ترین عوامی ایک سے زیادہ ورژن
+    ہے.
+  wwcConfigConversationPrefixSuccess: سابقہ کامیابی سے تبدیل ہو گیا۔
+  wwcConfigGUIGoogleTranslateAPIKeyButton: گوگل ترجمہ API کلید تبدیل کریں
+  wwcSignDeletedOrTooLong: 'ہدف نشان یا تو حذف کر دیا گیا تھا یا ترجمہ بہت طویل تھا.
+    ترجمہ:'
+  wwctsOnTarget: '{0} کے لئے فعال سائن ترجمہ.'
+  wwcConfigCacheDisabled: مترجم کی کیش غیر فعال
+  wwcConfigConversationWatsonURLInput: موجودہ URL {0} ہے، برائے مہربانی واٹسن کے لئے
+    سروس یو آر ایل ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcBookDone: کتاب کامیابی سے ترجمہ.
+  wwctsOnSender: سائن ترجمہ فعال. ترجمہ کرنے کے لئے ایک نشانی پر دائیں کلک کریں!
+  watsonColorCodeWarning: رنگ کوڈ کا استعمال کرتے ہوئے آپ کو غیر متوقع نتائج دے سکتا
+    ہے.
+  wwctGUITranslationButton: ترجمہ شروع کریں
+  wwctGUIAutoDetectButton: خود کار طریقے سے ماخذ زبان
+  wwcUpdaterUpToDate: ورلڈ وائڈ شاٹ اپ ڈیٹ ہے!
+  wwcConfigConversationAmazonTranslateRegionInput: موجودہ علاقہ {0} ہے، برائے مہربانی
+    ایمیزون کے لیے ایک علاقہ ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcNoConsole: یہ کمانڈ صرف ایک کھلاڑی کی طرف سے چلایا جا سکتا ہے.
+  wwcInitializationFail: WorldwideChat کو شروع کرنے میں ناکام رہی۔
+  wwcrSuccess: WorldwideChat کو کامیابی سے دوبارہ لوڈ کیا گیا۔
+  wwcPlayerNotFound: کھلاڑی میں %مجھے نہیں ملا
+  wwcUpdaterOutOfDateChat: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. براہ مہربانی تازہ ترین
+    ورژن میں اپ ڈیٹ کریں.
+  wwcConfigConversationRateLimitSuccess: شرح کی حد کامیابی سے طے کی گئی ہے۔
+  wwcConfigConversationWatsonURLSuccess: واٹسن یو آر ایل کامیابی سے سیٹ کرتا ہے۔
+  wwctbPlayerNotFound: کھلاڑی {0} یا تو نہیں ملا ہے، یا ایک فعال مترجم نہیں ہے.
+  wwcConfigConversationTranslationCacheSuccess: ترجمہ کیش کی حد کامیابی سے سیٹ.
+  wwctInvalidArgs: غلط دلائل فراہم کی گئی ہیں!
+  wwcConfigGUIPrefixButton: پلگ ان کا سابقہ تبدیل کریں
+  wwctSameLangError: آپ ایک ہی زبان میں ترجمہ نہیں کر سکتے!
+  wwctGUINewTranslationTarget: ہدف کی زبان کا انتخاب کریں
+  wwcConfigConnectionSuccess: کامیابی کے ساتھ {0} سے جڑا ہوا!
+  wwcConfigGUIGoogleTranslateButton: گوگل ترجمہ
+  wwcConfigGUIPreviousPageButton: پچھلا صفحہ
+  wwcConfigGUITranslatorCacheButton: ترجمہ کیش کی حد تبدیل کریں
+  wwcConfigConversationbStatsSuccess: کامیابی سے bStats ٹوگل کر دیا.
+  wwcSignDone: کامیابی کے ساتھ ترجمہ سائن کریں.
+  wwcConfigInvalidPrefixSettings: آپ کا سابقہ پڑھنے میں ناکام رہا۔ ڈیفالٹ استعمال
+    کرتے ہوئے...
+  wwcConfigRateLimitInvalid: خراب شرح کی حد config.yml میں مقرر. 0 سیکنڈ پر ڈیفالٹنگ...
+  wwcSignTranslateStart: ہدف کی علامت کا ترجمہ...
+  wwcConfigGUIChatSettings: چیٹ ترتیب
+  wwcConfigGUIWatsonURLButton: واٹسن سروس یو آر ایل تبدیل کریں
+  wwcConfigConversationUpdateCheckerSuccess: چیکر تاخیر سیٹ کامیابی سے اپ ڈیٹ کریں.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ {0} سے {1}
+    تک کیا جا رہا ہے۔
+  wwcConfigGUITranslatorSettings: مترجم ترتیب
+  wwcConfigConversationGoogleTranslateAPIKeyInput: موجودہ API کلید {0} ہے گوگل ترجمہ
+    کے لئے ایک API کلید ان پٹ براہ مہربانی، یا 0 ٹائپ واپس جانے کے لئے.
+  wwcConfigConversationRateLimitInput: فی ترجمہ موجودہ عالمی شرح کی حد {0} سیکنڈ ہے۔
+    نئی قدر مقرر کرنے کیلئے 0 سے زیادہ کوئی چیز ٹائپ کریں، یا حد کو غیر فعال کرنے
+    کیلئے 0 ٹائپ کریں۔ واپس جانے کے لئے 0 سے کم کچھ بھی ٹائپ کریں.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: گوگل ترجمہ API کلیدی سیٹ کامیابی
+    سے.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: ایمیزون خفیہ کلید تبدیل
+  wwcVersion: ورلڈ وائڈ شاٹ، ورژن
+  wwcsAttemptedTranslations: 'تراجم کی کوشش کی گئی: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ایمیزون خفیہ کلیدی سیٹ کامیابی
+    سے.
+  wwcConfigConversationWatsonAPIKeySuccess: واٹسن API کلیدی سیٹ کامیابی سے.
+  wwcRateLimit: آپ کے ترجمے شرح محدود ہیں. براہ مہربانی ایک اور میں {0} سیکنڈ انتظار
+    کریں۔
+  wwcConfigCacheEnabled: مترجم کیش فعال اور {0} کی حد پر مقرر کیا گیا ہے۔
+  wwctGUIExistingTranslationButton: موجودہ ترجمہ کا اجلاس اوور لکھنا
+  wwcUserDataReloaded: تمام محفوظ کردہ صارف کے ڈیٹا کو لوڈ کیا گیا.
+  wwcConfigGUISendTranslationChatButton: لاگ ان پر فعال مترجم کو چیٹ یاد دہانی
+  wwcsLastTranslationTime: 'آخری (کامیاب) ترجمہ کا وقت: {0}'
+  wwctbNotATranslator: آپ ایک فعال مترجم نہیں ہیں! اس بات کو یقینی بنائیں کہ آپ نے
+    اسے /wwct کے ساتھ مقرر کیا ہے
+  wwcConfigConversationAmazonTranslateAccessKeyInput: موجودہ رسائی کلید {0} ہے براہ
+    مہربانی ایمیزون کے لئے رسائی کی کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ایمیزون رسائی کلیدی سیٹ کامیابی
+    سے.
+  wwcConfigBadUpdateDelay: config.yml میں غلط اپ ڈیٹر تاخیر سیٹ. 86400 سیکنڈ تک ڈیفالٹنگ...
+  wwctrlRateLimitOffSender: آپ کی شرح کی حد کو بند کر دیا.
+  wwctrlRateLimitAlreadyOffTarget: '{0} کی شرح کی حد پہلے ہی غیر فعال ہے۔'
+  wwctrlPlayerNotFound: کھلاڑی {0} یا تو نہیں ملا ہے، یا ایک فعال مترجم نہیں ہے.
+  wwctrlRateLimitSetSender: اپنی شرح کی حد {0} سیکنڈ پر مقرر کریں۔
+  wwctrlRateLimitOffTarget: '{0} کی شرح کی حد کو بند کر دیا'
+  wwctrlNotATranslator: آپ ایک فعال مترجم نہیں ہیں! اس بات کو یقینی بنائیں کہ آپ نے
+    اسے /wwct کے ساتھ مقرر کیا ہے
+  wwctrlRateLimitAlreadyOffSender: آپ کی شرح کی حد پہلے ہی غیر فعال ہے۔
+  wwctGUIRateButton: شرح کی حد مقرر کریں
+  wwctGUIConversationRateLimit: فی ترجمہ شرح کی حد فی فی الفقہ {0} سیکنڈ ہے. نئی قدر
+    مقرر کرنے کیلئے 0 سے زیادہ کوئی چیز ٹائپ کریں، یا حد کو غیر فعال کرنے کیلئے 0
+    ٹائپ کریں۔ واپس جانے کے لئے 0 سے کم کچھ بھی ٹائپ کریں.
+  wwctGUITargetPlayerNull: ہدف کھلاڑی سرور سے منقطع.
+  wwcConfigConversationSyncUserDataDelayInput: صارف ڈیٹا کی مطابقت پذیری فی موجودہ
+    تاخیر {0} سیکنڈ ہے. ایک نئی قیمت مقرر کرنے کے لئے 10 سے زیادہ کچھ بھی ٹائپ کریں،
+    یا واپس جانے کے لئے 10 سے کم کچھ بھی.
+  wwcConfigGUISyncUserDataButton: صارف ڈیٹا کی مطابقت پذیری میں تبدیلی کریں
+  wwcConfigSyncDelayEnabled: فی صارف ڈیٹا مطابقت پذیری تاخیر {0} سیکنڈ پر سیٹ کریں.
+  wwcConfigConversationSyncUserDataDelaySuccess: صارف ڈیٹا مطابقت پذیری تاخیر کا سیٹ
+    کامیابی سے
+  wwcConfigSyncDelayInvalid: config.yml میں غلط صارف ڈیٹا مطابقت پذیری تاخیر سیٹ.
+    7200 سیکنڈ تک ڈیفالٹنگ...
+  wwcConfigCacheInvalid: مترجم کیش کا سائز غلط ہے۔ 10 کے لئے ناقص...
+  wwcInventoryErrorPlayer: آپ کے GUI کے ساتھ غلطی کا پتہ چلا. کنسول کو ایک لاگ بھیجا
+    گیا ہے۔
+  wwcInventoryError: صارف {0} کے GUI کے ساتھ غلطی کا پتہ چلا براہ کرم اس مسئلے کو
+    ڈویلپر سے رپورٹ کریں۔
+  wwctiOffTarget: آئٹم ترجمہ {0} کے لئے غیر فعال.
+  wwctiOffSender: آئٹم ترجمہ غیر فعال.
+  wwcItemTranslateTitleStock: ڈیفالٹ آئٹم کے ناموں کا ترجمہ کرنے
+  wwctGUIItemButton: آئٹم ترجمہ ٹوگل کریں
+  wwcItemTranslateTitleDone: ترجمہ کردہ آئٹم عنوان کامیابی سے.
+  wwcGUITempItem: آئٹم نمائش
+  wwcItemTranslateStart: ہدف شے کا ترجمہ...
+  wwcBookTranslateTitleSuccess: 'ترجمہ شدہ کتاب کا عنوان: {0}'
+  wwctiOnSender: آئٹم ترجمہ فعال. ترجمہ کرنے کے لئے اپنے اہم ہاتھ میں ایک آئٹم کے
+    ساتھ دائیں کلک کریں!
+  wwcItemTranslateLoreStart: ہدف شے کی تکرار کا ترجمہ...
+  wwcItemTranslateLoreDone: ترجمہ شدہ آئٹم کامیابی سے بھی۔
+  wwctiOnTarget: آئٹم ترجمہ {0} کے لئے فعال.
+  wwcInvalidTranslator: غلط مترجم کی ترتیبات. براہ کرم اس پلگ ان کو استعمال کرنے کے
+    لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.
+  wwcConfigGUIEachTranslatorSettings: '{0} ترتیب'
+  wwcConfigGUIWatsonButton: واٹسن
+  wwcServerReloadWarning: WorldwideChat /reloadکے استعمال کی توثیق نہیں کرتا. براہ
+    مہربانی احتیاط کے ساتھ آگے بڑھیں۔
+  wwcConfigEnabledDebugMode: فعال ڈیبگ موڈ. اگر آپ ڈویلپر یا ڈویلپر نہیں ہیں تو، آپ
+    کو اسے بند کرنا چاہئے.
+  wwcTranslatorErrorThresholdReached: غلطی کی حد پہنچ گئی. یہ پلگ ان اب دوبارہ لوڈ
+    کریں گے، اور تمام مترجمین کو غیر فعال کریں گے.
+  wwcConfigErrorLimitEnabled: مترجم کی خرابی کی حد {0} پر سیٹ ہے۔
+  wwcTranslatorError: آپ کے ترجمہ کی کوشش کرتے ہوئے ایک مسئلہ پیش آیا۔ براہ مہربانی
+    دوبارہ کوشش کریں۔
+  wwcConfigErrorLimitInvalid: config.yml میں مقرر کردہ غلط مترجم غلطی کی حد. 5 کے
+    لئے ناقص...
+  wwcTranslatorErrorThresholdReachedCheckLogs: مزید معلومات کے لئے براہ کرم WorldwideChat
+    پلگ ان فولڈر میں errorLog.txt چیک کریں.
+  wwctInvalidInputLangCode: 'غلط ان پٹ زبان کوڈ فراہم کی! درست لنگ کوڈ: {0}'
+  wwctInvalidOutputLangCode: 'غلط آؤٹ پٹ زبان کوڈ فراہم کی! درست لنگ کوڈ: {0}'
+  wwctGUISourceTranslationSelected: آپ نے یہ زبان منتخب کی ہے۔
+  wwcConfigGUIChatMessagesOverrideDeleteButton: اووررائڈ حذف
+  wwcConfigConversationOverrideTextChange: براہ کرم اس اووررائڈ کے لئے نیا پیغام ٹائپ
+    کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔ کسی بھی متغیرات کو شامل کرنا یاد رکھیں
+    جو آپ اصل پیغام میں دیکھتے ہیں فی صد علامات سے شروع ہوتا ہے۔
+  wwctGUISourceOrTargetTranslationAlreadyActive: یہ زبان پہلے ہی فعال ہے!
+  wwcConfigGUIChatMessagesPossibleOverrides: پیغام کا انتخاب کریں
+  wwcConfigGUIChatMessagesModifyOverride: موجودہ اووررائڈ میں ترمیم
+  wwcConfigConversationOverrideDeletionSuccess: حسب ضرورت پیغام اوور رائڈ حذف کر دیا
+    گیا
+  wwcConfigGUIChatMessagesDeadOverride: یہ اووررائڈ یا تو غلط ہے، یا اصل پیغام ہٹا
+    دیا گیا ہے۔ آپ کو یہ حذف کرنا چاہئے.
+  wwcConfigGUIMessagesAlreadyOverriden: آپ کے پاس پہلے سے ہی اس پیغام کے لئے ایک اووررائڈ
+    ہے!
+  wwcConfigGUIChatMessagesOverrideNewButton: نیا اووررائڈ شامل کریں
+  wwcConfigGUIMessagesOverrideCustomLabel: نیا پیغام
+  wwcConfigConversationOverrideTextChangeSuccess: نیا پیغام سیٹ کامیابی کے ساتھ.
+  wwcConfigGUIChatMessagesOverrideChangeButton: موجودہ متن تبدیل کریں
+  wwcExampleMessage: یہ ایک ڈمی پیغام ہے، اور اس کا مطلب ایک مثال کے طور پر زیادہ
+    سے زیادہ ہونا ہے.
+  wwcConfigGUIMessagesOverrideOriginalLabel: اصل پیغام
+  wwcConfigGUIDebugModeButton: ڈیبگ موڈ کو ٹگل کریں
+  wwcConfigConversationDebugModeSuccess: ڈیبگ موڈ کو کامیابی سے ٹوگل کیا گیا ہے۔
+  wwcConfigGUIErrorLimitButton: مترجم غلطی کی حد تبدیل کریں
+  wwcConfigConversationErrorLimitSuccess: غلطی کی حد کامیابی کے ساتھ سیٹ.
+  wwcEntityTranslateStart: ہدف ادارے کا ترجمہ...
+  wwcConfigGUICharacterLimitButton: پیغام کی حرف کی حد تبدیل کریں
+  wwcConfigMessageCharLimitInvalid: config.yml میں سیٹ کردہ پیغام فی غلط حد. 255 حروف
+    کے لئے ناقص...
+  wwcConfigConversationCharacterLimitSuccess: کریکٹر کی حد کامیابی کا سیٹ.
+  wwcteOnTarget: ہستی ترجمہ {0} کے لئے فعال.
+  wwcEntityTranslateDone: 'ترجمہ شدہ ادارے کا نام: {0}'
+  wwcEntityTranslateNoName: ادارے کا کوئی حسب ضرورت نام نہیں ہے۔
+  wwcConfigConversationErrorLimitInput: ہر مترجم کے لیے موجودہ غلطی کی حد {0} ہے نئی
+    قدر مقرر کرنے کے لیے 0 سے زیادہ کسی چیز کو ٹائپ کریں، یا واپس جانے کے لیے 0 سے
+    کم یا اس کے برابر کسی چیز کو ٹائپ کریں۔
+  wwcConfigGUIGlobalRateLimitButton: عالمی شرح کی حد تبدیل کریں
+  wwcteOnSender: ادارے ترجمہ فعال. اس کے نام کا ترجمہ کرنے کے لئے ایک ادارے پر دائیں
+    کلک کریں!
+  wwcConfigGUIResponseLimitButton: ترجمہ جواب ٹائم آؤٹ تبدیل کریں
+  wwcConfigMessageCharLimitEnabled: پیغام فی کریکٹر کی حد {0} حروف پر سیٹ کی گئی ہے۔
+  wwcteOffTarget: ہستی ترجمہ {0} کے لئے غیر فعال.
+  wwcCharLimit: آپ کا پیغام بہت طویل ہے! براہ کرم اس بات کو یقینی بنائیں کہ آپ کا
+    پیغام {0} حروف سے بھی کم ہے۔
+  wwcteOffSender: ادارہ ترجمہ معذور.
+  wwctGUIEntityButton: انسٹی ٹیٹی ترجمہ ٹوگل کریں
+  wwctrlRateLimitBadInt: آپ کی شرح کی حد ایک درست عددی نہیں ہے.
+  wwcTranslatorErrorConsole: ایک مسئلہ پیش آیا جبکہ صارف {0} ان کے ترجمہ کی کوشش کر
+    رہا تھا. براہ کرم چیک کریں errorLog.txt مزید تفصیلات کے لئے.
+  wwctGUIChatButton: چیٹ ترجمہ ٹوگل کریں
+  wwcrBegin: ورلڈ وائڈ ہاٹ دوبارہ لوڈ کرنا...
+  wwctTranslationStoppedOtherPlayer: '{0} کے لئے ترجمہ سیشن روک دیا گیا ہے.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ کیا
+    جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے {0} سے {1}
+  wwctCannotTranslateConsole: آپ کنسول کے لئے ترجمہ سیشن شروع نہیں کر سکتے ہیں!
+  wwcOnJoinTranslationNotificationSourceLang: آپ کے پاس ایک فعال ترجمہ سیشن ہے {0}
+    سے {0} تک.
+  wwctTranslationStopped: آپ کا ترجمہ سیشن روک دیا گیا ہے۔
+  wwctAutoTranslateStart: ترجمہ کا ایک نیا سیشن {0} پر شروع کیا جا رہا ہے۔
+  wwcOnJoinTranslationNotificationNoSourceLang: آپ کے پاس ایک فعال ترجمہ سیشن ہے {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ کیا
+    جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے {0}.
+  wwcConfigGUIChangesNotSaved: آپ کی تبدیلیاں اس وقت تک اثر نہیں ہوگی جب تک آپ /wwcc
+    میں سرخ رکاوٹ پر کلک نہ کریں.
+  wwctciOffSender: آنے والی چیٹ ترجمہ معذور.
+  wwctGUIChatIncomingButton: آنے والی چیٹ ترجمہ ٹوگل
+  wwctcoOffSender: سبکدوش ہونے والے چیٹ ترجمہ معذور.
+  wwctcoOnSender: سبکدوش ہونے والے چیٹ ترجمہ فعال. کچھ بھی جو آپ کہتے ہیں ترجمہ کیا
+    جائے گا!
+  wwctciOnSender: آنے والی چیٹ ترجمہ فعال. جو کچھ بھی آپ کو ملتا ہے اُس کا ترجمہ
+    کیا جائے گا!
+  wwctGUIChatMenu: چیٹ ترجمہ مینو ٹوگل کریں
+  wwctcoOnTarget: سبکدوش ہونے والے چیٹ ترجمہ کو {0} کے لئے فعال کیا گیا ہے۔
+  wwctcoOffTarget: سبکدوش چیٹ ترجمہ {0} کے لیے غیر فعال ہے۔
+  wwctGUIChatOutgoingButton: سبکدوش چیٹ ترجمہ ٹوگل
+  wwctciOnTarget: آنے والی چیٹ ترجمہ کا {0} کے لیے فعال کیا گیا ہے۔
+  wwctciOffTarget: آنے والی چیٹ ترجمہ {0} کے لیے غیر فعال ہے۔
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: اصل آنے والی چیٹ ترجمہ کے
+    ساتھ منسلک ہوور ٹیکسٹ کے طور پر کامیابی سے ٹوگل کیا گیا.
+  wwcConfigGUISendIncomingHoverTextChatButton: اصل آنے والے پیغامات کو ہوور ٹیکسٹ
+    کے طور پر شامل کریں
+  wwctGUIExistingChatOutgoingEnabled: 'باہر جانے والے چیٹ ترجمہ فعال: {0}'
+  wwctGUIExistingTranslationInput: 'ان پٹ زبان: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'آنے والی چیٹ ترجمہ فعال: {0}'
+  wwctGUIExistingTranslationOutput: 'آؤٹ پٹ کی زبان: {0}'
+  wwcTranslatorAttempt: config.yml میں مترجم سے منسلک کرنے کی کوشش... (کوشش {0}/ {1})
+  wwcTimeoutExceptionConsole: کھلاڑی٪ میں نے ان کی حالیہ ترین درخواست ٹائم آؤٹ تھا.
+    یہ غلطی مہلک نہیں ہے، لیکن ورلڈ چیٹ کو دوبارہ لوڈ کیا جانا چاہئے اگر یہ جاری رہتا
+    ہے.
+  wwcGUIPageNumber: 'صفحہ نمبر: {0}'
+  wwcConfigYAMLFallback: YAML واپس گرنے...
+  wwcConfigGUIToggleSQLButton: ٹوگل SQL
+  wwcConfigConversationToggleSQLSuccess: SQL نے کامیابی سے ٹوگل کیا. اثر انداز کرنے
+    کے لئے تبدیلی کے لئے دوبارہ لوڈ کریں.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate کو کامیابی سے
+    ٹوگل کیا. اثر انداز کرنے کے لئے تبدیلی کے لئے دوبارہ لوڈ کریں.
+  wwcConfigYAMLDefault: ڈیٹا اسٹوریج کے لئے YAML میں ڈیفالٹ.
+  wwcConfigGUISQLMenuButton: SQL ترتیبات تبدیل کریں
+  wwcConfigConversationWatsonTranslateToggleSuccess: کامیابی سے واٹسن ترجمہ ٹوگل.
+    اثر انداز کرنے کے لئے تبدیلی کے لئے دوبارہ لوڈ کریں.
+  wwcConfigGUIToggleGoogleTranslateButton: گوگل ترجمہ ٹوگل
+  wwcConfigGUIToggleWatsonTranslateButton: ٹوگل واٹسن ترجمہ کریں
+  wwcConfigGUIToggleAmazonTranslateButton: ٹوگل ایمیزون ترجمہ کریں
+  wwcConfigGUIStorageSettings: اسٹوریج کی ترتیب
+  wwcConfigConversationAmazonTranslateToggleSuccess: کامیابی سے ایمیزون ترجمہ ٹوگل.
+    اثر انداز کرنے کے لئے تبدیلی کے لئے دوبارہ لوڈ کریں.
+  wwcConfigGUISQLPortButton: SQL پورٹ تبدیل کریں
+  wwcConfigGUISQLOptionalArgsButton: SQL اختیاری دلائل تبدیل کریں
+  wwcConfigConversationToggleSQLSSLSuccess: SQL کے لئے SSL کامیابی سے ٹوگل.
+  wwcConfigConversationSQLPortInput: موجودہ بندرگاہ ہے {0} ہے ایک نئی بندرگاہ مقرر
+    کرنے کے لئے 0 کے علاوہ کچھ ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigGUISQLPasswordButton: SQL پاس ورڈ تبدیل کریں
+  wwcConfigConversationSQLHostnameSuccess: SQL میزبان نام کو کامیابی سے تبدیل کر دیا.
+  wwcConfigConversationSQLHostnameInput: موجودہ میزبان نام ہے {0}. 0 کے علاوہ کچھ
+    بھی ٹائپ کریں ایک نیا میزبان نام مقرر کرنے کے لئے، یا واپس جانے کے لئے 0 ٹائپ
+    کریں.
+  wwcConfigGUISQLHostnameButton: SQL ہوسٹنام تبدیل کریں
+  wwcConfigConversationSQLOptionalArgsSuccess: اختیاری SQL دلائل کو کامیابی سے تبدیل
+    کر دیا.
+  wwcConfigConversationSQLPasswordSuccess: SQL پاس ورڈ کو کامیابی سے تبدیل کر دیا.
+  wwcConfigConversationSQLPasswordInput: موجودہ پاسورڈ {0} ہے ایک نیا پاس ورڈ سیٹ
+    کرنے کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ٹوگل کریں
+  wwcConfigConversationSQLUsernameSuccess: SQL صارف نام کو کامیابی سے تبدیل کر دیا.
+  wwcConfigConversationSQLUsernameInput: موجودہ صارف نام {0} ہے، نیا صارف نام سیٹ
+    کرنے کے لئے 0 کے علاوہ کچھ ٹائپ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationSQLPortSuccess: SQL پورٹ کو کامیابی سے تبدیل کر دیا.
+  wwcConfigGUISQLUsernameButton: SQL صارف نام تبدیل کریں
+  wwcConfigConversationSQLOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف کر دیے
+    گئے۔
+  wwcConfigConversationSQLOptionalArgsInput: 'موجودہ اختیاری SQL دلائل یہ ہیں: {0}
+    ایک کوما (key=value, key2=value2) سے علیحدہ دلائل ٹائپ کریں، یا موجودہ args مسح
+    کرنے کے لئے واضح ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔'
+  wwcConfigConversationSQLDatabaseNameInput: موجودہ ڈیٹا بیس کا نام {0} ہے ایک نیا
+    ڈیٹا بیس کا نام مقرر کرنے کے لئے 0 کے علاوہ کچھ ٹائپ کریں، یا واپس جانے کے لئے
+    0 ٹائپ کریں.
+  wwcConfigGUISQLDatabaseNameButton: SQL ڈیٹا بیس تبدیل کریں
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL ڈیٹا بیس کا نام کامیابی سے تبدیل
+    کر دیا.
+  wwcConfigConversationFatalAsyncAbort: تمام async کاموں کو اسقاط کرنے کا موجودہ ٹائم
+    آؤٹ {0} سیکنڈ ہے۔ نیا ٹائم آؤٹ سیٹ کرنے کے لئے 7 سے اوپر کچھ بھی ٹائپ کریں، یا
+    واپس جانے کے لئے اس کے نیچے کچھ بھی.
+  wwcConfigConversationFatalAsyncSuccess: Sync کام کا ٹائم آؤٹ کامیابی سے متعین کیا
+    گیا ہے۔
+  wwcConfigGUIFatalAsyncAbortButton: ایسنک ٹاسک ٹائم آؤٹ تبدیل کریں
+  libreHttp400: بری درخواست Libri ترجمہ کرنے کے لئے بھیجا! جب تک آپ کچھ ایسا نہیں
+    کر رہے ہیں جو آپ کو نہیں کرنا چاہئے، آپ کو یہ نہیں ملنا چاہئے. ڈویلپر سے رابطہ
+    کریں!
+  wwcConfigGUILibreTranslateApiKeyButton: مفت ترجمہ API کلید کو تبدیل کریں
+  libreHttp403: لاپتہ Libe API کلید ترجمہ کریں، یا آپ سرور سے پابندی عائد کر رہے ہیں!
+  wwcConfigConversationLibreURLSuccess: مفت یو آر ایل کامیابی سے سیٹ کیا گیا ہے.
+  wwcConfigConversationLibreTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم
+    Libe کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigGUILibreTranslateButton: مفت ترجمہ
+  libreHttp429: سرور سے شرح کی حد کی وجہ سے کوئی اعتماد نہیں.
+  wwcConfigGUIToggleLibreTranslateButton: ٹوگل مفت ترجمہ کریں
+  wwcConfigConversationLibreTranslateToggleSuccess: کامیابی کے ساتھ مفت ترجمہ ٹوگل.
+    تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
+  wwcConfigConversationLibreTranslateApiKeySuccess: مفت API کلید کامیابی سے سیٹ.
+  wwcConfigConversationLibreURLInput: موجودہ URL {0} ہے، برائے مہربانی Libere کے لئے
+    ایک URL ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  libreHttpUnknown: 'نامعلوم HTTP غلطی: {0}'
+  wwcConfigGUILibreTranslateURLButton: مفت تبدیل کریں URL کا ترجمہ کریں
+  wwcConfigConnectionFail: '{0} سے متصل ہونے میں ناکام.'
+  wwcConfigConversationMongoDatabaseNameSuccess: کامیابی سے MongoDB ڈیٹا بیس کا نام
+    تبدیل کر دیا.
+  wwcConfigGUIMongoHostnameButton: مونگو ڈی بی میزبان نام تبدیل کریں
+  wwcConfigConversationMongoPasswordInput: موجودہ پاس ورڈ {0} ہے نیا پاس ورڈ سیٹ کرنے
+    کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationMongoPortInput: موجودہ بندرگاہ {0} ہے ایک نیا پورٹ سیٹ کرنے
+    کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationToggleMongoSuccess: MongoDB کامیابی سے ٹوگل. تبدیلی کو مؤثر
+    بنانے کے لئے دوبارہ لوڈ کریں.
+  wwcConfigConversationMongoHostnameInput: موجودہ میزبان کا نام {0} ہے ایک نیا میزبان
+    نام مقرر کرنے کے لئے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ
+    کریں.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB میزبان نام کو کامیابی سے تبدیل
+    کر دیا.
+  wwcConfigGUIMongoMenuButton: MongoDB کی ترتیبات کو تبدیل کریں
+  wwcConfigGUIToggleMongoButton: مونگو ڈی بی کو ٹوگل کریں
+  wwcConfigConversationMongoDatabaseNameInput: موجودہ ڈیٹا بیس کا نام {0} ہے ایک نیا
+    ڈیٹا بیس نام سیٹ کرنے کے لیے 0 کے علاوہ کچھ بھی ٹائپ کریں یا واپس جانے کے لیے
+    0 ٹائپ کریں۔
+  wwcConfigConversationMongoOptionalArgsInput: 'موجودہ اختیاری MongoDB دلائل ہیں:
+    {0} قسم کے دلائل کوما (کلید = قدر، key2 = value2)، یا موجودہ ارگز مسح کرنے کے
+    لئے واضح ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB ڈیٹا بیس تبدیل کریں
+  wwcConfigConversationMongoUsernameInput: موجودہ صارف نام {0} ہے ایک نیا صارف نام
+    مرتب کرنے کے لیے 0 کے علاوہ کوئی بھی چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ
+    کریں۔
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB اختیاری دلائل تبدیل کریں
+  wwcConfigConversationMongoUsernameSuccess: MongoDB صارف نام کو کامیابی سے تبدیل
+    کر دیا.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB پاس ورڈ کو کامیابی سے تبدیل کر
+    دیا.
+  wwcConfigConversationMongoPortSuccess: کامیابی سے MongoDB بندرگاہ کو تبدیل کر دیا.
+  wwcConfigGUIMongoUsernameButton: MongoDB صارف نام تبدیل کریں
+  wwcConfigGUIMongoPasswordButton: MongoDB پاس ورڈ تبدیل کریں
+  wwcConfigConversationMongoOptionalArgsSuccess: کامیابی سے اختیاری MongoDB دلائل
+    کو تبدیل کر دیا.
+  wwcConfigConversationMongoOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف ہو گئے۔
+  wwcConfigGUIMongoPortButton: مونگو ڈی بی پورٹ تبدیل کریں
+  wwcConfigInvalidFatalAsyncTimeout: غلط مہلک async ٹائم آؤٹ سیٹ. 10 سیکنڈ پر ناکامی...
+  libreHttp500: آپ کے منتخب کردہ ان پٹ اور آؤٹ پٹ زبان کے جوڑے کی حمایت نہیں کی جاتی
+    ہے. براہ کرم ایک مختلف زبان کا سیٹ منتخب کریں!
+  wwcConfigGUIDeepLTranslateButton: دیپ ایل کا ترجمہ ٹوگل
+  wwcConfigConversationDeepLTranslateToggleSuccess: کامیابی سے ڈیپ ایل ترجمہ ٹوگل.
+    تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL ترجمہ API کلید تبدیل کریں
+  wwcConfigGUIToggleDeepLTranslateButton: دیپ ایل کا ترجمہ ٹوگل
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API کلید کامیابی سے سیٹ.
+  wwcConfigConversationDeepLTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم
+    DeepL کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigErrorsToIgnoreSuccess: کامیابی سے رجسٹرڈ مترجم کی غلطیوں کو نظر انداز کرنے.
+  wwcConfigErrorsToIgnoreInvalid: config.yml میں سیٹ کو نظر انداز کرنے کے لئے غلط
+    مترجم کی غلطیاں. ڈیفالٹ رجسٹر کر رہا ہے...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: جملے کو نظر انداز کرنے کے لئے مترجم کی
+    غلطیوں کو کامیابی سے تبدیل کردیا.
+  wwcConfigGUIIgnoreErrorsButton: نظر انداز کرنے کے لئے غلطیوں کو تبدیل کریں
+  wwcConfigConversationIgnoreErrorsInput: 'مترجم کی غلطیوں کو نظر انداز کرنے کے لیے
+    جملے کی موجودہ فہرست یہ ہے: {0} کسی کوما (key=value، key2=value2) کے ذریعہ علیحدہ
+    دلائل ٹائپ کریں، یا موجودہ ارگز کو مسح کرنے کے لئے واضح ٹائپ کریں، یا واپس جانے
+    کے لئے 0 ٹائپ کریں۔ اس کے علاوہ، “*” ٹائپ کرنے سے پلگ ان کسی بھی مترجم کی غلطیوں
+    کی جانچ پڑتال نہیں ہوگی.'
+  wwcConfigConversationIgnoreErrorsCleared: مترجم کی غلطیاں کامیابی سے صاف جملے کو
+    نظر انداز کرنے کے لئے.
+  wwcSupportedServer: '{0} کے لئے دنیا بھر میں چیٹ شروع کر رہا ہے...'
+  wwcSupportedVersion: ورژن {0} کے لئے خصوصیات کو فعال کر رہا ہے...
+  wwcBadPerms: 'آپ کے پاس اس کمانڈ پر عمل درآمد کرنے کے لئے مطلوبہ اجازتیں نہیں ہیں:
+    {0}'
+  wwcsIsActiveTranslator: 'فعال مترجم ہے: {0}'
+  wwcsActiveTransPrevRate: 'پچھلی شرح کی حد وقت: {0}'
+  wwcsActiveTransSaved: 'ڈسک پر محفوظ کیا گیا: {0}'
+  wwcsActiveTransIncoming: 'آنے والی چیٹ کا ترجمہ: {0}'
+  wwcsActiveTransOutLang: 'آؤٹ پٹ زبان: {0}'
+  wwcsActiveTransInLang: 'ان پٹ زبان: {0}'
+  wwcsActiveTransBook: 'ترجمہ کتاب: {0}'
+  wwcsActiveTransSign: 'ترجمہ علامت: {0}'
+  wwcsActiveTransUUID: 'آئی ڈی: {0}'
+  wwcsActiveTransRateLimit: 'شرح کی حد: {0}'
+  wwcsActiveTransColorWarning: 'موصول رنگین انتباہ: {0}'
+  wwcsActiveTransSignWarning: 'موصول شدہ سائن میں ترمیم کی انتباہ: {0}'
+  wwcsTitle: '{0} کا ریکارڈ'
+  wwcsActiveTransOutgoing: 'باہر جانے والی چیٹ کا ترجمہ: {0}'
+  wwcsActiveTransItem: 'ترجمہ شدہ شے: {0}'
+  wwcsActiveTransEntity: 'ترجمہ کرنے والا ادارہ: {0}'
+  wwctsWarning: جب آپ علامات کا ترجمہ کر رہے ہو تو اشارے میں ترمیم غیر فعال ہے۔
+  wwcConfigConversationAzureTranslateToggleSuccess: کامیابی کے ساتھ Azure Translate
+    کو ٹوگل کیا تبدیلیوں کو نافذ کرنے کے لئے دوبارہ لوڈ کریں۔
+  wwcConfigGUIAzureTranslateButton: Azure کا ترجمہ
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure ترجمہ API کلید کو تبدیل کریں
+  wwcConfigGUIAzureTranslateRegionButton: Azure ترجمہ علاقہ تبدیل کریں
+  wwcConfigConversationAzureTranslateRegionSuccess: ایزور ریجن کامیابی کے ساتھ سیٹ
+    کیا
+  wwcConfigConversationAzureTranslateApiKeyInput: موجودہ API کلید {0} ہے۔ براہ کرم
+    Azure کے لئے ایک API کلید درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API کلید کامیابی کے ساتھ
+    سیٹ کی۔
+  wwcConfigConversationAzureTranslateRegionInput: موجودہ علاقہ {0} ہے۔ براہ کرم Azure
+    کے لئے ایک خطہ درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigGUIToggleAzureTranslateButton: Azure ترجمہ کو ٹوگل کریں
+  wwcConfigGUISystranTranslateApiKeyButton: سسٹرن ترجمہ API کلید کو تبدیل کریں
+  wwcConfigGUIToggleSystranTranslateButton: سیسٹرن ترجمہ کو ٹوگل کریں
+  wwcConfigConversationSystranTranslateApiKeyInput: موجودہ API کلید {0} ہے۔ براہ کرم
+    Systran کے لئے ایک API کلید درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcISOJSONFail: ISO JSON کے ساتھ زبان کی اشیاء کو ٹھیک کرنے سے قاصر۔
+  wwcConfigConversationSystranTranslateToggleSuccess: کامیابی کے ساتھ سیسٹرن ترجمہ
+    کو ٹوگل کیا تبدیلیوں کو نافذ کرنے کے لئے دوبارہ لوڈ کریں۔
+  wwcConfigConversationSystranTranslateApiKeySuccess: سسٹرن API کلید کامیابی کے ساتھ
+    سیٹ کی گئی
+  wwcConfigGUISystranTranslateButton: سیسٹرن ترجمہ
+  wwcrTransFail: ورلڈ وائڈ چیٹ کو دوبارہ لوڈ کیا گیا لیکن مترجم کو فعال کرنے میں ناکام
+    رہا۔
+  wwcdCacheCleared: ترجمہ کیشے صاف کر دیا گیا۔
+  wwcdInvalidCmd: غلط دلائل!
+  systranHttpUnknown: 'نامعلوم HTTP غلطی: {0}'
+  systranHttp400: خراب پیرامیٹرز سسٹرن کو بھیجے شاید برا زبان کی جوڑی ہوسکتی ہے؟
+  systranHttp500: سیسٹرن اینڈ پوائنٹ ({0}) سے داخلی سرور کی خرابی۔
+  wwcInvalidStorageSession: '{0} آپ کی ترتیب میں فعال ہے، لیکن کوئی کنکشن قائم نہیں
+    ہے۔ براہ کرم اسے ٹھیک کرنے کے لئے دوبارہ لوڈ کرنے کی کوشش کریں، لیکن اگر آپ کو
+    پہلے {0} سے کنکشن کا کامیاب پیغام ملا تو براہ کرم ڈویلپر سے رابطہ کریں۔'
+  wwcConfigConversationPostgresDatabaseNameSuccess: کامیابی کے ساتھ PostgreSQL ڈیٹا
+    بیس کا نام تبدیل کردیا۔
+  wwcConfigConversationPostgresOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف
+  wwcConfigConversationPostgresPortInput: موجودہ بندرگاہ {0} ہے۔ نیا پورٹ سیٹ کرنے
+    کے لئے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigGUIPostgresUsernameButton: پوسٹگریسکیو ایل صارف نام تبدیل کریں
+  wwcConfigConversationPostgresOptionalArgsSuccess: اختیاری PostgreSQL دلائل کو کامیابی
+    کے ساتھ تبدیل کردیا۔
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL کے لئے ایس ایس ایل کامیابی
+    کے ساتھ ٹاپ ہوگیا۔
+  wwcConfigConversationPostgresPasswordSuccess: کامیابی کے ساتھ PostgreSQL پاس ورڈ
+    تبدیل کیا گیا۔
+  wwcConfigConversationPostgresPortSuccess: کامیابی کے ساتھ PostgreSQL پورٹ کو تبدیل
+    کردیا۔
+  wwcConfigConversationPostgresUsernameInput: موجودہ صارف نام {0} ہے۔ نیا صارف نام
+    ترتیب دینے کے لئے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationTogglePostgresSuccess: پوسٹ گریسکیو ایل کامیابی کے ساتھ ٹوگل
+    ہوا۔ تبدیلی کو نافذ کرنے کے لئے دوبارہ لوڈ کریں۔
+  wwcConfigGUITogglePostgresButton: پوسٹگریس کیو ایل کو ٹوگل کریں
+  wwcConfigGUIPostgresPasswordButton: پوسٹ گریسکیو ایل پاس ورڈ تبدیل کریں
+  wwcConfigGUIPostgresOptionalArgsButton: پوسٹگریسکیو ایل اختیاری دلائل کو تبدیل کریں
+  wwcConfigGUIPostgresMenuButton: پوسٹگریسکیو ایل کی ترتیبات تبدیل کریں
+  wwcConfigConversationPostgresPasswordInput: موجودہ پاس ورڈ {0} ہے۔ نیا پاس ورڈ سیٹ
+    کرنے کے لیے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationPostgresHostnameInput: موجودہ میزبان کا نام {0} ہے۔ نیا میزبان
+    نام ترتیب دینے کے لئے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ
+    کریں۔
+  wwcConfigGUIPostgresPortButton: پوسٹگریسکیو ایل پورٹ تبدیل کریں
+  wwcConfigConversationPostgresHostnameSuccess: کامیابی کے ساتھ PostgreSQL میزبان
+    نام تبدیل کردیا۔
+  wwcConfigGUIPostgresHostnameButton: پوسٹ گریسکیو ایل میزبان نام تبدیل کریں
+  wwcConfigConversationPostgresDatabaseNameInput: موجودہ ڈیٹا بیس کا نام {0} ہے۔ نیا
+    ڈیٹا بیس کا نام سیٹ کرنے کے لئے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے
+    لئے 0 ٹائپ کریں۔
+  wwcConfigConversationPostgresOptionalArgsInput: 'موجودہ اختیاری پوسٹگریسکیو ایل
+    دلائل یہ ہیں: {0}. کوما کے ذریعہ الگ دلائل ٹائپ کریں (key = value، key2=value2)،
+    یا موجودہ آرگز کو صاف کرنے کے لیے کلیئر ٹائپ کریں، یا واپس جانے کے لیے 0 ٹائپ
+    کریں۔'
+  wwcConfigGUITogglePostgresSSLButton: پوسٹگریس کیو ایل ایس ایس ایل کو ٹوگل کریں
+  wwcConfigGUIPostgresDatabaseNameButton: پوسٹ گریسکیو ایل ڈیٹا بیس تبدیل کریں
+  wwcConfigConversationPostgresUsernameSuccess: کامیابی کے ساتھ PostgreSQL صارف نام
+    تبدیل کردیا۔
+  wwcConfigGUIStorageTypeSettings: '{0} ترتیب'
+  wwcConfigConversationPrefixInput: موجودہ پیش فصل {0} ہے۔ براہ کرم نیا ٹائپ کریں،
+    یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationLangInput: 'موجودہ پلگ ان کی زبان {0} ہے۔ براہ کرم زبان کا
+    ایک درست کوڈ درج کریں، یا منسوخ کرنے کے لیے 0 ٹائپ کریں۔ جائز زبان کے کوڈز: {1}'
+  wwcdCacheSize: کیشے کا سائز فی الحال {0} ہے، جس کی حد {1} ہے۔
+  wwcdCacheTerm: '{0}. کیچڈ ٹرانسلیشن:ان پٹ لانگ = {1}، آؤٹ پٹ لانگ = {2}، ان پٹ فریز=
+    {3} | آؤٹ پٹ فریز= {4}'
+  wwctLangToLangStart: '{0} سے {1} تک ایک نیا ترجمہ سیشن شروع کرنا۔'
+  wwctAutoTranslateStartOtherPlayer: '{0} سے {1} کے لئے نیا ترجمہ سیشن شروع کرنا۔'
+  wwctLangToLangStartOtherPlayer: '{1} سے {2} تک {0} کے لئے نیا ترجمہ سیشن شروع کرنا۔'
+  wwcgLangToLangStart: اب عالمی چیٹ کا {0} سے {1} تک ترجمہ کریں۔
+  wwctrlRateLimitSetTarget: '{0} کی شرح کی حد کو {1} سیکنڈ پر مقرر کریں۔'
+  wwcTimeoutException: آپ کی درخواست کا وقت ختم ہوگیا۔ براہ کرم دوبارہ کوشش کریں۔
+  wwctbNoMoreOldBooks: آپ کے سرور ورژن پر کتاب کا ترجمہ فعال نہیں ہے۔ اگر آپ مائن
+    کرافٹ کے حالیہ ورژن پر ہیں اور آپ کو یہ غلطی ملتی ہے تو، براہ کرم ڈویلپر سے رابطہ
+    کریں۔
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: مقامی منتخب کریں
+  wwcConfigGUIMessagesOverridePickChatButton: پہلے سے طے شدہ پلگ ان پیغامات کو
+  wwcConfigGUIChatMessagesOverrideSettings: ڈیفالٹ پیغامات کو اوور رائڈ کریں ({0})
+  wwcConfigGUIMessagesServerLang: یہ config.yml میں پلگ ان کی پہلے سے طے شدہ زبان
+    ہے۔
+  wwclLangStopped: آپ کی لوکلائزیشن کو سرور ڈیفالٹ پر ری سیٹ کیا گیا تھا۔
+  wwclLangInvalid: '{0} کوئی درست لوکلائزیشن نہیں ہے۔ تائید شدہ لوکلائزیشن: {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} کی لوکلائزیشن کو سرور ڈیفالٹ پر دوبارہ ترتیب
+    دیں۔'
+  wwclLangPlayerNotValid: '{0} کوئی درست کھلاڑی نہیں ہے۔'
+  wwclLangChangedOtherPlayerSender: '{0} کی لوکلائزیشن کو {1} میں تبدیل کردیا۔'
+  wwclLangChanged: آپ کی لوکلائزیشن کو {0} میں تبدیل کردیا گیا تھا۔
+  wwcsLocalization: 'لوکلائزیشن: {0}'
+  wwclLangAlreadyStopped: آپ کے پاس لوکلائزیشن سیٹ نہیں ہے۔
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} میں لوکلائزیشن سیٹ نہیں ہے۔'
+  wwctGUILocalizeExistingValue: 'موجودہ لوکلائزیشن: {0}'
+  wwctGUILocalizationButton: لوکلائزیشن سیٹ
+  wwctGUILocalizeStopButton: لوکلائزیشن کو سرور ڈیفالٹ میں
+  wwctGUILocalizeTitle: لوکلائزیشن مینو
+  wwctGUISourceSameLang: یہ زبان آپ کی ماخذ زبان کی طرح ہوگی۔
+  wwcConfigGUICurrentPlayerLang: یہ آپ کی موجودہ لوکلائزیشن ہے۔
+  wwctGUILocalizationSameAsServer: یہ ورلڈ وائڈ چیٹ کے لئے پہلے سے طے شدہ لوکلائزیشن
+    ہے۔
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: یہ زبان پہلے ہی عالمی سطح پر فعال
+    ہے!
+  wwcrStorageTranslatorFail: ورلڈ وائڈ چیٹ کو دوبارہ لوڈ کیا گیا لیکن مترجم کو فعال
+    کرنے اور آپ کی اسٹوریج کنفیگریشن سے رابطہ کرنے میں
+  wwcrStorageFail: ورلڈ وائڈ چیٹ کو دوبارہ لوڈ کیا اور کامیابی کے ساتھ مترجم کو فعال
+    کیا، لیکن آپ کی اسٹوریج کنفیگریشن رابطہ
+  wwcConfigPersistentCacheInvalid: config.yml میں مستقل کیشے اندراج غلط جھوٹی سے ڈیفالٹ
+    کرنا...
+  wwcConfigGUIPersistentCacheButton: مستقل کیشے کو ٹوگل کریں
+  wwcConfigConversationPersistentCacheSuccess: مستقل کیشے کامیابی کے ساتھ ٹاپ ہوگیا۔
+  wwcConfigPersistentCacheEnabled: کیشے ڈیٹا ری لوڈز کے دوران برقرار رہے گا۔
+  wwcConfigConversationCharacterLimitInput: فی پیغام کی موجودہ حرف کی حد {0} حروف
+    ہے۔ نئی قدر مقرر کرنے کے لئے 0 سے زیادہ (لیکن 256 سے کم) کچھ بھی ٹائپ کریں، یا
+    واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcdOutdatedSQLStruct: ایسا لگتا ہے کہ آپ کے ایک یا زیادہ ایس کیو ایل یا پوسٹ گریسکیو
+    ایل ٹیبلز میں غلبی/پرانی فارمیٹ ہے۔ اس مسئلے کے بارے میں مزید تفصیلی معلومات آپ
+    کے کنسول پر پرنٹ کی گئی ہیں۔ آپ اسے دستی طور پر ٹھیک کر سکیں گے۔
+  wwcdSQLAllSet: آپ کے MySQL/PostgreSQL ٹیبلز کو صحیح طریقے سے فارمیٹ کیا گیا ہے۔
+  wwcdColumnBadType: ٹیبل {1} میں کالم {0} کی قسم {2} ہے لیکن متوقع قسم {3} ہے۔
+  wwcdColumnMissing: جدول {1} میں کالم {0} غائب ہے۔
+  wwcdGoodTable: '{0} ٹیبل ({1}) صحیح شکل ہے۔'
+  wwcdBadTable: جدول {0} اندرونی تعریفیں میں نہیں ملا ہے۔ براہ کرم ڈویلپر سے رابطہ
+    کریں۔
+  wwcOldDatabaseStruct: 'آپ کے منتخب ڈیٹا بیس میں ایک غلط ٹیبل سیٹ اپ ہے۔ مزید معلومات
+    کے لئے درج ذیل کمانڈ ٹائپ کریں: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'موجودہ شرح کی حد: {0} سیکنڈ'
+

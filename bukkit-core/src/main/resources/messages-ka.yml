@@ -583,4 +583,11 @@ Messages:
   wwcOldDatabaseStruct: 'თქვენს არჩეულ მონაცემთა ბაზას აქვს არასწორი ცხრილის დამატებითი
     ინფორმაციისთვის ჩაწერეთ შემდეგი ბრძანება: /wwcd checkdb'
   wwctGUIRateButtonLore: 'მიმდინარე სიჩქარის ლიმიტი: {0} წამ'
+  wwcConfigGUIVaultSupportButton: გადართეთ Vault მხარდაჭერ
+  wwcConfigConversationVaultSupportSuccess: საფარის მხარდაჭერა წარმატებით შედართ
+  wwcVaultEnabled: Vault მხარდაჭერა ჩართულია.
+  wwcVaultFoundButDisabled: საფარი ნაპოვნია, მაგრამ არსებული ჩატის მოდული არ არის
+    დარეგისტრირებული. Vault მხარდაჭერის გამორთვა...
+  wwcConfigGUIToggleRestartRequired: ამ პარამეტრის გამოყენებისთვის საჭიროა სერვერის
+    სრული გადატვირთვა.
 

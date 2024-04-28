@@ -620,4 +620,12 @@ Messages:
   wwcOldDatabaseStruct: 'Il database scelto ha un''impostazione della tabella errata.
     Digita il comando seguente per ulteriori informazioni: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Limite di velocità attuale: {0} secondi'
+  wwcConfigGUIVaultSupportButton: Assistenza Toggle Vault
+  wwcConfigConversationVaultSupportSuccess: Il supporto del Vault è stato attivato
+    correttamente.
+  wwcVaultEnabled: Il supporto per Vault è stato abilitato.
+  wwcVaultFoundButDisabled: Vault trovato, ma non è stato registrato alcun plug-in
+    di chat esistente. Disattivazione del supporto di Vault...
+  wwcConfigGUIToggleRestartRequired: Per applicare questa impostazione è necessario
+    un riavvio completo del server.
 

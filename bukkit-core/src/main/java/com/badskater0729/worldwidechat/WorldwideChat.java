@@ -49,7 +49,7 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04232024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "04292024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -111,8 +111,6 @@ public class WorldwideChat extends JavaPlugin {
 
 	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
 
-	private Chat vaultChat;
-
 	/* Default constructor */
 	public WorldwideChat() {
 		super();
@@ -167,17 +165,6 @@ public class WorldwideChat extends JavaPlugin {
 		// Load "secondary" services + plugin configs, check if they successfully initialized
 		doStartupTasks(false);
 
-		// Load Vault
-		if (getServer().getPluginManager().getPlugin("Vault") != null) {
-			refs.debugMsg("Registering vault!");
-			RegisteredServiceProvider<Chat> rsp = getServer().getServicesManager().getRegistration(Chat.class);
-			if (rsp != null) {
-				vaultChat = rsp.getProvider();
-			} else {
-				refs.debugMsg("Failed to register vault??");
-			}
-		}
-
 		// Register event handlers
 		wwcHelper.registerEventHandlers();
 
@@ -201,7 +188,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		instance = null;
 		supportedMCVersions = null;
-		//supportedPluginLangCodes = null;
 		pluginLangConfigs = null;
 		serverFactory = null;
 
@@ -1082,9 +1068,5 @@ public class WorldwideChat extends JavaPlugin {
 
 	public ArrayList<String> getErrorsToIgnore() {
 		return errorsToIgnore;
-	}
-
-	public Chat getVaultChat() {
-		return vaultChat;
 	}
 }

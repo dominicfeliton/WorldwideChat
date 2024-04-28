@@ -454,4 +454,9 @@ Messages:
   wwcdBadTable: 內部定義中找不到表 {0}。請聯繫開發人員。
   wwcOldDatabaseStruct: 您選擇的資料庫的資料表設定不正確。鍵入下列命令以取得更多資訊：/wwcd checkdb
   wwctGUIRateButtonLore: 當前速率限制：{0} 秒
+  wwcConfigGUIVaultSupportButton: 切換保管庫支援
+  wwcConfigConversationVaultSupportSuccess: 成功切換 Vault 支援。
+  wwcVaultEnabled: 已啟用 Vault 支援。
+  wwcVaultFoundButDisabled: 找到保管庫，但尚未註冊現有的聊天插件。停用 Vault 支援...
+  wwcConfigGUIToggleRestartRequired: 需要完全重新啟動伺服器才能套用此設定。
 

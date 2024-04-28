@@ -36,6 +36,7 @@ public class ChatListener implements Listener {
 				refs.debugMsg("chat event not async, skipping");
 				return;
 			}
+			//refs.debugMsg("Format: " + event.getFormat());
 
 			// Original WWC functionality/Translate Outgoing Messages
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
@@ -62,18 +63,7 @@ public class ChatListener implements Listener {
 					// Translate message + get original format
 					String translation = refs.translateText(event.getMessage() + " (Translated)", eaRecipient);
 
-					Chat chat = main.getVaultChat();
-					String outMessageWithoutHover = "";
-					if (chat != null) {
-						// Use Vault Chat API to format the message
-						String prefix = chat.getPlayerPrefix(event.getPlayer());
-						String suffix = chat.getPlayerSuffix(event.getPlayer());
-						String formattedName = prefix + event.getPlayer().getDisplayName() + suffix;
-						outMessageWithoutHover = String.format(event.getFormat(), formattedName, translation);
-					} else {
-						// Fallback to original formatting if Vault Chat is not available
-						outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
-					}
+					String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 
 					// Convert to TextComponent
 					TextComponent hoverOutMessage = Component.text()
@@ -85,9 +75,14 @@ public class ChatListener implements Listener {
 								.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
 								.build();
 					}
-					try {
-						main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
-					} catch (IllegalStateException e) {}
+
+					if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
+						eaRecipient.sendMessage(refs.serial(hoverOutMessage));
+					} else {
+						try {
+							main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
+						} catch (IllegalStateException e) {}
+					}
 				} else {
 					unmodifiedMessageRecipients.add(eaRecipient);
 				}

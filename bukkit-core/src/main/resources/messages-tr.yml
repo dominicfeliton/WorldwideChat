@@ -582,4 +582,11 @@ Messages:
   wwcOldDatabaseStruct: 'Seçtiğiniz veritabanında yanlış bir tablo kurulumu var. Daha
     fazla bilgi için aşağıdaki komutu yazın: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Geçerli Hız Sınırı: {0} Saniye'
+  wwcConfigGUIVaultSupportButton: Kasa Desteğini Aç/Kapat
+  wwcConfigConversationVaultSupportSuccess: Kasa desteği başarıyla değiştirildi.
+  wwcVaultEnabled: Kasa desteği etkinleştirildi.
+  wwcVaultFoundButDisabled: Kasa bulundu, ancak mevcut bir sohbet eklentisi kaydedilmedi.
+    Kasa desteğini devre dışı bırakma...
+  wwcConfigGUIToggleRestartRequired: Bu ayarı uygulamak için tam sunucu yeniden başlatılması
+    gerekir.
 

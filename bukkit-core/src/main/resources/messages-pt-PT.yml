@@ -610,4 +610,11 @@ Messages:
   wwcOldDatabaseStruct: 'A base de dados escolhida tem uma configuração de tabela
     incorrecta. Introduza o seguinte comando para obter mais informações: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Limite de Taxa Atual: {0} Segundos'
+  wwcConfigGUIVaultSupportButton: Alternar Suporte do Cofre
+  wwcConfigConversationVaultSupportSuccess: O suporte do cofre foi alternado com sucesso.
+  wwcVaultEnabled: O suporte do Vault foi activado.
+  wwcVaultFoundButDisabled: O cofre foi encontrado, mas nenhum plugin de chat existente
+    foi registado. Desactivar o suporte do Vault...
+  wwcConfigGUIToggleRestartRequired: É necessário um reinício completo do servidor
+    para aplicar esta definição.
 

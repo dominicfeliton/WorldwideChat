@@ -584,4 +584,11 @@ Messages:
   wwcOldDatabaseStruct: 'Zvolená databáze má nesprávné nastavení tabulky. Pro více
     informací zadejte následující příkaz: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Aktuální limit rychlosti: {0} sekundy'
+  wwcConfigGUIVaultSupportButton: Přepnout podporu úložiště
+  wwcConfigConversationVaultSupportSuccess: Podpora úložiště byla úspěšně přepnuta.
+  wwcVaultEnabled: Byla povolena podpora úložiště.
+  wwcVaultFoundButDisabled: Vault nalezen, ale žádný existující plugin chatu nebyl
+    zaregistrován. Zakázání podpory aplikace Vault...
+  wwcConfigGUIToggleRestartRequired: K použití tohoto nastavení je nutný úplný restart
+    serveru.
 

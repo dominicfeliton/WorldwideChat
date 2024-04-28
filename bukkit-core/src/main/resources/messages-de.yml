@@ -647,4 +647,12 @@ Messages:
     Geben Sie den folgenden Befehl ein, um weitere Informationen zu erhalten: /wwcd
     checkdb'
   wwctGUIRateButtonLore: 'Aktuelles Ratenlimit: {0} Sekunden'
+  wwcConfigGUIVaultSupportButton: Vault-Unterstützung umschalten
+  wwcConfigConversationVaultSupportSuccess: Die Vault-Unterstützung wurde erfolgreich
+    umgeschaltet.
+  wwcVaultEnabled: Die Vault-Unterstützung wurde aktiviert.
+  wwcVaultFoundButDisabled: Tresor wurde gefunden, aber es wurde kein vorhandenes
+    Chat-Plugin registriert. Vault-Unterstützung wird deaktiviert...
+  wwcConfigGUIToggleRestartRequired: Ein vollständiger Serverneustart ist erforderlich,
+    um diese Einstellung anzuwenden.
 

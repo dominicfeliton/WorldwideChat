@@ -1,0 +1,587 @@
+Messages:
+  wwcgAutoTranslateStart: Nyní překládám globální chat na {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Globální chat je překládán do
+    {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Změna přístupového klíče Amazon
+  wwcrFail: Nepodařilo se znovu načíst WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Změnit kontrolu zpoždění aktualizací
+  wwcUpdaterFailedGeneric: Nelze zkontrolovat aktualizace WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Aktuální zpoždění kontroly aktualizace
+    je {0} sekund. Zadejte něco většího než 10 pro nastavení nové hodnoty nebo něco
+    méně než 10, abyste se vrátili zpět.
+  wwctGUIMainMenuGlobal: Globální nabídka překladu
+  wwcConfigConversationPluginUpdateChatSuccess: Připomenutí konverzace aktualizace
+    modulu plugin úspěšně přepnul.
+  wwctbOnTarget: Překlad knihy povolen pro {0}.
+  wwcsNotATranslator: Zatím nejsou k dispozici žádné záznamy pro {0}.
+  wwcConfigGUIbStatsButton: Přepnout bStats
+  wwctGUINewTranslationSource: Zvolte zdrojový jazyk
+  wwcConfigConnectionFailed: Nepodařilo se připojit k {0}. Ujistěte se, že vaše pověření
+    a firewall jsou správně nakonfigurovány!
+  wwcConfigEnabledbStats: Povolené Bstaty.
+  wwctGUIMainMenuPlayer: Překladové menu {0}
+  wwctGUIBookButton: Přepnout překlad knih
+  wwcLangDetected: Zjištěn jazyk {0}.
+  wwcBookTranslateStart: Překlad cílové knihy...
+  wwcConfigDisabledbStats: Zakázané Bstaty.
+  wwctsOffSender: Překlad podepsat zakázán.
+  wwcUpdaterParserFailed: Nepodařilo se analyzovat data aktualizace z Githubu.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuální tajný klíč je {0}.
+    Zadejte prosím tajný klíč pro Amazon, nebo zadejte 0 pro návrat.
+  wwctbOffSender: Překlad knih zakázán.
+  wwcConfigGUIAmazonTranslateButton: Amazon Translate
+  wwcConfigConversationLangSuccess: Jazyk pluginu se úspěšně změnil.
+  wwcsSuccessfulTranslations: 'Úspěšné překlady: {0}'
+  wwcConfigConversationTranslationCacheInput: Aktuální limit mezipaměti překladu je
+    {0} fráze. Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu, nebo
+    zadejte 0 zakázat mezipaměť překladu. Napište něco méně než 0, abyste se vrátili.
+  wwctbOffTarget: Překlad knihy zakázán pro {0}.
+  wwcConfigGUIGeneralSettings: Obecná konfigurace
+  wwcInvalidLang: Neplatný jazyk ve vašem config.yml. Výchozí na en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Oblast Amazon byla úspěšně nastavena.
+  wwcConfigRateLimitEnabled: Globální limit rychlosti povolen a nastaven na {0} sekund.
+  wwcConfigGUILangButton: Změnit jazyk pluginu
+  wwctGUISignButton: Přepnout překlad znaků
+  wwcUpdaterOutOfDate: WorldwideChat je zastaralý. Aktualizujte prosím na nejnovější
+    verzi, {0}.
+  wwcConfigGUINextPageButton: Další stránka
+  wwcConfigInvalidTranslatorSettings: Neplatná nastavení překladače! Povolte pouze
+    jeden překladač ve vašem config.yml.
+  wwcConfigGUIQuitButton: Ukončit a uložit změny
+  wwctPlayerNotFound: Hráč {0}.
+  wwcConfigGUIAmazonTranslateRegionButton: Změnit oblast Amazon
+  wwcConfigConversationLangInvalid: Neplatný kód jazyka!
+  wwcConfigGUIWatsonAPIKeyButton: Změna klíče API Watson
+  wwcEnabled: Povolená verze {0} WorldwideChat.
+  wwctbOnSender: Překlad knihy povolen. Klepněte pravým tlačítkem myši, zatímco držíte
+    knihu přeložit!
+  wwcListenersInitialized: Inicializovaní posluchači.
+  wwcConfigGUIPluginUpdateChatButton: Odeslat připomenutí chatu pro aktualizace pluginů
+  wwcConfigConversationSendTranslationChatSuccess: Aktivní překladatel připomenutí
+    chatu se úspěšně přepnul.
+  wwctsOffTarget: Podepsat překlad zakázán pro {0}.
+  wwcUpdaterConnectionFailed: Nelze vyhledat nejnovější aktualizace v Githubu.
+  watsonNotFoundExceptionNotification: Nelze dále přeložit váš vstup.
+  wwcConfigConversationWatsonAPIKeyInput: Aktuální klíč rozhraní API je {0}. Zadejte
+    prosím klíč API pro Watson, nebo zadejte 0, abyste se vrátili zpět.
+  wwctGUIStopButton: Zastavit překlad
+  wwcgTranslationStopped: Globální překlad chatu byl zastaven.
+  wwcUpdaterFutureDate: Tato instance WorldwideChat má větší verzi než nejnovější
+    veřejná verze.
+  wwcConfigConversationPrefixSuccess: Předpona se úspěšně změnila.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Změna klíče rozhraní API Překladač Google
+  wwcSignDeletedOrTooLong: 'Cílový znak byl buď odstraněn, nebo překlad byl příliš
+    dlouhý. Překlad:'
+  wwctsOnTarget: Podepsat překlad povolen pro {0}.
+  wwcConfigCacheDisabled: Cache překladatele zakázána.
+  wwcConfigConversationWatsonURLInput: Aktuální URL je {0}. Zadejte prosím adresu
+    URL služby pro Watson, nebo zadejte 0 pro návrat.
+  wwcBookDone: Kniha úspěšně přeložena.
+  wwctsOnSender: Podepsat překlad povolen. Pravým tlačítkem myši na znamení přeložit!
+  watsonColorCodeWarning: Použití barevných kódů vám může poskytnout nepředvídatelné
+    výsledky.
+  wwctGUITranslationButton: Zahájit překlad
+  wwctGUIAutoDetectButton: Automatická detekce zdrojového jazyka
+  wwcUpdaterUpToDate: WorldwideChat je aktuální!
+  wwcConfigConversationAmazonTranslateRegionInput: Aktuální oblast je {0}. Zadejte
+    prosím oblast pro Amazon, nebo zadejte 0 pro návrat.
+  wwcNoConsole: Tento příkaz může spustit pouze hráč.
+  wwcInitializationFail: Nepodařilo se inicializovat WorldwideChat.
+  wwcrSuccess: WorldwideChat byl úspěšně znovu načten.
+  wwcPlayerNotFound: Hráč {0}.
+  wwcUpdaterOutOfDateChat: WorldwideChat je zastaralý. Aktualizujte prosím na nejnovější
+    verzi.
+  wwcConfigConversationRateLimitSuccess: Limit rychlosti nastaven úspěšně.
+  wwcConfigConversationWatsonURLSuccess: Adresa URL Watson byla úspěšně nastavena.
+  wwctbPlayerNotFound: Hráč {0} není buď nalezen, nebo není aktivní překladatel.
+  wwcConfigConversationTranslationCacheSuccess: Limit mezipaměti překladu byla úspěšně
+    nastavena.
+  wwctInvalidArgs: Poskytnuté neplatné argumenty!
+  wwcConfigGUIPrefixButton: Změnit předponu pluginu
+  wwctSameLangError: Nemůžete přeložit do stejného jazyka!
+  wwctGUINewTranslationTarget: Zvolte cílový jazyk
+  wwcConfigConnectionSuccess: Úspěšně připojeno k {0}!
+  wwcConfigGUIGoogleTranslateButton: Překladač Google
+  wwcConfigGUIPreviousPageButton: Předchozí stránka
+  wwcConfigGUITranslatorCacheButton: Změnit limit mezipaměti překladu
+  wwcConfigConversationbStatsSuccess: Úspěšně přepnul bStats.
+  wwcSignDone: Podepsání úspěšně přeloženo.
+  wwcConfigInvalidPrefixSettings: Nepodařilo se přečíst předponu. Použití výchozího
+    nastavení...
+  wwcConfigRateLimitInvalid: Špatný limit rychlosti nastavený v config.yml. Výchozí
+    hodnota na 0 sekund...
+  wwcSignTranslateStart: Překládání cílového znaku...
+  wwcConfigGUIChatSettings: Konfigurace chatu
+  wwcConfigGUIWatsonURLButton: Změna adresy URL služby Watson
+  wwcConfigConversationUpdateCheckerSuccess: Zpoždění kontroly aktualizace nastaveno
+    úspěšně.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Globální chat je překládán z {0}
+    do {0}.
+  wwcConfigGUITranslatorSettings: Konfigurace překladače
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Aktuální klíč API je {0}. Zadejte
+    prosím klíč API pro Google Translate nebo zadejte 0 pro návrat.
+  wwcConfigConversationRateLimitInput: Aktuální globální limit rychlosti na překlad
+    je {0} sekund. Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu,
+    nebo zadejte 0, chcete-li limit zakázat. Napište něco méně než 0, abyste se vrátili.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API klíč nastaven
+    úspěšně.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Změna tajného klíče Amazon
+  wwcVersion: WorldwideChat, verze
+  wwcsAttemptedTranslations: 'Pokus o překlady: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Tajný klíč Amazon byl úspěšně
+    nastaven.
+  wwcConfigConversationWatsonAPIKeySuccess: Sada klíčů Watson API byla úspěšně nastavena.
+  wwcRateLimit: Vaše překlady jsou omezené. Počkejte prosím další {0} sekund.
+  wwcConfigCacheEnabled: Mezipaměť překladatele povolena a nastavena na limit {0}.
+  wwctGUIExistingTranslationButton: Přepsat aktuální relaci překladu
+  wwcUserDataReloaded: Načtena všechna uložená uživatelská data.
+  wwcConfigGUISendTranslationChatButton: Odeslat připomenutí chatu aktivnímu překladateli
+    při přihlášení
+  wwcsLastTranslationTime: 'Poslední (úspěšný) čas překladu: {0}'
+  wwctbNotATranslator: Nejste aktivní překladatel! Ujistěte se, že jste to nastavili
+    pomocí /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Aktuální přístupový klíč je
+    {0}. Zadejte přístupový klíč pro Amazon, nebo zadejte 0 pro návrat.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Úspěšně nastavit přístupový
+    klíč Amazon.
+  wwcConfigBadUpdateDelay: Neplatné zpoždění aktualizačního programu nastaveno v config.yml.
+    Výchozí hodnota 86400 sekund...
+  wwctrlRateLimitOffSender: Vypnul jste limit sazeb.
+  wwctrlRateLimitAlreadyOffTarget: Limit sazby {0} je již zakázán.
+  wwctrlPlayerNotFound: Hráč {0} není buď nalezen, nebo není aktivní překladatel.
+  wwctrlRateLimitSetSender: Nastavte limit rychlosti na {0} sekund.
+  wwctrlRateLimitOffTarget: Vypnuto omezení sazby {0}.
+  wwctrlNotATranslator: Nejste aktivní překladatel! Ujistěte se, že jste to nastavili
+    pomocí /wwct.
+  wwctrlRateLimitAlreadyOffSender: Váš limit sazeb je již zakázán.
+  wwctGUIRateButton: Nastavit limit rychlosti
+  wwctGUIConversationRateLimit: Limit rychlosti na překlad je aktuálně {0} sekund.
+    Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu, nebo zadejte 0,
+    chcete-li limit zakázat. Napište něco méně než 0, abyste se vrátili.
+  wwctGUITargetPlayerNull: Cílový hráč odpojen od serveru.
+  wwcConfigConversationSyncUserDataDelayInput: Aktuální zpoždění při synchronizaci
+    uživatelských dat je {0} sekund. Zadejte něco většího než 10 pro nastavení nové
+    hodnoty nebo něco méně než 10, abyste se vrátili zpět.
+  wwcConfigGUISyncUserDataButton: Změnit zpoždění synchronizace uživatelských dat
+  wwcConfigSyncDelayEnabled: Zpoždění synchronizace dat uživatele nastavena na {0}
+    sekund.
+  wwcConfigConversationSyncUserDataDelaySuccess: Zpoždění synchronizace uživatelských
+    dat úspěšně nastaveno.
+  wwcConfigSyncDelayInvalid: Neplatné zpoždění synchronizace dat uživatele nastaveno
+    v config.yml. Výchozí hodnota 7200 sekund...
+  wwcConfigCacheInvalid: Velikost mezipaměti Translator je neplatná. Výchozí hodnota
+    na 10...
+  wwcInventoryErrorPlayer: Chyba zjištěna pomocí grafového uživatelského rozhraní.
+    Do konzoly byl odeslán protokol.
+  wwcInventoryError: Chyba zjištěna pomocí grafického uživatelského rozhraní uživatele
+    {0}. Ohlaste tento problém vývojáři.
+  wwctiOffTarget: Překlad položek zakázán pro {0}.
+  wwctiOffSender: Překlad položek zakázán.
+  wwcItemTranslateTitleStock: Nelze převést výchozí názvy položek.
+  wwctGUIItemButton: Přepnout překlad položek
+  wwcItemTranslateTitleDone: Název položky byl úspěšně přeložen.
+  wwcGUITempItem: Zobrazení položky
+  wwcItemTranslateStart: Překlad cílové položky...
+  wwcBookTranslateTitleSuccess: 'Překlad názvu knihy: {0}'
+  wwctiOnSender: Překlad položek povolen. Klikněte pravým tlačítkem myši na položku
+    v hlavní ruce, abyste ji přeložili!
+  wwcItemTranslateLoreStart: Překlad tradice cílové položky...
+  wwcItemTranslateLoreDone: Přeložený předmět tradice úspěšně.
+  wwctiOnTarget: Překlad položek povolen pro {0}.
+  wwcInvalidTranslator: Neplatná nastavení překladače. Opravte to prosím ve vašem
+    config.yml nebo /wwcc pro použití tohoto pluginu.
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfigurace'
+  wwcConfigGUIWatsonButton: Watsona
+  wwcServerReloadWarning: WorldwideChat nepřisuzuje použití /reload. Pokračujte prosím
+    opatrně.
+  wwcConfigEnabledDebugMode: Povolený režim DEBUG. Pokud nejste vývojář nebo poradce
+    při potížích, měli byste to vypnout.
+  wwcTranslatorErrorThresholdReached: Došlo k chybovému prahu. Tento plugin se nyní
+    znovu načte a zakáže všechny překladatele.
+  wwcConfigErrorLimitEnabled: Omezení chyby překladače nastaveno na {0}.
+  wwcTranslatorError: Při pokusu o překlad došlo k problému. Zkuste to prosím znovu.
+  wwcConfigErrorLimitInvalid: Neplatný limit chyby překladače nastaven v config.yml.
+    Výchozí hodnota 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Další informace zkontrolujte errorLog.txt
+    ve složce plugin WorldwideChat.
+  wwctInvalidInputLangCode: 'Neplatný kód vstupního jazyka je k dispozici! Platné
+    kódy lang: {0}'
+  wwctInvalidOutputLangCode: 'Neplatný kód výstupního jazyka je k dispozici! Platné
+    kódy lang: {0}'
+  wwctGUISourceTranslationSelected: Vybrali jste tento jazyk.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Odstranit přepsání
+  wwcConfigConversationOverrideTextChange: Zadejte prosím novou zprávu pro toto přepsání
+    nebo zadejte 0 pro návrat. Nezapomeňte zahrnout všechny proměnné začínající znaménkem
+    procentuálního podílu, které vidíte v původní zprávě.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Tento jazyk je již aktivní!
+  wwcConfigGUIChatMessagesPossibleOverrides: Zvolte zprávu
+  wwcConfigGUIChatMessagesModifyOverride: Upravit existující přepsání
+  wwcConfigConversationOverrideDeletionSuccess: Vlastní přepsání zprávy bylo odstraněno.
+  wwcConfigGUIChatMessagesDeadOverride: Toto přepsání je buď neplatné, nebo původní
+    zpráva byla odebrána. Měl bys to smazat.
+  wwcConfigGUIMessagesAlreadyOverriden: Pro tuto zprávu už máte přepsání!
+  wwcConfigGUIChatMessagesOverrideNewButton: Přidání nového přepsání
+  wwcConfigGUIMessagesOverrideCustomLabel: Nová zpráva
+  wwcConfigConversationOverrideTextChangeSuccess: Nová zpráva byla úspěšně nastavena.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Změna existujícího textu
+  wwcExampleMessage: Toto je fiktivní zpráva a má být přepsané jako příklad.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Původní zpráva
+  wwcConfigGUIDebugModeButton: Přepnout režim ladění
+  wwcConfigConversationDebugModeSuccess: Úspěšně přepnul režim ladění.
+  wwcConfigGUIErrorLimitButton: Změna omezení chyb překladače
+  wwcConfigConversationErrorLimitSuccess: Úspěšně nastaven limit chyb.
+  wwcEntityTranslateStart: Převod cílové entity...
+  wwcConfigGUICharacterLimitButton: Změna omezení znaků zprávy
+  wwcConfigMessageCharLimitInvalid: Neplatný limit pro zprávu nastavený v config.yml.
+    Výchozí hodnota 255 znaků...
+  wwcConfigConversationCharacterLimitSuccess: Lze nastavit limit znaků úspěšně.
+  wwcteOnTarget: Převod entit povolen pro {0}.
+  wwcEntityTranslateDone: 'Název přeložené entity: {0}'
+  wwcEntityTranslateNoName: Entita nemá vlastní název.
+  wwcConfigConversationErrorLimitInput: Aktuální limit chyb pro každý překladač je
+    {0}. Zadejte něco většího než 0 pro nastavení nové hodnoty, nebo zadejte něco
+    menší než nebo rovno 0, abyste se vrátili zpět.
+  wwcConfigGUIGlobalRateLimitButton: Změna globálního limitu sazeb
+  wwcteOnSender: Převod entit povolen. Pravým tlačítkem myši na entitu přeložte její
+    název!
+  wwcConfigGUIResponseLimitButton: Změnit časový limit odezvy překladatele
+  wwcConfigMessageCharLimitEnabled: Limit znaků na zprávu nastaven na {0} znaků.
+  wwcteOffTarget: Překlad entit zakázán pro {0}.
+  wwcCharLimit: Vaše zpráva je příliš dlouhá! Ujistěte se, že vaše zpráva má menší
+    než {0} znaků.
+  wwcteOffSender: Převod entit zakázán.
+  wwctGUIEntityButton: Přepnout překlad entit
+  wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
+  wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele {0} pokoušel o
+    jejich překlad. Další podrobnosti zkontrolujte errorLog.txt.
+  wwctGUIChatButton: Přepnout chat překlad
+  wwcrBegin: Znovu načtení WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Relace překladu pro {0} byla zastavena.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globální chat je překládán,
+    ale máte aktivní relaci překladu z {0} do {1}.
+  wwctCannotTranslateConsole: Nelze spustit relaci překladu pro konzoli!
+  wwcOnJoinTranslationNotificationSourceLang: Máte aktivní relaci překladu od {0}
+    do {0}.
+  wwctTranslationStopped: Vaše relace překladu byla zastavena.
+  wwctAutoTranslateStart: Spuštění nové relace překladu na {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Máte aktivní relaci překladu na {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globální chat je překládán,
+    ale máte aktivní překladatelskou relaci na {0}.
+  wwcConfigGUIChangesNotSaved: Vaše změny se projeví, dokud nekliknete na červenou
+    bariéru v /wwcc.
+  wwctciOffSender: Příchozí překlad chatu zakázán.
+  wwctGUIChatIncomingButton: Přepnout překlad příchozí konverzace
+  wwctcoOffSender: Překlad odchozího chatu zakázán.
+  wwctcoOnSender: Překlad odchozího chatu povolen. Cokoliv řeknete, bude přeloženo!
+  wwctciOnSender: Příchozí překlad chatu povolen. Vše, co obdržíte, bude přeloženo!
+  wwctGUIChatMenu: Přepnout menu Překlad konverzace
+  wwctcoOnTarget: Překlad odchozího chatu povolen pro {0}.
+  wwctcoOffTarget: Překlad odchozího chatu zakázán pro {0}.
+  wwctGUIChatOutgoingButton: Přepnout překlad odchozí konverzace
+  wwctciOnTarget: Příchozí překlad chatu povolen pro {0}.
+  wwctciOffTarget: Příchozí překlad chatu zakázán pro {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Původní příchozí chat připojený
+    k překladu jako text ukazatele byl úspěšně přepnuto.
+  wwcConfigGUISendIncomingHoverTextChatButton: Přidání původních příchozích zpráv
+    jako text ukazatele
+  wwctGUIExistingChatOutgoingEnabled: 'Povolený překlad odchozího chatu: {0}'
+  wwctGUIExistingTranslationInput: 'Vstupní jazyk: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Povolený překlad příchozího chatu: {0}'
+  wwctGUIExistingTranslationOutput: 'Výstupní jazyk: {0}'
+  wwcTranslatorAttempt: Pokus o připojení k překladači v config.yml... (Pokus {0}/
+    {0})
+  wwcTimeoutExceptionConsole: Hráč {0}ěl jsem jejich poslední časový limit požadavku.
+    Tato chyba není fatální, ale WorldwideChat by měl být znovu načten, pokud se tak
+    stane.
+  wwcGUIPageNumber: 'Číslo stránky: {0}'
+  wwcConfigYAMLFallback: Pád zpět na YAML...
+  wwcConfigGUIToggleSQLButton: Přepnout SQL
+  wwcConfigConversationToggleSQLSuccess: SQL se úspěšně přepne. Znovu načtěte, aby
+    se změna projevila.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Úspěšně přepnout Překladač Google.
+    Znovu načtěte, aby se změna projevila.
+  wwcConfigYAMLDefault: Výchozí nastavení YAML pro ukládání dat.
+  wwcConfigGUISQLMenuButton: Změna nastavení SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Úspěšně přepnout Watson Translate.
+    Znovu načtěte, aby se změna projevila.
+  wwcConfigGUIToggleGoogleTranslateButton: Přepnout Překladač Google
+  wwcConfigGUIToggleWatsonTranslateButton: Přepnout Watson Přeložit
+  wwcConfigGUIToggleAmazonTranslateButton: Přepnout Amazon Přeložit
+  wwcConfigGUIStorageSettings: Konfigurace úložiště
+  wwcConfigConversationAmazonTranslateToggleSuccess: Úspěšně přepnout Amazon Translate.
+    Znovu načtěte, aby se změna projevila.
+  wwcConfigGUISQLPortButton: Změna portu SQL
+  wwcConfigGUISQLOptionalArgsButton: Změna volitelných argumentů SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL pro SQL se úspěšně přepne.
+  wwcConfigConversationSQLPortInput: Aktuální port je {0}. Zadejte cokoli jiného než
+    0 pro nastavení nového portu, nebo zadejte 0, abyste se vrátili.
+  wwcConfigGUISQLPasswordButton: Změna hesla SQL
+  wwcConfigConversationSQLHostnameSuccess: Úspěšně změnil název hostitele SQL.
+  wwcConfigConversationSQLHostnameInput: Aktuální název hostitele je {0}. Zadejte
+    cokoli jiného než 0, chcete-li nastavit nový název hostitele, nebo zadejte 0,
+    který chcete vrátit.
+  wwcConfigGUISQLHostnameButton: Změna názvu hostitele SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Úspěšně změnil volitelné argumenty
+    SQL.
+  wwcConfigConversationSQLPasswordSuccess: Úspěšně změnil heslo SQL.
+  wwcConfigConversationSQLPasswordInput: Aktuální heslo je {0}. Zadejte cokoli jiného
+    než 0 pro nastavení nového hesla, nebo zadejte 0, abyste se vrátili.
+  wwcConfigGUIToggleSQLSSLButton: Přepnout SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Úspěšně změnil uživatelské jméno SQL.
+  wwcConfigConversationSQLUsernameInput: Aktuální uživatelské jméno je {0}. Zadejte
+    cokoli jiného než 0 pro nastavení nového uživatelského jména, nebo zadejte 0,
+    abyste se vrátili.
+  wwcConfigConversationSQLPortSuccess: Úspěšně změnil port SQL.
+  wwcConfigGUISQLUsernameButton: Změna uživatelského jména SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Volitelné argumenty byly úspěšně vymazány.
+  wwcConfigConversationSQLOptionalArgsInput: 'Aktuální volitelné argumenty SQL jsou:
+    {0}. Zadejte argumenty oddělené čárkou (key=value, key2=value2), nebo zadejte
+    clear pro vymazání aktuálních oblouků nebo zadejte 0, abyste se vrátili.'
+  wwcConfigConversationSQLDatabaseNameInput: Název aktuální databáze je {0}. Zadejte
+    cokoli jiného než 0, chcete-li nastavit nový název databáze, nebo zadejte 0, abyste
+    se vrátili.
+  wwcConfigGUISQLDatabaseNameButton: Změna databáze SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Úspěšně změnil název databáze SQL.
+  wwcConfigConversationFatalAsyncAbort: Aktuální časový limit pro zrušení všech asynchronních
+    úloh je {0} sekund. Zadejte cokoli výše 7 nastavit nový časový limit, nebo cokoli
+    pod ním, abyste se vrátili.
+  wwcConfigConversationFatalAsyncSuccess: Asynchronní časový limit úloh byl úspěšně
+    nastaven.
+  wwcConfigGUIFatalAsyncAbortButton: Změna časového limtu asynchronních úloh
+  libreHttp400: Špatný požadavek zaslán Libre Translate! Pokud neděláte něco, co byste
+    neměli, neměli byste to dostat. Kontaktujte vývojáře!
+  wwcConfigGUILibreTranslateApiKeyButton: Změnit zdarma Přeložit API Key
+  libreHttp403: Chybějící Libre Translate API Key, nebo máte ze serveru zakázán!
+  wwcConfigConversationLibreURLSuccess: Knihovna URL byla úspěšně nastavena.
+  wwcConfigConversationLibreTranslateApiKeyInput: Aktuální klíč API je {0}. Zadejte
+    prosím klíč API pro Libre, nebo zadejte 0, abyste se vrátili zpět.
+  wwcConfigGUILibreTranslateButton: Libre Přeložit
+  libreHttp429: Žádná důvěra kvůli limitu rychlosti ze serveru.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Přeložit
+  wwcConfigConversationLibreTranslateToggleSuccess: Úspěšně přepnout Libre Translate.
+    Znovu načtěte, aby se změny projevily.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Klíč zdarma API úspěšně nastaven.
+  wwcConfigConversationLibreURLInput: Aktuální URL je {0}. Zadejte prosím URL pro
+    Libre, nebo zadejte 0 pro návrat zpět.
+  libreHttpUnknown: 'Neznámá chyba http: {0}'
+  wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL
+  wwcConfigConnectionFail: Připojení k {0} se nezdařilo.
+  wwcConfigConversationMongoDatabaseNameSuccess: Úspěšně změnil název databáze MongoDB.
+  wwcConfigGUIMongoHostnameButton: Změnit název hostitele MongoDB
+  wwcConfigConversationMongoPasswordInput: Aktuální heslo je {0}. Zadejte něco jiného
+    než 0 pro nastavení nového hesla, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationMongoPortInput: Aktuální port je {0}. Zadejte něco jiného než
+    0 pro nastavení nového portu, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationToggleMongoSuccess: MongoDB úspěšně přepnout. Znovu načtěte,
+    aby se změna projevila.
+  wwcConfigConversationMongoHostnameInput: Aktuální název hostitele je {0}. Zadejte
+    něco jiného než 0 pro nastavení nového názvu hostitele, nebo zadejte 0 pro návrat
+    zpět.
+  wwcConfigConversationMongoHostnameSuccess: Úspěšně změnil název hostitele MongoDB.
+  wwcConfigGUIMongoMenuButton: Změna nastavení MongoDB
+  wwcConfigGUIToggleMongoButton: Přepnout MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Aktuální název databáze je {0}. Zadejte
+    něco jiného než 0 pro nastavení nového názvu databáze, nebo zadejte 0 pro návrat
+    zpět.
+  wwcConfigConversationMongoOptionalArgsInput: 'Aktuální volitelné argumenty MongoDB
+    jsou: {0}. Argumenty typu oddělené čárkou (key=value, key2=value2), nebo zadejte
+    clear pro vymazání aktuálních args, nebo zadejte 0 pro návrat zpět.'
+  wwcConfigGUIMongoDatabaseNameButton: Změna databáze MongoDB
+  wwcConfigConversationMongoUsernameInput: Aktuální uživatelské jméno je {0}. Zadejte
+    něco jiného než 0 pro nastavení nového uživatelského jména, nebo zadejte 0 pro
+    návrat zpět.
+  wwcConfigGUIMongoOptionalArgsButton: Změna volitelných argumentů MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Úspěšně změnilo uživatelské jméno MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Úspěšně změnilo heslo MongoDB.
+  wwcConfigConversationMongoPortSuccess: Úspěšně změnil port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Změnit uživatelské jméno MongoDB
+  wwcConfigGUIMongoPasswordButton: Změna hesla MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Úspěšně změnil volitelné argumenty
+    MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Volitelné argumenty byly úspěšně
+    vymazány.
+  wwcConfigGUIMongoPortButton: Změnit port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Neplatná fatální asynchronní sada časového limitu.
+    Výchozí nastavení na 10 sekund...
+  libreHttp500: Váš vybraný vstupní a výstupní jazykový pár není podporován. Zvolte
+    prosím jinou jazykovou sadu!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Přeložit
+  wwcConfigConversationDeepLTranslateToggleSuccess: Úspěšně přepnout DeepL Translate.
+    Znovu načtěte, aby se změny projevily.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Změna klíče DeepL Translate API
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Přeložit
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API klíč úspěšně nastaven.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Aktuální klíč API je {0}. Zadejte
+    prosím klíč API pro DeepL, nebo zadejte 0 pro návrat.
+  wwcConfigErrorsToIgnoreSuccess: Úspěšně registrované chyby překladatele ignorovat.
+  wwcConfigErrorsToIgnoreInvalid: Neplatné chyby překladače pro ignorování nastavené
+    v config.yml. Registrace výchozích nastavení...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Úspěšně změnil chyby překladatele ignorovat
+    fráze.
+  wwcConfigGUIIgnoreErrorsButton: Změna chyb na ignorování
+  wwcConfigConversationIgnoreErrorsInput: 'Aktuální seznam frází v chybách překladače,
+    které je třeba ignorovat, je: {0}. Argumenty typu oddělené čárkou (key=value,
+    key2=value2), nebo zadejte clear pro vymazání aktuálních arg, nebo zadejte 0 pro
+    návrat zpět. Navíc zadání „*“ způsobí, že plugin nebude kontrolovat žádné chyby
+    překladatele.'
+  wwcConfigConversationIgnoreErrorsCleared: Chyby překladatele ignorovat fráze úspěšně
+    vymazány.
+  wwcSupportedServer: Inicializace WorldwideChat pro {0}...
+  wwcSupportedVersion: Povolení funkcí pro verzi {0}...
+  wwcBadPerms: 'Nemáte potřebná oprávnění k provedení tohoto příkazu: {0}'
+  wwcsIsActiveTranslator: 'Je aktivní překladatel: {0}'
+  wwcsActiveTransPrevRate: 'Předchozí časový limit sazby: {0}'
+  wwcsActiveTransSaved: 'Uloženo na disk: {0}'
+  wwcsActiveTransIncoming: 'Překlad příchozího chatu: {0}'
+  wwcsActiveTransOutLang: 'Výstupní jazyk: {0}'
+  wwcsActiveTransInLang: 'Vstupní jazyk: {0}'
+  wwcsActiveTransBook: 'Překlad knihy: {0}'
+  wwcsActiveTransSign: 'Překladatelský znak: {0}'
+  wwcsActiveTransUUID: 'NOVÝ: {0}'
+  wwcsActiveTransRateLimit: 'Limit sazby: {0}'
+  wwcsActiveTransColorWarning: 'Přijaté barevné varování: {0}'
+  wwcsActiveTransSignWarning: 'Upozornění na úpravu obdrženého znaku: {0}'
+  wwcsTitle: Záznam {0}
+  wwcsActiveTransOutgoing: 'Překlad odchozího chatu: {0}'
+  wwcsActiveTransItem: 'Překládající položka: {0}'
+  wwcsActiveTransEntity: 'Překládající entita: {0}'
+  wwctsWarning: Při překládání znaků je úprava znaků zakázána.
+  wwcConfigConversationAzureTranslateToggleSuccess: Úspěšně přepnul Azure Translate.
+    Znovu načtěte, aby se změny projevily.
+  wwcConfigGUIAzureTranslateButton: Přeložit Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Změna klíče rozhraní API služby Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Změna oblasti Azure Translate
+  wwcConfigConversationAzureTranslateRegionSuccess: Úspěšně nastavena oblast Azure.
+  wwcConfigConversationAzureTranslateApiKeyInput: Aktuální klíč API je {0}. Zadejte
+    klíč API pro Azure, nebo zadejte 0 pro návrat.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Klíč Azure API byl úspěšně nastaven.
+  wwcConfigConversationAzureTranslateRegionInput: Aktuální oblast je {0}. Zadejte
+    oblast pro Azure, nebo zadejte 0 pro návrat zpět.
+  wwcConfigGUIToggleAzureTranslateButton: Přepnout Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Změna klíče rozhraní Systran Translate
+    API
+  wwcConfigGUIToggleSystranTranslateButton: Přepnout Systran Translate
+  wwcConfigConversationSystranTranslateApiKeyInput: Aktuální klíč API je {0}. Zadejte
+    klíč API pro Systran, nebo zadejte 0 pro návrat.
+  wwcISOJSONFail: Nelze opravit jazykové objekty pomocí ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Úspěšně přepnul Systran Translate.
+    Znovu načtěte, aby se změny projevily.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Klíč Systran API byl úspěšně
+    nastaven.
+  wwcConfigGUISystranTranslateButton: Systran Přeložit
+  wwcrTransFail: Přeinstalován WorldwideChat, ale nepodařilo se povolit překladač.
+  wwcdCacheCleared: Mezipaměť překladu byla vymazána.
+  wwcdInvalidCmd: Neplatné argumenty!
+  systranHttpUnknown: 'Neznámá chyba http: {0}'
+  systranHttp400: Špatné parametry odeslány do Systran. Může to být špatný jazykový
+    pár?
+  systranHttp500: Interní chyba serveru z koncového bodu Systran ({0}).
+  wwcInvalidStorageSession: '{0} je ve vaší konfiguraci povoleno, ale spojení není
+    navázáno. Zkuste to znovu načíst, ale kontaktujte vývojáře, pokud jste dříve obdrželi
+    zprávu o úspěšném připojení od {0}.'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Úspěšně změnil název databáze
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Volitelné argumenty byly úspěšně
+    vymazány.
+  wwcConfigConversationPostgresPortInput: Aktuální port je {0}. Zadejte cokoli jiného
+    než 0, chcete-li nastavit nový port, nebo zadejte 0 pro návrat zpět.
+  wwcConfigGUIPostgresUsernameButton: Změnit uživatelské jméno PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Úspěšně změnili volitelné argumenty
+    PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL pro PostgreSQL se úspěšně přepnul.
+  wwcConfigConversationPostgresPasswordSuccess: Úspěšně změněno heslo PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Úspěšně změnil port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Aktuální uživatelské jméno je {0}. Zadejte
+    cokoli jiného než 0 pro nastavení nového uživatelského jména, nebo zadejte 0 pro
+    návrat zpět.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL se úspěšně přepnul. Znovu
+    načtěte, aby se změna projevila.
+  wwcConfigGUITogglePostgresButton: Přepnout PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Změna hesla PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Změna volitelných argumentů PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Změna nastavení PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Aktuální heslo je {0}. Zadejte cokoli
+    jiného než 0, chcete-li nastavit nové heslo, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationPostgresHostnameInput: Aktuální název hostitele je {0}. Zadejte
+    cokoli jiného než 0, chcete-li nastavit nový název hostitele, nebo zadejte 0 pro
+    návrat zpět.
+  wwcConfigGUIPostgresPortButton: Změna portu PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Úspěšně změnil název hostitele PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Změna názvu hostitele PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Aktuální název databáze je {0}.
+    Zadejte cokoli jiného než 0, chcete-li nastavit nový název databáze, nebo zadejte
+    0 pro návrat zpět.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Aktuální volitelné argumenty PostgreSQL
+    jsou: {0}. Zadejte argumenty oddělené čárkou (klíč=hodnota, klíč2=hodnota2), nebo
+    zadejte clear, chcete-li vymazat aktuální argumenty, nebo zadejte 0 pro návrat
+    zpět.'
+  wwcConfigGUITogglePostgresSSLButton: Přepnout PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Změnit databázi PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Úspěšně změněno uživatelské jméno
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurace'
+  wwcConfigConversationPrefixInput: Aktuální předpona je {0}. Zadejte prosím nový,
+    nebo zadejte 0 pro návrat.
+  wwcConfigConversationLangInput: 'Aktuální jazyk pluginu je {0}. Zadejte platný kód
+    jazyka, nebo zadejte 0 pro zrušení. Platné jazykové kódy: {1}'
+  wwcdCacheSize: Velikost mezipaměti je aktuálně {0}, s limitem {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Zahájení nové relace překladu z {0} do {1}.
+  wwctAutoTranslateStartOtherPlayer: Zahájení nové překladatelské relace pro {0} na
+    {1}.
+  wwctLangToLangStartOtherPlayer: Zahájení nové relace překladu pro {0} z {1} na {2}.
+  wwcgLangToLangStart: Nyní překládá globální chat z {0} na {1}.
+  wwctrlRateLimitSetTarget: Nastavte limit rychlosti {0} na {1} sekund.
+  wwcTimeoutException: Vaše žádost vypršela. Zkuste to prosím znovu.
+  wwctbNoMoreOldBooks: Překlad knihy není funkční na vaší verzi serveru. Pokud používáte
+    novější verzi Minecraftu a zobrazí se vám tato chyba, kontaktujte vývojáře.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Zvolte lokalizaci
+  wwcConfigGUIMessagesOverridePickChatButton: Přepsat výchozí zprávy pluginu
+  wwcConfigGUIChatMessagesOverrideSettings: Přepsat výchozí zprávy ({0})
+  wwcConfigGUIMessagesServerLang: Toto je výchozí jazyk pluginu v config.yml.
+  wwclLangStopped: Vaše lokalizace byla resetována na výchozí server.
+  wwclLangInvalid: '{0} není platná lokalizace. Podporované lokalizace: {1}'
+  wwclLangStoppedOtherPlayerSender: Obnovte lokalizaci {0} na výchozí server.
+  wwclLangPlayerNotValid: '{0} není platný hráč.'
+  wwclLangChangedOtherPlayerSender: Změnila se lokalizace {0} na {1}.
+  wwclLangChanged: Vaše lokalizace byla změněna na {0}.
+  wwcsLocalization: 'Lokalizace: {0}'
+  wwclLangAlreadyStopped: Nemáte lokalizační sadu.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} nemá lokalizační sadu.'
+  wwctGUILocalizeExistingValue: 'Aktuální lokalizace: {0}'
+  wwctGUILocalizationButton: Nastavit lokalizaci
+  wwctGUILocalizeStopButton: Obnovit lokalizaci na výchozí server
+  wwctGUILocalizeTitle: Lokalizační menu
+  wwctGUISourceSameLang: Tento jazyk by byl stejný jako váš zdrojový jazyk.
+  wwcConfigGUICurrentPlayerLang: Toto je vaše aktuální lokalizace.
+  wwctGUILocalizationSameAsServer: Toto je výchozí lokalizace pro WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Tento jazyk je již aktivní po celém
+    světě!
+  wwcrStorageTranslatorFail: Znovu načten WorldwideChat, ale nepodařilo se povolit
+    překladač a připojit se k konfiguraci úložiště.
+  wwcrStorageFail: Znovu načetl WorldwideChat a úspěšně povolil překladač, ale konfigurace
+    úložiště se nepodařilo připojit.
+  wwcConfigPersistentCacheInvalid: Neplatná položka trvalé mezipaměti v config.yml.
+    Výchozí hodnota je false...
+  wwcConfigGUIPersistentCacheButton: Přepnout trvalou mezipaměť
+  wwcConfigConversationPersistentCacheSuccess: Trvalá mezipaměť byla úspěšně přepnuta.
+  wwcConfigPersistentCacheEnabled: Data mezipaměti budou přetrvávat i při opětovném
+    načtení.
+  wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je {0}
+    znaků. Zadejte cokoli větší než 0 (ale menší než 256), chcete-li nastavit novou
+    hodnotu, nebo zadejte 0 pro návrat zpět.
+  wwcdOutdatedSQLStruct: Vypadá to, že jedna nebo více vašich tabulek MySQL nebo PostgreSQL
+    má nesprávný/zastaralý formát. Podrobnější informace o tomto problému byly vytištěny
+    na konzoli; možná to budete moci opravit ručně.
+  wwcdSQLAllSet: Vaše tabulky MySQL/PostgreSQL jsou správně naformátovány.
+  wwcdColumnBadType: Sloupec {0} v tabulce {1} má typ {2}, ale očekávaný typ {3}.
+  wwcdColumnMissing: V tabulce {1} chybí sloupec {0}.
+  wwcdGoodTable: Tabulka {0} ({1}) je správný formát.
+  wwcdBadTable: Tabulka {0} nebyla nalezena ve interních definicích. Obraťte se prosím
+    na vývojáře.
+  wwcOldDatabaseStruct: 'Zvolená databáze má nesprávné nastavení tabulky. Pro více
+    informací zadejte následující příkaz: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Aktuální limit rychlosti: {0} sekundy'
+

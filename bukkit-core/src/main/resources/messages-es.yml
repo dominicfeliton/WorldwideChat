@@ -639,4 +639,11 @@ Messages:
   wwcOldDatabaseStruct: 'La base de datos elegida tiene una configuración de tabla
     incorrecta. Escriba el siguiente comando para obtener más información: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Límite de velocidad actual: {0} segundos'
+  wwcConfigGUIVaultSupportButton: Soporte de Toggle Vault
+  wwcConfigConversationVaultSupportSuccess: El soporte de Vault se ha alterado correctamente.
+  wwcVaultEnabled: Se ha habilitado la compatibilidad con Vault.
+  wwcVaultFoundButDisabled: Se encontró Vault, pero no se ha registrado ningún complemento
+    de chat existente. Desactivando la compatibilidad con Vault...
+  wwcConfigGUIToggleRestartRequired: Es necesario reiniciar el servidor por completo
+    para aplicar esta configuración.
 

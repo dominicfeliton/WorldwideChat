@@ -640,4 +640,12 @@ Messages:
   wwcOldDatabaseStruct: 'Η επιλεγμένη βάση δεδομένων έχει εσφαλμένη ρύθμιση πίνακα.
     Πληκτρολογήστε την ακόλουθη εντολή για περισσότερες πληροφορίες: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Τρέχον όριο ρυθμού: {0} δευτερόλεπτα'
+  wwcConfigGUIVaultSupportButton: Εναλλαγή υποστήριξης θυρίδων αποθήκευσης
+  wwcConfigConversationVaultSupportSuccess: Η υποστήριξη του Vault εναλλάχθηκε με
+    επιτυχία.
+  wwcVaultEnabled: Η υποστήριξη του θησαυροφυλάκιο έχει ενεργοποιηθεί.
+  wwcVaultFoundButDisabled: Βρέθηκε το θησαυροφυλάκιο, αλλά δεν έχει καταχωρηθεί υπάρχον
+    πρόσθετο συνομιλίας. Απενεργοποίηση υποστήριξης Vault...
+  wwcConfigGUIToggleRestartRequired: Απαιτείται πλήρης επανεκκίνηση του διακομιστή
+    για την εφαρμογή αυτής της ρύθμισης.
 

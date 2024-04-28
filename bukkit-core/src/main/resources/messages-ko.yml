@@ -486,4 +486,9 @@ Messages:
   wwcOldDatabaseStruct: 선택한 데이터베이스의 테이블 설정이 잘못되었습니다.자세한 내용을 보려면 다음 명령을 입력하십시오. /wwcd
     checkdb
   wwctGUIRateButtonLore: '현재 속도 제한: {0} 초'
+  wwcConfigGUIVaultSupportButton: 토글 볼트 지원
+  wwcConfigConversationVaultSupportSuccess: Vault 지원이 성공적으로 전환되었습니다.
+  wwcVaultEnabled: Vault 지원이 활성화되었습니다.
+  wwcVaultFoundButDisabled: Vault를 찾았지만 등록된 기존 채팅 플러그인이 없습니다.Vault 지원을 비활성화하는 중...
+  wwcConfigGUIToggleRestartRequired: 이 설정을 적용하려면 전체 서버를 다시 시작해야 합니다.
 

@@ -591,4 +591,12 @@ Messages:
   wwcOldDatabaseStruct: 'Wybrana baza danych ma nieprawidłową konfigurację tabeli.
     Wpisz następujące polecenie, aby uzyskać więcej informacji: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Obecny limit szybkości: {0} Sekundy'
+  wwcConfigGUIVaultSupportButton: Przełącz obsługę programu Vault
+  wwcConfigConversationVaultSupportSuccess: Obsługa repozytorium została pomyślnie
+    przełączona.
+  wwcVaultEnabled: Obsługa programu Vault została włączona.
+  wwcVaultFoundButDisabled: Znaleziono skarbnicę, ale żadna istniejąca wtyczka do
+    czatu nie została zarejestrowana. Wyłączanie obsługi programu Vault...
+  wwcConfigGUIToggleRestartRequired: Aby zastosować to ustawienie, wymagane jest pełne
+    ponowne uruchomienie serwera.
 

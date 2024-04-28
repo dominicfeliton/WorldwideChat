@@ -628,4 +628,12 @@ Messages:
   wwcOldDatabaseStruct: 'La base de dades escollida té una configuració incorrecta
     de la taula. Escriviu l''ordre següent per obtenir més informació: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Límit de taxa actual: {0} segons'
+  wwcConfigGUIVaultSupportButton: Canvia el suport del Vault
+  wwcConfigConversationVaultSupportSuccess: El suport del Vault s'ha alternat amb
+    èxit.
+  wwcVaultEnabled: S'ha habilitat el suport del Vault.
+  wwcVaultFoundButDisabled: S'ha trobat la caixa forta, però no s'ha registrat cap
+    connector de xat existent. Desactivar el suport de Vault...
+  wwcConfigGUIToggleRestartRequired: Cal un reinici complet del servidor per aplicar
+    aquesta configuració.
 

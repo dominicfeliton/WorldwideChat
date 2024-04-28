@@ -1,0 +1,592 @@
+Messages:
+  wwcgAutoTranslateStart: Nawr cyfieithu sgwrs fyd-eang i {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Mae sgwrs fyd-eang yn cael ei
+    gyfieithu i {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Newid Allwedd Mynediad Amazon
+  wwcrFail: Methwyd ail-lwytho WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Newid Gwirio am Oedi Diweddariadau
+  wwcUpdaterFailedGeneric: Methu gwirio am ddiweddariadau WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Yr oedi presennol ar y gwiriwr diweddaru
+    yw {0} eiliad. Teipiwch unrhyw beth sy'n fwy na 10 i osod gwerth newydd, neu unrhyw
+    beth llai na 10 i fynd yn ôl.
+  wwctGUIMainMenuGlobal: Bwydlen Gyfieithu Fyd-eang
+  wwcConfigConversationPluginUpdateChatSuccess: Ategyn atgoffa sgwrs diweddariad toggled
+    yn llwyddiannus.
+  wwctbOnTarget: Cyfieithu llyfr wedi'i alluogi am {0}.
+  wwcsNotATranslator: Nid oes cofnodion ar gael ar gyfer {0} eto.
+  wwcConfigGUIbStatsButton: Toglo bStats
+  wwctGUINewTranslationSource: Dewiswch Iaith Ffynhonnell
+  wwcConfigConnectionFailed: Methu cysylltu â {0} Gwnewch yn siŵr bod eich cymwysterau
+    a'ch wal dân wedi eu ffurfweddu'n gywir!
+  wwcConfigEnabledbStats: bStats galluogi.
+  wwctGUIMainMenuPlayer: Cyfieithiad Dewislen o {0}
+  wwctGUIBookButton: Toggle Cyfieithu Llyfr
+  wwcLangDetected: Iaith {0} canfod.
+  wwcBookTranslateStart: Cyfieithu llyfr targed...
+  wwcConfigDisabledbStats: bStats anabl.
+  wwctsOffSender: Cyfieithu arwyddion wedi'i analluogi.
+  wwcUpdaterParserFailed: Methwyd gramadegu data diweddaru o Github.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Yr allwedd gyfrinach ar hyn
+    o bryd yw {0} mewnbynnu allwedd gyfrinachol ar gyfer Amazon, neu deipio 0 i fynd
+    yn ôl.
+  wwctbOffSender: Cyfieithu llyfr wedi'i analluogi.
+  wwcConfigGUIAmazonTranslateButton: Amazon Cyfieithu
+  wwcConfigConversationLangSuccess: Iaith ategyn newid yn llwyddiannus.
+  wwcsSuccessfulTranslations: 'Cyfieithiadau Llwyddiannus: {0}'
+  wwcConfigConversationTranslationCacheInput: Y terfyn cache cyfieithu cyfredol yw
+    {0} ymadroddion. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd, neu deipio
+    0 i analluoga 'r cache cyfieithu. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
+  wwctbOffTarget: Cyfieithu llyfr wedi'i analluogi am {0}.
+  wwcConfigGUIGeneralSettings: Ffurfweddiad Cyffredinol
+  wwcInvalidLang: Iaith annilys yn eich config.yml. Defaulting i en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon rhanbarth gosod yn llwyddiannus.
+  wwcConfigRateLimitEnabled: Cyfyngiad cyfradd fyd-eang wedi'i alluogi a'i osod i
+    {0} eiliad.
+  wwcConfigGUILangButton: Newid Iaith Ategyn
+  wwctGUISignButton: Toggle Cyfieithu Arwyddion
+  wwcUpdaterOutOfDate: Mae WorldwideChat yn hen. Diweddarwch i'r fersiwn ddiweddaraf,
+    {0}.
+  wwcConfigGUINextPageButton: Tudalen Nesaf
+  wwcConfigInvalidTranslatorSettings: Gosodiadau cyfieithydd annilys! Os gwelwch yn
+    dda alluogi dim ond un cyfieithydd yn eich config.yml.
+  wwcConfigGUIQuitButton: Ymadael ac Arbed Newidiadau
+  wwctPlayerNotFound: Chwaraewr {0} ddim dod o hyd.
+  wwcConfigGUIAmazonTranslateRegionButton: Newid Rhanbarth Amazon
+  wwcConfigConversationLangInvalid: Cod iaith annilys!
+  wwcConfigGUIWatsonAPIKeyButton: Newid Watson API Allweddol
+  wwcEnabled: Galluogwyd fersiwn WorldwideChat {0}.
+  wwctbOnSender: Cyfieithu llyfr wedi'i alluogi. Cliciwch y botwm dde wrth ddal llyfr
+    i'w gyfieithu!
+  wwcListenersInitialized: Gwrandawyr ymgychwyn.
+  wwcConfigGUIPluginUpdateChatButton: Anfon Atgoffa Sgwrs ar gyfer Diweddariadau Ategyn
+  wwcConfigConversationSendTranslationChatSuccess: Atgoffa sgwrs cyfieithydd gweithredol
+    toggled yn llwyddiannus.
+  wwctsOffTarget: Llofnodi cyfieithu wedi'i analluogi am {0}.
+  wwcUpdaterConnectionFailed: Methu gwirio am ddiweddariadau diweddaraf ar Github.
+  watsonNotFoundExceptionNotification: Methu cyfieithu eich mewnbwn ymhellach.
+  wwcConfigConversationWatsonAPIKeyInput: Yr allwedd API cyfredol yw {0} mewnbynnu
+    allwedd API ar gyfer Watson, neu deipio 0 i fynd yn ôl.
+  wwctGUIStopButton: Stopio Cyfieithu
+  wwcgTranslationStopped: Cyfieithu sgwrsio byd-eang wedi cael ei atal.
+  wwcUpdaterFutureDate: Mae gan yr achos hwn o WorldwideChat fersiwn fwy na'r un cyhoeddus
+    diweddaraf.
+  wwcConfigConversationPrefixSuccess: Rhagddodiad newid yn llwyddiannus.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Newid Google Translate API Allweddol
+  wwcSignDeletedOrTooLong: 'Arwydd targed naill ai ei ddileu neu y cyfieithiad yn
+    rhy hir. Cyfieithu:'
+  wwctsOnTarget: Mewngofnodi cyfieithu galluogi am {0}.
+  wwcConfigCacheDisabled: Cache cyfieithydd wedi'i analluogi.
+  wwcConfigConversationWatsonURLInput: Yr URL cyfredol yw {0} mewnbynnu URL gwasanaeth
+    ar gyfer Watson, neu deipio 0 i fynd yn ôl.
+  wwcBookDone: Llyfr wedi'i gyfieithu yn llwyddiannus.
+  wwctsOnSender: Galluogi cyfieithu arwyddion. Cliciwch y botwm dde ar arwydd i'w
+    gyfieithu!
+  watsonColorCodeWarning: Gall defnyddio codau lliw roi canlyniadau anrhagweladwy
+    i chi.
+  wwctGUITranslationButton: Dechrau Cyfieithu
+  wwctGUIAutoDetectButton: Auto-ganfod Iaith Ffynhonnell
+  wwcUpdaterUpToDate: Mae WorldwideChat yn gyfredol!
+  wwcConfigConversationAmazonTranslateRegionInput: Y rhanbarth presennol yw {0} mewnbynnu
+    rhanbarth ar gyfer Amazon, neu deipio 0 i fynd yn ôl.
+  wwcNoConsole: Gall y gorchymyn hwn yn unig yn cael ei redeg gan chwaraewr.
+  wwcInitializationFail: Methwyd ymgychwyn WorldwideChat.
+  wwcrSuccess: Ail-lwytho WorldwideChat yn llwyddiannus.
+  wwcPlayerNotFound: Chwaraewr {0} ddim dod o hyd.
+  wwcUpdaterOutOfDateChat: Mae WorldwideChat yn hen. Diweddarwch i'r fersiwn ddiweddaraf.
+  wwcConfigConversationRateLimitSuccess: Terfyn cyfradd a osodwyd yn llwyddiannus.
+  wwcConfigConversationWatsonURLSuccess: Gosododd Watson URL yn llwyddiannus.
+  wwctbPlayerNotFound: Chwaraewr {0} naill ai heb ei ganfod, neu nid yw'n gyfieithydd
+    gweithredol.
+  wwcConfigConversationTranslationCacheSuccess: Cyfyngiad cache Cyfieithu gosod yn
+    llwyddiannus.
+  wwctInvalidArgs: Dadleuon annilys a ddarperir!
+  wwcConfigGUIPrefixButton: Newid Rhagddodiad Ategyn
+  wwctSameLangError: Ni allwch gyfieithu i'r un iaith!
+  wwctGUINewTranslationTarget: Dewiswch Iaith Darged
+  wwcConfigConnectionSuccess: Wedi cysylltu yn llwyddiannus i {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Cyfieithu
+  wwcConfigGUIPreviousPageButton: Tudalen Blaenorol
+  wwcConfigGUITranslatorCacheButton: Newid Terfyn Cache Cyfieithu
+  wwcConfigConversationbStatsSuccess: Toglu'n llwyddiannus bStats.
+  wwcSignDone: Arwydd cyfieithu yn llwyddiannus.
+  wwcConfigInvalidPrefixSettings: Methu darllen eich rhagddodiad. Defnyddio'r diofyn...
+  wwcConfigRateLimitInvalid: Terfyn cyfradd drwg a osodwyd yn config.yml. Defaulting
+    i 0 eiliad...
+  wwcSignTranslateStart: Cyfieithu arwydd targed...
+  wwcConfigGUIChatSettings: Configuration Sgwrs
+  wwcConfigGUIWatsonURLButton: Newid URL Gwasanaeth Watson
+  wwcConfigConversationUpdateCheckerSuccess: Diweddariad gosod oedi gwiriwr yn llwyddiannus.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn cael ei
+    gyfieithu o {0} i {1}.
+  wwcConfigGUITranslatorSettings: Cyfluniad Cyfieithydd
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Yr allwedd API cyfredol yw {0}
+    mewnbynnu allwedd API ar gyfer Google Translate, neu deipio 0 i fynd yn ôl.
+  wwcConfigConversationRateLimitInput: Y terfyn cyfradd fyd-eang ar hyn o bryd fesul
+    cyfieithiad yw {0} eiliad. Teipiwch unrhyw beth sy'n fwy na 0 i osod gwerth newydd,
+    neu deipio 0 i analluoga 'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate set allweddol
+    API llwyddiannus.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Newid Amazon Secret Allweddol
+  wwcVersion: WorldwideChat, fersiwn
+  wwcsAttemptedTranslations: 'Cyfieithiadau Ceisio: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon set allweddol gyfrinach
+    yn llwyddiannus.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API allweddol gosod yn llwyddiannus.
+  wwcRateLimit: Mae eich cyfieithiadau yn gyfyngedig i'r gyfradd. Arhoswch arall {0}
+    eiliadau.
+  wwcConfigCacheEnabled: Galluogodd cache cyfieithydd a'i osod i derfyn o {0}.
+  wwctGUIExistingTranslationButton: Trosysgrifo Sesiwn Cyfieithu Cyfredol
+  wwcUserDataReloaded: Llwytho'r holl ddata defnyddiwr a gadwyd.
+  wwcConfigGUISendTranslationChatButton: Anfon Sgwrs Atgoffa i Gyfieithydd Actif ar
+    Mewngofnodi
+  wwcsLastTranslationTime: 'Diwethaf (Llwyddiannus) Amser Cyfieithu: {0}'
+  wwctbNotATranslator: Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
+    bod wedi gosod hyn gyda/wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Yr allwedd mynediad ar hyn o
+    bryd yw {0} mewnbynnu allwedd mynediad ar gyfer Amazon, neu deipio 0 i fynd yn
+    ôl.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon mynediad set allweddol
+    yn llwyddiannus.
+  wwcConfigBadUpdateDelay: Oedi updater annilys a osodwyd yn config.yml. Defaulting
+    i 86400 eiliad...
+  wwctrlRateLimitOffSender: Diffodd eich terfyn cyfradd.
+  wwctrlRateLimitAlreadyOffTarget: Mae terfyn cyfradd {0} eisoes wedi ei analluogi.
+  wwctrlPlayerNotFound: Chwaraewr {0} naill ai heb ei ganfod, neu nid yw'n gyfieithydd
+    gweithredol.
+  wwctrlRateLimitSetSender: Gosodwch eich terfyn cyfradd i {0} eiliad.
+  wwctrlRateLimitOffTarget: Diffodd terfyn cyfradd {0}.
+  wwctrlNotATranslator: Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
+    bod wedi gosod hyn gyda/wwct.
+  wwctrlRateLimitAlreadyOffSender: Mae eich terfyn cyfradd eisoes wedi'i analluogi.
+  wwctGUIRateButton: Gosod Terfyn Cyfradd
+  wwctGUIConversationRateLimit: Y terfyn cyfradd fesul cyfieithiad ar hyn o bryd {0}
+    eiliad. Teipiwch unrhyw beth sy'n fwy na 0 i osod gwerth newydd, neu deipio 0
+    i analluoga 'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
+  wwctGUITargetPlayerNull: Mae'r chwaraewr targed ddatgysylltu oddi wrth y gweinydd.
+  wwcConfigConversationSyncUserDataDelayInput: Yr oedi cyfredol fesul cydamseru data
+    defnyddiwr yw {0} eiliad. Teipiwch unrhyw beth sy'n fwy na 10 i osod gwerth newydd,
+    neu unrhyw beth llai na 10 i fynd yn ôl.
+  wwcConfigGUISyncUserDataButton: Newid defnyddiwr Data Sync Oedi
+  wwcConfigSyncDelayEnabled: Oedi fesul set cysoni data defnyddiwr i {0} eiliad.
+  wwcConfigConversationSyncUserDataDelaySuccess: Data defnyddiwr oedi cysoni gosod
+    yn llwyddiannus.
+  wwcConfigSyncDelayInvalid: Gohirio cysoni data defnyddiwr annilys a osodwyd yn config.yml.
+    Defaulting i 7200 eiliad...
+  wwcConfigCacheInvalid: Maint cache Cyfieithydd annilys. Defaulting i 10...
+  wwcInventoryErrorPlayer: Gwall canfod gyda'ch GUI. Anfonwyd log at y consol.
+  wwcInventoryError: Gwall a ganfuwyd gyda GUI o defnyddiwr {0} Rhowch wybod i'r datblygwr.
+  wwctiOffTarget: Cyfieithu eitem wedi'i analluogi am {0}.
+  wwctiOffSender: Cyfieithu eitem wedi'i analluogi.
+  wwcItemTranslateTitleStock: Methu cyfieithu enwau eitemau diofyn.
+  wwctGUIItemButton: Toggle Cyfieithu Eitem
+  wwcItemTranslateTitleDone: Teitl eitem wedi'i gyfieithu yn llwyddiannus.
+  wwcGUITempItem: Arddangos Eitem
+  wwcItemTranslateStart: Cyfieithu eitem darged...
+  wwcBookTranslateTitleSuccess: 'Teitl Llyfr Cyfieithiedig: {0}'
+  wwctiOnSender: Alluogwyd cyfieithiad eitem. Cliciwch y botwm dde gydag eitem yn
+    eich prif law i'w gyfieithu!
+  wwcItemTranslateLoreStart: Cyfieithu llên o eitem darged...
+  wwcItemTranslateLoreDone: Lore eitem Cyfieithwyd yn llwyddiannus.
+  wwctiOnTarget: Cyfieithiad eitem wedi'i alluogi ar gyfer {0}.
+  wwcInvalidTranslator: Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
+    hon yn eich config.yml neu gyda/wwcc i ddefnyddio'r ategyn hwn.
+  wwcConfigGUIEachTranslatorSettings: '{0} Ffurfweddiad'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: Nid yw WorldwideChat yn cydoddef y defnydd o/ail-lwytho.
+    Ewch ymlaen yn ofalus.
+  wwcConfigEnabledDebugMode: Modd DEBUG Galluogi. Os nad ydych yn ddatblygwr neu troubleshooter,
+    dylech droi hyn i ffwrdd.
+  wwcTranslatorErrorThresholdReached: Cyrhaeddodd trothwy gwall. Bydd yr ategyn hwn
+    yn awr yn ail-lwytho, ac analluoga holl gyfieithwyr.
+  wwcConfigErrorLimitEnabled: Cyfyngiad gwall Cyfieithydd a osodwyd i {0}.
+  wwcTranslatorError: Digwyddodd problem wrth geisio eich cyfieithiad. Ceisiwch eto
+    os gwelwch yn dda.
+  wwcConfigErrorLimitInvalid: Cyfyngiad gwall cyfieithydd annilys a osodwyd yn config.yml.
+    Defaulting i 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Gwiriwch errorLog.txt yn y ffolder
+    ategyn WorldwideChat am fwy o wybodaeth.
+  wwctInvalidInputLangCode: 'Cod iaith mewnbwn annilys a ddarperir! Codau lang dilys:
+    {0}'
+  wwctInvalidOutputLangCode: 'Cod iaith allbwn annilys a ddarperir! Codau lang dilys:
+    {0}'
+  wwctGUISourceTranslationSelected: Rydych wedi dewis yr iaith hon.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Dileu Gwrthwneud
+  wwcConfigConversationOverrideTextChange: Teipiwch neges newydd ar gyfer y gwrthwneud
+    hwn, neu teipiwch 0 i fynd yn ôl. Cofiwch gynnwys unrhyw newidynnau sy'n dechrau
+    gydag arwyddion canrannol a welwch yn y neges wreiddiol.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Mae'r iaith hon eisoes yn weithredol!
+  wwcConfigGUIChatMessagesPossibleOverrides: Dewiswch Neges
+  wwcConfigGUIChatMessagesModifyOverride: Addasu Gwrthwneud Presennol
+  wwcConfigConversationOverrideDeletionSuccess: Mae gwrthwneud neges Custom wedi cael
+    ei ddileu.
+  wwcConfigGUIChatMessagesDeadOverride: Mae'r gwrthwneud hwn naill ai'n annilys, neu
+    mae'r neges wreiddiol wedi'i dileu. Dylech ddileu hyn.
+  wwcConfigGUIMessagesAlreadyOverriden: Mae gennych eisoes wrthwneud ar gyfer y neges
+    hon!
+  wwcConfigGUIChatMessagesOverrideNewButton: Ychwanegu Gwrthwneud Newydd
+  wwcConfigGUIMessagesOverrideCustomLabel: Neges Newydd
+  wwcConfigConversationOverrideTextChangeSuccess: Gosod neges newydd yn llwyddiannus.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Newid Testun Presennol
+  wwcExampleMessage: Mae hon yn neges ffug, ac mae i fod i gael ei overriden fel enghraifft.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Neges Gwreiddiol
+  wwcConfigGUIDebugModeButton: Toggle dadfygio Modd
+  wwcConfigConversationDebugModeSuccess: Modd dadfygio llwyddiannus toggled.
+  wwcConfigGUIErrorLimitButton: Newid Cyfyngiad Gwall Cyfieithydd
+  wwcConfigConversationErrorLimitSuccess: Terfyn gwall a osodwyd yn llwyddiannus.
+  wwcEntityTranslateStart: Cyfieithu endid targed...
+  wwcConfigGUICharacterLimitButton: Newid Terfyn Cymeriad Neges
+  wwcConfigMessageCharLimitInvalid: Terfyn annilys fesul neges a osodwyd yn config.yml.
+    Defaulting i 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Gosod terfyn cymeriad yn llwyddiannus.
+  wwcteOnTarget: Cyfieithu endid galluogi am {0}.
+  wwcEntityTranslateDone: 'Enw Endid Cyfieithwyd: {0}'
+  wwcEntityTranslateNoName: Nid oes gan endid enw arfer.
+  wwcConfigConversationErrorLimitInput: Teipiwch unrhyw beth sy'n fwy na 0 i osod
+    gwerth newydd, neu deipiwch unrhyw beth llai na 0 neu'n hafal i 0 i fynd yn ôl.
+  wwcConfigGUIGlobalRateLimitButton: Newid Terfyn Cyfradd Fyd-eang
+  wwcteOnSender: Galluogi cyfieithu endid. Cliciwch y botwm dde ar endid i gyfieithu
+    ei enw!
+  wwcConfigGUIResponseLimitButton: Newid Amseroedd Ymateb Cyfieithydd
+  wwcConfigMessageCharLimitEnabled: Terfyn cymeriad fesul neges a osodwyd i {0} nodau.
+  wwcteOffTarget: Cyfieithu endid wedi'i analluogi am {0}.
+  wwcCharLimit: Mae eich neges yn rhy hir! Gwnewch yn siŵr bod eich neges yn llai
+    na {0} nodau o hyd.
+  wwcteOffSender: Analluogwyd cyfieithu endid.
+  wwctGUIEntityButton: Toggle Endid Cyfieithu
+  wwctrlRateLimitBadInt: Nid yw eich terfyn cyfradd yn gyfanrif dilys.
+  wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr {0} yn ceisio eu cyfieithiad.
+    Gwiriwch errorLog.txt am fwy o fanylion.
+  wwctGUIChatButton: Toggle Sgwrs Cyfieithu
+  wwcrBegin: Ail-lwytho WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesiwn gyfieithu ar gyfer {0} wedi cael ei stopio.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn
+    cael ei gyfieithu, ond mae gennych sesiwn gyfieithu weithredol o {0} i {1}.
+  wwctCannotTranslateConsole: Ni allwch ddechrau sesiwn gyfieithu ar gyfer consol!
+  wwcOnJoinTranslationNotificationSourceLang: Mae gennych sesiwn gyfieithu weithredol
+    o {0} i {1}.
+  wwctTranslationStopped: Mae eich sesiwn gyfieithu wedi cael ei stopio.
+  wwctAutoTranslateStart: Dechrau sesiwn gyfieithu newydd i {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Mae gennych sesiwn gyfieithu weithredol
+    i {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Mae sgwrs fyd-eang yn
+    cael ei gyfieithu, ond mae gennych sesiwn gyfieithu weithredol i {0}.
+  wwcConfigGUIChangesNotSaved: Ni fydd eich newidiadau yn dod i rym nes i chi glicio
+    ar y rhwystr coch yn /wwcc.
+  wwctciOffSender: Cyfieithu sgwrsio sy'n dod i mewn anabl.
+  wwctGUIChatIncomingButton: Toggle Cyfieithu Sgwrs sy'n dod i mewn
+  wwctcoOffSender: Cyfieithiad sgwrsio sy'n mynd allan anabl.
+  wwctcoOnSender: Galluogi cyfieithu sgwrsio sy'n mynd allan. Bydd unrhyw beth a ddywedwch
+    yn cael ei gyfieithu!
+  wwctciOnSender: Cyfieithu sgwrsio sy'n dod i mewn galluogi. Bydd unrhyw beth a gewch
+    yn cael ei gyfieithu!
+  wwctGUIChatMenu: Toggle Sgwrs Dewislen Cyfieithu
+  wwctcoOnTarget: Galluogwyd cyfieithu sgwrsio sy'n mynd allan ar gyfer {0}.
+  wwctcoOffTarget: Cyfieithiad sgwrsio sy'n mynd allan wedi ei analluogi am {0}.
+  wwctGUIChatOutgoingButton: Toggle Cyfieithu Sgwrs Ymadawol
+  wwctciOnTarget: Cyfieithiad sgwrsio sy'n dod i mewn wedi'i alluogi am {0}.
+  wwctciOffTarget: Cyfieithiad sgwrsio sy'n dod i mewn anabl am {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Sgwrs wreiddiol sy'n dod
+    i mewn ynghlwm wrth gyfieithu fel testun hofran toggled llwyddiannus.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ychwanegu Negeseuon Gwreiddiol sy'n
+    Dod i mewn fel Testun
+  wwctGUIExistingChatOutgoingEnabled: 'Cyfieithu Sgwrs Ymadawol wedi''i Alluogi: {0}'
+  wwctGUIExistingTranslationInput: 'Mewnbwn Iaith: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Cyfieithu Sgwrs sy''n dod i mewn wedi''i alluogi:
+    {0}'
+  wwctGUIExistingTranslationOutput: 'Allbwn Iaith: {0}'
+  wwcTranslatorAttempt: Ceisio cysylltu â chyfieithydd yn config.yml... (Ceisiwch
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Chwaraewr % Cefais eu hamseriad cais diweddaraf. Nid
+    yw'r gwall hwn yn angheuol, ond dylid ail-lwytho WorldwideChat os yw'n parhau
+    i ddigwydd.
+  wwcGUIPageNumber: 'Rhif Tudalen: {0}'
+  wwcConfigYAMLFallback: Syrthio yn ôl i YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled yn llwyddiannus. Ail-lwytho ar
+    gyfer y newid i ddod i rym.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Llwyddo Google Translate yn llwyddiannus.
+    Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigYAMLDefault: Yn ddiofyn i YAML ar gyfer storio data.
+  wwcConfigGUISQLMenuButton: Newid Gosodiadau SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Wedi toggled Watson Translate
+    yn llwyddiannus. Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Cyfieithu
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Cyfieithu
+  wwcConfigGUIStorageSettings: Ffurfweddu storio
+  wwcConfigConversationAmazonTranslateToggleSuccess: Toggled Amazon Translate yn llwyddiannus.
+    Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigGUISQLPortButton: Newid SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Newid Dadleuon Dewisol SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL ar gyfer SQL toggled yn llwyddiannus.
+  wwcConfigConversationSQLPortInput: Y porthladd presennol yw {0}. teipiwch unrhyw
+    beth heblaw 0 i osod porthladd newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUISQLPasswordButton: Newid SQL Cyfrinair
+  wwcConfigConversationSQLHostnameSuccess: Wedi newid enw gwesteiwr SQL yn llwyddiannus.
+  wwcConfigConversationSQLHostnameInput: Yr enw gwesteiwr presennol yw {0} Teipiwch
+    unrhyw beth heblaw 0 i osod enw gwesteiwr newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUISQLHostnameButton: Newid enw gwesteiwr SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Wedi newid y dadleuon SQL dewisol yn
+    llwyddiannus.
+  wwcConfigConversationSQLPasswordSuccess: Wedi newid cyfrinair SQL yn llwyddiannus.
+  wwcConfigConversationSQLPasswordInput: Y cyfrinair presennol yw {0} Teipiwch unrhyw
+    beth heblaw 0 i osod cyfrinair newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Wedi newid enw defnyddiwr SQL yn llwyddiannus.
+  wwcConfigConversationSQLUsernameInput: Yr enw defnyddiwr presennol yw {0} Teipiwch
+    unrhyw beth heblaw 0 i osod enw defnyddiwr newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigConversationSQLPortSuccess: Wedi newid y porthladd SQL yn llwyddiannus.
+  wwcConfigGUISQLUsernameButton: Newid enw defnyddiwr SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
+  wwcConfigConversationSQLOptionalArgsInput: 'Y dadleuon SQL dewisol cyfredol yw:
+    {0}. dadleuon Teipiwch wahanu gan goma (allwedd = value, key2 = value2), neu deipiwch
+    glir i sychu''r args presennol, neu deipio 0 i fynd yn ôl.'
+  wwcConfigConversationSQLDatabaseNameInput: Enw'r gronfa ddata gyfredol yw {0} Teipiwch
+    unrhyw beth heblaw 0 i osod enw cronfa ddata newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUISQLDatabaseNameButton: Newid Cronfa Ddata SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Wedi newid enw cronfa ddata SQL yn
+    llwyddiannus.
+  wwcConfigConversationFatalAsyncAbort: Yr amser ar hyn o bryd i erthylu pob tasg
+    async yw {0} eiliad. Teipiwch unrhyw beth uchod 7 i osod amser newydd, neu unrhyw
+    beth oddi tano i fynd yn ôl.
+  wwcConfigConversationFatalAsyncSuccess: Amserlen tasg Async gosod yn llwyddiannus.
+  wwcConfigGUIFatalAsyncAbortButton: Newid Amserlen Tasg Async
+  libreHttp400: Cais gwael wedi'i anfon i Libre Translate! Oni bai eich bod yn gwneud
+    rhywbeth na ddylech, ni ddylech gael hyn. Cysylltwch â'r datblygwr!
+  wwcConfigGUILibreTranslateApiKeyButton: Newid Free Cyfieithu API Allweddol
+  libreHttp403: Ar goll Cyfieithu Allwedd API Libre, neu rydych yn cael eu gwahardd
+    o'r gweinydd!
+  wwcConfigConversationLibreURLSuccess: URL Libre wedi'i osod yn llwyddiannus.
+  wwcConfigConversationLibreTranslateApiKeyInput: Yr allwedd API gyfredol yw {0} Mewnbynnwch
+    allwedd API ar gyfer Libre, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUILibreTranslateButton: Libre Cyfieithu
+  libreHttp429: Dim hyder oherwydd terfyn cyfradd o'r gweinydd.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Cyfieithu
+  wwcConfigConversationLibreTranslateToggleSuccess: Toglo Libre Translate yn llwyddiannus.
+    Ail-lwytho er mwyn i'r newidiadau ddod i rym.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Allwedd API Libre wedi'i osod
+    yn llwyddiannus.
+  wwcConfigConversationLibreURLInput: Yr URL cyfredol yw {0}, mewnbynnwch URL ar gyfer
+    Libre, neu deipiwch 0 i fynd yn ôl.
+  libreHttpUnknown: 'Gwall http anhysbys: {0}'
+  wwcConfigGUILibreTranslateURLButton: Newid Libre Cyfieithu URL
+  wwcConfigConnectionFail: Methwyd cysylltu â {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: Newid enw cronfa ddata MongoDB yn
+    llwyddiannus.
+  wwcConfigGUIMongoHostnameButton: Newid Enw Gwesteiwr MongoDB
+  wwcConfigConversationMongoPasswordInput: Teipiwch unrhyw beth heblaw 0 i osod cyfrinair
+    newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationMongoPortInput: Y porthladd presennol yw {0}. teipiwch unrhyw
+    beth heblaw 0 i osod porthladd newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigConversationToggleMongoSuccess: Fe wnaeth MongoDB toglo'n llwyddiannus.
+    Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigConversationMongoHostnameInput: Teipiwch unrhyw beth heblaw 0 i osod enw
+    gwesteiwr newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigConversationMongoHostnameSuccess: Newid enw gwesteiwr MongoDB yn llwyddiannus.
+  wwcConfigGUIMongoMenuButton: Newid Gosodiadau MongoDB
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Teipiwch unrhyw beth heblaw 0 i osod
+    enw cronfa ddata newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationMongoOptionalArgsInput: 'Y dadleuon MongoDB dewisol cyfredol
+    yw: {0}. teipiwch ddadleuon wedi''u gwahanu gan atalnod (key=value, key2=value2),
+    neu deipiwch yn glir i sychu''r argiau cyfredol, neu deipiwch 0 i fynd yn ôl.'
+  wwcConfigGUIMongoDatabaseNameButton: Newid Cronfa Ddata MongoDB
+  wwcConfigConversationMongoUsernameInput: Teipiwch unrhyw beth heblaw 0 i osod enw
+    defnyddiwr newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIMongoOptionalArgsButton: Newid Dadleuon Dewisol MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Newid enw defnyddiwr MongoDB yn llwyddiannus.
+  wwcConfigConversationMongoPasswordSuccess: Newid cyfrinair MongoDB yn llwyddiannus.
+  wwcConfigConversationMongoPortSuccess: Newid porthladd MongoDB yn llwyddiannus.
+  wwcConfigGUIMongoUsernameButton: Newid Enw Defnyddiwr MongoDB
+  wwcConfigGUIMongoPasswordButton: Newid Cyfrinair MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Wedi newid y dadleuon MongoDB dewisol
+    yn llwyddiannus.
+  wwcConfigConversationMongoOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
+  wwcConfigGUIMongoPortButton: Newid Porthladd MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Set amser async angheuol annilys. Yn ddiffygiol
+    i 10 eiliad...
+  libreHttp500: Ni chefnogir eich pâr iaith mewnbwn ac allbwn a ddewiswyd. Dewiswch
+    set iaith wahanol!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Cyfieithu
+  wwcConfigConversationDeepLTranslateToggleSuccess: Toglo DeepL Translate yn llwyddiannus.
+    Ail-lwytho er mwyn i'r newidiadau ddod i rym.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Newid Allwedd API Cyfieithu DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Cyfieithu
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Allwedd API DeepL wedi'i gosod
+    yn llwyddiannus.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Yr allwedd API gyfredol yw {0} Mewnbynnwch
+    allwedd API ar gyfer DeepL, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigErrorsToIgnoreSuccess: Gofrestru'n llwyddiannus gwallau cyfieithydd i'w
+    hanwybyddu.
+  wwcConfigErrorsToIgnoreInvalid: Gwallau cyfieithydd annilys i anwybyddu gosod yn
+    config.yml. Cofrestru rhagosodiadau...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Newid gwallau cyfieithydd yn llwyddiannus
+    i anwybyddu ymadroddion.
+  wwcConfigGUIIgnoreErrorsButton: Newid Gwallau i Anwybyddu
+  wwcConfigConversationIgnoreErrorsInput: 'Y rhestr gyfredol o ymadroddion mewn gwallau
+    cyfieithydd i''w hanwybyddu yw: {0}. teipiwch ddadleuon wedi''u gwahanu gan atalnod
+    (allwedd=value, key2=value2), neu deipiwch yn glir i sychu''r argiau cyfredol,
+    neu deipiwch 0 i fynd yn ôl. Yn ogystal, teipio “*” Bydd achosi i''r ategyn i
+    beidio gwirio unrhyw wallau cyfieithydd.'
+  wwcConfigConversationIgnoreErrorsCleared: Gwallau cyfieithydd i anwybyddu ymadroddion
+    a gliriwyd yn llwyddiannus.
+  wwcSupportedServer: Ymgychwyn WorldwideChat ar gyfer {0}...
+  wwcSupportedVersion: Nodweddion galluogi ar gyfer fersiwn {0}...
+  wwcBadPerms: 'Nid oes gennych y caniatâd gofynnol i weithredu''r gorchymyn hwn:
+    {0}'
+  wwcsIsActiveTranslator: 'A yw Cyfieithydd Gweithredol: {0}'
+  wwcsActiveTransPrevRate: 'Amser Terfyn Cyfradd Blaenorol: {0}'
+  wwcsActiveTransSaved: 'Cadwyd i''r ddisg: {0}'
+  wwcsActiveTransIncoming: 'Cyfieithu Sgwrs sy''n dod i mewn: {0}'
+  wwcsActiveTransOutLang: 'Iaith Allbwn: {0}'
+  wwcsActiveTransInLang: 'Iaith Mewnbwn: {0}'
+  wwcsActiveTransBook: 'Llyfr Cyfieithu: {0}'
+  wwcsActiveTransSign: 'Arwydd Cyfieithu: {0}'
+  wwcsActiveTransUUID: 'NEWYDD: {0}'
+  wwcsActiveTransRateLimit: 'Terfyn Cyfradd: {0}'
+  wwcsActiveTransColorWarning: 'Rhybudd Lliw a Dderbyniwyd: {0}'
+  wwcsActiveTransSignWarning: 'Rhybudd Golygu Arwydd a Dderbyniwyd: {0}'
+  wwcsTitle: Cofnod o {0}
+  wwcsActiveTransOutgoing: 'Cyfieithu Sgwrs Allawol: {0}'
+  wwcsActiveTransItem: 'Eitem cyfieithu: {0}'
+  wwcsActiveTransEntity: 'Endid Cyfieithu: {0}'
+  wwctsWarning: Mae addasu arwyddion yn anabl tra byddwch yn cyfieithu arwyddion.
+  wwcConfigConversationAzureTranslateToggleSuccess: Toglodd Cyfieithu Azure yn llwyddiannus.
+    Aillwytho er mwyn i'r newidiadau ddod i rym.
+  wwcConfigGUIAzureTranslateButton: Cyfieithu Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Newid Allwedd API Cyfieithu Azure
+  wwcConfigGUIAzureTranslateRegionButton: Newid Rhanbarth Cyfieithu Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Gosodwyd rhanbarth Azure yn llwyddiannus.
+  wwcConfigConversationAzureTranslateApiKeyInput: Yr allwedd API gyfredol yw {0}.
+    Mewnbynnwch allwedd API ar gyfer Azure, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Gosodwyd allwedd API Azure yn
+    llwyddiannus.
+  wwcConfigConversationAzureTranslateRegionInput: Y rhanbarth presennol yw {0}. Mewnbynnwch
+    ranbarth ar gyfer Azure, neu teipiwch 0 i fynd yn ôl.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Cyfieithu
+  wwcConfigGUISystranTranslateApiKeyButton: Newid Cyfieithu Systran Allwedd API
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Cyfieithu
+  wwcConfigConversationSystranTranslateApiKeyInput: Yr allwedd API gyfredol yw {0}.
+    Mewnbynnwch allwedd API ar gyfer Systran, neu deipiwch 0 i fynd yn ôl.
+  wwcISOJSONFail: Methu trwsio gwrthrychau iaith gyda ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Toglodd Cyfieithu Systran yn
+    llwyddiannus. Aillwytho er mwyn i'r newidiadau ddod i rym.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Gosodwyd allwedd API Systran
+    yn llwyddiannus.
+  wwcConfigGUISystranTranslateButton: Cyfieithu Systran
+  wwcrTransFail: Aillwythwyd WorldwideChat ond methodd â galluogi cyfieithydd.
+  wwcdCacheCleared: Cliriwyd y storfa cyfieithu.
+  wwcdInvalidCmd: Dadleuon annilys!
+  systranHttpUnknown: 'Gwall http anhysbys: {0}'
+  systranHttp400: Paramedrau gwael a anfonwyd i Systran. Efallai bod yn bâr iaith
+    gwael?
+  systranHttp500: Gwall gweinydd mewnol o derfyn Systran ({0}).
+  wwcInvalidStorageSession: Mae {0} wedi'i alluogi yn eich config, ond nid yw cysylltiad
+    wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
+    os cawsoch neges gysylltiad llwyddiannus o'r blaen gan {0}.
+  wwcConfigConversationPostgresDatabaseNameSuccess: Newidiodd enw'r gronfa ddata PostgreSQL
+    yn llwyddiannus.
+  wwcConfigConversationPostgresOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
+  wwcConfigConversationPostgresPortInput: Y porthladd presennol yw {0}. Teipiwch unrhyw
+    beth heblaw 0 i osod porthladd newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIPostgresUsernameButton: Newid Enw Defnyddiwr PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Newidiodd y dadleuon PostgreSQL
+    dewisol yn llwyddiannus.
+  wwcConfigConversationTogglePostgresSSLSuccess: Tocliodd SSL ar gyfer PostgreSQL
+    yn llwyddiannus.
+  wwcConfigConversationPostgresPasswordSuccess: Newidiodd y cyfrinair PostgreSQL yn
+    llwyddiannus.
+  wwcConfigConversationPostgresPortSuccess: Newidiodd y porthladd PostgreSQL yn llwyddiannus.
+  wwcConfigConversationPostgresUsernameInput: Yr enw defnyddiwr presennol yw {0}.
+    Teipiwch unrhyw beth heblaw 0 i osod enw defnyddiwr newydd, neu deipiwch 0 i fynd
+    yn ôl.
+  wwcConfigConversationTogglePostgresSuccess: Toclodd PostgreSQL yn llwyddiannus.
+    Aillwytho er mwyn i'r newid ddod i rym.
+  wwcConfigGUITogglePostgresButton: Toglo PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Newid Cyfrinair PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Newid Dadleuon Dewisol PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Newid Gosodiadau PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Y cyfrinair presennol yw {0}. Teipiwch
+    unrhyw beth heblaw 0 i osod cyfrinair newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationPostgresHostnameInput: Yr enw gwesteiwr cyfredol yw {0}. Teipiwch
+    unrhyw beth heblaw 0 i osod enw gwesteiwr newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIPostgresPortButton: Newid Porthladd PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Newidiodd enw gwesteiwr PostgreSQL
+    yn llwyddiannus.
+  wwcConfigGUIPostgresHostnameButton: Newid enw gwesteiwr PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Enw'r gronfa ddata gyfredol yw {0}.
+    Teipiwch unrhyw beth heblaw 0 i osod enw cronfa ddata newydd, neu deipiwch 0 i
+    fynd yn ôl.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Y dadleuon PostgreSQL dewisol cyfredol
+    yw: {0}. Teipiwch ddadleuon wedi''u gwahanu gan coma (key=value, key2 = value2),
+    neu deipiwch glir i sychu''r args cyfredol, neu deipiwch 0 i fynd yn ôl.'
+  wwcConfigGUITogglePostgresSSLButton: Toglo PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Newid Cronfa Ddata PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Newidiodd enw defnyddiwr PostgreSQL
+    yn llwyddiannus.
+  wwcConfigGUIStorageTypeSettings: '{0} Ffurfweddiad'
+  wwcConfigConversationPrefixInput: Y rhagddodiad cyfredol yw {0}. Teipiwch un newydd,
+    neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationLangInput: 'Yr iaith ategyn gyfredol yw {0}. Rhowch god iaith
+    dilys, neu deipiwch 0 i ganslo. Codau iaith dilys: {1}'
+  wwcdCacheSize: Ar hyn o bryd, maint y storfa yw {0}, gyda therfyn o {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:mewnputLang= {1}, allbwnLang = {2}, mewnbwn
+    = {3} | allbwnPhrase= {4}'
+  wwctLangToLangStart: Dechrau sesiwn gyfieithu newydd o {0} i {1}.
+  wwctAutoTranslateStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0}
+    i {1}.
+  wwctLangToLangStartOtherPlayer: Dechrau sesiwn cyfieithu newydd ar gyfer {0} o {1}
+    i {2}.
+  wwcgLangToLangStart: Nawr yn cyfieithu sgwrs fyd-eang o {0} i {1}.
+  wwctrlRateLimitSetTarget: Gosodwch y terfyn cyfradd o {0} i {1} eiliad.
+  wwcTimeoutException: Amserwyd eich cais allan. Rhowch gynnig eto os gwelwch yn dda.
+  wwctbNoMoreOldBooks: Nid yw cyfieithu llyfr yn weithredol ar fersiwn eich gweinydd.
+    Os ydych chi ar fersiwn fwy diweddar o Minecraft ac rydych chi'n cael y gwall
+    hwn, cysylltwch â'r datblygwr.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Dewiswch Lleoleiddio
+  wwcConfigGUIMessagesOverridePickChatButton: Diystyru Negeseuon Ategyn Diofyn
+  wwcConfigGUIChatMessagesOverrideSettings: Diystyru Negeseuon Diofyn ({0})
+  wwcConfigGUIMessagesServerLang: Dyma iaith ddiofyn yr ategyn yn config.yml.
+  wwclLangStopped: Ailosodwyd eich lleoleiddio i ddiofyn y gweinydd.
+  wwclLangInvalid: 'Nid yw {0} yn lleoleiddio dilys. Lleoleiddiadau â chymorth: {1}'
+  wwclLangStoppedOtherPlayerSender: Ailosod lleoleiddio {0} i ddiofyn y gweinydd.
+  wwclLangPlayerNotValid: Nid yw {0} yn chwaraewr dilys.
+  wwclLangChangedOtherPlayerSender: Newidiwyd lleoleiddio {0} i {1}.
+  wwclLangChanged: Newidiwyd eich lleoleiddio i {0}.
+  wwcsLocalization: 'Lleoleiddio: {0}'
+  wwclLangAlreadyStopped: Nid oes gennych set lleoleiddio.
+  wwclLangAlreadyStoppedOtherPlayerSender: Nid oes gan {0} set lleoleiddio.
+  wwctGUILocalizeExistingValue: 'Lleoleiddio Cyfredol: {0}'
+  wwctGUILocalizationButton: Gosod Lleoleiddio
+  wwctGUILocalizeStopButton: Ailosod Lleoleiddio i Diofyn Gweinydd
+  wwctGUILocalizeTitle: Dewislen Lleoleiddio
+  wwctGUISourceSameLang: Byddai'r iaith hon yr un fath â'ch iaith ffynhonnell.
+  wwcConfigGUICurrentPlayerLang: Dyma eich lleoleiddio cyfredol.
+  wwctGUILocalizationSameAsServer: Dyma'r lleoleiddio diofyn ar gyfer WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Mae'r iaith hon eisoes yn weithredol
+    yn fyd-eang!
+  wwcrStorageTranslatorFail: Aillwytho WorldwideChat ond methodd â galluogi cyfieithydd
+    a chysylltu â'ch cyfluniad storio.
+  wwcrStorageFail: Aillwytho WorldwideChat a galluogi cyfieithydd yn llwyddiannus,
+    ond methodd eich cyfluniad storio â chysylltu.
+  wwcConfigPersistentCacheInvalid: Cofnod storfa parhaus annilys yn config.yml. Rhagosodiad
+    i ffug...
+  wwcConfigGUIPersistentCacheButton: Toglo Cache Parhaus
+  wwcConfigConversationPersistentCacheSuccess: Tocliodd storfa barhaus yn llwyddiannus.
+  wwcConfigPersistentCacheEnabled: Bydd data storfa yn parhau ar draws aillwythi.
+  wwcConfigConversationCharacterLimitInput: Y terfyn cymeriad cyfredol fesul neges
+    yw cymeriadau {0}. Teipiwch unrhyw beth sy'n fwy na 0 (ond llai na 256) i osod
+    gwerth newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcdOutdatedSQLStruct: Mae'n edrych fel bod gan un neu fwy o'ch tablau MySQL neu
+    PostgreSQL fformat anghywir/hen ffasiwn. Mae mwy o wybodaeth dyddorol am y mater
+    hwn wedi'i hargraffu i'ch consol; efallai y gallwch drwsio hyn â llaw.
+  wwcdSQLAllSet: Mae eich tablau MySQL/PostgreSQL wedi'u fformatio'n iawn.
+  wwcdColumnBadType: Mae gan golofn {0} yn nhabl {1} fath {2} ond math {3} disgwyliedig.
+  wwcdColumnMissing: Mae colofn {0} ar goll yn nhabl {1}.
+  wwcdGoodTable: Tabl {0} ({1}) yw'r fformat cywir.
+  wwcdBadTable: Ni cheir Tabl {0} mewn diffiniadau mewnol. Cysylltwch â'r datblygwr.
+  wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata ddewisol setup tabl anghywir. Teipiwch
+    y gorchymyn canlynol am fwy o wybodaeth: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Terfyn Cyfradd Gyfredol: {0} Eiliadau'
+

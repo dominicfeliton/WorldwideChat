@@ -1,0 +1,631 @@
+Messages:
+  wwcgAutoTranslateStart: Ara la traducció del xat global a {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: El xat global s'està traduint
+    a {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Canviar la clau d'accés d'Amazon
+  wwcrFail: No s'ha pogut recarregar WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Canviar la comprovació de les actualitzacions Retard
+  wwcUpdaterFailedGeneric: No es pot comprovar si hi ha actualitzacions WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: El retard actual del corrector d'actualització
+    és {0} segons. Escriviu qualsevol cosa més gran que 10 per establir un valor nou,
+    o qualsevol cosa menys de 10 per tornar enrere.
+  wwctGUIMainMenuGlobal: Menú de traducció global
+  wwcConfigConversationPluginUpdateChatSuccess: Recordatori de xat d'actualització
+    del plugin es va activar correctament.
+  wwctbOnTarget: S'ha habilitat la traducció de llibres per {0}.
+  wwcsNotATranslator: Encara no hi ha registres disponibles per a {0}.
+  wwcConfigGUIbStatsButton: Commuta els bStats
+  wwctGUINewTranslationSource: Escull una llengua d'origen
+  wwcConfigConnectionFailed: No s'ha pogut connectar a {0} Assegura't que les teves
+    credencials i tallafocs estiguin configurades correctament!
+  wwcConfigEnabledbStats: bStats activat.
+  wwctGUIMainMenuPlayer: Menú de traducció de {0}
+  wwctGUIBookButton: Commuta la traducció del llibre
+  wwcLangDetected: Idioma detectat {0}.
+  wwcBookTranslateStart: Traduir el llibre de destinació...
+  wwcConfigDisabledbStats: bStats discapacitats.
+  wwctsOffSender: Traducció de signes desactivada.
+  wwcUpdaterParserFailed: No s'ha pogut analitzar les dades d'actualització de Github.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: La clau secreta actual és {0}.
+    si us plau introdueixi una clau secreta per Amazon, o escrigui 0 per tornar enrere.
+  wwctbOffSender: Traducció de llibres desactivats.
+  wwcConfigGUIAmazonTranslateButton: Amazon Traduir
+  wwcConfigConversationLangSuccess: Idioma del plugin ha canviat correctament.
+  wwcsSuccessfulTranslations: 'Traduccions reeixides: {0}'
+  wwcConfigConversationTranslationCacheInput: El límit actual de la memòria cau de
+    traducció és {0} frases. Escriviu res més gran que 0 per establir un nou valor,
+    o escriviu 0 per desactivar la memòria cau de traducció. Escriviu res menys que
+    0 per tornar enrere.
+  wwctbOffTarget: Traducció de llibres desactivada per a {0}.
+  wwcConfigGUIGeneralSettings: Configuració general
+  wwcInvalidLang: Llenguatge no vàlid a la vostra config.yml. Per defecte a en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: regió d'Amazon s'ha establert
+    amb èxit.
+  wwcConfigRateLimitEnabled: Límit de tarifa global activat i establert a {0} segons.
+  wwcConfigGUILangButton: Canviar l'idioma del connector
+  wwctGUISignButton: Commuta la traducció de signes
+  wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
+    l'última versió, {0}.
+  wwcConfigGUINextPageButton: Pàgina següent
+  wwcConfigInvalidTranslatorSettings: Configuració del traductor no vàlid! Si us plau,
+    habiliteu només un traductor a la vostra config.yml.
+  wwcConfigGUIQuitButton: Sortir i desar els canvis
+  wwctPlayerNotFound: Jugador {0} he trobat.
+  wwcConfigGUIAmazonTranslateRegionButton: Canviar la regió d'Amazon
+  wwcConfigConversationLangInvalid: Codi d'idioma no vàlid!
+  wwcConfigGUIWatsonAPIKeyButton: Canviar la clau de l'API de Watson
+  wwcEnabled: Habilitada la versió WorldwideChat {0}.
+  wwctbOnSender: S'ha habilitat la traducció de llibres. Feu clic amb el botó dret
+    mentre manteniu un llibre per traduir-lo!
+  wwcListenersInitialized: Els oients inicialitzats.
+  wwcConfigGUIPluginUpdateChatButton: Enviar recordatori de xat per a actualitzacions
+    de Plugin
+  wwcConfigConversationSendTranslationChatSuccess: Recordatori de xat de traductor
+    actiu es va activar correctament.
+  wwctsOffTarget: Traducció de signes desactivada per {0}.
+  wwcUpdaterConnectionFailed: No s'ha pogut comprovar si hi ha actualitzacions més
+    recents a Github.
+  watsonNotFoundExceptionNotification: No es pot traduir la vostra entrada més.
+  wwcConfigConversationWatsonAPIKeyInput: La clau de l'API actual és {0}. introduïu
+    una clau d'API per a Watson, o escriviu 0 per tornar enrere.
+  wwctGUIStopButton: Deixar de traduir
+  wwcgTranslationStopped: La traducció global de xat s'ha aturat.
+  wwcUpdaterFutureDate: Aquesta instància de WorldwideChat té una versió més gran
+    que l'última pública.
+  wwcConfigConversationPrefixSuccess: Prefix ha canviat correctament.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Canviar la clau de l'API del Traductor
+  wwcSignDeletedOrTooLong: 'El signe de destinació s''ha suprimit o la traducció ha
+    estat massa llarga. Traducció:'
+  wwctsOnTarget: Signar la traducció activada per {0}.
+  wwcConfigCacheDisabled: Traductor cau desactivat.
+  wwcConfigConversationWatsonURLInput: L'URL actual és {0}. introduïu un URL de servei
+    per a Watson, o escriviu 0 per tornar enrere.
+  wwcBookDone: Llibre traduït amb èxit.
+  wwctsOnSender: S'ha habilitat la traducció de signes. Feu clic amb el botó dret
+    sobre un signe per traduir-lo!
+  watsonColorCodeWarning: L'ús de codis de color pot donar resultats imprevisibles.
+  wwctGUITranslationButton: Començar a traduir
+  wwctGUIAutoDetectButton: Detecta automàticament l'idioma d'origen
+  wwcUpdaterUpToDate: WorldwideChat està al dia!
+  wwcConfigConversationAmazonTranslateRegionInput: La regió actual és {0}. si us plau,
+    introduïu una regió per a Amazon, o escriviu 0 per tornar enrere.
+  wwcNoConsole: Aquesta ordre només pot ser executada per un jugador.
+  wwcInitializationFail: No s'ha pogut inicialitzar WorldwideChat.
+  wwcrSuccess: S'ha recarregat amb èxit WorldwideChat.
+  wwcPlayerNotFound: Jugador {0} he trobat.
+  wwcUpdaterOutOfDateChat: WorldwideChat està fora de data. Si us plau, actualitzi
+    a l'última versió.
+  wwcConfigConversationRateLimitSuccess: Límit de tarifa establert amb èxit.
+  wwcConfigConversationWatsonURLSuccess: Watson URL establert correctament.
+  wwctbPlayerNotFound: Jugador {0} o bé no es troba, o no és un traductor actiu.
+  wwcConfigConversationTranslationCacheSuccess: Límit de memòria cau de traducció
+    establert correctament.
+  wwctInvalidArgs: Arguments no vàlids proporcionats!
+  wwcConfigGUIPrefixButton: Canviar el prefix del connector
+  wwctSameLangError: No es pot traduir a la mateixa llengua!
+  wwctGUINewTranslationTarget: Trieu una llengua de destinació
+  wwcConfigConnectionSuccess: Connectat amb èxit a {0}!
+  wwcConfigGUIGoogleTranslateButton: Traduir per Google
+  wwcConfigGUIPreviousPageButton: Pàgina anterior
+  wwcConfigGUITranslatorCacheButton: Canviar el límit de la memòria cau
+  wwcConfigConversationbStatsSuccess: S'ha modificat correctament bStats.
+  wwcSignDone: Signar traduït correctament.
+  wwcConfigInvalidPrefixSettings: No s'ha pogut llegir el vostre prefix. Utilitzant
+    el valor per defecte...
+  wwcConfigRateLimitInvalid: Límit de taxa incorrecte establert a config.yml. Per
+    defecte a 0 segons...
+  wwcSignTranslateStart: Traduint el signe objectiu...
+  wwcConfigGUIChatSettings: Configuració del xat
+  wwcConfigGUIWatsonURLButton: Canviar l'URL del servei Watson
+  wwcConfigConversationUpdateCheckerSuccess: Actualitza el retard corrector establert
+    correctament.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint
+    de {0} a {1}.
+  wwcConfigGUITranslatorSettings: Configuració del traductor
+  wwcConfigConversationGoogleTranslateAPIKeyInput: La clau de l'API actual és {0}.
+    introduïu una clau d'API per a Google Translate, o escriviu 0 per tornar enrere.
+  wwcConfigConversationRateLimitInput: El límit de tarifa global actual per traducció
+    és {0} segons. Escriviu qualsevol cosa més gran que 0 per establir un valor nou,
+    o escriviu 0 per inhabilitar el límit. Escriviu res menys que 0 per tornar enrere.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Configuració de claus API de
+    Google Translate amb èxit.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Canviar la clau secreta Amazon
+  wwcVersion: WorldwideChat, versió
+  wwcsAttemptedTranslations: 'Intent de traduccions: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon conjunt de claus secretes
+    amb èxit.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API conjunt de claus amb èxit.
+  wwcRateLimit: Les vostres traduccions són limitades a la tarifa. Espereu un altre
+    {0} segons.
+  wwcConfigCacheEnabled: La memòria cau del traductor activat i s'estableix com a
+    límit de {0}.
+  wwctGUIExistingTranslationButton: Sobreescriu la sessió de traducció actual
+  wwcUserDataReloaded: Carregat totes les dades d'usuari desades.
+  wwcConfigGUISendTranslationChatButton: Enviar recordatori de xat a traductor actiu
+    en iniciar sessió
+  wwcsLastTranslationTime: 'Últim temps de traducció (reeixit): {0}'
+  wwctbNotATranslator: No ets un traductor actiu! Assegureu-vos que heu configurat
+    això amb /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: La clau d'accés actual és {0}.
+    si us plau introdueixi una clau d'accés per a Amazon, o escrigui 0 per tornar
+    enrere.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Tecla d'accés d'Amazon conjunt
+    amb èxit.
+  wwcConfigBadUpdateDelay: Retard d'actualització no vàlid establert a config.yml.
+    Per defecte a 86400 segons...
+  wwctrlRateLimitOffSender: Desactiveu el vostre límit de tarifa.
+  wwctrlRateLimitAlreadyOffTarget: El límit de tarifa de {0} ja està desactivat.
+  wwctrlPlayerNotFound: Jugador {0} o bé no es troba, o no és un traductor actiu.
+  wwctrlRateLimitSetSender: Establiu el vostre límit de tarifa a {0} segons.
+  wwctrlRateLimitOffTarget: Desactiveu el límit de taxa de {0}.
+  wwctrlNotATranslator: No ets un traductor actiu! Assegureu-vos que heu configurat
+    això amb /wwct.
+  wwctrlRateLimitAlreadyOffSender: El seu límit de tarifa ja està desactivat.
+  wwctGUIRateButton: Estableix límit de velocitat
+  wwctGUIConversationRateLimit: El límit de tarifa per traducció és actualment {0}
+    segons. Escriviu qualsevol cosa més gran que 0 per establir un valor nou, o escriviu
+    0 per inhabilitar el límit. Escriviu res menys que 0 per tornar enrere.
+  wwctGUITargetPlayerNull: El reproductor de destinació desconnectat del servidor.
+  wwcConfigConversationSyncUserDataDelayInput: El retard actual per sincronització
+    de dades d'usuari és {0} segons. Escriviu qualsevol cosa més gran que 10 per establir
+    un valor nou, o qualsevol cosa menys de 10 per tornar enrere.
+  wwcConfigGUISyncUserDataButton: Canvi de dades de l'usuari de retard de sincronització
+  wwcConfigSyncDelayEnabled: Retard per sincronització de dades d'usuari establert
+    a {0} segons.
+  wwcConfigConversationSyncUserDataDelaySuccess: Retard de sincronització de dades
+    d'usuari establert correctament.
+  wwcConfigSyncDelayInvalid: Retard de sincronització de dades d'usuari no vàlid establert
+    a config.yml. Per defecte a 7200 segons...
+  wwcConfigCacheInvalid: Mida de la memòria cau traductor no vàlid. Per defecte 10...
+  wwcInventoryErrorPlayer: S'ha detectat un error amb la IGU. S'ha enviat un registre
+    a la consola.
+  wwcInventoryError: S'ha detectat un error amb la IGU de l'usuari {0}, si us plau,
+    informeu d'aquest problema al desenvolupador
+  wwctiOffTarget: Traducció d'elements desactivats per {0}.
+  wwctiOffSender: Traducció d'elements desactivats.
+  wwcItemTranslateTitleStock: No es pot traduir els noms d'element predeterminats.
+  wwctGUIItemButton: Commuta la traducció de l'element
+  wwcItemTranslateTitleDone: Títol de l'article traduït amb èxit.
+  wwcGUITempItem: Pantalla de l'article
+  wwcItemTranslateStart: La traducció de l'element objectiu...
+  wwcBookTranslateTitleSuccess: 'Títol del llibre traduït: {0}'
+  wwctiOnSender: S'ha habilitat la traducció d'elements. Feu clic amb el botó dret
+    del ratolí amb un element a la vostra mà principal per traduir-lo!
+  wwcItemTranslateLoreStart: Traduint la tradició de l'objecte objectiu...
+  wwcItemTranslateLoreDone: Lore article traduït amb èxit.
+  wwctiOnTarget: La traducció d'elements activada per a {0}.
+  wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
+    això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
+  wwcConfigGUIEachTranslatorSettings: '{0} Configuració'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: WorldwideChat no condona l'ús de /reload. Si us plau, procedeixi
+    amb precaució.
+  wwcConfigEnabledDebugMode: Mode DEBUG activat. Si no sou un desenvolupador o un
+    solucionador de problemes, haureu d'desactivar-ho.
+  wwcTranslatorErrorThresholdReached: S'ha arribat el llindar d'error. Aquest connector
+    ara es tornarà a carregar, i desactivar tots els traductors.
+  wwcConfigErrorLimitEnabled: Límit d'error del traductor establert a {0}.
+  wwcTranslatorError: S'ha produït un problema en intentar la traducció. Torneu-ho
+    a provar.
+  wwcConfigErrorLimitInvalid: Límit d'error del traductor no vàlid establert a config.yml.
+    Per defecte 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Si us plau, comproveu errorLog.txt
+    al WorldwideChat plugin carpeta per a més informació.
+  wwctInvalidInputLangCode: 'Codi d''idioma d''entrada no vàlid proporcionat! Codis
+    vàlids: {0}'
+  wwctInvalidOutputLangCode: 'Codi d''idioma de sortida no vàlid proporcionat! Codis
+    vàlids: {0}'
+  wwctGUISourceTranslationSelected: Heu seleccionat aquest idioma.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Eliminar Anul·lació
+  wwcConfigConversationOverrideTextChange: Si us plau, escriviu un missatge nou per
+    a aquesta anul·lació, o escriviu 0 per tornar enrere. Recordeu que heu d'incloure
+    les variables que comencin amb signes de percentatge que veieu al missatge original.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Aquest idioma ja està actiu!
+  wwcConfigGUIChatMessagesPossibleOverrides: Escull un missatge
+  wwcConfigGUIChatMessagesModifyOverride: Modifica Anul·lació existent
+  wwcConfigConversationOverrideDeletionSuccess: S'ha suprimit la substitució de missatges
+    personalitzats.
+  wwcConfigGUIChatMessagesDeadOverride: Aquesta anul·lació no és vàlida o s'ha suprimit
+    el missatge original. Hauríeu d'esborrar això.
+  wwcConfigGUIMessagesAlreadyOverriden: Ja teniu una anul·lació per a aquest missatge!
+  wwcConfigGUIChatMessagesOverrideNewButton: Afegir una nova anul·lació
+  wwcConfigGUIMessagesOverrideCustomLabel: Nou missatge
+  wwcConfigConversationOverrideTextChangeSuccess: Nou missatge establert correctament.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Canviar el text existent
+  wwcExampleMessage: Aquest és un missatge fictífer, i està destinat a ser anul·lat
+    com a exemple.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Missatge original
+  wwcConfigGUIDebugModeButton: Commuta el mode de depuració
+  wwcConfigConversationDebugModeSuccess: Amb èxit canviar el mode de depuració.
+  wwcConfigGUIErrorLimitButton: Canviar el límit d'error del traductor
+  wwcConfigConversationErrorLimitSuccess: Límit d'error establert correctament.
+  wwcEntityTranslateStart: Traduint entitat objectiu...
+  wwcConfigGUICharacterLimitButton: Canviar el límit de caràcters del missatge
+  wwcConfigMessageCharLimitInvalid: Límit no vàlid per missatge establert a config.yml.
+    Per defecte, 255 caràcters...
+  wwcConfigConversationCharacterLimitSuccess: Límit de caràcters establert correctament.
+  wwcteOnTarget: S'ha habilitat la traducció d'entitats per {0}.
+  wwcEntityTranslateDone: 'Nom de l''entitat traduïda: {0}'
+  wwcEntityTranslateNoName: Entitat no té un nom personalitzat.
+  wwcConfigConversationErrorLimitInput: El límit d'error actual per a cada traductor
+    és {0} Escriviu qualsevol cosa més gran que 0 per establir un valor nou, o escriviu
+    qualsevol cosa menys que o igual a 0 per tornar enrere.
+  wwcConfigGUIGlobalRateLimitButton: Canvi Límit de Tarifa Global
+  wwcteOnSender: S'ha habilitat la traducció d'entitat. Feu clic amb el botó dret
+    sobre una entitat per traduir el seu nom!
+  wwcConfigGUIResponseLimitButton: Canviar el temps d'espera de resposta del traductor
+  wwcConfigMessageCharLimitEnabled: Límit de caràcters per missatge establert a {0}
+    caràcters.
+  wwcteOffTarget: Traducció d'entitats desactivada per {0}.
+  wwcCharLimit: El teu missatge és massa llarg! Si us plau, assegureu-vos que el missatge
+    té menys de {0} caràcters de longitud.
+  wwcteOffSender: Entitat de traducció desactivada.
+  wwctGUIEntityButton: Commuta la traducció de l'entitat
+  wwctrlRateLimitBadInt: El seu límit de tarifa no és un nombre enter vàlid.
+  wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari {0} estava
+    intentant la seva traducció. Si us plau, comproveu errorLog.txt per a més detalls.
+  wwctGUIChatButton: Toggle Traducció de Xat
+  wwcrBegin: Recarregar WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: La sessió de traducció per {0} s'ha aturat.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint,
+    però teniu una sessió de traducció activa de {0} a {1}.
+  wwctCannotTranslateConsole: No podeu iniciar una sessió de traducció per a la consola!
+  wwcOnJoinTranslationNotificationSourceLang: Teniu una sessió de traducció activa
+    des de {0} a {1}.
+  wwctTranslationStopped: La vostra sessió de traducció s'ha aturat.
+  wwctAutoTranslateStart: Iniciar una nova sessió de traducció a {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Teniu una sessió de traducció activa
+    a {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: El xat global s'està
+    traduint, però teniu una sessió de traducció activa a {0}.
+  wwcConfigGUIChangesNotSaved: Els canvis no entraran en vigor fins que feu clic a
+    la barrera vermella de /wwcc.
+  wwctciOffSender: Traducció de xat entrant desactivat.
+  wwctGUIChatIncomingButton: Alterna la traducció de xat entrant
+  wwctcoOffSender: Traducció de xat sortint desactivat.
+  wwctcoOnSender: Traducció de xat sortint habilitat. Qualsevol cosa que diguis es
+    traduirà!
+  wwctciOnSender: Traducció de xat entrant habilitat. Qualsevol cosa que rebi es traduirà!
+  wwctGUIChatMenu: Commuta el menú de traducció de xat
+  wwctcoOnTarget: Traducció de xat sortint habilitada per {0}.
+  wwctcoOffTarget: S'ha desactivat la traducció de xat sortint per {0}.
+  wwctGUIChatOutgoingButton: Alterna la traducció del xat sortint
+  wwctciOnTarget: Traducció de xat entrant habilitada per {0}.
+  wwctciOffTarget: S'ha desactivat la traducció de xat entrant per {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Xat entrant original adjunt
+    a la traducció com a text en passar el cursor s'ha commogut correctament.
+  wwcConfigGUISendIncomingHoverTextChatButton: Afegir missatges entrants originals
+    com a text del cursor
+  wwctGUIExistingChatOutgoingEnabled: 'Traducció de xat sortint Habilitada: {0}'
+  wwctGUIExistingTranslationInput: 'Idioma d''entrada: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Traducció de xat entrant Habilitada: {0}'
+  wwctGUIExistingTranslationOutput: 'Idioma de sortida: {0}'
+  wwcTranslatorAttempt: Intentar connectar-se al traductor en config.yml... (Intentat
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Jugador {0} tingut el seu temps d'espera més recent
+    sol·licitud. Aquest error no és fatal, però s'ha de tornar a carregar WorldwideChat
+    si continua succeint.
+  wwcGUIPageNumber: 'Número de pàgina: {0}'
+  wwcConfigYAMLFallback: Caient de nou a YAML...
+  wwcConfigGUIToggleSQLButton: Commuta SQL
+  wwcConfigConversationToggleSQLSuccess: SQL es va torgar amb èxit. Torna a carregar
+    perquè el canvi tingui efecte.
+  wwcConfigConversationGoogleTranslateToggleSuccess: S'ha completat correctament el
+    Traduït per Google Translate. Torna a carregar perquè el canvi tingui efecte.
+  wwcConfigYAMLDefault: Per defecte a YAML per a l'emmagatzematge de dades.
+  wwcConfigGUISQLMenuButton: Canviar la configuració SQ
+  wwcConfigConversationWatsonTranslateToggleSuccess: S'ha completat amb èxit Watson
+    Traduir. Torna a carregar perquè el canvi tingui efecte.
+  wwcConfigGUIToggleGoogleTranslateButton: Commuta Traduït per Google
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traduir
+  wwcConfigGUIToggleAmazonTranslateButton: Alterna Amazon Traduir
+  wwcConfigGUIStorageSettings: Configuració d'emmagatzematge
+  wwcConfigConversationAmazonTranslateToggleSuccess: S'ha completat amb èxit Amazon
+    Traduir. Torna a carregar perquè el canvi tingui efecte.
+  wwcConfigGUISQLPortButton: Canviar port SQL
+  wwcConfigGUISQLOptionalArgsButton: Canviar arguments opcionals SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL per a SQL es va torgar amb èxit.
+  wwcConfigConversationSQLPortInput: El port actual és {0} Escriviu qualsevol cosa
+    que no sigui 0 per establir un port nou, o escriviu 0 per tornar enrere.
+  wwcConfigGUISQLPasswordButton: Canviar contrasenya SQL
+  wwcConfigConversationSQLHostnameSuccess: S'ha canviat correctament el nom d'amfitrió
+    SQL.
+  wwcConfigConversationSQLHostnameInput: El nom d'amfitrió actual és {0} Escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0
+    per tornar enrere.
+  wwcConfigGUISQLHostnameButton: Canviar SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: S'ha canviat correctament els arguments
+    SQL opcionals.
+  wwcConfigConversationSQLPasswordSuccess: S'ha canviat correctament la contrasenya
+    de SQL.
+  wwcConfigConversationSQLPasswordInput: La contrasenya actual és {0} Escriviu qualsevol
+    cosa que no sigui 0 per establir una nova contrasenya, o escriviu 0 per tornar
+    enrere.
+  wwcConfigGUIToggleSQLSSLButton: Commuta SSL SQL
+  wwcConfigConversationSQLUsernameSuccess: S'ha canviat correctament el nom d'usuari
+    de SQL.
+  wwcConfigConversationSQLUsernameInput: El nom d'usuari actual és {0} Escriviu qualsevol
+    cosa que no sigui 0 per establir un nou nom d'usuari, o escriviu 0 per tornar
+    enrere.
+  wwcConfigConversationSQLPortSuccess: S'ha canviat correctament el port SQL.
+  wwcConfigGUISQLUsernameButton: Canviar el nom d'usuari SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Els arguments opcionals s'esborren
+    correctament.
+  wwcConfigConversationSQLOptionalArgsInput: 'Els arguments SQL opcionals actuals
+    són: {0} Escriviu els arguments separats per una coma (clau=valor, clau2=valor2),
+    o escriviu clar per netejar les args actuals, o escriviu 0 per tornar enrere.'
+  wwcConfigConversationSQLDatabaseNameInput: El nom de la base de dades actual és
+    {0} Escriviu qualsevol cosa que no sigui 0 per establir un nou nom de base de
+    dades, o escriviu 0 per tornar enrere.
+  wwcConfigGUISQLDatabaseNameButton: Canviar la base de dades
+  wwcConfigConversationSQLDatabaseNameSuccess: S'ha canviat correctament el nom de
+    base de dades SQL.
+  wwcConfigConversationFatalAsyncAbort: El temps d'espera actual per avortar totes
+    les tasques asínices {0} segons. Escriviu qualsevol cosa per sobre de 7 per establir
+    un nou temps d'espera, o qualsevol cosa que hi hagi a sota per tornar enrere.
+  wwcConfigConversationFatalAsyncSuccess: Async temps d'espera de tasques establert
+    amb èxit.
+  wwcConfigGUIFatalAsyncAbortButton: Canviar el temps d'espera de la tasca async
+  libreHttp400: Mal petició enviada a Libre Translate! A menys que vostè està fent
+    alguna cosa que vostè no ha, vostè no ha d'aconseguir això. Poseu-vos en contacte
+    amb el desenvolupador!
+  wwcConfigGUILibreTranslateApiKeyButton: Canvia lliure Traduir API Key
+  libreHttp403: Falta Libre Translate API Key, o vostè està prohibit des del servidor!
+  wwcConfigConversationLibreURLSuccess: URL lliure configurat correctament.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clau API actual és {0} Si us
+    plau, introduïu una clau API per a Libre, o escriviu 0 per tornar enrere.
+  wwcConfigGUILibreTranslateButton: Libre Traduir
+  libreHttp429: No hi ha confiança a causa del límit de velocitat del servidor.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traduir
+  wwcConfigConversationLibreTranslateToggleSuccess: Successivament toggled Libre Translate.
+    Torneu a carregar perquè els canvis tinguin efecte.
+  wwcConfigConversationLibreTranslateApiKeySuccess: S'ha establert correctament la
+    tecla API lliure.
+  wwcConfigConversationLibreURLInput: L'URL actual és {0} Si us plau, introduïu un
+    URL per a Libre, o escriviu 0 per tornar enrere.
+  libreHttpUnknown: 'Error http desconegut: {0}'
+  wwcConfigGUILibreTranslateURLButton: Canvia l'URL de traducció lliure
+  wwcConfigConnectionFail: No s'ha pogut connectar a {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: S'ha canviat correctament el nom
+    de la base de dades MongoDB.
+  wwcConfigGUIMongoHostnameButton: Canviar MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: La contrasenya actual és {0} Escriviu qualsevol
+    cosa que no sigui 0 per establir una nova contrasenya, o escriviu 0 per tornar
+    enrere.
+  wwcConfigConversationMongoPortInput: El port actual és {0}. escriviu qualsevol cosa
+    que no sigui 0 per establir un port nou, o escriviu 0 per tornar enrere.
+  wwcConfigConversationToggleMongoSuccess: MongoDB va toggled amb èxit. Torneu a carregar
+    perquè el canvi entri en vigor.
+  wwcConfigConversationMongoHostnameInput: El nom d'amfitrió actual és {0} Escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0
+    per tornar enrere.
+  wwcConfigConversationMongoHostnameSuccess: S'ha canviat correctament el nom d'amfitrió
+    de MongoDB.
+  wwcConfigGUIMongoMenuButton: Canviar la configuració MongoDB
+  wwcConfigGUIToggleMongoButton: Commuta MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: El nom actual de la base de dades és
+    {0}. escriviu qualsevol cosa que no sigui 0 per establir un nou nom de base de
+    dades, o escriviu 0 per tornar enrere.
+  wwcConfigConversationMongoOptionalArgsInput: 'Els arguments opcionals actuals de
+    MongoDB són: {0}. escriviu arguments separats per una coma (key=value, key2=value2),
+    o escriviu clear per esborrar els args actuals, o escriviu 0 per tornar enrere.'
+  wwcConfigGUIMongoDatabaseNameButton: Canvi de base de dades MongoDB
+  wwcConfigConversationMongoUsernameInput: El nom d'usuari actual és {0}. escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'usuari, o escriviu 0 per
+    tornar enrere.
+  wwcConfigGUIMongoOptionalArgsButton: Canviar arguments opcionals MongoDB
+  wwcConfigConversationMongoUsernameSuccess: S'ha canviat correctament el nom d'usuari
+    de MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: S'ha canviat correctament la contrasenya
+    MongoDB.
+  wwcConfigConversationMongoPortSuccess: S'ha canviat correctament el port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Canviar el nom d'usuari MongoDB
+  wwcConfigGUIMongoPasswordButton: Canviar contrasenya MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: S'ha canviat correctament els arguments
+    opcionals de MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Els arguments opcionals esborrats
+    amb èxit.
+  wwcConfigGUIMongoPortButton: Canviar el port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Conjunt de temps d'espera asínc fatal no vàlid.
+    Per defecte a 10 segons...
+  libreHttp500: El parell d'idiomes d'entrada i sortida seleccionat no és compatible.
+    Si us plau, tria un conjunt d'idiomes diferent!
+  wwcConfigGUIDeepLTranslateButton: Commuta DeepL Traduir
+  wwcConfigConversationDeepLTranslateToggleSuccess: Successivament Toggled DeepL Translate.
+    Torneu a carregar perquè els canvis tinguin efecte.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Canviar DeepL Traduir API Key
+  wwcConfigGUIToggleDeepLTranslateButton: Commuta DeepL Traduir
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API clau establerta correctament.
+  wwcConfigConversationDeepLTranslateApiKeyInput: La clau API actual és {0} Si us
+    plau, introduïu una clau API per DeepL, o escriviu 0 per tornar enrere.
+  wwcConfigErrorsToIgnoreSuccess: S'ha registrat correctament els errors del traductor
+    per ignorar.
+  wwcConfigErrorsToIgnoreInvalid: Errors del traductor no vàlids per ignorar establerts
+    en config.yml. Registrar els valors predeterminats...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: S'ha canviat correctament els errors del
+    traductor per ignorar frases.
+  wwcConfigGUIIgnoreErrorsButton: Canviar els errors per ignorar
+  wwcConfigConversationIgnoreErrorsInput: 'La llista actual de frases en errors del
+    traductor a ignorar són: {0}. escriu arguments separats per una coma (key=value,
+    key2=value2), o escriviu clear per esborrar els args actuals, o escriviu 0 per
+    tornar enrere. Addicionalment, escriure “*” farà que el connector no comprovi
+    cap error del traductor.'
+  wwcConfigConversationIgnoreErrorsCleared: Errors del traductor per ignorar frases
+    esborrades amb èxit.
+  wwcSupportedServer: Inicialitzant WorldwideChat per {0}...
+  wwcSupportedVersion: Habilitació de característiques per a la versió {0}...
+  wwcBadPerms: 'No teniu els permisos necessaris per executar aquesta comanda: {0}'
+  wwcsIsActiveTranslator: 'És traductor actiu: {0}'
+  wwcsActiveTransPrevRate: 'Temps límit de tarifa anterior: {0}'
+  wwcsActiveTransSaved: 'Desat al disc: {0}'
+  wwcsActiveTransIncoming: 'Traducció del xat entrant: {0}'
+  wwcsActiveTransOutLang: 'Idioma de sortida: {0}'
+  wwcsActiveTransInLang: 'Idioma d''entrada: {0}'
+  wwcsActiveTransBook: 'Traducció del llibre: {0}'
+  wwcsActiveTransSign: 'Signe de traducció: {0}'
+  wwcsActiveTransUUID: 'UID: {0}'
+  wwcsActiveTransRateLimit: 'Límit de tarifes: {0}'
+  wwcsActiveTransColorWarning: 'Avís de color rebut: {0}'
+  wwcsActiveTransSignWarning: 'Avís d''edició del signe rebut: {0}'
+  wwcsTitle: Registre de {0}
+  wwcsActiveTransOutgoing: 'Traducció del xat sortint: {0}'
+  wwcsActiveTransItem: 'Article traduït: {0}'
+  wwcsActiveTransEntity: 'Entitat traduïdora: {0}'
+  wwctsWarning: La modificació dels signes està desactivada mentre esteu traduint
+    signes.
+  wwcConfigConversationAzureTranslateToggleSuccess: S'ha alternat amb èxit l'Azure
+    Translate. Torna a carregar perquè els canvis tinguin efecte.
+  wwcConfigGUIAzureTranslateButton: Tradueix Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Canviar la clau de l'API d'Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Canviar la regió de traducció d'Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: La regió Azure s'ha establert
+    amb èxit.
+  wwcConfigConversationAzureTranslateApiKeyInput: La clau de l'API actual és {0}.
+    Si us plau, introduïu una clau API per a Azure, o escriviu 0 per tornar enrere.
+  wwcConfigConversationAzureTranslateApiKeySuccess: S'estableix amb èxit la clau de
+    l'API d'Azure.
+  wwcConfigConversationAzureTranslateRegionInput: La regió actual és {0}. Si us plau,
+    introduïu una regió per a Azure, o escriviu 0 per tornar enrere.
+  wwcConfigGUIToggleAzureTranslateButton: Canvia la traducció d'Azure
+  wwcConfigGUISystranTranslateApiKeyButton: Canviar la clau de l'API de Traduir de
+    Systran
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Traduir
+  wwcConfigConversationSystranTranslateApiKeyInput: La clau de l'API actual és {0}.
+    Si us plau, introduïu una clau API per Systran, o escriviu 0 per tornar enrere.
+  wwcISOJSONFail: No es poden arreglar objectes d'idioma amb ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: S'ha alternat amb èxit el Systran
+    Translate. Torna a carregar perquè els canvis entrin en vigor.
+  wwcConfigConversationSystranTranslateApiKeySuccess: La clau de l'API de Systran
+    s'ha establert amb èxit.
+  wwcConfigGUISystranTranslateButton: Systran Tradueix
+  wwcrTransFail: S'ha tornat a carregar WorldwideChat però no s'ha pogut habilitar
+    un traductor.
+  wwcdCacheCleared: La memòria cau de traducció s'ha esborrat.
+  wwcdInvalidCmd: Arguments no vàlids!
+  systranHttpUnknown: 'Error http desconegut: {0}'
+  systranHttp400: Paràmetres dolents enviats a Systran. Pot ser un parell d'idiomes
+    dolent?
+  systranHttp500: Error intern del servidor des del punt final de Systran ({0}).
+  wwcInvalidStorageSession: '{0} està activat a la vostra configuració, però no s''estableix
+    una connexió. Si us plau, proveu de tornar a carregar per solucionar això, però
+    poseu-vos en contacte amb el desenvolupador si prèviament heu rebut un missatge
+    de connexió amb èxit de {0}.'
+  wwcConfigConversationPostgresDatabaseNameSuccess: S'ha canviat correctament el nom
+    de la base de dades PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Els arguments opcionals esborrats
+    correctament.
+  wwcConfigConversationPostgresPortInput: El port actual és {0}. Escriviu qualsevol
+    cosa que no sigui 0 per establir un port nou, o escriviu 0 per tornar enrere.
+  wwcConfigGUIPostgresUsernameButton: Canviar el nom d'usuari de PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: S'ha canviat correctament els
+    arguments opcionals de PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL per PostgreSQL es va canviar
+    correctament.
+  wwcConfigConversationPostgresPasswordSuccess: S'ha canviat correctament la contrasenya
+    PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: S'ha canviat correctament el port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: El nom d'usuari actual és {0}. Escriviu
+    qualsevol cosa que no sigui 0 per establir un nom d'usuari nou, o escriviu 0 per
+    tornar enrere.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL es va canviar amb èxit. Torna
+    a carregar perquè el canvi tingui efecte.
+  wwcConfigGUITogglePostgresButton: Canvia PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Canviar la contrasenya de PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Canviar els arguments opcionals de PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Canviar la configuració de PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: La contrasenya actual és {0}. Escriviu
+    qualsevol cosa que no sigui 0 per establir una contrasenya nova, o escriviu 0
+    per tornar enrere.
+  wwcConfigConversationPostgresHostnameInput: El nom actual del host és {0}. Escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0
+    per tornar enrere.
+  wwcConfigGUIPostgresPortButton: Canviar el port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: S'ha canviat satisfactòriament el
+    nom d'amfitrió PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Canviar el nom d'amfitrió PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: El nom de la base de dades actual
+    és {0}. Escriviu qualsevol cosa que no sigui 0 per establir un nom de base de
+    dades nou, o escriviu 0 per tornar enrere.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Els arguments opcionals actuals
+    del PostgreSQL són: {0}. Escriviu arguments separats per una coma (key=value,
+    key2=value2), o escriviu clear per esborrar els args actuals, o escriviu 0 per
+    tornar enrere.'
+  wwcConfigGUITogglePostgresSSLButton: Canviar el SSL de PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Canviar la base de dades PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: S'ha canviat correctament el nom d'usuari
+    de PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Configuració'
+  wwcConfigConversationPrefixInput: El prefix actual és {0}. Si us plau, escriviu
+    un de nou o escriviu 0 per tornar enrere.
+  wwcConfigConversationLangInput: 'L''idioma actual del connector és {0}. Si us plau,
+    introduïu un codi d''idioma vàlid o escriviu 0 per cancel·lar. Codis d''idioma
+    vàlids: {1}'
+  wwcdCacheSize: La mida de la memòria cau és actualment {0}, amb un límit de {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, inputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Començant una nova sessió de traducció de {0} a {1}.
+  wwctAutoTranslateStartOtherPlayer: Comença una nova sessió de traducció per {0}
+    a {1}.
+  wwctLangToLangStartOtherPlayer: Començant una nova sessió de traducció per {0} de
+    {1} a {2}.
+  wwcgLangToLangStart: Ara tradueix el xat global de {0} a {1}.
+  wwctrlRateLimitSetTarget: Estableix el límit de tarifa de {0} a {1} segons.
+  wwcTimeoutException: La seva sol·licitud va extingir. Si us plau, torneu a intentar.
+  wwctbNoMoreOldBooks: La traducció de llibres no funciona a la versió del servidor.
+    Si esteu en una versió més recent de Minecraft i obteniu aquest error, poseu-vos
+    en contacte amb el desenvolupador.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Trieu Localització
+  wwcConfigGUIMessagesOverridePickChatButton: Anul·lar els missatges per defecte del
+    connector
+  wwcConfigGUIChatMessagesOverrideSettings: Anul·lar missatges predeterminats ({0})
+  wwcConfigGUIMessagesServerLang: Aquest és l'idioma predeterminat del connector en
+    config.yml.
+  wwclLangStopped: La localització es va restablir al servidor per defecte.
+  wwclLangInvalid: '{0} no és una localització vàlida. Localitzacions suportades:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Restablir la localització de {0} a la predeterminada
+    del servidor.
+  wwclLangPlayerNotValid: '{0} no és un jugador vàlid.'
+  wwclLangChangedOtherPlayerSender: S'ha canviat la localització de {0} a {1}.
+  wwclLangChanged: La seva localització s'ha canviat a {0}.
+  wwcsLocalization: 'Localització: {0}'
+  wwclLangAlreadyStopped: No teniu un conjunt de localització.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} no té un conjunt de localització.'
+  wwctGUILocalizeExistingValue: 'Localització actual: {0}'
+  wwctGUILocalizationButton: Estableix la localització
+  wwctGUILocalizeStopButton: Restablir la localització a predeterminat del servidor
+  wwctGUILocalizeTitle: Menú de localització
+  wwctGUISourceSameLang: Aquest idioma seria el mateix que el vostre idioma d'origen.
+  wwcConfigGUICurrentPlayerLang: Aquesta és la teva localització actual.
+  wwctGUILocalizationSameAsServer: Aquesta és la localització predeterminada per WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Aquest idioma ja està actiu a nivell
+    mundial!
+  wwcrStorageTranslatorFail: Va recarregar WorldwideChat però no va aconseguir habilitar
+    un traductor i connectar-se amb la configuració d'emmagatzematge.
+  wwcrStorageFail: Es va tornar a carregar WorldwideChat i va activar amb èxit un
+    traductor, però la configuració d'emmagatzematge no va fallar a connectar-se.
+  wwcConfigPersistentCacheInvalid: Entrada de memòria cau persistent no vàlida a config.yml.
+    Per defecte de fals...
+  wwcConfigGUIPersistentCacheButton: Canvia la memòria cau persistent
+  wwcConfigConversationPersistentCacheSuccess: La memòria cau persistent es va canviar
+    amb èxit.
+  wwcConfigPersistentCacheEnabled: Les dades de la memòria cau persistiran en totes
+    les recàrregues.
+  wwcConfigConversationCharacterLimitInput: El límit actual de caràcters per missatge
+    és de caràcters {0}. Escriviu qualsevol cosa superior a 0 (però inferior a 256)
+    per establir un valor nou, o escriviu 0 per tornar enrere.
+  wwcdOutdatedSQLStruct: Sembla que una o més de les vostres taules MySQL o PostgreSQL
+    tenen un format incorrecte/obsolet. S'ha imprès més informació verbosa sobre aquest
+    problema a la vostra consola; és possible que pugueu solucionar-ho manualment.
+  wwcdSQLAllSet: Les vostres taules MySQL/PostgreSQL estan correctament formatades.
+  wwcdColumnBadType: La columna {0} de la taula {1} té tipus {2} però s'espera el
+    tipus {3}.
+  wwcdColumnMissing: Falta la columna {0} a la taula {1}.
+  wwcdGoodTable: La taula {0} ({1}) és el format correcte.
+  wwcdBadTable: La taula {0} no es troba a les definicions internes. Poseu-vos en
+    contacte amb el desenvolupador.
+  wwcOldDatabaseStruct: 'La base de dades escollida té una configuració incorrecta
+    de la taula. Escriviu l''ordre següent per obtenir més informació: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Límit de taxa actual: {0} segons'
+

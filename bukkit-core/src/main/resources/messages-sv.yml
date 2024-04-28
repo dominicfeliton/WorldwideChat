@@ -592,4 +592,11 @@ Messages:
   wwcOldDatabaseStruct: 'Den valda databasen har en felaktig tabellinställning. Skriv
     följande kommando för mer information: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Nuvarande hastighetsgräns: {0} sekunder'
+  wwcConfigGUIVaultSupportButton: Växla stöd för Vault
+  wwcConfigConversationVaultSupportSuccess: Valvstöd växlades framgångsrikt.
+  wwcVaultEnabled: Valvstöd har aktiverats.
+  wwcVaultFoundButDisabled: Valv hittades, men inget befintligt chattplugin har registrerats.
+    Inaktiverar stöd för Vault...
+  wwcConfigGUIToggleRestartRequired: En fullständig serveromstart krävs för att tillämpa
+    den här inställningen.
 

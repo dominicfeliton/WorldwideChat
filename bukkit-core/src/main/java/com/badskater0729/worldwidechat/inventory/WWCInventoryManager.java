@@ -148,11 +148,11 @@ public class WWCInventoryManager extends InventoryManager {
 		}));
 	}
 	
-	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName) {
-		genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, new ArrayList<>());
+	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, boolean serverRestartRequired) {
+		genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, new ArrayList<>(), serverRestartRequired);
 	}
 	
-	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, List<String> configValsToDisable) {
+	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, List<String> configValsToDisable, boolean serverRestartRequired) {
 		ItemStack button = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean(configValueName)) {
 			button = XMaterial.EMERALD_BLOCK.parseItem();
@@ -163,7 +163,11 @@ public class WWCInventoryManager extends InventoryManager {
 		buttonMeta.setDisplayName(ChatColor.GOLD + refs.getMsg(configButtonName, player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
+			if (!serverRestartRequired) {
+				main.addPlayerUsingConfigurationGUI(player);
+			} else {
+				refs.sendFancyMsg("wwcConfigGUIToggleRestartRequired", new String[]{}, "&e", player);
+			}
 			main.getConfigManager().getMainConfig().set(configValueName,
 					!(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
             for (String eaKey : configValsToDisable) {
@@ -176,7 +180,7 @@ public class WWCInventoryManager extends InventoryManager {
 							.color(NamedTextColor.GREEN)
 					.build();
 			refs.sendMsg(player, successfulChange);
-			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable);
+			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
 		}));
 	}
 	

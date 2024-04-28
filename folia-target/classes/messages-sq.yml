@@ -1,0 +1,618 @@
+Messages:
+  wwcgAutoTranslateStart: Tani përkthimi i bisedës globale në {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Biseda globale po përkthehet
+    në {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Ndrysho Amazon Access Key
+  wwcrFail: Dështoi për të rifreskuar WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Ndrysho Kontrolloni për përditësime V
+  wwcUpdaterFailedGeneric: E pamundur për të kontrolluar përditësimet WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Vonesa aktuale në kontrolluesin e përditësimit
+    është {0} sekonda. Lloji ndonjë gjë më të madhe se 10 për të vendosur një vlerë
+    të re, ose ndonjë gjë më pak se 10 për t'u kthyer.
+  wwctGUIMainMenuGlobal: Menuja Përkthimi Global
+  wwcConfigConversationPluginUpdateChatSuccess: Përditësimi i plugin chat kujtesë
+    toggled me sukses.
+  wwctbOnTarget: Përkthimi i librit aktivizohet për {0}.
+  wwcsNotATranslator: Ende nuk ka të dhëna të disponueshme për {0}.
+  wwcConfigGUIbStatsButton: Toggle bStats
+  wwctGUINewTranslationSource: Zgjidhni një gjuhë burimore
+  wwcConfigConnectionFailed: Dështoi lidhja me {0}. Sigurohuni që kredencialet dhe
+    firewall të jenë konfiguruar në mënyrë korrekte!
+  wwcConfigEnabledbStats: bStats aktivizuar.
+  wwctGUIMainMenuPlayer: Menuja e Përkthimit prej {0}
+  wwctGUIBookButton: Përkthimi i Librit Toggle
+  wwcLangDetected: Gjuha e zbuluar {0}.
+  wwcBookTranslateStart: Përkthimi i librit të synuar...
+  wwcConfigDisabledbStats: bStats me aftësi të kufizuara.
+  wwctsOffSender: Përkthimi i shenjave të paaf
+  wwcUpdaterParserFailed: Dështoi në analizimin e të dhënave të përditësimit nga Github.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Kyçi i tanishëm sekret është
+    {0}. Ju lutemi, futni një kyç sekret për Amazon, ose shkruani 0 që të ktheheni
+    mbrapsht.
+  wwctbOffSender: Libri përkthim i paaftë.
+  wwcConfigGUIAmazonTranslateButton: Amazon Translate
+  wwcConfigConversationLangSuccess: Gjuha plugin ndryshoi me sukses.
+  wwcsSuccessfulTranslations: 'Përkthime të suksesshme: {0}'
+  wwcConfigConversationTranslationCacheInput: Kufiri aktual i përkthimit cache është
+    {0} frazat. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë të
+    re, ose shkruani 0 për të çaktivizuar cache përkthimi. Lloji asgjë më pak se 0
+    për t'u kthyer.
+  wwctbOffTarget: Përkthimi i librit i paaftë për {0}.
+  wwcConfigGUIGeneralSettings: Konfigurimi i përgjithshëm
+  wwcInvalidLang: Gjuha e pavlefshme në config.yml tuaj. Defaulting to al...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Rajoni Amazon vendosur me sukses.
+  wwcConfigRateLimitEnabled: Kufiri i normës globale aktivizohet dhe caktohet në {0}
+    sekonda.
+  wwcConfigGUILangButton: Ndrysho gjuhën e plugin
+  wwctGUISignButton: Toggle Shenja Përkthimi
+  wwcUpdaterOutOfDate: WorldwideChat është i vjetëruar. Ju lutemi përditësoni versionin
+    më të fundit, {0}.
+  wwcConfigGUINextPageButton: Faqja Tjetër
+  wwcConfigInvalidTranslatorSettings: Cilësimet e pavlefshme të përkthyesit Ju lutemi
+    aktivizoni vetëm një përkthyes në config.yml tuaj.
+  wwcConfigGUIQuitButton: Dalja & Ruaj Ndryshimet
+  wwctPlayerNotFound: Lojtar {0} u gjet.
+  wwcConfigGUIAmazonTranslateRegionButton: Ndrysho rajonin Amazon
+  wwcConfigConversationLangInvalid: Kodi i pavlefshëm i gjuhës!
+  wwcConfigGUIWatsonAPIKeyButton: Ndrysho çelësin API Watson
+  wwcEnabled: Versioni i aktivizuar WorldwideChat {0}.
+  wwctbOnSender: Libri përkthim aktivizuar. Djathtas-klikoni duke mbajtur një libër
+    për ta përkthyer!
+  wwcListenersInitialized: Dëgjuesit e inicializuar.
+  wwcConfigGUIPluginUpdateChatButton: Dërgo Kujtesën e Chat për përditësime Plugin
+  wwcConfigConversationSendTranslationChatSuccess: Kujtesa e bisedës së përkthyesit
+    aktiv u tërhoqën me sukses.
+  wwctsOffTarget: Përkthimi i nënshkruar i çaktivizuar për {0}
+  wwcUpdaterConnectionFailed: Nuk mund të kontrolloni përditësimet më të fundit në
+    Github.
+  watsonNotFoundExceptionNotification: Në pamundësi për të përkthyer të dhëna tuaj
+    më tej.
+  wwcConfigConversationWatsonAPIKeyInput: Kyçi i tanishëm API është {0}. Ju lutemi,
+    futni një çelës API për Watson, ose shkruani 0 për t'u kthyer mbrapsht.
+  wwctGUIStopButton: Ndaloni Përkthimin
+  wwcgTranslationStopped: Përkthimi global i bisedave është ndalur.
+  wwcUpdaterFutureDate: Ky shembull i WorldwideChat ka një version më të madh se ai
+    i fundit publik.
+  wwcConfigConversationPrefixSuccess: Prefiksi ndryshoi me sukses.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Ndrysho Google Translate Key API
+  wwcSignDeletedOrTooLong: 'Shenja e synuar u fshi ose përkthimi ishte shumë i gjatë.
+    Përkthimi:'
+  wwctsOnTarget: Përkthimi i shenjave aktivizohet për {0}.
+  wwcConfigCacheDisabled: Cache Translator çaktivizuar.
+  wwcConfigConversationWatsonURLInput: URL-ja e tanishme është {0}. Ju lutemi, futni
+    një URL shërbimi për Watson, ose shkruani 0 për t'u kthyer prapa.
+  wwcBookDone: Libri i përkthyer me sukses.
+  wwctsOnSender: Përkthimi Sign aktivizuar. Djathtas-klikoni mbi një shenjë për ta
+    përkthyer atë
+  watsonColorCodeWarning: Përdorimi i kodeve të ngjyrave mund t'ju japë rezultate
+    të paparashikueshme.
+  wwctGUITranslationButton: Filloni Përkthimin
+  wwctGUIAutoDetectButton: Auto-zbuloni gjuhën burimore
+  wwcUpdaterUpToDate: WorldwideChat është i përditësuar!
+  wwcConfigConversationAmazonTranslateRegionInput: Rajoni i tanishëm është {0}. Ju
+    lutemi, futni një rajon për Amazon, ose shkruani 0 për t'u kthyer prapa.
+  wwcNoConsole: Ky komandë mund të drejtohet vetëm nga një lojtar.
+  wwcInitializationFail: Dështoi për të inicializuar WorldwideChat.
+  wwcrSuccess: Rifreskuar me sukses WorldwideChat.
+  wwcPlayerNotFound: Lojtar {0} u gjet.
+  wwcUpdaterOutOfDateChat: WorldwideChat është i vjetëruar. Ju lutemi përditësoni
+    në versionin më të fundit.
+  wwcConfigConversationRateLimitSuccess: Kufiri i normës vendosur me sukses.
+  wwcConfigConversationWatsonURLSuccess: Watson URL vendosur me sukses.
+  wwctbPlayerNotFound: Lojtar {0} ose nuk gjendet, ose nuk është përkthyes aktiv.
+  wwcConfigConversationTranslationCacheSuccess: Kufiri i përkthimit cache vendosur
+    me sukses.
+  wwctInvalidArgs: Argumentet e pavlefshme dhënë!
+  wwcConfigGUIPrefixButton: Ndrysho Prefiksin e Plugin
+  wwctSameLangError: Ju nuk mund të përkthehet në të njëjtën gjuhë!
+  wwctGUINewTranslationTarget: Zgjidhni një gjuhë të synuar
+  wwcConfigConnectionSuccess: Lidhur me sukses në {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Translate
+  wwcConfigGUIPreviousPageButton: Faqja e mëparshme
+  wwcConfigGUITranslatorCacheButton: Ndryshimi i përkthimit Cache
+  wwcConfigConversationbStatsSuccess: bStats toggled sukses.
+  wwcSignDone: Sign përkthyer me sukses.
+  wwcConfigInvalidPrefixSettings: Dështoi në leximin e prefiksit tuaj. Përdorimi i
+    parazgjedhjes...
+  wwcConfigRateLimitInvalid: Kufiri i keq i normës së vendosur në config.yml. Defaulting
+    në 0 sekonda...
+  wwcSignTranslateStart: Përkthimi i shenjës së synuar...
+  wwcConfigGUIChatSettings: Konfigurimi i bisedës
+  wwcConfigGUIWatsonURLButton: Ndrysho URL e Shërbimit Watson
+  wwcConfigConversationUpdateCheckerSuccess: Update checker vonesë vendosur me sukses.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet nga
+    {0} në {1}.
+  wwcConfigGUITranslatorSettings: Konfigurimi i përkthyesit
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Kyçi i tanishëm API është {0}.
+    Ju lutemi, futni një kyç API për Google Translate, ose shkruani 0 për t'u kthyer
+    prapa.
+  wwcConfigConversationRateLimitInput: Kufiri aktual i normës globale për përkthim
+    është {0} sekonda. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë
+    të re, ose shkruani 0 për të çaktivizuar kufirin. Lloji asgjë më pak se 0 për
+    t'u kthyer.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API çelësi vendosur
+    me sukses.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Ndrysho Amazon Secret Key
+  wwcVersion: WorldwideChat, version
+  wwcsAttemptedTranslations: 'Përkthime në tentativë: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon sekret vendosur me
+    sukses.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API çelësi vendosur me sukses.
+  wwcRateLimit: Përkthimet tuaja janë normë të kufizuara. Ju lutem prisni një sekonda
+    tjetër {0}.
+  wwcConfigCacheEnabled: Cache Translator aktivizuar dhe vendosur në një limit prej
+    {0}.
+  wwctGUIExistingTranslationButton: Mbishkruaj Sesionin Aktual të Përkthimit
+  wwcUserDataReloaded: Ngarkuar të gjitha të dhënat e ruajtura përdorues
+  wwcConfigGUISendTranslationChatButton: Dërgo Kujtesën e Bisedës tek Përkthyes Aktiv
+    në Login
+  wwcsLastTranslationTime: 'Koha e Përkthimit të Fundit (e Suksesshme): {0}'
+  wwctbNotATranslator: Ju nuk jeni një përkthyes aktiv! Sigurohuni që keni vendosur
+    këtë me /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Kyçi aktual i hyrjes është {0}.
+    Ju lutemi, futni një kyç hyrjeje për Amazon, ose shkruani 0 për t'u kthyer mbrapa.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Çelësi i qasjes Amazon vendosur
+    me sukses.
+  wwcConfigBadUpdateDelay: Vonesa e pavlefshme e përditësimit të vendosur në config.yml.
+    Defaulting në 86400 sekonda...
+  wwctrlRateLimitOffSender: Fikur kufirin tuaj të normës.
+  wwctrlRateLimitAlreadyOffTarget: Kufiri i normës prej {0} tashmë është i çaktivizuar.
+  wwctrlPlayerNotFound: Lojtar {0} ose nuk gjendet, ose nuk është përkthyes aktiv.
+  wwctrlRateLimitSetSender: Vendosni limitin tuaj të normës në {0} sekonda.
+  wwctrlRateLimitOffTarget: Çaktivizuar kufirin e normës prej {0}.
+  wwctrlNotATranslator: Ju nuk jeni një përkthyes aktiv! Sigurohuni që keni vendosur
+    këtë me /wwct.
+  wwctrlRateLimitAlreadyOffSender: Kufiri juaj i normës tashmë është i paaftë.
+  wwctGUIRateButton: Cakto Limiti Vlerës
+  wwctGUIConversationRateLimit: Kufiri i normës për përkthim është aktual {0} sekonda.
+    Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë të re, ose shkruani
+    0 për të çaktivizuar kufirin. Lloji asgjë më pak se 0 për t'u kthyer.
+  wwctGUITargetPlayerNull: Lojtari i synuar shkëputet nga serveri.
+  wwcConfigConversationSyncUserDataDelayInput: Vonesa aktuale për sinkronizim të të
+    dhënave të përdoruesit është {0} sekonda. Lloji ndonjë gjë më të madhe se 10 për
+    të vendosur një vlerë të re, ose ndonjë gjë më pak se 10 për t'u kthyer.
+  wwcConfigGUISyncUserDataButton: Ndrysho vonesën e sinkroniz
+  wwcConfigSyncDelayEnabled: Vonesë për sinkronizimin e të dhënave të përdoruesit
+    të vendosur në {0} sekon
+  wwcConfigConversationSyncUserDataDelaySuccess: Vonesa e sinkronizimit të dhënave
+    të përdoruesit
+  wwcConfigSyncDelayInvalid: Vonesa e sinkronizimit të të dhënave të përdoruesit të
+    pavlefshme të vendosur në config. Defaulting në 7200 sekonda...
+  wwcConfigCacheInvalid: Madhësia e përkthyesit cache pavlefshme. Defaulting në 10...
+  wwcInventoryErrorPlayer: Gabim zbuluar me GUI tuaj. Një regjistër është dërguar
+    në tastierë.
+  wwcInventoryError: Gabim u zbulua me GUI të përdoruesit {0}. Ju lutemi, raportoni
+    këtë problem te zhvilluesi.
+  wwctiOffTarget: Përkthimi i artikullit çaktivizohet për {0}.
+  wwctiOffSender: Përkthimi artikull i paaftë
+  wwcItemTranslateTitleStock: E pamundur për të përkthyer emrat e artikullit
+  wwctGUIItemButton: Përkthimi i artikullit Toggle
+  wwcItemTranslateTitleDone: Titulli i përkthyer artikulli me sukses
+  wwcGUITempItem: Shfaqja e artikullit
+  wwcItemTranslateStart: Përkthimi i artikullit të synuar...
+  wwcBookTranslateTitleSuccess: 'Titulli i librit të përkthyer: {0}'
+  wwctiOnSender: Përkthimi artikull aktivizuar. Djathtas-klikoni me një artikull në
+    dorën tuaj kryesore për ta përkthyer atë!
+  wwcItemTranslateLoreStart: Përkthimi dije e artikullit të synuar...
+  wwcItemTranslateLoreDone: Përkthyer artikull dije me sukses.
+  wwctiOnTarget: Përkthimi i artikullit aktivizohet për {0}.
+  wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
+    këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfigurimi'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: WorldwideChat nuk e falë përdorimin e /reload. Ju lutemi
+    vazhdoni me kujdes.
+  wwcConfigEnabledDebugMode: Mënyra e aktivizuar DEBUG. Nëse nuk jeni zhvillues ose
+    zgjidhës i problemeve, duhet ta fikni këtë.
+  wwcTranslatorErrorThresholdReached: Pragu i gabimit arriti. Ky shtojcë tani do të
+    rifreskojë dhe do të çaktivizojë të gjithë përkthyesit.
+  wwcConfigErrorLimitEnabled: Kufiri i gabimit të përkthyesit caktohet në {0}.
+  wwcTranslatorError: Ndodhi një problem gjatë përpjekjes për përkthimin tuaj. Ju
+    lutem provoni përsëri.
+  wwcConfigErrorLimitInvalid: Kufiri i gabimit të përkthyesit të pavlefshëm të vendosur
+    në config.yml. Defaulting në 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Ju lutem kontrolloni errorLog.txt në
+    dosjen e plugin WorldwideChat për më shumë informacion.
+  wwctInvalidInputLangCode: 'Kodi i pavlefshëm i gjuhës së hyrjes dhënë! Kodet e vlefshme
+    lang: {0}'
+  wwctInvalidOutputLangCode: 'Kodi i pavlefshëm i gjuhës së prodhimit dhënë! Kodet
+    e vlefshme lang: {0}'
+  wwctGUISourceTranslationSelected: Ju keni zgjedhur këtë gjuhë.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Fshij Override
+  wwcConfigConversationOverrideTextChange: Ju lutemi shkruani një mesazh të ri për
+    këtë refuzim, ose shkruani 0 për t'u kthyer prapa. Mos harroni të përfshini çdo
+    variabël duke filluar me shenjat e përqindjes që shihni në mesazhin origjinal.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Kjo gjuhë tashmë është aktive!
+  wwcConfigGUIChatMessagesPossibleOverrides: Zgjidhni një Mesazh
+  wwcConfigGUIChatMessagesModifyOverride: Modifiko Override ekzistuese
+  wwcConfigConversationOverrideDeletionSuccess: Ndalimi i mesazhit Custom është fshirë.
+  wwcConfigGUIChatMessagesDeadOverride: Ky refuzim është ose i pavlefshëm, ose mesazhi
+    origjinal është hequr. Ju duhet ta fshini këtë.
+  wwcConfigGUIMessagesAlreadyOverriden: Ju tashmë keni një refuzim për këtë mesazh!
+  wwcConfigGUIChatMessagesOverrideNewButton: Shto një refuzim të ri
+  wwcConfigGUIMessagesOverrideCustomLabel: Mesazh i Ri
+  wwcConfigConversationOverrideTextChangeSuccess: Mesazhi i ri vendosur me sukses.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Ndrysho tekst ekzistues
+  wwcExampleMessage: Ky është një mesazh bedel, dhe ka për qëllim të jetë overriden
+    si një shembull.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Mesazhi origjinal
+  wwcConfigGUIDebugModeButton: Toggle Debug Mode
+  wwcConfigConversationDebugModeSuccess: Modaliteti i debugut të toggled me sukses.
+  wwcConfigGUIErrorLimitButton: Ndrysho kufirin e gabimit të për
+  wwcConfigConversationErrorLimitSuccess: Kufiri i gabimit vendoset me sukses.
+  wwcEntityTranslateStart: Përkthimi i subjektit të synuar...
+  wwcConfigGUICharacterLimitButton: Ndrysho mesazhin e karakterit
+  wwcConfigMessageCharLimitInvalid: Kufiri i pavlefshëm për mesazh të vendosur në
+    config.yml. Defaulting në 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Kufiri i karakterit të vendosur me sukses.
+  wwcteOnTarget: Përkthimi i subjektit aktivizohet për {0}.
+  wwcEntityTranslateDone: 'Emri i Entit të Përkthyer: {0}'
+  wwcEntityTranslateNoName: Subjekti nuk ka një emër me porosi.
+  wwcConfigConversationErrorLimitInput: Kufiri aktual i gabimit për secilin përkthyes
+    është {0}. Shkruani diçka më të madhe se 0 për të vendosur një vlerë të re, ose
+    shkruani diçka më të vogël ose të barabartë me 0 për t'u kthyer mbrapa.
+  wwcConfigGUIGlobalRateLimitButton: Ndrysho kufirin Global Rate
+  wwcteOnSender: Enti përkthim aktivizuar. Djathtas-klikoni mbi një entitet për të
+    përkthyer emrin e
+  wwcConfigGUIResponseLimitButton: Ndrysho Kohëzgjatjen e përgjigjes së
+  wwcConfigMessageCharLimitEnabled: Kufiri i karakterit për mesazh të vendosur në
+    {0} karaktere.
+  wwcteOffTarget: Përkthimi i subjektit i paaftë për {0}.
+  wwcCharLimit: Mesazhi juaj është shumë i gjatë! Ju lutemi sigurohuni që mesazhi
+    juaj të jetë më i vogël se {0} karaktere në gjatësi.
+  wwcteOffSender: Përkthimi subjekt me aftësi
+  wwctGUIEntityButton: Toggle Enti Përkthimi
+  wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
+  wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi {0} po tentonte
+    përkthimin e tyre. Ju lutem kontrolloni errorLog.txt për më shumë detaje.
+  wwctGUIChatButton: Përkthimi Toggle Chat
+  wwcrBegin: Rifreskimi WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesioni i përkthimit për {0} është ndalur.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet,
+    por keni një sesion aktiv përkthimi nga {0} në {1}.
+  wwctCannotTranslateConsole: Nuk mund të filloni një sesion përkthimi për tastierë!
+  wwcOnJoinTranslationNotificationSourceLang: Ju keni një sesion aktiv përkthimi nga
+    {0} në {1}.
+  wwctTranslationStopped: Sesioni juaj i përkthimit është ndalur.
+  wwctAutoTranslateStart: Duke filluar një sesion të ri përkthimi në {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Ju keni një sesion aktiv përkthimi
+    në {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Biseda globale po përkthehet,
+    por ju keni një sesion aktiv përkthimi në {0}.
+  wwcConfigGUIChangesNotSaved: Ndryshimet tuaja nuk do të hyjnë në fuqi derisa të
+    klikoni mbi pengesën e kuqe në /wwcc.
+  wwctciOffSender: Përkthimi në hyrje chat me aftësi të kufizuara.
+  wwctGUIChatIncomingButton: Toggle Përkthimi i Bisedës Hyrëse
+  wwctcoOffSender: Përkthimi në dalje chat me aftësi të kufizuara.
+  wwctcoOnSender: Përkthimi i bisedës në dalje aktivizohet. Çdo gjë që thoni do të
+    përkthehet!
+  wwctciOnSender: Përkthimi i bisedës hyrëse aktivizohet. Çdo gjë që ju merrni do
+    të përkthehet!
+  wwctGUIChatMenu: Toggle Menyja e Përkthimit të Bisedës
+  wwctcoOnTarget: Përkthimi i bisedës që po largohet aktivizohet për {0}.
+  wwctcoOffTarget: Përkthimi po largohet chat me aftësi të kufizuara për {0}.
+  wwctGUIChatOutgoingButton: Toggle Përkthimi i Bisedës që po largohet
+  wwctciOnTarget: Përkthimi i bisedës hyrëse aktivizohet për {0}.
+  wwctciOffTarget: Përkthimi në hyrje chat me aftësi të kufizuara për {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Original hyrëse chat bashkangjitur
+    përkthim si tekst rri pezull toggled sukses.
+  wwcConfigGUISendIncomingHoverTextChatButton: Shto Mesazhe Origjinale Hyrëse si Tekst
+    Rri Pezull
+  wwctGUIExistingChatOutgoingEnabled: 'Aktivizohet përkthimi i bisedës në dalje: {0}'
+  wwctGUIExistingTranslationInput: 'Gjuha e hyrjes: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Përkthimi i bisedës hyrëse e aktivizuar: {0}'
+  wwctGUIExistingTranslationOutput: 'Gjuha e daljes: {0}'
+  wwcTranslatorAttempt: Përpjekja për t'u lidhur me përkthyesin në config.yml... (Përpjekje
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Lojtari % kam pasur kohën e tyre më të fundit të kërkesës.
+    Ky gabim nuk është fatal, por WorldwideChat duhet të rifreskohet nëse vazhdon
+    të ndodhë.
+  wwcGUIPageNumber: 'Numri i faqes: {0}'
+  wwcConfigYAMLFallback: Rënia përsëri në YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled me sukses. Rifresko që ndryshimi
+    të hyjë në fuqi.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Me sukses toggled Google Translate.
+    Rifresko që ndryshimi të hyjë në fuqi.
+  wwcConfigYAMLDefault: Defaulted për YAML për ruajtjen e të dhënave.
+  wwcConfigGUISQLMenuButton: Ndrysho cilësimet SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Sukses toggled Watson Translate.
+    Rifresko që ndryshimi të hyjë në fuqi.
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Përkthejeni
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Përkthejeni
+  wwcConfigGUIStorageSettings: Konfigurimi i ruajtjes
+  wwcConfigConversationAmazonTranslateToggleSuccess: Sukses toggled Amazon Translate.
+    Rifresko që ndryshimi të hyjë në fuqi.
+  wwcConfigGUISQLPortButton: Ndrysho Portin SQL
+  wwcConfigGUISQLOptionalArgsButton: Ndrysho argumentet SQL Opsionale
+  wwcConfigConversationToggleSQLSSLSuccess: SSL për SQL toggled sukses.
+  wwcConfigConversationSQLPortInput: Porti aktual është {0}. Shkruani ndonjë gjë tjetër
+    përveç 0 për të vendosur një port të ri, ose shkruani 0 për t'u kthyer mbrapa.
+  wwcConfigGUISQLPasswordButton: Ndryshoni fjalëkalimin SQL
+  wwcConfigConversationSQLHostnameSuccess: Me sukses ndryshoi emrin e hostit SQL.
+  wwcConfigConversationSQLHostnameInput: Emri aktual i hostit është {0}. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një hostname të ri, ose shkruani 0
+    për t'u kthyer mbrapa.
+  wwcConfigGUISQLHostnameButton: Ndrysho SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Ndryshuar me sukses argumentet opsionale
+    SQL.
+  wwcConfigConversationSQLPasswordSuccess: Ndryshuar me sukses fjalëkalimin SQL.
+  wwcConfigConversationSQLPasswordInput: Fjalëkalimi aktual është {0}. Shkruani ndonjë
+    gjë tjetër përveç 0 për të vendosur një fjalëkalim të ri, ose shkruani 0 për t'u
+    kthyer mbrapa.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Ndryshuar me sukses emrin e përdoruesit
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Emri i përdoruesit aktual është {0}. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një emër përdoruesi të ri, ose shkruani
+    0 për t'u kthyer mbrapa.
+  wwcConfigConversationSQLPortSuccess: Ndryshuar me sukses portin SQL.
+  wwcConfigGUISQLUsernameButton: Ndryshoni emrin e përdoruesit SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Argumentet opsionale u pastruan me
+    sukses.
+  wwcConfigConversationSQLOptionalArgsInput: 'Argumentet aktuale fakultative SQL janë:
+    {0}. shkruani argumente të ndara nga një presje (key=value, key2=value2), ose
+    shkruani qartë për të fshirë args aktuale, ose shkruani 0 për t''u kthyer mbrapa.'
+  wwcConfigConversationSQLDatabaseNameInput: Emri aktual i bazës së të dhënave është
+    {0}. Shkruani ndonjë gjë tjetër përveç 0 për të vendosur një emër të ri të bazës
+    së të dhënave, ose shkruani 0 për t'u kthyer mbrapa.
+  wwcConfigGUISQLDatabaseNameButton: Ndryshoni bazën e të dhënave SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës së
+    të dhënave SQL.
+  wwcConfigConversationFatalAsyncAbort: Koha aktuale për të ndërprerë të gjitha detyrat
+    asinkron është {0} sekonda. Shkruani ndonjë gjë mbi 7 për të vendosur një kohë
+    të re, ose ndonjë gjë poshtë saj për t'u kthyer prapa.
+  wwcConfigConversationFatalAsyncSuccess: Asinkron detyrë timeout vendosur me sukses.
+  wwcConfigGUIFatalAsyncAbortButton: Ndrysho Async Task Timeout
+  libreHttp400: Kërkesa e keqe dërguar Libre Translate! Nëse ju jeni duke bërë diçka
+    që ju nuk duhet, ju nuk duhet të merrni këtë. Ju lutemi kontaktoni zhvilluesin!
+  wwcConfigGUILibreTranslateApiKeyButton: Ndrysho Libre Translate API Key
+  libreHttp403: Mungon Libre Translate API Key, ose ju jeni të ndaluar nga serveri!
+  wwcConfigConversationLibreURLSuccess: Libre URL vendosur me sukses.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kyçi aktual API është {0}. Ju lutemi
+    futni një çelës API për Libre, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Nuk ka besim për shkak të kufirit të normës nga serveri.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Me sukses toggled Libre Translate.
+    Rifresko për ndryshimet që do të hyjnë në fuqi.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kyç vendosur me sukses.
+  wwcConfigConversationLibreURLInput: URL-ja aktuale është {0}. Ju lutemi, futni një
+    URL për Libre, ose shkruani 0 për t'u kthyer prapa.
+  libreHttpUnknown: 'Gabim i panjohur http: {0}'
+  wwcConfigGUILibreTranslateURLButton: Ndrysho Libre Translate URL
+  wwcConfigConnectionFail: Dështoi të lidhej me {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës
+    së të dhënave MongoDB.
+  wwcConfigGUIMongoHostnameButton: Ndrysho emrin e hostit MongoDB
+  wwcConfigConversationMongoPasswordInput: Fjalëkalimi i tanishëm është {0}. Shkruani
+    diçka tjetër përveç 0 për të vendosur një fjalëkalim të ri, ose shkruani 0 për
+    t'u kthyer prapa.
+  wwcConfigConversationMongoPortInput: Porti aktual është {0}. Shkruani diçka tjetër
+    përveç 0 për të vendosur një port të ri, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationToggleMongoSuccess: MongoDB ndryshoi me sukses. Rifresko për
+    ndryshimin të hyjë në fuqi.
+  wwcConfigConversationMongoHostnameInput: Emri aktual i hostit është {0}. Shkruani
+    diçka tjetër përveç 0 për të vendosur një hostname të ri, ose shkruani 0 për t'u
+    kthyer prapa.
+  wwcConfigConversationMongoHostnameSuccess: Ndryshuar me sukses hostname MongoDB.
+  wwcConfigGUIMongoMenuButton: Ndrysho Cilësimet e MongoDB
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Emri aktual i bazës së të dhënave është
+    {0}. Shkruani diçka tjetër përveç 0 për të vendosur një emër të ri të bazës së
+    të dhënave, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationMongoOptionalArgsInput: 'Argumentet aktuale opsionale MongoDB
+    janë: {0}. argumentet e tipit të ndara nga një presje (key=value, key2=value2),
+    ose lloji i qartë për të fshirë argumentet aktuale, ose shkruani 0 për të shkuar
+    mbrapa.'
+  wwcConfigGUIMongoDatabaseNameButton: Ndrysho bazën e të dhënave MongoDB
+  wwcConfigConversationMongoUsernameInput: Emri i përdoruesit aktual është {0}. Shkruani
+    diçka tjetër përveç 0 për të vendosur një emër përdoruesi të ri, ose shkruani
+    0 për t'u kthyer prapa.
+  wwcConfigGUIMongoOptionalArgsButton: Ndrysho MongoDB Argumentet Opsionale
+  wwcConfigConversationMongoUsernameSuccess: Ndryshuar me sukses emrin e përdoruesit
+    MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Ndryshuar me sukses fjalëkalimin MongoDB.
+  wwcConfigConversationMongoPortSuccess: Ndryshuar me sukses portin MongoDB.
+  wwcConfigGUIMongoUsernameButton: Ndrysho emrin e përdoruesit MongoDB
+  wwcConfigGUIMongoPasswordButton: Ndrysho fjalëkalimin MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Ndryshuar me sukses argumentet opsionale
+    MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Argumentet opsionale pastruar me
+    sukses.
+  wwcConfigGUIMongoPortButton: Ndrysho Portin MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Invalid fatale async timeout set. Parazgjedhja
+    në 10 sekonda...
+  libreHttp500: Çifti juaj i zgjedhur i gjuhës së hyrjes dhe daljes nuk mbështetet.
+    Ju lutemi zgjidhni një grup tjetër gjuhësh!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Translate
+  wwcConfigConversationDeepLTranslateToggleSuccess: Me sukses toggled DeepL Translate.
+    Rifresko për ndryshimet që do të hyjnë në fuqi.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Ndrysho DeepL Translate API Key
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Translate
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kyç vendosur me sukses.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kyçi aktual API është {0}. Ju lutemi
+    futni një çelës API për DeepL, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigErrorsToIgnoreSuccess: Regjistruar me sukses gabimet e përkthyesit për
+    të injoruar.
+  wwcConfigErrorsToIgnoreInvalid: Gabimet e përkthyesit të pavlefshëm për të injoruar
+    vendosur në config.yml. Regjistrimi i parazgjedhur...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Ndryshuar me sukses gabimet e përkthyesit
+    për të injoruar frazat.
+  wwcConfigGUIIgnoreErrorsButton: Ndrysho gabimet për të injoruar
+  wwcConfigConversationIgnoreErrorsInput: 'Lista aktuale e frazave në gabimet e përkthyesit
+    që duhet injoruar janë: {0}. argumentet e tipit të ndara me një presje (key=value,
+    key2=value2), ose shkruani qartë për të fshirë argumentet aktuale, ose shkruani
+    0 për të kthyer mbrapa. Përveç kësaj, shtypja “*” do të bëjë që shtojca të mos
+    kontrollojë ndonjë gabim përkthyes.'
+  wwcConfigConversationIgnoreErrorsCleared: Gabimet e përkthyesit për të injoruar
+    frazat pastruar me sukses.
+  wwcSupportedServer: Fillimi i WorldwideChat për {0}...
+  wwcSupportedVersion: Aktivizimi i veçorive për versionin {0}...
+  wwcBadPerms: 'Ju nuk keni lejet e kërkuara për të ekzekutuar këtë komandë: {0}'
+  wwcsIsActiveTranslator: 'Është përkthyes aktiv: {0}'
+  wwcsActiveTransPrevRate: 'Koha e kufizimit të normës së mëparshme: {0}'
+  wwcsActiveTransSaved: 'Ruajtur në disk: {0}'
+  wwcsActiveTransIncoming: 'Përkthimi i bisedës hyrëse: {0}'
+  wwcsActiveTransOutLang: 'Gjuha e daljes: {0}'
+  wwcsActiveTransInLang: 'Gjuha e hyrjes: {0}'
+  wwcsActiveTransBook: 'Përkthimi i librit: {0}'
+  wwcsActiveTransSign: 'Shenja përkthimi: {0}'
+  wwcsActiveTransUUID: 'NUMRI I RI: {0}'
+  wwcsActiveTransRateLimit: 'Kufiri i normës: {0}'
+  wwcsActiveTransColorWarning: 'Paralajmërim për ngjyrën e marrë: {0}'
+  wwcsActiveTransSignWarning: 'Paralajmërim për redaktimin e shenjës së marrë: {0}'
+  wwcsTitle: Regjistrimi i {0}
+  wwcsActiveTransOutgoing: 'Përkthimi i Bisedës Dalëse: {0}'
+  wwcsActiveTransItem: 'Artikulli i përkthimit: {0}'
+  wwcsActiveTransEntity: 'Entiteti përkthyes: {0}'
+  wwctsWarning: Modifikimi i shenjave është i çaktivizuar ndërsa jeni duke përkthyer
+    shenjat.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate u ndërrua me sukses.
+    Rishikoni që ndryshimet të hyjnë në fuji.
+  wwcConfigGUIAzureTranslateButton: Azure Përkthejeni
+  wwcConfigGUIAzureTranslateApiKeyButton: Ndryshoni çelësin e API-së të
+  wwcConfigGUIAzureTranslateRegionButton: Ndrysho Rajonin e Përkthimit
+  wwcConfigConversationAzureTranslateRegionSuccess: Rajoni Azure u vendos me sukses.
+  wwcConfigConversationAzureTranslateApiKeyInput: Çelësi aktual API është {0}. Ju
+    lutemi futni një çelës API për Azure, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Çelësi Azure API u vendos me sukses.
+  wwcConfigConversationAzureTranslateRegionInput: Rajoni aktual është {0}. Ju lutemi
+    futni një rajon për Azure, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Përkthejeni
+  wwcConfigGUISystranTranslateApiKeyButton: Ndryshoni çelësin e API të përkthimit
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Përkthejeni
+  wwcConfigConversationSystranTranslateApiKeyInput: Çelësi aktual API është {0}. Ju
+    lutemi futni një çelës API për Systran, ose shkruani 0 për t'u kthyer prapa.
+  wwcISOJSONFail: Nuk mund të rregullohet objektet e gjuhës me ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Ndërroi me sukses Systran Translate.
+    Rishikoni që ndryshimet të hyjnë në fuji.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Çelësi API i Systran vendosur
+    me sukses.
+  wwcConfigGUISystranTranslateButton: Systran Përkthejeni
+  wwcrTransFail: Rilarkoi WorldwideChat por nuk arriti të mundësojë një përkthyes.
+  wwcdCacheCleared: Faqja e përkthimit është pastruar.
+  wwcdInvalidCmd: Argumente të pavlefshme!
+  systranHttpUnknown: 'Gabim http i panjohur: {0}'
+  systranHttp400: Parametrat e këqij dërguar në Systran. Mund të jetë një palë gjuhësore
+    e keqe?
+  systranHttp500: Gabim i brendshëm i serverit nga pika përfundimtare Systran ({0}).
+  wwcInvalidStorageSession: '{0} është aktivizuar në konfigurimin tuaj, por një lidhje
+    nuk është krijuar. Ju lutemi provoni të rimbushni për ta rregulluar këtë, por
+    ju lutemi kontaktoni zhvilluesin nëse më parë keni marrë një mesazh të suksesshëm
+    lidhjeje nga {0}.'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Ndryshoi me sukses emrin e bazës
+    së të dhënave PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argumentet opsionale pastruan
+    me sukses
+  wwcConfigConversationPostgresPortInput: Porti aktual është {0}. Shkruani ndonjë
+    gjë tjetër përveç 0 për të vendosur një port të ri, ose shkruani 0 për të kthyer
+    prapa.
+  wwcConfigGUIPostgresUsernameButton: Ndryshoni emrin e përdoruesit të PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Ndryshuan me sukses argumentet
+    opsionale PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL për PostgreSQL u ndërrua me sukses.
+  wwcConfigConversationPostgresPasswordSuccess: Me sukses ndryshoi fjalëkalimin PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Ndryshoi me sukses portin PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Emri i përdoruesit aktual është {0}.
+    Shkruani ndonjë gjë tjetër përveç 0 për të vendosur një emër përdoruesi të ri,
+    ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL u ndërrua me sukses. Rishikoni
+    që ndryshimi të hyjë në fuqinë.
+  wwcConfigGUITogglePostgresButton: Ndryshoni PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Ndryshoni fjalëkalimin PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Ndryshoni argumentet opsionale të PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Ndryshoni Cilësimet e PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Fjalëkalimi aktual është {0}. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një fjalëkalim të ri, ose shkruani
+    0 për të kthyer prapa.
+  wwcConfigConversationPostgresHostnameInput: Emri aktual i hostit është {0}. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një emër të ri të hostit, ose shkruani
+    0 për t'u kthyer prapa.
+  wwcConfigGUIPostgresPortButton: Ndryshoni Portin PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Ndryshoi me sukses emrin e hostit
+    PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Ndryshoni emrin e hostit të PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Emri aktual i bazës së të dhënave
+    është {0}. Shkruani ndonjë gjë tjetër përveç 0 për të vendosur një emër të ri
+    të bazës së të dhënave, ose shkruani 0 për të kthyer prapa.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Argumentet aktuale opsionale të
+    PostgreSQL janë: {0}. Shkruani argumente të ndara me presje (key=value, key2 =
+    value2), ose shkruani të qartë për të fshirë argjet aktuale, ose shkruani 0 për
+    të kthyer prapa.'
+  wwcConfigGUITogglePostgresSSLButton: Ndërroni PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Ndryshoni bazën e të dhënave PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Me sukses ndryshoi emrin e përdoruesit
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurimi'
+  wwcConfigConversationPrefixInput: Prefiksi aktual është {0}. Ju lutemi shkruani
+    një të re, ose shkruani 0 për të kthyer prapa.
+  wwcConfigConversationLangInput: 'Gjuha aktuale e shtojcës është {0}. Ju lutemi futni
+    një kod të vlefshëm të gjuhës, ose shkruani 0 për të anuluar. Kodet e vlefshme
+    gjuhësore: {1}'
+  wwcdCacheSize: Madhësia e cache aktualisht është {0}, me një kufi prej {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Fillimi i një seance të re përkthimi nga {0} në {1}.
+  wwctAutoTranslateStartOtherPlayer: Fillimi i një seance të re përkthimi për {0}
+    në {1}.
+  wwctLangToLangStartOtherPlayer: Fillimi i një seance të re përkthimi për {0} nga
+    {1} në {2}.
+  wwcgLangToLangStart: Tani përkthej bisedën globale nga {0} në {1}.
+  wwctrlRateLimitSetTarget: Vendosni kufirin e normës prej {0} në {1} sekonda.
+  wwcTimeoutException: Kërkesa juaj ka përfunduar. Ju lutemi provoni përsëri.
+  wwctbNoMoreOldBooks: Përkthimi i librit nuk është funksional në versionin tuaj të
+    serverit. Nëse jeni në një version më të fundit të Minecraft dhe merrni këtë gabim,
+    ju lutemi kontaktoni zhvilluesin.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Zgjidhni Lokalizimin
+  wwcConfigGUIMessagesOverridePickChatButton: Anashkaloni Mesazhet e Parazgjedhura
+  wwcConfigGUIChatMessagesOverrideSettings: Anashkaloni Mesazhet e Paracaktuara ({0})
+  wwcConfigGUIMessagesServerLang: Kjo është gjuha e paracaktuar e shtojcës në config.yml.
+  wwclLangStopped: Lokalizimi juaj u rivendos në parazgjedhjen e serverit.
+  wwclLangInvalid: '{0} nuk është një lokalizim i vlefshëm. Lokalizime të mbështetura:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Rivendosni lokalizimin e {0} në parazgjedhjen
+    e serverit.
+  wwclLangPlayerNotValid: '{0} nuk është një lojtar i vlefshëm.'
+  wwclLangChangedOtherPlayerSender: Ndryshoi lokalizimin e {0} në {1}.
+  wwclLangChanged: Lokalizimi juaj është ndryshuar në {0}.
+  wwcsLocalization: 'Lokalizimi: {0}'
+  wwclLangAlreadyStopped: Ju nuk keni një grup lokalizimi.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} nuk ka një grup lokalizimi.'
+  wwctGUILocalizeExistingValue: 'Lokalizimi aktual: {0}'
+  wwctGUILocalizationButton: Vendosni lokalizimin
+  wwctGUILocalizeStopButton: Rivendosni lokalizimin në serverin Default
+  wwctGUILocalizeTitle: Menuja e lokalizimit
+  wwctGUISourceSameLang: Kjo gjuhë do të ishte e njëjtë me gjuhën tuaj burimore.
+  wwcConfigGUICurrentPlayerLang: Ky është lokalizimi juaj aktual.
+  wwctGUILocalizationSameAsServer: Ky është lokalizimi i parazgjedhur për WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Kjo gjuhë tashmë është aktive globalisht!
+  wwcrStorageTranslatorFail: Rilarkoi WorldwideChat por nuk arriti të aktivizojë një
+    përkthyes dhe të lidhet me konfigurimin tuaj të ruajtjes.
+  wwcrStorageFail: Rimarkoi WorldwideChat dhe aktivizoi me sukses një përkthyes, por
+    konfigurimi juaj i ruajtjes dështoi të lidhet.
+  wwcConfigPersistentCacheInvalid: Regjistrimi i pavlefshëm i përhershëm i cache në
+    config.yml. Parashikimi i rremë...
+  wwcConfigGUIPersistentCacheButton: Ndryshoni memorien e vazhdueshme
+  wwcConfigConversationPersistentCacheSuccess: Cache e vazhdueshme u ndërrua me sukses.
+  wwcConfigPersistentCacheEnabled: Të dhënat e cache do të vazhdojnë në të gjithë
+    rimbushjet.
+  wwcConfigConversationCharacterLimitInput: Kufiri aktual i karakterit për mesazh
+    është {0} karakteret. Shkruani diçka më të madhe se 0 (por më pak se 256) për
+    të vendosur një vlerë të re, ose shkruani 0 për të kthyer prapa.
+  wwcdOutdatedSQLStruct: Duket sikur një ose më shumë nga tabelat tuaja MySQL ose
+    PostgreSQL kanë një format të pasaktë/të vjetëruar. Informacione më të shprehura
+    në lidhje me këtë çështje janë shtypur në tastierën tuaj; ju mund të jeni në gjendje
+    ta rregulloni këtë manualisht.
+  wwcdSQLAllSet: Tabelat tuaja MySQL/PostgreSQL janë të formatuara siç duhet.
+  wwcdColumnBadType: Kolona {0} në tabelën {1} ka llojin {2} por llojin e pritur {3}.
+  wwcdColumnMissing: Kolona {0} mungon në tabelën {1}.
+  wwcdGoodTable: Tabela {0} ({1}) është formati i saktë.
+  wwcdBadTable: Tabela {0} nuk gjendet në përkufizimet e brendshme. Ju lutemi kontaktoni
+    zhvilluesin.
+  wwcOldDatabaseStruct: 'Baza e të dhënave tuaja e zgjedhur ka një konfigurim të gabuar
+    të tabelës Shkruani komandën e mëposhtme për më shumë informacion: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Kufiri aktual i normës: {0} Sekonda'
+

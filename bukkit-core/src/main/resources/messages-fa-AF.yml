@@ -582,4 +582,11 @@ Messages:
   wwcOldDatabaseStruct: 'پایگاه داده انتخاب شده شما دارای تنظیمات جدول نادرست است.
     دستور زیر را برای اطلاعات بیشتر تایپ کنید: /wwcd checkdb'
   wwctGUIRateButtonLore: 'محدودیت نرخ فعلی: {0} ثانیه'
+  wwcConfigGUIVaultSupportButton: پشتیبانی از Vault را تغییر دهید
+  wwcConfigConversationVaultSupportSuccess: پشتیبانی Vault با موفقیت تغییر کرد.
+  wwcVaultEnabled: پشتیبانی از Vault فعال شده است.
+  wwcVaultFoundButDisabled: Vault پیدا شد، اما هیچ پلاگین چت موجود ثبت نشده است. غیرفعال
+    کردن پشتیبانی از Vault...
+  wwcConfigGUIToggleRestartRequired: برای اعمال این تنظیمات، یک راه اندازی مجدد کامل
+    سرور لازم است.
 

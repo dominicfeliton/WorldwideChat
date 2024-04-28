@@ -512,4 +512,10 @@ Messages:
   wwcOldDatabaseStruct: 'ฐานข้อมูลที่คุณเลือกมีการตั้งค่าตารางไม่ถูกต้องพิมพ์คำสั่งต่อไปนี้สำหรับข้อมูลเพิ่มเติม:
     /wwcd checkdb'
   wwctGUIRateButtonLore: 'ขีดจำกัดอัตราปัจจุบัน: {0} วินาที'
+  wwcConfigGUIVaultSupportButton: สลับการสนับสนุน Vault
+  wwcConfigConversationVaultSupportSuccess: การสนับสนุน Vault ได้สลับเรียบร้อยแล้ว
+  wwcVaultEnabled: เปิดใช้งานการสนับสนุน Vault
+  wwcVaultFoundButDisabled: พบห้องเก็บของ แต่ยังไม่มีการลงทะเบียนปลั๊กอินแชทที่มีอยู่ปิดใช้งานการสนับสนุน
+    Vault...
+  wwcConfigGUIToggleRestartRequired: จำเป็นต้องรีสตาร์ทเซิร์ฟเวอร์เต็มรูปแบบเพื่อใช้การตั้งค่านี้
 

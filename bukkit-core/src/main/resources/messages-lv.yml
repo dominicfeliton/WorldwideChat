@@ -585,4 +585,11 @@ Messages:
   wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir nepareiza tabulas iestatīšana.
     Lai iegūtu papildinformāciju, ierakstiet šādu komandu: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Pašreizējais ātruma ierobežojums: {0} Sekundes'
+  wwcConfigGUIVaultSupportButton: Pārslēgt Vault atbalstu
+  wwcConfigConversationVaultSupportSuccess: Vault atbalsts tika veiksmīgi pārslēgts.
+  wwcVaultEnabled: Vault atbalsts ir iespējots.
+  wwcVaultFoundButDisabled: Atrasts glabātuve, taču neviens esošais tērzēšanas spraudnis
+    nav reģistrēts. Vault atbalsta atspējošana...
+  wwcConfigGUIToggleRestartRequired: Lai piemērotu šo iestatījumu, ir nepieciešama
+    pilna servera restartēšana.
 

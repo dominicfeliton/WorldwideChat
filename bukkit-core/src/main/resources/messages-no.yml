@@ -565,4 +565,11 @@ Messages:
   wwcOldDatabaseStruct: 'Den valgte databasen har feil tabelloppsett. Skriv inn følgende
     kommando for mer informasjon: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Nåværende hastighetsgrense: {0} sekunder'
+  wwcConfigGUIVaultSupportButton: Veksle støtte for hvelv
+  wwcConfigConversationVaultSupportSuccess: Hvelvstøtte ble slått på.
+  wwcVaultEnabled: Hvelvstøtte er aktivert.
+  wwcVaultFoundButDisabled: Vault funnet, men ingen eksisterende chat-plugin er registrert.
+    Deaktiverer hvelvstøtte...
+  wwcConfigGUIToggleRestartRequired: En fullstendig serverstart er nødvendig for å
+    bruke denne innstillingen.
 

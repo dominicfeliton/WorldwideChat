@@ -589,4 +589,11 @@ Messages:
   wwcOldDatabaseStruct: 'Выбранная вами база данных имеет неправильную настройку таблицы.
     Введите следующую команду для получения дополнительной информации: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Ограничение текущей скорости: {0} секунд'
+  wwcConfigGUIVaultSupportButton: Переключить поддержку Vault
+  wwcConfigConversationVaultSupportSuccess: Поддержка Vault успешно переключена.
+  wwcVaultEnabled: Включена поддержка Vault.
+  wwcVaultFoundButDisabled: Хранилище найдено, но существующий плагин чата не зарегистрирован.
+    Отключение поддержки Vault...
+  wwcConfigGUIToggleRestartRequired: Для применения этого параметра требуется полный
+    перезапуск сервера.
 

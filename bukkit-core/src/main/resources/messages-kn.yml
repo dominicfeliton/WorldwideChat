@@ -595,4 +595,11 @@ Messages:
   wwcOldDatabaseStruct: 'ನಿಮ್ಮ ಆಯ್ಕೆ ಮಾಡಿದ ಡೇಟಾಬೇಸ್ ತಪ್ಪಾದ ಟೇಬಲ್ ಸೆಟಪ್ ಹೊಂದಿದೆ. ಹೆಚ್ಚಿನ
     ಮಾಹಿತಿಗಾಗಿ ಈ ಕೆಳಗಿನ ಆಜ್ಞೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ: /wwcd checkdb'
   wwctGUIRateButtonLore: 'ಪ್ರಸ್ತುತ ದರ ಮಿತಿ: {0} ಸೆಕೆಂಡುಗಳು'
+  wwcConfigGUIVaultSupportButton: ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigConversationVaultSupportSuccess: ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcVaultEnabled: ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcVaultFoundButDisabled: ವಾಲ್ಟ್ ಕಂಡುಬಂದಿದೆ, ಆದರೆ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಯಾವುದೇ ಚಾಟ್ ಪ್ಲಗಿನ್
+    ಅನ್ನು ನೋಂದಾಯಿಸಲಾಗಿಲ್ಲ. ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವುದು...
+  wwcConfigGUIToggleRestartRequired: ಈ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಅನ್ವಯಿಸಲು ಪೂರ್ಣ ಸರ್ವರ್ ಮರುಪ್ರಾರಂಭದ
+    ಅಗತ್ಯವಿದೆ.
 

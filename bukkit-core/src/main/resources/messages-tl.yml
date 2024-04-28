@@ -654,4 +654,12 @@ Messages:
   wwcOldDatabaseStruct: 'Ang iyong napiling database ay may maling pag-setup ng talahanayan.
     I-type ang sumusunod na utos para sa karagdagang impormasyon: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Kasalukuyang Limitasyon ng Rate: {0} Segundo'
+  wwcConfigGUIVaultSupportButton: Toggle Vault Support
+  wwcConfigConversationVaultSupportSuccess: Matagumpay na naka-switch ang suporta
+    ng Vault.
+  wwcVaultEnabled: Pinagana ang suporta sa Vault.
+  wwcVaultFoundButDisabled: Natagpuan ang Vault, ngunit walang umiiral na plugin ng
+    chat ang nakarehistro. Hindi paganahin ang suporta sa Vault...
+  wwcConfigGUIToggleRestartRequired: Kinakailangan ang isang buong pag-restart ng
+    server upang ilapat ang setting na ito.
 

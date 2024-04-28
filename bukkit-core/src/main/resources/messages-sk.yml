@@ -592,4 +592,11 @@ Messages:
   wwcOldDatabaseStruct: 'Zvolená databáza má nesprávne nastavenie tabuľky. Pre viac
     informácií zadajte nasledujúci príkaz: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Aktuálny limit rýchlosti: {0} Sekúnd'
+  wwcConfigGUIVaultSupportButton: Prepnúť podporu Vault
+  wwcConfigConversationVaultSupportSuccess: Podpora trezora bola úspešne prepnutá.
+  wwcVaultEnabled: Podpora trezora bola povolená.
+  wwcVaultFoundButDisabled: Nájdený trezor, ale nebol zaregistrovaný žiadny existujúci
+    doplnok chatu. Zakázanie podpory Vault...
+  wwcConfigGUIToggleRestartRequired: Na uplatnenie tohto nastavenia je potrebný úplný
+    reštart servera.
 

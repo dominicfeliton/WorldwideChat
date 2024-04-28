@@ -13,6 +13,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     cp /home/$USER/Documents/WorldwideChat/paper-target/WorldwideChat-paper.jar /home/$USER/Documents/wwc_test_server/plugins
     cp /home/$USER/Documents/WorldwideChat/paper-target/WorldwideChat-paper.jar /home/$USER/Documents/wwc_test_server_1165/plugins
     cp /home/$USER/Documents/WorldwideChat/spigot-target/WorldwideChat-spigot.jar /home/$USER/Documents/wwc_test_server_1132/plugins
+    cp /home/$USER/Documents/WorldwideChat/spigot-target/WorldwideChat-spigot.jar /home/$USER/Documents/wwc_test_server_spigot/plugins
     cd /home/$USER/Documents/wwc_test_server/
     ./start_mcserver.sh
 else

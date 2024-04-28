@@ -575,4 +575,11 @@ Messages:
   wwcOldDatabaseStruct: 'Database yang Anda pilih memiliki pengaturan tabel yang salah.
     Ketik perintah berikut untuk informasi lebih lanjut: /wwcd checkdb'
   wwctGUIRateButtonLore: 'Batas Tingkat Saat Ini: {0} Detik'
+  wwcConfigGUIVaultSupportButton: Alihkan Dukungan Vault
+  wwcConfigConversationVaultSupportSuccess: Dukungan Vault berhasil dialihkan.
+  wwcVaultEnabled: Dukungan Vault telah diaktifkan.
+  wwcVaultFoundButDisabled: Vault ditemukan, tetapi tidak ada plugin obrolan yang
+    ada yang terdaftar. Menonaktifkan dukungan Vault...
+  wwcConfigGUIToggleRestartRequired: Restart server penuh diperlukan untuk menerapkan
+    pengaturan ini.
 

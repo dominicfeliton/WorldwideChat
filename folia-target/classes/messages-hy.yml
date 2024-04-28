@@ -1,0 +1,611 @@
+Messages:
+  wwcgAutoTranslateStart: Այժմ թարգմանելով գլոբալ զրույցը {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Գլոբալ Վիճակագրություն թարգմանվում
+    է {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Փոխել Amazon մուտքի բանալին
+  wwcrFail: Չհաջողվեց վերբեռնել WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Փոփոխություն Ստուգել թարմացումները
+  wwcUpdaterFailedGeneric: Հնարավոր չէ ստուգել WorldwideChat թարմացումները.
+  wwcConfigConversationUpdateCheckerInput: 'Թարմացման ստուգիչի ընթացիկ ուշացումը {0}
+    վայրկյան է: Մուտքագրեք ավելի մեծ բան, քան 10- ը նոր արժեք սահմանելու համար, կամ
+    10- ից պակաս բան վերադառնալու համար:'
+  wwctGUIMainMenuGlobal: Գլոբալ թարգմանության մենյու
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin թարմացումը զրուցարան հիշեցում
+    toggled հաջողությամբ.
+  wwctbOnTarget: Գիրք թարգմանությունը միացված է {0} համար։
+  wwcsNotATranslator: '{0} համար դեռեւս հասանելի չկան գրառումներ:'
+  wwcConfigGUIbStatsButton: Անջատել bStats
+  wwctGUINewTranslationSource: Ընտրեք աղբյուրի լեզու
+  wwcConfigConnectionFailed: 'Չհաջողվեց միացնել {0}: Համոզվեք, որ ձեր հավատարմագրերն
+    ու firewall ճիշտ կազմաձեւված են:'
+  wwcConfigEnabledbStats: Միացված bStats.
+  wwctGUIMainMenuPlayer: Թարգմանության մենյու {0}
+  wwctGUIBookButton: Toggle Գիրք թարգմանություն
+  wwcLangDetected: Հայտնաբերված լեզու {0}.
+  wwcBookTranslateStart: Թարգմանելով թիրախային գիրքը...
+  wwcConfigDisabledbStats: Հաշմանդամ bStats.
+  wwctsOffSender: Sign թարգմանությունը հաշմանդամ.
+  wwcUpdaterParserFailed: 'Չհաջողվեց վերլուծել տվյալների թարմացման Github- ից:'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 'Ընթացիկ գաղտնի բանալին է {0}:
+    Խնդրում ենք մուտքագրել գաղտնի բանալին Amazon- ի համար կամ մուտքագրեք 0 վերադառնալ:'
+  wwctbOffSender: Գրքի թարգմանությունը հաշմանդամ.
+  wwcConfigGUIAmazonTranslateButton: Amazon Թարգմանել
+  wwcConfigConversationLangSuccess: Plugin լեզուն փոխվել հաջողությամբ.
+  wwcsSuccessfulTranslations: 'Հաջող թարգմանություններ: {0}'
+  wwcConfigConversationTranslationCacheInput: 'Ընթացիկ թարգմանության քեշի սահմանաչափը
+    է {0} արտահայտություններ: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու
+    համար կամ մուտքագրեք 0 թարգմանության քեշը անջատելու համար: Մուտքագրեք ոչինչ պակաս,
+    քան 0 վերադառնալ.'
+  wwctbOffTarget: Գիրք թարգմանությունը անջատված է համար {0}.
+  wwcConfigGUIGeneralSettings: Ընդհանուր կոնֆիգուրացիա
+  wwcInvalidLang: Անվավեր լեզուն ձեր config.yml. Նախնականը en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon տարածաշրջանը սահմանել
+    հաջողությամբ.
+  wwcConfigRateLimitEnabled: Գլոբալ դրույքաչափի սահմանաչափը միացված է եւ սահմանվում
+    է {0}
+  wwcConfigGUILangButton: Փոխել Plugin լեզուն
+  wwctGUISignButton: Toggle Նշան թարգմանություն
+  wwcUpdaterOutOfDate: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին տարբերակը,
+    {0}.
+  wwcConfigGUINextPageButton: Հաջորդ էջը
+  wwcConfigInvalidTranslatorSettings: Անվավեր թարգմանիչ պարամետրերը! Խնդրում ենք միացնել
+    միայն մեկ թարգմանիչ Ձեր config.yml.
+  wwcConfigGUIQuitButton: Ելք եւ փրկել փոփոխությունները
+  wwctPlayerNotFound: 'Խաղացող %Ես չեմ գտել:'
+  wwcConfigGUIAmazonTranslateRegionButton: Փոխել Amazon Տարածաշրջան
+  wwcConfigConversationLangInvalid: Անվավեր լեզվի կոդը!
+  wwcConfigGUIWatsonAPIKeyButton: Փոխել Watson API բանալին
+  wwcEnabled: Միացված WorldwideChat տարբերակը {0}.
+  wwctbOnSender: Գիրք թարգմանությունը միացված. Աջ սեղմեք, իսկ անցկացման գիրք է թարգմանել
+    այն!
+  wwcListenersInitialized: Նախաձեռնված ունկնդիրները.
+  wwcConfigGUIPluginUpdateChatButton: Ուղարկել Զրուցարան հիշեցում համար Plugin թարմացումներ
+  wwcConfigConversationSendTranslationChatSuccess: Ակտիվ թարգմանիչ զրուցարան հիշեցում
+    toggled հաջողությամբ.
+  wwctsOffTarget: Ստորագրել թարգմանությունը հաշմանդամ համար {0}.
+  wwcUpdaterConnectionFailed: Անհնար է ստուգել վերջին թարմացումները Github.
+  watsonNotFoundExceptionNotification: Անհնար է թարգմանել ձեր մուտքագրման ցանկացած
+    հետագա.
+  wwcConfigConversationWatsonAPIKeyInput: 'Ընթացիկ API- ի ստեղնը {0} է: Խնդրում ենք
+    մուտքագրել API- ի բանալին Watson կամ մուտքագրեք 0 ետ վերադառնալու համար:'
+  wwctGUIStopButton: Դադարեցնել թարգմանությունը
+  wwcgTranslationStopped: 'Գլոբալ զրուցարանում թարգմանությունը դադարեցվել է:'
+  wwcUpdaterFutureDate: Այս օրինակը WorldwideChat ունի ավելի մեծ տարբերակ, քան վերջին
+    հանրային մեկը.
+  wwcConfigConversationPrefixSuccess: 'Նախածանցը հաջողությամբ փոխվել է:'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Փոխել Google Թարգմանել API բանալի
+  wwcSignDeletedOrTooLong: Թիրախային նշանը կամ ջնջվել է կամ թարգմանությունը չափազանց
+    երկար է. Թարգմանություն՝
+  wwctsOnTarget: Նշեք թարգմանությունը միացված է {0} համար։
+  wwcConfigCacheDisabled: Թարգմանիչ քեշը անջատված.
+  wwcConfigConversationWatsonURLInput: 'Ընթացիկ URL {0} է: Խնդրում ենք մուտքագրել
+    ծառայության URL- ը Watson կամ մուտքագրեք 0 վերադառնալ:'
+  wwcBookDone: Գիրք թարգմանվել հաջողությամբ.
+  wwctsOnSender: 'Ստորագրել թարգմանությունը միացված. Աջ սեղմեք նշանի վրա, այն թարգմանելու
+    համար:'
+  watsonColorCodeWarning: Օգտագործելով գունավոր կոդերը կարող է տալ ձեզ անկանխատեսելի
+    արդյունքներ.
+  wwctGUITranslationButton: Սկսեք թարգմանել
+  wwctGUIAutoDetectButton: Ավտո-հայտնաբերել աղբյուրի լեզուն
+  wwcUpdaterUpToDate: WorldwideChat է մինչեւ օրս!
+  wwcConfigConversationAmazonTranslateRegionInput: 'Ընթացիկ տարածաշրջանը է {0}: Խնդրում
+    ենք մուտքագրել տարածաշրջան Amazon- ի համար կամ մուտքագրեք 0 ետ վերադառնալու համար:'
+  wwcNoConsole: Այս հրամանը կարող է միայն վազում է խաղացողի.
+  wwcInitializationFail: Չհաջողվեց նախապատրաստել WorldwideChat.
+  wwcrSuccess: Հաջողությամբ վերբեռնել WorldwideChat
+  wwcPlayerNotFound: 'Խաղացող %Ես չեմ գտել:'
+  wwcUpdaterOutOfDateChat: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին
+    տարբերակի.
+  wwcConfigConversationRateLimitSuccess: Գնահատել սահմանաչափը սահմանված հաջողությամբ.
+  wwcConfigConversationWatsonURLSuccess: Watson URL սահմանել հաջողությամբ.
+  wwctbPlayerNotFound: 'Նվագարկիչ {0} կամ չի հայտնաբերվել, կամ ակտիվ թարգմանիչ չէ:'
+  wwcConfigConversationTranslationCacheSuccess: Թարգմանություն քեշը սահմանել հաջողությամբ.
+  wwctInvalidArgs: Անվավեր փաստարկները տրամադրված!
+  wwcConfigGUIPrefixButton: Փոխել Plugin նախածանցը
+  wwctSameLangError: Դուք չեք կարող թարգմանել նույն լեզվով!
+  wwctGUINewTranslationTarget: Ընտրեք թիրախային լեզու
+  wwcConfigConnectionSuccess: Հաջողությամբ կապված է {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Թարգմանել
+  wwcConfigGUIPreviousPageButton: Նախորդ էջ
+  wwcConfigGUITranslatorCacheButton: Փոխել թարգմանություն Cache Սահմանափակում
+  wwcConfigConversationbStatsSuccess: Հաջողությամբ toggled bStats.
+  wwcSignDone: Sign թարգմանվել հաջողությամբ.
+  wwcConfigInvalidPrefixSettings: Չհաջողվեց կարդալ ձեր նախածանցը. Օգտագործելով լռելյայն...
+  wwcConfigRateLimitInvalid: Վատ տոկոսադրույքը սահմանաչափը սահմանված է config.yml.
+    Նախնականը 0 վայրկյան...
+  wwcSignTranslateStart: Թարգմանելով թիրախային նշանը...
+  wwcConfigGUIChatSettings: Զրուցարան կոնֆիգուրացիա
+  wwcConfigGUIWatsonURLButton: Փոխել Watson ծառայության URL- ը
+  wwcConfigConversationUpdateCheckerSuccess: Թարմացնել ստուգիչ ուշացումը հաջողությամբ
+    սահմանված.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Գլոբալ զրույցը թարգմանվում է {0}
+    to {0}.
+  wwcConfigGUITranslatorSettings: Թարգմանչի կոնֆիգուրացիա
+  wwcConfigConversationGoogleTranslateAPIKeyInput: 'Ընթացիկ API- ի ստեղնը {0} է: Խնդրում
+    ենք մուտքագրել API- ի ստեղնը Google Translate կամ մուտքագրեք 0 ետ վերադառնալու
+    համար:'
+  wwcConfigConversationRateLimitInput: 'Ընթացիկ գլոբալ տոկոսադրույքը մեկ թարգմանության
+    համար {0} վայրկյան է: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար
+    կամ մուտքագրեք 0 սահմանը անջատելու համար: Մուտքագրեք ոչինչ պակաս, քան 0 վերադառնալ.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Թարգմանել API բանալին
+    սահմանված հաջողությամբ.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Փոխել Amazon գաղտնի բանալի
+  wwcVersion: WorldwideChat, տարբերակ
+  wwcsAttemptedTranslations: 'Փորձված թարգմանություններ: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon գաղտնի բանալին սահմանված
+    հաջողությամբ.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API բանալին սահմանված հաջողությամբ.
+  wwcRateLimit: 'Ձեր թարգմանությունները կարող են փոխարժեքը սահմանափակ. Խնդրում ենք
+    սպասել մյուսը {0} վայրկյան:'
+  wwcConfigCacheEnabled: Թարգմանչի քեշը միացված է եւ սահմանվում է սահմանաչափի {0}.
+  wwctGUIExistingTranslationButton: Վերագրանցել ընթացիկ թարգմանության նիստը
+  wwcUserDataReloaded: Բեռնված բոլոր պահպանված օգտվողի տվյալները.
+  wwcConfigGUISendTranslationChatButton: Ուղարկել Զրուցարան Հիշեցում ակտիվ թարգմանիչ
+    է Մուտք
+  wwcsLastTranslationTime: 'Վերջին (Հաջող) Թարգմանության ժամանակը: {0}'
+  wwctbNotATranslator: 'Դուք ակտիվ թարգմանիչ չեք: Համոզվեք, որ դուք պետք է սահմանել
+    այս /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: 'Ընթացիկ մուտքի բանալին է {0}:
+    Խնդրում ենք մուտքագրել Amazon- ի մուտքի բանալին կամ մուտքագրեք 0 ետ վերադառնալու
+    համար:'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon մուտքի բանալին սահմանված
+    հաջողությամբ.
+  wwcConfigBadUpdateDelay: Անվավեր updater ուշացումը սահմանված config.yml. Նախնականը
+    մինչեւ 86400 վայրկյան...
+  wwctrlRateLimitOffSender: Անջատված Ձեր տոկոսադրույքը սահմանաչափը.
+  wwctrlRateLimitAlreadyOffTarget: '{0} դրույքաչափի սահմանաչափը արդեն անջատված է:'
+  wwctrlPlayerNotFound: 'Նվագարկիչ {0} կամ չի հայտնաբերվել, կամ ակտիվ թարգմանիչ չէ:'
+  wwctrlRateLimitSetSender: 'Սահմանեք ձեր դրույքաչափը {0} վայրկյան:'
+  wwctrlRateLimitOffTarget: 'Անջատել է տոկոսադրույքը սահմանաչափը:'
+  wwctrlNotATranslator: 'Դուք ակտիվ թարգմանիչ չեք: Համոզվեք, որ դուք պետք է սահմանել
+    այս /wwct.'
+  wwctrlRateLimitAlreadyOffSender: Ձեր տոկոսադրույքը սահմանաչափը արդեն անջատված է.
+  wwctGUIRateButton: Սահմանել դրույքաչափը
+  wwctGUIConversationRateLimit: 'Թարգմանության համար սահմանաչափը ընթացիկ {0} վայրկյան
+    է: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար կամ մուտքագրեք 0
+    սահմանը անջատելու համար: Մուտքագրեք ոչինչ պակաս, քան 0 վերադառնալ.'
+  wwctGUITargetPlayerNull: Թիրախային խաղացողը անջատված է սերվերի.
+  wwcConfigConversationSyncUserDataDelayInput: 'Օգտագործողի տվյալների համաժամացման
+    ընթացիկ հետաձգումը {0} վայրկյան է: Մուտքագրեք ավելի մեծ բան, քան 10- ը նոր արժեք
+    սահմանելու համար, կամ 10- ից պակաս բան վերադառնալու համար:'
+  wwcConfigGUISyncUserDataButton: Փոխել օգտվողի տվյալների Sync հետաձգումը
+  wwcConfigSyncDelayEnabled: Հետաձգումը մեկ օգտագործողի տվյալների համաժամացման սահմանված
+    {0} վայրկյան.
+  wwcConfigConversationSyncUserDataDelaySuccess: Օգտվող տվյալների sync ուշացումը սահմանել
+    հաջողությամբ.
+  wwcConfigSyncDelayInvalid: Անվավեր օգտագործողի տվյալների sync ուշացումը սահմանված
+    config.yml. Նախնականը մինչեւ 7200 վայրկյան...
+  wwcConfigCacheInvalid: Թարգմանիչ քեշը չափը անվավեր. Նախնականը 10...
+  wwcInventoryErrorPlayer: Սխալ հայտնաբերվել է ձեր GUI. A տեղեկամատյան ուղարկվել է
+    մխիթարել.
+  wwcInventoryError: '{0} օգտագործողի GUI- ի հետ հայտնաբերված սխալը: Խնդրում ենք այս
+    հարցը զեկուցել մշակողին:'
+  wwctiOffTarget: Նյութի թարգմանությունը անջատված է համար {0}.
+  wwctiOffSender: Նյութի թարգմանությունը անջատված.
+  wwcItemTranslateTitleStock: Անհնար է թարգմանել լռելյայն տարրերի
+  wwctGUIItemButton: Toggle Նյութի թարգմանություն
+  wwcItemTranslateTitleDone: Թարգմանված նյութի վերնագիրը հաջողությամբ
+  wwcGUITempItem: Նյութի Ցուցադրել
+  wwcItemTranslateStart: Թարգմանելով թիրախային նյութը...
+  wwcBookTranslateTitleSuccess: 'Թարգմանված գրքի վերնագիր: {0}'
+  wwctiOnSender: Նյութի թարգմանությունը միացված. Աջ սեղմեք մի տարրի ձեր հիմնական ձեռքը
+    թարգմանել այն!
+  wwcItemTranslateLoreStart: Թարգմանություն թիրախային կետի...
+  wwcItemTranslateLoreDone: Թարգմանված նյութը Lore հաջողությամբ.
+  wwctiOnTarget: Նյութի թարգմանությունը միացված է {0} համար։
+  wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
+    config.yml կամ /wwcc օգտագործել այս plugin.'
+  wwcConfigGUIEachTranslatorSettings: '{0} կոնֆիգուրացիա'
+  wwcConfigGUIWatsonButton: Վոտսոն
+  wwcServerReloadWarning: 'WorldwideChat- ը չի զերծ օգտագործման/վերաբեռնել: Խնդրում
+    ենք շարունակել զգուշությամբ.'
+  wwcConfigEnabledDebugMode: Միացված Debug ռեժիմ. Եթե դուք ոչ մի ծրագրավորող կամ troubleshooter,
+    դուք պետք է անջատեք այս.
+  wwcTranslatorErrorThresholdReached: Սխալ շեմը հասել. Այս plugin այժմ վերաբեռնել,
+    եւ անջատել բոլոր թարգմանիչների.
+  wwcConfigErrorLimitEnabled: Թարգմանիչ սխալի սահմանաչափը սահմանված է {0}.
+  wwcTranslatorError: 'Խնդիրն առաջացել է, երբ փորձում է ձեր թարգմանությունը. Խնդրում
+    ենք կրկին փորձեք:'
+  wwcConfigErrorLimitInvalid: Անվավեր թարգմանիչ սխալ սահմանաչափը սահմանվել է config.yml.
+    Նախնականը 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Խնդրում ենք ստուգել errorLog.txt է
+    WorldwideChat plugin թղթապանակում լրացուցիչ տեղեկությունների համար.
+  wwctInvalidInputLangCode: 'Անվավեր մուտքագրման լեզվի կոդը տրամադրված! Վավեր lang
+    կոդեր: {0}'
+  wwctInvalidOutputLangCode: 'Անվավեր ելքային լեզվի կոդը տրամադրված! Վավեր lang կոդեր:
+    {0}'
+  wwctGUISourceTranslationSelected: Դուք ընտրել եք այս լեզուն.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Ջնջել անտեսում
+  wwcConfigConversationOverrideTextChange: 'Խնդրում ենք մուտքագրել նոր հաղորդագրություն
+    այս անտեսման համար, կամ մուտքագրեք 0 ետ վերադառնալու համար: Հիշեք, որ ներառել
+    ցանկացած փոփոխականներ սկսած տոկոսային նշանների դուք տեսնում եք բնօրինակը հաղորդագրության.'
+  wwctGUISourceOrTargetTranslationAlreadyActive: 'Այս լեզուն արդեն ակտիվ է:'
+  wwcConfigGUIChatMessagesPossibleOverrides: Ընտրեք հաղորդագրություն
+  wwcConfigGUIChatMessagesModifyOverride: Փոփոխել գոյություն ունեցող անտեսում
+  wwcConfigConversationOverrideDeletionSuccess: 'Պատվերով հաղորդագրության անտեսումը
+    ջնջվել է:'
+  wwcConfigGUIChatMessagesDeadOverride: 'Այս անտեսումը կամ անվավեր է, կամ բնօրինակը
+    հաղորդագրությունը հեռացվել է: Դուք պետք է ջնջել այս.'
+  wwcConfigGUIMessagesAlreadyOverriden: 'Դուք արդեն ունեք անտեսեն այս հաղորդագրության
+    համար:'
+  wwcConfigGUIChatMessagesOverrideNewButton: Ավելացնել նոր անտեսեն
+  wwcConfigGUIMessagesOverrideCustomLabel: Նոր հաղորդագրություն
+  wwcConfigConversationOverrideTextChangeSuccess: Նոր հաղորդագրություն հաջողությամբ
+    սահմանված.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Փոխել գոյություն ունեցող տեքստը
+  wwcExampleMessage: Սա կեղծ հաղորդագրություն, եւ նախատեսված է overriden որպես օրինակ.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Բնօրինակը հաղորդագրություն
+  wwcConfigGUIDebugModeButton: Անջատել Debug ռեժիմ
+  wwcConfigConversationDebugModeSuccess: Հաջողությամբ toggled debug ռեժիմ.
+  wwcConfigGUIErrorLimitButton: Փոխել Թարգմանիչ սխալ Սահմանափակում
+  wwcConfigConversationErrorLimitSuccess: 'Սխալ սահմանաչափը հաջողությամբ սահմանված:'
+  wwcEntityTranslateStart: Թարգմանելով թիրախային անձ...
+  wwcConfigGUICharacterLimitButton: Փոխել հաղորդագրություն բնույթի սահմանաչափը
+  wwcConfigMessageCharLimitInvalid: Անվավեր սահմանաչափը մեկ հաղորդագրության մեջ սահմանված
+    config.yml. Նախնականը 255 Chars...
+  wwcConfigConversationCharacterLimitSuccess: 'Նիշերի սահմանաչափը հաջողությամբ սահմանված:'
+  wwcteOnTarget: Անդամության թարգմանությունը միացված է {0} համար։
+  wwcEntityTranslateDone: 'Թարգմանված անձի Անունը: {0}'
+  wwcEntityTranslateNoName: Անհատությունը չունի մաքսային անուն.
+  wwcConfigConversationErrorLimitInput: 'Յուրաքանչյուր թարգմանչի ընթացիկ սխալի սահմանաչափը
+    է {0}: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար կամ մուտքագրեք
+    0- ից պակաս կամ հավասար է:'
+  wwcConfigGUIGlobalRateLimitButton: Փոխել Գլոբալ Տոկոսադրույքը
+  wwcteOnSender: 'Անձ թարգմանությունը միացված. Աջ սեղմեք անձի վրա, թարգմանել իր անունը:'
+  wwcConfigGUIResponseLimitButton: Փոխել Թարգմանիչ արձագանքման Timeout
+  wwcConfigMessageCharLimitEnabled: 'Նիշերի սահմանաչափը մեկ հաղորդագրության սահմանված
+    համար {0} նիշերի համար:'
+  wwcteOffTarget: Անդամության թարգմանությունը անջատված է {0} համար։
+  wwcCharLimit: 'Ձեր հաղորդագրությունը չափազանց երկար է! Խնդրում ենք համոզվեք, որ
+    ձեր հաղորդագրությունը պակաս է {0} նիշերից երկարությամբ:'
+  wwcteOffSender: Անձ թարգմանությունը հաշմանդամ.
+  wwctGUIEntityButton: Toggle անձի թարգմանություն
+  wwctrlRateLimitBadInt: Ձեր տոկոսադրույքը սահմանաչափը չէ վավեր թիվ.
+  wwcTranslatorErrorConsole: Խնդիրն առաջացել է, իսկ օգտվողը {0} փորձում էր իրենց թարգմանությունը.
+    Խնդրում ենք ստուգել errorLog.txt լրացուցիչ մանրամասների համար.
+  wwctGUIChatButton: Toggle Զրուցարան Թարգմանություն
+  wwcrBegin: Վերբեռնել WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: '{0} թարգմանության նիստը դադարեցվել է:'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Գլոբալ զրույցը թարգմանվում
+    է, բայց դուք ունեք ակտիվ թարգմանության նիստ է {0} է {1}:'
+  wwctCannotTranslateConsole: Դուք չեք կարող սկսել թարգմանության նիստ մխիթարել!
+  wwcOnJoinTranslationNotificationSourceLang: 'Դուք ունեք ակտիվ թարգմանության նիստ
+    է {0} է {1}:'
+  wwctTranslationStopped: 'Ձեր թարգմանության նիստը դադարեցվել է:'
+  wwctAutoTranslateStart: Սկսել նոր թարգմանության նիստ է {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Դուք ունեք ակտիվ թարգմանության նիստ
+    է {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Գլոբալ զրույցը թարգմանվում
+    է, բայց դուք ունեք ակտիվ թարգմանության նիստ է {0}.
+  wwcConfigGUIChangesNotSaved: Ձեր փոփոխությունները չեն ուժի մեջ մտնելու, քանի դեռ
+    դուք սեղմեք կարմիր արգելքը /wwcc.
+  wwctciOffSender: 'Մուտքային Վիճակագրություն թարգմանությունը անջատված է:'
+  wwctGUIChatIncomingButton: Toggle Մուտքային Զրուցարան Թարգմանություն
+  wwctcoOffSender: Արտագնա Վիճակագրություն թարգմանություն անջատված.
+  wwctcoOnSender: 'Ելքային զրույցի թարգմանությունը միացված է: Ցանկացած բան, որ դուք
+    ասում եք, կթարգմանվի!'
+  wwctciOnSender: Մուտքային Վիճակագրություն թարգմանությունը միացված. Ցանկացած բան,
+    որը դուք ստանում եք, կթարգմանվի!
+  wwctGUIChatMenu: Toggle Զրուցարան Թարգմանություն Մենյու
+  wwctcoOnTarget: Արտագնա Վիճակագրություն թարգմանությունը հնարավորություն է տալիս
+    {0}.
+  wwctcoOffTarget: Արտագնա Վիճակագրություն թարգմանությունը անջատված է {0}.
+  wwctGUIChatOutgoingButton: Toggle Ելքային Զրուցարան Թարգմանություն
+  wwctciOnTarget: Մուտքային Վիճակագրություն թարգմանությունը հնարավորություն է տալիս
+    {0}.
+  wwctciOffTarget: Մուտքային Վիճակագրություն թարգմանությունը անջատված է {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Բնօրինակը մուտքային Վիճակագրություն
+    կցվում է թարգմանության որպես սավառնել տեքստը toggled հաջողությամբ.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ավելացնել բնօրինակ մուտքային հաղորդագրությունները
+    որպես սավառնել տեքստ
+  wwctGUIExistingChatOutgoingEnabled: 'Ելքային Զրուցարան Թարգմանություն Միացված: {0}'
+  wwctGUIExistingTranslationInput: 'Մուտքային լեզու: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Մուտքային Զրուցարան Թարգմանություն Միացված:
+    {0}'
+  wwctGUIExistingTranslationOutput: 'Արդյունք լեզու: {0}'
+  wwcTranslatorAttempt: Փորձում է միացնել թարգմանիչ config.yml... (Փորձի {0}/ {1})
+  wwcTimeoutExceptionConsole: 'Խաղացող %Ես ունեի իրենց վերջին խնդրանքը timeout. Այս
+    սխալը ճակատագրական չէ, բայց WorldWideHat- ը պետք է վերբեռնվի, եթե այն շարունակում
+    է տեղի ունենալ:'
+  wwcGUIPageNumber: 'Էջի համարը: {0}'
+  wwcConfigYAMLFallback: Ընկնում ետ YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: 'SQL toggled հաջողությամբ. Վերբեռնել փոփոխության
+    ուժի մեջ մտնելու համար:'
+  wwcConfigConversationGoogleTranslateToggleSuccess: 'Հաջողությամբ toggled Google
+    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigYAMLDefault: Defaulted է YAML տվյալների պահպանման.
+  wwcConfigGUISQLMenuButton: Փոխել SQL կարգավորումները
+  wwcConfigConversationWatsonTranslateToggleSuccess: 'Հաջողությամբ toggled Watson
+    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigGUIToggleGoogleTranslateButton: Փոխարկել Google Թարգմանել
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Թարգմանել
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Թարգմանել
+  wwcConfigGUIStorageSettings: Պահպանման կոնֆիգուրացիա
+  wwcConfigConversationAmazonTranslateToggleSuccess: 'Հաջողությամբ toggled Amazon
+    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigGUISQLPortButton: Փոխել SQL նավահանգիստ
+  wwcConfigGUISQLOptionalArgsButton: Փոխել SQL կամընտիր փաստարկները
+  wwcConfigConversationToggleSQLSSLSuccess: SSL համար SQL toggled հաջողությամբ.
+  wwcConfigConversationSQLPortInput: 'Ներկայիս նավահանգիստը {0} է: Մուտքագրեք այլ
+    բան, քան 0 նոր նավահանգիստ սահմանելու համար, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigGUISQLPasswordButton: Փոխել SQL գաղտնաբառը
+  wwcConfigConversationSQLHostnameSuccess: 'Հաջողությամբ փոխվել է SQL հոսթանունը:'
+  wwcConfigConversationSQLHostnameInput: 'Ներկայիս hostname- ը ` {0}: Մուտքագրեք 0-ից
+    այլ բան `նոր հոսթանուն սահմանելու համար կամ 0 տիպը վերադառնալու համար:'
+  wwcConfigGUISQLHostnameButton: Փոխել SQL Հոսթանունը
+  wwcConfigConversationSQLOptionalArgsSuccess: 'Հաջողությամբ փոխվել է ընտրովի SQL
+    փաստարկները:'
+  wwcConfigConversationSQLPasswordSuccess: 'Հաջողությամբ փոխեց SQL գաղտնաբառը:'
+  wwcConfigConversationSQLPasswordInput: 'Ներկայիս գաղտնաբառը {0} է: Մուտքագրեք այլ
+    բան, քան 0 նոր գաղտնաբառ սահմանելու համար, կամ մուտքագրեք 0 վերադառնալ:'
+  wwcConfigGUIToggleSQLSSLButton: Փոխել SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: 'Հաջողությամբ փոխվել է SQL օգտվողի անունը:'
+  wwcConfigConversationSQLUsernameInput: 'Ներկայիս մուտքաբառը {0} է: Մուտքագրեք այլ
+    բան, քան 0-ից նոր օգտվողի անուն սահմանելու համար, կամ մուտքագրեք 0 վերադառնալ:'
+  wwcConfigConversationSQLPortSuccess: Հաջողությամբ փոխվել է SQL նավահանգիստ.
+  wwcConfigGUISQLUsernameButton: Փոխել SQL Մականուն
+  wwcConfigConversationSQLOptionalArgsCleared: Ըստ ցանկության փաստարկները մաքրվել
+    հաջողությամբ.
+  wwcConfigConversationSQLOptionalArgsInput: 'Ներկայիս ընտրովի SQL փաստարկներն են
+    ` {0}: Մուտքագրեք փաստարկները բաժանված ստորակետով (key= value, key2 = value2),
+    կամ պարզ մուտքագրեք ընթացիկ args- ը սրբելու համար, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigConversationSQLDatabaseNameInput: 'Ներկայիս տվյալների բազայի անվանում {0}:
+    Մուտքագրեք այլ բան, քան 0 նոր տվյալների բազայի անունը, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigGUISQLDatabaseNameButton: Փոխել SQL տվյալների բազան
+  wwcConfigConversationSQLDatabaseNameSuccess: 'Հաջողությամբ փոխեց SQL տվյալների բազայի
+    անունը:'
+  wwcConfigConversationFatalAsyncAbort: 'Ներկայիս timeout- ը բոլոր async խնդիրները
+    խաթարելու համար {0} վայրկյան է: Մուտքագրեք որեւէ բան վերեւում 7 է սահմանել նոր
+    timeout, կամ որեւէ բան ներքեւում այն վերադառնալ.'
+  wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
+  wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը
+  libreHttp400: 'Վատ խնդրանքը ուղարկվել է Libre Թարգմանել! Եթե դուք անում մի բան,
+    որ դուք չպետք է, Դուք չպետք է ստանալ այս. Խնդրում ենք կապնվել մշակողի հետ:'
+  wwcConfigGUILibreTranslateApiKeyButton: Փոխել ազատ Թարգմանել API Key
+  libreHttp403: Missing Libre Թարգմանել API Key, կամ դուք արգելված է սերվերի!
+  wwcConfigConversationLibreURLSuccess: Ազատ URL սահմանել հաջողությամբ.
+  wwcConfigConversationLibreTranslateApiKeyInput: 'Ներկայիս API ստեղնը {0} է: Խնդրում
+    ենք մուտքագրել API ստեղնը Libre- ի համար, կամ մուտքագրել 0, վերադառնալ:'
+  wwcConfigGUILibreTranslateButton: Ազատ Թարգմանել
+  libreHttp429: Վստահություն սերվերից փոխարժեքի սահմանաչափի պատճառով.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle անվճար թարգմանել
+  wwcConfigConversationLibreTranslateToggleSuccess: 'Հաջողությամբ toggled Libre Թարգմանել.
+    Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
+  wwcConfigConversationLibreTranslateApiKeySuccess: Ազատ API բանալին սահմանվել հաջողությամբ.
+  wwcConfigConversationLibreURLInput: 'Ներկայիս URL- ն {0} է: Խնդրում ենք մուտքագրել
+    URL Libre- ի համար, կամ մուտքագրել 0 ՝ վերադառնալու համար:'
+  libreHttpUnknown: 'Անհայտ http սխալ: {0}'
+  wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL
+  wwcConfigConnectionFail: 'Չհաջողվեց միանալ {0}- ին:'
+  wwcConfigConversationMongoDatabaseNameSuccess: 'Հաջողությամբ փոխեց MongoDB տվյալների
+    բազայի անունը:'
+  wwcConfigGUIMongoHostnameButton: Փոխել MongoDB հյուրընկալողի անունը
+  wwcConfigConversationMongoPasswordInput: 'Ընթացիկ գաղտնաբառը {0} է: Մուտքագրեք 0-ից
+    բացի որևէ այլ բան ՝ նոր գաղտնաբառ սահմանելու համար, կամ մուտքագրեք 0 ՝ վերադառնալու
+    համար:'
+  wwcConfigConversationMongoPortInput: 'Ներկայիս պորտը {0} է: Մուտքագրեք որևէ այլ
+    բան, քան 0 ՝ նոր պորտ սահմանելու համար, կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigConversationToggleMongoSuccess: 'MongoDB- ը հաջողությամբ անցավ: Վերբեռնել
+    փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigConversationMongoHostnameInput: 'Ներկայիս հյուրընկալողի անունը {0} է: Մուտքագրեք
+    որևէ այլ բան, քան 0 ՝ նոր հոսթանուն սահմանելու համար, կամ մուտքագրեք 0 ՝ վերադառնալու
+    համար:'
+  wwcConfigConversationMongoHostnameSuccess: 'Հաջողությամբ փոխեց MongoDB հյուրընկալողի
+    անունը:'
+  wwcConfigGUIMongoMenuButton: Փոխել MongoDB կարգավորումները
+  wwcConfigGUIToggleMongoButton: Անջատեք Մոնգոդբ
+  wwcConfigConversationMongoDatabaseNameInput: 'Ներկայիս տվյալների բազայի անունը {0}
+    է: Մուտքագրեք ցանկացած այլ բան, քան 0- ը, նոր տվյալների բազայի անունը սահմանելու
+    համար կամ մուտքագրեք 0, վերադառնալու համար:'
+  wwcConfigConversationMongoOptionalArgsInput: 'Ներկայիս ընտրովի MongoDB փաստարկներն
+    են ՝ {0}: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով (key=value,
+    key2 = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար, կամ մուտքագրեք
+    0 ՝ հետ գնալու համար:'
+  wwcConfigGUIMongoDatabaseNameButton: Փոխել MongoDB տվյալների բազան
+  wwcConfigConversationMongoUsernameInput: 'Ներկայիս օգտվողի անունը {0} է: Մուտքագրեք
+    0- ից բացի որևէ այլ բան ՝ նոր օգտվողի անուն սահմանելու համար, կամ մուտքագրեք 0
+    ՝ վերադառնալու համար:'
+  wwcConfigGUIMongoOptionalArgsButton: Փոխել MongoDB- ի ընտրովի փաստարկները
+  wwcConfigConversationMongoUsernameSuccess: 'Հաջողությամբ փոխեց MongoDB օգտվողի անունը:'
+  wwcConfigConversationMongoPasswordSuccess: 'Հաջողությամբ փոխեց MongoDB գաղտնաբառը:'
+  wwcConfigConversationMongoPortSuccess: 'Հաջողությամբ փոխեց MongoDB նավահանգիստը:'
+  wwcConfigGUIMongoUsernameButton: Փոխել MongoDB օգտվողի անունը
+  wwcConfigGUIMongoPasswordButton: Փոխել MongoDB գաղտնաբառը
+  wwcConfigConversationMongoOptionalArgsSuccess: 'Հաջողությամբ փոխեց կամընտիր MongoDB
+    փաստարկները:'
+  wwcConfigConversationMongoOptionalArgsCleared: Ընտրովի փաստարկները մաքրվել հաջողությամբ.
+  wwcConfigGUIMongoPortButton: Փոխել MongoDB նավահանգիստը
+  wwcConfigInvalidFatalAsyncTimeout: 'Անվավեր ճակատագրական async timeout հավաքածու:
+    Defaulting է 10 վայրկյան...'
+  libreHttp500: 'Ձեր ընտրած մուտքային և ելքային լեզվական զույգը չի ապահովվում: Խնդրում
+    ենք ընտրել այլ լեզվական հավաքածու:'
+  wwcConfigGUIDeepLTranslateButton: Փոխել DeepL թարգմանել
+  wwcConfigConversationDeepLTranslateToggleSuccess: 'Հաջողությամբ toggled DeepL թարգմանել.
+    Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
+  wwcConfigGUIDeepLTranslateApiKeyButton: Փոխել DeepL Թարգմանել API բանալին
+  wwcConfigGUIToggleDeepLTranslateButton: Փոխել DeepL թարգմանել
+  wwcConfigConversationDeepLTranslateApiKeySuccess: 'DeepL API- ի բանալին հաջողությամբ
+    դրված է:'
+  wwcConfigConversationDeepLTranslateApiKeyInput: 'Ներկայիս API ստեղնը {0} է: Խնդրում
+    ենք մուտքագրել API ստեղնը DeepL- ի համար կամ մուտքագրել 0, վերադառնալ:'
+  wwcConfigErrorsToIgnoreSuccess: Հաջողությամբ գրանցված թարգմանիչ սխալները անտեսել.
+  wwcConfigErrorsToIgnoreInvalid: Անվավեր թարգմանիչ սխալներ է անտեսել սահմանված config.yml.
+    Գրանցում Նախնականը...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Հաջողությամբ փոխվել է թարգմանիչ սխալներ
+    է անտեսել արտահայտություններ.
+  wwcConfigGUIIgnoreErrorsButton: Փոխել սխալները `անտեսելու համար
+  wwcConfigConversationIgnoreErrorsInput: 'Անտեսել թարգմանչի սխալների արտահայտությունների
+    ներկայիս ցանկը ` {0}: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով
+    (key= value, key2 = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար,
+    կամ մուտքագրեք 0 ՝ հետ գնալու համար: Բացի այդ, մուտքագրում “*” կհանգեցնի plugin
+    չի ստուգել որեւէ թարգմանիչ սխալներ.'
+  wwcConfigConversationIgnoreErrorsCleared: Թարգմանիչ սխալներ է անտեսել արտահայտություններ
+    մաքրվել հաջողությամբ.
+  wwcSupportedServer: Նախաստորագրելով աշխարհըWideCat- ը {0 }- ի համար...
+  wwcSupportedVersion: Հնարավորություններ {0} տարբերակի համար...
+  wwcBadPerms: Դուք չունեք պահանջվող թույլտվությունները այս հրամանը կատարելու համար.
+    {0}
+  wwcsIsActiveTranslator: 'Ակտիվ թարգմանիչն է: {0}'
+  wwcsActiveTransPrevRate: 'Նախորդ դրույքաչափի սահմանաչափի ժամանակը: {0}'
+  wwcsActiveTransSaved: 'Պահված է սկավառակում: {0}'
+  wwcsActiveTransIncoming: 'Թարգմանելով մուտքային զրույցը: {0}'
+  wwcsActiveTransOutLang: 'Արդյունքի լեզու: {0}'
+  wwcsActiveTransInLang: 'Մուտքագրման լեզու: {0}'
+  wwcsActiveTransBook: 'Գիրքի թարգմանություն: {0}'
+  wwcsActiveTransSign: 'Թարգմանչական նշան: {0}'
+  wwcsActiveTransUUID: 'ԼՐԱՑՈՒՄ: {0}'
+  wwcsActiveTransRateLimit: 'Փոխարժեքի սահմանափակում: {0}'
+  wwcsActiveTransColorWarning: 'Ստացված գունային նախազգուշացում: {0}'
+  wwcsActiveTransSignWarning: Ստացված նշանի խմբագրման նախազգուշացում. {0}
+  wwcsTitle: '{0} -ի գրառում'
+  wwcsActiveTransOutgoing: Արտագնա զրույցի թարգմանություն` {0}
+  wwcsActiveTransItem: 'Թարգմանչական նյութ: {0}'
+  wwcsActiveTransEntity: 'Թարգմանող կազմակերպություն: {0}'
+  wwctsWarning: 'Նշանների փոփոխումն անջատված է նշաններ թարգմանելիս:'
+  wwcConfigConversationAzureTranslateToggleSuccess: 'Հաջողությամբ միացվել է Azure
+    Translate- ը: Վերաբեռնեք, որպեսզի փոփոխություններն ուժի մեջ մտնեն:'
+  wwcConfigGUIAzureTranslateButton: Azure Թարգմանություն
+  wwcConfigGUIAzureTranslateApiKeyButton: Փոխեք Azure Translate API բանալին
+  wwcConfigGUIAzureTranslateRegionButton: Փոխեք Azure թարգմանության տարածաշրջանը
+  wwcConfigConversationAzureTranslateRegionSuccess: 'Azure տարածաշրջանը հաջողությամբ
+    սահմանվել է:'
+  wwcConfigConversationAzureTranslateApiKeyInput: 'Ընթացիկ API բանալին {0} է: Խնդրում
+    ենք մուտքագրել API բանալին Azure- ի համար կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationAzureTranslateApiKeySuccess: 'Azure API բանալին հաջողությամբ
+    հավաքվել է:'
+  wwcConfigConversationAzureTranslateRegionInput: 'Ներկայիս տարածաշրջանը {0} է: Խնդրում
+    ենք մուտքագրել շրջան Azure- ի համար կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigGUIToggleAzureTranslateButton: Միացնել Azure թարգմանությունը
+  wwcConfigGUISystranTranslateApiKeyButton: Փոխեք Systran թարգմանության API բանալին
+  wwcConfigGUIToggleSystranTranslateButton: Միացնել Systran թարգմանությունը
+  wwcConfigConversationSystranTranslateApiKeyInput: 'Ընթացիկ API բանալին {0} է: Խնդրում
+    ենք մուտքագրել API ստեղնը Systran- ի համար կամ մուտքագրել 0 հետ գնալու համար:'
+  wwcISOJSONFail: 'Չի կարող ուղղել լեզվի օբյեկտները ISO JSON- ով:'
+  wwcConfigConversationSystranTranslateToggleSuccess: 'Հաջողությամբ միացվել է Systran
+    Translate- ը: Վերաբեռնեք, որպեսզի փոփոխություններն ուժի մեջ մտնեն:'
+  wwcConfigConversationSystranTranslateApiKeySuccess: 'Systran API բանալին հաջողությամբ
+    հավաքվել է:'
+  wwcConfigGUISystranTranslateButton: Սիստրան Թարգմանություն
+  wwcrTransFail: 'Վերաբեռնվել է WorldwideChat-ը, բայց չի հաջողվել թարգմանիչ միացնել:'
+  wwcdCacheCleared: 'Թարգմանության քեշը մաքրվեց:'
+  wwcdInvalidCmd: 'Անվավեր փաստարկներ:'
+  systranHttpUnknown: 'Անհայտ http սխալ: {0}'
+  systranHttp400: 'Վատ պարամետրերը ուղարկվել են Systran- ին: Կարող է վատ լեզվական
+    զույգ լինել:'
+  systranHttp500: 'Ներքին սերվերի սխալ Systran վերջնակետից ({0}):'
+  wwcInvalidStorageSession: '{0} միացված է ձեր կոնֆիգուրացիայում, բայց կապ չի հաստատվում:
+    Խնդրում ենք փորձել վերաբեռնումը շտկելու համար սա, բայց խնդրում ենք կապվել մշակողի
+    հետ, եթե նախկինում հաջողված կապի հաղորդագրություն եք ստացել {0} -ից:'
+  wwcConfigConversationPostgresDatabaseNameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL
+    տվյալների բազայի անունը:'
+  wwcConfigConversationPostgresOptionalArgsCleared: 'Ընտրովի փաստարկները հաջողությամբ
+    մաքրվել են:'
+  wwcConfigConversationPostgresPortInput: 'Ներկայիս նավահանգիստը {0} է: Մուտքագրեք
+    որևէ այլ բան, քան 0-ը, նոր նավահանգիստ սահմանելու համար, կամ մուտքագրեք 0 ՝ ետ
+    գնալու համար:'
+  wwcConfigGUIPostgresUsernameButton: Փոխել PostgreSQL օգտվողի անունը
+  wwcConfigConversationPostgresOptionalArgsSuccess: 'Հաջողությամբ փոխվեց ընտրովի PostgreSQL
+    փաստարկները:'
+  wwcConfigConversationTogglePostgresSSLSuccess: 'PostgreSQL- ի համար SSL- ը հաջողությամբ
+    միացվեց:'
+  wwcConfigConversationPostgresPasswordSuccess: 'Հաջողությամբ փոխեց PostgreSQL գաղտնաբառը:'
+  wwcConfigConversationPostgresPortSuccess: 'Հաջողությամբ փոխվեց PostgreSQL պորտը:'
+  wwcConfigConversationPostgresUsernameInput: 'Ներկայիս օգտագործողի անունը {0} է:
+    Մուտքագրեք որևէ այլ բան, քան 0-ը, նոր օգտանուն սահմանելու համար, կամ մուտքագրեք
+    0 ՝ ետ գնալու համար:'
+  wwcConfigConversationTogglePostgresSuccess: 'PostgreSQL- ը հաջողությամբ միացվեց:
+    Վերաբեռնեք, որպեսզի փոփոխությունն ուժի մեջ մտնի:'
+  wwcConfigGUITogglePostgresButton: Միացնել PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Փոխել PostgreSQL գաղտնաբառը
+  wwcConfigGUIPostgresOptionalArgsButton: Փոխեք PostgreSQL- ի ընտրովի փաստարկները
+  wwcConfigGUIPostgresMenuButton: Փոխել PostgreSQL- ի կարգավորումները
+  wwcConfigConversationPostgresPasswordInput: 'Ընթացիկ գաղտնաբառը {0} է: Նոր գաղտնաբառ
+    սահմանելու համար մուտքագրեք 0-ից այլ բան, կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationPostgresHostnameInput: 'Ընթացիկ հյուրընկալողի անունը {0} է:
+    Մուտքագրեք որևէ այլ բան, քան 0-ը, նոր հյուրընկալողի անուն սահմանելու համար կամ
+    մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigGUIPostgresPortButton: Փոխեք PostgreSQL նավահանգիստը
+  wwcConfigConversationPostgresHostnameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL հոսթերի
+    անունը:'
+  wwcConfigGUIPostgresHostnameButton: Փոխել PostgreSQL հոսթերի անունը
+  wwcConfigConversationPostgresDatabaseNameInput: 'Տվյալների բազայի ներկայիս անվանումը
+    {0} է: Մուտքագրեք որևէ այլ բան, քան 0, նոր տվյալների բազայի անուն սահմանելու համար,
+    կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationPostgresOptionalArgsInput: 'Ընթացիկ ընտրովի PostgreSQL փաստարկներն
+    են՝ {0}: Մուտքագրեք ստորակետով առանձնացված փաստարկներ (key=value, key2 = value2),
+    կամ մուտքագրեք clear ՝ ընթացիկ արգերը սրբելու համար, կամ մուտքագրեք 0 ետ գնալու
+    համար:'
+  wwcConfigGUITogglePostgresSSLButton: Միացնել PostgreSQL SSL- ը
+  wwcConfigGUIPostgresDatabaseNameButton: Փոխել PostgreSQL տվյալների բազան
+  wwcConfigConversationPostgresUsernameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL օգտագործողի
+    անունը:'
+  wwcConfigGUIStorageTypeSettings: '{0} Կազմաձեւում'
+  wwcConfigConversationPrefixInput: 'Ներկայիս նախածանցը {0} է: Խնդրում ենք մուտքագրել
+    նորը կամ մուտքագրել 0 հետ գնալու համար:'
+  wwcConfigConversationLangInput: 'Պլագինի ներկայիս լեզուն {0} է: Խնդրում ենք մուտքագրել
+    վավեր լեզվի կոդ կամ մուտքագրեք 0 չեղարկելու համար: Վավեր լեզվական կոդեր: {1}'
+  wwcdCacheSize: 'Քեշի չափը ներկայումս {0} է, {1} սահմանաչափով:'
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: 'Սկսելով նոր թարգմանչական նստաշրջան {0} -ից մինչև {1}:'
+  wwctAutoTranslateStartOtherPlayer: 'Մեկնարկում է նոր թարգմանչական նստաշրջան {0}
+    -ից {1} -ի համար:'
+  wwctLangToLangStartOtherPlayer: 'Սկսելով նոր թարգմանական սեանսը {0} -ի համար {1}
+    -ից մինչև {2}:'
+  wwcgLangToLangStart: 'Այժմ թարգմանելով գլոբալ զրույցը {0} -ից մինչև {1}:'
+  wwctrlRateLimitSetTarget: 'Սահմանեք {0} դրույքաչափի սահմանը մինչև {1} վայրկյան:'
+  wwcTimeoutException: 'Ձեր հարցման ժամկետը լրացել է: Խնդրում ենք կրկին փորձել:'
+  wwctbNoMoreOldBooks: 'Գրքերի թարգմանությունը ֆունկցիոնալ չէ ձեր սերվերի տարբերակում:
+    Եթե դուք գտնվում եք Minecraft- ի ավելի վերջին տարբերակի վրա և ստանում եք այս սխալը,
+    դիմեք մշակողին:'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Ընտրեք տեղայնացում
+  wwcConfigGUIMessagesOverridePickChatButton: Վերանայել լռելյայն պլագինի հաղորդագրությունները
+  wwcConfigGUIChatMessagesOverrideSettings: Վերանայել կանխադրված հաղորդագրությունները
+    ({0})
+  wwcConfigGUIMessagesServerLang: 'Սա plugin- ի լռելյայն լեզուն է config.yml- ում:'
+  wwclLangStopped: 'Ձեր տեղայնացումը վերականգնվել է սերվերի լռելյայն:'
+  wwclLangInvalid: '{0} -ը վավեր տեղայնացում չէ: Աջակցվող տեղայնացումներ. {1}'
+  wwclLangStoppedOtherPlayerSender: 'Վերականգնել {0}- ի տեղայնացումը սերվերի կանխադրված:'
+  wwclLangPlayerNotValid: '{0} -ը վավեր խաղացող չէ։'
+  wwclLangChangedOtherPlayerSender: 'Փոխել է {0} - ի տեղայնացումը {1}:'
+  wwclLangChanged: 'Ձեր տեղայնացումը փոխվել է {0}:'
+  wwcsLocalization: 'Տեղայնացում: {0}'
+  wwclLangAlreadyStopped: 'Դուք տեղայնացման հավաքածու չունեք:'
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} -ը տեղայնացման հավաքածու չունի:'
+  wwctGUILocalizeExistingValue: 'Ընթացիկ տեղայնացում: {0}'
+  wwctGUILocalizationButton: Սահմանել տեղայնացում
+  wwctGUILocalizeStopButton: Վերականգնել տեղայնացումը սերվերի կանխադրյալին
+  wwctGUILocalizeTitle: Տեղայնացման մենյու
+  wwctGUISourceSameLang: 'Այս լեզուն նույնն է լինելու, ինչ ձեր աղբյուրի լեզուն:'
+  wwcConfigGUICurrentPlayerLang: 'Սա ձեր ներկայիս տեղայնացումն է:'
+  wwctGUILocalizationSameAsServer: 'Սա WorldwideChat- ի լռելյայն տեղայնացումն է:'
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: 'Այս լեզուն արդեն ակտիվ է ամբողջ
+    աշխարհում:'
+  wwcrStorageTranslatorFail: 'Վերաբեռնված WorldwideChat բայց չհաջողվեց միացնել թարգմանիչ
+    եւ կապել ձեր պահեստավորման կոնֆիգուրացիայի հետ:'
+  wwcrStorageFail: Վերաբեռնված WorldwideChat- ը եւ հաջողությամբ միացրել է թարգմանիչ,
+    բայց ձեր պահեստավորման կոնֆիգուրացիան չհաջողվեց միացնել.
+  wwcConfigPersistentCacheInvalid: 'Անվավեր մշտական քեշի գրառումը config.yml- ում:
+    Կեղծին զրպարտելը...'
+  wwcConfigGUIPersistentCacheButton: Միացնել մշտական քեշը
+  wwcConfigConversationPersistentCacheSuccess: 'Համառ քեշը հաջողությամբ միացվեց:'
+  wwcConfigPersistentCacheEnabled: 'Քեշի տվյալները կպահպանվեն վերբեռնումների ընթացքում:'
+  wwcConfigConversationCharacterLimitInput: 'Ընթացիկ նիշերի սահմանաչափը մեկ հաղորդագրության
+    համար {0} նիշ է: Մուտքագրեք 0-ից մեծ բան (բայց 256-ից պակաս) ՝ նոր արժեք սահմանելու
+    համար կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcdOutdatedSQLStruct: Կարծես թե ձեր MySQL կամ PostgreSQL աղյուսակներից մեկը կամ
+    մի քանիսը ունեն ոչ ճիշտ/հնացած ձեւաչափ. Այս հարցի վերաբերյալ ավելի շատ խոսուն
+    տեղեկություններ են տպվել ձեր մխիթարել; դուք կարող եք կարողանալ ամրագրել այս ձեռքով.
+  wwcdSQLAllSet: 'Ձեր MySQL/PostgreSQL աղյուսակները պատշաճ ձևաչափված են:'
+  wwcdColumnBadType: '{1} աղյուսակի {0} սյունակը ունի {2} տեսակը, բայց ակնկալվող {3}
+    տեսակը:'
+  wwcdColumnMissing: '{0} սյունակը բացակայում է {1} աղյուսակում:'
+  wwcdGoodTable: '{0} աղյուսակը ({1}) ճիշտ ձևաչափն է:'
+  wwcdBadTable: 'Աղյուսակ {0} -ը չի գտնվել ներքին սահմանումներում: Խնդրում ենք կապվել
+    մշակողի հետ:'
+  wwcOldDatabaseStruct: 'Ձեր ընտրած տվյալների բազան ունի աղյուսակի սխալ կարգավորում:
+    Լրացուցիչ տեղեկությունների համար մուտքագրեք հետևյալ հրամանը. /wwcd checkdb'
+  wwctGUIRateButtonLore: Ընթացիկ դրույքի սահմանը ՝ {0} վայրկյան
+
