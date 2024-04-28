@@ -28,8 +28,7 @@ public class PaperChatListener implements Listener {
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-    // TODO: Make sure LOWEST is okay
-    @EventHandler(priority = EventPriority.LOWEST)
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncChatEvent event) {
         try {
             if (!event.isAsynchronous()) {
@@ -72,6 +71,15 @@ public class PaperChatListener implements Listener {
                     Component hoverOutMessage = LegacyComponentSerializer.legacyAmpersand().deserialize(translation);
 
                     // TODO: Make this a translator feature alongside a config option
+                    //Chat chat = main.getVaultChat();
+                    Component displayName = event.getPlayer().displayName();
+                    //if (chat != null) {
+                        // Use Vault Chat API to format the message
+                        //String prefix = chat.getPlayerPrefix(event.getPlayer());
+                        //String suffix = chat.getPlayerSuffix(event.getPlayer());
+                        //displayName = refs.deserial(prefix + event.getPlayer().getDisplayName() + suffix);
+                    //}
+
                     // Add hover text w/original message
                     if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
                         hoverOutMessage = hoverOutMessage
@@ -79,7 +87,7 @@ public class PaperChatListener implements Listener {
                     }
 
                     // Re-render original message but with new text.
-                    Component outMsg = event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), hoverOutMessage, Audience.audience(event.viewers()));
+                    Component outMsg = event.renderer().render(event.getPlayer(), displayName, hoverOutMessage, Audience.audience(event.viewers()));
                     currPlayer.sendMessage(outMsg);
                 } else {
                     unmodifiedMessageRecipients.add(eaRecipient);

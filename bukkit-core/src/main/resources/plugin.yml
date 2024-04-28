@@ -4,6 +4,7 @@ api-version: 1.13
 description: Break the blocky language barrier!
 author: BadSkater0729
 main: com.badskater0729.worldwidechat.WorldwideChat
+softdepend: [Vault]
 commands:
     wwc:
         description: Prints WorldwideChat version.

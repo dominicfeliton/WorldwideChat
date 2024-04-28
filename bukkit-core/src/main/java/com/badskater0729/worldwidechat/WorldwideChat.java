@@ -7,6 +7,7 @@ import java.util.concurrent.*;
 import com.badskater0729.worldwidechat.commands.*;
 import com.badskater0729.worldwidechat.util.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
+import net.milkbowl.vault.chat.Chat;
 import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -15,6 +16,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -108,7 +110,9 @@ public class WorldwideChat extends JavaPlugin {
 	private int errorLimit = 5;
 
 	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
-	
+
+	private Chat vaultChat;
+
 	/* Default constructor */
 	public WorldwideChat() {
 		super();
@@ -162,6 +166,17 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Load "secondary" services + plugin configs, check if they successfully initialized
 		doStartupTasks(false);
+
+		// Load Vault
+		if (getServer().getPluginManager().getPlugin("Vault") != null) {
+			refs.debugMsg("Registering vault!");
+			RegisteredServiceProvider<Chat> rsp = getServer().getServicesManager().getRegistration(Chat.class);
+			if (rsp != null) {
+				vaultChat = rsp.getProvider();
+			} else {
+				refs.debugMsg("Failed to register vault??");
+			}
+		}
 
 		// Register event handlers
 		wwcHelper.registerEventHandlers();
@@ -1067,5 +1082,9 @@ public class WorldwideChat extends JavaPlugin {
 
 	public ArrayList<String> getErrorsToIgnore() {
 		return errorsToIgnore;
+	}
+
+	public Chat getVaultChat() {
+		return vaultChat;
 	}
 }

@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -26,11 +27,8 @@ public class ChatListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
-	
-	//@EventHandler(priority = EventPriority.HIGHEST)
-	// TODO: Make sure LOWEST is okay
-	// TODO: We probably have to keep at HIGHEST? Figure it out
-	@EventHandler(priority = EventPriority.LOWEST)
+
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 
 		try {
@@ -63,7 +61,19 @@ public class ChatListener implements Listener {
 
 					// Translate message + get original format
 					String translation = refs.translateText(event.getMessage() + " (Translated)", eaRecipient);
-					String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+
+					Chat chat = main.getVaultChat();
+					String outMessageWithoutHover = "";
+					if (chat != null) {
+						// Use Vault Chat API to format the message
+						String prefix = chat.getPlayerPrefix(event.getPlayer());
+						String suffix = chat.getPlayerSuffix(event.getPlayer());
+						String formattedName = prefix + event.getPlayer().getDisplayName() + suffix;
+						outMessageWithoutHover = String.format(event.getFormat(), formattedName, translation);
+					} else {
+						// Fallback to original formatting if Vault Chat is not available
+						outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+					}
 
 					// Convert to TextComponent
 					TextComponent hoverOutMessage = Component.text()
