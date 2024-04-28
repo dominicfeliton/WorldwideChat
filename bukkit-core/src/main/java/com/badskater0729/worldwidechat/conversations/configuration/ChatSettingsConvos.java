@@ -1,5 +1,7 @@
 package com.badskater0729.worldwidechat.conversations.configuration;
 
+import com.badskater0729.worldwidechat.util.PlayerRecord;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -23,10 +25,13 @@ public class ChatSettingsConvos {
 		private SmartInventory previousInventory;
 		
 		private String currentOverrideName;
+
+		private String inLang;
 		
-		public ModifyOverrideText(SmartInventory previousInventory, String currentOverrideName) {
+		public ModifyOverrideText(SmartInventory previousInventory, String currentOverrideName, String inLang) {
 			this.previousInventory = previousInventory;
 			this.currentOverrideName = currentOverrideName;
+			this.inLang = inLang;
 		}
 		
 		@Override
@@ -44,14 +49,17 @@ public class ChatSettingsConvos {
 
 			if (!input.equals("0")) {
 				Player currPlayer = ((Player) context.getForWhom());
-				main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, input);
+				YamlConfiguration msgConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
+
+				msgConfig.set("Overrides." + currentOverrideName, input);
 				main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
 				final TextComponent successfulChange = Component.text()
 								.content(refs.getMsg("wwcConfigConversationOverrideTextChangeSuccess", currPlayer))
 								.color(NamedTextColor.GREEN)
 						.build();
 				refs.sendMsg((Player)context.getForWhom(), successfulChange);
-				main.getConfigManager().saveMessagesConfig(true);
+				// TODO: Should we make a save button eventually?
+				main.getConfigManager().saveMessagesConfig(inLang, true);
 			}
 			previousInventory.open((Player)context.getForWhom());
 			return END_OF_CONVERSATION;

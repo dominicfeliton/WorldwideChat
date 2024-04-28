@@ -86,7 +86,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey()));
+							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey(), inLang));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;

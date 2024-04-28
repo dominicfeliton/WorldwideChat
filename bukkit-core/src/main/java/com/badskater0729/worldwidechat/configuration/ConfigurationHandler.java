@@ -400,11 +400,6 @@ public class ConfigurationHandler {
 		refs.debugMsg("Saving main config sync!");
 		saveCustomConfig(mainConfig, configFile, false);
 	}
-	
-	/* Messages config save method */
-	public void saveMessagesConfig(boolean async) {
-		saveMessagesConfig(mainConfig.getString("General.pluginLang"), async);
-	}
 
 	/* Specific message config save method */
 	public void saveMessagesConfig(String inLang, boolean async) {
