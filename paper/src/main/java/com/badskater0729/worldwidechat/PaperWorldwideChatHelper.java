@@ -25,8 +25,8 @@ public class PaperWorldwideChatHelper extends WorldwideChatHelper {
             pluginManager.registerEvents(new PaperSignListener(), main);
         }
         // TODO: FIX
-        //pluginManager.registerEvents(new PaperChatListener(), main);
-        pluginManager.registerEvents(new ChatListener(), main);
+        pluginManager.registerEvents(new PaperChatListener(), main);
+        //pluginManager.registerEvents(new ChatListener(), main);
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);
