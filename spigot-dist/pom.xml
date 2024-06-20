@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.badskater0729.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.16.0</version>
+    <version>1.17.0</version>
   </parent>
 
   <artifactId>WorldwideChat-spigot-dist</artifactId>
@@ -22,13 +22,13 @@
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.16.0</version>
+      <version>1.17.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
       <artifactId>WorldwideChat-spigot</artifactId>
-      <version>1.16.0</version>
+      <version>1.17.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
