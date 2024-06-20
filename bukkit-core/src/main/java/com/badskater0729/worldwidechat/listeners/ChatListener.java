@@ -5,7 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import net.kyori.adventure.text.format.NamedTextColor;
 import net.milkbowl.vault.chat.Chat;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -82,22 +84,31 @@ public class ChatListener implements Listener {
 					refs.debugMsg("Skipping " + eaRecipient.getName() + ", currIn/OutLang == currIn/OutLang (???).");
 					continue;
 				}
-				// If all checks pass, translate an incoming message for the current translator.
 
+				// If all checks pass, translate an incoming message for the current translator.
 				// Translate message + get original format
 				String translation = refs.translateText(event.getMessage(), eaRecipient);
-				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation + " \uD83C\uDF10");
+				if (translation.equalsIgnoreCase(event.getMessage())) {
+					refs.debugMsg("Translation unsuccessful/same as original message for " + eaRecipient.getName());
+					unmodifiedMessageRecipients.add(eaRecipient);
+					continue;
+				}
+
+				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 
 				// Convert to TextComponent
-				TextComponent hoverOutMessage = Component.text()
-						.content(outMessageWithoutHover)
-						.build();
+				Component hoverOutMessage = refs.deserial(outMessageWithoutHover);
 				if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
 					hoverOutMessage = Component.text()
 							.content(outMessageWithoutHover)
 							.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
 							.build();
 				}
+
+				// Add globe icon
+				hoverOutMessage = hoverOutMessage
+						.append(Component.space())
+						.append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));
 
 				if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
 					eaRecipient.sendMessage(refs.serial(hoverOutMessage));

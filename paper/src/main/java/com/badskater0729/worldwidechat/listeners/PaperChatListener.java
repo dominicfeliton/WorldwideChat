@@ -9,6 +9,7 @@ import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
+import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.milkbowl.vault.chat.Chat;
@@ -18,13 +19,14 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.eclipse.sisu.inject.Legacy;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class PaperChatListener implements Listener {
+public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
@@ -88,12 +90,18 @@ public class PaperChatListener implements Listener {
                     refs.debugMsg("Skipping " + currPlayer.getName() + ", currIn/OutLang == currIn/OutLang (???).");
                     continue;
                 }
-                // If all checks pass, translate an incoming message for the current translator.
 
+                // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + convert to Component
                 String originalText = refs.serial(event.message());
                 String translation = refs.translateText(originalText, currPlayer);
-                Component hoverOutMessage = refs.deserial(translation + " \uD83C\uDF10");
+                if (translation.equalsIgnoreCase(originalText)) {
+                    refs.debugMsg("Translation unsuccessful/same as original message for " + currPlayer.getName());
+                    unmodifiedMessageRecipients.add(eaRecipient);
+                    continue;
+                }
+
+                Component hoverOutMessage = refs.deserial(translation);
 
                 // Add hover text w/original message
                 if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
@@ -103,16 +111,8 @@ public class PaperChatListener implements Listener {
 
                 // Re-render original message but with new text.
                 refs.debugMsg("Rendering new message for current player ( " + currPlayer.getName() + "  : " + refs.serial(hoverOutMessage) + " )");
-                Component outMsg = event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), hoverOutMessage, Audience.audience(event.viewers()));
+                Component outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), hoverOutMessage);
                 currPlayer.sendMessage(outMsg);
-
-                // Render original message? (dumb)
-                // TODO: Currently there is a bug where event.renderer().render permanently overwrites.
-                // Anyone with /wwctci auto overwrites anyone with /wwctco.
-                // ^ Less confirmed...but it looks like other /wwctci sessions override each other.
-                // Ensure this does not happen? Super hard to track down...
-                refs.debugMsg("Setting original message ( " + refs.serial(event.message()) + " )");
-                event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), event.message(), Audience.audience(event.viewers()));
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
         } catch (Exception e) {
@@ -120,5 +120,14 @@ public class PaperChatListener implements Listener {
                 throw e;
             }
         }
+    }
+
+    @Override
+    public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
+        return component
+                .append(Component.text(": "))
+                .append(component1)
+                .append(Component.space())
+                .append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));
     }
 }
