@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.badskater0729.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.16.0</version>
+    <version>1.17.0</version>
   </parent>
 
   <artifactId>WorldwideChat-bukkit-core</artifactId>
@@ -22,43 +22,43 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.20.5-R0.1-SNAPSHOT</version>
+      <version>1.21-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-text-serializer-gson</artifactId>
-      <version>4.16.0</version>
+      <version>4.17.0</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-api</artifactId>
-      <version>4.16.0</version>
+      <version>4.17.0</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-nbt</artifactId>
-      <version>4.16.0</version>
+      <version>4.17.0</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-key</artifactId>
-      <version>4.16.0</version>
+      <version>4.17.0</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-text-serializer-gson-legacy-impl</artifactId>
-      <version>4.16.0</version>
+      <version>4.17.0</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-platform-bukkit</artifactId>
-      <version>4.3.2</version>
+      <version>4.3.3</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-platform-api</artifactId>
-      <version>4.3.2</version>
+      <version>4.3.3</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
@@ -78,7 +78,7 @@
     <dependency>
       <groupId>com.github.cryptomorin</groupId>
       <artifactId>XSeries</artifactId>
-      <version>9.10.0</version>
+      <version>11.1.0</version>
     </dependency>
     <dependency>
       <groupId>com.github.BadSkater0729</groupId>
@@ -106,7 +106,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.5</version>
+        <version>3.3.0</version>
         <configuration>
           <skipTests>true</skipTests>
           <!-- TODO: Add core tests, platform INDEPENDENT -->
@@ -115,7 +115,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
         <configuration>
           <mainClass>com.badskater0729.yamltranslator.YAMLTranslator</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
