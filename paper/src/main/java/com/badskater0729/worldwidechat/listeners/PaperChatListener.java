@@ -125,7 +125,8 @@ public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
     @Override
     public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
         return component
-                .append(Component.text(": "))
+                .append(Component.text(":"))
+                .append(Component.space())
                 .append(component1)
                 .append(Component.space())
                 .append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));

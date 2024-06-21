@@ -4,7 +4,7 @@
 
   <groupId>com.badskater0729.worldwidechat</groupId>
   <artifactId>WorldwideChat-spigot</artifactId>
-  <version>1.17.0</version>
+  <version>1.17.1</version>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -28,7 +28,7 @@
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.17.0</version>
+      <version>1.17.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
