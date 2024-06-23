@@ -7,7 +7,6 @@ import java.util.concurrent.*;
 import com.badskater0729.worldwidechat.commands.*;
 import com.badskater0729.worldwidechat.util.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
-import net.milkbowl.vault.chat.Chat;
 import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 import net.kyori.adventure.text.format.NamedTextColor;
-import net.milkbowl.vault.chat.Chat;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

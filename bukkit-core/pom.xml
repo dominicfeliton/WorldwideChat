@@ -81,15 +81,9 @@
       <version>11.1.0</version>
     </dependency>
     <dependency>
-      <groupId>com.github.BadSkater0729</groupId>
+      <groupId>com.badskater0729.yamltranslator</groupId>
       <artifactId>YAMLTranslator</artifactId>
-      <version>d7509fe9fe</version>
-    </dependency>
-    <dependency>
-      <groupId>com.github.MilkBowl</groupId>
-      <artifactId>VaultAPI</artifactId>
-      <version>1.7.1</version>
-      <scope>provided</scope>
+      <version>1.2.5-3</version>
     </dependency>
   </dependencies>
 
