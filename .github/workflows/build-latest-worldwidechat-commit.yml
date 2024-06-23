@@ -29,7 +29,9 @@ jobs:
       run: mvn -B clean package -Dyamltranslator.skip=true --file pom.xml
 
     - name: Prepare final JARs
-      run: mkdir staging && cp spigot-target/WorldwideChat-spigot.jar staging/WorldwideChat-spigot.jar && cp paper-target/WorldwideChat-paper.jar staging/WorldwideChat-paper.jar
+      run: |
+        mkdir staging
+        find . -path '*-target/WorldwideChat-*.jar' -exec cp {} staging/ \;
     - uses: actions/upload-artifact@v4
       with:
         name: WWC JARs

@@ -25,6 +25,7 @@ public class ServerAdapterFactory {
         serverTypes.put("Bukkit", "org.bukkit.Bukkit");
         serverTypes.put("Spigot", "org.spigotmc.SpigotConfig");
         serverTypes.put("Paper", "com.destroystokyo.paper.PaperWorldConfig");
+        serverTypes.put("Folia", "io.papermc.paper.plugin.configuration.PluginMeta");
 
         //serverTypes.put("BungeeCord", "net.md_5.bungee.api.ProxyServer");
         //serverTypes.put("Velocity", "com.velocitypowered.proxy.Velocity");
@@ -44,9 +45,12 @@ public class ServerAdapterFactory {
             try {
                 Class.forName(entry.getValue());
 
+                // If we are Folia, check if we have isFoliaSupported in PluginMeta class
+                if (entry.getKey().equals("Folia")) Class.forName("io.papermc.paper.plugin.configuration.PluginMeta").getMethod("isFoliaSupported");
+
                 // We found class but continue loop, may be a fork (Bukkit -> Spigot -> Paper)
                 serverPlatform = entry.getKey();
-            } catch (ClassNotFoundException e) {}
+            } catch (Exception e) {}
         }
 
         /* Version check */
@@ -54,12 +58,9 @@ public class ServerAdapterFactory {
             case "Bukkit":
             case "Spigot":
             case "Paper":
-                // TODO: Use reflection for this method
-                serverVersion = Bukkit.getServer().getVersion();
-                break;
             case "Folia":
-                // TODO
-                serverVersion = "";
+                // TODO: Use reflection here
+                serverVersion = Bukkit.getServer().getVersion();
                 break;
             default:
                 serverVersion = "Bukkit"; // Default to Bukkit if N/A
@@ -92,6 +93,7 @@ public class ServerAdapterFactory {
         commonRefsDefs.put("Spigot","com.badskater0729.worldwidechat.util.CommonRefs");
         commonRefsDefs.put("Bukkit","com.badskater0729.worldwidechat.util.CommonRefs");
         commonRefsDefs.put("Paper","com.badskater0729.worldwidechat.util.PaperCommonRefs");
+        commonRefsDefs.put("Folia","com.badskater0729.worldwidechat.util.FoliaCommonRefs");
 
         return (CommonRefs) getInstance(commonRefsDefs);
     }
@@ -101,6 +103,7 @@ public class ServerAdapterFactory {
         wwcHelperDefs.put("Spigot","com.badskater0729.worldwidechat.SpigotWorldwideChatHelper");
         wwcHelperDefs.put("Bukkit","com.badskater0729.worldwidechat.SpigotWorldwideChatHelper");
         wwcHelperDefs.put("Paper","com.badskater0729.worldwidechat.PaperWorldwideChatHelper");
+        wwcHelperDefs.put("Folia","com.badskater0729.worldwidechat.FoliaWorldwideChatHelper");
 
         return (WorldwideChatHelper) getInstance(wwcHelperDefs);
     }

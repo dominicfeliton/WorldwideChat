@@ -210,7 +210,6 @@ public class CommonRefs {
 		SupportedLang invalidLang = new SupportedLang("","","");
 		
 		/* Check langType */
-
 		if (langType.equalsIgnoreCase("in")) {
 			langList.addAll(main.getSupportedInputLangs());
 		} else if (langType.equalsIgnoreCase("out")) {
@@ -252,10 +251,6 @@ public class CommonRefs {
 	public boolean isSupportedLang(String in, String langType) {
 		return !getSupportedLang(in, langType).getLangCode().isEmpty();
 	}
-
-	/**
-	 *
-	 */
 
 	/**
 	  * Gets a list of properly formatted, supported language codes.
@@ -507,7 +502,7 @@ public class CommonRefs {
 	  */
 	public String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
-		if (!(inMessage.length() > 0) || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
+		if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
 			return inMessage;
 		}
 		
