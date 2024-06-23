@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   mysql:
-    image: mysql/mysql-server:8.0.32
+    image: mysql/mysql-server:latest
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: cooldatabase
