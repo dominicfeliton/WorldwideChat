@@ -27,6 +27,8 @@ public abstract class WorldwideChatHelper {
         }
     }
 
+    public void cleanupTasks(int taskID) {}
+
     public void runAsync(Runnable in, SchedulerType schedulerType, Object schedulerObj) {}
 
     public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object schedulerObj) {}

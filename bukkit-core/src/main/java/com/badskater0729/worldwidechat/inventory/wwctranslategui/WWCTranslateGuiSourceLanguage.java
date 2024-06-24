@@ -33,8 +33,6 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 
 	private Player inPlayer;
 
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
 	public WWCTranslateGuiSourceLanguage(String selectedSourceLanguage, String targetPlayerUUID, Player inPlayer) {
 		this.selectedSourceLanguage = selectedSourceLanguage;
 		this.targetPlayerUUID = targetPlayerUUID;

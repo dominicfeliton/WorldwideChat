@@ -2,9 +2,13 @@ package com.badskater0729.worldwidechat;
 
 import com.badskater0729.worldwidechat.listeners.*;
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitWorker;
+
+import static com.badskater0729.worldwidechat.WorldwideChat.asyncTasksTimeoutSeconds;
 
 public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
@@ -27,6 +31,74 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         pluginManager.registerEvents(new InventoryListener(), main);
         main.getLogger().info(ChatColor.LIGHT_PURPLE
                 + refs.getMsg("wwcListenersInitialized", null));
+    }
+
+    @Override
+    public void cleanupTasks(int taskID) {
+        // Cancel + remove all tasks
+        main.getServer().getScheduler().cancelTasks(main);
+
+        // Wait for completion + kill all background tasks
+        // Thanks to:
+        // https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
+        if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+            // TODO: Check compatibility on folia
+            final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
+            final long asyncTasksStart = System.currentTimeMillis();
+            boolean asyncTasksTimeout = false;
+            while (getActiveAsyncTasks(taskID) > 0) {
+                // Send interrupt signal
+                try {
+                    for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
+                        if (worker.getOwner().equals(main) && worker.getTaskId() != taskID) {
+                            refs.debugMsg("Sending interrupt to task with ID " + worker.getTaskId() + "...");
+                            worker.getThread().interrupt();
+                        }
+                    }
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    refs.debugMsg("Thread successfully aborted and threw an InterruptedException.");
+                }
+
+                // Disable once we reach timeout
+                if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
+                    asyncTasksTimeout = true;
+                    refs.debugMsg(
+                            "Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
+                                    + " remaining async tasks to complete. Disabling/reloading regardless...");
+                    break;
+                }
+            }
+            final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
+            if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
+                refs.debugMsg("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
+            }
+        }
+    }
+
+    /**
+     * Get active asynchronous tasks
+     * @return int - Number of active async tasks
+     */
+    private int getActiveAsyncTasks() {
+        return getActiveAsyncTasks(-1);
+    }
+
+    /**
+     * Get active asynchronous tasks (excluding a provided one)
+     * @param excludedId - Task ID to be excluded from this count
+     * @return int - Number of active async tasks, excluding excludedId
+     */
+    private int getActiveAsyncTasks(int excludedId) {
+        int workers = 0;
+        if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+            for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
+                if (worker.getOwner().equals(main) && worker.getTaskId() != excludedId) {
+                    workers++;
+                }
+            }
+        }
+        return workers;
     }
 
     @Override

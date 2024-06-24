@@ -501,19 +501,17 @@ public class CommonRefs {
 			// Get permission from Bukkit API synchronously, since we do not want to risk
 			// concurrency problems
 			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
-				// TODO: Fix Folia PERMISSIONS IMPORTANT
 				try {
-					permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> {
-						return checkForRateLimitPermissions(currPlayer);
-					}).get(3, TimeUnit.SECONDS);
+					permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> checkForRateLimitPermissions(currPlayer)).get(3, TimeUnit.SECONDS);
 				} catch (TimeoutException | InterruptedException e) {
 					debugMsg("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
 							+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
 					return inMessage;
 				}
-			} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-				// It is extremely unlikely that we run into concurrency issues with MockBukkit.
-				// Until it supports callSyncMethod(), this will do.
+			} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
+				// MockBukkit does not support callSyncMethod
+				// Folia doesn't need it (?)
+				debugMsg("Checkingpermissions in translateText() WITHOUT callSyncMethod()...");
 				permissionCheck = checkForRateLimitPermissions(currPlayer);
 			}
 

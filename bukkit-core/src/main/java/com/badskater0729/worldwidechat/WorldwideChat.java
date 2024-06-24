@@ -158,10 +158,6 @@ public class WorldwideChat extends JavaPlugin {
 			getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
-		currPlatform = serverFactory.getServerInfo().getKey();
-
-		// Setup scheduler
-		// TODO: Move to adapters?
 
 		// Setup adventure if needed
 		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
@@ -171,7 +167,7 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Setup inventory manager
 		if (!currPlatform.equals("Folia")) {
-			// TODO: Fix Folia
+			// TODO: Fix Folia, put inventory setup in wwcHelper once we fix SmartInvs
 			inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
 			inventoryManager.init(); // Init InventoryManager
 		}
@@ -365,7 +361,12 @@ public class WorldwideChat extends JavaPlugin {
 				// TODO: Add unit test to make sure that storage config changes do not apply until next run
 				// TODO: Add unit test to make sure that storage defaults to YAML on conn failure
 				// TODO: Add case for if connection gets interrupted?
-				cancelBackgroundTasks(true, invalidState, this.getTaskId());
+				if (!currPlatform.equals("Folia")) {
+					cancelBackgroundTasks(true, invalidState, this.getTaskId());
+				} else {
+					// TODO: make sure this works properly on folia. cannot use this.getTaskId(). will we be prematurely terminated?
+					cancelBackgroundTasks(true, invalidState);
+				}
 
 				/* Save main config on current thread BEFORE actual reload */
 				if (saveMainConfig) {
@@ -457,58 +458,14 @@ public class WorldwideChat extends JavaPlugin {
 		// Shut down executors
 		callbackExecutor.shutdownNow();
 
-		// Wait for completion + kill all background tasks
-		// Thanks to:
-		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
-		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
-			// TODO: Ensure compatibility on folia
-			if (currPlatform.equals("Folia")) {
-				refs.debugMsg("WARNING: MAKE SURE THAT ASYNC AWAIT WORKS PROPERLY ON FOLIA!");
-			}
-
-			final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
-			final long asyncTasksStart = System.currentTimeMillis();
-			boolean asyncTasksTimeout = false;
-			while (this.getActiveAsyncTasks(taskID) > 0) {
-				// Send interrupt signal
-				try {
-					for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
-						if (worker.getOwner().equals(this) && worker.getTaskId() != taskID) {
-							refs.debugMsg("Sending interrupt to task with ID " + worker.getTaskId() + "...");
-							worker.getThread().interrupt();
-						}
-					}
-					Thread.sleep(100);
-				} catch (InterruptedException e) {
-					refs.debugMsg("Thread successfully aborted and threw an InterruptedException.");
-				}
-
-				// Disable once we reach timeout
-				if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
-					asyncTasksTimeout = true;
-					refs.debugMsg(
-							"Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
-									+ " remaining async tasks to complete. Disabling/reloading regardless...");
-					break;
-				}
-			}
-			final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
-			if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
-				refs.debugMsg("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
-			}
-		}
-		
 		// Close all inventories
 		if (!isReloading && !currPlatform.equals("Folia")) {
 			// TODO: Fix Folia
 			refs.closeAllInvs();
 		}
 
-		// Cancel + remove all tasks
-		if (!currPlatform.equals("Folia")) {
-			// TODO: Fix Folia
-			this.getServer().getScheduler().cancelTasks(this);
-		}
+		// Cleanup background tasks
+		wwcHelper.cleanupTasks(taskID);
 
 		// Sync activeTranslators, playerRecords to disk
 		try {
@@ -604,31 +561,6 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/**
-	  * Get active asynchronous tasks 
-	  * @return int - Number of active async tasks
-	  */
-	private int getActiveAsyncTasks() {
-		return getActiveAsyncTasks(-1);
-	}
-	
-	/**
-	  * Get active asynchronous tasks (excluding a provided one)
-	  * @param excludedId - Task ID to be excluded from this count
-	  * @return int - Number of active async tasks, excluding excludedId
-	  */
-	private int getActiveAsyncTasks(int excludedId) {
-		int workers = 0;
-		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
-			for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
-				if (worker.getOwner().equals(this) && worker.getTaskId() != excludedId) {
-					workers++;
-				}
-			}
-		}
-		return workers;
-	}
-
-	/**
 	 * Initialize adapters and check MC version/platform
 	 */
 	private boolean checkAndInitAdapters() {
@@ -664,7 +596,14 @@ public class WorldwideChat extends JavaPlugin {
 			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
 		}
 
+		// If running Folia 1.19/1.18 (?)
+		if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
+			getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
+			return false;
+		}
+
 		// Load methods
+		currPlatform = type;
 		refs = serverFactory.getCommonRefs();
 		wwcHelper = serverFactory.getWWCHelper();
 

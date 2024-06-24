@@ -20,6 +20,14 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     ServerAdapterFactory adapter = main.getServerFactory();
 
     // SCHEDULER (NEW)
+    @Override
+    public void cleanupTasks(int taskID) {
+        // TODO, check if async wait thread thing works here?
+        refs.debugMsg("Folia cleanup tasks...");
+
+        main.getServer().getGlobalRegionScheduler().cancelTasks(main);
+    }
+
     // Core method for running tasks + repeating tasks
     private void runTask(SchedulerType schedulerType, Runnable task, Object taskObj, long delay, long period) {
         // First convert to Consumer<ScheduledTask>
@@ -72,15 +80,6 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                 }
                 break;
         }
-    }
-
-    private static Consumer<ScheduledTask> convert(BukkitRunnable bukkitRunnable) {
-        // DO NOT USE TASK.CANCEL() in our BUKKITRUNNABLES.
-        // Otherwise we will have a bad time :(
-
-        return (ScheduledTask task) -> {
-            bukkitRunnable.run();
-        };
     }
 
     @Override
