@@ -4,6 +4,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.badskater0729.worldwidechat.WorldwideChatHelper;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Location;
@@ -33,11 +34,15 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
+
 public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST)
@@ -58,7 +63,8 @@ public class TranslateInGameListener implements Listener {
 							}
 						}
 					};
-					refs.runAsync(out);
+					// TODO: Check entity
+					wwcHelper.runAsync(out, ENTITY, event.getPlayer());
 				}
 			} catch (Exception e) {
 				if (!refs.serverIsStopping()) {
@@ -147,10 +153,12 @@ public class TranslateInGameListener implements Listener {
 								}
 							}
 						};
-						refs.runSync(open);
+						// TODO: Check entity
+
+						wwcHelper.runSync(open, ENTITY, currPlayer);
 					}
 				};
-				refs.runAsync(out);
+				wwcHelper.runAsync(out, GLOBAL, null);
 			}
 
 			/* Sign Translation */
@@ -239,11 +247,13 @@ public class TranslateInGameListener implements Listener {
 									}
 								}
 							};
-							refs.runSync(sign);
+
+							// TODO: Check entity
+							wwcHelper.runSync(sign, ENTITY, event.getPlayer());
 						}
 					}
 				};
-				refs.runAsync(out);
+				wwcHelper.runAsync(out, GLOBAL, null);
 			}
 
 			/* Item Translation */
@@ -302,11 +312,13 @@ public class TranslateInGameListener implements Listener {
 									new TempItemInventory(translatedItem, event.getPlayer()).getTempItemInventory().open(event.getPlayer());
 								}
 							};
-							refs.runSync(open);
+							// TODO: Check entity
+
+							wwcHelper.runSync(open, ENTITY, event.getPlayer());
 						}
 					}
 				};
-				refs.runAsync(out);
+				wwcHelper.runAsync(out, GLOBAL, null);
 			}
 		} catch (Exception e) {
 			if (!refs.serverIsStopping()) {

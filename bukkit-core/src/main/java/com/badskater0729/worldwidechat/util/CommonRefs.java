@@ -10,6 +10,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
+import com.badskater0729.worldwidechat.WorldwideChatHelper;
 import com.badskater0729.worldwidechat.translators.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -45,10 +46,14 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
+
 public class CommonRefs {
 
 	/* Important vars */
 	private static WorldwideChat main = WorldwideChat.instance;
+
+	private static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 	
 	public static String[] supportedMCVersions = { "1.21", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
@@ -117,62 +122,6 @@ public class CommonRefs {
 	}
 
 	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
-
-	public void runAsync(BukkitRunnable in) {
-		runAsync(true, in);
-	}
-	
-	public void runAsync(boolean serverMustBeRunning, BukkitRunnable in) {
-		runAsync(serverMustBeRunning, 0, in);
-	}
-	
-	public void runAsync(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
-		if (serverMustBeRunning && !serverIsStopping()) {
-			in.runTaskLaterAsynchronously(main, delay);
-		} else {
-			in.runTaskLaterAsynchronously(main, delay);
-		}
-	}
-	
-	public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
-		if (serverMustBeRunning && !serverIsStopping()) {
-			in.runTaskTimerAsynchronously(main, delay, repeatTime);
-		} else {
-			in.runTaskTimerAsynchronously(main, delay, repeatTime);
-		}
-	}
-	
-	public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
-		runAsyncRepeating(serverMustBeRunning, 0, repeatTime, in);
-	}
-	
-	public void runSync(BukkitRunnable in) {
-		runSync(true, in);
-	}
-	
-	public void runSync(boolean serverMustBeRunning, BukkitRunnable in) {
-		runSync(serverMustBeRunning, 0, in);
-	}
-	
-	public void runSync(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
-		if (serverMustBeRunning && !serverIsStopping()) {
-			in.runTaskLater(main, delay);
-		} else {
-			in.runTaskLater(main, delay);
-		}
-	}
-	
-	public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
-		if (serverMustBeRunning && !serverIsStopping()) {
-			in.runTaskTimer(main, delay, repeatTime);
-		} else {
-			in.runTaskTimer(main, delay, repeatTime);
-		}
-	}
-	
-	public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
-		runSyncRepeating(serverMustBeRunning, 0, repeatTime, in);
-	}
 	
 	/**
 	  * Compares two strings to check if they are the same language under the current translator.
@@ -679,12 +628,12 @@ public class CommonRefs {
 			if (main.getTranslatorErrorCount() >= main.getErrorLimit()) {
 				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReached", null));
 				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReachedCheckLogs", null));
-				runSync(new BukkitRunnable() {
+				wwcHelper.runSync(new BukkitRunnable() {
 					@Override
 					public void run() {
 						main.reload();
 					}
-				});
+				}, ASYNC, null);
 			}
 		}
 		

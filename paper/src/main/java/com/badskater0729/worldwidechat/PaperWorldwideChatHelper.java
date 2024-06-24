@@ -5,10 +5,13 @@ import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.scheduler.BukkitRunnable;
 
-public class PaperWorldwideChatHelper extends WorldwideChatHelper {
+public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
     // Store additional, WorldwideChat-exclusive methods here
     // Also required for our maven setup
+    // (We extend Spigot because a lot of Spigot methods work on Paper)
+    // (You can switch back to just WorldwideChatHelper if we no longer want to rely on spigot WWCHelper at all)
 
     WorldwideChat main = WorldwideChat.instance;
 
@@ -24,14 +27,11 @@ public class PaperWorldwideChatHelper extends WorldwideChatHelper {
             // 1.2x supports sign editing
             pluginManager.registerEvents(new PaperSignListener(), main);
         }
-        // TODO: FIX
         pluginManager.registerEvents(new PaperChatListener(), main);
-        //pluginManager.registerEvents(new ChatListener(), main);
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);
         main.getLogger().info(ChatColor.LIGHT_PURPLE
                 + refs.getMsg("wwcListenersInitialized", null));
     }
-
 }

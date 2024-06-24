@@ -8,6 +8,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import com.badskater0729.worldwidechat.WorldwideChatHelper;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
@@ -29,10 +30,14 @@ import net.md_5.bungee.api.ChatColor;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
+
 public class WWCStats extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 
@@ -107,7 +112,9 @@ public class WWCStats extends BasicCommand {
 								new WWCStatsGuiMainMenu(targetUUID, (Player)sender).getStatsMainMenu().open((Player)sender);
 							}
 						};
-						refs.runSync(out);
+
+						// TODO: Check entity
+						wwcHelper.runSync(out, ENTITY, (Player)sender);
 					} else {
 						PlayerRecord record = main
 								.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
@@ -204,7 +211,7 @@ public class WWCStats extends BasicCommand {
 				}
 			}
 		};
-		refs.runAsync(translatorMessage);
+		wwcHelper.runAsync(translatorMessage, GLOBAL, null);
 	}
 
 	private boolean noRecordsMessage(String name) {

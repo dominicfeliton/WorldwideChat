@@ -42,6 +42,8 @@ import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersions;
 import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
@@ -73,6 +75,8 @@ public class WorldwideChat extends JavaPlugin {
 	private ExecutorService callbackExecutor;
 
 	private ServerAdapterFactory serverFactory;
+
+	private Object scheduler;
 
 	private CommonRefs refs;
 	
@@ -154,12 +158,18 @@ public class WorldwideChat extends JavaPlugin {
 			getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
-
-		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
 		currPlatform = serverFactory.getServerInfo().getKey();
+
+		// Setup scheduler
+		// TODO: Move to adapters?
+
+		// Setup adventure if needed
+		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
 		if (currPlatform.equals("Bukkit") || currPlatform.equals("Spigot")) {
 			adventure = BukkitAudiences.create(this); // Adventure
 		}
+
+		// Setup inventory manager
 		if (!currPlatform.equals("Folia")) {
 			// TODO: Fix Folia
 			inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
@@ -411,7 +421,7 @@ public class WorldwideChat extends JavaPlugin {
 				}
 			}
 		};
-		refs.runAsync(reload);
+		wwcHelper.runAsync(reload, ASYNC, null);
 	}
 
 	/**
@@ -451,6 +461,11 @@ public class WorldwideChat extends JavaPlugin {
 		// Thanks to:
 		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
 		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
+			// TODO: Ensure compatibility on folia
+			if (currPlatform.equals("Folia")) {
+				refs.debugMsg("WARNING: MAKE SURE THAT ASYNC AWAIT WORKS PROPERLY ON FOLIA!");
+			}
+
 			final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
 			final long asyncTasksStart = System.currentTimeMillis();
 			boolean asyncTasksTimeout = false;
@@ -559,12 +574,9 @@ public class WorldwideChat extends JavaPlugin {
 			}
 		};
 
-		if (!currPlatform.equals("Folia")) {
-			// TODO: Fix Folia
-			refs.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync);
-		}
+		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
 
-		// Enable tab completers
+		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
 		if (isReloading) {
 			BukkitRunnable tab = new BukkitRunnable() {
 				@Override
@@ -572,7 +584,7 @@ public class WorldwideChat extends JavaPlugin {
 					registerTabCompleters();
 				}
 			};
-			refs.runSync(tab);
+			wwcHelper.runSync(tab, GLOBAL, null);
 		} else {
 			registerTabCompleters();
 		}
@@ -585,10 +597,7 @@ public class WorldwideChat extends JavaPlugin {
 			}
 		};
 
-		if (!currPlatform.equals("Folia")) {
-			// TODO: Fix Folia
-			refs.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update);
-		}
+		wwcHelper.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update, ASYNC, null);
 
 		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
 		translatorName = tempTransName;

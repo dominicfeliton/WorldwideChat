@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.inventory.configuration;
 
+import com.badskater0729.worldwidechat.WorldwideChatHelper;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -23,10 +24,14 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+
 public class MessagesOverrideModifyGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 	private WWCInventoryManager invManager = main.getInventoryManager();
 	
@@ -82,10 +87,11 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 								new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings().open(player);
 							}
 						};
-						refs.runSync(out);
+						// TODO: Check entity
+						wwcHelper.runSync(out, ENTITY, player);
 					}
 				};
-				refs.runAsync(saveMessages);
+				wwcHelper.runAsync(saveMessages, ASYNC, null);
 			}));
 			
 			

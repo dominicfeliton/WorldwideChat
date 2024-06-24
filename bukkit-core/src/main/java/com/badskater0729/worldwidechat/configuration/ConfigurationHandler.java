@@ -13,6 +13,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
+import com.badskater0729.worldwidechat.WorldwideChatHelper;
 import com.badskater0729.worldwidechat.util.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import com.github.benmanes.caffeine.cache.Cache;
@@ -35,6 +36,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
@@ -42,6 +44,7 @@ public class ConfigurationHandler {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 	private File configFile;
 	private YamlConfiguration mainConfig;
@@ -394,7 +397,7 @@ public class ConfigurationHandler {
 					saveMainConfig(false);
 				}
 			};
-			refs.runAsync(out);
+			wwcHelper.runAsync(out, ASYNC, null);
 			return;
 		}
 		refs.debugMsg("Saving main config sync!");
@@ -411,7 +414,7 @@ public class ConfigurationHandler {
 					saveMessagesConfig(inLang, false);
 				}
 			};
-			refs.runAsync(out);
+			wwcHelper.runAsync(out, ASYNC, null);
 			return;
 		}
 		refs.debugMsg("Saving messages config sync!");
@@ -428,7 +431,7 @@ public class ConfigurationHandler {
 					saveCustomConfig(inConfig, dest, false);
 				}
 			};
-			refs.runAsync(out);
+			wwcHelper.runAsync(out, ASYNC, null);
 			return;
 		}
 		if (inConfig != null && dest != null) {

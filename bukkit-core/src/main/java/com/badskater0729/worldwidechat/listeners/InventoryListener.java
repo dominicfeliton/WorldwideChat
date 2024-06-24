@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.listeners;
 
+import com.badskater0729.worldwidechat.WorldwideChatHelper;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
@@ -16,11 +17,14 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
+import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+
 public class InventoryListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
@@ -36,6 +40,6 @@ public class InventoryListener implements Listener {
 				}
 			}
 		};
-		refs.runSync(true, 10, out);
+		wwcHelper.runSync(true, 10, out, ENTITY, (Player)e.getPlayer());
 	}
 }

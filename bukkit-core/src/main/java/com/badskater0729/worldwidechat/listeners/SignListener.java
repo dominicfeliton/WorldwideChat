@@ -16,6 +16,8 @@ public class SignListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onSignEdit(PlayerSignOpenEvent event) {
+        // Event name is different on Paper
+
         Player currPlayer = event.getPlayer();
         if (main.isActiveTranslator(currPlayer)) {
             ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
