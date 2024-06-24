@@ -57,6 +57,8 @@ public class WorldwideChat extends JavaPlugin {
 	public static WorldwideChat instance;
 	private BukkitAudiences adventure;
 
+	private String currPlatform;
+
 	private WorldwideChatHelper wwcHelper;
 	private WWCInventoryManager inventoryManager;
 
@@ -154,12 +156,15 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
-		String currPlatform = serverFactory.getServerInfo().getKey();
+		currPlatform = serverFactory.getServerInfo().getKey();
 		if (currPlatform.equals("Bukkit") || currPlatform.equals("Spigot")) {
 			adventure = BukkitAudiences.create(this); // Adventure
 		}
-		inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
-		inventoryManager.init(); // Init InventoryManager
+		if (!currPlatform.equals("Folia")) {
+			// TODO: Fix Folia
+			inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
+			inventoryManager.init(); // Init InventoryManager
+		}
 
 		// Load "secondary" services + plugin configs, check if they successfully initialized
 		doStartupTasks(false);
@@ -274,6 +279,11 @@ public class WorldwideChat extends JavaPlugin {
 			switch (command.getName()) {
 				case "wwcc":
 					// Configuration GUI
+					if (inventoryManager == null) {
+						refs.debugMsg("invManager is null! We may be on folia, abort...");
+						return true;
+					}
+
 					WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
 					return wwcc.processCommand();
 			}
@@ -321,7 +331,10 @@ public class WorldwideChat extends JavaPlugin {
 			return;
 		}
 		translatorName = "Starting";
-		refs.closeAllInvs();
+		if (!currPlatform.equals("Folia")) {
+			// TODO: Fix Folia
+			refs.closeAllInvs();
+		}
 		translatorErrorCount = 0;
 
 		/* Send start reload message */
@@ -471,12 +484,16 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		// Close all inventories
-		if (!isReloading) {
+		if (!isReloading && !currPlatform.equals("Folia")) {
+			// TODO: Fix Folia
 			refs.closeAllInvs();
 		}
 
 		// Cancel + remove all tasks
-		this.getServer().getScheduler().cancelTasks(this);
+		if (!currPlatform.equals("Folia")) {
+			// TODO: Fix Folia
+			this.getServer().getScheduler().cancelTasks(this);
+		}
 
 		// Sync activeTranslators, playerRecords to disk
 		try {
@@ -541,7 +558,11 @@ public class WorldwideChat extends JavaPlugin {
 				new SyncUserData().run();
 			}
 		};
-		refs.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync);
+
+		if (!currPlatform.equals("Folia")) {
+			// TODO: Fix Folia
+			refs.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync);
+		}
 
 		// Enable tab completers
 		if (isReloading) {
@@ -563,7 +584,11 @@ public class WorldwideChat extends JavaPlugin {
 				new UpdateChecker().run();
 			}
 		};
-		refs.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update);
+
+		if (!currPlatform.equals("Folia")) {
+			// TODO: Fix Folia
+			refs.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update);
+		}
 
 		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
 		translatorName = tempTransName;
@@ -1040,6 +1065,8 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public String getPluginVersion() { return this.getDescription().getVersion(); }
+
+	public String getCurrPlatform() { return currPlatform; }
 
 	public int getUpdateCheckerDelay() {
 		return updateCheckerDelay;

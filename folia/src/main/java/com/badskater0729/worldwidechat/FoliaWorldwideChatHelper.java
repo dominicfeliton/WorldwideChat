@@ -2,6 +2,7 @@ package com.badskater0729.worldwidechat;
 
 import com.badskater0729.worldwidechat.listeners.InventoryListener;
 import com.badskater0729.worldwidechat.listeners.OnPlayerJoinListener;
+import com.badskater0729.worldwidechat.listeners.PaperChatListener;
 import com.badskater0729.worldwidechat.listeners.TranslateInGameListener;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.ChatColor;
@@ -24,7 +25,7 @@ public class FoliaWorldwideChatHelper extends WorldwideChatHelper {
         //    // 1.2x supports sign editing
         //    pluginManager.registerEvents(new PaperSignListener(), main);
         //}
-        //pluginManager.registerEvents(new PaperChatListener(), main);
+        pluginManager.registerEvents(new PaperChatListener(), main);
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);

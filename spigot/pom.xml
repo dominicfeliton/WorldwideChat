@@ -31,20 +31,10 @@
       <version>1.17.1</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>com.github.MilkBowl</groupId>
-      <artifactId>VaultAPI</artifactId>
-      <version>1.7.1</version>
-      <scope>provided</scope>
-    </dependency>
   </dependencies>
 
   <repositories>
     <!-- This adds the Spigot Maven repository to the build -->
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
     <repository>
       <id>spigot-repo</id>
       <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>

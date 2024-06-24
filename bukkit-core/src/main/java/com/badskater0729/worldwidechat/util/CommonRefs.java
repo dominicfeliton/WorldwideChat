@@ -127,20 +127,16 @@ public class CommonRefs {
 	}
 	
 	public void runAsync(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
-		if (serverMustBeRunning) {
-			if (!serverIsStopping()) {
-				in.runTaskLaterAsynchronously(main, delay);
-			}
+		if (serverMustBeRunning && !serverIsStopping()) {
+			in.runTaskLaterAsynchronously(main, delay);
 		} else {
 			in.runTaskLaterAsynchronously(main, delay);
 		}
 	}
 	
 	public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
-		if (serverMustBeRunning) {
-			if (!serverIsStopping()) {
-				in.runTaskTimerAsynchronously(main, delay, repeatTime);
-			}
+		if (serverMustBeRunning && !serverIsStopping()) {
+			in.runTaskTimerAsynchronously(main, delay, repeatTime);
 		} else {
 			in.runTaskTimerAsynchronously(main, delay, repeatTime);
 		}
@@ -159,20 +155,16 @@ public class CommonRefs {
 	}
 	
 	public void runSync(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
-		if (serverMustBeRunning) {
-			if (!serverIsStopping()) {
-				in.runTaskLater(main, delay);
-			}
+		if (serverMustBeRunning && !serverIsStopping()) {
+			in.runTaskLater(main, delay);
 		} else {
 			in.runTaskLater(main, delay);
 		}
 	}
 	
 	public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
-		if (serverMustBeRunning) {
-			if (!serverIsStopping()) {
-				in.runTaskTimer(main, delay, repeatTime);
-			}
+		if (serverMustBeRunning && !serverIsStopping()) {
+			in.runTaskTimer(main, delay, repeatTime);
 		} else {
 			in.runTaskTimer(main, delay, repeatTime);
 		}
@@ -559,7 +551,8 @@ public class CommonRefs {
 
 			// Get permission from Bukkit API synchronously, since we do not want to risk
 			// concurrency problems
-			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping()) {
+			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
+				// TODO: Fix Folia PERMISSIONS IMPORTANT
 				try {
 					permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> {
 						return checkForRateLimitPermissions(currPlayer);
@@ -634,7 +627,7 @@ public class CommonRefs {
 				// If we are getting stopped by onDisable, end this immediately.
 				debugMsg("Interrupted translateText(), or server state is changing...");
 				return inMessage;
-			} else if (e instanceof ExecutionException && (e.getCause() != null) && isErrorToIgnore(e.getCause())) {
+			} else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
 				// If the translator has low confidence
 				debugMsg("Low confidence from current translator!");
 				return inMessage;
@@ -1056,6 +1049,7 @@ public class CommonRefs {
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
 	private boolean isErrorToIgnore(Throwable throwable) {
+		// TOOD: Make sure this works properly again
 		// same as target == Watson
 		// detect the source language == Watson
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
