@@ -25,6 +25,7 @@ import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
+import org.bukkit.plugin.IllegalPluginAccessException;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDate;
@@ -782,16 +783,18 @@ public class CommonRefs {
 	  * @return Boolean - Whether the server is reloading/stopping or not
 	  */
 	public boolean serverIsStopping() {
-		if (!main.isEnabled()) return true;
+		boolean stopping = !main.isEnabled();
+		debugMsg("Bukkit initial stop check: " + stopping);
+		if (stopping) return true;
+
 		try {
-			new BukkitRunnable() {
-				@Override
-				public void run() {}
-			}.runTask(main);
-		} catch (Exception e) {
+			Bukkit.getScheduler().scheduleSyncDelayedTask(main, () -> {}, 0L);
+		} catch (IllegalPluginAccessException | IllegalStateException e) {
 			debugMsg("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
 		}
+
+		debugMsg("Bukkit final stop check: false");
 		return false;
 	}
 

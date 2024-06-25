@@ -566,6 +566,7 @@ public class WorldwideChat extends JavaPlugin {
 			case "Bukkit":
 			case "Spigot":
 			case "Paper":
+			case "Folia":
 			// Raw Bukkit (not spigot) is not *explicitly* supported but should work
 				getLogger().info("##### Detected supported platform: " + type + " #####");
 				break;

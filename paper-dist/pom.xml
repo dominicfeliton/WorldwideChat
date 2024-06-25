@@ -106,7 +106,7 @@
               <include>com.fasterxml.jackson.dataformat:*</include>
               <include>org.apache.httpcomponents:*</include>
               <include>joda-time:*</include>
-              <include>fr.minuskube.inv:smart-invs</include>
+              <include>fr.minuskube.inv:bukkit-smart-invs</include>
               <include>org.apache.maven:maven-artifact</include>
               <include>com.github.cryptomorin:XSeries</include>
               <include>com.zaxxer:HikariCP</include>
@@ -144,7 +144,10 @@
               </excludes>
             </filter>
             <filter>
-              <artifact>fr.minuskube.inv:smart-invs</artifact>
+              <artifact>fr.minuskube.inv:bukkit-smart-invs</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
               <excludes>
                 <exclude>plugin.yml</exclude>
               </excludes>
