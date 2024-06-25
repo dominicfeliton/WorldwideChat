@@ -166,11 +166,8 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Setup inventory manager
-		if (!currPlatform.equals("Folia")) {
-			// TODO: Fix Folia, put inventory setup in wwcHelper once we fix SmartInvs
-			inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
-			inventoryManager.init(); // Init InventoryManager
-		}
+		inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
+		inventoryManager.init(); // Init InventoryManager
 
 		// Load "secondary" services + plugin configs, check if they successfully initialized
 		doStartupTasks(false);
@@ -337,10 +334,7 @@ public class WorldwideChat extends JavaPlugin {
 			return;
 		}
 		translatorName = "Starting";
-		if (!currPlatform.equals("Folia")) {
-			// TODO: Fix Folia
-			refs.closeAllInvs();
-		}
+		refs.closeAllInvs();
 		translatorErrorCount = 0;
 
 		/* Send start reload message */
@@ -459,10 +453,7 @@ public class WorldwideChat extends JavaPlugin {
 		callbackExecutor.shutdownNow();
 
 		// Close all inventories
-		if (!isReloading && !currPlatform.equals("Folia")) {
-			// TODO: Fix Folia
-			refs.closeAllInvs();
-		}
+		refs.closeAllInvs();
 
 		// Cleanup background tasks
 		wwcHelper.cleanupTasks(taskID);

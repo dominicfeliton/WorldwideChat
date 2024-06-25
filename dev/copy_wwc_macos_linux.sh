@@ -7,7 +7,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     cp /Users/$USER/Documents/GitHub/WorldwideChat/spigot-target/WorldwideChat-spigot.jar /Users/$USER/Documents/magma_wwc_test_server/plugins
     cp /Users/$USER/Documents/GitHub/WorldwideChat/paper-target/WorldwideChat-paper.jar /Users/$USER/Documents/wwc_test_server/plugins
     cp /Users/$USER/Documents/GitHub/WorldwideChat/folia-target/WorldwideChat-folia.jar /Users/$USER/Documents/folia_wwc_test_server/plugins
-    cd /Users/$USER/Documents/wwc_test_server/
+    cd /Users/$USER/Documents/folia_wwc_test_server/
     ./start_mcserver.sh
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux commands

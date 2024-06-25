@@ -117,7 +117,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
         } else {
-            refs.debugMsg("We are a bukkit runnable on " + main.getCurrPlatform());
+            refs.debugMsg("We are an async bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
         }
 
         if (!serverMustBeRunning) {
@@ -136,7 +136,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
         } else {
-            refs.debugMsg("We are a bukkit runnable on " + main.getCurrPlatform());
+            refs.debugMsg("We are an async bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
         }
 
         if (!serverMustBeRunning) {
@@ -172,7 +172,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
         } else {
-            refs.debugMsg("We are a bukkit runnable on " + main.getCurrPlatform());
+            refs.debugMsg("We are a sync bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
         }
 
         if (!serverMustBeRunning) {
@@ -191,7 +191,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
         } else {
-            refs.debugMsg("We are a bukkit runnable on " + main.getCurrPlatform());
+            refs.debugMsg("We are a sync bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
         }
 
         if (!serverMustBeRunning) {
