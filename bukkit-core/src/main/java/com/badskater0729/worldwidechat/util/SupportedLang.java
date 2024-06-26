@@ -78,4 +78,7 @@ public class SupportedLang implements Comparable<SupportedLang> {
 	public int hashCode() {
 		return Objects.hash(langCode, langName, nativeLangName);
 	}
+
+	@Override
+	public String toString() { return langCode + "|" + langName + "|" + nativeLangName; }
 }

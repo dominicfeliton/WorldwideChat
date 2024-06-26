@@ -6,15 +6,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.*;
+import java.util.concurrent.*;
 import javax.net.ssl.HttpsURLConnection;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
@@ -72,8 +65,9 @@ public class LibreTranslation extends BasicTranslation {
 				
 				int listResponseCode = conn.getResponseCode();
 				
-				List<SupportedLang> outLangList = new ArrayList<>();
-				List<SupportedLang> inLangList = new ArrayList<>();
+				Map<String, SupportedLang> outLangMap = new HashMap<>();
+				Map<String, SupportedLang> inLangMap = new HashMap<>();
+
 				if (listResponseCode == 200) {
 					// Scan response
 					StringBuilder inLine = new StringBuilder();
@@ -92,16 +86,19 @@ public class LibreTranslation extends BasicTranslation {
 						SupportedLang currLang = new SupportedLang(
 								eaProperty.get("code").getAsString(),
 								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString()));
-						outLangList.add(currLang);
-						inLangList.add(currLang);
+						outLangMap.put(currLang.getLangCode(), currLang);
+						outLangMap.put(currLang.getLangName(), currLang);
+
+						inLangMap.put(currLang.getLangCode(), currLang);
+						inLangMap.put(currLang.getLangName(), currLang);
 					}
 				} else {
 					checkError(listResponseCode);
 				}
 				
 				/* Parse languages */
-				main.setOutputLangs(refs.fixLangNames(outLangList, true, false));
-				main.setInputLangs(refs.fixLangNames(inLangList, true, false));
+				main.setOutputLangs(refs.fixLangNames(outLangMap, true, false));
+				main.setInputLangs(refs.fixLangNames(inLangMap, true, false));
 
 				/* Setup test translation */
 				inputLang = "en";

@@ -1,13 +1,10 @@
 package com.badskater0729.worldwidechat.translators;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.Map;
+import java.util.concurrent.*;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -64,13 +61,17 @@ public class AmazonTranslation extends BasicTranslation {
 				refs.debugMsg(awsLangs.size() + "");
 				
 				/* Convert supportedLangs to our own SupportedLang objs */
-				List<SupportedLang> supportedLangs = new ArrayList<SupportedLang>();
+				Map<String, SupportedLang> supportedLangs = new HashMap<>();
 				for (Language eaLang : awsLangs) {
 					// Don't add auto
 					if (eaLang.getLanguageCode().equals("auto") || eaLang.getLanguageName().equals("auto")) {
 						continue;
 					}
-					supportedLangs.add(new SupportedLang(eaLang.getLanguageCode(), eaLang.getLanguageName()));
+
+					// Add all entries
+					SupportedLang langObj = new SupportedLang(eaLang.getLanguageCode(), eaLang.getLanguageName());
+					supportedLangs.put(eaLang.getLanguageCode(), langObj);
+					supportedLangs.put(eaLang.getLanguageName(), langObj);
 				}
 
 				/* Set supported translator langs */

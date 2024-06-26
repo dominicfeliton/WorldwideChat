@@ -60,16 +60,14 @@ public class CommonRefs {
 
 	public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 	static {
-		List<String> raw = List.of("af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
-				"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
-				"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW");
-		List<SupportedLang> supportedLangs = raw.stream()
-				.map(eaStr -> new SupportedLang(eaStr, "", ""))
-				.collect(Collectors.toList());
+		Map<String, SupportedLang> tempMap = new LinkedHashMap<>();
+		List.of("af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
+						"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
+						"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW")
+				.forEach(langCode -> tempMap.put(langCode, new SupportedLang(langCode, "", "")));
 
-		List<SupportedLang> fixedLangs = new CommonRefs().fixLangNames(supportedLangs, false, true);
-
-		fixedLangs.forEach(lang -> supportedPluginLangCodes.put(lang.getLangCode(), lang));
+		Map<String, SupportedLang> fixedMap = new CommonRefs().fixLangNames(tempMap, false, true);
+		supportedPluginLangCodes.putAll(fixedMap);
 	}
 
 	public static final Map<String, String> translatorPairs = new HashMap<>();
@@ -146,40 +144,30 @@ public class CommonRefs {
 	  */
 	public SupportedLang getSupportedLang(String langName, String langType) {
 		/* Setup vars */
-		// TODO: IMPORTANT: Make this better...make each lang list a MAP, then GET the requested lang?
-		// We want O(1) not O(n)
-		Set<SupportedLang> langList = new HashSet<SupportedLang>();
 		SupportedLang invalidLang = new SupportedLang("","","");
+		SupportedLang outLang;
 
 		/* Check langType */
 		if (langType.equalsIgnoreCase("in")) {
-			langList.addAll(main.getSupportedInputLangs());
+			outLang = main.getSupportedInputLangs().get(langName);
 		} else if (langType.equalsIgnoreCase("out")) {
-			langList.addAll(main.getSupportedOutputLangs());
+			outLang = main.getSupportedOutputLangs().get(langName);
 		} else if (langType.equalsIgnoreCase("all")) {
-			langList.addAll(main.getSupportedInputLangs());
-			langList.addAll(main.getSupportedOutputLangs());
+			outLang = main.getSupportedInputLangs().get(langName);
+			if (outLang == null) {
+				outLang = main.getSupportedOutputLangs().get(langName);
+			}
 		} else if (langType.equalsIgnoreCase("local")) {
-			if (supportedPluginLangCodes.containsKey(langName)) return supportedPluginLangCodes.get(langName);
-			langList.addAll(CommonRefs.supportedPluginLangCodes.values());
+			outLang = supportedPluginLangCodes.get(langName);
 		} else {
 			debugMsg("Invalid langType for getSupportedTranslatorLang()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
-		    return invalidLang;
+		    outLang = null;
 		}
-
-		/* Check selected list for lang */
-		for (SupportedLang eaLang : langList) {
-			if (eaLang == null) {
-				debugMsg("Could not determine language equality...eaLang is NULL for " + langType + "! FIXME, returning INVALID");
-				return invalidLang;
-			}
-			if ((eaLang.getLangCode().equalsIgnoreCase(langName) || eaLang.getLangName().equalsIgnoreCase(langName) || eaLang.getNativeLangName().equalsIgnoreCase(langName))) {
-				return eaLang;
-			}
+		if (outLang == null) {
+			debugMsg("Lang " + langName + " not found in " + langType  + "!");
+			return invalidLang;
 		}
-
-		/* Return invalid if nothing is found */
-		return invalidLang;
+		return outLang;
 	}
 	
 	/**
@@ -203,31 +191,38 @@ public class CommonRefs {
 	  */
 	public String getFormattedLangCodes(String langType) {
 		/* Setup vars */
-		Set<SupportedLang> langList = new HashSet<>();
+		Map<String, SupportedLang> langMap;
 		StringBuilder out = new StringBuilder("\n");
 
 		/* Check langType */
-		if (langType.equalsIgnoreCase("in")) {
-			langList.addAll(main.getSupportedInputLangs());
-		} else if (langType.equalsIgnoreCase("out")) {
-			langList.addAll(main.getSupportedOutputLangs());
-		} else if (langType.equalsIgnoreCase("local")) {
-			langList.addAll(CommonRefs.supportedPluginLangCodes.values());
-		} else {
-			debugMsg("Invalid langType for getFormattedValidLangCodes()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
-			return "&cInvalid language type specified";
+		switch (langType.toLowerCase()) {
+			case "in":
+				langMap = main.getSupportedInputLangs();
+				break;
+			case "out":
+				langMap = main.getSupportedOutputLangs();
+				break;
+			case "local":
+				langMap = CommonRefs.supportedPluginLangCodes;
+				break;
+			default:
+				debugMsg("Invalid langType for getFormattedValidLangCodes()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
+				return "&cInvalid language type specified";
 		}
 
+		/* Use a TreeSet to eliminate duplicates and sort */
+		TreeSet<SupportedLang> sortedUniqueLangs = new TreeSet<>(langMap.values());
+
 		/* Format the output nicely */
-		for (SupportedLang eaLang : langList) {
-			if (eaLang == null) {
+		for (SupportedLang lang : sortedUniqueLangs) {
+			if (lang == null) {
 				debugMsg("Lang codes not set for " + langType + "! FIX THIS");
 				out.append("N/A");
 				break;
 			}
-			out.append("&b").append(eaLang.getLangCode())
+			out.append("&b").append(lang.getLangCode())
 					.append(" &f- ")
-					.append("&e").append(eaLang.getLangName()).append("&6/&e").append(eaLang.getNativeLangName())
+					.append("&e").append(lang.getLangName()).append("&6/&e").append(lang.getNativeLangName())
 					.append("&r, ");
 		}
 
@@ -1100,13 +1095,14 @@ public class CommonRefs {
 	}
 
 	/**
-	 * Fixes a given list of SupportedLangs to include native names/language names
-	 * @param in - List of SupportedLang objs
+	 * Fixes a given map of SupportedLangs to include native names/language names
+	 *
+	 * @param in          - Map of SupportedLang objs
 	 * @param nativesOnly - Whether we should add regular lang names as well as native langs
-	 * @param preInit - Whether we are initializing or not (if not, do not send ANY messages; will not work in this state)
-	 * @return - The fixed list of supportedLang objs
+	 * @param preInit     - Whether we are initializing or not (if not, do not send ANY messages; will not work in this state)
+	 * @return - The fixed map of supportedLang objs
 	 */
-	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly, boolean preInit) {
+	public Map<String, SupportedLang> fixLangNames(Map<String, SupportedLang> in, boolean nativesOnly, boolean preInit) {
 		// Adjust the file path as necessary
 		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -1114,16 +1110,19 @@ public class CommonRefs {
 
 		try {
 			languageMap = objectMapper.readValue(main.getResource(isoJsonFilePath), new TypeReference<Map<String, ISOLanguage>>(){});
-			for (int i = 0; i < in.size(); i++) {
-				SupportedLang currLang = in.get(i);
+			// hashSet means less dupes
+			for (SupportedLang currLang : new HashSet<>(in.values())) {
 				String currCode = currLang.getLangCode();
+				if (!preInit) {debugMsg("Trying to fix " + currCode + " from JSON...");}
 				ISOLanguage jsonLang = languageMap.get(currCode);
 
 				if (jsonLang != null) {
-					if (nativesOnly) {
-						in.set(i, new SupportedLang(currLang.getLangCode(), currLang.getLangName(), jsonLang.getNativeName()));
-					} else {
-						in.set(i, new SupportedLang(currLang.getLangCode(), jsonLang.getIntName(), jsonLang.getNativeName()));
+					currLang.setNativeLangName(jsonLang.getNativeName());
+					in.put(currLang.getNativeLangName(), currLang);
+					if (!nativesOnly) {
+						// If we want to fix language names as well...
+						currLang.setLangName(jsonLang.getIntName());
+						in.put(currLang.getLangName(), currLang);
 					}
 				} else {
 					if (!preInit) debugMsg("Could not find " + currCode + " in JSON!");

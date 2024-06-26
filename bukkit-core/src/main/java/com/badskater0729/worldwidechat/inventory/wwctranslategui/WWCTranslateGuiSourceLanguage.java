@@ -1,6 +1,7 @@
 package com.badskater0729.worldwidechat.inventory.wwctranslategui;
 
 import java.util.ArrayList;
+import java.util.TreeSet;
 
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.CommonRefs;
@@ -64,11 +65,11 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedInputLangs().size()];
 			
 			/* Add each supported language from each respective translator */
-			for (int i = 0; i < main.getSupportedInputLangs().size(); i++) {
+			int i = 0;
+			SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), "in");
+			for (SupportedLang currLang : new TreeSet<>(main.getSupportedInputLangs().values())) {
 				ItemStack itemForLang = XMaterial.BOOK.parseItem();
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
-				SupportedLang currLang = main.getSupportedInputLangs().get(i);
-				SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), "in");
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
@@ -95,6 +96,9 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 					new WWCTranslateGuiTargetLanguage(thisLangCode, targetPlayerUUID, inPlayer).getTargetLanguageInventory()
 							.open(player);
 				});
+
+				// Iterate
+				i++;
 			}
 
 			/* 28 langs per page, start at 1, 1 */

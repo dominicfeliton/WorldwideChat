@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import org.checkerframework.checker.units.qual.C;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.InputStream;
@@ -14,9 +15,7 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.*;
 
 public class SystranTranslation extends BasicTranslation {
@@ -63,25 +62,22 @@ public class SystranTranslation extends BasicTranslation {
                     JsonObject jsonResponse = gson.fromJson(response, JsonObject.class);
                     JsonArray languagePairs = jsonResponse.getAsJsonArray("languagePairs");
 
-                    List<SupportedLang> outLangList = new ArrayList<>();
-                    List<SupportedLang> inLangList = new ArrayList<>();
+                    Map<String, SupportedLang> outLangMap = new HashMap<>();
+                    Map<String, SupportedLang> inLangMap = new HashMap<>();
                     for (JsonElement pair : languagePairs) {
                         JsonObject langPair = pair.getAsJsonObject();
                         String sourceCode = langPair.get("source").getAsString();
                         String targetCode = langPair.get("target").getAsString();
                         SupportedLang sourceLang = new SupportedLang(sourceCode, sourceCode);
                         SupportedLang targetLang = new SupportedLang(targetCode, targetCode);
-                        if (!inLangList.contains(sourceLang)) {
-                            inLangList.add(sourceLang);
-                        }
-                        if (!outLangList.contains(targetLang)) {
-                            outLangList.add(targetLang);
-                        }
+
+                        inLangMap.put(sourceLang.getLangCode(), sourceLang);
+                        outLangMap.put(targetLang.getLangCode(), targetLang);
                     }
 
                     // Systran does not include native or regular lang names.
-                    main.setOutputLangs(refs.fixLangNames(outLangList, false, false));
-                    main.setInputLangs(refs.fixLangNames(inLangList, false, false));
+                    main.setOutputLangs(refs.fixLangNames(outLangMap, false, false));
+                    main.setInputLangs(refs.fixLangNames(inLangMap, false, false));
 
                     /* Setup test translation */
                     inputLang = "en";

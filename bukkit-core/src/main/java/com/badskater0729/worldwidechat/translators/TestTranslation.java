@@ -1,12 +1,17 @@
 package com.badskater0729.worldwidechat.translators;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.SupportedLang;
 
 public class TestTranslation extends BasicTranslation {
+
+	CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	public TestTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
 		super(textToTranslate, inputLang, outputLang, callbackExecutor);
@@ -21,14 +26,23 @@ public class TestTranslation extends BasicTranslation {
 	public String useTranslator() {
 		if (isInitializing) {
 			/* Generate fake supported langs list */
-			List<SupportedLang> outList = new ArrayList<SupportedLang>();
-			outList.add(new SupportedLang("en", "English", ""));
-			outList.add(new SupportedLang("es", "Spanish", ""));
-			outList.add(new SupportedLang("fr", "French", ""));
+			Map<String, SupportedLang> outMap = new HashMap<>();
+			SupportedLang en = new SupportedLang("en", "English", "");
+			SupportedLang es = new SupportedLang("es", "Spanish", "");
+			SupportedLang fr = new SupportedLang("fr", "French", "");
+
+			outMap.put(en.getLangCode(), en);
+			outMap.put(en.getLangName(), en);
+
+			outMap.put(es.getLangCode(), es);
+			outMap.put(es.getLangName(), es);
+
+			outMap.put(fr.getLangCode(), fr);
+			outMap.put(fr.getLangName(), fr);
 
 			/* Set langList in Main */
-			main.setOutputLangs(outList);
-			main.setInputLangs(outList);
+			main.setOutputLangs(refs.fixLangNames(outMap, true, false));
+			main.setInputLangs(refs.fixLangNames(outMap, true, false));
 
 			/* Test translation setup */
 			outputLang = "es";

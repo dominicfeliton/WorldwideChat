@@ -52,9 +52,12 @@ public class AzureTranslation extends BasicTranslation {
                 Collection<Language> azLangs = translate.getAvailableLanguages(new AvailableLanguagesParams()).get().get();
 
                 /* Convert supportedLangs to our own SupportedLang objs */
-                List<SupportedLang> supportedLangs = new ArrayList<SupportedLang>();
+                Map<String, SupportedLang> supportedLangs = new HashMap<>();
                 for (Language eaLang : azLangs) {
-                    supportedLangs.add(new SupportedLang(eaLang.getCode(), eaLang.getName(), eaLang.getNativeName()));
+                    SupportedLang lang = new SupportedLang(eaLang.getCode(), eaLang.getName(), eaLang.getNativeName());
+                    supportedLangs.put(lang.getLangCode(), lang);
+                    supportedLangs.put(lang.getLangName(), lang);
+                    supportedLangs.put(lang.getNativeLangName(), lang);
                 }
 
                 /* Set supported translator langs */

@@ -35,6 +35,7 @@ import com.mongodb.MongoException;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import org.yaml.snakeyaml.Yaml;
 
 import static com.badskater0729.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
@@ -83,9 +84,14 @@ public class ConfigurationHandler {
 	public void initMessagesConfigs() {
 		// Init ALL message configs
 		main.getLogger().warning("Importing/upgrading localization files...");
-		for (String eaStr : supportedPluginLangCodes.keySet()) {
+		Set<SupportedLang> uniqueLangs = new HashSet<>(supportedPluginLangCodes.values());
+		for (SupportedLang eaLang : uniqueLangs) {
+			String eaStr = eaLang.getLangCode();
 			refs.debugMsg("Checking " + eaStr + "...");
-			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
+			YamlConfiguration currConfig = generateMessagesConfig(eaStr);
+			if (currConfig != null) {
+				pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
+			}
 		}
 		main.getLogger().warning("Done.");
 	}
@@ -93,6 +99,10 @@ public class ConfigurationHandler {
 	public YamlConfiguration generateMessagesConfig(String inLocalLang) {
 		/* Init config file */
 		File msgFile = new File(main.getDataFolder(), "messages-" + inLocalLang + ".yml");
+		if (main.getResource("messages-" + inLocalLang + ".yml") == null) {
+			refs.debugMsg("!!! Skipping " + inLocalLang + ", not found in default resources??");
+			return null;
+		}
 
 		/* Save default messages file if it does not exist */
 		if (!msgFile.exists()) {

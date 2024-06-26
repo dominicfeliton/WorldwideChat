@@ -49,30 +49,16 @@ public class WWCTabCompleter implements TabCompleter {
                     // This argument could be an input or outputLang
                     // Add input and output languages
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
-                    for (SupportedLang eaLang : main.getSupportedInputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedInputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
-                    for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedOutputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
                     break;
@@ -93,30 +79,16 @@ public class WWCTabCompleter implements TabCompleter {
                     // This argument could be an input or outputLang
                     // Add input and output languages
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
-                    for (SupportedLang eaLang : main.getSupportedInputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedInputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])){
+                            out.add(eaKey);
                         }
                     }
-                    for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedOutputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
                     break;
@@ -128,17 +100,10 @@ public class WWCTabCompleter implements TabCompleter {
 
                     // The third argument can only be outLang
                     // Therefore, simply add all possible output languages
-                    for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedOutputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
                     break;
@@ -158,30 +123,16 @@ public class WWCTabCompleter implements TabCompleter {
                     // This argument could be an input or outputLang
                     // Add input and output languages
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
-                    for (SupportedLang eaLang : main.getSupportedInputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedInputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
-                    for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedOutputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
                     break;
@@ -192,17 +143,10 @@ public class WWCTabCompleter implements TabCompleter {
                     }
 
                     // This argument can only be an outLang
-                    for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
-                        String langName = eaLang.getLangName();
-                        String langCode = eaLang.getLangCode();
-                        String nativeName = eaLang.getNativeLangName();
-                        if ((prevEmptyArg ||
-                                langName.startsWith(args[args.length - 1]) ||
-                                langCode.startsWith(args[args.length - 1]) ||
-                                nativeName.startsWith(args[args.length - 1]))) {
-                            out.add(langName);
-                            out.add(langCode);
-                            out.add(nativeName);
+                    for (String eaKey : main.getSupportedOutputLangs().keySet()) {
+                        if (prevEmptyArg ||
+                                eaKey.startsWith(args[args.length - 1])) {
+                            out.add(eaKey);
                         }
                     }
                     break;

@@ -1,13 +1,10 @@
 package com.badskater0729.worldwidechat.translators;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.Map;
+import java.util.concurrent.*;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.StringUtils;
@@ -56,19 +53,21 @@ public class GoogleTranslation extends BasicTranslation {
 				List<Language> allLanguages = translate.listSupportedLanguages();
 
 				/* Parse languages */
-				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
-				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
+				Map<String, SupportedLang> outLangMap = new HashMap<>();
+				Map<String, SupportedLang> inLangMap = new HashMap<>();
 				
 				for (Language eaLang : allLanguages) {
 					// Remove spaces from language name
 					SupportedLang currLang = new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()), "");
-					outLangList.add(currLang);
-					inLangList.add(currLang);
+					outLangMap.put(currLang.getLangCode(), currLang);
+					outLangMap.put(currLang.getLangName(), currLang);
+					inLangMap.put(currLang.getLangCode(), currLang);
+					inLangMap.put(currLang.getLangName(), currLang);
 				}
 
 				/* Set languages list */
-				main.setOutputLangs(refs.fixLangNames(outLangList, true, false));
-				main.setInputLangs(refs.fixLangNames(inLangList, true, false));
+				main.setOutputLangs(refs.fixLangNames(outLangMap, true, false));
+				main.setInputLangs(refs.fixLangNames(inLangMap, true, false));
 
 				/* Setup test translation */
 				inputLang = "en";

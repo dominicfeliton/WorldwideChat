@@ -22,6 +22,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.TreeSet;
 import java.util.UUID;
 
 public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
@@ -69,13 +70,14 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
             /* Add each supported language from each respective translator */
             int i = 0;
-            for (SupportedLang eaLang : CommonRefs.supportedPluginLangCodes.values()) {
+            for (SupportedLang eaLang : new TreeSet<>(CommonRefs.supportedPluginLangCodes.values())) {
                 String currLang = eaLang.getLangCode();
                 ItemStack itemForLang = XMaterial.BOOK.parseItem();
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 
                 /* Add Glow Effects */
                 ArrayList<String> lore = new ArrayList<>();
+                refs.debugMsg(eaLang.toString());
                 if (userLang.equalsIgnoreCase(currLang)) {
                     invManager.addGlowEffect(itemForLangMeta);
                     lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUICurrentPlayerLang", inPlayer));
@@ -96,7 +98,9 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                     localize.processCommand();
                     new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu().open(player);
                 });
-                i += 1;
+
+                // Iterate
+                i++;
             }
 
             /* 28 langs per page, start at 1, 1 */

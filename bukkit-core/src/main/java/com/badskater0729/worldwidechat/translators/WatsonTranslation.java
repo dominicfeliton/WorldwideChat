@@ -1,7 +1,9 @@
 package com.badskater0729.worldwidechat.translators;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -67,14 +69,14 @@ public class WatsonTranslation extends BasicTranslation {
 
 				/* Parse json */
 				final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
-				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
-				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
+				Map<String, SupportedLang> outLangList = new HashMap<>();
+				Map<String, SupportedLang> inLangList = new HashMap<>();
 				for (JsonElement element : dataJson) {
 					// Ignore Chinese, IBM Watson lies and says they support it, but they do not
-					// TODO: File bug report
 					if (((JsonObject) element).get("language_name").getAsString().contains("Chinese")) {
 						continue;
 					}
+
 					// Generate SupportedLang obj
 					SupportedLang currLang = new SupportedLang(((JsonObject) element).get("language").getAsString(),
 							StringUtils.deleteWhitespace(((JsonObject) element).get("language_name").getAsString()),
@@ -82,11 +84,15 @@ public class WatsonTranslation extends BasicTranslation {
 					
 					// Add to source list, if supported
 					if (((JsonObject) element).get("supported_as_source").getAsBoolean()) {
-						inLangList.add(currLang);
+						inLangList.put(currLang.getLangCode(), currLang);
+						inLangList.put(currLang.getLangName(), currLang);
+						inLangList.put(currLang.getNativeLangName(), currLang);
 					}
 					// Add to target list, if supported
 					if (((JsonObject) element).get("supported_as_target").getAsBoolean()) {
-						outLangList.add(currLang);
+						outLangList.put(currLang.getLangCode(), currLang);
+						outLangList.put(currLang.getLangName(), currLang);
+						outLangList.put(currLang.getNativeLangName(), currLang);
 					}
 				}
 

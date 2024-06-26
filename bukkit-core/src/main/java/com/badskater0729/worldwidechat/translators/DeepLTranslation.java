@@ -1,13 +1,10 @@
 package com.badskater0729.worldwidechat.translators;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.Map;
+import java.util.concurrent.*;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.StringUtils;
@@ -49,13 +46,17 @@ public class DeepLTranslation extends BasicTranslation {
 
 			if (isInitializing) {
 				/* Parse Supported Languages */
-				List<SupportedLang> sourceLangs = new ArrayList<SupportedLang>();
+				Map<String, SupportedLang> sourceLangs = new HashMap<>();
 				for (Language eaLang : translate.getSourceLanguages()) {
-					sourceLangs.add(new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName())));
+					SupportedLang lang = new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()));
+					sourceLangs.put(eaLang.getCode(), lang);
+					sourceLangs.put(eaLang.getName(), lang);
 				}
-				List<SupportedLang> targetLangs = new ArrayList<SupportedLang>();
+				Map<String, SupportedLang> targetLangs = new HashMap<String, SupportedLang>();
 				for (Language eaLang : translate.getTargetLanguages()) {
-					targetLangs.add(new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName())));
+					SupportedLang lang = new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()));
+					targetLangs.put(lang.getLangCode(), lang);
+					targetLangs.put(lang.getLangName(), lang);
 				}
 
 				/* Set languages list */

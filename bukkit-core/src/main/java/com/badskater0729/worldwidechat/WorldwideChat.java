@@ -80,8 +80,8 @@ public class WorldwideChat extends JavaPlugin {
 
 	private CommonRefs refs;
 	
-	private List<SupportedLang> supportedInputLangs = new CopyOnWriteArrayList<>();
-	private List<SupportedLang> supportedOutputLangs = new CopyOnWriteArrayList<>();
+	private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
+	private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
 	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<>();
@@ -678,11 +678,11 @@ public class WorldwideChat extends JavaPlugin {
 		refs.debugMsg(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
 	
-	public void setInputLangs(List<SupportedLang> in) {
+	public void setInputLangs(Map<String, SupportedLang> in) {
 		supportedInputLangs = in;
 	}
 	
-	public void setOutputLangs(List<SupportedLang> in) {
+	public void setOutputLangs(Map<String, SupportedLang> in) {
 		supportedOutputLangs = in;
 	}
 	
@@ -980,11 +980,11 @@ public class WorldwideChat extends JavaPlugin {
 		return playersUsingConfigGUI;
 	}
 	
-	public List<SupportedLang> getSupportedInputLangs() {
+	public Map<String, SupportedLang> getSupportedInputLangs() {
 		return supportedInputLangs;
 	}
 	
-	public List<SupportedLang> getSupportedOutputLangs() {
+	public Map<String, SupportedLang> getSupportedOutputLangs() {
 		return supportedOutputLangs;
 	}
 
