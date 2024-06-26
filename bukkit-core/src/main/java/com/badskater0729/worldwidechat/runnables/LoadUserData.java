@@ -328,7 +328,6 @@ public class LoadUserData implements Runnable {
 							String inLang = rs.getString("inputLang");
 							String outLang = rs.getString("outputLang");
 							if (!validLangCodes(inLang, outLang)) {
-								// TODO: Check that this gets deleted?
 								continue;
 							}
 							CachedTranslation cacheTmp = new CachedTranslation(
@@ -351,7 +350,6 @@ public class LoadUserData implements Runnable {
 							String inLang = rs.getString("inputLang");
 							String outLang = rs.getString("outputLang");
 							if (!validLangCodes(inLang, outLang)) {
-								// TODO: Check that this gets deleted?
 								continue;
 							}
 							CachedTranslation cacheTmp = new CachedTranslation(
@@ -377,7 +375,6 @@ public class LoadUserData implements Runnable {
 					String inLang = currDoc.getString("inputLang");
 					String outLang = currDoc.getString("outputLang");
 					if (!validLangCodes(inLang, outLang)) {
-						// TODO: Check that this gets deleted?
 						continue;
 					}
 					CachedTranslation cacheTmp = new CachedTranslation(
@@ -404,7 +401,6 @@ public class LoadUserData implements Runnable {
 					String inLang = currFileConfig.getString("inputLang");
 					String outLang = currFileConfig.getString("outputLang");
 					if (!validLangCodes(inLang, outLang)) {
-						// TODO: Check that this gets deleted?
 						continue;
 					}
 					String inputPhrase = currFileConfig.getString("inputPhrase");

@@ -75,7 +75,6 @@ public class ConfigurationHandler {
 			return;
 		}
 
-		// TODO: convert this to a value stored in WorldwideChat class (default en)
 		mainConfig.set("General.pluginLang", "en");
 		main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
 	}

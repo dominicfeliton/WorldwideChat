@@ -63,7 +63,7 @@ public class TranslateInGameListener implements Listener {
 							}
 						}
 					};
-					// TODO: Check entity
+
 					wwcHelper.runAsync(out, ENTITY, event.getPlayer());
 				}
 			} catch (Exception e) {
@@ -153,7 +153,6 @@ public class TranslateInGameListener implements Listener {
 								}
 							}
 						};
-						// TODO: Check entity
 
 						wwcHelper.runSync(open, ENTITY, currPlayer);
 					}
@@ -248,7 +247,6 @@ public class TranslateInGameListener implements Listener {
 								}
 							};
 
-							// TODO: Check entity
 							wwcHelper.runSync(sign, ENTITY, event.getPlayer());
 						}
 					}
@@ -312,7 +310,6 @@ public class TranslateInGameListener implements Listener {
 									new TempItemInventory(translatedItem, event.getPlayer()).getTempItemInventory().open(event.getPlayer());
 								}
 							};
-							// TODO: Check entity
 
 							wwcHelper.runSync(open, ENTITY, event.getPlayer());
 						}

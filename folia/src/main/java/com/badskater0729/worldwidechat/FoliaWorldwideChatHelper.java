@@ -22,19 +22,16 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     // SCHEDULER (NEW)
     @Override
     public void cleanupTasks(int taskID) {
-        // TODO, check if async wait thread thing works here?
         refs.debugMsg("Folia cleanup tasks...");
 
         main.getServer().getGlobalRegionScheduler().cancelTasks(main);
+        main.getServer().getAsyncScheduler().cancelTasks(main);
     }
 
     // Core method for running tasks + repeating tasks
     private void runTask(SchedulerType schedulerType, Runnable task, Object taskObj, long delay, long period) {
         // First convert to Consumer<ScheduledTask>
         Consumer<ScheduledTask> converted = (run) -> task.run();
-
-        // TODO: runDelayed() delay cannot be 0.
-        // TODO: Check if runAtFixedRate delay can be 0.
 
         switch (schedulerType) {
             case GLOBAL:

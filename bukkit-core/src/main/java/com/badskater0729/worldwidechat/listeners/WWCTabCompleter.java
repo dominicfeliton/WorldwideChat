@@ -19,7 +19,6 @@ public class WWCTabCompleter implements TabCompleter {
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-    // TODO: DO NOT USE ACTIVE TRANSLATOR/PLAYER RECORD KEYSETS!!!!
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
         // Init out list

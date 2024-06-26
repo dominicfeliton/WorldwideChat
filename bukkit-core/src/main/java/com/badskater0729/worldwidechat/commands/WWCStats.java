@@ -113,7 +113,6 @@ public class WWCStats extends BasicCommand {
 							}
 						};
 
-						// TODO: Check entity
 						wwcHelper.runSync(out, ENTITY, (Player)sender);
 					} else {
 						PlayerRecord record = main

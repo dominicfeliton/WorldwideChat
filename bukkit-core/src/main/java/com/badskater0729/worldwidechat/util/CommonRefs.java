@@ -55,7 +55,7 @@ public class CommonRefs {
 	private static WorldwideChat main = WorldwideChat.instance;
 
 	private static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
-	
+
 	public static String[] supportedMCVersions = { "1.21", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
 	public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
@@ -146,16 +146,17 @@ public class CommonRefs {
 	  */
 	public SupportedLang getSupportedLang(String langName, String langType) {
 		/* Setup vars */
-		// TODO: Make this better...make each list a MAP, then GET the requested lang?
+		// TODO: IMPORTANT: Make this better...make each lang list a MAP, then GET the requested lang?
+		// We want O(1) not O(n)
 		Set<SupportedLang> langList = new HashSet<SupportedLang>();
 		SupportedLang invalidLang = new SupportedLang("","","");
-		
+
 		/* Check langType */
 		if (langType.equalsIgnoreCase("in")) {
 			langList.addAll(main.getSupportedInputLangs());
 		} else if (langType.equalsIgnoreCase("out")) {
 			langList.addAll(main.getSupportedOutputLangs());
-		} else if (langType.equalsIgnoreCase("all")) { 
+		} else if (langType.equalsIgnoreCase("all")) {
 			langList.addAll(main.getSupportedInputLangs());
 			langList.addAll(main.getSupportedOutputLangs());
 		} else if (langType.equalsIgnoreCase("local")) {
@@ -165,7 +166,7 @@ public class CommonRefs {
 			debugMsg("Invalid langType for getSupportedTranslatorLang()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
 		    return invalidLang;
 		}
-		
+
 		/* Check selected list for lang */
 		for (SupportedLang eaLang : langList) {
 			if (eaLang == null) {
@@ -176,7 +177,7 @@ public class CommonRefs {
 				return eaLang;
 			}
 		}
-		
+
 		/* Return invalid if nothing is found */
 		return invalidLang;
 	}

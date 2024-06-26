@@ -42,7 +42,6 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         // Thanks to:
         // https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
         if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-            // TODO: Check compatibility on folia
             final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
             final long asyncTasksStart = System.currentTimeMillis();
             boolean asyncTasksTimeout = false;
