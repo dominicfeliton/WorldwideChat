@@ -788,7 +788,7 @@ public class CommonRefs {
 		if (stopping) return true;
 
 		try {
-			Bukkit.getScheduler().scheduleSyncDelayedTask(main, () -> {}, 0L);
+			Bukkit.getScheduler().runTaskLater(main, () -> {}, 0L);
 		} catch (IllegalPluginAccessException | IllegalStateException e) {
 			debugMsg("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;

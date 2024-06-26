@@ -316,15 +316,12 @@ public class WWCTabCompleter implements TabCompleter {
 				if ("cache".startsWith(args[0])) {
 					out.add("cache");
 				}
-				if ("convert".startsWith(args[0])) {
-					out.add("convert");
+				if ("checkdb".startsWith(args[0])) {
+					out.add("checkdb");
 				}
 			} else if (args.length == 2) {
 				if (args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
 					out.add("clear");
-				}
-				if (args[0].equalsIgnoreCase("convert") && "yes".startsWith(args[1])) {
-					out.add("yes");
 				}
 			}
 		}
