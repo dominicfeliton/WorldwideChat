@@ -40,7 +40,6 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 		this.inPlayer = inPlayer;
 	}
 
-	// TODO: make a getter
 	public SmartInventory getOverrideMessagesSettings() {
 		return SmartInventory.builder().id("overrideMessagesMenu")
 				.provider(this).size(6, 9)

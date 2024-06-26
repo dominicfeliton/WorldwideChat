@@ -88,7 +88,6 @@ public class CommonRefs {
 	static {
 		// Linked hashmaps to preserve order
 		// PRIMARY KEY == playerUUID, randomUUID on persistentCache
-		// TODO: Move create table method over here, make different primary keys more clear?
 		HashMap<String, String> activeTranslatorsSchema = new LinkedHashMap<>();
 		activeTranslatorsSchema.put("creationDate", "VARCHAR(40)");
 		activeTranslatorsSchema.put("playerUUID", "VARCHAR(40)");
