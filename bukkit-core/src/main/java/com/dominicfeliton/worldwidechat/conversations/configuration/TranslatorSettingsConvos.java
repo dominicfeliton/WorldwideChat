@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -20,6 +21,8 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 public class TranslatorSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
 	
 	public static class CharacterLimit extends NumericPrompt {
 		@Override
@@ -33,8 +36,7 @@ public class TranslatorSettingsConvos {
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > 0 && input.intValue() <= 255, context, "wwcConfigConversationCharacterLimitSuccess",
+			return invMan.genericConfigConvo(input.intValue() > 0 && input.intValue() <= 255, context, "wwcConfigConversationCharacterLimitSuccess",
 					"Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -51,8 +53,7 @@ public class TranslatorSettingsConvos {
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess",
+			return invMan.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess",
 					"Translator.errorLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -69,8 +70,7 @@ public class TranslatorSettingsConvos {
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess",
+			return invMan.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess",
 					"Translator.rateLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -87,8 +87,7 @@ public class TranslatorSettingsConvos {
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess",
+			return invMan.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess",
 					"Translator.translatorCacheSize", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -116,7 +115,7 @@ public class TranslatorSettingsConvos {
 				refs.sendMsg(currPlayer, clearChange);
 				return this;
 			} else {
-				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationIgnoreErrorsSuccess",
+				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationIgnoreErrorsSuccess",
 						new String[] {"Translator.errorsToIgnore"}, new Object[] {input.split(",")}, CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 			}
 		}

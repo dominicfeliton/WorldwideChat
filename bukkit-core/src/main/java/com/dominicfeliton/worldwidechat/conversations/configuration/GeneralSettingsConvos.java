@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat.conversations.configuration;
 
 import java.util.Arrays;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
@@ -23,7 +24,9 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 public class GeneralSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
-	
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
+
 	public static class FatalAsyncAbort extends NumericPrompt {
 
 		@Override
@@ -37,8 +40,7 @@ public class GeneralSettingsConvos {
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() >= 7, context, "wwcConfigConversationFatalAsyncSuccess", "General.fatalAsyncTaskTimeout", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+			return invMan.genericConfigConvo(input.intValue() >= 7, context, "wwcConfigConversationFatalAsyncSuccess", "General.fatalAsyncTaskTimeout", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
 		}
 		
 	}
@@ -59,7 +61,7 @@ public class GeneralSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			if (refs.isSupportedLang(input, "local") || input.equals("0")) {
 				input = !input.equals("0") ? refs.getSupportedLang(input, "local").getLangCode() : "0";
-				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
 			}
 			Player currPlayer = ((Player) context.getForWhom());
 			final TextComponent badChange = Component.text()
@@ -85,8 +87,7 @@ public class GeneralSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
 		}
 	}
 	
@@ -103,7 +104,7 @@ public class GeneralSettingsConvos {
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationSyncUserDataDelaySuccess", "General.syncUserDataDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.smartInv);
+			return invMan.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationSyncUserDataDelaySuccess", "General.syncUserDataDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.smartInv);
 		}
 	}
 	
@@ -120,7 +121,7 @@ public class GeneralSettingsConvos {
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationUpdateCheckerSuccess", "General.updateCheckerDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.smartInv);
+			return invMan.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationUpdateCheckerSuccess", "General.updateCheckerDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.smartInv);
 		}
 	}
 	

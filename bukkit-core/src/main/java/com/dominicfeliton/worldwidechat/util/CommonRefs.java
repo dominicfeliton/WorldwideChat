@@ -911,25 +911,6 @@ public class CommonRefs {
 					}
 				}
 
-				// Check for extra columns in the table that are not defined in the schema
-				/* who cares...
-				for (String columnName : existingColumns.keySet()) {
-					// Gross O(n)^2, but shouldn't matter too much...
-					boolean colExists = false;
-					for (String eachName : tableSchema.keySet()) {
-						if (columnName.equals(eachName.toLowerCase()))
-							colExists = true;
-
-					}
-					if (!colExists) {
-						debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
-								columnName, tableName));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
-						return true;
-					}
-				}
-				 */
-
 				debugMsg(serial(getFancyMsg("wwcdGoodTable", new String[] {"&6PostgreSQL", "&6"+tableName}, "&a", null)));
 				return false; // Table structure matches the schema
 			} catch (SQLException e) {
@@ -939,53 +920,6 @@ public class CommonRefs {
 
 		}
 		return true;
-	}
-
-	//TODO: Move to invManager?
-	/** 
-	  * Returns the generic conversation for modifying values in our config.yml using the GUI.
-	  * @param preCheck - The boolean that needs to be true for the change to proceed
-	  * @param context - The conversation context obj
-	  * @param successfulChangeMsg - Names of the message sent on successful change 
-	  * @param configValName - The names of the config value to be updated
-	  * @param configVal - The new value
-	  * @param prevInventory - The previous inventory to open up after the conversation is over
-	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
-	  */
-	public Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
-		Player currPlayer = ((Player)context.getForWhom());
-		if (configValName.length != configVal.length) {
-			return null;
-		}
-		// TODO: Add a fail message potentially if the precheck fails?
-		if (preCheck) {
-			for (int i = 0; i < configValName.length; i++) {
-				main.getConfigManager().getMainConfig().set(configValName[i], configVal[i]);
-			}
-			main.addPlayerUsingConfigurationGUI((currPlayer.getUniqueId()));
-			final TextComponent successfulChange = Component.text()
-							.content(getMsg(successfulChangeMsg, currPlayer))
-							.color(NamedTextColor.GREEN)
-					.build();
-			sendMsg(currPlayer, successfulChange);
-		}
-		/* Re-open previous GUI */
-		prevInventory.open((Player)context.getForWhom());
-		return Prompt.END_OF_CONVERSATION;
-	}
-	
-	/** 
-	  * Returns the generic conversation for modifying values in our config.yml using the GUI.
-	  * @param preCheck - The boolean that needs to be true for the change to proceed
-	  * @param context - The conversation context obj
-	  * @param successfulChangeMsg - Name of the message sent on successful change 
-	  * @param configValName - The name of the config value to be updated
-	  * @param configVal - The new value
-	  * @param prevInventory - The previous inventory to open up after the conversation is over
-	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation.
-	  */
-	public Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
-		return genericConfigConvo(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
 	}
 	
 	/**

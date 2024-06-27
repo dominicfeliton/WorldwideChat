@@ -636,4 +636,13 @@ Messages:
     connector de xat existent. Desactivar el suport de Vault...
   wwcConfigGUIToggleRestartRequired: Cal un reinici complet del servidor per aplicar
     aquesta configuració.
+  wwcLoadUserDataFolderFail: No es pot crear la carpeta de dades d'usuari al directori
+    de complements. Desactivació de WorldwideChat...
+  wwcLoadStatsFolderFail: No es pot crear la carpeta d'estadístiques d'usuari al directori
+    de complements. Desactivació de WorldwideChat...
+  wwcLoadCacheFolderFail: No es pot crear la carpeta de memòria cau d'usuari al directori
+    de complements. Desactivació de WorldwideChat...
+  wwcNoConvoFolia: Les converses Bukkit actualment estan trencades en aquesta versió
+    de Folia, però els commutadors encara són funcionals. Si us plau, proveu de modificar
+    la configuració manualment per a aquest valor.
 

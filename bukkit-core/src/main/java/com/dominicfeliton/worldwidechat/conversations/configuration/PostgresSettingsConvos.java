@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
@@ -17,6 +18,8 @@ public class PostgresSettingsConvos {
 
     private static WorldwideChat main = WorldwideChat.instance;
 
+    private static WWCInventoryManager invMan = new WWCInventoryManager();
+
     public static class Database extends StringPrompt {
         @Override
         public String getPromptText(ConversationContext context) {
@@ -29,8 +32,7 @@ public class PostgresSettingsConvos {
 
         @Override
         public Prompt acceptInput(ConversationContext context, String input) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresDatabaseNameSuccess",
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresDatabaseNameSuccess",
                     new String[] {"Storage.postgresDatabaseName"}, new Object[] {input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
         }
     }
@@ -47,8 +49,7 @@ public class PostgresSettingsConvos {
 
         @Override
         public Prompt acceptInput(ConversationContext context, String input) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresHostnameSuccess",
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresHostnameSuccess",
                     new String[] {"Storage.postgresHostname"}, new Object[] {input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
         }
     }
@@ -76,7 +77,7 @@ public class PostgresSettingsConvos {
                 refs.sendMsg(currPlayer, badChange);
                 return this;
             } else {
-                return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresOptionalArgsSuccess",
+                return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresOptionalArgsSuccess",
                         new String[] {"Storage.postgresOptionalArgs"}, new Object[] {input.split(",")}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
             }
         }
@@ -94,8 +95,7 @@ public class PostgresSettingsConvos {
 
         @Override
         public Prompt acceptInput(ConversationContext context, String input) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresPasswordSuccess",
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresPasswordSuccess",
                     new String[] {"Storage.postgresPassword"}, new Object[] {input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
         }
     }
@@ -113,8 +113,7 @@ public class PostgresSettingsConvos {
 
         @Override
         protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return refs.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationPostgresPortSuccess",
+            return invMan.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationPostgresPortSuccess",
                     new String[] {"Storage.postgresPort"}, new Object[] {input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
         }
 
@@ -132,8 +131,7 @@ public class PostgresSettingsConvos {
 
         @Override
         public Prompt acceptInput(ConversationContext context, String input) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresUsernameSuccess",
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresUsernameSuccess",
                     new String[] {"Storage.postgresUsername"}, new Object[] {input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
         }
     }

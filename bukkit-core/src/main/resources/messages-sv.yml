@@ -599,4 +599,13 @@ Messages:
     Inaktiverar stöd för Vault...
   wwcConfigGUIToggleRestartRequired: En fullständig serveromstart krävs för att tillämpa
     den här inställningen.
+  wwcLoadUserDataFolderFail: Det gick inte att skapa användardatamappen i plugin-katalogen.
+    Inaktiverar WorldwideChat...
+  wwcLoadStatsFolderFail: Det gick inte att skapa användarstatistikmappen i plugin-katalogen.
+    Inaktiverar WorldwideChat...
+  wwcLoadCacheFolderFail: Det gick inte att skapa användarcachemappen i plugin-katalogen.
+    Inaktiverar WorldwideChat...
+  wwcNoConvoFolia: Bukkit-konversationer är för närvarande trasiga på den här versionen
+    av Folia, men växlar är fortfarande funktionella. Försök att ändra konfigurationen
+    manuellt för det här värdet.
 

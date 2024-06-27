@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
@@ -19,6 +20,8 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 public class MongoSettingsConvos {
 
 private static WorldwideChat main = WorldwideChat.instance;
+
+private static WWCInventoryManager invMan = new WWCInventoryManager();
 	
 	public static class Database extends StringPrompt {
 		@Override
@@ -32,8 +35,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoDatabaseNameSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoDatabaseNameSuccess",
 					new String[] {"Storage.mongoDatabaseName"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}
@@ -50,8 +52,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoHostnameSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoHostnameSuccess",
 					new String[] {"Storage.mongoHostname"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}
@@ -79,7 +80,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 				refs.sendMsg(currPlayer, badChange);
 				return this;
 			} else {
-				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoOptionalArgsSuccess",
+				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoOptionalArgsSuccess",
 						new String[] {"Storage.mongoOptionalArgs"}, new Object[] {input.split(",")}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 			}
 		}
@@ -97,8 +98,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoPasswordSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoPasswordSuccess",
 					new String[] {"Storage.mongoPassword"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}
@@ -116,8 +116,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationMongoPortSuccess",
+			return invMan.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationMongoPortSuccess",
 					new String[] {"Storage.mongoPort"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 		
@@ -135,8 +134,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoUsernameSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoUsernameSuccess",
 					new String[] {"Storage.mongoUsername"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}

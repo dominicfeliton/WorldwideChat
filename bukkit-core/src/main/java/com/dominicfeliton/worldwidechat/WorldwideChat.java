@@ -50,7 +50,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.pluginLangConfigs
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04292024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "06272024-2"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -461,8 +461,9 @@ public class WorldwideChat extends JavaPlugin {
 		try {
 			configurationManager.syncData(wasPreviouslyInvalid);
 		} catch (Exception e) {
-			// TODO: Better error handling here?
 			e.printStackTrace();
+			getServer().getPluginManager().disablePlugin(this);
+			return;
 		}
 
 		// Disconnect SQL

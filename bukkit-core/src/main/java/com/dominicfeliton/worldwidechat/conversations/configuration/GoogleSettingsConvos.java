@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -15,7 +16,9 @@ import net.md_5.bungee.api.ChatColor;
 public class GoogleSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
-	
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
+
 	public static class ApiKey extends StringPrompt {
 		@Override
 		public String getPromptText(ConversationContext context) {
@@ -28,8 +31,7 @@ public class GoogleSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess",
 					new String[] {"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv);
 		}
 	}

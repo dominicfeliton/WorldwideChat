@@ -51,16 +51,30 @@ public class LoadUserData implements Runnable {
 	@Override
 	public void run() {
 		//TODO: Sanitize for bad inputs/accommodate for obj upgrades; if data is bad, we definitely shouldn't add it
-		// TODO: Common method for SQL/Postgres
 		/* Load all saved user data */
 		refs.debugMsg("Starting LoadUserData!!!");
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 		File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
 		File cacheFolder = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
-		userDataFolder.mkdir();
-		statsFolder.mkdir();
-		cacheFolder.mkdir();
+
+		if (!userDataFolder.exists() && !userDataFolder.mkdir()) {
+			main.getLogger().severe(refs.getMsg("wwcLoadUserDataFolderFail", null));
+			main.getServer().getPluginManager().disablePlugin(main);
+			return;
+		}
+
+		if (!statsFolder.exists() && !statsFolder.mkdir()) {
+			main.getLogger().severe(refs.getMsg("wwcLoadStatsFolderFail", null));
+			main.getServer().getPluginManager().disablePlugin(main);
+			return;
+		}
+
+		if (!cacheFolder.exists() && !cacheFolder.mkdir()) {
+			main.getLogger().severe(refs.getMsg("wwcLoadCacheFolderFail", null));
+			main.getServer().getPluginManager().disablePlugin(main);
+			return;
+		}
 
 		/* Load user records (/wwcs) */
 		refs.debugMsg("Loading user records or /wwcs...");
@@ -88,6 +102,8 @@ public class LoadUserData implements Runnable {
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+				main.getServer().getPluginManager().disablePlugin(main);
+				return;
 			}
 		} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
 			/* Initialize collections, create if they do not exist */
@@ -97,6 +113,8 @@ public class LoadUserData implements Runnable {
 				database.createCollection("PlayerRecords");
 			} catch (MongoCommandException e) {
 				e.printStackTrace();
+				main.getServer().getPluginManager().disablePlugin(main);
+				return;
 			}
 			MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
 
@@ -142,6 +160,8 @@ public class LoadUserData implements Runnable {
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+				main.getServer().getPluginManager().disablePlugin(main);
+				return;
 			}
 		} else {
 			for (File eaFile : statsFolder.listFiles()) {
@@ -152,6 +172,8 @@ public class LoadUserData implements Runnable {
 					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
 				} catch (UnsupportedEncodingException e) {
 					e.printStackTrace();
+					main.getServer().getPluginManager().disablePlugin(main);
+					return;
 				}
 				currFileConfig.options().copyDefaults(true);
 				
@@ -209,6 +231,8 @@ public class LoadUserData implements Runnable {
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+				main.getServer().getPluginManager().disablePlugin(main);
+				return;
 			}
 		} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
 			try (Connection postgresConnection = postgres.getConnection()) {
@@ -242,6 +266,8 @@ public class LoadUserData implements Runnable {
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+				main.getServer().getPluginManager().disablePlugin(main);
+				return;
 			}
 		} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
 			// Load Active Translator using MongoDB
@@ -284,6 +310,8 @@ public class LoadUserData implements Runnable {
 					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
 				} catch (UnsupportedEncodingException e) {
 					e.printStackTrace();
+					main.getServer().getPluginManager().disablePlugin(main);
+					return;
 				}
 				currFileConfig.options().copyDefaults(true);
 				
@@ -341,6 +369,8 @@ public class LoadUserData implements Runnable {
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
+					main.getServer().getPluginManager().disablePlugin(main);
+					return;
 				}
 			} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
 				try (Connection postgresConnection = postgres.getConnection()) {
@@ -363,6 +393,8 @@ public class LoadUserData implements Runnable {
 					}
 				} catch (SQLException e) {
 					e.printStackTrace();
+					main.getServer().getPluginManager().disablePlugin(main);
+					return;
 				}
 			} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
 				// Load Cached Terms using MongoDB
@@ -394,6 +426,8 @@ public class LoadUserData implements Runnable {
 						currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
 					} catch (UnsupportedEncodingException e) {
 						e.printStackTrace();
+						main.getServer().getPluginManager().disablePlugin(main);
+						return;
 					}
 					currFileConfig.options().copyDefaults(true);
 

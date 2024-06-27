@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -15,6 +16,8 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 public class AmazonSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
 	
 	public static class AccessKey extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
@@ -29,7 +32,7 @@ public class AmazonSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateAccessKeySuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateAccessKeySuccess",
 					new String[] {"Translator.amazonAccessKey", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
 	}
@@ -46,7 +49,7 @@ public class AmazonSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess",
 					new String[] {"Translator.amazonRegion", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
 	}
@@ -63,7 +66,7 @@ public class AmazonSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateSecretKeySuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateSecretKeySuccess",
 					new String[] {"Translator.amazonSecretKey", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
 	}

@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -15,6 +16,8 @@ import net.md_5.bungee.api.ChatColor;
 public class DeepLSettingsConvos {
 
 private static WorldwideChat main = WorldwideChat.instance;
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
 	
 	public static class ApiKey extends StringPrompt {
 		@Override
@@ -28,8 +31,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationDeepLTranslateApiKeySuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationDeepLTranslateApiKeySuccess",
 					new String[] {"Translator.deepLAPIKey", "Translator.useDeepLTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv);
 		}
 	}

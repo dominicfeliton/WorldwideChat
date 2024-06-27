@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
@@ -19,7 +20,9 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 public class SQLSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
-	
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
+
 	public static class Database extends StringPrompt {
 		@Override
 		public String getPromptText(ConversationContext context) {
@@ -32,8 +35,7 @@ public class SQLSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLDatabaseNameSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLDatabaseNameSuccess",
 					new String[] {"Storage.sqlDatabaseName"}, new Object[] {input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
 		}
 	}
@@ -50,8 +52,7 @@ public class SQLSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLHostnameSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLHostnameSuccess",
 					new String[] {"Storage.sqlHostname"}, new Object[] {input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
 		}
 	}
@@ -79,7 +80,7 @@ public class SQLSettingsConvos {
 				refs.sendMsg(currPlayer, badChange);
 				return this;
 			} else {
-				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLOptionalArgsSuccess",
+				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLOptionalArgsSuccess",
 						new String[] {"Storage.sqlOptionalArgs"}, new Object[] {input.split(",")}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
 			}
 		}
@@ -97,8 +98,7 @@ public class SQLSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLPasswordSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLPasswordSuccess",
 					new String[] {"Storage.sqlPassword"}, new Object[] {input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
 		}
 	}
@@ -116,8 +116,7 @@ public class SQLSettingsConvos {
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationSQLPortSuccess",
+			return invMan.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationSQLPortSuccess",
 					new String[] {"Storage.sqlPort"}, new Object[] {input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
 		}
 		
@@ -135,8 +134,7 @@ public class SQLSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLUsernameSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLUsernameSuccess",
 					new String[] {"Storage.sqlUsername"}, new Object[] {input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
 		}
 	}

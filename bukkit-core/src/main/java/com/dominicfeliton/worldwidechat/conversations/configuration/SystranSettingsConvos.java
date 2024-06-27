@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.md_5.bungee.api.ChatColor;
@@ -12,6 +13,8 @@ import org.bukkit.entity.Player;
 public class SystranSettingsConvos {
 
     private static WorldwideChat main = WorldwideChat.instance;
+
+    private static WWCInventoryManager invMan = new WWCInventoryManager();
 
     public static class ApiKey extends StringPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
@@ -26,7 +29,7 @@ public class SystranSettingsConvos {
 
         @Override
         public Prompt acceptInput(ConversationContext context, String input) {
-            return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSystranTranslateApiKeySuccess",
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSystranTranslateApiKeySuccess",
                     new String[] {"Translator.systranAPIKey", "Translator.useSystranTranslate"}, new Object[] {input, false}, MenuGui.CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv);
         }
     }

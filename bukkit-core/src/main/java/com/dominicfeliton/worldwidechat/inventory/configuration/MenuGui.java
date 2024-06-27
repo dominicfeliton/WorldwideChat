@@ -51,6 +51,7 @@ public class MenuGui implements InventoryProvider {
 	}
 
 	public void genAllConfigUIs() {
+		// TODO: Probably not likely, but is there a more efficient way?
 		/* Generate inventories */
 		refs.debugMsg("Generating config GUIs!");
 		MenuGui generalSet = new MenuGui(inPlayer, transName);
@@ -101,7 +102,7 @@ public class MenuGui implements InventoryProvider {
 		generalSet.add(new ConvoElement(1, 1, "wwcConfigGUIPrefixButton", XMaterial.NAME_TAG,
 				new GeneralSettingsConvos.Prefix()));
 		generalSet.add(new ConvoElement(1, 2, "wwcConfigGUIFatalAsyncAbortButton", XMaterial.NAME_TAG,
-				new GeneralSettingsConvos.UpdateChecker()));
+				new GeneralSettingsConvos.FatalAsyncAbort()));
 		generalSet.add(new ConvoElement(1, 3, "wwcConfigGUILangButton", XMaterial.NAME_TAG,
 				new GeneralSettingsConvos.Lang()));
 		generalSet.add(new ConvoElement(1, 4, "wwcConfigGUIUpdateCheckerButton", XMaterial.NAME_TAG,
@@ -194,7 +195,9 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat"));
 		chatSet.add(new ToggleElement(1, 2, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess", "Chat.sendPluginUpdateChat"));
 		chatSet.add(new ToggleElement(1, 3, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat"));
-		chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()));
+		if (!main.getCurrPlatform().equals("Folia")) {
+			chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()));
+		}
 		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		chatSet.add(new CommonElement(2, 4, "Quit"));
 		chatSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));

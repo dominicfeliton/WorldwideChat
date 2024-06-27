@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -15,6 +16,8 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 public class WatsonSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
 	
 	public static class ApiKey extends StringPrompt {
 		@Override
@@ -28,8 +31,7 @@ public class WatsonSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonAPIKeySuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonAPIKeySuccess",
 					new String[] {"Translator.watsonAPIKey", "Translator.useWatsonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv);
 		}
 	}
@@ -46,8 +48,7 @@ public class WatsonSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonURLSuccess",
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonURLSuccess",
 					new String[] {"Translator.watsonURL", "Translator.useWatsonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv);
 		}
 	}
