@@ -1,6 +1,6 @@
 # WorldwideChat 
-![](https://github.com/BadSkater0729/WorldwideChat/blob/main/resources/Banner.png)
-## ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/BadSkater0729/WorldwideChat/build-latest-worldwidechat-commit.yml?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/BadSkater0729/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
+![](https://github.com/dominicfeliton/WorldwideChat/blob/main/resources/Banner.png)
+## ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dominicfeliton/WorldwideChat/build-latest-worldwidechat-commit.yml?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/dominicfeliton/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
 
 #### PSA: If you are on 1.13-1.15, please use our Spigot jar regardless if you are using Paper or not. The adventure API + additional Paper components are not available before 1.16.
 
@@ -21,7 +21,7 @@ Some of its notable features include:
 And much more to come! 
 
 ## How to Setup
-Read the [Wiki](https://github.com/BadSkater0729/WorldwideChat/wiki). File an issue if you don't think something is working right!
+Read the [Wiki](https://github.com/dominicfeliton/WorldwideChat/wiki). File an issue if you don't think something is working right!
 
 Additionally, if you want to test this plugin out before installing, you can! 
 - Check out our **Test Server** here:

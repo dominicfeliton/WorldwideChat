@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.badskater0729.worldwidechat</groupId>
+    <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
     <version>1.17.1</version>
   </parent>
@@ -81,7 +81,7 @@
       <version>11.1.0</version>
     </dependency>
     <dependency>
-      <groupId>com.badskater0729.yamltranslator</groupId>
+      <groupId>com.dominicfeliton.yamltranslator</groupId>
       <artifactId>YAMLTranslator</artifactId>
       <version>1.2.6</version>
     </dependency>
@@ -111,7 +111,7 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>3.3.0</version>
         <configuration>
-          <mainClass>com.badskater0729.yamltranslator.YAMLTranslator</mainClass>
+          <mainClass>com.dominicfeliton.yamltranslator.YAMLTranslator</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>
           <skip>${yamltranslator.skip}</skip>
         </configuration>

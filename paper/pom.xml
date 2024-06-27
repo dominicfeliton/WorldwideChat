@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.badskater0729.worldwidechat</groupId>
+    <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
     <version>1.17.1</version>
   </parent>
 
-  <groupId>com.badskater0729.worldwidechat</groupId>
+  <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat-paper</artifactId>
   <version>${project.parent.version}</version>
 
@@ -26,13 +26,13 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.badskater0729.worldwidechat</groupId>
+      <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
       <version>1.17.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.badskater0729.worldwidechat</groupId>
+      <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-spigot</artifactId>
       <version>1.17.1</version>
       <scope>compile</scope>

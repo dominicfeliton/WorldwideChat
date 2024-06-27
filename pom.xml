@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.badskater0729.worldwidechat</groupId>
+  <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
   <version>1.17.1</version>
   <packaging>pom</packaging>
@@ -137,16 +137,16 @@
       <url>https://repo.papermc.io/repository/maven-public/</url>
     </repository>
     <repository>
-      <id>badskater0729-yamltranslator</id>
-      <url>https://raw.github.com/BadSkater0729/YAMLTranslator/maven-repo</url>
+      <id>dominicfeliton-yamltranslator</id>
+      <url>https://raw.github.com/dominicfeliton/YAMLTranslator/maven-repo</url>
     </repository>
     <repository>
-      <id>badskater0729-foliasmartinvs</id>
-      <url>https://raw.github.com/BadSkater0729/SmartInvs/folia-maven-repo</url>
+      <id>dominicfeliton-foliasmartinvs</id>
+      <url>https://raw.github.com/dominicfeliton/SmartInvs/folia-maven-repo</url>
     </repository>
     <repository>
-      <id>badskater0729-bukkitsmartinvs</id>
-      <url>https://raw.github.com/BadSkater0729/SmartInvs/bukkit-maven-repo</url>
+      <id>dominicfeliton-bukkitsmartinvs</id>
+      <url>https://raw.github.com/dominicfeliton/SmartInvs/bukkit-maven-repo</url>
     </repository>
   </repositories>
 
