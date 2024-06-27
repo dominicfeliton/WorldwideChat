@@ -62,12 +62,13 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 			
 			/* Pagination: Lets you generate pages rather than set defined ones */
 			Pagination pagination = contents.pagination();
-			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedInputLangs().size()];
+			TreeSet<SupportedLang> cleanedInputLangs = new TreeSet<>(main.getSupportedInputLangs().values());
+			ClickableItem[] listOfAvailableLangs = new ClickableItem[cleanedInputLangs.size()];
 			
 			/* Add each supported language from each respective translator */
 			int i = 0;
 			SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), "in");
-			for (SupportedLang currLang : new TreeSet<>(main.getSupportedInputLangs().values())) {
+			for (SupportedLang currLang : cleanedInputLangs) {
 				ItemStack itemForLang = XMaterial.BOOK.parseItem();
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				
@@ -100,6 +101,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				// Iterate
 				i++;
 			}
+			refs.debugMsg("Size::: " + i);
 
 			/* 28 langs per page, start at 1, 1 */
 			pagination.setItems(listOfAvailableLangs);

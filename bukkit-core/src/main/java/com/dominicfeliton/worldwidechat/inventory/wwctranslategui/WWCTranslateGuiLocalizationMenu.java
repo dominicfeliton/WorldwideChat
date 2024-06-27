@@ -66,11 +66,12 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
             /* Pagination: Lets you generate pages rather than set defined ones */
             Pagination pagination = contents.pagination();
-            ClickableItem[] listOfAvailableLangs = new ClickableItem[CommonRefs.supportedPluginLangCodes.size()];
+            TreeSet<SupportedLang> filteredLocalLangs = new TreeSet<>(CommonRefs.supportedPluginLangCodes.values());
+            ClickableItem[] listOfAvailableLangs = new ClickableItem[filteredLocalLangs.size()];
 
             /* Add each supported language from each respective translator */
             int i = 0;
-            for (SupportedLang eaLang : new TreeSet<>(CommonRefs.supportedPluginLangCodes.values())) {
+            for (SupportedLang eaLang : filteredLocalLangs) {
                 String currLang = eaLang.getLangCode();
                 ItemStack itemForLang = XMaterial.BOOK.parseItem();
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();

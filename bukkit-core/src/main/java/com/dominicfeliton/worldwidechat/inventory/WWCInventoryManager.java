@@ -197,7 +197,7 @@ public class WWCInventoryManager extends InventoryManager {
 			if (!main.getCurrPlatform().equals("Folia")) {
 				genericConversation.buildConversation(player).begin();
 			} else {
-				refs.sendFancyMsg("wwcNoConvoFolia", player);
+				refs.sendFancyMsg("wwcNoConvoFolia", "", "&c", player);
 			}
 		}));
 	}

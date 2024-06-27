@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat.inventory.configuration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.ChatColor;
@@ -56,7 +57,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
-			HashMap<String, String> overridesFromConfig = new HashMap<>();
+			TreeMap<String, String> overridesFromConfig = new TreeMap<>();
 			ClickableItem[] currentOverrides = new ClickableItem[0];
 			FileConfiguration messagesConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
 			

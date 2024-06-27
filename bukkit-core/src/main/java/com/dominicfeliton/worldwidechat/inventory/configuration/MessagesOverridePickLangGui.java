@@ -18,6 +18,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class MessagesOverridePickLangGui implements InventoryProvider {
 
@@ -42,11 +43,12 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
 
             /* Pagination */
             Pagination pagination = contents.pagination();
-            ClickableItem[] langsFormatted = new ClickableItem[CommonRefs.supportedPluginLangCodes.size()];
+            TreeSet<SupportedLang> filteredLocalLangs = new TreeSet<SupportedLang>(CommonRefs.supportedPluginLangCodes.values());
+            ClickableItem[] langsFormatted = new ClickableItem[filteredLocalLangs.size()];
 
             refs.debugMsg("Adding all supported langs! Amount of langs: " + CommonRefs.supportedPluginLangCodes.size());
             int currSpot = 0;
-            for (SupportedLang eaLang : CommonRefs.supportedPluginLangCodes.values()) {
+            for (SupportedLang eaLang : filteredLocalLangs) {
                 String code = eaLang.getLangCode();
                 ItemStack currentEntry = XMaterial.BOOKSHELF.parseItem();
                 ItemMeta currentEntryMeta = currentEntry.getItemMeta();

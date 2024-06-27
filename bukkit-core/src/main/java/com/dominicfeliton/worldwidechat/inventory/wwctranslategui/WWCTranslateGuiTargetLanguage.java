@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.sun.source.tree.Tree;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -66,12 +67,14 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 			
 			/* Pagination: Lets you generate pages rather than set defined ones */
 			Pagination pagination = contents.pagination();
-			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedOutputLangs().size()];
+			TreeSet<SupportedLang> cleanedOutLangs = new TreeSet<>(main.getSupportedOutputLangs().values());
+			ClickableItem[] listOfAvailableLangs = new ClickableItem[cleanedOutLangs.size()];
 
 			/* Add each supported language from each respective translator */
 			int i = 0;
 			SupportedLang userLang = refs.getSupportedLang(currTranslator.getOutLangCode(), "out");
-			for (SupportedLang currLang : new TreeSet<>(main.getSupportedOutputLangs().values())) {
+
+			for (SupportedLang currLang : cleanedOutLangs) {
 				boolean unsupported;
 
 				// Change item depending on version + condition
