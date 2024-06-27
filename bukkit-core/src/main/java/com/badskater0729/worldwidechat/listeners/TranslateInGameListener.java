@@ -47,7 +47,7 @@ public class TranslateInGameListener implements Listener {
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {
-		if (main.isActiveTranslator(event.getPlayer()) && checkInventoryHand(event)) {
+		if (main.isActiveTranslator(event.getPlayer()) && event.getHand().equals(EquipmentSlot.HAND)) {
 			/* Entity Names */
 			try {
 				if (main.getActiveTranslator(event.getPlayer()).getTranslatingEntity() && event.getRightClicked().isValid()) {
@@ -86,7 +86,7 @@ public class TranslateInGameListener implements Listener {
 			/* Book Translation */
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
 			if (currTranslator.getTranslatingBook()
-					&& checkInventoryHand(event) && event.getItem() != null
+					&& event.getHand().equals(EquipmentSlot.HAND) && event.getItem() != null
 					&& XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
 					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 				ItemStack currentBook = event.getItem().clone();
@@ -164,7 +164,7 @@ public class TranslateInGameListener implements Listener {
 			else if (currTranslator.getTranslatingSign()
 					&& event.getClickedBlock() != null
 					&& event.getClickedBlock().getType().name().contains("SIGN")
-					&& checkInventoryHand(event)
+					&& event.getHand().equals(EquipmentSlot.HAND)
 					&& event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 				/* Start sign translation */
 				Sign currentSign = (Sign) event.getClickedBlock().getState();
@@ -323,42 +323,6 @@ public class TranslateInGameListener implements Listener {
 			}
 			refs.debugMsg("We are reloading! Caught exception in Object Translation...");
 			refs.debugMsg(ExceptionUtils.getStackTrace(e));
-		}
-	}
-
-	private boolean checkInventoryHand(PlayerInteractEvent event) {
-		try {
-			try {
-				PlayerInteractEvent.class.getMethod("getHand");
-				if (event.getHand().equals(EquipmentSlot.HAND)) {
-					return true;
-				}
-				return false;
-			} catch (NoSuchMethodException e) {
-				refs.debugMsg("getHand() method not found in PlayerInteractEvent!");
-				return true;
-			}
-		} catch (Exception e) {
-			refs.debugMsg(ExceptionUtils.getStackTrace(e));
-			return false;
-		}
-	}
-
-	private boolean checkInventoryHand(PlayerInteractEntityEvent event) {
-		try {
-			try {
-				PlayerInteractEvent.class.getMethod("getHand");
-				if (event.getHand().equals(EquipmentSlot.HAND)) {
-					return true;
-				}
-				return false;
-			} catch (NoSuchMethodException e) {
-				refs.debugMsg("getHand() method not found in PlayerInteractEntityEvent!");
-				return true;
-			}
-		} catch (Exception e) {
-			refs.debugMsg(ExceptionUtils.getStackTrace(e));
-			return false;
 		}
 	}
 	
