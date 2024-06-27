@@ -996,8 +996,6 @@ public class ConfigurationHandler {
 				}
 			});
 
-			// TODO: Make sure cache still saves when turning it on/off live
-			// TODO: Everything besides YAML
 			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
 				/* Sync cache to disk */
 				//main.getLogger().warning(refs.getMsg("wwcPersistentCacheLoad", null));

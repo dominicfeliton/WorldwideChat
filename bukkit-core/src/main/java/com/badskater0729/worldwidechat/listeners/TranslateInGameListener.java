@@ -363,35 +363,12 @@ public class TranslateInGameListener implements Listener {
 	}
 	
 	private Object getItemInMainHand(PlayerInteractEvent event) {
-		// This sucks, removing this soon TODO
-		if (event.getPlayer().getInventory() != null) {
-			try {
-				try {
-					if (PlayerInventory.class.getMethod("getItemInMainHand") != null ) {
-						if (event.getPlayer().getInventory().getItemInMainHand() != null
-								&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.AIR.parseItem().getType()
-								&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.WRITTEN_BOOK.parseItem().getType()) {
-							return event.getPlayer().getInventory().getItemInMainHand();
-						}
-						return null;
-					}
-				} catch (NoSuchMethodException e) {
-					refs.debugMsg("getItemInMainHand() does not exist in PlayerInventory!");
-					Method getItemInHand = PlayerInventory.class.getMethod("getItemInHand");
-					Object getItemInHandObj = getItemInHand.invoke(event.getPlayer().getInventory());
-					Object itemType = getItemInHandObj.getClass().getMethod("getType").invoke(getItemInHandObj);
-					if (getItemInHandObj != null
-							&& itemType != XMaterial.AIR.parseItem().getType()
-							&& itemType != XMaterial.WRITTEN_BOOK.parseItem().getType()) {
-					    return getItemInHandObj;	
-					}
-					return null;
-				}
-			} catch (Exception e) {
-				refs.debugMsg(ExceptionUtils.getStackTrace(e));
-				return null;
-			}
-		}
+		boolean hasItem = event.getPlayer().getInventory() != null
+				&& event.getPlayer().getInventory().getItemInMainHand() != null
+				&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.AIR.parseItem().getType()
+				&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.WRITTEN_BOOK.parseItem().getType();
+		if (hasItem) {return event.getPlayer().getInventory().getItemInMainHand();}
+
 		return null;
 	}
 }

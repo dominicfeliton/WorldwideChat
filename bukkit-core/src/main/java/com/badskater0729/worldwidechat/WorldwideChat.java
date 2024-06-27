@@ -358,7 +358,6 @@ public class WorldwideChat extends JavaPlugin {
 				if (!currPlatform.equals("Folia")) {
 					cancelBackgroundTasks(true, invalidState, this.getTaskId());
 				} else {
-					// TODO: make sure this works properly on folia. cannot use this.getTaskId(). will we be prematurely terminated?
 					cancelBackgroundTasks(true, invalidState);
 				}
 

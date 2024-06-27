@@ -58,7 +58,7 @@ public class ChatSettingsConvos {
 								.color(NamedTextColor.GREEN)
 						.build();
 				refs.sendMsg((Player)context.getForWhom(), successfulChange);
-				// TODO: Should we make a save button eventually?
+
 				main.getConfigManager().saveMessagesConfig(inLang, true);
 			}
 			previousInventory.open((Player)context.getForWhom());

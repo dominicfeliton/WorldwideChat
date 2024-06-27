@@ -469,7 +469,6 @@ public class LoadUserData implements Runnable {
 					createTable.executeUpdate();
 				}
 
-				// TODO: Test HEAVILY
 				String getColumnsQuery = "SELECT COLUMN_NAME " +
 						"FROM INFORMATION_SCHEMA.COLUMNS " +
 						"WHERE TABLE_SCHEMA = (SELECT DATABASE()) AND TABLE_NAME = ?";

@@ -785,7 +785,7 @@ public class CommonRefs {
 		try {
 			Bukkit.getScheduler().runTaskLater(main, () -> {}, 0L);
 		} catch (IllegalPluginAccessException | IllegalStateException e) {
-			debugMsg("Server is stopping! Don't run a task/do any dumb shit.");
+			debugMsg("Server is stopping! Don't run a task/do any weird stuff.");
 			return true;
 		}
 
