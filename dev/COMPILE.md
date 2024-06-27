@@ -3,7 +3,7 @@
 Compiling this project is designed to be straightforward. 
 
 First, make sure you put a YAMLTranslator configuration file in the root of the project, titled ```yt-settings.yml.```
-[You can view the default configuration values here.](https://github.com/BadSkater0729/YAMLTranslator/blob/main/src/main/resources/yt-settings.yml)
+[You can view the default configuration values here.](https://github.com/dominicfeliton/YAMLTranslator/blob/main/src/main/resources/yt-settings.yml)
 
 Next, install Docker Desktop for your distribution.
 
@@ -23,4 +23,4 @@ If you cannot run YAMLTranslator because you do not have access to Amazon Transl
 Once you are done, you can kill the MongoDB/MySQL/PostgreSQL containers via ```takedown-dev-env.sh``` on macOS/linux, and ```takedown-dev-env.bat``` on Windows.
 
 Let me know if you have any questions!
-_- BadSkater0729_
+_- Dominic Feliton_
