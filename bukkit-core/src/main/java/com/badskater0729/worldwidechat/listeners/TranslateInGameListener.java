@@ -283,6 +283,9 @@ public class TranslateInGameListener implements Listener {
 							// Stock items not supported
 						}
 
+						// If we are stock item with no lore
+						if (!meta.hasLore() && !meta.hasDisplayName()) return;
+
 						/* Translate item lore */
 						if (meta.hasLore()) {
 							refs.sendFancyMsg("wwcItemTranslateLoreStart","", "&d&l", event.getPlayer());
