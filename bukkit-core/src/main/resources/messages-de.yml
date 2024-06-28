@@ -655,4 +655,15 @@ Messages:
     Chat-Plugin registriert. Vault-Unterstützung wird deaktiviert...
   wwcConfigGUIToggleRestartRequired: Ein vollständiger Serverneustart ist erforderlich,
     um diese Einstellung anzuwenden.
+  wwcLoadUserDataFolderFail: Der Benutzerdatenordner im Plugin-Verzeichnis konnte
+    nicht erstellt werden. WorldwideChat wird deaktiviert...
+  wwcLoadStatsFolderFail: Der Ordner mit Benutzerstatistiken konnte nicht im Plugin-Verzeichnis
+    erstellt werden. WorldwideChat wird deaktiviert...
+  wwcLoadCacheFolderFail: Der Benutzer-Cache-Ordner im Plugin-Verzeichnis konnte nicht
+    erstellt werden. WorldwideChat wird deaktiviert...
+  wwcNoConvoFolia: Bukkit Conversations sind derzeit in dieser Version von Folia kaputt,
+    aber die Schalter funktionieren immer noch. Bitte versuchen Sie, die Konfiguration
+    für diesen Wert manuell zu ändern.
+  wwcRateNoConvoFolia: Über die GUI auf Folia kann kein Ratenlimit festgelegt werden.
+    Bitte verwenden Sie stattdessen /wwctrl oder /translateratelimit.
 

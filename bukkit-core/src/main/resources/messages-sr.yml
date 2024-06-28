@@ -584,4 +584,15 @@ Messages:
     registrovan. Onemogućavanje podrške za Vault...
   wwcConfigGUIToggleRestartRequired: Za primenu ove postavke potrebno je potpuno ponovno
     pokretanje servera.
+  wwcLoadUserDataFolderFail: Nije moguće kreirati fasciklu korisničkih podataka u
+    direktorijumu dodataka. Onemogućavanje VorldWideChat-a...
+  wwcLoadStatsFolderFail: Nije moguće kreirati fasciklu statistike korisnika u direktorijumu
+    dodataka. Onemogućavanje VorldWideChat-a...
+  wwcLoadCacheFolderFail: Nije moguće kreirati fasciklu keš memorije korisnika u direktorijumu
+    dodataka. Onemogućavanje VorldWideChat-a...
+  wwcNoConvoFolia: Bukkit razgovori su trenutno prekinuti na ovoj verziji Folia, ali
+    prebacivači su i dalje funkcionalni. Pokušajte ručno da izmenite konfiguraciju
+    za ovu vrednost.
+  wwcRateNoConvoFolia: Nije moguće postaviti ograničenje brzine putem GUI-ja na Folia.
+    Umesto toga koristite /wwctrl ili /translateratelimit.
 

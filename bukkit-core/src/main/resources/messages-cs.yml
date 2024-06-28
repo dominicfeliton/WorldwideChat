@@ -591,4 +591,14 @@ Messages:
     zaregistrován. Zakázání podpory aplikace Vault...
   wwcConfigGUIToggleRestartRequired: K použití tohoto nastavení je nutný úplný restart
     serveru.
+  wwcLoadUserDataFolderFail: Nelze vytvořit složku uživatelských dat v adresáři pluginu.
+    Zakázání WorldwideChat...
+  wwcLoadStatsFolderFail: Nelze vytvořit složku statistik uživatelů v adresáři pluginu.
+    Zakázání WorldwideChat...
+  wwcLoadCacheFolderFail: Nelze vytvořit složku mezipaměti uživatele v adresáři pluginu.
+    Zakázání WorldwideChat...
+  wwcNoConvoFolia: Konverzace Bukkit jsou v této verzi Folia aktuálně přerušeny, ale
+    přepínače jsou stále funkční. Zkuste upravit konfiguraci ručně pro tuto hodnotu.
+  wwcRateNoConvoFolia: Nelze nastavit limit rychlosti pomocí GUI na Folia. Místo toho
+    použijte /wwctrl nebo /translateratelimit.
 

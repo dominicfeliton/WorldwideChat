@@ -611,4 +611,15 @@ Messages:
     geregistreerd. Vault-ondersteuning uitschakelen...
   wwcConfigGUIToggleRestartRequired: Een volledige herstart van de server is vereist
     om deze instelling toe te passen.
+  wwcLoadUserDataFolderFail: Kan de map met gebruikersgegevens niet aanmaken in de
+    map met plug-ins. WorldwideChat uitschakelen...
+  wwcLoadStatsFolderFail: Kan de map met gebruikersstatistieken niet aanmaken in de
+    map met plug-ins. WorldwideChat uitschakelen...
+  wwcLoadCacheFolderFail: Kan de gebruikerscachemap niet aanmaken in de map met plug-ins.
+    WorldwideChat uitschakelen...
+  wwcNoConvoFolia: Bukkit Conversations zijn momenteel niet beschikbaar op deze versie
+    van Folia, maar de schakelaars zijn nog steeds functioneel. Probeer de configuratie
+    handmatig aan te passen voor deze waarde.
+  wwcRateNoConvoFolia: Kan geen snelheidslimiet instellen via de GUI op Folia. Gebruik
+    in plaats daarvan /wwctrl of /translateratelimit.
 

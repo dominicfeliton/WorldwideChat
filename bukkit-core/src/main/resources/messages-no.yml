@@ -572,4 +572,15 @@ Messages:
     Deaktiverer hvelvstøtte...
   wwcConfigGUIToggleRestartRequired: En fullstendig serverstart er nødvendig for å
     bruke denne innstillingen.
+  wwcLoadUserDataFolderFail: Kan ikke opprette brukerdatamappen i plugin-katalogen.
+    Deaktiverer WorldwideChat...
+  wwcLoadStatsFolderFail: Kan ikke opprette brukerstatistikkmappen i plugin-katalogen.
+    Deaktiverer WorldwideChat...
+  wwcLoadCacheFolderFail: Kan ikke opprette brukerbuffermappen i plugin-katalogen.
+    Deaktiverer WorldwideChat...
+  wwcNoConvoFolia: Bukkit-samtaler er for øyeblikket ødelagt på denne versjonen av
+    Folia, men brytere er fortsatt funksjonelle. Prøv å endre konfigurasjonen manuelt
+    for denne verdien.
+  wwcRateNoConvoFolia: Kan ikke angi en hastighetsgrense via GUI på Folia. Vennligst
+    bruk /wwctrl eller/translateratelimit istedenfor.
 

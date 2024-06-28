@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.badskater0729.worldwidechat</groupId>
+  <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.17.0</version>
+  <version>1.17.5</version>
   <packaging>pom</packaging>
 
   <name>WorldwideChat</name>
@@ -16,6 +16,8 @@
     <module>spigot-dist</module>
     <module>paper</module>
     <module>paper-dist</module>
+    <module>folia</module>
+    <module>folia-dist</module>
   </modules>
 
   <properties>
@@ -122,10 +124,6 @@
   <repositories>
     <!-- This adds the Spigot Maven repository to the build -->
     <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-    <repository>
       <id>spigot-repo</id>
       <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
     </repository>
@@ -137,6 +135,18 @@
     <repository>
       <id>papermc</id>
       <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+    <repository>
+      <id>dominicfeliton-yamltranslator</id>
+      <url>https://raw.github.com/dominicfeliton/YAMLTranslator/maven-repo</url>
+    </repository>
+    <repository>
+      <id>dominicfeliton-foliasmartinvs</id>
+      <url>https://raw.github.com/dominicfeliton/SmartInvs/folia-maven-repo</url>
+    </repository>
+    <repository>
+      <id>dominicfeliton-bukkitsmartinvs</id>
+      <url>https://raw.github.com/dominicfeliton/SmartInvs/bukkit-maven-repo</url>
     </repository>
   </repositories>
 

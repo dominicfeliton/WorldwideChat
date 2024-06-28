@@ -518,4 +518,13 @@ Messages:
   wwcVaultFoundButDisabled: พบห้องเก็บของ แต่ยังไม่มีการลงทะเบียนปลั๊กอินแชทที่มีอยู่ปิดใช้งานการสนับสนุน
     Vault...
   wwcConfigGUIToggleRestartRequired: จำเป็นต้องรีสตาร์ทเซิร์ฟเวอร์เต็มรูปแบบเพื่อใช้การตั้งค่านี้
+  wwcLoadUserDataFolderFail: ไม่สามารถสร้างโฟลเดอร์ข้อมูลผู้ใช้ในไดเรกทอรีปลั๊กอินการปิดใช้งาน
+    WorldwideChat...
+  wwcLoadStatsFolderFail: ไม่สามารถสร้างโฟลเดอร์สถิติผู้ใช้ในไดเรกทอรีปลั๊กอินการปิดใช้งาน
+    WorldwideChat...
+  wwcLoadCacheFolderFail: ไม่สามารถสร้างโฟลเดอร์แคชผู้ใช้ในไดเรกทอรีปลั๊กอินการปิดใช้งาน
+    WorldwideChat...
+  wwcNoConvoFolia: ขณะนี้การสนทนา Bukkit ถูกทำลายใน Folia เวอร์ชันนี้ แต่สวิตช์ยังคงใช้งานอยู่โปรดลองแก้ไขการกำหนดค่าด้วยตนเองสำหรับค่านี้
+  wwcRateNoConvoFolia: ไม่สามารถตั้งค่าขีดจำกัดอัตราผ่าน GUI บน Foliaโปรดใช้ /wwctrl
+    หรือ /translateratelimit แทน
 

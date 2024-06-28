@@ -597,4 +597,15 @@ Messages:
     vtičnik za klepet. Onemogočanje podpore za Vault...
   wwcConfigGUIToggleRestartRequired: Za uporabo te nastavitve je potreben popoln ponovni
     zagon strežnika.
+  wwcLoadUserDataFolderFail: Mape uporabniških podatkov ni mogoče ustvariti v imeniku
+    vtičnikov. Onemogočanje WorldwideChat...
+  wwcLoadStatsFolderFail: Mape s statistiko uporabnikov ni mogoče ustvariti v imeniku
+    vtičnikov. Onemogočanje WorldwideChat...
+  wwcLoadCacheFolderFail: V imeniku vtičnikov ni mogoče ustvariti mape uporabniškega
+    predpomnilnika. Onemogočanje WorldwideChat...
+  wwcNoConvoFolia: Bukkit pogovori so trenutno prekinjeni na tej različici Folia,
+    vendar so preklopi še vedno funkcionalni. Poskusite ročno spremeniti konfiguracijo
+    za to vrednost.
+  wwcRateNoConvoFolia: Preko uporabniškega vmesnika na Folia ni mogoče nastaviti omejitve
+    hitrosti. Namesto tega uporabite /wwctrl ali /translateratelimit.
 

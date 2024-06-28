@@ -628,4 +628,15 @@ Messages:
     di chat esistente. Disattivazione del supporto di Vault...
   wwcConfigGUIToggleRestartRequired: Per applicare questa impostazione è necessario
     un riavvio completo del server.
+  wwcLoadUserDataFolderFail: Impossibile creare la cartella dei dati utente nella
+    directory del plugin. Disattivazione di WorldwideChat...
+  wwcLoadStatsFolderFail: Impossibile creare la cartella delle statistiche utente
+    nella directory del plugin. Disattivazione di WorldwideChat...
+  wwcLoadCacheFolderFail: Impossibile creare la cartella cache utente nella directory
+    del plugin. Disattivazione di WorldwideChat...
+  wwcNoConvoFolia: Le conversazioni di Bukkit sono attualmente interrotte su questa
+    versione di Folia, ma gli interruttori sono ancora funzionanti. Prova a modificare
+    manualmente la configurazione per questo valore.
+  wwcRateNoConvoFolia: Impossibile impostare un limite di velocità tramite la GUI
+    su Folia. Utilizza invece /wwctrl o /translateratelimit.
 

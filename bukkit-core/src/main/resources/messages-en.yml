@@ -1,4 +1,4 @@
-# HOW TO SETUP: https://github.com/BadSkater0729/WorldwideChat/wiki/Default-Explained-messages-XX.yml
+# HOW TO SETUP: https://github.com/dominicfeliton/WorldwideChat/wiki/Default-Explained-messages-XX.yml
 # DO NOT TOUCH THE VERSION ENTRY!
 Overrides:
   wwcExampleMessage: 'Overriden message! This will display over the corresponding default entry below.'
@@ -36,6 +36,11 @@ Messages:
   wwcOldDatabaseStruct: 'Your chosen database has an incorrect table setup. Type the following command for more information: /wwcd checkdb'
   wwcVaultEnabled: 'Vault support has been enabled.'
   wwcVaultFoundButDisabled: 'Vault found, but no existing chat plugin has been registered. Disabling Vault support...'
+  wwcLoadUserDataFolderFail: 'Unable to create the user data folder in the plugin directory. Disabling WorldwideChat...'
+  wwcLoadStatsFolderFail: 'Unable to create the user statistics folder in the plugin directory. Disabling WorldwideChat...'
+  wwcLoadCacheFolderFail: 'Unable to create the user cache folder in the plugin directory. Disabling WorldwideChat...'
+  wwcNoConvoFolia: 'Bukkit Conversations are currently broken on this version of Folia, but toggles are still functional. Please try modifying the config manually for this value.'
+  wwcRateNoConvoFolia: 'Unable to set a rate limit via the GUI on Folia. Please use /wwctrl or /translateratelimit instead.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

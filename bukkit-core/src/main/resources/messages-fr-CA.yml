@@ -645,4 +645,15 @@ Messages:
     enregistré. Désactivation de la prise en charge de Vault...
   wwcConfigGUIToggleRestartRequired: Un redémarrage complet du serveur est nécessaire
     pour appliquer ce paramètre.
+  wwcLoadUserDataFolderFail: Impossible de créer le dossier de données utilisateur
+    dans le répertoire du plug-in. Désactiver WorldwideChat...
+  wwcLoadStatsFolderFail: Impossible de créer le dossier des statistiques utilisateur
+    dans le répertoire du plug-in. Désactiver WorldwideChat...
+  wwcLoadCacheFolderFail: Impossible de créer le dossier de cache utilisateur dans
+    le répertoire du plug-in. Désactiver WorldwideChat...
+  wwcNoConvoFolia: Bukkit Conversations est actuellement interrompue sur cette version
+    de Folia, mais les basculements sont toujours fonctionnels. Essayez de modifier
+    manuellement la configuration pour cette valeur.
+  wwcRateNoConvoFolia: Impossible de définir une limite de débit via l'interface graphique
+    de Folia. Utilisez plutôt /wwctrl ou /translateratelimt.
 

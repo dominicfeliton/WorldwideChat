@@ -596,4 +596,15 @@ Messages:
     Отключение поддержки Vault...
   wwcConfigGUIToggleRestartRequired: Для применения этого параметра требуется полный
     перезапуск сервера.
+  wwcLoadUserDataFolderFail: Невозможно создать папку пользовательских данных в каталоге
+    плагина. Отключение WorldwideChat...
+  wwcLoadStatsFolderFail: Невозможно создать папку статистики пользователя в каталоге
+    плагина. Отключение WorldwideChat...
+  wwcLoadCacheFolderFail: Невозможно создать папку пользовательского кэша в каталоге
+    плагина. Отключение WorldwideChat...
+  wwcNoConvoFolia: В настоящее время Bukkit Conversations в этой версии Folia не работает,
+    но переключатели все еще работают. Попробуйте вручную изменить конфигурацию для
+    этого значения.
+  wwcRateNoConvoFolia: Невозможно установить ограничение скорости через графический
+    интерфейс на Folia. Вместо этого используйте /wwctrl или /translateratelimit.
 

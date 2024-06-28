@@ -599,4 +599,14 @@ Messages:
     czatu nie została zarejestrowana. Wyłączanie obsługi programu Vault...
   wwcConfigGUIToggleRestartRequired: Aby zastosować to ustawienie, wymagane jest pełne
     ponowne uruchomienie serwera.
+  wwcLoadUserDataFolderFail: Nie można utworzyć folderu danych użytkownika w katalogu
+    wtyczek. Wyłączanie WorldwideChat...
+  wwcLoadStatsFolderFail: Nie można utworzyć folderu statystyk użytkownika w katalogu
+    wtyczek. Wyłączanie WorldwideChat...
+  wwcLoadCacheFolderFail: Nie można utworzyć folderu pamięci podręcznej użytkownika
+    w katalogu wtyczek. Wyłączanie WorldwideChat...
+  wwcNoConvoFolia: Rozmowy Bukkit są obecnie przerwane w tej wersji Folia, ale przełączniki
+    nadal działają. Spróbuj ręcznie zmodyfikować konfigurację dla tej wartości.
+  wwcRateNoConvoFolia: Nie można ustawić limitu szybkości za pomocą interfejsu użytkownika
+    na Folia. Zamiast tego użyj /wwctrl lub /translateratelimit.
 

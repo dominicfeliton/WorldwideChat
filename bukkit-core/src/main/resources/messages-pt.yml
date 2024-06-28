@@ -611,4 +611,15 @@ Messages:
     existente foi registrado. Desativando o suporte do Vault...
   wwcConfigGUIToggleRestartRequired: É necessário reiniciar completamente o servidor
     para aplicar essa configuração.
+  wwcLoadUserDataFolderFail: Não é possível criar a pasta de dados do usuário no diretório
+    do plugin. Desativando o WorldwideChat...
+  wwcLoadStatsFolderFail: Não é possível criar a pasta de estatísticas do usuário
+    no diretório do plugin. Desativando o WorldwideChat...
+  wwcLoadCacheFolderFail: Não é possível criar a pasta de cache do usuário no diretório
+    do plugin. Desativando o WorldwideChat...
+  wwcNoConvoFolia: Atualmente, as conversas do Bukkit estão interrompidas nesta versão
+    do Folia, mas os botões ainda estão funcionais. Tente modificar a configuração
+    manualmente para esse valor.
+  wwcRateNoConvoFolia: Não é possível definir um limite de taxa por meio da GUI no
+    Folia. Em vez disso, use /wwctrl ou /translateratelimit.
 

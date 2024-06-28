@@ -623,4 +623,15 @@ Messages:
     nu a fost înregistrat. Dezactivarea suportului Vault...
   wwcConfigGUIToggleRestartRequired: Este necesară o repornire completă a serverului
     pentru a aplica această setare.
+  wwcLoadUserDataFolderFail: Nu se poate crea folderul de date utilizator în directorul
+    pluginului. Dezactivarea WorldwideChat...
+  wwcLoadStatsFolderFail: Nu se poate crea folderul statistici utilizator în directorul
+    pluginului. Dezactivarea WorldwideChat...
+  wwcLoadCacheFolderFail: Nu se poate crea folderul cache al utilizatorului în directorul
+    pluginului. Dezactivarea WorldwideChat...
+  wwcNoConvoFolia: Conversațiile Bukkit sunt în prezent întrerupte pe această versiune
+    de Folia, dar comutatoarele sunt încă funcționale. Vă rugăm să încercați să modificați
+    manual configurația pentru această valoare.
+  wwcRateNoConvoFolia: Imposibil de setat o limită de rată prin GUI pe Folia. Vă rugăm
+    să utilizați /wwctrl sau /translateratelimit în schimb.
 

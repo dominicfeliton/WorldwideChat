@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.badskater0729.worldwidechat</groupId>
+    <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.17.0</version>
+    <version>1.17.5</version>
   </parent>
 
   <artifactId>WorldwideChat-spigot-dist</artifactId>
@@ -20,27 +20,21 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.badskater0729.worldwidechat</groupId>
+      <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.17.0</version>
+      <version>1.17.5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.badskater0729.worldwidechat</groupId>
+      <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-spigot</artifactId>
-      <version>1.17.0</version>
+      <version>1.17.5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
       <version>1.21-R0.1-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.github.MilkBowl</groupId>
-      <artifactId>VaultAPI</artifactId>
-      <version>1.7.1</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -76,7 +70,7 @@
           <createDependencyReducedPom>false</createDependencyReducedPom>
           <artifactSet>
             <includes>
-              <include>com.badskater0729.worldwidechat:*</include>
+              <include>com.dominicfeliton.worldwidechat:*</include>
               <include>commons-logging:commons-logging</include>
               <include>commons-io:commons-io</include>
               <include>com.ibm.watson:common</include>
@@ -113,7 +107,7 @@
               <include>com.fasterxml.jackson.dataformat:*</include>
               <include>org.apache.httpcomponents:*</include>
               <include>joda-time:*</include>
-              <include>fr.minuskube.inv:smart-invs</include>
+              <include>fr.minuskube.inv:bukkit-smart-invs</include>
               <include>org.apache.maven:maven-artifact</include>
               <include>com.github.cryptomorin:XSeries</include>
               <include>com.zaxxer:HikariCP</include>
@@ -151,10 +145,13 @@
               </excludes>
             </filter>
             <filter>
-              <artifact>fr.minuskube.inv:smart-invs</artifact>
+              <artifact>fr.minuskube.inv:bukkit-smart-invs</artifact>
               <excludes>
                 <exclude>plugin.yml</exclude>
               </excludes>
+              <includes>
+                <include>**</include>
+              </includes>
             </filter>
             <filter>
               <artifact>commons*</artifact>
@@ -181,7 +178,7 @@
               </includes>
             </filter>
             <filter>
-              <artifact>com.badskater0729.worldwidechat:WorldwideChat-spigot</artifact>
+              <artifact>com.dominicfeliton.worldwidechat:WorldwideChat-spigot</artifact>
               <includes>
                 <include>**</include>
               </includes>
@@ -190,116 +187,116 @@
           <relocations>
             <relocation>
               <pattern>net.kyori.examination</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.net.kyori.examination</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.net.kyori.examination</shadedPattern>
             </relocation>
             <relocation>
               <pattern>net.kyori.adventure</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.net.kyori.adventure</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.net.kyori.adventure</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.apache</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.org.apache</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.apache</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.google.gson</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.google.gson</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.google.gson</shadedPattern>
             </relocation>
             <!-- Removed google cloud relocation. Relocating the API seems to break it...annoying, since another plugin who is using it may hate us but oh well -->
             <relocation>
               <pattern>mozilla</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.mozilla</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.mozilla</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.amazonaws</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.amazonaws</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.amazonaws</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.ibm</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.ibm</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.ibm</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.fasterxml.jackson</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.fasterxml.jackson</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.fasterxml.jackson</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.jsoup</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.org.jsoup</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.jsoup</shadedPattern>
             </relocation>
             <relocation>
               <pattern>fr.minuskube.inv</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.fr.minuskube.inv</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.fr.minuskube.inv</shadedPattern>
             </relocation>
             <relocation>
               <pattern>okio</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.okio</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.okio</shadedPattern>
             </relocation>
             <relocation>
               <pattern>okhttp3</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.okhttp3</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.okhttp3</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.joda.time</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.org.joda.time</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.joda.time</shadedPattern>
             </relocation>
             <relocation>
               <pattern>io.grpc</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.io.grpc</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.grpc</shadedPattern>
             </relocation>
             <relocation>
               <pattern>grpc</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.grpc</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.grpc</shadedPattern>
             </relocation>
             <relocation>
               <pattern>io.opencensus</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.io.opencensus</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.opencensus</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.threeten</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.org.threeten</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.threeten</shadedPattern>
             </relocation>
             <relocation>
               <pattern>kotlin</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.cryptomorin.xseries</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.zaxxer</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.zaxxer</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.zaxxer</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.mysql</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.mysql</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.mysql</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.github.benmanes</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.github.benmanes</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.github.benmanes</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.mongodb</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.mongodb</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.mongodb</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.deepl</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.deepl</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.deepl</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.bson</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.org.bson</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.bson</shadedPattern>
             </relocation>
             <relocation>
               <pattern>io.github.brenoepics</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.io.github.brenoepics</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.github.brenoepics</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.mysql</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.com.mysql</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.mysql</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.postgresql</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.org.postgresql</shadedPattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.postgresql</shadedPattern>
             </relocation>
           </relocations>
         </configuration>
