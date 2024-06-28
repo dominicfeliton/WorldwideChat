@@ -656,3 +656,5 @@ Messages:
   wwcNoConvoFolia: Les conversations Bukkit sont actuellement interrompues sur cette
     version de Folia, mais les boutons fonctionnent toujours. Essayez de modifier
     la configuration manuellement pour cette valeur.
+  wwcRateNoConvoFolia: Impossible de définir une limite de débit via l'interface graphique
+    de Folia. Veuillez utiliser /wwctrl ou /translateratelimit à la place.

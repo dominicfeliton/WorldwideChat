@@ -471,4 +471,6 @@ Messages:
   wwcLoadStatsFolderFail: プラグインディレクトリにユーザー統計フォルダを作成できません。ワールドワイドチャットを無効にしています...
   wwcLoadCacheFolderFail: プラグインディレクトリにユーザーキャッシュフォルダを作成できません。ワールドワイドチャットを無効にしています...
   wwcNoConvoFolia: 現在、このバージョンの Folia では Bukkit の会話が機能しませんが、トグルは引き続き機能します。この値になるようにコンフィグを手動で変更してみてください。
+  wwcRateNoConvoFolia: Folia の GUI を使用してレート制限を設定できません。代わりに /wwctrl または /translateratelimit
+    を使用してください。
 

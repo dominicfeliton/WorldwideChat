@@ -166,7 +166,11 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					rateMeta.setLore(lore);
 					rateButton.setItemMeta(rateMeta);
 					contents.set(1, 1, ClickableItem.of(rateButton, e -> {
-						rateConvo.buildConversation(player).begin();
+						if (!main.getCurrPlatform().equals("Folia")) {
+							rateConvo.buildConversation(player).begin();
+						} else {
+							refs.sendFancyMsg("wwcRateNoConvoFolia", "", "&c", player);
+						}
 					}));
 				}
 
