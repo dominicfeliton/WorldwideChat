@@ -34,8 +34,13 @@ public class WWCDebug extends BasicCommand {
         if (args.length == 1) {
             if (args[0].equalsIgnoreCase("checkdb")) {
                 YamlConfiguration conf = main.getConfigManager().getMainConfig();
+                if (!main.isSQLConnValid(true) && !main.isPostgresConnValid(true)) {
+                    refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
+                    return true;
+                }
+
                 // Preserve original debug val
-                boolean debugBool = conf.getBoolean("General.debugModeEnabled");
+                boolean debugBool = conf.getBoolean("General.enableDebugMode");
 
                 conf.set("General.enableDebugMode", true);
                 if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
