@@ -1,10 +1,10 @@
 package com.dominicfeliton.worldwidechat.translators;
 
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeoutException;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
 
 public class BasicTranslation {
 	

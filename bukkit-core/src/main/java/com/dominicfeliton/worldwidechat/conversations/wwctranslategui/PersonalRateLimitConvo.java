@@ -1,8 +1,11 @@
 package com.dominicfeliton.worldwidechat.conversations.wwctranslategui;
 
-import java.util.UUID;
-
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.commands.WWCTranslateRateLimit;
+import com.dominicfeliton.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationContext;
@@ -10,13 +13,7 @@ import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateRateLimit;
-import com.dominicfeliton.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-
-import net.md_5.bungee.api.ChatColor;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import java.util.UUID;
 
 public class PersonalRateLimitConvo extends NumericPrompt {
 

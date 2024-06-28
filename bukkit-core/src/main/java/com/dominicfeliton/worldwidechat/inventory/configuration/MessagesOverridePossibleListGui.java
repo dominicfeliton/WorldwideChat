@@ -1,11 +1,16 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
-
+import com.cryptomorin.xseries.XMaterial;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import fr.minuskube.inv.ClickableItem;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
+import fr.minuskube.inv.content.Pagination;
+import fr.minuskube.inv.content.SlotIterator;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.conversations.ConversationFactory;
@@ -13,19 +18,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
-import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.cryptomorin.xseries.XMaterial;
-
-import fr.minuskube.inv.ClickableItem;
-import fr.minuskube.inv.SmartInventory;
-import fr.minuskube.inv.content.InventoryContents;
-import fr.minuskube.inv.content.InventoryProvider;
-import fr.minuskube.inv.content.Pagination;
-import fr.minuskube.inv.content.SlotIterator;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class MessagesOverridePossibleListGui implements InventoryProvider {
 

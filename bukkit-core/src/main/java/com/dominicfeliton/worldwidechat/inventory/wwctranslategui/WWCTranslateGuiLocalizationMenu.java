@@ -1,13 +1,12 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.WWCLocalize;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
-import com.cryptomorin.xseries.XMaterial;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;

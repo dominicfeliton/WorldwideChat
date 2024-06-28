@@ -1,20 +1,18 @@
 package com.dominicfeliton.worldwidechat.util.storage;
 
-import java.util.List;
-
+import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.mongodb.ConnectionString;
-import org.bson.BsonDocument;
-import org.bson.BsonInt64;
-import org.bson.conversions.Bson;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.mongodb.MongoClientSettings;
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.MongoClientSettings;
+import org.bson.BsonDocument;
+import org.bson.BsonInt64;
+import org.bson.conversions.Bson;
 
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class MongoDBUtils {

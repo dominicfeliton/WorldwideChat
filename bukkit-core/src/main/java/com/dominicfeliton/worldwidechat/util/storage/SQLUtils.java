@@ -1,13 +1,13 @@
 package com.dominicfeliton.worldwidechat.util.storage;
 
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.zaxxer.hikari.HikariDataSource;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Properties;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.zaxxer.hikari.HikariDataSource;
 
 public class SQLUtils {
 

@@ -1,23 +1,16 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import java.util.ArrayList;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import com.google.cloud.translate.*;
+import com.google.cloud.translate.Translate.TranslateOption;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import org.apache.commons.lang3.StringUtils;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.SupportedLang;
-import com.google.cloud.translate.Detection;
-import com.google.cloud.translate.Language;
-import com.google.cloud.translate.Translate;
-import com.google.cloud.translate.Translate.TranslateOption;
-import com.google.cloud.translate.Translation;
-
-import com.google.cloud.translate.TranslateOptions;
 
 public class GoogleTranslation extends BasicTranslation {
 

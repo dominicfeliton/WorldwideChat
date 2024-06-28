@@ -1,26 +1,18 @@
 package com.dominicfeliton.worldwidechat.runnables;
 
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import net.md_5.bungee.api.ChatColor;
+import org.apache.commons.io.IOUtils;
+import org.apache.maven.artifact.versioning.ComparableVersion;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 import java.util.logging.Logger;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import org.apache.commons.io.IOUtils;
-import org.apache.maven.artifact.versioning.ComparableVersion;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-
-import net.md_5.bungee.api.ChatColor;
 
 public class UpdateChecker implements Runnable {
 

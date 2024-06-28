@@ -1,29 +1,21 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
+import com.cryptomorin.xseries.XMaterial;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.conversations.configuration.*;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.ChatColor;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
-import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
-import com.cryptomorin.xseries.XMaterial;
-
-import fr.minuskube.inv.SmartInventory;
-import fr.minuskube.inv.content.InventoryContents;
-import fr.minuskube.inv.content.InventoryProvider;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-
-import org.apache.commons.lang3.tuple.Pair;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChat.instance;
 

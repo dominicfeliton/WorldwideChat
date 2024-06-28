@@ -1,19 +1,16 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.*;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import org.apache.commons.lang3.StringUtils;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.deepl.api.Language;
 import com.deepl.api.TextResult;
 import com.deepl.api.Translator;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.*;
 
 public class DeepLTranslation extends BasicTranslation {
 

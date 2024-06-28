@@ -1,20 +1,14 @@
 package com.dominicfeliton.worldwidechat.commands;
 
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 
 public class WWCTranslateRateLimit extends BasicCommand {
 

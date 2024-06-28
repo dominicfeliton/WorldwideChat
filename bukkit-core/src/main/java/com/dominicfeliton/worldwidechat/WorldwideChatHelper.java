@@ -1,8 +1,6 @@
 package com.dominicfeliton.worldwidechat;
 
-import org.bukkit.Chunk;
 import org.bukkit.entity.Entity;
-import org.bukkit.scheduler.BukkitRunnable;
 
 public abstract class WorldwideChatHelper {
     // Store additional, WorldwideChat-exclusive methods here

@@ -1,26 +1,19 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
-import java.util.Arrays;
-
-import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.NumericPrompt;
-import org.bukkit.conversations.Prompt;
-import org.bukkit.conversations.StringPrompt;
-import org.bukkit.entity.Player;
-
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
-
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
-
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import org.bukkit.conversations.ConversationContext;
+import org.bukkit.conversations.NumericPrompt;
+import org.bukkit.conversations.Prompt;
+import org.bukkit.conversations.StringPrompt;
+import org.bukkit.entity.Player;
 public class GeneralSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;

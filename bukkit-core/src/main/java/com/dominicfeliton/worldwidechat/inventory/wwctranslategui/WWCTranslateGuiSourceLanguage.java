@@ -1,26 +1,24 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import java.util.ArrayList;
-import java.util.TreeSet;
-
-import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
-
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import java.util.ArrayList;
+import java.util.TreeSet;
 
 public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 

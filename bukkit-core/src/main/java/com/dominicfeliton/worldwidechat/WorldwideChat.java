@@ -1,52 +1,44 @@
 package com.dominicfeliton.worldwidechat;
 
-import java.io.File;
-import java.util.*;
-import java.util.concurrent.*;
-
 import com.dominicfeliton.worldwidechat.commands.*;
-import com.dominicfeliton.worldwidechat.util.*;
-import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
-import org.apache.commons.lang3.tuple.Pair;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-import org.bukkit.event.HandlerList;
-import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.RegisteredServiceProvider;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.java.JavaPluginLoader;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitWorker;
-import org.jetbrains.annotations.NotNull;
-
 import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.listeners.WWCTabCompleter;
 import com.dominicfeliton.worldwidechat.runnables.LoadUserData;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
 import com.dominicfeliton.worldwidechat.runnables.UpdateChecker;
+import com.dominicfeliton.worldwidechat.util.*;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
+import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
-
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import org.apache.commons.lang3.tuple.Pair;
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.HandlerList;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.JavaPluginLoader;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.jetbrains.annotations.NotNull;
 
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import java.io.File;
+import java.util.*;
+import java.util.concurrent.*;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersions;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.pluginLangConfigs;
+import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersions;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;

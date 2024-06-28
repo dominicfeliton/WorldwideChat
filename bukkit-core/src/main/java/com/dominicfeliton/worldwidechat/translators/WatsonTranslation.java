@@ -1,19 +1,5 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-
-import org.apache.commons.lang3.StringUtils;
-
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.JsonArray;
@@ -25,6 +11,11 @@ import com.ibm.watson.language_translator.v3.LanguageTranslator;
 import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.*;
 
 public class WatsonTranslation extends BasicTranslation {
 
@@ -54,7 +45,7 @@ public class WatsonTranslation extends BasicTranslation {
 
 	private class translationTask implements Callable<String> {
 		@Override
-		public String call() throws Exception {
+		public String call() {
 			/* Init credentials */
 			IamAuthenticator authenticator = new IamAuthenticator.Builder().apikey(System.getProperty("WATSON_API_KEY"))
 					.build();
@@ -115,10 +106,9 @@ public class WatsonTranslation extends BasicTranslation {
 			JsonObject jsonObject = jsonTree.getAsJsonObject();
 			JsonElement translationSection = jsonObject.getAsJsonArray("translations").get(0).getAsJsonObject()
 					.get("translation");
-			String finalOut = translationSection.getAsString();
 
-			/* Return result */
-			return finalOut;
+            /* Return result */
+			return translationSection.getAsString();
 		}
 	}
 

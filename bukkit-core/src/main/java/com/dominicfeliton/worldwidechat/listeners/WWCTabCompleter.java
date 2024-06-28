@@ -1,9 +1,8 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
-import java.util.*;
-
+import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -11,8 +10,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class WWCTabCompleter implements TabCompleter {
 

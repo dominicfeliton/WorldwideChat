@@ -1,18 +1,16 @@
 package com.dominicfeliton.worldwidechat.inventory;
 
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.cryptomorin.xseries.XMaterial;
-
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import net.md_5.bungee.api.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class TempItemInventory implements InventoryProvider {
 

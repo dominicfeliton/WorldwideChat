@@ -1,11 +1,10 @@
 package com.dominicfeliton.worldwidechat.commands;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
-import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 
 public class WWCConfiguration extends BasicCommand {
 

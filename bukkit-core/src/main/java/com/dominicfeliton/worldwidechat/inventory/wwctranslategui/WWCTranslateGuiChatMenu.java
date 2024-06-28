@@ -1,27 +1,23 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import java.util.UUID;
-
+import com.cryptomorin.xseries.XMaterial;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.commands.WWCTranslateChatIncoming;
+import com.dominicfeliton.worldwidechat.commands.WWCTranslateChatOutgoing;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import fr.minuskube.inv.ClickableItem;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateChatIncoming;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateChatOutgoing;
-import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.cryptomorin.xseries.XMaterial;
-
-import fr.minuskube.inv.ClickableItem;
-import fr.minuskube.inv.SmartInventory;
-import fr.minuskube.inv.content.InventoryContents;
-import fr.minuskube.inv.content.InventoryProvider;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import java.util.UUID;
 
 public class WWCTranslateGuiChatMenu implements InventoryProvider {
 

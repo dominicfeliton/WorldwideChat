@@ -1,5 +1,22 @@
 package com.dominicfeliton.worldwidechat.runnables;
 
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CachedTranslation;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
+import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
+import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
+import com.mongodb.MongoCommandException;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.threeten.bp.Instant;
+
 import java.io.File;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -8,26 +25,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.dominicfeliton.worldwidechat.util.CachedTranslation;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
-import org.bson.Document;
-import org.bukkit.ChatColor;
-import org.bukkit.configuration.file.YamlConfiguration;
-import org.threeten.bp.Instant;
-
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.PlayerRecord;
-import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
-import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
-import com.mongodb.MongoCommandException;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 
 public class LoadUserData implements Runnable {
 

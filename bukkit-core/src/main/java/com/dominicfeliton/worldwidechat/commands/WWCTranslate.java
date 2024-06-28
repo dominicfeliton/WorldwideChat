@@ -1,18 +1,16 @@
 package com.dominicfeliton.worldwidechat.commands;
 
-import java.util.UUID;
-
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import java.util.UUID;
 
 public class WWCTranslate extends BasicCommand {
 

@@ -7,7 +7,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import org.checkerframework.checker.units.qual.C;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.InputStream;
@@ -15,7 +14,9 @@ import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.concurrent.*;
 
 public class SystranTranslation extends BasicTranslation {
@@ -116,7 +117,7 @@ public class SystranTranslation extends BasicTranslation {
                 String response = new Scanner(responseStream, StandardCharsets.UTF_8).useDelimiter("\\A").next();
                 JsonObject jsonResponse = gson.fromJson(response, JsonObject.class);
                 JsonArray outputs = jsonResponse.getAsJsonArray("outputs");
-                if (outputs.size() > 0) {
+                if (!outputs.isEmpty()) {
                     return outputs.get(0).getAsJsonObject().get("output").getAsString();
                 } else {
                     return textToTranslate;

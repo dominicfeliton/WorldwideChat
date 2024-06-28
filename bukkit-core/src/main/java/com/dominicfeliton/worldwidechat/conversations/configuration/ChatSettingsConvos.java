@@ -1,21 +1,17 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
-import com.dominicfeliton.worldwidechat.util.PlayerRecord;
-import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.Prompt;
-import org.bukkit.conversations.StringPrompt;
-import org.bukkit.entity.Player;
-
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.md_5.bungee.api.ChatColor;
-
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.conversations.ConversationContext;
+import org.bukkit.conversations.Prompt;
+import org.bukkit.conversations.StringPrompt;
+import org.bukkit.entity.Player;
 
 public class ChatSettingsConvos {
 

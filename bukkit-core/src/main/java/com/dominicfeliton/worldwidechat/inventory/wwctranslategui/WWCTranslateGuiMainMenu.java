@@ -1,12 +1,18 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-
+import com.cryptomorin.xseries.XMaterial;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.commands.*;
+import com.dominicfeliton.worldwidechat.conversations.wwctranslategui.PersonalRateLimitConvo;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import fr.minuskube.inv.ClickableItem;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationFactory;
@@ -14,22 +20,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.commands.WWCGlobal;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslate;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateBook;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateEntity;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateItem;
-import com.dominicfeliton.worldwidechat.commands.WWCTranslateSign;
-import com.dominicfeliton.worldwidechat.conversations.wwctranslategui.PersonalRateLimitConvo;
-import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.cryptomorin.xseries.XMaterial;
-
-import fr.minuskube.inv.ClickableItem;
-import fr.minuskube.inv.SmartInventory;
-import fr.minuskube.inv.content.InventoryContents;
-import fr.minuskube.inv.content.InventoryProvider;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 public class WWCTranslateGuiMainMenu implements InventoryProvider {
 

@@ -1,9 +1,9 @@
 package com.dominicfeliton.worldwidechat.runnables;
 
-import java.util.concurrent.TimeUnit;
-
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+
+import java.util.concurrent.TimeUnit;
 
 public class SyncUserData implements Runnable {
 
