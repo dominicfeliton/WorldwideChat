@@ -35,6 +35,6 @@ public class InventoryListener implements Listener {
 				}
 			}
 		};
-		wwcHelper.runSync(true, 10, out, ENTITY, (Player)e.getPlayer());
+		wwcHelper.runSync(true, 10, out, ENTITY, new Object[] {(Player)e.getPlayer()});
 	}
 }

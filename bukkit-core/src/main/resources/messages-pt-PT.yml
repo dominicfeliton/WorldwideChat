@@ -628,4 +628,11 @@ Messages:
     configuração manualmente para este valor.
   wwcRateNoConvoFolia: Não é possível definir um limite de taxa através da GUI no
     Folia. Em vez disso, use /wwctrl ou /translateratelimit.
+  wwcInvalidTranslatorUser: O WorldwideChat está indisponível no momento. Tente novamente
+    mais tarde ou contacte o administrador se isso persistir.
+  wwcCouldNotSaveOhNo: Não foi possível guardar os dados do WorldwideChat... certifique-se
+    de que a opção de base de dados/armazenamento seleccionada está estável!
+  wwcSyncUserDataComplete: Os dados do utilizador foram guardados com êxito em {0}.
+    {1}
+  wwcSyncUserDataStart: Sincronizar dados do utilizador...
 

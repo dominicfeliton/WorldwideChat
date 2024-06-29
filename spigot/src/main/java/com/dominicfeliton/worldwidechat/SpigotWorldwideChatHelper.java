@@ -101,17 +101,17 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsync(Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(true, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(serverMustBeRunning, 0, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -130,7 +130,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -151,22 +151,22 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(true, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(serverMustBeRunning, 0, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -185,7 +185,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -204,7 +204,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 

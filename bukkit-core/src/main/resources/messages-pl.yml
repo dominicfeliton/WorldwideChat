@@ -609,4 +609,10 @@ Messages:
     nadal działają. Spróbuj ręcznie zmodyfikować konfigurację dla tej wartości.
   wwcRateNoConvoFolia: Nie można ustawić limitu szybkości za pomocą interfejsu użytkownika
     na Folia. Zamiast tego użyj /wwctrl lub /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat jest obecnie niedostępny. Spróbuj ponownie
+    później lub skontaktuj się z administratorem, jeśli to się powtarza.
+  wwcCouldNotSaveOhNo: Nie można zapisać danych WorldwideChat... upewnij się, że wybrana
+    opcja bazy danych/pamięci masowej jest stabilna!
+  wwcSyncUserDataComplete: Pomyślnie zapisano dane użytkownika w {0}. {1}
+  wwcSyncUserDataStart: Synchronizowanie danych użytkownika...
 

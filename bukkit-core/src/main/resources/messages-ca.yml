@@ -647,4 +647,11 @@ Messages:
     la configuració manualment per a aquest valor.
   wwcRateNoConvoFolia: No es pot establir un límit de tarifa a través de la GUI a
     Folia. Si us plau, utilitzeu /wwctrl o /translateratelimit en el seu lloc.
+  wwcInvalidTranslatorUser: WorldwideChat no està disponible actualment. Si us plau,
+    torneu a intentar-ho més tard o poseu-vos en contacte amb el vostre administrador
+    si això persisteix.
+  wwcCouldNotSaveOhNo: No es pot desar dades WorldwideChat... si us plau assegureu-vos
+    que la vostra base de dades/opció d'emmagatzematge seleccionada és estable!
+  wwcSyncUserDataComplete: Les dades d'usuari s'han guardat correctament a {0}. {1}
+  wwcSyncUserDataStart: Sincronització de dades d'usuari...
 

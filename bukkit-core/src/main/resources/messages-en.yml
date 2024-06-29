@@ -19,6 +19,7 @@ Messages:
   wwcCharLimit: 'Your message is too long! Please make sure your message is less than {0} characters in length.'
   wwcTranslatorAttempt: 'Attempting to connect to translator in config.yml... (Attempt {0}/{1})'
   wwcInvalidTranslator: 'Invalid translator settings. Please fix this in your config.yml or with /wwcc to use this plugin.'
+  wwcInvalidTranslatorUser: 'WorldwideChat is currently unavailable. Please try again later or contact your administrator if this persists.'
   wwcInventoryError: 'Error detected with GUI of user {0}. Please report this issue to the developer.'
   wwcInventoryErrorPlayer: 'Error detected with your GUI. A log has been sent to the console.'
   wwcGUITempItem: 'Item Display'
@@ -41,6 +42,9 @@ Messages:
   wwcLoadCacheFolderFail: 'Unable to create the user cache folder in the plugin directory. Disabling WorldwideChat...'
   wwcNoConvoFolia: 'Bukkit Conversations are currently broken on this version of Folia, but toggles are still functional. Please try modifying the config manually for this value.'
   wwcRateNoConvoFolia: 'Unable to set a rate limit via the GUI on Folia. Please use /wwctrl or /translateratelimit instead.'
+  wwcCouldNotSaveOhNo: 'Unable to save WorldwideChat data...please ensure that your selected database/storage option is stable!'
+  wwcSyncUserDataComplete: 'Successfully saved user data to {0}. {1}'
+  wwcSyncUserDataStart: 'Syncing user data...'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

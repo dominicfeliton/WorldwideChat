@@ -561,4 +561,10 @@ Messages:
     التبديل لا تزال تعمل. يرجى محاولة تعديل التكوين يدويًا لهذه القيمة.
   wwcRateNoConvoFolia: غير قادر على تعيين حد للسعر عبر واجهة المستخدم الرسومية على
     Folia. يرجى استخدام /wwctrl أو /translateratelimit بدلاً من ذلك.
+  wwcInvalidTranslatorUser: WorldwideChat غير متاح حاليًا. يرجى المحاولة مرة أخرى
+    لاحقًا أو الاتصال بالمسؤول إذا استمر ذلك.
+  wwcCouldNotSaveOhNo: غير قادر على حفظ بيانات WorldwideChat... يرجى التأكد من أن
+    خيار قاعدة البيانات/التخزين المحدد مستقر!
+  wwcSyncUserDataComplete: تم حفظ بيانات المستخدم بنجاح إلى {0}. {1}
+  wwcSyncUserDataStart: جاري مزامنة بيانات المستخدم...
 

@@ -473,4 +473,8 @@ Messages:
   wwcNoConvoFolia: 現在、このバージョンの Folia では Bukkit の会話が機能しませんが、トグルは引き続き機能します。この値になるようにコンフィグを手動で変更してみてください。
   wwcRateNoConvoFolia: Folia の GUI を使用してレート制限を設定できません。代わりに /wwctrl または /translateratelimit
     を使用してください。
+  wwcInvalidTranslatorUser: ワールドワイドチャットは現在ご利用いただけません。後でもう一度試すか、問題が解決しない場合は管理者に問い合わせてください。
+  wwcCouldNotSaveOhNo: WorldwideChat データを保存できません... 選択したデータベース/ストレージオプションが安定していることを確認してください!
+  wwcSyncUserDataComplete: ユーザーデータが {0} に正常に保存されました。{1}
+  wwcSyncUserDataStart: ユーザーデータを同期中...
 

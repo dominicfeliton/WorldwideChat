@@ -639,4 +639,10 @@ Messages:
     manualmente la configurazione per questo valore.
   wwcRateNoConvoFolia: Impossibile impostare un limite di velocità tramite la GUI
     su Folia. Utilizza invece /wwctrl o /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat non è al momento disponibile. Riprova più
+    tardi o contatta l'amministratore se il problema persiste.
+  wwcCouldNotSaveOhNo: Impossibile salvare i dati di WorldwideChat... assicurati che
+    il database/l'opzione di archiviazione selezionata sia stabile!
+  wwcSyncUserDataComplete: Dati utente salvati con successo su {0}. {1}
+  wwcSyncUserDataStart: Sincronizzazione dei dati utente...
 

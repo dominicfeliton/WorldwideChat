@@ -601,4 +601,10 @@ Messages:
     přepínače jsou stále funkční. Zkuste upravit konfiguraci ručně pro tuto hodnotu.
   wwcRateNoConvoFolia: Nelze nastavit limit rychlosti pomocí GUI na Folia. Místo toho
     použijte /wwctrl nebo /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat není momentálně k dispozici. Zkuste to prosím
+    znovu později nebo se obraťte na správce, pokud to přetrvává.
+  wwcCouldNotSaveOhNo: Nelze uložit data WorldwideChat... ujistěte se, že vybraná
+    možnost databáze/úložiště je stabilní!
+  wwcSyncUserDataComplete: Úspěšně uložena uživatelská data do {0}. {1}
+  wwcSyncUserDataStart: Synchronizace uživatelských dat...
 

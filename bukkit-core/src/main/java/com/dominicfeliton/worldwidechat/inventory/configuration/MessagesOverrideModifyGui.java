@@ -83,7 +83,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 								new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings().open(player);
 							}
 						};
-						wwcHelper.runSync(out, ENTITY, player);
+						wwcHelper.runSync(out, ENTITY, new Object[] {player});
 					}
 				};
 				wwcHelper.runAsync(saveMessages, ASYNC, null);

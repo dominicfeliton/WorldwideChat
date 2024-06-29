@@ -1,19 +1,26 @@
 package com.dominicfeliton.worldwidechat.commands;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
+import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.Map;
 import java.util.Set;
+
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 
 public class WWCDebug extends BasicCommand {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
     private YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
     public WWCDebug(CommandSender sender, Command command, String label, String[] args) {
@@ -56,6 +63,28 @@ public class WWCDebug extends BasicCommand {
                     refs.sendFancyMsg("wwcdCacheTerm", new String[] {"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
                     count++;
                 }
+                return true;
+            }
+            if (args[0].equalsIgnoreCase("save")) {
+                // force save
+                Runnable run = new BukkitRunnable() {
+                    @Override
+                    public void run() {
+                        // Preserve original debug val
+                        YamlConfiguration conf = main.getConfigManager().getMainConfig();
+                        boolean debugBool = conf.getBoolean("General.enableDebugMode");
+
+                        conf.set("General.enableDebugMode", true);
+                        if (sender instanceof Player) {
+                            new SyncUserData((Player)sender).run();
+                        } else {
+                            new SyncUserData().run();
+                        }
+
+                        conf.set("General.enableDebugMode", debugBool);
+                    }
+                };
+                wwcHelper.runAsync(run, ASYNC, null);
                 return true;
             }
         }

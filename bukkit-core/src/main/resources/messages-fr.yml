@@ -658,3 +658,11 @@ Messages:
     la configuration manuellement pour cette valeur.
   wwcRateNoConvoFolia: Impossible de définir une limite de débit via l'interface graphique
     de Folia. Veuillez utiliser /wwctrl ou /translateratelimit à la place.
+  wwcInvalidTranslatorUser: WorldwideChat n'est pas disponible pour le moment. Réessayez
+    ultérieurement ou contactez votre administrateur si le problème persiste.
+  wwcCouldNotSaveOhNo: Impossible d'enregistrer les données de WorldwideChat... veuillez
+    vous assurer que la base de données/l'option de stockage que vous avez sélectionnée
+    est stable!
+  wwcSyncUserDataComplete: Les données utilisateur ont été enregistrées avec succès
+    dans {0}. {1}
+  wwcSyncUserDataStart: Synchronisation des données utilisateur...

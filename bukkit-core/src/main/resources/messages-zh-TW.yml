@@ -464,4 +464,8 @@ Messages:
   wwcLoadCacheFolderFail: 無法在外掛程式目錄中建立使用者快取資料夾。停用全球微信...
   wwcNoConvoFolia: 這個版本的 Folia 上的 Bukkit 對話目前已中斷，但切換功能仍然有效。請嘗試手動修改此值的配置。
   wwcRateNoConvoFolia: 無法通過 Folia 上的 GUI 設置速率限制。請改用 /wwctrl 或/轉換器數字。
+  wwcInvalidTranslatorUser: 目前無法使用全球微信。如果仍然存在，請稍後再試一次，或聯絡您的管理員。
+  wwcCouldNotSaveOhNo: 無法保存全球微信數據... 請確保您選擇的數據庫/存儲選項穩定！
+  wwcSyncUserDataComplete: 成功將使用者資料儲存到 {0}。{1}
+  wwcSyncUserDataStart: 正在同步使用者資料...
 

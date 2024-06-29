@@ -462,4 +462,8 @@ Messages:
   wwcLoadCacheFolderFail: 无法在插件目录中创建用户缓存文件夹。禁用全球聊天...
   wwcNoConvoFolia: 目前，此版本的 Folia 上的 Bukkit 对话已中断，但切换功能仍然可以使用。请尝试手动修改此值的配置。
   wwcRateNoConvoFolia: 无法通过 Folia 上的 GUI 设置速率限制。请改用 /wwctrl 或 /translaterateLimit。
+  wwcInvalidTranslatorUser: WorldwideChat 目前不可用。如果问题仍然存在，请稍后重试或联系您的管理员。
+  wwcCouldNotSaveOhNo: 无法保存 WorldwideChat 数据... 请确保您选择的数据库/存储选项是稳定的！
+  wwcSyncUserDataComplete: 成功将用户数据保存到 {0}。{1}
+  wwcSyncUserDataStart: 正在同步用户数据...
 

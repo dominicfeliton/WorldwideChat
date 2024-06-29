@@ -53,7 +53,7 @@ public class WWCInventoryManager extends InventoryManager {
 						.content(refs.getMsg("wwcInventoryErrorPlayer", player))
 						.color(NamedTextColor.RED)
 				.build();
-		refs. sendMsg(player, inventoryError);
+		refs.sendMsg(player, inventoryError);
 		main.getLogger().severe(refs.getMsg("wwcInventoryError", player.getName(), player));
 		e.printStackTrace();
 		player.closeInventory();
@@ -96,9 +96,14 @@ public class WWCInventoryManager extends InventoryManager {
 					+ refs.getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class)), player));
 			if (args[0].equals("1")) {
 				addGlowEffect(pageMeta);
+				pageButton.setItemMeta(pageMeta);
+				contents.set(x, y, ClickableItem.empty(pageButton));
+			} else {
+				pageButton.setItemMeta(pageMeta);
+				contents.set(x, y, ClickableItem.of(pageButton, e -> {
+					contents.inventory().open(player, 0);
+				}));
 			}
-			pageButton.setItemMeta(pageMeta);
-			contents.set(x, y, ClickableItem.empty(pageButton));
 		} else if (buttonType.equalsIgnoreCase("Quit")) {
 			pageButton = XMaterial.BARRIER.parseItem();
 			pageMeta = pageButton.getItemMeta();

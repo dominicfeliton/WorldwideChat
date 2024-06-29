@@ -104,7 +104,7 @@ public class WWCStats extends BasicCommand {
 							}
 						};
 
-						wwcHelper.runSync(out, ENTITY, (Player)sender);
+						wwcHelper.runSync(out, ENTITY, new Object[] {(Player)sender});
 					} else {
 						PlayerRecord record = main
 								.getPlayerRecord(inPlayer.getUniqueId().toString(), false);

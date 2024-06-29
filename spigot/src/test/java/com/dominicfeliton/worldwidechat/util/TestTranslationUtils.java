@@ -1,10 +1,10 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatTests;
+import org.bukkit.command.ConsoleCommandSender;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,25 +27,22 @@ public class TestTranslationUtils {
 
 	public void testTranslationFunctionSourceTarget() {
 		playerMock.performCommand("worldwidechat:wwct en es");
-		assertTrue(refs.translateText("Hello, how are you?", playerMock).equals("Hola, como estas?"));
+        assertEquals("Hola, como estas?", refs.translateText("Hello, how are you?", playerMock));
 	}
 
 	public void testTranslationFunctionTarget() {
 		playerMock.performCommand("worldwidechat:wwct es");
-		assertTrue(refs.translateText("How many diamonds do you have?", playerMock)
-				.equals("Cuantos diamantes tienes?"));
+        assertEquals("Cuantos diamantes tienes?", refs.translateText("How many diamonds do you have?", playerMock));
 	}
 
 	public void testTranslationFunctionSourceTargetOther() {
 		playerMock.performCommand("worldwidechat:wwct player2 en es");
-		assertTrue(
-				refs.translateText("Hello, how are you?", secondPlayerMock).equals("Hola, como estas?"));
+        assertEquals("Hola, como estas?", refs.translateText("Hello, how are you?", secondPlayerMock));
 	}
 
 	public void testTranslationFunctionTargetOther() {
 		playerMock.performCommand("worldwidechat:wwct player2 es");
-		assertTrue(refs.translateText("How many diamonds do you have?", secondPlayerMock)
-				.equals("Cuantos diamantes tienes?"));
+        assertEquals("Cuantos diamantes tienes?", refs.translateText("How many diamonds do you have?", secondPlayerMock));
 	}
 
 	public void testPluginDataRetentionYAML() {
@@ -83,28 +80,28 @@ public class TestTranslationUtils {
 		WorldwideChatTests.reloadWWC();
 
 		// Verify ActiveTranslators
-		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
-		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
+		ActiveTranslator currTranslator1 = plugin.getActiveTranslator(playerMock);
+		ActiveTranslator currTranslator2 = plugin.getActiveTranslator(secondPlayerMock);
 
-		assertTrue(activeTrans1.getInLangCode().equals("en")
-				&& activeTrans1.getOutLangCode().equals("fr"));
-		assertTrue(activeTrans1.getTranslatingBook());
-		assertTrue(activeTrans1.getTranslatingEntity());
-		assertTrue(activeTrans1.getTranslatingSign());
-		assertTrue(activeTrans1.getTranslatingItem());
-		assertEquals(activeTrans1.getRateLimit(), 5);
-		assertTrue(activeTrans1.getTranslatingChatOutgoing());
-		assertTrue(activeTrans1.getTranslatingChatIncoming());
+		assertTrue(currTranslator1.getInLangCode().equals("en")
+				&& currTranslator1.getOutLangCode().equals("fr"));
+		assertTrue(currTranslator1.getTranslatingBook());
+		assertTrue(currTranslator1.getTranslatingEntity());
+		assertTrue(currTranslator1.getTranslatingSign());
+		assertTrue(currTranslator1.getTranslatingItem());
+		assertEquals(currTranslator1.getRateLimit(), 5);
+		assertTrue(currTranslator1.getTranslatingChatOutgoing());
+		assertTrue(currTranslator1.getTranslatingChatIncoming());
 
-		assertTrue(activeTrans2.getInLangCode().equals("en")
-				&& activeTrans2.getOutLangCode().equals("es"));
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingEntity());
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingItem());
-		assertEquals(activeTrans2.getRateLimit(), 0);
-		assertFalse(activeTrans2.getTranslatingChatOutgoing());
-		assertFalse(activeTrans2.getTranslatingChatIncoming());
+		assertTrue(currTranslator2.getInLangCode().equals("en")
+				&& currTranslator2.getOutLangCode().equals("es"));
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingEntity());
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingItem());
+		assertEquals(currTranslator2.getRateLimit(), 0);
+		assertFalse(currTranslator2.getTranslatingChatOutgoing());
+		assertFalse(currTranslator2.getTranslatingChatIncoming());
 
 		// Verify PlayerRecords
 		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
@@ -112,20 +109,20 @@ public class TestTranslationUtils {
 
 		assertEquals(playerRecord2.getAttemptedTranslations(), beforeReloadCount + 1);
 		assertEquals(playerRecord2.getSuccessfulTranslations(), beforeReloadCount + 1);
-		assertEquals(playerRecord2.getUUID(), activeTrans2.getUUID());
+		assertEquals(playerRecord2.getUUID(), currTranslator2.getUUID());
 		assertNotEquals("None", playerRecord2.getLastTranslationTime());
 		assertTrue(playerRecord2.getHasBeenSaved());
 
 		assertTrue(playerRecord1.getAttemptedTranslations() > 0);
 		assertTrue(playerRecord1.getSuccessfulTranslations() > 0);
-		assertEquals(playerRecord1.getUUID(), activeTrans1.getUUID());
+		assertEquals(playerRecord1.getUUID(), currTranslator1.getUUID());
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
-		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
+        assertEquals("az", playerRecord1.getLocalizationCode());
 		assertTrue(playerRecord1.getHasBeenSaved());
 
 		// Verify Cache
 		assertTrue(main.getCache().estimatedSize() > 1);
-		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
+        assertEquals("prueba!", main.getCacheTerm(new CachedTranslation("en", "es", "test!")));
 	}
 
 	public void testPluginDataRetentionMongoDB() {
@@ -164,29 +161,29 @@ public class TestTranslationUtils {
         WorldwideChatTests.reloadWWC();
 
 		// Verify ActiveTranslators
-		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
-		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
+		ActiveTranslator currTranslator1 = plugin.getActiveTranslator(playerMock);
+		ActiveTranslator currTranslator2 = plugin.getActiveTranslator(secondPlayerMock);
 		assertTrue(main.isMongoConnValid(true));
 
-		assertTrue(activeTrans1.getInLangCode().equals("en")
-				&& activeTrans1.getOutLangCode().equals("fr"));
-		assertTrue(activeTrans1.getTranslatingBook());
-		assertTrue(activeTrans1.getTranslatingEntity());
-		assertTrue(activeTrans1.getTranslatingSign());
-		assertTrue(activeTrans1.getTranslatingItem());
-		assertEquals(activeTrans1.getRateLimit(), 5);
-		assertTrue(activeTrans1.getTranslatingChatOutgoing());
-		assertTrue(activeTrans1.getTranslatingChatIncoming());
+		assertTrue(currTranslator1.getInLangCode().equals("en")
+				&& currTranslator1.getOutLangCode().equals("fr"));
+		assertTrue(currTranslator1.getTranslatingBook());
+		assertTrue(currTranslator1.getTranslatingEntity());
+		assertTrue(currTranslator1.getTranslatingSign());
+		assertTrue(currTranslator1.getTranslatingItem());
+		assertEquals(currTranslator1.getRateLimit(), 5);
+		assertTrue(currTranslator1.getTranslatingChatOutgoing());
+		assertTrue(currTranslator1.getTranslatingChatIncoming());
 
-		assertTrue(activeTrans2.getInLangCode().equals("en")
-				&& activeTrans2.getOutLangCode().equals("es"));
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingEntity());
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingItem());
-		assertEquals(activeTrans2.getRateLimit(), 0);
-		assertFalse(activeTrans2.getTranslatingChatOutgoing());
-		assertFalse(activeTrans2.getTranslatingChatIncoming());
+		assertTrue(currTranslator2.getInLangCode().equals("en")
+				&& currTranslator2.getOutLangCode().equals("es"));
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingEntity());
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingItem());
+		assertEquals(currTranslator2.getRateLimit(), 0);
+		assertFalse(currTranslator2.getTranslatingChatOutgoing());
+		assertFalse(currTranslator2.getTranslatingChatIncoming());
 
 		// Verify PlayerRecords
 		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
@@ -194,20 +191,20 @@ public class TestTranslationUtils {
 
         assertEquals(playerRecord2.getAttemptedTranslations(), beforeReloadCount + 1);
 		assertEquals(playerRecord2.getSuccessfulTranslations(), beforeReloadCount + 1);
-		assertEquals(playerRecord2.getUUID(), activeTrans2.getUUID());
+		assertEquals(playerRecord2.getUUID(), currTranslator2.getUUID());
         assertNotEquals("None", playerRecord2.getLastTranslationTime());
 		assertTrue(playerRecord2.getHasBeenSaved());
 
 		assertTrue(playerRecord1.getAttemptedTranslations() > 0);
 		assertTrue(playerRecord1.getSuccessfulTranslations() > 0);
-		assertEquals(playerRecord1.getUUID(), activeTrans1.getUUID());
+		assertEquals(playerRecord1.getUUID(), currTranslator1.getUUID());
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
-		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
+        assertEquals("az", playerRecord1.getLocalizationCode());
 		assertTrue(playerRecord1.getHasBeenSaved());
 
 		// Verify Cache
 		assertTrue(main.getCache().estimatedSize() > 1);
-		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
+        assertEquals("prueba!", main.getCacheTerm(new CachedTranslation("en", "es", "test!")));
 	}
 
 	public void testPluginDataRetentionSQL() {
@@ -246,29 +243,29 @@ public class TestTranslationUtils {
 		WorldwideChatTests.reloadWWC();
 
 		// Verify ActiveTranslators
-		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
-		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
+		ActiveTranslator currTranslator1 = plugin.getActiveTranslator(playerMock);
+		ActiveTranslator currTranslator2 = plugin.getActiveTranslator(secondPlayerMock);
 		assertTrue(main.isSQLConnValid(true));
 
-		assertTrue(activeTrans1.getInLangCode().equals("en")
-				&& activeTrans1.getOutLangCode().equals("fr"));
-		assertTrue(activeTrans1.getTranslatingBook());
-		assertTrue(activeTrans1.getTranslatingEntity());
-		assertTrue(activeTrans1.getTranslatingSign());
-		assertTrue(activeTrans1.getTranslatingItem());
-		assertEquals(activeTrans1.getRateLimit(), 5);
-		assertTrue(activeTrans1.getTranslatingChatOutgoing());
-		assertTrue(activeTrans1.getTranslatingChatIncoming());
+		assertTrue(currTranslator1.getInLangCode().equals("en")
+				&& currTranslator1.getOutLangCode().equals("fr"));
+		assertTrue(currTranslator1.getTranslatingBook());
+		assertTrue(currTranslator1.getTranslatingEntity());
+		assertTrue(currTranslator1.getTranslatingSign());
+		assertTrue(currTranslator1.getTranslatingItem());
+		assertEquals(currTranslator1.getRateLimit(), 5);
+		assertTrue(currTranslator1.getTranslatingChatOutgoing());
+		assertTrue(currTranslator1.getTranslatingChatIncoming());
 
-		assertTrue(activeTrans2.getInLangCode().equals("en")
-				&& activeTrans2.getOutLangCode().equals("es"));
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingEntity());
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingItem());
-		assertEquals(activeTrans2.getRateLimit(), 0);
-		assertFalse(activeTrans2.getTranslatingChatOutgoing());
-		assertFalse(activeTrans2.getTranslatingChatIncoming());
+		assertTrue(currTranslator2.getInLangCode().equals("en")
+				&& currTranslator2.getOutLangCode().equals("es"));
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingEntity());
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingItem());
+		assertEquals(currTranslator2.getRateLimit(), 0);
+		assertFalse(currTranslator2.getTranslatingChatOutgoing());
+		assertFalse(currTranslator2.getTranslatingChatIncoming());
 
 		// Verify PlayerRecords
 		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
@@ -276,20 +273,20 @@ public class TestTranslationUtils {
 
 		assertEquals(playerRecord2.getAttemptedTranslations(), beforeReloadCount + 1);
 		assertEquals(playerRecord2.getSuccessfulTranslations(), beforeReloadCount + 1);
-		assertEquals(playerRecord2.getUUID(), activeTrans2.getUUID());
+		assertEquals(playerRecord2.getUUID(), currTranslator2.getUUID());
 		assertNotEquals("None", playerRecord2.getLastTranslationTime());
 		assertTrue(playerRecord2.getHasBeenSaved());
 
 		assertTrue(playerRecord1.getAttemptedTranslations() > 0);
 		assertTrue(playerRecord1.getSuccessfulTranslations() > 0);
-		assertEquals(playerRecord1.getUUID(), activeTrans1.getUUID());
+		assertEquals(playerRecord1.getUUID(), currTranslator1.getUUID());
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
-		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
+        assertEquals("az", playerRecord1.getLocalizationCode());
 		assertTrue(playerRecord1.getHasBeenSaved());
 
 		// Verify Cache
 		assertTrue(main.getCache().estimatedSize() > 1);
-		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
+        assertEquals("prueba!", main.getCacheTerm(new CachedTranslation("en", "es", "test!")));
 	}
 
 	public void testPluginDataRetentionPostgres() {
@@ -328,29 +325,29 @@ public class TestTranslationUtils {
 		WorldwideChatTests.reloadWWC();
 
 		// Verify ActiveTranslators
-		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
-		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
+		ActiveTranslator currTranslator1 = plugin.getActiveTranslator(playerMock);
+		ActiveTranslator currTranslator2 = plugin.getActiveTranslator(secondPlayerMock);
 		assertTrue(main.isPostgresConnValid(true));
 
-		assertTrue(activeTrans1.getInLangCode().equals("en")
-				&& activeTrans1.getOutLangCode().equals("fr"));
-		assertTrue(activeTrans1.getTranslatingBook());
-		assertTrue(activeTrans1.getTranslatingEntity());
-		assertTrue(activeTrans1.getTranslatingSign());
-		assertTrue(activeTrans1.getTranslatingItem());
-		assertEquals(activeTrans1.getRateLimit(), 5);
-		assertTrue(activeTrans1.getTranslatingChatOutgoing());
-		assertTrue(activeTrans1.getTranslatingChatIncoming());
+		assertTrue(currTranslator1.getInLangCode().equals("en")
+				&& currTranslator1.getOutLangCode().equals("fr"));
+		assertTrue(currTranslator1.getTranslatingBook());
+		assertTrue(currTranslator1.getTranslatingEntity());
+		assertTrue(currTranslator1.getTranslatingSign());
+		assertTrue(currTranslator1.getTranslatingItem());
+		assertEquals(currTranslator1.getRateLimit(), 5);
+		assertTrue(currTranslator1.getTranslatingChatOutgoing());
+		assertTrue(currTranslator1.getTranslatingChatIncoming());
 
-		assertTrue(activeTrans2.getInLangCode().equals("en")
-				&& activeTrans2.getOutLangCode().equals("es"));
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingEntity());
-		assertFalse(activeTrans2.getTranslatingSign());
-		assertFalse(activeTrans2.getTranslatingItem());
-		assertEquals(activeTrans2.getRateLimit(), 0);
-		assertFalse(activeTrans2.getTranslatingChatOutgoing());
-		assertFalse(activeTrans2.getTranslatingChatIncoming());
+		assertTrue(currTranslator2.getInLangCode().equals("en")
+				&& currTranslator2.getOutLangCode().equals("es"));
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingEntity());
+		assertFalse(currTranslator2.getTranslatingSign());
+		assertFalse(currTranslator2.getTranslatingItem());
+		assertEquals(currTranslator2.getRateLimit(), 0);
+		assertFalse(currTranslator2.getTranslatingChatOutgoing());
+		assertFalse(currTranslator2.getTranslatingChatIncoming());
 
 		// Verify PlayerRecords
 		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
@@ -358,19 +355,19 @@ public class TestTranslationUtils {
 
 		assertEquals(playerRecord2.getAttemptedTranslations(), beforeReloadCount + 1);
 		assertEquals(playerRecord2.getSuccessfulTranslations(), beforeReloadCount + 1);
-		assertEquals(playerRecord2.getUUID(), activeTrans2.getUUID());
+		assertEquals(playerRecord2.getUUID(), currTranslator2.getUUID());
 		assertNotEquals("None", playerRecord2.getLastTranslationTime());
 		assertTrue(playerRecord2.getHasBeenSaved());
 
 		assertTrue(playerRecord1.getAttemptedTranslations() > 0);
 		assertTrue(playerRecord1.getSuccessfulTranslations() > 0);
-		assertEquals(playerRecord1.getUUID(), activeTrans1.getUUID());
+		assertEquals(playerRecord1.getUUID(), currTranslator1.getUUID());
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
-		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
+        assertEquals("az", playerRecord1.getLocalizationCode());
 		assertTrue(playerRecord1.getHasBeenSaved());
 
 		// Verify Cache
 		assertTrue(main.getCache().estimatedSize() > 1);
-		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
+        assertEquals("prueba!", main.getCacheTerm(new CachedTranslation("en", "es", "test!")));
 	}
 }

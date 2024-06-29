@@ -262,6 +262,9 @@ public class WWCTabCompleter implements TabCompleter {
                 if ("checkdb".startsWith(args[0])) {
                     out.add("checkdb");
                 }
+                if ("save".startsWith(args[0])) {
+                    out.add("save");
+                }
             } else if (args.length == 2) {
                 if (args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
                     out.add("clear");

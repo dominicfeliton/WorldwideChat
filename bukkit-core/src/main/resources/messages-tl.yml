@@ -673,4 +673,11 @@ Messages:
     nang manu-mano ang config para sa halagang ito.
   wwcRateNoConvoFolia: Hindi magtakda ng limitasyon ng rate sa pamamagitan ng GUI
     sa Folia. Mangyaring gamitin ang /wwctrl o /translateratelimit sa halip.
+  wwcInvalidTranslatorUser: Ang WorldwideChat ay kasalukuyang hindi magagamit. Mangyaring
+    subukang muli mamaya o makipag-ugnay sa iyong administrator kung magpapatuloy
+    ito.
+  wwcCouldNotSaveOhNo: Hindi mai-save ang data ng WorldwideChat... mangyaring tiyaking
+    matatag ang iyong napiling pagpipilian sa database/storage!
+  wwcSyncUserDataComplete: Matagumpay na nai-save ang data ng gumagamit sa {0}. {1}
+  wwcSyncUserDataStart: Pag-sync ng data ng gumagamit...
 

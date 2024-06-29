@@ -11,12 +11,10 @@ public class TestCommands {
 
 	private ServerMock server;
 	private WorldwideChat plugin;
-	private PlayerMock playerMock;
 
-	public TestCommands(ServerMock server, WorldwideChat plugin, PlayerMock p1, PlayerMock p2) {
+	public TestCommands(ServerMock server, WorldwideChat plugin) {
 		this.server = server;
 		this.plugin = plugin;
-		playerMock = p1;
 	}
 	
     public void runPlayerTest(String inCommand, PlayerMock player1) {

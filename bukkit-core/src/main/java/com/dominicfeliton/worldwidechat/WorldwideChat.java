@@ -23,6 +23,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
@@ -42,7 +43,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "06272024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "06292024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -152,7 +153,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Setup adventure if needed
-		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
 		if (currPlatform.equals("Bukkit") || currPlatform.equals("Spigot")) {
 			adventure = BukkitAudiences.create(this); // Adventure
 		}
@@ -284,6 +284,124 @@ public class WorldwideChat extends JavaPlugin {
 			}
 		}
 		return true;
+	}
+
+	/**
+	 * Initialize adapters and check MC version/platform
+	 */
+	private boolean checkAndInitAdapters() {
+		// Init vars
+		Pair<String, String> serverInfo = serverFactory.getServerInfo();
+		String type = serverInfo.getKey();
+		String version = serverInfo.getValue();
+
+		// Get adapter class name
+		String outputVersion = "";
+		switch (type) {
+			case "Bukkit":
+			case "Spigot":
+			case "Paper":
+			case "Folia":
+				// Raw Bukkit (not spigot) is not *explicitly* supported but should work
+				getLogger().info("##### Detected supported platform: " + type + " #####");
+				break;
+			default:
+				getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
+				break;
+		}
+
+		for (String eaVer: supportedMCVersions) {
+			if (version.contains(eaVer)) {
+				outputVersion = eaVer;
+				getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
+			}
+		}
+
+		// Not running a supported server version, default to latest
+		if (outputVersion.isEmpty()) {
+			outputVersion = supportedMCVersions[supportedMCVersions.length-1];
+			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
+		}
+
+		// If running Folia 1.19/1.18 (?)
+		if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
+			getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
+			return false;
+		}
+
+		// Load methods
+		currPlatform = type;
+		refs = serverFactory.getCommonRefs();
+		wwcHelper = serverFactory.getWWCHelper();
+
+		if (refs == null || wwcHelper == null) {
+			return false;
+		}
+		return true;
+	}
+
+	/* Do Startup Tasks */
+	/**
+	 * Platform-exclusive tasks, such as (re)loading all plugin configs
+	 * @param isReloading - If this function should accommodate for a plugin reload or not
+	 */
+	public void doStartupTasks(boolean isReloading) {
+		// Start thread executor
+		callbackExecutor = Executors.newCachedThreadPool();
+
+		// Set config manager
+		setConfigManager(new ConfigurationHandler());
+
+		// Init and load configs
+		configurationManager.initMainConfig();
+		configurationManager.initMessagesConfigs();
+
+		configurationManager.loadMainSettings();
+		configurationManager.loadStorageSettings();
+		// we are storing the real translator name in tempTransName.
+		// this is to prevent the plugin from being fully accessible to all users just yet.
+		// (we are not done init'ing)
+		String tempTransName = configurationManager.loadTranslatorSettings();
+
+		/* Run tasks after translator loaded */
+		// Load saved user data
+		new LoadUserData(tempTransName).run();
+
+		// Schedule automatic user data sync
+		BukkitRunnable sync = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new SyncUserData().run();
+			}
+		};
+
+		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
+
+		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
+		if (isReloading) {
+			BukkitRunnable tab = new BukkitRunnable() {
+				@Override
+				public void run() {
+					registerTabCompleters();
+				}
+			};
+			wwcHelper.runSync(tab, GLOBAL, null);
+		} else {
+			registerTabCompleters();
+		}
+
+		// Check for updates
+		BukkitRunnable update = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new UpdateChecker().run();
+			}
+		};
+
+		wwcHelper.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update, ASYNC, null);
+
+		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+		translatorName = tempTransName;
 	}
 
 	/**
@@ -449,7 +567,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Cleanup background tasks
 		wwcHelper.cleanupTasks(taskID);
 
-		// Sync activeTranslators, playerRecords to disk
+		// Sync ActiveTranslators, playerRecords to disk
 		try {
 			configurationManager.syncData(wasPreviouslyInvalid);
 		} catch (Exception e) {
@@ -477,124 +595,6 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.clear();
 		cache.invalidateAll();
 		cache.cleanUp();
-	}
-
-	/* Do Startup Tasks */
-	/**
-	  * Platform-exclusive tasks, such as (re)loading all plugin configs
-	  * @param isReloading - If this function should accommodate for a plugin reload or not
-	  */
-	public void doStartupTasks(boolean isReloading) {
-		// Start thread executor
-		callbackExecutor = Executors.newCachedThreadPool();
-
-		// Set config manager
-		setConfigManager(new ConfigurationHandler());
-
-		// Init and load configs
-		configurationManager.initMainConfig();
-		configurationManager.initMessagesConfigs();
-
-		configurationManager.loadMainSettings();
-		configurationManager.loadStorageSettings();
-		// we are storing the real translator name in tempTransName.
-		// this is to prevent the plugin from being fully accessible to all users just yet.
-		// (we are not done init'ing)
-		String tempTransName = configurationManager.loadTranslatorSettings();
-
-		/* Run tasks after translator loaded */
-		// Load saved user data
-		new LoadUserData(tempTransName).run();
-
-        // Schedule automatic user data sync
-		BukkitRunnable sync = new BukkitRunnable() {
-			@Override
-			public void run() {
-				new SyncUserData().run();
-			}
-		};
-
-		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
-
-		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
-		if (isReloading) {
-			BukkitRunnable tab = new BukkitRunnable() {
-				@Override
-				public void run() {
-					registerTabCompleters();
-				}
-			};
-			wwcHelper.runSync(tab, GLOBAL, null);
-		} else {
-			registerTabCompleters();
-		}
-
-		// Check for updates
-		BukkitRunnable update = new BukkitRunnable() {
-			@Override
-			public void run() {
-				new UpdateChecker().run();
-			}
-		};
-
-		wwcHelper.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update, ASYNC, null);
-
-		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
-		translatorName = tempTransName;
-	}
-
-	/**
-	 * Initialize adapters and check MC version/platform
-	 */
-	private boolean checkAndInitAdapters() {
-		// Init vars
-		Pair<String, String> serverInfo = serverFactory.getServerInfo();
-		String type = serverInfo.getKey();
-		String version = serverInfo.getValue();
-
-		// Get adapter class name
-		String outputVersion = "";
-		switch (type) {
-			case "Bukkit":
-			case "Spigot":
-			case "Paper":
-			case "Folia":
-			// Raw Bukkit (not spigot) is not *explicitly* supported but should work
-				getLogger().info("##### Detected supported platform: " + type + " #####");
-				break;
-			default:
-				getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
-				break;
-		}
-
-		for (String eaVer: supportedMCVersions) {
-			if (version.contains(eaVer)) {
-				outputVersion = eaVer;
-				getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
-			}
-		}
-
-		// Not running a supported server version, default to latest
-		if (outputVersion.isEmpty()) {
-			outputVersion = supportedMCVersions[supportedMCVersions.length-1];
-			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
-		}
-
-		// If running Folia 1.19/1.18 (?)
-		if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
-			getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
-			return false;
-		}
-
-		// Load methods
-		currPlatform = type;
-		refs = serverFactory.getCommonRefs();
-		wwcHelper = serverFactory.getWWCHelper();
-
-		if (refs == null || wwcHelper == null) {
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -628,11 +628,12 @@ public class WorldwideChat extends JavaPlugin {
 			refs.sendMsg(sender, notDone);
 			return false;
 		} else if (getTranslatorName().equals("Invalid")) {
-			final TextComponent invalid = Component.text()
-							.content(refs.getMsg("wwcInvalidTranslator", sender))
-							.color(NamedTextColor.RED)
-					.build();
-			refs.sendMsg(sender, invalid);
+			if (sender instanceof ConsoleCommandSender
+					|| (sender instanceof Player && (sender.hasPermission("worldwidechat.wwcc") || sender.isOp()))) {
+				refs.sendFancyMsg("wwcInvalidTranslator", "", "&c", sender);
+			} else {
+				refs.sendFancyMsg("wwcInvalidTranslatorUser", "", "&c", sender);
+			}
 			return false;
 		}
 		return true;
