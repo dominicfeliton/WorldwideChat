@@ -115,8 +115,6 @@ public class CommonRefs {
 		cachedTermsSchema.put("outputPhrase", "VARCHAR(260)");
 		tableSchemas.put("persistentCache", cachedTermsSchema);
 	}
-
-	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 	
 	/**
 	  * Compares two strings to check if they are the same language under the current translator.

@@ -38,12 +38,11 @@ import java.util.concurrent.*;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersions;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "06292024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "07042024-3"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -187,7 +186,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		instance = null;
 		supportedMCVersions = null;
-		pluginLangConfigs = null;
 		serverFactory = null;
 
 		// All done.
@@ -218,10 +216,14 @@ public class WorldwideChat extends JavaPlugin {
                     // Stats for translator
                     WWCStats wwcs = new WWCStats(sender, command, label, args);
                     return wwcs.processCommand();
+				case "wwcd":
+					// Debug
+					WWCDebug wwcd = new WWCDebug(sender, command, label, args);
+					return wwcd.processCommand();
             }
 		}
 		/* Commands that run if translator settings are valid */
-		if (hasValidTranslatorSettings(sender)) {
+		if (!command.getName().equals("wwcc") && hasValidTranslatorSettings(sender)) {
             switch (command.getName()) {
 				case "wwcg":
                     // Global translation
@@ -235,9 +237,6 @@ public class WorldwideChat extends JavaPlugin {
 					// Per player localization
 					WWCLocalize wwcl = new WWCLocalize(sender, command, label, args);
 					return wwcl.processCommand();
-				case "wwcd":
-					WWCDebug wwcd = new WWCDebug(sender, command, label, args);
-					return wwcd.processCommand();
 				case "wwctb":
                     // Book translation
                     WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
@@ -268,11 +267,12 @@ public class WorldwideChat extends JavaPlugin {
                     return wwctrl.processCommand();
             }
 		}
+
 		/* Commands that run regardless of translator settings, but not during restarts or as console */
 		/* Keep these commands down here, otherwise checkSenderIdentity() will send a message when we don't want it to */
-		if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
-			switch (command.getName()) {
-				case "wwcc":
+		switch (command.getName()) {
+			case "wwcc":
+				if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
 					// Configuration GUI
 					if (inventoryManager == null) {
 						refs.debugMsg("invManager is null! We may be on folia, abort...");
@@ -281,7 +281,7 @@ public class WorldwideChat extends JavaPlugin {
 
 					WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
 					return wwcc.processCommand();
-			}
+				}
 		}
 		return true;
 	}

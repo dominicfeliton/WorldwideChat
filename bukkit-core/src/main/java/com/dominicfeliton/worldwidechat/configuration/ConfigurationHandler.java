@@ -30,11 +30,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
 public class ConfigurationHandler {
@@ -45,6 +45,8 @@ public class ConfigurationHandler {
 
 	private File configFile;
 	private YamlConfiguration mainConfig;
+
+	private ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 
 	/* Init Main Config Method */
 	public void initMainConfig() {
@@ -85,9 +87,12 @@ public class ConfigurationHandler {
 			String eaStr = eaLang.getLangCode();
 			refs.debugMsg("Checking " + eaStr + "...");
 			YamlConfiguration currConfig = generateMessagesConfig(eaStr);
-			if (currConfig != null) {
-				pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
+			if (currConfig == null) {
+				main.getLogger().warning(refs.serial(refs.getFancyMsg("wwclLangNotLoadedConsole", new String[] {"&c"+eaStr}, "&e", null)));
+				continue;
 			}
+
+			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
 		}
 		main.getLogger().warning("Done.");
 	}
@@ -127,7 +132,10 @@ public class ConfigurationHandler {
 			}
 
 			/* Delete old config */
-			msgFile.delete();
+			if (msgFile.exists() && !msgFile.delete()) {
+				refs.debugMsg("Could not delete old messages file for " + inLocalLang + "! Perhaps bad permissions?");
+				return null;
+			}
 
 			/* Copy newest config */
 			main.saveResource("messages-" + inLocalLang + ".yml", true);
@@ -1128,6 +1136,10 @@ public class ConfigurationHandler {
 
 	public File getConfigFile() {
 		return configFile;
+	}
+
+	public ConcurrentHashMap<String, YamlConfiguration> getPluginLangConfigs() {
+		return pluginLangConfigs;
 	}
 
 }
