@@ -582,7 +582,7 @@ public class WorldwideChatTests {
 		assertEquals(plugin.getCache().estimatedSize(), 1);
 		testCommands.runConsoleTest("wwcd", new String[] {"cache", "clear"});
 		assertEquals(plugin.getCache().estimatedSize(), 0);
-		
+
 		/* Print finished message */
 		sendCompletedMessage();
 	}

@@ -50,13 +50,13 @@ public class WWCDebug extends BasicCommand {
                     mainConfig.set("General.enableDebugMode", true);
                     mainConfig.set("Translator.testModeTranslator", true);
                     refs.sendFancyMsg("wwcdDebugEnvEnabled", new String[]{}, "&a", sender);
-                    main.reload(true);
+                    main.reload(sender, true);
                     return true;
                 } else if (args[1].equalsIgnoreCase("disable")) {
                     mainConfig.set("General.enableDebugMode", false);
                     mainConfig.set("Translator.testModeTranslator", false);
                     refs.sendFancyMsg("wwcdDebugEnvDisabled", new String[]{}, "&a", sender);
-                    main.reload(true);
+                    main.reload(sender, true);
                     return true;
                 }
                 return invalidCmd(sender);
