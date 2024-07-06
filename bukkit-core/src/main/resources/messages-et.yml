@@ -585,4 +585,15 @@ Messages:
     et teie valitud andmebaasi/salvestusvõimalus oleks stabiilne!
   wwcSyncUserDataComplete: Edukalt salvestatud kasutajaandmed saidile {0}. {1}
   wwcSyncUserDataStart: Kasutajaandmete sünkroonimine...
+  wwcdDebugEnvDisabled: Silumiskeskkond on keelatud.
+  wwcdDebugEnvWarn: 'Silumiskeskkonna vahetamine pole peaaegu kunagi soovitatav, kui
+    te ei arenda seda pistikprogrammi või uurite viga. Kui soovite ikkagi jätkata,
+    tippige järgmine teave: {0}'
+  wwclLangNotLoadedConsole: '{0} ei saa praegu kasutada. Selle parandamiseks võite
+    proovida pistikprogrammi uuesti laadida, kuid kui see püsib, võtke ühendust arendajaga.'
+  wwcdDebugEnvEnabled: Silumiskeskkond on lubatud.
+  wwclLangNotLoaded: '{0} ei saa praegu kasutada. Proovige kasutada mõnda muud toetatud
+    lokaliseerimist: {1}'
+  wwcdDebugBadState: Seda silumiskäsku ei saa käivitada, kui WorldwideChatil pole
+    kehtivat tõlkikomplekti. Palun proovige hiljem uuesti.
 

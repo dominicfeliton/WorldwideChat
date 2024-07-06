@@ -610,4 +610,16 @@ Messages:
     dat u geselekteerde databasis/bergingsopsie stabiel is!
   wwcSyncUserDataComplete: Gebruikersdata suksesvol gestoor na {0}. {1}
   wwcSyncUserDataStart: Sinkronisering van gebruikersdata...
+  wwcdDebugEnvDisabled: Die ontfoutingsomgewing is gedeaktiveer.
+  wwcdDebugEnvWarn: 'Om die ontfoutingsomgewing te skakel, word byna nooit aanbeveel
+    nie, tensy u hierdie inprop ontwikkel/''n fout ondersoek. As u nog steeds wil
+    voortgaan, tik die volgende in: {0}'
+  wwclLangNotLoadedConsole: '{0} kan nie op die oomblik gebruik word nie. U kan probeer
+    om die plugin weer te laai om dit reg te stel, maar as dit voortduur, kontak asseblief
+    die ontwikkelaar.'
+  wwcdDebugEnvEnabled: Die ontfoutingsomgewing is geaktiveer.
+  wwclLangNotLoaded: '{0} kan nie op die oomblik gebruik word nie. Probeer om ''n
+    ander ondersteunde lokalisering te gebruik: {1}'
+  wwcdDebugBadState: Hierdie ontfoutingopdrag kan nie uitgevoer word terwyl WorldwideChat
+    nie 'n geldige vertalerstel het nie. Probeer asseblief later weer.
 

@@ -615,4 +615,16 @@ Messages:
     opcja bazy danych/pamięci masowej jest stabilna!
   wwcSyncUserDataComplete: Pomyślnie zapisano dane użytkownika w {0}. {1}
   wwcSyncUserDataStart: Synchronizowanie danych użytkownika...
+  wwcdDebugEnvDisabled: Środowisko debugowania zostało wyłączone.
+  wwcdDebugEnvWarn: 'Przełączanie środowiska debugowania prawie nigdy nie jest zalecane,
+    chyba że rozwijasz tę wtyczkę/badasz błąd. Jeśli nadal chcesz kontynuować, wpisz
+    następujące polecenie: {0}'
+  wwclLangNotLoadedConsole: '{0} nie może być użyty w tej chwili. Możesz spróbować
+    ponownie załadować wtyczkę, aby to naprawić, ale jeśli nadal będzie działać, skontaktuj
+    się z programistą.'
+  wwcdDebugEnvEnabled: Środowisko debugowania zostało włączone.
+  wwclLangNotLoaded: '{0} nie może być użyty w tej chwili. Spróbuj użyć innej obsługiwanej
+    lokalizacji: {1}'
+  wwcdDebugBadState: Tego polecenia debugowania nie można uruchomić, gdy WorldwideChat
+    nie ma prawidłowego zestawu tłumacza. Spróbuj ponownie później.
 

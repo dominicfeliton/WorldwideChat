@@ -645,4 +645,15 @@ Messages:
     il database/l'opzione di archiviazione selezionata sia stabile!
   wwcSyncUserDataComplete: Dati utente salvati con successo su {0}. {1}
   wwcSyncUserDataStart: Sincronizzazione dei dati utente...
+  wwcdDebugEnvDisabled: L'ambiente di debug è stato disabilitato.
+  wwcdDebugEnvWarn: 'La commutazione dell''ambiente di debug non è quasi mai consigliata
+    a meno che non si stia sviluppando questo plugin/indagando su un bug. Se vuoi
+    comunque procedere, digita quanto segue: {0}'
+  wwclLangNotLoadedConsole: '{0} non può essere usato in questo momento. Puoi provare
+    a ricaricare il plugin per risolvere il problema, ma se persiste contatta lo sviluppatore.'
+  wwcdDebugEnvEnabled: L'ambiente di debug è stato abilitato.
+  wwclLangNotLoaded: '{0} non può essere usato in questo momento. Prova a utilizzare
+    un''altra localizzazione supportata: {1}'
+  wwcdDebugBadState: Questo comando di debug non può essere eseguito se WorldwideChat
+    non dispone di un set di traduttori valido. Riprova più tardi.
 

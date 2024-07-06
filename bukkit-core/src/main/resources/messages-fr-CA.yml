@@ -663,4 +663,16 @@ Messages:
   wwcSyncUserDataComplete: Les données utilisateur ont été enregistrées avec succès
     au {0}. {1}
   wwcSyncUserDataStart: Synchronise des données utilisateur...
+  wwcdDebugEnvDisabled: L'environnement de débogage a été désactivé.
+  wwcdDebugEnvWarn: 'Il n''est presque jamais recommandé de passer à l''environnement
+    de débogage, sauf si vous développez ce plugin/enquêtez sur un bogue. Si vous
+    voulez quand même continuer, tapez ce qui suit: {0}'
+  wwclLangNotLoadedConsole: Le {0} ne peut pas être utilisé pour le moment. Vous pouvez
+    essayer de recharger le plugin pour résoudre ce problème, mais s'il persiste,
+    veuillez contacter le développeur.
+  wwcdDebugEnvEnabled: L'environnement de débogage a été activé.
+  wwclLangNotLoaded: 'Le {0} ne peut pas être utilisé pour le moment. Essayez d''utiliser
+    une autre localisation prise en charge: {1}'
+  wwcdDebugBadState: Cette commande de débogage ne peut pas être exécutée tant que
+    WorldwideChat n'a pas de traducteur valide défini. Veuillez réessayer plus tard.
 

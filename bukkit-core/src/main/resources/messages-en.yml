@@ -322,8 +322,8 @@ Messages:
   wwcdColumnMissing: 'Column {0} is missing in table {1}.'
   wwcdBadTable: 'Table {0} not found in internal definitions. Please contact the developer.'
   wwcdGoodTable: '{0} table ({1}) is the correct format.'
-  wwcdDebugEnvEnabled: 'The debug environment has been enabled. Reloading...'
-  wwcdDebugEnvDisabled: 'The debug environment has been disabled. Reloading...'
+  wwcdDebugEnvEnabled: 'The debug environment has been enabled.'
+  wwcdDebugEnvDisabled: 'The debug environment has been disabled.'
   wwcdDebugEnvWarn: 'Toggling the debug environment is almost never recommended unless you are developing this plugin/investigating a bug. If you still want to proceed, type the following: {0}'
   wwcdDebugBadState: 'This debug command cannot be ran while WorldwideChat does not have a valid translator set. Please try again later.'
   #------------------- /wwcs Messages -------------------

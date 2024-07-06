@@ -599,4 +599,16 @@ Messages:
     bahwa opsi database/penyimpanan yang Anda pilih stabil!
   wwcSyncUserDataComplete: Data pengguna berhasil disimpan ke {0}. {1}
   wwcSyncUserDataStart: Menyinkronkan data pengguna...
+  wwcdDebugEnvDisabled: Lingkungan debug telah dinonaktifkan.
+  wwcdDebugEnvWarn: 'Mengganti lingkungan debug hampir tidak pernah disarankan kecuali
+    Anda sedang mengembangkan plugin ini/menyelidiki bug. Jika Anda masih ingin melanjutkan,
+    ketik berikut ini: {0}'
+  wwclLangNotLoadedConsole: '{0} tidak dapat digunakan saat ini. Anda dapat mencoba
+    memuat ulang plugin untuk memperbaikinya, tetapi jika tetap ada, silakan hubungi
+    pengembang.'
+  wwcdDebugEnvEnabled: Lingkungan debug telah diaktifkan.
+  wwclLangNotLoaded: '{0} tidak dapat digunakan saat ini. Coba gunakan pelokalan lain
+    yang didukung: {1}'
+  wwcdDebugBadState: Perintah debug ini tidak dapat dijalankan saat WorldwideChat
+    tidak memiliki set penerjemah yang valid. Silakan coba lagi nanti.
 

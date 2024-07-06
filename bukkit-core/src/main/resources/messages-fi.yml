@@ -602,4 +602,16 @@ Messages:
   wwcSyncUserDataComplete: Käyttäjätiedot tallennettiin onnistuneesti kohtaan {0}.
     {1}
   wwcSyncUserDataStart: Käyttäjätietojen synkronointi...
+  wwcdDebugEnvDisabled: Virheenkorjausympäristö on poistettu käytöstä.
+  wwcdDebugEnvWarn: 'Virheenkorjausympäristön vaihtamista ei melkein koskaan suositella,
+    ellet kehitä tätä laajennusta tai tutki virhettä. Jos haluat edelleen jatkaa,
+    kirjoita seuraava: {0}'
+  wwclLangNotLoadedConsole: '{0} ei voi käyttää tällä hetkellä. Voit yrittää ladata
+    laajennuksen uudelleen tämän korjaamiseksi, mutta jos se jatkuu, ota yhteyttä
+    kehittäjään.'
+  wwcdDebugEnvEnabled: Virheenkorjausympäristö on otettu käyttöön.
+  wwclLangNotLoaded: '{0} ei voi käyttää tällä hetkellä. Kokeile toista tuettua lokalisointia:
+    {1}'
+  wwcdDebugBadState: Tätä virheenkorjauskomentoa ei voida suorittaa, kun WorldwideChatissa
+    ei ole kelvollista kääntäjäjoukkoa. Yritä myöhemmin uudelleen.
 

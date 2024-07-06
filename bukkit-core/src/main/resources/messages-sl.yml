@@ -614,4 +614,15 @@ Messages:
     je izbrana podatkovna baza/možnost shranjevanja stabilna!
   wwcSyncUserDataComplete: Uspešno shranjeni uporabniški podatki v {0}. {1}
   wwcSyncUserDataStart: Sinhronizacija uporabniških podatkov...
+  wwcdDebugEnvDisabled: Okolje za odpravljanje napak je onemogočeno.
+  wwcdDebugEnvWarn: 'Preklapljanje okolja za odpravljanje napak skoraj nikoli ni priporočljivo,
+    razen če razvijate ta vtičnik/preiskujete napako. Če še vedno želite nadaljevati,
+    vnesite naslednje: {0}'
+  wwclLangNotLoadedConsole: '{0} trenutno ni mogoče uporabiti. Če želite to popraviti,
+    lahko poskusite znova naložiti vtičnik, če pa vztraja, se obrnite na razvijalca.'
+  wwcdDebugEnvEnabled: Okolje za odpravljanje napak je bilo omogočeno.
+  wwclLangNotLoaded: '{0} trenutno ni mogoče uporabiti. Poskusite uporabiti drugo
+    podprto lokalizacijo: {1}'
+  wwcdDebugBadState: Tega ukaza za odpravljanje napak ni mogoče zagnati, medtem ko
+    WorldwideChat nima veljavnega nabora prevajalcev. Prosimo, poskusite znova kasneje.
 

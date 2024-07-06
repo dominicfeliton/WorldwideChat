@@ -623,4 +623,15 @@ Messages:
     meg róla, hogy a kiválasztott adatbázis-/tárolási lehetőség stabil legyen!
   wwcSyncUserDataComplete: Sikeresen mentette a felhasználói adatokat a {0} -re. {1}
   wwcSyncUserDataStart: Felhasználói adatok szinkronizálása...
+  wwcdDebugEnvDisabled: A hibakeresési környezet le van tiltva.
+  wwcdDebugEnvWarn: 'A hibakeresési környezet váltása szinte soha nem ajánlott, hacsak
+    nem fejleszti ezt a plugint/hibát vizsgálja. Ha továbbra is folytatni szeretné,
+    írja be a következőt: {0}'
+  wwclLangNotLoadedConsole: A {0} jelenleg nem használható. Megpróbálhatja újratölteni
+    a bővítményt ennek kijavításához, de ha továbbra is fennáll, forduljon a fejlesztőhöz.
+  wwcdDebugEnvEnabled: A hibakeresési környezet engedélyezve van.
+  wwclLangNotLoaded: 'A {0} jelenleg nem használható. Próbáljon meg egy másik támogatott
+    lokalizációt használni: {1}'
+  wwcdDebugBadState: Ezt a hibakeresési parancsot nem lehet futtatni, amíg a WorldwideChat
+    nem rendelkezik érvényes fordítókészlettel. Kérjük, próbálkozzon újra később.
 

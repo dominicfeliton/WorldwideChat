@@ -606,4 +606,16 @@ Messages:
     veritabanının/depolama seçeneğinin kararlı olduğundan emin olun!
   wwcSyncUserDataComplete: Kullanıcı verileri başarıyla {0} 'e kaydedildi. {1}
   wwcSyncUserDataStart: Kullanıcı verilerini senkronize ediyor...
+  wwcdDebugEnvDisabled: Hata ayıklama ortamı devre dışı bırakıldı.
+  wwcdDebugEnvWarn: 'Bu eklentiyi geliştirmediğiniz/bir hatayı araştırmadığınız sürece
+    hata ayıklama ortamını değiştirmek neredeyse hiç önerilmez. Hala devam etmek istiyorsanız,
+    aşağıdakileri yazın: {0}'
+  wwclLangNotLoadedConsole: '{0} şu anda kullanılamaz. Bunu düzeltmek için eklentiyi
+    yeniden yüklemeyi deneyebilirsiniz, ancak devam ederse lütfen geliştiriciyle iletişime
+    geçin.'
+  wwcdDebugEnvEnabled: Hata ayıklama ortamı etkinleştirildi.
+  wwclLangNotLoaded: '{0} şu anda kullanılamaz. Desteklenen farklı bir yerelleştirme
+    kullanmayı deneyin: {1}'
+  wwcdDebugBadState: WorldwideChat'te geçerli bir çevirmen seti yoksa bu hata ayıklama
+    komutu çalıştırılamaz. Lütfen daha sonra tekrar deneyin.
 

@@ -665,4 +665,16 @@ Messages:
   wwcSyncUserDataComplete: Los datos de usuario se guardaron correctamente en {0}.
     {1}
   wwcSyncUserDataStart: Sincronizando datos de usuario...
+  wwcdDebugEnvDisabled: Se ha desactivado el entorno de depuración.
+  wwcdDebugEnvWarn: 'Casi nunca se recomienda cambiar el entorno de depuración, a
+    menos que esté desarrollando este complemento o investigando un error. Si aún
+    quieres continuar, escribe lo siguiente: {0}'
+  wwclLangNotLoadedConsole: '{0} no se puede usar en este momento. Puedes intentar
+    volver a cargar el plugin para solucionarlo, pero si persiste, ponte en contacto
+    con el desarrollador.'
+  wwcdDebugEnvEnabled: Se ha habilitado el entorno de depuración.
+  wwclLangNotLoaded: '{0} no se puede usar en este momento. Intente usar una localización
+    compatible diferente: {1}'
+  wwcdDebugBadState: Este comando de depuración no se puede ejecutar mientras WorldwideChat
+    no tenga un conjunto de traductores válido. Vuelva a intentarlo más tarde.
 

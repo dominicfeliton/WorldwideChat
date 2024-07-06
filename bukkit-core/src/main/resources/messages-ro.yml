@@ -640,4 +640,17 @@ Messages:
     că opțiunea de bază/stocare selectată este stabilă!
   wwcSyncUserDataComplete: S-au salvat cu succes datele utilizatorului în {0}. {1}
   wwcSyncUserDataStart: Sincronizarea datelor utilizatorului...
+  wwcdDebugEnvDisabled: Mediul de depanare a fost dezactivat.
+  wwcdDebugEnvWarn: 'Comutarea mediului de depanare nu este aproape niciodată recomandată
+    decât dacă dezvoltați acest plugin/investigați o eroare. Dacă totuși doriți să
+    continuați, tastați următoarele: {0}'
+  wwclLangNotLoadedConsole: '{0} nu poate fi utilizat în acest moment. Puteți încerca
+    să reîncărcați pluginul pentru a remedia acest lucru, dar dacă persistă vă rugăm
+    să contactați dezvoltatorul.'
+  wwcdDebugEnvEnabled: Mediul de depanare a fost activat.
+  wwclLangNotLoaded: '{0} nu poate fi utilizat în acest moment. Încercați să utilizați
+    o altă localizare acceptată: {1}'
+  wwcdDebugBadState: Această comandă de depanare nu poate fi executată în timp ce
+    WorldwideChat nu are un set de traducător valid. Vă rugăm să încercați din nou
+    mai târziu.
 

@@ -608,4 +608,15 @@ Messages:
     ka izvēlētā datu bāzes/glabāšanas opcija ir stabila!
   wwcSyncUserDataComplete: Veiksmīgi saglabāti lietotāja dati uz {0}. {1}
   wwcSyncUserDataStart: Lietotāja datu sinhronizēšana...
+  wwcdDebugEnvDisabled: Atkļūdošanas vide ir atspējota.
+  wwcdDebugEnvWarn: 'Atkļūdošanas vides pārslēgšana gandrīz nekad nav ieteicama, ja
+    vien neizstrādājat šo spraudni/izmeklējat kļūdu. Ja joprojām vēlaties turpināt,
+    ierakstiet sekojošo: {0}'
+  wwclLangNotLoadedConsole: '{0} šobrīd nevar izmantot. Varat mēģināt pārlādēt spraudni,
+    lai to labotu, bet, ja tas saglabājas, lūdzu, sazinieties ar izstrādātāju.'
+  wwcdDebugEnvEnabled: Atkļūdošanas vide ir iespējota.
+  wwclLangNotLoaded: '{0} šobrīd nevar izmantot. Mēģiniet izmantot citu atbalstītu
+    lokalizāciju: {1}'
+  wwcdDebugBadState: Šo atkļūdošanas komandu nevar palaist, kamēr WorldwideChat nav
+    derīga tulkotāja kopas. Lūdzu, mēģiniet vēlreiz vēlāk.
 

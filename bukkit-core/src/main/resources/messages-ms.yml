@@ -603,4 +603,16 @@ Messages:
     pangkalan data/storan yang anda pilih stabil!
   wwcSyncUserDataComplete: Berjaya menyimpan data pengguna ke {0}. {1}
   wwcSyncUserDataStart: Menyelaraskan data pengguna...
+  wwcdDebugEnvDisabled: Persekitaran debug telah dilumpuhkan.
+  wwcdDebugEnvWarn: 'Menukar persekitaran debug hampir tidak pernah disyorkan kecuali
+    anda mengembangkan plugin ini/menyiasat bug. Jika anda masih mahu meneruskan,
+    taipkan perkara berikut: {0}'
+  wwclLangNotLoadedConsole: '{0} tidak boleh digunakan pada masa ini. Anda boleh cuba
+    memuat semula plugin untuk memperbaikinya, tetapi jika ia berterusan sila hubungi
+    pemaju.'
+  wwcdDebugEnvEnabled: Persekitaran debug telah diaktifkan.
+  wwclLangNotLoaded: '{0} tidak boleh digunakan pada masa ini. Cuba gunakan penyetempatan
+    yang disokong yang berbeza: {1}'
+  wwcdDebugBadState: Perintah debug ini tidak boleh dijalankan sementara WorldwideChat
+    tidak mempunyai set penterjemah yang sah. Sila cuba lagi nanti.
 

@@ -503,4 +503,13 @@ Messages:
     확인하십시오!
   wwcSyncUserDataComplete: 사용자 데이터를 {0} 에 성공적으로 저장했습니다.{1}
   wwcSyncUserDataStart: 사용자 데이터 동기화 중...
+  wwcdDebugEnvDisabled: 디버그 환경이 비활성화되었습니다.
+  wwcdDebugEnvWarn: 이 플러그인을 개발하거나 버그를 조사하지 않는 한 디버그 환경을 전환하는 것은 거의 권장되지 않습니다.계속 진행하려면
+    다음을 입력하세요. {0}
+  wwclLangNotLoadedConsole: '{0} 은 (는) 지금은 사용할 수 없습니다.이 문제를 해결하기 위해 플러그인을 다시 로드해 볼
+    수 있지만 문제가 지속되면 개발자에게 문의하세요.'
+  wwcdDebugEnvEnabled: 디버그 환경이 활성화되었습니다.
+  wwclLangNotLoaded: '{0} 은 (는) 지금은 사용할 수 없습니다.지원되는 다른 현지화를 사용해 보세요: {1}'
+  wwcdDebugBadState: WorldwideChat에 유효한 변환기 세트가 없는 동안에는 이 디버그 명령을 실행할 수 없습니다.나중에 다시
+    시도해 주세요.
 

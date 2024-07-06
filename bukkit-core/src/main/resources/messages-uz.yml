@@ -634,4 +634,17 @@ Messages:
   wwcSyncUserDataComplete: Foydalanuvchi ma'lumotlarini {0} ga muvaffaqiyatli saqlandi.
     {1}
   wwcSyncUserDataStart: Foydalanuvchi ma'lumotlarini sinxronlashtirish...
+  wwcdDebugEnvDisabled: Disk raskadrovka muhiti o'chirib qo'yildi.
+  wwcdDebugEnvWarn: 'Ushbu plaginni ishlab chiqmayotganingizda/xatoni tergov qilmaguningizcha,
+    disk raskadrovka muhitini almashtirish deyarli hech qachon tavsiya etilmaydi.
+    Agar siz hali ham davom ettirishni xohlasangiz, quyidagilarni yozing: {0}'
+  wwclLangNotLoadedConsole: Hozirda {0} dan foydalanish mumkin emas. Buni tuzatish
+    uchun plaginni qayta yuklashni sinab ko'rishingiz mumkin, lekin agar u davom etsa
+    iltimos ishlab chiquvchiga murojaat qiling.
+  wwcdDebugEnvEnabled: Disk raskadrovka muhiti yoqilgan.
+  wwclLangNotLoaded: 'Hozirda {0} dan foydalanish mumkin emas. Boshqa qo''llab-quvvatlanadigan
+    lokalizatsiyadan foydalanishga harakat qilib ko''ring: {1}'
+  wwcdDebugBadState: WorldwideChat-da haqiqiy tarjimon majmui mavjud bo'lmaganda ushbu
+    disk raskadrovka buyrug'ini ishga tushirish mumkin emas. Iltimos, keyinroq qayta
+    urinib ko'ring.
 

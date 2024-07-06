@@ -680,4 +680,16 @@ Messages:
     matatag ang iyong napiling pagpipilian sa database/storage!
   wwcSyncUserDataComplete: Matagumpay na nai-save ang data ng gumagamit sa {0}. {1}
   wwcSyncUserDataStart: Pag-sync ng data ng gumagamit...
+  wwcdDebugEnvDisabled: Hindi pinagana ang kapaligiran ng debug.
+  wwcdDebugEnvWarn: 'Halos hindi inirerekomenda ang pag-toggle sa kapaligiran ng debug
+    maliban kung binubuo mo ang plugin na ito/nagsisiyasat ng isang bug. Kung nais
+    mo pa ring magpatuloy, i-type ang sumusunod: {0}'
+  wwclLangNotLoadedConsole: Ang {0} ay hindi maaaring gamitin sa oras na ito. Maaari
+    mong subukang muling i-load ang plugin upang ayusin ito, ngunit kung magpapatuloy
+    ito mangyaring makipag-ugnay sa developer.
+  wwcdDebugEnvEnabled: Pinagana ang kapaligiran ng debug.
+  wwclLangNotLoaded: 'Ang {0} ay hindi maaaring gamitin sa oras na ito. Subukang gumamit
+    ng ibang suportadong lokalisasyon: {1}'
+  wwcdDebugBadState: Hindi maaaring patakbuhin ang utos ng debug na ito habang ang
+    WorldwideChat ay walang wastong hanay ng tagasalin. Mangyaring subukang muli mamaya.
 

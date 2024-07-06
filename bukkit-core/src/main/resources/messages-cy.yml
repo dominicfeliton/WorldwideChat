@@ -613,4 +613,15 @@ Messages:
     cronfa ddata/storio a ddewiswyd yn sefydlog!
   wwcSyncUserDataComplete: Cadwyd data defnyddwyr yn llwyddiannus i {0}. {1}
   wwcSyncUserDataStart: Cysoni data defnyddwyr...
+  wwcdDebugEnvDisabled: Mae'r amgylchedd dadfygio wedi'i analluogi.
+  wwcdDebugEnvWarn: 'Bron byth yn argymell togly''r amgylchedd dadfygio oni bai eich
+    bod yn datblygu''r ategyn hwn/ymchwilio i nam. Os ydych chi am fynd ymlaen o hyd,
+    teipiwch y canlynol: {0}'
+  wwclLangNotLoadedConsole: Ni ellir defnyddio {0} ar hyn o bryd. Gallwch geisio ail-lwytho'r
+    ategyn i drwsio hyn, ond os yw'n parhau cysylltwch â'r datblygwr.
+  wwcdDebugEnvEnabled: Mae'r amgylchedd dadfygio wedi'i alluogi.
+  wwclLangNotLoaded: 'Ni ellir defnyddio {0} ar hyn o bryd. Ceisiwch ddefnyddio lleoleiddio
+    â chymorth gwahanol: {1}'
+  wwcdDebugBadState: Ni ellir rhedeg y gorchymyn dadfygio hwn tra nad oes gan WorldwideChat
+    set cyfieithydd dilys. Rhowch gynnig eto yn ddiweddarach.
 

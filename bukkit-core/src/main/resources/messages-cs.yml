@@ -607,4 +607,15 @@ Messages:
     možnost databáze/úložiště je stabilní!
   wwcSyncUserDataComplete: Úspěšně uložena uživatelská data do {0}. {1}
   wwcSyncUserDataStart: Synchronizace uživatelských dat...
+  wwcdDebugEnvDisabled: Prostředí ladění bylo deaktivováno.
+  wwcdDebugEnvWarn: 'Přepínání ladicího prostředí se téměř nikdy nedoporučuje, pokud
+    nevyvíjíte tento plugin/nevyšetřujete chybu. Pokud chcete pokračovat, zadejte
+    následující: {0}'
+  wwclLangNotLoadedConsole: '{0} v tuto chvíli nelze použít. Chcete-li to opravit,
+    můžete zkusit znovu načíst plugin, ale pokud přetrvává, kontaktujte vývojáře.'
+  wwcdDebugEnvEnabled: Prostředí ladění bylo povoleno.
+  wwclLangNotLoaded: '{0} v tuto chvíli nelze použít. Zkuste použít jinou podporovanou
+    lokalizaci: {1}'
+  wwcdDebugBadState: Tento ladicí příkaz nelze spustit, pokud WorldwideChat nemá platnou
+    sadu překladače. Zkuste to prosím znovu později.
 

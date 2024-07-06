@@ -617,4 +617,16 @@ Messages:
     kad jūsų pasirinkta duomenų bazė/saugojimo parinktis yra stabili!
   wwcSyncUserDataComplete: Sėkmingai išsaugoti vartotojo duomenys į {0}. {1}
   wwcSyncUserDataStart: Vartotojo duomenų sinchronizavimas...
+  wwcdDebugEnvDisabled: Derinimo aplinka buvo išjungta.
+  wwcdDebugEnvWarn: 'Derinimo aplinkos perjungimas beveik niekada nerekomenduojamas,
+    nebent kuriate šį papildinį/tiriate klaidą. Jei vis tiek norite tęsti, įveskite:
+    {0}'
+  wwclLangNotLoadedConsole: Šiuo metu negalima naudoti {0}. Galite pabandyti iš naujo
+    įkelti įskiepį, kad tai ištaisytumėte, tačiau jei jis išlieka, susisiekite su
+    kūrėju.
+  wwcdDebugEnvEnabled: Derinimo aplinka buvo įjungta.
+  wwclLangNotLoaded: 'Šiuo metu negalima naudoti {0}. Pabandykite naudoti kitą palaikomą
+    lokalizaciją: {1}'
+  wwcdDebugBadState: Šios derinimo komandos negalima paleisti, kol WorldwideChat neturi
+    galiojančio vertėjo rinkinio. Pabandykite dar kartą vėliau.
 

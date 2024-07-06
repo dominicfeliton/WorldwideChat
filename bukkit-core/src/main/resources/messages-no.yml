@@ -589,4 +589,16 @@ Messages:
     database/lagringsalternativet ditt er stabilt!
   wwcSyncUserDataComplete: Lagrede brukerdata i {0}. {1}
   wwcSyncUserDataStart: Synkroniserer brukerdata...
+  wwcdDebugEnvDisabled: Feilsøkingsmiljøet er deaktivert.
+  wwcdDebugEnvWarn: 'Å bytte feilsøkingsmiljø anbefales nesten aldri med mindre du
+    utvikler denne plugin/undersøker en feil. Hvis du fortsatt vil fortsette, skriver
+    du inn følgende: {0}'
+  wwclLangNotLoadedConsole: '{0} kan ikke brukes på dette tidspunktet. Du kan prøve
+    å laste inn pluginet på nytt for å fikse dette, men hvis det vedvarer, vennligst
+    kontakt utvikleren.'
+  wwcdDebugEnvEnabled: Feilsøkingsmiljøet er aktivert.
+  wwclLangNotLoaded: '{0} kan ikke brukes på dette tidspunktet. Prøv å bruke en annen
+    støttet lokalisering: {1}'
+  wwcdDebugBadState: Denne feilsøkingskommandoen kan ikke kjøres mens WorldwideChat
+    ikke har et gyldig oversettersett. Vennligst prøv igjen senere.
 

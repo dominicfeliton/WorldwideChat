@@ -640,4 +640,16 @@ Messages:
   wwcSyncUserDataComplete: Të dhënat e përdoruesit janë ruajtur me sukses në {0}.
     {1}
   wwcSyncUserDataStart: Sinkronizimi i të dhënave të përdoruesit
+  wwcdDebugEnvDisabled: Mjedisi i korrigjimit të gabimeve është çaktivizuar.
+  wwcdDebugEnvWarn: 'Ndërrimi i mjedisit të korrigjimit të gabimeve pothuajse kurrë
+    nuk rekomandohet përveç nëse po zhvilloni këtë shtojcë/hetoni një bug. Nëse ende
+    dëshironi të vazhdoni, shkruani sa vijon: {0}'
+  wwclLangNotLoadedConsole: '{0} nuk mund të përdoret në këtë kohë. Ju mund të provoni
+    të rimbushni shtojcën për të rregulluar këtë, por nëse vazhdon, ju lutemi kontaktoni
+    zhvilluesin.'
+  wwcdDebugEnvEnabled: Mjedisi i korrigjimit të gabimeve është aktivizuar.
+  wwclLangNotLoaded: '{0} nuk mund të përdoret në këtë kohë. Provoni të përdorni një
+    lokalizim tjetër të mbështetur: {1}'
+  wwcdDebugBadState: Kjo komandë korrigjimi nuk mund të ekzekutohet ndërsa WorldwideChat
+    nuk ka një grup përkthyes të vlefshëm. Ju lutemi provoni përsëri më vonë.
 

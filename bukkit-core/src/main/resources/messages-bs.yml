@@ -607,4 +607,15 @@ Messages:
     li odabrana opcija baze podataka/skladištenja stabilna!
   wwcSyncUserDataComplete: Uspješno sačuvani korisnički podaci na {0}. {1}
   wwcSyncUserDataStart: Sinkronizacija korisničkih podataka...
+  wwcdDebugEnvDisabled: Okruženje za ispravljanje pogrešaka je onemogućeno.
+  wwcdDebugEnvWarn: 'Prebacivanje okruženja za uklanjanje pogrešaka gotovo se nikada
+    ne preporučuje osim ako ne razvijate ovaj dodatak/istražujete grešku. Ako i dalje
+    želite nastaviti, upišite sljedeće: {0}'
+  wwclLangNotLoadedConsole: '{0} se trenutno ne može koristiti. Možete pokušati ponovno
+    učitati dodatak da biste to popravili, ali ako se nastavi, kontaktirajte programera.'
+  wwcdDebugEnvEnabled: Omogućeno je okruženje za ispravljanje pogrešaka.
+  wwclLangNotLoaded: '{0} se trenutno ne može koristiti. Pokušajte koristiti drugu
+    podržanu lokalizaciju: {1}'
+  wwcdDebugBadState: Ova naredba za ispravljanje pogrešaka ne može se pokrenuti dok
+    WorldwideChat nema valjani skup prevoditelja. Pokušajte ponovo kasnije.
 

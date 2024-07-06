@@ -468,4 +468,10 @@ Messages:
   wwcCouldNotSaveOhNo: 無法保存全球微信數據... 請確保您選擇的數據庫/存儲選項穩定！
   wwcSyncUserDataComplete: 成功將使用者資料儲存到 {0}。{1}
   wwcSyncUserDataStart: 正在同步使用者資料...
+  wwcdDebugEnvDisabled: 除錯環境已停用。
+  wwcdDebugEnvWarn: 除非您正在開發此插件/調查錯誤，否則幾乎從不建議切換調試環境。如果您仍然想繼續，請輸入以下內容：{0}
+  wwclLangNotLoadedConsole: '{0} 目前無法使用。您可以嘗試重新加載插件來解決此問題，但如果仍然存在，請聯繫開發人員。'
+  wwcdDebugEnvEnabled: 除錯環境已啟用。
+  wwclLangNotLoaded: '{0} 目前無法使用。嘗試使用其他支援的本地化：{1}'
+  wwcdDebugBadState: 當全球微信沒有有效的翻譯器設置時，無法執行此除錯命令。請稍後再試一次。
 

@@ -628,4 +628,16 @@ Messages:
     de geselecteerde database/opslagoptie stabiel is!
   wwcSyncUserDataComplete: Gebruikersgegevens succesvol opgeslagen in {0}. {1}
   wwcSyncUserDataStart: Gebruikersgegevens synchroniseren...
+  wwcdDebugEnvDisabled: De foutopsporingsomgeving is uitgeschakeld.
+  wwcdDebugEnvWarn: 'Het omschakelen van de debugomgeving wordt bijna nooit aanbevolen,
+    tenzij u deze plug-in ontwikkelt/een bug onderzoekt. Als je nog steeds door wilt
+    gaan, typ dan het volgende: {0}'
+  wwclLangNotLoadedConsole: '{0} kan op dit moment niet worden gebruikt. Je kunt proberen
+    de plug-in opnieuw te laden om dit op te lossen, maar als het probleem zich blijft
+    voordoen, neem dan contact op met de ontwikkelaar.'
+  wwcdDebugEnvEnabled: De foutopsporingsomgeving is ingeschakeld.
+  wwclLangNotLoaded: '{0} kan op dit moment niet worden gebruikt. Probeer een andere
+    ondersteunde lokalisatie te gebruiken: {1}'
+  wwcdDebugBadState: Deze debug-opdracht kan niet worden uitgevoerd als WorldwideChat
+    geen geldige vertalerset heeft. Probeer het later opnieuw.
 
