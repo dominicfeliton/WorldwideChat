@@ -628,4 +628,11 @@ Messages:
     một bản địa hóa được hỗ trợ khác: {1}'
   wwcdDebugBadState: Lệnh gỡ lỗi này không thể chạy trong khi WorldwideChat không
     có bộ dịch hợp lệ. Vui lòng thử lại sau.
+  wwcNoVaultOnFolia: Vault hiện không được hỗ trợ trên Folia. Điều này có thể phá
+    vỡ khả năng tương thích với các plugin trò chuyện khác.
+  wwcNoVaultPlugin: Vault chưa được cài đặt! Điều này có thể phá vỡ khả năng tương
+    thích với các plugin trò chuyện đã cài đặt khác.
+  wwcVaultChatProviderFound: 'Tìm thấy nhà cung cấp trò chuyện Vault: {0}.'
+  wwcNoVaultChatProvider: Vault đã được cài đặt, nhưng không có nhà cung cấp trò chuyện
+    được hỗ trợ nào được phát hiện.
 

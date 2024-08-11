@@ -629,4 +629,11 @@ Messages:
     lokalizaciją: {1}'
   wwcdDebugBadState: Šios derinimo komandos negalima paleisti, kol WorldwideChat neturi
     galiojančio vertėjo rinkinio. Pabandykite dar kartą vėliau.
+  wwcNoVaultOnFolia: Šiuo metu “Vault” nepalaikomas “Folia”. Tai gali sugadinti suderinamumą
+    su kitais pokalbių papildiniais.
+  wwcNoVaultPlugin: Vault neįdiegtas! Tai gali sugadinti suderinamumą su kitais įdiegtais
+    pokalbių papildiniais.
+  wwcVaultChatProviderFound: 'Rado “Vault” pokalbių teikėją: {0}.'
+  wwcNoVaultChatProvider: Vault įdiegtas, tačiau nebuvo aptiktas palaikomas pokalbių
+    teikėjas.
 

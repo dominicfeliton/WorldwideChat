@@ -512,4 +512,8 @@ Messages:
   wwclLangNotLoaded: '{0} 은 (는) 지금은 사용할 수 없습니다.지원되는 다른 현지화를 사용해 보세요: {1}'
   wwcdDebugBadState: WorldwideChat에 유효한 변환기 세트가 없는 동안에는 이 디버그 명령을 실행할 수 없습니다.나중에 다시
     시도해 주세요.
+  wwcNoVaultOnFolia: Vault는 현재 Folia에서 지원되지 않습니다.이로 인해 다른 채팅 플러그인과의 호환성이 깨질 수 있습니다.
+  wwcNoVaultPlugin: Vault가 설치되지 않았습니다!이로 인해 설치된 다른 채팅 플러그인과의 호환성이 손상될 수 있습니다.
+  wwcVaultChatProviderFound: 'Vault 채팅 제공업체를 찾았습니다: {0}.'
+  wwcNoVaultChatProvider: Vault가 설치되었지만 지원되는 채팅 공급자가 검색되지 않았습니다.
 

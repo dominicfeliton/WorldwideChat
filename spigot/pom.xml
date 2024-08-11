@@ -4,7 +4,7 @@
 
   <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat-spigot</artifactId>
-  <version>1.17.5</version>
+  <version>1.18.0</version>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -28,8 +28,14 @@
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.17.5</version>
+      <version>1.18.0</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.MilkBowl</groupId>
+      <artifactId>VaultAPI</artifactId>
+      <version>1.7</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
@@ -47,6 +53,10 @@
     <repository>
       <id>papermc</id>
       <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
 

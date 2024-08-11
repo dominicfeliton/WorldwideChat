@@ -666,4 +666,11 @@ Messages:
     compatible diferente: {1}'
   wwcdDebugBadState: Este comando de depuración no se puede ejecutar mientras WorldwideChat
     no tenga un traductor válido configurado. Vuelva a intentarlo más tarde.
+  wwcNoVaultOnFolia: Actualmente, Vault no es compatible con Folia. Esto puede romper
+    la compatibilidad con otros plugins de chat.
+  wwcNoVaultPlugin: ¡Vault no está instalado! Esto puede romper la compatibilidad
+    con otros complementos de chat instalados.
+  wwcVaultChatProviderFound: 'Se ha encontrado un proveedor de chat de Vault: {0}.'
+  wwcNoVaultChatProvider: Vault está instalado, pero no se ha detectado ningún proveedor
+    de chat compatible.
 

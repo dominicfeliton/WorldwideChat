@@ -634,4 +634,10 @@ Messages:
     lokalizációt használni: {1}'
   wwcdDebugBadState: Ezt a hibakeresési parancsot nem lehet futtatni, amíg a WorldwideChat
     nem rendelkezik érvényes fordítókészlettel. Kérjük, próbálkozzon újra később.
+  wwcNoVaultOnFolia: A Vault jelenleg nem támogatja a Folia. Ez megszakíthatja a kompatibilitást
+    más csevegési bővítményekkel.
+  wwcNoVaultPlugin: A Vault nincs telepítve! Ez megszakíthatja a kompatibilitást más
+    telepített csevegőbővítményekkel.
+  wwcVaultChatProviderFound: 'Talált egy Vault csevegőszolgáltatót: {0}.'
+  wwcNoVaultChatProvider: A Vault telepítve van, de nem észleltek támogatott csevegőszolgáltatót.
 

@@ -614,4 +614,11 @@ Messages:
     {1}'
   wwcdDebugBadState: Tätä virheenkorjauskomentoa ei voida suorittaa, kun WorldwideChatissa
     ei ole kelvollista kääntäjäjoukkoa. Yritä myöhemmin uudelleen.
+  wwcNoVaultOnFolia: Vaultia ei tällä hetkellä tueta Foliassa. Tämä voi rikkoa yhteensopivuuden
+    muiden chat-laajennusten kanssa.
+  wwcNoVaultPlugin: Vaulua ei ole asennettu! Tämä voi rikkoa yhteensopivuuden muiden
+    asennettujen chat-laajennusten kanssa.
+  wwcVaultChatProviderFound: 'Löytyi Vault-chat-palveluntarjoaja: {0}.'
+  wwcNoVaultChatProvider: Vault on asennettu, mutta tuettua chat-palveluntarjoajaa
+    ei ole havaittu.
 

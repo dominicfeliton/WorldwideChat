@@ -601,4 +601,11 @@ Messages:
     støttet lokalisering: {1}'
   wwcdDebugBadState: Denne feilsøkingskommandoen kan ikke kjøres mens WorldwideChat
     ikke har et gyldig oversettersett. Vennligst prøv igjen senere.
+  wwcNoVaultOnFolia: Vault støttes for øyeblikket ikke på Folia. Dette kan ødelegge
+    kompatibiliteten med andre chat-plugins.
+  wwcNoVaultPlugin: Vault er ikke installert! Dette kan ødelegge kompatibiliteten
+    med andre installerte chat-plugins.
+  wwcVaultChatProviderFound: 'Fant en Vault-chatleverandør: {0}.'
+  wwcNoVaultChatProvider: Vault er installert, men ingen støttet chat-leverandør har
+    blitt oppdaget.
 

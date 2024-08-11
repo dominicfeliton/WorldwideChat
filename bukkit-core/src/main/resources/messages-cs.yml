@@ -618,4 +618,11 @@ Messages:
     lokalizaci: {1}'
   wwcdDebugBadState: Tento ladicí příkaz nelze spustit, pokud WorldwideChat nemá platnou
     sadu překladače. Zkuste to prosím znovu později.
+  wwcNoVaultOnFolia: Aplikace Vault není v současné době na Folia podporována. To
+    může narušit kompatibilitu s jinými pluginy chatu.
+  wwcNoVaultPlugin: Vault není nainstalován! To může narušit kompatibilitu s jinými
+    nainstalovanými pluginy chatu.
+  wwcVaultChatProviderFound: 'Nalezen poskytovatele chatu Vault: {0}.'
+  wwcNoVaultChatProvider: Vault je nainstalován, ale nebyl zjištěn žádný podporovaný
+    poskytovatel chatu.
 

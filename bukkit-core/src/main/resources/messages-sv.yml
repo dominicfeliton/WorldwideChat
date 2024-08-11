@@ -627,4 +627,11 @@ Messages:
     som stöds: {1}'
   wwcdDebugBadState: Det här felsökningskommandot kan inte köras medan WorldwideChat
     inte har en giltig översättaruppsättning. Försök igen senare.
+  wwcNoVaultOnFolia: Valv stöds för närvarande inte på Folia. Detta kan bryta kompatibiliteten
+    med andra chattplugins.
+  wwcNoVaultPlugin: Vault är inte installerat! Detta kan bryta kompatibiliteten med
+    andra installerade chattplugins.
+  wwcVaultChatProviderFound: 'Hittade en Vault-chattleverantör: {0}.'
+  wwcNoVaultChatProvider: Vault är installerat, men ingen chattleverantör som stöds
+    har upptäckts.
 

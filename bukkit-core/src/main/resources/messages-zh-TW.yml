@@ -474,4 +474,8 @@ Messages:
   wwcdDebugEnvEnabled: 除錯環境已啟用。
   wwclLangNotLoaded: '{0} 目前無法使用。嘗試使用其他支援的本地化：{1}'
   wwcdDebugBadState: 當全球微信沒有有效的翻譯器設置時，無法執行此除錯命令。請稍後再試一次。
+  wwcNoVaultOnFolia: Folia 目前不支援保管庫。這可能會破壞與其他聊天插件的兼容性。
+  wwcNoVaultPlugin: 未安裝保險箱！這可能會破壞與其他安裝的聊天插件的兼容性。
+  wwcVaultChatProviderFound: 找到保管庫聊天提供者：{0}。
+  wwcNoVaultChatProvider: 已安裝 Vault，但未偵測到支援的聊天提供者。
 

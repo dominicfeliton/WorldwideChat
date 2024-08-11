@@ -656,4 +656,11 @@ Messages:
     un''altra localizzazione supportata: {1}'
   wwcdDebugBadState: Questo comando di debug non può essere eseguito se WorldwideChat
     non dispone di un set di traduttori valido. Riprova più tardi.
+  wwcNoVaultOnFolia: Vault non è attualmente supportato su Folia. Ciò potrebbe compromettere
+    la compatibilità con altri plugin di chat.
+  wwcNoVaultPlugin: Vault non è installato! Ciò potrebbe compromettere la compatibilità
+    con altri plugin di chat installati.
+  wwcVaultChatProviderFound: 'Ho trovato un provider di chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault è installato, ma non è stato rilevato alcun provider
+    di chat supportato.
 

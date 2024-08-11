@@ -472,4 +472,8 @@ Messages:
   wwcdDebugEnvEnabled: 调试环境已启用。
   wwclLangNotLoaded: '{0} 此时无法使用。尝试使用其他支持的本地化：{1}'
   wwcdDebugBadState: 在 WorldwideChat 没有有效的转换器集合时，无法运行此调试命令。请稍后再试。
+  wwcNoVaultOnFolia: Folia 目前不支持保管库。这可能会破坏与其他聊天插件的兼容性。
+  wwcNoVaultPlugin: 保管库未安装！这可能会破坏与其他已安装的聊天插件的兼容性。
+  wwcVaultChatProviderFound: 找到了 Vault 聊天提供商：{0}.
+  wwcNoVaultChatProvider: Vault 已安装，但未检测到支持的聊天提供商。
 

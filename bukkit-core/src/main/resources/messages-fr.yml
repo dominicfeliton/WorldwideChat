@@ -679,3 +679,10 @@ Messages:
   wwcdDebugBadState: Cette commande de débogage ne peut pas être exécutée tant que
     WorldwideChat ne dispose pas d'un ensemble de traducteurs valide. Veuillez réessayer
     ultérieurement.
+  wwcNoVaultOnFolia: Vault n'est actuellement pas pris en charge sur Folia. Cela peut
+    nuire à la compatibilité avec d'autres plugins de chat.
+  wwcNoVaultPlugin: Vault n'est pas installé! Cela risque de rompre la compatibilité
+    avec les autres plugins de chat installés.
+  wwcVaultChatProviderFound: 'J''ai trouvé un fournisseur de chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault est installé, mais aucun fournisseur de chat compatible
+    n'a été détecté.

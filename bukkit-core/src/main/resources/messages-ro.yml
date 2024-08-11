@@ -653,4 +653,11 @@ Messages:
   wwcdDebugBadState: Această comandă de depanare nu poate fi executată în timp ce
     WorldwideChat nu are un set de traducător valid. Vă rugăm să încercați din nou
     mai târziu.
+  wwcNoVaultOnFolia: Seif nu este acceptat momentan pe Folia. Acest lucru poate rupe
+    compatibilitatea cu alte pluginuri de chat.
+  wwcNoVaultPlugin: Vault nu este instalat! Acest lucru poate rupe compatibilitatea
+    cu alte pluginuri de chat instalate.
+  wwcVaultChatProviderFound: 'Am găsit un furnizor de chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault este instalat, dar nu a fost detectat niciun furnizor
+    de chat acceptat.
 

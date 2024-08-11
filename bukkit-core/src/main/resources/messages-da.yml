@@ -619,4 +619,11 @@ Messages:
     anden understøttet lokalisering: {1}'
   wwcdDebugBadState: Denne fejlfindingskommando kan ikke køres, mens WorldwideChat
     ikke har et gyldigt oversættersæt. Prøv igen senere.
+  wwcNoVaultOnFolia: Vault understøttes i øjeblikket ikke på Folia. Dette kan bryde
+    kompatibiliteten med andre chat-plugins.
+  wwcNoVaultPlugin: Vault er ikke installeret! Dette kan bryde kompatibiliteten med
+    andre installerede chat-plugins.
+  wwcVaultChatProviderFound: 'Fundet en Vault-chatudbyder: {0}.'
+  wwcNoVaultChatProvider: Vault er installeret, men der er ikke registreret nogen
+    understøttet chatudbyder.
 

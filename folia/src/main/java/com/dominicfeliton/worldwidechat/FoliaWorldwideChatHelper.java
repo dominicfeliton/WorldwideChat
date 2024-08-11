@@ -17,6 +17,13 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
 
     ServerAdapterFactory adapter = main.getServerFactory();
 
+    @Override
+    public void checkVaultSupport() {
+        // Vault is not supported on Folia
+        main.getLogger().warning(refs.getMsg("wwcNoVaultOnFolia", null));
+        main.setChat(null); // jic
+    }
+
     // SCHEDULER (NEW)
     @Override
     public void cleanupTasks(int taskID) {

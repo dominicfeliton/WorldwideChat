@@ -640,4 +640,11 @@ Messages:
     ondersteunde lokalisatie te gebruiken: {1}'
   wwcdDebugBadState: Deze debug-opdracht kan niet worden uitgevoerd als WorldwideChat
     geen geldige vertalerset heeft. Probeer het later opnieuw.
+  wwcNoVaultOnFolia: Vault wordt momenteel niet ondersteund op Folia. Dit kan de compatibiliteit
+    met andere chat-plug-ins verbreken.
+  wwcNoVaultPlugin: Vault is niet geïnstalleerd! Hierdoor kan de compatibiliteit met
+    andere geïnstalleerde chatplug-ins worden verbroken.
+  wwcVaultChatProviderFound: 'Ik heb een Vault-chatprovider gevonden: {0}.'
+  wwcNoVaultChatProvider: Vault is geïnstalleerd, maar er is geen ondersteunde chatprovider
+    gevonden.
 

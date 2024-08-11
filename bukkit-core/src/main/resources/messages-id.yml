@@ -611,4 +611,11 @@ Messages:
     yang didukung: {1}'
   wwcdDebugBadState: Perintah debug ini tidak dapat dijalankan saat WorldwideChat
     tidak memiliki set penerjemah yang valid. Silakan coba lagi nanti.
+  wwcNoVaultOnFolia: Vault saat ini tidak didukung di Folia. Ini dapat merusak kompatibilitas
+    dengan plugin obrolan lainnya.
+  wwcNoVaultPlugin: Vault tidak diinstal! Ini dapat merusak kompatibilitas dengan
+    plugin obrolan lain yang diinstal.
+  wwcVaultChatProviderFound: 'Menemukan penyedia obrolan Vault: {0}.'
+  wwcNoVaultChatProvider: Vault diinstal, tetapi tidak ada penyedia obrolan yang didukung
+    yang terdeteksi.
 

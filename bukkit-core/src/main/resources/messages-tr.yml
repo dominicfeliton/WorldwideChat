@@ -618,4 +618,10 @@ Messages:
     kullanmayı deneyin: {1}'
   wwcdDebugBadState: WorldwideChat'te geçerli bir çevirmen seti yoksa bu hata ayıklama
     komutu çalıştırılamaz. Lütfen daha sonra tekrar deneyin.
+  wwcNoVaultOnFolia: Vault şu anda Folia'da desteklenmiyor. Bu, diğer sohbet eklentileriyle
+    uyumluluğu bozabilir.
+  wwcNoVaultPlugin: Kasa yüklü değil! Bu, diğer yüklü sohbet eklentileriyle uyumluluğu
+    bozabilir.
+  wwcVaultChatProviderFound: 'Bir Vault sohbet sağlayıcısı bulundu: {0}.'
+  wwcNoVaultChatProvider: Kasa yüklü, ancak desteklenen sohbet sağlayıcısı algılanmadı.
 

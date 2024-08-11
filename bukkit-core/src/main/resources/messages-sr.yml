@@ -612,4 +612,11 @@ Messages:
     podržanu lokalizaciju: {1}'
   wwcdDebugBadState: Ova naredba za otklanjanje grešaka ne može da se pokrene dok
     VorldWideChat nema važeći skup prevodilaca. Pokušajte ponovo kasnije.
+  wwcNoVaultOnFolia: Vault trenutno nije podržan na Folia. Ovo može prekinuti kompatibilnost
+    sa drugim dodacima za ćaskanje.
+  wwcNoVaultPlugin: Vault nije instaliran! Ovo može prekinuti kompatibilnost sa drugim
+    instaliranim dodacima za ćaskanje.
+  wwcVaultChatProviderFound: 'Pronađen Vault provajder ćaskanja: {0}.'
+  wwcNoVaultChatProvider: Vault je instaliran, ali nije otkriven podržani provajder
+    ćaskanja.
 

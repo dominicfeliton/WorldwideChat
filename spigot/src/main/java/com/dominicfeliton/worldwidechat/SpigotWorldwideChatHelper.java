@@ -2,9 +2,11 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import net.milkbowl.vault.chat.Chat;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitWorker;
 
@@ -17,6 +19,26 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     CommonRefs refs = main.getServerFactory().getCommonRefs();
 
     ServerAdapterFactory adapter = main.getServerFactory();
+
+    @Override
+    public void checkVaultSupport() {
+        // Check if vault is installed at all
+        if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
+            main.setChat(null);
+            main.getLogger().warning(refs.getMsg("wwcNoVaultPlugin", null));
+            return;
+        }
+
+        // Attempt to register vault chat
+        RegisteredServiceProvider<Chat> rsp = main.getServer().getServicesManager().getRegistration(Chat.class);
+        if (rsp != null && rsp.getProvider() != null) {
+            main.setChat(rsp.getProvider());
+            main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcVaultChatProviderFound", new String[] {rsp.getProvider().getName()}, null));
+        } else {
+            main.setChat(null);
+            main.getLogger().warning(refs.getMsg("wwcNoVaultChatProvider", null));
+        }
+    }
 
     @Override
     public void registerEventHandlers() {

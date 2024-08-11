@@ -615,4 +615,11 @@ Messages:
     yang disokong yang berbeza: {1}'
   wwcdDebugBadState: Perintah debug ini tidak boleh dijalankan sementara WorldwideChat
     tidak mempunyai set penterjemah yang sah. Sila cuba lagi nanti.
+  wwcNoVaultOnFolia: Vault tidak disokong pada masa ini pada Folia. Ini mungkin memecahkan
+    keserasian dengan plugin sembang lain.
+  wwcNoVaultPlugin: Vault tidak dipasang! Ini mungkin memecahkan keserasian dengan
+    plugin sembang lain yang dipasang.
+  wwcVaultChatProviderFound: 'Menemui penyedia sembang Vault: {0}.'
+  wwcNoVaultChatProvider: Vault dipasang, tetapi tiada penyedia sembang yang disokong
+    telah dikesan.
 

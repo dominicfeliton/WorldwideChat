@@ -627,4 +627,11 @@ Messages:
     lokalizacji: {1}'
   wwcdDebugBadState: Tego polecenia debugowania nie można uruchomić, gdy WorldwideChat
     nie ma prawidłowego zestawu tłumacza. Spróbuj ponownie później.
+  wwcNoVaultOnFolia: Vault nie jest obecnie obsługiwany w programie Folia. Może to
+    zakłócić kompatybilność z innymi wtyczkami do czatu.
+  wwcNoVaultPlugin: Vault nie jest zainstalowany! Może to zakłócić kompatybilność
+    z innymi zainstalowanymi wtyczkami czatu.
+  wwcVaultChatProviderFound: 'Znaleziono dostawcę czatu Vault: {0}.'
+  wwcNoVaultChatProvider: Vault jest zainstalowany, ale nie wykryto obsługiwanego
+    dostawcy czatu.
 

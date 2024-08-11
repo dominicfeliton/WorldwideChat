@@ -627,4 +627,11 @@ Messages:
     lokalizáciu: {1}'
   wwcdDebugBadState: Tento príkaz ladenia nie je možné spustiť, zatiaľ čo WorldwideChat
     nemá platnú sadu prekladateľov. Skúste to znova neskôr.
+  wwcNoVaultOnFolia: Vault nie je momentálne podporovaný na Folia. To môže narušiť
+    kompatibilitu s inými doplnkami chatu.
+  wwcNoVaultPlugin: Vault nie je nainštalovaný! To môže narušiť kompatibilitu s inými
+    nainštalovanými chatovacími doplnkami.
+  wwcVaultChatProviderFound: 'Našiel som poskytovateľa chatu Vault: {0}.'
+  wwcNoVaultChatProvider: Vault je nainštalovaný, ale nebol zistený žiadny podporovaný
+    poskytovateľ chatu.
 

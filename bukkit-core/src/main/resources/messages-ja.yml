@@ -483,4 +483,8 @@ Messages:
   wwcdDebugEnvEnabled: デバッグ環境が有効になりました。
   wwclLangNotLoaded: '{0} は現在使用できません。サポートされている別のローカライズ版を使ってみてください:{1}'
   wwcdDebugBadState: WorldwideChat に有効なトランスレータセットがない間は、このデバッグコマンドを実行できません。後でもう一度試してください。
+  wwcNoVaultOnFolia: Vault は現在 Folia ではサポートされていません。これにより、他のチャットプラグインとの互換性が損なわれる可能性があります。
+  wwcNoVaultPlugin: Vault がインストールされていません!これにより、インストールされている他のチャットプラグインとの互換性が損なわれる可能性があります。
+  wwcVaultChatProviderFound: Vault チャットプロバイダーが見つかりました:{0}.
+  wwcNoVaultChatProvider: Vault はインストールされていますが、サポートされているチャットプロバイダーが見つかりませんでした。
 

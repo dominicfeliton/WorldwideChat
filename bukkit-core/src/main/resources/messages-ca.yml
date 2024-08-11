@@ -666,4 +666,11 @@ Messages:
     una localització admesa diferent: {1}'
   wwcdDebugBadState: Aquesta ordre de depuració no es pot executar mentre WorldwideChat
     no té un conjunt de traductors vàlid. Si us plau, torneu-ho a provar més tard.
+  wwcNoVaultOnFolia: Actualment el Vault no està suportat a Folia. Això pot trencar
+    la compatibilitat amb altres connectors de xat.
+  wwcNoVaultPlugin: Vault no està instal·lat! Això pot trencar la compatibilitat amb
+    altres connectors de xat instal·lats.
+  wwcVaultChatProviderFound: 'S''ha trobat un proveïdor de xat de Vault: {0}.'
+  wwcNoVaultChatProvider: El Vault està instal·lat, però no s'ha detectat cap proveïdor
+    de xat compatible.
 

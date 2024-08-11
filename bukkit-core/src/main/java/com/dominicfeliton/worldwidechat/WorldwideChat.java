@@ -31,6 +31,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
+import net.milkbowl.vault.chat.Chat;
 
 import java.io.File;
 import java.util.*;
@@ -42,7 +43,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "07042024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "07112024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -71,7 +72,7 @@ public class WorldwideChat extends JavaPlugin {
 	private Object scheduler;
 
 	private CommonRefs refs;
-	
+
 	private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
 	private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
 	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
@@ -85,6 +86,8 @@ public class WorldwideChat extends JavaPlugin {
 	private int translatorErrorCount = 0;
 	
 	private boolean outOfDate = false;
+
+	private Chat chat;
 
 	private volatile String translatorName = "Starting";
 
@@ -164,10 +167,10 @@ public class WorldwideChat extends JavaPlugin {
 		doStartupTasks(false);
 
 		// Register event handlers
+		wwcHelper.checkVaultSupport();
 		wwcHelper.registerEventHandlers();
 
 		// We made it!
-		//refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
 		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion(), null));
 	}
 
@@ -651,6 +654,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Setters */
+	public void setChat(Chat chat) {
+		this.chat = chat;
+	}
+
 	public void setMongoSession(MongoDBUtils i) {
 		mongoSession = i;
 	}
@@ -855,6 +862,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
+	public Chat getChat() {
+		return chat;
+	}
+
 	public ServerAdapterFactory getServerFactory() { return serverFactory; }
 
 	public boolean isMongoConnValid(boolean quiet) {

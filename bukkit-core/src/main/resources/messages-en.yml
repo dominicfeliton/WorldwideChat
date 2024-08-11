@@ -45,6 +45,10 @@ Messages:
   wwcCouldNotSaveOhNo: 'Unable to save WorldwideChat data...please ensure that your selected database/storage option is stable!'
   wwcSyncUserDataComplete: 'Successfully saved user data to {0}. {1}'
   wwcSyncUserDataStart: 'Syncing user data...'
+  wwcNoVaultOnFolia: 'Vault is not currently supported on Folia. This may break compatibility with other chat plugins.'
+  wwcNoVaultPlugin: 'Vault is not installed! This may break compatibility with other installed chat plugins.'
+  wwcVaultChatProviderFound: 'Found a Vault chat provider: {0}.'
+  wwcNoVaultChatProvider: 'Vault is installed, but no supported chat provider has been detected.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.17.5</version>
+    <version>1.18.0</version>
   </parent>
 
   <artifactId>WorldwideChat-folia</artifactId>
@@ -28,8 +28,14 @@
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-paper</artifactId>
-      <version>1.17.5</version>
+      <version>1.18.0</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.MilkBowl</groupId>
+      <artifactId>VaultAPI</artifactId>
+      <version>1.7</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 

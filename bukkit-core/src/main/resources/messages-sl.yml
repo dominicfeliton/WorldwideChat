@@ -625,4 +625,11 @@ Messages:
     podprto lokalizacijo: {1}'
   wwcdDebugBadState: Tega ukaza za odpravljanje napak ni mogoče zagnati, medtem ko
     WorldwideChat nima veljavnega nabora prevajalcev. Prosimo, poskusite znova kasneje.
+  wwcNoVaultOnFolia: Vault trenutno ni podprt na Folia. To lahko prekine združljivost
+    z drugimi vtičniki za klepet.
+  wwcNoVaultPlugin: Vault ni nameščen! To lahko prekine združljivost z drugimi nameščenimi
+    vtičniki za klepet.
+  wwcVaultChatProviderFound: 'Našli smo ponudnika klepeta Vault: {0}.'
+  wwcNoVaultChatProvider: Vault je nameščen, vendar ni bil zaznan noben podprt ponudnik
+    klepeta.
 

@@ -4,7 +4,7 @@
 
   <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.17.5</version>
+  <version>1.18.0</version>
   <packaging>pom</packaging>
 
   <name>WorldwideChat</name>
@@ -147,6 +147,10 @@
     <repository>
       <id>dominicfeliton-bukkitsmartinvs</id>
       <url>https://raw.github.com/dominicfeliton/SmartInvs/bukkit-maven-repo</url>
+    </repository>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
     </repository>
   </repositories>
 

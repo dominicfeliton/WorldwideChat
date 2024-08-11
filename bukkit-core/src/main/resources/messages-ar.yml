@@ -578,4 +578,10 @@ Messages:
     مختلفة: {1}'
   wwcdDebugBadState: لا يمكن تشغيل أمر التصحيح هذا بينما لا يحتوي WorldwideChat على
     مجموعة مترجم صالحة. يرجى المحاولة مرة أخرى لاحقًا.
+  wwcNoVaultOnFolia: Vault غير مدعوم حاليًا على Folia. قد يؤدي هذا إلى كسر التوافق
+    مع ملحقات الدردشة الأخرى.
+  wwcNoVaultPlugin: لم يتم تثبيت Vault! قد يؤدي هذا إلى كسر التوافق مع ملحقات الدردشة
+    المثبتة الأخرى.
+  wwcVaultChatProviderFound: 'تم العثور على موفر دردشة Vault: {0}.'
+  wwcNoVaultChatProvider: تم تثبيت Vault، ولكن لم يتم اكتشاف موفر دردشة مدعوم.
 

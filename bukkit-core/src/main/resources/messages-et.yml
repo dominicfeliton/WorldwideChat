@@ -596,4 +596,11 @@ Messages:
     lokaliseerimist: {1}'
   wwcdDebugBadState: Seda silumiskäsku ei saa käivitada, kui WorldwideChatil pole
     kehtivat tõlkikomplekti. Palun proovige hiljem uuesti.
+  wwcNoVaultOnFolia: Vaulti Folias praegu ei toetata. See võib rikkuda ühilduvust
+    teiste vestluse pistikprogrammidega.
+  wwcNoVaultPlugin: Vault pole installitud! See võib rikkuda ühilduvust teiste installitud
+    vestluspistikprogrammidega.
+  wwcVaultChatProviderFound: 'Leidsin Vaulti vestlusteenuse pakkuja: {0}.'
+  wwcNoVaultChatProvider: Vault on installitud, kuid toetatud vestluspakkujat pole
+    tuvastatud.
 

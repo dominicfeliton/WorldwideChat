@@ -619,4 +619,11 @@ Messages:
     lokalizāciju: {1}'
   wwcdDebugBadState: Šo atkļūdošanas komandu nevar palaist, kamēr WorldwideChat nav
     derīga tulkotāja kopas. Lūdzu, mēģiniet vēlreiz vēlāk.
+  wwcNoVaultOnFolia: Vault pašlaik netiek atbalstīta vietnē Folia. Tas var izjaukt
+    saderību ar citiem tērzēšanas spraudņiem.
+  wwcNoVaultPlugin: Vault nav instalēta! Tas var izjaukt saderību ar citiem instalētajiem
+    tērzēšanas spraudņiem.
+  wwcVaultChatProviderFound: 'Atrasts Vault tērzēšanas pakalpojumu sniedzējs: {0}.'
+  wwcNoVaultChatProvider: Vault ir instalēta, taču nav atklāts atbalstīts tērzēšanas
+    pakalpojumu sniedzējs.
 

@@ -560,4 +560,10 @@ Messages:
     {1}'
   wwcdDebugBadState: לא ניתן להפעיל פקודת ניפוי באגים זו כאשר ל- WorldwideChat אין
     ערכת מתרגם חוקית. אנא נסה שוב מאוחר יותר.
+  wwcNoVaultOnFolia: הכספת אינה נתמכת כרגע ב- Folia. זה עלול לשבור תאימות עם תוספי
+    צ'אט אחרים.
+  wwcNoVaultPlugin: הכספת אינה מותקנת! זה עלול לשבור תאימות עם תוספי צ'אט מותקנים
+    אחרים.
+  wwcVaultChatProviderFound: 'מצאתי ספק צ''אט בכספת: {0}.'
+  wwcNoVaultChatProvider: הכספת מותקנת, אך לא זוהה ספק צ'אט נתמך.
 

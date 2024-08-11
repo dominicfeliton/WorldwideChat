@@ -692,4 +692,11 @@ Messages:
     ng ibang suportadong lokalisasyon: {1}'
   wwcdDebugBadState: Hindi maaaring patakbuhin ang utos ng debug na ito habang ang
     WorldwideChat ay walang wastong hanay ng tagasalin. Mangyaring subukang muli mamaya.
+  wwcNoVaultOnFolia: Kasalukuyang hindi sinusuportahan ang Vault sa Folia. Maaari
+    itong masira ang pagiging tugma sa iba pang mga plugin ng chat.
+  wwcNoVaultPlugin: Hindi naka-install ang Vault! Maaari itong masira ang pagiging
+    tugma sa iba pang naka-install na mga plugin ng chat.
+  wwcVaultChatProviderFound: 'Natagpuan ang isang Vault chat provider: {0}.'
+  wwcNoVaultChatProvider: Naka-install ang Vault, ngunit walang sinusuportahang chat
+    provider ang nakita.
 

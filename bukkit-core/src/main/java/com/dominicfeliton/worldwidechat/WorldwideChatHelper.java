@@ -3,6 +3,8 @@ package com.dominicfeliton.worldwidechat;
 public abstract class WorldwideChatHelper {
     // Store additional, WorldwideChat-exclusive methods here
     // Also required for our maven setup
+    public void checkVaultSupport() {}
+
     public void registerEventHandlers() {}
 
     // Scheduler Methods
