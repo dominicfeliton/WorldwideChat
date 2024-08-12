@@ -277,6 +277,8 @@ public class ConfigurationHandler {
 			main.setVaultSupport(true);
 			main.getLogger().warning(refs.getMsg("wwcConfigVaultSupportInvalid", null));
 		}
+		// Vault Format (For Outgoing Messages)
+		// TODO
 		// Cache Settings
 		try {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
