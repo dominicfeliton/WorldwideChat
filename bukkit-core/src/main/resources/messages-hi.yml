@@ -642,4 +642,16 @@ Messages:
   wwcVaultChatProviderFound: 'वॉल्ट चैट प्रोवाइडर मिला: {0}।'
   wwcNoVaultChatProvider: वॉल्ट इंस्टॉल किया गया है, लेकिन किसी भी समर्थित चैट प्रदाता
     का पता नहीं चला है।
+  wwcConfigEventPrioritySet: चैट लिसनर इवेंट की प्राथमिकता को {0} पर सेट करें।
+  wwcConfigEventPriorityInvalid: config.yml में अमान्य चैट श्रोता ईवेंट प्राथमिकता।
+    डिफ़ॉल्ट रूप से {0} पर सेट किया जा रहा है...
+  wwcConfigConversationChatPriorityInput: 'मौजूदा चैट इवेंट की प्राथमिकता {0} है।
+    मान्य प्राथमिकताओं की इस सूची में से चुनें: {1}।'
+  wwcConfigGUIChatListenerPriorityButton: चैट इवेंट श्रोता प्राथमिकता बदलें
+  wwcConfigConversationChatPriorityBadInput: खराब चैट प्राथमिकता इनपुट! कृपया फिर
+    से कोशिश करें।
+  wwcConfigConversationChatPrioritySuccess: अपनी चैट ईवेंट प्राथमिकता को सफलतापूर्वक
+    सेट करें।
+  wwcConfigVaultSupportInvalid: config.yml में अमान्य वॉल्ट समर्थन सेट किया गया है।
+    डिफ़ॉल्ट रूप से सही है...
 

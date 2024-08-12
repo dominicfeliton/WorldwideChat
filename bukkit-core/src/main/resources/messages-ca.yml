@@ -673,4 +673,18 @@ Messages:
   wwcVaultChatProviderFound: 'S''ha trobat un proveïdor de xat de Vault: {0}.'
   wwcNoVaultChatProvider: El Vault està instal·lat, però no s'ha detectat cap proveïdor
     de xat compatible.
+  wwcConfigEventPrioritySet: Estableix la prioritat de l'esdeveniment de l'oient del
+    xat a {0}.
+  wwcConfigEventPriorityInvalid: Prioritat de l'esdeveniment de l'oient de xat no
+    vàlida a config.yml. Per defecte a {0}...
+  wwcConfigConversationChatPriorityInput: 'La prioritat de l''esdeveniment de xat
+    actual és {0}. Trieu entre aquesta llista de prioritats vàlides: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Canvia la prioritat de l'oient d'esdeveniments
+    de xat
+  wwcConfigConversationChatPriorityBadInput: Entrada de prioritat de xat dolenta!
+    Si us plau, torneu a intentar.
+  wwcConfigConversationChatPrioritySuccess: Estableix amb èxit la prioritat de l'esdeveniment
+    de xat.
+  wwcConfigVaultSupportInvalid: Suport de la caixa no vàlida establert a config.yml.
+    Per defecte de veritat...
 

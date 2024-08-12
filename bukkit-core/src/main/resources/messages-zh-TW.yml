@@ -478,4 +478,11 @@ Messages:
   wwcNoVaultPlugin: 未安裝保險箱！這可能會破壞與其他安裝的聊天插件的兼容性。
   wwcVaultChatProviderFound: 找到保管庫聊天提供者：{0}。
   wwcNoVaultChatProvider: 已安裝 Vault，但未偵測到支援的聊天提供者。
+  wwcConfigEventPrioritySet: 將聊天監聽器事件優先順序設置為 {0}。
+  wwcConfigEventPriorityInvalid: config.yml 中的聊天監聽器事件優先順序無效。預設為 {0}...
+  wwcConfigConversationChatPriorityInput: 目前聊天事件優先順序為 {0}。從這個有效優先順序清單中選擇：{1}。
+  wwcConfigGUIChatListenerPriorityButton: 變更聊天事件監聽器優先順序
+  wwcConfigConversationChatPriorityBadInput: 聊天優先輸入錯誤！請再試一次。
+  wwcConfigConversationChatPrioritySuccess: 成功設定您的聊天事件優先順序。
+  wwcConfigVaultSupportInvalid: 在 config.yml 中設置了無效的保管庫支持。預設為 true...
 

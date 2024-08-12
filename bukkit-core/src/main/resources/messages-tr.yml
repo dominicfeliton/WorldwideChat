@@ -624,4 +624,16 @@ Messages:
     bozabilir.
   wwcVaultChatProviderFound: 'Bir Vault sohbet sağlayıcısı bulundu: {0}.'
   wwcNoVaultChatProvider: Kasa yüklü, ancak desteklenen sohbet sağlayıcısı algılanmadı.
+  wwcConfigEventPrioritySet: Sohbet dinleyicisi olay önceliğini {0} olarak ayarlayın.
+  wwcConfigEventPriorityInvalid: config.yml içinde geçersiz sohbet dinleyicisi olay
+    önceliği. Varsayılan olarak {0}...
+  wwcConfigConversationChatPriorityInput: 'Mevcut sohbet etkinliği önceliği {0} ''dir.
+    Geçerli öncelikler listesinden seçim yapın: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Sohbet Etkinliği Dinleyici Önceliğini Değiştir
+  wwcConfigConversationChatPriorityBadInput: Kötü sohbet önceliği girişi! Lütfen tekrar
+    deneyin.
+  wwcConfigConversationChatPrioritySuccess: Sohbet etkinliği önceliğinizi başarıyla
+    ayarlayın.
+  wwcConfigVaultSupportInvalid: config.yml içinde geçersiz kasa desteği ayarlandı.
+    Varsayılan olarak true olarak ayarlanıyor...
 

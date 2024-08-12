@@ -626,4 +626,15 @@ Messages:
   wwcVaultChatProviderFound: 'ვიპოვნეთ Vault ჩატის პროვაიდერი: {0}.'
   wwcNoVaultChatProvider: Vault დამონტაჟებულია, მაგრამ მხარდაჭერილი ჩატის პროვაიდერი
     არ არის გამოვლენილი
+  wwcConfigEventPrioritySet: ჩატის მსმენელის ღონისძიების პრიორიტეტი {0}
+  wwcConfigEventPriorityInvalid: არასწორი ჩატის მსმენელის მოვლენის პრიორიტეტი config.yml-ში
+    ნაგულისხმევად {0}...
+  wwcConfigConversationChatPriorityInput: 'ჩატის მოვლენის მიმდინარე პრიორიტეტია {0}.
+    აირჩიეთ მოქმედი პრიორიტეტების ამ სიიდან: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: შეცვალეთ ჩატის ღონისძიების
+  wwcConfigConversationChatPriorityBadInput: ცუდი ჩატის პრიორიტეტული შე გთხოვთ კვლავ
+    სცადოთ
+  wwcConfigConversationChatPrioritySuccess: წარმატებით დააყენეთ თქვენი ჩატის ღონისძიების
+  wwcConfigVaultSupportInvalid: არასწორი საფარის მხარდაჭერა დაყენებულია config.yml—
+    ში. ნამდვილად არ შეესაბამება...
 

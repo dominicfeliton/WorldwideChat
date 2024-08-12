@@ -1,12 +1,13 @@
-package com.dominicfeliton.worldwidechat.listeners;
+package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.listeners.AbstractChatListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -16,14 +17,13 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ChatListener implements Listener {
+public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEvent> implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+	@Override
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
-
 		try {
 			// TODO: Boilerplate code. Make paper/spigot one class except for raw implementation?
 			if (!event.isAsynchronous()) {
@@ -85,26 +85,30 @@ public class ChatListener implements Listener {
 					continue;
 				}
 
-				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
-
-				// Convert to TextComponent
-				Component hoverOutMessage = refs.deserial(outMessageWithoutHover);
-				if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-					hoverOutMessage = Component.text()
-							.content(outMessageWithoutHover)
-							.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-							.build();
+				String outMessageWithoutHover;
+				Chat chat = main.getChat();
+				if (chat != null) {
+					outMessageWithoutHover = super.getVaultMessage(eaRecipient, event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
+				} else {
+					outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 				}
 
-				// Add globe icon
-				hoverOutMessage = hoverOutMessage
-						.append(Component.space())
-						.append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));
-
 				if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
-					eaRecipient.sendMessage(refs.serial(hoverOutMessage));
+					// If we are on Paper but using Spigot, we assume that Adventure is not installed.
+					// Note that this does not support hover text.
+					eaRecipient.sendMessage(outMessageWithoutHover);
 				} else {
 					try {
+						// Convert to TextComponent for hoverText
+						Component hoverOutMessage = refs.deserial(outMessageWithoutHover);
+
+						if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+							hoverOutMessage = Component.text()
+									.content(outMessageWithoutHover)
+									.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
+									.build();
+						}
+
 						main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
 					} catch (IllegalStateException e) {}
 				}

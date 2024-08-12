@@ -623,4 +623,15 @@ Messages:
   wwcVaultChatProviderFound: 'Vault චැට් සැපයුම්කරුවෙකු සොයා ගත්තේය: {0}.'
   wwcNoVaultChatProvider: සුරක්ෂිතගාරය ස්ථාපනය කර ඇති නමුත් සහාය දක්වන චැට් සැපයුම්කරුවෙකු
     හඳුනාගෙන නැත.
+  wwcConfigEventPrioritySet: චැට් සවන් දීමේ සිදුවීම් ප්රමුඛතාවය {0} ලෙස සකසන්න.
+  wwcConfigEventPriorityInvalid: config.yml හි අවලංගු චැට් සවන් දීමේ සිදුවීම් ප්රමුඛතාව.
+    {0} වෙත පෙරහැරීම...
+  wwcConfigConversationChatPriorityInput: 'වර්තමාන චැට් සිදුවීම් ප්රමුඛතාවය {0} වේ.
+    මෙම වලංගු ප්රමුඛතා ලැයිස්තුවෙන් තෝරන්න: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: චැට් සිදුවීම් සවන් දෙන ප්රමුඛතාව වෙනස්
+  wwcConfigConversationChatPriorityBadInput: නරක චැට් ප්රමුඛතා ආදානය! කරුණාකර නැවත
+    උත්සාහ කරන්න.
+  wwcConfigConversationChatPrioritySuccess: ඔබේ චැට් සිදුවීම් ප්රමුඛතාවය සාර්ථකව සකසන්න.
+  wwcConfigVaultSupportInvalid: config.yml හි අවලංගු සුරක්ෂිතගාර සහාය සකසා ඇත. සැබෑවක්
+    බවට පත් කිරීම...
 

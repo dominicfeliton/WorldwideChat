@@ -548,4 +548,14 @@ Messages:
   wwcNoVaultPlugin: ቫልት አልተጫነም! ይህ ከሌሎች ከተጫኑ የውይይት ተሰኪዎች ጋር ተኳሃኝነት ሊያ
   wwcVaultChatProviderFound: 'የቫልት ውይይት አቅራቢ አገኘ: {0}።'
   wwcNoVaultChatProvider: ቫልት ተጫኗል፣ ግን ምንም የሚደገፍ የውይይት አቅራቢ አልተገኝም
+  wwcConfigEventPrioritySet: የውይይት አድማጭ ዝግጅት ቅድሚያ ወደ {0}
+  wwcConfigEventPriorityInvalid: በ config.yml ውስጥ ልክ ያልሆነ የውይይት አድማጭ ክስተት ቅድሚ ወደ {0}
+    ነባሪ መቀየር...
+  wwcConfigConversationChatPriorityInput: 'የአሁኑ የውይይት ዝግጅት ቅድሚያ {0} ነው። ከዚህ ትክክለኛ
+    ቅድሚያ ዝርዝር ይምረጡ: {1}።'
+  wwcConfigGUIChatListenerPriorityButton: የውይይት ክስተት አድማጮች
+  wwcConfigConversationChatPriorityBadInput: መጥፎ ውይይት ቅድሚያ ግብ እባክዎን እንደገና ሞክሩ።
+  wwcConfigConversationChatPrioritySuccess: የውይይት ዝግጅትዎን ቅድሚያ በተሳካ
+  wwcConfigVaultSupportInvalid: በ config.yml ውስጥ የተቀናጀ ልክ ድጋፍ የተቀመጠ ነው። ወደ እውነት ነባሪ
+    መሆን...
 

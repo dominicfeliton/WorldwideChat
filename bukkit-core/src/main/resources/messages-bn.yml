@@ -624,4 +624,16 @@ Messages:
   wwcVaultChatProviderFound: 'একটি ভল্ট চ্যাট সরবরাহকারী খুঁজে পেয়েছি: {0}।'
   wwcNoVaultChatProvider: ভল্ট ইনস্টল করা হয়েছে, তবে কোনও সমর্থিত চ্যাট সরবরাহকারী
     সনাক্ত করা হয়নি।
+  wwcConfigEventPrioritySet: চ্যাট শ্রোতার ইভেন্ট অগ্রাধিকার {0} এ সেট করুন।
+  wwcConfigEventPriorityInvalid: config.yml এ অবৈধ চ্যাট শ্রোতা ইভেন্ট অগ্রাধিকার।
+    {0} এ ডিফল্ট করা হচ্ছে...
+  wwcConfigConversationChatPriorityInput: 'বর্তমান চ্যাট ইভেন্টের অগ্রাধিকার {0}।
+    বৈধ অগ্রাধিকারগুলির এই তালিকা থেকে চয়ন করুন: {1}।'
+  wwcConfigGUIChatListenerPriorityButton: চ্যাট ইভেন্ট শ্রোতার অগ্রাধিকার
+  wwcConfigConversationChatPriorityBadInput: বাদ চ্যাট অগ্রাধিকার ইনপুট! দয়া করে
+    আবার চেষ্টা করুন।
+  wwcConfigConversationChatPrioritySuccess: সফলভাবে আপনার চ্যাট ইভেন্ট অগ্রাধিকার
+    সেট
+  wwcConfigVaultSupportInvalid: config.yml এ অবৈধ ভল্ট সমর্থন সেট করা হয়েছে। সত্যে
+    ডিফল্ট করা হচ্ছে...
 

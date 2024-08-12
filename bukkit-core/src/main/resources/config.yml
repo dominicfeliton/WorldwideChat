@@ -44,6 +44,8 @@ Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true
   sendIncomingHoverTextChat: true
+  useVault: true
+  chatListenerPriority: HIGHEST
 Translator:
   useWatsonTranslate: true
   watsonAPIKey: watson_key_goes_here

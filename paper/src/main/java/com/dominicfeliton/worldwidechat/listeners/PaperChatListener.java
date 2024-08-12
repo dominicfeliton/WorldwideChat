@@ -14,6 +14,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -21,17 +22,14 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.eclipse.sisu.inject.Legacy;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
+public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener, ChatRenderer.ViewerUnaware {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-    @EventHandler(priority = EventPriority.HIGHEST)
+    @Override
     public void onPlayerChat(AsyncChatEvent event) {
         try {
             if (!event.isAsynchronous()) {
@@ -101,29 +99,20 @@ public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
                     continue;
                 }
 
-                Component hoverOutMessage = refs.deserial(translation);
-
-                // Add hover text w/original message
-                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-                    hoverOutMessage = hoverOutMessage
-                            .hoverEvent(HoverEvent.showText(Component.text(originalText).decorate(TextDecoration.ITALIC)));
-                }
-
                 // Re-render original message but with new text.
                 Component outMsg;
                 Chat chat = main.getChat();
                 if (chat != null) {
-                    refs.debugMsg("Sending message to " + currPlayer.getName() + " w/ Vault info...");
-                    outMsg = Component.text(chat.getPlayerPrefix(currPlayer))
-                            .append(currPlayer.displayName())
-                            .append(Component.text(chat.getPlayerSuffix(currPlayer)))
-                            .append(Component.text(":"))
-                            .append(Component.space())
-                            .append(hoverOutMessage)
-                            .append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));
+                    outMsg = super.getVaultMessage(currPlayer, event.getPlayer(), refs.deserial(translation), event.getPlayer().displayName());
                 } else {
-                    refs.debugMsg("Rendering new message for current player ( " + currPlayer.getName() + "  : " + refs.serial(hoverOutMessage) + " )");
-                    outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), hoverOutMessage);
+                    refs.debugMsg("Rendering new message for current player ( " + currPlayer.getName() + "  : " + translation + " )");
+                    outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), refs.deserial(translation));
+                }
+
+                // Add hover text w/original message
+                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+                    outMsg = outMsg
+                            .hoverEvent(HoverEvent.showText(Component.text(originalText).decorate(TextDecoration.ITALIC)));
                 }
 
                 currPlayer.sendMessage(outMsg);

@@ -622,4 +622,16 @@ Messages:
   wwcVaultChatProviderFound: 'વૉલ્ટ ચેટ પ્રદાતા મળ્યો: {0}.'
   wwcNoVaultChatProvider: વૉલ્ટ ઇન્સ્ટોલ કરેલ છે, પરંતુ કોઈ સપોર્ટેડ ચેટ પ્રોવાઇડર
     શોધી શકાયો નથી.
+  wwcConfigEventPrioritySet: ચેટ સાંભળનાર ઇવેન્ટ અગ્રતા {0} પર સેટ કરો.
+  wwcConfigEventPriorityInvalid: config.yml માં અમાન્ય ચેટ સાંભળનાર ઇવેન્ટ અગ્રતા.
+    {0} પર ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcConfigConversationChatPriorityInput: 'વર્તમાન ચેટ ઇવેન્ટ અગ્રતા {0} છે. માન્ય
+    પ્રાથમિકતાઓની આ સૂચિમાંથી પસંદ કરો: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: ચેટ ઇવેન્ટ સાંભળનાર અગ્રતા બદલો
+  wwcConfigConversationChatPriorityBadInput: ખરાબ ચેટ અગ્રતા ઇનપુટ! કૃપા કરીને ફરીથી
+    પ્રયાસ કરો.
+  wwcConfigConversationChatPrioritySuccess: સફળતાપૂર્વક તમારી ચેટ ઇવેન્ટ અગ્રતા સેટ
+    કરો.
+  wwcConfigVaultSupportInvalid: config.yml માં અમાન્ય તિજોરી સપોર્ટ સેટ છે. સાચા પર
+    ડિફોલ્ટ થઈ રહ્યું છે...
 

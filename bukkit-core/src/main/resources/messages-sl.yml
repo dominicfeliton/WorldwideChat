@@ -632,4 +632,17 @@ Messages:
   wwcVaultChatProviderFound: 'Našli smo ponudnika klepeta Vault: {0}.'
   wwcNoVaultChatProvider: Vault je nameščen, vendar ni bil zaznan noben podprt ponudnik
     klepeta.
+  wwcConfigEventPrioritySet: Nastavite prednost dogodka poslušalca klepeta na {0}.
+  wwcConfigEventPriorityInvalid: Neveljavna prioriteta dogodka poslušalca klepeta
+    v config.yml. Privzeta vrednost {0}...
+  wwcConfigConversationChatPriorityInput: 'Trenutna prednostna naloga dogodka v klepetu
+    je {0}. Izberite s tega seznama veljavnih prednostnih nalog: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Spremenite prednostno nalogo poslušalca
+    dogodka v
+  wwcConfigConversationChatPriorityBadInput: Slab vnos prioritete klepeta! Prosimo,
+    poskusite znova.
+  wwcConfigConversationChatPrioritySuccess: Uspešno nastavite prednostno nalogo dogodka
+    v klepetu.
+  wwcConfigVaultSupportInvalid: V config.yml je nastavljena neveljavna podpora za
+    trezor. Privzeta vrednost resnična...
 

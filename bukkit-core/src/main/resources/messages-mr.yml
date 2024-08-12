@@ -610,4 +610,14 @@ Messages:
   wwcNoVaultPlugin: व्हॉल्ट स्थापित नाही! हे इतर स्थापित चॅट प्लगइनसह सुसंगतता तु
   wwcVaultChatProviderFound: 'व्हॉल्ट चॅट प्रदाता सापडला: {0}.'
   wwcNoVaultChatProvider: व्हॉल्ट स्थापित आहे, परंतु कोणताही समर्थित चॅट प्रदाता
+  wwcConfigEventPrioritySet: चॅट श्रोनर इव्हेंट प्राधान्य {0}
+  wwcConfigEventPriorityInvalid: config.yml मध्ये अवैध चॅट श्रोता इव्हेंट प्राधान्
+    {0} वर डीफॉल्ट करणे...
+  wwcConfigConversationChatPriorityInput: 'सध्याची चॅट इव्हेंट प्राधान्य {0} वैध प्राधान्यांच्या
+    या यादीमधून निवडा: {1}'
+  wwcConfigGUIChatListenerPriorityButton: चॅट इव्हेंट शोपणाच्या
+  wwcConfigConversationChatPriorityBadInput: खराब गप्पा प्राधान्य पुन्हा प्रयत्न करा.
+  wwcConfigConversationChatPrioritySuccess: आपले चॅट इव्हेंट प्राधान्य य
+  wwcConfigVaultSupportInvalid: config.yml मध्ये अवैध वॉल्ट समर्थन सेट केले आहे. खरे
+    म्हणून डीफॉल्ट करणे...
 

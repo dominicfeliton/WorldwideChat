@@ -626,4 +626,17 @@ Messages:
   wwcVaultChatProviderFound: 'Atrasts Vault tērzēšanas pakalpojumu sniedzējs: {0}.'
   wwcNoVaultChatProvider: Vault ir instalēta, taču nav atklāts atbalstīts tērzēšanas
     pakalpojumu sniedzējs.
+  wwcConfigEventPrioritySet: Iestatiet tērzēšanas klausītāja notikuma prioritāti uz
+    {0}.
+  wwcConfigEventPriorityInvalid: Nederīga tērzēšanas klausītāja notikuma prioritāte
+    programmā config.yml. Noklusējuma iestatījums uz {0}...
+  wwcConfigConversationChatPriorityInput: 'Pašreizējā tērzēšanas notikuma prioritāte
+    ir {0}. Izvēlieties no šī derīgo prioritāšu saraksta: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Mainīt tērzēšanas notikumu klausītāja prioritāti
+  wwcConfigConversationChatPriorityBadInput: Slikta tērzēšanas prioritātes ievade!
+    Lūdzu, mēģiniet vēlreiz.
+  wwcConfigConversationChatPrioritySuccess: Veiksmīgi iestatiet tērzēšanas notikuma
+    prioritāti.
+  wwcConfigVaultSupportInvalid: Nederīgs glabātuves atbalsts iestatīts programmā config.yml.
+    Noklusējuma iestatījums uz patiesu...
 

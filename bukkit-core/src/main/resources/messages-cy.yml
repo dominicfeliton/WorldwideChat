@@ -631,4 +631,18 @@ Messages:
   wwcVaultChatProviderFound: 'Wedi dod o hyd i ddarparwr sgwrs Vault: {0}.'
   wwcNoVaultChatProvider: Mae Vault wedi'i osod, ond ni chanfuwyd unrhyw ddarparwr
     sgwrsio â chymorth.
+  wwcConfigEventPrioritySet: Gosodwch flaenoriaeth digwyddiad gwrandawyr sgwrsio i
+    {0}.
+  wwcConfigEventPriorityInvalid: Blaenoriaeth digwyddiad gwrandawyr sgwrs annilys
+    yn config.yml. Rhagosodiad i {0}...
+  wwcConfigConversationChatPriorityInput: 'Blaenoriaeth y digwyddiad sgwrsio cyfredol
+    yw {0}. Dewiswch o''r rhestr hon o flaenoriaethau dilys: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Newid Blaenoriaeth Gwrandawyr Digwyddiad
+    Sgwrs
+  wwcConfigConversationChatPriorityBadInput: Mewnbwn blaenoriaeth sgwrs gwael! Rhowch
+    gynnig eto os gwelwch yn dda.
+  wwcConfigConversationChatPrioritySuccess: Gosodwch flaenoriaeth eich digwyddiad
+    sgwrsio yn llwyddiannus.
+  wwcConfigVaultSupportInvalid: Cefnogaeth claddfa annilys wedi'i osod yn config.yml.
+    Rhagosodiad i wir...
 

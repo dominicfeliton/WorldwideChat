@@ -646,4 +646,18 @@ Messages:
   wwcVaultChatProviderFound: 'Encontrei um provedor de bate-papo do Vault: {0}.'
   wwcNoVaultChatProvider: O Vault está instalado, mas nenhum provedor de bate-papo
     compatível foi detectado.
+  wwcConfigEventPrioritySet: Defina a prioridade do evento do ouvinte de bate-papo
+    como {0}.
+  wwcConfigEventPriorityInvalid: Prioridade inválida do evento do ouvinte de bate-papo
+    em config.yml. O padrão é {0}...
+  wwcConfigConversationChatPriorityInput: 'A prioridade atual do evento de bate-papo
+    é {0}. Escolha nesta lista de prioridades válidas: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Alterar a prioridade do ouvinte do evento
+    de bate-papo
+  wwcConfigConversationChatPriorityBadInput: Entrada de prioridade de bate-papo incorreta!
+    Por favor, tente novamente.
+  wwcConfigConversationChatPrioritySuccess: Defina com sucesso a prioridade do seu
+    evento de bate-papo.
+  wwcConfigVaultSupportInvalid: Suporte de cofre inválido definido em config.yml.
+    O padrão é true...
 

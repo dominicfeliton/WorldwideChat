@@ -546,4 +546,13 @@ Messages:
     ๆ ที่ติดตั้งไว้
   wwcVaultChatProviderFound: 'พบผู้ให้บริการแชท Vault: {0}.'
   wwcNoVaultChatProvider: มีการติดตั้ง Vault แต่ไม่พบผู้ให้บริการแชทที่รองรับ
+  wwcConfigEventPrioritySet: ตั้งค่าลำดับความสำคัญของเหตุการณ์ผู้ฟังแชทเป็น {0}
+  wwcConfigEventPriorityInvalid: ลำดับความสำคัญของเหตุการณ์ผู้ฟังแชทไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็น
+    {0}...
+  wwcConfigConversationChatPriorityInput: 'ลำดับความสำคัญของกิจกรรมแชทปัจจุบันคือ
+    {0}เลือกจากรายการลำดับความสำคัญที่ถูกต้องนี้: {1}'
+  wwcConfigGUIChatListenerPriorityButton: เปลี่ยนลำดับความสำคัญของผู้ฟังเหตุการณ์แชท
+  wwcConfigConversationChatPriorityBadInput: อินพุตลำดับความสำคัญในการแชทไม่ดี!โปรดลองอีกครั้ง
+  wwcConfigConversationChatPrioritySuccess: ตั้งค่าลำดับความสำคัญของกิจกรรมแชทของคุณเรียบร้อยแล้ว
+  wwcConfigVaultSupportInvalid: ตั้งค่าการสนับสนุนห้องเก็บข้อมูลที่ไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็นจริง...
 

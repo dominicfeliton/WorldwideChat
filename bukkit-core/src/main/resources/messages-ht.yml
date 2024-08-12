@@ -607,4 +607,15 @@ Messages:
   wwcVaultChatProviderFound: 'Te jwenn yon founisè chat Vault: {0}.'
   wwcNoVaultChatProvider: Vault se enstale, men pa gen okenn founisè chat sipòte yo
     te detekte.
+  wwcConfigEventPrioritySet: Mete priyorite evènman koute chat nan {0}.
+  wwcConfigEventPriorityInvalid: Priyorite evènman koute chat envalab nan config.yml.
+    Defaulting nan {0}...
+  wwcConfigConversationChatPriorityInput: 'Priyorite evènman chat aktyèl la se {0}.
+    Chwazi nan lis sa a nan priyorite valab: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Chanje Priyorite Koute Evènman Chat
+  wwcConfigConversationChatPriorityBadInput: Move chat priyorite opinyon! Tanpri eseye
+    ankò.
+  wwcConfigConversationChatPrioritySuccess: Aksè mete priyorite evènman chat ou.
+  wwcConfigVaultSupportInvalid: Sipò vant envalid mete nan config.yml. Defaulting
+    nan vre...
 

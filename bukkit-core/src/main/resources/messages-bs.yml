@@ -625,4 +625,17 @@ Messages:
   wwcVaultChatProviderFound: 'Pronađen Vault chat provajder: {0}.'
   wwcNoVaultChatProvider: Vault je instaliran, ali nije otkriven podržani pružatelj
     usluga razgovora.
+  wwcConfigEventPrioritySet: Postavite prioritet događaja slušatelja chata na {0}.
+  wwcConfigEventPriorityInvalid: Nevažeći prioritet događaja slušatelja chata u config.yml.
+    Zadano na {0}...
+  wwcConfigConversationChatPriorityInput: 'Trenutni prioritet chat događaja je {0}.
+    Odaberite s ove liste važećih prioriteta: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Promjena prioriteta slušatelja događaja
+    za chat
+  wwcConfigConversationChatPriorityBadInput: Loš unos prioriteta chata! Molimo pokušajte
+    ponovo.
+  wwcConfigConversationChatPrioritySuccess: Uspješno postavite prioritet događaja
+    za chat.
+  wwcConfigVaultSupportInvalid: Neispravna podrška za trezor postavljena u config.yml.
+    Zadano na istinito...
 

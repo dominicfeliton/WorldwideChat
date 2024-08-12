@@ -647,4 +647,16 @@ Messages:
   wwcVaultChatProviderFound: 'ഒരു വോൾട്ട് ചാറ്റ് ദാതാവിനെ കണ്ടെത്തി: {0}.'
   wwcNoVaultChatProvider: വോൾട്ട് ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ട്, എന്നാൽ പിന്തുണയ്ക്കുന്ന
     ചാറ്റ് ദാതാവിനെ കണ്ടെത്തിയിട്ടില്ല.
+  wwcConfigEventPrioritySet: ചാറ്റ് ശ്രോതാക്കളുടെ ഇവന്റ് മുൻഗണന {0} ആയി സജ്ജമാക്കുക.
+  wwcConfigEventPriorityInvalid: config.yml- ൽ അസാധുവായ ചാറ്റ് ശ്രോതാക്കളുടെ ഇവന്റ്
+    മുൻഗണന. {0} ലേക്ക് ഡിഫാൾട്ട് ചെയ്യുന്നു...
+  wwcConfigConversationChatPriorityInput: 'നിലവിലെ ചാറ്റ് ഇവന്റ് മുൻഗണന {0} ആണ്. സാധുവായ
+    മുൻഗണനകളുടെ ഈ പട്ടികയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: ചാറ്റ് ഇവന്റ് ശ്രോതാവിന്റെ മുൻഗണന മാറ്റുക
+  wwcConfigConversationChatPriorityBadInput: മോശം ചാറ്റ് മുൻഗണന ഇൻപുട്ട്! ദയവായി വീണ്ടും
+    ശ്രമിക്കുക.
+  wwcConfigConversationChatPrioritySuccess: നിങ്ങളുടെ ചാറ്റ് ഇവന്റ് മുൻഗണന വിജയകരമായി
+    സജ്ജമാക്കുക.
+  wwcConfigVaultSupportInvalid: config.yml- ൽ അസാധുവായ നിലവറ പിന്തുണ സജ്ജീകരിച്ചിരിക്കുന്നു.
+    സത്യമായി സ്ഥിരമായി മാറുന്നു...
 

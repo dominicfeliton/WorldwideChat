@@ -618,4 +618,16 @@ Messages:
   wwcVaultChatProviderFound: 'Menemukan penyedia obrolan Vault: {0}.'
   wwcNoVaultChatProvider: Vault diinstal, tetapi tidak ada penyedia obrolan yang didukung
     yang terdeteksi.
+  wwcConfigEventPrioritySet: Setel prioritas acara pendengar obrolan ke {0}.
+  wwcConfigEventPriorityInvalid: Prioritas acara pendengar obrolan tidak valid di
+    config.yml. Default ke {0}...
+  wwcConfigConversationChatPriorityInput: 'Prioritas acara obrolan saat ini adalah
+    {0}. Pilih dari daftar prioritas yang valid ini: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Ubah Prioritas Pendengar Acara Obrolan
+  wwcConfigConversationChatPriorityBadInput: Input prioritas obrolan yang buruk! Silakan
+    coba lagi.
+  wwcConfigConversationChatPrioritySuccess: Berhasil mengatur prioritas acara obrolan
+    Anda.
+  wwcConfigVaultSupportInvalid: Dukungan vault tidak valid disetel di config.yml.
+    Default menjadi true...
 

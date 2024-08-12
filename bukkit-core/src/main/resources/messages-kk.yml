@@ -621,4 +621,16 @@ Messages:
   wwcVaultChatProviderFound: 'Vault чат провайдері табылды: {0}.'
   wwcNoVaultChatProvider: Vault орнатылған, бірақ қолдау көрсетілетін чат провайдері
     анықталмады.
+  wwcConfigEventPrioritySet: Чат тыңдаушысы оқиғасының басымдығын {0} мәніне орнатыңыз.
+  wwcConfigEventPriorityInvalid: Config.yml ішіндегі сөйлесу тыңдаушысы оқиғасының
+    басымдығы жарамсыз. Әдепкі бойынша {0}...
+  wwcConfigConversationChatPriorityInput: 'Ағымдағы чат оқиғасының басымдығы - {0}.
+    Жарамды басымдықтардың осы тізімінен таңдаңыз: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Чат оқиғасының тыңдаушысының басымдығын
+    өзгерту
+  wwcConfigConversationChatPriorityBadInput: Нашар чат басымдылығын енгізу! Қайта
+    көріңіз.
+  wwcConfigConversationChatPrioritySuccess: Сөйлесу оқиғасының басымдығын сәтті орнатыңыз.
+  wwcConfigVaultSupportInvalid: Config.yml ішіндегі жарамсыз қойма қолдауы орнатылған.
+    Шын мәніне дефолт...
 

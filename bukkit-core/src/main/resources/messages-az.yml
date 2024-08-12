@@ -620,4 +620,17 @@ Messages:
   wwcVaultChatProviderFound: 'Vault söhbət təminatçısı tapıldı: {0}.'
   wwcNoVaultChatProvider: Vault quraşdırılıb, lakin dəstəklənən söhbət provayderi
     aşkar edilməmişdir.
+  wwcConfigEventPrioritySet: Söhbət dinləyicisi tədbirinin prioritetini {0} olaraq
+    təyin edin.
+  wwcConfigEventPriorityInvalid: Config.yml-də etibarsız söhbət dinləyicisi hadisəsinin
+    prioriteti. Varsayılan olaraq {0}...
+  wwcConfigConversationChatPriorityInput: 'Cari söhbət tədbirinin prioriteti {0} -dir.
+    Etibarlı prioritetlərin bu siyahısından seçin: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Söhbət Hadisəsi Dinləyici Prioritet
+  wwcConfigConversationChatPriorityBadInput: Pis söhbət prioritet girişi! Xahiş edirəm
+    yenidən cəhd edin.
+  wwcConfigConversationChatPrioritySuccess: Söhbət tədbirinizin prioritetini uğurla
+    təyin edin
+  wwcConfigVaultSupportInvalid: Config.yml-də etibarsız vəz dəstəyi qurulmuşdur. Doğruza
+    defolt...
 

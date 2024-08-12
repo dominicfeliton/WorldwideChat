@@ -651,4 +651,17 @@ Messages:
   wwcVaultChatProviderFound: 'Vault чат үйлчилгээ үзүүлэгчийг олсон: {0}.'
   wwcNoVaultChatProvider: Vault суулгасан боловч дэмжигдсэн чат үйлчилгээ үзүүлэгч
     илрээгүй байна.
+  wwcConfigEventPrioritySet: Чат сонсогчдын үйл явдлын тэргүүлэх чиглэлийг {0} болгон
+    тохируулна уу.
+  wwcConfigEventPriorityInvalid: Config.yml дахь хүчин төгөлдөр бус чат сонсогчдын
+    үйл явдлын тэргүүлэх ач холбогдол. {0} гэж анхдагч байна...
+  wwcConfigConversationChatPriorityInput: 'Одоогийн чат үйл явдлын тэргүүлэх чиглэл
+    бол {0} юм. Хүчинтэй тэргүүлэх чиглэлийн жагсаалтаас сонгоно уу: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Чат үйл явдлын сонсогчдын тэргүүлэх ач холбогдлыг
+  wwcConfigConversationChatPriorityBadInput: Чатын тэргүүлэх ач холбогдлын оролт муу!
+    Дахин оролдоно уу.
+  wwcConfigConversationChatPrioritySuccess: Чат үйл явдлын тэргүүлэх чиглэлийг амжилттай
+    тохируулна уу.
+  wwcConfigVaultSupportInvalid: Config.yml дээр тогтоогдсон хүчин төгөлдөр бус хадгаламжийн
+    дэмжлэг. Үнэн гэж анхдагч байна...
 

@@ -692,4 +692,17 @@ Messages:
   wwcVaultChatProviderFound: 'Ich habe einen Vault-Chat-Anbieter gefunden: {0}.'
   wwcNoVaultChatProvider: Vault ist installiert, es wurde jedoch kein unterstützter
     Chat-Anbieter erkannt.
+  wwcConfigEventPrioritySet: Setzen Sie die Priorität des Chat-Listener-Ereignisses
+    auf {0}.
+  wwcConfigEventPriorityInvalid: Ungültige Chat-Listener-Ereignispriorität in config.yml.
+    Die Standardeinstellung ist {0}...
+  wwcConfigConversationChatPriorityInput: 'Die aktuelle Chat-Event-Priorität ist {0}.
+    Wählen Sie aus dieser Liste gültiger Prioritäten aus: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Priorität des Chat-Event-Listeners ändern
+  wwcConfigConversationChatPriorityBadInput: Schlechte Eingabe der Chat-Priorität!
+    Bitte versuchen Sie es erneut.
+  wwcConfigConversationChatPrioritySuccess: Deine Chat-Event-Priorität wurde erfolgreich
+    festgelegt.
+  wwcConfigVaultSupportInvalid: Ungültige Tresorunterstützung in config.yml festgelegt.
+    Standardmäßig auf „true“ gesetzt...
 

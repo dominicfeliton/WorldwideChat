@@ -625,4 +625,15 @@ Messages:
   wwcVaultChatProviderFound: 'یک ارائه دهنده چت Vault پیدا شد: {0}.'
   wwcNoVaultChatProvider: Vault نصب شده است، اما هیچ ارائه دهنده چت پشتیبانی شده شناسایی
     نشده است.
+  wwcConfigEventPrioritySet: اولویت رویداد شنونده چت را به {0} تنظیم کنید.
+  wwcConfigEventPriorityInvalid: اولویت رویداد شنونده چت نامعتبر در config.yml. پیش
+    فرض به {0}...
+  wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. از این لیست
+    اولویت های معتبر انتخاب کنید: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: تغییر اولویت شنونده رویداد چت
+  wwcConfigConversationChatPriorityBadInput: ورودی اولویت چت بد! لطفا دوباره امتحان
+    کنید.
+  wwcConfigConversationChatPrioritySuccess: اولویت رویداد چت خود را با موفقیت تنظیم
+  wwcConfigVaultSupportInvalid: پشتیبانی از خزانه نامعتبر در config.yml تنظیم شده
+    است. پیش فرض به واقعی...
 

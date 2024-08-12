@@ -25,6 +25,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -43,7 +44,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "07112024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08112024-3"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -107,6 +108,10 @@ public class WorldwideChat extends JavaPlugin {
 
 	private boolean persistentCache = false;
 
+	private boolean vaultSupport = true;
+
+	private EventPriority chatPriority = EventPriority.HIGHEST;
+
 	private int errorLimit = 5;
 
 	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
@@ -165,10 +170,6 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Load "secondary" services + plugin configs, check if they successfully initialized
 		doStartupTasks(false);
-
-		// Register event handlers
-		wwcHelper.checkVaultSupport();
-		wwcHelper.registerEventHandlers();
 
 		// We made it!
 		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion(), null));
@@ -381,16 +382,16 @@ public class WorldwideChat extends JavaPlugin {
 		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
 
 		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
+		BukkitRunnable tab = new BukkitRunnable() {
+			@Override
+			public void run() {
+				registerTabCompleters();
+			}
+		};
 		if (isReloading) {
-			BukkitRunnable tab = new BukkitRunnable() {
-				@Override
-				public void run() {
-					registerTabCompleters();
-				}
-			};
 			wwcHelper.runSync(tab, GLOBAL, null);
 		} else {
-			registerTabCompleters();
+			tab.run();
 		}
 
 		// Check for updates
@@ -403,8 +404,23 @@ public class WorldwideChat extends JavaPlugin {
 
 		wwcHelper.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update, ASYNC, null);
 
-		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
-		translatorName = tempTransName;
+		// Check for vault support + register event handlers
+		// Set our translator name just in case...
+		BukkitRunnable event = new BukkitRunnable() {
+			@Override
+			public void run() {
+				wwcHelper.checkVaultSupport();
+				wwcHelper.registerEventHandlers();
+
+				// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+				translatorName = tempTransName;
+			}
+		};
+		if (isReloading) {
+			wwcHelper.runSync(event, GLOBAL, null);
+		} else {
+			event.run();
+		}
 	}
 
 	/**
@@ -564,9 +580,6 @@ public class WorldwideChat extends JavaPlugin {
 		// Shut down executors
 		callbackExecutor.shutdownNow();
 
-		// Close all inventories
-		refs.closeAllInvs();
-
 		// Cleanup background tasks
 		wwcHelper.cleanupTasks(taskID);
 
@@ -582,7 +595,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Disconnect SQL
 		if (sqlSession != null) sqlSession.disconnect();
 		sqlSession = null;
-		
+
 		// Disconnect MongoDB
 		if (mongoSession != null) mongoSession.disconnect();
 		mongoSession = null;
@@ -590,7 +603,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Disconnect Postgres
 		if (postgresSession != null) postgresSession.disconnect();
 		postgresSession = null;
-		
+
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedInputLangs.clear();
 		supportedOutputLangs.clear();
@@ -654,6 +667,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Setters */
+	public void setChatPriority(EventPriority p) {
+		chatPriority = p;
+	}
+
 	public void setChat(Chat chat) {
 		this.chat = chat;
 	}
@@ -828,6 +845,10 @@ public class WorldwideChat extends JavaPlugin {
 	public void setTranslatorName(String i) {
 		translatorName = i;
 	}
+
+	public void setVaultSupport(boolean i) {
+		vaultSupport = i;
+	}
 	
 	public void setTranslatorErrorCount(int i) {
 		translatorErrorCount = i;
@@ -863,7 +884,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	/* Getters */
 	public Chat getChat() {
-		return chat;
+		return vaultSupport ? chat : null;
 	}
 
 	public ServerAdapterFactory getServerFactory() { return serverFactory; }
@@ -1038,5 +1059,13 @@ public class WorldwideChat extends JavaPlugin {
 
 	public ArrayList<String> getErrorsToIgnore() {
 		return errorsToIgnore;
+	}
+
+	public boolean isVaultSupport() {
+		return vaultSupport;
+	}
+
+	public EventPriority getChatPriority() {
+		return chatPriority;
 	}
 }

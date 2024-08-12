@@ -634,4 +634,15 @@ Messages:
   wwcVaultChatProviderFound: 'Znaleziono dostawcę czatu Vault: {0}.'
   wwcNoVaultChatProvider: Vault jest zainstalowany, ale nie wykryto obsługiwanego
     dostawcy czatu.
+  wwcConfigEventPrioritySet: Ustaw priorytet zdarzenia słuchacza czatu na {0}.
+  wwcConfigEventPriorityInvalid: Nieprawidłowy priorytet zdarzenia słuchacza czatu
+    w config.yml. Domyślnie ustawienie {0}...
+  wwcConfigConversationChatPriorityInput: 'Aktualny priorytet wydarzenia czatu to
+    {0}. Wybierz z tej listy ważnych priorytetów: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Zmień priorytet słuchacza zdarzeń czatu
+  wwcConfigConversationChatPriorityBadInput: Złe wprowadzanie priorytetów czatu! Spróbuj
+    ponownie.
+  wwcConfigConversationChatPrioritySuccess: Pomyślnie ustaw priorytet wydarzenia czatu.
+  wwcConfigVaultSupportInvalid: Nieprawidłowa obsługa repozytorium ustawiona w config.yml.
+    Domyślnie wartość true...
 

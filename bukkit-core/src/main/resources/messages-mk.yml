@@ -647,4 +647,18 @@ Messages:
   wwcVaultChatProviderFound: 'Најдов провајдер за разговор Vault: {0}.'
   wwcNoVaultChatProvider: Возот е инсталиран, но не е откриен поддржан провајдер на
     разговор.
+  wwcConfigEventPrioritySet: Поставете го приоритетот на настанот на слушателот на
+    разговор на {0}.
+  wwcConfigEventPriorityInvalid: Невалиден приоритет на настанот на слушателот на
+    разговор во config.yml. Стандардно на {0}...
+  wwcConfigConversationChatPriorityInput: 'Тековниот приоритет на настанот за разговор
+    е {0}. Изберете од оваа листа на валидни приоритети: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Променете го приоритетот на слушателот на
+    настани за разговор
+  wwcConfigConversationChatPriorityBadInput: Лош влез за приоритет на разговор! Ве
+    молиме обидете се повторно.
+  wwcConfigConversationChatPrioritySuccess: Успешно поставете го приоритетот на настанот
+    за разговор.
+  wwcConfigVaultSupportInvalid: Невалидна поддршка за трезор поставена во config.yml.
+    Поставување на вистинито...
 

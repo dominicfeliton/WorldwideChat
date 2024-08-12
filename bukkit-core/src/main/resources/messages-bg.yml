@@ -641,4 +641,18 @@ Messages:
   wwcVaultChatProviderFound: 'Намерен е доставчик на чат в Vault: {0}.'
   wwcNoVaultChatProvider: Vault е инсталиран, но не е открит поддържан доставчик на
     чат.
+  wwcConfigEventPrioritySet: Задайте приоритета на събитието на слушателя на чата
+    на {0}.
+  wwcConfigEventPriorityInvalid: Невалиден приоритет на събитието на слушателя на
+    чат в config.yml. По подразбиране на {0}...
+  wwcConfigConversationChatPriorityInput: 'Текущият приоритет за чат събитие е {0}.
+    Изберете от този списък с валидни приоритети: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Промяна на приоритета на слушателя на събития
+    в чат
+  wwcConfigConversationChatPriorityBadInput: Лошо въвеждане на приоритет на чата!
+    Моля, опитайте отново.
+  wwcConfigConversationChatPrioritySuccess: Успешно задайте приоритета на събитието
+    в чат.
+  wwcConfigVaultSupportInvalid: Невалидна поддръжка на трезор, зададена в config.yml.
+    По подразбиране на вярно...
 

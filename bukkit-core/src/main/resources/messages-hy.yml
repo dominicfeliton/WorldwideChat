@@ -651,4 +651,17 @@ Messages:
   wwcVaultChatProviderFound: 'Գտնվել է Vault զրույցի մատակարար ՝ {0}:'
   wwcNoVaultChatProvider: 'Պահոց տեղադրված է, բայց ոչ մի աջակցվող զրույցի պրովայդեր
     չի հայտնաբերվել:'
+  wwcConfigEventPrioritySet: 'Զրույցի ունկնդրի իրադարձության առաջնահերթությունը սահմանեք
+    {0}:'
+  wwcConfigEventPriorityInvalid: 'Անվավեր զրույցի ունկնդրի իրադարձության առաջնահերթությունը
+    config.yml- ում: Կանխարգելում է {0}...'
+  wwcConfigConversationChatPriorityInput: 'Ընթացիկ զրույցի իրադարձության առաջնահերթությունը
+    {0} է: Ընտրեք վավեր առաջնահերթությունների այս ցանկից ՝ {1}:'
+  wwcConfigGUIChatListenerPriorityButton: Փոխեք զրույցի իրադարձության ունկնդրի առաջնահերթ
+  wwcConfigConversationChatPriorityBadInput: 'Վատ զրույցի առաջնահերթության մուտքագրում:
+    Խնդրում ենք կրկին փորձել:'
+  wwcConfigConversationChatPrioritySuccess: 'Հաջողությամբ սահմանեք ձեր զրույցի իրադարձության
+    առաջնահերթությունը:'
+  wwcConfigVaultSupportInvalid: 'Անվավեր պահոցի աջակցություն, որը սահմանված է config.yml-
+    ում: Չարժևորելով ճշմարիտ...'
 

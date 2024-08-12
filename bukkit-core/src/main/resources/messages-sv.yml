@@ -634,4 +634,15 @@ Messages:
   wwcVaultChatProviderFound: 'Hittade en Vault-chattleverantör: {0}.'
   wwcNoVaultChatProvider: Vault är installerat, men ingen chattleverantör som stöds
     har upptäckts.
+  wwcConfigEventPrioritySet: Ställ in prioriteten för chattlyssnare till {0}.
+  wwcConfigEventPriorityInvalid: Ogiltig prioritet för chattlyssnare i config.yml.
+    Standardinställt till {0}...
+  wwcConfigConversationChatPriorityInput: 'Den aktuella prioriteten för chatthändelse
+    är {0}. Välj från den här listan med giltiga prioriteringar: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Ändra prioritet för lyssnare för chatthändelser
+  wwcConfigConversationChatPriorityBadInput: Dålig chattprioritetsinmatning! Vänligen
+    försök igen.
+  wwcConfigConversationChatPrioritySuccess: Ställ in din chatthändelseprioritet framgångsrikt.
+  wwcConfigVaultSupportInvalid: Ogiltigt valvstöd inställt i config.yml. Standardinställt
+    till sant...
 

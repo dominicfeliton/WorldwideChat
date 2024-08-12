@@ -640,4 +640,18 @@ Messages:
     telepített csevegőbővítményekkel.
   wwcVaultChatProviderFound: 'Talált egy Vault csevegőszolgáltatót: {0}.'
   wwcNoVaultChatProvider: A Vault telepítve van, de nem észleltek támogatott csevegőszolgáltatót.
+  wwcConfigEventPrioritySet: Állítsa be a csevegőhallgató esemény prioritását {0}
+    értékre.
+  wwcConfigEventPriorityInvalid: Érvénytelen csevegő eseményprioritás a config.yml-ben.
+    Alapértelmezés szerint {0}...
+  wwcConfigConversationChatPriorityInput: 'Az aktuális csevegési esemény prioritása
+    {0}. Válasszon az érvényes prioritások listájából: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: A csevegési eseményhallgató prioritásának
+    módosítása
+  wwcConfigConversationChatPriorityBadInput: Rossz csevegési prioritási bemenet! Kérjük,
+    próbálkozzon újra.
+  wwcConfigConversationChatPrioritySuccess: Sikeresen állítsa be a csevegési esemény
+    prioritását.
+  wwcConfigVaultSupportInvalid: Érvénytelen tárolótámogatási beállítás a config.yml-ben.
+    Alapértelmezés szerint igaz...
 

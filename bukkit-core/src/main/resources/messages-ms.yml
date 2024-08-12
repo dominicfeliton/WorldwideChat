@@ -622,4 +622,16 @@ Messages:
   wwcVaultChatProviderFound: 'Menemui penyedia sembang Vault: {0}.'
   wwcNoVaultChatProvider: Vault dipasang, tetapi tiada penyedia sembang yang disokong
     telah dikesan.
+  wwcConfigEventPrioritySet: Tetapkan keutamaan acara pendengar sembang kepada {0}.
+  wwcConfigEventPriorityInvalid: Keutamaan acara pendengar sembang tidak sah dalam
+    config.yml. Lalai kepada {0}...
+  wwcConfigConversationChatPriorityInput: 'Keutamaan acara sembang semasa ialah {0}.
+    Pilih daripada senarai keutamaan yang sah ini: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Tukar Keutamaan Pendengar Acara Sembang
+  wwcConfigConversationChatPriorityBadInput: Input keutamaan sembang yang buruk! Sila
+    cuba lagi.
+  wwcConfigConversationChatPrioritySuccess: Berjaya menetapkan keutamaan acara sembang
+    anda.
+  wwcConfigVaultSupportInvalid: Sokongan peti besi tidak sah ditetapkan dalam config.yml.
+    Lagi menjadi benar...
 

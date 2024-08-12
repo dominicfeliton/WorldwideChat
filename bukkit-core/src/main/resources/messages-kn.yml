@@ -638,4 +638,16 @@ Messages:
   wwcVaultChatProviderFound: 'ವಾಲ್ಟ್ ಚಾಟ್ ಪೂರೈಕೆದಾರರನ್ನು ಕಂಡುಕೊಂಡಿದ್ದೇವೆ: {0}.'
   wwcNoVaultChatProvider: ವಾಲ್ಟ್ ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ, ಆದರೆ ಯಾವುದೇ ಬೆಂಬಲಿತ ಚಾಟ್ ಪೂರೈಕೆದಾರರನ್ನು
     ಪತ್ತೆಹಚ್ಚಲಾಗಿಲ್ಲ.
+  wwcConfigEventPrioritySet: ಚಾಟ್ ಕೇಳುಗರ ಈವೆಂಟ್ ಆದ್ಯತೆಯನ್ನು {0} ಗೆ ಹೊಂದಿಸಿ.
+  wwcConfigEventPriorityInvalid: Config.yml ನಲ್ಲಿ ಅಮಾನ್ಯ ಚಾಟ್ ಕೇಳುಗರ ಈವೆಂಟ್ ಆದ್ಯತೆ.
+    {0} ಗೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcConfigConversationChatPriorityInput: 'ಪ್ರಸ್ತುತ ಚಾಟ್ ಈವೆಂಟ್ ಆದ್ಯತೆ {0} ಆಗಿದೆ.
+    ಮಾನ್ಯ ಆದ್ಯತೆಗಳ ಈ ಪಟ್ಟಿಯಿಂದ ಆರಿಸಿ: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: ಚಾಟ್ ಈವೆಂಟ್ ಕೇಳುವವರ ಆದ್ಯತೆಯನ್ನು ಬದಲಾಯ
+  wwcConfigConversationChatPriorityBadInput: ಕೆಟ್ಟ ಚಾಟ್ ಆದ್ಯತೆಯ ಇನ್ಪುಟ್! ದಯವಿಟ್ಟು
+    ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.
+  wwcConfigConversationChatPrioritySuccess: ನಿಮ್ಮ ಚಾಟ್ ಈವೆಂಟ್ ಆದ್ಯತೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಿ.
+  wwcConfigVaultSupportInvalid: ಅಮಾನ್ಯ ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು config.yml ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+    ನಿಜಕ್ಕೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
 

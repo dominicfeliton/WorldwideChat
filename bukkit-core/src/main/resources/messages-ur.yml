@@ -634,4 +634,16 @@ Messages:
   wwcVaultChatProviderFound: 'والٹ چیٹ فراہم کنندہ ملا: {0}.'
   wwcNoVaultChatProvider: والٹ انسٹال ہے، لیکن کسی معاون چیٹ فراہم کنندہ کا پتہ نہیں
     چلا گیا ہے۔
+  wwcConfigEventPrioritySet: چیٹ سننے والے ایونٹ کی ترجیح {0} پر سیٹ کریں۔
+  wwcConfigEventPriorityInvalid: config.yml میں چیٹ سننے والے ایونٹ کی غلط ترجیح۔
+    {0} پر ڈیفالٹ ہو رہا ہے...
+  wwcConfigConversationChatPriorityInput: 'موجودہ چیٹ ایونٹ کی ترجیح {0} ہے۔ درست
+    ترجیحات کی اس فہرست میں سے منتخب کریں: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: چیٹ ایونٹ سننے والی ترجیح تبدیل کریں
+  wwcConfigConversationChatPriorityBadInput: خراب چیٹ ترجیحی ان پٹ! براہ کرم دوبارہ
+    کوشش کریں۔
+  wwcConfigConversationChatPrioritySuccess: کامیابی کے ساتھ اپنے چیٹ ایونٹ کی ترجیح
+    طے
+  wwcConfigVaultSupportInvalid: config.yml میں غلط والٹ سپورٹ سیٹ ہے۔ سچ میں ڈیفالٹ
+    ہونا...
 

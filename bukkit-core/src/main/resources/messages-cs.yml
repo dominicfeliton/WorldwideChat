@@ -625,4 +625,15 @@ Messages:
   wwcVaultChatProviderFound: 'Nalezen poskytovatele chatu Vault: {0}.'
   wwcNoVaultChatProvider: Vault je nainstalován, ale nebyl zjištěn žádný podporovaný
     poskytovatel chatu.
+  wwcConfigEventPrioritySet: Nastavte prioritu události posluchače chatu na {0}.
+  wwcConfigEventPriorityInvalid: Neplatná priorita události posluchače chatu v config.yml.
+    Výchozí hodnota {0}...
+  wwcConfigConversationChatPriorityInput: 'Aktuální priorita události chatu je {0}.
+    Vyberte si z tohoto seznamu platných priorit: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Změna priority posluchače událostí chatu
+  wwcConfigConversationChatPriorityBadInput: Špatný vstup priority chatu! Zkuste to
+    prosím znovu.
+  wwcConfigConversationChatPrioritySuccess: Úspěšně nastavte prioritu události chatu.
+  wwcConfigVaultSupportInvalid: Neplatná podpora úložiště nastavena v config.yml.
+    Výchozí hodnota true...
 

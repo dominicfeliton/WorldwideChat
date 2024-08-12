@@ -621,4 +621,17 @@ Messages:
   wwcVaultChatProviderFound: 'Löytyi Vault-chat-palveluntarjoaja: {0}.'
   wwcNoVaultChatProvider: Vault on asennettu, mutta tuettua chat-palveluntarjoajaa
     ei ole havaittu.
+  wwcConfigEventPrioritySet: Aseta chat-kuuntelijan tapahtuman prioriteetti arvoksi
+    {0}.
+  wwcConfigEventPriorityInvalid: 'Virheellinen chat-kuuntelijan tapahtuman prioriteetti
+    config.yml: ssä. Oletuksena on {0}...'
+  wwcConfigConversationChatPriorityInput: 'Nykyinen chat-tapahtuman prioriteetti on
+    {0}. Valitse tästä kelvollisten prioriteettien luettelosta: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Chat-tapahtuman kuuntelijan prioriteetin
+    muuttaminen
+  wwcConfigConversationChatPriorityBadInput: Huono chat-prioriteettisyöttö! Yritä
+    uudelleen.
+  wwcConfigConversationChatPrioritySuccess: Aseta chat-tapahtuman prioriteetti onnistuneesti.
+  wwcConfigVaultSupportInvalid: 'Virheellinen säilön tuki on määritetty config.yml:
+    ssä. Oletuksena on tosi...'
 

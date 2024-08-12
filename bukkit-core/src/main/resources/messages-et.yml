@@ -603,4 +603,16 @@ Messages:
   wwcVaultChatProviderFound: 'Leidsin Vaulti vestlusteenuse pakkuja: {0}.'
   wwcNoVaultChatProvider: Vault on installitud, kuid toetatud vestluspakkujat pole
     tuvastatud.
+  wwcConfigEventPrioritySet: Seadke vestluskuulaja sündmuse prioriteet väärtuseks
+    {0}.
+  wwcConfigEventPriorityInvalid: Vale vestluskuulaja sündmuse prioriteet rakenduses
+    config.yml. Vaikimisi väärtus {0}...
+  wwcConfigConversationChatPriorityInput: 'Praegune vestlusürituse prioriteet on {0}.
+    Valige sellest kehtivate prioriteetide loendist: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Vestlussündmuse kuulaja prioriteedi muutmine
+  wwcConfigConversationChatPriorityBadInput: Halb vestluse prioriteedi sisend! Palun
+    proovige uuesti.
+  wwcConfigConversationChatPrioritySuccess: Määrake edukalt oma vestlussündmuse prioriteet.
+  wwcConfigVaultSupportInvalid: Config.yml-is kehtetu võlvatugi komplekt. Vaikimisi
+    tõeseks...
 

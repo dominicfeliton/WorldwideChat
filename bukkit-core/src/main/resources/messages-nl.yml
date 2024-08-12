@@ -647,4 +647,18 @@ Messages:
   wwcVaultChatProviderFound: 'Ik heb een Vault-chatprovider gevonden: {0}.'
   wwcNoVaultChatProvider: Vault is geïnstalleerd, maar er is geen ondersteunde chatprovider
     gevonden.
+  wwcConfigEventPrioritySet: Stel de prioriteit van de gebeurtenis voor de chatluisteraar
+    in op {0}.
+  wwcConfigEventPriorityInvalid: Ongeldige prioriteit van de chatluisteraar in config.yml.
+    Standaard ingesteld op {0}...
+  wwcConfigConversationChatPriorityInput: 'De huidige prioriteit van het chatevenement
+    is {0}. Kies uit deze lijst met geldige prioriteiten: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Prioriteit van de luisteraar van chatgebeurtenissen
+    wijzigen
+  wwcConfigConversationChatPriorityBadInput: Invoer met slechte chatprioriteit! Probeer
+    het nog eens.
+  wwcConfigConversationChatPrioritySuccess: Stel met succes de prioriteit van je chatevenement
+    in.
+  wwcConfigVaultSupportInvalid: Ongeldige vault-ondersteuning is ingesteld in config.yml.
+    Standaard ingesteld op true...
 

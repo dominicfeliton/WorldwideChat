@@ -476,4 +476,11 @@ Messages:
   wwcNoVaultPlugin: 保管库未安装！这可能会破坏与其他已安装的聊天插件的兼容性。
   wwcVaultChatProviderFound: 找到了 Vault 聊天提供商：{0}.
   wwcNoVaultChatProvider: Vault 已安装，但未检测到支持的聊天提供商。
+  wwcConfigEventPrioritySet: 将聊天监听器事件优先级设置为 {0}。
+  wwcConfigEventPriorityInvalid: config.yml 中的聊天监听器事件优先级无效。默认为 {0}...
+  wwcConfigConversationChatPriorityInput: 当前聊天事件的优先级为 {0}。从以下有效优先级列表中选择：{1}.
+  wwcConfigGUIChatListenerPriorityButton: 更改聊天事件监听器优先级
+  wwcConfigConversationChatPriorityBadInput: 聊天优先级输入错误！请再试一次。
+  wwcConfigConversationChatPrioritySuccess: 成功设置聊天活动优先级。
+  wwcConfigVaultSupportInvalid: config.yml 中设置的保管库支持无效。默认为真...
 

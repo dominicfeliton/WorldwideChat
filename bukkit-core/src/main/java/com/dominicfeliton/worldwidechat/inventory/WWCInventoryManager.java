@@ -211,7 +211,7 @@ public class WWCInventoryManager extends InventoryManager {
 
 	/**
 	 * Returns the generic conversation for modifying values in our config.yml using the GUI.
-	 * @param preCheck - The boolean that needs to be true for the change to proceed
+	 * @param exitCheck - If this is false, then we will exit
 	 * @param context - The conversation context obj
 	 * @param successfulChangeMsg - Names of the message sent on successful change
 	 * @param configValName - The names of the config value to be updated
@@ -219,13 +219,13 @@ public class WWCInventoryManager extends InventoryManager {
 	 * @param prevInventory - The previous inventory to open up after the conversation is over
 	 * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
 	 */
-	public Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
+	public Prompt genericConfigConvo(boolean exitCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
 		Player currPlayer = ((Player)context.getForWhom());
 		if (configValName.length != configVal.length) {
 			return null;
 		}
-		// TODO: Add a fail message potentially if the precheck fails?
-		if (preCheck) {
+
+		if (exitCheck) {
 			for (int i = 0; i < configValName.length; i++) {
 				main.getConfigManager().getMainConfig().set(configValName[i], configVal[i]);
 			}
@@ -243,7 +243,7 @@ public class WWCInventoryManager extends InventoryManager {
 
 	/**
 	 * Returns the generic conversation for modifying values in our config.yml using the GUI.
-	 * @param preCheck - The boolean that needs to be true for the change to proceed
+	 * @param exitCheck - If this is false, then we will exit
 	 * @param context - The conversation context obj
 	 * @param successfulChangeMsg - Name of the message sent on successful change
 	 * @param configValName - The name of the config value to be updated
@@ -251,7 +251,7 @@ public class WWCInventoryManager extends InventoryManager {
 	 * @param prevInventory - The previous inventory to open up after the conversation is over
 	 * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation.
 	 */
-	public Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
-		return genericConfigConvo(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
+	public Prompt genericConfigConvo(boolean exitCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
+		return genericConfigConvo(exitCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
 	}
 }

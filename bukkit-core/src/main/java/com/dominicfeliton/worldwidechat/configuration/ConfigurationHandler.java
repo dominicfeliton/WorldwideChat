@@ -17,6 +17,8 @@ import org.bson.conversions.Bson;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 
@@ -255,6 +257,26 @@ public class ConfigurationHandler {
 			main.setMessageCharLimit(255);
 			main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
 		}
+		// Chat Listener Priority
+		try {
+			EventPriority eventPriority = EventPriority.valueOf(mainConfig.getString("Chat.chatListenerPriority").toUpperCase());
+			main.setChatPriority(eventPriority);
+			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEventPrioritySet", mainConfig.getString("Chat.chatListenerPriority"), null));
+		} catch (Exception e) {
+			main.setChatPriority(EventPriority.HIGHEST);
+			main.getLogger().warning(refs.getMsg("wwcConfigEventPriorityInvalid", "HIGHEST",null));
+		}
+		// Vault Support
+		try {
+			if (mainConfig.getBoolean("Chat.useVault")) {
+				main.setVaultSupport(true);
+			} else {
+				main.setVaultSupport(false);
+			}
+		} catch (Exception e) {
+			main.setVaultSupport(true);
+			main.getLogger().warning(refs.getMsg("wwcConfigVaultSupportInvalid", null));
+		}
 		// Cache Settings
 		try {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
@@ -397,6 +419,7 @@ public class ConfigurationHandler {
 			main.getLogger().info(ChatColor.GREEN
 					+ refs.getMsg("wwcConfigConnectionSuccess", outName, null));
 		}
+		refs.debugMsg("Landing on " + outName);
 		return outName;
 	}
 	

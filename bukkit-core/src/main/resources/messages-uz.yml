@@ -654,4 +654,18 @@ Messages:
   wwcVaultChatProviderFound: 'Vault chat provayderi topildi: {0}.'
   wwcNoVaultChatProvider: Vault o'rnatilgan, lekin hech qanday qo'llab-quvvatlanadigan
     chat provayderi aniqlanmadi.
+  wwcConfigEventPrioritySet: Suhbat tinglovchisi hodisasining ustuvorligini {0} ga
+    sozlang.
+  wwcConfigEventPriorityInvalid: Config.yml da yaroqsiz chat tinglovchisi voqea ustuvorligi.
+    Standart {0} ga sozlash...
+  wwcConfigConversationChatPriorityInput: 'Hozirgi chat tadbirining ustuvor vazifasi
+    {0} hisoblanadi. Ushbu amaldagi ustuvorliklar ro''yxatidan tanlang: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Chat voqea tinglovchisining ustuvorligini
+    o'zgartiring
+  wwcConfigConversationChatPriorityBadInput: Yomon suhbatning ustuvor kiritilishi!
+    Iltimos, yana urinib ko'ring.
+  wwcConfigConversationChatPrioritySuccess: Suhbat hodisangizning ustuvorligini muvaffaqiyatli
+    belgilang.
+  wwcConfigVaultSupportInvalid: Config.yml da yaroqsiz saqlovni qo'llab-quvvatlash
+    o'rnatilgan. To'g'ri deb hisoblash...
 

@@ -659,4 +659,17 @@ Messages:
   wwcVaultChatProviderFound: 'Gjetur një ofrues bisede Vault: {0}.'
   wwcNoVaultChatProvider: Vault është instaluar, por asnjë ofrues i mbështetur i bisedës
     nuk është zbuluar.
+  wwcConfigEventPrioritySet: Vendosni përparësinë e ngjarjes së dëgjuesit të bisedës
+    {0}
+  wwcConfigEventPriorityInvalid: Përparësia e pavlefshme e ngjarjes së dëgjuesit të
+    bisedës në config.yml. Parazgjedhja në {0}...
+  wwcConfigConversationChatPriorityInput: 'Prioriteti aktual i ngjarjes së bisedës
+    është {0}. Zgjidhni nga kjo listë e prioriteteve të vlefshme: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Ndryshoni prioritetin e dëgjuesit të
+  wwcConfigConversationChatPriorityBadInput: Input i keq i përparësisë së bisedës
+    Ju lutemi provoni përsëri.
+  wwcConfigConversationChatPrioritySuccess: Vendosni me sukses prioritetin tuaj të
+    ngjarjes së bised
+  wwcConfigVaultSupportInvalid: Mbështetje e pavlefshme e vlefshme e vendosur në config.yml.
+    Përcaktimi i vërtetë...
 

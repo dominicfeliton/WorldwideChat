@@ -635,4 +635,17 @@ Messages:
   wwcVaultChatProviderFound: 'Tìm thấy nhà cung cấp trò chuyện Vault: {0}.'
   wwcNoVaultChatProvider: Vault đã được cài đặt, nhưng không có nhà cung cấp trò chuyện
     được hỗ trợ nào được phát hiện.
+  wwcConfigEventPrioritySet: Đặt ưu tiên sự kiện người nghe trò chuyện thành {0}.
+  wwcConfigEventPriorityInvalid: Ưu tiên sự kiện người nghe trò chuyện không hợp lệ
+    trong config.yml. Mặc định là {0}...
+  wwcConfigConversationChatPriorityInput: 'Ưu tiên sự kiện trò chuyện hiện tại là
+    {0}. Chọn từ danh sách ưu tiên hợp lệ này: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Thay đổi mức độ ưu tiên của người nghe sự
+    kiện trò chuyện
+  wwcConfigConversationChatPriorityBadInput: Đầu vào ưu tiên trò chuyện xấu! Vui lòng
+    thử lại.
+  wwcConfigConversationChatPrioritySuccess: Thiết lập thành công mức độ ưu tiên sự
+    kiện trò chuyện của bạn.
+  wwcConfigVaultSupportInvalid: Hỗ trợ vault không hợp lệ được đặt trong config.yml.
+    Mặc định là true...
 

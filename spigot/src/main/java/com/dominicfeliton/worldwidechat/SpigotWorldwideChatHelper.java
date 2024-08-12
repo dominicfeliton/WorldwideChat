@@ -5,10 +5,16 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.milkbowl.vault.chat.Chat;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitWorker;
+import org.bukkit.event.HandlerList;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChat.asyncTasksTimeoutSeconds;
 
@@ -20,8 +26,17 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     ServerAdapterFactory adapter = main.getServerFactory();
 
+    private final Queue<Listener> listenerQueue = new LinkedList<>();
+
+    // TODO: Make most of this logic common between us and Paper and derivs
     @Override
     public void checkVaultSupport() {
+        // Skip if config says so
+        if (!main.isVaultSupport()) {
+            main.setChat(null);
+            return;
+        };
+
         // Check if vault is installed at all
         if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
             main.setChat(null);
@@ -42,15 +57,44 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     @Override
     public void registerEventHandlers() {
+        // Unregister all previously registered listeners for this plugin
+        while (!listenerQueue.isEmpty()) {
+            Listener listener = listenerQueue.poll();
+            HandlerList.unregisterAll(listener);
+        }
+
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
-        pluginManager.registerEvents(new ChatListener(), main);
+        SpigotChatListener chat = new SpigotChatListener();
+        pluginManager.registerEvent(
+                AsyncPlayerChatEvent.class,
+                chat,
+                main.getChatPriority(),
+                (listener, event) -> {
+                    ((SpigotChatListener) listener).onPlayerChat((AsyncPlayerChatEvent) event);
+                },
+                main
+        );
+        listenerQueue.add(chat);
+
         if (adapter.getServerInfo().getValue().contains("1.2")) {
+            SignListener sign = new SignListener();
             pluginManager.registerEvents(new SignListener(), main);
+            listenerQueue.add(sign);
         }
-        pluginManager.registerEvents(new OnPlayerJoinListener(), main);
-        pluginManager.registerEvents(new TranslateInGameListener(), main);
-        pluginManager.registerEvents(new InventoryListener(), main);
+
+        OnPlayerJoinListener join = new OnPlayerJoinListener();
+        pluginManager.registerEvents(join, main);
+        listenerQueue.add(join);
+
+        TranslateInGameListener translate = new TranslateInGameListener();
+        pluginManager.registerEvents(translate, main);
+        listenerQueue.add(translate);
+
+        InventoryListener inv = new InventoryListener();
+        pluginManager.registerEvents(inv, main);
+        listenerQueue.add(inv);
+
         main.getLogger().info(ChatColor.LIGHT_PURPLE
                 + refs.getMsg("wwcListenersInitialized", null));
     }
@@ -58,6 +102,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void cleanupTasks(int taskID) {
         // Cancel + remove all tasks
+        // Remember that the scheduler is thread safe on Bukkit, dork
         main.getServer().getScheduler().cancelTasks(main);
 
         // Wait for completion + kill all background tasks

@@ -686,3 +686,17 @@ Messages:
   wwcVaultChatProviderFound: 'J''ai trouvé un fournisseur de chat Vault: {0}.'
   wwcNoVaultChatProvider: Vault est installé, mais aucun fournisseur de chat compatible
     n'a été détecté.
+  wwcConfigEventPrioritySet: Définissez la priorité de l'événement d'écoute du chat
+    sur {0}.
+  wwcConfigEventPriorityInvalid: Priorité d'événement d'écoute de discussion non valide
+    dans config.yml. Par défaut, c'est {0}...
+  wwcConfigConversationChatPriorityInput: 'La priorité actuelle des événements de
+    chat est {0}. Choisissez parmi cette liste de priorités valides: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Modifier la priorité de l'auditeur des événements
+    de discussion
+  wwcConfigConversationChatPriorityBadInput: Mauvaise saisie de la priorité du chat!
+    Veuillez réessayer.
+  wwcConfigConversationChatPrioritySuccess: Définissez avec succès la priorité de
+    votre événement de chat.
+  wwcConfigVaultSupportInvalid: Support de coffre-fort non valide défini dans config.yml.
+    Par défaut, c'est vrai...

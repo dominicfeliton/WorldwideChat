@@ -1,6 +1,8 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.text.Component;
@@ -12,11 +14,51 @@ import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventPriority;
+
+import java.util.Arrays;
 
 public class ChatSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
-	
+
+	private static WWCInventoryManager invMan = new WWCInventoryManager();
+
+	public static class ModifyChatPriority extends StringPrompt {
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+		@Override
+		public String getPromptText(ConversationContext context) {
+			/* Close any open inventories */
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return refs.serial(refs.getFancyMsg("wwcConfigConversationChatPriorityInput",
+					new String[] {"&6" + main.getConfigManager().getMainConfig().getString("Chat.chatListenerPriority"),
+					"&6"+Arrays.toString(EventPriority.values())},
+					"&b",
+					currPlayer));
+		}
+
+		@Override
+		public Prompt acceptInput(ConversationContext context, String input) {
+			Player currPlayer = ((Player) context.getForWhom());
+			boolean valid = false;
+			for (EventPriority eaPriority : EventPriority.values()) {
+				if (eaPriority.name().equalsIgnoreCase(input) || input.equals("0")) {
+					valid = true;
+				}
+			}
+
+			if (valid) {
+				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatPrioritySuccess",
+						"Chat.chatListenerPriority", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv);
+			}
+			refs.sendFancyMsg("wwcConfigConversationChatPriorityBadInput",
+					new String[] {"&6"+Arrays.toString(EventPriority.values())}, "&c", currPlayer);
+			return this;
+		}
+	}
+
 	public static class ModifyOverrideText extends StringPrompt {
 		private SmartInventory previousInventory;
 		

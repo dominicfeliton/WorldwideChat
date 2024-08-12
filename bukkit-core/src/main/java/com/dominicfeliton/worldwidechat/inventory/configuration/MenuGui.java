@@ -44,6 +44,7 @@ public class MenuGui implements InventoryProvider {
 
 	public void genAllConfigUIs() {
 		// TODO: Probably not likely, but is there a more efficient way?
+		// Perhaps generate each inv for every lang? mem impact worrisome but maybe
 		/* Generate inventories */
 		refs.debugMsg("Generating config GUIs!");
 		MenuGui generalSet = new MenuGui(inPlayer, transName);
@@ -187,8 +188,11 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat"));
 		chatSet.add(new ToggleElement(1, 2, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess", "Chat.sendPluginUpdateChat"));
 		chatSet.add(new ToggleElement(1, 3, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat"));
+		chatSet.add(new ToggleElement(1, 4, "wwcConfigGUIVaultSupportButton", "wwcConfigConversationVaultSupportSuccess", "Chat.useVault"));
+		chatSet.add(new ConvoElement(1, 5, "wwcConfigGUIChatListenerPriorityButton", XMaterial.NAME_TAG,
+				new ChatSettingsConvos.ModifyChatPriority()));
 		if (!main.getCurrPlatform().equals("Folia")) {
-			chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()));
+			chatSet.add(new SubMenuElement(1, 6, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()));
 		}
 		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		chatSet.add(new CommonElement(2, 4, "Quit"));

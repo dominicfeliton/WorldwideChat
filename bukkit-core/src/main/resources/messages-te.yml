@@ -632,4 +632,16 @@ Messages:
   wwcVaultChatProviderFound: 'వాల్ట్ చాట్ ప్రొవైడర్ కనుగొనబడింది: {0}.'
   wwcNoVaultChatProvider: వాల్ట్ ఇన్స్టాల్ చేయబడింది, కానీ మద్దతు ఉన్న చాట్ ప్రొవైడర్
     గుర్తించబడలేదు.
+  wwcConfigEventPrioritySet: చాట్ వినేవారి ఈవెంట్ ప్రాధాన్యతను {0} కు సెట్ చేయండి.
+  wwcConfigEventPriorityInvalid: config.yml లో చెల్లని చాట్ వినేవారి ఈవెంట్ ప్రాధాన్యత.
+    {0} కు డిఫాల్ట్ అవుతోంది...
+  wwcConfigConversationChatPriorityInput: 'ప్రస్తుత చాట్ ఈవెంట్ ప్రాధాన్యత {0}. చెల్లుబాటు
+    అయ్యే ప్రాధాన్యతల జాబితా నుండి ఎంచుకోండి: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: చాట్ ఈవెంట్ వినేవారి ప్రాధాన్యతను మార్చండి
+  wwcConfigConversationChatPriorityBadInput: చెడు చాట్ ప్రాధాన్యత ఇన్పుట్! దయచేసి
+    మళ్ళీ ప్రయత్నించండి.
+  wwcConfigConversationChatPrioritySuccess: మీ చాట్ ఈవెంట్ ప్రాధాన్యతను విజయవంతంగా
+    సెట్ చేయండి.
+  wwcConfigVaultSupportInvalid: config.yml లో చెల్లని ఖజానా మద్దతు సెట్ చేయబడింది.
+    నిజానికి డిఫాల్టింగ్...
 

@@ -487,4 +487,12 @@ Messages:
   wwcNoVaultPlugin: Vault がインストールされていません!これにより、インストールされている他のチャットプラグインとの互換性が損なわれる可能性があります。
   wwcVaultChatProviderFound: Vault チャットプロバイダーが見つかりました:{0}.
   wwcNoVaultChatProvider: Vault はインストールされていますが、サポートされているチャットプロバイダーが見つかりませんでした。
+  wwcConfigEventPrioritySet: チャットリスナーイベントの優先度を {0} に設定します。
+  wwcConfigEventPriorityInvalid: config.yml のチャットリスナーイベントの優先度が無効です。デフォルトは {0}...
+  wwcConfigConversationChatPriorityInput: 現在のチャットイベントの優先度は {0} です。有効な優先度のリストから {1}
+    を選択してください。
+  wwcConfigGUIChatListenerPriorityButton: チャットイベントリスナー優先度の変更
+  wwcConfigConversationChatPriorityBadInput: チャットの優先度入力が不正です!もう一度試してください。
+  wwcConfigConversationChatPrioritySuccess: チャットイベントの優先度が正常に設定されました。
+  wwcConfigVaultSupportInvalid: config.yml に設定されているボールトサポートが無効です。デフォルトは true に設定されています...
 

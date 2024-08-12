@@ -627,4 +627,15 @@ Messages:
   wwcVaultChatProviderFound: 'ਇੱਕ ਵਾਲਟ ਚੈਟ ਪ੍ਰਦਾਤਾ ਲੱਭਿਆ: {0}.'
   wwcNoVaultChatProvider: ਵਾਲਟ ਸਥਾਪਤ ਹੈ, ਪਰ ਕੋਈ ਸਮਰਥਿਤ ਚੈਟ ਪ੍ਰਦਾਤਾ ਦਾ ਪਤਾ ਨਹੀਂ ਲਗਾਇਆ
     ਗਿਆ ਹੈ.
+  wwcConfigEventPrioritySet: ਚੈਟ ਸਰੋਨਰ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਤੇ ਸੈਟ ਕਰੋ.
+  wwcConfigEventPriorityInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਚੈਟ ਸੁਣਨ ਵਾਲਿਆਂ ਦੀ ਇਵੈਂਟ ਤਰਜੀਹ.
+    {0} ਤੇ ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ ਹੈ...
+  wwcConfigConversationChatPriorityInput: 'ਮੌਜੂਦਾ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਹੈ. ਵੈਧ ਤਰਜੀਹਾਂ
+    ਦੀ ਇਸ ਸੂਚੀ ਵਿੱਚੋਂ ਚੁਣੋ: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: ਚੈਟ ਇਵੈਂਟ ਸਰੋਨਰ ਤਰਜੀਹ ਬਦਲੋ
+  wwcConfigConversationChatPriorityBadInput: ਖਰਾਬ ਚੈਟ ਤਰਜੀਹ ਇਨਪੁਟ! ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ
+    ਕੋਸ਼ਿਸ਼ ਕਰੋ।
+  wwcConfigConversationChatPrioritySuccess: ਸਫਲਤਾਪੂਰਵਕ ਆਪਣੀ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ
+  wwcConfigVaultSupportInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਵਾਲਟ ਸਪੋਰਟ ਸੈਟ ਕੀਤਾ ਗਿਆ ਹੈ। ਸੱਚ
+    ਨੂੰ ਡਿਫੌਲਟ ਕਰਨਾ...
 

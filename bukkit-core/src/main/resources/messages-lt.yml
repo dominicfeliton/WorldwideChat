@@ -636,4 +636,17 @@ Messages:
   wwcVaultChatProviderFound: 'Rado “Vault” pokalbių teikėją: {0}.'
   wwcNoVaultChatProvider: Vault įdiegtas, tačiau nebuvo aptiktas palaikomas pokalbių
     teikėjas.
+  wwcConfigEventPrioritySet: Nustatykite pokalbių klausytojo renginio prioritetą į
+    {0}.
+  wwcConfigEventPriorityInvalid: Netinkamas pokalbių klausytojo įvykio prioritetas
+    programoje config.yml. Numatytasis nustatymas į {0}...
+  wwcConfigConversationChatPriorityInput: 'Dabartinis pokalbio renginio prioritetas
+    yra {0}. Pasirinkite iš šio galiojančių prioritetų sąrašo: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Pokalbio įvykių klausytojo prioriteto keitimas
+  wwcConfigConversationChatPriorityBadInput: Blogas pokalbio prioriteto įvestis! Prašome
+    pabandyti dar kartą.
+  wwcConfigConversationChatPrioritySuccess: Sėkmingai nustatykite pokalbio renginio
+    prioritetą.
+  wwcConfigVaultSupportInvalid: Neteisingas saugyklos palaikymas nustatytas config.yml.
+    Numatyta tiesa...
 

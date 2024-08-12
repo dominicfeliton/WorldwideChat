@@ -685,4 +685,18 @@ Messages:
   wwcVaultChatProviderFound: 'Βρέθηκε ένας πάροχος συνομιλίας Vault: {0}.'
   wwcNoVaultChatProvider: Το Vault είναι εγκατεστημένο, αλλά δεν έχει εντοπιστεί υποστηριζόμενος
     πάροχος συνομιλίας.
+  wwcConfigEventPrioritySet: Ορίστε την προτεραιότητα συμβάντος ακροατών συνομιλίας
+    σε {0}.
+  wwcConfigEventPriorityInvalid: Μη έγκυρη προτεραιότητα συμβάντος ακροατή συνομιλίας
+    στο config.yml. Προεπιλογή σε {0}...
+  wwcConfigConversationChatPriorityInput: 'Η τρέχουσα προτεραιότητα συμβάντος συνομιλίας
+    είναι {0}. Επιλέξτε από αυτήν τη λίστα έγκυρων προτεραιοτήτων: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Αλλαγή προτεραιότητας ακροατών συμβάντων
+    συνομιλίας
+  wwcConfigConversationChatPriorityBadInput: Κακή εισαγωγή προτεραιότητας συνομιλίας!
+    Παρακαλώ προσπαθήστε ξανά.
+  wwcConfigConversationChatPrioritySuccess: Ορίστε με επιτυχία την προτεραιότητα συμβάντων
+    συνομιλίας σας.
+  wwcConfigVaultSupportInvalid: Μη έγκυρη υποστήριξη θυρίδας αποθήκευσης έχει οριστεί
+    στο config.yml. Η προεπιλογή είναι αληθής...
 

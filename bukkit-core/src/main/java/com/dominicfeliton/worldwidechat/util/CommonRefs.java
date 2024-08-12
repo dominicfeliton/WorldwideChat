@@ -69,7 +69,6 @@ public class CommonRefs {
 
 	public static final Map<String, String> translatorPairs = new HashMap<>();
 	static {
-		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
 		translatorPairs.put("Translator.useGoogleTranslate", "Google Translate");
 		translatorPairs.put("Translator.useAmazonTranslate", "Amazon Translate");
 		translatorPairs.put("Translator.useLibreTranslate", "Libre Translate");
@@ -77,6 +76,7 @@ public class CommonRefs {
 		translatorPairs.put("Translator.useWatsonTranslate", "Watson");
 		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
 		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
+		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
 	}
 
 	public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
@@ -434,6 +434,7 @@ public class CommonRefs {
 	  */
 	public String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
+		debugMsg("translateText() call using " + main.getTranslatorName());
 		if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
 			return inMessage;
 		}

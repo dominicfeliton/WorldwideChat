@@ -516,4 +516,12 @@ Messages:
   wwcNoVaultPlugin: Vault가 설치되지 않았습니다!이로 인해 설치된 다른 채팅 플러그인과의 호환성이 손상될 수 있습니다.
   wwcVaultChatProviderFound: 'Vault 채팅 제공업체를 찾았습니다: {0}.'
   wwcNoVaultChatProvider: Vault가 설치되었지만 지원되는 채팅 공급자가 검색되지 않았습니다.
+  wwcConfigEventPrioritySet: 채팅 리스너 이벤트 우선순위를 {0} 로 설정합니다.
+  wwcConfigEventPriorityInvalid: config.yml의 채팅 리스너 이벤트 우선 순위가 잘못되었습니다.기본값은 {0}...
+  wwcConfigConversationChatPriorityInput: 현재 채팅 이벤트 우선순위는 {0} 입니다.유효한 우선순위 목록 ({1})
+    중에서 선택하세요.
+  wwcConfigGUIChatListenerPriorityButton: 채팅 이벤트 리스너 우선순위 변경
+  wwcConfigConversationChatPriorityBadInput: 채팅 우선순위 입력이 잘못되었습니다!다시 시도해 주세요.
+  wwcConfigConversationChatPrioritySuccess: 채팅 이벤트 우선순위를 성공적으로 설정했습니다.
+  wwcConfigVaultSupportInvalid: config.yml에 설정된 저장소 지원이 잘못되었습니다.기본값은 true입니다...
 

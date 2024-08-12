@@ -658,4 +658,16 @@ Messages:
   wwcVaultChatProviderFound: 'வால்ட் அரட்டை வழங்குநரைக் கண்டுபிடித்தது: {0}.'
   wwcNoVaultChatProvider: வோல்ட் நிறுவப்பட்டுள்ளது, ஆனால் ஆதரிக்கப்படும் அரட்டை வழங்குநர்
     எதுவும் கண்டறியப்படவில்லை.
+  wwcConfigEventPrioritySet: அரட்டை கேட்பவர் நிகழ்வு முன்னுரிமை {0} ஆக அமைக்கவும்
+  wwcConfigEventPriorityInvalid: config.yml இல் தவறான அரட்டை கேட்பவர் நிகழ்வு முன்னுரிமை.
+    {0} ஆக இயல்பாதது...
+  wwcConfigConversationChatPriorityInput: 'தற்போதைய அரட்டை நிகழ்வு முன்னுரிமை {0}
+    ஆகும். செல்லுபடியாகும் முன்னுரிமைகளின் இந்த பட்டியலிலிருந்து தேர்வு செய்யவும்:
+    {1}.'
+  wwcConfigGUIChatListenerPriorityButton: அரட்டை நிகழ்வு கேட்பவர் முன்னுரிமை
+  wwcConfigConversationChatPriorityBadInput: மோசமான அரட்டை முன்னுரிமை உள்ளீடு! மீண்டும்
+    முயற்சிக்கவும்.
+  wwcConfigConversationChatPrioritySuccess: உங்கள் அரட்டை நிகழ்வு முன்னுரிமையை வெற்றிகரமாகக்
+  wwcConfigVaultSupportInvalid: config.yml இல் செல்லப்படாத வோல்ட் ஆதரவு அமைக்கப்பட்டுள்ளது.
+    உண்மையாக இயல்பாதது...
 

@@ -664,4 +664,16 @@ Messages:
   wwcVaultChatProviderFound: 'Fuarthas soláthraí comhrá Vault: {0}.'
   wwcNoVaultChatProvider: Tá Vault suiteáilte, ach níor aimsíodh aon sholáthraí comhrá
     tacaithe.
+  wwcConfigEventPrioritySet: Socraigh tosaíocht imeachta éisteora comhrá do {0}.
+  wwcConfigEventPriorityInvalid: Tosaíocht imeachta éisteora comhrá neamhbhailí i
+    config.yml. Ag réamhshocrú go {0}...
+  wwcConfigConversationChatPriorityInput: 'Is é {0} an tosaíocht imeachta comhrá reatha.
+    Roghnaigh ón liosta seo de thosaíochtaí bailí: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Athraigh Tosaíocht Éisteora Imeachta
+  wwcConfigConversationChatPriorityBadInput: Ionchur tosaíochta comhrá droch! Bain
+    triail as arís.
+  wwcConfigConversationChatPrioritySuccess: Socraigh go rathúil do thosaíocht imeachta
+    comhrá.
+  wwcConfigVaultSupportInvalid: Tacaíocht cruinneachán neamhbhailí atá leagtha síos
+    i config.yml. Ag réamhshocrú go fíor...
 

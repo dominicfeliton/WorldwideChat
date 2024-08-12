@@ -566,4 +566,14 @@ Messages:
     אחרים.
   wwcVaultChatProviderFound: 'מצאתי ספק צ''אט בכספת: {0}.'
   wwcNoVaultChatProvider: הכספת מותקנת, אך לא זוהה ספק צ'אט נתמך.
+  wwcConfigEventPrioritySet: הגדר עדיפות לאירוע מאזיני צ'אט ל- {0}.
+  wwcConfigEventPriorityInvalid: עדיפות אירועי מאזינים בצ'אט לא חוקית ב- config.yml.
+    ברירת המחדל היא {0}...
+  wwcConfigConversationChatPriorityInput: 'עדיפות אירועי הצ''אט הנוכחית היא {0}. בחר
+    מתוך רשימה זו של סדרי עדיפויות תקפים: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: שנה עדיפות מאזינים לאירועי צ'אט
+  wwcConfigConversationChatPriorityBadInput: קלט עדיפות צ'אט גרוע! אנא נסה שוב.
+  wwcConfigConversationChatPrioritySuccess: הגדר בהצלחה את עדיפות אירועי הצ'אט שלך.
+  wwcConfigVaultSupportInvalid: תמיכה בכספת לא חוקית מוגדרת ב- config.yml. ברירת מחדל
+    נכון...
 

@@ -584,4 +584,15 @@ Messages:
     المثبتة الأخرى.
   wwcVaultChatProviderFound: 'تم العثور على موفر دردشة Vault: {0}.'
   wwcNoVaultChatProvider: تم تثبيت Vault، ولكن لم يتم اكتشاف موفر دردشة مدعوم.
+  wwcConfigEventPrioritySet: قم بتعيين أولوية حدث مستمع الدردشة إلى {0}.
+  wwcConfigEventPriorityInvalid: أولوية حدث مستمع الدردشة غير صالحة في config.yml.
+    الإعداد الافتراضي لـ {0}...
+  wwcConfigConversationChatPriorityInput: 'أولوية حدث الدردشة الحالي هي {0}. اختر
+    من قائمة الأولويات الصحيحة هذه: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: تغيير أولوية مستمع حدث الدردشة
+  wwcConfigConversationChatPriorityBadInput: إدخال أولوية الدردشة السيئة! يرجى المحاولة
+    مرة أخرى.
+  wwcConfigConversationChatPrioritySuccess: تم تعيين أولوية حدث الدردشة بنجاح.
+  wwcConfigVaultSupportInvalid: تم تعيين دعم مخزن غير صالح في config.yml. يتم الانتقال
+    إلى «صحيح»...
 

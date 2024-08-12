@@ -699,4 +699,17 @@ Messages:
   wwcVaultChatProviderFound: 'Natagpuan ang isang Vault chat provider: {0}.'
   wwcNoVaultChatProvider: Naka-install ang Vault, ngunit walang sinusuportahang chat
     provider ang nakita.
+  wwcConfigEventPrioritySet: Itakda ang prayoridad ng kaganapan sa tagapakinig ng
+    chat sa {0}
+  wwcConfigEventPriorityInvalid: Hindi wastong priyoridad ng kaganapan sa tagapakinig
+    ng chat sa config.yml. Pag-default sa {0}...
+  wwcConfigConversationChatPriorityInput: 'Ang kasalukuyang priyoridad sa chat event
+    ay {0}. Pumili mula sa listahang ito ng mga wastong prayoridad: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Baguhin ang Prioryoridad ng Tagapakinig
+  wwcConfigConversationChatPriorityBadInput: Masamang input ng prayoridad sa chat!
+    Mangyaring subukang muli.
+  wwcConfigConversationChatPrioritySuccess: Matagumpay na itakda ang iyong priyoridad
+    sa chat event
+  wwcConfigVaultSupportInvalid: Hindi wastong suporta sa vault na nakatakda sa config.yml.
+    Pag-default sa totoo...
 

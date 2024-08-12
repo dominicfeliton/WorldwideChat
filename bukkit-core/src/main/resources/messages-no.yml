@@ -608,4 +608,16 @@ Messages:
   wwcVaultChatProviderFound: 'Fant en Vault-chatleverandør: {0}.'
   wwcNoVaultChatProvider: Vault er installert, men ingen støttet chat-leverandør har
     blitt oppdaget.
+  wwcConfigEventPrioritySet: Sett hendelsesprioritet for chatlytteren til {0}.
+  wwcConfigEventPriorityInvalid: Ugyldig hendelsesprioritet for chatlytteren i config.yml.
+    Standard til {0}...
+  wwcConfigConversationChatPriorityInput: 'Gjeldende prioritering for chat-hendelse
+    er {0}. Velg fra denne listen over gyldige prioriteringer: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Endre lytterprioritet for chathendelse
+  wwcConfigConversationChatPriorityBadInput: Dårlig chatprioritetsinngang! Vennligst
+    prøv igjen.
+  wwcConfigConversationChatPrioritySuccess: Angi prioriteten for chat-hendelsen din
+    med hell.
+  wwcConfigVaultSupportInvalid: Ugyldig hvelvstøtte angitt i config.yml. Standardiserer
+    til sant...
 

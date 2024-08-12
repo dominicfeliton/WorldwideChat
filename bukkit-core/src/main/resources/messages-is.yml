@@ -634,4 +634,16 @@ Messages:
     uppsettar spjallviðbætur.
   wwcVaultChatProviderFound: 'Fann Vault spjallveitu: {0}.'
   wwcNoVaultChatProvider: Vault er uppsett en engin studd spjallveiti hefur fundist.
+  wwcConfigEventPrioritySet: Stilltu forgang viðburðarviðburða spjallhlustenda á {0}.
+  wwcConfigEventPriorityInvalid: Ógild forgangur viðburða spjallhlustandans í config.yml.
+    Sjálfgefið að {0}...
+  wwcConfigConversationChatPriorityInput: 'Núverandi forgangur spjallviðburðar er
+    {0}. Veldu úr þessum lista yfir gilda forgangsröðun: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Breyta forgangi hlustenda á spjallviðburði
+  wwcConfigConversationChatPriorityBadInput: Slæmt forgangsinntak í spjalli! Vinsamlegast
+    reyndu aftur.
+  wwcConfigConversationChatPrioritySuccess: Settu forgang spjallviðburðar þíns með
+    góðum árangri.
+  wwcConfigVaultSupportInvalid: Ógildur stuðningur við gröfu sett í config.yml. Að
+    vanskil á satt...
 

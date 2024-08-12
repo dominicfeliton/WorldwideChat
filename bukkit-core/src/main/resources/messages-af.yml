@@ -629,4 +629,17 @@ Messages:
   wwcVaultChatProviderFound: 'Gevind ''n Vault -kletsverskaffer: {0}.'
   wwcNoVaultChatProvider: Vault is geïnstalleer, maar geen ondersteunde kletsverskaffer
     is opgespoor nie.
+  wwcConfigEventPrioritySet: Stel geselsluisteraar se gebeurtenisprioriteit op {0}.
+  wwcConfigEventPriorityInvalid: Ongeldige geselskuisteraar gebeurtenisprioriteit
+    in config.yml. Standaard op {0}...
+  wwcConfigConversationChatPriorityInput: 'Die huidige klessgeleenthede prioriteit
+    is {0}. Kies uit hierdie lys van geldige prioriteite: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Verander die prioriteit vir luisteraar vir
+    die ges
+  wwcConfigConversationChatPriorityBadInput: Slegte chat prioriteitsinvoer! Probeer
+    asseblief weer.
+  wwcConfigConversationChatPrioritySuccess: Stel u geselsgebeurtenisprioriteit suksesvol
+    in.
+  wwcConfigVaultSupportInvalid: Ongeldige kluisondersteuning gestel in config.yml.
+    Standaard tot waar...
 

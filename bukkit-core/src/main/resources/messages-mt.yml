@@ -632,4 +632,17 @@ Messages:
   wwcVaultChatProviderFound: 'Sibt fornitur tal-chat Vault: {0}.'
   wwcNoVaultChatProvider: Vault huwa installat, iżda l-ebda fornitur taċ-chat appoġġjat
     ma ġie skopert.
+  wwcConfigEventPrioritySet: Issettja l-prijorità tal-avveniment tas-semmiegħa taċ-chat
+    {0}
+  wwcConfigEventPriorityInvalid: Prijorità ta' avveniment tas-semmiegħa taċ-chat invalidu
+    f'config.yml. Insuffiċjenza għal {0}...
+  wwcConfigConversationChatPriorityInput: 'Il-prijorità attwali tal-avveniment taċ-chat
+    hija {0}. Agħżel minn din il-lista ta'' prijoritajiet validi: {1}.'
+  wwcConfigGUIChatListenerPriorityButton: Ibdel il-Prijorità tas-Semmiegħa tal-
+  wwcConfigConversationChatPriorityBadInput: Input ta 'prijorità ta' chat ħażin! Jekk
+    jogħġbok ipprova mill-ġdid.
+  wwcConfigConversationChatPrioritySuccess: Issettja b'suċċess il-prijorità tal-avveniment
+    chat tiegħek
+  wwcConfigVaultSupportInvalid: Appoġġ għall-forti invalidu stabbilit f'config.yml.
+    Insuffiċjenza għal veru...
 
