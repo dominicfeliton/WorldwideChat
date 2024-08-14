@@ -11,9 +11,9 @@ import net.kyori.adventure.text.format.Style;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.milkbowl.vault.chat.Chat;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
+import org.bukkit.command.CommandSender;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
@@ -45,7 +45,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
 					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
 				outgoingText = refs.translateText(event.getMessage(), event.getPlayer());
-				if (!main.isUseSeparateChatChannel()) {
+				if (!channel) {
 					event.setMessage(outgoingText);
 				}
 			}
@@ -92,19 +92,21 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 					continue;
 				}
 
-				Component incomingMessage = formatMessage(event, eaRecipient, translation, true);
+				Component incomingMessage = formatMessage(event, translation, true);
 				sendChatMessage(eaRecipient, incomingMessage);
 			}
 			event.getRecipients().retainAll(unmodifiedMessageRecipients);
 
-
 			// If we are on a separate chat channel & pending outgoing message, send to remaining recipients
-			if (main.isUseSeparateChatChannel() && !outgoingText.equals(event.getMessage())) {
-				refs.debugMsg("Sending pending outgoing message...");
+			if (channel && !outgoingText.equals(event.getMessage())) {
+				refs.debugMsg("Init pending outgoing message...");
+				Component outgoingMessage = formatMessage(event, outgoingText, false);
 				for (Player eaRecipient : event.getRecipients()) {
-					Component outgoingMessage = formatMessage(event, eaRecipient, outgoingText, false);
 					sendChatMessage(eaRecipient, outgoingMessage);
 				}
+				// Console
+				sendChatMessage(null, outgoingMessage);
+
 				refs.debugMsg("Cancelling chat event.");
 				event.setCancelled(true);
 			}
@@ -116,12 +118,12 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 		}
 	}
 
-	private Component formatMessage(AsyncPlayerChatEvent event, Player eaRecipient, String translation, boolean incoming) {
+	private Component formatMessage(AsyncPlayerChatEvent event, String translation, boolean incoming) {
 		Chat chat = main.getChat();
 		Component outMsg;
 		if (chat != null) {
 			// Vault Support
-			outMsg = super.getVaultMessage(eaRecipient, event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
+			outMsg = super.getVaultMessage(event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
 		} else {
 			// No Vault Support
 			TextComponent icon = main.getTranslateIcon();
@@ -142,10 +144,18 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 		if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
 			// If we are on Paper but using Spigot, we assume that Adventure is not installed.
 			// Note that this does not support hover text.
-			eaRecipient.sendMessage(refs.serial(outMessage));
+			if (eaRecipient != null) {
+				eaRecipient.sendMessage(refs.serial(outMessage));
+			} else {
+				main.getServer().getConsoleSender().sendMessage(refs.serial(outMessage));
+			}
 		} else {
 			try {
-				main.adventure().sender(eaRecipient).sendMessage(outMessage);
+				if (eaRecipient != null) {
+					main.adventure().sender(eaRecipient).sendMessage(outMessage);
+				} else {
+					main.adventure().console().sendMessage(outMessage);
+				}
 			} catch (IllegalStateException e) {}
 		}
 	}

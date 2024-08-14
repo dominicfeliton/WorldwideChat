@@ -18,6 +18,7 @@ import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.eclipse.sisu.inject.Legacy;
 import org.jetbrains.annotations.NotNull;
@@ -37,20 +38,25 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                 return;
             }
             refs.debugMsg("Using paperChatListener.");
+            boolean channel = main.isUseSeparateChatChannel();
 
-            /* Original WWC functionality/Translate Outgoing Messages */
+            /* Translate Outgoing Messages */
             refs.debugMsg("Begin translating outgoing messages...");
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
+            Component outgoingText = event.message();
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
                     || (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-                Component originalText = refs.deserial(refs.translateText(refs.serial(event.originalMessage()), event.getPlayer()));
-                event.message(originalText);
+                outgoingText = refs.deserial(refs.translateText(refs.serial(event.originalMessage()), event.getPlayer()));
+                if (!channel) {
+                    event.message(outgoingText);
+                }
             }
 
-            /* New WWC functionality/Translate Incoming Messages */
+            /* Translate Incoming Messages */
             refs.debugMsg("Begin translating incoming messages...");
+
             Set<Audience> unmodifiedMessageRecipients = new HashSet<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 // Do not handle non-players
@@ -91,7 +97,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
                 // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + convert to Component
-                String originalText = refs.serial(event.message());
+                String originalText = refs.serial(outgoingText);
                 String translation = refs.translateText(originalText, currPlayer);
                 if (translation.equalsIgnoreCase(originalText)) {
                     refs.debugMsg("Translation unsuccessful/same as original message for " + currPlayer.getName());
@@ -100,24 +106,22 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                 }
 
                 // Re-render original message but with new text.
-                Component outMsg;
-                Chat chat = main.getChat();
-                if (chat != null) {
-                    outMsg = super.getVaultMessage(currPlayer, event.getPlayer(), refs.deserial(translation), event.getPlayer().displayName());
-                } else {
-                    refs.debugMsg("Rendering new message for current player ( " + currPlayer.getName() + "  : " + translation + " )");
-                    outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), refs.deserial(translation));
-                }
-
-                // Add hover text w/original message
-                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-                    outMsg = outMsg
-                            .hoverEvent(HoverEvent.showText(Component.text(originalText).decorate(TextDecoration.ITALIC)));
-                }
-
+                Component outMsg = formatMessage(event, refs.deserial(translation), true);
                 currPlayer.sendMessage(outMsg);
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
+
+            // If we are on a separate chat channel & pending outgoing message, send to remaining recipients
+            if (channel && !outgoingText.equals(event.message())) {
+                refs.debugMsg("Init pending outgoing message...");
+                Component outgoingMessage = formatMessage(event, outgoingText, false);
+                for (Audience eaRecipient : event.viewers()) {
+                    eaRecipient.sendMessage(outgoingMessage);
+                }
+
+                refs.debugMsg("Cancelling chat event.");
+                event.setCancelled(true);
+            }
         } catch (Exception e) {
             if (!refs.serverIsStopping()) {
                 throw e;
@@ -127,11 +131,30 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
     @Override
     public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
-        return component
+        return Component.empty()
+                .append(main.getTranslateIcon())
+                .append(component)
                 .append(Component.text(":"))
                 .append(Component.space())
-                .append(component1)
-                .append(Component.space())
-                .append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));
+                .append(component1);
+    }
+
+    private Component formatMessage(AsyncChatEvent event, Component translation, boolean incoming) {
+        Component outMsg;
+        Chat chat = main.getChat();
+        if (chat != null) {
+            outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().displayName());
+        } else {
+            outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), translation);
+        }
+
+        // Add hover text w/original message
+        // TODO: This sucks make it better
+        if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+            outMsg = outMsg
+                    .hoverEvent(HoverEvent.showText(translation.decorate(TextDecoration.ITALIC)));
+        }
+
+        return outMsg;
     }
 }

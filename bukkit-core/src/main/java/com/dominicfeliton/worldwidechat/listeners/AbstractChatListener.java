@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
@@ -23,21 +24,15 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
     @EventHandler
     public abstract void onPlayerChat(T event);
 
-    public Component getVaultMessage(Player eventPlayer, Component message, Component displayName) {
-        return getVaultMessage(null, eventPlayer, message, displayName);
+    public Component getVaultMessage(Player eventPlayer, String message, String displayName) {
+        return getVaultMessage(eventPlayer, refs.deserial(message), refs.deserial(displayName));
     }
+
     // To provide one common method for spigot/paper/folia/etc.
     // We assume that Vault is functional and has a valid ChatProvider set
-    public Component getVaultMessage(Player targetPlayer, Player eventPlayer, Component message, Component displayName) {
-        if (targetPlayer == null) {
-            targetPlayer = eventPlayer;
-            refs.debugMsg("Translating outgoing message!");
-        } else {
-            refs.debugMsg("Translating incoming message!");
-        }
+    public Component getVaultMessage(Player eventPlayer, Component message, Component displayName) {
         Chat chat = main.getChat();
 
-        refs.debugMsg("Generating message for " + targetPlayer.getName() + " w/ Vault info...");
         refs.debugMsg(chat.getPlayerPrefix(eventPlayer));
         refs.debugMsg(chat.getPlayerSuffix(eventPlayer));
         PluginManager man = main.getServer().getPluginManager();
@@ -54,22 +49,24 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
                     .append(Component.space())
                     .append(message);
         } else {
-            refs.debugMsg("Default!");
-            outMsg = Component.empty()
-                    .append(icon)
-                    .append(Component.text(chat.getPlayerPrefix(eventPlayer)))
-                    .append(displayName)
-                    .append(Component.text(chat.getPlayerSuffix(eventPlayer)))
-                    .append(Component.text(":"))
-                    .append(Component.space())
-                    .append(message);
+            outMsg = getDefaultVaultMessage(eventPlayer, chat, displayName, icon, message);
         }
 
         return outMsg;
     }
 
-    public Component getVaultMessage(Player targetPlayer, Player eventPlayer, String message, String displayName) {
-        return getVaultMessage(targetPlayer, eventPlayer, refs.deserial(message), refs.deserial(displayName));
+    private Component getDefaultVaultMessage(Player eventPlayer, Chat chat, Component displayName, Component icon, Component message) {
+        refs.debugMsg("Default!");
+        return Component.empty()
+                .append(icon)
+                .append(LegacyComponentSerializer.legacyAmpersand().deserialize(
+                        chat.getPlayerPrefix(eventPlayer)))
+                .append(displayName)
+                .append(LegacyComponentSerializer.legacyAmpersand().deserialize(
+                        chat.getPlayerSuffix(eventPlayer)))
+                .append(Component.text(":"))
+                .append(Component.space())
+                .append(message);
     }
 
 }
