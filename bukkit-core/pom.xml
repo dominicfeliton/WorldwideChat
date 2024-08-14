@@ -53,12 +53,12 @@
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-platform-bukkit</artifactId>
-      <version>4.3.3</version>
+      <version>4.3.4</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
       <artifactId>adventure-platform-api</artifactId>
-      <version>4.3.3</version>
+      <version>4.3.4</version>
     </dependency>
     <dependency>
       <groupId>net.kyori</groupId>
@@ -83,7 +83,7 @@
     <dependency>
       <groupId>com.github.MilkBowl</groupId>
       <artifactId>VaultAPI</artifactId>
-      <version>1.7</version>
+      <version>1.7.1</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -110,7 +110,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.4.0</version>
+        <version>3.4.1</version>
         <configuration>
           <mainClass>com.dominicfeliton.yamltranslator.YAMLTranslator</mainClass>
           <cleanupDaemonThreads>false</cleanupDaemonThreads>

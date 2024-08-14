@@ -40,7 +40,7 @@
     <dependency>
       <groupId>com.github.MilkBowl</groupId>
       <artifactId>VaultAPI</artifactId>
-      <version>1.7</version>
+      <version>1.7.1</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -107,7 +107,8 @@
               <include>net.kyori:*</include>
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
-              <include>com.amazonaws:*</include>
+              <include>software.amazon.awssdk:*</include>
+              <include>org.reactivestreams:reactive-streams</include>
               <include>org.jsoup:jsoup</include>
               <include>com.fasterxml.jackson.core:*</include>
               <include>com.fasterxml.jackson.dataformat:*</include>
