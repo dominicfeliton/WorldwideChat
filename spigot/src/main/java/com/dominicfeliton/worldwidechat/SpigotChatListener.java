@@ -4,6 +4,7 @@ import com.dominicfeliton.worldwidechat.listeners.AbstractChatListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
@@ -31,19 +32,23 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 				return;
 			}
 			refs.debugMsg("Begin spigot chatlistener.");
+			boolean channel = main.isUseSeparateChatChannel();
 
-			// Original WWC functionality/Translate Outgoing Messages
+			// Translate Outgoing Messages
 			refs.debugMsg("Begin translating outgoing messages...");
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
 			String currInLang = currTranslator.getInLangCode();
 			String currOutLang = currTranslator.getOutLangCode();
+			String outgoingText = event.getMessage();
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
 					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-				String eventText = refs.translateText(event.getMessage(), event.getPlayer());
-				event.setMessage(eventText);
+				outgoingText = refs.translateText(event.getMessage(), event.getPlayer());
+				if (!main.isUseSeparateChatChannel()) {
+					event.setMessage(outgoingText);
+				}
 			}
 			
-			// New WWC functionality/Translate Incoming Messages
+			// Translate Incoming Messages
 			refs.debugMsg("Begin translating incoming messages...");
 
 			Set<Player> unmodifiedMessageRecipients = new HashSet<Player>();
@@ -78,46 +83,66 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 
 				// If all checks pass, translate an incoming message for the current translator.
 				// Translate message + get original format
-				String translation = refs.translateText(event.getMessage(), eaRecipient);
+				String translation = refs.translateText(outgoingText, eaRecipient);
 				if (translation.equalsIgnoreCase(event.getMessage())) {
 					refs.debugMsg("Translation unsuccessful/same as original message for " + eaRecipient.getName());
 					unmodifiedMessageRecipients.add(eaRecipient);
 					continue;
 				}
 
-				String outMessageWithoutHover;
-				Chat chat = main.getChat();
-				if (chat != null) {
-					outMessageWithoutHover = super.getVaultMessage(eaRecipient, event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
-				} else {
-					outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
-				}
-
-				if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
-					// If we are on Paper but using Spigot, we assume that Adventure is not installed.
-					// Note that this does not support hover text.
-					eaRecipient.sendMessage(outMessageWithoutHover);
-				} else {
-					try {
-						// Convert to TextComponent for hoverText
-						Component hoverOutMessage = refs.deserial(outMessageWithoutHover);
-
-						if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-							hoverOutMessage = Component.text()
-									.content(outMessageWithoutHover)
-									.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-									.build();
-						}
-
-						main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
-					} catch (IllegalStateException e) {}
-				}
+				Component incomingMessage = formatMessage(event, eaRecipient, translation, true);
+				sendChatMessage(eaRecipient, incomingMessage);
 			}
 			event.getRecipients().retainAll(unmodifiedMessageRecipients);
+
+
+			// If we are on a separate chat channel & pending outgoing message, send to remaining recipients
+			if (main.isUseSeparateChatChannel() && !outgoingText.equals(event.getMessage())) {
+				refs.debugMsg("Sending pending outgoing message...");
+				for (Player eaRecipient : event.getRecipients()) {
+					Component outgoingMessage = formatMessage(event, eaRecipient, outgoingText, false);
+					sendChatMessage(eaRecipient, outgoingMessage);
+				}
+				refs.debugMsg("Cancelling chat event.");
+				event.setCancelled(true);
+			}
+
 		} catch (Exception e) {
 			if (!refs.serverIsStopping()) {
 				throw e;
 			}
+		}
+	}
+
+	private Component formatMessage(AsyncPlayerChatEvent event, Player eaRecipient, String translation, boolean incoming) {
+		Chat chat = main.getChat();
+		Component outMsg;
+		if (chat != null) {
+			// Vault Support
+			outMsg = super.getVaultMessage(eaRecipient, event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
+		} else {
+			// No Vault Support
+			TextComponent icon = main.getTranslateIcon() == null ? Component.empty() : main.getTranslateIcon();
+			outMsg = icon.append(refs.deserial(String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation)));
+		}
+
+		if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+			outMsg = outMsg
+					.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)));
+		}
+
+		return outMsg;
+	}
+
+	private void sendChatMessage(Player eaRecipient, Component outMessage) {
+		if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
+			// If we are on Paper but using Spigot, we assume that Adventure is not installed.
+			// Note that this does not support hover text.
+			eaRecipient.sendMessage(refs.serial(outMessage));
+		} else {
+			try {
+				main.adventure().sender(eaRecipient).sendMessage(outMessage);
+			} catch (IllegalStateException e) {}
 		}
 	}
 }

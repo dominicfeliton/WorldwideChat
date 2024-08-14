@@ -49,6 +49,7 @@ Messages:
   wwcNoVaultPlugin: 'Vault is not installed! This may break compatibility with other installed chat plugins.'
   wwcVaultChatProviderFound: 'Found a Vault chat provider: {0}.'
   wwcNoVaultChatProvider: 'Vault is installed, but no supported chat provider has been detected.'
+  wwcWatsonDeprecation: 'Watson has been deprecated and is no longer supported by IBM. Please consider switching, as support for it will be removed in the next update.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

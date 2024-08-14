@@ -44,7 +44,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08112024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08132024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -98,6 +98,9 @@ public class WorldwideChat extends JavaPlugin {
 			.append(Component.text().content("]").color(NamedTextColor.DARK_RED))
 			.build();
 
+	private TextComponent translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
+			.append(Component.space());
+
 	private int updateCheckerDelay = 86400;
 
 	private int syncUserDataDelay = 7200;
@@ -111,6 +114,8 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean vaultSupport = true;
 
 	private EventPriority chatPriority = EventPriority.HIGHEST;
+
+	private boolean useSeparateChatChannel = true;
 
 	private int errorLimit = 5;
 
@@ -667,6 +672,19 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Setters */
+	public void setTranslateIcon(String i) {
+		if (i.equalsIgnoreCase("None")) {
+			translateIcon = null;
+			return;
+		}
+
+		translateIcon = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
+	}
+
+	public void setUseSeparateChatChannel(boolean i) {
+		useSeparateChatChannel = i;
+	}
+
 	public void setChatPriority(EventPriority p) {
 		chatPriority = p;
 	}
@@ -883,6 +901,14 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
+	public TextComponent getTranslateIcon() {
+		return translateIcon;
+	}
+
+	public boolean isUseSeparateChatChannel() {
+		return useSeparateChatChannel;
+	}
+
 	public Chat getChat() {
 		return vaultSupport ? chat : null;
 	}

@@ -417,6 +417,8 @@ public class ConfigurationHandler {
 		}
 		if (outName.equals("Invalid")) {
 			main.getLogger().severe(refs.getMsg("wwcInvalidTranslator", null));
+		} else if (outName.equals("Watson")) {
+			main.getLogger().warning(refs.getMsg("wwcWatsonDeprecation", null));
 		} else {
 			main.getLogger().info(ChatColor.GREEN
 					+ refs.getMsg("wwcConfigConnectionSuccess", outName, null));
