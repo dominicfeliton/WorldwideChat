@@ -34,7 +34,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 				return;
 			}
 			refs.debugMsg("Begin spigot chatlistener.");
-			boolean channel = main.isUseSeparateChatChannel();
+			boolean channel = main.isForceSeparateChatChannel();
 
 			// Translate Outgoing Messages
 			refs.debugMsg("Begin translating outgoing messages...");
@@ -123,7 +123,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 		Component outMsg;
 		if (chat != null) {
 			// Vault Support
-			outMsg = super.getVaultMessage(event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
+			outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().getName());
 		} else {
 			// No Vault Support
 			TextComponent icon = main.getTranslateIcon();

@@ -24,47 +24,27 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
     @EventHandler
     public abstract void onPlayerChat(T event);
 
-    public Component getVaultMessage(Player eventPlayer, String message, String displayName) {
-        return getVaultMessage(eventPlayer, refs.deserial(message), refs.deserial(displayName));
+    public Component getVaultMessage(Player eventPlayer, String message, String name) {
+        return getVaultMessage(eventPlayer, refs.deserial(message), refs.deserial(name));
     }
 
     // To provide one common method for spigot/paper/folia/etc.
     // We assume that Vault is functional and has a valid ChatProvider set
-    public Component getVaultMessage(Player eventPlayer, Component message, Component displayName) {
+    public Component getVaultMessage(Player eventPlayer, Component message, Component name) {
         Chat chat = main.getChat();
 
         refs.debugMsg(chat.getPlayerPrefix(eventPlayer));
         refs.debugMsg(chat.getPlayerSuffix(eventPlayer));
         PluginManager man = main.getServer().getPluginManager();
-        TextComponent icon = main.getTranslateIcon() == null ? Component.empty() : main.getTranslateIcon();
         Component outMsg;
 
-        if (man.getPlugin("EssentialsChat") != null) {
-            // EssX makes displayName include prefix/suffix...
-            refs.debugMsg("EssentialsChat!");
-            outMsg = Component.empty()
-                    .append(icon)
-                    .append(displayName)
-                    .append(Component.text(":"))
-                    .append(Component.space())
-                    .append(message);
-        } else {
-            outMsg = getDefaultVaultMessage(eventPlayer, chat, displayName, icon, message);
-        }
-
+        outMsg = getDefaultVaultMessage(eventPlayer, chat, name, message);
         return outMsg;
     }
 
-    private Component getDefaultVaultMessage(Player eventPlayer, Chat chat, Component displayName, Component icon, Component message) {
+    private Component getDefaultVaultMessage(Player eventPlayer, Chat chat, Component name, Component message) {
         refs.debugMsg("Default!");
-        return Component.empty()
-                .append(icon)
-                .append(LegacyComponentSerializer.legacyAmpersand().deserialize(
-                        chat.getPlayerPrefix(eventPlayer)))
-                .append(displayName)
-                .append(LegacyComponentSerializer.legacyAmpersand().deserialize(
-                        chat.getPlayerSuffix(eventPlayer)))
-                .append(Component.text(":"))
+        return main.getTranslateLayout(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer))
                 .append(Component.space())
                 .append(message);
     }

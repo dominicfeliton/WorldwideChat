@@ -46,6 +46,10 @@ Chat:
   sendIncomingHoverTextChat: true
   useVault: true
   chatListenerPriority: HIGHEST
+  separateChatChannel:
+    separateChatChannelIcon: globe
+    separateChatChannelLayout: "{prefix}{username}{suffix}:"
+    forceSeparateChatChannel: false
 Translator:
   useWatsonTranslate: true
   watsonAPIKey: watson_key_goes_here

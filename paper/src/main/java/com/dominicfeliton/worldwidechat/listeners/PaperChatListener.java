@@ -38,7 +38,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                 return;
             }
             refs.debugMsg("Using paperChatListener.");
-            boolean channel = main.isUseSeparateChatChannel();
+            boolean channel = main.isForceSeparateChatChannel();
 
             /* Translate Outgoing Messages */
             refs.debugMsg("Begin translating outgoing messages...");
@@ -111,7 +111,8 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
 
-            // If we are on a separate chat channel & pending outgoing message, send to remaining recipients
+            // If we are on a separate chat channel & this is a pending outgoing message,
+            // send to remaining recipients
             if (channel && !outgoingText.equals(event.message())) {
                 refs.debugMsg("Init pending outgoing message...");
                 Component outgoingMessage = formatMessage(event, outgoingText, false);
@@ -129,22 +130,14 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         }
     }
 
-    @Override
-    public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
-        return Component.empty()
-                .append(main.getTranslateIcon())
-                .append(component)
-                .append(Component.text(":"))
-                .append(Component.space())
-                .append(component1);
-    }
-
     private Component formatMessage(AsyncChatEvent event, Component translation, boolean incoming) {
         Component outMsg;
         Chat chat = main.getChat();
         if (chat != null) {
-            outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().displayName());
+            // Vault Support
+            outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
         } else {
+            // No Vault Support
             outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), translation);
         }
 
@@ -156,5 +149,15 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         }
 
         return outMsg;
+    }
+
+    @Override
+    public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
+        // Spigot returns a "formatted" message with string manipulation.
+        // There does not seem to be a viable paper alternative.
+        // This is the only major discrepancy between the two listeners
+        return main.getTranslateLayout("", refs.serial(component), "")
+                .append(Component.space())
+                .append(component1);
     }
 }

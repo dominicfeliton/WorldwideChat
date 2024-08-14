@@ -277,8 +277,32 @@ public class ConfigurationHandler {
 			main.setVaultSupport(true);
 			main.getLogger().warning(refs.getMsg("wwcConfigVaultSupportInvalid", null));
 		}
-		// Vault Format (For Outgoing Messages)
-		// TODO
+		// Separate Chat Channel Prefix
+		try {
+			main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.separateChatChannelIcon"));
+		} catch (Exception e) {
+			main.setTranslateIcon("globe");
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelIconInvalid", null));
+		}
+		// Separate Chat Channel Layout
+		try {
+			main.setTranslateLayout(mainConfig.getString("Chat.separateChatChannel.separateChatChannelLayout"));
+		} catch (Exception e) {
+			main.setTranslateLayout("{prefix}{username}{suffix}:");
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelLayoutInvalid", null));
+		}
+		// Always Force Separate Chat Channel
+		try {
+			if (mainConfig.getBoolean("Chat.separateChatChannel.forceSeparateChatChannel")) {
+				main.setForceSeparateChatChannel(true);
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigForceChatChannelEnabled", null));
+			} else {
+				main.setForceSeparateChatChannel(false);
+			}
+		} catch (Exception e) {
+			main.setForceSeparateChatChannel(false);
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelInvalid", null));
+		}
 		// Cache Settings
 		try {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {

@@ -33,6 +33,7 @@ import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import net.milkbowl.vault.chat.Chat;
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.util.*;
@@ -101,6 +102,8 @@ public class WorldwideChat extends JavaPlugin {
 	private TextComponent translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
 			.append(Component.space());
 
+	private String translateLayout = "{prefix}{username}{suffix}:";
+
 	private int updateCheckerDelay = 86400;
 
 	private int syncUserDataDelay = 7200;
@@ -115,7 +118,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	private EventPriority chatPriority = EventPriority.HIGHEST;
 
-	private boolean useSeparateChatChannel = true;
+	private boolean forceSeparateChatChannel = true;
 
 	private int errorLimit = 5;
 
@@ -678,11 +681,21 @@ public class WorldwideChat extends JavaPlugin {
 			return;
 		}
 
+		if (i.equalsIgnoreCase("globe")) {
+			translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
+					.append(Component.space());
+			return;
+		}
+
 		translateIcon = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
 	}
 
-	public void setUseSeparateChatChannel(boolean i) {
-		useSeparateChatChannel = i;
+	public void setTranslateLayout(String i) {
+		translateLayout = i;
+	}
+
+	public void setForceSeparateChatChannel(boolean i) {
+		forceSeparateChatChannel = i;
 	}
 
 	public void setChatPriority(EventPriority p) {
@@ -905,8 +918,33 @@ public class WorldwideChat extends JavaPlugin {
 		return translateIcon == null ? Component.empty() : translateIcon;
 	}
 
-	public boolean isUseSeparateChatChannel() {
-		return useSeparateChatChannel;
+	public TextComponent getTranslateLayout(String prefix, String username, String suffix) {
+		TextComponent out = Component.empty()
+				.append(translateIcon);
+
+		int i = 0;
+		while (i < translateLayout.length()) {
+			if (translateLayout.startsWith("{prefix}", i)) {
+				out = out.append(Component.text(prefix));
+				i += "{prefix}".length();
+			} else if (translateLayout.startsWith("{username}", i)) {
+				out = out.append(Component.text(username));
+				i += "{username}".length();
+			} else if (translateLayout.startsWith("{suffix}", i)) {
+				out = out.append(Component.text(suffix));
+				i += "{suffix}".length();
+			} else {
+				// Append any other character directly
+				out = out.append(Component.text(String.valueOf(translateLayout.charAt(i))));
+				i++;
+			}
+		}
+
+		return out;
+	}
+
+	public boolean isForceSeparateChatChannel() {
+		return forceSeparateChatChannel;
 	}
 
 	public Chat getChat() {
