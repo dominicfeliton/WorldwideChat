@@ -7,6 +7,8 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.format.Style;
+import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
@@ -122,8 +124,10 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 			outMsg = super.getVaultMessage(eaRecipient, event.getPlayer(), event.getMessage(), event.getPlayer().getDisplayName());
 		} else {
 			// No Vault Support
-			TextComponent icon = main.getTranslateIcon() == null ? Component.empty() : main.getTranslateIcon();
-			outMsg = icon.append(refs.deserial(String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation)));
+			TextComponent icon = main.getTranslateIcon();
+			outMsg = Component.empty()
+					.append(icon)
+					.append(refs.deserial(String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation)));
 		}
 
 		if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {

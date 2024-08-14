@@ -902,7 +902,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	/* Getters */
 	public TextComponent getTranslateIcon() {
-		return translateIcon;
+		return translateIcon == null ? Component.empty() : translateIcon;
 	}
 
 	public boolean isUseSeparateChatChannel() {

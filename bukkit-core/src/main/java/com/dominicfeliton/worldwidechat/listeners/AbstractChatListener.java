@@ -47,14 +47,16 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
         if (man.getPlugin("EssentialsChat") != null) {
             // EssX makes displayName include prefix/suffix...
             refs.debugMsg("EssentialsChat!");
-            outMsg = icon
+            outMsg = Component.empty()
+                    .append(icon)
                     .append(displayName)
                     .append(Component.text(":"))
                     .append(Component.space())
                     .append(message);
         } else {
             refs.debugMsg("Default!");
-            outMsg = icon
+            outMsg = Component.empty()
+                    .append(icon)
                     .append(Component.text(chat.getPlayerPrefix(eventPlayer)))
                     .append(displayName)
                     .append(Component.text(chat.getPlayerSuffix(eventPlayer)))
