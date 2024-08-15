@@ -97,16 +97,16 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
                 // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + convert to Component
-                String originalText = refs.serial(outgoingText);
-                String translation = refs.translateText(originalText, currPlayer);
-                if (translation.equalsIgnoreCase(originalText)) {
+                String savedText = refs.serial(outgoingText);
+                String translation = refs.translateText(savedText, currPlayer);
+                if (translation.equalsIgnoreCase(savedText)) {
                     refs.debugMsg("Translation unsuccessful/same as original message for " + currPlayer.getName());
                     unmodifiedMessageRecipients.add(eaRecipient);
                     continue;
                 }
 
                 // Re-render original message but with new text.
-                Component outMsg = formatMessage(event, refs.deserial(translation), true);
+                Component outMsg = formatMessage(event, currPlayer, refs.deserial(translation), refs.deserial(savedText), true);
                 currPlayer.sendMessage(outMsg);
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
@@ -115,8 +115,13 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
             // send to remaining recipients
             if (channel && !outgoingText.equals(event.message())) {
                 refs.debugMsg("Init pending outgoing message...");
-                Component outgoingMessage = formatMessage(event, outgoingText, false);
                 for (Audience eaRecipient : event.viewers()) {
+                    Component outgoingMessage;
+                    if (eaRecipient instanceof Player) {
+                        outgoingMessage = formatMessage(event, (Player)eaRecipient, outgoingText, event.message(), false);
+                    } else {
+                        outgoingMessage = formatMessage(event, null, outgoingText, event.message(), false);
+                    }
                     eaRecipient.sendMessage(outgoingMessage);
                 }
 
@@ -130,7 +135,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         }
     }
 
-    private Component formatMessage(AsyncChatEvent event, Component translation, boolean incoming) {
+    private Component formatMessage(AsyncChatEvent event, Player targetPlayer, Component translation, Component original, boolean incoming) {
         Component outMsg;
         Chat chat = main.getChat();
         if (chat != null) {
@@ -142,10 +147,19 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         }
 
         // Add hover text w/original message
-        // TODO: This sucks make it better
         if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+            refs.debugMsg("Hover incoming!");
+            Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {refs.serial(original)}, "&f&o", targetPlayer);
             outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(translation.decorate(TextDecoration.ITALIC)));
+                    .hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
+        }
+
+        if (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat")) {
+            refs.debugMsg("Hover outgoing!");
+            // This will only work with the forced option set to true.
+            Component hover = (refs.getFancyMsg("wwcOrigHover", new String[] {refs.serial(original)}, "&f&o", targetPlayer));
+            outMsg = outMsg
+                    .hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
         }
 
         return outMsg;

@@ -92,7 +92,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 					continue;
 				}
 
-				Component incomingMessage = formatMessage(event, translation, true);
+				Component incomingMessage = formatMessage(event, eaRecipient, translation, outgoingText, true);
 				sendChatMessage(eaRecipient, incomingMessage);
 			}
 			event.getRecipients().retainAll(unmodifiedMessageRecipients);
@@ -100,11 +100,12 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 			// If we are on a separate chat channel & pending outgoing message, send to remaining recipients
 			if (channel && !outgoingText.equals(event.getMessage())) {
 				refs.debugMsg("Init pending outgoing message...");
-				Component outgoingMessage = formatMessage(event, outgoingText, false);
 				for (Player eaRecipient : event.getRecipients()) {
+					Component outgoingMessage = formatMessage(event, eaRecipient, outgoingText, event.getMessage(), false);
 					sendChatMessage(eaRecipient, outgoingMessage);
 				}
 				// Console
+				Component outgoingMessage = formatMessage(event, null, outgoingText, event.getMessage(), false);
 				sendChatMessage(null, outgoingMessage);
 
 				refs.debugMsg("Cancelling chat event.");
@@ -118,7 +119,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 		}
 	}
 
-	private Component formatMessage(AsyncPlayerChatEvent event, String translation, boolean incoming) {
+	private Component formatMessage(AsyncPlayerChatEvent event, Player targetPlayer, String translation, String original, boolean incoming) {
 		Chat chat = main.getChat();
 		Component outMsg;
 		if (chat != null) {
@@ -133,8 +134,17 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 		}
 
 		if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+			refs.debugMsg("Hover incoming!");
+			Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {original}, "&f&o", targetPlayer);
 			outMsg = outMsg
-					.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)));
+					.hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
+		}
+
+		if (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat")) {
+			refs.debugMsg("Hover outgoing!");
+			Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {original}, "&f&o", targetPlayer);
+			outMsg = outMsg
+					.hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
 		}
 
 		return outMsg;
