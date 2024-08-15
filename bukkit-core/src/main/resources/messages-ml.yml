@@ -650,8 +650,6 @@ Messages:
   wwcConfigEventPrioritySet: ചാറ്റ് ശ്രോതാക്കളുടെ ഇവന്റ് മുൻഗണന {0} ആയി സജ്ജമാക്കുക.
   wwcConfigEventPriorityInvalid: config.yml- ൽ അസാധുവായ ചാറ്റ് ശ്രോതാക്കളുടെ ഇവന്റ്
     മുൻഗണന. {0} ലേക്ക് ഡിഫാൾട്ട് ചെയ്യുന്നു...
-  wwcConfigConversationChatPriorityInput: 'നിലവിലെ ചാറ്റ് ഇവന്റ് മുൻഗണന {0} ആണ്. സാധുവായ
-    മുൻഗണനകളുടെ ഈ പട്ടികയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക: {1}.'
   wwcConfigGUIChatListenerPriorityButton: ചാറ്റ് ഇവന്റ് ശ്രോതാവിന്റെ മുൻഗണന മാറ്റുക
   wwcConfigConversationChatPriorityBadInput: മോശം ചാറ്റ് മുൻഗണന ഇൻപുട്ട്! ദയവായി വീണ്ടും
     ശ്രമിക്കുക.
@@ -661,4 +659,26 @@ Messages:
     സത്യമായി സ്ഥിരമായി മാറുന്നു...
   wwcWatsonDeprecation: വാട്സണെ വിലകുറച്ചുകഴിഞ്ഞു, ഇനി ഐബിഎം പിന്തുണയ്ക്കില്ല. അടുത്ത
     അപ്ഡേറ്റിൽ അതിനുള്ള പിന്തുണ നീക്കംചെയ്യപ്പെടുന്നതിനാൽ ദയവായി മാറുന്നത് പരിഗണിക്കുക.
+  wwcConfigForceChatChannelEnabled: എല്ലാ വിവർത്തനങ്ങളിലും ഒരു പ്രത്യേക വിവർത്തന ചാനൽ
+    നിർബന്ധിതമാകും.
+  wwcConfigConversationSeparateChatChannelForceSuccess: പ്രത്യേക ചാനൽ നിർബന്ധമാക്കി
+    വിജയകരമായി ടോഗിൾ ചെയ്തു.
+  wwcConfigConversationChatFormatBadInput: മേൽപ്പറഞ്ഞ വേരിയബിളുകളിൽ ഒന്നെങ്കിലും നിങ്ങൾക്ക്
+    കാണാനില്ലെന്ന് തോന്നുന്നു ({0}). ദയവായി വീണ്ടും ശ്രമിക്കുക, അല്ലെങ്കിൽ തിരികെ
+    പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationChannelIconInput: പ്രത്യേക വിവർത്തന ചാനലിന്റെ നിലവിലെ ഐക്കൺ
+    {0} ആണ്. കളർ കോഡുകൾ പിന്തുണയ്ക്കുന്നു; തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationChatPriorityInput: 'നിലവിലെ ചാറ്റ് ഇവന്റ് മുൻഗണന {0} ആണ്. ടൈപ്പ്
+    ചെയ്യുക 0 തിരികെ പോകുക അല്ലെങ്കിൽ സാധുവായ മുൻഗണനകളുടെ ഈ പട്ടികയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
+    {0} ആണ്. നിങ്ങളുടെ ഇൻപുട്ടിൽ ഇനിപ്പറയുന്ന വേരിയബിളുകൾ ഉൾപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക:
+    {1}. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigGUISeparateChatChannelFormatButton: പ്രത്യേക ചാനൽ ഫോർമാറ്റ് മാറ്റുക
+  wwcConfigConversationChannelIconSuccess: നിങ്ങളുടെ ചാനൽ ഐക്കൺ വിജയകരമായി മാറ്റി.
+  wwcConfigChatChannelFormatInvalid: 'അസാധുവായ ചാനൽ ഫോർമാറ്റ് കണ്ടെത്തി. നിങ്ങളുടെ
+    ഫോർമാറ്റിൽ ഇനിപ്പറയുന്ന വേരിയബിളുകൾ ഉൾപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: പ്രത്യേക ചാനൽ ഐക്കൺ മാറ്റുക
+  wwcConfigConversationChatFormatSuccess: നിങ്ങളുടെ ഫോർമാറ്റ് വിജയകരമായി മാറ്റിക്കഴിഞ്ഞു.
+  wwcConfigGUISeparateChatChannelForceButton: പ്രത്യേക ചാനൽ ഫോഴ്സ് ചെയ്യുക
 

@@ -651,8 +651,6 @@ Messages:
     разговор на {0}.
   wwcConfigEventPriorityInvalid: Невалиден приоритет на настанот на слушателот на
     разговор во config.yml. Стандардно на {0}...
-  wwcConfigConversationChatPriorityInput: 'Тековниот приоритет на настанот за разговор
-    е {0}. Изберете од оваа листа на валидни приоритети: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Променете го приоритетот на слушателот на
     настани за разговор
   wwcConfigConversationChatPriorityBadInput: Лош влез за приоритет на разговор! Ве
@@ -664,4 +662,26 @@ Messages:
   wwcWatsonDeprecation: Вотсон е застарен и повеќе не е поддржан од IBM. Ве молиме
     размислете за префрлување, бидејќи поддршката за тоа ќе биде отстранета во следното
     ажурирање.
+  wwcConfigForceChatChannelEnabled: Посебен канал за превод ќе биде принуден за време
+    на сите преводи.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Успешно се префрли форсирајќи
+    го одделниот канал.
+  wwcConfigConversationChatFormatBadInput: Изгледа дека ви недостасува барем една
+    од гореспоменатите променливи ({0}). Ве молиме обидете се повторно или напишете
+    0 за да се вратите назад.
+  wwcConfigConversationChannelIconInput: Тековната икона за одделниот канал за превод
+    е {0}. Поддржани се кодови на бои; напишете 0 за да се вратите назад.
+  wwcConfigConversationChatPriorityInput: 'Тековниот приоритет на настанот за разговор
+    е {0}. Напишете 0 одете назад или изберете од оваа листа на валидни приоритети:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
+    разговор е {0}. Ве молиме проверете дали вашиот влез ги вклучува следниве променливи:
+    {1}. Напишете 0 за да се вратите назад.'
+  wwcConfigGUISeparateChatChannelFormatButton: Променете го одделниот формат на каналот
+  wwcConfigConversationChannelIconSuccess: Успешно ја смени иконата на вашиот канал.
+  wwcConfigChatChannelFormatInvalid: 'Откриен неважечки формат на каналот. Ве молиме
+    проверете дали вашиот формат ги вклучува следните променливи: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Променете ја иконата на одделен канал
+  wwcConfigConversationChatFormatSuccess: Вашиот формат е успешно променет.
+  wwcConfigGUISeparateChatChannelForceButton: Принудете посебен канал
 

@@ -658,8 +658,6 @@ Messages:
     sozlang.
   wwcConfigEventPriorityInvalid: Config.yml da yaroqsiz chat tinglovchisi voqea ustuvorligi.
     Standart {0} ga sozlash...
-  wwcConfigConversationChatPriorityInput: 'Hozirgi chat tadbirining ustuvor vazifasi
-    {0} hisoblanadi. Ushbu amaldagi ustuvorliklar ro''yxatidan tanlang: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Chat voqea tinglovchisining ustuvorligini
     o'zgartiring
   wwcConfigConversationChatPriorityBadInput: Yomon suhbatning ustuvor kiritilishi!
@@ -671,4 +669,26 @@ Messages:
   wwcWatsonDeprecation: Watson eskirgan va endi IBM tomonidan qo'llab-quvvatlanmaydi.
     Iltimos, kommutatsiyani ko'rib chiqing, chunki uni qo'llab-quvvatlash keyingi
     yangilanishda olib tashlanadi.
+  wwcConfigForceChatChannelEnabled: Barcha tarjimalar paytida alohida tarjima kanali
+    majbur qilinadi.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Muvaffaqiyatli ravishda alohida
+    kanalni majburlashni o'zgartirdi.
+  wwcConfigConversationChatFormatBadInput: Yuqorida aytib o'tilgan o'zgaruvchilardan
+    kamida bittasini etishmayotganingiz kabi ko'rinadi ({0}). Iltimos, qaytadan urinib
+    ko'ring yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationChannelIconInput: Alohida tarjima kanalining joriy belgisi
+    {0}. Rang kodlari qo'llab-quvvatlanadi; orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationChatPriorityInput: 'Hozirgi chat tadbirining ustuvor vazifasi
+    {0} hisoblanadi. 0ga yozing orqaga o''ting yoki ushbu haqiqiy ustuvorliklar ro''yxatidan
+    tanlang: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
+    {0}. Iltimos, kiritishingiz quyidagi o''zgaruvchilarni o''z ichiga olganligiga
+    ishonch hosil qiling: {1}. Orqaga qaytish uchun 0 yozing.'
+  wwcConfigGUISeparateChatChannelFormatButton: Alohida kanal formatini o'zgartiring
+  wwcConfigConversationChannelIconSuccess: Kanal belgisini muvaffaqiyatli o'zgartirdi.
+  wwcConfigChatChannelFormatInvalid: 'Yaroqsiz kanal formati aniqlandi. Iltimos, formatingiz
+    quyidagi o''zgaruvchilarni o''z ichiga olganligiga ishonch hosil qiling: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Alohida kanal belgisini o'zgartiring
+  wwcConfigConversationChatFormatSuccess: Sizning formatingiz muvaffaqiyatli o'zgartirildi.
+  wwcConfigGUISeparateChatChannelForceButton: Ajratish kanalini majburlang
 

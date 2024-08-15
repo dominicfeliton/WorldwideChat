@@ -628,8 +628,6 @@ Messages:
   wwcConfigEventPrioritySet: اولویت رویداد شنونده چت را به {0} تنظیم کنید.
   wwcConfigEventPriorityInvalid: اولویت رویداد شنونده چت نامعتبر در config.yml. پیش
     فرض به {0}...
-  wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. از این لیست
-    اولویت های معتبر انتخاب کنید: {1}.'
   wwcConfigGUIChatListenerPriorityButton: تغییر اولویت شنونده رویداد چت
   wwcConfigConversationChatPriorityBadInput: ورودی اولویت چت بد! لطفا دوباره امتحان
     کنید.
@@ -638,4 +636,23 @@ Messages:
     است. پیش فرض به واقعی...
   wwcWatsonDeprecation: واتسون منسوخ شده است و دیگر توسط IBM پشتیبانی نمی شود. لطفا
     تغییر را در نظر بگیرید، زیرا پشتیبانی از آن در به روز رسانی بعدی حذف خواهد شد.
+  wwcConfigForceChatChannelEnabled: یک کانال ترجمه جداگانه در طول تمام ترجمه ها اجباری
+    خواهد شد.
+  wwcConfigConversationSeparateChatChannelForceSuccess: با موفقیت وادار کردن کانال
+    جداگانه را تغییر داد.
+  wwcConfigConversationChatFormatBadInput: به نظر می رسد حداقل یکی از متغیرهای فوق
+    الذکر را از دست داده اید ({0}). لطفا دوباره امتحان کنید یا 0 را تایپ کنید تا برگردید.
+  wwcConfigConversationChannelIconInput: آیکون فعلی برای کانال ترجمه جداگانه {0} است.
+    کدهای رنگ پشتیبانی می شوند. برای بازگشت 0 تایپ کنید.
+  wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. تایپ 0 به
+    عقب بروید یا از این لیست اولویت های معتبر انتخاب کنید: {1}.'
+  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
+    لطفا مطمئن شوید که ورودی شما شامل متغیرهای زیر است: {1}. برای بازگشت 0 تایپ کنید.'
+  wwcConfigGUISeparateChatChannelFormatButton: تغییر فرمت کانال جداگانه
+  wwcConfigConversationChannelIconSuccess: نماد کانال خود را با موفقیت تغییر داد.
+  wwcConfigChatChannelFormatInvalid: 'فرمت کانال نامعتبر شناسایی شد. لطفا مطمئن شوید
+    که فرمت شما شامل متغیرهای زیر است: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: تغییر آیکون کانال جداگانه
+  wwcConfigConversationChatFormatSuccess: فرمت شما با موفقیت تغییر کرده است.
+  wwcConfigGUISeparateChatChannelForceButton: مجبور کانال جداگانه
 

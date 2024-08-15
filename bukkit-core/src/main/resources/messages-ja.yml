@@ -489,11 +489,25 @@ Messages:
   wwcNoVaultChatProvider: Vault はインストールされていますが、サポートされているチャットプロバイダーが見つかりませんでした。
   wwcConfigEventPrioritySet: チャットリスナーイベントの優先度を {0} に設定します。
   wwcConfigEventPriorityInvalid: config.yml のチャットリスナーイベントの優先度が無効です。デフォルトは {0}...
-  wwcConfigConversationChatPriorityInput: 現在のチャットイベントの優先度は {0} です。有効な優先度のリストから {1}
-    を選択してください。
   wwcConfigGUIChatListenerPriorityButton: チャットイベントリスナー優先度の変更
   wwcConfigConversationChatPriorityBadInput: チャットの優先度入力が不正です!もう一度試してください。
   wwcConfigConversationChatPrioritySuccess: チャットイベントの優先度が正常に設定されました。
   wwcConfigVaultSupportInvalid: config.yml に設定されているボールトサポートが無効です。デフォルトは true に設定されています...
   wwcWatsonDeprecation: Watsonは廃止され、IBMによるサポートは終了しました。次回の更新ではサポートされなくなるため、切り替えを検討してください。
+  wwcConfigForceChatChannelEnabled: すべての翻訳中に、個別の翻訳チャネルが強制されます。
+  wwcConfigConversationSeparateChatChannelForceSuccess: 強制的にチャンネルを強制的に切り替えることに成功しました。
+  wwcConfigConversationChatFormatBadInput: 前述の変数 ({0}) のうち少なくとも 1 つが欠落しているようです。もう一度試してください。または
+    0 を入力して戻ってください。
+  wwcConfigConversationChannelIconInput: 独立した翻訳チャンネルの現在のアイコンは {0} です。カラーコードがサポートされています。0
+    を入力すると戻ります。
+  wwcConfigConversationChatPriorityInput: 現在のチャットイベントの優先度は {0} です。0 と入力して戻るか、有効な優先度の一覧から
+    {1} を選択してください。
+  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。入力に以下の変数が含まれていることを確認してください:{1}.0
+    を入力すると戻ります。
+  wwcConfigGUISeparateChatChannelFormatButton: 個別チャンネル形式を変更
+  wwcConfigConversationChannelIconSuccess: チャンネルアイコンが正常に変更されました。
+  wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。フォーマットに以下の変数が含まれていることを確認してください:{0}.
+  wwcConfigGUISeparateChatChannelIconButton: 個別チャンネルアイコンを変更
+  wwcConfigConversationChatFormatSuccess: フォーマットは正常に変更されました。
+  wwcConfigGUISeparateChatChannelForceButton: 強制的にチャンネルを分離
 

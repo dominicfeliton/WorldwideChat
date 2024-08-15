@@ -637,8 +637,6 @@ Messages:
   wwcConfigEventPrioritySet: Stilltu forgang viðburðarviðburða spjallhlustenda á {0}.
   wwcConfigEventPriorityInvalid: Ógild forgangur viðburða spjallhlustandans í config.yml.
     Sjálfgefið að {0}...
-  wwcConfigConversationChatPriorityInput: 'Núverandi forgangur spjallviðburðar er
-    {0}. Veldu úr þessum lista yfir gilda forgangsröðun: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Breyta forgangi hlustenda á spjallviðburði
   wwcConfigConversationChatPriorityBadInput: Slæmt forgangsinntak í spjalli! Vinsamlegast
     reyndu aftur.
@@ -649,4 +647,27 @@ Messages:
   wwcWatsonDeprecation: Watson hefur verið aflétt og er ekki lengur studdur af IBM.
     Vinsamlegast íhugaðu að skipta, þar sem stuðningur við það verður fjarlægður í
     næstu uppfærslu.
+  wwcConfigForceChatChannelEnabled: Sérstök þýðingarrás verður þvinguð meðan á öllum
+    þýðingum stendur.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Tókst var að þvinga aðskilda
+    rásina.
+  wwcConfigConversationChatFormatBadInput: Það lítur út fyrir að þig vanti að minnsta
+    kosti eina af fyrrnefndum breytum ({0}). Vinsamlegast reyndu aftur eða sláðu inn
+    0 til að fara aftur.
+  wwcConfigConversationChannelIconInput: Núverandi táknið fyrir aðskilda þýðingarásina
+    er {0}. Litakóðar eru studdir; sláðu inn 0 til að fara aftur.
+  wwcConfigConversationChatPriorityInput: 'Núverandi forgangur spjallviðburðar er
+    {0}. Sláðu inn 0 farðu til baka eða veldu úr þessum lista yfir gilda forgangsröðun:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
+    er {0}. Vinsamlegast vertu viss um að inntak þitt innihaldi eftirfarandi breytur:
+    {1}. Sláðu inn 0 til að fara aftur.'
+  wwcConfigGUISeparateChatChannelFormatButton: Breyta aðskildu rássniði
+  wwcConfigConversationChannelIconSuccess: Breytti rásartáknið þitt með góðum árangri.
+  wwcConfigChatChannelFormatInvalid: 'Ógilt rássnið greindist. Vinsamlegast vertu
+    viss um að sniðið þitt innihaldi eftirfarandi breytur: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Breyta aðskildum rásartákni
+  wwcConfigConversationChatFormatSuccess: Sniði þínu hefur verið breytt með góðum
+    árangri.
+  wwcConfigGUISeparateChatChannelForceButton: Þvingaðu aðskilda rás
 

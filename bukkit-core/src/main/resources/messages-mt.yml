@@ -636,8 +636,6 @@ Messages:
     {0}
   wwcConfigEventPriorityInvalid: Prijorità ta' avveniment tas-semmiegħa taċ-chat invalidu
     f'config.yml. Insuffiċjenza għal {0}...
-  wwcConfigConversationChatPriorityInput: 'Il-prijorità attwali tal-avveniment taċ-chat
-    hija {0}. Agħżel minn din il-lista ta'' prijoritajiet validi: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Ibdel il-Prijorità tas-Semmiegħa tal-
   wwcConfigConversationChatPriorityBadInput: Input ta 'prijorità ta' chat ħażin! Jekk
     jogħġbok ipprova mill-ġdid.
@@ -648,4 +646,26 @@ Messages:
   wwcWatsonDeprecation: Watson ġie deprecated u m'għadux appoġġjat minn IBM. Jekk
     jogħġbok ikkunsidra li taqleb, bħala l-appoġġ għaliha se jitneħħa fl-aġġornament
     li jmiss.
+  wwcConfigForceChatChannelEnabled: Kanal separat ta' traduzzjoni jiġi sfurzat matul
+    it-traduzzjonijiet kollha.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Imqabbad b'suċċess sforza
+    l-kanal separat.
+  wwcConfigConversationChatFormatBadInput: Jidher qisek int nieqes mill-inqas waħda
+    mill-varjabbli msemmija hawn fuq ({0}). Jekk jogħġbok ipprova mill-ġdid, jew ittajpja
+    0 biex tmur lura.
+  wwcConfigConversationChannelIconInput: L-ikona kurrenti għall-kanal separat tat-traduzzjoni
+    hija {0}. Il-kodiċijiet tal-kulur huma appoġġjati; tip 0 biex tmur lura.
+  wwcConfigConversationChatPriorityInput: 'Il-prijorità attwali tal-avveniment taċ-chat
+    hija {0}. Tip 0 mur lura jew agħżel minn din il-lista ta ''prijoritajiet validi:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Il-format attwali għall-kanal separat
+    taċ-chat huwa {0}. Jekk jogħġbok kun żgur li l-input tiegħek jinkludi l-varjabbli
+    li ġejjin: {1}. Tip 0 biex tmur lura.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ibdel il-Format tal-Kanal Separat
+  wwcConfigConversationChannelIconSuccess: Bidlet b'suċċess l-ikona tal-kanal tiegħek.
+  wwcConfigChatChannelFormatInvalid: 'Format tal-kanal invalidu skopert. Jekk jogħġbok
+    kun żgur li l-format tiegħek jinkludi l-varjabbli li ġejjin: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Ibdel l-Ikona tal-Kanal separat
+  wwcConfigConversationChatFormatSuccess: Il-format tiegħek inbidel b'suċċess.
+  wwcConfigGUISeparateChatChannelForceButton: Kanal Separat tal-Forza
 

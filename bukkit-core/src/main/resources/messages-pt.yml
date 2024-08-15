@@ -650,8 +650,6 @@ Messages:
     como {0}.
   wwcConfigEventPriorityInvalid: Prioridade inválida do evento do ouvinte de bate-papo
     em config.yml. O padrão é {0}...
-  wwcConfigConversationChatPriorityInput: 'A prioridade atual do evento de bate-papo
-    é {0}. Escolha nesta lista de prioridades válidas: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Alterar a prioridade do ouvinte do evento
     de bate-papo
   wwcConfigConversationChatPriorityBadInput: Entrada de prioridade de bate-papo incorreta!
@@ -662,4 +660,25 @@ Messages:
     O padrão é true...
   wwcWatsonDeprecation: O Watson foi descontinuado e não é mais suportado pela IBM.
     Considere mudar, pois o suporte para ele será removido na próxima atualização.
+  wwcConfigForceChatChannelEnabled: Um canal de tradução separado será forçado durante
+    todas as traduções.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Alternado com sucesso, forçando
+    o canal separado.
+  wwcConfigConversationChatFormatBadInput: Parece que está faltando pelo menos uma
+    das variáveis mencionadas acima ({0}). Tente novamente ou digite 0 para voltar.
+  wwcConfigConversationChannelIconInput: O ícone atual para o canal de tradução separado
+    é {0}. Códigos de cores são suportados; digite 0 para voltar.
+  wwcConfigConversationChatPriorityInput: 'A prioridade atual do evento de bate-papo
+    é {0}. Digite 0, volte para trás ou escolha nesta lista de prioridades válidas:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'O formato atual para o canal de bate-papo
+    separado é {0}. Certifique-se de que sua entrada inclua as seguintes variáveis:
+    {1}. Digite 0 para voltar.'
+  wwcConfigGUISeparateChatChannelFormatButton: Alterar formato de canal separado
+  wwcConfigConversationChannelIconSuccess: O ícone do seu canal foi alterado com sucesso.
+  wwcConfigChatChannelFormatInvalid: 'Formato de canal inválido detectado. Certifique-se
+    de que seu formato inclua as seguintes variáveis: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Alterar ícone de canal separado
+  wwcConfigConversationChatFormatSuccess: Seu formato foi alterado com sucesso.
+  wwcConfigGUISeparateChatChannelForceButton: Forçar um canal separado
 

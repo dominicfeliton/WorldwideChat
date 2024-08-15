@@ -677,8 +677,6 @@ Messages:
     xat a {0}.
   wwcConfigEventPriorityInvalid: Prioritat de l'esdeveniment de l'oient de xat no
     vàlida a config.yml. Per defecte a {0}...
-  wwcConfigConversationChatPriorityInput: 'La prioritat de l''esdeveniment de xat
-    actual és {0}. Trieu entre aquesta llista de prioritats vàlides: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Canvia la prioritat de l'oient d'esdeveniments
     de xat
   wwcConfigConversationChatPriorityBadInput: Entrada de prioritat de xat dolenta!
@@ -690,4 +688,25 @@ Messages:
   wwcWatsonDeprecation: Watson ha estat obsolet i ja no és compatible amb IBM. Si
     us plau, consideri canviar, ja que el suport per a això serà eliminat en la propera
     actualització.
+  wwcConfigForceChatChannelEnabled: Es forçarà un canal de traducció separat durant
+    totes les traduccions.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Es va alternar amb èxit forçant
+    el canal separat.
+  wwcConfigConversationChatFormatBadInput: Sembla que us falta almenys una de les
+    variables esmentades ({0}). Intenteu-ho de nou o escriviu 0 per tornar enrere.
+  wwcConfigConversationChannelIconInput: La icona actual del canal de traducció separat
+    és {0}. Els codis de colors són compatibles; escriviu 0 per tornar enrere.
+  wwcConfigConversationChatPriorityInput: 'La prioritat de l''esdeveniment de xat
+    actual és {0}. Escriviu 0 aneu a enrere o trieu entre aquesta llista de prioritats
+    vàlides: {1}.'
+  wwcConfigConversationChannelFormatInput: 'El format actual del canal de xat separat
+    és {0}. Assegureu-vos que la vostra entrada inclogui les següents variables: {1}.
+    Escriu 0 per tornar enrere.'
+  wwcConfigGUISeparateChatChannelFormatButton: Canviar el format de canal separat
+  wwcConfigConversationChannelIconSuccess: S'ha canviat amb èxit la icona del canal.
+  wwcConfigChatChannelFormatInvalid: 'S''ha detectat el format de canal no vàlid.
+    Assegureu-vos que el vostre format inclogui les següents variables: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Canviar la icona del canal separat
+  wwcConfigConversationChatFormatSuccess: El seu format s'ha canviat amb èxit.
+  wwcConfigGUISeparateChatChannelForceButton: Força el canal separat
 

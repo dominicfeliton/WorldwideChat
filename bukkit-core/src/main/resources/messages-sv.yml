@@ -637,8 +637,6 @@ Messages:
   wwcConfigEventPrioritySet: Ställ in prioriteten för chattlyssnare till {0}.
   wwcConfigEventPriorityInvalid: Ogiltig prioritet för chattlyssnare i config.yml.
     Standardinställt till {0}...
-  wwcConfigConversationChatPriorityInput: 'Den aktuella prioriteten för chatthändelse
-    är {0}. Välj från den här listan med giltiga prioriteringar: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Ändra prioritet för lyssnare för chatthändelser
   wwcConfigConversationChatPriorityBadInput: Dålig chattprioritetsinmatning! Vänligen
     försök igen.
@@ -647,4 +645,25 @@ Messages:
     till sant...
   wwcWatsonDeprecation: Watson har utfasats och stöds inte längre av IBM. Överväg
     att byta, eftersom stöd för det kommer att tas bort i nästa uppdatering.
+  wwcConfigForceChatChannelEnabled: En separat översättningskanal kommer att tvingas
+    under alla översättningar.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Lyckades växla för att tvinga
+    den separata kanalen.
+  wwcConfigConversationChatFormatBadInput: Det verkar som om du saknar minst en av
+    de ovannämnda variablerna ({0}). Försök igen, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationChannelIconInput: Den aktuella ikonen för den separata översättningskanalen
+    är {0}. Färgkoder stöds; skriv 0 för att gå tillbaka.
+  wwcConfigConversationChatPriorityInput: 'Den aktuella prioriteten för chatthändelse
+    är {0}. Skriv 0 gå tillbaka eller välj från den här listan med giltiga prioriteringar:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
+    chattkanalen är {0}. Se till att din inmatning innehåller följande variabler:
+    {1}. Skriv 0 för att gå tillbaka.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ändra separat kanalformat
+  wwcConfigConversationChannelIconSuccess: Ändrade din kanalikon framgångsrikt.
+  wwcConfigChatChannelFormatInvalid: 'Ogiltigt kanalformat har upptäckts. Se till
+    att formatet innehåller följande variabler: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Ändra separat kanalikon
+  wwcConfigConversationChatFormatSuccess: Ditt format har ändrats framgångsrikt.
+  wwcConfigGUISeparateChatChannelForceButton: Tvinga separat kanal
 

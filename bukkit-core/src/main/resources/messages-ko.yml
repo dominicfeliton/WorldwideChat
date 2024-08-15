@@ -518,12 +518,27 @@ Messages:
   wwcNoVaultChatProvider: Vault가 설치되었지만 지원되는 채팅 공급자가 검색되지 않았습니다.
   wwcConfigEventPrioritySet: 채팅 리스너 이벤트 우선순위를 {0} 로 설정합니다.
   wwcConfigEventPriorityInvalid: config.yml의 채팅 리스너 이벤트 우선 순위가 잘못되었습니다.기본값은 {0}...
-  wwcConfigConversationChatPriorityInput: 현재 채팅 이벤트 우선순위는 {0} 입니다.유효한 우선순위 목록 ({1})
-    중에서 선택하세요.
   wwcConfigGUIChatListenerPriorityButton: 채팅 이벤트 리스너 우선순위 변경
   wwcConfigConversationChatPriorityBadInput: 채팅 우선순위 입력이 잘못되었습니다!다시 시도해 주세요.
   wwcConfigConversationChatPrioritySuccess: 채팅 이벤트 우선순위를 성공적으로 설정했습니다.
   wwcConfigVaultSupportInvalid: config.yml에 설정된 저장소 지원이 잘못되었습니다.기본값은 true입니다...
   wwcWatsonDeprecation: Watson은 더 이상 사용되지 않으며 IBM에서 더 이상 지원하지 않습니다.다음 업데이트에서 지원이 제거될
     예정이므로 전환을 고려하시기 바랍니다.
+  wwcConfigForceChatChannelEnabled: 모든 번역 중에는 별도의 번역 채널이 필요합니다.
+  wwcConfigConversationSeparateChatChannelForceSuccess: 개별 채널 강제 전환에 성공했습니다.
+  wwcConfigConversationChatFormatBadInput: 앞서 언급한 변수 중 하나 이상이 누락된 것 같습니다 ({0}).다시
+    시도하거나 0을 입력하여 돌아가십시오.
+  wwcConfigConversationChannelIconInput: 개별 번역 채널의 현재 아이콘은 {0} 입니다.색상 코드가 지원됩니다. 돌아가려면
+    0을 입력하십시오.
+  wwcConfigConversationChatPriorityInput: 현재 채팅 이벤트 우선순위는 {0} 입니다.0을 입력하거나 뒤로 이동하거나
+    유효한 우선순위 목록 ({1}) 중에서 선택하세요.
+  wwcConfigConversationChannelFormatInput: '개별 채팅 채널의 현재 형식은 {0} 입니다.입력에 다음 변수가 포함되었는지
+    확인하세요: {1}.돌아가려면 0을 입력하세요.'
+  wwcConfigGUISeparateChatChannelFormatButton: 개별 채널 형식 변경
+  wwcConfigConversationChannelIconSuccess: 채널 아이콘을 성공적으로 변경했습니다.
+  wwcConfigChatChannelFormatInvalid: 잘못된 채널 형식이 감지되었습니다.형식에 다음 변수가 포함되어 있는지 확인하세요.
+    {0}.
+  wwcConfigGUISeparateChatChannelIconButton: 개별 채널 아이콘 변경
+  wwcConfigConversationChatFormatSuccess: 형식이 성공적으로 변경되었습니다.
+  wwcConfigGUISeparateChatChannelForceButton: 강제 분리 채널
 

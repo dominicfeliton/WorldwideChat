@@ -647,8 +647,6 @@ Messages:
   wwcConfigEventPrioritySet: Deg muhiimada munaasabadda dhageystaha ee chat {0}.
   wwcConfigEventPriorityInvalid: Muhiimada munaasabadda dhageystaha chat ee config.yml.
     Defaulting to {0}...
-  wwcConfigConversationChatPriorityInput: 'Muhiimada dhacdooyinka wada hadda ee hadda
-    waa {0}. Dooro liiskan oo muhiimada xaalad ah: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Beddel Muhiimada Dhageystaha Dhac
   wwcConfigConversationChatPriorityBadInput: Galka muhiimada chat xun! Fadlan mar
     kale isku dayo.
@@ -658,4 +656,25 @@ Messages:
     Deegaanta in dhab...
   wwcWatsonDeprecation: Watson waxa la dhacay waxaana ma taageersan IBM. Fadlan ka
     fiiray bedelka, iyadoo taageero loo saari doono cusboonkii xiga.
+  wwcConfigForceChatChannelEnabled: Kanaal Gooni ah oo tarjimada lagu qasabayaa xilli
+    dhamaan tarjimada.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Si guul guul la qaaday kanaalka
+    Gooni ah.
+  wwcConfigConversationChatFormatBadInput: Waxaa muuqata inaad ku maqan ugu yaraan
+    mid ka mid ah murayaasha la sheegay ({0}). Fadlan mar kale isku dayo, ama nooca
+    0 si aad u dib ugu soo laabto.
+  wwcConfigConversationChannelIconInput: Aqoonka hadda ee kanaalka tarjimada gooni
+    ah waa {0}. Koodaha Midabka ayaa la taageeraya; nooca 0 si uu dib ugu soo laabto.
+  wwcConfigConversationChatPriorityInput: 'Muhiimada dhacdooyinka wada hadda ee hadda
+    waa {0}. Nooca 0 dib ugu dib ama ka dooro liiskan muhiimada oo xaalad ah: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
+    ah waa {0}. Fadlan ka hubain gelinkaaga waxa uu ka mid yahay bedelaha soo socda:
+    {1}. Nooca 0 si aad dib ugu soo noqon.'
+  wwcConfigGUISeparateChatChannelFormatButton: Beddel Qaabka Kanaalka Gooni
+  wwcConfigConversationChannelIconSuccess: Si guul la beddelay fiicka kanaalkaaga.
+  wwcConfigChatChannelFormatInvalid: 'Qaabka kanaalka ah oo la ogaaday Fadlan hubain
+    qaabkaaga waxa uu ka mid yahay murayaasha soo socda: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Bedelka Icon Channel Gooni ah
+  wwcConfigConversationChatFormatSuccess: Qaabkaaga waxaa si guul la bedelay.
+  wwcConfigGUISeparateChatChannelForceButton: Channel Gooni ah ee Ciidanka
 

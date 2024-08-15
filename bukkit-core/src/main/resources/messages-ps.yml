@@ -624,8 +624,6 @@ Messages:
   wwcConfigEventPrioritySet: د چیټ د اوریدونکي پیښې لومړیتوب {0} ته
   wwcConfigEventPriorityInvalid: په config.yml کې د غلط چیٹ اوریدونکي پیښې لومړیتوب.
     {0} ته ډیفولټ کول...
-  wwcConfigConversationChatPriorityInput: 'د اوسنۍ چیټ پیښې لومړیتوب {0} دی. د اعتبار
-    لومړیتوب له دې لیست څخه غوره کړئ: {1}.'
   wwcConfigGUIChatListenerPriorityButton: د چیٹ پیښې د اوریونکي لوم
   wwcConfigConversationChatPriorityBadInput: خراب چیٹ لومړیتوب ننو لطفا بیا هڅه وکړئ.
   wwcConfigConversationChatPrioritySuccess: په بریالیتوب سره ستاسو د چیٹ پیښې لوم
@@ -633,4 +631,25 @@ Messages:
     ته ناپسند کول...
   wwcWatsonDeprecation: واټسن منځه شوی دی او نور د آی بی ایم لخوا ملاتړ نه کیږي. مهرباني
     وکړئ د سویچ کولو په پام کې ونیسئ، ځکه چې د دې لپاره ملاتړ به په راتلونکي
+  wwcConfigForceChatChannelEnabled: د ټولو ژباړو په مهال به یو جلا ژباړه چینل مجبور
+    ش
+  wwcConfigConversationSeparateChatChannelForceSuccess: په بریالیتوب سره جلا چینل
+    مجبور شوی.
+  wwcConfigConversationChatFormatBadInput: دا داسې ښکاري چې تاسو لږترلږه د ذکر شوي
+    متغیرونو څخه لږترلږه یې ({0}) مهرباني وکړئ بیا هڅه وکړئ، یا بیرته لاړ شو لپاره
+    0 ټ
+  wwcConfigConversationChannelIconInput: د جلا ژباړې چینل لپاره اوسنۍ آیکون {0} دی.
+    د رنګ کوډونه ملاتړ کیږي؛ بیرته لاړ شي 0 ډول.
+  wwcConfigConversationChatPriorityInput: 'د اوسنۍ چیټ پیښې لومړیتوب {0} دی. ډول 0
+    بیرته لاړ شئ یا د اعتبار لومړیتوبونو له دې لیست څخه غوره کړئ: {1}.'
+  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. مهرباني
+    وکړئ ډاډ ترلاسه کړئ چې ستاسو ننوت کې لاندې متغی {1} بیرته لاړولو لپاره 0 ټایپ
+    کړئ.
+  wwcConfigGUISeparateChatChannelFormatButton: جلا چینل بڼه بدل کړئ
+  wwcConfigConversationChannelIconSuccess: په بریالیتوب سره ستاسو د چینل آیکو
+  wwcConfigChatChannelFormatInvalid: غلط چینل بڼه کشف شوي. مهرباني وکړئ ډاډ ترلاسه
+    کړئ چې ستاسو بڼه لاندې متغیر {0}
+  wwcConfigGUISeparateChatChannelIconButton: جلا چینل آیکون بدل کړئ
+  wwcConfigConversationChatFormatSuccess: ستاسو بڼه په بریالیتوب سره بدل شوی دی
+  wwcConfigGUISeparateChatChannelForceButton: جلا چینل زور کړئ
 

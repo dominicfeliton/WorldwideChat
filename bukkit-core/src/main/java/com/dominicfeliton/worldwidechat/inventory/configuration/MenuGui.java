@@ -63,7 +63,7 @@ public class MenuGui implements InventoryProvider {
 		CONFIG_GUI_TAGS.POSTGRES_SET.smartInv = postgresSet.genSmartInv("postgresSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"PostgreSQL"});
 		
 		MenuGui chatSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
+		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIChatSettings");
 		
 		MenuGui transSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
@@ -194,10 +194,17 @@ public class MenuGui implements InventoryProvider {
 		if (!main.getCurrPlatform().equals("Folia")) {
 			chatSet.add(new SubMenuElement(1, 6, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()));
 		}
-		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
-		chatSet.add(new CommonElement(2, 4, "Quit"));
-		chatSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
-		chatSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
+
+		chatSet.add(new ConvoElement(2, 1, "wwcConfigGUISeparateChatChannelIconButton", XMaterial.NAME_TAG,
+				new ChatSettingsConvos.ChannelIcon()));
+		chatSet.add(new ConvoElement(2, 2, "wwcConfigGUISeparateChatChannelFormatButton", XMaterial.NAME_TAG,
+				new ChatSettingsConvos.ChannelFormat()));
+		chatSet.add(new ToggleElement(2, 3, "wwcConfigGUISeparateChatChannelForceButton", "wwcConfigConversationSeparateChatChannelForceSuccess", "Chat.separateChatChannel.force"));
+
+		chatSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
+		chatSet.add(new CommonElement(3, 4, "Quit"));
+		chatSet.add(new CommonElement(3, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		chatSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
 		
 		// Translator
         List<String> translatorToggles = new ArrayList<>();

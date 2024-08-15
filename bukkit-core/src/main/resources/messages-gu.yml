@@ -625,8 +625,6 @@ Messages:
   wwcConfigEventPrioritySet: ચેટ સાંભળનાર ઇવેન્ટ અગ્રતા {0} પર સેટ કરો.
   wwcConfigEventPriorityInvalid: config.yml માં અમાન્ય ચેટ સાંભળનાર ઇવેન્ટ અગ્રતા.
     {0} પર ડિફોલ્ટ થઈ રહ્યું છે...
-  wwcConfigConversationChatPriorityInput: 'વર્તમાન ચેટ ઇવેન્ટ અગ્રતા {0} છે. માન્ય
-    પ્રાથમિકતાઓની આ સૂચિમાંથી પસંદ કરો: {1}.'
   wwcConfigGUIChatListenerPriorityButton: ચેટ ઇવેન્ટ સાંભળનાર અગ્રતા બદલો
   wwcConfigConversationChatPriorityBadInput: ખરાબ ચેટ અગ્રતા ઇનપુટ! કૃપા કરીને ફરીથી
     પ્રયાસ કરો.
@@ -637,4 +635,26 @@ Messages:
   wwcWatsonDeprecation: વોટસનને અધિક કરવામાં આવ્યું છે અને હવે આઇબીએમ દ્વારા સમર્થિત
     નથી. કૃપા કરીને સ્વિચિંગ કરવાનું વિચારો, કારણ કે તે માટેનો સપોર્ટ આગામી અપડેટમાં
     દૂર કરવામાં આવશે.
+  wwcConfigForceChatChannelEnabled: બધા અનુવાદો દરમિયાન એક અલગ અનુવાદ ચેનલ ફરજ પાડવામાં
+    આવશે.
+  wwcConfigConversationSeparateChatChannelForceSuccess: સફળતાપૂર્વક અલગ ચેનલને દબાણ
+    કરીને ટૉગલ કર્યું.
+  wwcConfigConversationChatFormatBadInput: એવું લાગે છે કે તમે ઉપરોક્ત ચલો પૈકી ઓછામાં
+    ઓછા એક ગુમ થઈ રહ્યા છો ({0}). કૃપા કરીને ફરીથી પ્રયાસ કરો, અથવા પાછા જવા માટે
+    0 લખો.
+  wwcConfigConversationChannelIconInput: અલગ અનુવાદ ચેનલ માટેનું વર્તમાન ચિહ્ન {0}
+    છે. રંગ કોડ સપોર્ટેડ છે; પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigConversationChatPriorityInput: 'વર્તમાન ચેટ ઇવેન્ટ અગ્રતા {0} છે. ટાઇપ
+    કરો 0 પાછા પર જાઓ અથવા માન્ય પ્રાથમિકતાઓની આ સૂચિમાંથી પસંદ કરો: {1}.'
+  wwcConfigConversationChannelFormatInput: 'અલગ ચેટ ચેનલ માટેનું વર્તમાન ફોર્મેટ {0}
+    છે. કૃપા કરીને ખાતરી કરો કે તમારા ઇનપુટમાં નીચેના ચલો શામેલ છે: {1}. પાછા જવા
+    માટે 0 લખો.'
+  wwcConfigGUISeparateChatChannelFormatButton: અલગ ચેનલ ફોર્મેટ બદલો
+  wwcConfigConversationChannelIconSuccess: સફળતાપૂર્વક તમારા ચેનલ ચિહ્નને બદલ્યું.
+  wwcConfigChatChannelFormatInvalid: 'અમાન્ય ચેનલ ફોર્મેટ શોધાયું. કૃપા કરીને ખાતરી
+    કરો કે તમારા ફોર્મેટમાં નીચેના ચલો શામેલ છે: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: અલગ ચેનલ ચિહ્ન બદલો
+  wwcConfigConversationChatFormatSuccess: તમારું ફોર્મેટ સફળતાપૂર્વક બદલવામાં આવ્યું
+    છે.
+  wwcConfigGUISeparateChatChannelForceButton: ફોર્સ અલગ ચેનલ
 

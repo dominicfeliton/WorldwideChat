@@ -478,10 +478,22 @@ Messages:
   wwcNoVaultChatProvider: Vault 已安装，但未检测到支持的聊天提供商。
   wwcConfigEventPrioritySet: 将聊天监听器事件优先级设置为 {0}。
   wwcConfigEventPriorityInvalid: config.yml 中的聊天监听器事件优先级无效。默认为 {0}...
-  wwcConfigConversationChatPriorityInput: 当前聊天事件的优先级为 {0}。从以下有效优先级列表中选择：{1}.
   wwcConfigGUIChatListenerPriorityButton: 更改聊天事件监听器优先级
   wwcConfigConversationChatPriorityBadInput: 聊天优先级输入错误！请再试一次。
   wwcConfigConversationChatPrioritySuccess: 成功设置聊天活动优先级。
   wwcConfigVaultSupportInvalid: config.yml 中设置的保管库支持无效。默认为真...
   wwcWatsonDeprecation: Watson 已被弃用，不再受到 IBM 的支持。请考虑切换，因为对它的支持将在下次更新中删除。
+  wwcConfigForceChatChannelEnabled: 在所有翻译过程中，将强制使用单独的翻译频道。
+  wwcConfigConversationSeparateChatChannelForceSuccess: 成功切换强制使用单独的频道。
+  wwcConfigConversationChatFormatBadInput: 看来你至少缺少了上述变量中的一个 ({0})。请重试，或键入 0 返回。
+  wwcConfigConversationChannelIconInput: 单独翻译频道的当前图标是 {0}。支持颜色代码；键入 0 返回。
+  wwcConfigConversationChatPriorityInput: 当前聊天事件的优先级为 {0}。键入 0 返回或从以下有效优先级列表中选择：{1}.
+  wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。请确保您的输入包含以下变量：{1}.键入 0
+    返回。
+  wwcConfigGUISeparateChatChannelFormatButton: 更改单独的频道格式
+  wwcConfigConversationChannelIconSuccess: 成功更改了您的频道图标。
+  wwcConfigChatChannelFormatInvalid: 检测到无效的频道格式。请确保您的格式包含以下变量：{0}.
+  wwcConfigGUISeparateChatChannelIconButton: 更改单独的频道图标
+  wwcConfigConversationChatFormatSuccess: 您的格式已成功更改。
+  wwcConfigGUISeparateChatChannelForceButton: 强制分离频道
 

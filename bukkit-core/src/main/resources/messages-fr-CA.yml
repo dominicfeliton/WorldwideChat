@@ -686,8 +686,6 @@ Messages:
     sur {0}.
   wwcConfigEventPriorityInvalid: Priorité d'événement de l'écouteur de chat non valide
     dans config.yml. La valeur par défaut est {0}...
-  wwcConfigConversationChatPriorityInput: 'La priorité actuelle de l''événement de
-    chat est {0}. Choisissez parmi cette liste de priorités valides: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Modifier la priorité de l'auditeur d'événements
     de chat
   wwcConfigConversationChatPriorityBadInput: Mauvaise entrée prioritaire de chat!
@@ -699,4 +697,27 @@ Messages:
   wwcWatsonDeprecation: Watson est déconseillé et n'est plus pris en charge par IBM.
     Veuillez envisager de changer, car la prise en charge sera supprimée lors de la
     prochaine mise à jour.
+  wwcConfigForceChatChannelEnabled: Un canal de traduction distinct sera forcé pendant
+    toutes les traductions.
+  wwcConfigConversationSeparateChatChannelForceSuccess: La mise à coche a réussi à
+    forcer le canal séparé.
+  wwcConfigConversationChatFormatBadInput: Il semble qu'il vous manque au moins une
+    des variables susmentionnées ({0}). Veuillez réessayer ou tapez 0 pour revenir
+    en arrière.
+  wwcConfigConversationChannelIconInput: L'icône actuelle pour le canal de traduction
+    distinct est {0}. Les codes couleur sont pris en charge; tapez 0 pour revenir
+    en arrière.
+  wwcConfigConversationChatPriorityInput: 'La priorité actuelle de l''événement de
+    chat est {0}. Tapez 0 retourne à l''arrière ou choisissez parmi cette liste de
+    priorités valides: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Le format actuel pour le canal de discussion
+    distinct est {0}. Veuillez vous assurer que vos données comprennent les variables
+    suivantes: {1}. Tapez 0 pour revenir en arrière.'
+  wwcConfigGUISeparateChatChannelFormatButton: Modifier le format des canaux distincts
+  wwcConfigConversationChannelIconSuccess: Changement réussi de l'icône de votre chaîne.
+  wwcConfigChatChannelFormatInvalid: 'Format de canal non valide détecté. Veuillez
+    vous assurer que votre format inclut les variables suivantes: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Modifier l'icône de canal distinct
+  wwcConfigConversationChatFormatSuccess: Votre format a été modifié avec succès.
+  wwcConfigGUISeparateChatChannelForceButton: Chaîne séparée par force
 

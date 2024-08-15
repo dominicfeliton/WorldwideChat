@@ -632,8 +632,6 @@ Messages:
     {0}
   wwcConfigEventPriorityInvalid: Kipaumbele cha tukio la kusikilizaji wa gumzo halali
     katika config.yml. Kubadilisha kuwa {0}...
-  wwcConfigConversationChatPriorityInput: 'Kipaumbele cha sasa cha tukio la mazungumzo
-    ni {0}. Chagua kutoka kwenye orodha hii ya vipaumbele halali: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Badilisha Kipaumbele cha Msikilizaji
   wwcConfigConversationChatPriorityBadInput: Ingizo mbaya ya kipaumbele cha gumzo
     Tafadhali jaribu tena.
@@ -643,4 +641,27 @@ Messages:
     Kuendelea kuwa kweli...
   wwcWatsonDeprecation: Watson amepatiliwa na hauungwa mkono tena na IBM. Tafadhali
     fikiria kubadilisha, kwani msaada wake utaondolewa katika sasisho linalofuata.
+  wwcConfigForceChatChannelEnabled: Kituo tofauti cha tafsiri kitalazimishwa wakati
+    wa tafsiri zote.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Imefanikiwa kubadilisha kulazimisha
+    kituo tofauti.
+  wwcConfigConversationChatFormatBadInput: Inaonekana kama umekosa angalau moja ya
+    vigezo vilivyotajwa hapo juu ({0}). Tafadhali jaribu tena, au andika 0 ili kurudi
+    nyuma.
+  wwcConfigConversationChannelIconInput: Ikoni ya sasa ya kituo tofauti cha tafsiri
+    ni {0}. Nambari za rangi zinaungwa mkono; andika 0 ili kurudi nyuma.
+  wwcConfigConversationChatPriorityInput: 'Kipaumbele cha sasa cha tukio la mazungumzo
+    ni {0}. Andika 0 nenda nyuma au uchague kutoka kwenye orodha hii ya vipaumbele
+    halali: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
+    ni {0}. Tafadhali hakikisha pembejeo yako inajumuisha vigezo vifuatavyo: {1}.
+    Andika 0 ili kurudi nyuma.'
+  wwcConfigGUISeparateChatChannelFormatButton: Badilisha muundo wa Kituo tofauti
+  wwcConfigConversationChannelIconSuccess: Kwa mafanikio ilibadilisha ikoni yako ya
+    kituo
+  wwcConfigChatChannelFormatInvalid: 'Muundo mbaya wa kituo uligunduliwa. Tafadhali
+    hakikisha muundo wako unajumuisha vigezo vifuatavyo: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Badilisha Ikoni ya Kituo tofauti
+  wwcConfigConversationChatFormatSuccess: Muundo wako umebadilishwa kwa mafanikio.
+  wwcConfigGUISeparateChatChannelForceButton: Nguvu Kituo Tofauti
 

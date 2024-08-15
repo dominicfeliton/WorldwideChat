@@ -640,8 +640,6 @@ Messages:
     {0}.
   wwcConfigEventPriorityInvalid: Netinkamas pokalbių klausytojo įvykio prioritetas
     programoje config.yml. Numatytasis nustatymas į {0}...
-  wwcConfigConversationChatPriorityInput: 'Dabartinis pokalbio renginio prioritetas
-    yra {0}. Pasirinkite iš šio galiojančių prioritetų sąrašo: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Pokalbio įvykių klausytojo prioriteto keitimas
   wwcConfigConversationChatPriorityBadInput: Blogas pokalbio prioriteto įvestis! Prašome
     pabandyti dar kartą.
@@ -651,4 +649,26 @@ Messages:
     Numatyta tiesa...
   wwcWatsonDeprecation: “Watson” buvo atmestas ir IBM jo nebepalaiko. Prašome apsvarstyti
     galimybę perjungti, nes jo palaikymas bus pašalintas kitame atnaujinime.
+  wwcConfigForceChatChannelEnabled: Atskiras vertimo kanalas bus priverstas visų vertimų
+    metu.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Sėkmingai perjungtas priverčiant
+    atskirą kanalą.
+  wwcConfigConversationChatFormatBadInput: Panašu, kad jums trūksta bent vieno iš
+    minėtų kintamųjų ({0}). Pabandykite dar kartą arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigConversationChannelIconInput: Dabartinė atskiro vertimo kanalo piktograma
+    yra {0}. Palaikomi spalvų kodai; jei norite grįžti atgal, įveskite 0.
+  wwcConfigConversationChatPriorityInput: 'Dabartinis pokalbio renginio prioritetas
+    yra {0}. Įveskite 0 eiti į atgal arba pasirinkite iš šio galiojančių prioritetų
+    sąrašo: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
+    yra {0}. Įsitikinkite, kad jūsų įvestis apima šiuos kintamuosius: {1}. Įveskite
+    0, kad grįžtumėte atgal.'
+  wwcConfigGUISeparateChatChannelFormatButton: Pakeiskite atskiro kanalo formatą
+  wwcConfigConversationChannelIconSuccess: Sėkmingai pakeista kanalo piktograma.
+  wwcConfigChatChannelFormatInvalid: 'Aptiktas netinkamas kanalo formatas. Įsitikinkite,
+    kad jūsų formate yra šie kintamieji: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Pakeiskite atskiro kanalo piktogramą
+  wwcConfigConversationChatFormatSuccess: Jūsų formatas buvo sėkmingai pakeistas.
+  wwcConfigGUISeparateChatChannelForceButton: Priverskite atskirą kanalą
 

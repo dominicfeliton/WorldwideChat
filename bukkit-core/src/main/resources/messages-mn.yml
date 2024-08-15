@@ -655,8 +655,6 @@ Messages:
     тохируулна уу.
   wwcConfigEventPriorityInvalid: Config.yml дахь хүчин төгөлдөр бус чат сонсогчдын
     үйл явдлын тэргүүлэх ач холбогдол. {0} гэж анхдагч байна...
-  wwcConfigConversationChatPriorityInput: 'Одоогийн чат үйл явдлын тэргүүлэх чиглэл
-    бол {0} юм. Хүчинтэй тэргүүлэх чиглэлийн жагсаалтаас сонгоно уу: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Чат үйл явдлын сонсогчдын тэргүүлэх ач холбогдлыг
   wwcConfigConversationChatPriorityBadInput: Чатын тэргүүлэх ач холбогдлын оролт муу!
     Дахин оролдоно уу.
@@ -666,4 +664,26 @@ Messages:
     дэмжлэг. Үнэн гэж анхдагч байна...
   wwcWatsonDeprecation: Уотсоныг хуучирсан бөгөөд IBM дэмжихээ больсон. Энэ нь дэмжлэг
     дараагийн шинэчлэлт устгах болно гэж, шилжих авч үзнэ үү.
+  wwcConfigForceChatChannelEnabled: Бүх орчуулгын явцад тусдаа орчуулгын сувгийг албадан
+    гаргах болно.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Тусдаа сувгийг хүчээр амжилттай
+    сольсон.
+  wwcConfigConversationChatFormatBadInput: Энэ нь та дээр дурдсан хувьсагчдын дор
+    хаяж аль нэгийг нь дутуу байгаа мэт харагдаж байна ({0}). Дахин оролдоно уу, эсвэл
+    буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationChannelIconInput: Тусдаа орчуулгын сувгийн одоогийн дүрс нь
+    {0} юм. Өнгөний кодыг дэмжиж байна; буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationChatPriorityInput: 'Одоогийн чатын үйл явдлын тэргүүлэх чиглэл
+    бол {0} юм. Тайлбар 0 буцах руу явах эсвэл хүчин төгөлдөр тэргүүлэх чиглэлүүдийн
+    энэ жагсаалтаас сонгоно уу: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Тусдаа чат сувгийн одоогийн формат нь
+    {0} юм. Таны оролтод дараах хувьсагчууд багтсан эсэхийг шалгана уу: {1}. Буцахын
+    тулд 0 гэж бичнэ үү.'
+  wwcConfigGUISeparateChatChannelFormatButton: Тусдаа сувгийн форматыг өөрчлөх
+  wwcConfigConversationChannelIconSuccess: Таны сувгийн дүрсийг амжилттай өөрчилсөн.
+  wwcConfigChatChannelFormatInvalid: 'Хүчингүй сувгийн формат илэрсэн. Таны формат
+    нь дараах хувьсагчуудыг багтаасан эсэхийг шалгана уу: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Тусдаа сувгийн дүрсийг өөрчлөх
+  wwcConfigConversationChatFormatSuccess: Таны формат амжилттай өөрчлөгдсөн.
+  wwcConfigGUISeparateChatChannelForceButton: Тусгай суваг хүчээр
 

@@ -629,8 +629,6 @@ Messages:
   wwcConfigEventPrioritySet: ჩატის მსმენელის ღონისძიების პრიორიტეტი {0}
   wwcConfigEventPriorityInvalid: არასწორი ჩატის მსმენელის მოვლენის პრიორიტეტი config.yml-ში
     ნაგულისხმევად {0}...
-  wwcConfigConversationChatPriorityInput: 'ჩატის მოვლენის მიმდინარე პრიორიტეტია {0}.
-    აირჩიეთ მოქმედი პრიორიტეტების ამ სიიდან: {1}.'
   wwcConfigGUIChatListenerPriorityButton: შეცვალეთ ჩატის ღონისძიების
   wwcConfigConversationChatPriorityBadInput: ცუდი ჩატის პრიორიტეტული შე გთხოვთ კვლავ
     სცადოთ
@@ -639,4 +637,24 @@ Messages:
     ში. ნამდვილად არ შეესაბამება...
   wwcWatsonDeprecation: უოტსონი მოძველებულია და IBM— ის მხარდაჭერას აღარ უჭერს. გთხოვთ,
     გაითვალისწინოთ გადართვა, რადგან მისი მხარდაჭერა მოიხსნება შემდეგ განახლებ
+  wwcConfigForceChatChannelEnabled: ყველა თარგმანის დროს იძულებული იქნება ცალკე თარგმანის
+    არხ
+  wwcConfigConversationSeparateChatChannelForceSuccess: წარმატებით შეცვალა ცალკე არხის
+    იძულება.
+  wwcConfigConversationChatFormatBadInput: როგორც ჩანს, თქვენ აკლია მინიმუმ ერთი ზემოხსენებული
+    ცვლადი ({0}). გთხოვთ, კვლავ სცადოთ, ან დააკრიფეთ 0 დაბრუნებისთვის.
+  wwcConfigConversationChannelIconInput: ცალკე თარგმანის არხის ამჟამინდელი ხატია {0}.
+    ფერის კოდები მხარდაჭერილია; დაბრუნებისთვის ტიპი 0.
+  wwcConfigConversationChatPriorityInput: 'ჩატის მოვლენის მიმდინარე პრიორიტეტია {0}.
+    ტიპი 0 გადადით უკან ან აირჩიეთ მოქმედი პრიორიტეტების ამ სიიდან: {1}.'
+  wwcConfigConversationChannelFormatInput: 'ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
+    გთხოვთ, დარწმუნდეთ, რომ თქვენი შეყვანა მოიცავს შემდეგ ცვლადებს: {1} დაბრუნებისთვის
+    აკრიფეთ 0.'
+  wwcConfigGUISeparateChatChannelFormatButton: ცალკეული არხის ფორმატის
+  wwcConfigConversationChannelIconSuccess: წარმატებით შეცვალა თქვენი არხის ხატი.
+  wwcConfigChatChannelFormatInvalid: 'არასწორი არხის ფორმატი გამოვლინდა გთხოვთ, დარწმუნდეთ,
+    რომ თქვენი ფორმატი შეიცავს შემდეგ ცვლადებს: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: ცალკეული არხის ხატის
+  wwcConfigConversationChatFormatSuccess: თქვენი ფორმატი წარმატებით შეიცვალა.
+  wwcConfigGUISeparateChatChannelForceButton: ცალკე არხის ძალა
 

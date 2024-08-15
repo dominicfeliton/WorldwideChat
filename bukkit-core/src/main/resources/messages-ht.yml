@@ -610,8 +610,6 @@ Messages:
   wwcConfigEventPrioritySet: Mete priyorite evènman koute chat nan {0}.
   wwcConfigEventPriorityInvalid: Priyorite evènman koute chat envalab nan config.yml.
     Defaulting nan {0}...
-  wwcConfigConversationChatPriorityInput: 'Priyorite evènman chat aktyèl la se {0}.
-    Chwazi nan lis sa a nan priyorite valab: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Chanje Priyorite Koute Evènman Chat
   wwcConfigConversationChatPriorityBadInput: Move chat priyorite opinyon! Tanpri eseye
     ankò.
@@ -621,4 +619,24 @@ Messages:
   wwcWatsonDeprecation: Watson te deprecated epi li pa gen okenn ankò sipòte pa IBM.
     Tanpri konsidere oblije chanje, kòm sipò pou li pral retire nan aktyalizasyon
     kap vini an.
+  wwcConfigForceChatChannelEnabled: Yon kanal tradiksyon separe yo pral fòse pandan
+    tout tradiksyon.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Aksè togged fòse kanal la
+    separe.
+  wwcConfigConversationChatFormatBadInput: Li sanble tankou ou ap manke omwen youn
+    nan varyab yo susmansyone ({0}). Tanpri eseye ankò, oswa tape 0 pou tounen.
+  wwcConfigConversationChannelIconInput: Icon aktyèl la pou kanal tradiksyon separe
+    a se {0}. Kòd koulè yo sipòte; kalite 0 pou tounen.
+  wwcConfigConversationChatPriorityInput: 'Priyorite evènman chat aktyèl la se {0}.
+    Kalite 0 ale nan tounen oswa chwazi nan lis sa a nan priyorite ki valab: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
+    se {0}. Tanpri asire w ke opinyon ou gen ladan varyab sa yo: {1}. Kalite 0 pou
+    tounen.'
+  wwcConfigGUISeparateChatChannelFormatButton: Chanje fòma chanèl separe
+  wwcConfigConversationChannelIconSuccess: Aksè chanje icon kanal ou.
+  wwcConfigChatChannelFormatInvalid: 'Fòma chanèl envalid detekte. Tanpri asire w
+    ke fòma ou gen ladan varyab sa yo: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Chanje Icon Chèn separe
+  wwcConfigConversationChatFormatSuccess: Fòma ou te chanje avèk siksè.
+  wwcConfigGUISeparateChatChannelForceButton: Fòs Chèn separe
 

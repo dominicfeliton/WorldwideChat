@@ -663,8 +663,6 @@ Messages:
     {0}
   wwcConfigEventPriorityInvalid: Përparësia e pavlefshme e ngjarjes së dëgjuesit të
     bisedës në config.yml. Parazgjedhja në {0}...
-  wwcConfigConversationChatPriorityInput: 'Prioriteti aktual i ngjarjes së bisedës
-    është {0}. Zgjidhni nga kjo listë e prioriteteve të vlefshme: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Ndryshoni prioritetin e dëgjuesit të
   wwcConfigConversationChatPriorityBadInput: Input i keq i përparësisë së bisedës
     Ju lutemi provoni përsëri.
@@ -674,4 +672,26 @@ Messages:
     Përcaktimi i vërtetë...
   wwcWatsonDeprecation: Watson është zhdukur dhe nuk mbështetet më nga IBM. Ju lutemi
     konsideroni kalimin, pasi mbështetja për të do të hiqet në përditësimin e ardhshëm.
+  wwcConfigForceChatChannelEnabled: Një kanal i veçantë përkthimi do të detyrohet
+    gjatë të gjitha përkthimeve.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Ndërroi me sukses duke detyruar
+    kanalin e veçantë.
+  wwcConfigConversationChatFormatBadInput: Duket sikur ju mungon të paktën një nga
+    variablat e lartpërmendura ({0}). Ju lutemi provoni përsëri, ose shkruani 0 për
+    të kthyer përsëri.
+  wwcConfigConversationChannelIconInput: Ikona aktuale për kanalin e veçantë të përkthimit
+    është {0}. Kodet e ngjyrave mbështeten; shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationChatPriorityInput: 'Prioriteti aktual i ngjarjes së bisedës
+    është {0}. Shtypni 0 shkoni te prapa ose zgjidhni nga kjo listë e prioriteteve
+    të vlefshme: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
+    bisedës është {0}. Ju lutemi sigurohuni që hyrja juaj të përfshijë variablat e
+    mëposhtme: {1}. Shkruani 0 për të kthyer përsëri.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ndryshoni formatin e veçantë të
+  wwcConfigConversationChannelIconSuccess: Ndryshoi me sukses ikonën e kanalit tuaj.
+  wwcConfigChatChannelFormatInvalid: 'Zbuluar formati i pavlefshëm i kanalit. Ju lutemi
+    sigurohuni që formati juaj përfshin variablat e mëposhtme: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Ndryshoni ikonën e kanalit të veç
+  wwcConfigConversationChatFormatSuccess: Formati juaj është ndryshuar me sukses.
+  wwcConfigGUISeparateChatChannelForceButton: Forconi kanalin e veçantë
 

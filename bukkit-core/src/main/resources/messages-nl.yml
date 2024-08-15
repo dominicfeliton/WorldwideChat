@@ -651,8 +651,6 @@ Messages:
     in op {0}.
   wwcConfigEventPriorityInvalid: Ongeldige prioriteit van de chatluisteraar in config.yml.
     Standaard ingesteld op {0}...
-  wwcConfigConversationChatPriorityInput: 'De huidige prioriteit van het chatevenement
-    is {0}. Kies uit deze lijst met geldige prioriteiten: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Prioriteit van de luisteraar van chatgebeurtenissen
     wijzigen
   wwcConfigConversationChatPriorityBadInput: Invoer met slechte chatprioriteit! Probeer
@@ -664,4 +662,26 @@ Messages:
   wwcWatsonDeprecation: Watson is verouderd en wordt niet langer ondersteund door
     IBM. Overweeg om over te stappen, want de ondersteuning hiervoor wordt in de volgende
     update verwijderd.
+  wwcConfigForceChatChannelEnabled: Tijdens alle vertalingen wordt een apart vertaalkanaal
+    afgedwongen.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Met succes omgeschakeld om
+    het afzonderlijke kanaal te forceren.
+  wwcConfigConversationChatFormatBadInput: Het lijkt erop dat je minstens één van
+    de bovengenoemde variabelen mist ({0}). Probeer het opnieuw of typ 0 om terug
+    te gaan.
+  wwcConfigConversationChannelIconInput: Het huidige pictogram voor het afzonderlijke
+    vertaalkanaal is {0}. Kleurcodes worden ondersteund; typ 0 om terug te gaan.
+  wwcConfigConversationChatPriorityInput: 'De huidige prioriteit van het chatevenement
+    is {0}. Typ 0 en ga terug of kies uit deze lijst met geldige prioriteiten: {1}.'
+  wwcConfigConversationChannelFormatInput: 'De huidige indeling voor het afzonderlijke
+    chatkanaal is {0}. Zorg ervoor dat je invoer de volgende variabelen bevat: {1}.
+    Typ 0 om terug te gaan.'
+  wwcConfigGUISeparateChatChannelFormatButton: De indeling van een afzonderlijk kanaal
+    wijzigen
+  wwcConfigConversationChannelIconSuccess: Je kanaalpictogram is succesvol gewijzigd.
+  wwcConfigChatChannelFormatInvalid: 'Ongeldig kanaalformaat gedetecteerd. Zorg ervoor
+    dat je formaat de volgende variabelen bevat: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Het afzonderlijke kanaalpictogram wijzigen
+  wwcConfigConversationChatFormatSuccess: Je formaat is succesvol gewijzigd.
+  wwcConfigGUISeparateChatChannelForceButton: Afzonderlijk kanaal afdwingen
 

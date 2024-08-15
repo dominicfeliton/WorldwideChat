@@ -628,8 +628,6 @@ Messages:
   wwcConfigEventPrioritySet: Nastavte prioritu události posluchače chatu na {0}.
   wwcConfigEventPriorityInvalid: Neplatná priorita události posluchače chatu v config.yml.
     Výchozí hodnota {0}...
-  wwcConfigConversationChatPriorityInput: 'Aktuální priorita události chatu je {0}.
-    Vyberte si z tohoto seznamu platných priorit: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Změna priority posluchače událostí chatu
   wwcConfigConversationChatPriorityBadInput: Špatný vstup priority chatu! Zkuste to
     prosím znovu.
@@ -638,4 +636,24 @@ Messages:
     Výchozí hodnota true...
   wwcWatsonDeprecation: Watson byl zastaralý a IBM jej již nepodporuje. Zvažte prosím
     přepnutí, protože podpora pro něj bude odstraněna v příští aktualizaci.
+  wwcConfigForceChatChannelEnabled: Během všech překladů bude vynucen samostatný překladový
+    kanál.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Úspěšně přepnuto vynucením
+    samostatného kanálu.
+  wwcConfigConversationChatFormatBadInput: Vypadá to, že vám chybí alespoň jedna z
+    výše uvedených proměnných ({0}). Zkuste to prosím znovu, nebo zadejte 0 pro návrat.
+  wwcConfigConversationChannelIconInput: Aktuální ikona pro samostatný překladový
+    kanál je {0}. Barevné kódy jsou podporovány; zadejte 0 pro návrat zpět.
+  wwcConfigConversationChatPriorityInput: 'Aktuální priorita události chatu je {0}.
+    Zadejte 0 přejděte zpět nebo vyberte z tohoto seznamu platných priorit: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Aktuální formát samostatného kanálu chatu
+    je {0}. Ujistěte se, že váš vstup obsahuje následující proměnné: {1}. Zadejte
+    0 pro návrat.'
+  wwcConfigGUISeparateChatChannelFormatButton: Změna formátu samostatného kanálu
+  wwcConfigConversationChannelIconSuccess: Úspěšně změnila ikonu kanálu.
+  wwcConfigChatChannelFormatInvalid: 'Byl zjištěn neplatný formát kanálu. Ujistěte
+    se, že váš formát obsahuje následující proměnné: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Změnit ikonu samostatného kanálu
+  wwcConfigConversationChatFormatSuccess: Váš formát byl úspěšně změněn.
+  wwcConfigGUISeparateChatChannelForceButton: Vynutit oddělený kanál
 

@@ -644,8 +644,6 @@ Messages:
     értékre.
   wwcConfigEventPriorityInvalid: Érvénytelen csevegő eseményprioritás a config.yml-ben.
     Alapértelmezés szerint {0}...
-  wwcConfigConversationChatPriorityInput: 'Az aktuális csevegési esemény prioritása
-    {0}. Válasszon az érvényes prioritások listájából: {1}.'
   wwcConfigGUIChatListenerPriorityButton: A csevegési eseményhallgató prioritásának
     módosítása
   wwcConfigConversationChatPriorityBadInput: Rossz csevegési prioritási bemenet! Kérjük,
@@ -656,4 +654,26 @@ Messages:
     Alapértelmezés szerint igaz...
   wwcWatsonDeprecation: A Watson elavult, és az IBM már nem támogatja. Kérjük, fontolja
     meg a váltást, mivel a támogatás a következő frissítésben eltávolításra kerül.
+  wwcConfigForceChatChannelEnabled: Minden fordítás során külön fordítási csatornát
+    kell kényszeríteni.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Sikeresen váltotta ki a külön
+    csatorna kényszerítését.
+  wwcConfigConversationChatFormatBadInput: Úgy tűnik, hogy hiányzik legalább az egyik
+    fent említett változó közül ({0}). Próbálkozzon újra, vagy írja be a 0 parancsot
+    a visszalépéshez.
+  wwcConfigConversationChannelIconInput: A külön fordítási csatorna aktuális ikonja
+    a {0}. A színkódok támogatottak; írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationChatPriorityInput: 'Az aktuális csevegési esemény prioritása
+    {0}. Írja be a 0 gombot vissza, vagy válasszon az érvényes prioritások listájából:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
+    {0}. Kérjük, győződjön meg arról, hogy a bemenet tartalmazza a következő változókat:
+    {1}. Írja be a 0-at, hogy visszatérjen.'
+  wwcConfigGUISeparateChatChannelFormatButton: Külön csatornaformátum módosítása
+  wwcConfigConversationChannelIconSuccess: Sikeresen megváltoztatta a csatorna ikonját.
+  wwcConfigChatChannelFormatInvalid: 'Érvénytelen csatornaformátum észlelhető. Kérjük,
+    győződjön meg arról, hogy a formátum tartalmazza a következő változókat: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Külön csatorna ikon módosítása
+  wwcConfigConversationChatFormatSuccess: A formátum sikeresen megváltozott.
+  wwcConfigGUISeparateChatChannelForceButton: Külön csatorna kényszerítése
 

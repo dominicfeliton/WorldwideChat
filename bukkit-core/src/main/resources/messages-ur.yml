@@ -637,8 +637,6 @@ Messages:
   wwcConfigEventPrioritySet: چیٹ سننے والے ایونٹ کی ترجیح {0} پر سیٹ کریں۔
   wwcConfigEventPriorityInvalid: config.yml میں چیٹ سننے والے ایونٹ کی غلط ترجیح۔
     {0} پر ڈیفالٹ ہو رہا ہے...
-  wwcConfigConversationChatPriorityInput: 'موجودہ چیٹ ایونٹ کی ترجیح {0} ہے۔ درست
-    ترجیحات کی اس فہرست میں سے منتخب کریں: {1}.'
   wwcConfigGUIChatListenerPriorityButton: چیٹ ایونٹ سننے والی ترجیح تبدیل کریں
   wwcConfigConversationChatPriorityBadInput: خراب چیٹ ترجیحی ان پٹ! براہ کرم دوبارہ
     کوشش کریں۔
@@ -649,4 +647,26 @@ Messages:
   wwcWatsonDeprecation: واٹسن کو مسترد کردیا گیا ہے اور اب آئی بی ایم کے ذریعہ اس
     کی حمایت نہیں ہے۔ براہ کرم سوئچنگ پر غور کریں، کیونکہ اگلی تازہ کاری میں اس کی
     حمایت کو ہٹا دیا جائے گا۔
+  wwcConfigForceChatChannelEnabled: تمام ترجموں کے دوران ایک علیحدہ ترجمہ چینل پر
+    مجبور کیا جائے گا۔
+  wwcConfigConversationSeparateChatChannelForceSuccess: کامیابی کے ساتھ علیحدہ چینل
+    پر مجبور کردیا۔
+  wwcConfigConversationChatFormatBadInput: ایسا لگتا ہے کہ آپ مذکورہ بالا متغیرات
+    میں سے کم از کم ایک غائب ہیں ({0}) ۔ براہ کرم دوبارہ کوشش کریں، یا واپس جانے کے
+    لئے 0 ٹائپ کریں۔
+  wwcConfigConversationChannelIconInput: علیحدہ ترجمہ چینل کے لئے موجودہ آئیکن {0}
+    ہے۔ رنگ کوڈز کی حمایت کی جاتی ہے۔ واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationChatPriorityInput: 'موجودہ چیٹ ایونٹ کی ترجیح {0} ہے۔ ٹائپ
+    کریں 0 واپس جائیں یا درست ترجیحات کی اس فہرست میں سے منتخب کریں: {1}.'
+  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
+    ہے۔ براہ کرم یقینی بنائیں کہ آپ کے ان پٹ میں درج ذیل متغیر شامل ہیں: {1}. واپس
+    جانے کے لئے 0 ٹائپ کریں۔'
+  wwcConfigGUISeparateChatChannelFormatButton: الگ چینل فارمیٹ تبدیل کریں
+  wwcConfigConversationChannelIconSuccess: کامیابی کے ساتھ آپ کے چینل کا آئیکن تبدیل
+  wwcConfigChatChannelFormatInvalid: 'غلط چینل فارمیٹ کا پتہ براہ کرم یقینی بنائیں
+    کہ آپ کی شکل میں درج ذیل متغیرات شامل ہیں: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: الگ چینل آئیکن تبدیل کریں
+  wwcConfigConversationChatFormatSuccess: آپ کا فارمیٹ کامیابی کے ساتھ تبدیل کیا گیا
+    ہے۔
+  wwcConfigGUISeparateChatChannelForceButton: فورس الگ چینل
 

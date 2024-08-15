@@ -661,9 +661,6 @@ Messages:
   wwcConfigEventPrioritySet: அரட்டை கேட்பவர் நிகழ்வு முன்னுரிமை {0} ஆக அமைக்கவும்
   wwcConfigEventPriorityInvalid: config.yml இல் தவறான அரட்டை கேட்பவர் நிகழ்வு முன்னுரிமை.
     {0} ஆக இயல்பாதது...
-  wwcConfigConversationChatPriorityInput: 'தற்போதைய அரட்டை நிகழ்வு முன்னுரிமை {0}
-    ஆகும். செல்லுபடியாகும் முன்னுரிமைகளின் இந்த பட்டியலிலிருந்து தேர்வு செய்யவும்:
-    {1}.'
   wwcConfigGUIChatListenerPriorityButton: அரட்டை நிகழ்வு கேட்பவர் முன்னுரிமை
   wwcConfigConversationChatPriorityBadInput: மோசமான அரட்டை முன்னுரிமை உள்ளீடு! மீண்டும்
     முயற்சிக்கவும்.
@@ -672,4 +669,25 @@ Messages:
     உண்மையாக இயல்பாதது...
   wwcWatsonDeprecation: வாட்சன் விலக்கப்பட்டு இனி ஐபிஎம் ஆதரிக்கப்படவில்லை. தயவுசெய்து
     மாறுவதைக் கவனியுங்கள், ஏனெனில் அடுத்த புதுப்பிப்பில் அதற்கான ஆதரவு அகற்றப்படும்.
+  wwcConfigForceChatChannelEnabled: அனைத்து மொழிபெயர்ப்புகளின் போது தனி மொழிபெயர்ப்பு
+    சேனல் கட்டாயப்படுத்தப்படும்.
+  wwcConfigConversationSeparateChatChannelForceSuccess: வெற்றிகரமாக தனி சேனலை கட்டாயப்படுத்தியது.
+  wwcConfigConversationChatFormatBadInput: மேற்கூறிய மாறிகளில் குறைந்தது ஒன்றை நீங்கள்
+    காணவில்லை என்று தெரிகிறது ({0}). தயவுசெய்து மீண்டும் முயற்சிக்கவும் அல்லது திரும்பிச்
+    செல்ல 0 என தட்ட
+  wwcConfigConversationChannelIconInput: தனி மொழிபெயர்ப்பு சேனலுக்கான தற்போதைய ஐகான்
+    {0} ஆகும். வண்ணக் குறியீடுகள் ஆதரிக்கப்படுகின்றன; திரும்பிச் செல்ல 0 ஐ தட்டச்ச
+  wwcConfigConversationChatPriorityInput: 'தற்போதைய அரட்டை நிகழ்வு முன்னுரிமை {0}
+    ஆகும். 0 ஐ தட்டச்சு செய்க பின்னுச் செல்லவும் அல்லது சரியான முன்னுரிமைகளின் பட்டியலிலிருந்து
+    தேர்வு செய்யவும்: {1}'
+  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
+    {0} ஆகும். உங்கள் உள்ளீட்டில் பின்வரும் மாறிகள் உள்ளடங்குவதை உறுதிப்படுத்திக்
+    கொள்ளுங்கள்: {1}. திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.'
+  wwcConfigGUISeparateChatChannelFormatButton: தனி சேனல் வடிவமைப்பை மாற்றவும்
+  wwcConfigConversationChannelIconSuccess: உங்கள் சேனல் ஐகானை வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigChatChannelFormatInvalid: 'செல்லாத சேனல் வடிவம் கண்டறியப்பட்டது. உங்கள்
+    வடிவமைப்பில் பின்வரும் மாறிகள் உள்ளடங்குவதை உறுதிப்படுத்திக் கொள்ளுங்கள்: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: தனி சேனல் ஐகானை மாற்றவும்
+  wwcConfigConversationChatFormatSuccess: உங்கள் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
+  wwcConfigGUISeparateChatChannelForceButton: ஃபோர்ஸ் தனி சேனல்
 

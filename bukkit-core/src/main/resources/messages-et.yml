@@ -607,8 +607,6 @@ Messages:
     {0}.
   wwcConfigEventPriorityInvalid: Vale vestluskuulaja sündmuse prioriteet rakenduses
     config.yml. Vaikimisi väärtus {0}...
-  wwcConfigConversationChatPriorityInput: 'Praegune vestlusürituse prioriteet on {0}.
-    Valige sellest kehtivate prioriteetide loendist: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Vestlussündmuse kuulaja prioriteedi muutmine
   wwcConfigConversationChatPriorityBadInput: Halb vestluse prioriteedi sisend! Palun
     proovige uuesti.
@@ -617,4 +615,23 @@ Messages:
     tõeseks...
   wwcWatsonDeprecation: Watson on aegunud ja IBM ei toeta seda enam. Palun kaaluge
     vahetamist, kuna selle tugi eemaldatakse järgmises värskenduses.
+  wwcConfigForceChatChannelEnabled: Kõigi tõlgete ajal sunnitakse eraldi tõlkekanal.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Eraldi kanali sundides edukalt
+    lülitatud.
+  wwcConfigConversationChatFormatBadInput: Tundub, et teil puudub vähemalt üks eelnimetatud
+    muutujatest ({0}). Palun proovige uuesti, või tippige tagasi minemiseks 0.
+  wwcConfigConversationChannelIconInput: Eraldi tõlkekanali praegune ikoon on {0}.
+    Toetatakse värvikoode; tagasi minemiseks tippige 0.
+  wwcConfigConversationChatPriorityInput: 'Praegune vestlusürituse prioriteet on {0}.
+    Tippige 0, minge tagasi või valige sellest kehtivate prioriteetide loendist: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
+    on {0}. Palun veenduge, et teie sisend sisaldab järgmisi muutujaid: {1}. Tagasi
+    minemiseks tippige 0.'
+  wwcConfigGUISeparateChatChannelFormatButton: Muutke eraldi kanalivormingut
+  wwcConfigConversationChannelIconSuccess: Muutis edukalt oma kanaliikooni.
+  wwcConfigChatChannelFormatInvalid: 'Tuvastati vale kanalivorming. Veenduge, et teie
+    vorming sisaldab järgmisi muutujaid: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Muutke eraldi kanaliikooni
+  wwcConfigConversationChatFormatSuccess: Teie vormingut on edukalt muudetud.
+  wwcConfigGUISeparateChatChannelForceButton: Sundage eraldi kanal
 

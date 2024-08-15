@@ -24,6 +24,58 @@ public class ChatSettingsConvos {
 
 	private static WWCInventoryManager invMan = new WWCInventoryManager();
 
+	public static class ChannelIcon extends StringPrompt {
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+		@Override
+		public String getPromptText(ConversationContext context) {
+			/* Close any open inventories */
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return refs.serial(refs.getFancyMsg("wwcConfigConversationChannelIconInput",
+					new String[] {"&r" + main.getConfigManager().getMainConfig().getString("Chat.separateChatChannel.icon")},
+					"&b",
+					currPlayer));
+		}
+
+		@Override
+		public Prompt acceptInput(ConversationContext context, String input) {
+			Player currPlayer = ((Player) context.getForWhom());
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChannelIconSuccess",
+					"Chat.separateChatChannel.icon", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv);
+		}
+	}
+
+	public static class ChannelFormat extends StringPrompt {
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
+		private String vars = "{prefix}, {username}, {suffix}";
+
+		@Override
+		public String getPromptText(ConversationContext context) {
+			/* Close any open inventories */
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return refs.serial(refs.getFancyMsg("wwcConfigConversationChannelFormatInput",
+					new String[] {"&r" + main.getConfigManager().getMainConfig().getString("Chat.separateChatChannel.format"),
+							vars},
+					"&b",
+					currPlayer));
+		}
+
+		@Override
+		public Prompt acceptInput(ConversationContext context, String input) {
+			Player currPlayer = ((Player) context.getForWhom());
+			boolean valid = input.contains("{suffix}") && input.contains("{prefix}") && input.contains("{username}");
+
+			if (valid || input.equals("0")) {
+				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
+						"Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv);
+			}
+			refs.sendFancyMsg("wwcConfigConversationChatFormatBadInput", new String[] {vars}, "&c", currPlayer);
+			return this;
+		}
+	}
+
 	public static class ModifyChatPriority extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 

@@ -624,8 +624,6 @@ Messages:
   wwcConfigEventPrioritySet: Чат тыңдаушысы оқиғасының басымдығын {0} мәніне орнатыңыз.
   wwcConfigEventPriorityInvalid: Config.yml ішіндегі сөйлесу тыңдаушысы оқиғасының
     басымдығы жарамсыз. Әдепкі бойынша {0}...
-  wwcConfigConversationChatPriorityInput: 'Ағымдағы чат оқиғасының басымдығы - {0}.
-    Жарамды басымдықтардың осы тізімінен таңдаңыз: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Чат оқиғасының тыңдаушысының басымдығын
     өзгерту
   wwcConfigConversationChatPriorityBadInput: Нашар чат басымдылығын енгізу! Қайта
@@ -635,4 +633,25 @@ Messages:
     Шын мәніне дефолт...
   wwcWatsonDeprecation: Уотсон ескірген және оны IBM қолдамайды. Пожалуйста, ауыстыруды
     қарастырыңыз, себебі оны қолдау келесі жаңартуда жойылады.
+  wwcConfigForceChatChannelEnabled: Барлық аудармалар кезінде жеке аударма арнасы
+    мәжбүр болады.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Жеке арнаны мәжбүрлеп сәтті
+    ауыстырылды.
+  wwcConfigConversationChatFormatBadInput: Жоғарыда аталған айнымалылардың кем дегенде
+    біреуін ({0}) жетіспейтін сияқты көрінеді. Қайта көріңіз немесе кері оралу үшін
+    0 деп теріңіз.
+  wwcConfigConversationChannelIconInput: Бөлек аударма арнасының ағымдағы белгішесі
+    {0} болып табылады. Түс кодтарына қолдау көрсетіледі; кері оралу үшін 0 теріңіз.
+  wwcConfigConversationChatPriorityInput: 'Ағымдағы чат оқиғасының басымдығы - {0}.
+    0 теріңіз артқа өтіңіз немесе жарамды басымдықтардың осы тізімінен таңдаңыз: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
+    - {0}. Пожалуйста, сіздің кірісіңіз келесі айнымалы мәндерді қамтитынына көз жеткізіңіз:
+    {1}. Қайту үшін 0 деп теріңіз.'
+  wwcConfigGUISeparateChatChannelFormatButton: Бөлек арна пішімін өзгертіңіз
+  wwcConfigConversationChannelIconSuccess: Арна белгішесін сәтті өзгертті.
+  wwcConfigChatChannelFormatInvalid: 'Жарамсыз арна пішімі анықталды. Пішіміңізге
+    келесі айнымалы мәндерді қамтитынына көз жеткізіңіз: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Бөлек арна белгішесін өзгертіңіз
+  wwcConfigConversationChatFormatSuccess: Сіздің пішіміңіз сәтті өзгертілді.
+  wwcConfigGUISeparateChatChannelForceButton: Бөлек арнаны күштеңіз
 

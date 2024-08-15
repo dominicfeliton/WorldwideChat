@@ -35,15 +35,7 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
 
         refs.debugMsg(chat.getPlayerPrefix(eventPlayer));
         refs.debugMsg(chat.getPlayerSuffix(eventPlayer));
-        PluginManager man = main.getServer().getPluginManager();
-        Component outMsg;
 
-        outMsg = getDefaultVaultMessage(eventPlayer, chat, name, message);
-        return outMsg;
-    }
-
-    private Component getDefaultVaultMessage(Player eventPlayer, Chat chat, Component name, Component message) {
-        refs.debugMsg("Default!");
         return main.getTranslateLayout(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer))
                 .append(Component.space())
                 .append(message);

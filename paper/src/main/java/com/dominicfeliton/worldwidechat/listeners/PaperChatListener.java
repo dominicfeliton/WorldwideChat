@@ -143,7 +143,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
         // Add hover text w/original message
         // TODO: This sucks make it better
-        if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+        if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
             outMsg = outMsg
                     .hoverEvent(HoverEvent.showText(translation.decorate(TextDecoration.ITALIC)));
         }

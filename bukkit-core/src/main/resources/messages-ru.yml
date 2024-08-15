@@ -635,8 +635,6 @@ Messages:
   wwcConfigEventPrioritySet: Установите приоритет события для слушателей чата на {0}.
   wwcConfigEventPriorityInvalid: Неверный приоритет события прослушивателя чата в
     config.yml. По умолчанию {0}...
-  wwcConfigConversationChatPriorityInput: 'В настоящее время приоритет мероприятия
-    в чате — {0}. Выберите из этого списка действительных приоритетов: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Изменить приоритет слушателя событий в чате
   wwcConfigConversationChatPriorityBadInput: Неверный ввод приоритета в чате! Пожалуйста,
     попробуйте еще раз.
@@ -647,4 +645,27 @@ Messages:
   wwcWatsonDeprecation: Watson устарела и больше не поддерживается IBM. Рассмотрите
     возможность перехода на другую версию, так как в следующем обновлении эта поддержка
     будет прекращена.
+  wwcConfigForceChatChannelEnabled: Во время всех переводов будет использоваться отдельный
+    канал перевода.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Успешно переключен принудительный
+    переход на отдельный канал.
+  wwcConfigConversationChatFormatBadInput: Похоже, вам не хватает хотя бы одной из
+    вышеупомянутых переменных ({0}). Пожалуйста, попробуйте еще раз или введите 0,
+    чтобы вернуться назад.
+  wwcConfigConversationChannelIconInput: В настоящее время для отдельного канала перевода
+    используется значок {0}. Поддерживаются цветовые коды; введите 0, чтобы вернуться
+    назад.
+  wwcConfigConversationChatPriorityInput: 'В настоящее время приоритет мероприятия
+    в чате — {0}. Введите 0, вернитесь назад или выберите один из следующих действительных
+    приоритетов: {1}.'
+  wwcConfigConversationChannelFormatInput: 'В настоящее время отдельный канал чата
+    имеет формат {0}. Убедитесь, что введенные вами данные содержат следующие переменные:
+    {1}. Введите 0, чтобы вернуться назад.'
+  wwcConfigGUISeparateChatChannelFormatButton: Изменить формат отдельного канала
+  wwcConfigConversationChannelIconSuccess: Значок канала успешно изменен.
+  wwcConfigChatChannelFormatInvalid: 'Обнаружен неправильный формат канала. Убедитесь,
+    что формат содержит следующие переменные: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Изменить значок отдельного канала
+  wwcConfigConversationChatFormatSuccess: Ваш формат успешно изменен.
+  wwcConfigGUISeparateChatChannelForceButton: Принудительный раздельный канал
 

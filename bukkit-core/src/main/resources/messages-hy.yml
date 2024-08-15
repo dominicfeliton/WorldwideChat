@@ -655,8 +655,6 @@ Messages:
     {0}:'
   wwcConfigEventPriorityInvalid: 'Անվավեր զրույցի ունկնդրի իրադարձության առաջնահերթությունը
     config.yml- ում: Կանխարգելում է {0}...'
-  wwcConfigConversationChatPriorityInput: 'Ընթացիկ զրույցի իրադարձության առաջնահերթությունը
-    {0} է: Ընտրեք վավեր առաջնահերթությունների այս ցանկից ՝ {1}:'
   wwcConfigGUIChatListenerPriorityButton: Փոխեք զրույցի իրադարձության ունկնդրի առաջնահերթ
   wwcConfigConversationChatPriorityBadInput: 'Վատ զրույցի առաջնահերթության մուտքագրում:
     Խնդրում ենք կրկին փորձել:'
@@ -666,4 +664,26 @@ Messages:
     ում: Չարժևորելով ճշմարիտ...'
   wwcWatsonDeprecation: 'Ուոթսոնը մերժվել է և այլևս չի աջակցվում IBM-ի կողմից: Խնդրում
     ենք հաշվի առնել անցումը, քանի որ դրա համար աջակցությունը կհեռացվի հաջորդ թարմացմանը:'
+  wwcConfigForceChatChannelEnabled: 'Բոլոր թարգմանությունների ժամանակ հարկադրված կլինի
+    թարգմանության առանձին ալիք:'
+  wwcConfigConversationSeparateChatChannelForceSuccess: 'Հաջողությամբ միացվել է առանձին
+    ալիքը ստիպելով:'
+  wwcConfigConversationChatFormatBadInput: 'Կարծես թե դուք բացակայում եք վերոհիշյալ
+    փոփոխականներից առնվազն մեկը ({0}): Խնդրում ենք կրկին փորձել կամ մուտքագրել 0 հետ
+    գնալու համար:'
+  wwcConfigConversationChannelIconInput: 'Առանձին թարգմանական ալիքի ներկայիս պատկերակը
+    {0} է: Գունային կոդերը ապահովվում են; հետ գնալու համար մուտքագրեք 0:'
+  wwcConfigConversationChatPriorityInput: 'Ընթացիկ զրույցի իրադարձության առաջնահերթությունը
+    {0} է: Մուտքագրեք 0 գնալ դեպի ետ կամ ընտրել վավեր առաջնահերթությունների այս ցանկից
+    `{1}.'
+  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
+    {0} է: Խնդրում ենք համոզվել, որ ձեր մուտքագրումը ներառում է հետեւյալ փոփոխականները.
+    {1}. Մուտքագրեք 0-ը հետ գնալու համար:'
+  wwcConfigGUISeparateChatChannelFormatButton: Փոխեք առանձին ալիքի ձևաչափը
+  wwcConfigConversationChannelIconSuccess: 'Հաջողությամբ փոխեց ձեր ալիքի պատկերակը:'
+  wwcConfigChatChannelFormatInvalid: 'Հայտնաբերվել է անվավեր ալիքի ձևաչափ Խնդրում
+    ենք համոզվել, որ ձեր ձևաչափը ներառում է հետևյալ փոփոխականները՝ {0}:'
+  wwcConfigGUISeparateChatChannelIconButton: Փոխեք առանձին ալիքի պատկերակը
+  wwcConfigConversationChatFormatSuccess: 'Ձեր ձևաչափը հաջողությամբ փոխվել է:'
+  wwcConfigGUISeparateChatChannelForceButton: Ֆորսել առանձին ալիքը
 

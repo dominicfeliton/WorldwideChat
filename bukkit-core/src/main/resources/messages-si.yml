@@ -626,8 +626,6 @@ Messages:
   wwcConfigEventPrioritySet: චැට් සවන් දීමේ සිදුවීම් ප්රමුඛතාවය {0} ලෙස සකසන්න.
   wwcConfigEventPriorityInvalid: config.yml හි අවලංගු චැට් සවන් දීමේ සිදුවීම් ප්රමුඛතාව.
     {0} වෙත පෙරහැරීම...
-  wwcConfigConversationChatPriorityInput: 'වර්තමාන චැට් සිදුවීම් ප්රමුඛතාවය {0} වේ.
-    මෙම වලංගු ප්රමුඛතා ලැයිස්තුවෙන් තෝරන්න: {1}.'
   wwcConfigGUIChatListenerPriorityButton: චැට් සිදුවීම් සවන් දෙන ප්රමුඛතාව වෙනස්
   wwcConfigConversationChatPriorityBadInput: නරක චැට් ප්රමුඛතා ආදානය! කරුණාකර නැවත
     උත්සාහ කරන්න.
@@ -636,4 +634,25 @@ Messages:
     බවට පත් කිරීම...
   wwcWatsonDeprecation: වොට්සන් අවලංගු කර ඇති අතර තවදුරටත් IBM විසින් සහාය නොදක්වයි.
     කරුණාකර මාරුවීම සලකා බලන්න, එය සඳහා සහාය ඊළඟ යාවත්කාලීන කිරීමේදී ඉවත් කරනු ඇත.
+  wwcConfigForceChatChannelEnabled: සියලුම පරිවර්තන අතරතුර වෙනම පරිවර්තන නාලිකාවක්
+    බල කෙරෙනු ඇත.
+  wwcConfigConversationSeparateChatChannelForceSuccess: වෙනම නාලිකාවට බල කරමින් සාර්ථකව
+    මාරු විය.
+  wwcConfigConversationChatFormatBadInput: ඉහත සඳහන් විචල්යයන්ගෙන් අවම වශයෙන් එක්
+    අයෙකු ඔබට අතුරුදන් වී ඇති බවක් පෙනේ ({0}). කරුණාකර නැවත උත්සාහ කරන්න, නැතහොත්
+    ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationChannelIconInput: වෙනම පරිවර්තන නාලිකාව සඳහා වත්මන් අයිකනය
+    {0} වේ. වර්ණ කේත සඳහා සහය දක්වයි; ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationChatPriorityInput: 'වර්තමාන චැට් සිදුවීම් ප්රමුඛතාවය {0} වේ.
+    0 ටයිප් කරන්න ආපසු යන්න හෝ වලංගු ප්රමුඛතා මෙම ලැයිස්තුවෙන් තෝරන්න: {1}.'
+  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
+    වේ. කරුණාකර ඔබේ ආදානයට පහත සඳහන් විචල්යයන් ඇතුළත් බවට වග බලා ගන්න: {1}. ආපසු යාමට
+    0 ටයිප් කරන්න.'
+  wwcConfigGUISeparateChatChannelFormatButton: වෙනම නාලිකා ආකෘතිය වෙනස් කරන්න
+  wwcConfigConversationChannelIconSuccess: ඔබේ නාලිකා නිරූපකය සාර්ථකව වෙනස් කළේය.
+  wwcConfigChatChannelFormatInvalid: 'අවලංගු නාලිකා ආකෘතිය අනාවරණය විය කරුණාකර ඔබේ
+    ආකෘතියට පහත සඳහන් විචල්යයන් ඇතුළත් බවට වග බලා ගන්න: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: වෙනම නාලිකා අයිකනය වෙනස් කරන්න
+  wwcConfigConversationChatFormatSuccess: ඔබේ ආකෘතිය සාර්ථකව වෙනස් කර ඇත.
+  wwcConfigGUISeparateChatChannelForceButton: වෙනම නාලිකාව බල කරන්න
 

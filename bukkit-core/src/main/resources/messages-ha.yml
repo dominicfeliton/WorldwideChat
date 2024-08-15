@@ -629,8 +629,6 @@ Messages:
   wwcConfigEventPrioritySet: Saita fifikon taron masu sauraro taɗi zuwa {0}.
   wwcConfigEventPriorityInvalid: Fifikon taron masu sauraron taɗi mara kyau a cikin
     config.yml. Rarraba zuwa {0}...
-  wwcConfigConversationChatPriorityInput: 'Fifikon taron tattaunawa na yanzu shine
-    {0}. Zaɓi daga wannan jerin abubuwan da suka fi dacewa: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Canja Fifikon Masu Sauraren Tattaunawa
   wwcConfigConversationChatPriorityBadInput: Shigar da fifikon taɗi mara kyau! Da
     fatan za a sake gwada.
@@ -641,4 +639,26 @@ Messages:
   wwcWatsonDeprecation: Watson ya ƙare shi kuma IBM baya goyan bayan shi. Da fatan
     za a yi la'akari da sauyawa, kamar yadda za a cire tallafi a cikin sabuntawa na
     gaba.
+  wwcConfigForceChatChannelEnabled: Za a tilasta wata tashar fassara daban yayin duk
+    fassarar.
+  wwcConfigConversationSeparateChatChannelForceSuccess: An sami nasarar canza tilasta
+    tashar daban.
+  wwcConfigConversationChatFormatBadInput: Yana kama da kun rasa aƙalla ɗaya daga
+    cikin masu canji da aka ambata ({0}). Da fatan za a sake gwada, ko rubuta 0 don
+    komawa.
+  wwcConfigConversationChannelIconInput: Gunkin yanzu don tashar fassara ta daban
+    shine {0}. Ana tallafawa lambobin launi; rubuta 0 don komawa.
+  wwcConfigConversationChatPriorityInput: 'Fifikon taron tattaunawa na yanzu shine
+    {0}. Rubuta 0 zuwa baya ko zaɓi daga wannan jerin abubuwan da suka fi dacewa:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Tsarin yanzu don tashar tattaunawa ta
+    daban shine {0}. Da fatan za a tabbatar da shigarwar ku ya haɗa da masu canji
+    masu zuwa: {1}. Rubuta 0 don komawa.'
+  wwcConfigGUISeparateChatChannelFormatButton: Canja Tsarin Tashar daban
+  wwcConfigConversationChannelIconSuccess: An sami nasarar canza gunkin tashar ku.
+  wwcConfigChatChannelFormatInvalid: 'An gano tsarin tashar mara kyau. Da fatan za
+    a tabbatar da tsarin ku ya haɗa da masu canji masu zuwa: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Canja Gunkin Tashar daban
+  wwcConfigConversationChatFormatSuccess: An canza tsarin ku cikin nasara.
+  wwcConfigGUISeparateChatChannelForceButton: Ƙarfin tashar daban
 

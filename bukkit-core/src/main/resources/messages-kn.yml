@@ -641,8 +641,6 @@ Messages:
   wwcConfigEventPrioritySet: ಚಾಟ್ ಕೇಳುಗರ ಈವೆಂಟ್ ಆದ್ಯತೆಯನ್ನು {0} ಗೆ ಹೊಂದಿಸಿ.
   wwcConfigEventPriorityInvalid: Config.yml ನಲ್ಲಿ ಅಮಾನ್ಯ ಚಾಟ್ ಕೇಳುಗರ ಈವೆಂಟ್ ಆದ್ಯತೆ.
     {0} ಗೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
-  wwcConfigConversationChatPriorityInput: 'ಪ್ರಸ್ತುತ ಚಾಟ್ ಈವೆಂಟ್ ಆದ್ಯತೆ {0} ಆಗಿದೆ.
-    ಮಾನ್ಯ ಆದ್ಯತೆಗಳ ಈ ಪಟ್ಟಿಯಿಂದ ಆರಿಸಿ: {1}.'
   wwcConfigGUIChatListenerPriorityButton: ಚಾಟ್ ಈವೆಂಟ್ ಕೇಳುವವರ ಆದ್ಯತೆಯನ್ನು ಬದಲಾಯ
   wwcConfigConversationChatPriorityBadInput: ಕೆಟ್ಟ ಚಾಟ್ ಆದ್ಯತೆಯ ಇನ್ಪುಟ್! ದಯವಿಟ್ಟು
     ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.
@@ -653,4 +651,25 @@ Messages:
   wwcWatsonDeprecation: ವ್ಯಾಟ್ಸನ್ ಅವರನ್ನು ಅಪ್ರಚುರಕಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಇದನ್ನು ಇನ್ನು ಮುಂದೆ
     ಐಬಿಎಂ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ಸ್ವಿಚಿಂಗ್ ಅನ್ನು ಪರಿಗಣಿಸಿ, ಏಕೆಂದರೆ ಮುಂದಿನ ಅಪ್ಡೇಟ್ನಲ್ಲಿ
     ಅದಕ್ಕೆ ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.
+  wwcConfigForceChatChannelEnabled: ಎಲ್ಲಾ ಅನುವಾದಗಳ ಸಮಯದಲ್ಲಿ ಪ್ರತ್ಯೇಕ ಅನುವಾದ ಚಾನಲ್
+    ಅನ್ನು ಒತ್ತಾಯಿಸಲಾಗುತ್ತದೆ.
+  wwcConfigConversationSeparateChatChannelForceSuccess: ಪ್ರತ್ಯೇಕ ಚಾನಲ್ಗೆ ಒತ್ತಾಯಿಸಿ
+    ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigConversationChatFormatBadInput: ನೀವು ಮೇಲೆ ತಿಳಿಸಿದ ಅಸ್ಥಿರಗಳಲ್ಲಿ ಕನಿಷ್ಠ ಒಂದನ್ನು
+    ಕಾಣೆಯುತ್ತಿರುವಂತೆ ಕಾಣುತ್ತದೆ ({0}). ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು
+    0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationChannelIconInput: ಪ್ರತ್ಯೇಕ ಅನುವಾದ ಚಾನಲ್ಗಾಗಿ ಪ್ರಸ್ತುತ ಐಕಾನ್
+    {0} ಆಗಿದೆ. ಬಣ್ಣ ಸಂಕೇತಗಳು ಬೆಂಬಲಿತವಾಗಿವೆ; ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationChatPriorityInput: 'ಪ್ರಸ್ತುತ ಚಾಟ್ ಈವೆಂಟ್ ಆದ್ಯತೆ {0} ಆಗಿದೆ.
+    ಟೈಪ್ ಮಾಡಿ 0 ಹಿಂದಕ್ಕೆ ಹೋಗಿ ಅಥವಾ ಮಾನ್ಯ ಆದ್ಯತೆಗಳ ಈ ಪಟ್ಟಿಯಿಂದ ಆಯ್ಕೆ ಮಾಡಿ: {1}.'
+  wwcConfigConversationChannelFormatInput: 'ಪ್ರತ್ಯೇಕ ಚಾಟ್ ಚಾನಲ್ನ ಪ್ರಸ್ತುತ ಸ್ವರೂಪ {0}
+    ಆಗಿದೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇನ್ಪುಟ್ ಕೆಳಗಿನ ಅಸ್ಥಿರಗಳನ್ನು ಒಳಗೊಂಡಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ:
+    {1}. ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.'
+  wwcConfigGUISeparateChatChannelFormatButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಸ್ವರೂಪವನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationChannelIconSuccess: ನಿಮ್ಮ ಚಾನಲ್ ಐಕಾನ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigChatChannelFormatInvalid: 'ಅಮಾನ್ಯ ಚಾನಲ್ ಸ್ವರೂಪ ಪತ್ತೆಯಾಗಿದೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ
+    ಸ್ವರೂಪವು ಈ ಕೆಳಗಿನ ಅಸ್ಥಿರಗಳನ್ನು ಒಳಗೊಂಡಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಐಕಾನ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationChatFormatSuccess: ನಿಮ್ಮ ಸ್ವರೂಪವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigGUISeparateChatChannelForceButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಅನ್ನು ಒತ್ತಾಯಿಸಿ
 

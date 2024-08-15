@@ -635,8 +635,6 @@ Messages:
     {0}.
   wwcConfigEventPriorityInvalid: Blaenoriaeth digwyddiad gwrandawyr sgwrs annilys
     yn config.yml. Rhagosodiad i {0}...
-  wwcConfigConversationChatPriorityInput: 'Blaenoriaeth y digwyddiad sgwrsio cyfredol
-    yw {0}. Dewiswch o''r rhestr hon o flaenoriaethau dilys: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Newid Blaenoriaeth Gwrandawyr Digwyddiad
     Sgwrs
   wwcConfigConversationChatPriorityBadInput: Mewnbwn blaenoriaeth sgwrs gwael! Rhowch
@@ -648,4 +646,25 @@ Messages:
   wwcWatsonDeprecation: Mae Watson wedi cael ei anghymeradwyo ac nid yw IBM bellach
     yn cael ei gefnogi. Ystyriwch newid, gan y bydd cefnogaeth iddo yn cael ei dileu
     yn y diweddariad nesaf.
+  wwcConfigForceChatChannelEnabled: Bydd sianel gyfieithu ar wahân yn cael ei gorfodi
+    yn ystod yr holl gyfieithiadau.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Llwyddodd i toglo gorfodi'r
+    sianel ar wahân.
+  wwcConfigConversationChatFormatBadInput: Mae'n edrych fel eich bod ar goll o leiaf
+    un o'r newidynnau uchod ({0}). Rhowch gynnig eto, neu teipiwch 0 i fynd yn ôl.
+  wwcConfigConversationChannelIconInput: Yr eicon cyfredol ar gyfer y sianel gyfieithu
+    ar wahân yw {0}. Cefnogir codau lliw; teipiwch 0 i fynd yn ôl.
+  wwcConfigConversationChatPriorityInput: 'Blaenoriaeth y digwyddiad sgwrsio cyfredol
+    yw {0}. Teipiwch 0 ewch i ôl neu dewiswch o''r rhestr hon o flaenoriaethau dilys:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
+    sgwrsio ar wahân yw {0}. Gwnewch yn siŵr bod eich mewnbwn yn cynnwys y newidynnau
+    canlynol: {1}. Teipiwch 0 i fynd yn ôl.'
+  wwcConfigGUISeparateChatChannelFormatButton: Newid Fformat Sianel ar Wahân
+  wwcConfigConversationChannelIconSuccess: Newidiodd eicon eich sianel yn llwyddiannus.
+  wwcConfigChatChannelFormatInvalid: 'Canfuwyd fformat sianel annilys. Gwnewch yn
+    siŵr bod eich fformat yn cynnwys y newidynnau canlynol: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Newid Eicon Sianel ar Wahân
+  wwcConfigConversationChatFormatSuccess: Mae eich fformat wedi'i newid yn llwyddiannus.
+  wwcConfigGUISeparateChatChannelForceButton: Sianel ar wahân Force
 

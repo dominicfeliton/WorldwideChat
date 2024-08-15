@@ -613,8 +613,6 @@ Messages:
   wwcConfigEventPrioritySet: चॅट श्रोनर इव्हेंट प्राधान्य {0}
   wwcConfigEventPriorityInvalid: config.yml मध्ये अवैध चॅट श्रोता इव्हेंट प्राधान्
     {0} वर डीफॉल्ट करणे...
-  wwcConfigConversationChatPriorityInput: 'सध्याची चॅट इव्हेंट प्राधान्य {0} वैध प्राधान्यांच्या
-    या यादीमधून निवडा: {1}'
   wwcConfigGUIChatListenerPriorityButton: चॅट इव्हेंट शोपणाच्या
   wwcConfigConversationChatPriorityBadInput: खराब गप्पा प्राधान्य पुन्हा प्रयत्न करा.
   wwcConfigConversationChatPrioritySuccess: आपले चॅट इव्हेंट प्राधान्य य
@@ -622,4 +620,23 @@ Messages:
     म्हणून डीफॉल्ट करणे...
   wwcWatsonDeprecation: वॉटसन नष्ट केले गेले आहे आणि आता आयबीएमने समर्थित नाही. कृपया
     स्विच करण्याचा विचार करा, कारण पुढील अद्यतनात त्यासाठी समर्थन काढून
+  wwcConfigForceChatChannelEnabled: सर्व भाषांतर दरम्यान एक स्वतंत्र भाषांतर चॅनेल
+  wwcConfigConversationSeparateChatChannelForceSuccess: यशस्वीरित्या स्वतंत्र चॅनेलला
+    जब
+  wwcConfigConversationChatFormatBadInput: असे दिसते की आपण उपरोक्त किमान एक व्हेरिएबल
+    ({0}) गमावत आहात. कृपया पुन्हा प्रयत्न करा किंवा परत जाण्यासाठी 0 टायप करा.
+  wwcConfigConversationChannelIconInput: स्वतंत्र भाषांतर चॅनेलसाठी वर्तमान चिन्ह
+    {0} आहे. रंग कोड समर्थित आहेत; परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationChatPriorityInput: 'सध्याची चॅट इव्हेंट प्राधान्य {0} 0 टाइप
+    करा परत जा किंवा वैध प्राधान्यांच्या या यादीमधून निवडा: {1}.'
+  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
+    आहे. कृपया आपल्या इनपुटमध्ये खालील व्हेरिएबल्स समाविष्ट आहेत {1} परत जाण्यासाठी
+    0 टाइप करा.
+  wwcConfigGUISeparateChatChannelFormatButton: स्वतंत्र चॅनेल स्वर
+  wwcConfigConversationChannelIconSuccess: आपले चॅनेल चिन्ह यशस्वीरि
+  wwcConfigChatChannelFormatInvalid: अवैध चॅनेल फॉरमॅ कृपया आपल्या स्वरूपात खालील
+    व्हेरिएबल्स समाविष्ट आहेत {0}
+  wwcConfigGUISeparateChatChannelIconButton: स्वतंत्र चॅनेल आय
+  wwcConfigConversationChatFormatSuccess: आपले स्वरूप यशस्वीरित्या बदलले
+  wwcConfigGUISeparateChatChannelForceButton: स्वतंत्र चॅनेल
 

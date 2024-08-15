@@ -611,8 +611,6 @@ Messages:
   wwcConfigEventPrioritySet: Sett hendelsesprioritet for chatlytteren til {0}.
   wwcConfigEventPriorityInvalid: Ugyldig hendelsesprioritet for chatlytteren i config.yml.
     Standard til {0}...
-  wwcConfigConversationChatPriorityInput: 'Gjeldende prioritering for chat-hendelse
-    er {0}. Velg fra denne listen over gyldige prioriteringer: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Endre lytterprioritet for chathendelse
   wwcConfigConversationChatPriorityBadInput: Dårlig chatprioritetsinngang! Vennligst
     prøv igjen.
@@ -622,4 +620,25 @@ Messages:
     til sant...
   wwcWatsonDeprecation: Watson er utfaset og støttes ikke lenger av IBM. Vennligst
     vurder å bytte, da støtte for det vil bli fjernet i neste oppdatering.
+  wwcConfigForceChatChannelEnabled: En egen oversettelseskanal vil bli tvunget under
+    alle oversettelser.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Vellykket vekslet for å tvinge
+    den separate kanalen.
+  wwcConfigConversationChatFormatBadInput: Det ser ut til at du mangler minst en av
+    de nevnte variablene ({0}). Prøv igjen, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationChannelIconInput: Gjeldende ikon for den separate oversettelseskanalen
+    er {0}. Fargekoder støttes; skriv 0 for å gå tilbake.
+  wwcConfigConversationChatPriorityInput: 'Gjeldende prioritering for chat-hendelse
+    er {0}. Skriv 0 gå tilbake eller velg fra denne listen over gyldige prioriteringer:
+    {1}.'
+  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
+    er {0}. Forsikre deg om at inndataene dine inneholder følgende variabler: {1}.
+    Skriv 0 for å gå tilbake.'
+  wwcConfigGUISeparateChatChannelFormatButton: Endre separat kanalformat
+  wwcConfigConversationChannelIconSuccess: Vellykket endret kanalikonet ditt.
+  wwcConfigChatChannelFormatInvalid: 'Ugyldig kanalformat oppdaget. Forsikre deg om
+    at formatet inneholder følgende variabler: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Endre separat kanalikon
+  wwcConfigConversationChatFormatSuccess: Formatet ditt har blitt endret med hell.
+  wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
 

@@ -635,8 +635,6 @@ Messages:
   wwcConfigEventPrioritySet: Nastavite prednost dogodka poslušalca klepeta na {0}.
   wwcConfigEventPriorityInvalid: Neveljavna prioriteta dogodka poslušalca klepeta
     v config.yml. Privzeta vrednost {0}...
-  wwcConfigConversationChatPriorityInput: 'Trenutna prednostna naloga dogodka v klepetu
-    je {0}. Izberite s tega seznama veljavnih prednostnih nalog: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Spremenite prednostno nalogo poslušalca
     dogodka v
   wwcConfigConversationChatPriorityBadInput: Slab vnos prioritete klepeta! Prosimo,
@@ -647,4 +645,25 @@ Messages:
     trezor. Privzeta vrednost resnična...
   wwcWatsonDeprecation: Watson je bil zastarel in IBM ga ne podpira več. Razmislite
     o preklopu, saj bo podpora zanj odstranjena v naslednji posodobitvi.
+  wwcConfigForceChatChannelEnabled: Med vsemi prevodi bo prisiljen ločen prevajalski
+    kanal.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Uspešno preklopljeno prisiljevanje
+    ločenega kanala.
+  wwcConfigConversationChatFormatBadInput: Zdi se, da manjka vsaj ena od zgoraj omenjenih
+    spremenljivk ({0}). Poskusite znova ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationChannelIconInput: Trenutna ikona ločenega prevajalskega kanala
+    je {0}. Barvne kode so podprte; vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationChatPriorityInput: 'Trenutna prednostna naloga dogodka v klepetu
+    je {0}. Vnesite 0 pojdi nazaj ali izberite s tega seznama veljavnih prednostnih
+    nalog: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
+    je {0}. Prepričajte se, da vaš vnos vključuje naslednje spremenljivke: {1}. Vnesite
+    0, da se vrnete nazaj.'
+  wwcConfigGUISeparateChatChannelFormatButton: Spremenite obliko ločenega kanala
+  wwcConfigConversationChannelIconSuccess: Uspešno spremenil ikono vašega kanala.
+  wwcConfigChatChannelFormatInvalid: 'Zaznana je neveljavna oblika kanala. Prepričajte
+    se, da vaša oblika vključuje naslednje spremenljivke: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Spremenite ločeno ikono kanala
+  wwcConfigConversationChatFormatSuccess: Vaša oblika je bila uspešno spremenjena.
+  wwcConfigGUISeparateChatChannelForceButton: Prisilite ločen kanal
 

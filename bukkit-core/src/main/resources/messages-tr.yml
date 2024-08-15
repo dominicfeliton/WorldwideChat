@@ -627,8 +627,6 @@ Messages:
   wwcConfigEventPrioritySet: Sohbet dinleyicisi olay önceliğini {0} olarak ayarlayın.
   wwcConfigEventPriorityInvalid: config.yml içinde geçersiz sohbet dinleyicisi olay
     önceliği. Varsayılan olarak {0}...
-  wwcConfigConversationChatPriorityInput: 'Mevcut sohbet etkinliği önceliği {0} ''dir.
-    Geçerli öncelikler listesinden seçim yapın: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Sohbet Etkinliği Dinleyici Önceliğini Değiştir
   wwcConfigConversationChatPriorityBadInput: Kötü sohbet önceliği girişi! Lütfen tekrar
     deneyin.
@@ -638,4 +636,25 @@ Messages:
     Varsayılan olarak true olarak ayarlanıyor...
   wwcWatsonDeprecation: Watson kullanımdan kaldırıldı ve artık IBM tarafından desteklenmiyor.
     Lütfen geçiş yapmayı düşünün, çünkü bir sonraki güncellemede destek kaldırılacaktır.
+  wwcConfigForceChatChannelEnabled: Tüm çeviriler sırasında ayrı bir çeviri kanalı
+    zorunlu olacaktır.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı zorlamak başarıyla
+    değiştirildi.
+  wwcConfigConversationChatFormatBadInput: Görünüşe göre yukarıda belirtilen değişkenlerden
+    en az birini kaçırıyorsunuz ({0}). Lütfen tekrar deneyin veya geri dönmek için
+    0 yazın.
+  wwcConfigConversationChannelIconInput: Ayrı çeviri kanalı için geçerli simge {0}
+    'dir. Renk kodları desteklenir; geri dönmek için 0 yazın.
+  wwcConfigConversationChatPriorityInput: 'Mevcut sohbet etkinliği önceliği {0} ''dir.
+    0 yazın geriye gidin veya geçerli öncelikler listesinden seçim yapın: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
+    {0} ''dir. Lütfen girdinizin aşağıdaki değişkenleri içerdiğinden emin olun: {1}.
+    Geri dönmek için 0 yazın.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ayrı Kanal Formatını Değiştir
+  wwcConfigConversationChannelIconSuccess: Kanal simgenizi başarıyla değiştirdiniz.
+  wwcConfigChatChannelFormatInvalid: 'Geçersiz kanal biçimi algılandı. Lütfen formatınızın
+    aşağıdaki değişkenleri içerdiğinden emin olun: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Ayrı Kanal Simgesini Değiştir
+  wwcConfigConversationChatFormatSuccess: Formatınız başarıyla değiştirildi.
+  wwcConfigGUISeparateChatChannelForceButton: Ayrı Kanalı Zorla
 

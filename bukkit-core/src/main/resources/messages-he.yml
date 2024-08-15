@@ -569,8 +569,6 @@ Messages:
   wwcConfigEventPrioritySet: הגדר עדיפות לאירוע מאזיני צ'אט ל- {0}.
   wwcConfigEventPriorityInvalid: עדיפות אירועי מאזינים בצ'אט לא חוקית ב- config.yml.
     ברירת המחדל היא {0}...
-  wwcConfigConversationChatPriorityInput: 'עדיפות אירועי הצ''אט הנוכחית היא {0}. בחר
-    מתוך רשימה זו של סדרי עדיפויות תקפים: {1}.'
   wwcConfigGUIChatListenerPriorityButton: שנה עדיפות מאזינים לאירועי צ'אט
   wwcConfigConversationChatPriorityBadInput: קלט עדיפות צ'אט גרוע! אנא נסה שוב.
   wwcConfigConversationChatPrioritySuccess: הגדר בהצלחה את עדיפות אירועי הצ'אט שלך.
@@ -578,4 +576,22 @@ Messages:
     נכון...
   wwcWatsonDeprecation: ווטסון הופסקה ואינה נתמכת עוד על ידי יבמ. אנא שקול לעבור,
     מכיוון שהתמיכה בו תוסר בעדכון הבא.
+  wwcConfigForceChatChannelEnabled: ערוץ תרגום נפרד ייאלץ במהלך כל התרגומים.
+  wwcConfigConversationSeparateChatChannelForceSuccess: החלפה בהצלחה בכפייה של הערוץ
+    הנפרד.
+  wwcConfigConversationChatFormatBadInput: נראה שחסר לך לפחות אחד מהמשתנים הנ"ל ({0}).
+    אנא נסה שוב, או הקלד 0 כדי לחזור.
+  wwcConfigConversationChannelIconInput: הסמל הנוכחי עבור ערוץ התרגום הנפרד הוא {0}.
+    קודי צבע נתמכים; הקלד 0 כדי לחזור אחורה.
+  wwcConfigConversationChatPriorityInput: 'עדיפות אירועי הצ''אט הנוכחית היא {0}. הקלד
+    0 חזור אחורה או בחר מתוך רשימה זו של סדרי עדיפויות תקפים: {1}.'
+  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
+    {0}. אנא ודא שהקלט שלך כולל את המשתנים הבאים: {1}. הקלד 0 כדי לחזור.'
+  wwcConfigGUISeparateChatChannelFormatButton: שנה פורמט ערוץ נפרד
+  wwcConfigConversationChannelIconSuccess: שינית בהצלחה את סמל הערוץ שלך.
+  wwcConfigChatChannelFormatInvalid: 'פורמט ערוץ לא חוקי זוהה. אנא ודא שהפורמט שלך
+    כולל את המשתנים הבאים: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: שנה סמל ערוץ נפרד
+  wwcConfigConversationChatFormatSuccess: הפורמט שלך השתנה בהצלחה.
+  wwcConfigGUISeparateChatChannelForceButton: ערוץ נפרד כוח
 

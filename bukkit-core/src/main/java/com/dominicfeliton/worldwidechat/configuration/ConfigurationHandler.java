@@ -279,21 +279,27 @@ public class ConfigurationHandler {
 		}
 		// Separate Chat Channel Prefix
 		try {
-			main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.separateChatChannelIcon"));
+			main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.icon"));
 		} catch (Exception e) {
 			main.setTranslateIcon("globe");
 			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelIconInvalid", null));
 		}
-		// Separate Chat Channel Layout
+		// Separate Chat Channel Format
 		try {
-			main.setTranslateLayout(mainConfig.getString("Chat.separateChatChannel.separateChatChannelLayout"));
+			String format = mainConfig.getString("Chat.separateChatChannel.format");
+			if (format.contains("{suffix}") && format.contains("{prefix}") && format.contains("{username}")) {
+				main.setTranslateLayout(mainConfig.getString("Chat.separateChatChannel.format"));
+			} else {
+				main.setTranslateLayout("{prefix}{username}{suffix}:");
+				main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid", new String[] {"{prefix}, {username}, {suffix}"}, null));
+			}
 		} catch (Exception e) {
 			main.setTranslateLayout("{prefix}{username}{suffix}:");
 			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelLayoutInvalid", null));
 		}
 		// Always Force Separate Chat Channel
 		try {
-			if (mainConfig.getBoolean("Chat.separateChatChannel.forceSeparateChatChannel")) {
+			if (mainConfig.getBoolean("Chat.separateChatChannel.force")) {
 				main.setForceSeparateChatChannel(true);
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigForceChatChannelEnabled", null));
 			} else {

@@ -689,8 +689,6 @@ Messages:
     σε {0}.
   wwcConfigEventPriorityInvalid: Μη έγκυρη προτεραιότητα συμβάντος ακροατή συνομιλίας
     στο config.yml. Προεπιλογή σε {0}...
-  wwcConfigConversationChatPriorityInput: 'Η τρέχουσα προτεραιότητα συμβάντος συνομιλίας
-    είναι {0}. Επιλέξτε από αυτήν τη λίστα έγκυρων προτεραιοτήτων: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Αλλαγή προτεραιότητας ακροατών συμβάντων
     συνομιλίας
   wwcConfigConversationChatPriorityBadInput: Κακή εισαγωγή προτεραιότητας συνομιλίας!
@@ -702,4 +700,28 @@ Messages:
   wwcWatsonDeprecation: Το Watson έχει καταργηθεί και δεν υποστηρίζεται πλέον από
     την IBM. Εξετάστε το ενδεχόμενο εναλλαγής, καθώς η υποστήριξη για αυτό θα καταργηθεί
     στην επόμενη ενημέρωση.
+  wwcConfigForceChatChannelEnabled: Ένα ξεχωριστό κανάλι μετάφρασης θα επιβληθεί κατά
+    τη διάρκεια όλων των μεταφράσεων.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Επιτυχής εναλλαγή αναγκάζοντας
+    το ξεχωριστό κανάλι.
+  wwcConfigConversationChatFormatBadInput: Φαίνεται ότι λείπει τουλάχιστον μία από
+    τις προαναφερθείσες μεταβλητές ({0}). Δοκιμάστε ξανά ή πληκτρολογήστε 0 για να
+    επιστρέψετε.
+  wwcConfigConversationChannelIconInput: Το τρέχον εικονίδιο για το ξεχωριστό κανάλι
+    μετάφρασης είναι {0}. Υποστηρίζονται κωδικοί χρώματος. Πληκτρολογήστε 0 για να
+    επιστρέψετε.
+  wwcConfigConversationChatPriorityInput: 'Η τρέχουσα προτεραιότητα συμβάντος συνομιλίας
+    είναι {0}. Πληκτρολογήστε 0 πηγαίνετε πίσω ή επιλέξτε από αυτήν τη λίστα έγκυρων
+    προτεραιοτήτων: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
+    συνομιλίας είναι {0}. Βεβαιωθείτε ότι η είσοδος σας περιλαμβάνει τις ακόλουθες
+    μεταβλητές: {1}. Πληκτρολογήστε 0 για να επιστρέψετε.'
+  wwcConfigGUISeparateChatChannelFormatButton: Αλλαγή ξεχωριστής μορφής καναλιού
+  wwcConfigConversationChannelIconSuccess: Αλλάξτε με επιτυχία το εικονίδιο του καναλιού
+    σας.
+  wwcConfigChatChannelFormatInvalid: 'Εντοπίστηκε μη έγκυρη μορφή καναλιού. Βεβαιωθείτε
+    ότι η μορφή σας περιλαμβάνει τις ακόλουθες μεταβλητές: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Αλλάξτε το ξεχωριστό εικονίδιο καναλιού
+  wwcConfigConversationChatFormatSuccess: Η μορφή σας άλλαξε με επιτυχία.
+  wwcConfigGUISeparateChatChannelForceButton: Ξεχωριστό κανάλι δύναμης
 

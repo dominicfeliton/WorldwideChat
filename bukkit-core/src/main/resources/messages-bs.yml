@@ -628,8 +628,6 @@ Messages:
   wwcConfigEventPrioritySet: Postavite prioritet događaja slušatelja chata na {0}.
   wwcConfigEventPriorityInvalid: Nevažeći prioritet događaja slušatelja chata u config.yml.
     Zadano na {0}...
-  wwcConfigConversationChatPriorityInput: 'Trenutni prioritet chat događaja je {0}.
-    Odaberite s ove liste važećih prioriteta: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Promjena prioriteta slušatelja događaja
     za chat
   wwcConfigConversationChatPriorityBadInput: Loš unos prioriteta chata! Molimo pokušajte
@@ -640,4 +638,25 @@ Messages:
     Zadano na istinito...
   wwcWatsonDeprecation: Watson je zastario i IBM ga više ne podržava. Razmislite o
     prebacivanju jer će podrška za nju biti uklonjena u sljedećem ažuriranju.
+  wwcConfigForceChatChannelEnabled: Za vrijeme svih prijevoda bit će prisiljen poseban
+    kanal za prijevod.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Uspješno je prebacio forsiranje
+    odvojenog kanala.
+  wwcConfigConversationChatFormatBadInput: Izgleda da vam nedostaje barem jedna od
+    gore spomenutih varijabli ({0}). Pokušajte ponovo ili upišite 0 da biste se vratili
+    natrag.
+  wwcConfigConversationChannelIconInput: Trenutna ikona zasebnog kanala za prijevod
+    je {0}. Podržani su kodovi boja; upišite 0 da biste se vratili natrag.
+  wwcConfigConversationChatPriorityInput: 'Trenutni prioritet chat događaja je {0}.
+    Upišite 0 idite natrag ili odaberite s ove liste važećih prioriteta: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
+    je {0}. Molimo provjerite sadrži li vaš unos sljedeće varijable: {1}. Upišite
+    0 da biste se vratili natrag.'
+  wwcConfigGUISeparateChatChannelFormatButton: Promijenite format zasebnog kanala
+  wwcConfigConversationChannelIconSuccess: Uspješno promijenila ikonu vašeg kanala.
+  wwcConfigChatChannelFormatInvalid: 'Otkriven je nevažeći format kanala. Molimo provjerite
+    sadrži li vaš format sljedeće varijable: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Promijenite ikonu odvojenog kanala
+  wwcConfigConversationChatFormatSuccess: Vaš format je uspješno promijenjen.
+  wwcConfigGUISeparateChatChannelForceButton: Prisilite odvojeni kanal
 

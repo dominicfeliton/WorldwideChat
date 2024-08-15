@@ -703,8 +703,6 @@ Messages:
     chat sa {0}
   wwcConfigEventPriorityInvalid: Hindi wastong priyoridad ng kaganapan sa tagapakinig
     ng chat sa config.yml. Pag-default sa {0}...
-  wwcConfigConversationChatPriorityInput: 'Ang kasalukuyang priyoridad sa chat event
-    ay {0}. Pumili mula sa listahang ito ng mga wastong prayoridad: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Baguhin ang Prioryoridad ng Tagapakinig
   wwcConfigConversationChatPriorityBadInput: Masamang input ng prayoridad sa chat!
     Mangyaring subukang muli.
@@ -714,4 +712,28 @@ Messages:
     Pag-default sa totoo...
   wwcWatsonDeprecation: Si Watson ay hindi na sinusuportahan ng IBM. Mangyaring isaalang-alang
     ang paglipat, dahil ang suporta para dito ay tatanggalin sa susunod na pag-update.
+  wwcConfigForceChatChannelEnabled: Ang isang hiwalay na channel ng pagsasalin ay
+    pipilitin sa lahat ng mga pagsasalin.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Matagumpay na pinapilit ang
+    hiwalay na channel.
+  wwcConfigConversationChatFormatBadInput: Mukhang nawawala ka ng hindi bababa sa
+    isa sa mga nabanggit na variable ({0}). Mangyaring subukang muli, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationChannelIconInput: Ang kasalukuyang icon para sa hiwalay na
+    channel ng pagsasalin ay {0}. Sinusuportahan ang mga code ng kulay; i-type ang
+    0 upang bumalik.
+  wwcConfigConversationChatPriorityInput: 'Ang kasalukuyang priyoridad sa chat event
+    ay {0}. I-type ang 0 pumunta sa pabalik o pumili mula sa listahang ito ng mga
+    wastong prayoridad: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
+    na chat channel ay {0}. Mangyaring tiyaking kasama sa iyong input ang mga sumusunod
+    na variable: {1}. I-type ang 0 upang bumalik.'
+  wwcConfigGUISeparateChatChannelFormatButton: Baguhin ang Magkahiwalay na Format
+  wwcConfigConversationChannelIconSuccess: Matagumpay na binago ang icon ng iyong
+    channel.
+  wwcConfigChatChannelFormatInvalid: 'Nakita ang hindi wastong format ng channel.
+    Mangyaring tiyaking kasama sa iyong format ang mga sumusunod na variable: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Baguhin ang hiwalay na icon ng channel
+  wwcConfigConversationChatFormatSuccess: Matagumpay na binago ang iyong format.
+  wwcConfigGUISeparateChatChannelForceButton: Sapilitang Hiwalay na Channel
 

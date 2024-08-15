@@ -645,8 +645,6 @@ Messages:
     на {0}.
   wwcConfigEventPriorityInvalid: Невалиден приоритет на събитието на слушателя на
     чат в config.yml. По подразбиране на {0}...
-  wwcConfigConversationChatPriorityInput: 'Текущият приоритет за чат събитие е {0}.
-    Изберете от този списък с валидни приоритети: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Промяна на приоритета на слушателя на събития
     в чат
   wwcConfigConversationChatPriorityBadInput: Лошо въвеждане на приоритет на чата!
@@ -658,4 +656,24 @@ Messages:
   wwcWatsonDeprecation: Уотсън е остарял и вече не се поддържа от IBM. Моля, помислете
     за превключване, тъй като поддръжката за него ще бъде премахната в следващата
     актуализация.
+  wwcConfigForceChatChannelEnabled: По време на всички преводи ще бъде наложен отделен
+    канал за превод.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Успешно превключване на принуждаването
+    на отделния канал.
+  wwcConfigConversationChatFormatBadInput: Изглежда, че липсва поне една от гореспоменатите
+    променливи ({0}). Моля, опитайте отново или въведете 0, за да се върнете обратно.
+  wwcConfigConversationChannelIconInput: Текущата икона за отделния канал за превод
+    е {0}. Поддържат се цветови кодове; въведете 0, за да се върнете назад.
+  wwcConfigConversationChatPriorityInput: 'Текущият приоритет на събитието в чат е
+    {0}. Въведете 0 обратно или изберете от този списък с валидни приоритети: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Текущият формат за отделния чат канал
+    е {0}. Моля, уверете се, че входът ви включва следните променливи: {1}. Въведете
+    0, за да се върнете назад.'
+  wwcConfigGUISeparateChatChannelFormatButton: Промяна на отделния формат на канала
+  wwcConfigConversationChannelIconSuccess: Успешно промених иконата на канала си.
+  wwcConfigChatChannelFormatInvalid: 'Открит е невалиден формат на канала. Моля, уверете
+    се, че вашият формат включва следните променливи: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Промяна на иконата на отделен канал
+  wwcConfigConversationChatFormatSuccess: Вашият формат е променен успешно.
+  wwcConfigGUISeparateChatChannelForceButton: Принудително отделен канал
 

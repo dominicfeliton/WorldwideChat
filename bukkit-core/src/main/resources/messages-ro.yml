@@ -664,8 +664,6 @@ Messages:
     la {0}.
   wwcConfigEventPriorityInvalid: Prioritatea evenimentului ascultătorului de chat
     nevalidă în config.yml. Implicit la {0}...
-  wwcConfigConversationChatPriorityInput: 'Prioritatea curentă a evenimentului de
-    chat este {0}. Alegeți din această listă de priorități valabile: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Schimbați prioritatea ascultătorului evenimentului
     de chat
   wwcConfigConversationChatPriorityBadInput: Intrare greșită a priorității chat-ului!
@@ -677,4 +675,27 @@ Messages:
   wwcWatsonDeprecation: Watson a fost învechit și nu mai este acceptat de IBM. Vă
     rugăm să luați în considerare comutarea, deoarece suportul pentru acesta va fi
     eliminat în următoarea actualizare.
+  wwcConfigForceChatChannelEnabled: Un canal de traducere separat va fi forțat în
+    timpul tuturor traducerilor.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Comutat cu succes forțând
+    canalul separat.
+  wwcConfigConversationChatFormatBadInput: Se pare că vă lipsește cel puțin una dintre
+    variabilele menționate mai sus ({0}). Încercați din nou sau tastați 0 pentru a
+    reveni.
+  wwcConfigConversationChannelIconInput: Pictograma curentă pentru canalul separat
+    de traducere este {0}. Codurile de culoare sunt acceptate; tastați 0 pentru a
+    reveni.
+  wwcConfigConversationChatPriorityInput: 'Prioritatea curentă a evenimentului de
+    chat este {0}. Tastați 0 mergeți înapoi sau alegeți din această listă de priorități
+    valide: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
+    de chat este {0}. Vă rugăm să vă asigurați că intrarea dvs. include următoarele
+    variabile: {1}. Tastați 0 pentru a reveni.'
+  wwcConfigGUISeparateChatChannelFormatButton: Schimbați formatul canalului separat
+  wwcConfigConversationChannelIconSuccess: A schimbat cu succes pictograma canalului.
+  wwcConfigChatChannelFormatInvalid: 'Formatul canalului nevalid detectat. Vă rugăm
+    să vă asigurați că formatul dvs. include următoarele variabile: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Schimbați pictograma canalului separat
+  wwcConfigConversationChatFormatSuccess: Formatul dvs. a fost schimbat cu succes.
+  wwcConfigGUISeparateChatChannelForceButton: Forțați canalul separat
 

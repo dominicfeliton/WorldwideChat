@@ -551,8 +551,6 @@ Messages:
   wwcConfigEventPrioritySet: የውይይት አድማጭ ዝግጅት ቅድሚያ ወደ {0}
   wwcConfigEventPriorityInvalid: በ config.yml ውስጥ ልክ ያልሆነ የውይይት አድማጭ ክስተት ቅድሚ ወደ {0}
     ነባሪ መቀየር...
-  wwcConfigConversationChatPriorityInput: 'የአሁኑ የውይይት ዝግጅት ቅድሚያ {0} ነው። ከዚህ ትክክለኛ
-    ቅድሚያ ዝርዝር ይምረጡ: {1}።'
   wwcConfigGUIChatListenerPriorityButton: የውይይት ክስተት አድማጮች
   wwcConfigConversationChatPriorityBadInput: መጥፎ ውይይት ቅድሚያ ግብ እባክዎን እንደገና ሞክሩ።
   wwcConfigConversationChatPrioritySuccess: የውይይት ዝግጅትዎን ቅድሚያ በተሳካ
@@ -560,4 +558,21 @@ Messages:
     መሆን...
   wwcWatsonDeprecation: ዋትሰን ቆይቷል እና ከእንግዲህ በ IBM አይደገፋም። በቀጣዩ ዝመና ውስጥ ለእሱ ድጋፍ ስለሚወግድ
     እባክዎ መቀየርን ያስቡ።
+  wwcConfigForceChatChannelEnabled: በሁሉም ትርጉሞች ጊዜ የተለየ የትርጉም ሰርጥ ይገደዳል።
+  wwcConfigConversationSeparateChatChannelForceSuccess: የተለየ ሰርጥ ማስገደድ በተሳካ ሁኔታ ተቀየረ
+  wwcConfigConversationChatFormatBadInput: ከላይ ከተጠቀሱት ተለዋዋጮች ውስጥ ቢያንስ አንዱን እንደጎደሉ
+    ይመስላል ({0})። እባክዎን እንደገና ይሞክሩ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationChannelIconInput: ለተለየ የትርጉም ሰርጥ አሁን ያለው አዶን {0} ነው። የቀለም ኮዶች
+    ይደገፋሉ; ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationChatPriorityInput: 'የአሁኑ የውይይት ዝግጅት ቅድሚያ {0} ነው። 0 ይይቡ ወደ ኋላ
+    ይሂዱ ወይም ከዚህ ትክክለኛ ቅድሚያ ዝርዝር ይምረጡ: {1}።'
+  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። እባክዎን
+    የእርስዎ ግብዓት የሚከተሉትን ተለዋዋጮች ያካትታል: {1} ወደ ኋላ ለመመለስ 0 ይተይቡ።'
+  wwcConfigGUISeparateChatChannelFormatButton: የተለየ ሰርጥ ቅርጸት ይለ
+  wwcConfigConversationChannelIconSuccess: የቻናልዎን አዶን በተሳካ ሁኔታ ለው
+  wwcConfigChatChannelFormatInvalid: ልክ ያልሆነ የቻናል ቅርጸት ተገ እባክዎን ቅርጸትዎ የሚከተሉትን ተለዋዋጮች
+    ያካትታል ያረጋግጡ {0}
+  wwcConfigGUISeparateChatChannelIconButton: የተለየ ሰርጥ አዶን ይለ
+  wwcConfigConversationChatFormatSuccess: የእርስዎ ቅርጸት በተሳካ ሁኔታ ተለወጠ።
+  wwcConfigGUISeparateChatChannelForceButton: የተለየ ሰርጥ ኃይል
 

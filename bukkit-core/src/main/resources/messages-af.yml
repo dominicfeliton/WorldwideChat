@@ -632,8 +632,6 @@ Messages:
   wwcConfigEventPrioritySet: Stel geselsluisteraar se gebeurtenisprioriteit op {0}.
   wwcConfigEventPriorityInvalid: Ongeldige geselskuisteraar gebeurtenisprioriteit
     in config.yml. Standaard op {0}...
-  wwcConfigConversationChatPriorityInput: 'Die huidige klessgeleenthede prioriteit
-    is {0}. Kies uit hierdie lys van geldige prioriteite: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Verander die prioriteit vir luisteraar vir
     die ges
   wwcConfigConversationChatPriorityBadInput: Slegte chat prioriteitsinvoer! Probeer
@@ -645,4 +643,25 @@ Messages:
   wwcWatsonDeprecation: Watson is verouderd en word nie meer deur IBM ondersteun nie.
     Oorweeg asseblief om oor te skakel, aangesien ondersteuning daarvoor in die volgende
     opdatering verwyder sal word.
+  wwcConfigForceChatChannelEnabled: '''N Afsonderlike vertaalkanaal sal tydens alle
+    vertalings gedwing word.'
+  wwcConfigConversationSeparateChatChannelForceSuccess: Suksesvol ingeskakel het die
+    aparte kanaal dwing.
+  wwcConfigConversationChatFormatBadInput: Dit lyk asof jy ten minste een van die
+    bogenoemde veranderlikes ontbreek ({0}). Probeer asseblief weer, of tik 0 om terug
+    te gaan.
+  wwcConfigConversationChannelIconInput: Die huidige ikoon vir die aparte vertaalkanaal
+    is {0}. Kleurkodes word ondersteun; tik 0 om terug te gaan.
+  wwcConfigConversationChatPriorityInput: 'Die huidige klessgeleenthede prioriteit
+    is {0}. Tik 0 gaan na terug of kies uit hierdie lys van geldige prioriteite: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
+    is {0}. Maak asseblief seker dat u invoer die volgende veranderlikes bevat: {1}.
+    Tik 0 om terug te gaan.'
+  wwcConfigGUISeparateChatChannelFormatButton: Verander aparte kanaalformaat
+  wwcConfigConversationChannelIconSuccess: U kanaalikoon suksesvol verander.
+  wwcConfigChatChannelFormatInvalid: 'Ongeldige kanaalformaat opgespoor. Maak asseblief
+    seker dat u formaat die volgende veranderlikes bevat: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Verander aparte kanaalikoon
+  wwcConfigConversationChatFormatSuccess: Jou formaat is suksesvol verander.
+  wwcConfigGUISeparateChatChannelForceButton: Dwing afsonderlike kanaal
 

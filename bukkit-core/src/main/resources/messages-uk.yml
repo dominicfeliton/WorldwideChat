@@ -629,8 +629,6 @@ Messages:
   wwcConfigEventPrioritySet: Встановіть пріоритет події слухача чату на {0}.
   wwcConfigEventPriorityInvalid: Невірний пріоритет подій слухача чату в config.yml.
     За замовчуванням значення {0}...
-  wwcConfigConversationChatPriorityInput: 'Поточний пріоритет події чату — {0}. Виберіть
-    із цього списку дійсних пріоритетів: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Змінити пріоритет слухача подій чату
   wwcConfigConversationChatPriorityBadInput: Поганий вхід пріоритету чату! Будь ласка,
     спробуйте ще раз.
@@ -640,4 +638,25 @@ Messages:
   wwcWatsonDeprecation: Watson був застарілий і більше не підтримується IBM. Будь
     ласка, подумайте про перемикання, оскільки підтримка його буде видалена в наступному
     оновленні.
+  wwcConfigForceChatChannelEnabled: Окремий канал перекладу буде примусово під час
+    всіх перекладів.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Успішно перемикається, змушуючи
+    окремий канал.
+  wwcConfigConversationChatFormatBadInput: Схоже, вам не вистачає принаймні однієї
+    з вищезгаданих змінних ({0}). Будь ласка, спробуйте ще раз або введіть 0, щоб
+    повернутися назад.
+  wwcConfigConversationChannelIconInput: Поточна піктограма окремого каналу перекладу
+    — {0}. Підтримуються кольорові коди; введіть 0, щоб повернутися назад.
+  wwcConfigConversationChatPriorityInput: 'Поточний пріоритет події чату — {0}. Введіть
+    0 поверніться назад або виберіть із цього списку дійсних пріоритетів: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Поточний формат окремого каналу чату —
+    {0}. Будь ласка, переконайтеся, що ваші вхідні дані містять такі змінні: {1}.
+    Введіть 0, щоб повернутися назад.'
+  wwcConfigGUISeparateChatChannelFormatButton: Змінити окремий формат каналу
+  wwcConfigConversationChannelIconSuccess: Успішно змінив значок каналу.
+  wwcConfigChatChannelFormatInvalid: 'Виявлено невірний формат каналу. Будь ласка,
+    переконайтеся, що ваш формат містить такі змінні: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Змінити піктограму окремого каналу
+  wwcConfigConversationChatFormatSuccess: Ваш формат успішно змінено.
+  wwcConfigGUISeparateChatChannelForceButton: Силовий окремий канал
 

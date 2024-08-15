@@ -45,7 +45,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08132024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08142024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -925,13 +925,13 @@ public class WorldwideChat extends JavaPlugin {
 		int i = 0;
 		while (i < translateLayout.length()) {
 			if (translateLayout.startsWith("{prefix}", i)) {
-				out = out.append(Component.text(prefix));
+				out = out.append(refs.deserial(prefix));
 				i += "{prefix}".length();
 			} else if (translateLayout.startsWith("{username}", i)) {
-				out = out.append(Component.text(username));
+				out = out.append(refs.deserial(username));
 				i += "{username}".length();
 			} else if (translateLayout.startsWith("{suffix}", i)) {
-				out = out.append(Component.text(suffix));
+				out = out.append(refs.deserial(suffix));
 				i += "{suffix}".length();
 			} else {
 				// Append any other character directly

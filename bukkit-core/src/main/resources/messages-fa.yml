@@ -627,8 +627,6 @@ Messages:
   wwcConfigEventPrioritySet: اولویت رویداد شنونده چت را روی {0} تنظیم کنید.
   wwcConfigEventPriorityInvalid: اولویت رویداد شنونده چت نامعتبر در config.yml. به
     طور پیش فرض به {0}...
-  wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. از این لیست
-    از اولویت های معتبر انتخاب کنید: {1}.'
   wwcConfigGUIChatListenerPriorityButton: تغییر اولویت شنونده رویداد چت
   wwcConfigConversationChatPriorityBadInput: ورودی اولویت چت بد! لطفا دوباره امتحان
     کنید
@@ -638,4 +636,24 @@ Messages:
     به طور پیش فرض به true تبدیل می شود...
   wwcWatsonDeprecation: واتسون منسوخ شده است و دیگر توسط IBM پشتیبانی نمی شود. لطفا
     تعویض را در نظر بگیرید، زیرا پشتیبانی از آن در به روزرسانی بعدی حذف خواهد شد.
+  wwcConfigForceChatChannelEnabled: یک کانال ترجمه جداگانه در طول تمام ترجمه ها اجباری
+    خواهد شد.
+  wwcConfigConversationSeparateChatChannelForceSuccess: مجبور کردن کانال جداگانه با
+    موفقیت تغییر کرد.
+  wwcConfigConversationChatFormatBadInput: به نظر می رسد حداقل یکی از متغیرهای فوق
+    را از دست داده اید ({0}). لطفا دوباره امتحان کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationChannelIconInput: نماد فعلی برای کانال ترجمه جداگانه {0} است.
+    کدهای رنگی پشتیبانی می شوند. برای بازگشت، 0 را تایپ کنید.
+  wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. تایپ 0 به
+    عقب بروید یا از این لیست از اولویت های معتبر انتخاب کنید: {1}.'
+  wwcConfigConversationChannelFormatInput: 'قالب فعلی برای کانال چت جداگانه {0} است.
+    لطفاً مطمئن شوید که ورودی شما شامل متغیرهای زیر است: {1}. 0 را برای بازگشت تایپ
+    کنید.'
+  wwcConfigGUISeparateChatChannelFormatButton: تغییر فرمت کانال جداگانه
+  wwcConfigConversationChannelIconSuccess: نماد کانال خود را با موفقیت تغییر داد.
+  wwcConfigChatChannelFormatInvalid: 'فرمت کانال نامعتبر شناسایی شد. لطفاً اطمینان
+    حاصل کنید که فرمت شما شامل متغیرهای زیر است: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: تغییر آیکون کانال جداگانه
+  wwcConfigConversationChatFormatSuccess: فرمت شما با موفقیت تغییر کرده است.
+  wwcConfigGUISeparateChatChannelForceButton: کانال جداگانه نیروی
 

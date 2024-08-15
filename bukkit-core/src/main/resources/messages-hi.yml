@@ -645,8 +645,6 @@ Messages:
   wwcConfigEventPrioritySet: चैट लिसनर इवेंट की प्राथमिकता को {0} पर सेट करें।
   wwcConfigEventPriorityInvalid: config.yml में अमान्य चैट श्रोता ईवेंट प्राथमिकता।
     डिफ़ॉल्ट रूप से {0} पर सेट किया जा रहा है...
-  wwcConfigConversationChatPriorityInput: 'मौजूदा चैट इवेंट की प्राथमिकता {0} है।
-    मान्य प्राथमिकताओं की इस सूची में से चुनें: {1}।'
   wwcConfigGUIChatListenerPriorityButton: चैट इवेंट श्रोता प्राथमिकता बदलें
   wwcConfigConversationChatPriorityBadInput: खराब चैट प्राथमिकता इनपुट! कृपया फिर
     से कोशिश करें।
@@ -657,4 +655,26 @@ Messages:
   wwcWatsonDeprecation: वॉटसन को पदावनत कर दिया गया है और अब वह आईबीएम द्वारा समर्थित
     नहीं है। कृपया स्विच करने पर विचार करें, क्योंकि अगले अपडेट में इसके लिए समर्थन
     हटा दिया जाएगा।
+  wwcConfigForceChatChannelEnabled: सभी अनुवादों के दौरान एक अलग अनुवाद चैनल लागू
+    किया जाएगा।
+  wwcConfigConversationSeparateChatChannelForceSuccess: अलग चैनल को फ़ोर्स करने के
+    लिए सफलतापूर्वक टॉगल किया गया।
+  wwcConfigConversationChatFormatBadInput: ऐसा लगता है कि आप उपरोक्त चर ({0}) में
+    से कम से कम एक को खो रहे हैं। कृपया फिर से कोशिश करें, या वापस जाने के लिए 0 टाइप
+    करें।
+  wwcConfigConversationChannelIconInput: अलग अनुवाद चैनल के लिए मौजूदा आइकन {0} है।
+    रंग कोड समर्थित हैं; वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationChatPriorityInput: 'मौजूदा चैट इवेंट की प्राथमिकता {0} है।
+    0 गो टू बैक टाइप करें या मान्य प्राथमिकताओं की इस सूची में से चुनें: {1}।'
+  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
+    कृपया पक्का करें कि आपके इनपुट में ये वैरिएबल शामिल हों: {1}। वापस जाने के लिए
+    0 टाइप करें।'
+  wwcConfigGUISeparateChatChannelFormatButton: अलग चैनल फ़ॉर्मेट बदलें
+  wwcConfigConversationChannelIconSuccess: अपने चैनल के आइकॉन को सफलतापूर्वक बदला
+    गया।
+  wwcConfigChatChannelFormatInvalid: 'अमान्य चैनल फ़ॉर्मैट का पता चला। कृपया पक्का
+    कर लें कि आपके फ़ॉर्मैट में ये वैरिएबल शामिल हैं: {0}।'
+  wwcConfigGUISeparateChatChannelIconButton: अलग चैनल आइकन बदलें
+  wwcConfigConversationChatFormatSuccess: आपका फ़ॉर्मेट सफलतापूर्वक बदल दिया गया है।
+  wwcConfigGUISeparateChatChannelForceButton: फोर्स सेपरेट चैनल
 

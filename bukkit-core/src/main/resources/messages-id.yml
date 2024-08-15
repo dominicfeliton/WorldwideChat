@@ -621,8 +621,6 @@ Messages:
   wwcConfigEventPrioritySet: Setel prioritas acara pendengar obrolan ke {0}.
   wwcConfigEventPriorityInvalid: Prioritas acara pendengar obrolan tidak valid di
     config.yml. Default ke {0}...
-  wwcConfigConversationChatPriorityInput: 'Prioritas acara obrolan saat ini adalah
-    {0}. Pilih dari daftar prioritas yang valid ini: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Ubah Prioritas Pendengar Acara Obrolan
   wwcConfigConversationChatPriorityBadInput: Input prioritas obrolan yang buruk! Silakan
     coba lagi.
@@ -633,4 +631,25 @@ Messages:
   wwcWatsonDeprecation: Watson telah tidak digunakan lagi dan tidak lagi didukung
     oleh IBM. Harap pertimbangkan untuk beralih, karena dukungan untuk itu akan dihapus
     di pembaruan berikutnya.
+  wwcConfigForceChatChannelEnabled: Saluran terjemahan terpisah akan dipaksakan selama
+    semua terjemahan.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Berhasil beralih memaksa saluran
+    terpisah.
+  wwcConfigConversationChatFormatBadInput: Sepertinya Anda kehilangan setidaknya satu
+    dari variabel yang disebutkan di atas ({0}). Silakan coba lagi, atau ketik 0 untuk
+    kembali.
+  wwcConfigConversationChannelIconInput: Ikon saat ini untuk saluran terjemahan terpisah
+    adalah {0}. Kode warna didukung; ketik 0 untuk kembali.
+  wwcConfigConversationChatPriorityInput: 'Prioritas acara obrolan saat ini adalah
+    {0}. Ketik 0 kembali atau pilih dari daftar prioritas yang valid ini: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
+    terpisah adalah {0}. Pastikan input Anda menyertakan variabel berikut: {1}. Ketik
+    0 untuk kembali.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ubah Format Saluran Terpisah
+  wwcConfigConversationChannelIconSuccess: Berhasil mengubah ikon saluran Anda.
+  wwcConfigChatChannelFormatInvalid: 'Format saluran tidak valid terdeteksi. Pastikan
+    format Anda menyertakan variabel berikut: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Ubah Ikon Saluran Terpisah
+  wwcConfigConversationChatFormatSuccess: Format Anda telah berhasil diubah.
+  wwcConfigGUISeparateChatChannelForceButton: Memaksa Saluran Terpisah
 

@@ -638,8 +638,6 @@ Messages:
   wwcConfigEventPrioritySet: Đặt ưu tiên sự kiện người nghe trò chuyện thành {0}.
   wwcConfigEventPriorityInvalid: Ưu tiên sự kiện người nghe trò chuyện không hợp lệ
     trong config.yml. Mặc định là {0}...
-  wwcConfigConversationChatPriorityInput: 'Ưu tiên sự kiện trò chuyện hiện tại là
-    {0}. Chọn từ danh sách ưu tiên hợp lệ này: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Thay đổi mức độ ưu tiên của người nghe sự
     kiện trò chuyện
   wwcConfigConversationChatPriorityBadInput: Đầu vào ưu tiên trò chuyện xấu! Vui lòng
@@ -651,4 +649,26 @@ Messages:
   wwcWatsonDeprecation: Watson đã không còn được sử dụng và không còn được IBM hỗ
     trợ. Vui lòng xem xét chuyển đổi, vì hỗ trợ cho nó sẽ bị xóa trong bản cập nhật
     tiếp theo.
+  wwcConfigForceChatChannelEnabled: Một kênh dịch riêng biệt sẽ bị buộc trong tất
+    cả các bản dịch.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Bật thành công buộc kênh riêng
+    biệt.
+  wwcConfigConversationChatFormatBadInput: Có vẻ như bạn đang thiếu ít nhất một trong
+    các biến nói trên ({0}). Vui lòng thử lại hoặc nhập 0 để quay lại.
+  wwcConfigConversationChannelIconInput: Biểu tượng hiện tại cho kênh dịch riêng biệt
+    là {0}. Mã màu được hỗ trợ; gõ 0 để quay trở lại.
+  wwcConfigConversationChatPriorityInput: 'Ưu tiên sự kiện chat hiện tại là {0}. Nhập
+    0 đi ngược lại hoặc chọn từ danh sách ưu tiên hợp lệ này: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
+    riêng biệt là {0}. Vui lòng đảm bảo đầu vào của bạn bao gồm các biến sau: {1}.
+    Gõ 0 để quay trở lại.'
+  wwcConfigGUISeparateChatChannelFormatButton: Thay đổi định dạng kênh riêng
+  wwcConfigConversationChannelIconSuccess: Thay đổi thành công biểu tượng kênh của
+    bạn.
+  wwcConfigChatChannelFormatInvalid: 'Phát hiện định dạng kênh không hợp lệ. Vui lòng
+    đảm bảo định dạng của bạn bao gồm các biến sau: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Thay đổi biểu tượng kênh riêng biệt
+  wwcConfigConversationChatFormatSuccess: Định dạng của bạn đã được thay đổi thành
+    công.
+  wwcConfigGUISeparateChatChannelForceButton: Buộc kênh riêng biệt
 

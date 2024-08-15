@@ -625,8 +625,6 @@ Messages:
     {0}.
   wwcConfigEventPriorityInvalid: 'Virheellinen chat-kuuntelijan tapahtuman prioriteetti
     config.yml: ssä. Oletuksena on {0}...'
-  wwcConfigConversationChatPriorityInput: 'Nykyinen chat-tapahtuman prioriteetti on
-    {0}. Valitse tästä kelvollisten prioriteettien luettelosta: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Chat-tapahtuman kuuntelijan prioriteetin
     muuttaminen
   wwcConfigConversationChatPriorityBadInput: Huono chat-prioriteettisyöttö! Yritä
@@ -636,4 +634,26 @@ Messages:
     ssä. Oletuksena on tosi...'
   wwcWatsonDeprecation: Watson on vanhentunut, eikä IBM enää tue sitä. Harkitse vaihtamista,
     koska sen tuki poistetaan seuraavassa päivityksessä.
+  wwcConfigForceChatChannelEnabled: Erillinen käännöskanava pakotetaan kaikkien käännösten
+    aikana.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Vaihdettu onnistuneesti pakottamalla
+    erillinen kanava.
+  wwcConfigConversationChatFormatBadInput: Näyttää siltä, että sinulta puuttuu ainakin
+    yksi edellä mainituista muuttujista ({0}). Yritä uudelleen tai kirjoita 0 palataksesi
+    takaisin.
+  wwcConfigConversationChannelIconInput: Erillisen käännöskanavan nykyinen kuvake
+    on {0}. Värikoodeja tuetaan; kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationChatPriorityInput: 'Nykyinen chat-tapahtuman prioriteetti on
+    {0}. Kirjoita 0 palaa taaksepäin tai valitse tästä kelvollisten prioriteettien
+    luettelosta: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
+    on {0}. Varmista, että syötteesi sisältää seuraavat muuttujat: {1}. Kirjoita 0
+    palataksesi takaisin.'
+  wwcConfigGUISeparateChatChannelFormatButton: Vaihda erillinen kanavamuoto
+  wwcConfigConversationChannelIconSuccess: Kanavakuvake on muutettu onnistuneesti.
+  wwcConfigChatChannelFormatInvalid: 'Havaittu virheellinen kanavamuoto. Varmista,
+    että muotosi sisältää seuraavat muuttujat: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Vaihda erillinen kanavakuvake
+  wwcConfigConversationChatFormatSuccess: Muotoasi on muutettu onnistuneesti.
+  wwcConfigGUISeparateChatChannelForceButton: Pakota erillinen kanava
 

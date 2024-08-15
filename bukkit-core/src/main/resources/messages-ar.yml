@@ -587,8 +587,6 @@ Messages:
   wwcConfigEventPrioritySet: قم بتعيين أولوية حدث مستمع الدردشة إلى {0}.
   wwcConfigEventPriorityInvalid: أولوية حدث مستمع الدردشة غير صالحة في config.yml.
     الإعداد الافتراضي لـ {0}...
-  wwcConfigConversationChatPriorityInput: 'أولوية حدث الدردشة الحالي هي {0}. اختر
-    من قائمة الأولويات الصحيحة هذه: {1}.'
   wwcConfigGUIChatListenerPriorityButton: تغيير أولوية مستمع حدث الدردشة
   wwcConfigConversationChatPriorityBadInput: إدخال أولوية الدردشة السيئة! يرجى المحاولة
     مرة أخرى.
@@ -597,4 +595,23 @@ Messages:
     إلى «صحيح»...
   wwcWatsonDeprecation: تم إيقاف Watson ولم يعد مدعومًا من قبل IBM. يرجى التفكير في
     التبديل، حيث سيتم إزالة الدعم الخاص به في التحديث التالي.
+  wwcConfigForceChatChannelEnabled: سيتم فرض قناة ترجمة منفصلة أثناء جميع الترجمات.
+  wwcConfigConversationSeparateChatChannelForceSuccess: تم التبديل بنجاح لإجبار القناة
+    المنفصلة.
+  wwcConfigConversationChatFormatBadInput: يبدو أنك تفتقد واحدًا على الأقل من المتغيرات
+    المذكورة أعلاه ({0}). يرجى المحاولة مرة أخرى، أو اكتب 0 للعودة.
+  wwcConfigConversationChannelIconInput: الرمز الحالي لقناة الترجمة المنفصلة هو {0}.
+    رموز الألوان مدعومة؛ اكتب 0 للعودة.
+  wwcConfigConversationChatPriorityInput: 'أولوية حدث الدردشة الحالي هي {0}. اكتب
+    0 ارجع إلى الخلف أو اختر من قائمة الأولويات الصحيحة هذه: {1}.'
+  wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
+    هو {0}. يرجى التأكد من أن الإدخال الخاص بك يتضمن المتغيرات التالية: {1}. اكتب
+    0 للعودة.'
+  wwcConfigGUISeparateChatChannelFormatButton: تغيير تنسيق القناة المنفصلة
+  wwcConfigConversationChannelIconSuccess: تم تغيير رمز قناتك بنجاح.
+  wwcConfigChatChannelFormatInvalid: 'تم اكتشاف تنسيق قناة غير صالح. يرجى التأكد من
+    أن التنسيق الخاص بك يتضمن المتغيرات التالية: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: تغيير رمز القناة المنفصلة
+  wwcConfigConversationChatFormatSuccess: تم تغيير التنسيق الخاص بك بنجاح.
+  wwcConfigGUISeparateChatChannelForceButton: قناة فورس منفصلة
 

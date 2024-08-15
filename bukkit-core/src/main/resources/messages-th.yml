@@ -549,11 +549,26 @@ Messages:
   wwcConfigEventPrioritySet: ตั้งค่าลำดับความสำคัญของเหตุการณ์ผู้ฟังแชทเป็น {0}
   wwcConfigEventPriorityInvalid: ลำดับความสำคัญของเหตุการณ์ผู้ฟังแชทไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็น
     {0}...
-  wwcConfigConversationChatPriorityInput: 'ลำดับความสำคัญของกิจกรรมแชทปัจจุบันคือ
-    {0}เลือกจากรายการลำดับความสำคัญที่ถูกต้องนี้: {1}'
   wwcConfigGUIChatListenerPriorityButton: เปลี่ยนลำดับความสำคัญของผู้ฟังเหตุการณ์แชท
   wwcConfigConversationChatPriorityBadInput: อินพุตลำดับความสำคัญในการแชทไม่ดี!โปรดลองอีกครั้ง
   wwcConfigConversationChatPrioritySuccess: ตั้งค่าลำดับความสำคัญของกิจกรรมแชทของคุณเรียบร้อยแล้ว
   wwcConfigVaultSupportInvalid: ตั้งค่าการสนับสนุนห้องเก็บข้อมูลที่ไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็นจริง...
   wwcWatsonDeprecation: Watson ถูกยกเลิกและไม่ได้รับการสนับสนุนจาก IBM อีกต่อไปโปรดพิจารณาสลับเนื่องจากการสนับสนุนจะถูกลบออกในการอัปเดตถัดไป
+  wwcConfigForceChatChannelEnabled: ช่องการแปลแยกต่างหากจะถูกบังคับในระหว่างการแปลทั้งหมด
+  wwcConfigConversationSeparateChatChannelForceSuccess: สลับบังคับช่องแยกได้สำเร็จ
+  wwcConfigConversationChatFormatBadInput: ดูเหมือนว่าคุณขาดตัวแปรอย่างน้อยหนึ่งตัวแปรดังกล่าวข้างต้น
+    ({0})โปรดลองอีกครั้งหรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigConversationChannelIconInput: ไอคอนปัจจุบันสำหรับช่องการแปลแยกต่างหากคือ
+    {0}รองรับรหัสสี พิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationChatPriorityInput: 'ลำดับความสำคัญของกิจกรรมแชทปัจจุบันคือ
+    {0}พิมพ์ 0 ไปที่กลับ หรือเลือกจากรายการลำดับความสำคัญที่ถูกต้องนี้: {1}'
+  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
+    {0}โปรดตรวจสอบให้แน่ใจว่าอินพุตของคุณมีตัวแปรต่อไปนี้: {1}พิมพ์ 0 เพื่อกลับไป'
+  wwcConfigGUISeparateChatChannelFormatButton: เปลี่ยนรูปแบบช่องแยกต่างหาก
+  wwcConfigConversationChannelIconSuccess: เปลี่ยนไอคอนช่องของคุณเรียบร้อยแล้ว
+  wwcConfigChatChannelFormatInvalid: 'ตรวจพบรูปแบบช่องไม่ถูกต้องโปรดตรวจสอบให้แน่ใจว่ารูปแบบของคุณมีตัวแปรต่อไปนี้:
+    {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: เปลี่ยนไอคอนช่องแยกต่างหาก
+  wwcConfigConversationChatFormatSuccess: รูปแบบของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
+  wwcConfigGUISeparateChatChannelForceButton: บังคับช่องแยกต่างหาก
 

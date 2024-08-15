@@ -630,8 +630,6 @@ Messages:
     {0}.
   wwcConfigEventPriorityInvalid: Nederīga tērzēšanas klausītāja notikuma prioritāte
     programmā config.yml. Noklusējuma iestatījums uz {0}...
-  wwcConfigConversationChatPriorityInput: 'Pašreizējā tērzēšanas notikuma prioritāte
-    ir {0}. Izvēlieties no šī derīgo prioritāšu saraksta: {1}.'
   wwcConfigGUIChatListenerPriorityButton: Mainīt tērzēšanas notikumu klausītāja prioritāti
   wwcConfigConversationChatPriorityBadInput: Slikta tērzēšanas prioritātes ievade!
     Lūdzu, mēģiniet vēlreiz.
@@ -641,4 +639,26 @@ Messages:
     Noklusējuma iestatījums uz patiesu...
   wwcWatsonDeprecation: Watson ir novecojis, un IBM to vairs neatbalsta. Lūdzu, apsveriet
     iespēju pārslēgties, jo atbalsts tam tiks noņemts nākamajā atjauninājumā.
+  wwcConfigForceChatChannelEnabled: Visu tulkojumu laikā tiks piespiests atsevišķs
+    tulkošanas kanāls.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Veiksmīgi pārslēgts, piespiežot
+    atsevišķu kanālu.
+  wwcConfigConversationChatFormatBadInput: Izskatās, ka jums trūkst vismaz viena no
+    iepriekšminētajiem mainīgajiem ({0}). Lūdzu, mēģiniet vēlreiz vai ierakstiet 0,
+    lai atgrieztos.
+  wwcConfigConversationChannelIconInput: Pašreizējā atsevišķā tulkošanas kanāla ikona
+    ir {0}. Tiek atbalstīti krāsu kodi; ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationChatPriorityInput: 'Pašreizējā tērzēšanas notikuma prioritāte
+    ir {0}. Ierakstiet 0, dodieties uz atpakaļ vai izvēlieties no šī derīgo prioritāšu
+    saraksta: {1}.'
+  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
+    formāts ir {0}. Lūdzu, pārliecinieties, vai jūsu ievadē ir šādi mainīgie: {1}.
+    Ierakstiet 0, lai atgrieztos.'
+  wwcConfigGUISeparateChatChannelFormatButton: Mainīt atsevišķa kanāla formātu
+  wwcConfigConversationChannelIconSuccess: Veiksmīgi mainīta kanāla ikona.
+  wwcConfigChatChannelFormatInvalid: 'Atklāts nederīgs kanāla formāts. Lūdzu, pārliecinieties,
+    vai jūsu formātā ir šādi mainīgie: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: Mainīt atsevišķa kanāla ikonu
+  wwcConfigConversationChatFormatSuccess: Jūsu formāts ir veiksmīgi mainīts.
+  wwcConfigGUISeparateChatChannelForceButton: Piespiež atsevišķu kanālu
 

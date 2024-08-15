@@ -630,8 +630,6 @@ Messages:
   wwcConfigEventPrioritySet: ਚੈਟ ਸਰੋਨਰ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਤੇ ਸੈਟ ਕਰੋ.
   wwcConfigEventPriorityInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਚੈਟ ਸੁਣਨ ਵਾਲਿਆਂ ਦੀ ਇਵੈਂਟ ਤਰਜੀਹ.
     {0} ਤੇ ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ ਹੈ...
-  wwcConfigConversationChatPriorityInput: 'ਮੌਜੂਦਾ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਹੈ. ਵੈਧ ਤਰਜੀਹਾਂ
-    ਦੀ ਇਸ ਸੂਚੀ ਵਿੱਚੋਂ ਚੁਣੋ: {1}.'
   wwcConfigGUIChatListenerPriorityButton: ਚੈਟ ਇਵੈਂਟ ਸਰੋਨਰ ਤਰਜੀਹ ਬਦਲੋ
   wwcConfigConversationChatPriorityBadInput: ਖਰਾਬ ਚੈਟ ਤਰਜੀਹ ਇਨਪੁਟ! ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ
     ਕੋਸ਼ਿਸ਼ ਕਰੋ।
@@ -641,4 +639,25 @@ Messages:
   wwcWatsonDeprecation: ਵਾਟਸਨ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ ਅਤੇ ਹੁਣ ਆਈਬੀਐਮ ਦੁਆਰਾ ਸਮਰਥਤ ਨਹੀਂ
     ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਬਦਲਣ 'ਤੇ ਵਿਚਾਰ ਕਰੋ, ਕਿਉਂਕਿ ਅਗਲੇ ਅਪਡੇਟ ਵਿੱਚ ਇਸਦੇ ਲਈ ਸਮਰਥਨ ਹਟਾ ਦਿੱਤਾ
     ਜਾਵੇਗਾ।
+  wwcConfigForceChatChannelEnabled: ਸਾਰੇ ਅਨੁਵਾਦਾਂ ਦੌਰਾਨ ਇੱਕ ਵੱਖਰਾ ਅਨੁਵਾਦ ਚੈਨਲ ਮਜਬੂਰ
+    ਕੀਤਾ ਜਾਵੇਗਾ।
+  wwcConfigConversationSeparateChatChannelForceSuccess: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਮਜਬੂਰ ਕਰਨ ਨਾਲ
+    ਸਫਲਤਾਪੂਰਵਕ ਟ
+  wwcConfigConversationChatFormatBadInput: ਅਜਿਹਾ ਲਗਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਉਪਰੋਕਤ ਵੇਰੀਏਬਲਾਂ
+    ਵਿੱਚੋਂ ਘੱਟੋ ਘੱਟ ਇੱਕ ਗੁੰਮ ਹੋ ਰਹੇ ਹੋ ({0}). ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ, ਜਾਂ ਵਾਪਸ
+    ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationChannelIconInput: ਵੱਖਰੇ ਅਨੁਵਾਦ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਆਈਕਨ {0} ਹੈ।
+    ਰੰਗ ਕੋਡ ਸਮਰਥਿਤ ਹਨ; ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationChatPriorityInput: 'ਮੌਜੂਦਾ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਹੈ. ਟਾਈਪ
+    ਕਰੋ 0 ਵਾਪਸ ਜਾਓ ਜਾਂ ਵੈਧ ਤਰਜੀਹਾਂ ਦੀ ਇਸ ਸੂਚੀ ਵਿੱਚੋਂ ਚੁਣੋ: {1}।'
+  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ।
+    ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਇਨਪੁਟ ਵਿੱਚ ਹੇਠ ਦਿੱਤੇ ਵੇਰੀਏਬਲ ਸ਼ਾਮਲ ਹਨ: {1} ਵਾਪਸ
+    ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
+  wwcConfigGUISeparateChatChannelFormatButton: ਵੱਖਰੇ ਚੈਨਲ ਫਾਰਮੈਟ ਬਦਲੋ
+  wwcConfigConversationChannelIconSuccess: ਸਫਲਤਾਪੂਰਵਕ ਆਪਣੇ ਚੈਨਲ ਆਈਕਨ ਨੂੰ ਬਦ
+  wwcConfigChatChannelFormatInvalid: 'ਅਵੈਧ ਚੈਨਲ ਫਾਰਮੈਟ ਖੋਜਿਆ ਗਿਆ. ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ
+    ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਫਾਰਮੈਟ ਵਿੱਚ ਹੇਠਾਂ ਦਿੱਤੇ ਵੇਰੀਏਬਲ ਸ਼ਾਮਲ ਹਨ: {0}.'
+  wwcConfigGUISeparateChatChannelIconButton: ਵੱਖਰਾ ਚੈਨਲ ਆਈਕਨ ਬਦਲੋ
+  wwcConfigConversationChatFormatSuccess: ਤੁਹਾਡਾ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ ਗਿਆ ਹੈ.
+  wwcConfigGUISeparateChatChannelForceButton: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਫੋਰਸ ਕਰੋ
 
