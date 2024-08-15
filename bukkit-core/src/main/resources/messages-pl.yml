@@ -657,9 +657,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Aktualny priorytet wydarzenia czatu to
     {0}. Wpisz 0 przejdź do powrotu lub wybierz z tej listy prawidłowych priorytetów:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Obecny format oddzielnego kanału czatu
-    to {0}. Upewnij się, że dane wejściowe zawierają następujące zmienne: {1}. Wpisz
-    0, aby wrócić.'
   wwcConfigGUISeparateChatChannelFormatButton: Zmień format oddzielnego kanału
   wwcConfigConversationChannelIconSuccess: Pomyślnie zmieniono ikonę kanału.
   wwcConfigChatChannelFormatInvalid: 'Wykryto nieprawidłowy format kanału. Upewnij
@@ -672,4 +669,14 @@ Messages:
     dołączony do tłumaczenia jako tekst kursorem został pomyślnie przełączony.
   wwcConfigGUISendOutgoingHoverTextChatButton: Dodaj oryginalne wiadomości wychodzące
     jako tekst Najedź
+  wwcConfigPAPIInstalled: Obsługa PlaceholderAPI została włączona dla Twojego formatu
+    czatu.
+  wwcConfigPAPINotInstalled: Niestandardowe symbole zastępcze zostały wykryte w formacie
+    czatu, ale PlaceholderAPI nie jest zainstalowany. Upewnij się, że wtyczka została
+    załadowana i jest włączona.
+  wwcConfigChatChannelIconInvalid: Wykryto nieprawidłową ikonę kanału. Domyślnie {0}...
+  wwcConfigConversationChannelFormatInput: 'Obecny format oddzielnego kanału czatu
+    to {0}. Upewnij się, że dane wejściowe zawierają następujące zmienne: {1}. Jeśli
+    masz PlaceholderAPI, upewnij się, że te zmienne są otoczone wartościami procentowymi
+    (%). Wpisz 0, aby wrócić.'
 

@@ -647,9 +647,6 @@ Messages:
     ფერის კოდები მხარდაჭერილია; დაბრუნებისთვის ტიპი 0.
   wwcConfigConversationChatPriorityInput: 'ჩატის მოვლენის მიმდინარე პრიორიტეტია {0}.
     ტიპი 0 გადადით უკან ან აირჩიეთ მოქმედი პრიორიტეტების ამ სიიდან: {1}.'
-  wwcConfigConversationChannelFormatInput: 'ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
-    გთხოვთ, დარწმუნდეთ, რომ თქვენი შეყვანა მოიცავს შემდეგ ცვლადებს: {1} დაბრუნებისთვის
-    აკრიფეთ 0.'
   wwcConfigGUISeparateChatChannelFormatButton: ცალკეული არხის ფორმატის
   wwcConfigConversationChannelIconSuccess: წარმატებით შეცვალა თქვენი არხის ხატი.
   wwcConfigChatChannelFormatInvalid: 'არასწორი არხის ფორმატი გამოვლინდა გთხოვთ, დარწმუნდეთ,
@@ -661,4 +658,13 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ორიგინალური გამავალი ჩატი,
     რომელიც თანდართულია თარგმანს, როგორც ჰოვერ ტექსტი
   wwcConfigGUISendOutgoingHoverTextChatButton: დაამატეთ ორიგინალური გამავალი შეტყობინებები
+  wwcConfigPAPIInstalled: PlaceholderAPI მხარდაჭერა ჩართულია თქვენი ჩატის ფორმატისთვის.
+  wwcConfigPAPINotInstalled: თქვენს ჩატის ფორმატში გამოვლენილია მორგებული ადგილსამყარებლები,
+    მაგრამ PlaceholderAPI არ არის დამონტაჟებული. გთხოვთ დარწმუნდეთ, რომ მოდული დატვირთულია
+    და ჩართულია
+  wwcConfigChatChannelIconInvalid: არასწორი არხის ხატი გამოვლინ ნაგულისხმევად {0}...
+  wwcConfigConversationChannelFormatInput: 'ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
+    გთხოვთ, დარწმუნდეთ, რომ თქვენი შეყვანა მოიცავს შემდეგ ცვლადებს: {1} თუ თქვენ გაქვთ
+    PlaceholderAPI, დარწმუნდით, რომ ეს ცვლადები გარშემორტყმულია პროცენტებით (%). დაბრუნებისთვის
+    აკრიფეთ 0.'
 

@@ -646,8 +646,6 @@ Messages:
     کدهای رنگ پشتیبانی می شوند. برای بازگشت 0 تایپ کنید.
   wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. تایپ 0 به
     عقب بروید یا از این لیست اولویت های معتبر انتخاب کنید: {1}.'
-  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
-    لطفا مطمئن شوید که ورودی شما شامل متغیرهای زیر است: {1}. برای بازگشت 0 تایپ کنید.'
   wwcConfigGUISeparateChatChannelFormatButton: تغییر فرمت کانال جداگانه
   wwcConfigConversationChannelIconSuccess: نماد کانال خود را با موفقیت تغییر داد.
   wwcConfigChatChannelFormatInvalid: 'فرمت کانال نامعتبر شناسایی شد. لطفا مطمئن شوید
@@ -660,4 +658,13 @@ Messages:
     به عنوان متن هور با موفقیت تعویض شد.
   wwcConfigGUISendOutgoingHoverTextChatButton: پیام های خروجی اصلی را به عنوان متن
     هور اضافه کنید
+  wwcConfigPAPIInstalled: پشتیبانی PlaceholderAPI برای فرمت چت شما فعال شده است.
+  wwcConfigPAPINotInstalled: نگهدارهای مکان سفارشی در قالب چت شما شناسایی شده اند،
+    اما PlaceholderAPI نصب نشده است. لطفا اطمینان حاصل کنید که پلاگین بارگذاری شده
+    و فعال است.
+  wwcConfigChatChannelIconInvalid: آیکون کانال نامعتبر شناسایی شد پیش فرض به {0}...
+  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
+    لطفا مطمئن شوید که ورودی شما شامل متغیرهای زیر است: {1}. اگر PlaceholderAPI دارید،
+    مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ
+    کنید.'
 

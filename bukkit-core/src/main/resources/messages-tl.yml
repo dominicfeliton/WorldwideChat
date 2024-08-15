@@ -725,9 +725,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Ang kasalukuyang priyoridad sa chat event
     ay {0}. I-type ang 0 pumunta sa pabalik o pumili mula sa listahang ito ng mga
     wastong prayoridad: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
-    na chat channel ay {0}. Mangyaring tiyaking kasama sa iyong input ang mga sumusunod
-    na variable: {1}. I-type ang 0 upang bumalik.'
   wwcConfigGUISeparateChatChannelFormatButton: Baguhin ang Magkahiwalay na Format
   wwcConfigConversationChannelIconSuccess: Matagumpay na binago ang icon ng iyong
     channel.
@@ -741,4 +738,15 @@ Messages:
     na chat na nakalakip sa pagsasalin habang matagumpay na naka-switch ang hover
   wwcConfigGUISendOutgoingHoverTextChatButton: Magdagdag ng Orihinal na Papalabas
     na Mensahe bilang Hover Text
+  wwcConfigPAPIInstalled: Pinagana ang suporta ng PlaceholderAPI para sa iyong format
+    ng chat.
+  wwcConfigPAPINotInstalled: Nakita ang mga pasadyang placeholder sa iyong format
+    ng chat, ngunit hindi naka-install ang PlaceholderAPI. Mangyaring tiyaking na-load
+    ang plugin at pinagana.
+  wwcConfigChatChannelIconInvalid: Nakita ang hindi wastong icon ng channel. Pag-default
+    sa {0}...
+  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
+    na chat channel ay {0}. Mangyaring tiyaking kasama sa iyong input ang mga sumusunod
+    na variable: {1}. Kung mayroon kang PlaceholderAPI, tiyaking ang mga variable
+    na iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
 

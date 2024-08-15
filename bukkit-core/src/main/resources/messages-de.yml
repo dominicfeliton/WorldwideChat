@@ -718,9 +718,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Die aktuelle Chat-Event-Priorität ist {0}.
     Geben Sie 0 ein, gehen Sie zurück oder wählen Sie aus dieser Liste gültiger Prioritäten:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Das aktuelle Format für den separaten
-    Chat-Kanal ist {0}. Bitte stellen Sie sicher, dass Ihre Eingabe die folgenden
-    Variablen enthält: {1}. Geben Sie 0 ein, um zurückzugehen.'
   wwcConfigGUISeparateChatChannelFormatButton: Separates Kanalformat ändern
   wwcConfigConversationChannelIconSuccess: Dein Kanalsymbol wurde erfolgreich geändert.
   wwcConfigChatChannelFormatInvalid: 'Es wurde ein ungültiges Kanalformat erkannt.
@@ -734,4 +731,16 @@ Messages:
     umgeschaltet.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ursprüngliche ausgehende Nachrichten
     als Hover-Text hinzufügen
+  wwcConfigPAPIInstalled: Die PlaceholderAPI-Unterstützung wurde für Ihr Chat-Format
+    aktiviert.
+  wwcConfigPAPINotInstalled: Benutzerdefinierte Platzhalter wurden in Ihrem Chat-Format
+    erkannt, aber PlaceholderAPI ist nicht installiert. Bitte stellen Sie sicher,
+    dass das Plugin geladen und aktiviert ist.
+  wwcConfigChatChannelIconInvalid: Es wurde ein ungültiges Kanalsymbol erkannt. Die
+    Standardeinstellung ist {0}...
+  wwcConfigConversationChannelFormatInput: 'Das aktuelle Format für den separaten
+    Chat-Kanal ist {0}. Bitte stellen Sie sicher, dass Ihre Eingabe die folgenden
+    Variablen enthält: {1}. Wenn Sie PlaceholderAPI haben, stellen Sie sicher, dass
+    diese Variablen stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein,
+    um zurückzugehen.'
 

@@ -658,9 +658,6 @@ Messages:
     ہے۔ رنگ کوڈز کی حمایت کی جاتی ہے۔ واپس جانے کے لئے 0 ٹائپ کریں۔
   wwcConfigConversationChatPriorityInput: 'موجودہ چیٹ ایونٹ کی ترجیح {0} ہے۔ ٹائپ
     کریں 0 واپس جائیں یا درست ترجیحات کی اس فہرست میں سے منتخب کریں: {1}.'
-  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
-    ہے۔ براہ کرم یقینی بنائیں کہ آپ کے ان پٹ میں درج ذیل متغیر شامل ہیں: {1}. واپس
-    جانے کے لئے 0 ٹائپ کریں۔'
   wwcConfigGUISeparateChatChannelFormatButton: الگ چینل فارمیٹ تبدیل کریں
   wwcConfigConversationChannelIconSuccess: کامیابی کے ساتھ آپ کے چینل کا آئیکن تبدیل
   wwcConfigChatChannelFormatInvalid: 'غلط چینل فارمیٹ کا پتہ براہ کرم یقینی بنائیں
@@ -674,4 +671,14 @@ Messages:
     کے ساتھ منسلک ہوور ٹیکسٹ کامیابی کے ساتھ ٹوگ ہو
   wwcConfigGUISendOutgoingHoverTextChatButton: ہوور ٹیکسٹ کے طور پر اصل باہر جانے
     والے پیغامات شامل کریں
+  wwcConfigPAPIInstalled: آپ کے چیٹ فارمیٹ کے لئے PlaceHolderAPI سپورٹ کو فعال کیا
+    گیا ہے۔
+  wwcConfigPAPINotInstalled: آپ کے چیٹ فارمیٹ میں کسٹم پلیس ہولڈرز کا پتہ چلا ہے،
+    لیکن PlaceHolderAPI انسٹال نہیں ہے۔ براہ کرم یقینی بنائیں کہ پلگ ان لوڈ ہوا ہے
+    اور فعال ہے۔
+  wwcConfigChatChannelIconInvalid: غلط چینل آئیکن کا پتہ {0} پر ڈیفالٹ ہو رہا ہے...
+  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
+    ہے۔ براہ کرم یقینی بنائیں کہ آپ کے ان پٹ میں درج ذیل متغیر شامل ہیں: {1}. اگر
+    آپ کے پاس PlaceHolderAPI ہے تو، اس بات کو یقینی بنائیں کہ ان متغیرات اس کے بجائے
+    فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے 0 ٹائپ کریں۔'
 

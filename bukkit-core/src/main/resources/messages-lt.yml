@@ -661,9 +661,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Dabartinis pokalbio renginio prioritetas
     yra {0}. Įveskite 0 eiti į atgal arba pasirinkite iš šio galiojančių prioritetų
     sąrašo: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
-    yra {0}. Įsitikinkite, kad jūsų įvestis apima šiuos kintamuosius: {1}. Įveskite
-    0, kad grįžtumėte atgal.'
   wwcConfigGUISeparateChatChannelFormatButton: Pakeiskite atskiro kanalo formatą
   wwcConfigConversationChannelIconSuccess: Sėkmingai pakeista kanalo piktograma.
   wwcConfigChatChannelFormatInvalid: 'Aptiktas netinkamas kanalo formatas. Įsitikinkite,
@@ -676,4 +673,14 @@ Messages:
     pridedamas prie vertimo kaip užveskite tekstą perjungtas sėkmingai.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pridėkite originalius siunčiamus pranešimus
     kaip užveskite pelės žymeklį
+  wwcConfigPAPIInstalled: “PlaceholderAPI” palaikymas buvo įjungtas jūsų pokalbio
+    formatui.
+  wwcConfigPAPINotInstalled: Jūsų pokalbių formate aptiktos pasirinktinės vietos žymos,
+    tačiau “PlaceholderAPI” neįdiegta. Įsitikinkite, kad papildinys įkeltas ir įjungtas.
+  wwcConfigChatChannelIconInvalid: Aptikta netinkama kanalo piktograma. Numatytasis
+    nustatymas į {0}...
+  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
+    yra {0}. Įsitikinkite, kad jūsų įvestis apima šiuos kintamuosius: {1}. Jei turite
+    PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais (%), o
+    ne. Įveskite 0, kad grįžtumėte atgal.'
 

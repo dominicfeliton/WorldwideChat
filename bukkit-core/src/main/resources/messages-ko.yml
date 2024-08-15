@@ -532,8 +532,6 @@ Messages:
     0을 입력하십시오.
   wwcConfigConversationChatPriorityInput: 현재 채팅 이벤트 우선순위는 {0} 입니다.0을 입력하거나 뒤로 이동하거나
     유효한 우선순위 목록 ({1}) 중에서 선택하세요.
-  wwcConfigConversationChannelFormatInput: '개별 채팅 채널의 현재 형식은 {0} 입니다.입력에 다음 변수가 포함되었는지
-    확인하세요: {1}.돌아가려면 0을 입력하세요.'
   wwcConfigGUISeparateChatChannelFormatButton: 개별 채널 형식 변경
   wwcConfigConversationChannelIconSuccess: 채널 아이콘을 성공적으로 변경했습니다.
   wwcConfigChatChannelFormatInvalid: 잘못된 채널 형식이 감지되었습니다.형식에 다음 변수가 포함되어 있는지 확인하세요.
@@ -545,4 +543,10 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: 호버 텍스트로 번역에 첨부된 원본 발신 채팅이
     성공적으로 전환되었습니다.
   wwcConfigGUISendOutgoingHoverTextChatButton: 원본 발신 메시지를 호버 텍스트로 추가
+  wwcConfigPAPIInstalled: 채팅 형식에 대해 플레이스홀더 API 지원이 활성화되었습니다.
+  wwcConfigPAPINotInstalled: 채팅 형식에서 사용자 지정 플레이스홀더가 감지되었지만 플레이스홀더 API가 설치되지 않았습니다.플러그인이
+    로드되고 활성화되었는지 확인하세요.
+  wwcConfigChatChannelIconInvalid: 잘못된 채널 아이콘이 감지되었습니다.기본값은 {0}...
+  wwcConfigConversationChannelFormatInput: '개별 채팅 채널의 현재 형식은 {0} 입니다.입력에 다음 변수가 포함되었는지
+    확인하세요: {1}.PlaceHolderAPI를 사용하는 경우 해당 변수를 대신 백분율 (%) 로 묶어야 합니다.돌아가려면 0을 입력하세요.'
 

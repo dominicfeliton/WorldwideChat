@@ -667,9 +667,6 @@ Messages:
     ah waa {0}. Koodaha Midabka ayaa la taageeraya; nooca 0 si uu dib ugu soo laabto.
   wwcConfigConversationChatPriorityInput: 'Muhiimada dhacdooyinka wada hadda ee hadda
     waa {0}. Nooca 0 dib ugu dib ama ka dooro liiskan muhiimada oo xaalad ah: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
-    ah waa {0}. Fadlan ka hubain gelinkaaga waxa uu ka mid yahay bedelaha soo socda:
-    {1}. Nooca 0 si aad dib ugu soo noqon.'
   wwcConfigGUISeparateChatChannelFormatButton: Beddel Qaabka Kanaalka Gooni
   wwcConfigConversationChannelIconSuccess: Si guul la beddelay fiicka kanaalkaaga.
   wwcConfigChatChannelFormatInvalid: 'Qaabka kanaalka ah oo la ogaaday Fadlan hubain
@@ -682,4 +679,14 @@ Messages:
     oo la xidhigay tarjimada sida qoraalka hover oo si guul ah la
   wwcConfigGUISendOutgoingHoverTextChatButton: Kudar Fariimaha Baxda Asli ah sida
     Qoraalka Hover
+  wwcConfigPAPIInstalled: Taageerada PlaceholderAPI waxaa la ogolaaday qaabka wada
+    hadalkaaga.
+  wwcConfigPAPINotInstalled: Waxaa lagu ogaaday qaabka wada xadhiga, laakiin PlaceholderAPI
+    lama saarin. Fadlan xaqiijiyay in pluginka uu xusay oo la ogolaaday.
+  wwcConfigChatChannelIconInvalid: Aqoonka kanaalka ah oo la ogaaday Defaulting to
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
+    ah waa {0}. Fadlan ka hubain gelinkaaga waxa uu ka mid yahay bedelaha soo socda:
+    {1}. Haddii aad leeyihiin PlaceholderAPI, hubaa hubaahay ay ku xeerayeen boqoltooyinka
+    (%) halkeeda. Nooca 0 si aad dib ugu soo noqon.'
 

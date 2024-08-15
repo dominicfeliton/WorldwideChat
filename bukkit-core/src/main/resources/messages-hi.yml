@@ -666,9 +666,6 @@ Messages:
     रंग कोड समर्थित हैं; वापस जाने के लिए 0 टाइप करें।
   wwcConfigConversationChatPriorityInput: 'मौजूदा चैट इवेंट की प्राथमिकता {0} है।
     0 गो टू बैक टाइप करें या मान्य प्राथमिकताओं की इस सूची में से चुनें: {1}।'
-  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
-    कृपया पक्का करें कि आपके इनपुट में ये वैरिएबल शामिल हों: {1}। वापस जाने के लिए
-    0 टाइप करें।'
   wwcConfigGUISeparateChatChannelFormatButton: अलग चैनल फ़ॉर्मेट बदलें
   wwcConfigConversationChannelIconSuccess: अपने चैनल के आइकॉन को सफलतापूर्वक बदला
     गया।
@@ -682,4 +679,15 @@ Messages:
     टॉगल किए जाने के रूप में अनुवाद से जुड़ी मूल आउटगोइंग चैट।
   wwcConfigGUISendOutgoingHoverTextChatButton: मूल आउटगोइंग संदेशों को हॉवर टेक्स्ट
     के रूप में जोड़ें
+  wwcConfigPAPIInstalled: आपके चैट प्रारूप के लिए PlaceHolderAPI समर्थन सक्षम किया
+    गया है।
+  wwcConfigPAPINotInstalled: आपके चैट फ़ॉर्मैट में कस्टम प्लेसहोल्डर पाए गए हैं, लेकिन
+    PlaceHolderAPI इंस्टॉल नहीं किया गया है। कृपया सुनिश्चित करें कि प्लगइन लोड हो
+    गया है और सक्षम है।
+  wwcConfigChatChannelIconInvalid: अमान्य चैनल आइकन का पता चला। डिफ़ॉल्ट रूप से {0}
+    पर सेट किया जा रहा है...
+  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
+    कृपया पक्का करें कि आपके इनपुट में ये वैरिएबल शामिल हों: {1}। यदि आपके पास placeHolderAPI
+    है, तो सुनिश्चित करें कि वे वैरिएबल इसके बजाय प्रतिशत (%) से घिरे हों। वापस जाने
+    के लिए 0 टाइप करें।'
 

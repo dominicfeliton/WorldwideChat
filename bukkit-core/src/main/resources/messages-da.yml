@@ -648,9 +648,6 @@ Messages:
     er {0}. Farvekoder understøttes; skriv 0 for at gå tilbage.
   wwcConfigConversationChatPriorityInput: 'Den aktuelle chathændelsesprioritet er
     {0}. Skriv 0 gå tilbage eller vælg fra denne liste over gyldige prioriteter: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
-    er {0}. Sørg for, at dit input indeholder følgende variabler: {1}. Skriv 0 for
-    at gå tilbage.'
   wwcConfigGUISeparateChatChannelFormatButton: Skift separat kanalformat
   wwcConfigConversationChannelIconSuccess: Ændret dit kanalikon med succes.
   wwcConfigChatChannelFormatInvalid: 'Ugyldigt kanalformat fundet. Sørg for, at dit
@@ -663,4 +660,14 @@ Messages:
     knyttet til oversættelse, da musetekst skiftes med succes.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tilføj originale udgående meddelelser
     som musepekst
+  wwcConfigPAPIInstalled: PlaceHolderAPI support er blevet aktiveret til dit chatformat.
+  wwcConfigPAPINotInstalled: Brugerdefinerede pladsholdere er blevet registreret i
+    dit chatformat, men PlaceHolderAPI er ikke installeret. Sørg for, at pluginet
+    er indlæst og er aktiveret.
+  wwcConfigChatChannelIconInvalid: Ugyldigt kanalikon fundet. Standardindstilling
+    til {0}...
+  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
+    er {0}. Sørg for, at dit input indeholder følgende variabler: {1}. Hvis du har
+    PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
+    (%) i stedet. Skriv 0 for at gå tilbage.'
 

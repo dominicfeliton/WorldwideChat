@@ -681,9 +681,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Hozirgi chat tadbirining ustuvor vazifasi
     {0} hisoblanadi. 0ga yozing orqaga o''ting yoki ushbu haqiqiy ustuvorliklar ro''yxatidan
     tanlang: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
-    {0}. Iltimos, kiritishingiz quyidagi o''zgaruvchilarni o''z ichiga olganligiga
-    ishonch hosil qiling: {1}. Orqaga qaytish uchun 0 yozing.'
   wwcConfigGUISeparateChatChannelFormatButton: Alohida kanal formatini o'zgartiring
   wwcConfigConversationChannelIconSuccess: Kanal belgisini muvaffaqiyatli o'zgartirdi.
   wwcConfigChatChannelFormatInvalid: 'Yaroqsiz kanal formati aniqlandi. Iltimos, formatingiz
@@ -696,4 +693,15 @@ Messages:
     biriktirilgan original chiquvchi chat muvaffaqiyatli togged.
   wwcConfigGUISendOutgoingHoverTextChatButton: Asl chiquvchi xabarlarni hover matni
     sifatida qo'shing
+  wwcConfigPAPIInstalled: Suhbat formatingiz uchun PlaceholderAPI yordami yoqilgan.
+  wwcConfigPAPINotInstalled: Sizning chat formatingizda maxsus er ushlagichlari aniqlandi,
+    ammo PlaceholderAPI o'rnatilmagan. Iltimos, plagin yuklanganligiga va yoqilganligiga
+    ishonch hosil qiling.
+  wwcConfigChatChannelIconInvalid: Yaroqsiz kanal belgisi aniqlandi. Standart {0}
+    ga sozlash...
+  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
+    {0}. Iltimos, kiritishingiz quyidagi o''zgaruvchilarni o''z ichiga olganligiga
+    ishonch hosil qiling: {1}. Agar sizda PlaceholderAPI mavjud bo''lsa, o''sha o''zgaruvchilar
+    uning o''rniga foizlar (%) bilan o''ralganligiga ishonch hosil qiling. Orqaga
+    qaytish uchun 0 yozing.'
 

@@ -585,8 +585,6 @@ Messages:
     קודי צבע נתמכים; הקלד 0 כדי לחזור אחורה.
   wwcConfigConversationChatPriorityInput: 'עדיפות אירועי הצ''אט הנוכחית היא {0}. הקלד
     0 חזור אחורה או בחר מתוך רשימה זו של סדרי עדיפויות תקפים: {1}.'
-  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
-    {0}. אנא ודא שהקלט שלך כולל את המשתנים הבאים: {1}. הקלד 0 כדי לחזור.'
   wwcConfigGUISeparateChatChannelFormatButton: שנה פורמט ערוץ נפרד
   wwcConfigConversationChannelIconSuccess: שינית בהצלחה את סמל הערוץ שלך.
   wwcConfigChatChannelFormatInvalid: 'פורמט ערוץ לא חוקי זוהה. אנא ודא שהפורמט שלך
@@ -598,4 +596,11 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: צ'אט יוצא מקורי המצורף לתרגום
     כשטקסט העכבר הוחלף בהצלחה.
   wwcConfigGUISendOutgoingHoverTextChatButton: הוספת הודעות יוצאות מקוריות כטקסט העכבר
+  wwcConfigPAPIInstalled: תמיכת PlaceholderAPI הופעלה עבור פורמט הצ'אט שלך.
+  wwcConfigPAPINotInstalled: מצייני מיקום מותאמים אישית זוהו בתבנית הצ'אט שלך, אך
+    PlaceHolderAPI אינו מותקן. אנא ודא שהתוסף נטען ומופעל.
+  wwcConfigChatChannelIconInvalid: אייקון ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
+  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
+    {0}. אנא ודא שהקלט שלך כולל את המשתנים הבאים: {1}. אם יש לך PlaceHolderAPI, ודא
+    שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
 

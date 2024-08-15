@@ -653,9 +653,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Kipaumbele cha sasa cha tukio la mazungumzo
     ni {0}. Andika 0 nenda nyuma au uchague kutoka kwenye orodha hii ya vipaumbele
     halali: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
-    ni {0}. Tafadhali hakikisha pembejeo yako inajumuisha vigezo vifuatavyo: {1}.
-    Andika 0 ili kurudi nyuma.'
   wwcConfigGUISeparateChatChannelFormatButton: Badilisha muundo wa Kituo tofauti
   wwcConfigConversationChannelIconSuccess: Kwa mafanikio ilibadilisha ikoni yako ya
     kituo
@@ -669,4 +666,15 @@ Messages:
     imeambatanishwa na tafsiri kama maandishi ya hover ilibadilishwa
   wwcConfigGUISendOutgoingHoverTextChatButton: Ongeza Ujumbe wa Asingi wa Utoka kama
     Nakala ya Hover
+  wwcConfigPAPIInstalled: Usaidizi wa PlaceholderAPI umewezeshwa kwa muundo wako wa
+    gumzo.
+  wwcConfigPAPINotInstalled: Vifaa vya mahali maalum vimegunduliwa katika muundo wako
+    wa gumzo, lakini PlaceholderAPI haijasakinishwa. Tafadhali hakikisha kuwa programu-jalizi
+    imepakia na imewezeshwa.
+  wwcConfigChatChannelIconInvalid: Ikoni mbaya ya kituo iligunduliwa. Kubadilisha
+    kuwa {0}...
+  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
+    ni {0}. Tafadhali hakikisha pembejeo yako inajumuisha vigezo vifuatavyo: {1}.
+    Ikiwa una PlaceholderAPI, hakikisha vigezo hizo zimezungukwa na asilimia (%) badala
+    yake. Andika 0 ili kurudi nyuma.'
 

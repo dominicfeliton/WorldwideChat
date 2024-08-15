@@ -624,9 +624,6 @@ Messages:
     Toetatakse värvikoode; tagasi minemiseks tippige 0.
   wwcConfigConversationChatPriorityInput: 'Praegune vestlusürituse prioriteet on {0}.
     Tippige 0, minge tagasi või valige sellest kehtivate prioriteetide loendist: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
-    on {0}. Palun veenduge, et teie sisend sisaldab järgmisi muutujaid: {1}. Tagasi
-    minemiseks tippige 0.'
   wwcConfigGUISeparateChatChannelFormatButton: Muutke eraldi kanalivormingut
   wwcConfigConversationChannelIconSuccess: Muutis edukalt oma kanaliikooni.
   wwcConfigChatChannelFormatInvalid: 'Tuvastati vale kanalivorming. Veenduge, et teie
@@ -639,4 +636,13 @@ Messages:
     mis on lisatud tõlkele hõljutekstina, lülitati edukalt sisse.
   wwcConfigGUISendOutgoingHoverTextChatButton: Lisage algsed väljaminevad sõnumid
     hõljutekstina
+  wwcConfigPAPIInstalled: PlaceholderAPI tugi on teie vestlusvormingu jaoks lubatud.
+  wwcConfigPAPINotInstalled: Teie vestlusvormingus on tuvastatud kohandatud kohatäitjad,
+    kuid PlaceholderAPI pole installitud. Veenduge, et pistikprogramm on laaditud
+    ja lubatud.
+  wwcConfigChatChannelIconInvalid: Tuvastati vale kanaliikoon. Vaikimisi väärtus {0}...
+  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
+    on {0}. Veenduge, et teie sisend sisaldab järgmisi muutujaid: {1}. Kui teil on
+    PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
+    (%). Tagasi minemiseks tippige 0.'
 

@@ -688,9 +688,6 @@ Messages:
     separato è {0}. I codici colore sono supportati; digita 0 per tornare indietro.
   wwcConfigConversationChatPriorityInput: 'La priorità attuale degli eventi di chat
     è {0}. Digita 0 torna indietro o scegli da questo elenco di priorità valide: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Il formato attuale per il canale di chat
-    separato è {0}. Assicurati che il tuo input includa le seguenti variabili: {1}.
-    Digita 0 per tornare indietro.'
   wwcConfigGUISeparateChatChannelFormatButton: Cambia il formato del canale separato
   wwcConfigConversationChannelIconSuccess: L'icona del tuo canale è stata modificata
     con successo.
@@ -704,4 +701,15 @@ Messages:
     allegata alla traduzione al passaggio del mouse è stata commutata correttamente.
   wwcConfigGUISendOutgoingHoverTextChatButton: Aggiungi messaggi in uscita originali
     come testo al passaggio del mouse
+  wwcConfigPAPIInstalled: Il supporto PlaceholderAPI è stato abilitato per il tuo
+    formato di chat.
+  wwcConfigPAPINotInstalled: Sono stati rilevati segnaposto personalizzati nel tuo
+    formato di chat, ma PlaceholderAPI non è installato. Assicurati che il plugin
+    sia stato caricato e abilitato.
+  wwcConfigChatChannelIconInvalid: È stata rilevata un'icona del canale non valida.
+    L'impostazione predefinita è {0}...
+  wwcConfigConversationChannelFormatInput: 'Il formato attuale per il canale di chat
+    separato è {0}. Assicurati che il tuo input includa le seguenti variabili: {1}.
+    Se hai PlaceholderAPI, assicurati invece che quelle variabili siano circondate
+    da percentuali (%). Digita 0 per tornare indietro.'
 

@@ -674,9 +674,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Тековниот приоритет на настанот за разговор
     е {0}. Напишете 0 одете назад или изберете од оваа листа на валидни приоритети:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
-    разговор е {0}. Ве молиме проверете дали вашиот влез ги вклучува следниве променливи:
-    {1}. Напишете 0 за да се вратите назад.'
   wwcConfigGUISeparateChatChannelFormatButton: Променете го одделниот формат на каналот
   wwcConfigConversationChannelIconSuccess: Успешно ја смени иконата на вашиот канал.
   wwcConfigChatChannelFormatInvalid: 'Откриен неважечки формат на каналот. Ве молиме
@@ -689,4 +686,15 @@ Messages:
     прикачен на преводот како лебдејќи текст успешно се префрли.
   wwcConfigGUISendOutgoingHoverTextChatButton: Додадете оригинални појдовни пораки
     како текст со лебди
+  wwcConfigPAPIInstalled: Поддршката за PlaceholderAPI е овозможена за вашиот формат
+    на разговор.
+  wwcConfigPAPINotInstalled: Прилагодени случаеви се откриени во вашиот формат за
+    разговор, но PlaceholderAPI не е инсталиран. Ве молиме проверете дали приклучокот
+    е вчитан и е овозможен.
+  wwcConfigChatChannelIconInvalid: Откриена е неважечка икона на канал. Стандардно
+    на {0}...
+  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
+    разговор е {0}. Ве молиме проверете дали вашиот влез ги вклучува следниве променливи:
+    {1}. Ако имате PlaceholderAPI, проверете дали тие променливи се опкружени со проценти
+    (%) наместо тоа. Напишете 0 за да се вратите назад.'
 

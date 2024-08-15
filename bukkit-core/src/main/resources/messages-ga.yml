@@ -687,9 +687,6 @@ Messages:
     aistriúcháin ar leithligh. Tacaítear le cóid datha; cineál 0 chun dul ar ais.
   wwcConfigConversationChatPriorityInput: 'Is é {0} an tosaíocht imeachta comhrá reatha.
     Cineál 0 téigh ar ais nó roghnaigh ón liosta seo de thosaíochtaí bailí: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
-    comhrá ar leithligh. Déan cinnte go bhfuil na hathróga seo a leanas san ionchur:
-    {1}. Cineál 0 chun dul ar ais.'
   wwcConfigGUISeparateChatChannelFormatButton: Athraigh Formáid Cainéil Ar
   wwcConfigConversationChannelIconSuccess: D'athraigh sé go rathúil do deilbhín cainéal
   wwcConfigChatChannelFormatInvalid: 'Formáid cainéal neamhbhailí braite Déan cinnte
@@ -702,4 +699,14 @@ Messages:
     ceangailte leis an aistriúchán mar a thoscaíodh téacs hover
   wwcConfigGUISendOutgoingHoverTextChatButton: Cuir Teachtaireachtaí Eisitheacha Bunaidh
     mar Téacs Hover
+  wwcConfigPAPIInstalled: Cumasaíodh tacaíocht PlaceholderAPI do do fhormáid comhrá.
+  wwcConfigPAPINotInstalled: Braithíodh sealbhóirí áiteanna saincheaptha i do fhormáid
+    comhrá, ach níl PlaceholderAPI suiteáilte. Déan cinnte le do thoil go bhfuil an
+    breiseán luchtaithe agus cumasaithe.
+  wwcConfigChatChannelIconInvalid: Braite deilbhín cainéal neamhbhailí Ag réamhshocrú
+    go {0}...
+  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
+    comhrá ar leithligh. Déan cinnte go bhfuil na hathróga seo a leanas san ionchur:
+    {1}. Má tá PlaceholderAPI agat, déan cinnte go bhfuil na hathróga sin timpeallaithe
+    ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
 

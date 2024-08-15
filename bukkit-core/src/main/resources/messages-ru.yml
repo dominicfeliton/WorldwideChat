@@ -658,9 +658,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'В настоящее время приоритет мероприятия
     в чате — {0}. Введите 0, вернитесь назад или выберите один из следующих действительных
     приоритетов: {1}.'
-  wwcConfigConversationChannelFormatInput: 'В настоящее время отдельный канал чата
-    имеет формат {0}. Убедитесь, что введенные вами данные содержат следующие переменные:
-    {1}. Введите 0, чтобы вернуться назад.'
   wwcConfigGUISeparateChatChannelFormatButton: Изменить формат отдельного канала
   wwcConfigConversationChannelIconSuccess: Значок канала успешно изменен.
   wwcConfigChatChannelFormatInvalid: 'Обнаружен неправильный формат канала. Убедитесь,
@@ -673,4 +670,13 @@ Messages:
     к переводу, так как текст при наведении курсора успешно переключен.
   wwcConfigGUISendOutgoingHoverTextChatButton: Добавить исходные исходящие сообщения
     в виде текста при наведении курсора
+  wwcConfigPAPIInstalled: Для вашего формата чата включена поддержка PlaceHolderAPI.
+  wwcConfigPAPINotInstalled: В вашем формате чата обнаружены настраиваемые заполнители,
+    но PlaceHolderAPI не установлен. Убедитесь, что плагин загружен и включен.
+  wwcConfigChatChannelIconInvalid: Обнаружен неправильный значок канала. По умолчанию
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Текущий формат отдельного чат-канала —
+    {0}. Убедитесь, что введенные вами данные содержат следующие переменные: {1}.
+    Если у вас есть PlaceHolderAPI, вместо этого убедитесь, что эти переменные окружены
+    процентами (%). Введите 0, чтобы вернуться назад.'
 

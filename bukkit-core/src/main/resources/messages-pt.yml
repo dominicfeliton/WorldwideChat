@@ -671,9 +671,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'A prioridade atual do evento de bate-papo
     é {0}. Digite 0, volte para trás ou escolha nesta lista de prioridades válidas:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'O formato atual para o canal de bate-papo
-    separado é {0}. Certifique-se de que sua entrada inclua as seguintes variáveis:
-    {1}. Digite 0 para voltar.'
   wwcConfigGUISeparateChatChannelFormatButton: Alterar formato de canal separado
   wwcConfigConversationChannelIconSuccess: O ícone do seu canal foi alterado com sucesso.
   wwcConfigChatChannelFormatInvalid: 'Formato de canal inválido detectado. Certifique-se
@@ -686,4 +683,14 @@ Messages:
     anexado à tradução quando o texto flutuante foi alternado com sucesso.
   wwcConfigGUISendOutgoingHoverTextChatButton: Adicionar mensagens de saída originais
     como texto flutuante
+  wwcConfigPAPIInstalled: O suporte do PlaceholderAPI foi ativado para seu formato
+    de bate-papo.
+  wwcConfigPAPINotInstalled: Espaços reservados personalizados foram detectados em
+    seu formato de bate-papo, mas a PlaceholderAPI não está instalada. Certifique-se
+    de que o plug-in tenha sido carregado e ativado.
+  wwcConfigChatChannelIconInvalid: Ícone de canal inválido detectado. O padrão é {0}...
+  wwcConfigConversationChannelFormatInput: 'O formato atual para o canal de bate-papo
+    separado é {0}. Certifique-se de que sua entrada inclua as seguintes variáveis:
+    {1}. Se você tiver PlaceholderAPI, certifique-se de que essas variáveis estejam
+    cercadas por porcentagens (%). Digite 0 para voltar.'
 

@@ -566,8 +566,6 @@ Messages:
     ይደገፋሉ; ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigConversationChatPriorityInput: 'የአሁኑ የውይይት ዝግጅት ቅድሚያ {0} ነው። 0 ይይቡ ወደ ኋላ
     ይሂዱ ወይም ከዚህ ትክክለኛ ቅድሚያ ዝርዝር ይምረጡ: {1}።'
-  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። እባክዎን
-    የእርስዎ ግብዓት የሚከተሉትን ተለዋዋጮች ያካትታል: {1} ወደ ኋላ ለመመለስ 0 ይተይቡ።'
   wwcConfigGUISeparateChatChannelFormatButton: የተለየ ሰርጥ ቅርጸት ይለ
   wwcConfigConversationChannelIconSuccess: የቻናልዎን አዶን በተሳካ ሁኔታ ለው
   wwcConfigChatChannelFormatInvalid: ልክ ያልሆነ የቻናል ቅርጸት ተገ እባክዎን ቅርጸትዎ የሚከተሉትን ተለዋዋጮች
@@ -579,4 +577,11 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: የመጀመሪያው የወጪ ውይይት እንደ ሆቨር
     ጽሑፍ በተሳካ ሁኔታ ተቀያይሯል።
   wwcConfigGUISendOutgoingHoverTextChatButton: ኦሪጅናል የሚወጡ መልዕክቶችን እንደ ሆቨር ጽሑፍ
+  wwcConfigPAPIInstalled: PlaceholderAPI ድጋፍ ለውይይት ቅርጸትዎ ተነቃቷል።
+  wwcConfigPAPINotInstalled: በውይይት ቅርጸትዎ ውስጥ ብጁ ቦታ መያዣዎች ተገኝተዋል፣ ግን PlaceholderAPI
+    አልተጫነም። እባክዎ ተሰኪው ተጫነ መሆኑን እና መነቃቱን ያረጋግጡ።
+  wwcConfigChatChannelIconInvalid: ልክ ያልሆነ የቻናል አዶን ተገለ ወደ {0} ነባሪ መቀየር...
+  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። እባክዎን
+    የእርስዎ ግብዓት የሚከተሉትን ተለዋዋጮች ያካትታል: {1} PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች
+    (%) የተከበቡ መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
 

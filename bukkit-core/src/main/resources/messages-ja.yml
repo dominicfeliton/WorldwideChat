@@ -502,8 +502,6 @@ Messages:
     を入力すると戻ります。
   wwcConfigConversationChatPriorityInput: 現在のチャットイベントの優先度は {0} です。0 と入力して戻るか、有効な優先度の一覧から
     {1} を選択してください。
-  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。入力に以下の変数が含まれていることを確認してください:{1}.0
-    を入力すると戻ります。
   wwcConfigGUISeparateChatChannelFormatButton: 個別チャンネル形式を変更
   wwcConfigConversationChannelIconSuccess: チャンネルアイコンが正常に変更されました。
   wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。フォーマットに以下の変数が含まれていることを確認してください:{0}.
@@ -513,4 +511,9 @@ Messages:
   wwcOrigHover: オリジナルメッセージ:{0}
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ホバーテキストとして翻訳に添付された元の送信チャットが正常に切り替わりました。
   wwcConfigGUISendOutgoingHoverTextChatButton: 元の送信メッセージをホバーテキストとして追加
+  wwcConfigPAPIInstalled: PlaceHolderAPI サポートがチャットフォーマットで有効になりました。
+  wwcConfigPAPINotInstalled: チャットフォーマットでカスタムプレースホルダーが検出されましたが、PlaceholderAPI がインストールされていません。プラグインが読み込まれ、有効になっていることを確認してください。
+  wwcConfigChatChannelIconInvalid: 無効なチャンネルアイコンが検出されました。デフォルトは {0}...
+  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。入力に以下の変数が含まれていることを確認してください:{1}.PlaceholderAPI
+    を使用している場合は、それらの変数が代わりにパーセンテージ (%) で囲まれていることを確認してください。0 を入力すると戻ります。
 

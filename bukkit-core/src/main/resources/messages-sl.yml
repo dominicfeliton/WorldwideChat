@@ -656,9 +656,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Trenutna prednostna naloga dogodka v klepetu
     je {0}. Vnesite 0 pojdi nazaj ali izberite s tega seznama veljavnih prednostnih
     nalog: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
-    je {0}. Prepričajte se, da vaš vnos vključuje naslednje spremenljivke: {1}. Vnesite
-    0, da se vrnete nazaj.'
   wwcConfigGUISeparateChatChannelFormatButton: Spremenite obliko ločenega kanala
   wwcConfigConversationChannelIconSuccess: Uspešno spremenil ikono vašega kanala.
   wwcConfigChatChannelFormatInvalid: 'Zaznana je neveljavna oblika kanala. Prepričajte
@@ -671,4 +668,13 @@ Messages:
     prevodu kot besedilo z lebdenjem kazalca, je uspešno preklopil.
   wwcConfigGUISendOutgoingHoverTextChatButton: Dodajte izvirna odhodna sporočila kot
     besedilo s kazalcem kazalca
+  wwcConfigPAPIInstalled: Podpora za PlaceholderAPI je omogočena za vaš format klepeta.
+  wwcConfigPAPINotInstalled: V obliki klepeta so zaznana označena mesta po meri, vendar
+    PlaceholderAPI ni nameščen. Prepričajte se, da je vtičnik naložen in omogočen.
+  wwcConfigChatChannelIconInvalid: Zaznana je neveljavna ikona kanala. Privzeta vrednost
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
+    je {0}. Prepričajte se, da vaš vnos vključuje naslednje spremenljivke: {1}. Če
+    imate PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki
+    (%). Vnesite 0, da se vrnete nazaj.'
 

@@ -710,9 +710,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'La prioridad actual del evento de chat
     es {0}. Escribe 0, vuelve atrás o elige de esta lista de prioridades válidas:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'El formato actual para el canal de chat
-    independiente es {0}. Asegúrese de que su entrada incluya las siguientes variables:
-    {1}. Escriba 0 para volver.'
   wwcConfigGUISeparateChatChannelFormatButton: Cambiar formato de canal independiente
   wwcConfigConversationChannelIconSuccess: Has cambiado correctamente el icono de
     tu canal.
@@ -726,4 +723,15 @@ Messages:
     adjunto a la traducción como texto flotante se alteró correctamente.
   wwcConfigGUISendOutgoingHoverTextChatButton: Agregar mensajes salientes originales
     como texto al pasar el ratón
+  wwcConfigPAPIInstalled: Se ha habilitado la compatibilidad con PlaceHolderAPI para
+    tu formato de chat.
+  wwcConfigPAPINotInstalled: Se han detectado marcadores de posición personalizados
+    en tu formato de chat, pero PlaceHolderAPI no está instalada. Asegúrate de que
+    el plugin se haya cargado y esté activado.
+  wwcConfigChatChannelIconInvalid: Se ha detectado un icono de canal no válido. Por
+    defecto es {0}...
+  wwcConfigConversationChannelFormatInput: 'El formato actual para el canal de chat
+    independiente es {0}. Asegúrese de que su entrada incluya las siguientes variables:
+    {1}. Si tienes PlaceholderAPI, asegúrate de que esas variables estén rodeadas
+    de porcentajes (%) en su lugar. Escriba 0 para volver atrás.'
 

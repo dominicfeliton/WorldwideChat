@@ -651,9 +651,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Pašreizējā tērzēšanas notikuma prioritāte
     ir {0}. Ierakstiet 0, dodieties uz atpakaļ vai izvēlieties no šī derīgo prioritāšu
     saraksta: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
-    formāts ir {0}. Lūdzu, pārliecinieties, vai jūsu ievadē ir šādi mainīgie: {1}.
-    Ierakstiet 0, lai atgrieztos.'
   wwcConfigGUISeparateChatChannelFormatButton: Mainīt atsevišķa kanāla formātu
   wwcConfigConversationChannelIconSuccess: Veiksmīgi mainīta kanāla ikona.
   wwcConfigChatChannelFormatInvalid: 'Atklāts nederīgs kanāla formāts. Lūdzu, pārliecinieties,
@@ -666,4 +663,14 @@ Messages:
     kas pievienota tulkojumam kā kursorēšanas teksts, tika veiksmīgi pārslēgts.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pievienojiet oriģinālos izejošos ziņojumus
     kā virzīšanas tekstu
+  wwcConfigPAPIInstalled: PlaceholderAPI atbalsts ir iespējots jūsu tērzēšanas formātam.
+  wwcConfigPAPINotInstalled: Jūsu tērzēšanas formātā ir konstatēti pielāgoti vietturētāji,
+    taču PlaceholderAPI nav instalēts. Lūdzu, pārliecinieties, ka spraudnis ir ielādēts
+    un ir iespējots.
+  wwcConfigChatChannelIconInvalid: Atklāta nederīga kanāla ikona. Noklusējuma iestatījums
+    uz {0}...
+  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
+    formāts ir {0}. Lūdzu, pārliecinieties, vai jūsu ievadē ir šādi mainīgie: {1}.
+    Ja jums ir PlaceholderAPI, pārliecinieties, vai šos mainīgos ir ieskauti procenti
+    (%). Ierakstiet 0, lai atgrieztos.'
 

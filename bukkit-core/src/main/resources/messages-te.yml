@@ -656,9 +656,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'ప్రస్తుత చాట్ ఈవెంట్ ప్రాధాన్యత {0}. టైప్
     0 తిరిగి వెళ్ళండి లేదా చెల్లుబాటు అయ్యే ప్రాధాన్యతల ఈ జాబితా నుండి ఎంచుకోండి:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
-    {0}. దయచేసి మీ ఇన్పుట్లో ఈ క్రింది వేరియబుల్స్ ఉన్నాయని నిర్ధారించుకోండి: {1}.
-    తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.'
   wwcConfigGUISeparateChatChannelFormatButton: ప్రత్యేక ఛానల్ ఆకృతిని మార్చండి
   wwcConfigConversationChannelIconSuccess: మీ ఛానల్ చిహ్నాన్ని విజయవంతంగా మార్చబడింది.
   wwcConfigChatChannelFormatInvalid: 'చెల్లని ఛానల్ ఫార్మాట్ కనుగొనబడింది. దయచేసి
@@ -671,4 +668,14 @@ Messages:
     togged వంటి అనువాదం జత అసలు అవుట్గోయింగ్ చాట్.
   wwcConfigGUISendOutgoingHoverTextChatButton: అసలు అవుట్గోయింగ్ సందేశాలను హోవర్ టెక్స్ట్గా
     జోడించండి
+  wwcConfigPAPIInstalled: మీ చాట్ ఫార్మాట్ కోసం PlaceholderAPI మద్దతు ప్రారంభించబడింది.
+  wwcConfigPAPINotInstalled: కస్టమ్ ప్లేస్హోల్డర్లు మీ చాట్ ఫార్మాట్లో గుర్తించబడ్డాయి,
+    కానీ PlaceholderAPI ఇన్స్టాల్ చేయబడలేదు. దయచేసి ప్లగ్ఇన్ లోడ్ అయిందని మరియు ప్రారంభించబడిందని
+    నిర్ధారించుకోండి.
+  wwcConfigChatChannelIconInvalid: చెల్లని ఛానల్ చిహ్నం కనుగొనబడింది. {0} కు డిఫాల్ట్
+    అవుతోంది...
+  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
+    {0}. దయచేసి మీ ఇన్పుట్లో ఈ క్రింది వేరియబుల్స్ ఉన్నాయని నిర్ధారించుకోండి: {1}.
+    మీరు PlaceholderAPI కలిగి ఉంటే, ఆ వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని
+    నిర్ధారించుకోండి. తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.'
 

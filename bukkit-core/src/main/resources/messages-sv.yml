@@ -656,9 +656,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Den aktuella prioriteten för chatthändelse
     är {0}. Skriv 0 gå tillbaka eller välj från den här listan med giltiga prioriteringar:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
-    chattkanalen är {0}. Se till att din inmatning innehåller följande variabler:
-    {1}. Skriv 0 för att gå tillbaka.'
   wwcConfigGUISeparateChatChannelFormatButton: Ändra separat kanalformat
   wwcConfigConversationChannelIconSuccess: Ändrade din kanalikon framgångsrikt.
   wwcConfigChatChannelFormatInvalid: 'Ogiltigt kanalformat har upptäckts. Se till
@@ -671,4 +668,14 @@ Messages:
     kopplad till översättning när muspekartexten växlades framgångsrikt.
   wwcConfigGUISendOutgoingHoverTextChatButton: Lägg till ursprungliga utgående meddelanden
     som muspekartext
+  wwcConfigPAPIInstalled: PlaceHolderAPI-stöd har aktiverats för ditt chattformat.
+  wwcConfigPAPINotInstalled: Anpassade platshållare har upptäckts i chattformatet,
+    men PlaceHolderAPI är inte installerat. Se till att insticksprogrammet har laddats
+    och är aktiverat.
+  wwcConfigChatChannelIconInvalid: Ogiltig kanalikon har upptäckts. Standardinställt
+    till {0}...
+  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
+    chattkanalen är {0}. Se till att din inmatning innehåller följande variabler:
+    {1}. Om du har placeHolderAPI, se till att dessa variabler omges av procentsatser
+    (%) istället. Skriv 0 för att gå tillbaka.'
 

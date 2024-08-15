@@ -645,9 +645,6 @@ Messages:
     {0} වේ. වර්ණ කේත සඳහා සහය දක්වයි; ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationChatPriorityInput: 'වර්තමාන චැට් සිදුවීම් ප්රමුඛතාවය {0} වේ.
     0 ටයිප් කරන්න ආපසු යන්න හෝ වලංගු ප්රමුඛතා මෙම ලැයිස්තුවෙන් තෝරන්න: {1}.'
-  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
-    වේ. කරුණාකර ඔබේ ආදානයට පහත සඳහන් විචල්යයන් ඇතුළත් බවට වග බලා ගන්න: {1}. ආපසු යාමට
-    0 ටයිප් කරන්න.'
   wwcConfigGUISeparateChatChannelFormatButton: වෙනම නාලිකා ආකෘතිය වෙනස් කරන්න
   wwcConfigConversationChannelIconSuccess: ඔබේ නාලිකා නිරූපකය සාර්ථකව වෙනස් කළේය.
   wwcConfigChatChannelFormatInvalid: 'අවලංගු නාලිකා ආකෘතිය අනාවරණය විය කරුණාකර ඔබේ
@@ -660,4 +657,13 @@ Messages:
     ලෙස පරිවර්තනය කිරීමට අනුයුක්ත මුල් පිටතට යන චැට්.
   wwcConfigGUISendOutgoingHoverTextChatButton: හෝවර් පෙළ ලෙස මුල් පිටතට යන පණිවිඩ
     එක් කරන්න
+  wwcConfigPAPIInstalled: ඔබේ චැට් ආකෘතිය සඳහා PlaceholderAPI සහාය සක්රීය කර ඇත.
+  wwcConfigPAPINotInstalled: ඔබගේ චැට් ආකෘතියෙහි අභිරුචි ස්ථානගත කරන්නන් හඳුනාගෙන
+    ඇත, නමුත් PlaceholderAPI ස්ථාපනය කර නැත. ප්ලගිනය පැටවී ඇති බවත් සක්රීය කර ඇති
+    බවත් කරුණාකර සහතික කරන්න.
+  wwcConfigChatChannelIconInvalid: අවලංගු නාලිකා නිරූපකය අනාවරණය විය {0} වෙත පෙරහැරීම...
+  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
+    වේ. කරුණාකර ඔබේ ආදානයට පහත සඳහන් විචල්යයන් ඇතුළත් බවට වග බලා ගන්න: {1}. ඔබට PlaceholderAPI
+    තිබේ නම්, එම විචල්යයන් ඒ වෙනුවට ප්රතිශතවලින් (%) වට වී ඇති බවට වග බලා ගන්න. ආපසු
+    යාමට 0 ටයිප් කරන්න.'
 

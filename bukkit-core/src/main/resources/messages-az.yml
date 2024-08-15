@@ -644,9 +644,6 @@ Messages:
     -dir. Rəng kodları dəstəklənir; geri qayıtmaq üçün 0 yazın.
   wwcConfigConversationChatPriorityInput: 'Cari söhbət tədbirinin prioriteti {0} -dir.
     Yazın 0 geri keçin və ya etibarlı prioritetlərin bu siyahısından seçin: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
-    {0} -dir. Zəhmət olmasa girişinizdə aşağıdakı dəyişənlər daxil olduğundan əmin
-    olun: {1} Geri qayıtmaq üçün 0 yazın.'
   wwcConfigGUISeparateChatChannelFormatButton: Ayrı kanal formatını dəyişdirin
   wwcConfigConversationChannelIconSuccess: Kanal simgesinizi uğurla dəyişdirdi.
   wwcConfigChatChannelFormatInvalid: 'Yanlış kanal formatı aşkar edildi. Zəhmət olmasa
@@ -659,4 +656,14 @@ Messages:
     keçid mətni kimi tərcüməyə əlavə edildi.
   wwcConfigGUISendOutgoingHoverTextChatButton: Orijinal gedən mesajları Hover Mətn
     kimi əlavə edin
+  wwcConfigPAPIInstalled: Söhbət formatınız üçün PlaceholderAPI dəstəyi aktivləşdirilmişdir.
+  wwcConfigPAPINotInstalled: Söhbət formatınızda xüsusi yer tutacaqları aşkar edildi,
+    lakin PlaceholderAPI quraşdırılmamışdır. Zəhmət olmasa plaginin yükləndiyinə və
+    aktiv olduğundan əmin olun.
+  wwcConfigChatChannelIconInvalid: Yanlış kanal işarəsi aşkar edildi. Varsayılan olaraq
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
+    {0} -dir. Zəhmət olmasa girişinizdə aşağıdakı dəyişənlər daxil olduğundan əmin
+    olun: {1} PlaceholderAPI varsa, əvəzinə bu dəyişənlərin faizlərlə (%) əhatə olunduğundan
+    əmin olun. Geri qayıtmaq üçün 0 yazın.'
 

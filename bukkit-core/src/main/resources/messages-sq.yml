@@ -684,9 +684,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Prioriteti aktual i ngjarjes së bisedës
     është {0}. Shtypni 0 shkoni te prapa ose zgjidhni nga kjo listë e prioriteteve
     të vlefshme: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
-    bisedës është {0}. Ju lutemi sigurohuni që hyrja juaj të përfshijë variablat e
-    mëposhtme: {1}. Shkruani 0 për të kthyer përsëri.'
   wwcConfigGUISeparateChatChannelFormatButton: Ndryshoni formatin e veçantë të
   wwcConfigConversationChannelIconSuccess: Ndryshoi me sukses ikonën e kanalit tuaj.
   wwcConfigChatChannelFormatInvalid: 'Zbuluar formati i pavlefshëm i kanalit. Ju lutemi
@@ -699,4 +696,15 @@ Messages:
     e bashkangjitur përkthimit si teksti hover u ndërrua me sukses.
   wwcConfigGUISendOutgoingHoverTextChatButton: Shtoni Mesazhet Origjinale Dalëse si
     Tekst Hover
+  wwcConfigPAPIInstalled: Mbështetja e PlaceholderAPI është aktivizuar për formatin
+    tuaj të bisedës.
+  wwcConfigPAPINotInstalled: Mbajtëse vendore të personalizuara janë zbuluar në formatin
+    tuaj të bisedës, por PlaceholderAPI nuk është instaluar. Ju lutemi sigurohuni
+    që shtojca të jetë ngarkuar dhe është e aktivizuar.
+  wwcConfigChatChannelIconInvalid: Zbuluar ikona e pavlefshme e kanalit. Parazgjedhja
+    në {0}...
+  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
+    bisedës është {0}. Ju lutemi sigurohuni që hyrja juaj të përfshijë variablat e
+    mëposhtme: {1}. Nëse keni PlaceholderAPI, sigurohuni që ato variabla të jenë të
+    rrethuar nga përqindje (%) në vend të kësaj. Shkruani 0 për të kthyer përsëri.'
 

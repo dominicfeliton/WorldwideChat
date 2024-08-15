@@ -646,9 +646,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Nykyinen chat-tapahtuman prioriteetti on
     {0}. Kirjoita 0 palaa taaksepäin tai valitse tästä kelvollisten prioriteettien
     luettelosta: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
-    on {0}. Varmista, että syötteesi sisältää seuraavat muuttujat: {1}. Kirjoita 0
-    palataksesi takaisin.'
   wwcConfigGUISeparateChatChannelFormatButton: Vaihda erillinen kanavamuoto
   wwcConfigConversationChannelIconSuccess: Kanavakuvake on muutettu onnistuneesti.
   wwcConfigChatChannelFormatInvalid: 'Havaittu virheellinen kanavamuoto. Varmista,
@@ -661,4 +658,14 @@ Messages:
     liitettiin käännökseen, kun hiiren osoitin teksti vaihdettiin onnistuneesti.
   wwcConfigGUISendOutgoingHoverTextChatButton: Lisää alkuperäiset lähtevät viestit
     hover-tekstiksi
+  wwcConfigPAPIInstalled: PlaceholderAPI-tuki on otettu käyttöön chat-muotossasi.
+  wwcConfigPAPINotInstalled: Mukautetut paikkamerkit on havaittu chat-muodossa, mutta
+    PlaceHolderAPI ei ole asennettu. Varmista, että laajennus on ladattu ja että se
+    on käytössä.
+  wwcConfigChatChannelIconInvalid: Virheellinen kanavakuvake havaittu. Oletuksena
+    on {0}...
+  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
+    on {0}. Varmista, että syötteesi sisältää seuraavat muuttujat: {1}. Jos käytössäsi
+    on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet (%) sen
+    sijaan. Kirjoita 0 palataksesi takaisin.'
 

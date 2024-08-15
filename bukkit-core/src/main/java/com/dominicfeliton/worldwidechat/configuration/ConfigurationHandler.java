@@ -282,20 +282,32 @@ public class ConfigurationHandler {
 			main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.icon"));
 		} catch (Exception e) {
 			main.setTranslateIcon("globe");
-			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelIconInvalid", null));
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelIconInvalid",
+					new String[] {refs.serial(main.getTranslateIcon())},
+					null));
 		}
 		// Separate Chat Channel Format
 		try {
 			String format = mainConfig.getString("Chat.separateChatChannel.format");
 			if (format.contains("{suffix}") && format.contains("{prefix}") && format.contains("{username}")) {
 				main.setTranslateLayout(mainConfig.getString("Chat.separateChatChannel.format"));
+				int count = format.length() - format.replace("%", "").length();
+				if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+					main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigPAPIInstalled", null));
+				} else if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") == null) {
+					main.getLogger().warning(refs.getMsg("wwcConfigPAPINotInstalled", null));
+				}
 			} else {
 				main.setTranslateLayout("{prefix}{username}{suffix}:");
-				main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid", new String[] {"{prefix}, {username}, {suffix}"}, null));
+				main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid",
+						new String[] {"{prefix}, {username}, {suffix}"},
+						null));
 			}
 		} catch (Exception e) {
 			main.setTranslateLayout("{prefix}{username}{suffix}:");
-			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelLayoutInvalid", null));
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid",
+					new String[] {"{prefix}, {username}, {suffix}"},
+					null));
 		}
 		// Always Force Separate Chat Channel
 		try {

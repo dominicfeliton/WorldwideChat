@@ -170,7 +170,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         // Spigot returns a "formatted" message with string manipulation.
         // There does not seem to be a viable paper alternative.
         // This is the only major discrepancy between the two listeners
-        return main.getTranslateLayout("", refs.serial(component), "")
+        return main.getTranslateLayout("", refs.serial(component), "", player)
                 .append(Component.space())
                 .append(component1);
     }

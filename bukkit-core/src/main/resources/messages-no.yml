@@ -631,9 +631,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Gjeldende prioritering for chat-hendelse
     er {0}. Skriv 0 gå tilbake eller velg fra denne listen over gyldige prioriteringer:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
-    er {0}. Forsikre deg om at inndataene dine inneholder følgende variabler: {1}.
-    Skriv 0 for å gå tilbake.'
   wwcConfigGUISeparateChatChannelFormatButton: Endre separat kanalformat
   wwcConfigConversationChannelIconSuccess: Vellykket endret kanalikonet ditt.
   wwcConfigChatChannelFormatInvalid: 'Ugyldig kanalformat oppdaget. Forsikre deg om
@@ -646,4 +643,13 @@ Messages:
     knyttet til oversettelsen da musetekst ble byttet vellykket.
   wwcConfigGUISendOutgoingHoverTextChatButton: Legg til originale utgående meldinger
     som musepekst
+  wwcConfigPAPIInstalled: PlaceHolderAPI-støtte er aktivert for chat-formatet ditt.
+  wwcConfigPAPINotInstalled: Egendefinerte plassholdere har blitt oppdaget i chat-formatet
+    ditt, men PlaceHolderAPI er ikke installert. Forsikre deg om at pluginet er lastet
+    inn og er aktivert.
+  wwcConfigChatChannelIconInvalid: Ugyldig kanalikon oppdaget. Standard til {0}...
+  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
+    er {0}. Forsikre deg om at inndataene dine inneholder følgende variabler: {1}.
+    Hvis du har PlaceHolderAPI, må du sørge for at disse variablene er omgitt av prosenter
+    (%) i stedet. Skriv 0 for å gå tilbake.'
 

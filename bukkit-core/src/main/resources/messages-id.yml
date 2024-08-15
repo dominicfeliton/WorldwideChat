@@ -642,9 +642,6 @@ Messages:
     adalah {0}. Kode warna didukung; ketik 0 untuk kembali.
   wwcConfigConversationChatPriorityInput: 'Prioritas acara obrolan saat ini adalah
     {0}. Ketik 0 kembali atau pilih dari daftar prioritas yang valid ini: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
-    terpisah adalah {0}. Pastikan input Anda menyertakan variabel berikut: {1}. Ketik
-    0 untuk kembali.'
   wwcConfigGUISeparateChatChannelFormatButton: Ubah Format Saluran Terpisah
   wwcConfigConversationChannelIconSuccess: Berhasil mengubah ikon saluran Anda.
   wwcConfigChatChannelFormatInvalid: 'Format saluran tidak valid terdeteksi. Pastikan
@@ -657,4 +654,14 @@ Messages:
     dilampirkan ke terjemahan sebagai teks hover berhasil diubah.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tambahkan Pesan Keluar Asli sebagai
     Teks Hover
+  wwcConfigPAPIInstalled: Dukungan PlaceHolderAPI telah diaktifkan untuk format obrolan
+    Anda.
+  wwcConfigPAPINotInstalled: Placeholder khusus telah terdeteksi dalam format obrolan
+    Anda, tetapi PlaceHolderAPI tidak diinstal. Pastikan plugin telah dimuat dan diaktifkan.
+  wwcConfigChatChannelIconInvalid: Ikon saluran tidak valid terdeteksi. Default ke
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
+    terpisah adalah {0}. Pastikan input Anda menyertakan variabel berikut: {1}. Jika
+    Anda memiliki PlaceHolderAPI, pastikan variabel tersebut dikelilingi oleh persentase
+    (%) sebagai gantinya. Ketik 0 untuk kembali.'
 

@@ -673,9 +673,6 @@ Messages:
     vertaalkanaal is {0}. Kleurcodes worden ondersteund; typ 0 om terug te gaan.
   wwcConfigConversationChatPriorityInput: 'De huidige prioriteit van het chatevenement
     is {0}. Typ 0 en ga terug of kies uit deze lijst met geldige prioriteiten: {1}.'
-  wwcConfigConversationChannelFormatInput: 'De huidige indeling voor het afzonderlijke
-    chatkanaal is {0}. Zorg ervoor dat je invoer de volgende variabelen bevat: {1}.
-    Typ 0 om terug te gaan.'
   wwcConfigGUISeparateChatChannelFormatButton: De indeling van een afzonderlijk kanaal
     wijzigen
   wwcConfigConversationChannelIconSuccess: Je kanaalpictogram is succesvol gewijzigd.
@@ -689,4 +686,14 @@ Messages:
     gekoppeld aan de vertaling, aangezien de zweeftekst met succes is omgeschakeld.
   wwcConfigGUISendOutgoingHoverTextChatButton: Originele uitgaande berichten toevoegen
     als zweeftekst
+  wwcConfigPAPIInstalled: PlaceholderAPI-ondersteuning is ingeschakeld voor uw chatformaat.
+  wwcConfigPAPINotInstalled: Aangepaste tijdelijke aanduidingen zijn gedetecteerd
+    in uw chatformaat, maar PlaceholderAPI is niet geïnstalleerd. Zorg ervoor dat
+    de plug-in is geladen en is ingeschakeld.
+  wwcConfigChatChannelIconInvalid: Ongeldig kanaalpictogram gedetecteerd. Standaard
+    ingesteld op {0}...
+  wwcConfigConversationChannelFormatInput: 'De huidige indeling voor het afzonderlijke
+    chatkanaal is {0}. Zorg ervoor dat je invoer de volgende variabelen bevat: {1}.
+    Als je PlaceholderAPI hebt, zorg er dan voor dat die variabelen in plaats daarvan
+    worden omringd door percentages (%). Typ 0 om terug te gaan.'
 

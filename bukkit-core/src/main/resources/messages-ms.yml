@@ -645,9 +645,6 @@ Messages:
     ialah {0}. Kod warna disokong; taipkan 0 untuk kembali.
   wwcConfigConversationChatPriorityInput: 'Keutamaan acara sembang semasa ialah {0}.
     Taipkan 0 pergi ke belakang atau pilih dari senarai keutamaan yang sah ini: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
-    ialah {0}. Sila pastikan input anda termasuk pemboleh ubah berikut: {1}. Taipkan
-    0 untuk kembali.'
   wwcConfigGUISeparateChatChannelFormatButton: Tukar Format Saluran Berpisah
   wwcConfigConversationChannelIconSuccess: Berjaya menukar ikon saluran anda.
   wwcConfigChatChannelFormatInvalid: 'Format saluran tidak sah dikesan. Sila pastikan
@@ -660,4 +657,14 @@ Messages:
     pada terjemahan sebagai teks hover berjaya ditukar.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tambah Mesej Keluar Asal sebagai Teks
     Hover
+  wwcConfigPAPIInstalled: Sokongan PlaceholderAPI telah diaktifkan untuk format sembang
+    anda.
+  wwcConfigPAPINotInstalled: Pemegang tempat tersuai telah dikesan dalam format sembang
+    anda, tetapi PlaceholderAPI tidak dipasang. Sila pastikan plugin telah dimuatkan
+    dan diaktifkan.
+  wwcConfigChatChannelIconInvalid: Ikon saluran tidak sah dikesan. Lalai kepada {0}...
+  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
+    ialah {0}. Sila pastikan input anda termasuk pemboleh ubah berikut: {1}. Jika
+    anda mempunyai PlaceholderAPI, pastikan pemboleh ubah tersebut dikelilingi oleh
+    peratusan (%) sebagai gantinya. Taipkan 0 untuk kembali.'
 

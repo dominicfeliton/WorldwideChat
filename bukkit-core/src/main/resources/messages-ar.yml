@@ -604,9 +604,6 @@ Messages:
     رموز الألوان مدعومة؛ اكتب 0 للعودة.
   wwcConfigConversationChatPriorityInput: 'أولوية حدث الدردشة الحالي هي {0}. اكتب
     0 ارجع إلى الخلف أو اختر من قائمة الأولويات الصحيحة هذه: {1}.'
-  wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
-    هو {0}. يرجى التأكد من أن الإدخال الخاص بك يتضمن المتغيرات التالية: {1}. اكتب
-    0 للعودة.'
   wwcConfigGUISeparateChatChannelFormatButton: تغيير تنسيق القناة المنفصلة
   wwcConfigConversationChannelIconSuccess: تم تغيير رمز قناتك بنجاح.
   wwcConfigChatChannelFormatInvalid: 'تم اكتشاف تنسيق قناة غير صالح. يرجى التأكد من
@@ -618,4 +615,13 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: تم إرفاق الدردشة الأصلية
     الصادرة بالترجمة حيث تم تبديل نص التمرير بنجاح.
   wwcConfigGUISendOutgoingHoverTextChatButton: إضافة الرسائل الصادرة الأصلية كنص تمرير
+  wwcConfigPAPIInstalled: تم تمكين دعم PlaceholderAPI لتنسيق الدردشة الخاص بك.
+  wwcConfigPAPINotInstalled: تم اكتشاف عناصر نائبة مخصصة في تنسيق الدردشة الخاص بك،
+    ولكن لم يتم تثبيت PlaceholderAPI. يرجى التأكد من تحميل المكون الإضافي وتمكينه.
+  wwcConfigChatChannelIconInvalid: تم اكتشاف رمز قناة غير صالح. الإعداد الافتراضي
+    لـ {0}...
+  wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
+    هو {0}. يرجى التأكد من أن الإدخال الخاص بك يتضمن المتغيرات التالية: {1}. إذا كان
+    لديك PlaceholderAPI، فتأكد من أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً
+    من ذلك. اكتب 0 للعودة.'
 

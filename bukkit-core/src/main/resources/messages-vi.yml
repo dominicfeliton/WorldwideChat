@@ -659,9 +659,6 @@ Messages:
     là {0}. Mã màu được hỗ trợ; gõ 0 để quay trở lại.
   wwcConfigConversationChatPriorityInput: 'Ưu tiên sự kiện chat hiện tại là {0}. Nhập
     0 đi ngược lại hoặc chọn từ danh sách ưu tiên hợp lệ này: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
-    riêng biệt là {0}. Vui lòng đảm bảo đầu vào của bạn bao gồm các biến sau: {1}.
-    Gõ 0 để quay trở lại.'
   wwcConfigGUISeparateChatChannelFormatButton: Thay đổi định dạng kênh riêng
   wwcConfigConversationChannelIconSuccess: Thay đổi thành công biểu tượng kênh của
     bạn.
@@ -676,4 +673,15 @@ Messages:
     đính kèm với bản dịch khi văn bản di chuột đã chuyển thành công.
   wwcConfigGUISendOutgoingHoverTextChatButton: Thêm tin nhắn gửi đi gốc dưới dạng
     văn bản di chuột
+  wwcConfigPAPIInstalled: Hỗ trợ PlaceHolderAPI đã được kích hoạt cho định dạng trò
+    chuyện của bạn.
+  wwcConfigPAPINotInstalled: Chỗ giữ chỗ tùy chỉnh đã được phát hiện trong định dạng
+    trò chuyện của bạn, nhưng PlaceHolderAPI chưa được cài đặt. Vui lòng đảm bảo rằng
+    plugin đã tải và được kích hoạt.
+  wwcConfigChatChannelIconInvalid: Phát hiện biểu tượng kênh không hợp lệ. Mặc định
+    là {0}...
+  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
+    riêng biệt là {0}. Vui lòng đảm bảo đầu vào của bạn bao gồm các biến sau: {1}.
+    Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần
+    trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
 

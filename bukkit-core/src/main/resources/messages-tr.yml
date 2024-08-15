@@ -647,9 +647,6 @@ Messages:
     'dir. Renk kodları desteklenir; geri dönmek için 0 yazın.
   wwcConfigConversationChatPriorityInput: 'Mevcut sohbet etkinliği önceliği {0} ''dir.
     0 yazın geriye gidin veya geçerli öncelikler listesinden seçim yapın: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
-    {0} ''dir. Lütfen girdinizin aşağıdaki değişkenleri içerdiğinden emin olun: {1}.
-    Geri dönmek için 0 yazın.'
   wwcConfigGUISeparateChatChannelFormatButton: Ayrı Kanal Formatını Değiştir
   wwcConfigConversationChannelIconSuccess: Kanal simgenizi başarıyla değiştirdiniz.
   wwcConfigChatChannelFormatInvalid: 'Geçersiz kanal biçimi algılandı. Lütfen formatınızın
@@ -662,4 +659,14 @@ Messages:
     çeviriye eklenen orijinal giden sohbet başarıyla değiştirildi.
   wwcConfigGUISendOutgoingHoverTextChatButton: Orijinal Giden Mesajları Hover Metin
     Olarak Ekle
+  wwcConfigPAPIInstalled: Sohbet formatınız için PlaceHolderAPI desteği etkinleştirildi.
+  wwcConfigPAPINotInstalled: Sohbet formatınızda özel yer tutucular tespit edildi,
+    ancak PlaceHolderAPI yüklü değil. Lütfen eklentinin yüklendiğinden ve etkinleştirildiğinden
+    emin olun.
+  wwcConfigChatChannelIconInvalid: Geçersiz kanal simgesi algılandı. Varsayılan olarak
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
+    {0} ''dir. Lütfen girdinizin aşağıdaki değişkenleri içerdiğinden emin olun: {1}.
+    PlaceHolderAPI''niz varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin
+    olun. Geri dönmek için 0 yazın.'
 

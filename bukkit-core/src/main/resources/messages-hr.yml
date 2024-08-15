@@ -651,9 +651,6 @@ Messages:
     je {0}. Podržani su kodovi boja; upišite 0 za povratak.
   wwcConfigConversationChatPriorityInput: 'Trenutni prioritet chat događaja je {0}.
     Upišite 0 idi na natrag ili odaberite s ovog popisa važećih prioriteta: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
-    je {0}. Molimo provjerite sadrži li vaš unos sljedeće varijable: {1}. Upišite
-    0 da biste se vratili natrag.'
   wwcConfigGUISeparateChatChannelFormatButton: Promijenite format zasebnog kanala
   wwcConfigConversationChannelIconSuccess: Uspješno promijenila ikonu vašeg kanala.
   wwcConfigChatChannelFormatInvalid: 'Otkriven je nevažeći format kanala. Molimo provjerite
@@ -666,4 +663,13 @@ Messages:
     prijevodu kao tekst pokazivača pokazivača uspješno je prebačen.
   wwcConfigGUISendOutgoingHoverTextChatButton: Dodajte izvorne odlazne poruke kao
     tekst pokazivača
+  wwcConfigPAPIInstalled: Podrška za PlaceholderAPI omogućena je za vaš format chata.
+  wwcConfigPAPINotInstalled: Prilagođeni rezervirani rezervirani su u vašem formatu
+    chata, ali PlaceholderAPI nije instaliran. Provjerite je li dodatak učitan i omogućen.
+  wwcConfigChatChannelIconInvalid: Otkrivena je neispravna ikona kanala. Zadana postavka
+    na {0}...
+  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
+    je {0}. Molimo provjerite sadrži li vaš unos sljedeće varijable: {1}. Ako imate
+    PlaceholderAPI, provjerite jesu li te varijable okružene postocima (%) umjesto
+    toga. Upišite 0 da biste se vratili natrag.'
 

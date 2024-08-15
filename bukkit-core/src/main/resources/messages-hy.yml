@@ -676,9 +676,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Ընթացիկ զրույցի իրադարձության առաջնահերթությունը
     {0} է: Մուտքագրեք 0 գնալ դեպի ետ կամ ընտրել վավեր առաջնահերթությունների այս ցանկից
     `{1}.'
-  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
-    {0} է: Խնդրում ենք համոզվել, որ ձեր մուտքագրումը ներառում է հետեւյալ փոփոխականները.
-    {1}. Մուտքագրեք 0-ը հետ գնալու համար:'
   wwcConfigGUISeparateChatChannelFormatButton: Փոխեք առանձին ալիքի ձևաչափը
   wwcConfigConversationChannelIconSuccess: 'Հաջողությամբ փոխեց ձեր ալիքի պատկերակը:'
   wwcConfigChatChannelFormatInvalid: 'Հայտնաբերվել է անվավեր ալիքի ձևաչափ Խնդրում
@@ -691,4 +688,15 @@ Messages:
     կցված թարգմանության որպես սավառնել տեքստի togged հաջողությամբ.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ավելացնել բնօրինակ ելքային հաղորդագրությունները
     որպես սավառնել տեքստ
+  wwcConfigPAPIInstalled: 'PlaceholderAPI- ի աջակցությունը միացված է ձեր զրույցի ձևաչափի
+    համար:'
+  wwcConfigPAPINotInstalled: 'Ձեր զրույցի ձևաչափում հայտնաբերվել են մաքսային placeholders,
+    բայց PlaceholderAPI- ը տեղադրված չէ: Խնդրում ենք համոզվել, որ պլագինը բեռնված
+    է և միացված է:'
+  wwcConfigChatChannelIconInvalid: 'Հայտնաբերվեց անվավեր ալիքի պատկերակը: Կանխարգելում
+    է {0}...'
+  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
+    {0} է: Խնդրում ենք համոզվել, որ ձեր մուտքագրումը ներառում է հետեւյալ փոփոխականները.
+    {1}. Եթե ունեք PlaceholderAPI, համոզվեք, որ այդ փոփոխականները շրջապատված են տոկոսներով
+    (%) փոխարենը. Մուտքագրեք 0-ը հետ գնալու համար:'
 

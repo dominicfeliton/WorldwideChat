@@ -629,9 +629,6 @@ Messages:
     a se {0}. Kòd koulè yo sipòte; kalite 0 pou tounen.
   wwcConfigConversationChatPriorityInput: 'Priyorite evènman chat aktyèl la se {0}.
     Kalite 0 ale nan tounen oswa chwazi nan lis sa a nan priyorite ki valab: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
-    se {0}. Tanpri asire w ke opinyon ou gen ladan varyab sa yo: {1}. Kalite 0 pou
-    tounen.'
   wwcConfigGUISeparateChatChannelFormatButton: Chanje fòma chanèl separe
   wwcConfigConversationChannelIconSuccess: Aksè chanje icon kanal ou.
   wwcConfigChatChannelFormatInvalid: 'Fòma chanèl envalid detekte. Tanpri asire w
@@ -644,4 +641,11 @@ Messages:
     ak tradiksyon kòm hover tèks togged avèk siksè.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ajoute Mesaj Sortan orijinal kòm Tèks
     Hover
+  wwcConfigPAPIInstalled: Sipò PlaceholderAPI te pèmèt pou fòma chat ou.
+  wwcConfigPAPINotInstalled: Custom placeholders yo te detekte nan fòma chat ou, men
+    PlaceholderAPI pa enstale. Tanpri asire ke Plugin la te chaje epi li se pèmèt.
+  wwcConfigChatChannelIconInvalid: Icon chanèl envalid detekte. Defaulting nan {0}...
+  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
+    se {0}. Tanpri asire w ke opinyon ou gen ladan varyab sa yo: {1}. Si ou gen PlaceholderAPI,
+    asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
 

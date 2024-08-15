@@ -659,9 +659,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Núverandi forgangur spjallviðburðar er
     {0}. Sláðu inn 0 farðu til baka eða veldu úr þessum lista yfir gilda forgangsröðun:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
-    er {0}. Vinsamlegast vertu viss um að inntak þitt innihaldi eftirfarandi breytur:
-    {1}. Sláðu inn 0 til að fara aftur.'
   wwcConfigGUISeparateChatChannelFormatButton: Breyta aðskildu rássniði
   wwcConfigConversationChannelIconSuccess: Breytti rásartáknið þitt með góðum árangri.
   wwcConfigChatChannelFormatInvalid: 'Ógilt rássnið greindist. Vinsamlegast vertu
@@ -675,4 +672,14 @@ Messages:
     fylgir þýðingu sem sveima texta kveikt með góðum árangri.
   wwcConfigGUISendOutgoingHoverTextChatButton: Bæta við upprunalegum sendingarskilaboðum
     sem sveimtexta
+  wwcConfigPAPIInstalled: PlaceholderAPI stuðningur hefur verið virkur fyrir spjallsniðið
+    þitt.
+  wwcConfigPAPINotInstalled: Sérsniðnar staðfestingar hafa greinst á spjallsniðinu
+    þínu, en PlaceholderAPI er ekki uppsett. Vinsamlegast vertu viss um að viðbótin
+    hafi hlaðið sig og sé virkt.
+  wwcConfigChatChannelIconInvalid: Ógilt rásartákn greindist. Sjálfgefið að {0}...
+  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
+    er {0}. Vinsamlegast vertu viss um að inntak þitt innihaldi eftirfarandi breytur:
+    {1}. Ef þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu
+    umkringdar prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
 

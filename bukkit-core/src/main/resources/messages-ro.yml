@@ -688,9 +688,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Prioritatea curentă a evenimentului de
     chat este {0}. Tastați 0 mergeți înapoi sau alegeți din această listă de priorități
     valide: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
-    de chat este {0}. Vă rugăm să vă asigurați că intrarea dvs. include următoarele
-    variabile: {1}. Tastați 0 pentru a reveni.'
   wwcConfigGUISeparateChatChannelFormatButton: Schimbați formatul canalului separat
   wwcConfigConversationChannelIconSuccess: A schimbat cu succes pictograma canalului.
   wwcConfigChatChannelFormatInvalid: 'Formatul canalului nevalid detectat. Vă rugăm
@@ -703,4 +700,15 @@ Messages:
     atașat la traducere ca text de trecere a mouse-ului a fost comutat cu succes.
   wwcConfigGUISendOutgoingHoverTextChatButton: Adăugați mesaje originale de ieșire
     ca text hover
+  wwcConfigPAPIInstalled: Suportul PlaceHolderAPI a fost activat pentru formatul dvs.
+    de chat.
+  wwcConfigPAPINotInstalled: Substanțele de substituție personalizate au fost detectate
+    în formatul dvs. de chat, dar PlaceHolderAPI nu este instalat. Vă rugăm să vă
+    asigurați că pluginul s-a încărcat și este activat.
+  wwcConfigChatChannelIconInvalid: Pictograma canalului nevalidă detectată. Implicit
+    la {0}...
+  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
+    de chat este {0}. Vă rugăm să vă asigurați că intrarea dvs. include următoarele
+    variabile: {1}. Dacă aveți PlaceHolderAPI, asigurați-vă că acele variabile sunt
+    înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
 

@@ -666,9 +666,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Az aktuális csevegési esemény prioritása
     {0}. Írja be a 0 gombot vissza, vagy válasszon az érvényes prioritások listájából:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
-    {0}. Kérjük, győződjön meg arról, hogy a bemenet tartalmazza a következő változókat:
-    {1}. Írja be a 0-at, hogy visszatérjen.'
   wwcConfigGUISeparateChatChannelFormatButton: Külön csatornaformátum módosítása
   wwcConfigConversationChannelIconSuccess: Sikeresen megváltoztatta a csatorna ikonját.
   wwcConfigChatChannelFormatInvalid: 'Érvénytelen csatornaformátum észlelhető. Kérjük,
@@ -681,4 +678,14 @@ Messages:
     a fordításhoz egérszövegként csatolt sikeresen bekapcsolta.
   wwcConfigGUISendOutgoingHoverTextChatButton: Eredeti kimenő üzenetek hozzáadása
     egérszövegként
+  wwcConfigPAPIInstalled: A csevegési formátumhoz engedélyezték a PlaceholderAPI támogatást.
+  wwcConfigPAPINotInstalled: Egyéni helyőrzőket észleltek a csevegési formátumban,
+    de a PlaceholderAPI nincs telepítve. Kérjük, győződjön meg arról, hogy a plugin
+    betöltődött és engedélyezve van-e.
+  wwcConfigChatChannelIconInvalid: Érvénytelen csatornaikon észlelhető. Alapértelmezés
+    szerint {0}...
+  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
+    {0}. Kérjük, győződjön meg arról, hogy a bemenet tartalmazza a következő változókat:
+    {1}. Ha van PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok
+    (%) veszik körül. Írja be a 0-at, hogy visszatérjen.'
 

@@ -699,9 +699,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'La prioritat de l''esdeveniment de xat
     actual és {0}. Escriviu 0 aneu a enrere o trieu entre aquesta llista de prioritats
     vàlides: {1}.'
-  wwcConfigConversationChannelFormatInput: 'El format actual del canal de xat separat
-    és {0}. Assegureu-vos que la vostra entrada inclogui les següents variables: {1}.
-    Escriu 0 per tornar enrere.'
   wwcConfigGUISeparateChatChannelFormatButton: Canviar el format de canal separat
   wwcConfigConversationChannelIconSuccess: S'ha canviat amb èxit la icona del canal.
   wwcConfigChatChannelFormatInvalid: 'S''ha detectat el format de canal no vàlid.
@@ -714,4 +711,15 @@ Messages:
     adjunt a la traducció com a text de la passejadora s'ha alternat correctament.
   wwcConfigGUISendOutgoingHoverTextChatButton: Afegeix missatges sortints originals
     com a text hover
+  wwcConfigPAPIInstalled: S'ha habilitat el suport de PlaceholderAPI per al format
+    de xat.
+  wwcConfigPAPINotInstalled: S'han detectat marcadors de posició personalitzats en
+    el format de xat, però PlaceholderAPI no està instal·lat. Si us plau, assegureu-vos
+    que el connector s'ha carregat i està activat.
+  wwcConfigChatChannelIconInvalid: S'ha detectat la icona de canal no vàlida. Per
+    defecte a {0}...
+  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
+    és {0}. Si us plau, assegureu-vos que la vostra entrada inclogui les següents
+    variables: {1}. Si teniu PlaceholderAPI, assegureu-vos que aquestes variables
+    estiguin envoltades per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
 

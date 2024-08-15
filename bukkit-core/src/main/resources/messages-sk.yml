@@ -656,9 +656,6 @@ Messages:
     kanála je {0}. Farebné kódy sú podporované; zadajte 0, aby ste sa vrátili späť.
   wwcConfigConversationChatPriorityInput: 'Aktuálna priorita udalosti chatu je {0}.
     Zadajte 0 prejsť na späť alebo vyberte z tohto zoznamu platných priorít: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Aktuálny formát samostatného chatového
-    kanála je {0}. Uistite sa, že váš vstup obsahuje nasledujúce premenné: {1}. Zadajte
-    0, aby ste sa vrátili späť.'
   wwcConfigGUISeparateChatChannelFormatButton: Zmeniť samostatný formát kanála
   wwcConfigConversationChannelIconSuccess: Úspešne zmenila ikonu kanála.
   wwcConfigChatChannelFormatInvalid: 'Zistený neplatný formát kanála. Uistite sa,
@@ -671,4 +668,14 @@ Messages:
     pripojený k prekladu ako text na kurzor myši bol úspešne prepnutý.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pridanie pôvodných odchádzajúcich správ
     ako prevedeného textu
+  wwcConfigPAPIInstalled: Pre váš formát chatu bola povolená podpora PlaceholderAPI.
+  wwcConfigPAPINotInstalled: Vo formáte rozhovoru boli zistené vlastné zástupné symboly,
+    ale PlaceholderAPI nie je nainštalovaný. Uistite sa, že doplnok bol načítaný a
+    je povolený.
+  wwcConfigChatChannelIconInvalid: Zistila sa neplatná ikona kanála. Predvolené nastavenie
+    na {0}...
+  wwcConfigConversationChannelFormatInput: 'Aktuálny formát samostatného chatového
+    kanála je {0}. Uistite sa, že váš vstup obsahuje nasledujúce premenné: {1}. Ak
+    máte PlaceholderAPI, uistite sa, že tieto premenné sú namiesto toho obklopené
+    percentami (%). Zadajte 0, aby ste sa vrátili späť.'
 

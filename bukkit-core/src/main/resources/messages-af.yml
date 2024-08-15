@@ -654,9 +654,6 @@ Messages:
     is {0}. Kleurkodes word ondersteun; tik 0 om terug te gaan.
   wwcConfigConversationChatPriorityInput: 'Die huidige klessgeleenthede prioriteit
     is {0}. Tik 0 gaan na terug of kies uit hierdie lys van geldige prioriteite: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
-    is {0}. Maak asseblief seker dat u invoer die volgende veranderlikes bevat: {1}.
-    Tik 0 om terug te gaan.'
   wwcConfigGUISeparateChatChannelFormatButton: Verander aparte kanaalformaat
   wwcConfigConversationChannelIconSuccess: U kanaalikoon suksesvol verander.
   wwcConfigChatChannelFormatInvalid: 'Ongeldige kanaalformaat opgespoor. Maak asseblief
@@ -669,4 +666,13 @@ Messages:
     geheg aan die vertaling as hoverteks suksesvol ingeskakel is.
   wwcConfigGUISendOutgoingHoverTextChatButton: Voeg oorspronklike uitgaande boodskappe
     by as hoverteks
+  wwcConfigPAPIInstalled: PlaceholderAPI-ondersteuning is geaktiveer vir u chat formaat.
+  wwcConfigPAPINotInstalled: Pasgemaakte plekhouers is in jou klessformaat opgespoor,
+    maar PlaceholderAPI is nie geïnstalleer nie. Maak asseblief seker dat die plugin
+    gelaai is en geaktiveer is.
+  wwcConfigChatChannelIconInvalid: Ongeldige kanaalikoon opgespoor. Standaard op {0}...
+  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
+    is {0}. Maak asseblief seker dat u invoer die volgende veranderlikes bevat: {1}.
+    As u PlaceholderAPI het, maak seker dat die veranderlikes eerder omring word deur
+    persentasies (%). Tik 0 om terug te gaan.'
 

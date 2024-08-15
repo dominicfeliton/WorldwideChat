@@ -629,9 +629,6 @@ Messages:
     {0} आहे. रंग कोड समर्थित आहेत; परत जाण्यासाठी 0 टाइप करा.
   wwcConfigConversationChatPriorityInput: 'सध्याची चॅट इव्हेंट प्राधान्य {0} 0 टाइप
     करा परत जा किंवा वैध प्राधान्यांच्या या यादीमधून निवडा: {1}.'
-  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
-    आहे. कृपया आपल्या इनपुटमध्ये खालील व्हेरिएबल्स समाविष्ट आहेत {1} परत जाण्यासाठी
-    0 टाइप करा.
   wwcConfigGUISeparateChatChannelFormatButton: स्वतंत्र चॅनेल स्वर
   wwcConfigConversationChannelIconSuccess: आपले चॅनेल चिन्ह यशस्वीरि
   wwcConfigChatChannelFormatInvalid: अवैध चॅनेल फॉरमॅ कृपया आपल्या स्वरूपात खालील
@@ -643,4 +640,11 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: हॉवर मजकूर म्हणून अनुवादाशी
     जोडलेले मूळ आउटगोग
   wwcConfigGUISendOutgoingHoverTextChatButton: होव्हर मजकूर म्हणून मूळ आउटगोग
+  wwcConfigPAPIInstalled: तुमच्या चॅट स्वरूपासाठी प्लेसहोल्डरएपीआय समर्थन
+  wwcConfigPAPINotInstalled: आपल्या चॅट स्वरूपात सानुकूल प्लेसहोल्डर आढळले आहेत, परंतु
+    प्लेसहोल्डरएपी कृपया प्लगइन लोड झाला आणि सक्षम आहे याची खात्री करा
+  wwcConfigChatChannelIconInvalid: अवैध चॅनेल आयकॉन {0} वर डीफॉल्ट करणे...
+  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
+    आहे. कृपया आपल्या इनपुटमध्ये खालील व्हेरिएबल्स समाविष्ट आहेत {1} आपल्याकडे प्लेसहोल्डरएपीआय
+    असल्यास, त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
 

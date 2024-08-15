@@ -36,7 +36,7 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
         refs.debugMsg(chat.getPlayerPrefix(eventPlayer));
         refs.debugMsg(chat.getPlayerSuffix(eventPlayer));
 
-        return main.getTranslateLayout(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer))
+        return main.getTranslateLayout(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer)
                 .append(Component.space())
                 .append(message);
     }

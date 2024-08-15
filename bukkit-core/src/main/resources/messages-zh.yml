@@ -488,8 +488,6 @@ Messages:
   wwcConfigConversationChatFormatBadInput: 看来你至少缺少了上述变量中的一个 ({0})。请重试，或键入 0 返回。
   wwcConfigConversationChannelIconInput: 单独翻译频道的当前图标是 {0}。支持颜色代码；键入 0 返回。
   wwcConfigConversationChatPriorityInput: 当前聊天事件的优先级为 {0}。键入 0 返回或从以下有效优先级列表中选择：{1}.
-  wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。请确保您的输入包含以下变量：{1}.键入 0
-    返回。
   wwcConfigGUISeparateChatChannelFormatButton: 更改单独的频道格式
   wwcConfigConversationChannelIconSuccess: 成功更改了您的频道图标。
   wwcConfigChatChannelFormatInvalid: 检测到无效的频道格式。请确保您的格式包含以下变量：{0}.
@@ -499,4 +497,9 @@ Messages:
   wwcOrigHover: 原始消息：{0}
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: 成功切换悬停文本后，原始外发聊天附加到翻译中。
   wwcConfigGUISendOutgoingHoverTextChatButton: 将原始外发邮件添加为悬停文本
+  wwcConfigPAPIInstalled: 您的聊天格式已启用占位符 API 支持。
+  wwcConfigPAPINotInstalled: 已在您的聊天格式中检测到自定义占位符，但未安装占位符 API。请确保插件已加载并已启用。
+  wwcConfigChatChannelIconInvalid: 检测到无效的频道图标。默认为 {0}...
+  wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。请确保您的输入包含以下变量：{1}.如果你有占位符
+    API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
 

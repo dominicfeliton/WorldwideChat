@@ -713,9 +713,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'La priorité actuelle des événements de
     chat est {0}. Tapez 0 pour revenir en arrière ou choisissez parmi cette liste
     de priorités valides: {1}.'
-  wwcConfigConversationChannelFormatInput: 'Le format actuel du canal de discussion
-    distinct est {0}. Assurez-vous que votre saisie inclut les variables suivantes:
-    {1}. Tapez 0 pour revenir en arrière.'
   wwcConfigGUISeparateChatChannelFormatButton: Modifier le format de chaîne distinct
   wwcConfigConversationChannelIconSuccess: L'icône de votre chaîne a été modifiée
     avec succès.
@@ -729,3 +726,14 @@ Messages:
     joint à la traduction sous forme de texte survolé a été activé avec succès.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ajouter les messages sortants d'origine
     sous forme de texte survolé
+  wwcConfigPAPIInstalled: La prise en charge de PlaceholderAPI a été activée pour
+    votre format de chat.
+  wwcConfigPAPINotInstalled: Des espaces réservés personnalisés ont été détectés dans
+    votre format de discussion, mais PlaceholderAPI n'est pas installé. Assurez-vous
+    que le plugin est chargé et qu'il est activé.
+  wwcConfigChatChannelIconInvalid: Icône de chaîne non valide détectée. Par défaut,
+    c'est {0}...
+  wwcConfigConversationChannelFormatInput: 'Le format actuel du canal de discussion
+    distinct est {0}. Assurez-vous que votre saisie inclut les variables suivantes:
+    {1}. Si vous avez PlaceholderAPI, assurez-vous que ces variables sont plutôt entourées
+    de pourcentages (%). Tapez 0 pour revenir en arrière.'

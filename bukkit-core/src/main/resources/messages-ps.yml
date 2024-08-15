@@ -642,9 +642,6 @@ Messages:
     د رنګ کوډونه ملاتړ کیږي؛ بیرته لاړ شي 0 ډول.
   wwcConfigConversationChatPriorityInput: 'د اوسنۍ چیټ پیښې لومړیتوب {0} دی. ډول 0
     بیرته لاړ شئ یا د اعتبار لومړیتوبونو له دې لیست څخه غوره کړئ: {1}.'
-  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. مهرباني
-    وکړئ ډاډ ترلاسه کړئ چې ستاسو ننوت کې لاندې متغی {1} بیرته لاړولو لپاره 0 ټایپ
-    کړئ.
   wwcConfigGUISeparateChatChannelFormatButton: جلا چینل بڼه بدل کړئ
   wwcConfigConversationChannelIconSuccess: په بریالیتوب سره ستاسو د چینل آیکو
   wwcConfigChatChannelFormatInvalid: غلط چینل بڼه کشف شوي. مهرباني وکړئ ډاډ ترلاسه
@@ -656,4 +653,12 @@ Messages:
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: اصلي راتلونکي چیټ ژباړې سره
     منسلک شوی لکه چې د هور متن په بریالیتوب
   wwcConfigGUISendOutgoingHoverTextChatButton: د هور متن په توګه اصلي لرونکي پیغامونه
+  wwcConfigPAPIInstalled: د PlaceholderAPI ملاتړ ستاسو د چیٹ بڼه لپاره فعال شوی دی.
+  wwcConfigPAPINotInstalled: دودیز ځای خونکي ستاسو د چیٹ بڼه کې موندل شوي دي، مګر
+    PlaceholderAPI نصب نه دی. مهرباني وکړئ ډاډ ترلاسه کړئ چې فلګ لوډ شوی او فعال دی
+  wwcConfigChatChannelIconInvalid: غلط چینل آیکون وموندل {0} ته ډیفولټ کول...
+  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. مهرباني
+    وکړئ ډاډ ترلاسه کړئ چې ستاسو ننوت کې لاندې متغی {1} که تاسو PlaceholderAPI لرئ،
+    ډاډ ترلاسه کړئ چې هغه متغیرونه په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو
+    لپاره 0 ټایپ کړئ.
 

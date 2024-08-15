@@ -33,7 +33,7 @@ import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import net.milkbowl.vault.chat.Chat;
-import org.w3c.dom.Text;
+import me.clip.placeholderapi.PlaceholderAPI;
 
 import java.io.File;
 import java.util.*;
@@ -45,7 +45,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08142024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08152024-4"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -918,24 +918,36 @@ public class WorldwideChat extends JavaPlugin {
 		return translateIcon == null ? Component.empty() : translateIcon;
 	}
 
-	public TextComponent getTranslateLayout(String prefix, String username, String suffix) {
+	public TextComponent getTranslateLayout(String prefix, String username, String suffix, Player player) {
 		TextComponent out = Component.empty()
 				.append(translateIcon);
 
+		String parsedLayout = translateLayout;
+		int count = parsedLayout.length() - parsedLayout.replace("%", "").length();
+		if (count > 1 && getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+			if (player != null) {
+				refs.debugMsg("Papi for player!");
+				parsedLayout = PlaceholderAPI.setPlaceholders(player, translateLayout);
+			} else {
+				refs.debugMsg("Removing papi placeholders for console.");
+				parsedLayout = translateLayout.replaceAll("%[^%]+%", "");
+			}
+		}
+
 		int i = 0;
-		while (i < translateLayout.length()) {
-			if (translateLayout.startsWith("{prefix}", i)) {
+		while (i < parsedLayout.length()) {
+			if (parsedLayout.startsWith("{prefix}", i)) {
 				out = out.append(refs.deserial(prefix));
 				i += "{prefix}".length();
-			} else if (translateLayout.startsWith("{username}", i)) {
+			} else if (parsedLayout.startsWith("{username}", i)) {
 				out = out.append(refs.deserial(username));
 				i += "{username}".length();
-			} else if (translateLayout.startsWith("{suffix}", i)) {
+			} else if (parsedLayout.startsWith("{suffix}", i)) {
 				out = out.append(refs.deserial(suffix));
 				i += "{suffix}".length();
 			} else {
 				// Append any other character directly
-				out = out.append(Component.text(String.valueOf(translateLayout.charAt(i))));
+				out = out.append(Component.text(String.valueOf(parsedLayout.charAt(i))));
 				i++;
 			}
 		}

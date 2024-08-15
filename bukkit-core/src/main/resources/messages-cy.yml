@@ -657,9 +657,6 @@ Messages:
   wwcConfigConversationChatPriorityInput: 'Blaenoriaeth y digwyddiad sgwrsio cyfredol
     yw {0}. Teipiwch 0 ewch i ôl neu dewiswch o''r rhestr hon o flaenoriaethau dilys:
     {1}.'
-  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
-    sgwrsio ar wahân yw {0}. Gwnewch yn siŵr bod eich mewnbwn yn cynnwys y newidynnau
-    canlynol: {1}. Teipiwch 0 i fynd yn ôl.'
   wwcConfigGUISeparateChatChannelFormatButton: Newid Fformat Sianel ar Wahân
   wwcConfigConversationChannelIconSuccess: Newidiodd eicon eich sianel yn llwyddiannus.
   wwcConfigChatChannelFormatInvalid: 'Canfuwyd fformat sianel annilys. Gwnewch yn
@@ -672,4 +669,15 @@ Messages:
     ynghlwm wrth gyfieithu wrth i destun hofran toglwyd yn llwyddiannus.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ychwanegu Negeseuon Allanol Gwreiddiol
     fel Testun Hofran
+  wwcConfigPAPIInstalled: Mae cefnogaeth PlaceholderAPI wedi'i alluogi ar gyfer eich
+    fformat sgwrsio.
+  wwcConfigPAPINotInstalled: Mae deiliaid lleoedd personol wedi'u canfod yn eich fformat
+    sgwrsio, ond nid yw PlaceholderAPI wedi'i osod. Sicrhewch fod yr ategyn wedi llwytho
+    ac wedi'i alluogi.
+  wwcConfigChatChannelIconInvalid: Canfuwyd eicon sianel annilys. Rhagosodiad i {0}...
+  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
+    sgwrsio ar wahân yw {0}. Gwnewch yn siŵr bod eich mewnbwn yn cynnwys y newidynnau
+    canlynol: {1}. Os oes gennych PlaceholderAPI, gwnewch yn siŵr bod y newidynnau
+    hynny wedi''u hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn
+    ôl.'
 
