@@ -77,6 +77,7 @@ public class BlacklistGui implements InventoryProvider {
 			pagination.setItemsPerPage(28);
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 
+			/* Save Button */
 			invManager.setCommonButton(5, 0, player, contents,"Quit");
 
 			/* Bottom Left Option: Previous Page */

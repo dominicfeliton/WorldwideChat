@@ -176,6 +176,8 @@ public class ChatSettingsConvos {
 		private String currentOverrideName;
 
 		private String inLang;
+
+		private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 		
 		public ModifyOverrideText(SmartInventory previousInventory, String currentOverrideName, String inLang) {
 			this.previousInventory = previousInventory;
@@ -196,21 +198,34 @@ public class ChatSettingsConvos {
 		public Prompt acceptInput(ConversationContext context, String input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-			if (!input.equals("0")) {
-				Player currPlayer = ((Player) context.getForWhom());
-				YamlConfiguration msgConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
+			BukkitRunnable open = new BukkitRunnable() {
+				@Override
+				public void run() {
+					previousInventory.open((Player)context.getForWhom());
+				}
+			};
 
-				msgConfig.set("Overrides." + currentOverrideName, input);
-				main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
-				final TextComponent successfulChange = Component.text()
+			BukkitRunnable async = new BukkitRunnable() {
+				@Override
+				public void run() {
+					if (!input.equals("0")) {
+						Player currPlayer = ((Player) context.getForWhom());
+						YamlConfiguration msgConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
+
+						msgConfig.set("Overrides." + currentOverrideName, input);
+						main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
+						final TextComponent successfulChange = Component.text()
 								.content(refs.getMsg("wwcConfigConversationOverrideTextChangeSuccess", currPlayer))
 								.color(NamedTextColor.GREEN)
-						.build();
-				refs.sendMsg((Player)context.getForWhom(), successfulChange);
+								.build();
+						refs.sendMsg((Player)context.getForWhom(), successfulChange);
 
-				main.getConfigManager().saveMessagesConfig(inLang, true);
-			}
-			previousInventory.open((Player)context.getForWhom());
+						main.getConfigManager().saveMessagesConfig(inLang, true);
+					}
+					wwcHelper.runSync(open, ENTITY, new Object[] {(Player) context.getForWhom()});
+				}
+			};
+			wwcHelper.runAsync(async, ASYNC, null);
 			return END_OF_CONVERSATION;
 		}
 	}
