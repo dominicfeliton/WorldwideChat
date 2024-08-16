@@ -634,9 +634,6 @@ Messages:
     svih prevoda.
   wwcConfigConversationSeparateChatChannelForceSuccess: Uspešno je prebacio forsiranje
     odvojenog kanala.
-  wwcConfigConversationChatFormatBadInput: Izgleda da vam nedostaje bar jedna od gore
-    pomenutih promenljivih ({0}). Pokušajte ponovo ili otkucajte 0 da biste se vratili
-    nazad.
   wwcConfigConversationChannelIconInput: Trenutna ikona za odvojeni kanal za prevođenje
     je {0}. Podržani su kodovi boja; otkucajte 0 da biste se vratili nazad.
   wwcConfigConversationChatPriorityInput: 'Trenutni prioritet događaja za ćaskanje
@@ -644,8 +641,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Promenite format odvojenog kanala
   wwcConfigConversationChannelIconSuccess: Uspešno promenio ikonu kanala.
-  wwcConfigChatChannelFormatInvalid: 'Otkriven je nevažeći format kanala. Uverite
-    se da vaš format sadrži sledeće promenljive: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Promenite ikonu odvojenog kanala
   wwcConfigConversationChatFormatSuccess: Vaš format je uspešno promenjen.
   wwcConfigGUISeparateChatChannelForceButton: Prisilite odvojeni kanal
@@ -660,10 +655,6 @@ Messages:
     i omogućen.
   wwcConfigChatChannelIconInvalid: Otkrivena je nevažeća ikona kanala. Podrazumevano
     podešavanje na {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za ćaskanje
-    je {0}. Uverite se da vaš unos sadrži sledeće promenljive: {1}. Ako imate PlaceholderAPI,
-    uverite se da su te promenljive okružene procentima (%) umesto toga. Otkucajte
-    0 da biste se vratili nazad.'
   wwcBlacklistBadFormat: Vaša crna lista nije pravilno formatirana kao lista. Neće
     se primenjivati dok se to ne popravi.
   wwcBlacklistedMsg: Vaša poruka sadrži zabranjeni jezik i nije prevedena.
@@ -682,4 +673,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novu reč
   wwcConfigGUIChatChannelButton: Prevedi podešavanja kanala
   wwcConfigGUIBlacklistMessagesModify: Izmena termina ({0})
+  wwcConfigChatChannelFormatInvalid: Otkriven je nevažeći format kanala. Podrazumevano
+    na {0}...
+  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za ćaskanje
+    je {0}. Naši podrazumevani prepoznati argumenti koje možete uključiti: {1}. Ako
+    imate PlaceholderAPI, uverite se da su te promenljive okružene procentima (%)
+    umesto toga. Otkucajte 0 da biste se vratili nazad.'
 

@@ -648,9 +648,6 @@ Messages:
     చేయబడుతుంది.
   wwcConfigConversationSeparateChatChannelForceSuccess: ప్రత్యేక ఛానెల్ను బలవంతంగా
     విజయవంతంగా టోగుల్ చేశారు.
-  wwcConfigConversationChatFormatBadInput: పైన పేర్కొన్న వేరియబుల్స్లో కనీసం ఒకదాన్ని
-    మీరు తప్పిపోయినట్లు కనిపిస్తోంది ({0}). దయచేసి మళ్ళీ ప్రయత్నించండి లేదా తిరిగి
-    వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigConversationChannelIconInput: ప్రత్యేక అనువాద ఛానెల్ కోసం ప్రస్తుత చిహ్నం
     {0}. రంగు సంకేతాలు మద్దతు ఇస్తాయి; తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigConversationChatPriorityInput: 'ప్రస్తుత చాట్ ఈవెంట్ ప్రాధాన్యత {0}. టైప్
@@ -658,8 +655,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: ప్రత్యేక ఛానల్ ఆకృతిని మార్చండి
   wwcConfigConversationChannelIconSuccess: మీ ఛానల్ చిహ్నాన్ని విజయవంతంగా మార్చబడింది.
-  wwcConfigChatChannelFormatInvalid: 'చెల్లని ఛానల్ ఫార్మాట్ కనుగొనబడింది. దయచేసి
-    మీ ఫార్మాట్లో ఈ క్రింది వేరియబుల్స్ ఉన్నాయని నిర్ధారించుకోండి: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: ప్రత్యేక ఛానల్ చిహ్నాన్ని మార్చండి
   wwcConfigConversationChatFormatSuccess: మీ ఫార్మాట్ విజయవంతంగా మార్చబడింది.
   wwcConfigGUISeparateChatChannelForceButton: ప్రత్యేక ఛానెల్ను ఫోర్స్ చేయండి
@@ -674,10 +669,6 @@ Messages:
     నిర్ధారించుకోండి.
   wwcConfigChatChannelIconInvalid: చెల్లని ఛానల్ చిహ్నం కనుగొనబడింది. {0} కు డిఫాల్ట్
     అవుతోంది...
-  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
-    {0}. దయచేసి మీ ఇన్పుట్లో ఈ క్రింది వేరియబుల్స్ ఉన్నాయని నిర్ధారించుకోండి: {1}.
-    మీరు PlaceholderAPI కలిగి ఉంటే, ఆ వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని
-    నిర్ధారించుకోండి. తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.'
   wwcBlacklistBadFormat: మీ బ్లాక్లిస్ట్ సరిగ్గా జాబితాగా ఫార్మాట్ చేయబడలేదు. ఇది
     పరిష్కరించబడే వరకు ఇది అమలు చేయబడదు.
   wwcBlacklistedMsg: మీ సందేశం నిషేధిత భాషను కలిగి ఉంది మరియు అనువదించబడలేదు.
@@ -697,4 +688,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: క్రొత్త పదాన్ని జోడించండి
   wwcConfigGUIChatChannelButton: ఛానల్ సెట్టింగ్లను అనువద
   wwcConfigGUIBlacklistMessagesModify: పదం సవరించండి ({0})
+  wwcConfigChatChannelFormatInvalid: చెల్లని ఛానల్ ఫార్మాట్ కనుగొనబడింది. {0} కు డిఫాల్ట్
+    అవుతోంది...
+  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
+    {0}. మీరు చేర్చగల మా డిఫాల్ట్ గుర్తించిన వాదనలు: {1}. మీరు PlaceholderAPI కలిగి
+    ఉంటే, ఆ వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి
+    వెళ్ళడానికి 0 అని టైప్ చేయండి.'
 

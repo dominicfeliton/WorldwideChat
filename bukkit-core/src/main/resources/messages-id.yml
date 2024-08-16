@@ -635,17 +635,12 @@ Messages:
     semua terjemahan.
   wwcConfigConversationSeparateChatChannelForceSuccess: Berhasil beralih memaksa saluran
     terpisah.
-  wwcConfigConversationChatFormatBadInput: Sepertinya Anda kehilangan setidaknya satu
-    dari variabel yang disebutkan di atas ({0}). Silakan coba lagi, atau ketik 0 untuk
-    kembali.
   wwcConfigConversationChannelIconInput: Ikon saat ini untuk saluran terjemahan terpisah
     adalah {0}. Kode warna didukung; ketik 0 untuk kembali.
   wwcConfigConversationChatPriorityInput: 'Prioritas acara obrolan saat ini adalah
     {0}. Ketik 0 kembali atau pilih dari daftar prioritas yang valid ini: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Ubah Format Saluran Terpisah
   wwcConfigConversationChannelIconSuccess: Berhasil mengubah ikon saluran Anda.
-  wwcConfigChatChannelFormatInvalid: 'Format saluran tidak valid terdeteksi. Pastikan
-    format Anda menyertakan variabel berikut: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Ubah Ikon Saluran Terpisah
   wwcConfigConversationChatFormatSuccess: Format Anda telah berhasil diubah.
   wwcConfigGUISeparateChatChannelForceButton: Memaksa Saluran Terpisah
@@ -660,10 +655,6 @@ Messages:
     Anda, tetapi PlaceHolderAPI tidak diinstal. Pastikan plugin telah dimuat dan diaktifkan.
   wwcConfigChatChannelIconInvalid: Ikon saluran tidak valid terdeteksi. Default ke
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
-    terpisah adalah {0}. Pastikan input Anda menyertakan variabel berikut: {1}. Jika
-    Anda memiliki PlaceHolderAPI, pastikan variabel tersebut dikelilingi oleh persentase
-    (%) sebagai gantinya. Ketik 0 untuk kembali.'
   wwcBlacklistBadFormat: Daftar hitam Anda tidak diformat dengan benar sebagai daftar.
     Itu tidak akan diberlakukan sampai ini diperbaiki.
   wwcBlacklistedMsg: Pesan Anda berisi bahasa terlarang dan tidak diterjemahkan.
@@ -683,4 +674,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Tambahkan Kata Baru
   wwcConfigGUIChatChannelButton: Terjemahkan Pengaturan Saluran
   wwcConfigGUIBlacklistMessagesModify: Ubah Istilah ({0})
+  wwcConfigChatChannelFormatInvalid: Format saluran tidak valid terdeteksi. Default
+    ke {0}...
+  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
+    terpisah adalah {0}. Argumen yang diakui default kami yang dapat Anda sertakan:
+    {1}. Jika Anda memiliki PlaceHolderAPI, pastikan variabel tersebut dikelilingi
+    oleh persentase (%) sebagai gantinya. Ketik 0 untuk kembali.'
 

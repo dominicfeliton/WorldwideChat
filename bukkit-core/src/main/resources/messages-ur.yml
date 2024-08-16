@@ -651,17 +651,12 @@ Messages:
     مجبور کیا جائے گا۔
   wwcConfigConversationSeparateChatChannelForceSuccess: کامیابی کے ساتھ علیحدہ چینل
     پر مجبور کردیا۔
-  wwcConfigConversationChatFormatBadInput: ایسا لگتا ہے کہ آپ مذکورہ بالا متغیرات
-    میں سے کم از کم ایک غائب ہیں ({0}) ۔ براہ کرم دوبارہ کوشش کریں، یا واپس جانے کے
-    لئے 0 ٹائپ کریں۔
   wwcConfigConversationChannelIconInput: علیحدہ ترجمہ چینل کے لئے موجودہ آئیکن {0}
     ہے۔ رنگ کوڈز کی حمایت کی جاتی ہے۔ واپس جانے کے لئے 0 ٹائپ کریں۔
   wwcConfigConversationChatPriorityInput: 'موجودہ چیٹ ایونٹ کی ترجیح {0} ہے۔ ٹائپ
     کریں 0 واپس جائیں یا درست ترجیحات کی اس فہرست میں سے منتخب کریں: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: الگ چینل فارمیٹ تبدیل کریں
   wwcConfigConversationChannelIconSuccess: کامیابی کے ساتھ آپ کے چینل کا آئیکن تبدیل
-  wwcConfigChatChannelFormatInvalid: 'غلط چینل فارمیٹ کا پتہ براہ کرم یقینی بنائیں
-    کہ آپ کی شکل میں درج ذیل متغیرات شامل ہیں: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: الگ چینل آئیکن تبدیل کریں
   wwcConfigConversationChatFormatSuccess: آپ کا فارمیٹ کامیابی کے ساتھ تبدیل کیا گیا
     ہے۔
@@ -677,10 +672,6 @@ Messages:
     لیکن PlaceHolderAPI انسٹال نہیں ہے۔ براہ کرم یقینی بنائیں کہ پلگ ان لوڈ ہوا ہے
     اور فعال ہے۔
   wwcConfigChatChannelIconInvalid: غلط چینل آئیکن کا پتہ {0} پر ڈیفالٹ ہو رہا ہے...
-  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
-    ہے۔ براہ کرم یقینی بنائیں کہ آپ کے ان پٹ میں درج ذیل متغیر شامل ہیں: {1}. اگر
-    آپ کے پاس PlaceHolderAPI ہے تو، اس بات کو یقینی بنائیں کہ ان متغیرات اس کے بجائے
-    فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے 0 ٹائپ کریں۔'
   wwcBlacklistBadFormat: آپ کی بلیک لسٹ کو فہرست کے طور پر مناسب طریقے سے فارمیٹ نہیں
     کیا گیا ہے۔ جب تک یہ طے نہیں ہوجائے گا اس وقت تک اس پر عمل درآمد نہیں کیا جائے
     گا۔
@@ -701,4 +692,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: نیا لفظ شامل کریں
   wwcConfigGUIChatChannelButton: چینل ترتیبات کا ترجم
   wwcConfigGUIBlacklistMessagesModify: اصطلاح میں ترمیم کریں ({0})
+  wwcConfigChatChannelFormatInvalid: غلط چینل فارمیٹ کا پتہ {0} پر ڈیفالٹ ہو رہا ہے...
+  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
+    ہے۔ ہمارے پہلے سے طے شدہ تسلیم شدہ دلائل جن میں آپ شامل کرسکتے ہیں: {1}. اگر آپ
+    کے پاس PlaceHolderAPI ہے تو، اس بات کو یقینی بنائیں کہ ان متغیرات اس کے بجائے
+    فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے 0 ٹائپ کریں۔'
 

@@ -556,16 +556,12 @@ Messages:
   wwcWatsonDeprecation: Watson ถูกยกเลิกและไม่ได้รับการสนับสนุนจาก IBM อีกต่อไปโปรดพิจารณาสลับเนื่องจากการสนับสนุนจะถูกลบออกในการอัปเดตถัดไป
   wwcConfigForceChatChannelEnabled: ช่องการแปลแยกต่างหากจะถูกบังคับในระหว่างการแปลทั้งหมด
   wwcConfigConversationSeparateChatChannelForceSuccess: สลับบังคับช่องแยกได้สำเร็จ
-  wwcConfigConversationChatFormatBadInput: ดูเหมือนว่าคุณขาดตัวแปรอย่างน้อยหนึ่งตัวแปรดังกล่าวข้างต้น
-    ({0})โปรดลองอีกครั้งหรือพิมพ์ 0 เพื่อกลับไป
   wwcConfigConversationChannelIconInput: ไอคอนปัจจุบันสำหรับช่องการแปลแยกต่างหากคือ
     {0}รองรับรหัสสี พิมพ์ 0 เพื่อย้อนกลับ
   wwcConfigConversationChatPriorityInput: 'ลำดับความสำคัญของกิจกรรมแชทปัจจุบันคือ
     {0}พิมพ์ 0 ไปที่กลับ หรือเลือกจากรายการลำดับความสำคัญที่ถูกต้องนี้: {1}'
   wwcConfigGUISeparateChatChannelFormatButton: เปลี่ยนรูปแบบช่องแยกต่างหาก
   wwcConfigConversationChannelIconSuccess: เปลี่ยนไอคอนช่องของคุณเรียบร้อยแล้ว
-  wwcConfigChatChannelFormatInvalid: 'ตรวจพบรูปแบบช่องไม่ถูกต้องโปรดตรวจสอบให้แน่ใจว่ารูปแบบของคุณมีตัวแปรต่อไปนี้:
-    {0}.'
   wwcConfigGUISeparateChatChannelIconButton: เปลี่ยนไอคอนช่องแยกต่างหาก
   wwcConfigConversationChatFormatSuccess: รูปแบบของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
   wwcConfigGUISeparateChatChannelForceButton: บังคับช่องแยกต่างหาก
@@ -576,9 +572,6 @@ Messages:
   wwcConfigPAPINotInstalled: ตรวจพบตัวยึดตำแหน่งที่กำหนดเองในรูปแบบการแชทของคุณ แต่
     PlaceholderAPI ไม่ได้ติดตั้งโปรดตรวจสอบให้แน่ใจว่าปลั๊กอินโหลดแล้วและเปิดใช้งาน
   wwcConfigChatChannelIconInvalid: ตรวจพบไอคอนช่องไม่ถูกต้องค่าเริ่มต้นเป็น {0}...
-  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
-    {0}โปรดตรวจสอบให้แน่ใจว่าอินพุตของคุณมีตัวแปรต่อไปนี้: {1}หากคุณมี PlaceholderAPI
-    ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์ (%) แทนพิมพ์ 0 เพื่อกลับไป'
   wwcBlacklistBadFormat: บัญชีดำของคุณไม่ได้จัดรูปแบบเป็นรายการอย่างถูกต้องจะไม่บังคับใช้จนกว่าจะได้รับการแก้ไข
   wwcBlacklistedMsg: ข้อความของคุณมีภาษาที่ต้องห้ามและไม่ได้รับการแปล
   wwcBlacklistedMsgDetected: 'ตรวจพบคำในรายการดำ ({0}): {1}'
@@ -595,4 +588,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: เพิ่มคำใหม่
   wwcConfigGUIChatChannelButton: แปลการตั้งค่าช่อง
   wwcConfigGUIBlacklistMessagesModify: แก้ไขคำศัพท์ ({0})
+  wwcConfigChatChannelFormatInvalid: ตรวจพบรูปแบบช่องไม่ถูกต้องค่าเริ่มต้นเป็น {0}...
+  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
+    {0}อาร์กิวเมนต์ที่ได้รับการยอมรับเริ่มต้นของเราซึ่งคุณสามารถรวมได้: {1}หากคุณมี
+    PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์ (%) แทนพิมพ์
+    0 เพื่อกลับไป'
 

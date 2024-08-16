@@ -673,9 +673,6 @@ Messages:
     majbur qilinadi.
   wwcConfigConversationSeparateChatChannelForceSuccess: Muvaffaqiyatli ravishda alohida
     kanalni majburlashni o'zgartirdi.
-  wwcConfigConversationChatFormatBadInput: Yuqorida aytib o'tilgan o'zgaruvchilardan
-    kamida bittasini etishmayotganingiz kabi ko'rinadi ({0}). Iltimos, qaytadan urinib
-    ko'ring yoki orqaga qaytish uchun 0 yozing.
   wwcConfigConversationChannelIconInput: Alohida tarjima kanalining joriy belgisi
     {0}. Rang kodlari qo'llab-quvvatlanadi; orqaga qaytish uchun 0 yozing.
   wwcConfigConversationChatPriorityInput: 'Hozirgi chat tadbirining ustuvor vazifasi
@@ -683,8 +680,6 @@ Messages:
     tanlang: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Alohida kanal formatini o'zgartiring
   wwcConfigConversationChannelIconSuccess: Kanal belgisini muvaffaqiyatli o'zgartirdi.
-  wwcConfigChatChannelFormatInvalid: 'Yaroqsiz kanal formati aniqlandi. Iltimos, formatingiz
-    quyidagi o''zgaruvchilarni o''z ichiga olganligiga ishonch hosil qiling: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Alohida kanal belgisini o'zgartiring
   wwcConfigConversationChatFormatSuccess: Sizning formatingiz muvaffaqiyatli o'zgartirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ajratish kanalini majburlang
@@ -699,11 +694,6 @@ Messages:
     ishonch hosil qiling.
   wwcConfigChatChannelIconInvalid: Yaroqsiz kanal belgisi aniqlandi. Standart {0}
     ga sozlash...
-  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
-    {0}. Iltimos, kiritishingiz quyidagi o''zgaruvchilarni o''z ichiga olganligiga
-    ishonch hosil qiling: {1}. Agar sizda PlaceholderAPI mavjud bo''lsa, o''sha o''zgaruvchilar
-    uning o''rniga foizlar (%) bilan o''ralganligiga ishonch hosil qiling. Orqaga
-    qaytish uchun 0 yozing.'
   wwcBlacklistBadFormat: Sizning qora ro'yxatingiz ro'yxat sifatida to'g'ri formatlanmagan.
     Bu aniqlanmaguncha, u amalga oshirilmaydi.
   wwcBlacklistedMsg: Sizning xabaringiz taqiqlangan tilni o'z ichiga oladi va tarjima
@@ -724,4 +714,11 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Yangi so'zni qo'shish
   wwcConfigGUIChatChannelButton: Kanal sozlamalarini tarjima qiling
   wwcConfigGUIBlacklistMessagesModify: Muddatni o'zgartirish ({0})
+  wwcConfigChatChannelFormatInvalid: Yaroqsiz kanal formati aniqlandi. Standart {0}
+    ga sozlash...
+  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
+    {0}. Siz o''z ichiga olishi mumkin bo''lgan asl qiymati tan olingan argumentlarimiz:
+    {1}. Agar sizda PlaceholderAPI mavjud bo''lsa, o''sha o''zgaruvchilar uning o''rniga
+    foizlar (%) bilan o''ralganligiga ishonch hosil qiling. Orqaga qaytish uchun 0
+    yozing.'
 

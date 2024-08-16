@@ -666,9 +666,6 @@ Messages:
     afgedwongen.
   wwcConfigConversationSeparateChatChannelForceSuccess: Met succes omgeschakeld om
     het afzonderlijke kanaal te forceren.
-  wwcConfigConversationChatFormatBadInput: Het lijkt erop dat je minstens één van
-    de bovengenoemde variabelen mist ({0}). Probeer het opnieuw of typ 0 om terug
-    te gaan.
   wwcConfigConversationChannelIconInput: Het huidige pictogram voor het afzonderlijke
     vertaalkanaal is {0}. Kleurcodes worden ondersteund; typ 0 om terug te gaan.
   wwcConfigConversationChatPriorityInput: 'De huidige prioriteit van het chatevenement
@@ -676,8 +673,6 @@ Messages:
   wwcConfigGUISeparateChatChannelFormatButton: De indeling van een afzonderlijk kanaal
     wijzigen
   wwcConfigConversationChannelIconSuccess: Je kanaalpictogram is succesvol gewijzigd.
-  wwcConfigChatChannelFormatInvalid: 'Ongeldig kanaalformaat gedetecteerd. Zorg ervoor
-    dat je formaat de volgende variabelen bevat: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Het afzonderlijke kanaalpictogram wijzigen
   wwcConfigConversationChatFormatSuccess: Je formaat is succesvol gewijzigd.
   wwcConfigGUISeparateChatChannelForceButton: Afzonderlijk kanaal afdwingen
@@ -692,10 +687,6 @@ Messages:
     de plug-in is geladen en is ingeschakeld.
   wwcConfigChatChannelIconInvalid: Ongeldig kanaalpictogram gedetecteerd. Standaard
     ingesteld op {0}...
-  wwcConfigConversationChannelFormatInput: 'De huidige indeling voor het afzonderlijke
-    chatkanaal is {0}. Zorg ervoor dat je invoer de volgende variabelen bevat: {1}.
-    Als je PlaceholderAPI hebt, zorg er dan voor dat die variabelen in plaats daarvan
-    worden omringd door percentages (%). Typ 0 om terug te gaan.'
   wwcBlacklistBadFormat: Je zwarte lijst is niet correct geformatteerd als een lijst.
     Het wordt niet gehandhaafd totdat dit is opgelost.
   wwcBlacklistedMsg: Je bericht bevat verboden taal en is niet vertaald.
@@ -715,4 +706,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Nieuw woord toevoegen
   wwcConfigGUIChatChannelButton: Kanaalinstellingen vertalen
   wwcConfigGUIBlacklistMessagesModify: Term wijzigen ({0})
+  wwcConfigChatChannelFormatInvalid: Ongeldig kanaalformaat gedetecteerd. Standaard
+    ingesteld op {0}...
+  wwcConfigConversationChannelFormatInput: 'De huidige indeling voor het afzonderlijke
+    chatkanaal is {0}. Onze standaard herkende argumenten die u kunt toevoegen: {1}.
+    Als je PlaceholderAPI hebt, zorg er dan voor dat die variabelen in plaats daarvan
+    worden omringd door percentages (%). Typ 0 om terug te gaan.'
 

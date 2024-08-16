@@ -650,8 +650,6 @@ Messages:
     yn ystod yr holl gyfieithiadau.
   wwcConfigConversationSeparateChatChannelForceSuccess: Llwyddodd i toglo gorfodi'r
     sianel ar wahân.
-  wwcConfigConversationChatFormatBadInput: Mae'n edrych fel eich bod ar goll o leiaf
-    un o'r newidynnau uchod ({0}). Rhowch gynnig eto, neu teipiwch 0 i fynd yn ôl.
   wwcConfigConversationChannelIconInput: Yr eicon cyfredol ar gyfer y sianel gyfieithu
     ar wahân yw {0}. Cefnogir codau lliw; teipiwch 0 i fynd yn ôl.
   wwcConfigConversationChatPriorityInput: 'Blaenoriaeth y digwyddiad sgwrsio cyfredol
@@ -659,8 +657,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Newid Fformat Sianel ar Wahân
   wwcConfigConversationChannelIconSuccess: Newidiodd eicon eich sianel yn llwyddiannus.
-  wwcConfigChatChannelFormatInvalid: 'Canfuwyd fformat sianel annilys. Gwnewch yn
-    siŵr bod eich fformat yn cynnwys y newidynnau canlynol: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Newid Eicon Sianel ar Wahân
   wwcConfigConversationChatFormatSuccess: Mae eich fformat wedi'i newid yn llwyddiannus.
   wwcConfigGUISeparateChatChannelForceButton: Sianel ar wahân Force
@@ -675,11 +671,6 @@ Messages:
     sgwrsio, ond nid yw PlaceholderAPI wedi'i osod. Sicrhewch fod yr ategyn wedi llwytho
     ac wedi'i alluogi.
   wwcConfigChatChannelIconInvalid: Canfuwyd eicon sianel annilys. Rhagosodiad i {0}...
-  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
-    sgwrsio ar wahân yw {0}. Gwnewch yn siŵr bod eich mewnbwn yn cynnwys y newidynnau
-    canlynol: {1}. Os oes gennych PlaceholderAPI, gwnewch yn siŵr bod y newidynnau
-    hynny wedi''u hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn
-    ôl.'
   wwcBlacklistBadFormat: Nid yw eich rhestr ddu wedi'i fformatio'n iawn fel rhestr.
     Ni fydd yn cael ei orfodi nes bod hyn yn cael ei bennu.
   wwcBlacklistedMsg: Mae eich neges yn cynnwys iaith waharddedig ac ni chafodd ei
@@ -700,4 +691,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Ychwanegu Word Newydd
   wwcConfigGUIChatChannelButton: Cyfieithu Channel Settings
   wwcConfigGUIBlacklistMessagesModify: Addasu Tymor ({0})
+  wwcConfigChatChannelFormatInvalid: Canfuwyd fformat sianel annilys. Rhagosodiad
+    i {0}...
+  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
+    sgwrsio ar wahân yw {0}. Mae ein dadleuon cydnabyddedig diofyn y gallwch eu cynnwys:
+    {1}. Os oes gennych PlaceholderAPI, gwnewch yn siŵr bod y newidynnau hynny wedi''u
+    hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn ôl.'
 

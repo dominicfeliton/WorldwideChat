@@ -644,17 +644,12 @@ Messages:
     kanal za prijevod.
   wwcConfigConversationSeparateChatChannelForceSuccess: Uspješno je prebacio prisiljavanje
     odvojenog kanala.
-  wwcConfigConversationChatFormatBadInput: Izgleda da vam nedostaje barem jedna od
-    gore spomenutih varijabli ({0}). Pokušajte ponovo ili upišite 0 da biste se vratili
-    natrag.
   wwcConfigConversationChannelIconInput: Trenutna ikona zasebnog kanala za prijevod
     je {0}. Podržani su kodovi boja; upišite 0 za povratak.
   wwcConfigConversationChatPriorityInput: 'Trenutni prioritet chat događaja je {0}.
     Upišite 0 idi na natrag ili odaberite s ovog popisa važećih prioriteta: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Promijenite format zasebnog kanala
   wwcConfigConversationChannelIconSuccess: Uspješno promijenila ikonu vašeg kanala.
-  wwcConfigChatChannelFormatInvalid: 'Otkriven je nevažeći format kanala. Molimo provjerite
-    sadrži li vaš format sljedeće varijable: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Promijenite ikonu zasebnog kanala
   wwcConfigConversationChatFormatSuccess: Vaš format je uspješno promijenjen.
   wwcConfigGUISeparateChatChannelForceButton: Prisilite odvojeni kanal
@@ -668,10 +663,6 @@ Messages:
     chata, ali PlaceholderAPI nije instaliran. Provjerite je li dodatak učitan i omogućen.
   wwcConfigChatChannelIconInvalid: Otkrivena je neispravna ikona kanala. Zadana postavka
     na {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
-    je {0}. Molimo provjerite sadrži li vaš unos sljedeće varijable: {1}. Ako imate
-    PlaceholderAPI, provjerite jesu li te varijable okružene postocima (%) umjesto
-    toga. Upišite 0 da biste se vratili natrag.'
   wwcBlacklistBadFormat: Vaša crna lista nije pravilno formatirana kao popis. Neće
     se provoditi dok se to ne popravi.
   wwcBlacklistedMsg: Vaša poruka sadrži zabranjeni jezik i nije prevedena.
@@ -690,4 +681,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novu riječ
   wwcConfigGUIChatChannelButton: Prevedi postavke kanala
   wwcConfigGUIBlacklistMessagesModify: Izmijeni pojam ({0})
+  wwcConfigChatChannelFormatInvalid: Otkriven je nevažeći format kanala. Zadana postavka
+    na {0}...
+  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
+    je {0}. Naši zadani prepoznati argumenti koje možete uključiti: {1}. Ako imate
+    PlaceholderAPI, provjerite jesu li te varijable okružene postocima (%) umjesto
+    toga. Upišite 0 da biste se vratili natrag.'
 

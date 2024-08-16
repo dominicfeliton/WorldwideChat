@@ -638,9 +638,6 @@ Messages:
     aikana.
   wwcConfigConversationSeparateChatChannelForceSuccess: Vaihdettu onnistuneesti pakottamalla
     erillinen kanava.
-  wwcConfigConversationChatFormatBadInput: Näyttää siltä, että sinulta puuttuu ainakin
-    yksi edellä mainituista muuttujista ({0}). Yritä uudelleen tai kirjoita 0 palataksesi
-    takaisin.
   wwcConfigConversationChannelIconInput: Erillisen käännöskanavan nykyinen kuvake
     on {0}. Värikoodeja tuetaan; kirjoita 0 palataksesi takaisin.
   wwcConfigConversationChatPriorityInput: 'Nykyinen chat-tapahtuman prioriteetti on
@@ -648,8 +645,6 @@ Messages:
     luettelosta: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Vaihda erillinen kanavamuoto
   wwcConfigConversationChannelIconSuccess: Kanavakuvake on muutettu onnistuneesti.
-  wwcConfigChatChannelFormatInvalid: 'Havaittu virheellinen kanavamuoto. Varmista,
-    että muotosi sisältää seuraavat muuttujat: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Vaihda erillinen kanavakuvake
   wwcConfigConversationChatFormatSuccess: Muotoasi on muutettu onnistuneesti.
   wwcConfigGUISeparateChatChannelForceButton: Pakota erillinen kanava
@@ -664,10 +659,6 @@ Messages:
     on käytössä.
   wwcConfigChatChannelIconInvalid: Virheellinen kanavakuvake havaittu. Oletuksena
     on {0}...
-  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
-    on {0}. Varmista, että syötteesi sisältää seuraavat muuttujat: {1}. Jos käytössäsi
-    on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet (%) sen
-    sijaan. Kirjoita 0 palataksesi takaisin.'
   wwcBlacklistBadFormat: Mustaa luetteloa ei ole muotoiltu oikein luetteloksi. Sitä
     ei valvota ennen kuin tämä on korjattu.
   wwcBlacklistedMsg: Viestisi sisältää kiellettyä kieltä eikä sitä ole käännetty.
@@ -687,4 +678,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Lisää uusi sana
   wwcConfigGUIChatChannelButton: Käännä kanava-asetukset
   wwcConfigGUIBlacklistMessagesModify: Muokkaa termiä ({0})
+  wwcConfigChatChannelFormatInvalid: Havaittu virheellinen kanavamuoto. Oletuksena
+    on {0}...
+  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
+    on {0}. Oletusarvoiset tunnistetut argumentit, jotka voit sisällyttää: {1}. Jos
+    käytössäsi on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet
+    (%) sen sijaan. Kirjoita 0 palataksesi takaisin.'
 

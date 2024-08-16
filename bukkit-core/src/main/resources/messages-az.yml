@@ -637,17 +637,12 @@ Messages:
     məcbur ediləcək.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı məcbur etməklə
     uğurla dəyişdirildi.
-  wwcConfigConversationChatFormatBadInput: Görünür, yuxarıda göstərilən dəyişənlərdən
-    ən azı birini əldən verirsiniz ({0}). Zəhmət olmasa yenidən cəhd edin və ya geri
-    qayıtmaq üçün 0 yazın.
   wwcConfigConversationChannelIconInput: Ayrı tərcümə kanalı üçün cari simvol {0}
     -dir. Rəng kodları dəstəklənir; geri qayıtmaq üçün 0 yazın.
   wwcConfigConversationChatPriorityInput: 'Cari söhbət tədbirinin prioriteti {0} -dir.
     Yazın 0 geri keçin və ya etibarlı prioritetlərin bu siyahısından seçin: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Ayrı kanal formatını dəyişdirin
   wwcConfigConversationChannelIconSuccess: Kanal simgesinizi uğurla dəyişdirdi.
-  wwcConfigChatChannelFormatInvalid: 'Yanlış kanal formatı aşkar edildi. Zəhmət olmasa
-    formatınızda aşağıdakı dəyişənlər daxil olduğundan əmin olun: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Ayrı kanal simgesini dəyişdirin
   wwcConfigConversationChatFormatSuccess: Formatınız uğurla dəyişdirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ayrı kanalı məcbur edin
@@ -662,10 +657,6 @@ Messages:
     aktiv olduğundan əmin olun.
   wwcConfigChatChannelIconInvalid: Yanlış kanal işarəsi aşkar edildi. Varsayılan olaraq
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
-    {0} -dir. Zəhmət olmasa girişinizdə aşağıdakı dəyişənlər daxil olduğundan əmin
-    olun: {1} PlaceholderAPI varsa, əvəzinə bu dəyişənlərin faizlərlə (%) əhatə olunduğundan
-    əmin olun. Geri qayıtmaq üçün 0 yazın.'
   wwcBlacklistBadFormat: Qara siyahınız siyahı kimi düzgün formatlaşdırılmamışdır.
     Bu düzəldilməyincə tətbiq olunmayacaq.
   wwcBlacklistedMsg: Mesajınızda qadağan olunmuş dil var və tərcümə olunmamışdır.
@@ -685,4 +676,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Yeni söz əlavə edin
   wwcConfigGUIChatChannelButton: Kanal parametrlərini tərcümə edin
   wwcConfigGUIBlacklistMessagesModify: Müddəti dəyişdirin ({0})
+  wwcConfigChatChannelFormatInvalid: Yanlış kanal formatı aşkar edildi. Varsayılan
+    olaraq {0}...
+  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
+    {0} -dir. Daxil edə biləcəyiniz standart tanınmış arqumentlərimiz: {1}. PlaceholderAPI
+    varsa, əvəzinə bu dəyişənlərin faizlərlə (%) əhatə olunduğundan əmin olun. Geri
+    qayıtmaq üçün 0 yazın.'
 

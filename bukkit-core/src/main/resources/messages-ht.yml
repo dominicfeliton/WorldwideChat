@@ -623,16 +623,12 @@ Messages:
     tout tradiksyon.
   wwcConfigConversationSeparateChatChannelForceSuccess: Aksè togged fòse kanal la
     separe.
-  wwcConfigConversationChatFormatBadInput: Li sanble tankou ou ap manke omwen youn
-    nan varyab yo susmansyone ({0}). Tanpri eseye ankò, oswa tape 0 pou tounen.
   wwcConfigConversationChannelIconInput: Icon aktyèl la pou kanal tradiksyon separe
     a se {0}. Kòd koulè yo sipòte; kalite 0 pou tounen.
   wwcConfigConversationChatPriorityInput: 'Priyorite evènman chat aktyèl la se {0}.
     Kalite 0 ale nan tounen oswa chwazi nan lis sa a nan priyorite ki valab: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Chanje fòma chanèl separe
   wwcConfigConversationChannelIconSuccess: Aksè chanje icon kanal ou.
-  wwcConfigChatChannelFormatInvalid: 'Fòma chanèl envalid detekte. Tanpri asire w
-    ke fòma ou gen ladan varyab sa yo: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Chanje Icon Chèn separe
   wwcConfigConversationChatFormatSuccess: Fòma ou te chanje avèk siksè.
   wwcConfigGUISeparateChatChannelForceButton: Fòs Chèn separe
@@ -645,9 +641,6 @@ Messages:
   wwcConfigPAPINotInstalled: Custom placeholders yo te detekte nan fòma chat ou, men
     PlaceholderAPI pa enstale. Tanpri asire ke Plugin la te chaje epi li se pèmèt.
   wwcConfigChatChannelIconInvalid: Icon chanèl envalid detekte. Defaulting nan {0}...
-  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
-    se {0}. Tanpri asire w ke opinyon ou gen ladan varyab sa yo: {1}. Si ou gen PlaceholderAPI,
-    asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
   wwcBlacklistBadFormat: Lis nwa ou pa byen fòma kòm yon lis. Li pa pral ranfòse jiskaske
     sa a fiks.
   wwcBlacklistedMsg: Mesaj ou gen lang entèdi epi yo pa te tradui.
@@ -667,4 +660,8 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Ajoute nouvo pawòl
   wwcConfigGUIChatChannelButton: Tradui Channel Anviwòn
   wwcConfigGUIBlacklistMessagesModify: Modifye tèm ({0})
+  wwcConfigChatChannelFormatInvalid: Fòma chanèl envalid detekte. Defaulting nan {0}...
+  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
+    se {0}. Agiman defo rekonèt nou yo ke ou ka gen ladan yo: {1}. Si ou gen PlaceholderAPI,
+    asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
 

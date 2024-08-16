@@ -640,16 +640,12 @@ Messages:
     kanál.
   wwcConfigConversationSeparateChatChannelForceSuccess: Úspěšně přepnuto vynucením
     samostatného kanálu.
-  wwcConfigConversationChatFormatBadInput: Vypadá to, že vám chybí alespoň jedna z
-    výše uvedených proměnných ({0}). Zkuste to prosím znovu, nebo zadejte 0 pro návrat.
   wwcConfigConversationChannelIconInput: Aktuální ikona pro samostatný překladový
     kanál je {0}. Barevné kódy jsou podporovány; zadejte 0 pro návrat zpět.
   wwcConfigConversationChatPriorityInput: 'Aktuální priorita události chatu je {0}.
     Zadejte 0 přejděte zpět nebo vyberte z tohoto seznamu platných priorit: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Změna formátu samostatného kanálu
   wwcConfigConversationChannelIconSuccess: Úspěšně změnila ikonu kanálu.
-  wwcConfigChatChannelFormatInvalid: 'Byl zjištěn neplatný formát kanálu. Ujistěte
-    se, že váš formát obsahuje následující proměnné: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Změnit ikonu samostatného kanálu
   wwcConfigConversationChatFormatSuccess: Váš formát byl úspěšně změněn.
   wwcConfigGUISeparateChatChannelForceButton: Vynutit oddělený kanál
@@ -664,10 +660,6 @@ Messages:
     a je povolen.
   wwcConfigChatChannelIconInvalid: Byla zjištěna neplatná ikona kanálu. Výchozí hodnota
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Aktuální formát samostatného kanálu chatu
-    je {0}. Ujistěte se, že váš vstup obsahuje následující proměnné: {1}. Pokud máte
-    PlaceHolderAPI, ujistěte se, že tyto proměnné jsou místo toho obklopeny procenty
-    (%). Zadejte 0 pro návrat.'
   wwcBlacklistBadFormat: Vaše černá listina není správně naformátována jako seznam.
     Nebude vymáháno, dokud to nebude opraveno.
   wwcBlacklistedMsg: Vaše zpráva obsahuje zakázaný jazyk a nebyla přeložena.
@@ -686,4 +678,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Přidat nové slovo
   wwcConfigGUIChatChannelButton: Přeložit nastavení kanálu
   wwcConfigGUIBlacklistMessagesModify: Upravit termín ({0})
+  wwcConfigChatChannelFormatInvalid: Byl zjištěn neplatný formát kanálu. Výchozí hodnota
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Aktuální formát samostatného kanálu chatu
+    je {0}. Naše výchozí rozpoznané argumenty, které můžete zahrnout: {1}. Pokud máte
+    PlaceHolderAPI, ujistěte se, že tyto proměnné jsou místo toho obklopeny procenty
+    (%). Zadejte 0 pro návrat.'
 

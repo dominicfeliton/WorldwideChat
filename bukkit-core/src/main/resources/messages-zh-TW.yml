@@ -487,12 +487,10 @@ Messages:
   wwcWatsonDeprecation: Watson 已停用，並不再受 IBM 支援。請考慮切換，因為對其的支持將在下一次更新中刪除。
   wwcConfigForceChatChannelEnabled: 在所有翻譯期間，將強制使用單獨的翻譯通道。
   wwcConfigConversationSeparateChatChannelForceSuccess: 成功切換強制單獨通道。
-  wwcConfigConversationChatFormatBadInput: 看起來您至少缺少上述變量之一（{0}）。請再試一次，或鍵入 0 返回。
   wwcConfigConversationChannelIconInput: 個別翻譯通道的目前圖示為 {0}。支援顏色代碼；請輸入 0 以返回。
   wwcConfigConversationChatPriorityInput: 目前聊天事件優先順序為 {0}。輸入 0 返回後面或從這個有效優先順序清單中選擇：{1}。
   wwcConfigGUISeparateChatChannelFormatButton: 更改單獨的頻道格式
   wwcConfigConversationChannelIconSuccess: 成功更改頻道圖示。
-  wwcConfigChatChannelFormatInvalid: 偵測到無效的通道格式。請確保您的格式包含以下變數：{0}。
   wwcConfigGUISeparateChatChannelIconButton: 更改單獨的頻道圖示
   wwcConfigConversationChatFormatSuccess: 您的格式已成功更改。
   wwcConfigGUISeparateChatChannelForceButton: 強制分離通道
@@ -502,8 +500,6 @@ Messages:
   wwcConfigPAPIInstalled: 已針對您的聊天格式啟用位置持有者 API 支援。
   wwcConfigPAPINotInstalled: 已偵測到您的聊天格式中的自訂預留位置，但尚未安裝置放置位置 API。請確保插件已加載並已啟用。
   wwcConfigChatChannelIconInvalid: 偵測到無效的通道圖示。預設為 {0}...
-  wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。請確保您的輸入包含以下變量：{1}。如果您有位置保持者
-    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
   wwcBlacklistBadFormat: 您的黑名單未正確格式化為列表。在解決此問題之前，它將不會被強制執行。
   wwcBlacklistedMsg: 您的消息包含禁止的語言，並且未被翻譯。
   wwcBlacklistedMsgDetected: 偵測到黑名單詞 ({0})：{1}
@@ -520,4 +516,7 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: 新增單詞
   wwcConfigGUIChatChannelButton: 翻譯頻道設定
   wwcConfigGUIBlacklistMessagesModify: 修改術語 ({0})
+  wwcConfigChatChannelFormatInvalid: 偵測到無效的通道格式。預設為 {0}...
+  wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。您可以包含的預設識別引數：{1}。如果您有位置保持者
+    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
 

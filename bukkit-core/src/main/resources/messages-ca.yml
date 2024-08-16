@@ -692,8 +692,6 @@ Messages:
     totes les traduccions.
   wwcConfigConversationSeparateChatChannelForceSuccess: Es va alternar amb èxit forçant
     el canal separat.
-  wwcConfigConversationChatFormatBadInput: Sembla que us falta almenys una de les
-    variables esmentades ({0}). Intenteu-ho de nou o escriviu 0 per tornar enrere.
   wwcConfigConversationChannelIconInput: La icona actual del canal de traducció separat
     és {0}. Els codis de colors són compatibles; escriviu 0 per tornar enrere.
   wwcConfigConversationChatPriorityInput: 'La prioritat de l''esdeveniment de xat
@@ -701,8 +699,6 @@ Messages:
     vàlides: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Canviar el format de canal separat
   wwcConfigConversationChannelIconSuccess: S'ha canviat amb èxit la icona del canal.
-  wwcConfigChatChannelFormatInvalid: 'S''ha detectat el format de canal no vàlid.
-    Assegureu-vos que el vostre format inclogui les següents variables: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Canviar la icona del canal separat
   wwcConfigConversationChatFormatSuccess: El seu format s'ha canviat amb èxit.
   wwcConfigGUISeparateChatChannelForceButton: Força el canal separat
@@ -718,10 +714,6 @@ Messages:
     que el connector s'ha carregat i està activat.
   wwcConfigChatChannelIconInvalid: S'ha detectat la icona de canal no vàlida. Per
     defecte a {0}...
-  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
-    és {0}. Si us plau, assegureu-vos que la vostra entrada inclogui les següents
-    variables: {1}. Si teniu PlaceholderAPI, assegureu-vos que aquestes variables
-    estiguin envoltades per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
   wwcBlacklistBadFormat: La vostra llista negra no està correctament formatada com
     a llista. No s'aplicarà fins que no s'arregli.
   wwcBlacklistedMsg: El missatge conté idioma prohibit i no s'ha traduït.
@@ -741,4 +733,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Afegeix una paraula nova
   wwcConfigGUIChatChannelButton: Tradueix la configuració del canal
   wwcConfigGUIBlacklistMessagesModify: Modificar Terme ({0})
+  wwcConfigChatChannelFormatInvalid: S'ha detectat el format de canal no vàlid. Per
+    defecte a {0}...
+  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
+    és {0}. Els nostres arguments reconeguts per defecte que podeu incloure: {1}.
+    Si teniu PlaceholderAPI, assegureu-vos que aquestes variables estiguin envoltades
+    per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
 

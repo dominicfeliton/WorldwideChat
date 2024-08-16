@@ -197,7 +197,9 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 7, "wwcConfigGUIChatBlacklistButton", "wwcConfigGUIChatBlacklistSuccess", "Chat.enableBlacklist"));
 		if (!main.getCurrPlatform().equals("Folia")) {
 			chatSet.add(new SubMenuElement(2, 1, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui(inPlayer).getMessagesOverridePickLangGui()));
-			chatSet.add(new SubMenuElement(2, 2, "wwcConfigGUIMessagesModifyBlacklistButton", new BlacklistGui(inPlayer).getBlacklist()));
+			if (main.getConfigManager().getBlacklistConfig() != null) {
+				chatSet.add(new SubMenuElement(2, 2, "wwcConfigGUIMessagesModifyBlacklistButton", new BlacklistGui(inPlayer).getBlacklist()));
+			}
 			chatSet.add(new SubMenuElement(2, 3, "wwcConfigGUIChatChannelButton", CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv));
 		} else {
 			chatSet.add(new SubMenuElement(2, 1, "wwcConfigGUIChatChannelButton", CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv));

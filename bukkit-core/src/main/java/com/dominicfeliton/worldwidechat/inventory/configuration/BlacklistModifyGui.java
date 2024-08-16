@@ -20,7 +20,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
@@ -70,9 +72,9 @@ public class BlacklistModifyGui implements InventoryProvider {
 					@Override
 					public void run() {
 						YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
-						List<String> bannedWords = config.getStringList("bannedWords");
+						Set<String> bannedWords = main.getBlacklistTerms();
 						bannedWords.remove(currentTerm); // Remove currentTerm from the list
-						config.set("bannedWords", bannedWords); // Save the updated list back to the config
+						config.set("bannedWords", new ArrayList<>(bannedWords)); // Save the updated list back to the config
 
 						main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), false);
 						main.addPlayerUsingConfigurationGUI(inPlayer.getUniqueId());

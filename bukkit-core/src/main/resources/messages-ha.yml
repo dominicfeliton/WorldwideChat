@@ -643,9 +643,6 @@ Messages:
     fassarar.
   wwcConfigConversationSeparateChatChannelForceSuccess: An sami nasarar canza tilasta
     tashar daban.
-  wwcConfigConversationChatFormatBadInput: Yana kama da kun rasa aƙalla ɗaya daga
-    cikin masu canji da aka ambata ({0}). Da fatan za a sake gwada, ko rubuta 0 don
-    komawa.
   wwcConfigConversationChannelIconInput: Gunkin yanzu don tashar fassara ta daban
     shine {0}. Ana tallafawa lambobin launi; rubuta 0 don komawa.
   wwcConfigConversationChatPriorityInput: 'Fifikon taron tattaunawa na yanzu shine
@@ -653,8 +650,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Canja Tsarin Tashar daban
   wwcConfigConversationChannelIconSuccess: An sami nasarar canza gunkin tashar ku.
-  wwcConfigChatChannelFormatInvalid: 'An gano tsarin tashar mara kyau. Da fatan za
-    a tabbatar da tsarin ku ya haɗa da masu canji masu zuwa: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Canja Gunkin Tashar daban
   wwcConfigConversationChatFormatSuccess: An canza tsarin ku cikin nasara.
   wwcConfigGUISeparateChatChannelForceButton: Ƙarfin tashar daban
@@ -669,10 +664,6 @@ Messages:
     ku, amma ba a shigar da PlaceholderAPI ba. Da fatan za a tabbatar da cewa plugin
     ɗin ya ɗora kuma an kunna shi.
   wwcConfigChatChannelIconInvalid: An gano gunkin tashar mara kyau. Rarraba zuwa {0}...
-  wwcConfigConversationChannelFormatInput: 'Tsarin yanzu don tashar tattaunawa ta
-    daban shine {0}. Da fatan za a tabbatar da shigarwar ku ya haɗa da masu canji
-    masu zuwa: {1}. Idan kuna da PlaceholderAPI, tabbatar cewa waɗancan masu canji
-    suna kewaye da kashi (%) maimakon haka. Rubuta 0 don komawa.'
   wwcBlacklistBadFormat: Ba a tsara jerin baƙin ku yadda ya kamata azaman jerin ba.
     Ba za a aiwatar da shi ba har sai an gyara wannan.
   wwcBlacklistedMsg: Sakonku ya ƙunshi harshen haramta kuma ba a fassara shi ba.
@@ -692,4 +683,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Ƙara Sabuwar Kalma
   wwcConfigGUIChatChannelButton: Fassara Saitunan Tashar
   wwcConfigGUIBlacklistMessagesModify: Gyara Lokaci ({0})
+  wwcConfigChatChannelFormatInvalid: An gano tsarin tashar mara kyau. Rashin zuwa
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Tsarin yanzu don tashar tattaunawa ta
+    daban shine {0}. Tsoffin hujjojinmu da za ku iya haɗawa da: {1}. Idan kuna da
+    PlaceholderAPI, tabbatar cewa waɗancan masu canji suna kewaye da kashi (%) maimakon
+    haka. Rubuta 0 don komawa.'
 

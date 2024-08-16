@@ -560,16 +560,12 @@ Messages:
     እባክዎ መቀየርን ያስቡ።
   wwcConfigForceChatChannelEnabled: በሁሉም ትርጉሞች ጊዜ የተለየ የትርጉም ሰርጥ ይገደዳል።
   wwcConfigConversationSeparateChatChannelForceSuccess: የተለየ ሰርጥ ማስገደድ በተሳካ ሁኔታ ተቀየረ
-  wwcConfigConversationChatFormatBadInput: ከላይ ከተጠቀሱት ተለዋዋጮች ውስጥ ቢያንስ አንዱን እንደጎደሉ
-    ይመስላል ({0})። እባክዎን እንደገና ይሞክሩ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigConversationChannelIconInput: ለተለየ የትርጉም ሰርጥ አሁን ያለው አዶን {0} ነው። የቀለም ኮዶች
     ይደገፋሉ; ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigConversationChatPriorityInput: 'የአሁኑ የውይይት ዝግጅት ቅድሚያ {0} ነው። 0 ይይቡ ወደ ኋላ
     ይሂዱ ወይም ከዚህ ትክክለኛ ቅድሚያ ዝርዝር ይምረጡ: {1}።'
   wwcConfigGUISeparateChatChannelFormatButton: የተለየ ሰርጥ ቅርጸት ይለ
   wwcConfigConversationChannelIconSuccess: የቻናልዎን አዶን በተሳካ ሁኔታ ለው
-  wwcConfigChatChannelFormatInvalid: ልክ ያልሆነ የቻናል ቅርጸት ተገ እባክዎን ቅርጸትዎ የሚከተሉትን ተለዋዋጮች
-    ያካትታል ያረጋግጡ {0}
   wwcConfigGUISeparateChatChannelIconButton: የተለየ ሰርጥ አዶን ይለ
   wwcConfigConversationChatFormatSuccess: የእርስዎ ቅርጸት በተሳካ ሁኔታ ተለወጠ።
   wwcConfigGUISeparateChatChannelForceButton: የተለየ ሰርጥ ኃይል
@@ -581,9 +577,6 @@ Messages:
   wwcConfigPAPINotInstalled: በውይይት ቅርጸትዎ ውስጥ ብጁ ቦታ መያዣዎች ተገኝተዋል፣ ግን PlaceholderAPI
     አልተጫነም። እባክዎ ተሰኪው ተጫነ መሆኑን እና መነቃቱን ያረጋግጡ።
   wwcConfigChatChannelIconInvalid: ልክ ያልሆነ የቻናል አዶን ተገለ ወደ {0} ነባሪ መቀየር...
-  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። እባክዎን
-    የእርስዎ ግብዓት የሚከተሉትን ተለዋዋጮች ያካትታል: {1} PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች
-    (%) የተከበቡ መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
   wwcBlacklistBadFormat: የእርስዎ ጥቁር ዝርዝር እንደ ዝርዝር በአግባቡ አልተቀረበም። ይህ እስኪስተካከል ድረስ አይተገበርም።
   wwcBlacklistedMsg: መልዕክትዎ የተከለከለ ቋንቋ ይዟል እናም አልተተረጎ
   wwcBlacklistedMsgDetected: 'በጥቁር የተዘረዘሩት ቃል ({0}) ተገኝቷል: {1}'
@@ -600,4 +593,8 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: አዲስ ቃል ያክሉ
   wwcConfigGUIChatChannelButton: የሻንል ቅንብሮችን
   wwcConfigGUIBlacklistMessagesModify: ቃል ማሻሻል ({0})
+  wwcConfigChatChannelFormatInvalid: ልክ ያልሆነ የቻናል ቅርጸት ተገ ወደ {0} ነባሪ መቀየር...
+  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። ሊያካትቱ
+    የሚችሏቸው ነባሪ እውቅና ያላቸው ክርክሮች: {1}። PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች (%)
+    የተከበቡ መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
 

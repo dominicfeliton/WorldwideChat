@@ -26,11 +26,11 @@ public class BlacklistGui implements InventoryProvider {
 	private WWCInventoryManager invManager = main.getInventoryManager();
 
 	private Player inPlayer;
-	private TreeSet<String> blacklist;
+	private Set<String> blacklist;
 
 	public BlacklistGui(Player inPlayer) {
 		this.inPlayer = inPlayer;
-		this.blacklist = new TreeSet<>(main.getConfigManager().getBlacklistConfig().getStringList("bannedWords"));
+		this.blacklist = main.getBlacklistTerms();
 	}
 
 	public SmartInventory getBlacklist() {

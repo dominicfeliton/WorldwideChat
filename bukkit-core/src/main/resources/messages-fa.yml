@@ -640,16 +640,12 @@ Messages:
     خواهد شد.
   wwcConfigConversationSeparateChatChannelForceSuccess: مجبور کردن کانال جداگانه با
     موفقیت تغییر کرد.
-  wwcConfigConversationChatFormatBadInput: به نظر می رسد حداقل یکی از متغیرهای فوق
-    را از دست داده اید ({0}). لطفا دوباره امتحان کنید یا 0 را برای بازگشت تایپ کنید.
   wwcConfigConversationChannelIconInput: نماد فعلی برای کانال ترجمه جداگانه {0} است.
     کدهای رنگی پشتیبانی می شوند. برای بازگشت، 0 را تایپ کنید.
   wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. تایپ 0 به
     عقب بروید یا از این لیست از اولویت های معتبر انتخاب کنید: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: تغییر فرمت کانال جداگانه
   wwcConfigConversationChannelIconSuccess: نماد کانال خود را با موفقیت تغییر داد.
-  wwcConfigChatChannelFormatInvalid: 'فرمت کانال نامعتبر شناسایی شد. لطفاً اطمینان
-    حاصل کنید که فرمت شما شامل متغیرهای زیر است: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: تغییر آیکون کانال جداگانه
   wwcConfigConversationChatFormatSuccess: فرمت شما با موفقیت تغییر کرده است.
   wwcConfigGUISeparateChatChannelForceButton: کانال جداگانه نیروی
@@ -664,10 +660,6 @@ Messages:
     فعال است.
   wwcConfigChatChannelIconInvalid: نماد کانال نامعتبر شناسایی شد. به طور پیش فرض به
     {0}...
-  wwcConfigConversationChannelFormatInput: 'قالب فعلی برای کانال چت جداگانه {0} است.
-    لطفاً مطمئن شوید که ورودی شما شامل متغیرهای زیر است: {1}. اگر PlaceHolderAPI دارید،
-    مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. 0 را برای بازگشت
-    تایپ کنید.'
   wwcBlacklistBadFormat: لیست سیاه شما به درستی به عنوان یک لیست فرمت نشده است. تا
     زمانی که این مسئله برطرف نشود اجرا نخواهد شد.
   wwcBlacklistedMsg: پیام شما حاوی زبان ممنوعه است و ترجمه نشده است.
@@ -687,4 +679,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: افزودن کلمه جدید
   wwcConfigGUIChatChannelButton: ترجمه تنظیمات کانال
   wwcConfigGUIBlacklistMessagesModify: اصلاح اصطلاح ({0})
+  wwcConfigChatChannelFormatInvalid: فرمت کانال نامعتبر شناسایی شد. به طور پیش فرض
+    به {0}...
+  wwcConfigConversationChannelFormatInput: 'قالب فعلی برای کانال چت جداگانه {0} است.
+    آرگومانهای پیش فرض شناخته شده ما که می توانید آن را شامل کنید: {1}. اگر PlaceHolderAPI
+    دارید، مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. 0 را برای
+    بازگشت تایپ کنید.'
 

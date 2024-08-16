@@ -641,17 +641,12 @@ Messages:
     করা হবে।
   wwcConfigConversationSeparateChatChannelForceSuccess: সফলভাবে পৃথক চ্যানেল জোর করে
     টগড করা
-  wwcConfigConversationChatFormatBadInput: দেখে মনে হচ্ছে আপনি পূর্বোক্ত ভেরিয়েবলগুলির
-    মধ্যে কমপক্ষে একটি অনুপস্থিত ({0})। দয়া করে আবার চেষ্টা করুন, অথবা ফিরে যেতে
-    0 টাইপ করুন।
   wwcConfigConversationChannelIconInput: পৃথক অনুবাদ চ্যানেলের বর্তমান আইকন {0}। রঙ
     কোড সমর্থিত; ফিরে যেতে 0 টাইপ করুন।
   wwcConfigConversationChatPriorityInput: 'বর্তমান চ্যাট ইভেন্টের অগ্রাধিকার {0}।
     টাইপ 0 ফিরে যান বা বৈধ অগ্রাধিকারগুলির এই তালিকা থেকে বেছে নিন: {1}।'
   wwcConfigGUISeparateChatChannelFormatButton: পৃথক চ্যানেল বিন্যাস
   wwcConfigConversationChannelIconSuccess: সফলভাবে আপনার চ্যানেল আইকন পরিবর্তন
-  wwcConfigChatChannelFormatInvalid: 'বৈধ চ্যানেল বিন্যাস সনাক্ত আপনার ফর্ম্যাটে নিম্নলিখিত
-    ভেরিয়েবলগুলি অন্তর্ভুক্ত রয়েছে তা নিশ্চিত করুন: {0}'
   wwcConfigGUISeparateChatChannelIconButton: ভিন্ন চ্যানেল আইকন পরিবর্তন
   wwcConfigConversationChatFormatSuccess: আপনার বিন্যাস সফলভাবে পরিবর্তন করা হয়েছে।
   wwcConfigGUISeparateChatChannelForceButton: ফোর্স পৃথক চ্যানে
@@ -666,10 +661,6 @@ Messages:
     করা হয়েছে, তবে PlaceholderAPI ইনস্টল করা হয়নি। দয়া করে নিশ্চিত করুন যে প্লাগইন
     লোড হয়েছে এবং সক্ষম হয়েছে।
   wwcConfigChatChannelIconInvalid: অবৈধ চ্যানেল আইকন সনাক্ত {0} এ ডিফল্ট করা হচ্ছে...
-  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
-    আপনার ইনপুটে নিম্নলিখিত ভেরিয়েবলগুলি অন্তর্ভুক্ত রয়েছে তা নিশ্চিত করুন: {1}
-    আপনার যদি প্লেসহোল্ডারএপিআই থাকে তবে নিশ্চিত করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে
-    শতাংশ (%) দ্বারা বেষ্টিত রয়েছে। ফিরে যেতে 0 টাইপ করুন।'
   wwcBlacklistBadFormat: আপনার কালো তালিকা সঠিকভাবে একটি তালিকা হিসাবে ফর্ম্যাট করা
     হয়নি। এটি সংশোধন না হওয়া পর্যন্ত এটি প্রয়োগ করা হবে না।
   wwcBlacklistedMsg: আপনার বার্তায় নিষিদ্ধ ভাষা রয়েছে এবং এটি অনুবাদ করা হয়নি।
@@ -689,4 +680,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: নতুন শব্দ যোগ করুন
   wwcConfigGUIChatChannelButton: চ্যানেল সেটিং অনুবাদ
   wwcConfigGUIBlacklistMessagesModify: মেয়াদ পরিবর্তন করুন ({0})
+  wwcConfigChatChannelFormatInvalid: বৈধ চ্যানেল বিন্যাস সনাক্ত {0} এ ডিফল্ট করা হচ্ছে...
+  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
+    আমাদের ডিফল্ট স্বীকৃত যুক্তি যা আপনি অন্তর্ভুক্ত করতে পারেন: {1}। আপনার যদি PlaceholderAPI
+    থাকে তবে নিশ্চিত করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে।
+    ফিরে যেতে 0 টাইপ করুন।'
 

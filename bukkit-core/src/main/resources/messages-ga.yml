@@ -680,17 +680,12 @@ Messages:
     le linn gach aistriú
   wwcConfigConversationSeparateChatChannelForceSuccess: D'éirigh leis an gcainéal
     ar leithligh a chur i bhfeidh
-  wwcConfigConversationChatFormatBadInput: Is cosúil go bhfuil ceann amháin ar a laghad
-    de na hathróga thuasluaite in easnamh agat ({0}). Déan iarracht arís le do thoil,
-    nó clóscríobh 0 chun dul ar ais.
   wwcConfigConversationChannelIconInput: Is é {0} an deilbhín reatha don chainéal
     aistriúcháin ar leithligh. Tacaítear le cóid datha; cineál 0 chun dul ar ais.
   wwcConfigConversationChatPriorityInput: 'Is é {0} an tosaíocht imeachta comhrá reatha.
     Cineál 0 téigh ar ais nó roghnaigh ón liosta seo de thosaíochtaí bailí: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Athraigh Formáid Cainéil Ar
   wwcConfigConversationChannelIconSuccess: D'athraigh sé go rathúil do deilbhín cainéal
-  wwcConfigChatChannelFormatInvalid: 'Formáid cainéal neamhbhailí braite Déan cinnte
-    go gcuimsíonn d''fhormáid na hathróga seo a leanas: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Athraigh Deilbhín Cainéil
   wwcConfigConversationChatFormatSuccess: Tá d'fhormáid athraithe go rathúil.
   wwcConfigGUISeparateChatChannelForceButton: Cainéal ar leithligh Force
@@ -705,10 +700,6 @@ Messages:
     breiseán luchtaithe agus cumasaithe.
   wwcConfigChatChannelIconInvalid: Braite deilbhín cainéal neamhbhailí Ag réamhshocrú
     go {0}...
-  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
-    comhrá ar leithligh. Déan cinnte go bhfuil na hathróga seo a leanas san ionchur:
-    {1}. Má tá PlaceholderAPI agat, déan cinnte go bhfuil na hathróga sin timpeallaithe
-    ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
   wwcBlacklistBadFormat: Níl do liosta dubh formáidithe i gceart mar liosta. Ní chuirfear
     i bhfeidhm é go dtí go socraítear é seo.
   wwcBlacklistedMsg: Tá teanga toirmiscthe i do theachtaireacht agus níor aistrigh
@@ -729,4 +720,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Cuir Focal Nua leis
   wwcConfigGUIChatChannelButton: Aistrigh Socruithe Channel
   wwcConfigGUIBlacklistMessagesModify: Téarma a mhodhnú ({0})
+  wwcConfigChatChannelFormatInvalid: Formáid cainéal neamhbhailí braite Ag réamhshocrú
+    go {0}...
+  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
+    comhrá ar leithligh. Ár n-argóintí aitheanta réamhshocraithe is féidir leat a
+    áireamh: {1}. Má tá PlaceholderAPI agat, déan cinnte go bhfuil na hathróga sin
+    timpeallaithe ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
 

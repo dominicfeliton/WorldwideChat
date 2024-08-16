@@ -649,9 +649,6 @@ Messages:
     oddzielny kanał tłumaczeń.
   wwcConfigConversationSeparateChatChannelForceSuccess: Pomyślnie przełączono wymuszanie
     oddzielnego kanału.
-  wwcConfigConversationChatFormatBadInput: Wygląda na to, że brakuje ci co najmniej
-    jednej z wyżej wymienionych zmiennych ({0}). Spróbuj ponownie lub wpisz 0, aby
-    wrócić.
   wwcConfigConversationChannelIconInput: Aktualna ikona oddzielnego kanału tłumaczenia
     to {0}. Obsługiwane są kody kolorów; wpisz 0, aby wrócić.
   wwcConfigConversationChatPriorityInput: 'Aktualny priorytet wydarzenia czatu to
@@ -659,8 +656,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Zmień format oddzielnego kanału
   wwcConfigConversationChannelIconSuccess: Pomyślnie zmieniono ikonę kanału.
-  wwcConfigChatChannelFormatInvalid: 'Wykryto nieprawidłowy format kanału. Upewnij
-    się, że format zawiera następujące zmienne: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Zmień ikonę oddzielnego kanału
   wwcConfigConversationChatFormatSuccess: Twój format został pomyślnie zmieniony.
   wwcConfigGUISeparateChatChannelForceButton: Wymuś oddzielny kanał
@@ -675,10 +670,6 @@ Messages:
     czatu, ale PlaceholderAPI nie jest zainstalowany. Upewnij się, że wtyczka została
     załadowana i jest włączona.
   wwcConfigChatChannelIconInvalid: Wykryto nieprawidłową ikonę kanału. Domyślnie {0}...
-  wwcConfigConversationChannelFormatInput: 'Obecny format oddzielnego kanału czatu
-    to {0}. Upewnij się, że dane wejściowe zawierają następujące zmienne: {1}. Jeśli
-    masz PlaceholderAPI, upewnij się, że te zmienne są otoczone wartościami procentowymi
-    (%). Wpisz 0, aby wrócić.'
   wwcBlacklistBadFormat: Twoja czarna lista nie jest prawidłowo sformatowana jako
     lista. Nie będzie ono egzekwowane, dopóki nie zostanie to naprawione.
   wwcBlacklistedMsg: Twoja wiadomość zawiera zabroniony język i nie została przetłumaczona.
@@ -698,4 +689,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj nowe słowo
   wwcConfigGUIChatChannelButton: Przetłumacz ustawienia kanału
   wwcConfigGUIBlacklistMessagesModify: Zmień termin ({0})
+  wwcConfigChatChannelFormatInvalid: Wykryto nieprawidłowy format kanału. Domyślnie
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Obecny format oddzielnego kanału czatu
+    to {0}. Nasze domyślne rozpoznane argumenty, które możesz uwzględnić: {1}. Jeśli
+    masz PlaceholderAPI, upewnij się, że te zmienne są otoczone wartościami procentowymi
+    (%). Wpisz 0, aby wrócić.'
 

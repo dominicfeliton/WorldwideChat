@@ -663,9 +663,6 @@ Messages:
     നിർബന്ധിതമാകും.
   wwcConfigConversationSeparateChatChannelForceSuccess: പ്രത്യേക ചാനൽ നിർബന്ധമാക്കി
     വിജയകരമായി ടോഗിൾ ചെയ്തു.
-  wwcConfigConversationChatFormatBadInput: മേൽപ്പറഞ്ഞ വേരിയബിളുകളിൽ ഒന്നെങ്കിലും നിങ്ങൾക്ക്
-    കാണാനില്ലെന്ന് തോന്നുന്നു ({0}). ദയവായി വീണ്ടും ശ്രമിക്കുക, അല്ലെങ്കിൽ തിരികെ
-    പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigConversationChannelIconInput: പ്രത്യേക വിവർത്തന ചാനലിന്റെ നിലവിലെ ഐക്കൺ
     {0} ആണ്. കളർ കോഡുകൾ പിന്തുണയ്ക്കുന്നു; തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigConversationChatPriorityInput: 'നിലവിലെ ചാറ്റ് ഇവന്റ് മുൻഗണന {0} ആണ്. ടൈപ്പ്
@@ -673,8 +670,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: പ്രത്യേക ചാനൽ ഫോർമാറ്റ് മാറ്റുക
   wwcConfigConversationChannelIconSuccess: നിങ്ങളുടെ ചാനൽ ഐക്കൺ വിജയകരമായി മാറ്റി.
-  wwcConfigChatChannelFormatInvalid: 'അസാധുവായ ചാനൽ ഫോർമാറ്റ് കണ്ടെത്തി. നിങ്ങളുടെ
-    ഫോർമാറ്റിൽ ഇനിപ്പറയുന്ന വേരിയബിളുകൾ ഉൾപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: പ്രത്യേക ചാനൽ ഐക്കൺ മാറ്റുക
   wwcConfigConversationChatFormatSuccess: നിങ്ങളുടെ ഫോർമാറ്റ് വിജയകരമായി മാറ്റിക്കഴിഞ്ഞു.
   wwcConfigGUISeparateChatChannelForceButton: പ്രത്യേക ചാനൽ ഫോഴ്സ് ചെയ്യുക
@@ -689,10 +684,6 @@ Messages:
     പ്രവർത്തനക്ഷമമാക്കിയിട്ടുണ്ടെന്നും ദയവായി ഉറപ്പാക്കുക.
   wwcConfigChatChannelIconInvalid: അസാധുവായ ചാനൽ ഐക്കൺ കണ്ടെത്തി. {0} ലേക്ക് ഡിഫാൾട്ട്
     ചെയ്യുന്നു...
-  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
-    {0} ആണ്. നിങ്ങളുടെ ഇൻപുട്ടിൽ ഇനിപ്പറയുന്ന വേരിയബിളുകൾ ഉൾപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക:
-    {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന്
-    ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
   wwcBlacklistBadFormat: നിങ്ങളുടെ ബ്ലാക്ക്ലിസ്റ്റ് ഒരു ലിസ്റ്റായി ശരിയായി ഫോർമാറ്റ്
     ചെയ്തിട്ടില്ല. ഇത് പരിഹരിക്കപ്പെടുന്നതുവരെ ഇത് നടപ്പിലാകില്ല.
   wwcBlacklistedMsg: നിങ്ങളുടെ സന്ദേശത്തിൽ നിരോധിത ഭാഷ അടങ്ങിയിരിക്കുന്നു, വിവർത്തനം
@@ -713,4 +704,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: പുതിയ വാക്ക് ചേർക്കുക
   wwcConfigGUIChatChannelButton: ചാനൽ ക്രമീകരണങ്ങൾ വിവർത്തനം ചെയ്യുക
   wwcConfigGUIBlacklistMessagesModify: കാലാവധി പരിഷ്ക്കരിക്കുക ({0})
+  wwcConfigChatChannelFormatInvalid: അസാധുവായ ചാനൽ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
+    ഡിഫാൾട്ട് ചെയ്യുന്നു...
+  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
+    {0} ആണ്. നിങ്ങൾക്ക് ഉൾപ്പെടുത്താൻ കഴിയുന്ന ഞങ്ങളുടെ സ്ഥിരസ്ഥിതി അംഗീകൃത വാദങ്ങൾ:
+    {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന്
+    ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
 

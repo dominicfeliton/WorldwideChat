@@ -645,9 +645,6 @@ Messages:
     wa tafsiri zote.
   wwcConfigConversationSeparateChatChannelForceSuccess: Imefanikiwa kubadilisha kulazimisha
     kituo tofauti.
-  wwcConfigConversationChatFormatBadInput: Inaonekana kama umekosa angalau moja ya
-    vigezo vilivyotajwa hapo juu ({0}). Tafadhali jaribu tena, au andika 0 ili kurudi
-    nyuma.
   wwcConfigConversationChannelIconInput: Ikoni ya sasa ya kituo tofauti cha tafsiri
     ni {0}. Nambari za rangi zinaungwa mkono; andika 0 ili kurudi nyuma.
   wwcConfigConversationChatPriorityInput: 'Kipaumbele cha sasa cha tukio la mazungumzo
@@ -656,8 +653,6 @@ Messages:
   wwcConfigGUISeparateChatChannelFormatButton: Badilisha muundo wa Kituo tofauti
   wwcConfigConversationChannelIconSuccess: Kwa mafanikio ilibadilisha ikoni yako ya
     kituo
-  wwcConfigChatChannelFormatInvalid: 'Muundo mbaya wa kituo uligunduliwa. Tafadhali
-    hakikisha muundo wako unajumuisha vigezo vifuatavyo: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Badilisha Ikoni ya Kituo tofauti
   wwcConfigConversationChatFormatSuccess: Muundo wako umebadilishwa kwa mafanikio.
   wwcConfigGUISeparateChatChannelForceButton: Nguvu Kituo Tofauti
@@ -673,10 +668,6 @@ Messages:
     imepakia na imewezeshwa.
   wwcConfigChatChannelIconInvalid: Ikoni mbaya ya kituo iligunduliwa. Kubadilisha
     kuwa {0}...
-  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
-    ni {0}. Tafadhali hakikisha pembejeo yako inajumuisha vigezo vifuatavyo: {1}.
-    Ikiwa una PlaceholderAPI, hakikisha vigezo hizo zimezungukwa na asilimia (%) badala
-    yake. Andika 0 ili kurudi nyuma.'
   wwcBlacklistBadFormat: Orodha yako nyeusi haijaundwa vizuri kama orodha. Haitatekelezwa
     hadi hii itakapowekwa.
   wwcBlacklistedMsg: Ujumbe wako una lugha marufuku na haujatafsiriwa.
@@ -696,4 +687,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Ongeza Neno Jipya
   wwcConfigGUIChatChannelButton: Tafsiri Mipangilio ya Kituo
   wwcConfigGUIBlacklistMessagesModify: Badilisha Muda ({0})
+  wwcConfigChatChannelFormatInvalid: Muundo mbaya wa kituo uligunduliwa. Kubadilisha
+    kuwa {0}...
+  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
+    ni {0}. Hoja zetu za default zinazotambuliwa ambazo unaweza kujumuisha: {1}. Ikiwa
+    una PlaceholderAPI, hakikisha vigezo hizo zimezungukwa na asilimia (%) badala
+    yake. Andika 0 ili kurudi nyuma.'
 

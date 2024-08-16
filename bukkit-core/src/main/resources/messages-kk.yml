@@ -637,17 +637,12 @@ Messages:
     мәжбүр болады.
   wwcConfigConversationSeparateChatChannelForceSuccess: Жеке арнаны мәжбүрлеп сәтті
     ауыстырылды.
-  wwcConfigConversationChatFormatBadInput: Жоғарыда аталған айнымалылардың кем дегенде
-    біреуін ({0}) жетіспейтін сияқты көрінеді. Қайта көріңіз немесе кері оралу үшін
-    0 деп теріңіз.
   wwcConfigConversationChannelIconInput: Бөлек аударма арнасының ағымдағы белгішесі
     {0} болып табылады. Түс кодтарына қолдау көрсетіледі; кері оралу үшін 0 теріңіз.
   wwcConfigConversationChatPriorityInput: 'Ағымдағы чат оқиғасының басымдығы - {0}.
     0 теріңіз артқа өтіңіз немесе жарамды басымдықтардың осы тізімінен таңдаңыз: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Бөлек арна пішімін өзгертіңіз
   wwcConfigConversationChannelIconSuccess: Арна белгішесін сәтті өзгертті.
-  wwcConfigChatChannelFormatInvalid: 'Жарамсыз арна пішімі анықталды. Пішіміңізге
-    келесі айнымалы мәндерді қамтитынына көз жеткізіңіз: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Бөлек арна белгішесін өзгертіңіз
   wwcConfigConversationChatFormatSuccess: Сіздің пішіміңіз сәтті өзгертілді.
   wwcConfigGUISeparateChatChannelForceButton: Бөлек арнаны күштеңіз
@@ -662,10 +657,6 @@ Messages:
     көз жеткізіңіз.
   wwcConfigChatChannelIconInvalid: Жарамсыз арна белгішесі анықталды. Әдепкі бойынша
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
-    - {0}. Пожалуйста, сіздің кірісіңіз келесі айнымалы мәндерді қамтитынына көз жеткізіңіз:
-    {1}. Егер сізде placeholderAPI болса, сол айнымалы мәндердің орнына пайыздармен
-    (%) қоршалғанына көз жеткізіңіз. Қайту үшін 0 деп теріңіз.'
   wwcBlacklistBadFormat: Сіздің қара тізіміңіз тізім ретінде дұрыс пішімделмеген.
     Бұл түзетілмейінше, ол қолданысқа енгізілмейді.
   wwcBlacklistedMsg: Сіздің хабарламаңызда тыйым салынған тіл бар және аударылмады.
@@ -684,4 +675,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Жаңа сөз қосыңыз
   wwcConfigGUIChatChannelButton: Арна параметрлерін аударыңыз
   wwcConfigGUIBlacklistMessagesModify: Терминді өзгерту ({0})
+  wwcConfigChatChannelFormatInvalid: Жарамсыз арна пішімі анықталды. Әдепкі бойынша
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
+    - {0}. Сізге қосуға болатын әдепкі танылған дәлелдеріміз: {1}. Егер сізде placeholderAPI
+    болса, сол айнымалы мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз.
+    Қайту үшін 0 деп теріңіз.'
 

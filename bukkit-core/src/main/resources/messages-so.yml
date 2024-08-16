@@ -660,17 +660,12 @@ Messages:
     dhamaan tarjimada.
   wwcConfigConversationSeparateChatChannelForceSuccess: Si guul guul la qaaday kanaalka
     Gooni ah.
-  wwcConfigConversationChatFormatBadInput: Waxaa muuqata inaad ku maqan ugu yaraan
-    mid ka mid ah murayaasha la sheegay ({0}). Fadlan mar kale isku dayo, ama nooca
-    0 si aad u dib ugu soo laabto.
   wwcConfigConversationChannelIconInput: Aqoonka hadda ee kanaalka tarjimada gooni
     ah waa {0}. Koodaha Midabka ayaa la taageeraya; nooca 0 si uu dib ugu soo laabto.
   wwcConfigConversationChatPriorityInput: 'Muhiimada dhacdooyinka wada hadda ee hadda
     waa {0}. Nooca 0 dib ugu dib ama ka dooro liiskan muhiimada oo xaalad ah: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Beddel Qaabka Kanaalka Gooni
   wwcConfigConversationChannelIconSuccess: Si guul la beddelay fiicka kanaalkaaga.
-  wwcConfigChatChannelFormatInvalid: 'Qaabka kanaalka ah oo la ogaaday Fadlan hubain
-    qaabkaaga waxa uu ka mid yahay murayaasha soo socda: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Bedelka Icon Channel Gooni ah
   wwcConfigConversationChatFormatSuccess: Qaabkaaga waxaa si guul la bedelay.
   wwcConfigGUISeparateChatChannelForceButton: Channel Gooni ah ee Ciidanka
@@ -685,10 +680,6 @@ Messages:
     lama saarin. Fadlan xaqiijiyay in pluginka uu xusay oo la ogolaaday.
   wwcConfigChatChannelIconInvalid: Aqoonka kanaalka ah oo la ogaaday Defaulting to
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
-    ah waa {0}. Fadlan ka hubain gelinkaaga waxa uu ka mid yahay bedelaha soo socda:
-    {1}. Haddii aad leeyihiin PlaceholderAPI, hubaa hubaahay ay ku xeerayeen boqoltooyinka
-    (%) halkeeda. Nooca 0 si aad dib ugu soo noqon.'
   wwcBlacklistBadFormat: Liiskaaga madow lama sax ah loo sameeyo liiska. Lama xigin
     doono ilaa arrintaasi la xigsan doono.
   wwcBlacklistedMsg: Fariinkaaga waxaa ku jira luuqad mamnuucaysan oo lama tarjimin
@@ -708,4 +699,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Kudar Eyn Cusub
   wwcConfigGUIChatChannelButton: Tarjumaad Saadigaha Channel
   wwcConfigGUIBlacklistMessagesModify: Beddelka Termada ({0})
+  wwcConfigChatChannelFormatInvalid: Qaabka kanaalka ah oo la ogaaday Defaulting to
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
+    ah waa {0}. Doodkeena oo la aqoonsaday oo aad ka mid kartaa: {1}. Haddii aad leeyihiin
+    PlaceholderAPI, hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca
+    0 si aad dib ugu soo noqon.'
 

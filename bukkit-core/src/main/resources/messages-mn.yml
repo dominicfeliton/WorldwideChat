@@ -668,9 +668,6 @@ Messages:
     гаргах болно.
   wwcConfigConversationSeparateChatChannelForceSuccess: Тусдаа сувгийг хүчээр амжилттай
     сольсон.
-  wwcConfigConversationChatFormatBadInput: Энэ нь та дээр дурдсан хувьсагчдын дор
-    хаяж аль нэгийг нь дутуу байгаа мэт харагдаж байна ({0}). Дахин оролдоно уу, эсвэл
-    буцаж очихын тулд 0 гэж бичнэ үү.
   wwcConfigConversationChannelIconInput: Тусдаа орчуулгын сувгийн одоогийн дүрс нь
     {0} юм. Өнгөний кодыг дэмжиж байна; буцаж очихын тулд 0 гэж бичнэ үү.
   wwcConfigConversationChatPriorityInput: 'Одоогийн чатын үйл явдлын тэргүүлэх чиглэл
@@ -678,8 +675,6 @@ Messages:
     энэ жагсаалтаас сонгоно уу: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Тусдаа сувгийн форматыг өөрчлөх
   wwcConfigConversationChannelIconSuccess: Таны сувгийн дүрсийг амжилттай өөрчилсөн.
-  wwcConfigChatChannelFormatInvalid: 'Хүчингүй сувгийн формат илэрсэн. Таны формат
-    нь дараах хувьсагчуудыг багтаасан эсэхийг шалгана уу: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Тусдаа сувгийн дүрсийг өөрчлөх
   wwcConfigConversationChatFormatSuccess: Таны формат амжилттай өөрчлөгдсөн.
   wwcConfigGUISeparateChatChannelForceButton: Тусгай суваг хүчээр
@@ -694,10 +689,6 @@ Messages:
     уу.
   wwcConfigChatChannelIconInvalid: Хүчингүй сувгийн дүрс илэрсэн. {0} гэж анхдагч
     байна...
-  wwcConfigConversationChannelFormatInput: 'Тусдаа чат сувгийн одоогийн формат нь
-    {0} юм. Таны оролтод дараах хувьсагчууд багтсан эсэхийг шалгана уу: {1}. Хэрэв
-    танд PlaceholderAPI байгаа бол тэдгээр хувьсагчууд оронд нь хувь (%) -ээр хүрээлэгдсэн
-    эсэхийг шалгаарай. Буцахын тулд 0 гэж бичнэ үү.'
   wwcBlacklistBadFormat: Таны хар жагсаалтыг жагсаалт болгон зохих ёсоор хэлбэржүүлээгүй
     байна. Үүнийг засах хүртэл үүнийг хэрэгжүүлэхгүй.
   wwcBlacklistedMsg: Таны мессеж нь хориглосон хэлийг агуулдаг бөгөөд орчуулагдаагүй
@@ -719,4 +710,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Шинэ үг нэмэх
   wwcConfigGUIChatChannelButton: Сувгийн тохиргоог орчуулах
   wwcConfigGUIBlacklistMessagesModify: Нэр томъёог өөрчлөх ({0})
+  wwcConfigChatChannelFormatInvalid: Хүчингүй сувгийн формат илэрсэн. {0} гэж анхдагч
+    байна...
+  wwcConfigConversationChannelFormatInput: 'Тусдаа чат сувгийн одоогийн формат нь
+    {0} юм. Таны оруулж болох бидний анхдагч хүлээн зөвшөөрөгдсөн аргументууд: {1}.
+    Хэрэв танд PlaceholderAPI байгаа бол тэдгээр хувьсагчууд оронд нь хувь (%) -ээр
+    хүрээлэгдсэн эсэхийг шалгаарай. Буцахын тулд 0 гэж бичнэ үү.'
 

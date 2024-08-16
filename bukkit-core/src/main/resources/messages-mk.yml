@@ -666,9 +666,6 @@ Messages:
     на сите преводи.
   wwcConfigConversationSeparateChatChannelForceSuccess: Успешно се префрли форсирајќи
     го одделниот канал.
-  wwcConfigConversationChatFormatBadInput: Изгледа дека ви недостасува барем една
-    од гореспоменатите променливи ({0}). Ве молиме обидете се повторно или напишете
-    0 за да се вратите назад.
   wwcConfigConversationChannelIconInput: Тековната икона за одделниот канал за превод
     е {0}. Поддржани се кодови на бои; напишете 0 за да се вратите назад.
   wwcConfigConversationChatPriorityInput: 'Тековниот приоритет на настанот за разговор
@@ -676,8 +673,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Променете го одделниот формат на каналот
   wwcConfigConversationChannelIconSuccess: Успешно ја смени иконата на вашиот канал.
-  wwcConfigChatChannelFormatInvalid: 'Откриен неважечки формат на каналот. Ве молиме
-    проверете дали вашиот формат ги вклучува следните променливи: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Променете ја иконата на одделен канал
   wwcConfigConversationChatFormatSuccess: Вашиот формат е успешно променет.
   wwcConfigGUISeparateChatChannelForceButton: Принудете посебен канал
@@ -693,10 +688,6 @@ Messages:
     е вчитан и е овозможен.
   wwcConfigChatChannelIconInvalid: Откриена е неважечка икона на канал. Стандардно
     на {0}...
-  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
-    разговор е {0}. Ве молиме проверете дали вашиот влез ги вклучува следниве променливи:
-    {1}. Ако имате PlaceholderAPI, проверете дали тие променливи се опкружени со проценти
-    (%) наместо тоа. Напишете 0 за да се вратите назад.'
   wwcBlacklistBadFormat: Вашата црна листа не е правилно форматирана како листа. Нема
     да се спроведува додека не се поправи ова.
   wwcBlacklistedMsg: Вашата порака содржи забранет јазик и не е преведена.
@@ -715,4 +706,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Додај нов збор
   wwcConfigGUIChatChannelButton: Преведете ги поставките на каналот
   wwcConfigGUIBlacklistMessagesModify: Измени термин ({0})
+  wwcConfigChatChannelFormatInvalid: Откриен неважечки формат на каналот. Стандардно
+    на {0}...
+  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
+    разговор е {0}. Нашите стандардно признати аргументи што можете да ги вклучите:
+    {1}. Ако имате PlaceholderAPI, проверете дали тие променливи се опкружени со проценти
+    (%) наместо тоа. Напишете 0 за да се вратите назад.'
 

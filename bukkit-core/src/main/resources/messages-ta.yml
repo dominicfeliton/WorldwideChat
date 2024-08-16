@@ -672,9 +672,6 @@ Messages:
   wwcConfigForceChatChannelEnabled: அனைத்து மொழிபெயர்ப்புகளின் போது தனி மொழிபெயர்ப்பு
     சேனல் கட்டாயப்படுத்தப்படும்.
   wwcConfigConversationSeparateChatChannelForceSuccess: வெற்றிகரமாக தனி சேனலை கட்டாயப்படுத்தியது.
-  wwcConfigConversationChatFormatBadInput: மேற்கூறிய மாறிகளில் குறைந்தது ஒன்றை நீங்கள்
-    காணவில்லை என்று தெரிகிறது ({0}). தயவுசெய்து மீண்டும் முயற்சிக்கவும் அல்லது திரும்பிச்
-    செல்ல 0 என தட்ட
   wwcConfigConversationChannelIconInput: தனி மொழிபெயர்ப்பு சேனலுக்கான தற்போதைய ஐகான்
     {0} ஆகும். வண்ணக் குறியீடுகள் ஆதரிக்கப்படுகின்றன; திரும்பிச் செல்ல 0 ஐ தட்டச்ச
   wwcConfigConversationChatPriorityInput: 'தற்போதைய அரட்டை நிகழ்வு முன்னுரிமை {0}
@@ -682,8 +679,6 @@ Messages:
     தேர்வு செய்யவும்: {1}'
   wwcConfigGUISeparateChatChannelFormatButton: தனி சேனல் வடிவமைப்பை மாற்றவும்
   wwcConfigConversationChannelIconSuccess: உங்கள் சேனல் ஐகானை வெற்றிகரமாக மாற்றப்பட்டது.
-  wwcConfigChatChannelFormatInvalid: 'செல்லாத சேனல் வடிவம் கண்டறியப்பட்டது. உங்கள்
-    வடிவமைப்பில் பின்வரும் மாறிகள் உள்ளடங்குவதை உறுதிப்படுத்திக் கொள்ளுங்கள்: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: தனி சேனல் ஐகானை மாற்றவும்
   wwcConfigConversationChatFormatSuccess: உங்கள் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
   wwcConfigGUISeparateChatChannelForceButton: ஃபோர்ஸ் தனி சேனல்
@@ -697,11 +692,6 @@ Messages:
     ஆனால் PlaceholderAPI நிறுவப்படவில்லை. சொருகி ஏற்றப்பட்டு இயக்கப்பட்டுள்ளதா என்பதை
     உறுதிப்படுத்தவும்.
   wwcConfigChatChannelIconInvalid: செல்லாத சேனல் ஐகான் கண்டறியப்பட்டது {0} ஆக இயல்பாதது...
-  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
-    {0} ஆகும். உங்கள் உள்ளீட்டில் பின்வரும் மாறிகள் உள்ளடங்குவதை உறுதிப்படுத்திக்
-    கொள்ளுங்கள்: {1}. உங்களிடம் PlaceholderAPI இருந்தால், அதற்கு பதிலாக அந்த மாறிகள்
-    சதவீதங்களால் (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள். திரும்பிச்
-    செல்ல 0 ஐ தட்டச்சு செய்க.'
   wwcBlacklistBadFormat: உங்கள் கருப்புபட்டியல் ஒரு பட்டியலாக சரியாக வடிவமைக்கப்படவில்லை.
     இது சரி செய்யப்படும் வரை அது செயல்படுத்தப்படாது.
   wwcBlacklistedMsg: உங்கள் செய்தியில் தடைசெய்யப்பட்ட மொழி உள்ளது மற்றும் மொழிபெயர்க்கப்படவில்லை.
@@ -722,4 +712,11 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: புதிய வார்த்தையைச் சேர்க்கவும்
   wwcConfigGUIChatChannelButton: சேனல் அமைப்புகளை மொழி
   wwcConfigGUIBlacklistMessagesModify: காலத்தை மாற்றவும் ({0})
+  wwcConfigChatChannelFormatInvalid: செல்லாத சேனல் வடிவம் கண்டறியப்பட்டது. {0} ஆக
+    இயல்பாதது...
+  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
+    {0} ஆகும். நீங்கள் சேர்க்கக்கூடிய எங்கள் இயல்புநிலை அங்கீகரிக்கப்பட்ட வாதங்கள்:
+    {1}. உங்களிடம் PlaceholderAPI இருந்தால், அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால்
+    (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு
+    செய்க.'
 

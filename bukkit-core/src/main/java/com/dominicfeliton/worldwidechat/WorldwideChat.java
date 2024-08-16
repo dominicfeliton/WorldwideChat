@@ -45,7 +45,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08162024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08162024-4"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -78,6 +78,7 @@ public class WorldwideChat extends JavaPlugin {
 	private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
 	private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
 	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
+	private Set<String> blacklistTerms = new ConcurrentSkipListSet<>();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<>();
 
@@ -124,6 +125,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	private int errorLimit = 5;
 
+	// TODO: Make concurrent JIC?
 	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
 
 	/* Default constructor */
@@ -693,6 +695,10 @@ public class WorldwideChat extends JavaPlugin {
 		translateIcon = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
 	}
 
+	public void setBlacklistTerms(List<String> i) {
+		blacklistTerms = new ConcurrentSkipListSet<>(i);
+	}
+
 	public void setTranslateLayout(String i) {
 		translateLayout = i;
 	}
@@ -1152,5 +1158,9 @@ public class WorldwideChat extends JavaPlugin {
 
 	public EventPriority getChatPriority() {
 		return chatPriority;
+	}
+
+	public Set<String> getBlacklistTerms() {
+		return blacklistTerms;
 	}
 }

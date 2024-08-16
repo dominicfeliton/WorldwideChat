@@ -496,15 +496,12 @@ Messages:
   wwcWatsonDeprecation: Watsonは廃止され、IBMによるサポートは終了しました。次回の更新ではサポートされなくなるため、切り替えを検討してください。
   wwcConfigForceChatChannelEnabled: すべての翻訳中に、個別の翻訳チャネルが強制されます。
   wwcConfigConversationSeparateChatChannelForceSuccess: 強制的にチャンネルを強制的に切り替えることに成功しました。
-  wwcConfigConversationChatFormatBadInput: 前述の変数 ({0}) のうち少なくとも 1 つが欠落しているようです。もう一度試してください。または
-    0 を入力して戻ってください。
   wwcConfigConversationChannelIconInput: 独立した翻訳チャンネルの現在のアイコンは {0} です。カラーコードがサポートされています。0
     を入力すると戻ります。
   wwcConfigConversationChatPriorityInput: 現在のチャットイベントの優先度は {0} です。0 と入力して戻るか、有効な優先度の一覧から
     {1} を選択してください。
   wwcConfigGUISeparateChatChannelFormatButton: 個別チャンネル形式を変更
   wwcConfigConversationChannelIconSuccess: チャンネルアイコンが正常に変更されました。
-  wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。フォーマットに以下の変数が含まれていることを確認してください:{0}.
   wwcConfigGUISeparateChatChannelIconButton: 個別チャンネルアイコンを変更
   wwcConfigConversationChatFormatSuccess: フォーマットは正常に変更されました。
   wwcConfigGUISeparateChatChannelForceButton: 強制的にチャンネルを分離
@@ -514,8 +511,6 @@ Messages:
   wwcConfigPAPIInstalled: PlaceHolderAPI サポートがチャットフォーマットで有効になりました。
   wwcConfigPAPINotInstalled: チャットフォーマットでカスタムプレースホルダーが検出されましたが、PlaceholderAPI がインストールされていません。プラグインが読み込まれ、有効になっていることを確認してください。
   wwcConfigChatChannelIconInvalid: 無効なチャンネルアイコンが検出されました。デフォルトは {0}...
-  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。入力に以下の変数が含まれていることを確認してください:{1}.PlaceholderAPI
-    を使用している場合は、それらの変数が代わりにパーセンテージ (%) で囲まれていることを確認してください。0 を入力すると戻ります。
   wwcBlacklistBadFormat: ブラックリストがリストとして正しくフォーマットされていません。この問題が修正されるまでは強制されません。
   wwcBlacklistedMsg: メッセージには禁止されている言語が含まれており、翻訳されていません。
   wwcBlacklistedMsgDetected: ブラックリストに載っている単語 ({0}) が検出されました:{1}
@@ -532,4 +527,7 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: 新しい単語を追加
   wwcConfigGUIChatChannelButton: 翻訳チャンネル設定
   wwcConfigGUIBlacklistMessagesModify: 用語の修正 ({0})
+  wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。デフォルトは {0}...
+  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。デフォルトで認識されている引数は
+    {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
 

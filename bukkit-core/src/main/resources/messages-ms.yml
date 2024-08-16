@@ -638,17 +638,12 @@ Messages:
     semasa semua terjemahan.
   wwcConfigConversationSeparateChatChannelForceSuccess: Berjaya beralih memaksa saluran
     berasingan.
-  wwcConfigConversationChatFormatBadInput: Nampaknya anda kehilangan sekurang-kurangnya
-    salah satu pemboleh ubah yang disebutkan di atas ({0}). Sila cuba lagi, atau ketik
-    0 untuk kembali.
   wwcConfigConversationChannelIconInput: Ikon semasa untuk saluran terjemahan berasingan
     ialah {0}. Kod warna disokong; taipkan 0 untuk kembali.
   wwcConfigConversationChatPriorityInput: 'Keutamaan acara sembang semasa ialah {0}.
     Taipkan 0 pergi ke belakang atau pilih dari senarai keutamaan yang sah ini: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Tukar Format Saluran Berpisah
   wwcConfigConversationChannelIconSuccess: Berjaya menukar ikon saluran anda.
-  wwcConfigChatChannelFormatInvalid: 'Format saluran tidak sah dikesan. Sila pastikan
-    format anda termasuk pemboleh ubah berikut: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Tukar Ikon Saluran Berpisah
   wwcConfigConversationChatFormatSuccess: Format anda telah berjaya diubah.
   wwcConfigGUISeparateChatChannelForceButton: Saluran Berasingan Paksa
@@ -663,10 +658,6 @@ Messages:
     anda, tetapi PlaceholderAPI tidak dipasang. Sila pastikan plugin telah dimuatkan
     dan diaktifkan.
   wwcConfigChatChannelIconInvalid: Ikon saluran tidak sah dikesan. Lalai kepada {0}...
-  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
-    ialah {0}. Sila pastikan input anda termasuk pemboleh ubah berikut: {1}. Jika
-    anda mempunyai PlaceholderAPI, pastikan pemboleh ubah tersebut dikelilingi oleh
-    peratusan (%) sebagai gantinya. Taipkan 0 untuk kembali.'
   wwcBlacklistBadFormat: Senarai hitam anda tidak diformat dengan betul sebagai senarai.
     Ia tidak akan dikuatkuasakan sehingga ini diperbaiki.
   wwcBlacklistedMsg: Mesej anda mengandungi bahasa yang dilarang dan tidak diterjemahkan.
@@ -686,4 +677,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Tambah Perkataan Baru
   wwcConfigGUIChatChannelButton: Terjemah Tetapan Saluran
   wwcConfigGUIBlacklistMessagesModify: Ubah suai Terma ({0})
+  wwcConfigChatChannelFormatInvalid: Format saluran tidak sah dikesan. Lalai kepada
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
+    ialah {0}. Hujah lalai kami yang diiktiraf yang boleh anda sertakan: {1}. Jika
+    anda mempunyai PlaceholderAPI, pastikan pemboleh ubah tersebut dikelilingi oleh
+    peratusan (%) sebagai gantinya. Taipkan 0 untuk kembali.'
 

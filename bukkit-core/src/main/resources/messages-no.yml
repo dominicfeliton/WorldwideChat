@@ -624,8 +624,6 @@ Messages:
     alle oversettelser.
   wwcConfigConversationSeparateChatChannelForceSuccess: Vellykket vekslet for å tvinge
     den separate kanalen.
-  wwcConfigConversationChatFormatBadInput: Det ser ut til at du mangler minst en av
-    de nevnte variablene ({0}). Prøv igjen, eller skriv 0 for å gå tilbake.
   wwcConfigConversationChannelIconInput: Gjeldende ikon for den separate oversettelseskanalen
     er {0}. Fargekoder støttes; skriv 0 for å gå tilbake.
   wwcConfigConversationChatPriorityInput: 'Gjeldende prioritering for chat-hendelse
@@ -633,8 +631,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Endre separat kanalformat
   wwcConfigConversationChannelIconSuccess: Vellykket endret kanalikonet ditt.
-  wwcConfigChatChannelFormatInvalid: 'Ugyldig kanalformat oppdaget. Forsikre deg om
-    at formatet inneholder følgende variabler: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Endre separat kanalikon
   wwcConfigConversationChatFormatSuccess: Formatet ditt har blitt endret med hell.
   wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
@@ -648,10 +644,6 @@ Messages:
     ditt, men PlaceHolderAPI er ikke installert. Forsikre deg om at pluginet er lastet
     inn og er aktivert.
   wwcConfigChatChannelIconInvalid: Ugyldig kanalikon oppdaget. Standard til {0}...
-  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
-    er {0}. Forsikre deg om at inndataene dine inneholder følgende variabler: {1}.
-    Hvis du har PlaceHolderAPI, må du sørge for at disse variablene er omgitt av prosenter
-    (%) i stedet. Skriv 0 for å gå tilbake.'
   wwcBlacklistBadFormat: Svartelisten din er ikke riktig formatert som en liste. Det
     vil ikke bli håndhevet før dette er løst.
   wwcBlacklistedMsg: Meldingen din inneholder forbudt språk og ble ikke oversatt.
@@ -670,4 +662,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Legg til nytt ord
   wwcConfigGUIChatChannelButton: Oversett kanalinnstillinger
   wwcConfigGUIBlacklistMessagesModify: Endre begrep ({0})
+  wwcConfigChatChannelFormatInvalid: Ugyldig kanalformat oppdaget. Standard til {0}...
+  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
+    er {0}. Våre standard gjenkjente argumenter som du kan inkludere: {1}. Hvis du
+    har PlaceHolderAPI, må du sørge for at disse variablene er omgitt av prosenter
+    (%) i stedet. Skriv 0 for å gå tilbake.'
 

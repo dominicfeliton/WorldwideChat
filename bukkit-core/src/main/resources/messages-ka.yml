@@ -641,16 +641,12 @@ Messages:
     არხ
   wwcConfigConversationSeparateChatChannelForceSuccess: წარმატებით შეცვალა ცალკე არხის
     იძულება.
-  wwcConfigConversationChatFormatBadInput: როგორც ჩანს, თქვენ აკლია მინიმუმ ერთი ზემოხსენებული
-    ცვლადი ({0}). გთხოვთ, კვლავ სცადოთ, ან დააკრიფეთ 0 დაბრუნებისთვის.
   wwcConfigConversationChannelIconInput: ცალკე თარგმანის არხის ამჟამინდელი ხატია {0}.
     ფერის კოდები მხარდაჭერილია; დაბრუნებისთვის ტიპი 0.
   wwcConfigConversationChatPriorityInput: 'ჩატის მოვლენის მიმდინარე პრიორიტეტია {0}.
     ტიპი 0 გადადით უკან ან აირჩიეთ მოქმედი პრიორიტეტების ამ სიიდან: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: ცალკეული არხის ფორმატის
   wwcConfigConversationChannelIconSuccess: წარმატებით შეცვალა თქვენი არხის ხატი.
-  wwcConfigChatChannelFormatInvalid: 'არასწორი არხის ფორმატი გამოვლინდა გთხოვთ, დარწმუნდეთ,
-    რომ თქვენი ფორმატი შეიცავს შემდეგ ცვლადებს: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: ცალკეული არხის ხატის
   wwcConfigConversationChatFormatSuccess: თქვენი ფორმატი წარმატებით შეიცვალა.
   wwcConfigGUISeparateChatChannelForceButton: ცალკე არხის ძალა
@@ -663,10 +659,6 @@ Messages:
     მაგრამ PlaceholderAPI არ არის დამონტაჟებული. გთხოვთ დარწმუნდეთ, რომ მოდული დატვირთულია
     და ჩართულია
   wwcConfigChatChannelIconInvalid: არასწორი არხის ხატი გამოვლინ ნაგულისხმევად {0}...
-  wwcConfigConversationChannelFormatInput: 'ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
-    გთხოვთ, დარწმუნდეთ, რომ თქვენი შეყვანა მოიცავს შემდეგ ცვლადებს: {1} თუ თქვენ გაქვთ
-    PlaceholderAPI, დარწმუნდით, რომ ეს ცვლადები გარშემორტყმულია პროცენტებით (%). დაბრუნებისთვის
-    აკრიფეთ 0.'
   wwcBlacklistBadFormat: თქვენი შავი სია არ არის სწორად ფორმატირებული როგორც სია.
     ეს არ იქნება განხორციელებული, სანამ ეს არ დაფიქსირდება.
   wwcBlacklistedMsg: თქვენი შეტყობინება შეიცავს აკრძალულ ენას და არ თარგმნ
@@ -685,4 +677,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: ახალი სიტყვის დამატება
   wwcConfigGUIChatChannelButton: თარგმნეთ არხის
   wwcConfigGUIBlacklistMessagesModify: ტერმინის შეცვლა ({0})
+  wwcConfigChatChannelFormatInvalid: არასწორი არხის ფორმატი გამოვლინდა ნაგულისხმევად
+    {0}...
+  wwcConfigConversationChannelFormatInput: ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
+    ჩვენი სტანდარტულად აღიარებული არგუმენტები, რომლებიც შეგიძლიათ შეიტანოთ {1} თუ
+    თქვენ გაქვთ PlaceholderAPI, დარწმუნდით, რომ ეს ცვლადები გარშემორტყმულია პროცენტებით
+    (%). დაბრუნებისთვის აკრიფეთ 0.
 

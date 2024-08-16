@@ -651,9 +651,6 @@ Messages:
     þýðingum stendur.
   wwcConfigConversationSeparateChatChannelForceSuccess: Tókst var að þvinga aðskilda
     rásina.
-  wwcConfigConversationChatFormatBadInput: Það lítur út fyrir að þig vanti að minnsta
-    kosti eina af fyrrnefndum breytum ({0}). Vinsamlegast reyndu aftur eða sláðu inn
-    0 til að fara aftur.
   wwcConfigConversationChannelIconInput: Núverandi táknið fyrir aðskilda þýðingarásina
     er {0}. Litakóðar eru studdir; sláðu inn 0 til að fara aftur.
   wwcConfigConversationChatPriorityInput: 'Núverandi forgangur spjallviðburðar er
@@ -661,8 +658,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Breyta aðskildu rássniði
   wwcConfigConversationChannelIconSuccess: Breytti rásartáknið þitt með góðum árangri.
-  wwcConfigChatChannelFormatInvalid: 'Ógilt rássnið greindist. Vinsamlegast vertu
-    viss um að sniðið þitt innihaldi eftirfarandi breytur: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Breyta aðskildum rásartákni
   wwcConfigConversationChatFormatSuccess: Sniði þínu hefur verið breytt með góðum
     árangri.
@@ -678,10 +673,6 @@ Messages:
     þínu, en PlaceholderAPI er ekki uppsett. Vinsamlegast vertu viss um að viðbótin
     hafi hlaðið sig og sé virkt.
   wwcConfigChatChannelIconInvalid: Ógilt rásartákn greindist. Sjálfgefið að {0}...
-  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
-    er {0}. Vinsamlegast vertu viss um að inntak þitt innihaldi eftirfarandi breytur:
-    {1}. Ef þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu
-    umkringdar prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
   wwcBlacklistBadFormat: Svarti listinn þinn er ekki rétt sniðinn sem listi. Þessu
     verður ekki framfylgt fyrr en þetta er lagað.
   wwcBlacklistedMsg: Skilaboðin þín innihalda bönnuð tungumál og voru ekki þýdd.
@@ -701,4 +692,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Bæta við nýju orði
   wwcConfigGUIChatChannelButton: Þýða rásarstillingar
   wwcConfigGUIBlacklistMessagesModify: Breyta hugtakinu ({0})
+  wwcConfigChatChannelFormatInvalid: Ógilt rássnið greindist. Sjálfgefið að {0}...
+  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
+    er {0}. Sjálfgefin viðurkennd rök okkar sem þú getur látið fylgja með: {1}. Ef
+    þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu umkringdar
+    prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
 

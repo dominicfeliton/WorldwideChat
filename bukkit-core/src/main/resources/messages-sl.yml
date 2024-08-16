@@ -649,8 +649,6 @@ Messages:
     kanal.
   wwcConfigConversationSeparateChatChannelForceSuccess: Uspešno preklopljeno prisiljevanje
     ločenega kanala.
-  wwcConfigConversationChatFormatBadInput: Zdi se, da manjka vsaj ena od zgoraj omenjenih
-    spremenljivk ({0}). Poskusite znova ali vnesite 0, da se vrnete nazaj.
   wwcConfigConversationChannelIconInput: Trenutna ikona ločenega prevajalskega kanala
     je {0}. Barvne kode so podprte; vnesite 0, da se vrnete nazaj.
   wwcConfigConversationChatPriorityInput: 'Trenutna prednostna naloga dogodka v klepetu
@@ -658,8 +656,6 @@ Messages:
     nalog: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Spremenite obliko ločenega kanala
   wwcConfigConversationChannelIconSuccess: Uspešno spremenil ikono vašega kanala.
-  wwcConfigChatChannelFormatInvalid: 'Zaznana je neveljavna oblika kanala. Prepričajte
-    se, da vaša oblika vključuje naslednje spremenljivke: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Spremenite ločeno ikono kanala
   wwcConfigConversationChatFormatSuccess: Vaša oblika je bila uspešno spremenjena.
   wwcConfigGUISeparateChatChannelForceButton: Prisilite ločen kanal
@@ -673,10 +669,6 @@ Messages:
     PlaceholderAPI ni nameščen. Prepričajte se, da je vtičnik naložen in omogočen.
   wwcConfigChatChannelIconInvalid: Zaznana je neveljavna ikona kanala. Privzeta vrednost
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
-    je {0}. Prepričajte se, da vaš vnos vključuje naslednje spremenljivke: {1}. Če
-    imate PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki
-    (%). Vnesite 0, da se vrnete nazaj.'
   wwcBlacklistBadFormat: Vaš črni seznam ni pravilno oblikovan kot seznam. Ne bo uveljavljen,
     dokler to ne bo določeno.
   wwcBlacklistedMsg: Vaše sporočilo vsebuje prepovedan jezik in ni bilo prevedeno.
@@ -695,4 +687,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novo besedo
   wwcConfigGUIChatChannelButton: Prevedi nastavitve kanala
   wwcConfigGUIBlacklistMessagesModify: Spremeni izraz ({0})
+  wwcConfigChatChannelFormatInvalid: Zaznana je neveljavna oblika kanala. Privzeta
+    vrednost {0}...
+  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
+    je {0}. Naši privzeti priznani argumenti, ki jih lahko vključite: {1}. Če imate
+    PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki (%).
+    Vnesite 0, da se vrnete nazaj.'
 

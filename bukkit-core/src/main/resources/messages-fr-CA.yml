@@ -701,9 +701,6 @@ Messages:
     toutes les traductions.
   wwcConfigConversationSeparateChatChannelForceSuccess: La mise à coche a réussi à
     forcer le canal séparé.
-  wwcConfigConversationChatFormatBadInput: Il semble qu'il vous manque au moins une
-    des variables susmentionnées ({0}). Veuillez réessayer ou tapez 0 pour revenir
-    en arrière.
   wwcConfigConversationChannelIconInput: L'icône actuelle pour le canal de traduction
     distinct est {0}. Les codes couleur sont pris en charge; tapez 0 pour revenir
     en arrière.
@@ -712,8 +709,6 @@ Messages:
     priorités valides: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Modifier le format des canaux distincts
   wwcConfigConversationChannelIconSuccess: Changement réussi de l'icône de votre chaîne.
-  wwcConfigChatChannelFormatInvalid: 'Format de canal non valide détecté. Veuillez
-    vous assurer que votre format inclut les variables suivantes: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Modifier l'icône de canal distinct
   wwcConfigConversationChatFormatSuccess: Votre format a été modifié avec succès.
   wwcConfigGUISeparateChatChannelForceButton: Chaîne séparée par force
@@ -729,10 +724,6 @@ Messages:
     que le plug-in a été chargé et qu'il est activé.
   wwcConfigChatChannelIconInvalid: Icône de canal non valide détectée. La valeur par
     défaut est {0}...
-  wwcConfigConversationChannelFormatInput: 'Le format actuel du canal de discussion
-    distinct est {0}. Veuillez vous assurer que vos données comprennent les variables
-    suivantes: {1}. Si vous avez PlaceholderAPI, assurez-vous plutôt que ces variables
-    sont entourées de pourcentages (%). Tapez 0 pour revenir en arrière.'
   wwcBlacklistBadFormat: Votre liste noire n'est pas correctement formatée en tant
     que liste. Elle ne sera pas appliquée tant que cette situation n'aura pas été
     réglée.
@@ -753,4 +744,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Ajouter un nouveau mot
   wwcConfigGUIChatChannelButton: Traduire les paramètres du canal
   wwcConfigGUIBlacklistMessagesModify: Modifier le terme ({0})
+  wwcConfigChatChannelFormatInvalid: Format de canal non valide détecté. La définition
+    par défaut est {0}...
+  wwcConfigConversationChannelFormatInput: 'Le format actuel pour le canal de discussion
+    distinct est {0}. Nos arguments reconnus par défaut que vous pouvez inclure: {1}.
+    Si vous avez PlaceholderAPI, assurez-vous que ces variables sont plutôt entourées
+    de pourcentages (%). Tapez 0 pour revenir en arrière.'
 

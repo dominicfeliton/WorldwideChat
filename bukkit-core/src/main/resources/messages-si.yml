@@ -638,17 +638,12 @@ Messages:
     බල කෙරෙනු ඇත.
   wwcConfigConversationSeparateChatChannelForceSuccess: වෙනම නාලිකාවට බල කරමින් සාර්ථකව
     මාරු විය.
-  wwcConfigConversationChatFormatBadInput: ඉහත සඳහන් විචල්යයන්ගෙන් අවම වශයෙන් එක්
-    අයෙකු ඔබට අතුරුදන් වී ඇති බවක් පෙනේ ({0}). කරුණාකර නැවත උත්සාහ කරන්න, නැතහොත්
-    ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationChannelIconInput: වෙනම පරිවර්තන නාලිකාව සඳහා වත්මන් අයිකනය
     {0} වේ. වර්ණ කේත සඳහා සහය දක්වයි; ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationChatPriorityInput: 'වර්තමාන චැට් සිදුවීම් ප්රමුඛතාවය {0} වේ.
     0 ටයිප් කරන්න ආපසු යන්න හෝ වලංගු ප්රමුඛතා මෙම ලැයිස්තුවෙන් තෝරන්න: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: වෙනම නාලිකා ආකෘතිය වෙනස් කරන්න
   wwcConfigConversationChannelIconSuccess: ඔබේ නාලිකා නිරූපකය සාර්ථකව වෙනස් කළේය.
-  wwcConfigChatChannelFormatInvalid: 'අවලංගු නාලිකා ආකෘතිය අනාවරණය විය කරුණාකර ඔබේ
-    ආකෘතියට පහත සඳහන් විචල්යයන් ඇතුළත් බවට වග බලා ගන්න: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: වෙනම නාලිකා අයිකනය වෙනස් කරන්න
   wwcConfigConversationChatFormatSuccess: ඔබේ ආකෘතිය සාර්ථකව වෙනස් කර ඇත.
   wwcConfigGUISeparateChatChannelForceButton: වෙනම නාලිකාව බල කරන්න
@@ -662,10 +657,6 @@ Messages:
     ඇත, නමුත් PlaceholderAPI ස්ථාපනය කර නැත. ප්ලගිනය පැටවී ඇති බවත් සක්රීය කර ඇති
     බවත් කරුණාකර සහතික කරන්න.
   wwcConfigChatChannelIconInvalid: අවලංගු නාලිකා නිරූපකය අනාවරණය විය {0} වෙත පෙරහැරීම...
-  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
-    වේ. කරුණාකර ඔබේ ආදානයට පහත සඳහන් විචල්යයන් ඇතුළත් බවට වග බලා ගන්න: {1}. ඔබට PlaceholderAPI
-    තිබේ නම්, එම විචල්යයන් ඒ වෙනුවට ප්රතිශතවලින් (%) වට වී ඇති බවට වග බලා ගන්න. ආපසු
-    යාමට 0 ටයිප් කරන්න.'
   wwcBlacklistBadFormat: ඔබේ අසාදු ලැයිස්තුව ලැයිස්තුවක් ලෙස නිසි ලෙස ආකෘතිකරණය කර
     නැත. එය නිවැරදි කරන තෙක් එය ක්රියාත්මක නොකෙරේ.
   wwcBlacklistedMsg: ඔබේ පණිවිඩයේ තහනම් භාෂාව අඩංගු වන අතර එය පරිවර්තනය කර නැත.
@@ -685,4 +676,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: නව වචනය එක් කරන්න
   wwcConfigGUIChatChannelButton: නාලිකා සැකසුම් පරිවර්තනය කරන්න
   wwcConfigGUIBlacklistMessagesModify: කාලසීමාව වෙනස් කරන්න ({0})
+  wwcConfigChatChannelFormatInvalid: අවලංගු නාලිකා ආකෘතිය අනාවරණය විය {0} වෙත පෙරහැරීම...
+  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
+    වේ. ඔබට ඇතුළත් කළ හැකි අපගේ පෙරනිමි පිළිගත් තර්ක: {1}. ඔබට PlaceholderAPI තිබේ
+    නම්, එම විචල්යයන් ඒ වෙනුවට ප්රතිශතවලින් (%) වට වී ඇති බවට වග බලා ගන්න. ආපසු යාමට
+    0 ටයිප් කරන්න.'
 

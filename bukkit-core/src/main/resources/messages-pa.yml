@@ -643,17 +643,12 @@ Messages:
     ਕੀਤਾ ਜਾਵੇਗਾ।
   wwcConfigConversationSeparateChatChannelForceSuccess: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਮਜਬੂਰ ਕਰਨ ਨਾਲ
     ਸਫਲਤਾਪੂਰਵਕ ਟ
-  wwcConfigConversationChatFormatBadInput: ਅਜਿਹਾ ਲਗਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਉਪਰੋਕਤ ਵੇਰੀਏਬਲਾਂ
-    ਵਿੱਚੋਂ ਘੱਟੋ ਘੱਟ ਇੱਕ ਗੁੰਮ ਹੋ ਰਹੇ ਹੋ ({0}). ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ, ਜਾਂ ਵਾਪਸ
-    ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
   wwcConfigConversationChannelIconInput: ਵੱਖਰੇ ਅਨੁਵਾਦ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਆਈਕਨ {0} ਹੈ।
     ਰੰਗ ਕੋਡ ਸਮਰਥਿਤ ਹਨ; ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
   wwcConfigConversationChatPriorityInput: 'ਮੌਜੂਦਾ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਹੈ. ਟਾਈਪ
     ਕਰੋ 0 ਵਾਪਸ ਜਾਓ ਜਾਂ ਵੈਧ ਤਰਜੀਹਾਂ ਦੀ ਇਸ ਸੂਚੀ ਵਿੱਚੋਂ ਚੁਣੋ: {1}।'
   wwcConfigGUISeparateChatChannelFormatButton: ਵੱਖਰੇ ਚੈਨਲ ਫਾਰਮੈਟ ਬਦਲੋ
   wwcConfigConversationChannelIconSuccess: ਸਫਲਤਾਪੂਰਵਕ ਆਪਣੇ ਚੈਨਲ ਆਈਕਨ ਨੂੰ ਬਦ
-  wwcConfigChatChannelFormatInvalid: 'ਅਵੈਧ ਚੈਨਲ ਫਾਰਮੈਟ ਖੋਜਿਆ ਗਿਆ. ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ
-    ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਫਾਰਮੈਟ ਵਿੱਚ ਹੇਠਾਂ ਦਿੱਤੇ ਵੇਰੀਏਬਲ ਸ਼ਾਮਲ ਹਨ: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: ਵੱਖਰਾ ਚੈਨਲ ਆਈਕਨ ਬਦਲੋ
   wwcConfigConversationChatFormatSuccess: ਤੁਹਾਡਾ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ ਗਿਆ ਹੈ.
   wwcConfigGUISeparateChatChannelForceButton: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਫੋਰਸ ਕਰੋ
@@ -669,10 +664,6 @@ Messages:
     ਸਮਰੱਥ ਹੈ.
   wwcConfigChatChannelIconInvalid: ਅਵੈਧ ਚੈਨਲ ਆਈਕਨ ਲੱਭਿਆ ਗਿਆ. {0} ਤੇ ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ
     ਹੈ...
-  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
-    ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਇਨਪੁਟ ਵਿੱਚ ਹੇਠ ਦਿੱਤੇ ਵੇਰੀਏਬਲ ਸ਼ਾਮਲ ਹਨ: {1} ਜੇ
-    ਤੁਹਾਡੇ ਕੋਲ ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ
-    (%) ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
   wwcBlacklistBadFormat: ਤੁਹਾਡੀ ਬਲੈਕਲਿਸਟ ਨੂੰ ਸੂਚੀ ਦੇ ਰੂਪ ਵਿੱਚ ਸਹੀ ਢੰਗ ਨਾਲ ਫਾਰਮੈਟ ਨਹੀਂ
     ਕੀਤਾ ਗਿਆ ਹੈ। ਇਹ ਉਦੋਂ ਤੱਕ ਲਾਗੂ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ ਜਦੋਂ ਤੱਕ ਇਹ ਨਿਸ਼ਚਤ ਨਹੀਂ ਹੁੰਦਾ.
   wwcBlacklistedMsg: ਤੁਹਾਡੇ ਸੁਨੇਹੇ ਵਿੱਚ ਵਰਜਿਤ ਭਾਸ਼ਾ ਹੈ ਅਤੇ ਇਸਦਾ ਅਨੁਵਾਦ ਨਹੀਂ ਕੀਤਾ ਗਿਆ
@@ -693,4 +684,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: ਨਵਾਂ ਸ਼ਬਦ ਸ਼ਾਮਲ ਕਰੋ
   wwcConfigGUIChatChannelButton: ਚੈਨਲ ਸੈਟਿੰਗ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
   wwcConfigGUIBlacklistMessagesModify: ਮਿਆਦ ਸੋਧੋ ({0})
+  wwcConfigChatChannelFormatInvalid: ਅਵੈਧ ਚੈਨਲ ਫਾਰਮੈਟ ਖੋਜਿਆ ਗਿਆ. {0} ਤੇ ਡਿਫੌਲਟ ਹੋ
+    ਰਿਹਾ ਹੈ...
+  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
+    ਸਾਡੀਆਂ ਡਿਫੌਲਟ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਦਲੀਲਾਂ ਜੋ ਤੁਸੀਂ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ
+    ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%)
+    ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
 

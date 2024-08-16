@@ -653,9 +653,6 @@ Messages:
     metu.
   wwcConfigConversationSeparateChatChannelForceSuccess: Sėkmingai perjungtas priverčiant
     atskirą kanalą.
-  wwcConfigConversationChatFormatBadInput: Panašu, kad jums trūksta bent vieno iš
-    minėtų kintamųjų ({0}). Pabandykite dar kartą arba įveskite 0, kad grįžtumėte
-    atgal.
   wwcConfigConversationChannelIconInput: Dabartinė atskiro vertimo kanalo piktograma
     yra {0}. Palaikomi spalvų kodai; jei norite grįžti atgal, įveskite 0.
   wwcConfigConversationChatPriorityInput: 'Dabartinis pokalbio renginio prioritetas
@@ -663,8 +660,6 @@ Messages:
     sąrašo: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Pakeiskite atskiro kanalo formatą
   wwcConfigConversationChannelIconSuccess: Sėkmingai pakeista kanalo piktograma.
-  wwcConfigChatChannelFormatInvalid: 'Aptiktas netinkamas kanalo formatas. Įsitikinkite,
-    kad jūsų formate yra šie kintamieji: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Pakeiskite atskiro kanalo piktogramą
   wwcConfigConversationChatFormatSuccess: Jūsų formatas buvo sėkmingai pakeistas.
   wwcConfigGUISeparateChatChannelForceButton: Priverskite atskirą kanalą
@@ -679,10 +674,6 @@ Messages:
     tačiau “PlaceholderAPI” neįdiegta. Įsitikinkite, kad papildinys įkeltas ir įjungtas.
   wwcConfigChatChannelIconInvalid: Aptikta netinkama kanalo piktograma. Numatytasis
     nustatymas į {0}...
-  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
-    yra {0}. Įsitikinkite, kad jūsų įvestis apima šiuos kintamuosius: {1}. Jei turite
-    PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais (%), o
-    ne. Įveskite 0, kad grįžtumėte atgal.'
   wwcBlacklistBadFormat: Jūsų juodasis sąrašas nėra tinkamai suformatuotas kaip sąrašas.
     Jis nebus vykdomas tol, kol tai nebus nustatyta.
   wwcBlacklistedMsg: Jūsų žinutėje yra draudžiama kalba ir jis nebuvo išverstas.
@@ -702,4 +693,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Pridėti naują žodį
   wwcConfigGUIChatChannelButton: Versti kanalo nustatymus
   wwcConfigGUIBlacklistMessagesModify: Keisti terminą ({0})
+  wwcConfigChatChannelFormatInvalid: Aptiktas netinkamas kanalo formatas. Numatytasis
+    nustatymas į {0}...
+  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
+    yra {0}. Mūsų numatytieji pripažinti argumentai, kuriuos galite įtraukti: {1}.
+    Jei turite PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais
+    (%) vietoj. Įveskite 0, kad grįžtumėte atgal.'
 

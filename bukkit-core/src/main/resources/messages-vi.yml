@@ -653,8 +653,6 @@ Messages:
     cả các bản dịch.
   wwcConfigConversationSeparateChatChannelForceSuccess: Bật thành công buộc kênh riêng
     biệt.
-  wwcConfigConversationChatFormatBadInput: Có vẻ như bạn đang thiếu ít nhất một trong
-    các biến nói trên ({0}). Vui lòng thử lại hoặc nhập 0 để quay lại.
   wwcConfigConversationChannelIconInput: Biểu tượng hiện tại cho kênh dịch riêng biệt
     là {0}. Mã màu được hỗ trợ; gõ 0 để quay trở lại.
   wwcConfigConversationChatPriorityInput: 'Ưu tiên sự kiện chat hiện tại là {0}. Nhập
@@ -662,8 +660,6 @@ Messages:
   wwcConfigGUISeparateChatChannelFormatButton: Thay đổi định dạng kênh riêng
   wwcConfigConversationChannelIconSuccess: Thay đổi thành công biểu tượng kênh của
     bạn.
-  wwcConfigChatChannelFormatInvalid: 'Phát hiện định dạng kênh không hợp lệ. Vui lòng
-    đảm bảo định dạng của bạn bao gồm các biến sau: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Thay đổi biểu tượng kênh riêng biệt
   wwcConfigConversationChatFormatSuccess: Định dạng của bạn đã được thay đổi thành
     công.
@@ -680,10 +676,6 @@ Messages:
     plugin đã tải và được kích hoạt.
   wwcConfigChatChannelIconInvalid: Phát hiện biểu tượng kênh không hợp lệ. Mặc định
     là {0}...
-  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
-    riêng biệt là {0}. Vui lòng đảm bảo đầu vào của bạn bao gồm các biến sau: {1}.
-    Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần
-    trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
   wwcBlacklistBadFormat: Danh sách đen của bạn không được định dạng đúng như một danh
     sách. Nó sẽ không được thực thi cho đến khi điều này được khắc phục.
   wwcBlacklistedMsg: Tin nhắn của bạn chứa ngôn ngữ bị cấm và không được dịch.
@@ -703,4 +695,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Thêm từ mới
   wwcConfigGUIChatChannelButton: Dịch cài đặt kênh
   wwcConfigGUIBlacklistMessagesModify: Sửa đổi thuật ngữ ({0})
+  wwcConfigChatChannelFormatInvalid: Phát hiện định dạng kênh không hợp lệ. Mặc định
+    là {0}...
+  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
+    riêng biệt là {0}. Các đối số được công nhận mặc định của chúng tôi mà bạn có
+    thể bao gồm: {1}. Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao
+    quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
 

@@ -635,17 +635,12 @@ Messages:
     ش
   wwcConfigConversationSeparateChatChannelForceSuccess: په بریالیتوب سره جلا چینل
     مجبور شوی.
-  wwcConfigConversationChatFormatBadInput: دا داسې ښکاري چې تاسو لږترلږه د ذکر شوي
-    متغیرونو څخه لږترلږه یې ({0}) مهرباني وکړئ بیا هڅه وکړئ، یا بیرته لاړ شو لپاره
-    0 ټ
   wwcConfigConversationChannelIconInput: د جلا ژباړې چینل لپاره اوسنۍ آیکون {0} دی.
     د رنګ کوډونه ملاتړ کیږي؛ بیرته لاړ شي 0 ډول.
   wwcConfigConversationChatPriorityInput: 'د اوسنۍ چیټ پیښې لومړیتوب {0} دی. ډول 0
     بیرته لاړ شئ یا د اعتبار لومړیتوبونو له دې لیست څخه غوره کړئ: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: جلا چینل بڼه بدل کړئ
   wwcConfigConversationChannelIconSuccess: په بریالیتوب سره ستاسو د چینل آیکو
-  wwcConfigChatChannelFormatInvalid: غلط چینل بڼه کشف شوي. مهرباني وکړئ ډاډ ترلاسه
-    کړئ چې ستاسو بڼه لاندې متغیر {0}
   wwcConfigGUISeparateChatChannelIconButton: جلا چینل آیکون بدل کړئ
   wwcConfigConversationChatFormatSuccess: ستاسو بڼه په بریالیتوب سره بدل شوی دی
   wwcConfigGUISeparateChatChannelForceButton: جلا چینل زور کړئ
@@ -657,10 +652,6 @@ Messages:
   wwcConfigPAPINotInstalled: دودیز ځای خونکي ستاسو د چیٹ بڼه کې موندل شوي دي، مګر
     PlaceholderAPI نصب نه دی. مهرباني وکړئ ډاډ ترلاسه کړئ چې فلګ لوډ شوی او فعال دی
   wwcConfigChatChannelIconInvalid: غلط چینل آیکون وموندل {0} ته ډیفولټ کول...
-  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. مهرباني
-    وکړئ ډاډ ترلاسه کړئ چې ستاسو ننوت کې لاندې متغی {1} که تاسو PlaceholderAPI لرئ،
-    ډاډ ترلاسه کړئ چې هغه متغیرونه په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو
-    لپاره 0 ټایپ کړئ.
   wwcBlacklistBadFormat: ستاسو تور لیست په سمه توګه د لیست په توګه فارمیټ نه دی شوی.
     دا به تر هغه چې دا ټاکل شي، تطبیق نه شي.
   wwcBlacklistedMsg: ستاسو پیغام منع شوي ژبه لري او ژباړه نه شو.
@@ -680,4 +671,9 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: نوی کلمه اضافه کړئ
   wwcConfigGUIChatChannelButton: د چینل ترتیبات ژبا
   wwcConfigGUIBlacklistMessagesModify: اصلاح اصلاح کړئ ({0})
+  wwcConfigChatChannelFormatInvalid: غلط چینل بڼه کشف شوي. {0} ته ډیفولټ کول...
+  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. زموږ
+    ډیفالټ پیژندل شوي دلائل چې تاسو کولی شئ شامل کړئ {1} که تاسو PlaceholderAPI لرئ،
+    ډاډ ترلاسه کړئ چې هغه متغیرونه په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو
+    لپاره 0 ټایپ کړئ.
 

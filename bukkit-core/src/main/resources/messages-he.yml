@@ -579,16 +579,12 @@ Messages:
   wwcConfigForceChatChannelEnabled: ערוץ תרגום נפרד ייאלץ במהלך כל התרגומים.
   wwcConfigConversationSeparateChatChannelForceSuccess: החלפה בהצלחה בכפייה של הערוץ
     הנפרד.
-  wwcConfigConversationChatFormatBadInput: נראה שחסר לך לפחות אחד מהמשתנים הנ"ל ({0}).
-    אנא נסה שוב, או הקלד 0 כדי לחזור.
   wwcConfigConversationChannelIconInput: הסמל הנוכחי עבור ערוץ התרגום הנפרד הוא {0}.
     קודי צבע נתמכים; הקלד 0 כדי לחזור אחורה.
   wwcConfigConversationChatPriorityInput: 'עדיפות אירועי הצ''אט הנוכחית היא {0}. הקלד
     0 חזור אחורה או בחר מתוך רשימה זו של סדרי עדיפויות תקפים: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: שנה פורמט ערוץ נפרד
   wwcConfigConversationChannelIconSuccess: שינית בהצלחה את סמל הערוץ שלך.
-  wwcConfigChatChannelFormatInvalid: 'פורמט ערוץ לא חוקי זוהה. אנא ודא שהפורמט שלך
-    כולל את המשתנים הבאים: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: שנה סמל ערוץ נפרד
   wwcConfigConversationChatFormatSuccess: הפורמט שלך השתנה בהצלחה.
   wwcConfigGUISeparateChatChannelForceButton: ערוץ נפרד כוח
@@ -600,9 +596,6 @@ Messages:
   wwcConfigPAPINotInstalled: מצייני מיקום מותאמים אישית זוהו בתבנית הצ'אט שלך, אך
     PlaceHolderAPI אינו מותקן. אנא ודא שהתוסף נטען ומופעל.
   wwcConfigChatChannelIconInvalid: אייקון ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
-  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
-    {0}. אנא ודא שהקלט שלך כולל את המשתנים הבאים: {1}. אם יש לך PlaceHolderAPI, ודא
-    שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
   wwcBlacklistBadFormat: הרשימה השחורה שלך אינה מעוצבת כראוי כרשימה. זה לא ייאכף עד
     שזה יתוקן.
   wwcBlacklistedMsg: ההודעה שלך מכילה שפה אסורה ולא תורגמה.
@@ -621,4 +614,8 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: הוסף מילה חדשה
   wwcConfigGUIChatChannelButton: תרגם הגדרות ערוץ
   wwcConfigGUIBlacklistMessagesModify: שנה מונח ({0})
+  wwcConfigChatChannelFormatInvalid: פורמט ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
+  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
+    {0}. ארגומנטים מוכרים כברירת מחדל שניתן לכלול: {1}. אם יש לך PlaceHolderAPI, ודא
+    שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
 

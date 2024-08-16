@@ -623,16 +623,12 @@ Messages:
   wwcConfigForceChatChannelEnabled: सर्व भाषांतर दरम्यान एक स्वतंत्र भाषांतर चॅनेल
   wwcConfigConversationSeparateChatChannelForceSuccess: यशस्वीरित्या स्वतंत्र चॅनेलला
     जब
-  wwcConfigConversationChatFormatBadInput: असे दिसते की आपण उपरोक्त किमान एक व्हेरिएबल
-    ({0}) गमावत आहात. कृपया पुन्हा प्रयत्न करा किंवा परत जाण्यासाठी 0 टायप करा.
   wwcConfigConversationChannelIconInput: स्वतंत्र भाषांतर चॅनेलसाठी वर्तमान चिन्ह
     {0} आहे. रंग कोड समर्थित आहेत; परत जाण्यासाठी 0 टाइप करा.
   wwcConfigConversationChatPriorityInput: 'सध्याची चॅट इव्हेंट प्राधान्य {0} 0 टाइप
     करा परत जा किंवा वैध प्राधान्यांच्या या यादीमधून निवडा: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: स्वतंत्र चॅनेल स्वर
   wwcConfigConversationChannelIconSuccess: आपले चॅनेल चिन्ह यशस्वीरि
-  wwcConfigChatChannelFormatInvalid: अवैध चॅनेल फॉरमॅ कृपया आपल्या स्वरूपात खालील
-    व्हेरिएबल्स समाविष्ट आहेत {0}
   wwcConfigGUISeparateChatChannelIconButton: स्वतंत्र चॅनेल आय
   wwcConfigConversationChatFormatSuccess: आपले स्वरूप यशस्वीरित्या बदलले
   wwcConfigGUISeparateChatChannelForceButton: स्वतंत्र चॅनेल
@@ -644,9 +640,6 @@ Messages:
   wwcConfigPAPINotInstalled: आपल्या चॅट स्वरूपात सानुकूल प्लेसहोल्डर आढळले आहेत, परंतु
     प्लेसहोल्डरएपी कृपया प्लगइन लोड झाला आणि सक्षम आहे याची खात्री करा
   wwcConfigChatChannelIconInvalid: अवैध चॅनेल आयकॉन {0} वर डीफॉल्ट करणे...
-  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
-    आहे. कृपया आपल्या इनपुटमध्ये खालील व्हेरिएबल्स समाविष्ट आहेत {1} आपल्याकडे प्लेसहोल्डरएपीआय
-    असल्यास, त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
   wwcBlacklistBadFormat: आपली ब्लॅकलिस्ट सूची म्हणून योग्यरित्या फॉरमॅट केल हे निश्चित
     होईपर्यंत ते लागू केले जाणार नाही.
   wwcBlacklistedMsg: आपल्या संदेशात प्रतिबंधित भाषा आहे आणि त्याचे भाषांतर
@@ -666,4 +659,8 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: नवीन वर्ड जोडा
   wwcConfigGUIChatChannelButton: चॅनेल सेटिंग्ज
   wwcConfigGUIBlacklistMessagesModify: टर्म सुधारित करा ({0})
+  wwcConfigChatChannelFormatInvalid: अवैध चॅनेल फॉरमॅ {0} वर डीफॉल्ट करणे...
+  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
+    आहे. आपण समाविष्ट करू शकणाऱ्या आमचे डीफॉल्ट मान्यता {1} आपल्याकडे प्लेसहोल्डरएपीआय
+    असल्यास, त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
 

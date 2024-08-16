@@ -647,17 +647,12 @@ Messages:
     vertalings gedwing word.'
   wwcConfigConversationSeparateChatChannelForceSuccess: Suksesvol ingeskakel het die
     aparte kanaal dwing.
-  wwcConfigConversationChatFormatBadInput: Dit lyk asof jy ten minste een van die
-    bogenoemde veranderlikes ontbreek ({0}). Probeer asseblief weer, of tik 0 om terug
-    te gaan.
   wwcConfigConversationChannelIconInput: Die huidige ikoon vir die aparte vertaalkanaal
     is {0}. Kleurkodes word ondersteun; tik 0 om terug te gaan.
   wwcConfigConversationChatPriorityInput: 'Die huidige klessgeleenthede prioriteit
     is {0}. Tik 0 gaan na terug of kies uit hierdie lys van geldige prioriteite: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Verander aparte kanaalformaat
   wwcConfigConversationChannelIconSuccess: U kanaalikoon suksesvol verander.
-  wwcConfigChatChannelFormatInvalid: 'Ongeldige kanaalformaat opgespoor. Maak asseblief
-    seker dat u formaat die volgende veranderlikes bevat: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Verander aparte kanaalikoon
   wwcConfigConversationChatFormatSuccess: Jou formaat is suksesvol verander.
   wwcConfigGUISeparateChatChannelForceButton: Dwing afsonderlike kanaal
@@ -671,10 +666,6 @@ Messages:
     maar PlaceholderAPI is nie geïnstalleer nie. Maak asseblief seker dat die plugin
     gelaai is en geaktiveer is.
   wwcConfigChatChannelIconInvalid: Ongeldige kanaalikoon opgespoor. Standaard op {0}...
-  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
-    is {0}. Maak asseblief seker dat u invoer die volgende veranderlikes bevat: {1}.
-    As u PlaceholderAPI het, maak seker dat die veranderlikes eerder omring word deur
-    persentasies (%). Tik 0 om terug te gaan.'
   wwcBlacklistBadFormat: Jou swartlys is nie behoorlik as 'n lys geformateer nie.
     Dit sal nie toegepas word voordat dit reggestel is nie.
   wwcBlacklistedMsg: Jou boodskap bevat verbode taal en is nie vertaal nie.
@@ -694,4 +685,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Voeg nuwe woord by
   wwcConfigGUIChatChannelButton: Vertaal Channel Settings
   wwcConfigGUIBlacklistMessagesModify: Verander Term ({0})
+  wwcConfigChatChannelFormatInvalid: Ongeldige kanaalformaat opgespoor. Standaard
+    op {0}...
+  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
+    is {0}. Ons standaarderkende argumente wat u kan insluit: {1}. As u PlaceholderAPI
+    het, maak seker dat die veranderlikes eerder omring word deur persentasies (%).
+    Tik 0 om terug te gaan.'
 

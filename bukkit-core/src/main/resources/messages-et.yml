@@ -618,16 +618,12 @@ Messages:
   wwcConfigForceChatChannelEnabled: Kõigi tõlgete ajal sunnitakse eraldi tõlkekanal.
   wwcConfigConversationSeparateChatChannelForceSuccess: Eraldi kanali sundides edukalt
     lülitatud.
-  wwcConfigConversationChatFormatBadInput: Tundub, et teil puudub vähemalt üks eelnimetatud
-    muutujatest ({0}). Palun proovige uuesti, või tippige tagasi minemiseks 0.
   wwcConfigConversationChannelIconInput: Eraldi tõlkekanali praegune ikoon on {0}.
     Toetatakse värvikoode; tagasi minemiseks tippige 0.
   wwcConfigConversationChatPriorityInput: 'Praegune vestlusürituse prioriteet on {0}.
     Tippige 0, minge tagasi või valige sellest kehtivate prioriteetide loendist: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Muutke eraldi kanalivormingut
   wwcConfigConversationChannelIconSuccess: Muutis edukalt oma kanaliikooni.
-  wwcConfigChatChannelFormatInvalid: 'Tuvastati vale kanalivorming. Veenduge, et teie
-    vorming sisaldab järgmisi muutujaid: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Muutke eraldi kanaliikooni
   wwcConfigConversationChatFormatSuccess: Teie vormingut on edukalt muudetud.
   wwcConfigGUISeparateChatChannelForceButton: Sundage eraldi kanal
@@ -641,10 +637,6 @@ Messages:
     kuid PlaceholderAPI pole installitud. Veenduge, et pistikprogramm on laaditud
     ja lubatud.
   wwcConfigChatChannelIconInvalid: Tuvastati vale kanaliikoon. Vaikimisi väärtus {0}...
-  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
-    on {0}. Veenduge, et teie sisend sisaldab järgmisi muutujaid: {1}. Kui teil on
-    PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
-    (%). Tagasi minemiseks tippige 0.'
   wwcBlacklistBadFormat: Teie must nimekiri pole loendiks korralikult vormindatud.
     Seda ei jõustata enne, kui see on fikseeritud.
   wwcBlacklistedMsg: Teie sõnum sisaldab keelatud keelt ja seda ei tõlgitud.
@@ -663,4 +655,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Lisa uus sõna
   wwcConfigGUIChatChannelButton: Kanali sätete tõlkimine
   wwcConfigGUIBlacklistMessagesModify: Muuda terminit ({0})
+  wwcConfigChatChannelFormatInvalid: Tuvastati vale kanalivorming. Vaikimisi väärtus
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
+    on {0}. Meie vaikimisi tuvastatud argumendid, mida saate lisada: {1}. Kui teil
+    on PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
+    (%). Tagasi minemiseks tippige 0.'
 

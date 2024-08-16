@@ -679,9 +679,6 @@ Messages:
     timpul tuturor traducerilor.
   wwcConfigConversationSeparateChatChannelForceSuccess: Comutat cu succes forțând
     canalul separat.
-  wwcConfigConversationChatFormatBadInput: Se pare că vă lipsește cel puțin una dintre
-    variabilele menționate mai sus ({0}). Încercați din nou sau tastați 0 pentru a
-    reveni.
   wwcConfigConversationChannelIconInput: Pictograma curentă pentru canalul separat
     de traducere este {0}. Codurile de culoare sunt acceptate; tastați 0 pentru a
     reveni.
@@ -690,8 +687,6 @@ Messages:
     valide: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Schimbați formatul canalului separat
   wwcConfigConversationChannelIconSuccess: A schimbat cu succes pictograma canalului.
-  wwcConfigChatChannelFormatInvalid: 'Formatul canalului nevalid detectat. Vă rugăm
-    să vă asigurați că formatul dvs. include următoarele variabile: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Schimbați pictograma canalului separat
   wwcConfigConversationChatFormatSuccess: Formatul dvs. a fost schimbat cu succes.
   wwcConfigGUISeparateChatChannelForceButton: Forțați canalul separat
@@ -707,10 +702,6 @@ Messages:
     asigurați că pluginul s-a încărcat și este activat.
   wwcConfigChatChannelIconInvalid: Pictograma canalului nevalidă detectată. Implicit
     la {0}...
-  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
-    de chat este {0}. Vă rugăm să vă asigurați că intrarea dvs. include următoarele
-    variabile: {1}. Dacă aveți PlaceHolderAPI, asigurați-vă că acele variabile sunt
-    înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
   wwcBlacklistBadFormat: Lista dvs. neagră nu este formatată corect ca listă. Nu va
     fi aplicată până când acest lucru nu va fi stabilit.
   wwcBlacklistedMsg: Mesajul dvs. conține o limbă interzisă și nu a fost tradus.
@@ -730,4 +721,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Adaugă un cuvânt nou
   wwcConfigGUIChatChannelButton: Traduceți setările canalului
   wwcConfigGUIBlacklistMessagesModify: Modificați termenul ({0})
+  wwcConfigChatChannelFormatInvalid: Formatul canalului nevalid detectat. Implicit
+    la {0}...
+  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
+    de chat este {0}. Argumentele noastre implicite recunoscute pe care le puteți
+    include: {1}. Dacă aveți PlaceHolderAPI, asigurați-vă că acele variabile sunt
+    înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
 

@@ -710,9 +710,6 @@ Messages:
     erzwungen.
   wwcConfigConversationSeparateChatChannelForceSuccess: Das Erzwingen des separaten
     Kanals wurde erfolgreich umgeschaltet.
-  wwcConfigConversationChatFormatBadInput: Es sieht so aus, als ob Ihnen mindestens
-    eine der oben genannten Variablen fehlt ({0}). Bitte versuchen Sie es erneut,
-    oder geben Sie 0 ein, um zurückzugehen.
   wwcConfigConversationChannelIconInput: Das aktuelle Symbol für den separaten Übersetzungskanal
     ist {0}. Farbcodes werden unterstützt; geben Sie 0 ein, um zurückzugehen.
   wwcConfigConversationChatPriorityInput: 'Die aktuelle Chat-Event-Priorität ist {0}.
@@ -720,8 +717,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Separates Kanalformat ändern
   wwcConfigConversationChannelIconSuccess: Dein Kanalsymbol wurde erfolgreich geändert.
-  wwcConfigChatChannelFormatInvalid: 'Es wurde ein ungültiges Kanalformat erkannt.
-    Bitte stellen Sie sicher, dass Ihr Format die folgenden Variablen enthält: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Symbol für separaten Kanal ändern
   wwcConfigConversationChatFormatSuccess: Ihr Format wurde erfolgreich geändert.
   wwcConfigGUISeparateChatChannelForceButton: Separaten Kanal erzwingen
@@ -738,11 +733,6 @@ Messages:
     dass das Plugin geladen und aktiviert ist.
   wwcConfigChatChannelIconInvalid: Es wurde ein ungültiges Kanalsymbol erkannt. Die
     Standardeinstellung ist {0}...
-  wwcConfigConversationChannelFormatInput: 'Das aktuelle Format für den separaten
-    Chat-Kanal ist {0}. Bitte stellen Sie sicher, dass Ihre Eingabe die folgenden
-    Variablen enthält: {1}. Wenn Sie PlaceholderAPI haben, stellen Sie sicher, dass
-    diese Variablen stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein,
-    um zurückzugehen.'
   wwcBlacklistBadFormat: Ihre schwarze Liste ist nicht richtig als Liste formatiert.
     Sie wird erst durchgesetzt, wenn das Problem behoben ist.
   wwcBlacklistedMsg: Ihre Nachricht enthält verbotene Sprache und wurde nicht übersetzt.
@@ -762,4 +752,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Neues Wort hinzufügen
   wwcConfigGUIChatChannelButton: Kanaleinstellungen übersetzen
   wwcConfigGUIBlacklistMessagesModify: Begriff ändern ({0})
+  wwcConfigChatChannelFormatInvalid: Es wurde ein ungültiges Kanalformat erkannt.
+    Die Standardeinstellung ist {0}...
+  wwcConfigConversationChannelFormatInput: 'Das aktuelle Format für den separaten
+    Chat-Kanal ist {0}. Unsere anerkannten Standardargumente, die Sie einbeziehen
+    können: {1}. Wenn Sie PlaceholderAPI haben, stellen Sie sicher, dass diese Variablen
+    stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein, um zurückzugehen.'
 

@@ -658,9 +658,6 @@ Messages:
     kell kényszeríteni.
   wwcConfigConversationSeparateChatChannelForceSuccess: Sikeresen váltotta ki a külön
     csatorna kényszerítését.
-  wwcConfigConversationChatFormatBadInput: Úgy tűnik, hogy hiányzik legalább az egyik
-    fent említett változó közül ({0}). Próbálkozzon újra, vagy írja be a 0 parancsot
-    a visszalépéshez.
   wwcConfigConversationChannelIconInput: A külön fordítási csatorna aktuális ikonja
     a {0}. A színkódok támogatottak; írja be a 0 parancsot a visszalépéshez.
   wwcConfigConversationChatPriorityInput: 'Az aktuális csevegési esemény prioritása
@@ -668,8 +665,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Külön csatornaformátum módosítása
   wwcConfigConversationChannelIconSuccess: Sikeresen megváltoztatta a csatorna ikonját.
-  wwcConfigChatChannelFormatInvalid: 'Érvénytelen csatornaformátum észlelhető. Kérjük,
-    győződjön meg arról, hogy a formátum tartalmazza a következő változókat: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Külön csatorna ikon módosítása
   wwcConfigConversationChatFormatSuccess: A formátum sikeresen megváltozott.
   wwcConfigGUISeparateChatChannelForceButton: Külön csatorna kényszerítése
@@ -684,10 +679,6 @@ Messages:
     betöltődött és engedélyezve van-e.
   wwcConfigChatChannelIconInvalid: Érvénytelen csatornaikon észlelhető. Alapértelmezés
     szerint {0}...
-  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
-    {0}. Kérjük, győződjön meg arról, hogy a bemenet tartalmazza a következő változókat:
-    {1}. Ha van PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok
-    (%) veszik körül. Írja be a 0-at, hogy visszatérjen.'
   wwcBlacklistBadFormat: A feketelista nincs megfelelően formázva listaként. Ezt addig
     nem hajtják végre, amíg ez meg nem javul.
   wwcBlacklistedMsg: Üzenete tiltott nyelvet tartalmaz, és nem fordították le.
@@ -707,4 +698,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Új szó hozzáadása
   wwcConfigGUIChatChannelButton: Csatorna beállítások fordítása
   wwcConfigGUIBlacklistMessagesModify: Kifejezés módosítása ({0})
+  wwcConfigChatChannelFormatInvalid: Érvénytelen csatornaformátum észlelhető. Alapértelmezés
+    szerint {0}...
+  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
+    {0}. Alapértelmezett felismert argumentumaink, amelyeket felvehet: {1}. Ha van
+    PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok (%) veszik
+    körül. Írja be a 0-at, hogy visszatérjen.'
 

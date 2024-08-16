@@ -649,8 +649,6 @@ Messages:
     under alla översättningar.
   wwcConfigConversationSeparateChatChannelForceSuccess: Lyckades växla för att tvinga
     den separata kanalen.
-  wwcConfigConversationChatFormatBadInput: Det verkar som om du saknar minst en av
-    de ovannämnda variablerna ({0}). Försök igen, eller skriv 0 för att gå tillbaka.
   wwcConfigConversationChannelIconInput: Den aktuella ikonen för den separata översättningskanalen
     är {0}. Färgkoder stöds; skriv 0 för att gå tillbaka.
   wwcConfigConversationChatPriorityInput: 'Den aktuella prioriteten för chatthändelse
@@ -658,8 +656,6 @@ Messages:
     {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Ändra separat kanalformat
   wwcConfigConversationChannelIconSuccess: Ändrade din kanalikon framgångsrikt.
-  wwcConfigChatChannelFormatInvalid: 'Ogiltigt kanalformat har upptäckts. Se till
-    att formatet innehåller följande variabler: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Ändra separat kanalikon
   wwcConfigConversationChatFormatSuccess: Ditt format har ändrats framgångsrikt.
   wwcConfigGUISeparateChatChannelForceButton: Tvinga separat kanal
@@ -674,10 +670,6 @@ Messages:
     och är aktiverat.
   wwcConfigChatChannelIconInvalid: Ogiltig kanalikon har upptäckts. Standardinställt
     till {0}...
-  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
-    chattkanalen är {0}. Se till att din inmatning innehåller följande variabler:
-    {1}. Om du har placeHolderAPI, se till att dessa variabler omges av procentsatser
-    (%) istället. Skriv 0 för att gå tillbaka.'
   wwcBlacklistBadFormat: Din svartlista är inte korrekt formaterad som en lista. Det
     kommer inte att verkställas förrän detta är fixat.
   wwcBlacklistedMsg: Ditt meddelande innehåller förbjudet språk och har inte översatts.
@@ -696,4 +688,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Lägg till nytt ord
   wwcConfigGUIChatChannelButton: Översätt kanalinställningar
   wwcConfigGUIBlacklistMessagesModify: Ändra term ({0})
+  wwcConfigChatChannelFormatInvalid: Ogiltigt kanalformat har upptäckts. Standardinställt
+    till {0}...
+  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
+    chattkanalen är {0}. Våra standardigenkända argument som du kan inkludera: {1}.
+    Om du har placeHolderAPI, se till att dessa variabler omges av procentsatser (%)
+    istället. Skriv 0 för att gå tillbaka.'
 

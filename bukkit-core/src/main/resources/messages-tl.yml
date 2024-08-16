@@ -716,9 +716,6 @@ Messages:
     pipilitin sa lahat ng mga pagsasalin.
   wwcConfigConversationSeparateChatChannelForceSuccess: Matagumpay na pinapilit ang
     hiwalay na channel.
-  wwcConfigConversationChatFormatBadInput: Mukhang nawawala ka ng hindi bababa sa
-    isa sa mga nabanggit na variable ({0}). Mangyaring subukang muli, o i-type ang
-    0 upang bumalik.
   wwcConfigConversationChannelIconInput: Ang kasalukuyang icon para sa hiwalay na
     channel ng pagsasalin ay {0}. Sinusuportahan ang mga code ng kulay; i-type ang
     0 upang bumalik.
@@ -728,8 +725,6 @@ Messages:
   wwcConfigGUISeparateChatChannelFormatButton: Baguhin ang Magkahiwalay na Format
   wwcConfigConversationChannelIconSuccess: Matagumpay na binago ang icon ng iyong
     channel.
-  wwcConfigChatChannelFormatInvalid: 'Nakita ang hindi wastong format ng channel.
-    Mangyaring tiyaking kasama sa iyong format ang mga sumusunod na variable: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Baguhin ang hiwalay na icon ng channel
   wwcConfigConversationChatFormatSuccess: Matagumpay na binago ang iyong format.
   wwcConfigGUISeparateChatChannelForceButton: Sapilitang Hiwalay na Channel
@@ -745,10 +740,6 @@ Messages:
     ang plugin at pinagana.
   wwcConfigChatChannelIconInvalid: Nakita ang hindi wastong icon ng channel. Pag-default
     sa {0}...
-  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
-    na chat channel ay {0}. Mangyaring tiyaking kasama sa iyong input ang mga sumusunod
-    na variable: {1}. Kung mayroon kang PlaceholderAPI, tiyaking ang mga variable
-    na iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
   wwcBlacklistBadFormat: Ang iyong blacklist ay hindi maayos na na-format bilang isang
     listahan. Hindi ito ipapatupad hanggang sa maayos ito.
   wwcBlacklistedMsg: Naglalaman ang iyong mensahe ng ipinagbabawal na wika at hindi
@@ -769,4 +760,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Magdagdag ng Bagong Salita
   wwcConfigGUIChatChannelButton: Isalin ang mga setting ng Channel
   wwcConfigGUIBlacklistMessagesModify: Baguhin ang Termino ({0})
+  wwcConfigChatChannelFormatInvalid: Nakita ang hindi wastong format ng channel. Pag-default
+    sa {0}...
+  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
+    na chat channel ay {0}. Ang aming mga default na kinikilalang argumento na maaari
+    mong isama: {1}. Kung mayroon kang PlaceholderAPI, tiyaking ang mga variable na
+    iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
 

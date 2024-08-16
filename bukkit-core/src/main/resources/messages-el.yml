@@ -704,9 +704,6 @@ Messages:
     τη διάρκεια όλων των μεταφράσεων.
   wwcConfigConversationSeparateChatChannelForceSuccess: Επιτυχής εναλλαγή αναγκάζοντας
     το ξεχωριστό κανάλι.
-  wwcConfigConversationChatFormatBadInput: Φαίνεται ότι λείπει τουλάχιστον μία από
-    τις προαναφερθείσες μεταβλητές ({0}). Δοκιμάστε ξανά ή πληκτρολογήστε 0 για να
-    επιστρέψετε.
   wwcConfigConversationChannelIconInput: Το τρέχον εικονίδιο για το ξεχωριστό κανάλι
     μετάφρασης είναι {0}. Υποστηρίζονται κωδικοί χρώματος. Πληκτρολογήστε 0 για να
     επιστρέψετε.
@@ -716,8 +713,6 @@ Messages:
   wwcConfigGUISeparateChatChannelFormatButton: Αλλαγή ξεχωριστής μορφής καναλιού
   wwcConfigConversationChannelIconSuccess: Αλλάξτε με επιτυχία το εικονίδιο του καναλιού
     σας.
-  wwcConfigChatChannelFormatInvalid: 'Εντοπίστηκε μη έγκυρη μορφή καναλιού. Βεβαιωθείτε
-    ότι η μορφή σας περιλαμβάνει τις ακόλουθες μεταβλητές: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Αλλάξτε το ξεχωριστό εικονίδιο καναλιού
   wwcConfigConversationChatFormatSuccess: Η μορφή σας άλλαξε με επιτυχία.
   wwcConfigGUISeparateChatChannelForceButton: Ξεχωριστό κανάλι δύναμης
@@ -734,10 +729,6 @@ Messages:
     το πρόσθετο έχει φορτωθεί και είναι ενεργοποιημένο.
   wwcConfigChatChannelIconInvalid: Εντοπίστηκε μη έγκυρο εικονίδιο καναλιού. Προεπιλογή
     σε {0}...
-  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
-    συνομιλίας είναι {0}. Βεβαιωθείτε ότι η είσοδος σας περιλαμβάνει τις ακόλουθες
-    μεταβλητές: {1}. Εάν έχετε PlaceHolderAPI, βεβαιωθείτε ότι αυτές οι μεταβλητές
-    περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
   wwcBlacklistBadFormat: Η μαύρη λίστα σας δεν έχει μορφοποιηθεί σωστά ως λίστα. Δεν
     θα εφαρμοστεί μέχρι να διορθωθεί αυτό.
   wwcBlacklistedMsg: Το μήνυμά σας περιέχει απαγορευμένη γλώσσα και δεν μεταφράστηκε.
@@ -757,4 +748,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Προσθήκη νέας λέξης
   wwcConfigGUIChatChannelButton: Μετάφραση ρυθμίσεων καναλιού
   wwcConfigGUIBlacklistMessagesModify: Τροποποίηση όρου ({0})
+  wwcConfigChatChannelFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή καναλιού. Προεπιλογή
+    σε {0}...
+  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
+    συνομιλίας είναι {0}. Τα προεπιλεγμένα αναγνωρισμένα ορίσματά μας που μπορείτε
+    να συμπεριλάβετε: {1}. Εάν έχετε PlaceHolderAPI, βεβαιωθείτε ότι αυτές οι μεταβλητές
+    περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
 

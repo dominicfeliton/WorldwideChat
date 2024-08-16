@@ -659,9 +659,6 @@ Messages:
     किया जाएगा।
   wwcConfigConversationSeparateChatChannelForceSuccess: अलग चैनल को फ़ोर्स करने के
     लिए सफलतापूर्वक टॉगल किया गया।
-  wwcConfigConversationChatFormatBadInput: ऐसा लगता है कि आप उपरोक्त चर ({0}) में
-    से कम से कम एक को खो रहे हैं। कृपया फिर से कोशिश करें, या वापस जाने के लिए 0 टाइप
-    करें।
   wwcConfigConversationChannelIconInput: अलग अनुवाद चैनल के लिए मौजूदा आइकन {0} है।
     रंग कोड समर्थित हैं; वापस जाने के लिए 0 टाइप करें।
   wwcConfigConversationChatPriorityInput: 'मौजूदा चैट इवेंट की प्राथमिकता {0} है।
@@ -669,8 +666,6 @@ Messages:
   wwcConfigGUISeparateChatChannelFormatButton: अलग चैनल फ़ॉर्मेट बदलें
   wwcConfigConversationChannelIconSuccess: अपने चैनल के आइकॉन को सफलतापूर्वक बदला
     गया।
-  wwcConfigChatChannelFormatInvalid: 'अमान्य चैनल फ़ॉर्मैट का पता चला। कृपया पक्का
-    कर लें कि आपके फ़ॉर्मैट में ये वैरिएबल शामिल हैं: {0}।'
   wwcConfigGUISeparateChatChannelIconButton: अलग चैनल आइकन बदलें
   wwcConfigConversationChatFormatSuccess: आपका फ़ॉर्मेट सफलतापूर्वक बदल दिया गया है।
   wwcConfigGUISeparateChatChannelForceButton: फोर्स सेपरेट चैनल
@@ -686,10 +681,6 @@ Messages:
     गया है और सक्षम है।
   wwcConfigChatChannelIconInvalid: अमान्य चैनल आइकन का पता चला। डिफ़ॉल्ट रूप से {0}
     पर सेट किया जा रहा है...
-  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
-    कृपया पक्का करें कि आपके इनपुट में ये वैरिएबल शामिल हों: {1}। यदि आपके पास placeHolderAPI
-    है, तो सुनिश्चित करें कि वे वैरिएबल इसके बजाय प्रतिशत (%) से घिरे हों। वापस जाने
-    के लिए 0 टाइप करें।'
   wwcBlacklistBadFormat: आपकी ब्लैकलिस्ट को सूची के रूप में ठीक से स्वरूपित नहीं किया
     गया है। इसे तब तक लागू नहीं किया जाएगा जब तक कि इसे ठीक नहीं किया जाता।
   wwcBlacklistedMsg: आपके संदेश में प्रतिबंधित भाषा है और इसका अनुवाद नहीं किया गया
@@ -710,4 +701,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: नया शब्द जोड़ें
   wwcConfigGUIChatChannelButton: चैनल सेटिंग का अनुवाद करें
   wwcConfigGUIBlacklistMessagesModify: शब्द संशोधित करें ({0})
+  wwcConfigChatChannelFormatInvalid: अमान्य चैनल फ़ॉर्मैट का पता चला। डिफ़ॉल्ट रूप
+    से {0} पर सेट किया जा रहा है...
+  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
+    हमारे डिफ़ॉल्ट मान्यता प्राप्त तर्क जिन्हें आप शामिल कर सकते हैं: {1}। यदि आपके
+    पास placeHolderAPI है, तो सुनिश्चित करें कि वे वैरिएबल इसके बजाय प्रतिशत (%) से
+    घिरे हों। वापस जाने के लिए 0 टाइप करें।'
 

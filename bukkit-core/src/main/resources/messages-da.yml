@@ -642,16 +642,12 @@ Messages:
     under alle oversættelser.
   wwcConfigConversationSeparateChatChannelForceSuccess: Skiftet med succes og tvang
     den separate kanal.
-  wwcConfigConversationChatFormatBadInput: Det ser ud til, at du mangler mindst en
-    af de ovennævnte variabler ({0}). Prøv igen, eller skriv 0 for at gå tilbage.
   wwcConfigConversationChannelIconInput: Det aktuelle ikon for den separate oversættelseskanal
     er {0}. Farvekoder understøttes; skriv 0 for at gå tilbage.
   wwcConfigConversationChatPriorityInput: 'Den aktuelle chathændelsesprioritet er
     {0}. Skriv 0 gå tilbage eller vælg fra denne liste over gyldige prioriteter: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Skift separat kanalformat
   wwcConfigConversationChannelIconSuccess: Ændret dit kanalikon med succes.
-  wwcConfigChatChannelFormatInvalid: 'Ugyldigt kanalformat fundet. Sørg for, at dit
-    format indeholder følgende variabler: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Skift separat kanalikon
   wwcConfigConversationChatFormatSuccess: Dit format er blevet ændret med succes.
   wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
@@ -666,10 +662,6 @@ Messages:
     er indlæst og er aktiveret.
   wwcConfigChatChannelIconInvalid: Ugyldigt kanalikon fundet. Standardindstilling
     til {0}...
-  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
-    er {0}. Sørg for, at dit input indeholder følgende variabler: {1}. Hvis du har
-    PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
-    (%) i stedet. Skriv 0 for at gå tilbage.'
   wwcBlacklistBadFormat: Din sortliste er ikke korrekt formateret som en liste. Det
     vil ikke blive håndhævet, før dette er løst.
   wwcBlacklistedMsg: Din besked indeholder forbudt sprog og blev ikke oversat.
@@ -689,4 +681,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Tilføj nyt ord
   wwcConfigGUIChatChannelButton: Oversæt kanalindstillinger
   wwcConfigGUIBlacklistMessagesModify: Ændre udtryk ({0})
+  wwcConfigChatChannelFormatInvalid: Ugyldigt kanalformat fundet. Standardindstilling
+    til {0}...
+  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
+    er {0}. Vores standard anerkendte argumenter, som du kan inkludere: {1}. Hvis
+    du har PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
+    (%) i stedet. Skriv 0 for at gå tilbage.'
 

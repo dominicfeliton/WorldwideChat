@@ -639,17 +639,12 @@ Messages:
     આવશે.
   wwcConfigConversationSeparateChatChannelForceSuccess: સફળતાપૂર્વક અલગ ચેનલને દબાણ
     કરીને ટૉગલ કર્યું.
-  wwcConfigConversationChatFormatBadInput: એવું લાગે છે કે તમે ઉપરોક્ત ચલો પૈકી ઓછામાં
-    ઓછા એક ગુમ થઈ રહ્યા છો ({0}). કૃપા કરીને ફરીથી પ્રયાસ કરો, અથવા પાછા જવા માટે
-    0 લખો.
   wwcConfigConversationChannelIconInput: અલગ અનુવાદ ચેનલ માટેનું વર્તમાન ચિહ્ન {0}
     છે. રંગ કોડ સપોર્ટેડ છે; પાછા જવા માટે 0 ટાઇપ કરો.
   wwcConfigConversationChatPriorityInput: 'વર્તમાન ચેટ ઇવેન્ટ અગ્રતા {0} છે. ટાઇપ
     કરો 0 પાછા પર જાઓ અથવા માન્ય પ્રાથમિકતાઓની આ સૂચિમાંથી પસંદ કરો: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: અલગ ચેનલ ફોર્મેટ બદલો
   wwcConfigConversationChannelIconSuccess: સફળતાપૂર્વક તમારા ચેનલ ચિહ્નને બદલ્યું.
-  wwcConfigChatChannelFormatInvalid: 'અમાન્ય ચેનલ ફોર્મેટ શોધાયું. કૃપા કરીને ખાતરી
-    કરો કે તમારા ફોર્મેટમાં નીચેના ચલો શામેલ છે: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: અલગ ચેનલ ચિહ્ન બદલો
   wwcConfigConversationChatFormatSuccess: તમારું ફોર્મેટ સફળતાપૂર્વક બદલવામાં આવ્યું
     છે.
@@ -666,10 +661,6 @@ Messages:
     લોડ થઈ ગયું છે અને સક્ષમ છે.
   wwcConfigChatChannelIconInvalid: અમાન્ય ચેનલ ચિહ્ન શોધાયું. {0} પર ડિફોલ્ટ થઈ રહ્યું
     છે...
-  wwcConfigConversationChannelFormatInput: 'અલગ ચેટ ચેનલ માટેનું વર્તમાન ફોર્મેટ {0}
-    છે. કૃપા કરીને ખાતરી કરો કે તમારા ઇનપુટમાં નીચેના ચલો શામેલ છે: {1}. જો તમારી
-    પાસે પ્લેસહોલ્ડરAPI છે, તો ખાતરી કરો કે તે ચલો તેના બદલે ટકાવારી (%) દ્વારા ઘેરાયેલા
-    છે. પાછા જવા માટે 0 લખો.'
   wwcBlacklistBadFormat: તમારી બ્લેકલિસ્ટ સૂચિ તરીકે યોગ્ય રીતે ફોર્મેટ કરવામાં આવી
     નથી. જ્યાં સુધી આ નિશ્ચિત ન થાય ત્યાં સુધી તેનો અમલ કરવામાં આવશે નહીં.
   wwcBlacklistedMsg: તમારા સંદેશામાં પ્રતિબંધિત ભાષા શામેલ છે અને તેનું ભાષાંતર કરવામાં
@@ -690,4 +681,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: નવો શબ્દ ઉમેરો
   wwcConfigGUIChatChannelButton: ચેનલ સેટિંગ્સ અનુવાદ કરો
   wwcConfigGUIBlacklistMessagesModify: ટર્મ ફેરફાર કરો ({0})
+  wwcConfigChatChannelFormatInvalid: અમાન્ય ચેનલ ફોર્મેટ શોધાયું. {0} પર ડિફોલ્ટ થઈ
+    રહ્યું છે...
+  wwcConfigConversationChannelFormatInput: 'અલગ ચેટ ચેનલ માટેનું વર્તમાન ફોર્મેટ {0}
+    છે. અમારી ડિફૉલ્ટ માન્યતાપ્રાપ્ત દલીલો જેમાં તમે શામેલ કરી શકો છો: {1}. જો તમારી
+    પાસે પ્લેસહોલ્ડરAPI છે, તો ખાતરી કરો કે તે ચલો તેના બદલે ટકાવારી (%) દ્વારા ઘેરાયેલા
+    છે. પાછા જવા માટે 0 લખો.'
 

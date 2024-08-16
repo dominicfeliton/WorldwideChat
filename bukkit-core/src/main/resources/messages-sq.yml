@@ -676,9 +676,6 @@ Messages:
     gjatë të gjitha përkthimeve.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ndërroi me sukses duke detyruar
     kanalin e veçantë.
-  wwcConfigConversationChatFormatBadInput: Duket sikur ju mungon të paktën një nga
-    variablat e lartpërmendura ({0}). Ju lutemi provoni përsëri, ose shkruani 0 për
-    të kthyer përsëri.
   wwcConfigConversationChannelIconInput: Ikona aktuale për kanalin e veçantë të përkthimit
     është {0}. Kodet e ngjyrave mbështeten; shkruani 0 për t'u kthyer prapa.
   wwcConfigConversationChatPriorityInput: 'Prioriteti aktual i ngjarjes së bisedës
@@ -686,8 +683,6 @@ Messages:
     të vlefshme: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Ndryshoni formatin e veçantë të
   wwcConfigConversationChannelIconSuccess: Ndryshoi me sukses ikonën e kanalit tuaj.
-  wwcConfigChatChannelFormatInvalid: 'Zbuluar formati i pavlefshëm i kanalit. Ju lutemi
-    sigurohuni që formati juaj përfshin variablat e mëposhtme: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Ndryshoni ikonën e kanalit të veç
   wwcConfigConversationChatFormatSuccess: Formati juaj është ndryshuar me sukses.
   wwcConfigGUISeparateChatChannelForceButton: Forconi kanalin e veçantë
@@ -703,10 +698,6 @@ Messages:
     që shtojca të jetë ngarkuar dhe është e aktivizuar.
   wwcConfigChatChannelIconInvalid: Zbuluar ikona e pavlefshme e kanalit. Parazgjedhja
     në {0}...
-  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
-    bisedës është {0}. Ju lutemi sigurohuni që hyrja juaj të përfshijë variablat e
-    mëposhtme: {1}. Nëse keni PlaceholderAPI, sigurohuni që ato variabla të jenë të
-    rrethuar nga përqindje (%) në vend të kësaj. Shkruani 0 për të kthyer përsëri.'
   wwcBlacklistBadFormat: Lista juaj e zezë nuk është formatuar siç duhet si një listë.
     Nuk do të zbatohet derisa të rregullohet kjo.
   wwcBlacklistedMsg: Mesazhi juaj përmban gjuhë të ndaluar dhe nuk është përkthyer.
@@ -726,4 +717,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Shto Fjalë të Re
   wwcConfigGUIChatChannelButton: Përkthejeni parametrat e kanalit
   wwcConfigGUIBlacklistMessagesModify: Modifikoni Termin ({0})
+  wwcConfigChatChannelFormatInvalid: Zbuluar formati i pavlefshëm i kanalit. Parazgjedhja
+    në {0}...
+  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
+    bisedës është {0}. Argumentet tona të paracaktuara të njohura që mund të përfshini:
+    {1}. Nëse keni PlaceholderAPI, sigurohuni që ato variabla të jenë të rrethuar
+    nga përqindje (%) në vend të kësaj. Shkruani 0 për të kthyer përsëri.'
 

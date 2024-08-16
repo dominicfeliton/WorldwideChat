@@ -649,17 +649,12 @@ Messages:
     prekladový kanál.
   wwcConfigConversationSeparateChatChannelForceSuccess: Úspešne prepnuté vynútenie
     samostatného kanála.
-  wwcConfigConversationChatFormatBadInput: Vyzerá to, že vám chýba aspoň jedna z vyššie
-    uvedených premenných ({0}). Skúste to znova alebo zadajte 0, aby ste sa vrátili
-    späť.
   wwcConfigConversationChannelIconInput: Aktuálna ikona samostatného prekladového
     kanála je {0}. Farebné kódy sú podporované; zadajte 0, aby ste sa vrátili späť.
   wwcConfigConversationChatPriorityInput: 'Aktuálna priorita udalosti chatu je {0}.
     Zadajte 0 prejsť na späť alebo vyberte z tohto zoznamu platných priorít: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Zmeniť samostatný formát kanála
   wwcConfigConversationChannelIconSuccess: Úspešne zmenila ikonu kanála.
-  wwcConfigChatChannelFormatInvalid: 'Zistený neplatný formát kanála. Uistite sa,
-    že váš formát obsahuje nasledujúce premenné: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Zmeniť ikonu samostatného kanála
   wwcConfigConversationChatFormatSuccess: Váš formát bol úspešne zmenený.
   wwcConfigGUISeparateChatChannelForceButton: Vynútiť samostatný kanál
@@ -674,10 +669,6 @@ Messages:
     je povolený.
   wwcConfigChatChannelIconInvalid: Zistila sa neplatná ikona kanála. Predvolené nastavenie
     na {0}...
-  wwcConfigConversationChannelFormatInput: 'Aktuálny formát samostatného chatového
-    kanála je {0}. Uistite sa, že váš vstup obsahuje nasledujúce premenné: {1}. Ak
-    máte PlaceholderAPI, uistite sa, že tieto premenné sú namiesto toho obklopené
-    percentami (%). Zadajte 0, aby ste sa vrátili späť.'
   wwcBlacklistBadFormat: Vaša čierna listina nie je správne naformátovaná ako zoznam.
     Nebude sa uplatňovať, kým sa to nevyrieši.
   wwcBlacklistedMsg: Vaša správa obsahuje zakázaný jazyk a nebola preložená.
@@ -696,4 +687,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Pridať nové slovo
   wwcConfigGUIChatChannelButton: Preložiť nastavenia kanála
   wwcConfigGUIBlacklistMessagesModify: Upraviť výraz ({0})
+  wwcConfigChatChannelFormatInvalid: Zistený neplatný formát kanála. Predvolené nastavenie
+    na {0}...
+  wwcConfigConversationChannelFormatInput: 'Aktuálny formát samostatného chatového
+    kanála je {0}. Naše predvolené rozpoznané argumenty, ktoré môžete zahrnúť: {1}.
+    Ak máte PlaceholderAPI, uistite sa, že tieto premenné sú namiesto toho obklopené
+    percentami (%). Zadajte 0, aby ste sa vrátili späť.'
 

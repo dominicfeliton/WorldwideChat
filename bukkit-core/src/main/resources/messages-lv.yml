@@ -643,9 +643,6 @@ Messages:
     tulkošanas kanāls.
   wwcConfigConversationSeparateChatChannelForceSuccess: Veiksmīgi pārslēgts, piespiežot
     atsevišķu kanālu.
-  wwcConfigConversationChatFormatBadInput: Izskatās, ka jums trūkst vismaz viena no
-    iepriekšminētajiem mainīgajiem ({0}). Lūdzu, mēģiniet vēlreiz vai ierakstiet 0,
-    lai atgrieztos.
   wwcConfigConversationChannelIconInput: Pašreizējā atsevišķā tulkošanas kanāla ikona
     ir {0}. Tiek atbalstīti krāsu kodi; ierakstiet 0, lai atgrieztos.
   wwcConfigConversationChatPriorityInput: 'Pašreizējā tērzēšanas notikuma prioritāte
@@ -653,8 +650,6 @@ Messages:
     saraksta: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Mainīt atsevišķa kanāla formātu
   wwcConfigConversationChannelIconSuccess: Veiksmīgi mainīta kanāla ikona.
-  wwcConfigChatChannelFormatInvalid: 'Atklāts nederīgs kanāla formāts. Lūdzu, pārliecinieties,
-    vai jūsu formātā ir šādi mainīgie: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Mainīt atsevišķa kanāla ikonu
   wwcConfigConversationChatFormatSuccess: Jūsu formāts ir veiksmīgi mainīts.
   wwcConfigGUISeparateChatChannelForceButton: Piespiež atsevišķu kanālu
@@ -669,10 +664,6 @@ Messages:
     un ir iespējots.
   wwcConfigChatChannelIconInvalid: Atklāta nederīga kanāla ikona. Noklusējuma iestatījums
     uz {0}...
-  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
-    formāts ir {0}. Lūdzu, pārliecinieties, vai jūsu ievadē ir šādi mainīgie: {1}.
-    Ja jums ir PlaceholderAPI, pārliecinieties, vai šos mainīgos ir ieskauti procenti
-    (%). Ierakstiet 0, lai atgrieztos.'
   wwcBlacklistBadFormat: Jūsu melnais saraksts nav pareizi formatēts kā saraksts.
     Tas netiks izpildīts, kamēr tas nav noteikts.
   wwcBlacklistedMsg: Jūsu ziņojums satur aizliegtu valodu un nav tulkots.
@@ -692,4 +683,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Pievienot jaunu vārdu
   wwcConfigGUIChatChannelButton: Tulkot kanāla iestatījumus
   wwcConfigGUIBlacklistMessagesModify: Modificēt terminu ({0})
+  wwcConfigChatChannelFormatInvalid: Atklāts nederīgs kanāla formāts. Noklusējuma
+    iestatījums uz {0}...
+  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
+    formāts ir {0}. Mūsu noklusējuma atzītie argumenti, kurus varat iekļaut: {1}.
+    Ja jums ir PlaceholderAPI, pārliecinieties, vai šos mainīgos ir ieskauti procenti
+    (%). Ierakstiet 0, lai atgrieztos.'
 

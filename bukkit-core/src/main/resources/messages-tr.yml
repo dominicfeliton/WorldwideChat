@@ -640,17 +640,12 @@ Messages:
     zorunlu olacaktır.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı zorlamak başarıyla
     değiştirildi.
-  wwcConfigConversationChatFormatBadInput: Görünüşe göre yukarıda belirtilen değişkenlerden
-    en az birini kaçırıyorsunuz ({0}). Lütfen tekrar deneyin veya geri dönmek için
-    0 yazın.
   wwcConfigConversationChannelIconInput: Ayrı çeviri kanalı için geçerli simge {0}
     'dir. Renk kodları desteklenir; geri dönmek için 0 yazın.
   wwcConfigConversationChatPriorityInput: 'Mevcut sohbet etkinliği önceliği {0} ''dir.
     0 yazın geriye gidin veya geçerli öncelikler listesinden seçim yapın: {1}.'
   wwcConfigGUISeparateChatChannelFormatButton: Ayrı Kanal Formatını Değiştir
   wwcConfigConversationChannelIconSuccess: Kanal simgenizi başarıyla değiştirdiniz.
-  wwcConfigChatChannelFormatInvalid: 'Geçersiz kanal biçimi algılandı. Lütfen formatınızın
-    aşağıdaki değişkenleri içerdiğinden emin olun: {0}.'
   wwcConfigGUISeparateChatChannelIconButton: Ayrı Kanal Simgesini Değiştir
   wwcConfigConversationChatFormatSuccess: Formatınız başarıyla değiştirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ayrı Kanalı Zorla
@@ -665,10 +660,6 @@ Messages:
     emin olun.
   wwcConfigChatChannelIconInvalid: Geçersiz kanal simgesi algılandı. Varsayılan olarak
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
-    {0} ''dir. Lütfen girdinizin aşağıdaki değişkenleri içerdiğinden emin olun: {1}.
-    PlaceHolderAPI''niz varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin
-    olun. Geri dönmek için 0 yazın.'
   wwcBlacklistBadFormat: Kara listeniz bir liste olarak düzgün biçimde biçimlendirilmemiştir.
     Bu düzeltilene kadar uygulanmayacaktır.
   wwcBlacklistedMsg: Mesajınız yasaklanmış bir dil içeriyor ve çevrilmedi.
@@ -688,4 +679,10 @@ Messages:
   wwcConfigGUIChatMessagesBlacklistNewButton: Yeni Kelime Ekle
   wwcConfigGUIChatChannelButton: Kanal Ayarlarını Çevir
   wwcConfigGUIBlacklistMessagesModify: Terimi Değiştir ({0})
+  wwcConfigChatChannelFormatInvalid: Geçersiz kanal biçimi algılandı. Varsayılan olarak
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
+    {0} ''dir. Ekleyebileceğiniz varsayılan tanınmış argümanlarımız: {1}. PlaceHolderAPI''niz
+    varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin olun. Geri dönmek
+    için 0 yazın.'
 

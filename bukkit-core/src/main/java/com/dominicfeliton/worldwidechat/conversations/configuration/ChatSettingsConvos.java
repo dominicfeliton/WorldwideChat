@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.conversations.configuration;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
@@ -15,9 +16,15 @@ import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventPriority;
+import org.bukkit.scheduler.BukkitRunnable;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
 
 public class ChatSettingsConvos {
 
@@ -66,14 +73,9 @@ public class ChatSettingsConvos {
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
 			Player currPlayer = ((Player) context.getForWhom());
-			boolean valid = input.contains("{suffix}") && input.contains("{prefix}") && input.contains("{username}");
 
-			if (valid || input.equals("0")) {
-				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
-						"Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
-			}
-			refs.sendFancyMsg("wwcConfigConversationChatFormatBadInput", new String[] {vars}, "&c", currPlayer);
-			return this;
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
+					"Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
 		}
 	}
 
@@ -114,6 +116,7 @@ public class ChatSettingsConvos {
 
 	public static class AddBlacklistTerm extends StringPrompt {
 		private SmartInventory previousInventory;
+		private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 		public AddBlacklistTerm(SmartInventory previousInventory) {
 			this.previousInventory = previousInventory;
@@ -130,26 +133,38 @@ public class ChatSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
+			// TODO: Make sure async call is safe on this and MessagesOverride...
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-			if (!input.equals("0")) {
-				YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
-				Player currPlayer = ((Player) context.getForWhom());
-				List<String> bannedWords = config.getStringList("bannedWords");
-				bannedWords.add(input); // Add currentTerm to the list
-				config.set("bannedWords", bannedWords); // Save the updated list back to the config
+			BukkitRunnable run = new BukkitRunnable() {
+				@Override
+				public void run() {
+					if (!input.equals("0")) {
+						YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
+						Player currPlayer = ((Player) context.getForWhom());
+						Set<String> bannedWords = main.getBlacklistTerms();
+						bannedWords.add(input); // Add currentTerm to the list
+						config.set("bannedWords", new ArrayList<String>(bannedWords)); // Save the updated list back to the config
 
-				main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
-				final TextComponent successfulChange = Component.text()
-						.content(refs.getMsg("wwcConfigConversationBlacklistAddSuccess", currPlayer))
-						.color(NamedTextColor.GREEN)
-						.build();
-				refs.sendMsg((Player)context.getForWhom(), successfulChange);
+						main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
+						final TextComponent successfulChange = Component.text()
+								.content(refs.getMsg("wwcConfigConversationBlacklistAddSuccess", currPlayer))
+								.color(NamedTextColor.GREEN)
+								.build();
+						refs.sendMsg((Player)context.getForWhom(), successfulChange);
 
-				// TODO: Make sure async call is safe on this and MessagesOverride...
-				main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), true);
-			}
-			previousInventory.open((Player)context.getForWhom());
+						main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), false);
+						BukkitRunnable open = new BukkitRunnable() {
+							@Override
+							public void run() {
+								previousInventory.open((Player)context.getForWhom());
+							}
+						};
+						wwcHelper.runSync(open, ENTITY, new Object[] {(Player) context.getForWhom()});
+					}
+				}
+			};
+			wwcHelper.runAsync(run, ASYNC, null);
 			return END_OF_CONVERSATION;
 		}
 	}
