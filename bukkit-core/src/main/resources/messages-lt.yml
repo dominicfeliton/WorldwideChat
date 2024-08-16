@@ -679,7 +679,6 @@ Messages:
   wwcBlacklistedMsg: Jūsų žinutėje yra draudžiama kalba ir jis nebuvo išverstas.
   wwcBlacklistedMsgDetected: 'Aptikta į juodąjį sąrašą įtrauktas žodis ({0}): {1}'
   wwcBlacklistLoaded: Jūsų juodasis {0} uždraustų žodžių sąrašas buvo įkeltas.
-  wwcConfigGUIModifyBlacklistSettings: Pakeisti juodąjį sąrašą - {0} žodžiai
   wwcConfigConversationAddBlacklist: Įveskite naują terminą, kurį norėtumėte pridėti,
     arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Ištrinti iš juodojo sąrašo
@@ -699,4 +698,5 @@ Messages:
     yra {0}. Mūsų numatytieji pripažinti argumentai, kuriuos galite įtraukti: {1}.
     Jei turite PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais
     (%) vietoj. Įveskite 0, kad grįžtumėte atgal.'
+  wwcConfigGUIModifyBlacklistSettings: Pakeisti juodąjį sąrašą
 

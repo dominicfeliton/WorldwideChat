@@ -719,7 +719,6 @@ Messages:
   wwcBlacklistedMsg: El missatge conté idioma prohibit i no s'ha traduït.
   wwcBlacklistedMsgDetected: 'S''ha detectat la paraula a la llista negra ({0}): {1}'
   wwcBlacklistLoaded: La vostra llista negra de paraules prohibides {0} ha estat carregada.
-  wwcConfigGUIModifyBlacklistSettings: Modificar la llista negra - Paraules {0}
   wwcConfigConversationAddBlacklist: Introduïu el terme nou que voleu afegir o escriviu
     0 per tornar enrere.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Eliminar de la llista negra
@@ -739,4 +738,5 @@ Messages:
     és {0}. Els nostres arguments reconeguts per defecte que podeu incloure: {1}.
     Si teniu PlaceholderAPI, assegureu-vos que aquestes variables estiguin envoltades
     per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
+  wwcConfigGUIModifyBlacklistSettings: Modificar la llista negra
 

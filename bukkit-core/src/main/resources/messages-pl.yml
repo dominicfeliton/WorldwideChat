@@ -675,7 +675,6 @@ Messages:
   wwcBlacklistedMsg: Twoja wiadomość zawiera zabroniony język i nie została przetłumaczona.
   wwcBlacklistedMsgDetected: 'Wykryto słowo na czarnej liście ({0}): {1}'
   wwcBlacklistLoaded: Twoja czarna lista zakazanych słów {0} została załadowana.
-  wwcConfigGUIModifyBlacklistSettings: Zmodyfikuj czarną listę - {0} Words
   wwcConfigConversationAddBlacklist: Wprowadź nowy termin, który chcesz dodać, lub
     wpisz 0, aby wrócić.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Usuń z czarnej listy
@@ -695,4 +694,5 @@ Messages:
     to {0}. Nasze domyślne rozpoznane argumenty, które możesz uwzględnić: {1}. Jeśli
     masz PlaceholderAPI, upewnij się, że te zmienne są otoczone wartościami procentowymi
     (%). Wpisz 0, aby wrócić.'
+  wwcConfigGUIModifyBlacklistSettings: Modyfikuj czarną listę
 

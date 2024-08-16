@@ -621,7 +621,6 @@ Messages:
   wwcBlacklistedMsg: تحتوي رسالتك على لغة محظورة ولم تتم ترجمتها.
   wwcBlacklistedMsgDetected: 'تم اكتشاف الكلمة المدرجة في القائمة السوداء ({0}): {1}'
   wwcBlacklistLoaded: تم تحميل القائمة السوداء للكلمات {0} المحظورة.
-  wwcConfigGUIModifyBlacklistSettings: تعديل القائمة السوداء - {0} كلمات
   wwcConfigConversationAddBlacklist: أدخل المصطلح الجديد الذي ترغب في إضافته، أو اكتب
     0 للرجوع إليه.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: حذف من القائمة السوداء
@@ -640,4 +639,5 @@ Messages:
   wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
     هو {0}. حججنا الافتراضية المعترف بها والتي يمكنك تضمينها: {1}. إذا كان لديك PlaceholderAPI،
     فتأكد من أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً من ذلك. اكتب 0 للعودة.'
+  wwcConfigGUIModifyBlacklistSettings: تعديل القائمة السوداء
 

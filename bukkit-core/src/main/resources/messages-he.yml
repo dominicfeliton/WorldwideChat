@@ -601,7 +601,6 @@ Messages:
   wwcBlacklistedMsg: ההודעה שלך מכילה שפה אסורה ולא תורגמה.
   wwcBlacklistedMsgDetected: 'מילה ברשימה השחורה ({0}) זוהתה: {1}'
   wwcBlacklistLoaded: הרשימה השחורה שלך של מילים אסורות {0} נטענה.
-  wwcConfigGUIModifyBlacklistSettings: שנה רשימה שחורה - מילים {0}
   wwcConfigConversationAddBlacklist: הזן את המונח החדש שברצונך להוסיף, או הקלד 0 כדי
     לחזור אחורה.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: מחק מהרשימה השחורה
@@ -618,4 +617,5 @@ Messages:
   wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
     {0}. ארגומנטים מוכרים כברירת מחדל שניתן לכלול: {1}. אם יש לך PlaceHolderAPI, ודא
     שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcConfigGUIModifyBlacklistSettings: שנה רשימה שחורה
 

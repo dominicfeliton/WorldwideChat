@@ -686,7 +686,6 @@ Messages:
   wwcBlacklistedMsg: Вашето съобщение съдържа забранен език и не е преведено.
   wwcBlacklistedMsgDetected: 'Открита е дума в черния списък ({0}): {1}'
   wwcBlacklistLoaded: Вашият черен списък с {0} забранени думи е зареден.
-  wwcConfigGUIModifyBlacklistSettings: Промяна на черния списък - {0} Думи
   wwcConfigConversationAddBlacklist: Въведете новия термин, който искате да добавите,
     или въведете 0, за да се върнете назад.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Изтриване от черния списък
@@ -705,4 +704,5 @@ Messages:
     е {0}. Нашите разпознати аргументи по подразбиране, които можете да включите:
     {1}. Ако имате PlaceholderAPI, уверете се, че тези променливи са заобиколени от
     проценти (%) вместо това. Въведете 0, за да се върнете назад.'
+  wwcConfigGUIModifyBlacklistSettings: Промяна на черния списък
 

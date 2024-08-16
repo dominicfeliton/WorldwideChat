@@ -675,7 +675,6 @@ Messages:
   wwcBlacklistedMsg: Ditt meddelande innehåller förbjudet språk och har inte översatts.
   wwcBlacklistedMsgDetected: 'Svartlistat ord ({0}) upptäckt: {1}'
   wwcBlacklistLoaded: Din svarta lista med {0} förbjudna ord har laddats.
-  wwcConfigGUIModifyBlacklistSettings: Ändra svartlista - {0} ord
   wwcConfigConversationAddBlacklist: Ange den nya termen du vill lägga till, eller
     skriv 0 för att gå tillbaka.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Ta bort från svartlistan
@@ -694,4 +693,5 @@ Messages:
     chattkanalen är {0}. Våra standardigenkända argument som du kan inkludera: {1}.
     Om du har placeHolderAPI, se till att dessa variabler omges av procentsatser (%)
     istället. Skriv 0 för att gå tillbaka.'
+  wwcConfigGUIModifyBlacklistSettings: Ändra svartlista
 

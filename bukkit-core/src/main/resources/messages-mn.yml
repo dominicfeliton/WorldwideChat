@@ -696,7 +696,6 @@ Messages:
   wwcBlacklistedMsgDetected: 'Хар жагсаалтад орсон үг ({0}) илэрсэн: {1}'
   wwcBlacklistLoaded: '{0} хориглосон үгсийн хар жагсаалт чинь ачаалагдаад байна шүү
     дээ.'
-  wwcConfigGUIModifyBlacklistSettings: Хар жагсаалтыг өөрчлөх - {0} Үгс
   wwcConfigConversationAddBlacklist: Нэмэхийг хүсч буй шинэ нэр томъёог оруулна уу
     эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Хар жагсаалтаас устгах
@@ -716,4 +715,5 @@ Messages:
     {0} юм. Таны оруулж болох бидний анхдагч хүлээн зөвшөөрөгдсөн аргументууд: {1}.
     Хэрэв танд PlaceholderAPI байгаа бол тэдгээр хувьсагчууд оронд нь хувь (%) -ээр
     хүрээлэгдсэн эсэхийг шалгаарай. Буцахын тулд 0 гэж бичнэ үү.'
+  wwcConfigGUIModifyBlacklistSettings: Хар жагсаалтыг өөрчлөх
 

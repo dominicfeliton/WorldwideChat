@@ -710,7 +710,6 @@ Messages:
   wwcBlacklistedMsgDetected: 'È stata rilevata una parola nella lista nera ({0}):
     {1}'
   wwcBlacklistLoaded: La tua lista nera delle parole vietate {0} è stata caricata.
-  wwcConfigGUIModifyBlacklistSettings: Modifica lista nera - {0} Words
   wwcConfigConversationAddBlacklist: Inserisci il nuovo termine che desideri aggiungere
     o digita 0 per tornare indietro.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Elimina dalla lista nera
@@ -731,4 +730,5 @@ Messages:
     separato è {0}. I nostri argomenti predefiniti riconosciuti che puoi includere:
     {1}. Se hai PlaceholderAPI, assicurati invece che quelle variabili siano circondate
     da percentuali (%). Digita 0 per tornare indietro.'
+  wwcConfigGUIModifyBlacklistSettings: Modifica lista nera
 

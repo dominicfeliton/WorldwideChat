@@ -668,7 +668,6 @@ Messages:
   wwcBlacklistedMsg: Ваше повідомлення містить заборонену мову і не було перекладено.
   wwcBlacklistedMsgDetected: 'Виявлено слово в чорному списку ({0}): {1}'
   wwcBlacklistLoaded: Ваш чорний список заборонених слів {0} завантажено.
-  wwcConfigGUIModifyBlacklistSettings: Змінити чорний список - {0} Words
   wwcConfigConversationAddBlacklist: Введіть новий термін, який ви хочете додати,
     або введіть 0, щоб повернутися назад.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Видалити з чорного списку
@@ -688,4 +687,5 @@ Messages:
     {0}. Наші стандартні розпізнані аргументи, які ви можете включити: {1}. Якщо у
     вас є PlaceHolderAPI, переконайтеся, що ці змінні оточені відсотками (%) замість
     цього. Введіть 0, щоб повернутися назад.'
+  wwcConfigGUIModifyBlacklistSettings: Змінити чорний список
 

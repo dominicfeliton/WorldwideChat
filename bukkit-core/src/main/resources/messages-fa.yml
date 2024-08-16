@@ -665,7 +665,6 @@ Messages:
   wwcBlacklistedMsg: پیام شما حاوی زبان ممنوعه است و ترجمه نشده است.
   wwcBlacklistedMsgDetected: 'کلمه در لیست سیاه ({0}) شناسایی شد: {1}'
   wwcBlacklistLoaded: لیست سیاه کلمات ممنوعه {0} شما بارگذاری شده است.
-  wwcConfigGUIModifyBlacklistSettings: تغییر لیست سیاه - {0} کلمات
   wwcConfigConversationAddBlacklist: عبارت جدیدی را که می خواهید اضافه کنید وارد کنید
     یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: حذف از لیست سیاه
@@ -685,4 +684,5 @@ Messages:
     آرگومانهای پیش فرض شناخته شده ما که می توانید آن را شامل کنید: {1}. اگر PlaceHolderAPI
     دارید، مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. 0 را برای
     بازگشت تایپ کنید.'
+  wwcConfigGUIModifyBlacklistSettings: اصلاح لیست سیاه
 

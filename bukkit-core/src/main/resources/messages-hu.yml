@@ -684,7 +684,6 @@ Messages:
   wwcBlacklistedMsg: Üzenete tiltott nyelvet tartalmaz, és nem fordították le.
   wwcBlacklistedMsgDetected: 'Feketelistán szereplő szót ({0}) észlelték: {1}'
   wwcBlacklistLoaded: Betöltötték a {0} tiltott szavak feketelistáját.
-  wwcConfigGUIModifyBlacklistSettings: Feketelista módosítása - {0} Words
   wwcConfigConversationAddBlacklist: Írja be az új kifejezést, amelyet hozzá szeretne
     adni, vagy írja be a 0 parancsot a visszalépéshez.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Törlés a feketelistáról
@@ -704,4 +703,5 @@ Messages:
     {0}. Alapértelmezett felismert argumentumaink, amelyeket felvehet: {1}. Ha van
     PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok (%) veszik
     körül. Írja be a 0-at, hogy visszatérjen.'
+  wwcConfigGUIModifyBlacklistSettings: Feketelista módosítása
 

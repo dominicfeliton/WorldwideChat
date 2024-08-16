@@ -502,7 +502,6 @@ Messages:
   wwcBlacklistedMsg: 您的消息包含禁用语言，且未翻译。
   wwcBlacklistedMsgDetected: 检测到列入黑名单的单词 ({0})：{1}
   wwcBlacklistLoaded: 你的 {0} 禁词黑名单已加载。
-  wwcConfigGUIModifyBlacklistSettings: 修改黑名单-{0} Words
   wwcConfigConversationAddBlacklist: 输入要添加的新术语，或键入 0 返回。
   wwcConfigGUIChatMessagesBlacklistDeleteButton: 从黑名单中删除
   wwcConfigConversationBlacklistAddSuccess: 成功将新术语添加到黑名单。
@@ -517,4 +516,5 @@ Messages:
   wwcConfigChatChannelFormatInvalid: 检测到无效的频道格式。默认为 {0}...
   wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。我们默认可识别的参数，您可以包括：{1}.如果你有占位符
     API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
+  wwcConfigGUIModifyBlacklistSettings: 修改黑名单
 

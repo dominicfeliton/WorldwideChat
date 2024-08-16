@@ -738,7 +738,6 @@ Messages:
   wwcBlacklistedMsg: Ihre Nachricht enthält verbotene Sprache und wurde nicht übersetzt.
   wwcBlacklistedMsgDetected: 'Wort auf der schwarzen Liste ({0}) erkannt: {1}'
   wwcBlacklistLoaded: Deine schwarze Liste mit {0} gesperrten Wörtern wurde geladen.
-  wwcConfigGUIModifyBlacklistSettings: Schwarze Liste ändern - {0} Words
   wwcConfigConversationAddBlacklist: Geben Sie den neuen Begriff ein, den Sie hinzufügen
     möchten, oder geben Sie 0 ein, um zurückzugehen.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Von der Blacklist löschen
@@ -758,4 +757,5 @@ Messages:
     Chat-Kanal ist {0}. Unsere anerkannten Standardargumente, die Sie einbeziehen
     können: {1}. Wenn Sie PlaceholderAPI haben, stellen Sie sicher, dass diese Variablen
     stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein, um zurückzugehen.'
+  wwcConfigGUIModifyBlacklistSettings: Schwarze Liste ändern
 

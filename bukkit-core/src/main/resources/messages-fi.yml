@@ -664,7 +664,6 @@ Messages:
   wwcBlacklistedMsg: Viestisi sisältää kiellettyä kieltä eikä sitä ole käännetty.
   wwcBlacklistedMsgDetected: 'Mustalla listalla oleva sana ({0}) havaittu: {1}'
   wwcBlacklistLoaded: Musta listasi {0} kielletyistä sanoista on ladattu.
-  wwcConfigGUIModifyBlacklistSettings: Muokkaa mustaa luetteloa - {0} Words
   wwcConfigConversationAddBlacklist: Kirjoita uusi termi, jonka haluat lisätä, tai
     kirjoita 0 palataksesi takaisin.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Poista mustasta listasta
@@ -684,4 +683,5 @@ Messages:
     on {0}. Oletusarvoiset tunnistetut argumentit, jotka voit sisällyttää: {1}. Jos
     käytössäsi on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet
     (%) sen sijaan. Kirjoita 0 palataksesi takaisin.'
+  wwcConfigGUIModifyBlacklistSettings: Muokkaa mustaa luetteloa
 

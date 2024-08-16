@@ -667,7 +667,6 @@ Messages:
   wwcBlacklistedMsg: Din besked indeholder forbudt sprog og blev ikke oversat.
   wwcBlacklistedMsgDetected: 'Sortlistet ord ({0}) fundet: {1}'
   wwcBlacklistLoaded: Din sorte liste over {0} forbudte ord er blevet indlæst.
-  wwcConfigGUIModifyBlacklistSettings: Rediger sortliste - {0} ord
   wwcConfigConversationAddBlacklist: Indtast det nye udtryk, du vil tilføje, eller
     skriv 0 for at gå tilbage.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Slet fra sortliste
@@ -687,4 +686,5 @@ Messages:
     er {0}. Vores standard anerkendte argumenter, som du kan inkludere: {1}. Hvis
     du har PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
     (%) i stedet. Skriv 0 for at gå tilbage.'
+  wwcConfigGUIModifyBlacklistSettings: Rediger sortliste
 

@@ -681,7 +681,6 @@ Messages:
   wwcBlacklistedMsg: Tin nhắn của bạn chứa ngôn ngữ bị cấm và không được dịch.
   wwcBlacklistedMsgDetected: 'Phát hiện từ trong danh sách đen ({0}): {1}'
   wwcBlacklistLoaded: Danh sách đen {0} từ bị cấm của bạn đã được tải.
-  wwcConfigGUIModifyBlacklistSettings: Sửa đổi danh sách đen - {0} Words
   wwcConfigConversationAddBlacklist: Nhập thuật ngữ mới mà bạn muốn thêm hoặc nhập
     0 để quay lại.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Xóa khỏi danh sách đen
@@ -701,4 +700,5 @@ Messages:
     riêng biệt là {0}. Các đối số được công nhận mặc định của chúng tôi mà bạn có
     thể bao gồm: {1}. Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao
     quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
+  wwcConfigGUIModifyBlacklistSettings: Sửa đổi danh sách đen
 

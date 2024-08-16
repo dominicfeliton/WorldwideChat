@@ -37,7 +37,7 @@ public class BlacklistGui implements InventoryProvider {
 		return SmartInventory.builder().id("blacklistMenu")
 				.provider(this).size(6, 9)
 				.manager(invManager)
-				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIModifyBlacklistSettings", new String[] {blacklist.size()+""}, inPlayer))
+				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIModifyBlacklistSettings", new String[] {}, inPlayer))
 				.build();
 	}
 
@@ -76,7 +76,9 @@ public class BlacklistGui implements InventoryProvider {
 			pagination.setItems(currentTerms);
 			pagination.setItemsPerPage(28);
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
-			
+
+			invManager.setCommonButton(5, 0, player, contents,"Quit");
+
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous");

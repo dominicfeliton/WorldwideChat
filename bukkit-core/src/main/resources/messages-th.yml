@@ -576,7 +576,6 @@ Messages:
   wwcBlacklistedMsg: ข้อความของคุณมีภาษาที่ต้องห้ามและไม่ได้รับการแปล
   wwcBlacklistedMsgDetected: 'ตรวจพบคำในรายการดำ ({0}): {1}'
   wwcBlacklistLoaded: โหลดบัญชีดำของคำที่ถูกต้องห้าม {0} ของคุณแล้ว
-  wwcConfigGUIModifyBlacklistSettings: แก้ไขบัญชีดำ - คำว่า {0}
   wwcConfigConversationAddBlacklist: ป้อนคำใหม่ที่คุณต้องการเพิ่ม หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwcConfigGUIChatMessagesBlacklistDeleteButton: ลบออกจากบัญชีดำ
   wwcConfigConversationBlacklistAddSuccess: เพิ่มคำใหม่ลงในบัญชีดำเรียบร้อยแล้ว
@@ -593,4 +592,5 @@ Messages:
     {0}อาร์กิวเมนต์ที่ได้รับการยอมรับเริ่มต้นของเราซึ่งคุณสามารถรวมได้: {1}หากคุณมี
     PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์ (%) แทนพิมพ์
     0 เพื่อกลับไป'
+  wwcConfigGUIModifyBlacklistSettings: แก้ไขบัญชีดำ
 

@@ -515,7 +515,6 @@ Messages:
   wwcBlacklistedMsg: メッセージには禁止されている言語が含まれており、翻訳されていません。
   wwcBlacklistedMsgDetected: ブラックリストに載っている単語 ({0}) が検出されました:{1}
   wwcBlacklistLoaded: '{0} 禁止語のブラックリストが読み込まれました。'
-  wwcConfigGUIModifyBlacklistSettings: ブラックリストの修正-{0} Words
   wwcConfigConversationAddBlacklist: 追加したい新しい用語を入力するか、0 を入力して戻ってください。
   wwcConfigGUIChatMessagesBlacklistDeleteButton: ブラックリストから削除
   wwcConfigConversationBlacklistAddSuccess: ブラックリストに新しい用語が正常に追加されました。
@@ -530,4 +529,5 @@ Messages:
   wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。デフォルトは {0}...
   wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。デフォルトで認識されている引数は
     {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
+  wwcConfigGUIModifyBlacklistSettings: ブラックリストを変更
 

@@ -665,7 +665,6 @@ Messages:
   wwcBlacklistedMsg: Mesajınız yasaklanmış bir dil içeriyor ve çevrilmedi.
   wwcBlacklistedMsgDetected: 'Kara listeye alınmış kelime ({0}) tespit edildi: {1}'
   wwcBlacklistLoaded: '{0} yasaklanmış kelimelerden oluşan kara listeniz yüklendi.'
-  wwcConfigGUIModifyBlacklistSettings: Kara Listeyi Değiştir - {0} Kelimeleri
   wwcConfigConversationAddBlacklist: Eklemek istediğiniz yeni terimi girin veya geri
     dönmek için 0 yazın.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Kara Listeden Sil
@@ -685,4 +684,5 @@ Messages:
     {0} ''dir. Ekleyebileceğiniz varsayılan tanınmış argümanlarımız: {1}. PlaceHolderAPI''niz
     varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin olun. Geri dönmek
     için 0 yazın.'
+  wwcConfigGUIModifyBlacklistSettings: Kara Listeyi Değiştir
 

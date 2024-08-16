@@ -665,7 +665,6 @@ Messages:
   wwcBlacklistedMsg: Vaše zpráva obsahuje zakázaný jazyk a nebyla přeložena.
   wwcBlacklistedMsgDetected: 'Zjištěno slovo na černé listině ({0}): {1}'
   wwcBlacklistLoaded: Vaše černá listina {0} zakázaných slov byla načtena.
-  wwcConfigGUIModifyBlacklistSettings: Upravit černou listinu - {0} Words
   wwcConfigConversationAddBlacklist: Zadejte nový termín, který chcete přidat, nebo
     zadejte 0 pro návrat zpět.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Odstranit z černé listiny
@@ -684,4 +683,5 @@ Messages:
     je {0}. Naše výchozí rozpoznané argumenty, které můžete zahrnout: {1}. Pokud máte
     PlaceHolderAPI, ujistěte se, že tyto proměnné jsou místo toho obklopeny procenty
     (%). Zadejte 0 pro návrat.'
+  wwcConfigGUIModifyBlacklistSettings: Upravit černou listinu
 

@@ -660,7 +660,6 @@ Messages:
   wwcBlacklistedMsg: Vaša poruka sadrži zabranjeni jezik i nije prevedena.
   wwcBlacklistedMsgDetected: 'Otkrivena reč na crnoj listi ({0}): {1}'
   wwcBlacklistLoaded: Vaša crna lista zabranjenih reči {0} je učitana.
-  wwcConfigGUIModifyBlacklistSettings: Izmeni crnu listu - {0} reči
   wwcConfigConversationAddBlacklist: Unesite novi termin koji želite da dodate ili
     otkucajte 0 da biste se vratili nazad.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Izbriši sa crne liste
@@ -679,4 +678,5 @@ Messages:
     je {0}. Naši podrazumevani prepoznati argumenti koje možete uključiti: {1}. Ako
     imate PlaceholderAPI, uverite se da su te promenljive okružene procentima (%)
     umesto toga. Otkucajte 0 da biste se vratili nazad.'
+  wwcConfigGUIModifyBlacklistSettings: Izmenite crnu listu
 

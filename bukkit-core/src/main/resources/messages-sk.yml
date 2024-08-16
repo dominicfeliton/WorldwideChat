@@ -674,7 +674,6 @@ Messages:
   wwcBlacklistedMsg: Vaša správa obsahuje zakázaný jazyk a nebola preložená.
   wwcBlacklistedMsgDetected: 'Zistilo sa slovo na čiernej listine ({0}): {1}'
   wwcBlacklistLoaded: Vaša čierna listina zakázaných slov {0} bola načítaná.
-  wwcConfigGUIModifyBlacklistSettings: Upraviť čiernu listinu - {0} slová
   wwcConfigConversationAddBlacklist: Zadajte nový výraz, ktorý chcete pridať, alebo
     zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Odstrániť z čiernej listiny
@@ -693,4 +692,5 @@ Messages:
     kanála je {0}. Naše predvolené rozpoznané argumenty, ktoré môžete zahrnúť: {1}.
     Ak máte PlaceholderAPI, uistite sa, že tieto premenné sú namiesto toho obklopené
     percentami (%). Zadajte 0, aby ste sa vrátili späť.'
+  wwcConfigGUIModifyBlacklistSettings: Upraviť čiernu listinu
 

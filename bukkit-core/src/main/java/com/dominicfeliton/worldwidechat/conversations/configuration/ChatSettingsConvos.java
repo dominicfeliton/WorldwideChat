@@ -136,6 +136,13 @@ public class ChatSettingsConvos {
 			// TODO: Make sure async call is safe on this and MessagesOverride...
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 
+			BukkitRunnable open = new BukkitRunnable() {
+				@Override
+				public void run() {
+					previousInventory.open((Player)context.getForWhom());
+				}
+			};
+
 			BukkitRunnable run = new BukkitRunnable() {
 				@Override
 				public void run() {
@@ -154,14 +161,8 @@ public class ChatSettingsConvos {
 						refs.sendMsg((Player)context.getForWhom(), successfulChange);
 
 						main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), false);
-						BukkitRunnable open = new BukkitRunnable() {
-							@Override
-							public void run() {
-								previousInventory.open((Player)context.getForWhom());
-							}
-						};
-						wwcHelper.runSync(open, ENTITY, new Object[] {(Player) context.getForWhom()});
 					}
+					wwcHelper.runSync(open, ENTITY, new Object[] {(Player) context.getForWhom()});
 				}
 			};
 			wwcHelper.runAsync(run, ASYNC, null);

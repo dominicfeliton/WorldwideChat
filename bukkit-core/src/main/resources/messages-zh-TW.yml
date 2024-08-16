@@ -504,7 +504,6 @@ Messages:
   wwcBlacklistedMsg: 您的消息包含禁止的語言，並且未被翻譯。
   wwcBlacklistedMsgDetected: 偵測到黑名單詞 ({0})：{1}
   wwcBlacklistLoaded: 您的 {0} 禁用單詞的黑名單已加載。
-  wwcConfigGUIModifyBlacklistSettings: 修改黑名單-{0} 單詞
   wwcConfigConversationAddBlacklist: 輸入您要新增的新術語，或鍵入 0 以返回。
   wwcConfigGUIChatMessagesBlacklistDeleteButton: 從黑名單中刪除
   wwcConfigConversationBlacklistAddSuccess: 成功將新術語新增至黑名單。
@@ -519,4 +518,5 @@ Messages:
   wwcConfigChatChannelFormatInvalid: 偵測到無效的通道格式。預設為 {0}...
   wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。您可以包含的預設識別引數：{1}。如果您有位置保持者
     API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
+  wwcConfigGUIModifyBlacklistSettings: 修改黑名單
 

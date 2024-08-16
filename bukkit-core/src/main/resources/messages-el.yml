@@ -734,7 +734,6 @@ Messages:
   wwcBlacklistedMsg: Το μήνυμά σας περιέχει απαγορευμένη γλώσσα και δεν μεταφράστηκε.
   wwcBlacklistedMsgDetected: 'Εντοπίστηκε λέξη μαύρης λίστας ({0}): {1}'
   wwcBlacklistLoaded: Η μαύρη λίστα με τις απαγορευμένες λέξεις {0} έχει φορτωθεί.
-  wwcConfigGUIModifyBlacklistSettings: Τροποποίηση μαύρης λίστας - {0} Words
   wwcConfigConversationAddBlacklist: Εισαγάγετε τον νέο όρο που θέλετε να προσθέσετε
     ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Διαγραφή από τη μαύρη λίστα
@@ -754,4 +753,5 @@ Messages:
     συνομιλίας είναι {0}. Τα προεπιλεγμένα αναγνωρισμένα ορίσματά μας που μπορείτε
     να συμπεριλάβετε: {1}. Εάν έχετε PlaceHolderAPI, βεβαιωθείτε ότι αυτές οι μεταβλητές
     περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
+  wwcConfigGUIModifyBlacklistSettings: Τροποποιήστε τη μαύρη λίστα
 

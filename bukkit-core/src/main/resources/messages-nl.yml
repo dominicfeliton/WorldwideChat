@@ -692,7 +692,6 @@ Messages:
   wwcBlacklistedMsg: Je bericht bevat verboden taal en is niet vertaald.
   wwcBlacklistedMsgDetected: 'Woord op de zwarte lijst ({0}) gedetecteerd: {1}'
   wwcBlacklistLoaded: Je zwarte lijst met verboden woorden {0} is geladen.
-  wwcConfigGUIModifyBlacklistSettings: Zwarte lijst aanpassen - {0} woorden
   wwcConfigConversationAddBlacklist: Voer de nieuwe term in die je wilt toevoegen,
     of typ 0 om terug te gaan.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Van zwarte lijst verwijderen
@@ -712,4 +711,5 @@ Messages:
     chatkanaal is {0}. Onze standaard herkende argumenten die u kunt toevoegen: {1}.
     Als je PlaceholderAPI hebt, zorg er dan voor dat die variabelen in plaats daarvan
     worden omringd door percentages (%). Typ 0 om terug te gaan.'
+  wwcConfigGUIModifyBlacklistSettings: Zwarte lijst wijzigen
 

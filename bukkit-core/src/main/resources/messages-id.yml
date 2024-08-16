@@ -660,7 +660,6 @@ Messages:
   wwcBlacklistedMsg: Pesan Anda berisi bahasa terlarang dan tidak diterjemahkan.
   wwcBlacklistedMsgDetected: 'Kata daftar hitam ({0}) terdeteksi: {1}'
   wwcBlacklistLoaded: Daftar hitam Anda dari kata-kata terlarang {0} telah dimuat.
-  wwcConfigGUIModifyBlacklistSettings: Ubah Daftar Hitam - Kata {0}
   wwcConfigConversationAddBlacklist: Masukkan istilah baru yang ingin Anda tambahkan,
     atau ketik 0 untuk kembali.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Hapus dari daftar hitam
@@ -680,4 +679,5 @@ Messages:
     terpisah adalah {0}. Argumen yang diakui default kami yang dapat Anda sertakan:
     {1}. Jika Anda memiliki PlaceHolderAPI, pastikan variabel tersebut dikelilingi
     oleh persentase (%) sebagai gantinya. Ketik 0 untuk kembali.'
+  wwcConfigGUIModifyBlacklistSettings: Ubah Daftar Hitam
 

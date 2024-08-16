@@ -642,7 +642,6 @@ Messages:
   wwcBlacklistedMsg: Teie sõnum sisaldab keelatud keelt ja seda ei tõlgitud.
   wwcBlacklistedMsgDetected: 'Mustas nimekirjas olev sõna ({0}) tuvastati: {1}'
   wwcBlacklistLoaded: Teie must nimekiri {0} keelatud sõnadest on laaditud.
-  wwcConfigGUIModifyBlacklistSettings: Muuda musta nimekirja - {0} Sõnad
   wwcConfigConversationAddBlacklist: Sisestage uus termin, mille soovite lisada, või
     tippige tagasi minemiseks 0.
   wwcConfigGUIChatMessagesBlacklistDeleteButton: Kustuta mustast nimekirjast
@@ -661,4 +660,5 @@ Messages:
     on {0}. Meie vaikimisi tuvastatud argumendid, mida saate lisada: {1}. Kui teil
     on PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
     (%). Tagasi minemiseks tippige 0.'
+  wwcConfigGUIModifyBlacklistSettings: Muuda musta nimekirja
 
