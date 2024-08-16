@@ -224,8 +224,12 @@
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.mozilla</shadedPattern>
             </relocation>
             <relocation>
-              <pattern>com.amazonaws</pattern>
-              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.amazonaws</shadedPattern>
+              <pattern>software.amazon</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.software.amazon</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.reactivestreams</pattern>
+              <shadedPattern>com.dominicfeliton.yamltranslator.libs.org.reactivestreams</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.ibm</pattern>
