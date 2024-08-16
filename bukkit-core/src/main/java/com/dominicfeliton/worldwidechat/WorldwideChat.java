@@ -45,7 +45,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08162024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08162024-3"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -115,6 +115,8 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean persistentCache = false;
 
 	private boolean vaultSupport = true;
+
+	private boolean blacklist = true;
 
 	private EventPriority chatPriority = EventPriority.HIGHEST;
 
@@ -881,7 +883,9 @@ public class WorldwideChat extends JavaPlugin {
 	public void setVaultSupport(boolean i) {
 		vaultSupport = i;
 	}
-	
+
+	public void setBlacklistStatus(boolean i) { blacklist = i; }
+
 	public void setTranslatorErrorCount(int i) {
 		translatorErrorCount = i;
 	}
@@ -1128,6 +1132,10 @@ public class WorldwideChat extends JavaPlugin {
 
 	public boolean isPersistentCache() {
 		return persistentCache;
+	}
+
+	public boolean isBlacklistEnabled() {
+		return blacklist;
 	}
 
 	public int getErrorLimit() {

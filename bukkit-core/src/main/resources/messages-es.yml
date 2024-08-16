@@ -739,4 +739,19 @@ Messages:
   wwcBlacklistedMsg: Tu mensaje contiene un idioma prohibido y no se ha traducido.
   wwcBlacklistedMsgDetected: 'Se detectó una palabra en la lista negra ({0}): {1}'
   wwcBlacklistLoaded: Se ha cargado tu lista negra de palabras prohibidas para {0}.
+  wwcConfigGUIModifyBlacklistSettings: Modificar la lista negra - {0} Words
+  wwcConfigConversationAddBlacklist: Introduzca el nuevo término que desea añadir
+    o escriba 0 para volver atrás.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Eliminar de la lista negra
+  wwcConfigConversationBlacklistAddSuccess: Se ha añadido correctamente un nuevo término
+    a la lista negra.
+  wwcConfigGUIMessagesModifyBlacklistButton: Modificar la lista negra
+  wwcConfigGUIChatBlacklistButton: Activar lista negra
+  wwcConfigConversationBlacklistDeletionSuccess: Se ha eliminado correctamente el
+    término.
+  wwcConfigGUIChatChannelSettings: Configuración del canal de chat
+  wwcConfigGUIChatBlacklistSuccess: Se ha alterado correctamente la lista negra.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Agregar nueva palabra
+  wwcConfigGUIChatChannelButton: Traducir la configuración del canal
+  wwcConfigGUIBlacklistMessagesModify: Modificar término ({0})
 

@@ -37,7 +37,7 @@ public class MenuGui implements InventoryProvider {
 	}
 
 	public enum CONFIG_GUI_TAGS {
-		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
+		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, CHAT_CHANNEL_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
@@ -64,7 +64,10 @@ public class MenuGui implements InventoryProvider {
 		
 		MenuGui chatSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIChatSettings");
-		
+
+		MenuGui chatChannelSet = new MenuGui(inPlayer, transName);
+		CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv = chatChannelSet.genSmartInv("chatChannelSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIChatChannelSettings");
+
 		MenuGui transSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
 		
@@ -104,7 +107,6 @@ public class MenuGui implements InventoryProvider {
 				new GeneralSettingsConvos.SyncUserData()));
 		generalSet.add(new ToggleElement(1, 6, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats"));
 		generalSet.add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode"));
-		//generalSet.add(new ToggleElement(2, 1, "wwcConfigGUIVaultSupportButton", "wwcConfigConversationVaultSupportSuccess", "General.enableVaultSupport", true));
 		generalSet.add(new CommonElement(2, 4, "Quit"));
 		generalSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		generalSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.GEN_SET.ordinal()+1 + ""}));
@@ -192,21 +194,29 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 5, "wwcConfigGUIVaultSupportButton", "wwcConfigConversationVaultSupportSuccess", "Chat.useVault"));
 		chatSet.add(new ConvoElement(1, 6, "wwcConfigGUIChatListenerPriorityButton", XMaterial.NAME_TAG,
 				new ChatSettingsConvos.ModifyChatPriority()));
+		chatSet.add(new ToggleElement(1, 7, "wwcConfigGUIChatBlacklistButton", "wwcConfigGUIChatBlacklistSuccess", "Chat.enableBlacklist"));
 		if (!main.getCurrPlatform().equals("Folia")) {
-			chatSet.add(new SubMenuElement(1, 7, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()));
+			chatSet.add(new SubMenuElement(2, 1, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui(inPlayer).getMessagesOverridePickLangGui()));
+			chatSet.add(new SubMenuElement(2, 2, "wwcConfigGUIMessagesModifyBlacklistButton", new BlacklistGui(inPlayer).getBlacklist()));
+			chatSet.add(new SubMenuElement(2, 3, "wwcConfigGUIChatChannelButton", CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv));
+		} else {
+			chatSet.add(new SubMenuElement(2, 1, "wwcConfigGUIChatChannelButton", CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv));
 		}
-
-		chatSet.add(new ConvoElement(2, 1, "wwcConfigGUISeparateChatChannelIconButton", XMaterial.NAME_TAG,
-				new ChatSettingsConvos.ChannelIcon()));
-		chatSet.add(new ConvoElement(2, 2, "wwcConfigGUISeparateChatChannelFormatButton", XMaterial.NAME_TAG,
-				new ChatSettingsConvos.ChannelFormat()));
-		chatSet.add(new ToggleElement(2, 3, "wwcConfigGUISeparateChatChannelForceButton", "wwcConfigConversationSeparateChatChannelForceSuccess", "Chat.separateChatChannel.force"));
-
 		chatSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		chatSet.add(new CommonElement(3, 4, "Quit"));
 		chatSet.add(new CommonElement(3, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		chatSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
-		
+
+		// Translate (Chat) Channel
+		chatChannelSet.add(new BorderElement(XMaterial.PURPLE_STAINED_GLASS_PANE));
+		chatChannelSet.add(new ConvoElement(1, 1, "wwcConfigGUISeparateChatChannelIconButton", XMaterial.NAME_TAG,
+				new ChatSettingsConvos.ChannelIcon()));
+		chatChannelSet.add(new ConvoElement(1, 2, "wwcConfigGUISeparateChatChannelFormatButton", XMaterial.NAME_TAG,
+				new ChatSettingsConvos.ChannelFormat()));
+		chatChannelSet.add(new ToggleElement(1, 3, "wwcConfigGUISeparateChatChannelForceButton", "wwcConfigConversationSeparateChatChannelForceSuccess", "Chat.separateChatChannel.force"));
+		chatChannelSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
+		chatChannelSet.add(new CommonElement(2, 4, "Quit"));
+
 		// Translator
         List<String> translatorToggles = new ArrayList<>();
         for (Map.Entry<String, String> translatorPair : CommonRefs.translatorPairs.entrySet()) {

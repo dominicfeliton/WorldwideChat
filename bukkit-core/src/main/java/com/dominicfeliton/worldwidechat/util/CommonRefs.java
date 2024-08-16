@@ -441,7 +441,7 @@ public class CommonRefs {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 
 		/* Detect bad language */
-		if (mainConfig.getBoolean("Chat.enableBlacklist") && main.getConfigManager().getBlacklistConfig() != null) {
+		if (main.isBlacklistEnabled() && main.getConfigManager().getBlacklistConfig() != null) {
 			for (String eaWord : main.getConfigManager().getBlacklistConfig().getStringList("bannedWords")) {
 				if (inMessage.contains(eaWord)) {
 					sendFancyMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);

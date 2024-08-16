@@ -17,6 +17,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventPriority;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class ChatSettingsConvos {
 
@@ -42,7 +43,7 @@ public class ChatSettingsConvos {
 		public Prompt acceptInput(ConversationContext context, String input) {
 			Player currPlayer = ((Player) context.getForWhom());
 			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChannelIconSuccess",
-					"Chat.separateChatChannel.icon", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv);
+					"Chat.separateChatChannel.icon", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
 		}
 	}
 
@@ -69,7 +70,7 @@ public class ChatSettingsConvos {
 
 			if (valid || input.equals("0")) {
 				return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
-						"Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv);
+						"Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
 			}
 			refs.sendFancyMsg("wwcConfigConversationChatFormatBadInput", new String[] {vars}, "&c", currPlayer);
 			return this;
@@ -108,6 +109,48 @@ public class ChatSettingsConvos {
 			refs.sendFancyMsg("wwcConfigConversationChatPriorityBadInput",
 					new String[] {"&6"+Arrays.toString(EventPriority.values())}, "&c", currPlayer);
 			return this;
+		}
+	}
+
+	public static class AddBlacklistTerm extends StringPrompt {
+		private SmartInventory previousInventory;
+
+		public AddBlacklistTerm(SmartInventory previousInventory) {
+			this.previousInventory = previousInventory;
+		}
+
+		@Override
+		public String getPromptText(ConversationContext context) {
+			/* Close any open inventories */
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAddBlacklist", currPlayer);
+		}
+
+		@Override
+		public Prompt acceptInput(ConversationContext context, String input) {
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+			if (!input.equals("0")) {
+				YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
+				Player currPlayer = ((Player) context.getForWhom());
+				List<String> bannedWords = config.getStringList("bannedWords");
+				bannedWords.add(input); // Add currentTerm to the list
+				config.set("bannedWords", bannedWords); // Save the updated list back to the config
+
+				main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
+				final TextComponent successfulChange = Component.text()
+						.content(refs.getMsg("wwcConfigConversationBlacklistAddSuccess", currPlayer))
+						.color(NamedTextColor.GREEN)
+						.build();
+				refs.sendMsg((Player)context.getForWhom(), successfulChange);
+
+				// TODO: Make sure async call is safe on this and MessagesOverride...
+				main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), true);
+			}
+			previousInventory.open((Player)context.getForWhom());
+			return END_OF_CONVERSATION;
 		}
 	}
 

@@ -169,10 +169,6 @@ public class ConfigurationHandler {
 	}
 
 	public void initBlacklistConfig() {
-		if (!mainConfig.getBoolean("Chat.enableBlacklist")) {
-			refs.debugMsg("Not loading blacklist.");
-			return;
-		}
 		refs.debugMsg("Loading blacklist...");
 
 		/* Init config file */
@@ -206,7 +202,9 @@ public class ConfigurationHandler {
 		blacklistConfig.options().copyDefaults(true);
 		saveCustomConfig(blacklistConfig, blacklistFile, false);
 
-		main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcBlacklistLoaded", new String[] {bannedWords.size()+""}, null));
+		if (main.isBlacklistEnabled()) {
+			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcBlacklistLoaded", new String[] {bannedWords.size()+""}, null));
+		}
 	}
 
 	/* Load Main Settings Method */
@@ -312,14 +310,17 @@ public class ConfigurationHandler {
 		}
 		// Vault Support
 		try {
-			if (mainConfig.getBoolean("Chat.useVault")) {
-				main.setVaultSupport(true);
-			} else {
-				main.setVaultSupport(false);
-			}
+            main.setVaultSupport(mainConfig.getBoolean("Chat.useVault"));
 		} catch (Exception e) {
 			main.setVaultSupport(true);
 			main.getLogger().warning(refs.getMsg("wwcConfigVaultSupportInvalid", null));
+		}
+		// Blacklist
+		try {
+			main.setBlacklistStatus(mainConfig.getBoolean("Chat.enableBlacklist"));
+		} catch (Exception e) {
+			main.setBlacklistStatus(true);
+			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
 		}
 		// Separate Chat Channel Prefix
 		try {

@@ -54,13 +54,14 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			TreeMap<String, String> overridesFromConfig = new TreeMap<>();
 			ClickableItem[] currentOverrides = new ClickableItem[0];
 			FileConfiguration messagesConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
-			
+
+			// TODO: Improve this by initializing overridesFromConfig in construct
 			if (messagesConfig.getConfigurationSection("Overrides") != null) {
 				for (String eaKey : messagesConfig.getConfigurationSection("Overrides").getKeys(true)) {
 					overridesFromConfig.put(eaKey, messagesConfig.getString("Overrides." + eaKey));
 				}
-				currentOverrides = new ClickableItem[overridesFromConfig.size()];
 			}
+			currentOverrides = new ClickableItem[overridesFromConfig.size()];
 			
 			if (!overridesFromConfig.isEmpty()) {
 				refs.debugMsg("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
@@ -92,7 +93,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{new MessagesOverridePickLangGui(inPlayer).getMessagesOverridePickLangGui()});
 			}
 			
 			/* Bottom Middle Option: Add new override */
