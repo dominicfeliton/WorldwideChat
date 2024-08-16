@@ -38,7 +38,6 @@ Messages:
   wwcConfigGUILangButton: 更改插件语言
   wwctGUISignButton: 切换签名翻译
   wwcUpdaterOutOfDate: WorldwideChat 已经过时了。请更新至最新版本 {0}。
-  wwcConfigGUINextPageButton: 下一页
   wwcConfigInvalidTranslatorSettings: 翻译者设置无效！请在 config.yml 中只启用一个翻译器。
   wwcConfigGUIQuitButton: 退出并保存更改
   wwctPlayerNotFound: 玩家 %我没找到。
@@ -517,4 +516,5 @@ Messages:
   wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。我们默认可识别的参数，您可以包括：{1}.如果你有占位符
     API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
   wwcConfigGUIModifyBlacklistSettings: 修改黑名单
+  wwcConfigGUINextPageButton: 下一页
 

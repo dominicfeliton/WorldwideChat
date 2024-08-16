@@ -37,7 +37,6 @@ Messages:
   wwcConfigGUILangButton: プラグイン言語の変更
   wwctGUISignButton: 署名翻訳の切り替え
   wwcUpdaterOutOfDate: WorldwideChatは廃れてる最新バージョン {0} に更新してください。
-  wwcConfigGUINextPageButton: 次のページ
   wwcConfigInvalidTranslatorSettings: トランスレータの設定が無効です！config.yml でトランスレータを 1 つだけ有効にしてください。
   wwcConfigGUIQuitButton: 終了して変更を保存
   wwctPlayerNotFound: プレイヤー {0} が見つかりません。
@@ -530,4 +529,5 @@ Messages:
   wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。デフォルトで認識されている引数は
     {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
   wwcConfigGUIModifyBlacklistSettings: ブラックリストを変更
+  wwcConfigGUINextPageButton: 次のページ
 
