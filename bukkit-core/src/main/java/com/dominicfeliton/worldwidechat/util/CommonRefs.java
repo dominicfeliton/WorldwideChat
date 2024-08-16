@@ -438,9 +438,20 @@ public class CommonRefs {
 		if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
 			return inMessage;
 		}
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+
+		/* Detect bad language */
+		if (mainConfig.getBoolean("Chat.enableBlacklist") && main.getConfigManager().getBlacklistConfig() != null) {
+			for (String eaWord : main.getConfigManager().getBlacklistConfig().getStringList("bannedWords")) {
+				if (inMessage.contains(eaWord)) {
+					sendFancyMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);
+					debugMsg(getMsg("wwcBlacklistedMsgDetected", new String[] {eaWord, inMessage}, null));
+					return inMessage;
+				}
+			}
+		}
 		
 		/* Main logic callback */
-		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Callable<String> result = () -> {
 			/* Detect color codes in message */
 			detectColorCodes(inMessage, currPlayer);

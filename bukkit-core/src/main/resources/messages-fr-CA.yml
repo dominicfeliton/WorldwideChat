@@ -733,4 +733,10 @@ Messages:
     distinct est {0}. Veuillez vous assurer que vos données comprennent les variables
     suivantes: {1}. Si vous avez PlaceholderAPI, assurez-vous plutôt que ces variables
     sont entourées de pourcentages (%). Tapez 0 pour revenir en arrière.'
+  wwcBlacklistBadFormat: Votre liste noire n'est pas correctement formatée en tant
+    que liste. Elle ne sera pas appliquée tant que cette situation n'aura pas été
+    réglée.
+  wwcBlacklistedMsg: Votre message contient une langue interdite et n'a pas été traduit.
+  wwcBlacklistedMsgDetected: 'Mot sur liste noire ({0}) détecté: {1}'
+  wwcBlacklistLoaded: Votre liste noire de mots interdits {0} a été chargée.
 

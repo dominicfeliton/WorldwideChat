@@ -504,4 +504,8 @@ Messages:
   wwcConfigChatChannelIconInvalid: 偵測到無效的通道圖示。預設為 {0}...
   wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。請確保您的輸入包含以下變量：{1}。如果您有位置保持者
     API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
+  wwcBlacklistBadFormat: 您的黑名單未正確格式化為列表。在解決此問題之前，它將不會被強制執行。
+  wwcBlacklistedMsg: 您的消息包含禁止的語言，並且未被翻譯。
+  wwcBlacklistedMsgDetected: 偵測到黑名單詞 ({0})：{1}
+  wwcBlacklistLoaded: 您的 {0} 禁用單詞的黑名單已加載。
 

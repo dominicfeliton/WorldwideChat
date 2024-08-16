@@ -678,4 +678,9 @@ Messages:
     chattkanalen är {0}. Se till att din inmatning innehåller följande variabler:
     {1}. Om du har placeHolderAPI, se till att dessa variabler omges av procentsatser
     (%) istället. Skriv 0 för att gå tillbaka.'
+  wwcBlacklistBadFormat: Din svartlista är inte korrekt formaterad som en lista. Det
+    kommer inte att verkställas förrän detta är fixat.
+  wwcBlacklistedMsg: Ditt meddelande innehåller förbjudet språk och har inte översatts.
+  wwcBlacklistedMsgDetected: 'Svartlistat ord ({0}) upptäckt: {1}'
+  wwcBlacklistLoaded: Din svarta lista med {0} förbjudna ord har laddats.
 

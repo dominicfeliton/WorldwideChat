@@ -677,4 +677,9 @@ Messages:
     je {0}. Prepričajte se, da vaš vnos vključuje naslednje spremenljivke: {1}. Če
     imate PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki
     (%). Vnesite 0, da se vrnete nazaj.'
+  wwcBlacklistBadFormat: Vaš črni seznam ni pravilno oblikovan kot seznam. Ne bo uveljavljen,
+    dokler to ne bo določeno.
+  wwcBlacklistedMsg: Vaše sporočilo vsebuje prepovedan jezik in ni bilo prevedeno.
+  wwcBlacklistedMsgDetected: 'Zaznana beseda ({0}) na črnem seznamu: {1}'
+  wwcBlacklistLoaded: Vaš črni seznam {0} prepovedanih besed je bil naložen.
 

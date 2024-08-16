@@ -48,6 +48,9 @@ public class ConfigurationHandler {
 	private File configFile;
 	private YamlConfiguration mainConfig;
 
+	private File blacklistFile;
+	private YamlConfiguration blacklistConfig;
+
 	private ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 
 	/* Init Main Config Method */
@@ -165,6 +168,47 @@ public class ConfigurationHandler {
 		return pluginLangConfigs.get(inLocalLang);
 	}
 
+	public void initBlacklistConfig() {
+		if (!mainConfig.getBoolean("Chat.enableBlacklist")) {
+			refs.debugMsg("Not loading blacklist.");
+			return;
+		}
+		refs.debugMsg("Loading blacklist...");
+
+		/* Init config file */
+		blacklistFile = new File(main.getDataFolder(), "blacklist.yml");
+
+		/* Generate config file, if it does not exist */
+		if (!blacklistFile.exists()) {
+			main.saveResource("blacklist.yml", false);
+		}
+
+		/* Load main config */
+		blacklistConfig = YamlConfiguration.loadConfiguration(blacklistFile);
+
+		/* Add default options, if they do not exist */
+		Reader blacklistConfigStream = new InputStreamReader(main.getResource("blacklist.yml"), StandardCharsets.UTF_8);
+		blacklistConfig.setDefaults(YamlConfiguration.loadConfiguration(blacklistConfigStream));
+
+		/* Validate the configuration */
+		if (!blacklistConfig.isList("bannedWords")) {
+			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
+			blacklistConfig = null;
+			return;
+		}
+		List<String> bannedWords = blacklistConfig.getStringList("bannedWords");
+		if (bannedWords == null || bannedWords.contains(null)) {
+			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
+			blacklistConfig = null;
+			return;
+		}
+
+		blacklistConfig.options().copyDefaults(true);
+		saveCustomConfig(blacklistConfig, blacklistFile, false);
+
+		main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcBlacklistLoaded", new String[] {bannedWords.size()+""}, null));
+	}
+
 	/* Load Main Settings Method */
 	public void loadMainSettings() {
 		/* Get rest of General Settings */
@@ -244,7 +288,7 @@ public class ConfigurationHandler {
 			main.setGlobalRateLimit(0);
 			main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
 		}
-		// Per-message char limit Settings
+		// Per-message Char Limit Settings
 		try {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0 && mainConfig.getInt("Translator.messageCharLimit") <= 255) {
 				main.setMessageCharLimit(mainConfig.getInt("Translator.messageCharLimit"));
@@ -365,7 +409,7 @@ public class ConfigurationHandler {
 		}
 		// List of Errors to Ignore Settings
 		try {
-			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getList("Translator.errorsToIgnore"));
+			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getStringList("Translator.errorsToIgnore"));
 			main.getLogger().info(
 					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess", null));
 		} catch (Exception e) {
@@ -1199,12 +1243,20 @@ public class ConfigurationHandler {
 		return mainConfig;
 	}
 
+	public YamlConfiguration getBlacklistConfig() {
+		return blacklistConfig;
+	}
+
 	public YamlConfiguration getMsgsConfig() {
 		return pluginLangConfigs.get(mainConfig.getString("General.pluginLang"));
 	}
 
 	public File getConfigFile() {
 		return configFile;
+	}
+
+	public File getBlacklistFile() {
+		return blacklistFile;
 	}
 
 	public ConcurrentHashMap<String, YamlConfiguration> getPluginLangConfigs() {

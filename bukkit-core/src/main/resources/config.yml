@@ -44,7 +44,8 @@ Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true
   sendIncomingHoverTextChat: true
-  sendOutgoingHoverTextChat: false
+  sendOutgoingHoverTextChat: true
+  enableBlacklist: false
   useVault: true
   chatListenerPriority: HIGHEST
   separateChatChannel:

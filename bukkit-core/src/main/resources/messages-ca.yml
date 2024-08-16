@@ -722,4 +722,9 @@ Messages:
     és {0}. Si us plau, assegureu-vos que la vostra entrada inclogui les següents
     variables: {1}. Si teniu PlaceholderAPI, assegureu-vos que aquestes variables
     estiguin envoltades per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
+  wwcBlacklistBadFormat: La vostra llista negra no està correctament formatada com
+    a llista. No s'aplicarà fins que no s'arregli.
+  wwcBlacklistedMsg: El missatge conté idioma prohibit i no s'ha traduït.
+  wwcBlacklistedMsgDetected: 'S''ha detectat la paraula a la llista negra ({0}): {1}'
+  wwcBlacklistLoaded: La vostra llista negra de paraules prohibides {0} ha estat carregada.
 

@@ -502,4 +502,8 @@ Messages:
   wwcConfigChatChannelIconInvalid: 检测到无效的频道图标。默认为 {0}...
   wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。请确保您的输入包含以下变量：{1}.如果你有占位符
     API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
+  wwcBlacklistBadFormat: 您的黑名单格式不正确，无法正确设置为列表。在解决这个问题之前，它不会被强制执行。
+  wwcBlacklistedMsg: 您的消息包含禁用语言，且未翻译。
+  wwcBlacklistedMsgDetected: 检测到列入黑名单的单词 ({0})：{1}
+  wwcBlacklistLoaded: 你的 {0} 禁词黑名单已加载。
 

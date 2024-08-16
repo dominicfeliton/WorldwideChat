@@ -668,4 +668,9 @@ Messages:
     je {0}. Ujistěte se, že váš vstup obsahuje následující proměnné: {1}. Pokud máte
     PlaceHolderAPI, ujistěte se, že tyto proměnné jsou místo toho obklopeny procenty
     (%). Zadejte 0 pro návrat.'
+  wwcBlacklistBadFormat: Vaše černá listina není správně naformátována jako seznam.
+    Nebude vymáháno, dokud to nebude opraveno.
+  wwcBlacklistedMsg: Vaše zpráva obsahuje zakázaný jazyk a nebyla přeložena.
+  wwcBlacklistedMsgDetected: 'Zjištěno slovo na černé listině ({0}): {1}'
+  wwcBlacklistLoaded: Vaše černá listina {0} zakázaných slov byla načtena.
 

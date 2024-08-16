@@ -683,4 +683,9 @@ Messages:
     yra {0}. Įsitikinkite, kad jūsų įvestis apima šiuos kintamuosius: {1}. Jei turite
     PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais (%), o
     ne. Įveskite 0, kad grįžtumėte atgal.'
+  wwcBlacklistBadFormat: Jūsų juodasis sąrašas nėra tinkamai suformatuotas kaip sąrašas.
+    Jis nebus vykdomas tol, kol tai nebus nustatyta.
+  wwcBlacklistedMsg: Jūsų žinutėje yra draudžiama kalba ir jis nebuvo išverstas.
+  wwcBlacklistedMsgDetected: 'Aptikta į juodąjį sąrašą įtrauktas žodis ({0}): {1}'
+  wwcBlacklistLoaded: Jūsų juodasis {0} uždraustų žodžių sąrašas buvo įkeltas.
 

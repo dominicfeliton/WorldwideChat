@@ -678,4 +678,9 @@ Messages:
     kanála je {0}. Uistite sa, že váš vstup obsahuje nasledujúce premenné: {1}. Ak
     máte PlaceholderAPI, uistite sa, že tieto premenné sú namiesto toho obklopené
     percentami (%). Zadajte 0, aby ste sa vrátili späť.'
+  wwcBlacklistBadFormat: Vaša čierna listina nie je správne naformátovaná ako zoznam.
+    Nebude sa uplatňovať, kým sa to nevyrieši.
+  wwcBlacklistedMsg: Vaša správa obsahuje zakázaný jazyk a nebola preložená.
+  wwcBlacklistedMsgDetected: 'Zistilo sa slovo na čiernej listine ({0}): {1}'
+  wwcBlacklistLoaded: Vaša čierna listina zakázaných slov {0} bola načítaná.
 

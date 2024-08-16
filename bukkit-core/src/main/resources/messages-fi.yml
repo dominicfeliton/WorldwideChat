@@ -668,4 +668,9 @@ Messages:
     on {0}. Varmista, että syötteesi sisältää seuraavat muuttujat: {1}. Jos käytössäsi
     on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet (%) sen
     sijaan. Kirjoita 0 palataksesi takaisin.'
+  wwcBlacklistBadFormat: Mustaa luetteloa ei ole muotoiltu oikein luetteloksi. Sitä
+    ei valvota ennen kuin tämä on korjattu.
+  wwcBlacklistedMsg: Viestisi sisältää kiellettyä kieltä eikä sitä ole käännetty.
+  wwcBlacklistedMsgDetected: 'Mustalla listalla oleva sana ({0}) havaittu: {1}'
+  wwcBlacklistLoaded: Musta listasi {0} kielletyistä sanoista on ladattu.
 

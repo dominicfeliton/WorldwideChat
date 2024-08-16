@@ -645,4 +645,9 @@ Messages:
     on {0}. Veenduge, et teie sisend sisaldab järgmisi muutujaid: {1}. Kui teil on
     PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
     (%). Tagasi minemiseks tippige 0.'
+  wwcBlacklistBadFormat: Teie must nimekiri pole loendiks korralikult vormindatud.
+    Seda ei jõustata enne, kui see on fikseeritud.
+  wwcBlacklistedMsg: Teie sõnum sisaldab keelatud keelt ja seda ei tõlgitud.
+  wwcBlacklistedMsgDetected: 'Mustas nimekirjas olev sõna ({0}) tuvastati: {1}'
+  wwcBlacklistLoaded: Teie must nimekiri {0} keelatud sõnadest on laaditud.
 

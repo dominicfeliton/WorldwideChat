@@ -696,4 +696,9 @@ Messages:
     chatkanaal is {0}. Zorg ervoor dat je invoer de volgende variabelen bevat: {1}.
     Als je PlaceholderAPI hebt, zorg er dan voor dat die variabelen in plaats daarvan
     worden omringd door percentages (%). Typ 0 om terug te gaan.'
+  wwcBlacklistBadFormat: Je zwarte lijst is niet correct geformatteerd als een lijst.
+    Het wordt niet gehandhaafd totdat dit is opgelost.
+  wwcBlacklistedMsg: Je bericht bevat verboden taal en is niet vertaald.
+  wwcBlacklistedMsgDetected: 'Woord op de zwarte lijst ({0}) gedetecteerd: {1}'
+  wwcBlacklistLoaded: Je zwarte lijst met verboden woorden {0} is geladen.
 

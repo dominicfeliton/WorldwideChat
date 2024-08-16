@@ -516,4 +516,8 @@ Messages:
   wwcConfigChatChannelIconInvalid: 無効なチャンネルアイコンが検出されました。デフォルトは {0}...
   wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。入力に以下の変数が含まれていることを確認してください:{1}.PlaceholderAPI
     を使用している場合は、それらの変数が代わりにパーセンテージ (%) で囲まれていることを確認してください。0 を入力すると戻ります。
+  wwcBlacklistBadFormat: ブラックリストがリストとして正しくフォーマットされていません。この問題が修正されるまでは強制されません。
+  wwcBlacklistedMsg: メッセージには禁止されている言語が含まれており、翻訳されていません。
+  wwcBlacklistedMsgDetected: ブラックリストに載っている単語 ({0}) が検出されました:{1}
+  wwcBlacklistLoaded: '{0} 禁止語のブラックリストが読み込まれました。'
 

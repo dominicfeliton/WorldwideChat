@@ -671,4 +671,9 @@ Messages:
     je {0}. Molimo provjerite sadrži li vaš unos sljedeće varijable: {1}. Ako imate
     PlaceholderAPI, provjerite jesu li te varijable okružene postocima (%) umjesto
     toga. Upišite 0 da biste se vratili natrag.'
+  wwcBlacklistBadFormat: Vaša crna lista nije pravilno formatirana kao lista. Neće
+    se provoditi dok se to ne popravi.
+  wwcBlacklistedMsg: Vaša poruka sadrži zabranjeni jezik i nije prevedena.
+  wwcBlacklistedMsgDetected: 'Otkrivena riječ na crnoj listi ({0}): {1}'
+  wwcBlacklistLoaded: Vaša crna lista {0} zabranjenih riječi je učitana.
 

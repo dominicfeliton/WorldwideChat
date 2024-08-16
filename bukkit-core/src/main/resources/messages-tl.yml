@@ -749,4 +749,10 @@ Messages:
     na chat channel ay {0}. Mangyaring tiyaking kasama sa iyong input ang mga sumusunod
     na variable: {1}. Kung mayroon kang PlaceholderAPI, tiyaking ang mga variable
     na iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
+  wwcBlacklistBadFormat: Ang iyong blacklist ay hindi maayos na na-format bilang isang
+    listahan. Hindi ito ipapatupad hanggang sa maayos ito.
+  wwcBlacklistedMsg: Naglalaman ang iyong mensahe ng ipinagbabawal na wika at hindi
+    isinalin.
+  wwcBlacklistedMsgDetected: 'Nakita ang salitang nakalista sa itim ({0}): {1}'
+  wwcBlacklistLoaded: Na-load ang iyong blacklist ng {0} na mga ipinagbabawal na salita.
 

@@ -669,4 +669,9 @@ Messages:
     {0} ''dir. Lütfen girdinizin aşağıdaki değişkenleri içerdiğinden emin olun: {1}.
     PlaceHolderAPI''niz varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin
     olun. Geri dönmek için 0 yazın.'
+  wwcBlacklistBadFormat: Kara listeniz bir liste olarak düzgün biçimde biçimlendirilmemiştir.
+    Bu düzeltilene kadar uygulanmayacaktır.
+  wwcBlacklistedMsg: Mesajınız yasaklanmış bir dil içeriyor ve çevrilmedi.
+  wwcBlacklistedMsgDetected: 'Kara listeye alınmış kelime ({0}) tespit edildi: {1}'
+  wwcBlacklistLoaded: '{0} yasaklanmış kelimelerden oluşan kara listeniz yüklendi.'
 

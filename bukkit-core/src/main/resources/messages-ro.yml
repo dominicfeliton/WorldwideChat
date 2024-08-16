@@ -711,4 +711,9 @@ Messages:
     de chat este {0}. Vă rugăm să vă asigurați că intrarea dvs. include următoarele
     variabile: {1}. Dacă aveți PlaceHolderAPI, asigurați-vă că acele variabile sunt
     înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
+  wwcBlacklistBadFormat: Lista dvs. neagră nu este formatată corect ca listă. Nu va
+    fi aplicată până când acest lucru nu va fi stabilit.
+  wwcBlacklistedMsg: Mesajul dvs. conține o limbă interzisă și nu a fost tradus.
+  wwcBlacklistedMsgDetected: 'Cuvânt pe lista neagră ({0}) detectat: {1}'
+  wwcBlacklistLoaded: Lista neagră a cuvintelor interzise {0} a fost încărcată.
 

@@ -45,7 +45,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08152024-4"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08162024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -367,6 +367,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Init and load configs
 		configurationManager.initMainConfig();
 		configurationManager.initMessagesConfigs();
+		configurationManager.initBlacklistConfig();
 
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();

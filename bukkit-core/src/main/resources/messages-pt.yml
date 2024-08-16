@@ -693,4 +693,9 @@ Messages:
     separado é {0}. Certifique-se de que sua entrada inclua as seguintes variáveis:
     {1}. Se você tiver PlaceholderAPI, certifique-se de que essas variáveis estejam
     cercadas por porcentagens (%). Digite 0 para voltar.'
+  wwcBlacklistBadFormat: Sua lista negra não está formatada corretamente como uma
+    lista. Ele não será aplicado até que isso seja corrigido.
+  wwcBlacklistedMsg: Sua mensagem contém linguagem proibida e não foi traduzida.
+  wwcBlacklistedMsgDetected: 'Palavra na lista negra ({0}) detectada: {1}'
+  wwcBlacklistLoaded: Sua lista negra de palavras proibidas do {0} foi carregada.
 

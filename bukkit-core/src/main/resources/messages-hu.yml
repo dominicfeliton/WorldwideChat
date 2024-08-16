@@ -688,4 +688,9 @@ Messages:
     {0}. Kérjük, győződjön meg arról, hogy a bemenet tartalmazza a következő változókat:
     {1}. Ha van PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok
     (%) veszik körül. Írja be a 0-at, hogy visszatérjen.'
+  wwcBlacklistBadFormat: A feketelista nincs megfelelően formázva listaként. Ezt addig
+    nem hajtják végre, amíg ez meg nem javul.
+  wwcBlacklistedMsg: Üzenete tiltott nyelvet tartalmaz, és nem fordították le.
+  wwcBlacklistedMsgDetected: 'Feketelistán szereplő szót ({0}) észlelték: {1}'
+  wwcBlacklistLoaded: Betöltötték a {0} tiltott szavak feketelistáját.
 

@@ -682,4 +682,9 @@ Messages:
     er {0}. Vinsamlegast vertu viss um að inntak þitt innihaldi eftirfarandi breytur:
     {1}. Ef þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu
     umkringdar prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
+  wwcBlacklistBadFormat: Svarti listinn þinn er ekki rétt sniðinn sem listi. Þessu
+    verður ekki framfylgt fyrr en þetta er lagað.
+  wwcBlacklistedMsg: Skilaboðin þín innihalda bönnuð tungumál og voru ekki þýdd.
+  wwcBlacklistedMsgDetected: 'Orð á svörtum lista ({0}) greindist: {1}'
+  wwcBlacklistLoaded: Svartur listi þinn yfir {0} bönnuð orð hefur verið hlaðinn.
 

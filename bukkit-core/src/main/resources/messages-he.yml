@@ -603,4 +603,9 @@ Messages:
   wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
     {0}. אנא ודא שהקלט שלך כולל את המשתנים הבאים: {1}. אם יש לך PlaceHolderAPI, ודא
     שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcBlacklistBadFormat: הרשימה השחורה שלך אינה מעוצבת כראוי כרשימה. זה לא ייאכף עד
+    שזה יתוקן.
+  wwcBlacklistedMsg: ההודעה שלך מכילה שפה אסורה ולא תורגמה.
+  wwcBlacklistedMsgDetected: 'מילה ברשימה השחורה ({0}) זוהתה: {1}'
+  wwcBlacklistLoaded: הרשימה השחורה שלך של מילים אסורות {0} נטענה.
 

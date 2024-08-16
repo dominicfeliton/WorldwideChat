@@ -652,4 +652,9 @@ Messages:
     er {0}. Forsikre deg om at inndataene dine inneholder følgende variabler: {1}.
     Hvis du har PlaceHolderAPI, må du sørge for at disse variablene er omgitt av prosenter
     (%) i stedet. Skriv 0 for å gå tilbake.'
+  wwcBlacklistBadFormat: Svartelisten din er ikke riktig formatert som en liste. Det
+    vil ikke bli håndhevet før dette er løst.
+  wwcBlacklistedMsg: Meldingen din inneholder forbudt språk og ble ikke oversatt.
+  wwcBlacklistedMsgDetected: 'Svartelistet ord ({0}) oppdaget: {1}'
+  wwcBlacklistLoaded: Svartelisten din med {0} forbudte ord er lastet inn.
 

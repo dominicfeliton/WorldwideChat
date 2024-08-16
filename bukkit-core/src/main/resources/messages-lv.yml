@@ -673,4 +673,9 @@ Messages:
     formāts ir {0}. Lūdzu, pārliecinieties, vai jūsu ievadē ir šādi mainīgie: {1}.
     Ja jums ir PlaceholderAPI, pārliecinieties, vai šos mainīgos ir ieskauti procenti
     (%). Ierakstiet 0, lai atgrieztos.'
+  wwcBlacklistBadFormat: Jūsu melnais saraksts nav pareizi formatēts kā saraksts.
+    Tas netiks izpildīts, kamēr tas nav noteikts.
+  wwcBlacklistedMsg: Jūsu ziņojums satur aizliegtu valodu un nav tulkots.
+  wwcBlacklistedMsgDetected: 'Atklāts melnajā sarakstā iekļauts vārds ({0}): {1}'
+  wwcBlacklistLoaded: Jūsu {0} aizliegto vārdu melnais saraksts ir ielādēts.
 

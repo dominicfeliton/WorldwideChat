@@ -712,4 +712,10 @@ Messages:
     separato è {0}. Assicurati che il tuo input includa le seguenti variabili: {1}.
     Se hai PlaceholderAPI, assicurati invece che quelle variabili siano circondate
     da percentuali (%). Digita 0 per tornare indietro.'
+  wwcBlacklistBadFormat: La tua lista nera non è formattata correttamente come elenco.
+    Non verrà applicata finché non verrà risolto il problema.
+  wwcBlacklistedMsg: Il tuo messaggio contiene una lingua proibita e non è stato tradotto.
+  wwcBlacklistedMsgDetected: 'È stata rilevata una parola nella lista nera ({0}):
+    {1}'
+  wwcBlacklistLoaded: La tua lista nera delle parole vietate {0} è stata caricata.
 

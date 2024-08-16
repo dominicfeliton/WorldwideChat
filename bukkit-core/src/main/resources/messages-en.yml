@@ -51,6 +51,10 @@ Messages:
   wwcNoVaultChatProvider: 'Vault is installed, but no supported chat provider has been detected.'
   wwcWatsonDeprecation: 'Watson has been deprecated and is no longer supported by IBM. Please consider switching, as support for it will be removed in the next update.'
   wwcOrigHover: 'Original Message: {0}'
+  wwcBlacklistedMsg: 'Your message contains prohibited language and was not translated.'
+  wwcBlacklistedMsgDetected: 'Blacklisted word ({0}) detected: {1}'
+  wwcBlacklistBadFormat: 'Your blacklist is not properly formatted as a list. It will not be enforced until this is fixed.'
+  wwcBlacklistLoaded: 'Your blacklist of {0} banned words has been loaded.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

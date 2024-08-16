@@ -684,4 +684,9 @@ Messages:
     riêng biệt là {0}. Vui lòng đảm bảo đầu vào của bạn bao gồm các biến sau: {1}.
     Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần
     trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
+  wwcBlacklistBadFormat: Danh sách đen của bạn không được định dạng đúng như một danh
+    sách. Nó sẽ không được thực thi cho đến khi điều này được khắc phục.
+  wwcBlacklistedMsg: Tin nhắn của bạn chứa ngôn ngữ bị cấm và không được dịch.
+  wwcBlacklistedMsgDetected: 'Phát hiện từ trong danh sách đen ({0}): {1}'
+  wwcBlacklistLoaded: Danh sách đen {0} từ bị cấm của bạn đã được tải.
 

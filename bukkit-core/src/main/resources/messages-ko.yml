@@ -549,4 +549,8 @@ Messages:
   wwcConfigChatChannelIconInvalid: 잘못된 채널 아이콘이 감지되었습니다.기본값은 {0}...
   wwcConfigConversationChannelFormatInput: '개별 채팅 채널의 현재 형식은 {0} 입니다.입력에 다음 변수가 포함되었는지
     확인하세요: {1}.PlaceHolderAPI를 사용하는 경우 해당 변수를 대신 백분율 (%) 로 묶어야 합니다.돌아가려면 0을 입력하세요.'
+  wwcBlacklistBadFormat: 블랙리스트가 목록 형식이 올바르지 않습니다.이 문제가 해결되기 전까지는 시행되지 않을 것입니다.
+  wwcBlacklistedMsg: 메시지에 금지된 언어가 포함되어 있으며 번역되지 않았습니다.
+  wwcBlacklistedMsgDetected: '블랙리스트에 오른 단어 ({0}) 발견: {1}'
+  wwcBlacklistLoaded: '{0} 금지어 블랙리스트가 로드되었습니다.'
 

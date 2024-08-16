@@ -664,4 +664,9 @@ Messages:
     je {0}. Uverite se da vaš unos sadrži sledeće promenljive: {1}. Ako imate PlaceholderAPI,
     uverite se da su te promenljive okružene procentima (%) umesto toga. Otkucajte
     0 da biste se vratili nazad.'
+  wwcBlacklistBadFormat: Vaša crna lista nije pravilno formatirana kao lista. Neće
+    se primenjivati dok se to ne popravi.
+  wwcBlacklistedMsg: Vaša poruka sadrži zabranjeni jezik i nije prevedena.
+  wwcBlacklistedMsgDetected: 'Otkrivena reč na crnoj listi ({0}): {1}'
+  wwcBlacklistLoaded: Vaša crna lista zabranjenih reči {0} je učitana.
 

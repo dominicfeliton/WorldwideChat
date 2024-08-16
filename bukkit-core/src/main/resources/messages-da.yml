@@ -670,4 +670,9 @@ Messages:
     er {0}. Sørg for, at dit input indeholder følgende variabler: {1}. Hvis du har
     PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
     (%) i stedet. Skriv 0 for at gå tilbage.'
+  wwcBlacklistBadFormat: Din sortliste er ikke korrekt formateret som en liste. Det
+    vil ikke blive håndhævet, før dette er løst.
+  wwcBlacklistedMsg: Din besked indeholder forbudt sprog og blev ikke oversat.
+  wwcBlacklistedMsgDetected: 'Sortlistet ord ({0}) fundet: {1}'
+  wwcBlacklistLoaded: Din sorte liste over {0} forbudte ord er blevet indlæst.
 

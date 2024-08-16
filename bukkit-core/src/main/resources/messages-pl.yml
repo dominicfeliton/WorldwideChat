@@ -679,4 +679,9 @@ Messages:
     to {0}. Upewnij się, że dane wejściowe zawierają następujące zmienne: {1}. Jeśli
     masz PlaceholderAPI, upewnij się, że te zmienne są otoczone wartościami procentowymi
     (%). Wpisz 0, aby wrócić.'
+  wwcBlacklistBadFormat: Twoja czarna lista nie jest prawidłowo sformatowana jako
+    lista. Nie będzie ono egzekwowane, dopóki nie zostanie to naprawione.
+  wwcBlacklistedMsg: Twoja wiadomość zawiera zabroniony język i nie została przetłumaczona.
+  wwcBlacklistedMsgDetected: 'Wykryto słowo na czarnej liście ({0}): {1}'
+  wwcBlacklistLoaded: Twoja czarna lista zakazanych słów {0} została załadowana.
 

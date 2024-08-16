@@ -743,4 +743,9 @@ Messages:
     Variablen enthält: {1}. Wenn Sie PlaceholderAPI haben, stellen Sie sicher, dass
     diese Variablen stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein,
     um zurückzugehen.'
+  wwcBlacklistBadFormat: Ihre schwarze Liste ist nicht richtig als Liste formatiert.
+    Sie wird erst durchgesetzt, wenn das Problem behoben ist.
+  wwcBlacklistedMsg: Ihre Nachricht enthält verbotene Sprache und wurde nicht übersetzt.
+  wwcBlacklistedMsgDetected: 'Wort auf der schwarzen Liste ({0}) erkannt: {1}'
+  wwcBlacklistLoaded: Deine schwarze Liste mit {0} gesperrten Wörtern wurde geladen.
 
