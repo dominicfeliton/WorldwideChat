@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: ಟಾಗಲ್ ಸೈನ್ ಅನುವಾದ
   wwcUpdaterOutOfDate: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ನವೀಕೃತವಾಗಿದೆ. ದಯವಿಟ್ಟು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ಅಪ್ಡೇಟ್
     ಮಾಡಿ, {0}.
-  wwcConfigGUINextPageButton: ಮುಂದಿನ ಪುಟ
   wwcConfigInvalidTranslatorSettings: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು! ದಯವಿಟ್ಟು ನಿಮ್ಮ
     config.yml ನಲ್ಲಿ ಕೇವಲ ಒಂದು ಅನುವಾದಕವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
   wwcConfigGUIQuitButton: ನಿರ್ಗಮಿಸಿ & ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ
@@ -613,4 +612,91 @@ Messages:
     ಹಸ್ತಚಾಲಿತವಾಗಿ ಮಾರ್ಪಡಿಸಲು ಪ್ರಯತ್ನಿಸಿ.
   wwcRateNoConvoFolia: ಫೋಲಿಯಾದಲ್ಲಿ GUI ಮೂಲಕ ದರ ಮಿತಿಯನ್ನು ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು
     ಬದಲಾಗಿ /wwctrl ಅಥವಾ /translateratelimit ಅನ್ನು ಬಳಸಿ.
+  wwcInvalidTranslatorUser: WorldwideChat ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ
+    ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಇದು ಮುಂದುವರಿದರೆ ನಿಮ್ಮ ನಿರ್ವಾಹಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.
+  wwcCouldNotSaveOhNo: WorldwideChat ಡೇಟಾವನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ... ದಯವಿಟ್ಟು ನಿಮ್ಮ
+    ಆಯ್ದ ಡೇಟಾಬೇಸ್/ಶೇಖರಣಾ ಆಯ್ಕೆಯನ್ನು ಸ್ಥಿರವಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ!
+  wwcSyncUserDataComplete: ಬಳಕೆದಾರರ ಡೇಟಾವನ್ನು {0} ಗೆ ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ. {1}
+  wwcSyncUserDataStart: ಬಳಕೆದಾರರ ಡೇಟಾವನ್ನು ಸಿಂಕ್ ಮಾಡುವುದು...
+  wwcdDebugEnvDisabled: ಡೀಬಗ್ ಪರಿಸರವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcdDebugEnvWarn: 'ನೀವು ಈ ಪ್ಲಗಿನ್ ಅಭಿವೃದ್ಧಿಪಡಿಸುತ್ತಿದ್ದೇನೆ/ದೋಷವನ್ನು ತನಿಖೆ ಹೊರತು
+    ಡೀಬಗ್ ಪರಿಸರವನ್ನು ಟಾಗ್ಲಿಂಗ್ ಬಹುತೇಕ ಎಂದಿಗೂ ಶಿಫಾರಸು ಮಾಡುವುದಿಲ್ಲ. ನೀವು ಇನ್ನೂ ಮುಂದುವರೆಯಲು
+    ಬಯಸಿದರೆ, ಈ ಕೆಳಗಿನವುಗಳನ್ನು ಟೈಪ್ ಮಾಡಿ: {0}'
+  wwclLangNotLoadedConsole: '{0} ಅನ್ನು ಈ ಸಮಯದಲ್ಲಿ ಬಳಸಲಾಗುವುದಿಲ್ಲ. ಇದನ್ನು ಸರಿಪಡಿಸಲು
+    ಪ್ಲಗಿನ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲು ನೀವು ಪ್ರಯತ್ನಿಸಬಹುದು, ಆದರೆ ಅದು ಮುಂದುವರಿದರೆ ದಯವಿಟ್ಟು
+    ಡೆವಲಪರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.'
+  wwcdDebugEnvEnabled: ಡೀಬಗ್ ಪರಿಸರವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwclLangNotLoaded: '{0} ಅನ್ನು ಈ ಸಮಯದಲ್ಲಿ ಬಳಸಲಾಗುವುದಿಲ್ಲ. ವಿಭಿನ್ನ ಬೆಂಬಲಿತ ಸ್ಥಳೀಕರಣವನ್ನು
+    ಬಳಸಲು ಪ್ರಯತ್ನಿಸಿ: {1}'
+  wwcdDebugBadState: WorldwideChat ಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ ಹೊಂದಿಲ್ಲದಿರುವಾಗ ಈ ಡೀಬಗ್ ಆಜ್ಞೆಯನ್ನು
+    ಚಲಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.
+  wwcNoVaultOnFolia: ಫೋಲಿಯಾದಲ್ಲಿ ವಾಲ್ಟ್ ಅನ್ನು ಪ್ರಸ್ತುತ ಬೆಂಬಲಿಸಲಾಗಿಲ್ಲ. ಇದು ಇತರ ಚಾಟ್
+    ಪ್ಲಗಿನ್ಗಳೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆಯನ್ನು ಮುರಿಯಬಹುದು.
+  wwcNoVaultPlugin: ವಾಲ್ಟ್ ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ! ಇದು ಇತರ ಸ್ಥಾಪಿಸಲಾದ ಚಾಟ್ ಪ್ಲಗಿನ್ಗಳೊಂದಿಗೆ
+    ಹೊಂದಾಣಿಕೆಯನ್ನು ಮುರಿಯಬಹುದು.
+  wwcVaultChatProviderFound: 'ವಾಲ್ಟ್ ಚಾಟ್ ಪೂರೈಕೆದಾರರನ್ನು ಕಂಡುಕೊಂಡಿದ್ದೇವೆ: {0}.'
+  wwcNoVaultChatProvider: ವಾಲ್ಟ್ ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿದೆ, ಆದರೆ ಯಾವುದೇ ಬೆಂಬಲಿತ ಚಾಟ್ ಪೂರೈಕೆದಾರರನ್ನು
+    ಪತ್ತೆಹಚ್ಚಲಾಗಿಲ್ಲ.
+  wwcConfigEventPrioritySet: ಚಾಟ್ ಕೇಳುಗರ ಈವೆಂಟ್ ಆದ್ಯತೆಯನ್ನು {0} ಗೆ ಹೊಂದಿಸಿ.
+  wwcConfigEventPriorityInvalid: Config.yml ನಲ್ಲಿ ಅಮಾನ್ಯ ಚಾಟ್ ಕೇಳುಗರ ಈವೆಂಟ್ ಆದ್ಯತೆ.
+    {0} ಗೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcConfigGUIChatListenerPriorityButton: ಚಾಟ್ ಈವೆಂಟ್ ಕೇಳುವವರ ಆದ್ಯತೆಯನ್ನು ಬದಲಾಯ
+  wwcConfigConversationChatPriorityBadInput: ಕೆಟ್ಟ ಚಾಟ್ ಆದ್ಯತೆಯ ಇನ್ಪುಟ್! ದಯವಿಟ್ಟು
+    ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.
+  wwcConfigConversationChatPrioritySuccess: ನಿಮ್ಮ ಚಾಟ್ ಈವೆಂಟ್ ಆದ್ಯತೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಿ.
+  wwcConfigVaultSupportInvalid: ಅಮಾನ್ಯ ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು config.yml ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+    ನಿಜಕ್ಕೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcWatsonDeprecation: ವ್ಯಾಟ್ಸನ್ ಅವರನ್ನು ಅಪ್ರಚುರಕಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಇದನ್ನು ಇನ್ನು ಮುಂದೆ
+    ಐಬಿಎಂ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ಸ್ವಿಚಿಂಗ್ ಅನ್ನು ಪರಿಗಣಿಸಿ, ಏಕೆಂದರೆ ಮುಂದಿನ ಅಪ್ಡೇಟ್ನಲ್ಲಿ
+    ಅದಕ್ಕೆ ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.
+  wwcConfigForceChatChannelEnabled: ಎಲ್ಲಾ ಅನುವಾದಗಳ ಸಮಯದಲ್ಲಿ ಪ್ರತ್ಯೇಕ ಅನುವಾದ ಚಾನಲ್
+    ಅನ್ನು ಒತ್ತಾಯಿಸಲಾಗುತ್ತದೆ.
+  wwcConfigConversationSeparateChatChannelForceSuccess: ಪ್ರತ್ಯೇಕ ಚಾನಲ್ಗೆ ಒತ್ತಾಯಿಸಿ
+    ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigConversationChannelIconInput: ಪ್ರತ್ಯೇಕ ಅನುವಾದ ಚಾನಲ್ಗಾಗಿ ಪ್ರಸ್ತುತ ಐಕಾನ್
+    {0} ಆಗಿದೆ. ಬಣ್ಣ ಸಂಕೇತಗಳು ಬೆಂಬಲಿತವಾಗಿವೆ; ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationChatPriorityInput: 'ಪ್ರಸ್ತುತ ಚಾಟ್ ಈವೆಂಟ್ ಆದ್ಯತೆ {0} ಆಗಿದೆ.
+    ಟೈಪ್ ಮಾಡಿ 0 ಹಿಂದಕ್ಕೆ ಹೋಗಿ ಅಥವಾ ಮಾನ್ಯ ಆದ್ಯತೆಗಳ ಈ ಪಟ್ಟಿಯಿಂದ ಆಯ್ಕೆ ಮಾಡಿ: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಸ್ವರೂಪವನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationChannelIconSuccess: ನಿಮ್ಮ ಚಾನಲ್ ಐಕಾನ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigGUISeparateChatChannelIconButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಐಕಾನ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationChatFormatSuccess: ನಿಮ್ಮ ಸ್ವರೂಪವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigGUISeparateChatChannelForceButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಅನ್ನು ಒತ್ತಾಯಿಸಿ
+  wwcOrigHover: 'ಮೂಲ ಸಂದೇಶ: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: ಹೂವರ್ ಪಠ್ಯ ಯಶಸ್ವಿಯಾಗಿ ಟಾಗಲ್ಡ್
+    ಎಂದು ಅನುವಾದ ಲಗತ್ತಿಸಲಾಗಿದೆ ಮೂಲ ಹೊರಹೋಗುವ ಚಾಟ್.
+  wwcConfigGUISendOutgoingHoverTextChatButton: ಮೂಲ ಹೊರಹೋಗುವ ಸಂದೇಶಗಳನ್ನು ಹೂವರ್ ಪಠ್ಯವಾಗಿ
+    ಸೇರಿಸಿ
+  wwcConfigPAPIInstalled: ನಿಮ್ಮ ಚಾಟ್ ಸ್ವರೂಪಕ್ಕೆ PlaceholderAPI ಬೆಂಬಲವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcConfigPAPINotInstalled: ನಿಮ್ಮ ಚಾಟ್ ಸ್ವರೂಪದಲ್ಲಿ ಕಸ್ಟಮ್ ಪ್ಲೇಸ್ಹೋಲ್ಡರ್ಗಳನ್ನು ಪತ್ತೆ
+    ಮಾಡಲಾಗಿದೆ, ಆದರೆ PlaceholderAPI ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ. ಪ್ಲಗಿನ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಿದೆ
+    ಮತ್ತು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ ಎಂದು ದಯವಿಟ್ಟು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
+  wwcConfigChatChannelIconInvalid: ಅಮಾನ್ಯ ಚಾನಲ್ ಐಕಾನ್ ಪತ್ತೆಯಾಗಿದೆ. {0} ಗೆ ಡೀಫಾಲ್ಟ್
+    ಆಗಿದೆ...
+  wwcBlacklistBadFormat: ನಿಮ್ಮ ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಸರಿಯಾಗಿ ಪಟ್ಟಿಯಾಗಿ ಫಾರ್ಮಾಟ್ ಮಾಡಲಾಗಿಲ್ಲ.
+    ಇದನ್ನು ನಿವಾರಿಸುವವರೆಗೆ ಅದನ್ನು ಜಾರಿಗೊಳಿಸಲಾಗುವುದಿಲ್ಲ.
+  wwcBlacklistedMsg: ನಿಮ್ಮ ಸಂದೇಶವು ನಿಷೇಧಿತ ಭಾಷೆಯನ್ನು ಒಳಗೊಂಡಿದೆ ಮತ್ತು ಅನುವಾದಿಸಲ್ಪಟ್ಟಿಲ್ಲ.
+  wwcBlacklistedMsgDetected: 'ಕಪ್ಪುಪಟ್ಟಿ ಮಾಡಿದ ಪದ ({0}) ಪತ್ತೆಯಾಗಿದೆ: {1}'
+  wwcBlacklistLoaded: '{0} ನಿಷೇಧಿತ ಪದಗಳ ನಿಮ್ಮ ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಿದೆ.'
+  wwcConfigConversationAddBlacklist: ನೀವು ಸೇರಿಸಲು ಬಯಸುವ ಹೊಸ ಪದವನ್ನು ನಮೂದಿಸಿ, ಅಥವಾ
+    ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ಕಪ್ಪುಪಟ್ಟಿಯಿಂದ ಅಳಿಸಿ
+  wwcConfigConversationBlacklistAddSuccess: ಕಪ್ಪುಪಟ್ಟಿಗೆ ಹೊಸ ಪದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಗಿದೆ.
+  wwcConfigGUIMessagesModifyBlacklistButton: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಮಾರ್ಪಡಿಸಿ
+  wwcConfigGUIChatBlacklistButton: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+  wwcConfigConversationBlacklistDeletionSuccess: ಪದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ.
+  wwcConfigGUIChatChannelSettings: ಚಾಟ್ ಚಾನೆಲ್ ಸಂರಚನೆ
+  wwcConfigGUIChatBlacklistSuccess: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIChatMessagesBlacklistNewButton: ಹೊಸ ಪದವನ್ನು ಸೇರಿಸಿ
+  wwcConfigGUIChatChannelButton: ಚಾನೆಲ್ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಭಾಷಾಂತ
+  wwcConfigGUIBlacklistMessagesModify: ಪದವನ್ನು ಮಾರ್ಪಡಿಸಿ ({0})
+  wwcConfigChatChannelFormatInvalid: ಅಮಾನ್ಯ ಚಾನಲ್ ಸ್ವರೂಪ ಪತ್ತೆಯಾಗಿದೆ. {0} ಗೆ ಡೀಫಾಲ್ಟ್
+    ಆಗಿದೆ...
+  wwcConfigConversationChannelFormatInput: 'ಪ್ರತ್ಯೇಕ ಚಾಟ್ ಚಾನಲ್ನ ಪ್ರಸ್ತುತ ಸ್ವರೂಪ {0}
+    ಆಗಿದೆ. ನೀವು ಸೇರಿಸಬಹುದಾದ ನಮ್ಮ ಡೀಫಾಲ್ಟ್ ಮಾನ್ಯತೆ ಪಡೆದ ವಾದಗಳು: {1}. ನೀವು PlaceholderAPI
+    ಹೊಂದಿದ್ದರೆ, ಆ ಅಸ್ಥಿರಗಳು ಬದಲಿಗೆ ಶೇಕಡಾವಾರು (%) ನಿಂದ ಸುತ್ತುವರೆದಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
+    ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.'
+  wwcConfigGUIModifyBlacklistSettings: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಮಾರ್ಪಡಿಸಿ
+  wwcConfigGUINextPageButton: ಮುಂದಿನ ಪುಟ
 

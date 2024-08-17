@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Chuyển đổi Đăng dịch
   wwcUpdaterOutOfDate: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên bản
     mới nhất, {0}.
-  wwcConfigGUINextPageButton: Trang tiếp theo
   wwcConfigInvalidTranslatorSettings: Cài đặt dịch giả không hợp lệ! Vui lòng kích
     hoạt chỉ một trình dịch trong config.yml của bạn.
   wwcConfigGUIQuitButton: Thoát & Lưu Thay đổi
@@ -610,4 +609,96 @@ Messages:
     thủ công cho giá trị này.
   wwcRateNoConvoFolia: Không thể đặt giới hạn tỷ lệ thông qua GUI trên Folia. Vui
     lòng sử dụng /wwctrl hoặc /translateratelimit thay thế.
+  wwcInvalidTranslatorUser: WorldwideChat hiện không khả dụng. Vui lòng thử lại sau
+    hoặc liên hệ với quản trị viên của bạn nếu điều này vẫn tiếp diễn.
+  wwcCouldNotSaveOhNo: Không thể lưu dữ liệu WorldwideChat... vui lòng đảm bảo rằng
+    tùy chọn cơ sở dữ liệu/lưu trữ đã chọn của bạn ổn định!
+  wwcSyncUserDataComplete: Đã lưu thành công dữ liệu người dùng vào {0}. {1}
+  wwcSyncUserDataStart: Đồng bộ hóa dữ liệu người dùng...
+  wwcdDebugEnvDisabled: Môi trường gỡ lỗi đã bị vô hiệu hóa.
+  wwcdDebugEnvWarn: 'Chuyển đổi môi trường gỡ lỗi hầu như không bao giờ được khuyến
+    nghị trừ khi bạn đang phát triển plugin này/điều tra lỗi. Nếu bạn vẫn muốn tiếp
+    tục, hãy nhập như sau: {0}'
+  wwclLangNotLoadedConsole: '{0} không thể được sử dụng tại thời điểm này. Bạn có
+    thể thử tải lại plugin để khắc phục điều này, nhưng nếu nó vẫn tồn tại, vui lòng
+    liên hệ với nhà phát triển.'
+  wwcdDebugEnvEnabled: Môi trường gỡ lỗi đã được kích hoạt.
+  wwclLangNotLoaded: '{0} không thể được sử dụng tại thời điểm này. Hãy thử sử dụng
+    một bản địa hóa được hỗ trợ khác: {1}'
+  wwcdDebugBadState: Lệnh gỡ lỗi này không thể chạy trong khi WorldwideChat không
+    có bộ dịch hợp lệ. Vui lòng thử lại sau.
+  wwcNoVaultOnFolia: Vault hiện không được hỗ trợ trên Folia. Điều này có thể phá
+    vỡ khả năng tương thích với các plugin trò chuyện khác.
+  wwcNoVaultPlugin: Vault chưa được cài đặt! Điều này có thể phá vỡ khả năng tương
+    thích với các plugin trò chuyện đã cài đặt khác.
+  wwcVaultChatProviderFound: 'Tìm thấy nhà cung cấp trò chuyện Vault: {0}.'
+  wwcNoVaultChatProvider: Vault đã được cài đặt, nhưng không có nhà cung cấp trò chuyện
+    được hỗ trợ nào được phát hiện.
+  wwcConfigEventPrioritySet: Đặt ưu tiên sự kiện người nghe trò chuyện thành {0}.
+  wwcConfigEventPriorityInvalid: Ưu tiên sự kiện người nghe trò chuyện không hợp lệ
+    trong config.yml. Mặc định là {0}...
+  wwcConfigGUIChatListenerPriorityButton: Thay đổi mức độ ưu tiên của người nghe sự
+    kiện trò chuyện
+  wwcConfigConversationChatPriorityBadInput: Đầu vào ưu tiên trò chuyện xấu! Vui lòng
+    thử lại.
+  wwcConfigConversationChatPrioritySuccess: Thiết lập thành công mức độ ưu tiên sự
+    kiện trò chuyện của bạn.
+  wwcConfigVaultSupportInvalid: Hỗ trợ vault không hợp lệ được đặt trong config.yml.
+    Mặc định là true...
+  wwcWatsonDeprecation: Watson đã không còn được sử dụng và không còn được IBM hỗ
+    trợ. Vui lòng xem xét chuyển đổi, vì hỗ trợ cho nó sẽ bị xóa trong bản cập nhật
+    tiếp theo.
+  wwcConfigForceChatChannelEnabled: Một kênh dịch riêng biệt sẽ bị buộc trong tất
+    cả các bản dịch.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Bật thành công buộc kênh riêng
+    biệt.
+  wwcConfigConversationChannelIconInput: Biểu tượng hiện tại cho kênh dịch riêng biệt
+    là {0}. Mã màu được hỗ trợ; gõ 0 để quay trở lại.
+  wwcConfigConversationChatPriorityInput: 'Ưu tiên sự kiện chat hiện tại là {0}. Nhập
+    0 đi ngược lại hoặc chọn từ danh sách ưu tiên hợp lệ này: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Thay đổi định dạng kênh riêng
+  wwcConfigConversationChannelIconSuccess: Thay đổi thành công biểu tượng kênh của
+    bạn.
+  wwcConfigGUISeparateChatChannelIconButton: Thay đổi biểu tượng kênh riêng biệt
+  wwcConfigConversationChatFormatSuccess: Định dạng của bạn đã được thay đổi thành
+    công.
+  wwcConfigGUISeparateChatChannelForceButton: Buộc kênh riêng biệt
+  wwcOrigHover: 'Tin nhắn ban đầu: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Trò chuyện gửi đi gốc được
+    đính kèm với bản dịch khi văn bản di chuột đã chuyển thành công.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Thêm tin nhắn gửi đi gốc dưới dạng
+    văn bản di chuột
+  wwcConfigPAPIInstalled: Hỗ trợ PlaceHolderAPI đã được kích hoạt cho định dạng trò
+    chuyện của bạn.
+  wwcConfigPAPINotInstalled: Chỗ giữ chỗ tùy chỉnh đã được phát hiện trong định dạng
+    trò chuyện của bạn, nhưng PlaceHolderAPI chưa được cài đặt. Vui lòng đảm bảo rằng
+    plugin đã tải và được kích hoạt.
+  wwcConfigChatChannelIconInvalid: Phát hiện biểu tượng kênh không hợp lệ. Mặc định
+    là {0}...
+  wwcBlacklistBadFormat: Danh sách đen của bạn không được định dạng đúng như một danh
+    sách. Nó sẽ không được thực thi cho đến khi điều này được khắc phục.
+  wwcBlacklistedMsg: Tin nhắn của bạn chứa ngôn ngữ bị cấm và không được dịch.
+  wwcBlacklistedMsgDetected: 'Phát hiện từ trong danh sách đen ({0}): {1}'
+  wwcBlacklistLoaded: Danh sách đen {0} từ bị cấm của bạn đã được tải.
+  wwcConfigConversationAddBlacklist: Nhập thuật ngữ mới mà bạn muốn thêm hoặc nhập
+    0 để quay lại.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Xóa khỏi danh sách đen
+  wwcConfigConversationBlacklistAddSuccess: Đã thêm thành công một thuật ngữ mới vào
+    danh sách đen.
+  wwcConfigGUIMessagesModifyBlacklistButton: Sửa đổi danh sách đen
+  wwcConfigGUIChatBlacklistButton: Bật danh sách đen
+  wwcConfigConversationBlacklistDeletionSuccess: Xóa thành công thuật ngữ.
+  wwcConfigGUIChatChannelSettings: Cấu hình kênh trò chuyện
+  wwcConfigGUIChatBlacklistSuccess: Bật thành công danh sách đen.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Thêm từ mới
+  wwcConfigGUIChatChannelButton: Dịch cài đặt kênh
+  wwcConfigGUIBlacklistMessagesModify: Sửa đổi thuật ngữ ({0})
+  wwcConfigChatChannelFormatInvalid: Phát hiện định dạng kênh không hợp lệ. Mặc định
+    là {0}...
+  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
+    riêng biệt là {0}. Các đối số được công nhận mặc định của chúng tôi mà bạn có
+    thể bao gồm: {1}. Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao
+    quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
+  wwcConfigGUIModifyBlacklistSettings: Sửa đổi danh sách đen
+  wwcConfigGUINextPageButton: Trang kế tiếp
 

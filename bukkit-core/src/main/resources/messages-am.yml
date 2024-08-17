@@ -40,7 +40,6 @@ Messages:
   wwcConfigGUILangButton: ተሰኪ ቋንቋን ይቀይሩ
   wwctGUISignButton: የምልክት ትርጉም ይቀያይሩ
   wwcUpdaterOutOfDate: WorldwideChat ጊዜው ያለፈበት ነው። እባክዎን ወደ ቅርብ ጊዜው ስሪት ያዘምኑ, {0}።
-  wwcConfigGUINextPageButton: ቀጣይ ገጽ
   wwcConfigInvalidTranslatorSettings: ልክ ያልሆነ ተርጓሚ ቅንብሮች! እባክዎ በእርስዎ config.yml ውስጥ
     አንድ ተርጓሚ ብቻ ያንቁ።
   wwcConfigGUIQuitButton: ለውጦችን ውጣ እና አስቀምጥ
@@ -529,4 +528,73 @@ Messages:
     ናቸው። እባክዎን ለዚህ እሴት መዋቅሩን በእጅ ማስተካከል ይሞክሩ
   wwcRateNoConvoFolia: በፎሊያ ላይ በGUI በኩል የመጠን ገደብ ማዘጋጀት አልቻለም። እባክዎን ይልቁን/wwctrl ወይም
     /translateratelimit ይጠቀሙ።
+  wwcInvalidTranslatorUser: WorldwideChat በአሁኑ ጊዜ አይገኝም። እባክዎን በኋላ እንደገና ይሞክሩ ወይም
+    ይህ ከቀጠለ አስተዳዳሪዎን ያነ
+  wwcCouldNotSaveOhNo: የWorldwideChat ውሂብን ማስቀመጥ አልቻለም... እባክዎ የተመረጠው የውሂብ ጎታ/ማከማቻ
+    አማራጭ የተረጋጋ መሆኑን ያረ
+  wwcSyncUserDataComplete: የተጠቃሚ ውሂብን በተሳካ ሁኔታ ወደ {0} አስቀም {1}
+  wwcSyncUserDataStart: የተጠቃሚ ውሂብን ማመሳሰል...
+  wwcdDebugEnvDisabled: የማረም አካባቢው ተሰናክሏል።
+  wwcdDebugEnvWarn: 'ይህንን ተሰኪ ካልማዳት/ስህተት ከማመርመር በስተቀር የማረም አካባቢን መቀየር በጭራሽ አይመከርም።
+    አሁንም ለመቀጠል ከፈለጉ የሚከተሉትን ይተይቡ: {0}'
+  wwclLangNotLoadedConsole: '{0} በዚህ ጊዜ ጥቅም ላይ ሊውል አይችልም። ይህንን ለማስተካከል ተሰኪውን እንደገና
+    መጫን መሞከር ይችላሉ፣ ግን ከቀጠለ እባክዎን ገንቢውን ያነጋግሩ።'
+  wwcdDebugEnvEnabled: የማረም አካባቢው ነቃቷል።
+  wwclLangNotLoaded: '{0} በዚህ ጊዜ ጥቅም ላይ ሊውል አይችልም። የተለየ የተደገፈ አካባቢያዊ መጠቀም ይሞክሩ {1}'
+  wwcdDebugBadState: WorldwideChat ትክክለኛ ተርጓሚ ስብስብ ባይኖረበት ጊዜ ይህ የማረም ትዕዛዝ ሊሰራ አይችልም።
+    እባክዎን በኋላ እንደገና ሞክሩ
+  wwcNoVaultOnFolia: ቫልት በአሁኑ ጊዜ በፎሊያ ላይ አይደገፋም። ይህ ከሌሎች የውይይት ተሰኪዎች ጋር ተኳሃኝነትን ሊያ
+  wwcNoVaultPlugin: ቫልት አልተጫነም! ይህ ከሌሎች ከተጫኑ የውይይት ተሰኪዎች ጋር ተኳሃኝነት ሊያ
+  wwcVaultChatProviderFound: 'የቫልት ውይይት አቅራቢ አገኘ: {0}።'
+  wwcNoVaultChatProvider: ቫልት ተጫኗል፣ ግን ምንም የሚደገፍ የውይይት አቅራቢ አልተገኝም
+  wwcConfigEventPrioritySet: የውይይት አድማጭ ዝግጅት ቅድሚያ ወደ {0}
+  wwcConfigEventPriorityInvalid: በ config.yml ውስጥ ልክ ያልሆነ የውይይት አድማጭ ክስተት ቅድሚ ወደ {0}
+    ነባሪ መቀየር...
+  wwcConfigGUIChatListenerPriorityButton: የውይይት ክስተት አድማጮች
+  wwcConfigConversationChatPriorityBadInput: መጥፎ ውይይት ቅድሚያ ግብ እባክዎን እንደገና ሞክሩ።
+  wwcConfigConversationChatPrioritySuccess: የውይይት ዝግጅትዎን ቅድሚያ በተሳካ
+  wwcConfigVaultSupportInvalid: በ config.yml ውስጥ የተቀናጀ ልክ ድጋፍ የተቀመጠ ነው። ወደ እውነት ነባሪ
+    መሆን...
+  wwcWatsonDeprecation: ዋትሰን ቆይቷል እና ከእንግዲህ በ IBM አይደገፋም። በቀጣዩ ዝመና ውስጥ ለእሱ ድጋፍ ስለሚወግድ
+    እባክዎ መቀየርን ያስቡ።
+  wwcConfigForceChatChannelEnabled: በሁሉም ትርጉሞች ጊዜ የተለየ የትርጉም ሰርጥ ይገደዳል።
+  wwcConfigConversationSeparateChatChannelForceSuccess: የተለየ ሰርጥ ማስገደድ በተሳካ ሁኔታ ተቀየረ
+  wwcConfigConversationChannelIconInput: ለተለየ የትርጉም ሰርጥ አሁን ያለው አዶን {0} ነው። የቀለም ኮዶች
+    ይደገፋሉ; ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationChatPriorityInput: 'የአሁኑ የውይይት ዝግጅት ቅድሚያ {0} ነው። 0 ይይቡ ወደ ኋላ
+    ይሂዱ ወይም ከዚህ ትክክለኛ ቅድሚያ ዝርዝር ይምረጡ: {1}።'
+  wwcConfigGUISeparateChatChannelFormatButton: የተለየ ሰርጥ ቅርጸት ይለ
+  wwcConfigConversationChannelIconSuccess: የቻናልዎን አዶን በተሳካ ሁኔታ ለው
+  wwcConfigGUISeparateChatChannelIconButton: የተለየ ሰርጥ አዶን ይለ
+  wwcConfigConversationChatFormatSuccess: የእርስዎ ቅርጸት በተሳካ ሁኔታ ተለወጠ።
+  wwcConfigGUISeparateChatChannelForceButton: የተለየ ሰርጥ ኃይል
+  wwcOrigHover: 'የመጀመሪያው መልዕክት: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: የመጀመሪያው የወጪ ውይይት እንደ ሆቨር
+    ጽሑፍ በተሳካ ሁኔታ ተቀያይሯል።
+  wwcConfigGUISendOutgoingHoverTextChatButton: ኦሪጅናል የሚወጡ መልዕክቶችን እንደ ሆቨር ጽሑፍ
+  wwcConfigPAPIInstalled: PlaceholderAPI ድጋፍ ለውይይት ቅርጸትዎ ተነቃቷል።
+  wwcConfigPAPINotInstalled: በውይይት ቅርጸትዎ ውስጥ ብጁ ቦታ መያዣዎች ተገኝተዋል፣ ግን PlaceholderAPI
+    አልተጫነም። እባክዎ ተሰኪው ተጫነ መሆኑን እና መነቃቱን ያረጋግጡ።
+  wwcConfigChatChannelIconInvalid: ልክ ያልሆነ የቻናል አዶን ተገለ ወደ {0} ነባሪ መቀየር...
+  wwcBlacklistBadFormat: የእርስዎ ጥቁር ዝርዝር እንደ ዝርዝር በአግባቡ አልተቀረበም። ይህ እስኪስተካከል ድረስ አይተገበርም።
+  wwcBlacklistedMsg: መልዕክትዎ የተከለከለ ቋንቋ ይዟል እናም አልተተረጎ
+  wwcBlacklistedMsgDetected: 'በጥቁር የተዘረዘሩት ቃል ({0}) ተገኝቷል: {1}'
+  wwcBlacklistLoaded: የእርስዎ {0} የተከለከሉ ቃላት ጥቁር ዝርዝር ተጫኗል።
+  wwcConfigConversationAddBlacklist: ማከል የሚፈልጉትን አዲስ ቃል ያስገቡ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ከጥቁር ዝርዝር ሰርዝ
+  wwcConfigConversationBlacklistAddSuccess: በጥቁር ዝርዝሩ ውስጥ አዲስ ቃል በተሳካ ሁኔታ አክሏል።
+  wwcConfigGUIMessagesModifyBlacklistButton: ጥቁር ዝርዝርን ያስ
+  wwcConfigGUIChatBlacklistButton: ጥቁር ዝርዝርን ያስ
+  wwcConfigConversationBlacklistDeletionSuccess: ቃሉን በተሳካ ሁኔታ ሰርዘዋል።
+  wwcConfigGUIChatChannelSettings: የውይይት ቻናል ውቅ
+  wwcConfigGUIChatBlacklistSuccess: ጥቁር ዝርዝሩን በተሳካ ሁኔታ መለወጥ።
+  wwcConfigGUIChatMessagesBlacklistNewButton: አዲስ ቃል ያክሉ
+  wwcConfigGUIChatChannelButton: የሻንል ቅንብሮችን
+  wwcConfigGUIBlacklistMessagesModify: ቃል ማሻሻል ({0})
+  wwcConfigChatChannelFormatInvalid: ልክ ያልሆነ የቻናል ቅርጸት ተገ ወደ {0} ነባሪ መቀየር...
+  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። ሊያካትቱ
+    የሚችሏቸው ነባሪ እውቅና ያላቸው ክርክሮች: {1}። PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች (%)
+    የተከበቡ መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
+  wwcConfigGUIModifyBlacklistSettings: ጥቁር ዝርዝርን ያስ
+  wwcConfigGUINextPageButton: ቀጣይ ገጽ
 

@@ -1,11 +1,11 @@
 name: WorldwideChat
-version: 1.17.5
+version: 1.18.0
 api-version: 1.13
 description: Break the blocky language barrier!
 author: Dominic Feliton
 main: com.dominicfeliton.worldwidechat.WorldwideChat
 folia-supported: false
-softdepend: [Vault]
+softdepend: [Vault, PlaceholderAPI]
 commands:
     wwc:
         description: Prints WorldwideChat version.
@@ -22,7 +22,7 @@ commands:
     wwcd:
         description: Debug helper for WorldwideChat.
         aliases: [wwcdebug, translatedebug]
-        usage: §4/wwcd (cache/checkdb) (args)
+        usage: §4/wwcd (cache/checkdb/save/debugenv) (args)
         permission: worldwidechat.wwcd
         permission-message: §4You do not have permission to run this command.
     wwcg:

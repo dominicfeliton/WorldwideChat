@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Přepnout překlad znaků
   wwcUpdaterOutOfDate: WorldwideChat je zastaralý. Aktualizujte prosím na nejnovější
     verzi, {0}.
-  wwcConfigGUINextPageButton: Další stránka
   wwcConfigInvalidTranslatorSettings: Neplatná nastavení překladače! Povolte pouze
     jeden překladač ve vašem config.yml.
   wwcConfigGUIQuitButton: Ukončit a uložit změny
@@ -601,4 +600,88 @@ Messages:
     přepínače jsou stále funkční. Zkuste upravit konfiguraci ručně pro tuto hodnotu.
   wwcRateNoConvoFolia: Nelze nastavit limit rychlosti pomocí GUI na Folia. Místo toho
     použijte /wwctrl nebo /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat není momentálně k dispozici. Zkuste to prosím
+    znovu později nebo se obraťte na správce, pokud to přetrvává.
+  wwcCouldNotSaveOhNo: Nelze uložit data WorldwideChat... ujistěte se, že vybraná
+    možnost databáze/úložiště je stabilní!
+  wwcSyncUserDataComplete: Úspěšně uložena uživatelská data do {0}. {1}
+  wwcSyncUserDataStart: Synchronizace uživatelských dat...
+  wwcdDebugEnvDisabled: Prostředí ladění bylo deaktivováno.
+  wwcdDebugEnvWarn: 'Přepínání ladicího prostředí se téměř nikdy nedoporučuje, pokud
+    nevyvíjíte tento plugin/nevyšetřujete chybu. Pokud chcete pokračovat, zadejte
+    následující: {0}'
+  wwclLangNotLoadedConsole: '{0} v tuto chvíli nelze použít. Chcete-li to opravit,
+    můžete zkusit znovu načíst plugin, ale pokud přetrvává, kontaktujte vývojáře.'
+  wwcdDebugEnvEnabled: Prostředí ladění bylo povoleno.
+  wwclLangNotLoaded: '{0} v tuto chvíli nelze použít. Zkuste použít jinou podporovanou
+    lokalizaci: {1}'
+  wwcdDebugBadState: Tento ladicí příkaz nelze spustit, pokud WorldwideChat nemá platnou
+    sadu překladače. Zkuste to prosím znovu později.
+  wwcNoVaultOnFolia: Aplikace Vault není v současné době na Folia podporována. To
+    může narušit kompatibilitu s jinými pluginy chatu.
+  wwcNoVaultPlugin: Vault není nainstalován! To může narušit kompatibilitu s jinými
+    nainstalovanými pluginy chatu.
+  wwcVaultChatProviderFound: 'Nalezen poskytovatele chatu Vault: {0}.'
+  wwcNoVaultChatProvider: Vault je nainstalován, ale nebyl zjištěn žádný podporovaný
+    poskytovatel chatu.
+  wwcConfigEventPrioritySet: Nastavte prioritu události posluchače chatu na {0}.
+  wwcConfigEventPriorityInvalid: Neplatná priorita události posluchače chatu v config.yml.
+    Výchozí hodnota {0}...
+  wwcConfigGUIChatListenerPriorityButton: Změna priority posluchače událostí chatu
+  wwcConfigConversationChatPriorityBadInput: Špatný vstup priority chatu! Zkuste to
+    prosím znovu.
+  wwcConfigConversationChatPrioritySuccess: Úspěšně nastavte prioritu události chatu.
+  wwcConfigVaultSupportInvalid: Neplatná podpora úložiště nastavena v config.yml.
+    Výchozí hodnota true...
+  wwcWatsonDeprecation: Watson byl zastaralý a IBM jej již nepodporuje. Zvažte prosím
+    přepnutí, protože podpora pro něj bude odstraněna v příští aktualizaci.
+  wwcConfigForceChatChannelEnabled: Během všech překladů bude vynucen samostatný překladový
+    kanál.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Úspěšně přepnuto vynucením
+    samostatného kanálu.
+  wwcConfigConversationChannelIconInput: Aktuální ikona pro samostatný překladový
+    kanál je {0}. Barevné kódy jsou podporovány; zadejte 0 pro návrat zpět.
+  wwcConfigConversationChatPriorityInput: 'Aktuální priorita události chatu je {0}.
+    Zadejte 0 přejděte zpět nebo vyberte z tohoto seznamu platných priorit: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Změna formátu samostatného kanálu
+  wwcConfigConversationChannelIconSuccess: Úspěšně změnila ikonu kanálu.
+  wwcConfigGUISeparateChatChannelIconButton: Změnit ikonu samostatného kanálu
+  wwcConfigConversationChatFormatSuccess: Váš formát byl úspěšně změněn.
+  wwcConfigGUISeparateChatChannelForceButton: Vynutit oddělený kanál
+  wwcOrigHover: 'Původní zpráva: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Původní odchozí chat připojený
+    k překladu jako text nad kurzorem byl úspěšně přepnut.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Přidání původních odchozích zpráv jako
+    text umístěného kurzoru
+  wwcConfigPAPIInstalled: Podpora PlaceholderAPI byla povolena pro váš formát chatu.
+  wwcConfigPAPINotInstalled: Ve vašem formátu chatu byly detekovány vlastní zástupné
+    symboly, ale PlaceHolderAPI není nainstalován. Ujistěte se, že plugin byl načten
+    a je povolen.
+  wwcConfigChatChannelIconInvalid: Byla zjištěna neplatná ikona kanálu. Výchozí hodnota
+    {0}...
+  wwcBlacklistBadFormat: Vaše černá listina není správně naformátována jako seznam.
+    Nebude vymáháno, dokud to nebude opraveno.
+  wwcBlacklistedMsg: Vaše zpráva obsahuje zakázaný jazyk a nebyla přeložena.
+  wwcBlacklistedMsgDetected: 'Zjištěno slovo na černé listině ({0}): {1}'
+  wwcBlacklistLoaded: Vaše černá listina {0} zakázaných slov byla načtena.
+  wwcConfigConversationAddBlacklist: Zadejte nový termín, který chcete přidat, nebo
+    zadejte 0 pro návrat zpět.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Odstranit z černé listiny
+  wwcConfigConversationBlacklistAddSuccess: Úspěšně přidán nový termín na černou listinu.
+  wwcConfigGUIMessagesModifyBlacklistButton: Upravit černou listinu
+  wwcConfigGUIChatBlacklistButton: Povolit černou listinu
+  wwcConfigConversationBlacklistDeletionSuccess: Termín byl úspěšně odstraněn.
+  wwcConfigGUIChatChannelSettings: Konfigurace chatovacího kanálu
+  wwcConfigGUIChatBlacklistSuccess: Úspěšně přepnul černou listinu.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Přidat nové slovo
+  wwcConfigGUIChatChannelButton: Přeložit nastavení kanálu
+  wwcConfigGUIBlacklistMessagesModify: Upravit termín ({0})
+  wwcConfigChatChannelFormatInvalid: Byl zjištěn neplatný formát kanálu. Výchozí hodnota
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Aktuální formát samostatného kanálu chatu
+    je {0}. Naše výchozí rozpoznané argumenty, které můžete zahrnout: {1}. Pokud máte
+    PlaceHolderAPI, ujistěte se, že tyto proměnné jsou místo toho obklopeny procenty
+    (%). Zadejte 0 pro návrat.'
+  wwcConfigGUIModifyBlacklistSettings: Upravit černou listinu
+  wwcConfigGUINextPageButton: Další strana
 

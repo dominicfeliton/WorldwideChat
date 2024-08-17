@@ -17,6 +17,8 @@ import org.bson.conversions.Bson;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 
@@ -30,11 +32,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
 public class ConfigurationHandler {
@@ -45,6 +47,11 @@ public class ConfigurationHandler {
 
 	private File configFile;
 	private YamlConfiguration mainConfig;
+
+	private File blacklistFile;
+	private YamlConfiguration blacklistConfig;
+
+	private ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 
 	/* Init Main Config Method */
 	public void initMainConfig() {
@@ -85,9 +92,12 @@ public class ConfigurationHandler {
 			String eaStr = eaLang.getLangCode();
 			refs.debugMsg("Checking " + eaStr + "...");
 			YamlConfiguration currConfig = generateMessagesConfig(eaStr);
-			if (currConfig != null) {
-				pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
+			if (currConfig == null) {
+				main.getLogger().warning(refs.serial(refs.getFancyMsg("wwclLangNotLoadedConsole", new String[] {"&c"+eaStr}, "&e", null)));
+				continue;
 			}
+
+			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
 		}
 		main.getLogger().warning("Done.");
 	}
@@ -127,7 +137,10 @@ public class ConfigurationHandler {
 			}
 
 			/* Delete old config */
-			msgFile.delete();
+			if (msgFile.exists() && !msgFile.delete()) {
+				refs.debugMsg("Could not delete old messages file for " + inLocalLang + "! Perhaps bad permissions?");
+				return null;
+			}
 
 			/* Copy newest config */
 			main.saveResource("messages-" + inLocalLang + ".yml", true);
@@ -153,6 +166,46 @@ public class ConfigurationHandler {
 
 	public YamlConfiguration getCustomMessagesConfig(String inLocalLang) {
 		return pluginLangConfigs.get(inLocalLang);
+	}
+
+	public void initBlacklistConfig() {
+		refs.debugMsg("Loading blacklist...");
+
+		/* Init config file */
+		blacklistFile = new File(main.getDataFolder(), "blacklist.yml");
+
+		/* Generate config file, if it does not exist */
+		if (!blacklistFile.exists()) {
+			main.saveResource("blacklist.yml", false);
+		}
+
+		/* Load main config */
+		blacklistConfig = YamlConfiguration.loadConfiguration(blacklistFile);
+
+		/* Add default options, if they do not exist */
+		Reader blacklistConfigStream = new InputStreamReader(main.getResource("blacklist.yml"), StandardCharsets.UTF_8);
+		blacklistConfig.setDefaults(YamlConfiguration.loadConfiguration(blacklistConfigStream));
+
+		/* Validate the configuration */
+		if (!blacklistConfig.isList("bannedWords")) {
+			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
+			blacklistConfig = null;
+			return;
+		}
+		List<String> bannedWords = blacklistConfig.getStringList("bannedWords");
+		if (bannedWords == null || bannedWords.contains(null)) {
+			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
+			blacklistConfig = null;
+			return;
+		}
+
+		blacklistConfig.options().copyDefaults(true);
+		saveCustomConfig(blacklistConfig, blacklistFile, false);
+
+		main.setBlacklistTerms(bannedWords);
+		if (main.isBlacklistEnabled()) {
+			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcBlacklistLoaded", new String[] {bannedWords.size()+""}, null));
+		}
 	}
 
 	/* Load Main Settings Method */
@@ -234,7 +287,7 @@ public class ConfigurationHandler {
 			main.setGlobalRateLimit(0);
 			main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
 		}
-		// Per-message char limit Settings
+		// Per-message Char Limit Settings
 		try {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0 && mainConfig.getInt("Translator.messageCharLimit") <= 255) {
 				main.setMessageCharLimit(mainConfig.getInt("Translator.messageCharLimit"));
@@ -246,6 +299,67 @@ public class ConfigurationHandler {
 		} catch (Exception e) {
 			main.setMessageCharLimit(255);
 			main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
+		}
+		// Chat Listener Priority
+		try {
+			EventPriority eventPriority = EventPriority.valueOf(mainConfig.getString("Chat.chatListenerPriority").toUpperCase());
+			main.setChatPriority(eventPriority);
+			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEventPrioritySet", mainConfig.getString("Chat.chatListenerPriority"), null));
+		} catch (Exception e) {
+			main.setChatPriority(EventPriority.HIGHEST);
+			main.getLogger().warning(refs.getMsg("wwcConfigEventPriorityInvalid", "HIGHEST",null));
+		}
+		// Vault Support
+		try {
+            main.setVaultSupport(mainConfig.getBoolean("Chat.useVault"));
+		} catch (Exception e) {
+			main.setVaultSupport(true);
+			main.getLogger().warning(refs.getMsg("wwcConfigVaultSupportInvalid", null));
+		}
+		// Blacklist
+		try {
+			main.setBlacklistStatus(mainConfig.getBoolean("Chat.enableBlacklist"));
+		} catch (Exception e) {
+			main.setBlacklistStatus(true);
+			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
+		}
+		// Separate Chat Channel Prefix
+		try {
+			main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.icon"));
+		} catch (Exception e) {
+			main.setTranslateIcon("globe");
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelIconInvalid",
+					new String[] {refs.serial(main.getTranslateIcon())},
+					null));
+		}
+		// Separate Chat Channel Format
+		try {
+			String format = mainConfig.getString("Chat.separateChatChannel.format");
+			main.setTranslateLayout(mainConfig.getString("Chat.separateChatChannel.format"));
+
+			int count = format.length() - format.replace("%", "").length();
+			if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigPAPIInstalled", null));
+			} else if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") == null) {
+				main.getLogger().warning(refs.getMsg("wwcConfigPAPINotInstalled", null));
+			}
+		} catch (Exception e) {
+			main.setTranslateLayout("{prefix}{username}{suffix}:");
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid",
+					new String[] {"{prefix}{username}{suffix}:"},
+					null));
+		}
+		// Always Force Separate Chat Channel
+		try {
+			if (mainConfig.getBoolean("Chat.separateChatChannel.force")) {
+				main.setForceSeparateChatChannel(true);
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigForceChatChannelEnabled", null));
+			} else {
+				main.setForceSeparateChatChannel(false);
+			}
+		} catch (Exception e) {
+			main.setForceSeparateChatChannel(false);
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelInvalid", null));
 		}
 		// Cache Settings
 		try {
@@ -291,7 +405,7 @@ public class ConfigurationHandler {
 		}
 		// List of Errors to Ignore Settings
 		try {
-			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getList("Translator.errorsToIgnore"));
+			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getStringList("Translator.errorsToIgnore"));
 			main.getLogger().info(
 					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess", null));
 		} catch (Exception e) {
@@ -385,10 +499,13 @@ public class ConfigurationHandler {
 		}
 		if (outName.equals("Invalid")) {
 			main.getLogger().severe(refs.getMsg("wwcInvalidTranslator", null));
+		} else if (outName.equals("Watson")) {
+			main.getLogger().warning(refs.getMsg("wwcWatsonDeprecation", null));
 		} else {
 			main.getLogger().info(ChatColor.GREEN
 					+ refs.getMsg("wwcConfigConnectionSuccess", outName, null));
 		}
+		refs.debugMsg("Landing on " + outName);
 		return outName;
 	}
 	
@@ -1122,12 +1239,24 @@ public class ConfigurationHandler {
 		return mainConfig;
 	}
 
+	public YamlConfiguration getBlacklistConfig() {
+		return blacklistConfig;
+	}
+
 	public YamlConfiguration getMsgsConfig() {
 		return pluginLangConfigs.get(mainConfig.getString("General.pluginLang"));
 	}
 
 	public File getConfigFile() {
 		return configFile;
+	}
+
+	public File getBlacklistFile() {
+		return blacklistFile;
+	}
+
+	public ConcurrentHashMap<String, YamlConfiguration> getPluginLangConfigs() {
+		return pluginLangConfigs;
 	}
 
 }

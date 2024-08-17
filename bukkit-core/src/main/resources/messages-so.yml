@@ -48,7 +48,6 @@ Messages:
   wwctGUISignButton: Turjubaanka Saxiixa ee Toggle
   wwcUpdaterOutOfDate: WorldwideChat waa mid taariikhda ka baxsan. Fadlan cusbooneysii
     nuqulka ugu dambeeyey, {0}.
-  wwcConfigGUINextPageButton: Bogga xigta
   wwcConfigInvalidTranslatorSettings: goobaha turjumaan aan sax ahayn! Fadlan awood
     kaliya hal turjumaan in aad config.yml.
   wwcConfigGUIQuitButton: Bixitaanka & Badbaadinta Isbedelada
@@ -619,4 +618,91 @@ Messages:
     toggles waa weli shaqeyn. Fadlan isku dayi bedelka config-ka si gaar ah qiimadan.
   wwcRateNoConvoFolia: Aawaan in loo sameeyo xadka qiimaha maraya GUI on Folia. Fadlan
     isticmaalka /wwctrl ama /translateratelimit halka.
+  wwcInvalidTranslatorUser: WorldwideChat hadda aan la heli karo. Fadlan mar kale
+    isku dayo dambe ama la xiriir maamulkaaga haddii tan sii joog
+  wwcCouldNotSaveOhNo: Aawaan in la badbaadiyo xogta WorldwideChat... fadlan xaqiijiyay
+    in xulashada xidhibaadkaaga la doorashad/kaydhiga tahay
+  wwcSyncUserDataComplete: Si guul la badbaadiyay xogta isticmaalka {0}. {1}
+  wwcSyncUserDataStart: Xidhinaca xogta isticmaalka...
+  wwcdDebugEnvDisabled: Deegaanka dhawaalka waxa uu la naafay.
+  wwcdDebugEnvWarn: 'Toggling deegaanka debug waxaa ku dhawaad marnaba talino marnaa
+    marka aad horumarineeyso plugin/baaritaan bug. Haddii aad weli doonayaad inaan
+    sii socoto, qoca soo socda: {0}'
+  wwclLangNotLoadedConsole: '{0} waqtigan la isticmaali karin. Waxaad isku dayi kartaa
+    dib u qabsado pluginka si aad tahay tan, laakiin haddii ay sii joogto fadlan xiriir
+    horumarka'
+  wwcdDebugEnvEnabled: Deegaanka deegaanka ayaa la ogolaaday.
+  wwclLangNotLoaded: '{0} waqtigan la isticmaali karin. Iday isticmaalka deegaanka
+    kala duwan oo la taageeray: {1}'
+  wwcdDebugBadState: Taliskan dhaqaalka waxa karin iyadoo WorldwideChat uusan laheyn
+    tarjimaadka habaal ah. Fadlan dib markale isku dayo.
+  wwcNoVaultOnFolia: Vault ma taageerin haatan Folia. Tani waxaa juri kartaa la isagnaa
+    laga leeyahay plugins kale
+  wwcNoVaultPlugin: Vault lama dhigay! Tani waxaa juri kartaa la isagnaan la dhigay
+    plugins kale ee chat.
+  wwcVaultChatProviderFound: 'Helay bixiye chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault waxaa lagu soo saaray, laakiin ma ilaa wax bixiye
+    chat la taageersan.
+  wwcConfigEventPrioritySet: Deg muhiimada munaasabadda dhageystaha ee chat {0}.
+  wwcConfigEventPriorityInvalid: Muhiimada munaasabadda dhageystaha chat ee config.yml.
+    Defaulting to {0}...
+  wwcConfigGUIChatListenerPriorityButton: Beddel Muhiimada Dhageystaha Dhac
+  wwcConfigConversationChatPriorityBadInput: Galka muhiimada chat xun! Fadlan mar
+    kale isku dayo.
+  wwcConfigConversationChatPrioritySuccess: Ku guul la dhigay muhiimada dhacdadaaga
+    wadada
+  wwcConfigVaultSupportInvalid: Taageerada qaabta ah oo lagu sameeyay config.yml.
+    Deegaanta in dhab...
+  wwcWatsonDeprecation: Watson waxa la dhacay waxaana ma taageersan IBM. Fadlan ka
+    fiiray bedelka, iyadoo taageero loo saari doono cusboonkii xiga.
+  wwcConfigForceChatChannelEnabled: Kanaal Gooni ah oo tarjimada lagu qasabayaa xilli
+    dhamaan tarjimada.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Si guul guul la qaaday kanaalka
+    Gooni ah.
+  wwcConfigConversationChannelIconInput: Aqoonka hadda ee kanaalka tarjimada gooni
+    ah waa {0}. Koodaha Midabka ayaa la taageeraya; nooca 0 si uu dib ugu soo laabto.
+  wwcConfigConversationChatPriorityInput: 'Muhiimada dhacdooyinka wada hadda ee hadda
+    waa {0}. Nooca 0 dib ugu dib ama ka dooro liiskan muhiimada oo xaalad ah: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Beddel Qaabka Kanaalka Gooni
+  wwcConfigConversationChannelIconSuccess: Si guul la beddelay fiicka kanaalkaaga.
+  wwcConfigGUISeparateChatChannelIconButton: Bedelka Icon Channel Gooni ah
+  wwcConfigConversationChatFormatSuccess: Qaabkaaga waxaa si guul la bedelay.
+  wwcConfigGUISeparateChatChannelForceButton: Channel Gooni ah ee Ciidanka
+  wwcOrigHover: 'Fariin Asal: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Xadhadalada asli oo baxaya
+    oo la xidhigay tarjimada sida qoraalka hover oo si guul ah la
+  wwcConfigGUISendOutgoingHoverTextChatButton: Kudar Fariimaha Baxda Asli ah sida
+    Qoraalka Hover
+  wwcConfigPAPIInstalled: Taageerada PlaceholderAPI waxaa la ogolaaday qaabka wada
+    hadalkaaga.
+  wwcConfigPAPINotInstalled: Waxaa lagu ogaaday qaabka wada xadhiga, laakiin PlaceholderAPI
+    lama saarin. Fadlan xaqiijiyay in pluginka uu xusay oo la ogolaaday.
+  wwcConfigChatChannelIconInvalid: Aqoonka kanaalka ah oo la ogaaday Defaulting to
+    {0}...
+  wwcBlacklistBadFormat: Liiskaaga madow lama sax ah loo sameeyo liiska. Lama xigin
+    doono ilaa arrintaasi la xigsan doono.
+  wwcBlacklistedMsg: Fariinkaaga waxaa ku jira luuqad mamnuucaysan oo lama tarjimin
+  wwcBlacklistedMsgDetected: 'Eryad madow oo liiska ah ({0}) la ogaaday: {1}'
+  wwcBlacklistLoaded: Liiska madow ee {0} erayada mamnuucay ayaa la soo xusay.
+  wwcConfigConversationAddBlacklist: Gol muddadii cusub ee aad jeclaan lahaayeen inaad
+    ku daro, ama nooca 0 si aad dib ugu soo noqon.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Qadar liiska madow
+  wwcConfigConversationBlacklistAddSuccess: Si guul la daray muddo cusub oo liiska
+    madow.
+  wwcConfigGUIMessagesModifyBlacklistButton: Bedelka Liiska Madow
+  wwcConfigGUIChatBlacklistButton: Liiska madow u ogolaan
+  wwcConfigConversationBlacklistDeletionSuccess: Waxaa si guul la jiray muuqda.
+  wwcConfigGUIChatChannelSettings: Configuration Channel Chat
+  wwcConfigGUIChatBlacklistSuccess: Si guul la wareegay liiska madow.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Kudar Eyn Cusub
+  wwcConfigGUIChatChannelButton: Tarjumaad Saadigaha Channel
+  wwcConfigGUIBlacklistMessagesModify: Beddelka Termada ({0})
+  wwcConfigChatChannelFormatInvalid: Qaabka kanaalka ah oo la ogaaday Defaulting to
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
+    ah waa {0}. Doodkeena oo la aqoonsaday oo aad ka mid kartaa: {1}. Haddii aad leeyihiin
+    PlaceholderAPI, hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca
+    0 si aad dib ugu soo noqon.'
+  wwcConfigGUIModifyBlacklistSettings: Bedelka Liiska Madow
+  wwcConfigGUINextPageButton: Bogga Xiga
 

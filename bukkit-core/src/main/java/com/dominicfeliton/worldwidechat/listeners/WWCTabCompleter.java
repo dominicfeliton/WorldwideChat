@@ -25,6 +25,10 @@ public class WWCTabCompleter implements TabCompleter {
         List<String> out = new ArrayList<String>();
         String commandName = command.getName();
 
+        if (main.getTranslatorName().equalsIgnoreCase("Starting") || main.getTranslatorName().equalsIgnoreCase("Invalid")) {
+            return out;
+        }
+
         /* Commands: /wwct */
         if (commandName.equals("wwct") && args.length > 0 && args.length < 4) {
             boolean prevEmptyArg = args[args.length - 1].isEmpty();
@@ -262,9 +266,23 @@ public class WWCTabCompleter implements TabCompleter {
                 if ("checkdb".startsWith(args[0])) {
                     out.add("checkdb");
                 }
+                if ("save".startsWith(args[0])) {
+                    out.add("save");
+                }
+                if ("debugenv".startsWith(args[0])) {
+                    out.add("debugenv");
+                }
             } else if (args.length == 2) {
                 if (args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
                     out.add("clear");
+                }
+                if (args[0].equalsIgnoreCase("debugenv")) {
+                    if ("enable".startsWith(args[1])) {
+                        out.add("enable");
+                    }
+                    if ("disable".startsWith(args[1])) {
+                        out.add("disable");
+                    }
                 }
             }
         }

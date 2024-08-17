@@ -37,7 +37,6 @@ Messages:
   wwcConfigGUILangButton: プラグイン言語の変更
   wwctGUISignButton: 署名翻訳の切り替え
   wwcUpdaterOutOfDate: WorldwideChatは廃れてる最新バージョン {0} に更新してください。
-  wwcConfigGUINextPageButton: 次のページ
   wwcConfigInvalidTranslatorSettings: トランスレータの設定が無効です！config.yml でトランスレータを 1 つだけ有効にしてください。
   wwcConfigGUIQuitButton: 終了して変更を保存
   wwctPlayerNotFound: プレイヤー {0} が見つかりません。
@@ -473,4 +472,62 @@ Messages:
   wwcNoConvoFolia: 現在、このバージョンの Folia では Bukkit の会話が機能しませんが、トグルは引き続き機能します。この値になるようにコンフィグを手動で変更してみてください。
   wwcRateNoConvoFolia: Folia の GUI を使用してレート制限を設定できません。代わりに /wwctrl または /translateratelimit
     を使用してください。
+  wwcInvalidTranslatorUser: ワールドワイドチャットは現在ご利用いただけません。後でもう一度試すか、問題が解決しない場合は管理者に問い合わせてください。
+  wwcCouldNotSaveOhNo: WorldwideChat データを保存できません... 選択したデータベース/ストレージオプションが安定していることを確認してください!
+  wwcSyncUserDataComplete: ユーザーデータが {0} に正常に保存されました。{1}
+  wwcSyncUserDataStart: ユーザーデータを同期中...
+  wwcdDebugEnvDisabled: デバッグ環境は無効になっています。
+  wwcdDebugEnvWarn: このプラグインを開発している場合やバグを調査している場合を除き、デバッグ環境の切り替えはほとんど推奨されません。それでも続けたい場合は、以下のように入力してください:{0}
+  wwclLangNotLoadedConsole: '{0} は現時点では使用できません。この問題を解決するためにプラグインをリロードしてみることもできますが、それでも解決しない場合は開発者に連絡してください。'
+  wwcdDebugEnvEnabled: デバッグ環境が有効になりました。
+  wwclLangNotLoaded: '{0} は現在使用できません。サポートされている別のローカライズ版を使ってみてください:{1}'
+  wwcdDebugBadState: WorldwideChat に有効なトランスレータセットがない間は、このデバッグコマンドを実行できません。後でもう一度試してください。
+  wwcNoVaultOnFolia: Vault は現在 Folia ではサポートされていません。これにより、他のチャットプラグインとの互換性が損なわれる可能性があります。
+  wwcNoVaultPlugin: Vault がインストールされていません!これにより、インストールされている他のチャットプラグインとの互換性が損なわれる可能性があります。
+  wwcVaultChatProviderFound: Vault チャットプロバイダーが見つかりました:{0}.
+  wwcNoVaultChatProvider: Vault はインストールされていますが、サポートされているチャットプロバイダーが見つかりませんでした。
+  wwcConfigEventPrioritySet: チャットリスナーイベントの優先度を {0} に設定します。
+  wwcConfigEventPriorityInvalid: config.yml のチャットリスナーイベントの優先度が無効です。デフォルトは {0}...
+  wwcConfigGUIChatListenerPriorityButton: チャットイベントリスナー優先度の変更
+  wwcConfigConversationChatPriorityBadInput: チャットの優先度入力が不正です!もう一度試してください。
+  wwcConfigConversationChatPrioritySuccess: チャットイベントの優先度が正常に設定されました。
+  wwcConfigVaultSupportInvalid: config.yml に設定されているボールトサポートが無効です。デフォルトは true に設定されています...
+  wwcWatsonDeprecation: Watsonは廃止され、IBMによるサポートは終了しました。次回の更新ではサポートされなくなるため、切り替えを検討してください。
+  wwcConfigForceChatChannelEnabled: すべての翻訳中に、個別の翻訳チャネルが強制されます。
+  wwcConfigConversationSeparateChatChannelForceSuccess: 強制的にチャンネルを強制的に切り替えることに成功しました。
+  wwcConfigConversationChannelIconInput: 独立した翻訳チャンネルの現在のアイコンは {0} です。カラーコードがサポートされています。0
+    を入力すると戻ります。
+  wwcConfigConversationChatPriorityInput: 現在のチャットイベントの優先度は {0} です。0 と入力して戻るか、有効な優先度の一覧から
+    {1} を選択してください。
+  wwcConfigGUISeparateChatChannelFormatButton: 個別チャンネル形式を変更
+  wwcConfigConversationChannelIconSuccess: チャンネルアイコンが正常に変更されました。
+  wwcConfigGUISeparateChatChannelIconButton: 個別チャンネルアイコンを変更
+  wwcConfigConversationChatFormatSuccess: フォーマットは正常に変更されました。
+  wwcConfigGUISeparateChatChannelForceButton: 強制的にチャンネルを分離
+  wwcOrigHover: オリジナルメッセージ:{0}
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: ホバーテキストとして翻訳に添付された元の送信チャットが正常に切り替わりました。
+  wwcConfigGUISendOutgoingHoverTextChatButton: 元の送信メッセージをホバーテキストとして追加
+  wwcConfigPAPIInstalled: PlaceHolderAPI サポートがチャットフォーマットで有効になりました。
+  wwcConfigPAPINotInstalled: チャットフォーマットでカスタムプレースホルダーが検出されましたが、PlaceholderAPI がインストールされていません。プラグインが読み込まれ、有効になっていることを確認してください。
+  wwcConfigChatChannelIconInvalid: 無効なチャンネルアイコンが検出されました。デフォルトは {0}...
+  wwcBlacklistBadFormat: ブラックリストがリストとして正しくフォーマットされていません。この問題が修正されるまでは強制されません。
+  wwcBlacklistedMsg: メッセージには禁止されている言語が含まれており、翻訳されていません。
+  wwcBlacklistedMsgDetected: ブラックリストに載っている単語 ({0}) が検出されました:{1}
+  wwcBlacklistLoaded: '{0} 禁止語のブラックリストが読み込まれました。'
+  wwcConfigConversationAddBlacklist: 追加したい新しい用語を入力するか、0 を入力して戻ってください。
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ブラックリストから削除
+  wwcConfigConversationBlacklistAddSuccess: ブラックリストに新しい用語が正常に追加されました。
+  wwcConfigGUIMessagesModifyBlacklistButton: ブラックリストを変更
+  wwcConfigGUIChatBlacklistButton: ブラックリストを有効にする
+  wwcConfigConversationBlacklistDeletionSuccess: 用語は正常に削除されました。
+  wwcConfigGUIChatChannelSettings: チャットチャンネル設定
+  wwcConfigGUIChatBlacklistSuccess: ブラックリストが正常に切り替わりました。
+  wwcConfigGUIChatMessagesBlacklistNewButton: 新しい単語を追加
+  wwcConfigGUIChatChannelButton: 翻訳チャンネル設定
+  wwcConfigGUIBlacklistMessagesModify: 用語の修正 ({0})
+  wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。デフォルトは {0}...
+  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。デフォルトで認識されている引数は
+    {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
+  wwcConfigGUIModifyBlacklistSettings: ブラックリストを変更
+  wwcConfigGUINextPageButton: 次のページ
 

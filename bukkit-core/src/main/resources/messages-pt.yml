@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Alternar tradução de sinal
   wwcUpdaterOutOfDate: WorldwideChat está desatualizado. Atualize para a versão mais
     recente, {0}.
-  wwcConfigGUINextPageButton: Próxima página
   wwcConfigInvalidTranslatorSettings: Configurações inválidas do tradutor! Ative apenas
     um tradutor no seu config.yml.
   wwcConfigGUIQuitButton: Sair e salvar alterações
@@ -622,4 +621,93 @@ Messages:
     manualmente para esse valor.
   wwcRateNoConvoFolia: Não é possível definir um limite de taxa por meio da GUI no
     Folia. Em vez disso, use /wwctrl ou /translateratelimit.
+  wwcInvalidTranslatorUser: O WorldwideChat está indisponível no momento. Tente novamente
+    mais tarde ou entre em contato com o administrador se isso persistir.
+  wwcCouldNotSaveOhNo: Não foi possível salvar os dados do WorldwideChat... certifique-se
+    de que a opção de banco de dados/armazenamento selecionada esteja estável!
+  wwcSyncUserDataComplete: Dados do usuário salvos com sucesso em {0}. {1}
+  wwcSyncUserDataStart: Sincronizando dados do usuário...
+  wwcdDebugEnvDisabled: O ambiente de depuração foi desativado.
+  wwcdDebugEnvWarn: 'Alternar o ambiente de depuração quase nunca é recomendado, a
+    menos que você esteja desenvolvendo esse plugin/investigando um bug. Se você ainda
+    quiser continuar, digite o seguinte: {0}'
+  wwclLangNotLoadedConsole: '{0} não pode ser usado no momento. Você pode tentar recarregar
+    o plug-in para corrigir isso, mas se persistir, entre em contato com o desenvolvedor.'
+  wwcdDebugEnvEnabled: O ambiente de depuração foi ativado.
+  wwclLangNotLoaded: '{0} não pode ser usado no momento. Tente usar uma localização
+    compatível diferente: {1}'
+  wwcdDebugBadState: Esse comando de depuração não pode ser executado enquanto o WorldwideChat
+    não tiver um conjunto de tradutores válido. Por favor, tente novamente mais tarde.
+  wwcNoVaultOnFolia: No momento, o Vault não é compatível com o Folia. Isso pode quebrar
+    a compatibilidade com outros plug-ins de bate-papo.
+  wwcNoVaultPlugin: O Vault não está instalado! Isso pode quebrar a compatibilidade
+    com outros plug-ins de bate-papo instalados.
+  wwcVaultChatProviderFound: 'Encontrei um provedor de bate-papo do Vault: {0}.'
+  wwcNoVaultChatProvider: O Vault está instalado, mas nenhum provedor de bate-papo
+    compatível foi detectado.
+  wwcConfigEventPrioritySet: Defina a prioridade do evento do ouvinte de bate-papo
+    como {0}.
+  wwcConfigEventPriorityInvalid: Prioridade inválida do evento do ouvinte de bate-papo
+    em config.yml. O padrão é {0}...
+  wwcConfigGUIChatListenerPriorityButton: Alterar a prioridade do ouvinte do evento
+    de bate-papo
+  wwcConfigConversationChatPriorityBadInput: Entrada de prioridade de bate-papo incorreta!
+    Por favor, tente novamente.
+  wwcConfigConversationChatPrioritySuccess: Defina com sucesso a prioridade do seu
+    evento de bate-papo.
+  wwcConfigVaultSupportInvalid: Suporte de cofre inválido definido em config.yml.
+    O padrão é true...
+  wwcWatsonDeprecation: O Watson foi descontinuado e não é mais suportado pela IBM.
+    Considere mudar, pois o suporte para ele será removido na próxima atualização.
+  wwcConfigForceChatChannelEnabled: Um canal de tradução separado será forçado durante
+    todas as traduções.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Alternado com sucesso, forçando
+    o canal separado.
+  wwcConfigConversationChannelIconInput: O ícone atual para o canal de tradução separado
+    é {0}. Códigos de cores são suportados; digite 0 para voltar.
+  wwcConfigConversationChatPriorityInput: 'A prioridade atual do evento de bate-papo
+    é {0}. Digite 0, volte para trás ou escolha nesta lista de prioridades válidas:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Alterar formato de canal separado
+  wwcConfigConversationChannelIconSuccess: O ícone do seu canal foi alterado com sucesso.
+  wwcConfigGUISeparateChatChannelIconButton: Alterar ícone de canal separado
+  wwcConfigConversationChatFormatSuccess: Seu formato foi alterado com sucesso.
+  wwcConfigGUISeparateChatChannelForceButton: Forçar um canal separado
+  wwcOrigHover: 'Mensagem original: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: O bate-papo de saída original
+    anexado à tradução quando o texto flutuante foi alternado com sucesso.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Adicionar mensagens de saída originais
+    como texto flutuante
+  wwcConfigPAPIInstalled: O suporte do PlaceholderAPI foi ativado para seu formato
+    de bate-papo.
+  wwcConfigPAPINotInstalled: Espaços reservados personalizados foram detectados em
+    seu formato de bate-papo, mas a PlaceholderAPI não está instalada. Certifique-se
+    de que o plug-in tenha sido carregado e ativado.
+  wwcConfigChatChannelIconInvalid: Ícone de canal inválido detectado. O padrão é {0}...
+  wwcBlacklistBadFormat: Sua lista negra não está formatada corretamente como uma
+    lista. Ele não será aplicado até que isso seja corrigido.
+  wwcBlacklistedMsg: Sua mensagem contém linguagem proibida e não foi traduzida.
+  wwcBlacklistedMsgDetected: 'Palavra na lista negra ({0}) detectada: {1}'
+  wwcBlacklistLoaded: Sua lista negra de palavras proibidas do {0} foi carregada.
+  wwcConfigConversationAddBlacklist: Insira o novo termo que você gostaria de adicionar
+    ou digite 0 para voltar.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Excluir da lista negra
+  wwcConfigConversationBlacklistAddSuccess: Foi adicionado com sucesso um novo termo
+    à lista negra.
+  wwcConfigGUIMessagesModifyBlacklistButton: Modificar lista negra
+  wwcConfigGUIChatBlacklistButton: Ativar lista negra
+  wwcConfigConversationBlacklistDeletionSuccess: O termo foi excluído com sucesso.
+  wwcConfigGUIChatChannelSettings: Configuração do canal de bate-papo
+  wwcConfigGUIChatBlacklistSuccess: Alternou com sucesso a lista negra.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Adicionar nova palavra
+  wwcConfigGUIChatChannelButton: Traduzir configurações do canal
+  wwcConfigGUIBlacklistMessagesModify: Modificar termo ({0})
+  wwcConfigChatChannelFormatInvalid: Formato de canal inválido detectado. O padrão
+    é {0}...
+  wwcConfigConversationChannelFormatInput: 'O formato atual para o canal de bate-papo
+    separado é {0}. Nossos argumentos padrão reconhecidos que você pode incluir: {1}.
+    Se você tiver PlaceholderAPI, certifique-se de que essas variáveis estejam cercadas
+    por porcentagens (%). Digite 0 para voltar.'
+  wwcConfigGUIModifyBlacklistSettings: Modificar lista negra
+  wwcConfigGUINextPageButton: Próxima página
 

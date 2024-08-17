@@ -41,7 +41,6 @@ Messages:
   wwctGUISignButton: החלפת סימן לתרגום
   wwcUpdaterOutOfDate: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר,
     {0}.
-  wwcConfigGUINextPageButton: העמוד הבא
   wwcConfigInvalidTranslatorSettings: הגדרות מתרגם לא חוקיות! נא הפעל רק מתרגם אחד
     בconfig.yml שלך.
   wwcConfigGUIQuitButton: יציאה ושמור שינויים
@@ -544,4 +543,79 @@ Messages:
     אנא נסה לשנות את התצורה באופן ידני עבור ערך זה.
   wwcRateNoConvoFolia: לא ניתן להגדיר מגבלת תעריף באמצעות ממשק המשתמש ב- Folia. אנא
     השתמש ב- /wwctrl או /translateratelimit במקום זאת.
+  wwcInvalidTranslatorUser: WorldwideChat אינו זמין כרגע. אנא נסה שוב מאוחר יותר או
+    פנה למנהל המערכת שלך אם פעולה זו נמשכת.
+  wwcCouldNotSaveOhNo: לא ניתן לשמור נתוני WorldwideChat... אנא ודא כי אפשרות מסד
+    הנתונים או האחסון שבחרת יציבה!
+  wwcSyncUserDataComplete: נתוני משתמש נשמרו בהצלחה ב- {0}. {1}
+  wwcSyncUserDataStart: סנכרון נתוני משתמש...
+  wwcdDebugEnvDisabled: סביבת ניפוי הבאגים הושבתה.
+  wwcdDebugEnvWarn: 'החלפת סביבת ניפוי באגים כמעט אף פעם לא מומלצת אלא אם כן אתה מפתח
+    תוסף זה/חוקר באג. אם אתה עדיין רוצה להמשיך, הקלד את הדברים הבאים: {0}'
+  wwclLangNotLoadedConsole: לא ניתן להשתמש ב- {0} בשלב זה. אתה יכול לנסות לטעון מחדש
+    את התוסף כדי לתקן זאת, אבל אם זה נמשך אנא צור קשר עם המפתח.
+  wwcdDebugEnvEnabled: סביבת ניפוי הבאגים הופעלה.
+  wwclLangNotLoaded: 'לא ניתן להשתמש ב- {0} בשלב זה. נסה להשתמש בלוקליזציה נתמכת אחרת:
+    {1}'
+  wwcdDebugBadState: לא ניתן להפעיל פקודת ניפוי באגים זו כאשר ל- WorldwideChat אין
+    ערכת מתרגם חוקית. אנא נסה שוב מאוחר יותר.
+  wwcNoVaultOnFolia: הכספת אינה נתמכת כרגע ב- Folia. זה עלול לשבור תאימות עם תוספי
+    צ'אט אחרים.
+  wwcNoVaultPlugin: הכספת אינה מותקנת! זה עלול לשבור תאימות עם תוספי צ'אט מותקנים
+    אחרים.
+  wwcVaultChatProviderFound: 'מצאתי ספק צ''אט בכספת: {0}.'
+  wwcNoVaultChatProvider: הכספת מותקנת, אך לא זוהה ספק צ'אט נתמך.
+  wwcConfigEventPrioritySet: הגדר עדיפות לאירוע מאזיני צ'אט ל- {0}.
+  wwcConfigEventPriorityInvalid: עדיפות אירועי מאזינים בצ'אט לא חוקית ב- config.yml.
+    ברירת המחדל היא {0}...
+  wwcConfigGUIChatListenerPriorityButton: שנה עדיפות מאזינים לאירועי צ'אט
+  wwcConfigConversationChatPriorityBadInput: קלט עדיפות צ'אט גרוע! אנא נסה שוב.
+  wwcConfigConversationChatPrioritySuccess: הגדר בהצלחה את עדיפות אירועי הצ'אט שלך.
+  wwcConfigVaultSupportInvalid: תמיכה בכספת לא חוקית מוגדרת ב- config.yml. ברירת מחדל
+    נכון...
+  wwcWatsonDeprecation: ווטסון הופסקה ואינה נתמכת עוד על ידי יבמ. אנא שקול לעבור,
+    מכיוון שהתמיכה בו תוסר בעדכון הבא.
+  wwcConfigForceChatChannelEnabled: ערוץ תרגום נפרד ייאלץ במהלך כל התרגומים.
+  wwcConfigConversationSeparateChatChannelForceSuccess: החלפה בהצלחה בכפייה של הערוץ
+    הנפרד.
+  wwcConfigConversationChannelIconInput: הסמל הנוכחי עבור ערוץ התרגום הנפרד הוא {0}.
+    קודי צבע נתמכים; הקלד 0 כדי לחזור אחורה.
+  wwcConfigConversationChatPriorityInput: 'עדיפות אירועי הצ''אט הנוכחית היא {0}. הקלד
+    0 חזור אחורה או בחר מתוך רשימה זו של סדרי עדיפויות תקפים: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: שנה פורמט ערוץ נפרד
+  wwcConfigConversationChannelIconSuccess: שינית בהצלחה את סמל הערוץ שלך.
+  wwcConfigGUISeparateChatChannelIconButton: שנה סמל ערוץ נפרד
+  wwcConfigConversationChatFormatSuccess: הפורמט שלך השתנה בהצלחה.
+  wwcConfigGUISeparateChatChannelForceButton: ערוץ נפרד כוח
+  wwcOrigHover: 'הודעה מקורית: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: צ'אט יוצא מקורי המצורף לתרגום
+    כשטקסט העכבר הוחלף בהצלחה.
+  wwcConfigGUISendOutgoingHoverTextChatButton: הוספת הודעות יוצאות מקוריות כטקסט העכבר
+  wwcConfigPAPIInstalled: תמיכת PlaceholderAPI הופעלה עבור פורמט הצ'אט שלך.
+  wwcConfigPAPINotInstalled: מצייני מיקום מותאמים אישית זוהו בתבנית הצ'אט שלך, אך
+    PlaceHolderAPI אינו מותקן. אנא ודא שהתוסף נטען ומופעל.
+  wwcConfigChatChannelIconInvalid: אייקון ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
+  wwcBlacklistBadFormat: הרשימה השחורה שלך אינה מעוצבת כראוי כרשימה. זה לא ייאכף עד
+    שזה יתוקן.
+  wwcBlacklistedMsg: ההודעה שלך מכילה שפה אסורה ולא תורגמה.
+  wwcBlacklistedMsgDetected: 'מילה ברשימה השחורה ({0}) זוהתה: {1}'
+  wwcBlacklistLoaded: הרשימה השחורה שלך של מילים אסורות {0} נטענה.
+  wwcConfigConversationAddBlacklist: הזן את המונח החדש שברצונך להוסיף, או הקלד 0 כדי
+    לחזור אחורה.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: מחק מהרשימה השחורה
+  wwcConfigConversationBlacklistAddSuccess: הוסיף בהצלחה מונח חדש לרשימה השחורה.
+  wwcConfigGUIMessagesModifyBlacklistButton: שנה רשימה שחורה
+  wwcConfigGUIChatBlacklistButton: הפעל רשימה שחורה
+  wwcConfigConversationBlacklistDeletionSuccess: מחק בהצלחה את המונח.
+  wwcConfigGUIChatChannelSettings: תצורת ערוץ צ'אט
+  wwcConfigGUIChatBlacklistSuccess: החלף בהצלחה את הרשימה השחורה.
+  wwcConfigGUIChatMessagesBlacklistNewButton: הוסף מילה חדשה
+  wwcConfigGUIChatChannelButton: תרגם הגדרות ערוץ
+  wwcConfigGUIBlacklistMessagesModify: שנה מונח ({0})
+  wwcConfigChatChannelFormatInvalid: פורמט ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
+  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
+    {0}. ארגומנטים מוכרים כברירת מחדל שניתן לכלול: {1}. אם יש לך PlaceHolderAPI, ודא
+    שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcConfigGUIModifyBlacklistSettings: שנה רשימה שחורה
+  wwcConfigGUINextPageButton: העמוד הבא
 

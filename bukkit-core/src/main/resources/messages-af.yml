@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Toggle Teken Vertaling
   wwcUpdaterOutOfDate: WorldwideChat is verouderd. Dateer asseblief na die nuutste
     weergawe, {0}.
-  wwcConfigGUINextPageButton: Volgende Bladsy
   wwcConfigInvalidTranslatorSettings: Ongeldige vertaler instellings! Aktiveer asseblief
     net een vertaler in jou config.yml.
   wwcConfigGUIQuitButton: Verlaat en Stoor Veranderinge
@@ -604,4 +603,92 @@ Messages:
     vir hierdie waarde verander.
   wwcRateNoConvoFolia: Kan nie 'n tarieflimiet instel via die GUI op Folia nie. Gebruik
     asseblief /wwctrl of /translateratelimit eerder.
+  wwcInvalidTranslatorUser: WorldwideChat is tans nie beskikbaar nie. Probeer asseblief
+    later weer of kontak jou administrateur as dit voortduur.
+  wwcCouldNotSaveOhNo: Kan nie WorldwideChat-data stoor nie... maak asseblief seker
+    dat u geselekteerde databasis/bergingsopsie stabiel is!
+  wwcSyncUserDataComplete: Gebruikersdata suksesvol gestoor na {0}. {1}
+  wwcSyncUserDataStart: Sinkronisering van gebruikersdata...
+  wwcdDebugEnvDisabled: Die ontfoutingsomgewing is gedeaktiveer.
+  wwcdDebugEnvWarn: 'Om die ontfoutingsomgewing te skakel, word byna nooit aanbeveel
+    nie, tensy u hierdie inprop ontwikkel/''n fout ondersoek. As u nog steeds wil
+    voortgaan, tik die volgende in: {0}'
+  wwclLangNotLoadedConsole: '{0} kan nie op die oomblik gebruik word nie. U kan probeer
+    om die plugin weer te laai om dit reg te stel, maar as dit voortduur, kontak asseblief
+    die ontwikkelaar.'
+  wwcdDebugEnvEnabled: Die ontfoutingsomgewing is geaktiveer.
+  wwclLangNotLoaded: '{0} kan nie op die oomblik gebruik word nie. Probeer om ''n
+    ander ondersteunde lokalisering te gebruik: {1}'
+  wwcdDebugBadState: Hierdie ontfoutingopdrag kan nie uitgevoer word terwyl WorldwideChat
+    nie 'n geldige vertalerstel het nie. Probeer asseblief later weer.
+  wwcNoVaultOnFolia: Vault word tans nie op Folia ondersteun nie. Dit kan verenigbaarheid
+    met ander chat plugins verbreek.
+  wwcNoVaultPlugin: Vault is nie geïnstalleer nie! Dit kan verenigbaarheid met ander
+    geïnstalleerde chat plugins verbreek.
+  wwcVaultChatProviderFound: 'Gevind ''n Vault -kletsverskaffer: {0}.'
+  wwcNoVaultChatProvider: Vault is geïnstalleer, maar geen ondersteunde kletsverskaffer
+    is opgespoor nie.
+  wwcConfigEventPrioritySet: Stel geselsluisteraar se gebeurtenisprioriteit op {0}.
+  wwcConfigEventPriorityInvalid: Ongeldige geselskuisteraar gebeurtenisprioriteit
+    in config.yml. Standaard op {0}...
+  wwcConfigGUIChatListenerPriorityButton: Verander die prioriteit vir luisteraar vir
+    die ges
+  wwcConfigConversationChatPriorityBadInput: Slegte chat prioriteitsinvoer! Probeer
+    asseblief weer.
+  wwcConfigConversationChatPrioritySuccess: Stel u geselsgebeurtenisprioriteit suksesvol
+    in.
+  wwcConfigVaultSupportInvalid: Ongeldige kluisondersteuning gestel in config.yml.
+    Standaard tot waar...
+  wwcWatsonDeprecation: Watson is verouderd en word nie meer deur IBM ondersteun nie.
+    Oorweeg asseblief om oor te skakel, aangesien ondersteuning daarvoor in die volgende
+    opdatering verwyder sal word.
+  wwcConfigForceChatChannelEnabled: '''N Afsonderlike vertaalkanaal sal tydens alle
+    vertalings gedwing word.'
+  wwcConfigConversationSeparateChatChannelForceSuccess: Suksesvol ingeskakel het die
+    aparte kanaal dwing.
+  wwcConfigConversationChannelIconInput: Die huidige ikoon vir die aparte vertaalkanaal
+    is {0}. Kleurkodes word ondersteun; tik 0 om terug te gaan.
+  wwcConfigConversationChatPriorityInput: 'Die huidige klessgeleenthede prioriteit
+    is {0}. Tik 0 gaan na terug of kies uit hierdie lys van geldige prioriteite: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Verander aparte kanaalformaat
+  wwcConfigConversationChannelIconSuccess: U kanaalikoon suksesvol verander.
+  wwcConfigGUISeparateChatChannelIconButton: Verander aparte kanaalikoon
+  wwcConfigConversationChatFormatSuccess: Jou formaat is suksesvol verander.
+  wwcConfigGUISeparateChatChannelForceButton: Dwing afsonderlike kanaal
+  wwcOrigHover: 'Oorspronklike boodskap: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oorspronklike uitgaande chat
+    geheg aan die vertaling as hoverteks suksesvol ingeskakel is.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Voeg oorspronklike uitgaande boodskappe
+    by as hoverteks
+  wwcConfigPAPIInstalled: PlaceholderAPI-ondersteuning is geaktiveer vir u chat formaat.
+  wwcConfigPAPINotInstalled: Pasgemaakte plekhouers is in jou klessformaat opgespoor,
+    maar PlaceholderAPI is nie geïnstalleer nie. Maak asseblief seker dat die plugin
+    gelaai is en geaktiveer is.
+  wwcConfigChatChannelIconInvalid: Ongeldige kanaalikoon opgespoor. Standaard op {0}...
+  wwcBlacklistBadFormat: Jou swartlys is nie behoorlik as 'n lys geformateer nie.
+    Dit sal nie toegepas word voordat dit reggestel is nie.
+  wwcBlacklistedMsg: Jou boodskap bevat verbode taal en is nie vertaal nie.
+  wwcBlacklistedMsgDetected: 'Woord op die swartlys ({0}) opgespoor: {1}'
+  wwcBlacklistLoaded: Jou swartlys van {0} verbode woorde is gelaai.
+  wwcConfigConversationAddBlacklist: Voer die nuwe term in wat u wil byvoeg, of tik
+    0 om terug te gaan.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Verwyder uit die swartlys
+  wwcConfigConversationBlacklistAddSuccess: '''N Nuwe term suksesvol by die swartlys
+    gevoeg.'
+  wwcConfigGUIMessagesModifyBlacklistButton: Verander swartlys
+  wwcConfigGUIChatBlacklistButton: Aktiveer swartlys
+  wwcConfigConversationBlacklistDeletionSuccess: Die term suksesvol verwyder.
+  wwcConfigGUIChatChannelSettings: Chat Channel konfigurasie
+  wwcConfigGUIChatBlacklistSuccess: Die swartlys suksesvol verander.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Voeg nuwe woord by
+  wwcConfigGUIChatChannelButton: Vertaal Channel Settings
+  wwcConfigGUIBlacklistMessagesModify: Verander Term ({0})
+  wwcConfigChatChannelFormatInvalid: Ongeldige kanaalformaat opgespoor. Standaard
+    op {0}...
+  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
+    is {0}. Ons standaarderkende argumente wat u kan insluit: {1}. As u PlaceholderAPI
+    het, maak seker dat die veranderlikes eerder omring word deur persentasies (%).
+    Tik 0 om terug te gaan.'
+  wwcConfigGUIModifyBlacklistSettings: Verander swartlys
+  wwcConfigGUINextPageButton: Volgende bladsy
 

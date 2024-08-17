@@ -42,7 +42,6 @@ Messages:
   wwcConfigGUILangButton: Плагин тілін өзгерту
   wwctGUISignButton: Toggle белгісі аударма
   wwcUpdaterOutOfDate: WorldwideChat күннен тыс. Соңғы нұсқаға жаңартыңыз, {0}.
-  wwcConfigGUINextPageButton: Келесі бет
   wwcConfigInvalidTranslatorSettings: Жарамсыз аудармашы параметрлері! Сіздің config.yml
     ішіндегі бір ғана аудармашыны қосыңыз.
   wwcConfigGUIQuitButton: Шығу & Өзгерістерді сақтау
@@ -596,4 +595,90 @@ Messages:
     өзгертіп көріңіз.
   wwcRateNoConvoFolia: Folia жүйесіндегі GUI арқылы жылдамдық шектеуін орнату мүмкін
     емес. Пожалуйста, орнына /wwctrl немесе /translateratelimit пайдаланыңыз.
+  wwcInvalidTranslatorUser: WorldwideChat қазіргі уақытта қол жетімді емес. Кейінірек
+    қайталап көріңіз немесе егер бұл сақталса, әкімшіге хабарласыңыз.
+  wwcCouldNotSaveOhNo: WorldwideChat деректерін сақтай алмады... таңдалған дерекқор/сақтау
+    параметрінің тұрақты болуын қамтамасыз етіңіз!
+  wwcSyncUserDataComplete: Пайдаланушы деректерін {0} -ге сәтті сақтады. {1}
+  wwcSyncUserDataStart: Пайдаланушы деректерін синхрондау...
+  wwcdDebugEnvDisabled: Отладка ортасы өшірілді.
+  wwcdDebugEnvWarn: 'Бұл плагинді дамытпаған/қатені зерттеп жатпайынша, отладка ортасын
+    ауыстыру ешқашан ұсынылмайды. Егер сіз әлі де жалғастырғыңыз келсе, мынаны теріңіз:
+    {0}'
+  wwclLangNotLoadedConsole: Қазіргі уақытта {0} пайдалану мүмкін емес. Мұны түзету
+    үшін плагинді қайта жүктеуге тырысуға болады, бірақ егер ол сақталса, әзірлеушіге
+    хабарласыңыз.
+  wwcdDebugEnvEnabled: Отладка ортасы қосылды.
+  wwclLangNotLoaded: 'Қазіргі уақытта {0} пайдалану мүмкін емес. Басқа қолдау көрсетілетін
+    локализацияны пайдаланып көріңіз: {1}'
+  wwcdDebugBadState: WorldwideChat жарамды аудармашы жиынтығы жоқ, ал бұл отладка
+    пәрменін іске қосу мүмкін емес. Кейінірек қайталап көріңіз.
+  wwcNoVaultOnFolia: Қазіргі уақытта Folia-да Vault қолдау көрсетілмейді. Бұл басқа
+    чат плагиндерімен үйлесімділікті бұзуы мүмкін.
+  wwcNoVaultPlugin: Vault орнатылмаған! Бұл басқа орнатылған чат плагиндерімен үйлесімділікті
+    бұзуы мүмкін.
+  wwcVaultChatProviderFound: 'Vault чат провайдері табылды: {0}.'
+  wwcNoVaultChatProvider: Vault орнатылған, бірақ қолдау көрсетілетін чат провайдері
+    анықталмады.
+  wwcConfigEventPrioritySet: Чат тыңдаушысы оқиғасының басымдығын {0} мәніне орнатыңыз.
+  wwcConfigEventPriorityInvalid: Config.yml ішіндегі сөйлесу тыңдаушысы оқиғасының
+    басымдығы жарамсыз. Әдепкі бойынша {0}...
+  wwcConfigGUIChatListenerPriorityButton: Чат оқиғасының тыңдаушысының басымдығын
+    өзгерту
+  wwcConfigConversationChatPriorityBadInput: Нашар чат басымдылығын енгізу! Қайта
+    көріңіз.
+  wwcConfigConversationChatPrioritySuccess: Сөйлесу оқиғасының басымдығын сәтті орнатыңыз.
+  wwcConfigVaultSupportInvalid: Config.yml ішіндегі жарамсыз қойма қолдауы орнатылған.
+    Шын мәніне дефолт...
+  wwcWatsonDeprecation: Уотсон ескірген және оны IBM қолдамайды. Пожалуйста, ауыстыруды
+    қарастырыңыз, себебі оны қолдау келесі жаңартуда жойылады.
+  wwcConfigForceChatChannelEnabled: Барлық аудармалар кезінде жеке аударма арнасы
+    мәжбүр болады.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Жеке арнаны мәжбүрлеп сәтті
+    ауыстырылды.
+  wwcConfigConversationChannelIconInput: Бөлек аударма арнасының ағымдағы белгішесі
+    {0} болып табылады. Түс кодтарына қолдау көрсетіледі; кері оралу үшін 0 теріңіз.
+  wwcConfigConversationChatPriorityInput: 'Ағымдағы чат оқиғасының басымдығы - {0}.
+    0 теріңіз артқа өтіңіз немесе жарамды басымдықтардың осы тізімінен таңдаңыз: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Бөлек арна пішімін өзгертіңіз
+  wwcConfigConversationChannelIconSuccess: Арна белгішесін сәтті өзгертті.
+  wwcConfigGUISeparateChatChannelIconButton: Бөлек арна белгішесін өзгертіңіз
+  wwcConfigConversationChatFormatSuccess: Сіздің пішіміңіз сәтті өзгертілді.
+  wwcConfigGUISeparateChatChannelForceButton: Бөлек арнаны күштеңіз
+  wwcOrigHover: 'Түпнұсқа хабарлама: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Түпнұсқа шығыс чат аудармаға
+    қосылады ретінде hover мәтін сәтті ауыстырылды.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Түпнұсқа шығыс хабарларын апару мәтіні
+    ретінде қосыңыз
+  wwcConfigPAPIInstalled: Сөйлесу форматы үшін PlaceholderAPI қолдауы қосылды.
+  wwcConfigPAPINotInstalled: Сіздің сөйлесу пішіміңізде теңшелетін орын белгілері
+    анықталды, бірақ PlaceholderAPI орнатылмаған. Плагиннің жүктелгеніне және қосылғанына
+    көз жеткізіңіз.
+  wwcConfigChatChannelIconInvalid: Жарамсыз арна белгішесі анықталды. Әдепкі бойынша
+    {0}...
+  wwcBlacklistBadFormat: Сіздің қара тізіміңіз тізім ретінде дұрыс пішімделмеген.
+    Бұл түзетілмейінше, ол қолданысқа енгізілмейді.
+  wwcBlacklistedMsg: Сіздің хабарламаңызда тыйым салынған тіл бар және аударылмады.
+  wwcBlacklistedMsgDetected: 'Қара тізімге енгізілген сөз ({0}) анықталды: {1}'
+  wwcBlacklistLoaded: Сіздің {0} тыйым салынған сөздердің қара тізіміңіз жүктелді.
+  wwcConfigConversationAddBlacklist: Қосқыңыз келетін жаңа терминді енгізіңіз немесе
+    кері оралу үшін 0 деп теріңіз.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Қара тізімнен жою
+  wwcConfigConversationBlacklistAddSuccess: Қара тізімге жаңа термин сәтті қосылды.
+  wwcConfigGUIMessagesModifyBlacklistButton: Қара тізімді өзгерту
+  wwcConfigGUIChatBlacklistButton: Қара тізімді қосыңыз
+  wwcConfigConversationBlacklistDeletionSuccess: Терминді сәтті жойды.
+  wwcConfigGUIChatChannelSettings: Чат арнасының конфигурациясы
+  wwcConfigGUIChatBlacklistSuccess: Қара тізімге сәтті ауыстырылды.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Жаңа сөз қосыңыз
+  wwcConfigGUIChatChannelButton: Арна параметрлерін аударыңыз
+  wwcConfigGUIBlacklistMessagesModify: Терминді өзгерту ({0})
+  wwcConfigChatChannelFormatInvalid: Жарамсыз арна пішімі анықталды. Әдепкі бойынша
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
+    - {0}. Сізге қосуға болатын әдепкі танылған дәлелдеріміз: {1}. Егер сізде placeholderAPI
+    болса, сол айнымалы мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз.
+    Қайту үшін 0 деп теріңіз.'
+  wwcConfigGUIModifyBlacklistSettings: Қара тізімді өзгерту
+  wwcConfigGUINextPageButton: Келесі бет
 

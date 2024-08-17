@@ -59,7 +59,7 @@ public class TranslateInGameListener implements Listener {
 						}
 					};
 
-					wwcHelper.runAsync(out, ENTITY, event.getPlayer());
+					wwcHelper.runAsync(out, ENTITY, new Object[] {event.getPlayer()});
 				}
 			} catch (Exception e) {
 				if (!refs.serverIsStopping()) {
@@ -149,7 +149,7 @@ public class TranslateInGameListener implements Listener {
 							}
 						};
 
-						wwcHelper.runSync(open, ENTITY, currPlayer);
+						wwcHelper.runSync(open, ENTITY, new Object[] {currPlayer});
 					}
 				};
 				wwcHelper.runAsync(out, GLOBAL, null);
@@ -242,7 +242,7 @@ public class TranslateInGameListener implements Listener {
 								}
 							};
 
-							wwcHelper.runSync(sign, ENTITY, event.getPlayer());
+							wwcHelper.runSync(sign, ENTITY, new Object[] {event.getPlayer()});
 						}
 					}
 				};
@@ -309,7 +309,7 @@ public class TranslateInGameListener implements Listener {
 								}
 							};
 
-							wwcHelper.runSync(open, ENTITY, event.getPlayer());
+							wwcHelper.runSync(open, ENTITY, new Object[] {event.getPlayer()});
 						}
 					}
 				};

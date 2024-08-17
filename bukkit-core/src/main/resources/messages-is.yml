@@ -47,7 +47,6 @@ Messages:
   wwctGUISignButton: Skipta Sign Þýðing
   wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
     {0}.
-  wwcConfigGUINextPageButton: Næsta síða
   wwcConfigInvalidTranslatorSettings: Ógildar stillingar þýðanda! Vinsamlegast virkjaðu
     aðeins einn þýðanda í config.yml þínum.
   wwcConfigGUIQuitButton: Hætta og vista breytingar
@@ -610,4 +609,92 @@ Messages:
     gildi.
   wwcRateNoConvoFolia: Ekki tókst að stilla hlutfallstakmörk í gegnum GUI á Folia.
     Vinsamlegast notaðu /wwctrl eða /translateratelimit í staðinn.
+  wwcInvalidTranslatorUser: WorldwideChat er ekki aðgengilegur eins og er. Vinsamlegast
+    reyndu aftur síðar eða hafðu samband við stjórnandann þinn ef þetta er viðvarandi.
+  wwcCouldNotSaveOhNo: Ekki tókst að vista WorldwideChat gögn... vinsamlegast tryggðu
+    að valinn gagnagrunnur/geymsla valkostur þinn sé stöðugur!
+  wwcSyncUserDataComplete: Notendagögn vistuðu með góðum árangri í {0}. {1}
+  wwcSyncUserDataStart: Samstilla notendagögn...
+  wwcdDebugEnvDisabled: Kembiumhverfið hefur verið óvirkt.
+  wwcdDebugEnvWarn: 'Toggling kembiumhverfi er nánast aldrei mælt með nema þú sért
+    að þróa þetta viðbætur/rannsaka galla. Ef þú vilt samt halda áfram skaltu slá
+    inn eftirfarandi: {0}'
+  wwclLangNotLoadedConsole: Ekki er hægt að nota {0} á þessum tíma. Þú getur prófað
+    að endurhlaða viðbótina til að laga þetta, en ef það er viðvarandi vinsamlegast
+    hafðu samband við verktaki.
+  wwcdDebugEnvEnabled: Kembiforritið hefur verið virkt.
+  wwclLangNotLoaded: 'Ekki er hægt að nota {0} á þessum tíma. Prófaðu að nota aðra
+    studda staðsetningu: {1}'
+  wwcdDebugBadState: Ekki er hægt að hlaupa þessa kembiforrit skipun á meðan WorldwideChat
+    hefur ekki gilt þýðandi sett. Vinsamlegast reyndu aftur síðar.
+  wwcNoVaultOnFolia: Vault er ekki studd eins og er á Folia. Þetta getur brotið samhæfni
+    við aðrar spjallviðbætur.
+  wwcNoVaultPlugin: Vault er ekki sett upp! Þetta getur brotið eindrægni við aðrar
+    uppsettar spjallviðbætur.
+  wwcVaultChatProviderFound: 'Fann Vault spjallveitu: {0}.'
+  wwcNoVaultChatProvider: Vault er uppsett en engin studd spjallveiti hefur fundist.
+  wwcConfigEventPrioritySet: Stilltu forgang viðburðarviðburða spjallhlustenda á {0}.
+  wwcConfigEventPriorityInvalid: Ógild forgangur viðburða spjallhlustandans í config.yml.
+    Sjálfgefið að {0}...
+  wwcConfigGUIChatListenerPriorityButton: Breyta forgangi hlustenda á spjallviðburði
+  wwcConfigConversationChatPriorityBadInput: Slæmt forgangsinntak í spjalli! Vinsamlegast
+    reyndu aftur.
+  wwcConfigConversationChatPrioritySuccess: Settu forgang spjallviðburðar þíns með
+    góðum árangri.
+  wwcConfigVaultSupportInvalid: Ógildur stuðningur við gröfu sett í config.yml. Að
+    vanskil á satt...
+  wwcWatsonDeprecation: Watson hefur verið aflétt og er ekki lengur studdur af IBM.
+    Vinsamlegast íhugaðu að skipta, þar sem stuðningur við það verður fjarlægður í
+    næstu uppfærslu.
+  wwcConfigForceChatChannelEnabled: Sérstök þýðingarrás verður þvinguð meðan á öllum
+    þýðingum stendur.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Tókst var að þvinga aðskilda
+    rásina.
+  wwcConfigConversationChannelIconInput: Núverandi táknið fyrir aðskilda þýðingarásina
+    er {0}. Litakóðar eru studdir; sláðu inn 0 til að fara aftur.
+  wwcConfigConversationChatPriorityInput: 'Núverandi forgangur spjallviðburðar er
+    {0}. Sláðu inn 0 farðu til baka eða veldu úr þessum lista yfir gilda forgangsröðun:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Breyta aðskildu rássniði
+  wwcConfigConversationChannelIconSuccess: Breytti rásartáknið þitt með góðum árangri.
+  wwcConfigGUISeparateChatChannelIconButton: Breyta aðskildum rásartákni
+  wwcConfigConversationChatFormatSuccess: Sniði þínu hefur verið breytt með góðum
+    árangri.
+  wwcConfigGUISeparateChatChannelForceButton: Þvingaðu aðskilda rás
+  wwcOrigHover: 'Upprunalega skilaboð: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Upprunalega útleið spjall
+    fylgir þýðingu sem sveima texta kveikt með góðum árangri.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Bæta við upprunalegum sendingarskilaboðum
+    sem sveimtexta
+  wwcConfigPAPIInstalled: PlaceholderAPI stuðningur hefur verið virkur fyrir spjallsniðið
+    þitt.
+  wwcConfigPAPINotInstalled: Sérsniðnar staðfestingar hafa greinst á spjallsniðinu
+    þínu, en PlaceholderAPI er ekki uppsett. Vinsamlegast vertu viss um að viðbótin
+    hafi hlaðið sig og sé virkt.
+  wwcConfigChatChannelIconInvalid: Ógilt rásartákn greindist. Sjálfgefið að {0}...
+  wwcBlacklistBadFormat: Svarti listinn þinn er ekki rétt sniðinn sem listi. Þessu
+    verður ekki framfylgt fyrr en þetta er lagað.
+  wwcBlacklistedMsg: Skilaboðin þín innihalda bönnuð tungumál og voru ekki þýdd.
+  wwcBlacklistedMsgDetected: 'Orð á svörtum lista ({0}) greindist: {1}'
+  wwcBlacklistLoaded: Svartur listi þinn yfir {0} bönnuð orð hefur verið hlaðinn.
+  wwcConfigConversationAddBlacklist: Sláðu inn nýja hugtakið sem þú vilt bæta við
+    eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Eyða úr svörtum lista
+  wwcConfigConversationBlacklistAddSuccess: Með góðum árangri bætt nýju hugtaki á
+    svarta listann.
+  wwcConfigGUIMessagesModifyBlacklistButton: Breyta svarta lista
+  wwcConfigGUIChatBlacklistButton: Virkja svartan lista
+  wwcConfigConversationBlacklistDeletionSuccess: Með góðum árangri eytt hugtakinu.
+  wwcConfigGUIChatChannelSettings: Stillingar spjallrásar
+  wwcConfigGUIChatBlacklistSuccess: Tókst að skipta um svarta listann.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Bæta við nýju orði
+  wwcConfigGUIChatChannelButton: Þýða rásarstillingar
+  wwcConfigGUIBlacklistMessagesModify: Breyta hugtakinu ({0})
+  wwcConfigChatChannelFormatInvalid: Ógilt rássnið greindist. Sjálfgefið að {0}...
+  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
+    er {0}. Sjálfgefin viðurkennd rök okkar sem þú getur látið fylgja með: {1}. Ef
+    þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu umkringdar
+    prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
+  wwcConfigGUIModifyBlacklistSettings: Breyta svarta lista
+  wwcConfigGUINextPageButton: Næsta síða
 

@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.commands;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import org.bukkit.Bukkit;
@@ -13,6 +14,7 @@ public class WWCLocalize extends BasicCommand {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private ConfigurationHandler configs = main.getConfigManager();
 
     //private YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
     private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
@@ -96,6 +98,13 @@ public class WWCLocalize extends BasicCommand {
 
         // Convert to lang code
         locale = !locale.equalsIgnoreCase("stop") ? refs.getSupportedLang(locale, "local").getLangCode() : "";
+
+        if (!locale.isEmpty() && configs.getPluginLangConfigs().get(locale) == null) {
+            refs.debugMsg("Not found in our YamlConfigs...check localization init logs!");
+            refs.sendFancyMsg("wwclLangNotLoaded", new String[] {"&c"+locale, "&6"+ refs.getFormattedLangCodes("local")}, "&e", sender);
+            main.getLogger().warning(refs.serial(refs.getFancyMsg("wwclLangNotLoadedConsole", new String[] {"&c"+locale}, "", null)));
+            return false;
+        }
         currRecord.setLocalizationCode(locale);
 
         return true;

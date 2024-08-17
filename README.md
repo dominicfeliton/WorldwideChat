@@ -7,7 +7,7 @@
 ### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+ on JDK 11+.
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:
-- Amazon Translate, Azure Translate, DeepL Translate, Google Translate, IBM Watson, Libre Translate, and Systran Translate support.
+- Amazon Translate, Azure Translate, DeepL Translate, Google Translate, ~~IBM Watson~~ **(deprecated)**, Libre Translate, and Systran Translate support.
 - Translate incoming/outgoing chat, signs, entities, and written books with an interactive GUI.
 - Translation globally, for other players, or just you.
 - The plugin itself has been localized into more than 30 languages thanks to Amazon Translate.

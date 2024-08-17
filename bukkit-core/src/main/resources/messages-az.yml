@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: İşarə tərcüməsi
   wwcUpdaterOutOfDate: WorldwideChat tarix deyil. Xahiş edirik ən son versiyaya yeniləyin,
     {0}.
-  wwcConfigGUINextPageButton: Növbəti səhifə
   wwcConfigInvalidTranslatorSettings: Yanlış tərcüməçi parametrləri! Sizin config.yml
     yalnız bir tərcüməçi aktivləşdirin.
   wwcConfigGUIQuitButton: Çıx və dəyişiklikləri saxla
@@ -594,4 +593,93 @@ Messages:
     ilə dəyişdirməyə çalışın.
   wwcRateNoConvoFolia: Folia-da GUI vasitəsilə bir dərəcəsi həddi təyin edə bilmədi.
     Zəhmət olmasa bunun əvəzinə /wwctrl və ya /translateratelimit istifadə edin.
+  wwcInvalidTranslatorUser: WorldwideChat hazırda mövcud deyil. Zəhmət olmasa daha
+    sonra yenidən cəhd edin və ya bu davam edərsə administratorunuzla əla
+  wwcCouldNotSaveOhNo: WorldwideChat məlumatlarını saxlamaq mümkün deyil... xahiş
+    edirəm seçdiyiniz verilənlər bazası/saxlama seçiminizin sabit olduğundan əmin
+    olun!
+  wwcSyncUserDataComplete: İstifadəçi məlumatlarını {0} -ə uğurla saxladı. {1}
+  wwcSyncUserDataStart: İstifadəçi məlumatlarının sinxronizasiyası...
+  wwcdDebugEnvDisabled: Sıklama mühiti deaktiv edildi.
+  wwcdDebugEnvWarn: 'Bu plagini inkişaf etdirməsiniz/səhv araşdırmadıqca, ayıklama
+    mühitini dəyişdirmək demək olar ki, heç vaxt tövsiyə edilmir. Hələ də davam etmək
+    istəyirsinizsə, aşağıdakıları yazın: {0}'
+  wwclLangNotLoadedConsole: '{0} hazırda istifadə edilə bilməz. Bunu düzəltmək üçün
+    plagini yenidən yükləməyə cəhd edə bilərsiniz, ancaq davam edərsə, geliştirici
+    ilə əlaqə saxlayın.'
+  wwcdDebugEnvEnabled: Ayıklama mühiti aktiv edilib.
+  wwclLangNotLoaded: '{0} hazırda istifadə edilə bilməz. Fərqli dəstəklənən lokalizasiyadan
+    istifadə etməyə çalışın: {1}'
+  wwcdDebugBadState: WorldwideChat-da etibarlı tərcüməçi dəsti olmadıqda bu ayıklama
+    əmri icra edilə bilməz. Xahiş edirəm daha sonra yenidən cəhd edin.
+  wwcNoVaultOnFolia: Vault hazırda Folia-da dəstəklənmir. Bu, digər söhbət plaginləri
+    ilə uyğunluğu poza bilər.
+  wwcNoVaultPlugin: Vault quraşdırılmamışdır! Bu, digər quraşdırılmış söhbət plaginləri
+    ilə uyğunluğu poza bilər.
+  wwcVaultChatProviderFound: 'Vault söhbət təminatçısı tapıldı: {0}.'
+  wwcNoVaultChatProvider: Vault quraşdırılıb, lakin dəstəklənən söhbət provayderi
+    aşkar edilməmişdir.
+  wwcConfigEventPrioritySet: Söhbət dinləyicisi tədbirinin prioritetini {0} olaraq
+    təyin edin.
+  wwcConfigEventPriorityInvalid: Config.yml-də etibarsız söhbət dinləyicisi hadisəsinin
+    prioriteti. Varsayılan olaraq {0}...
+  wwcConfigGUIChatListenerPriorityButton: Söhbət Hadisəsi Dinləyici Prioritet
+  wwcConfigConversationChatPriorityBadInput: Pis söhbət prioritet girişi! Xahiş edirəm
+    yenidən cəhd edin.
+  wwcConfigConversationChatPrioritySuccess: Söhbət tədbirinizin prioritetini uğurla
+    təyin edin
+  wwcConfigVaultSupportInvalid: Config.yml-də etibarsız vəz dəstəyi qurulmuşdur. Doğruza
+    defolt...
+  wwcWatsonDeprecation: Watson köhnəldi və artıq IBM tərəfindən dəstəklənmir. Zəhmət
+    olmasa keçid etməyi düşünün, çünki növbəti yeniləmədə dəstək silinəcəkdir.
+  wwcConfigForceChatChannelEnabled: Bütün tərcümələr zamanı ayrı bir tərcümə kanalı
+    məcbur ediləcək.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı məcbur etməklə
+    uğurla dəyişdirildi.
+  wwcConfigConversationChannelIconInput: Ayrı tərcümə kanalı üçün cari simvol {0}
+    -dir. Rəng kodları dəstəklənir; geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationChatPriorityInput: 'Cari söhbət tədbirinin prioriteti {0} -dir.
+    Yazın 0 geri keçin və ya etibarlı prioritetlərin bu siyahısından seçin: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ayrı kanal formatını dəyişdirin
+  wwcConfigConversationChannelIconSuccess: Kanal simgesinizi uğurla dəyişdirdi.
+  wwcConfigGUISeparateChatChannelIconButton: Ayrı kanal simgesini dəyişdirin
+  wwcConfigConversationChatFormatSuccess: Formatınız uğurla dəyişdirildi.
+  wwcConfigGUISeparateChatChannelForceButton: Ayrı kanalı məcbur edin
+  wwcOrigHover: 'Orijinal Mesaj: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Orijinal çıxan söhbət uğurla
+    keçid mətni kimi tərcüməyə əlavə edildi.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Orijinal gedən mesajları Hover Mətn
+    kimi əlavə edin
+  wwcConfigPAPIInstalled: Söhbət formatınız üçün PlaceholderAPI dəstəyi aktivləşdirilmişdir.
+  wwcConfigPAPINotInstalled: Söhbət formatınızda xüsusi yer tutacaqları aşkar edildi,
+    lakin PlaceholderAPI quraşdırılmamışdır. Zəhmət olmasa plaginin yükləndiyinə və
+    aktiv olduğundan əmin olun.
+  wwcConfigChatChannelIconInvalid: Yanlış kanal işarəsi aşkar edildi. Varsayılan olaraq
+    {0}...
+  wwcBlacklistBadFormat: Qara siyahınız siyahı kimi düzgün formatlaşdırılmamışdır.
+    Bu düzəldilməyincə tətbiq olunmayacaq.
+  wwcBlacklistedMsg: Mesajınızda qadağan olunmuş dil var və tərcümə olunmamışdır.
+  wwcBlacklistedMsgDetected: 'Qara siyahıya alınan söz ({0}) aşkar edildi: {1}'
+  wwcBlacklistLoaded: '{0} qadağan olunmuş sözlərin qara siyahısı yükləndi.'
+  wwcConfigConversationAddBlacklist: Əlavə etmək istədiyiniz yeni termini daxil edin
+    və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Qara siyahıdan silin
+  wwcConfigConversationBlacklistAddSuccess: Qara siyahıya uğurla yeni bir termin əlavə
+    edildi.
+  wwcConfigGUIMessagesModifyBlacklistButton: Qara siyahıya dəyişdirin
+  wwcConfigGUIChatBlacklistButton: Qara siyahıya aktivləşdirin
+  wwcConfigConversationBlacklistDeletionSuccess: Termini uğurla silindi.
+  wwcConfigGUIChatChannelSettings: Chat Kanal Konfiqurasiyası
+  wwcConfigGUIChatBlacklistSuccess: Qara siyahıya uğurla dəyişdirildi.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Yeni söz əlavə edin
+  wwcConfigGUIChatChannelButton: Kanal parametrlərini tərcümə edin
+  wwcConfigGUIBlacklistMessagesModify: Müddəti dəyişdirin ({0})
+  wwcConfigChatChannelFormatInvalid: Yanlış kanal formatı aşkar edildi. Varsayılan
+    olaraq {0}...
+  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
+    {0} -dir. Daxil edə biləcəyiniz standart tanınmış arqumentlərimiz: {1}. PlaceholderAPI
+    varsa, əvəzinə bu dəyişənlərin faizlərlə (%) əhatə olunduğundan əmin olun. Geri
+    qayıtmaq üçün 0 yazın.'
+  wwcConfigGUIModifyBlacklistSettings: Qara siyahıya dəyişdirin
+  wwcConfigGUINextPageButton: Növbəti Səhifə
 

@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Pārslēgt zīmju tulkošanu
   wwcUpdaterOutOfDate: WorldwideChat ir novecojis. Lūdzu, atjauniniet uz jaunāko versiju,
     {0}.
-  wwcConfigGUINextPageButton: Nākamā lapa
   wwcConfigInvalidTranslatorSettings: Nederīgi tulkotāja iestatījumi! Lūdzu, iespējojiet
     tikai vienu tulkotāju savā config.yml.
   wwcConfigGUIQuitButton: Iziet no & Saglabāt izmaiņas
@@ -602,4 +601,92 @@ Messages:
     joprojām darbojas. Lūdzu, mēģiniet manuāli mainīt konfigurāciju šai vērtībai.
   wwcRateNoConvoFolia: Nevar iestatīt likmes ierobežojumu, izmantojot GUI vietnē Folia.
     Lūdzu, izmantojiet /wwctrl vai /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat pašlaik nav pieejams. Lūdzu, mēģiniet vēlreiz
+    vēlāk vai sazinieties ar administratoru, ja tas turpinās.
+  wwcCouldNotSaveOhNo: Nevar saglabāt WorldwideChat datus... lūdzu, pārliecinieties,
+    ka izvēlētā datu bāzes/glabāšanas opcija ir stabila!
+  wwcSyncUserDataComplete: Veiksmīgi saglabāti lietotāja dati uz {0}. {1}
+  wwcSyncUserDataStart: Lietotāja datu sinhronizēšana...
+  wwcdDebugEnvDisabled: Atkļūdošanas vide ir atspējota.
+  wwcdDebugEnvWarn: 'Atkļūdošanas vides pārslēgšana gandrīz nekad nav ieteicama, ja
+    vien neizstrādājat šo spraudni/izmeklējat kļūdu. Ja joprojām vēlaties turpināt,
+    ierakstiet sekojošo: {0}'
+  wwclLangNotLoadedConsole: '{0} šobrīd nevar izmantot. Varat mēģināt pārlādēt spraudni,
+    lai to labotu, bet, ja tas saglabājas, lūdzu, sazinieties ar izstrādātāju.'
+  wwcdDebugEnvEnabled: Atkļūdošanas vide ir iespējota.
+  wwclLangNotLoaded: '{0} šobrīd nevar izmantot. Mēģiniet izmantot citu atbalstītu
+    lokalizāciju: {1}'
+  wwcdDebugBadState: Šo atkļūdošanas komandu nevar palaist, kamēr WorldwideChat nav
+    derīga tulkotāja kopas. Lūdzu, mēģiniet vēlreiz vēlāk.
+  wwcNoVaultOnFolia: Vault pašlaik netiek atbalstīta vietnē Folia. Tas var izjaukt
+    saderību ar citiem tērzēšanas spraudņiem.
+  wwcNoVaultPlugin: Vault nav instalēta! Tas var izjaukt saderību ar citiem instalētajiem
+    tērzēšanas spraudņiem.
+  wwcVaultChatProviderFound: 'Atrasts Vault tērzēšanas pakalpojumu sniedzējs: {0}.'
+  wwcNoVaultChatProvider: Vault ir instalēta, taču nav atklāts atbalstīts tērzēšanas
+    pakalpojumu sniedzējs.
+  wwcConfigEventPrioritySet: Iestatiet tērzēšanas klausītāja notikuma prioritāti uz
+    {0}.
+  wwcConfigEventPriorityInvalid: Nederīga tērzēšanas klausītāja notikuma prioritāte
+    programmā config.yml. Noklusējuma iestatījums uz {0}...
+  wwcConfigGUIChatListenerPriorityButton: Mainīt tērzēšanas notikumu klausītāja prioritāti
+  wwcConfigConversationChatPriorityBadInput: Slikta tērzēšanas prioritātes ievade!
+    Lūdzu, mēģiniet vēlreiz.
+  wwcConfigConversationChatPrioritySuccess: Veiksmīgi iestatiet tērzēšanas notikuma
+    prioritāti.
+  wwcConfigVaultSupportInvalid: Nederīgs glabātuves atbalsts iestatīts programmā config.yml.
+    Noklusējuma iestatījums uz patiesu...
+  wwcWatsonDeprecation: Watson ir novecojis, un IBM to vairs neatbalsta. Lūdzu, apsveriet
+    iespēju pārslēgties, jo atbalsts tam tiks noņemts nākamajā atjauninājumā.
+  wwcConfigForceChatChannelEnabled: Visu tulkojumu laikā tiks piespiests atsevišķs
+    tulkošanas kanāls.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Veiksmīgi pārslēgts, piespiežot
+    atsevišķu kanālu.
+  wwcConfigConversationChannelIconInput: Pašreizējā atsevišķā tulkošanas kanāla ikona
+    ir {0}. Tiek atbalstīti krāsu kodi; ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationChatPriorityInput: 'Pašreizējā tērzēšanas notikuma prioritāte
+    ir {0}. Ierakstiet 0, dodieties uz atpakaļ vai izvēlieties no šī derīgo prioritāšu
+    saraksta: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Mainīt atsevišķa kanāla formātu
+  wwcConfigConversationChannelIconSuccess: Veiksmīgi mainīta kanāla ikona.
+  wwcConfigGUISeparateChatChannelIconButton: Mainīt atsevišķa kanāla ikonu
+  wwcConfigConversationChatFormatSuccess: Jūsu formāts ir veiksmīgi mainīts.
+  wwcConfigGUISeparateChatChannelForceButton: Piespiež atsevišķu kanālu
+  wwcOrigHover: 'Sākotnējais ziņojums: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sākotnējā izejošā tērzēšana,
+    kas pievienota tulkojumam kā kursorēšanas teksts, tika veiksmīgi pārslēgts.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Pievienojiet oriģinālos izejošos ziņojumus
+    kā virzīšanas tekstu
+  wwcConfigPAPIInstalled: PlaceholderAPI atbalsts ir iespējots jūsu tērzēšanas formātam.
+  wwcConfigPAPINotInstalled: Jūsu tērzēšanas formātā ir konstatēti pielāgoti vietturētāji,
+    taču PlaceholderAPI nav instalēts. Lūdzu, pārliecinieties, ka spraudnis ir ielādēts
+    un ir iespējots.
+  wwcConfigChatChannelIconInvalid: Atklāta nederīga kanāla ikona. Noklusējuma iestatījums
+    uz {0}...
+  wwcBlacklistBadFormat: Jūsu melnais saraksts nav pareizi formatēts kā saraksts.
+    Tas netiks izpildīts, kamēr tas nav noteikts.
+  wwcBlacklistedMsg: Jūsu ziņojums satur aizliegtu valodu un nav tulkots.
+  wwcBlacklistedMsgDetected: 'Atklāts melnajā sarakstā iekļauts vārds ({0}): {1}'
+  wwcBlacklistLoaded: Jūsu {0} aizliegto vārdu melnais saraksts ir ielādēts.
+  wwcConfigConversationAddBlacklist: Ievadiet jauno terminu, kuru vēlaties pievienot,
+    vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Dzēst no melnā saraksta
+  wwcConfigConversationBlacklistAddSuccess: Sekmīgi pievienots jauns termins melnajam
+    sarakstam.
+  wwcConfigGUIMessagesModifyBlacklistButton: Mainīt melno sarakstu
+  wwcConfigGUIChatBlacklistButton: Iespējot melno sarakstu
+  wwcConfigConversationBlacklistDeletionSuccess: Veiksmīgi izdzēsts termins.
+  wwcConfigGUIChatChannelSettings: Tērzēšanas kanāla konfigurācija
+  wwcConfigGUIChatBlacklistSuccess: Veiksmīgi pārslēdza melno sarakstu.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Pievienot jaunu vārdu
+  wwcConfigGUIChatChannelButton: Tulkot kanāla iestatījumus
+  wwcConfigGUIBlacklistMessagesModify: Modificēt terminu ({0})
+  wwcConfigChatChannelFormatInvalid: Atklāts nederīgs kanāla formāts. Noklusējuma
+    iestatījums uz {0}...
+  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
+    formāts ir {0}. Mūsu noklusējuma atzītie argumenti, kurus varat iekļaut: {1}.
+    Ja jums ir PlaceholderAPI, pārliecinieties, vai šos mainīgos ir ieskauti procenti
+    (%). Ierakstiet 0, lai atgrieztos.'
+  wwcConfigGUIModifyBlacklistSettings: Mainīt melno sarakstu
+  wwcConfigGUINextPageButton: Nākamā lapa
 

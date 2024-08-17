@@ -47,7 +47,6 @@ Messages:
   wwctGUISignButton: I-toggle ang Sign Translation
   wwcUpdaterOutOfDate: Ang WorldwideChat ay wala na sa petsa. Paki-update sa pinakabagong
     bersiyon, {0}.
-  wwcConfigGUINextPageButton: Susunod na Pahina
   wwcConfigInvalidTranslatorSettings: Di-wastong mga setting ng tagasalin! Mangyaring
     paganahin lamang ang isang tagasalin sa iyong config.yml.
   wwcConfigGUIQuitButton: Lumabas at I-save ang Mga Pagbab
@@ -673,4 +672,98 @@ Messages:
     nang manu-mano ang config para sa halagang ito.
   wwcRateNoConvoFolia: Hindi magtakda ng limitasyon ng rate sa pamamagitan ng GUI
     sa Folia. Mangyaring gamitin ang /wwctrl o /translateratelimit sa halip.
+  wwcInvalidTranslatorUser: Ang WorldwideChat ay kasalukuyang hindi magagamit. Mangyaring
+    subukang muli mamaya o makipag-ugnay sa iyong administrator kung magpapatuloy
+    ito.
+  wwcCouldNotSaveOhNo: Hindi mai-save ang data ng WorldwideChat... mangyaring tiyaking
+    matatag ang iyong napiling pagpipilian sa database/storage!
+  wwcSyncUserDataComplete: Matagumpay na nai-save ang data ng gumagamit sa {0}. {1}
+  wwcSyncUserDataStart: Pag-sync ng data ng gumagamit...
+  wwcdDebugEnvDisabled: Hindi pinagana ang kapaligiran ng debug.
+  wwcdDebugEnvWarn: 'Halos hindi inirerekomenda ang pag-toggle sa kapaligiran ng debug
+    maliban kung binubuo mo ang plugin na ito/nagsisiyasat ng isang bug. Kung nais
+    mo pa ring magpatuloy, i-type ang sumusunod: {0}'
+  wwclLangNotLoadedConsole: Ang {0} ay hindi maaaring gamitin sa oras na ito. Maaari
+    mong subukang muling i-load ang plugin upang ayusin ito, ngunit kung magpapatuloy
+    ito mangyaring makipag-ugnay sa developer.
+  wwcdDebugEnvEnabled: Pinagana ang kapaligiran ng debug.
+  wwclLangNotLoaded: 'Ang {0} ay hindi maaaring gamitin sa oras na ito. Subukang gumamit
+    ng ibang suportadong lokalisasyon: {1}'
+  wwcdDebugBadState: Hindi maaaring patakbuhin ang utos ng debug na ito habang ang
+    WorldwideChat ay walang wastong hanay ng tagasalin. Mangyaring subukang muli mamaya.
+  wwcNoVaultOnFolia: Kasalukuyang hindi sinusuportahan ang Vault sa Folia. Maaari
+    itong masira ang pagiging tugma sa iba pang mga plugin ng chat.
+  wwcNoVaultPlugin: Hindi naka-install ang Vault! Maaari itong masira ang pagiging
+    tugma sa iba pang naka-install na mga plugin ng chat.
+  wwcVaultChatProviderFound: 'Natagpuan ang isang Vault chat provider: {0}.'
+  wwcNoVaultChatProvider: Naka-install ang Vault, ngunit walang sinusuportahang chat
+    provider ang nakita.
+  wwcConfigEventPrioritySet: Itakda ang prayoridad ng kaganapan sa tagapakinig ng
+    chat sa {0}
+  wwcConfigEventPriorityInvalid: Hindi wastong priyoridad ng kaganapan sa tagapakinig
+    ng chat sa config.yml. Pag-default sa {0}...
+  wwcConfigGUIChatListenerPriorityButton: Baguhin ang Prioryoridad ng Tagapakinig
+  wwcConfigConversationChatPriorityBadInput: Masamang input ng prayoridad sa chat!
+    Mangyaring subukang muli.
+  wwcConfigConversationChatPrioritySuccess: Matagumpay na itakda ang iyong priyoridad
+    sa chat event
+  wwcConfigVaultSupportInvalid: Hindi wastong suporta sa vault na nakatakda sa config.yml.
+    Pag-default sa totoo...
+  wwcWatsonDeprecation: Si Watson ay hindi na sinusuportahan ng IBM. Mangyaring isaalang-alang
+    ang paglipat, dahil ang suporta para dito ay tatanggalin sa susunod na pag-update.
+  wwcConfigForceChatChannelEnabled: Ang isang hiwalay na channel ng pagsasalin ay
+    pipilitin sa lahat ng mga pagsasalin.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Matagumpay na pinapilit ang
+    hiwalay na channel.
+  wwcConfigConversationChannelIconInput: Ang kasalukuyang icon para sa hiwalay na
+    channel ng pagsasalin ay {0}. Sinusuportahan ang mga code ng kulay; i-type ang
+    0 upang bumalik.
+  wwcConfigConversationChatPriorityInput: 'Ang kasalukuyang priyoridad sa chat event
+    ay {0}. I-type ang 0 pumunta sa pabalik o pumili mula sa listahang ito ng mga
+    wastong prayoridad: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Baguhin ang Magkahiwalay na Format
+  wwcConfigConversationChannelIconSuccess: Matagumpay na binago ang icon ng iyong
+    channel.
+  wwcConfigGUISeparateChatChannelIconButton: Baguhin ang hiwalay na icon ng channel
+  wwcConfigConversationChatFormatSuccess: Matagumpay na binago ang iyong format.
+  wwcConfigGUISeparateChatChannelForceButton: Sapilitang Hiwalay na Channel
+  wwcOrigHover: 'Orihinal na Mensahe: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Ang orihinal na papalabas
+    na chat na nakalakip sa pagsasalin habang matagumpay na naka-switch ang hover
+  wwcConfigGUISendOutgoingHoverTextChatButton: Magdagdag ng Orihinal na Papalabas
+    na Mensahe bilang Hover Text
+  wwcConfigPAPIInstalled: Pinagana ang suporta ng PlaceholderAPI para sa iyong format
+    ng chat.
+  wwcConfigPAPINotInstalled: Nakita ang mga pasadyang placeholder sa iyong format
+    ng chat, ngunit hindi naka-install ang PlaceholderAPI. Mangyaring tiyaking na-load
+    ang plugin at pinagana.
+  wwcConfigChatChannelIconInvalid: Nakita ang hindi wastong icon ng channel. Pag-default
+    sa {0}...
+  wwcBlacklistBadFormat: Ang iyong blacklist ay hindi maayos na na-format bilang isang
+    listahan. Hindi ito ipapatupad hanggang sa maayos ito.
+  wwcBlacklistedMsg: Naglalaman ang iyong mensahe ng ipinagbabawal na wika at hindi
+    isinalin.
+  wwcBlacklistedMsgDetected: 'Nakita ang salitang nakalista sa itim ({0}): {1}'
+  wwcBlacklistLoaded: Na-load ang iyong blacklist ng {0} na mga ipinagbabawal na salita.
+  wwcConfigConversationAddBlacklist: Ipasok ang bagong termino na nais mong idagdag,
+    o i-type ang 0 upang bumalik.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Tanggalin mula sa Blacklist
+  wwcConfigConversationBlacklistAddSuccess: Matagumpay na nagdagdag ng isang bagong
+    termino sa blacklist.
+  wwcConfigGUIMessagesModifyBlacklistButton: Baguhin ang Blacklist
+  wwcConfigGUIChatBlacklistButton: Paganahin ang Blacklist
+  wwcConfigConversationBlacklistDeletionSuccess: Matagumpay na tinanggal ang termino.
+  wwcConfigGUIChatChannelSettings: Pagsasaayos ng Chat Channel
+  wwcConfigGUIChatBlacklistSuccess: Matagumpay na i-switch ang blacklist.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Magdagdag ng Bagong Salita
+  wwcConfigGUIChatChannelButton: Isalin ang mga setting ng Channel
+  wwcConfigGUIBlacklistMessagesModify: Baguhin ang Termino ({0})
+  wwcConfigChatChannelFormatInvalid: Nakita ang hindi wastong format ng channel. Pag-default
+    sa {0}...
+  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
+    na chat channel ay {0}. Ang aming mga default na kinikilalang argumento na maaari
+    mong isama: {1}. Kung mayroon kang PlaceholderAPI, tiyaking ang mga variable na
+    iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
+  wwcConfigGUIModifyBlacklistSettings: Baguhin ang Blacklist
+  wwcConfigGUINextPageButton: Susunod na Pahina
 

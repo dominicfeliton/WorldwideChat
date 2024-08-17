@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: لاسليک ژباړل
   wwcUpdaterOutOfDate: WorldwideChat له نیټې څخه بهر دی.. مهرباني وکړئ وروستۍ نسخه
     ته اوسمهالول کړئ، {0}
-  wwcConfigGUINextPageButton: راتلونکی مخ
   wwcConfigInvalidTranslatorSettings: ناسم ژباړونکي امستنې! مهرباني وکړئ یوازې یو
     ژباړونکي په خپل ترتیب کې فعال کړئ.
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
@@ -598,4 +597,83 @@ Messages:
     اوس هم کاري دي. مهرباني وکړئ هڅه وکړئ د دې ارزښت لپاره په لاسي توګه
   wwcRateNoConvoFolia: د فولیا په اړه د GUI له لارې د نرخ محدودیت تنظیم کولو ناتوان
     شي. مهرباني وکړئ د/wwctrl یا/translateratelimit په ځای کې وکاروئ.
+  wwcInvalidTranslatorUser: ورلډ ویډیکاټ اوس مهال نشته. مهرباني وکړئ وروسته بیا هڅه
+    وکړئ یا خپل مدیر سره اړیکه ونیس
+  wwcCouldNotSaveOhNo: د WorldwideChat ډاټا خوندي کولو نشتوالی... مهرباني وکړئ ډاډ
+    ترلاسه کړئ چې ستاسو ټاکل شوي ډیټابیس/ذخی
+  wwcSyncUserDataComplete: په بریالیتوب سره د کاروونکي ډاټا خوندي {0} {1}
+  wwcSyncUserDataStart: د کاروونکي ډاټا همغږي...
+  wwcdDebugEnvDisabled: د ډیبګ چاپیریال غیر فعال شوی دی.
+  wwcdDebugEnvWarn: 'د ډیبګ چاپیریال ټوګل کول نږدې هیڅکله سپارښتنه کیږي تر هغه څه
+    چې تاسو د دې پلګین پراختیا یې که تاسو اوس هم غواړئ ترلاسه کړئ، لاندې ټایپ کړئ:
+    {0}'
+  wwclLangNotLoadedConsole: '{0} په دې وخت کې نشي کارول کیږي. تاسو کولی شئ د دې اصلاح
+    کولو لپاره د فلګین بیا لوډ کولو هڅه وکړئ، مګر که دا دوام وکړي مهرباني و'
+  wwcdDebugEnvEnabled: د ډیبګ چاپیریال فعال شوی دی.
+  wwclLangNotLoaded: '{0} په دې وخت کې نشي کارول کیږي. د بیلابیل ملاتړ شوي لوکیشن
+    کارولو وکړئ: {1}'
+  wwcdDebugBadState: دا ډیبګ کمانډ نشي شي چلول شي پداسې حال کې چې WorldwideChat د
+    اعتبار ژباړونکي سیټ نه لري. لطفا وروسته بیا هڅه وکړئ.
+  wwcNoVaultOnFolia: ولټ اوس مهال په فولیا کې ملاتړ نه کیږي. دا کیدای شي د نورو چیٹ
+    فلګونو سره مطابقت ورکړي.
+  wwcNoVaultPlugin: والټ نصب نه شوی! دا کیدای شي د نورو نصب شوي چیٹ فلګونو سره مطابقت
+    ورکړي.
+  wwcVaultChatProviderFound: 'د والټ چیټ چټ چوکونکی وموندل: {0}.'
+  wwcNoVaultChatProvider: والټ نصب شوی، مګر هیڅ ملاتړ شوی د چیٹ چیک چوکونکی څخه
+  wwcConfigEventPrioritySet: د چیټ د اوریدونکي پیښې لومړیتوب {0} ته
+  wwcConfigEventPriorityInvalid: په config.yml کې د غلط چیٹ اوریدونکي پیښې لومړیتوب.
+    {0} ته ډیفولټ کول...
+  wwcConfigGUIChatListenerPriorityButton: د چیٹ پیښې د اوریونکي لوم
+  wwcConfigConversationChatPriorityBadInput: خراب چیٹ لومړیتوب ننو لطفا بیا هڅه وکړئ.
+  wwcConfigConversationChatPrioritySuccess: په بریالیتوب سره ستاسو د چیٹ پیښې لوم
+  wwcConfigVaultSupportInvalid: د اعتبار والټ ملاتړ په config.yml کې ټاکل شوی. ریښتینې
+    ته ناپسند کول...
+  wwcWatsonDeprecation: واټسن منځه شوی دی او نور د آی بی ایم لخوا ملاتړ نه کیږي. مهرباني
+    وکړئ د سویچ کولو په پام کې ونیسئ، ځکه چې د دې لپاره ملاتړ به په راتلونکي
+  wwcConfigForceChatChannelEnabled: د ټولو ژباړو په مهال به یو جلا ژباړه چینل مجبور
+    ش
+  wwcConfigConversationSeparateChatChannelForceSuccess: په بریالیتوب سره جلا چینل
+    مجبور شوی.
+  wwcConfigConversationChannelIconInput: د جلا ژباړې چینل لپاره اوسنۍ آیکون {0} دی.
+    د رنګ کوډونه ملاتړ کیږي؛ بیرته لاړ شي 0 ډول.
+  wwcConfigConversationChatPriorityInput: 'د اوسنۍ چیټ پیښې لومړیتوب {0} دی. ډول 0
+    بیرته لاړ شئ یا د اعتبار لومړیتوبونو له دې لیست څخه غوره کړئ: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: جلا چینل بڼه بدل کړئ
+  wwcConfigConversationChannelIconSuccess: په بریالیتوب سره ستاسو د چینل آیکو
+  wwcConfigGUISeparateChatChannelIconButton: جلا چینل آیکون بدل کړئ
+  wwcConfigConversationChatFormatSuccess: ستاسو بڼه په بریالیتوب سره بدل شوی دی
+  wwcConfigGUISeparateChatChannelForceButton: جلا چینل زور کړئ
+  wwcOrigHover: 'اصلي پیغام: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: اصلي راتلونکي چیټ ژباړې سره
+    منسلک شوی لکه چې د هور متن په بریالیتوب
+  wwcConfigGUISendOutgoingHoverTextChatButton: د هور متن په توګه اصلي لرونکي پیغامونه
+  wwcConfigPAPIInstalled: د PlaceholderAPI ملاتړ ستاسو د چیٹ بڼه لپاره فعال شوی دی.
+  wwcConfigPAPINotInstalled: دودیز ځای خونکي ستاسو د چیٹ بڼه کې موندل شوي دي، مګر
+    PlaceholderAPI نصب نه دی. مهرباني وکړئ ډاډ ترلاسه کړئ چې فلګ لوډ شوی او فعال دی
+  wwcConfigChatChannelIconInvalid: غلط چینل آیکون وموندل {0} ته ډیفولټ کول...
+  wwcBlacklistBadFormat: ستاسو تور لیست په سمه توګه د لیست په توګه فارمیټ نه دی شوی.
+    دا به تر هغه چې دا ټاکل شي، تطبیق نه شي.
+  wwcBlacklistedMsg: ستاسو پیغام منع شوي ژبه لري او ژباړه نه شو.
+  wwcBlacklistedMsgDetected: 'د تور لیست شوي کلمه ({0}) کشف شوی: {1}'
+  wwcBlacklistLoaded: ستاسو د {0} بندیز شوي کلماتو تور لیست لوډ شوی دی.
+  wwcConfigConversationAddBlacklist: نوی اصطلاح داخل کړئ چې تاسو غواړئ اضافه کړئ،
+    یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: له تور لیست څخه حذف کړئ
+  wwcConfigConversationBlacklistAddSuccess: په بریالیتوب سره یو نوی اصطلاح په تور
+    لیست کې اضافه کړه.
+  wwcConfigGUIMessagesModifyBlacklistButton: تور لیست اصلاح کړئ
+  wwcConfigGUIChatBlacklistButton: تور لیست فعال کړئ
+  wwcConfigConversationBlacklistDeletionSuccess: اصطلاح په بریالیتوب سره حذف
+  wwcConfigGUIChatChannelSettings: د چیټ چینل ترتیب
+  wwcConfigGUIChatBlacklistSuccess: په بریالیتوب سره تور لیست بدل کړی.
+  wwcConfigGUIChatMessagesBlacklistNewButton: نوی کلمه اضافه کړئ
+  wwcConfigGUIChatChannelButton: د چینل ترتیبات ژبا
+  wwcConfigGUIBlacklistMessagesModify: اصلاح اصلاح کړئ ({0})
+  wwcConfigChatChannelFormatInvalid: غلط چینل بڼه کشف شوي. {0} ته ډیفولټ کول...
+  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. زموږ
+    ډیفالټ پیژندل شوي دلائل چې تاسو کولی شئ شامل کړئ {1} که تاسو PlaceholderAPI لرئ،
+    ډاډ ترلاسه کړئ چې هغه متغیرونه په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو
+    لپاره 0 ټایپ کړئ.
+  wwcConfigGUIModifyBlacklistSettings: تور لیست اصلاح کړئ
+  wwcConfigGUINextPageButton: راتلونکی پاڼه
 

@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Baskile Siyen Tradiksyon
   wwcUpdaterOutOfDate: WorldwideChat se soti nan dat. Tanpri mete ajou vèsyon an dènye,
     % mwen.
-  wwcConfigGUINextPageButton: Pwochen paj
   wwcConfigInvalidTranslatorSettings: Anviwònman tradiktè envalid! Tanpri pèmèt yon
     sèl tradiktè nan config.yml ou.
   wwcConfigGUIQuitButton: Sòti & Save Chanjman
@@ -583,4 +582,86 @@ Messages:
     pou valè sa a.
   wwcRateNoConvoFolia: Pa kapab mete yon limit pousantaj atravè GUI a sou Folia. Tanpri
     itilize /wwctrl oubyen /translateratelimit olye de sa.
+  wwcInvalidTranslatorUser: WorldwideChat kounye a pa disponib. Tanpri eseye ankò
+    pita oswa kontakte administratè ou si sa a pèsiste.
+  wwcCouldNotSaveOhNo: Pa kapab sove done WorldwideChat... tanpri asire ke opsyon
+    baz done/depo chwazi ou a se ki estab!
+  wwcSyncUserDataComplete: Aksè sove done itilizatè nan {0}. {1}
+  wwcSyncUserDataStart: Synchronize done itilizatè...
+  wwcdDebugEnvDisabled: Anviwònman an debug te enfim.
+  wwcdDebugEnvWarn: 'Toggling anviwònman an debug se prèske pa janm rekòmande sof
+    si ou ap devlope sa a Plugin/mennen ankèt sou yon ensèk. Si ou toujou vle kontinye,
+    tape sa ki annapre yo: {0}'
+  wwclLangNotLoadedConsole: '{0} pa ka itilize nan moman sa a. Ou ka eseye rloading
+    Plugin la ranje sa a, men si li pèsiste tanpri kontakte pwomotè a.'
+  wwcdDebugEnvEnabled: Anviwònman an debug te pèmèt.
+  wwclLangNotLoaded: '{0} pa ka itilize nan moman sa a. Eseye lè l sèvi avèk yon lokalizasyon
+    diferan sipòte: {1}'
+  wwcdDebugBadState: Lòd sa a debug pa ka kouri pandan y ap WorldwideChat pa gen yon
+    seri tradiktè valab. Tanpri eseye ankò pita.
+  wwcNoVaultOnFolia: Vault pa sipòte kounye a sou Folia. Sa a ka kraze konpatibilite
+    ak lòt grefon chat.
+  wwcNoVaultPlugin: Vault pa enstale! Sa a pouvwa kraze konpatibilite ak lòt plugins
+    chat enstale.
+  wwcVaultChatProviderFound: 'Te jwenn yon founisè chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault se enstale, men pa gen okenn founisè chat sipòte yo
+    te detekte.
+  wwcConfigEventPrioritySet: Mete priyorite evènman koute chat nan {0}.
+  wwcConfigEventPriorityInvalid: Priyorite evènman koute chat envalab nan config.yml.
+    Defaulting nan {0}...
+  wwcConfigGUIChatListenerPriorityButton: Chanje Priyorite Koute Evènman Chat
+  wwcConfigConversationChatPriorityBadInput: Move chat priyorite opinyon! Tanpri eseye
+    ankò.
+  wwcConfigConversationChatPrioritySuccess: Aksè mete priyorite evènman chat ou.
+  wwcConfigVaultSupportInvalid: Sipò vant envalid mete nan config.yml. Defaulting
+    nan vre...
+  wwcWatsonDeprecation: Watson te deprecated epi li pa gen okenn ankò sipòte pa IBM.
+    Tanpri konsidere oblije chanje, kòm sipò pou li pral retire nan aktyalizasyon
+    kap vini an.
+  wwcConfigForceChatChannelEnabled: Yon kanal tradiksyon separe yo pral fòse pandan
+    tout tradiksyon.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Aksè togged fòse kanal la
+    separe.
+  wwcConfigConversationChannelIconInput: Icon aktyèl la pou kanal tradiksyon separe
+    a se {0}. Kòd koulè yo sipòte; kalite 0 pou tounen.
+  wwcConfigConversationChatPriorityInput: 'Priyorite evènman chat aktyèl la se {0}.
+    Kalite 0 ale nan tounen oswa chwazi nan lis sa a nan priyorite ki valab: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Chanje fòma chanèl separe
+  wwcConfigConversationChannelIconSuccess: Aksè chanje icon kanal ou.
+  wwcConfigGUISeparateChatChannelIconButton: Chanje Icon Chèn separe
+  wwcConfigConversationChatFormatSuccess: Fòma ou te chanje avèk siksè.
+  wwcConfigGUISeparateChatChannelForceButton: Fòs Chèn separe
+  wwcOrigHover: 'Mesaj orijinal: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Original sortan chat tache
+    ak tradiksyon kòm hover tèks togged avèk siksè.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Ajoute Mesaj Sortan orijinal kòm Tèks
+    Hover
+  wwcConfigPAPIInstalled: Sipò PlaceholderAPI te pèmèt pou fòma chat ou.
+  wwcConfigPAPINotInstalled: Custom placeholders yo te detekte nan fòma chat ou, men
+    PlaceholderAPI pa enstale. Tanpri asire ke Plugin la te chaje epi li se pèmèt.
+  wwcConfigChatChannelIconInvalid: Icon chanèl envalid detekte. Defaulting nan {0}...
+  wwcBlacklistBadFormat: Lis nwa ou pa byen fòma kòm yon lis. Li pa pral ranfòse jiskaske
+    sa a fiks.
+  wwcBlacklistedMsg: Mesaj ou gen lang entèdi epi yo pa te tradui.
+  wwcBlacklistedMsgDetected: 'Pawòl ki nan lis nwa ({0}) detekte: {1}'
+  wwcBlacklistLoaded: Lis nwa ou nan {0} mo entèdi yo te chaje.
+  wwcConfigConversationAddBlacklist: Antre nan tèm nan nouvo ou ta renmen ajoute,
+    oswa tape 0 yo ale tounen.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Efase nan lis nwa
+  wwcConfigConversationBlacklistAddSuccess: Ajoute avèk siksè yon nouvo tèm nan lis
+    nwa a.
+  wwcConfigGUIMessagesModifyBlacklistButton: Modifye lis nwa
+  wwcConfigGUIChatBlacklistButton: Pèmèt lis nwa
+  wwcConfigConversationBlacklistDeletionSuccess: Aksè efase tèm nan.
+  wwcConfigGUIChatChannelSettings: Konfigirasyon Chanèl Chat
+  wwcConfigGUIChatBlacklistSuccess: Siksè toggle lis nwa a.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Ajoute nouvo pawòl
+  wwcConfigGUIChatChannelButton: Tradui Channel Anviwòn
+  wwcConfigGUIBlacklistMessagesModify: Modifye tèm ({0})
+  wwcConfigChatChannelFormatInvalid: Fòma chanèl envalid detekte. Defaulting nan {0}...
+  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
+    se {0}. Agiman defo rekonèt nou yo ke ou ka gen ladan yo: {1}. Si ou gen PlaceholderAPI,
+    asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
+  wwcConfigGUIModifyBlacklistSettings: Modifye lis nwa
+  wwcConfigGUINextPageButton: Paj pwochen
 

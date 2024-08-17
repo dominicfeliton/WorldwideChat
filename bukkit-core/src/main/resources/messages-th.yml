@@ -39,7 +39,6 @@ Messages:
   wwcConfigGUILangButton: เปลี่ยนภาษาปลั๊กอิน
   wwctGUISignButton: สลับการแปล
   wwcUpdaterOutOfDate: WorldwideChat ล้าสมัยแล้วโปรดอัปเดตเป็นเวอร์ชันล่าสุด {0}
-  wwcConfigGUINextPageButton: หน้าถัดไป
   wwcConfigInvalidTranslatorSettings: การตั้งค่าตัวแปลไม่ถูกต้อง!โปรดเปิดใช้งานเพียงหนึ่งแปลใน
     config.yml ของคุณ
   wwcConfigGUIQuitButton: ออกจากการบันทึกการเปลี่ยนแปลง
@@ -527,4 +526,71 @@ Messages:
   wwcNoConvoFolia: ขณะนี้การสนทนา Bukkit ถูกทำลายใน Folia เวอร์ชันนี้ แต่สวิตช์ยังคงใช้งานอยู่โปรดลองแก้ไขการกำหนดค่าด้วยตนเองสำหรับค่านี้
   wwcRateNoConvoFolia: ไม่สามารถตั้งค่าขีดจำกัดอัตราผ่าน GUI บน Foliaโปรดใช้ /wwctrl
     หรือ /translateratelimit แทน
+  wwcInvalidTranslatorUser: ขณะนี้ WorldwideChat ไม่สามารถใช้งานได้โปรดลองอีกครั้งในภายหลังหรือติดต่อผู้ดูแลระบบของคุณหากยังคงมีอยู่
+  wwcCouldNotSaveOhNo: ไม่สามารถบันทึกข้อมูล WorldwideChat ได้... โปรดตรวจสอบให้แน่ใจว่าตัวเลือกฐานข้อมูล/พื้นที่จัดเก็บที่เลือกของคุณมีเสถียรภาพ!
+  wwcSyncUserDataComplete: บันทึกข้อมูลผู้ใช้ไปที่ {0} เรียบร้อยแล้ว{1}
+  wwcSyncUserDataStart: การซิงค์ข้อมูลผู้ใช้...
+  wwcdDebugEnvDisabled: สภาพแวดล้อมการแก้จุดบกพร่องถูกปิดใช้งาน
+  wwcdDebugEnvWarn: 'แทบไม่แนะนำให้เปลี่ยนสภาพแวดล้อมการดีบัก เว้นแต่คุณจะพัฒนาปลั๊กอินนี้/ตรวจสอบข้อบกพร่องหากคุณยังต้องการดำเนินการต่อ
+    ให้พิมพ์สิ่งต่อไปนี้: {0}'
+  wwclLangNotLoadedConsole: ขณะนี้ไม่สามารถใช้ {0} ได้คุณสามารถลองโหลดปลั๊กอินใหม่เพื่อแก้ไขปัญหานี้
+    แต่หากยังคงอยู่โปรดติดต่อนักพัฒนา
+  wwcdDebugEnvEnabled: เปิดใช้งานสภาพแวดล้อมการแก้จุดบกพร่อง
+  wwclLangNotLoaded: 'ขณะนี้ไม่สามารถใช้ {0} ได้ลองใช้การแปลภาษาที่รองรับอื่น: {1}'
+  wwcdDebugBadState: คำสั่งแก้ไขข้อบกพร่องนี้ไม่สามารถเรียกใช้ได้ในขณะที่ WorldwideChat
+    ไม่มีชุดนักแปลที่ถูกต้องโปรดลองอีกครั้งในภายหลัง
+  wwcNoVaultOnFolia: ขณะนี้ไม่รองรับ Vault บน Foliaสิ่งนี้อาจทำลายความเข้ากันได้กับปลั๊กอินแชทอื่น
+    ๆ
+  wwcNoVaultPlugin: ไม่มีการติดตั้ง Vault!สิ่งนี้อาจทำให้ความเข้ากันได้กับปลั๊กอินแชทอื่น
+    ๆ ที่ติดตั้งไว้
+  wwcVaultChatProviderFound: 'พบผู้ให้บริการแชท Vault: {0}.'
+  wwcNoVaultChatProvider: มีการติดตั้ง Vault แต่ไม่พบผู้ให้บริการแชทที่รองรับ
+  wwcConfigEventPrioritySet: ตั้งค่าลำดับความสำคัญของเหตุการณ์ผู้ฟังแชทเป็น {0}
+  wwcConfigEventPriorityInvalid: ลำดับความสำคัญของเหตุการณ์ผู้ฟังแชทไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็น
+    {0}...
+  wwcConfigGUIChatListenerPriorityButton: เปลี่ยนลำดับความสำคัญของผู้ฟังเหตุการณ์แชท
+  wwcConfigConversationChatPriorityBadInput: อินพุตลำดับความสำคัญในการแชทไม่ดี!โปรดลองอีกครั้ง
+  wwcConfigConversationChatPrioritySuccess: ตั้งค่าลำดับความสำคัญของกิจกรรมแชทของคุณเรียบร้อยแล้ว
+  wwcConfigVaultSupportInvalid: ตั้งค่าการสนับสนุนห้องเก็บข้อมูลที่ไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็นจริง...
+  wwcWatsonDeprecation: Watson ถูกยกเลิกและไม่ได้รับการสนับสนุนจาก IBM อีกต่อไปโปรดพิจารณาสลับเนื่องจากการสนับสนุนจะถูกลบออกในการอัปเดตถัดไป
+  wwcConfigForceChatChannelEnabled: ช่องการแปลแยกต่างหากจะถูกบังคับในระหว่างการแปลทั้งหมด
+  wwcConfigConversationSeparateChatChannelForceSuccess: สลับบังคับช่องแยกได้สำเร็จ
+  wwcConfigConversationChannelIconInput: ไอคอนปัจจุบันสำหรับช่องการแปลแยกต่างหากคือ
+    {0}รองรับรหัสสี พิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationChatPriorityInput: 'ลำดับความสำคัญของกิจกรรมแชทปัจจุบันคือ
+    {0}พิมพ์ 0 ไปที่กลับ หรือเลือกจากรายการลำดับความสำคัญที่ถูกต้องนี้: {1}'
+  wwcConfigGUISeparateChatChannelFormatButton: เปลี่ยนรูปแบบช่องแยกต่างหาก
+  wwcConfigConversationChannelIconSuccess: เปลี่ยนไอคอนช่องของคุณเรียบร้อยแล้ว
+  wwcConfigGUISeparateChatChannelIconButton: เปลี่ยนไอคอนช่องแยกต่างหาก
+  wwcConfigConversationChatFormatSuccess: รูปแบบของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
+  wwcConfigGUISeparateChatChannelForceButton: บังคับช่องแยกต่างหาก
+  wwcOrigHover: 'ข้อความต้นฉบับ: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: การแชทขาออกต้นฉบับที่แนบมากับการแปลเป็นข้อความแบบเมาส์ถูกสลับเรียบร้อยแล้ว
+  wwcConfigGUISendOutgoingHoverTextChatButton: เพิ่มข้อความขาออกต้นฉบับเป็นข้อความที่วางเมาส์
+  wwcConfigPAPIInstalled: เปิดใช้งานการสนับสนุน PlaceholderAPI สำหรับรูปแบบการแชทของคุณ
+  wwcConfigPAPINotInstalled: ตรวจพบตัวยึดตำแหน่งที่กำหนดเองในรูปแบบการแชทของคุณ แต่
+    PlaceholderAPI ไม่ได้ติดตั้งโปรดตรวจสอบให้แน่ใจว่าปลั๊กอินโหลดแล้วและเปิดใช้งาน
+  wwcConfigChatChannelIconInvalid: ตรวจพบไอคอนช่องไม่ถูกต้องค่าเริ่มต้นเป็น {0}...
+  wwcBlacklistBadFormat: บัญชีดำของคุณไม่ได้จัดรูปแบบเป็นรายการอย่างถูกต้องจะไม่บังคับใช้จนกว่าจะได้รับการแก้ไข
+  wwcBlacklistedMsg: ข้อความของคุณมีภาษาที่ต้องห้ามและไม่ได้รับการแปล
+  wwcBlacklistedMsgDetected: 'ตรวจพบคำในรายการดำ ({0}): {1}'
+  wwcBlacklistLoaded: โหลดบัญชีดำของคำที่ถูกต้องห้าม {0} ของคุณแล้ว
+  wwcConfigConversationAddBlacklist: ป้อนคำใหม่ที่คุณต้องการเพิ่ม หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ลบออกจากบัญชีดำ
+  wwcConfigConversationBlacklistAddSuccess: เพิ่มคำใหม่ลงในบัญชีดำเรียบร้อยแล้ว
+  wwcConfigGUIMessagesModifyBlacklistButton: แก้ไขบัญชีดำ
+  wwcConfigGUIChatBlacklistButton: เปิดใช้งานบัญชีดำ
+  wwcConfigConversationBlacklistDeletionSuccess: ลบคำเรียบร้อยแล้ว
+  wwcConfigGUIChatChannelSettings: การกำหนดค่าช่องแชท
+  wwcConfigGUIChatBlacklistSuccess: สลับบัญชีดำเรียบร้อยแล้ว
+  wwcConfigGUIChatMessagesBlacklistNewButton: เพิ่มคำใหม่
+  wwcConfigGUIChatChannelButton: แปลการตั้งค่าช่อง
+  wwcConfigGUIBlacklistMessagesModify: แก้ไขคำศัพท์ ({0})
+  wwcConfigChatChannelFormatInvalid: ตรวจพบรูปแบบช่องไม่ถูกต้องค่าเริ่มต้นเป็น {0}...
+  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
+    {0}อาร์กิวเมนต์ที่ได้รับการยอมรับเริ่มต้นของเราซึ่งคุณสามารถรวมได้: {1}หากคุณมี
+    PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์ (%) แทนพิมพ์
+    0 เพื่อกลับไป'
+  wwcConfigGUIModifyBlacklistSettings: แก้ไขบัญชีดำ
+  wwcConfigGUINextPageButton: หน้าถัดไป
 

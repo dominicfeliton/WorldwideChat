@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Preklapljanje znakovnih prevodov
   wwcUpdaterOutOfDate: WorldwideChat je zastarel. Prosimo, posodobite na najnovejšo
     različico, {0}.
-  wwcConfigGUINextPageButton: Naslednja stran
   wwcConfigInvalidTranslatorSettings: Neveljavne nastavitve prevajalca! Prosimo, omogočite
     samo en prevajalec v vašem config.yml.
   wwcConfigGUIQuitButton: Izhod in shranjevanje sprememb
@@ -608,4 +607,90 @@ Messages:
     za to vrednost.
   wwcRateNoConvoFolia: Preko uporabniškega vmesnika na Folia ni mogoče nastaviti omejitve
     hitrosti. Namesto tega uporabite /wwctrl ali /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat trenutno ni na voljo. Poskusite znova pozneje
+    ali se obrnite na skrbnika, če se to ne nadaljuje.
+  wwcCouldNotSaveOhNo: Podatkov WorldwideChat ni mogoče shraniti... poskrbite, da
+    je izbrana podatkovna baza/možnost shranjevanja stabilna!
+  wwcSyncUserDataComplete: Uspešno shranjeni uporabniški podatki v {0}. {1}
+  wwcSyncUserDataStart: Sinhronizacija uporabniških podatkov...
+  wwcdDebugEnvDisabled: Okolje za odpravljanje napak je onemogočeno.
+  wwcdDebugEnvWarn: 'Preklapljanje okolja za odpravljanje napak skoraj nikoli ni priporočljivo,
+    razen če razvijate ta vtičnik/preiskujete napako. Če še vedno želite nadaljevati,
+    vnesite naslednje: {0}'
+  wwclLangNotLoadedConsole: '{0} trenutno ni mogoče uporabiti. Če želite to popraviti,
+    lahko poskusite znova naložiti vtičnik, če pa vztraja, se obrnite na razvijalca.'
+  wwcdDebugEnvEnabled: Okolje za odpravljanje napak je bilo omogočeno.
+  wwclLangNotLoaded: '{0} trenutno ni mogoče uporabiti. Poskusite uporabiti drugo
+    podprto lokalizacijo: {1}'
+  wwcdDebugBadState: Tega ukaza za odpravljanje napak ni mogoče zagnati, medtem ko
+    WorldwideChat nima veljavnega nabora prevajalcev. Prosimo, poskusite znova kasneje.
+  wwcNoVaultOnFolia: Vault trenutno ni podprt na Folia. To lahko prekine združljivost
+    z drugimi vtičniki za klepet.
+  wwcNoVaultPlugin: Vault ni nameščen! To lahko prekine združljivost z drugimi nameščenimi
+    vtičniki za klepet.
+  wwcVaultChatProviderFound: 'Našli smo ponudnika klepeta Vault: {0}.'
+  wwcNoVaultChatProvider: Vault je nameščen, vendar ni bil zaznan noben podprt ponudnik
+    klepeta.
+  wwcConfigEventPrioritySet: Nastavite prednost dogodka poslušalca klepeta na {0}.
+  wwcConfigEventPriorityInvalid: Neveljavna prioriteta dogodka poslušalca klepeta
+    v config.yml. Privzeta vrednost {0}...
+  wwcConfigGUIChatListenerPriorityButton: Spremenite prednostno nalogo poslušalca
+    dogodka v
+  wwcConfigConversationChatPriorityBadInput: Slab vnos prioritete klepeta! Prosimo,
+    poskusite znova.
+  wwcConfigConversationChatPrioritySuccess: Uspešno nastavite prednostno nalogo dogodka
+    v klepetu.
+  wwcConfigVaultSupportInvalid: V config.yml je nastavljena neveljavna podpora za
+    trezor. Privzeta vrednost resnična...
+  wwcWatsonDeprecation: Watson je bil zastarel in IBM ga ne podpira več. Razmislite
+    o preklopu, saj bo podpora zanj odstranjena v naslednji posodobitvi.
+  wwcConfigForceChatChannelEnabled: Med vsemi prevodi bo prisiljen ločen prevajalski
+    kanal.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Uspešno preklopljeno prisiljevanje
+    ločenega kanala.
+  wwcConfigConversationChannelIconInput: Trenutna ikona ločenega prevajalskega kanala
+    je {0}. Barvne kode so podprte; vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationChatPriorityInput: 'Trenutna prednostna naloga dogodka v klepetu
+    je {0}. Vnesite 0 pojdi nazaj ali izberite s tega seznama veljavnih prednostnih
+    nalog: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Spremenite obliko ločenega kanala
+  wwcConfigConversationChannelIconSuccess: Uspešno spremenil ikono vašega kanala.
+  wwcConfigGUISeparateChatChannelIconButton: Spremenite ločeno ikono kanala
+  wwcConfigConversationChatFormatSuccess: Vaša oblika je bila uspešno spremenjena.
+  wwcConfigGUISeparateChatChannelForceButton: Prisilite ločen kanal
+  wwcOrigHover: 'Izvirno sporočilo: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Izvirni odhodni klepet, priložen
+    prevodu kot besedilo z lebdenjem kazalca, je uspešno preklopil.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Dodajte izvirna odhodna sporočila kot
+    besedilo s kazalcem kazalca
+  wwcConfigPAPIInstalled: Podpora za PlaceholderAPI je omogočena za vaš format klepeta.
+  wwcConfigPAPINotInstalled: V obliki klepeta so zaznana označena mesta po meri, vendar
+    PlaceholderAPI ni nameščen. Prepričajte se, da je vtičnik naložen in omogočen.
+  wwcConfigChatChannelIconInvalid: Zaznana je neveljavna ikona kanala. Privzeta vrednost
+    {0}...
+  wwcBlacklistBadFormat: Vaš črni seznam ni pravilno oblikovan kot seznam. Ne bo uveljavljen,
+    dokler to ne bo določeno.
+  wwcBlacklistedMsg: Vaše sporočilo vsebuje prepovedan jezik in ni bilo prevedeno.
+  wwcBlacklistedMsgDetected: 'Zaznana beseda ({0}) na črnem seznamu: {1}'
+  wwcBlacklistLoaded: Vaš črni seznam {0} prepovedanih besed je bil naložen.
+  wwcConfigConversationAddBlacklist: Vnesite nov izraz, ki ga želite dodati, ali vnesite
+    0, da se vrnete nazaj.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Izbriši s črnega seznama
+  wwcConfigConversationBlacklistAddSuccess: Uspešno je dodal nov izraz na črni seznam.
+  wwcConfigGUIMessagesModifyBlacklistButton: Spremeni črni seznam
+  wwcConfigGUIChatBlacklistButton: Omogoči črni seznam
+  wwcConfigConversationBlacklistDeletionSuccess: Izraz je uspešno izbrisal.
+  wwcConfigGUIChatChannelSettings: Konfiguracija kanala za klepet
+  wwcConfigGUIChatBlacklistSuccess: Uspešno preklopil črni seznam.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novo besedo
+  wwcConfigGUIChatChannelButton: Prevedi nastavitve kanala
+  wwcConfigGUIBlacklistMessagesModify: Spremeni izraz ({0})
+  wwcConfigChatChannelFormatInvalid: Zaznana je neveljavna oblika kanala. Privzeta
+    vrednost {0}...
+  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
+    je {0}. Naši privzeti priznani argumenti, ki jih lahko vključite: {1}. Če imate
+    PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki (%).
+    Vnesite 0, da se vrnete nazaj.'
+  wwcConfigGUIModifyBlacklistSettings: Spremeni črni seznam
+  wwcConfigGUINextPageButton: Naslednja stran
 

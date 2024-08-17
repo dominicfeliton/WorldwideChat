@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: ટૉગલ સાઇન અનુવાદ
   wwcUpdaterOutOfDate: વર્લ્ડવાઇડચેટ આઉટ ઓફ ડેટ છે. મહેરબાની કરીને નવીનતમ સંસ્કરણ
     પર અપડેટ કરો, {0}.
-  wwcConfigGUINextPageButton: આગલું પૃષ્ઠ
   wwcConfigInvalidTranslatorSettings: અમાન્ય અનુવાદક સેટિંગ્સ! કૃપા કરીને તમારા config.yml
     માં ફક્ત એક અનુવાદકને સક્ષમ કરો.
   wwcConfigGUIQuitButton: બહાર નીકળો અને ફેરફારો સાચવો
@@ -597,4 +596,95 @@ Messages:
     પ્રયાસ કરો.
   wwcRateNoConvoFolia: ફોલિયા પર GUI દ્વારા દર મર્યાદા સેટ કરવામાં અસમર્થ. કૃપા કરીને
     તેના બદલે /wwctrl અથવા /translateratelimit નો ઉપયોગ કરો.
+  wwcInvalidTranslatorUser: વર્લ્ડવાઇડચેટ હાલમાં ઉપલબ્ધ નથી. કૃપા કરીને પછીથી ફરીથી
+    પ્રયાસ કરો અથવા જો આ ચાલુ રહે તો તમારા સંચાલકનો સંપર્ક કરો.
+  wwcCouldNotSaveOhNo: WorldwideChat ડેટા સાચવવા માટે અસમર્થ... કૃપા કરીને ખાતરી કરો
+    કે તમારા પસંદ કરેલ ડેટાબેઝ/સ્ટોરેજ વિકલ્પ સ્થિર છે!
+  wwcSyncUserDataComplete: સફળતાપૂર્વક વપરાશકર્તા ડેટાને {0} પર સાચવ્યો. {1}
+  wwcSyncUserDataStart: વપરાશકર્તા ડેટાને સમન્વયિત કરવું...
+  wwcdDebugEnvDisabled: ડિબગ પર્યાવરણ અક્ષમ કરવામાં આવ્યું છે.
+  wwcdDebugEnvWarn: 'ડિબગ પર્યાવરણને ટૉગલિંગ કરવું લગભગ ક્યારેય ભલામણ કરવામાં આવતું
+    નથી જ્યાં સુધી તમે આ પ્લગઇન વિકસાવી રહ્યા હોવ નહીં/કોઈ બગની તપાસ કરી રહ્યાં નથી
+    જો તમે હજી પણ આગળ વધવા માંગતા હો, તો નીચે લખો: {0}'
+  wwclLangNotLoadedConsole: '{0} આ સમયે ઉપયોગ કરી શકાતો નથી. તમે આને ઠીક કરવા માટે
+    પ્લગઇનને ફરીથી લોડ કરવાનો પ્રયાસ કરી શકો છો, પરંતુ જો તે ચાલુ રહે તો કૃપા કરીને
+    વિકાસકર્તાનો સંપર્ક કરો.'
+  wwcdDebugEnvEnabled: ડિબગ પર્યાવરણ સક્ષમ કરવામાં આવ્યું છે.
+  wwclLangNotLoaded: '{0} આ સમયે ઉપયોગ કરી શકાતો નથી. એક અલગ સપોર્ટેડ સ્થાનિકીકરણનો
+    ઉપયોગ કરવાનો પ્રયાસ કરો: {1}'
+  wwcdDebugBadState: આ ડિબગ આદેશ ચલાવી શકાતો નથી જ્યારે WorldwideChat પાસે માન્ય અનુવાદક
+    સેટ નથી. કૃપા કરીને પછીથી ફરીથી પ્રયાસ કરો.
+  wwcNoVaultOnFolia: ફોલિયા પર હાલમાં વૉલ્ટ સપોર્ટેડ નથી. આ અન્ય ચેટ પ્લગિન્સ સાથે
+    સુસંગતતાને તોડી શકે છે.
+  wwcNoVaultPlugin: વૉલ્ટ ઇન્સ્ટોલ કરેલ નથી! આ અન્ય ઇન્સ્ટોલ કરેલ ચેટ પ્લગિન્સ સાથે
+    સુસંગતતાને તોડી શકે છે.
+  wwcVaultChatProviderFound: 'વૉલ્ટ ચેટ પ્રદાતા મળ્યો: {0}.'
+  wwcNoVaultChatProvider: વૉલ્ટ ઇન્સ્ટોલ કરેલ છે, પરંતુ કોઈ સપોર્ટેડ ચેટ પ્રોવાઇડર
+    શોધી શકાયો નથી.
+  wwcConfigEventPrioritySet: ચેટ સાંભળનાર ઇવેન્ટ અગ્રતા {0} પર સેટ કરો.
+  wwcConfigEventPriorityInvalid: config.yml માં અમાન્ય ચેટ સાંભળનાર ઇવેન્ટ અગ્રતા.
+    {0} પર ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcConfigGUIChatListenerPriorityButton: ચેટ ઇવેન્ટ સાંભળનાર અગ્રતા બદલો
+  wwcConfigConversationChatPriorityBadInput: ખરાબ ચેટ અગ્રતા ઇનપુટ! કૃપા કરીને ફરીથી
+    પ્રયાસ કરો.
+  wwcConfigConversationChatPrioritySuccess: સફળતાપૂર્વક તમારી ચેટ ઇવેન્ટ અગ્રતા સેટ
+    કરો.
+  wwcConfigVaultSupportInvalid: config.yml માં અમાન્ય તિજોરી સપોર્ટ સેટ છે. સાચા પર
+    ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcWatsonDeprecation: વોટસનને અધિક કરવામાં આવ્યું છે અને હવે આઇબીએમ દ્વારા સમર્થિત
+    નથી. કૃપા કરીને સ્વિચિંગ કરવાનું વિચારો, કારણ કે તે માટેનો સપોર્ટ આગામી અપડેટમાં
+    દૂર કરવામાં આવશે.
+  wwcConfigForceChatChannelEnabled: બધા અનુવાદો દરમિયાન એક અલગ અનુવાદ ચેનલ ફરજ પાડવામાં
+    આવશે.
+  wwcConfigConversationSeparateChatChannelForceSuccess: સફળતાપૂર્વક અલગ ચેનલને દબાણ
+    કરીને ટૉગલ કર્યું.
+  wwcConfigConversationChannelIconInput: અલગ અનુવાદ ચેનલ માટેનું વર્તમાન ચિહ્ન {0}
+    છે. રંગ કોડ સપોર્ટેડ છે; પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigConversationChatPriorityInput: 'વર્તમાન ચેટ ઇવેન્ટ અગ્રતા {0} છે. ટાઇપ
+    કરો 0 પાછા પર જાઓ અથવા માન્ય પ્રાથમિકતાઓની આ સૂચિમાંથી પસંદ કરો: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: અલગ ચેનલ ફોર્મેટ બદલો
+  wwcConfigConversationChannelIconSuccess: સફળતાપૂર્વક તમારા ચેનલ ચિહ્નને બદલ્યું.
+  wwcConfigGUISeparateChatChannelIconButton: અલગ ચેનલ ચિહ્ન બદલો
+  wwcConfigConversationChatFormatSuccess: તમારું ફોર્મેટ સફળતાપૂર્વક બદલવામાં આવ્યું
+    છે.
+  wwcConfigGUISeparateChatChannelForceButton: ફોર્સ અલગ ચેનલ
+  wwcOrigHover: 'મૂળ સંદેશ: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: હોવર ટેક્સ્ટ તરીકે અનુવાદ
+    સાથે જોડાયેલ મૂળ આઉટગોઇંગ ચેટ સફળતાપૂર્વક ટૉગલ્ડ.
+  wwcConfigGUISendOutgoingHoverTextChatButton: હોવર ટેક્સ્ટ તરીકે મૂળ આઉટગોઇંગ સંદેશાઓ
+    ઉમેરો
+  wwcConfigPAPIInstalled: તમારા ચેટ ફોર્મેટ માટે પ્લેસહોલ્ડરAPI સપોર્ટ સક્ષમ કરવામાં
+    આવ્યો છે.
+  wwcConfigPAPINotInstalled: કસ્ટમ પ્લેસહોલ્ડર્સ તમારા ચેટ ફોર્મેટમાં શોધી કાઢવામાં
+    આવ્યા છે, પરંતુ પ્લેસહોલ્ડરAPI ઇન્સ્ટોલ કરેલું નથી. કૃપા કરીને ખાતરી કરો કે પ્લગઇન
+    લોડ થઈ ગયું છે અને સક્ષમ છે.
+  wwcConfigChatChannelIconInvalid: અમાન્ય ચેનલ ચિહ્ન શોધાયું. {0} પર ડિફોલ્ટ થઈ રહ્યું
+    છે...
+  wwcBlacklistBadFormat: તમારી બ્લેકલિસ્ટ સૂચિ તરીકે યોગ્ય રીતે ફોર્મેટ કરવામાં આવી
+    નથી. જ્યાં સુધી આ નિશ્ચિત ન થાય ત્યાં સુધી તેનો અમલ કરવામાં આવશે નહીં.
+  wwcBlacklistedMsg: તમારા સંદેશામાં પ્રતિબંધિત ભાષા શામેલ છે અને તેનું ભાષાંતર કરવામાં
+    આવ્યું નથી.
+  wwcBlacklistedMsgDetected: 'બ્લેકલિસ્ટેડ શબ્દ ({0}) શોધાયેલ: {1}'
+  wwcBlacklistLoaded: '{0} પ્રતિબંધિત શબ્દોની તમારી બ્લેકલિસ્ટ લોડ કરવામાં આવી છે.'
+  wwcConfigConversationAddBlacklist: તમે જે નવો શબ્દ ઉમેરવા માંગો છો તે દાખલ કરો,
+    અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: બ્લેકલિસ્ટમાંથી કાઢી નાખો
+  wwcConfigConversationBlacklistAddSuccess: બ્લેકલિસ્ટમાં સફળતાપૂર્વક એક નવો શબ્દ
+    ઉમેર્યો.
+  wwcConfigGUIMessagesModifyBlacklistButton: બ્લેકલિસ્ટમાં ફેરફાર કરો
+  wwcConfigGUIChatBlacklistButton: બ્લેકલિસ્ટ સક્ષમ કરો
+  wwcConfigConversationBlacklistDeletionSuccess: સફળતાપૂર્વક શબ્દ કાઢી નાખ્યો.
+  wwcConfigGUIChatChannelSettings: ચેટ ચેનલ રૂપરેખાંકન
+  wwcConfigGUIChatBlacklistSuccess: બ્લેકલિસ્ટને સફળતાપૂર્વક ટૉગલ કર્યું.
+  wwcConfigGUIChatMessagesBlacklistNewButton: નવો શબ્દ ઉમેરો
+  wwcConfigGUIChatChannelButton: ચેનલ સેટિંગ્સ અનુવાદ કરો
+  wwcConfigGUIBlacklistMessagesModify: ટર્મ ફેરફાર કરો ({0})
+  wwcConfigChatChannelFormatInvalid: અમાન્ય ચેનલ ફોર્મેટ શોધાયું. {0} પર ડિફોલ્ટ થઈ
+    રહ્યું છે...
+  wwcConfigConversationChannelFormatInput: 'અલગ ચેટ ચેનલ માટેનું વર્તમાન ફોર્મેટ {0}
+    છે. અમારી ડિફૉલ્ટ માન્યતાપ્રાપ્ત દલીલો જેમાં તમે શામેલ કરી શકો છો: {1}. જો તમારી
+    પાસે પ્લેસહોલ્ડરAPI છે, તો ખાતરી કરો કે તે ચલો તેના બદલે ટકાવારી (%) દ્વારા ઘેરાયેલા
+    છે. પાછા જવા માટે 0 લખો.'
+  wwcConfigGUIModifyBlacklistSettings: બ્લેકલિસ્ટમાં ફેરફાર કરો
+  wwcConfigGUINextPageButton: આગળનું પાનું
 

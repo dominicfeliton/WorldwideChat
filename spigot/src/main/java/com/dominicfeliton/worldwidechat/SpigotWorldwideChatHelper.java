@@ -2,11 +2,19 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import net.milkbowl.vault.chat.Chat;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitWorker;
+import org.bukkit.event.HandlerList;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChat.asyncTasksTimeoutSeconds;
 
@@ -18,17 +26,75 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     ServerAdapterFactory adapter = main.getServerFactory();
 
+    private final Queue<Listener> listenerQueue = new LinkedList<>();
+
+    // TODO: Make most of this logic common between us and Paper and derivs
+    @Override
+    public void checkVaultSupport() {
+        // Skip if config says so
+        if (!main.isVaultSupport()) {
+            main.setChat(null);
+            return;
+        };
+
+        // Check if vault is installed at all
+        if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
+            main.setChat(null);
+            main.getLogger().warning(refs.getMsg("wwcNoVaultPlugin", null));
+            return;
+        }
+
+        // Attempt to register vault chat
+        RegisteredServiceProvider<Chat> rsp = main.getServer().getServicesManager().getRegistration(Chat.class);
+        if (rsp != null && rsp.getProvider() != null) {
+            main.setChat(rsp.getProvider());
+            main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcVaultChatProviderFound", new String[] {rsp.getProvider().getName()}, null));
+        } else {
+            main.setChat(null);
+            main.getLogger().warning(refs.getMsg("wwcNoVaultChatProvider", null));
+        }
+    }
+
     @Override
     public void registerEventHandlers() {
+        // Unregister all previously registered listeners for this plugin
+        while (!listenerQueue.isEmpty()) {
+            Listener listener = listenerQueue.poll();
+            HandlerList.unregisterAll(listener);
+        }
+
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
-        pluginManager.registerEvents(new ChatListener(), main);
+        SpigotChatListener chat = new SpigotChatListener();
+        pluginManager.registerEvent(
+                AsyncPlayerChatEvent.class,
+                chat,
+                main.getChatPriority(),
+                (listener, event) -> {
+                    ((SpigotChatListener) listener).onPlayerChat((AsyncPlayerChatEvent) event);
+                },
+                main
+        );
+        listenerQueue.add(chat);
+
         if (adapter.getServerInfo().getValue().contains("1.2")) {
+            SignListener sign = new SignListener();
             pluginManager.registerEvents(new SignListener(), main);
+            listenerQueue.add(sign);
         }
-        pluginManager.registerEvents(new OnPlayerJoinListener(), main);
-        pluginManager.registerEvents(new TranslateInGameListener(), main);
-        pluginManager.registerEvents(new InventoryListener(), main);
+
+        OnPlayerJoinListener join = new OnPlayerJoinListener();
+        pluginManager.registerEvents(join, main);
+        listenerQueue.add(join);
+
+        TranslateInGameListener translate = new TranslateInGameListener();
+        pluginManager.registerEvents(translate, main);
+        listenerQueue.add(translate);
+
+        InventoryListener inv = new InventoryListener();
+        pluginManager.registerEvents(inv, main);
+        listenerQueue.add(inv);
+
         main.getLogger().info(ChatColor.LIGHT_PURPLE
                 + refs.getMsg("wwcListenersInitialized", null));
     }
@@ -36,6 +102,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void cleanupTasks(int taskID) {
         // Cancel + remove all tasks
+        // Remember that the scheduler is thread safe on Bukkit, dork
         main.getServer().getScheduler().cancelTasks(main);
 
         // Wait for completion + kill all background tasks
@@ -101,17 +168,17 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsync(Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(true, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(serverMustBeRunning, 0, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -130,7 +197,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -151,22 +218,22 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(true, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(serverMustBeRunning, 0, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -185,7 +252,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         if (!(in instanceof BukkitRunnable)) {
             refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
             return;
@@ -204,7 +271,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object schedulerObj) {
+    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 

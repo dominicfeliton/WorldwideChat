@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Badilisha Tafsiri ya Ishara
   wwcUpdaterOutOfDate: WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo jipya,
     {0}.
-  wwcConfigGUINextPageButton: Ukurasa unaofuata
   wwcConfigInvalidTranslatorSettings: Mipangilio batili translator! Tafadhali kuwawezesha
     translator moja tu katika config.yml yako.
   wwcConfigGUIQuitButton: Toka na Hifadhi Mabadiliko
@@ -603,4 +602,95 @@ Messages:
     kwa thamani hii.
   wwcRateNoConvoFolia: Haiwezi kuweka kikomo cha kiwango kupitia GUI kwenye Folia.
     Tafadhali tumia /wwctrl au /translateratelimit badala yake.
+  wwcInvalidTranslatorUser: WorldwideChat haipatikani kwa sasa. Tafadhali jaribu tena
+    baadaye au wasiliana na msimamizi wako kama hii inaendelea.
+  wwcCouldNotSaveOhNo: Haiwezi kuhifadhi data ya WorldwideChat... tafadhali hakikisha
+    kuwa chaguo lako la hifadhidata iliyochaguliwa/kuhifadhi ni thabiti!
+  wwcSyncUserDataComplete: Mafanikio ilihifadhiwa data ya mtumiaji kwa {0} {1}
+  wwcSyncUserDataStart: Kusawazisha data ya mtumiaji...
+  wwcdDebugEnvDisabled: Mazingira ya kufuta yamezimwa.
+  wwcdDebugEnvWarn: 'Kubadilisha mazingira ya utatuaji karibu haupendekezwi kamwe
+    isipokuwa unatengeneza programu-jalizi hiki/kuchunguza mdudu. Ikiwa bado unataka
+    kuendelea, andika yafuatayo: {0}'
+  wwclLangNotLoadedConsole: '{0} haiwezi kutumika wakati huu. Unaweza kujaribu kupakia
+    tena programu-jalizi ili kurekebisha hii, lakini ikiwa inaendelea tafadhali wasiliana
+    na msanidi programu.'
+  wwcdDebugEnvEnabled: Mazingira ya kufuta yamewezeshwa.
+  wwclLangNotLoaded: '{0} haiwezi kutumika wakati huu. Jaribu kutumia eneo tofauti
+    inayoungwa mkono: {1}'
+  wwcdDebugBadState: Amri hii ya kufuta haiwezi kuendeshwa wakati WorldwideChat haina
+    seti halali ya mtafsiri. Tafadhali jaribu tena baadaye.
+  wwcNoVaultOnFolia: Vault haiungwa mkono kwa sasa kwenye Folia. Hii inaweza kuvunja
+    utangamano na programu zingine za gumzo.
+  wwcNoVaultPlugin: Vault haijasakinishwa! Hii inaweza kuvunja utangamano na programu-jalizi
+    zingine za gumzo
+  wwcVaultChatProviderFound: 'Imepata mtoa huduma wa gumzo ya Vault: {0}.'
+  wwcNoVaultChatProvider: Vault imewekwa, lakini hakuna mtoa huduma ya mazungumzo
+    ambaye amegunduliwa.
+  wwcConfigEventPrioritySet: Weka kipaumbele cha tukio la kusikilizaji wa gumzo kwa
+    {0}
+  wwcConfigEventPriorityInvalid: Kipaumbele cha tukio la kusikilizaji wa gumzo halali
+    katika config.yml. Kubadilisha kuwa {0}...
+  wwcConfigGUIChatListenerPriorityButton: Badilisha Kipaumbele cha Msikilizaji
+  wwcConfigConversationChatPriorityBadInput: Ingizo mbaya ya kipaumbele cha gumzo
+    Tafadhali jaribu tena.
+  wwcConfigConversationChatPrioritySuccess: Kwa mafanikio kuweka kipaumbele chako
+    cha hafla
+  wwcConfigVaultSupportInvalid: Usaidizi usio sahihi uliowekwa katika config.yml.
+    Kuendelea kuwa kweli...
+  wwcWatsonDeprecation: Watson amepatiliwa na hauungwa mkono tena na IBM. Tafadhali
+    fikiria kubadilisha, kwani msaada wake utaondolewa katika sasisho linalofuata.
+  wwcConfigForceChatChannelEnabled: Kituo tofauti cha tafsiri kitalazimishwa wakati
+    wa tafsiri zote.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Imefanikiwa kubadilisha kulazimisha
+    kituo tofauti.
+  wwcConfigConversationChannelIconInput: Ikoni ya sasa ya kituo tofauti cha tafsiri
+    ni {0}. Nambari za rangi zinaungwa mkono; andika 0 ili kurudi nyuma.
+  wwcConfigConversationChatPriorityInput: 'Kipaumbele cha sasa cha tukio la mazungumzo
+    ni {0}. Andika 0 nenda nyuma au uchague kutoka kwenye orodha hii ya vipaumbele
+    halali: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Badilisha muundo wa Kituo tofauti
+  wwcConfigConversationChannelIconSuccess: Kwa mafanikio ilibadilisha ikoni yako ya
+    kituo
+  wwcConfigGUISeparateChatChannelIconButton: Badilisha Ikoni ya Kituo tofauti
+  wwcConfigConversationChatFormatSuccess: Muundo wako umebadilishwa kwa mafanikio.
+  wwcConfigGUISeparateChatChannelForceButton: Nguvu Kituo Tofauti
+  wwcOrigHover: 'Ujumbe wa awali: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Mazungumzo ya asili yanayotoka
+    imeambatanishwa na tafsiri kama maandishi ya hover ilibadilishwa
+  wwcConfigGUISendOutgoingHoverTextChatButton: Ongeza Ujumbe wa Asingi wa Utoka kama
+    Nakala ya Hover
+  wwcConfigPAPIInstalled: Usaidizi wa PlaceholderAPI umewezeshwa kwa muundo wako wa
+    gumzo.
+  wwcConfigPAPINotInstalled: Vifaa vya mahali maalum vimegunduliwa katika muundo wako
+    wa gumzo, lakini PlaceholderAPI haijasakinishwa. Tafadhali hakikisha kuwa programu-jalizi
+    imepakia na imewezeshwa.
+  wwcConfigChatChannelIconInvalid: Ikoni mbaya ya kituo iligunduliwa. Kubadilisha
+    kuwa {0}...
+  wwcBlacklistBadFormat: Orodha yako nyeusi haijaundwa vizuri kama orodha. Haitatekelezwa
+    hadi hii itakapowekwa.
+  wwcBlacklistedMsg: Ujumbe wako una lugha marufuku na haujatafsiriwa.
+  wwcBlacklistedMsgDetected: 'Neno iliyoorodheshwa nyeusi ({0}) liligunduliwa: {1}'
+  wwcBlacklistLoaded: Orodha yako nyeusi ya maneno yaliyopigwa marufuku ya {0} imepakia.
+  wwcConfigConversationAddBlacklist: Ingiza neno jipya ambalo ungependa kuongeza,
+    au andika 0 ili kurudi nyuma.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Futa kutoka kwenye orodha nyeusi
+  wwcConfigConversationBlacklistAddSuccess: Kwa mafanikio kuongeza neno jipya kwenye
+    orodha nyeusi.
+  wwcConfigGUIMessagesModifyBlacklistButton: Badilisha orodha nyeusi
+  wwcConfigGUIChatBlacklistButton: Wezesha orodha nyeusi
+  wwcConfigConversationBlacklistDeletionSuccess: Kwa mafanikio kufuta neno hilo.
+  wwcConfigGUIChatChannelSettings: Usanidi wa Kituo cha Gumzo
+  wwcConfigGUIChatBlacklistSuccess: Imefanikiwa kubadilisha orodha nyeusi.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Ongeza Neno Jipya
+  wwcConfigGUIChatChannelButton: Tafsiri Mipangilio ya Kituo
+  wwcConfigGUIBlacklistMessagesModify: Badilisha Muda ({0})
+  wwcConfigChatChannelFormatInvalid: Muundo mbaya wa kituo uligunduliwa. Kubadilisha
+    kuwa {0}...
+  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
+    ni {0}. Hoja zetu za default zinazotambuliwa ambazo unaweza kujumuisha: {1}. Ikiwa
+    una PlaceholderAPI, hakikisha vigezo hizo zimezungukwa na asilimia (%) badala
+    yake. Andika 0 ili kurudi nyuma.'
+  wwcConfigGUIModifyBlacklistSettings: Badilisha orodha nyeusi
+  wwcConfigGUINextPageButton: Ukurasa unaofuata
 

@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: سائن ترجمہ ٹوگل کریں
   wwcUpdaterOutOfDate: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. برائے مہربانی تازہ ترین ورژن،
     {0} میں اپ ڈیٹ کریں۔
-  wwcConfigGUINextPageButton: اگلا صفحہ
   wwcConfigInvalidTranslatorSettings: غلط مترجم کی ترتیبات! براہ کرم اپنے config.yml
     میں صرف ایک مترجم کو فعال کریں.
   wwcConfigGUIQuitButton: تبدیلی سے باہر نکلیں اور محفوظ کریں
@@ -609,4 +608,93 @@ Messages:
     بھی فعال ہیں۔ براہ کرم اس قدر کے لئے دستی طور پر ترمیم کرنے کی کوشش کریں۔
   wwcRateNoConvoFolia: فولیا پر جی یو آئی کے ذریعے شرح کی حد مقرر کرنے سے قاصر۔ براہ
     کرم اس کے بجائے /wwctrl یا /translateratelimit استعمال کریں۔
+  wwcInvalidTranslatorUser: فی الحال WorldwideChat دستیاب نہیں ہے۔ براہ کرم بعد میں
+    دوبارہ کوشش کریں یا اگر یہ برقرار ہے تو اپنے منتظم سے رابطہ
+  wwcCouldNotSaveOhNo: ورلڈ وائڈ چیٹ ڈیٹا کو محفوظ کرنے سے قاصر ہے... براہ کرم یقینی
+    بنائیں کہ آپ کا منتخب کردہ ڈیٹا بیس/اسٹوریج کا
+  wwcSyncUserDataComplete: صارف کا ڈیٹا کامیابی کے ساتھ {0} میں محفوظ کیا {1}
+  wwcSyncUserDataStart: صارف کے ڈیٹا کو ہم آہنگ کرنا...
+  wwcdDebugEnvDisabled: ڈیبگ ماحول کو غیر فعال کردیا گیا ہے۔
+  wwcdDebugEnvWarn: 'ڈیبگ ماحول کو ٹوگلنگ کرنے کی تقریبا کبھی بھی سفارش نہیں کی جاتی
+    ہے جب تک کہ آپ اس پلگ ان کو تیار کرنا/کسی بگ کی تفتیش اگر آپ اب بھی آگے بڑھنا
+    چاہتے ہیں تو، مندرجہ ذیل ٹائپ کریں: {0}'
+  wwclLangNotLoadedConsole: '{0} اس وقت استعمال نہیں کیا جاسکتا۔ آپ اسے ٹھیک کرنے
+    کے لئے پلگ ان کو دوبارہ لوڈ کرنے کی کوشش کر سکتے ہیں، لیکن اگر یہ برقرار ہے تو
+    براہ کرم ڈویلپر سے رابطہ کریں۔'
+  wwcdDebugEnvEnabled: ڈیبگ ماحول کو فعال کردیا گیا ہے۔
+  wwclLangNotLoaded: '{0} اس وقت استعمال نہیں کیا جاسکتا۔ ایک مختلف معاون لوکلائزیشن
+    استعمال کرنے کی کوشش کریں: {1}'
+  wwcdDebugBadState: یہ ڈیبگ کمانڈ چلائی نہیں جاسکتی جبکہ ورلڈ وائڈ چیٹ میں درست مترجم
+    سیٹ نہیں ہے۔ براہ کرم بعد میں دوبارہ کوشش کریں۔
+  wwcNoVaultOnFolia: فی الحال فولیا پر والٹ کی حمایت نہیں ہے۔ یہ دوسرے چیٹ پلگ ان
+    کے ساتھ مطابقت کو توڑ سکتا ہے۔
+  wwcNoVaultPlugin: والٹ انسٹال نہیں ہے! یہ دوسرے انسٹال کردہ چیٹ پلگ ان کے ساتھ مطابقت
+    کو توڑ سکتا ہے۔
+  wwcVaultChatProviderFound: 'والٹ چیٹ فراہم کنندہ ملا: {0}.'
+  wwcNoVaultChatProvider: والٹ انسٹال ہے، لیکن کسی معاون چیٹ فراہم کنندہ کا پتہ نہیں
+    چلا گیا ہے۔
+  wwcConfigEventPrioritySet: چیٹ سننے والے ایونٹ کی ترجیح {0} پر سیٹ کریں۔
+  wwcConfigEventPriorityInvalid: config.yml میں چیٹ سننے والے ایونٹ کی غلط ترجیح۔
+    {0} پر ڈیفالٹ ہو رہا ہے...
+  wwcConfigGUIChatListenerPriorityButton: چیٹ ایونٹ سننے والی ترجیح تبدیل کریں
+  wwcConfigConversationChatPriorityBadInput: خراب چیٹ ترجیحی ان پٹ! براہ کرم دوبارہ
+    کوشش کریں۔
+  wwcConfigConversationChatPrioritySuccess: کامیابی کے ساتھ اپنے چیٹ ایونٹ کی ترجیح
+    طے
+  wwcConfigVaultSupportInvalid: config.yml میں غلط والٹ سپورٹ سیٹ ہے۔ سچ میں ڈیفالٹ
+    ہونا...
+  wwcWatsonDeprecation: واٹسن کو مسترد کردیا گیا ہے اور اب آئی بی ایم کے ذریعہ اس
+    کی حمایت نہیں ہے۔ براہ کرم سوئچنگ پر غور کریں، کیونکہ اگلی تازہ کاری میں اس کی
+    حمایت کو ہٹا دیا جائے گا۔
+  wwcConfigForceChatChannelEnabled: تمام ترجموں کے دوران ایک علیحدہ ترجمہ چینل پر
+    مجبور کیا جائے گا۔
+  wwcConfigConversationSeparateChatChannelForceSuccess: کامیابی کے ساتھ علیحدہ چینل
+    پر مجبور کردیا۔
+  wwcConfigConversationChannelIconInput: علیحدہ ترجمہ چینل کے لئے موجودہ آئیکن {0}
+    ہے۔ رنگ کوڈز کی حمایت کی جاتی ہے۔ واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationChatPriorityInput: 'موجودہ چیٹ ایونٹ کی ترجیح {0} ہے۔ ٹائپ
+    کریں 0 واپس جائیں یا درست ترجیحات کی اس فہرست میں سے منتخب کریں: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: الگ چینل فارمیٹ تبدیل کریں
+  wwcConfigConversationChannelIconSuccess: کامیابی کے ساتھ آپ کے چینل کا آئیکن تبدیل
+  wwcConfigGUISeparateChatChannelIconButton: الگ چینل آئیکن تبدیل کریں
+  wwcConfigConversationChatFormatSuccess: آپ کا فارمیٹ کامیابی کے ساتھ تبدیل کیا گیا
+    ہے۔
+  wwcConfigGUISeparateChatChannelForceButton: فورس الگ چینل
+  wwcOrigHover: 'اصل پیغام: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: اصل باہر نکلنے والی چیٹ ترجمہ
+    کے ساتھ منسلک ہوور ٹیکسٹ کامیابی کے ساتھ ٹوگ ہو
+  wwcConfigGUISendOutgoingHoverTextChatButton: ہوور ٹیکسٹ کے طور پر اصل باہر جانے
+    والے پیغامات شامل کریں
+  wwcConfigPAPIInstalled: آپ کے چیٹ فارمیٹ کے لئے PlaceHolderAPI سپورٹ کو فعال کیا
+    گیا ہے۔
+  wwcConfigPAPINotInstalled: آپ کے چیٹ فارمیٹ میں کسٹم پلیس ہولڈرز کا پتہ چلا ہے،
+    لیکن PlaceHolderAPI انسٹال نہیں ہے۔ براہ کرم یقینی بنائیں کہ پلگ ان لوڈ ہوا ہے
+    اور فعال ہے۔
+  wwcConfigChatChannelIconInvalid: غلط چینل آئیکن کا پتہ {0} پر ڈیفالٹ ہو رہا ہے...
+  wwcBlacklistBadFormat: آپ کی بلیک لسٹ کو فہرست کے طور پر مناسب طریقے سے فارمیٹ نہیں
+    کیا گیا ہے۔ جب تک یہ طے نہیں ہوجائے گا اس وقت تک اس پر عمل درآمد نہیں کیا جائے
+    گا۔
+  wwcBlacklistedMsg: آپ کے پیغام میں ممنوع زبان ہے اور اس کا ترجمہ نہیں کیا گیا تھا۔
+  wwcBlacklistedMsgDetected: 'بلیک لسٹ کردہ لفظ ({0}) کا پتہ چلا: {1}'
+  wwcBlacklistLoaded: '{0} پر پابندی عائد الفاظ کی آپ کی بلیک لسٹ لوڈ ہوگئی ہے۔'
+  wwcConfigConversationAddBlacklist: وہ نئی اصطلاح درج کریں جسے آپ شامل کرنا چاہتے
+    ہیں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: بلیک لسٹ سے حذف کریں
+  wwcConfigConversationBlacklistAddSuccess: کامیابی کے ساتھ بلیک لسٹ میں ایک نئی اصطلاح
+    شامل کی۔
+  wwcConfigGUIMessagesModifyBlacklistButton: بلیک لسٹ میں تبدیلی کریں
+  wwcConfigGUIChatBlacklistButton: بلیک لسٹ کو فعال کریں
+  wwcConfigConversationBlacklistDeletionSuccess: اصطلاح کو کامیابی کے ساتھ حذف
+  wwcConfigGUIChatChannelSettings: چیٹ چینل کی تشکیل
+  wwcConfigGUIChatBlacklistSuccess: کامیابی کے ساتھ بلیک لسٹ کو ٹوگل کیا گیا۔
+  wwcConfigGUIChatMessagesBlacklistNewButton: نیا لفظ شامل کریں
+  wwcConfigGUIChatChannelButton: چینل ترتیبات کا ترجم
+  wwcConfigGUIBlacklistMessagesModify: اصطلاح میں ترمیم کریں ({0})
+  wwcConfigChatChannelFormatInvalid: غلط چینل فارمیٹ کا پتہ {0} پر ڈیفالٹ ہو رہا ہے...
+  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
+    ہے۔ ہمارے پہلے سے طے شدہ تسلیم شدہ دلائل جن میں آپ شامل کرسکتے ہیں: {1}. اگر آپ
+    کے پاس PlaceHolderAPI ہے تو، اس بات کو یقینی بنائیں کہ ان متغیرات اس کے بجائے
+    فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے 0 ٹائپ کریں۔'
+  wwcConfigGUIModifyBlacklistSettings: بلیک لسٹ میں تبدیلی کریں
+  wwcConfigGUINextPageButton: اگلا صفحہ
 

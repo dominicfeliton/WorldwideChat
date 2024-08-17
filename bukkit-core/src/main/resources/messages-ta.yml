@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: மாற்று சைகை மொழிபெயர்ப்பு
   wwcUpdaterOutOfDate: WorldWideSat தேதி இல்லை. தயவுசெய்து சமீபத்திய பதிப்பு, {0}
     க்கு புதுப்பிக்கவும்.
-  wwcConfigGUINextPageButton: அடுத்த பக்கம்
   wwcConfigInvalidTranslatorSettings: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள்! உங்கள் config.yml
     ஒரே ஒரு மொழிபெயர்ப்பாளர் செயல்படுத்த கொள்ளவும்.
   wwcConfigGUIQuitButton: மாற்றங்களை வெளியேறவும் சேமிக்கவும்
@@ -633,4 +632,91 @@ Messages:
     மாற்ற முயற்சிக்கவும்.
   wwcRateNoConvoFolia: ஃபோலியாவில் GUI வழியாக விகித வரம்பை அமைக்க முடியவில்லை. அதற்கு
     பதிலாக /wwctrl அல்லது /translateratelimit ஐப் பயன்படுத்தவும்.
+  wwcInvalidTranslatorUser: WorldwideChat தற்சமயம் கிடைக்காது. பின்னர் மீண்டும் முயற்சிக்கவும்
+    அல்லது இது தொடர்ந்தால் உங்கள் நிர்வாகியைத் தொடர்பு கொள்ளவும்
+  wwcCouldNotSaveOhNo: WorldwideChat தரவைச் சேமிக்க முடியவில்லை... நீங்கள் தேர்ந்தெடுத்த
+    தரவுத்தளம்/சேமிப்பக விருப்பம் நிலையானது என்பதை உறுதிப்படுத்தவும்!
+  wwcSyncUserDataComplete: பயனர் தரவை வெற்றிகரமாக {0} க்கு சேமித்தது. {1}
+  wwcSyncUserDataStart: பயனர் தரவை ஒத்திசைப்பது...
+  wwcdDebugEnvDisabled: பிழைத்திருத்தச் சூழல் முடக்கப்பட்டுள்ளது.
+  wwcdDebugEnvWarn: 'நீங்கள் இந்த பிளக்கினை உருவாக்குகிறீர்கள்/பிழையை விசாரிக்காவிட்டால்
+    பிழைத்திருத்தம் சூழலை மாற்றுவது கிட்டத்தட்ட ஒருபோதும் பரிந்துரைக்கப்படவில்லை.
+    நீங்கள் இன்னும் தொடர விரும்பினால், பின்வருவனவற்றைத் தட்டச்சு செய்க: {0}'
+  wwclLangNotLoadedConsole: '{0} இப்போது பயன்படுத்த முடியாது. இதை சரிசெய்ய சொருகியை
+    மீண்டும் ஏற்ற முயற்சி செய்யலாம், ஆனால் அது தொடர்ந்தால் தயவுசெய்து டெவலப்பரைத்
+    தொடர்பு கொள்ளவும்.'
+  wwcdDebugEnvEnabled: பிழைத்திருத்தம் சூழல் இயக்கப்பட்டுள்ளது.
+  wwclLangNotLoaded: இந்த நேரத்தில் {0} பயன்படுத்த முடியாது. வேறுபட்ட ஆதரிக்கப்படும்
+    உள்ளூர்மயமாக்கலைப் பயன்படுத்த {1}
+  wwcdDebugBadState: WorldwideChat சரியான மொழிபெயர்ப்பாளர் தொகுப்பு இல்லாதபோது இந்த
+    பிழைத்திருத்தம் கட்டளையை இயக்க முடியாது. பின்னர் மீண்டும் முயற்சிக்கவும்.
+  wwcNoVaultOnFolia: Folia இல் Vault தற்போது ஆதரிக்கப்படவில்லை. இது மற்ற அரட்டை செருகிகளுடன்
+    பொருந்தக்கூடிய தன்மையை உடைக்கலாம்
+  wwcNoVaultPlugin: வால்ட் நிறுவப்படவில்லை! இது நிறுவப்பட்ட மற்ற அரட்டை செருகிகளுடன்
+    பொருந்தக்கூடிய தன்மையை உடைக்கலாம்
+  wwcVaultChatProviderFound: 'வால்ட் அரட்டை வழங்குநரைக் கண்டுபிடித்தது: {0}.'
+  wwcNoVaultChatProvider: வோல்ட் நிறுவப்பட்டுள்ளது, ஆனால் ஆதரிக்கப்படும் அரட்டை வழங்குநர்
+    எதுவும் கண்டறியப்படவில்லை.
+  wwcConfigEventPrioritySet: அரட்டை கேட்பவர் நிகழ்வு முன்னுரிமை {0} ஆக அமைக்கவும்
+  wwcConfigEventPriorityInvalid: config.yml இல் தவறான அரட்டை கேட்பவர் நிகழ்வு முன்னுரிமை.
+    {0} ஆக இயல்பாதது...
+  wwcConfigGUIChatListenerPriorityButton: அரட்டை நிகழ்வு கேட்பவர் முன்னுரிமை
+  wwcConfigConversationChatPriorityBadInput: மோசமான அரட்டை முன்னுரிமை உள்ளீடு! மீண்டும்
+    முயற்சிக்கவும்.
+  wwcConfigConversationChatPrioritySuccess: உங்கள் அரட்டை நிகழ்வு முன்னுரிமையை வெற்றிகரமாகக்
+  wwcConfigVaultSupportInvalid: config.yml இல் செல்லப்படாத வோல்ட் ஆதரவு அமைக்கப்பட்டுள்ளது.
+    உண்மையாக இயல்பாதது...
+  wwcWatsonDeprecation: வாட்சன் விலக்கப்பட்டு இனி ஐபிஎம் ஆதரிக்கப்படவில்லை. தயவுசெய்து
+    மாறுவதைக் கவனியுங்கள், ஏனெனில் அடுத்த புதுப்பிப்பில் அதற்கான ஆதரவு அகற்றப்படும்.
+  wwcConfigForceChatChannelEnabled: அனைத்து மொழிபெயர்ப்புகளின் போது தனி மொழிபெயர்ப்பு
+    சேனல் கட்டாயப்படுத்தப்படும்.
+  wwcConfigConversationSeparateChatChannelForceSuccess: வெற்றிகரமாக தனி சேனலை கட்டாயப்படுத்தியது.
+  wwcConfigConversationChannelIconInput: தனி மொழிபெயர்ப்பு சேனலுக்கான தற்போதைய ஐகான்
+    {0} ஆகும். வண்ணக் குறியீடுகள் ஆதரிக்கப்படுகின்றன; திரும்பிச் செல்ல 0 ஐ தட்டச்ச
+  wwcConfigConversationChatPriorityInput: 'தற்போதைய அரட்டை நிகழ்வு முன்னுரிமை {0}
+    ஆகும். 0 ஐ தட்டச்சு செய்க பின்னுச் செல்லவும் அல்லது சரியான முன்னுரிமைகளின் பட்டியலிலிருந்து
+    தேர்வு செய்யவும்: {1}'
+  wwcConfigGUISeparateChatChannelFormatButton: தனி சேனல் வடிவமைப்பை மாற்றவும்
+  wwcConfigConversationChannelIconSuccess: உங்கள் சேனல் ஐகானை வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigGUISeparateChatChannelIconButton: தனி சேனல் ஐகானை மாற்றவும்
+  wwcConfigConversationChatFormatSuccess: உங்கள் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
+  wwcConfigGUISeparateChatChannelForceButton: ஃபோர்ஸ் தனி சேனல்
+  wwcOrigHover: 'அசல் செய்தி: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: மொழிபெயர்ப்புடன் இணைக்கப்பட்ட
+    அசல் வெளியேறும் அரட்டை ஹோவர் உரை வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigGUISendOutgoingHoverTextChatButton: அசல் வெளிச்செல்லும் செய்திகளை ஹோவர்
+    உரையாக
+  wwcConfigPAPIInstalled: உங்கள் அரட்டை வடிவமைப்பிற்கு PlaceholderAPI ஆதரவு இயக்கப்பட்டுள்ளது.
+  wwcConfigPAPINotInstalled: உங்கள் அரட்டை வடிவத்தில் தனிப்பயன் இடக்காரர்கள் கண்டறியப்பட்டுள்ளன,
+    ஆனால் PlaceholderAPI நிறுவப்படவில்லை. சொருகி ஏற்றப்பட்டு இயக்கப்பட்டுள்ளதா என்பதை
+    உறுதிப்படுத்தவும்.
+  wwcConfigChatChannelIconInvalid: செல்லாத சேனல் ஐகான் கண்டறியப்பட்டது {0} ஆக இயல்பாதது...
+  wwcBlacklistBadFormat: உங்கள் கருப்புபட்டியல் ஒரு பட்டியலாக சரியாக வடிவமைக்கப்படவில்லை.
+    இது சரி செய்யப்படும் வரை அது செயல்படுத்தப்படாது.
+  wwcBlacklistedMsg: உங்கள் செய்தியில் தடைசெய்யப்பட்ட மொழி உள்ளது மற்றும் மொழிபெயர்க்கப்படவில்லை.
+  wwcBlacklistedMsgDetected: 'கருப்பு பட்டியலில் பட்டியலிடப்பட்ட சொல் ({0}) கண்டறியப்பட்டது:
+    {1}'
+  wwcBlacklistLoaded: '{0} தடைசெய்யப்பட்ட சொற்களின் உங்கள் கருப்புபட்டியல் ஏற்றப்பட்டுள்ளது.'
+  wwcConfigConversationAddBlacklist: நீங்கள் சேர்க்க விரும்பும் புதிய சொல்லை உள்ளிடவும்
+    அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: பிளாக்லிஸ்டில் இருந்து நீக்கு
+  wwcConfigConversationBlacklistAddSuccess: கறுப்புப் பட்டியலில் ஒரு புதிய சொல்லை
+    வெற்றிகரமாக சேர்த்தது.
+  wwcConfigGUIMessagesModifyBlacklistButton: கருப்புபட்டியலை மாற்றவும்
+  wwcConfigGUIChatBlacklistButton: கருப்புபட்டியலை இயக்கு
+  wwcConfigConversationBlacklistDeletionSuccess: வார்த்தையை வெற்றிகரமாக நீக்கினார்.
+  wwcConfigGUIChatChannelSettings: அரட்டை சேனல் உள்ளமைவு
+  wwcConfigGUIChatBlacklistSuccess: கறுப்புப் பட்டியலை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUIChatMessagesBlacklistNewButton: புதிய வார்த்தையைச் சேர்க்கவும்
+  wwcConfigGUIChatChannelButton: சேனல் அமைப்புகளை மொழி
+  wwcConfigGUIBlacklistMessagesModify: காலத்தை மாற்றவும் ({0})
+  wwcConfigChatChannelFormatInvalid: செல்லாத சேனல் வடிவம் கண்டறியப்பட்டது. {0} ஆக
+    இயல்பாதது...
+  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
+    {0} ஆகும். நீங்கள் சேர்க்கக்கூடிய எங்கள் இயல்புநிலை அங்கீகரிக்கப்பட்ட வாதங்கள்:
+    {1}. உங்களிடம் PlaceholderAPI இருந்தால், அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால்
+    (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு
+    செய்க.'
+  wwcConfigGUIModifyBlacklistSettings: கருப்புபட்டியலை மாற்றவும்
+  wwcConfigGUINextPageButton: அடுத்த பக்கம்
 

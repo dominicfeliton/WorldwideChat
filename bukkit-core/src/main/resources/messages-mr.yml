@@ -196,7 +196,6 @@ Messages:
   wwcConfigGUIChangesNotSaved: आपण /wwcc मध्ये लाल अडथळा क्लिक करेपर्यंत आपले बदल
     प्रभावी होणार नाहीत.
   wwcBookTranslateTitleSuccess: 'भाषांतरित पुस्तकाचे शीर्षक: {0}'
-  wwcConfigGUINextPageButton: पुढील पृष्ठ
   wwctiOnSender: आयटम अनुवाद सक्षम. त्याचे भाषांतर करण्यासाठी आपल्या मुख्य हातात असलेल्या
     आयटमसह उजवे-क्लिक करा!
   wwcConfigGUIMessagesOverrideOriginalLabel: मूळ संदेश
@@ -589,4 +588,79 @@ Messages:
     टॉगल अजूनही कार्य कृपया या मूल्यासाठी स्वयंचलितपणे कॉन्फिगरेश
   wwcRateNoConvoFolia: फोलिया वरील जीयूआयद्वारे दर मर्यादा सेट कृपया त्याऐवजी /wwctrl
     किंवा /translateratelimit वापरा.
+  wwcInvalidTranslatorUser: WorldwideChat या वेळेला उपलब्ध नाही. कृपया नंतर पुन्हा
+    प्रयत्न करा किंवा हे कायम राहिल्यास आपल्या
+  wwcCouldNotSaveOhNo: वर्ल्डविडचॅट डेटा जतन करण्यात अक्षम... कृपया आपला निवडलेला
+    डेटाबेस/स्टोरेज पर्याय
+  wwcSyncUserDataComplete: यशस्वीरित्या वापरकर्त्याचा डेटा {0} {1}
+  wwcSyncUserDataStart: वापरकर्ता डेटा सिंक करणे
+  wwcdDebugEnvDisabled: डीबग वातावरण अक्षम केले गेले आहे.
+  wwcdDebugEnvWarn: 'आपण हे प्लगइन विकसित करीता/बग तपासणी करत नसल्याशिवाय डीबग वातावरण
+    टॉगल करण्याची शिफ आपल्याला अद्याप पुढे जायचे असल्यास, खालील टाइप करा: {0}'
+  wwclLangNotLoadedConsole: '{0} यावेळी वापरला जाऊ शकत नाही. हे निराकरण करण्यासाठी
+    आपण प्लगइन रीलोड करण्याचा प्रयत्न करू शकता, परंतु ते कायम राहिल्यास कृपया'
+  wwcdDebugEnvEnabled: डीबग वातावरण सक्षम केले गेले आहे.
+  wwclLangNotLoaded: '{0} यावेळी वापरला जाऊ शकत नाही. वेगळे समर्थित स्थानिकीकरण वापरण्याचा
+    {1}'
+  wwcdDebugBadState: वर्ल्डविडचॅटमध्ये वैध अनुवादक सेट नसताना ही डीबग कमांड चालवली
+    जाऊ शकत नाही. नंतर पुन्हा प्रयत्न करा.
+  wwcNoVaultOnFolia: फोलियावर व्हॉल्ट सध्या समर्थित नाही. हे इतर चॅट प्लगइनसह सुसंगतता
+    तुटू
+  wwcNoVaultPlugin: व्हॉल्ट स्थापित नाही! हे इतर स्थापित चॅट प्लगइनसह सुसंगतता तु
+  wwcVaultChatProviderFound: 'व्हॉल्ट चॅट प्रदाता सापडला: {0}.'
+  wwcNoVaultChatProvider: व्हॉल्ट स्थापित आहे, परंतु कोणताही समर्थित चॅट प्रदाता
+  wwcConfigEventPrioritySet: चॅट श्रोनर इव्हेंट प्राधान्य {0}
+  wwcConfigEventPriorityInvalid: config.yml मध्ये अवैध चॅट श्रोता इव्हेंट प्राधान्
+    {0} वर डीफॉल्ट करणे...
+  wwcConfigGUIChatListenerPriorityButton: चॅट इव्हेंट शोपणाच्या
+  wwcConfigConversationChatPriorityBadInput: खराब गप्पा प्राधान्य पुन्हा प्रयत्न करा.
+  wwcConfigConversationChatPrioritySuccess: आपले चॅट इव्हेंट प्राधान्य य
+  wwcConfigVaultSupportInvalid: config.yml मध्ये अवैध वॉल्ट समर्थन सेट केले आहे. खरे
+    म्हणून डीफॉल्ट करणे...
+  wwcWatsonDeprecation: वॉटसन नष्ट केले गेले आहे आणि आता आयबीएमने समर्थित नाही. कृपया
+    स्विच करण्याचा विचार करा, कारण पुढील अद्यतनात त्यासाठी समर्थन काढून
+  wwcConfigForceChatChannelEnabled: सर्व भाषांतर दरम्यान एक स्वतंत्र भाषांतर चॅनेल
+  wwcConfigConversationSeparateChatChannelForceSuccess: यशस्वीरित्या स्वतंत्र चॅनेलला
+    जब
+  wwcConfigConversationChannelIconInput: स्वतंत्र भाषांतर चॅनेलसाठी वर्तमान चिन्ह
+    {0} आहे. रंग कोड समर्थित आहेत; परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationChatPriorityInput: 'सध्याची चॅट इव्हेंट प्राधान्य {0} 0 टाइप
+    करा परत जा किंवा वैध प्राधान्यांच्या या यादीमधून निवडा: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: स्वतंत्र चॅनेल स्वर
+  wwcConfigConversationChannelIconSuccess: आपले चॅनेल चिन्ह यशस्वीरि
+  wwcConfigGUISeparateChatChannelIconButton: स्वतंत्र चॅनेल आय
+  wwcConfigConversationChatFormatSuccess: आपले स्वरूप यशस्वीरित्या बदलले
+  wwcConfigGUISeparateChatChannelForceButton: स्वतंत्र चॅनेल
+  wwcOrigHover: 'मूळ संदेश: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: हॉवर मजकूर म्हणून अनुवादाशी
+    जोडलेले मूळ आउटगोग
+  wwcConfigGUISendOutgoingHoverTextChatButton: होव्हर मजकूर म्हणून मूळ आउटगोग
+  wwcConfigPAPIInstalled: तुमच्या चॅट स्वरूपासाठी प्लेसहोल्डरएपीआय समर्थन
+  wwcConfigPAPINotInstalled: आपल्या चॅट स्वरूपात सानुकूल प्लेसहोल्डर आढळले आहेत, परंतु
+    प्लेसहोल्डरएपी कृपया प्लगइन लोड झाला आणि सक्षम आहे याची खात्री करा
+  wwcConfigChatChannelIconInvalid: अवैध चॅनेल आयकॉन {0} वर डीफॉल्ट करणे...
+  wwcBlacklistBadFormat: आपली ब्लॅकलिस्ट सूची म्हणून योग्यरित्या फॉरमॅट केल हे निश्चित
+    होईपर्यंत ते लागू केले जाणार नाही.
+  wwcBlacklistedMsg: आपल्या संदेशात प्रतिबंधित भाषा आहे आणि त्याचे भाषांतर
+  wwcBlacklistedMsgDetected: 'ब्लॅकलिस्टीड शब्द ({0}) सापडला: {1}'
+  wwcBlacklistLoaded: '{0} बंदित शब्दांची आपली ब्लॅकलिस्ट लोड झाली आहे'
+  wwcConfigConversationAddBlacklist: आपण जोडू इच्छित नवीन शब्द प्रविष्ट करा किंवा
+    परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ब्लॅकलिस्टमधून हटवा
+  wwcConfigConversationBlacklistAddSuccess: ब्लॅकलिस्टमध्ये यशस्वीरित्या नवीन शब्द
+    जोड
+  wwcConfigGUIMessagesModifyBlacklistButton: ब्लॅकलिस्ट बद
+  wwcConfigGUIChatBlacklistButton: ब्लॅकलिस्ट सक्ष
+  wwcConfigConversationBlacklistDeletionSuccess: शब्द यशस्वीरित्या हटवि
+  wwcConfigGUIChatChannelSettings: चॅट चॅनेल कॉ
+  wwcConfigGUIChatBlacklistSuccess: यशस्वीरित्या ब्लॅकलिस्ट टॉग
+  wwcConfigGUIChatMessagesBlacklistNewButton: नवीन वर्ड जोडा
+  wwcConfigGUIChatChannelButton: चॅनेल सेटिंग्ज
+  wwcConfigGUIBlacklistMessagesModify: टर्म सुधारित करा ({0})
+  wwcConfigChatChannelFormatInvalid: अवैध चॅनेल फॉरमॅ {0} वर डीफॉल्ट करणे...
+  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
+    आहे. आपण समाविष्ट करू शकणाऱ्या आमचे डीफॉल्ट मान्यता {1} आपल्याकडे प्लेसहोल्डरएपीआय
+    असल्यास, त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIModifyBlacklistSettings: ब्लॅकलिस्ट बद
+  wwcConfigGUINextPageButton: पुढील पृष्ठ
 

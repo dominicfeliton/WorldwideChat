@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Przełącz tłumaczenie podpisu
   wwcUpdaterOutOfDate: WorldwideChat jest nieaktualne. Zaktualizuj do najnowszej wersji,
     {0}.
-  wwcConfigGUINextPageButton: Następna strona
   wwcConfigInvalidTranslatorSettings: Nieprawidłowe ustawienia tłumacza! Proszę włączyć
     tylko jednego tłumacza w config.yml.
   wwcConfigGUIQuitButton: Zakończ i zapisz zmiany
@@ -609,4 +608,91 @@ Messages:
     nadal działają. Spróbuj ręcznie zmodyfikować konfigurację dla tej wartości.
   wwcRateNoConvoFolia: Nie można ustawić limitu szybkości za pomocą interfejsu użytkownika
     na Folia. Zamiast tego użyj /wwctrl lub /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat jest obecnie niedostępny. Spróbuj ponownie
+    później lub skontaktuj się z administratorem, jeśli to się powtarza.
+  wwcCouldNotSaveOhNo: Nie można zapisać danych WorldwideChat... upewnij się, że wybrana
+    opcja bazy danych/pamięci masowej jest stabilna!
+  wwcSyncUserDataComplete: Pomyślnie zapisano dane użytkownika w {0}. {1}
+  wwcSyncUserDataStart: Synchronizowanie danych użytkownika...
+  wwcdDebugEnvDisabled: Środowisko debugowania zostało wyłączone.
+  wwcdDebugEnvWarn: 'Przełączanie środowiska debugowania prawie nigdy nie jest zalecane,
+    chyba że rozwijasz tę wtyczkę/badasz błąd. Jeśli nadal chcesz kontynuować, wpisz
+    następujące polecenie: {0}'
+  wwclLangNotLoadedConsole: '{0} nie może być użyty w tej chwili. Możesz spróbować
+    ponownie załadować wtyczkę, aby to naprawić, ale jeśli nadal będzie działać, skontaktuj
+    się z programistą.'
+  wwcdDebugEnvEnabled: Środowisko debugowania zostało włączone.
+  wwclLangNotLoaded: '{0} nie może być użyty w tej chwili. Spróbuj użyć innej obsługiwanej
+    lokalizacji: {1}'
+  wwcdDebugBadState: Tego polecenia debugowania nie można uruchomić, gdy WorldwideChat
+    nie ma prawidłowego zestawu tłumacza. Spróbuj ponownie później.
+  wwcNoVaultOnFolia: Vault nie jest obecnie obsługiwany w programie Folia. Może to
+    zakłócić kompatybilność z innymi wtyczkami do czatu.
+  wwcNoVaultPlugin: Vault nie jest zainstalowany! Może to zakłócić kompatybilność
+    z innymi zainstalowanymi wtyczkami czatu.
+  wwcVaultChatProviderFound: 'Znaleziono dostawcę czatu Vault: {0}.'
+  wwcNoVaultChatProvider: Vault jest zainstalowany, ale nie wykryto obsługiwanego
+    dostawcy czatu.
+  wwcConfigEventPrioritySet: Ustaw priorytet zdarzenia słuchacza czatu na {0}.
+  wwcConfigEventPriorityInvalid: Nieprawidłowy priorytet zdarzenia słuchacza czatu
+    w config.yml. Domyślnie ustawienie {0}...
+  wwcConfigGUIChatListenerPriorityButton: Zmień priorytet słuchacza zdarzeń czatu
+  wwcConfigConversationChatPriorityBadInput: Złe wprowadzanie priorytetów czatu! Spróbuj
+    ponownie.
+  wwcConfigConversationChatPrioritySuccess: Pomyślnie ustaw priorytet wydarzenia czatu.
+  wwcConfigVaultSupportInvalid: Nieprawidłowa obsługa repozytorium ustawiona w config.yml.
+    Domyślnie wartość true...
+  wwcWatsonDeprecation: Watson został przestarzały i nie jest już obsługiwany przez
+    IBM. Rozważ zmianę, ponieważ obsługa zostanie usunięta w następnej aktualizacji.
+  wwcConfigForceChatChannelEnabled: Podczas wszystkich tłumaczeń wymuszony będzie
+    oddzielny kanał tłumaczeń.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Pomyślnie przełączono wymuszanie
+    oddzielnego kanału.
+  wwcConfigConversationChannelIconInput: Aktualna ikona oddzielnego kanału tłumaczenia
+    to {0}. Obsługiwane są kody kolorów; wpisz 0, aby wrócić.
+  wwcConfigConversationChatPriorityInput: 'Aktualny priorytet wydarzenia czatu to
+    {0}. Wpisz 0 przejdź do powrotu lub wybierz z tej listy prawidłowych priorytetów:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Zmień format oddzielnego kanału
+  wwcConfigConversationChannelIconSuccess: Pomyślnie zmieniono ikonę kanału.
+  wwcConfigGUISeparateChatChannelIconButton: Zmień ikonę oddzielnego kanału
+  wwcConfigConversationChatFormatSuccess: Twój format został pomyślnie zmieniony.
+  wwcConfigGUISeparateChatChannelForceButton: Wymuś oddzielny kanał
+  wwcOrigHover: 'Oryginalna wiadomość: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oryginalny czat wychodzący
+    dołączony do tłumaczenia jako tekst kursorem został pomyślnie przełączony.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Dodaj oryginalne wiadomości wychodzące
+    jako tekst Najedź
+  wwcConfigPAPIInstalled: Obsługa PlaceholderAPI została włączona dla Twojego formatu
+    czatu.
+  wwcConfigPAPINotInstalled: Niestandardowe symbole zastępcze zostały wykryte w formacie
+    czatu, ale PlaceholderAPI nie jest zainstalowany. Upewnij się, że wtyczka została
+    załadowana i jest włączona.
+  wwcConfigChatChannelIconInvalid: Wykryto nieprawidłową ikonę kanału. Domyślnie {0}...
+  wwcBlacklistBadFormat: Twoja czarna lista nie jest prawidłowo sformatowana jako
+    lista. Nie będzie ono egzekwowane, dopóki nie zostanie to naprawione.
+  wwcBlacklistedMsg: Twoja wiadomość zawiera zabroniony język i nie została przetłumaczona.
+  wwcBlacklistedMsgDetected: 'Wykryto słowo na czarnej liście ({0}): {1}'
+  wwcBlacklistLoaded: Twoja czarna lista zakazanych słów {0} została załadowana.
+  wwcConfigConversationAddBlacklist: Wprowadź nowy termin, który chcesz dodać, lub
+    wpisz 0, aby wrócić.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Usuń z czarnej listy
+  wwcConfigConversationBlacklistAddSuccess: Pomyślnie dodano nowy termin do czarnej
+    listy.
+  wwcConfigGUIMessagesModifyBlacklistButton: Modyfikuj czarną listę
+  wwcConfigGUIChatBlacklistButton: Włącz czarną listę
+  wwcConfigConversationBlacklistDeletionSuccess: Pomyślnie usunięto termin.
+  wwcConfigGUIChatChannelSettings: Konfiguracja kanału czatu
+  wwcConfigGUIChatBlacklistSuccess: Pomyślnie przełączyłem czarną listę.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj nowe słowo
+  wwcConfigGUIChatChannelButton: Przetłumacz ustawienia kanału
+  wwcConfigGUIBlacklistMessagesModify: Zmień termin ({0})
+  wwcConfigChatChannelFormatInvalid: Wykryto nieprawidłowy format kanału. Domyślnie
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Obecny format oddzielnego kanału czatu
+    to {0}. Nasze domyślne rozpoznane argumenty, które możesz uwzględnić: {1}. Jeśli
+    masz PlaceholderAPI, upewnij się, że te zmienne są otoczone wartościami procentowymi
+    (%). Wpisz 0, aby wrócić.'
+  wwcConfigGUIModifyBlacklistSettings: Modyfikuj czarną listę
+  wwcConfigGUINextPageButton: Następna strona
 

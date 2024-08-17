@@ -47,7 +47,6 @@ Messages:
   wwctGUISignButton: Toggle Նշան թարգմանություն
   wwcUpdaterOutOfDate: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին տարբերակը,
     {0}.
-  wwcConfigGUINextPageButton: Հաջորդ էջը
   wwcConfigInvalidTranslatorSettings: Անվավեր թարգմանիչ պարամետրերը! Խնդրում ենք միացնել
     միայն մեկ թարգմանիչ Ձեր config.yml.
   wwcConfigGUIQuitButton: Ելք եւ փրկել փոփոխությունները
@@ -626,4 +625,94 @@ Messages:
     այս արժեքի համար:'
   wwcRateNoConvoFolia: 'Folia- ի GUI- ի միջոցով չկարողացավ դրույքաչափի սահմանափակում
     սահմանել: Խնդրում ենք դրա փոխարեն օգտագործել /wwctrl կամ /translateratelimit:'
+  wwcInvalidTranslatorUser: 'WorldwideChat-ը ներկայումս անհասանելի է: Խնդրում ենք
+    կրկին փորձել ավելի ուշ կամ կապվեք ձեր ադմինիստրատորի հետ, եթե դա շարունակվի:'
+  wwcCouldNotSaveOhNo: Չի կարող փրկել WorldwideChat տվյալները... խնդրում ենք ապահովել,
+    որ ձեր ընտրած տվյալների բազա/պահեստավորման տարբերակը կայուն է!
+  wwcSyncUserDataComplete: 'Հաջողությամբ պահպանվել են օգտվողների տվյալները {0}: {1}'
+  wwcSyncUserDataStart: Օգտագործողի տվյալների համաժամեցում...
+  wwcdDebugEnvDisabled: 'Կարգավորումների միջավայրը անջատվել է:'
+  wwcdDebugEnvWarn: Toggling է կարգաբերում միջավայրը գրեթե երբեք խորհուրդ չի տրվում,
+    եթե դուք չեք զարգացնում այս plugin/հետաքննում է bug. Եթե դեռ ցանկանում եք շարունակել,
+    մուտքագրեք հետևյալը. {0}
+  wwclLangNotLoadedConsole: '{0} -ը այս պահին չի կարող օգտագործվել: Դուք կարող եք
+    փորձել վերաբեռնում plugin է շտկել այս, բայց եթե այն շարունակում է խնդրում ենք
+    դիմել մշակողի.'
+  wwcdDebugEnvEnabled: 'Կարգավորումների միջավայրը միացված է:'
+  wwclLangNotLoaded: '{0} -ը այս պահին չի կարող օգտագործվել: Փորձեք օգտագործել այլ
+    աջակցվող տեղայնացում. {1}'
+  wwcdDebugBadState: 'Այս կարգաբերում հրամանը չի կարող առաջադրվել, իսկ WorldwideChat
+    չունի վավեր թարգմանիչ հավաքածու. Խնդրում ենք կրկին փորձել ավելի ուշ:'
+  wwcNoVaultOnFolia: 'պահոցը ներկայումս չի աջակցվում Folia-ում: Սա կարող է խախտել
+    համատեղելիությունը այլ զրույցի կոնտակտների հետ:'
+  wwcNoVaultPlugin: 'Պահոց տեղադրված չէ: Սա կարող է կոտրել համատեղելիությունը այլ
+    տեղադրված զրույցի կոնտակտների հետ:'
+  wwcVaultChatProviderFound: 'Գտնվել է Vault զրույցի մատակարար ՝ {0}:'
+  wwcNoVaultChatProvider: 'Պահոց տեղադրված է, բայց ոչ մի աջակցվող զրույցի պրովայդեր
+    չի հայտնաբերվել:'
+  wwcConfigEventPrioritySet: 'Զրույցի ունկնդրի իրադարձության առաջնահերթությունը սահմանեք
+    {0}:'
+  wwcConfigEventPriorityInvalid: 'Անվավեր զրույցի ունկնդրի իրադարձության առաջնահերթությունը
+    config.yml- ում: Կանխարգելում է {0}...'
+  wwcConfigGUIChatListenerPriorityButton: Փոխեք զրույցի իրադարձության ունկնդրի առաջնահերթ
+  wwcConfigConversationChatPriorityBadInput: 'Վատ զրույցի առաջնահերթության մուտքագրում:
+    Խնդրում ենք կրկին փորձել:'
+  wwcConfigConversationChatPrioritySuccess: 'Հաջողությամբ սահմանեք ձեր զրույցի իրադարձության
+    առաջնահերթությունը:'
+  wwcConfigVaultSupportInvalid: 'Անվավեր պահոցի աջակցություն, որը սահմանված է config.yml-
+    ում: Չարժևորելով ճշմարիտ...'
+  wwcWatsonDeprecation: 'Ուոթսոնը մերժվել է և այլևս չի աջակցվում IBM-ի կողմից: Խնդրում
+    ենք հաշվի առնել անցումը, քանի որ դրա համար աջակցությունը կհեռացվի հաջորդ թարմացմանը:'
+  wwcConfigForceChatChannelEnabled: 'Բոլոր թարգմանությունների ժամանակ հարկադրված կլինի
+    թարգմանության առանձին ալիք:'
+  wwcConfigConversationSeparateChatChannelForceSuccess: 'Հաջողությամբ միացվել է առանձին
+    ալիքը ստիպելով:'
+  wwcConfigConversationChannelIconInput: 'Առանձին թարգմանական ալիքի ներկայիս պատկերակը
+    {0} է: Գունային կոդերը ապահովվում են; հետ գնալու համար մուտքագրեք 0:'
+  wwcConfigConversationChatPriorityInput: 'Ընթացիկ զրույցի իրադարձության առաջնահերթությունը
+    {0} է: Մուտքագրեք 0 գնալ դեպի ետ կամ ընտրել վավեր առաջնահերթությունների այս ցանկից
+    `{1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Փոխեք առանձին ալիքի ձևաչափը
+  wwcConfigConversationChannelIconSuccess: 'Հաջողությամբ փոխեց ձեր ալիքի պատկերակը:'
+  wwcConfigGUISeparateChatChannelIconButton: Փոխեք առանձին ալիքի պատկերակը
+  wwcConfigConversationChatFormatSuccess: 'Ձեր ձևաչափը հաջողությամբ փոխվել է:'
+  wwcConfigGUISeparateChatChannelForceButton: Ֆորսել առանձին ալիքը
+  wwcOrigHover: 'Բնօրինակ հաղորդագրություն: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Բնօրինակը ելքային զրուցարան
+    կցված թարգմանության որպես սավառնել տեքստի togged հաջողությամբ.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Ավելացնել բնօրինակ ելքային հաղորդագրությունները
+    որպես սավառնել տեքստ
+  wwcConfigPAPIInstalled: 'PlaceholderAPI- ի աջակցությունը միացված է ձեր զրույցի ձևաչափի
+    համար:'
+  wwcConfigPAPINotInstalled: 'Ձեր զրույցի ձևաչափում հայտնաբերվել են մաքսային placeholders,
+    բայց PlaceholderAPI- ը տեղադրված չէ: Խնդրում ենք համոզվել, որ պլագինը բեռնված
+    է և միացված է:'
+  wwcConfigChatChannelIconInvalid: 'Հայտնաբերվեց անվավեր ալիքի պատկերակը: Կանխարգելում
+    է {0}...'
+  wwcBlacklistBadFormat: 'Ձեր սև ցուցակը պատշաճ ձևաչափված չէ որպես ցուցակ: Այն չի
+    կիրարկվի, քանի դեռ դա չի ամրագրվի:'
+  wwcBlacklistedMsg: 'Ձեր հաղորդագրությունը պարունակում է արգելված լեզու և չի թարգմանվել:'
+  wwcBlacklistedMsgDetected: Հայտնաբերվել է սև ցուցակում նշված բառը ({0}) ՝ {1}
+  wwcBlacklistLoaded: '{0} արգելված բառերի ձեր սեւ ցուցակը բեռնվել է:'
+  wwcConfigConversationAddBlacklist: 'Մուտքագրեք նոր տերմինը, որը կցանկանայիք ավելացնել,
+    կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Ջնջել սև ցուցակից
+  wwcConfigConversationBlacklistAddSuccess: 'Հաջողությամբ նոր տերմին ավելացրեց սև
+    ցուցակում:'
+  wwcConfigGUIMessagesModifyBlacklistButton: Փոփոխեք սև ցուցակը
+  wwcConfigGUIChatBlacklistButton: Միացնել սև ցուցակը
+  wwcConfigConversationBlacklistDeletionSuccess: 'Հաջողությամբ ջնջեց տերմինը:'
+  wwcConfigGUIChatChannelSettings: Զրույցի ալիքի կազմաձևում
+  wwcConfigGUIChatBlacklistSuccess: 'Հաջողությամբ միացրեց սև ցուցակը:'
+  wwcConfigGUIChatMessagesBlacklistNewButton: Ավելացնել նոր բառ
+  wwcConfigGUIChatChannelButton: Թարգմանել ալիքի կարգավորումները
+  wwcConfigGUIBlacklistMessagesModify: Փոփոխել ժամկետը ({0})
+  wwcConfigChatChannelFormatInvalid: Հայտնաբերվել է անվավեր ալիքի ձևաչափ Կանխարգելում
+    է {0}...
+  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
+    {0} է: Մեր լռելյայն ճանաչված փաստարկները, որոնք կարող եք ներառել: {1}. Եթե ունեք
+    PlaceholderAPI, համոզվեք, որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը.
+    Մուտքագրեք 0-ը հետ գնալու համար:'
+  wwcConfigGUIModifyBlacklistSettings: Փոփոխեք սև ցուցակը
+  wwcConfigGUINextPageButton: Հաջորդ էջը
 

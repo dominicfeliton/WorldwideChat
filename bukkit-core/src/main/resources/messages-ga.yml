@@ -210,7 +210,6 @@ Messages:
   wwcConfigGUIChangesNotSaved: Ní bheidh do chuid athruithe i bhfeidhm go dtí go chliceálann
     tú ar an mbacainn dhearg i/wwcc.
   wwcBookTranslateTitleSuccess: 'Teideal Leabhar Aistrithe: {0}'
-  wwcConfigGUINextPageButton: An Chéad Leathanach Eile
   wwctiOnSender: aistriúchán Mír cumasaithe. Right-click le mír i do lámh is mó a
     aistriú é!
   wwcConfigGUIMessagesOverrideOriginalLabel: Teachtaireacht Bunaidh
@@ -639,4 +638,92 @@ Messages:
     don luach seo.
   wwcRateNoConvoFolia: Ní féidir teorainn rátaí a shocrú tríd an GUI ar Folia. Úsáid
     /wwctrl nó /translateratelimit ina ionad.
+  wwcInvalidTranslatorUser: Níl WorldwideChat ar fáil faoi láthair. Déan iarracht
+    arís níos déanaí nó déan teagmháil le do riarthóir má leanann sé seo
+  wwcCouldNotSaveOhNo: Ní féidir sonraí WorldwideChat a shábháil... cinntigh le do
+    thoil go bhfuil do rogha bunachar sonraí/stórála roghnaithe seasmhach!
+  wwcSyncUserDataComplete: Sábháil sonraí úsáideora go rathúil chuig {0}. {1}
+  wwcSyncUserDataStart: Sonraí úsáideora a shioncronú...
+  wwcdDebugEnvDisabled: Tá an timpeallacht dífhabhtaithe díchumasaithe.
+  wwcdDebugEnvWarn: 'Ní mholtar beagnach riamh an timpeallacht dífhabhtaithe a athrú
+    mura bhfuil tú ag forbairt an breiseán seo a/fabht á imscrúdú. Más mian leat dul
+    ar aghaidh fós, clóscríobh an méid seo a leanas: {0}'
+  wwclLangNotLoadedConsole: Ní féidir {0} a úsáid ag an am seo. Féadfaidh tú triail
+    a bhaint as an breiseán a athluchtú chun é seo a shocrú, ach má leanann sé déan
+    teagmháil leis an bhforbróir.
+  wwcdDebugEnvEnabled: Tá an timpeallacht dífhabhtaithe cumasaithe.
+  wwclLangNotLoaded: 'Ní féidir {0} a úsáid ag an am seo. Bain triail as logánú difriúil
+    tacaithe a úsáid: {1}'
+  wwcdDebugBadState: Ní féidir an t-ordú dífhabhtaithe seo a reáchtáil cé nach bhfuil
+    tacar aistritheora bailí ag WorldwideChat. Bain triail as arís níos déanaí.
+  wwcNoVaultOnFolia: Ní thacaítear le Vault faoi láthair ar Folia. D'fhéadfadh sé
+    seo comhoiriúnacht a bhriseadh le breiseáin com
+  wwcNoVaultPlugin: Níl Vault suiteáilte! Féadfaidh sé seo comhoiriúnacht a bhriseadh
+    le breiseáin comhrá
+  wwcVaultChatProviderFound: 'Fuarthas soláthraí comhrá Vault: {0}.'
+  wwcNoVaultChatProvider: Tá Vault suiteáilte, ach níor aimsíodh aon sholáthraí comhrá
+    tacaithe.
+  wwcConfigEventPrioritySet: Socraigh tosaíocht imeachta éisteora comhrá do {0}.
+  wwcConfigEventPriorityInvalid: Tosaíocht imeachta éisteora comhrá neamhbhailí i
+    config.yml. Ag réamhshocrú go {0}...
+  wwcConfigGUIChatListenerPriorityButton: Athraigh Tosaíocht Éisteora Imeachta
+  wwcConfigConversationChatPriorityBadInput: Ionchur tosaíochta comhrá droch! Bain
+    triail as arís.
+  wwcConfigConversationChatPrioritySuccess: Socraigh go rathúil do thosaíocht imeachta
+    comhrá.
+  wwcConfigVaultSupportInvalid: Tacaíocht cruinneachán neamhbhailí atá leagtha síos
+    i config.yml. Ag réamhshocrú go fíor...
+  wwcWatsonDeprecation: Tá Watson díscríofa agus ní thacaíonn IBM leis a thuilleadh.
+    Smaoinigh ar athrú, mar bainfear tacaíocht dó sa chéad nuashonrú eile.
+  wwcConfigForceChatChannelEnabled: Cuirfear iallach ar chainéal aistriúcháin ar leithligh
+    le linn gach aistriú
+  wwcConfigConversationSeparateChatChannelForceSuccess: D'éirigh leis an gcainéal
+    ar leithligh a chur i bhfeidh
+  wwcConfigConversationChannelIconInput: Is é {0} an deilbhín reatha don chainéal
+    aistriúcháin ar leithligh. Tacaítear le cóid datha; cineál 0 chun dul ar ais.
+  wwcConfigConversationChatPriorityInput: 'Is é {0} an tosaíocht imeachta comhrá reatha.
+    Cineál 0 téigh ar ais nó roghnaigh ón liosta seo de thosaíochtaí bailí: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Athraigh Formáid Cainéil Ar
+  wwcConfigConversationChannelIconSuccess: D'athraigh sé go rathúil do deilbhín cainéal
+  wwcConfigGUISeparateChatChannelIconButton: Athraigh Deilbhín Cainéil
+  wwcConfigConversationChatFormatSuccess: Tá d'fhormáid athraithe go rathúil.
+  wwcConfigGUISeparateChatChannelForceButton: Cainéal ar leithligh Force
+  wwcOrigHover: 'Teachtaireacht Bunaidh: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Comhrá bunaidh atá ag imeacht
+    ceangailte leis an aistriúchán mar a thoscaíodh téacs hover
+  wwcConfigGUISendOutgoingHoverTextChatButton: Cuir Teachtaireachtaí Eisitheacha Bunaidh
+    mar Téacs Hover
+  wwcConfigPAPIInstalled: Cumasaíodh tacaíocht PlaceholderAPI do do fhormáid comhrá.
+  wwcConfigPAPINotInstalled: Braithíodh sealbhóirí áiteanna saincheaptha i do fhormáid
+    comhrá, ach níl PlaceholderAPI suiteáilte. Déan cinnte le do thoil go bhfuil an
+    breiseán luchtaithe agus cumasaithe.
+  wwcConfigChatChannelIconInvalid: Braite deilbhín cainéal neamhbhailí Ag réamhshocrú
+    go {0}...
+  wwcBlacklistBadFormat: Níl do liosta dubh formáidithe i gceart mar liosta. Ní chuirfear
+    i bhfeidhm é go dtí go socraítear é seo.
+  wwcBlacklistedMsg: Tá teanga toirmiscthe i do theachtaireacht agus níor aistrigh
+    í.
+  wwcBlacklistedMsgDetected: 'Bronnadh focal ar liosta dubh ({0}): {1}'
+  wwcBlacklistLoaded: Tá do liosta dubh de fhocal toirmiscthe {0} luchtaithe.
+  wwcConfigConversationAddBlacklist: Cuir isteach an téarma nua ar mhaith leat a chur
+    leis, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Scrios ó Liosta Dubh
+  wwcConfigConversationBlacklistAddSuccess: Chuir sé téarma nua leis an liosta dubh
+    go rathúil.
+  wwcConfigGUIMessagesModifyBlacklistButton: Athraigh Liosta Dubh
+  wwcConfigGUIChatBlacklistButton: Cumasaigh Liosta Dubh
+  wwcConfigConversationBlacklistDeletionSuccess: Scrios an téarma go rathúil.
+  wwcConfigGUIChatChannelSettings: Cumraíocht Cainéal Comhrá
+  wwcConfigGUIChatBlacklistSuccess: D'éirigh leis an liosta dubh a athrú.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Cuir Focal Nua leis
+  wwcConfigGUIChatChannelButton: Aistrigh Socruithe Channel
+  wwcConfigGUIBlacklistMessagesModify: Téarma a mhodhnú ({0})
+  wwcConfigChatChannelFormatInvalid: Formáid cainéal neamhbhailí braite Ag réamhshocrú
+    go {0}...
+  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
+    comhrá ar leithligh. Ár n-argóintí aitheanta réamhshocraithe is féidir leat a
+    áireamh: {1}. Má tá PlaceholderAPI agat, déan cinnte go bhfuil na hathróga sin
+    timpeallaithe ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
+  wwcConfigGUIModifyBlacklistSettings: Athraigh Liosta Dubh
+  wwcConfigGUINextPageButton: An chéad leathanach eile
 

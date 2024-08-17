@@ -44,7 +44,6 @@ Messages:
   wwcConfigGUILangButton: Vaihda liitännäisen kieli
   wwctGUISignButton: Vaihda allekirjoittaa käännös
   wwcUpdaterOutOfDate: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon, {0}.
-  wwcConfigGUINextPageButton: Seuraava sivu
   wwcConfigInvalidTranslatorSettings: Virheelliset kääntäjän asetukset! Ota käyttöön
     vain yksi kääntäjä config.yml.
   wwcConfigGUIQuitButton: Poistu ja tallenna muutokset
@@ -595,4 +594,94 @@ Messages:
     tälle arvolle.
   wwcRateNoConvoFolia: Nopeusrajoitusta ei voi asettaa Folian käyttöliittymän kautta.
     Käytä sen sijaan /wwctrl tai /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat ei ole tällä hetkellä käytettävissä. Yritä
+    myöhemmin uudelleen tai ota yhteyttä järjestelmänvalvojaan, jos tämä jatkuu.
+  wwcCouldNotSaveOhNo: WorldwideChat-tietoja ei voi tallentaa... varmista, että valitsemasi
+    tietokanta/tallennusvaihtoehto on vakaa!
+  wwcSyncUserDataComplete: Käyttäjätiedot tallennettiin onnistuneesti kohtaan {0}.
+    {1}
+  wwcSyncUserDataStart: Käyttäjätietojen synkronointi...
+  wwcdDebugEnvDisabled: Virheenkorjausympäristö on poistettu käytöstä.
+  wwcdDebugEnvWarn: 'Virheenkorjausympäristön vaihtamista ei melkein koskaan suositella,
+    ellet kehitä tätä laajennusta tai tutki virhettä. Jos haluat edelleen jatkaa,
+    kirjoita seuraava: {0}'
+  wwclLangNotLoadedConsole: '{0} ei voi käyttää tällä hetkellä. Voit yrittää ladata
+    laajennuksen uudelleen tämän korjaamiseksi, mutta jos se jatkuu, ota yhteyttä
+    kehittäjään.'
+  wwcdDebugEnvEnabled: Virheenkorjausympäristö on otettu käyttöön.
+  wwclLangNotLoaded: '{0} ei voi käyttää tällä hetkellä. Kokeile toista tuettua lokalisointia:
+    {1}'
+  wwcdDebugBadState: Tätä virheenkorjauskomentoa ei voida suorittaa, kun WorldwideChatissa
+    ei ole kelvollista kääntäjäjoukkoa. Yritä myöhemmin uudelleen.
+  wwcNoVaultOnFolia: Vaultia ei tällä hetkellä tueta Foliassa. Tämä voi rikkoa yhteensopivuuden
+    muiden chat-laajennusten kanssa.
+  wwcNoVaultPlugin: Vaulua ei ole asennettu! Tämä voi rikkoa yhteensopivuuden muiden
+    asennettujen chat-laajennusten kanssa.
+  wwcVaultChatProviderFound: 'Löytyi Vault-chat-palveluntarjoaja: {0}.'
+  wwcNoVaultChatProvider: Vault on asennettu, mutta tuettua chat-palveluntarjoajaa
+    ei ole havaittu.
+  wwcConfigEventPrioritySet: Aseta chat-kuuntelijan tapahtuman prioriteetti arvoksi
+    {0}.
+  wwcConfigEventPriorityInvalid: 'Virheellinen chat-kuuntelijan tapahtuman prioriteetti
+    config.yml: ssä. Oletuksena on {0}...'
+  wwcConfigGUIChatListenerPriorityButton: Chat-tapahtuman kuuntelijan prioriteetin
+    muuttaminen
+  wwcConfigConversationChatPriorityBadInput: Huono chat-prioriteettisyöttö! Yritä
+    uudelleen.
+  wwcConfigConversationChatPrioritySuccess: Aseta chat-tapahtuman prioriteetti onnistuneesti.
+  wwcConfigVaultSupportInvalid: 'Virheellinen säilön tuki on määritetty config.yml:
+    ssä. Oletuksena on tosi...'
+  wwcWatsonDeprecation: Watson on vanhentunut, eikä IBM enää tue sitä. Harkitse vaihtamista,
+    koska sen tuki poistetaan seuraavassa päivityksessä.
+  wwcConfigForceChatChannelEnabled: Erillinen käännöskanava pakotetaan kaikkien käännösten
+    aikana.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Vaihdettu onnistuneesti pakottamalla
+    erillinen kanava.
+  wwcConfigConversationChannelIconInput: Erillisen käännöskanavan nykyinen kuvake
+    on {0}. Värikoodeja tuetaan; kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationChatPriorityInput: 'Nykyinen chat-tapahtuman prioriteetti on
+    {0}. Kirjoita 0 palaa taaksepäin tai valitse tästä kelvollisten prioriteettien
+    luettelosta: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Vaihda erillinen kanavamuoto
+  wwcConfigConversationChannelIconSuccess: Kanavakuvake on muutettu onnistuneesti.
+  wwcConfigGUISeparateChatChannelIconButton: Vaihda erillinen kanavakuvake
+  wwcConfigConversationChatFormatSuccess: Muotoasi on muutettu onnistuneesti.
+  wwcConfigGUISeparateChatChannelForceButton: Pakota erillinen kanava
+  wwcOrigHover: 'Alkuperäinen viesti: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Alkuperäinen lähtevä keskustelu
+    liitettiin käännökseen, kun hiiren osoitin teksti vaihdettiin onnistuneesti.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Lisää alkuperäiset lähtevät viestit
+    hover-tekstiksi
+  wwcConfigPAPIInstalled: PlaceholderAPI-tuki on otettu käyttöön chat-muotossasi.
+  wwcConfigPAPINotInstalled: Mukautetut paikkamerkit on havaittu chat-muodossa, mutta
+    PlaceHolderAPI ei ole asennettu. Varmista, että laajennus on ladattu ja että se
+    on käytössä.
+  wwcConfigChatChannelIconInvalid: Virheellinen kanavakuvake havaittu. Oletuksena
+    on {0}...
+  wwcBlacklistBadFormat: Mustaa luetteloa ei ole muotoiltu oikein luetteloksi. Sitä
+    ei valvota ennen kuin tämä on korjattu.
+  wwcBlacklistedMsg: Viestisi sisältää kiellettyä kieltä eikä sitä ole käännetty.
+  wwcBlacklistedMsgDetected: 'Mustalla listalla oleva sana ({0}) havaittu: {1}'
+  wwcBlacklistLoaded: Musta listasi {0} kielletyistä sanoista on ladattu.
+  wwcConfigConversationAddBlacklist: Kirjoita uusi termi, jonka haluat lisätä, tai
+    kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Poista mustasta listasta
+  wwcConfigConversationBlacklistAddSuccess: Uusi termi lisättiin onnistuneesti mustalle
+    listalle.
+  wwcConfigGUIMessagesModifyBlacklistButton: Muokkaa mustaa luetteloa
+  wwcConfigGUIChatBlacklistButton: Ota musta lista käyttöön
+  wwcConfigConversationBlacklistDeletionSuccess: Poistettu termi onnistuneesti.
+  wwcConfigGUIChatChannelSettings: Chat-kanavan määritykset
+  wwcConfigGUIChatBlacklistSuccess: Vaihtoi mustan listan onnistuneesti.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Lisää uusi sana
+  wwcConfigGUIChatChannelButton: Käännä kanava-asetukset
+  wwcConfigGUIBlacklistMessagesModify: Muokkaa termiä ({0})
+  wwcConfigChatChannelFormatInvalid: Havaittu virheellinen kanavamuoto. Oletuksena
+    on {0}...
+  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
+    on {0}. Oletusarvoiset tunnistetut argumentit, jotka voit sisällyttää: {1}. Jos
+    käytössäsi on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet
+    (%) sen sijaan. Kirjoita 0 palataksesi takaisin.'
+  wwcConfigGUIModifyBlacklistSettings: Muokkaa mustaa luetteloa
+  wwcConfigGUINextPageButton: Seuraava sivu
 

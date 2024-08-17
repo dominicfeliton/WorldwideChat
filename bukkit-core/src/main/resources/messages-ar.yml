@@ -42,7 +42,6 @@ Messages:
   wwcConfigGUILangButton: تغيير لغة البرنامج المساعد
   wwctGUISignButton: تبديل تسجيل الترجمة
   wwcUpdaterOutOfDate: وورلدويدتشات هو قديما. الرجاء التحديث إلى أحدث إصدار، {0}.
-  wwcConfigGUINextPageButton: الصفحة التالية
   wwcConfigInvalidTranslatorSettings: إعدادات مترجم غير صالحة! يرجى تمكين مترجم واحد
     فقط في config.yml الخاص بك.
   wwcConfigGUIQuitButton: الخروج من التغييرات وحفظها
@@ -561,4 +560,84 @@ Messages:
     التبديل لا تزال تعمل. يرجى محاولة تعديل التكوين يدويًا لهذه القيمة.
   wwcRateNoConvoFolia: غير قادر على تعيين حد للسعر عبر واجهة المستخدم الرسومية على
     Folia. يرجى استخدام /wwctrl أو /translateratelimit بدلاً من ذلك.
+  wwcInvalidTranslatorUser: WorldwideChat غير متاح حاليًا. يرجى المحاولة مرة أخرى
+    لاحقًا أو الاتصال بالمسؤول إذا استمر ذلك.
+  wwcCouldNotSaveOhNo: غير قادر على حفظ بيانات WorldwideChat... يرجى التأكد من أن
+    خيار قاعدة البيانات/التخزين المحدد مستقر!
+  wwcSyncUserDataComplete: تم حفظ بيانات المستخدم بنجاح إلى {0}. {1}
+  wwcSyncUserDataStart: جاري مزامنة بيانات المستخدم...
+  wwcdDebugEnvDisabled: تم تعطيل بيئة التصحيح.
+  wwcdDebugEnvWarn: 'لا يُنصح أبدًا بتبديل بيئة التصحيح إلا إذا كنت تقوم بتطوير هذا
+    المكون الإضافي/التحقيق في خطأ. إذا كنت لا تزال ترغب في المتابعة، فاكتب ما يلي:
+    {0}'
+  wwclLangNotLoadedConsole: لا يمكن استخدام {0} في هذا الوقت. يمكنك محاولة إعادة تحميل
+    المكون الإضافي لإصلاح ذلك، ولكن إذا استمر، يرجى الاتصال بالمطور.
+  wwcdDebugEnvEnabled: تم تمكين بيئة التصحيح.
+  wwclLangNotLoaded: 'لا يمكن استخدام {0} في هذا الوقت. حاول استخدام ترجمة مدعومة
+    مختلفة: {1}'
+  wwcdDebugBadState: لا يمكن تشغيل أمر التصحيح هذا بينما لا يحتوي WorldwideChat على
+    مجموعة مترجم صالحة. يرجى المحاولة مرة أخرى لاحقًا.
+  wwcNoVaultOnFolia: Vault غير مدعوم حاليًا على Folia. قد يؤدي هذا إلى كسر التوافق
+    مع ملحقات الدردشة الأخرى.
+  wwcNoVaultPlugin: لم يتم تثبيت Vault! قد يؤدي هذا إلى كسر التوافق مع ملحقات الدردشة
+    المثبتة الأخرى.
+  wwcVaultChatProviderFound: 'تم العثور على موفر دردشة Vault: {0}.'
+  wwcNoVaultChatProvider: تم تثبيت Vault، ولكن لم يتم اكتشاف موفر دردشة مدعوم.
+  wwcConfigEventPrioritySet: قم بتعيين أولوية حدث مستمع الدردشة إلى {0}.
+  wwcConfigEventPriorityInvalid: أولوية حدث مستمع الدردشة غير صالحة في config.yml.
+    الإعداد الافتراضي لـ {0}...
+  wwcConfigGUIChatListenerPriorityButton: تغيير أولوية مستمع حدث الدردشة
+  wwcConfigConversationChatPriorityBadInput: إدخال أولوية الدردشة السيئة! يرجى المحاولة
+    مرة أخرى.
+  wwcConfigConversationChatPrioritySuccess: تم تعيين أولوية حدث الدردشة بنجاح.
+  wwcConfigVaultSupportInvalid: تم تعيين دعم مخزن غير صالح في config.yml. يتم الانتقال
+    إلى «صحيح»...
+  wwcWatsonDeprecation: تم إيقاف Watson ولم يعد مدعومًا من قبل IBM. يرجى التفكير في
+    التبديل، حيث سيتم إزالة الدعم الخاص به في التحديث التالي.
+  wwcConfigForceChatChannelEnabled: سيتم فرض قناة ترجمة منفصلة أثناء جميع الترجمات.
+  wwcConfigConversationSeparateChatChannelForceSuccess: تم التبديل بنجاح لإجبار القناة
+    المنفصلة.
+  wwcConfigConversationChannelIconInput: الرمز الحالي لقناة الترجمة المنفصلة هو {0}.
+    رموز الألوان مدعومة؛ اكتب 0 للعودة.
+  wwcConfigConversationChatPriorityInput: 'أولوية حدث الدردشة الحالي هي {0}. اكتب
+    0 ارجع إلى الخلف أو اختر من قائمة الأولويات الصحيحة هذه: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: تغيير تنسيق القناة المنفصلة
+  wwcConfigConversationChannelIconSuccess: تم تغيير رمز قناتك بنجاح.
+  wwcConfigGUISeparateChatChannelIconButton: تغيير رمز القناة المنفصلة
+  wwcConfigConversationChatFormatSuccess: تم تغيير التنسيق الخاص بك بنجاح.
+  wwcConfigGUISeparateChatChannelForceButton: قناة فورس منفصلة
+  wwcOrigHover: 'الرسالة الأصلية: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: تم إرفاق الدردشة الأصلية
+    الصادرة بالترجمة حيث تم تبديل نص التمرير بنجاح.
+  wwcConfigGUISendOutgoingHoverTextChatButton: إضافة الرسائل الصادرة الأصلية كنص تمرير
+  wwcConfigPAPIInstalled: تم تمكين دعم PlaceholderAPI لتنسيق الدردشة الخاص بك.
+  wwcConfigPAPINotInstalled: تم اكتشاف عناصر نائبة مخصصة في تنسيق الدردشة الخاص بك،
+    ولكن لم يتم تثبيت PlaceholderAPI. يرجى التأكد من تحميل المكون الإضافي وتمكينه.
+  wwcConfigChatChannelIconInvalid: تم اكتشاف رمز قناة غير صالح. الإعداد الافتراضي
+    لـ {0}...
+  wwcBlacklistBadFormat: لم يتم تنسيق القائمة السوداء بشكل صحيح كقائمة. لن يتم فرضه
+    حتى يتم إصلاح ذلك.
+  wwcBlacklistedMsg: تحتوي رسالتك على لغة محظورة ولم تتم ترجمتها.
+  wwcBlacklistedMsgDetected: 'تم اكتشاف الكلمة المدرجة في القائمة السوداء ({0}): {1}'
+  wwcBlacklistLoaded: تم تحميل القائمة السوداء للكلمات {0} المحظورة.
+  wwcConfigConversationAddBlacklist: أدخل المصطلح الجديد الذي ترغب في إضافته، أو اكتب
+    0 للرجوع إليه.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: حذف من القائمة السوداء
+  wwcConfigConversationBlacklistAddSuccess: تمت إضافة مصطلح جديد بنجاح إلى القائمة
+    السوداء.
+  wwcConfigGUIMessagesModifyBlacklistButton: تعديل القائمة السوداء
+  wwcConfigGUIChatBlacklistButton: تمكين القائمة السوداء
+  wwcConfigConversationBlacklistDeletionSuccess: تم حذف المصطلح بنجاح.
+  wwcConfigGUIChatChannelSettings: تكوين قناة الدردشة
+  wwcConfigGUIChatBlacklistSuccess: تم تبديل القائمة السوداء بنجاح.
+  wwcConfigGUIChatMessagesBlacklistNewButton: إضافة كلمة جديدة
+  wwcConfigGUIChatChannelButton: ترجمة إعدادات القناة
+  wwcConfigGUIBlacklistMessagesModify: تعديل المصطلح ({0})
+  wwcConfigChatChannelFormatInvalid: تم اكتشاف تنسيق قناة غير صالح. الإعداد الافتراضي
+    لـ {0}...
+  wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
+    هو {0}. حججنا الافتراضية المعترف بها والتي يمكنك تضمينها: {1}. إذا كان لديك PlaceholderAPI،
+    فتأكد من أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً من ذلك. اكتب 0 للعودة.'
+  wwcConfigGUIModifyBlacklistSettings: تعديل القائمة السوداء
+  wwcConfigGUINextPageButton: الصفحة التالية
 

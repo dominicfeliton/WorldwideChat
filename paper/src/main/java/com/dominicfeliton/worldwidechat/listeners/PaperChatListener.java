@@ -12,25 +12,31 @@ import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.eclipse.sisu.inject.Legacy;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
+public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener, ChatRenderer.ViewerUnaware {
 
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private final WorldwideChat main;
+    private final CommonRefs refs;
 
-    @EventHandler(priority = EventPriority.HIGHEST)
+    public PaperChatListener() {
+        super();
+        this.main = WorldwideChat.instance;
+        this.refs = main.getServerFactory().getCommonRefs();
+    }
+
+    @Override
     public void onPlayerChat(AsyncChatEvent event) {
         try {
             if (!event.isAsynchronous()) {
@@ -38,20 +44,25 @@ public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
                 return;
             }
             refs.debugMsg("Using paperChatListener.");
+            boolean channel = main.isForceSeparateChatChannel();
 
-            /* Original WWC functionality/Translate Outgoing Messages */
+            // Translate Outgoing Messages
             refs.debugMsg("Begin translating outgoing messages...");
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
+            Component outgoingText = event.message();
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
                     || (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-                Component originalText = refs.deserial(refs.translateText(refs.serial(event.originalMessage()), event.getPlayer()));
-                event.message(originalText);
+                outgoingText = refs.deserial(refs.translateText(refs.serial(event.originalMessage()), event.getPlayer()));
+                if (!channel) {
+                    event.message(outgoingText);
+                }
             }
 
-            /* New WWC functionality/Translate Incoming Messages */
+            // Translate Incoming Messages
             refs.debugMsg("Begin translating incoming messages...");
+
             Set<Audience> unmodifiedMessageRecipients = new HashSet<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 // Do not handle non-players
@@ -92,28 +103,36 @@ public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
 
                 // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + convert to Component
-                String originalText = refs.serial(event.message());
-                String translation = refs.translateText(originalText, currPlayer);
-                if (translation.equalsIgnoreCase(originalText)) {
+                String savedText = refs.serial(outgoingText);
+                String translation = refs.translateText(savedText, currPlayer);
+                if (translation.equalsIgnoreCase(savedText)) {
                     refs.debugMsg("Translation unsuccessful/same as original message for " + currPlayer.getName());
                     unmodifiedMessageRecipients.add(eaRecipient);
                     continue;
                 }
 
-                Component hoverOutMessage = refs.deserial(translation);
-
-                // Add hover text w/original message
-                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-                    hoverOutMessage = hoverOutMessage
-                            .hoverEvent(HoverEvent.showText(Component.text(originalText).decorate(TextDecoration.ITALIC)));
-                }
-
                 // Re-render original message but with new text.
-                refs.debugMsg("Rendering new message for current player ( " + currPlayer.getName() + "  : " + refs.serial(hoverOutMessage) + " )");
-                Component outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), hoverOutMessage);
+                Component outMsg = formatMessage(event, currPlayer, refs.deserial(translation), refs.deserial(savedText), true);
                 currPlayer.sendMessage(outMsg);
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
+
+            // Send Pending Outgoing Messages (If force == true)
+            if (channel && !outgoingText.equals(event.message())) {
+                refs.debugMsg("Init pending outgoing message...");
+                for (Audience eaRecipient : event.viewers()) {
+                    Component outgoingMessage;
+                    if (eaRecipient instanceof Player) {
+                        outgoingMessage = formatMessage(event, (Player)eaRecipient, outgoingText, event.message(), false);
+                    } else {
+                        outgoingMessage = formatMessage(event, null, outgoingText, event.message(), false);
+                    }
+                    eaRecipient.sendMessage(outgoingMessage);
+                }
+
+                refs.debugMsg("Cancelling chat event.");
+                event.setCancelled(true);
+            }
         } catch (Exception e) {
             if (!refs.serverIsStopping()) {
                 throw e;
@@ -121,13 +140,43 @@ public class PaperChatListener implements Listener, ChatRenderer.ViewerUnaware {
         }
     }
 
+    private Component formatMessage(AsyncChatEvent event, Player targetPlayer, Component translation, Component original, boolean incoming) {
+        Component outMsg;
+        Chat chat = main.getChat();
+        if (chat != null) {
+            // Vault Support
+            outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
+        } else {
+            // No Vault Support
+            outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), translation);
+        }
+
+        // Add hover text w/original message
+        if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+            refs.debugMsg("Hover incoming!");
+            Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {refs.serial(original)}, "&f&o", targetPlayer);
+            outMsg = outMsg
+                    .hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
+        }
+
+        if (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat")) {
+            refs.debugMsg("Hover outgoing!");
+            // This will only work with the forced option set to true.
+            Component hover = (refs.getFancyMsg("wwcOrigHover", new String[] {refs.serial(original)}, "&f&o", targetPlayer));
+            outMsg = outMsg
+                    .hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
+        }
+
+        return outMsg;
+    }
+
     @Override
     public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
-        return component
-                .append(Component.text(":"))
+        // Spigot returns a "formatted" message with string manipulation.
+        // There does not seem to be a viable paper alternative.
+        // This is the only major discrepancy between the two listeners
+        return main.getTranslateLayout("", refs.serial(component), "", player)
                 .append(Component.space())
-                .append(component1)
-                .append(Component.space())
-                .append(Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE));
+                .append(component1);
     }
 }

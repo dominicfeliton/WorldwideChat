@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.amazonaws.util.StringUtils;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.translators.*;
@@ -15,6 +14,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.text.StringEscapeUtils;
 import org.bukkit.Bukkit;
@@ -69,7 +69,6 @@ public class CommonRefs {
 
 	public static final Map<String, String> translatorPairs = new HashMap<>();
 	static {
-		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
 		translatorPairs.put("Translator.useGoogleTranslate", "Google Translate");
 		translatorPairs.put("Translator.useAmazonTranslate", "Amazon Translate");
 		translatorPairs.put("Translator.useLibreTranslate", "Libre Translate");
@@ -77,6 +76,7 @@ public class CommonRefs {
 		translatorPairs.put("Translator.useWatsonTranslate", "Watson");
 		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
 		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
+		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
 	}
 
 	public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
@@ -115,8 +115,6 @@ public class CommonRefs {
 		cachedTermsSchema.put("outputPhrase", "VARCHAR(260)");
 		tableSchemas.put("persistentCache", cachedTermsSchema);
 	}
-
-	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 	
 	/**
 	  * Compares two strings to check if they are the same language under the current translator.
@@ -436,12 +434,24 @@ public class CommonRefs {
 	  */
 	public String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
+		debugMsg("translateText() call using " + main.getTranslatorName());
 		if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
 			return inMessage;
 		}
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+
+		/* Detect bad language */
+		if (main.isBlacklistEnabled() && main.getBlacklistTerms() != null) {
+			for (String eaWord : main.getBlacklistTerms()) {
+				if (inMessage.contains(eaWord)) {
+					sendFancyMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);
+					debugMsg(getMsg("wwcBlacklistedMsgDetected", new String[] {eaWord, inMessage}, null));
+					return inMessage;
+				}
+			}
+		}
 		
 		/* Main logic callback */
-		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Callable<String> result = () -> {
 			/* Detect color codes in message */
 			detectColorCodes(inMessage, currPlayer);

@@ -20,33 +20,35 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
 
-public class MessagesOverrideModifyGui implements InventoryProvider {
+public class BlacklistModifyGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
 	private WWCInventoryManager invManager = main.getInventoryManager();
-	
-	private String currentOverrideName = "";
-	private String inLang = "";
+
+	private String currentTerm = "";
 
 	private Player inPlayer;
-	
-	public MessagesOverrideModifyGui(String currentOverrideName, String inLang, Player inPlayer) {
-		this.currentOverrideName = currentOverrideName;
-		this.inLang = inLang;
+
+	public BlacklistModifyGui(String currentTerm, Player inPlayer) {
+		this.currentTerm = currentTerm;
 		this.inPlayer = inPlayer;
 	}
 	
-	public SmartInventory getModifyCurrentOverride() {
-		return SmartInventory.builder().id("overrideModifyMenu")
+	public SmartInventory modifyTerm() {
+		return SmartInventory.builder().id("blacklistModifyMenu")
 				.provider(this).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-					.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", inPlayer))
+					.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIBlacklistMessagesModify", new String[] {currentTerm}, inPlayer))
 				.build();
 	}
 	
@@ -57,43 +59,45 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 			invManager.setBorders(contents, XMaterial.ORANGE_STAINED_GLASS_PANE);
 
 			/* Middle Option: Change existing text */
-			invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+			//invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 			
 			/* Right Option: Delete override */
-			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();
-			ItemMeta deleteOverrideMeta = deleteOverrideButton.getItemMeta();
-			deleteOverrideMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", inPlayer));
-			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
-			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
-				BukkitRunnable saveMessages = new BukkitRunnable() {
+			ItemStack deleteTermButton = XMaterial.BARRIER.parseItem();
+			ItemMeta deleteTermMeta = deleteTermButton.getItemMeta();
+			deleteTermMeta.setDisplayName(ChatColor.RED
+					+ refs.getMsg("wwcConfigGUIChatMessagesBlacklistDeleteButton", inPlayer));
+			deleteTermButton.setItemMeta(deleteTermMeta);
+			contents.set(1, 5, ClickableItem.of(deleteTermButton, e -> {
+				BukkitRunnable save = new BukkitRunnable() {
 					@Override
 					public void run() {
-						YamlConfiguration msgConfigCustom = main.getConfigManager().getCustomMessagesConfig(inLang);
-						msgConfigCustom.set("Overrides." + currentOverrideName, null);
-						main.getConfigManager().saveMessagesConfig(inLang, false);
+						YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
+						Set<String> bannedWords = main.getBlacklistTerms();
+						bannedWords.remove(currentTerm); // Remove currentTerm from the list
+						config.set("bannedWords", new ArrayList<>(bannedWords)); // Save the updated list back to the config
 
+						main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), false);
 						main.addPlayerUsingConfigurationGUI(inPlayer.getUniqueId());
 						final TextComponent successfulChange = Component.text()
-										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess", inPlayer))
+										.content(refs.getMsg("wwcConfigConversationBlacklistDeletionSuccess", inPlayer))
 										.color(NamedTextColor.GREEN)
 								.build();
 						refs.sendMsg(player, successfulChange);
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings().open(player);
+								new BlacklistGui(inPlayer).getBlacklist().open(player);
 							}
 						};
 						wwcHelper.runSync(out, ENTITY, new Object[] {player});
 					}
 				};
-				wwcHelper.runAsync(saveMessages, ASYNC, null);
+				wwcHelper.runAsync(save, ASYNC, null);
 			}));
 			
 			
 			/* Left Option: Previous Page */
-			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings()});
+			invManager.setCommonButton(1, 3, player, contents, "Previous", new Object[] {new BlacklistGui(inPlayer).getBlacklist()});
 		} catch (Exception e) {
 			invManager.inventoryError(player, e);
 		}

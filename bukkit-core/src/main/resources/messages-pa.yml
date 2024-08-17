@@ -199,7 +199,6 @@ Messages:
   wwcConfigGUIChangesNotSaved: ਤੁਹਾਡੀਆਂ ਤਬਦੀਲੀਆਂ ਉਦੋਂ ਤੱਕ ਲਾਗੂ ਨਹੀਂ ਹੋਣਗੀਆਂ ਜਦੋਂ ਤੱਕ
     ਤੁਸੀਂ /wwcc ਵਿੱਚ ਲਾਲ ਰੁਕਾਵਟ ਤੇ ਕਲਿਕ ਨਹੀਂ ਕਰਦੇ.
   wwcBookTranslateTitleSuccess: 'ਅਨੁਵਾਦਿਤ ਕਿਤਾਬ ਦਾ ਸਿਰਲੇਖ: {0}'
-  wwcConfigGUINextPageButton: ਅਗਲੇ ਸਫ਼ੇ
   wwctiOnSender: ਆਈਟਮ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਮੁੱਖ ਹੱਥ ਵਿੱਚ ਇੱਕ ਆਈਟਮ
     ਨਾਲ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
   wwcConfigGUIMessagesOverrideOriginalLabel: ਅਸਲੀ ਸੁਨੇਹਾ
@@ -602,4 +601,93 @@ Messages:
     ਕਰੋ।
   wwcRateNoConvoFolia: ਫੋਲੀਆ 'ਤੇ GUI ਰਾਹੀਂ ਰੇਟ ਸੀਮਾ ਨਿਰਧਾਰਤ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ। ਕਿਰਪਾ
     ਕਰਕੇ ਇਸਦੀ ਬਜਾਏ /wwctrl ਜਾਂ /translateratelimit ਦੀ ਵਰਤੋਂ ਕਰੋ।
+  wwcInvalidTranslatorUser: ਵਰਲਡਵਾਈਡਚੈਟ ਇਸ ਸਮੇਂ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ
+    ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਆਪਣੇ ਪ੍ਰਸ਼ਾਸਕ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਜੇਕਰ ਇਹ ਕਾਇਮ
+  wwcCouldNotSaveOhNo: ਵਰਲਡਵਾਈਡਚੈਟ ਡੇਟਾ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ ਹੈ... ਕਿਰਪਾ ਕਰਕੇ
+    ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡਾ ਚੁਣਿਆ ਡੇਟਾਬੇਸ/ਸਟੋਰੇਜ ਵਿਕਲ
+  wwcSyncUserDataComplete: ਸਫਲਤਾਪੂਰਵਕ ਉਪਭੋਗਤਾ ਡੇਟਾ ਨੂੰ {0} ਤੇ ਸੁਰੱਖ {1}
+  wwcSyncUserDataStart: ਉਪਭੋਗਤਾ ਡੇਟਾ ਨੂੰ ਸਿੰਕ ਕਰਨਾ...
+  wwcdDebugEnvDisabled: ਡੀਬੱਗ ਵਾਤਾਵਰਣ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.
+  wwcdDebugEnvWarn: 'ਡੀਬੱਗ ਵਾਤਾਵਰਣ ਨੂੰ ਟੌਗਲ ਕਰਨ ਦੀ ਲਗਭਗ ਕਦੇ ਵੀ ਸਿਫਾਰਸ਼ ਨਹੀਂ ਕੀਤੀ ਜਾਂਦੀ
+    ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਇਸ ਪਲੱਗਇਨ ਨੂੰ ਵਿਕਸਤ ਨਹੀਂ ਕਰੋ/ਕਿਸੇ ਬੱਗ ਦੀ ਜਾਂਚ ਜੇ ਤੁਸੀਂ ਅਜੇ ਵੀ ਅੱਗੇ
+    ਵਧਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਹੇਠ ਲਿਖੇ ਟਾਈਪ ਕਰੋ: {0}'
+  wwclLangNotLoadedConsole: '{0} ਇਸ ਸਮੇਂ ਵਰਤਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਤੁਸੀਂ ਇਸ ਨੂੰ ਠੀਕ ਕਰਨ
+    ਲਈ ਪਲੱਗਇਨ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਸਕਦੇ ਹੋ, ਪਰ ਜੇ ਇਹ ਕਾਇਮ ਰਹਿੰਦਾ ਹੈ ਤਾਂ
+    ਕਿਰਪਾ ਕਰਕੇ ਡਿਵੈ'
+  wwcdDebugEnvEnabled: ਡੀਬੱਗ ਵਾਤਾਵਰਣ ਸਮਰੱਥ ਕੀਤਾ ਗਿਆ ਹੈ.
+  wwclLangNotLoaded: '{0} ਇਸ ਸਮੇਂ ਵਰਤਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਇੱਕ ਵੱਖਰੇ ਸਮਰਥਿਤ ਸਥਾਨਕਕਰਨ ਦੀ
+    ਵਰਤੋਂ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ: {1}'
+  wwcdDebugBadState: ਇਹ ਡੀਬੱਗ ਕਮਾਂਡ ਚਲਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਜਦੋਂ ਕਿ ਵਰਲਡਵਾਈਡਚੈਟ ਵਿੱਚ ਵੈਧ
+    ਅਨੁਵਾਦਕ ਸੈੱਟ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।
+  wwcNoVaultOnFolia: ਵਾਲਟ ਵਰਤਮਾਨ ਵਿੱਚ ਫੋਲੀਆ 'ਤੇ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ। ਇਹ ਹੋਰ ਚੈਟ ਪਲੱਗਇਨਾਂ
+    ਨਾਲ ਅਨੁਕੂਲਤਾ ਨੂੰ ਤੋੜ ਸਕਦਾ ਹੈ.
+  wwcNoVaultPlugin: ਵਾਲਟ ਸਥਾਪਤ ਨਹੀਂ ਹੈ! ਇਹ ਹੋਰ ਸਥਾਪਤ ਚੈਟ ਪਲੱਗਇਨਾਂ ਨਾਲ ਅਨੁਕੂਲਤਾ ਨੂੰ
+    ਤੋੜ ਸਕਦਾ ਹੈ.
+  wwcVaultChatProviderFound: 'ਇੱਕ ਵਾਲਟ ਚੈਟ ਪ੍ਰਦਾਤਾ ਲੱਭਿਆ: {0}.'
+  wwcNoVaultChatProvider: ਵਾਲਟ ਸਥਾਪਤ ਹੈ, ਪਰ ਕੋਈ ਸਮਰਥਿਤ ਚੈਟ ਪ੍ਰਦਾਤਾ ਦਾ ਪਤਾ ਨਹੀਂ ਲਗਾਇਆ
+    ਗਿਆ ਹੈ.
+  wwcConfigEventPrioritySet: ਚੈਟ ਸਰੋਨਰ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਤੇ ਸੈਟ ਕਰੋ.
+  wwcConfigEventPriorityInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਚੈਟ ਸੁਣਨ ਵਾਲਿਆਂ ਦੀ ਇਵੈਂਟ ਤਰਜੀਹ.
+    {0} ਤੇ ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ ਹੈ...
+  wwcConfigGUIChatListenerPriorityButton: ਚੈਟ ਇਵੈਂਟ ਸਰੋਨਰ ਤਰਜੀਹ ਬਦਲੋ
+  wwcConfigConversationChatPriorityBadInput: ਖਰਾਬ ਚੈਟ ਤਰਜੀਹ ਇਨਪੁਟ! ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ
+    ਕੋਸ਼ਿਸ਼ ਕਰੋ।
+  wwcConfigConversationChatPrioritySuccess: ਸਫਲਤਾਪੂਰਵਕ ਆਪਣੀ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ
+  wwcConfigVaultSupportInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਵਾਲਟ ਸਪੋਰਟ ਸੈਟ ਕੀਤਾ ਗਿਆ ਹੈ। ਸੱਚ
+    ਨੂੰ ਡਿਫੌਲਟ ਕਰਨਾ...
+  wwcWatsonDeprecation: ਵਾਟਸਨ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ ਅਤੇ ਹੁਣ ਆਈਬੀਐਮ ਦੁਆਰਾ ਸਮਰਥਤ ਨਹੀਂ
+    ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਬਦਲਣ 'ਤੇ ਵਿਚਾਰ ਕਰੋ, ਕਿਉਂਕਿ ਅਗਲੇ ਅਪਡੇਟ ਵਿੱਚ ਇਸਦੇ ਲਈ ਸਮਰਥਨ ਹਟਾ ਦਿੱਤਾ
+    ਜਾਵੇਗਾ।
+  wwcConfigForceChatChannelEnabled: ਸਾਰੇ ਅਨੁਵਾਦਾਂ ਦੌਰਾਨ ਇੱਕ ਵੱਖਰਾ ਅਨੁਵਾਦ ਚੈਨਲ ਮਜਬੂਰ
+    ਕੀਤਾ ਜਾਵੇਗਾ।
+  wwcConfigConversationSeparateChatChannelForceSuccess: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਮਜਬੂਰ ਕਰਨ ਨਾਲ
+    ਸਫਲਤਾਪੂਰਵਕ ਟ
+  wwcConfigConversationChannelIconInput: ਵੱਖਰੇ ਅਨੁਵਾਦ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਆਈਕਨ {0} ਹੈ।
+    ਰੰਗ ਕੋਡ ਸਮਰਥਿਤ ਹਨ; ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationChatPriorityInput: 'ਮੌਜੂਦਾ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ {0} ਹੈ. ਟਾਈਪ
+    ਕਰੋ 0 ਵਾਪਸ ਜਾਓ ਜਾਂ ਵੈਧ ਤਰਜੀਹਾਂ ਦੀ ਇਸ ਸੂਚੀ ਵਿੱਚੋਂ ਚੁਣੋ: {1}।'
+  wwcConfigGUISeparateChatChannelFormatButton: ਵੱਖਰੇ ਚੈਨਲ ਫਾਰਮੈਟ ਬਦਲੋ
+  wwcConfigConversationChannelIconSuccess: ਸਫਲਤਾਪੂਰਵਕ ਆਪਣੇ ਚੈਨਲ ਆਈਕਨ ਨੂੰ ਬਦ
+  wwcConfigGUISeparateChatChannelIconButton: ਵੱਖਰਾ ਚੈਨਲ ਆਈਕਨ ਬਦਲੋ
+  wwcConfigConversationChatFormatSuccess: ਤੁਹਾਡਾ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ ਗਿਆ ਹੈ.
+  wwcConfigGUISeparateChatChannelForceButton: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਫੋਰਸ ਕਰੋ
+  wwcOrigHover: 'ਅਸਲੀ ਸੁਨੇਹਾ: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: ਮੂਲ ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ ਅਨੁਵਾਦ
+    ਨਾਲ ਜੁੜੀ ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
+  wwcConfigGUISendOutgoingHoverTextChatButton: ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਅਸਲ ਆਉਟਗੋਇੰਗ
+    ਸੁਨੇਹੇ ਸ਼ਾਮਲ ਕਰੋ
+  wwcConfigPAPIInstalled: ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਸਹਾਇਤਾ ਤੁਹਾਡੇ ਚੈਟ ਫਾਰਮੈਟ ਲਈ ਸਮਰੱਥ ਕੀਤੀ ਗਈ
+    ਹੈ.
+  wwcConfigPAPINotInstalled: ਤੁਹਾਡੇ ਚੈਟ ਫਾਰਮੈਟ ਵਿੱਚ ਕਸਟਮ ਪਲੇਸਹੋਲਡਰ ਲੱਭੇ ਗਏ ਹਨ, ਪਰ
+    ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਸਥਾਪਤ ਨਹੀਂ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਪਲੱਗਇਨ ਲੋਡ ਹੋਇਆ ਹੈ ਅਤੇ
+    ਸਮਰੱਥ ਹੈ.
+  wwcConfigChatChannelIconInvalid: ਅਵੈਧ ਚੈਨਲ ਆਈਕਨ ਲੱਭਿਆ ਗਿਆ. {0} ਤੇ ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ
+    ਹੈ...
+  wwcBlacklistBadFormat: ਤੁਹਾਡੀ ਬਲੈਕਲਿਸਟ ਨੂੰ ਸੂਚੀ ਦੇ ਰੂਪ ਵਿੱਚ ਸਹੀ ਢੰਗ ਨਾਲ ਫਾਰਮੈਟ ਨਹੀਂ
+    ਕੀਤਾ ਗਿਆ ਹੈ। ਇਹ ਉਦੋਂ ਤੱਕ ਲਾਗੂ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ ਜਦੋਂ ਤੱਕ ਇਹ ਨਿਸ਼ਚਤ ਨਹੀਂ ਹੁੰਦਾ.
+  wwcBlacklistedMsg: ਤੁਹਾਡੇ ਸੁਨੇਹੇ ਵਿੱਚ ਵਰਜਿਤ ਭਾਸ਼ਾ ਹੈ ਅਤੇ ਇਸਦਾ ਅਨੁਵਾਦ ਨਹੀਂ ਕੀਤਾ ਗਿਆ
+    ਸੀ।
+  wwcBlacklistedMsgDetected: 'ਬਲੈਕਲਿਸਟਡ ਸ਼ਬਦ ({0}) ਦਾ ਪਤਾ ਲਗਾਇਆ ਗਿਆ: {1}'
+  wwcBlacklistLoaded: '{0} ਪਾਬੰਦੀਸ਼ੁਦਾ ਸ਼ਬਦਾਂ ਦੀ ਤੁਹਾਡੀ ਬਲੈਕਲਿਸਟ ਲੋਡ ਹੋ ਗਈ ਹੈ.'
+  wwcConfigConversationAddBlacklist: ਨਵਾਂ ਸ਼ਬਦ ਦਾਖਲ ਕਰੋ ਜਿਸਨੂੰ ਤੁਸੀਂ ਜੋੜਨਾ ਚਾਹੁੰਦੇ
+    ਹੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ਬਲੈਕਲਿਸਟ ਤੋਂ ਮਿਟਾਓ
+  wwcConfigConversationBlacklistAddSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬਲੈਕਲਿਸਟ ਵਿੱਚ ਇੱਕ ਨਵਾਂ ਸ਼ਬਦ
+    ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ।
+  wwcConfigGUIMessagesModifyBlacklistButton: ਬਲੈਕਲਿਸਟ ਸੋਧੋ
+  wwcConfigGUIChatBlacklistButton: ਬਲੈਕਲਿਸਟ ਨੂੰ ਸਮਰੱਥ ਕਰੋ
+  wwcConfigConversationBlacklistDeletionSuccess: ਸਫਲਤਾਪੂਰਵਕ ਸ਼ਬਦ ਮਿਟਾ ਦਿੱਤਾ
+  wwcConfigGUIChatChannelSettings: ਚੈਟ ਚੈਨਲ ਸੰਰਚਨਾ
+  wwcConfigGUIChatBlacklistSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬਲੈਕਲਿਸਟ ਟੌਗਲ ਕੀਤਾ.
+  wwcConfigGUIChatMessagesBlacklistNewButton: ਨਵਾਂ ਸ਼ਬਦ ਸ਼ਾਮਲ ਕਰੋ
+  wwcConfigGUIChatChannelButton: ਚੈਨਲ ਸੈਟਿੰਗ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
+  wwcConfigGUIBlacklistMessagesModify: ਮਿਆਦ ਸੋਧੋ ({0})
+  wwcConfigChatChannelFormatInvalid: ਅਵੈਧ ਚੈਨਲ ਫਾਰਮੈਟ ਖੋਜਿਆ ਗਿਆ. {0} ਤੇ ਡਿਫੌਲਟ ਹੋ
+    ਰਿਹਾ ਹੈ...
+  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
+    ਸਾਡੀਆਂ ਡਿਫੌਲਟ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਦਲੀਲਾਂ ਜੋ ਤੁਸੀਂ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ
+    ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%)
+    ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
+  wwcConfigGUIModifyBlacklistSettings: ਬਲੈਕਲਿਸਟ ਸੋਧੋ
+  wwcConfigGUINextPageButton: ਅਗਲਾ ਪੰਨਾ
 

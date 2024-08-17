@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: সাইন অনুবাদ টগল করুন
   wwcUpdaterOutOfDate: ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে আপডেট
     করুন, {0}।
-  wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
   wwcConfigInvalidTranslatorSettings: অকার্যকর অনুবাদক সেটিংস! অনুগ্রহ করে আপনার config.yml
     এ শুধুমাত্র একটি অনুবাদক সক্ষম করুন।
   wwcConfigGUIQuitButton: পরিবর্তন থেকে প্রস্থান করো
@@ -599,4 +598,91 @@ Messages:
     করুন।
   wwcRateNoConvoFolia: ফোলিয়ায় GUI এর মাধ্যমে একটি রেট সীমা নির্ধারণ করতে অক্ষম।
     পরিবর্তে /wwctrl বা /translateratelimit ব্যবহার করুন।
+  wwcInvalidTranslatorUser: ওয়ার্ল্ডওয়াইডচ্যাট বর্তমানে উপলব্ধ। পরে আবার চেষ্টা
+    করুন বা এটি অব্যাহত থাকলে আপনার প্রশাসকের সাথে যোগাযোগ করুন।
+  wwcCouldNotSaveOhNo: WorldwideChat ডেটা সংরক্ষণ করতে অক্ষম... দয়া করে নিশ্চিত করুন
+    যে আপনার নির্বাচিত ডাটাবেস/স্টোরেজ বিকল্পটি স্থিতিশীল!
+  wwcSyncUserDataComplete: '{0} এ ব্যবহারকারীর ডেটা সফলভাবে সংরক্ষণ করা হয়েছে {1}'
+  wwcSyncUserDataStart: ব্যবহারকারীর ডেটা সিঙ্ক করা...
+  wwcdDebugEnvDisabled: ডিবাগ পরিবেশ নিষ্ক্রিয় করা হয়েছে।
+  wwcdDebugEnvWarn: 'আপনি এই প্লাগইনটি বিকাশ/কোনও বাগ তদন্ত না করা হলে ডিবাগ পরিবেশটি
+    টগল করা প্রায় কখনই সুপারিশ করা হয় না। আপনি যদি এখনও এগিয়ে যেতে চান তবে নিম্নলিখিতটি
+    টাইপ করুন: {0}'
+  wwclLangNotLoadedConsole: '{0} এই সময়ে ব্যবহার করা যাবে না। আপনি এটি ঠিক করতে প্লাগইনটি
+    পুনরায় লোড করার চেষ্টা করতে পারেন, তবে এটি অব্যাহত থাকলে দয়া করে বিকাশকারীর
+    সাথে যোগাযোগ করুন।'
+  wwcdDebugEnvEnabled: ডিবাগ পরিবেশ সক্ষম করা হয়েছে।
+  wwclLangNotLoaded: '{0} এই সময়ে ব্যবহার করা যাবে না। একটি ভিন্ন সমর্থিত স্থানীয়করণ
+    ব্যবহার করার চেষ্টা করুন: {1}'
+  wwcdDebugBadState: WorldwideChat-এর বৈধ অনুবাদক সেট না থাকাকালীন এই ডিবাগ কমান্ডটি
+    চালানো যাবে না। দয়া করে পরে আবার চেষ্টা করুন।
+  wwcNoVaultOnFolia: ভল্ট বর্তমানে ফোলিয়ায় সমর্থিত নয়। এটি অন্যান্য চ্যাট প্লাগইনগুলির
+    সাথে সামঞ্জস্যতা ভাঙতে পারে।
+  wwcNoVaultPlugin: ভল্ট ইনস্টল করা হয় না! এটি অন্যান্য ইনস্টল করা চ্যাট প্লাগইনগুলির
+    সাথে সামঞ্জস্যতা ভাঙতে পারে
+  wwcVaultChatProviderFound: 'একটি ভল্ট চ্যাট সরবরাহকারী খুঁজে পেয়েছি: {0}।'
+  wwcNoVaultChatProvider: ভল্ট ইনস্টল করা হয়েছে, তবে কোনও সমর্থিত চ্যাট সরবরাহকারী
+    সনাক্ত করা হয়নি।
+  wwcConfigEventPrioritySet: চ্যাট শ্রোতার ইভেন্ট অগ্রাধিকার {0} এ সেট করুন।
+  wwcConfigEventPriorityInvalid: config.yml এ অবৈধ চ্যাট শ্রোতা ইভেন্ট অগ্রাধিকার।
+    {0} এ ডিফল্ট করা হচ্ছে...
+  wwcConfigGUIChatListenerPriorityButton: চ্যাট ইভেন্ট শ্রোতার অগ্রাধিকার
+  wwcConfigConversationChatPriorityBadInput: বাদ চ্যাট অগ্রাধিকার ইনপুট! দয়া করে
+    আবার চেষ্টা করুন।
+  wwcConfigConversationChatPrioritySuccess: সফলভাবে আপনার চ্যাট ইভেন্ট অগ্রাধিকার
+    সেট
+  wwcConfigVaultSupportInvalid: config.yml এ অবৈধ ভল্ট সমর্থন সেট করা হয়েছে। সত্যে
+    ডিফল্ট করা হচ্ছে...
+  wwcWatsonDeprecation: ওয়াটসনকে অপ্রচলিত করা হয়েছে এবং এটি আর আইবিএম দ্বারা সমর্থিত
+    নয়। দয়া করে স্যুইচিং বিবেচনা করুন, কারণ পরবর্তী আপডেটে এর জন্য সমর্থন সরানো
+    হবে।
+  wwcConfigForceChatChannelEnabled: সমস্ত অনুবাদের সময় একটি পৃথক অনুবাদ চ্যানেল বাধ্য
+    করা হবে।
+  wwcConfigConversationSeparateChatChannelForceSuccess: সফলভাবে পৃথক চ্যানেল জোর করে
+    টগড করা
+  wwcConfigConversationChannelIconInput: পৃথক অনুবাদ চ্যানেলের বর্তমান আইকন {0}। রঙ
+    কোড সমর্থিত; ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationChatPriorityInput: 'বর্তমান চ্যাট ইভেন্টের অগ্রাধিকার {0}।
+    টাইপ 0 ফিরে যান বা বৈধ অগ্রাধিকারগুলির এই তালিকা থেকে বেছে নিন: {1}।'
+  wwcConfigGUISeparateChatChannelFormatButton: পৃথক চ্যানেল বিন্যাস
+  wwcConfigConversationChannelIconSuccess: সফলভাবে আপনার চ্যানেল আইকন পরিবর্তন
+  wwcConfigGUISeparateChatChannelIconButton: ভিন্ন চ্যানেল আইকন পরিবর্তন
+  wwcConfigConversationChatFormatSuccess: আপনার বিন্যাস সফলভাবে পরিবর্তন করা হয়েছে।
+  wwcConfigGUISeparateChatChannelForceButton: ফোর্স পৃথক চ্যানে
+  wwcOrigHover: 'মূল বার্তা: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: আসল বহির্গামী চ্যাট অনুবাদের
+    সাথে সংযুক্ত হোভার টেক্সট সফলভাবে টগ করা হয়েছে
+  wwcConfigGUISendOutgoingHoverTextChatButton: হোভার টেক্সট হিসাবে মূল বহির্গামী বার্তা
+    যুক্ত করুন
+  wwcConfigPAPIInstalled: আপনার চ্যাট ফর্ম্যাটের জন্য PlaceholderAPI সমর্থন সক্ষম
+    করা হয়েছে।
+  wwcConfigPAPINotInstalled: আপনার চ্যাট ফর্ম্যাটে কাস্টম প্লেসহোল্ডারগুলি সনাক্ত
+    করা হয়েছে, তবে PlaceholderAPI ইনস্টল করা হয়নি। দয়া করে নিশ্চিত করুন যে প্লাগইন
+    লোড হয়েছে এবং সক্ষম হয়েছে।
+  wwcConfigChatChannelIconInvalid: অবৈধ চ্যানেল আইকন সনাক্ত {0} এ ডিফল্ট করা হচ্ছে...
+  wwcBlacklistBadFormat: আপনার কালো তালিকা সঠিকভাবে একটি তালিকা হিসাবে ফর্ম্যাট করা
+    হয়নি। এটি সংশোধন না হওয়া পর্যন্ত এটি প্রয়োগ করা হবে না।
+  wwcBlacklistedMsg: আপনার বার্তায় নিষিদ্ধ ভাষা রয়েছে এবং এটি অনুবাদ করা হয়নি।
+  wwcBlacklistedMsgDetected: 'কালো তালিকাভুক্ত শব্দ ({0}) সনাক্ত করা হয়েছে: {1}'
+  wwcBlacklistLoaded: '{0} নিষিদ্ধ শব্দের আপনার কালো তালিকা লোড করা হয়েছে।'
+  wwcConfigConversationAddBlacklist: আপনি যে নতুন শব্দটি যুক্ত করতে চান তা লিখুন বা
+    ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ব্ল্যাকলিস্ট থেকে মুছে ফেলুন
+  wwcConfigConversationBlacklistAddSuccess: সফলভাবে ব্ল্যাকলিস্টে একটি নতুন শব্দ যুক্ত
+    করা হয়েছে।
+  wwcConfigGUIMessagesModifyBlacklistButton: ব্ল্যাকলিস্ট পরিবর্তন করুন
+  wwcConfigGUIChatBlacklistButton: ব্ল্যাকলিস্ট সক্ষম করুন
+  wwcConfigConversationBlacklistDeletionSuccess: সফলভাবে শব্দটি মুছে ফেলা হয়েছে
+  wwcConfigGUIChatChannelSettings: চ্যাট চ্যানেল কন
+  wwcConfigGUIChatBlacklistSuccess: সফলভাবে ব্ল্যাকলিস্টটি টক করা হয়েছে।
+  wwcConfigGUIChatMessagesBlacklistNewButton: নতুন শব্দ যোগ করুন
+  wwcConfigGUIChatChannelButton: চ্যানেল সেটিং অনুবাদ
+  wwcConfigGUIBlacklistMessagesModify: মেয়াদ পরিবর্তন করুন ({0})
+  wwcConfigChatChannelFormatInvalid: বৈধ চ্যানেল বিন্যাস সনাক্ত {0} এ ডিফল্ট করা হচ্ছে...
+  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
+    আমাদের ডিফল্ট স্বীকৃত যুক্তি যা আপনি অন্তর্ভুক্ত করতে পারেন: {1}। আপনার যদি PlaceholderAPI
+    থাকে তবে নিশ্চিত করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে।
+    ফিরে যেতে 0 টাইপ করুন।'
+  wwcConfigGUIModifyBlacklistSettings: ব্ল্যাকলিস্ট পরিবর্তন করুন
+  wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
 

@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: ضامن ترجمه امضا
   wwcUpdaterOutOfDate: WorldwideChat از تاریخ گذشته است. لطفا به آخرین نسخه به‌روزرسانی
     کنید، {0}.
-  wwcConfigGUINextPageButton: صفحه بعدی
   wwcConfigInvalidTranslatorSettings: تنظیمات مترجم نامعتبر! لطفا تنها یک مترجم را
     در config.yml خود فعال کنید.
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
@@ -600,4 +599,88 @@ Messages:
     مقدار تغییر دهید.
   wwcRateNoConvoFolia: قادر به تعیین محدودیت نرخ از طریق GUI در Folia نیست. لطفا از
     /wwctrl یا /translateratelimit به جای آن استفاده کنید.
+  wwcInvalidTranslatorUser: WorldwideChat در حال حاضر در دسترس نیست. لطفاً بعداً دوباره
+    امتحان کنید یا در صورت ادامه کار با مدیر خود تماس بگیرید.
+  wwcCouldNotSaveOhNo: قادر به ذخیره داده های WorldwideChat نیست... لطفا اطمینان حاصل
+    کنید که گزینه پایگاه داده/ذخیره سازی انتخاب شده شما پایدار است!
+  wwcSyncUserDataComplete: اطلاعات کاربر با موفقیت به {0} ذخیره شد. {1}
+  wwcSyncUserDataStart: همگام سازی داده های کاربر...
+  wwcdDebugEnvDisabled: محیط اشکال زدایی غیرفعال شده است.
+  wwcdDebugEnvWarn: 'تغییر محیط اشکال زدایی تقریباً هرگز توصیه نمی شود مگر اینکه در
+    حال توسعه این افزونه یا بررسی یک اشکال باشید. اگر هنوز هم می خواهید ادامه دهید،
+    موارد زیر را تایپ کنید: {0}'
+  wwclLangNotLoadedConsole: '{0} در حال حاضر نمی تواند مورد استفاده قرار گیرد. برای
+    رفع این موضوع می توانید پلاگین را دوباره بارگیری کنید، اما اگر ادامه یابد لطفا
+    با توسعه دهنده تماس بگیرید.'
+  wwcdDebugEnvEnabled: محیط اشکال زدایی فعال شده است.
+  wwclLangNotLoaded: '{0} در حال حاضر قابل استفاده نیست. سعی کنید از یک محلی سازی
+    پشتیبانی شده دیگر استفاده کنید: {1}'
+  wwcdDebugBadState: این دستور اشکال زدایی را نمی توان اجرا کرد در حالی که WorldwideChat
+    مجموعه مترجم معتبر ندارد. لطفا بعدا دوباره امتحان کنید.
+  wwcNoVaultOnFolia: در حال حاضر Vault در Folia پشتیبانی نمی شود. این ممکن است سازگاری
+    با سایر پلاگین های چت را مختل کند.
+  wwcNoVaultPlugin: ویلت نصب نشده است! این ممکن است سازگاری با سایر پلاگین های چت
+    نصب شده را مختل کند.
+  wwcVaultChatProviderFound: 'یک ارائه دهنده چت Vault پیدا شد: {0}.'
+  wwcNoVaultChatProvider: Vault نصب شده است، اما هیچ ارائه دهنده چت پشتیبانی شده شناسایی
+    نشده است.
+  wwcConfigEventPrioritySet: اولویت رویداد شنونده چت را به {0} تنظیم کنید.
+  wwcConfigEventPriorityInvalid: اولویت رویداد شنونده چت نامعتبر در config.yml. پیش
+    فرض به {0}...
+  wwcConfigGUIChatListenerPriorityButton: تغییر اولویت شنونده رویداد چت
+  wwcConfigConversationChatPriorityBadInput: ورودی اولویت چت بد! لطفا دوباره امتحان
+    کنید.
+  wwcConfigConversationChatPrioritySuccess: اولویت رویداد چت خود را با موفقیت تنظیم
+  wwcConfigVaultSupportInvalid: پشتیبانی از خزانه نامعتبر در config.yml تنظیم شده
+    است. پیش فرض به واقعی...
+  wwcWatsonDeprecation: واتسون منسوخ شده است و دیگر توسط IBM پشتیبانی نمی شود. لطفا
+    تغییر را در نظر بگیرید، زیرا پشتیبانی از آن در به روز رسانی بعدی حذف خواهد شد.
+  wwcConfigForceChatChannelEnabled: یک کانال ترجمه جداگانه در طول تمام ترجمه ها اجباری
+    خواهد شد.
+  wwcConfigConversationSeparateChatChannelForceSuccess: با موفقیت وادار کردن کانال
+    جداگانه را تغییر داد.
+  wwcConfigConversationChannelIconInput: آیکون فعلی برای کانال ترجمه جداگانه {0} است.
+    کدهای رنگ پشتیبانی می شوند. برای بازگشت 0 تایپ کنید.
+  wwcConfigConversationChatPriorityInput: 'اولویت رویداد چت فعلی {0} است. تایپ 0 به
+    عقب بروید یا از این لیست اولویت های معتبر انتخاب کنید: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: تغییر فرمت کانال جداگانه
+  wwcConfigConversationChannelIconSuccess: نماد کانال خود را با موفقیت تغییر داد.
+  wwcConfigGUISeparateChatChannelIconButton: تغییر آیکون کانال جداگانه
+  wwcConfigConversationChatFormatSuccess: فرمت شما با موفقیت تغییر کرده است.
+  wwcConfigGUISeparateChatChannelForceButton: مجبور کانال جداگانه
+  wwcOrigHover: 'پیام اصلی: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: چت خروجی اصلی متصل به ترجمه
+    به عنوان متن هور با موفقیت تعویض شد.
+  wwcConfigGUISendOutgoingHoverTextChatButton: پیام های خروجی اصلی را به عنوان متن
+    هور اضافه کنید
+  wwcConfigPAPIInstalled: پشتیبانی PlaceholderAPI برای فرمت چت شما فعال شده است.
+  wwcConfigPAPINotInstalled: نگهدارهای مکان سفارشی در قالب چت شما شناسایی شده اند،
+    اما PlaceholderAPI نصب نشده است. لطفا اطمینان حاصل کنید که پلاگین بارگذاری شده
+    و فعال است.
+  wwcConfigChatChannelIconInvalid: آیکون کانال نامعتبر شناسایی شد پیش فرض به {0}...
+  wwcBlacklistBadFormat: لیست سیاه شما به درستی به عنوان یک لیست فرمت نشده است. تا
+    زمانی که این موضوع اصلاح نشود اجرا نخواهد شد.
+  wwcBlacklistedMsg: پیام شما حاوی زبان ممنوع است و ترجمه نشده است.
+  wwcBlacklistedMsgDetected: 'کلمه لیست سیاه ({0}) شناسایی شده است: {1}'
+  wwcBlacklistLoaded: لیست سیاه شما از کلمات ممنوع {0} بارگذاری شده است.
+  wwcConfigConversationAddBlacklist: اصطلاح جدیدی را که می خواهید اضافه کنید وارد
+    کنید یا 0 را تایپ کنید تا برگردید.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: حذف از لیست سیاه
+  wwcConfigConversationBlacklistAddSuccess: با موفقیت یک اصطلاح جدید به لیست سیاه
+    اضافه شد.
+  wwcConfigGUIMessagesModifyBlacklistButton: تغییر لیست سیاه
+  wwcConfigGUIChatBlacklistButton: فعال کردن لیست سیاه
+  wwcConfigConversationBlacklistDeletionSuccess: عبارت را با موفقیت حذف کرد
+  wwcConfigGUIChatChannelSettings: پیکربندی کانال چت
+  wwcConfigGUIChatBlacklistSuccess: با موفقیت لیست سیاه را تغییر داد.
+  wwcConfigGUIChatMessagesBlacklistNewButton: اضافه کردن کلمه جدید
+  wwcConfigGUIChatChannelButton: ترجمه تنظیمات کانال
+  wwcConfigGUIBlacklistMessagesModify: اصلاح اصطلاح ({0})
+  wwcConfigChatChannelFormatInvalid: فرمت کانال نامعتبر شناسایی شد. پیش فرض به {0}...
+  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
+    استدلال های شناخته شده پیش فرض ما که می توانید شامل: {1}. اگر PlaceholderAPI دارید،
+    مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ
+    کنید.'
+  wwcConfigGUIModifyBlacklistSettings: تغییر لیست سیاه
+  wwcConfigGUINextPageButton: صفحه بعدی
 

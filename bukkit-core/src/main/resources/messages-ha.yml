@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Fassara alamar toggle
   wwcUpdaterOutOfDate: WorldwideChat ba ta da kwanan wata. Da fatan za a sabunta zuwa
     sabuwar version, {0}.
-  wwcConfigGUINextPageButton: Shafi na gaba
   wwcConfigInvalidTranslatorSettings: Saitunan fassara mara inganci! Da fatan za a
     taimaka wa mai fassara ɗaya kawai a cikin daidaitawa.yml.
   wwcConfigGUIQuitButton: Fita & Ajiye Canje-canje
@@ -601,4 +600,93 @@ Messages:
     don wannan ƙimar.
   wwcRateNoConvoFolia: Ba za a iya saita iyakar ƙimar ta hanyar GUI akan Folia ba.
     Da fatan za a yi amfani da /wwctrl ko /translateratelimit maimakon haka.
+  wwcInvalidTranslatorUser: WorldwideChat a halin yanzu babu shi. Da fatan za a sake
+    gwada daga baya ko tuntuɓi mai gudanarwa idan wannan ya ci gaba.
+  wwcCouldNotSaveOhNo: Ba za a iya adana bayanan WorldwideChat ba... da fatan za a
+    tabbatar da cewa zaɓaɓɓun bayanan bayanai/zaɓin ajiya yana da ƙarfi!
+  wwcSyncUserDataComplete: An sami nasarar adana bayanan mai amfani zuwa {0}. {1}
+  wwcSyncUserDataStart: Daidaita bayanan mai amfani...
+  wwcdDebugEnvDisabled: An nakasa yanayin ƙwaƙwalwa.
+  wwcdDebugEnvWarn: 'Ba a taɓa ba da shawarar sauya yanayin ƙwaƙwalwa ba sai dai idan
+    kuna haɓaka wannan plugin ɗin /bincika kwaro. Idan har yanzu kuna son ci gaba,
+    rubuta masu zuwa: {0}'
+  wwclLangNotLoadedConsole: Ba za a iya amfani da {0} a wannan lokacin ba. Kuna iya
+    gwada sake loda plugin don gyara wannan, amma idan ya ci gaba da fatan za a tuntuɓi
+    mai haɓakawa.
+  wwcdDebugEnvEnabled: An kunna yanayin ƙwaƙwalwa.
+  wwclLangNotLoaded: 'Ba za a iya amfani da {0} a wannan lokacin ba. Gwada amfani
+    da wani yanki mai tallafi daban-daban: {1}'
+  wwcdDebugBadState: Ba za a iya gudanar da wannan umarnin ɓarna ba yayin da WorldwideChat
+    ba shi da ingantaccen saiti mai fassara. Da fatan za a sake gwada daga baya.
+  wwcNoVaultOnFolia: A halin yanzu ba a tallafawa Vault akan Folia. Wannan na iya
+    karya dacewa tare da sauran plugins na hira.
+  wwcNoVaultPlugin: Ba a shigar da Vault ba! Wannan na iya karya dacewa tare da sauran
+    plugins na hira da aka shigar.
+  wwcVaultChatProviderFound: 'An samo mai ba da hira na Vault: {0}.'
+  wwcNoVaultChatProvider: An shigar da Vault, amma ba a gano wani mai ba da taɗi mai
+    tallafi ba.
+  wwcConfigEventPrioritySet: Saita fifikon taron masu sauraro taɗi zuwa {0}.
+  wwcConfigEventPriorityInvalid: Fifikon taron masu sauraron taɗi mara kyau a cikin
+    config.yml. Rarraba zuwa {0}...
+  wwcConfigGUIChatListenerPriorityButton: Canja Fifikon Masu Sauraren Tattaunawa
+  wwcConfigConversationChatPriorityBadInput: Shigar da fifikon taɗi mara kyau! Da
+    fatan za a sake gwada.
+  wwcConfigConversationChatPrioritySuccess: Samun nasarar saita fifikon taron tattaunawar
+    ku.
+  wwcConfigVaultSupportInvalid: Tallafin kuɗi mara inganci wanda aka saita a cikin
+    config.yml. Rashin gaskiya zuwa gaskiya...
+  wwcWatsonDeprecation: Watson ya ƙare shi kuma IBM baya goyan bayan shi. Da fatan
+    za a yi la'akari da sauyawa, kamar yadda za a cire tallafi a cikin sabuntawa na
+    gaba.
+  wwcConfigForceChatChannelEnabled: Za a tilasta wata tashar fassara daban yayin duk
+    fassarar.
+  wwcConfigConversationSeparateChatChannelForceSuccess: An sami nasarar canza tilasta
+    tashar daban.
+  wwcConfigConversationChannelIconInput: Gunkin yanzu don tashar fassara ta daban
+    shine {0}. Ana tallafawa lambobin launi; rubuta 0 don komawa.
+  wwcConfigConversationChatPriorityInput: 'Fifikon taron tattaunawa na yanzu shine
+    {0}. Rubuta 0 zuwa baya ko zaɓi daga wannan jerin abubuwan da suka fi dacewa:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Canja Tsarin Tashar daban
+  wwcConfigConversationChannelIconSuccess: An sami nasarar canza gunkin tashar ku.
+  wwcConfigGUISeparateChatChannelIconButton: Canja Gunkin Tashar daban
+  wwcConfigConversationChatFormatSuccess: An canza tsarin ku cikin nasara.
+  wwcConfigGUISeparateChatChannelForceButton: Ƙarfin tashar daban
+  wwcOrigHover: 'Saƙon Asali: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Tattaunawar fita na asali
+    wanda aka haɗe da fassara kamar yadda rubutun hover aka canza cikin nasara.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Ƙara Saƙonnin Fita na Asali azaman
+    Rubutun Hover
+  wwcConfigPAPIInstalled: An kunna tallafin PlaceholderAPI don tsarin tattaunawar
+    ku.
+  wwcConfigPAPINotInstalled: An gano masu riƙe wurare na al'ada a cikin tsarin tattaunawar
+    ku, amma ba a shigar da PlaceholderAPI ba. Da fatan za a tabbatar da cewa plugin
+    ɗin ya ɗora kuma an kunna shi.
+  wwcConfigChatChannelIconInvalid: An gano gunkin tashar mara kyau. Rarraba zuwa {0}...
+  wwcBlacklistBadFormat: Ba a tsara jerin baƙin ku yadda ya kamata azaman jerin ba.
+    Ba za a aiwatar da shi ba har sai an gyara wannan.
+  wwcBlacklistedMsg: Sakonku ya ƙunshi harshen haramta kuma ba a fassara shi ba.
+  wwcBlacklistedMsgDetected: 'An gano kalmar da aka lissafa baki ({0}): {1}'
+  wwcBlacklistLoaded: An ɗora jerin bakin ku na kalmomin {0} da aka haramta.
+  wwcConfigConversationAddBlacklist: Shigar da sabon kalmar da kuke son ƙara, ko rubuta
+    0 don komawa.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Share daga Black List
+  wwcConfigConversationBlacklistAddSuccess: An sami nasarar ƙara sabon kalma zuwa
+    jerin baki.
+  wwcConfigGUIMessagesModifyBlacklistButton: Gyara jerin baƙar fata
+  wwcConfigGUIChatBlacklistButton: Kunna jerin baƙar fata
+  wwcConfigConversationBlacklistDeletionSuccess: An sami nasarar share kalmar.
+  wwcConfigGUIChatChannelSettings: Tsarin Tashoshin Taɗi
+  wwcConfigGUIChatBlacklistSuccess: An sami nasarar canza jerin baki.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Ƙara Sabuwar Kalma
+  wwcConfigGUIChatChannelButton: Fassara Saitunan Tashar
+  wwcConfigGUIBlacklistMessagesModify: Gyara Lokaci ({0})
+  wwcConfigChatChannelFormatInvalid: An gano tsarin tashar mara kyau. Rashin zuwa
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Tsarin yanzu don tashar tattaunawa ta
+    daban shine {0}. Tsoffin hujjojinmu da za ku iya haɗawa da: {1}. Idan kuna da
+    PlaceholderAPI, tabbatar cewa waɗancan masu canji suna kewaye da kashi (%) maimakon
+    haka. Rubuta 0 don komawa.'
+  wwcConfigGUIModifyBlacklistSettings: Gyara jerin baƙar fata
+  wwcConfigGUINextPageButton: Shafi na gaba
 

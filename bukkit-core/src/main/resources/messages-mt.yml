@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Toggle Sinjal Traduzzjoni
   wwcUpdaterOutOfDate: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar verżjoni,
     {0}.
-  wwcConfigGUINextPageButton: Paġna li jmiss
   wwcConfigInvalidTranslatorSettings: Settings traduttur invalidi! Jekk jogħġbok ħalli
     traduttur wieħed biss fil-konfig.yml tiegħek.
   wwcConfigGUIQuitButton: Ħruġ & Save Bidliet
@@ -606,4 +605,95 @@ Messages:
     l-konfigurazzjoni manwalment għal dan il-valur.
   wwcRateNoConvoFolia: Ma jistax jistabbilixxi limitu tar-rata permezz tal-GUI fuq
     Folia. Jekk jogħġbok uża /wwctrl jew /translateratelimit minflok.
+  wwcInvalidTranslatorUser: WorldwideChat bħalissa mhux disponibbli. Jekk jogħġbok
+    ipprova mill-ġdid aktar tard jew ikkuntattja lill-amministratur tiegħek jekk dan
+    jippersisti
+  wwcCouldNotSaveOhNo: Ma tistax tissejvja d-data WorldwideChat... jekk jogħġbok żgura
+    li l-għażla tad-dejta magħżula/ħażna tiegħek hija stabbli!
+  wwcSyncUserDataComplete: Iffrankat b'suċċess id-dejta tal-utent għal {0}. {1}
+  wwcSyncUserDataStart: Sinkronizzazzjoni tad-dejta tal-utent...
+  wwcdDebugEnvDisabled: L-ambjent tad-debug ġie diżattivat.
+  wwcdDebugEnvWarn: 'Toggling l-ambjent debug huwa kważi qatt rakkomandat sakemm ma
+    tkunx qed tiżviluppa dan il-plugin/tinvestiga bug. Jekk xorta trid tipproċedi,
+    ittajpja dan li ġej: {0}'
+  wwclLangNotLoadedConsole: '{0} ma jistax jintuża f''dan il-ħin. Tista ''tipprova
+    tagħbija mill-ġdid il-plugin biex tiffissa dan, imma jekk tippersisti jekk jogħġbok
+    ikkuntattja lill-iżviluppatur.'
+  wwcdDebugEnvEnabled: L-ambjent tad-debug ġie ppermettat.
+  wwclLangNotLoaded: '{0} ma jistax jintuża f''dan il-ħin. Ipprova tuża lokalizzazzjoni
+    appoġġjata differenti: {1}'
+  wwcdDebugBadState: Dan il-kmand debug ma jistax jitmexxa filwaqt li WorldwideChat
+    m'għandux sett traduttur validu. Jekk jogħġbok ipprova mill-ġdid aktar tard.
+  wwcNoVaultOnFolia: Vault bħalissa mhuwiex appoġġjat fuq Folia. Dan jista' jkisser
+    il-kompatibilità ma' plugins oħra taċ-chat.
+  wwcNoVaultPlugin: Vault mhix installata! Dan jista 'jkisser il-kompatibilità ma'
+    plugins oħra installati taċ-chat.
+  wwcVaultChatProviderFound: 'Sibt fornitur tal-chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault huwa installat, iżda l-ebda fornitur taċ-chat appoġġjat
+    ma ġie skopert.
+  wwcConfigEventPrioritySet: Issettja l-prijorità tal-avveniment tas-semmiegħa taċ-chat
+    {0}
+  wwcConfigEventPriorityInvalid: Prijorità ta' avveniment tas-semmiegħa taċ-chat invalidu
+    f'config.yml. Insuffiċjenza għal {0}...
+  wwcConfigGUIChatListenerPriorityButton: Ibdel il-Prijorità tas-Semmiegħa tal-
+  wwcConfigConversationChatPriorityBadInput: Input ta 'prijorità ta' chat ħażin! Jekk
+    jogħġbok ipprova mill-ġdid.
+  wwcConfigConversationChatPrioritySuccess: Issettja b'suċċess il-prijorità tal-avveniment
+    chat tiegħek
+  wwcConfigVaultSupportInvalid: Appoġġ għall-forti invalidu stabbilit f'config.yml.
+    Insuffiċjenza għal veru...
+  wwcWatsonDeprecation: Watson ġie deprecated u m'għadux appoġġjat minn IBM. Jekk
+    jogħġbok ikkunsidra li taqleb, bħala l-appoġġ għaliha se jitneħħa fl-aġġornament
+    li jmiss.
+  wwcConfigForceChatChannelEnabled: Kanal separat ta' traduzzjoni jiġi sfurzat matul
+    it-traduzzjonijiet kollha.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Imqabbad b'suċċess sforza
+    l-kanal separat.
+  wwcConfigConversationChannelIconInput: L-ikona kurrenti għall-kanal separat tat-traduzzjoni
+    hija {0}. Il-kodiċijiet tal-kulur huma appoġġjati; tip 0 biex tmur lura.
+  wwcConfigConversationChatPriorityInput: 'Il-prijorità attwali tal-avveniment taċ-chat
+    hija {0}. Tip 0 mur lura jew agħżel minn din il-lista ta ''prijoritajiet validi:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ibdel il-Format tal-Kanal Separat
+  wwcConfigConversationChannelIconSuccess: Bidlet b'suċċess l-ikona tal-kanal tiegħek.
+  wwcConfigGUISeparateChatChannelIconButton: Ibdel l-Ikona tal-Kanal separat
+  wwcConfigConversationChatFormatSuccess: Il-format tiegħek inbidel b'suċċess.
+  wwcConfigGUISeparateChatChannelForceButton: Kanal Separat tal-Forza
+  wwcOrigHover: 'Messaġġ Oriġinali: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Chat ħierġa oriġinali mehmuża
+    mat-traduzzjoni bħala test hover togged b'suċċess.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Żid Messaġġi Ħerġin Oriġinali bħala
+    Test Hover
+  wwcConfigPAPIInstalled: L-appoġġ PlaceholderAPI ġie attivat għall-format taċ-chat
+    tiegħek.
+  wwcConfigPAPINotInstalled: Custom placeholders ġew skoperti fil-format chat tiegħek,
+    iżda PlaceholderAPI mhuwiex installat. Jekk jogħġbok żgura li l-plugin ikun mgħobbi
+    u huwa attivat.
+  wwcConfigChatChannelIconInvalid: Ikona tal-kanal invalidu skoperta. Insuffiċjenza
+    għal {0}...
+  wwcBlacklistBadFormat: Il-lista s-sewda tiegħek mhix ifformattjata kif suppost bħala
+    lista. Mhux se jiġi infurzat sakemm dan jiġi ffissat.
+  wwcBlacklistedMsg: Il-messaġġ tiegħek fih lingwa pprojbita u ma ġiex tradott.
+  wwcBlacklistedMsgDetected: 'Kelma fil-lista sewda ({0}) skoperta: {1}'
+  wwcBlacklistLoaded: Il-lista sewda tiegħek ta 'kliem ipprojbiti {0} ġiet mgħobbija.
+  wwcConfigConversationAddBlacklist: Daħħal it-terminu l-ġdid li tixtieq iżżid, jew
+    ittajpja 0 biex tmur lura.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Ħassar minn Blacklist
+  wwcConfigConversationBlacklistAddSuccess: Żid b'suċċess terminu ġdid mal-lista s-sewda.
+  wwcConfigGUIMessagesModifyBlacklistButton: Imodifika l-lista s-sewda
+  wwcConfigGUIChatBlacklistButton: Ippermetti l-Lista s-sewda
+  wwcConfigConversationBlacklistDeletionSuccess: It-terminu ħassar b'suċċess.
+  wwcConfigGUIChatChannelSettings: Konfigurazzjoni tal-Kanal taċ-Ċat
+  wwcConfigGUIChatBlacklistSuccess: Tbiddel b'suċċess il-lista s-sewda.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Żid Kelma Ġdida
+  wwcConfigGUIChatChannelButton: Ittraduċi Settings tal-Kanal
+  wwcConfigGUIBlacklistMessagesModify: Imodifika t-Terminu ({0})
+  wwcConfigChatChannelFormatInvalid: Format tal-kanal invalidu skopert. Insuffiċjenza
+    għal {0}...
+  wwcConfigConversationChannelFormatInput: 'Il-format attwali għall-kanal separat
+    taċ-chat huwa {0}. L-argumenti rikonoxxuti default tagħna li tista ''tinkludi:
+    {1}. Jekk għandek PlaceholderAPI, kun żgur li dawk il-varjabbli huma mdawra b''perċentwali
+    (%) minflok. Tip 0 biex tmur lura.'
+  wwcConfigGUIModifyBlacklistSettings: Imodifika l-lista s-sewda
+  wwcConfigGUINextPageButton: Paġna li jmiss
 

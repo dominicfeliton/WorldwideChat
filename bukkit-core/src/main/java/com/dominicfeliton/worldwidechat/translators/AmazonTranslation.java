@@ -1,16 +1,18 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import com.amazonaws.auth.AWSStaticCredentialsProvider;
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.services.translate.AmazonTranslate;
-import com.amazonaws.services.translate.AmazonTranslateClient;
-import com.amazonaws.services.translate.model.Language;
-import com.amazonaws.services.translate.model.ListLanguagesRequest;
-import com.amazonaws.services.translate.model.TranslateTextRequest;
-import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
+import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
+import software.amazon.awssdk.http.urlconnection.UrlConnectionHttpClient;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.translate.TranslateClient;
+import software.amazon.awssdk.services.translate.model.Language;
+import software.amazon.awssdk.services.translate.model.ListLanguagesRequest;
+import software.amazon.awssdk.services.translate.model.ListLanguagesResponse;
+import software.amazon.awssdk.services.translate.model.TranslateTextRequest;
+import software.amazon.awssdk.services.translate.model.TranslateTextResponse;
 
 import java.util.HashMap;
 import java.util.List;
@@ -47,60 +49,71 @@ public class AmazonTranslation extends BasicTranslation {
 		@Override
 		public String call() throws Exception {
 			/* Initialize AWS Creds + Translation Object */
-			BasicAWSCredentials awsCreds = new BasicAWSCredentials(System.getProperty("AMAZON_KEY_ID"),
-					System.getProperty("AMAZON_SECRET_KEY"));
-			AmazonTranslate translate = AmazonTranslateClient.builder()
-					.withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-					.withRegion(System.getProperty("AMAZON_REGION")).build();
+			// Create AWS credentials
+			AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
+					System.getProperty("AMAZON_KEY_ID"),
+					System.getProperty("AMAZON_SECRET_KEY")
+			);
 
-			if (isInitializing) {
-				/* Get supported languages from AWS and set them */
-				ListLanguagesRequest langRequest = new ListLanguagesRequest();
-				List<Language> awsLangs = translate.listLanguages(langRequest).getLanguages();
-				refs.debugMsg(awsLangs.size() + "");
-				
-				/* Convert supportedLangs to our own SupportedLang objs */
-				Map<String, SupportedLang> supportedLangs = new HashMap<>();
-				for (Language eaLang : awsLangs) {
-					// Don't add auto
-					if (eaLang.getLanguageCode().equals("auto") || eaLang.getLanguageName().equals("auto")) {
-						continue;
-					}
+            TranslateTextResponse result;
+            try (TranslateClient translate = TranslateClient.builder()
+                    .region(Region.of(System.getProperty("AMAZON_REGION")))
+                    .credentialsProvider(StaticCredentialsProvider.create(awsCreds))
+                    .httpClientBuilder(UrlConnectionHttpClient.builder())
+                    .build()) {
 
-					// Add all entries
-					SupportedLang langObj = new SupportedLang(eaLang.getLanguageCode(), eaLang.getLanguageName());
-					supportedLangs.put(eaLang.getLanguageCode(), langObj);
-					supportedLangs.put(eaLang.getLanguageName(), langObj);
-				}
+                if (isInitializing) {
+					// Get supported langs
+                    ListLanguagesRequest langRequest = ListLanguagesRequest.builder().build();
+                    ListLanguagesResponse langResponse = translate.listLanguages(langRequest);
+                    List<Language> awsLangs = langResponse.languages();
+                    refs.debugMsg(awsLangs.size() + "");
 
-				/* Set supported translator langs */
-				main.setInputLangs(refs.fixLangNames(supportedLangs, true, false));
-				main.setOutputLangs(refs.fixLangNames(supportedLangs, true, false));
+                    /* Convert supportedLangs to our own SupportedLang objs */
+                    Map<String, SupportedLang> supportedLangs = new HashMap<>();
+                    for (Language eaLang : awsLangs) {
+						// Don't add auto
+                        if (eaLang.languageCode().equals("auto") || eaLang.languageName().equals("auto")) {
+                            continue;
+                        }
 
-				/* Setup test translation */
-				textToTranslate = "Hi, how are you?";
-				inputLang = "en";
-				outputLang = "es";
-			}
+						// Add all entries
+                        SupportedLang langObj = new SupportedLang(eaLang.languageCode(), eaLang.languageName());
+                        supportedLangs.put(eaLang.languageCode(), langObj);
+                        supportedLangs.put(eaLang.languageName(), langObj);
+                    }
 
-			/* Get language code of current input/output language. 
-			 * APIs generally recognize language codes (en, es, etc.)
-			 * instead of full names (English, Spanish) */
-			if (!isInitializing) {
-				if (!inputLang.equals("None")) {
-					inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
-				}
-				outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
-			}
-			
-			/* Actual translation */
-			TranslateTextRequest request = new TranslateTextRequest().withText(textToTranslate)
-					.withSourceLanguageCode(inputLang.equals("None") ? "auto" : inputLang)
-					.withTargetLanguageCode(outputLang);
-			TranslateTextResult result = translate.translateText(request);
+                    /* Set supported translator langs */
+                    main.setInputLangs(refs.fixLangNames(supportedLangs, true, false));
+                    main.setOutputLangs(refs.fixLangNames(supportedLangs, true, false));
 
-			/* Process + Return final result */
-			return result.getTranslatedText();
+                    /* Setup test translation */
+                    textToTranslate = "Hi, how are you?";
+                    inputLang = "en";
+                    outputLang = "es";
+                }
+
+                /* Get language code of current input/output language.
+                 * APIs generally recognize language codes (en, es, etc.)
+                 * instead of full names (English, Spanish) */
+                if (!isInitializing) {
+                    if (!inputLang.equals("None")) {
+                        inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    }
+                    outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                }
+
+                // Create the translation request using the builder pattern
+                TranslateTextRequest request = TranslateTextRequest.builder()
+                        .text(textToTranslate)
+                        .sourceLanguageCode(inputLang.equals("None") ? "auto" : inputLang)
+                        .targetLanguageCode(outputLang)
+                        .build();
+
+                // Execute the translation
+                result = translate.translateText(request);
+            }
+            return result.translatedText();
 		}
 	}
 }

@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: టోగుల్ సైన్ అనువాదం
   wwcUpdaterOutOfDate: ప్రపంచవ్యాప్తచాట్ తేదీ ముగిసింది. దయచేసి తాజా వర్షన్, {0} కు
     నవీకరించండి.
-  wwcConfigGUINextPageButton: తదుపరి పేజీ
   wwcConfigInvalidTranslatorSettings: చెల్లని అనువాదకుడు సెట్టింగులు! దయచేసి మీ config.yml
     లో ఒక అనువాదకుడిని మాత్రమే ప్రారంభించండి.
   wwcConfigGUIQuitButton: నిష్క్రమించు & మార్పులు సేవ్
@@ -608,4 +607,91 @@ Messages:
     మాన్యువల్గా సవరించడానికి ప్రయత్నించండి.
   wwcRateNoConvoFolia: ఫోలియాపై GUI ద్వారా రేటు పరిమితిని సెట్ చేయలేకపోయింది. దయచేసి
     బదులుగా /wwctrl లేదా /translateratelimit ను ఉపయోగించండి.
+  wwcInvalidTranslatorUser: WorldwideChat ప్రస్తుతం అందుబాటులో లేదు. దయచేసి తరువాత
+    మళ్ళీ ప్రయత్నించండి లేదా ఇది కొనసాగితే మీ నిర్వాహకుడిని సంప్రదించండి.
+  wwcCouldNotSaveOhNo: WorldwideChat డేటాను సేవ్ చేయలేకపోయింది... దయచేసి మీ ఎంచుకున్న
+    డేటాబేస్/నిల్వ ఎంపిక స్థిరంగా ఉందని నిర్ధారించుకోండి!
+  wwcSyncUserDataComplete: వినియోగదారు డేటాను {0} కు విజయవంతంగా సేవ్ చేసింది. {1}
+  wwcSyncUserDataStart: వినియోగదారు డేటాను సమకాలీకరించడం...
+  wwcdDebugEnvDisabled: డీబగ్ వాతావరణం నిలిపివేయబడింది.
+  wwcdDebugEnvWarn: 'మీరు ఈ ప్లగిన్ను అభివృద్ధి చేస్తున్నారు/బగ్ను దర్యాప్తు చేస్తున్నారే
+    తప్ప డీబగ్ పర్యావరణాన్ని టోగ్లింగ్ చేయడం దాదాపు ఎప్పుడూ సిఫార్సు చేయబడదు. మీరు
+    ఇంకా కొనసాగాలనుకుంటే, ఈ క్రింది వాటిని టైప్ చేయండి: {0}'
+  wwclLangNotLoadedConsole: '{0} ఈ సమయంలో ఉపయోగించబడదు. మీరు దీన్ని పరిష్కరించడానికి
+    ప్లగ్ఇన్ రీలోడ్ ప్రయత్నించవచ్చు, కానీ అది కొనసాగితే దయచేసి డెవలపర్ సంప్రదించండి.'
+  wwcdDebugEnvEnabled: డీబగ్ ఎన్విరాన్మెంట్ ప్రారంభించబడింది.
+  wwclLangNotLoaded: '{0} ఈ సమయంలో ఉపయోగించబడదు. వేరే మద్దతు ఉన్న స్థానికీకరణను ఉపయోగించడానికి
+    ప్రయత్నించండి: {1}'
+  wwcdDebugBadState: WorldwideChat చెల్లుబాటు అయ్యే అనువాదకుడి సెట్ లేనప్పుడు ఈ డీబగ్
+    ఆదేశాన్ని అమలు చేయలేము. దయచేసి తరువాత మళ్ళీ ప్రయత్నించండి.
+  wwcNoVaultOnFolia: ఫోలియాలో వాల్ట్ ప్రస్తుతం మద్దతు లేదు. ఇది ఇతర చాట్ ప్లగిన్లతో
+    అనుకూలతను విచ్ఛిన్నం చేయవచ్చు.
+  wwcNoVaultPlugin: వాల్ట్ ఇన్స్టాల్ చేయబడలేదు! ఇది ఇన్స్టాల్ చేయబడిన ఇతర చాట్ ప్లగిన్లతో
+    అనుకూలతను విచ్ఛిన్నం చేయవచ్చు.
+  wwcVaultChatProviderFound: 'వాల్ట్ చాట్ ప్రొవైడర్ కనుగొనబడింది: {0}.'
+  wwcNoVaultChatProvider: వాల్ట్ ఇన్స్టాల్ చేయబడింది, కానీ మద్దతు ఉన్న చాట్ ప్రొవైడర్
+    గుర్తించబడలేదు.
+  wwcConfigEventPrioritySet: చాట్ వినేవారి ఈవెంట్ ప్రాధాన్యతను {0} కు సెట్ చేయండి.
+  wwcConfigEventPriorityInvalid: config.yml లో చెల్లని చాట్ వినేవారి ఈవెంట్ ప్రాధాన్యత.
+    {0} కు డిఫాల్ట్ అవుతోంది...
+  wwcConfigGUIChatListenerPriorityButton: చాట్ ఈవెంట్ వినేవారి ప్రాధాన్యతను మార్చండి
+  wwcConfigConversationChatPriorityBadInput: చెడు చాట్ ప్రాధాన్యత ఇన్పుట్! దయచేసి
+    మళ్ళీ ప్రయత్నించండి.
+  wwcConfigConversationChatPrioritySuccess: మీ చాట్ ఈవెంట్ ప్రాధాన్యతను విజయవంతంగా
+    సెట్ చేయండి.
+  wwcConfigVaultSupportInvalid: config.yml లో చెల్లని ఖజానా మద్దతు సెట్ చేయబడింది.
+    నిజానికి డిఫాల్టింగ్...
+  wwcWatsonDeprecation: వాట్సన్ నిర్వీర్యం చేయబడ్డాడు మరియు ఇకపై IBM మద్దతు ఇవ్వదు.
+    దయచేసి మారడాన్ని పరిగణించండి, ఎందుకంటే దానికి మద్దతు తదుపరి నవీకరణలో తొలగించబడుతుంది.
+  wwcConfigForceChatChannelEnabled: అన్ని అనువాదాల సమయంలో ప్రత్యేక అనువాద ఛానెల్ బలవంతం
+    చేయబడుతుంది.
+  wwcConfigConversationSeparateChatChannelForceSuccess: ప్రత్యేక ఛానెల్ను బలవంతంగా
+    విజయవంతంగా టోగుల్ చేశారు.
+  wwcConfigConversationChannelIconInput: ప్రత్యేక అనువాద ఛానెల్ కోసం ప్రస్తుత చిహ్నం
+    {0}. రంగు సంకేతాలు మద్దతు ఇస్తాయి; తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationChatPriorityInput: 'ప్రస్తుత చాట్ ఈవెంట్ ప్రాధాన్యత {0}. టైప్
+    0 తిరిగి వెళ్ళండి లేదా చెల్లుబాటు అయ్యే ప్రాధాన్యతల ఈ జాబితా నుండి ఎంచుకోండి:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: ప్రత్యేక ఛానల్ ఆకృతిని మార్చండి
+  wwcConfigConversationChannelIconSuccess: మీ ఛానల్ చిహ్నాన్ని విజయవంతంగా మార్చబడింది.
+  wwcConfigGUISeparateChatChannelIconButton: ప్రత్యేక ఛానల్ చిహ్నాన్ని మార్చండి
+  wwcConfigConversationChatFormatSuccess: మీ ఫార్మాట్ విజయవంతంగా మార్చబడింది.
+  wwcConfigGUISeparateChatChannelForceButton: ప్రత్యేక ఛానెల్ను ఫోర్స్ చేయండి
+  wwcOrigHover: 'అసలు సందేశం: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: హోవర్ టెక్స్ట్ విజయవంతంగా
+    togged వంటి అనువాదం జత అసలు అవుట్గోయింగ్ చాట్.
+  wwcConfigGUISendOutgoingHoverTextChatButton: అసలు అవుట్గోయింగ్ సందేశాలను హోవర్ టెక్స్ట్గా
+    జోడించండి
+  wwcConfigPAPIInstalled: మీ చాట్ ఫార్మాట్ కోసం PlaceholderAPI మద్దతు ప్రారంభించబడింది.
+  wwcConfigPAPINotInstalled: కస్టమ్ ప్లేస్హోల్డర్లు మీ చాట్ ఫార్మాట్లో గుర్తించబడ్డాయి,
+    కానీ PlaceholderAPI ఇన్స్టాల్ చేయబడలేదు. దయచేసి ప్లగ్ఇన్ లోడ్ అయిందని మరియు ప్రారంభించబడిందని
+    నిర్ధారించుకోండి.
+  wwcConfigChatChannelIconInvalid: చెల్లని ఛానల్ చిహ్నం కనుగొనబడింది. {0} కు డిఫాల్ట్
+    అవుతోంది...
+  wwcBlacklistBadFormat: మీ బ్లాక్లిస్ట్ సరిగ్గా జాబితాగా ఫార్మాట్ చేయబడలేదు. ఇది
+    పరిష్కరించబడే వరకు ఇది అమలు చేయబడదు.
+  wwcBlacklistedMsg: మీ సందేశం నిషేధిత భాషను కలిగి ఉంది మరియు అనువదించబడలేదు.
+  wwcBlacklistedMsgDetected: 'బ్లాక్లిస్ట్ చేయబడిన పదం ({0}) కనుగొనబడింది: {1}'
+  wwcBlacklistLoaded: '{0} నిషేధించబడిన పదాల మీ బ్లాక్లిస్ట్ లోడ్ చేయబడింది.'
+  wwcConfigConversationAddBlacklist: మీరు జోడించాలనుకుంటున్న క్రొత్త పదాన్ని నమోదు
+    చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: బ్లాక్లిస్ట్ నుండి తొలగించండి
+  wwcConfigConversationBlacklistAddSuccess: బ్లాక్లిస్ట్కు కొత్త పదాన్ని విజయవంతంగా
+    జోడించారు.
+  wwcConfigGUIMessagesModifyBlacklistButton: బ్లాక్లిస్ట్ను సవరించండి
+  wwcConfigGUIChatBlacklistButton: బ్లాక్లిస్ట్ను ప్రారంభించండి
+  wwcConfigConversationBlacklistDeletionSuccess: ఈ పదాన్ని విజయవంతంగా తొలగించారు.
+  wwcConfigGUIChatChannelSettings: చాట్ ఛానల్ కాన్ఫిగరేషన్
+  wwcConfigGUIChatBlacklistSuccess: బ్లాక్లిస్ట్ను విజయవంతంగా టోగల్ చేశారు.
+  wwcConfigGUIChatMessagesBlacklistNewButton: క్రొత్త పదాన్ని జోడించండి
+  wwcConfigGUIChatChannelButton: ఛానల్ సెట్టింగ్లను అనువద
+  wwcConfigGUIBlacklistMessagesModify: పదం సవరించండి ({0})
+  wwcConfigChatChannelFormatInvalid: చెల్లని ఛానల్ ఫార్మాట్ కనుగొనబడింది. {0} కు డిఫాల్ట్
+    అవుతోంది...
+  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
+    {0}. మీరు చేర్చగల మా డిఫాల్ట్ గుర్తించిన వాదనలు: {1}. మీరు PlaceholderAPI కలిగి
+    ఉంటే, ఆ వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి
+    వెళ్ళడానికి 0 అని టైప్ చేయండి.'
+  wwcConfigGUIModifyBlacklistSettings: బ్లాక్లిస్ట్ను సవరించండి
+  wwcConfigGUINextPageButton: తదుపరి పేజీ
 

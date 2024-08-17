@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Түлхүүр гарын үсэг зурах орчуулга
   wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
     хувилбар руу шинэчлэнэ үү, {0}.
-  wwcConfigGUINextPageButton: Дараагийн хуудас
   wwcConfigInvalidTranslatorSettings: Буруу орчуулагч тохиргоо! Өөрийн config.yml-д
     зөвхөн нэг орчуулагчийг идэвхжүүлнэ үү.
   wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
@@ -625,4 +624,96 @@ Messages:
     оролдоорой.
   wwcRateNoConvoFolia: Folia дээрх GUI-ээр дамжуулан ханшийн хязгаарыг тогтоох боломжгүй
     байна. Үүний оронд /wwctrl эсвэл /translateratelimit ашиглана уу.
+  wwcInvalidTranslatorUser: WorldwideChat одоогоор ашиглах боломжгүй байна. Хэрэв
+    энэ нь үргэлжилж байвал дараа нь дахин оролдоно уу эсвэл администратортайгаа холбоо
+    барина уу.
+  wwcCouldNotSaveOhNo: WorldwideChat өгөгдлийг хадгалах боломжгүй... таны сонгосон
+    өгөгдлийн сан/хадгалах сонголт тогтвортой байгаа эсэхийг баталгаажуулна уу!
+  wwcSyncUserDataComplete: Хэрэглэгчийн өгөгдлийг {0} руу амжилттай хадгалсан. {1}
+  wwcSyncUserDataStart: Хэрэглэгчийн өгөгдлийг синхрончлох...
+  wwcdDebugEnvDisabled: Дибаг хийх орчинг идэвхгүй болгосон.
+  wwcdDebugEnvWarn: 'Хэрэв та энэ залгаасыг хөгжүүлэх/алдааг эрэн сурвалжлахгүй бол
+    дибаг хийх орчинг солих нь бараг хэзээ ч зөвлөдөггүй. Хэрэв та үргэлжлүүлэхийг
+    хүсч байгаа бол дараахь зүйлийг бичнэ үү: {0}'
+  wwclLangNotLoadedConsole: '{0} -ийг одоогоор ашиглах боломжгүй. Та үүнийг засахын
+    тулд залгаасыг дахин ачаалж оролдож болно, гэхдээ энэ нь үргэлжилж байгаа бол
+    хөгжүүлэгчтэй холбоо барина уу.'
+  wwcdDebugEnvEnabled: Дибаг хийх орчинг идэвхжүүлсэн.
+  wwclLangNotLoaded: '{0} -ийг одоогоор ашиглах боломжгүй. Өөр дэмжигдсэн нутагшуулалтыг
+    ашиглаад үзээрэй: {1}'
+  wwcdDebugBadState: WorldwideChat нь хүчин төгөлдөр орчуулагч багц байхгүй байхад
+    энэ дибаг хийх тушаалыг ажиллуулах боломжгүй. Дараа нь дахин оролдоно уу.
+  wwcNoVaultOnFolia: Vault одоогоор Folia дээр дэмжигддэггүй. Энэ нь бусад чат залгаасуудтай
+    нийцтэй байдлыг эвдэж магадгүй юм.
+  wwcNoVaultPlugin: Vault суулгаагүй байна! Энэ нь бусад суулгасан чат залгаасуудтай
+    нийцтэй байдлыг эвдэж магадгүй юм.
+  wwcVaultChatProviderFound: 'Vault чат үйлчилгээ үзүүлэгчийг олсон: {0}.'
+  wwcNoVaultChatProvider: Vault суулгасан боловч дэмжигдсэн чат үйлчилгээ үзүүлэгч
+    илрээгүй байна.
+  wwcConfigEventPrioritySet: Чат сонсогчдын үйл явдлын тэргүүлэх чиглэлийг {0} болгон
+    тохируулна уу.
+  wwcConfigEventPriorityInvalid: Config.yml дахь хүчин төгөлдөр бус чат сонсогчдын
+    үйл явдлын тэргүүлэх ач холбогдол. {0} гэж анхдагч байна...
+  wwcConfigGUIChatListenerPriorityButton: Чат үйл явдлын сонсогчдын тэргүүлэх ач холбогдлыг
+  wwcConfigConversationChatPriorityBadInput: Чатын тэргүүлэх ач холбогдлын оролт муу!
+    Дахин оролдоно уу.
+  wwcConfigConversationChatPrioritySuccess: Чат үйл явдлын тэргүүлэх чиглэлийг амжилттай
+    тохируулна уу.
+  wwcConfigVaultSupportInvalid: Config.yml дээр тогтоогдсон хүчин төгөлдөр бус хадгаламжийн
+    дэмжлэг. Үнэн гэж анхдагч байна...
+  wwcWatsonDeprecation: Уотсоныг хуучирсан бөгөөд IBM дэмжихээ больсон. Энэ нь дэмжлэг
+    дараагийн шинэчлэлт устгах болно гэж, шилжих авч үзнэ үү.
+  wwcConfigForceChatChannelEnabled: Бүх орчуулгын явцад тусдаа орчуулгын сувгийг албадан
+    гаргах болно.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Тусдаа сувгийг хүчээр амжилттай
+    сольсон.
+  wwcConfigConversationChannelIconInput: Тусдаа орчуулгын сувгийн одоогийн дүрс нь
+    {0} юм. Өнгөний кодыг дэмжиж байна; буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationChatPriorityInput: 'Одоогийн чатын үйл явдлын тэргүүлэх чиглэл
+    бол {0} юм. Тайлбар 0 буцах руу явах эсвэл хүчин төгөлдөр тэргүүлэх чиглэлүүдийн
+    энэ жагсаалтаас сонгоно уу: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Тусдаа сувгийн форматыг өөрчлөх
+  wwcConfigConversationChannelIconSuccess: Таны сувгийн дүрсийг амжилттай өөрчилсөн.
+  wwcConfigGUISeparateChatChannelIconButton: Тусдаа сувгийн дүрсийг өөрчлөх
+  wwcConfigConversationChatFormatSuccess: Таны формат амжилттай өөрчлөгдсөн.
+  wwcConfigGUISeparateChatChannelForceButton: Тусгай суваг хүчээр
+  wwcOrigHover: 'Эх зурвас: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Ховер текст амжилттай togged
+    гэж орчуулга хавсаргасан эх гарч байгаа чат.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Гарах анхны мессежийг Ховер текст болгон
+    нэмнэ
+  wwcConfigPAPIInstalled: Таны чат форматын хувьд PlaceholderAPI дэмжлэгийг идэвхжүүлсэн.
+  wwcConfigPAPINotInstalled: Захиалгат placeholders таны чат форматаар илэрсэн боловч
+    PlaceholderAPI суулгаагүй байна. Залгаас ачаалагдсан, идэвхжсэн эсэхийг шалгана
+    уу.
+  wwcConfigChatChannelIconInvalid: Хүчингүй сувгийн дүрс илэрсэн. {0} гэж анхдагч
+    байна...
+  wwcBlacklistBadFormat: Таны хар жагсаалтыг жагсаалт болгон зохих ёсоор хэлбэржүүлээгүй
+    байна. Үүнийг засах хүртэл үүнийг хэрэгжүүлэхгүй.
+  wwcBlacklistedMsg: Таны мессеж нь хориглосон хэлийг агуулдаг бөгөөд орчуулагдаагүй
+    байна.
+  wwcBlacklistedMsgDetected: 'Хар жагсаалтад орсон үг ({0}) илэрсэн: {1}'
+  wwcBlacklistLoaded: '{0} хориглосон үгсийн хар жагсаалт чинь ачаалагдаад байна шүү
+    дээ.'
+  wwcConfigConversationAddBlacklist: Нэмэхийг хүсч буй шинэ нэр томъёог оруулна уу
+    эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Хар жагсаалтаас устгах
+  wwcConfigConversationBlacklistAddSuccess: Хар жагсаалтад шинэ нэр томъёог амжилттай
+    нэмсэн.
+  wwcConfigGUIMessagesModifyBlacklistButton: Хар жагсаалтыг өөрчлөх
+  wwcConfigGUIChatBlacklistButton: Хар жагсаалтыг идэвхжүүлэх
+  wwcConfigConversationBlacklistDeletionSuccess: Энэ нэр томъёог амжилттай устгасан.
+  wwcConfigGUIChatChannelSettings: Чат сувгийн тохиргоо
+  wwcConfigGUIChatBlacklistSuccess: Хар жагсаалтыг амжилттай сольсон.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Шинэ үг нэмэх
+  wwcConfigGUIChatChannelButton: Сувгийн тохиргоог орчуулах
+  wwcConfigGUIBlacklistMessagesModify: Нэр томъёог өөрчлөх ({0})
+  wwcConfigChatChannelFormatInvalid: Хүчингүй сувгийн формат илэрсэн. {0} гэж анхдагч
+    байна...
+  wwcConfigConversationChannelFormatInput: 'Тусдаа чат сувгийн одоогийн формат нь
+    {0} юм. Таны оруулж болох бидний анхдагч хүлээн зөвшөөрөгдсөн аргументууд: {1}.
+    Хэрэв танд PlaceholderAPI байгаа бол тэдгээр хувьсагчууд оронд нь хувь (%) -ээр
+    хүрээлэгдсэн эсэхийг шалгаарай. Буцахын тулд 0 гэж бичнэ үү.'
+  wwcConfigGUIModifyBlacklistSettings: Хар жагсаалтыг өөрчлөх
+  wwcConfigGUINextPageButton: Дараагийн хуудас
 

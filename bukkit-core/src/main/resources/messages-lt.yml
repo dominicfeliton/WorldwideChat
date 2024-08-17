@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Perjungti gestų vertimą
   wwcUpdaterOutOfDate: WorldwideChat yra pavėlęs. Atnaujinkite į naujausią versiją,
     {0}.
-  wwcConfigGUINextPageButton: Sekantis puslapis
   wwcConfigInvalidTranslatorSettings: Neteisingas vertėjo nustatymai! Prašome įjungti
     tik vieną vertėją savo config.yml.
   wwcConfigGUIQuitButton: Išeiti ir išsaugoti pakeitimus
@@ -611,4 +610,93 @@ Messages:
     šios vertės konfigūraciją.
   wwcRateNoConvoFolia: Nepavyko nustatyti tarifo limito per “Folia” GUI. Vietoj to
     naudokite /wwctrl arba /translateratelimit.
+  wwcInvalidTranslatorUser: “WorldwideChat” šiuo metu nepasiekiamas. Pabandykite dar
+    kartą vėliau arba susisiekite su administratoriumi, jei tai išlieka.
+  wwcCouldNotSaveOhNo: Nepavyko išsaugoti WorldwideChat duomenų... prašome užtikrinti,
+    kad jūsų pasirinkta duomenų bazė/saugojimo parinktis yra stabili!
+  wwcSyncUserDataComplete: Sėkmingai išsaugoti vartotojo duomenys į {0}. {1}
+  wwcSyncUserDataStart: Vartotojo duomenų sinchronizavimas...
+  wwcdDebugEnvDisabled: Derinimo aplinka buvo išjungta.
+  wwcdDebugEnvWarn: 'Derinimo aplinkos perjungimas beveik niekada nerekomenduojamas,
+    nebent kuriate šį papildinį/tiriate klaidą. Jei vis tiek norite tęsti, įveskite:
+    {0}'
+  wwclLangNotLoadedConsole: Šiuo metu negalima naudoti {0}. Galite pabandyti iš naujo
+    įkelti įskiepį, kad tai ištaisytumėte, tačiau jei jis išlieka, susisiekite su
+    kūrėju.
+  wwcdDebugEnvEnabled: Derinimo aplinka buvo įjungta.
+  wwclLangNotLoaded: 'Šiuo metu negalima naudoti {0}. Pabandykite naudoti kitą palaikomą
+    lokalizaciją: {1}'
+  wwcdDebugBadState: Šios derinimo komandos negalima paleisti, kol WorldwideChat neturi
+    galiojančio vertėjo rinkinio. Pabandykite dar kartą vėliau.
+  wwcNoVaultOnFolia: Šiuo metu “Vault” nepalaikomas “Folia”. Tai gali sugadinti suderinamumą
+    su kitais pokalbių papildiniais.
+  wwcNoVaultPlugin: Vault neįdiegtas! Tai gali sugadinti suderinamumą su kitais įdiegtais
+    pokalbių papildiniais.
+  wwcVaultChatProviderFound: 'Rado “Vault” pokalbių teikėją: {0}.'
+  wwcNoVaultChatProvider: Vault įdiegtas, tačiau nebuvo aptiktas palaikomas pokalbių
+    teikėjas.
+  wwcConfigEventPrioritySet: Nustatykite pokalbių klausytojo renginio prioritetą į
+    {0}.
+  wwcConfigEventPriorityInvalid: Netinkamas pokalbių klausytojo įvykio prioritetas
+    programoje config.yml. Numatytasis nustatymas į {0}...
+  wwcConfigGUIChatListenerPriorityButton: Pokalbio įvykių klausytojo prioriteto keitimas
+  wwcConfigConversationChatPriorityBadInput: Blogas pokalbio prioriteto įvestis! Prašome
+    pabandyti dar kartą.
+  wwcConfigConversationChatPrioritySuccess: Sėkmingai nustatykite pokalbio renginio
+    prioritetą.
+  wwcConfigVaultSupportInvalid: Neteisingas saugyklos palaikymas nustatytas config.yml.
+    Numatyta tiesa...
+  wwcWatsonDeprecation: “Watson” buvo atmestas ir IBM jo nebepalaiko. Prašome apsvarstyti
+    galimybę perjungti, nes jo palaikymas bus pašalintas kitame atnaujinime.
+  wwcConfigForceChatChannelEnabled: Atskiras vertimo kanalas bus priverstas visų vertimų
+    metu.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Sėkmingai perjungtas priverčiant
+    atskirą kanalą.
+  wwcConfigConversationChannelIconInput: Dabartinė atskiro vertimo kanalo piktograma
+    yra {0}. Palaikomi spalvų kodai; jei norite grįžti atgal, įveskite 0.
+  wwcConfigConversationChatPriorityInput: 'Dabartinis pokalbio renginio prioritetas
+    yra {0}. Įveskite 0 eiti į atgal arba pasirinkite iš šio galiojančių prioritetų
+    sąrašo: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Pakeiskite atskiro kanalo formatą
+  wwcConfigConversationChannelIconSuccess: Sėkmingai pakeista kanalo piktograma.
+  wwcConfigGUISeparateChatChannelIconButton: Pakeiskite atskiro kanalo piktogramą
+  wwcConfigConversationChatFormatSuccess: Jūsų formatas buvo sėkmingai pakeistas.
+  wwcConfigGUISeparateChatChannelForceButton: Priverskite atskirą kanalą
+  wwcOrigHover: 'Originali žinutė: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Originalus išeinantis pokalbis
+    pridedamas prie vertimo kaip užveskite tekstą perjungtas sėkmingai.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Pridėkite originalius siunčiamus pranešimus
+    kaip užveskite pelės žymeklį
+  wwcConfigPAPIInstalled: “PlaceholderAPI” palaikymas buvo įjungtas jūsų pokalbio
+    formatui.
+  wwcConfigPAPINotInstalled: Jūsų pokalbių formate aptiktos pasirinktinės vietos žymos,
+    tačiau “PlaceholderAPI” neįdiegta. Įsitikinkite, kad papildinys įkeltas ir įjungtas.
+  wwcConfigChatChannelIconInvalid: Aptikta netinkama kanalo piktograma. Numatytasis
+    nustatymas į {0}...
+  wwcBlacklistBadFormat: Jūsų juodasis sąrašas nėra tinkamai suformatuotas kaip sąrašas.
+    Jis nebus vykdomas tol, kol tai nebus nustatyta.
+  wwcBlacklistedMsg: Jūsų žinutėje yra draudžiama kalba ir jis nebuvo išverstas.
+  wwcBlacklistedMsgDetected: 'Aptikta į juodąjį sąrašą įtrauktas žodis ({0}): {1}'
+  wwcBlacklistLoaded: Jūsų juodasis {0} uždraustų žodžių sąrašas buvo įkeltas.
+  wwcConfigConversationAddBlacklist: Įveskite naują terminą, kurį norėtumėte pridėti,
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Ištrinti iš juodojo sąrašo
+  wwcConfigConversationBlacklistAddSuccess: Sėkmingai įtraukė naują terminą į juodąjį
+    sąrašą.
+  wwcConfigGUIMessagesModifyBlacklistButton: Pakeisti juodąjį sąrašą
+  wwcConfigGUIChatBlacklistButton: Įgalinti juodąjį sąrašą
+  wwcConfigConversationBlacklistDeletionSuccess: Sėkmingai ištrintas terminas.
+  wwcConfigGUIChatChannelSettings: Pokalbių kanalo konfigūracija
+  wwcConfigGUIChatBlacklistSuccess: Sėkmingai perjungtas juodasis sąrašas.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Pridėti naują žodį
+  wwcConfigGUIChatChannelButton: Versti kanalo nustatymus
+  wwcConfigGUIBlacklistMessagesModify: Keisti terminą ({0})
+  wwcConfigChatChannelFormatInvalid: Aptiktas netinkamas kanalo formatas. Numatytasis
+    nustatymas į {0}...
+  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
+    yra {0}. Mūsų numatytieji pripažinti argumentai, kuriuos galite įtraukti: {1}.
+    Jei turite PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais
+    (%) vietoj. Įveskite 0, kad grįžtumėte atgal.'
+  wwcConfigGUIModifyBlacklistSettings: Pakeisti juodąjį sąrašą
+  wwcConfigGUINextPageButton: Kitas puslapis
 

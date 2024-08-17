@@ -45,6 +45,13 @@ Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true
   sendIncomingHoverTextChat: true
+  sendOutgoingHoverTextChat: false
+  useVault: false
+  chatListenerPriority: HIGHEST
+  separateChatChannel:
+    icon: globe
+    format: "{prefix}{username}{suffix}:"
+    force: false
 Translator:
   testModeTranslator: true
   useWatsonTranslate: false
@@ -66,3 +73,8 @@ Translator:
   messageCharLimit: 255
   errorLimit: 5
   enablePersistentCache: true
+  errorsToIgnore:
+    - "confidence"
+    - "same as target"
+    - "detect the source language"
+    - "Unable to find model for specified languages"

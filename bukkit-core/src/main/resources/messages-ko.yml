@@ -38,7 +38,6 @@ Messages:
   wwcConfigGUILangButton: 플러그인 언어 변경
   wwctGUISignButton: 기호 변환 토글
   wwcUpdaterOutOfDate: 월드와이드채팅이 오래되었습니다.최신 버전 {0} (으) 로 업데이트하십시오.
-  wwcConfigGUINextPageButton: 다음 페이지
   wwcConfigInvalidTranslatorSettings: 잘못된 번역기 설정!config.yml에서 하나의 번역기만 활성화하십시오.
   wwcConfigGUIQuitButton: 종료 및 변경 사항 저장
   wwctPlayerNotFound: 플레이어 %을 (를) 찾을 수 없습니다.
@@ -498,4 +497,69 @@ Messages:
     수정해 보십시오.
   wwcRateNoConvoFolia: Folia의 GUI를 통해 속도 제한을 설정할 수 없습니다.대신 /wwctrl 또는 /translateratelimit을
     사용하세요.
+  wwcInvalidTranslatorUser: 월드와이드챗은 현재 사용할 수 없습니다.이 문제가 계속되면 나중에 다시 시도하거나 관리자에게 문의하세요.
+  wwcCouldNotSaveOhNo: WorldwideChat 데이터를 저장할 수 없습니다... 선택한 데이터베이스/스토리지 옵션이 안정적인지
+    확인하십시오!
+  wwcSyncUserDataComplete: 사용자 데이터를 {0} 에 성공적으로 저장했습니다.{1}
+  wwcSyncUserDataStart: 사용자 데이터 동기화 중...
+  wwcdDebugEnvDisabled: 디버그 환경이 비활성화되었습니다.
+  wwcdDebugEnvWarn: 이 플러그인을 개발하거나 버그를 조사하지 않는 한 디버그 환경을 전환하는 것은 거의 권장되지 않습니다.계속 진행하려면
+    다음을 입력하세요. {0}
+  wwclLangNotLoadedConsole: '{0} 은 (는) 지금은 사용할 수 없습니다.이 문제를 해결하기 위해 플러그인을 다시 로드해 볼
+    수 있지만 문제가 지속되면 개발자에게 문의하세요.'
+  wwcdDebugEnvEnabled: 디버그 환경이 활성화되었습니다.
+  wwclLangNotLoaded: '{0} 은 (는) 지금은 사용할 수 없습니다.지원되는 다른 현지화를 사용해 보세요: {1}'
+  wwcdDebugBadState: WorldwideChat에 유효한 변환기 세트가 없는 동안에는 이 디버그 명령을 실행할 수 없습니다.나중에 다시
+    시도해 주세요.
+  wwcNoVaultOnFolia: Vault는 현재 Folia에서 지원되지 않습니다.이로 인해 다른 채팅 플러그인과의 호환성이 깨질 수 있습니다.
+  wwcNoVaultPlugin: Vault가 설치되지 않았습니다!이로 인해 설치된 다른 채팅 플러그인과의 호환성이 손상될 수 있습니다.
+  wwcVaultChatProviderFound: 'Vault 채팅 제공업체를 찾았습니다: {0}.'
+  wwcNoVaultChatProvider: Vault가 설치되었지만 지원되는 채팅 공급자가 검색되지 않았습니다.
+  wwcConfigEventPrioritySet: 채팅 리스너 이벤트 우선순위를 {0} 로 설정합니다.
+  wwcConfigEventPriorityInvalid: config.yml의 채팅 리스너 이벤트 우선 순위가 잘못되었습니다.기본값은 {0}...
+  wwcConfigGUIChatListenerPriorityButton: 채팅 이벤트 리스너 우선순위 변경
+  wwcConfigConversationChatPriorityBadInput: 채팅 우선순위 입력이 잘못되었습니다!다시 시도해 주세요.
+  wwcConfigConversationChatPrioritySuccess: 채팅 이벤트 우선순위를 성공적으로 설정했습니다.
+  wwcConfigVaultSupportInvalid: config.yml에 설정된 저장소 지원이 잘못되었습니다.기본값은 true입니다...
+  wwcWatsonDeprecation: Watson은 더 이상 사용되지 않으며 IBM에서 더 이상 지원하지 않습니다.다음 업데이트에서 지원이 제거될
+    예정이므로 전환을 고려하시기 바랍니다.
+  wwcConfigForceChatChannelEnabled: 모든 번역 중에는 별도의 번역 채널이 필요합니다.
+  wwcConfigConversationSeparateChatChannelForceSuccess: 개별 채널 강제 전환에 성공했습니다.
+  wwcConfigConversationChannelIconInput: 개별 번역 채널의 현재 아이콘은 {0} 입니다.색상 코드가 지원됩니다. 돌아가려면
+    0을 입력하십시오.
+  wwcConfigConversationChatPriorityInput: 현재 채팅 이벤트 우선순위는 {0} 입니다.0을 입력하거나 뒤로 이동하거나
+    유효한 우선순위 목록 ({1}) 중에서 선택하세요.
+  wwcConfigGUISeparateChatChannelFormatButton: 개별 채널 형식 변경
+  wwcConfigConversationChannelIconSuccess: 채널 아이콘을 성공적으로 변경했습니다.
+  wwcConfigGUISeparateChatChannelIconButton: 개별 채널 아이콘 변경
+  wwcConfigConversationChatFormatSuccess: 형식이 성공적으로 변경되었습니다.
+  wwcConfigGUISeparateChatChannelForceButton: 강제 분리 채널
+  wwcOrigHover: '원본 메시지: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: 호버 텍스트로 번역에 첨부된 원본 발신 채팅이
+    성공적으로 전환되었습니다.
+  wwcConfigGUISendOutgoingHoverTextChatButton: 원본 발신 메시지를 호버 텍스트로 추가
+  wwcConfigPAPIInstalled: 채팅 형식에 대해 플레이스홀더 API 지원이 활성화되었습니다.
+  wwcConfigPAPINotInstalled: 채팅 형식에서 사용자 지정 플레이스홀더가 감지되었지만 플레이스홀더 API가 설치되지 않았습니다.플러그인이
+    로드되고 활성화되었는지 확인하세요.
+  wwcConfigChatChannelIconInvalid: 잘못된 채널 아이콘이 감지되었습니다.기본값은 {0}...
+  wwcBlacklistBadFormat: 블랙리스트가 목록 형식이 올바르지 않습니다.이 문제가 해결되기 전까지는 시행되지 않을 것입니다.
+  wwcBlacklistedMsg: 메시지에 금지된 언어가 포함되어 있으며 번역되지 않았습니다.
+  wwcBlacklistedMsgDetected: '블랙리스트에 오른 단어 ({0}) 발견: {1}'
+  wwcBlacklistLoaded: '{0} 금지어 블랙리스트가 로드되었습니다.'
+  wwcConfigConversationAddBlacklist: 추가하려는 새 용어를 입력하거나 0을 입력하여 뒤로 이동합니다.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: 블랙리스트에서 삭제
+  wwcConfigConversationBlacklistAddSuccess: 블랙리스트에 새 용어를 성공적으로 추가했습니다.
+  wwcConfigGUIMessagesModifyBlacklistButton: 블랙리스트 수정
+  wwcConfigGUIChatBlacklistButton: 블랙리스트 활성화
+  wwcConfigConversationBlacklistDeletionSuccess: 용어를 성공적으로 삭제했습니다.
+  wwcConfigGUIChatChannelSettings: 채팅 채널 구성
+  wwcConfigGUIChatBlacklistSuccess: 블랙리스트를 성공적으로 전환했습니다.
+  wwcConfigGUIChatMessagesBlacklistNewButton: 새 단어 추가
+  wwcConfigGUIChatChannelButton: 채널 설정 번역
+  wwcConfigGUIBlacklistMessagesModify: 용어 수정 ({0})
+  wwcConfigChatChannelFormatInvalid: 잘못된 채널 형식이 감지되었습니다.기본값은 {0}...
+  wwcConfigConversationChannelFormatInput: 개별 채팅 채널의 현재 형식은 {0} 입니다.포함할 수 있는 기본 인식
+    인수는 {1} 입니다.PlaceHolderAPI를 사용하는 경우 해당 변수를 대신 백분율 (%) 로 묶어야 합니다.돌아가려면 0을 입력하세요.
+  wwcConfigGUIModifyBlacklistSettings: 블랙리스트 수정
+  wwcConfigGUINextPageButton: 다음 페이지
 

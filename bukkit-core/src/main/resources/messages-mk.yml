@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Префрли Превод на знаци
   wwcUpdaterOutOfDate: WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
     верзија, {0}.
-  wwcConfigGUINextPageButton: Следна страница
   wwcConfigInvalidTranslatorSettings: Неважечки поставки за преведувач! Ве молиме
     вклучете само еден преведувач во вашиот config.yml.
   wwcConfigGUIQuitButton: Излез и зачувување на промените
@@ -621,4 +620,96 @@ Messages:
     ја менувате конфигурацијата за оваа вредност.
   wwcRateNoConvoFolia: Не може да се постави ограничување на стапката преку GUI на
     Folia. Ве молиме користете /wwctrl или /translateratelimit наместо тоа.
+  wwcInvalidTranslatorUser: WorldwideChat моментално не е достапен. Ве молиме обидете
+    се повторно подоцна или контактирајте со вашиот администратор ако ова продолжи.
+  wwcCouldNotSaveOhNo: Не можете да ги зачувате податоците на WorldwideChat... ве
+    молиме осигурајте се дека вашата избрана база на податоци/опција за складирање
+    е стабилна!
+  wwcSyncUserDataComplete: Успешно зачувани кориснички податоци на {0}. {1}
+  wwcSyncUserDataStart: Синхронизирање на кориснички податоци...
+  wwcdDebugEnvDisabled: Околината за дебагирање е оневозможена.
+  wwcdDebugEnvWarn: 'Префрлувањето на околината за дебагирање речиси никогаш не се
+    препорачува освен ако не го развивате овој приклучок/истражувате грешка. Ако сепак
+    сакате да продолжите, напишете го следново: {0}'
+  wwclLangNotLoadedConsole: '{0} не може да се користи во овој момент. Можете да се
+    обидете повторно да го вчитате приклучокот за да го поправите ова, но ако опстојува,
+    ве молиме контактирајте го развивачот.'
+  wwcdDebugEnvEnabled: Околината за дебагирање е овозможена.
+  wwclLangNotLoaded: '{0} не може да се користи во овој момент. Обидете се да користите
+    друга поддржана локализација: {1}'
+  wwcdDebugBadState: Оваа команда за дебагирање не може да се изврши додека WorldwideChat
+    нема валиден сет за преведувач. Ве молиме обидете се повторно подоцна.
+  wwcNoVaultOnFolia: Vault моментално не е поддржан на Folia. Ова може да ја наруши
+    компатибилноста со другите приклучоци за разговор.
+  wwcNoVaultPlugin: Трезорот не е инсталиран! Ова може да ја наруши компатибилноста
+    со други инсталирани приклучоци за разговор.
+  wwcVaultChatProviderFound: 'Најдов провајдер за разговор Vault: {0}.'
+  wwcNoVaultChatProvider: Возот е инсталиран, но не е откриен поддржан провајдер на
+    разговор.
+  wwcConfigEventPrioritySet: Поставете го приоритетот на настанот на слушателот на
+    разговор на {0}.
+  wwcConfigEventPriorityInvalid: Невалиден приоритет на настанот на слушателот на
+    разговор во config.yml. Стандардно на {0}...
+  wwcConfigGUIChatListenerPriorityButton: Променете го приоритетот на слушателот на
+    настани за разговор
+  wwcConfigConversationChatPriorityBadInput: Лош влез за приоритет на разговор! Ве
+    молиме обидете се повторно.
+  wwcConfigConversationChatPrioritySuccess: Успешно поставете го приоритетот на настанот
+    за разговор.
+  wwcConfigVaultSupportInvalid: Невалидна поддршка за трезор поставена во config.yml.
+    Поставување на вистинито...
+  wwcWatsonDeprecation: Вотсон е застарен и повеќе не е поддржан од IBM. Ве молиме
+    размислете за префрлување, бидејќи поддршката за тоа ќе биде отстранета во следното
+    ажурирање.
+  wwcConfigForceChatChannelEnabled: Посебен канал за превод ќе биде принуден за време
+    на сите преводи.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Успешно се префрли форсирајќи
+    го одделниот канал.
+  wwcConfigConversationChannelIconInput: Тековната икона за одделниот канал за превод
+    е {0}. Поддржани се кодови на бои; напишете 0 за да се вратите назад.
+  wwcConfigConversationChatPriorityInput: 'Тековниот приоритет на настанот за разговор
+    е {0}. Напишете 0 одете назад или изберете од оваа листа на валидни приоритети:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Променете го одделниот формат на каналот
+  wwcConfigConversationChannelIconSuccess: Успешно ја смени иконата на вашиот канал.
+  wwcConfigGUISeparateChatChannelIconButton: Променете ја иконата на одделен канал
+  wwcConfigConversationChatFormatSuccess: Вашиот формат е успешно променет.
+  wwcConfigGUISeparateChatChannelForceButton: Принудете посебен канал
+  wwcOrigHover: 'Оригинална порака: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригиналниот појдовен разговор
+    прикачен на преводот како лебдејќи текст успешно се префрли.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Додадете оригинални појдовни пораки
+    како текст со лебди
+  wwcConfigPAPIInstalled: Поддршката за PlaceholderAPI е овозможена за вашиот формат
+    на разговор.
+  wwcConfigPAPINotInstalled: Прилагодени случаеви се откриени во вашиот формат за
+    разговор, но PlaceholderAPI не е инсталиран. Ве молиме проверете дали приклучокот
+    е вчитан и е овозможен.
+  wwcConfigChatChannelIconInvalid: Откриена е неважечка икона на канал. Стандардно
+    на {0}...
+  wwcBlacklistBadFormat: Вашата црна листа не е правилно форматирана како листа. Нема
+    да се спроведува додека не се поправи ова.
+  wwcBlacklistedMsg: Вашата порака содржи забранет јазик и не е преведена.
+  wwcBlacklistedMsgDetected: 'Откриен збор на црната листа ({0}): {1}'
+  wwcBlacklistLoaded: Вашата црна листа со забранети зборови {0} е вчитана.
+  wwcConfigConversationAddBlacklist: Внесете го новиот термин што сакате да го додадете
+    или напишете 0 за да се вратите назад.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Избриши од црната листа
+  wwcConfigConversationBlacklistAddSuccess: Успешно додаден нов термин на црната листа.
+  wwcConfigGUIMessagesModifyBlacklistButton: Изменете ја црната листа
+  wwcConfigGUIChatBlacklistButton: Овозможи црна листа
+  wwcConfigConversationBlacklistDeletionSuccess: Успешно го избриша терминот.
+  wwcConfigGUIChatChannelSettings: Конфигурација на канал за разговор
+  wwcConfigGUIChatBlacklistSuccess: Успешно се префрли на црната листа.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Додај нов збор
+  wwcConfigGUIChatChannelButton: Преведете ги поставките на каналот
+  wwcConfigGUIBlacklistMessagesModify: Измени термин ({0})
+  wwcConfigChatChannelFormatInvalid: Откриен неважечки формат на каналот. Стандардно
+    на {0}...
+  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
+    разговор е {0}. Нашите стандардно признати аргументи што можете да ги вклучите:
+    {1}. Ако имате PlaceholderAPI, проверете дали тие променливи се опкружени со проценти
+    (%) наместо тоа. Напишете 0 за да се вратите назад.'
+  wwcConfigGUIModifyBlacklistSettings: Изменете ја црната листа
+  wwcConfigGUINextPageButton: Следна страница
 

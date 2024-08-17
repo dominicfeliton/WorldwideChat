@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Commuta la traducció de signes
   wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
     l'última versió, {0}.
-  wwcConfigGUINextPageButton: Pàgina següent
   wwcConfigInvalidTranslatorSettings: Configuració del traductor no vàlid! Si us plau,
     habiliteu només un traductor a la vostra config.yml.
   wwcConfigGUIQuitButton: Sortir i desar els canvis
@@ -647,4 +646,97 @@ Messages:
     la configuració manualment per a aquest valor.
   wwcRateNoConvoFolia: No es pot establir un límit de tarifa a través de la GUI a
     Folia. Si us plau, utilitzeu /wwctrl o /translateratelimit en el seu lloc.
+  wwcInvalidTranslatorUser: WorldwideChat no està disponible actualment. Si us plau,
+    torneu a intentar-ho més tard o poseu-vos en contacte amb el vostre administrador
+    si això persisteix.
+  wwcCouldNotSaveOhNo: No es pot desar dades WorldwideChat... si us plau assegureu-vos
+    que la vostra base de dades/opció d'emmagatzematge seleccionada és estable!
+  wwcSyncUserDataComplete: Les dades d'usuari s'han guardat correctament a {0}. {1}
+  wwcSyncUserDataStart: Sincronització de dades d'usuari...
+  wwcdDebugEnvDisabled: L'entorn de depuració s'ha desactivat.
+  wwcdDebugEnvWarn: 'Canviar l''entorn de depuració gairebé mai és recomanable tret
+    que estigueu desenvolupant aquest plugin/investigant un error. Si encara voleu
+    procedir, escriviu el següent: {0}'
+  wwclLangNotLoadedConsole: '{0} no es pot utilitzar en aquest moment. Podeu provar
+    de recarregar el connector per solucionar això, però si persisteix poseu-vos en
+    contacte amb el desenvolupador.'
+  wwcdDebugEnvEnabled: S'ha habilitat l'entorn de depuració.
+  wwclLangNotLoaded: '{0} no es pot utilitzar en aquest moment. Proveu d''utilitzar
+    una localització admesa diferent: {1}'
+  wwcdDebugBadState: Aquesta ordre de depuració no es pot executar mentre WorldwideChat
+    no té un conjunt de traductors vàlid. Si us plau, torneu-ho a provar més tard.
+  wwcNoVaultOnFolia: Actualment el Vault no està suportat a Folia. Això pot trencar
+    la compatibilitat amb altres connectors de xat.
+  wwcNoVaultPlugin: Vault no està instal·lat! Això pot trencar la compatibilitat amb
+    altres connectors de xat instal·lats.
+  wwcVaultChatProviderFound: 'S''ha trobat un proveïdor de xat de Vault: {0}.'
+  wwcNoVaultChatProvider: El Vault està instal·lat, però no s'ha detectat cap proveïdor
+    de xat compatible.
+  wwcConfigEventPrioritySet: Estableix la prioritat de l'esdeveniment de l'oient del
+    xat a {0}.
+  wwcConfigEventPriorityInvalid: Prioritat de l'esdeveniment de l'oient de xat no
+    vàlida a config.yml. Per defecte a {0}...
+  wwcConfigGUIChatListenerPriorityButton: Canvia la prioritat de l'oient d'esdeveniments
+    de xat
+  wwcConfigConversationChatPriorityBadInput: Entrada de prioritat de xat dolenta!
+    Si us plau, torneu a intentar.
+  wwcConfigConversationChatPrioritySuccess: Estableix amb èxit la prioritat de l'esdeveniment
+    de xat.
+  wwcConfigVaultSupportInvalid: Suport de la caixa no vàlida establert a config.yml.
+    Per defecte de veritat...
+  wwcWatsonDeprecation: Watson ha estat obsolet i ja no és compatible amb IBM. Si
+    us plau, consideri canviar, ja que el suport per a això serà eliminat en la propera
+    actualització.
+  wwcConfigForceChatChannelEnabled: Es forçarà un canal de traducció separat durant
+    totes les traduccions.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Es va alternar amb èxit forçant
+    el canal separat.
+  wwcConfigConversationChannelIconInput: La icona actual del canal de traducció separat
+    és {0}. Els codis de colors són compatibles; escriviu 0 per tornar enrere.
+  wwcConfigConversationChatPriorityInput: 'La prioritat de l''esdeveniment de xat
+    actual és {0}. Escriviu 0 aneu a enrere o trieu entre aquesta llista de prioritats
+    vàlides: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Canviar el format de canal separat
+  wwcConfigConversationChannelIconSuccess: S'ha canviat amb èxit la icona del canal.
+  wwcConfigGUISeparateChatChannelIconButton: Canviar la icona del canal separat
+  wwcConfigConversationChatFormatSuccess: El seu format s'ha canviat amb èxit.
+  wwcConfigGUISeparateChatChannelForceButton: Força el canal separat
+  wwcOrigHover: 'Missatge original: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: El xat de sortida original
+    adjunt a la traducció com a text de la passejadora s'ha alternat correctament.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Afegeix missatges sortints originals
+    com a text hover
+  wwcConfigPAPIInstalled: S'ha habilitat el suport de PlaceholderAPI per al format
+    de xat.
+  wwcConfigPAPINotInstalled: S'han detectat marcadors de posició personalitzats en
+    el format de xat, però PlaceholderAPI no està instal·lat. Si us plau, assegureu-vos
+    que el connector s'ha carregat i està activat.
+  wwcConfigChatChannelIconInvalid: S'ha detectat la icona de canal no vàlida. Per
+    defecte a {0}...
+  wwcBlacklistBadFormat: La vostra llista negra no està correctament formatada com
+    a llista. No s'aplicarà fins que no s'arregli.
+  wwcBlacklistedMsg: El missatge conté idioma prohibit i no s'ha traduït.
+  wwcBlacklistedMsgDetected: 'S''ha detectat la paraula a la llista negra ({0}): {1}'
+  wwcBlacklistLoaded: La vostra llista negra de paraules prohibides {0} ha estat carregada.
+  wwcConfigConversationAddBlacklist: Introduïu el terme nou que voleu afegir o escriviu
+    0 per tornar enrere.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Eliminar de la llista negra
+  wwcConfigConversationBlacklistAddSuccess: S'ha afegit amb èxit un nou terme a la
+    llista negra.
+  wwcConfigGUIMessagesModifyBlacklistButton: Modificar la llista negra
+  wwcConfigGUIChatBlacklistButton: Activa la llista negra
+  wwcConfigConversationBlacklistDeletionSuccess: S'ha eliminat correctament el terme.
+  wwcConfigGUIChatChannelSettings: Configuració del canal de xat
+  wwcConfigGUIChatBlacklistSuccess: S'ha canviat amb èxit la llista negra.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Afegeix una paraula nova
+  wwcConfigGUIChatChannelButton: Tradueix la configuració del canal
+  wwcConfigGUIBlacklistMessagesModify: Modificar Terme ({0})
+  wwcConfigChatChannelFormatInvalid: S'ha detectat el format de canal no vàlid. Per
+    defecte a {0}...
+  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
+    és {0}. Els nostres arguments reconeguts per defecte que podeu incloure: {1}.
+    Si teniu PlaceholderAPI, assegureu-vos que aquestes variables estiguin envoltades
+    per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
+  wwcConfigGUIModifyBlacklistSettings: Modificar la llista negra
+  wwcConfigGUINextPageButton: Pàgina següent
 

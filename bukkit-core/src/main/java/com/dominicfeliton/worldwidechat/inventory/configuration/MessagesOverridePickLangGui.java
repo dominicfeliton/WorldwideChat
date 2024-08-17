@@ -26,11 +26,17 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
 
     private WWCInventoryManager invManager = main.getInventoryManager();
 
+    private Player inPlayer;
+
+    public MessagesOverridePickLangGui(Player inPlayer) {
+        this.inPlayer = inPlayer;
+    }
+
     public SmartInventory getMessagesOverridePickLangGui() {
         return SmartInventory.builder().id("overrideMessagesMenuPicker")
                 .provider(this).size(6, 9)
                 .manager(invManager)
-                .title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettingsPicker", null))
+                .title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettingsPicker", inPlayer))
                 .build();
     }
 

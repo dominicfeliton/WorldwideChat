@@ -23,13 +23,17 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
+import net.milkbowl.vault.chat.Chat;
+import me.clip.placeholderapi.PlaceholderAPI;
 
 import java.io.File;
 import java.util.*;
@@ -37,12 +41,11 @@ import java.util.concurrent.*;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
-import static com.dominicfeliton.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersions;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "06272024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08162024-5"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -71,10 +74,11 @@ public class WorldwideChat extends JavaPlugin {
 	private Object scheduler;
 
 	private CommonRefs refs;
-	
+
 	private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
 	private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
 	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
+	private Set<String> blacklistTerms = new ConcurrentSkipListSet<>();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<>();
 
@@ -86,6 +90,8 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private boolean outOfDate = false;
 
+	private Chat chat;
+
 	private volatile String translatorName = "Starting";
 
 	/* Config values */
@@ -93,6 +99,11 @@ public class WorldwideChat extends JavaPlugin {
 			.append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
 			.append(Component.text().content("]").color(NamedTextColor.DARK_RED))
 			.build();
+
+	private TextComponent translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
+			.append(Component.space());
+
+	private String translateLayout = "{prefix}{username}{suffix}:";
 
 	private int updateCheckerDelay = 86400;
 
@@ -104,8 +115,17 @@ public class WorldwideChat extends JavaPlugin {
 
 	private boolean persistentCache = false;
 
+	private boolean vaultSupport = true;
+
+	private boolean blacklist = true;
+
+	private EventPriority chatPriority = EventPriority.HIGHEST;
+
+	private boolean forceSeparateChatChannel = true;
+
 	private int errorLimit = 5;
 
+	// TODO: Make concurrent JIC?
 	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
 
 	/* Default constructor */
@@ -152,7 +172,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Setup adventure if needed
-		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
 		if (currPlatform.equals("Bukkit") || currPlatform.equals("Spigot")) {
 			adventure = BukkitAudiences.create(this); // Adventure
 		}
@@ -164,11 +183,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Load "secondary" services + plugin configs, check if they successfully initialized
 		doStartupTasks(false);
 
-		// Register event handlers
-		wwcHelper.registerEventHandlers();
-
 		// We made it!
-		//refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
 		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion(), null));
 	}
 
@@ -187,7 +202,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		instance = null;
 		supportedMCVersions = null;
-		pluginLangConfigs = null;
 		serverFactory = null;
 
 		// All done.
@@ -218,10 +232,14 @@ public class WorldwideChat extends JavaPlugin {
                     // Stats for translator
                     WWCStats wwcs = new WWCStats(sender, command, label, args);
                     return wwcs.processCommand();
+				case "wwcd":
+					// Debug
+					WWCDebug wwcd = new WWCDebug(sender, command, label, args);
+					return wwcd.processCommand();
             }
 		}
 		/* Commands that run if translator settings are valid */
-		if (hasValidTranslatorSettings(sender)) {
+		if (!command.getName().equals("wwcc") && hasValidTranslatorSettings(sender)) {
             switch (command.getName()) {
 				case "wwcg":
                     // Global translation
@@ -235,9 +253,6 @@ public class WorldwideChat extends JavaPlugin {
 					// Per player localization
 					WWCLocalize wwcl = new WWCLocalize(sender, command, label, args);
 					return wwcl.processCommand();
-				case "wwcd":
-					WWCDebug wwcd = new WWCDebug(sender, command, label, args);
-					return wwcd.processCommand();
 				case "wwctb":
                     // Book translation
                     WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
@@ -268,11 +283,12 @@ public class WorldwideChat extends JavaPlugin {
                     return wwctrl.processCommand();
             }
 		}
+
 		/* Commands that run regardless of translator settings, but not during restarts or as console */
 		/* Keep these commands down here, otherwise checkSenderIdentity() will send a message when we don't want it to */
-		if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
-			switch (command.getName()) {
-				case "wwcc":
+		switch (command.getName()) {
+			case "wwcc":
+				if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
 					// Configuration GUI
 					if (inventoryManager == null) {
 						refs.debugMsg("invManager is null! We may be on folia, abort...");
@@ -281,9 +297,143 @@ public class WorldwideChat extends JavaPlugin {
 
 					WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
 					return wwcc.processCommand();
-			}
+				}
 		}
 		return true;
+	}
+
+	/**
+	 * Initialize adapters and check MC version/platform
+	 */
+	private boolean checkAndInitAdapters() {
+		// Init vars
+		Pair<String, String> serverInfo = serverFactory.getServerInfo();
+		String type = serverInfo.getKey();
+		String version = serverInfo.getValue();
+
+		// Get adapter class name
+		String outputVersion = "";
+		switch (type) {
+			case "Bukkit":
+			case "Spigot":
+			case "Paper":
+			case "Folia":
+				// Raw Bukkit (not spigot) is not *explicitly* supported but should work
+				getLogger().info("##### Detected supported platform: " + type + " #####");
+				break;
+			default:
+				getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
+				break;
+		}
+
+		for (String eaVer: supportedMCVersions) {
+			if (version.contains(eaVer)) {
+				outputVersion = eaVer;
+				getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
+			}
+		}
+
+		// Not running a supported server version, default to latest
+		if (outputVersion.isEmpty()) {
+			outputVersion = supportedMCVersions[supportedMCVersions.length-1];
+			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
+		}
+
+		// If running Folia 1.19/1.18 (?)
+		if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
+			getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
+			return false;
+		}
+
+		// Load methods
+		currPlatform = type;
+		refs = serverFactory.getCommonRefs();
+		wwcHelper = serverFactory.getWWCHelper();
+
+		if (refs == null || wwcHelper == null) {
+			return false;
+		}
+		return true;
+	}
+
+	/* Do Startup Tasks */
+	/**
+	 * Platform-exclusive tasks, such as (re)loading all plugin configs
+	 * @param isReloading - If this function should accommodate for a plugin reload or not
+	 */
+	public void doStartupTasks(boolean isReloading) {
+		// Start thread executor
+		callbackExecutor = Executors.newCachedThreadPool();
+
+		// Set config manager
+		setConfigManager(new ConfigurationHandler());
+
+		// Init and load configs
+		configurationManager.initMainConfig();
+		configurationManager.initMessagesConfigs();
+		configurationManager.initBlacklistConfig();
+
+		configurationManager.loadMainSettings();
+		configurationManager.loadStorageSettings();
+		// we are storing the real translator name in tempTransName.
+		// this is to prevent the plugin from being fully accessible to all users just yet.
+		// (we are not done init'ing)
+		String tempTransName = configurationManager.loadTranslatorSettings();
+
+		/* Run tasks after translator loaded */
+		// Load saved user data
+		new LoadUserData(tempTransName).run();
+
+		// Schedule automatic user data sync
+		BukkitRunnable sync = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new SyncUserData().run();
+			}
+		};
+
+		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
+
+		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
+		BukkitRunnable tab = new BukkitRunnable() {
+			@Override
+			public void run() {
+				registerTabCompleters();
+			}
+		};
+		if (isReloading) {
+			wwcHelper.runSync(tab, GLOBAL, null);
+		} else {
+			tab.run();
+		}
+
+		// Check for updates
+		BukkitRunnable update = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new UpdateChecker().run();
+			}
+		};
+
+		wwcHelper.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update, ASYNC, null);
+
+		// Check for vault support + register event handlers
+		// Set our translator name just in case...
+		BukkitRunnable event = new BukkitRunnable() {
+			@Override
+			public void run() {
+				wwcHelper.checkVaultSupport();
+				wwcHelper.registerEventHandlers();
+
+				// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+				translatorName = tempTransName;
+			}
+		};
+		if (isReloading) {
+			wwcHelper.runSync(event, GLOBAL, null);
+		} else {
+			event.run();
+		}
 	}
 
 	/**
@@ -443,13 +593,10 @@ public class WorldwideChat extends JavaPlugin {
 		// Shut down executors
 		callbackExecutor.shutdownNow();
 
-		// Close all inventories
-		refs.closeAllInvs();
-
 		// Cleanup background tasks
 		wwcHelper.cleanupTasks(taskID);
 
-		// Sync activeTranslators, playerRecords to disk
+		// Sync ActiveTranslators, playerRecords to disk
 		try {
 			configurationManager.syncData(wasPreviouslyInvalid);
 		} catch (Exception e) {
@@ -461,7 +608,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Disconnect SQL
 		if (sqlSession != null) sqlSession.disconnect();
 		sqlSession = null;
-		
+
 		// Disconnect MongoDB
 		if (mongoSession != null) mongoSession.disconnect();
 		mongoSession = null;
@@ -469,7 +616,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Disconnect Postgres
 		if (postgresSession != null) postgresSession.disconnect();
 		postgresSession = null;
-		
+
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedInputLangs.clear();
 		supportedOutputLangs.clear();
@@ -477,124 +624,6 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.clear();
 		cache.invalidateAll();
 		cache.cleanUp();
-	}
-
-	/* Do Startup Tasks */
-	/**
-	  * Platform-exclusive tasks, such as (re)loading all plugin configs
-	  * @param isReloading - If this function should accommodate for a plugin reload or not
-	  */
-	public void doStartupTasks(boolean isReloading) {
-		// Start thread executor
-		callbackExecutor = Executors.newCachedThreadPool();
-
-		// Set config manager
-		setConfigManager(new ConfigurationHandler());
-
-		// Init and load configs
-		configurationManager.initMainConfig();
-		configurationManager.initMessagesConfigs();
-
-		configurationManager.loadMainSettings();
-		configurationManager.loadStorageSettings();
-		// we are storing the real translator name in tempTransName.
-		// this is to prevent the plugin from being fully accessible to all users just yet.
-		// (we are not done init'ing)
-		String tempTransName = configurationManager.loadTranslatorSettings();
-
-		/* Run tasks after translator loaded */
-		// Load saved user data
-		new LoadUserData(tempTransName).run();
-
-        // Schedule automatic user data sync
-		BukkitRunnable sync = new BukkitRunnable() {
-			@Override
-			public void run() {
-				new SyncUserData().run();
-			}
-		};
-
-		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
-
-		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
-		if (isReloading) {
-			BukkitRunnable tab = new BukkitRunnable() {
-				@Override
-				public void run() {
-					registerTabCompleters();
-				}
-			};
-			wwcHelper.runSync(tab, GLOBAL, null);
-		} else {
-			registerTabCompleters();
-		}
-
-		// Check for updates
-		BukkitRunnable update = new BukkitRunnable() {
-			@Override
-			public void run() {
-				new UpdateChecker().run();
-			}
-		};
-
-		wwcHelper.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update, ASYNC, null);
-
-		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
-		translatorName = tempTransName;
-	}
-
-	/**
-	 * Initialize adapters and check MC version/platform
-	 */
-	private boolean checkAndInitAdapters() {
-		// Init vars
-		Pair<String, String> serverInfo = serverFactory.getServerInfo();
-		String type = serverInfo.getKey();
-		String version = serverInfo.getValue();
-
-		// Get adapter class name
-		String outputVersion = "";
-		switch (type) {
-			case "Bukkit":
-			case "Spigot":
-			case "Paper":
-			case "Folia":
-			// Raw Bukkit (not spigot) is not *explicitly* supported but should work
-				getLogger().info("##### Detected supported platform: " + type + " #####");
-				break;
-			default:
-				getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
-				break;
-		}
-
-		for (String eaVer: supportedMCVersions) {
-			if (version.contains(eaVer)) {
-				outputVersion = eaVer;
-				getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
-			}
-		}
-
-		// Not running a supported server version, default to latest
-		if (outputVersion.isEmpty()) {
-			outputVersion = supportedMCVersions[supportedMCVersions.length-1];
-			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
-		}
-
-		// If running Folia 1.19/1.18 (?)
-		if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
-			getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
-			return false;
-		}
-
-		// Load methods
-		currPlatform = type;
-		refs = serverFactory.getCommonRefs();
-		wwcHelper = serverFactory.getWWCHelper();
-
-		if (refs == null || wwcHelper == null) {
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -628,11 +657,12 @@ public class WorldwideChat extends JavaPlugin {
 			refs.sendMsg(sender, notDone);
 			return false;
 		} else if (getTranslatorName().equals("Invalid")) {
-			final TextComponent invalid = Component.text()
-							.content(refs.getMsg("wwcInvalidTranslator", sender))
-							.color(NamedTextColor.RED)
-					.build();
-			refs.sendMsg(sender, invalid);
+			if (sender instanceof ConsoleCommandSender
+					|| (sender instanceof Player && (sender.hasPermission("worldwidechat.wwcc") || sender.isOp()))) {
+				refs.sendFancyMsg("wwcInvalidTranslator", "", "&c", sender);
+			} else {
+				refs.sendFancyMsg("wwcInvalidTranslatorUser", "", "&c", sender);
+			}
 			return false;
 		}
 		return true;
@@ -650,6 +680,41 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Setters */
+	public void setTranslateIcon(String i) {
+		if (i.equalsIgnoreCase("None")) {
+			translateIcon = null;
+			return;
+		}
+
+		if (i.equalsIgnoreCase("globe")) {
+			translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
+					.append(Component.space());
+			return;
+		}
+
+		translateIcon = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
+	}
+
+	public void setBlacklistTerms(List<String> i) {
+		blacklistTerms = new ConcurrentSkipListSet<>(i);
+	}
+
+	public void setTranslateLayout(String i) {
+		translateLayout = i;
+	}
+
+	public void setForceSeparateChatChannel(boolean i) {
+		forceSeparateChatChannel = i;
+	}
+
+	public void setChatPriority(EventPriority p) {
+		chatPriority = p;
+	}
+
+	public void setChat(Chat chat) {
+		this.chat = chat;
+	}
+
 	public void setMongoSession(MongoDBUtils i) {
 		mongoSession = i;
 	}
@@ -820,7 +885,13 @@ public class WorldwideChat extends JavaPlugin {
 	public void setTranslatorName(String i) {
 		translatorName = i;
 	}
-	
+
+	public void setVaultSupport(boolean i) {
+		vaultSupport = i;
+	}
+
+	public void setBlacklistStatus(boolean i) { blacklist = i; }
+
 	public void setTranslatorErrorCount(int i) {
 		translatorErrorCount = i;
 	}
@@ -854,6 +925,55 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
+	public TextComponent getTranslateIcon() {
+		return translateIcon == null ? Component.empty() : translateIcon;
+	}
+
+	public TextComponent getTranslateLayout(String prefix, String username, String suffix, Player player) {
+		TextComponent out = Component.empty()
+				.append(translateIcon);
+
+		String parsedLayout = translateLayout;
+		int count = parsedLayout.length() - parsedLayout.replace("%", "").length();
+		if (count > 1 && getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+			if (player != null) {
+				refs.debugMsg("Papi for player!");
+				parsedLayout = PlaceholderAPI.setPlaceholders(player, translateLayout);
+			} else {
+				refs.debugMsg("Removing papi placeholders for console.");
+				parsedLayout = translateLayout.replaceAll("%[^%]+%", "");
+			}
+		}
+
+		int i = 0;
+		while (i < parsedLayout.length()) {
+			if (parsedLayout.startsWith("{prefix}", i)) {
+				out = out.append(refs.deserial(prefix));
+				i += "{prefix}".length();
+			} else if (parsedLayout.startsWith("{username}", i)) {
+				out = out.append(refs.deserial(username));
+				i += "{username}".length();
+			} else if (parsedLayout.startsWith("{suffix}", i)) {
+				out = out.append(refs.deserial(suffix));
+				i += "{suffix}".length();
+			} else {
+				// Append any other character directly
+				out = out.append(Component.text(String.valueOf(parsedLayout.charAt(i))));
+				i++;
+			}
+		}
+
+		return out;
+	}
+
+	public boolean isForceSeparateChatChannel() {
+		return forceSeparateChatChannel;
+	}
+
+	public Chat getChat() {
+		return vaultSupport ? chat : null;
+	}
+
 	public ServerAdapterFactory getServerFactory() { return serverFactory; }
 
 	public boolean isMongoConnValid(boolean quiet) {
@@ -1020,11 +1140,27 @@ public class WorldwideChat extends JavaPlugin {
 		return persistentCache;
 	}
 
+	public boolean isBlacklistEnabled() {
+		return blacklist;
+	}
+
 	public int getErrorLimit() {
 		return errorLimit;
 	}
 
 	public ArrayList<String> getErrorsToIgnore() {
 		return errorsToIgnore;
+	}
+
+	public boolean isVaultSupport() {
+		return vaultSupport;
+	}
+
+	public EventPriority getChatPriority() {
+		return chatPriority;
+	}
+
+	public Set<String> getBlacklistTerms() {
+		return blacklistTerms;
 	}
 }

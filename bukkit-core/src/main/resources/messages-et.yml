@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Lülita viipetõlge
   wwcUpdaterOutOfDate: WorldwideChat on aegunud. Palun uuenda uusimale versioonile,
     {0}.
-  wwcConfigGUINextPageButton: Järgmine lehekülg
   wwcConfigInvalidTranslatorSettings: Kehtetu tõlkija seaded! Palun lubage ainult
     üks tõlkija oma config.yml.
   wwcConfigGUIQuitButton: Välju ja salvesta muudatused
@@ -579,4 +578,87 @@ Messages:
     käsitsi muuta.
   wwcRateNoConvoFolia: Folia GUI kaudu ei saa kiiruse piirangut määrata. Kasutage
     selle asemel /wwctrl või /translateratelimit.
+  wwcInvalidTranslatorUser: WorldwideChat pole praegu saadaval. Proovige hiljem uuesti
+    või pöörduge administraatori poole, kui see püsib.
+  wwcCouldNotSaveOhNo: WorldwideChati andmeid ei saa salvestada... palun veenduge,
+    et teie valitud andmebaasi/salvestusvõimalus oleks stabiilne!
+  wwcSyncUserDataComplete: Edukalt salvestatud kasutajaandmed saidile {0}. {1}
+  wwcSyncUserDataStart: Kasutajaandmete sünkroonimine...
+  wwcdDebugEnvDisabled: Silumiskeskkond on keelatud.
+  wwcdDebugEnvWarn: 'Silumiskeskkonna vahetamine pole peaaegu kunagi soovitatav, kui
+    te ei arenda seda pistikprogrammi või uurite viga. Kui soovite ikkagi jätkata,
+    tippige järgmine teave: {0}'
+  wwclLangNotLoadedConsole: '{0} ei saa praegu kasutada. Selle parandamiseks võite
+    proovida pistikprogrammi uuesti laadida, kuid kui see püsib, võtke ühendust arendajaga.'
+  wwcdDebugEnvEnabled: Silumiskeskkond on lubatud.
+  wwclLangNotLoaded: '{0} ei saa praegu kasutada. Proovige kasutada mõnda muud toetatud
+    lokaliseerimist: {1}'
+  wwcdDebugBadState: Seda silumiskäsku ei saa käivitada, kui WorldwideChatil pole
+    kehtivat tõlkikomplekti. Palun proovige hiljem uuesti.
+  wwcNoVaultOnFolia: Vaulti Folias praegu ei toetata. See võib rikkuda ühilduvust
+    teiste vestluse pistikprogrammidega.
+  wwcNoVaultPlugin: Vault pole installitud! See võib rikkuda ühilduvust teiste installitud
+    vestluspistikprogrammidega.
+  wwcVaultChatProviderFound: 'Leidsin Vaulti vestlusteenuse pakkuja: {0}.'
+  wwcNoVaultChatProvider: Vault on installitud, kuid toetatud vestluspakkujat pole
+    tuvastatud.
+  wwcConfigEventPrioritySet: Seadke vestluskuulaja sündmuse prioriteet väärtuseks
+    {0}.
+  wwcConfigEventPriorityInvalid: Vale vestluskuulaja sündmuse prioriteet rakenduses
+    config.yml. Vaikimisi väärtus {0}...
+  wwcConfigGUIChatListenerPriorityButton: Vestlussündmuse kuulaja prioriteedi muutmine
+  wwcConfigConversationChatPriorityBadInput: Halb vestluse prioriteedi sisend! Palun
+    proovige uuesti.
+  wwcConfigConversationChatPrioritySuccess: Määrake edukalt oma vestlussündmuse prioriteet.
+  wwcConfigVaultSupportInvalid: Config.yml-is kehtetu võlvatugi komplekt. Vaikimisi
+    tõeseks...
+  wwcWatsonDeprecation: Watson on aegunud ja IBM ei toeta seda enam. Palun kaaluge
+    vahetamist, kuna selle tugi eemaldatakse järgmises värskenduses.
+  wwcConfigForceChatChannelEnabled: Kõigi tõlgete ajal sunnitakse eraldi tõlkekanal.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Eraldi kanali sundides edukalt
+    lülitatud.
+  wwcConfigConversationChannelIconInput: Eraldi tõlkekanali praegune ikoon on {0}.
+    Toetatakse värvikoode; tagasi minemiseks tippige 0.
+  wwcConfigConversationChatPriorityInput: 'Praegune vestlusürituse prioriteet on {0}.
+    Tippige 0, minge tagasi või valige sellest kehtivate prioriteetide loendist: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Muutke eraldi kanalivormingut
+  wwcConfigConversationChannelIconSuccess: Muutis edukalt oma kanaliikooni.
+  wwcConfigGUISeparateChatChannelIconButton: Muutke eraldi kanaliikooni
+  wwcConfigConversationChatFormatSuccess: Teie vormingut on edukalt muudetud.
+  wwcConfigGUISeparateChatChannelForceButton: Sundage eraldi kanal
+  wwcOrigHover: 'Algne sõnum: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Algne väljaminev vestlus,
+    mis on lisatud tõlkele hõljutekstina, lülitati edukalt sisse.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Lisage algsed väljaminevad sõnumid
+    hõljutekstina
+  wwcConfigPAPIInstalled: PlaceholderAPI tugi on teie vestlusvormingu jaoks lubatud.
+  wwcConfigPAPINotInstalled: Teie vestlusvormingus on tuvastatud kohandatud kohatäitjad,
+    kuid PlaceholderAPI pole installitud. Veenduge, et pistikprogramm on laaditud
+    ja lubatud.
+  wwcConfigChatChannelIconInvalid: Tuvastati vale kanaliikoon. Vaikimisi väärtus {0}...
+  wwcBlacklistBadFormat: Teie must nimekiri pole loendiks korralikult vormindatud.
+    Seda ei jõustata enne, kui see on fikseeritud.
+  wwcBlacklistedMsg: Teie sõnum sisaldab keelatud keelt ja seda ei tõlgitud.
+  wwcBlacklistedMsgDetected: 'Mustas nimekirjas olev sõna ({0}) tuvastati: {1}'
+  wwcBlacklistLoaded: Teie must nimekiri {0} keelatud sõnadest on laaditud.
+  wwcConfigConversationAddBlacklist: Sisestage uus termin, mille soovite lisada, või
+    tippige tagasi minemiseks 0.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Kustuta mustast nimekirjast
+  wwcConfigConversationBlacklistAddSuccess: Lisati edukalt musta nimekirja uue termini.
+  wwcConfigGUIMessagesModifyBlacklistButton: Muuda musta nimekirja
+  wwcConfigGUIChatBlacklistButton: Luba must nimekiri
+  wwcConfigConversationBlacklistDeletionSuccess: Mõiste edukalt kustutati.
+  wwcConfigGUIChatChannelSettings: Vestluskanali konfiguratsioon
+  wwcConfigGUIChatBlacklistSuccess: Musta nimekirja edukalt lülitati.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Lisa uus sõna
+  wwcConfigGUIChatChannelButton: Kanali sätete tõlkimine
+  wwcConfigGUIBlacklistMessagesModify: Muuda terminit ({0})
+  wwcConfigChatChannelFormatInvalid: Tuvastati vale kanalivorming. Vaikimisi väärtus
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
+    on {0}. Meie vaikimisi tuvastatud argumendid, mida saate lisada: {1}. Kui teil
+    on PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
+    (%). Tagasi minemiseks tippige 0.'
+  wwcConfigGUIModifyBlacklistSettings: Muuda musta nimekirja
+  wwcConfigGUINextPageButton: Järgmine lehekülg
 

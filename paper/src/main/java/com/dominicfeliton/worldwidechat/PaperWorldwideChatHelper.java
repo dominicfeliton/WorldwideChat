@@ -2,10 +2,18 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import io.papermc.paper.event.player.AsyncChatEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
+import org.bukkit.event.HandlerList;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.RegisteredListener;
 import org.bukkit.scheduler.BukkitRunnable;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
     // Store additional, WorldwideChat-exclusive methods here
@@ -19,18 +27,49 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
 
     ServerAdapterFactory adapter = main.getServerFactory();
 
+    private final Queue<Listener> listenerQueue = new LinkedList<>();
+
     @Override
     public void registerEventHandlers() {
+        refs.debugMsg("Size of listener queue: " + listenerQueue.size());
+        // Unregister all previously registered listeners for this plugin
+        while (!listenerQueue.isEmpty()) {
+            Listener listener = listenerQueue.poll();
+            HandlerList.unregisterAll(listener);
+        }
+
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
         if (adapter.getServerInfo().getValue().contains("1.2")) {
             // 1.2x supports sign editing
-            pluginManager.registerEvents(new PaperSignListener(), main);
+            PaperSignListener sign = new PaperSignListener();
+            pluginManager.registerEvents(sign, main);
+            listenerQueue.add(sign);
         }
-        pluginManager.registerEvents(new PaperChatListener(), main);
-        pluginManager.registerEvents(new OnPlayerJoinListener(), main);
-        pluginManager.registerEvents(new TranslateInGameListener(), main);
-        pluginManager.registerEvents(new InventoryListener(), main);
+
+        PaperChatListener chat = new PaperChatListener();
+        pluginManager.registerEvent(
+                AsyncChatEvent.class,
+                chat,
+                main.getChatPriority(),
+                (listener, event) -> {
+                    ((PaperChatListener) listener).onPlayerChat((AsyncChatEvent) event);
+                },
+                main
+        );
+        listenerQueue.add(chat);
+
+        OnPlayerJoinListener join = new OnPlayerJoinListener();
+        pluginManager.registerEvents(join, main);
+        listenerQueue.add(join);
+
+        TranslateInGameListener translate = new TranslateInGameListener();
+        pluginManager.registerEvents(translate, main);
+        listenerQueue.add(translate);
+
+        InventoryListener inv = new InventoryListener();
+        pluginManager.registerEvents(inv, main);
+        listenerQueue.add(inv);
         main.getLogger().info(ChatColor.LIGHT_PURPLE
                 + refs.getMsg("wwcListenersInitialized", null));
     }

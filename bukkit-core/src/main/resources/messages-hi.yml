@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: साइन अनुवाद टॉगल करें
   wwcUpdaterOutOfDate: वर्ल्डवाइडचैट पुराना है। कृपया नवीनतम संस्करण, {0} में अद्यतन
     करें।
-  wwcConfigGUINextPageButton: अगला पृष्ठ
   wwcConfigInvalidTranslatorSettings: अवैध अनुवादक सेटिंग्स! कृपया अपने config.yml
     में केवल एक अनुवादक सक्षम करें।
   wwcConfigGUIQuitButton: परिवर्तन से बाहर निकलें (S)
@@ -617,4 +616,95 @@ Messages:
     से संशोधित करने का प्रयास करें।
   wwcRateNoConvoFolia: फोलिया पर GUI के माध्यम से दर सीमा निर्धारित करने में असमर्थ।
     कृपया इसके बजाय /wwctrl या /translateratelimit का उपयोग करें।
+  wwcInvalidTranslatorUser: WorldwideChat फ़िलहाल अनुपलब्ध है। कृपया बाद में फिर से
+    कोशिश करें या अगर यह बनी रहती है तो अपने एडमिन से संपर्क करें।
+  wwcCouldNotSaveOhNo: WorldwideChat डेटा सहेजने में असमर्थ... कृपया सुनिश्चित करें
+    कि आपका चयनित डेटाबेस/स्टोरेज विकल्प स्थिर है!
+  wwcSyncUserDataComplete: उपयोगकर्ता डेटा को {0} पर सफलतापूर्वक सहेजा गया। {1}
+  wwcSyncUserDataStart: उपयोगकर्ता डेटा सिंक किया जा रहा है...
+  wwcdDebugEnvDisabled: डिबग वातावरण अक्षम कर दिया गया है।
+  wwcdDebugEnvWarn: 'जब तक आप इस प्लगइन को विकसित/बग की जांच नहीं कर रहे हैं, तब तक
+    डिबग वातावरण को टॉगल करने की अनुशंसा कभी नहीं की जाती है। यदि आप अभी भी आगे बढ़ना
+    चाहते हैं, तो निम्न टाइप करें: {0}'
+  wwclLangNotLoadedConsole: इस समय {0} का उपयोग नहीं किया जा सकता है। आप इसे ठीक करने
+    के लिए प्लगइन को फिर से लोड करने का प्रयास कर सकते हैं, लेकिन अगर यह बनी रहती
+    है तो कृपया डेवलपर से संपर्क करें।
+  wwcdDebugEnvEnabled: डिबग वातावरण सक्षम किया गया है।
+  wwclLangNotLoaded: 'इस समय {0} का उपयोग नहीं किया जा सकता है। किसी भिन्न समर्थित
+    स्थानीयकरण का उपयोग करने का प्रयास करें: {1}'
+  wwcdDebugBadState: यह डिबग कमांड नहीं चलाया जा सकता है, जबकि WorldwideChat में वैध
+    अनुवादक सेट नहीं है। कृपया बाद में फिर से कोशिश करें।
+  wwcNoVaultOnFolia: वॉल्ट फ़िलहाल फ़ोलिया पर समर्थित नहीं है। इससे अन्य चैट प्लगइन्स
+    के साथ संगतता टूट सकती है।
+  wwcNoVaultPlugin: वॉल्ट स्थापित नहीं है! इससे अन्य इंस्टॉल किए गए चैट प्लगइन्स के
+    साथ संगतता टूट सकती है।
+  wwcVaultChatProviderFound: 'वॉल्ट चैट प्रोवाइडर मिला: {0}।'
+  wwcNoVaultChatProvider: वॉल्ट इंस्टॉल किया गया है, लेकिन किसी भी समर्थित चैट प्रदाता
+    का पता नहीं चला है।
+  wwcConfigEventPrioritySet: चैट लिसनर इवेंट की प्राथमिकता को {0} पर सेट करें।
+  wwcConfigEventPriorityInvalid: config.yml में अमान्य चैट श्रोता ईवेंट प्राथमिकता।
+    डिफ़ॉल्ट रूप से {0} पर सेट किया जा रहा है...
+  wwcConfigGUIChatListenerPriorityButton: चैट इवेंट श्रोता प्राथमिकता बदलें
+  wwcConfigConversationChatPriorityBadInput: खराब चैट प्राथमिकता इनपुट! कृपया फिर
+    से कोशिश करें।
+  wwcConfigConversationChatPrioritySuccess: अपनी चैट ईवेंट प्राथमिकता को सफलतापूर्वक
+    सेट करें।
+  wwcConfigVaultSupportInvalid: config.yml में अमान्य वॉल्ट समर्थन सेट किया गया है।
+    डिफ़ॉल्ट रूप से सही है...
+  wwcWatsonDeprecation: वॉटसन को पदावनत कर दिया गया है और अब वह आईबीएम द्वारा समर्थित
+    नहीं है। कृपया स्विच करने पर विचार करें, क्योंकि अगले अपडेट में इसके लिए समर्थन
+    हटा दिया जाएगा।
+  wwcConfigForceChatChannelEnabled: सभी अनुवादों के दौरान एक अलग अनुवाद चैनल लागू
+    किया जाएगा।
+  wwcConfigConversationSeparateChatChannelForceSuccess: अलग चैनल को फ़ोर्स करने के
+    लिए सफलतापूर्वक टॉगल किया गया।
+  wwcConfigConversationChannelIconInput: अलग अनुवाद चैनल के लिए मौजूदा आइकन {0} है।
+    रंग कोड समर्थित हैं; वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationChatPriorityInput: 'मौजूदा चैट इवेंट की प्राथमिकता {0} है।
+    0 गो टू बैक टाइप करें या मान्य प्राथमिकताओं की इस सूची में से चुनें: {1}।'
+  wwcConfigGUISeparateChatChannelFormatButton: अलग चैनल फ़ॉर्मेट बदलें
+  wwcConfigConversationChannelIconSuccess: अपने चैनल के आइकॉन को सफलतापूर्वक बदला
+    गया।
+  wwcConfigGUISeparateChatChannelIconButton: अलग चैनल आइकन बदलें
+  wwcConfigConversationChatFormatSuccess: आपका फ़ॉर्मेट सफलतापूर्वक बदल दिया गया है।
+  wwcConfigGUISeparateChatChannelForceButton: फोर्स सेपरेट चैनल
+  wwcOrigHover: 'मूल संदेश: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: होवर टेक्स्ट के सफलतापूर्वक
+    टॉगल किए जाने के रूप में अनुवाद से जुड़ी मूल आउटगोइंग चैट।
+  wwcConfigGUISendOutgoingHoverTextChatButton: मूल आउटगोइंग संदेशों को हॉवर टेक्स्ट
+    के रूप में जोड़ें
+  wwcConfigPAPIInstalled: आपके चैट प्रारूप के लिए PlaceHolderAPI समर्थन सक्षम किया
+    गया है।
+  wwcConfigPAPINotInstalled: आपके चैट फ़ॉर्मैट में कस्टम प्लेसहोल्डर पाए गए हैं, लेकिन
+    PlaceHolderAPI इंस्टॉल नहीं किया गया है। कृपया सुनिश्चित करें कि प्लगइन लोड हो
+    गया है और सक्षम है।
+  wwcConfigChatChannelIconInvalid: अमान्य चैनल आइकन का पता चला। डिफ़ॉल्ट रूप से {0}
+    पर सेट किया जा रहा है...
+  wwcBlacklistBadFormat: आपकी ब्लैकलिस्ट को सूची के रूप में ठीक से स्वरूपित नहीं किया
+    गया है। इसे तब तक लागू नहीं किया जाएगा जब तक कि इसे ठीक नहीं किया जाता।
+  wwcBlacklistedMsg: आपके संदेश में प्रतिबंधित भाषा है और इसका अनुवाद नहीं किया गया
+    था।
+  wwcBlacklistedMsgDetected: 'ब्लैकलिस्ट किए गए शब्द ({0}) का पता चला: {1}'
+  wwcBlacklistLoaded: '{0} प्रतिबंधित शब्दों की आपकी ब्लैकलिस्ट लोड कर दी गई है।'
+  wwcConfigConversationAddBlacklist: वह नया शब्द दर्ज करें जिसे आप जोड़ना चाहते हैं,
+    या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ब्लैकलिस्ट से डिलीट करें
+  wwcConfigConversationBlacklistAddSuccess: ब्लैकलिस्ट में एक नया शब्द सफलतापूर्वक
+    जोड़ा गया।
+  wwcConfigGUIMessagesModifyBlacklistButton: ब्लैकलिस्ट को संशोधित करें
+  wwcConfigGUIChatBlacklistButton: ब्लैकलिस्ट सक्षम करें
+  wwcConfigConversationBlacklistDeletionSuccess: शब्द को सफलतापूर्वक हटा दिया गया।
+  wwcConfigGUIChatChannelSettings: चैट चैनल कॉन्फ़िगरेशन
+  wwcConfigGUIChatBlacklistSuccess: ब्लैकलिस्ट को सफलतापूर्वक टॉगल किया।
+  wwcConfigGUIChatMessagesBlacklistNewButton: नया शब्द जोड़ें
+  wwcConfigGUIChatChannelButton: चैनल सेटिंग का अनुवाद करें
+  wwcConfigGUIBlacklistMessagesModify: शब्द संशोधित करें ({0})
+  wwcConfigChatChannelFormatInvalid: अमान्य चैनल फ़ॉर्मैट का पता चला। डिफ़ॉल्ट रूप
+    से {0} पर सेट किया जा रहा है...
+  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
+    हमारे डिफ़ॉल्ट मान्यता प्राप्त तर्क जिन्हें आप शामिल कर सकते हैं: {1}। यदि आपके
+    पास placeHolderAPI है, तो सुनिश्चित करें कि वे वैरिएबल इसके बजाय प्रतिशत (%) से
+    घिरे हों। वापस जाने के लिए 0 टाइप करें।'
+  wwcConfigGUIModifyBlacklistSettings: ब्लैकलिस्ट को संशोधित करें
+  wwcConfigGUINextPageButton: अगला पेज
 

@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: സൈൻ വിവർത്തനം ടോഗിൾ ചെയ്യുക
   wwcUpdaterOutOfDate: ഛത് കാലഹരണപ്പെട്ടതാണ്. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് ദയവായി അപ്ഡേറ്റുചെയ്യുക,
     {0}.
-  wwcConfigGUINextPageButton: അടുത്ത പേജ്
   wwcConfigInvalidTranslatorSettings: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ! നിങ്ങളുടെ ചൊന്ഫിഗ്.
     യ്മ്ല് ഒരു വിവർത്തകൻ മാത്രം പ്രവർത്തനക്ഷമമാക്കുക.
   wwcConfigGUIQuitButton: എക്സിറ്റ് & മാറ്റങ്ങൾ സംരക്ഷിക്കുക
@@ -622,4 +621,93 @@ Messages:
     പരിഷ്ക്കരിക്കാൻ ശ്രമിക്കുക.
   wwcRateNoConvoFolia: ഫോളിയയിലെ ജിയുഐ വഴി ഒരു നിരക്ക് പരിധി സജ്ജമാക്കാൻ കഴിയുന്നില്ല.
     പകരം /wwctrl അല്ലെങ്കിൽ /translateratelimit ഉപയോഗിക്കുക.
+  wwcInvalidTranslatorUser: WorldwideChat നിലവിൽ ലഭ്യമല്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക
+    അല്ലെങ്കിൽ ഇത് നിലനിൽക്കുകയാണെങ്കിൽ നിങ്ങളുടെ അഡ്മിനിസ്ട്രേറ്ററെ ബന്ധപ്പെടുക.
+  wwcCouldNotSaveOhNo: WorldwideChat ഡാറ്റ സംരക്ഷിക്കാൻ കഴിയുന്നില്ല... നിങ്ങളുടെ
+    തിരഞ്ഞെടുത്ത ഡാറ്റാബേസ്/സംഭരണ ഓപ്ഷൻ സ്ഥിരമാണെന്ന് ഉറപ്പാക്കുക!
+  wwcSyncUserDataComplete: ഉപയോക്തൃ ഡാറ്റ {0} ലേക്ക് വിജയകരമായി സംരക്ഷിച്ചു. {1}
+  wwcSyncUserDataStart: ഉപയോക്തൃ ഡാറ്റ സമന്വയിപ്പിക്കുന്നു...
+  wwcdDebugEnvDisabled: ഡീബഗ് പരിസ്ഥിതി പ്രവർത്തനരഹിതമാക്കി.
+  wwcdDebugEnvWarn: 'നിങ്ങൾ ഈ പ്ലഗിൻ വികസിപ്പിക്കുന്ന/ഒരു ബഗ് അന്വേഷിക്കുന്നില്ലെങ്കിൽ
+    ഡീബഗ് പരിസ്ഥിതി ടോഗ്ലിംഗ് മിക്കവാറും ഒരിക്കലും ശുപാർശ ചെയ്യുന്നില്ല. നിങ്ങൾക്ക്
+    ഇപ്പോഴും തുടരാൻ ആഗ്രഹിക്കുന്നുവെങ്കിൽ, ഇനിപ്പറയുന്നവ ടൈപ്പ് ചെയ്യുക: {0}'
+  wwclLangNotLoadedConsole: '{0} ഇപ്പോൾ ഉപയോഗിക്കാൻ കഴിയില്ല. ഇത് പരിഹരിക്കാൻ പ്ലഗിൻ
+    റീലോഡ് ചെയ്യാൻ നിങ്ങൾക്ക് ശ്രമിക്കാം, എന്നാൽ ഇത് നിലനിൽക്കുകയാണെങ്കിൽ ദയവായി ഡവലപ്പറെ
+    ബന്ധപ്പെടുക.'
+  wwcdDebugEnvEnabled: ഡീബഗ് പരിസ്ഥിതി പ്രവർത്തനക്ഷമമാക്കി.
+  wwclLangNotLoaded: '{0} ഇപ്പോൾ ഉപയോഗിക്കാൻ കഴിയില്ല. മറ്റൊരു പിന്തുണയ്ക്കുന്ന പ്രാദേശികവൽക്കരണം
+    ഉപയോഗിക്കാൻ ശ്രമിക്കുക: {1}'
+  wwcdDebugBadState: WorldwideChat-ന് സാധുവായ പരിഭാഷക സെറ്റ് ഇല്ലാത്തപ്പോൾ ഈ ഡീബഗ്
+    കമാൻഡ് പ്രവർത്തിപ്പിക്കാൻ കഴിയില്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.
+  wwcNoVaultOnFolia: നിലവിൽ ഫോളിയയിൽ വോൾട്ട് പിന്തുണയ്ക്കുന്നില്ല. ഇത് മറ്റ് ചാറ്റ്
+    പ്ലഗിനുകളുമായുള്ള അനുയോജ്യത തകർക്കാനിടയുണ്ട്.
+  wwcNoVaultPlugin: വോൾട്ട് ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല! ഇത് മറ്റ് ഇൻസ്റ്റാൾ ചെയ്ത ചാറ്റ്
+    പ്ലഗിനുകളുമായുള്ള അനുയോജ്യത തകർക്കാനിടയുണ്ട്.
+  wwcVaultChatProviderFound: 'ഒരു വോൾട്ട് ചാറ്റ് ദാതാവിനെ കണ്ടെത്തി: {0}.'
+  wwcNoVaultChatProvider: വോൾട്ട് ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ട്, എന്നാൽ പിന്തുണയ്ക്കുന്ന
+    ചാറ്റ് ദാതാവിനെ കണ്ടെത്തിയിട്ടില്ല.
+  wwcConfigEventPrioritySet: ചാറ്റ് ശ്രോതാക്കളുടെ ഇവന്റ് മുൻഗണന {0} ആയി സജ്ജമാക്കുക.
+  wwcConfigEventPriorityInvalid: config.yml- ൽ അസാധുവായ ചാറ്റ് ശ്രോതാക്കളുടെ ഇവന്റ്
+    മുൻഗണന. {0} ലേക്ക് ഡിഫാൾട്ട് ചെയ്യുന്നു...
+  wwcConfigGUIChatListenerPriorityButton: ചാറ്റ് ഇവന്റ് ശ്രോതാവിന്റെ മുൻഗണന മാറ്റുക
+  wwcConfigConversationChatPriorityBadInput: മോശം ചാറ്റ് മുൻഗണന ഇൻപുട്ട്! ദയവായി വീണ്ടും
+    ശ്രമിക്കുക.
+  wwcConfigConversationChatPrioritySuccess: നിങ്ങളുടെ ചാറ്റ് ഇവന്റ് മുൻഗണന വിജയകരമായി
+    സജ്ജമാക്കുക.
+  wwcConfigVaultSupportInvalid: config.yml- ൽ അസാധുവായ നിലവറ പിന്തുണ സജ്ജീകരിച്ചിരിക്കുന്നു.
+    സത്യമായി സ്ഥിരമായി മാറുന്നു...
+  wwcWatsonDeprecation: വാട്സണെ വിലകുറച്ചുകഴിഞ്ഞു, ഇനി ഐബിഎം പിന്തുണയ്ക്കില്ല. അടുത്ത
+    അപ്ഡേറ്റിൽ അതിനുള്ള പിന്തുണ നീക്കംചെയ്യപ്പെടുന്നതിനാൽ ദയവായി മാറുന്നത് പരിഗണിക്കുക.
+  wwcConfigForceChatChannelEnabled: എല്ലാ വിവർത്തനങ്ങളിലും ഒരു പ്രത്യേക വിവർത്തന ചാനൽ
+    നിർബന്ധിതമാകും.
+  wwcConfigConversationSeparateChatChannelForceSuccess: പ്രത്യേക ചാനൽ നിർബന്ധമാക്കി
+    വിജയകരമായി ടോഗിൾ ചെയ്തു.
+  wwcConfigConversationChannelIconInput: പ്രത്യേക വിവർത്തന ചാനലിന്റെ നിലവിലെ ഐക്കൺ
+    {0} ആണ്. കളർ കോഡുകൾ പിന്തുണയ്ക്കുന്നു; തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationChatPriorityInput: 'നിലവിലെ ചാറ്റ് ഇവന്റ് മുൻഗണന {0} ആണ്. ടൈപ്പ്
+    ചെയ്യുക 0 തിരികെ പോകുക അല്ലെങ്കിൽ സാധുവായ മുൻഗണനകളുടെ ഈ പട്ടികയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: പ്രത്യേക ചാനൽ ഫോർമാറ്റ് മാറ്റുക
+  wwcConfigConversationChannelIconSuccess: നിങ്ങളുടെ ചാനൽ ഐക്കൺ വിജയകരമായി മാറ്റി.
+  wwcConfigGUISeparateChatChannelIconButton: പ്രത്യേക ചാനൽ ഐക്കൺ മാറ്റുക
+  wwcConfigConversationChatFormatSuccess: നിങ്ങളുടെ ഫോർമാറ്റ് വിജയകരമായി മാറ്റിക്കഴിഞ്ഞു.
+  wwcConfigGUISeparateChatChannelForceButton: പ്രത്യേക ചാനൽ ഫോഴ്സ് ചെയ്യുക
+  wwcOrigHover: 'യഥാർത്ഥ സന്ദേശം: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: യഥാർത്ഥ ഔട്ട്ഗോയിംഗ് ചാറ്റ്
+    വിജയകരമായി ടോഗ്ലെദ് ഹോവർ ടെക്സ്റ്റ് പോലെ വിവർത്തനം അറ്റാച്ച്
+  wwcConfigGUISendOutgoingHoverTextChatButton: ഹോവർ ടെക്സ്റ്റായി യഥാർത്ഥ ഔട്ട്ഗോയിംഗ്
+    സന്ദേശങ്ങൾ ചേർക്കുക
+  wwcConfigPAPIInstalled: നിങ്ങളുടെ ചാറ്റ് ഫോർമാറ്റിനായി PlaceholderAPI പിന്തുണ പ്രവർത്തനക്ഷമമാക്കി.
+  wwcConfigPAPINotInstalled: നിങ്ങളുടെ ചാറ്റ് ഫോർമാറ്റിൽ ഇഷ്ടാനുസൃത പ്ലേസ്ഹോൾഡറുകൾ
+    കണ്ടെത്തിയിട്ടുണ്ട്, പക്ഷേ PlaceholderAPI ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല. പ്ലഗിൻ ലോഡുചെയ്തിട്ടുണ്ടെന്നും
+    പ്രവർത്തനക്ഷമമാക്കിയിട്ടുണ്ടെന്നും ദയവായി ഉറപ്പാക്കുക.
+  wwcConfigChatChannelIconInvalid: അസാധുവായ ചാനൽ ഐക്കൺ കണ്ടെത്തി. {0} ലേക്ക് ഡിഫാൾട്ട്
+    ചെയ്യുന്നു...
+  wwcBlacklistBadFormat: നിങ്ങളുടെ ബ്ലാക്ക്ലിസ്റ്റ് ഒരു ലിസ്റ്റായി ശരിയായി ഫോർമാറ്റ്
+    ചെയ്തിട്ടില്ല. ഇത് പരിഹരിക്കപ്പെടുന്നതുവരെ ഇത് നടപ്പിലാകില്ല.
+  wwcBlacklistedMsg: നിങ്ങളുടെ സന്ദേശത്തിൽ നിരോധിത ഭാഷ അടങ്ങിയിരിക്കുന്നു, വിവർത്തനം
+    ചെയ്തിട്ടില്ല.
+  wwcBlacklistedMsgDetected: 'കരിമ്പട്ടികയിൽ പെടുത്തിയ വാക്ക് ({0}) കണ്ടെത്തി: {1}'
+  wwcBlacklistLoaded: '{0} നിരോധിച്ച വാക്കുകളുടെ നിങ്ങളുടെ കരിമ്പട്ടികയില് കയറ്റിയിരിക്കുന്നു.'
+  wwcConfigConversationAddBlacklist: നിങ്ങൾ ചേർക്കാൻ ആഗ്രഹിക്കുന്ന പുതിയ പദം നൽകുക,
+    അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: ബ്ലാക്ക്ലിസ്റ്റിൽ നിന്ന് ഇല്ലാതാക്കുക
+  wwcConfigConversationBlacklistAddSuccess: കരിമ്പട്ടികയിൽ ഒരു പുതിയ പദം വിജയകരമായി
+    ചേർത്തു.
+  wwcConfigGUIMessagesModifyBlacklistButton: ബ്ലാക്ക്ലിസ്റ്റ് പരിഷ്ക്കരിക്കുക
+  wwcConfigGUIChatBlacklistButton: ബ്ലാക്ക്ലിസ്റ്റ് പ്രവർത്തനക്ഷമമാക്കുക
+  wwcConfigConversationBlacklistDeletionSuccess: ഈ പദം വിജയകരമായി ഇല്ലാതാക്കി.
+  wwcConfigGUIChatChannelSettings: ചാറ്റ് ചാനൽ കോൺഫിഗറേഷൻ
+  wwcConfigGUIChatBlacklistSuccess: കരിമ്പട്ടികയിൽ വിജയകരമായി മാറ്റിസ്ഥാപിച്ചു.
+  wwcConfigGUIChatMessagesBlacklistNewButton: പുതിയ വാക്ക് ചേർക്കുക
+  wwcConfigGUIChatChannelButton: ചാനൽ ക്രമീകരണങ്ങൾ വിവർത്തനം ചെയ്യുക
+  wwcConfigGUIBlacklistMessagesModify: കാലാവധി പരിഷ്ക്കരിക്കുക ({0})
+  wwcConfigChatChannelFormatInvalid: അസാധുവായ ചാനൽ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
+    ഡിഫാൾട്ട് ചെയ്യുന്നു...
+  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
+    {0} ആണ്. നിങ്ങൾക്ക് ഉൾപ്പെടുത്താൻ കഴിയുന്ന ഞങ്ങളുടെ സ്ഥിരസ്ഥിതി അംഗീകൃത വാദങ്ങൾ:
+    {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന്
+    ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigGUIModifyBlacklistSettings: ബ്ലാക്ക്ലിസ്റ്റ് പരിഷ്ക്കരിക്കുക
+  wwcConfigGUINextPageButton: അടുത്ത പേജ്
 

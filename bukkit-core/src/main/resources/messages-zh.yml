@@ -38,7 +38,6 @@ Messages:
   wwcConfigGUILangButton: 更改插件语言
   wwctGUISignButton: 切换签名翻译
   wwcUpdaterOutOfDate: WorldwideChat 已经过时了。请更新至最新版本 {0}。
-  wwcConfigGUINextPageButton: 下一页
   wwcConfigInvalidTranslatorSettings: 翻译者设置无效！请在 config.yml 中只启用一个翻译器。
   wwcConfigGUIQuitButton: 退出并保存更改
   wwctPlayerNotFound: 玩家 %我没找到。
@@ -462,4 +461,60 @@ Messages:
   wwcLoadCacheFolderFail: 无法在插件目录中创建用户缓存文件夹。禁用全球聊天...
   wwcNoConvoFolia: 目前，此版本的 Folia 上的 Bukkit 对话已中断，但切换功能仍然可以使用。请尝试手动修改此值的配置。
   wwcRateNoConvoFolia: 无法通过 Folia 上的 GUI 设置速率限制。请改用 /wwctrl 或 /translaterateLimit。
+  wwcInvalidTranslatorUser: WorldwideChat 目前不可用。如果问题仍然存在，请稍后重试或联系您的管理员。
+  wwcCouldNotSaveOhNo: 无法保存 WorldwideChat 数据... 请确保您选择的数据库/存储选项是稳定的！
+  wwcSyncUserDataComplete: 成功将用户数据保存到 {0}。{1}
+  wwcSyncUserDataStart: 正在同步用户数据...
+  wwcdDebugEnvDisabled: 调试环境已被禁用。
+  wwcdDebugEnvWarn: 除非你正在开发这个插件/调查错误，否则几乎不建议切换调试环境。如果你还想继续，请键入以下内容：{0}
+  wwclLangNotLoadedConsole: '{0} 此时无法使用。你可以尝试重新加载插件来修复这个问题，但如果问题仍然存在，请联系开发人员。'
+  wwcdDebugEnvEnabled: 调试环境已启用。
+  wwclLangNotLoaded: '{0} 此时无法使用。尝试使用其他支持的本地化：{1}'
+  wwcdDebugBadState: 在 WorldwideChat 没有有效的转换器集合时，无法运行此调试命令。请稍后再试。
+  wwcNoVaultOnFolia: Folia 目前不支持保管库。这可能会破坏与其他聊天插件的兼容性。
+  wwcNoVaultPlugin: 保管库未安装！这可能会破坏与其他已安装的聊天插件的兼容性。
+  wwcVaultChatProviderFound: 找到了 Vault 聊天提供商：{0}.
+  wwcNoVaultChatProvider: Vault 已安装，但未检测到支持的聊天提供商。
+  wwcConfigEventPrioritySet: 将聊天监听器事件优先级设置为 {0}。
+  wwcConfigEventPriorityInvalid: config.yml 中的聊天监听器事件优先级无效。默认为 {0}...
+  wwcConfigGUIChatListenerPriorityButton: 更改聊天事件监听器优先级
+  wwcConfigConversationChatPriorityBadInput: 聊天优先级输入错误！请再试一次。
+  wwcConfigConversationChatPrioritySuccess: 成功设置聊天活动优先级。
+  wwcConfigVaultSupportInvalid: config.yml 中设置的保管库支持无效。默认为真...
+  wwcWatsonDeprecation: Watson 已被弃用，不再受到 IBM 的支持。请考虑切换，因为对它的支持将在下次更新中删除。
+  wwcConfigForceChatChannelEnabled: 在所有翻译过程中，将强制使用单独的翻译频道。
+  wwcConfigConversationSeparateChatChannelForceSuccess: 成功切换强制使用单独的频道。
+  wwcConfigConversationChannelIconInput: 单独翻译频道的当前图标是 {0}。支持颜色代码；键入 0 返回。
+  wwcConfigConversationChatPriorityInput: 当前聊天事件的优先级为 {0}。键入 0 返回或从以下有效优先级列表中选择：{1}.
+  wwcConfigGUISeparateChatChannelFormatButton: 更改单独的频道格式
+  wwcConfigConversationChannelIconSuccess: 成功更改了您的频道图标。
+  wwcConfigGUISeparateChatChannelIconButton: 更改单独的频道图标
+  wwcConfigConversationChatFormatSuccess: 您的格式已成功更改。
+  wwcConfigGUISeparateChatChannelForceButton: 强制分离频道
+  wwcOrigHover: 原始消息：{0}
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: 成功切换悬停文本后，原始外发聊天附加到翻译中。
+  wwcConfigGUISendOutgoingHoverTextChatButton: 将原始外发邮件添加为悬停文本
+  wwcConfigPAPIInstalled: 您的聊天格式已启用占位符 API 支持。
+  wwcConfigPAPINotInstalled: 已在您的聊天格式中检测到自定义占位符，但未安装占位符 API。请确保插件已加载并已启用。
+  wwcConfigChatChannelIconInvalid: 检测到无效的频道图标。默认为 {0}...
+  wwcBlacklistBadFormat: 您的黑名单格式不正确，无法正确设置为列表。在解决这个问题之前，它不会被强制执行。
+  wwcBlacklistedMsg: 您的消息包含禁用语言，且未翻译。
+  wwcBlacklistedMsgDetected: 检测到列入黑名单的单词 ({0})：{1}
+  wwcBlacklistLoaded: 你的 {0} 禁词黑名单已加载。
+  wwcConfigConversationAddBlacklist: 输入要添加的新术语，或键入 0 返回。
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: 从黑名单中删除
+  wwcConfigConversationBlacklistAddSuccess: 成功将新术语添加到黑名单。
+  wwcConfigGUIMessagesModifyBlacklistButton: 修改黑名单
+  wwcConfigGUIChatBlacklistButton: 启用黑名单
+  wwcConfigConversationBlacklistDeletionSuccess: 已成功删除该术语。
+  wwcConfigGUIChatChannelSettings: 聊天频道配置
+  wwcConfigGUIChatBlacklistSuccess: 成功切换黑名单。
+  wwcConfigGUIChatMessagesBlacklistNewButton: 添加新单词
+  wwcConfigGUIChatChannelButton: 翻译频道设置
+  wwcConfigGUIBlacklistMessagesModify: 修改条款 ({0})
+  wwcConfigChatChannelFormatInvalid: 检测到无效的频道格式。默认为 {0}...
+  wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。我们默认可识别的参数，您可以包括：{1}.如果你有占位符
+    API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
+  wwcConfigGUIModifyBlacklistSettings: 修改黑名单
+  wwcConfigGUINextPageButton: 下一页
 

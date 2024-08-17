@@ -47,7 +47,6 @@ Messages:
   wwctGUISignButton: Comută traducerea semnelor
   wwcUpdaterOutOfDate: WorldwideChat este expirat. Vă rugăm să actualizați la cea
     mai recentă versiune, {0}.
-  wwcConfigGUINextPageButton: Pagina următoare
   wwcConfigInvalidTranslatorSettings: Setări de traducător nevalide! Vă rugăm să activați
     un singur traducător în config.yml.
   wwcConfigGUIQuitButton: Ieșire și salvare modificări
@@ -634,4 +633,98 @@ Messages:
     manual configurația pentru această valoare.
   wwcRateNoConvoFolia: Imposibil de setat o limită de rată prin GUI pe Folia. Vă rugăm
     să utilizați /wwctrl sau /translateratelimit în schimb.
+  wwcInvalidTranslatorUser: WorldwideChat nu este momentan disponibil. Vă rugăm să
+    încercați din nou mai târziu sau contactați administratorul dacă acest lucru persistă.
+  wwcCouldNotSaveOhNo: Nu se pot salva datele WorldwideChat... vă rugăm să vă asigurați
+    că opțiunea de bază/stocare selectată este stabilă!
+  wwcSyncUserDataComplete: S-au salvat cu succes datele utilizatorului în {0}. {1}
+  wwcSyncUserDataStart: Sincronizarea datelor utilizatorului...
+  wwcdDebugEnvDisabled: Mediul de depanare a fost dezactivat.
+  wwcdDebugEnvWarn: 'Comutarea mediului de depanare nu este aproape niciodată recomandată
+    decât dacă dezvoltați acest plugin/investigați o eroare. Dacă totuși doriți să
+    continuați, tastați următoarele: {0}'
+  wwclLangNotLoadedConsole: '{0} nu poate fi utilizat în acest moment. Puteți încerca
+    să reîncărcați pluginul pentru a remedia acest lucru, dar dacă persistă vă rugăm
+    să contactați dezvoltatorul.'
+  wwcdDebugEnvEnabled: Mediul de depanare a fost activat.
+  wwclLangNotLoaded: '{0} nu poate fi utilizat în acest moment. Încercați să utilizați
+    o altă localizare acceptată: {1}'
+  wwcdDebugBadState: Această comandă de depanare nu poate fi executată în timp ce
+    WorldwideChat nu are un set de traducător valid. Vă rugăm să încercați din nou
+    mai târziu.
+  wwcNoVaultOnFolia: Seif nu este acceptat momentan pe Folia. Acest lucru poate rupe
+    compatibilitatea cu alte pluginuri de chat.
+  wwcNoVaultPlugin: Vault nu este instalat! Acest lucru poate rupe compatibilitatea
+    cu alte pluginuri de chat instalate.
+  wwcVaultChatProviderFound: 'Am găsit un furnizor de chat Vault: {0}.'
+  wwcNoVaultChatProvider: Vault este instalat, dar nu a fost detectat niciun furnizor
+    de chat acceptat.
+  wwcConfigEventPrioritySet: Setați prioritatea evenimentului ascultătorului de chat
+    la {0}.
+  wwcConfigEventPriorityInvalid: Prioritatea evenimentului ascultătorului de chat
+    nevalidă în config.yml. Implicit la {0}...
+  wwcConfigGUIChatListenerPriorityButton: Schimbați prioritatea ascultătorului evenimentului
+    de chat
+  wwcConfigConversationChatPriorityBadInput: Intrare greșită a priorității chat-ului!
+    Vă rugăm să încercați din nou.
+  wwcConfigConversationChatPrioritySuccess: Setați cu succes prioritatea evenimentului
+    de chat.
+  wwcConfigVaultSupportInvalid: Suport seif nevalid setat în config.yml. Implicit
+    la adevărat...
+  wwcWatsonDeprecation: Watson a fost învechit și nu mai este acceptat de IBM. Vă
+    rugăm să luați în considerare comutarea, deoarece suportul pentru acesta va fi
+    eliminat în următoarea actualizare.
+  wwcConfigForceChatChannelEnabled: Un canal de traducere separat va fi forțat în
+    timpul tuturor traducerilor.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Comutat cu succes forțând
+    canalul separat.
+  wwcConfigConversationChannelIconInput: Pictograma curentă pentru canalul separat
+    de traducere este {0}. Codurile de culoare sunt acceptate; tastați 0 pentru a
+    reveni.
+  wwcConfigConversationChatPriorityInput: 'Prioritatea curentă a evenimentului de
+    chat este {0}. Tastați 0 mergeți înapoi sau alegeți din această listă de priorități
+    valide: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Schimbați formatul canalului separat
+  wwcConfigConversationChannelIconSuccess: A schimbat cu succes pictograma canalului.
+  wwcConfigGUISeparateChatChannelIconButton: Schimbați pictograma canalului separat
+  wwcConfigConversationChatFormatSuccess: Formatul dvs. a fost schimbat cu succes.
+  wwcConfigGUISeparateChatChannelForceButton: Forțați canalul separat
+  wwcOrigHover: 'Mesajul original: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Chatul original de ieșire
+    atașat la traducere ca text de trecere a mouse-ului a fost comutat cu succes.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Adăugați mesaje originale de ieșire
+    ca text hover
+  wwcConfigPAPIInstalled: Suportul PlaceHolderAPI a fost activat pentru formatul dvs.
+    de chat.
+  wwcConfigPAPINotInstalled: Substanțele de substituție personalizate au fost detectate
+    în formatul dvs. de chat, dar PlaceHolderAPI nu este instalat. Vă rugăm să vă
+    asigurați că pluginul s-a încărcat și este activat.
+  wwcConfigChatChannelIconInvalid: Pictograma canalului nevalidă detectată. Implicit
+    la {0}...
+  wwcBlacklistBadFormat: Lista dvs. neagră nu este formatată corect ca listă. Nu va
+    fi aplicată până când acest lucru nu va fi stabilit.
+  wwcBlacklistedMsg: Mesajul dvs. conține o limbă interzisă și nu a fost tradus.
+  wwcBlacklistedMsgDetected: 'Cuvânt pe lista neagră ({0}) detectat: {1}'
+  wwcBlacklistLoaded: Lista neagră a cuvintelor interzise {0} a fost încărcată.
+  wwcConfigConversationAddBlacklist: Introduceți noul termen pe care doriți să îl
+    adăugați sau tastați 0 pentru a reveni.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Ștergeți din lista neagră
+  wwcConfigConversationBlacklistAddSuccess: A adăugat cu succes un termen nou pe lista
+    neagră.
+  wwcConfigGUIMessagesModifyBlacklistButton: Modificați lista neagră
+  wwcConfigGUIChatBlacklistButton: Activați lista neagră
+  wwcConfigConversationBlacklistDeletionSuccess: A șters cu succes termenul.
+  wwcConfigGUIChatChannelSettings: Configurarea canalului de chat
+  wwcConfigGUIChatBlacklistSuccess: A comutat cu succes lista neagră.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Adaugă un cuvânt nou
+  wwcConfigGUIChatChannelButton: Traduceți setările canalului
+  wwcConfigGUIBlacklistMessagesModify: Modificați termenul ({0})
+  wwcConfigChatChannelFormatInvalid: Formatul canalului nevalid detectat. Implicit
+    la {0}...
+  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
+    de chat este {0}. Argumentele noastre implicite recunoscute pe care le puteți
+    include: {1}. Dacă aveți PlaceHolderAPI, asigurați-vă că acele variabile sunt
+    înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
+  wwcConfigGUIModifyBlacklistSettings: Modificați lista neagră
+  wwcConfigGUINextPageButton: Pagina următoare
 

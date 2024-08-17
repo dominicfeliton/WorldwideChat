@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Toggle Cyfieithu Arwyddion
   wwcUpdaterOutOfDate: Mae WorldwideChat yn hen. Diweddarwch i'r fersiwn ddiweddaraf,
     {0}.
-  wwcConfigGUINextPageButton: Tudalen Nesaf
   wwcConfigInvalidTranslatorSettings: Gosodiadau cyfieithydd annilys! Os gwelwch yn
     dda alluogi dim ond un cyfieithydd yn eich config.yml.
   wwcConfigGUIQuitButton: Ymadael ac Arbed Newidiadau
@@ -607,4 +606,95 @@ Messages:
     â llaw ar gyfer y gwerth hwn.
   wwcRateNoConvoFolia: Methu gosod terfyn cyfradd trwy'r GUI ar Folia. Defnyddiwch
     /wwctrl neu/translateratelimit yn lle hynny.
+  wwcInvalidTranslatorUser: Nid yw WorldwideChat ar gael ar hyn o bryd. Rhowch gynnig
+    eto yn ddiweddarach neu cysylltwch â'ch gweinyddwr os bydd hyn yn parhau.
+  wwcCouldNotSaveOhNo: Methu arbed data WorldwideChat... sicrhewch fod eich opsiwn
+    cronfa ddata/storio a ddewiswyd yn sefydlog!
+  wwcSyncUserDataComplete: Cadwyd data defnyddwyr yn llwyddiannus i {0}. {1}
+  wwcSyncUserDataStart: Cysoni data defnyddwyr...
+  wwcdDebugEnvDisabled: Mae'r amgylchedd dadfygio wedi'i analluogi.
+  wwcdDebugEnvWarn: 'Bron byth yn argymell togly''r amgylchedd dadfygio oni bai eich
+    bod yn datblygu''r ategyn hwn/ymchwilio i nam. Os ydych chi am fynd ymlaen o hyd,
+    teipiwch y canlynol: {0}'
+  wwclLangNotLoadedConsole: Ni ellir defnyddio {0} ar hyn o bryd. Gallwch geisio ail-lwytho'r
+    ategyn i drwsio hyn, ond os yw'n parhau cysylltwch â'r datblygwr.
+  wwcdDebugEnvEnabled: Mae'r amgylchedd dadfygio wedi'i alluogi.
+  wwclLangNotLoaded: 'Ni ellir defnyddio {0} ar hyn o bryd. Ceisiwch ddefnyddio lleoleiddio
+    â chymorth gwahanol: {1}'
+  wwcdDebugBadState: Ni ellir rhedeg y gorchymyn dadfygio hwn tra nad oes gan WorldwideChat
+    set cyfieithydd dilys. Rhowch gynnig eto yn ddiweddarach.
+  wwcNoVaultOnFolia: Nid yw Vault yn cael ei gefnogi ar hyn o bryd ar Folia. Gall
+    hyn dorri cydnawsedd ag ategion sgwrsio eraill.
+  wwcNoVaultPlugin: Nid yw Vault wedi'i osod! Efallai y bydd hyn yn torri cydnawsedd
+    ag ategion sgwrsio eraill sydd wedi'u gosod.
+  wwcVaultChatProviderFound: 'Wedi dod o hyd i ddarparwr sgwrs Vault: {0}.'
+  wwcNoVaultChatProvider: Mae Vault wedi'i osod, ond ni chanfuwyd unrhyw ddarparwr
+    sgwrsio â chymorth.
+  wwcConfigEventPrioritySet: Gosodwch flaenoriaeth digwyddiad gwrandawyr sgwrsio i
+    {0}.
+  wwcConfigEventPriorityInvalid: Blaenoriaeth digwyddiad gwrandawyr sgwrs annilys
+    yn config.yml. Rhagosodiad i {0}...
+  wwcConfigGUIChatListenerPriorityButton: Newid Blaenoriaeth Gwrandawyr Digwyddiad
+    Sgwrs
+  wwcConfigConversationChatPriorityBadInput: Mewnbwn blaenoriaeth sgwrs gwael! Rhowch
+    gynnig eto os gwelwch yn dda.
+  wwcConfigConversationChatPrioritySuccess: Gosodwch flaenoriaeth eich digwyddiad
+    sgwrsio yn llwyddiannus.
+  wwcConfigVaultSupportInvalid: Cefnogaeth claddfa annilys wedi'i osod yn config.yml.
+    Rhagosodiad i wir...
+  wwcWatsonDeprecation: Mae Watson wedi cael ei anghymeradwyo ac nid yw IBM bellach
+    yn cael ei gefnogi. Ystyriwch newid, gan y bydd cefnogaeth iddo yn cael ei dileu
+    yn y diweddariad nesaf.
+  wwcConfigForceChatChannelEnabled: Bydd sianel gyfieithu ar wahân yn cael ei gorfodi
+    yn ystod yr holl gyfieithiadau.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Llwyddodd i toglo gorfodi'r
+    sianel ar wahân.
+  wwcConfigConversationChannelIconInput: Yr eicon cyfredol ar gyfer y sianel gyfieithu
+    ar wahân yw {0}. Cefnogir codau lliw; teipiwch 0 i fynd yn ôl.
+  wwcConfigConversationChatPriorityInput: 'Blaenoriaeth y digwyddiad sgwrsio cyfredol
+    yw {0}. Teipiwch 0 ewch i ôl neu dewiswch o''r rhestr hon o flaenoriaethau dilys:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Newid Fformat Sianel ar Wahân
+  wwcConfigConversationChannelIconSuccess: Newidiodd eicon eich sianel yn llwyddiannus.
+  wwcConfigGUISeparateChatChannelIconButton: Newid Eicon Sianel ar Wahân
+  wwcConfigConversationChatFormatSuccess: Mae eich fformat wedi'i newid yn llwyddiannus.
+  wwcConfigGUISeparateChatChannelForceButton: Sianel ar wahân Force
+  wwcOrigHover: 'Neges wreiddiol: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sgwrs sy'n mynd allan wreiddiol
+    ynghlwm wrth gyfieithu wrth i destun hofran toglwyd yn llwyddiannus.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Ychwanegu Negeseuon Allanol Gwreiddiol
+    fel Testun Hofran
+  wwcConfigPAPIInstalled: Mae cefnogaeth PlaceholderAPI wedi'i alluogi ar gyfer eich
+    fformat sgwrsio.
+  wwcConfigPAPINotInstalled: Mae deiliaid lleoedd personol wedi'u canfod yn eich fformat
+    sgwrsio, ond nid yw PlaceholderAPI wedi'i osod. Sicrhewch fod yr ategyn wedi llwytho
+    ac wedi'i alluogi.
+  wwcConfigChatChannelIconInvalid: Canfuwyd eicon sianel annilys. Rhagosodiad i {0}...
+  wwcBlacklistBadFormat: Nid yw eich rhestr ddu wedi'i fformatio'n iawn fel rhestr.
+    Ni fydd yn cael ei orfodi nes bod hyn yn cael ei bennu.
+  wwcBlacklistedMsg: Mae eich neges yn cynnwys iaith waharddedig ac ni chafodd ei
+    chyfieithu.
+  wwcBlacklistedMsgDetected: 'Canfuwyd gair ar y rhestr ddu ({0}): {1}'
+  wwcBlacklistLoaded: Mae eich rhestr ddu o eiriau gwaharddedig {0} wedi'i llwytho.
+  wwcConfigConversationAddBlacklist: Rhowch y term newydd yr hoffech ei ychwanegu,
+    neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Dileu o'r Rhestr Ddu
+  wwcConfigConversationBlacklistAddSuccess: Llwyddodd i ychwanegu term newydd at y
+    rhestr ddu.
+  wwcConfigGUIMessagesModifyBlacklistButton: Addasu Rhestr Ddu
+  wwcConfigGUIChatBlacklistButton: Galluogi Rhestr Ddu
+  wwcConfigConversationBlacklistDeletionSuccess: Dileu'r term yn llwyddiannus.
+  wwcConfigGUIChatChannelSettings: Cyfluniad Sianel Sgwrs
+  wwcConfigGUIChatBlacklistSuccess: Togliodd y rhestr ddu yn llwyddiannus.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Ychwanegu Word Newydd
+  wwcConfigGUIChatChannelButton: Cyfieithu Channel Settings
+  wwcConfigGUIBlacklistMessagesModify: Addasu Tymor ({0})
+  wwcConfigChatChannelFormatInvalid: Canfuwyd fformat sianel annilys. Rhagosodiad
+    i {0}...
+  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
+    sgwrsio ar wahân yw {0}. Mae ein dadleuon cydnabyddedig diofyn y gallwch eu cynnwys:
+    {1}. Os oes gennych PlaceholderAPI, gwnewch yn siŵr bod y newidynnau hynny wedi''u
+    hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn ôl.'
+  wwcConfigGUIModifyBlacklistSettings: Addasu Rhestr Ddu
+  wwcConfigGUINextPageButton: Tudalen nesaf
 

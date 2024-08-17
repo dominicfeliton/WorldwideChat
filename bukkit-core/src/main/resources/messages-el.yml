@@ -47,7 +47,6 @@ Messages:
   wwctGUISignButton: Εναλλαγή Μετάφρασης Υπογραφών
   wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
     έκδοση, {0}.
-  wwcConfigGUINextPageButton: Επόμενη Σελίδα
   wwcConfigInvalidTranslatorSettings: Μη έγκυρες ρυθμίσεις μεταφραστή! Παρακαλώ ενεργοποιήστε
     μόνο έναν μεταφραστή στο config.yml σας.
   wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
@@ -659,4 +658,100 @@ Messages:
     να τροποποιήσετε τη διαμόρφωση χειροκίνητα για αυτήν την τιμή.
   wwcRateNoConvoFolia: Δεν είναι δυνατή η ρύθμιση ενός ορίου ποσοστού μέσω του GUI
     στο Folia. Παρακαλώ χρησιμοποιήστε το /wwctrl ή /translateratelimit αντί αυτού.
+  wwcInvalidTranslatorUser: Το WorldwideChat δεν είναι διαθέσιμο προς το παρόν. Δοκιμάστε
+    ξανά αργότερα ή επικοινωνήστε με τον διαχειριστή σας εάν αυτό επιμένει.
+  wwcCouldNotSaveOhNo: Δεν είναι δυνατή η αποθήκευση δεδομένων WorldwideChat... βεβαιωθείτε
+    ότι η επιλεγμένη επιλογή βάσης δεδομένων/αποθήκευσης είναι σταθερή!
+  wwcSyncUserDataComplete: Αποθηκεύτηκαν επιτυχώς τα δεδομένα χρήστη στο {0}. {1}
+  wwcSyncUserDataStart: Συγχρονισμός δεδομένων χρήστη...
+  wwcdDebugEnvDisabled: Το περιβάλλον εντοπισμού σφαλμάτων έχει απενεργοποιηθεί.
+  wwcdDebugEnvWarn: 'Η εναλλαγή του περιβάλλοντος εντοπισμού σφαλμάτων δεν συνιστάται
+    σχεδόν ποτέ εκτός εάν αναπτύσσετε αυτό το πρόσθετο/διερευνάτε ένα σφάλμα. Εάν
+    εξακολουθείτε να θέλετε να προχωρήσετε, πληκτρολογήστε τα εξής: {0}'
+  wwclLangNotLoadedConsole: Το {0} δεν μπορεί να χρησιμοποιηθεί αυτή τη στιγμή. Μπορείτε
+    να δοκιμάσετε να φορτώσετε ξανά το plugin για να το διορθώσετε, αλλά εάν επιμένει
+    επικοινωνήστε με τον προγραμματιστή.
+  wwcdDebugEnvEnabled: Το περιβάλλον εντοπισμού σφαλμάτων έχει ενεργοποιηθεί.
+  wwclLangNotLoaded: 'Το {0} δεν μπορεί να χρησιμοποιηθεί αυτή τη στιγμή. Δοκιμάστε
+    να χρησιμοποιήσετε μια διαφορετική υποστηριζόμενη τοπική προσαρμογή: {1}'
+  wwcdDebugBadState: Αυτή η εντολή εντοπισμού σφαλμάτων δεν μπορεί να εκτελεστεί ενώ
+    το WorldwideChat δεν διαθέτει έγκυρο σύνολο μεταφραστή. Παρακαλώ δοκιμάστε ξανά
+    αργότερα.
+  wwcNoVaultOnFolia: Το Vault δεν υποστηρίζεται προς το παρόν στο Folia. Αυτό μπορεί
+    να σπάσει τη συμβατότητα με άλλα πρόσθετα συνομιλίας.
+  wwcNoVaultPlugin: Το θησαυροφυλάκιο δεν έχει εγκατασταθεί! Αυτό μπορεί να σπάσει
+    τη συμβατότητα με άλλα εγκατεστημένα πρόσθετα συνομιλίας.
+  wwcVaultChatProviderFound: 'Βρέθηκε ένας πάροχος συνομιλίας Vault: {0}.'
+  wwcNoVaultChatProvider: Το Vault είναι εγκατεστημένο, αλλά δεν έχει εντοπιστεί υποστηριζόμενος
+    πάροχος συνομιλίας.
+  wwcConfigEventPrioritySet: Ορίστε την προτεραιότητα συμβάντος ακροατών συνομιλίας
+    σε {0}.
+  wwcConfigEventPriorityInvalid: Μη έγκυρη προτεραιότητα συμβάντος ακροατή συνομιλίας
+    στο config.yml. Προεπιλογή σε {0}...
+  wwcConfigGUIChatListenerPriorityButton: Αλλαγή προτεραιότητας ακροατών συμβάντων
+    συνομιλίας
+  wwcConfigConversationChatPriorityBadInput: Κακή εισαγωγή προτεραιότητας συνομιλίας!
+    Παρακαλώ προσπαθήστε ξανά.
+  wwcConfigConversationChatPrioritySuccess: Ορίστε με επιτυχία την προτεραιότητα συμβάντων
+    συνομιλίας σας.
+  wwcConfigVaultSupportInvalid: Μη έγκυρη υποστήριξη θυρίδας αποθήκευσης έχει οριστεί
+    στο config.yml. Η προεπιλογή είναι αληθής...
+  wwcWatsonDeprecation: Το Watson έχει καταργηθεί και δεν υποστηρίζεται πλέον από
+    την IBM. Εξετάστε το ενδεχόμενο εναλλαγής, καθώς η υποστήριξη για αυτό θα καταργηθεί
+    στην επόμενη ενημέρωση.
+  wwcConfigForceChatChannelEnabled: Ένα ξεχωριστό κανάλι μετάφρασης θα επιβληθεί κατά
+    τη διάρκεια όλων των μεταφράσεων.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Επιτυχής εναλλαγή αναγκάζοντας
+    το ξεχωριστό κανάλι.
+  wwcConfigConversationChannelIconInput: Το τρέχον εικονίδιο για το ξεχωριστό κανάλι
+    μετάφρασης είναι {0}. Υποστηρίζονται κωδικοί χρώματος. Πληκτρολογήστε 0 για να
+    επιστρέψετε.
+  wwcConfigConversationChatPriorityInput: 'Η τρέχουσα προτεραιότητα συμβάντος συνομιλίας
+    είναι {0}. Πληκτρολογήστε 0 πηγαίνετε πίσω ή επιλέξτε από αυτήν τη λίστα έγκυρων
+    προτεραιοτήτων: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Αλλαγή ξεχωριστής μορφής καναλιού
+  wwcConfigConversationChannelIconSuccess: Αλλάξτε με επιτυχία το εικονίδιο του καναλιού
+    σας.
+  wwcConfigGUISeparateChatChannelIconButton: Αλλάξτε το ξεχωριστό εικονίδιο καναλιού
+  wwcConfigConversationChatFormatSuccess: Η μορφή σας άλλαξε με επιτυχία.
+  wwcConfigGUISeparateChatChannelForceButton: Ξεχωριστό κανάλι δύναμης
+  wwcOrigHover: 'Πρωτότυπο μήνυμα: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Η αρχική εξερχόμενη συνομιλία
+    που επισυνάπτεται στη μετάφραση καθώς το κείμενο του ποντικιού εναλλάχθηκε με
+    επιτυχία.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Προσθήκη πρωτότυπων εξερχόμενων μηνυμάτων
+    ως κείμενο με το ποντίκι
+  wwcConfigPAPIInstalled: Η υποστήριξη PlaceHolderAPI έχει ενεργοποιηθεί για τη μορφή
+    συνομιλίας σας.
+  wwcConfigPAPINotInstalled: Έχουν εντοπιστεί προσαρμοσμένοι κάτοχοι θέσης στη μορφή
+    συνομιλίας σας, αλλά το PlaceHolderAPI δεν είναι εγκατεστημένο. Βεβαιωθείτε ότι
+    το πρόσθετο έχει φορτωθεί και είναι ενεργοποιημένο.
+  wwcConfigChatChannelIconInvalid: Εντοπίστηκε μη έγκυρο εικονίδιο καναλιού. Προεπιλογή
+    σε {0}...
+  wwcBlacklistBadFormat: Η μαύρη λίστα σας δεν έχει μορφοποιηθεί σωστά ως λίστα. Δεν
+    θα εφαρμοστεί μέχρι να διορθωθεί αυτό.
+  wwcBlacklistedMsg: Το μήνυμά σας περιέχει απαγορευμένη γλώσσα και δεν μεταφράστηκε.
+  wwcBlacklistedMsgDetected: 'Εντοπίστηκε λέξη μαύρης λίστας ({0}): {1}'
+  wwcBlacklistLoaded: Η μαύρη λίστα με τις απαγορευμένες λέξεις {0} έχει φορτωθεί.
+  wwcConfigConversationAddBlacklist: Εισαγάγετε τον νέο όρο που θέλετε να προσθέσετε
+    ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Διαγραφή από τη μαύρη λίστα
+  wwcConfigConversationBlacklistAddSuccess: Προστέθηκε επιτυχώς ένας νέος όρος στη
+    μαύρη λίστα.
+  wwcConfigGUIMessagesModifyBlacklistButton: Τροποποιήστε τη μαύρη λίστα
+  wwcConfigGUIChatBlacklistButton: Ενεργοποίηση μαύρης λίστας
+  wwcConfigConversationBlacklistDeletionSuccess: Διαγράφηκε επιτυχώς ο όρος.
+  wwcConfigGUIChatChannelSettings: Διαμόρφωση καναλιού συνομιλίας
+  wwcConfigGUIChatBlacklistSuccess: Επιτυχής εναλλαγή της μαύρης λίστας.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Προσθήκη νέας λέξης
+  wwcConfigGUIChatChannelButton: Μετάφραση ρυθμίσεων καναλιού
+  wwcConfigGUIBlacklistMessagesModify: Τροποποίηση όρου ({0})
+  wwcConfigChatChannelFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή καναλιού. Προεπιλογή
+    σε {0}...
+  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
+    συνομιλίας είναι {0}. Τα προεπιλεγμένα αναγνωρισμένα ορίσματά μας που μπορείτε
+    να συμπεριλάβετε: {1}. Εάν έχετε PlaceHolderAPI, βεβαιωθείτε ότι αυτές οι μεταβλητές
+    περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
+  wwcConfigGUIModifyBlacklistSettings: Τροποποιήστε τη μαύρη λίστα
+  wwcConfigGUINextPageButton: Επόμενη Σελίδα
 

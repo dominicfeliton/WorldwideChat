@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Увімкнути або вимкнути переклад підпису
   wwcUpdaterOutOfDate: WorldwideChat застаріла. Будь ласка, оновіть до останньої версії,
     {0}.
-  wwcConfigGUINextPageButton: Наступна сторінка
   wwcConfigInvalidTranslatorSettings: Некоректні налаштування перекладача! Будь ласка,
     увімкніть лише один перекладач у вашому config.yml.
   wwcConfigGUIQuitButton: Вийти і зберегти зміни
@@ -601,4 +600,92 @@ Messages:
     для цього значення.
   wwcRateNoConvoFolia: Неможливо встановити обмеження швидкості через графічний інтерфейс
     на Folia. Будь ласка, використовуйте /wwctrl або /translateratelimit замість цього.
+  wwcInvalidTranslatorUser: Наразі WorldwideChat недоступний. Будь ласка, повторіть
+    спробу пізніше або зверніться до адміністратора, якщо це не відбуватиметься.
+  wwcCouldNotSaveOhNo: Не вдається зберегти дані WorldwideChat... будь ласка, переконайтеся,
+    що вибраний параметр бази даних/сховищ стабільний!
+  wwcSyncUserDataComplete: Успішно збережені дані користувача в {0}. {1}
+  wwcSyncUserDataStart: Синхронізація даних користувача...
+  wwcdDebugEnvDisabled: Середовище налагодження було вимкнено.
+  wwcdDebugEnvWarn: 'Перемикання середовища налагодження майже ніколи не рекомендується,
+    якщо ви не розробляєте цей плагін або не досліджуєте помилку. Якщо ви все ще хочете
+    продовжити, введіть наступне: {0}'
+  wwclLangNotLoadedConsole: '{0} наразі не можна використовувати. Ви можете спробувати
+    перезавантажити плагін, щоб виправити це, але якщо він зберігається, зв''яжіться
+    з розробником.'
+  wwcdDebugEnvEnabled: Середовище налагодження увімкнено.
+  wwclLangNotLoaded: '{0} наразі не можна використовувати. Спробуйте використовувати
+    іншу підтримувану локалізацію: {1}'
+  wwcdDebugBadState: Цю команду налагодження неможливо виконати, якщо WorldwideChat
+    не має дійсного набору перекладача. Будь ласка, спробуйте ще раз пізніше.
+  wwcNoVaultOnFolia: У Folia наразі не підтримується сховище. Це може порушити сумісність
+    з іншими плагінами чату.
+  wwcNoVaultPlugin: Сховище не встановлено! Це може порушити сумісність з іншими встановленими
+    плагінами чату.
+  wwcVaultChatProviderFound: 'Знайдено постачальника чату Vault: {0}.'
+  wwcNoVaultChatProvider: Сховище встановлено, але жоден підтримуваний постачальник
+    чату не виявлено.
+  wwcConfigEventPrioritySet: Встановіть пріоритет події слухача чату на {0}.
+  wwcConfigEventPriorityInvalid: Невірний пріоритет подій слухача чату в config.yml.
+    За замовчуванням значення {0}...
+  wwcConfigGUIChatListenerPriorityButton: Змінити пріоритет слухача подій чату
+  wwcConfigConversationChatPriorityBadInput: Поганий вхід пріоритету чату! Будь ласка,
+    спробуйте ще раз.
+  wwcConfigConversationChatPrioritySuccess: Успішно встановіть пріоритет події чату.
+  wwcConfigVaultSupportInvalid: Невірна підтримка сховища встановлена в config.yml.
+    За замовчуванням значення true...
+  wwcWatsonDeprecation: Watson був застарілий і більше не підтримується IBM. Будь
+    ласка, подумайте про перемикання, оскільки підтримка його буде видалена в наступному
+    оновленні.
+  wwcConfigForceChatChannelEnabled: Окремий канал перекладу буде примусово під час
+    всіх перекладів.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Успішно перемикається, змушуючи
+    окремий канал.
+  wwcConfigConversationChannelIconInput: Поточна піктограма окремого каналу перекладу
+    — {0}. Підтримуються кольорові коди; введіть 0, щоб повернутися назад.
+  wwcConfigConversationChatPriorityInput: 'Поточний пріоритет події чату — {0}. Введіть
+    0 поверніться назад або виберіть із цього списку дійсних пріоритетів: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Змінити окремий формат каналу
+  wwcConfigConversationChannelIconSuccess: Успішно змінив значок каналу.
+  wwcConfigGUISeparateChatChannelIconButton: Змінити піктограму окремого каналу
+  wwcConfigConversationChatFormatSuccess: Ваш формат успішно змінено.
+  wwcConfigGUISeparateChatChannelForceButton: Силовий окремий канал
+  wwcOrigHover: 'Оригінальне повідомлення: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригінальний вихідний чат,
+    приєднаний до перекладу, як текст, що наводить курсор, успішно переключено.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Додати вихідні вихідні повідомлення
+    як текст наведення вказівника миші
+  wwcConfigPAPIInstalled: Підтримка PlaceholderAPI була увімкнена для вашого формату
+    чату.
+  wwcConfigPAPINotInstalled: Користувацькі заповнювачі були виявлені у вашому форматі
+    чату, але PlaceHolderAPI не встановлено. Будь ласка, переконайтеся, що плагін
+    завантажений і включений.
+  wwcConfigChatChannelIconInvalid: Виявлено невірну піктограму каналу. За замовчуванням
+    значення {0}...
+  wwcBlacklistBadFormat: Ваш чорний список не відформатований належним чином як список.
+    Він не буде виконаний, поки це не буде виправлено.
+  wwcBlacklistedMsg: Ваше повідомлення містить заборонену мову і не було перекладено.
+  wwcBlacklistedMsgDetected: 'Виявлено слово в чорному списку ({0}): {1}'
+  wwcBlacklistLoaded: Ваш чорний список заборонених слів {0} завантажено.
+  wwcConfigConversationAddBlacklist: Введіть новий термін, який ви хочете додати,
+    або введіть 0, щоб повернутися назад.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Видалити з чорного списку
+  wwcConfigConversationBlacklistAddSuccess: Успішно додано новий термін до чорного
+    списку.
+  wwcConfigGUIMessagesModifyBlacklistButton: Змінити чорний список
+  wwcConfigGUIChatBlacklistButton: Увімкнути чорний список
+  wwcConfigConversationBlacklistDeletionSuccess: Успішно видалено термін.
+  wwcConfigGUIChatChannelSettings: Налаштування каналу чату
+  wwcConfigGUIChatBlacklistSuccess: Успішно переключено чорний список.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Додати нове слово
+  wwcConfigGUIChatChannelButton: Переклад налаштувань каналу
+  wwcConfigGUIBlacklistMessagesModify: Змінити термін ({0})
+  wwcConfigChatChannelFormatInvalid: Виявлено невірний формат каналу. За замовчуванням
+    значення {0}...
+  wwcConfigConversationChannelFormatInput: 'Поточний формат окремого каналу чату —
+    {0}. Наші стандартні розпізнані аргументи, які ви можете включити: {1}. Якщо у
+    вас є PlaceHolderAPI, переконайтеся, що ці змінні оточені відсотками (%) замість
+    цього. Введіть 0, щоб повернутися назад.'
+  wwcConfigGUIModifyBlacklistSettings: Змінити чорний список
+  wwcConfigGUINextPageButton: Наступна сторінка
 

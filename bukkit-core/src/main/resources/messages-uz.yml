@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Toggle belgisi tarjimasi
   wwcUpdaterOutOfDate: WorldwideChat eskirgan. Iltimos, eng soʻnggi versiyasini yangilang,
     {0}.
-  wwcConfigGUINextPageButton: Keyingi sahifa
   wwcConfigInvalidTranslatorSettings: Tarjimon sozlamalari noto'g'ri! Iltimos, config.yml-da
     faqat bitta tarjimonni yoqing.
   wwcConfigGUIQuitButton: Chiqish & O'zgarishlarni saqlash
@@ -627,4 +626,99 @@ Messages:
     o'zgartirishga harakat qilib ko'ring.
   wwcRateNoConvoFolia: Folia-dagi GUI orqali tezlik chegarasini belgilash mumkin emas.
     Iltimos, buning o'rniga /wwctrl yoki /translateratelimit dan foydalaning.
+  wwcInvalidTranslatorUser: WorldwideChat hozirda mavjud emas. Iltimos, keyinroq qayta
+    urinib ko'ring yoki bu davom etsa administratoringizga murojaat qiling.
+  wwcCouldNotSaveOhNo: WorldwideChat ma'lumotlarini saqlay olmadi... iltimos, tanlangan
+    ma'lumotlar bazasi/saqlash parametringiz barqaror ekanligiga ishonch hosil qiling!
+  wwcSyncUserDataComplete: Foydalanuvchi ma'lumotlarini {0} ga muvaffaqiyatli saqlandi.
+    {1}
+  wwcSyncUserDataStart: Foydalanuvchi ma'lumotlarini sinxronlashtirish...
+  wwcdDebugEnvDisabled: Disk raskadrovka muhiti o'chirib qo'yildi.
+  wwcdDebugEnvWarn: 'Ushbu plaginni ishlab chiqmayotganingizda/xatoni tergov qilmaguningizcha,
+    disk raskadrovka muhitini almashtirish deyarli hech qachon tavsiya etilmaydi.
+    Agar siz hali ham davom ettirishni xohlasangiz, quyidagilarni yozing: {0}'
+  wwclLangNotLoadedConsole: Hozirda {0} dan foydalanish mumkin emas. Buni tuzatish
+    uchun plaginni qayta yuklashni sinab ko'rishingiz mumkin, lekin agar u davom etsa
+    iltimos ishlab chiquvchiga murojaat qiling.
+  wwcdDebugEnvEnabled: Disk raskadrovka muhiti yoqilgan.
+  wwclLangNotLoaded: 'Hozirda {0} dan foydalanish mumkin emas. Boshqa qo''llab-quvvatlanadigan
+    lokalizatsiyadan foydalanishga harakat qilib ko''ring: {1}'
+  wwcdDebugBadState: WorldwideChat-da haqiqiy tarjimon majmui mavjud bo'lmaganda ushbu
+    disk raskadrovka buyrug'ini ishga tushirish mumkin emas. Iltimos, keyinroq qayta
+    urinib ko'ring.
+  wwcNoVaultOnFolia: Hozirda Folia-da Vault qo'llab-quvvatlanmaydi. Bu boshqa chat
+    plaginlari bilan muvofiqlikni buzishi mumkin.
+  wwcNoVaultPlugin: Vault o'rnatilmagan! Bu boshqa o'rnatilgan chat plaginlari bilan
+    muvofiqlikni buzishi mumkin.
+  wwcVaultChatProviderFound: 'Vault chat provayderi topildi: {0}.'
+  wwcNoVaultChatProvider: Vault o'rnatilgan, lekin hech qanday qo'llab-quvvatlanadigan
+    chat provayderi aniqlanmadi.
+  wwcConfigEventPrioritySet: Suhbat tinglovchisi hodisasining ustuvorligini {0} ga
+    sozlang.
+  wwcConfigEventPriorityInvalid: Config.yml da yaroqsiz chat tinglovchisi voqea ustuvorligi.
+    Standart {0} ga sozlash...
+  wwcConfigGUIChatListenerPriorityButton: Chat voqea tinglovchisining ustuvorligini
+    o'zgartiring
+  wwcConfigConversationChatPriorityBadInput: Yomon suhbatning ustuvor kiritilishi!
+    Iltimos, yana urinib ko'ring.
+  wwcConfigConversationChatPrioritySuccess: Suhbat hodisangizning ustuvorligini muvaffaqiyatli
+    belgilang.
+  wwcConfigVaultSupportInvalid: Config.yml da yaroqsiz saqlovni qo'llab-quvvatlash
+    o'rnatilgan. To'g'ri deb hisoblash...
+  wwcWatsonDeprecation: Watson eskirgan va endi IBM tomonidan qo'llab-quvvatlanmaydi.
+    Iltimos, kommutatsiyani ko'rib chiqing, chunki uni qo'llab-quvvatlash keyingi
+    yangilanishda olib tashlanadi.
+  wwcConfigForceChatChannelEnabled: Barcha tarjimalar paytida alohida tarjima kanali
+    majbur qilinadi.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Muvaffaqiyatli ravishda alohida
+    kanalni majburlashni o'zgartirdi.
+  wwcConfigConversationChannelIconInput: Alohida tarjima kanalining joriy belgisi
+    {0}. Rang kodlari qo'llab-quvvatlanadi; orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationChatPriorityInput: 'Hozirgi chat tadbirining ustuvor vazifasi
+    {0} hisoblanadi. 0ga yozing orqaga o''ting yoki ushbu haqiqiy ustuvorliklar ro''yxatidan
+    tanlang: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Alohida kanal formatini o'zgartiring
+  wwcConfigConversationChannelIconSuccess: Kanal belgisini muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUISeparateChatChannelIconButton: Alohida kanal belgisini o'zgartiring
+  wwcConfigConversationChatFormatSuccess: Sizning formatingiz muvaffaqiyatli o'zgartirildi.
+  wwcConfigGUISeparateChatChannelForceButton: Ajratish kanalini majburlang
+  wwcOrigHover: 'Asl xabar: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: hover matn sifatida tarjima
+    biriktirilgan original chiquvchi chat muvaffaqiyatli togged.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Asl chiquvchi xabarlarni hover matni
+    sifatida qo'shing
+  wwcConfigPAPIInstalled: Suhbat formatingiz uchun PlaceholderAPI yordami yoqilgan.
+  wwcConfigPAPINotInstalled: Sizning chat formatingizda maxsus er ushlagichlari aniqlandi,
+    ammo PlaceholderAPI o'rnatilmagan. Iltimos, plagin yuklanganligiga va yoqilganligiga
+    ishonch hosil qiling.
+  wwcConfigChatChannelIconInvalid: Yaroqsiz kanal belgisi aniqlandi. Standart {0}
+    ga sozlash...
+  wwcBlacklistBadFormat: Sizning qora ro'yxatingiz ro'yxat sifatida to'g'ri formatlanmagan.
+    Bu aniqlanmaguncha, u amalga oshirilmaydi.
+  wwcBlacklistedMsg: Sizning xabaringiz taqiqlangan tilni o'z ichiga oladi va tarjima
+    qilinmagan.
+  wwcBlacklistedMsgDetected: 'Qora ro''yxatga olingan so''z ({0}) aniqlandi: {1}'
+  wwcBlacklistLoaded: Sizning {0} taqiqlangan so'zlarning qora ro'yxati yuklandi.
+  wwcConfigConversationAddBlacklist: Qo'shmoqchi bo'lgan yangi atamani kiriting yoki
+    orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Qora ro'yxatdan o'chirish
+  wwcConfigConversationBlacklistAddSuccess: Qora ro'yxatga yangi atama muvaffaqiyatli
+    qo'shildi.
+  wwcConfigGUIMessagesModifyBlacklistButton: Qora ro'yxatni o'zgartirish
+  wwcConfigGUIChatBlacklistButton: Qora ro'yxatni yoqish
+  wwcConfigConversationBlacklistDeletionSuccess: Atamani muvaffaqiyatli o'chirib tashladi.
+  wwcConfigGUIChatChannelSettings: Chat kanalining konfiguratsiyasi
+  wwcConfigGUIChatBlacklistSuccess: Qora ro'yxatni muvaffaqiyatli almashtirdi.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Yangi so'zni qo'shish
+  wwcConfigGUIChatChannelButton: Kanal sozlamalarini tarjima qiling
+  wwcConfigGUIBlacklistMessagesModify: Muddatni o'zgartirish ({0})
+  wwcConfigChatChannelFormatInvalid: Yaroqsiz kanal formati aniqlandi. Standart {0}
+    ga sozlash...
+  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
+    {0}. Siz o''z ichiga olishi mumkin bo''lgan asl qiymati tan olingan argumentlarimiz:
+    {1}. Agar sizda PlaceholderAPI mavjud bo''lsa, o''sha o''zgaruvchilar uning o''rniga
+    foizlar (%) bilan o''ralganligiga ishonch hosil qiling. Orqaga qaytish uchun 0
+    yozing.'
+  wwcConfigGUIModifyBlacklistSettings: Qora ro'yxatni o'zgartirish
+  wwcConfigGUINextPageButton: Keyingi sahifa
 

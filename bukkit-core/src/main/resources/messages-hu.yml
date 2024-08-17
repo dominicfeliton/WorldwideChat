@@ -45,7 +45,6 @@ Messages:
   wwcConfigGUILangButton: Plugin nyelv módosítása
   wwctGUISignButton: Jelfordítás be- és bekapcsolása
   wwcUpdaterOutOfDate: 'A WorldwideChat elavult. Frissítsen a legújabb verzióra: {0}.'
-  wwcConfigGUINextPageButton: Következő oldal
   wwcConfigInvalidTranslatorSettings: Érvénytelen fordítói beállítások! Kérjük, csak
     egy fordítót engedélyezzen a config.yml fájlban.
   wwcConfigGUIQuitButton: Kilépés és a módosítások mentése
@@ -617,4 +616,92 @@ Messages:
   wwcRateNoConvoFolia: Nem lehet sebességkorlátozást beállítani a Folia felhasználói
     felületén keresztül. Kérjük, használja helyette a /wwctrl vagy /translateratelimit
     lehetőséget.
+  wwcInvalidTranslatorUser: WorldwideChat jelenleg nem érhető el. Kérjük, próbálkozzon
+    újra később, vagy forduljon rendszergazdához, ha ez továbbra is fennáll.
+  wwcCouldNotSaveOhNo: Nem sikerült menteni a WorldwideChat-adatokat... kérjük, győződjön
+    meg róla, hogy a kiválasztott adatbázis-/tárolási lehetőség stabil legyen!
+  wwcSyncUserDataComplete: Sikeresen mentette a felhasználói adatokat a {0} -re. {1}
+  wwcSyncUserDataStart: Felhasználói adatok szinkronizálása...
+  wwcdDebugEnvDisabled: A hibakeresési környezet le van tiltva.
+  wwcdDebugEnvWarn: 'A hibakeresési környezet váltása szinte soha nem ajánlott, hacsak
+    nem fejleszti ezt a plugint/hibát vizsgálja. Ha továbbra is folytatni szeretné,
+    írja be a következőt: {0}'
+  wwclLangNotLoadedConsole: A {0} jelenleg nem használható. Megpróbálhatja újratölteni
+    a bővítményt ennek kijavításához, de ha továbbra is fennáll, forduljon a fejlesztőhöz.
+  wwcdDebugEnvEnabled: A hibakeresési környezet engedélyezve van.
+  wwclLangNotLoaded: 'A {0} jelenleg nem használható. Próbáljon meg egy másik támogatott
+    lokalizációt használni: {1}'
+  wwcdDebugBadState: Ezt a hibakeresési parancsot nem lehet futtatni, amíg a WorldwideChat
+    nem rendelkezik érvényes fordítókészlettel. Kérjük, próbálkozzon újra később.
+  wwcNoVaultOnFolia: A Vault jelenleg nem támogatja a Folia. Ez megszakíthatja a kompatibilitást
+    más csevegési bővítményekkel.
+  wwcNoVaultPlugin: A Vault nincs telepítve! Ez megszakíthatja a kompatibilitást más
+    telepített csevegőbővítményekkel.
+  wwcVaultChatProviderFound: 'Talált egy Vault csevegőszolgáltatót: {0}.'
+  wwcNoVaultChatProvider: A Vault telepítve van, de nem észleltek támogatott csevegőszolgáltatót.
+  wwcConfigEventPrioritySet: Állítsa be a csevegőhallgató esemény prioritását {0}
+    értékre.
+  wwcConfigEventPriorityInvalid: Érvénytelen csevegő eseményprioritás a config.yml-ben.
+    Alapértelmezés szerint {0}...
+  wwcConfigGUIChatListenerPriorityButton: A csevegési eseményhallgató prioritásának
+    módosítása
+  wwcConfigConversationChatPriorityBadInput: Rossz csevegési prioritási bemenet! Kérjük,
+    próbálkozzon újra.
+  wwcConfigConversationChatPrioritySuccess: Sikeresen állítsa be a csevegési esemény
+    prioritását.
+  wwcConfigVaultSupportInvalid: Érvénytelen tárolótámogatási beállítás a config.yml-ben.
+    Alapértelmezés szerint igaz...
+  wwcWatsonDeprecation: A Watson elavult, és az IBM már nem támogatja. Kérjük, fontolja
+    meg a váltást, mivel a támogatás a következő frissítésben eltávolításra kerül.
+  wwcConfigForceChatChannelEnabled: Minden fordítás során külön fordítási csatornát
+    kell kényszeríteni.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Sikeresen váltotta ki a külön
+    csatorna kényszerítését.
+  wwcConfigConversationChannelIconInput: A külön fordítási csatorna aktuális ikonja
+    a {0}. A színkódok támogatottak; írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationChatPriorityInput: 'Az aktuális csevegési esemény prioritása
+    {0}. Írja be a 0 gombot vissza, vagy válasszon az érvényes prioritások listájából:
+    {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Külön csatornaformátum módosítása
+  wwcConfigConversationChannelIconSuccess: Sikeresen megváltoztatta a csatorna ikonját.
+  wwcConfigGUISeparateChatChannelIconButton: Külön csatorna ikon módosítása
+  wwcConfigConversationChatFormatSuccess: A formátum sikeresen megváltozott.
+  wwcConfigGUISeparateChatChannelForceButton: Külön csatorna kényszerítése
+  wwcOrigHover: 'Eredeti üzenet: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Az eredeti kimenő csevegés
+    a fordításhoz egérszövegként csatolt sikeresen bekapcsolta.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Eredeti kimenő üzenetek hozzáadása
+    egérszövegként
+  wwcConfigPAPIInstalled: A csevegési formátumhoz engedélyezték a PlaceholderAPI támogatást.
+  wwcConfigPAPINotInstalled: Egyéni helyőrzőket észleltek a csevegési formátumban,
+    de a PlaceholderAPI nincs telepítve. Kérjük, győződjön meg arról, hogy a plugin
+    betöltődött és engedélyezve van-e.
+  wwcConfigChatChannelIconInvalid: Érvénytelen csatornaikon észlelhető. Alapértelmezés
+    szerint {0}...
+  wwcBlacklistBadFormat: A feketelista nincs megfelelően formázva listaként. Ezt addig
+    nem hajtják végre, amíg ez meg nem javul.
+  wwcBlacklistedMsg: Üzenete tiltott nyelvet tartalmaz, és nem fordították le.
+  wwcBlacklistedMsgDetected: 'Feketelistán szereplő szót ({0}) észlelték: {1}'
+  wwcBlacklistLoaded: Betöltötték a {0} tiltott szavak feketelistáját.
+  wwcConfigConversationAddBlacklist: Írja be az új kifejezést, amelyet hozzá szeretne
+    adni, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Törlés a feketelistáról
+  wwcConfigConversationBlacklistAddSuccess: Sikeresen hozzáadta egy új kifejezést
+    a feketelistára.
+  wwcConfigGUIMessagesModifyBlacklistButton: Feketelista módosítása
+  wwcConfigGUIChatBlacklistButton: Feketelista engedélyezése
+  wwcConfigConversationBlacklistDeletionSuccess: Sikeresen törölte a kifejezést.
+  wwcConfigGUIChatChannelSettings: Csevegőcsatorna konfigurálása
+  wwcConfigGUIChatBlacklistSuccess: Sikeresen váltotta át a feketelistát.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Új szó hozzáadása
+  wwcConfigGUIChatChannelButton: Csatorna beállítások fordítása
+  wwcConfigGUIBlacklistMessagesModify: Kifejezés módosítása ({0})
+  wwcConfigChatChannelFormatInvalid: Érvénytelen csatornaformátum észlelhető. Alapértelmezés
+    szerint {0}...
+  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
+    {0}. Alapértelmezett felismert argumentumaink, amelyeket felvehet: {1}. Ha van
+    PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok (%) veszik
+    körül. Írja be a 0-at, hogy visszatérjen.'
+  wwcConfigGUIModifyBlacklistSettings: Feketelista módosítása
+  wwcConfigGUINextPageButton: Következő oldal
 

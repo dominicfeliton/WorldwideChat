@@ -44,6 +44,14 @@ Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true
   sendIncomingHoverTextChat: true
+  sendOutgoingHoverTextChat: true
+  enableBlacklist: false
+  useVault: true
+  chatListenerPriority: HIGHEST
+  separateChatChannel:
+    icon: globe
+    format: "{prefix}{username}{suffix}:"
+    force: false
 Translator:
   useWatsonTranslate: true
   watsonAPIKey: watson_key_goes_here

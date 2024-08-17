@@ -43,7 +43,6 @@ Messages:
   wwcConfigGUILangButton: Eklenti Dili Değiştir
   wwctGUISignButton: İmzala Tercümesi
   wwcUpdaterOutOfDate: WorldwideChat güncel değil. Lütfen {0} en son sürüme güncelleyin.
-  wwcConfigGUINextPageButton: Sonraki Sayfa
   wwcConfigInvalidTranslatorSettings: Geçersiz çevirmen ayarları! Lütfen config.yml'nizde
     yalnızca bir çevirmen etkinleştirin.
   wwcConfigGUIQuitButton: Değişiklikleri Kaydet
@@ -600,4 +599,90 @@ Messages:
     deneyin.
   wwcRateNoConvoFolia: Folia'da GUI aracılığıyla bir oran sınırı belirlenemiyor. Lütfen
     bunun yerine /wwctrl veya /translateratelimit'i kullanın.
+  wwcInvalidTranslatorUser: WorldwideChat şu anda mevcut değil. Lütfen daha sonra
+    tekrar deneyin veya bu devam ederse yöneticinize başvurun.
+  wwcCouldNotSaveOhNo: WorldwideChat verileri kaydedilemiyor... lütfen seçtiğiniz
+    veritabanının/depolama seçeneğinin kararlı olduğundan emin olun!
+  wwcSyncUserDataComplete: Kullanıcı verileri başarıyla {0} 'e kaydedildi. {1}
+  wwcSyncUserDataStart: Kullanıcı verilerini senkronize ediyor...
+  wwcdDebugEnvDisabled: Hata ayıklama ortamı devre dışı bırakıldı.
+  wwcdDebugEnvWarn: 'Bu eklentiyi geliştirmediğiniz/bir hatayı araştırmadığınız sürece
+    hata ayıklama ortamını değiştirmek neredeyse hiç önerilmez. Hala devam etmek istiyorsanız,
+    aşağıdakileri yazın: {0}'
+  wwclLangNotLoadedConsole: '{0} şu anda kullanılamaz. Bunu düzeltmek için eklentiyi
+    yeniden yüklemeyi deneyebilirsiniz, ancak devam ederse lütfen geliştiriciyle iletişime
+    geçin.'
+  wwcdDebugEnvEnabled: Hata ayıklama ortamı etkinleştirildi.
+  wwclLangNotLoaded: '{0} şu anda kullanılamaz. Desteklenen farklı bir yerelleştirme
+    kullanmayı deneyin: {1}'
+  wwcdDebugBadState: WorldwideChat'te geçerli bir çevirmen seti yoksa bu hata ayıklama
+    komutu çalıştırılamaz. Lütfen daha sonra tekrar deneyin.
+  wwcNoVaultOnFolia: Vault şu anda Folia'da desteklenmiyor. Bu, diğer sohbet eklentileriyle
+    uyumluluğu bozabilir.
+  wwcNoVaultPlugin: Kasa yüklü değil! Bu, diğer yüklü sohbet eklentileriyle uyumluluğu
+    bozabilir.
+  wwcVaultChatProviderFound: 'Bir Vault sohbet sağlayıcısı bulundu: {0}.'
+  wwcNoVaultChatProvider: Kasa yüklü, ancak desteklenen sohbet sağlayıcısı algılanmadı.
+  wwcConfigEventPrioritySet: Sohbet dinleyicisi olay önceliğini {0} olarak ayarlayın.
+  wwcConfigEventPriorityInvalid: config.yml içinde geçersiz sohbet dinleyicisi olay
+    önceliği. Varsayılan olarak {0}...
+  wwcConfigGUIChatListenerPriorityButton: Sohbet Etkinliği Dinleyici Önceliğini Değiştir
+  wwcConfigConversationChatPriorityBadInput: Kötü sohbet önceliği girişi! Lütfen tekrar
+    deneyin.
+  wwcConfigConversationChatPrioritySuccess: Sohbet etkinliği önceliğinizi başarıyla
+    ayarlayın.
+  wwcConfigVaultSupportInvalid: config.yml içinde geçersiz kasa desteği ayarlandı.
+    Varsayılan olarak true olarak ayarlanıyor...
+  wwcWatsonDeprecation: Watson kullanımdan kaldırıldı ve artık IBM tarafından desteklenmiyor.
+    Lütfen geçiş yapmayı düşünün, çünkü bir sonraki güncellemede destek kaldırılacaktır.
+  wwcConfigForceChatChannelEnabled: Tüm çeviriler sırasında ayrı bir çeviri kanalı
+    zorunlu olacaktır.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı zorlamak başarıyla
+    değiştirildi.
+  wwcConfigConversationChannelIconInput: Ayrı çeviri kanalı için geçerli simge {0}
+    'dir. Renk kodları desteklenir; geri dönmek için 0 yazın.
+  wwcConfigConversationChatPriorityInput: 'Mevcut sohbet etkinliği önceliği {0} ''dir.
+    0 yazın geriye gidin veya geçerli öncelikler listesinden seçim yapın: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Ayrı Kanal Formatını Değiştir
+  wwcConfigConversationChannelIconSuccess: Kanal simgenizi başarıyla değiştirdiniz.
+  wwcConfigGUISeparateChatChannelIconButton: Ayrı Kanal Simgesini Değiştir
+  wwcConfigConversationChatFormatSuccess: Formatınız başarıyla değiştirildi.
+  wwcConfigGUISeparateChatChannelForceButton: Ayrı Kanalı Zorla
+  wwcOrigHover: 'Orijinal Mesaj: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Hızlandırma metni olarak
+    çeviriye eklenen orijinal giden sohbet başarıyla değiştirildi.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Orijinal Giden Mesajları Hover Metin
+    Olarak Ekle
+  wwcConfigPAPIInstalled: Sohbet formatınız için PlaceHolderAPI desteği etkinleştirildi.
+  wwcConfigPAPINotInstalled: Sohbet formatınızda özel yer tutucular tespit edildi,
+    ancak PlaceHolderAPI yüklü değil. Lütfen eklentinin yüklendiğinden ve etkinleştirildiğinden
+    emin olun.
+  wwcConfigChatChannelIconInvalid: Geçersiz kanal simgesi algılandı. Varsayılan olarak
+    {0}...
+  wwcBlacklistBadFormat: Kara listeniz bir liste olarak düzgün biçimde biçimlendirilmemiştir.
+    Bu düzeltilene kadar uygulanmayacaktır.
+  wwcBlacklistedMsg: Mesajınız yasaklanmış bir dil içeriyor ve çevrilmedi.
+  wwcBlacklistedMsgDetected: 'Kara listeye alınmış kelime ({0}) tespit edildi: {1}'
+  wwcBlacklistLoaded: '{0} yasaklanmış kelimelerden oluşan kara listeniz yüklendi.'
+  wwcConfigConversationAddBlacklist: Eklemek istediğiniz yeni terimi girin veya geri
+    dönmek için 0 yazın.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Kara Listeden Sil
+  wwcConfigConversationBlacklistAddSuccess: Kara listeye başarıyla yeni bir terim
+    eklendi.
+  wwcConfigGUIMessagesModifyBlacklistButton: Kara Listeyi Değiştir
+  wwcConfigGUIChatBlacklistButton: Kara Listeyi Etkinleştir
+  wwcConfigConversationBlacklistDeletionSuccess: Terimi başarıyla sildi.
+  wwcConfigGUIChatChannelSettings: Sohbet Kanalı Yapılandırması
+  wwcConfigGUIChatBlacklistSuccess: Kara listeyi başarıyla değiştirdi.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Yeni Kelime Ekle
+  wwcConfigGUIChatChannelButton: Kanal Ayarlarını Çevir
+  wwcConfigGUIBlacklistMessagesModify: Terimi Değiştir ({0})
+  wwcConfigChatChannelFormatInvalid: Geçersiz kanal biçimi algılandı. Varsayılan olarak
+    {0}...
+  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
+    {0} ''dir. Ekleyebileceğiniz varsayılan tanınmış argümanlarımız: {1}. PlaceHolderAPI''niz
+    varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin olun. Geri dönmek
+    için 0 yazın.'
+  wwcConfigGUIModifyBlacklistSettings: Kara Listeyi Değiştir
+  wwcConfigGUINextPageButton: Sonraki Sayfa
 

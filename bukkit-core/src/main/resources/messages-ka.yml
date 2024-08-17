@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: ჟესტების თარგმანის გადართვა
   wwcUpdaterOutOfDate: WorldwideChat მოძველებულია. გთხოვთ განაახლოთ უახლესი ვერსია,
     {0}.
-  wwcConfigGUINextPageButton: შემდეგი გვერდი
   wwcConfigInvalidTranslatorSettings: არასწორი თარჯიმანი პარამეტრები! გთხოვთ, ჩართოთ
     მხოლოდ ერთი თარჯიმანი თქვენს config.yml.
   wwcConfigGUIQuitButton: გასვლისა და ცვლილებების შენახვა
@@ -601,4 +600,87 @@ Messages:
     მნიშვნელობისთვის
   wwcRateNoConvoFolia: Folia-ზე GUI— ის საშუალებით განაკვეთის ლიმიტის დაყენება ვერ
     შეძლებს. გთხოვთ, გამოიყენოთ /wwctrl ან /translateratelimit ნაცვლად.
+  wwcInvalidTranslatorUser: WorldwideChat ამჟამად მიუწვდომელია. გთხოვთ, სცადოთ ხელახლა
+    მოგვიანებით ან დაუკავშირდეთ თქვენს ადმინ
+  wwcCouldNotSaveOhNo: WorldwideChat მონაცემების შენახვა ვერ შეძლებს... გთხოვთ, დარწმუნდეთ,
+    რომ თქვენი არჩეული მონაცემთა ბაზა/შენახვის
+  wwcSyncUserDataComplete: წარმატებით შეინახა მომხმარებლის მონაცემები {0} {1}
+  wwcSyncUserDataStart: მომხმარებლის მონაცემების სინქრო
+  wwcdDebugEnvDisabled: შეცვალების გარემო გამორთულია.
+  wwcdDebugEnvWarn: 'შეცვალების გარემოს შეცვლა თითქმის არასოდეს არის რეკომენდებული,
+    თუ არ ავითარებთ ამ დანამატს/გამოძიებთ შეცდომას. თუ მაინც გსურთ გააგრძელოთ, ჩაწერეთ
+    შემდეგი: {0}'
+  wwclLangNotLoadedConsole: '{0} ამ დროს არ შეიძლება გამოყენებულ იქნას. ამის გამოსასწორებლად
+    შეგიძლიათ სცადოთ მოდულის გადატვირთვა, მაგრამ თუ ის გაგრძელდება, გთხოვთ, დაუკავშირდეთ
+    დეველ'
+  wwcdDebugEnvEnabled: ჩართულია შეცვალების გარემო.
+  wwclLangNotLoaded: '{0} ამ დროს არ შეიძლება გამოყენებულ იქნას. სცადეთ გამოიყენოთ
+    სხვა მხარდაჭერილი ლოკალიზაცია {1}'
+  wwcdDebugBadState: ამ შეცვალების ბრძანების გაშვება შეუძლებელია, როდესაც WorldwideChat-ს
+    არ აქვს სწორი მთარგმნელის ნაკრები. გთხოვთ, მოგვიანებით სცადოთ
+  wwcNoVaultOnFolia: Vault ამჟამად არ არის მხარდაჭერილი Folia-ზე. ამან შეიძლება დაარღვიოს
+    თავსებადობა სხვა ჩატის დანამატ
+  wwcNoVaultPlugin: საფარი არ არის დამონტაჟებული! ამან შეიძლება დაარღვიოს თავსებადობა
+    სხვა დამონტაჟებულ ჩატის
+  wwcVaultChatProviderFound: 'ვიპოვნეთ Vault ჩატის პროვაიდერი: {0}.'
+  wwcNoVaultChatProvider: Vault დამონტაჟებულია, მაგრამ მხარდაჭერილი ჩატის პროვაიდერი
+    არ არის გამოვლენილი
+  wwcConfigEventPrioritySet: ჩატის მსმენელის ღონისძიების პრიორიტეტი {0}
+  wwcConfigEventPriorityInvalid: არასწორი ჩატის მსმენელის მოვლენის პრიორიტეტი config.yml-ში
+    ნაგულისხმევად {0}...
+  wwcConfigGUIChatListenerPriorityButton: შეცვალეთ ჩატის ღონისძიების
+  wwcConfigConversationChatPriorityBadInput: ცუდი ჩატის პრიორიტეტული შე გთხოვთ კვლავ
+    სცადოთ
+  wwcConfigConversationChatPrioritySuccess: წარმატებით დააყენეთ თქვენი ჩატის ღონისძიების
+  wwcConfigVaultSupportInvalid: არასწორი საფარის მხარდაჭერა დაყენებულია config.yml—
+    ში. ნამდვილად არ შეესაბამება...
+  wwcWatsonDeprecation: უოტსონი მოძველებულია და IBM— ის მხარდაჭერას აღარ უჭერს. გთხოვთ,
+    გაითვალისწინოთ გადართვა, რადგან მისი მხარდაჭერა მოიხსნება შემდეგ განახლებ
+  wwcConfigForceChatChannelEnabled: ყველა თარგმანის დროს იძულებული იქნება ცალკე თარგმანის
+    არხ
+  wwcConfigConversationSeparateChatChannelForceSuccess: წარმატებით შეცვალა ცალკე არხის
+    იძულება.
+  wwcConfigConversationChannelIconInput: ცალკე თარგმანის არხის ამჟამინდელი ხატია {0}.
+    ფერის კოდები მხარდაჭერილია; დაბრუნებისთვის ტიპი 0.
+  wwcConfigConversationChatPriorityInput: 'ჩატის მოვლენის მიმდინარე პრიორიტეტია {0}.
+    ტიპი 0 გადადით უკან ან აირჩიეთ მოქმედი პრიორიტეტების ამ სიიდან: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: ცალკეული არხის ფორმატის
+  wwcConfigConversationChannelIconSuccess: წარმატებით შეცვალა თქვენი არხის ხატი.
+  wwcConfigGUISeparateChatChannelIconButton: ცალკეული არხის ხატის
+  wwcConfigConversationChatFormatSuccess: თქვენი ფორმატი წარმატებით შეიცვალა.
+  wwcConfigGUISeparateChatChannelForceButton: ცალკე არხის ძალა
+  wwcOrigHover: ორიგინალი შეტყობინება {0}
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: ორიგინალური გამავალი ჩატი,
+    რომელიც თანდართულია თარგმანს, როგორც ჰოვერ ტექსტი
+  wwcConfigGUISendOutgoingHoverTextChatButton: დაამატეთ ორიგინალური გამავალი შეტყობინებები
+  wwcConfigPAPIInstalled: PlaceholderAPI მხარდაჭერა ჩართულია თქვენი ჩატის ფორმატისთვის.
+  wwcConfigPAPINotInstalled: თქვენს ჩატის ფორმატში გამოვლენილია მორგებული ადგილსამყარებლები,
+    მაგრამ PlaceholderAPI არ არის დამონტაჟებული. გთხოვთ დარწმუნდეთ, რომ მოდული დატვირთულია
+    და ჩართულია
+  wwcConfigChatChannelIconInvalid: არასწორი არხის ხატი გამოვლინ ნაგულისხმევად {0}...
+  wwcBlacklistBadFormat: თქვენი შავი სია არ არის სწორად ფორმატირებული როგორც სია.
+    ეს არ იქნება განხორციელებული, სანამ ეს არ დაფიქსირდება.
+  wwcBlacklistedMsg: თქვენი შეტყობინება შეიცავს აკრძალულ ენას და არ თარგმნ
+  wwcBlacklistedMsgDetected: 'შავ სიაში გამოვლენილი სიტყვა ({0}): {1}'
+  wwcBlacklistLoaded: '{0} აკრძალული სიტყვების თქვენი შავი სია დატვირთულია.'
+  wwcConfigConversationAddBlacklist: შეიყვანეთ ახალი ტერმინი, რომლის დამატებაც გსურთ,
+    ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: წაშლა შავი სიიდან
+  wwcConfigConversationBlacklistAddSuccess: წარმატებით დაამატა ახალი ტერმინი შავ სიაში.
+  wwcConfigGUIMessagesModifyBlacklistButton: შავი სიის შეცვლა
+  wwcConfigGUIChatBlacklistButton: შავი სიის ჩართვა
+  wwcConfigConversationBlacklistDeletionSuccess: წარმატებით წაიშალა ტერმინი.
+  wwcConfigGUIChatChannelSettings: ჩეთის არხის კონფიგ
+  wwcConfigGUIChatBlacklistSuccess: წარმატებით შეცვალა შავი სია.
+  wwcConfigGUIChatMessagesBlacklistNewButton: ახალი სიტყვის დამატება
+  wwcConfigGUIChatChannelButton: თარგმნეთ არხის
+  wwcConfigGUIBlacklistMessagesModify: ტერმინის შეცვლა ({0})
+  wwcConfigChatChannelFormatInvalid: არასწორი არხის ფორმატი გამოვლინდა ნაგულისხმევად
+    {0}...
+  wwcConfigConversationChannelFormatInput: ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
+    ჩვენი სტანდარტულად აღიარებული არგუმენტები, რომლებიც შეგიძლიათ შეიტანოთ {1} თუ
+    თქვენ გაქვთ PlaceholderAPI, დარწმუნდით, რომ ეს ცვლადები გარშემორტყმულია პროცენტებით
+    (%). დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIModifyBlacklistSettings: შავი სიის შეცვლა
+  wwcConfigGUINextPageButton: შემდეგი გვერდი
 

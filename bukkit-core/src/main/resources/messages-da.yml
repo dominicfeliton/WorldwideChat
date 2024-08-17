@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: Slå Oversættelse af underskrift
   wwcUpdaterOutOfDate: WorldwideChat er forældet. Opdater venligst til den nyeste
     version, {0}.
-  wwcConfigGUINextPageButton: Næste side
   wwcConfigInvalidTranslatorSettings: Ugyldige indstillinger for oversætter! Aktivér
     kun én oversætter i din config.yml.
   wwcConfigGUIQuitButton: Afslut og gem ændringer
@@ -601,4 +600,91 @@ Messages:
     denne værdi.
   wwcRateNoConvoFolia: Kan ikke indstille en hastighedsgrænse via GUI på Folia. Brug
     venligst /wwctrl eller/translateratelimit i stedet.
+  wwcInvalidTranslatorUser: WorldwideChat er i øjeblikket ikke tilgængelig. Prøv igen
+    senere, eller kontakt din administrator, hvis dette fortsætter.
+  wwcCouldNotSaveOhNo: Kan ikke gemme WorldwideChat-data... sørg for, at din valgte
+    database/lagerindstilling er stabil!
+  wwcSyncUserDataComplete: Gemte brugerdata til {0} med succes. {1}
+  wwcSyncUserDataStart: Synkronisering af brugerdata...
+  wwcdDebugEnvDisabled: Fejlfindingsmiljøet er blevet deaktiveret.
+  wwcdDebugEnvWarn: 'Det anbefales næsten aldrig at skifte fejlfindingsmiljø, medmindre
+    du udvikler dette plugin/undersøger en fejl. Hvis du stadig vil fortsætte, skal
+    du skrive følgende: {0}'
+  wwclLangNotLoadedConsole: '{0} kan ikke bruges på nuværende tidspunkt. Du kan prøve
+    at genindlæse pluginet for at løse dette, men hvis det fortsætter, bedes du kontakte
+    udvikleren.'
+  wwcdDebugEnvEnabled: Fejlfindingsmiljøet er blevet aktiveret.
+  wwclLangNotLoaded: '{0} kan ikke bruges på nuværende tidspunkt. Prøv at bruge en
+    anden understøttet lokalisering: {1}'
+  wwcdDebugBadState: Denne fejlfindingskommando kan ikke køres, mens WorldwideChat
+    ikke har et gyldigt oversættersæt. Prøv igen senere.
+  wwcNoVaultOnFolia: Vault understøttes i øjeblikket ikke på Folia. Dette kan bryde
+    kompatibiliteten med andre chat-plugins.
+  wwcNoVaultPlugin: Vault er ikke installeret! Dette kan bryde kompatibiliteten med
+    andre installerede chat-plugins.
+  wwcVaultChatProviderFound: 'Fundet en Vault-chatudbyder: {0}.'
+  wwcNoVaultChatProvider: Vault er installeret, men der er ikke registreret nogen
+    understøttet chatudbyder.
+  wwcConfigEventPrioritySet: Indstil prioriteten for chatlytterhændelse til {0}.
+  wwcConfigEventPriorityInvalid: Ugyldig prioritet for chatlytterhændelse i config.yml.
+    Standardindstilling til {0}...
+  wwcConfigGUIChatListenerPriorityButton: Skift prioritet til chathændelseslytter
+  wwcConfigConversationChatPriorityBadInput: Dårlig chatprioritetsindgang! Prøv venligst
+    igen.
+  wwcConfigConversationChatPrioritySuccess: Indstil din chatbegivenhedsprioritet med
+    succes.
+  wwcConfigVaultSupportInvalid: Ugyldig understøttelse af boks angivet i config.yml.
+    Standard til sandt...
+  wwcWatsonDeprecation: Watson er blevet forældet og understøttes ikke længere af
+    IBM. Overvej venligst at skifte, da support til det fjernes i den næste opdatering.
+  wwcConfigForceChatChannelEnabled: En separat oversættelseskanal vil blive tvunget
+    under alle oversættelser.
+  wwcConfigConversationSeparateChatChannelForceSuccess: Skiftet med succes og tvang
+    den separate kanal.
+  wwcConfigConversationChannelIconInput: Det aktuelle ikon for den separate oversættelseskanal
+    er {0}. Farvekoder understøttes; skriv 0 for at gå tilbage.
+  wwcConfigConversationChatPriorityInput: 'Den aktuelle chathændelsesprioritet er
+    {0}. Skriv 0 gå tilbage eller vælg fra denne liste over gyldige prioriteter: {1}.'
+  wwcConfigGUISeparateChatChannelFormatButton: Skift separat kanalformat
+  wwcConfigConversationChannelIconSuccess: Ændret dit kanalikon med succes.
+  wwcConfigGUISeparateChatChannelIconButton: Skift separat kanalikon
+  wwcConfigConversationChatFormatSuccess: Dit format er blevet ændret med succes.
+  wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
+  wwcOrigHover: 'Oprindelig besked: {0}'
+  wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oprindelig udgående chat
+    knyttet til oversættelse, da musetekst skiftes med succes.
+  wwcConfigGUISendOutgoingHoverTextChatButton: Tilføj originale udgående meddelelser
+    som musepekst
+  wwcConfigPAPIInstalled: PlaceHolderAPI support er blevet aktiveret til dit chatformat.
+  wwcConfigPAPINotInstalled: Brugerdefinerede pladsholdere er blevet registreret i
+    dit chatformat, men PlaceHolderAPI er ikke installeret. Sørg for, at pluginet
+    er indlæst og er aktiveret.
+  wwcConfigChatChannelIconInvalid: Ugyldigt kanalikon fundet. Standardindstilling
+    til {0}...
+  wwcBlacklistBadFormat: Din sortliste er ikke korrekt formateret som en liste. Det
+    vil ikke blive håndhævet, før dette er løst.
+  wwcBlacklistedMsg: Din besked indeholder forbudt sprog og blev ikke oversat.
+  wwcBlacklistedMsgDetected: 'Sortlistet ord ({0}) fundet: {1}'
+  wwcBlacklistLoaded: Din sorte liste over {0} forbudte ord er blevet indlæst.
+  wwcConfigConversationAddBlacklist: Indtast det nye udtryk, du vil tilføje, eller
+    skriv 0 for at gå tilbage.
+  wwcConfigGUIChatMessagesBlacklistDeleteButton: Slet fra sortliste
+  wwcConfigConversationBlacklistAddSuccess: Tilføjet et nyt udtryk til sortlisten
+    med succes.
+  wwcConfigGUIMessagesModifyBlacklistButton: Rediger sortliste
+  wwcConfigGUIChatBlacklistButton: Aktivér sortliste
+  wwcConfigConversationBlacklistDeletionSuccess: Slettede udtrykket med succes.
+  wwcConfigGUIChatChannelSettings: Konfiguration af chatkanal
+  wwcConfigGUIChatBlacklistSuccess: Skiftet sortlisten med succes.
+  wwcConfigGUIChatMessagesBlacklistNewButton: Tilføj nyt ord
+  wwcConfigGUIChatChannelButton: Oversæt kanalindstillinger
+  wwcConfigGUIBlacklistMessagesModify: Ændre udtryk ({0})
+  wwcConfigChatChannelFormatInvalid: Ugyldigt kanalformat fundet. Standardindstilling
+    til {0}...
+  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
+    er {0}. Vores standard anerkendte argumenter, som du kan inkludere: {1}. Hvis
+    du har PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
+    (%) i stedet. Skriv 0 for at gå tilbage.'
+  wwcConfigGUIModifyBlacklistSettings: Rediger sortliste
+  wwcConfigGUINextPageButton: Næste side
 
