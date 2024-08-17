@@ -95,6 +95,11 @@ public class WWCDebug extends BasicCommand {
                     refs.sendFancyMsg("wwcdCacheSize", new String[] {"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
                     int count = 1;
                     for (Map.Entry<CachedTranslation, String> eaEntry : main.getCache().asMap().entrySet()) {
+                        if (count >= 100) {
+                            refs.debugMsg("Cutting off at 100 terms to not crash the server...");
+                            return true;
+                        }
+
                         CachedTranslation obj = eaEntry.getKey();
                         refs.sendFancyMsg("wwcdCacheTerm", new String[] {"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
                         count++;
