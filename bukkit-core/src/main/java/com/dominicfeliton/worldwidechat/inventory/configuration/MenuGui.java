@@ -191,10 +191,10 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 2, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess", "Chat.sendPluginUpdateChat"));
 		chatSet.add(new ToggleElement(1, 3, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat"));
 		chatSet.add(new ToggleElement(1, 4, "wwcConfigGUISendOutgoingHoverTextChatButton", "wwcConfigConversationSendOutgoingHoverTextChatSuccess", "Chat.sendOutgoingHoverTextChat"));
-		chatSet.add(new ToggleElement(1, 5, "wwcConfigGUIVaultSupportButton", "wwcConfigConversationVaultSupportSuccess", "Chat.useVault"));
-		chatSet.add(new ConvoElement(1, 6, "wwcConfigGUIChatListenerPriorityButton", XMaterial.NAME_TAG,
+		chatSet.add(new ToggleElement(1, 5, "wwcConfigGUIChatBlacklistButton", "wwcConfigGUIChatBlacklistSuccess", "Chat.enableBlacklist"));
+		chatSet.add(new ToggleElement(1, 6, "wwcConfigGUIVaultSupportButton", "wwcConfigConversationVaultSupportSuccess", "Chat.useVault"));
+		chatSet.add(new ConvoElement(1, 7, "wwcConfigGUIChatListenerPriorityButton", XMaterial.NAME_TAG,
 				new ChatSettingsConvos.ModifyChatPriority()));
-		chatSet.add(new ToggleElement(1, 7, "wwcConfigGUIChatBlacklistButton", "wwcConfigGUIChatBlacklistSuccess", "Chat.enableBlacklist"));
 		if (!main.getCurrPlatform().equals("Folia")) {
 			chatSet.add(new SubMenuElement(2, 1, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui(inPlayer).getMessagesOverridePickLangGui()));
 			if (main.getConfigManager().getBlacklistConfig() != null) {

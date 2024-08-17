@@ -22,8 +22,14 @@ import java.util.Set;
 
 public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEvent> implements Listener {
 
-	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private final WorldwideChat main;
+	private final CommonRefs refs;
+
+	public SpigotChatListener() {
+		super();
+		this.main = WorldwideChat.instance;
+		this.refs = main.getServerFactory().getCommonRefs();
+	}
 
 	@Override
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
@@ -97,7 +103,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 			}
 			event.getRecipients().retainAll(unmodifiedMessageRecipients);
 
-			// If we are on a separate chat channel & pending outgoing message, send to remaining recipients
+			// Send Pending Outgoing Messages (If force == true)
 			if (channel && !outgoingText.equals(event.getMessage())) {
 				refs.debugMsg("Init pending outgoing message...");
 				for (Player eaRecipient : event.getRecipients()) {

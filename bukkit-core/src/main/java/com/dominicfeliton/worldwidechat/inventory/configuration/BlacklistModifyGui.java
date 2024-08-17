@@ -67,7 +67,7 @@ public class BlacklistModifyGui implements InventoryProvider {
 			deleteTermMeta.setDisplayName(ChatColor.RED
 					+ refs.getMsg("wwcConfigGUIChatMessagesBlacklistDeleteButton", inPlayer));
 			deleteTermButton.setItemMeta(deleteTermMeta);
-			contents.set(1, 6, ClickableItem.of(deleteTermButton, e -> {
+			contents.set(1, 5, ClickableItem.of(deleteTermButton, e -> {
 				BukkitRunnable save = new BukkitRunnable() {
 					@Override
 					public void run() {
@@ -97,7 +97,7 @@ public class BlacklistModifyGui implements InventoryProvider {
 			
 			
 			/* Left Option: Previous Page */
-			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new BlacklistGui(inPlayer).getBlacklist()});
+			invManager.setCommonButton(1, 3, player, contents, "Previous", new Object[] {new BlacklistGui(inPlayer).getBlacklist()});
 		} catch (Exception e) {
 			invManager.inventoryError(player, e);
 		}

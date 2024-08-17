@@ -27,8 +27,14 @@ import java.util.*;
 
 public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener, ChatRenderer.ViewerUnaware {
 
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private final WorldwideChat main;
+    private final CommonRefs refs;
+
+    public PaperChatListener() {
+        super();
+        this.main = WorldwideChat.instance;
+        this.refs = main.getServerFactory().getCommonRefs();
+    }
 
     @Override
     public void onPlayerChat(AsyncChatEvent event) {
@@ -40,7 +46,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
             refs.debugMsg("Using paperChatListener.");
             boolean channel = main.isForceSeparateChatChannel();
 
-            /* Translate Outgoing Messages */
+            // Translate Outgoing Messages
             refs.debugMsg("Begin translating outgoing messages...");
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
@@ -54,7 +60,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                 }
             }
 
-            /* Translate Incoming Messages */
+            // Translate Incoming Messages
             refs.debugMsg("Begin translating incoming messages...");
 
             Set<Audience> unmodifiedMessageRecipients = new HashSet<Audience>();
@@ -111,8 +117,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
 
-            // If we are on a separate chat channel & this is a pending outgoing message,
-            // send to remaining recipients
+            // Send Pending Outgoing Messages (If force == true)
             if (channel && !outgoingText.equals(event.message())) {
                 refs.debugMsg("Init pending outgoing message...");
                 for (Audience eaRecipient : event.viewers()) {
