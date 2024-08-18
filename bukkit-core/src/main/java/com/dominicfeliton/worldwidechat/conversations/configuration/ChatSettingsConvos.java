@@ -32,6 +32,9 @@ public class ChatSettingsConvos {
 
 	private static WWCInventoryManager invMan = new WWCInventoryManager();
 
+	// TODO: ALSO Render Icons/Formats in prompt message.
+	// TODO: Add hoverFormat
+
 	public static class ChannelIcon extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
