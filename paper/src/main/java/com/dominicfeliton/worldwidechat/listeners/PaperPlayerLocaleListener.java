@@ -35,6 +35,11 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLangChange(PlayerLocaleChangeEvent event) {
+        // TODO BUG REPORT ON SPIGOT UPSTREAM:
+        // This event only gets the LAST language the user had.
+        // Meaning if you switch from english to french, it will detect english.
+        // But if you then switch back to english it will detect french.
+        // :(
         if (!main.getSetLocalOnFirstJoin()) {
             return;
         }

@@ -39,6 +39,6 @@ public abstract class AbstractPlayerLocaleListener implements Listener {
         // This is a supported lang
         SupportedLang lang = refs.getSupportedLang(code, "local");
         record.setLocalizationCode(lang.getLangCode());
-        refs.sendFancyMsg("wwcOnJoinSetLocaleSuccess", new String[] {"&6"+lang.getNativeLangName(), "/translate"}, "&d", player);
+        refs.sendFancyMsg("wwcOnJoinSetLocaleSuccess", new String[] {"&6"+lang.getNativeLangName(), "&6/translate"}, "&d", player);
     }
 }
