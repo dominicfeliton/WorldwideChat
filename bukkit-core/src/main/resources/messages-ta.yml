@@ -704,17 +704,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: கருப்புபட்டியலை இயக்கு
   wwcConfigConversationBlacklistDeletionSuccess: வார்த்தையை வெற்றிகரமாக நீக்கினார்.
   wwcConfigGUIChatChannelSettings: அரட்டை சேனல் உள்ளமைவு
-  wwcConfigGUIChatBlacklistSuccess: கறுப்புப் பட்டியலை வெற்றிகரமாக மாற்றியது.
   wwcConfigGUIChatMessagesBlacklistNewButton: புதிய வார்த்தையைச் சேர்க்கவும்
   wwcConfigGUIChatChannelButton: சேனல் அமைப்புகளை மொழி
   wwcConfigGUIBlacklistMessagesModify: காலத்தை மாற்றவும் ({0})
   wwcConfigChatChannelFormatInvalid: செல்லாத சேனல் வடிவம் கண்டறியப்பட்டது. {0} ஆக
     இயல்பாதது...
-  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
-    {0} ஆகும். நீங்கள் சேர்க்கக்கூடிய எங்கள் இயல்புநிலை அங்கீகரிக்கப்பட்ட வாதங்கள்:
-    {1}. உங்களிடம் PlaceholderAPI இருந்தால், அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால்
-    (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு
-    செய்க.'
   wwcConfigGUIModifyBlacklistSettings: கருப்புபட்டியலை மாற்றவும்
   wwcConfigGUINextPageButton: அடுத்த பக்கம்
   wwcConfigChatChannelHoverFormatInvalid: தவறான ஹோவர் வடிவம் கண்டறியப்பட்டது. {0}
@@ -725,4 +719,18 @@ Messages:
     உள்ளூர்மயமாக்கலை பிரதிபலிக்கும் ({0}). மேலும் விவரங்களுக்கு {1} ஐ தட்டச்சு செய்க.
   wwcConfigBadYaml: 'தவறான YAML கோப்பு கண்டறியப்பட்டது: {0}. தயவுசெய்து இந்த கோப்பை
     சரிசெய்ய முயற்சிக்கவும் அல்லது அது நீக்கப்படலாம்!'
+  wwcConfigConversationChatBlacklistSuccess: கறுப்புப் பட்டியலை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationChannelHoverFormatInput: 'மொழிபெயர்ப்பு ஹோவர் உரைக்கான தற்போதைய
+    வடிவம் {0} ஆகும். சாத்தியமான இயல்புநிலை வாதங்கள்: {1}. உங்களிடம் PlaceholderAPI
+    இருந்தால், அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால் (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக்
+    கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.'
+  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
+    {0} ஆகும். சாத்தியமான இயல்புநிலை வாதங்கள்: {1}. உங்களிடம் PlaceholderAPI இருந்தால்,
+    அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால் (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக்
+    கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.'
+  wwcConfigConversationChatHoverFormatSuccess: உங்கள் ஹோவர் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
+  wwcConfigConversationLocalizeSyncSuccess: பயனர் உள்ளமயமாக்கல் ஒத்திசைவு வெற்றிகரமாக
+  wwcConfigGUILocalizeSyncButton: பயனர் உள்ளூர்மயமாக்க
+  wwcConfigSyncUserLocalInvalid: பயனர் உள்ளமைவு அமைப்பை ஒத்திசைவு உண்மையாக இயல்பாதது...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ஹோவர் உரை வடிவமைப்பை மாற்றவும்
 

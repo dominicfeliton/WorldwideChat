@@ -687,16 +687,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Bật danh sách đen
   wwcConfigConversationBlacklistDeletionSuccess: Xóa thành công thuật ngữ.
   wwcConfigGUIChatChannelSettings: Cấu hình kênh trò chuyện
-  wwcConfigGUIChatBlacklistSuccess: Bật thành công danh sách đen.
   wwcConfigGUIChatMessagesBlacklistNewButton: Thêm từ mới
   wwcConfigGUIChatChannelButton: Dịch cài đặt kênh
   wwcConfigGUIBlacklistMessagesModify: Sửa đổi thuật ngữ ({0})
   wwcConfigChatChannelFormatInvalid: Phát hiện định dạng kênh không hợp lệ. Mặc định
     là {0}...
-  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
-    riêng biệt là {0}. Các đối số được công nhận mặc định của chúng tôi mà bạn có
-    thể bao gồm: {1}. Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao
-    quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
   wwcConfigGUIModifyBlacklistSettings: Sửa đổi danh sách đen
   wwcConfigGUINextPageButton: Trang kế tiếp
   wwcConfigChatChannelHoverFormatInvalid: Phát hiện định dạng di chuột không hợp lệ.
@@ -707,4 +702,22 @@ Messages:
     Minecraft của bạn ({0}). Nhập {1} để biết thêm chi tiết.
   wwcConfigBadYaml: 'Tệp YAML không hợp lệ được phát hiện: {0}. Vui lòng cố gắng sửa
     tệp này hoặc nó có thể bị xóa!'
+  wwcConfigConversationChatBlacklistSuccess: Bật thành công danh sách đen.
+  wwcConfigConversationChannelHoverFormatInput: 'Định dạng hiện tại cho văn bản di
+    chuột dịch là {0}. Các đối số mặc định có thể có: {1}. Nếu bạn có PlaceHolderAPI,
+    hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ
+    0 để quay trở lại.'
+  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
+    riêng biệt là {0}. Các đối số mặc định có thể có: {1}. Nếu bạn có PlaceHolderAPI,
+    hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ
+    0 để quay trở lại.'
+  wwcConfigConversationChatHoverFormatSuccess: Định dạng di chuột của bạn đã được
+    thay đổi thành công.
+  wwcConfigConversationLocalizeSyncSuccess: Bật thành công đồng bộ hóa bản địa hóa
+    người dùng.
+  wwcConfigGUILocalizeSyncButton: Đồng bộ hóa bản địa hóa người dùng
+  wwcConfigSyncUserLocalInvalid: Đồng bộ hóa cài đặt bản địa hóa người dùng không
+    hợp lệ. Mặc định là true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Thay đổi định dạng văn bản di
+    chuột
 

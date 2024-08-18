@@ -696,16 +696,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ബ്ലാക്ക്ലിസ്റ്റ് പ്രവർത്തനക്ഷമമാക്കുക
   wwcConfigConversationBlacklistDeletionSuccess: ഈ പദം വിജയകരമായി ഇല്ലാതാക്കി.
   wwcConfigGUIChatChannelSettings: ചാറ്റ് ചാനൽ കോൺഫിഗറേഷൻ
-  wwcConfigGUIChatBlacklistSuccess: കരിമ്പട്ടികയിൽ വിജയകരമായി മാറ്റിസ്ഥാപിച്ചു.
   wwcConfigGUIChatMessagesBlacklistNewButton: പുതിയ വാക്ക് ചേർക്കുക
   wwcConfigGUIChatChannelButton: ചാനൽ ക്രമീകരണങ്ങൾ വിവർത്തനം ചെയ്യുക
   wwcConfigGUIBlacklistMessagesModify: കാലാവധി പരിഷ്ക്കരിക്കുക ({0})
   wwcConfigChatChannelFormatInvalid: അസാധുവായ ചാനൽ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
     ഡിഫാൾട്ട് ചെയ്യുന്നു...
-  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
-    {0} ആണ്. നിങ്ങൾക്ക് ഉൾപ്പെടുത്താൻ കഴിയുന്ന ഞങ്ങളുടെ സ്ഥിരസ്ഥിതി അംഗീകൃത വാദങ്ങൾ:
-    {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന്
-    ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
   wwcConfigGUIModifyBlacklistSettings: ബ്ലാക്ക്ലിസ്റ്റ് പരിഷ്ക്കരിക്കുക
   wwcConfigGUINextPageButton: അടുത്ത പേജ്
   wwcConfigChatChannelHoverFormatInvalid: അസാധുവായ ഹോവർ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
@@ -716,4 +711,21 @@ Messages:
     പ്രതിഫലിപ്പിക്കുകയും ചെയ്യും ({0}). കൂടുതൽ വിവരങ്ങൾക്ക് {1} എന്ന് ടൈപ്പ് ചെയ്യുക.
   wwcConfigBadYaml: 'അസാധുവായ YAML ഫയൽ കണ്ടെത്തി: {0}. ദയവായി ഈ ഫയൽ പരിഹരിക്കാൻ ശ്രമിക്കുക
     അല്ലെങ്കിൽ അത് ഇല്ലാതാക്കപ്പെടാം!'
+  wwcConfigConversationChatBlacklistSuccess: കരിമ്പട്ടികയിൽ വിജയകരമായി മാറ്റിസ്ഥാപിച്ചു.
+  wwcConfigConversationChannelHoverFormatInput: 'വിവർത്തന ഹോവർ ടെക്സ്റ്റിനുള്ള നിലവിലെ
+    ഫോർമാറ്റ് {0} ആണ്. സാധ്യമായ സ്ഥിരസ്ഥിതി വാദങ്ങൾ: {1}. നിങ്ങൾക്ക് PlaceholderAPI
+    ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക (%)
+    പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
+    {0} ആണ്. സാധ്യമായ സ്ഥിരസ്ഥിതി വാദങ്ങൾ: {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ,
+    ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു
+    പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigConversationChatHoverFormatSuccess: നിങ്ങളുടെ ഹോവർ ഫോർമാറ്റ് വിജയകരമായി
+    മാറ്റിയിരിക്കുന്നു.
+  wwcConfigConversationLocalizeSyncSuccess: ഉപയോക്തൃ പ്രാദേശികവൽക്കരണം സമന്വയിപ്പിച്ച്
+    വിജയകരമായി ടോഗി
+  wwcConfigGUILocalizeSyncButton: ഉപയോക്തൃ പ്രാദേശികവൽക്കരണം
+  wwcConfigSyncUserLocalInvalid: ഉപയോക്തൃ പ്രാദേശികവത്കരണ ക്രമീകരണം സമന്വയിപ്പിക്കുക
+    സത്യമായി സ്ഥിരമായി മാറുന്നു...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ഹോവർ ടെക്സ്റ്റ് ഫോർമാറ്റ് മാറ്റുക
 

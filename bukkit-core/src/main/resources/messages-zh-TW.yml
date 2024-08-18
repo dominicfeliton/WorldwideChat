@@ -508,13 +508,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: 啟用黑名單
   wwcConfigConversationBlacklistDeletionSuccess: 已成功刪除該字詞。
   wwcConfigGUIChatChannelSettings: 聊天頻道組態
-  wwcConfigGUIChatBlacklistSuccess: 成功切換黑名單。
   wwcConfigGUIChatMessagesBlacklistNewButton: 新增單詞
   wwcConfigGUIChatChannelButton: 翻譯頻道設定
   wwcConfigGUIBlacklistMessagesModify: 修改術語 ({0})
   wwcConfigChatChannelFormatInvalid: 偵測到無效的通道格式。預設為 {0}...
-  wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。您可以包含的預設識別引數：{1}。如果您有位置保持者
-    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
   wwcConfigGUIModifyBlacklistSettings: 修改黑名單
   wwcConfigGUINextPageButton: 下一頁
   wwcConfigChatChannelHoverFormatInvalid: 偵測到無效的懸停格式。預設為 {0}...
@@ -522,4 +519,14 @@ Messages:
   wwctGUIMainMenuPlayer: 翻譯 {0}
   wwcOnJoinSetLocaleSuccess: 全球微信已檢測到並將反映您的 Minecraft 本地化（{0}）。請輸入 {1} 以取得更多詳細資訊。
   wwcConfigBadYaml: 偵測到無效的 YAML 檔案：{0}。請嘗試修復此文件，否則它可能會被刪除！
+  wwcConfigConversationChatBlacklistSuccess: 成功切換黑名單。
+  wwcConfigConversationChannelHoverFormatInput: 當前翻譯懸停文本的格式為 {0}。可能的預設引數：{1}。如果您有位置保持者
+    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
+  wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。可能的預設引數：{1}。如果您有位置保持者
+    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
+  wwcConfigConversationChatHoverFormatSuccess: 您的懸停格式已成功更改。
+  wwcConfigConversationLocalizeSyncSuccess: 成功切換同步使用者本地化。
+  wwcConfigGUILocalizeSyncButton: 同步使用者本地化
+  wwcConfigSyncUserLocalInvalid: 同步使用者本地化設定無效。預設為 true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: 變更懸停文字格式
 

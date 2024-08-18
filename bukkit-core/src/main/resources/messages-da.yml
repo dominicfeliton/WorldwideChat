@@ -673,16 +673,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktivér sortliste
   wwcConfigConversationBlacklistDeletionSuccess: Slettede udtrykket med succes.
   wwcConfigGUIChatChannelSettings: Konfiguration af chatkanal
-  wwcConfigGUIChatBlacklistSuccess: Skiftet sortlisten med succes.
   wwcConfigGUIChatMessagesBlacklistNewButton: Tilføj nyt ord
   wwcConfigGUIChatChannelButton: Oversæt kanalindstillinger
   wwcConfigGUIBlacklistMessagesModify: Ændre udtryk ({0})
   wwcConfigChatChannelFormatInvalid: Ugyldigt kanalformat fundet. Standardindstilling
     til {0}...
-  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
-    er {0}. Vores standard anerkendte argumenter, som du kan inkludere: {1}. Hvis
-    du har PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
-    (%) i stedet. Skriv 0 for at gå tilbage.'
   wwcConfigGUIModifyBlacklistSettings: Rediger sortliste
   wwcConfigGUINextPageButton: Næste side
   wwcConfigChatChannelHoverFormatInvalid: Ugyldigt hover-format fundet. Standardindstilling
@@ -693,4 +688,20 @@ Messages:
     ({0}). Skriv {1} for flere detaljer.
   wwcConfigBadYaml: 'Ugyldig YAML-fil fundet: {0}. Forsøg at rette denne fil, ellers
     kan den blive slettet!'
+  wwcConfigConversationChatBlacklistSuccess: Skiftet sortlisten med succes.
+  wwcConfigConversationChannelHoverFormatInput: 'Det aktuelle format for oversættelse
+    af musepekst er {0}. Mulige standardargumenter: {1}. Hvis du har PlaceHolderAPI,
+    skal du sørge for, at disse variabler er omgivet af procenter (%) i stedet. Skriv
+    0 for at gå tilbage.'
+  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
+    er {0}. Mulige standardargumenter: {1}. Hvis du har PlaceHolderAPI, skal du sørge
+    for, at disse variabler er omgivet af procenter (%) i stedet. Skriv 0 for at gå
+    tilbage.'
+  wwcConfigConversationChatHoverFormatSuccess: Dit hover-format er blevet ændret med
+    succes.
+  wwcConfigConversationLocalizeSyncSuccess: Vellykket synkronisering af brugerlokalisering.
+  wwcConfigGUILocalizeSyncButton: Synkroniser brugerlokalisering
+  wwcConfigSyncUserLocalInvalid: Synkroniser brugerlokaliseringsindstilling ugyldig.
+    Standard til sandt...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Skift Hover Text Format
 

@@ -684,15 +684,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: بلیک لسٹ کو فعال کریں
   wwcConfigConversationBlacklistDeletionSuccess: اصطلاح کو کامیابی کے ساتھ حذف
   wwcConfigGUIChatChannelSettings: چیٹ چینل کی تشکیل
-  wwcConfigGUIChatBlacklistSuccess: کامیابی کے ساتھ بلیک لسٹ کو ٹوگل کیا گیا۔
   wwcConfigGUIChatMessagesBlacklistNewButton: نیا لفظ شامل کریں
   wwcConfigGUIChatChannelButton: چینل ترتیبات کا ترجم
   wwcConfigGUIBlacklistMessagesModify: اصطلاح میں ترمیم کریں ({0})
   wwcConfigChatChannelFormatInvalid: غلط چینل فارمیٹ کا پتہ {0} پر ڈیفالٹ ہو رہا ہے...
-  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
-    ہے۔ ہمارے پہلے سے طے شدہ تسلیم شدہ دلائل جن میں آپ شامل کرسکتے ہیں: {1}. اگر آپ
-    کے پاس PlaceHolderAPI ہے تو، اس بات کو یقینی بنائیں کہ ان متغیرات اس کے بجائے
-    فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے 0 ٹائپ کریں۔'
   wwcConfigGUIModifyBlacklistSettings: بلیک لسٹ میں تبدیلی کریں
   wwcConfigGUINextPageButton: اگلا صفحہ
   wwcConfigChatChannelHoverFormatInvalid: غلط ہوور فارمیٹ کا پتہ چلا ہے۔ {0} پر ڈیفالٹ
@@ -703,4 +698,21 @@ Messages:
     پتہ لگایا ہے اور مزید تفصیلات کے لئے {1} ٹائپ کریں۔
   wwcConfigBadYaml: 'غلط YAML فائل کا پتہ چلا: {0}. براہ کرم اس فائل کو ٹھیک کرنے
     کی کوشش کریں یا یہ حذف ہوسکتا ہے!'
+  wwcConfigConversationChatBlacklistSuccess: کامیابی کے ساتھ بلیک لسٹ کو ٹوگل کیا
+    گیا۔
+  wwcConfigConversationChannelHoverFormatInput: 'ترجمہ ہوور متن کے لئے موجودہ فارمیٹ
+    {0} ہے۔ ممکنہ ڈیفالٹ دلائل: {1}. اگر آپ کے پاس PlaceHolderAPI ہے تو، اس بات کو
+    یقینی بنائیں کہ ان متغیرات اس کے بجائے فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے
+    0 ٹائپ کریں۔'
+  wwcConfigConversationChannelFormatInput: 'علیحدہ چیٹ چینل کے لئے موجودہ فارمیٹ {0}
+    ہے۔ ممکنہ ڈیفالٹ دلائل: {1}. اگر آپ کے پاس PlaceHolderAPI ہے تو، اس بات کو یقینی
+    بنائیں کہ ان متغیرات اس کے بجائے فیصد (٪) سے گھرا ہوں۔ واپس جانے کے لئے 0 ٹائپ
+    کریں۔'
+  wwcConfigConversationChatHoverFormatSuccess: آپ کے ہوور فارمیٹ کو کامیابی کے ساتھ
+    تبدیل کیا گیا ہے۔
+  wwcConfigConversationLocalizeSyncSuccess: صارف کی لوکلائزیشن کو کامیابی کے ساتھ
+    ہم آہنگ
+  wwcConfigGUILocalizeSyncButton: صارف کی لوکلائزیشن
+  wwcConfigSyncUserLocalInvalid: مطابقت پذیر صارف کی لوکلائزیشن کی سچ میں ڈیفالٹ ہونا...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ہوور ٹیکسٹ فارمیٹ تبدیل کریں
 

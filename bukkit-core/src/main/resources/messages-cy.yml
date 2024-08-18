@@ -683,16 +683,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Galluogi Rhestr Ddu
   wwcConfigConversationBlacklistDeletionSuccess: Dileu'r term yn llwyddiannus.
   wwcConfigGUIChatChannelSettings: Cyfluniad Sianel Sgwrs
-  wwcConfigGUIChatBlacklistSuccess: Togliodd y rhestr ddu yn llwyddiannus.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ychwanegu Word Newydd
   wwcConfigGUIChatChannelButton: Cyfieithu Channel Settings
   wwcConfigGUIBlacklistMessagesModify: Addasu Tymor ({0})
   wwcConfigChatChannelFormatInvalid: Canfuwyd fformat sianel annilys. Rhagosodiad
     i {0}...
-  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
-    sgwrsio ar wahân yw {0}. Mae ein dadleuon cydnabyddedig diofyn y gallwch eu cynnwys:
-    {1}. Os oes gennych PlaceholderAPI, gwnewch yn siŵr bod y newidynnau hynny wedi''u
-    hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn ôl.'
   wwcConfigGUIModifyBlacklistSettings: Addasu Rhestr Ddu
   wwcConfigGUINextPageButton: Tudalen nesaf
   wwcConfigChatChannelHoverFormatInvalid: Canfuwyd fformat hofran annilys. Rhagosodiad
@@ -703,4 +698,21 @@ Messages:
     lleoleiddio Minecraft ({0}). Teipiwch {1} am fwy o fanylion.
   wwcConfigBadYaml: 'Canfuwyd ffeil YAML annilys: {0}. Ceisiwch drwsio''r ffeil hon
     neu efallai y caiff ei dileu!'
+  wwcConfigConversationChatBlacklistSuccess: Togliodd y rhestr ddu yn llwyddiannus.
+  wwcConfigConversationChannelHoverFormatInput: 'Y fformat presennol ar gyfer testun
+    hofran cyfieithu yw {0}. Dadleuon diofyn posibl: {1}. Os oes gennych PlaceholderAPI,
+    gwnewch yn siŵr bod y newidynnau hynny wedi''u hamgylchynu gan ganrannau (%) yn
+    lle hynny. Teipiwch 0 i fynd yn ôl.'
+  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
+    sgwrsio ar wahân yw {0}. Dadleuon diofyn posibl: {1}. Os oes gennych PlaceholderAPI,
+    gwnewch yn siŵr bod y newidynnau hynny wedi''u hamgylchynu gan ganrannau (%) yn
+    lle hynny. Teipiwch 0 i fynd yn ôl.'
+  wwcConfigConversationChatHoverFormatSuccess: Mae eich fformat hofran wedi'i newid
+    yn llwyddiannus.
+  wwcConfigConversationLocalizeSyncSuccess: Toglodd lleoleiddio defnyddwyr cydamseru
+    yn llwyddiannus.
+  wwcConfigGUILocalizeSyncButton: Cysoni Lleoleiddio Defnyddwyr
+  wwcConfigSyncUserLocalInvalid: Sync gosodiad lleoleiddio defnyddiwr annilys. Rhagosodiad
+    i wir...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Newid Fformat Testun Hofran
 

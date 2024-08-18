@@ -725,16 +725,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activa la llista negra
   wwcConfigConversationBlacklistDeletionSuccess: S'ha eliminat correctament el terme.
   wwcConfigGUIChatChannelSettings: Configuració del canal de xat
-  wwcConfigGUIChatBlacklistSuccess: S'ha canviat amb èxit la llista negra.
   wwcConfigGUIChatMessagesBlacklistNewButton: Afegeix una paraula nova
   wwcConfigGUIChatChannelButton: Tradueix la configuració del canal
   wwcConfigGUIBlacklistMessagesModify: Modificar Terme ({0})
   wwcConfigChatChannelFormatInvalid: S'ha detectat el format de canal no vàlid. Per
     defecte a {0}...
-  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
-    és {0}. Els nostres arguments reconeguts per defecte que podeu incloure: {1}.
-    Si teniu PlaceholderAPI, assegureu-vos que aquestes variables estiguin envoltades
-    per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
   wwcConfigGUIModifyBlacklistSettings: Modificar la llista negra
   wwcConfigGUINextPageButton: Pàgina següent
   wwcConfigChatChannelHoverFormatInvalid: S'ha detectat el format de passejador invàlid.
@@ -745,4 +740,20 @@ Messages:
     de Minecraft ({0}). Escriu {1} per a més detalls.
   wwcConfigBadYaml: 'S''ha detectat un fitxer YAML no vàlid: {0}. Si us plau, intenteu
     solucionar aquest fitxer o pot ser eliminat!'
+  wwcConfigConversationChatBlacklistSuccess: S'ha canviat amb èxit la llista negra.
+  wwcConfigConversationChannelHoverFormatInput: 'El format actual per a la traducció
+    del text hover és {0}. Possibles arguments per defecte: {1}. Si teniu PlaceholderAPI,
+    assegureu-vos que aquestes variables estiguin envoltades per percentatges (%)
+    en canvi. Escriu 0 per tornar enrere.'
+  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
+    és {0}. Possibles arguments per defecte: {1}. Si teniu PlaceholderAPI, assegureu-vos
+    que aquestes variables estiguin envoltades per percentatges (%) en canvi. Escriu
+    0 per tornar enrere.'
+  wwcConfigConversationChatHoverFormatSuccess: El format de l'hover s'ha canviat correctament.
+  wwcConfigConversationLocalizeSyncSuccess: S'ha alternat amb èxit la sincronització
+    de la localització dels usuaris.
+  wwcConfigGUILocalizeSyncButton: Sincronitzar la localització d'usuari
+  wwcConfigSyncUserLocalInvalid: Sincronitzar la configuració de localització d'usuari
+    no vàlida. Per defecte de veritat...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Canviar el format de text Hover
 

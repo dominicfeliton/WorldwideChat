@@ -585,14 +585,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ጥቁር ዝርዝርን ያስ
   wwcConfigConversationBlacklistDeletionSuccess: ቃሉን በተሳካ ሁኔታ ሰርዘዋል።
   wwcConfigGUIChatChannelSettings: የውይይት ቻናል ውቅ
-  wwcConfigGUIChatBlacklistSuccess: ጥቁር ዝርዝሩን በተሳካ ሁኔታ መለወጥ።
   wwcConfigGUIChatMessagesBlacklistNewButton: አዲስ ቃል ያክሉ
   wwcConfigGUIChatChannelButton: የሻንል ቅንብሮችን
   wwcConfigGUIBlacklistMessagesModify: ቃል ማሻሻል ({0})
   wwcConfigChatChannelFormatInvalid: ልክ ያልሆነ የቻናል ቅርጸት ተገ ወደ {0} ነባሪ መቀየር...
-  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። ሊያካትቱ
-    የሚችሏቸው ነባሪ እውቅና ያላቸው ክርክሮች: {1}። PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች (%)
-    የተከበቡ መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
   wwcConfigGUIModifyBlacklistSettings: ጥቁር ዝርዝርን ያስ
   wwcConfigGUINextPageButton: ቀጣይ ገጽ
   wwcConfigChatChannelHoverFormatInvalid: ልክ ያልሆነ የሆቨር ቅርጸት ተገኘ ወደ {0} ነባሪ መቀየር...
@@ -602,4 +598,16 @@ Messages:
     ለተጨማሪ ዝርዝሮች {1} ይተይቡ።
   wwcConfigBadYaml: 'ልክ ያልሆነ YAML ፋይል ተገኝቷል: {0}። እባክዎን ይህንን ፋይል ለማስተካከል ይሞክሩ ወይም
     ሊሰረዝ ይችላል!'
+  wwcConfigConversationChatBlacklistSuccess: ጥቁር ዝርዝሩን በተሳካ ሁኔታ መለወጥ።
+  wwcConfigConversationChannelHoverFormatInput: 'ለትርጉም ሆቨር ጽሑፍ አሁን ያለው ቅርጸት {0} ነው።
+    ሊሆኑ የሚችሉ ነባሪ ክርክሮች: {1}። PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች (%) የተከበቡ
+    መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
+  wwcConfigConversationChannelFormatInput: 'ለተለየ የውይይት ቻናል አሁን ያለው ቅርጸት {0} ነው። ሊሆኑ
+    የሚችሉ ነባሪ ክርክሮች: {1}። PlaceholderAPI ካለዎት እነዚያ ተለዋዋጮች በምትኩ በመቶዎች (%) የተከበቡ መሆናቸውን
+    ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
+  wwcConfigConversationChatHoverFormatSuccess: የእርስዎ ሆቨር ቅርጸት በተሳካ ሁኔታ ተለውጧል።
+  wwcConfigConversationLocalizeSyncSuccess: የተጠቃሚ የአካባቢን ማመሳሰል በተሳካ ሁኔታ ተ
+  wwcConfigGUILocalizeSyncButton: የተጠቃሚ አቀማመጥ ማመ
+  wwcConfigSyncUserLocalInvalid: የተጠቃሚ የአካባቢያ ቅንብርን ያመ ወደ እውነት ነባሪ መሆን...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: የሆቨር ጽሑፍ ቅርጸትን ይቀይ
 

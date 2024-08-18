@@ -668,15 +668,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: කළු ලැයිස්තුව සක්රිය
   wwcConfigConversationBlacklistDeletionSuccess: මෙම යෙදුම සාර්ථකව මකා දැමුවා.
   wwcConfigGUIChatChannelSettings: චැට් නාලිකා වින්යා
-  wwcConfigGUIChatBlacklistSuccess: සාර්ථකව කළු ලැයිස්තුව මාරු කළා.
   wwcConfigGUIChatMessagesBlacklistNewButton: නව වචනය එක් කරන්න
   wwcConfigGUIChatChannelButton: නාලිකා සැකසුම් පරිවර්තනය කරන්න
   wwcConfigGUIBlacklistMessagesModify: කාලසීමාව වෙනස් කරන්න ({0})
   wwcConfigChatChannelFormatInvalid: අවලංගු නාලිකා ආකෘතිය අනාවරණය විය {0} වෙත පෙරහැරීම...
-  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
-    වේ. ඔබට ඇතුළත් කළ හැකි අපගේ පෙරනිමි පිළිගත් තර්ක: {1}. ඔබට PlaceholderAPI තිබේ
-    නම්, එම විචල්යයන් ඒ වෙනුවට ප්රතිශතවලින් (%) වට වී ඇති බවට වග බලා ගන්න. ආපසු යාමට
-    0 ටයිප් කරන්න.'
   wwcConfigGUIModifyBlacklistSettings: කළු ලැයිස්තුව වෙනස් කරන්න
   wwcConfigGUINextPageButton: ඊළඟ පිටුව
   wwcConfigChatChannelHoverFormatInvalid: අවලංගු හොවර් ආකෘතිය හඳුනාගෙන ඇත. {0} වෙත
@@ -687,4 +682,18 @@ Messages:
     පිළිබිඹු කරනු ඇත ({0}). වැඩි විස්තර සඳහා {1} ටයිප් කරන්න.
   wwcConfigBadYaml: 'අවලංගු YAML ගොනුව හඳුනාගෙන ඇත: {0}. කරුණාකර මෙම ගොනුව නිවැරදි
     කිරීමට උත්සාහ කරන්න, නැතහොත් එය මකා දැමිය හැකිය!'
+  wwcConfigConversationChatBlacklistSuccess: සාර්ථකව කළු ලැයිස්තුව මාරු කළා.
+  wwcConfigConversationChannelHoverFormatInput: 'පරිවර්තන හොවර් පෙළ සඳහා වර්තමාන ආකෘතිය
+    {0} වේ. හැකි පෙරනිමි තර්ක: {1}. ඔබට PlaceholderAPI තිබේ නම්, එම විචල්යයන් ඒ වෙනුවට
+    ප්රතිශතවලින් (%) වට වී ඇති බවට වග බලා ගන්න. ආපසු යාමට 0 ටයිප් කරන්න.'
+  wwcConfigConversationChannelFormatInput: 'වෙනම චැට් නාලිකාව සඳහා වත්මන් ආකෘතිය {0}
+    වේ. හැකි පෙරනිමි තර්ක: {1}. ඔබට PlaceholderAPI තිබේ නම්, එම විචල්යයන් ඒ වෙනුවට
+    ප්රතිශතවලින් (%) වට වී ඇති බවට වග බලා ගන්න. ආපසු යාමට 0 ටයිප් කරන්න.'
+  wwcConfigConversationChatHoverFormatSuccess: ඔබේ හොවර් ආකෘතිය සාර්ථකව වෙනස් කර ඇත.
+  wwcConfigConversationLocalizeSyncSuccess: පරිශීලක දේශීයකරණය සමමුහුර්ත කිරීම සාර්ථකව
+    මාරු කර ඇත.
+  wwcConfigGUILocalizeSyncButton: පරිශීලක දේශීයකරණය සමමුහු
+  wwcConfigSyncUserLocalInvalid: පරිශීලක ප්රාදේශීයකරණ සැකසුම සමමුහුර්ත සැබෑවක් බවට
+    පෙරළීම...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: හොවර් පෙළ ආකෘතිය වෙනස් කරන්න
 

@@ -23,7 +23,7 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLocalLang(PlayerJoinEvent e) {
-        if (!main.getSetLocalOnFirstJoin()) {
+        if (!main.getSyncUserLocal()) {
             return;
         }
 
@@ -51,7 +51,7 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
         // But if you then switch back to english it will detect french.
         // :(
 
-        if (!main.getSetLocalOnFirstJoin()) {
+        if (!main.getSyncUserLocal()) {
             return;
         }
 

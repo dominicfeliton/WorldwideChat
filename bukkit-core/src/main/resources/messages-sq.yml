@@ -709,16 +709,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktivizo listën e zezë
   wwcConfigConversationBlacklistDeletionSuccess: Fshihet me sukses termin.
   wwcConfigGUIChatChannelSettings: Konfigurimi i kanalit të bised
-  wwcConfigGUIChatBlacklistSuccess: Me sukses kaloi listën e zezë.
   wwcConfigGUIChatMessagesBlacklistNewButton: Shto Fjalë të Re
   wwcConfigGUIChatChannelButton: Përkthejeni parametrat e kanalit
   wwcConfigGUIBlacklistMessagesModify: Modifikoni Termin ({0})
   wwcConfigChatChannelFormatInvalid: Zbuluar formati i pavlefshëm i kanalit. Parazgjedhja
     në {0}...
-  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
-    bisedës është {0}. Argumentet tona të paracaktuara të njohura që mund të përfshini:
-    {1}. Nëse keni PlaceholderAPI, sigurohuni që ato variabla të jenë të rrethuar
-    nga përqindje (%) në vend të kësaj. Shkruani 0 për të kthyer përsëri.'
   wwcConfigGUIModifyBlacklistSettings: Modifikoni listën e zezë
   wwcConfigGUINextPageButton: Faqja Tjetër
   wwcConfigChatChannelHoverFormatInvalid: Zbulohet formati i pavlefshëm i hover. Parazgjedhja
@@ -729,4 +724,21 @@ Messages:
     tuaj të Minecraft ({0}). Shkruani {1} për më shumë detaje.
   wwcConfigBadYaml: 'Zbulohet skedari i pavlefshëm YAML: {0}. Ju lutemi përpiquni
     ta rregulloni këtë skedar ose mund të fshihet!'
+  wwcConfigConversationChatBlacklistSuccess: Me sukses kaloi listën e zezë.
+  wwcConfigConversationChannelHoverFormatInput: 'Formati aktual për tekstin e përkthimit
+    është {0}. Argumentet e mundshme të paracaktuara: {1}. Nëse keni PlaceholderAPI,
+    sigurohuni që ato variabla të jenë të rrethuar nga përqindje (%) në vend të kësaj.
+    Shkruani 0 për të kthyer përsëri.'
+  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
+    bisedës është {0}. Argumentet e mundshme të paracaktuara: {1}. Nëse keni PlaceholderAPI,
+    sigurohuni që ato variabla të jenë të rrethuar nga përqindje (%) në vend të kësaj.
+    Shkruani 0 për të kthyer përsëri.'
+  wwcConfigConversationChatHoverFormatSuccess: Formati juaj i hover është ndryshuar
+    me sukses.
+  wwcConfigConversationLocalizeSyncSuccess: Ndërroi me sukses sinkronizimin e lokalizimit
+    të përdoruesit.
+  wwcConfigGUILocalizeSyncButton: Sync lokalizimi i përdoruesit
+  wwcConfigSyncUserLocalInvalid: Sinkronizimi i vendosjes së lokalizimit të përdoruesit
+    Parashikimi i vërtetë...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ndryshoni formatin e tekstit Hover
 

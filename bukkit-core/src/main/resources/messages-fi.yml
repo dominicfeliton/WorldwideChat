@@ -670,16 +670,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Ota musta lista käyttöön
   wwcConfigConversationBlacklistDeletionSuccess: Poistettu termi onnistuneesti.
   wwcConfigGUIChatChannelSettings: Chat-kanavan määritykset
-  wwcConfigGUIChatBlacklistSuccess: Vaihtoi mustan listan onnistuneesti.
   wwcConfigGUIChatMessagesBlacklistNewButton: Lisää uusi sana
   wwcConfigGUIChatChannelButton: Käännä kanava-asetukset
   wwcConfigGUIBlacklistMessagesModify: Muokkaa termiä ({0})
   wwcConfigChatChannelFormatInvalid: Havaittu virheellinen kanavamuoto. Oletuksena
     on {0}...
-  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
-    on {0}. Oletusarvoiset tunnistetut argumentit, jotka voit sisällyttää: {1}. Jos
-    käytössäsi on PlaceHolderAPI, varmista, että muuttujia ympäröivät prosenttiosuudet
-    (%) sen sijaan. Kirjoita 0 palataksesi takaisin.'
   wwcConfigGUIModifyBlacklistSettings: Muokkaa mustaa luetteloa
   wwcConfigGUINextPageButton: Seuraava sivu
   wwcConfigChatChannelHoverFormatInvalid: Virheellinen hiiren muoto havaittu. Oletuksena
@@ -690,4 +685,21 @@ Messages:
     ({0}). Kirjoita {1} saadaksesi lisätietoja.
   wwcConfigBadYaml: 'Virheellinen YAML-tiedosto havaittu: {0}. Yritä korjata tämä
     tiedosto tai se voidaan poistaa!'
+  wwcConfigConversationChatBlacklistSuccess: Vaihtoi mustan listan onnistuneesti.
+  wwcConfigConversationChannelHoverFormatInput: 'Käännöstekstin nykyinen muoto on
+    {0}. Mahdolliset oletusargumentit: {1}. Jos käytössäsi on PlaceHolderAPI, varmista,
+    että muuttujia ympäröivät prosenttiosuudet (%) sen sijaan. Kirjoita 0 palataksesi
+    takaisin.'
+  wwcConfigConversationChannelFormatInput: 'Erillisen chat-kanavan nykyinen muoto
+    on {0}. Mahdolliset oletusargumentit: {1}. Jos käytössäsi on PlaceHolderAPI, varmista,
+    että muuttujia ympäröivät prosenttiosuudet (%) sen sijaan. Kirjoita 0 palataksesi
+    takaisin.'
+  wwcConfigConversationChatHoverFormatSuccess: Hiiren osoittimen muotoa on muutettu
+    onnistuneesti.
+  wwcConfigConversationLocalizeSyncSuccess: Käyttäjän lokalisoinnin synkronointi onnistui
+    vaihtamaan.
+  wwcConfigGUILocalizeSyncButton: Synkronoi käyttäjän lokalisointi
+  wwcConfigSyncUserLocalInvalid: Synkronoi käyttäjän lokalisointiasetus on virheellinen.
+    Oletuksena on tosi...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Muuta hiiren osoittimen tekstimuotoa
 

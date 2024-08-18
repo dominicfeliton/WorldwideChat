@@ -706,17 +706,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Qora ro'yxatni yoqish
   wwcConfigConversationBlacklistDeletionSuccess: Atamani muvaffaqiyatli o'chirib tashladi.
   wwcConfigGUIChatChannelSettings: Chat kanalining konfiguratsiyasi
-  wwcConfigGUIChatBlacklistSuccess: Qora ro'yxatni muvaffaqiyatli almashtirdi.
   wwcConfigGUIChatMessagesBlacklistNewButton: Yangi so'zni qo'shish
   wwcConfigGUIChatChannelButton: Kanal sozlamalarini tarjima qiling
   wwcConfigGUIBlacklistMessagesModify: Muddatni o'zgartirish ({0})
   wwcConfigChatChannelFormatInvalid: Yaroqsiz kanal formati aniqlandi. Standart {0}
     ga sozlash...
-  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
-    {0}. Siz o''z ichiga olishi mumkin bo''lgan asl qiymati tan olingan argumentlarimiz:
-    {1}. Agar sizda PlaceholderAPI mavjud bo''lsa, o''sha o''zgaruvchilar uning o''rniga
-    foizlar (%) bilan o''ralganligiga ishonch hosil qiling. Orqaga qaytish uchun 0
-    yozing.'
   wwcConfigGUIModifyBlacklistSettings: Qora ro'yxatni o'zgartirish
   wwcConfigGUINextPageButton: Keyingi sahifa
   wwcConfigChatChannelHoverFormatInvalid: Yaroqsiz hover formati aniqlandi. Standart
@@ -727,4 +721,21 @@ Messages:
     aks ettiradi ({0}). Batafsil ma'lumot uchun {1} yozing.
   wwcConfigBadYaml: 'Yaroqsiz YAML fayli aniqlandi: {0}. Iltimos, ushbu faylni tuzatishga
     harakat qiling yoki u o''chirilishi mumkin!'
+  wwcConfigConversationChatBlacklistSuccess: Qora ro'yxatni muvaffaqiyatli almashtirdi.
+  wwcConfigConversationChannelHoverFormatInput: 'Tarjima hover matnining joriy formati
+    {0}. Mumkin standart argumentlar: {1}. Agar sizda PlaceholderAPI mavjud bo''lsa,
+    o''sha o''zgaruvchilar uning o''rniga foizlar (%) bilan o''ralganligiga ishonch
+    hosil qiling. Orqaga qaytish uchun 0 yozing.'
+  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
+    {0}. Mumkin standart argumentlar: {1}. Agar sizda PlaceholderAPI mavjud bo''lsa,
+    o''sha o''zgaruvchilar uning o''rniga foizlar (%) bilan o''ralganligiga ishonch
+    hosil qiling. Orqaga qaytish uchun 0 yozing.'
+  wwcConfigConversationChatHoverFormatSuccess: Sizning hover formatingiz muvaffaqiyatli
+    o'zgartirildi.
+  wwcConfigConversationLocalizeSyncSuccess: Foydalanuvchining lokalizatsiyasini sinxronlashtirishni
+    muvaffaqiyatli o'tkazdi
+  wwcConfigGUILocalizeSyncButton: Foydalanuvchini lokalizatsiya qilish
+  wwcConfigSyncUserLocalInvalid: Foydalanuvchini lokalizatsiya sozlamasini sinxronlashtirish
+    To'g'ri deb hisoblash...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover matn formatini o'zgartiring
 

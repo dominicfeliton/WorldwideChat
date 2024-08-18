@@ -701,16 +701,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Միացնել սև ցուցակը
   wwcConfigConversationBlacklistDeletionSuccess: 'Հաջողությամբ ջնջեց տերմինը:'
   wwcConfigGUIChatChannelSettings: Զրույցի ալիքի կազմաձևում
-  wwcConfigGUIChatBlacklistSuccess: 'Հաջողությամբ միացրեց սև ցուցակը:'
   wwcConfigGUIChatMessagesBlacklistNewButton: Ավելացնել նոր բառ
   wwcConfigGUIChatChannelButton: Թարգմանել ալիքի կարգավորումները
   wwcConfigGUIBlacklistMessagesModify: Փոփոխել ժամկետը ({0})
   wwcConfigChatChannelFormatInvalid: Հայտնաբերվել է անվավեր ալիքի ձևաչափ Կանխարգելում
     է {0}...
-  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
-    {0} է: Մեր լռելյայն ճանաչված փաստարկները, որոնք կարող եք ներառել: {1}. Եթե ունեք
-    PlaceholderAPI, համոզվեք, որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը.
-    Մուտքագրեք 0-ը հետ գնալու համար:'
   wwcConfigGUIModifyBlacklistSettings: Փոփոխեք սև ցուցակը
   wwcConfigGUINextPageButton: Հաջորդ էջը
   wwcConfigChatChannelHoverFormatInvalid: 'Հայտնաբերվել է անվավեր սավառման ձևաչափ:
@@ -721,4 +716,21 @@ Messages:
     ի տեղայնացումը ({0}): Մանրամասների համար մուտքագրեք {1}:'
   wwcConfigBadYaml: 'Հայտնաբերվել է անվավեր YAML ֆայլը ՝ {0}: Խնդրում ենք փորձել շտկել
     այս ֆայլը, հակառակ դեպքում այն կարող է ջնջվել:'
+  wwcConfigConversationChatBlacklistSuccess: 'Հաջողությամբ միացրեց սև ցուցակը:'
+  wwcConfigConversationChannelHoverFormatInput: 'Թարգմանության սավառիչ տեքստի ներկայիս
+    ձևաչափը {0} է: Հնարավոր լռելյայն փաստարկներ. {1}. Եթե ունեք PlaceholderAPI, համոզվեք,
+    որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը. Մուտքագրեք 0-ը հետ
+    գնալու համար:'
+  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
+    {0} է: Հնարավոր լռելյայն փաստարկներ. {1}. Եթե ունեք PlaceholderAPI, համոզվեք,
+    որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը. Մուտքագրեք 0-ը հետ
+    գնալու համար:'
+  wwcConfigConversationChatHoverFormatSuccess: 'Ձեր սավառման ձևաչափը հաջողությամբ
+    փոխվել է:'
+  wwcConfigConversationLocalizeSyncSuccess: 'Հաջողությամբ միացված է օգտագործողի տեղայնացման
+    համաժամեցումը:'
+  wwcConfigGUILocalizeSyncButton: Համաժամեցնել օգտագործողի տեղայնացումը
+  wwcConfigSyncUserLocalInvalid: 'Sync օգտագործողի տեղայնացման կարգավորումը անվավեր
+    է: Չարժևորելով ճշմարիտ...'
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Փոխել սավառնել տեքստի ձևաչափը
 

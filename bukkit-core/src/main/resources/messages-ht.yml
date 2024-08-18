@@ -652,14 +652,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Pèmèt lis nwa
   wwcConfigConversationBlacklistDeletionSuccess: Aksè efase tèm nan.
   wwcConfigGUIChatChannelSettings: Konfigirasyon Chanèl Chat
-  wwcConfigGUIChatBlacklistSuccess: Siksè toggle lis nwa a.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ajoute nouvo pawòl
   wwcConfigGUIChatChannelButton: Tradui Channel Anviwòn
   wwcConfigGUIBlacklistMessagesModify: Modifye tèm ({0})
   wwcConfigChatChannelFormatInvalid: Fòma chanèl envalid detekte. Defaulting nan {0}...
-  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
-    se {0}. Agiman defo rekonèt nou yo ke ou ka gen ladan yo: {1}. Si ou gen PlaceholderAPI,
-    asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
   wwcConfigGUIModifyBlacklistSettings: Modifye lis nwa
   wwcConfigGUINextPageButton: Paj pwochen
   wwcConfigChatChannelHoverFormatInvalid: Fòma hover envalid detekte. Defaulting nan
@@ -670,4 +666,18 @@ Messages:
     Minecraft ou a ({0}). Kalite {1} pou plis detay.
   wwcConfigBadYaml: 'Envalab dosye YAML detekte: {0}. Tanpri eseye ranje dosye sa
     a oswa li ka efase!'
+  wwcConfigConversationChatBlacklistSuccess: Siksè toggle lis nwa a.
+  wwcConfigConversationChannelHoverFormatInput: 'Fòma aktyèl la pou tradiksyon hover
+    tèks se {0}. Agiman default posib: {1}. Si ou gen PlaceholderAPI, asire w ke sa
+    yo varyab yo antoure pa pousantaj (%) olye. Kalite 0 pou tounen.'
+  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
+    se {0}. Agiman default posib: {1}. Si ou gen PlaceholderAPI, asire w ke sa yo
+    varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
+  wwcConfigConversationChatHoverFormatSuccess: Fòma hover ou a te chanje avèk siksè.
+  wwcConfigConversationLocalizeSyncSuccess: Aksè togged synchronisation itilizatè
+    lokalisasyon.
+  wwcConfigGUILocalizeSyncButton: Sync Lokalizasyon Itilizatè
+  wwcConfigSyncUserLocalInvalid: Sync anviwònman lokalizasyon itilizatè envalid Defaulting
+    nan vre...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Chanje fòma tèks Hover
 

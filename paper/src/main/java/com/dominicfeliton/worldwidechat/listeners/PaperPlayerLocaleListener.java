@@ -21,7 +21,7 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLocalLang(PlayerJoinEvent e) {
-        if (!main.getSetLocalOnFirstJoin()) {
+        if (!main.getSyncUserLocal()) {
             refs.debugMsg("locale detection disabled");
             return;
         }
@@ -40,7 +40,7 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLangChange(PlayerLocaleChangeEvent event) {
-        if (!main.getSetLocalOnFirstJoin()) {
+        if (!main.getSyncUserLocal()) {
             return;
         }
 

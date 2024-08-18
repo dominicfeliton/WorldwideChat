@@ -685,16 +685,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
   wwcConfigConversationBlacklistDeletionSuccess: ಪದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ.
   wwcConfigGUIChatChannelSettings: ಚಾಟ್ ಚಾನೆಲ್ ಸಂರಚನೆ
-  wwcConfigGUIChatBlacklistSuccess: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
   wwcConfigGUIChatMessagesBlacklistNewButton: ಹೊಸ ಪದವನ್ನು ಸೇರಿಸಿ
   wwcConfigGUIChatChannelButton: ಚಾನೆಲ್ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಭಾಷಾಂತ
   wwcConfigGUIBlacklistMessagesModify: ಪದವನ್ನು ಮಾರ್ಪಡಿಸಿ ({0})
   wwcConfigChatChannelFormatInvalid: ಅಮಾನ್ಯ ಚಾನಲ್ ಸ್ವರೂಪ ಪತ್ತೆಯಾಗಿದೆ. {0} ಗೆ ಡೀಫಾಲ್ಟ್
     ಆಗಿದೆ...
-  wwcConfigConversationChannelFormatInput: 'ಪ್ರತ್ಯೇಕ ಚಾಟ್ ಚಾನಲ್ನ ಪ್ರಸ್ತುತ ಸ್ವರೂಪ {0}
-    ಆಗಿದೆ. ನೀವು ಸೇರಿಸಬಹುದಾದ ನಮ್ಮ ಡೀಫಾಲ್ಟ್ ಮಾನ್ಯತೆ ಪಡೆದ ವಾದಗಳು: {1}. ನೀವು PlaceholderAPI
-    ಹೊಂದಿದ್ದರೆ, ಆ ಅಸ್ಥಿರಗಳು ಬದಲಿಗೆ ಶೇಕಡಾವಾರು (%) ನಿಂದ ಸುತ್ತುವರೆದಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
-    ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.'
   wwcConfigGUIModifyBlacklistSettings: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಮಾರ್ಪಡಿಸಿ
   wwcConfigGUINextPageButton: ಮುಂದಿನ ಪುಟ
   wwcConfigChatChannelHoverFormatInvalid: ಅಮಾನ್ಯ ಹೋವರ್ ಸ್ವರೂಪ ಪತ್ತೆಯಾಗಿದೆ. {0} ಗೆ
@@ -705,4 +700,21 @@ Messages:
     ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ ({0}). ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ {1} ಎಂದು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigBadYaml: 'ಅಮಾನ್ಯ YAML ಫೈಲ್ ಪತ್ತೆಯಾಗಿದೆ: {0}. ದಯವಿಟ್ಟು ಈ ಫೈಲ್ ಅನ್ನು ಸರಿಪಡಿಸಲು
     ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಅದನ್ನು ಅಳಿಸಬಹುದು!'
+  wwcConfigConversationChatBlacklistSuccess: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigConversationChannelHoverFormatInput: 'ಅನುವಾದ ಹೋವರ್ ಪಠ್ಯದ ಪ್ರಸ್ತುತ ಸ್ವರೂಪ
+    {0} ಆಗಿದೆ. ಸಂಭವನೀಯ ಡೀಫಾಲ್ಟ್ ವಾದಗಳು: {1}. ನೀವು PlaceholderAPI ಹೊಂದಿದ್ದರೆ, ಆ ಅಸ್ಥಿರಗಳು
+    ಬದಲಿಗೆ ಶೇಕಡಾವಾರು (%) ನಿಂದ ಸುತ್ತುವರೆದಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ಹಿಂತಿರುಗಲು 0 ಎಂದು
+    ಟೈಪ್ ಮಾಡಿ.'
+  wwcConfigConversationChannelFormatInput: 'ಪ್ರತ್ಯೇಕ ಚಾಟ್ ಚಾನಲ್ನ ಪ್ರಸ್ತುತ ಸ್ವರೂಪ {0}
+    ಆಗಿದೆ. ಸಂಭವನೀಯ ಡೀಫಾಲ್ಟ್ ವಾದಗಳು: {1}. ನೀವು PlaceholderAPI ಹೊಂದಿದ್ದರೆ, ಆ ಅಸ್ಥಿರಗಳು
+    ಬದಲಿಗೆ ಶೇಕಡಾವಾರು (%) ನಿಂದ ಸುತ್ತುವರೆದಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ಹಿಂತಿರುಗಲು 0 ಎಂದು
+    ಟೈಪ್ ಮಾಡಿ.'
+  wwcConfigConversationChatHoverFormatSuccess: ನಿಮ್ಮ ಹೋವರ್ ಸ್ವರೂಪವನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationLocalizeSyncSuccess: ಬಳಕೆದಾರ ಸ್ಥಳೀಕರಣವನ್ನು ಸಿಂಕ್ ಮಾಡುವುದನ್ನು
+    ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUILocalizeSyncButton: ಬಳಕೆದಾರ ಸ್ಥಳೀಕರಣ ಸಿಂಕ್ ಮಾಡಿ
+  wwcConfigSyncUserLocalInvalid: ಸಿಂಕ್ ಬಳಕೆದಾರ ಸ್ಥಳೀಕರಣ ಸೆಟ್ಟಿಂಗ್ ಅಮಾನ್ಯವಾಗಿದೆ ನಿಜಕ್ಕೆ
+    ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ಹೋವರ್ ಪಠ್ಯ ಸ್ವರೂಪವನ್ನು ಬದಲಾಯಿಸಿ
 

@@ -580,15 +580,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: เปิดใช้งานบัญชีดำ
   wwcConfigConversationBlacklistDeletionSuccess: ลบคำเรียบร้อยแล้ว
   wwcConfigGUIChatChannelSettings: การกำหนดค่าช่องแชท
-  wwcConfigGUIChatBlacklistSuccess: สลับบัญชีดำเรียบร้อยแล้ว
   wwcConfigGUIChatMessagesBlacklistNewButton: เพิ่มคำใหม่
   wwcConfigGUIChatChannelButton: แปลการตั้งค่าช่อง
   wwcConfigGUIBlacklistMessagesModify: แก้ไขคำศัพท์ ({0})
   wwcConfigChatChannelFormatInvalid: ตรวจพบรูปแบบช่องไม่ถูกต้องค่าเริ่มต้นเป็น {0}...
-  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
-    {0}อาร์กิวเมนต์ที่ได้รับการยอมรับเริ่มต้นของเราซึ่งคุณสามารถรวมได้: {1}หากคุณมี
-    PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์ (%) แทนพิมพ์
-    0 เพื่อกลับไป'
   wwcConfigGUIModifyBlacklistSettings: แก้ไขบัญชีดำ
   wwcConfigGUINextPageButton: หน้าถัดไป
   wwcConfigChatChannelHoverFormatInvalid: ตรวจพบรูปแบบการโฮเวอร์ที่ไม่ถูกต้องค่าเริ่มต้นเป็น
@@ -598,4 +593,16 @@ Messages:
   wwcOnJoinSetLocaleSuccess: WorldwideChat ตรวจพบและจะสะท้อนให้เห็นถึงการแปลของ Minecraft
     ของคุณ ({0})พิมพ์ {1} สำหรับรายละเอียดเพิ่มเติม
   wwcConfigBadYaml: 'ตรวจพบไฟล์ YAML ไม่ถูกต้อง: {0}.โปรดพยายามแก้ไขไฟล์นี้มิฉะนั้นอาจถูกลบ!'
+  wwcConfigConversationChatBlacklistSuccess: สลับบัญชีดำเรียบร้อยแล้ว
+  wwcConfigConversationChannelHoverFormatInput: 'รูปแบบปัจจุบันสำหรับการแปลข้อความแบบโฮเวอร์คือ
+    {0}อาร์กิวเมนต์เริ่มต้นที่เป็นไปได้: {1}หากคุณมี PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์
+    (%) แทนพิมพ์ 0 เพื่อกลับไป'
+  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
+    {0}อาร์กิวเมนต์เริ่มต้นที่เป็นไปได้: {1}.หากคุณมี PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์
+    (%) แทนพิมพ์ 0 เพื่อกลับไป'
+  wwcConfigConversationChatHoverFormatSuccess: รูปแบบการเลื่อนของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
+  wwcConfigConversationLocalizeSyncSuccess: สลับการซิงค์การแปลผู้ใช้เรียบร้อยแล้ว
+  wwcConfigGUILocalizeSyncButton: ซิงค์การแปลของผู้ใช้
+  wwcConfigSyncUserLocalInvalid: การตั้งค่าการแปลของผู้ใช้ซิงค์ไม่ถูกต้องค่าเริ่มต้นเป็นจริง...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: เปลี่ยนรูปแบบข้อความ Hover
 

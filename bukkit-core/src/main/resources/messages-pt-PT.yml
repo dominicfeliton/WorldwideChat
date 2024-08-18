@@ -703,16 +703,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activar lista negra
   wwcConfigConversationBlacklistDeletionSuccess: Eliminou com êxito o termo.
   wwcConfigGUIChatChannelSettings: Configuração do canal de chat
-  wwcConfigGUIChatBlacklistSuccess: Ativa a lista negra com êxito.
   wwcConfigGUIChatMessagesBlacklistNewButton: Adicionar Nova Palavra
   wwcConfigGUIChatChannelButton: Traduzir Definições do Canal
   wwcConfigGUIBlacklistMessagesModify: Modificar Termo ({0})
   wwcConfigChatChannelFormatInvalid: Detectado formato de canal inválido. A predefinição
     é {0}...
-  wwcConfigConversationChannelFormatInput: 'O formato actual para o canal de chat
-    separado é {0}. Os nossos argumentos reconhecidos por defeito que pode incluir:
-    {1}. Se tiver placeholderAPI, certifique-se de que essas variáveis estejam rodeadas
-    por percentagens (%). Digite 0 para voltar atrás.'
   wwcConfigGUIModifyBlacklistSettings: Modificar lista negra
   wwcConfigGUINextPageButton: Página Seguinte
   wwcConfigChatChannelHoverFormatInvalid: Detectado um formato de hover inválido.
@@ -723,4 +718,22 @@ Messages:
     no Minecraft ({0}). Digite {1} para mais detalhes.
   wwcConfigBadYaml: 'Ficheiro YAML inválido detectado: {0}. Tente corrigir este ficheiro
     ou poderá ser eliminado!'
+  wwcConfigConversationChatBlacklistSuccess: Ativa a lista negra com êxito.
+  wwcConfigConversationChannelHoverFormatInput: 'O formato actual para tradução do
+    texto hover é {0}. Possíveis argumentos padrão: {1}. Se tiver placeholderAPI,
+    certifique-se de que essas variáveis estejam rodeadas por percentagens (%). Digite
+    0 para voltar atrás.'
+  wwcConfigConversationChannelFormatInput: 'O formato actual para o canal de chat
+    separado é {0}. Possíveis argumentos padrão: {1}. Se tiver placeholderAPI, certifique-se
+    de que essas variáveis estejam rodeadas por percentagens (%). Digite 0 para voltar
+    atrás.'
+  wwcConfigConversationChatHoverFormatSuccess: O formato do seu hover foi alterado
+    com êxito.
+  wwcConfigConversationLocalizeSyncSuccess: Sincronização da localização do utilizador
+    com êxito.
+  wwcConfigGUILocalizeSyncButton: Sincronizar localização do utilizador
+  wwcConfigSyncUserLocalInvalid: Sincronizar a definição de localização do utilizador
+    inválida. A predefinição é true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Alterar o formato do texto com
+    o passar do Favor
 

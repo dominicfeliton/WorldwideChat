@@ -676,16 +676,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ਬਲੈਕਲਿਸਟ ਨੂੰ ਸਮਰੱਥ ਕਰੋ
   wwcConfigConversationBlacklistDeletionSuccess: ਸਫਲਤਾਪੂਰਵਕ ਸ਼ਬਦ ਮਿਟਾ ਦਿੱਤਾ
   wwcConfigGUIChatChannelSettings: ਚੈਟ ਚੈਨਲ ਸੰਰਚਨਾ
-  wwcConfigGUIChatBlacklistSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬਲੈਕਲਿਸਟ ਟੌਗਲ ਕੀਤਾ.
   wwcConfigGUIChatMessagesBlacklistNewButton: ਨਵਾਂ ਸ਼ਬਦ ਸ਼ਾਮਲ ਕਰੋ
   wwcConfigGUIChatChannelButton: ਚੈਨਲ ਸੈਟਿੰਗ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
   wwcConfigGUIBlacklistMessagesModify: ਮਿਆਦ ਸੋਧੋ ({0})
   wwcConfigChatChannelFormatInvalid: ਅਵੈਧ ਚੈਨਲ ਫਾਰਮੈਟ ਖੋਜਿਆ ਗਿਆ. {0} ਤੇ ਡਿਫੌਲਟ ਹੋ
     ਰਿਹਾ ਹੈ...
-  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
-    ਸਾਡੀਆਂ ਡਿਫੌਲਟ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਦਲੀਲਾਂ ਜੋ ਤੁਸੀਂ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ
-    ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%)
-    ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
   wwcConfigGUIModifyBlacklistSettings: ਬਲੈਕਲਿਸਟ ਸੋਧੋ
   wwcConfigGUINextPageButton: ਅਗਲਾ ਪੰਨਾ
   wwcConfigChatChannelHoverFormatInvalid: ਅਵੈਧ ਹੋਵਰ ਫਾਰਮੈਟ ਦਾ ਪਤਾ ਲਗਾਇਆ ਗਿਆ। {0} ਤੇ
@@ -696,4 +691,20 @@ Messages:
     ਹੈ ਅਤੇ ਪ੍ਰਤੀਬਿੰਬਤ ਕਰੇਗਾ ({0} ਹੋਰ ਵੇਰਵਿਆਂ ਲਈ {1} ਟਾਈਪ ਕਰੋ।
   wwcConfigBadYaml: 'ਅਵੈਧ YAML ਫਾਈਲ ਲੱਭੀ ਗਈ: {0}. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਫਾਈਲ ਨੂੰ ਠੀਕ ਕਰਨ ਦੀ
     ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਇਸ ਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਜਾ ਸਕਦਾ ਹੈ!'
+  wwcConfigConversationChatBlacklistSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬਲੈਕਲਿਸਟ ਟੌਗਲ ਕੀਤਾ.
+  wwcConfigConversationChannelHoverFormatInput: 'ਅਨੁਵਾਦ ਹੋਵਰ ਟੈਕਸਟ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ
+    {0} ਹੈ। ਸੰਭਾਵਿਤ ਡਿਫੌਲਟ ਦਲੀਲਾਂ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ
+    ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%) ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ।'
+  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
+    ਸੰਭਾਵਿਤ ਡਿਫੌਲਟ ਦਲੀਲਾਂ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ
+    ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%) ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ।'
+  wwcConfigConversationChatHoverFormatSuccess: ਤੁਹਾਡਾ ਹੋਵਰ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ
+    ਗਿਆ ਹੈ.
+  wwcConfigConversationLocalizeSyncSuccess: ਸਫਲਤਾਪੂਰਵਕ ਸਿੰਕਿੰਗ ਉਪਭੋਗਤਾ ਸਥਾਨਕਕਰਨ
+  wwcConfigGUILocalizeSyncButton: ਸਿੰਕ ਯੂਜ਼ਰ ਸਥਾਨਕਕਰਨ
+  wwcConfigSyncUserLocalInvalid: ਸਿੰਕ ਉਪਭੋਗਤਾ ਸਥਾਨੀਕਰਨ ਸੈਟਿੰਗ ਅਵੈਧ ਸੱਚ ਨੂੰ ਡਿਫੌਲਟ
+    ਕਰਨਾ...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ਹੋਵਰ ਟੈਕਸਟ ਫਾਰਮੈਟ ਬਦਲੋ
 

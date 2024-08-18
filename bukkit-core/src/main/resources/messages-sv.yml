@@ -680,16 +680,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktivera svartlista
   wwcConfigConversationBlacklistDeletionSuccess: Har lyckats ta bort termen.
   wwcConfigGUIChatChannelSettings: Konfiguration av chattkanal
-  wwcConfigGUIChatBlacklistSuccess: Lyckades växla svartlistan.
   wwcConfigGUIChatMessagesBlacklistNewButton: Lägg till nytt ord
   wwcConfigGUIChatChannelButton: Översätt kanalinställningar
   wwcConfigGUIBlacklistMessagesModify: Ändra term ({0})
   wwcConfigChatChannelFormatInvalid: Ogiltigt kanalformat har upptäckts. Standardinställt
     till {0}...
-  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
-    chattkanalen är {0}. Våra standardigenkända argument som du kan inkludera: {1}.
-    Om du har placeHolderAPI, se till att dessa variabler omges av procentsatser (%)
-    istället. Skriv 0 för att gå tillbaka.'
   wwcConfigGUIModifyBlacklistSettings: Ändra svartlista
   wwcConfigGUINextPageButton: Nästa sida
   wwcConfigChatChannelHoverFormatInvalid: Ogiltigt svävarformat har upptäckts. Standardinställt
@@ -700,4 +695,18 @@ Messages:
     din Minecraft-lokalisering ({0}). Skriv {1} för mer information.
   wwcConfigBadYaml: 'Ogiltig YAML-fil upptäcktes: {0}. Försök att fixa den här filen,
     annars kan den raderas!'
+  wwcConfigConversationChatBlacklistSuccess: Lyckades växla svartlistan.
+  wwcConfigConversationChannelHoverFormatInput: 'Det aktuella formatet för översättningstext
+    är {0}. Möjliga standardargument: {1}. Om du har placeHolderAPI, se till att dessa
+    variabler omges av procentsatser (%) istället. Skriv 0 för att gå tillbaka.'
+  wwcConfigConversationChannelFormatInput: 'Det aktuella formatet för den separata
+    chattkanalen är {0}. Möjliga standardargument: {1}. Om du har placeHolderAPI,
+    se till att dessa variabler omges av procentsatser (%) istället. Skriv 0 för att
+    gå tillbaka.'
+  wwcConfigConversationChatHoverFormatSuccess: Ditt hover-format har ändrats framgångsrikt.
+  wwcConfigConversationLocalizeSyncSuccess: Lyckades växla synkronisering av användarlokalisering.
+  wwcConfigGUILocalizeSyncButton: Synkronisera användarlokalisering
+  wwcConfigSyncUserLocalInvalid: Synkronisera användarlokaliseringsinställning ogiltig.
+    Standardinställt till sant...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ändra Hover Text Format
 

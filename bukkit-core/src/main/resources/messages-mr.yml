@@ -651,14 +651,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ब्लॅकलिस्ट सक्ष
   wwcConfigConversationBlacklistDeletionSuccess: शब्द यशस्वीरित्या हटवि
   wwcConfigGUIChatChannelSettings: चॅट चॅनेल कॉ
-  wwcConfigGUIChatBlacklistSuccess: यशस्वीरित्या ब्लॅकलिस्ट टॉग
   wwcConfigGUIChatMessagesBlacklistNewButton: नवीन वर्ड जोडा
   wwcConfigGUIChatChannelButton: चॅनेल सेटिंग्ज
   wwcConfigGUIBlacklistMessagesModify: टर्म सुधारित करा ({0})
   wwcConfigChatChannelFormatInvalid: अवैध चॅनेल फॉरमॅ {0} वर डीफॉल्ट करणे...
-  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
-    आहे. आपण समाविष्ट करू शकणाऱ्या आमचे डीफॉल्ट मान्यता {1} आपल्याकडे प्लेसहोल्डरएपीआय
-    असल्यास, त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
   wwcConfigGUIModifyBlacklistSettings: ब्लॅकलिस्ट बद
   wwcConfigGUINextPageButton: पुढील पृष्ठ
   wwcConfigChatChannelHoverFormatInvalid: अवैध होव्हर स्वरूप आढळले {0} वर डीफॉल्ट
@@ -669,4 +665,17 @@ Messages:
     आहे आणि अधिक माहितीसाठी {1} टाइप करा.
   wwcConfigBadYaml: 'अवैध YAML फाइल शोधली: {0}. कृपया ही फाइल दुरुस्त करण्याचा प्रयत्न
     करा किंवा ती हटवि'
+  wwcConfigConversationChatBlacklistSuccess: यशस्वीरित्या ब्लॅकलिस्ट टॉग
+  wwcConfigConversationChannelHoverFormatInput: भाषांतर होव्हर मजकूरासाठी सध्याचे
+    स्वरूप {0} आहे. संभाव्य डीफॉल्ट आर्दर् {1} आपल्याकडे प्लेसहोल्डरएपीआय असल्यास,
+    त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationChannelFormatInput: स्वतंत्र चॅट चॅनेलसाठी वर्तमान स्वरूप {0}
+    आहे. संभाव्य डीफॉल्ट आर्दर् {1} आपल्याकडे प्लेसहोल्डरएपीआय असल्यास, त्याऐवजी ते
+    व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationChatHoverFormatSuccess: तुमचे होव्हर स्वरूप यशस्वीरित्या बदलले
+  wwcConfigConversationLocalizeSyncSuccess: यशस्वीरित्या समक्रमित करणारे वापरकर्
+  wwcConfigGUILocalizeSyncButton: वापरकर्ता स्थानिकरण
+  wwcConfigSyncUserLocalInvalid: सिंक वापरकर्ता स्थानिकरण सेटिंग खरे म्हणून डीफॉल्ट
+    करणे...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: हॉव्हर मजकूर स्वरूप
 

@@ -685,16 +685,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Įgalinti juodąjį sąrašą
   wwcConfigConversationBlacklistDeletionSuccess: Sėkmingai ištrintas terminas.
   wwcConfigGUIChatChannelSettings: Pokalbių kanalo konfigūracija
-  wwcConfigGUIChatBlacklistSuccess: Sėkmingai perjungtas juodasis sąrašas.
   wwcConfigGUIChatMessagesBlacklistNewButton: Pridėti naują žodį
   wwcConfigGUIChatChannelButton: Versti kanalo nustatymus
   wwcConfigGUIBlacklistMessagesModify: Keisti terminą ({0})
   wwcConfigChatChannelFormatInvalid: Aptiktas netinkamas kanalo formatas. Numatytasis
     nustatymas į {0}...
-  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
-    yra {0}. Mūsų numatytieji pripažinti argumentai, kuriuos galite įtraukti: {1}.
-    Jei turite PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais
-    (%) vietoj. Įveskite 0, kad grįžtumėte atgal.'
   wwcConfigGUIModifyBlacklistSettings: Pakeisti juodąjį sąrašą
   wwcConfigGUINextPageButton: Kitas puslapis
   wwcConfigChatChannelHoverFormatInvalid: Aptiktas netinkamas užveskite pelės žymeklį
@@ -705,4 +700,21 @@ Messages:
     lokalizaciją ({0}). Norėdami gauti daugiau informacijos, įveskite {1}.
   wwcConfigBadYaml: 'Aptiktas netinkamas YAML failas: {0}. Pabandykite ištaisyti šį
     failą, kitaip jis gali būti ištrintas!'
+  wwcConfigConversationChatBlacklistSuccess: Sėkmingai perjungtas juodasis sąrašas.
+  wwcConfigConversationChannelHoverFormatInput: 'Dabartinis vertimo užvesties teksto
+    formatas yra {0}. Galimi numatytieji argumentai: {1}. Jei turite PlaceholderAPI,
+    įsitikinkite, kad tie kintamieji yra apsupti procentais (%), o ne. Įveskite 0,
+    kad grįžtumėte atgal.'
+  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
+    yra {0}. Galimi numatytieji argumentai: {1}. Jei turite PlaceholderAPI, įsitikinkite,
+    kad tie kintamieji yra apsupti procentais (%), o ne. Įveskite 0, kad grįžtumėte
+    atgal.'
+  wwcConfigConversationChatHoverFormatSuccess: Jūsų užveskite pelės žymeklį formatas
+    sėkmingai pakeistas.
+  wwcConfigConversationLocalizeSyncSuccess: Sėkmingai perjungtas vartotojo lokalizacijos
+    sinchronizavimas.
+  wwcConfigGUILocalizeSyncButton: Sinchronizuoti vartotojo lokalizaciją
+  wwcConfigSyncUserLocalInvalid: Sinchronizavimo vartotojo lokalizacijos nustatymas
+    neteisingas. Numatyta tiesa...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Pakeiskite “Hover” teksto formatą
 

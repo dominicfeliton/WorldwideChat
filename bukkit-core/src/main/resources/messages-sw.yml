@@ -679,16 +679,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Wezesha orodha nyeusi
   wwcConfigConversationBlacklistDeletionSuccess: Kwa mafanikio kufuta neno hilo.
   wwcConfigGUIChatChannelSettings: Usanidi wa Kituo cha Gumzo
-  wwcConfigGUIChatBlacklistSuccess: Imefanikiwa kubadilisha orodha nyeusi.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ongeza Neno Jipya
   wwcConfigGUIChatChannelButton: Tafsiri Mipangilio ya Kituo
   wwcConfigGUIBlacklistMessagesModify: Badilisha Muda ({0})
   wwcConfigChatChannelFormatInvalid: Muundo mbaya wa kituo uligunduliwa. Kubadilisha
     kuwa {0}...
-  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
-    ni {0}. Hoja zetu za default zinazotambuliwa ambazo unaweza kujumuisha: {1}. Ikiwa
-    una PlaceholderAPI, hakikisha vigezo hizo zimezungukwa na asilimia (%) badala
-    yake. Andika 0 ili kurudi nyuma.'
   wwcConfigGUIModifyBlacklistSettings: Badilisha orodha nyeusi
   wwcConfigGUINextPageButton: Ukurasa unaofuata
   wwcConfigChatChannelHoverFormatInvalid: Muundo mbaya wa hover iligunduliwa. Kubadilisha
@@ -699,4 +694,21 @@ Messages:
     wa Minecraft ({0}). Andika {1} kwa maelezo zaidi.
   wwcConfigBadYaml: 'Faili isiyo sahihi ya YAML iligunduliwa: {0}. Tafadhali jaribu
     kurekebisha faili hii au inaweza kufutwa!'
+  wwcConfigConversationChatBlacklistSuccess: Imefanikiwa kubadilisha orodha nyeusi.
+  wwcConfigConversationChannelHoverFormatInput: 'Muundo wa sasa wa maandishi ya hover
+    ya tafsiri ni {0}. Hoja zinazowezekana za msingi: {1}. Ikiwa una PlaceholderAPI,
+    hakikisha vigezo hizo zimezungukwa na asilimia (%) badala yake. Andika 0 ili kurudi
+    nyuma.'
+  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
+    ni {0}. Hoja zinazowezekana za msingi: {1}. Ikiwa una PlaceholderAPI, hakikisha
+    vigezo hizo zimezungukwa na asilimia (%) badala yake. Andika 0 ili kurudi nyuma.'
+  wwcConfigConversationChatHoverFormatSuccess: Muundo wako wa hover umebadilishwa
+    kwa mafanikio.
+  wwcConfigConversationLocalizeSyncSuccess: Imefanikiwa kubadilisha usawazishaji wa
+    ujanibishaji
+  wwcConfigGUILocalizeSyncButton: Sawazisha Ujanibishaji
+  wwcConfigSyncUserLocalInvalid: Sawazisha mpangilio wa ujanibishaji wa mtum Kuendelea
+    kuwa kweli...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Badilisha muundo wa maandishi
+    ya Hover
 

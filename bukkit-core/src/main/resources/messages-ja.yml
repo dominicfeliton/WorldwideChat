@@ -519,13 +519,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ブラックリストを有効にする
   wwcConfigConversationBlacklistDeletionSuccess: 用語は正常に削除されました。
   wwcConfigGUIChatChannelSettings: チャットチャンネル設定
-  wwcConfigGUIChatBlacklistSuccess: ブラックリストが正常に切り替わりました。
   wwcConfigGUIChatMessagesBlacklistNewButton: 新しい単語を追加
   wwcConfigGUIChatChannelButton: 翻訳チャンネル設定
   wwcConfigGUIBlacklistMessagesModify: 用語の修正 ({0})
   wwcConfigChatChannelFormatInvalid: 無効なチャンネル形式が検出されました。デフォルトは {0}...
-  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。デフォルトで認識されている引数は
-    {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
   wwcConfigGUIModifyBlacklistSettings: ブラックリストを変更
   wwcConfigGUINextPageButton: 次のページ
   wwcConfigChatChannelHoverFormatInvalid: 無効なホバー形式が検出されました。デフォルトは {0}...
@@ -534,4 +531,14 @@ Messages:
   wwcOnJoinSetLocaleSuccess: WorldwideChat はお客様の Minecraft のローカライズ ({0}) を検出し、反映する予定です。{1}
     と入力すると詳細が表示されます。
   wwcConfigBadYaml: 無効な YAML ファイルが検出されました:{0}このファイルを修正してください。修正しないと削除される可能性があります。
+  wwcConfigConversationChatBlacklistSuccess: ブラックリストが正常に切り替わりました。
+  wwcConfigConversationChannelHoverFormatInput: 翻訳ホバーテキストの現在の形式は {0} です。指定できるデフォルト引数は
+    {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
+  wwcConfigConversationChannelFormatInput: 個別のチャットチャンネルの現在の形式は {0} です。指定できるデフォルト引数は
+    {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
+  wwcConfigConversationChatHoverFormatSuccess: ホバー形式が正常に変更されました。
+  wwcConfigConversationLocalizeSyncSuccess: ユーザーローカリゼーションの同期が正常に切り替わりました。
+  wwcConfigGUILocalizeSyncButton: ユーザーローカリゼーションを同期
+  wwcConfigSyncUserLocalInvalid: 同期ユーザーのローカリゼーション設定が無効です。デフォルトは true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ホバーテキスト形式の変更
 

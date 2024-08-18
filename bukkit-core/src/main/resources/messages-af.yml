@@ -677,16 +677,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktiveer swartlys
   wwcConfigConversationBlacklistDeletionSuccess: Die term suksesvol verwyder.
   wwcConfigGUIChatChannelSettings: Chat Channel konfigurasie
-  wwcConfigGUIChatBlacklistSuccess: Die swartlys suksesvol verander.
   wwcConfigGUIChatMessagesBlacklistNewButton: Voeg nuwe woord by
   wwcConfigGUIChatChannelButton: Vertaal Channel Settings
   wwcConfigGUIBlacklistMessagesModify: Verander Term ({0})
   wwcConfigChatChannelFormatInvalid: Ongeldige kanaalformaat opgespoor. Standaard
     op {0}...
-  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
-    is {0}. Ons standaarderkende argumente wat u kan insluit: {1}. As u PlaceholderAPI
-    het, maak seker dat die veranderlikes eerder omring word deur persentasies (%).
-    Tik 0 om terug te gaan.'
   wwcConfigGUIModifyBlacklistSettings: Verander swartlys
   wwcConfigGUINextPageButton: Volgende bladsy
   wwcConfigChatChannelHoverFormatInvalid: Ongeldige hover formaat opgespoor. Standaard
@@ -697,4 +692,20 @@ Messages:
     weerspieël ({0}). Tik {1} vir meer besonderhede.
   wwcConfigBadYaml: 'Ongeldige YAML-lêer opgespoor: {0}. Probeer asseblief om hierdie
     lêer reg te stel of dit kan verwyder word!'
+  wwcConfigConversationChatBlacklistSuccess: Die swartlys suksesvol verander.
+  wwcConfigConversationChannelHoverFormatInput: 'Die huidige formaat vir vertaalhover
+    teks is {0}. Moontlike standaardargumente: {1}. As u PlaceholderAPI het, maak
+    seker dat die veranderlikes eerder omring word deur persentasies (%). Tik 0 om
+    terug te gaan.'
+  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
+    is {0}. Moontlike standaardargumente: {1}. As u PlaceholderAPI het, maak seker
+    dat die veranderlikes eerder omring word deur persentasies (%). Tik 0 om terug
+    te gaan.'
+  wwcConfigConversationChatHoverFormatSuccess: Jou hoverformaat is suksesvol verander.
+  wwcConfigConversationLocalizeSyncSuccess: Suksesvol geskakel die sinkronisering
+    van gebruikerslokalisering.
+  wwcConfigGUILocalizeSyncButton: Sinkroniseer gebruikerslokal
+  wwcConfigSyncUserLocalInvalid: Sinkroniseer gebruikerslokalisering instelling ongeldig
+    Standaard tot waar...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Verander hover teksformaat
 

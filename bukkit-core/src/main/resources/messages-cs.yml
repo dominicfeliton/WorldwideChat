@@ -670,16 +670,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Povolit černou listinu
   wwcConfigConversationBlacklistDeletionSuccess: Termín byl úspěšně odstraněn.
   wwcConfigGUIChatChannelSettings: Konfigurace chatovacího kanálu
-  wwcConfigGUIChatBlacklistSuccess: Úspěšně přepnul černou listinu.
   wwcConfigGUIChatMessagesBlacklistNewButton: Přidat nové slovo
   wwcConfigGUIChatChannelButton: Přeložit nastavení kanálu
   wwcConfigGUIBlacklistMessagesModify: Upravit termín ({0})
   wwcConfigChatChannelFormatInvalid: Byl zjištěn neplatný formát kanálu. Výchozí hodnota
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Aktuální formát samostatného kanálu chatu
-    je {0}. Naše výchozí rozpoznané argumenty, které můžete zahrnout: {1}. Pokud máte
-    PlaceHolderAPI, ujistěte se, že tyto proměnné jsou místo toho obklopeny procenty
-    (%). Zadejte 0 pro návrat.'
   wwcConfigGUIModifyBlacklistSettings: Upravit černou listinu
   wwcConfigGUINextPageButton: Další strana
   wwcConfigChatChannelHoverFormatInvalid: Byl zjištěn neplatný formát myši. Výchozí
@@ -690,4 +685,19 @@ Messages:
     Minecraftu ({0}). Zadejte {1} pro více informací.
   wwcConfigBadYaml: 'Zjištěn neplatný soubor YAML: {0}. Pokuste se opravit tento soubor
     nebo může být smazán!'
+  wwcConfigConversationChatBlacklistSuccess: Úspěšně přepnul černou listinu.
+  wwcConfigConversationChannelHoverFormatInput: 'Aktuální formát překladového textu
+    s kurzorem je {0}. Možné výchozí argumenty: {1}. Pokud máte PlaceHolderAPI, ujistěte
+    se, že tyto proměnné jsou místo toho obklopeny procenty (%). Zadejte 0 pro návrat.'
+  wwcConfigConversationChannelFormatInput: 'Aktuální formát samostatného kanálu chatu
+    je {0}. Možné výchozí argumenty: {1}. Pokud máte PlaceHolderAPI, ujistěte se,
+    že tyto proměnné jsou místo toho obklopeny procenty (%). Zadejte 0 pro návrat.'
+  wwcConfigConversationChatHoverFormatSuccess: Formát myši byl úspěšně změněn.
+  wwcConfigConversationLocalizeSyncSuccess: Úspěšně přepnula synchronizaci lokalizace
+    uživatele.
+  wwcConfigGUILocalizeSyncButton: Synchronizovat lokalizaci uživatelů
+  wwcConfigSyncUserLocalInvalid: Synchronizace nastavení lokalizace uživatele je neplatné.
+    Výchozí hodnota true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Změnit formát textu s ukazatelem
+    myši
 

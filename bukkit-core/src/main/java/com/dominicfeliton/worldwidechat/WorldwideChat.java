@@ -16,7 +16,6 @@ import com.github.benmanes.caffeine.cache.Caffeine;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.TextReplacementConfig;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
@@ -34,13 +33,10 @@ import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import net.milkbowl.vault.chat.Chat;
-import me.clip.placeholderapi.PlaceholderAPI;
 
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
@@ -48,7 +44,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08182024-2"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08182024-4"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -128,7 +124,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	private boolean forceSeparateChatChannel = true;
 
-	private boolean setLocalOnFirstJoin = true;
+	private boolean syncUserLocal = true;
 
 	private int errorLimit = 5;
 
@@ -933,8 +929,8 @@ public class WorldwideChat extends JavaPlugin {
 		errorsToIgnore = in;
 	}
 
-	public void setLocalOnFirstJoin(boolean i) {
-		setLocalOnFirstJoin = i;
+	public void setSyncUserLocal(boolean i) {
+		syncUserLocal = i;
 	}
 
 	/* Getters */
@@ -1148,7 +1144,7 @@ public class WorldwideChat extends JavaPlugin {
 		return blacklistTerms;
 	}
 
-	public boolean getSetLocalOnFirstJoin() {
-		return setLocalOnFirstJoin;
+	public boolean getSyncUserLocal() {
+		return syncUserLocal;
 	}
 }

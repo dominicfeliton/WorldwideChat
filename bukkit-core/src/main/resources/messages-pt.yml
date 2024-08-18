@@ -696,16 +696,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Ativar lista negra
   wwcConfigConversationBlacklistDeletionSuccess: O termo foi excluído com sucesso.
   wwcConfigGUIChatChannelSettings: Configuração do canal de bate-papo
-  wwcConfigGUIChatBlacklistSuccess: Alternou com sucesso a lista negra.
   wwcConfigGUIChatMessagesBlacklistNewButton: Adicionar nova palavra
   wwcConfigGUIChatChannelButton: Traduzir configurações do canal
   wwcConfigGUIBlacklistMessagesModify: Modificar termo ({0})
   wwcConfigChatChannelFormatInvalid: Formato de canal inválido detectado. O padrão
     é {0}...
-  wwcConfigConversationChannelFormatInput: 'O formato atual para o canal de bate-papo
-    separado é {0}. Nossos argumentos padrão reconhecidos que você pode incluir: {1}.
-    Se você tiver PlaceholderAPI, certifique-se de que essas variáveis estejam cercadas
-    por porcentagens (%). Digite 0 para voltar.'
   wwcConfigGUIModifyBlacklistSettings: Modificar lista negra
   wwcConfigGUINextPageButton: Próxima página
   wwcConfigChatChannelHoverFormatInvalid: Formato de foco inválido detectado. O padrão
@@ -716,4 +711,21 @@ Messages:
     do Minecraft ({0}). Digite {1} para obter mais detalhes.
   wwcConfigBadYaml: 'Arquivo YAML inválido detectado: {0}. Tente corrigir esse arquivo
     ou ele poderá ser excluído!'
+  wwcConfigConversationChatBlacklistSuccess: Alternou com sucesso a lista negra.
+  wwcConfigConversationChannelHoverFormatInput: 'O formato atual para tradução de
+    texto flutuante é {0}. Possíveis argumentos padrão: {1}. Se você tiver PlaceholderAPI,
+    certifique-se de que essas variáveis estejam cercadas por porcentagens (%). Digite
+    0 para voltar.'
+  wwcConfigConversationChannelFormatInput: 'O formato atual para o canal de bate-papo
+    separado é {0}. Possíveis argumentos padrão: {1}. Se você tiver PlaceholderAPI,
+    certifique-se de que essas variáveis estejam cercadas por porcentagens (%). Digite
+    0 para voltar.'
+  wwcConfigConversationChatHoverFormatSuccess: Seu formato de foco foi alterado com
+    sucesso.
+  wwcConfigConversationLocalizeSyncSuccess: A sincronização da localização do usuário
+    foi ativada com sucesso.
+  wwcConfigGUILocalizeSyncButton: Sincronizar localização de usuários
+  wwcConfigSyncUserLocalInvalid: Configuração de localização do usuário de sincronização
+    inválida. O padrão é true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Alterar formato de texto flutuante
 

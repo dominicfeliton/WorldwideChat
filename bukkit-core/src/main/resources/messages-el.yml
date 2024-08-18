@@ -740,16 +740,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Ενεργοποίηση μαύρης λίστας
   wwcConfigConversationBlacklistDeletionSuccess: Διαγράφηκε επιτυχώς ο όρος.
   wwcConfigGUIChatChannelSettings: Διαμόρφωση καναλιού συνομιλίας
-  wwcConfigGUIChatBlacklistSuccess: Επιτυχής εναλλαγή της μαύρης λίστας.
   wwcConfigGUIChatMessagesBlacklistNewButton: Προσθήκη νέας λέξης
   wwcConfigGUIChatChannelButton: Μετάφραση ρυθμίσεων καναλιού
   wwcConfigGUIBlacklistMessagesModify: Τροποποίηση όρου ({0})
   wwcConfigChatChannelFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή καναλιού. Προεπιλογή
     σε {0}...
-  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
-    συνομιλίας είναι {0}. Τα προεπιλεγμένα αναγνωρισμένα ορίσματά μας που μπορείτε
-    να συμπεριλάβετε: {1}. Εάν έχετε PlaceHolderAPI, βεβαιωθείτε ότι αυτές οι μεταβλητές
-    περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
   wwcConfigGUIModifyBlacklistSettings: Τροποποιήστε τη μαύρη λίστα
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
   wwcConfigChatChannelHoverFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή του ποντικιού.
@@ -760,4 +755,21 @@ Messages:
     τον εντοπισμό του Minecraft σας ({0}). Πληκτρολογήστε {1} για περισσότερες λεπτομέρειες.
   wwcConfigBadYaml: 'Εντοπίστηκε μη έγκυρο αρχείο YAML: {0}. Προσπαθήστε να διορθώσετε
     αυτό το αρχείο ή μπορεί να διαγραφεί!'
+  wwcConfigConversationChatBlacklistSuccess: Επιτυχής εναλλαγή της μαύρης λίστας.
+  wwcConfigConversationChannelHoverFormatInput: 'Η τρέχουσα μορφή για μετάφραση κειμένου
+    με δείκτη ποντικιού είναι {0}. Πιθανά προεπιλεγμένα ορίσματα: {1}. Εάν έχετε PlaceHolderAPI,
+    βεβαιωθείτε ότι αυτές οι μεταβλητές περιβάλλονται από ποσοστά (%). Πληκτρολογήστε
+    0 για να επιστρέψετε.'
+  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
+    συνομιλίας είναι {0}. Πιθανά προεπιλεγμένα ορίσματα: {1}. Εάν έχετε PlaceHolderAPI,
+    βεβαιωθείτε ότι αυτές οι μεταβλητές περιβάλλονται από ποσοστά (%). Πληκτρολογήστε
+    0 για να επιστρέψετε.'
+  wwcConfigConversationChatHoverFormatSuccess: Η μορφή του ποντικιού σας άλλαξε με
+    επιτυχία.
+  wwcConfigConversationLocalizeSyncSuccess: Επιτυχής εναλλαγή συγχρονισμού εντοπισμού
+    χρήστη.
+  wwcConfigGUILocalizeSyncButton: Συγχρονισμός εντοπισμού χρήστη
+  wwcConfigSyncUserLocalInvalid: Μη έγκυρη ρύθμιση εντοπισμού συγχρονισμού χρήστη.
+    Η προεπιλογή είναι αληθής...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Αλλαγή μορφής κειμένου του ποντικιού
 

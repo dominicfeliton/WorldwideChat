@@ -713,16 +713,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activați lista neagră
   wwcConfigConversationBlacklistDeletionSuccess: A șters cu succes termenul.
   wwcConfigGUIChatChannelSettings: Configurarea canalului de chat
-  wwcConfigGUIChatBlacklistSuccess: A comutat cu succes lista neagră.
   wwcConfigGUIChatMessagesBlacklistNewButton: Adaugă un cuvânt nou
   wwcConfigGUIChatChannelButton: Traduceți setările canalului
   wwcConfigGUIBlacklistMessagesModify: Modificați termenul ({0})
   wwcConfigChatChannelFormatInvalid: Formatul canalului nevalid detectat. Implicit
     la {0}...
-  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
-    de chat este {0}. Argumentele noastre implicite recunoscute pe care le puteți
-    include: {1}. Dacă aveți PlaceHolderAPI, asigurați-vă că acele variabile sunt
-    înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
   wwcConfigGUIModifyBlacklistSettings: Modificați lista neagră
   wwcConfigGUINextPageButton: Pagina următoare
   wwcConfigChatChannelHoverFormatInvalid: Format nevalid de hover detectat. Implicit
@@ -733,4 +728,21 @@ Messages:
     ({0}). Tastați {1} pentru mai multe detalii.
   wwcConfigBadYaml: 'Fișier YAML nevalid detectat: {0}. Vă rugăm să încercați să remediați
     acest fișier sau poate fi șters!'
+  wwcConfigConversationChatBlacklistSuccess: A comutat cu succes lista neagră.
+  wwcConfigConversationChannelHoverFormatInput: 'Formatul curent pentru traducerea
+    textului cu mouse-ul este {0}. Posibile argumente implicite: {1}. Dacă aveți PlaceHolderAPI,
+    asigurați-vă că acele variabile sunt înconjurate de procente (%) în schimb. Tastați
+    0 pentru a reveni.'
+  wwcConfigConversationChannelFormatInput: 'Formatul curent pentru canalul separat
+    de chat este {0}. Posibile argumente implicite: {1}. Dacă aveți PlaceHolderAPI,
+    asigurați-vă că acele variabile sunt înconjurate de procente (%) în schimb. Tastați
+    0 pentru a reveni.'
+  wwcConfigConversationChatHoverFormatSuccess: Formatul hover a fost schimbat cu succes.
+  wwcConfigConversationLocalizeSyncSuccess: A comutat cu succes sincronizarea localizării
+    utilizatorului.
+  wwcConfigGUILocalizeSyncButton: Sincronizați localizarea utilizatorului
+  wwcConfigSyncUserLocalInvalid: Sincronizarea setării localizării utilizatorului
+    este invalidă. Implicit la adevărat...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Schimbați formatul textului cu
+    mouse-ul
 

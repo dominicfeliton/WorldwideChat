@@ -670,15 +670,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: فعال کردن لیست سیاه
   wwcConfigConversationBlacklistDeletionSuccess: عبارت را با موفقیت حذف کرد
   wwcConfigGUIChatChannelSettings: پیکربندی کانال چت
-  wwcConfigGUIChatBlacklistSuccess: با موفقیت لیست سیاه را تغییر داد.
   wwcConfigGUIChatMessagesBlacklistNewButton: اضافه کردن کلمه جدید
   wwcConfigGUIChatChannelButton: ترجمه تنظیمات کانال
   wwcConfigGUIBlacklistMessagesModify: اصلاح اصطلاح ({0})
   wwcConfigChatChannelFormatInvalid: فرمت کانال نامعتبر شناسایی شد. پیش فرض به {0}...
-  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
-    استدلال های شناخته شده پیش فرض ما که می توانید شامل: {1}. اگر PlaceholderAPI دارید،
-    مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ
-    کنید.'
   wwcConfigGUIModifyBlacklistSettings: تغییر لیست سیاه
   wwcConfigGUINextPageButton: صفحه بعدی
   wwcConfigChatChannelHoverFormatInvalid: فرمت هور نامعتبر شناسایی شده است. پیش فرض
@@ -689,4 +684,19 @@ Messages:
     و منعکس خواهد کرد ({0}). برای جزئیات بیشتر {1} را تایپ کنید.
   wwcConfigBadYaml: 'فایل YAML نامعتبر شناسایی شده است: {0}. لطفا سعی کنید این فایل
     را اصلاح کنید وگرنه ممکن است حذف شود!'
+  wwcConfigConversationChatBlacklistSuccess: با موفقیت لیست سیاه را تغییر داد.
+  wwcConfigConversationChannelHoverFormatInput: 'فرمت فعلی متن هور ترجمه {0} است.
+    آرگولهای پیش فرض احتمالی: {1}. اگر PlaceholderAPI دارید، مطمئن شوید که این متغیرها
+    با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ کنید.'
+  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
+    آرگولهای پیش فرض احتمالی: {1}. اگر PlaceholderAPI دارید، مطمئن شوید که این متغیرها
+    با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ کنید.'
+  wwcConfigConversationChatHoverFormatSuccess: فرمت هور شما با موفقیت تغییر یافته
+    است.
+  wwcConfigConversationLocalizeSyncSuccess: با موفقیت همگام سازی محلی سازی کاربر را
+    تغییر داد.
+  wwcConfigGUILocalizeSyncButton: همگام سازی محلی سازی کاربر
+  wwcConfigSyncUserLocalInvalid: تنظیم محلی سازی کاربر همگام سازی نامعتبر است پیش
+    فرض به واقعی...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: تغییر فرمت متن هور
 

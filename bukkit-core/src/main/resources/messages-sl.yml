@@ -679,16 +679,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Omogoči črni seznam
   wwcConfigConversationBlacklistDeletionSuccess: Izraz je uspešno izbrisal.
   wwcConfigGUIChatChannelSettings: Konfiguracija kanala za klepet
-  wwcConfigGUIChatBlacklistSuccess: Uspešno preklopil črni seznam.
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novo besedo
   wwcConfigGUIChatChannelButton: Prevedi nastavitve kanala
   wwcConfigGUIBlacklistMessagesModify: Spremeni izraz ({0})
   wwcConfigChatChannelFormatInvalid: Zaznana je neveljavna oblika kanala. Privzeta
     vrednost {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
-    je {0}. Naši privzeti priznani argumenti, ki jih lahko vključite: {1}. Če imate
-    PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki (%).
-    Vnesite 0, da se vrnete nazaj.'
   wwcConfigGUIModifyBlacklistSettings: Spremeni črni seznam
   wwcConfigGUINextPageButton: Naslednja stran
   wwcConfigChatChannelHoverFormatInvalid: Zaznana je neveljavna oblika lebdenja kazalca.
@@ -699,4 +694,19 @@ Messages:
     Minecraft ({0}). Za več podrobnosti vnesite {1}.
   wwcConfigBadYaml: 'Zaznana je neveljavna datoteka YAML: {0}. Poskusite popraviti
     to datoteko, sicer bo morda izbrisana!'
+  wwcConfigConversationChatBlacklistSuccess: Uspešno preklopil črni seznam.
+  wwcConfigConversationChannelHoverFormatInput: 'Trenutna oblika prevajalskega kazalca
+    je {0}. Možni privzeti argumenti: {1}. Če imate PlaceholderAPI, se prepričajte,
+    da so te spremenljivke obdane z odstotki (%). Vnesite 0, da se vrnete nazaj.'
+  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
+    je {0}. Možni privzeti argumenti: {1}. Če imate PlaceholderAPI, se prepričajte,
+    da so te spremenljivke obdane z odstotki (%). Vnesite 0, da se vrnete nazaj.'
+  wwcConfigConversationChatHoverFormatSuccess: Vaš format lebdenja kazalca je bil
+    uspešno spremenjen.
+  wwcConfigConversationLocalizeSyncSuccess: Uspešno preklopljena sinhronizacija lokalizacije
+    uporabnikov.
+  wwcConfigGUILocalizeSyncButton: Sinhronizirajte lokalizacijo uporabnika
+  wwcConfigSyncUserLocalInvalid: Nastavitev lokalizacije uporabnika sinhronizacije
+    ni veljavna. Privzeto na resnično...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Spremenite obliko besedila Hover
 

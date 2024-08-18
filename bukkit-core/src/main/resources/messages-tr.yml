@@ -671,16 +671,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Kara Listeyi Etkinleştir
   wwcConfigConversationBlacklistDeletionSuccess: Terimi başarıyla sildi.
   wwcConfigGUIChatChannelSettings: Sohbet Kanalı Yapılandırması
-  wwcConfigGUIChatBlacklistSuccess: Kara listeyi başarıyla değiştirdi.
   wwcConfigGUIChatMessagesBlacklistNewButton: Yeni Kelime Ekle
   wwcConfigGUIChatChannelButton: Kanal Ayarlarını Çevir
   wwcConfigGUIBlacklistMessagesModify: Terimi Değiştir ({0})
   wwcConfigChatChannelFormatInvalid: Geçersiz kanal biçimi algılandı. Varsayılan olarak
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
-    {0} ''dir. Ekleyebileceğiniz varsayılan tanınmış argümanlarımız: {1}. PlaceHolderAPI''niz
-    varsa, bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin olun. Geri dönmek
-    için 0 yazın.'
   wwcConfigGUIModifyBlacklistSettings: Kara Listeyi Değiştir
   wwcConfigGUINextPageButton: Sonraki Sayfa
   wwcConfigChatChannelHoverFormatInvalid: Geçersiz fareyle gelme biçimi algılandı.
@@ -691,4 +686,19 @@ Messages:
     ve yansıtacak ({0}). Daha fazla ayrıntı için {1} yazın.
   wwcConfigBadYaml: 'Geçersiz YAML dosyası algılandı: {0}. Lütfen bu dosyayı düzeltmeye
     çalışın yoksa silinebilir!'
+  wwcConfigConversationChatBlacklistSuccess: Kara listeyi başarıyla değiştirdi.
+  wwcConfigConversationChannelHoverFormatInput: 'Çeviri üzerine gelme metninin geçerli
+    biçimi {0} ''dir. Olası varsayılan argümanlar: {1}. PlaceHolderAPI''niz varsa,
+    bu değişkenlerin yüzdelerle (%) çevrelendiğinden emin olun. Geri dönmek için 0
+    yazın.'
+  wwcConfigConversationChannelFormatInput: 'Ayrı sohbet kanalı için geçerli format
+    {0} ''dir. Olası varsayılan argümanlar: {1}. PlaceHolderAPI''niz varsa, bu değişkenlerin
+    yüzdelerle (%) çevrelendiğinden emin olun. Geri dönmek için 0 yazın.'
+  wwcConfigConversationChatHoverFormatSuccess: Hover formatınız başarıyla değiştirildi.
+  wwcConfigConversationLocalizeSyncSuccess: Kullanıcı yerelleştirme senkronizasyonu
+    başarıyla değiştirildi.
+  wwcConfigGUILocalizeSyncButton: Kullanıcı Yerelleştirmesini Senkronize Et
+  wwcConfigSyncUserLocalInvalid: Eşitleme kullanıcı yerelleştirme ayarı geçersiz.
+    Varsayılan olarak true olarak ayarlanıyor...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover Metin Biçimini Değiştir
 

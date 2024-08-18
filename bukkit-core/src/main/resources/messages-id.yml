@@ -666,16 +666,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktifkan Daftar Hitam
   wwcConfigConversationBlacklistDeletionSuccess: Berhasil menghapus istilah.
   wwcConfigGUIChatChannelSettings: Konfigurasi Saluran Obrolan
-  wwcConfigGUIChatBlacklistSuccess: Berhasil mengubah daftar hitam.
   wwcConfigGUIChatMessagesBlacklistNewButton: Tambahkan Kata Baru
   wwcConfigGUIChatChannelButton: Terjemahkan Pengaturan Saluran
   wwcConfigGUIBlacklistMessagesModify: Ubah Istilah ({0})
   wwcConfigChatChannelFormatInvalid: Format saluran tidak valid terdeteksi. Default
     ke {0}...
-  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
-    terpisah adalah {0}. Argumen yang diakui default kami yang dapat Anda sertakan:
-    {1}. Jika Anda memiliki PlaceHolderAPI, pastikan variabel tersebut dikelilingi
-    oleh persentase (%) sebagai gantinya. Ketik 0 untuk kembali.'
   wwcConfigGUIModifyBlacklistSettings: Ubah Daftar Hitam
   wwcConfigGUINextPageButton: Halaman berikutnya
   wwcConfigChatChannelHoverFormatInvalid: Format hover tidak valid terdeteksi. Default
@@ -686,4 +681,20 @@ Messages:
     lokalisasi Minecraft Anda ({0}). Ketik {1} untuk lebih jelasnya.
   wwcConfigBadYaml: 'File YAML tidak valid terdeteksi: {0}. Silakan coba untuk memperbaiki
     file ini atau mungkin dihapus!'
+  wwcConfigConversationChatBlacklistSuccess: Berhasil mengubah daftar hitam.
+  wwcConfigConversationChannelHoverFormatInput: 'Format saat ini untuk teks hover
+    terjemahan adalah {0}. Kemungkinan argumen default: {1}. Jika Anda memiliki PlaceHolderAPI,
+    pastikan variabel tersebut dikelilingi oleh persentase (%) sebagai gantinya. Ketik
+    0 untuk kembali.'
+  wwcConfigConversationChannelFormatInput: 'Format saat ini untuk saluran obrolan
+    terpisah adalah {0}. Kemungkinan argumen default: {1}. Jika Anda memiliki PlaceHolderAPI,
+    pastikan variabel tersebut dikelilingi oleh persentase (%) sebagai gantinya. Ketik
+    0 untuk kembali.'
+  wwcConfigConversationChatHoverFormatSuccess: Format hover Anda telah berhasil diubah.
+  wwcConfigConversationLocalizeSyncSuccess: Berhasil mengalihkan sinkronisasi pelokalan
+    pengguna.
+  wwcConfigGUILocalizeSyncButton: Sinkronkan Pelokalan Pengguna
+  wwcConfigSyncUserLocalInvalid: Setelan pelokalan pengguna sinkronisasi tidak valid.
+    Default menjadi true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ubah Format Teks Hover
 

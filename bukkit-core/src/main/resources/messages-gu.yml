@@ -673,16 +673,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: બ્લેકલિસ્ટ સક્ષમ કરો
   wwcConfigConversationBlacklistDeletionSuccess: સફળતાપૂર્વક શબ્દ કાઢી નાખ્યો.
   wwcConfigGUIChatChannelSettings: ચેટ ચેનલ રૂપરેખાંકન
-  wwcConfigGUIChatBlacklistSuccess: બ્લેકલિસ્ટને સફળતાપૂર્વક ટૉગલ કર્યું.
   wwcConfigGUIChatMessagesBlacklistNewButton: નવો શબ્દ ઉમેરો
   wwcConfigGUIChatChannelButton: ચેનલ સેટિંગ્સ અનુવાદ કરો
   wwcConfigGUIBlacklistMessagesModify: ટર્મ ફેરફાર કરો ({0})
   wwcConfigChatChannelFormatInvalid: અમાન્ય ચેનલ ફોર્મેટ શોધાયું. {0} પર ડિફોલ્ટ થઈ
     રહ્યું છે...
-  wwcConfigConversationChannelFormatInput: 'અલગ ચેટ ચેનલ માટેનું વર્તમાન ફોર્મેટ {0}
-    છે. અમારી ડિફૉલ્ટ માન્યતાપ્રાપ્ત દલીલો જેમાં તમે શામેલ કરી શકો છો: {1}. જો તમારી
-    પાસે પ્લેસહોલ્ડરAPI છે, તો ખાતરી કરો કે તે ચલો તેના બદલે ટકાવારી (%) દ્વારા ઘેરાયેલા
-    છે. પાછા જવા માટે 0 લખો.'
   wwcConfigGUIModifyBlacklistSettings: બ્લેકલિસ્ટમાં ફેરફાર કરો
   wwcConfigGUINextPageButton: આગળનું પાનું
   wwcConfigChatChannelHoverFormatInvalid: અમાન્ય હોવર ફોર્મેટ શોધાયું. {0} પર ડિફોલ્ટ
@@ -693,4 +688,20 @@ Messages:
     પ્રતિબિંબિત કરશે ({0}). વધુ વિગતો માટે {1} લખો.
   wwcConfigBadYaml: 'અમાન્ય YAML ફાઇલ શોધી કાઢવામાં આવી: {0}. કૃપા કરીને આ ફાઇલને
     ઠીક કરવાનો પ્રયાસ કરો અથવા તે કાઢી નાખવામાં આવી શકે છે!'
+  wwcConfigConversationChatBlacklistSuccess: બ્લેકલિસ્ટને સફળતાપૂર્વક ટૉગલ કર્યું.
+  wwcConfigConversationChannelHoverFormatInput: 'અનુવાદ હોવર ટેક્સ્ટ માટેનું વર્તમાન
+    ફોર્મેટ {0} છે. સંભવિત મૂળભૂત દલીલો: {1}. જો તમારી પાસે પ્લેસહોલ્ડરAPI છે, તો
+    ખાતરી કરો કે તે ચલો તેના બદલે ટકાવારી (%) દ્વારા ઘેરાયેલા છે. પાછા જવા માટે 0
+    લખો.'
+  wwcConfigConversationChannelFormatInput: 'અલગ ચેટ ચેનલ માટેનું વર્તમાન ફોર્મેટ {0}
+    છે. સંભવિત મૂળભૂત દલીલો: {1}. જો તમારી પાસે પ્લેસહોલ્ડરAPI છે, તો ખાતરી કરો કે
+    તે ચલો તેના બદલે ટકાવારી (%) દ્વારા ઘેરાયેલા છે. પાછા જવા માટે 0 લખો.'
+  wwcConfigConversationChatHoverFormatSuccess: તમારું હોવર ફોર્મેટ સફળતાપૂર્વક બદલવામાં
+    આવ્યું છે.
+  wwcConfigConversationLocalizeSyncSuccess: વપરાશકર્તા સ્થાનિકીકરણને સફળતાપૂર્વક સમન્વયિત
+    કરવાનું ટોગલ
+  wwcConfigGUILocalizeSyncButton: વપરાશકર્તા સ્થાનિકીકરણ સિંક કરો
+  wwcConfigSyncUserLocalInvalid: સુમેળ વપરાશકર્તા સ્થાનિકીકરણ સેટિંગ અમાન્ય. સાચા
+    પર ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: હોવર ટેક્સ્ટ ફોર્મેટ બદલો
 

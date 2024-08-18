@@ -724,16 +724,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activar lista negra
   wwcConfigConversationBlacklistDeletionSuccess: Se eliminó correctamente el término.
   wwcConfigGUIChatChannelSettings: Configuración del canal de chat
-  wwcConfigGUIChatBlacklistSuccess: Se ha alternado correctamente la lista negra.
   wwcConfigGUIChatMessagesBlacklistNewButton: Agregar nueva palabra
   wwcConfigGUIChatChannelButton: Traducir la configuración del canal
   wwcConfigGUIBlacklistMessagesModify: Modificar término ({0})
   wwcConfigChatChannelFormatInvalid: Se detectó un formato de canal no válido. El
     valor predeterminado es {0}...
-  wwcConfigConversationChannelFormatInput: 'El formato actual para el canal de chat
-    separado es {0}. Nuestros argumentos reconocidos predeterminados que puedes incluir:
-    {1}. Si tiene PlaceholderAPI, asegúrese de que esas variables estén rodeadas por
-    porcentajes (%) en su lugar. Escriba 0 para volver atrás.'
   wwcConfigGUIModifyBlacklistSettings: Modificar lista negra
   wwcConfigGUINextPageButton: Página siguiente
   wwcConfigChatChannelHoverFormatInvalid: Se detectó un formato de cursor no válido.
@@ -744,4 +739,22 @@ Messages:
     de Minecraft ({0}). Escriba {1} para más detalles.
   wwcConfigBadYaml: 'Se detectó un archivo YAML no válido: {0}. Por favor, intente
     arreglar este archivo o puede ser eliminado.'
+  wwcConfigConversationChatBlacklistSuccess: Se ha alternado correctamente la lista
+    negra.
+  wwcConfigConversationChannelHoverFormatInput: 'El formato actual para el texto del
+    cursor de traducción es {0}. Posibles argumentos predeterminados: {1}. Si tiene
+    PlaceholderAPI, asegúrese de que esas variables estén rodeadas por porcentajes
+    (%) en su lugar. Escriba 0 para volver atrás.'
+  wwcConfigConversationChannelFormatInput: 'El formato actual para el canal de chat
+    separado es {0}. Posibles argumentos predeterminados: {1}. Si tiene PlaceholderAPI,
+    asegúrese de que esas variables estén rodeadas por porcentajes (%) en su lugar.
+    Escriba 0 para volver atrás.'
+  wwcConfigConversationChatHoverFormatSuccess: El formato del cursor se ha cambiado
+    correctamente.
+  wwcConfigConversationLocalizeSyncSuccess: Se ha alternado correctamente la sincronización
+    de la localización del usuario.
+  wwcConfigGUILocalizeSyncButton: Sincronizar localización de usuarios
+  wwcConfigSyncUserLocalInvalid: La configuración de localización del usuario de sincronización
+    no es válida. El valor predeterminado es true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Cambiar formato de texto del cursor
 

@@ -668,16 +668,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Qara siyahıya aktivləşdirin
   wwcConfigConversationBlacklistDeletionSuccess: Termini uğurla silindi.
   wwcConfigGUIChatChannelSettings: Chat Kanal Konfiqurasiyası
-  wwcConfigGUIChatBlacklistSuccess: Qara siyahıya uğurla dəyişdirildi.
   wwcConfigGUIChatMessagesBlacklistNewButton: Yeni söz əlavə edin
   wwcConfigGUIChatChannelButton: Kanal parametrlərini tərcümə edin
   wwcConfigGUIBlacklistMessagesModify: Müddəti dəyişdirin ({0})
   wwcConfigChatChannelFormatInvalid: Yanlış kanal formatı aşkar edildi. Varsayılan
     olaraq {0}...
-  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
-    {0} -dir. Daxil edə biləcəyiniz standart tanınmış arqumentlərimiz: {1}. PlaceholderAPI
-    varsa, əvəzinə bu dəyişənlərin faizlərlə (%) əhatə olunduğundan əmin olun. Geri
-    qayıtmaq üçün 0 yazın.'
   wwcConfigGUIModifyBlacklistSettings: Qara siyahıya dəyişdirin
   wwcConfigGUINextPageButton: Növbəti Səhifə
   wwcConfigChatChannelHoverFormatInvalid: Yanlış hover formatı aşkar edildi. Varsayılan
@@ -688,4 +683,18 @@ Messages:
     və əks etdirəcək ({0}). Ətraflı məlumat üçün {1} yazın.
   wwcConfigBadYaml: 'Yanlış YAML faylı aşkar edildi: {0}. Zəhmət olmasa bu faylı düzəltməyə
     çalışın, yoxsa silinə bilər!'
+  wwcConfigConversationChatBlacklistSuccess: Qara siyahıya uğurla dəyişdirildi.
+  wwcConfigConversationChannelHoverFormatInput: 'Tərcümə hover mətninin hazırkı formatı
+    {0} -dir. Mümkün standart arqumentlər: {1}. PlaceholderAPI varsa, əvəzinə bu dəyişənlərin
+    faizlərlə (%) əhatə olunduğundan əmin olun. Geri qayıtmaq üçün 0 yazın.'
+  wwcConfigConversationChannelFormatInput: 'Ayrı söhbət kanalı üçün mövcud format
+    {0} -dir. Mümkün standart arqumentlər: {1}. PlaceholderAPI varsa, əvəzinə bu dəyişənlərin
+    faizlərlə (%) əhatə olunduğundan əmin olun. Geri qayıtmaq üçün 0 yazın.'
+  wwcConfigConversationChatHoverFormatSuccess: Hover formatınız uğurla dəyişdirildi.
+  wwcConfigConversationLocalizeSyncSuccess: İstifadəçi lokalizasiyasının sinxronizasiyasını
+    uğurla
+  wwcConfigGUILocalizeSyncButton: İstifadəçi Lokalizasiyasını
+  wwcConfigSyncUserLocalInvalid: İstifadəçi lokalizasiya parametrini sinxronlaşdırma
+    etibar Doğruza defolt...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover Mətn formatını dəyişdirin
 

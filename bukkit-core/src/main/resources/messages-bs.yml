@@ -673,16 +673,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Omogući crnu listu
   wwcConfigConversationBlacklistDeletionSuccess: Uspješno je izbrisan pojam.
   wwcConfigGUIChatChannelSettings: Konfiguracija kanala za chat
-  wwcConfigGUIChatBlacklistSuccess: Uspješno je prebacio crnu listu.
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novu riječ
   wwcConfigGUIChatChannelButton: Prevedi postavke kanala
   wwcConfigGUIBlacklistMessagesModify: Izmijeni termin ({0})
   wwcConfigChatChannelFormatInvalid: Otkriven je nevažeći format kanala. Zadana postavka
     na {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
-    je {0}. Naši zadani prepoznati argumenti koje možete uključiti: {1}. Ako imate
-    PlaceholderAPI, provjerite jesu li te varijable okružene postocima (%) umjesto
-    toga. Upišite 0 da biste se vratili natrag.'
   wwcConfigGUIModifyBlacklistSettings: Izmijeni crnu listu
   wwcConfigGUINextPageButton: Sljedeća stranica
   wwcConfigChatChannelHoverFormatInvalid: Otkriven je nevažeći format hovera. Zadana
@@ -693,4 +688,21 @@ Messages:
     lokalizaciju ({0}). Upišite {1} za više detalja.
   wwcConfigBadYaml: 'Otkrivena neispravna YAML datoteka: {0}. Pokušajte popraviti
     ovu datoteku ili može biti izbrisana!'
+  wwcConfigConversationChatBlacklistSuccess: Uspješno je prebacio crnu listu.
+  wwcConfigConversationChannelHoverFormatInput: 'Trenutni format prevođenja hover
+    teksta je {0}. Mogući zadani argumenti: {1}. Ako imate PlaceholderAPI, provjerite
+    jesu li te varijable okružene postocima (%) umjesto toga. Upišite 0 da biste se
+    vratili natrag.'
+  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za chat
+    je {0}. Mogući zadani argumenti: {1}. Ako imate PlaceholderAPI, provjerite jesu
+    li te varijable okružene postocima (%) umjesto toga. Upišite 0 da biste se vratili
+    natrag.'
+  wwcConfigConversationChatHoverFormatSuccess: Vaš format lebdenja pokazivača je uspješno
+    promijenjen.
+  wwcConfigConversationLocalizeSyncSuccess: Uspješno je promijenjena lokalizacija
+    sinkronizacije korisnika.
+  wwcConfigGUILocalizeSyncButton: Sinkronizirajte lokalizaciju korisnika
+  wwcConfigSyncUserLocalInvalid: Postavka lokalizacije korisnika sinkronizacije nije
+    važeća. Zadano na istinito...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Promjena formata hover teksta
 

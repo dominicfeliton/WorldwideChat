@@ -665,16 +665,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Omogući crnu listu
   wwcConfigConversationBlacklistDeletionSuccess: Uspešno je izbrisao termin.
   wwcConfigGUIChatChannelSettings: Konfiguracija kanala za ćaskanje
-  wwcConfigGUIChatBlacklistSuccess: Uspešno je prebacio crnu listu.
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novu reč
   wwcConfigGUIChatChannelButton: Prevedi podešavanja kanala
   wwcConfigGUIBlacklistMessagesModify: Izmena termina ({0})
   wwcConfigChatChannelFormatInvalid: Otkriven je nevažeći format kanala. Podrazumevano
     na {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za ćaskanje
-    je {0}. Naši podrazumevani prepoznati argumenti koje možete uključiti: {1}. Ako
-    imate PlaceholderAPI, uverite se da su te promenljive okružene procentima (%)
-    umesto toga. Otkucajte 0 da biste se vratili nazad.'
   wwcConfigGUIModifyBlacklistSettings: Izmenite crnu listu
   wwcConfigGUINextPageButton: Sledeća strana
   wwcConfigChatChannelHoverFormatInvalid: Otkriven je nevažeći format lebdenja. Podrazumevano
@@ -685,4 +680,21 @@ Messages:
     ({0}). Otkucajte {1} za više detalja.
   wwcConfigBadYaml: 'Otkrivena nevažeća YAML datoteka: {0}. Pokušajte da popravite
     ovu datoteku ili može biti izbrisana!'
+  wwcConfigConversationChatBlacklistSuccess: Uspešno je prebacio crnu listu.
+  wwcConfigConversationChannelHoverFormatInput: 'Trenutni format za prevođenje pokazivača
+    teksta je {0}. Mogući podrazumevani argumenti: {1}. Ako imate PlaceholderAPI,
+    uverite se da su te promenljive okružene procentima (%) umesto toga. Otkucajte
+    0 da biste se vratili nazad.'
+  wwcConfigConversationChannelFormatInput: 'Trenutni format zasebnog kanala za ćaskanje
+    je {0}. Mogući podrazumevani argumenti: {1}. Ako imate PlaceholderAPI, uverite
+    se da su te promenljive okružene procentima (%) umesto toga. Otkucajte 0 da biste
+    se vratili nazad.'
+  wwcConfigConversationChatHoverFormatSuccess: Vaš format lebdenja pokazivača je uspešno
+    promenjen.
+  wwcConfigConversationLocalizeSyncSuccess: Uspešno je preklopljena sinhronizacija
+    korisničke lokalizacije.
+  wwcConfigGUILocalizeSyncButton: Sinhronizujte lokalizaciju korisnika
+  wwcConfigSyncUserLocalInvalid: Podešavanje lokalizacije korisnika sinhronizacije
+    nije važeće. Podrazumevano na istinito...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Promenite format teksta hover
 

@@ -693,16 +693,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ब्लैकलिस्ट सक्षम करें
   wwcConfigConversationBlacklistDeletionSuccess: शब्द को सफलतापूर्वक हटा दिया गया।
   wwcConfigGUIChatChannelSettings: चैट चैनल कॉन्फ़िगरेशन
-  wwcConfigGUIChatBlacklistSuccess: ब्लैकलिस्ट को सफलतापूर्वक टॉगल किया।
   wwcConfigGUIChatMessagesBlacklistNewButton: नया शब्द जोड़ें
   wwcConfigGUIChatChannelButton: चैनल सेटिंग का अनुवाद करें
   wwcConfigGUIBlacklistMessagesModify: शब्द संशोधित करें ({0})
   wwcConfigChatChannelFormatInvalid: अमान्य चैनल फ़ॉर्मैट का पता चला। डिफ़ॉल्ट रूप
     से {0} पर सेट किया जा रहा है...
-  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
-    हमारे डिफ़ॉल्ट मान्यता प्राप्त तर्क जिन्हें आप शामिल कर सकते हैं: {1}। यदि आपके
-    पास placeHolderAPI है, तो सुनिश्चित करें कि वे वैरिएबल इसके बजाय प्रतिशत (%) से
-    घिरे हों। वापस जाने के लिए 0 टाइप करें।'
   wwcConfigGUIModifyBlacklistSettings: ब्लैकलिस्ट को संशोधित करें
   wwcConfigGUINextPageButton: अगला पेज
   wwcConfigChatChannelHoverFormatInvalid: अमान्य होवर फ़ॉर्मेट का पता चला। डिफ़ॉल्ट
@@ -713,4 +708,20 @@ Messages:
     लगा लिया है और उसे प्रतिबिंबित करेगा। ज़्यादा जानकारी के लिए {1} टाइप करें।
   wwcConfigBadYaml: 'अमान्य YAML फ़ाइल का पता चला: {0}। कृपया इस फ़ाइल को ठीक करने
     का प्रयास करें या इसे हटाया जा सकता है!'
+  wwcConfigConversationChatBlacklistSuccess: ब्लैकलिस्ट को सफलतापूर्वक टॉगल किया।
+  wwcConfigConversationChannelHoverFormatInput: 'ट्रांसलेशन होवर टेक्स्ट का मौजूदा
+    फ़ॉर्मेट {0} है। संभावित डिफ़ॉल्ट तर्क: {1}। यदि आपके पास placeHolderAPI है, तो
+    सुनिश्चित करें कि वे चर इसके बजाय प्रतिशत (%) से घिरे हों। वापस जाने के लिए 0
+    टाइप करें।'
+  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
+    संभावित डिफ़ॉल्ट तर्क: {1}। यदि आपके पास placeHolderAPI है, तो सुनिश्चित करें
+    कि वे चर इसके बजाय प्रतिशत (%) से घिरे हों। वापस जाने के लिए 0 टाइप करें।'
+  wwcConfigConversationChatHoverFormatSuccess: आपका होवर फ़ॉर्मेट सफलतापूर्वक बदल
+    दिया गया है।
+  wwcConfigConversationLocalizeSyncSuccess: उपयोगकर्ता स्थानीयकरण को समन्वयित करने
+    में सफलतापूर्वक टॉगल किया गया।
+  wwcConfigGUILocalizeSyncButton: उपयोगकर्ता का स्थानीयकरण सिंक करें
+  wwcConfigSyncUserLocalInvalid: सिंक उपयोगकर्ता स्थानीयकरण सेटिंग अमान्य है। डिफ़ॉल्ट
+    रूप से सही है...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: होवर टेक्स्ट फॉर्मेट बदलें
 

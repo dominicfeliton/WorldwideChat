@@ -740,16 +740,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activer la liste noire
   wwcConfigConversationBlacklistDeletionSuccess: Le terme a été supprimé avec succès.
   wwcConfigGUIChatChannelSettings: Configuration du canal de discussion
-  wwcConfigGUIChatBlacklistSuccess: Vous avez activé la liste noire avec succès.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ajouter un nouveau mot
   wwcConfigGUIChatChannelButton: Traduire les paramètres de la chaîne
   wwcConfigGUIBlacklistMessagesModify: Modifier le terme ({0})
   wwcConfigChatChannelFormatInvalid: Format de chaîne non valide détecté. Par défaut,
     c'est {0}...
-  wwcConfigConversationChannelFormatInput: 'Le format actuel du canal de discussion
-    distinct est {0}. Nos arguments reconnus par défaut que vous pouvez inclure: {1}.
-    Si vous avez PlaceholderAPI, assurez-vous que ces variables sont plutôt entourées
-    de pourcentages (%). Tapez 0 pour revenir en arrière.'
   wwcConfigGUIModifyBlacklistSettings: Modifier la liste noire
   wwcConfigGUINextPageButton: Page suivante
   wwcConfigChatChannelHoverFormatInvalid: Format de survol non valide détecté. Par
@@ -760,3 +755,22 @@ Messages:
     dans Minecraft ({0}). Tapez {1} pour plus de détails.
   wwcConfigBadYaml: 'Fichier YAML non valide détecté: {0}. Essayez de corriger ce
     fichier, sinon il est peut-être supprimé!'
+  wwcConfigConversationChatBlacklistSuccess: Vous avez activé la liste noire avec
+    succès.
+  wwcConfigConversationChannelHoverFormatInput: 'Le format actuel du texte surligné
+    pour la traduction est {0}. Arguments par défaut possibles: {1}. Si vous avez
+    PlaceholderAPI, assurez-vous que ces variables sont plutôt entourées de pourcentages
+    (%). Tapez 0 pour revenir en arrière.'
+  wwcConfigConversationChannelFormatInput: 'Le format actuel du canal de discussion
+    distinct est {0}. Arguments par défaut possibles: {1}. Si vous avez PlaceholderAPI,
+    assurez-vous que ces variables sont plutôt entourées de pourcentages (%). Tapez
+    0 pour revenir en arrière.'
+  wwcConfigConversationChatHoverFormatSuccess: Le format de votre survol a été modifié
+    avec succès.
+  wwcConfigConversationLocalizeSyncSuccess: Synchronisation réussie de la localisation
+    des utilisateurs.
+  wwcConfigGUILocalizeSyncButton: Synchroniser la localisation des utilisateurs
+  wwcConfigSyncUserLocalInvalid: Le paramètre de localisation utilisateur de la synchronisation
+    n'est pas valide. Par défaut, c'est vrai...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Modifier le format du texte du
+    survol

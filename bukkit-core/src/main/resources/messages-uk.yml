@@ -674,16 +674,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Увімкнути чорний список
   wwcConfigConversationBlacklistDeletionSuccess: Успішно видалено термін.
   wwcConfigGUIChatChannelSettings: Налаштування каналу чату
-  wwcConfigGUIChatBlacklistSuccess: Успішно переключено чорний список.
   wwcConfigGUIChatMessagesBlacklistNewButton: Додати нове слово
   wwcConfigGUIChatChannelButton: Переклад налаштувань каналу
   wwcConfigGUIBlacklistMessagesModify: Змінити термін ({0})
   wwcConfigChatChannelFormatInvalid: Виявлено невірний формат каналу. За замовчуванням
     значення {0}...
-  wwcConfigConversationChannelFormatInput: 'Поточний формат окремого каналу чату —
-    {0}. Наші стандартні розпізнані аргументи, які ви можете включити: {1}. Якщо у
-    вас є PlaceHolderAPI, переконайтеся, що ці змінні оточені відсотками (%) замість
-    цього. Введіть 0, щоб повернутися назад.'
   wwcConfigGUIModifyBlacklistSettings: Змінити чорний список
   wwcConfigGUINextPageButton: Наступна сторінка
   wwcConfigChatChannelHoverFormatInvalid: Виявлено некоректний формат наведення курсора.
@@ -694,4 +689,22 @@ Messages:
     Minecraft ({0}). Введіть {1} для отримання додаткової інформації.
   wwcConfigBadYaml: 'Виявлено недійсний файл YAML: {0}. Будь ласка, спробуйте виправити
     цей файл, інакше він може бути видалений!'
+  wwcConfigConversationChatBlacklistSuccess: Успішно переключено чорний список.
+  wwcConfigConversationChannelHoverFormatInput: 'Поточний формат перекладу тексту
+    наведення курсора - {0}. Можливі аргументи за замовчуванням: {1}. Якщо у вас є
+    PlaceHolderAPI, переконайтеся, що ці змінні оточені відсотками (%) замість цього.
+    Введіть 0, щоб повернутися назад.'
+  wwcConfigConversationChannelFormatInput: 'Поточний формат окремого каналу чату —
+    {0}. Можливі аргументи за замовчуванням: {1}. Якщо у вас є PlaceHolderAPI, переконайтеся,
+    що ці змінні оточені відсотками (%) замість цього. Введіть 0, щоб повернутися
+    назад.'
+  wwcConfigConversationChatHoverFormatSuccess: Ваш формат наведення курсора успішно
+    змінено.
+  wwcConfigConversationLocalizeSyncSuccess: Успішно переключено синхронізацію локалізації
+    користувача.
+  wwcConfigGUILocalizeSyncButton: Синхронізувати локалізацію користувача
+  wwcConfigSyncUserLocalInvalid: Налаштування локалізації синхронізації користувача
+    недійсні. За замовчуванням значення true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Змінити формат тексту наведення
+    вказівника миші
 

@@ -682,16 +682,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Включить черный список
   wwcConfigConversationBlacklistDeletionSuccess: Термин успешно удален.
   wwcConfigGUIChatChannelSettings: Конфигурация канала чата
-  wwcConfigGUIChatBlacklistSuccess: Успешно переключил черный список.
   wwcConfigGUIChatMessagesBlacklistNewButton: Добавить новое слово
   wwcConfigGUIChatChannelButton: Переведите настройки канала
   wwcConfigGUIBlacklistMessagesModify: Изменить термин ({0})
   wwcConfigChatChannelFormatInvalid: Обнаружен неправильный формат канала. По умолчанию
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Текущий формат отдельного чат-канала —
-    {0}. Наши признанные аргументы по умолчанию, которые вы можете включить: {1}.
-    Если у вас есть PlaceHolderAPI, вместо этого убедитесь, что эти переменные окружены
-    процентами (%). Введите 0, чтобы вернуться назад.'
   wwcConfigGUIModifyBlacklistSettings: Изменить черный список
   wwcConfigGUINextPageButton: Следующая страница
   wwcConfigChatChannelHoverFormatInvalid: Обнаружен неправильный формат при наведении
@@ -702,4 +697,20 @@ Messages:
     ({0}). Введите {1} для получения более подробной информации.
   wwcConfigBadYaml: 'Обнаружен неправильный YAML-файл: {0}. Попробуйте исправить этот
     файл, иначе он может быть удален!'
+  wwcConfigConversationChatBlacklistSuccess: Успешно переключил черный список.
+  wwcConfigConversationChannelHoverFormatInput: 'Текущий формат перевода текста при
+    наведении курсора — {0}. Возможные аргументы по умолчанию: {1}. Если у вас есть
+    PlaceHolderAPI, убедитесь, что эти переменные окружены процентами (%). Введите
+    0, чтобы вернуться назад.'
+  wwcConfigConversationChannelFormatInput: 'Текущий формат отдельного чат-канала —
+    {0}. Возможные аргументы по умолчанию: {1}. Если у вас есть PlaceHolderAPI, убедитесь,
+    что эти переменные окружены процентами (%). Введите 0, чтобы вернуться назад.'
+  wwcConfigConversationChatHoverFormatSuccess: Формат наведения успешно изменен.
+  wwcConfigConversationLocalizeSyncSuccess: Синхронизация пользовательской локализации
+    успешно переключена.
+  wwcConfigGUILocalizeSyncButton: Синхронизация локализации пользователей
+  wwcConfigSyncUserLocalInvalid: Неверная настройка локализации пользователя Sync.
+    По умолчанию установлено значение true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Изменить текстовый формат при
+    наведении курсора
 

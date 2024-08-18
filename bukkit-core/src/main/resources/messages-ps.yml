@@ -663,15 +663,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: تور لیست فعال کړئ
   wwcConfigConversationBlacklistDeletionSuccess: اصطلاح په بریالیتوب سره حذف
   wwcConfigGUIChatChannelSettings: د چیټ چینل ترتیب
-  wwcConfigGUIChatBlacklistSuccess: په بریالیتوب سره تور لیست بدل کړی.
   wwcConfigGUIChatMessagesBlacklistNewButton: نوی کلمه اضافه کړئ
   wwcConfigGUIChatChannelButton: د چینل ترتیبات ژبا
   wwcConfigGUIBlacklistMessagesModify: اصلاح اصلاح کړئ ({0})
   wwcConfigChatChannelFormatInvalid: غلط چینل بڼه کشف شوي. {0} ته ډیفولټ کول...
-  wwcConfigConversationChannelFormatInput: د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی. زموږ
-    ډیفالټ پیژندل شوي دلائل چې تاسو کولی شئ شامل کړئ {1} که تاسو PlaceholderAPI لرئ،
-    ډاډ ترلاسه کړئ چې هغه متغیرونه په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو
-    لپاره 0 ټایپ کړئ.
   wwcConfigGUIModifyBlacklistSettings: تور لیست اصلاح کړئ
   wwcConfigGUINextPageButton: راتلونکی پاڼه
   wwcConfigChatChannelHoverFormatInvalid: غلط هوور فارمیټ کشف شوی. {0} ته ډیفولټ کول...
@@ -681,4 +676,19 @@ Messages:
     کول ({0}) منعکس کړي. د نورو جزئیاتو لپاره {1} ډول کړئ.
   wwcConfigBadYaml: 'غلط YAML فایل موندل شوی: {0}. مهرباني وکړئ هڅه وکړئ چې دا فایل
     اصلاح کړئ یا ممکن دا ختم شي!'
+  wwcConfigConversationChatBlacklistSuccess: په بریالیتوب سره تور لیست بدل کړی.
+  wwcConfigConversationChannelHoverFormatInput: 'د ژباړې هوور متن لپاره اوسنۍ بڼه
+    {0} دی. ممکنه ډیفالټ دلائل: {1}. که تاسو PlaceholderAPI لرئ، ډاډ ترلاسه کړئ چې
+    هغه متغیرونه په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو لپاره 0 ټایپ کړئ.'
+  wwcConfigConversationChannelFormatInput: 'د جلا چټ چینل لپاره اوسنۍ بڼه {0} دی.
+    ممکنه ډیفالټ دلائل: {1}. که تاسو PlaceholderAPI لرئ، ډاډ ترلاسه کړئ چې هغه متغیرونه
+    په ځای د فیصتونو (٪) لخوا شاوخوا دي. بیرته لاړولو لپاره 0 ټایپ کړئ.'
+  wwcConfigConversationChatHoverFormatSuccess: ستاسو د هور بڼه په بریالیتوب سره بدل
+    شوی دی.
+  wwcConfigConversationLocalizeSyncSuccess: په بریالیتوب سره د کارونکي ځای کولو همغږي
+    کول.
+  wwcConfigGUILocalizeSyncButton: د کارونکي لوکاسیون
+  wwcConfigSyncUserLocalInvalid: د کارن د محیط کولو د سمونک کولو تنظیم ریښتینې ته
+    ناپسند کول...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: د هور متن بڼه بدل کړئ
 

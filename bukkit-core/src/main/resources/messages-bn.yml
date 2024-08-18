@@ -672,15 +672,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ব্ল্যাকলিস্ট সক্ষম করুন
   wwcConfigConversationBlacklistDeletionSuccess: সফলভাবে শব্দটি মুছে ফেলা হয়েছে
   wwcConfigGUIChatChannelSettings: চ্যাট চ্যানেল কন
-  wwcConfigGUIChatBlacklistSuccess: সফলভাবে ব্ল্যাকলিস্টটি টক করা হয়েছে।
   wwcConfigGUIChatMessagesBlacklistNewButton: নতুন শব্দ যোগ করুন
   wwcConfigGUIChatChannelButton: চ্যানেল সেটিং অনুবাদ
   wwcConfigGUIBlacklistMessagesModify: মেয়াদ পরিবর্তন করুন ({0})
   wwcConfigChatChannelFormatInvalid: বৈধ চ্যানেল বিন্যাস সনাক্ত {0} এ ডিফল্ট করা হচ্ছে...
-  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
-    আমাদের ডিফল্ট স্বীকৃত যুক্তি যা আপনি অন্তর্ভুক্ত করতে পারেন: {1}। আপনার যদি PlaceholderAPI
-    থাকে তবে নিশ্চিত করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে।
-    ফিরে যেতে 0 টাইপ করুন।'
   wwcConfigGUIModifyBlacklistSettings: ব্ল্যাকলিস্ট পরিবর্তন করুন
   wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
   wwcConfigChatChannelHoverFormatInvalid: অবৈধ হোভার বিন্যাস সনাক্ত হয়েছে। {0} এ
@@ -691,4 +686,21 @@ Messages:
     স্থানীয়করণ ({0}) প্রতিফলিত করবে। আরও বিস্তারিত জানার জন্য {1} টাইপ করুন।
   wwcConfigBadYaml: 'অবৈধ YAML ফাইল সনাক্ত করা হয়েছে: {0}। দয়া করে এই ফাইলটি ঠিক
     করার চেষ্টা করুন অথবা এটি মুছে ফেলা যেতে পারে!'
+  wwcConfigConversationChatBlacklistSuccess: সফলভাবে ব্ল্যাকলিস্টটি টক করা হয়েছে।
+  wwcConfigConversationChannelHoverFormatInput: 'অনুবাদ হোভার টেক্সটের বর্তমান বিন্যাস
+    {0}। সম্ভাব্য ডিফল্ট আর্গুমেন্ট: {1}। আপনার যদি প্লেসহোল্ডারএপিআই থাকে তবে নিশ্চিত
+    করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে। ফিরে যেতে
+    0 টাইপ করুন।'
+  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
+    সম্ভাব্য ডিফল্ট আর্গুমেন্ট: {1}। আপনার যদি PlaceholderAPI থাকে তবে নিশ্চিত করুন
+    যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে। ফিরে যেতে 0 টাইপ
+    করুন।'
+  wwcConfigConversationChatHoverFormatSuccess: আপনার হোভার ফর্ম্যাট সফলভাবে পরিবর্তন
+    করা হয়েছে।
+  wwcConfigConversationLocalizeSyncSuccess: সফলভাবে সিঙ্কিং ইউজার স্থানীয়করণ টগল
+    করা হয়েছে
+  wwcConfigGUILocalizeSyncButton: ইউজার স্থানীয়করণ সিঙ্ক
+  wwcConfigSyncUserLocalInvalid: সিঙ্ক ইউজার স্থানীয়করণ সেটিং অবৈধ। সত্যে ডিফল্ট
+    করা হচ্ছে...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: হোভার টেক্সট বিন্যাস পরিবর্তন
 

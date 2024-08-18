@@ -647,16 +647,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Luba must nimekiri
   wwcConfigConversationBlacklistDeletionSuccess: Mõiste edukalt kustutati.
   wwcConfigGUIChatChannelSettings: Vestluskanali konfiguratsioon
-  wwcConfigGUIChatBlacklistSuccess: Musta nimekirja edukalt lülitati.
   wwcConfigGUIChatMessagesBlacklistNewButton: Lisa uus sõna
   wwcConfigGUIChatChannelButton: Kanali sätete tõlkimine
   wwcConfigGUIBlacklistMessagesModify: Muuda terminit ({0})
   wwcConfigChatChannelFormatInvalid: Tuvastati vale kanalivorming. Vaikimisi väärtus
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
-    on {0}. Meie vaikimisi tuvastatud argumendid, mida saate lisada: {1}. Kui teil
-    on PlaceholderAPI, veenduge, et neid muutujaid ümbritsevad selle asemel protsendid
-    (%). Tagasi minemiseks tippige 0.'
   wwcConfigGUIModifyBlacklistSettings: Muuda musta nimekirja
   wwcConfigGUINextPageButton: Järgmine lehekülg
   wwcConfigChatChannelHoverFormatInvalid: Tuvastati vale hõljutamisvorming. Vaikimisi
@@ -667,4 +662,21 @@ Messages:
     lokaliseerimist ({0}). Lisateabe saamiseks tippige {1}.
   wwcConfigBadYaml: 'Tuvastati vale YAML-fail: {0}. Proovige seda faili parandada,
     vastasel juhul võidakse see kustutada!'
+  wwcConfigConversationChatBlacklistSuccess: Musta nimekirja edukalt lülitati.
+  wwcConfigConversationChannelHoverFormatInput: 'Tõlkimise hõljuteksti praegune formaat
+    on {0}. Võimalikud vaikeargumendid: {1}. Kui teil on PlaceholderAPI, veenduge,
+    et neid muutujaid ümbritsevad selle asemel protsendid (%). Tagasi minemiseks tippige
+    0.'
+  wwcConfigConversationChannelFormatInput: 'Eraldi vestluskanali praegune vorming
+    on {0}. Võimalikud vaikeargumendid: {1}. Kui teil on PlaceholderAPI, veenduge,
+    et neid muutujaid ümbritsevad selle asemel protsendid (%). Tagasi minemiseks tippige
+    0.'
+  wwcConfigConversationChatHoverFormatSuccess: Teie hõljutamise vormingut on edukalt
+    muudetud.
+  wwcConfigConversationLocalizeSyncSuccess: Kasutaja lokaliseerimise sünkroonimise
+    edukalt lülitatud.
+  wwcConfigGUILocalizeSyncButton: Kasutaja lokaliseerimise sünkrooni
+  wwcConfigSyncUserLocalInvalid: Kasutaja lokaliseerimise säte sünkroonimine on vale.
+    Vaikimisi tõeseks...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hoveri tekstivormingu muutmine
 

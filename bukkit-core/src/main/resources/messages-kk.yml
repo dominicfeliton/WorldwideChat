@@ -667,16 +667,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Қара тізімді қосыңыз
   wwcConfigConversationBlacklistDeletionSuccess: Терминді сәтті жойды.
   wwcConfigGUIChatChannelSettings: Чат арнасының конфигурациясы
-  wwcConfigGUIChatBlacklistSuccess: Қара тізімге сәтті ауыстырылды.
   wwcConfigGUIChatMessagesBlacklistNewButton: Жаңа сөз қосыңыз
   wwcConfigGUIChatChannelButton: Арна параметрлерін аударыңыз
   wwcConfigGUIBlacklistMessagesModify: Терминді өзгерту ({0})
   wwcConfigChatChannelFormatInvalid: Жарамсыз арна пішімі анықталды. Әдепкі бойынша
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
-    - {0}. Сізге қосуға болатын әдепкі танылған дәлелдеріміз: {1}. Егер сізде placeholderAPI
-    болса, сол айнымалы мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз.
-    Қайту үшін 0 деп теріңіз.'
   wwcConfigGUIModifyBlacklistSettings: Қара тізімді өзгерту
   wwcConfigGUINextPageButton: Келесі бет
   wwcConfigChatChannelHoverFormatInvalid: Жарамсыз апару пішімі анықталды. Әдепкі
@@ -687,4 +682,20 @@ Messages:
     көрсетеді ({0}). Қосымша ақпарат алу үшін {1} теріңіз.
   wwcConfigBadYaml: 'Жарамсыз YAML файлы анықталды: {0}. Бұл файлды түзетуге тырысыңыз,
     әйтпесе ол жойылуы мүмкін!'
+  wwcConfigConversationChatBlacklistSuccess: Қара тізімге сәтті ауыстырылды.
+  wwcConfigConversationChannelHoverFormatInput: 'Аударма апару мәтінінің ағымдағы
+    форматы {0} болып табылады. Мүмкін әдепкі аргументтер: {1}. Егер сізде placeholderAPI
+    болса, сол айнымалы мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз.
+    Қайту үшін 0 деп теріңіз.'
+  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
+    - {0}. Мүмкін әдепкі аргументтер: {1}. Егер сізде placeholderAPI болса, сол айнымалы
+    мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз. Қайту үшін 0 деп
+    теріңіз.'
+  wwcConfigConversationChatHoverFormatSuccess: Сіздің апару пішіміңіз сәтті өзгертілді.
+  wwcConfigConversationLocalizeSyncSuccess: Пайдаланушы локализациясын синхрондауды
+    сәтті ауыстырды.
+  wwcConfigGUILocalizeSyncButton: Пайдаланушыны оқшаулауды
+  wwcConfigSyncUserLocalInvalid: Синхрондау пайдаланушыны локализациялау параметрі
+    жарамсыз Шын мәніне дефолт...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover мәтіндік пішімін өзгертіңіз
 

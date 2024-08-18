@@ -669,16 +669,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: შავი სიის ჩართვა
   wwcConfigConversationBlacklistDeletionSuccess: წარმატებით წაიშალა ტერმინი.
   wwcConfigGUIChatChannelSettings: ჩეთის არხის კონფიგ
-  wwcConfigGUIChatBlacklistSuccess: წარმატებით შეცვალა შავი სია.
   wwcConfigGUIChatMessagesBlacklistNewButton: ახალი სიტყვის დამატება
   wwcConfigGUIChatChannelButton: თარგმნეთ არხის
   wwcConfigGUIBlacklistMessagesModify: ტერმინის შეცვლა ({0})
   wwcConfigChatChannelFormatInvalid: არასწორი არხის ფორმატი გამოვლინდა ნაგულისხმევად
     {0}...
-  wwcConfigConversationChannelFormatInput: ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
-    ჩვენი სტანდარტულად აღიარებული არგუმენტები, რომლებიც შეგიძლიათ შეიტანოთ {1} თუ
-    თქვენ გაქვთ PlaceholderAPI, დარწმუნდით, რომ ეს ცვლადები გარშემორტყმულია პროცენტებით
-    (%). დაბრუნებისთვის აკრიფეთ 0.
   wwcConfigGUIModifyBlacklistSettings: შავი სიის შეცვლა
   wwcConfigGUINextPageButton: შემდეგი გვერდი
   wwcConfigChatChannelHoverFormatInvalid: გამოვლინდა არასწორი ჰოვერის ფორმატი. ნაგულისხმევად
@@ -689,4 +684,18 @@ Messages:
     ლოკალიზაციას ({0}). დამატებითი ინფორმაციისთვის აკრიფეთ {1}.
   wwcConfigBadYaml: 'გამოვლინდა არასწორი YAML ფაილი: {0}. გთხოვთ შეეცადოთ ამ ფაილის
     გამოსწორება, წინააღმდეგ შემთხვევაში'
+  wwcConfigConversationChatBlacklistSuccess: წარმატებით შეცვალა შავი სია.
+  wwcConfigConversationChannelHoverFormatInput: 'თარგმნის ჰოვერის ტექსტის მიმდინარე
+    ფორმატია {0}. შესაძლო სტანდარტული არგუმენტები: {1}. თუ თქვენ გაქვთ PlaceholderAPI,
+    დარწმუნდით, რომ ეს ცვლადები გარშემორტყმულია პროცენტებით (%). დაბრუნებისთვის აკრიფეთ
+    0.'
+  wwcConfigConversationChannelFormatInput: 'ცალკე ჩატის არხის მიმდინარე ფორმატია {0}.
+    შესაძლო სტანდარტული არგუმენტები: {1}. თუ თქვენ გაქვთ PlaceholderAPI, დარწმუნდით,
+    რომ ეს ცვლადები გარშემორტყმულია პროცენტებით (%). დაბრუნებისთვის აკრიფეთ 0.'
+  wwcConfigConversationChatHoverFormatSuccess: თქვენი ჰოვერის ფორმატი წარმატებით შეიცვალა.
+  wwcConfigConversationLocalizeSyncSuccess: წარმატებით ჩართული სინქრონიზაცია მომხმარებლის
+  wwcConfigGUILocalizeSyncButton: მომხმარებლის ლოკალიზ
+  wwcConfigSyncUserLocalInvalid: მომხმარებლის ლოკალიზაციის პარამეტრების ნამდვილად
+    არ შეესაბამება...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: შეცვალეთ ჰოვერის ტექსტის ფორმატი
 

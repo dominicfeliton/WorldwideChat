@@ -698,16 +698,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Овозможи црна листа
   wwcConfigConversationBlacklistDeletionSuccess: Успешно го избриша терминот.
   wwcConfigGUIChatChannelSettings: Конфигурација на канал за разговор
-  wwcConfigGUIChatBlacklistSuccess: Успешно се префрли на црната листа.
   wwcConfigGUIChatMessagesBlacklistNewButton: Додај нов збор
   wwcConfigGUIChatChannelButton: Преведете ги поставките на каналот
   wwcConfigGUIBlacklistMessagesModify: Измени термин ({0})
   wwcConfigChatChannelFormatInvalid: Откриен неважечки формат на каналот. Стандардно
     на {0}...
-  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
-    разговор е {0}. Нашите стандардно признати аргументи што можете да ги вклучите:
-    {1}. Ако имате PlaceholderAPI, проверете дали тие променливи се опкружени со проценти
-    (%) наместо тоа. Напишете 0 за да се вратите назад.'
   wwcConfigGUIModifyBlacklistSettings: Изменете ја црната листа
   wwcConfigGUINextPageButton: Следна страница
   wwcConfigChatChannelHoverFormatInvalid: Откриен е неважечки формат на лебдење. Стандардно
@@ -718,4 +713,22 @@ Messages:
     на Minecraft ({0}). Напишете {1} за повеќе детали.
   wwcConfigBadYaml: 'Откриена е неважечка датотека YAML: {0}. Ве молиме обидете се
     да ја поправите оваа датотека или може да биде избришана!'
+  wwcConfigConversationChatBlacklistSuccess: Успешно се префрли на црната листа.
+  wwcConfigConversationChannelHoverFormatInput: 'Тековниот формат за превод на лебдејќи
+    текст е {0}. Можни стандардни аргументи: {1}. Ако имате PlaceholderAPI, проверете
+    дали тие променливи се опкружени со проценти (%) наместо тоа. Напишете 0 за да
+    се вратите назад.'
+  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
+    разговор е {0}. Можни стандардни аргументи: {1}. Ако имате PlaceholderAPI, проверете
+    дали тие променливи се опкружени со проценти (%) наместо тоа. Напишете 0 за да
+    се вратите назад.'
+  wwcConfigConversationChatHoverFormatSuccess: Вашиот формат на лебдење е успешно
+    променет.
+  wwcConfigConversationLocalizeSyncSuccess: Успешно вклучена локализација на синхронизирање
+    на корисникот.
+  wwcConfigGUILocalizeSyncButton: Синхронизирај локализација
+  wwcConfigSyncUserLocalInvalid: Синхронизирајте ја поставката за локализација на
+    корисникот Поставување на вистинито...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Променете го форматот на текст
+    на лебдењето
 

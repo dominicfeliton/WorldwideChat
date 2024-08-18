@@ -712,16 +712,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Cumasaigh Liosta Dubh
   wwcConfigConversationBlacklistDeletionSuccess: Scrios an téarma go rathúil.
   wwcConfigGUIChatChannelSettings: Cumraíocht Cainéal Comhrá
-  wwcConfigGUIChatBlacklistSuccess: D'éirigh leis an liosta dubh a athrú.
   wwcConfigGUIChatMessagesBlacklistNewButton: Cuir Focal Nua leis
   wwcConfigGUIChatChannelButton: Aistrigh Socruithe Channel
   wwcConfigGUIBlacklistMessagesModify: Téarma a mhodhnú ({0})
   wwcConfigChatChannelFormatInvalid: Formáid cainéal neamhbhailí braite Ag réamhshocrú
     go {0}...
-  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
-    comhrá ar leithligh. Ár n-argóintí aitheanta réamhshocraithe is féidir leat a
-    áireamh: {1}. Má tá PlaceholderAPI agat, déan cinnte go bhfuil na hathróga sin
-    timpeallaithe ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
   wwcConfigGUIModifyBlacklistSettings: Athraigh Liosta Dubh
   wwcConfigGUINextPageButton: An chéad leathanach eile
   wwcConfigChatChannelHoverFormatInvalid: Braithíodh formáid hover neamhbhailí. Ag
@@ -732,4 +727,19 @@ Messages:
     logánú Minecraft ({0}). Clóscríobh {1} le haghaidh tuilleadh sonraí.
   wwcConfigBadYaml: 'Braithíodh comhad YAML neamhbhailí: {0}. Déan iarracht an comhad
     seo a shocrú le do thoil nó féadfar é a scriosadh!'
+  wwcConfigConversationChatBlacklistSuccess: D'éirigh leis an liosta dubh a athrú.
+  wwcConfigConversationChannelHoverFormatInput: 'Is é {0} an fhormáid reatha le haghaidh
+    téacs hover aistriúcháin. Argóintí réamhshocraithe is féidir: {1}. Má tá PlaceholderAPI
+    agat, déan cinnte go bhfuil na hathróga sin timpeallaithe ag céatadáin (%) ina
+    ionad sin. Cineál 0 chun dul ar ais.'
+  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
+    comhrá ar leithligh. Argóintí réamhshocraithe is féidir: {1}. Má tá PlaceholderAPI
+    agat, déan cinnte go bhfuil na hathróga sin timpeallaithe ag céatadáin (%) ina
+    ionad sin. Cineál 0 chun dul ar ais.'
+  wwcConfigConversationChatHoverFormatSuccess: Tá d'fhormáid hover athraithe go rathúil.
+  wwcConfigConversationLocalizeSyncSuccess: Logánú úsáideora a shioncronú go rathúil.
+  wwcConfigGUILocalizeSyncButton: Logánú Úsáideora Sync
+  wwcConfigSyncUserLocalInvalid: Socraigh logánú úsáideora neamhbhailí. Ag réamhshocrú
+    go fíor...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Athraigh Formáid Téacs Hover
 

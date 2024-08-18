@@ -551,13 +551,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: 블랙리스트 활성화
   wwcConfigConversationBlacklistDeletionSuccess: 용어를 성공적으로 삭제했습니다.
   wwcConfigGUIChatChannelSettings: 채팅 채널 구성
-  wwcConfigGUIChatBlacklistSuccess: 블랙리스트를 성공적으로 전환했습니다.
   wwcConfigGUIChatMessagesBlacklistNewButton: 새 단어 추가
   wwcConfigGUIChatChannelButton: 채널 설정 번역
   wwcConfigGUIBlacklistMessagesModify: 용어 수정 ({0})
   wwcConfigChatChannelFormatInvalid: 잘못된 채널 형식이 감지되었습니다.기본값은 {0}...
-  wwcConfigConversationChannelFormatInput: 개별 채팅 채널의 현재 형식은 {0} 입니다.포함할 수 있는 기본 인식
-    인수는 {1} 입니다.PlaceHolderAPI를 사용하는 경우 해당 변수를 대신 백분율 (%) 로 묶어야 합니다.돌아가려면 0을 입력하세요.
   wwcConfigGUIModifyBlacklistSettings: 블랙리스트 수정
   wwcConfigGUINextPageButton: 다음 페이지
   wwcConfigChatChannelHoverFormatInvalid: 잘못된 호버 형식이 감지되었습니다.기본값은 {0}...
@@ -566,4 +563,14 @@ Messages:
   wwcOnJoinSetLocaleSuccess: 월드와이드챗은 귀하의 마인크래프트 현지화 ({0}) 를 감지했으며 이를 반영할 예정입니다.자세한
     내용을 보려면 {1} 를 입력하세요.
   wwcConfigBadYaml: '잘못된 YAML 파일이 발견되었습니다: {0}.이 파일을 수정해 보십시오. 그렇지 않으면 삭제될 수 있습니다!'
+  wwcConfigConversationChatBlacklistSuccess: 블랙리스트를 성공적으로 전환했습니다.
+  wwcConfigConversationChannelHoverFormatInput: '번역 호버 텍스트의 현재 형식은 {0} 입니다.가능한 기본
+    인수: {1}.PlaceHolderAPI를 사용하는 경우 해당 변수를 대신 백분율 (%) 로 묶어야 합니다.돌아가려면 0을 입력하세요.'
+  wwcConfigConversationChannelFormatInput: 개별 채팅 채널의 현재 형식은 {0} 입니다.가능한 기본 인수는 {1}
+    입니다.PlaceHolderAPI를 사용하는 경우 해당 변수를 대신 백분율 (%) 로 묶어야 합니다.돌아가려면 0을 입력하세요.
+  wwcConfigConversationChatHoverFormatSuccess: 호버 형식이 성공적으로 변경되었습니다.
+  wwcConfigConversationLocalizeSyncSuccess: 사용자 현지화 동기화를 성공적으로 전환했습니다.
+  wwcConfigGUILocalizeSyncButton: 동기화 사용자 로컬라이제이션
+  wwcConfigSyncUserLocalInvalid: 동기화 사용자 현지화 설정이 잘못되었습니다.기본값은 true입니다...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: 호버 텍스트 형식 변경
 

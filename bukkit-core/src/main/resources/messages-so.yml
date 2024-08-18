@@ -691,16 +691,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Liiska madow u ogolaan
   wwcConfigConversationBlacklistDeletionSuccess: Waxaa si guul la jiray muuqda.
   wwcConfigGUIChatChannelSettings: Configuration Channel Chat
-  wwcConfigGUIChatBlacklistSuccess: Si guul la wareegay liiska madow.
   wwcConfigGUIChatMessagesBlacklistNewButton: Kudar Eyn Cusub
   wwcConfigGUIChatChannelButton: Tarjumaad Saadigaha Channel
   wwcConfigGUIBlacklistMessagesModify: Beddelka Termada ({0})
   wwcConfigChatChannelFormatInvalid: Qaabka kanaalka ah oo la ogaaday Defaulting to
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
-    ah waa {0}. Doodkeena oo la aqoonsaday oo aad ka mid kartaa: {1}. Haddii aad leeyihiin
-    PlaceholderAPI, hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca
-    0 si aad dib ugu soo noqon.'
   wwcConfigGUIModifyBlacklistSettings: Bedelka Liiska Madow
   wwcConfigGUINextPageButton: Bogga Xiga
   wwcConfigChatChannelHoverFormatInvalid: Qaabka hover waad ah la ogaaday. Defaulting
@@ -711,4 +706,21 @@ Messages:
     Minecraft ({0}). Nooca {1} oo faahfaahin dheeraad ah.
   wwcConfigBadYaml: 'Faylka YAML ah oo lagu ogaaday: {0}. Fadlan isku dayi in la saxiyo
     faylkan ama waa la riir karaa!'
+  wwcConfigConversationChatBlacklistSuccess: Si guul la wareegay liiska madow.
+  wwcConfigConversationChannelHoverFormatInput: 'Qaabka hadda ee tarjimada qoraalka
+    hover waa {0}. Doodaha lagu suurtagayo: {1}. Haddii aad leeyihiin PlaceholderAPI,
+    hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca 0 si aad dib
+    ugu soo noqon.'
+  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
+    ah waa {0}. Doodaha lagu suurtagayo: {1}. Haddii aad leeyihiin PlaceholderAPI,
+    hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca 0 si aad dib
+    ugu soo noqon.'
+  wwcConfigConversationChatHoverFormatSuccess: Qaabkaaga hover ayaa si guul ah la
+    beddelay.
+  wwcConfigConversationLocalizeSyncSuccess: Si guul la toogay deegaanka isticmaalka
+    sameynta.
+  wwcConfigGUILocalizeSyncButton: Goobta Isticmaalka Sync
+  wwcConfigSyncUserLocalInvalid: Deegaanka isgelinta isticmaalka Sync. Deegaanta in
+    dhab...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Bedelka Qaabka Qoraalka Hover
 

@@ -691,16 +691,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Активиране на черния списък
   wwcConfigConversationBlacklistDeletionSuccess: Успешно се изтрива терминът.
   wwcConfigGUIChatChannelSettings: Конфигурация на чат канала
-  wwcConfigGUIChatBlacklistSuccess: Успешно превключвахме черния списък.
   wwcConfigGUIChatMessagesBlacklistNewButton: Добавяне на нова дума
   wwcConfigGUIChatChannelButton: Превод на настройките на канала
   wwcConfigGUIBlacklistMessagesModify: Промяна на термина ({0})
   wwcConfigChatChannelFormatInvalid: Открит е невалиден формат на канала. По подразбиране
     на {0}...
-  wwcConfigConversationChannelFormatInput: 'Текущият формат за отделния чат канал
-    е {0}. Нашите разпознати аргументи по подразбиране, които можете да включите:
-    {1}. Ако имате PlaceholderAPI, уверете се, че тези променливи са заобиколени от
-    проценти (%) вместо това. Въведете 0, за да се върнете назад.'
   wwcConfigGUIModifyBlacklistSettings: Промяна на черния списък
   wwcConfigGUINextPageButton: Следваща страница
   wwcConfigChatChannelHoverFormatInvalid: Открит е невалиден формат на задържането
@@ -711,4 +706,22 @@ Messages:
     на Minecraft ({0}). Въведете {1} за повече подробности.
   wwcConfigBadYaml: 'Открит е невалиден YAML файл: {0}. Моля, опитайте се да поправите
     този файл или той може да бъде изтрит!'
+  wwcConfigConversationChatBlacklistSuccess: Успешно превключвахме черния списък.
+  wwcConfigConversationChannelHoverFormatInput: 'Текущият формат за превод на курсора
+    на мишката на текста е {0}. Възможни аргументи по подразбиране: {1}. Ако имате
+    PlaceholderAPI, уверете се, че тези променливи са заобиколени от проценти (%)
+    вместо това. Въведете 0, за да се върнете назад.'
+  wwcConfigConversationChannelFormatInput: 'Текущият формат за отделния чат канал
+    е {0}. Възможни аргументи по подразбиране: {1}. Ако имате PlaceholderAPI, уверете
+    се, че тези променливи са заобиколени от проценти (%) вместо това. Въведете 0,
+    за да се върнете назад.'
+  wwcConfigConversationChatHoverFormatSuccess: Вашият формат на курсора на мишката
+    е променен успешно.
+  wwcConfigConversationLocalizeSyncSuccess: Успешно превключване на синхронизиране
+    на локализация на потребителите.
+  wwcConfigGUILocalizeSyncButton: Синхронизиране на локализация
+  wwcConfigSyncUserLocalInvalid: Настройката за локализация на потребителите за синхронизиране
+    По подразбиране на вярно...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Промяна на текстовия формат на
+    мишката
 

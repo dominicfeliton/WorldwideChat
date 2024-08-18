@@ -654,15 +654,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktiver svarteliste
   wwcConfigConversationBlacklistDeletionSuccess: Vellykket slettet begrepet.
   wwcConfigGUIChatChannelSettings: Chatkanalkonfigurasjon
-  wwcConfigGUIChatBlacklistSuccess: Vellykket å bytte svartelisten.
   wwcConfigGUIChatMessagesBlacklistNewButton: Legg til nytt ord
   wwcConfigGUIChatChannelButton: Oversett kanalinnstillinger
   wwcConfigGUIBlacklistMessagesModify: Endre begrep ({0})
   wwcConfigChatChannelFormatInvalid: Ugyldig kanalformat oppdaget. Standard til {0}...
-  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
-    er {0}. Våre standard gjenkjente argumenter som du kan inkludere: {1}. Hvis du
-    har PlaceHolderAPI, må du sørge for at disse variablene er omgitt av prosenter
-    (%) i stedet. Skriv 0 for å gå tilbake.'
   wwcConfigGUIModifyBlacklistSettings: Endre svarteliste
   wwcConfigGUINextPageButton: Neste side
   wwcConfigChatChannelHoverFormatInvalid: Ugyldig musepekkeformat oppdaget. Standard
@@ -673,4 +668,20 @@ Messages:
     din ({0}). Skriv inn {1} for mer informasjon.
   wwcConfigBadYaml: 'Ugyldig YAML-fil oppdaget: {0}. Vennligst prøv å fikse denne
     filen, ellers kan den bli slettet!'
+  wwcConfigConversationChatBlacklistSuccess: Vellykket å bytte svartelisten.
+  wwcConfigConversationChannelHoverFormatInput: 'Gjeldende format for oversettingstekst
+    er {0}. Mulige standardargumenter: {1}. Hvis du har PlaceHolderAPI, må du sørge
+    for at disse variablene er omgitt av prosenter (%) i stedet. Skriv 0 for å gå
+    tilbake.'
+  wwcConfigConversationChannelFormatInput: 'Gjeldende format for den separate chat-kanalen
+    er {0}. Mulige standardargumenter: {1}. Hvis du har PlaceHolderAPI, må du sørge
+    for at disse variablene er omgitt av prosenter (%) i stedet. Skriv 0 for å gå
+    tilbake.'
+  wwcConfigConversationChatHoverFormatSuccess: Hover-formatet ditt har blitt endret
+    med hell.
+  wwcConfigConversationLocalizeSyncSuccess: Vellykket synkronisering av brukerlokalisering.
+  wwcConfigGUILocalizeSyncButton: Synkroniser brukerlokalisering
+  wwcConfigSyncUserLocalInvalid: Synkroniser brukerlokaliseringsinnstilling ugyldig.
+    Standardiserer til sant...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Endre musepekstformat
 

@@ -606,14 +606,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: הפעל רשימה שחורה
   wwcConfigConversationBlacklistDeletionSuccess: מחק בהצלחה את המונח.
   wwcConfigGUIChatChannelSettings: תצורת ערוץ צ'אט
-  wwcConfigGUIChatBlacklistSuccess: החלף בהצלחה את הרשימה השחורה.
   wwcConfigGUIChatMessagesBlacklistNewButton: הוסף מילה חדשה
   wwcConfigGUIChatChannelButton: תרגם הגדרות ערוץ
   wwcConfigGUIBlacklistMessagesModify: שנה מונח ({0})
   wwcConfigChatChannelFormatInvalid: פורמט ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
-  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
-    {0}. ארגומנטים מוכרים כברירת מחדל שניתן לכלול: {1}. אם יש לך PlaceHolderAPI, ודא
-    שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
   wwcConfigGUIModifyBlacklistSettings: שנה רשימה שחורה
   wwcConfigGUINextPageButton: העמוד הבא
   wwcConfigChatChannelHoverFormatInvalid: פורמט ריחוף לא חוקי זוהה. ברירת המחדל היא
@@ -624,4 +620,17 @@ Messages:
     ({0}). הקלד {1} לפרטים נוספים.
   wwcConfigBadYaml: 'קובץ YAML לא חוקי זוהה: {0}. אנא נסה לתקן קובץ זה או שהוא עלול
     להימחק!'
+  wwcConfigConversationChatBlacklistSuccess: החלף בהצלחה את הרשימה השחורה.
+  wwcConfigConversationChannelHoverFormatInput: 'הפורמט הנוכחי לתרגום טקסט העף הוא
+    {0}. ארגומנטים ברירת מחדל אפשריים: {1}. אם יש לך PlaceHolderAPI, ודא שהמשתנים
+    האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
+    {0}. ארגומנטים ברירת מחדל אפשריים: {1}. אם יש לך PlaceHolderAPI, ודא שהמשתנים
+    האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcConfigConversationChatHoverFormatSuccess: פורמט העכבר שלך השתנה בהצלחה.
+  wwcConfigConversationLocalizeSyncSuccess: החלפת סנכרון לוקליזציה של משתמשים בהצלחה.
+  wwcConfigGUILocalizeSyncButton: סנכרון לוקליזציה של משתמשים
+  wwcConfigSyncUserLocalInvalid: הגדרת לוקליזציה של משתמשים לסנכרון לא חוקית. ברירת
+    מחדל נכון...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: שינוי תבנית טקסט העכבר
 

@@ -702,16 +702,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Хар жагсаалтыг идэвхжүүлэх
   wwcConfigConversationBlacklistDeletionSuccess: Энэ нэр томъёог амжилттай устгасан.
   wwcConfigGUIChatChannelSettings: Чат сувгийн тохиргоо
-  wwcConfigGUIChatBlacklistSuccess: Хар жагсаалтыг амжилттай сольсон.
   wwcConfigGUIChatMessagesBlacklistNewButton: Шинэ үг нэмэх
   wwcConfigGUIChatChannelButton: Сувгийн тохиргоог орчуулах
   wwcConfigGUIBlacklistMessagesModify: Нэр томъёог өөрчлөх ({0})
   wwcConfigChatChannelFormatInvalid: Хүчингүй сувгийн формат илэрсэн. {0} гэж анхдагч
     байна...
-  wwcConfigConversationChannelFormatInput: 'Тусдаа чат сувгийн одоогийн формат нь
-    {0} юм. Таны оруулж болох бидний анхдагч хүлээн зөвшөөрөгдсөн аргументууд: {1}.
-    Хэрэв танд PlaceholderAPI байгаа бол тэдгээр хувьсагчууд оронд нь хувь (%) -ээр
-    хүрээлэгдсэн эсэхийг шалгаарай. Буцахын тулд 0 гэж бичнэ үү.'
   wwcConfigGUIModifyBlacklistSettings: Хар жагсаалтыг өөрчлөх
   wwcConfigGUINextPageButton: Дараагийн хуудас
   wwcConfigChatChannelHoverFormatInvalid: Хүчин төгөлдөр бус ховер формат илэрсэн.
@@ -722,4 +717,20 @@ Messages:
     тусгах болно ({0}). Дэлгэрэнгүй мэдээллийг {1} гэж бичнэ үү.
   wwcConfigBadYaml: 'Хүчин төгөлдөр бус YAML файл илэрсэн: {0}. Энэ файлыг засахыг
     оролдоно уу эсвэл устгагдаж магадгүй юм!'
+  wwcConfigConversationChatBlacklistSuccess: Хар жагсаалтыг амжилттай сольсон.
+  wwcConfigConversationChannelHoverFormatInput: 'Орчуулгын ховер текстийн одоогийн
+    формат нь {0} юм. Боломжит анхдагч аргументууд: {1}. Хэрэв та PlaceholderAPI байгаа
+    бол тэдгээр хувьсагчууд оронд нь хувь (%) -ээр хүрээлэгдсэн эсэхийг шалгаарай.
+    Буцахын тулд 0 гэж бичнэ үү.'
+  wwcConfigConversationChannelFormatInput: 'Тусдаа чат сувгийн одоогийн формат нь
+    {0} юм. Боломжит анхдагч аргументууд: {1}. Хэрэв танд PlaceholderAPI байгаа бол
+    тэдгээр хувьсагчууд оронд нь хувь (%) -ээр хүрээлэгдсэн эсэхийг шалгаарай. Буцахын
+    тулд 0 гэж бичнэ үү.'
+  wwcConfigConversationChatHoverFormatSuccess: Таны hover формат амжилттай өөрчлөгдсөн.
+  wwcConfigConversationLocalizeSyncSuccess: Хэрэглэгчийн нутагшуулалтыг синхрончлолыг
+    амжилттай сольсон.
+  wwcConfigGUILocalizeSyncButton: Хэрэглэгчийн локализацыг синк
+  wwcConfigSyncUserLocalInvalid: Sync хэрэглэгчийн нутагшуулах тохиргоо хүчин төгөлдөр
+    Үнэн гэж анхдагч байна...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ховер текстийн форматыг өөрчлөх
 

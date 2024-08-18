@@ -675,16 +675,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Kunna jerin baƙar fata
   wwcConfigConversationBlacklistDeletionSuccess: An sami nasarar share kalmar.
   wwcConfigGUIChatChannelSettings: Tsarin Tashoshin Taɗi
-  wwcConfigGUIChatBlacklistSuccess: An sami nasarar canza jerin baki.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ƙara Sabuwar Kalma
   wwcConfigGUIChatChannelButton: Fassara Saitunan Tashar
   wwcConfigGUIBlacklistMessagesModify: Gyara Lokaci ({0})
   wwcConfigChatChannelFormatInvalid: An gano tsarin tashar mara kyau. Rashin zuwa
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Tsarin yanzu don tashar tattaunawa ta
-    daban shine {0}. Tsoffin hujjojinmu da za ku iya haɗawa da: {1}. Idan kuna da
-    PlaceholderAPI, tabbatar cewa waɗancan masu canji suna kewaye da kashi (%) maimakon
-    haka. Rubuta 0 don komawa.'
   wwcConfigGUIModifyBlacklistSettings: Gyara jerin baƙar fata
   wwcConfigGUINextPageButton: Shafi na gaba
   wwcConfigChatChannelHoverFormatInvalid: An gano tsarin hover mara kyau. Rarraba
@@ -695,4 +690,21 @@ Messages:
     ɗinku ({0}). Rubuta {1} don ƙarin cikakkun bayanai.
   wwcConfigBadYaml: 'An gano fayil ɗin YAML mara kyau: {0}. Da fatan za a yi ƙoƙarin
     gyara wannan fayil ko kuma ana iya share shi!'
+  wwcConfigConversationChatBlacklistSuccess: An sami nasarar canza jerin baki.
+  wwcConfigConversationChannelHoverFormatInput: 'Tsarin yanzu don fassarar rubutu
+    na fassara shine {0}. Yiwuwar tsoffin hujjoji: {1}. Idan kuna da PlaceholderAPI,
+    tabbatar cewa waɗancan masu canji suna kewaye da kashi (%) maimakon haka. Rubuta
+    0 don komawa.'
+  wwcConfigConversationChannelFormatInput: 'Tsarin yanzu don tashar tattaunawa ta
+    daban shine {0}. Yiwuwar tsoffin hujjoji: {1}. Idan kuna da PlaceholderAPI, tabbatar
+    cewa waɗancan masu canji suna kewaye da kashi (%) maimakon haka. Rubuta 0 don
+    komawa.'
+  wwcConfigConversationChatHoverFormatSuccess: An canza tsarin hover ɗin ku cikin
+    nasara.
+  wwcConfigConversationLocalizeSyncSuccess: An sami nasarar canza daidaitaccen yanayin
+    mai amfani.
+  wwcConfigGUILocalizeSyncButton: Daidaita Yanayin Mai Amfani
+  wwcConfigSyncUserLocalInvalid: Daidaita saitin yankewar mai amfani ba daidai ba.
+    Rashin gaskiya zuwa gaskiya...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Canja Tsarin Rubutu na Hover
 

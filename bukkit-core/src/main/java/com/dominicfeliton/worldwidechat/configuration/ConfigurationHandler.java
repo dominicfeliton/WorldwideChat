@@ -17,7 +17,6 @@ import org.bson.conversions.Bson;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
@@ -274,6 +273,13 @@ public class ConfigurationHandler {
 			main.setSyncUserDataDelay(7200);
 			main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
 		}
+		// Sync User Localizations
+		try {
+			main.setSyncUserLocal(mainConfig.getBoolean("General.syncUserLocalization"));
+		} catch (Exception e) {
+			main.setSyncUserLocal(true);
+			main.getLogger().warning(refs.getMsg("wwcConfigSyncUserLocalInvalid", null));
+		}
 		// Rate limit Settings
 		try {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
@@ -332,7 +338,6 @@ public class ConfigurationHandler {
 					new String[] {refs.serial(main.getTranslateIcon())},
 					null));
 		}
-		// TODO: getLogger() success message for both Formats below?
 		// Separate Chat Channel Format
 		try {
 			String format = mainConfig.getString("Chat.separateChatChannel.format");
@@ -352,8 +357,14 @@ public class ConfigurationHandler {
 		}
 		// Hover Text Format
 		try {
-			String format = mainConfig.getString("Chat.separateChatChannel.hoverFormat");
-			main.setTranslateHoverFormat(format);
+			if (mainConfig.getBoolean("Chat.sendIncomingHoverTextChat") ||
+					mainConfig.getBoolean("Chat.sendOutgoingHoverTextChat")) {
+				String format = mainConfig.getString("Chat.separateChatChannel.hoverFormat");
+				main.setTranslateHoverFormat(format);
+			} else {
+				refs.debugMsg("Not setting hover text, setting to nothing");
+				main.setTranslateHoverFormat("");
+			}
 
 			// PAPI detection not needed, already sufficiently warned by Format
 		} catch (Exception e) {

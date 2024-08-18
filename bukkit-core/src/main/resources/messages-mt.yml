@@ -682,16 +682,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Ippermetti l-Lista s-sewda
   wwcConfigConversationBlacklistDeletionSuccess: It-terminu ħassar b'suċċess.
   wwcConfigGUIChatChannelSettings: Konfigurazzjoni tal-Kanal taċ-Ċat
-  wwcConfigGUIChatBlacklistSuccess: Tbiddel b'suċċess il-lista s-sewda.
   wwcConfigGUIChatMessagesBlacklistNewButton: Żid Kelma Ġdida
   wwcConfigGUIChatChannelButton: Ittraduċi Settings tal-Kanal
   wwcConfigGUIBlacklistMessagesModify: Imodifika t-Terminu ({0})
   wwcConfigChatChannelFormatInvalid: Format tal-kanal invalidu skopert. Insuffiċjenza
     għal {0}...
-  wwcConfigConversationChannelFormatInput: 'Il-format attwali għall-kanal separat
-    taċ-chat huwa {0}. L-argumenti rikonoxxuti default tagħna li tista ''tinkludi:
-    {1}. Jekk għandek PlaceholderAPI, kun żgur li dawk il-varjabbli huma mdawra b''perċentwali
-    (%) minflok. Tip 0 biex tmur lura.'
   wwcConfigGUIModifyBlacklistSettings: Imodifika l-lista s-sewda
   wwcConfigGUINextPageButton: Paġna li jmiss
   wwcConfigChatChannelHoverFormatInvalid: Format ta 'hover invalidu skopert. Insuffiċjenza
@@ -702,4 +697,21 @@ Messages:
     Minecraft tiegħek ({0}). Ittajpja {1} għal aktar dettalji.
   wwcConfigBadYaml: 'Fajl YAML invalidu skopert: {0}. Jekk jogħġbok ipprova tiffissa
     dan il-fajl jew jista ''jitħassar!'
+  wwcConfigConversationChatBlacklistSuccess: Tbiddel b'suċċess il-lista s-sewda.
+  wwcConfigConversationChannelHoverFormatInput: 'Il-format attwali għat-test hover
+    tat-traduzzjoni huwa {0}. Argumenti awtomatiċi possibbli: {1}. Jekk għandek PlaceholderAPI,
+    kun żgur li dawk il-varjabbli huma mdawra b''perċentwali (%) minflok. Tip 0 biex
+    tmur lura.'
+  wwcConfigConversationChannelFormatInput: 'Il-format attwali għall-kanal separat
+    taċ-chat huwa {0}. Argumenti awtomatiċi possibbli: {1}. Jekk għandek PlaceholderAPI,
+    kun żgur li dawk il-varjabbli huma mdawra b''perċentwali (%) minflok. Tip 0 biex
+    tmur lura.'
+  wwcConfigConversationChatHoverFormatSuccess: Il-format tal-hover tiegħek inbidel
+    b'suċċess.
+  wwcConfigConversationLocalizeSyncSuccess: Is-sinkronizzazzjoni tal-lokalizzazzjoni
+    tal-utent imdawwar b'suċċess
+  wwcConfigGUILocalizeSyncButton: Sinkronizzazzjoni tal-Lokalizzazzjoni
+  wwcConfigSyncUserLocalInvalid: Issettjar tal-lokalizzazzjoni tal-utent tas-sinkronizzazzjoni
+    Insuffiċjenza għal veru...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ibdel il-Format tat-Test tal-Hover
 

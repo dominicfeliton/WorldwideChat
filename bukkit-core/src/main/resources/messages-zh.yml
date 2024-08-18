@@ -506,13 +506,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: 启用黑名单
   wwcConfigConversationBlacklistDeletionSuccess: 已成功删除该术语。
   wwcConfigGUIChatChannelSettings: 聊天频道配置
-  wwcConfigGUIChatBlacklistSuccess: 成功切换黑名单。
   wwcConfigGUIChatMessagesBlacklistNewButton: 添加新单词
   wwcConfigGUIChatChannelButton: 翻译频道设置
   wwcConfigGUIBlacklistMessagesModify: 修改条款 ({0})
   wwcConfigChatChannelFormatInvalid: 检测到无效的频道格式。默认为 {0}...
-  wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。我们默认可识别的参数，您可以包括：{1}.如果你有占位符
-    API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
   wwcConfigGUIModifyBlacklistSettings: 修改黑名单
   wwcConfigGUINextPageButton: 下一页
   wwcConfigChatChannelHoverFormatInvalid: 检测到无效的悬停格式。默认为 {0}...
@@ -520,4 +517,14 @@ Messages:
   wwctGUIMainMenuPlayer: 翻译 {0}
   wwcOnJoinSetLocaleSuccess: WorldwideChat 已检测到并将反映你的《我的世界》本地化 ({0})。键入 {1} 以获取更多详细信息。
   wwcConfigBadYaml: 检测到无效的 YAML 文件：{0}。请尝试修复此文件，否则它可能会被删除！
+  wwcConfigConversationChatBlacklistSuccess: 成功切换黑名单。
+  wwcConfigConversationChannelHoverFormatInput: 翻译悬停文本的当前格式为 {0}。可能的默认参数：{1}。如果你有占位符
+    API，请确保改为用百分比 (%) 包围这些变量。键入 0 返回。
+  wwcConfigConversationChannelFormatInput: 单独聊天频道的当前格式为 {0}。可能的默认参数：{1}。如果你有占位符 API，请确保改为用百分比
+    (%) 包围这些变量。键入 0 返回。
+  wwcConfigConversationChatHoverFormatSuccess: 您的悬停格式已成功更改。
+  wwcConfigConversationLocalizeSyncSuccess: 成功切换同步用户本地化。
+  wwcConfigGUILocalizeSyncButton: 同步用户本地化
+  wwcConfigSyncUserLocalInvalid: 同步用户本地化设置无效。默认为真...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: 更改悬停文本格式
 

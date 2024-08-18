@@ -671,16 +671,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: لیست سیاه را فعال کنید
   wwcConfigConversationBlacklistDeletionSuccess: اصطلاح را با موفقیت حذف کرد.
   wwcConfigGUIChatChannelSettings: پیکربندی کانال چت
-  wwcConfigGUIChatBlacklistSuccess: لیست سیاه را با موفقیت تغییر داد.
   wwcConfigGUIChatMessagesBlacklistNewButton: افزودن کلمه جدید
   wwcConfigGUIChatChannelButton: ترجمه تنظیمات کانال
   wwcConfigGUIBlacklistMessagesModify: اصلاح اصطلاح ({0})
   wwcConfigChatChannelFormatInvalid: فرمت کانال نامعتبر شناسایی شد. به طور پیش فرض
     به {0}...
-  wwcConfigConversationChannelFormatInput: 'قالب فعلی برای کانال چت جداگانه {0} است.
-    آرگومانهای پیش فرض شناخته شده ما که می توانید آن را شامل کنید: {1}. اگر PlaceHolderAPI
-    دارید، مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. 0 را برای
-    بازگشت تایپ کنید.'
   wwcConfigGUIModifyBlacklistSettings: اصلاح لیست سیاه
   wwcConfigGUINextPageButton: صفحه بعدی
   wwcConfigChatChannelHoverFormatInvalid: فرمت هوور نامعتبر شناسایی شد. به طور پیش
@@ -691,4 +686,19 @@ Messages:
     و منعکس می کند ({0}). برای جزئیات بیشتر {1} را تایپ کنید.
   wwcConfigBadYaml: 'فایل YAML نامعتبر شناسایی شد: {0}. لطفا سعی کنید این فایل را
     اصلاح کنید وگرنه ممکن است حذف شود!'
+  wwcConfigConversationChatBlacklistSuccess: لیست سیاه را با موفقیت تغییر داد.
+  wwcConfigConversationChannelHoverFormatInput: 'فرمت فعلی برای ترجمه متن هور {0}
+    است. آرگومانهای پیش فرض احتمالی: {1}. اگر PlaceHolderAPI دارید، مطمئن شوید که
+    این متغیرها به جای آن با درصد (%) احاطه شده اند. 0 را برای بازگشت تایپ کنید.'
+  wwcConfigConversationChannelFormatInput: 'قالب فعلی برای کانال چت جداگانه {0} است.
+    آرگومانهای پیش فرض احتمالی: {1}. اگر PlaceHolderAPI دارید، مطمئن شوید که این متغیرها
+    به جای آن با درصد (%) احاطه شده اند. 0 را برای بازگشت تایپ کنید.'
+  wwcConfigConversationChatHoverFormatSuccess: فرمت hover شما با موفقیت تغییر کرده
+    است.
+  wwcConfigConversationLocalizeSyncSuccess: همگام سازی محلی سازی کاربر را با موفقیت
+    تغییر داد.
+  wwcConfigGUILocalizeSyncButton: همگام سازی محلی سازی کاربر
+  wwcConfigSyncUserLocalInvalid: تنظیم محلی سازی کاربر همگام سازی نامعتبر است. به
+    طور پیش فرض به true تبدیل می شود...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: تغییر فرمت متن Hover
 

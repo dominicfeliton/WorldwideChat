@@ -690,16 +690,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Feketelista engedélyezése
   wwcConfigConversationBlacklistDeletionSuccess: Sikeresen törölte a kifejezést.
   wwcConfigGUIChatChannelSettings: Csevegőcsatorna konfigurálása
-  wwcConfigGUIChatBlacklistSuccess: Sikeresen váltotta át a feketelistát.
   wwcConfigGUIChatMessagesBlacklistNewButton: Új szó hozzáadása
   wwcConfigGUIChatChannelButton: Csatorna beállítások fordítása
   wwcConfigGUIBlacklistMessagesModify: Kifejezés módosítása ({0})
   wwcConfigChatChannelFormatInvalid: Érvénytelen csatornaformátum észlelhető. Alapértelmezés
     szerint {0}...
-  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
-    {0}. Alapértelmezett felismert argumentumaink, amelyeket felvehet: {1}. Ha van
-    PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok (%) veszik
-    körül. Írja be a 0-at, hogy visszatérjen.'
   wwcConfigGUIModifyBlacklistSettings: Feketelista módosítása
   wwcConfigGUINextPageButton: Következő oldal
   wwcConfigChatChannelHoverFormatInvalid: Érvénytelen lebegő formátum észlelhető.
@@ -710,4 +705,21 @@ Messages:
     lokalizációját ({0}). További részletekért írja be a {1} parancsot.
   wwcConfigBadYaml: 'Érvénytelen YAML fájl észlelhető: {0}. Kérjük, próbálja meg javítani
     ezt a fájlt, különben törölhető!'
+  wwcConfigConversationChatBlacklistSuccess: Sikeresen váltotta át a feketelistát.
+  wwcConfigConversationChannelHoverFormatInput: 'A fordítási egérszöveg aktuális formátuma
+    {0}. Lehetséges alapértelmezett argumentumok: {1}. Ha van PlaceholderAPI, győződjön
+    meg róla, hogy ezeket a változókat százalékok (%) veszik körül. Írja be a 0-at,
+    hogy visszatérjen.'
+  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
+    {0}. Lehetséges alapértelmezett argumentumok: {1}. Ha van PlaceholderAPI, győződjön
+    meg róla, hogy ezeket a változókat százalékok (%) veszik körül. Írja be a 0-at,
+    hogy visszatérjen.'
+  wwcConfigConversationChatHoverFormatSuccess: Az egérmutató formátumát sikeresen
+    megváltoztatták.
+  wwcConfigConversationLocalizeSyncSuccess: Sikeresen kapcsolta be a felhasználói
+    lokalizáció szinkronizálását.
+  wwcConfigGUILocalizeSyncButton: Felhasználói lokalizáció szinkronizálása
+  wwcConfigSyncUserLocalInvalid: A felhasználói lokalizációs beállítás szinkronizálása
+    érvénytelen. Alapértelmezés szerint igaz...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Módosítsa a Hover szövegformátumot
 

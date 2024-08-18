@@ -680,16 +680,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: బ్లాక్లిస్ట్ను ప్రారంభించండి
   wwcConfigConversationBlacklistDeletionSuccess: ఈ పదాన్ని విజయవంతంగా తొలగించారు.
   wwcConfigGUIChatChannelSettings: చాట్ ఛానల్ కాన్ఫిగరేషన్
-  wwcConfigGUIChatBlacklistSuccess: బ్లాక్లిస్ట్ను విజయవంతంగా టోగల్ చేశారు.
   wwcConfigGUIChatMessagesBlacklistNewButton: క్రొత్త పదాన్ని జోడించండి
   wwcConfigGUIChatChannelButton: ఛానల్ సెట్టింగ్లను అనువద
   wwcConfigGUIBlacklistMessagesModify: పదం సవరించండి ({0})
   wwcConfigChatChannelFormatInvalid: చెల్లని ఛానల్ ఫార్మాట్ కనుగొనబడింది. {0} కు డిఫాల్ట్
     అవుతోంది...
-  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
-    {0}. మీరు చేర్చగల మా డిఫాల్ట్ గుర్తించిన వాదనలు: {1}. మీరు PlaceholderAPI కలిగి
-    ఉంటే, ఆ వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి
-    వెళ్ళడానికి 0 అని టైప్ చేయండి.'
   wwcConfigGUIModifyBlacklistSettings: బ్లాక్లిస్ట్ను సవరించండి
   wwcConfigGUINextPageButton: తదుపరి పేజీ
   wwcConfigChatChannelHoverFormatInvalid: చెల్లని హోవర్ ఫార్మాట్ కనుగొనబడింది. {0}
@@ -700,4 +695,20 @@ Messages:
     ప్రతిబింబిస్తుంది ({0}). మరిన్ని వివరాల కోసం {1} అని టైప్ చేయండి.
   wwcConfigBadYaml: 'చెల్లని YAML ఫైల్ కనుగొనబడింది: {0}. దయచేసి ఈ ఫైల్ను పరిష్కరించడానికి
     ప్రయత్నించండి లేదా అది తొలగించబడవచ్చు!'
+  wwcConfigConversationChatBlacklistSuccess: బ్లాక్లిస్ట్ను విజయవంతంగా టోగల్ చేశారు.
+  wwcConfigConversationChannelHoverFormatInput: 'అనువాద హోవర్ టెక్స్ట్ కోసం ప్రస్తుత
+    ఫార్మాట్ {0}. సాధ్యమైన డిఫాల్ట్ వాదనలు: {1}. మీరు PlaceholderAPI కలిగి ఉంటే, ఆ
+    వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి వెళ్ళడానికి
+    0 అని టైప్ చేయండి.'
+  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
+    {0}. సాధ్యమైన డిఫాల్ట్ వాదనలు: {1}. మీరు PlaceholderAPI కలిగి ఉంటే, ఆ వేరియబుల్స్
+    బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి వెళ్ళడానికి 0 అని
+    టైప్ చేయండి.'
+  wwcConfigConversationChatHoverFormatSuccess: మీ హోవర్ ఫార్మాట్ విజయవంతంగా మార్చబడింది.
+  wwcConfigConversationLocalizeSyncSuccess: వినియోగదారు స్థానికీకరణను సమకాలీకరించడాన్ని
+    విజయవంతంగా టోగల్ చేసింది.
+  wwcConfigGUILocalizeSyncButton: సమకాలీకరించండి యూజర్ స్థానికీకరణ
+  wwcConfigSyncUserLocalInvalid: సమకాలీకరించు వినియోగదారు స్థానికీకరణ సెట్టింగ్ చెల్లదు.
+    నిజానికి డిఫాల్టింగ్...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: హోవర్ టెక్స్ట్ ఫార్మాట్ను మార్చండి
 

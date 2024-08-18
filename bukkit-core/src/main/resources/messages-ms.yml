@@ -669,16 +669,11 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Dayakan Senarai Hitam
   wwcConfigConversationBlacklistDeletionSuccess: Berjaya memadamkan istilah tersebut.
   wwcConfigGUIChatChannelSettings: Konfigurasi Saluran Sembang
-  wwcConfigGUIChatBlacklistSuccess: Berjaya menukar senarai hitam.
   wwcConfigGUIChatMessagesBlacklistNewButton: Tambah Perkataan Baru
   wwcConfigGUIChatChannelButton: Terjemah Tetapan Saluran
   wwcConfigGUIBlacklistMessagesModify: Ubah suai Terma ({0})
   wwcConfigChatChannelFormatInvalid: Format saluran tidak sah dikesan. Lalai kepada
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
-    ialah {0}. Hujah lalai kami yang diiktiraf yang boleh anda sertakan: {1}. Jika
-    anda mempunyai PlaceholderAPI, pastikan pemboleh ubah tersebut dikelilingi oleh
-    peratusan (%) sebagai gantinya. Taipkan 0 untuk kembali.'
   wwcConfigGUIModifyBlacklistSettings: Ubah suai senarai hitam
   wwcConfigGUINextPageButton: Halaman Seterusnya
   wwcConfigChatChannelHoverFormatInvalid: Format hover tidak sah dikesan. Lalai kepada
@@ -689,4 +684,20 @@ Messages:
     Minecraft anda ({0}). Taipkan {1} untuk maklumat lanjut.
   wwcConfigBadYaml: 'Fail YAML tidak sah dikesan: {0}. Sila cuba untuk membetulkan
     fail ini atau ia mungkin dipadamkan!'
+  wwcConfigConversationChatBlacklistSuccess: Berjaya menukar senarai hitam.
+  wwcConfigConversationChannelHoverFormatInput: 'Format semasa untuk teks hover terjemahan
+    ialah {0}. Hujah lalai yang mungkin: {1}. Jika anda mempunyai PlaceholderAPI,
+    pastikan pemboleh ubah tersebut dikelilingi oleh peratusan (%) sebagai gantinya.
+    Taipkan 0 untuk kembali.'
+  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
+    ialah {0}. Hujah lalai yang mungkin: {1}. Jika anda mempunyai PlaceholderAPI,
+    pastikan pemboleh ubah tersebut dikelilingi oleh peratusan (%) sebagai gantinya.
+    Taipkan 0 untuk kembali.'
+  wwcConfigConversationChatHoverFormatSuccess: Format hover anda telah berjaya diubah.
+  wwcConfigConversationLocalizeSyncSuccess: Berjaya menukar penyegerakan penyetempatan
+    pengguna.
+  wwcConfigGUILocalizeSyncButton: Segerakkan Penyetempatan Pengguna
+  wwcConfigSyncUserLocalInvalid: Penyegerakan tetapan penyetempatan pengguna tidak
+    sah. Lagi menjadi benar...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Tukar Format Teks Hover
 

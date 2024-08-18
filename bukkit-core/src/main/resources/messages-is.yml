@@ -684,15 +684,10 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Virkja svartan lista
   wwcConfigConversationBlacklistDeletionSuccess: Með góðum árangri eytt hugtakinu.
   wwcConfigGUIChatChannelSettings: Stillingar spjallrásar
-  wwcConfigGUIChatBlacklistSuccess: Tókst að skipta um svarta listann.
   wwcConfigGUIChatMessagesBlacklistNewButton: Bæta við nýju orði
   wwcConfigGUIChatChannelButton: Þýða rásarstillingar
   wwcConfigGUIBlacklistMessagesModify: Breyta hugtakinu ({0})
   wwcConfigChatChannelFormatInvalid: Ógilt rássnið greindist. Sjálfgefið að {0}...
-  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
-    er {0}. Sjálfgefin viðurkennd rök okkar sem þú getur látið fylgja með: {1}. Ef
-    þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu umkringdar
-    prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
   wwcConfigGUIModifyBlacklistSettings: Breyta svarta lista
   wwcConfigGUINextPageButton: Næsta síða
   wwcConfigChatChannelHoverFormatInvalid: Ógilt sveimsnið greint. Sjálfgefið að {0}...
@@ -702,4 +697,21 @@ Messages:
     staðsetningu þína ({0}). Sláðu inn {1} til að fá frekari upplýsingar.
   wwcConfigBadYaml: 'Ógild YAML skrá fannst: {0}. Vinsamlegast reyndu að laga þessa
     skrá eða henni gæti verið eytt!'
+  wwcConfigConversationChatBlacklistSuccess: Tókst að skipta um svarta listann.
+  wwcConfigConversationChannelHoverFormatInput: 'Núverandi snið fyrir þýðingarsveima
+    texta er {0}. Möguleg sjálfgefin rök: {1}. Ef þú ert með PlaceholderAPI skaltu
+    ganga úr skugga um að þær breytur séu umkringdar prósentum (%) í staðinn. Sláðu
+    inn 0 til að fara aftur.'
+  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
+    er {0}. Möguleg sjálfgefin rök: {1}. Ef þú ert með PlaceholderAPI skaltu ganga
+    úr skugga um að þær breytur séu umkringdar prósentum (%) í staðinn. Sláðu inn
+    0 til að fara aftur.'
+  wwcConfigConversationChatHoverFormatSuccess: Sveimsniðinu þínu hefur verið breytt
+    með góðum árangri.
+  wwcConfigConversationLocalizeSyncSuccess: Tekist að skipta um samstillingu staðsetningar
+    notenda.
+  wwcConfigGUILocalizeSyncButton: Samstilltu staðsetningu notenda
+  wwcConfigSyncUserLocalInvalid: Samstilling staðsetningarstillingar notenda ógild.
+    Að vanskil á satt...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Breyta sveimi textasniði
 
