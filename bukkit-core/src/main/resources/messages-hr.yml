@@ -705,4 +705,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Postavka lokalizacije korisnika sinkronizacije nije
     važeća. Zadana vrijednost istinita...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Promijenite format teksta hover
+  wwcdResetWarn: 'UPOZORENJE: Ova naredba će u potpunosti resetirati sve podatke,
+    uključujući zapise i vaše aktivne prevoditelje. NEMOJTE POKRENUTI OVU NAREDBU
+    OSIM AKO NE ZNATE ŠTO RADITE: {0}'
+  wwcdResetNotif: WorldwideChat je resetiran. Ponovno učitavanje...
+  wwcdResetNotifError: Nisu svi podaci uspješno izbrisani. Jeste li povezani sa svojom
+    bazom podataka?
 

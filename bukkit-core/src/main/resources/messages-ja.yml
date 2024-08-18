@@ -541,4 +541,7 @@ Messages:
   wwcConfigGUILocalizeSyncButton: ユーザーローカリゼーションを同期
   wwcConfigSyncUserLocalInvalid: 同期ユーザーのローカリゼーション設定が無効です。デフォルトは true...
   wwcConfigGUISeparateChatChannelHoverFormatButton: ホバーテキスト形式の変更
+  wwcdResetWarn: 警告:このコマンドは、レコードやアクティブな翻訳者を含むすべてのデータを完全にリセットします。何をしているのか分からない限り、このコマンドを実行しないでください:{0}
+  wwcdResetNotif: ワールドワイドチャットがリセットされました。リロード中...
+  wwcdResetNotifError: すべてのデータが正常に消去されたわけではありません。データベースに接続していますか?
 

@@ -11,6 +11,7 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.*;
+import com.mongodb.client.result.DeleteResult;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -1115,6 +1116,10 @@ public class ConfigurationHandler {
 			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 			if (userSettingsDir.exists()) {
 				for (String eaName : userSettingsDir.list()) {
+					if (!eaName.endsWith(".yml")) {
+						refs.debugMsg("NOT deleting current old active trans file: " + eaName);
+						continue;
+					}
 					File currFile = new File(userSettingsDir, eaName);
 					String fileUUID = currFile.getName().substring(0, currFile.getName().indexOf("."));
 					if (!main.isActiveTranslator(fileUUID)) {
@@ -1150,13 +1155,127 @@ public class ConfigurationHandler {
 				File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
 				if (cacheDir.exists()) {
 					for (String eaName : cacheDir.list()) {
-						File currFile = new File(cacheDir, eaName);
-						YamlConfiguration conf = YamlConfiguration.loadConfiguration(currFile);
-						CachedTranslation test = new CachedTranslation(conf.getString("inputLang"), conf.getString("outputLang"), conf.getString("inputPhrase"));
-						if (!main.hasCacheTerm(test)) {
-							refs.debugMsg("(YAML) Deleted cache term.");
-							currFile.delete();
+						if (!eaName.endsWith(".yml")) {
+							refs.debugMsg("NOT deleting current old cache file: " + eaName);
+							continue;
 						}
+						File currFile = new File(cacheDir, eaName);
+						try {
+							YamlConfiguration conf = YamlConfiguration.loadConfiguration(currFile);
+							CachedTranslation test = new CachedTranslation(conf.getString("inputLang"), conf.getString("outputLang"), conf.getString("inputPhrase"));
+							if (!main.hasCacheTerm(test)) {
+								refs.debugMsg("(YAML) Deleted cache term.");
+								currFile.delete();
+							}
+						} catch (Exception e) {
+							refs.debugMsg("Invalid cache file detected, ignoring (" + eaName + ")");
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// PSA:
+	// Generally, NEVER USE THIS!
+	// We only use this in /wwcd.
+	public void fullDataWipe() throws SQLException, MongoException {
+		SQLUtils sql = main.getSqlSession();
+		MongoDBUtils mongo = main.getMongoSession();
+		PostgresUtils postgres = main.getPostgresSession();
+
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+		if (main.isSQLConnValid(true)) {
+			// SQL database wipe
+			try (Connection sqlConnection = sql.getConnection()) {
+				/* Wipe ActiveTranslators */
+				try (PreparedStatement deleteStatement = sqlConnection.prepareStatement("DELETE FROM activeTranslators")) {
+					int rowsDeleted = deleteStatement.executeUpdate();
+					refs.debugMsg("(SQL) Wiped " + rowsDeleted + " records from ActiveTranslators.");
+				}
+
+				/* Wipe PlayerRecords */
+				try (PreparedStatement deleteStatement = sqlConnection.prepareStatement("DELETE FROM playerRecords")) {
+					int rowsDeleted = deleteStatement.executeUpdate();
+					refs.debugMsg("(SQL) Wiped " + rowsDeleted + " records from PlayerRecords.");
+				}
+
+				/* Wipe Cache */
+				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
+					try (PreparedStatement deleteStatement = sqlConnection.prepareStatement("DELETE FROM persistentCache")) {
+						int rowsDeleted = deleteStatement.executeUpdate();
+						refs.debugMsg("(SQL) Wiped " + rowsDeleted + " records from PersistentCache.");
+					}
+				}
+			}
+		} else if (main.isPostgresConnValid(true)) {
+			// Postgres database wipe
+			try (Connection postgresConnection = postgres.getConnection()) {
+				/* Wipe ActiveTranslators */
+				try (PreparedStatement deleteStatement = postgresConnection.prepareStatement("DELETE FROM activeTranslators")) {
+					int rowsDeleted = deleteStatement.executeUpdate();
+					refs.debugMsg("(Postgres) Wiped " + rowsDeleted + " records from ActiveTranslators.");
+				}
+
+				/* Wipe PlayerRecords */
+				try (PreparedStatement deleteStatement = postgresConnection.prepareStatement("DELETE FROM playerRecords")) {
+					int rowsDeleted = deleteStatement.executeUpdate();
+					refs.debugMsg("(Postgres) Wiped " + rowsDeleted + " records from PlayerRecords.");
+				}
+
+				/* Wipe Cache */
+				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
+					try (PreparedStatement deleteStatement = postgresConnection.prepareStatement("DELETE FROM persistentCache")) {
+						int rowsDeleted = deleteStatement.executeUpdate();
+						refs.debugMsg("(Postgres) Wiped " + rowsDeleted + " records from PersistentCache.");
+					}
+				}
+			}
+		} else if (main.isMongoConnValid(true)) {
+			// MongoDB wipe
+			MongoDatabase database = mongo.getActiveDatabase();
+			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
+			MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
+			MongoCollection<Document> cacheCol = database.getCollection("PersistentCache");
+
+			/* Wipe ActiveTranslators */
+			DeleteResult result = activeTranslatorCol.deleteMany(new Document());
+			refs.debugMsg("(MongoDB) Wiped " + result.getDeletedCount() + " records from ActiveTranslators.");
+
+			/* Wipe PlayerRecords */
+			result = playerRecordCol.deleteMany(new Document());
+			refs.debugMsg("(MongoDB) Wiped " + result.getDeletedCount() + " records from PlayerRecords.");
+
+			/* Wipe Cache */
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
+				result = cacheCol.deleteMany(new Document());
+				refs.debugMsg("(MongoDB) Wiped " + result.getDeletedCount() + " records from PersistentCache.");
+			}
+		} else {
+			// Last resort: Wipe from disk storage via YAML
+			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+			if (userSettingsDir.exists()) {
+				for (File file : userSettingsDir.listFiles((dir, name) -> name.endsWith(".yml"))) {
+					if (file.delete()) {
+						refs.debugMsg("(YAML) Deleted user data config file: " + file.getName());
+					}
+				}
+			}
+
+			File playerRecordsDir = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
+			if (playerRecordsDir.exists()) {
+				for (File file : playerRecordsDir.listFiles((dir, name) -> name.endsWith(".yml"))) {
+					if (file.delete()) {
+						refs.debugMsg("(YAML) Deleted user record config file: " + file.getName());
+					}
+				}
+			}
+
+			File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
+			if (cacheDir.exists()) {
+				for (File file : cacheDir.listFiles((dir, name) -> name.endsWith(".yml"))) {
+					if (file.delete()) {
+						refs.debugMsg("(YAML) Deleted cache config file: " + file.getName());
 					}
 				}
 			}

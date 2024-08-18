@@ -772,4 +772,10 @@ Messages:
     no es válida. El valor predeterminado es verdadero...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Cambiar el formato de texto al
     pasar el ratón
+  wwcdResetWarn: 'ADVERTENCIA: Este comando restablecerá por completo todos los datos,
+    incluidos los registros y los traductores activos. NO EJECUTE ESTE COMANDO A MENOS
+    QUE SEPA LO QUE ESTÁ HACIENDO: {0}'
+  wwcdResetNotif: WorldwideChat se ha restablecido. Recargando...
+  wwcdResetNotifError: No se borraron correctamente todos los datos. ¿Está conectado
+    a su base de datos?
 

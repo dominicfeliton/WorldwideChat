@@ -774,3 +774,9 @@ Messages:
     n'est pas valide. Par défaut, c'est vrai...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Modifier le format du texte du
     survol
+  wwcdResetWarn: 'AVERTISSEMENT: Cette commande réinitialisera complètement toutes
+    les données, y compris les enregistrements et vos traducteurs actifs. N''EXÉCUTEZ
+    PAS CETTE COMMANDE À MOINS DE SAVOIR CE QUE VOUS FAITES: {0}'
+  wwcdResetNotif: WorldwideChat a été réinitialisé. Rechargement...
+  wwcdResetNotifError: Toutes les données n'ont pas été effacées avec succès. Êtes-vous
+    connecté à votre base de données?

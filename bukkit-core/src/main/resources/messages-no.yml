@@ -684,4 +684,9 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Synkroniser brukerlokaliseringsinnstilling ugyldig.
     Standardiserer til sant...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Endre musepekstformat
+  wwcdResetWarn: 'ADVARSEL: Denne kommandoen vil fullstendig tilbakestille alle data
+    inkludert poster og dine aktive oversettere. IKKE KJØR DENNE KOMMANDOEN MED MINDRE
+    DU VET HVA DU GJØR: {0}'
+  wwcdResetNotif: WorldwideChat er tilbakestilt. Laster inn på nytt...
+  wwcdResetNotifError: Ikke alle dataene ble slettet. Er du koblet til databasen din?
 

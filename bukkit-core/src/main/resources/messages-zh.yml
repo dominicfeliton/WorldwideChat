@@ -527,4 +527,7 @@ Messages:
   wwcConfigGUILocalizeSyncButton: 同步用户本地化
   wwcConfigSyncUserLocalInvalid: 同步用户本地化设置无效。默认为真...
   wwcConfigGUISeparateChatChannelHoverFormatButton: 更改悬停文本格式
+  wwcdResetWarn: 警告：此命令将完全重置所有数据，包括记录和您的活跃翻译器。除非你知道自己在做什么，否则不要运行这个命令：{0}
+  wwcdResetNotif: WorldwideChat 已重置。正在加载...
+  wwcdResetNotifError: 并非所有数据都已成功擦除。你连接到数据库了吗？
 

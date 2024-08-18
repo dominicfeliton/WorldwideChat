@@ -701,4 +701,9 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Eşitleme kullanıcı yerelleştirme ayarı geçersiz.
     Varsayılan olarak true olarak ayarlanıyor...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Hover Metin Biçimini Değiştir
+  wwcdResetWarn: 'UYARI: Bu komut kayıtlar ve aktif çevirmenleriniz dahil tüm verileri
+    tamamen sıfırlayacaktır. NE YAPTIĞINIZI BILMEDIĞINIZ SÜRECE BU KOMUTU ÇALIŞTIRMAYIN:
+    {0}'
+  wwcdResetNotif: WorldwideChat sıfırlandı. Yeniden yükleniyor...
+  wwcdResetNotifError: Tüm veriler başarıyla silinmedi. Veritabanınıza bağlı mısınız?
 

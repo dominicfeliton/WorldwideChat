@@ -40,6 +40,10 @@ public class WWCDebug extends BasicCommand {
                 case "debugenv":
                     refs.sendFancyMsg("wwcdDebugEnvWarn", new String[] {"&6/wwcd debugenv enable"}, "&e", sender);
                     return true;
+                case "reset":
+                    // reset
+                    refs.sendFancyMsg("wwcdResetWarn", new String[] {"&6/wwcd reset confirm"}, "&c", sender);
+                    return true;
                 default:
                     break;
             }
@@ -60,6 +64,21 @@ public class WWCDebug extends BasicCommand {
                     return true;
                 }
                 return invalidCmd(sender);
+            } else if (args[0].equalsIgnoreCase("reset")) {
+                if (args[1].equalsIgnoreCase("confirm")) {
+                    main.getCache().invalidateAll();
+                    main.getCache().cleanUp();
+                    main.getActiveTranslators().clear();
+                    main.getPlayerRecords().clear();
+                    try {
+                        main.getConfigManager().fullDataWipe();
+                        refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
+                    } catch (Exception e) {
+                        refs.sendFancyMsg("wwcdResetNotifError", new String[]{}, "&c", sender);
+                    }
+                    main.reload(sender, true);
+                    return true;
+                }
             }
         }
 

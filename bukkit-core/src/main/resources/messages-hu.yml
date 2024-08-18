@@ -722,4 +722,9 @@ Messages:
   wwcConfigSyncUserLocalInvalid: A felhasználói lokalizációs beállítás szinkronizálása
     érvénytelen. Alapértelmezés szerint igaz...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Módosítsa a Hover szövegformátumot
+  wwcdResetWarn: 'FIGYELMEZTETÉS: Ez a parancs teljesen visszaállítja az összes adatot,
+    beleértve a rekordokat és az aktív fordítókat is. NE FUTTASSA EZT A PARANCSOT,
+    HA NEM TUDJA, MIT CSINÁL: {0}'
+  wwcdResetNotif: A WorldwideChat visszaállításra került. Újratöltés...
+  wwcdResetNotifError: Nem minden adatot töröltek sikeresen. Csatlakoztál az adatbázisához?
 

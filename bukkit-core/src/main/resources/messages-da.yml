@@ -704,4 +704,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Synkroniser brugerlokaliseringsindstilling ugyldig.
     Standard til sandt...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Skift Hover Text Format
+  wwcdResetWarn: 'ADVARSEL: Denne kommando nulstiller alle data fuldstændigt inklusive
+    poster og dine aktive oversættere. KØR IKKE DENNE KOMMANDO, MEDMINDRE DU VED,
+    HVAD DU LAVER: {0}'
+  wwcdResetNotif: WorldwideChat er blevet nulstillet. Genindlæser...
+  wwcdResetNotifError: Ikke alle data blev slettet med succes. Har du forbindelse
+    til din database?
 

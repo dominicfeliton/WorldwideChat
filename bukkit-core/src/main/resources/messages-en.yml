@@ -379,6 +379,9 @@ Messages:
   wwcdDebugEnvDisabled: 'The debug environment has been disabled.'
   wwcdDebugEnvWarn: 'Toggling the debug environment is almost never recommended unless you are developing this plugin/investigating a bug. If you still want to proceed, type the following: {0}'
   wwcdDebugBadState: 'This debug command cannot be ran while WorldwideChat does not have a valid translator set. Please try again later.'
+  wwcdResetWarn: 'WARNING: This command will completely reset all data including records and your active translators. DO NOT RUN THIS COMMAND UNLESS YOU KNOW WHAT YOU ARE DOING: {0}'
+  wwcdResetNotif: 'WorldwideChat has been reset. Reloading...'
+  wwcdResetNotifError: 'Not all data was successfully wiped. Are you connected to your database?'
   #------------------- /wwcs Messages -------------------
   wwcsTitle: 'Record of {0}'
   wwcsIsActiveTranslator: 'Is Active Translator: {0}'

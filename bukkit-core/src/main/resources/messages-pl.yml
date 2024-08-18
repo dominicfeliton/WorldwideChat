@@ -711,4 +711,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Ustawienie lokalizacji użytkownika synchronizacji
     jest nieprawidłowe. Domyślnie wartość true...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Zmień format tekstu Hover
+  wwcdResetWarn: 'OSTRZEŻENIE: To polecenie całkowicie zresetuje wszystkie dane, w
+    tym rekordy i aktywne tłumacze. NIE URUCHAMIAJ TEGO POLECENIA, CHYBA ŻE WIESZ,
+    CO ROBISZ: {0}'
+  wwcdResetNotif: WorldwideChat został zresetowany. Ponowne ładowanie...
+  wwcdResetNotifError: Nie wszystkie dane zostały pomyślnie usunięte. Czy jesteś połączony
+    ze swoją bazą danych?
 

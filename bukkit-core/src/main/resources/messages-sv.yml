@@ -709,4 +709,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Synkronisera användarlokaliseringsinställning ogiltig.
     Standardinställt till sant...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Ändra Hover Text Format
+  wwcdResetWarn: 'VARNING: Detta kommando återställer helt alla data inklusive poster
+    och dina aktiva översättare. KÖR INTE DET HÄR KOMMANDOT OM DU INTE VET VAD DU
+    GÖR: {0}'
+  wwcdResetNotif: WorldwideChat har återställts. Laddar om...
+  wwcdResetNotifError: Inte alla data raderades framgångsrikt. Är du ansluten till
+    din databas?
 

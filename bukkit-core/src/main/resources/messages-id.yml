@@ -697,4 +697,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Setelan pelokalan pengguna sinkronisasi tidak valid.
     Default menjadi true...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Ubah Format Teks Hover
+  wwcdResetWarn: 'PERINGATAN: Perintah ini akan sepenuhnya mengatur ulang semua data
+    termasuk catatan dan penerjemah aktif Anda. JANGAN JALANKAN PERINTAH INI KECUALI
+    ANDA TAHU APA YANG ANDA LAKUKAN: {0}'
+  wwcdResetNotif: WorldwideChat telah diatur ulang. Memuat ulang...
+  wwcdResetNotifError: Tidak semua data berhasil dihapus. Apakah Anda terhubung ke
+    database Anda?
 

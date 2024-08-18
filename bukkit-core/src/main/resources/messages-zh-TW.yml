@@ -529,4 +529,7 @@ Messages:
   wwcConfigGUILocalizeSyncButton: 同步使用者本地化
   wwcConfigSyncUserLocalInvalid: 同步使用者本地化設定無效。預設為 true...
   wwcConfigGUISeparateChatChannelHoverFormatButton: 變更懸停文字格式
+  wwcdResetWarn: 警告：此命令將完全重置所有數據，包括記錄和您的活動翻譯器。除非您知道自己在做什麼，否則不要運行此命令：{0}
+  wwcdResetNotif: 全球微信已重設。重新載入...
+  wwcdResetNotifError: 並非所有資料都已成功清除。您是否已連接到您的數據庫？
 

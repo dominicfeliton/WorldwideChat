@@ -777,4 +777,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Die Lokalisierungseinstellung für Sync-Benutzer ist
     ungültig. Die Standardeinstellung ist wahr...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Hover-Textformat ändern
+  wwcdResetWarn: 'WARNUNG: Dieser Befehl setzt alle Daten einschließlich der Datensätze
+    und Ihrer aktiven Übersetzer vollständig zurück. FÜHRE DIESEN BEFEHL NUR AUS,
+    WENN DU WEISST, WAS DU TUST: {0}'
+  wwcdResetNotif: WorldwideChat wurde zurückgesetzt. Wird neu geladen...
+  wwcdResetNotifError: Nicht alle Daten wurden erfolgreich gelöscht. Sind Sie mit
+    Ihrer Datenbank verbunden?
 

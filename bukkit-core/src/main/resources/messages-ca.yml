@@ -756,4 +756,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Sincronitzar la configuració de localització d'usuari
     no vàlida. Per defecte de veritat...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Canviar el format de text Hover
+  wwcdResetWarn: 'ADVERTÈNCIA: Aquesta ordre restablirà completament totes les dades,
+    inclosos els registres i els vostres traductors actius. NO EXECUTEU AQUESTA COMANDA
+    A NO SER QUE SÀPIGUEU QUÈ ESTEU FENT: {0}'
+  wwcdResetNotif: WorldwideChat s'ha restablert. Recàrrega...
+  wwcdResetNotifError: No totes les dades s'han eliminat amb èxit. Estàs connectat
+    a la teva base de dades?
 

@@ -728,4 +728,10 @@ Messages:
   wwcConfigSyncUserLocalInvalid: Configuração de localização do usuário de sincronização
     inválida. O padrão é true...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Alterar formato de texto flutuante
+  wwcdResetWarn: 'AVISO: Este comando redefinirá completamente todos os dados, incluindo
+    registros e seus tradutores ativos. NÃO EXECUTE ESTE COMANDO A MENOS QUE VOCÊ
+    SAIBA O QUE ESTÁ FAZENDO: {0}'
+  wwcdResetNotif: O WorldwideChat foi redefinido. Recarregando...
+  wwcdResetNotifError: Nem todos os dados foram apagados com sucesso. Você está conectado
+    ao seu banco de dados?
 

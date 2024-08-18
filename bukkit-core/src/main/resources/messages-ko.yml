@@ -573,4 +573,8 @@ Messages:
   wwcConfigGUILocalizeSyncButton: 동기화 사용자 로컬라이제이션
   wwcConfigSyncUserLocalInvalid: 동기화 사용자 현지화 설정이 잘못되었습니다.기본값은 true입니다...
   wwcConfigGUISeparateChatChannelHoverFormatButton: 호버 텍스트 형식 변경
+  wwcdResetWarn: '경고: 이 명령은 레코드와 활성 번역가를 포함한 모든 데이터를 완전히 재설정합니다.무엇을 하고 있는지 모르는 경우에는
+    이 명령을 실행하지 마십시오. {0}'
+  wwcdResetNotif: 월드와이드챗이 초기화되었습니다.새로 고침 중...
+  wwcdResetNotifError: 모든 데이터가 성공적으로 지워진 것은 아닙니다.데이터베이스에 연결되어 있나요?
 

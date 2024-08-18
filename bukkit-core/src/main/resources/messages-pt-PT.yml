@@ -736,4 +736,10 @@ Messages:
     inválida. A predefinição é true...
   wwcConfigGUISeparateChatChannelHoverFormatButton: Alterar o formato do texto com
     o passar do Favor
+  wwcdResetWarn: 'AVISO: Este comando irá repor completamente todos os dados, incluindo
+    registos e os tradutores activos. NÃO EXECUTE ESTE COMANDO A MENOS QUE SAIBA O
+    QUE ESTÁ A FAZER: {0}'
+  wwcdResetNotif: O WorldwideChat foi reiniciado. Recarregando...
+  wwcdResetNotifError: Nem todos os dados foram eliminados com êxito. Está ligado
+    à sua base de dados?
 
