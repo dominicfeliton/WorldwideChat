@@ -1102,13 +1102,15 @@ public class ConfigurationHandler {
 			
 			// Delete any old activeTranslators
 			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
-			for (String eaName : userSettingsDir.list()) {
-				File currFile = new File(userSettingsDir, eaName);
-				String fileUUID = currFile.getName().substring(0, currFile.getName().indexOf("."));
-				if (!main.isActiveTranslator(fileUUID)) {
-					refs.debugMsg("(YAML) Deleted user data config of "
-							+ fileUUID + ".");
-					currFile.delete();
+			if (userSettingsDir.exists()) {
+				for (String eaName : userSettingsDir.list()) {
+					File currFile = new File(userSettingsDir, eaName);
+					String fileUUID = currFile.getName().substring(0, currFile.getName().indexOf("."));
+					if (!main.isActiveTranslator(fileUUID)) {
+						refs.debugMsg("(YAML) Deleted user data config of "
+								+ fileUUID + ".");
+						currFile.delete();
+					}
 				}
 			}
 
@@ -1135,13 +1137,15 @@ public class ConfigurationHandler {
 
 				/* Delete any old cache files */
 				File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
-				for (String eaName : cacheDir.list()) {
-					File currFile = new File(cacheDir, eaName);
-					YamlConfiguration conf = YamlConfiguration.loadConfiguration(currFile);
-					CachedTranslation test = new CachedTranslation(conf.getString("inputLang"), conf.getString("outputLang"), conf.getString("inputPhrase"));
-					if (!main.hasCacheTerm(test)) {
-						refs.debugMsg("(YAML) Deleted cache term.");
-						currFile.delete();
+				if (cacheDir.exists()) {
+					for (String eaName : cacheDir.list()) {
+						File currFile = new File(cacheDir, eaName);
+						YamlConfiguration conf = YamlConfiguration.loadConfiguration(currFile);
+						CachedTranslation test = new CachedTranslation(conf.getString("inputLang"), conf.getString("outputLang"), conf.getString("inputPhrase"));
+						if (!main.hasCacheTerm(test)) {
+							refs.debugMsg("(YAML) Deleted cache term.");
+							currFile.delete();
+						}
 					}
 				}
 			}
