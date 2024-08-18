@@ -8,6 +8,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLocaleChangeEvent;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,6 +17,7 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private WorldwideChatHelper helper = main.getServerFactory().getWWCHelper();
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLocalLang(PlayerJoinEvent e) {
@@ -41,20 +43,32 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLangChange(PlayerLocaleChangeEvent event) {
+        // TODO BUG REPORT ON SPIGOT UPSTREAM:
+        // This event only gets the LAST language the user had.
+        // Meaning if you switch from english to french, it will detect english.
+        // But if you then switch back to english it will detect french.
+        // :(
+
         if (!main.getSetLocalOnFirstJoin()) {
             return;
         }
 
         Player player = event.getPlayer();
 
-        // Get locale
-        String locale = getLocale(player.getLocale());
-        if (locale == null) {
-            return;
-        }
+        BukkitRunnable change = new BukkitRunnable() {
+            @Override
+            public void run() {
+                // Get locale
+                String locale = getLocale(player.getLocale());
+                if (locale == null) {
+                    return;
+                }
 
-        // We have a locale. Now call super
-        super.checkAndSetLocale(player, locale);
+                SpigotPlayerLocaleListener.super.checkAndSetLocale(player, locale);
+            }
+        };
+
+        helper.runSync(true, 50, change, WorldwideChatHelper.SchedulerType.ENTITY, null);
     }
 
     private String getLocale(String locale) {

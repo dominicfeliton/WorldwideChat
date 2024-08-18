@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -8,11 +9,13 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLocaleChangeEvent;
+import org.bukkit.scheduler.BukkitRunnable;
 
 public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private WorldwideChatHelper helper = main.getServerFactory().getWWCHelper();
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLocalLang(PlayerJoinEvent e) {
@@ -35,16 +38,19 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLangChange(PlayerLocaleChangeEvent event) {
-        // TODO BUG REPORT ON SPIGOT UPSTREAM:
-        // This event only gets the LAST language the user had.
-        // Meaning if you switch from english to french, it will detect english.
-        // But if you then switch back to english it will detect french.
-        // :(
         if (!main.getSetLocalOnFirstJoin()) {
             return;
         }
 
         Player player = event.getPlayer();
-        super.checkAndSetLocale(player, player.locale().getLanguage());
+
+        BukkitRunnable change = new BukkitRunnable() {
+            @Override
+            public void run() {
+                PaperPlayerLocaleListener.super.checkAndSetLocale(player, main.getServer().getPlayer(player.getUniqueId()).locale().getLanguage());
+            }
+        };
+
+        helper.runSync(true, 50, change, WorldwideChatHelper.SchedulerType.ENTITY, null);
     }
 }
