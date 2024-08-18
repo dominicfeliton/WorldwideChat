@@ -94,7 +94,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         pluginManager.registerEvents(join, main);
         listenerQueue.add(join);
 
-        SpigotSetLocaleOnJoinListener locale = new SpigotSetLocaleOnJoinListener();
+        SpigotPlayerLocaleListener locale = new SpigotPlayerLocaleListener();
         pluginManager.registerEvents(locale, main);
         listenerQueue.add(locale);
 

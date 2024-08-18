@@ -4,13 +4,9 @@ import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
-import org.bukkit.plugin.RegisteredListener;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -63,7 +59,7 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
         pluginManager.registerEvents(join, main);
         listenerQueue.add(join);
 
-        PaperSetLocaleOnJoinListener locale = new PaperSetLocaleOnJoinListener();
+        PaperPlayerLocaleListener locale = new PaperPlayerLocaleListener();
         pluginManager.registerEvents(locale, main);
         listenerQueue.add(locale);
 

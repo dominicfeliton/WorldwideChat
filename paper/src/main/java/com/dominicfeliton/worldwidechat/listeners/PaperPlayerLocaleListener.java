@@ -7,11 +7,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerLocaleChangeEvent;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-public class PaperSetLocaleOnJoinListener extends AbstractSetLocaleOnJoinListener implements Listener {
+public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
@@ -32,6 +30,12 @@ public class PaperSetLocaleOnJoinListener extends AbstractSetLocaleOnJoinListene
 
         // Get locale and call super
         refs.debugMsg("Attempting to set locale!!");
+        super.checkAndSetLocale(player, player.locale().getLanguage());
+    }
+
+    @EventHandler(priority = EventPriority.LOWEST)
+    public void detectLangChange(PlayerLocaleChangeEvent event) {
+        Player player = event.getPlayer();
         super.checkAndSetLocale(player, player.locale().getLanguage());
     }
 }
