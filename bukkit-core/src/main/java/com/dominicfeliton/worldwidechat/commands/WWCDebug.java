@@ -66,17 +66,10 @@ public class WWCDebug extends BasicCommand {
                 return invalidCmd(sender);
             } else if (args[0].equalsIgnoreCase("reset")) {
                 if (args[1].equalsIgnoreCase("confirm")) {
-                    // Disable WWC
-                    main.setTranslatorName("Starting");
-
                     // Begin Reset
                     Runnable run = new BukkitRunnable() {
                         @Override
                         public void run() {
-                            main.getCache().invalidateAll();
-                            main.getCache().cleanUp();
-                            main.getActiveTranslators().clear();
-                            main.getPlayerRecords().clear();
                             try {
                                 main.getConfigManager().fullDataWipe();
                                 refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
@@ -85,6 +78,10 @@ public class WWCDebug extends BasicCommand {
                             }
 
                             // Reload on main thread
+                            main.getCache().invalidateAll();
+                            main.getCache().cleanUp();
+                            main.getActiveTranslators().clear();
+                            main.getPlayerRecords().clear();
                             BukkitRunnable reload = new BukkitRunnable() {
                                 @Override
                                 public void run() {
