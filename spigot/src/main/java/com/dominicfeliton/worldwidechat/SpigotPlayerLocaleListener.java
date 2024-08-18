@@ -41,6 +41,10 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLangChange(PlayerLocaleChangeEvent event) {
+        if (!main.getSetLocalOnFirstJoin()) {
+            return;
+        }
+
         Player player = event.getPlayer();
 
         // Get locale

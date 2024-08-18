@@ -35,6 +35,10 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
 
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLangChange(PlayerLocaleChangeEvent event) {
+        if (!main.getSetLocalOnFirstJoin()) {
+            return;
+        }
+
         Player player = event.getPlayer();
         super.checkAndSetLocale(player, player.locale().getLanguage());
     }
