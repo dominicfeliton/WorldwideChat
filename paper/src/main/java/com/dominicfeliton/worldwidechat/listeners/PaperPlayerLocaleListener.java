@@ -11,6 +11,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLocaleChangeEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+
 public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.instance;
@@ -51,6 +53,6 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
             }
         };
 
-        helper.runSync(true, 50, change, WorldwideChatHelper.SchedulerType.ENTITY, null);
+        helper.runSync(true, 50, change, ENTITY, new Object[] {player});
     }
 }

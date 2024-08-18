@@ -13,6 +13,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+
 public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.instance;
@@ -68,7 +70,7 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
             }
         };
 
-        helper.runSync(true, 50, change, WorldwideChatHelper.SchedulerType.ENTITY, null);
+        helper.runSync(true, 50, change, ENTITY, new Object[] {player});
     }
 
     private String getLocale(String locale) {

@@ -36,6 +36,11 @@ public abstract class AbstractPlayerLocaleListener implements Listener {
             return;
         }
 
+        if (record.getLocalizationCode().equalsIgnoreCase(code)) {
+            refs.debugMsg("This user already has this local set.");
+            return;
+        }
+
         // This is a supported lang
         SupportedLang lang = refs.getSupportedLang(code, "local");
         record.setLocalizationCode(lang.getLangCode());

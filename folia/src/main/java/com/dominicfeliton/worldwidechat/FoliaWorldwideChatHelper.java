@@ -60,7 +60,7 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                 break;
             case REGION:
                 // TODO: TEST!
-                if (taskObjs.length == 0) {
+                if (taskObjs == null || taskObjs.length == 0) {
                     main.getLogger().severe("Requested region scheduler but did not pass a location/world! Please contact the dev.");
                     return;
                 }
@@ -92,7 +92,7 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                 }
                 break;
             case ENTITY:
-                if (taskObjs.length == 0 || !(taskObjs[0] instanceof Entity)) {
+                if (taskObjs == null || taskObjs.length == 0 || !(taskObjs[0] instanceof Entity)) {
                     main.getLogger().severe("Requested entity scheduler but did not pass an entity! Please contact the dev.");
                     return;
                 }
