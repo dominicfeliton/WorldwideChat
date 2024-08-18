@@ -1059,6 +1059,8 @@ public class CommonRefs {
 		}
 
 		// Handle Localizations
+		// If the targetPlayer is null, we use the originPlayer to get local
+		// If originPlayer is null, server lang will be used
 		Pattern local = Pattern.compile("\\{local:([^}]+)}");
 		Matcher match = local.matcher(parsedFormat);
 		while (match.find()) {
