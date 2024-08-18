@@ -49,6 +49,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class CommonRefs {
 
@@ -639,7 +640,7 @@ public class CommonRefs {
 					public void run() {
 						main.reload();
 					}
-				}, ASYNC, null);
+				}, GLOBAL, null);
 			}
 		}
 		

@@ -66,17 +66,35 @@ public class WWCDebug extends BasicCommand {
                 return invalidCmd(sender);
             } else if (args[0].equalsIgnoreCase("reset")) {
                 if (args[1].equalsIgnoreCase("confirm")) {
-                    main.getCache().invalidateAll();
-                    main.getCache().cleanUp();
-                    main.getActiveTranslators().clear();
-                    main.getPlayerRecords().clear();
-                    try {
-                        main.getConfigManager().fullDataWipe();
-                        refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
-                    } catch (Exception e) {
-                        refs.sendFancyMsg("wwcdResetNotifError", new String[]{}, "&c", sender);
-                    }
-                    main.reload(sender, true);
+                    // Disable WWC
+                    main.setTranslatorName("Starting");
+
+                    // Begin Reset
+                    Runnable run = new BukkitRunnable() {
+                        @Override
+                        public void run() {
+                            main.getCache().invalidateAll();
+                            main.getCache().cleanUp();
+                            main.getActiveTranslators().clear();
+                            main.getPlayerRecords().clear();
+                            try {
+                                main.getConfigManager().fullDataWipe();
+                                refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
+                            } catch (Exception e) {
+                                refs.sendFancyMsg("wwcdResetNotifError", new String[]{}, "&c", sender);
+                            }
+
+                            // Reload on main thread
+                            BukkitRunnable reload = new BukkitRunnable() {
+                                @Override
+                                public void run() {
+                                    main.reload(sender, true);
+                                }
+                            };
+                            wwcHelper.runSync(reload, WorldwideChatHelper.SchedulerType.GLOBAL, null);
+                        }
+                    };
+                    wwcHelper.runAsync(run, ASYNC, null);
                     return true;
                 }
             }
@@ -100,13 +118,19 @@ public class WWCDebug extends BasicCommand {
                     // Preserve original debug val
                     boolean debugBool = conf.getBoolean("General.enableDebugMode");
 
-                    conf.set("General.enableDebugMode", true);
-                    if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
-                        refs.sendFancyMsg("wwcdOutdatedSQLStruct", new String[] {}, "&e", sender);
-                    } else {
-                        refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
-                    }
-                    conf.set("General.enableDebugMode", debugBool);
+                    BukkitRunnable run = new BukkitRunnable() {
+                        @Override
+                        public void run() {
+                            conf.set("General.enableDebugMode", true);
+                            if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
+                                refs.sendFancyMsg("wwcdOutdatedSQLStruct", new String[] {}, "&e", sender);
+                            } else {
+                                refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
+                            }
+                            conf.set("General.enableDebugMode", debugBool);
+                        }
+                    };
+                    wwcHelper.runAsync(run, ASYNC, null);
                     return true;
                 case "cache":
                     // print cache
@@ -126,7 +150,7 @@ public class WWCDebug extends BasicCommand {
                     return true;
                 case "save":
                     // force save
-                    Runnable run = new BukkitRunnable() {
+                    Runnable save = new BukkitRunnable() {
                         @Override
                         public void run() {
                             // Preserve original debug val
@@ -143,7 +167,7 @@ public class WWCDebug extends BasicCommand {
                             conf.set("General.enableDebugMode", debugBool);
                         }
                     };
-                    wwcHelper.runAsync(run, ASYNC, null);
+                    wwcHelper.runAsync(save, ASYNC, null);
                     return true;
                 default:
                     break;
