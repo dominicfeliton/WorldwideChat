@@ -24,6 +24,7 @@ public abstract class AbstractSetLocaleOnJoinListener implements Listener {
 
         if (main.getTranslatorName().equalsIgnoreCase("Invalid")) {
             // If the plugin is disabled we look quite foolish
+            refs.debugMsg("Invalid translator for locale detection.");
             return;
         }
 
@@ -35,6 +36,6 @@ public abstract class AbstractSetLocaleOnJoinListener implements Listener {
         // This is a supported lang
         SupportedLang lang = refs.getSupportedLang(code, "local");
         record.setLocalizationCode(lang.getLangCode());
-        refs.sendFancyMsg("wwcOnJoinSetLocaleSuccess", new String[] {"&6"+lang.getNativeLangName(), "/wwct"}, "&d", player);
+        refs.sendFancyMsg("wwcOnJoinSetLocaleSuccess", new String[] {"&6"+lang.getNativeLangName(), "/translate"}, "&d", player);
     }
 }

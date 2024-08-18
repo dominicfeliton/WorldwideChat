@@ -24,7 +24,7 @@ public class SpigotSetLocaleOnJoinListener extends AbstractSetLocaleOnJoinListen
 
         // Attempt to get user localization
         Player player = e.getPlayer();
-        if (!main.isPlayerRecord(player)) {
+        if (main.isPlayerRecord(player)) {
             return;
         }
 

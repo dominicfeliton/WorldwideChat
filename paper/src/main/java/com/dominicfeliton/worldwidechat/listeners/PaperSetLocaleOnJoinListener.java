@@ -19,16 +19,19 @@ public class PaperSetLocaleOnJoinListener extends AbstractSetLocaleOnJoinListene
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLocalLang(PlayerJoinEvent e) {
         if (!main.getSetLocalOnFirstJoin()) {
+            refs.debugMsg("locale detection disabled");
             return;
         }
 
         // Attempt to get user localization
         Player player = e.getPlayer();
-        if (!main.isPlayerRecord(player)) {
+        if (main.isPlayerRecord(player)) {
+            refs.debugMsg("User has a player record");
             return;
         }
 
         // Get locale and call super
+        refs.debugMsg("Attempting to set locale!!");
         super.checkAndSetLocale(player, player.locale().getLanguage());
     }
 }
