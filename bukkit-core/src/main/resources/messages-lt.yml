@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nepavyko prisijungti prie {0}. Įsitikinkite, kad kredencialai
     ir užkarda yra tinkamai sukonfigūruoti!
   wwcConfigEnabledbStats: Įgalinta bStats.
-  wwctGUIMainMenuPlayer: Vertimo meniu {0}
   wwctGUIBookButton: Perjungti knygų vertimą
   wwcLangDetected: Aptikta kalba {0}.
   wwcBookTranslateStart: Vertimas tikslinė knyga...
@@ -662,7 +661,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Pakeiskite atskiro kanalo piktogramą
   wwcConfigConversationChatFormatSuccess: Jūsų formatas buvo sėkmingai pakeistas.
   wwcConfigGUISeparateChatChannelForceButton: Priverskite atskirą kanalą
-  wwcOrigHover: 'Originali žinutė: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Originalus išeinantis pokalbis
     pridedamas prie vertimo kaip užveskite tekstą perjungtas sėkmingai.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pridėkite originalius siunčiamus pranešimus
@@ -699,4 +697,8 @@ Messages:
     (%) vietoj. Įveskite 0, kad grįžtumėte atgal.'
   wwcConfigGUIModifyBlacklistSettings: Pakeisti juodąjį sąrašą
   wwcConfigGUINextPageButton: Kitas puslapis
+  wwcConfigChatChannelHoverFormatInvalid: Aptiktas netinkamas užveskite pelės žymeklį
+    formatas. Numatytasis nustatymas į {0}...
+  wwcOrigHover: Originalus pranešimas
+  wwctGUIMainMenuPlayer: Versti {0}
 

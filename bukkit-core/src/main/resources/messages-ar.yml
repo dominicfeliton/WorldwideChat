@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: فشل الاتصال بـ {0}. تأكد من تكوين بيانات الاعتماد وجدار
     الحماية بشكل صحيح!
   wwcConfigEnabledbStats: تمكين بستاتس.
-  wwctGUIMainMenuPlayer: قائمة الترجمة من {0}
   wwctGUIBookButton: تبديل ترجمة الكتاب
   wwcLangDetected: اللغة المكتشفة {0}.
   wwcBookTranslateStart: ترجمة الكتاب المستهدف...
@@ -606,7 +605,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: تغيير رمز القناة المنفصلة
   wwcConfigConversationChatFormatSuccess: تم تغيير التنسيق الخاص بك بنجاح.
   wwcConfigGUISeparateChatChannelForceButton: قناة فورس منفصلة
-  wwcOrigHover: 'الرسالة الأصلية: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: تم إرفاق الدردشة الأصلية
     الصادرة بالترجمة حيث تم تبديل نص التمرير بنجاح.
   wwcConfigGUISendOutgoingHoverTextChatButton: إضافة الرسائل الصادرة الأصلية كنص تمرير
@@ -640,4 +638,8 @@ Messages:
     فتأكد من أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً من ذلك. اكتب 0 للعودة.'
   wwcConfigGUIModifyBlacklistSettings: تعديل القائمة السوداء
   wwcConfigGUINextPageButton: الصفحة التالية
+  wwcConfigChatChannelHoverFormatInvalid: تم اكتشاف تنسيق تمرير غير صالح. الإعداد
+    الافتراضي لـ {0}...
+  wwcOrigHover: الرسالة الأصلية
+  wwctGUIMainMenuPlayer: ترجم {0}
 

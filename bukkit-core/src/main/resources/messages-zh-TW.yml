@@ -15,7 +15,6 @@ Messages:
   wwctGUINewTranslationSource: 選擇來源語言
   wwcConfigConnectionFailed: 無法連線到 {0}。請確定您的憑證和防火牆設定正確！
   wwcConfigEnabledbStats: 已啟用 bStats。
-  wwctGUIMainMenuPlayer: '{0} 的翻譯功能表'
   wwctGUIBookButton: 切換報表簿翻譯
   wwcLangDetected: 偵測到的語言 {0}。
   wwcBookTranslateStart: 正在正在翻譯目標報表簿...
@@ -493,7 +492,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: 更改單獨的頻道圖示
   wwcConfigConversationChatFormatSuccess: 您的格式已成功更改。
   wwcConfigGUISeparateChatChannelForceButton: 強制分離通道
-  wwcOrigHover: 原文留言:{0}
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: 當懸停文本成功切換時，附加到翻譯的原始外出聊天。
   wwcConfigGUISendOutgoingHoverTextChatButton: 將原始外寄郵件添加為懸停文本
   wwcConfigPAPIInstalled: 已針對您的聊天格式啟用位置持有者 API 支援。
@@ -519,4 +517,7 @@ Messages:
     API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
   wwcConfigGUIModifyBlacklistSettings: 修改黑名單
   wwcConfigGUINextPageButton: 下一頁
+  wwcConfigChatChannelHoverFormatInvalid: 偵測到無效的懸停格式。預設為 {0}...
+  wwcOrigHover: 原文訊息
+  wwctGUIMainMenuPlayer: 翻譯 {0}
 

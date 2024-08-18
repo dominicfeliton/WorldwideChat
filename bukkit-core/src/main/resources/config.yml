@@ -51,6 +51,7 @@ Chat:
   separateChatChannel:
     icon: globe
     format: "{prefix}{username}{suffix}:"
+    hoverFormat: "&o{local:wwcOrigHover}:"
     force: false
 Translator:
   useWatsonTranslate: true

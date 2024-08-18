@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Kan ikke koble til {0}. Kontroller at legitimasjonen
     og brannmuren er riktig konfigurert.
   wwcConfigEnabledbStats: Aktiverte bStats.
-  wwctGUIMainMenuPlayer: Oversettelsesmeny på {0}
   wwctGUIBookButton: Toggle Book Oversettelse
   wwcLangDetected: Oppdaget språk {0}.
   wwcBookTranslateStart: Oversette målet bok...
@@ -633,7 +632,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Endre separat kanalikon
   wwcConfigConversationChatFormatSuccess: Formatet ditt har blitt endret med hell.
   wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
-  wwcOrigHover: 'Opprinnelig melding: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Opprinnelig utgående chat
     knyttet til oversettelsen da musetekst ble byttet vellykket.
   wwcConfigGUISendOutgoingHoverTextChatButton: Legg til originale utgående meldinger
@@ -667,4 +665,8 @@ Messages:
     (%) i stedet. Skriv 0 for å gå tilbake.'
   wwcConfigGUIModifyBlacklistSettings: Endre svarteliste
   wwcConfigGUINextPageButton: Neste side
+  wwcConfigChatChannelHoverFormatInvalid: Ugyldig musepekkeformat oppdaget. Standard
+    til {0}...
+  wwcOrigHover: Opprinnelig melding
+  wwctGUIMainMenuPlayer: Oversett {0}
 

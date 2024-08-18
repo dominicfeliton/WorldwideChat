@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Таны итгэмжлэлүүд болон галт хана зөв тохируулагдсан
     эсэхийг шалгаарай!
   wwcConfigEnabledbStats: Идэвхжүүлсэн bStats.
-  wwctGUIMainMenuPlayer: '{0} орчуулгын цэс'
   wwctGUIBookButton: Toggle Номын орчуулга
   wwcLangDetected: Илэрсэн хэл {0}.
   wwcBookTranslateStart: Зорилтот номыг орчуулах...
@@ -677,7 +676,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Тусдаа сувгийн дүрсийг өөрчлөх
   wwcConfigConversationChatFormatSuccess: Таны формат амжилттай өөрчлөгдсөн.
   wwcConfigGUISeparateChatChannelForceButton: Тусгай суваг хүчээр
-  wwcOrigHover: 'Эх зурвас: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Ховер текст амжилттай togged
     гэж орчуулга хавсаргасан эх гарч байгаа чат.
   wwcConfigGUISendOutgoingHoverTextChatButton: Гарах анхны мессежийг Ховер текст болгон
@@ -716,4 +714,8 @@ Messages:
     хүрээлэгдсэн эсэхийг шалгаарай. Буцахын тулд 0 гэж бичнэ үү.'
   wwcConfigGUIModifyBlacklistSettings: Хар жагсаалтыг өөрчлөх
   wwcConfigGUINextPageButton: Дараагийн хуудас
+  wwcConfigChatChannelHoverFormatInvalid: Хүчин төгөлдөр бус ховер формат илэрсэн.
+    {0} гэж анхдагч байна...
+  wwcOrigHover: Анхны мессеж
+  wwctGUIMainMenuPlayer: Орчуулах {0}
 

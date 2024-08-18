@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Αποτυχία σύνδεσης στο {0}. Βεβαιωθείτε ότι τα διαπιστευτήριά
     σας και το τείχος προστασίας έχουν ρυθμιστεί σωστά!
   wwcConfigEnabledbStats: Ενεργοποιημένα bStats.
-  wwctGUIMainMenuPlayer: Μενού μετάφρασης του {0}
   wwctGUIBookButton: Εναλλαγή μετάφρασης βιβλίου
   wwcLangDetected: Εντοπίστηκε γλώσσα {0}.
   wwcBookTranslateStart: Μεταφράζω το βιβλίο στόχου...
@@ -715,7 +714,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Αλλάξτε το ξεχωριστό εικονίδιο καναλιού
   wwcConfigConversationChatFormatSuccess: Η μορφή σας άλλαξε με επιτυχία.
   wwcConfigGUISeparateChatChannelForceButton: Ξεχωριστό κανάλι δύναμης
-  wwcOrigHover: 'Πρωτότυπο μήνυμα: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Η αρχική εξερχόμενη συνομιλία
     που επισυνάπτεται στη μετάφραση καθώς το κείμενο του ποντικιού εναλλάχθηκε με
     επιτυχία.
@@ -754,4 +752,8 @@ Messages:
     περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
   wwcConfigGUIModifyBlacklistSettings: Τροποποιήστε τη μαύρη λίστα
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
+  wwcConfigChatChannelHoverFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή του ποντικιού.
+    Προεπιλογή σε {0}...
+  wwcOrigHover: Αρχικό μήνυμα
+  wwctGUIMainMenuPlayer: Μετάφραση {0}
 

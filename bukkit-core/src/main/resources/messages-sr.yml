@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nije uspjelo povezivanje na {0}. Uverite se da su vaši
     akreditivi i zaštitni zid ispravno konfigurisani!
   wwcConfigEnabledbStats: Omogućeno bStats.
-  wwctGUIMainMenuPlayer: Meni za prevod od {0}
   wwctGUIBookButton: Prebacite prevod knjige
   wwcLangDetected: Otkriven jezik {0}.
   wwcBookTranslateStart: Prevođenje ciljne knjige...
@@ -643,7 +642,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Promenite ikonu odvojenog kanala
   wwcConfigConversationChatFormatSuccess: Vaš format je uspešno promenjen.
   wwcConfigGUISeparateChatChannelForceButton: Prisilite odvojeni kanal
-  wwcOrigHover: 'Originalna poruka: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Originalno odlazno ćaskanje
     priloženo prevodu kao tekst pokazivača pokazivača uspešno je prebačeno.
   wwcConfigGUISendOutgoingHoverTextChatButton: Dodajte originalne odlazne poruke kao
@@ -679,4 +677,8 @@ Messages:
     umesto toga. Otkucajte 0 da biste se vratili nazad.'
   wwcConfigGUIModifyBlacklistSettings: Izmenite crnu listu
   wwcConfigGUINextPageButton: Sledeća strana
+  wwcConfigChatChannelHoverFormatInvalid: Otkriven je nevažeći format lebdenja. Podrazumevano
+    podešavanje na {0}...
+  wwcOrigHover: Originalna poruka
+  wwctGUIMainMenuPlayer: Prevedi {0}
 

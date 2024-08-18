@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} కు కనెక్ట్ చేయడంలో విఫలమైంది. మీ ఆధారాలు మరియు ఫైర్వాల్
     సరిగ్గా కాన్ఫిగర్ చేయబడిందని నిర్ధారించుకోండి!'
   wwcConfigEnabledbStats: ప్రారంభించబడింది bStats.
-  wwctGUIMainMenuPlayer: '{0} అనువాద మెనూ'
   wwctGUIBookButton: పుస్తక అనువాదాన్ని టోగుల్
   wwcLangDetected: గుర్తించబడిన భాష {0}.
   wwcBookTranslateStart: లక్ష్యం పుస్తకం అనువదించడం...
@@ -657,7 +656,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ప్రత్యేక ఛానల్ చిహ్నాన్ని మార్చండి
   wwcConfigConversationChatFormatSuccess: మీ ఫార్మాట్ విజయవంతంగా మార్చబడింది.
   wwcConfigGUISeparateChatChannelForceButton: ప్రత్యేక ఛానెల్ను ఫోర్స్ చేయండి
-  wwcOrigHover: 'అసలు సందేశం: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: హోవర్ టెక్స్ట్ విజయవంతంగా
     togged వంటి అనువాదం జత అసలు అవుట్గోయింగ్ చాట్.
   wwcConfigGUISendOutgoingHoverTextChatButton: అసలు అవుట్గోయింగ్ సందేశాలను హోవర్ టెక్స్ట్గా
@@ -694,4 +692,8 @@ Messages:
     వెళ్ళడానికి 0 అని టైప్ చేయండి.'
   wwcConfigGUIModifyBlacklistSettings: బ్లాక్లిస్ట్ను సవరించండి
   wwcConfigGUINextPageButton: తదుపరి పేజీ
+  wwcConfigChatChannelHoverFormatInvalid: చెల్లని హోవర్ ఫార్మాట్ కనుగొనబడింది. {0}
+    కు డిఫాల్ట్ అవుతోంది...
+  wwcOrigHover: అసలు సందేశం
+  wwctGUIMainMenuPlayer: అనువదించండి {0}
 

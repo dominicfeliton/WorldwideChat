@@ -16,6 +16,7 @@ import com.github.benmanes.caffeine.cache.Caffeine;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
+import net.kyori.adventure.text.TextReplacementConfig;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
@@ -38,6 +39,8 @@ import me.clip.placeholderapi.PlaceholderAPI;
 import java.io.File;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
@@ -45,7 +48,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08162024-5"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08172024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -100,10 +103,12 @@ public class WorldwideChat extends JavaPlugin {
 			.append(Component.text().content("]").color(NamedTextColor.DARK_RED))
 			.build();
 
-	private TextComponent translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
+	private Component translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
 			.append(Component.space());
 
-	private String translateLayout = "{prefix}{username}{suffix}:";
+	private String translateFormat = "{prefix}{username}{suffix}:";
+
+	private String translateHoverFormat = "&o{local:wwcOrigHover}:";
 
 	private int updateCheckerDelay = 86400;
 
@@ -699,9 +704,11 @@ public class WorldwideChat extends JavaPlugin {
 		blacklistTerms = new ConcurrentSkipListSet<>(i);
 	}
 
-	public void setTranslateLayout(String i) {
-		translateLayout = i;
+	public void setTranslateFormat(String i) {
+		translateFormat = i;
 	}
+
+	public void setTranslateHoverFormat(String i) { translateHoverFormat = i; }
 
 	public void setForceSeparateChatChannel(boolean i) {
 		forceSeparateChatChannel = i;
@@ -925,45 +932,16 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
-	public TextComponent getTranslateIcon() {
+	public Component getTranslateIcon() {
 		return translateIcon == null ? Component.empty() : translateIcon;
 	}
 
-	public TextComponent getTranslateLayout(String prefix, String username, String suffix, Player player) {
-		TextComponent out = Component.empty()
-				.append(translateIcon);
+	public Component getTranslateFormat(String prefix, String username, String suffix, Player originPlayer) {
+		return refs.getChatChannelFormat(translateIcon, translateFormat, prefix, username, suffix, originPlayer, null);
+	}
 
-		String parsedLayout = translateLayout;
-		int count = parsedLayout.length() - parsedLayout.replace("%", "").length();
-		if (count > 1 && getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
-			if (player != null) {
-				refs.debugMsg("Papi for player!");
-				parsedLayout = PlaceholderAPI.setPlaceholders(player, translateLayout);
-			} else {
-				refs.debugMsg("Removing papi placeholders for console.");
-				parsedLayout = translateLayout.replaceAll("%[^%]+%", "");
-			}
-		}
-
-		int i = 0;
-		while (i < parsedLayout.length()) {
-			if (parsedLayout.startsWith("{prefix}", i)) {
-				out = out.append(refs.deserial(prefix));
-				i += "{prefix}".length();
-			} else if (parsedLayout.startsWith("{username}", i)) {
-				out = out.append(refs.deserial(username));
-				i += "{username}".length();
-			} else if (parsedLayout.startsWith("{suffix}", i)) {
-				out = out.append(refs.deserial(suffix));
-				i += "{suffix}".length();
-			} else {
-				// Append any other character directly
-				out = out.append(Component.text(String.valueOf(parsedLayout.charAt(i))));
-				i++;
-			}
-		}
-
-		return out;
+	public Component getTranslateHoverFormat(String prefix, String username, String suffix, Player originPlayer, Player targetPlayer) {
+		return refs.getChatChannelFormat(null, translateHoverFormat, prefix, username, suffix, originPlayer, targetPlayer);
 	}
 
 	public boolean isForceSeparateChatChannel() {

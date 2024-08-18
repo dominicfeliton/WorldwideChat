@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nem sikerült csatlakozni a {0}-hoz. Ellenőrizze, hogy
     a hitelesítő adatok és a tűzfal megfelelően van-e beállítva!
   wwcConfigEnabledbStats: Engedélyezett bStats.
-  wwctGUIMainMenuPlayer: '{0} fordítási menüje'
   wwctGUIBookButton: Könyvfordítás be- és bekapcsolása
   wwcLangDetected: 'Észlelt nyelv: {0}.'
   wwcBookTranslateStart: Célkönyv fordítása...
@@ -667,7 +666,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Külön csatorna ikon módosítása
   wwcConfigConversationChatFormatSuccess: A formátum sikeresen megváltozott.
   wwcConfigGUISeparateChatChannelForceButton: Külön csatorna kényszerítése
-  wwcOrigHover: 'Eredeti üzenet: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Az eredeti kimenő csevegés
     a fordításhoz egérszövegként csatolt sikeresen bekapcsolta.
   wwcConfigGUISendOutgoingHoverTextChatButton: Eredeti kimenő üzenetek hozzáadása
@@ -704,4 +702,8 @@ Messages:
     körül. Írja be a 0-at, hogy visszatérjen.'
   wwcConfigGUIModifyBlacklistSettings: Feketelista módosítása
   wwcConfigGUINextPageButton: Következő oldal
+  wwcConfigChatChannelHoverFormatInvalid: Érvénytelen lebegő formátum észlelhető.
+    Alapértelmezés szerint {0}...
+  wwcOrigHover: Eredeti Üzenet
+  wwctGUIMainMenuPlayer: Fordítás {0}
 

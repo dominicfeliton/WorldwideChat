@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} سره نښلولو کې پاتې راغی. ډاډ ترلاسه کړئ چې ستاسو
     باورلیک او فایروال په سمه توګه ترتیب شوی دی!'
   wwcConfigEnabledbStats: فعال شوي bStats.
-  wwctGUIMainMenuPlayer: د {0} ژباړه غورنۍ
   wwctGUIBookButton: د کتاب ژباړې توګول
   wwcLangDetected: . ژبې وموندل شو {0}
   wwcBookTranslateStart: د هدف کتاب ژباړه...
@@ -643,7 +642,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: جلا چینل آیکون بدل کړئ
   wwcConfigConversationChatFormatSuccess: ستاسو بڼه په بریالیتوب سره بدل شوی دی
   wwcConfigGUISeparateChatChannelForceButton: جلا چینل زور کړئ
-  wwcOrigHover: 'اصلي پیغام: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: اصلي راتلونکي چیټ ژباړې سره
     منسلک شوی لکه چې د هور متن په بریالیتوب
   wwcConfigGUISendOutgoingHoverTextChatButton: د هور متن په توګه اصلي لرونکي پیغامونه
@@ -676,4 +674,7 @@ Messages:
     لپاره 0 ټایپ کړئ.
   wwcConfigGUIModifyBlacklistSettings: تور لیست اصلاح کړئ
   wwcConfigGUINextPageButton: راتلونکی پاڼه
+  wwcConfigChatChannelHoverFormatInvalid: غلط هوور فارمیټ کشف شوی. {0} ته ډیفولټ کول...
+  wwcOrigHover: اصلي پیغام
+  wwctGUIMainMenuPlayer: ژباړه {0}
 

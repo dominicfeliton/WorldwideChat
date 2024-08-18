@@ -16,7 +16,6 @@ Messages:
   wwcConfigConnectionFailed: התחברות אל {0} נכשלה. ודא שהאישורים וחומת האש שלך מוגדרים
     כהלכה!
   wwcConfigEnabledbStats: bStats מופעל.
-  wwctGUIMainMenuPlayer: תפריט התרגום של {0}
   wwctGUIBookButton: החלפת תרגום ספרים
   wwcLangDetected: זוהתה שפה {0}.
   wwcBookTranslateStart: מתרגם את ספר היעד...
@@ -587,7 +586,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: שנה סמל ערוץ נפרד
   wwcConfigConversationChatFormatSuccess: הפורמט שלך השתנה בהצלחה.
   wwcConfigGUISeparateChatChannelForceButton: ערוץ נפרד כוח
-  wwcOrigHover: 'הודעה מקורית: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: צ'אט יוצא מקורי המצורף לתרגום
     כשטקסט העכבר הוחלף בהצלחה.
   wwcConfigGUISendOutgoingHoverTextChatButton: הוספת הודעות יוצאות מקוריות כטקסט העכבר
@@ -618,4 +616,8 @@ Messages:
     שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
   wwcConfigGUIModifyBlacklistSettings: שנה רשימה שחורה
   wwcConfigGUINextPageButton: העמוד הבא
+  wwcConfigChatChannelHoverFormatInvalid: פורמט ריחוף לא חוקי זוהה. ברירת המחדל היא
+    {0}...
+  wwcOrigHover: הודעה מקורית
+  wwctGUIMainMenuPlayer: תרגם {0}
 

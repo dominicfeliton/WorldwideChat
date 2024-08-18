@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: ვერ მოხერხდა {0}- თან დაკავშირება. დარწმუნდით, რომ თქვენი
     რწმუნებათა სიგელები და firewall სწორად არის კონფიგურირებული!
   wwcConfigEnabledbStats: ჩართულია bStats.
-  wwctGUIMainMenuPlayer: '{0} მთარგმნელობითი მენიუ'
   wwctGUIBookButton: წიგნის თარგმანის გადართვა
   wwcLangDetected: აღმოჩენილი ენა {0}.
   wwcBookTranslateStart: სამიზნე წიგნის თარგმნა...
@@ -649,7 +648,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ცალკეული არხის ხატის
   wwcConfigConversationChatFormatSuccess: თქვენი ფორმატი წარმატებით შეიცვალა.
   wwcConfigGUISeparateChatChannelForceButton: ცალკე არხის ძალა
-  wwcOrigHover: ორიგინალი შეტყობინება {0}
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ორიგინალური გამავალი ჩატი,
     რომელიც თანდართულია თარგმანს, როგორც ჰოვერ ტექსტი
   wwcConfigGUISendOutgoingHoverTextChatButton: დაამატეთ ორიგინალური გამავალი შეტყობინებები
@@ -683,4 +681,8 @@ Messages:
     (%). დაბრუნებისთვის აკრიფეთ 0.
   wwcConfigGUIModifyBlacklistSettings: შავი სიის შეცვლა
   wwcConfigGUINextPageButton: შემდეგი გვერდი
+  wwcConfigChatChannelHoverFormatInvalid: გამოვლინდა არასწორი ჰოვერის ფორმატი. ნაგულისხმევად
+    {0}...
+  wwcOrigHover: ორიგინალური შეტ
+  wwctGUIMainMenuPlayer: თარგმანი {0}
 

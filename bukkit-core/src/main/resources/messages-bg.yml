@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Неуспешно свързване към {0}. Уверете се, че вашите идентификационни
     данни и защитната стена са конфигурирани правилно!
   wwcConfigEnabledbStats: Активирани bStats.
-  wwctGUIMainMenuPlayer: Меню за превод на {0}
   wwctGUIBookButton: Превключване на превод на книги
   wwcLangDetected: Открит език {0}.
   wwcBookTranslateStart: Превеждане на учебника...
@@ -668,7 +667,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Промяна на иконата на отделен канал
   wwcConfigConversationChatFormatSuccess: Вашият формат е променен успешно.
   wwcConfigGUISeparateChatChannelForceButton: Принудително отделен канал
-  wwcOrigHover: 'Оригинално съобщение: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригиналният изходящ чат,
     прикачен към превода като текст на курсора на мишката, се превключва успешно.
   wwcConfigGUISendOutgoingHoverTextChatButton: Добавяне на оригинални изходящи съобщения
@@ -705,4 +703,8 @@ Messages:
     проценти (%) вместо това. Въведете 0, за да се върнете назад.'
   wwcConfigGUIModifyBlacklistSettings: Промяна на черния списък
   wwcConfigGUINextPageButton: Следваща страница
+  wwcConfigChatChannelHoverFormatInvalid: Открит е невалиден формат на задържането
+    на По подразбиране на {0}...
+  wwcOrigHover: Оригинално съобщение
+  wwctGUIMainMenuPlayer: Превод {0}
 

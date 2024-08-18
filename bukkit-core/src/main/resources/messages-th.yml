@@ -16,7 +16,6 @@ Messages:
   wwctGUINewTranslationSource: เลือกภาษาต้นทาง
   wwcConfigConnectionFailed: ล้มเหลวในการเชื่อมต่อกับ {0} โปรดตรวจสอบให้แน่ใจว่าข้อมูลประจำตัวและไฟร์วอลล์ของคุณได้รับการกำหนดค่าอย่างถูกต้อง!
   wwcConfigEnabledbStats: เปิดใช้งาน bStats
-  wwctGUIMainMenuPlayer: เมนูการแปลของ {0}
   wwctGUIBookButton: สลับการแปลหนังสือ
   wwcLangDetected: ตรวจพบภาษา {0}
   wwcBookTranslateStart: แปลหนังสือเป้าหมาย...
@@ -564,7 +563,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: เปลี่ยนไอคอนช่องแยกต่างหาก
   wwcConfigConversationChatFormatSuccess: รูปแบบของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
   wwcConfigGUISeparateChatChannelForceButton: บังคับช่องแยกต่างหาก
-  wwcOrigHover: 'ข้อความต้นฉบับ: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: การแชทขาออกต้นฉบับที่แนบมากับการแปลเป็นข้อความแบบเมาส์ถูกสลับเรียบร้อยแล้ว
   wwcConfigGUISendOutgoingHoverTextChatButton: เพิ่มข้อความขาออกต้นฉบับเป็นข้อความที่วางเมาส์
   wwcConfigPAPIInstalled: เปิดใช้งานการสนับสนุน PlaceholderAPI สำหรับรูปแบบการแชทของคุณ
@@ -593,4 +591,8 @@ Messages:
     0 เพื่อกลับไป'
   wwcConfigGUIModifyBlacklistSettings: แก้ไขบัญชีดำ
   wwcConfigGUINextPageButton: หน้าถัดไป
+  wwcConfigChatChannelHoverFormatInvalid: ตรวจพบรูปแบบการโฮเวอร์ที่ไม่ถูกต้องค่าเริ่มต้นเป็น
+    {0}...
+  wwcOrigHover: ข้อความต้นฉบับ
+  wwctGUIMainMenuPlayer: แปล {0}
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: 'Չհաջողվեց միացնել {0}: Համոզվեք, որ ձեր հավատարմագրերն
     ու firewall ճիշտ կազմաձեւված են:'
   wwcConfigEnabledbStats: Միացված bStats.
-  wwctGUIMainMenuPlayer: Թարգմանության մենյու {0}
   wwctGUIBookButton: Toggle Գիրք թարգմանություն
   wwcLangDetected: Հայտնաբերված լեզու {0}.
   wwcBookTranslateStart: Թարգմանելով թիրախային գիրքը...
@@ -677,7 +676,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Փոխեք առանձին ալիքի պատկերակը
   wwcConfigConversationChatFormatSuccess: 'Ձեր ձևաչափը հաջողությամբ փոխվել է:'
   wwcConfigGUISeparateChatChannelForceButton: Ֆորսել առանձին ալիքը
-  wwcOrigHover: 'Բնօրինակ հաղորդագրություն: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Բնօրինակը ելքային զրուցարան
     կցված թարգմանության որպես սավառնել տեքստի togged հաջողությամբ.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ավելացնել բնօրինակ ելքային հաղորդագրությունները
@@ -715,4 +713,8 @@ Messages:
     Մուտքագրեք 0-ը հետ գնալու համար:'
   wwcConfigGUIModifyBlacklistSettings: Փոփոխեք սև ցուցակը
   wwcConfigGUINextPageButton: Հաջորդ էջը
+  wwcConfigChatChannelHoverFormatInvalid: 'Հայտնաբերվել է անվավեր սավառման ձևաչափ:
+    Կանխարգելում է {0}...'
+  wwcOrigHover: Բնօրինակ հաղորդագրություն
+  wwctGUIMainMenuPlayer: Թարգմանել {0}
 

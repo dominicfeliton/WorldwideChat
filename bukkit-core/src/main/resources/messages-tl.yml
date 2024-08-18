@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nabigong kumonekta sa {0}. Tiyaking tama ang pagkakaayos
     ng iyong mga kredensyal at firewall!
   wwcConfigEnabledbStats: Pinagana ang bStats.
-  wwctGUIMainMenuPlayer: Pagsasalin Menu ng {0}
   wwctGUIBookButton: I-toggle ang Book Translation
   wwcLangDetected: Natukoy na wika {0}.
   wwcBookTranslateStart: Pagsasalin ng target na aklat...
@@ -727,7 +726,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Baguhin ang hiwalay na icon ng channel
   wwcConfigConversationChatFormatSuccess: Matagumpay na binago ang iyong format.
   wwcConfigGUISeparateChatChannelForceButton: Sapilitang Hiwalay na Channel
-  wwcOrigHover: 'Orihinal na Mensahe: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Ang orihinal na papalabas
     na chat na nakalakip sa pagsasalin habang matagumpay na naka-switch ang hover
   wwcConfigGUISendOutgoingHoverTextChatButton: Magdagdag ng Orihinal na Papalabas
@@ -766,4 +764,8 @@ Messages:
     iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
   wwcConfigGUIModifyBlacklistSettings: Baguhin ang Blacklist
   wwcConfigGUINextPageButton: Susunod na Pahina
+  wwcConfigChatChannelHoverFormatInvalid: Nakita ang hindi wastong format ng hover.
+    Pag-default sa {0}...
+  wwcOrigHover: Orihinal na Mensahe
+  wwctGUIMainMenuPlayer: Isalin ang {0}
 

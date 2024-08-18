@@ -162,7 +162,6 @@ Messages:
   wwcsNotATranslator: '{0} ਲਈ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।'
   wwcConfigGUIbStatsButton: ਟੌਗਲ ਬੀਸਟੈਟਸ
   wwctGUINewTranslationSource: ਇੱਕ ਸਰੋਤ ਭਾਸ਼ਾ ਚੁਣੋ
-  wwctGUIMainMenuPlayer: '{0} ਦਾ ਅਨੁਵਾਦ ਮੀਨੂੰ'
   wwctGUIBookButton: ਟੌਗਲ ਕਿਤਾਬ ਅਨੁਵਾਦ
   wwcConfigGUIDebugModeButton: ਡੀਬੱਗ ਮੋਡ ਬਦਲੋ
   wwcConfigMessageCharLimitInvalid: config.yml ਵਿੱਚ ਸੈੱਟ ਪ੍ਰਤੀ ਸੁਨੇਹਾ ਅਵੈਧ ਸੀਮਾ। 255
@@ -651,7 +650,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ਵੱਖਰਾ ਚੈਨਲ ਆਈਕਨ ਬਦਲੋ
   wwcConfigConversationChatFormatSuccess: ਤੁਹਾਡਾ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ ਗਿਆ ਹੈ.
   wwcConfigGUISeparateChatChannelForceButton: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਫੋਰਸ ਕਰੋ
-  wwcOrigHover: 'ਅਸਲੀ ਸੁਨੇਹਾ: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ਮੂਲ ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ ਅਨੁਵਾਦ
     ਨਾਲ ਜੁੜੀ ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
   wwcConfigGUISendOutgoingHoverTextChatButton: ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਅਸਲ ਆਉਟਗੋਇੰਗ
@@ -690,4 +688,8 @@ Messages:
     ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
   wwcConfigGUIModifyBlacklistSettings: ਬਲੈਕਲਿਸਟ ਸੋਧੋ
   wwcConfigGUINextPageButton: ਅਗਲਾ ਪੰਨਾ
+  wwcConfigChatChannelHoverFormatInvalid: ਅਵੈਧ ਹੋਵਰ ਫਾਰਮੈਟ ਦਾ ਪਤਾ ਲਗਾਇਆ ਗਿਆ। {0} ਤੇ
+    ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ ਹੈ...
+  wwcOrigHover: ਅਸਲੀ ਸੁਨੇਹਾ
+  wwctGUIMainMenuPlayer: ਅਨੁਵਾਦ ਕਰੋ {0}
 

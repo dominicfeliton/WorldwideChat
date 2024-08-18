@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Error al conectarse a {0}. Asegúrese de que sus credenciales
     y el firewall están configurados correctamente.
   wwcConfigEnabledbStats: bStats habilitados.
-  wwctGUIMainMenuPlayer: Menú de traducción de {0}
   wwctGUIBookButton: Alternar traducción de libros
   wwcLangDetected: Idioma {0} detectado.
   wwcBookTranslateStart: Traduciendo el libro de destino...
@@ -713,7 +712,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Cambiar icono de canal independiente
   wwcConfigConversationChatFormatSuccess: El formato se ha cambiado correctamente.
   wwcConfigGUISeparateChatChannelForceButton: Forzar un canal separado
-  wwcOrigHover: 'Mensaje original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: El chat saliente original
     adjunto a la traducción como texto flotante se alteró correctamente.
   wwcConfigGUISendOutgoingHoverTextChatButton: Agregar mensajes salientes originales
@@ -752,4 +750,8 @@ Messages:
     (%) en su lugar. Escriba 0 para volver atrás.'
   wwcConfigGUIModifyBlacklistSettings: Modificar la lista negra
   wwcConfigGUINextPageButton: Página siguiente
+  wwcConfigChatChannelHoverFormatInvalid: Se detectó un formato de desplazamiento
+    no válido. Con el valor predeterminado {0}...
+  wwcOrigHover: Mensaje original
+  wwctGUIMainMenuPlayer: Traduce {0}
 

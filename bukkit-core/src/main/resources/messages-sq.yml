@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Dështoi lidhja me {0}. Sigurohuni që kredencialet dhe
     firewall të jenë konfiguruar në mënyrë korrekte!
   wwcConfigEnabledbStats: bStats aktivizuar.
-  wwctGUIMainMenuPlayer: Menuja e Përkthimit prej {0}
   wwctGUIBookButton: Përkthimi i Librit Toggle
   wwcLangDetected: Gjuha e zbuluar {0}.
   wwcBookTranslateStart: Përkthimi i librit të synuar...
@@ -685,7 +684,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ndryshoni ikonën e kanalit të veç
   wwcConfigConversationChatFormatSuccess: Formati juaj është ndryshuar me sukses.
   wwcConfigGUISeparateChatChannelForceButton: Forconi kanalin e veçantë
-  wwcOrigHover: 'Mesazhi origjinal: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Biseda origjinale dalëse
     e bashkangjitur përkthimit si teksti hover u ndërrua me sukses.
   wwcConfigGUISendOutgoingHoverTextChatButton: Shtoni Mesazhet Origjinale Dalëse si
@@ -723,4 +721,8 @@ Messages:
     nga përqindje (%) në vend të kësaj. Shkruani 0 për të kthyer përsëri.'
   wwcConfigGUIModifyBlacklistSettings: Modifikoni listën e zezë
   wwcConfigGUINextPageButton: Faqja Tjetër
+  wwcConfigChatChannelHoverFormatInvalid: Zbulohet formati i pavlefshëm i hover. Parazgjedhja
+    në {0}...
+  wwcOrigHover: Mesazhi origjinal
+  wwctGUIMainMenuPlayer: Përkthejeni {0}
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Gagal menyambung ke {0}. Pastikan kredensial dan firewall
     anda dikonfigurasi dengan benar!
   wwcConfigEnabledbStats: bStats diaktifkan.
-  wwctGUIMainMenuPlayer: Menu Terjemahan dari {0}
   wwctGUIBookButton: Toggle Terjemahan Buku
   wwcLangDetected: Terdeteksi bahasa {0}.
   wwcBookTranslateStart: Menerjemahkan buku target...
@@ -643,7 +642,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ubah Ikon Saluran Terpisah
   wwcConfigConversationChatFormatSuccess: Format Anda telah berhasil diubah.
   wwcConfigGUISeparateChatChannelForceButton: Memaksa Saluran Terpisah
-  wwcOrigHover: 'Pesan Asli: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Obrolan keluar asli yang
     dilampirkan ke terjemahan sebagai teks hover berhasil diubah.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tambahkan Pesan Keluar Asli sebagai
@@ -680,4 +678,8 @@ Messages:
     oleh persentase (%) sebagai gantinya. Ketik 0 untuk kembali.'
   wwcConfigGUIModifyBlacklistSettings: Ubah Daftar Hitam
   wwcConfigGUINextPageButton: Halaman berikutnya
+  wwcConfigChatChannelHoverFormatInvalid: Format hover tidak valid terdeteksi. Default
+    ke {0}...
+  wwcOrigHover: Pesan Asli
+  wwctGUIMainMenuPlayer: Terjemahkan {0}
 

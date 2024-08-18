@@ -15,7 +15,6 @@ Messages:
   wwctGUINewTranslationSource: ソース言語の選択
   wwcConfigConnectionFailed: '{0} に接続できませんでした。資格情報とファイアウォールが正しく構成されていることを確認してください。'
   wwcConfigEnabledbStats: bStats が有効になりました。
-  wwctGUIMainMenuPlayer: '{0} の翻訳メニュー'
   wwctGUIBookButton: 本の翻訳を切り替え
   wwcLangDetected: 言語 {0}が検出されました。
   wwcBookTranslateStart: ターゲットブックを翻訳中...
@@ -504,7 +503,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: 個別チャンネルアイコンを変更
   wwcConfigConversationChatFormatSuccess: フォーマットは正常に変更されました。
   wwcConfigGUISeparateChatChannelForceButton: 強制的にチャンネルを分離
-  wwcOrigHover: オリジナルメッセージ:{0}
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ホバーテキストとして翻訳に添付された元の送信チャットが正常に切り替わりました。
   wwcConfigGUISendOutgoingHoverTextChatButton: 元の送信メッセージをホバーテキストとして追加
   wwcConfigPAPIInstalled: PlaceHolderAPI サポートがチャットフォーマットで有効になりました。
@@ -530,4 +528,7 @@ Messages:
     {1} です。PlaceholderAPI を使用している場合は、それらの変数を代わりにパーセンテージ (%) で囲むようにしてください。0 を入力すると戻ります。
   wwcConfigGUIModifyBlacklistSettings: ブラックリストを変更
   wwcConfigGUINextPageButton: 次のページ
+  wwcConfigChatChannelHoverFormatInvalid: 無効なホバー形式が検出されました。デフォルトは {0}...
+  wwcOrigHover: オリジナルメッセージ
+  wwctGUIMainMenuPlayer: 翻訳 {0}
 

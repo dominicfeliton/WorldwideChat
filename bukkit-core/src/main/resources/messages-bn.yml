@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} এর সাথে সংযোগ করতে ব্যর্থ। নিশ্চিত করুন যে আপনার
     শংসাপত্র এবং ফায়ারওয়াল সঠিকভাবে কনফিগার করা আছে!'
   wwcConfigEnabledbStats: সক্রিয় bStats।
-  wwctGUIMainMenuPlayer: '{0} এর অনুবাদ মেনু'
   wwctGUIBookButton: বইয়ের অনুবাদ টগল করুন
   wwcLangDetected: ভাষা {0} সনাক্ত করা হয়েছে।
   wwcBookTranslateStart: টার্গেট বই অনুবাদ করা হচ্ছে...
@@ -649,7 +648,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ভিন্ন চ্যানেল আইকন পরিবর্তন
   wwcConfigConversationChatFormatSuccess: আপনার বিন্যাস সফলভাবে পরিবর্তন করা হয়েছে।
   wwcConfigGUISeparateChatChannelForceButton: ফোর্স পৃথক চ্যানে
-  wwcOrigHover: 'মূল বার্তা: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: আসল বহির্গামী চ্যাট অনুবাদের
     সাথে সংযুক্ত হোভার টেক্সট সফলভাবে টগ করা হয়েছে
   wwcConfigGUISendOutgoingHoverTextChatButton: হোভার টেক্সট হিসাবে মূল বহির্গামী বার্তা
@@ -685,4 +683,8 @@ Messages:
     ফিরে যেতে 0 টাইপ করুন।'
   wwcConfigGUIModifyBlacklistSettings: ব্ল্যাকলিস্ট পরিবর্তন করুন
   wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
+  wwcConfigChatChannelHoverFormatInvalid: অবৈধ হোভার বিন্যাস সনাক্ত হয়েছে। {0} এ
+    ডিফল্ট করা হচ্ছে...
+  wwcOrigHover: মূল বার্তা
+  wwctGUIMainMenuPlayer: অনুবাদ {0}
 

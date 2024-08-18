@@ -172,7 +172,6 @@ Messages:
   wwcConfigGUITogglePostgresButton: Activer/désactiver PostgreSQL
   wwcConfigConversationMongoDatabaseNameSuccess: Le nom de la base de données MongoDB
     a été modifié avec succès.
-  wwctGUIMainMenuPlayer: Menu de traduction de {0}
   wwcConfigConversationToggleSQLSuccess: SQL a été activé avec succès. Rechargez pour
     que la modification soit prise en compte.
   wwcConfigMessageCharLimitInvalid: Limite non valide par message définie dans config.yml.
@@ -716,7 +715,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Modifier l'icône d'une chaîne distincte
   wwcConfigConversationChatFormatSuccess: Votre format a été modifié avec succès.
   wwcConfigGUISeparateChatChannelForceButton: Forcer un canal séparé
-  wwcOrigHover: 'Message original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Le chat sortant original
     joint à la traduction sous forme de texte survolé a été activé avec succès.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ajouter les messages sortants d'origine
@@ -754,3 +752,7 @@ Messages:
     de pourcentages (%). Tapez 0 pour revenir en arrière.'
   wwcConfigGUIModifyBlacklistSettings: Modifier la liste noire
   wwcConfigGUINextPageButton: Page suivante
+  wwcConfigChatChannelHoverFormatInvalid: Format de survol non valide détecté. Par
+    défaut, c'est {0}...
+  wwcOrigHover: Message original
+  wwctGUIMainMenuPlayer: Traduire {0}

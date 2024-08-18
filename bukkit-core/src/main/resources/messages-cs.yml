@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nepodařilo se připojit k {0}. Ujistěte se, že vaše pověření
     a firewall jsou správně nakonfigurovány!
   wwcConfigEnabledbStats: Povolené Bstaty.
-  wwctGUIMainMenuPlayer: Překladové menu {0}
   wwctGUIBookButton: Přepnout překlad knih
   wwcLangDetected: Zjištěn jazyk {0}.
   wwcBookTranslateStart: Překlad cílové knihy...
@@ -648,7 +647,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Změnit ikonu samostatného kanálu
   wwcConfigConversationChatFormatSuccess: Váš formát byl úspěšně změněn.
   wwcConfigGUISeparateChatChannelForceButton: Vynutit oddělený kanál
-  wwcOrigHover: 'Původní zpráva: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Původní odchozí chat připojený
     k překladu jako text nad kurzorem byl úspěšně přepnut.
   wwcConfigGUISendOutgoingHoverTextChatButton: Přidání původních odchozích zpráv jako
@@ -684,4 +682,8 @@ Messages:
     (%). Zadejte 0 pro návrat.'
   wwcConfigGUIModifyBlacklistSettings: Upravit černou listinu
   wwcConfigGUINextPageButton: Další strana
+  wwcConfigChatChannelHoverFormatInvalid: Byl zjištěn neplatný formát myši. Výchozí
+    hodnota {0}...
+  wwcOrigHover: Původní zpráva
+  wwctGUIMainMenuPlayer: Přeložte {0}
 

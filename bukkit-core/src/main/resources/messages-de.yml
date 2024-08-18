@@ -20,7 +20,6 @@ Messages:
     Sie sicher, dass Ihre Anmeldeinformationen und Ihre Firewall korrekt konfiguriert
     sind!
   wwcConfigEnabledbStats: Aktiviert bStats.
-  wwctGUIMainMenuPlayer: Übersetzungsmenü von {0}
   wwctGUIBookButton: Buch-Übersetzung umschalten
   wwcLangDetected: Erkannte Sprache {0}.
   wwcBookTranslateStart: Zielbuch übersetzen...
@@ -719,7 +718,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Symbol für separaten Kanal ändern
   wwcConfigConversationChatFormatSuccess: Ihr Format wurde erfolgreich geändert.
   wwcConfigGUISeparateChatChannelForceButton: Separaten Kanal erzwingen
-  wwcOrigHover: 'Ursprüngliche Nachricht: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Der ursprüngliche ausgehende
     Chat, der als Hover-Text an die Übersetzung angehängt wurde, wurde erfolgreich
     umgeschaltet.
@@ -758,4 +756,8 @@ Messages:
     stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein, um zurückzugehen.'
   wwcConfigGUIModifyBlacklistSettings: Schwarze Liste ändern
   wwcConfigGUINextPageButton: Nächste Seite
+  wwcConfigChatChannelHoverFormatInvalid: Ungültiges Hover-Format erkannt. Die Standardeinstellung
+    ist {0}...
+  wwcOrigHover: Ursprüngliche Nachricht
+  wwctGUIMainMenuPlayer: Übersetze {0}
 

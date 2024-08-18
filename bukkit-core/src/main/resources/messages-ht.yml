@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Echwe pou pou konekte nan {0}. asire w ke kalifikasyon
     ou ak firewall yo configuré kòrèkteman!
   wwcConfigEnabledbStats: Pèmèt BStat.
-  wwctGUIMainMenuPlayer: Meni tradiksyon nan % mwen
   wwctGUIBookButton: Baskile Tradiksyon Liv
   wwcLangDetected: Detekte lang {0}.
   wwcBookTranslateStart: Tradwi liv sib...
@@ -631,7 +630,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Chanje Icon Chèn separe
   wwcConfigConversationChatFormatSuccess: Fòma ou te chanje avèk siksè.
   wwcConfigGUISeparateChatChannelForceButton: Fòs Chèn separe
-  wwcOrigHover: 'Mesaj orijinal: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Original sortan chat tache
     ak tradiksyon kòm hover tèks togged avèk siksè.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ajoute Mesaj Sortan orijinal kòm Tèks
@@ -664,4 +662,8 @@ Messages:
     asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
   wwcConfigGUIModifyBlacklistSettings: Modifye lis nwa
   wwcConfigGUINextPageButton: Paj pwochen
+  wwcConfigChatChannelHoverFormatInvalid: Fòma hover envalid detekte. Defaulting nan
+    {0}...
+  wwcOrigHover: Mesaj orijinal
+  wwctGUIMainMenuPlayer: Tradui {0}
 

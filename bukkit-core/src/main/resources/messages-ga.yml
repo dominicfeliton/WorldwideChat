@@ -172,7 +172,6 @@ Messages:
   wwcsNotATranslator: Níl aon taifid ar fáil go fóill le h {0}.
   wwcConfigGUIbStatsButton: bStats Scoránaigh
   wwctGUINewTranslationSource: Roghnaigh Teanga Foinse
-  wwctGUIMainMenuPlayer: Aistriúchán Menu de {0}
   wwctGUIBookButton: Aistriúchán Leabhar Scoránaigh
   wwcConfigGUIDebugModeButton: Mód Debug Scoránaigh
   wwcConfigMessageCharLimitInvalid: Teorainn neamhbhailí in aghaidh an teachtaireacht
@@ -688,7 +687,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Athraigh Deilbhín Cainéil
   wwcConfigConversationChatFormatSuccess: Tá d'fhormáid athraithe go rathúil.
   wwcConfigGUISeparateChatChannelForceButton: Cainéal ar leithligh Force
-  wwcOrigHover: 'Teachtaireacht Bunaidh: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Comhrá bunaidh atá ag imeacht
     ceangailte leis an aistriúchán mar a thoscaíodh téacs hover
   wwcConfigGUISendOutgoingHoverTextChatButton: Cuir Teachtaireachtaí Eisitheacha Bunaidh
@@ -726,4 +724,8 @@ Messages:
     timpeallaithe ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
   wwcConfigGUIModifyBlacklistSettings: Athraigh Liosta Dubh
   wwcConfigGUINextPageButton: An chéad leathanach eile
+  wwcConfigChatChannelHoverFormatInvalid: Braithíodh formáid hover neamhbhailí. Ag
+    réamhshocrú go {0}...
+  wwcOrigHover: Teachtaireacht Bunai
+  wwctGUIMainMenuPlayer: Aistrigh {0}
 

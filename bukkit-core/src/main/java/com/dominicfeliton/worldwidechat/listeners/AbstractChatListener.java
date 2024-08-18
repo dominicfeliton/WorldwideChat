@@ -26,15 +26,30 @@ public abstract class AbstractChatListener<T extends Event> implements Listener 
 
     // To provide one common method for spigot/paper/folia/etc.
     // We assume that Vault is functional and has a valid ChatProvider set
+    // name field is for compatibility with spigot AND paper
     public Component getVaultMessage(Player eventPlayer, Component message, Component name) {
         Chat chat = main.getChat();
-
-        refs.debugMsg(chat.getPlayerPrefix(eventPlayer));
-        refs.debugMsg(chat.getPlayerSuffix(eventPlayer));
-
-        return main.getTranslateLayout(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer)
-                .append(Component.space())
-                .append(message);
+        if (chat != null) {
+            return main.getTranslateFormat(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer)
+                    .append(Component.space())
+                    .append(message);
+        } else {
+            return main.getTranslateFormat("", refs.serial(name), "", eventPlayer)
+                    .append(Component.space())
+                    .append(message);
+        }
     }
 
+    public Component getVaultHoverMessage(Player eventPlayer, Component message, Component name, Player targetPlayer) {
+        Chat chat = main.getChat();
+        if (chat != null) {
+            return main.getTranslateHoverFormat(chat.getPlayerPrefix(eventPlayer), refs.serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer, targetPlayer)
+                    .append(Component.space())
+                    .append(message);
+        } else {
+            return main.getTranslateHoverFormat("", refs.serial(name), "", eventPlayer, targetPlayer)
+                    .append(Component.space())
+                    .append(message);
+        }
+    }
 }

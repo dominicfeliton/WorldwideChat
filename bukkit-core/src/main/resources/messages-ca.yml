@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: No s'ha pogut connectar a {0} Assegura't que les teves
     credencials i tallafocs estiguin configurades correctament!
   wwcConfigEnabledbStats: bStats activat.
-  wwctGUIMainMenuPlayer: Menú de traducció de {0}
   wwctGUIBookButton: Commuta la traducció del llibre
   wwcLangDetected: Idioma detectat {0}.
   wwcBookTranslateStart: Traduir el llibre de destinació...
@@ -701,7 +700,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Canviar la icona del canal separat
   wwcConfigConversationChatFormatSuccess: El seu format s'ha canviat amb èxit.
   wwcConfigGUISeparateChatChannelForceButton: Força el canal separat
-  wwcOrigHover: 'Missatge original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: El xat de sortida original
     adjunt a la traducció com a text de la passejadora s'ha alternat correctament.
   wwcConfigGUISendOutgoingHoverTextChatButton: Afegeix missatges sortints originals
@@ -739,4 +737,8 @@ Messages:
     per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
   wwcConfigGUIModifyBlacklistSettings: Modificar la llista negra
   wwcConfigGUINextPageButton: Pàgina següent
+  wwcConfigChatChannelHoverFormatInvalid: S'ha detectat el format de passejador invàlid.
+    Per defecte a {0}...
+  wwcOrigHover: Missatge original
+  wwctGUIMainMenuPlayer: Tradueix {0}
 

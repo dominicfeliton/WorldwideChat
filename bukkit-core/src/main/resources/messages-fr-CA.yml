@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Échec de la connexion à {0}. Vérifiez que vos informations
     d'identification et le pare-feu sont correctement configurés!
   wwcConfigEnabledbStats: bStats activés.
-  wwctGUIMainMenuPlayer: Menu de traduction de {0}
   wwctGUIBookButton: Basculer la traduction du livre
   wwcLangDetected: Langue détecté {0}.
   wwcBookTranslateStart: Traduire le livre cible...
@@ -711,7 +710,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Modifier l'icône de canal distinct
   wwcConfigConversationChatFormatSuccess: Votre format a été modifié avec succès.
   wwcConfigGUISeparateChatChannelForceButton: Chaîne séparée par force
-  wwcOrigHover: 'Message original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Contchat sortant original
     joint à la traduction lorsque le texte du survol est passé avec succès.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ajouter les messages sortants originaux
@@ -750,4 +748,8 @@ Messages:
     de pourcentages (%). Tapez 0 pour revenir en arrière.'
   wwcConfigGUIModifyBlacklistSettings: Modifier la liste noire
   wwcConfigGUINextPageButton: Page suivante
+  wwcConfigChatChannelHoverFormatInvalid: Format de survol non valide détecté. La
+    valeur par défaut est {0}...
+  wwcOrigHover: Message original
+  wwctGUIMainMenuPlayer: Traduire {0}
 

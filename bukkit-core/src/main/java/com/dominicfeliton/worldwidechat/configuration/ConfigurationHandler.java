@@ -332,10 +332,11 @@ public class ConfigurationHandler {
 					new String[] {refs.serial(main.getTranslateIcon())},
 					null));
 		}
+		// TODO: getLogger() success message for both Formats below?
 		// Separate Chat Channel Format
 		try {
 			String format = mainConfig.getString("Chat.separateChatChannel.format");
-			main.setTranslateLayout(mainConfig.getString("Chat.separateChatChannel.format"));
+			main.setTranslateFormat(format);
 
 			int count = format.length() - format.replace("%", "").length();
 			if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
@@ -344,9 +345,21 @@ public class ConfigurationHandler {
 				main.getLogger().warning(refs.getMsg("wwcConfigPAPINotInstalled", null));
 			}
 		} catch (Exception e) {
-			main.setTranslateLayout("{prefix}{username}{suffix}:");
+			main.setTranslateFormat("{prefix}{username}{suffix}:");
 			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid",
 					new String[] {"{prefix}{username}{suffix}:"},
+					null));
+		}
+		// Hover Text Format
+		try {
+			String format = mainConfig.getString("Chat.separateChatChannel.hoverFormat");
+			main.setTranslateHoverFormat(format);
+
+			// PAPI detection not needed, already sufficiently warned by Format
+		} catch (Exception e) {
+			main.setTranslateHoverFormat("&o{local:wwcOrigHover}:");
+			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelHoverFormatInvalid",
+					new String[] {"&o{local:wwcOrigHover}:"},
 					null));
 		}
 		// Always Force Separate Chat Channel

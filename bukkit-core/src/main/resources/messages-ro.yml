@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nu a reușit conectarea la {0}. Asigurați-vă că acreditările
     și paravanul de protecție sunt configurate corect!
   wwcConfigEnabledbStats: bStats activate.
-  wwctGUIMainMenuPlayer: Meniu de traducere la {0}
   wwctGUIBookButton: Comută traducerea cărții
   wwcLangDetected: Limba detectat {0}.
   wwcBookTranslateStart: Traduc cartea ţintă...
@@ -689,7 +688,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Schimbați pictograma canalului separat
   wwcConfigConversationChatFormatSuccess: Formatul dvs. a fost schimbat cu succes.
   wwcConfigGUISeparateChatChannelForceButton: Forțați canalul separat
-  wwcOrigHover: 'Mesajul original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Chatul original de ieșire
     atașat la traducere ca text de trecere a mouse-ului a fost comutat cu succes.
   wwcConfigGUISendOutgoingHoverTextChatButton: Adăugați mesaje originale de ieșire
@@ -727,4 +725,8 @@ Messages:
     înconjurate de procente (%) în schimb. Tastați 0 pentru a reveni.'
   wwcConfigGUIModifyBlacklistSettings: Modificați lista neagră
   wwcConfigGUINextPageButton: Pagina următoare
+  wwcConfigChatChannelHoverFormatInvalid: Format nevalid de hover detectat. Implicit
+    la {0}...
+  wwcOrigHover: Mesaj original
+  wwctGUIMainMenuPlayer: Traducere {0}
 

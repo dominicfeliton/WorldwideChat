@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} સાથે કનેક્ટ કરવામાં નિષ્ફળ ખાતરી કરો કે તમારા ઓળખપત્રો
     અને ફાયરવોલ યોગ્ય રીતે ગોઠવેલ છે!'
   wwcConfigEnabledbStats: સક્ષમ bStats.
-  wwctGUIMainMenuPlayer: '{0} નું અનુવાદ મેનુ'
   wwctGUIBookButton: ટૉગલ બુક અનુવાદ
   wwcLangDetected: શોધાયેલ ભાષા {0}.
   wwcBookTranslateStart: લક્ષ્ય પુસ્તકનું અનુવાદ...
@@ -648,7 +647,6 @@ Messages:
   wwcConfigConversationChatFormatSuccess: તમારું ફોર્મેટ સફળતાપૂર્વક બદલવામાં આવ્યું
     છે.
   wwcConfigGUISeparateChatChannelForceButton: ફોર્સ અલગ ચેનલ
-  wwcOrigHover: 'મૂળ સંદેશ: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: હોવર ટેક્સ્ટ તરીકે અનુવાદ
     સાથે જોડાયેલ મૂળ આઉટગોઇંગ ચેટ સફળતાપૂર્વક ટૉગલ્ડ.
   wwcConfigGUISendOutgoingHoverTextChatButton: હોવર ટેક્સ્ટ તરીકે મૂળ આઉટગોઇંગ સંદેશાઓ
@@ -687,4 +685,8 @@ Messages:
     છે. પાછા જવા માટે 0 લખો.'
   wwcConfigGUIModifyBlacklistSettings: બ્લેકલિસ્ટમાં ફેરફાર કરો
   wwcConfigGUINextPageButton: આગળનું પાનું
+  wwcConfigChatChannelHoverFormatInvalid: અમાન્ય હોવર ફોર્મેટ શોધાયું. {0} પર ડિફોલ્ટ
+    થઈ રહ્યું છે...
+  wwcOrigHover: મૂળ સંદેશ
+  wwctGUIMainMenuPlayer: અનુવાદ {0}
 

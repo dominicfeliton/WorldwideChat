@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Не успеа да се поврзете до {0}. Проверете дали вашите
     ингеренции и заштитен ѕид се правилно конфигурирани!
   wwcConfigEnabledbStats: Овозможено bStats.
-  wwctGUIMainMenuPlayer: Мени за преведување на {0}
   wwctGUIBookButton: Вклучи превод на книги
   wwcLangDetected: Откриен јазик {0}.
   wwcBookTranslateStart: Преведување целна книга...
@@ -675,7 +674,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Променете ја иконата на одделен канал
   wwcConfigConversationChatFormatSuccess: Вашиот формат е успешно променет.
   wwcConfigGUISeparateChatChannelForceButton: Принудете посебен канал
-  wwcOrigHover: 'Оригинална порака: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригиналниот појдовен разговор
     прикачен на преводот како лебдејќи текст успешно се префрли.
   wwcConfigGUISendOutgoingHoverTextChatButton: Додадете оригинални појдовни пораки
@@ -712,4 +710,8 @@ Messages:
     (%) наместо тоа. Напишете 0 за да се вратите назад.'
   wwcConfigGUIModifyBlacklistSettings: Изменете ја црната листа
   wwcConfigGUINextPageButton: Следна страница
+  wwcConfigChatChannelHoverFormatInvalid: Откриен е неважечки формат на лебдење. Стандардно
+    на {0}...
+  wwcOrigHover: Оригинална порака
+  wwctGUIMainMenuPlayer: Преведи {0}
 

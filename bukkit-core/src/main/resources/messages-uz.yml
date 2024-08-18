@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} ga ulanib boʻlmadi. Hisob ma''lumotlaringiz va xavfsizlik
     devoringiz toʻgʻri sozlanganligiga ishonch hosil qiling!'
   wwcConfigEnabledbStats: bStats yoqilgan.
-  wwctGUIMainMenuPlayer: '{0} Tarjima menyusi'
   wwctGUIBookButton: Toggle Kitob tarjimasi
   wwcLangDetected: Aniqlangan til {0}.
   wwcBookTranslateStart: Tarjima maqsadli kitob...
@@ -682,7 +681,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Alohida kanal belgisini o'zgartiring
   wwcConfigConversationChatFormatSuccess: Sizning formatingiz muvaffaqiyatli o'zgartirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ajratish kanalini majburlang
-  wwcOrigHover: 'Asl xabar: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: hover matn sifatida tarjima
     biriktirilgan original chiquvchi chat muvaffaqiyatli togged.
   wwcConfigGUISendOutgoingHoverTextChatButton: Asl chiquvchi xabarlarni hover matni
@@ -721,4 +719,8 @@ Messages:
     yozing.'
   wwcConfigGUIModifyBlacklistSettings: Qora ro'yxatni o'zgartirish
   wwcConfigGUINextPageButton: Keyingi sahifa
+  wwcConfigChatChannelHoverFormatInvalid: Yaroqsiz hover formati aniqlandi. Standart
+    {0} ga sozlash...
+  wwcOrigHover: Asl xabar
+  wwctGUIMainMenuPlayer: Tarjima {0}
 

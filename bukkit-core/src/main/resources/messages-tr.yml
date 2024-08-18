@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0}''ya bağlanılamadı. Kimlik bilgilerinizin ve güvenlik
     duvarınızın doğru yapılandırıldığından emin olun!'
   wwcConfigEnabledbStats: Etkin bStats.
-  wwctGUIMainMenuPlayer: '{0} çeviri menüsü'
   wwctGUIBookButton: Kitap Çevirisi Değiştir
   wwcLangDetected: Algılandı {0} dilini.
   wwcBookTranslateStart: Hedef kitabı çeviriyorum...
@@ -648,7 +647,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ayrı Kanal Simgesini Değiştir
   wwcConfigConversationChatFormatSuccess: Formatınız başarıyla değiştirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ayrı Kanalı Zorla
-  wwcOrigHover: 'Orijinal Mesaj: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Hızlandırma metni olarak
     çeviriye eklenen orijinal giden sohbet başarıyla değiştirildi.
   wwcConfigGUISendOutgoingHoverTextChatButton: Orijinal Giden Mesajları Hover Metin
@@ -685,4 +683,8 @@ Messages:
     için 0 yazın.'
   wwcConfigGUIModifyBlacklistSettings: Kara Listeyi Değiştir
   wwcConfigGUINextPageButton: Sonraki Sayfa
+  wwcConfigChatChannelHoverFormatInvalid: Geçersiz fareyle gelme biçimi algılandı.
+    Varsayılan olarak {0}...
+  wwcOrigHover: Orijinal Mesaj
+  wwctGUIMainMenuPlayer: Çevir {0}
 

@@ -161,7 +161,6 @@ Messages:
   wwcsNotATranslator: '{0} साठी अद्याप कोणतेही रेकॉर्ड उपलब्ध नाहीत.'
   wwcConfigGUIbStatsButton: बीटीएटीएस टॉगल करा
   wwctGUINewTranslationSource: स्रोत भाषा निवडा
-  wwctGUIMainMenuPlayer: '{0} चे भाषांतर मेनू'
   wwctGUIBookButton: पुस्तक अनुवाद टॉगल करा
   wwcConfigGUIDebugModeButton: डीबग मोड टॉगल करा
   wwcConfigMessageCharLimitInvalid: व्यूहरहरण.yml मध्ये सेट प्रति संदेश अवैध मर्यादा.
@@ -631,7 +630,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: स्वतंत्र चॅनेल आय
   wwcConfigConversationChatFormatSuccess: आपले स्वरूप यशस्वीरित्या बदलले
   wwcConfigGUISeparateChatChannelForceButton: स्वतंत्र चॅनेल
-  wwcOrigHover: 'मूळ संदेश: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: हॉवर मजकूर म्हणून अनुवादाशी
     जोडलेले मूळ आउटगोग
   wwcConfigGUISendOutgoingHoverTextChatButton: होव्हर मजकूर म्हणून मूळ आउटगोग
@@ -663,4 +661,8 @@ Messages:
     असल्यास, त्याऐवजी ते व्हेरिएबल्स टक्केवारी (%) द्वारे परत जाण्यासाठी 0 टाइप करा.
   wwcConfigGUIModifyBlacklistSettings: ब्लॅकलिस्ट बद
   wwcConfigGUINextPageButton: पुढील पृष्ठ
+  wwcConfigChatChannelHoverFormatInvalid: अवैध होव्हर स्वरूप आढळले {0} वर डीफॉल्ट
+    करणे...
+  wwcOrigHover: मूळ संदेश
+  wwctGUIMainMenuPlayer: '{0} चे भाषांतर करा'
 

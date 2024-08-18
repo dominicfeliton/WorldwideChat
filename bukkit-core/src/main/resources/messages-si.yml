@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} වෙත සම්බන්ධ වීමට අසමත් විය. ඔබගේ අක්තපත්ර සහ ෆයර්වෝලය
     නිවැරදිව සකසා ඇති බවට වග බලා ගන්න!'
   wwcConfigEnabledbStats: bStats සක්රීය කර ඇත.
-  wwctGUIMainMenuPlayer: '{0} පරිවර්තන මෙනුව'
   wwctGUIBookButton: ටොගල් කරන්න පොත් පරිවර්තන
   wwcLangDetected: හදුනාගත් භාෂාව {0}.
   wwcBookTranslateStart: ඉලක්කගත පොත පරිවර්තනය කිරීම...
@@ -646,7 +645,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: වෙනම නාලිකා අයිකනය වෙනස් කරන්න
   wwcConfigConversationChatFormatSuccess: ඔබේ ආකෘතිය සාර්ථකව වෙනස් කර ඇත.
   wwcConfigGUISeparateChatChannelForceButton: වෙනම නාලිකාව බල කරන්න
-  wwcOrigHover: 'මුල් පණිවිඩය: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: හොවර් පෙළ සාර්ථකව togged
     ලෙස පරිවර්තනය කිරීමට අනුයුක්ත මුල් පිටතට යන චැට්.
   wwcConfigGUISendOutgoingHoverTextChatButton: හෝවර් පෙළ ලෙස මුල් පිටතට යන පණිවිඩ
@@ -681,4 +679,8 @@ Messages:
     0 ටයිප් කරන්න.'
   wwcConfigGUIModifyBlacklistSettings: කළු ලැයිස්තුව වෙනස් කරන්න
   wwcConfigGUINextPageButton: ඊළඟ පිටුව
+  wwcConfigChatChannelHoverFormatInvalid: අවලංගු හොවර් ආකෘතිය හඳුනාගෙන ඇත. {0} වෙත
+    පෙරහැරීම...
+  wwcOrigHover: මුල් පණිවිඩය
+  wwctGUIMainMenuPlayer: පරිවර්තනය කරන්න {0}
 

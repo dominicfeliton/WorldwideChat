@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Mistókst að tengjast við {0}. Gakktu úr skugga um að
     persónuskilríki og eldveggur séu stilltir rétt!
   wwcConfigEnabledbStats: Virkt bStats.
-  wwctGUIMainMenuPlayer: Þýðing Valmynd af {0}
   wwctGUIBookButton: Skipta Book Þýðing
   wwcLangDetected: Grein tungumál {0}.
   wwcBookTranslateStart: Þýða miða bók...
@@ -661,7 +660,6 @@ Messages:
   wwcConfigConversationChatFormatSuccess: Sniði þínu hefur verið breytt með góðum
     árangri.
   wwcConfigGUISeparateChatChannelForceButton: Þvingaðu aðskilda rás
-  wwcOrigHover: 'Upprunalega skilaboð: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Upprunalega útleið spjall
     fylgir þýðingu sem sveima texta kveikt með góðum árangri.
   wwcConfigGUISendOutgoingHoverTextChatButton: Bæta við upprunalegum sendingarskilaboðum
@@ -697,4 +695,7 @@ Messages:
     prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
   wwcConfigGUIModifyBlacklistSettings: Breyta svarta lista
   wwcConfigGUINextPageButton: Næsta síða
+  wwcConfigChatChannelHoverFormatInvalid: Ógilt sveimsnið greint. Sjálfgefið að {0}...
+  wwcOrigHover: Upprunaleg skilaboð
+  wwctGUIMainMenuPlayer: Þýða {0}
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Neizdevās izveidot savienojumu ar {0}. Pārliecinieties,
     vai jūsu akreditācijas dati un ugunsmūris ir pareizi konfigurēti!
   wwcConfigEnabledbStats: Iespējots bStats.
-  wwctGUIMainMenuPlayer: '{0} tulkošanas izvēlne'
   wwctGUIBookButton: Pārslēgt grāmatu tulkošanu
   wwcLangDetected: Atklāta valoda {0}.
   wwcBookTranslateStart: Mērķa grāmatas tulkošana...
@@ -652,7 +651,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Mainīt atsevišķa kanāla ikonu
   wwcConfigConversationChatFormatSuccess: Jūsu formāts ir veiksmīgi mainīts.
   wwcConfigGUISeparateChatChannelForceButton: Piespiež atsevišķu kanālu
-  wwcOrigHover: 'Sākotnējais ziņojums: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sākotnējā izejošā tērzēšana,
     kas pievienota tulkojumam kā kursorēšanas teksts, tika veiksmīgi pārslēgts.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pievienojiet oriģinālos izejošos ziņojumus
@@ -689,4 +687,8 @@ Messages:
     (%). Ierakstiet 0, lai atgrieztos.'
   wwcConfigGUIModifyBlacklistSettings: Mainīt melno sarakstu
   wwcConfigGUINextPageButton: Nākamā lapa
+  wwcConfigChatChannelHoverFormatInvalid: Atklāts nederīgs kursora formāts. Noklusējuma
+    iestatījums uz {0}...
+  wwcOrigHover: Sākotnējais ziņojums
+  wwctGUIMainMenuPlayer: Tulkot {0}
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: നിങ്ങളുടെ ക്രെഡൻഷ്യലുകളും ഫയർവാളും ശരിയായി ക്രമീകരിച്ചിട്ടുണ്ടെന്ന്
     ഉറപ്പുവരുത്തുക!
   wwcConfigEnabledbStats: പ്രാപ്തമാക്കി ബ്സ്തത്സ്.
-  wwctGUIMainMenuPlayer: '{0} ന്റെ പരിഭാഷാ മെനു'
   wwctGUIBookButton: പുസ്തകം വിവർത്തനം ടോഗിൾ ചെയ്യുക
   wwcLangDetected: ഭാഷ {0} കണ്ടെത്തി.
   wwcBookTranslateStart: ലക്ഷ്യം പുസ്തകം വിവർത്തനം...
@@ -672,7 +671,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: പ്രത്യേക ചാനൽ ഐക്കൺ മാറ്റുക
   wwcConfigConversationChatFormatSuccess: നിങ്ങളുടെ ഫോർമാറ്റ് വിജയകരമായി മാറ്റിക്കഴിഞ്ഞു.
   wwcConfigGUISeparateChatChannelForceButton: പ്രത്യേക ചാനൽ ഫോഴ്സ് ചെയ്യുക
-  wwcOrigHover: 'യഥാർത്ഥ സന്ദേശം: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: യഥാർത്ഥ ഔട്ട്ഗോയിംഗ് ചാറ്റ്
     വിജയകരമായി ടോഗ്ലെദ് ഹോവർ ടെക്സ്റ്റ് പോലെ വിവർത്തനം അറ്റാച്ച്
   wwcConfigGUISendOutgoingHoverTextChatButton: ഹോവർ ടെക്സ്റ്റായി യഥാർത്ഥ ഔട്ട്ഗോയിംഗ്
@@ -710,4 +708,8 @@ Messages:
     ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
   wwcConfigGUIModifyBlacklistSettings: ബ്ലാക്ക്ലിസ്റ്റ് പരിഷ്ക്കരിക്കുക
   wwcConfigGUINextPageButton: അടുത്ത പേജ്
+  wwcConfigChatChannelHoverFormatInvalid: അസാധുവായ ഹോവർ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
+    ഡിഫാൾട്ട് ചെയ്യുന്നു...
+  wwcOrigHover: യഥാർത്ഥ സന്ദേശം
+  wwctGUIMainMenuPlayer: '{0} വിവർത്തനം ചെയ്യുക'
 

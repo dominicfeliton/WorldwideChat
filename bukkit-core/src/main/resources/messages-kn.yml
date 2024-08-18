@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} ಗೆ ಸಂಪರ್ಕಿಸಲು ವಿಫಲಗೊಂಡಿದೆ. ನಿಮ್ಮ ರುಜುವಾತುಗಳು ಮತ್ತು
     ಫೈರ್ವಾಲ್ ಅನ್ನು ಸರಿಯಾಗಿ ಸಂರಚಿಸಲಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ!'
   wwcConfigEnabledbStats: ಸಕ್ರಿಯಗೊಳಿಸಿದ bStats.
-  wwctGUIMainMenuPlayer: '{0} ನ ಅನುವಾದ ಮೆನು'
   wwctGUIBookButton: ಟಾಗಲ್ ಪುಸ್ತಕ ಅನುವಾದ
   wwcLangDetected: ಪತ್ತೆಹಚ್ಚಿದ ಭಾಷೆ {0}.
   wwcBookTranslateStart: ಗುರಿ ಪುಸ್ತಕವನ್ನು ಅನುವಾದಿಸುವುದು...
@@ -663,7 +662,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಐಕಾನ್ ಬದಲಾಯಿಸಿ
   wwcConfigConversationChatFormatSuccess: ನಿಮ್ಮ ಸ್ವರೂಪವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
   wwcConfigGUISeparateChatChannelForceButton: ಪ್ರತ್ಯೇಕ ಚಾನೆಲ್ ಅನ್ನು ಒತ್ತಾಯಿಸಿ
-  wwcOrigHover: 'ಮೂಲ ಸಂದೇಶ: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ಹೂವರ್ ಪಠ್ಯ ಯಶಸ್ವಿಯಾಗಿ ಟಾಗಲ್ಡ್
     ಎಂದು ಅನುವಾದ ಲಗತ್ತಿಸಲಾಗಿದೆ ಮೂಲ ಹೊರಹೋಗುವ ಚಾಟ್.
   wwcConfigGUISendOutgoingHoverTextChatButton: ಮೂಲ ಹೊರಹೋಗುವ ಸಂದೇಶಗಳನ್ನು ಹೂವರ್ ಪಠ್ಯವಾಗಿ
@@ -699,4 +697,8 @@ Messages:
     ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.'
   wwcConfigGUIModifyBlacklistSettings: ಕಪ್ಪುಪಟ್ಟಿಯನ್ನು ಮಾರ್ಪಡಿಸಿ
   wwcConfigGUINextPageButton: ಮುಂದಿನ ಪುಟ
+  wwcConfigChatChannelHoverFormatInvalid: ಅಮಾನ್ಯ ಹೋವರ್ ಸ್ವರೂಪ ಪತ್ತೆಯಾಗಿದೆ. {0} ಗೆ
+    ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcOrigHover: ಮೂಲ ಸಂದೇಶ
+  wwctGUIMainMenuPlayer: '{0} ಅನ್ನು ಅನುವಾದಿಸಿ'
 

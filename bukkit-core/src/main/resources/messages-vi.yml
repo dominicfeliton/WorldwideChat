@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Không thể kết nối đến {0}. Đảm bảo thông tin đăng nhập
     và tường lửa của bạn được cấu hình chính xác!
   wwcConfigEnabledbStats: Đã bật bStats.
-  wwctGUIMainMenuPlayer: Menu dịch của {0}
   wwctGUIBookButton: Chuyển đổi sách dịch
   wwcLangDetected: Phát hiện ngôn ngữ {0}.
   wwcBookTranslateStart: Dịch sách mục tiêu...
@@ -663,7 +662,6 @@ Messages:
   wwcConfigConversationChatFormatSuccess: Định dạng của bạn đã được thay đổi thành
     công.
   wwcConfigGUISeparateChatChannelForceButton: Buộc kênh riêng biệt
-  wwcOrigHover: 'Tin nhắn ban đầu: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Trò chuyện gửi đi gốc được
     đính kèm với bản dịch khi văn bản di chuột đã chuyển thành công.
   wwcConfigGUISendOutgoingHoverTextChatButton: Thêm tin nhắn gửi đi gốc dưới dạng
@@ -701,4 +699,8 @@ Messages:
     quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
   wwcConfigGUIModifyBlacklistSettings: Sửa đổi danh sách đen
   wwcConfigGUINextPageButton: Trang kế tiếp
+  wwcConfigChatChannelHoverFormatInvalid: Phát hiện định dạng di chuột không hợp lệ.
+    Mặc định là {0}...
+  wwcOrigHover: Tin nhắn gốc
+  wwctGUIMainMenuPlayer: Dịch {0}
 

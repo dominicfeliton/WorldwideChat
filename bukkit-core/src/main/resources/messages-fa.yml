@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: اتصال به {0} شکست خورد. مطمئن شوید که اعتبارنامه ها و
     فایروال به درستی پیکربندی شده اند!
   wwcConfigEnabledbStats: bStats فعال.
-  wwctGUIMainMenuPlayer: منوی ترجمه {0}
   wwctGUIBookButton: ضامن ترجمه کتاب
   wwcLangDetected: زبان شناسایی شده {0}.
   wwcBookTranslateStart: ترجمه کتاب هدف...
@@ -648,7 +647,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: تغییر آیکون کانال جداگانه
   wwcConfigConversationChatFormatSuccess: فرمت شما با موفقیت تغییر کرده است.
   wwcConfigGUISeparateChatChannelForceButton: کانال جداگانه نیروی
-  wwcOrigHover: 'پیام اصلی: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: چت خروجی اصلی متصل به ترجمه
     به عنوان متن hover با موفقیت تغییر یافت.
   wwcConfigGUISendOutgoingHoverTextChatButton: پیام های خروجی اصلی را به عنوان متن
@@ -685,4 +683,8 @@ Messages:
     بازگشت تایپ کنید.'
   wwcConfigGUIModifyBlacklistSettings: اصلاح لیست سیاه
   wwcConfigGUINextPageButton: صفحه بعدی
+  wwcConfigChatChannelHoverFormatInvalid: فرمت هوور نامعتبر شناسایی شد. به طور پیش
+    فرض به {0}...
+  wwcOrigHover: پیام اصلی
+  wwctGUIMainMenuPlayer: ترجمه {0}
 

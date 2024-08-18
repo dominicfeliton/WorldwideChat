@@ -8,9 +8,11 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.CharMatcher;
 import fr.minuskube.inv.SmartInventory;
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
+import net.kyori.adventure.text.TextReplacementConfig;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
@@ -43,6 +45,8 @@ import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 
@@ -1033,6 +1037,57 @@ public class CommonRefs {
 
 	public void badPermsMessage(String correctPerm, CommandSender sender) {
 		sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
+	}
+
+	public Component getChatChannelFormat(Component translateIcon, String translateFormat, String prefix, String username, String suffix, Player originPlayer, Player targetPlayer) {
+		Component out = Component.empty();
+		if (translateIcon != null) {
+			out = out.append(translateIcon);
+		}
+		String parsedFormat = translateFormat;
+
+		// Handle PAPI
+		int count = parsedFormat.length() - parsedFormat.replace("%", "").length();
+		if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+			if (originPlayer != null) {
+				debugMsg("Papi for player who sent message!");
+				parsedFormat = PlaceholderAPI.setPlaceholders(originPlayer, translateFormat);
+			} else {
+				debugMsg("Removing papi placeholders for console.");
+				parsedFormat = translateFormat.replaceAll("%[^%]+%", "");
+			}
+		}
+
+		// Handle Localizations
+		Pattern local = Pattern.compile("\\{local:([^}]+)}");
+		Matcher match = local.matcher(parsedFormat);
+		while (match.find()) {
+			String extracted = match.group(1);
+			parsedFormat = parsedFormat.replace(match.group(0), getMsg(extracted, targetPlayer == null ? originPlayer : targetPlayer));
+		}
+
+		// Handle Default Placeholders
+		out = out.append(deserial(parsedFormat));
+		TextReplacementConfig p = TextReplacementConfig.builder()
+				.matchLiteral("{prefix}")
+				.replacement(deserial(prefix))
+				.build();
+
+		TextReplacementConfig u = TextReplacementConfig.builder()
+				.matchLiteral("{username}")
+				.replacement(deserial(username))
+				.build();
+
+		TextReplacementConfig s = TextReplacementConfig.builder()
+				.matchLiteral("{suffix}")
+				.replacement(deserial(suffix))
+				.build();
+
+		out = out.replaceText(p);
+		out = out.replaceText(s);
+		out = out.replaceText(u);
+
+		return out;
 	}
 
 	/**

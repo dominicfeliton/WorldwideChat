@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Не удалось подключиться к {0}. Убедитесь, что учетные
     данные и брандмауэр настроены правильно!
   wwcConfigEnabledbStats: Включены bStats.
-  wwctGUIMainMenuPlayer: Меню перевода {0}
   wwctGUIBookButton: Переключить перевод книг
   wwcLangDetected: Обнаружен язык {0}.
   wwcBookTranslateStart: Перевод целевой книги...
@@ -659,7 +658,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Изменить значок отдельного канала
   wwcConfigConversationChatFormatSuccess: Ваш формат успешно изменен.
   wwcConfigGUISeparateChatChannelForceButton: Принудительный раздельный канал
-  wwcOrigHover: 'Оригинальное сообщение: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Исходный исходящий чат, привязанный
     к переводу, так как текст при наведении курсора успешно переключен.
   wwcConfigGUISendOutgoingHoverTextChatButton: Добавить исходные исходящие сообщения
@@ -696,4 +694,8 @@ Messages:
     процентами (%). Введите 0, чтобы вернуться назад.'
   wwcConfigGUIModifyBlacklistSettings: Изменить черный список
   wwcConfigGUINextPageButton: Следующая страница
+  wwcConfigChatChannelHoverFormatInvalid: Обнаружен неправильный формат при наведении
+    курсора. По умолчанию {0}...
+  wwcOrigHover: Оригинальное сообщение
+  wwctGUIMainMenuPlayer: Перевести {0}
 

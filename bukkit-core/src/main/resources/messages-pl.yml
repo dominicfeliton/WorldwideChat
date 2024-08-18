@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nie udało się połączyć z {0}. Upewnij się, że poświadczenia
     i zapora sieciowa są poprawnie skonfigurowane!
   wwcConfigEnabledbStats: Włączone bStats.
-  wwctGUIMainMenuPlayer: Menu tłumaczenia {0}
   wwctGUIBookButton: Przełącz tłumaczenie książki
   wwcLangDetected: Wykryto język {0}.
   wwcBookTranslateStart: Tłumaczenie książki docelowej...
@@ -658,7 +657,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Zmień ikonę oddzielnego kanału
   wwcConfigConversationChatFormatSuccess: Twój format został pomyślnie zmieniony.
   wwcConfigGUISeparateChatChannelForceButton: Wymuś oddzielny kanał
-  wwcOrigHover: 'Oryginalna wiadomość: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oryginalny czat wychodzący
     dołączony do tłumaczenia jako tekst kursorem został pomyślnie przełączony.
   wwcConfigGUISendOutgoingHoverTextChatButton: Dodaj oryginalne wiadomości wychodzące
@@ -695,4 +693,8 @@ Messages:
     (%). Wpisz 0, aby wrócić.'
   wwcConfigGUIModifyBlacklistSettings: Modyfikuj czarną listę
   wwcConfigGUINextPageButton: Następna strona
+  wwcConfigChatChannelHoverFormatInvalid: Wykryto nieprawidłowy format najechania.
+    Domyślnie {0}...
+  wwcOrigHover: Oryginalna wiadomość
+  wwctGUIMainMenuPlayer: Przetłumacz {0}
 

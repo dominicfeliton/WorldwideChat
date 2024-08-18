@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Ühendumine {0} nurjus. Veenduge, et teie mandaat ja tulemüür
     oleksid õigesti konfigureeritud!
   wwcConfigEnabledbStats: Lubatud bStats.
-  wwctGUIMainMenuPlayer: Tõlge menüü {0}
   wwctGUIBookButton: Lülita raamatu tõlge
   wwcLangDetected: Tuvastatud keele {0}.
   wwcBookTranslateStart: Tõlkimine sihtraamat...
@@ -626,7 +625,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Muutke eraldi kanaliikooni
   wwcConfigConversationChatFormatSuccess: Teie vormingut on edukalt muudetud.
   wwcConfigGUISeparateChatChannelForceButton: Sundage eraldi kanal
-  wwcOrigHover: 'Algne sõnum: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Algne väljaminev vestlus,
     mis on lisatud tõlkele hõljutekstina, lülitati edukalt sisse.
   wwcConfigGUISendOutgoingHoverTextChatButton: Lisage algsed väljaminevad sõnumid
@@ -661,4 +659,8 @@ Messages:
     (%). Tagasi minemiseks tippige 0.'
   wwcConfigGUIModifyBlacklistSettings: Muuda musta nimekirja
   wwcConfigGUINextPageButton: Järgmine lehekülg
+  wwcConfigChatChannelHoverFormatInvalid: Tuvastati vale hõljutamisvorming. Vaikimisi
+    väärtus {0}...
+  wwcOrigHover: Algne sõnum
+  wwctGUIMainMenuPlayer: Tõlgi {0}
 

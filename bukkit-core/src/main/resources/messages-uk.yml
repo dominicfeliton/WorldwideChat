@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Не вдалося з'єднатися з {0}. Переконайтеся, що ваші облікові
     дані та брандмауер налаштовано правильно!
   wwcConfigEnabledbStats: Увімкнено bStats.
-  wwctGUIMainMenuPlayer: Меню перекладо {0}
   wwctGUIBookButton: Переключити переклад книги
   wwcLangDetected: Виявлена мова {0}.
   wwcBookTranslateStart: Переклад цільової книги...
@@ -650,7 +649,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Змінити піктограму окремого каналу
   wwcConfigConversationChatFormatSuccess: Ваш формат успішно змінено.
   wwcConfigGUISeparateChatChannelForceButton: Силовий окремий канал
-  wwcOrigHover: 'Оригінальне повідомлення: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригінальний вихідний чат,
     приєднаний до перекладу, як текст, що наводить курсор, успішно переключено.
   wwcConfigGUISendOutgoingHoverTextChatButton: Додати вихідні вихідні повідомлення
@@ -688,4 +686,8 @@ Messages:
     цього. Введіть 0, щоб повернутися назад.'
   wwcConfigGUIModifyBlacklistSettings: Змінити чорний список
   wwcConfigGUINextPageButton: Наступна сторінка
+  wwcConfigChatChannelHoverFormatInvalid: Виявлено некоректний формат наведення курсора.
+    За замовчуванням значення {0}...
+  wwcOrigHover: Оригінальне повідомлення
+  wwctGUIMainMenuPlayer: Перекласти {0}
 

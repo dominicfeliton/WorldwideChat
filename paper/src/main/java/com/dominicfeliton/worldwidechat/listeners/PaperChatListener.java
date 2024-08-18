@@ -25,7 +25,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 
-public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener, ChatRenderer.ViewerUnaware {
+public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener {
 
     private final WorldwideChat main;
     private final CommonRefs refs;
@@ -141,42 +141,17 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
     }
 
     private Component formatMessage(AsyncChatEvent event, Player targetPlayer, Component translation, Component original, boolean incoming) {
-        Component outMsg;
-        Chat chat = main.getChat();
-        if (chat != null) {
-            // Vault Support
-            outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
-        } else {
-            // No Vault Support
-            outMsg = this.render(event.getPlayer(), event.getPlayer().displayName(), translation);
-        }
+        // Vault Support (if it exists)
+        Component outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
 
         // Add hover text w/original message
-        if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-            refs.debugMsg("Hover incoming!");
-            Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {refs.serial(original)}, "&f&o", targetPlayer);
+        if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")
+        || main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat")) {
+            refs.debugMsg("Add hover!");
             outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
-        }
-
-        if (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat")) {
-            refs.debugMsg("Hover outgoing!");
-            // This will only work with the forced option set to true.
-            Component hover = (refs.getFancyMsg("wwcOrigHover", new String[] {refs.serial(original)}, "&f&o", targetPlayer));
-            outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
+                    .hoverEvent(HoverEvent.showText(super.getVaultHoverMessage(event.getPlayer(), original, event.getPlayer().name(), targetPlayer)));
         }
 
         return outMsg;
-    }
-
-    @Override
-    public @NotNull Component render(@NotNull Player player, @NotNull Component component, @NotNull Component component1) {
-        // Spigot returns a "formatted" message with string manipulation.
-        // There does not seem to be a viable paper alternative.
-        // This is the only major discrepancy between the two listeners
-        return main.getTranslateLayout("", refs.serial(component), "", player)
-                .append(Component.space())
-                .append(component1);
     }
 }

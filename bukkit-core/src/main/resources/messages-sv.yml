@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Det gick inte att ansluta till {0}. Försäkra dig om att
     dina autentiseringsuppgifter och brandvägg är korrekt konfigurerade!
   wwcConfigEnabledbStats: Aktiverade bStats.
-  wwctGUIMainMenuPlayer: Menyn Översättning av {0}
   wwctGUIBookButton: Växla bok Översättning
   wwcLangDetected: Upptäckt språk {0}.
   wwcBookTranslateStart: Översätter målbok...
@@ -658,7 +657,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ändra separat kanalikon
   wwcConfigConversationChatFormatSuccess: Ditt format har ändrats framgångsrikt.
   wwcConfigGUISeparateChatChannelForceButton: Tvinga separat kanal
-  wwcOrigHover: 'Ursprungliga meddelande: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Ursprunglig utgående chatt
     kopplad till översättning när muspekartexten växlades framgångsrikt.
   wwcConfigGUISendOutgoingHoverTextChatButton: Lägg till ursprungliga utgående meddelanden
@@ -694,4 +692,8 @@ Messages:
     istället. Skriv 0 för att gå tillbaka.'
   wwcConfigGUIModifyBlacklistSettings: Ändra svartlista
   wwcConfigGUINextPageButton: Nästa sida
+  wwcConfigChatChannelHoverFormatInvalid: Ogiltigt svävarformat har upptäckts. Standardinställt
+    till {0}...
+  wwcOrigHover: Ursprungligt meddelande
+  wwctGUIMainMenuPlayer: Översätt {0}
 

@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} жүйесіне қосыла алмады. тіркелгі деректері мен брандмауэр
     дұрыс конфигурацияланғанына көз жеткізіңіз!'
   wwcConfigEnabledbStats: Қосылған bStats.
-  wwctGUIMainMenuPlayer: '{0} аударма мәзірі'
   wwctGUIBookButton: Toggle кітап аудармасы
   wwcLangDetected: Анықталған тілі {0}.
   wwcBookTranslateStart: Мақсатты кітапты аудару...
@@ -645,7 +644,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Бөлек арна белгішесін өзгертіңіз
   wwcConfigConversationChatFormatSuccess: Сіздің пішіміңіз сәтті өзгертілді.
   wwcConfigGUISeparateChatChannelForceButton: Бөлек арнаны күштеңіз
-  wwcOrigHover: 'Түпнұсқа хабарлама: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Түпнұсқа шығыс чат аудармаға
     қосылады ретінде hover мәтін сәтті ауыстырылды.
   wwcConfigGUISendOutgoingHoverTextChatButton: Түпнұсқа шығыс хабарларын апару мәтіні
@@ -681,4 +679,8 @@ Messages:
     Қайту үшін 0 деп теріңіз.'
   wwcConfigGUIModifyBlacklistSettings: Қара тізімді өзгерту
   wwcConfigGUINextPageButton: Келесі бет
+  wwcConfigChatChannelHoverFormatInvalid: Жарамсыз апару пішімі анықталды. Әдепкі
+    бойынша {0}...
+  wwcOrigHover: Түпнұсқа хабарлама
+  wwctGUIMainMenuPlayer: Аудару {0}
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Imeshindwa kuungana na {0} Hakikisha sifa zako na firewall
     vimeundwa kwa usahihi!
   wwcConfigEnabledbStats: bStats imewezeshwa.
-  wwctGUIMainMenuPlayer: Menyu ya Tafsiri ya {0}
   wwctGUIBookButton: Badilisha Tafsiri ya Kitabu
   wwcLangDetected: Imegunduliwa lugha {0}.
   wwcBookTranslateStart: Kutafsiri kitabu cha lengo...
@@ -655,7 +654,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Badilisha Ikoni ya Kituo tofauti
   wwcConfigConversationChatFormatSuccess: Muundo wako umebadilishwa kwa mafanikio.
   wwcConfigGUISeparateChatChannelForceButton: Nguvu Kituo Tofauti
-  wwcOrigHover: 'Ujumbe wa awali: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Mazungumzo ya asili yanayotoka
     imeambatanishwa na tafsiri kama maandishi ya hover ilibadilishwa
   wwcConfigGUISendOutgoingHoverTextChatButton: Ongeza Ujumbe wa Asingi wa Utoka kama
@@ -693,4 +691,8 @@ Messages:
     yake. Andika 0 ili kurudi nyuma.'
   wwcConfigGUIModifyBlacklistSettings: Badilisha orodha nyeusi
   wwcConfigGUINextPageButton: Ukurasa unaofuata
+  wwcConfigChatChannelHoverFormatInvalid: Muundo mbaya wa hover iligunduliwa. Kubadilisha
+    kuwa {0}...
+  wwcOrigHover: Ujumbe wa awali
+  wwctGUIMainMenuPlayer: Tafsiri {0}
 

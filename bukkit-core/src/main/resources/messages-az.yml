@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0}''ya qoşulmaq mümkün olmadı. Etimadnamələrinizin
     və firewall düzgün konfiqurasiya olunduğundan əmin olun!'
   wwcConfigEnabledbStats: bStats effektiv.
-  wwctGUIMainMenuPlayer: '{0} tərcümə menyusu'
   wwctGUIBookButton: Toggle Book Tərcümə
   wwcLangDetected: Təsbit edilmiş dil {0}.
   wwcBookTranslateStart: Hədəf kitabının tərcüməsi...
@@ -645,7 +644,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ayrı kanal simgesini dəyişdirin
   wwcConfigConversationChatFormatSuccess: Formatınız uğurla dəyişdirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ayrı kanalı məcbur edin
-  wwcOrigHover: 'Orijinal Mesaj: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Orijinal çıxan söhbət uğurla
     keçid mətni kimi tərcüməyə əlavə edildi.
   wwcConfigGUISendOutgoingHoverTextChatButton: Orijinal gedən mesajları Hover Mətn
@@ -682,4 +680,8 @@ Messages:
     qayıtmaq üçün 0 yazın.'
   wwcConfigGUIModifyBlacklistSettings: Qara siyahıya dəyişdirin
   wwcConfigGUINextPageButton: Növbəti Səhifə
+  wwcConfigChatChannelHoverFormatInvalid: Yanlış hover formatı aşkar edildi. Varsayılan
+    olaraq {0}...
+  wwcOrigHover: Orijinal Mesaj
+  wwctGUIMainMenuPlayer: Tərcümə {0}
 

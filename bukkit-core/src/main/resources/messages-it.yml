@@ -20,7 +20,6 @@ Messages:
   wwcConfigConnectionFailed: Connessione a {0} non riuscita. Assicurarsi che le credenziali
     e il firewall siano configurati correttamente.
   wwcConfigEnabledbStats: bStats abilitati.
-  wwctGUIMainMenuPlayer: Menu di traduzione di {0}
   wwctGUIBookButton: Attiva/disattiva traduzione libro
   wwcLangDetected: Lingua {0} rilevata.
   wwcBookTranslateStart: Tradurre il libro di destinazione...
@@ -691,7 +690,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Cambia l'icona del canale separato
   wwcConfigConversationChatFormatSuccess: Il tuo formato è stato modificato con successo.
   wwcConfigGUISeparateChatChannelForceButton: Forza il canale separato
-  wwcOrigHover: 'Messaggio originale: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: La chat originale in uscita
     allegata alla traduzione al passaggio del mouse è stata commutata correttamente.
   wwcConfigGUISendOutgoingHoverTextChatButton: Aggiungi messaggi in uscita originali
@@ -731,4 +729,8 @@ Messages:
     da percentuali (%). Digita 0 per tornare indietro.'
   wwcConfigGUIModifyBlacklistSettings: Modifica lista nera
   wwcConfigGUINextPageButton: Pagina successiva
+  wwcConfigChatChannelHoverFormatInvalid: È stato rilevato un formato al passaggio
+    del mouse non valido. Il valore predefinito è {0}...
+  wwcOrigHover: Messaggio originale
+  wwctGUIMainMenuPlayer: Traduci {0}
 

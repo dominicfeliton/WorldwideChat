@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: Kunne ikke oprette forbindelse til {0}. Sørg for at dine
     legitimationsoplysninger og firewall er konfigureret korrekt!
   wwcConfigEnabledbStats: Aktiverede bStats.
-  wwctGUIMainMenuPlayer: Oversættelsesmenuen af {0}
   wwctGUIBookButton: Slå bogoversættelse til/ fra
   wwcLangDetected: Findes sprog {0}.
   wwcBookTranslateStart: Oversætter målbog...
@@ -650,7 +649,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Skift separat kanalikon
   wwcConfigConversationChatFormatSuccess: Dit format er blevet ændret med succes.
   wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
-  wwcOrigHover: 'Oprindelig besked: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oprindelig udgående chat
     knyttet til oversættelse, da musetekst skiftes med succes.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tilføj originale udgående meddelelser
@@ -687,4 +685,8 @@ Messages:
     (%) i stedet. Skriv 0 for at gå tilbage.'
   wwcConfigGUIModifyBlacklistSettings: Rediger sortliste
   wwcConfigGUINextPageButton: Næste side
+  wwcConfigChatChannelHoverFormatInvalid: Ugyldigt hover-format fundet. Standardindstilling
+    til {0}...
+  wwcOrigHover: Oprindelig besked
+  wwctGUIMainMenuPlayer: Oversæt {0}
 

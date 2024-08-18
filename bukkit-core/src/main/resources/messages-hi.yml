@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} से जुड़ने में असफल. सुनिश्चित करें कि आपके क्रेडेंशियल्स
     और फ़ायरवॉल सही तरीके से कॉन्फ़िगर किए गए हैं!'
   wwcConfigEnabledbStats: सक्षम बीएसटीएएस
-  wwctGUIMainMenuPlayer: '{0} का अनुवाद मेनू'
   wwctGUIBookButton: पुस्तक अनुवाद टॉगल करें
   wwcLangDetected: भाषा {0} का पता चला।
   wwcBookTranslateStart: लक्ष्य पुस्तक का अनुवाद...
@@ -668,7 +667,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: अलग चैनल आइकन बदलें
   wwcConfigConversationChatFormatSuccess: आपका फ़ॉर्मेट सफलतापूर्वक बदल दिया गया है।
   wwcConfigGUISeparateChatChannelForceButton: फोर्स सेपरेट चैनल
-  wwcOrigHover: 'मूल संदेश: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: होवर टेक्स्ट के सफलतापूर्वक
     टॉगल किए जाने के रूप में अनुवाद से जुड़ी मूल आउटगोइंग चैट।
   wwcConfigGUISendOutgoingHoverTextChatButton: मूल आउटगोइंग संदेशों को हॉवर टेक्स्ट
@@ -707,4 +705,8 @@ Messages:
     घिरे हों। वापस जाने के लिए 0 टाइप करें।'
   wwcConfigGUIModifyBlacklistSettings: ब्लैकलिस्ट को संशोधित करें
   wwcConfigGUINextPageButton: अगला पेज
+  wwcConfigChatChannelHoverFormatInvalid: अमान्य होवर फ़ॉर्मेट का पता चला। डिफ़ॉल्ट
+    रूप से {0} पर सेट किया जा रहा है...
+  wwcOrigHover: मूल संदेश
+  wwctGUIMainMenuPlayer: '{0} का अनुवाद करें'
 

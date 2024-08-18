@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} உடன் இணைக்கத் தவறியது. உங்கள் சான்றுகள் மற்றும்
     ஃபயர்வால் சரியாக உள்ளமைக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்!'
   wwcConfigEnabledbStats: BStATகளை இயக்கினார்.
-  wwctGUIMainMenuPlayer: '{0} இன் மொழிபெயர்ப்பு பட்டி'
   wwctGUIBookButton: மாற்று நூல் மொழிபெயர்ப்பு
   wwcLangDetected: கண்டறியப்பட்ட மொழி {0}.
   wwcBookTranslateStart: இலக்கு புத்தகத்தை மொழிபெயர்த்தல்...
@@ -681,7 +680,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: தனி சேனல் ஐகானை மாற்றவும்
   wwcConfigConversationChatFormatSuccess: உங்கள் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
   wwcConfigGUISeparateChatChannelForceButton: ஃபோர்ஸ் தனி சேனல்
-  wwcOrigHover: 'அசல் செய்தி: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: மொழிபெயர்ப்புடன் இணைக்கப்பட்ட
     அசல் வெளியேறும் அரட்டை ஹோவர் உரை வெற்றிகரமாக மாற்றப்பட்டது.
   wwcConfigGUISendOutgoingHoverTextChatButton: அசல் வெளிச்செல்லும் செய்திகளை ஹோவர்
@@ -719,4 +717,8 @@ Messages:
     செய்க.'
   wwcConfigGUIModifyBlacklistSettings: கருப்புபட்டியலை மாற்றவும்
   wwcConfigGUINextPageButton: அடுத்த பக்கம்
+  wwcConfigChatChannelHoverFormatInvalid: தவறான ஹோவர் வடிவம் கண்டறியப்பட்டது. {0}
+    ஆக இயல்பாதது...
+  wwcOrigHover: அசல் செய்தி
+  wwctGUIMainMenuPlayer: மொழிபெயர்ப்பு {0}
 

@@ -167,7 +167,6 @@ Messages:
   wwcsNotATranslator: Ainda não existem registos disponíveis para {0}.
   wwcConfigGUIbStatsButton: Alternar bStats
   wwctGUINewTranslationSource: Escolha um idioma de origem
-  wwctGUIMainMenuPlayer: Menu Tradução de {0}
   wwctGUIBookButton: Alternar Tradução
   wwcConfigGUIDebugModeButton: Alternar Modo de Debug
   wwcConfigMessageCharLimitInvalid: Limite inválido por mensagem definido em config.yml.
@@ -679,7 +678,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Alterar ícone de canal separado
   wwcConfigConversationChatFormatSuccess: O seu formato foi alterado com êxito.
   wwcConfigGUISeparateChatChannelForceButton: Forçar Canal Separado
-  wwcOrigHover: 'Mensagem original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Bate-papo de saída original
     anexado à tradução enquanto o texto do foco alternava com sucesso.
   wwcConfigGUISendOutgoingHoverTextChatButton: Adicionar mensagens de saída originais
@@ -717,4 +715,8 @@ Messages:
     por percentagens (%). Digite 0 para voltar atrás.'
   wwcConfigGUIModifyBlacklistSettings: Modificar lista negra
   wwcConfigGUINextPageButton: Página Seguinte
+  wwcConfigChatChannelHoverFormatInvalid: Detectado um formato de hover inválido.
+    A predefinição é {0}...
+  wwcOrigHover: Mensagem Original
+  wwctGUIMainMenuPlayer: Traduzir {0}
 

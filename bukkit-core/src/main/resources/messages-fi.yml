@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Yhteyden muodostaminen kohteeseen {0} epäonnistui. Varmista,
     että tunnistetietosi ja palomuuri on määritetty oikein!
   wwcConfigEnabledbStats: Käytössä bStats.
-  wwctGUIMainMenuPlayer: Käännösvalikko {0}
   wwctGUIBookButton: Vaihda kirjan käännös
   wwcLangDetected: Havaittu kieli {0}.
   wwcBookTranslateStart: Käännetään kohdekirja...
@@ -647,7 +646,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Vaihda erillinen kanavakuvake
   wwcConfigConversationChatFormatSuccess: Muotoasi on muutettu onnistuneesti.
   wwcConfigGUISeparateChatChannelForceButton: Pakota erillinen kanava
-  wwcOrigHover: 'Alkuperäinen viesti: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Alkuperäinen lähtevä keskustelu
     liitettiin käännökseen, kun hiiren osoitin teksti vaihdettiin onnistuneesti.
   wwcConfigGUISendOutgoingHoverTextChatButton: Lisää alkuperäiset lähtevät viestit
@@ -684,4 +682,8 @@ Messages:
     (%) sen sijaan. Kirjoita 0 palataksesi takaisin.'
   wwcConfigGUIModifyBlacklistSettings: Muokkaa mustaa luetteloa
   wwcConfigGUINextPageButton: Seuraava sivu
+  wwcConfigChatChannelHoverFormatInvalid: Virheellinen hiiren muoto havaittu. Oletuksena
+    on {0}...
+  wwcOrigHover: Alkuperäinen viesti
+  wwctGUIMainMenuPlayer: Käännä {0}
 

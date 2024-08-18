@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Kon nie konnekteer na {0} nie. Maak seker jou geloofsbriewe
     en firewall is korrek gekonfigureer!
   wwcConfigEnabledbStats: Geaktiveer bStats.
-  wwctGUIMainMenuPlayer: Vertaling Menu van {0}
   wwctGUIBookButton: Toggle Book Vertaling
   wwcLangDetected: Bespeur taal {0}.
   wwcBookTranslateStart: Vertaal teikenboek...
@@ -655,7 +654,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Verander aparte kanaalikoon
   wwcConfigConversationChatFormatSuccess: Jou formaat is suksesvol verander.
   wwcConfigGUISeparateChatChannelForceButton: Dwing afsonderlike kanaal
-  wwcOrigHover: 'Oorspronklike boodskap: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oorspronklike uitgaande chat
     geheg aan die vertaling as hoverteks suksesvol ingeskakel is.
   wwcConfigGUISendOutgoingHoverTextChatButton: Voeg oorspronklike uitgaande boodskappe
@@ -691,4 +689,8 @@ Messages:
     Tik 0 om terug te gaan.'
   wwcConfigGUIModifyBlacklistSettings: Verander swartlys
   wwcConfigGUINextPageButton: Volgende bladsy
+  wwcConfigChatChannelHoverFormatInvalid: Ongeldige hover formaat opgespoor. Standaard
+    op {0}...
+  wwcOrigHover: oorspronklike boodskap
+  wwctGUIMainMenuPlayer: Vertaal {0}
 

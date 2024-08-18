@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Methu cysylltu â {0} Gwnewch yn siŵr bod eich cymwysterau
     a'ch wal dân wedi eu ffurfweddu'n gywir!
   wwcConfigEnabledbStats: bStats galluogi.
-  wwctGUIMainMenuPlayer: Cyfieithiad Dewislen o {0}
   wwctGUIBookButton: Toggle Cyfieithu Llyfr
   wwcLangDetected: Iaith {0} canfod.
   wwcBookTranslateStart: Cyfieithu llyfr targed...
@@ -659,7 +658,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Newid Eicon Sianel ar Wahân
   wwcConfigConversationChatFormatSuccess: Mae eich fformat wedi'i newid yn llwyddiannus.
   wwcConfigGUISeparateChatChannelForceButton: Sianel ar wahân Force
-  wwcOrigHover: 'Neges wreiddiol: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sgwrs sy'n mynd allan wreiddiol
     ynghlwm wrth gyfieithu wrth i destun hofran toglwyd yn llwyddiannus.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ychwanegu Negeseuon Allanol Gwreiddiol
@@ -697,4 +695,8 @@ Messages:
     hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn ôl.'
   wwcConfigGUIModifyBlacklistSettings: Addasu Rhestr Ddu
   wwcConfigGUINextPageButton: Tudalen nesaf
+  wwcConfigChatChannelHoverFormatInvalid: Canfuwyd fformat hofran annilys. Rhagosodiad
+    i {0}...
+  wwcOrigHover: Neges wreiddiol
+  wwctGUIMainMenuPlayer: Cyfieithu {0}
 

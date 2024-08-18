@@ -16,7 +16,6 @@ Messages:
   wwcConfigConnectionFailed: ወደ {0} መገናኘት አልተሳካም። የእርስዎ ምስክርነቶች እና ፋየርዎል በትክክል መዋቀሩን
     ያረጋግጡ!
   wwcConfigEnabledbStats: የነቃ BSTAs።
-  wwctGUIMainMenuPlayer: የትርጉም ዝርዝር የ {0}
   wwctGUIBookButton: የመጽሐፍ ትርጉም ቀያይር
   wwcLangDetected: የተገኘው ቋንቋ {0}።
   wwcBookTranslateStart: ዒላማ መጽሐፍ በመተርጎም ላይ...
@@ -568,7 +567,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: የተለየ ሰርጥ አዶን ይለ
   wwcConfigConversationChatFormatSuccess: የእርስዎ ቅርጸት በተሳካ ሁኔታ ተለወጠ።
   wwcConfigGUISeparateChatChannelForceButton: የተለየ ሰርጥ ኃይል
-  wwcOrigHover: 'የመጀመሪያው መልዕክት: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: የመጀመሪያው የወጪ ውይይት እንደ ሆቨር
     ጽሑፍ በተሳካ ሁኔታ ተቀያይሯል።
   wwcConfigGUISendOutgoingHoverTextChatButton: ኦሪጅናል የሚወጡ መልዕክቶችን እንደ ሆቨር ጽሑፍ
@@ -597,4 +595,7 @@ Messages:
     የተከበቡ መሆናቸውን ያረጋግጡ። ወደ ኋላ ለመመለስ 0 ይተይቡ።'
   wwcConfigGUIModifyBlacklistSettings: ጥቁር ዝርዝርን ያስ
   wwcConfigGUINextPageButton: ቀጣይ ገጽ
+  wwcConfigChatChannelHoverFormatInvalid: ልክ ያልሆነ የሆቨር ቅርጸት ተገኘ ወደ {0} ነባሪ መቀየር...
+  wwcOrigHover: የመጀመሪያ መልዕክት
+  wwctGUIMainMenuPlayer: '{0} ተርጉም'
 
