@@ -11,11 +11,18 @@ import java.util.function.Consumer;
 
 public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
 
-    WorldwideChat main = WorldwideChat.instance;
+    WorldwideChat main;
 
-    CommonRefs refs = main.getServerFactory().getCommonRefs();
+    CommonRefs refs;
 
-    ServerAdapterFactory adapter = main.getServerFactory();
+    ServerAdapterFactory adapter;
+
+    public FoliaWorldwideChatHelper() {
+        super();
+        this.main = WorldwideChat.instance;
+        this.refs = main.getServerFactory().getCommonRefs();
+        this.adapter = main.getServerFactory();
+    }
 
     // TODO: Make sure task cancellation works on folia like in paper identical 1:1
     @Override

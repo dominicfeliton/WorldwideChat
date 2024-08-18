@@ -129,7 +129,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 		// Vault Support (if it exists)
 		Component outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().getName());;
 
-		if ((incoming && (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")))
+		if ((incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat"))
 				|| (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
 			refs.debugMsg("Add hover!");
 			outMsg = outMsg

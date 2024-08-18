@@ -59,9 +59,13 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
         );
         listenerQueue.add(chat);
 
-        OnPlayerJoinListener join = new OnPlayerJoinListener();
+        NotifsOnJoinListener join = new NotifsOnJoinListener();
         pluginManager.registerEvents(join, main);
         listenerQueue.add(join);
+
+        PaperSetLocaleOnJoinListener locale = new PaperSetLocaleOnJoinListener();
+        pluginManager.registerEvents(locale, main);
+        listenerQueue.add(locale);
 
         TranslateInGameListener translate = new TranslateInGameListener();
         pluginManager.registerEvents(translate, main);

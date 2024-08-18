@@ -77,6 +77,7 @@ Messages:
   wwcEntityTranslateDone: 'Translated Entity Name: {0}'
   wwcEntityTranslateNoName: 'Entity does not have a custom name.'
   wwcConfigGUIChangesNotSaved: 'Your changes will not take effect until you click on the red barrier in /wwcc.'
+  wwcOnJoinSetLocaleSuccess: 'WorldwideChat has detected and will reflect your Minecraft localization ({0}). Type {1} for more details.'
   #------------------- Updater Messages -------------------
   wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
   wwcUpdaterParserFailed: 'Failed to parse update data from Github.'
@@ -86,6 +87,7 @@ Messages:
   wwcUpdaterFailedGeneric: 'Unable to check for WorldwideChat updates.'
   wwcUpdaterOutOfDateChat: 'WorldwideChat is out of date. Please update to the latest version.'
   #------------------- Configuration Messages -------------------
+  wwcConfigBadYaml: 'Invalid YAML file detected: {0}. Please attempt to fix this file or it may be deleted!'
   wwcConfigPAPIInstalled: 'PlaceholderAPI support has been enabled for your chat format.'
   wwcConfigPAPINotInstalled: 'Custom placeholders have been detected in your chat format, but PlaceholderAPI is not installed. Please ensure that the plugin has loaded and is enabled.'
   wwcConfigGUIToggleRestartRequired: 'A full server restart is required to apply this setting.'

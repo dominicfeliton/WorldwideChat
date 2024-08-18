@@ -20,13 +20,20 @@ import static com.dominicfeliton.worldwidechat.WorldwideChat.asyncTasksTimeoutSe
 
 public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
-    WorldwideChat main = WorldwideChat.instance;
+    WorldwideChat main;
 
-    CommonRefs refs = main.getServerFactory().getCommonRefs();
+    CommonRefs refs;
 
-    ServerAdapterFactory adapter = main.getServerFactory();
+    ServerAdapterFactory adapter;
 
     private final Queue<Listener> listenerQueue = new LinkedList<>();
+
+    public SpigotWorldwideChatHelper() {
+        super();
+        this.main = WorldwideChat.instance;
+        this.refs = main.getServerFactory().getCommonRefs();
+        this.adapter = main.getServerFactory();
+    }
 
     // TODO: Make most of this logic common between us and Paper and derivs
     @Override
@@ -83,9 +90,13 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             listenerQueue.add(sign);
         }
 
-        OnPlayerJoinListener join = new OnPlayerJoinListener();
+        NotifsOnJoinListener join = new NotifsOnJoinListener();
         pluginManager.registerEvents(join, main);
         listenerQueue.add(join);
+
+        SpigotSetLocaleOnJoinListener locale = new SpigotSetLocaleOnJoinListener();
+        pluginManager.registerEvents(locale, main);
+        listenerQueue.add(locale);
 
         TranslateInGameListener translate = new TranslateInGameListener();
         pluginManager.registerEvents(translate, main);

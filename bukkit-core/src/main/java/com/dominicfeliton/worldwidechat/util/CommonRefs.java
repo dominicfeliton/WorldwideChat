@@ -141,6 +141,7 @@ public class CommonRefs {
 	  * 'local' will check local lang list
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
+	// TODO: This should be enums not string
 	public SupportedLang getSupportedLang(String langName, String langType) {
 		/* Setup vars */
 		SupportedLang invalidLang = new SupportedLang("","","");

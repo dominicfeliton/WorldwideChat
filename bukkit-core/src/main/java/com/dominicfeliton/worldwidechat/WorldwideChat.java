@@ -48,7 +48,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08172024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08182024-2"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -127,6 +127,8 @@ public class WorldwideChat extends JavaPlugin {
 	private EventPriority chatPriority = EventPriority.HIGHEST;
 
 	private boolean forceSeparateChatChannel = true;
+
+	private boolean setLocalOnFirstJoin = true;
 
 	private int errorLimit = 5;
 
@@ -930,7 +932,11 @@ public class WorldwideChat extends JavaPlugin {
 	public void setErrorsToIgnore(ArrayList<String> in) {
 		errorsToIgnore = in;
 	}
-	
+
+	public void setLocalOnFirstJoin(boolean i) {
+		setLocalOnFirstJoin = i;
+	}
+
 	/* Getters */
 	public Component getTranslateIcon() {
 		return translateIcon == null ? Component.empty() : translateIcon;
@@ -1140,5 +1146,9 @@ public class WorldwideChat extends JavaPlugin {
 
 	public Set<String> getBlacklistTerms() {
 		return blacklistTerms;
+	}
+
+	public boolean getSetLocalOnFirstJoin() {
+		return setLocalOnFirstJoin;
 	}
 }

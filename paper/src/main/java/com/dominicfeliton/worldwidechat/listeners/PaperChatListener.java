@@ -145,7 +145,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         Component outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
 
         // Add hover text w/original message
-        if ((incoming && (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")))
+        if ((incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat"))
         || (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
             refs.debugMsg("Add hover!");
             outMsg = outMsg

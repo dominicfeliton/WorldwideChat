@@ -16,6 +16,7 @@ General:
   syncUserDataDelay: 7200
   fatalAsyncTaskTimeout: 10
   enableDebugMode: false
+  setUserLocalizationOnFirstJoin: true
 Storage:
   useSQL: false
   sqlHostname: localhost
