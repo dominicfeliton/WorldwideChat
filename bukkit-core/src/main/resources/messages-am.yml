@@ -45,7 +45,6 @@ Messages:
   wwctPlayerNotFound: ተጫዋች %እኔ አልተገኘም።
   wwcConfigGUIAmazonTranslateRegionButton: የአማዞን ክልል ቀይር
   wwcConfigConversationLangInvalid: ልክ ያልሆነ የቋንቋ ኮድ!
-  wwcConfigGUIWatsonAPIKeyButton: ዋትሰን ኤፒአይ ቁልፍ ይቀይሩ
   wwcEnabled: የነቃ የዓለም WideChat ስሪት {0}።
   wwctbOnSender: መጽሐፍ ትርጉም ነቅቷል። ለመተርጎም አንድ መጽሐፍ ይዞ ሳለ ቀኝ-ጠቅ ያድርጉ!
   wwcListenersInitialized: አልተነሳም አድማጮች።
@@ -54,8 +53,6 @@ Messages:
   wwctsOffTarget: የምልክት ትርጉም ተሰናክሏል ለ {0}።
   wwcUpdaterConnectionFailed: Github ላይ የቅርብ ጊዜ ዝማኔዎችን ማረጋገጥ አልተቻለም።
   watsonNotFoundExceptionNotification: የእርስዎን ግብዓት ማንኛውም ተጨማሪ መተርጎም አልተቻለም።
-  wwcConfigConversationWatsonAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ {0} ነው። እባክዎ ለ ዋትሰን API ቁልፍ
-    ያስገቡ ወይም 0 ተይብ ለመመለስ።
   wwctGUIStopButton: መተርጎም አቁም
   wwcgTranslationStopped: ግሎባል የውይይት ትርጉም ቆሟል።
   wwcUpdaterFutureDate: ይህ የ WorldwideChat ምሳሌ ከቅርብ ጊዜ የህዝብ የበለጠ ስሪት አለው።
@@ -64,11 +61,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'የዒላማ ምልክት ተሰርዟል ወይም ትርጉሙ በጣም ረጅም ነበር። ትርጉም:'
   wwctsOnTarget: የምልክት ትርጉም ነቅቷል ለ {0}።
   wwcConfigCacheDisabled: ተርጓሚ መሸጎጫ ተሰናክሏል።
-  wwcConfigConversationWatsonURLInput: የአሁኑ ዩ አር ኤል {0} ነው። እባክዎ ዋትሰን የአገልግሎት ዩአርኤል
-    ያስገቡ፣ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
   wwcBookDone: መጽሐፍ በተሳካ ሁኔታ ተተርጉሟል
   wwctsOnSender: የምልክት ትርጉም ነቅቷል። ለመተርጎም ምልክት ላይ ቀኝ-ጠቅ ያድርጉ!
-  watsonColorCodeWarning: የቀለም ኮዶችን መጠቀም እርስዎ መተንበይ ውጤቶችን መስጠት ይችላል።
   wwctGUITranslationButton: መተርጎም ይጀምሩ
   wwctGUIAutoDetectButton: የራስ-ፈልጎ ምንጭ ቋንቋ
   wwcUpdaterUpToDate: WorldwideChat ወቅታዊ ነው!
@@ -80,7 +74,6 @@ Messages:
   wwcPlayerNotFound: ተጫዋች %እኔ አልተገኘም።
   wwcUpdaterOutOfDateChat: WorldwideChat ጊዜው ያለፈበት ነው። እባክዎ ወደ የቅርብ ጊዜው ስሪት ያዘምኑ።
   wwcConfigConversationRateLimitSuccess: ተመን ገደብ በተሳካ ሁኔታ ማዘጋጀት።
-  wwcConfigConversationWatsonURLSuccess: ዋትሰን ዩአርኤል በተሳካ ሁኔታ ማዘጋጀት።
   wwctbPlayerNotFound: ተጫዋች {0} ወይ አልተገኘም ነው, ወይም ንቁ ተርጓሚ አይደለም።
   wwcConfigConversationTranslationCacheSuccess: የትርጉም መሸጎጫ ገደብ በተሳካ ሁኔታ
   wwctInvalidArgs: ልክ ያልሆነ ክርክሮች የቀረቡ!
@@ -98,7 +91,6 @@ Messages:
     በመሆን ላይ...
   wwcSignTranslateStart: የዒላማ ምልክትን በመተርጎም...
   wwcConfigGUIChatSettings: የውይይት ውቅር
-  wwcConfigGUIWatsonURLButton: ዋትሰን አገልግሎት ዩአርኤል ይቀይሩ
   wwcConfigConversationUpdateCheckerSuccess: አዘምን ቼከር መዘግየት በተሳካ ሁኔታ ማዘጋጀት።
   wwcGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት ከ {0} ወደ {1} እየተተረጎመ
     ነው።
@@ -114,7 +106,6 @@ Messages:
   wwcVersion: የዓለም አቀፍ ዊዲቻት፣ ስሪት
   wwcsAttemptedTranslations: 'የተሞክሩ ትርጉሞች: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: የአማዞን ሚስጥር ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል
-  wwcConfigConversationWatsonAPIKeySuccess: ዋትሰን ኤ ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል።
   wwcRateLimit: የእርስዎ ትርጉሞች መጠን ውስን ናቸው። እባክዎ ሌላ {0} ሰከንዶች ይጠብቁ
   wwcConfigCacheEnabled: ተርጓሚ መሸጎጫ ነቅቶ ወደ ገደብ ተዘጋጅቷል {0}።
   wwctGUIExistingTranslationButton: የአሁኑን የትርጉም ክፍለ ጊዜ ተጻፈ
@@ -164,7 +155,6 @@ Messages:
   wwcInvalidTranslator: ልክ ያልሆነ ተርጓሚ ቅንብሮች። እባክዎ ይህን ፕለጊን ለመጠቀም በ config.yml ወይም በ
     /wwcc ውስጥ ያስተካክሉት።
   wwcConfigGUIEachTranslatorSettings: '{0} ውቅር'
-  wwcConfigGUIWatsonButton: ዋትሰን
   wwcServerReloadWarning: WorldwideChat የ /ዳግም ጫን አጠቃቀም ኮንዶም አይደለም። እባክዎ በጥንቃቄ ይቀጥሉ።
   wwcConfigEnabledDebugMode: ነቅቷል የማረም ሁነታ ገንቢ ወይም መላ መፈለጊያ ካልሆኑ ይህን ማጥፋት አለብዎት።
   wwcTranslatorErrorThresholdReached: የስህተት ጣራ ደርሷል። ይህ ተሰኪ አሁን እንደገና ይጫናል, እና ሁሉንም
@@ -262,10 +252,7 @@ Messages:
     ተግባራዊ እንዲሆን ዳግም ይጫኑ።
   wwcConfigYAMLDefault: የውሂብ ማከማቻ YAML ወደ ነባር።
   wwcConfigGUISQLMenuButton: የ SQL ቅንብሮችን ይቀይሩ
-  wwcConfigConversationWatsonTranslateToggleSuccess: በተሳካ ሁኔታ ዋትሰን ተርጉም ቀይረዋል። ለውጡ
-    ተግባራዊ እንዲሆን ዳግም ይጫኑ።
   wwcConfigGUIToggleGoogleTranslateButton: ጉግል ተርጉም ቀይር
-  wwcConfigGUIToggleWatsonTranslateButton: ዋትሰን ተርጉም ቀያይር
   wwcConfigGUIToggleAmazonTranslateButton: የአማዞን ተርጉም ቀያይር
   wwcConfigGUIStorageSettings: የማከማቻ ውቅር
   wwcConfigConversationAmazonTranslateToggleSuccess: በተሳካ ሁኔታ የአማዞን ተርጉም ቀይረዋል። ለውጡ
@@ -554,8 +541,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: የውይይት ዝግጅትዎን ቅድሚያ በተሳካ
   wwcConfigVaultSupportInvalid: በ config.yml ውስጥ የተቀናጀ ልክ ድጋፍ የተቀመጠ ነው። ወደ እውነት ነባሪ
     መሆን...
-  wwcWatsonDeprecation: ዋትሰን ቆይቷል እና ከእንግዲህ በ IBM አይደገፋም። በቀጣዩ ዝመና ውስጥ ለእሱ ድጋፍ ስለሚወግድ
-    እባክዎ መቀየርን ያስቡ።
   wwcConfigForceChatChannelEnabled: በሁሉም ትርጉሞች ጊዜ የተለየ የትርጉም ሰርጥ ይገደዳል።
   wwcConfigConversationSeparateChatChannelForceSuccess: የተለየ ሰርጥ ማስገደድ በተሳካ ሁኔታ ተቀየረ
   wwcConfigConversationChannelIconInput: ለተለየ የትርጉም ሰርጥ አሁን ያለው አዶን {0} ነው። የቀለም ኮዶች
@@ -614,4 +599,5 @@ Messages:
     ካላወቁ በስተቀር ይህንን ትዕዛዝ አያሂዱ: {0}'
   wwcdResetNotif: WorldwideChat ዳግም እንደገና ተጀምሯል። እንደገና መጫን...
   wwcdResetNotifError: ሁሉም ውሂብ በተሳካ ሁኔታ አልተጠበቀም። ከውሂብ ጎታዎ ጋር ተገናኝተዋል?
+  colorCodeWarning: የቀለም ኮዶችን መጠቀም የማይታዩ ውጤቶችን ሊሰጥዎት
 

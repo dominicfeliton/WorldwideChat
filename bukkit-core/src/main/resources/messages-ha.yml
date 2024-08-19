@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: Mai wasa {0} samu ba.
   wwcConfigGUIAmazonTranslateRegionButton: Canja Yankin Amazon
   wwcConfigConversationLangInvalid: Lambar harshe mara inganci!
-  wwcConfigGUIWatsonAPIKeyButton: Canja Maɓallin Watson API
   wwcEnabled: An kunna versionWideChat na Duniya {0}.
   wwctbOnSender: An kunna fassarar littafi. Danna-dama yayin riƙe da littafi don fassara
     shi!
@@ -60,8 +59,6 @@ Messages:
   wwctsOffTarget: An kashe fassarar shiga da {0}.
   wwcUpdaterConnectionFailed: Ba a iya bincika sabuntawa a kan Github ba.
   watsonNotFoundExceptionNotification: Ba za a iya fassara shigarwarka ba.
-  wwcConfigConversationWatsonAPIKeyInput: Maballin API na yanzu shine {0}. Da fatan
-    za a shigar da maɓallin API don Watson, ko rubuta 0 don komawa.
   wwctGUIStopButton: Dakatar da fassara
   wwcgTranslationStopped: An dakatar da fassarar hira ta duniya.
   wwcUpdaterFutureDate: Wannan misali na WorldwideChat yana da mafi girma fiye da
@@ -71,12 +68,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'An dai share alamar Target ko fassarar ta yi tsawo. Fassara:'
   wwctsOnTarget: An kunna fassarar shiga da {0}.
   wwcConfigCacheDisabled: An kashe cache mai fassara.
-  wwcConfigConversationWatsonURLInput: URL na yanzu shine {0}. Da fatan za a shigar
-    da adireshin sabis don Watson, ko rubuta 0 don komawa.
   wwcBookDone: Littafin da aka fassara cikin nasara.
   wwctsOnSender: An kunna fassarar shiga. Danna-dama a kan alamar don fassara shi!
-  watsonColorCodeWarning: Yin amfani da lambobin launi na iya ba ku sakamakon da ba
-    za a iya
   wwctGUITranslationButton: Fara Fassara
   wwctGUIAutoDetectButton: Harshen tushe na atomatik
   wwcUpdaterUpToDate: WideChat har zuwa yau!
@@ -89,7 +82,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat ba ta da kwanan wata. Da fatan a sabunta
     zuwa sabuwar version.
   wwcConfigConversationRateLimitSuccess: Ƙididdigar iyaka da aka saita nasara.
-  wwcConfigConversationWatsonURLSuccess: Watson URL saita nasara.
   wwctbPlayerNotFound: Mai wasan {0} dai ba a samu shi ba, ko kuma ba mai fassara
     mai aiki ba ne.
   wwcConfigConversationTranslationCacheSuccess: Fassara cache iyaka saita nasara.
@@ -108,7 +100,6 @@ Messages:
     0 seconds...
   wwcSignTranslateStart: Fassara alamar manufa...
   wwcConfigGUIChatSettings: Taɗi sanyi
-  wwcConfigGUIWatsonURLButton: Canja URL ɗin Sabis na Watson
   wwcConfigConversationUpdateCheckerSuccess: Ɗaukaka jinkirta jinkirta saiti cikin
     nasara.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Ana fassara tattaunawar duniya
@@ -126,7 +117,6 @@ Messages:
   wwcsAttemptedTranslations: 'Yunkurin Fassara: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Maɓallin asiri na Amazon ya
     kafa nasara.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API key saita nasara.
   wwcRateLimit: Fassararku suna iyakance. Da fatan za a jira wanin {0} seconds.
   wwcConfigCacheEnabled: An kunna cache mai fassara kuma an saita zuwa iyaka na {0}.
   wwctGUIExistingTranslationButton: Coverwrite Translation Session
@@ -185,7 +175,6 @@ Messages:
   wwcInvalidTranslator: Saitunan fassara mara inganci. Da fatan a gyara wannan a cikin
     daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Configuration'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ba ya yin amfani da/sake dawowa. Da fatan
     za a cigaba da taka tsantsan
   wwcConfigEnabledDebugMode: An kunna yanayin DEBUG. Idan ba kai ba ne mai tasowa
@@ -299,10 +288,7 @@ Messages:
     Translate. Sake dawowa don canjin don yin tasiri.
   wwcConfigYAMLDefault: An cire shi zuwa YAML don ajiyar bayanai.
   wwcConfigGUISQLMenuButton: Canja Saitunan SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: An yi nasarar toggled Watson
-    Translate. Sake dawowa don canjin don yin tasiri.
   wwcConfigGUIToggleGoogleTranslateButton: Togle Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: TGLE Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Fassara Amazon
   wwcConfigGUIStorageSettings: Saitunan ajiya
   wwcConfigConversationAmazonTranslateToggleSuccess: An yi nasarar toggled Amazon
@@ -634,9 +620,6 @@ Messages:
     ku.
   wwcConfigVaultSupportInvalid: Tallafin kuɗi mara inganci wanda aka saita a cikin
     config.yml. Rashin gaskiya zuwa gaskiya...
-  wwcWatsonDeprecation: Watson ya ƙare shi kuma IBM baya goyan bayan shi. Da fatan
-    za a yi la'akari da sauyawa, kamar yadda za a cire tallafi a cikin sabuntawa na
-    gaba.
   wwcConfigForceChatChannelEnabled: Za a tilasta wata tashar fassara daban yayin duk
     fassarar.
   wwcConfigConversationSeparateChatChannelForceSuccess: An sami nasarar canza tilasta
@@ -713,4 +696,6 @@ Messages:
   wwcdResetNotif: An sake saita WorldwideChat. Sake loda...
   wwcdResetNotifError: Ba duk bayanan an sami nasarar goge shi ba. Shin kuna da alaƙa
     da bayananku?
+  colorCodeWarning: Yin amfani da lambobin launi na iya ba ku sakamako da ba a iya
+    ba
 

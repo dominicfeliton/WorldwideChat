@@ -42,7 +42,6 @@ Messages:
   wwctPlayerNotFound: 玩家 %我没找到。
   wwcConfigGUIAmazonTranslateRegionButton: 更改亚马逊地区
   wwcConfigConversationLangInvalid: 语言代码无效！
-  wwcConfigGUIWatsonAPIKeyButton: 更改沃森 API 密钥
   wwcEnabled: 已启用 WorldwideChat 版本 {0}。
   wwctbOnSender: 已启用图书翻译。拿着书的同时右键单击即可翻译它！
   wwcListenersInitialized: 初始化的监听器。
@@ -51,8 +50,6 @@ Messages:
   wwctsOffTarget: '{0} 禁用签名翻译。'
   wwcUpdaterConnectionFailed: 无法在 Github 上检查最新更新。
   watsonNotFoundExceptionNotification: 无法进一步翻译您的输入。
-  wwcConfigConversationWatsonAPIKeyInput: 当前 API 密钥为 {0}。请输入 Watson 的 API 密钥，或键入 0
-    返回。
   wwctGUIStopButton: 停止翻译
   wwcgTranslationStopped: 全球聊天翻译已停止。
   wwcUpdaterFutureDate: 这个 WorldwideChat 实例的版本比最新的公开版本更大。
@@ -61,10 +58,8 @@ Messages:
   wwcSignDeletedOrTooLong: 目标标志要么被删除，要么翻译过长。翻译：
   wwctsOnTarget: 已为 {0} 启用签名翻译。
   wwcConfigCacheDisabled: 翻译器缓存已禁用。
-  wwcConfigConversationWatsonURLInput: 当前 URL 为 {0}。请输入 Watson 的服务 URL，或键入 0 返回。
   wwcBookDone: 已成功翻译图书。
   wwctsOnSender: 已启用签名翻译。右键单击标志即可翻译它！
-  watsonColorCodeWarning: 使用颜色代码可能会给你不可预测的结果。
   wwctGUITranslationButton: 开始翻译
   wwctGUIAutoDetectButton: 自动检测源语言
   wwcUpdaterUpToDate: WorldwideChat 是最新的！
@@ -75,7 +70,6 @@ Messages:
   wwcPlayerNotFound: 玩家 %我没找到。
   wwcUpdaterOutOfDateChat: WorldwideChat 已经过时了。请更新至最新版本。
   wwcConfigConversationRateLimitSuccess: 成功设置速率限制。
-  wwcConfigConversationWatsonURLSuccess: Watson URL 设置成功。
   wwctbPlayerNotFound: 玩家 {0} 要么找不到，要么不是活跃的翻译者。
   wwcConfigConversationTranslationCacheSuccess: 已成功设置翻译缓存限制。
   wwctInvalidArgs: 提供的参数无效！
@@ -92,7 +86,6 @@ Messages:
   wwcConfigRateLimitInvalid: config.yml 中设置的费率限制错误。默认为 0 秒...
   wwcSignTranslateStart: 正在翻译目标标志...
   wwcConfigGUIChatSettings: 聊天配置
-  wwcConfigGUIWatsonURLButton: 更改 Watson 服务 URL
   wwcConfigConversationUpdateCheckerSuccess: 已成功设置更新检查器延迟。
   wwcGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在从 {0} 翻译为 {1}。
   wwcConfigGUITranslatorSettings: 翻译器配置
@@ -105,7 +98,6 @@ Messages:
   wwcVersion: WorldwideChat，版本
   wwcsAttemptedTranslations: 尝试翻译： {0}
   wwcConfigConversationAmazonTranslateSecretKeySuccess: 亚马逊密钥设置成功。
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API 密钥设置成功。
   wwcRateLimit: 你的翻译费率有限。请再等 {0} 秒钟。
   wwcConfigCacheEnabled: 已启用翻译者缓存并设置为 {0} 的限制。
   wwctGUIExistingTranslationButton: 覆盖当前翻译会话
@@ -151,7 +143,6 @@ Messages:
   wwctiOnTarget: 为 {0} 启用了商品翻译。
   wwcInvalidTranslator: 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '{0} 配置'
-  wwcConfigGUIWatsonButton: 沃森
   wwcServerReloadWarning: WorldwideChat 不宽恕 /reload 的使用。请谨慎行事。
   wwcConfigEnabledDebugMode: 已启用调试模式。如果你不是开发人员或疑难解答者，你应该关闭此功能。
   wwcTranslatorErrorThresholdReached: 已达到错误阈值。此插件现在将重新加载，并禁用所有翻译人员。
@@ -239,9 +230,7 @@ Messages:
   wwcConfigConversationGoogleTranslateToggleSuccess: 已成功切换谷歌翻译。重新加载以使更改生效。
   wwcConfigYAMLDefault: 默认为 YAML 用于数据存储。
   wwcConfigGUISQLMenuButton: 更改 SQL 设置
-  wwcConfigConversationWatsonTranslateToggleSuccess: 已成功切换 Watson 翻译。重新加载以使更改生效。
   wwcConfigGUIToggleGoogleTranslateButton: 切换谷歌翻译
-  wwcConfigGUIToggleWatsonTranslateButton: 切换沃森翻译
   wwcConfigGUIToggleAmazonTranslateButton: 切换亚马逊翻译
   wwcConfigGUIStorageSettings: 存储配置
   wwcConfigConversationAmazonTranslateToggleSuccess: 已成功切换亚马逊翻译。重新加载以使更改生效。
@@ -480,7 +469,6 @@ Messages:
   wwcConfigConversationChatPriorityBadInput: 聊天优先级输入错误！请再试一次。
   wwcConfigConversationChatPrioritySuccess: 成功设置聊天活动优先级。
   wwcConfigVaultSupportInvalid: config.yml 中设置的保管库支持无效。默认为真...
-  wwcWatsonDeprecation: Watson 已被弃用，不再受到 IBM 的支持。请考虑切换，因为对它的支持将在下次更新中删除。
   wwcConfigForceChatChannelEnabled: 在所有翻译过程中，将强制使用单独的翻译频道。
   wwcConfigConversationSeparateChatChannelForceSuccess: 成功切换强制使用单独的频道。
   wwcConfigConversationChannelIconInput: 单独翻译频道的当前图标是 {0}。支持颜色代码；键入 0 返回。
@@ -530,4 +518,5 @@ Messages:
   wwcdResetWarn: 警告：此命令将完全重置所有数据，包括记录和您的活跃翻译器。除非你知道自己在做什么，否则不要运行这个命令：{0}
   wwcdResetNotif: WorldwideChat 已重置。正在加载...
   wwcdResetNotifError: 并非所有数据都已成功擦除。你连接到数据库了吗？
+  colorCodeWarning: 使用颜色代码可能会给你带来不可预测的结果。
 

@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: ಆಟಗಾರ % ನಾನು ಕಂಡುಬಂದಿಲ್ಲ.
   wwcConfigGUIAmazonTranslateRegionButton: ಅಮೆಜಾನ್ ಪ್ರದೇಶವನ್ನು ಬದಲಿಸಿ
   wwcConfigConversationLangInvalid: ಅಮಾನ್ಯ ಭಾಷಾ ಕೋಡ್!
-  wwcConfigGUIWatsonAPIKeyButton: ವ್ಯಾಟ್ಸನ್ ಎಪಿಐ ಕೀ ಬದಲಾಯಿಸಿ
   wwcEnabled: ಸಕ್ರಿಯಗೊಳಿಸಿದ ವಿಶ್ವವೈಡೆಚಾಟ್ ಆವೃತ್ತಿ {0}.
   wwctbOnSender: ಪುಸ್ತಕ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ಪುಸ್ತಕವನ್ನು
     ಹಿಡಿದಿಟ್ಟುಕೊಳ್ಳುವಾಗ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ!
@@ -62,8 +61,6 @@ Messages:
   wwctsOffTarget: ಅನುವಾದ {0} ಗಾಗಿ ಸೈನ್ ಇನ್ ಮಾಡಿ.
   wwcUpdaterConnectionFailed: Github ನಲ್ಲಿ ಇತ್ತೀಚಿನ ನವೀಕರಣಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.
   watsonNotFoundExceptionNotification: ನಿಮ್ಮ ಇನ್ಪುಟ್ ಅನ್ನು ಮತ್ತಷ್ಟು ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.
-  wwcConfigConversationWatsonAPIKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿಯು {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು
-    ವ್ಯಾಟ್ಸನ್ಗೆ ಒಂದು API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwctGUIStopButton: ಭಾಷಾಂತರಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ
   wwcgTranslationStopped: ಜಾಗತಿಕ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.
   wwcUpdaterFutureDate: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ನ ಈ ಉದಾಹರಣೆಯು ಇತ್ತೀಚಿನ ಸಾರ್ವಜನಿಕಕ್ಕಿಂತ ಹೆಚ್ಚಿನ
@@ -74,13 +71,9 @@ Messages:
     ಅನುವಾದ:'
   wwctsOnTarget: ಸೈನ್ ಅನುವಾದ {0} ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcConfigCacheDisabled: ಅನುವಾದಕ ಸಂಗ್ರಹ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwcConfigConversationWatsonURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ವ್ಯಾಟ್ಸನ್ಗಾಗಿ
-    ಒಂದು ಸೇವಾ URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcBookDone: ಪುಸ್ತಕ ಯಶಸ್ವಿಯಾಗಿ ಅನುವಾದಿಸಲಾಗಿದೆ.
   wwctsOnSender: ಸೈನ್ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ಚಿಹ್ನೆಯ ಮೇಲೆ ಬಲ
     ಕ್ಲಿಕ್ ಮಾಡಿ!
-  watsonColorCodeWarning: ಬಣ್ಣ ಸಂಕೇತಗಳನ್ನು ಬಳಸುವುದು ನಿಮಗೆ ಅನಿರೀಕ್ಷಿತ ಫಲಿತಾಂಶಗಳನ್ನು
-    ನೀಡಬಹುದು.
   wwctGUITranslationButton: ಭಾಷಾಂತರಿಸಲು ಪ್ರಾರಂಭಿಸಿ
   wwctGUIAutoDetectButton: ಸ್ವಯಂ ಪತ್ತೆ ಮೂಲ ಭಾಷೆ
   wwcUpdaterUpToDate: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ನವೀಕೃತವಾಗಿದೆ!
@@ -93,7 +86,6 @@ Messages:
   wwcUpdaterOutOfDateChat: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ನವೀಕೃತವಾಗಿದೆ. ದಯವಿಟ್ಟು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ
     ನವೀಕರಿಸಿ.
   wwcConfigConversationRateLimitSuccess: ದರ ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
-  wwcConfigConversationWatsonURLSuccess: ವ್ಯಾಟ್ಸನ್ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwctbPlayerNotFound: ಪ್ಲೇಯರ್ {0} ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ಸಕ್ರಿಯ ಅನುವಾದಕವಲ್ಲ.
   wwcConfigConversationTranslationCacheSuccess: ಅನುವಾದ ಸಂಗ್ರಹ ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
     ಸೆಟ್.
@@ -113,7 +105,6 @@ Messages:
     ಕಾಲ ಡಿಫಾಲ್ಟಿಂಗ್...
   wwcSignTranslateStart: ಗುರಿ ಚಿಹ್ನೆಯನ್ನು ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...
   wwcConfigGUIChatSettings: ಚಾಟ್ ಸಂರಚನೆ
-  wwcConfigGUIWatsonURLButton: ವ್ಯಾಟ್ಸನ್ ಸೇವೆ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigConversationUpdateCheckerSuccess: ಅಪ್ಡೇಟ್ ಪರೀಕ್ಷಕ ವಿಳಂಬವನ್ನು ಯಶಸ್ವಿಯಾಗಿ
     ಹೊಂದಿಸಿ.
   wwcGlobalOnJoinTranslationNotificationSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು {0} ನಿಂದ {1}
@@ -133,7 +124,6 @@ Messages:
   wwcsAttemptedTranslations: 'ಪ್ರಯತ್ನಿಸಿದ ಅನುವಾದಗಳು: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ಅಮೆಜಾನ್ ರಹಸ್ಯ ಪ್ರಮುಖ ಯಶಸ್ವಿಯಾಗಿ
     ಸೆಟ್.
-  wwcConfigConversationWatsonAPIKeySuccess: ವ್ಯಾಟ್ಸನ್ API ಕೀ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwcRateLimit: ನಿಮ್ಮ ಅನುವಾದಗಳು ದರ ಸೀಮಿತವಾಗಿವೆ. ದಯವಿಟ್ಟು ಇನ್ನೊಂದು {0} ಸೆಕೆಂಡುಗಳ ಕಾಲ
     ಕಾಯಿರಿ.
   wwcConfigCacheEnabled: ಅನುವಾದಕ ಸಂಗ್ರಹವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದ್ದು, {0} ನ ಮಿತಿಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
@@ -192,7 +182,6 @@ Messages:
   wwcInvalidTranslator: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
     ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.
   wwcConfigGUIEachTranslatorSettings: '{0} ಸಂರಚನೆ'
-  wwcConfigGUIWatsonButton: ವ್ಯಾಟ್ಸನ್
   wwcServerReloadWarning: WorldwideChat /reloaded ಬಳಕೆಯನ್ನು ಕ್ಷಮಿಸುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು
     ಎಚ್ಚರಿಕೆಯಿಂದ ಮುಂದುವರಿಯಿರಿ.
   wwcConfigEnabledDebugMode: ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ ಡೀಬಗ್ ಮೋಡ್. ನೀವು ಡೆವಲಪರ್ ಅಥವಾ ಟ್ರಬಲ್ಶೂಟರ್
@@ -306,10 +295,7 @@ Messages:
     toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್ ಮಾಡಿ.
   wwcConfigYAMLDefault: ಡೇಟಾ ಶೇಖರಣೆಗಾಗಿ YAML ಗೆ ಡೀಫಾಲ್ಟ್ ಮಾಡಲಾಗಿದೆ.
   wwcConfigGUISQLMenuButton: SQL ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಿ
-  wwcConfigConversationWatsonTranslateToggleSuccess: ವ್ಯಾಟ್ಸನ್ ಭಾಷಾಂತರಿಸಲು ಯಶಸ್ವಿಯಾಗಿ
-    toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್ ಮಾಡಿ.
   wwcConfigGUIToggleGoogleTranslateButton: ಗೂಗಲ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
-  wwcConfigGUIToggleWatsonTranslateButton: ವ್ಯಾಟ್ಸನ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
   wwcConfigGUIToggleAmazonTranslateButton: ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಲು ಟಾಗಲ್
   wwcConfigGUIStorageSettings: ಶೇಖರಣಾ ಸಂರಚನೆ
   wwcConfigConversationAmazonTranslateToggleSuccess: ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಲು ಯಶಸ್ವಿಯಾಗಿ
@@ -646,9 +632,6 @@ Messages:
     ಹೊಂದಿಸಿ.
   wwcConfigVaultSupportInvalid: ಅಮಾನ್ಯ ವಾಲ್ಟ್ ಬೆಂಬಲವನ್ನು config.yml ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ.
     ನಿಜಕ್ಕೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
-  wwcWatsonDeprecation: ವ್ಯಾಟ್ಸನ್ ಅವರನ್ನು ಅಪ್ರಚುರಕಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಇದನ್ನು ಇನ್ನು ಮುಂದೆ
-    ಐಬಿಎಂ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ಸ್ವಿಚಿಂಗ್ ಅನ್ನು ಪರಿಗಣಿಸಿ, ಏಕೆಂದರೆ ಮುಂದಿನ ಅಪ್ಡೇಟ್ನಲ್ಲಿ
-    ಅದಕ್ಕೆ ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ.
   wwcConfigForceChatChannelEnabled: ಎಲ್ಲಾ ಅನುವಾದಗಳ ಸಮಯದಲ್ಲಿ ಪ್ರತ್ಯೇಕ ಅನುವಾದ ಚಾನಲ್
     ಅನ್ನು ಒತ್ತಾಯಿಸಲಾಗುತ್ತದೆ.
   wwcConfigConversationSeparateChatChannelForceSuccess: ಪ್ರತ್ಯೇಕ ಚಾನಲ್ಗೆ ಒತ್ತಾಯಿಸಿ
@@ -723,4 +706,5 @@ Messages:
   wwcdResetNotif: ವರ್ಲ್ಡ್ವೈಡ್ಹ್ಯಾಟ್ ಅನ್ನು ಮರುಹೊಂದಿಸಲಾಗಿದೆ. ಮರುಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
   wwcdResetNotifError: ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿಲ್ಲ. ನಿಮ್ಮ ಡೇಟಾಬೇಸ್ಗೆ ನೀವು
     ಸಂಪರ್ಕಗೊಂಡಿದ್ದೀರಾ?
+  colorCodeWarning: ಬಣ್ಣ ಸಂಕೇತಗಳನ್ನು ಬಳಸುವುದು ನಿಮಗೆ ಅನಿರೀಕ್ಷಿತ ಫಲಿತಾಂಶಗಳನ್ನು ನೀಡಬಹುದು.
 

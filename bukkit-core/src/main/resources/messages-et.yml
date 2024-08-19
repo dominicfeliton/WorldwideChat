@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: Mängija {0} ei leidnud.
   wwcConfigGUIAmazonTranslateRegionButton: Muuda Amazonase regiooni
   wwcConfigConversationLangInvalid: Kehtetu keelekood!
-  wwcConfigGUIWatsonAPIKeyButton: Muuda Watsoni API võtit
   wwcEnabled: Lubatud WorldwideChat versioon {0}.
   wwctbOnSender: Raamatu tõlkimine on lubatud. Paremklõpsake hoides raamatut tõlkida!
   wwcListenersInitialized: Algastatud kuulajad.
@@ -60,8 +59,6 @@ Messages:
   wwctsOffTarget: Allkirjasta tõlge keelatud jaoks {0}.
   wwcUpdaterConnectionFailed: Githubi uusimaid värskendusi ei saa otsida.
   watsonNotFoundExceptionNotification: Ei saa tõlkida oma sisendit kaugemale.
-  wwcConfigConversationWatsonAPIKeyInput: Praegune API võti on {0}. Palun sisestage
-    Watsoni API võti või tippige 0, et minna tagasi.
   wwctGUIStopButton: Lõpeta tõlkimine
   wwcgTranslationStopped: Global chat tõlge on peatunud.
   wwcUpdaterFutureDate: Sellel WorldwideChati eksemplaril on suurem versioon kui viimane
@@ -71,11 +68,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'Sihtmärk kustutati või tõlge oli liiga pikk. Tõlge:'
   wwctsOnTarget: Logi tõlge lubatud {0}.
   wwcConfigCacheDisabled: Tõlkija vahemälu on keelatud.
-  wwcConfigConversationWatsonURLInput: Praegune URL on {0}. Palun sisestage Watsoni
-    teenuse URL või tippige tagasi minemiseks 0.
   wwcBookDone: Raamat tõlgitud edukalt.
   wwctsOnSender: Logi tõlkimine lubatud. Paremklõpsake märk tõlkida!
-  watsonColorCodeWarning: Värvikoodide kasutamine võib anda teile ettearvamatuid tulemusi.
   wwctGUITranslationButton: Alusta tõlkimist
   wwctGUIAutoDetectButton: Lähtekeele automaatne tuvastamine
   wwcUpdaterUpToDate: WorldwideChat on ajakohane!
@@ -87,7 +81,6 @@ Messages:
   wwcPlayerNotFound: Mängija {0} ei leidnud.
   wwcUpdaterOutOfDateChat: WorldwideChat on aegunud. Palun uuendage uusimale versioonile.
   wwcConfigConversationRateLimitSuccess: Määra piirmäär on edukalt seatud.
-  wwcConfigConversationWatsonURLSuccess: Watsoni URL seatud edukalt.
   wwctbPlayerNotFound: Mängija {0} kas ei leitud, või ei ole aktiivne tõlkija.
   wwcConfigConversationTranslationCacheSuccess: Tõlge vahemälu piirang seatud edukalt
   wwctInvalidArgs: Kehtetu argumendid esitatud!
@@ -105,7 +98,6 @@ Messages:
     0 sekundit...
   wwcSignTranslateStart: Sihtmärgi tõlkimine...
   wwcConfigGUIChatSettings: vestluse konfiguratsioon
-  wwcConfigGUIWatsonURLButton: Muuda Watsoni teenuse URL-i
   wwcConfigConversationUpdateCheckerSuccess: Värskenduse kontrollija viivitus seatud
     edukalt.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud
@@ -122,7 +114,6 @@ Messages:
   wwcsAttemptedTranslations: 'Üritanud tõlked: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon salajane võti seatud
     edukalt.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API võti edukalt.
   wwcRateLimit: Teie tõlked on piiratud. Palun oodake teise {0} sekundit.
   wwcConfigCacheEnabled: Tõlkija vahemälu lubatud ja seatud piir {0}.
   wwctGUIExistingTranslationButton: Praeguse tõlke seansi üle
@@ -181,7 +172,6 @@ Messages:
   wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
     või /wwcc kasutada seda pluginat.
   wwcConfigGUIEachTranslatorSettings: '{0} konfiguratsioon'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ei nõustu /ümberlaadimise kasutamisega. Palun
     jätkake ettevaatusega.
   wwcConfigEnabledDebugMode: Lubatud silumisrežiim. Kui te pole arendaja või tõrkeotsija,
@@ -289,10 +279,7 @@ Messages:
     Laadige muudatuse jõustumiseks uuesti.
   wwcConfigYAMLDefault: Andmete salvestamiseks on vaikimisi YAML.
   wwcConfigGUISQLMenuButton: SQL-i sätete muutmine
-  wwcConfigConversationWatsonTranslateToggleSuccess: Edukalt lülitatud Watson tõlkida.
-    Laadige muudatuse jõustumiseks uuesti.
   wwcConfigGUIToggleGoogleTranslateButton: Lülita Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Lülita Watson tõlkimine
   wwcConfigGUIToggleAmazonTranslateButton: Lülita Amazon tõlkimine
   wwcConfigGUIStorageSettings: Salvestusruumi se
   wwcConfigConversationAmazonTranslateToggleSuccess: Edukalt lülitatud Amazon tõlkida.
@@ -611,8 +598,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Määrake edukalt oma vestlussündmuse prioriteet.
   wwcConfigVaultSupportInvalid: Config.yml-is kehtetu võlvatugi komplekt. Vaikimisi
     tõeseks...
-  wwcWatsonDeprecation: Watson on aegunud ja IBM ei toeta seda enam. Palun kaaluge
-    vahetamist, kuna selle tugi eemaldatakse järgmises värskenduses.
   wwcConfigForceChatChannelEnabled: Kõigi tõlgete ajal sunnitakse eraldi tõlkekanal.
   wwcConfigConversationSeparateChatChannelForceSuccess: Eraldi kanali sundides edukalt
     lülitatud.
@@ -685,4 +670,5 @@ Messages:
   wwcdResetNotif: WorldwideChat on lähtestatud. Taaslaadimine...
   wwcdResetNotifError: Kõiki andmeid ei kustutatud edukalt. Kas olete ühendatud oma
     andmebaasiga?
+  colorCodeWarning: Värvikoodide kasutamine võib anda teile ettearvamatuid tulemusi.
 

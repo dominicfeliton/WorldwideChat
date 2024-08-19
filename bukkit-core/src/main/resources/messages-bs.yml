@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Player {0} pronađen.
   wwcConfigGUIAmazonTranslateRegionButton: Promijeni Amazon Region
   wwcConfigConversationLangInvalid: Nevažeći jezični kod!
-  wwcConfigGUIWatsonAPIKeyButton: Promijenite Watson API ključ
   wwcEnabled: Omogućeno WorldwideChat verzija {0}.
   wwctbOnSender: Omogućen je prijevod knjige. Desnom tipkom miša kliknite dok držite
     knjigu da biste je prevesti!
@@ -63,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Nije moguće provjeriti ima li najnovijih ažuriranja
     na Githubu.
   watsonNotFoundExceptionNotification: Nije moguće prevesti svoj unos dalje.
-  wwcConfigConversationWatsonAPIKeyInput: Trenutni API ključ je {0}. Unesite API ključ
-    za Watson ili upišite 0 da biste se vratili.
   wwctGUIStopButton: Zaustavi prevođenje
   wwcgTranslationStopped: Globalni prevod čavrljanja je zaustavljen.
   wwcUpdaterFutureDate: Ova instanca WorldwideChat ima veću verziju od najnovije javne.
@@ -74,12 +71,9 @@ Messages:
     Prijevod:'
   wwctsOnTarget: Potpisni prijevod omogućen za {0}.
   wwcConfigCacheDisabled: Prevodilac keš onemogućen.
-  wwcConfigConversationWatsonURLInput: Trenutni URL je {0}. Unesite URL servisa za
-    Watson ili upišite 0 da biste se vratili.
   wwcBookDone: Knjiga uspješno prevedena.
   wwctsOnSender: Omogućen je prijevod potpisa. Desnom tipkom miša kliknite znak da
     biste ga prevesti!
-  watsonColorCodeWarning: Upotreba kodova boja može vam dati nepredvidljive rezultate.
   wwctGUITranslationButton: Započnite prevođenje
   wwctGUIAutoDetectButton: Automatsko otkrivanje izvornog jezika
   wwcUpdaterUpToDate: WorldwideChat je ažuriran!
@@ -91,7 +85,6 @@ Messages:
   wwcPlayerNotFound: Player {0} pronađen.
   wwcUpdaterOutOfDateChat: WorldwideChat je zastario. Ažurirajte na najnoviju verziju.
   wwcConfigConversationRateLimitSuccess: Ograničenje stopa uspješno postavljen.
-  wwcConfigConversationWatsonURLSuccess: Watson URL je uspješno postavljen.
   wwctbPlayerNotFound: Player {0} nije pronađen ili nije aktivan prevoditelj.
   wwcConfigConversationTranslationCacheSuccess: Ograničenje predmemorije prijevoda
     uspješno postavljen.
@@ -110,7 +103,6 @@ Messages:
     na 0 sekundi...
   wwcSignTranslateStart: Prevođenje ciljnog znaka...
   wwcConfigGUIChatSettings: Konfiguracija chat
-  wwcConfigGUIWatsonURLButton: Promijenite URL usluge Watson
   wwcConfigConversationUpdateCheckerSuccess: Uspješno postavljena odgoda za provjeru
     ažuriranja.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globalni chat se prevodi iz {0}
@@ -128,7 +120,6 @@ Messages:
   wwcsAttemptedTranslations: 'Pokušaj prijevoda: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajni ključ postavljen
     uspješno.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API ključ uspješno postavljen.
   wwcRateLimit: Vaši prijevodi su ograničeni. Molimo pričekajte drugo {0} sekundi.
   wwcConfigCacheEnabled: Predmemorija prevoditelja omogućena je i postavljena na ograničenje
     {0}.
@@ -188,7 +179,6 @@ Messages:
   wwcInvalidTranslator: Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
     u svoj config.yml ili s /wwcc koristiti ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguracija'
-  wwcConfigGUIWatsonButton: Votsone
   wwcServerReloadWarning: WorldwideChat ne odobrava korištenje /ponovno učitavanje.
     Molimo vas da nastavite s oprezom.
   wwcConfigEnabledDebugMode: Omogućen način DEBUG. Ako niste programer ili alat za
@@ -303,10 +293,7 @@ Messages:
     Ponovno učitajte kako bi promjena stupila na snagu.
   wwcConfigYAMLDefault: Defaulted YAML za pohranu podataka.
   wwcConfigGUISQLMenuButton: Promjena SQL postavki
-  wwcConfigConversationWatsonTranslateToggleSuccess: Uspješno toggled Watson Translate.
-    Ponovno učitajte kako bi promjena stupila na snagu.
   wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Prijevod
   wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon Prijevod
   wwcConfigGUIStorageSettings: Konfiguracija memorije
   wwcConfigConversationAmazonTranslateToggleSuccess: Uspješno toggled Amazon Translate.
@@ -634,8 +621,6 @@ Messages:
     za chat.
   wwcConfigVaultSupportInvalid: Neispravna podrška za trezor postavljena u config.yml.
     Zadano na istinito...
-  wwcWatsonDeprecation: Watson je zastario i IBM ga više ne podržava. Razmislite o
-    prebacivanju jer će podrška za nju biti uklonjena u sljedećem ažuriranju.
   wwcConfigForceChatChannelEnabled: Za vrijeme svih prijevoda bit će prisiljen poseban
     kanal za prijevod.
   wwcConfigConversationSeparateChatChannelForceSuccess: Uspješno je prebacio forsiranje
@@ -711,4 +696,5 @@ Messages:
   wwcdResetNotif: WorldwideChat je resetovan. Ponovno učitavanje...
   wwcdResetNotifError: Nisu svi podaci uspješno izbrisani. Da li ste povezani sa svojom
     bazom podataka?
+  colorCodeWarning: Korištenje kodova boja može vam dati nepredvidive rezultate.
 

@@ -52,7 +52,6 @@ Messages:
   wwctPlayerNotFound: Ang manlalaro ng {0} ko natagpuan.
   wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
   wwcConfigConversationLangInvalid: Di-wastong code ng wika!
-  wwcConfigGUIWatsonAPIKeyButton: Baguhin ang Watson API Key
   wwcEnabled: Pinagana ang bersyong WorldwideChat {0}.
   wwctbOnSender: Pinagana ang pagsasalin ng aklat. Mag-right-click habang may hawak
     na isang libro upang isalin ito!
@@ -64,8 +63,6 @@ Messages:
   wwcUpdaterConnectionFailed: Hindi masuri ang mga pinakabagong update sa Github.
   watsonNotFoundExceptionNotification: Hindi na ma-translate ang iyong input sa anumang
     karagdagang.
-  wwcConfigConversationWatsonAPIKeyInput: Ang kasalukuyang API key ay {0}. Pakipasok
-    ang API key para sa Watson, o i-type ang 0 upang bumalik.
   wwctGUIStopButton: Itigil ang Pagsasalin
   wwcgTranslationStopped: Ang pagsasalin ng pandaigdigang chat ay tumigil.
   wwcUpdaterFutureDate: Ang halimbawang ito ng WorldwideChat ay may mas malaking bersyon
@@ -76,13 +73,9 @@ Messages:
     masyadong mahaba. Pagsasalin:'
   wwctsOnTarget: Pinagana ang pagsasalin ng pag-sign para sa {0}.
   wwcConfigCacheDisabled: Hindi pinagana ang cache ng tagasalin.
-  wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang
-    URL ng serbisyo para sa Watson, o i-type ang 0 upang bumalik.
   wwcBookDone: Book matagumpay na isinalin.
   wwctsOnSender: Pinagana ang pagsasalin ng pag-sign. Mag-right-click sa isang senyas
     upang isalin ito!
-  watsonColorCodeWarning: Ang paggamit ng mga code ng kulay ay maaaring magbigay sa
-    iyo ng mga hindi inaasahang resulta.
   wwctGUITranslationButton: Simulan ang Pagsasalin
   wwctGUIAutoDetectButton: Auto-detect Pinagmulan ng Wika
   wwcUpdaterUpToDate: Ang WorldwideChat ay napapanahon!
@@ -96,7 +89,6 @@ Messages:
     sa pinakabagong bersyon.
   wwcConfigConversationRateLimitSuccess: Matagumpay na itinakda ang limitasyon ng
     rate
-  wwcConfigConversationWatsonURLSuccess: Matagumpay na itinakda ang URL ng Watson.
   wwctbPlayerNotFound: Ang manlalarong {0} ay alinman sa hindi natagpuan, o hindi
     isang aktibong tagasalin.
   wwcConfigConversationTranslationCacheSuccess: Matagumpay na itinakda ang limitasyon
@@ -116,7 +108,6 @@ Messages:
     Default sa 0 segundo...
   wwcSignTranslateStart: Pagsasalin ng target sign...
   wwcConfigGUIChatSettings: Pagsasaayos ng Chat
-  wwcConfigGUIWatsonURLButton: Baguhin ang URL ng Serbisyo ng Watson
   wwcConfigConversationUpdateCheckerSuccess: Matagumpay na itinakda ang pagkaantala
     ng checker.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Ang pandaigdigang chat ay isinalin
@@ -135,8 +126,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tinangkang Pagsasalin: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Matagumpay na naka-set ang
     lihim na key ng Amazon.
-  wwcConfigConversationWatsonAPIKeySuccess: Matagumpay na itinakda ang key ng Watson
-    API.
   wwcRateLimit: Limitado ang rate ng iyong mga pagsasalin. Mangyaring maghintay ng
     isa pang segundo ang {0}.
   wwcConfigCacheEnabled: Pinagana ang cache ng tagasalin at nakatakda sa limitasyon
@@ -200,7 +189,6 @@ Messages:
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcConfigGUIEachTranslatorSettings: '{0} Pagsasaayos'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: Ang WorldwideChat ay hindi nagpapahintulot sa paggamit ng/reload.
     Mangyaring magpatuloy nang may pag-iingat.
   wwcConfigEnabledDebugMode: Pinagana ang DEBUG mode. Kung ikaw ay hindi isang developer
@@ -328,10 +316,7 @@ Messages:
     Translate. I-reload para magkabisa ang pagbabago.
   wwcConfigYAMLDefault: Defaulted sa YAML para sa imbakan ng data.
   wwcConfigGUISQLMenuButton: Baguhin ang Mga Setting ng SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Matagumpay na na-toggle ang Watson
-    Translate. I-reload para magkabisa ang pagbabago.
   wwcConfigGUIToggleGoogleTranslateButton: I-toggle ang Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: I-toggle ang Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: I-toggle ang Amazon Translate
   wwcConfigGUIStorageSettings: Configuration ng Imbakan
   wwcConfigConversationAmazonTranslateToggleSuccess: Matagumpay na na-toggle ang Amazon
@@ -708,8 +693,6 @@ Messages:
     sa chat event
   wwcConfigVaultSupportInvalid: Hindi wastong suporta sa vault na nakatakda sa config.yml.
     Pag-default sa totoo...
-  wwcWatsonDeprecation: Si Watson ay hindi na sinusuportahan ng IBM. Mangyaring isaalang-alang
-    ang paglipat, dahil ang suporta para dito ay tatanggalin sa susunod na pag-update.
   wwcConfigForceChatChannelEnabled: Ang isang hiwalay na channel ng pagsasalin ay
     pipilitin sa lahat ng mga pagsasalin.
   wwcConfigConversationSeparateChatChannelForceSuccess: Matagumpay na pinapilit ang
@@ -791,4 +774,6 @@ Messages:
   wwcdResetNotif: Ang WorldwideChat ay na-reset. Muling pag-load...
   wwcdResetNotifError: Hindi lahat ng data ay matagumpay na pinalis. Nakakonekta ka
     ba sa iyong database?
+  colorCodeWarning: Ang paggamit ng mga code ng kulay ay maaaring magbigay sa iyo
+    ng hindi inaasahan
 

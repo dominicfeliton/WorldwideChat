@@ -60,7 +60,6 @@ Messages:
   wwctiOffTarget: Aistriúchán Mír mhíchumas ar feadh {0}.
   wwctTranslationStopped: Tá do seisiún aistriúcháin a stopadh.
   wwcEntityTranslateNoName: Níl ainm saincheaptha ag an eintiteas.
-  wwcConfigGUIWatsonAPIKeyButton: Watson Athraigh API Eochair
   wwctrlRateLimitOffSender: Mhíchumas do teorainn ráta.
   wwctbOnSender: Aistriúchán leabhar cumasaithe. Right-click agus a bhfuil leabhar
     a aistriú é!
@@ -85,11 +84,7 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Athraigh Teorainn Ráta Domhanda
   wwctsOnTarget: Aistriúchán Sínigh cumasaithe le h {0}.
   wwcConfigCacheDisabled: Taisce Aistritheoir faoi mhíchumas.
-  wwcConfigConversationWatsonURLInput: Is é an URL reatha {0}. Cuir ionchur URL seirbhíse
-    do Watson, nó cineál 0 chun dul ar ais.
   wwcBookDone: Leabhar aistrithe go rathúil.
-  watsonColorCodeWarning: D'fhéadfadh baint úsáide as cóid datha torthaí intuartha
-    a thabhairt duit.
   wwctGUITranslationButton: Tosaigh Ag Aistriú
   wwcItemTranslateLoreStart: Aistriúchán seanchas na hítime sprioc...
   wwcUpdaterUpToDate: Tá WorldwideChat cothrom le dáta!
@@ -107,7 +102,6 @@ Messages:
   wwcConfigConversationRateLimitSuccess: Teorainn ráta atá leagtha go rathúil.
   wwctrlPlayerNotFound: Imreoir {0} nach bhfuil ceachtar le fáil, nó nach bhfuil aistritheoir
     gníomhach.
-  wwcConfigConversationWatsonURLSuccess: Watson URL leagtha go rathúil.
   wwctbPlayerNotFound: Imreoir {0} nach bhfuil ceachtar le fáil, nó nach bhfuil aistritheoir
     gníomhach.
   wwcConfigGUIResponseLimitButton: Athraigh Aistritheoir Freagra Teorainn Ama
@@ -123,7 +117,6 @@ Messages:
   wwctrlNotATranslator: Ní aistritheoir gníomhach thú! Bí cinnte go bhfuil tú a leagtar
     seo le/wwct.
   wwcConfigGUIChatSettings: Cumraíocht Comhrá
-  wwcConfigGUIWatsonURLButton: Athraigh URL Seirbhíse Watson
   wwcConfigConversationUpdateCheckerSuccess: Nuashonraigh moill seiceála a leagtar
     go rathúil.
   wwcConfigGUIMessagesOverrideCustomLabel: Teachtaireacht Nua
@@ -139,7 +132,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Athraigh Amazon Eochair Rúnda
   wwcInvalidTranslator: Suíomhanna aistritheora neamhbhailí. Le do thoil a shocrú
     seo i do config.yml nó le/wwcc a bhaint as an mbreiseán seo.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API eochair leagtha go rathúil.
   wwcConfigCacheEnabled: Taisce Aistritheoir cumasaithe agus a leagtar chun teorainn
     de {0}.
   wwcConfigConversationOverrideDeletionSuccess: Scriosadh sárú teachtaireachta saincheaptha.
@@ -166,7 +158,6 @@ Messages:
   wwcUpdaterFailedGeneric: Ní féidir nuashonruithe WorldwideChat a sheiceáil.
   wwctGUIMainMenuGlobal: Roghchlár Aistriúcháin Domhanda
   wwcItemTranslateTitleDone: Teideal mír aistrithe go rathúil.
-  wwcConfigGUIWatsonButton: Watson
   wwcConfigConversationPluginUpdateChatSuccess: Breiseán meabhrúchán comhrá cothrom
     le dáta toggled go rathúil.
   wwcsNotATranslator: Níl aon taifid ar fáil go fóill le h {0}.
@@ -223,8 +214,6 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: Seol Meabhrúchán Comhrá le haghaidh Nuashonruithe
     Breiseán
   wwcConfigGUIErrorLimitButton: Athraigh Teorainn Earráid Aistritheoir
-  wwcConfigConversationWatsonAPIKeyInput: Is é an eochair API atá ann faoi láthair
-    {0}. Cuir isteach eochair API do Watson, nó cineál 0 chun dul ar ais.
   wwcgTranslationStopped: Tá aistriúchán comhrá domhanda a stopadh.
   wwcConfigConversationCharacterLimitSuccess: Teorainn charachtair atá leagtha go
     rathúil.
@@ -321,10 +310,7 @@ Messages:
     a toggled. Athlódáil don athrú chun éifeacht a ghlacadh.
   wwcConfigYAMLDefault: Mainníodh chuig YAML le haghaidh stórála sonraí.
   wwcConfigGUISQLMenuButton: Athraigh Socruithe SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Go rathúil toggled Watson Translate.
-    Athlódáil don athrú chun éifeacht a ghlacadh.
   wwcConfigGUIToggleGoogleTranslateButton: Scoránaigh Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Aistríonn Scoránaigh Watson
   wwcConfigGUIToggleAmazonTranslateButton: Aistríonn Scoránaigh Amazon
   wwcConfigGUIStorageSettings: Cumraíocht stóráil
   wwcConfigConversationAmazonTranslateToggleSuccess: D'éirigh le toggled Amazon Translate.
@@ -672,8 +658,6 @@ Messages:
     comhrá.
   wwcConfigVaultSupportInvalid: Tacaíocht cruinneachán neamhbhailí atá leagtha síos
     i config.yml. Ag réamhshocrú go fíor...
-  wwcWatsonDeprecation: Tá Watson díscríofa agus ní thacaíonn IBM leis a thuilleadh.
-    Smaoinigh ar athrú, mar bainfear tacaíocht dó sa chéad nuashonrú eile.
   wwcConfigForceChatChannelEnabled: Cuirfear iallach ar chainéal aistriúcháin ar leithligh
     le linn gach aistriú
   wwcConfigConversationSeparateChatChannelForceSuccess: D'éirigh leis an gcainéal
@@ -748,4 +732,5 @@ Messages:
   wwcdResetNotif: Athshocraíodh WorldwideChat. Athluchtú...
   wwcdResetNotifError: Níor scriosadh gach sonraí go rathúil. An bhfuil tú ceangailte
     le do bhunachar sonraí?
+  colorCodeWarning: Féadfaidh úsáid cóid datha torthaí a thuar duit.
 

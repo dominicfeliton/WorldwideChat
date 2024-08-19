@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Pemain {0} tidak ditemui.
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
   wwcConfigConversationLangInvalid: Kod bahasa tidak sah!
-  wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
   wwcEnabled: Dibenarkan WorldwideChat versi {0}.
   wwctbOnSender: Terjemahan buku dibenarkan. Klik kanan sambil memegang buku untuk
     menterjemahkannya!
@@ -61,8 +60,6 @@ Messages:
   wwctsOffTarget: Daftar terjemahan dilumpuhkan untuk {0}.
   wwcUpdaterConnectionFailed: Tidak dapat menyemak kemaskini terkini di Github.
   watsonNotFoundExceptionNotification: Tidak dapat menterjemahkan input anda lagi.
-  wwcConfigConversationWatsonAPIKeyInput: Kekunci API semasa ialah {0}. Sila masukkan
-    kunci API untuk Watson, atau taip 0 untuk kembali.
   wwctGUIStopButton: Henti Menterjemah
   wwcgTranslationStopped: Terjemahan sembang global telah dihentikan.
   wwcUpdaterFutureDate: Contoh WorldwideChat ini mempunyai versi yang lebih besar
@@ -73,12 +70,8 @@ Messages:
     panjang. Terjemahan:'
   wwctsOnTarget: Daftar terjemahan dibenarkan untuk {0}.
   wwcConfigCacheDisabled: Cache penterjemah dilumpuhkan.
-  wwcConfigConversationWatsonURLInput: URL semasa ialah {0}. Sila masukkan URL perkhidmatan
-    untuk Watson, atau ketik 0 untuk kembali.
   wwcBookDone: Buku berjaya diterjemahkan.
   wwctsOnSender: Daftar terjemahan dibenarkan. Klik kanan pada tanda untuk menterjemahkannya!
-  watsonColorCodeWarning: Menggunakan kod warna boleh memberi anda hasil yang tidak
-    menentu.
   wwctGUITranslationButton: Mula Menterjemah
   wwctGUIAutoDetectButton: Pengesan Auto-Bahasa Sumber
   wwcUpdaterUpToDate: WorldWidChat up to date!
@@ -91,7 +84,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldWidChat sudah lapuk. Sila kemas kini kepada versi
     terkini.
   wwcConfigConversationRateLimitSuccess: Had kadar berjaya ditetapkan.
-  wwcConfigConversationWatsonURLSuccess: URL Watson berjaya ditetapkan.
   wwctbPlayerNotFound: Pemain {0} sama ada tidak ditemui, atau bukan penterjemah aktif.
   wwcConfigConversationTranslationCacheSuccess: Had cache terjemahan berjaya ditetapkan.
   wwctInvalidArgs: Argumen tidak sah disediakan!
@@ -109,7 +101,6 @@ Messages:
     0 saat...
   wwcSignTranslateStart: Menterjemah tanda sasaran...
   wwcConfigGUIChatSettings: Konfigurasi Sembang
-  wwcConfigGUIWatsonURLButton: Ubah URL Layanan Watson
   wwcConfigConversationUpdateCheckerSuccess: Kemaskini penangguhan pemeriksa berjaya
     ditetapkan.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Sembang global sedang diterjemahkan
@@ -127,7 +118,6 @@ Messages:
   wwcsAttemptedTranslations: 'Percubaan Terjemahan: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Kunci rahsia Amazon berjaya
     ditetapkan.
-  wwcConfigConversationWatsonAPIKeySuccess: Kekunci API Watson berjaya ditetapkan.
   wwcRateLimit: Terjemahan anda adalah kadar terhad. Sila tunggu yang lain {0} saat.
   wwcConfigCacheEnabled: Cache penterjemah dibenarkan dan tetapkan kepada had bagi
     {0}.
@@ -188,7 +178,6 @@ Messages:
   wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurasi'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tidak membenarkan penggunaan /reload. Sila
     teruskan dengan berhati-hati.
   wwcConfigEnabledDebugMode: Mod DEBUG diaktifkan. Jika Anda bukan pengembang atau
@@ -303,10 +292,7 @@ Messages:
     Muat semula untuk perubahan berkuatkuasa.
   wwcConfigYAMLDefault: Lalai kepada YAML untuk storan data.
   wwcConfigGUISQLMenuButton: Tukar Tetapan SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Berjaya menogol Watson Terjemah.
-    Muat semula untuk perubahan berkuatkuasa.
   wwcConfigGUIToggleGoogleTranslateButton: Togol Google Terjemah
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Terjemah
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Terjemah
   wwcConfigGUIStorageSettings: Konfigurasi Storan
   wwcConfigConversationAmazonTranslateToggleSuccess: Berjaya menogol Amazon Terjemah.
@@ -630,8 +616,6 @@ Messages:
     anda.
   wwcConfigVaultSupportInvalid: Sokongan peti besi tidak sah ditetapkan dalam config.yml.
     Lagi menjadi benar...
-  wwcWatsonDeprecation: Watson telah lama dan tidak lagi disokong oleh IBM. Sila pertimbangkan
-    untuk menukar, kerana sokongan untuknya akan dikeluarkan dalam kemas kini seterusnya.
   wwcConfigForceChatChannelEnabled: Saluran terjemahan yang berasingan akan dipaksa
     semasa semua terjemahan.
   wwcConfigConversationSeparateChatChannelForceSuccess: Berjaya beralih memaksa saluran
@@ -706,4 +690,6 @@ Messages:
   wwcdResetNotif: WorldwideChat telah ditetapkan semula. Memuatkan semula...
   wwcdResetNotifError: Tidak semua data berjaya dihapuskan. Adakah anda disambungkan
     ke pangkalan data anda?
+  colorCodeWarning: Menggunakan kod warna mungkin memberi anda hasil yang tidak dapat
+    diramalkan.
 

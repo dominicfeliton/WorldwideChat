@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: ක්රීඩකයා සොයාගත්තේ නැත.
   wwcConfigGUIAmazonTranslateRegionButton: ඇමසන් කලාපය වෙනස් කරන්න
   wwcConfigConversationLangInvalid: වලංගු නොවන භාෂා කේතය!
-  wwcConfigGUIWatsonAPIKeyButton: වොට්සන් API කී වෙනස්
   wwcEnabled: සක්‍රීය වර්ල්වයිඩ්හාට් අනුවාදය {0}.
   wwctbOnSender: පොත් පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා පොතක් තබා ගන්නා
     අතරතුර දකුණු-ක්ලික් කරන්න!
@@ -62,8 +61,6 @@ Messages:
     නොහැකි විය.
   watsonNotFoundExceptionNotification: ඔබගේ ආදානය තවදුරටත් පරිවර්තනය කිරීමට නොහැකි
     විය.
-  wwcConfigConversationWatsonAPIKeyInput: වත්මන් API යතුර {0} වේ. කරුණාකර වොට්සන්
-    සඳහා API යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwctGUIStopButton: පරිවර්තනය නවත්වන්න
   wwcgTranslationStopped: ගෝලීය චැට් පරිවර්තනය නතර කර ඇත.
   wwcUpdaterFutureDate: වර්ල්ඩ්වයිඩ්හාට් හි මෙම අවස්ථාව නවතම පොදු එකට වඩා විශාල අනුවාදයක්
@@ -73,12 +70,9 @@ Messages:
   wwcSignDeletedOrTooLong: 'ඉලක්ක ලකුණ එක්කෝ මකා දමන ලදී හෝ පරිවර්තනය දිගු විය. පරිවර්තනය:'
   wwctsOnTarget: '{0} සඳහා සංඥා පරිවර්තනය සක්රීය කර ඇත.'
   wwcConfigCacheDisabled: පරිවර්තක හැඹිලි අක්රීය කර ඇත.
-  wwcConfigConversationWatsonURLInput: වත්මන් URL එක {0} වේ. කරුණාකර වොට්සන් සඳහා
-    සේවා URL එකක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcBookDone: පොත සාර්ථකව පරිවර්තනය කර ඇත.
   wwctsOnSender: සංඥා පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා ලකුණක් මත දකුණු-ක්ලික්
     කරන්න!
-  watsonColorCodeWarning: වර්ණ කේත භාවිතා කිරීමෙන් ඔබට අනපේක්ෂිත ප්රතිඵල ලබා ගත හැකිය.
   wwctGUITranslationButton: පරිවර්තනය ආරම්භ කරන්න
   wwctGUIAutoDetectButton: ස්වයංක්රීය-හඳුනා මූලාශ්රය භාෂාව
   wwcUpdaterUpToDate: වර්ල්ඩ්වයිඩ්හාට් යාවත්කාලීනව පවතී!
@@ -91,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: වර්ල්ඩ්වයිඩ්හාට් දිනය ඉවරයි. කරුණාකර නවතම අනුවාදයට යාවත්කාලීන
     කරන්න.
   wwcConfigConversationRateLimitSuccess: අනුපාත සීමාව සාර්ථකව සකසා ඇත.
-  wwcConfigConversationWatsonURLSuccess: වොට්සන් URL එක සාර්ථකව සකසා ඇත.
   wwctbPlayerNotFound: '% ප්ලේයර් % මම එක්කෝ සොයාගත නොහැක, නැතහොත් ක්රියාකාරී පරිවර්තකයෙකු
     නොවේ.'
   wwcConfigConversationTranslationCacheSuccess: පරිවර්තන හැඹිලි සීමාව සාර්ථකව සකසා
@@ -112,7 +105,6 @@ Messages:
     හැරීම...
   wwcSignTranslateStart: ඉලක්කගත ලකුණ පරිවර්තනය කිරීම...
   wwcConfigGUIChatSettings: චැට් වින්යාසය
-  wwcConfigGUIWatsonURLButton: වොට්සන් සේවා URL එක වෙනස් කරන්න
   wwcConfigConversationUpdateCheckerSuccess: යාවත්කාලීන පිරික්සුම් ප්රමාදය සාර්ථකව
     සකසා ඇත.
   wwcGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් {0} සිට {1} වෙත පරිවර්තනය
@@ -130,7 +122,6 @@ Messages:
   wwcsAttemptedTranslations: 'පරිවර්තන සඳහා උත්සාහ කරන ලදී: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ඇමේසන් රහස් යතුර සාර්ථකව සකසා
     ඇත.
-  wwcConfigConversationWatsonAPIKeySuccess: වොට්සන් API ප්රධාන සාර්ථකව සකසා ඇත.
   wwcRateLimit: ඔබගේ පරිවර්තන අනුපාතය සීමිතය. කරුණාකර තත්පර ගණනක් බලා සිටින්න.
   wwcConfigCacheEnabled: පරිවර්තක හැඹිලි සක්රීය කර {0} සීමාවකට සකසා ඇත.
   wwctGUIExistingTranslationButton: වත්මන් පරිවර්තන සැසිය ලියන්න
@@ -189,7 +180,6 @@ Messages:
   wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
     ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
   wwcConfigGUIEachTranslatorSettings: '{0} වින්යාසය'
-  wwcConfigGUIWatsonButton: වොට්සන්
   wwcServerReloadWarning: වර්ල්ඩ්වයිඩ්හාට් භාවිතා කිරීම/රීලෝඩ් කිරීම සඳහා අනුකූල නොවේ.
     කරුණාකර පරෙස්සමින් ඉදිරියට යන්න.
   wwcConfigEnabledDebugMode: සක්රීය DEBUG මාදිලිය. ඔබ සංවර්ධකයෙකු හෝ දෝශ නිරාකරණකරුවෙකු
@@ -303,10 +293,7 @@ Messages:
     ක්රියාත්මක වන පරිදි වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
   wwcConfigYAMLDefault: දත්ත ගබඩා කිරීම සඳහා YAML වෙත ගෙවීම පැහැර හැර ඇත.
   wwcConfigGUISQLMenuButton: SQL සැකසුම් වෙනස් කරන්න
-  wwcConfigConversationWatsonTranslateToggleSuccess: සාර්ථකව ටොගල කළ වොට්සන් පරිවර්තනය.
-    ක්රියාත්මක වන පරිදි වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
   wwcConfigGUIToggleGoogleTranslateButton: ගූගල් පරිවර්තනය ටොගල් කරන්න
-  wwcConfigGUIToggleWatsonTranslateButton: ටොගල් කරන්න වොට්සන් පරිවර්තනය
   wwcConfigGUIToggleAmazonTranslateButton: ටොගල් කරන්න ඇමේසන් පරිවර්තනය
   wwcConfigGUIStorageSettings: ගබඩා වින්යාසය
   wwcConfigConversationAmazonTranslateToggleSuccess: සාර්ථකව ටොගල ඇමේසන් පරිවර්තනය.
@@ -630,8 +617,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: ඔබේ චැට් සිදුවීම් ප්රමුඛතාවය සාර්ථකව සකසන්න.
   wwcConfigVaultSupportInvalid: config.yml හි අවලංගු සුරක්ෂිතගාර සහාය සකසා ඇත. සැබෑවක්
     බවට පත් කිරීම...
-  wwcWatsonDeprecation: වොට්සන් අවලංගු කර ඇති අතර තවදුරටත් IBM විසින් සහාය නොදක්වයි.
-    කරුණාකර මාරුවීම සලකා බලන්න, එය සඳහා සහාය ඊළඟ යාවත්කාලීන කිරීමේදී ඉවත් කරනු ඇත.
   wwcConfigForceChatChannelEnabled: සියලුම පරිවර්තන අතරතුර වෙනම පරිවර්තන නාලිකාවක්
     බල කෙරෙනු ඇත.
   wwcConfigConversationSeparateChatChannelForceSuccess: වෙනම නාලිකාවට බල කරමින් සාර්ථකව
@@ -702,4 +687,5 @@ Messages:
   wwcdResetNotif: වර්ල්ඩ්වයිඩ්චැට් නැවත සකස් කර ඇත. නැවත පැටවීම...
   wwcdResetNotifError: සියලුම දත්ත සාර්ථකව අතුගා දැමුවේ නැත. ඔබ ඔබේ දත්ත සමුදායට සම්බන්ධ
     වී තිබේද?
+  colorCodeWarning: වර්ණ කේත භාවිතා කිරීමෙන් ඔබට අනපේක්ෂිත ප්රතිඵල ලබා දිය හැකිය.
 

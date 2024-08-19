@@ -41,7 +41,6 @@ Messages:
   wwctPlayerNotFound: プレイヤー {0} が見つかりません。
   wwcConfigGUIAmazonTranslateRegionButton: Amazonリージョンの変更
   wwcConfigConversationLangInvalid: 言語コードが無効です！
-  wwcConfigGUIWatsonAPIKeyButton: ワトソン API キーの変更
   wwcEnabled: WorldwideChat バージョン {0} を有効にしました。
   wwctbOnSender: 本の翻訳が有効になりました。本を押しながら右クリックすると翻訳できます！
   wwcListenersInitialized: 初期化されたリスナー。
@@ -50,8 +49,6 @@ Messages:
   wwctsOffTarget: '{0} の署名変換は無効です。'
   wwcUpdaterConnectionFailed: Githubで最新のアップデートを確認できません。
   watsonNotFoundExceptionNotification: 入力内容はこれ以上翻訳できません。
-  wwcConfigConversationWatsonAPIKeyInput: 現在の API キーは {0} です。Watson の API キーを入力するか、0
-    を入力して戻してください。
   wwctGUIStopButton: 翻訳をやめる
   wwcgTranslationStopped: グローバルチャットの翻訳が停止されました。
   wwcUpdaterFutureDate: このWorldwideChatのインスタンスは、最新のパブリックバージョンよりも大きなバージョンを持っています。
@@ -60,11 +57,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'ターゲット記号が削除されたか、翻訳が長すぎます。翻訳:'
   wwctsOnTarget: 署名翻訳は {0} に対して有効になっています。
   wwcConfigCacheDisabled: トランスレータキャッシュが無効になりました。
-  wwcConfigConversationWatsonURLInput: 現在の URL は {0} です。Watson のサービスの URL を入力するか、0
-    を入力して戻ってください。
   wwcBookDone: 本が正常に翻訳されました。
   wwctsOnSender: 署名変換が有効になりました。それを翻訳するサインを右クリックしてください！
-  watsonColorCodeWarning: カラーコードを使用すると、予測できない結果になることがあります。
   wwctGUITranslationButton: 翻訳を開始
   wwctGUIAutoDetectButton: ソース言語を自動検出
   wwcUpdaterUpToDate: WorldwideChat は最新です！
@@ -76,7 +70,6 @@ Messages:
   wwcPlayerNotFound: プレイヤー {0} が見つかりません。
   wwcUpdaterOutOfDateChat: WorldwideChatは廃れてる最新バージョンにアップデートしてください。
   wwcConfigConversationRateLimitSuccess: レート制限が正常に設定されました。
-  wwcConfigConversationWatsonURLSuccess: ワトソン URL が正常に設定されました。
   wwctbPlayerNotFound: Player {0} が見つからないか、アクティブなトランスレータではありません。
   wwcConfigConversationTranslationCacheSuccess: 変換キャッシュ制限が正常に設定されました。
   wwctInvalidArgs: 無効な引数が指定されました！
@@ -93,7 +86,6 @@ Messages:
   wwcConfigRateLimitInvalid: config.yml に設定されているレート制限が正しくありません。デフォルトは0秒です...
   wwcSignTranslateStart: ターゲット記号を翻訳しています...
   wwcConfigGUIChatSettings: チャットの設定
-  wwcConfigGUIWatsonURLButton: ワトソンサービスの URL の変更
   wwcConfigConversationUpdateCheckerSuccess: アップデートチェッカーの遅延が正常に設定されました。
   wwcGlobalOnJoinTranslationNotificationSourceLang: グローバルチャットは {0} から {1} に翻訳されています。
   wwcConfigGUITranslatorSettings: トランスレータの構成
@@ -106,7 +98,6 @@ Messages:
   wwcVersion: WorldwideChat、バージョン
   wwcsAttemptedTranslations: '試行された翻訳: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon シークレットキーが正常に設定されました。
-  wwcConfigConversationWatsonAPIKeySuccess: ワトソン API キーが正常に設定されました。
   wwcRateLimit: 翻訳はレート制限されています。もう {0} 秒お待ちください。
   wwcConfigCacheEnabled: トランスレータキャッシュを有効にし、上限 {0}に設定しました。
   wwctGUIExistingTranslationButton: 現在の変換セッションを上書き
@@ -152,7 +143,6 @@ Messages:
   wwctiOnTarget: '{0} のアイテム翻訳が有効になりました。'
   wwcInvalidTranslator: トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。
   wwcConfigGUIEachTranslatorSettings: '{0} 構成'
-  wwcConfigGUIWatsonButton: ワトソン
   wwcServerReloadWarning: WorldwideChat は /reload の使用を容認しません。注意して進めてください。
   wwcConfigEnabledDebugMode: デバッグモードを有効にしました。開発者またはトラブルシューティングツールでない場合は、これをオフにする必要があります。
   wwcTranslatorErrorThresholdReached: エラーしきい値に達しました。このプラグインはリロードし、すべての翻訳者を無効にします。
@@ -241,9 +231,7 @@ Messages:
   wwcConfigConversationGoogleTranslateToggleSuccess: Google翻訳が正常に切り替わりました。リロードして変更を有効にします。
   wwcConfigYAMLDefault: データストレージのデフォルトは YAML です。
   wwcConfigGUISQLMenuButton: SQL 設定の変更
-  wwcConfigConversationWatsonTranslateToggleSuccess: ワトソン翻訳が正常に切り替わりました。リロードして変更を有効にします。
   wwcConfigGUIToggleGoogleTranslateButton: グーグル翻訳の切り替え
-  wwcConfigGUIToggleWatsonTranslateButton: ワトソン翻訳の切り替え
   wwcConfigGUIToggleAmazonTranslateButton: Amazon翻訳の切り替え
   wwcConfigGUIStorageSettings: ストレージ構成
   wwcConfigConversationAmazonTranslateToggleSuccess: Amazon翻訳が正常に切り替わりました。リロードして変更を有効にします。
@@ -491,7 +479,6 @@ Messages:
   wwcConfigConversationChatPriorityBadInput: チャットの優先度入力が不正です!もう一度試してください。
   wwcConfigConversationChatPrioritySuccess: チャットイベントの優先度が正常に設定されました。
   wwcConfigVaultSupportInvalid: config.yml に設定されているボールトサポートが無効です。デフォルトは true に設定されています...
-  wwcWatsonDeprecation: Watsonは廃止され、IBMによるサポートは終了しました。次回の更新ではサポートされなくなるため、切り替えを検討してください。
   wwcConfigForceChatChannelEnabled: すべての翻訳中に、個別の翻訳チャネルが強制されます。
   wwcConfigConversationSeparateChatChannelForceSuccess: 強制的にチャンネルを強制的に切り替えることに成功しました。
   wwcConfigConversationChannelIconInput: 独立した翻訳チャンネルの現在のアイコンは {0} です。カラーコードがサポートされています。0
@@ -544,4 +531,5 @@ Messages:
   wwcdResetWarn: 警告:このコマンドは、レコードやアクティブな翻訳者を含むすべてのデータを完全にリセットします。何をしているのか分からない限り、このコマンドを実行しないでください:{0}
   wwcdResetNotif: ワールドワイドチャットがリセットされました。リロード中...
   wwcdResetNotifError: すべてのデータが正常に消去されたわけではありません。データベースに接続していますか?
+  colorCodeWarning: カラーコードを使用すると、予期しない結果になることがあります。
 

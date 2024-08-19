@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: بازیکن {0} یافت نشد.
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
   wwcConfigConversationLangInvalid: کد زبان نامعتبر!
-  wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WorldwideChat را فعال کنید {0}.
   wwctbOnSender: ترجمه کتاب فعال شد. هنگام نگه داشتن یک کتاب برای ترجمه آن راست کلیک
     کنید!
@@ -61,8 +60,6 @@ Messages:
   wwctsOffTarget: امضای ترجمه برای {0} غیرفعال شد.
   wwcUpdaterConnectionFailed: قادر به بررسی برای آخرین به روز رسانی در گیتهاب.
   watsonNotFoundExceptionNotification: دیگر قادر به ترجمه ورودی شما نیست.
-  wwcConfigConversationWatsonAPIKeyInput: کلید فعلی API، {0} است. لطفا یک کلید API
-    برای واتسون وارد کنید، یا برای بازگشت به عقب، نوع 0 را تایپ کنید.
   wwctGUIStopButton: ترجمه را متوقف کنید
   wwcgTranslationStopped: ترجمه جهانی چت متوقف شده است.
   wwcUpdaterFutureDate: این نمونه از WorldwideChat نسخه بزرگتری نسبت به آخرین نسخه
@@ -72,12 +69,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'علامت هدف یا حذف شد و یا ترجمه بیش از حد طولانی بود. ترجمه:'
   wwctsOnTarget: امضای ترجمه برای {0} فعال شد.
   wwcConfigCacheDisabled: حافظه پنهان مترجم غیرفعال شد.
-  wwcConfigConversationWatsonURLInput: URL فعلی {0} است. لطفا یک نشانی وب سرویس برای
-    واتسون وارد کنید، یا 0 را برای بازگشت تایپ کنید.
   wwcBookDone: کتاب با موفقیت ترجمه شد.
   wwctsOnSender: امضای ترجمه فعال شد. راست کلیک بر روی علامت برای ترجمه آن!
-  watsonColorCodeWarning: با استفاده از کدهای رنگ ممکن است نتایج غیر قابل پیش بینی
-    به شما بدهد.
   wwctGUITranslationButton: ترجمه را شروع کنید
   wwctGUIAutoDetectButton: زبان منبع شناسایی خودکار
   wwcUpdaterUpToDate: WorldwideChat به روز است!
@@ -90,7 +83,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat از تاریخ گذشته است. لطفا به آخرین نسخه به
     روز رسانی.
   wwcConfigConversationRateLimitSuccess: حد مجاز تعیین شده با موفقیت.
-  wwcConfigConversationWatsonURLSuccess: نشانی وب واتسون با موفقیت تنظیم شد.
   wwctbPlayerNotFound: بازیکن {0} یا یافت نشد، یا مترجم فعال نیست.
   wwcConfigConversationTranslationCacheSuccess: محدودیت حافظه پنهان ترجمه با موفقیت
     تنظیم شده است.
@@ -108,7 +100,6 @@ Messages:
   wwcConfigRateLimitInvalid: حد مجاز نرخ بد مجموعه ای در config.yml. قصور به 0 ثانیه...
   wwcSignTranslateStart: ترجمه علامت هدف...
   wwcConfigGUIChatSettings: پیکربندی گپ
-  wwcConfigGUIWatsonURLButton: تغییر نشانی وب سرویس واتسون
   wwcConfigConversationUpdateCheckerSuccess: به روز رسانی تاخیر جستجوگر با موفقیت
     تنظیم شده است.
   wwcGlobalOnJoinTranslationNotificationSourceLang: چت سراسری از {0} به {1} ترجمه
@@ -125,7 +116,6 @@ Messages:
   wwcsAttemptedTranslations: 'ترجمه های تلاش شده: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: کلید مخفی آمازون با موفقیت
     تنظیم شده است.
-  wwcConfigConversationWatsonAPIKeySuccess: کلید API واتسون با موفقیت.
   wwcRateLimit: ترجمه شما نرخ محدود. لطفا دیگر صبر کنید {0} ثانیه.
   wwcConfigCacheEnabled: کش مترجم فعال شده و روی محدود {0} تنظیم شده است.
   wwctGUIExistingTranslationButton: بازنویسی نشست فعلی ترجمه
@@ -184,7 +174,6 @@ Messages:
   wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml یا با /wcc
     خود برای استفاده از این افزونه تعمیر کنید.
   wwcConfigGUIEachTranslatorSettings: '{0} پیکربندی'
-  wwcConfigGUIWatsonButton: واتسون
   wwcServerReloadWarning: WorldwideChat استفاده از /بارگذاری مجدد را نادیده نمی گیرد.
     لطفا با احتياط ادامه بديد
   wwcConfigEnabledDebugMode: حالت اشکال زدایی را فعال کنید. اگر شما یک توسعه دهنده
@@ -298,10 +287,7 @@ Messages:
     کرد. بازنگری برای تغییر به اثر.
   wwcConfigYAMLDefault: برای ذخیره سازی داده ها به YAML پیش فرض شده است.
   wwcConfigGUISQLMenuButton: تغییر تنظیمات SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: با موفقیت ترجمه واتسون را جابجا
-    کرد. بازنگری برای تغییر به اثر.
   wwcConfigGUIToggleGoogleTranslateButton: ضامن گوگل ترجمه
-  wwcConfigGUIToggleWatsonTranslateButton: ضامن ترجمه واتسون
   wwcConfigGUIToggleAmazonTranslateButton: ضامن آمازون ترجمه
   wwcConfigGUIStorageSettings: پیکربندی ذخیره سازی
   wwcConfigConversationAmazonTranslateToggleSuccess: با موفقیت ترجمه آمازون را جابجا
@@ -632,8 +618,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: اولویت رویداد چت خود را با موفقیت تنظیم
   wwcConfigVaultSupportInvalid: پشتیبانی از خزانه نامعتبر در config.yml تنظیم شده
     است. پیش فرض به واقعی...
-  wwcWatsonDeprecation: واتسون منسوخ شده است و دیگر توسط IBM پشتیبانی نمی شود. لطفا
-    تغییر را در نظر بگیرید، زیرا پشتیبانی از آن در به روز رسانی بعدی حذف خواهد شد.
   wwcConfigForceChatChannelEnabled: یک کانال ترجمه جداگانه در طول تمام ترجمه ها اجباری
     خواهد شد.
   wwcConfigConversationSeparateChatChannelForceSuccess: با موفقیت وادار کردن کانال
@@ -705,4 +689,6 @@ Messages:
   wwcdResetNotif: WorldwideChat بازنشانی شده است. بارگیری مجدد...
   wwcdResetNotifError: همه داده ها با موفقیت پاک نشد. آیا به پایگاه داده خود متصل
     هستید؟
+  colorCodeWarning: استفاده از کدهای رنگ ممکن است نتایج غیر قابل پیش بینی به شما ارائه
+    دهد.
 

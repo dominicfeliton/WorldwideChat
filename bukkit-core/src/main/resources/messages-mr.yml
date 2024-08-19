@@ -57,7 +57,6 @@ Messages:
   wwctiOffTarget: '{0} करीता आयटम भाषांतर अकार्यान्वीत केले आहे.'
   wwctTranslationStopped: तुमचे भाषांतर सत्र थांबविले गेले आहे.
   wwcEntityTranslateNoName: अस्तित्व सानुकूल नाव नाही.
-  wwcConfigGUIWatsonAPIKeyButton: वॉटसन API की बदला
   wwctrlRateLimitOffSender: तुमची दर मर्यादा अक्षम केली.
   wwctbOnSender: पुस्तक अनुवाद सक्षम. भाषांतर करण्यासाठी पुस्तक धारण करताना उजवे-क्लिक
     करा!
@@ -80,10 +79,7 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: जागतिक दर मर्यादा बदला
   wwctsOnTarget: '{0} करीता साइन भाषांतर कार्यान्वीत केले आहे.'
   wwcConfigCacheDisabled: अनुवादक कॅशे अक्षम.
-  wwcConfigConversationWatsonURLInput: वर्तमान URL {0} आहे कृपया वॉटसनसाठी सेवा URL
-    इनपुट करा, किंवा परत जाण्यासाठी 0 टाइप करा.
   wwcBookDone: पुस्तक यशस्वीरित्या अनुवादित.
-  watsonColorCodeWarning: रंग कोड वापरून आपण गाठता परिणाम देऊ शकता.
   wwctGUITranslationButton: भाषांतर करणे प्रारंभ करा
   wwcItemTranslateLoreStart: लक्ष्य आयटमचे भाषांतर करीत आहे...
   wwcUpdaterUpToDate: वर्ल्डवाइडचॅट अद्ययावत आहे!
@@ -100,7 +96,6 @@ Messages:
     करा.
   wwcConfigConversationRateLimitSuccess: दर मर्यादा यशस्वीरित्या सेट.
   wwctrlPlayerNotFound: Player {0} एकतर आढळले नाही, किंवा सक्रीय अनुवादक नाही.
-  wwcConfigConversationWatsonURLSuccess: वॉटसन URL यशस्वीरित्या सेट.
   wwctbPlayerNotFound: Player {0} एकतर आढळले नाही, किंवा सक्रीय अनुवादक नाही.
   wwcConfigGUIResponseLimitButton: अनुवादक प्रतिसाद टाइमआउट बदला
   wwcConfigGUIPrefixButton: प्लगइन उपसर्ग बदला
@@ -114,7 +109,6 @@ Messages:
   wwctrlNotATranslator: आपण सक्रिय अनुवादक नाही! आपण /wwct/wwctसह सेट केले आहे याची
     खात्री करा.
   wwcConfigGUIChatSettings: चॅट कॉन्फिगरेशन
-  wwcConfigGUIWatsonURLButton: वॉटसन सेवा URL बदला
   wwcConfigConversationUpdateCheckerSuccess: अद्यतन तपासक विलंब यशस्वीरित्या सेट.
   wwcConfigGUIMessagesOverrideCustomLabel: नवीन संदेश
   wwcGUITempItem: आयटम प्रदर्शन
@@ -128,7 +122,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: ऍमेझॉन गुप्त की बदला
   wwcInvalidTranslator: अवैध अनुवादक सेटिंग्ज. कृपया हे प्लगइन वापरण्यासाठी आपल्या
     config.yml मध्ये किंवा /wwcc सह याचे निराकरण करा.
-  wwcConfigConversationWatsonAPIKeySuccess: वॉटसन API की संच यशस्वीरित्या.
   wwcConfigCacheEnabled: अनुवादक कॅशे सक्षम केले व {0} च्या मर्यादेस सेट केले आहे.
   wwcConfigConversationOverrideDeletionSuccess: सानुकूल संदेश अधिलिखित हटविले गेले
     आहे.
@@ -155,7 +148,6 @@ Messages:
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतने तपासण्यात अक्षम.
   wwctGUIMainMenuGlobal: ग्लोबल भाषांतर मेनू
   wwcItemTranslateTitleDone: अनुवादित आयटम शीर्षक यशस्वीरित्या.
-  wwcConfigGUIWatsonButton: वॉटसन
   wwcConfigConversationPluginUpdateChatSuccess: प्लगइन अपडेट गप्पा स्मरणपत्र यशस्वीरित्या
     टॉगल केले.
   wwcsNotATranslator: '{0} साठी अद्याप कोणतेही रेकॉर्ड उपलब्ध नाहीत.'
@@ -208,8 +200,6 @@ Messages:
   wwcEnabled: वर्ल्डवाइडचॅट आवृत्ती {0} सक्षम केले.
   wwcConfigGUIPluginUpdateChatButton: प्लगइन अद्यतनांसाठी चॅट रिमाइंडर पाठवा
   wwcConfigGUIErrorLimitButton: अनुवादक त्रुटी मर्यादा बदला
-  wwcConfigConversationWatsonAPIKeyInput: वर्तमान API कि {0} आहे. कृपया वॉटसनसाठी
-    API की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
   wwcgTranslationStopped: ग्लोबल चॅट भाषांतर थांबविले गेले आहे.
   wwcConfigConversationCharacterLimitSuccess: अक्षर मर्यादा यशस्वीरित्या सेट.
   wwcItemTranslateTitleStock: मुलभूत आयटम नावे अनुवाद करण्यास असमर्थ.
@@ -300,10 +290,7 @@ Messages:
     केले. बदल प्रभावी होण्यासाठी रीलोड करा.
   wwcConfigYAMLDefault: डेटा स्टोरेजसाठी YAML वर डीफॉल्ट.
   wwcConfigGUISQLMenuButton: SQL सेटिंग्ज बदला
-  wwcConfigConversationWatsonTranslateToggleSuccess: यशस्वीरित्या टॉगल वॉटसन भाषांतर.
-    बदल प्रभावी होण्यासाठी रीलोड करा.
   wwcConfigGUIToggleGoogleTranslateButton: गूगल भाषांतर टॉगल करा
-  wwcConfigGUIToggleWatsonTranslateButton: टॉगल वॉटसन भाषांतर
   wwcConfigGUIToggleAmazonTranslateButton: ऍमेझॉन भाषांतर टॉगल करा
   wwcConfigGUIStorageSettings: स्टोरेज संरचना
   wwcConfigConversationAmazonTranslateToggleSuccess: यशस्वीरित्या ऍमेझॉन भाषांतर toggled.
@@ -616,8 +603,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: आपले चॅट इव्हेंट प्राधान्य य
   wwcConfigVaultSupportInvalid: config.yml मध्ये अवैध वॉल्ट समर्थन सेट केले आहे. खरे
     म्हणून डीफॉल्ट करणे...
-  wwcWatsonDeprecation: वॉटसन नष्ट केले गेले आहे आणि आता आयबीएमने समर्थित नाही. कृपया
-    स्विच करण्याचा विचार करा, कारण पुढील अद्यतनात त्यासाठी समर्थन काढून
   wwcConfigForceChatChannelEnabled: सर्व भाषांतर दरम्यान एक स्वतंत्र भाषांतर चॅनेल
   wwcConfigConversationSeparateChatChannelForceSuccess: यशस्वीरित्या स्वतंत्र चॅनेलला
     जब
@@ -682,4 +667,5 @@ Messages:
     काय करत आहात हे माहित नाही तोपर्यंत ही आदेश चालवू नका: {0}'
   wwcdResetNotif: वर्ल्डविडचॅट रीसेट केले गेले आहे. रीलोड करत आहे...
   wwcdResetNotifError: सर्व डेटा यशस्वीरित्या हटविला तुम्ही आपल्या डेटाबेसशी कनेक्ट
+  colorCodeWarning: रंग कोड वापरणे आपल्याला अनिश्चित परिणाम देऊ
 

@@ -55,9 +55,6 @@ Chat:
     hoverFormat: "&o{local:wwcOrigHover}:"
     force: false
 Translator:
-  useWatsonTranslate: true
-  watsonAPIKey: watson_key_goes_here
-  watsonURL: watson_site_goes_here
   useGoogleTranslate: false
   googleTranslateAPIKey: google_translate_key_goes_here
   useAmazonTranslate: false

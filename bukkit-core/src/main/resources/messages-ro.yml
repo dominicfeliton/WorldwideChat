@@ -52,7 +52,6 @@ Messages:
   wwctPlayerNotFound: Jucătorul {0} am găsit.
   wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
   wwcConfigConversationLangInvalid: Cod de limbă nevalid!
-  wwcConfigGUIWatsonAPIKeyButton: Modificare cheie API Watson
   wwcEnabled: Versiune WorldwideChat activată.
   wwctbOnSender: Traducerea cărţii activată. Faceți clic dreapta în timp ce țineți
     o carte pentru ao traduce!
@@ -64,8 +63,6 @@ Messages:
   wwcUpdaterConnectionFailed: Imposibil de verificat pentru cele mai recente actualizări
     pe Github.
   watsonNotFoundExceptionNotification: Imposibil de tradus intrările dvs. mai departe.
-  wwcConfigConversationWatsonAPIKeyInput: Tasta API curentă este {0}. Introduceți
-    o cheie API pentru Watson sau tastați 0 pentru a reveni.
   wwctGUIStopButton: Opriți traducerea
   wwcgTranslationStopped: Traducerea globală a chat-ului a fost oprită.
   wwcUpdaterFutureDate: Această instanță a WorldwideChat are o versiune mai mare decât
@@ -76,13 +73,9 @@ Messages:
     lungă. Traducere:'
   wwctsOnTarget: Semnează traducerea activată pentru {0}.
   wwcConfigCacheDisabled: Cache traducător dezactivat.
-  wwcConfigConversationWatsonURLInput: Adresa URL curentă este {0}. Introduceți un
-    URL de serviciu pentru Watson sau tastați 0 pentru a reveni.
   wwcBookDone: Cartea tradusă cu succes.
   wwctsOnSender: Traducerea semnelor activată. Faceți clic dreapta pe un semn pentru
     ao traduce!
-  watsonColorCodeWarning: Utilizarea codurilor de culoare vă poate oferi rezultate
-    imprevizibile.
   wwctGUITranslationButton: Începeți traducerea
   wwctGUIAutoDetectButton: Detectare automată limbă sursă
   wwcUpdaterUpToDate: WorldwideChat este la zi!
@@ -95,7 +88,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat este expirat. Vă rugăm să actualizați la
     cea mai recentă versiune.
   wwcConfigConversationRateLimitSuccess: Limita de rată stabilită cu succes.
-  wwcConfigConversationWatsonURLSuccess: Watson URL setat cu succes.
   wwctbPlayerNotFound: Jucătorul {0} fie nu este găsit, fie nu este un traducător
     activ.
   wwcConfigConversationTranslationCacheSuccess: Limita cache de traducere setată cu
@@ -115,7 +107,6 @@ Messages:
     la 0 secunde...
   wwcSignTranslateStart: Traduc semnul ţintă...
   wwcConfigGUIChatSettings: Configurare chat
-  wwcConfigGUIWatsonURLButton: Schimbare URL serviciu Watson
   wwcConfigConversationUpdateCheckerSuccess: Actualizare verificare întârziere setată
     cu succes.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Chatul global este tradus din
@@ -134,7 +125,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tentative de traduceri: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Cheia secretă Amazon a fost
     stabilită cu succes.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API a fost setată cu succes.
   wwcRateLimit: Traducerile dvs. sunt limitate la tarife. Vă rugăm să așteptați un
     alt {0} secunde.
   wwcConfigCacheEnabled: Memoria cache a traducătorului este activată și setată la
@@ -197,7 +187,6 @@ Messages:
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
   wwcConfigGUIEachTranslatorSettings: Configurare {0}
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat nu acceptă utilizarea /reload. Vă rugăm să
     procedați cu prudență
   wwcConfigEnabledDebugMode: Modul DEBUG activat. Dacă nu sunteți dezvoltator sau
@@ -317,10 +306,7 @@ Messages:
     Reîncărcați pentru ca modificarea să aibă efect.
   wwcConfigYAMLDefault: Responsabilitate la YAML pentru stocarea datelor.
   wwcConfigGUISQLMenuButton: Modificarea setărilor SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Comutată cu succes Watson Translate.
-    Reîncărcați pentru ca modificarea să aibă efect.
   wwcConfigGUIToggleGoogleTranslateButton: Comută Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Comută Watson Traducere
   wwcConfigGUIToggleAmazonTranslateButton: Comută Amazon Translate
   wwcConfigGUIStorageSettings: Configurare stocare
   wwcConfigConversationAmazonTranslateToggleSuccess: Comutată cu succes Amazon Translate.
@@ -670,9 +656,6 @@ Messages:
     de chat.
   wwcConfigVaultSupportInvalid: Suport seif nevalid setat în config.yml. Implicit
     la adevărat...
-  wwcWatsonDeprecation: Watson a fost învechit și nu mai este acceptat de IBM. Vă
-    rugăm să luați în considerare comutarea, deoarece suportul pentru acesta va fi
-    eliminat în următoarea actualizare.
   wwcConfigForceChatChannelEnabled: Un canal de traducere separat va fi forțat în
     timpul tuturor traducerilor.
   wwcConfigConversationSeparateChatChannelForceSuccess: Comutat cu succes forțând
@@ -751,4 +734,5 @@ Messages:
   wwcdResetNotif: WorldwideChat a fost resetat. Reîncarcă...
   wwcdResetNotifError: Nu toate datele au fost șterse cu succes. Sunteți conectat
     la baza dvs. de date?
+  colorCodeWarning: Utilizarea codurilor de culoare vă poate oferi rezultate imprevizibile.
 

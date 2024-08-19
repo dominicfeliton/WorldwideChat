@@ -78,7 +78,6 @@ public class CommonRefs {
 		translatorPairs.put("Translator.useAmazonTranslate", "Amazon Translate");
 		translatorPairs.put("Translator.useLibreTranslate", "Libre Translate");
 		translatorPairs.put("Translator.useDeepLTranslate", "DeepL Translate");
-		translatorPairs.put("Translator.useWatsonTranslate", "Watson");
 		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
 		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
 		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
@@ -657,17 +656,6 @@ public class CommonRefs {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 
 		switch (translatorName) {
-			case "Watson":
-				WatsonTranslation watsonInstance;
-				if (isInitializing) {
-					watsonInstance = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-							mainConfig.getString("Translator.watsonURL"), true, main.getCallbackExecutor());
-				} else {
-					watsonInstance = new WatsonTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = watsonInstance.useTranslator();
-				break;
 			case "Google Translate":
 				GoogleTranslation googleTranslateInstance;
 				if (isInitializing) {
@@ -942,8 +930,6 @@ public class CommonRefs {
 	  */
 	private boolean isErrorToIgnore(Throwable throwable) {
 		// TOOD: Make sure this works properly again
-		// same as target == Watson
-		// detect the source language == Watson
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
 		if (exceptionMessage == null) {
 			// Usually just a timeout error. If a user gets this frequently they'll know something's wrong anyways
@@ -987,7 +973,7 @@ public class CommonRefs {
 		if ((inMessage.contains("&") && main.isActiveTranslator(currPlayer) && !(main.getActiveTranslator(currPlayer)
 						.getCCWarning()))) // check if user has already been sent CC warning
 		{
-			sendFancyMsg("watsonColorCodeWarning", "", "&d&o", currPlayer);
+			sendFancyMsg("colorCodeWarning", "", "&d&o", currPlayer);
 			main.getActiveTranslator(currPlayer)
 					.setCCWarning(true);
 			// we're still gonna translate it but it won't look pretty

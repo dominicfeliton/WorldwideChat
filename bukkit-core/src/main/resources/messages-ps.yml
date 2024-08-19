@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
   wwcConfigConversationLangInvalid: ناسم ژبه کوډ!
-  wwcConfigGUIWatsonAPIKeyButton: د واټسن API کیلي بدل کړئ
   wwcEnabled: فعال شوی WorldwideChat نسخه {0}.
   wwctbOnSender: د کتاب ژباړې فعال شو. د هغې د ژباړې لپاره د کتاب ساتلو په وخت کې
     ښي کلیک وکړئ!
@@ -61,8 +60,6 @@ Messages:
   wwctsOffTarget: .I لپاره ژباړه ناتوانول شوی
   wwcUpdaterConnectionFailed: په ګیتاب کې د وروستیو اوسمهالونو لپاره د کتلو توان نلري.
   watsonNotFoundExceptionNotification: نور ستاسو د انډول ژباړلو توان نلري.
-  wwcConfigConversationWatsonAPIKeyInput: اوسنی API کیلۍ {0} دی. مهرباني وکړئ د واټسن
-    لپاره د API کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwctGUIStopButton: ژباړل ودرول
   wwcgTranslationStopped: د ګلوبل چیٹ ژباړه ودرول شوې.
   wwcUpdaterFutureDate: د WorldwideChat دا مثال د وروستي عامه خلکو په پرتله خورا لوی
@@ -72,11 +69,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'د هدف نښه یا له منځه تللې وه یا ژباړه ډیره اوږده وه. ژباړه:'
   wwctsOnTarget: .د ژباړې لاسليک کړﺉ
   wwcConfigCacheDisabled: ژباړونکي کیچ معلول شو.
-  wwcConfigConversationWatsonURLInput: اوسنی URL دی {0}. مهرباني وکړئ د واټسن لپاره
-    د خدمت URL ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwcBookDone: په بریالیتوب سره ژباړل شوی کتاب
   wwctsOnSender: د ژباړې لاسليک فعال شو. د ژباړلو لپاره په نښه باندې ښی کلیک وکړئ!
-  watsonColorCodeWarning: د رنګ کوډونو کارول ممکن تاسو ته غیر متوقع پایلې درکړي.
   wwctGUITranslationButton: ژباړل پیل کړئ
   wwctGUIAutoDetectButton: د سرچينې ژبه اتومات کشف
   wwcUpdaterUpToDate: WorldwideChat تر اوسه پورې دی!
@@ -89,7 +83,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat له نیټې څخه بهر دی. مهرباني وکړئ وروستي نسخه
     ته تازه کړئ.
   wwcConfigConversationRateLimitSuccess: د نرخ حد په بریالیتوب سره ټاکل شوی.
-  wwcConfigConversationWatsonURLSuccess: واټسن URL په بریالیتوب سره وټاکل شو.
   wwctbPlayerNotFound: لوبغاړي {0} یا نه موندل شوی، یا فعال ژباړونکی نه دی.
   wwcConfigConversationTranslationCacheSuccess: د ژباړې کیچ حد په بریالیتوب سره وټاکل
     شو
@@ -107,7 +100,6 @@ Messages:
   wwcConfigRateLimitInvalid: د خراب نرخ حد په config.yml کې ټاکل شوی. 0 ثانیو ته تلل...
   wwcSignTranslateStart: د نښه نښه ژباړل...
   wwcConfigGUIChatSettings: چیٹ سازونه
-  wwcConfigGUIWatsonURLButton: د واټسن خدمت URL بدل کړئ
   wwcConfigConversationUpdateCheckerSuccess: تازه چیکر ځنډ په بریالیتوب سره ترتیب
     کړئ.
   wwcGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ د {0} څخه تر {1} پورې
@@ -125,7 +117,6 @@ Messages:
   wwcsAttemptedTranslations: 'ژباړنې هڅه: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: د ایمیزون پټ کیلي په بریالیتوب
     سره.
-  wwcConfigConversationWatsonAPIKeySuccess: د واټسن API کیلي په بریالیتوب سره.
   wwcRateLimit: ستاسو ژباړې کچه محدود ده. مهرباني وکړئ نور څه انتظار وکړئ {0} ثانیو.
   wwcConfigCacheEnabled: ژباړونکي کیچ فعال او د {0} حد ته یې وټاکه.
   wwctGUIExistingTranslationButton: د ژباړې اوسنۍ ناسته بیا لیکل
@@ -183,7 +174,6 @@ Messages:
   wwcInvalidTranslator: ناسم ژباړونکي امستنې. مهرباني وکړئ دا په خپل config.yml یا/wwcc
     سره د دې فلګین کارولو لپاره حل کړئ.
   wwcConfigGUIEachTranslatorSettings: '{0} سازونه'
-  wwcConfigGUIWatsonButton: واټسن
   wwcServerReloadWarning: WorldwideChat د/بیا لوټ کولو کارولو څخه مننه نه کوي. مهرباني
     وکړئ د احتیاط سره مخ شئ.
   wwcConfigEnabledDebugMode: فعالول ډيباګ اکر. که تاسو یو پرمخ وړونکی یا ستونزه نه
@@ -296,10 +286,7 @@ Messages:
     د بدلون لپاره بیا پورته کول ترڅو اغیزه وکړي.
   wwcConfigYAMLDefault: د معلوماتو ذخیره کولو لپاره YAML ته ډیفالټ شوی.
   wwcConfigGUISQLMenuButton: د SQL امستنې بدلول
-  wwcConfigConversationWatsonTranslateToggleSuccess: په بریالیتوب سره د واټسن ژباړل
-    شوی. د بدلون لپاره بیا پورته کول ترڅو اغیزه وکړي.
   wwcConfigGUIToggleGoogleTranslateButton: د ګوګل ژباړه
-  wwcConfigGUIToggleWatsonTranslateButton: د واټسن ژباړل
   wwcConfigGUIToggleAmazonTranslateButton: د ایمیزون ژباړل
   wwcConfigGUIStorageSettings: زيرمه سازونې
   wwcConfigConversationAmazonTranslateToggleSuccess: په بریالیتوب سره د ایمیزون ژباړل
@@ -627,8 +614,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: په بریالیتوب سره ستاسو د چیٹ پیښې لوم
   wwcConfigVaultSupportInvalid: د اعتبار والټ ملاتړ په config.yml کې ټاکل شوی. ریښتینې
     ته ناپسند کول...
-  wwcWatsonDeprecation: واټسن منځه شوی دی او نور د آی بی ایم لخوا ملاتړ نه کیږي. مهرباني
-    وکړئ د سویچ کولو په پام کې ونیسئ، ځکه چې د دې لپاره ملاتړ به په راتلونکي
   wwcConfigForceChatChannelEnabled: د ټولو ژباړو په مهال به یو جلا ژباړه چینل مجبور
     ش
   wwcConfigConversationSeparateChatChannelForceSuccess: په بریالیتوب سره جلا چینل
@@ -696,4 +681,5 @@ Messages:
   wwcdResetNotif: ورلډ ویډشیټ بیا ترتیب شوی دی. بیا لوډ کول...
   wwcdResetNotifError: ټول معلومات په بریالیتوب سره پاک شو نه شو. ایا تاسو خپل ډیټابیس
     سره تړل شوي
+  colorCodeWarning: د رنګ کوډونو کارول ممکن تاسو ته غیر متوقع پایلې
 

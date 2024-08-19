@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: Pelaaja {0} löytänyt.
   wwcConfigGUIAmazonTranslateRegionButton: Vaihda Amazonin alue
   wwcConfigConversationLangInvalid: Virheellinen kielikoodi!
-  wwcConfigGUIWatsonAPIKeyButton: Watsonin API-avaimen muuttaminen
   wwcEnabled: Käytössä WorldwideChat-versio {0}.
   wwctbOnSender: Kirjan käännös käytössä. Napsauta hiiren kakkospainikkeella, kun
     pidät kirjaa painettuna kääntääksesi sen!
@@ -60,8 +59,6 @@ Messages:
   wwctsOffTarget: Allekirjoita käännös käytöstä kohteella {0}
   wwcUpdaterConnectionFailed: Githubin uusimpia päivityksiä ei voi tarkistaa.
   watsonNotFoundExceptionNotification: Syötettä ei voi kääntää pidemmälle.
-  wwcConfigConversationWatsonAPIKeyInput: Nykyinen API-avain on {0}. Kirjoita Watsonille
-    API-avain tai kirjoita 0, jotta voit palata takaisin.
   wwctGUIStopButton: Lopeta kääntäminen
   wwcgTranslationStopped: Globaali keskustelukäännös on lopetettu.
   wwcUpdaterFutureDate: Tämä WorldwideChatin tapaus on suurempi versio kuin uusin
@@ -72,13 +69,9 @@ Messages:
     Käännös:'
   wwctsOnTarget: Allekirjoita käännös käytössä kohteella {0}
   wwcConfigCacheDisabled: Kääntäjän välimuisti poistettu käytöstä.
-  wwcConfigConversationWatsonURLInput: Nykyinen URL-osoite on {0}. Kirjoita Watsonille
-    palvelun URL-osoite tai kirjoita 0 palaaksesi takaisin.
   wwcBookDone: Kirja käännetty onnistuneesti.
   wwctsOnSender: Allekirjoita käännös käytössä Napsauta merkkiä hiiren kakkospainikkeella
     kääntääksesi sen!
-  watsonColorCodeWarning: Värikoodien käyttäminen voi antaa sinulle arvaamattomia
-    tuloksia.
   wwctGUITranslationButton: Aloita kääntäminen
   wwctGUIAutoDetectButton: Automaattinen tunnistus lähdekieli
   wwcUpdaterUpToDate: WorldwideChat on ajan tasalla!
@@ -90,7 +83,6 @@ Messages:
   wwcPlayerNotFound: Pelaaja {0} löytänyt.
   wwcUpdaterOutOfDateChat: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon.
   wwcConfigConversationRateLimitSuccess: Arvosteluraja on asetettu onnistuneesti.
-  wwcConfigConversationWatsonURLSuccess: Watsonin URL-osoite on määritetty onnistuneesti.
   wwctbPlayerNotFound: Pelaaja {0} ei joko löydy tai se ei ole aktiivinen kääntäjä.
   wwcConfigConversationTranslationCacheSuccess: Käännös välimuistin raja asetettu
     onnistuneesti.
@@ -108,7 +100,6 @@ Messages:
   wwcConfigRateLimitInvalid: Huono nopeus raja asetettu config.yml. Defaulting 0 sekuntia...
   wwcSignTranslateStart: Käännetään kohdemerkki...
   wwcConfigGUIChatSettings: Chat-määritykset
-  wwcConfigGUIWatsonURLButton: Watson-palvelun URL-osoitteen muuttaminen
   wwcConfigConversationUpdateCheckerSuccess: Päivitä tarkistusviive asetettu onnistuneesti.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globaali keskustelu käännetään
     osoitteesta {0} kohteeseen {1}.
@@ -125,7 +116,6 @@ Messages:
   wwcsAttemptedTranslations: 'Käännösyritykset: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazonin salainen avain asetettu
     onnistuneesti.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API avain asetettu onnistuneesti.
   wwcRateLimit: Käännökset ovat nopeita rajoitettuja. Odota toisen {0} sekuntia.
   wwcConfigCacheEnabled: Kääntäjän välimuisti käytössä ja asetettu raja {0}.
   wwctGUIExistingTranslationButton: Korvaa nykyinen käännösistunto
@@ -185,7 +175,6 @@ Messages:
   wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
     /wwcc käyttää tätä plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} määritykset'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ei hyväksy /uudelleenlatauksen käyttöä. Ole
     hyvä ja jatka varoen.
   wwcConfigEnabledDebugMode: Käytössä DEBUG-tila. Jos et ole kehittäjä tai vianmääritys,
@@ -296,10 +285,7 @@ Messages:
     Translate. Lataa uudelleen, jotta muutos tulee voimaan.
   wwcConfigYAMLDefault: 'Oletettu YAML: lle tietojen tallennusta varten.'
   wwcConfigGUISQLMenuButton: Muuta SQL-asetuksia
-  wwcConfigConversationWatsonTranslateToggleSuccess: Onnistuneesti vaihdettu Watson
-    Translate. Lataa uudelleen, jotta muutos tulee voimaan.
   wwcConfigGUIToggleGoogleTranslateButton: Vaihda Google-kääntäjä
-  wwcConfigGUIToggleWatsonTranslateButton: Vaihda Watson Käännä
   wwcConfigGUIToggleAmazonTranslateButton: Vaihda Amazon Käännä
   wwcConfigGUIStorageSettings: Tallennus kokoonpano
   wwcConfigConversationAmazonTranslateToggleSuccess: Onnistuneesti vaihdettu Amazon
@@ -630,8 +616,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Aseta chat-tapahtuman prioriteetti onnistuneesti.
   wwcConfigVaultSupportInvalid: 'Virheellinen säilön tuki on määritetty config.yml:
     ssä. Oletuksena on tosi...'
-  wwcWatsonDeprecation: Watson on vanhentunut, eikä IBM enää tue sitä. Harkitse vaihtamista,
-    koska sen tuki poistetaan seuraavassa päivityksessä.
   wwcConfigForceChatChannelEnabled: Erillinen käännöskanava pakotetaan kaikkien käännösten
     aikana.
   wwcConfigConversationSeparateChatChannelForceSuccess: Vaihdettu onnistuneesti pakottamalla
@@ -707,4 +691,5 @@ Messages:
   wwcdResetNotif: WorldwideChat on nollattu. Ladataan uudelleen...
   wwcdResetNotifError: Kaikkia tietoja ei poistettu onnistuneesti. Oletko yhteydessä
     tietokantaasi?
+  colorCodeWarning: Värikoodien käyttö voi antaa sinulle arvaamattomia tuloksia.
 

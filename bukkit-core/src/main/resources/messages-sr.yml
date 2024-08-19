@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Player {0} pronađen.
   wwcConfigGUIAmazonTranslateRegionButton: Promenite Amazon Region
   wwcConfigConversationLangInvalid: Nevažeći kod jezika!
-  wwcConfigGUIWatsonAPIKeyButton: Promenite Vatson API ključ
   wwcEnabled: Omogućeno WorldwideChat verziju {0}
   wwctbOnSender: Omogućen je prevod knjige. Kliknite desnim tasterom miša dok držite
     knjigu da biste je preveli!
@@ -61,8 +60,6 @@ Messages:
   wwctsOffTarget: Potpišite prevod onemogućen za {0}.
   wwcUpdaterConnectionFailed: Nije moguće proveriti najnovije ispravke na Github.
   watsonNotFoundExceptionNotification: Nije moguće da prevedete svoj ulaz dalje.
-  wwcConfigConversationWatsonAPIKeyInput: Trenutni API taster je {0}. Unesite API
-    ključ za Vatson ili upišite 0 da biste se vratili.
   wwctGUIStopButton: Stop prevođenje
   wwcgTranslationStopped: Globalni prevod za ćaskanje je zaustavljen.
   wwcUpdaterFutureDate: Ova instanca WorldwideChat ima veću verziju od najnovije javne.
@@ -72,12 +69,9 @@ Messages:
     Prevod:'
   wwctsOnTarget: Potpisni prevod omogućen za {0}.
   wwcConfigCacheDisabled: Prevodilac keš onemogućen.
-  wwcConfigConversationWatsonURLInput: Trenutni URL je {0}. Unesite URL usluge za
-    Vatson ili upišite 0 da biste se vratili.
   wwcBookDone: Knjiga uspešno prevedena.
   wwctsOnSender: Potpisni prevod omogućen. Kliknite desnim tasterom miša na znak da
     ga prevede!
-  watsonColorCodeWarning: Korišćenje kodova boja može vam dati nepredvidive rezultate.
   wwctGUITranslationButton: Počnite prevođenje
   wwctGUIAutoDetectButton: Auto-otkrivanje izvornog jezika
   wwcUpdaterUpToDate: VorldVideChat je ažuriran!
@@ -90,7 +84,6 @@ Messages:
   wwcUpdaterOutOfDateChat: VorldVideChat je zastario. Molimo vas da ažurirate na najnoviju
     verziju.
   wwcConfigConversationRateLimitSuccess: Ograničenje stopa uspešno postavljen.
-  wwcConfigConversationWatsonURLSuccess: Vatson URL set uspešno.
   wwctbPlayerNotFound: Player {0} ili nije pronađen, ili nije aktivan prevodilac.
   wwcConfigConversationTranslationCacheSuccess: Prevod keš limit set uspešno.
   wwctInvalidArgs: Nevažeći argumenti pod uslovom!
@@ -108,7 +101,6 @@ Messages:
     do 0 sekundi...
   wwcSignTranslateStart: Prevođenje ciljnog znaka...
   wwcConfigGUIChatSettings: Konfiguracija chat
-  wwcConfigGUIWatsonURLButton: Promenite URL usluge Vatson
   wwcConfigConversationUpdateCheckerSuccess: Update Checker kašnjenje postavljen uspešno.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globalno ćaskanje se prevodi iz
     {0} na {1}.
@@ -124,7 +116,6 @@ Messages:
   wwcVersion: VorldVideChat, verzija
   wwcsAttemptedTranslations: 'Pokušaj prevoda: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajni ključ set uspešno.
-  wwcConfigConversationWatsonAPIKeySuccess: Vatson API ključ set uspešno.
   wwcRateLimit: Vaši prevodi su ograničeni na stopu. Molimo sačekajte drugo {0} sekundi.
   wwcConfigCacheEnabled: Prevodilac keš omogućen i podešen na ograničenje {0}.
   wwctGUIExistingTranslationButton: Prepišite trenutnu sesiju prevođenja
@@ -183,7 +174,6 @@ Messages:
   wwcInvalidTranslator: Nevažeća podešavanja prevodioca. Molimo vas da popravite ovo
     u konfiguraciju.iml ili sa /vvcc da koristite ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguracija'
-  wwcConfigGUIWatsonButton: Votson
   wwcServerReloadWarning: VorldVideChat ne odobrava korišćenje /reload. Molimo vas
     da nastavite sa oprezom.
   wwcConfigEnabledDebugMode: Omogućeno DEBUG režim. Ako niste programer ili rešavanje
@@ -296,10 +286,7 @@ Messages:
     Reload za promenu da stupi na snagu.
   wwcConfigYAMLDefault: Defaulted IAML za skladištenje podataka.
   wwcConfigGUISQLMenuButton: Promenite SKL podešavanja
-  wwcConfigConversationWatsonTranslateToggleSuccess: Uspešno toggled Vatson Translate.
-    Reload za promenu da stupi na snagu.
   wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Vatson Prevod
   wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon Prevod
   wwcConfigGUIStorageSettings: Konfiguracija skladištenje
   wwcConfigConversationAmazonTranslateToggleSuccess: Uspešno toggled Amazon Translate.
@@ -626,8 +613,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Uspešno podesite prioritet događaja ćaskanja.
   wwcConfigVaultSupportInvalid: Nevažeća podrška za trezor postavljena u config.iml.
     Podrazumevano na istinito...
-  wwcWatsonDeprecation: Vatson je zastareo i IBM ga više ne podržava. Razmislite o
-    prebacivanju, jer će podrška za nju biti uklonjena u sledećem ažuriranju.
   wwcConfigForceChatChannelEnabled: Poseban kanal za prevođenje biće prisiljen tokom
     svih prevoda.
   wwcConfigConversationSeparateChatChannelForceSuccess: Uspešno je prebacio forsiranje
@@ -703,4 +688,5 @@ Messages:
   wwcdResetNotif: VorldWideChat je resetovan. Ponovno učitavanje...
   wwcdResetNotifError: Nisu svi podaci uspešno izbrisani. Da li ste povezani sa svojom
     bazom podataka?
+  colorCodeWarning: Korišćenje kodova boja može vam dati nepredvidive rezultate.
 

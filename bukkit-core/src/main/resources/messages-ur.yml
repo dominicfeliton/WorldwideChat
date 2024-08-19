@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: کھلاڑی میں %مجھے نہیں ملا
   wwcConfigGUIAmazonTranslateRegionButton: ایمیزون علاقہ تبدیل کریں
   wwcConfigConversationLangInvalid: غلط زبان کا کوڈ!
-  wwcConfigGUIWatsonAPIKeyButton: واٹسن API کی کلید تبدیل کریں
   wwcEnabled: فعال ورلڈ وائڈ ہاٹ ورژن {0}.
   wwctbOnSender: کتاب ترجمہ فعال. ترجمہ کرنے کے لئے کتاب کا انعقاد کرتے ہوئے دائیں
     کلک کریں!
@@ -61,8 +60,6 @@ Messages:
   wwcUpdaterConnectionFailed: Github پر تازہ ترین اپ ڈیٹس کی جانچ پڑتال کرنے کے قابل
   watsonNotFoundExceptionNotification: کسی بھی مزید آپ کی ان پٹ ترجمہ کرنے کے قابل
     نہیں.
-  wwcConfigConversationWatsonAPIKeyInput: موجودہ API کلید {0} ہے. ان پٹ واٹسن کے لئے
-    API کلید، یا 0 ٹائپ واپس جانے کے لئے.
   wwctGUIStopButton: ترجمے کو روکیں
   wwcgTranslationStopped: گلوبل چیٹ ترجمہ روک دیا گیا ہے.
   wwcUpdaterFutureDate: WorldwideChat کی یہ مثال تازہ ترین عوامی ایک سے زیادہ ورژن
@@ -73,12 +70,8 @@ Messages:
     ترجمہ:'
   wwctsOnTarget: '{0} کے لئے فعال سائن ترجمہ.'
   wwcConfigCacheDisabled: مترجم کی کیش غیر فعال
-  wwcConfigConversationWatsonURLInput: موجودہ URL {0} ہے، برائے مہربانی واٹسن کے لئے
-    سروس یو آر ایل ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
   wwcBookDone: کتاب کامیابی سے ترجمہ.
   wwctsOnSender: سائن ترجمہ فعال. ترجمہ کرنے کے لئے ایک نشانی پر دائیں کلک کریں!
-  watsonColorCodeWarning: رنگ کوڈ کا استعمال کرتے ہوئے آپ کو غیر متوقع نتائج دے سکتا
-    ہے.
   wwctGUITranslationButton: ترجمہ شروع کریں
   wwctGUIAutoDetectButton: خود کار طریقے سے ماخذ زبان
   wwcUpdaterUpToDate: ورلڈ وائڈ شاٹ اپ ڈیٹ ہے!
@@ -91,7 +84,6 @@ Messages:
   wwcUpdaterOutOfDateChat: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. براہ مہربانی تازہ ترین
     ورژن میں اپ ڈیٹ کریں.
   wwcConfigConversationRateLimitSuccess: شرح کی حد کامیابی سے طے کی گئی ہے۔
-  wwcConfigConversationWatsonURLSuccess: واٹسن یو آر ایل کامیابی سے سیٹ کرتا ہے۔
   wwctbPlayerNotFound: کھلاڑی {0} یا تو نہیں ملا ہے، یا ایک فعال مترجم نہیں ہے.
   wwcConfigConversationTranslationCacheSuccess: ترجمہ کیش کی حد کامیابی سے سیٹ.
   wwctInvalidArgs: غلط دلائل فراہم کی گئی ہیں!
@@ -109,7 +101,6 @@ Messages:
   wwcConfigRateLimitInvalid: خراب شرح کی حد config.yml میں مقرر. 0 سیکنڈ پر ڈیفالٹنگ...
   wwcSignTranslateStart: ہدف کی علامت کا ترجمہ...
   wwcConfigGUIChatSettings: چیٹ ترتیب
-  wwcConfigGUIWatsonURLButton: واٹسن سروس یو آر ایل تبدیل کریں
   wwcConfigConversationUpdateCheckerSuccess: چیکر تاخیر سیٹ کامیابی سے اپ ڈیٹ کریں.
   wwcGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ {0} سے {1}
     تک کیا جا رہا ہے۔
@@ -126,7 +117,6 @@ Messages:
   wwcsAttemptedTranslations: 'تراجم کی کوشش کی گئی: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ایمیزون خفیہ کلیدی سیٹ کامیابی
     سے.
-  wwcConfigConversationWatsonAPIKeySuccess: واٹسن API کلیدی سیٹ کامیابی سے.
   wwcRateLimit: آپ کے ترجمے شرح محدود ہیں. براہ مہربانی ایک اور میں {0} سیکنڈ انتظار
     کریں۔
   wwcConfigCacheEnabled: مترجم کیش فعال اور {0} کی حد پر مقرر کیا گیا ہے۔
@@ -184,7 +174,6 @@ Messages:
   wwcInvalidTranslator: غلط مترجم کی ترتیبات. براہ کرم اس پلگ ان کو استعمال کرنے کے
     لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.
   wwcConfigGUIEachTranslatorSettings: '{0} ترتیب'
-  wwcConfigGUIWatsonButton: واٹسن
   wwcServerReloadWarning: WorldwideChat /reloadکے استعمال کی توثیق نہیں کرتا. براہ
     مہربانی احتیاط کے ساتھ آگے بڑھیں۔
   wwcConfigEnabledDebugMode: فعال ڈیبگ موڈ. اگر آپ ڈویلپر یا ڈویلپر نہیں ہیں تو، آپ
@@ -298,10 +287,7 @@ Messages:
     ٹوگل کیا. اثر انداز کرنے کے لئے تبدیلی کے لئے دوبارہ لوڈ کریں.
   wwcConfigYAMLDefault: ڈیٹا اسٹوریج کے لئے YAML میں ڈیفالٹ.
   wwcConfigGUISQLMenuButton: SQL ترتیبات تبدیل کریں
-  wwcConfigConversationWatsonTranslateToggleSuccess: کامیابی سے واٹسن ترجمہ ٹوگل.
-    اثر انداز کرنے کے لئے تبدیلی کے لئے دوبارہ لوڈ کریں.
   wwcConfigGUIToggleGoogleTranslateButton: گوگل ترجمہ ٹوگل
-  wwcConfigGUIToggleWatsonTranslateButton: ٹوگل واٹسن ترجمہ کریں
   wwcConfigGUIToggleAmazonTranslateButton: ٹوگل ایمیزون ترجمہ کریں
   wwcConfigGUIStorageSettings: اسٹوریج کی ترتیب
   wwcConfigConversationAmazonTranslateToggleSuccess: کامیابی سے ایمیزون ترجمہ ٹوگل.
@@ -642,9 +628,6 @@ Messages:
     طے
   wwcConfigVaultSupportInvalid: config.yml میں غلط والٹ سپورٹ سیٹ ہے۔ سچ میں ڈیفالٹ
     ہونا...
-  wwcWatsonDeprecation: واٹسن کو مسترد کردیا گیا ہے اور اب آئی بی ایم کے ذریعہ اس
-    کی حمایت نہیں ہے۔ براہ کرم سوئچنگ پر غور کریں، کیونکہ اگلی تازہ کاری میں اس کی
-    حمایت کو ہٹا دیا جائے گا۔
   wwcConfigForceChatChannelEnabled: تمام ترجموں کے دوران ایک علیحدہ ترجمہ چینل پر
     مجبور کیا جائے گا۔
   wwcConfigConversationSeparateChatChannelForceSuccess: کامیابی کے ساتھ علیحدہ چینل
@@ -721,4 +704,5 @@ Messages:
   wwcdResetNotif: ورلڈ وائڈ چیٹ کو دوبارہ ترتیب دیا گیا ہے۔ دوبارہ لوڈ کرنا...
   wwcdResetNotifError: تمام اعداد و شمار کو کامیابی کے ساتھ ختم نہیں کیا گیا کیا آپ
     اپنے ڈیٹا بیس سے منسلک ہیں؟
+  colorCodeWarning: رنگ کوڈز کا استعمال آپ کو غیر متوقع نتائج دے سکتے ہیں۔
 

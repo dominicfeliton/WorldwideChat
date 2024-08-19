@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Spiller {0} ble ikke funnet.
   wwcConfigGUIAmazonTranslateRegionButton: Endre Amazon-regionen
   wwcConfigConversationLangInvalid: Ugyldig språkkode!
-  wwcConfigGUIWatsonAPIKeyButton: Endre Watson API-nøkkel
   wwcEnabled: Aktivert WorldwideChat versjon {0}.
   wwctbOnSender: Bokoversettelse aktivert. Høyreklikk mens du holder en bok for å
     oversette den!
@@ -61,8 +60,6 @@ Messages:
   wwctsOffTarget: Signeroversettelse deaktivert for {0}.
   wwcUpdaterConnectionFailed: Kan ikke se etter de siste oppdateringene på Github.
   watsonNotFoundExceptionNotification: Kan ikke oversette dine innspill lenger.
-  wwcConfigConversationWatsonAPIKeyInput: Gjeldende API-nøkkel er {0}. Skriv inn en
-    API-nøkkel for Watson, eller skriv 0 for å gå tilbake.
   wwctGUIStopButton: Slutt å oversette
   wwcgTranslationStopped: Global chat-oversettelse er stoppet.
   wwcUpdaterFutureDate: Denne forekomsten av WorldwideChat har en større versjon enn
@@ -73,12 +70,9 @@ Messages:
     lang. Oversettelse:'
   wwctsOnTarget: Signeroversettelse aktivert for {0}.
   wwcConfigCacheDisabled: Translator-buffer deaktivert.
-  wwcConfigConversationWatsonURLInput: Gjeldende URL-adresse er {0}. Skriv inn en
-    service-URL for Watson, eller skriv 0 for å gå tilbake.
   wwcBookDone: Bok oversatt med hell.
   wwctsOnSender: Signer oversettelse aktivert. Høyreklikk på et skilt for å oversette
     det!
-  watsonColorCodeWarning: Bruk av fargekoder kan gi deg uforutsigbare resultater.
   wwctGUITranslationButton: Begynn å oversette
   wwctGUIAutoDetectButton: Registrer kildespråk
   wwcUpdaterUpToDate: WorldwideChat er oppdatert!
@@ -90,7 +84,6 @@ Messages:
   wwcPlayerNotFound: Spiller {0} ble ikke funnet.
   wwcUpdaterOutOfDateChat: WorldwideChat er utdatert. Oppdater til den nyeste versjonen.
   wwcConfigConversationRateLimitSuccess: Rate limit satt vellykket.
-  wwcConfigConversationWatsonURLSuccess: Watson URL satt vellykket.
   wwctbPlayerNotFound: Spiller {0} er enten ikke funnet, eller er ikke en aktiv oversetter.
   wwcConfigConversationTranslationCacheSuccess: Oversettelse cache grensen satt vellykket.
   wwctInvalidArgs: Ugyldige argumenter oppgitt!
@@ -108,7 +101,6 @@ Messages:
     0 sekunder...
   wwcSignTranslateStart: Oversette målskilt...
   wwcConfigGUIChatSettings: Chat konfigurasjon
-  wwcConfigGUIWatsonURLButton: Endre URL-adressen til Watson Service
   wwcConfigConversationUpdateCheckerSuccess: Oppdater kontrollforsinkelsen satt vellykket.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat blir oversatt fra
     {0} til {1}.
@@ -125,7 +117,6 @@ Messages:
   wwcsAttemptedTranslations: 'Forsøk på oversettelser: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon hemmelig nøkkel satt
     vellykket.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API nøkkel satt vellykket.
   wwcRateLimit: Oversettelsene dine er prisbegrenset. Vent en annen {0} sekunder.
   wwcConfigCacheEnabled: Translator cache aktivert og satt til en grense på {0}.
   wwctGUIExistingTranslationButton: Overskriv gjeldende oversettelsesøkt
@@ -184,7 +175,6 @@ Messages:
   wwcInvalidTranslator: Ugyldige innstillinger for oversetteren. Vennligst reparer
     dette i din config.yml eller med /wwcc for å bruke denne plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurasjon'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tillater ikke bruk av /reload. Vennligst fortsett
     med forsiktighet.
   wwcConfigEnabledDebugMode: Aktivert feilsøkingsmodus. Hvis du ikke er utvikler eller
@@ -295,10 +285,7 @@ Messages:
     Last inn for at endringen skal tre i kraft.
   wwcConfigYAMLDefault: Standard til YAML for datalagring.
   wwcConfigGUISQLMenuButton: Endre SQL-innstillinger
-  wwcConfigConversationWatsonTranslateToggleSuccess: Vellykket slått Watson Oversett.
-    Last inn for at endringen skal tre i kraft.
   wwcConfigGUIToggleGoogleTranslateButton: Veksle Google Oversett
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Oversett
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Oversett
   wwcConfigGUIStorageSettings: Lagring konfigurasjon
   wwcConfigConversationAmazonTranslateToggleSuccess: Vellykket slått Amazon Oversett.
@@ -616,8 +603,6 @@ Messages:
     med hell.
   wwcConfigVaultSupportInvalid: Ugyldig hvelvstøtte angitt i config.yml. Standardiserer
     til sant...
-  wwcWatsonDeprecation: Watson er utfaset og støttes ikke lenger av IBM. Vennligst
-    vurder å bytte, da støtte for det vil bli fjernet i neste oppdatering.
   wwcConfigForceChatChannelEnabled: En egen oversettelseskanal vil bli tvunget under
     alle oversettelser.
   wwcConfigConversationSeparateChatChannelForceSuccess: Vellykket vekslet for å tvinge
@@ -689,4 +674,5 @@ Messages:
     DU VET HVA DU GJØR: {0}'
   wwcdResetNotif: WorldwideChat er tilbakestilt. Laster inn på nytt...
   wwcdResetNotifError: Ikke alle dataene ble slettet. Er du koblet til databasen din?
+  colorCodeWarning: Bruk av fargekoder kan gi deg uforutsigbare resultater.
 

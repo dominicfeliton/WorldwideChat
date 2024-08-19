@@ -48,7 +48,6 @@ Messages:
   wwctPlayerNotFound: Oyuncu {0} bulunamadı.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Bölgesini Değiştir
   wwcConfigConversationLangInvalid: Geçersiz dil kodu!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API Anahtarını Değiştir
   wwcEnabled: WorldwideChat sürümün {0} etkinleştirildi.
   wwctbOnSender: Kitap çevirisi etkin. Çevirmek için bir kitap tutarken sağ tıklayın!
   wwcListenersInitialized: İlk dinleyiciler.
@@ -59,8 +58,6 @@ Messages:
   wwctsOffTarget: '{0} için çeviri devre dışı bırakıldı.'
   wwcUpdaterConnectionFailed: Github hakkında en son güncellemeler denetlenemiyor.
   watsonNotFoundExceptionNotification: Girdilerinizi daha fazla tercüme edemiyor.
-  wwcConfigConversationWatsonAPIKeyInput: Geçerli API anahtarı {0}. Lütfen Watson
-    için bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwctGUIStopButton: Çevirmeyi Durdur
   wwcgTranslationStopped: Küresel sohbet çevirisi durduruldu.
   wwcUpdaterFutureDate: WorldwideChat'in bu örneği, en son halka açık olandan daha
@@ -70,11 +67,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'Hedef işareti silindi veya çeviri çok uzundu. Çeviri:'
   wwctsOnTarget: '{0} için imzalama çevirisi etkinleştirildi.'
   wwcConfigCacheDisabled: Çevirmen önbelleği devre dışı.
-  wwcConfigConversationWatsonURLInput: Geçerli URL {0}. Lütfen Watson için bir hizmet
-    URL'si girin veya geri dönmek için 0 yazın.
   wwcBookDone: Kitap başarıyla çevrildi.
   wwctsOnSender: İmza çevirisi etkin. Çevirmek için bir işareti sağ tıklayın!
-  watsonColorCodeWarning: Renk kodlarını kullanmak size öngörülemeyen sonuçlar verebilir.
   wwctGUITranslationButton: Çevirmeye Başla
   wwctGUIAutoDetectButton: Kaynak Dilini Otomatik Algıla
   wwcUpdaterUpToDate: WorldwideChat güncel!
@@ -86,7 +80,6 @@ Messages:
   wwcPlayerNotFound: Oyuncu {0} bulunamadı.
   wwcUpdaterOutOfDateChat: WorldwideChat güncel değil. Lütfen en son sürüme güncelleyin.
   wwcConfigConversationRateLimitSuccess: Hız sınırı başarıyla ayarlandı.
-  wwcConfigConversationWatsonURLSuccess: Watson URL başarıyla ayarlandı.
   wwctbPlayerNotFound: '{0} oyuncuya bulunamadı ya da etkin bir çevirmen değil.'
   wwcConfigConversationTranslationCacheSuccess: Çeviri önbellek sınırı başarıyla ayarlandı.
   wwctInvalidArgs: Geçersiz argümanlar sağlandı!
@@ -104,7 +97,6 @@ Messages:
     varsayılan—
   wwcSignTranslateStart: Hedef işareti çevriliyor...
   wwcConfigGUIChatSettings: Sohbet Yapılandırması
-  wwcConfigGUIWatsonURLButton: Watson Hizmeti URL'sini Değiştir
   wwcConfigConversationUpdateCheckerSuccess: Güncelleştirme denetleyicisi gecikme
     başarıyla ayarlandı.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Genel sohbet {0} ile {1} konumundan
@@ -122,7 +114,6 @@ Messages:
   wwcsAttemptedTranslations: 'Deneme Çevirileri: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon gizli anahtar seti
     başarıyla.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API anahtarı başarıyla ayarlandı.
   wwcRateLimit: Çevirileriniz oranı sınırlıdır. Lütfen {0} saniye daha bekleyin.
   wwcConfigCacheEnabled: Çevirmen önbelleği etkinleştirildi ve {0} sınırına ayarlandı.
   wwctGUIExistingTranslationButton: Geçerli Çeviri Oturumunun Üzerine Yaz
@@ -180,7 +171,6 @@ Messages:
   wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
     için config.yml veya /wwcc ile düzeltin.
   wwcConfigGUIEachTranslatorSettings: '{0} Yapılandırma'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat, /reload'un kullanımını göz yummaz. Lütfen
     dikkatli bir şekilde devam edin.
   wwcConfigEnabledDebugMode: Hata AÇIKLAMA modu etkinleştirildi. Geliştirici veya
@@ -292,10 +282,7 @@ Messages:
     şekilde geçiş yaptı. Değişikliğin etkili olması için yeniden yükleyin.
   wwcConfigYAMLDefault: Veri depolama için YAML olarak varsayılan olarak kullanılmıştır.
   wwcConfigGUISQLMenuButton: SQL Ayarlarını Değiştir
-  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate başarılı bir
-    şekilde geçiş yaptı. Değişikliğin etkili olması için yeniden yükleyin.
   wwcConfigGUIToggleGoogleTranslateButton: Google Çevir'i Aç/Kapat
-  wwcConfigGUIToggleWatsonTranslateButton: Watson Çevir'i Aç/Kapat
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Çevir'i Aç/Kapat
   wwcConfigGUIStorageSettings: Depolama Konfigürasyonu
   wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate başarıyla geçiş
@@ -632,8 +619,6 @@ Messages:
     ayarlayın.
   wwcConfigVaultSupportInvalid: config.yml içinde geçersiz kasa desteği ayarlandı.
     Varsayılan olarak true olarak ayarlanıyor...
-  wwcWatsonDeprecation: Watson kullanımdan kaldırıldı ve artık IBM tarafından desteklenmiyor.
-    Lütfen geçiş yapmayı düşünün, çünkü bir sonraki güncellemede destek kaldırılacaktır.
   wwcConfigForceChatChannelEnabled: Tüm çeviriler sırasında ayrı bir çeviri kanalı
     zorunlu olacaktır.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı zorlamak başarıyla
@@ -706,4 +691,5 @@ Messages:
     {0}'
   wwcdResetNotif: WorldwideChat sıfırlandı. Yeniden yükleniyor...
   wwcdResetNotifError: Tüm veriler başarıyla silinmedi. Veritabanınıza bağlı mısınız?
+  colorCodeWarning: Renk kodlarını kullanmak size öngörülemeyen sonuçlar verebilir.
 

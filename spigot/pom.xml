@@ -16,7 +16,7 @@
     <dependency>
       <groupId>com.github.seeseemelk</groupId>
       <artifactId>MockBukkit-v1.21</artifactId>
-      <version>3.106.0</version>
+      <version>3.108.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -79,7 +79,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.3.1</version>
+        <version>3.4.0</version>
         <configuration>
           <skipTests>false</skipTests>
         </configuration>

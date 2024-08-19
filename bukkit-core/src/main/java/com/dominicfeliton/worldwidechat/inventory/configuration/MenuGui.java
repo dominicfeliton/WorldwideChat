@@ -37,7 +37,7 @@ public class MenuGui implements InventoryProvider {
 	}
 
 	public enum CONFIG_GUI_TAGS {
-		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, CHAT_CHANNEL_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
+		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, CHAT_CHANNEL_SET, TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
@@ -70,10 +70,7 @@ public class MenuGui implements InventoryProvider {
 
 		MenuGui transSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
-		
-		MenuGui transWatsonSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv = transWatsonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Watson"});
-		
+
 		MenuGui transGoogleSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Google"});
 		
@@ -236,7 +233,6 @@ public class MenuGui implements InventoryProvider {
 		transSet.add(new SubMenuElement(1, 4, transName.equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
 		transSet.add(new SubMenuElement(1, 5, transName.equals("Libre Translate"), "wwcConfigGUILibreTranslateButton", CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv));
 		transSet.add(new SubMenuElement(1, 6, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton", CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv));
-		transSet.add(new SubMenuElement(1, 7, transName.equals("Watson"), "wwcConfigGUIWatsonButton", CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv));
 		transSet.add(new ConvoElement(2, 1, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.TranslationCache()));
 	    transSet.add(new ConvoElement(2, 2, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
@@ -251,19 +247,7 @@ public class MenuGui implements InventoryProvider {
 	    transSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(3, 4, "Quit"));
 		transSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
-		
-		// Watson Translator
-		transWatsonSet.add(new BorderElement(XMaterial.LIGHT_BLUE_STAINED_GLASS_PANE));
-		transWatsonSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleWatsonTranslateButton", "wwcConfigConversationWatsonTranslateToggleSuccess",
-				"Translator.useWatsonTranslate", translatorToggles, false));
-		transWatsonSet.add(new ConvoElement(1, 2, "wwcConfigGUIWatsonAPIKeyButton", XMaterial.NAME_TAG, 
-				new WatsonSettingsConvos.ApiKey()));
-		transWatsonSet.add(new ConvoElement(1, 3, "wwcConfigGUIWatsonURLButton", XMaterial.NAME_TAG,
-				new WatsonSettingsConvos.ServiceUrl()));
-		transWatsonSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
-		transWatsonSet.add(new CommonElement(2, 4, "Quit"));
-		transWatsonSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
-		
+
 		// Google Translator
 		transGoogleSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
 		transGoogleSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleGoogleTranslateButton", "wwcConfigConversationGoogleTranslateToggleSuccess",

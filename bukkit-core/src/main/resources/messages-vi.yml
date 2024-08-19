@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Người chơi {0}ôi không tìm thấy.
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
   wwcConfigConversationLangInvalid: Mã ngôn ngữ không hợp lệ!
-  wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
   wwcEnabled: Đã bật phiên bản WorldwideChat {0}.
   wwctbOnSender: Đã bật dịch sách. Nhấp chuột phải trong khi giữ một cuốn sách để
     dịch nó!
@@ -62,8 +61,6 @@ Messages:
   wwctsOffTarget: Đăng dịch bị vô hiệu hóa cho {0}.
   wwcUpdaterConnectionFailed: Không thể kiểm tra các bản cập nhật mới nhất trên Github.
   watsonNotFoundExceptionNotification: Không thể dịch đầu vào của bạn thêm nữa.
-  wwcConfigConversationWatsonAPIKeyInput: Khóa API hiện tại là {0}. Vui lòng nhập
-    khóa API cho Watson, hoặc nhập 0 để quay lại.
   wwctGUIStopButton: Dừng dịch
   wwcgTranslationStopped: Dịch trò chuyện toàn cầu đã bị dừng lại.
   wwcUpdaterFutureDate: Phiên bản WorldwideChat này có phiên bản lớn hơn phiên bản
@@ -74,11 +71,8 @@ Messages:
     dịch:'
   wwctsOnTarget: Đăng dịch được bật cho {0}.
   wwcConfigCacheDisabled: Bộ nhớ cache của trình dịch bị tắt.
-  wwcConfigConversationWatsonURLInput: URL hiện tại là {0}. Vui lòng nhập URL dịch
-    vụ cho Watson, hoặc nhập 0 để quay lại.
   wwcBookDone: Sách dịch thành công.
   wwctsOnSender: Đã bật bản dịch ký. Nhấp chuột phải vào một dấu hiệu để dịch nó!
-  watsonColorCodeWarning: Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.
   wwctGUITranslationButton: Bắt đầu Translating
   wwctGUIAutoDetectButton: Ngôn ngữ nguồn tự động phát hiện
   wwcUpdaterUpToDate: WorldwideChat được cập nhật!
@@ -91,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên
     bản mới nhất.
   wwcConfigConversationRateLimitSuccess: Giới hạn tỷ lệ đặt thành công.
-  wwcConfigConversationWatsonURLSuccess: Watson URL đặt thành công.
   wwctbPlayerNotFound: Người chơi {0} hoặc là không tìm thấy, hoặc không phải là một
     dịch giả đang hoạt động.
   wwcConfigConversationTranslationCacheSuccess: Giới hạn bộ nhớ cache dịch đặt thành
@@ -111,7 +104,6 @@ Messages:
     0 giây...
   wwcSignTranslateStart: Đang dịch dấu hiệu mục tiêu...
   wwcConfigGUIChatSettings: Cấu hình trò chuyện
-  wwcConfigGUIWatsonURLButton: Thay đổi URL dịch vụ Watson
   wwcConfigConversationUpdateCheckerSuccess: Cập Nhật kiểm tra chậm trễ đặt thành
     công.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Trò chuyện toàn cầu đang được
@@ -129,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'Bản dịch đã cố gắng: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon khóa bí mật thiết lập
     thành công.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API chìa khóa thiết lập thành công.
   wwcRateLimit: Bản dịch của bạn bị giới hạn tỷ lệ. Vui lòng chơi {0} giây khác.
   wwcConfigCacheEnabled: Bộ nhớ cache của trình dịch được bật và đặt thành giới hạn
     của {0}.
@@ -192,7 +183,6 @@ Messages:
   wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.
   wwcConfigGUIEachTranslatorSettings: '{0} Cấu hình'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat không tha thứ việc sử dụng /tải lại. Xin hãy
     cẩn thận.
   wwcConfigEnabledDebugMode: Đã bật chế độ DEBUG. Nếu bạn không phải là nhà phát triển
@@ -309,10 +299,7 @@ Messages:
     Translate. Tải lại để thay đổi có hiệu lực.
   wwcConfigYAMLDefault: Mặc định là YAML để lưu trữ dữ liệu.
   wwcConfigGUISQLMenuButton: Thay đổi cài đặt SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Chuyển đổi thành công Watson
-    Translate. Tải lại để thay đổi có hiệu lực.
   wwcConfigGUIToggleGoogleTranslateButton: Chuyển đổi Google Dịch
-  wwcConfigGUIToggleWatsonTranslateButton: Chuyển đổi Watson Dịch
   wwcConfigGUIToggleAmazonTranslateButton: Chuyển đổi Amazon Translate
   wwcConfigGUIStorageSettings: Cấu hình lưu trữ
   wwcConfigConversationAmazonTranslateToggleSuccess: Chuyển đổi thành công Amazon
@@ -644,9 +631,6 @@ Messages:
     kiện trò chuyện của bạn.
   wwcConfigVaultSupportInvalid: Hỗ trợ vault không hợp lệ được đặt trong config.yml.
     Mặc định là true...
-  wwcWatsonDeprecation: Watson đã không còn được sử dụng và không còn được IBM hỗ
-    trợ. Vui lòng xem xét chuyển đổi, vì hỗ trợ cho nó sẽ bị xóa trong bản cập nhật
-    tiếp theo.
   wwcConfigForceChatChannelEnabled: Một kênh dịch riêng biệt sẽ bị buộc trong tất
     cả các bản dịch.
   wwcConfigConversationSeparateChatChannelForceSuccess: Bật thành công buộc kênh riêng
@@ -726,4 +710,5 @@ Messages:
   wwcdResetNotif: WorldwideChat đã được thiết lập lại. Đang tải lại...
   wwcdResetNotifError: Không phải tất cả dữ liệu đã được xóa thành công. Bạn có kết
     nối với cơ sở dữ liệu của mình không?
+  colorCodeWarning: Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.
 

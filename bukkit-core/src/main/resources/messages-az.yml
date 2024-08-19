@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Oyunçu {0}ılmadı.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Regionunu dəyişdirin
   wwcConfigConversationLangInvalid: Yanlış dil kodu!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API Açarını dəyişdirin
   wwcEnabled: WorldwideChat versiyası {0} aktivləşdirildi.
   wwctbOnSender: Kitab tərcüməsi aktivdir. Tərcümə etmək üçün bir kitab tutarkən sağ
     basın!
@@ -62,8 +61,6 @@ Messages:
   wwctsOffTarget: '{0} üçün tərcüməni imzalayın.'
   wwcUpdaterConnectionFailed: Github haqqında ən son yenilikləri yoxlamaq mümkün deyil.
   watsonNotFoundExceptionNotification: Girişinizi hər hansı bir daha tərcümə edə bilmir.
-  wwcConfigConversationWatsonAPIKeyInput: Mövcud API açarı {0}., Watson üçün bir API
-    düyməsini daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwctGUIStopButton: Tərcüməni dayandırın
   wwcgTranslationStopped: Qlobal chat tərcüməsi dayandırılıb.
   wwcUpdaterFutureDate: WorldwideChat bu instansiyası ən son ictimaiyyətdən daha böyük
@@ -74,12 +71,8 @@ Messages:
     Tərcümə:'
   wwctsOnTarget: Sign tərcümə {0} üçün effektiv.
   wwcConfigCacheDisabled: Tərcüməçi önbellek aradan qaldırıldı.
-  wwcConfigConversationWatsonURLInput: Mövcud URL {0}. Watson üçün xidmət URL'sini
-    daxil edin və ya geri dönmək üçün 0 yazın.
   wwcBookDone: Kitab uğurla tərcümə edilmişdir.
   wwctsOnSender: Sign tərcümə effektiv. Tərcümə etmək üçün bir işarəni sağ basın!
-  watsonColorCodeWarning: Rəng kodlarını istifadə edərək, gözlənilməz nəticələr verə
-    bilər.
   wwctGUITranslationButton: Tərcüməyə Başla
   wwctGUIAutoDetectButton: Mənbə dilini avtomatik aşkar etmək
   wwcUpdaterUpToDate: WorldwideChat bu günə qədər!
@@ -91,7 +84,6 @@ Messages:
   wwcPlayerNotFound: Oyunçu {0}ılmadı.
   wwcUpdaterOutOfDateChat: WorldwideChat tarix deyil. Xahiş edirik son versiyaya yeniləyin.
   wwcConfigConversationRateLimitSuccess: Rate limit uğurla müəyyən.
-  wwcConfigConversationWatsonURLSuccess: Watson URL uğurla müəyyən.
   wwctbPlayerNotFound: Oyunçu {0} ya tapılmadı, ya da aktiv tərcüməçi deyil.
   wwcConfigConversationTranslationCacheSuccess: Tərcümə cache limit uğurla müəyyən.
   wwctInvalidArgs: Yanlış arqumentlər təmin!
@@ -109,7 +101,6 @@ Messages:
     öncül...
   wwcSignTranslateStart: Hədəf işarəsinin tərcüməsi...
   wwcConfigGUIChatSettings: Konfiqurasiya söhbət
-  wwcConfigGUIWatsonURLButton: Watson Service URL'sini dəyişdirin
   wwcConfigConversationUpdateCheckerSuccess: Update checker gecikmə uğurla müəyyən.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Qlobal söhbət {0} {1} dilinə tərcümə
     olunur.
@@ -127,7 +118,6 @@ Messages:
   wwcsAttemptedTranslations: 'Təqdim edilən tərcümələr: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon gizli açarı uğurla
     təyin edildi.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API əsas uğurla müəyyən.
   wwcRateLimit: Sizin tərcümələr dərəcəsi məhduddur. Zəhmət olmasa başqa bir {0} saniyə
     gözləyin.
   wwcConfigCacheEnabled: Tərcüməçi önbelleğini aktivləşdirdi və {0} həddinə təyin
@@ -187,7 +177,6 @@ Messages:
   wwcInvalidTranslator: Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək üçün
     config.yml və ya /wwcc ilə düzeltmek edin.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiqurasiya'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldWireChat /yeniden istifadə condone deyil. Xahiş edirik
     ehtiyatla davam edin.
   wwcConfigEnabledDebugMode: Debug rejimi effektiv. Bir geliştirici və ya problem
@@ -298,10 +287,7 @@ Messages:
     keçdi. Dəyişikliyin qüvvəyə minməsi üçün yenidən yüklə.
   wwcConfigYAMLDefault: məlumatların saxlanması üçün YAML üçün Defaulted.
   wwcConfigGUISQLMenuButton: SQL Ayarlarını dəyişdirin
-  wwcConfigConversationWatsonTranslateToggleSuccess: Uğurla Watson Translate keçdi.
-    Dəyişikliyin qüvvəyə minməsi üçün yenidən yüklə.
   wwcConfigGUIToggleGoogleTranslateButton: Google Translate keçid
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tərcümə
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Tərcümə
   wwcConfigGUIStorageSettings: Storage Konfiqurasiya
   wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate uğurla keçdi.
@@ -629,8 +615,6 @@ Messages:
     təyin edin
   wwcConfigVaultSupportInvalid: Config.yml-də etibarsız vəz dəstəyi qurulmuşdur. Doğruza
     defolt...
-  wwcWatsonDeprecation: Watson köhnəldi və artıq IBM tərəfindən dəstəklənmir. Zəhmət
-    olmasa keçid etməyi düşünün, çünki növbəti yeniləmədə dəstək silinəcəkdir.
   wwcConfigForceChatChannelEnabled: Bütün tərcümələr zamanı ayrı bir tərcümə kanalı
     məcbur ediləcək.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ayrı kanalı məcbur etməklə
@@ -702,4 +686,5 @@ Messages:
     SALMAYIN: {0}'
   wwcdResetNotif: WorldwideChat yenidən quruldu. Yenidən yükləmə...
   wwcdResetNotifError: Bütün məlumatlar uğurla silinmədi. Verilənlər bazanıza qoşulmusunuz?
+  colorCodeWarning: Rəng kodlarından istifadə sizə gözlənilməz nəticələr verə bilər.
 

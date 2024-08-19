@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Гравець %я не знайдено.
   wwcConfigGUIAmazonTranslateRegionButton: Змінити регіон Амазонки
   wwcConfigConversationLangInvalid: Некоректний код мови!
-  wwcConfigGUIWatsonAPIKeyButton: Змінити ключ API Уотсона
   wwcEnabled: Увімкнено Всесвітній чат версії {0}.
   wwctbOnSender: Переклад книг увімкнено. Клацніть правою кнопкою миші, утримуючи
     книгу, щоб перекласти її!
@@ -63,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Не вдалося перевірити наявність останніх оновлень на
     Github.
   watsonNotFoundExceptionNotification: Не вдається перекласти ваш ввід далі.
-  wwcConfigConversationWatsonAPIKeyInput: Поточний ключ API — {0}. Будь ласка, введіть
-    ключ API для Watson або введіть 0, щоб повернутися назад.
   wwctGUIStopButton: Припинити переклад
   wwcgTranslationStopped: Глобальний переклад чату зупинено.
   wwcUpdaterFutureDate: Цей екземпляр WorldwideChat має більшу версію, ніж остання
@@ -75,13 +72,9 @@ Messages:
     довгим. Переклад:'
   wwctsOnTarget: Підписати переклад увімкнено для {0}.
   wwcConfigCacheDisabled: Кеш перекладача вимкнено.
-  wwcConfigConversationWatsonURLInput: Поточна адреса URL — {0}. Будь ласка, введіть
-    URL служби для Watson або введіть 0, щоб повернутися назад.
   wwcBookDone: Книга успішно перекладена.
   wwctsOnSender: Підписати переклад увімкнено. Клацніть правою кнопкою миші на знаку,
     щоб перевести його!
-  watsonColorCodeWarning: Використання колірних кодів може дати вам непередбачувані
-    результати.
   wwctGUITranslationButton: Почати переклад
   wwctGUIAutoDetectButton: Автовизначення мови джерела
   wwcUpdaterUpToDate: WorldwideChat є актуальним!
@@ -94,7 +87,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat застаріла. Будь ласка, оновіть до останньої
     версії.
   wwcConfigConversationRateLimitSuccess: Обмеження швидкості встановлено успішно.
-  wwcConfigConversationWatsonURLSuccess: URL Watson успішно встановлено.
   wwctbPlayerNotFound: Гравець {0} або не знайдено, або не є активним перекладачем.
   wwcConfigConversationTranslationCacheSuccess: Обмеження кешу перекладів встановлено
     успішно.
@@ -113,7 +105,6 @@ Messages:
     Значення за замовленням до 0 секунд...
   wwcSignTranslateStart: Переклад знака призначення...
   wwcConfigGUIChatSettings: Налаштування чату
-  wwcConfigGUIWatsonURLButton: Змінити URL-адресу служби Watson
   wwcConfigConversationUpdateCheckerSuccess: Затримка перевірки оновлень успішно встановлено.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Глобальний чат наразі перекладається
     з {0} на {1}.
@@ -130,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'Спроба перекладу: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Секретний ключ Amazon успішно
     встановлено.
-  wwcConfigConversationWatsonAPIKeySuccess: Ключ API Watson успішно встановлено.
   wwcRateLimit: Ваш переклад обмежений. Будь ласка, зачекайте інший {0} секунд.
   wwcConfigCacheEnabled: Кеш перекладача увімкнено та встановлено обмеження {0}.
   wwctGUIExistingTranslationButton: Перезаписати поточний сеанс перекладу
@@ -189,7 +179,6 @@ Messages:
   wwcInvalidTranslator: Некоректні параметри перекладача. Будь ласка, виправте це
     у вашому config.yml або за допомогою /wwcc, щоб використовувати цей плагін.
   wwcConfigGUIEachTranslatorSettings: '{0} Конфігурація'
-  wwcConfigGUIWatsonButton: Ватсон
   wwcServerReloadWarning: WorldwideChat не впливає на використання /reload. Будь ласка,
     дійте обережно.
   wwcConfigEnabledDebugMode: Увімкнено режим зневаджування. Якщо ви не розробник або
@@ -303,10 +292,7 @@ Messages:
     Translate. Перезавантажте, щоб зміни вступили в силу.
   wwcConfigYAMLDefault: За замовчуванням в YAML для зберігання даних.
   wwcConfigGUISQLMenuButton: Змінення параметрів SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Успішно переведений Watson Translate.
-    Перезавантажте, щоб зміни вступили в силу.
   wwcConfigGUIToggleGoogleTranslateButton: Перемкнути Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Перемкнути Watson Перекласти
   wwcConfigGUIToggleAmazonTranslateButton: Перемкнути Переклад Amazon
   wwcConfigGUIStorageSettings: Конфігурація сховища
   wwcConfigConversationAmazonTranslateToggleSuccess: Успішно переведений Amazon Translate.
@@ -633,9 +619,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Успішно встановіть пріоритет події чату.
   wwcConfigVaultSupportInvalid: Невірна підтримка сховища встановлена в config.yml.
     За замовчуванням значення true...
-  wwcWatsonDeprecation: Watson був застарілий і більше не підтримується IBM. Будь
-    ласка, подумайте про перемикання, оскільки підтримка його буде видалена в наступному
-    оновленні.
   wwcConfigForceChatChannelEnabled: Окремий канал перекладу буде примусово під час
     всіх перекладів.
   wwcConfigConversationSeparateChatChannelForceSuccess: Успішно перемикається, змушуючи
@@ -713,4 +696,5 @@ Messages:
   wwcdResetNotif: WorldwideChat було скинуто. Перезавантаження...
   wwcdResetNotifError: Не всі дані були успішно стерті. Ви підключені до своєї бази
     даних?
+  colorCodeWarning: Використання кольорових кодів може дати вам непередбачувані результати.
 

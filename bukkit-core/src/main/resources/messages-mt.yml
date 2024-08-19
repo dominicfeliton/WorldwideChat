@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Player {0} ma nstabx.
   wwcConfigGUIAmazonTranslateRegionButton: Bidla Reġjun Amazon
   wwcConfigConversationLangInvalid: Kodiċi tal-lingwa invalidu!
-  wwcConfigGUIWatsonAPIKeyButton: Bidla Watson API Ewlenin
   wwcEnabled: Enabled verżjoni WorldwideChat {0}.
   wwctbOnSender: Ktieb traduzzjoni ppermettiet. Ikklikkja lemin waqt li żżomm ktieb
     biex tittraduċih!
@@ -63,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Mhux possibbli li tiċċekkja għall-aħħar aġġornamenti
     fuq Github.
   watsonNotFoundExceptionNotification: Kapaċi tittraduċi l-input tiegħek aktar.
-  wwcConfigConversationWatsonAPIKeyInput: Jekk jogħġbok input ewlieni API għall Watson,
-    jew tip 0 li jmorru lura.
   wwctGUIStopButton: Waqqaf it-traduzzjoni
   wwcgTranslationStopped: It-traduzzjoni globali taċ-chat twaqqfet.
   wwcUpdaterFutureDate: Dan l-istanza ta 'WorldwideChat għandha verżjoni akbar mill-aħħar
@@ -75,11 +72,8 @@ Messages:
     kienet twila wisq. Traduzzjoni
   wwctsOnTarget: traduzzjoni Sign ppermettiet għal {0}.
   wwcConfigCacheDisabled: Cache tat-traduttur b'diżabilità.
-  wwcConfigConversationWatsonURLInput: Jekk jogħġbok input URL servizz URL għall Watson,
-    jew tip 0 li jmorru lura.
   wwcBookDone: Ktieb tradott b'suċċess.
   wwctsOnSender: Sinjal traduzzjoni ppermettiet. Ikklikkja lemin fuq sinjal biex tittraduċih!
-  watsonColorCodeWarning: L-użu ta 'kodiċi tal-kulur jista'jagħtik riżultati imprevedibbli.
   wwctGUITranslationButton: Ibda t-traduzzjoni
   wwctGUIAutoDetectButton: Auto-jikxfu Sors Lingwa
   wwcUpdaterUpToDate: WorldwideChat huwa aġġornat!
@@ -92,7 +86,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar
     verżjoni.
   wwcConfigConversationRateLimitSuccess: Limitu tar-rata stabbilit b'suċċess.
-  wwcConfigConversationWatsonURLSuccess: URL Watson stabbiliti b'suċċess.
   wwctbPlayerNotFound: Player {0} jew ma jinstabx, jew mhuwiex traduttur attiv.
   wwcConfigConversationTranslationCacheSuccess: Limitu cache Traduzzjoni stabbilit
     b'suċċess.
@@ -111,7 +104,6 @@ Messages:
     għal 0 sekondi...
   wwcSignTranslateStart: Traduzzjoni tas-sinjal fil-mira...
   wwcConfigGUIChatSettings: Konfigurazzjoni Chat
-  wwcConfigGUIWatsonURLButton: Bidla Watson Servizz URL
   wwcConfigConversationUpdateCheckerSuccess: Aġġorna d-dewmien tal-kontrollur stabbilit
     b'suċċess.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Iċ-chat globali qed jiġi tradott
@@ -129,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'Attentat Traduzzjonijiet: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon ċavetta sigrieta sett
     b'suċċess.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API ewlenin stabbiliti b'suċċess.
   wwcRateLimit: Traduzzjonijiet tiegħek huma rata limitata. Jekk jogħġbok stenna oħra
     {0} sekondi.
   wwcConfigCacheEnabled: Cache traduttur ppermettiet u stabbiliti għal limitu ta '
@@ -189,7 +180,6 @@ Messages:
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurazzjoni'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ma jikkonformax l-użu ta '/tagħbija mill-ġdid.
     Jekk jogħġbok ipproċedi b'kawtela.
   wwcConfigEnabledDebugMode: Modalità debug ppermettiet. Jekk m'intix żviluppatur
@@ -306,10 +296,7 @@ Messages:
     Reload biex il-bidla tidħol fis-seħħ.
   wwcConfigYAMLDefault: Inadempjenti għal YAML għall-ħażna tad-data.
   wwcConfigGUISQLMenuButton: Bidla SQL Settings
-  wwcConfigConversationWatsonTranslateToggleSuccess: B'suċċess toggled Watson Ittraduċi.
-    Reload biex il-bidla tidħol fis-seħħ.
   wwcConfigGUIToggleGoogleTranslateButton: Ittraduċi Google Ittraduċi
-  wwcConfigGUIToggleWatsonTranslateButton: Ittraduċi Toggle Watson
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Ittraduċi
   wwcConfigGUIStorageSettings: Ħażna Konfigurazzjoni
   wwcConfigConversationAmazonTranslateToggleSuccess: B'suċċess toggled Amazon Ittraduċi.
@@ -641,9 +628,6 @@ Messages:
     chat tiegħek
   wwcConfigVaultSupportInvalid: Appoġġ għall-forti invalidu stabbilit f'config.yml.
     Insuffiċjenza għal veru...
-  wwcWatsonDeprecation: Watson ġie deprecated u m'għadux appoġġjat minn IBM. Jekk
-    jogħġbok ikkunsidra li taqleb, bħala l-appoġġ għaliha se jitneħħa fl-aġġornament
-    li jmiss.
   wwcConfigForceChatChannelEnabled: Kanal separat ta' traduzzjoni jiġi sfurzat matul
     it-traduzzjonijiet kollha.
   wwcConfigConversationSeparateChatChannelForceSuccess: Imqabbad b'suċċess sforza
@@ -720,4 +704,5 @@ Messages:
   wwcdResetNotif: WorldwideChat ġie risettjat. Tagħbija mill-ġdid...
   wwcdResetNotifError: Mhux id-dejta kollha tħassret b'suċċess. Int imqabbad mad-database
     tiegħek?
+  colorCodeWarning: L-użu ta 'kodiċijiet tal-kulur jista' jagħtik riżultati imprevedibbli.
 

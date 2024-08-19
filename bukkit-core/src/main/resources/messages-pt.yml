@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Jogador {0} não encontrei.
   wwcConfigGUIAmazonTranslateRegionButton: Alterar região da Amazon
   wwcConfigConversationLangInvalid: Código de idioma inválido!
-  wwcConfigGUIWatsonAPIKeyButton: Alterar a chave da API Watson
   wwcEnabled: Ativado a versão WorldwideChat {0}.
   wwctbOnSender: Tradução de livros habilitada. Clique com o botão direito enquanto
     segura um livro para traduzi-lo!
@@ -64,8 +63,6 @@ Messages:
   wwcUpdaterConnectionFailed: Não é possível verificar se há atualizações mais recentes
     no Github.
   watsonNotFoundExceptionNotification: Não é possível traduzir ainda mais a sua entrada.
-  wwcConfigConversationWatsonAPIKeyInput: A chave de API atual é {0}. Insira uma chave
-    de API para Watson ou digite 0 para voltar.
   wwctGUIStopButton: Parar de traduzir
   wwcgTranslationStopped: A tradução de bate-papo global foi interrompida.
   wwcUpdaterFutureDate: Esta instância do WorldwideChat tem uma versão maior do que
@@ -76,12 +73,9 @@ Messages:
     longa. Tradução:'
   wwctsOnTarget: Tradução de assinar habilitada para {0}.
   wwcConfigCacheDisabled: Cache do tradutor desativado.
-  wwcConfigConversationWatsonURLInput: O URL atual é {0}. Insira um URL de serviço
-    para Watson ou digite 0 para voltar.
   wwcBookDone: Livro traduzido com sucesso.
   wwctsOnSender: Tradução de assinar habilitada. Clique com o botão direito em um
     sinal para traduzi-lo!
-  watsonColorCodeWarning: O uso de códigos de cores pode lhe dar resultados imprevisíveis.
   wwctGUITranslationButton: Comece a traduzir
   wwctGUIAutoDetectButton: Detecção automática de idioma de origem
   wwcUpdaterUpToDate: WorldwideChat está atualizado!
@@ -94,7 +88,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat está desatualizado. Atualize para a versão
     mais recente.
   wwcConfigConversationRateLimitSuccess: Limite de taxa definido com sucesso.
-  wwcConfigConversationWatsonURLSuccess: O URL do Watson é definido com sucesso.
   wwctbPlayerNotFound: O jogador {0} não foi encontrado ou não é um tradutor ativo.
   wwcConfigConversationTranslationCacheSuccess: Limite de cache de tradução definido
     com sucesso.
@@ -113,7 +106,6 @@ Messages:
     0 segundos...
   wwcSignTranslateStart: Traduzindo o sinal de destino...
   wwcConfigGUIChatSettings: Configuração do Chat
-  wwcConfigGUIWatsonURLButton: Alterar URL do serviço Watson
   wwcConfigConversationUpdateCheckerSuccess: Atualizar o atraso do verificador definido
     com sucesso.
   wwcGlobalOnJoinTranslationNotificationSourceLang: O bate-papo global está sendo
@@ -131,7 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tentativa de Traduções: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Conjunto de chaves secretas
     da Amazon com sucesso.
-  wwcConfigConversationWatsonAPIKeySuccess: Conjunto de chaves da API Watson com sucesso.
   wwcRateLimit: Suas traduções são taxas limitadas. Aguarde outro {0} segundos.
   wwcConfigCacheEnabled: Cache do tradutor ativado e definido como um limite de {0}.
   wwctGUIExistingTranslationButton: Substituir Sessão de Tradução Atual
@@ -190,7 +181,6 @@ Messages:
   wwcInvalidTranslator: Configurações inválidas do tradutor. Corrija isso em seu config.yml
     ou com /wwcc para usar este plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Configuração'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: O WorldwideChat não tolera o uso de /reload. Por favor,
     prossiga com cautela.
   wwcConfigEnabledDebugMode: Ativado o modo DEBUG. Se você não for um desenvolvedor
@@ -308,10 +298,7 @@ Messages:
     com sucesso. Recarregue para que a alteração entre em vigor.
   wwcConfigYAMLDefault: Padrão para YAML para armazenamento de dados.
   wwcConfigGUISQLMenuButton: Alterar configurações de SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: O Watson Translate foi alternado
-    com sucesso. Recarregue para que a alteração entre em vigor.
   wwcConfigGUIToggleGoogleTranslateButton: Alternar Google Tradutor
-  wwcConfigGUIToggleWatsonTranslateButton: Alternar Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Alternar Amazon Translate
   wwcConfigGUIStorageSettings: Configuração de armazenamento
   wwcConfigConversationAmazonTranslateToggleSuccess: Alternar com sucesso o Amazon
@@ -656,8 +643,6 @@ Messages:
     evento de bate-papo.
   wwcConfigVaultSupportInvalid: Suporte de cofre inválido definido em config.yml.
     O padrão é true...
-  wwcWatsonDeprecation: O Watson foi descontinuado e não é mais suportado pela IBM.
-    Considere mudar, pois o suporte para ele será removido na próxima atualização.
   wwcConfigForceChatChannelEnabled: Um canal de tradução separado será forçado durante
     todas as traduções.
   wwcConfigConversationSeparateChatChannelForceSuccess: Alternado com sucesso, forçando
@@ -734,4 +719,5 @@ Messages:
   wwcdResetNotif: O WorldwideChat foi redefinido. Recarregando...
   wwcdResetNotifError: Nem todos os dados foram apagados com sucesso. Você está conectado
     ao seu banco de dados?
+  colorCodeWarning: O uso de códigos de cores pode fornecer resultados imprevisíveis.
 

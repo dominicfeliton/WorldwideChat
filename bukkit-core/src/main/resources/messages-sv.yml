@@ -51,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Spelaren % Jag hittade inte.
   wwcConfigGUIAmazonTranslateRegionButton: Ändra Amazonas region
   wwcConfigConversationLangInvalid: Ogiltig språkkod!
-  wwcConfigGUIWatsonAPIKeyButton: Ändra Watson API-nyckel
   wwcEnabled: Aktiverad WorldwideChat-version {0}.
   wwctbOnSender: Boköversättning aktiverad. Högerklicka medan du håller en bok för
     att översätta den!
@@ -63,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Det gick inte att söka efter senaste uppdateringar på
     Github.
   watsonNotFoundExceptionNotification: Det går inte att översätta din inmatning längre.
-  wwcConfigConversationWatsonAPIKeyInput: Aktuell API-nyckel är {0}. Ange en API-nyckel
-    för Watson, eller skriv 0 för att gå tillbaka.
   wwctGUIStopButton: Sluta översätta
   wwcgTranslationStopped: Global chattöversättning har stoppats.
   wwcUpdaterFutureDate: Denna instans av WorldwideChat har en större version än den
@@ -75,12 +72,9 @@ Messages:
     för lång. Översättning:'
   wwctsOnTarget: Signera översättning aktiverad för {0}.
   wwcConfigCacheDisabled: Translator-cache inaktiverad.
-  wwcConfigConversationWatsonURLInput: Den aktuella webbadressen är {0}. Ange en tjänstwebbadress
-    för Watson, eller skriv 0 för att gå tillbaka.
   wwcBookDone: Boken översatt framgångsrikt.
   wwctsOnSender: Signera översättning aktiverad. Högerklicka på ett tecken för att
     översätta det!
-  watsonColorCodeWarning: Att använda färgkoder kan ge dig oförutsägbara resultat.
   wwctGUITranslationButton: Börja översätta
   wwctGUIAutoDetectButton: Identifiera källspråk automatiskt
   wwcUpdaterUpToDate: WorldwideChat är uppdaterad!
@@ -93,7 +87,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat är föråldrad. Uppdatera till den senaste
     versionen.
   wwcConfigConversationRateLimitSuccess: Gränsen har ställts in.
-  wwcConfigConversationWatsonURLSuccess: Watsons URL har ställts in.
   wwctbPlayerNotFound: Spelaren {0} hittas antingen inte, eller är inte en aktiv översättare.
   wwcConfigConversationTranslationCacheSuccess: Gränsen för cache för översättning
     har angetts
@@ -112,7 +105,6 @@ Messages:
     till 0 sekunder...
   wwcSignTranslateStart: Översätter måltecken...
   wwcConfigGUIChatSettings: Konfiguration av chatt
-  wwcConfigGUIWatsonURLButton: Ändra URL för Watson Service
   wwcConfigConversationUpdateCheckerSuccess: Fördröjning för uppdateringskontroll
     har ställts in.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat översätts från {0}
@@ -131,7 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Försök till översättningar: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazons hemliga nyckeluppsättning
     med lyckat resultat.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API-nyckeluppsättning lyckades.
   wwcRateLimit: Dina översättningar är prisbegränsade. Vänta en annan {0} sekunder.
   wwcConfigCacheEnabled: Translator-cache aktiverad och satt till en begränsning {0}.
   wwctGUIExistingTranslationButton: Skriv över aktuell översättningssession
@@ -192,7 +183,6 @@ Messages:
   wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguration'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tolererar inte användning av /reload. Var
     snäll och fortsätt med försiktighet.
   wwcConfigEnabledDebugMode: Aktiverat DEBUG-läge. Om du inte är en utvecklare eller
@@ -311,10 +301,7 @@ Messages:
     lyckat resultat. Ladda om för att ändringen ska träda i kraft.
   wwcConfigYAMLDefault: Standardvärdet för YAML för datalagring.
   wwcConfigGUISQLMenuButton: Ändra SQL-inställningar
-  wwcConfigConversationWatsonTranslateToggleSuccess: Lyckat växlade Watson Översätt.
-    Ladda om för att ändringen ska träda i kraft.
   wwcConfigGUIToggleGoogleTranslateButton: Växla Google Översätt
-  wwcConfigGUIToggleWatsonTranslateButton: Växla Watson översätta
   wwcConfigGUIToggleAmazonTranslateButton: Växla Översätt Amazon
   wwcConfigGUIStorageSettings: Konfiguration av lagring
   wwcConfigConversationAmazonTranslateToggleSuccess: Ändrade Amazon Översätt med lyckat
@@ -641,8 +628,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Ställ in din chatthändelseprioritet framgångsrikt.
   wwcConfigVaultSupportInvalid: Ogiltigt valvstöd inställt i config.yml. Standardinställt
     till sant...
-  wwcWatsonDeprecation: Watson har utfasats och stöds inte längre av IBM. Överväg
-    att byta, eftersom stöd för det kommer att tas bort i nästa uppdatering.
   wwcConfigForceChatChannelEnabled: En separat översättningskanal kommer att tvingas
     under alla översättningar.
   wwcConfigConversationSeparateChatChannelForceSuccess: Lyckades växla för att tvinga
@@ -715,4 +700,5 @@ Messages:
   wwcdResetNotif: WorldwideChat har återställts. Laddar om...
   wwcdResetNotifError: Inte alla data raderades framgångsrikt. Är du ansluten till
     din databas?
+  colorCodeWarning: Att använda färgkoder kan ge dig oförutsägbara resultat.
 

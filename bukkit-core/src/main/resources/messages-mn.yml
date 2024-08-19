@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: Тоглогч % Би олж чадаагүй.
   wwcConfigGUIAmazonTranslateRegionButton: Амазоны бүсийг өөрчлөх
   wwcConfigConversationLangInvalid: Хэлний код буруу байна!
-  wwcConfigGUIWatsonAPIKeyButton: Ватсон API Түлхүүр өөрчлөлт
   wwcEnabled: Идэвхтэй WorldWedeChat хувилбар {0}.
   wwctbOnSender: Ном орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд ном барьж байхдаа
     баруун товшино уу!
@@ -61,8 +60,6 @@ Messages:
   wwcUpdaterConnectionFailed: Github дээр хамгийн сүүлийн үеийн шинэчлэлтүүдийг шалгах
     боломжгүй.
   watsonNotFoundExceptionNotification: Таны оролтыг ямар ч цаашид орчуулах боломжгүй.
-  wwcConfigConversationWatsonAPIKeyInput: Одоогийн API түлхүүр {0} байна. оролтын
-    Ватсон нь API түлхүүр уу, эсвэл төрөл 0 буцаж явах.
   wwctGUIStopButton: Орчуулгыг зогсоох
   wwcgTranslationStopped: Глобал чат орчуулга зогссон байна.
   wwcUpdaterFutureDate: WorldWichat энэ жишээ нь хамгийн сүүлийн үеийн олон нийтэд
@@ -73,13 +70,9 @@ Messages:
     байсан юм. Орчуулга:'
   wwctsOnTarget: Дансаа ашиглах орчуулга идэвхжсэн {0}.
   wwcConfigCacheDisabled: Орчуулагч кэш идэвхгүй.
-  wwcConfigConversationWatsonURLInput: Одоогийн URL байна {0}. оролтын Ватсон нь үйлчилгээний
-    URL уу, эсвэл төрөл 0 буцаж явах.
   wwcBookDone: Ном амжилттай орчуулсан.
   wwctsOnSender: Дансаа ашиглах орчуулга идэвхтэй. Үүнийг орчуулах тэмдэг дээр хулганы
     баруун товчийг дараад!
-  watsonColorCodeWarning: Өнгөний кодыг ашиглах нь танд урьдчилан таамаглах боломжгүй
-    үр дүнг өгч болно.
   wwctGUITranslationButton: Орчуулгыг эхлүүлэх
   wwctGUIAutoDetectButton: Авто илрүүлэх эх сурвалж хэл
   wwcUpdaterUpToDate: ДэлхийдWedeChat шинэчлэгдэж байна!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн хувилбар
     руу шинэчлэнэ үү.
   wwcConfigConversationRateLimitSuccess: Rate хязгаар амжилттай тогтоосон.
-  wwcConfigConversationWatsonURLSuccess: Ватсон URL амжилттай тогтоосон.
   wwctbPlayerNotFound: Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
     биш юм.
   wwcConfigConversationTranslationCacheSuccess: Орчуулга кэш хязгаар амжилттай тогтоосон.
@@ -111,7 +103,6 @@ Messages:
     анхдагч...
   wwcSignTranslateStart: Зорилтот тэмдгийг орчуулах...
   wwcConfigGUIChatSettings: Чат тохиргоо
-  wwcConfigGUIWatsonURLButton: Ватсон үйлчилгээний URL-г өөрчлөх
   wwcConfigConversationUpdateCheckerSuccess: Шинэчлэх шалгагч саатал амжилттай тогтоосон.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Глобал чат {0} нь {1} руу орчуулагдаж
     байна.
@@ -128,7 +119,6 @@ Messages:
   wwcsAttemptedTranslations: 'Оролдсон Орчуулгууд: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Амазоны нууц түлхүүр амжилттай
     тогтоосон.
-  wwcConfigConversationWatsonAPIKeySuccess: Ватсон API гол амжилттай тогтоосон.
   wwcRateLimit: Таны орчуулга үнэ хязгаарлагдмал байна. өөр нэг түр хүлээнэ үү {0}
     секунд.
   wwcConfigCacheEnabled: Орчуулагч кэш идэвхжүүлж, {0} нь хязгаар тогтоосон.
@@ -190,7 +180,6 @@ Messages:
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
   wwcConfigGUIEachTranslatorSettings: '{0} Тохиргоо'
-  wwcConfigGUIWatsonButton: Ватсон
   wwcServerReloadWarning: WorldWedeChat нь /reload-ийн хэрэглээг зөвшөөрдөггүй. болгоомжтой
     үргэлжлүүлнэ үү.
   wwcConfigEnabledDebugMode: Идэвхжүүлсэн дибаг горим. Хэрэв та хөгжүүлэгч эсвэл алдааг
@@ -305,10 +294,7 @@ Messages:
     Өөрчлөлтийг хүчин төгөлдөр болгохын тулд дахин ачаална.
   wwcConfigYAMLDefault: Өгөгдөл хадгалах YAML нь анхдагчлан.
   wwcConfigGUISQLMenuButton: SQL Тохиргоо өөрчлөх
-  wwcConfigConversationWatsonTranslateToggleSuccess: Амжилттай ватсон орчуулах toggled.
-    Өөрчлөлтийг хүчин төгөлдөр болгохын тулд дахин ачаална.
   wwcConfigGUIToggleGoogleTranslateButton: Google Toggle орчуулах
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Ватсон орчуулах
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Toggle орчуулах
   wwcConfigGUIStorageSettings: Хадгалалтын тохиргоо
   wwcConfigConversationAmazonTranslateToggleSuccess: Амжилттай Amazon Translate toggled.
@@ -660,8 +646,6 @@ Messages:
     тохируулна уу.
   wwcConfigVaultSupportInvalid: Config.yml дээр тогтоогдсон хүчин төгөлдөр бус хадгаламжийн
     дэмжлэг. Үнэн гэж анхдагч байна...
-  wwcWatsonDeprecation: Уотсоныг хуучирсан бөгөөд IBM дэмжихээ больсон. Энэ нь дэмжлэг
-    дараагийн шинэчлэлт устгах болно гэж, шилжих авч үзнэ үү.
   wwcConfigForceChatChannelEnabled: Бүх орчуулгын явцад тусдаа орчуулгын сувгийг албадан
     гаргах болно.
   wwcConfigConversationSeparateChatChannelForceSuccess: Тусдаа сувгийг хүчээр амжилттай
@@ -739,4 +723,6 @@ Messages:
   wwcdResetNotif: WorldwideChat-ийг дахин тохируулсан. Дахин ачаалж байна...
   wwcdResetNotifError: Бүх өгөгдлийг амжилттай арчиж чадаагүй. Та өөрийн мэдээллийн
     сантай холбогдсон уу?
+  colorCodeWarning: Өнгөний кодыг ашиглах нь урьдчилан таамаглах боломжгүй үр дүнг
+    өгч магадгүй юм
 

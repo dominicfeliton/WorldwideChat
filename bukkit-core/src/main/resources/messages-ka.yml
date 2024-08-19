@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: მოთამაშე {0} ვერ მოიძებნა.
   wwcConfigGUIAmazonTranslateRegionButton: ამაზონის რეგიონის შეცვლა
   wwcConfigConversationLangInvalid: არასწორი ენის კოდი!
-  wwcConfigGUIWatsonAPIKeyButton: შეცვალეთ Watson API გასაღები
   wwcEnabled: ჩართულია WorldwideChat ვერსია {0}.
   wwctbOnSender: წიგნის თარგმანი ჩართულია. მარჯვენა ღილაკით წიგნის ჩატარებისას თარგმნის
     მას!
@@ -61,8 +60,6 @@ Messages:
   wwctsOffTarget: ხელმოწერის თარგმანი გათიშულია {0}.
   wwcUpdaterConnectionFailed: Github- ზე უახლესი განახლებების შემოწმება შეუძლებელია.
   watsonNotFoundExceptionNotification: შეუძლებელია თქვენი შეყვანის თარგმნა.
-  wwcConfigConversationWatsonAPIKeyInput: მიმდინარე API გასაღები არის {0}. გთხოვთ,
-    შეიყვანოთ API გასაღები Watson— ისთვის, ან ტიპის 0 დასაბრუნებლად.
   wwctGUIStopButton: მთარგმნელობის შეჩერება
   wwcgTranslationStopped: გლობალური სტატისტიკა თარგმანი შეწყდა.
   wwcUpdaterFutureDate: WorldwideChat- ის ეს მაგალითი უფრო დიდი ვერსიაა, ვიდრე უახლესი
@@ -73,12 +70,8 @@ Messages:
     თარგმანი:'
   wwctsOnTarget: ხელმოწერის თარგმანი ჩართულია {0}.
   wwcConfigCacheDisabled: თარჯიმანი ქეში გამორთულია.
-  wwcConfigConversationWatsonURLInput: მიმდინარე URL არის {0}. გთხოვთ, შეიყვანოთ სერვისის
-    URL Watson- ისთვის, ან აკრიფეთ 0 უკან დასაბრუნებლად.
   wwcBookDone: წიგნი წარმატებით ითარგმნა.
   wwctsOnSender: შესვლა თარგმანი ჩართულია. მარჯვენა ღილაკით ნიშანი თარგმნა!
-  watsonColorCodeWarning: ფერადი კოდების გამოყენება შეიძლება არაპროგნოზირებადი შედეგების
-    მოგცეთ.
   wwctGUITranslationButton: თარგმნის დაწყება
   wwctGUIAutoDetectButton: ავტომატური გამოვლენის წყარო ენა
   wwcUpdaterUpToDate: WorldwideChat არის დღემდე!
@@ -90,7 +83,6 @@ Messages:
   wwcPlayerNotFound: მოთამაშე {0} ვერ მოიძებნა.
   wwcUpdaterOutOfDateChat: WorldwideChat მოძველებულია. გთხოვთ, განაახლოთ უახლესი ვერსია.
   wwcConfigConversationRateLimitSuccess: კურსის ლიმიტის კომპლექტი წარმატებით.
-  wwcConfigConversationWatsonURLSuccess: Watson URL წარმატებით.
   wwctbPlayerNotFound: მოთამაშე {0} ან არ არის ნაპოვნი, ან არ არის აქტიური თარჯიმანი.
   wwcConfigConversationTranslationCacheSuccess: თარგმანის ქეშის ლიმიტი წარმატებით
     შეიქმნა.
@@ -110,7 +102,6 @@ Messages:
     0 წამი...
   wwcSignTranslateStart: სამიზნე ნიშნის თარგმნა...
   wwcConfigGUIChatSettings: ჩატის კონფიგურაცია
-  wwcConfigGUIWatsonURLButton: შეცვალეთ Watson სერვისის URL
   wwcConfigConversationUpdateCheckerSuccess: განახლების შემოწმება დაგვიანებით მითითებული
     წარმატებით.
   wwcGlobalOnJoinTranslationNotificationSourceLang: გლობალური ჩეთი თარგმნილია {0}
@@ -128,7 +119,6 @@ Messages:
   wwcsAttemptedTranslations: 'თარგმანების მცდელობა: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon საიდუმლო გასაღები კომპლექტი
     წარმატებით.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API გასაღები კომპლექტი წარმატებით.
   wwcRateLimit: თქვენი თარგმანი განაკვეთი შეზღუდულია. გთხოვთ დაელოდოთ სხვა {0} წამში.
   wwcConfigCacheEnabled: თარჯიმანი ქეში ჩართულია და დაყენებულია ლიმიტი {0}.
   wwctGUIExistingTranslationButton: მთარგმნელობითი მიმდინარე სესიის გადაწერა
@@ -186,7 +176,6 @@ Messages:
   wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.
   wwcConfigGUIEachTranslatorSettings: '{0} კონფიგურაცია'
-  wwcConfigGUIWatsonButton: უოტსონი
   wwcServerReloadWarning: WorldwideChat არ ითვალისწინებს გამოყენების/გადატვირთვის
     გამოყენებას. გთხოვთ გააგრძელოთ სიფრთხილით.
   wwcConfigEnabledDebugMode: ჩართულია გამართვის რეჟიმი. თუ თქვენ არ ხართ დეველოპერი
@@ -300,10 +289,7 @@ Messages:
     ცვლილებების შეცვლა ძალაში შედის.
   wwcConfigYAMLDefault: უპირობოდ YAML მონაცემთა შენახვისთვის.
   wwcConfigGUISQLMenuButton: SQL პარამეტრების შეცვლა
-  wwcConfigConversationWatsonTranslateToggleSuccess: წარმატებით toggled Watson თარგმნა.
-    ცვლილებების შეცვლა ძალაში შედის.
   wwcConfigGUIToggleGoogleTranslateButton: Google Translate გადართვა
-  wwcConfigGUIToggleWatsonTranslateButton: უოტსონის თარგმნის გადართვა
   wwcConfigGUIToggleAmazonTranslateButton: გადართვა Amazon თარგმნა
   wwcConfigGUIStorageSettings: შენახვის კონფიგურაცია
   wwcConfigConversationAmazonTranslateToggleSuccess: წარმატებით toggled Amazon თარგმნა.
@@ -633,8 +619,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: წარმატებით დააყენეთ თქვენი ჩატის ღონისძიების
   wwcConfigVaultSupportInvalid: არასწორი საფარის მხარდაჭერა დაყენებულია config.yml—
     ში. ნამდვილად არ შეესაბამება...
-  wwcWatsonDeprecation: უოტსონი მოძველებულია და IBM— ის მხარდაჭერას აღარ უჭერს. გთხოვთ,
-    გაითვალისწინოთ გადართვა, რადგან მისი მხარდაჭერა მოიხსნება შემდეგ განახლებ
   wwcConfigForceChatChannelEnabled: ყველა თარგმანის დროს იძულებული იქნება ცალკე თარგმანის
     არხ
   wwcConfigConversationSeparateChatChannelForceSuccess: წარმატებით შეცვალა ცალკე არხის
@@ -703,4 +687,5 @@ Messages:
   wwcdResetNotif: WorldwideChat გადატვირთულია. გადატვირთვა...
   wwcdResetNotifError: ყველა მონაცემი წარმატებით არ გაწმენდა. დაკავშირებული ხართ თქვენს
     მონაცემთა ბაზასთან?
+  colorCodeWarning: ფერის კოდების გამოყენებამ შეიძლება მოგაწოდოთ არაპროგნოზ
 

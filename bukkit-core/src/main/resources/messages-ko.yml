@@ -42,7 +42,6 @@ Messages:
   wwctPlayerNotFound: 플레이어 %을 (를) 찾을 수 없습니다.
   wwcConfigGUIAmazonTranslateRegionButton: 아마존 리전 변경
   wwcConfigConversationLangInvalid: 언어 코드가 잘못되었습니다.
-  wwcConfigGUIWatsonAPIKeyButton: 왓슨 API 키 변경
   wwcEnabled: 월드와이드 채팅 버전 {0}을 (를) 활성화했습니다.
   wwctbOnSender: 도서 번역이 활성화되었습니다.책을 누른 상태에서 마우스 오른쪽 버튼을 클릭하여 번역하세요!
   wwcListenersInitialized: 초기화된 리스너입니다.
@@ -51,8 +50,6 @@ Messages:
   wwctsOffTarget: '{0}에 대해 기호 번역이 비활성화되었습니다.'
   wwcUpdaterConnectionFailed: Github에서 최신 업데이트를 확인할 수 없습니다.
   watsonNotFoundExceptionNotification: 입력을 더 이상 번역 할 수 없습니다.
-  wwcConfigConversationWatsonAPIKeyInput: 현재 API 키는 {0}입니다. 왓슨의 API 키를 입력하거나 0을 입력하여
-    돌아가십시오.
   wwctGUIStopButton: 번역 중지
   wwcgTranslationStopped: 글로벌 채팅 번역이 중지되었습니다.
   wwcUpdaterFutureDate: 이 WorldwideChat 인스턴스는 최신 공개 버전보다 더 큰 버전을 가지고 있습니다.
@@ -61,11 +58,8 @@ Messages:
   wwcSignDeletedOrTooLong: '대상 기호가 삭제되었거나 번역이 너무 깁니다.번역:'
   wwctsOnTarget: '{0}에 대해 서명 번역이 활성화되었습니다.'
   wwcConfigCacheDisabled: 번역기 캐시를 사용할 수 없습니다.
-  wwcConfigConversationWatsonURLInput: 현재 URL은 {0}입니다. Watson의 서비스 URL을 입력하거나 0을 입력하여
-    돌아가십시오.
   wwcBookDone: 책이 성공적으로 번역되었습니다.
   wwctsOnSender: 서명 번역이 활성화되었습니다.기호를 마우스 오른쪽 버튼으로 클릭하여 번역하십시오!
-  watsonColorCodeWarning: 색상 코드를 사용하면 예기치 않은 결과가 발생할 수 있습니다.
   wwctGUITranslationButton: 번역 시작
   wwctGUIAutoDetectButton: 소스 언어 자동 검색
   wwcUpdaterUpToDate: 월드와이드채팅이 최신 버전입니다!
@@ -77,7 +71,6 @@ Messages:
   wwcPlayerNotFound: 플레이어 %을 (를) 찾을 수 없습니다.
   wwcUpdaterOutOfDateChat: 월드와이드채팅이 오래되었습니다.최신 버전으로 업데이트하십시오.
   wwcConfigConversationRateLimitSuccess: 속도 제한이 설정되었습니다.
-  wwcConfigConversationWatsonURLSuccess: 왓슨 URL이 성공적으로 설정되었습니다.
   wwctbPlayerNotFound: '{0} 플레이어를 찾을 수 없거나 활성 번역자가 아닙니다.'
   wwcConfigConversationTranslationCacheSuccess: 번역 캐시 한도가 성공적으로 설정되었습니다.
   wwctInvalidArgs: 잘못된 인수가 제공되었습니다.
@@ -94,7 +87,6 @@ Messages:
   wwcConfigRateLimitInvalid: 설정.yml에 잘못된 속도 제한이 설정되었습니다.기본값 0 초로 설정 중...
   wwcSignTranslateStart: 대상 기호 번역 중...
   wwcConfigGUIChatSettings: 채팅 구성
-  wwcConfigGUIWatsonURLButton: 왓슨 서비스 URL 변경
   wwcConfigConversationUpdateCheckerSuccess: 업데이트 검사기 지연이 성공적으로 설정되었습니다.
   wwcGlobalOnJoinTranslationNotificationSourceLang: 글로벌 채팅이 {0}에서 {1} (으) 로 번역되고 있습니다.
   wwcConfigGUITranslatorSettings: 번역기 구성
@@ -107,7 +99,6 @@ Messages:
   wwcVersion: 월드와이드 채팅, 버전
   wwcsAttemptedTranslations: '번역 시도: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon 보안 키를 성공적으로 설정했습니다.
-  wwcConfigConversationWatsonAPIKeySuccess: 왓슨 API 키가 성공적으로 설정되었습니다.
   wwcRateLimit: 번역은 속도가 제한되어 있습니다.다른 {0} 초 정도 기다리십시오.
   wwcConfigCacheEnabled: 번역기 캐시가 활성화되고 {0} 제한으로 설정되었습니다.
   wwctGUIExistingTranslationButton: 현재 번역 세션 덮어쓰기
@@ -154,7 +145,6 @@ Messages:
   wwctiOnTarget: '{0}에 대해 항목 변환이 활성화되었습니다.'
   wwcInvalidTranslator: 번역기 설정이 잘못되었습니다.이 플러그인을 사용하려면 config.yml 또는 /wwcc에서 수정하십시오.
   wwcConfigGUIEachTranslatorSettings: '{0} 구성'
-  wwcConfigGUIWatsonButton: 왓슨
   wwcServerReloadWarning: WorldwideChat 은 /다시로드 사용을 용납하지 않습니다.주의해서 진행하십시오.
   wwcConfigEnabledDebugMode: 디버그 모드를 활성화했습니다.개발자 또는 문제 해결사가 아닌 경우 이 기능을 해제해야 합니다.
   wwcTranslatorErrorThresholdReached: 오류 임계값에 도달했습니다.이 플러그인은 이제 다시 로드되고 모든 번역자를 비활성화합니다.
@@ -247,10 +237,7 @@ Messages:
     적용하려면 다시 로드합니다.
   wwcConfigYAMLDefault: 데이터 저장을 위해 기본적으로 YAML로 설정됩니다.
   wwcConfigGUISQLMenuButton: SQL 설정 변경
-  wwcConfigConversationWatsonTranslateToggleSuccess: 왓슨 번역을 성공적으로 전환했습니다.변경 사항을 적용하려면
-    다시 로드합니다.
   wwcConfigGUIToggleGoogleTranslateButton: 구글 번역 토글
-  wwcConfigGUIToggleWatsonTranslateButton: 왓슨 번역 토글
   wwcConfigGUIToggleAmazonTranslateButton: 아마존 번역 토글
   wwcConfigGUIStorageSettings: 스토리지 구성
   wwcConfigConversationAmazonTranslateToggleSuccess: 아마존 번역을 성공적으로 전환했습니다.변경 사항을 적용하려면
@@ -520,8 +507,6 @@ Messages:
   wwcConfigConversationChatPriorityBadInput: 채팅 우선순위 입력이 잘못되었습니다!다시 시도해 주세요.
   wwcConfigConversationChatPrioritySuccess: 채팅 이벤트 우선순위를 성공적으로 설정했습니다.
   wwcConfigVaultSupportInvalid: config.yml에 설정된 저장소 지원이 잘못되었습니다.기본값은 true입니다...
-  wwcWatsonDeprecation: Watson은 더 이상 사용되지 않으며 IBM에서 더 이상 지원하지 않습니다.다음 업데이트에서 지원이 제거될
-    예정이므로 전환을 고려하시기 바랍니다.
   wwcConfigForceChatChannelEnabled: 모든 번역 중에는 별도의 번역 채널이 필요합니다.
   wwcConfigConversationSeparateChatChannelForceSuccess: 개별 채널 강제 전환에 성공했습니다.
   wwcConfigConversationChannelIconInput: 개별 번역 채널의 현재 아이콘은 {0} 입니다.색상 코드가 지원됩니다. 돌아가려면
@@ -577,4 +562,5 @@ Messages:
     이 명령을 실행하지 마십시오. {0}'
   wwcdResetNotif: 월드와이드챗이 초기화되었습니다.새로 고침 중...
   wwcdResetNotifError: 모든 데이터가 성공적으로 지워진 것은 아닙니다.데이터베이스에 연결되어 있나요?
+  colorCodeWarning: 색상 코드를 사용하면 예기치 않은 결과가 발생할 수 있습니다.
 

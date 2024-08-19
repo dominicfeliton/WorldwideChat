@@ -86,8 +86,6 @@ Messages:
   wwctsOnTarget: Traduction des signes activée pour {0}.
   wwcConfigCacheDisabled: Le cache du traducteur est désactivé.
   wwcConfigYAMLDefault: La valeur par défaut est YAML pour le stockage des données.
-  watsonColorCodeWarning: L'utilisation de codes couleurs peut vous donner des résultats
-    imprévisibles.
   wwctGUITranslationButton: Commencez à traduire
   wwcConfigConversationAmazonTranslateRegionInput: La région actuelle est {0}. Entrez
     une région pour Amazon ou saisissez 0 pour revenir en arrière.
@@ -119,7 +117,6 @@ Messages:
   wwctrlNotATranslator: Vous n'êtes pas un traducteur actif! Assurez-vous de l'avoir
     défini avec /wwct.
   wwcsActiveTransOutLang: 'Langue de sortie: {0}'
-  wwcConfigGUIWatsonURLButton: Modifier l'URL du service Watson
   wwcConfigConversationSQLPasswordSuccess: Le mot de passe SQL a été modifié avec
     succès.
   wwcConfigInvalidFatalAsyncTimeout: Délai d'expiration asynchrone fatal défini non
@@ -163,7 +160,6 @@ Messages:
   wwcItemTranslateTitleDone: Titre de l'article traduit avec succès.
   wwcConfigConversationLibreTranslateApiKeySuccess: La clé API libre a été définie
     avec succès.
-  wwcConfigGUIWatsonButton: Watson
   wwcConfigConversationPostgresPortSuccess: Le port PostgreSQL a été modifié avec
     succès.
   wwcsNotATranslator: Aucun enregistrement n'est encore disponible pour {0}.
@@ -346,7 +342,6 @@ Messages:
   wwcdCacheSize: La taille du cache est actuellement {0}, avec une limite de {1}.
   wwctciOffTarget: La traduction du chat entrant est désactivée pour {0}.
   wwcConfigGUIFatalAsyncAbortButton: Modifier le délai d'expiration d'une tâche asynchrone
-  wwcConfigGUIWatsonAPIKeyButton: Modifier la clé d'API Watson
   wwctrlRateLimitOffSender: Vous avez désactivé votre limite tarifaire.
   wwcConfigGUIDeepLTranslateApiKeyButton: Modifier la clé d'API DeepL Translate
   wwcConfigSyncDelayEnabled: Délai de synchronisation des données par utilisateur
@@ -371,8 +366,6 @@ Messages:
   wwcsActiveTransIncoming: 'Traduire le chat entrant: {0}'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Modifier la clé d'API Google Translate
   wwcConfigConversationMongoPortSuccess: Le port MongoDB a été modifié avec succès.
-  wwcConfigConversationWatsonURLInput: L'URL actuelle est {0}. Entrez une URL de service
-    pour Watson, ou saisissez 0 pour revenir en arrière.
   wwcrTransFail: WorldwideChat a été rechargé, mais aucun traducteur n'a été activé.
   wwcConfigConversationAzureTranslateRegionSuccess: La région Azure a été définie
     avec succès.
@@ -389,7 +382,6 @@ Messages:
     à jour vers la dernière version.
   wwcConfigConversationRateLimitSuccess: Limite de débit définie avec succès.
   wwctrlPlayerNotFound: Le joueur {0} est introuvable ou n'est pas un traducteur actif.
-  wwcConfigConversationWatsonURLSuccess: L'URL Watson a été définie avec succès.
   wwctbPlayerNotFound: Le joueur {0} est introuvable ou n'est pas un traducteur actif.
   wwcConfigGUIResponseLimitButton: Modifier le délai de réponse du traducteur
   wwcsActiveTransBook: 'Livre de traduction: {0}'
@@ -426,7 +418,6 @@ Messages:
     InputPhrase= {3} | OutputPhrase= {4}'
   wwcConfigConversationLibreURLSuccess: URL libre définie avec succès.
   wwcConfigGUISQLPasswordButton: Modifier le mot de passe SQL
-  wwcConfigConversationWatsonAPIKeySuccess: La clé API Watson a été définie avec succès.
   wwctGUIExistingChatIncomingEnabled: 'Traduction du chat entrant activée: {0}'
   wwcConfigCacheEnabled: Le cache du traducteur est activé et défini sur une limite
     de {0}.
@@ -440,8 +431,6 @@ Messages:
   wwcConfigConversationSQLUsernameSuccess: Le nom d'utilisateur SQL a été modifié
     avec succès.
   wwcsLastTranslationTime: 'Date de la dernière traduction (réussie): {0}'
-  wwcConfigConversationWatsonTranslateToggleSuccess: Vous avez activé Watson Translate
-    avec succès. Rechargez pour que la modification soit prise en compte.
   wwcConfigConversationSQLPortSuccess: Le port SQL a été modifié avec succès.
   wwcItemTranslateLoreDone: La tradition des objets a été traduite avec succès.
   wwcConfigConversationAmazonTranslateAccessKeyInput: La clé d'accès actuelle est
@@ -502,8 +491,6 @@ Messages:
   wwcsTitle: Enregistrement de {0}
   wwcConfigGUIToggleSQLButton: Basculer avec SQL
   wwcConfigGUIErrorLimitButton: Modifier la limite d'erreur du traducteur
-  wwcConfigConversationWatsonAPIKeyInput: La clé API actuelle est {0}. Entrez une
-    clé API pour Watson ou saisissez 0 pour revenir en arrière.
   wwcgTranslationStopped: La traduction globale du chat a été arrêtée.
   wwcConfigConversationCharacterLimitSuccess: Limite de caractères définie avec succès.
   wwcItemTranslateTitleStock: Impossible de traduire les noms d'articles par défaut.
@@ -536,7 +523,6 @@ Messages:
   wwcConfigGUIAzureTranslateRegionButton: Modifier la région Azure Translate
   wwctCannotTranslateConsole: Impossible de démarrer une session de traduction pour
     console!
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Translate
   wwcConfigConversationFatalAsyncAbort: Le délai d'attente actuel pour abandonner
     toutes les tâches asynchrones est de {0} secondes. Tapez une valeur supérieure
     à 7 pour définir un nouveau délai d'attente, ou une valeur inférieure à 7 pour
@@ -696,9 +682,6 @@ Messages:
     votre événement de chat.
   wwcConfigVaultSupportInvalid: Support de coffre-fort non valide défini dans config.yml.
     Par défaut, c'est vrai...
-  wwcWatsonDeprecation: Watson est devenu obsolète et n'est plus pris en charge par
-    IBM. Veuillez envisager de changer, car la prise en charge de cette fonctionnalité
-    sera supprimée lors de la prochaine mise à jour.
   wwcConfigForceChatChannelEnabled: Un canal de traduction distinct sera imposé pour
     toutes les traductions.
   wwcConfigConversationSeparateChatChannelForceSuccess: Basculement réussi en forçant
@@ -780,3 +763,5 @@ Messages:
   wwcdResetNotif: WorldwideChat a été réinitialisé. Rechargement...
   wwcdResetNotifError: Toutes les données n'ont pas été effacées avec succès. Êtes-vous
     connecté à votre base de données?
+  colorCodeWarning: L'utilisation de codes couleurs peut vous donner des résultats
+    imprévisibles.

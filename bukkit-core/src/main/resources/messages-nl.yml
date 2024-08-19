@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Speler {0} heb niet gevonden.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon-regio wijzigen
   wwcConfigConversationLangInvalid: Ongeldige taalcode!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API-sleutel wijzigen
   wwcEnabled: WorldwideChat-versie {0} ingeschakeld.
   wwctbOnSender: Boekvertaling ingeschakeld. Klik met de rechtermuisknop terwijl u
     een boek vasthoudt om het te
@@ -62,8 +61,6 @@ Messages:
   wwctsOffTarget: Vertaling voor ondertekenen uitgeschakeld voor {0}.
   wwcUpdaterConnectionFailed: Kan niet controleren op de nieuwste updates voor Github.
   watsonNotFoundExceptionNotification: Kan uw invoer niet verder vertalen.
-  wwcConfigConversationWatsonAPIKeyInput: De huidige API-sleutel is {0}. Voer een
-    API-sleutel in voor Watson of typ 0 om terug te gaan.
   wwctGUIStopButton: Stoppen met vertalen
   wwcgTranslationStopped: Wereldwijde chat-vertaling is gestopt.
   wwcUpdaterFutureDate: Dit exemplaar van WorldwideChat heeft een grotere versie dan
@@ -73,13 +70,9 @@ Messages:
   wwcSignDeletedOrTooLong: 'Doelteken is verwijderd of de vertaling was te lang. Vertaling:'
   wwctsOnTarget: Vertaling ondertekenen ingeschakeld voor {0}.
   wwcConfigCacheDisabled: Cache van de vertaler uitgeschakeld.
-  wwcConfigConversationWatsonURLInput: De huidige URL is {0}. Voer een service-URL
-    in voor Watson of typ 0 om terug te gaan.
   wwcBookDone: Boek met succes vertaald.
   wwctsOnSender: Vertaling ondertekenen ingeschakeld. Klik met de rechtermuisknop
     op een teken om het te vertalen!
-  watsonColorCodeWarning: Het gebruik van kleurcodes kan u onvoorspelbare resultaten
-    opleveren.
   wwctGUITranslationButton: Beginnen met vertalen
   wwctGUIAutoDetectButton: Brontaal automatisch detecteren
   wwcUpdaterUpToDate: WorldwideChat is up to date!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat is verouderd. Gelieve bij te werken naar
     de nieuwste versie.
   wwcConfigConversationRateLimitSuccess: Tarief limiet met succes ingesteld.
-  wwcConfigConversationWatsonURLSuccess: Watson URL is succesvol ingesteld.
   wwctbPlayerNotFound: Speler {0} is niet gevonden of is geen actieve vertaler.
   wwcConfigConversationTranslationCacheSuccess: Limiet voor vertaalcache ingesteld.
   wwctInvalidArgs: Ongeldige argumenten opgegeven!
@@ -111,7 +103,6 @@ Messages:
     Standaardwaarde 0 seconden...
   wwcSignTranslateStart: Doelteken vertalen...
   wwcConfigGUIChatSettings: Chat-configuratie
-  wwcConfigGUIWatsonURLButton: Watson-service-URL wijzigen
   wwcConfigConversationUpdateCheckerSuccess: Update checker vertraging ingesteld met
     succes.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald van
@@ -129,7 +120,6 @@ Messages:
   wwcsAttemptedTranslations: 'Poging tot vertalingen: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: De geheime sleutel van Amazon
     is succesvol ingesteld.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API-sleutelset succesvol.
   wwcRateLimit: Uw vertalingen zijn beperkt. Wacht andere {0} seconden.
   wwcConfigCacheEnabled: Vertaler cache ingeschakeld en ingesteld op een limiet van
     {0}.
@@ -191,7 +181,6 @@ Messages:
   wwcInvalidTranslator: Ongeldige instellingen voor vertalers. Gelieve dit op te lossen
     in je config.yml of met /wwcc om deze plugin te gebruiken.
   wwcConfigGUIEachTranslatorSettings: '{0} Configuratie'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat staat het gebruik van /reloadniet toe. Wees
     voorzichtig.
   wwcConfigEnabledDebugMode: Ingeschakelde DEBUG-modus. Als u geen ontwikkelaar of
@@ -310,10 +299,7 @@ Messages:
     ingeschakeld. Herladen om de wijziging van kracht te laten worden.
   wwcConfigYAMLDefault: Standaard ingesteld op YAML voor gegevensopslag.
   wwcConfigGUISQLMenuButton: SQL-instellingen wijzigen
-  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate met succes ingeschakeld.
-    Herladen om de wijziging van kracht te laten worden.
   wwcConfigGUIToggleGoogleTranslateButton: Schakel Google Translate in
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Vertalen
   wwcConfigGUIToggleAmazonTranslateButton: Schakel Amazon Vertaal
   wwcConfigGUIStorageSettings: Configuratie van opslag
   wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate is succesvol
@@ -657,9 +643,6 @@ Messages:
     in.
   wwcConfigVaultSupportInvalid: Ongeldige vault-ondersteuning is ingesteld in config.yml.
     Standaard ingesteld op true...
-  wwcWatsonDeprecation: Watson is verouderd en wordt niet langer ondersteund door
-    IBM. Overweeg om over te stappen, want de ondersteuning hiervoor wordt in de volgende
-    update verwijderd.
   wwcConfigForceChatChannelEnabled: Tijdens alle vertalingen wordt een apart vertaalkanaal
     afgedwongen.
   wwcConfigConversationSeparateChatChannelForceSuccess: Met succes omgeschakeld om
@@ -736,4 +719,5 @@ Messages:
   wwcdResetNotif: WorldwideChat is opnieuw ingesteld. Herladen...
   wwcdResetNotifError: Niet alle gegevens zijn succesvol gewist. Ben je verbonden
     met je database?
+  colorCodeWarning: Het gebruik van kleurcodes kan onvoorspelbare resultaten opleveren.
 

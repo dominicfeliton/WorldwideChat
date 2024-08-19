@@ -49,7 +49,6 @@ Messages:
   wwctPlayerNotFound: ખેલાડી % મને મળ્યું નથી.
   wwcConfigGUIAmazonTranslateRegionButton: એમેઝોન પ્રદેશ બદલો
   wwcConfigConversationLangInvalid: અમાન્ય ભાષા કોડ!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API કી બદલો
   wwcEnabled: સક્ષમ વિશ્વવ્યાપી ચેટ સંસ્કરણ {0}.
   wwctbOnSender: પુસ્તક અનુવાદ સક્ષમ. તેનું અનુવાદ કરવા માટે કોઈ પુસ્તક રાખતી વખતે
     જમણું-ક્લિક કરો!
@@ -60,8 +59,6 @@ Messages:
   wwctsOffTarget: અનુવાદ સાઇન ઇન કરો {0} માટે અક્ષમ છે.
   wwcUpdaterConnectionFailed: Github પર નવીનતમ અપડેટ્સ તપાસવામાં અસમર્થ.
   watsonNotFoundExceptionNotification: તમારા ઇનપુટને વધુ અનુવાદિત કરવામાં અસમર્થ.
-  wwcConfigConversationWatsonAPIKeyInput: વર્તમાન API કી {0} છે કૃપા કરીને વોટસન માટે
-    API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
   wwctGUIStopButton: અનુવાદ કરવાનું રોકો
   wwcgTranslationStopped: વૈશ્વિક ચેટ અનુવાદ બંધ કરવામાં આવ્યું છે.
   wwcUpdaterFutureDate: વર્લ્ડવાઇડચેટના આ ઉદાહરણમાં નવીનતમ જાહેર કરતાં વધુ સંસ્કરણ
@@ -72,11 +69,8 @@ Messages:
     ખૂબ લાંબુ હતું. અનુવાદ:'
   wwctsOnTarget: '{0} માટે અનુવાદ સક્રિય કરેલ સાઇન ઇન કરો.'
   wwcConfigCacheDisabled: અનુવાદક કેશ અક્ષમ.
-  wwcConfigConversationWatsonURLInput: વર્તમાન URL {0} છે કૃપા કરીને વોટસન માટે સેવા
-    URL ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
   wwcBookDone: પુસ્તક સફળતાપૂર્વક અનુવાદિત.
   wwctsOnSender: સાઇન અનુવાદ સક્ષમ. તેને અનુવાદિત કરવા માટે સાઇન પર જમણું-ક્લિક કરો!
-  watsonColorCodeWarning: રંગ કોડ્સનો ઉપયોગ તમને અણધારી પરિણામો આપી શકે છે.
   wwctGUITranslationButton: અનુવાદ શરૂ કરો
   wwctGUIAutoDetectButton: સ્વતઃ શોધી સ્રોત ભાષા
   wwcUpdaterUpToDate: વર્લ્ડવાઇડચેટ અપ ટુ ડેટ છે!
@@ -89,7 +83,6 @@ Messages:
   wwcUpdaterOutOfDateChat: વર્લ્ડવાઇડચેટ આઉટ ઓફ ડેટ છે. કૃપા કરીને નવીનતમ સંસ્કરણ
     પર અપડેટ કરો.
   wwcConfigConversationRateLimitSuccess: દર મર્યાદા સફળતાપૂર્વક સેટ.
-  wwcConfigConversationWatsonURLSuccess: વોટસન URL સફળતાપૂર્વક સેટ.
   wwctbPlayerNotFound: ખેલાડી {0} ક્યાં તો મળી નથી, અથવા સક્રિય અનુવાદક નથી.
   wwcConfigConversationTranslationCacheSuccess: અનુવાદ કેશ મર્યાદા સફળતાપૂર્વક સેટ.
   wwctInvalidArgs: અમાન્ય દલીલો પૂરી પાડવામાં!
@@ -106,7 +99,6 @@ Messages:
   wwcConfigRateLimitInvalid: ખરાબ દર મર્યાદા config.yml માં સુયોજિત. 0 સેકંડમાં ડિફોલ્ટિંગ...
   wwcSignTranslateStart: લક્ષ્ય સંકેતને અનુવાદિત કરી રહ્યું છે...
   wwcConfigGUIChatSettings: ચેટ રૂપરેખાંકન
-  wwcConfigGUIWatsonURLButton: વૉટ્સન સેવા URL બદલો
   wwcConfigConversationUpdateCheckerSuccess: અપડેટ તપાસનાર વિલંબ સફળતાપૂર્વક સેટ કરો.
   wwcGlobalOnJoinTranslationNotificationSourceLang: વૈશ્વિક ચેટ {0} થી અનુવાદિત થઈ
     રહી છે.
@@ -123,7 +115,6 @@ Messages:
   wwcsAttemptedTranslations: 'અનુવાદો પ્રયાસ કર્યો: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: એમેઝોન ગુપ્ત કી સફળતાપૂર્વક
     સેટ.
-  wwcConfigConversationWatsonAPIKeySuccess: વોટસન API કી સફળતાપૂર્વક સેટ.
   wwcRateLimit: તમારા અનુવાદો દર મર્યાદિત છે. કૃપા કરીને બીજા {0} સેકંડ રાહ જુઓ.
   wwcConfigCacheEnabled: અનુવાદક કેશ સક્ષમ અને {0} ની મર્યાદા પર સેટ કરો.
   wwctGUIExistingTranslationButton: વર્તમાન અનુવાદ સત્ર પર ફરીથી લખો
@@ -182,7 +173,6 @@ Messages:
   wwcInvalidTranslator: અમાન્ય અનુવાદક સેટિંગ્સ. કૃપા કરીને આ પલ્ગઇનની વાપરવા માટે
     તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.
   wwcConfigGUIEachTranslatorSettings: '{0} રૂપરેખાંકન'
-  wwcConfigGUIWatsonButton: વોટસન
   wwcServerReloadWarning: વર્લ્ડવાઇડચેટ/ફરીથી લોડ કરવાના ઉપયોગને અનુરૂપ નથી. કૃપા
     કરીને સાવધાની સાથે આગળ વધો.
   wwcConfigEnabledDebugMode: સક્ષમ ડીબગ મોડ. જો તમે વિકાસકર્તા અથવા મુશ્કેલીનિવારણ
@@ -297,10 +287,7 @@ Messages:
     કર્યું. ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
   wwcConfigYAMLDefault: ડેટા સ્ટોરેજ માટે YAML માં ડિફોલ્ટ.
   wwcConfigGUISQLMenuButton: એસક્યુએલ સેટિંગ્સ બદલો
-  wwcConfigConversationWatsonTranslateToggleSuccess: વોટસન અનુવાદને સફળતાપૂર્વક toggled.
-    ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
   wwcConfigGUIToggleGoogleTranslateButton: ગૂગલ અનુવાદને ટૉગલ કરો
-  wwcConfigGUIToggleWatsonTranslateButton: ટૉગલ વાટ્સન અનુવાદ
   wwcConfigGUIToggleAmazonTranslateButton: એમેઝોન અનુવાદ ટૉગલ કરો
   wwcConfigGUIStorageSettings: સંગ્રહ રૂપરેખાંકન
   wwcConfigConversationAmazonTranslateToggleSuccess: સફળતાપૂર્વક એમેઝોન અનુવાદ toggled.
@@ -630,9 +617,6 @@ Messages:
     કરો.
   wwcConfigVaultSupportInvalid: config.yml માં અમાન્ય તિજોરી સપોર્ટ સેટ છે. સાચા પર
     ડિફોલ્ટ થઈ રહ્યું છે...
-  wwcWatsonDeprecation: વોટસનને અધિક કરવામાં આવ્યું છે અને હવે આઇબીએમ દ્વારા સમર્થિત
-    નથી. કૃપા કરીને સ્વિચિંગ કરવાનું વિચારો, કારણ કે તે માટેનો સપોર્ટ આગામી અપડેટમાં
-    દૂર કરવામાં આવશે.
   wwcConfigForceChatChannelEnabled: બધા અનુવાદો દરમિયાન એક અલગ અનુવાદ ચેનલ ફરજ પાડવામાં
     આવશે.
   wwcConfigConversationSeparateChatChannelForceSuccess: સફળતાપૂર્વક અલગ ચેનલને દબાણ
@@ -710,4 +694,5 @@ Messages:
   wwcdResetNotif: વર્લ્ડવાઇડચેટ ફરીથી સેટ કરવામાં આવ્યું છે. ફરીથી લોડ થઈ રહ્યું છે...
   wwcdResetNotifError: તમામ ડેટા સફળતાપૂર્વક સાફ કરવામાં આવ્યો ન હતો. શું તમે તમારા
     ડેટાબેઝ સાથે જોડાયેલા છો?
+  colorCodeWarning: રંગ કોડનો ઉપયોગ કરવાથી તમને અણધારી પરિણામો મળી શકે છે.
 
