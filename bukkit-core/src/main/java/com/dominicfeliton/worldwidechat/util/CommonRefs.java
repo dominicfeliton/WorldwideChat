@@ -510,10 +510,12 @@ public class CommonRefs {
 			} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
 				// MockBukkit does not support callSyncMethod
 				// Folia doesn't need it (?)
+				// TODO: Unsure if this is working on Folia or not...investigate further!!
 				debugMsg("Checking permissions in translateText() WITHOUT callSyncMethod()...");
 				permissionCheck = checkForRateLimitPermissions(currPlayer);
 				isBlacklistExempt = currPlayer.hasPermission("worldwidechat.blacklist.exempt");
 			}
+			debugMsg("rateLimit: " + permissionCheck + "| blacklistExempt: " + isBlacklistExempt);
 
 			// Run blacklist if user is not exempt
 			if (!isBlacklistExempt) {
