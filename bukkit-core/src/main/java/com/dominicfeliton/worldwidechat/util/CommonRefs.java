@@ -447,6 +447,13 @@ public class CommonRefs {
 		
 		/* Main logic callback */
 		Callable<String> result = () -> {
+			// Init vars
+			boolean isExempt = false;
+			boolean isBlacklistExempt = false;
+			boolean hasPermission = false;
+			int personalRateLimit = 0;
+			String permissionCheck = "";
+
 			/* Detect color codes in message */
 			detectColorCodes(inMessage, currPlayer);
 
@@ -478,6 +485,31 @@ public class CommonRefs {
 				return inMessage;
 			}
 
+			/* Check blacklist */
+			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
+				try {
+					isBlacklistExempt = Bukkit.getScheduler().callSyncMethod(main, () -> currPlayer.hasPermission("worldwidechat.blacklist.exempt")).get(3, TimeUnit.SECONDS);
+				} catch (TimeoutException | InterruptedException e) {
+					debugMsg("Timeout from permission checks should never happen, unless the server is stopping or /reloading. "
+							+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
+					return inMessage;
+				}
+			} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
+				isBlacklistExempt = currPlayer.hasPermission("worldwidechat.blacklist.exempt");
+			}
+
+			// Run blacklist if user is not exempt
+			if (!isBlacklistExempt) {
+				debugMsg("Checking blacklist!");
+				for (String eaWord : main.getBlacklistTerms()) {
+					if (inMessage.contains(eaWord)) {
+						sendFancyMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);
+						debugMsg(getMsg("wwcBlacklistedMsgDetected", new String[] {eaWord, inMessage}, null));
+						return inMessage;
+					}
+				}
+			}
+
 			/* Check cache */
 			CachedTranslation testTranslation = new CachedTranslation(currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), inMessage);
 			String testCache = main.getCacheTerm(testTranslation);
@@ -489,44 +521,22 @@ public class CommonRefs {
 						ChatColor.translateAlternateColorCodes('&', testCache));
 			}
 
-			// Init vars
-			boolean isExempt = false;
-			boolean isBlacklistExempt = false;
-			boolean hasPermission = false;
-			int personalRateLimit = 0;
-			String permissionCheck = "";
-
 			// Get permission from Bukkit API synchronously, since we do not want to risk
 			// concurrency problems
 			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
 				try {
 					permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> checkForRateLimitPermissions(currPlayer)).get(3, TimeUnit.SECONDS);
-					isBlacklistExempt = Bukkit.getScheduler().callSyncMethod(main, () -> currPlayer.hasPermission("worldwidechat.blacklist.exempt")).get(3, TimeUnit.SECONDS);
 				} catch (TimeoutException | InterruptedException e) {
 					debugMsg("Timeout from permission checks should never happen, unless the server is stopping or /reloading. "
 							+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
 					return inMessage;
 				}
 			} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
-				// MockBukkit does not support callSyncMethod
-				// Folia doesn't need it (?)
-				// TODO: Unsure if this is working on Folia or not...investigate further!!
+				// MockBukkit does not support callSyncMethod, not necessary on Folia
 				debugMsg("Checking permissions in translateText() WITHOUT callSyncMethod()...");
 				permissionCheck = checkForRateLimitPermissions(currPlayer);
-				isBlacklistExempt = currPlayer.hasPermission("worldwidechat.blacklist.exempt");
 			}
-			debugMsg("rateLimit: " + permissionCheck + "| blacklistExempt: " + isBlacklistExempt);
-
-			// Run blacklist if user is not exempt
-			if (!isBlacklistExempt) {
-				for (String eaWord : main.getBlacklistTerms()) {
-					if (inMessage.contains(eaWord)) {
-						sendFancyMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);
-						debugMsg(getMsg("wwcBlacklistedMsgDetected", new String[] {eaWord, inMessage}, null));
-						return inMessage;
-					}
-				}
-			}
+			debugMsg("rateLimit: " + permissionCheck);
 
 			// If exempt, set exempt to true; else, get the delay from the end of the
 			// permission string
