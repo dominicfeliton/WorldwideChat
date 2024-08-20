@@ -500,7 +500,6 @@ public class LoadUserData implements Runnable {
 	private void createOrUpdateTable(String tableName, Map<String, String> tableSchema) throws SQLException {
 		// TODO: Check case-sensitivity on MySql on WINDOWS
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
-		// TODO: Make this more configurable/clear, do not have magic values as primary keys
 		String primaryKey = "playerUUID";
 		if (tableName.equals("persistentCache")) primaryKey = "randomUUID";
 

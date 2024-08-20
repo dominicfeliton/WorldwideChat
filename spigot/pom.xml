@@ -4,7 +4,7 @@
 
   <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat-spigot</artifactId>
-  <version>1.18.5</version>
+  <version>1.19.0</version>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -28,7 +28,7 @@
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.18.5</version>
+      <version>1.19.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

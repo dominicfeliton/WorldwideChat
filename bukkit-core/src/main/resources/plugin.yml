@@ -1,5 +1,5 @@
 name: WorldwideChat
-version: 1.18.5
+version: 1.19.0
 api-version: 1.13
 description: Break the blocky language barrier!
 author: Dominic Feliton
@@ -121,9 +121,10 @@ permissions:
             worldwidechat.wwctci: true
             worldwidechat.wwctci.otherplayers: true
             worldwidechat.wwcs: true
-            worldwidechat.ratelimit.exempt: true
             worldwidechat.wwcc: true
             worldwidechat.wwctrl: true
+            worldwidechat.ratelimit.exempt: true
+            worldwidechat.blacklist.exempt: true
         default: op
     worldwidechat.wwc:
         description: Gives access to /wwc.
@@ -185,9 +186,6 @@ permissions:
     worldwidechat.wwcs:
         description: Gives access to /wwcs.
         default: op
-    worldwidechat.ratelimit.exempt:
-        description: Exempts a user from rate limits, both personally and globally.
-        default: op
     worldwidechat.wwcc:
         description: Gives access to /wwcc.
         default: op
@@ -199,4 +197,10 @@ permissions:
         default: true
     worldwidechat.wwcl.otherplayers:
         description: Gives access to /wwcl on other players.
+        default: op
+    worldwidechat.ratelimit.exempt:
+        description: Exempts a user from rate limits, both personally and globally.
+        default: op
+    worldwidechat.blacklist.exempt:
+        description: Exempts a user from the blacklist.
         default: op
