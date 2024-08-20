@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Imeshindwa kuungana na {0} Hakikisha sifa zako na firewall
     vimeundwa kwa usahihi!
   wwcConfigEnabledbStats: bStats imewezeshwa.
-  wwctGUIMainMenuPlayer: Menyu ya Tafsiri ya {0}
   wwctGUIBookButton: Badilisha Tafsiri ya Kitabu
   wwcLangDetected: Imegunduliwa lugha {0}.
   wwcBookTranslateStart: Kutafsiri kitabu cha lengo...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Mchezaji {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Badilisha Mkoa wa Amazon
   wwcConfigConversationLangInvalid: Msimbo wa lugha batili!
-  wwcConfigGUIWatsonAPIKeyButton: Badilisha ufunguo wa API wa Watson
   wwcEnabled: Imewezeshwa toleo la WorldwideChat {0}.
   wwctbOnSender: Tafsiri ya kitabu imewezeshwa. Bonyeza-click wakati ameshika kitabu
     cha kutafsiri!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: Tafsiri ya ishara imezimwa kwa {0}.
   wwcUpdaterConnectionFailed: Haiwezi kuangalia sasisho za hivi karibuni kwenye Github.
   watsonNotFoundExceptionNotification: Haiwezi kutafsiri pembejeo yako yoyote zaidi.
-  wwcConfigConversationWatsonAPIKeyInput: Kitufe cha sasa cha API ni {0}. tafadhali
-    ingiza ufunguo wa API kwa Watson, au funga 0 kurudi nyuma.
   wwctGUIStopButton: Acha kutafsiri
   wwcgTranslationStopped: Tafsiri ya mazungumzo ya kimataifa imesimamishwa.
   wwcUpdaterFutureDate: Mfano huu wa WorldwideChat una toleo kubwa zaidi kuliko moja
@@ -74,11 +70,8 @@ Messages:
     ndefu sana. Tafsiri:'
   wwctsOnTarget: Tafsiri ya ishara imewezeshwa kwa {0}.
   wwcConfigCacheDisabled: Cache ya Translator imezimwa
-  wwcConfigConversationWatsonURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya
-    huduma kwa Watson, au funga 0 kurudi nyuma.
   wwcBookDone: Kitabu kutafsiriwa kwa mafanikio.
   wwctsOnSender: Tafsiri ya ishara imewezeshwa. Bonyeza-click juu ya ishara ya kutafsiri!
-  watsonColorCodeWarning: Kutumia codes rangi inaweza kukupa matokeo haitabiriki.
   wwctGUITranslationButton: Anza Kutafsiri
   wwctGUIAutoDetectButton: Kuchunguza kiotomatiki lugha
   wwcUpdaterUpToDate: WorldwideChat ni hadi sasa!
@@ -91,7 +84,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo
     la karibuni.
   wwcConfigConversationRateLimitSuccess: Kiwango cha kikomo kuweka mafanikio.
-  wwcConfigConversationWatsonURLSuccess: Watson URL imewekwa kwa mafanikio.
   wwctbPlayerNotFound: Mchezaji {0} haipatikani, au si translator hai.
   wwcConfigConversationTranslationCacheSuccess: Tafsiri cache kikomo kuweka mafanikio.
   wwctInvalidArgs: hoja batili zinazotolewa!
@@ -110,7 +102,6 @@ Messages:
     kwa sekunde 0...
   wwcSignTranslateStart: Kutafsiri ishara ya lengo...
   wwcConfigGUIChatSettings: Soga Usanidi
-  wwcConfigGUIWatsonURLButton: Badilisha URL ya Huduma ya Watson
   wwcConfigConversationUpdateCheckerSuccess: Mwisho checker kuchelewa kuweka mafanikio.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Soga ya kimataifa inatafsiriwa
     kutoka {0} hadi {1}.
@@ -127,7 +118,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tafsiri zilizojaribiwa: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon siri muhimu kuweka
     mafanikio.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API muhimu kuweka mafanikio.
   wwcRateLimit: Tafsiri yako ni kiwango mdogo. Tafadhali subiri sekunde nyingine {0}.
   wwcConfigCacheEnabled: Cache ya Translator imewezeshwa na kuweka kikomo cha {0}.
   wwctGUIExistingTranslationButton: Andika tena Tafsiri Kikao
@@ -184,7 +174,6 @@ Messages:
   wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.
   wwcConfigGUIEachTranslatorSettings: '{0} Usanidi'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat haina kukubali matumizi ya/reloaded. Tafadhali
     endelea kwa tahadhari.
   wwcConfigEnabledDebugMode: Hali ya DEBUG imewezesha. Ikiwa wewe si msanidi programu
@@ -297,10 +286,7 @@ Messages:
     Reload kwa mabadiliko ya kuchukua athari.
   wwcConfigYAMLDefault: Defaulted kwa YAML kwa ajili ya kuhifadhi data.
   wwcConfigGUISQLMenuButton: Badilisha mipangilio ya SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Mafanikio kugeuza Watson Tafsiri.
-    Reload kwa mabadiliko ya kuchukua athari.
   wwcConfigGUIToggleGoogleTranslateButton: Badilisha Google Kutafsiri
-  wwcConfigGUIToggleWatsonTranslateButton: Kugeuza Watson kutafsiri
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Kutafsiri
   wwcConfigGUIStorageSettings: Usanidi wa Uhifadhi
   wwcConfigConversationAmazonTranslateToggleSuccess: Mafanikio kugeuza Amazon Tafsiri.
@@ -638,8 +624,6 @@ Messages:
     cha hafla
   wwcConfigVaultSupportInvalid: Usaidizi usio sahihi uliowekwa katika config.yml.
     Kuendelea kuwa kweli...
-  wwcWatsonDeprecation: Watson amepatiliwa na hauungwa mkono tena na IBM. Tafadhali
-    fikiria kubadilisha, kwani msaada wake utaondolewa katika sasisho linalofuata.
   wwcConfigForceChatChannelEnabled: Kituo tofauti cha tafsiri kitalazimishwa wakati
     wa tafsiri zote.
   wwcConfigConversationSeparateChatChannelForceSuccess: Imefanikiwa kubadilisha kulazimisha
@@ -655,7 +639,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Badilisha Ikoni ya Kituo tofauti
   wwcConfigConversationChatFormatSuccess: Muundo wako umebadilishwa kwa mafanikio.
   wwcConfigGUISeparateChatChannelForceButton: Nguvu Kituo Tofauti
-  wwcOrigHover: 'Ujumbe wa awali: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Mazungumzo ya asili yanayotoka
     imeambatanishwa na tafsiri kama maandishi ya hover ilibadilishwa
   wwcConfigGUISendOutgoingHoverTextChatButton: Ongeza Ujumbe wa Asingi wa Utoka kama
@@ -681,16 +664,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Wezesha orodha nyeusi
   wwcConfigConversationBlacklistDeletionSuccess: Kwa mafanikio kufuta neno hilo.
   wwcConfigGUIChatChannelSettings: Usanidi wa Kituo cha Gumzo
-  wwcConfigGUIChatBlacklistSuccess: Imefanikiwa kubadilisha orodha nyeusi.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ongeza Neno Jipya
   wwcConfigGUIChatChannelButton: Tafsiri Mipangilio ya Kituo
   wwcConfigGUIBlacklistMessagesModify: Badilisha Muda ({0})
   wwcConfigChatChannelFormatInvalid: Muundo mbaya wa kituo uligunduliwa. Kubadilisha
     kuwa {0}...
-  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
-    ni {0}. Hoja zetu za default zinazotambuliwa ambazo unaweza kujumuisha: {1}. Ikiwa
-    una PlaceholderAPI, hakikisha vigezo hizo zimezungukwa na asilimia (%) badala
-    yake. Andika 0 ili kurudi nyuma.'
   wwcConfigGUIModifyBlacklistSettings: Badilisha orodha nyeusi
   wwcConfigGUINextPageButton: Ukurasa unaofuata
+  wwcConfigChatChannelHoverFormatInvalid: Muundo mbaya wa hover iligunduliwa. Kubadilisha
+    kuwa {0}...
+  wwcOrigHover: Ujumbe wa awali
+  wwctGUIMainMenuPlayer: Tafsiri {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat imegundua na itaonyesha ujanibishaji wako
+    wa Minecraft ({0}). Andika {1} kwa maelezo zaidi.
+  wwcConfigBadYaml: 'Faili isiyo sahihi ya YAML iligunduliwa: {0}. Tafadhali jaribu
+    kurekebisha faili hii au inaweza kufutwa!'
+  wwcConfigConversationChatBlacklistSuccess: Imefanikiwa kubadilisha orodha nyeusi.
+  wwcConfigConversationChannelHoverFormatInput: 'Muundo wa sasa wa maandishi ya hover
+    ya tafsiri ni {0}. Hoja zinazowezekana za msingi: {1}. Ikiwa una PlaceholderAPI,
+    hakikisha vigezo hizo zimezungukwa na asilimia (%) badala yake. Andika 0 ili kurudi
+    nyuma.'
+  wwcConfigConversationChannelFormatInput: 'Muundo wa sasa wa kituo tofauti cha mazungumzo
+    ni {0}. Hoja zinazowezekana za msingi: {1}. Ikiwa una PlaceholderAPI, hakikisha
+    vigezo hizo zimezungukwa na asilimia (%) badala yake. Andika 0 ili kurudi nyuma.'
+  wwcConfigConversationChatHoverFormatSuccess: Muundo wako wa hover umebadilishwa
+    kwa mafanikio.
+  wwcConfigConversationLocalizeSyncSuccess: Imefanikiwa kubadilisha usawazishaji wa
+    ujanibishaji
+  wwcConfigGUILocalizeSyncButton: Sawazisha Ujanibishaji
+  wwcConfigSyncUserLocalInvalid: Sawazisha mpangilio wa ujanibishaji wa mtum Kuendelea
+    kuwa kweli...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Badilisha muundo wa maandishi
+    ya Hover
+  wwcdResetWarn: 'ONYO: Amri hii itaweka upya kabisa data zote ikiwa ni pamoja na
+    rekodi na watafsiri wako wa kazi. USITUMIE AMRI HII ISIPOKUWA UNAJUA UNACHOFANYA:
+    {0}'
+  wwcdResetNotif: WorldwideChat imewekwa upya. Inapakia tena...
+  wwcdResetNotifError: Sio data zote zilizofutwa kwa mafanikio. Je! Umeunganishwa
+    kwenye hifadhidata yako?
+  colorCodeWarning: Kutumia nambari za rangi inaweza kukupa matokeo yasiyotabirika.
 

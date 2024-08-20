@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nepavyko prisijungti prie {0}. Įsitikinkite, kad kredencialai
     ir užkarda yra tinkamai sukonfigūruoti!
   wwcConfigEnabledbStats: Įgalinta bStats.
-  wwctGUIMainMenuPlayer: Vertimo meniu {0}
   wwctGUIBookButton: Perjungti knygų vertimą
   wwcLangDetected: Aptikta kalba {0}.
   wwcBookTranslateStart: Vertimas tikslinė knyga...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Žaidėjas {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Keisti Amazon regioną
   wwcConfigConversationLangInvalid: Neteisingas kalbos kodas!
-  wwcConfigGUIWatsonAPIKeyButton: Pakeisti Watson API raktas
   wwcEnabled: Įgalinta WorldwideChat versija {0}.
   wwctbOnSender: Knygų vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite laikydami
     knygą ją išversti!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: Pasirašyti vertimas išjungtas {0}.
   wwcUpdaterConnectionFailed: Nepavyko patikrinti naujausių “Github” naujinimų.
   watsonNotFoundExceptionNotification: Nepavyko toliau išversti savo įvesties.
-  wwcConfigConversationWatsonAPIKeyInput: Dabartinis API raktas yra {0}. Prašome įvesti
-    “Watson” API raktą arba įveskite 0, kad grįžtumėte.
   wwctGUIStopButton: Sustabdyti vertimą
   wwcgTranslationStopped: Pasaulinis pokalbių vertimas buvo sustabdytas.
   wwcUpdaterFutureDate: Šis “WorldwideChat” egzempliorius turi didesnę versiją nei
@@ -74,12 +70,9 @@ Messages:
     per ilgas. Vertimas:'
   wwctsOnTarget: Įgalinta pasirašyti vertimą {0}.
   wwcConfigCacheDisabled: Vertėjas talpyklos išjungtas.
-  wwcConfigConversationWatsonURLInput: Dabartinis URL yra {0}. Prašome įvesti “Watson”
-    paslaugos URL arba įveskite 0, kad grįžtumėte.
   wwcBookDone: Knyga sėkmingai išversta.
   wwctsOnSender: Įgalintas pasirašyti vertimą. Dešiniuoju pelės mygtuku spustelėkite
     ženklą, kad jį išversti!
-  watsonColorCodeWarning: Naudojant spalvų kodus gali būti nenuspėjami rezultatai.
   wwctGUITranslationButton: Pradėti versti
   wwctGUIAutoDetectButton: Automatinio aptikimo šaltinio kalba
   wwcUpdaterUpToDate: WorldwideChat yra iki šiol!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat yra pavėlęs. Prašome atnaujinti į naujausią
     versiją.
   wwcConfigConversationRateLimitSuccess: Norma riba nustatyti sėkmingai.
-  wwcConfigConversationWatsonURLSuccess: Watson URL sėkmingai nustatyti.
   wwctbPlayerNotFound: Žaidėjas % aš nerastas arba nėra aktyvus vertėjas.
   wwcConfigConversationTranslationCacheSuccess: Vertimo talpyklos riba sėkmingai nustatyta.
   wwctInvalidArgs: Pateikti neteisingi argumentai!
@@ -110,7 +102,6 @@ Messages:
     0 sekundžių...
   wwcSignTranslateStart: Vertimas tikslinės ženklas...
   wwcConfigGUIChatSettings: Pokalbių konfigūra
-  wwcConfigGUIWatsonURLButton: Pakeisti Watson paslaugos URL
   wwcConfigConversationUpdateCheckerSuccess: Atnaujinti tikrintuvas vėlavimas nustatyti
     sėkmingai.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Pasaulinis pokalbis yra išverstas
@@ -129,7 +120,6 @@ Messages:
   wwcsAttemptedTranslations: 'Bandė vertimai: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: “Amazon” slaptas raktas rinkinys
     sėkmingai.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API raktas rinkinys sėkmingai.
   wwcRateLimit: Jūsų vertimai yra ribotas. Prašome palaukti kitą {0} sekundes.
   wwcConfigCacheEnabled: Vertėjo talpykla įjungta ir nustatyti {0} ribą.
   wwctGUIExistingTranslationButton: Perrašyti dabartinę vertimo sesiją
@@ -189,7 +179,6 @@ Messages:
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
   wwcConfigGUIEachTranslatorSettings: '{0} konfigūracija'
-  wwcConfigGUIWatsonButton: Watsonas
   wwcServerReloadWarning: WorldwideChat nėra nusiraminti naudojimo/reload. Prašome
     elgtis atsargiai.
   wwcConfigEnabledDebugMode: Įjungtas DEBUG režimas. Jei nesate kūrėjas ar trikčių
@@ -300,10 +289,7 @@ Messages:
     Perkraukite, kad pakeitimas įsigaliotų.
   wwcConfigYAMLDefault: Numatyta YAML duomenų saugojimui.
   wwcConfigGUISQLMenuButton: Keisti SQL nustatymus
-  wwcConfigConversationWatsonTranslateToggleSuccess: Sėkmingai perėjo Watson Versti.
-    Perkraukite, kad pakeitimas įsigaliotų.
   wwcConfigGUIToggleGoogleTranslateButton: Perjungti Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Perjungti Watson Versti
   wwcConfigGUIToggleAmazonTranslateButton: Perjungti Amazon Versti
   wwcConfigGUIStorageSettings: Saugojimo konfigūracija
   wwcConfigConversationAmazonTranslateToggleSuccess: Sėkmingai perėjo Amazon Versti.
@@ -646,8 +632,6 @@ Messages:
     prioritetą.
   wwcConfigVaultSupportInvalid: Neteisingas saugyklos palaikymas nustatytas config.yml.
     Numatyta tiesa...
-  wwcWatsonDeprecation: “Watson” buvo atmestas ir IBM jo nebepalaiko. Prašome apsvarstyti
-    galimybę perjungti, nes jo palaikymas bus pašalintas kitame atnaujinime.
   wwcConfigForceChatChannelEnabled: Atskiras vertimo kanalas bus priverstas visų vertimų
     metu.
   wwcConfigConversationSeparateChatChannelForceSuccess: Sėkmingai perjungtas priverčiant
@@ -662,7 +646,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Pakeiskite atskiro kanalo piktogramą
   wwcConfigConversationChatFormatSuccess: Jūsų formatas buvo sėkmingai pakeistas.
   wwcConfigGUISeparateChatChannelForceButton: Priverskite atskirą kanalą
-  wwcOrigHover: 'Originali žinutė: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Originalus išeinantis pokalbis
     pridedamas prie vertimo kaip užveskite tekstą perjungtas sėkmingai.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pridėkite originalius siunčiamus pranešimus
@@ -687,16 +670,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Įgalinti juodąjį sąrašą
   wwcConfigConversationBlacklistDeletionSuccess: Sėkmingai ištrintas terminas.
   wwcConfigGUIChatChannelSettings: Pokalbių kanalo konfigūracija
-  wwcConfigGUIChatBlacklistSuccess: Sėkmingai perjungtas juodasis sąrašas.
   wwcConfigGUIChatMessagesBlacklistNewButton: Pridėti naują žodį
   wwcConfigGUIChatChannelButton: Versti kanalo nustatymus
   wwcConfigGUIBlacklistMessagesModify: Keisti terminą ({0})
   wwcConfigChatChannelFormatInvalid: Aptiktas netinkamas kanalo formatas. Numatytasis
     nustatymas į {0}...
-  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
-    yra {0}. Mūsų numatytieji pripažinti argumentai, kuriuos galite įtraukti: {1}.
-    Jei turite PlaceholderAPI, įsitikinkite, kad tie kintamieji yra apsupti procentais
-    (%) vietoj. Įveskite 0, kad grįžtumėte atgal.'
   wwcConfigGUIModifyBlacklistSettings: Pakeisti juodąjį sąrašą
   wwcConfigGUINextPageButton: Kitas puslapis
+  wwcConfigChatChannelHoverFormatInvalid: Aptiktas netinkamas užveskite pelės žymeklį
+    formatas. Numatytasis nustatymas į {0}...
+  wwcOrigHover: Originalus pranešimas
+  wwctGUIMainMenuPlayer: Versti {0}
+  wwcOnJoinSetLocaleSuccess: “WorldwideChat” aptiko ir atspindės jūsų “Minecraft”
+    lokalizaciją ({0}). Norėdami gauti daugiau informacijos, įveskite {1}.
+  wwcConfigBadYaml: 'Aptiktas netinkamas YAML failas: {0}. Pabandykite ištaisyti šį
+    failą, kitaip jis gali būti ištrintas!'
+  wwcConfigConversationChatBlacklistSuccess: Sėkmingai perjungtas juodasis sąrašas.
+  wwcConfigConversationChannelHoverFormatInput: 'Dabartinis vertimo užvesties teksto
+    formatas yra {0}. Galimi numatytieji argumentai: {1}. Jei turite PlaceholderAPI,
+    įsitikinkite, kad tie kintamieji yra apsupti procentais (%), o ne. Įveskite 0,
+    kad grįžtumėte atgal.'
+  wwcConfigConversationChannelFormatInput: 'Dabartinis atskiro pokalbių kanalo formatas
+    yra {0}. Galimi numatytieji argumentai: {1}. Jei turite PlaceholderAPI, įsitikinkite,
+    kad tie kintamieji yra apsupti procentais (%), o ne. Įveskite 0, kad grįžtumėte
+    atgal.'
+  wwcConfigConversationChatHoverFormatSuccess: Jūsų užveskite pelės žymeklį formatas
+    sėkmingai pakeistas.
+  wwcConfigConversationLocalizeSyncSuccess: Sėkmingai perjungtas vartotojo lokalizacijos
+    sinchronizavimas.
+  wwcConfigGUILocalizeSyncButton: Sinchronizuoti vartotojo lokalizaciją
+  wwcConfigSyncUserLocalInvalid: Sinchronizavimo vartotojo lokalizacijos nustatymas
+    neteisingas. Numatyta tiesa...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Pakeiskite “Hover” teksto formatą
+  wwcdResetWarn: 'ĮSPĖJIMAS: Ši komanda visiškai atstatys visus duomenis, įskaitant
+    įrašus ir jūsų aktyvius vertėjus. NEPALEISKITE ŠIOS KOMANDOS, NEBENT ŽINOTE, KĄ
+    DAROTE: {0}'
+  wwcdResetNotif: “WorldwideChat” buvo atstatytas. Perkraunama...
+  wwcdResetNotifError: Ne visi duomenys buvo sėkmingai ištrinti. Ar esate prisijungę
+    prie savo duomenų bazės?
+  colorCodeWarning: Spalvų kodų naudojimas gali duoti nenuspėjamų rezultatų.
 

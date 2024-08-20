@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Неуспешно свързване към {0}. Уверете се, че вашите идентификационни
     данни и защитната стена са конфигурирани правилно!
   wwcConfigEnabledbStats: Активирани bStats.
-  wwctGUIMainMenuPlayer: Меню за превод на {0}
   wwctGUIBookButton: Превключване на превод на книги
   wwcLangDetected: Открит език {0}.
   wwcBookTranslateStart: Превеждане на учебника...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Играч % Не съм намерил.
   wwcConfigGUIAmazonTranslateRegionButton: Промяна на Амазон
   wwcConfigConversationLangInvalid: Невалиден езиков код!
-  wwcConfigGUIWatsonAPIKeyButton: Промяна на API ключа на Уотсън
   wwcEnabled: Разрешена версия на WorldwideChat {0}.
   wwctbOnSender: Преводът на книги е разрешен Щракнете с десния бутон, докато държите
     книга, за да я преведете!
@@ -64,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Не може да се провери за най-новите актуализации на
     Github.
   watsonNotFoundExceptionNotification: Не можете да преведете вашия вход по-нататък.
-  wwcConfigConversationWatsonAPIKeyInput: Текущият API ключ е {0}. Моля, въведете
-    API ключ за Уотсън или въведете 0 за връщане.
   wwctGUIStopButton: Спиране на превода
   wwcgTranslationStopped: Глобалният чат превод е спрян.
   wwcUpdaterFutureDate: Този екземпляр на WorldwideChat има по-голяма версия от последната
@@ -76,13 +72,9 @@ Messages:
     дълъг. Превод:'
   wwctsOnTarget: Подписване на превода е разрешен за {0}.
   wwcConfigCacheDisabled: Кеш на преводача забранен.
-  wwcConfigConversationWatsonURLInput: Настоящият URL адрес е {0}. Моля, въведете
-    URL адрес на услугата за Уотсън или въведете 0, за да се върнете.
   wwcBookDone: Книгата е преведена успешно.
   wwctsOnSender: Разрешено е преводът. Щракнете с десния бутон върху знак, за да го
     преведете!
-  watsonColorCodeWarning: Използването на цветни кодове може да ви даде непредсказуеми
-    резултати.
   wwctGUITranslationButton: Започване на превода
   wwctGUIAutoDetectButton: Автоматично откриване на езика на източника
   wwcUpdaterUpToDate: WorldwideChat е актуален!
@@ -95,7 +87,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat е остарял. Моля, актуализирайте до най-новата
     версия.
   wwcConfigConversationRateLimitSuccess: Лимитът е зададен успешно.
-  wwcConfigConversationWatsonURLSuccess: Уотсън URL зададен успешно.
   wwctbPlayerNotFound: Играчът {0} или не е намерен, или не е активен преводач.
   wwcConfigConversationTranslationCacheSuccess: Ограничението на кеша за превод зададено
     успешно.
@@ -115,7 +106,6 @@ Messages:
     Пропускате 0 секунди...
   wwcSignTranslateStart: Превеждане на знак за целта...
   wwcConfigGUIChatSettings: Конфигурация на чат
-  wwcConfigGUIWatsonURLButton: Промяна на URL адреса на услугата Уотсън
   wwcConfigConversationUpdateCheckerSuccess: Забавяне на актуализацията проверка зададени
     успешно.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда от
@@ -131,7 +121,6 @@ Messages:
   wwcVersion: WorldwideChat, версия
   wwcsAttemptedTranslations: 'Опит за превод: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Амазонка таен ключ набор успешно.
-  wwcConfigConversationWatsonAPIKeySuccess: Уотсън API ключ комплект успешно.
   wwcRateLimit: Преводите ви са ограничени. Моля, изчакайте друг {0} секунди.
   wwcConfigCacheEnabled: Кеш на преводача е активиран и зададен на лимит от {0}.
   wwctGUIExistingTranslationButton: Презаписване на текущата сесия за превод
@@ -191,7 +180,6 @@ Messages:
   wwcInvalidTranslator: Невалидни настройки на преводача. Моля, поправете това във
     вашия config.yml или с /wwcc, за да използвате този плъгин.
   wwcConfigGUIEachTranslatorSettings: '{0} Конфигурация'
-  wwcConfigGUIWatsonButton: Уотсън
   wwcServerReloadWarning: WorldwideChat не одобрява използването на /презареди. Моля,
     продължете с повишено внимание.
   wwcConfigEnabledDebugMode: Активиран режим за отстраняване на грешки. Ако не сте
@@ -307,10 +295,7 @@ Messages:
     Презареждане, за да влезе в сила промяната.
   wwcConfigYAMLDefault: По подразбиране на YAML за съхранение на данни.
   wwcConfigGUISQLMenuButton: Промяна на настройките на SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Успешно прекъсна Уотсън Превод.
-    Презареждане, за да влезе в сила промяната.
   wwcConfigGUIToggleGoogleTranslateButton: Превключване на Google Превод
-  wwcConfigGUIToggleWatsonTranslateButton: Превключване на Уотсън
   wwcConfigGUIToggleAmazonTranslateButton: Превключване на Amazon Преведи
   wwcConfigGUIStorageSettings: Конфигурация на съхранение
   wwcConfigConversationAmazonTranslateToggleSuccess: Успешно прекъсната Amazon Translate.
@@ -652,9 +637,6 @@ Messages:
     в чат.
   wwcConfigVaultSupportInvalid: Невалидна поддръжка на трезор, зададена в config.yml.
     По подразбиране на вярно...
-  wwcWatsonDeprecation: Уотсън е остарял и вече не се поддържа от IBM. Моля, помислете
-    за превключване, тъй като поддръжката за него ще бъде премахната в следващата
-    актуализация.
   wwcConfigForceChatChannelEnabled: По време на всички преводи ще бъде наложен отделен
     канал за превод.
   wwcConfigConversationSeparateChatChannelForceSuccess: Успешно превключване на принуждаването
@@ -668,7 +650,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Промяна на иконата на отделен канал
   wwcConfigConversationChatFormatSuccess: Вашият формат е променен успешно.
   wwcConfigGUISeparateChatChannelForceButton: Принудително отделен канал
-  wwcOrigHover: 'Оригинално съобщение: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригиналният изходящ чат,
     прикачен към превода като текст на курсора на мишката, се превключва успешно.
   wwcConfigGUISendOutgoingHoverTextChatButton: Добавяне на оригинални изходящи съобщения
@@ -693,16 +674,45 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Активиране на черния списък
   wwcConfigConversationBlacklistDeletionSuccess: Успешно се изтрива терминът.
   wwcConfigGUIChatChannelSettings: Конфигурация на чат канала
-  wwcConfigGUIChatBlacklistSuccess: Успешно превключвахме черния списък.
   wwcConfigGUIChatMessagesBlacklistNewButton: Добавяне на нова дума
   wwcConfigGUIChatChannelButton: Превод на настройките на канала
   wwcConfigGUIBlacklistMessagesModify: Промяна на термина ({0})
   wwcConfigChatChannelFormatInvalid: Открит е невалиден формат на канала. По подразбиране
     на {0}...
-  wwcConfigConversationChannelFormatInput: 'Текущият формат за отделния чат канал
-    е {0}. Нашите разпознати аргументи по подразбиране, които можете да включите:
-    {1}. Ако имате PlaceholderAPI, уверете се, че тези променливи са заобиколени от
-    проценти (%) вместо това. Въведете 0, за да се върнете назад.'
   wwcConfigGUIModifyBlacklistSettings: Промяна на черния списък
   wwcConfigGUINextPageButton: Следваща страница
+  wwcConfigChatChannelHoverFormatInvalid: Открит е невалиден формат на задържането
+    на По подразбиране на {0}...
+  wwcOrigHover: Оригинално съобщение
+  wwctGUIMainMenuPlayer: Превод {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat е открил и ще отразява вашата локализация
+    на Minecraft ({0}). Въведете {1} за повече подробности.
+  wwcConfigBadYaml: 'Открит е невалиден YAML файл: {0}. Моля, опитайте се да поправите
+    този файл или той може да бъде изтрит!'
+  wwcConfigConversationChatBlacklistSuccess: Успешно превключвахме черния списък.
+  wwcConfigConversationChannelHoverFormatInput: 'Текущият формат за превод на курсора
+    на мишката на текста е {0}. Възможни аргументи по подразбиране: {1}. Ако имате
+    PlaceholderAPI, уверете се, че тези променливи са заобиколени от проценти (%)
+    вместо това. Въведете 0, за да се върнете назад.'
+  wwcConfigConversationChannelFormatInput: 'Текущият формат за отделния чат канал
+    е {0}. Възможни аргументи по подразбиране: {1}. Ако имате PlaceholderAPI, уверете
+    се, че тези променливи са заобиколени от проценти (%) вместо това. Въведете 0,
+    за да се върнете назад.'
+  wwcConfigConversationChatHoverFormatSuccess: Вашият формат на курсора на мишката
+    е променен успешно.
+  wwcConfigConversationLocalizeSyncSuccess: Успешно превключване на синхронизиране
+    на локализация на потребителите.
+  wwcConfigGUILocalizeSyncButton: Синхронизиране на локализация
+  wwcConfigSyncUserLocalInvalid: Настройката за локализация на потребителите за синхронизиране
+    По подразбиране на вярно...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Промяна на текстовия формат на
+    мишката
+  wwcdResetWarn: 'ПРЕДУПРЕЖДЕНИЕ: Тази команда напълно ще нулира всички данни, включително
+    записи и вашите активни преводачи. НЕ ИЗПЪЛНЯВАЙТЕ ТАЗИ КОМАНДА, ОСВЕН АКО НЕ
+    ЗНАЕТЕ КАКВО ПРАВИТЕ: {0}'
+  wwcdResetNotif: WorldwideChat е нулиран. Презареждане...
+  wwcdResetNotifError: Не всички данни бяха изтрити успешно. Свързани ли сте с вашата
+    база данни?
+  colorCodeWarning: Използването на цветови кодове може да ви даде непредсказуеми
+    резултати.
 

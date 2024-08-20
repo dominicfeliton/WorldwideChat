@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Gagal menyambung ke {0}. Pastikan kelayakan dan firewall
     anda dikonfigur dengan betul!
   wwcConfigEnabledbStats: Dibenarkan bStats.
-  wwctGUIMainMenuPlayer: Menu Terjemahan {0}
   wwctGUIBookButton: Togol Terjemahan Buku
   wwcLangDetected: Bahasa {0} dikesan.
   wwcBookTranslateStart: Menterjemahkan buku sasaran...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Pemain {0} tidak ditemui.
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
   wwcConfigConversationLangInvalid: Kod bahasa tidak sah!
-  wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
   wwcEnabled: Dibenarkan WorldwideChat versi {0}.
   wwctbOnSender: Terjemahan buku dibenarkan. Klik kanan sambil memegang buku untuk
     menterjemahkannya!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: Daftar terjemahan dilumpuhkan untuk {0}.
   wwcUpdaterConnectionFailed: Tidak dapat menyemak kemaskini terkini di Github.
   watsonNotFoundExceptionNotification: Tidak dapat menterjemahkan input anda lagi.
-  wwcConfigConversationWatsonAPIKeyInput: Kekunci API semasa ialah {0}. Sila masukkan
-    kunci API untuk Watson, atau taip 0 untuk kembali.
   wwctGUIStopButton: Henti Menterjemah
   wwcgTranslationStopped: Terjemahan sembang global telah dihentikan.
   wwcUpdaterFutureDate: Contoh WorldwideChat ini mempunyai versi yang lebih besar
@@ -74,12 +70,8 @@ Messages:
     panjang. Terjemahan:'
   wwctsOnTarget: Daftar terjemahan dibenarkan untuk {0}.
   wwcConfigCacheDisabled: Cache penterjemah dilumpuhkan.
-  wwcConfigConversationWatsonURLInput: URL semasa ialah {0}. Sila masukkan URL perkhidmatan
-    untuk Watson, atau ketik 0 untuk kembali.
   wwcBookDone: Buku berjaya diterjemahkan.
   wwctsOnSender: Daftar terjemahan dibenarkan. Klik kanan pada tanda untuk menterjemahkannya!
-  watsonColorCodeWarning: Menggunakan kod warna boleh memberi anda hasil yang tidak
-    menentu.
   wwctGUITranslationButton: Mula Menterjemah
   wwctGUIAutoDetectButton: Pengesan Auto-Bahasa Sumber
   wwcUpdaterUpToDate: WorldWidChat up to date!
@@ -92,7 +84,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldWidChat sudah lapuk. Sila kemas kini kepada versi
     terkini.
   wwcConfigConversationRateLimitSuccess: Had kadar berjaya ditetapkan.
-  wwcConfigConversationWatsonURLSuccess: URL Watson berjaya ditetapkan.
   wwctbPlayerNotFound: Pemain {0} sama ada tidak ditemui, atau bukan penterjemah aktif.
   wwcConfigConversationTranslationCacheSuccess: Had cache terjemahan berjaya ditetapkan.
   wwctInvalidArgs: Argumen tidak sah disediakan!
@@ -110,7 +101,6 @@ Messages:
     0 saat...
   wwcSignTranslateStart: Menterjemah tanda sasaran...
   wwcConfigGUIChatSettings: Konfigurasi Sembang
-  wwcConfigGUIWatsonURLButton: Ubah URL Layanan Watson
   wwcConfigConversationUpdateCheckerSuccess: Kemaskini penangguhan pemeriksa berjaya
     ditetapkan.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Sembang global sedang diterjemahkan
@@ -128,7 +118,6 @@ Messages:
   wwcsAttemptedTranslations: 'Percubaan Terjemahan: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Kunci rahsia Amazon berjaya
     ditetapkan.
-  wwcConfigConversationWatsonAPIKeySuccess: Kekunci API Watson berjaya ditetapkan.
   wwcRateLimit: Terjemahan anda adalah kadar terhad. Sila tunggu yang lain {0} saat.
   wwcConfigCacheEnabled: Cache penterjemah dibenarkan dan tetapkan kepada had bagi
     {0}.
@@ -189,7 +178,6 @@ Messages:
   wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurasi'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tidak membenarkan penggunaan /reload. Sila
     teruskan dengan berhati-hati.
   wwcConfigEnabledDebugMode: Mod DEBUG diaktifkan. Jika Anda bukan pengembang atau
@@ -304,10 +292,7 @@ Messages:
     Muat semula untuk perubahan berkuatkuasa.
   wwcConfigYAMLDefault: Lalai kepada YAML untuk storan data.
   wwcConfigGUISQLMenuButton: Tukar Tetapan SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Berjaya menogol Watson Terjemah.
-    Muat semula untuk perubahan berkuatkuasa.
   wwcConfigGUIToggleGoogleTranslateButton: Togol Google Terjemah
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Terjemah
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Terjemah
   wwcConfigGUIStorageSettings: Konfigurasi Storan
   wwcConfigConversationAmazonTranslateToggleSuccess: Berjaya menogol Amazon Terjemah.
@@ -631,8 +616,6 @@ Messages:
     anda.
   wwcConfigVaultSupportInvalid: Sokongan peti besi tidak sah ditetapkan dalam config.yml.
     Lagi menjadi benar...
-  wwcWatsonDeprecation: Watson telah lama dan tidak lagi disokong oleh IBM. Sila pertimbangkan
-    untuk menukar, kerana sokongan untuknya akan dikeluarkan dalam kemas kini seterusnya.
   wwcConfigForceChatChannelEnabled: Saluran terjemahan yang berasingan akan dipaksa
     semasa semua terjemahan.
   wwcConfigConversationSeparateChatChannelForceSuccess: Berjaya beralih memaksa saluran
@@ -646,7 +629,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Tukar Ikon Saluran Berpisah
   wwcConfigConversationChatFormatSuccess: Format anda telah berjaya diubah.
   wwcConfigGUISeparateChatChannelForceButton: Saluran Berasingan Paksa
-  wwcOrigHover: 'Mesej Asal: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sembang keluar asal dilampirkan
     pada terjemahan sebagai teks hover berjaya ditukar.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tambah Mesej Keluar Asal sebagai Teks
@@ -671,16 +653,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Dayakan Senarai Hitam
   wwcConfigConversationBlacklistDeletionSuccess: Berjaya memadamkan istilah tersebut.
   wwcConfigGUIChatChannelSettings: Konfigurasi Saluran Sembang
-  wwcConfigGUIChatBlacklistSuccess: Berjaya menukar senarai hitam.
   wwcConfigGUIChatMessagesBlacklistNewButton: Tambah Perkataan Baru
   wwcConfigGUIChatChannelButton: Terjemah Tetapan Saluran
   wwcConfigGUIBlacklistMessagesModify: Ubah suai Terma ({0})
   wwcConfigChatChannelFormatInvalid: Format saluran tidak sah dikesan. Lalai kepada
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
-    ialah {0}. Hujah lalai kami yang diiktiraf yang boleh anda sertakan: {1}. Jika
-    anda mempunyai PlaceholderAPI, pastikan pemboleh ubah tersebut dikelilingi oleh
-    peratusan (%) sebagai gantinya. Taipkan 0 untuk kembali.'
   wwcConfigGUIModifyBlacklistSettings: Ubah suai senarai hitam
   wwcConfigGUINextPageButton: Halaman Seterusnya
+  wwcConfigChatChannelHoverFormatInvalid: Format hover tidak sah dikesan. Lalai kepada
+    {0}...
+  wwcOrigHover: Mesej asal
+  wwctGUIMainMenuPlayer: Terjemah {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat telah mengesan dan akan mencerminkan penyetempatan
+    Minecraft anda ({0}). Taipkan {1} untuk maklumat lanjut.
+  wwcConfigBadYaml: 'Fail YAML tidak sah dikesan: {0}. Sila cuba untuk membetulkan
+    fail ini atau ia mungkin dipadamkan!'
+  wwcConfigConversationChatBlacklistSuccess: Berjaya menukar senarai hitam.
+  wwcConfigConversationChannelHoverFormatInput: 'Format semasa untuk teks hover terjemahan
+    ialah {0}. Hujah lalai yang mungkin: {1}. Jika anda mempunyai PlaceholderAPI,
+    pastikan pemboleh ubah tersebut dikelilingi oleh peratusan (%) sebagai gantinya.
+    Taipkan 0 untuk kembali.'
+  wwcConfigConversationChannelFormatInput: 'Format semasa untuk saluran sembang berasingan
+    ialah {0}. Hujah lalai yang mungkin: {1}. Jika anda mempunyai PlaceholderAPI,
+    pastikan pemboleh ubah tersebut dikelilingi oleh peratusan (%) sebagai gantinya.
+    Taipkan 0 untuk kembali.'
+  wwcConfigConversationChatHoverFormatSuccess: Format hover anda telah berjaya diubah.
+  wwcConfigConversationLocalizeSyncSuccess: Berjaya menukar penyegerakan penyetempatan
+    pengguna.
+  wwcConfigGUILocalizeSyncButton: Segerakkan Penyetempatan Pengguna
+  wwcConfigSyncUserLocalInvalid: Penyegerakan tetapan penyetempatan pengguna tidak
+    sah. Lagi menjadi benar...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Tukar Format Teks Hover
+  wwcdResetWarn: 'AMARAN: Perintah ini akan menetapkan semula semua data termasuk
+    rekod dan penterjemah aktif anda. JANGAN JALANKAN ARAHAN INI MELAINKAN ANDA TAHU
+    APA YANG ANDA LAKUKAN: {0}'
+  wwcdResetNotif: WorldwideChat telah ditetapkan semula. Memuatkan semula...
+  wwcdResetNotifError: Tidak semua data berjaya dihapuskan. Adakah anda disambungkan
+    ke pangkalan data anda?
+  colorCodeWarning: Menggunakan kod warna mungkin memberi anda hasil yang tidak dapat
+    diramalkan.
 

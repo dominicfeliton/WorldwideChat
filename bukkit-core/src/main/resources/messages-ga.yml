@@ -60,7 +60,6 @@ Messages:
   wwctiOffTarget: Aistriúchán Mír mhíchumas ar feadh {0}.
   wwctTranslationStopped: Tá do seisiún aistriúcháin a stopadh.
   wwcEntityTranslateNoName: Níl ainm saincheaptha ag an eintiteas.
-  wwcConfigGUIWatsonAPIKeyButton: Watson Athraigh API Eochair
   wwctrlRateLimitOffSender: Mhíchumas do teorainn ráta.
   wwctbOnSender: Aistriúchán leabhar cumasaithe. Right-click agus a bhfuil leabhar
     a aistriú é!
@@ -85,11 +84,7 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Athraigh Teorainn Ráta Domhanda
   wwctsOnTarget: Aistriúchán Sínigh cumasaithe le h {0}.
   wwcConfigCacheDisabled: Taisce Aistritheoir faoi mhíchumas.
-  wwcConfigConversationWatsonURLInput: Is é an URL reatha {0}. Cuir ionchur URL seirbhíse
-    do Watson, nó cineál 0 chun dul ar ais.
   wwcBookDone: Leabhar aistrithe go rathúil.
-  watsonColorCodeWarning: D'fhéadfadh baint úsáide as cóid datha torthaí intuartha
-    a thabhairt duit.
   wwctGUITranslationButton: Tosaigh Ag Aistriú
   wwcItemTranslateLoreStart: Aistriúchán seanchas na hítime sprioc...
   wwcUpdaterUpToDate: Tá WorldwideChat cothrom le dáta!
@@ -107,7 +102,6 @@ Messages:
   wwcConfigConversationRateLimitSuccess: Teorainn ráta atá leagtha go rathúil.
   wwctrlPlayerNotFound: Imreoir {0} nach bhfuil ceachtar le fáil, nó nach bhfuil aistritheoir
     gníomhach.
-  wwcConfigConversationWatsonURLSuccess: Watson URL leagtha go rathúil.
   wwctbPlayerNotFound: Imreoir {0} nach bhfuil ceachtar le fáil, nó nach bhfuil aistritheoir
     gníomhach.
   wwcConfigGUIResponseLimitButton: Athraigh Aistritheoir Freagra Teorainn Ama
@@ -123,7 +117,6 @@ Messages:
   wwctrlNotATranslator: Ní aistritheoir gníomhach thú! Bí cinnte go bhfuil tú a leagtar
     seo le/wwct.
   wwcConfigGUIChatSettings: Cumraíocht Comhrá
-  wwcConfigGUIWatsonURLButton: Athraigh URL Seirbhíse Watson
   wwcConfigConversationUpdateCheckerSuccess: Nuashonraigh moill seiceála a leagtar
     go rathúil.
   wwcConfigGUIMessagesOverrideCustomLabel: Teachtaireacht Nua
@@ -139,7 +132,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Athraigh Amazon Eochair Rúnda
   wwcInvalidTranslator: Suíomhanna aistritheora neamhbhailí. Le do thoil a shocrú
     seo i do config.yml nó le/wwcc a bhaint as an mbreiseán seo.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API eochair leagtha go rathúil.
   wwcConfigCacheEnabled: Taisce Aistritheoir cumasaithe agus a leagtar chun teorainn
     de {0}.
   wwcConfigConversationOverrideDeletionSuccess: Scriosadh sárú teachtaireachta saincheaptha.
@@ -166,13 +158,11 @@ Messages:
   wwcUpdaterFailedGeneric: Ní féidir nuashonruithe WorldwideChat a sheiceáil.
   wwctGUIMainMenuGlobal: Roghchlár Aistriúcháin Domhanda
   wwcItemTranslateTitleDone: Teideal mír aistrithe go rathúil.
-  wwcConfigGUIWatsonButton: Watson
   wwcConfigConversationPluginUpdateChatSuccess: Breiseán meabhrúchán comhrá cothrom
     le dáta toggled go rathúil.
   wwcsNotATranslator: Níl aon taifid ar fáil go fóill le h {0}.
   wwcConfigGUIbStatsButton: bStats Scoránaigh
   wwctGUINewTranslationSource: Roghnaigh Teanga Foinse
-  wwctGUIMainMenuPlayer: Aistriúchán Menu de {0}
   wwctGUIBookButton: Aistriúchán Leabhar Scoránaigh
   wwcConfigGUIDebugModeButton: Mód Debug Scoránaigh
   wwcConfigMessageCharLimitInvalid: Teorainn neamhbhailí in aghaidh an teachtaireacht
@@ -224,8 +214,6 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: Seol Meabhrúchán Comhrá le haghaidh Nuashonruithe
     Breiseán
   wwcConfigGUIErrorLimitButton: Athraigh Teorainn Earráid Aistritheoir
-  wwcConfigConversationWatsonAPIKeyInput: Is é an eochair API atá ann faoi láthair
-    {0}. Cuir isteach eochair API do Watson, nó cineál 0 chun dul ar ais.
   wwcgTranslationStopped: Tá aistriúchán comhrá domhanda a stopadh.
   wwcConfigConversationCharacterLimitSuccess: Teorainn charachtair atá leagtha go
     rathúil.
@@ -322,10 +310,7 @@ Messages:
     a toggled. Athlódáil don athrú chun éifeacht a ghlacadh.
   wwcConfigYAMLDefault: Mainníodh chuig YAML le haghaidh stórála sonraí.
   wwcConfigGUISQLMenuButton: Athraigh Socruithe SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Go rathúil toggled Watson Translate.
-    Athlódáil don athrú chun éifeacht a ghlacadh.
   wwcConfigGUIToggleGoogleTranslateButton: Scoránaigh Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Aistríonn Scoránaigh Watson
   wwcConfigGUIToggleAmazonTranslateButton: Aistríonn Scoránaigh Amazon
   wwcConfigGUIStorageSettings: Cumraíocht stóráil
   wwcConfigConversationAmazonTranslateToggleSuccess: D'éirigh le toggled Amazon Translate.
@@ -673,8 +658,6 @@ Messages:
     comhrá.
   wwcConfigVaultSupportInvalid: Tacaíocht cruinneachán neamhbhailí atá leagtha síos
     i config.yml. Ag réamhshocrú go fíor...
-  wwcWatsonDeprecation: Tá Watson díscríofa agus ní thacaíonn IBM leis a thuilleadh.
-    Smaoinigh ar athrú, mar bainfear tacaíocht dó sa chéad nuashonrú eile.
   wwcConfigForceChatChannelEnabled: Cuirfear iallach ar chainéal aistriúcháin ar leithligh
     le linn gach aistriú
   wwcConfigConversationSeparateChatChannelForceSuccess: D'éirigh leis an gcainéal
@@ -688,7 +671,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Athraigh Deilbhín Cainéil
   wwcConfigConversationChatFormatSuccess: Tá d'fhormáid athraithe go rathúil.
   wwcConfigGUISeparateChatChannelForceButton: Cainéal ar leithligh Force
-  wwcOrigHover: 'Teachtaireacht Bunaidh: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Comhrá bunaidh atá ag imeacht
     ceangailte leis an aistriúchán mar a thoscaíodh téacs hover
   wwcConfigGUISendOutgoingHoverTextChatButton: Cuir Teachtaireachtaí Eisitheacha Bunaidh
@@ -714,16 +696,41 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Cumasaigh Liosta Dubh
   wwcConfigConversationBlacklistDeletionSuccess: Scrios an téarma go rathúil.
   wwcConfigGUIChatChannelSettings: Cumraíocht Cainéal Comhrá
-  wwcConfigGUIChatBlacklistSuccess: D'éirigh leis an liosta dubh a athrú.
   wwcConfigGUIChatMessagesBlacklistNewButton: Cuir Focal Nua leis
   wwcConfigGUIChatChannelButton: Aistrigh Socruithe Channel
   wwcConfigGUIBlacklistMessagesModify: Téarma a mhodhnú ({0})
   wwcConfigChatChannelFormatInvalid: Formáid cainéal neamhbhailí braite Ag réamhshocrú
     go {0}...
-  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
-    comhrá ar leithligh. Ár n-argóintí aitheanta réamhshocraithe is féidir leat a
-    áireamh: {1}. Má tá PlaceholderAPI agat, déan cinnte go bhfuil na hathróga sin
-    timpeallaithe ag céatadáin (%) ina ionad sin. Cineál 0 chun dul ar ais.'
   wwcConfigGUIModifyBlacklistSettings: Athraigh Liosta Dubh
   wwcConfigGUINextPageButton: An chéad leathanach eile
+  wwcConfigChatChannelHoverFormatInvalid: Braithíodh formáid hover neamhbhailí. Ag
+    réamhshocrú go {0}...
+  wwcOrigHover: Teachtaireacht Bunai
+  wwctGUIMainMenuPlayer: Aistrigh {0}
+  wwcOnJoinSetLocaleSuccess: Tá WorldwideChat tar éis aimsiú agus léireoidh sé do
+    logánú Minecraft ({0}). Clóscríobh {1} le haghaidh tuilleadh sonraí.
+  wwcConfigBadYaml: 'Braithíodh comhad YAML neamhbhailí: {0}. Déan iarracht an comhad
+    seo a shocrú le do thoil nó féadfar é a scriosadh!'
+  wwcConfigConversationChatBlacklistSuccess: D'éirigh leis an liosta dubh a athrú.
+  wwcConfigConversationChannelHoverFormatInput: 'Is é {0} an fhormáid reatha le haghaidh
+    téacs hover aistriúcháin. Argóintí réamhshocraithe is féidir: {1}. Má tá PlaceholderAPI
+    agat, déan cinnte go bhfuil na hathróga sin timpeallaithe ag céatadáin (%) ina
+    ionad sin. Cineál 0 chun dul ar ais.'
+  wwcConfigConversationChannelFormatInput: 'Is é {0} an fhormáid reatha don chainéal
+    comhrá ar leithligh. Argóintí réamhshocraithe is féidir: {1}. Má tá PlaceholderAPI
+    agat, déan cinnte go bhfuil na hathróga sin timpeallaithe ag céatadáin (%) ina
+    ionad sin. Cineál 0 chun dul ar ais.'
+  wwcConfigConversationChatHoverFormatSuccess: Tá d'fhormáid hover athraithe go rathúil.
+  wwcConfigConversationLocalizeSyncSuccess: Logánú úsáideora a shioncronú go rathúil.
+  wwcConfigGUILocalizeSyncButton: Logánú Úsáideora Sync
+  wwcConfigSyncUserLocalInvalid: Socraigh logánú úsáideora neamhbhailí. Ag réamhshocrú
+    go fíor...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Athraigh Formáid Téacs Hover
+  wwcdResetWarn: 'RABHADH: Athshocróidh an t-ordú seo na sonraí go léir lena n-áirítear
+    taifid agus d''aistritheoirí gníomhacha NÁ RITH AN T-ORDÚ SEO MURA BHFUIL A FHIOS
+    AGAT CAD ATÁ Á DHÉANAMH AGAT {0}'
+  wwcdResetNotif: Athshocraíodh WorldwideChat. Athluchtú...
+  wwcdResetNotifError: Níor scriosadh gach sonraí go rathúil. An bhfuil tú ceangailte
+    le do bhunachar sonraí?
+  colorCodeWarning: Féadfaidh úsáid cóid datha torthaí a thuar duit.
 

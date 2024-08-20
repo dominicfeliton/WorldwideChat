@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} కు కనెక్ట్ చేయడంలో విఫలమైంది. మీ ఆధారాలు మరియు ఫైర్వాల్
     సరిగ్గా కాన్ఫిగర్ చేయబడిందని నిర్ధారించుకోండి!'
   wwcConfigEnabledbStats: ప్రారంభించబడింది bStats.
-  wwctGUIMainMenuPlayer: '{0} అనువాద మెనూ'
   wwctGUIBookButton: పుస్తక అనువాదాన్ని టోగుల్
   wwcLangDetected: గుర్తించబడిన భాష {0}.
   wwcBookTranslateStart: లక్ష్యం పుస్తకం అనువదించడం...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: ప్లేయర్ % నేను కనుగొనబడలేదు.
   wwcConfigGUIAmazonTranslateRegionButton: అమెజాన్ ప్రాంతం మార్చండి
   wwcConfigConversationLangInvalid: చెల్లని భాష కోడ్!
-  wwcConfigGUIWatsonAPIKeyButton: వాట్సన్ API కీ మార్చండి
   wwcEnabled: ప్రారంభించబడింది ప్రపంచవ్యాప్తం చాట్ వెర్షన్ {0}.
   wwctbOnSender: పుస్తక అనువాదం ప్రారంభించబడింది. అనువదించడానికి ఒక పుస్తకాన్ని పట్టుకునేటప్పుడు
     కుడి-క్లిక్ చేయండి!
@@ -63,8 +61,6 @@ Messages:
   wwctsOffTarget: '{0} కోసం సైన్ అనువాదం నిలిపివేయబడింది.'
   wwcUpdaterConnectionFailed: Github యొక్క తాజా నవీకరణల కోసం తనిఖీ చేయడం సాధ్యం.
   watsonNotFoundExceptionNotification: మీ ఇన్పుట్ను ఇంకా అనువదించలేకపోయింది.
-  wwcConfigConversationWatsonAPIKeyInput: ప్రస్తుత API కీ {0}. దయచేసి వాట్సన్ కోసం
-    ఒక API కీని ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwctGUIStopButton: అనువదించడం ఆపు
   wwcgTranslationStopped: గ్లోబల్ చాట్ అనువాదం నిలిపివేయబడింది.
   wwcUpdaterFutureDate: వరల్డ్చాట్ యొక్క ఈ ఉదాహరణ తాజా పబ్లిక్ కంటే ఎక్కువ వెర్షన్ను
@@ -75,12 +71,9 @@ Messages:
     ఉంది. అనువాదం:'
   wwctsOnTarget: సంకేత అనువాదం {0} కోసం ప్రారంభించబడింది.
   wwcConfigCacheDisabled: అనువాదకుడు కాష్ డిసేబుల్.
-  wwcConfigConversationWatsonURLInput: ప్రస్తుత URL {0}. దయచేసి వాట్సన్ కోసం ఒక సేవా
-    URL ను ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcBookDone: బుక్ విజయవంతంగా అనువదించబడింది.
   wwctsOnSender: సైన్ అనువాదం ప్రారంభించబడింది. అనువదించడానికి ఒక సంకేతం మీద కుడి-క్లిక్
     చేయండి!
-  watsonColorCodeWarning: రంగు సంకేతాలు ఉపయోగించి మీరు అనూహ్య ఫలితాలు ఇవ్వవచ్చు.
   wwctGUITranslationButton: అనువదించడం ప్రారంభించండి
   wwctGUIAutoDetectButton: ఆటో-గుర్తించు మూల భాష
   wwcUpdaterUpToDate: ప్రపంచవ్యాప్తచాట్ తాజాగా ఉంది!
@@ -93,7 +86,6 @@ Messages:
   wwcUpdaterOutOfDateChat: ప్రపంచవ్యాప్తచాట్ తేదీ ముగిసింది. దయచేసి తాజా సంస్కరణకు
     నవీకరించండి.
   wwcConfigConversationRateLimitSuccess: రేటు పరిమితి విజయవంతంగా సెట్.
-  wwcConfigConversationWatsonURLSuccess: వాట్సన్ URL విజయవంతంగా సెట్.
   wwctbPlayerNotFound: ప్లేయర్ % నేను కనుగొనబడలేదు, లేదా చురుకైన అనువాదకుడు కాదు.
   wwcConfigConversationTranslationCacheSuccess: అనువాద కాష్ పరిమితి విజయవంతంగా సెట్.
   wwctInvalidArgs: చెల్లని వాదనలు అందించిన!
@@ -110,7 +102,6 @@ Messages:
   wwcConfigRateLimitInvalid: చెడు రేటు పరిమితి config.yml లో సెట్. 0 సెకన్లు డిఫాల్టింగ్...
   wwcSignTranslateStart: లక్ష్య చిహ్నాన్ని అనువదించడం...
   wwcConfigGUIChatSettings: చాట్ ఆకృతీకరణ
-  wwcConfigGUIWatsonURLButton: వాట్సన్ సర్వీస్ URL ను మార్చండి
   wwcConfigConversationUpdateCheckerSuccess: నవీకరణ చెకర్ ఆలస్యం విజయవంతంగా సెట్.
   wwcGlobalOnJoinTranslationNotificationSourceLang: గ్లోబల్ చాట్ {0} నుండి {1} కు
     అనువదించబడుతోంది.
@@ -127,7 +118,6 @@ Messages:
   wwcsAttemptedTranslations: 'ప్రయత్నించిన అనువాదాలు: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: అమెజాన్ రహస్య కీ విజయవంతంగా
     సెట్.
-  wwcConfigConversationWatsonAPIKeySuccess: వాట్సన్ API కీ విజయవంతంగా సెట్.
   wwcRateLimit: మీ అనువాదాలు రేటు పరిమితం. దయచేసి మరొక {0} సెకన్లు వేచి ఉండండి.
   wwcConfigCacheEnabled: అనువాదకుడు కాష్ ప్రారంభించబడింది మరియు {0} పరిమితికి సెట్
     చేయబడింది.
@@ -187,7 +177,6 @@ Messages:
   wwcInvalidTranslator: చెల్లని అనువాదకుడు సెట్టింగులు. ఈ ప్లగ్ఇన్ ఉపయోగించడానికి
     మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.
   wwcConfigGUIEachTranslatorSettings: '{0} ఆకృతీకరణ'
-  wwcConfigGUIWatsonButton: వాట్సన్
   wwcServerReloadWarning: ప్రపంచవ్యాప్తచాట్/రీలోడ్ వాడుక condone లేదు. దయచేసి జాగ్రత్తతో
     కొనసాగండి.
   wwcConfigEnabledDebugMode: ప్రారంభించబడిన డీబగ్ మోడ్. మీరు డెవలపర్ లేదా ట్రబుల్షూటర్
@@ -298,10 +287,7 @@ Messages:
     మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
   wwcConfigYAMLDefault: డేటా నిల్వ కోసం YAML కు డిఫాల్టెడ్.
   wwcConfigGUISQLMenuButton: SQL సెట్టింగులను మార్చండి
-  wwcConfigConversationWatsonTranslateToggleSuccess: విజయవంతంగా వాట్సన్ ట్రాన్స్లేట్
-    toggled. మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
   wwcConfigGUIToggleGoogleTranslateButton: Google Translate టోగుల్
-  wwcConfigGUIToggleWatsonTranslateButton: వాట్సన్ అనువదించు టోగుల్
   wwcConfigGUIToggleAmazonTranslateButton: అమెజాన్ అనువదించు టోగుల్
   wwcConfigGUIStorageSettings: నిల్వ ఆకృతీకరణ
   wwcConfigConversationAmazonTranslateToggleSuccess: అమెజాన్ అనువదించు విజయవంతంగా
@@ -641,8 +627,6 @@ Messages:
     సెట్ చేయండి.
   wwcConfigVaultSupportInvalid: config.yml లో చెల్లని ఖజానా మద్దతు సెట్ చేయబడింది.
     నిజానికి డిఫాల్టింగ్...
-  wwcWatsonDeprecation: వాట్సన్ నిర్వీర్యం చేయబడ్డాడు మరియు ఇకపై IBM మద్దతు ఇవ్వదు.
-    దయచేసి మారడాన్ని పరిగణించండి, ఎందుకంటే దానికి మద్దతు తదుపరి నవీకరణలో తొలగించబడుతుంది.
   wwcConfigForceChatChannelEnabled: అన్ని అనువాదాల సమయంలో ప్రత్యేక అనువాద ఛానెల్ బలవంతం
     చేయబడుతుంది.
   wwcConfigConversationSeparateChatChannelForceSuccess: ప్రత్యేక ఛానెల్ను బలవంతంగా
@@ -657,7 +641,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ప్రత్యేక ఛానల్ చిహ్నాన్ని మార్చండి
   wwcConfigConversationChatFormatSuccess: మీ ఫార్మాట్ విజయవంతంగా మార్చబడింది.
   wwcConfigGUISeparateChatChannelForceButton: ప్రత్యేక ఛానెల్ను ఫోర్స్ చేయండి
-  wwcOrigHover: 'అసలు సందేశం: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: హోవర్ టెక్స్ట్ విజయవంతంగా
     togged వంటి అనువాదం జత అసలు అవుట్గోయింగ్ చాట్.
   wwcConfigGUISendOutgoingHoverTextChatButton: అసలు అవుట్గోయింగ్ సందేశాలను హోవర్ టెక్స్ట్గా
@@ -682,16 +665,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: బ్లాక్లిస్ట్ను ప్రారంభించండి
   wwcConfigConversationBlacklistDeletionSuccess: ఈ పదాన్ని విజయవంతంగా తొలగించారు.
   wwcConfigGUIChatChannelSettings: చాట్ ఛానల్ కాన్ఫిగరేషన్
-  wwcConfigGUIChatBlacklistSuccess: బ్లాక్లిస్ట్ను విజయవంతంగా టోగల్ చేశారు.
   wwcConfigGUIChatMessagesBlacklistNewButton: క్రొత్త పదాన్ని జోడించండి
   wwcConfigGUIChatChannelButton: ఛానల్ సెట్టింగ్లను అనువద
   wwcConfigGUIBlacklistMessagesModify: పదం సవరించండి ({0})
   wwcConfigChatChannelFormatInvalid: చెల్లని ఛానల్ ఫార్మాట్ కనుగొనబడింది. {0} కు డిఫాల్ట్
     అవుతోంది...
-  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
-    {0}. మీరు చేర్చగల మా డిఫాల్ట్ గుర్తించిన వాదనలు: {1}. మీరు PlaceholderAPI కలిగి
-    ఉంటే, ఆ వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి
-    వెళ్ళడానికి 0 అని టైప్ చేయండి.'
   wwcConfigGUIModifyBlacklistSettings: బ్లాక్లిస్ట్ను సవరించండి
   wwcConfigGUINextPageButton: తదుపరి పేజీ
+  wwcConfigChatChannelHoverFormatInvalid: చెల్లని హోవర్ ఫార్మాట్ కనుగొనబడింది. {0}
+    కు డిఫాల్ట్ అవుతోంది...
+  wwcOrigHover: అసలు సందేశం
+  wwctGUIMainMenuPlayer: అనువదించండి {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat గుర్తించింది మరియు మీ Minecraft స్థానికీకరణ
+    ప్రతిబింబిస్తుంది ({0}). మరిన్ని వివరాల కోసం {1} అని టైప్ చేయండి.
+  wwcConfigBadYaml: 'చెల్లని YAML ఫైల్ కనుగొనబడింది: {0}. దయచేసి ఈ ఫైల్ను పరిష్కరించడానికి
+    ప్రయత్నించండి లేదా అది తొలగించబడవచ్చు!'
+  wwcConfigConversationChatBlacklistSuccess: బ్లాక్లిస్ట్ను విజయవంతంగా టోగల్ చేశారు.
+  wwcConfigConversationChannelHoverFormatInput: 'అనువాద హోవర్ టెక్స్ట్ కోసం ప్రస్తుత
+    ఫార్మాట్ {0}. సాధ్యమైన డిఫాల్ట్ వాదనలు: {1}. మీరు PlaceholderAPI కలిగి ఉంటే, ఆ
+    వేరియబుల్స్ బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి వెళ్ళడానికి
+    0 అని టైప్ చేయండి.'
+  wwcConfigConversationChannelFormatInput: 'ప్రత్యేక చాట్ ఛానల్ కోసం ప్రస్తుత ఫార్మాట్
+    {0}. సాధ్యమైన డిఫాల్ట్ వాదనలు: {1}. మీరు PlaceholderAPI కలిగి ఉంటే, ఆ వేరియబుల్స్
+    బదులుగా శాతాలు (%) చుట్టూ ఉన్నాయని నిర్ధారించుకోండి. తిరిగి వెళ్ళడానికి 0 అని
+    టైప్ చేయండి.'
+  wwcConfigConversationChatHoverFormatSuccess: మీ హోవర్ ఫార్మాట్ విజయవంతంగా మార్చబడింది.
+  wwcConfigConversationLocalizeSyncSuccess: వినియోగదారు స్థానికీకరణను సమకాలీకరించడాన్ని
+    విజయవంతంగా టోగల్ చేసింది.
+  wwcConfigGUILocalizeSyncButton: సమకాలీకరించండి యూజర్ స్థానికీకరణ
+  wwcConfigSyncUserLocalInvalid: సమకాలీకరించు వినియోగదారు స్థానికీకరణ సెట్టింగ్ చెల్లదు.
+    నిజానికి డిఫాల్టింగ్...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: హోవర్ టెక్స్ట్ ఫార్మాట్ను మార్చండి
+  wwcdResetWarn: 'హెచ్చరిక: ఈ ఆదేశం రికార్డులు మరియు మీ క్రియాశీల అనువాదకులతో సహా
+    మొత్తం డేటాను పూర్తిగా రీసెట్ చేస్తుంది. మీరు ఏమి చేస్తున్నారో మీకు తెలియకపోతే
+    ఈ కమాండ్ను అమలు చేయవద్దు: {0}'
+  wwcdResetNotif: వరల్డ్వైడ్చాట్ రీసెట్ చేయబడింది. రీలోడ్ అవుతోంది...
+  wwcdResetNotifError: అన్ని డేటా విజయవంతంగా తుడిచివేయబడలేదు. మీరు మీ డేటాబేస్కు కనెక్ట్
+    అయ్యారా?
+  colorCodeWarning: రంగు సంకేతాలను ఉపయోగించడం మీకు అనూహ్య ఫలితాలను ఇవ్వవచ్చు.
 

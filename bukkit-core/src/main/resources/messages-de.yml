@@ -20,7 +20,6 @@ Messages:
     Sie sicher, dass Ihre Anmeldeinformationen und Ihre Firewall korrekt konfiguriert
     sind!
   wwcConfigEnabledbStats: Aktiviert bStats.
-  wwctGUIMainMenuPlayer: Übersetzungsmenü von {0}
   wwctGUIBookButton: Buch-Übersetzung umschalten
   wwcLangDetected: Erkannte Sprache {0}.
   wwcBookTranslateStart: Zielbuch übersetzen...
@@ -55,7 +54,6 @@ Messages:
   wwctPlayerNotFound: Spieler {0} habe nicht gefunden.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon-Region ändern
   wwcConfigConversationLangInvalid: Ungültiger Sprachcode!
-  wwcConfigGUIWatsonAPIKeyButton: Ändern Sie den Watson API-Schlüssel
   wwcEnabled: Die WorldwideChat-Version {0} aktiviert.
   wwctbOnSender: Buchübersetzung ist aktiviert. Klicken Sie mit der rechten Maustaste,
     während Sie ein Buch halten, um
@@ -67,8 +65,6 @@ Messages:
   wwcUpdaterConnectionFailed: Es konnte nicht nach neuesten Updates auf Github gesucht
     werden.
   watsonNotFoundExceptionNotification: Ihre Eingabe kann nicht weiter übersetzt werden.
-  wwcConfigConversationWatsonAPIKeyInput: Der aktuelle API-Schlüssel {0}. Bitte geben
-    Sie einen API-Schlüssel für Watson ein oder geben Sie 0 ein, um zurückzukehren.
   wwctGUIStopButton: Beenden Sie das Übersetzen
   wwcgTranslationStopped: Die globale Chat-Übersetzung wurde gestoppt.
   wwcUpdaterFutureDate: Diese Instanz von WorldwideChat hat eine größere Version als
@@ -79,13 +75,9 @@ Messages:
     war zu lang. Übersetzung:'
   wwctsOnTarget: Die signierte Übersetzung ist für {0} aktiviert.
   wwcConfigCacheDisabled: Der Übersetzer-Cache ist deaktiviert.
-  wwcConfigConversationWatsonURLInput: Die aktuelle URL ist {0}. Bitte geben Sie eine
-    Dienst-URL für Watson ein oder geben Sie 0 ein, um zurückzukehren.
   wwcBookDone: Buch wurde erfolgreich übersetzt.
   wwctsOnSender: Übersetzung signieren aktiviert. Rechtsklick auf ein Schild um es
     zu übersetzen!
-  watsonColorCodeWarning: Die Verwendung von Farbcodes kann zu unvorhersehbaren Ergebnissen
-    führen.
   wwctGUITranslationButton: Beginne zu übersetzen
   wwctGUIAutoDetectButton: Quellsprache automatisch erkennen
   wwcUpdaterUpToDate: WorldwideChat ist auf dem neuesten Stand!
@@ -98,7 +90,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat ist nicht mehr auf dem neuesten Stand. Bitte
     aktualisieren Sie auf die neueste Version.
   wwcConfigConversationRateLimitSuccess: Das Satzlimit wurde erfolgreich festgelegt.
-  wwcConfigConversationWatsonURLSuccess: Die Watson-URL wurde erfolgreich festgelegt.
   wwctbPlayerNotFound: Der Spieler {0} wurde entweder nicht gefunden oder ist kein
     aktiver Übersetzer.
   wwcConfigConversationTranslationCacheSuccess: Das Übersetzungscache-Limit wurde
@@ -119,7 +110,6 @@ Messages:
     Vorgegeben auf 0 Sekunden...
   wwcSignTranslateStart: Zielzeichen übersetzen...
   wwcConfigGUIChatSettings: Chat-Konfiguration
-  wwcConfigGUIWatsonURLButton: Ändern der Watson-Dienst-URL
   wwcConfigConversationUpdateCheckerSuccess: Aktualisiere die Checker-Verzögerung
     wurde erfolgreich.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Der globale Chat wird von {0}
@@ -139,8 +129,6 @@ Messages:
   wwcsAttemptedTranslations: 'Versuchte Übersetzungen: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Der geheime Amazon-Schlüssel
     wurde erfolgreich festgelegt.
-  wwcConfigConversationWatsonAPIKeySuccess: Der Watson-API-Schlüssel wurde erfolgreich
-    festgelegt.
   wwcRateLimit: Ihre Übersetzungen sind ratenbeschränkt. Bitte warten Sie noch einen
     {0} Sekunden.
   wwcConfigCacheEnabled: Der Übersetzer-Cache ist aktiviert und auf ein Limit von
@@ -204,7 +192,6 @@ Messages:
   wwcInvalidTranslator: Ungültige Übersetzereinstellungen. Bitte repariere das in
     deiner config.yml oder mit /wwcc um dieses Plugin zu verwenden.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguration'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat duldet die Verwendung von /reload nicht. Bitte
     fahren Sie mit Vorsicht fort.
   wwcConfigEnabledDebugMode: DEBUG-Modus aktiviert. Wenn Sie kein Entwickler oder
@@ -327,10 +314,7 @@ Messages:
     umgeschaltet. Laden Sie neu, damit die Änderung wirksam wird.
   wwcConfigYAMLDefault: Standardmäßig YAML für die Datenspeicherung.
   wwcConfigGUISQLMenuButton: Ändern der SQL-Einstellungen
-  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate wurde erfolgreich
-    umgeschaltet. Laden Sie neu, damit die Änderung wirksam wird.
   wwcConfigGUIToggleGoogleTranslateButton: Google Übersetzer umschalten
-  wwcConfigGUIToggleWatsonTranslateButton: Watson Übersetzen umschalten
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Translate umschalten
   wwcConfigGUIStorageSettings: Storage-Konfiguration
   wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate wurde erfolgreich
@@ -702,9 +686,6 @@ Messages:
     festgelegt.
   wwcConfigVaultSupportInvalid: Ungültige Tresorunterstützung in config.yml festgelegt.
     Standardmäßig auf „true“ gesetzt...
-  wwcWatsonDeprecation: Watson ist veraltet und wird von IBM nicht mehr unterstützt.
-    Bitte erwägen Sie einen Wechsel, da die Unterstützung dafür mit dem nächsten Update
-    entfernt wird.
   wwcConfigForceChatChannelEnabled: Bei allen Übersetzungen wird ein separater Übersetzungskanal
     erzwungen.
   wwcConfigConversationSeparateChatChannelForceSuccess: Das Erzwingen des separaten
@@ -719,7 +700,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Symbol für separaten Kanal ändern
   wwcConfigConversationChatFormatSuccess: Ihr Format wurde erfolgreich geändert.
   wwcConfigGUISeparateChatChannelForceButton: Separaten Kanal erzwingen
-  wwcOrigHover: 'Ursprüngliche Nachricht: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Der ursprüngliche ausgehende
     Chat, der als Hover-Text an die Übersetzung angehängt wurde, wurde erfolgreich
     umgeschaltet.
@@ -746,16 +726,45 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Blacklist aktivieren
   wwcConfigConversationBlacklistDeletionSuccess: Der Begriff wurde erfolgreich gelöscht.
   wwcConfigGUIChatChannelSettings: Konfiguration des Chat-Kanals
-  wwcConfigGUIChatBlacklistSuccess: Die schwarze Liste wurde erfolgreich umgeschaltet.
   wwcConfigGUIChatMessagesBlacklistNewButton: Neues Wort hinzufügen
   wwcConfigGUIChatChannelButton: Kanaleinstellungen übersetzen
   wwcConfigGUIBlacklistMessagesModify: Begriff ändern ({0})
   wwcConfigChatChannelFormatInvalid: Es wurde ein ungültiges Kanalformat erkannt.
     Die Standardeinstellung ist {0}...
-  wwcConfigConversationChannelFormatInput: 'Das aktuelle Format für den separaten
-    Chat-Kanal ist {0}. Unsere anerkannten Standardargumente, die Sie einbeziehen
-    können: {1}. Wenn Sie PlaceholderAPI haben, stellen Sie sicher, dass diese Variablen
-    stattdessen von Prozentsätzen (%) umgeben sind. Geben Sie 0 ein, um zurückzugehen.'
   wwcConfigGUIModifyBlacklistSettings: Schwarze Liste ändern
   wwcConfigGUINextPageButton: Nächste Seite
+  wwcConfigChatChannelHoverFormatInvalid: Ungültiges Hover-Format erkannt. Die Standardeinstellung
+    ist {0}...
+  wwcOrigHover: Ursprüngliche Nachricht
+  wwctGUIMainMenuPlayer: Übersetze {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat hat deine Minecraft-Lokalisierung erkannt
+    und wird sie wiedergeben ({0}). Gib {1} ein, um weitere Informationen zu erhalten.
+  wwcConfigBadYaml: 'Ungültige YAML-Datei erkannt: {0}. Bitte versuchen Sie, diese
+    Datei zu reparieren, sonst könnte sie gelöscht werden!'
+  wwcConfigConversationChatBlacklistSuccess: Die schwarze Liste wurde erfolgreich
+    umgeschaltet.
+  wwcConfigConversationChannelHoverFormatInput: 'Das aktuelle Format für den übersetzten
+    Hover-Text ist {0}. Mögliche Standardargumente: {1}. Wenn Sie PlaceholderAPI haben,
+    stellen Sie sicher, dass diese Variablen stattdessen von Prozentsätzen (%) umgeben
+    sind. Geben Sie 0 ein, um zurückzugehen.'
+  wwcConfigConversationChannelFormatInput: 'Das aktuelle Format für den separaten
+    Chat-Kanal ist {0}. Mögliche Standardargumente: {1}. Wenn Sie PlaceholderAPI haben,
+    stellen Sie sicher, dass diese Variablen stattdessen von Prozentsätzen (%) umgeben
+    sind. Geben Sie 0 ein, um zurückzugehen.'
+  wwcConfigConversationChatHoverFormatSuccess: Ihr Hover-Format wurde erfolgreich
+    geändert.
+  wwcConfigConversationLocalizeSyncSuccess: Die Synchronisierung der Benutzerlokalisierung
+    wurde erfolgreich umgeschaltet.
+  wwcConfigGUILocalizeSyncButton: Benutzerlokalisierung synchronisieren
+  wwcConfigSyncUserLocalInvalid: Die Lokalisierungseinstellung für Sync-Benutzer ist
+    ungültig. Die Standardeinstellung ist wahr...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover-Textformat ändern
+  wwcdResetWarn: 'WARNUNG: Dieser Befehl setzt alle Daten einschließlich der Datensätze
+    und Ihrer aktiven Übersetzer vollständig zurück. FÜHRE DIESEN BEFEHL NUR AUS,
+    WENN DU WEISST, WAS DU TUST: {0}'
+  wwcdResetNotif: WorldwideChat wurde zurückgesetzt. Wird neu geladen...
+  wwcdResetNotifError: Nicht alle Daten wurden erfolgreich gelöscht. Sind Sie mit
+    Ihrer Datenbank verbunden?
+  colorCodeWarning: Die Verwendung von Farbcodes kann zu unvorhersehbaren Ergebnissen
+    führen.
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Не успеа да се поврзете до {0}. Проверете дали вашите
     ингеренции и заштитен ѕид се правилно конфигурирани!
   wwcConfigEnabledbStats: Овозможено bStats.
-  wwctGUIMainMenuPlayer: Мени за преведување на {0}
   wwctGUIBookButton: Вклучи превод на книги
   wwcLangDetected: Откриен јазик {0}.
   wwcBookTranslateStart: Преведување целна книга...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Играч % не сум пронајден.
   wwcConfigGUIAmazonTranslateRegionButton: Промена на регионот Амазон
   wwcConfigConversationLangInvalid: Неважечки јазичен код!
-  wwcConfigGUIWatsonAPIKeyButton: Промена Вотсон API Клучни
   wwcEnabled: Овозможена верзија {0}.
   wwctbOnSender: Превод на книги е овозможено. Десен-клик додека држите книга за да
     ја преведете!
@@ -63,8 +61,6 @@ Messages:
   wwctsOffTarget: Пријавете преводот исклучен за {0}.
   wwcUpdaterConnectionFailed: Не можам да проверам за најновите ажурирања на Github.
   watsonNotFoundExceptionNotification: Не може да се преведе вашиот влез понатаму.
-  wwcConfigConversationWatsonAPIKeyInput: Тековниот API клуч е {0}. Ве молиме внесете
-    API клуч за Вотсон, или напишете 0 за да се вратите назад.
   wwctGUIStopButton: Стоп за преведување
   wwcgTranslationStopped: Глобалниот разговор превод е запрен.
   wwcUpdaterFutureDate: Овој пример на WorldwideChat има поголема верзија од најновата
@@ -75,12 +71,8 @@ Messages:
     долг. Превод:'
   wwctsOnTarget: Пријавете превод е овозможено за {0}.
   wwcConfigCacheDisabled: Кешот на преведувачот оневозможен
-  wwcConfigConversationWatsonURLInput: Тековната URL адреса е {0}. Ве молиме внесете
-    URL адреса на услугата за Вотсон или напишете 0 за да се вратите назад.
   wwcBookDone: Книга преведена успешно.
   wwctsOnSender: Пријавете превод овозможено. Десен-клик на знак за да го преведете!
-  watsonColorCodeWarning: Користењето кодови во боја може да ви даде непредвидливи
-    резултати.
   wwctGUITranslationButton: Започнете со преведување
   wwctGUIAutoDetectButton: Авто-откривање на изворниот јазик
   wwcUpdaterUpToDate: WorldwideChat е ажуриран!
@@ -93,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
     верзија.
   wwcConfigConversationRateLimitSuccess: Стапка граница поставена успешно.
-  wwcConfigConversationWatsonURLSuccess: URL-то на Вотсон постави успешно.
   wwctbPlayerNotFound: Играч {0} или не е пронајден, или не е активен преведувач.
   wwcConfigConversationTranslationCacheSuccess: Превод кеш граница поставена успешно.
   wwctInvalidArgs: Неважечки аргументи обезбедени!
@@ -112,7 +103,6 @@ Messages:
     до 0 секунди...
   wwcSignTranslateStart: Преведување на целниот знак...
   wwcConfigGUIChatSettings: Конфигурација на разговор
-  wwcConfigGUIWatsonURLButton: Промена на URL-то на услугата Вотсон
   wwcConfigConversationUpdateCheckerSuccess: Ажурирање проверка одложување постави
     успешно.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Глобалниот разговор се преведува
@@ -131,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'Обид за преводи: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Амазон таен клуч во собата
     успешно.
-  wwcConfigConversationWatsonAPIKeySuccess: Вотсон API клуч поставен успешно.
   wwcRateLimit: Вашите преводи се ограничени на стапка. Ве молиме почекајте друг {0}
     секунди.
   wwcConfigCacheEnabled: Кеш на преведувачот е овозможено и поставено на ограничување
@@ -196,7 +185,6 @@ Messages:
   wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
     во вашиот config.yml или со /wwcc да го користите овој приклучок.
   wwcConfigGUIEachTranslatorSettings: '{0} Конфигурација'
-  wwcConfigGUIWatsonButton: Вотсон
   wwcServerReloadWarning: WorldwideChat не го осучува користењето на /превчитај. Ве
     молиме продолжете со претпазливост.
   wwcConfigEnabledDebugMode: Овозможено дебагирање режим. Ако не сте развивач или
@@ -312,10 +300,7 @@ Messages:
     Вчитајте повторно за промената да стапи на сила.
   wwcConfigYAMLDefault: Стандардно на YAML за складирање на податоци.
   wwcConfigGUISQLMenuButton: Променете ги SQL поставките
-  wwcConfigConversationWatsonTranslateToggleSuccess: Успешно се префрли Вотсон Преведете.
-    Вчитајте повторно за промената да стапи на сила.
   wwcConfigGUIToggleGoogleTranslateButton: Префрли Google Преведи
-  wwcConfigGUIToggleWatsonTranslateButton: Вклучи Вотсон Преведи
   wwcConfigGUIToggleAmazonTranslateButton: Вклучи Амазон Преведи
   wwcConfigGUIStorageSettings: Конфигурација на складирање
   wwcConfigConversationAmazonTranslateToggleSuccess: Успешно префрлен Амазон Преведете.
@@ -658,9 +643,6 @@ Messages:
     за разговор.
   wwcConfigVaultSupportInvalid: Невалидна поддршка за трезор поставена во config.yml.
     Поставување на вистинито...
-  wwcWatsonDeprecation: Вотсон е застарен и повеќе не е поддржан од IBM. Ве молиме
-    размислете за префрлување, бидејќи поддршката за тоа ќе биде отстранета во следното
-    ажурирање.
   wwcConfigForceChatChannelEnabled: Посебен канал за превод ќе биде принуден за време
     на сите преводи.
   wwcConfigConversationSeparateChatChannelForceSuccess: Успешно се префрли форсирајќи
@@ -675,7 +657,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Променете ја иконата на одделен канал
   wwcConfigConversationChatFormatSuccess: Вашиот формат е успешно променет.
   wwcConfigGUISeparateChatChannelForceButton: Принудете посебен канал
-  wwcOrigHover: 'Оригинална порака: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Оригиналниот појдовен разговор
     прикачен на преводот како лебдејќи текст успешно се префрли.
   wwcConfigGUISendOutgoingHoverTextChatButton: Додадете оригинални појдовни пораки
@@ -700,16 +681,44 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Овозможи црна листа
   wwcConfigConversationBlacklistDeletionSuccess: Успешно го избриша терминот.
   wwcConfigGUIChatChannelSettings: Конфигурација на канал за разговор
-  wwcConfigGUIChatBlacklistSuccess: Успешно се префрли на црната листа.
   wwcConfigGUIChatMessagesBlacklistNewButton: Додај нов збор
   wwcConfigGUIChatChannelButton: Преведете ги поставките на каналот
   wwcConfigGUIBlacklistMessagesModify: Измени термин ({0})
   wwcConfigChatChannelFormatInvalid: Откриен неважечки формат на каналот. Стандардно
     на {0}...
-  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
-    разговор е {0}. Нашите стандардно признати аргументи што можете да ги вклучите:
-    {1}. Ако имате PlaceholderAPI, проверете дали тие променливи се опкружени со проценти
-    (%) наместо тоа. Напишете 0 за да се вратите назад.'
   wwcConfigGUIModifyBlacklistSettings: Изменете ја црната листа
   wwcConfigGUINextPageButton: Следна страница
+  wwcConfigChatChannelHoverFormatInvalid: Откриен е неважечки формат на лебдење. Стандардно
+    на {0}...
+  wwcOrigHover: Оригинална порака
+  wwctGUIMainMenuPlayer: Преведи {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ја откри и ќе ја одразува вашата локализација
+    на Minecraft ({0}). Напишете {1} за повеќе детали.
+  wwcConfigBadYaml: 'Откриена е неважечка датотека YAML: {0}. Ве молиме обидете се
+    да ја поправите оваа датотека или може да биде избришана!'
+  wwcConfigConversationChatBlacklistSuccess: Успешно се префрли на црната листа.
+  wwcConfigConversationChannelHoverFormatInput: 'Тековниот формат за превод на лебдејќи
+    текст е {0}. Можни стандардни аргументи: {1}. Ако имате PlaceholderAPI, проверете
+    дали тие променливи се опкружени со проценти (%) наместо тоа. Напишете 0 за да
+    се вратите назад.'
+  wwcConfigConversationChannelFormatInput: 'Тековниот формат за одделниот канал за
+    разговор е {0}. Можни стандардни аргументи: {1}. Ако имате PlaceholderAPI, проверете
+    дали тие променливи се опкружени со проценти (%) наместо тоа. Напишете 0 за да
+    се вратите назад.'
+  wwcConfigConversationChatHoverFormatSuccess: Вашиот формат на лебдење е успешно
+    променет.
+  wwcConfigConversationLocalizeSyncSuccess: Успешно вклучена локализација на синхронизирање
+    на корисникот.
+  wwcConfigGUILocalizeSyncButton: Синхронизирај локализација
+  wwcConfigSyncUserLocalInvalid: Синхронизирајте ја поставката за локализација на
+    корисникот Поставување на вистинито...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Променете го форматот на текст
+    на лебдењето
+  wwcdResetWarn: 'ПРЕДУПРЕДУВАЊЕ: Оваа команда целосно ќе ги ресетира сите податоци,
+    вклучувајќи записи и вашите активни преведувачи. НЕ ЈА СТАРТУВАЈТЕ ОВАА КОМАНДА
+    ОСВЕН АКО НЕ ЗНАЕТЕ ШТО ПРАВИТЕ: {0}'
+  wwcdResetNotif: WorldwideChat е ресетиран. Повторно вчитување...
+  wwcdResetNotifError: Не сите податоци беа успешно избришани. Дали сте поврзани со
+    вашата база на податоци?
+  colorCodeWarning: Користењето кодови на бои може да ви даде непредвидливи резултати.
 

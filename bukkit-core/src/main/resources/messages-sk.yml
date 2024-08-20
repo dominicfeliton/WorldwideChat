@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nepodarilo sa pripojiť k {0}. Uistite sa, že vaše poverenia
     a firewall sú správne nakonfigurované!
   wwcConfigEnabledbStats: Povolené bStats.
-  wwctGUIMainMenuPlayer: Prekladové menu {0}
   wwctGUIBookButton: Prepnúť preklad kníh
   wwcLangDetected: Zistený jazyk {0}.
   wwcBookTranslateStart: Preklad cieľovej knihy...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Hráč {0}šiel som.
   wwcConfigGUIAmazonTranslateRegionButton: Zmeniť oblasť Amazon
   wwcConfigConversationLangInvalid: Neplatný kód jazyka!
-  wwcConfigGUIWatsonAPIKeyButton: Zmeniť Watson API kľúč
   wwcEnabled: Povolená verzia WorldwideChat {0}.
   wwctbOnSender: Preklad kníh povolený. Kliknite pravým tlačidlom myši, zatiaľ čo
     držíte knihu preložiť!
@@ -64,8 +62,6 @@ Messages:
   wwctsOffTarget: Preklad podpisu vypnutý pre {0}.
   wwcUpdaterConnectionFailed: Nie je možné skontrolovať najnovšie aktualizácie v Githube.
   watsonNotFoundExceptionNotification: Nie je možné preložiť váš vstup ďalej.
-  wwcConfigConversationWatsonAPIKeyInput: Aktuálny kľúč API je {0}. Prosím, zadajte
-    API kľúč pre Watson, alebo zadajte 0, aby ste sa vrátili späť.
   wwctGUIStopButton: Zastaviť preklad
   wwcgTranslationStopped: Globálny preklad chatu bol zastavený.
   wwcUpdaterFutureDate: Táto inštancia WorldwideChat má vyššiu verziu ako najnovšia
@@ -76,13 +72,9 @@ Messages:
     dlhý. Preklad:'
   wwctsOnTarget: Preklad podpisu povolený pre {0}.
   wwcConfigCacheDisabled: Cache prekladateľa vypnutá.
-  wwcConfigConversationWatsonURLInput: Aktuálna URL je {0}. Prosím, zadajte adresu
-    URL služby pre Watson, alebo zadajte 0, aby ste sa vrátili späť.
   wwcBookDone: Kniha úspešne preložená.
   wwctsOnSender: Podpísať preklad povolený. Kliknite pravým tlačidlom myši na znamenie
     ho preložiť!
-  watsonColorCodeWarning: Použitie farebných kódov vám môže poskytnúť nepredvídateľné
-    výsledky.
   wwctGUITranslationButton: Začať prekladať
   wwctGUIAutoDetectButton: Automatická detekcia zdrojového jazyka
   wwcUpdaterUpToDate: WorldwideChat je aktuálny!
@@ -94,7 +86,6 @@ Messages:
   wwcPlayerNotFound: Hráč {0}šiel som.
   wwcUpdaterOutOfDateChat: WorldwideChat je zastaraný. Aktualizujte na najnovšiu verziu.
   wwcConfigConversationRateLimitSuccess: Úspešne nastavený limit rýchlosti.
-  wwcConfigConversationWatsonURLSuccess: Watson URL nastavená úspešne.
   wwctbPlayerNotFound: Prehrávač {0} sa buď nenašiel, alebo nie je aktívny prekladateľ.
   wwcConfigConversationTranslationCacheSuccess: Limit vyrovnávacej pamäte prekladu
     úspešne nastavený.
@@ -113,7 +104,6 @@ Messages:
     na 0 sekúnd...
   wwcSignTranslateStart: Preklad cieľového znaku...
   wwcConfigGUIChatSettings: Konfigurácia chatu
-  wwcConfigGUIWatsonURLButton: Zmena adresy URL služby Watson
   wwcConfigConversationUpdateCheckerSuccess: Aktualizácia kontroly oneskorenia nastavená
     úspešne.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globálny chat je prekladaný z
@@ -132,7 +122,6 @@ Messages:
   wwcsAttemptedTranslations: 'Pokus o preklady: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajný kľúč nastavený
     úspešne.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API kľúč nastavený úspešne.
   wwcRateLimit: Vaše preklady sú obmedzené. Počkajte prosím ďalšie {0} sekúnd.
   wwcConfigCacheEnabled: Vyrovnávacia pamäť prekladateľa povolená a nastavená na limit
     {0}.
@@ -196,7 +185,6 @@ Messages:
   wwcInvalidTranslator: Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
     alebo /wwcc použiť tento plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurácia'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat neodpúšťa použitie /reload. Prosím, postupujte
     opatrne.
   wwcConfigEnabledDebugMode: Povolený režim DEBUG. Ak nie ste vývojár alebo poradca
@@ -312,10 +300,7 @@ Messages:
     Znovu načítať, aby sa zmena prejavili.
   wwcConfigYAMLDefault: Zlyhanie YAML pre ukladanie dát.
   wwcConfigGUISQLMenuButton: Zmeniť nastavenia SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Úspešne toggled Watson Preložiť.
-    Znovu načítať, aby sa zmena prejavili.
   wwcConfigGUIToggleGoogleTranslateButton: Prepnúť Prekladač Google
-  wwcConfigGUIToggleWatsonTranslateButton: Prepnúť Watson preložiť
   wwcConfigGUIToggleAmazonTranslateButton: Prepnúť Amazon preklad
   wwcConfigGUIStorageSettings: Konfigurácia úložiska
   wwcConfigConversationAmazonTranslateToggleSuccess: Úspešne toggled Amazon Translate.
@@ -642,8 +627,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Úspešne nastavte prioritu udalostí chatu.
   wwcConfigVaultSupportInvalid: Neplatná podpora trezorov nastavená v config.yml.
     Predvolená hodnota true...
-  wwcWatsonDeprecation: Watson bol zastaraný a IBM ho už nepodporuje. Zvážte prepnutie,
-    pretože jeho podpora bude odstránená v ďalšej aktualizácii.
   wwcConfigForceChatChannelEnabled: Počas všetkých prekladov bude nútený samostatný
     prekladový kanál.
   wwcConfigConversationSeparateChatChannelForceSuccess: Úspešne prepnuté vynútenie
@@ -657,7 +640,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Zmeniť ikonu samostatného kanála
   wwcConfigConversationChatFormatSuccess: Váš formát bol úspešne zmenený.
   wwcConfigGUISeparateChatChannelForceButton: Vynútiť samostatný kanál
-  wwcOrigHover: 'Pôvodná správa: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Pôvodný odchádzajúci chat
     pripojený k prekladu ako text na kurzor myši bol úspešne prepnutý.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pridanie pôvodných odchádzajúcich správ
@@ -681,16 +663,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Povoliť čiernu listinu
   wwcConfigConversationBlacklistDeletionSuccess: Úspešne odstránený výraz.
   wwcConfigGUIChatChannelSettings: Konfigurácia chatového kanála
-  wwcConfigGUIChatBlacklistSuccess: Úspešne prepínal čiernu listinu.
   wwcConfigGUIChatMessagesBlacklistNewButton: Pridať nové slovo
   wwcConfigGUIChatChannelButton: Preložiť nastavenia kanála
   wwcConfigGUIBlacklistMessagesModify: Upraviť výraz ({0})
   wwcConfigChatChannelFormatInvalid: Zistený neplatný formát kanála. Predvolené nastavenie
     na {0}...
-  wwcConfigConversationChannelFormatInput: 'Aktuálny formát samostatného chatového
-    kanála je {0}. Naše predvolené rozpoznané argumenty, ktoré môžete zahrnúť: {1}.
-    Ak máte PlaceholderAPI, uistite sa, že tieto premenné sú namiesto toho obklopené
-    percentami (%). Zadajte 0, aby ste sa vrátili späť.'
   wwcConfigGUIModifyBlacklistSettings: Upraviť čiernu listinu
   wwcConfigGUINextPageButton: Nasledujúca strana
+  wwcConfigChatChannelHoverFormatInvalid: Zistený neplatný formát kurzora myši. Predvolené
+    nastavenie na {0}...
+  wwcOrigHover: Pôvodná správa
+  wwctGUIMainMenuPlayer: Preložiť {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat zistil a bude odrážať vašu lokalizáciu
+    Minecraft ({0}). Ak chcete získať ďalšie podrobnosti, napíšte {1}.
+  wwcConfigBadYaml: 'Zistený neplatný súbor YAML: {0}. Pokúste sa opraviť tento súbor,
+    inak môže byť odstránený!'
+  wwcConfigConversationChatBlacklistSuccess: Úspešne prepínal čiernu listinu.
+  wwcConfigConversationChannelHoverFormatInput: 'Aktuálny formát prekladového textu
+    je {0}. Možné predvolené argumenty: {1}. Ak máte PlaceholderAPI, uistite sa, že
+    tieto premenné sú namiesto toho obklopené percentami (%). Zadajte 0, aby ste sa
+    vrátili späť.'
+  wwcConfigConversationChannelFormatInput: 'Aktuálny formát samostatného chatového
+    kanála je {0}. Možné predvolené argumenty: {1}. Ak máte PlaceholderAPI, uistite
+    sa, že tieto premenné sú namiesto toho obklopené percentami (%). Zadajte 0, aby
+    ste sa vrátili späť.'
+  wwcConfigConversationChatHoverFormatSuccess: Váš formát kurzora sa úspešne zmenil.
+  wwcConfigConversationLocalizeSyncSuccess: Úspešne prepnutá synchronizácia lokalizácie
+    používateľa.
+  wwcConfigGUILocalizeSyncButton: Synchronizácia lokalizácie používateľa
+  wwcConfigSyncUserLocalInvalid: Synchronizácia nastavenia lokalizácie používateľa
+    je neplatná. Predvolená hodnota true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Zmeniť formát textu Hover
+  wwcdResetWarn: 'VAROVANIE: Tento príkaz úplne obnoví všetky údaje vrátane záznamov
+    a vašich aktívnych prekladateľov. NESPÚŠŤAJTE TENTO PRÍKAZ, POKIAĽ NEVIETE, ČO
+    ROBÍTE: {0}'
+  wwcdResetNotif: WorldwideChat bol resetovaný. Opätovné načítanie...
+  wwcdResetNotifError: Nie všetky údaje boli úspešne vymazané. Ste pripojený k svojej
+    databáze?
+  colorCodeWarning: Použitie farebných kódov vám môže poskytnúť nepredvídateľné výsledky.
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Αποτυχία σύνδεσης στο {0}. Βεβαιωθείτε ότι τα διαπιστευτήριά
     σας και το τείχος προστασίας έχουν ρυθμιστεί σωστά!
   wwcConfigEnabledbStats: Ενεργοποιημένα bStats.
-  wwctGUIMainMenuPlayer: Μενού μετάφρασης του {0}
   wwctGUIBookButton: Εναλλαγή μετάφρασης βιβλίου
   wwcLangDetected: Εντοπίστηκε γλώσσα {0}.
   wwcBookTranslateStart: Μεταφράζω το βιβλίο στόχου...
@@ -53,7 +52,6 @@ Messages:
   wwctPlayerNotFound: Παίχτης %Δεν βρέθηκε.
   wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
   wwcConfigConversationLangInvalid: Μη έγκυρος κωδικός γλώσσας!
-  wwcConfigGUIWatsonAPIKeyButton: Αλλαγή κλειδιού API Watson
   wwcEnabled: Ενεργοποιημένη έκδοση {0} WorldwideChat
   wwctbOnSender: Η μετάφραση του βιβλίου είναι ενεργοποιημένη. Κάντε δεξί κλικ κρατώντας
     ένα βιβλίο για να το μεταφράσετε!
@@ -67,8 +65,6 @@ Messages:
     στο Github.
   watsonNotFoundExceptionNotification: Δεν είναι δυνατή η περαιτέρω μετάφραση της
     εισόδου σας.
-  wwcConfigConversationWatsonAPIKeyInput: Το τρέχον κλειδί API είναι {0}. Εισαγάγετε
-    ένα κλειδί API για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwctGUIStopButton: Σταματήστε τη μετάφραση
   wwcgTranslationStopped: Η μετάφραση της παγκόσμιας συνομιλίας έχει διακοπεί.
   wwcUpdaterFutureDate: Αυτή η παρουσία του WorldwideChat έχει μια μεγαλύτερη έκδοση
@@ -79,13 +75,9 @@ Messages:
     ήταν πολύ μεγάλη. Μετάφραση:'
   wwctsOnTarget: Ενεργοποίηση μετάφρασης υπογραφής για {0}.
   wwcConfigCacheDisabled: Η μνήμη cache του μεταφραστή απενεργοποιήθηκε.
-  wwcConfigConversationWatsonURLInput: Η τρέχουσα διεύθυνση URL είναι {0}. Εισαγάγετε
-    μια διεύθυνση URL υπηρεσίας για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcBookDone: Το βιβλίο μεταφράστηκε με επιτυχία.
   wwctsOnSender: Ενεργοποίηση μετάφρασης υπογραφής. Κάντε δεξί κλικ σε μια πινακίδα
     για να τη μεταφράσετε!
-  watsonColorCodeWarning: Η χρήση κωδικών χρωμάτων μπορεί να σας δώσει απρόβλεπτα
-    αποτελέσματα.
   wwctGUITranslationButton: Έναρξη μετάφρασης
   wwctGUIAutoDetectButton: Αυτόματος εντοπισμός γλώσσας προέλευσης
   wwcUpdaterUpToDate: Το WorldwideChat είναι ενημερωμένο!
@@ -98,7 +90,6 @@ Messages:
   wwcUpdaterOutOfDateChat: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
     έκδοση.
   wwcConfigConversationRateLimitSuccess: Το όριο βαθμολογίας ορίστηκε με επιτυχία.
-  wwcConfigConversationWatsonURLSuccess: Η διεύθυνση URL Watson ορίστηκε με επιτυχία.
   wwctbPlayerNotFound: Ο αναπαραγωγής {0} είτε δεν βρέθηκε είτε δεν είναι ενεργός
     μεταφραστής.
   wwcConfigConversationTranslationCacheSuccess: Το όριο cache μετάφρασης ορίστηκε
@@ -119,7 +110,6 @@ Messages:
     σε 0 δευτερόλεπτα...
   wwcSignTranslateStart: Μεταφράζω το σημάδι στόχου...
   wwcConfigGUIChatSettings: Ρύθμιση παραμέτρων συνομιλίας
-  wwcConfigGUIWatsonURLButton: Αλλαγή URL υπηρεσίας Watson
   wwcConfigConversationUpdateCheckerSuccess: Η καθυστέρηση ελέγχου ενημέρωσης ορίστηκε
     με επιτυχία.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Η καθολική συνομιλία μεταφράζεται
@@ -138,7 +128,6 @@ Messages:
   wwcsAttemptedTranslations: 'Απόπειρα μεταφράσεων: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Το μυστικό κλειδί Amazon που
     με επιτυχία.
-  wwcConfigConversationWatsonAPIKeySuccess: Το κλειδί Watson API ορίστηκε με επιτυχία.
   wwcRateLimit: Οι μεταφράσεις σας είναι περιορισμένες. Παρακαλώ περιμένετε άλλο {0}
     δευτερόλεπτα.
   wwcConfigCacheEnabled: Η μνήμη cache του μεταφραστή είναι ενεργοποιημένη και έχει
@@ -204,7 +193,6 @@ Messages:
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
   wwcConfigGUIEachTranslatorSettings: '{0} Ρύθμιση παραμέτρων'
-  wwcConfigGUIWatsonButton: Γουάτσον
   wwcServerReloadWarning: Το WorldwideChat δεν επιτρέπει τη χρήση του /reload. Παρακαλώ
     προχωρήστε με προσοχή.
   wwcConfigEnabledDebugMode: Ενεργοποιημένη λειτουργία εντοπισμού σφαλμάτων. Εάν δεν
@@ -325,10 +313,7 @@ Messages:
     Google. Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
   wwcConfigYAMLDefault: Προέχει το YAML για αποθήκευση δεδομένων.
   wwcConfigGUISQLMenuButton: Αλλαγή ρυθμίσεων SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Με επιτυχία εναλλαγή Watson Μετάφραση.
-    Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
   wwcConfigGUIToggleGoogleTranslateButton: Εναλλαγή Μετάφραση Google
-  wwcConfigGUIToggleWatsonTranslateButton: Εναλλαγή της μετάφρασης Watson
   wwcConfigGUIToggleAmazonTranslateButton: Εναλλαγή Μετάφραση του Amazon
   wwcConfigGUIStorageSettings: Ρύθμιση παραμέτρων αποθήκευσης
   wwcConfigConversationAmazonTranslateToggleSuccess: Με επιτυχία εναλλαγή Amazon Μετάφραση.
@@ -696,9 +681,6 @@ Messages:
     συνομιλίας σας.
   wwcConfigVaultSupportInvalid: Μη έγκυρη υποστήριξη θυρίδας αποθήκευσης έχει οριστεί
     στο config.yml. Η προεπιλογή είναι αληθής...
-  wwcWatsonDeprecation: Το Watson έχει καταργηθεί και δεν υποστηρίζεται πλέον από
-    την IBM. Εξετάστε το ενδεχόμενο εναλλαγής, καθώς η υποστήριξη για αυτό θα καταργηθεί
-    στην επόμενη ενημέρωση.
   wwcConfigForceChatChannelEnabled: Ένα ξεχωριστό κανάλι μετάφρασης θα επιβληθεί κατά
     τη διάρκεια όλων των μεταφράσεων.
   wwcConfigConversationSeparateChatChannelForceSuccess: Επιτυχής εναλλαγή αναγκάζοντας
@@ -715,7 +697,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Αλλάξτε το ξεχωριστό εικονίδιο καναλιού
   wwcConfigConversationChatFormatSuccess: Η μορφή σας άλλαξε με επιτυχία.
   wwcConfigGUISeparateChatChannelForceButton: Ξεχωριστό κανάλι δύναμης
-  wwcOrigHover: 'Πρωτότυπο μήνυμα: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Η αρχική εξερχόμενη συνομιλία
     που επισυνάπτεται στη μετάφραση καθώς το κείμενο του ποντικιού εναλλάχθηκε με
     επιτυχία.
@@ -742,16 +723,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Ενεργοποίηση μαύρης λίστας
   wwcConfigConversationBlacklistDeletionSuccess: Διαγράφηκε επιτυχώς ο όρος.
   wwcConfigGUIChatChannelSettings: Διαμόρφωση καναλιού συνομιλίας
-  wwcConfigGUIChatBlacklistSuccess: Επιτυχής εναλλαγή της μαύρης λίστας.
   wwcConfigGUIChatMessagesBlacklistNewButton: Προσθήκη νέας λέξης
   wwcConfigGUIChatChannelButton: Μετάφραση ρυθμίσεων καναλιού
   wwcConfigGUIBlacklistMessagesModify: Τροποποίηση όρου ({0})
   wwcConfigChatChannelFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή καναλιού. Προεπιλογή
     σε {0}...
-  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
-    συνομιλίας είναι {0}. Τα προεπιλεγμένα αναγνωρισμένα ορίσματά μας που μπορείτε
-    να συμπεριλάβετε: {1}. Εάν έχετε PlaceHolderAPI, βεβαιωθείτε ότι αυτές οι μεταβλητές
-    περιβάλλονται από ποσοστά (%). Πληκτρολογήστε 0 για να επιστρέψετε.'
   wwcConfigGUIModifyBlacklistSettings: Τροποποιήστε τη μαύρη λίστα
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
+  wwcConfigChatChannelHoverFormatInvalid: Εντοπίστηκε μη έγκυρη μορφή του ποντικιού.
+    Προεπιλογή σε {0}...
+  wwcOrigHover: Αρχικό μήνυμα
+  wwctGUIMainMenuPlayer: Μετάφραση {0}
+  wwcOnJoinSetLocaleSuccess: Το WorldwideChat έχει εντοπίσει και θα αντικατοπτρίζει
+    τον εντοπισμό του Minecraft σας ({0}). Πληκτρολογήστε {1} για περισσότερες λεπτομέρειες.
+  wwcConfigBadYaml: 'Εντοπίστηκε μη έγκυρο αρχείο YAML: {0}. Προσπαθήστε να διορθώσετε
+    αυτό το αρχείο ή μπορεί να διαγραφεί!'
+  wwcConfigConversationChatBlacklistSuccess: Επιτυχής εναλλαγή της μαύρης λίστας.
+  wwcConfigConversationChannelHoverFormatInput: 'Η τρέχουσα μορφή για μετάφραση κειμένου
+    με δείκτη ποντικιού είναι {0}. Πιθανά προεπιλεγμένα ορίσματα: {1}. Εάν έχετε PlaceHolderAPI,
+    βεβαιωθείτε ότι αυτές οι μεταβλητές περιβάλλονται από ποσοστά (%). Πληκτρολογήστε
+    0 για να επιστρέψετε.'
+  wwcConfigConversationChannelFormatInput: 'Η τρέχουσα μορφή για το ξεχωριστό κανάλι
+    συνομιλίας είναι {0}. Πιθανά προεπιλεγμένα ορίσματα: {1}. Εάν έχετε PlaceHolderAPI,
+    βεβαιωθείτε ότι αυτές οι μεταβλητές περιβάλλονται από ποσοστά (%). Πληκτρολογήστε
+    0 για να επιστρέψετε.'
+  wwcConfigConversationChatHoverFormatSuccess: Η μορφή του ποντικιού σας άλλαξε με
+    επιτυχία.
+  wwcConfigConversationLocalizeSyncSuccess: Επιτυχής εναλλαγή συγχρονισμού εντοπισμού
+    χρήστη.
+  wwcConfigGUILocalizeSyncButton: Συγχρονισμός εντοπισμού χρήστη
+  wwcConfigSyncUserLocalInvalid: Μη έγκυρη ρύθμιση εντοπισμού συγχρονισμού χρήστη.
+    Η προεπιλογή είναι αληθής...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Αλλαγή μορφής κειμένου του ποντικιού
+  wwcdResetWarn: 'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Αυτή η εντολή θα επαναφέρει πλήρως όλα τα δεδομένα,
+    συμπεριλαμβανομένων των εγγραφών και των ενεργών μεταφραστών σας. ΜΗΝ ΕΚΤΕΛΈΣΕΤΕ
+    ΑΥΤΉΝ ΤΗΝ ΕΝΤΟΛΉ ΕΚΤΌΣ ΕΆΝ ΓΝΩΡΊΖΕΤΕ ΤΙ ΚΆΝΕΤΕ: {0}'
+  wwcdResetNotif: Το WorldwideChat έχει επαναφερθεί. Επαναφόρτωση...
+  wwcdResetNotifError: Δεν διαγράφηκαν επιτυχώς όλα τα δεδομένα. Είστε συνδεδεμένοι
+    στη βάση δεδομένων σας;
+  colorCodeWarning: Η χρήση κωδικών χρώματος μπορεί να σας δώσει απρόβλεπτα αποτελέσματα.
 

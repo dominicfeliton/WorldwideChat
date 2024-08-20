@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} жүйесіне қосыла алмады. тіркелгі деректері мен брандмауэр
     дұрыс конфигурацияланғанына көз жеткізіңіз!'
   wwcConfigEnabledbStats: Қосылған bStats.
-  wwctGUIMainMenuPlayer: '{0} аударма мәзірі'
   wwctGUIBookButton: Toggle кітап аудармасы
   wwcLangDetected: Анықталған тілі {0}.
   wwcBookTranslateStart: Мақсатты кітапты аудару...
@@ -48,7 +47,6 @@ Messages:
   wwctPlayerNotFound: Ойыншы {0} табылған жоқ.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon аймағын өзгерту
   wwcConfigConversationLangInvalid: Жарамсыз тіл коды!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API кілтін өзгерту
   wwcEnabled: '{0} WorldwideChat нұсқасы қосылған.'
   wwctbOnSender: Кітап аудармасы қосылған. Оны аудару үшін кітапты ұстап тұрғанда
     тінтуірдің оң жақ түймешігімен нұқыңыз!
@@ -60,8 +58,6 @@ Messages:
   wwcUpdaterConnectionFailed: Github туралы соңғы жаңартуларды тексеру мүмкін емес.
   watsonNotFoundExceptionNotification: Егер кіріс кез келген әрі қарай аудару мүмкін
     емес.
-  wwcConfigConversationWatsonAPIKeyInput: Ағымдағы API кілті {0} болып табылады, Watson
-    үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
   wwctGUIStopButton: Аударманы тоқтату
   wwcgTranslationStopped: Ғаламдық чат аудармасы тоқтатылды.
   wwcUpdaterFutureDate: WorldwideChat бұл данасы соңғы көпшілікке қарағанда үлкен
@@ -72,12 +68,9 @@ Messages:
     не. Аударма:'
   wwctsOnTarget: Белгілеу аудармасы {0} үшін қосылған.
   wwcConfigCacheDisabled: Аудармашы кэш мүгедек
-  wwcConfigConversationWatsonURLInput: Ағымдағы URL мекенжайы {0} болып табылады,
-    Watson үшін қызмет URL мекенжайын енгізіңіз немесе кері оралу үшін 0 теріңіз.
   wwcBookDone: Кітап сәтті аударылған.
   wwctsOnSender: Сымдау аудармасы қосылған. Оны аудару үшін белгіні тінтуірдің оң
     жақ түймешігімен нұқыңыз!
-  watsonColorCodeWarning: Түс кодтарын пайдалану сізге күтпеген нәтижелер беруі мүмкін.
   wwctGUITranslationButton: Аударманы бастаңыз
   wwctGUIAutoDetectButton: Көздің тілін автоматты түрде анықтау
   wwcUpdaterUpToDate: WorldwideChat бүгінгі күнге дейін!
@@ -89,7 +82,6 @@ Messages:
   wwcPlayerNotFound: Ойыншы {0} табылған жоқ.
   wwcUpdaterOutOfDateChat: WorldwideChat күннен тыс. Соңғы нұсқаға жаңартыңыз.
   wwcConfigConversationRateLimitSuccess: Rate лимиті сәтті орнатыңыз.
-  wwcConfigConversationWatsonURLSuccess: Watson URL сәтті орнатыңыз.
   wwctbPlayerNotFound: Ойнатушы табылмады немесе белсенді аудармашы емес.
   wwcConfigConversationTranslationCacheSuccess: Аударма кэш шегі сәтті орнатыңыз.
   wwctInvalidArgs: Ұсынылған дәлелдер жарамсыз!
@@ -107,7 +99,6 @@ Messages:
     дефолт...
   wwcSignTranslateStart: Мақсатты белгіні аудару...
   wwcConfigGUIChatSettings: Чат конфигурациясы
-  wwcConfigGUIWatsonURLButton: Watson қызмет URL мекенжайын өзгерту
   wwcConfigConversationUpdateCheckerSuccess: Жаңарту тексеру кешігу сәтті орнатыңыз.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат {0} дегенмен {1}
     дейін аударылады.
@@ -124,7 +115,6 @@ Messages:
   wwcsAttemptedTranslations: 'Әрекет еткен аудармалар: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon құпия негізгі сәтті
     жиынтығы.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API кілті сәтті орнатыңыз.
   wwcRateLimit: Сіздің аудармаларыңыз шектеулі. {0} секунд күтіңіз.
   wwcConfigCacheEnabled: Аудармашы кэш қосылып, {0} шегіне орнатылды.
   wwctGUIExistingTranslationButton: Ағымдағы аударма сессиясын қайта жазу
@@ -182,7 +172,6 @@ Messages:
   wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
     config.yml немесе /wwcc көмегімен түзетіңіз.
   wwcConfigGUIEachTranslatorSettings: '{0} Конфигурация'
-  wwcConfigGUIWatsonButton: Уотсон
   wwcServerReloadWarning: WorldwideChat пайдалану/қайта жүктеуді шектемейді. Сақтықпен
     жалғастырыңыз.
   wwcConfigEnabledDebugMode: DEBUG режимі қосылған. Егер сіз әзірлеуші немесе ақаулықтарды
@@ -296,10 +285,7 @@ Messages:
     Өзгеріс күшіне ену үшін қайта жүктеңіз.
   wwcConfigYAMLDefault: Деректерді сақтау үшін YAML-ге дефолтқа жол берілді.
   wwcConfigGUISQLMenuButton: SQL параметрлерін өзгерту
-  wwcConfigConversationWatsonTranslateToggleSuccess: Уотсон Аудару сәтті болды. Өзгеріс
-    күшіне ену үшін қайта жүктеңіз.
   wwcConfigGUIToggleGoogleTranslateButton: Google Аудару
-  wwcConfigGUIToggleWatsonTranslateButton: Аудару
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Аудару
   wwcConfigGUIStorageSettings: Сақтау конфигурациясы
   wwcConfigConversationAmazonTranslateToggleSuccess: Сәтті түрде Amazon Аудару. Өзгеріс
@@ -630,8 +616,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Сөйлесу оқиғасының басымдығын сәтті орнатыңыз.
   wwcConfigVaultSupportInvalid: Config.yml ішіндегі жарамсыз қойма қолдауы орнатылған.
     Шын мәніне дефолт...
-  wwcWatsonDeprecation: Уотсон ескірген және оны IBM қолдамайды. Пожалуйста, ауыстыруды
-    қарастырыңыз, себебі оны қолдау келесі жаңартуда жойылады.
   wwcConfigForceChatChannelEnabled: Барлық аудармалар кезінде жеке аударма арнасы
     мәжбүр болады.
   wwcConfigConversationSeparateChatChannelForceSuccess: Жеке арнаны мәжбүрлеп сәтті
@@ -645,7 +629,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Бөлек арна белгішесін өзгертіңіз
   wwcConfigConversationChatFormatSuccess: Сіздің пішіміңіз сәтті өзгертілді.
   wwcConfigGUISeparateChatChannelForceButton: Бөлек арнаны күштеңіз
-  wwcOrigHover: 'Түпнұсқа хабарлама: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Түпнұсқа шығыс чат аудармаға
     қосылады ретінде hover мәтін сәтті ауыстырылды.
   wwcConfigGUISendOutgoingHoverTextChatButton: Түпнұсқа шығыс хабарларын апару мәтіні
@@ -669,16 +652,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Қара тізімді қосыңыз
   wwcConfigConversationBlacklistDeletionSuccess: Терминді сәтті жойды.
   wwcConfigGUIChatChannelSettings: Чат арнасының конфигурациясы
-  wwcConfigGUIChatBlacklistSuccess: Қара тізімге сәтті ауыстырылды.
   wwcConfigGUIChatMessagesBlacklistNewButton: Жаңа сөз қосыңыз
   wwcConfigGUIChatChannelButton: Арна параметрлерін аударыңыз
   wwcConfigGUIBlacklistMessagesModify: Терминді өзгерту ({0})
   wwcConfigChatChannelFormatInvalid: Жарамсыз арна пішімі анықталды. Әдепкі бойынша
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
-    - {0}. Сізге қосуға болатын әдепкі танылған дәлелдеріміз: {1}. Егер сізде placeholderAPI
-    болса, сол айнымалы мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз.
-    Қайту үшін 0 деп теріңіз.'
   wwcConfigGUIModifyBlacklistSettings: Қара тізімді өзгерту
   wwcConfigGUINextPageButton: Келесі бет
+  wwcConfigChatChannelHoverFormatInvalid: Жарамсыз апару пішімі анықталды. Әдепкі
+    бойынша {0}...
+  wwcOrigHover: Түпнұсқа хабарлама
+  wwctGUIMainMenuPlayer: Аудару {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat анықтады және сіздің Minecraft локализацияңызды
+    көрсетеді ({0}). Қосымша ақпарат алу үшін {1} теріңіз.
+  wwcConfigBadYaml: 'Жарамсыз YAML файлы анықталды: {0}. Бұл файлды түзетуге тырысыңыз,
+    әйтпесе ол жойылуы мүмкін!'
+  wwcConfigConversationChatBlacklistSuccess: Қара тізімге сәтті ауыстырылды.
+  wwcConfigConversationChannelHoverFormatInput: 'Аударма апару мәтінінің ағымдағы
+    форматы {0} болып табылады. Мүмкін әдепкі аргументтер: {1}. Егер сізде placeholderAPI
+    болса, сол айнымалы мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз.
+    Қайту үшін 0 деп теріңіз.'
+  wwcConfigConversationChannelFormatInput: 'Жеке сөйлесу арнасының ағымдағы форматы
+    - {0}. Мүмкін әдепкі аргументтер: {1}. Егер сізде placeholderAPI болса, сол айнымалы
+    мәндердің орнына пайыздармен (%) қоршалғанына көз жеткізіңіз. Қайту үшін 0 деп
+    теріңіз.'
+  wwcConfigConversationChatHoverFormatSuccess: Сіздің апару пішіміңіз сәтті өзгертілді.
+  wwcConfigConversationLocalizeSyncSuccess: Пайдаланушы локализациясын синхрондауды
+    сәтті ауыстырды.
+  wwcConfigGUILocalizeSyncButton: Пайдаланушыны оқшаулауды
+  wwcConfigSyncUserLocalInvalid: Синхрондау пайдаланушыны локализациялау параметрі
+    жарамсыз Шын мәніне дефолт...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover мәтіндік пішімін өзгертіңіз
+  wwcdResetWarn: 'ЕСКЕРТУ: Бұл пәрмен жазбаларды және белсенді аудармашыларыңызды
+    қоса алғанда, барлық деректерді толығымен қалпына келтіреді. СІЗ НЕ ІСТЕП ЖАТҚАНЫҢЫЗДЫ
+    БІЛМЕЙІНШЕ, БҰЛ ПӘРМЕНДІ ІСКЕ ҚОСПАҢЫЗ: {0}'
+  wwcdResetNotif: WorldwideChat қалпына келтірілді. Қайта жүктеу...
+  wwcdResetNotifError: Барлық деректер сәтті жойылмады. Сіз өзіңіздің дерекқорыңызға
+    қосылдыңыз ба?
+  colorCodeWarning: Түс кодтарын пайдалану сізге күтпеген нәтижелер беруі мүмкін.
 

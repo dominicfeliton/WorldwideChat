@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Dështoi lidhja me {0}. Sigurohuni që kredencialet dhe
     firewall të jenë konfiguruar në mënyrë korrekte!
   wwcConfigEnabledbStats: bStats aktivizuar.
-  wwctGUIMainMenuPlayer: Menuja e Përkthimit prej {0}
   wwctGUIBookButton: Përkthimi i Librit Toggle
   wwcLangDetected: Gjuha e zbuluar {0}.
   wwcBookTranslateStart: Përkthimi i librit të synuar...
@@ -53,7 +52,6 @@ Messages:
   wwctPlayerNotFound: Lojtar {0} u gjet.
   wwcConfigGUIAmazonTranslateRegionButton: Ndrysho rajonin Amazon
   wwcConfigConversationLangInvalid: Kodi i pavlefshëm i gjuhës!
-  wwcConfigGUIWatsonAPIKeyButton: Ndrysho çelësin API Watson
   wwcEnabled: Versioni i aktivizuar WorldwideChat {0}.
   wwctbOnSender: Libri përkthim aktivizuar. Djathtas-klikoni duke mbajtur një libër
     për ta përkthyer!
@@ -66,8 +64,6 @@ Messages:
     Github.
   watsonNotFoundExceptionNotification: Në pamundësi për të përkthyer të dhëna tuaj
     më tej.
-  wwcConfigConversationWatsonAPIKeyInput: Kyçi i tanishëm API është {0}. Ju lutemi,
-    futni një çelës API për Watson, ose shkruani 0 për t'u kthyer mbrapsht.
   wwctGUIStopButton: Ndaloni Përkthimin
   wwcgTranslationStopped: Përkthimi global i bisedave është ndalur.
   wwcUpdaterFutureDate: Ky shembull i WorldwideChat ka një version më të madh se ai
@@ -78,13 +74,9 @@ Messages:
     Përkthimi:'
   wwctsOnTarget: Përkthimi i shenjave aktivizohet për {0}.
   wwcConfigCacheDisabled: Cache Translator çaktivizuar.
-  wwcConfigConversationWatsonURLInput: URL-ja e tanishme është {0}. Ju lutemi, futni
-    një URL shërbimi për Watson, ose shkruani 0 për t'u kthyer prapa.
   wwcBookDone: Libri i përkthyer me sukses.
   wwctsOnSender: Përkthimi Sign aktivizuar. Djathtas-klikoni mbi një shenjë për ta
     përkthyer atë
-  watsonColorCodeWarning: Përdorimi i kodeve të ngjyrave mund t'ju japë rezultate
-    të paparashikueshme.
   wwctGUITranslationButton: Filloni Përkthimin
   wwctGUIAutoDetectButton: Auto-zbuloni gjuhën burimore
   wwcUpdaterUpToDate: WorldwideChat është i përditësuar!
@@ -97,7 +89,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat është i vjetëruar. Ju lutemi përditësoni
     në versionin më të fundit.
   wwcConfigConversationRateLimitSuccess: Kufiri i normës vendosur me sukses.
-  wwcConfigConversationWatsonURLSuccess: Watson URL vendosur me sukses.
   wwctbPlayerNotFound: Lojtar {0} ose nuk gjendet, ose nuk është përkthyes aktiv.
   wwcConfigConversationTranslationCacheSuccess: Kufiri i përkthimit cache vendosur
     me sukses.
@@ -117,7 +108,6 @@ Messages:
     në 0 sekonda...
   wwcSignTranslateStart: Përkthimi i shenjës së synuar...
   wwcConfigGUIChatSettings: Konfigurimi i bisedës
-  wwcConfigGUIWatsonURLButton: Ndrysho URL e Shërbimit Watson
   wwcConfigConversationUpdateCheckerSuccess: Update checker vonesë vendosur me sukses.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet nga
     {0} në {1}.
@@ -136,7 +126,6 @@ Messages:
   wwcsAttemptedTranslations: 'Përkthime në tentativë: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon sekret vendosur me
     sukses.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API çelësi vendosur me sukses.
   wwcRateLimit: Përkthimet tuaja janë normë të kufizuara. Ju lutem prisni një sekonda
     tjetër {0}.
   wwcConfigCacheEnabled: Cache Translator aktivizuar dhe vendosur në një limit prej
@@ -198,7 +187,6 @@ Messages:
   wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
     këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurimi'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat nuk e falë përdorimin e /reload. Ju lutemi
     vazhdoni me kujdes.
   wwcConfigEnabledDebugMode: Mënyra e aktivizuar DEBUG. Nëse nuk jeni zhvillues ose
@@ -315,10 +303,7 @@ Messages:
     Rifresko që ndryshimi të hyjë në fuqi.
   wwcConfigYAMLDefault: Defaulted për YAML për ruajtjen e të dhënave.
   wwcConfigGUISQLMenuButton: Ndrysho cilësimet SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Sukses toggled Watson Translate.
-    Rifresko që ndryshimi të hyjë në fuqi.
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Përkthejeni
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Përkthejeni
   wwcConfigGUIStorageSettings: Konfigurimi i ruajtjes
   wwcConfigConversationAmazonTranslateToggleSuccess: Sukses toggled Amazon Translate.
@@ -669,8 +654,6 @@ Messages:
     ngjarjes së bised
   wwcConfigVaultSupportInvalid: Mbështetje e pavlefshme e vlefshme e vendosur në config.yml.
     Përcaktimi i vërtetë...
-  wwcWatsonDeprecation: Watson është zhdukur dhe nuk mbështetet më nga IBM. Ju lutemi
-    konsideroni kalimin, pasi mbështetja për të do të hiqet në përditësimin e ardhshëm.
   wwcConfigForceChatChannelEnabled: Një kanal i veçantë përkthimi do të detyrohet
     gjatë të gjitha përkthimeve.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ndërroi me sukses duke detyruar
@@ -685,7 +668,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ndryshoni ikonën e kanalit të veç
   wwcConfigConversationChatFormatSuccess: Formati juaj është ndryshuar me sukses.
   wwcConfigGUISeparateChatChannelForceButton: Forconi kanalin e veçantë
-  wwcOrigHover: 'Mesazhi origjinal: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Biseda origjinale dalëse
     e bashkangjitur përkthimit si teksti hover u ndërrua me sukses.
   wwcConfigGUISendOutgoingHoverTextChatButton: Shtoni Mesazhet Origjinale Dalëse si
@@ -711,16 +693,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktivizo listën e zezë
   wwcConfigConversationBlacklistDeletionSuccess: Fshihet me sukses termin.
   wwcConfigGUIChatChannelSettings: Konfigurimi i kanalit të bised
-  wwcConfigGUIChatBlacklistSuccess: Me sukses kaloi listën e zezë.
   wwcConfigGUIChatMessagesBlacklistNewButton: Shto Fjalë të Re
   wwcConfigGUIChatChannelButton: Përkthejeni parametrat e kanalit
   wwcConfigGUIBlacklistMessagesModify: Modifikoni Termin ({0})
   wwcConfigChatChannelFormatInvalid: Zbuluar formati i pavlefshëm i kanalit. Parazgjedhja
     në {0}...
-  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
-    bisedës është {0}. Argumentet tona të paracaktuara të njohura që mund të përfshini:
-    {1}. Nëse keni PlaceholderAPI, sigurohuni që ato variabla të jenë të rrethuar
-    nga përqindje (%) në vend të kësaj. Shkruani 0 për të kthyer përsëri.'
   wwcConfigGUIModifyBlacklistSettings: Modifikoni listën e zezë
   wwcConfigGUINextPageButton: Faqja Tjetër
+  wwcConfigChatChannelHoverFormatInvalid: Zbulohet formati i pavlefshëm i hover. Parazgjedhja
+    në {0}...
+  wwcOrigHover: Mesazhi origjinal
+  wwctGUIMainMenuPlayer: Përkthejeni {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ka zbuluar dhe do të pasqyrojë lokalizimin
+    tuaj të Minecraft ({0}). Shkruani {1} për më shumë detaje.
+  wwcConfigBadYaml: 'Zbulohet skedari i pavlefshëm YAML: {0}. Ju lutemi përpiquni
+    ta rregulloni këtë skedar ose mund të fshihet!'
+  wwcConfigConversationChatBlacklistSuccess: Me sukses kaloi listën e zezë.
+  wwcConfigConversationChannelHoverFormatInput: 'Formati aktual për tekstin e përkthimit
+    është {0}. Argumentet e mundshme të paracaktuara: {1}. Nëse keni PlaceholderAPI,
+    sigurohuni që ato variabla të jenë të rrethuar nga përqindje (%) në vend të kësaj.
+    Shkruani 0 për të kthyer përsëri.'
+  wwcConfigConversationChannelFormatInput: 'Formati aktual për kanalin e veçantë të
+    bisedës është {0}. Argumentet e mundshme të paracaktuara: {1}. Nëse keni PlaceholderAPI,
+    sigurohuni që ato variabla të jenë të rrethuar nga përqindje (%) në vend të kësaj.
+    Shkruani 0 për të kthyer përsëri.'
+  wwcConfigConversationChatHoverFormatSuccess: Formati juaj i hover është ndryshuar
+    me sukses.
+  wwcConfigConversationLocalizeSyncSuccess: Ndërroi me sukses sinkronizimin e lokalizimit
+    të përdoruesit.
+  wwcConfigGUILocalizeSyncButton: Sync lokalizimi i përdoruesit
+  wwcConfigSyncUserLocalInvalid: Sinkronizimi i vendosjes së lokalizimit të përdoruesit
+    Parashikimi i vërtetë...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ndryshoni formatin e tekstit Hover
+  wwcdResetWarn: 'KUJDES: Kjo komandë do të rivendosë plotësisht të gjitha të dhënat
+    duke përfshirë regjistrimet dhe përkthyesit tuaj aktivë. MOS E EKZEKUTONI KËTË
+    KOMANDË NËSE NUK E DINI SE ÇFARË PO BËNI: {0}'
+  wwcdResetNotif: WorldwideChat është rivendosur. Rimarkohet...
+  wwcdResetNotifError: Jo të gjitha të dhënat janë fshirë me sukses. A jeni të lidhur
+    me bazën tuaj të të dhënave?
+  colorCodeWarning: Përdorimi i kodeve ngjyrash mund t'ju japë rezultate të paparashikueshme
 

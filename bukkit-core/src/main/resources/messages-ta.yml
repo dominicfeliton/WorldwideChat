@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} உடன் இணைக்கத் தவறியது. உங்கள் சான்றுகள் மற்றும்
     ஃபயர்வால் சரியாக உள்ளமைக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்!'
   wwcConfigEnabledbStats: BStATகளை இயக்கினார்.
-  wwctGUIMainMenuPlayer: '{0} இன் மொழிபெயர்ப்பு பட்டி'
   wwctGUIBookButton: மாற்று நூல் மொழிபெயர்ப்பு
   wwcLangDetected: கண்டறியப்பட்ட மொழி {0}.
   wwcBookTranslateStart: இலக்கு புத்தகத்தை மொழிபெயர்த்தல்...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
   wwcConfigGUIAmazonTranslateRegionButton: அமேசான் பிராந்தியம் மாற்ற
   wwcConfigConversationLangInvalid: செல்லுபடியாகாத மொழி குறியீடு!
-  wwcConfigGUIWatsonAPIKeyButton: மாற்றம் வாட்சன் ஏபிஐ சாவி
   wwcEnabled: செயல்படுத்தப்பட்டது WorldWideSat பதிப்பு {0}.
   wwctbOnSender: புத்தக மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு புத்தகம்
     வைத்திருக்கும் போது வலது கிளிக்!
@@ -64,8 +62,6 @@ Messages:
   wwctsOffTarget: '{0} க்கு உள்நுழை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.'
   wwcUpdaterConnectionFailed: Github இல் சமீபத்திய புதுப்பிப்புகளைச் சரிபார்க்க முடியவில்லை.
   watsonNotFoundExceptionNotification: எந்த மேலும் உங்கள் உள்ளீடு மொழிபெயர்க்க முடியவில்லை.
-  wwcConfigConversationWatsonAPIKeyInput: தற்போதைய API விசை உள்ளீடு வாட்சன் ஒரு API
-    விசை, அல்லது திரும்பி செல்ல 0 வகை தயவு செய்து.
   wwctGUIStopButton: மொழிபெயர்ப்பு நிறுத்து
   wwcgTranslationStopped: உலகளாவிய அரட்டை மொழிபெயர்ப்பு நிறுத்தப்பட்டுள்ளது.
   wwcUpdaterFutureDate: WorldWideSaat இந்த நிகழ்வில் சமீபத்திய பொது ஒரு விட அதிக பதிப்பு
@@ -76,13 +72,9 @@ Messages:
     நீண்ட இருந்தது. மொழிபெயர்ப்பு:'
   wwctsOnTarget: '{0} க்கு உள்நுழை மொழிபெயர்ப்பு இயக்கப்பட்டது.'
   wwcConfigCacheDisabled: மொழிபெயர்ப்பாளர் கேச் முடக்கப்பட்டுள்ளது.
-  wwcConfigConversationWatsonURLInput: தற்போதைய URL {0} ஆகும். வாட்சனுக்கு ஒரு சேவை
-    URL ஐ உள்ளிடவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும்.
   wwcBookDone: புத்தகம் வெற்றிகரமாக மொழிபெயர்க்கப்பட்டது.
   wwctsOnSender: சைகை மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு அடையாளம் வலது
     கிளிக்!
-  watsonColorCodeWarning: வண்ண குறியீடுகள் பயன்படுத்தி நீங்கள் எதிர்பாராத முடிவுகளை
-    கொடுக்க கூடும்.
   wwctGUITranslationButton: மொழிபெயர்ப்பைத் தொடங்குங்கள்
   wwctGUIAutoDetectButton: தன்னியக்க கண்டறிய மூல மொழி
   wwcUpdaterUpToDate: WorldWideSat தேதி வரை உள்ளது!
@@ -94,7 +86,6 @@ Messages:
   wwcPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
   wwcUpdaterOutOfDateChat: WorldWideSat தேதி இல்லை. சமீபத்திய பதிப்பு புதுப்பிக்கவும்.
   wwcConfigConversationRateLimitSuccess: விகிதம் எல்லை வெற்றிகரமாக அமைக்க.
-  wwcConfigConversationWatsonURLSuccess: வாட்சன் URL ஐ வெற்றிகரமாக அமைக்க.
   wwctbPlayerNotFound: ஆட்டக்காரர் {0} ஒன்று காணப்படவில்லை, அல்லது செயலூக்க மொழிபெயர்ப்பாளர்
     அல்ல.
   wwcConfigConversationTranslationCacheSuccess: மொழிபெயர்ப்பு கேச் எல்லை வெற்றிகரமாக
@@ -115,7 +106,6 @@ Messages:
     இயல்புநிலைக்கு...
   wwcSignTranslateStart: இலக்கு அடையாளம் மொழிபெயர்ப்பது...
   wwcConfigGUIChatSettings: அரட்டை கட்டமைப்பு
-  wwcConfigGUIWatsonURLButton: வாட்சன் சேவை URL ஐ மாற்றவும்
   wwcConfigConversationUpdateCheckerSuccess: புதுப்பிக்கப்பட்டது சரிபார்ப்பு தாமதம்
     வெற்றிகரமாக அமைக்க.
   wwcGlobalOnJoinTranslationNotificationSourceLang: குளோபல் அரட்டை {0} இலிருந்து {1}
@@ -134,7 +124,6 @@ Messages:
   wwcsAttemptedTranslations: 'முயற்சித்த மொழிபெயர்ப்புகள்: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: வெற்றிகரமாக அமேசான் இரகசிய
     முக்கிய தொகுப்பு.
-  wwcConfigConversationWatsonAPIKeySuccess: வாட்சன் ஏபிஐ விசையை வெற்றிகரமாக அமைக்க.
   wwcRateLimit: உங்கள் மொழிபெயர்ப்பு விகிதம் குறைவாக உள்ளன. தயவுசெய்து மற்ற {0} வினாடிகள்
     காத்திருக்கவும்.
   wwcConfigCacheEnabled: மொழிபெயர்ப்பாளர் கேச் செயல்படுத்தப்பட்டு, {0} வரம்புக்கு
@@ -199,7 +188,6 @@ Messages:
   wwcInvalidTranslator: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
     உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.
   wwcConfigGUIEachTranslatorSettings: '{0} உள்ளமைவு'
-  wwcConfigGUIWatsonButton: வாட்சன்
   wwcServerReloadWarning: WorldWideSHat /reloadஇன் பயன்பாடு மறுக்கவில்லை. எச்சரிக்கையுடன்
     தொடரவும்.
   wwcConfigEnabledDebugMode: பிழைதிருப்பு முறையில் இயக்கப்பட்டது. நீங்கள் ஒரு டெவலப்பர்
@@ -319,10 +307,7 @@ Messages:
     மொழிபெயர். மாற்றம் நடைமுறைக்கு ஏற்றவும்.
   wwcConfigYAMLDefault: தரவு சேமிப்புக்காக YAML க்கு இயல்புநிலை.
   wwcConfigGUISQLMenuButton: SQL அமைப்புகளை மாற்றவும்
-  wwcConfigConversationWatsonTranslateToggleSuccess: வெற்றிகரமாக மாற்று வாட்சன் மொழிபெயர்.
-    மாற்றம் நடைமுறைக்கு ஏற்றவும்.
   wwcConfigGUIToggleGoogleTranslateButton: Google மொழிபெயர் மாற்று
-  wwcConfigGUIToggleWatsonTranslateButton: வாட்சன் மொழிபெயர் மாற்று
   wwcConfigGUIToggleAmazonTranslateButton: அமேசான் மொழிபெயர் மாற்று
   wwcConfigGUIStorageSettings: சேமிப்பக உள்ளமைவு
   wwcConfigConversationAmazonTranslateToggleSuccess: வெற்றிகரமாக மாற்று அமேசான் மொழிபெயர்.
@@ -666,8 +651,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: உங்கள் அரட்டை நிகழ்வு முன்னுரிமையை வெற்றிகரமாகக்
   wwcConfigVaultSupportInvalid: config.yml இல் செல்லப்படாத வோல்ட் ஆதரவு அமைக்கப்பட்டுள்ளது.
     உண்மையாக இயல்பாதது...
-  wwcWatsonDeprecation: வாட்சன் விலக்கப்பட்டு இனி ஐபிஎம் ஆதரிக்கப்படவில்லை. தயவுசெய்து
-    மாறுவதைக் கவனியுங்கள், ஏனெனில் அடுத்த புதுப்பிப்பில் அதற்கான ஆதரவு அகற்றப்படும்.
   wwcConfigForceChatChannelEnabled: அனைத்து மொழிபெயர்ப்புகளின் போது தனி மொழிபெயர்ப்பு
     சேனல் கட்டாயப்படுத்தப்படும்.
   wwcConfigConversationSeparateChatChannelForceSuccess: வெற்றிகரமாக தனி சேனலை கட்டாயப்படுத்தியது.
@@ -681,7 +664,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: தனி சேனல் ஐகானை மாற்றவும்
   wwcConfigConversationChatFormatSuccess: உங்கள் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
   wwcConfigGUISeparateChatChannelForceButton: ஃபோர்ஸ் தனி சேனல்
-  wwcOrigHover: 'அசல் செய்தி: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: மொழிபெயர்ப்புடன் இணைக்கப்பட்ட
     அசல் வெளியேறும் அரட்டை ஹோவர் உரை வெற்றிகரமாக மாற்றப்பட்டது.
   wwcConfigGUISendOutgoingHoverTextChatButton: அசல் வெளிச்செல்லும் செய்திகளை ஹோவர்
@@ -706,17 +688,41 @@ Messages:
   wwcConfigGUIChatBlacklistButton: கருப்புபட்டியலை இயக்கு
   wwcConfigConversationBlacklistDeletionSuccess: வார்த்தையை வெற்றிகரமாக நீக்கினார்.
   wwcConfigGUIChatChannelSettings: அரட்டை சேனல் உள்ளமைவு
-  wwcConfigGUIChatBlacklistSuccess: கறுப்புப் பட்டியலை வெற்றிகரமாக மாற்றியது.
   wwcConfigGUIChatMessagesBlacklistNewButton: புதிய வார்த்தையைச் சேர்க்கவும்
   wwcConfigGUIChatChannelButton: சேனல் அமைப்புகளை மொழி
   wwcConfigGUIBlacklistMessagesModify: காலத்தை மாற்றவும் ({0})
   wwcConfigChatChannelFormatInvalid: செல்லாத சேனல் வடிவம் கண்டறியப்பட்டது. {0} ஆக
     இயல்பாதது...
-  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
-    {0} ஆகும். நீங்கள் சேர்க்கக்கூடிய எங்கள் இயல்புநிலை அங்கீகரிக்கப்பட்ட வாதங்கள்:
-    {1}. உங்களிடம் PlaceholderAPI இருந்தால், அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால்
-    (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு
-    செய்க.'
   wwcConfigGUIModifyBlacklistSettings: கருப்புபட்டியலை மாற்றவும்
   wwcConfigGUINextPageButton: அடுத்த பக்கம்
+  wwcConfigChatChannelHoverFormatInvalid: தவறான ஹோவர் வடிவம் கண்டறியப்பட்டது. {0}
+    ஆக இயல்பாதது...
+  wwcOrigHover: அசல் செய்தி
+  wwctGUIMainMenuPlayer: மொழிபெயர்ப்பு {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat கண்டறிந்துள்ளது மற்றும் உங்கள் Minecraft
+    உள்ளூர்மயமாக்கலை பிரதிபலிக்கும் ({0}). மேலும் விவரங்களுக்கு {1} ஐ தட்டச்சு செய்க.
+  wwcConfigBadYaml: 'தவறான YAML கோப்பு கண்டறியப்பட்டது: {0}. தயவுசெய்து இந்த கோப்பை
+    சரிசெய்ய முயற்சிக்கவும் அல்லது அது நீக்கப்படலாம்!'
+  wwcConfigConversationChatBlacklistSuccess: கறுப்புப் பட்டியலை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationChannelHoverFormatInput: 'மொழிபெயர்ப்பு ஹோவர் உரைக்கான தற்போதைய
+    வடிவம் {0} ஆகும். சாத்தியமான இயல்புநிலை வாதங்கள்: {1}. உங்களிடம் PlaceholderAPI
+    இருந்தால், அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால் (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக்
+    கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.'
+  wwcConfigConversationChannelFormatInput: 'தனி அரட்டை சேனலுக்கான தற்போதைய வடிவம்
+    {0} ஆகும். சாத்தியமான இயல்புநிலை வாதங்கள்: {1}. உங்களிடம் PlaceholderAPI இருந்தால்,
+    அதற்கு பதிலாக அந்த மாறிகள் சதவீதங்களால் (%) சூழப்பட்டுள்ளன என்பதை உறுதிப்படுத்திக்
+    கொள்ளுங்கள். திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.'
+  wwcConfigConversationChatHoverFormatSuccess: உங்கள் ஹோவர் வடிவம் வெற்றிகரமாக மாற்றப்பட்டுள்ளது.
+  wwcConfigConversationLocalizeSyncSuccess: பயனர் உள்ளமயமாக்கல் ஒத்திசைவு வெற்றிகரமாக
+  wwcConfigGUILocalizeSyncButton: பயனர் உள்ளூர்மயமாக்க
+  wwcConfigSyncUserLocalInvalid: பயனர் உள்ளமைவு அமைப்பை ஒத்திசைவு உண்மையாக இயல்பாதது...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ஹோவர் உரை வடிவமைப்பை மாற்றவும்
+  wwcdResetWarn: 'எச்சரிக்கை: இந்த கட்டளை பதிவுகள் மற்றும் உங்கள் செயலில் உள்ள மொழிபெயர்ப்பாளர்கள்
+    உள்ளிட்ட அனைத்து தரவையும் முழுவதுமாக நீங்கள் என்ன செய்கிறீர்கள் என்று உங்களுக்குத்
+    தெரியாவிட்டால் இந்த கட்டளையை இயக்க வேண்டாம்: {0}'
+  wwcdResetNotif: உலகளாவிட் காட் மீட்டமைக்கப்பட்டுள்ளது. மீண்டும் ஏற்றுகிறது...
+  wwcdResetNotifError: எல்லா தரவும் வெற்றிகரமாக அழிக்கப்படவில்லை. உங்கள் தரவுத்தளத்துடன்
+    இணைக்கப்பட்டுள்ளீர்களா?
+  colorCodeWarning: வண்ணக் குறியீடுகளைப் பயன்படுத்துவது கணிக்க முடியாத முடிவுகளைத்
+    தர
 

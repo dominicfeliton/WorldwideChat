@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: 'Չհաջողվեց միացնել {0}: Համոզվեք, որ ձեր հավատարմագրերն
     ու firewall ճիշտ կազմաձեւված են:'
   wwcConfigEnabledbStats: Միացված bStats.
-  wwctGUIMainMenuPlayer: Թարգմանության մենյու {0}
   wwctGUIBookButton: Toggle Գիրք թարգմանություն
   wwcLangDetected: Հայտնաբերված լեզու {0}.
   wwcBookTranslateStart: Թարգմանելով թիրախային գիրքը...
@@ -53,7 +52,6 @@ Messages:
   wwctPlayerNotFound: 'Խաղացող %Ես չեմ գտել:'
   wwcConfigGUIAmazonTranslateRegionButton: Փոխել Amazon Տարածաշրջան
   wwcConfigConversationLangInvalid: Անվավեր լեզվի կոդը!
-  wwcConfigGUIWatsonAPIKeyButton: Փոխել Watson API բանալին
   wwcEnabled: Միացված WorldwideChat տարբերակը {0}.
   wwctbOnSender: Գիրք թարգմանությունը միացված. Աջ սեղմեք, իսկ անցկացման գիրք է թարգմանել
     այն!
@@ -65,8 +63,6 @@ Messages:
   wwcUpdaterConnectionFailed: Անհնար է ստուգել վերջին թարմացումները Github.
   watsonNotFoundExceptionNotification: Անհնար է թարգմանել ձեր մուտքագրման ցանկացած
     հետագա.
-  wwcConfigConversationWatsonAPIKeyInput: 'Ընթացիկ API- ի ստեղնը {0} է: Խնդրում ենք
-    մուտքագրել API- ի բանալին Watson կամ մուտքագրեք 0 ետ վերադառնալու համար:'
   wwctGUIStopButton: Դադարեցնել թարգմանությունը
   wwcgTranslationStopped: 'Գլոբալ զրուցարանում թարգմանությունը դադարեցվել է:'
   wwcUpdaterFutureDate: Այս օրինակը WorldwideChat ունի ավելի մեծ տարբերակ, քան վերջին
@@ -77,13 +73,9 @@ Messages:
     երկար է. Թարգմանություն՝
   wwctsOnTarget: Նշեք թարգմանությունը միացված է {0} համար։
   wwcConfigCacheDisabled: Թարգմանիչ քեշը անջատված.
-  wwcConfigConversationWatsonURLInput: 'Ընթացիկ URL {0} է: Խնդրում ենք մուտքագրել
-    ծառայության URL- ը Watson կամ մուտքագրեք 0 վերադառնալ:'
   wwcBookDone: Գիրք թարգմանվել հաջողությամբ.
   wwctsOnSender: 'Ստորագրել թարգմանությունը միացված. Աջ սեղմեք նշանի վրա, այն թարգմանելու
     համար:'
-  watsonColorCodeWarning: Օգտագործելով գունավոր կոդերը կարող է տալ ձեզ անկանխատեսելի
-    արդյունքներ.
   wwctGUITranslationButton: Սկսեք թարգմանել
   wwctGUIAutoDetectButton: Ավտո-հայտնաբերել աղբյուրի լեզուն
   wwcUpdaterUpToDate: WorldwideChat է մինչեւ օրս!
@@ -96,7 +88,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին
     տարբերակի.
   wwcConfigConversationRateLimitSuccess: Գնահատել սահմանաչափը սահմանված հաջողությամբ.
-  wwcConfigConversationWatsonURLSuccess: Watson URL սահմանել հաջողությամբ.
   wwctbPlayerNotFound: 'Նվագարկիչ {0} կամ չի հայտնաբերվել, կամ ակտիվ թարգմանիչ չէ:'
   wwcConfigConversationTranslationCacheSuccess: Թարգմանություն քեշը սահմանել հաջողությամբ.
   wwctInvalidArgs: Անվավեր փաստարկները տրամադրված!
@@ -114,7 +105,6 @@ Messages:
     Նախնականը 0 վայրկյան...
   wwcSignTranslateStart: Թարգմանելով թիրախային նշանը...
   wwcConfigGUIChatSettings: Զրուցարան կոնֆիգուրացիա
-  wwcConfigGUIWatsonURLButton: Փոխել Watson ծառայության URL- ը
   wwcConfigConversationUpdateCheckerSuccess: Թարմացնել ստուգիչ ուշացումը հաջողությամբ
     սահմանված.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Գլոբալ զրույցը թարգմանվում է {0}
@@ -133,7 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Փորձված թարգմանություններ: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon գաղտնի բանալին սահմանված
     հաջողությամբ.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API բանալին սահմանված հաջողությամբ.
   wwcRateLimit: 'Ձեր թարգմանությունները կարող են փոխարժեքը սահմանափակ. Խնդրում ենք
     սպասել մյուսը {0} վայրկյան:'
   wwcConfigCacheEnabled: Թարգմանչի քեշը միացված է եւ սահմանվում է սահմանաչափի {0}.
@@ -195,7 +184,6 @@ Messages:
   wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
     config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcConfigGUIEachTranslatorSettings: '{0} կոնֆիգուրացիա'
-  wwcConfigGUIWatsonButton: Վոտսոն
   wwcServerReloadWarning: 'WorldwideChat- ը չի զերծ օգտագործման/վերաբեռնել: Խնդրում
     ենք շարունակել զգուշությամբ.'
   wwcConfigEnabledDebugMode: Միացված Debug ռեժիմ. Եթե դուք ոչ մի ծրագրավորող կամ troubleshooter,
@@ -315,10 +303,7 @@ Messages:
     Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
   wwcConfigYAMLDefault: Defaulted է YAML տվյալների պահպանման.
   wwcConfigGUISQLMenuButton: Փոխել SQL կարգավորումները
-  wwcConfigConversationWatsonTranslateToggleSuccess: 'Հաջողությամբ toggled Watson
-    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
   wwcConfigGUIToggleGoogleTranslateButton: Փոխարկել Google Թարգմանել
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Թարգմանել
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Թարգմանել
   wwcConfigGUIStorageSettings: Պահպանման կոնֆիգուրացիա
   wwcConfigConversationAmazonTranslateToggleSuccess: 'Հաջողությամբ toggled Amazon
@@ -661,8 +646,6 @@ Messages:
     առաջնահերթությունը:'
   wwcConfigVaultSupportInvalid: 'Անվավեր պահոցի աջակցություն, որը սահմանված է config.yml-
     ում: Չարժևորելով ճշմարիտ...'
-  wwcWatsonDeprecation: 'Ուոթսոնը մերժվել է և այլևս չի աջակցվում IBM-ի կողմից: Խնդրում
-    ենք հաշվի առնել անցումը, քանի որ դրա համար աջակցությունը կհեռացվի հաջորդ թարմացմանը:'
   wwcConfigForceChatChannelEnabled: 'Բոլոր թարգմանությունների ժամանակ հարկադրված կլինի
     թարգմանության առանձին ալիք:'
   wwcConfigConversationSeparateChatChannelForceSuccess: 'Հաջողությամբ միացվել է առանձին
@@ -677,7 +660,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Փոխեք առանձին ալիքի պատկերակը
   wwcConfigConversationChatFormatSuccess: 'Ձեր ձևաչափը հաջողությամբ փոխվել է:'
   wwcConfigGUISeparateChatChannelForceButton: Ֆորսել առանձին ալիքը
-  wwcOrigHover: 'Բնօրինակ հաղորդագրություն: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Բնօրինակը ելքային զրուցարան
     կցված թարգմանության որպես սավառնել տեքստի togged հաջողությամբ.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ավելացնել բնօրինակ ելքային հաղորդագրությունները
@@ -703,16 +685,44 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Միացնել սև ցուցակը
   wwcConfigConversationBlacklistDeletionSuccess: 'Հաջողությամբ ջնջեց տերմինը:'
   wwcConfigGUIChatChannelSettings: Զրույցի ալիքի կազմաձևում
-  wwcConfigGUIChatBlacklistSuccess: 'Հաջողությամբ միացրեց սև ցուցակը:'
   wwcConfigGUIChatMessagesBlacklistNewButton: Ավելացնել նոր բառ
   wwcConfigGUIChatChannelButton: Թարգմանել ալիքի կարգավորումները
   wwcConfigGUIBlacklistMessagesModify: Փոփոխել ժամկետը ({0})
   wwcConfigChatChannelFormatInvalid: Հայտնաբերվել է անվավեր ալիքի ձևաչափ Կանխարգելում
     է {0}...
-  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
-    {0} է: Մեր լռելյայն ճանաչված փաստարկները, որոնք կարող եք ներառել: {1}. Եթե ունեք
-    PlaceholderAPI, համոզվեք, որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը.
-    Մուտքագրեք 0-ը հետ գնալու համար:'
   wwcConfigGUIModifyBlacklistSettings: Փոփոխեք սև ցուցակը
   wwcConfigGUINextPageButton: Հաջորդ էջը
+  wwcConfigChatChannelHoverFormatInvalid: 'Հայտնաբերվել է անվավեր սավառման ձևաչափ:
+    Կանխարգելում է {0}...'
+  wwcOrigHover: Բնօրինակ հաղորդագրություն
+  wwctGUIMainMenuPlayer: Թարգմանել {0}
+  wwcOnJoinSetLocaleSuccess: 'WorldwideChat- ը հայտնաբերել է եւ կարտացոլի ձեր Minecraft-
+    ի տեղայնացումը ({0}): Մանրամասների համար մուտքագրեք {1}:'
+  wwcConfigBadYaml: 'Հայտնաբերվել է անվավեր YAML ֆայլը ՝ {0}: Խնդրում ենք փորձել շտկել
+    այս ֆայլը, հակառակ դեպքում այն կարող է ջնջվել:'
+  wwcConfigConversationChatBlacklistSuccess: 'Հաջողությամբ միացրեց սև ցուցակը:'
+  wwcConfigConversationChannelHoverFormatInput: 'Թարգմանության սավառիչ տեքստի ներկայիս
+    ձևաչափը {0} է: Հնարավոր լռելյայն փաստարկներ. {1}. Եթե ունեք PlaceholderAPI, համոզվեք,
+    որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը. Մուտքագրեք 0-ը հետ
+    գնալու համար:'
+  wwcConfigConversationChannelFormatInput: 'Առանձին զրույցի ալիքի ներկայիս ձևաչափը
+    {0} է: Հնարավոր լռելյայն փաստարկներ. {1}. Եթե ունեք PlaceholderAPI, համոզվեք,
+    որ այդ փոփոխականները շրջապատված են տոկոսներով (%) փոխարենը. Մուտքագրեք 0-ը հետ
+    գնալու համար:'
+  wwcConfigConversationChatHoverFormatSuccess: 'Ձեր սավառման ձևաչափը հաջողությամբ
+    փոխվել է:'
+  wwcConfigConversationLocalizeSyncSuccess: 'Հաջողությամբ միացված է օգտագործողի տեղայնացման
+    համաժամեցումը:'
+  wwcConfigGUILocalizeSyncButton: Համաժամեցնել օգտագործողի տեղայնացումը
+  wwcConfigSyncUserLocalInvalid: 'Sync օգտագործողի տեղայնացման կարգավորումը անվավեր
+    է: Չարժևորելով ճշմարիտ...'
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Փոխել սավառնել տեքստի ձևաչափը
+  wwcdResetWarn: 'ԶԳՈՒՇԱՑՈՒՄ: Այս հրամանը ամբողջությամբ կզրոյացնի բոլոր տվյալները,
+    ներառյալ գրառումները և ձեր ակտիվ թարգմանիչները: ՄԻ ԳՈՐԾԱՐԿԵՔ ԱՅՍ ՀՐԱՄԱՆԸ, ԵԹԵ
+    ՉԳԻՏԵՔ, ԹԵ ԻՆՉ ԵՔ ԱՆՈՒՄ. {0}'
+  wwcdResetNotif: 'WorldwideChat-ը վերականգնվել է: Վերաբեռնում...'
+  wwcdResetNotifError: 'Ոչ բոլոր տվյալները հաջողությամբ գաղտնալսվեցին: Միացված եք
+    ձեր տվյալների բազային:'
+  colorCodeWarning: 'Գունային կոդերի օգտագործումը կարող է ձեզ անկանխատեսելի արդյունքներ
+    տալ:'
 

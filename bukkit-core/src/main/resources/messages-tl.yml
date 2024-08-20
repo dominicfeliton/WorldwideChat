@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nabigong kumonekta sa {0}. Tiyaking tama ang pagkakaayos
     ng iyong mga kredensyal at firewall!
   wwcConfigEnabledbStats: Pinagana ang bStats.
-  wwctGUIMainMenuPlayer: Pagsasalin Menu ng {0}
   wwctGUIBookButton: I-toggle ang Book Translation
   wwcLangDetected: Natukoy na wika {0}.
   wwcBookTranslateStart: Pagsasalin ng target na aklat...
@@ -53,7 +52,6 @@ Messages:
   wwctPlayerNotFound: Ang manlalaro ng {0} ko natagpuan.
   wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
   wwcConfigConversationLangInvalid: Di-wastong code ng wika!
-  wwcConfigGUIWatsonAPIKeyButton: Baguhin ang Watson API Key
   wwcEnabled: Pinagana ang bersyong WorldwideChat {0}.
   wwctbOnSender: Pinagana ang pagsasalin ng aklat. Mag-right-click habang may hawak
     na isang libro upang isalin ito!
@@ -65,8 +63,6 @@ Messages:
   wwcUpdaterConnectionFailed: Hindi masuri ang mga pinakabagong update sa Github.
   watsonNotFoundExceptionNotification: Hindi na ma-translate ang iyong input sa anumang
     karagdagang.
-  wwcConfigConversationWatsonAPIKeyInput: Ang kasalukuyang API key ay {0}. Pakipasok
-    ang API key para sa Watson, o i-type ang 0 upang bumalik.
   wwctGUIStopButton: Itigil ang Pagsasalin
   wwcgTranslationStopped: Ang pagsasalin ng pandaigdigang chat ay tumigil.
   wwcUpdaterFutureDate: Ang halimbawang ito ng WorldwideChat ay may mas malaking bersyon
@@ -77,13 +73,9 @@ Messages:
     masyadong mahaba. Pagsasalin:'
   wwctsOnTarget: Pinagana ang pagsasalin ng pag-sign para sa {0}.
   wwcConfigCacheDisabled: Hindi pinagana ang cache ng tagasalin.
-  wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang
-    URL ng serbisyo para sa Watson, o i-type ang 0 upang bumalik.
   wwcBookDone: Book matagumpay na isinalin.
   wwctsOnSender: Pinagana ang pagsasalin ng pag-sign. Mag-right-click sa isang senyas
     upang isalin ito!
-  watsonColorCodeWarning: Ang paggamit ng mga code ng kulay ay maaaring magbigay sa
-    iyo ng mga hindi inaasahang resulta.
   wwctGUITranslationButton: Simulan ang Pagsasalin
   wwctGUIAutoDetectButton: Auto-detect Pinagmulan ng Wika
   wwcUpdaterUpToDate: Ang WorldwideChat ay napapanahon!
@@ -97,7 +89,6 @@ Messages:
     sa pinakabagong bersyon.
   wwcConfigConversationRateLimitSuccess: Matagumpay na itinakda ang limitasyon ng
     rate
-  wwcConfigConversationWatsonURLSuccess: Matagumpay na itinakda ang URL ng Watson.
   wwctbPlayerNotFound: Ang manlalarong {0} ay alinman sa hindi natagpuan, o hindi
     isang aktibong tagasalin.
   wwcConfigConversationTranslationCacheSuccess: Matagumpay na itinakda ang limitasyon
@@ -117,7 +108,6 @@ Messages:
     Default sa 0 segundo...
   wwcSignTranslateStart: Pagsasalin ng target sign...
   wwcConfigGUIChatSettings: Pagsasaayos ng Chat
-  wwcConfigGUIWatsonURLButton: Baguhin ang URL ng Serbisyo ng Watson
   wwcConfigConversationUpdateCheckerSuccess: Matagumpay na itinakda ang pagkaantala
     ng checker.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Ang pandaigdigang chat ay isinalin
@@ -136,8 +126,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tinangkang Pagsasalin: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Matagumpay na naka-set ang
     lihim na key ng Amazon.
-  wwcConfigConversationWatsonAPIKeySuccess: Matagumpay na itinakda ang key ng Watson
-    API.
   wwcRateLimit: Limitado ang rate ng iyong mga pagsasalin. Mangyaring maghintay ng
     isa pang segundo ang {0}.
   wwcConfigCacheEnabled: Pinagana ang cache ng tagasalin at nakatakda sa limitasyon
@@ -201,7 +189,6 @@ Messages:
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcConfigGUIEachTranslatorSettings: '{0} Pagsasaayos'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: Ang WorldwideChat ay hindi nagpapahintulot sa paggamit ng/reload.
     Mangyaring magpatuloy nang may pag-iingat.
   wwcConfigEnabledDebugMode: Pinagana ang DEBUG mode. Kung ikaw ay hindi isang developer
@@ -329,10 +316,7 @@ Messages:
     Translate. I-reload para magkabisa ang pagbabago.
   wwcConfigYAMLDefault: Defaulted sa YAML para sa imbakan ng data.
   wwcConfigGUISQLMenuButton: Baguhin ang Mga Setting ng SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Matagumpay na na-toggle ang Watson
-    Translate. I-reload para magkabisa ang pagbabago.
   wwcConfigGUIToggleGoogleTranslateButton: I-toggle ang Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: I-toggle ang Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: I-toggle ang Amazon Translate
   wwcConfigGUIStorageSettings: Configuration ng Imbakan
   wwcConfigConversationAmazonTranslateToggleSuccess: Matagumpay na na-toggle ang Amazon
@@ -709,8 +693,6 @@ Messages:
     sa chat event
   wwcConfigVaultSupportInvalid: Hindi wastong suporta sa vault na nakatakda sa config.yml.
     Pag-default sa totoo...
-  wwcWatsonDeprecation: Si Watson ay hindi na sinusuportahan ng IBM. Mangyaring isaalang-alang
-    ang paglipat, dahil ang suporta para dito ay tatanggalin sa susunod na pag-update.
   wwcConfigForceChatChannelEnabled: Ang isang hiwalay na channel ng pagsasalin ay
     pipilitin sa lahat ng mga pagsasalin.
   wwcConfigConversationSeparateChatChannelForceSuccess: Matagumpay na pinapilit ang
@@ -727,7 +709,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Baguhin ang hiwalay na icon ng channel
   wwcConfigConversationChatFormatSuccess: Matagumpay na binago ang iyong format.
   wwcConfigGUISeparateChatChannelForceButton: Sapilitang Hiwalay na Channel
-  wwcOrigHover: 'Orihinal na Mensahe: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Ang orihinal na papalabas
     na chat na nakalakip sa pagsasalin habang matagumpay na naka-switch ang hover
   wwcConfigGUISendOutgoingHoverTextChatButton: Magdagdag ng Orihinal na Papalabas
@@ -754,16 +735,45 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Paganahin ang Blacklist
   wwcConfigConversationBlacklistDeletionSuccess: Matagumpay na tinanggal ang termino.
   wwcConfigGUIChatChannelSettings: Pagsasaayos ng Chat Channel
-  wwcConfigGUIChatBlacklistSuccess: Matagumpay na i-switch ang blacklist.
   wwcConfigGUIChatMessagesBlacklistNewButton: Magdagdag ng Bagong Salita
   wwcConfigGUIChatChannelButton: Isalin ang mga setting ng Channel
   wwcConfigGUIBlacklistMessagesModify: Baguhin ang Termino ({0})
   wwcConfigChatChannelFormatInvalid: Nakita ang hindi wastong format ng channel. Pag-default
     sa {0}...
-  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
-    na chat channel ay {0}. Ang aming mga default na kinikilalang argumento na maaari
-    mong isama: {1}. Kung mayroon kang PlaceholderAPI, tiyaking ang mga variable na
-    iyon ay napapalibutan ng mga porsyento (%) sa halip. I-type ang 0 upang bumalik.'
   wwcConfigGUIModifyBlacklistSettings: Baguhin ang Blacklist
   wwcConfigGUINextPageButton: Susunod na Pahina
+  wwcConfigChatChannelHoverFormatInvalid: Nakita ang hindi wastong format ng hover.
+    Pag-default sa {0}...
+  wwcOrigHover: Orihinal na Mensahe
+  wwctGUIMainMenuPlayer: Isalin ang {0}
+  wwcOnJoinSetLocaleSuccess: Nakita na ang WorldwideChat at sasalamin ang iyong lokalisasyon
+    ng Minecraft ({0}). I-type ang {1} para sa higit pang mga detalye.
+  wwcConfigBadYaml: 'Nakita ang hindi wastong YAML file: {0}. Mangyaring subukang
+    ayusin ang file na ito o maaari itong matanggal!'
+  wwcConfigConversationChatBlacklistSuccess: Matagumpay na i-switch ang blacklist.
+  wwcConfigConversationChannelHoverFormatInput: 'Ang kasalukuyang format para sa pagsasalin
+    na hover text ay {0}. Posibleng mga default na argumento: {1}. Kung mayroon kang
+    PlaceholderAPI, siguraduhin na ang mga variable na iyon ay napapalibutan ng mga
+    porsyento (%) sa halip. I-type ang 0 upang bumalik.'
+  wwcConfigConversationChannelFormatInput: 'Ang kasalukuyang format para sa hiwalay
+    na chat channel ay {0}. Posibleng default na argumento: {1}. Kung mayroon kang
+    PlaceholderAPI, tiyaking ang mga variable na iyon ay napapalibutan ng mga porsyento
+    (%) sa halip. I-type ang 0 upang bumalik.'
+  wwcConfigConversationChatHoverFormatSuccess: Matagumpay na binago ang iyong format
+    ng hover.
+  wwcConfigConversationLocalizeSyncSuccess: Matagumpay na naka-switch ng lokalisasyon
+    ng gumagamit.
+  wwcConfigGUILocalizeSyncButton: I-sync ang Lokalisasyon ng Gumagamit
+  wwcConfigSyncUserLocalInvalid: Hindi wasto ang setting ng lokalisasyon ng gumagamit
+    ng sync. Pag-default sa totoo...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Baguhin ang Format ng Teksto ng
+    Hover
+  wwcdResetWarn: 'BABALA: Ganap na i-reset ng utos na ito ang lahat ng data kabilang
+    ang mga tala at iyong mga aktibong tagasalin. HUWAG PATAKBUHIN ANG UTOS NA ITO
+    MALIBAN KUNG ALAM MO KUNG ANO ANG IYONG GINAGAWA: {0}'
+  wwcdResetNotif: Ang WorldwideChat ay na-reset. Muling pag-load...
+  wwcdResetNotifError: Hindi lahat ng data ay matagumpay na pinalis. Nakakonekta ka
+    ba sa iyong database?
+  colorCodeWarning: Ang paggamit ng mga code ng kulay ay maaaring magbigay sa iyo
+    ng hindi inaasahan
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Nem sikerült csatlakozni a {0}-hoz. Ellenőrizze, hogy
     a hitelesítő adatok és a tűzfal megfelelően van-e beállítva!
   wwcConfigEnabledbStats: Engedélyezett bStats.
-  wwctGUIMainMenuPlayer: '{0} fordítási menüje'
   wwctGUIBookButton: Könyvfordítás be- és bekapcsolása
   wwcLangDetected: 'Észlelt nyelv: {0}.'
   wwcBookTranslateStart: Célkönyv fordítása...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: A (z) {0} játékos nem található.
   wwcConfigGUIAmazonTranslateRegionButton: Az Amazon régió megváltoztatása
   wwcConfigConversationLangInvalid: Érvénytelen nyelvkód!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API-kulcs módosítása
   wwcEnabled: 'Engedélyezett WorldwideChat verzió: {0}.'
   wwctbOnSender: Könyv fordítás engedélyezve. Kattintson a jobb gombbal, miközben
     tartja a könyvet, hogy lefordítsa!
@@ -63,8 +61,6 @@ Messages:
   wwcUpdaterConnectionFailed: Nem sikerült ellenőrizni a legújabb frissítéseket a
     Github-on.
   watsonNotFoundExceptionNotification: Nem lehet tovább lefordítani a bemenetet.
-  wwcConfigConversationWatsonAPIKeyInput: 'Az aktuális API-kulcs: {0}. Adjon meg egy
-    API-kulcsot a Watson számára, vagy írja be a 0 értéket a visszatéréshez.'
   wwctGUIStopButton: Fordítás leállítása
   wwcgTranslationStopped: A globális chat fordítás leállt.
   wwcUpdaterFutureDate: Ez a WorldwideChat példánya nagyobb verzióval rendelkezik,
@@ -75,12 +71,9 @@ Messages:
     Fordítás:'
   wwctsOnTarget: Aláírás fordítás engedélyezve a {0}.
   wwcConfigCacheDisabled: A fordítói gyorsítótár letiltva.
-  wwcConfigConversationWatsonURLInput: 'Az aktuális URL: {0}. Adjon meg egy szolgáltatás
-    URL-jét a Watson számára, vagy írja be a 0 értéket a visszatéréshez.'
   wwcBookDone: A könyv sikeresen lefordítva.
   wwctsOnSender: Aláírás fordítás engedélyezve. Kattintson a jobb gombbal egy jelre,
     hogy lefordítsa!
-  watsonColorCodeWarning: A színkódok használata kiszámíthatatlan eredményeket eredményezhet.
   wwctGUITranslationButton: Fordítás indítása
   wwctGUIAutoDetectButton: Forrásnyelv automatikus észlelése
   wwcUpdaterUpToDate: A WorldwideChat naprakész!
@@ -93,7 +86,6 @@ Messages:
   wwcUpdaterOutOfDateChat: A WorldwideChat elavult. Kérjük, frissítsen a legújabb
     verzióra.
   wwcConfigConversationRateLimitSuccess: A sebességkorlát sikeresen beállítva.
-  wwcConfigConversationWatsonURLSuccess: A Watson URL sikeresen beállítva.
   wwctbPlayerNotFound: A (z) {0} játékos nem található, vagy nem aktív fordító.
   wwcConfigConversationTranslationCacheSuccess: A fordítási gyorsítótár korlát sikeresen
     beállítva.
@@ -113,7 +105,6 @@ Messages:
     0 másodperc...
   wwcSignTranslateStart: A céltábla lefordítása...
   wwcConfigGUIChatSettings: Csevegés beállítása
-  wwcConfigGUIWatsonURLButton: Watson szolgáltatás URL-jének módosítása
   wwcConfigConversationUpdateCheckerSuccess: Az ellenőrző késleltetés frissítése sikeresen
     megtörtént.
   wwcGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
@@ -132,8 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Fordítási kísérlet: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Az Amazon titkos kulcskészlet
     sikeresen.
-  wwcConfigConversationWatsonAPIKeySuccess: A Watson API kulcs beállítása sikeresen
-    megtörtént.
   wwcRateLimit: A fordításaid aránya korlátozott. Várjon még egy {0} másodpercet.
   wwcConfigCacheEnabled: A fordítói gyorsítótár engedélyezve van, és a (z) {0} értékre
     van állítva.
@@ -192,7 +181,6 @@ Messages:
   wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
     config.yml vagy /wwcc segítségével a plugin használatához.
   wwcConfigGUIEachTranslatorSettings: '{0} konfiguráció'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: A WorldwideChat nem nézi meg a /reload használatát. Kérem,
     óvatosan járjanak el.
   wwcConfigEnabledDebugMode: Engedélyezett DEBUG mód. Ha Ön nem fejlesztő vagy hibaelhárító,
@@ -306,10 +294,7 @@ Messages:
     Fordítót. Töltse be újra, hogy a változás életbe lépjen.
   wwcConfigYAMLDefault: Alapértelmezés szerint a YAML-nek adattárolás céljából.
   wwcConfigGUISQLMenuButton: SQL beállítások módosítása
-  wwcConfigConversationWatsonTranslateToggleSuccess: Sikeresen váltotta a Watson Translate
-    programot. Töltse be újra, hogy a változás életbe lépjen.
   wwcConfigGUIToggleGoogleTranslateButton: A Google Fordító váltása
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson fordító
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Fordító
   wwcConfigGUIStorageSettings: Tárolási konfiguráció
   wwcConfigConversationAmazonTranslateToggleSuccess: Sikeresen váltotta az Amazon
@@ -651,8 +636,6 @@ Messages:
     prioritását.
   wwcConfigVaultSupportInvalid: Érvénytelen tárolótámogatási beállítás a config.yml-ben.
     Alapértelmezés szerint igaz...
-  wwcWatsonDeprecation: A Watson elavult, és az IBM már nem támogatja. Kérjük, fontolja
-    meg a váltást, mivel a támogatás a következő frissítésben eltávolításra kerül.
   wwcConfigForceChatChannelEnabled: Minden fordítás során külön fordítási csatornát
     kell kényszeríteni.
   wwcConfigConversationSeparateChatChannelForceSuccess: Sikeresen váltotta ki a külön
@@ -667,7 +650,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Külön csatorna ikon módosítása
   wwcConfigConversationChatFormatSuccess: A formátum sikeresen megváltozott.
   wwcConfigGUISeparateChatChannelForceButton: Külön csatorna kényszerítése
-  wwcOrigHover: 'Eredeti üzenet: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Az eredeti kimenő csevegés
     a fordításhoz egérszövegként csatolt sikeresen bekapcsolta.
   wwcConfigGUISendOutgoingHoverTextChatButton: Eredeti kimenő üzenetek hozzáadása
@@ -692,16 +674,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Feketelista engedélyezése
   wwcConfigConversationBlacklistDeletionSuccess: Sikeresen törölte a kifejezést.
   wwcConfigGUIChatChannelSettings: Csevegőcsatorna konfigurálása
-  wwcConfigGUIChatBlacklistSuccess: Sikeresen váltotta át a feketelistát.
   wwcConfigGUIChatMessagesBlacklistNewButton: Új szó hozzáadása
   wwcConfigGUIChatChannelButton: Csatorna beállítások fordítása
   wwcConfigGUIBlacklistMessagesModify: Kifejezés módosítása ({0})
   wwcConfigChatChannelFormatInvalid: Érvénytelen csatornaformátum észlelhető. Alapértelmezés
     szerint {0}...
-  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
-    {0}. Alapértelmezett felismert argumentumaink, amelyeket felvehet: {1}. Ha van
-    PlaceholderAPI, győződjön meg róla, hogy ezeket a változókat százalékok (%) veszik
-    körül. Írja be a 0-at, hogy visszatérjen.'
   wwcConfigGUIModifyBlacklistSettings: Feketelista módosítása
   wwcConfigGUINextPageButton: Következő oldal
+  wwcConfigChatChannelHoverFormatInvalid: Érvénytelen lebegő formátum észlelhető.
+    Alapértelmezés szerint {0}...
+  wwcOrigHover: Eredeti Üzenet
+  wwctGUIMainMenuPlayer: Fordítás {0}
+  wwcOnJoinSetLocaleSuccess: A WorldwideChat észlelte és tükrözni fogja a Minecraft
+    lokalizációját ({0}). További részletekért írja be a {1} parancsot.
+  wwcConfigBadYaml: 'Érvénytelen YAML fájl észlelhető: {0}. Kérjük, próbálja meg javítani
+    ezt a fájlt, különben törölhető!'
+  wwcConfigConversationChatBlacklistSuccess: Sikeresen váltotta át a feketelistát.
+  wwcConfigConversationChannelHoverFormatInput: 'A fordítási egérszöveg aktuális formátuma
+    {0}. Lehetséges alapértelmezett argumentumok: {1}. Ha van PlaceholderAPI, győződjön
+    meg róla, hogy ezeket a változókat százalékok (%) veszik körül. Írja be a 0-at,
+    hogy visszatérjen.'
+  wwcConfigConversationChannelFormatInput: 'A külön csevegőcsatorna aktuális formátuma
+    {0}. Lehetséges alapértelmezett argumentumok: {1}. Ha van PlaceholderAPI, győződjön
+    meg róla, hogy ezeket a változókat százalékok (%) veszik körül. Írja be a 0-at,
+    hogy visszatérjen.'
+  wwcConfigConversationChatHoverFormatSuccess: Az egérmutató formátumát sikeresen
+    megváltoztatták.
+  wwcConfigConversationLocalizeSyncSuccess: Sikeresen kapcsolta be a felhasználói
+    lokalizáció szinkronizálását.
+  wwcConfigGUILocalizeSyncButton: Felhasználói lokalizáció szinkronizálása
+  wwcConfigSyncUserLocalInvalid: A felhasználói lokalizációs beállítás szinkronizálása
+    érvénytelen. Alapértelmezés szerint igaz...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Módosítsa a Hover szövegformátumot
+  wwcdResetWarn: 'FIGYELMEZTETÉS: Ez a parancs teljesen visszaállítja az összes adatot,
+    beleértve a rekordokat és az aktív fordítókat is. NE FUTTASSA EZT A PARANCSOT,
+    HA NEM TUDJA, MIT CSINÁL: {0}'
+  wwcdResetNotif: A WorldwideChat visszaállításra került. Újratöltés...
+  wwcdResetNotifError: Nem minden adatot töröltek sikeresen. Csatlakoztál az adatbázisához?
+  colorCodeWarning: A színkódok használata kiszámíthatatlan eredményeket hozhat.
 

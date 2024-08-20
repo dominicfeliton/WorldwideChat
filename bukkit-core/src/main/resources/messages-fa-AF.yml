@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: اتصال به {0} ناموفق بود. اطمینان حاصل کنید که اطلاعات
     کاربری و فایروال شما به درستی پیکربندی شده باشد!
   wwcConfigEnabledbStats: bStats را فعال کنید.
-  wwctGUIMainMenuPlayer: منوی ترجمه {0}
   wwctGUIBookButton: ضامن ترجمه کتاب
   wwcLangDetected: زبان شناسای {0}.
   wwcBookTranslateStart: ترجمه کتاب هدف...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: بازیکن {0} یافت نشد.
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
   wwcConfigConversationLangInvalid: کد زبان نامعتبر!
-  wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WorldwideChat را فعال کنید {0}.
   wwctbOnSender: ترجمه کتاب فعال شد. هنگام نگه داشتن یک کتاب برای ترجمه آن راست کلیک
     کنید!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: امضای ترجمه برای {0} غیرفعال شد.
   wwcUpdaterConnectionFailed: قادر به بررسی برای آخرین به روز رسانی در گیتهاب.
   watsonNotFoundExceptionNotification: دیگر قادر به ترجمه ورودی شما نیست.
-  wwcConfigConversationWatsonAPIKeyInput: کلید فعلی API، {0} است. لطفا یک کلید API
-    برای واتسون وارد کنید، یا برای بازگشت به عقب، نوع 0 را تایپ کنید.
   wwctGUIStopButton: ترجمه را متوقف کنید
   wwcgTranslationStopped: ترجمه جهانی چت متوقف شده است.
   wwcUpdaterFutureDate: این نمونه از WorldwideChat نسخه بزرگتری نسبت به آخرین نسخه
@@ -73,12 +69,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'علامت هدف یا حذف شد و یا ترجمه بیش از حد طولانی بود. ترجمه:'
   wwctsOnTarget: امضای ترجمه برای {0} فعال شد.
   wwcConfigCacheDisabled: حافظه پنهان مترجم غیرفعال شد.
-  wwcConfigConversationWatsonURLInput: URL فعلی {0} است. لطفا یک نشانی وب سرویس برای
-    واتسون وارد کنید، یا 0 را برای بازگشت تایپ کنید.
   wwcBookDone: کتاب با موفقیت ترجمه شد.
   wwctsOnSender: امضای ترجمه فعال شد. راست کلیک بر روی علامت برای ترجمه آن!
-  watsonColorCodeWarning: با استفاده از کدهای رنگ ممکن است نتایج غیر قابل پیش بینی
-    به شما بدهد.
   wwctGUITranslationButton: ترجمه را شروع کنید
   wwctGUIAutoDetectButton: زبان منبع شناسایی خودکار
   wwcUpdaterUpToDate: WorldwideChat به روز است!
@@ -91,7 +83,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat از تاریخ گذشته است. لطفا به آخرین نسخه به
     روز رسانی.
   wwcConfigConversationRateLimitSuccess: حد مجاز تعیین شده با موفقیت.
-  wwcConfigConversationWatsonURLSuccess: نشانی وب واتسون با موفقیت تنظیم شد.
   wwctbPlayerNotFound: بازیکن {0} یا یافت نشد، یا مترجم فعال نیست.
   wwcConfigConversationTranslationCacheSuccess: محدودیت حافظه پنهان ترجمه با موفقیت
     تنظیم شده است.
@@ -109,7 +100,6 @@ Messages:
   wwcConfigRateLimitInvalid: حد مجاز نرخ بد مجموعه ای در config.yml. قصور به 0 ثانیه...
   wwcSignTranslateStart: ترجمه علامت هدف...
   wwcConfigGUIChatSettings: پیکربندی گپ
-  wwcConfigGUIWatsonURLButton: تغییر نشانی وب سرویس واتسون
   wwcConfigConversationUpdateCheckerSuccess: به روز رسانی تاخیر جستجوگر با موفقیت
     تنظیم شده است.
   wwcGlobalOnJoinTranslationNotificationSourceLang: چت سراسری از {0} به {1} ترجمه
@@ -126,7 +116,6 @@ Messages:
   wwcsAttemptedTranslations: 'ترجمه های تلاش شده: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: کلید مخفی آمازون با موفقیت
     تنظیم شده است.
-  wwcConfigConversationWatsonAPIKeySuccess: کلید API واتسون با موفقیت.
   wwcRateLimit: ترجمه شما نرخ محدود. لطفا دیگر صبر کنید {0} ثانیه.
   wwcConfigCacheEnabled: کش مترجم فعال شده و روی محدود {0} تنظیم شده است.
   wwctGUIExistingTranslationButton: بازنویسی نشست فعلی ترجمه
@@ -185,7 +174,6 @@ Messages:
   wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml یا با /wcc
     خود برای استفاده از این افزونه تعمیر کنید.
   wwcConfigGUIEachTranslatorSettings: '{0} پیکربندی'
-  wwcConfigGUIWatsonButton: واتسون
   wwcServerReloadWarning: WorldwideChat استفاده از /بارگذاری مجدد را نادیده نمی گیرد.
     لطفا با احتياط ادامه بديد
   wwcConfigEnabledDebugMode: حالت اشکال زدایی را فعال کنید. اگر شما یک توسعه دهنده
@@ -299,10 +287,7 @@ Messages:
     کرد. بازنگری برای تغییر به اثر.
   wwcConfigYAMLDefault: برای ذخیره سازی داده ها به YAML پیش فرض شده است.
   wwcConfigGUISQLMenuButton: تغییر تنظیمات SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: با موفقیت ترجمه واتسون را جابجا
-    کرد. بازنگری برای تغییر به اثر.
   wwcConfigGUIToggleGoogleTranslateButton: ضامن گوگل ترجمه
-  wwcConfigGUIToggleWatsonTranslateButton: ضامن ترجمه واتسون
   wwcConfigGUIToggleAmazonTranslateButton: ضامن آمازون ترجمه
   wwcConfigGUIStorageSettings: پیکربندی ذخیره سازی
   wwcConfigConversationAmazonTranslateToggleSuccess: با موفقیت ترجمه آمازون را جابجا
@@ -633,8 +618,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: اولویت رویداد چت خود را با موفقیت تنظیم
   wwcConfigVaultSupportInvalid: پشتیبانی از خزانه نامعتبر در config.yml تنظیم شده
     است. پیش فرض به واقعی...
-  wwcWatsonDeprecation: واتسون منسوخ شده است و دیگر توسط IBM پشتیبانی نمی شود. لطفا
-    تغییر را در نظر بگیرید، زیرا پشتیبانی از آن در به روز رسانی بعدی حذف خواهد شد.
   wwcConfigForceChatChannelEnabled: یک کانال ترجمه جداگانه در طول تمام ترجمه ها اجباری
     خواهد شد.
   wwcConfigConversationSeparateChatChannelForceSuccess: با موفقیت وادار کردن کانال
@@ -648,7 +631,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: تغییر آیکون کانال جداگانه
   wwcConfigConversationChatFormatSuccess: فرمت شما با موفقیت تغییر کرده است.
   wwcConfigGUISeparateChatChannelForceButton: مجبور کانال جداگانه
-  wwcOrigHover: 'پیام اصلی: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: چت خروجی اصلی متصل به ترجمه
     به عنوان متن هور با موفقیت تعویض شد.
   wwcConfigGUISendOutgoingHoverTextChatButton: پیام های خروجی اصلی را به عنوان متن
@@ -672,15 +654,41 @@ Messages:
   wwcConfigGUIChatBlacklistButton: فعال کردن لیست سیاه
   wwcConfigConversationBlacklistDeletionSuccess: عبارت را با موفقیت حذف کرد
   wwcConfigGUIChatChannelSettings: پیکربندی کانال چت
-  wwcConfigGUIChatBlacklistSuccess: با موفقیت لیست سیاه را تغییر داد.
   wwcConfigGUIChatMessagesBlacklistNewButton: اضافه کردن کلمه جدید
   wwcConfigGUIChatChannelButton: ترجمه تنظیمات کانال
   wwcConfigGUIBlacklistMessagesModify: اصلاح اصطلاح ({0})
   wwcConfigChatChannelFormatInvalid: فرمت کانال نامعتبر شناسایی شد. پیش فرض به {0}...
-  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
-    استدلال های شناخته شده پیش فرض ما که می توانید شامل: {1}. اگر PlaceholderAPI دارید،
-    مطمئن شوید که این متغیرها به جای آن با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ
-    کنید.'
   wwcConfigGUIModifyBlacklistSettings: تغییر لیست سیاه
   wwcConfigGUINextPageButton: صفحه بعدی
+  wwcConfigChatChannelHoverFormatInvalid: فرمت هور نامعتبر شناسایی شده است. پیش فرض
+    به {0}...
+  wwcOrigHover: پیام اصلی
+  wwctGUIMainMenuPlayer: ترجمه {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat محلی سازی Minecraft شما را شناسایی کرده
+    و منعکس خواهد کرد ({0}). برای جزئیات بیشتر {1} را تایپ کنید.
+  wwcConfigBadYaml: 'فایل YAML نامعتبر شناسایی شده است: {0}. لطفا سعی کنید این فایل
+    را اصلاح کنید وگرنه ممکن است حذف شود!'
+  wwcConfigConversationChatBlacklistSuccess: با موفقیت لیست سیاه را تغییر داد.
+  wwcConfigConversationChannelHoverFormatInput: 'فرمت فعلی متن هور ترجمه {0} است.
+    آرگولهای پیش فرض احتمالی: {1}. اگر PlaceholderAPI دارید، مطمئن شوید که این متغیرها
+    با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ کنید.'
+  wwcConfigConversationChannelFormatInput: 'فرمت فعلی برای کانال چت جداگانه {0} است.
+    آرگولهای پیش فرض احتمالی: {1}. اگر PlaceholderAPI دارید، مطمئن شوید که این متغیرها
+    با درصد (%) احاطه شده اند. برای بازگشت 0 تایپ کنید.'
+  wwcConfigConversationChatHoverFormatSuccess: فرمت هور شما با موفقیت تغییر یافته
+    است.
+  wwcConfigConversationLocalizeSyncSuccess: با موفقیت همگام سازی محلی سازی کاربر را
+    تغییر داد.
+  wwcConfigGUILocalizeSyncButton: همگام سازی محلی سازی کاربر
+  wwcConfigSyncUserLocalInvalid: تنظیم محلی سازی کاربر همگام سازی نامعتبر است پیش
+    فرض به واقعی...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: تغییر فرمت متن هور
+  wwcdResetWarn: 'هشدار: این دستور تمام داده ها از جمله سوابق و مترجمان فعال شما را
+    به طور کامل تنظیم مجدد می کند. این دستور را اجرا نکنید مگر اینکه بدانید چه کاری
+    انجام می دهید: {0}'
+  wwcdResetNotif: WorldwideChat بازنشانی شده است. بارگیری مجدد...
+  wwcdResetNotifError: همه داده ها با موفقیت پاک نشد. آیا به پایگاه داده خود متصل
+    هستید؟
+  colorCodeWarning: استفاده از کدهای رنگ ممکن است نتایج غیر قابل پیش بینی به شما ارائه
+    دهد.
 

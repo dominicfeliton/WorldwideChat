@@ -59,7 +59,6 @@ Messages:
   wwctiOffTarget: ਆਈਟਮ ਅਨੁਵਾਦ {0} ਲਈ ਅਯੋਗ ਹੈ।
   wwctTranslationStopped: ਤੁਹਾਡਾ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।
   wwcEntityTranslateNoName: ਸੰਸਥਾ ਦਾ ਕੋਈ ਕਸਟਮ ਨਾਮ ਨਹੀਂ ਹੈ
-  wwcConfigGUIWatsonAPIKeyButton: ਵਾਟਸਨ API ਨੂੰ ਕੁੰਜੀ ਬਦਲੋ
   wwctrlRateLimitOffSender: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿੱਤਾ.
   wwctbOnSender: ਕਿਤਾਬ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਇੱਕ ਕਿਤਾਬ ਰੱਖਣ ਦੌਰਾਨ ਸੱਜਾ-ਕਲਿੱਕ
     ਕਰੋ!
@@ -82,10 +81,7 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਬਦਲੋ
   wwctsOnTarget: '{0} ਲਈ ਸਿੰਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
   wwcConfigCacheDisabled: ਅਨੁਵਾਦਕ ਕੈਸ਼ ਅਯੋਗ.
-  wwcConfigConversationWatsonURLInput: ਮੌਜੂਦਾ URL {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ ਲਈ ਇੱਕ ਸਰਵਿਸ
-    URL ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
   wwcBookDone: ਕਿਤਾਬ ਦਾ ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ.
-  watsonColorCodeWarning: ਰੰਗ ਕੋਡ ਦਾ ਇਸਤੇਮਾਲ ਤੁਹਾਨੂੰ ਅਣਹੋਣੀ ਨਤੀਜੇ ਦੇ ਸਕਦਾ ਹੈ.
   wwctGUITranslationButton: ਅਨੁਵਾਦ ਸ਼ੁਰੂ
   wwcItemTranslateLoreStart: ਟੀਚੇ ਦਾ ਇਕਾਈ ਨੂੰ ਦੇ lore ਦਾ ਅਨੁਵਾਦ...
   wwcUpdaterUpToDate: ਵਰਲਡਵਿਡਚੈਟ ਅਪ ਟੂ ਡੇਟ ਹੈ!
@@ -102,7 +98,6 @@ Messages:
     ਜੀ.
   wwcConfigConversationRateLimitSuccess: ਰੇਟ ਸੀਮਾ ਸਫਲਤਾਪੂਰਵਕ ਨਿਰਧਾਰਤ ਕੀਤੀ ਗਈ.
   wwctrlPlayerNotFound: ਪਲੇਅਰ {0} ਜਾਂ ਤਾਂ ਨਹੀਂ ਮਿਲਿਆ, ਜਾਂ ਕੋਈ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੈ।
-  wwcConfigConversationWatsonURLSuccess: ਵਾਟਸਨ URL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
   wwctbPlayerNotFound: ਪਲੇਅਰ {0} ਜਾਂ ਤਾਂ ਨਹੀਂ ਮਿਲਿਆ, ਜਾਂ ਕੋਈ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੈ।
   wwcConfigGUIResponseLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਜਵਾਬ ਟਾਈਮਆਉਟ
   wwcConfigGUIPrefixButton: ਪਲੱਗਇਨ ਬਦਲੋ ਅਗੇਤਰ
@@ -116,7 +111,6 @@ Messages:
   wwctrlNotATranslator: ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੋ! ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਸੀਂ
     ਇਸ ਨੂੰ /wwc ਨਾਲ ਸੈਟ ਕੀਤਾ ਹੈ.
   wwcConfigGUIChatSettings: ਚੈਟ ਸੰਰਚਨਾ
-  wwcConfigGUIWatsonURLButton: ਵਾਟਸਨ ਸਰਵਿਸ URL ਬਦਲੋ
   wwcConfigConversationUpdateCheckerSuccess: ਅਪਡੇਟ ਚੈਕਰ ਦੇਰੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤੀ ਗਈ.
   wwcConfigGUIMessagesOverrideCustomLabel: ਨਵਾਂ ਸੁਨੇਹਾ
   wwcGUITempItem: ਆਈਟਮ ਡਿਸਪਲੇਅ
@@ -130,7 +124,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: ਐਮਾਜ਼ਾਨ ਗੁਪਤ ਕੁੰਜੀ ਬਦਲੋ
   wwcInvalidTranslator: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਪਲੱਗਇਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਆਪਣੀ
     config.yml ਜਾਂ /wwcc ਨਾਲ ਇਸ ਨੂੰ ਠੀਕ ਕਰੋ.
-  wwcConfigConversationWatsonAPIKeySuccess: ਵਾਟਸਨ API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
   wwcConfigCacheEnabled: ਅਨੁਵਾਦਕ ਕੈਚੇ ਨੂੰ ਯੋਗ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ {0} ਦੀ ਸੀਮਾ ਤੱਕ ਸੈੱਟ
     ਕੀਤਾ ਗਿਆ ਹੈ।
   wwcConfigConversationOverrideDeletionSuccess: ਕਸਟਮ ਸੁਨੇਹਾ ਓਵਰਰਾਈਡ ਨੂੰ ਹਟਾ ਦਿੱਤਾ
@@ -157,12 +150,10 @@ Messages:
   wwcUpdaterFailedGeneric: WorldwideChat ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
   wwctGUIMainMenuGlobal: ਗਲੋਬਲ ਅਨੁਵਾਦ ਮੇਨੂ
   wwcItemTranslateTitleDone: ਅਨੁਵਾਦ ਇਕਾਈ ਨੂੰ ਸਿਰਲੇਖ ਨੂੰ ਸਫਲਤਾਪੂਰਕ.
-  wwcConfigGUIWatsonButton: ਵਾਟਸਨ
   wwcConfigConversationPluginUpdateChatSuccess: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਚੈਟ ਯਾਦ ਸਫਲਤਾਪੂਰਕ ਬਦਲ.
   wwcsNotATranslator: '{0} ਲਈ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।'
   wwcConfigGUIbStatsButton: ਟੌਗਲ ਬੀਸਟੈਟਸ
   wwctGUINewTranslationSource: ਇੱਕ ਸਰੋਤ ਭਾਸ਼ਾ ਚੁਣੋ
-  wwctGUIMainMenuPlayer: '{0} ਦਾ ਅਨੁਵਾਦ ਮੀਨੂੰ'
   wwctGUIBookButton: ਟੌਗਲ ਕਿਤਾਬ ਅਨੁਵਾਦ
   wwcConfigGUIDebugModeButton: ਡੀਬੱਗ ਮੋਡ ਬਦਲੋ
   wwcConfigMessageCharLimitInvalid: config.yml ਵਿੱਚ ਸੈੱਟ ਪ੍ਰਤੀ ਸੁਨੇਹਾ ਅਵੈਧ ਸੀਮਾ। 255
@@ -212,8 +203,6 @@ Messages:
   wwcEnabled: ਸਮਰੱਥ ਵਰਲਡਵਿਡਚੈਟ ਵਰਜਨ {0}.
   wwcConfigGUIPluginUpdateChatButton: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਲਈ ਚੈਟ ਯਾਦ ਭੇਜੋ
   wwcConfigGUIErrorLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ
-  wwcConfigConversationWatsonAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ
-    ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
   wwcgTranslationStopped: ਗਲੋਬਲ ਚੈਟ ਅਨੁਵਾਦ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.
   wwcConfigConversationCharacterLimitSuccess: ਅੱਖਰ ਸੀਮਾ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
   wwcItemTranslateTitleStock: ਮੂਲ ਇਕਾਈ ਨੂੰ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
@@ -302,10 +291,7 @@ Messages:
     ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
   wwcConfigYAMLDefault: ਡਾਟਾ ਸਟੋਰੇਜ਼ ਲਈ YML ਨੂੰ ਮੂਲ.
   wwcConfigGUISQLMenuButton: SQL ਸੈਟਿੰਗ ਬਦਲੋ
-  wwcConfigConversationWatsonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ.
-    ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
   wwcConfigGUIToggleGoogleTranslateButton: ਬਦਲੋ ਗੂਗਲ ਅਨੁਵਾਦ
-  wwcConfigGUIToggleWatsonTranslateButton: ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ।
   wwcConfigGUIToggleAmazonTranslateButton: ਬਦਲੋ ਐਮਾਜ਼ਾਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
   wwcConfigGUIStorageSettings: ਸਟੋਰੇਜ਼ ਸੰਰਚਨਾ
   wwcConfigConversationAmazonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਐਮਾਜ਼ਾਨ ਅਨੁਵਾਦ ਨੂੰ
@@ -635,9 +621,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: ਸਫਲਤਾਪੂਰਵਕ ਆਪਣੀ ਚੈਟ ਇਵੈਂਟ ਦੀ ਤਰਜੀਹ
   wwcConfigVaultSupportInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਵਾਲਟ ਸਪੋਰਟ ਸੈਟ ਕੀਤਾ ਗਿਆ ਹੈ। ਸੱਚ
     ਨੂੰ ਡਿਫੌਲਟ ਕਰਨਾ...
-  wwcWatsonDeprecation: ਵਾਟਸਨ ਨੂੰ ਰੱਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ ਅਤੇ ਹੁਣ ਆਈਬੀਐਮ ਦੁਆਰਾ ਸਮਰਥਤ ਨਹੀਂ
-    ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਬਦਲਣ 'ਤੇ ਵਿਚਾਰ ਕਰੋ, ਕਿਉਂਕਿ ਅਗਲੇ ਅਪਡੇਟ ਵਿੱਚ ਇਸਦੇ ਲਈ ਸਮਰਥਨ ਹਟਾ ਦਿੱਤਾ
-    ਜਾਵੇਗਾ।
   wwcConfigForceChatChannelEnabled: ਸਾਰੇ ਅਨੁਵਾਦਾਂ ਦੌਰਾਨ ਇੱਕ ਵੱਖਰਾ ਅਨੁਵਾਦ ਚੈਨਲ ਮਜਬੂਰ
     ਕੀਤਾ ਜਾਵੇਗਾ।
   wwcConfigConversationSeparateChatChannelForceSuccess: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਮਜਬੂਰ ਕਰਨ ਨਾਲ
@@ -651,7 +634,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ਵੱਖਰਾ ਚੈਨਲ ਆਈਕਨ ਬਦਲੋ
   wwcConfigConversationChatFormatSuccess: ਤੁਹਾਡਾ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ ਗਿਆ ਹੈ.
   wwcConfigGUISeparateChatChannelForceButton: ਵੱਖਰੇ ਚੈਨਲ ਨੂੰ ਫੋਰਸ ਕਰੋ
-  wwcOrigHover: 'ਅਸਲੀ ਸੁਨੇਹਾ: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: ਮੂਲ ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ ਅਨੁਵਾਦ
     ਨਾਲ ਜੁੜੀ ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
   wwcConfigGUISendOutgoingHoverTextChatButton: ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਅਸਲ ਆਉਟਗੋਇੰਗ
@@ -678,16 +660,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ਬਲੈਕਲਿਸਟ ਨੂੰ ਸਮਰੱਥ ਕਰੋ
   wwcConfigConversationBlacklistDeletionSuccess: ਸਫਲਤਾਪੂਰਵਕ ਸ਼ਬਦ ਮਿਟਾ ਦਿੱਤਾ
   wwcConfigGUIChatChannelSettings: ਚੈਟ ਚੈਨਲ ਸੰਰਚਨਾ
-  wwcConfigGUIChatBlacklistSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬਲੈਕਲਿਸਟ ਟੌਗਲ ਕੀਤਾ.
   wwcConfigGUIChatMessagesBlacklistNewButton: ਨਵਾਂ ਸ਼ਬਦ ਸ਼ਾਮਲ ਕਰੋ
   wwcConfigGUIChatChannelButton: ਚੈਨਲ ਸੈਟਿੰਗ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
   wwcConfigGUIBlacklistMessagesModify: ਮਿਆਦ ਸੋਧੋ ({0})
   wwcConfigChatChannelFormatInvalid: ਅਵੈਧ ਚੈਨਲ ਫਾਰਮੈਟ ਖੋਜਿਆ ਗਿਆ. {0} ਤੇ ਡਿਫੌਲਟ ਹੋ
     ਰਿਹਾ ਹੈ...
-  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
-    ਸਾਡੀਆਂ ਡਿਫੌਲਟ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਦਲੀਲਾਂ ਜੋ ਤੁਸੀਂ ਸ਼ਾਮਲ ਕਰ ਸਕਦੇ ਹੋ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ
-    ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%)
-    ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
   wwcConfigGUIModifyBlacklistSettings: ਬਲੈਕਲਿਸਟ ਸੋਧੋ
   wwcConfigGUINextPageButton: ਅਗਲਾ ਪੰਨਾ
+  wwcConfigChatChannelHoverFormatInvalid: ਅਵੈਧ ਹੋਵਰ ਫਾਰਮੈਟ ਦਾ ਪਤਾ ਲਗਾਇਆ ਗਿਆ। {0} ਤੇ
+    ਡਿਫੌਲਟ ਹੋ ਰਿਹਾ ਹੈ...
+  wwcOrigHover: ਅਸਲੀ ਸੁਨੇਹਾ
+  wwctGUIMainMenuPlayer: ਅਨੁਵਾਦ ਕਰੋ {0}
+  wwcOnJoinSetLocaleSuccess: ਵਰਲਡਵਾਈਡਚੈਟ ਨੇ ਤੁਹਾਡੇ ਮਾਇਨਕਰਾਫਟ ਸਥਾਨੀਕਰਨ ਦਾ ਪਤਾ ਲਗਾਇਆ
+    ਹੈ ਅਤੇ ਪ੍ਰਤੀਬਿੰਬਤ ਕਰੇਗਾ ({0} ਹੋਰ ਵੇਰਵਿਆਂ ਲਈ {1} ਟਾਈਪ ਕਰੋ।
+  wwcConfigBadYaml: 'ਅਵੈਧ YAML ਫਾਈਲ ਲੱਭੀ ਗਈ: {0}. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਫਾਈਲ ਨੂੰ ਠੀਕ ਕਰਨ ਦੀ
+    ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜਾਂ ਇਸ ਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਜਾ ਸਕਦਾ ਹੈ!'
+  wwcConfigConversationChatBlacklistSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬਲੈਕਲਿਸਟ ਟੌਗਲ ਕੀਤਾ.
+  wwcConfigConversationChannelHoverFormatInput: 'ਅਨੁਵਾਦ ਹੋਵਰ ਟੈਕਸਟ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ
+    {0} ਹੈ। ਸੰਭਾਵਿਤ ਡਿਫੌਲਟ ਦਲੀਲਾਂ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ
+    ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%) ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ।'
+  wwcConfigConversationChannelFormatInput: 'ਵੱਖਰੇ ਚੈਟ ਚੈਨਲ ਲਈ ਮੌਜੂਦਾ ਫਾਰਮੈਟ {0} ਹੈ.
+    ਸੰਭਾਵਿਤ ਡਿਫੌਲਟ ਦਲੀਲਾਂ: {1}. ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਲੇਸਹੋਲਡਰਏਪੀਆਈ ਹੈ, ਤਾਂ ਇਹ ਸੁਨਿਸ਼ਚਿਤ
+    ਕਰੋ ਕਿ ਉਹ ਵੇਰੀਏਬਲ ਇਸ ਦੀ ਬਜਾਏ ਪ੍ਰਤੀਸ਼ਤ (%) ਨਾਲ ਘਿਰੇ ਹੋਏ ਹਨ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ।'
+  wwcConfigConversationChatHoverFormatSuccess: ਤੁਹਾਡਾ ਹੋਵਰ ਫਾਰਮੈਟ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ
+    ਗਿਆ ਹੈ.
+  wwcConfigConversationLocalizeSyncSuccess: ਸਫਲਤਾਪੂਰਵਕ ਸਿੰਕਿੰਗ ਉਪਭੋਗਤਾ ਸਥਾਨਕਕਰਨ
+  wwcConfigGUILocalizeSyncButton: ਸਿੰਕ ਯੂਜ਼ਰ ਸਥਾਨਕਕਰਨ
+  wwcConfigSyncUserLocalInvalid: ਸਿੰਕ ਉਪਭੋਗਤਾ ਸਥਾਨੀਕਰਨ ਸੈਟਿੰਗ ਅਵੈਧ ਸੱਚ ਨੂੰ ਡਿਫੌਲਟ
+    ਕਰਨਾ...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ਹੋਵਰ ਟੈਕਸਟ ਫਾਰਮੈਟ ਬਦਲੋ
+  wwcdResetWarn: 'ਚੇਤਾਵਨੀ: ਇਹ ਕਮਾਂਡ ਰਿਕਾਰਡ ਅਤੇ ਤੁਹਾਡੇ ਸਰਗਰਮ ਅਨੁਵਾਦਕਾਂ ਸਮੇਤ ਸਾਰੇ ਡੇਟਾ
+    ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਰੀਸੈਟ ਕਰੇਗੀ। ਇਸ ਕਮਾਂਡ ਨੂੰ ਉਦੋਂ ਤੱਕ ਨਾ ਚਲਾਓ ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਨਹੀਂ
+    ਜਾਣਦੇ ਕਿ ਤੁਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹੋ: {0}'
+  wwcdResetNotif: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਰੀਸੈਟ ਕੀਤਾ ਗਿਆ ਹੈ. ਦੁਬਾਰਾ ਲੋਡ ਕਰਨਾ...
+  wwcdResetNotifError: ਸਾਰਾ ਡੇਟਾ ਸਫਲਤਾਪੂਰਵਕ ਮਿਟਾ ਨਹੀਂ ਗਿਆ ਸੀ. ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਡੇਟਾਬੇਸ
+    ਨਾਲ ਜੁੜੇ ਹੋਏ ਹੋ?
+  colorCodeWarning: ਰੰਗ ਕੋਡਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਨਾਲ ਤੁਹਾਨੂੰ ਅਣਪਛਾਤੇ ਨਤੀਜੇ ਮਿਲ ਸਕਦੇ ਹਨ.
 

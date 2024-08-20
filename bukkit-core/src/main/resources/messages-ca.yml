@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: No s'ha pogut connectar a {0} Assegura't que les teves
     credencials i tallafocs estiguin configurades correctament!
   wwcConfigEnabledbStats: bStats activat.
-  wwctGUIMainMenuPlayer: Menú de traducció de {0}
   wwctGUIBookButton: Commuta la traducció del llibre
   wwcLangDetected: Idioma detectat {0}.
   wwcBookTranslateStart: Traduir el llibre de destinació...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Jugador {0} he trobat.
   wwcConfigGUIAmazonTranslateRegionButton: Canviar la regió d'Amazon
   wwcConfigConversationLangInvalid: Codi d'idioma no vàlid!
-  wwcConfigGUIWatsonAPIKeyButton: Canviar la clau de l'API de Watson
   wwcEnabled: Habilitada la versió WorldwideChat {0}.
   wwctbOnSender: S'ha habilitat la traducció de llibres. Feu clic amb el botó dret
     mentre manteniu un llibre per traduir-lo!
@@ -65,8 +63,6 @@ Messages:
   wwcUpdaterConnectionFailed: No s'ha pogut comprovar si hi ha actualitzacions més
     recents a Github.
   watsonNotFoundExceptionNotification: No es pot traduir la vostra entrada més.
-  wwcConfigConversationWatsonAPIKeyInput: La clau de l'API actual és {0}. introduïu
-    una clau d'API per a Watson, o escriviu 0 per tornar enrere.
   wwctGUIStopButton: Deixar de traduir
   wwcgTranslationStopped: La traducció global de xat s'ha aturat.
   wwcUpdaterFutureDate: Aquesta instància de WorldwideChat té una versió més gran
@@ -77,12 +73,9 @@ Messages:
     estat massa llarga. Traducció:'
   wwctsOnTarget: Signar la traducció activada per {0}.
   wwcConfigCacheDisabled: Traductor cau desactivat.
-  wwcConfigConversationWatsonURLInput: L'URL actual és {0}. introduïu un URL de servei
-    per a Watson, o escriviu 0 per tornar enrere.
   wwcBookDone: Llibre traduït amb èxit.
   wwctsOnSender: S'ha habilitat la traducció de signes. Feu clic amb el botó dret
     sobre un signe per traduir-lo!
-  watsonColorCodeWarning: L'ús de codis de color pot donar resultats imprevisibles.
   wwctGUITranslationButton: Començar a traduir
   wwctGUIAutoDetectButton: Detecta automàticament l'idioma d'origen
   wwcUpdaterUpToDate: WorldwideChat està al dia!
@@ -95,7 +88,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat està fora de data. Si us plau, actualitzi
     a l'última versió.
   wwcConfigConversationRateLimitSuccess: Límit de tarifa establert amb èxit.
-  wwcConfigConversationWatsonURLSuccess: Watson URL establert correctament.
   wwctbPlayerNotFound: Jugador {0} o bé no es troba, o no és un traductor actiu.
   wwcConfigConversationTranslationCacheSuccess: Límit de memòria cau de traducció
     establert correctament.
@@ -115,7 +107,6 @@ Messages:
     defecte a 0 segons...
   wwcSignTranslateStart: Traduint el signe objectiu...
   wwcConfigGUIChatSettings: Configuració del xat
-  wwcConfigGUIWatsonURLButton: Canviar l'URL del servei Watson
   wwcConfigConversationUpdateCheckerSuccess: Actualitza el retard corrector establert
     correctament.
   wwcGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint
@@ -133,7 +124,6 @@ Messages:
   wwcsAttemptedTranslations: 'Intent de traduccions: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon conjunt de claus secretes
     amb èxit.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API conjunt de claus amb èxit.
   wwcRateLimit: Les vostres traduccions són limitades a la tarifa. Espereu un altre
     {0} segons.
   wwcConfigCacheEnabled: La memòria cau del traductor activat i s'estableix com a
@@ -196,7 +186,6 @@ Messages:
   wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
     això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
   wwcConfigGUIEachTranslatorSettings: '{0} Configuració'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat no condona l'ús de /reload. Si us plau, procedeixi
     amb precaució.
   wwcConfigEnabledDebugMode: Mode DEBUG activat. Si no sou un desenvolupador o un
@@ -313,10 +302,7 @@ Messages:
     Traduït per Google Translate. Torna a carregar perquè el canvi tingui efecte.
   wwcConfigYAMLDefault: Per defecte a YAML per a l'emmagatzematge de dades.
   wwcConfigGUISQLMenuButton: Canviar la configuració SQ
-  wwcConfigConversationWatsonTranslateToggleSuccess: S'ha completat amb èxit Watson
-    Traduir. Torna a carregar perquè el canvi tingui efecte.
   wwcConfigGUIToggleGoogleTranslateButton: Commuta Traduït per Google
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traduir
   wwcConfigGUIToggleAmazonTranslateButton: Alterna Amazon Traduir
   wwcConfigGUIStorageSettings: Configuració d'emmagatzematge
   wwcConfigConversationAmazonTranslateToggleSuccess: S'ha completat amb èxit Amazon
@@ -684,9 +670,6 @@ Messages:
     de xat.
   wwcConfigVaultSupportInvalid: Suport de la caixa no vàlida establert a config.yml.
     Per defecte de veritat...
-  wwcWatsonDeprecation: Watson ha estat obsolet i ja no és compatible amb IBM. Si
-    us plau, consideri canviar, ja que el suport per a això serà eliminat en la propera
-    actualització.
   wwcConfigForceChatChannelEnabled: Es forçarà un canal de traducció separat durant
     totes les traduccions.
   wwcConfigConversationSeparateChatChannelForceSuccess: Es va alternar amb èxit forçant
@@ -701,7 +684,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Canviar la icona del canal separat
   wwcConfigConversationChatFormatSuccess: El seu format s'ha canviat amb èxit.
   wwcConfigGUISeparateChatChannelForceButton: Força el canal separat
-  wwcOrigHover: 'Missatge original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: El xat de sortida original
     adjunt a la traducció com a text de la passejadora s'ha alternat correctament.
   wwcConfigGUISendOutgoingHoverTextChatButton: Afegeix missatges sortints originals
@@ -727,16 +709,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activa la llista negra
   wwcConfigConversationBlacklistDeletionSuccess: S'ha eliminat correctament el terme.
   wwcConfigGUIChatChannelSettings: Configuració del canal de xat
-  wwcConfigGUIChatBlacklistSuccess: S'ha canviat amb èxit la llista negra.
   wwcConfigGUIChatMessagesBlacklistNewButton: Afegeix una paraula nova
   wwcConfigGUIChatChannelButton: Tradueix la configuració del canal
   wwcConfigGUIBlacklistMessagesModify: Modificar Terme ({0})
   wwcConfigChatChannelFormatInvalid: S'ha detectat el format de canal no vàlid. Per
     defecte a {0}...
-  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
-    és {0}. Els nostres arguments reconeguts per defecte que podeu incloure: {1}.
-    Si teniu PlaceholderAPI, assegureu-vos que aquestes variables estiguin envoltades
-    per percentatges (%) en canvi. Escriu 0 per tornar enrere.'
   wwcConfigGUIModifyBlacklistSettings: Modificar la llista negra
   wwcConfigGUINextPageButton: Pàgina següent
+  wwcConfigChatChannelHoverFormatInvalid: S'ha detectat el format de passejador invàlid.
+    Per defecte a {0}...
+  wwcOrigHover: Missatge original
+  wwctGUIMainMenuPlayer: Tradueix {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ha detectat i reflectirà la seva localització
+    de Minecraft ({0}). Escriu {1} per a més detalls.
+  wwcConfigBadYaml: 'S''ha detectat un fitxer YAML no vàlid: {0}. Si us plau, intenteu
+    solucionar aquest fitxer o pot ser eliminat!'
+  wwcConfigConversationChatBlacklistSuccess: S'ha canviat amb èxit la llista negra.
+  wwcConfigConversationChannelHoverFormatInput: 'El format actual per a la traducció
+    del text hover és {0}. Possibles arguments per defecte: {1}. Si teniu PlaceholderAPI,
+    assegureu-vos que aquestes variables estiguin envoltades per percentatges (%)
+    en canvi. Escriu 0 per tornar enrere.'
+  wwcConfigConversationChannelFormatInput: 'El format actual per al canal de xat separat
+    és {0}. Possibles arguments per defecte: {1}. Si teniu PlaceholderAPI, assegureu-vos
+    que aquestes variables estiguin envoltades per percentatges (%) en canvi. Escriu
+    0 per tornar enrere.'
+  wwcConfigConversationChatHoverFormatSuccess: El format de l'hover s'ha canviat correctament.
+  wwcConfigConversationLocalizeSyncSuccess: S'ha alternat amb èxit la sincronització
+    de la localització dels usuaris.
+  wwcConfigGUILocalizeSyncButton: Sincronitzar la localització d'usuari
+  wwcConfigSyncUserLocalInvalid: Sincronitzar la configuració de localització d'usuari
+    no vàlida. Per defecte de veritat...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Canviar el format de text Hover
+  wwcdResetWarn: 'ADVERTÈNCIA: Aquesta ordre restablirà completament totes les dades,
+    inclosos els registres i els vostres traductors actius. NO EXECUTEU AQUESTA COMANDA
+    A NO SER QUE SÀPIGUEU QUÈ ESTEU FENT: {0}'
+  wwcdResetNotif: WorldwideChat s'ha restablert. Recàrrega...
+  wwcdResetNotifError: No totes les dades s'han eliminat amb èxit. Estàs connectat
+    a la teva base de dades?
+  colorCodeWarning: L'ús de codis de color us pot donar resultats imprevisibles.
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Neizdevās izveidot savienojumu ar {0}. Pārliecinieties,
     vai jūsu akreditācijas dati un ugunsmūris ir pareizi konfigurēti!
   wwcConfigEnabledbStats: Iespējots bStats.
-  wwctGUIMainMenuPlayer: '{0} tulkošanas izvēlne'
   wwctGUIBookButton: Pārslēgt grāmatu tulkošanu
   wwcLangDetected: Atklāta valoda {0}.
   wwcBookTranslateStart: Mērķa grāmatas tulkošana...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Spēlētājs {0} neesmu atrasts.
   wwcConfigGUIAmazonTranslateRegionButton: Mainīt Amazones reģionu
   wwcConfigConversationLangInvalid: Nederīgs valodas kods!
-  wwcConfigGUIWatsonAPIKeyButton: Mainīt Watson API atslēgu
   wwcEnabled: Iespējota WorldwideChat versija {0}.
   wwctbOnSender: Iespējota grāmatu tulkošana. Ar peles labo pogu noklikšķiniet, turot
     grāmatu, lai to tulkotu!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: Parakstīt tulkojumu atspējots {0}.
   wwcUpdaterConnectionFailed: Nespēj pārbaudīt jaunākos atjauninājumus GitHub.
   watsonNotFoundExceptionNotification: Nevar tulkot savu ievadi tālāk.
-  wwcConfigConversationWatsonAPIKeyInput: Pašreizējā API atslēga ir {0}. Lūdzu, ievadiet
-    API atslēgu Watson vai ierakstiet 0, lai atgrieztos.
   wwctGUIStopButton: Pārtraukt tulkošanu
   wwcgTranslationStopped: Global tērzēšanas tulkošana ir apturēta.
   wwcUpdaterFutureDate: Šim WorldwideChat gadījumam ir lielāka versija nekā jaunākā
@@ -74,12 +70,9 @@ Messages:
     garš. Tulkojums:'
   wwctsOnTarget: Pierakstīšanās tulkojums iespējots uz {0}.
   wwcConfigCacheDisabled: Tulkotāja kešatmiņa ir at
-  wwcConfigConversationWatsonURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet pakalpojuma
-    URL Watson vai ierakstiet 0, lai atgrieztos.
   wwcBookDone: Grāmata tulkota veiksmīgi.
   wwctsOnSender: Iespējots paraksta tulkojums. Ar peles labo pogu noklikšķiniet uz
     zīmes, lai to tulkotu!
-  watsonColorCodeWarning: Izmantojot krāsu kodus, jūs varat sniegt neparedzamus rezultātus.
   wwctGUITranslationButton: Sākt tulkošanu
   wwctGUIAutoDetectButton: Automātiski noteikt avota valodu
   wwcUpdaterUpToDate: WorldwideChat ir atjaunināta!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat ir novecojis. Lūdzu, atjauniniet līdz jaunākajai
     versijai.
   wwcConfigConversationRateLimitSuccess: Likmju ierobežojums veiksmīgi iestatīts.
-  wwcConfigConversationWatsonURLSuccess: Watson URL iestatīts veiksmīgi.
   wwctbPlayerNotFound: Spēlētājs {0} vai nu nav atrasts, vai nav aktīvs tulkotājs.
   wwcConfigConversationTranslationCacheSuccess: Tulkošanas kešatmiņas ierobežojums
     veiksmīgi
@@ -111,7 +103,6 @@ Messages:
     izpilde līdz 0 sekundēm...
   wwcSignTranslateStart: Mērķa zīmes tulkošana...
   wwcConfigGUIChatSettings: tērzēšanas konfigurācija
-  wwcConfigGUIWatsonURLButton: Mainīt Watson pakalpojuma URL
   wwcConfigConversationUpdateCheckerSuccess: Atjaunināšanas pārbaudītāja kavēšanās
     iestatīta veiksmīgi.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek tulkota
@@ -131,7 +122,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tulkojumu mēģinājums: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon slepeno atslēgu komplekts
     veiksmīgi.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API atslēgu komplekts veiksmīgi.
   wwcRateLimit: Jūsu tulkojumi ir ierobežoti. Lūdzu, uzgaidiet citu {0} sekundes.
   wwcConfigCacheEnabled: Tulkotāja kešatmiņa ir iespējota un iestatīta uz robežu {0}.
   wwctGUIExistingTranslationButton: Pārrakstīt pašreizējo tulkošanas sesiju
@@ -192,7 +182,6 @@ Messages:
   wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
     config.yml vai ar /wwcc, lai izmantotu šo spraudni.
   wwcConfigGUIEachTranslatorSettings: '{0} konfigurācija'
-  wwcConfigGUIWatsonButton: Vatsons
   wwcServerReloadWarning: WorldwideChat neattaisno izmantošanu/pārlādēt. Lūdzu, rīkojieties
     piesardzīgi.
   wwcConfigEnabledDebugMode: Iespējots atkļūdošanas režīms. Ja neesat izstrādātājs
@@ -306,10 +295,7 @@ Messages:
     Pārlādēt, lai izmaiņas stātos spēkā.
   wwcConfigYAMLDefault: Datu glabāšanai nav izpildīts YAML.
   wwcConfigGUISQLMenuButton: SQL iestatījumu mainīšana
-  wwcConfigConversationWatsonTranslateToggleSuccess: Veiksmīgi pārslēgts Watson Translate.
-    Pārlādēt, lai izmaiņas stātos spēkā.
   wwcConfigGUIToggleGoogleTranslateButton: Pārslēgt Google tulkotāju
-  wwcConfigGUIToggleWatsonTranslateButton: Pārslēgt Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Pārslēgt Amazon tulkot
   wwcConfigGUIStorageSettings: Krātuves konfigurācija
   wwcConfigConversationAmazonTranslateToggleSuccess: Veiksmīgi pārslēgts Amazon Translate.
@@ -636,8 +622,6 @@ Messages:
     prioritāti.
   wwcConfigVaultSupportInvalid: Nederīgs glabātuves atbalsts iestatīts programmā config.yml.
     Noklusējuma iestatījums uz patiesu...
-  wwcWatsonDeprecation: Watson ir novecojis, un IBM to vairs neatbalsta. Lūdzu, apsveriet
-    iespēju pārslēgties, jo atbalsts tam tiks noņemts nākamajā atjauninājumā.
   wwcConfigForceChatChannelEnabled: Visu tulkojumu laikā tiks piespiests atsevišķs
     tulkošanas kanāls.
   wwcConfigConversationSeparateChatChannelForceSuccess: Veiksmīgi pārslēgts, piespiežot
@@ -652,7 +636,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Mainīt atsevišķa kanāla ikonu
   wwcConfigConversationChatFormatSuccess: Jūsu formāts ir veiksmīgi mainīts.
   wwcConfigGUISeparateChatChannelForceButton: Piespiež atsevišķu kanālu
-  wwcOrigHover: 'Sākotnējais ziņojums: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sākotnējā izejošā tērzēšana,
     kas pievienota tulkojumam kā kursorēšanas teksts, tika veiksmīgi pārslēgts.
   wwcConfigGUISendOutgoingHoverTextChatButton: Pievienojiet oriģinālos izejošos ziņojumus
@@ -677,16 +660,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Iespējot melno sarakstu
   wwcConfigConversationBlacklistDeletionSuccess: Veiksmīgi izdzēsts termins.
   wwcConfigGUIChatChannelSettings: Tērzēšanas kanāla konfigurācija
-  wwcConfigGUIChatBlacklistSuccess: Veiksmīgi pārslēdza melno sarakstu.
   wwcConfigGUIChatMessagesBlacklistNewButton: Pievienot jaunu vārdu
   wwcConfigGUIChatChannelButton: Tulkot kanāla iestatījumus
   wwcConfigGUIBlacklistMessagesModify: Modificēt terminu ({0})
   wwcConfigChatChannelFormatInvalid: Atklāts nederīgs kanāla formāts. Noklusējuma
     iestatījums uz {0}...
-  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
-    formāts ir {0}. Mūsu noklusējuma atzītie argumenti, kurus varat iekļaut: {1}.
-    Ja jums ir PlaceholderAPI, pārliecinieties, vai šos mainīgos ir ieskauti procenti
-    (%). Ierakstiet 0, lai atgrieztos.'
   wwcConfigGUIModifyBlacklistSettings: Mainīt melno sarakstu
   wwcConfigGUINextPageButton: Nākamā lapa
+  wwcConfigChatChannelHoverFormatInvalid: Atklāts nederīgs kursora formāts. Noklusējuma
+    iestatījums uz {0}...
+  wwcOrigHover: Sākotnējais ziņojums
+  wwctGUIMainMenuPlayer: Tulkot {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ir atklājis un atspoguļos jūsu Minecraft
+    lokalizāciju ({0}). Lai iegūtu sīkāku informāciju, ierakstiet {1}.
+  wwcConfigBadYaml: 'Atklāts nederīgs YAML fails: {0}. Lūdzu, mēģiniet labot šo failu,
+    pretējā gadījumā tas var tikt izdzēsts!'
+  wwcConfigConversationChatBlacklistSuccess: Veiksmīgi pārslēdza melno sarakstu.
+  wwcConfigConversationChannelHoverFormatInput: 'Pašreizējais tulkošanas kursora teksta
+    formāts ir {0}. Iespējamie noklusējuma argumenti: {1}. Ja jums ir PlaceholderAPI,
+    pārliecinieties, vai šos mainīgos ir ieskauti procenti (%). Ierakstiet 0, lai
+    atgrieztos.'
+  wwcConfigConversationChannelFormatInput: 'Pašreizējais atsevišķā tērzēšanas kanāla
+    formāts ir {0}. Iespējamie noklusējuma argumenti: {1}. Ja jums ir PlaceholderAPI,
+    pārliecinieties, vai šos mainīgos ir ieskauti procenti (%). Ierakstiet 0, lai
+    atgrieztos.'
+  wwcConfigConversationChatHoverFormatSuccess: Jūsu kursora formāts ir veiksmīgi mainīts.
+  wwcConfigConversationLocalizeSyncSuccess: Veiksmīgi pārslēgta lietotāja lokalizācijas
+    sinhronizācija.
+  wwcConfigGUILocalizeSyncButton: Sinhronizēt lietotāja lokalizāciju
+  wwcConfigSyncUserLocalInvalid: Sinhronizācijas lietotāja lokalizācijas iestatījums
+    ir nederīgs. Noklusējuma iestatījums uz patiesu...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Mainīt kursorēšanas teksta formātu
+  wwcdResetWarn: 'BRĪDINĀJUMS: Šī komanda pilnībā atiestatīs visus datus, ieskaitot
+    ierakstus un aktīvos tulkotājus. NEPALAIDIET ŠO KOMANDU, JA VIEN NEZINĀT, KO DARĀT:
+    {0}'
+  wwcdResetNotif: WorldwideChat ir atiestatīts. Pārlādēšana...
+  wwcdResetNotifError: Ne visi dati tika veiksmīgi notīrīti. Vai esat izveidojies
+    savienojums ar savu datu bāzi?
+  colorCodeWarning: Krāsu kodu izmantošana var dot neparedzamus rezultātus.
 

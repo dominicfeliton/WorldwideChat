@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Naqas milli jgħaqqdu lil {0}. Kun żgur kredenzjali tiegħek
     u firewall huma kkonfigurati b'mod korrett!
   wwcConfigEnabledbStats: bStats attivati.
-  wwctGUIMainMenuPlayer: Traduzzjoni Menu ta'%
   wwctGUIBookButton: Traduzzjoni Toggle Ktieb
   wwcLangDetected: Lingwa skoperta {0}.
   wwcBookTranslateStart: Traduzzjoni ktieb mira...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Player {0} ma nstabx.
   wwcConfigGUIAmazonTranslateRegionButton: Bidla Reġjun Amazon
   wwcConfigConversationLangInvalid: Kodiċi tal-lingwa invalidu!
-  wwcConfigGUIWatsonAPIKeyButton: Bidla Watson API Ewlenin
   wwcEnabled: Enabled verżjoni WorldwideChat {0}.
   wwctbOnSender: Ktieb traduzzjoni ppermettiet. Ikklikkja lemin waqt li żżomm ktieb
     biex tittraduċih!
@@ -64,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Mhux possibbli li tiċċekkja għall-aħħar aġġornamenti
     fuq Github.
   watsonNotFoundExceptionNotification: Kapaċi tittraduċi l-input tiegħek aktar.
-  wwcConfigConversationWatsonAPIKeyInput: Jekk jogħġbok input ewlieni API għall Watson,
-    jew tip 0 li jmorru lura.
   wwctGUIStopButton: Waqqaf it-traduzzjoni
   wwcgTranslationStopped: It-traduzzjoni globali taċ-chat twaqqfet.
   wwcUpdaterFutureDate: Dan l-istanza ta 'WorldwideChat għandha verżjoni akbar mill-aħħar
@@ -76,11 +72,8 @@ Messages:
     kienet twila wisq. Traduzzjoni
   wwctsOnTarget: traduzzjoni Sign ppermettiet għal {0}.
   wwcConfigCacheDisabled: Cache tat-traduttur b'diżabilità.
-  wwcConfigConversationWatsonURLInput: Jekk jogħġbok input URL servizz URL għall Watson,
-    jew tip 0 li jmorru lura.
   wwcBookDone: Ktieb tradott b'suċċess.
   wwctsOnSender: Sinjal traduzzjoni ppermettiet. Ikklikkja lemin fuq sinjal biex tittraduċih!
-  watsonColorCodeWarning: L-użu ta 'kodiċi tal-kulur jista'jagħtik riżultati imprevedibbli.
   wwctGUITranslationButton: Ibda t-traduzzjoni
   wwctGUIAutoDetectButton: Auto-jikxfu Sors Lingwa
   wwcUpdaterUpToDate: WorldwideChat huwa aġġornat!
@@ -93,7 +86,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar
     verżjoni.
   wwcConfigConversationRateLimitSuccess: Limitu tar-rata stabbilit b'suċċess.
-  wwcConfigConversationWatsonURLSuccess: URL Watson stabbiliti b'suċċess.
   wwctbPlayerNotFound: Player {0} jew ma jinstabx, jew mhuwiex traduttur attiv.
   wwcConfigConversationTranslationCacheSuccess: Limitu cache Traduzzjoni stabbilit
     b'suċċess.
@@ -112,7 +104,6 @@ Messages:
     għal 0 sekondi...
   wwcSignTranslateStart: Traduzzjoni tas-sinjal fil-mira...
   wwcConfigGUIChatSettings: Konfigurazzjoni Chat
-  wwcConfigGUIWatsonURLButton: Bidla Watson Servizz URL
   wwcConfigConversationUpdateCheckerSuccess: Aġġorna d-dewmien tal-kontrollur stabbilit
     b'suċċess.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Iċ-chat globali qed jiġi tradott
@@ -130,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'Attentat Traduzzjonijiet: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon ċavetta sigrieta sett
     b'suċċess.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API ewlenin stabbiliti b'suċċess.
   wwcRateLimit: Traduzzjonijiet tiegħek huma rata limitata. Jekk jogħġbok stenna oħra
     {0} sekondi.
   wwcConfigCacheEnabled: Cache traduttur ppermettiet u stabbiliti għal limitu ta '
@@ -190,7 +180,6 @@ Messages:
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfigurazzjoni'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ma jikkonformax l-użu ta '/tagħbija mill-ġdid.
     Jekk jogħġbok ipproċedi b'kawtela.
   wwcConfigEnabledDebugMode: Modalità debug ppermettiet. Jekk m'intix żviluppatur
@@ -307,10 +296,7 @@ Messages:
     Reload biex il-bidla tidħol fis-seħħ.
   wwcConfigYAMLDefault: Inadempjenti għal YAML għall-ħażna tad-data.
   wwcConfigGUISQLMenuButton: Bidla SQL Settings
-  wwcConfigConversationWatsonTranslateToggleSuccess: B'suċċess toggled Watson Ittraduċi.
-    Reload biex il-bidla tidħol fis-seħħ.
   wwcConfigGUIToggleGoogleTranslateButton: Ittraduċi Google Ittraduċi
-  wwcConfigGUIToggleWatsonTranslateButton: Ittraduċi Toggle Watson
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Ittraduċi
   wwcConfigGUIStorageSettings: Ħażna Konfigurazzjoni
   wwcConfigConversationAmazonTranslateToggleSuccess: B'suċċess toggled Amazon Ittraduċi.
@@ -642,9 +628,6 @@ Messages:
     chat tiegħek
   wwcConfigVaultSupportInvalid: Appoġġ għall-forti invalidu stabbilit f'config.yml.
     Insuffiċjenza għal veru...
-  wwcWatsonDeprecation: Watson ġie deprecated u m'għadux appoġġjat minn IBM. Jekk
-    jogħġbok ikkunsidra li taqleb, bħala l-appoġġ għaliha se jitneħħa fl-aġġornament
-    li jmiss.
   wwcConfigForceChatChannelEnabled: Kanal separat ta' traduzzjoni jiġi sfurzat matul
     it-traduzzjonijiet kollha.
   wwcConfigConversationSeparateChatChannelForceSuccess: Imqabbad b'suċċess sforza
@@ -659,7 +642,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Ibdel l-Ikona tal-Kanal separat
   wwcConfigConversationChatFormatSuccess: Il-format tiegħek inbidel b'suċċess.
   wwcConfigGUISeparateChatChannelForceButton: Kanal Separat tal-Forza
-  wwcOrigHover: 'Messaġġ Oriġinali: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Chat ħierġa oriġinali mehmuża
     mat-traduzzjoni bħala test hover togged b'suċċess.
   wwcConfigGUISendOutgoingHoverTextChatButton: Żid Messaġġi Ħerġin Oriġinali bħala
@@ -684,16 +666,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Ippermetti l-Lista s-sewda
   wwcConfigConversationBlacklistDeletionSuccess: It-terminu ħassar b'suċċess.
   wwcConfigGUIChatChannelSettings: Konfigurazzjoni tal-Kanal taċ-Ċat
-  wwcConfigGUIChatBlacklistSuccess: Tbiddel b'suċċess il-lista s-sewda.
   wwcConfigGUIChatMessagesBlacklistNewButton: Żid Kelma Ġdida
   wwcConfigGUIChatChannelButton: Ittraduċi Settings tal-Kanal
   wwcConfigGUIBlacklistMessagesModify: Imodifika t-Terminu ({0})
   wwcConfigChatChannelFormatInvalid: Format tal-kanal invalidu skopert. Insuffiċjenza
     għal {0}...
-  wwcConfigConversationChannelFormatInput: 'Il-format attwali għall-kanal separat
-    taċ-chat huwa {0}. L-argumenti rikonoxxuti default tagħna li tista ''tinkludi:
-    {1}. Jekk għandek PlaceholderAPI, kun żgur li dawk il-varjabbli huma mdawra b''perċentwali
-    (%) minflok. Tip 0 biex tmur lura.'
   wwcConfigGUIModifyBlacklistSettings: Imodifika l-lista s-sewda
   wwcConfigGUINextPageButton: Paġna li jmiss
+  wwcConfigChatChannelHoverFormatInvalid: Format ta 'hover invalidu skopert. Insuffiċjenza
+    għal {0}...
+  wwcOrigHover: Messaġġ Oriġinali
+  wwctGUIMainMenuPlayer: Traduċi {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat skopert u se tirrifletti l-lokalizzazzjoni
+    Minecraft tiegħek ({0}). Ittajpja {1} għal aktar dettalji.
+  wwcConfigBadYaml: 'Fajl YAML invalidu skopert: {0}. Jekk jogħġbok ipprova tiffissa
+    dan il-fajl jew jista ''jitħassar!'
+  wwcConfigConversationChatBlacklistSuccess: Tbiddel b'suċċess il-lista s-sewda.
+  wwcConfigConversationChannelHoverFormatInput: 'Il-format attwali għat-test hover
+    tat-traduzzjoni huwa {0}. Argumenti awtomatiċi possibbli: {1}. Jekk għandek PlaceholderAPI,
+    kun żgur li dawk il-varjabbli huma mdawra b''perċentwali (%) minflok. Tip 0 biex
+    tmur lura.'
+  wwcConfigConversationChannelFormatInput: 'Il-format attwali għall-kanal separat
+    taċ-chat huwa {0}. Argumenti awtomatiċi possibbli: {1}. Jekk għandek PlaceholderAPI,
+    kun żgur li dawk il-varjabbli huma mdawra b''perċentwali (%) minflok. Tip 0 biex
+    tmur lura.'
+  wwcConfigConversationChatHoverFormatSuccess: Il-format tal-hover tiegħek inbidel
+    b'suċċess.
+  wwcConfigConversationLocalizeSyncSuccess: Is-sinkronizzazzjoni tal-lokalizzazzjoni
+    tal-utent imdawwar b'suċċess
+  wwcConfigGUILocalizeSyncButton: Sinkronizzazzjoni tal-Lokalizzazzjoni
+  wwcConfigSyncUserLocalInvalid: Issettjar tal-lokalizzazzjoni tal-utent tas-sinkronizzazzjoni
+    Insuffiċjenza għal veru...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Ibdel il-Format tat-Test tal-Hover
+  wwcdResetWarn: 'TWISSIJA: Dan il-kmand se jirrisettja kompletament id-dejta kollha
+    inklużi r-rekords u t-tradutturi attivi tiegħek. MA TMEXXIX DAN IL-KMAND SAKEMM
+    MA TKUNX TAF X''QED TAGĦMEL: {0}'
+  wwcdResetNotif: WorldwideChat ġie risettjat. Tagħbija mill-ġdid...
+  wwcdResetNotifError: Mhux id-dejta kollha tħassret b'suċċess. Int imqabbad mad-database
+    tiegħek?
+  colorCodeWarning: L-użu ta 'kodiċijiet tal-kulur jista' jagħtik riżultati imprevedibbli.
 

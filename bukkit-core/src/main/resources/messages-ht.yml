@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Echwe pou pou konekte nan {0}. asire w ke kalifikasyon
     ou ak firewall yo configuré kòrèkteman!
   wwcConfigEnabledbStats: Pèmèt BStat.
-  wwctGUIMainMenuPlayer: Meni tradiksyon nan % mwen
   wwctGUIBookButton: Baskile Tradiksyon Liv
   wwcLangDetected: Detekte lang {0}.
   wwcBookTranslateStart: Tradwi liv sib...
@@ -50,7 +49,6 @@ Messages:
   wwctPlayerNotFound: Jwè mwen pa jwenn.
   wwcConfigGUIAmazonTranslateRegionButton: Chanje Amazon Rejyon
   wwcConfigConversationLangInvalid: Envalid kòd lang!
-  wwcConfigGUIWatsonAPIKeyButton: Chanje Watson API kle
   wwcEnabled: Pèmèt WorldwideChat vèsyon % mwen.
   wwctbOnSender: Tradiksyon liv pèmèt. Dwa-klike sou pandan y ap kenbe yon liv tradui
     li!
@@ -61,8 +59,6 @@ Messages:
   wwctsOffTarget: Siyen tradiksyon andikape pou % mwen.
   wwcUpdaterConnectionFailed: Kapab tcheke pou dènye dènye nouvèl sou Github.
   watsonNotFoundExceptionNotification: Kapab tradui opinyon ou nenpòt ki pi lwen.
-  wwcConfigConversationWatsonAPIKeyInput: Kle API aktyèl la se % mwen % Tanpri D 'yon
-    kle API pou Watson, oswa kalite 0 ale tounen.
   wwctGUIStopButton: One Stop tradui
   wwcgTranslationStopped: Tradiksyon chat Global te sispann.
   wwcUpdaterFutureDate: Egzanp sa a nan WorldwideChat gen yon vèsyon pi gwo pase yon
@@ -73,11 +69,8 @@ Messages:
     Tradiksyon:'
   wwctsOnTarget: Siyen tradiksyon pèmèt pou % mwen.
   wwcConfigCacheDisabled: Kachèt tradiktè enfim.
-  wwcConfigConversationWatsonURLInput: URL aktyèl la se % mwen % Tanpri opinyon yon
-    URL sèvis pou Watson, oswa kalite 0 ale tounen.
   wwcBookDone: Liv tradui avèk siksè.
   wwctsOnSender: Siyen tradiksyon pèmèt. Dwa-klike sou yon siy tradui li!
-  watsonColorCodeWarning: Lè l sèvi avèk kòd koulè ka ba ou rezilta enprevizib.
   wwctGUITranslationButton: Kòmanse tradui
   wwctGUIAutoDetectButton: Auto-detekte Sous Lang
   wwcUpdaterUpToDate: WorldwideChat se jiska dat!
@@ -90,7 +83,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat se soti nan dat. Tanpri mete ajou vèsyon
     an dènye.
   wwcConfigConversationRateLimitSuccess: Limit pousantaj mete avèk siksè.
-  wwcConfigConversationWatsonURLSuccess: Watson URL mete avèk siksè.
   wwctbPlayerNotFound: Jwè mwen swa pa jwenn, oswa se pa yon tradiktè aktif.
   wwcConfigConversationTranslationCacheSuccess: Tradiksyon limit kachèt mete avèk
     siksè.
@@ -109,7 +101,6 @@ Messages:
     segonn 0...
   wwcSignTranslateStart: Tradwi siy sib...
   wwcConfigGUIChatSettings: Chat konfigirasyon
-  wwcConfigGUIWatsonURLButton: Chanje Watson Sèvis URL
   wwcConfigConversationUpdateCheckerSuccess: Mete ajou reta korektè mete avèk siksè.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat se ke yo te tradui
     soti nan % mwen nan {0}.
@@ -126,7 +117,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tradiksyon eseye: % mwen'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon sekrè kle mete avèk
     siksè.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API kle mete avèk siksè.
   wwcRateLimit: Tradiksyon ou yo pousantaj limite. Tanpri rete tann yon lòt % mwen
     segonn.
   wwcConfigCacheEnabled: Cachèt tradiktè pèmèt, li mete nan yon limit nan % mwen.
@@ -182,7 +172,6 @@ Messages:
   wwcInvalidTranslator: Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
     ou oswa ak/wwcc yo sèvi ak sa a Plugin.
   wwcConfigGUIEachTranslatorSettings: '% mwen konfigirasyon'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat pa fèmen l 'a nan/Reload. Tanpri kontinye
     avèk prekosyon.
   wwcConfigEnabledDebugMode: Pèmèt mòd dbug. Si ou pa yon pwomotè oswa depanaj, ou
@@ -295,10 +284,7 @@ Messages:
     Reload pou chanjman an yo pran efè.
   wwcConfigYAMLDefault: Default YAML pou depo done.
   wwcConfigGUISQLMenuButton: Chanje SQL Anviwònman
-  wwcConfigConversationWatsonTranslateToggleSuccess: Avèk siksè baskule Watson Translate.
-    Reload pou chanjman an yo pran efè.
   wwcConfigGUIToggleGoogleTranslateButton: Baskile Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Baskile Watson tradui
   wwcConfigGUIToggleAmazonTranslateButton: Amazon tradui baskil
   wwcConfigGUIStorageSettings: Depo konte genyen
   wwcConfigConversationAmazonTranslateToggleSuccess: Avèk siksè baskile Amazon Translate.
@@ -615,9 +601,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: Aksè mete priyorite evènman chat ou.
   wwcConfigVaultSupportInvalid: Sipò vant envalid mete nan config.yml. Defaulting
     nan vre...
-  wwcWatsonDeprecation: Watson te deprecated epi li pa gen okenn ankò sipòte pa IBM.
-    Tanpri konsidere oblije chanje, kòm sipò pou li pral retire nan aktyalizasyon
-    kap vini an.
   wwcConfigForceChatChannelEnabled: Yon kanal tradiksyon separe yo pral fòse pandan
     tout tradiksyon.
   wwcConfigConversationSeparateChatChannelForceSuccess: Aksè togged fòse kanal la
@@ -631,7 +614,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Chanje Icon Chèn separe
   wwcConfigConversationChatFormatSuccess: Fòma ou te chanje avèk siksè.
   wwcConfigGUISeparateChatChannelForceButton: Fòs Chèn separe
-  wwcOrigHover: 'Mesaj orijinal: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Original sortan chat tache
     ak tradiksyon kòm hover tèks togged avèk siksè.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ajoute Mesaj Sortan orijinal kòm Tèks
@@ -654,14 +636,39 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Pèmèt lis nwa
   wwcConfigConversationBlacklistDeletionSuccess: Aksè efase tèm nan.
   wwcConfigGUIChatChannelSettings: Konfigirasyon Chanèl Chat
-  wwcConfigGUIChatBlacklistSuccess: Siksè toggle lis nwa a.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ajoute nouvo pawòl
   wwcConfigGUIChatChannelButton: Tradui Channel Anviwòn
   wwcConfigGUIBlacklistMessagesModify: Modifye tèm ({0})
   wwcConfigChatChannelFormatInvalid: Fòma chanèl envalid detekte. Defaulting nan {0}...
-  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
-    se {0}. Agiman defo rekonèt nou yo ke ou ka gen ladan yo: {1}. Si ou gen PlaceholderAPI,
-    asire w ke sa yo varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
   wwcConfigGUIModifyBlacklistSettings: Modifye lis nwa
   wwcConfigGUINextPageButton: Paj pwochen
+  wwcConfigChatChannelHoverFormatInvalid: Fòma hover envalid detekte. Defaulting nan
+    {0}...
+  wwcOrigHover: Mesaj orijinal
+  wwctGUIMainMenuPlayer: Tradui {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat te detekte epi yo pral reflete lokalizasyon
+    Minecraft ou a ({0}). Kalite {1} pou plis detay.
+  wwcConfigBadYaml: 'Envalab dosye YAML detekte: {0}. Tanpri eseye ranje dosye sa
+    a oswa li ka efase!'
+  wwcConfigConversationChatBlacklistSuccess: Siksè toggle lis nwa a.
+  wwcConfigConversationChannelHoverFormatInput: 'Fòma aktyèl la pou tradiksyon hover
+    tèks se {0}. Agiman default posib: {1}. Si ou gen PlaceholderAPI, asire w ke sa
+    yo varyab yo antoure pa pousantaj (%) olye. Kalite 0 pou tounen.'
+  wwcConfigConversationChannelFormatInput: 'Fòma aktyèl la pou kanal la chat separe
+    se {0}. Agiman default posib: {1}. Si ou gen PlaceholderAPI, asire w ke sa yo
+    varyab yo antoure pa pousantaj (%) olye de sa. Kalite 0 pou tounen.'
+  wwcConfigConversationChatHoverFormatSuccess: Fòma hover ou a te chanje avèk siksè.
+  wwcConfigConversationLocalizeSyncSuccess: Aksè togged synchronisation itilizatè
+    lokalisasyon.
+  wwcConfigGUILocalizeSyncButton: Sync Lokalizasyon Itilizatè
+  wwcConfigSyncUserLocalInvalid: Sync anviwònman lokalizasyon itilizatè envalid Defaulting
+    nan vre...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Chanje fòma tèks Hover
+  wwcdResetWarn: 'AVÈTISMAN: Lòd sa a pral konplètman Reyajiste tout done ki gen ladan
+    dosye ak tradiktè aktif ou yo. PA KOURI LÒD SA A SOF SI OU KONNEN SA W AP FÈ:
+    {0}'
+  wwcdResetNotif: WorldwideChat te réinitialiser. Reloading...
+  wwcdResetNotifError: Se pa tout done te siye avèk siksè. Èske ou konekte nan baz
+    done ou?
+  colorCodeWarning: Sèvi ak kòd koulè ka ba ou rezilta enprevwayab.
 

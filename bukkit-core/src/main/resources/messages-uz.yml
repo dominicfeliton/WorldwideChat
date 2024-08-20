@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} ga ulanib boʻlmadi. Hisob ma''lumotlaringiz va xavfsizlik
     devoringiz toʻgʻri sozlanganligiga ishonch hosil qiling!'
   wwcConfigEnabledbStats: bStats yoqilgan.
-  wwctGUIMainMenuPlayer: '{0} Tarjima menyusi'
   wwctGUIBookButton: Toggle Kitob tarjimasi
   wwcLangDetected: Aniqlangan til {0}.
   wwcBookTranslateStart: Tarjima maqsadli kitob...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: O'yinchi % Men topilmadi.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon mintaqasini o'zgartirish
   wwcConfigConversationLangInvalid: Noto'g'ri til kodi!
-  wwcConfigGUIWatsonAPIKeyButton: Watson API kalitini o'zgartirish
   wwcEnabled: '{0} WorldwideChat versiyasini yoqing.'
   wwctbOnSender: Kitob tarjimasi yoqilgan. Uni tarjima qilish uchun kitobni ushlab
     turganda o'ng tugmasini bosing!
@@ -63,8 +61,6 @@ Messages:
   wwctsOffTarget: '{0} uchun oʻchirilgan imzo tarjimasi.'
   wwcUpdaterConnectionFailed: Github bo'yicha so'nggi yangilanishlarni tekshirib bo'lmadi.
   watsonNotFoundExceptionNotification: Kiritishingizni yanada tarjima qilib bo'lmadi.
-  wwcConfigConversationWatsonAPIKeyInput: Joriy API kaliti {0}. Iltimos Watson uchun
-    API kalitini kiriting yoki orqaga qaytish uchun 0 kiriting.
   wwctGUIStopButton: Tarjimani to'xtatish
   wwcgTranslationStopped: Global chat tarjimasi to'xtatildi.
   wwcUpdaterFutureDate: WorldwideChat-ning ushbu misoli eng so'nggi jamoatchilikka
@@ -75,13 +71,9 @@ Messages:
     Tarjima:'
   wwctsOnTarget: '{0} uchun imzo tarjimasi yoqilgan.'
   wwcConfigCacheDisabled: Tarjimon keshi o'chirilgan.
-  wwcConfigConversationWatsonURLInput: Joriy URL manzili {0}. Iltimos Watson uchun
-    xizmat URL manzilini kiriting yoki orqaga qaytish uchun 0 yozing.
   wwcBookDone: Kitob muvaffaqiyatli tarjima.
   wwctsOnSender: Sign tarjimasi yoqilgan. Uni tarjima qilish uchun belgini o'ng tugmasini
     bosing!
-  watsonColorCodeWarning: Rang kodlarini ishlatish sizga oldindan aytib bo'lmaydigan
-    natijalarni berishi mumkin.
   wwctGUITranslationButton: Tarjimani boshlash
   wwctGUIAutoDetectButton: Manba tilini avtomatik aniqlash
   wwcUpdaterUpToDate: WorldwideChat dolzarb!
@@ -93,7 +85,6 @@ Messages:
   wwcPlayerNotFound: O'yinchi % Men topilmadi.
   wwcUpdaterOutOfDateChat: WorldwideChat eskirgan. Iltimos, so'nggi versiyaga yangilang.
   wwcConfigConversationRateLimitSuccess: Rate chegarasi muvaffaqiyatli belgilangan.
-  wwcConfigConversationWatsonURLSuccess: Watson URL muvaffaqiyatli o'rnatildi.
   wwctbPlayerNotFound: '{0} o''yinchi topilmadi yoki faol tarjimon emas.'
   wwcConfigConversationTranslationCacheSuccess: Tarjima kesh chegarasi muvaffaqiyatli
     o'rnatildi.
@@ -112,7 +103,6 @@ Messages:
     sukut qilish...
   wwcSignTranslateStart: Tarjima maqsad belgisi...
   wwcConfigGUIChatSettings: Chat konfiguratsiyasi
-  wwcConfigGUIWatsonURLButton: Watson xizmati URL manzilini o'zgartirish
   wwcConfigConversationUpdateCheckerSuccess: Tekshiruvchining kechikishini yangilash
     muvaffaqiyatli o'rnatildi.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat {0} dan {1} ga tarjima
@@ -130,7 +120,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tarjimalar: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon maxfiy kaliti muvaffaqiyatli
     o'rnatildi.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API kaliti muvaffaqiyatli o'rnatildi.
   wwcRateLimit: Sizning tarjimalaringiz darajasi cheklangan. Iltimos, boshqa {0} soniya
     kuting.
   wwcConfigCacheEnabled: Tarjimon keshi yoqilgan va {0} limiti oʻrnatilgan.
@@ -191,7 +180,6 @@ Messages:
   wwcInvalidTranslator: Tarjimon sozlamalari noto'g'ri. Iltimos, ushbu plaginni ishlatish
     uchun config.yml yoki /wwcc bilan tuzating.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguratsiya'
-  wwcConfigGUIWatsonButton: Uotson
   wwcServerReloadWarning: WorldwideChat /qayta yuklashdan foydalanishni cheklamaydi.
     Iltimos, ehtiyotkorlik bilan davom eting.
   wwcConfigEnabledDebugMode: DEBUG rejimi yoqilgan. Agar siz ishlab chiquvchi yoki
@@ -306,10 +294,7 @@ Messages:
     O'zgarish kuchga kirishi uchun qayta yuklang.
   wwcConfigYAMLDefault: Ma'lumotlarni saqlash uchun YAMLga defaulted.
   wwcConfigGUISQLMenuButton: SQL sozlamalarini o'zgartirish
-  wwcConfigConversationWatsonTranslateToggleSuccess: Muvaffaqiyatli Watson Tarjima.
-    O'zgarish kuchga kirishi uchun qayta yuklang.
   wwcConfigGUIToggleGoogleTranslateButton: Google Tarjima Toggle
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tarjima
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Tarjima
   wwcConfigGUIStorageSettings: Saqlash konfiguratsiyasi
   wwcConfigConversationAmazonTranslateToggleSuccess: Muvaffaqiyatli Amazon Tarjima.
@@ -665,9 +650,6 @@ Messages:
     belgilang.
   wwcConfigVaultSupportInvalid: Config.yml da yaroqsiz saqlovni qo'llab-quvvatlash
     o'rnatilgan. To'g'ri deb hisoblash...
-  wwcWatsonDeprecation: Watson eskirgan va endi IBM tomonidan qo'llab-quvvatlanmaydi.
-    Iltimos, kommutatsiyani ko'rib chiqing, chunki uni qo'llab-quvvatlash keyingi
-    yangilanishda olib tashlanadi.
   wwcConfigForceChatChannelEnabled: Barcha tarjimalar paytida alohida tarjima kanali
     majbur qilinadi.
   wwcConfigConversationSeparateChatChannelForceSuccess: Muvaffaqiyatli ravishda alohida
@@ -682,7 +664,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Alohida kanal belgisini o'zgartiring
   wwcConfigConversationChatFormatSuccess: Sizning formatingiz muvaffaqiyatli o'zgartirildi.
   wwcConfigGUISeparateChatChannelForceButton: Ajratish kanalini majburlang
-  wwcOrigHover: 'Asl xabar: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: hover matn sifatida tarjima
     biriktirilgan original chiquvchi chat muvaffaqiyatli togged.
   wwcConfigGUISendOutgoingHoverTextChatButton: Asl chiquvchi xabarlarni hover matni
@@ -708,17 +689,44 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Qora ro'yxatni yoqish
   wwcConfigConversationBlacklistDeletionSuccess: Atamani muvaffaqiyatli o'chirib tashladi.
   wwcConfigGUIChatChannelSettings: Chat kanalining konfiguratsiyasi
-  wwcConfigGUIChatBlacklistSuccess: Qora ro'yxatni muvaffaqiyatli almashtirdi.
   wwcConfigGUIChatMessagesBlacklistNewButton: Yangi so'zni qo'shish
   wwcConfigGUIChatChannelButton: Kanal sozlamalarini tarjima qiling
   wwcConfigGUIBlacklistMessagesModify: Muddatni o'zgartirish ({0})
   wwcConfigChatChannelFormatInvalid: Yaroqsiz kanal formati aniqlandi. Standart {0}
     ga sozlash...
-  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
-    {0}. Siz o''z ichiga olishi mumkin bo''lgan asl qiymati tan olingan argumentlarimiz:
-    {1}. Agar sizda PlaceholderAPI mavjud bo''lsa, o''sha o''zgaruvchilar uning o''rniga
-    foizlar (%) bilan o''ralganligiga ishonch hosil qiling. Orqaga qaytish uchun 0
-    yozing.'
   wwcConfigGUIModifyBlacklistSettings: Qora ro'yxatni o'zgartirish
   wwcConfigGUINextPageButton: Keyingi sahifa
+  wwcConfigChatChannelHoverFormatInvalid: Yaroqsiz hover formati aniqlandi. Standart
+    {0} ga sozlash...
+  wwcOrigHover: Asl xabar
+  wwctGUIMainMenuPlayer: Tarjima {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat aniqladi va sizning Minecraft lokalizatsiyasini
+    aks ettiradi ({0}). Batafsil ma'lumot uchun {1} yozing.
+  wwcConfigBadYaml: 'Yaroqsiz YAML fayli aniqlandi: {0}. Iltimos, ushbu faylni tuzatishga
+    harakat qiling yoki u o''chirilishi mumkin!'
+  wwcConfigConversationChatBlacklistSuccess: Qora ro'yxatni muvaffaqiyatli almashtirdi.
+  wwcConfigConversationChannelHoverFormatInput: 'Tarjima hover matnining joriy formati
+    {0}. Mumkin standart argumentlar: {1}. Agar sizda PlaceholderAPI mavjud bo''lsa,
+    o''sha o''zgaruvchilar uning o''rniga foizlar (%) bilan o''ralganligiga ishonch
+    hosil qiling. Orqaga qaytish uchun 0 yozing.'
+  wwcConfigConversationChannelFormatInput: 'Alohida chat kanalining joriy formati
+    {0}. Mumkin standart argumentlar: {1}. Agar sizda PlaceholderAPI mavjud bo''lsa,
+    o''sha o''zgaruvchilar uning o''rniga foizlar (%) bilan o''ralganligiga ishonch
+    hosil qiling. Orqaga qaytish uchun 0 yozing.'
+  wwcConfigConversationChatHoverFormatSuccess: Sizning hover formatingiz muvaffaqiyatli
+    o'zgartirildi.
+  wwcConfigConversationLocalizeSyncSuccess: Foydalanuvchining lokalizatsiyasini sinxronlashtirishni
+    muvaffaqiyatli o'tkazdi
+  wwcConfigGUILocalizeSyncButton: Foydalanuvchini lokalizatsiya qilish
+  wwcConfigSyncUserLocalInvalid: Foydalanuvchini lokalizatsiya sozlamasini sinxronlashtirish
+    To'g'ri deb hisoblash...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Hover matn formatini o'zgartiring
+  wwcdResetWarn: 'OGOHLANTIRISH: Ushbu buyruq yozuvlarni va faol tarjimonlaringizni
+    o''z ichiga olgan barcha ma''lumotlarni butunlay qayta tiklaydi. NIMA QILAYOTGANINGIZNI
+    BILMAGUNINGIZCHA, USHBU BUYRUQNI ISHGA TUSHIRMANG: {0}'
+  wwcdResetNotif: WorldwideChat qayta tiklandi. Qayta yuklash...
+  wwcdResetNotifError: Barcha ma'lumotlar muvaffaqiyatli o'chirilmadi. Ma'lumotlar
+    bazangizga ulanganmisiz?
+  colorCodeWarning: Rang kodlaridan foydalanish sizga oldindan aytib bo'lmaydigan
+    natijalar berishi mumkin.
 

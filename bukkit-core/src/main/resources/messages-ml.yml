@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: നിങ്ങളുടെ ക്രെഡൻഷ്യലുകളും ഫയർവാളും ശരിയായി ക്രമീകരിച്ചിട്ടുണ്ടെന്ന്
     ഉറപ്പുവരുത്തുക!
   wwcConfigEnabledbStats: പ്രാപ്തമാക്കി ബ്സ്തത്സ്.
-  wwctGUIMainMenuPlayer: '{0} ന്റെ പരിഭാഷാ മെനു'
   wwctGUIBookButton: പുസ്തകം വിവർത്തനം ടോഗിൾ ചെയ്യുക
   wwcLangDetected: ഭാഷ {0} കണ്ടെത്തി.
   wwcBookTranslateStart: ലക്ഷ്യം പുസ്തകം വിവർത്തനം...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.
   wwcConfigGUIAmazonTranslateRegionButton: ആമസോൺ റീജിയൺ മാറ്റുക
   wwcConfigConversationLangInvalid: അസാധുവായ ഭാഷാ കോഡ്!
-  wwcConfigGUIWatsonAPIKeyButton: വാട്സൺ എപിഐ കീ മാറ്റുക
   wwcEnabled: പ്രാപ്തമാക്കി ചാറ്റ് പതിപ്പ് {0}.
   wwctbOnSender: പുസ്തകം വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. അത് വിവർത്തനം ഒരു പുസ്തകം
     കൈവശമുള്ള വലത്-ക്ലിക്ക്!
@@ -63,8 +61,6 @@ Messages:
   wwctsOffTarget: സൈൻ വിവർത്തനം അപ്രാപ്തമാക്കി {0}.
   wwcUpdaterConnectionFailed: സാമൂഹികം ഏറ്റവും പുതിയ അപ്ഡേറ്റുകൾ പരിശോധിക്കാൻ കഴിയുന്നില്ല.
   watsonNotFoundExceptionNotification: നിങ്ങളുടെ ഇൻപുട്ട് ഇനി വിവർത്തനം ചെയ്യാൻ കഴിയുന്നില്ല.
-  wwcConfigConversationWatsonAPIKeyInput: നിലവിലെ API കീ {0} ആണ്, ദയവായി വാട്സണിലെ
-    ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwctGUIStopButton: വിവർത്തനം നിർത്തുക
   wwcgTranslationStopped: ആഗോള ചാറ്റ് വിവർത്തനം നിർത്തി.
   wwcUpdaterFutureDate: ഛത് ഈ ഉദാഹരണത്തിന് പുതിയ പൊതു ഒരു വലിയ പതിപ്പ് ഉണ്ട്.
@@ -74,13 +70,9 @@ Messages:
     ദൈർഘ്യമേറിയതാണ്. പരിഭാഷ:'
   wwctsOnTarget: സൈൻ വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി {0}.
   wwcConfigCacheDisabled: പരിഭാഷകൻ കാഷെ അപ്രാപ്തമാക്കി.
-  wwcConfigConversationWatsonURLInput: നിലവിലെ URL {0} ആണ് വാട്സണിലെ ഒരു സേവന URL
-    ഇൻപുട്ട് ചെയ്യുക അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcBookDone: പുസ്തകം വിജയകരമായി വിവർത്തനം ചെയ്തു.
   wwctsOnSender: സൈൻ വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. ഇത് വിവർത്തനം ചെയ്യുന്നതിന് ഒരു
     ചിഹ്നത്തിൽ വലത്-ക്ലിക്കുചെയ്യുക!
-  watsonColorCodeWarning: വർണ്ണ കോഡുകൾ ഉപയോഗിക്കുന്നത് നിങ്ങൾക്ക് പ്രവചനാതീതമായ ഫലങ്ങൾ
-    നൽകിയേക്കാം.
   wwctGUITranslationButton: വിവർത്തനം ആരംഭിക്കുക
   wwctGUIAutoDetectButton: ഉറവിട ഭാഷ യാന്ത്രികമായി കണ്ടെത്തുക
   wwcUpdaterUpToDate: ചാറ്റ് കാലികമാണ്!
@@ -92,7 +84,6 @@ Messages:
   wwcPlayerNotFound: കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.
   wwcUpdaterOutOfDateChat: ഛത് കാലഹരണപ്പെട്ടതാണ്. പുതിയ പതിപ്പിലേക്ക് അപ്ഡേറ്റ് ചെയ്യുക.
   wwcConfigConversationRateLimitSuccess: നിരക്ക് പരിധി വിജയകരമായി വെച്ചു.
-  wwcConfigConversationWatsonURLSuccess: വാട്സൺ URL വിജയകരമായി സജ്ജമാക്കി.
   wwctbPlayerNotFound: കളിക്കാരന് {0} കണ്ടെത്തിയില്ല, അല്ലെങ്കിൽ ഒരു സജീവ പരിഭാഷകനല്ല.
   wwcConfigConversationTranslationCacheSuccess: വിവർത്തന കാഷെ പരിധി വിജയകരമായി സജ്ജമാക്കി.
   wwctInvalidArgs: നൽകിയ അസാധുവായ വാദങ്ങൾ!
@@ -111,7 +102,6 @@ Messages:
     വരെ സ്ഥിരസ്ഥിതിയായി...
   wwcSignTranslateStart: ടാർഗെറ്റ് ചിഹ്നം വിവർത്തനം ചെയ്യുന്നു...
   wwcConfigGUIChatSettings: ചാറ്റ് കോൺഫിഗറേഷൻ
-  wwcConfigGUIWatsonURLButton: വാട്സൺ സേവന URL മാറ്റുക
   wwcConfigConversationUpdateCheckerSuccess: അപ്ഡേറ്റ് ചെക്കർ കാലതാമസം വിജയകരമായി
     സജ്ജമാക്കി.
   wwcGlobalOnJoinTranslationNotificationSourceLang: ആഗോള ചാറ്റിൽ {0} മുതൽ {1} ലേക്ക്
@@ -131,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'പരിഭാഷകൾ ശ്രമിച്ചു: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ആമസോൺ രഹസ്യ കീ വിജയകരമായി
     വെച്ചു.
-  wwcConfigConversationWatsonAPIKeySuccess: വാട്സൺ എപിഐ കീ വിജയകരമായി വെച്ചു.
   wwcRateLimit: നിങ്ങളുടെ വിവർത്തനങ്ങൾ നിരക്ക് പരിമിതമാണ്. മറ്റൊരിൽ {0} സെക്കൻഡ് കാത്തിരിക്കുക.
   wwcConfigCacheEnabled: പരിഭാഷകൻ കാഷെ പ്രാപ്തമാക്കി, {0} എന്ന പരിധിയിലേക്ക് സജ്ജമാക്കി.
   wwctGUIExistingTranslationButton: ഇപ്പോഴത്തെ പരിഭാഷാ സെഷൻ
@@ -190,7 +179,6 @@ Messages:
   wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
   wwcConfigGUIEachTranslatorSettings: '{0} കോൺഫിഗറേഷൻ'
-  wwcConfigGUIWatsonButton: വാട്സൺ
   wwcServerReloadWarning: ഛത്/റീലോഡ് ഉപയോഗം ചൊംദൊനെ ഇല്ല. ദയവായി ജാഗ്രതയോടെ തുടരുക.
   wwcConfigEnabledDebugMode: പ്രവർത്തനക്ഷമമാക്കി ഡീബഗ് മോഡ്. നിങ്ങൾ ഒരു ഡവലപ്പർ അല്ലെങ്കിൽ
     ട്രബിൾഷൂട്ടർ ആണെങ്കിൽ, നിങ്ങൾ ഇത് ഓഫ് ചെയ്യണം.
@@ -306,10 +294,7 @@ Messages:
     ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
   wwcConfigYAMLDefault: ഡാറ്റ സംഭരണത്തിനായി YAML- ലേക്ക് സ്ഥിരത.
   wwcConfigGUISQLMenuButton: SQL ക്രമീകരണങ്ങൾ മാറ്റുക
-  wwcConfigConversationWatsonTranslateToggleSuccess: വാട്സൺ വിവർത്തനം വിജയകരമായി ടോഗിൾ
-    ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
   wwcConfigGUIToggleGoogleTranslateButton: Google വിവർത്തനം ടോഗിൾ ചെയ്യുക
-  wwcConfigGUIToggleWatsonTranslateButton: വാട്സൺ വിവർത്തനം ടോഗിൾ
   wwcConfigGUIToggleAmazonTranslateButton: ആമസോൺ വിവർത്തനം ടോഗിൾ
   wwcConfigGUIStorageSettings: സ്റ്റോറേജ് കോൺഫിഗറേഷൻ
   wwcConfigConversationAmazonTranslateToggleSuccess: ആമസോൺ വിവർത്തനം വിജയകരമായി ടോഗിൾ
@@ -656,8 +641,6 @@ Messages:
     സജ്ജമാക്കുക.
   wwcConfigVaultSupportInvalid: config.yml- ൽ അസാധുവായ നിലവറ പിന്തുണ സജ്ജീകരിച്ചിരിക്കുന്നു.
     സത്യമായി സ്ഥിരമായി മാറുന്നു...
-  wwcWatsonDeprecation: വാട്സണെ വിലകുറച്ചുകഴിഞ്ഞു, ഇനി ഐബിഎം പിന്തുണയ്ക്കില്ല. അടുത്ത
-    അപ്ഡേറ്റിൽ അതിനുള്ള പിന്തുണ നീക്കംചെയ്യപ്പെടുന്നതിനാൽ ദയവായി മാറുന്നത് പരിഗണിക്കുക.
   wwcConfigForceChatChannelEnabled: എല്ലാ വിവർത്തനങ്ങളിലും ഒരു പ്രത്യേക വിവർത്തന ചാനൽ
     നിർബന്ധിതമാകും.
   wwcConfigConversationSeparateChatChannelForceSuccess: പ്രത്യേക ചാനൽ നിർബന്ധമാക്കി
@@ -672,7 +655,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: പ്രത്യേക ചാനൽ ഐക്കൺ മാറ്റുക
   wwcConfigConversationChatFormatSuccess: നിങ്ങളുടെ ഫോർമാറ്റ് വിജയകരമായി മാറ്റിക്കഴിഞ്ഞു.
   wwcConfigGUISeparateChatChannelForceButton: പ്രത്യേക ചാനൽ ഫോഴ്സ് ചെയ്യുക
-  wwcOrigHover: 'യഥാർത്ഥ സന്ദേശം: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: യഥാർത്ഥ ഔട്ട്ഗോയിംഗ് ചാറ്റ്
     വിജയകരമായി ടോഗ്ലെദ് ഹോവർ ടെക്സ്റ്റ് പോലെ വിവർത്തനം അറ്റാച്ച്
   wwcConfigGUISendOutgoingHoverTextChatButton: ഹോവർ ടെക്സ്റ്റായി യഥാർത്ഥ ഔട്ട്ഗോയിംഗ്
@@ -698,16 +680,43 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ബ്ലാക്ക്ലിസ്റ്റ് പ്രവർത്തനക്ഷമമാക്കുക
   wwcConfigConversationBlacklistDeletionSuccess: ഈ പദം വിജയകരമായി ഇല്ലാതാക്കി.
   wwcConfigGUIChatChannelSettings: ചാറ്റ് ചാനൽ കോൺഫിഗറേഷൻ
-  wwcConfigGUIChatBlacklistSuccess: കരിമ്പട്ടികയിൽ വിജയകരമായി മാറ്റിസ്ഥാപിച്ചു.
   wwcConfigGUIChatMessagesBlacklistNewButton: പുതിയ വാക്ക് ചേർക്കുക
   wwcConfigGUIChatChannelButton: ചാനൽ ക്രമീകരണങ്ങൾ വിവർത്തനം ചെയ്യുക
   wwcConfigGUIBlacklistMessagesModify: കാലാവധി പരിഷ്ക്കരിക്കുക ({0})
   wwcConfigChatChannelFormatInvalid: അസാധുവായ ചാനൽ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
     ഡിഫാൾട്ട് ചെയ്യുന്നു...
-  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
-    {0} ആണ്. നിങ്ങൾക്ക് ഉൾപ്പെടുത്താൻ കഴിയുന്ന ഞങ്ങളുടെ സ്ഥിരസ്ഥിതി അംഗീകൃത വാദങ്ങൾ:
-    {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന്
-    ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
   wwcConfigGUIModifyBlacklistSettings: ബ്ലാക്ക്ലിസ്റ്റ് പരിഷ്ക്കരിക്കുക
   wwcConfigGUINextPageButton: അടുത്ത പേജ്
+  wwcConfigChatChannelHoverFormatInvalid: അസാധുവായ ഹോവർ ഫോർമാറ്റ് കണ്ടെത്തി. {0} ലേക്ക്
+    ഡിഫാൾട്ട് ചെയ്യുന്നു...
+  wwcOrigHover: യഥാർത്ഥ സന്ദേശം
+  wwctGUIMainMenuPlayer: '{0} വിവർത്തനം ചെയ്യുക'
+  wwcOnJoinSetLocaleSuccess: WorldwideChat കണ്ടെത്തുകയും നിങ്ങളുടെ Minecraft പ്രാദേശികവൽക്കരണം
+    പ്രതിഫലിപ്പിക്കുകയും ചെയ്യും ({0}). കൂടുതൽ വിവരങ്ങൾക്ക് {1} എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigBadYaml: 'അസാധുവായ YAML ഫയൽ കണ്ടെത്തി: {0}. ദയവായി ഈ ഫയൽ പരിഹരിക്കാൻ ശ്രമിക്കുക
+    അല്ലെങ്കിൽ അത് ഇല്ലാതാക്കപ്പെടാം!'
+  wwcConfigConversationChatBlacklistSuccess: കരിമ്പട്ടികയിൽ വിജയകരമായി മാറ്റിസ്ഥാപിച്ചു.
+  wwcConfigConversationChannelHoverFormatInput: 'വിവർത്തന ഹോവർ ടെക്സ്റ്റിനുള്ള നിലവിലെ
+    ഫോർമാറ്റ് {0} ആണ്. സാധ്യമായ സ്ഥിരസ്ഥിതി വാദങ്ങൾ: {1}. നിങ്ങൾക്ക് PlaceholderAPI
+    ഉണ്ടെങ്കിൽ, ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക (%)
+    പകരം. തിരിച്ചു പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigConversationChannelFormatInput: 'പ്രത്യേക ചാറ്റ് ചാനലിന്റെ നിലവിലെ ഫോർമാറ്റ്
+    {0} ആണ്. സാധ്യമായ സ്ഥിരസ്ഥിതി വാദങ്ങൾ: {1}. നിങ്ങൾക്ക് PlaceholderAPI ഉണ്ടെങ്കിൽ,
+    ആ വേരിയബിളുകൾ ശതമാനത്താൽ ചുറ്റപ്പെട്ടിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക (%) പകരം. തിരിച്ചു
+    പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigConversationChatHoverFormatSuccess: നിങ്ങളുടെ ഹോവർ ഫോർമാറ്റ് വിജയകരമായി
+    മാറ്റിയിരിക്കുന്നു.
+  wwcConfigConversationLocalizeSyncSuccess: ഉപയോക്തൃ പ്രാദേശികവൽക്കരണം സമന്വയിപ്പിച്ച്
+    വിജയകരമായി ടോഗി
+  wwcConfigGUILocalizeSyncButton: ഉപയോക്തൃ പ്രാദേശികവൽക്കരണം
+  wwcConfigSyncUserLocalInvalid: ഉപയോക്തൃ പ്രാദേശികവത്കരണ ക്രമീകരണം സമന്വയിപ്പിക്കുക
+    സത്യമായി സ്ഥിരമായി മാറുന്നു...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: ഹോവർ ടെക്സ്റ്റ് ഫോർമാറ്റ് മാറ്റുക
+  wwcdResetWarn: 'മുന്നറിയിപ്പ്: ഈ കമാൻഡ് റെക്കോർഡുകളും നിങ്ങളുടെ സജീവ വിവർത്തകരും
+    ഉൾപ്പെടെയുള്ള എല്ലാ ഡാറ്റയും പൂർണ്ണമായും പുനഃസജ്ജമാക്കും. നിങ്ങൾ എന്താണ് ചെയ്യുന്നതെന്ന്
+    അറിയാതിരുന്നില്ലെങ്കിൽ ഈ കമാൻഡ് പ്രവർത്തിപ്പിക്കരുത്: {0}'
+  wwcdResetNotif: വേൾഡ്വൈഡ്കാറ്റ് പുനഃസജ്ജമാക്കി. വീണ്ടും ലോഡുചെയ്യുന്നു...
+  wwcdResetNotifError: എല്ലാ ഡാറ്റയും വിജയകരമായി തുടച്ചുനീക്കിയില്ല. നിങ്ങളുടെ ഡാറ്റാബേസിലേക്ക്
+    കണക്റ്റുചെയ്തിട്ടുണ്ടോ?
+  colorCodeWarning: കളർ കോഡുകൾ ഉപയോഗിക്കുന്നത് നിങ്ങൾക്ക് പ്രവചനാതീതമായ ഫലങ്ങൾ നൽകിയേക്കാം.
 

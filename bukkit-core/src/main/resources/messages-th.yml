@@ -16,7 +16,6 @@ Messages:
   wwctGUINewTranslationSource: เลือกภาษาต้นทาง
   wwcConfigConnectionFailed: ล้มเหลวในการเชื่อมต่อกับ {0} โปรดตรวจสอบให้แน่ใจว่าข้อมูลประจำตัวและไฟร์วอลล์ของคุณได้รับการกำหนดค่าอย่างถูกต้อง!
   wwcConfigEnabledbStats: เปิดใช้งาน bStats
-  wwctGUIMainMenuPlayer: เมนูการแปลของ {0}
   wwctGUIBookButton: สลับการแปลหนังสือ
   wwcLangDetected: ตรวจพบภาษา {0}
   wwcBookTranslateStart: แปลหนังสือเป้าหมาย...
@@ -45,7 +44,6 @@ Messages:
   wwctPlayerNotFound: ไม่พบผู้เล่น %ฉันไม่พบ
   wwcConfigGUIAmazonTranslateRegionButton: เปลี่ยนภูมิภาคอเมซอน
   wwcConfigConversationLangInvalid: รหัสภาษาไม่ถูกต้อง!
-  wwcConfigGUIWatsonAPIKeyButton: เปลี่ยนคีย์ API วัตสัน
   wwcEnabled: เปิดใช้งานเวอร์ชันของ WorldwideChat {0}
   wwctbOnSender: เปิดใช้งานการแปลหนังสือคลิกขวาขณะถือหนังสือเพื่อแปล!
   wwcListenersInitialized: ผู้ฟังที่เริ่มต้นแล้ว
@@ -54,8 +52,6 @@ Messages:
   wwctsOffTarget: ปิดการแปลเครื่องหมายสำหรับ {0}
   wwcUpdaterConnectionFailed: ไม่สามารถตรวจสอบการอัปเดตล่าสุดบน Github
   watsonNotFoundExceptionNotification: ไม่สามารถแปลข้อมูลของคุณเพิ่มเติมได้
-  wwcConfigConversationWatsonAPIKeyInput: คีย์ API ปัจจุบันคือ {0} โปรดป้อนคีย์ API
-    สำหรับวัตสัน หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwctGUIStopButton: หยุดการแปล
   wwcgTranslationStopped: การแปลการแชททั่วโลกได้หยุดลง
   wwcUpdaterFutureDate: อินสแตนซ์ของ WorldwideChat นี้มีรุ่นที่มากกว่าหนึ่งสาธารณะล่าสุด
@@ -64,11 +60,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'เครื่องหมายเป้าหมายถูกลบ หรือคำแปลยาวเกินไปการแปล:'
   wwctsOnTarget: เปิดใช้งานการแปลเครื่องหมายสำหรับ {0}
   wwcConfigCacheDisabled: ปิดการใช้งานแคชนักแปล
-  wwcConfigConversationWatsonURLInput: URL ปัจจุบันคือ {0} โปรดป้อน URL บริการสำหรับวัตสัน
-    หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwcBookDone: หนังสือแปลเรียบร้อยแล้ว
   wwctsOnSender: เปิดใช้งานการแปลด้วยลายเซ็นคลิกขวาที่ป้ายเพื่อแปล!
-  watsonColorCodeWarning: การใช้รหัสสีอาจทำให้ผลลัพธ์ที่คาดเดาไม่ได้
   wwctGUITranslationButton: เริ่มแปล
   wwctGUIAutoDetectButton: ตรวจหาภาษาต้นทางโดยอัตโนมัติ
   wwcUpdaterUpToDate: WorldwideChat เป็นวันที่แล้ว!
@@ -80,7 +73,6 @@ Messages:
   wwcPlayerNotFound: ไม่พบผู้เล่น %ฉันไม่พบ
   wwcUpdaterOutOfDateChat: WorldwideChat ล้าสมัยแล้วโปรดอัปเดตเป็นเวอร์ชันล่าสุด
   wwcConfigConversationRateLimitSuccess: กำหนดวงเงินอัตราเรียบร้อยแล้ว
-  wwcConfigConversationWatsonURLSuccess: ตั้งค่า URL วัตสันเรียบร้อยแล้ว
   wwctbPlayerNotFound: ไม่พบผู้เล่น {0} หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่
   wwcConfigConversationTranslationCacheSuccess: วงเงินแคชแปลตั้งค่าเรียบร้อยแล้ว
   wwctInvalidArgs: ข้อโต้แย้งที่ไม่ถูกต้องให้!
@@ -98,7 +90,6 @@ Messages:
     0 วินาที...
   wwcSignTranslateStart: แปลป้ายเป้าหมาย...
   wwcConfigGUIChatSettings: การกำหนดค่าการแชท
-  wwcConfigGUIWatsonURLButton: เปลี่ยน URL ของบริการวัตสัน
   wwcConfigConversationUpdateCheckerSuccess: ปรับปรุงการหน่วงเวลาตรวจสอบการตั้งค่าเรียบร้อยแล้ว
   wwcGlobalOnJoinTranslationNotificationSourceLang: การสนทนาทั่วโลกกำลังถูกแปลจาก
     {0} เป็น {1}
@@ -113,7 +104,6 @@ Messages:
   wwcVersion: เวิลด์ไวด์แชท, เวอร์ชั่น
   wwcsAttemptedTranslations: 'พยายามแปล: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ชุดคีย์ลับ Amazon เรียบร้อยแล้ว
-  wwcConfigConversationWatsonAPIKeySuccess: ชุดคีย์ Watson API เรียบร้อยแล้ว
   wwcRateLimit: การแปลของคุณมีอัตราที่ จำกัด.กรุณารออีก {0} วินาที
   wwcConfigCacheEnabled: แคช Translator เปิดใช้งานและตั้งค่าเป็นขีด จำกัด ของ {0}
   wwctGUIExistingTranslationButton: เขียนทับเซสชันการแปลปัจจุบัน
@@ -166,7 +156,6 @@ Messages:
   wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
     /wwcc เพื่อใช้ปลั๊กอินนี้
   wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก {0}
-  wwcConfigGUIWatsonButton: วัตสัน
   wwcServerReloadWarning: WorldwideChat ไม่ให้อำนาจการใช้งาน/โหลดซ้ำโปรดดำเนินการด้วยความระมัดระวัง
   wwcConfigEnabledDebugMode: เปิดใช้งานโหมดดีบักหากคุณไม่ใช่นักพัฒนาซอฟต์แวร์หรือตัวแก้ไขปัญหา
     คุณควรปิดตัวเลือกนี้
@@ -267,9 +256,7 @@ Messages:
   wwcConfigConversationGoogleTranslateToggleSuccess: สับ Google แปลภาษาได้สำเร็จโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
   wwcConfigYAMLDefault: ผิดนัดที่ YAML สำหรับการจัดเก็บข้อมูล
   wwcConfigGUISQLMenuButton: เปลี่ยนการตั้งค่า SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: ประสบความสำเร็จในการเปลี่ยนวัตสันแปลภาษาโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
   wwcConfigGUIToggleGoogleTranslateButton: สลับ กูเกิ้ล แปลภาษา
-  wwcConfigGUIToggleWatsonTranslateButton: สลับวัตสันแปล
   wwcConfigGUIToggleAmazonTranslateButton: สลับอเมซอนแปล
   wwcConfigGUIStorageSettings: การกำหนดค่าการจัดเก็บข้อมูล
   wwcConfigConversationAmazonTranslateToggleSuccess: ประสบความสำเร็จในการเปลี่ยนอเมซอนแปลโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
@@ -552,7 +539,6 @@ Messages:
   wwcConfigConversationChatPriorityBadInput: อินพุตลำดับความสำคัญในการแชทไม่ดี!โปรดลองอีกครั้ง
   wwcConfigConversationChatPrioritySuccess: ตั้งค่าลำดับความสำคัญของกิจกรรมแชทของคุณเรียบร้อยแล้ว
   wwcConfigVaultSupportInvalid: ตั้งค่าการสนับสนุนห้องเก็บข้อมูลที่ไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็นจริง...
-  wwcWatsonDeprecation: Watson ถูกยกเลิกและไม่ได้รับการสนับสนุนจาก IBM อีกต่อไปโปรดพิจารณาสลับเนื่องจากการสนับสนุนจะถูกลบออกในการอัปเดตถัดไป
   wwcConfigForceChatChannelEnabled: ช่องการแปลแยกต่างหากจะถูกบังคับในระหว่างการแปลทั้งหมด
   wwcConfigConversationSeparateChatChannelForceSuccess: สลับบังคับช่องแยกได้สำเร็จ
   wwcConfigConversationChannelIconInput: ไอคอนปัจจุบันสำหรับช่องการแปลแยกต่างหากคือ
@@ -564,7 +550,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: เปลี่ยนไอคอนช่องแยกต่างหาก
   wwcConfigConversationChatFormatSuccess: รูปแบบของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
   wwcConfigGUISeparateChatChannelForceButton: บังคับช่องแยกต่างหาก
-  wwcOrigHover: 'ข้อความต้นฉบับ: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: การแชทขาออกต้นฉบับที่แนบมากับการแปลเป็นข้อความแบบเมาส์ถูกสลับเรียบร้อยแล้ว
   wwcConfigGUISendOutgoingHoverTextChatButton: เพิ่มข้อความขาออกต้นฉบับเป็นข้อความที่วางเมาส์
   wwcConfigPAPIInstalled: เปิดใช้งานการสนับสนุน PlaceholderAPI สำหรับรูปแบบการแชทของคุณ
@@ -582,15 +567,34 @@ Messages:
   wwcConfigGUIChatBlacklistButton: เปิดใช้งานบัญชีดำ
   wwcConfigConversationBlacklistDeletionSuccess: ลบคำเรียบร้อยแล้ว
   wwcConfigGUIChatChannelSettings: การกำหนดค่าช่องแชท
-  wwcConfigGUIChatBlacklistSuccess: สลับบัญชีดำเรียบร้อยแล้ว
   wwcConfigGUIChatMessagesBlacklistNewButton: เพิ่มคำใหม่
   wwcConfigGUIChatChannelButton: แปลการตั้งค่าช่อง
   wwcConfigGUIBlacklistMessagesModify: แก้ไขคำศัพท์ ({0})
   wwcConfigChatChannelFormatInvalid: ตรวจพบรูปแบบช่องไม่ถูกต้องค่าเริ่มต้นเป็น {0}...
-  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
-    {0}อาร์กิวเมนต์ที่ได้รับการยอมรับเริ่มต้นของเราซึ่งคุณสามารถรวมได้: {1}หากคุณมี
-    PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์ (%) แทนพิมพ์
-    0 เพื่อกลับไป'
   wwcConfigGUIModifyBlacklistSettings: แก้ไขบัญชีดำ
   wwcConfigGUINextPageButton: หน้าถัดไป
+  wwcConfigChatChannelHoverFormatInvalid: ตรวจพบรูปแบบการโฮเวอร์ที่ไม่ถูกต้องค่าเริ่มต้นเป็น
+    {0}...
+  wwcOrigHover: ข้อความต้นฉบับ
+  wwctGUIMainMenuPlayer: แปล {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ตรวจพบและจะสะท้อนให้เห็นถึงการแปลของ Minecraft
+    ของคุณ ({0})พิมพ์ {1} สำหรับรายละเอียดเพิ่มเติม
+  wwcConfigBadYaml: 'ตรวจพบไฟล์ YAML ไม่ถูกต้อง: {0}.โปรดพยายามแก้ไขไฟล์นี้มิฉะนั้นอาจถูกลบ!'
+  wwcConfigConversationChatBlacklistSuccess: สลับบัญชีดำเรียบร้อยแล้ว
+  wwcConfigConversationChannelHoverFormatInput: 'รูปแบบปัจจุบันสำหรับการแปลข้อความแบบโฮเวอร์คือ
+    {0}อาร์กิวเมนต์เริ่มต้นที่เป็นไปได้: {1}หากคุณมี PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์
+    (%) แทนพิมพ์ 0 เพื่อกลับไป'
+  wwcConfigConversationChannelFormatInput: 'รูปแบบปัจจุบันสำหรับช่องแชทแยกต่างหากคือ
+    {0}อาร์กิวเมนต์เริ่มต้นที่เป็นไปได้: {1}.หากคุณมี PlaceholderAPI ตรวจสอบให้แน่ใจว่าตัวแปรเหล่านั้นล้อมรอบด้วยเปอร์เซ็นต์
+    (%) แทนพิมพ์ 0 เพื่อกลับไป'
+  wwcConfigConversationChatHoverFormatSuccess: รูปแบบการเลื่อนของคุณได้รับการเปลี่ยนแปลงเรียบร้อยแล้ว
+  wwcConfigConversationLocalizeSyncSuccess: สลับการซิงค์การแปลผู้ใช้เรียบร้อยแล้ว
+  wwcConfigGUILocalizeSyncButton: ซิงค์การแปลของผู้ใช้
+  wwcConfigSyncUserLocalInvalid: การตั้งค่าการแปลของผู้ใช้ซิงค์ไม่ถูกต้องค่าเริ่มต้นเป็นจริง...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: เปลี่ยนรูปแบบข้อความ Hover
+  wwcdResetWarn: 'คำเตือน: คำสั่งนี้จะรีเซ็ตข้อมูลทั้งหมดรวมถึงระเบียนและนักแปลที่ใช้งานอยู่ของคุณอย่าเรียกใช้คำสั่งนี้เว้นแต่คุณจะรู้ว่าคุณกำลังทำอะไร:
+    {0}'
+  wwcdResetNotif: WorldwideChat ได้รับการรีเซ็ตกำลังโหลดใหม่...
+  wwcdResetNotifError: ข้อมูลทั้งหมดไม่ได้ถูกลบเรียบร้อยแล้วคุณเชื่อมต่อกับฐานข้อมูลของคุณหรือไม่?
+  colorCodeWarning: การใช้รหัสสีอาจให้ผลลัพธ์ที่คาดเดาไม่ได้
 

@@ -15,7 +15,6 @@ Messages:
   wwctGUINewTranslationSource: 選擇來源語言
   wwcConfigConnectionFailed: 無法連線到 {0}。請確定您的憑證和防火牆設定正確！
   wwcConfigEnabledbStats: 已啟用 bStats。
-  wwctGUIMainMenuPlayer: '{0} 的翻譯功能表'
   wwctGUIBookButton: 切換報表簿翻譯
   wwcLangDetected: 偵測到的語言 {0}。
   wwcBookTranslateStart: 正在正在翻譯目標報表簿...
@@ -43,7 +42,6 @@ Messages:
   wwctPlayerNotFound: 玩家 % 我找不到。
   wwcConfigGUIAmazonTranslateRegionButton: 變更亞馬遜區域
   wwcConfigConversationLangInvalid: 語言代碼無效！
-  wwcConfigGUIWatsonAPIKeyButton: 變更沃森 API 金鑰
   wwcEnabled: 已啟用全球聊天版本 {0}。
   wwctbOnSender: 已啟用書冊翻譯。在拿著書的同時按一下滑鼠右鍵即可翻譯它！
   wwcListenersInitialized: 初始化監聽程式。
@@ -52,8 +50,6 @@ Messages:
   wwctsOffTarget: '{0} 已停用簽署轉譯。'
   wwcUpdaterConnectionFailed: 無法在 Github 上檢查最新的更新。
   watsonNotFoundExceptionNotification: 無法進一步翻譯您的輸入。
-  wwcConfigConversationWatsonAPIKeyInput: 目前的 API 金鑰是 {0}。請輸入 Watson 的 API 金鑰，或輸入
-    0 返回。
   wwctGUIStopButton: 停止翻譯
   wwcgTranslationStopped: 全球聊天翻譯已停止。
   wwcUpdaterFutureDate: 這個 WorldwideChat 的執行個體比最新的公開版本還要大。
@@ -62,10 +58,8 @@ Messages:
   wwcSignDeletedOrTooLong: 目標符號已刪除或翻譯過長。翻譯：
   wwctsOnTarget: 已啟用 {0} 的簽署轉譯。
   wwcConfigCacheDisabled: 翻譯器快取已停用。
-  wwcConfigConversationWatsonURLInput: 目前的 URL 是 {0}。請輸入 Watson 的服務 URL，或輸入 0 返回。
   wwcBookDone: 書籍翻譯成功。
   wwctsOnSender: 已啟用簽署翻譯。在標誌上按一下滑鼠右鍵即可翻譯它！
-  watsonColorCodeWarning: 使用顏色代碼可能會給您無法預期的結果。
   wwctGUITranslationButton: 開始翻譯
   wwctGUIAutoDetectButton: 自動偵測來源語言
   wwcUpdaterUpToDate: 全球聊天是最新的！
@@ -77,7 +71,6 @@ Messages:
   wwcPlayerNotFound: 玩家 % 我找不到。
   wwcUpdaterOutOfDateChat: 「全球聊天」已過時。請更新至最新版本。
   wwcConfigConversationRateLimitSuccess: 成功設定匯率限制。
-  wwcConfigConversationWatsonURLSuccess: Watson 網址設定成功。
   wwctbPlayerNotFound: 玩家 {0} 不是找不到，或者不是活躍的翻譯者。
   wwcConfigConversationTranslationCacheSuccess: 翻譯快取限制設定成功。
   wwctInvalidArgs: 提供的引數無效！
@@ -94,7 +87,6 @@ Messages:
   wwcConfigRateLimitInvalid: 在配置.yml 中設置錯誤率限制。預設為 0 秒...
   wwcSignTranslateStart: 正在翻譯目標符號...
   wwcConfigGUIChatSettings: 聊天設定
-  wwcConfigGUIWatsonURLButton: 變更屈臣氏服務 URL
   wwcConfigConversationUpdateCheckerSuccess: 更新檢查程式延遲設定成功。
   wwcGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在從 {0} 翻譯到 {1}。
   wwcConfigGUITranslatorSettings: 轉換器組態
@@ -107,7 +99,6 @@ Messages:
   wwcVersion: 全球聊天室，版本
   wwcsAttemptedTranslations: 嘗試翻譯： {0}
   wwcConfigConversationAmazonTranslateSecretKeySuccess: 亞馬遜密鑰設置成功。
-  wwcConfigConversationWatsonAPIKeySuccess: 華生 API 金鑰集成功。
   wwcRateLimit: 您的翻譯費率有限。請稍候其他 {0} 秒。
   wwcConfigCacheEnabled: 已啟用翻譯器快取並設定為 {0} 的限制。
   wwctGUIExistingTranslationButton: 覆寫目前翻譯作業階段
@@ -153,7 +144,6 @@ Messages:
   wwctiOnTarget: 已啟用 {0} 的項目轉譯。
   wwcInvalidTranslator: 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '{0} 組態'
-  wwcConfigGUIWatsonButton: 華生
   wwcServerReloadWarning: 全球聊天不容許/重新加載的使用。請謹慎繼續進行。
   wwcConfigEnabledDebugMode: 啟用除錯模式。如果您不是開發人員或疑難排解員，您應該關閉此功能。
   wwcTranslatorErrorThresholdReached: 已達到錯誤臨界值。這個插件現在將重新加載，並禁用所有翻譯員。
@@ -240,9 +230,7 @@ Messages:
   wwcConfigConversationGoogleTranslateToggleSuccess: 已成功切換谷歌翻譯。重新加載以使更改生效。
   wwcConfigYAMLDefault: 默認為 YAML 進行數據存儲。
   wwcConfigGUISQLMenuButton: 更改 SQL 設置
-  wwcConfigConversationWatsonTranslateToggleSuccess: 已成功切換沃森翻譯。重新加載以使更改生效。
   wwcConfigGUIToggleGoogleTranslateButton: 切換谷歌翻譯
-  wwcConfigGUIToggleWatsonTranslateButton: 切換沃森翻譯
   wwcConfigGUIToggleAmazonTranslateButton: 切換亞馬遜翻譯
   wwcConfigGUIStorageSettings: 存儲配置
   wwcConfigConversationAmazonTranslateToggleSuccess: 已成功切換亞馬遜翻譯。重新加載以使更改生效。
@@ -483,7 +471,6 @@ Messages:
   wwcConfigConversationChatPriorityBadInput: 聊天優先輸入錯誤！請再試一次。
   wwcConfigConversationChatPrioritySuccess: 成功設定您的聊天事件優先順序。
   wwcConfigVaultSupportInvalid: 在 config.yml 中設置了無效的保管庫支持。預設為 true...
-  wwcWatsonDeprecation: Watson 已停用，並不再受 IBM 支援。請考慮切換，因為對其的支持將在下一次更新中刪除。
   wwcConfigForceChatChannelEnabled: 在所有翻譯期間，將強制使用單獨的翻譯通道。
   wwcConfigConversationSeparateChatChannelForceSuccess: 成功切換強制單獨通道。
   wwcConfigConversationChannelIconInput: 個別翻譯通道的目前圖示為 {0}。支援顏色代碼；請輸入 0 以返回。
@@ -493,7 +480,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: 更改單獨的頻道圖示
   wwcConfigConversationChatFormatSuccess: 您的格式已成功更改。
   wwcConfigGUISeparateChatChannelForceButton: 強制分離通道
-  wwcOrigHover: 原文留言:{0}
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: 當懸停文本成功切換時，附加到翻譯的原始外出聊天。
   wwcConfigGUISendOutgoingHoverTextChatButton: 將原始外寄郵件添加為懸停文本
   wwcConfigPAPIInstalled: 已針對您的聊天格式啟用位置持有者 API 支援。
@@ -510,13 +496,29 @@ Messages:
   wwcConfigGUIChatBlacklistButton: 啟用黑名單
   wwcConfigConversationBlacklistDeletionSuccess: 已成功刪除該字詞。
   wwcConfigGUIChatChannelSettings: 聊天頻道組態
-  wwcConfigGUIChatBlacklistSuccess: 成功切換黑名單。
   wwcConfigGUIChatMessagesBlacklistNewButton: 新增單詞
   wwcConfigGUIChatChannelButton: 翻譯頻道設定
   wwcConfigGUIBlacklistMessagesModify: 修改術語 ({0})
   wwcConfigChatChannelFormatInvalid: 偵測到無效的通道格式。預設為 {0}...
-  wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。您可以包含的預設識別引數：{1}。如果您有位置保持者
-    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
   wwcConfigGUIModifyBlacklistSettings: 修改黑名單
   wwcConfigGUINextPageButton: 下一頁
+  wwcConfigChatChannelHoverFormatInvalid: 偵測到無效的懸停格式。預設為 {0}...
+  wwcOrigHover: 原文訊息
+  wwctGUIMainMenuPlayer: 翻譯 {0}
+  wwcOnJoinSetLocaleSuccess: 全球微信已檢測到並將反映您的 Minecraft 本地化（{0}）。請輸入 {1} 以取得更多詳細資訊。
+  wwcConfigBadYaml: 偵測到無效的 YAML 檔案：{0}。請嘗試修復此文件，否則它可能會被刪除！
+  wwcConfigConversationChatBlacklistSuccess: 成功切換黑名單。
+  wwcConfigConversationChannelHoverFormatInput: 當前翻譯懸停文本的格式為 {0}。可能的預設引數：{1}。如果您有位置保持者
+    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
+  wwcConfigConversationChannelFormatInput: 個別聊天頻道的目前格式為 {0}。可能的預設引數：{1}。如果您有位置保持者
+    API，請確保這些變量被百分比（%）包圍。鍵入 0 以返回。
+  wwcConfigConversationChatHoverFormatSuccess: 您的懸停格式已成功更改。
+  wwcConfigConversationLocalizeSyncSuccess: 成功切換同步使用者本地化。
+  wwcConfigGUILocalizeSyncButton: 同步使用者本地化
+  wwcConfigSyncUserLocalInvalid: 同步使用者本地化設定無效。預設為 true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: 變更懸停文字格式
+  wwcdResetWarn: 警告：此命令將完全重置所有數據，包括記錄和您的活動翻譯器。除非您知道自己在做什麼，否則不要運行此命令：{0}
+  wwcdResetNotif: 全球微信已重設。重新載入...
+  wwcdResetNotifError: 並非所有資料都已成功清除。您是否已連接到您的數據庫？
+  colorCodeWarning: 使用顏色代碼可能會給您不可預測的結果。
 

@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Methu cysylltu â {0} Gwnewch yn siŵr bod eich cymwysterau
     a'ch wal dân wedi eu ffurfweddu'n gywir!
   wwcConfigEnabledbStats: bStats galluogi.
-  wwctGUIMainMenuPlayer: Cyfieithiad Dewislen o {0}
   wwctGUIBookButton: Toggle Cyfieithu Llyfr
   wwcLangDetected: Iaith {0} canfod.
   wwcBookTranslateStart: Cyfieithu llyfr targed...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Chwaraewr {0} ddim dod o hyd.
   wwcConfigGUIAmazonTranslateRegionButton: Newid Rhanbarth Amazon
   wwcConfigConversationLangInvalid: Cod iaith annilys!
-  wwcConfigGUIWatsonAPIKeyButton: Newid Watson API Allweddol
   wwcEnabled: Galluogwyd fersiwn WorldwideChat {0}.
   wwctbOnSender: Cyfieithu llyfr wedi'i alluogi. Cliciwch y botwm dde wrth ddal llyfr
     i'w gyfieithu!
@@ -63,8 +61,6 @@ Messages:
   wwctsOffTarget: Llofnodi cyfieithu wedi'i analluogi am {0}.
   wwcUpdaterConnectionFailed: Methu gwirio am ddiweddariadau diweddaraf ar Github.
   watsonNotFoundExceptionNotification: Methu cyfieithu eich mewnbwn ymhellach.
-  wwcConfigConversationWatsonAPIKeyInput: Yr allwedd API cyfredol yw {0} mewnbynnu
-    allwedd API ar gyfer Watson, neu deipio 0 i fynd yn ôl.
   wwctGUIStopButton: Stopio Cyfieithu
   wwcgTranslationStopped: Cyfieithu sgwrsio byd-eang wedi cael ei atal.
   wwcUpdaterFutureDate: Mae gan yr achos hwn o WorldwideChat fersiwn fwy na'r un cyhoeddus
@@ -75,13 +71,9 @@ Messages:
     rhy hir. Cyfieithu:'
   wwctsOnTarget: Mewngofnodi cyfieithu galluogi am {0}.
   wwcConfigCacheDisabled: Cache cyfieithydd wedi'i analluogi.
-  wwcConfigConversationWatsonURLInput: Yr URL cyfredol yw {0} mewnbynnu URL gwasanaeth
-    ar gyfer Watson, neu deipio 0 i fynd yn ôl.
   wwcBookDone: Llyfr wedi'i gyfieithu yn llwyddiannus.
   wwctsOnSender: Galluogi cyfieithu arwyddion. Cliciwch y botwm dde ar arwydd i'w
     gyfieithu!
-  watsonColorCodeWarning: Gall defnyddio codau lliw roi canlyniadau anrhagweladwy
-    i chi.
   wwctGUITranslationButton: Dechrau Cyfieithu
   wwctGUIAutoDetectButton: Auto-ganfod Iaith Ffynhonnell
   wwcUpdaterUpToDate: Mae WorldwideChat yn gyfredol!
@@ -93,7 +85,6 @@ Messages:
   wwcPlayerNotFound: Chwaraewr {0} ddim dod o hyd.
   wwcUpdaterOutOfDateChat: Mae WorldwideChat yn hen. Diweddarwch i'r fersiwn ddiweddaraf.
   wwcConfigConversationRateLimitSuccess: Terfyn cyfradd a osodwyd yn llwyddiannus.
-  wwcConfigConversationWatsonURLSuccess: Gosododd Watson URL yn llwyddiannus.
   wwctbPlayerNotFound: Chwaraewr {0} naill ai heb ei ganfod, neu nid yw'n gyfieithydd
     gweithredol.
   wwcConfigConversationTranslationCacheSuccess: Cyfyngiad cache Cyfieithu gosod yn
@@ -113,7 +104,6 @@ Messages:
     i 0 eiliad...
   wwcSignTranslateStart: Cyfieithu arwydd targed...
   wwcConfigGUIChatSettings: Configuration Sgwrs
-  wwcConfigGUIWatsonURLButton: Newid URL Gwasanaeth Watson
   wwcConfigConversationUpdateCheckerSuccess: Diweddariad gosod oedi gwiriwr yn llwyddiannus.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn cael ei
     gyfieithu o {0} i {1}.
@@ -130,7 +120,6 @@ Messages:
   wwcsAttemptedTranslations: 'Cyfieithiadau Ceisio: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon set allweddol gyfrinach
     yn llwyddiannus.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API allweddol gosod yn llwyddiannus.
   wwcRateLimit: Mae eich cyfieithiadau yn gyfyngedig i'r gyfradd. Arhoswch arall {0}
     eiliadau.
   wwcConfigCacheEnabled: Galluogodd cache cyfieithydd a'i osod i derfyn o {0}.
@@ -190,7 +179,6 @@ Messages:
   wwcInvalidTranslator: Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
     hon yn eich config.yml neu gyda/wwcc i ddefnyddio'r ategyn hwn.
   wwcConfigGUIEachTranslatorSettings: '{0} Ffurfweddiad'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: Nid yw WorldwideChat yn cydoddef y defnydd o/ail-lwytho.
     Ewch ymlaen yn ofalus.
   wwcConfigEnabledDebugMode: Modd DEBUG Galluogi. Os nad ydych yn ddatblygwr neu troubleshooter,
@@ -307,10 +295,7 @@ Messages:
     Ail-lwytho ar gyfer y newid i ddod i rym.
   wwcConfigYAMLDefault: Yn ddiofyn i YAML ar gyfer storio data.
   wwcConfigGUISQLMenuButton: Newid Gosodiadau SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Wedi toggled Watson Translate
-    yn llwyddiannus. Ail-lwytho ar gyfer y newid i ddod i rym.
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Cyfieithu
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Cyfieithu
   wwcConfigGUIStorageSettings: Ffurfweddu storio
   wwcConfigConversationAmazonTranslateToggleSuccess: Toggled Amazon Translate yn llwyddiannus.
@@ -642,9 +627,6 @@ Messages:
     sgwrsio yn llwyddiannus.
   wwcConfigVaultSupportInvalid: Cefnogaeth claddfa annilys wedi'i osod yn config.yml.
     Rhagosodiad i wir...
-  wwcWatsonDeprecation: Mae Watson wedi cael ei anghymeradwyo ac nid yw IBM bellach
-    yn cael ei gefnogi. Ystyriwch newid, gan y bydd cefnogaeth iddo yn cael ei dileu
-    yn y diweddariad nesaf.
   wwcConfigForceChatChannelEnabled: Bydd sianel gyfieithu ar wahân yn cael ei gorfodi
     yn ystod yr holl gyfieithiadau.
   wwcConfigConversationSeparateChatChannelForceSuccess: Llwyddodd i toglo gorfodi'r
@@ -659,7 +641,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Newid Eicon Sianel ar Wahân
   wwcConfigConversationChatFormatSuccess: Mae eich fformat wedi'i newid yn llwyddiannus.
   wwcConfigGUISeparateChatChannelForceButton: Sianel ar wahân Force
-  wwcOrigHover: 'Neges wreiddiol: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Sgwrs sy'n mynd allan wreiddiol
     ynghlwm wrth gyfieithu wrth i destun hofran toglwyd yn llwyddiannus.
   wwcConfigGUISendOutgoingHoverTextChatButton: Ychwanegu Negeseuon Allanol Gwreiddiol
@@ -685,16 +666,44 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Galluogi Rhestr Ddu
   wwcConfigConversationBlacklistDeletionSuccess: Dileu'r term yn llwyddiannus.
   wwcConfigGUIChatChannelSettings: Cyfluniad Sianel Sgwrs
-  wwcConfigGUIChatBlacklistSuccess: Togliodd y rhestr ddu yn llwyddiannus.
   wwcConfigGUIChatMessagesBlacklistNewButton: Ychwanegu Word Newydd
   wwcConfigGUIChatChannelButton: Cyfieithu Channel Settings
   wwcConfigGUIBlacklistMessagesModify: Addasu Tymor ({0})
   wwcConfigChatChannelFormatInvalid: Canfuwyd fformat sianel annilys. Rhagosodiad
     i {0}...
-  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
-    sgwrsio ar wahân yw {0}. Mae ein dadleuon cydnabyddedig diofyn y gallwch eu cynnwys:
-    {1}. Os oes gennych PlaceholderAPI, gwnewch yn siŵr bod y newidynnau hynny wedi''u
-    hamgylchynu gan ganrannau (%) yn lle hynny. Teipiwch 0 i fynd yn ôl.'
   wwcConfigGUIModifyBlacklistSettings: Addasu Rhestr Ddu
   wwcConfigGUINextPageButton: Tudalen nesaf
+  wwcConfigChatChannelHoverFormatInvalid: Canfuwyd fformat hofran annilys. Rhagosodiad
+    i {0}...
+  wwcOrigHover: Neges wreiddiol
+  wwctGUIMainMenuPlayer: Cyfieithu {0}
+  wwcOnJoinSetLocaleSuccess: Mae WorldwideChat wedi canfod a bydd yn adlewyrchu eich
+    lleoleiddio Minecraft ({0}). Teipiwch {1} am fwy o fanylion.
+  wwcConfigBadYaml: 'Canfuwyd ffeil YAML annilys: {0}. Ceisiwch drwsio''r ffeil hon
+    neu efallai y caiff ei dileu!'
+  wwcConfigConversationChatBlacklistSuccess: Togliodd y rhestr ddu yn llwyddiannus.
+  wwcConfigConversationChannelHoverFormatInput: 'Y fformat presennol ar gyfer testun
+    hofran cyfieithu yw {0}. Dadleuon diofyn posibl: {1}. Os oes gennych PlaceholderAPI,
+    gwnewch yn siŵr bod y newidynnau hynny wedi''u hamgylchynu gan ganrannau (%) yn
+    lle hynny. Teipiwch 0 i fynd yn ôl.'
+  wwcConfigConversationChannelFormatInput: 'Y fformat presennol ar gyfer y sianel
+    sgwrsio ar wahân yw {0}. Dadleuon diofyn posibl: {1}. Os oes gennych PlaceholderAPI,
+    gwnewch yn siŵr bod y newidynnau hynny wedi''u hamgylchynu gan ganrannau (%) yn
+    lle hynny. Teipiwch 0 i fynd yn ôl.'
+  wwcConfigConversationChatHoverFormatSuccess: Mae eich fformat hofran wedi'i newid
+    yn llwyddiannus.
+  wwcConfigConversationLocalizeSyncSuccess: Toglodd lleoleiddio defnyddwyr cydamseru
+    yn llwyddiannus.
+  wwcConfigGUILocalizeSyncButton: Cysoni Lleoleiddio Defnyddwyr
+  wwcConfigSyncUserLocalInvalid: Sync gosodiad lleoleiddio defnyddiwr annilys. Rhagosodiad
+    i wir...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Newid Fformat Testun Hofran
+  wwcdResetWarn: 'RHYBUDD: Bydd y gorchymyn hwn yn ailosod yr holl ddata yn llwyr
+    gan gynnwys cofnodion a''ch cyfieithwyr gweithredol. PEIDIWCH Â RHEDEG Y GORCHYMYN
+    HWN ONI BAI EICH BOD CHI''N GWYBOD BETH RYDYCH CHI''N EI WNEUD: {0}'
+  wwcdResetNotif: Mae WorldwideChat wedi'i ailosod. Aillwytho...
+  wwcdResetNotifError: Ni chafodd pob data ei ddileu'n llwyddiannus. Ydych chi'n gysylltiedig
+    â'ch cronfa ddata?
+  colorCodeWarning: Efallai y bydd defnyddio codau lliw yn rhoi canlyniadau anrhagweladwy
+    i chi.
 

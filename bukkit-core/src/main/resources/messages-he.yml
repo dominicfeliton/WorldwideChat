@@ -16,7 +16,6 @@ Messages:
   wwcConfigConnectionFailed: התחברות אל {0} נכשלה. ודא שהאישורים וחומת האש שלך מוגדרים
     כהלכה!
   wwcConfigEnabledbStats: bStats מופעל.
-  wwctGUIMainMenuPlayer: תפריט התרגום של {0}
   wwctGUIBookButton: החלפת תרגום ספרים
   wwcLangDetected: זוהתה שפה {0}.
   wwcBookTranslateStart: מתרגם את ספר היעד...
@@ -47,7 +46,6 @@ Messages:
   wwctPlayerNotFound: שחקן %לא מצאתי.
   wwcConfigGUIAmazonTranslateRegionButton: שינוי אזור אמזון
   wwcConfigConversationLangInvalid: קוד שפה לא חוקי!
-  wwcConfigGUIWatsonAPIKeyButton: שינוי מפתח API של ווטסון
   wwcEnabled: גרסת WorldwideChat מופעלת. i.
   wwctbOnSender: תרגום ספרים מופעל. לחץ לחיצה ימנית תוך החזקת ספר לתרגם אותו!
   wwcListenersInitialized: מאזינים אותחלו.
@@ -56,8 +54,6 @@ Messages:
   wwctsOffTarget: תרגום כניסה מושבת עבור {0}.
   wwcUpdaterConnectionFailed: אין אפשרות לבדוק אם קיימים עדכונים אחרונים ב- Github.
   watsonNotFoundExceptionNotification: לא ניתן לתרגם את הקלט שלך יותר.
-  wwcConfigConversationWatsonAPIKeyInput: מפתח ה-API הנוכחי הוא {0}. הזן מפתח API
-    עבור Watson, או הקלד 0 כדי לחזור אחורה.
   wwctGUIStopButton: הפסק לתרגם
   wwcgTranslationStopped: תרגום צ'אט גלובלי הופסק.
   wwcUpdaterFutureDate: למופע זה של WorldwideChat יש גרסה גדולה יותר מאשר הגרסה הציבורית
@@ -67,11 +63,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'סימן היעד נמחק או שהתרגום היה ארוך מדי. תרגום:'
   wwctsOnTarget: תרגום החתימה מופעל עבור {0}.
   wwcConfigCacheDisabled: מטמון מתרגם מנוטרל.
-  wwcConfigConversationWatsonURLInput: כתובת האתר הנוכחית היא {0}. הזן כתובת URL של
-    שירות עבור ווטסון, או הקלד 0 כדי לחזור.
   wwcBookDone: הספר תורגם בהצלחה.
   wwctsOnSender: תרגום החתימה מופעל. לחץ לחיצה ימנית על שלט כדי לתרגם אותו!
-  watsonColorCodeWarning: שימוש בקודי צבע עשוי לתת לך תוצאות בלתי צפויות.
   wwctGUITranslationButton: התחל לתרגם
   wwctGUIAutoDetectButton: זיהוי אוטומטי של שפת מקור
   wwcUpdaterUpToDate: WorldwideChat מעודכן!
@@ -83,7 +76,6 @@ Messages:
   wwcPlayerNotFound: שחקן %לא מצאתי.
   wwcUpdaterOutOfDateChat: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר.
   wwcConfigConversationRateLimitSuccess: מגבלת שער מוגדרת בהצלחה.
-  wwcConfigConversationWatsonURLSuccess: כתובת ה-URL של ווטסון
   wwctbPlayerNotFound: השחקן {0} הוא גם לא נמצא, או אינו מתרגם פעיל.
   wwcConfigConversationTranslationCacheSuccess: מגבלת מטמון תרגום מוגדרת בהצלחה
   wwctInvalidArgs: טיעונים לא חוקיים סיפקו!
@@ -100,7 +92,6 @@ Messages:
   wwcConfigRateLimitInvalid: מגבלת שיעור רע להגדיר config.yml. ברירת מחדל ל- 0 שניות...
   wwcSignTranslateStart: תרגום סימן יעד...
   wwcConfigGUIChatSettings: הגדרת צ'אט
-  wwcConfigGUIWatsonURLButton: שינוי כתובת URL של השירות של
   wwcConfigConversationUpdateCheckerSuccess: עדכון עיכוב בודק הוגדר בהצלחה.
   wwcGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם מ {0} אל {1}.
   wwcConfigGUITranslatorSettings: תצורת המתרגם
@@ -116,7 +107,6 @@ Messages:
   wwcsAttemptedTranslations: 'ניסיון תרגומים: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: המפתח הסודי של אמזון הוגדר
     בהצלחה.
-  wwcConfigConversationWatsonAPIKeySuccess: מפתח API של ווטסון הוגדר בהצלחה.
   wwcRateLimit: התרגומים שלך מוגבלים בשיעור. אנא המתן עוד שניות.
   wwcConfigCacheEnabled: מטמון המתרגם מופעל והוגדר למגבלה של {0}.
   wwctGUIExistingTranslationButton: החלף את הפעלת התרגום הנוכחית
@@ -169,7 +159,6 @@ Messages:
   wwcInvalidTranslator: הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או עם
     /wwcc כדי להשתמש בתוסף זה.
   wwcConfigGUIEachTranslatorSettings: '{0} תצורה'
-  wwcConfigGUIWatsonButton: ווטסון
   wwcServerReloadWarning: WorldwideChat אינו מגנה על השימוש ב/reloade. אנא המשיכו
     בזהירות.
   wwcConfigEnabledDebugMode: מצב איתור באגים מופעל. אם אינך מפתח או פותר בעיות, עליך
@@ -270,10 +259,7 @@ Messages:
     רענן כדי שהשינוי ייכנס לתוקף.
   wwcConfigYAMLDefault: ברירת המחדל ל- YAML לאחסון נתונים.
   wwcConfigGUISQLMenuButton: שינוי הגדרות SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: בהצלחה לעבור ווטסון לתרגם. רענן
-    כדי שהשינוי ייכנס לתוקף.
   wwcConfigGUIToggleGoogleTranslateButton: החלפת גוגל תרגם
-  wwcConfigGUIToggleWatsonTranslateButton: החלפת ווטסון תרגם
   wwcConfigGUIToggleAmazonTranslateButton: לעבור אמזון לתרגם
   wwcConfigGUIStorageSettings: תצורת אחסון
   wwcConfigConversationAmazonTranslateToggleSuccess: בהצלחה לעבור אמזון תרגם. רענן
@@ -573,8 +559,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: הגדר בהצלחה את עדיפות אירועי הצ'אט שלך.
   wwcConfigVaultSupportInvalid: תמיכה בכספת לא חוקית מוגדרת ב- config.yml. ברירת מחדל
     נכון...
-  wwcWatsonDeprecation: ווטסון הופסקה ואינה נתמכת עוד על ידי יבמ. אנא שקול לעבור,
-    מכיוון שהתמיכה בו תוסר בעדכון הבא.
   wwcConfigForceChatChannelEnabled: ערוץ תרגום נפרד ייאלץ במהלך כל התרגומים.
   wwcConfigConversationSeparateChatChannelForceSuccess: החלפה בהצלחה בכפייה של הערוץ
     הנפרד.
@@ -587,7 +571,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: שנה סמל ערוץ נפרד
   wwcConfigConversationChatFormatSuccess: הפורמט שלך השתנה בהצלחה.
   wwcConfigGUISeparateChatChannelForceButton: ערוץ נפרד כוח
-  wwcOrigHover: 'הודעה מקורית: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: צ'אט יוצא מקורי המצורף לתרגום
     כשטקסט העכבר הוחלף בהצלחה.
   wwcConfigGUISendOutgoingHoverTextChatButton: הוספת הודעות יוצאות מקוריות כטקסט העכבר
@@ -608,14 +591,36 @@ Messages:
   wwcConfigGUIChatBlacklistButton: הפעל רשימה שחורה
   wwcConfigConversationBlacklistDeletionSuccess: מחק בהצלחה את המונח.
   wwcConfigGUIChatChannelSettings: תצורת ערוץ צ'אט
-  wwcConfigGUIChatBlacklistSuccess: החלף בהצלחה את הרשימה השחורה.
   wwcConfigGUIChatMessagesBlacklistNewButton: הוסף מילה חדשה
   wwcConfigGUIChatChannelButton: תרגם הגדרות ערוץ
   wwcConfigGUIBlacklistMessagesModify: שנה מונח ({0})
   wwcConfigChatChannelFormatInvalid: פורמט ערוץ לא חוקי זוהה. ברירת המחדל היא {0}...
-  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
-    {0}. ארגומנטים מוכרים כברירת מחדל שניתן לכלול: {1}. אם יש לך PlaceHolderAPI, ודא
-    שהמשתנים האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
   wwcConfigGUIModifyBlacklistSettings: שנה רשימה שחורה
   wwcConfigGUINextPageButton: העמוד הבא
+  wwcConfigChatChannelHoverFormatInvalid: פורמט ריחוף לא חוקי זוהה. ברירת המחדל היא
+    {0}...
+  wwcOrigHover: הודעה מקורית
+  wwctGUIMainMenuPlayer: תרגם {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat זיהה וישקף את לוקליזציה של Minecraft שלך
+    ({0}). הקלד {1} לפרטים נוספים.
+  wwcConfigBadYaml: 'קובץ YAML לא חוקי זוהה: {0}. אנא נסה לתקן קובץ זה או שהוא עלול
+    להימחק!'
+  wwcConfigConversationChatBlacklistSuccess: החלף בהצלחה את הרשימה השחורה.
+  wwcConfigConversationChannelHoverFormatInput: 'הפורמט הנוכחי לתרגום טקסט העף הוא
+    {0}. ארגומנטים ברירת מחדל אפשריים: {1}. אם יש לך PlaceHolderAPI, ודא שהמשתנים
+    האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcConfigConversationChannelFormatInput: 'הפורמט הנוכחי של ערוץ הצ''אט הנפרד הוא
+    {0}. ארגומנטים ברירת מחדל אפשריים: {1}. אם יש לך PlaceHolderAPI, ודא שהמשתנים
+    האלה מוקפים באחוזים (%) במקום זאת. הקלד 0 כדי לחזור.'
+  wwcConfigConversationChatHoverFormatSuccess: פורמט העכבר שלך השתנה בהצלחה.
+  wwcConfigConversationLocalizeSyncSuccess: החלפת סנכרון לוקליזציה של משתמשים בהצלחה.
+  wwcConfigGUILocalizeSyncButton: סנכרון לוקליזציה של משתמשים
+  wwcConfigSyncUserLocalInvalid: הגדרת לוקליזציה של משתמשים לסנכרון לא חוקית. ברירת
+    מחדל נכון...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: שינוי תבנית טקסט העכבר
+  wwcdResetWarn: 'אזהרה: פקודה זו תאפס לחלוטין את כל הנתונים כולל רשומות ומתרגמים
+    פעילים שלך. אל תפעיל פקודה זו אלא אם כן אתה יודע מה אתה עושה: {0}'
+  wwcdResetNotif: צ'אט עולמי אופס. טוען מחדש...
+  wwcdResetNotifError: לא כל הנתונים נמחקו בהצלחה. האם אתה מחובר למסד הנתונים שלך?
+  colorCodeWarning: שימוש בקודי צבע עשוי לתת לך תוצאות בלתי צפויות.
 

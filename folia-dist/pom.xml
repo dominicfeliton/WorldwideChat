@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.18.0</version>
+    <version>1.18.5</version>
   </parent>
 
   <artifactId>WorldwideChat-folia-dist</artifactId>
@@ -28,13 +28,13 @@
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.18.0</version>
+      <version>1.18.5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-folia</artifactId>
-      <version>1.18.0</version>
+      <version>1.18.5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -98,12 +98,6 @@
               <include>com.dominicfeliton.worldwidechat:*</include>
               <include>commons-logging:commons-logging</include>
               <include>commons-io:commons-io</include>
-              <include>com.ibm.watson:common</include>
-              <include>com.ibm.cloud:sdk-core</include>
-              <include>com.ibm.watson:compare-comply</include>
-              <include>com.ibm.watson:authenticator</include>
-              <include>com.ibm.watson:discovery</include>
-              <include>com.ibm.watson:language-translator</include>
               <include>com.squareup.okhttp3:*</include>
               <include>com.google.guava:guava</include>
               <include>com.google.code.gson:*</include>
@@ -116,8 +110,6 @@
               <include>org.threeten:*</include>
               <include>io.opencensus:opencensus*</include>
               <include>io.grpc:*</include>
-              <include>com.ibm.watson:natural-language-classifier</include>
-              <include>com.ibm.watson:natural-language-understanding</include>
               <include>org.apache.tomcat:tomcat-jdbc</include>
               <include>org.apache.tomcat:tomcat-juli</include>
               <include>org.apache.commons:commons-lang3</include>
@@ -230,10 +222,6 @@
             <relocation>
               <pattern>org.reactivestreams</pattern>
               <shadedPattern>com.dominicfeliton.yamltranslator.libs.org.reactivestreams</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern>com.ibm</pattern>
-              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.ibm</shadedPattern>
             </relocation>
             <relocation>
               <pattern>com.fasterxml.jackson</pattern>

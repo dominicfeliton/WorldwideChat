@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Kon nie konnekteer na {0} nie. Maak seker jou geloofsbriewe
     en firewall is korrek gekonfigureer!
   wwcConfigEnabledbStats: Geaktiveer bStats.
-  wwctGUIMainMenuPlayer: Vertaling Menu van {0}
   wwctGUIBookButton: Toggle Book Vertaling
   wwcLangDetected: Bespeur taal {0}.
   wwcBookTranslateStart: Vertaal teikenboek...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Speler {0} nie gevind nie.
   wwcConfigGUIAmazonTranslateRegionButton: Verander Amazon Streek
   wwcConfigConversationLangInvalid: Ongeldige taal kode!
-  wwcConfigGUIWatsonAPIKeyButton: Verander Watson API Sleutel
   wwcEnabled: Geaktiveer WorldwideChat weergawe {0}.
   wwctbOnSender: Boekvertaling geaktiveer. Regs-kliek terwyl jy 'n boek hou om dit
     te vertaal!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: Teken vertaling gedeaktiveer vir {0}.
   wwcUpdaterConnectionFailed: Kan nie kyk vir nuutste opdaterings op GitHub nie.
   watsonNotFoundExceptionNotification: Nie in staat om jou insette verder te vertaal.
-  wwcConfigConversationWatsonAPIKeyInput: Die huidige API-sleutel is {0}. Voer asseblief
-    'n API-sleutel in vir Watson, of tik 0 om terug te gaan.
   wwctGUIStopButton: Stop Vertaal
   wwcgTranslationStopped: Globale chat vertaling is gestop.
   wwcUpdaterFutureDate: Hierdie geval van WorldwideChat het 'n groter weergawe as
@@ -74,12 +70,8 @@ Messages:
     Vertaling:'
   wwctsOnTarget: Teken vertaling geaktiveer vir {0}.
   wwcConfigCacheDisabled: Vertaler kas gedeaktiveer.
-  wwcConfigConversationWatsonURLInput: Die huidige URL is {0}. Voer asseblief 'n diens-URL
-    in vir Watson, of tik 0 om terug te gaan.
   wwcBookDone: Boek suksesvol vertaal.
   wwctsOnSender: Teken vertaling geaktiveer. Regskliek op 'n teken om dit te vertaal!
-  watsonColorCodeWarning: Die gebruik van kleurkodes kan jy onvoorspelbare resultate
-    gee.
   wwctGUITranslationButton: Begin Vertaal
   wwctGUIAutoDetectButton: Outo-opspoor Bron Taal
   wwcUpdaterUpToDate: WorldwideChat is op datum!
@@ -92,7 +84,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat is verouderd. Werk asseblief na die nuutste
     weergawe.
   wwcConfigConversationRateLimitSuccess: Koers limiet suksesvol ingestel.
-  wwcConfigConversationWatsonURLSuccess: Watson URL suksesvol gestel.
   wwctbPlayerNotFound: Speler {0} is nie gevind nie, of is nie 'n aktiewe vertaler
     nie.
   wwcConfigConversationTranslationCacheSuccess: Vertaling kas limiet suksesvol ingestel.
@@ -111,7 +102,6 @@ Messages:
     sekondes...
   wwcSignTranslateStart: Vertaal teiken teken...
   wwcConfigGUIChatSettings: Gesels Opstelling
-  wwcConfigGUIWatsonURLButton: Verander Watson Diens URL
   wwcConfigConversationUpdateCheckerSuccess: Opdateer checker vertraging stel suksesvol.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globale chat word vertaal van
     {0} na {1}.
@@ -128,7 +118,6 @@ Messages:
   wwcsAttemptedTranslations: 'Poging tot vertalings: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon geheime sleutel suksesvol
     te stel.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API sleutel suksesvol stel.
   wwcRateLimit: Jou vertalings is koers beperk. Wag asseblief 'n ander {0} sekondes.
   wwcConfigCacheEnabled: Vertaler kas geaktiveer en stel op 'n limiet van {0}.
   wwctGUIExistingTranslationButton: Oorskryf Huidige Vertaling Sessie
@@ -189,7 +178,6 @@ Messages:
   wwcInvalidTranslator: Ongeldige vertaler instellings. Los dit asseblief in jou config.yml
     of met/wwcc om hierdie inprop te gebruik.
   wwcConfigGUIEachTranslatorSettings: '{0} Opstelling'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat kondoneer nie die gebruik van/herlaai nie.
     Gaan asseblief met omsigtigheid voort
   wwcConfigEnabledDebugMode: Ontfout modus geaktiveer. As jy nie 'n ontwikkelaar of
@@ -305,10 +293,7 @@ Messages:
     Translate. Herlaai vir die verandering om in werking te tree.
   wwcConfigYAMLDefault: Verstek om YAML vir data stoor.
   wwcConfigGUISQLMenuButton: Verander SQL instellings
-  wwcConfigConversationWatsonTranslateToggleSuccess: Suksesvol omgeskuif Watson Translate.
-    Herlaai vir die verandering om in werking te tree.
   wwcConfigGUIToggleGoogleTranslateButton: Skakel Google Vertaal
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Vertaal
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Vertaal
   wwcConfigGUIStorageSettings: berging konfigurasie
   wwcConfigConversationAmazonTranslateToggleSuccess: Suksesvol aangeskakel Amazon
@@ -639,9 +624,6 @@ Messages:
     in.
   wwcConfigVaultSupportInvalid: Ongeldige kluisondersteuning gestel in config.yml.
     Standaard tot waar...
-  wwcWatsonDeprecation: Watson is verouderd en word nie meer deur IBM ondersteun nie.
-    Oorweeg asseblief om oor te skakel, aangesien ondersteuning daarvoor in die volgende
-    opdatering verwyder sal word.
   wwcConfigForceChatChannelEnabled: '''N Afsonderlike vertaalkanaal sal tydens alle
     vertalings gedwing word.'
   wwcConfigConversationSeparateChatChannelForceSuccess: Suksesvol ingeskakel het die
@@ -655,7 +637,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Verander aparte kanaalikoon
   wwcConfigConversationChatFormatSuccess: Jou formaat is suksesvol verander.
   wwcConfigGUISeparateChatChannelForceButton: Dwing afsonderlike kanaal
-  wwcOrigHover: 'Oorspronklike boodskap: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oorspronklike uitgaande chat
     geheg aan die vertaling as hoverteks suksesvol ingeskakel is.
   wwcConfigGUISendOutgoingHoverTextChatButton: Voeg oorspronklike uitgaande boodskappe
@@ -679,16 +660,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktiveer swartlys
   wwcConfigConversationBlacklistDeletionSuccess: Die term suksesvol verwyder.
   wwcConfigGUIChatChannelSettings: Chat Channel konfigurasie
-  wwcConfigGUIChatBlacklistSuccess: Die swartlys suksesvol verander.
   wwcConfigGUIChatMessagesBlacklistNewButton: Voeg nuwe woord by
   wwcConfigGUIChatChannelButton: Vertaal Channel Settings
   wwcConfigGUIBlacklistMessagesModify: Verander Term ({0})
   wwcConfigChatChannelFormatInvalid: Ongeldige kanaalformaat opgespoor. Standaard
     op {0}...
-  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
-    is {0}. Ons standaarderkende argumente wat u kan insluit: {1}. As u PlaceholderAPI
-    het, maak seker dat die veranderlikes eerder omring word deur persentasies (%).
-    Tik 0 om terug te gaan.'
   wwcConfigGUIModifyBlacklistSettings: Verander swartlys
   wwcConfigGUINextPageButton: Volgende bladsy
+  wwcConfigChatChannelHoverFormatInvalid: Ongeldige hover formaat opgespoor. Standaard
+    op {0}...
+  wwcOrigHover: oorspronklike boodskap
+  wwctGUIMainMenuPlayer: Vertaal {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat het opgespoor en sal jou Minecraft-lokalisering
+    weerspieël ({0}). Tik {1} vir meer besonderhede.
+  wwcConfigBadYaml: 'Ongeldige YAML-lêer opgespoor: {0}. Probeer asseblief om hierdie
+    lêer reg te stel of dit kan verwyder word!'
+  wwcConfigConversationChatBlacklistSuccess: Die swartlys suksesvol verander.
+  wwcConfigConversationChannelHoverFormatInput: 'Die huidige formaat vir vertaalhover
+    teks is {0}. Moontlike standaardargumente: {1}. As u PlaceholderAPI het, maak
+    seker dat die veranderlikes eerder omring word deur persentasies (%). Tik 0 om
+    terug te gaan.'
+  wwcConfigConversationChannelFormatInput: 'Die huidige formaat vir die aparte kletskanaal
+    is {0}. Moontlike standaardargumente: {1}. As u PlaceholderAPI het, maak seker
+    dat die veranderlikes eerder omring word deur persentasies (%). Tik 0 om terug
+    te gaan.'
+  wwcConfigConversationChatHoverFormatSuccess: Jou hoverformaat is suksesvol verander.
+  wwcConfigConversationLocalizeSyncSuccess: Suksesvol geskakel die sinkronisering
+    van gebruikerslokalisering.
+  wwcConfigGUILocalizeSyncButton: Sinkroniseer gebruikerslokal
+  wwcConfigSyncUserLocalInvalid: Sinkroniseer gebruikerslokalisering instelling ongeldig
+    Standaard tot waar...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Verander hover teksformaat
+  wwcdResetWarn: 'WAARSKUWING: Hierdie opdrag sal alle data, insluitend rekords en
+    u aktiewe vertalers, heeltemal terugstel. MOENIE HIERDIE OPDRAG UITVOER NIE TENSY
+    JY WEET WAT JY DOEN NIE: {0}'
+  wwcdResetNotif: WorldwideChat is herstel. Herlaai...
+  wwcdResetNotifError: Nie alle data is suksesvol uitgevee nie. Is jy gekoppel aan
+    jou databasis?
+  colorCodeWarning: Die gebruik van kleurkodes kan u onvoorspelbare resultate gee.
 

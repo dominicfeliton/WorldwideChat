@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Povezava z {0} se ni uspela prepričati, da so vaše poverilnice
     in požarni zid pravilno konfigurirani!
   wwcConfigEnabledbStats: Omogočeni bStats.
-  wwctGUIMainMenuPlayer: Prevajalski menij {0}
   wwctGUIBookButton: Preklop knjižnega prevajanja
   wwcLangDetected: Odkriti jezik {0}.
   wwcBookTranslateStart: Prevajanje ciljne knjige...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Igralca {0} našel.
   wwcConfigGUIAmazonTranslateRegionButton: Spremeni regijo Amazon
   wwcConfigConversationLangInvalid: Neveljavna jezikovna koda!
-  wwcConfigGUIWatsonAPIKeyButton: Spremeni ključ API Watson
   wwcEnabled: Omogočena različica WorldwideChat {0}.
   wwctbOnSender: Prevajanje knjige je omogočeno. Z desno tipko miške, medtem ko držite
     knjigo, da jo prevedete
@@ -64,8 +62,6 @@ Messages:
   wwcUpdaterConnectionFailed: Ni mogoče preveriti, ali so na voljo najnovejše posodobitve
     v Githubu.
   watsonNotFoundExceptionNotification: Ni mogoče več prevajati vašega vnosa.
-  wwcConfigConversationWatsonAPIKeyInput: Trenutna tipka API je {0}. vnesite API ključ
-    za Watson ali vnesite 0, da se vrnete nazaj.
   wwctGUIStopButton: Ustavi prevajanje
   wwcgTranslationStopped: Globalni klepet prevod je ustavljen.
   wwcUpdaterFutureDate: Ta primerek WorldwideChat ima večjo različico kot najnovejši
@@ -76,12 +72,9 @@ Messages:
     Prevod:'
   wwctsOnTarget: Prevod podpisa omogočen za {0}.
   wwcConfigCacheDisabled: Predpomnilnik prevajalnika onemogočen.
-  wwcConfigConversationWatsonURLInput: Trenutni URL je {0}. Vnesite URL storitve za
-    Watson ali vnesite 0, da se vrnete nazaj.
   wwcBookDone: Knjiga uspešno prevedena.
   wwctsOnSender: Podpisovanje omogočeno. Z desno tipko miške kliknite znak, da ga
     prevedete!
-  watsonColorCodeWarning: Uporaba barvnih kod vam lahko daje nepredvidljive rezultate.
   wwctGUITranslationButton: Začni prevajanje
   wwctGUIAutoDetectButton: Samodejno zaznavanje izvornega jezika
   wwcUpdaterUpToDate: WorldwideChat je posodobljen!
@@ -94,7 +87,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat je zastarel. Prosimo, posodobite na najnovejšo
     različico.
   wwcConfigConversationRateLimitSuccess: Omejitev hitrosti je uspešno nastavljena.
-  wwcConfigConversationWatsonURLSuccess: Watson URL je bil uspešno nastavljen.
   wwctbPlayerNotFound: Predvajalnik {0} ni mogoče najti ali ni aktiven prevajalec.
   wwcConfigConversationTranslationCacheSuccess: Omejitev predpomnilnika prevajanja
     je uspešno
@@ -113,7 +105,6 @@ Messages:
     do 0 sekund...
   wwcSignTranslateStart: Prevajanje ciljnega znaka...
   wwcConfigGUIChatSettings: Konfiguracija klepeta
-  wwcConfigGUIWatsonURLButton: Spremeni URL storitve Watson
   wwcConfigConversationUpdateCheckerSuccess: Uspešno nastavite zakasnitev preverjanja
     posodobitev.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globalni klepet se prevaja iz
@@ -132,7 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Poskus prevodi: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon skrivni ključ je uspešno
     nastavljen.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API ključ je uspešno nastavljen.
   wwcRateLimit: Vaši prevodi so omejeni. Prosimo, počakajte še drugo {0} sekund.
   wwcConfigCacheEnabled: Prevajalski predpomnilnik omogočen in nastavljen na omejite
     {0}.
@@ -192,7 +182,6 @@ Messages:
   wwcInvalidTranslator: Neveljavne nastavitve prevajalca. Prosimo, da to popravite
     v vašem config.yml ali z /wwcc za uporabo tega vtičnika.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguracija'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ne opraviča uporabe /reload. Prosimo, nadaljujte
     previdno.
   wwcConfigEnabledDebugMode: Omogočen način DEBUG. Če niste razvijalec ali orodje
@@ -307,10 +296,7 @@ Messages:
     Translate. Ponovno naložite, da sprememba začne veljati.
   wwcConfigYAMLDefault: Privzeto na YAML za shranjevanje podatkov.
   wwcConfigGUISQLMenuButton: Spreminjanje nastavitev SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Uspešno preklapljanje Watson
-    Translate. Ponovno naložite, da sprememba začne veljati.
   wwcConfigGUIToggleGoogleTranslateButton: Preklop Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Preklop Watson prevajanje
   wwcConfigGUIToggleAmazonTranslateButton: Preklop Amazon prevajanje
   wwcConfigGUIStorageSettings: Konfiguracija shranjevanja
   wwcConfigConversationAmazonTranslateToggleSuccess: Uspešno preklopljen Amazon Translate.
@@ -642,8 +628,6 @@ Messages:
     v klepetu.
   wwcConfigVaultSupportInvalid: V config.yml je nastavljena neveljavna podpora za
     trezor. Privzeta vrednost resnična...
-  wwcWatsonDeprecation: Watson je bil zastarel in IBM ga ne podpira več. Razmislite
-    o preklopu, saj bo podpora zanj odstranjena v naslednji posodobitvi.
   wwcConfigForceChatChannelEnabled: Med vsemi prevodi bo prisiljen ločen prevajalski
     kanal.
   wwcConfigConversationSeparateChatChannelForceSuccess: Uspešno preklopljeno prisiljevanje
@@ -658,7 +642,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Spremenite ločeno ikono kanala
   wwcConfigConversationChatFormatSuccess: Vaša oblika je bila uspešno spremenjena.
   wwcConfigGUISeparateChatChannelForceButton: Prisilite ločen kanal
-  wwcOrigHover: 'Izvirno sporočilo: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Izvirni odhodni klepet, priložen
     prevodu kot besedilo z lebdenjem kazalca, je uspešno preklopil.
   wwcConfigGUISendOutgoingHoverTextChatButton: Dodajte izvirna odhodna sporočila kot
@@ -681,16 +664,41 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Omogoči črni seznam
   wwcConfigConversationBlacklistDeletionSuccess: Izraz je uspešno izbrisal.
   wwcConfigGUIChatChannelSettings: Konfiguracija kanala za klepet
-  wwcConfigGUIChatBlacklistSuccess: Uspešno preklopil črni seznam.
   wwcConfigGUIChatMessagesBlacklistNewButton: Dodaj novo besedo
   wwcConfigGUIChatChannelButton: Prevedi nastavitve kanala
   wwcConfigGUIBlacklistMessagesModify: Spremeni izraz ({0})
   wwcConfigChatChannelFormatInvalid: Zaznana je neveljavna oblika kanala. Privzeta
     vrednost {0}...
-  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
-    je {0}. Naši privzeti priznani argumenti, ki jih lahko vključite: {1}. Če imate
-    PlaceholderAPI, se prepričajte, da so te spremenljivke obdane z odstotki (%).
-    Vnesite 0, da se vrnete nazaj.'
   wwcConfigGUIModifyBlacklistSettings: Spremeni črni seznam
   wwcConfigGUINextPageButton: Naslednja stran
+  wwcConfigChatChannelHoverFormatInvalid: Zaznana je neveljavna oblika lebdenja kazalca.
+    Privzeta vrednost {0}...
+  wwcOrigHover: Izvirno sporočilo
+  wwctGUIMainMenuPlayer: Prevedi {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat je zaznal in bo odražal vašo lokalizacijo
+    Minecraft ({0}). Za več podrobnosti vnesite {1}.
+  wwcConfigBadYaml: 'Zaznana je neveljavna datoteka YAML: {0}. Poskusite popraviti
+    to datoteko, sicer bo morda izbrisana!'
+  wwcConfigConversationChatBlacklistSuccess: Uspešno preklopil črni seznam.
+  wwcConfigConversationChannelHoverFormatInput: 'Trenutna oblika prevajalskega kazalca
+    je {0}. Možni privzeti argumenti: {1}. Če imate PlaceholderAPI, se prepričajte,
+    da so te spremenljivke obdane z odstotki (%). Vnesite 0, da se vrnete nazaj.'
+  wwcConfigConversationChannelFormatInput: 'Trenutna oblika ločenega kanala za klepet
+    je {0}. Možni privzeti argumenti: {1}. Če imate PlaceholderAPI, se prepričajte,
+    da so te spremenljivke obdane z odstotki (%). Vnesite 0, da se vrnete nazaj.'
+  wwcConfigConversationChatHoverFormatSuccess: Vaš format lebdenja kazalca je bil
+    uspešno spremenjen.
+  wwcConfigConversationLocalizeSyncSuccess: Uspešno preklopljena sinhronizacija lokalizacije
+    uporabnikov.
+  wwcConfigGUILocalizeSyncButton: Sinhronizirajte lokalizacijo uporabnika
+  wwcConfigSyncUserLocalInvalid: Nastavitev lokalizacije uporabnika sinhronizacije
+    ni veljavna. Privzeto na resnično...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Spremenite obliko besedila Hover
+  wwcdResetWarn: 'OPOZORILO: Ta ukaz bo popolnoma ponastavil vse podatke, vključno
+    z zapisi in vašimi aktivnimi prevajalci. TEGA UKAZA NE ZAŽENITE, RAZEN ČE VESTE,
+    KAJ POČNETE: {0}'
+  wwcdResetNotif: WorldwideChat je bil ponastavljen. Ponovno nalaganje...
+  wwcdResetNotifError: Vsi podatki niso bili uspešno izbrisani. Ste povezani s svojo
+    bazo podatkov?
+  colorCodeWarning: Uporaba barvnih kod vam lahko prinese nepredvidljive rezultate.
 

@@ -60,7 +60,6 @@ Messages:
   wwctiOffTarget: Tradução de item desativada para {0}.
   wwctTranslationStopped: A sua sessão de tradução foi interrompida.
   wwcEntityTranslateNoName: A entidade não tem um nome personalizado.
-  wwcConfigGUIWatsonAPIKeyButton: Alterar Chave da API de Watson
   wwctrlRateLimitOffSender: Desativou o limite de tarifa.
   wwctbOnSender: Tradução de livros activada. Clique com o botão direito do rato enquanto
     segura um livro para o traduzir!
@@ -85,10 +84,7 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Alterar o limite global da taxa
   wwctsOnTarget: Tradução de sinal activada para {0}.
   wwcConfigCacheDisabled: Cache de tradutor desactivada.
-  wwcConfigConversationWatsonURLInput: O URL actual é {0}. Introduza um URL de serviço
-    para o Watson ou introduza 0 para retroceder.
   wwcBookDone: Livro traduzido com sucesso.
-  watsonColorCodeWarning: Usar códigos de cor pode dar-lhe resultados imprevisíveis.
   wwctGUITranslationButton: Começar a traduzir
   wwcItemTranslateLoreStart: Traduzindo o lore do ponto-alvo...
   wwcUpdaterUpToDate: WorldwideChat está atualizado!
@@ -105,7 +101,6 @@ Messages:
     mais recente.
   wwcConfigConversationRateLimitSuccess: Limite de velocidade definido com sucesso.
   wwctrlPlayerNotFound: O jogador {0} não foi encontrado ou não é um tradutor activo.
-  wwcConfigConversationWatsonURLSuccess: URL do Watson definido com êxito.
   wwctbPlayerNotFound: O jogador {0} não foi encontrado ou não é um tradutor activo.
   wwcConfigGUIResponseLimitButton: Alterar Tempo de Resposta do Tradutor
   wwcConfigGUIPrefixButton: Alterar Prefixo do Plugin
@@ -120,7 +115,6 @@ Messages:
   wwctrlNotATranslator: Não é um tradutor activo! Certifique-se de que definiu este
     procedimento com /wwct.
   wwcConfigGUIChatSettings: Configuração de Chat
-  wwcConfigGUIWatsonURLButton: Alterar URL do serviço de Watson
   wwcConfigConversationUpdateCheckerSuccess: Atraso do verificador de actualizações
     definido com sucesso
   wwcConfigGUIMessagesOverrideCustomLabel: Nova Mensagem
@@ -136,7 +130,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Alterar chave secreta da Amazon
   wwcInvalidTranslator: Definições do tradutor inválidas. Por favor corrija isto na
     sua config.yml ou com /wwcc para utilizar este plugin.
-  wwcConfigConversationWatsonAPIKeySuccess: A chave API de Watson definida com êxito.
   wwcConfigCacheEnabled: Cache de tradutor ativada e definida para um limite de {0}.
   wwcConfigConversationOverrideDeletionSuccess: A revogação de mensagens personalizada
     foi eliminada.
@@ -161,13 +154,11 @@ Messages:
   wwcUpdaterFailedGeneric: Não é possível verificar as actualizações do WorldwideChat.
   wwctGUIMainMenuGlobal: Menu Tradução Global
   wwcItemTranslateTitleDone: Título do item traduzido com sucesso.
-  wwcConfigGUIWatsonButton: Watson
   wwcConfigConversationPluginUpdateChatSuccess: O lembrete de chat de atualização
     de plugin alternado com êxito.
   wwcsNotATranslator: Ainda não existem registos disponíveis para {0}.
   wwcConfigGUIbStatsButton: Alternar bStats
   wwctGUINewTranslationSource: Escolha um idioma de origem
-  wwctGUIMainMenuPlayer: Menu Tradução de {0}
   wwctGUIBookButton: Alternar Tradução
   wwcConfigGUIDebugModeButton: Alternar Modo de Debug
   wwcConfigMessageCharLimitInvalid: Limite inválido por mensagem definido em config.yml.
@@ -218,8 +209,6 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: Enviar lembrete de chat para atualizações de
     plugin
   wwcConfigGUIErrorLimitButton: Alterar limite de erro do tradutor
-  wwcConfigConversationWatsonAPIKeyInput: A chave API actual é {0}. Introduza uma
-    chave API para o Watson ou introduza 0 para voltar atrás.
   wwcgTranslationStopped: A tradução global do chat foi interrompida.
   wwcConfigConversationCharacterLimitSuccess: Limite de caracteres definido com sucesso.
   wwcItemTranslateTitleStock: Não é possível traduzir nomes de itens predefinidos.
@@ -311,10 +300,7 @@ Messages:
     com sucesso. Recarga para que a alteração entre em vigor.
   wwcConfigYAMLDefault: Predefinida para YAML para armazenamento de dados.
   wwcConfigGUISQLMenuButton: Alterar configurações do SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Translate Watson alternado com
-    sucesso. Recarga para que a alteração entre em vigor.
   wwcConfigGUIToggleGoogleTranslateButton: Alternar Google Tradutor
-  wwcConfigGUIToggleWatsonTranslateButton: Alternar Watson Traduzir
   wwcConfigGUIToggleAmazonTranslateButton: Alternar Amazon Tradutor
   wwcConfigGUIStorageSettings: Configuração do armazenamento
   wwcConfigConversationAmazonTranslateToggleSuccess: O Amazon Tradutor alterou com
@@ -664,8 +650,6 @@ Messages:
     de chat.
   wwcConfigVaultSupportInvalid: Suporte a cofre inválido definido em config.yml. A
     predefinição é true...
-  wwcWatsonDeprecation: O Watson foi descontinuado e já não é suportado pela IBM.
-    Por favor, considere mudar, uma vez que o suporte será removido na próxima actualização.
   wwcConfigForceChatChannelEnabled: Será forçado um canal de tradução separado durante
     todas as traduções.
   wwcConfigConversationSeparateChatChannelForceSuccess: Ativo alternado com êxito
@@ -679,7 +663,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Alterar ícone de canal separado
   wwcConfigConversationChatFormatSuccess: O seu formato foi alterado com êxito.
   wwcConfigGUISeparateChatChannelForceButton: Forçar Canal Separado
-  wwcOrigHover: 'Mensagem original: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Bate-papo de saída original
     anexado à tradução enquanto o texto do foco alternava com sucesso.
   wwcConfigGUISendOutgoingHoverTextChatButton: Adicionar mensagens de saída originais
@@ -705,16 +688,44 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Activar lista negra
   wwcConfigConversationBlacklistDeletionSuccess: Eliminou com êxito o termo.
   wwcConfigGUIChatChannelSettings: Configuração do canal de chat
-  wwcConfigGUIChatBlacklistSuccess: Ativa a lista negra com êxito.
   wwcConfigGUIChatMessagesBlacklistNewButton: Adicionar Nova Palavra
   wwcConfigGUIChatChannelButton: Traduzir Definições do Canal
   wwcConfigGUIBlacklistMessagesModify: Modificar Termo ({0})
   wwcConfigChatChannelFormatInvalid: Detectado formato de canal inválido. A predefinição
     é {0}...
-  wwcConfigConversationChannelFormatInput: 'O formato actual para o canal de chat
-    separado é {0}. Os nossos argumentos reconhecidos por defeito que pode incluir:
-    {1}. Se tiver placeholderAPI, certifique-se de que essas variáveis estejam rodeadas
-    por percentagens (%). Digite 0 para voltar atrás.'
   wwcConfigGUIModifyBlacklistSettings: Modificar lista negra
   wwcConfigGUINextPageButton: Página Seguinte
+  wwcConfigChatChannelHoverFormatInvalid: Detectado um formato de hover inválido.
+    A predefinição é {0}...
+  wwcOrigHover: Mensagem Original
+  wwctGUIMainMenuPlayer: Traduzir {0}
+  wwcOnJoinSetLocaleSuccess: O WorldwideChat detectou e refletirá a sua localização
+    no Minecraft ({0}). Digite {1} para mais detalhes.
+  wwcConfigBadYaml: 'Ficheiro YAML inválido detectado: {0}. Tente corrigir este ficheiro
+    ou poderá ser eliminado!'
+  wwcConfigConversationChatBlacklistSuccess: Ativa a lista negra com êxito.
+  wwcConfigConversationChannelHoverFormatInput: 'O formato actual para tradução do
+    texto hover é {0}. Possíveis argumentos padrão: {1}. Se tiver placeholderAPI,
+    certifique-se de que essas variáveis estejam rodeadas por percentagens (%). Digite
+    0 para voltar atrás.'
+  wwcConfigConversationChannelFormatInput: 'O formato actual para o canal de chat
+    separado é {0}. Possíveis argumentos padrão: {1}. Se tiver placeholderAPI, certifique-se
+    de que essas variáveis estejam rodeadas por percentagens (%). Digite 0 para voltar
+    atrás.'
+  wwcConfigConversationChatHoverFormatSuccess: O formato do seu hover foi alterado
+    com êxito.
+  wwcConfigConversationLocalizeSyncSuccess: Sincronização da localização do utilizador
+    com êxito.
+  wwcConfigGUILocalizeSyncButton: Sincronizar localização do utilizador
+  wwcConfigSyncUserLocalInvalid: Sincronizar a definição de localização do utilizador
+    inválida. A predefinição é true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Alterar o formato do texto com
+    o passar do Favor
+  wwcdResetWarn: 'AVISO: Este comando irá repor completamente todos os dados, incluindo
+    registos e os tradutores activos. NÃO EXECUTE ESTE COMANDO A MENOS QUE SAIBA O
+    QUE ESTÁ A FAZER: {0}'
+  wwcdResetNotif: O WorldwideChat foi reiniciado. Recarregando...
+  wwcdResetNotifError: Nem todos os dados foram eliminados com êxito. Está ligado
+    à sua base de dados?
+  colorCodeWarning: A utilização de códigos de cores pode dar-lhe resultados imprevisíveis.
 

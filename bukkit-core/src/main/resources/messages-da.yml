@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: Kunne ikke oprette forbindelse til {0}. Sørg for at dine
     legitimationsoplysninger og firewall er konfigureret korrekt!
   wwcConfigEnabledbStats: Aktiverede bStats.
-  wwctGUIMainMenuPlayer: Oversættelsesmenuen af {0}
   wwctGUIBookButton: Slå bogoversættelse til/ fra
   wwcLangDetected: Findes sprog {0}.
   wwcBookTranslateStart: Oversætter målbog...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: Spilleren % jeg blev ikke fundet.
   wwcConfigGUIAmazonTranslateRegionButton: Ændre Amazon-regionen
   wwcConfigConversationLangInvalid: Ugyldig sprogkode!
-  wwcConfigGUIWatsonAPIKeyButton: Skift Watson API-nøgle
   wwcEnabled: Aktiveret WorldwideChat version {0}.
   wwctbOnSender: Bogoversættelse aktiveret. Højreklik mens du holder en bog for at
     oversætte den!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: Signering af oversættelse deaktiveret for {0}.
   wwcUpdaterConnectionFailed: Kunne ikke søge efter seneste opdateringer på Github.
   watsonNotFoundExceptionNotification: Kunne ikke oversætte dit input yderligere.
-  wwcConfigConversationWatsonAPIKeyInput: Den nuværende API nøgle er {0}. Indtast
-    en API nøgle til Watson, eller skriv 0 for at gå tilbage.
   wwctGUIStopButton: Stop med at oversætte
   wwcgTranslationStopped: Global chat oversættelse er blevet stoppet.
   wwcUpdaterFutureDate: Denne forekomst af WorldwideChat har en større version end
@@ -74,12 +70,9 @@ Messages:
     for lang. Oversættelse:'
   wwctsOnTarget: Signer oversættelse aktiveret for {0}.
   wwcConfigCacheDisabled: Oversætter cache deaktiveret.
-  wwcConfigConversationWatsonURLInput: Den nuværende URL er {0}. Indtast venligst
-    en service- URL for Watson, eller skriv 0 for at gå tilbage.
   wwcBookDone: Bog oversat med succes.
   wwctsOnSender: Signer oversættelse aktiveret. Højreklik på et tegn for at oversætte
     det!
-  watsonColorCodeWarning: Brug af farvekoder kan give dig uforudsigelige resultater.
   wwctGUITranslationButton: Begynd at oversætte
   wwctGUIAutoDetectButton: Registrer kildesprog automatisk
   wwcUpdaterUpToDate: WorldwideChat er opdateret!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat er forældet. Opdater venligst til den nyeste
     version.
   wwcConfigConversationRateLimitSuccess: Rate grænse sat med succes.
-  wwcConfigConversationWatsonURLSuccess: Watson URL sat med succes.
   wwctbPlayerNotFound: Spilleren {0} findes enten ikke, eller er ikke en aktiv oversætter.
   wwcConfigConversationTranslationCacheSuccess: Oversættelse cache grænse sat med
     succes.
@@ -111,7 +103,6 @@ Messages:
     til 0 sekunder...
   wwcSignTranslateStart: Oversætter målskilt...
   wwcConfigGUIChatSettings: Chat konfiguration
-  wwcConfigGUIWatsonURLButton: Skift URL-adresse til Watson
   wwcConfigConversationUpdateCheckerSuccess: Opdatering af tjekker forsinkelse indstillet
     korrekt.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat oversættes fra {0}
@@ -129,7 +120,6 @@ Messages:
   wwcsAttemptedTranslations: 'Forsøg på oversættelser: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon hemmelige nøgle sæt
     med succes.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API nøglesæt med succes.
   wwcRateLimit: Dine oversættelser er begrænset. Vent venligst et anden {0} sekunder.
   wwcConfigCacheEnabled: Translator cache aktiveret og sat til en grænse på {0}.
   wwctGUIExistingTranslationButton: Overskriv nuværende oversættelsessession
@@ -188,7 +178,6 @@ Messages:
   wwcInvalidTranslator: Ugyldige indstillinger for oversætter. Løs venligst dette
     i din config.yml eller med /wwcc for at bruge dette plugin.
   wwcConfigGUIEachTranslatorSettings: '{0} Konfiguration'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tolererer ikke brugen af /genindlæsning. Fortsæt
     venligst med forsigtighed.
   wwcConfigEnabledDebugMode: Aktiveret fejlsøgningstilstand. Hvis du ikke er udvikler
@@ -307,10 +296,7 @@ Messages:
     Genindlæs for ændringen træder i kraft.
   wwcConfigYAMLDefault: Standard til YAML til datalagring.
   wwcConfigGUISQLMenuButton: Skift SQL-indstillinger
-  wwcConfigConversationWatsonTranslateToggleSuccess: Succesfuld skikket Watson Translate.
-    Genindlæs for ændringen træder i kraft.
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Oversæt
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Oversæt
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Oversæt
   wwcConfigGUIStorageSettings: Storage Konfiguration
   wwcConfigConversationAmazonTranslateToggleSuccess: Succesfuld slået Amazon Translate.
@@ -635,8 +621,6 @@ Messages:
     succes.
   wwcConfigVaultSupportInvalid: Ugyldig understøttelse af boks angivet i config.yml.
     Standard til sandt...
-  wwcWatsonDeprecation: Watson er blevet forældet og understøttes ikke længere af
-    IBM. Overvej venligst at skifte, da support til det fjernes i den næste opdatering.
   wwcConfigForceChatChannelEnabled: En separat oversættelseskanal vil blive tvunget
     under alle oversættelser.
   wwcConfigConversationSeparateChatChannelForceSuccess: Skiftet med succes og tvang
@@ -650,7 +634,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Skift separat kanalikon
   wwcConfigConversationChatFormatSuccess: Dit format er blevet ændret med succes.
   wwcConfigGUISeparateChatChannelForceButton: Tving separat kanal
-  wwcOrigHover: 'Oprindelig besked: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Oprindelig udgående chat
     knyttet til oversættelse, da musetekst skiftes med succes.
   wwcConfigGUISendOutgoingHoverTextChatButton: Tilføj originale udgående meddelelser
@@ -675,16 +658,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Aktivér sortliste
   wwcConfigConversationBlacklistDeletionSuccess: Slettede udtrykket med succes.
   wwcConfigGUIChatChannelSettings: Konfiguration af chatkanal
-  wwcConfigGUIChatBlacklistSuccess: Skiftet sortlisten med succes.
   wwcConfigGUIChatMessagesBlacklistNewButton: Tilføj nyt ord
   wwcConfigGUIChatChannelButton: Oversæt kanalindstillinger
   wwcConfigGUIBlacklistMessagesModify: Ændre udtryk ({0})
   wwcConfigChatChannelFormatInvalid: Ugyldigt kanalformat fundet. Standardindstilling
     til {0}...
-  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
-    er {0}. Vores standard anerkendte argumenter, som du kan inkludere: {1}. Hvis
-    du har PlaceHolderAPI, skal du sørge for, at disse variabler er omgivet af procenter
-    (%) i stedet. Skriv 0 for at gå tilbage.'
   wwcConfigGUIModifyBlacklistSettings: Rediger sortliste
   wwcConfigGUINextPageButton: Næste side
+  wwcConfigChatChannelHoverFormatInvalid: Ugyldigt hover-format fundet. Standardindstilling
+    til {0}...
+  wwcOrigHover: Oprindelig besked
+  wwctGUIMainMenuPlayer: Oversæt {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat har opdaget og vil afspejle din Minecraft-lokalisering
+    ({0}). Skriv {1} for flere detaljer.
+  wwcConfigBadYaml: 'Ugyldig YAML-fil fundet: {0}. Forsøg at rette denne fil, ellers
+    kan den blive slettet!'
+  wwcConfigConversationChatBlacklistSuccess: Skiftet sortlisten med succes.
+  wwcConfigConversationChannelHoverFormatInput: 'Det aktuelle format for oversættelse
+    af musepekst er {0}. Mulige standardargumenter: {1}. Hvis du har PlaceHolderAPI,
+    skal du sørge for, at disse variabler er omgivet af procenter (%) i stedet. Skriv
+    0 for at gå tilbage.'
+  wwcConfigConversationChannelFormatInput: 'Det aktuelle format for den separate chatkanal
+    er {0}. Mulige standardargumenter: {1}. Hvis du har PlaceHolderAPI, skal du sørge
+    for, at disse variabler er omgivet af procenter (%) i stedet. Skriv 0 for at gå
+    tilbage.'
+  wwcConfigConversationChatHoverFormatSuccess: Dit hover-format er blevet ændret med
+    succes.
+  wwcConfigConversationLocalizeSyncSuccess: Vellykket synkronisering af brugerlokalisering.
+  wwcConfigGUILocalizeSyncButton: Synkroniser brugerlokalisering
+  wwcConfigSyncUserLocalInvalid: Synkroniser brugerlokaliseringsindstilling ugyldig.
+    Standard til sandt...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Skift Hover Text Format
+  wwcdResetWarn: 'ADVARSEL: Denne kommando nulstiller alle data fuldstændigt inklusive
+    poster og dine aktive oversættere. KØR IKKE DENNE KOMMANDO, MEDMINDRE DU VED,
+    HVAD DU LAVER: {0}'
+  wwcdResetNotif: WorldwideChat er blevet nulstillet. Genindlæser...
+  wwcdResetNotifError: Ikke alle data blev slettet med succes. Har du forbindelse
+    til din database?
+  colorCodeWarning: Brug af farvekoder kan give dig uforudsigelige resultater.
 

@@ -167,15 +167,19 @@ public class LoadUserData implements Runnable {
 			}
 		} else {
 			for (File eaFile : statsFolder.listFiles()) {
+				if (!(eaFile.isFile() && eaFile.getName().endsWith(".yml"))) {
+					refs.debugMsg("invalid record file: " + eaFile.getName());
+					continue;
+				}
+
 				// Load current file
 				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 				try {
 					Reader currConfigStream = new InputStreamReader(main.getResource("default-player-record.yml"), "UTF-8");
 					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
-				} catch (UnsupportedEncodingException e) {
-					e.printStackTrace();
-					main.getServer().getPluginManager().disablePlugin(main);
-					return;
+				} catch (Exception e) {
+					main.getLogger().warning(refs.getMsg("wwcConfigBadYaml", new String[] {eaFile.getAbsolutePath()}, null));
+					continue;
 				}
 				currFileConfig.options().copyDefaults(true);
 				
@@ -305,15 +309,19 @@ public class LoadUserData implements Runnable {
 			}
 		} else {
 			for (File eaFile : userDataFolder.listFiles()) {
+				if (!(eaFile.isFile() && eaFile.getName().endsWith(".yml"))) {
+					refs.debugMsg("invalid active trans file: " + eaFile.getName());
+					continue;
+				}
+
 				// Load current user translation file
 				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 				try {
 					Reader currConfigStream = new InputStreamReader(main.getResource("default-active-translator.yml"), "UTF-8");
 					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
-				} catch (UnsupportedEncodingException e) {
-					e.printStackTrace();
-					main.getServer().getPluginManager().disablePlugin(main);
-					return;
+				} catch (Exception e) {
+					main.getLogger().warning(refs.getMsg("wwcConfigBadYaml", new String[] {eaFile.getAbsolutePath()}, null));
+					continue;
 				}
 				currFileConfig.options().copyDefaults(true);
 				
@@ -421,15 +429,19 @@ public class LoadUserData implements Runnable {
 				}
 			} else {
 				for (File eaFile : cacheFolder.listFiles()) {
+					if (!(eaFile.isFile() && eaFile.getName().endsWith(".yml"))) {
+						refs.debugMsg("invalid cache file: " + eaFile.getName());
+						continue;
+					}
+
 					// Load current user translation file
 					YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 					try {
 						Reader currConfigStream = new InputStreamReader(main.getResource("default-persistent-cache.yml"), "UTF-8");
 						currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
-					} catch (UnsupportedEncodingException e) {
-						e.printStackTrace();
-						main.getServer().getPluginManager().disablePlugin(main);
-						return;
+					} catch (Exception e) {
+						main.getLogger().warning(refs.getMsg("wwcConfigBadYaml", new String[] {eaFile.getAbsolutePath()}, null));
+						continue;
 					}
 					currFileConfig.options().copyDefaults(true);
 

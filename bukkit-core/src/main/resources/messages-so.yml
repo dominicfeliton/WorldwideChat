@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Ku guuldareystay inuu ku xiro {0}. Hubi in aqoonsigaaga
     iyo firewall si sax ah loo qaabeeyey!
   wwcConfigEnabledbStats: bStats karti.
-  wwctGUIMainMenuPlayer: Menu Translation of {0}
   wwctGUIBookButton: Turjumidda Buugga Toggle
   wwcLangDetected: Luqad la ogaaday {0}.
   wwcBookTranslateStart: Tarjumidda buugga bartilmaameedka...
@@ -54,7 +53,6 @@ Messages:
   wwctPlayerNotFound: Ciyaartoy {0} lama helin.
   wwcConfigGUIAmazonTranslateRegionButton: Beddel Gobolka Amazon
   wwcConfigConversationLangInvalid: Koodhka luqadda oo aan sax ahayn!
-  wwcConfigGUIWatsonAPIKeyButton: Badalka Furaha Watson API
   wwcEnabled: Noocyada WorldwideChat ee la kartiday {0}.
   wwctbOnSender: Book tarjumaad karti. Xuquuqda-riix inta aad haysato buug si aad
     u turjumto!
@@ -66,8 +64,6 @@ Messages:
   wwcUpdaterConnectionFailed: Awoodin in la hubiyo updates ugu dambeeyey ee Github.
   watsonNotFoundExceptionNotification: Awoodin in ay turjumaan aad aqbasho kasta oo
     dheeraad ah.
-  wwcConfigConversationWatsonAPIKeyInput: Furaha API ee imika waa {0}. Fadlan gali
-    furaha API ee Watson, ama nooca 0 si aad ugu noqoto.
   wwctGUIStopButton: Jooji Tarjumidda
   wwcgTranslationStopped: Turjumaadda chat Global ayaa la joojiyay.
   wwcUpdaterFutureDate: Tusaale ahaan WorldwideChat waxay leedahay nooc ka weyn kan
@@ -78,12 +74,8 @@ Messages:
     aad u dheer tahay. Turjumaad:'
   wwctsOnTarget: Saxiix turjumaad awood u yeelo {0}.
   wwcConfigCacheDisabled: kayd Translator naafo.
-  wwcConfigConversationWatsonURLInput: URL hadda waa {0}. Fadlan geli URL adeeg ee
-    Watson, ama nooca 0 si aad dib ugu noqoto.
   wwcBookDone: Book si guul leh loo tarjumay.
   wwctsOnSender: Turjumaad Sign karti. Xuquuqda-riix calaamad si ay u turjumaan!
-  watsonColorCodeWarning: Isticmaalka codes midabka ku siin karaan natiijooyinka aan
-    la saadaalin karin.
   wwctGUITranslationButton: Bilow Tarjumidda
   wwctGUIAutoDetectButton: Luqadda Isha ee Auto-ogaanshaha
   wwcUpdaterUpToDate: WorldwideChat waa ilaa taariikhda!
@@ -96,7 +88,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat waa mid taariikhda ka baxsan. Fadlan u cusboonaysiiso
     version ugu dambeeyey.
   wwcConfigConversationRateLimitSuccess: xadka Rate si guul leh dhigay.
-  wwcConfigConversationWatsonURLSuccess: Watson URL si guul leh u dhigay.
   wwctbPlayerNotFound: Ciyaartoy {0} midkood lama helin, ama ma aha turjumaan firfircoon.
   wwcConfigConversationTranslationCacheSuccess: Translation xadka kayd si guul leh
     dhigay.
@@ -115,7 +106,6 @@ Messages:
   wwcConfigRateLimitInvalid: xadka heerka Bad dhigay config.yml. Default ilaa 0 ilbiriqsi...
   wwcSignTranslateStart: Tarjumidda calaamad bartilmaameedka...
   wwcConfigGUIChatSettings: Chat haggaajin
-  wwcConfigGUIWatsonURLButton: Beddel URL Adeega Watson
   wwcConfigConversationUpdateCheckerSuccess: Update dib u dhac hubiyaha dhigay si
     guul leh.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Wadahadal caalami ah ayaa laga
@@ -133,7 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tarjumidda la isku dayay: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon set muhiimka ah si
     guul leh.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API set muhiimka ah si guul leh.
   wwcRateLimit: turjumaadaha waxaa heerka ku koobnayn. Fadlan sug ilbiriqsi kale {0}.
   wwcConfigCacheEnabled: Cache turjumaan awood iyo qarka u saaran in xadka ah {0}.
   wwctGUIExistingTranslationButton: Overwrite Kalfadhiga Turjumaadda ee hadda
@@ -192,7 +181,6 @@ Messages:
   wwcInvalidTranslator: Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in aad
     config.yml ama /wwcc si aad u isticmaasho plugin this.
   wwcConfigGUIEachTranslatorSettings: '{0} Hagaajinta'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ma waafaqsanayn isticmaalka /reload. Fadlan
     sii wad si taxadar leh.
   wwcConfigEnabledDebugMode: hab DEBug karti. Haddii aadan ahayn horumariye ama dhibta,
@@ -314,10 +302,7 @@ Messages:
     Dib u cusbooneysii isbedelka si uu u dhaqan geliyo.
   wwcConfigYAMLDefault: Defaulted in YAML kaydinta xogta.
   wwcConfigGUISQLMenuButton: Beddel Settings SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Si guul leh toggled Watson Translate.
-    Dib u cusbooneysii isbedelka si uu u dhaqan geliyo.
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
-  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Translate
   wwcConfigGUIStorageSettings: haggaajin kaydinta
   wwcConfigConversationAmazonTranslateToggleSuccess: Si guul leh u roggled Amazon
@@ -653,8 +638,6 @@ Messages:
     wadada
   wwcConfigVaultSupportInvalid: Taageerada qaabta ah oo lagu sameeyay config.yml.
     Deegaanta in dhab...
-  wwcWatsonDeprecation: Watson waxa la dhacay waxaana ma taageersan IBM. Fadlan ka
-    fiiray bedelka, iyadoo taageero loo saari doono cusboonkii xiga.
   wwcConfigForceChatChannelEnabled: Kanaal Gooni ah oo tarjimada lagu qasabayaa xilli
     dhamaan tarjimada.
   wwcConfigConversationSeparateChatChannelForceSuccess: Si guul guul la qaaday kanaalka
@@ -668,7 +651,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: Bedelka Icon Channel Gooni ah
   wwcConfigConversationChatFormatSuccess: Qaabkaaga waxaa si guul la bedelay.
   wwcConfigGUISeparateChatChannelForceButton: Channel Gooni ah ee Ciidanka
-  wwcOrigHover: 'Fariin Asal: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Xadhadalada asli oo baxaya
     oo la xidhigay tarjimada sida qoraalka hover oo si guul ah la
   wwcConfigGUISendOutgoingHoverTextChatButton: Kudar Fariimaha Baxda Asli ah sida
@@ -693,16 +675,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Liiska madow u ogolaan
   wwcConfigConversationBlacklistDeletionSuccess: Waxaa si guul la jiray muuqda.
   wwcConfigGUIChatChannelSettings: Configuration Channel Chat
-  wwcConfigGUIChatBlacklistSuccess: Si guul la wareegay liiska madow.
   wwcConfigGUIChatMessagesBlacklistNewButton: Kudar Eyn Cusub
   wwcConfigGUIChatChannelButton: Tarjumaad Saadigaha Channel
   wwcConfigGUIBlacklistMessagesModify: Beddelka Termada ({0})
   wwcConfigChatChannelFormatInvalid: Qaabka kanaalka ah oo la ogaaday Defaulting to
     {0}...
-  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
-    ah waa {0}. Doodkeena oo la aqoonsaday oo aad ka mid kartaa: {1}. Haddii aad leeyihiin
-    PlaceholderAPI, hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca
-    0 si aad dib ugu soo noqon.'
   wwcConfigGUIModifyBlacklistSettings: Bedelka Liiska Madow
   wwcConfigGUINextPageButton: Bogga Xiga
+  wwcConfigChatChannelHoverFormatInvalid: Qaabka hover waad ah la ogaaday. Defaulting
+    to {0}...
+  wwcOrigHover: Fariin Asal
+  wwctGUIMainMenuPlayer: Tarjumaad {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ayaa ogaaday oo muujinaysa deegaankaaga
+    Minecraft ({0}). Nooca {1} oo faahfaahin dheeraad ah.
+  wwcConfigBadYaml: 'Faylka YAML ah oo lagu ogaaday: {0}. Fadlan isku dayi in la saxiyo
+    faylkan ama waa la riir karaa!'
+  wwcConfigConversationChatBlacklistSuccess: Si guul la wareegay liiska madow.
+  wwcConfigConversationChannelHoverFormatInput: 'Qaabka hadda ee tarjimada qoraalka
+    hover waa {0}. Doodaha lagu suurtagayo: {1}. Haddii aad leeyihiin PlaceholderAPI,
+    hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca 0 si aad dib
+    ugu soo noqon.'
+  wwcConfigConversationChannelFormatInput: 'Qaabka hadda ee kanaalka wadada gooni
+    ah waa {0}. Doodaha lagu suurtagayo: {1}. Haddii aad leeyihiin PlaceholderAPI,
+    hubaa hubaahay ay ku xeerayeen boqoltooyinka (%) halkeeda. Nooca 0 si aad dib
+    ugu soo noqon.'
+  wwcConfigConversationChatHoverFormatSuccess: Qaabkaaga hover ayaa si guul ah la
+    beddelay.
+  wwcConfigConversationLocalizeSyncSuccess: Si guul la toogay deegaanka isticmaalka
+    sameynta.
+  wwcConfigGUILocalizeSyncButton: Goobta Isticmaalka Sync
+  wwcConfigSyncUserLocalInvalid: Deegaanka isgelinta isticmaalka Sync. Deegaanta in
+    dhab...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Bedelka Qaabka Qoraalka Hover
+  wwcdResetWarn: 'DIGNIIN: Taliskan oo si gabi ah dib u dib u dib doonaa dhamaan xogta
+    oo ay ku jiraan diiwa HA MARADIN AMARKAAN MARKA AAD OGAAN WAXA AAD SAMEEYNAA:
+    {0}'
+  wwcdResetNotif: WorldwideChat waxa loo dib u dib u dhigay. Dib u laadaya...
+  wwcdResetNotifError: Maana dhammaan xogta lagu guul lahaa. Ma xidhiidhnaa xidhibaadkaaga?
+  colorCodeWarning: Isticmaalka koodaha midabka waxay kugu siiyo natiijayo aan la
 

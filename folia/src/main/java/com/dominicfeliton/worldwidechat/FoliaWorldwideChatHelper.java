@@ -11,11 +11,18 @@ import java.util.function.Consumer;
 
 public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
 
-    WorldwideChat main = WorldwideChat.instance;
+    WorldwideChat main;
 
-    CommonRefs refs = main.getServerFactory().getCommonRefs();
+    CommonRefs refs;
 
-    ServerAdapterFactory adapter = main.getServerFactory();
+    ServerAdapterFactory adapter;
+
+    public FoliaWorldwideChatHelper() {
+        super();
+        this.main = WorldwideChat.instance;
+        this.refs = main.getServerFactory().getCommonRefs();
+        this.adapter = main.getServerFactory();
+    }
 
     // TODO: Make sure task cancellation works on folia like in paper identical 1:1
     @Override
@@ -53,7 +60,7 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                 break;
             case REGION:
                 // TODO: TEST!
-                if (taskObjs.length == 0) {
+                if (taskObjs == null || taskObjs.length == 0) {
                     main.getLogger().severe("Requested region scheduler but did not pass a location/world! Please contact the dev.");
                     return;
                 }
@@ -85,7 +92,7 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                 }
                 break;
             case ENTITY:
-                if (taskObjs.length == 0 || !(taskObjs[0] instanceof Entity)) {
+                if (taskObjs == null || taskObjs.length == 0 || !(taskObjs[0] instanceof Entity)) {
                     main.getLogger().severe("Requested entity scheduler but did not pass an entity! Please contact the dev.");
                     return;
                 }

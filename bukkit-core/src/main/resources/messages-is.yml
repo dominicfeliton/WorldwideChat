@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Mistókst að tengjast við {0}. Gakktu úr skugga um að
     persónuskilríki og eldveggur séu stilltir rétt!
   wwcConfigEnabledbStats: Virkt bStats.
-  wwctGUIMainMenuPlayer: Þýðing Valmynd af {0}
   wwctGUIBookButton: Skipta Book Þýðing
   wwcLangDetected: Grein tungumál {0}.
   wwcBookTranslateStart: Þýða miða bók...
@@ -53,7 +52,6 @@ Messages:
   wwctPlayerNotFound: Leikmaður %Ég fann ekki.
   wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
   wwcConfigConversationLangInvalid: Ógildur tungumálakóði!
-  wwcConfigGUIWatsonAPIKeyButton: Breyta Watson API Lykill
   wwcEnabled: Virkja WorldwideChat útgáfa {0}.
   wwctbOnSender: Bók þýðing virkt. Hægrismelltu á meðan þú heldur bók til að þýða
     það!
@@ -64,8 +62,6 @@ Messages:
   wwctsOffTarget: Sign þýðing óvirk fyrir {0}.
   wwcUpdaterConnectionFailed: Ekki er hægt að athuga nýjustu uppfærslur á Github.
   watsonNotFoundExceptionNotification: Ekki er hægt að þýða inntakið þitt lengra.
-  wwcConfigConversationWatsonAPIKeyInput: Núverandi API lykill er {0}. Vinsamlegast
-    sláðu inn API lykil fyrir Watson, eða tegund 0 til að fara aftur.
   wwctGUIStopButton: Hættu að þýða
   wwcgTranslationStopped: Global spjall þýðing hefur verið hætt.
   wwcUpdaterFutureDate: Þetta dæmi af WorldwideChat hefur meiri útgáfu en nýjasta
@@ -76,11 +72,8 @@ Messages:
     Þýðing:'
   wwctsOnTarget: Sign þýðing virkt fyrir {0}.
   wwcConfigCacheDisabled: Þýðandi skyndiminni óvirk.
-  wwcConfigConversationWatsonURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
-    inn þjónustuslóð fyrir Watson, eða tegund 0 til að fara aftur.
   wwcBookDone: Bókin þýdd með góðum árangri.
   wwctsOnSender: Skilti þýðing virkt. Hægrismelltu á skilti til að þýða það!
-  watsonColorCodeWarning: Notkun litakóða getur gefið þér ófyrirsjáanlegar niðurstöður.
   wwctGUITranslationButton: Byrja að þýða
   wwctGUIAutoDetectButton: Auto-uppgötva Heimild Tungumál
   wwcUpdaterUpToDate: WorldwideChat er upp til dagsetning!
@@ -93,7 +86,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu
     útgáfuna.
   wwcConfigConversationRateLimitSuccess: Hlutfall mörk sett með góðum árangri.
-  wwcConfigConversationWatsonURLSuccess: Watson URL sett með góðum árangri.
   wwctbPlayerNotFound: Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
     þýðandi.
   wwcConfigConversationTranslationCacheSuccess: Þýðing skyndiminni mörk sett með góðum
@@ -113,7 +105,6 @@ Messages:
     0 sekúndna...
   wwcSignTranslateStart: Þýða miða merki...
   wwcConfigGUIChatSettings: Spjall Stillingar
-  wwcConfigGUIWatsonURLButton: Breyta Watson Service URL
   wwcConfigConversationUpdateCheckerSuccess: Uppfæra afgreiðslumaður töf sett með
     góðum árangri.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt frá {0}
@@ -132,7 +123,6 @@ Messages:
   wwcsAttemptedTranslations: 'Tilraun Þýðingar: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon leyndarmál lykill sett
     með góðum árangri.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API lykill sett með góðum árangri.
   wwcRateLimit: Þýðingar þínar eru hlutfall takmörkuð. Vinsamlegast bíðið annað {0}
     sekúndur.
   wwcConfigCacheEnabled: Þýðandi skyndiminni virkt og stillt á takmörk af {0}.
@@ -193,7 +183,6 @@ Messages:
   wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
     eða með/wwcc til að nota þessa tappi.
   wwcConfigGUIEachTranslatorSettings: '{0} Stillingar'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ekki condone notkun/endurhlaða. Vinsamlegast
     haltu áfram með varúð.
   wwcConfigEnabledDebugMode: Virkja kembiforrit ham. Ef þú ert ekki verktaki eða bilanaleit,
@@ -306,10 +295,7 @@ Messages:
     Endurhlaða fyrir breytinguna til að taka gildi.
   wwcConfigYAMLDefault: Vanskil á YAML fyrir gagnageymslu.
   wwcConfigGUISQLMenuButton: Breyta SQL stillingum
-  wwcConfigConversationWatsonTranslateToggleSuccess: Tókst skipt Watson Translate.
-    Endurhlaða fyrir breytinguna til að taka gildi.
   wwcConfigGUIToggleGoogleTranslateButton: Skipta Google Þýða
-  wwcConfigGUIToggleWatsonTranslateButton: Skipta Watson Þýða
   wwcConfigGUIToggleAmazonTranslateButton: Skipta Amazon Þýða
   wwcConfigGUIStorageSettings: Geymsla stillingar
   wwcConfigConversationAmazonTranslateToggleSuccess: Tókst skipt Amazon Translate.
@@ -643,9 +629,6 @@ Messages:
     góðum árangri.
   wwcConfigVaultSupportInvalid: Ógildur stuðningur við gröfu sett í config.yml. Að
     vanskil á satt...
-  wwcWatsonDeprecation: Watson hefur verið aflétt og er ekki lengur studdur af IBM.
-    Vinsamlegast íhugaðu að skipta, þar sem stuðningur við það verður fjarlægður í
-    næstu uppfærslu.
   wwcConfigForceChatChannelEnabled: Sérstök þýðingarrás verður þvinguð meðan á öllum
     þýðingum stendur.
   wwcConfigConversationSeparateChatChannelForceSuccess: Tókst var að þvinga aðskilda
@@ -661,7 +644,6 @@ Messages:
   wwcConfigConversationChatFormatSuccess: Sniði þínu hefur verið breytt með góðum
     árangri.
   wwcConfigGUISeparateChatChannelForceButton: Þvingaðu aðskilda rás
-  wwcOrigHover: 'Upprunalega skilaboð: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Upprunalega útleið spjall
     fylgir þýðingu sem sveima texta kveikt með góðum árangri.
   wwcConfigGUISendOutgoingHoverTextChatButton: Bæta við upprunalegum sendingarskilaboðum
@@ -686,15 +668,41 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Virkja svartan lista
   wwcConfigConversationBlacklistDeletionSuccess: Með góðum árangri eytt hugtakinu.
   wwcConfigGUIChatChannelSettings: Stillingar spjallrásar
-  wwcConfigGUIChatBlacklistSuccess: Tókst að skipta um svarta listann.
   wwcConfigGUIChatMessagesBlacklistNewButton: Bæta við nýju orði
   wwcConfigGUIChatChannelButton: Þýða rásarstillingar
   wwcConfigGUIBlacklistMessagesModify: Breyta hugtakinu ({0})
   wwcConfigChatChannelFormatInvalid: Ógilt rássnið greindist. Sjálfgefið að {0}...
-  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
-    er {0}. Sjálfgefin viðurkennd rök okkar sem þú getur látið fylgja með: {1}. Ef
-    þú ert með PlaceholderAPI skaltu ganga úr skugga um að þær breytur séu umkringdar
-    prósentum (%) í staðinn. Sláðu inn 0 til að fara aftur.'
   wwcConfigGUIModifyBlacklistSettings: Breyta svarta lista
   wwcConfigGUINextPageButton: Næsta síða
+  wwcConfigChatChannelHoverFormatInvalid: Ógilt sveimsnið greint. Sjálfgefið að {0}...
+  wwcOrigHover: Upprunaleg skilaboð
+  wwctGUIMainMenuPlayer: Þýða {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat hefur greint og mun endurspegla Minecraft
+    staðsetningu þína ({0}). Sláðu inn {1} til að fá frekari upplýsingar.
+  wwcConfigBadYaml: 'Ógild YAML skrá fannst: {0}. Vinsamlegast reyndu að laga þessa
+    skrá eða henni gæti verið eytt!'
+  wwcConfigConversationChatBlacklistSuccess: Tókst að skipta um svarta listann.
+  wwcConfigConversationChannelHoverFormatInput: 'Núverandi snið fyrir þýðingarsveima
+    texta er {0}. Möguleg sjálfgefin rök: {1}. Ef þú ert með PlaceholderAPI skaltu
+    ganga úr skugga um að þær breytur séu umkringdar prósentum (%) í staðinn. Sláðu
+    inn 0 til að fara aftur.'
+  wwcConfigConversationChannelFormatInput: 'Núverandi snið fyrir aðskilda spjallrásina
+    er {0}. Möguleg sjálfgefin rök: {1}. Ef þú ert með PlaceholderAPI skaltu ganga
+    úr skugga um að þær breytur séu umkringdar prósentum (%) í staðinn. Sláðu inn
+    0 til að fara aftur.'
+  wwcConfigConversationChatHoverFormatSuccess: Sveimsniðinu þínu hefur verið breytt
+    með góðum árangri.
+  wwcConfigConversationLocalizeSyncSuccess: Tekist að skipta um samstillingu staðsetningar
+    notenda.
+  wwcConfigGUILocalizeSyncButton: Samstilltu staðsetningu notenda
+  wwcConfigSyncUserLocalInvalid: Samstilling staðsetningarstillingar notenda ógild.
+    Að vanskil á satt...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Breyta sveimi textasniði
+  wwcdResetWarn: 'VIÐVÖRUN: Þessi skipun mun fullkomlega endurstilla öll gögn þar
+    á meðal færslur og virka þýðendur þína. EKKI KEYRA ÞESSA SKIPUN NEMA ÞÚ VITIR
+    HVAÐ ÞÚ ERT AÐ GERA: {0}'
+  wwcdResetNotif: WorldwideChat hefur verið endurstillt. Endurhleðsla...
+  wwcdResetNotifError: Ekki voru öll gögn þurrkuð með góðum árangri. Ertu tengdur
+    við gagnagrunninn þinn?
+  colorCodeWarning: Notkun litakóða getur gefið þér ófyrirsjáanlegar niðurstöður.
 

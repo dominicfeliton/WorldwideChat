@@ -126,31 +126,14 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 	}
 
 	private Component formatMessage(AsyncPlayerChatEvent event, Player targetPlayer, String translation, String original, boolean incoming) {
-		Chat chat = main.getChat();
-		Component outMsg;
-		if (chat != null) {
-			// Vault Support
-			outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().getName());
-		} else {
-			// No Vault Support
-			TextComponent icon = main.getTranslateIcon();
-			outMsg = Component.empty()
-					.append(icon)
-					.append(refs.deserial(String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation)));
-		}
+		// Vault Support (if it exists)
+		Component outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().getName());;
 
-		if (incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-			refs.debugMsg("Hover incoming!");
-			Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {original}, "&f&o", targetPlayer);
+		if ((incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat"))
+				|| (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
+			refs.debugMsg("Add hover!");
 			outMsg = outMsg
-					.hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
-		}
-
-		if (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat")) {
-			refs.debugMsg("Hover outgoing!");
-			Component hover = refs.getFancyMsg("wwcOrigHover", new String[] {original}, "&f&o", targetPlayer);
-			outMsg = outMsg
-					.hoverEvent(HoverEvent.showText(hover.decorate(TextDecoration.ITALIC)));
+					.hoverEvent(HoverEvent.showText(super.getVaultHoverMessage(event.getPlayer(), refs.deserial(original), refs.deserial(event.getPlayer().getName()), targetPlayer)));
 		}
 
 		return outMsg;

@@ -32,6 +32,9 @@ public class ChatSettingsConvos {
 
 	private static WWCInventoryManager invMan = new WWCInventoryManager();
 
+	// TODO: ALSO Render Icons/Formats in prompt message.
+	// TODO: Add hoverFormat
+
 	public static class ChannelIcon extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
@@ -56,7 +59,7 @@ public class ChatSettingsConvos {
 
 	public static class ChannelFormat extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
-		private String vars = "{prefix}, {username}, {suffix}";
+		private String vars = "{prefix}, {username}, {suffix}, {local:XXX}";
 
 		@Override
 		public String getPromptText(ConversationContext context) {
@@ -65,17 +68,38 @@ public class ChatSettingsConvos {
 			currPlayer.closeInventory();
 			return refs.serial(refs.getFancyMsg("wwcConfigConversationChannelFormatInput",
 					new String[] {"&r" + main.getConfigManager().getMainConfig().getString("Chat.separateChatChannel.format"),
-							vars},
+							"&6"+vars},
 					"&b",
 					currPlayer));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			Player currPlayer = ((Player) context.getForWhom());
-
 			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
 					"Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
+		}
+	}
+
+	public static class ChannelHoverFormat extends StringPrompt {
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
+		private String vars = "{prefix}, {username}, {suffix}, {local:XXX}";
+
+		@Override
+		public String getPromptText(ConversationContext context) {
+			/* Close any open inventories */
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return refs.serial(refs.getFancyMsg("wwcConfigConversationChannelHoverFormatInput",
+					new String[] {"&r" + main.getConfigManager().getMainConfig().getString("Chat.separateChatChannel.hoverFormat"),
+							"&6"+vars},
+					"&b",
+					currPlayer));
+		}
+
+		@Override
+		public Prompt acceptInput(ConversationContext context, String input) {
+			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatHoverFormatSuccess",
+					"Chat.separateChatChannel.hoverFormat", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
 		}
 	}
 

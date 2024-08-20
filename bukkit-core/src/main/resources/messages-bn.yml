@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} এর সাথে সংযোগ করতে ব্যর্থ। নিশ্চিত করুন যে আপনার
     শংসাপত্র এবং ফায়ারওয়াল সঠিকভাবে কনফিগার করা আছে!'
   wwcConfigEnabledbStats: সক্রিয় bStats।
-  wwctGUIMainMenuPlayer: '{0} এর অনুবাদ মেনু'
   wwctGUIBookButton: বইয়ের অনুবাদ টগল করুন
   wwcLangDetected: ভাষা {0} সনাক্ত করা হয়েছে।
   wwcBookTranslateStart: টার্গেট বই অনুবাদ করা হচ্ছে...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: খেলোয়াড় {0} পাওয়া যায়নি।
   wwcConfigGUIAmazonTranslateRegionButton: আমাজন অঞ্চল পরিবর্তন করুন
   wwcConfigConversationLangInvalid: ভাষা কোড অবৈধ!
-  wwcConfigGUIWatsonAPIKeyButton: ওয়াটসন এপিআই কী পরিবর্তন করুন
   wwcEnabled: ওয়ার্ল্ডউইডচ্যাট সংস্করণ {0} সক্রিয় করা হয়েছে।
   wwctbOnSender: বইয়ের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য একটি বই ধরে রাখার
     সময় ডান-ক্লিক করুন!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: '{0} এর জন্য অনুবাদ নিষ্ক্রিয় সাইন ইন করুন।'
   wwcUpdaterConnectionFailed: Github এ সর্বশেষ আপডেট পরীক্ষা করতে অক্ষম।
   watsonNotFoundExceptionNotification: আপনার ইনপুট আরও অনুবাদ করতে অক্ষম।
-  wwcConfigConversationWatsonAPIKeyInput: বর্তমান API কী {0}। অনুগ্রহ করে ওয়াটসনের
-    জন্য একটি API কী ইনপুট করুন, অথবা ফিরে যাওয়ার জন্য 0 টাইপ করুন।
   wwctGUIStopButton: অনুবাদ বন্ধ করুন
   wwcgTranslationStopped: গ্লোবাল আড্ডা অনুবাদ বন্ধ করা হয়েছে।
   wwcUpdaterFutureDate: ওয়ার্ল্ডউইডচ্যাটের এই দৃষ্টান্তটি সর্বশেষ জনসাধারণের তুলনায়
@@ -74,12 +70,9 @@ Messages:
     অনুবাদ:'
   wwctsOnTarget: '{0} এর জন্য সাইন অনুবাদ সক্রিয় করা হয়েছে।'
   wwcConfigCacheDisabled: অনুবাদক ক্যাশে নিষ্ক্রিয়
-  wwcConfigConversationWatsonURLInput: বর্তমান URL {0}। অনুগ্রহ করে ওয়াটসনের জন্য
-    একটি পরিষেবা URL ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcBookDone: বইটি সফলভাবে অনুবাদ করেছে।
   wwctsOnSender: অনুবাদ সক্রিয় সাইন ইন করুন। এটি অনুবাদ করতে একটি সাইন উপর ডান-ক্লিক
     করুন!
-  watsonColorCodeWarning: রঙ কোড ব্যবহার করে আপনি অনির্দেশ্য ফলাফল দিতে পারে।
   wwctGUITranslationButton: অনুবাদ শুরু করুন
   wwctGUIAutoDetectButton: উৎস ভাষা স্বয়ংক্রিয় সনাক্ত করো
   wwcUpdaterUpToDate: ওয়ার্ল্ডউইডচ্যাট আপ টু ডেট!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে
     আপডেট করুন।
   wwcConfigConversationRateLimitSuccess: রেট সীমা সফলভাবে সেট করা হয়েছে।
-  wwcConfigConversationWatsonURLSuccess: ওয়াটসন ইউআরএল সফলভাবে সেট করেছে।
   wwctbPlayerNotFound: প্লেয়ার {0} পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।
   wwcConfigConversationTranslationCacheSuccess: অনুবাদ ক্যাশে সীমা সফলভাবে সেট করা
     হয়েছে।
@@ -112,7 +104,6 @@ Messages:
     হচ্ছে...
   wwcSignTranslateStart: টার্গেট সাইন অনুবাদ করা হচ্ছে...
   wwcConfigGUIChatSettings: চ্যাট কনফিগারেশন
-  wwcConfigGUIWatsonURLButton: ওয়াটসন সার্ভিস URL পরিবর্তন করুন
   wwcConfigConversationUpdateCheckerSuccess: পরীক্ষক বিলম্ব সেট সফলভাবে আপডেট করুন
   wwcGlobalOnJoinTranslationNotificationSourceLang: গ্লোবাল চ্যাট {0} থেকে {1} তে
     অনুবাদ করা হচ্ছে।
@@ -127,7 +118,6 @@ Messages:
   wwcVersion: ওয়ার্ল্ডউইডচ্যাট, সংস্করণ
   wwcsAttemptedTranslations: 'অনুবাদের চেষ্টা করা হয়েছে: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ইসলাম গোপন কী সেট সফলভাবে
-  wwcConfigConversationWatsonAPIKeySuccess: ওয়াটসন API কী সেট সফলভাবে
   wwcRateLimit: আপনার অনুবাদগুলি হার সীমিত। অনুগ্রহ করে অন্য {0} সেকেন্ড অপেক্ষা করুন।
   wwcConfigCacheEnabled: অনুবাদক ক্যাশে সক্রিয় এবং {0} এর সীমা নির্ধারণ করা হয়েছে।
   wwctGUIExistingTranslationButton: বর্তমান অনুবাদের অধিবেশন মুছে দিন
@@ -184,7 +174,6 @@ Messages:
   wwcInvalidTranslator: অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।
   wwcConfigGUIEachTranslatorSettings: '{0} কনফিগারেশন'
-  wwcConfigGUIWatsonButton: ওয়াটসন
   wwcServerReloadWarning: ওয়ার্ল্ডউইডচ্যাট/রিলোডের ব্যবহারকে সমর্থন করে না। অনুগ্রহ
     করে সাবধানতার সাথে এগিয়ে যান।
   wwcConfigEnabledDebugMode: ডিবাগ মোড সক্রিয় করা হয়েছে আপনি যদি ডেভেলপার বা ট্রাবলশুটার
@@ -299,10 +288,7 @@ Messages:
     কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
   wwcConfigYAMLDefault: ডাটা স্টোরেজের জন্য YAML তে ডিফল্ট করা হয়েছে।
   wwcConfigGUISQLMenuButton: এসকিউএল সেটিংস পরিবর্তন করুন
-  wwcConfigConversationWatsonTranslateToggleSuccess: সফলভাবে ওয়াটসন অনুবাদ টগল করেছেন।
-    পরিবর্তন কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
   wwcConfigGUIToggleGoogleTranslateButton: গুগল অনুবাদ টগল
-  wwcConfigGUIToggleWatsonTranslateButton: ওয়াটসন অনুবাদ টগল করুন
   wwcConfigGUIToggleAmazonTranslateButton: আমাজন অনুবাদ টগল করুন
   wwcConfigGUIStorageSettings: সংগ্রহস্থল কনফিগারেশন
   wwcConfigConversationAmazonTranslateToggleSuccess: সফলভাবে টগল আমাজন অনুবাদ। পরিবর্তন
@@ -633,9 +619,6 @@ Messages:
     সেট
   wwcConfigVaultSupportInvalid: config.yml এ অবৈধ ভল্ট সমর্থন সেট করা হয়েছে। সত্যে
     ডিফল্ট করা হচ্ছে...
-  wwcWatsonDeprecation: ওয়াটসনকে অপ্রচলিত করা হয়েছে এবং এটি আর আইবিএম দ্বারা সমর্থিত
-    নয়। দয়া করে স্যুইচিং বিবেচনা করুন, কারণ পরবর্তী আপডেটে এর জন্য সমর্থন সরানো
-    হবে।
   wwcConfigForceChatChannelEnabled: সমস্ত অনুবাদের সময় একটি পৃথক অনুবাদ চ্যানেল বাধ্য
     করা হবে।
   wwcConfigConversationSeparateChatChannelForceSuccess: সফলভাবে পৃথক চ্যানেল জোর করে
@@ -649,7 +632,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: ভিন্ন চ্যানেল আইকন পরিবর্তন
   wwcConfigConversationChatFormatSuccess: আপনার বিন্যাস সফলভাবে পরিবর্তন করা হয়েছে।
   wwcConfigGUISeparateChatChannelForceButton: ফোর্স পৃথক চ্যানে
-  wwcOrigHover: 'মূল বার্তা: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: আসল বহির্গামী চ্যাট অনুবাদের
     সাথে সংযুক্ত হোভার টেক্সট সফলভাবে টগ করা হয়েছে
   wwcConfigGUISendOutgoingHoverTextChatButton: হোভার টেক্সট হিসাবে মূল বহির্গামী বার্তা
@@ -674,15 +656,41 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ব্ল্যাকলিস্ট সক্ষম করুন
   wwcConfigConversationBlacklistDeletionSuccess: সফলভাবে শব্দটি মুছে ফেলা হয়েছে
   wwcConfigGUIChatChannelSettings: চ্যাট চ্যানেল কন
-  wwcConfigGUIChatBlacklistSuccess: সফলভাবে ব্ল্যাকলিস্টটি টক করা হয়েছে।
   wwcConfigGUIChatMessagesBlacklistNewButton: নতুন শব্দ যোগ করুন
   wwcConfigGUIChatChannelButton: চ্যানেল সেটিং অনুবাদ
   wwcConfigGUIBlacklistMessagesModify: মেয়াদ পরিবর্তন করুন ({0})
   wwcConfigChatChannelFormatInvalid: বৈধ চ্যানেল বিন্যাস সনাক্ত {0} এ ডিফল্ট করা হচ্ছে...
-  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
-    আমাদের ডিফল্ট স্বীকৃত যুক্তি যা আপনি অন্তর্ভুক্ত করতে পারেন: {1}। আপনার যদি PlaceholderAPI
-    থাকে তবে নিশ্চিত করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে।
-    ফিরে যেতে 0 টাইপ করুন।'
   wwcConfigGUIModifyBlacklistSettings: ব্ল্যাকলিস্ট পরিবর্তন করুন
   wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
+  wwcConfigChatChannelHoverFormatInvalid: অবৈধ হোভার বিন্যাস সনাক্ত হয়েছে। {0} এ
+    ডিফল্ট করা হচ্ছে...
+  wwcOrigHover: মূল বার্তা
+  wwctGUIMainMenuPlayer: অনুবাদ {0}
+  wwcOnJoinSetLocaleSuccess: ওয়ার্ল্ডওয়াইডচ্যাট সনাক্ত করেছে এবং আপনার মাইনক্রাফ্ট
+    স্থানীয়করণ ({0}) প্রতিফলিত করবে। আরও বিস্তারিত জানার জন্য {1} টাইপ করুন।
+  wwcConfigBadYaml: 'অবৈধ YAML ফাইল সনাক্ত করা হয়েছে: {0}। দয়া করে এই ফাইলটি ঠিক
+    করার চেষ্টা করুন অথবা এটি মুছে ফেলা যেতে পারে!'
+  wwcConfigConversationChatBlacklistSuccess: সফলভাবে ব্ল্যাকলিস্টটি টক করা হয়েছে।
+  wwcConfigConversationChannelHoverFormatInput: 'অনুবাদ হোভার টেক্সটের বর্তমান বিন্যাস
+    {0}। সম্ভাব্য ডিফল্ট আর্গুমেন্ট: {1}। আপনার যদি প্লেসহোল্ডারএপিআই থাকে তবে নিশ্চিত
+    করুন যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে। ফিরে যেতে
+    0 টাইপ করুন।'
+  wwcConfigConversationChannelFormatInput: 'পৃথক চ্যাট চ্যানেলের বর্তমান বিন্যাস {0}।
+    সম্ভাব্য ডিফল্ট আর্গুমেন্ট: {1}। আপনার যদি PlaceholderAPI থাকে তবে নিশ্চিত করুন
+    যে সেই ভেরিয়েবলগুলি পরিবর্তে শতাংশ (%) দ্বারা বেষ্টিত রয়েছে। ফিরে যেতে 0 টাইপ
+    করুন।'
+  wwcConfigConversationChatHoverFormatSuccess: আপনার হোভার ফর্ম্যাট সফলভাবে পরিবর্তন
+    করা হয়েছে।
+  wwcConfigConversationLocalizeSyncSuccess: সফলভাবে সিঙ্কিং ইউজার স্থানীয়করণ টগল
+    করা হয়েছে
+  wwcConfigGUILocalizeSyncButton: ইউজার স্থানীয়করণ সিঙ্ক
+  wwcConfigSyncUserLocalInvalid: সিঙ্ক ইউজার স্থানীয়করণ সেটিং অবৈধ। সত্যে ডিফল্ট
+    করা হচ্ছে...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: হোভার টেক্সট বিন্যাস পরিবর্তন
+  wwcdResetWarn: 'সতর্কতা: এই কমান্ডটি পুরোপুরি রেকর্ড এবং আপনার সক্রিয় অনুবাদক সহ
+    সমস্ত ডেটা পুনরায় আপনি কী করছেন তা না জানা ততক্ষণ এই কমান্ডটি চালাবেন না: {0}'
+  wwcdResetNotif: ওয়ার্ল্ডওয়াইডচ্যাট পুনরায় সেট করা হয়েছে। পুনরায় লোড হচ্ছে...
+  wwcdResetNotifError: সব তথ্য সফলভাবে মুছে ফেলা হয়নি। আপনি কি আপনার ডাটাবেসের সাথে
+    সংযুক্ত?
+  colorCodeWarning: রঙ কোড ব্যবহার করা আপনাকে অপ্রত্যাশিত ফলাফল দিতে পারে।
 

@@ -8,9 +8,11 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.CharMatcher;
 import fr.minuskube.inv.SmartInventory;
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
+import net.kyori.adventure.text.TextReplacementConfig;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
@@ -43,8 +45,11 @@ import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class CommonRefs {
 
@@ -73,7 +78,6 @@ public class CommonRefs {
 		translatorPairs.put("Translator.useAmazonTranslate", "Amazon Translate");
 		translatorPairs.put("Translator.useLibreTranslate", "Libre Translate");
 		translatorPairs.put("Translator.useDeepLTranslate", "DeepL Translate");
-		translatorPairs.put("Translator.useWatsonTranslate", "Watson");
 		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
 		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
 		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
@@ -137,6 +141,7 @@ public class CommonRefs {
 	  * 'local' will check local lang list
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
+	// TODO: This should be enums not string
 	public SupportedLang getSupportedLang(String langName, String langType) {
 		/* Setup vars */
 		SupportedLang invalidLang = new SupportedLang("","","");
@@ -634,7 +639,7 @@ public class CommonRefs {
 					public void run() {
 						main.reload();
 					}
-				}, ASYNC, null);
+				}, GLOBAL, null);
 			}
 		}
 		
@@ -651,17 +656,6 @@ public class CommonRefs {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 
 		switch (translatorName) {
-			case "Watson":
-				WatsonTranslation watsonInstance;
-				if (isInitializing) {
-					watsonInstance = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-							mainConfig.getString("Translator.watsonURL"), true, main.getCallbackExecutor());
-				} else {
-					watsonInstance = new WatsonTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = watsonInstance.useTranslator();
-				break;
 			case "Google Translate":
 				GoogleTranslation googleTranslateInstance;
 				if (isInitializing) {
@@ -936,8 +930,6 @@ public class CommonRefs {
 	  */
 	private boolean isErrorToIgnore(Throwable throwable) {
 		// TOOD: Make sure this works properly again
-		// same as target == Watson
-		// detect the source language == Watson
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
 		if (exceptionMessage == null) {
 			// Usually just a timeout error. If a user gets this frequently they'll know something's wrong anyways
@@ -981,7 +973,7 @@ public class CommonRefs {
 		if ((inMessage.contains("&") && main.isActiveTranslator(currPlayer) && !(main.getActiveTranslator(currPlayer)
 						.getCCWarning()))) // check if user has already been sent CC warning
 		{
-			sendFancyMsg("watsonColorCodeWarning", "", "&d&o", currPlayer);
+			sendFancyMsg("colorCodeWarning", "", "&d&o", currPlayer);
 			main.getActiveTranslator(currPlayer)
 					.setCCWarning(true);
 			// we're still gonna translate it but it won't look pretty
@@ -1033,6 +1025,59 @@ public class CommonRefs {
 
 	public void badPermsMessage(String correctPerm, CommandSender sender) {
 		sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
+	}
+
+	public Component getChatChannelFormat(Component translateIcon, String translateFormat, String prefix, String username, String suffix, Player originPlayer, Player targetPlayer) {
+		Component out = Component.empty();
+		if (translateIcon != null) {
+			out = out.append(translateIcon);
+		}
+		String parsedFormat = translateFormat;
+
+		// Handle PAPI
+		int count = parsedFormat.length() - parsedFormat.replace("%", "").length();
+		if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+			if (originPlayer != null) {
+				debugMsg("Papi for player who sent message!");
+				parsedFormat = PlaceholderAPI.setPlaceholders(originPlayer, translateFormat);
+			} else {
+				debugMsg("Removing papi placeholders for console.");
+				parsedFormat = translateFormat.replaceAll("%[^%]+%", "");
+			}
+		}
+
+		// Handle Localizations
+		// If the targetPlayer is null, we use the originPlayer to get local
+		// If originPlayer is null, server lang will be used
+		Pattern local = Pattern.compile("\\{local:([^}]+)}");
+		Matcher match = local.matcher(parsedFormat);
+		while (match.find()) {
+			String extracted = match.group(1);
+			parsedFormat = parsedFormat.replace(match.group(0), getMsg(extracted, targetPlayer == null ? originPlayer : targetPlayer));
+		}
+
+		// Handle Default Placeholders
+		out = out.append(deserial(parsedFormat));
+		TextReplacementConfig p = TextReplacementConfig.builder()
+				.matchLiteral("{prefix}")
+				.replacement(deserial(prefix))
+				.build();
+
+		TextReplacementConfig u = TextReplacementConfig.builder()
+				.matchLiteral("{username}")
+				.replacement(deserial(username))
+				.build();
+
+		TextReplacementConfig s = TextReplacementConfig.builder()
+				.matchLiteral("{suffix}")
+				.replacement(deserial(suffix))
+				.build();
+
+		out = out.replaceText(p);
+		out = out.replaceText(s);
+		out = out.replaceText(u);
+
+		return out;
 	}
 
 	/**

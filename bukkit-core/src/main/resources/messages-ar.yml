@@ -18,7 +18,6 @@ Messages:
   wwcConfigConnectionFailed: فشل الاتصال بـ {0}. تأكد من تكوين بيانات الاعتماد وجدار
     الحماية بشكل صحيح!
   wwcConfigEnabledbStats: تمكين بستاتس.
-  wwctGUIMainMenuPlayer: قائمة الترجمة من {0}
   wwctGUIBookButton: تبديل ترجمة الكتاب
   wwcLangDetected: اللغة المكتشفة {0}.
   wwcBookTranslateStart: ترجمة الكتاب المستهدف...
@@ -48,7 +47,6 @@ Messages:
   wwctPlayerNotFound: لم يتم العثور على اللاعب %.
   wwcConfigGUIAmazonTranslateRegionButton: تغيير منطقة الأمازون
   wwcConfigConversationLangInvalid: رمز لغة غير صالح!
-  wwcConfigGUIWatsonAPIKeyButton: تغيير مفتاح واجهة برمجة التطبيقات واتسون
   wwcEnabled: تمكين نسخة ورلدويدشة {0}.
   wwctbOnSender: ترجمة الكتاب تمكين. انقر بزر الماوس الأيمن أثناء عقد كتاب لترجمته!
   wwcListenersInitialized: المستمعين تهيئة.
@@ -59,8 +57,6 @@ Messages:
   wwcUpdaterConnectionFailed: تعذر التحقق من وجود آخر التحديثات على Github.
   watsonNotFoundExceptionNotification: غير قادر على ترجمة المدخلات الخاصة بك إلى أبعد
     من ذلك.
-  wwcConfigConversationWatsonAPIKeyInput: مفتاح واجهة برمجة التطبيقات الحالي هو {0}.
-    الرجاء إدخال مفتاح API لـ Watson، أو اكتب 0 للعودة.
   wwctGUIStopButton: توقف عن الترجمة
   wwcgTranslationStopped: تم إيقاف ترجمة الدردشة العالمية.
   wwcUpdaterFutureDate: هذا المثال من WorldwideChat لديه نسخة أكبر من أحدث واحد عام.
@@ -69,11 +65,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'تم حذف علامة الهدف أو كانت الترجمة طويلة جدًا. الترجمة:'
   wwctsOnTarget: تم تمكين ترجمة التوقيع لـ {0}.
   wwcConfigCacheDisabled: تعطيل ذاكرة التخزين المؤقت المترجم.
-  wwcConfigConversationWatsonURLInput: عنوان URL الحالي هو {0}. الرجاء إدخال عنوان
-    URL لخدمة Watson، أو اكتب 0 للعودة.
   wwcBookDone: كتاب ترجمت بنجاح.
   wwctsOnSender: تم تمكين ترجمة التوقيع. انقر بزر الماوس الأيمن على علامة لترجمتها!
-  watsonColorCodeWarning: استخدام رموز الألوان قد تعطيك نتائج لا يمكن التنبؤ بها.
   wwctGUITranslationButton: بدء الترجمة
   wwctGUIAutoDetectButton: لصناعة السيارات في الكشف عن لغة المصدر
   wwcUpdaterUpToDate: وورلدويدتشات هو ما يصل إلى الآن!
@@ -85,7 +78,6 @@ Messages:
   wwcPlayerNotFound: لم يتم العثور على اللاعب %.
   wwcUpdaterOutOfDateChat: وورلدويدتشات هو قديما. يرجى التحديث إلى أحدث إصدار.
   wwcConfigConversationRateLimitSuccess: تعيين الحد الأقصى للمعدل بنجاح.
-  wwcConfigConversationWatsonURLSuccess: تم تعيين عنوان URL واتسون بنجاح.
   wwctbPlayerNotFound: لم يتم العثور على اللاعب {0}، أو أنه ليس مترجماً نشطاً.
   wwcConfigConversationTranslationCacheSuccess: تعيين حد ذاكرة التخزين المؤقت للترجمة
     بنجاح.
@@ -104,7 +96,6 @@ Messages:
     إلى 0 ثانية...
   wwcSignTranslateStart: ترجمة علامة الهدف...
   wwcConfigGUIChatSettings: تكوين الدردشة
-  wwcConfigGUIWatsonURLButton: تغيير عنوان URL لخدمة واتسون
   wwcConfigConversationUpdateCheckerSuccess: تم تعيين تأخير مدقق التحديث بنجاح.
   wwcGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العامة من {0}
     إلى {0}.
@@ -121,7 +112,6 @@ Messages:
   wwcsAttemptedTranslations: 'محاولات الترجمات: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: الأمازون مجموعة المفاتيح السرية
     بنجاح.
-  wwcConfigConversationWatsonAPIKeySuccess: مجموعة مفاتيح واتسون API بنجاح.
   wwcRateLimit: الترجمات الخاصة بك محدودة معدل. الرجاء الانتظار لثواني أخرى {0}.
   wwcConfigCacheEnabled: تم تمكين ذاكرة التخزين المؤقت للمترجم وتعيينها إلى حد {0}.
   wwctGUIExistingTranslationButton: الكتابة فوق جلسة الترجمة الحالية
@@ -177,7 +167,6 @@ Messages:
   wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
     بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
   wwcConfigGUIEachTranslatorSettings: تكوين {0}
-  wwcConfigGUIWatsonButton: واتسون
   wwcServerReloadWarning: لا تتغاضى WorldwideChat عن استخدام/إعادة التحميل. يرجى المتابعة
     بحذر.
   wwcConfigEnabledDebugMode: وضع تصحيح الأخطاء الممكّن. إذا لم تكن مطور أو مستكشف
@@ -281,10 +270,7 @@ Messages:
     أعد التحميل حتى يصبح التغيير ساري المفعول.
   wwcConfigYAMLDefault: افتراضيًا إلى YAML لتخزين البيانات.
   wwcConfigGUISQLMenuButton: تغيير إعدادات SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: نجحت في تبديل Watson Translate.
-    أعد التحميل حتى يصبح التغيير ساري المفعول.
   wwcConfigGUIToggleGoogleTranslateButton: تبديل ترجمة جوجل
-  wwcConfigGUIToggleWatsonTranslateButton: تبديل ترجمة واتسون
   wwcConfigGUIToggleAmazonTranslateButton: تبديل ترجمة أمازون
   wwcConfigGUIStorageSettings: تكوين التخزين
   wwcConfigConversationAmazonTranslateToggleSuccess: تم تبديل ترجمة أمازون بنجاح.
@@ -592,8 +578,6 @@ Messages:
   wwcConfigConversationChatPrioritySuccess: تم تعيين أولوية حدث الدردشة بنجاح.
   wwcConfigVaultSupportInvalid: تم تعيين دعم مخزن غير صالح في config.yml. يتم الانتقال
     إلى «صحيح»...
-  wwcWatsonDeprecation: تم إيقاف Watson ولم يعد مدعومًا من قبل IBM. يرجى التفكير في
-    التبديل، حيث سيتم إزالة الدعم الخاص به في التحديث التالي.
   wwcConfigForceChatChannelEnabled: سيتم فرض قناة ترجمة منفصلة أثناء جميع الترجمات.
   wwcConfigConversationSeparateChatChannelForceSuccess: تم التبديل بنجاح لإجبار القناة
     المنفصلة.
@@ -606,7 +590,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: تغيير رمز القناة المنفصلة
   wwcConfigConversationChatFormatSuccess: تم تغيير التنسيق الخاص بك بنجاح.
   wwcConfigGUISeparateChatChannelForceButton: قناة فورس منفصلة
-  wwcOrigHover: 'الرسالة الأصلية: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: تم إرفاق الدردشة الأصلية
     الصادرة بالترجمة حيث تم تبديل نص التمرير بنجاح.
   wwcConfigGUISendOutgoingHoverTextChatButton: إضافة الرسائل الصادرة الأصلية كنص تمرير
@@ -629,15 +612,40 @@ Messages:
   wwcConfigGUIChatBlacklistButton: تمكين القائمة السوداء
   wwcConfigConversationBlacklistDeletionSuccess: تم حذف المصطلح بنجاح.
   wwcConfigGUIChatChannelSettings: تكوين قناة الدردشة
-  wwcConfigGUIChatBlacklistSuccess: تم تبديل القائمة السوداء بنجاح.
   wwcConfigGUIChatMessagesBlacklistNewButton: إضافة كلمة جديدة
   wwcConfigGUIChatChannelButton: ترجمة إعدادات القناة
   wwcConfigGUIBlacklistMessagesModify: تعديل المصطلح ({0})
   wwcConfigChatChannelFormatInvalid: تم اكتشاف تنسيق قناة غير صالح. الإعداد الافتراضي
     لـ {0}...
-  wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
-    هو {0}. حججنا الافتراضية المعترف بها والتي يمكنك تضمينها: {1}. إذا كان لديك PlaceholderAPI،
-    فتأكد من أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً من ذلك. اكتب 0 للعودة.'
   wwcConfigGUIModifyBlacklistSettings: تعديل القائمة السوداء
   wwcConfigGUINextPageButton: الصفحة التالية
+  wwcConfigChatChannelHoverFormatInvalid: تم اكتشاف تنسيق تمرير غير صالح. الإعداد
+    الافتراضي لـ {0}...
+  wwcOrigHover: الرسالة الأصلية
+  wwctGUIMainMenuPlayer: ترجم {0}
+  wwcOnJoinSetLocaleSuccess: اكتشفت WorldwideChat ترجمة ماين كرافت الخاصة بك وستعكس
+    ذلك ({0}). اكتب {1} لمزيد من التفاصيل.
+  wwcConfigBadYaml: 'تم اكتشاف ملف YAML غير صالح: {0}. يرجى محاولة إصلاح هذا الملف
+    أو قد يتم حذفه!'
+  wwcConfigConversationChatBlacklistSuccess: تم تبديل القائمة السوداء بنجاح.
+  wwcConfigConversationChannelHoverFormatInput: 'التنسيق الحالي لنص تمرير الترجمة
+    هو {0}. الحجج الافتراضية المحتملة: {1}. إذا كان لديك PlaceholderAPI، فتأكد من
+    أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً من ذلك. اكتب 0 للعودة.'
+  wwcConfigConversationChannelFormatInput: 'التنسيق الحالي لقناة الدردشة المنفصلة
+    هو {0}. الحجج الافتراضية المحتملة: {1}. إذا كان لديك PlaceholderAPI، فتأكد من
+    أن هذه المتغيرات محاطة بالنسب المئوية (%) بدلاً من ذلك. اكتب 0 للعودة.'
+  wwcConfigConversationChatHoverFormatSuccess: تم تغيير تنسيق مؤشر الماوس الخاص بك
+    بنجاح.
+  wwcConfigConversationLocalizeSyncSuccess: تم التبديل بنجاح لمزامنة تعريب المستخدم.
+  wwcConfigGUILocalizeSyncButton: مزامنة تعريب المستخدم
+  wwcConfigSyncUserLocalInvalid: إعداد ترجمة المستخدم المتزامن غير صالح. جاري التحويل
+    إلى «صحيح»...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: تغيير تنسيق نص التحويم
+  wwcdResetWarn: 'تحذير: سيؤدي هذا الأمر إلى إعادة تعيين جميع البيانات بالكامل بما
+    في ذلك السجلات والمترجمين النشطين. لا تقم بتشغيل هذا الأمر إلا إذا كنت تعرف ما
+    تفعله: {0}'
+  wwcdResetNotif: تمت إعادة ضبط WorldwideChat. جاري إعادة التحميل...
+  wwcdResetNotifError: لم يتم مسح جميع البيانات بنجاح. هل أنت متصل بقاعدة البيانات
+    الخاصة بك؟
+  colorCodeWarning: قد يمنحك استخدام رموز الألوان نتائج غير متوقعة.
 

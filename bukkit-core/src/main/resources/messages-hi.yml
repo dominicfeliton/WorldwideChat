@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: '{0} से जुड़ने में असफल. सुनिश्चित करें कि आपके क्रेडेंशियल्स
     और फ़ायरवॉल सही तरीके से कॉन्फ़िगर किए गए हैं!'
   wwcConfigEnabledbStats: सक्षम बीएसटीएएस
-  wwctGUIMainMenuPlayer: '{0} का अनुवाद मेनू'
   wwctGUIBookButton: पुस्तक अनुवाद टॉगल करें
   wwcLangDetected: भाषा {0} का पता चला।
   wwcBookTranslateStart: लक्ष्य पुस्तक का अनुवाद...
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: खिलाड़ी %मैं नहीं मिला।
   wwcConfigGUIAmazonTranslateRegionButton: अमेज़ॅन क्षेत्र बदलें
   wwcConfigConversationLangInvalid: अवैध भाषा कोड!
-  wwcConfigGUIWatsonAPIKeyButton: वाटसन एपीआई कुंजी बदलें
   wwcEnabled: वर्ल्डवाइडचैट संस्करण {0} सक्षम किया गया
   wwctbOnSender: पुस्तक अनुवाद सक्षम। इसका अनुवाद करने के लिए पुस्तक पकड़े हुए राइट-क्लिक
     करें!
@@ -62,8 +60,6 @@ Messages:
   wwctsOffTarget: साइन-अनुवाद अक्षम करें {0} के लिए।
   wwcUpdaterConnectionFailed: Github पर नवीनतम अपडेट की जांच करने में असमर्थ।
   watsonNotFoundExceptionNotification: आपके इनपुट को आगे अनुवाद करने में असमर्थ।
-  wwcConfigConversationWatsonAPIKeyInput: वर्तमान एपीआई कुंजी {0} है कृपया वाटसन के
-    लिए एपीआई कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwctGUIStopButton: अनुवाद बंद करें
   wwcgTranslationStopped: वैश्विक चैट अनुवाद बंद कर दिया गया है।
   wwcUpdaterFutureDate: WorldwideChat के इस उदाहरण में नवीनतम सार्वजनिक की तुलना में
@@ -74,13 +70,9 @@ Messages:
     था। अनुवाद:'
   wwctsOnTarget: साइन-अनुवाद सक्षम है {0} के लिए।
   wwcConfigCacheDisabled: अनुवादक कैश अक्षम।
-  wwcConfigConversationWatsonURLInput: वर्तमान यूआरएल है {0}. कृपया वाटसन के लिए एक
-    सेवा यूआरएल इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwcBookDone: पुस्तक का सफलतापूर्वक अनुवाद किया गया
   wwctsOnSender: साइन अनुवाद सक्षम है। इसका अनुवाद करने के लिए एक संकेत पर राइट-क्लिक
     करें!
-  watsonColorCodeWarning: रंग कोड का उपयोग करने से आपको अप्रत्याशित परिणाम मिल सकते
-    हैं।
   wwctGUITranslationButton: अनुवाद शुरू करें
   wwctGUIAutoDetectButton: स्रोत भाषा स्वतः पता लगाएँ
   wwcUpdaterUpToDate: वर्ल्डवाइडचैट अद्यतित है!
@@ -93,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: वर्ल्डवाइडचैट पुराना है। कृपया नवीनतम संस्करण में अपडेट
     करें।
   wwcConfigConversationRateLimitSuccess: दर सीमा सफलतापूर्वक सेट।
-  wwcConfigConversationWatsonURLSuccess: वाटसन यूआरएल सफलतापूर्वक सेट।
   wwctbPlayerNotFound: खिलाड़ी {0} या तो नहीं मिला है, या सक्रिय अनुवादक नहीं है।
   wwcConfigConversationTranslationCacheSuccess: अनुवाद कैश सीमा सफलतापूर्वक सेट करें।
   wwctInvalidArgs: अमान्य तर्क प्रदान किए गए!
@@ -112,7 +103,6 @@ Messages:
     रहा है...
   wwcSignTranslateStart: लक्ष्य चिन्ह का अनुवाद कर रहा है...
   wwcConfigGUIChatSettings: गपशप कॉन्फ़िगरेशन
-  wwcConfigGUIWatsonURLButton: वाटसन सेवा यूआरएल बदलें
   wwcConfigConversationUpdateCheckerSuccess: अद्यतन चेकर विलंब सेट सफलतापूर्वक।
   wwcGlobalOnJoinTranslationNotificationSourceLang: वैश्विक गपश {0} से {1} में अनुवादित
     किया जा रहा है।
@@ -129,7 +119,6 @@ Messages:
   wwcsAttemptedTranslations: 'कोशिश की गई अनुवाद: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: अमेज़ॅन गुप्त कुंजी सफलतापूर्वक
     सेट।
-  wwcConfigConversationWatsonAPIKeySuccess: वाटसन एपीआई कुंजी सफलतापूर्वक सेट करें।
   wwcRateLimit: आपका अनुवाद दर सीमित हैं। कृपया एक और {0} सेकंड प्रतीक्षा करें।
   wwcConfigCacheEnabled: अनुवादक कैश सक्षम और {0} की सीमा पर सेट किया गया।
   wwctGUIExistingTranslationButton: वर्तमान अनुवाद सत्र को मिटाकर लिखें
@@ -188,7 +177,6 @@ Messages:
   wwcInvalidTranslator: अमान्य अनुवादक सेटिंग्स। कृपया इस प्लगइन का उपयोग करने के
     लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।
   wwcConfigGUIEachTranslatorSettings: '{0} कॉन्फ़िगरेशन'
-  wwcConfigGUIWatsonButton: वाटसन
   wwcServerReloadWarning: WorldwideChat /reload के उपयोग को नज़रअंदाज़ नहीं करता है।
     कृपया सावधानी के साथ आगे बढ़ें।
   wwcConfigEnabledDebugMode: सक्षम डीबग मोड। यदि आप डेवलपर या समस्या निवारक नहीं हैं,
@@ -306,10 +294,7 @@ Messages:
     टॉगल किया गया परिवर्तन के प्रभावी होने के लिए पुनः लोड करें।
   wwcConfigYAMLDefault: डेटा संग्रहण के लिए YAML में डिफ़ॉल्ट।
   wwcConfigGUISQLMenuButton: SQL सेटिंग बदलें
-  wwcConfigConversationWatsonTranslateToggleSuccess: वाटसन अनुवाद को सफलतापूर्वक टॉगल
-    किया गया। परिवर्तन के प्रभावी होने के लिए पुनः लोड करें।
   wwcConfigGUIToggleGoogleTranslateButton: Google अनुवाद टॉगल करें
-  wwcConfigGUIToggleWatsonTranslateButton: वॉटसन अनुवाद टॉगल करें
   wwcConfigGUIToggleAmazonTranslateButton: Amazon अनुवाद टॉगल करें
   wwcConfigGUIStorageSettings: स्टोरेज कॉन्फ़िगरेशन
   wwcConfigConversationAmazonTranslateToggleSuccess: Amazon अनुवाद सफलतापूर्वक टॉगल
@@ -651,9 +636,6 @@ Messages:
     सेट करें।
   wwcConfigVaultSupportInvalid: config.yml में अमान्य वॉल्ट समर्थन सेट किया गया है।
     डिफ़ॉल्ट रूप से सही है...
-  wwcWatsonDeprecation: वॉटसन को पदावनत कर दिया गया है और अब वह आईबीएम द्वारा समर्थित
-    नहीं है। कृपया स्विच करने पर विचार करें, क्योंकि अगले अपडेट में इसके लिए समर्थन
-    हटा दिया जाएगा।
   wwcConfigForceChatChannelEnabled: सभी अनुवादों के दौरान एक अलग अनुवाद चैनल लागू
     किया जाएगा।
   wwcConfigConversationSeparateChatChannelForceSuccess: अलग चैनल को फ़ोर्स करने के
@@ -668,7 +650,6 @@ Messages:
   wwcConfigGUISeparateChatChannelIconButton: अलग चैनल आइकन बदलें
   wwcConfigConversationChatFormatSuccess: आपका फ़ॉर्मेट सफलतापूर्वक बदल दिया गया है।
   wwcConfigGUISeparateChatChannelForceButton: फोर्स सेपरेट चैनल
-  wwcOrigHover: 'मूल संदेश: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: होवर टेक्स्ट के सफलतापूर्वक
     टॉगल किए जाने के रूप में अनुवाद से जुड़ी मूल आउटगोइंग चैट।
   wwcConfigGUISendOutgoingHoverTextChatButton: मूल आउटगोइंग संदेशों को हॉवर टेक्स्ट
@@ -695,16 +676,42 @@ Messages:
   wwcConfigGUIChatBlacklistButton: ब्लैकलिस्ट सक्षम करें
   wwcConfigConversationBlacklistDeletionSuccess: शब्द को सफलतापूर्वक हटा दिया गया।
   wwcConfigGUIChatChannelSettings: चैट चैनल कॉन्फ़िगरेशन
-  wwcConfigGUIChatBlacklistSuccess: ब्लैकलिस्ट को सफलतापूर्वक टॉगल किया।
   wwcConfigGUIChatMessagesBlacklistNewButton: नया शब्द जोड़ें
   wwcConfigGUIChatChannelButton: चैनल सेटिंग का अनुवाद करें
   wwcConfigGUIBlacklistMessagesModify: शब्द संशोधित करें ({0})
   wwcConfigChatChannelFormatInvalid: अमान्य चैनल फ़ॉर्मैट का पता चला। डिफ़ॉल्ट रूप
     से {0} पर सेट किया जा रहा है...
-  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
-    हमारे डिफ़ॉल्ट मान्यता प्राप्त तर्क जिन्हें आप शामिल कर सकते हैं: {1}। यदि आपके
-    पास placeHolderAPI है, तो सुनिश्चित करें कि वे वैरिएबल इसके बजाय प्रतिशत (%) से
-    घिरे हों। वापस जाने के लिए 0 टाइप करें।'
   wwcConfigGUIModifyBlacklistSettings: ब्लैकलिस्ट को संशोधित करें
   wwcConfigGUINextPageButton: अगला पेज
+  wwcConfigChatChannelHoverFormatInvalid: अमान्य होवर फ़ॉर्मेट का पता चला। डिफ़ॉल्ट
+    रूप से {0} पर सेट किया जा रहा है...
+  wwcOrigHover: मूल संदेश
+  wwctGUIMainMenuPlayer: '{0} का अनुवाद करें'
+  wwcOnJoinSetLocaleSuccess: WorldwideChat ने आपके Minecraft स्थानीयकरण ({0}) का पता
+    लगा लिया है और उसे प्रतिबिंबित करेगा। ज़्यादा जानकारी के लिए {1} टाइप करें।
+  wwcConfigBadYaml: 'अमान्य YAML फ़ाइल का पता चला: {0}। कृपया इस फ़ाइल को ठीक करने
+    का प्रयास करें या इसे हटाया जा सकता है!'
+  wwcConfigConversationChatBlacklistSuccess: ब्लैकलिस्ट को सफलतापूर्वक टॉगल किया।
+  wwcConfigConversationChannelHoverFormatInput: 'ट्रांसलेशन होवर टेक्स्ट का मौजूदा
+    फ़ॉर्मेट {0} है। संभावित डिफ़ॉल्ट तर्क: {1}। यदि आपके पास placeHolderAPI है, तो
+    सुनिश्चित करें कि वे चर इसके बजाय प्रतिशत (%) से घिरे हों। वापस जाने के लिए 0
+    टाइप करें।'
+  wwcConfigConversationChannelFormatInput: 'अलग चैट चैनल का मौजूदा फ़ॉर्मैट {0} है।
+    संभावित डिफ़ॉल्ट तर्क: {1}। यदि आपके पास placeHolderAPI है, तो सुनिश्चित करें
+    कि वे चर इसके बजाय प्रतिशत (%) से घिरे हों। वापस जाने के लिए 0 टाइप करें।'
+  wwcConfigConversationChatHoverFormatSuccess: आपका होवर फ़ॉर्मेट सफलतापूर्वक बदल
+    दिया गया है।
+  wwcConfigConversationLocalizeSyncSuccess: उपयोगकर्ता स्थानीयकरण को समन्वयित करने
+    में सफलतापूर्वक टॉगल किया गया।
+  wwcConfigGUILocalizeSyncButton: उपयोगकर्ता का स्थानीयकरण सिंक करें
+  wwcConfigSyncUserLocalInvalid: सिंक उपयोगकर्ता स्थानीयकरण सेटिंग अमान्य है। डिफ़ॉल्ट
+    रूप से सही है...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: होवर टेक्स्ट फॉर्मेट बदलें
+  wwcdResetWarn: 'चेतावनी: यह कमांड रिकॉर्ड और आपके सक्रिय अनुवादकों सहित सभी डेटा
+    को पूरी तरह से रीसेट कर देगा। इस कमांड को तब तक न चलाएं जब तक आपको पता न हो कि
+    आप क्या कर रहे हैं: {0}'
+  wwcdResetNotif: WorldwideChat को रीसेट कर दिया गया है। पुनः लोड किया जा रहा है...
+  wwcdResetNotifError: सभी डेटा सफलतापूर्वक मिटाए नहीं गए थे। क्या आप अपने डेटाबेस
+    से कनेक्ट हैं?
+  colorCodeWarning: कलर कोड का उपयोग करने से आपको अप्रत्याशित परिणाम मिल सकते हैं।
 

@@ -14,14 +14,14 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-public class OnPlayerJoinListener implements Listener {
+public class NotifsOnJoinListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	@EventHandler(priority = EventPriority.HIGHEST)
-	public void onPlayerJoinListener(PlayerJoinEvent event) {
+	public void sendNotifsOnPlayerJoin(PlayerJoinEvent event) {
 		Player currPlayer = event.getPlayer();
 
 		// Check if plugin has updates

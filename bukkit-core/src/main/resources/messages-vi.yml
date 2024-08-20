@@ -19,7 +19,6 @@ Messages:
   wwcConfigConnectionFailed: Không thể kết nối đến {0}. Đảm bảo thông tin đăng nhập
     và tường lửa của bạn được cấu hình chính xác!
   wwcConfigEnabledbStats: Đã bật bStats.
-  wwctGUIMainMenuPlayer: Menu dịch của {0}
   wwctGUIBookButton: Chuyển đổi sách dịch
   wwcLangDetected: Phát hiện ngôn ngữ {0}.
   wwcBookTranslateStart: Dịch sách mục tiêu...
@@ -52,7 +51,6 @@ Messages:
   wwctPlayerNotFound: Người chơi {0}ôi không tìm thấy.
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
   wwcConfigConversationLangInvalid: Mã ngôn ngữ không hợp lệ!
-  wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
   wwcEnabled: Đã bật phiên bản WorldwideChat {0}.
   wwctbOnSender: Đã bật dịch sách. Nhấp chuột phải trong khi giữ một cuốn sách để
     dịch nó!
@@ -63,8 +61,6 @@ Messages:
   wwctsOffTarget: Đăng dịch bị vô hiệu hóa cho {0}.
   wwcUpdaterConnectionFailed: Không thể kiểm tra các bản cập nhật mới nhất trên Github.
   watsonNotFoundExceptionNotification: Không thể dịch đầu vào của bạn thêm nữa.
-  wwcConfigConversationWatsonAPIKeyInput: Khóa API hiện tại là {0}. Vui lòng nhập
-    khóa API cho Watson, hoặc nhập 0 để quay lại.
   wwctGUIStopButton: Dừng dịch
   wwcgTranslationStopped: Dịch trò chuyện toàn cầu đã bị dừng lại.
   wwcUpdaterFutureDate: Phiên bản WorldwideChat này có phiên bản lớn hơn phiên bản
@@ -75,11 +71,8 @@ Messages:
     dịch:'
   wwctsOnTarget: Đăng dịch được bật cho {0}.
   wwcConfigCacheDisabled: Bộ nhớ cache của trình dịch bị tắt.
-  wwcConfigConversationWatsonURLInput: URL hiện tại là {0}. Vui lòng nhập URL dịch
-    vụ cho Watson, hoặc nhập 0 để quay lại.
   wwcBookDone: Sách dịch thành công.
   wwctsOnSender: Đã bật bản dịch ký. Nhấp chuột phải vào một dấu hiệu để dịch nó!
-  watsonColorCodeWarning: Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.
   wwctGUITranslationButton: Bắt đầu Translating
   wwctGUIAutoDetectButton: Ngôn ngữ nguồn tự động phát hiện
   wwcUpdaterUpToDate: WorldwideChat được cập nhật!
@@ -92,7 +85,6 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên
     bản mới nhất.
   wwcConfigConversationRateLimitSuccess: Giới hạn tỷ lệ đặt thành công.
-  wwcConfigConversationWatsonURLSuccess: Watson URL đặt thành công.
   wwctbPlayerNotFound: Người chơi {0} hoặc là không tìm thấy, hoặc không phải là một
     dịch giả đang hoạt động.
   wwcConfigConversationTranslationCacheSuccess: Giới hạn bộ nhớ cache dịch đặt thành
@@ -112,7 +104,6 @@ Messages:
     0 giây...
   wwcSignTranslateStart: Đang dịch dấu hiệu mục tiêu...
   wwcConfigGUIChatSettings: Cấu hình trò chuyện
-  wwcConfigGUIWatsonURLButton: Thay đổi URL dịch vụ Watson
   wwcConfigConversationUpdateCheckerSuccess: Cập Nhật kiểm tra chậm trễ đặt thành
     công.
   wwcGlobalOnJoinTranslationNotificationSourceLang: Trò chuyện toàn cầu đang được
@@ -130,7 +121,6 @@ Messages:
   wwcsAttemptedTranslations: 'Bản dịch đã cố gắng: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon khóa bí mật thiết lập
     thành công.
-  wwcConfigConversationWatsonAPIKeySuccess: Watson API chìa khóa thiết lập thành công.
   wwcRateLimit: Bản dịch của bạn bị giới hạn tỷ lệ. Vui lòng chơi {0} giây khác.
   wwcConfigCacheEnabled: Bộ nhớ cache của trình dịch được bật và đặt thành giới hạn
     của {0}.
@@ -193,7 +183,6 @@ Messages:
   wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.
   wwcConfigGUIEachTranslatorSettings: '{0} Cấu hình'
-  wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat không tha thứ việc sử dụng /tải lại. Xin hãy
     cẩn thận.
   wwcConfigEnabledDebugMode: Đã bật chế độ DEBUG. Nếu bạn không phải là nhà phát triển
@@ -310,10 +299,7 @@ Messages:
     Translate. Tải lại để thay đổi có hiệu lực.
   wwcConfigYAMLDefault: Mặc định là YAML để lưu trữ dữ liệu.
   wwcConfigGUISQLMenuButton: Thay đổi cài đặt SQL
-  wwcConfigConversationWatsonTranslateToggleSuccess: Chuyển đổi thành công Watson
-    Translate. Tải lại để thay đổi có hiệu lực.
   wwcConfigGUIToggleGoogleTranslateButton: Chuyển đổi Google Dịch
-  wwcConfigGUIToggleWatsonTranslateButton: Chuyển đổi Watson Dịch
   wwcConfigGUIToggleAmazonTranslateButton: Chuyển đổi Amazon Translate
   wwcConfigGUIStorageSettings: Cấu hình lưu trữ
   wwcConfigConversationAmazonTranslateToggleSuccess: Chuyển đổi thành công Amazon
@@ -645,9 +631,6 @@ Messages:
     kiện trò chuyện của bạn.
   wwcConfigVaultSupportInvalid: Hỗ trợ vault không hợp lệ được đặt trong config.yml.
     Mặc định là true...
-  wwcWatsonDeprecation: Watson đã không còn được sử dụng và không còn được IBM hỗ
-    trợ. Vui lòng xem xét chuyển đổi, vì hỗ trợ cho nó sẽ bị xóa trong bản cập nhật
-    tiếp theo.
   wwcConfigForceChatChannelEnabled: Một kênh dịch riêng biệt sẽ bị buộc trong tất
     cả các bản dịch.
   wwcConfigConversationSeparateChatChannelForceSuccess: Bật thành công buộc kênh riêng
@@ -663,7 +646,6 @@ Messages:
   wwcConfigConversationChatFormatSuccess: Định dạng của bạn đã được thay đổi thành
     công.
   wwcConfigGUISeparateChatChannelForceButton: Buộc kênh riêng biệt
-  wwcOrigHover: 'Tin nhắn ban đầu: {0}'
   wwcConfigConversationSendOutgoingHoverTextChatSuccess: Trò chuyện gửi đi gốc được
     đính kèm với bản dịch khi văn bản di chuột đã chuyển thành công.
   wwcConfigGUISendOutgoingHoverTextChatButton: Thêm tin nhắn gửi đi gốc dưới dạng
@@ -689,16 +671,44 @@ Messages:
   wwcConfigGUIChatBlacklistButton: Bật danh sách đen
   wwcConfigConversationBlacklistDeletionSuccess: Xóa thành công thuật ngữ.
   wwcConfigGUIChatChannelSettings: Cấu hình kênh trò chuyện
-  wwcConfigGUIChatBlacklistSuccess: Bật thành công danh sách đen.
   wwcConfigGUIChatMessagesBlacklistNewButton: Thêm từ mới
   wwcConfigGUIChatChannelButton: Dịch cài đặt kênh
   wwcConfigGUIBlacklistMessagesModify: Sửa đổi thuật ngữ ({0})
   wwcConfigChatChannelFormatInvalid: Phát hiện định dạng kênh không hợp lệ. Mặc định
     là {0}...
-  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
-    riêng biệt là {0}. Các đối số được công nhận mặc định của chúng tôi mà bạn có
-    thể bao gồm: {1}. Nếu bạn có PlaceHolderAPI, hãy đảm bảo các biến đó được bao
-    quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ 0 để quay trở lại.'
   wwcConfigGUIModifyBlacklistSettings: Sửa đổi danh sách đen
   wwcConfigGUINextPageButton: Trang kế tiếp
+  wwcConfigChatChannelHoverFormatInvalid: Phát hiện định dạng di chuột không hợp lệ.
+    Mặc định là {0}...
+  wwcOrigHover: Tin nhắn gốc
+  wwctGUIMainMenuPlayer: Dịch {0}
+  wwcOnJoinSetLocaleSuccess: WorldwideChat đã phát hiện và sẽ phản ánh bản địa hóa
+    Minecraft của bạn ({0}). Nhập {1} để biết thêm chi tiết.
+  wwcConfigBadYaml: 'Tệp YAML không hợp lệ được phát hiện: {0}. Vui lòng cố gắng sửa
+    tệp này hoặc nó có thể bị xóa!'
+  wwcConfigConversationChatBlacklistSuccess: Bật thành công danh sách đen.
+  wwcConfigConversationChannelHoverFormatInput: 'Định dạng hiện tại cho văn bản di
+    chuột dịch là {0}. Các đối số mặc định có thể có: {1}. Nếu bạn có PlaceHolderAPI,
+    hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ
+    0 để quay trở lại.'
+  wwcConfigConversationChannelFormatInput: 'Định dạng hiện tại cho kênh trò chuyện
+    riêng biệt là {0}. Các đối số mặc định có thể có: {1}. Nếu bạn có PlaceHolderAPI,
+    hãy đảm bảo các biến đó được bao quanh bởi tỷ lệ phần trăm (%) thay vào đó. Gõ
+    0 để quay trở lại.'
+  wwcConfigConversationChatHoverFormatSuccess: Định dạng di chuột của bạn đã được
+    thay đổi thành công.
+  wwcConfigConversationLocalizeSyncSuccess: Bật thành công đồng bộ hóa bản địa hóa
+    người dùng.
+  wwcConfigGUILocalizeSyncButton: Đồng bộ hóa bản địa hóa người dùng
+  wwcConfigSyncUserLocalInvalid: Đồng bộ hóa cài đặt bản địa hóa người dùng không
+    hợp lệ. Mặc định là true...
+  wwcConfigGUISeparateChatChannelHoverFormatButton: Thay đổi định dạng văn bản di
+    chuột
+  wwcdResetWarn: 'CẢNH BÁO: Lệnh này sẽ hoàn toàn thiết lập lại tất cả dữ liệu bao
+    gồm các bản ghi và trình dịch đang hoạt động của bạn. ĐỪNG CHẠY LỆNH NÀY TRỪ KHI
+    BẠN BIẾT MÌNH ĐANG LÀM GÌ: {0}'
+  wwcdResetNotif: WorldwideChat đã được thiết lập lại. Đang tải lại...
+  wwcdResetNotifError: Không phải tất cả dữ liệu đã được xóa thành công. Bạn có kết
+    nối với cơ sở dữ liệu của mình không?
+  colorCodeWarning: Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.
 
