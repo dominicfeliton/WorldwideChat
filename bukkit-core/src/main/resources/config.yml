@@ -71,6 +71,10 @@ Translator:
   azureRegion: azure_region_goes_here
   useSystranTranslate: false
   systranAPIKey: systran_key_goes_here
+  useChatGPT: false
+  chatGPTAPIKey: chatgpt_key_goes_here
+  chatGPTVersion: gpt-4o-2024-08-06
+  chatGPTURL: "https://api.openai.com/v1/chat/completions"
   translatorCacheSize: 100
   enablePersistentCache: false
   rateLimit: 0

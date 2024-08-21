@@ -47,12 +47,15 @@ public class ConfigurationHandler {
 
 	private File configFile;
 	private YamlConfiguration mainConfig;
+	private YamlConfiguration aiConfig;
 
+	private File aiFile;
 	private File blacklistFile;
 	private YamlConfiguration blacklistConfig;
 
 	private ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 
+	// TODO: Split up this class. It is far too gargantuan...
 	/* Init Main Config Method */
 	public void initMainConfig() {
 		/* Init config file */
@@ -206,6 +209,50 @@ public class ConfigurationHandler {
 		if (main.isBlacklistEnabled()) {
 			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcBlacklistLoaded", new String[] {bannedWords.size()+""}, null));
 		}
+	}
+
+	public void initAISettings() {
+		refs.debugMsg("Loading AI settings...");
+
+		/* Init config file */
+		aiFile = new File(main.getDataFolder(), "ai-settings.yml");
+
+		/* Generate config file, if it does not exist */
+		if (!aiFile.exists()) {
+			main.saveResource("ai-settings.yml", false);
+		}
+
+		/* Load main config */
+		aiConfig = YamlConfiguration.loadConfiguration(aiFile);
+
+		/* Add default options, if they do not exist */
+		Reader aiConfigStream = new InputStreamReader(main.getResource("ai-settings.yml"), StandardCharsets.UTF_8);
+		aiConfig.setDefaults(YamlConfiguration.loadConfiguration(aiConfigStream));
+
+		/* Validate the configuration */
+		// systemPrompt
+		String systemPrompt = aiConfig.getString("translateSystemPrompt");
+		if (systemPrompt == null) {
+			// TODO: Load default ai system prompt instead? Disabling doesn't seem like a good idea for this config
+			main.getLogger().warning(refs.getMsg("wwcAiSystemPromptBad", null));
+			aiConfig = null;
+			return;
+		}
+
+		// supportedLangs
+		if (!aiConfig.isConfigurationSection("supportedLangs")) {
+			main.getLogger().warning(refs.getMsg("wwcAiSupportedLangsBad", null));
+			aiConfig = null;
+			return;
+		}
+
+		aiConfig.options().copyDefaults(true);
+		saveCustomConfig(aiConfig, aiFile, false);
+
+		main.setAISystemPrompt(systemPrompt);
+
+		// TODO: If AI translator is loaded, send this message
+		main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcAiSystemPromptLoaded",null));
 	}
 
 	/* Load Main Settings Method */
@@ -1382,6 +1429,10 @@ public class ConfigurationHandler {
 	/* Getters */
 	public YamlConfiguration getMainConfig() {
 		return mainConfig;
+	}
+
+	public YamlConfiguration getAIConfig() {
+		return aiConfig;
 	}
 
 	public YamlConfiguration getBlacklistConfig() {

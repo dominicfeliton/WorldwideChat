@@ -69,7 +69,7 @@ public class LibreTranslation extends BasicTranslation {
 				Map<String, SupportedLang> outLangMap = new HashMap<>();
 				Map<String, SupportedLang> inLangMap = new HashMap<>();
 
-				if (listResponseCode == 200) {
+				if (listResponseCode == HttpURLConnection.HTTP_OK) {
 					// Scan response
 					StringBuilder inLine = new StringBuilder();
 				    Scanner scanner = new Scanner(url.openStream());
@@ -138,7 +138,7 @@ public class LibreTranslation extends BasicTranslation {
 
 	            /* Process response */
 				int statusCode = httpConn.getResponseCode();
-				if (statusCode == 200) {
+				if (statusCode == HttpURLConnection.HTTP_OK) {
 					InputStream responseStream = httpConn.getInputStream();
 					Scanner s = new Scanner(responseStream).useDelimiter("\\A");
 					String response = s.hasNext() ? s.next() : "";
@@ -170,7 +170,7 @@ public class LibreTranslation extends BasicTranslation {
 
 			/* Checking response */
 			int statusCode = httpConn.getResponseCode();
-			if (statusCode == 200) {
+			if (statusCode == HttpURLConnection.HTTP_OK) {
 				InputStream responseStream = httpConn.getInputStream();
 				Scanner s = new Scanner(responseStream).useDelimiter("\\A");
 				String response = s.hasNext() ? s.next() : "";

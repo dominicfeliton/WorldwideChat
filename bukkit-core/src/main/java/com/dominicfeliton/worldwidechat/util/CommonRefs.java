@@ -80,6 +80,9 @@ public class CommonRefs {
 		translatorPairs.put("Translator.useDeepLTranslate", "DeepL Translate");
 		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
 		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
+		translatorPairs.put("Translator.useChatGPT", "ChatGPT");
+
+		// For testing only!
 		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
 	}
 
@@ -738,6 +741,18 @@ public class CommonRefs {
 				}
 				out = systranTranslateInstance.useTranslator();
 				break;
+			case "ChatGPT":
+				OpenAITranslation openAITranslationInstance;
+				if (isInitializing) {
+					openAITranslationInstance = new OpenAITranslation(mainConfig.getString("Translator.chatGPTAPIKey"),
+							mainConfig.getString("Translator.chatGPTURL"),
+							true, main.getCallbackExecutor());
+				} else {
+					openAITranslationInstance = new OpenAITranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = openAITranslationInstance.useTranslator();
+				break;
 			case "JUnit/MockBukkit Testing Translator":
 				TestTranslation testTranslator;
 				if (isInitializing) {
@@ -1105,6 +1120,7 @@ public class CommonRefs {
 	 */
 	public Map<String, SupportedLang> fixLangNames(Map<String, SupportedLang> in, boolean nativesOnly, boolean preInit) {
 		// Adjust the file path as necessary
+		// TODO: Take in hashSet instead of converting? Seems really unnecessary...
 		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
 		ObjectMapper objectMapper = new ObjectMapper();
 		Map<String, ISOLanguage> languageMap;

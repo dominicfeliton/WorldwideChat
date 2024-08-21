@@ -44,7 +44,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08182024-7"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08212024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -127,6 +127,8 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean syncUserLocal = true;
 
 	private int errorLimit = 5;
+
+	private String aiSystemPrompt = "";
 
 	// TODO: Make concurrent JIC?
 	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
@@ -353,11 +355,8 @@ public class WorldwideChat extends JavaPlugin {
 		refs = serverFactory.getCommonRefs();
 		wwcHelper = serverFactory.getWWCHelper();
 
-		if (refs == null || wwcHelper == null) {
-			return false;
-		}
-		return true;
-	}
+        return refs != null && wwcHelper != null;
+    }
 
 	/* Do Startup Tasks */
 	/**
@@ -374,13 +373,14 @@ public class WorldwideChat extends JavaPlugin {
 		// Init and load configs
 		configurationManager.initMainConfig();
 		configurationManager.initMessagesConfigs();
-		configurationManager.initBlacklistConfig();
 
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();
 		// we are storing the real translator name in tempTransName.
 		// this is to prevent the plugin from being fully accessible to all users just yet.
 		// (we are not done init'ing)
+		configurationManager.initBlacklistConfig();
+		configurationManager.initAISettings();
 		String tempTransName = configurationManager.loadTranslatorSettings();
 
 		/* Run tasks after translator loaded */
@@ -425,11 +425,11 @@ public class WorldwideChat extends JavaPlugin {
 		BukkitRunnable event = new BukkitRunnable() {
 			@Override
 			public void run() {
-				wwcHelper.checkVaultSupport();
-				wwcHelper.registerEventHandlers();
+			wwcHelper.checkVaultSupport();
+			wwcHelper.registerEventHandlers();
 
-				// Finish by setting translator name, which permits plugin usage ("Starting" does not)
-				translatorName = tempTransName;
+			// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+			translatorName = tempTransName;
 			}
 		};
 		if (isReloading) {
@@ -933,6 +933,10 @@ public class WorldwideChat extends JavaPlugin {
 		syncUserLocal = i;
 	}
 
+	public void setAISystemPrompt(String i) {
+		aiSystemPrompt = i;
+	}
+
 	/* Getters */
 	public Component getTranslateIcon() {
 		return translateIcon == null ? Component.empty() : translateIcon;
@@ -1146,5 +1150,9 @@ public class WorldwideChat extends JavaPlugin {
 
 	public boolean getSyncUserLocal() {
 		return syncUserLocal;
+	}
+
+	public String getAISystemPrompt() {
+		return aiSystemPrompt;
 	}
 }
