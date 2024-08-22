@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -71,7 +72,7 @@ public class WWCDebug extends BasicCommand {
                         @Override
                         public void run() {
                             try {
-                                main.getConfigManager().fullDataWipe();
+                                DataStorageUtils.fullDataWipe();
                                 refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
                             } catch (Exception e) {
                                 refs.sendFancyMsg("wwcdResetNotifError", new String[]{}, "&c", sender);

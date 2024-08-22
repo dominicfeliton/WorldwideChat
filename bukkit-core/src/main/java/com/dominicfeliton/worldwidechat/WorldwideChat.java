@@ -8,6 +8,7 @@ import com.dominicfeliton.worldwidechat.runnables.LoadUserData;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
 import com.dominicfeliton.worldwidechat.runnables.UpdateChecker;
 import com.dominicfeliton.worldwidechat.util.*;
+import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
@@ -601,7 +602,7 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Sync ActiveTranslators, playerRecords to disk
 		try {
-			configurationManager.syncData(wasPreviouslyInvalid);
+			DataStorageUtils.syncData(wasPreviouslyInvalid);
 		} catch (Exception e) {
 			e.printStackTrace();
 			getServer().getPluginManager().disablePlugin(this);

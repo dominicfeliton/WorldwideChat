@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat.runnables;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import org.bukkit.entity.Player;
 
 import java.util.concurrent.TimeUnit;
@@ -25,7 +26,7 @@ public class SyncUserData implements Runnable {
 		final long startTime = System.nanoTime();
 		try {
 			refs.debugMsg(refs.getMsg("wwcSyncUserDataStart", null));
-			main.getConfigManager().syncData();
+			DataStorageUtils.syncData();
 
 			final long converted = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
 			String storageOption;
