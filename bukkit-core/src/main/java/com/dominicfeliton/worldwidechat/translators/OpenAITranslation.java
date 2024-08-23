@@ -131,7 +131,7 @@ public class OpenAITranslation extends BasicTranslation {
             ChatResponseParser.ChatResponse response = ChatResponseParser.parseResponse(jsonResponse);
 
             // TODO: Properly handle response
-            if (response.isSuccess()) {
+            if (response != null && response.isSuccess()) {
                 refs.debugMsg("Success!");
                 return response.getTranslation();
             }
@@ -168,7 +168,6 @@ public class OpenAITranslation extends BasicTranslation {
                     return response.toString();
                 }
             } else {
-                // TODO do this on Libre
                 // Capture the error response
                 try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(conn.getErrorStream()))) {
                     String errorLine;
@@ -178,25 +177,25 @@ public class OpenAITranslation extends BasicTranslation {
                         errorResponse.append(errorLine);
                     }
 
-                    refs.debugMsg("Failed... Response Code: " + responseCode + ", Error: " + errorResponse);
+                    checkError(responseCode, errorResponse.toString());
                 } catch (IOException e) {
                     refs.debugMsg("Failed to read the error stream");
+                    checkError(responseCode, "");
                 }
             }
-            throwError(responseCode);
             return "";
         }
 
-        private void throwError(int in) throws Exception {
-            // TODO
+        private void checkError(int in, String msg) throws Exception {
+            refs.debugMsg(msg);
             switch (in) {
                 case 400:
                 case 403:
                 case 429:
                 case 500:
-                    throw new Exception(refs.getMsg("libreHttp" + in, null));
+                    throw new Exception(refs.getMsg("chatGPT500", null));
                 default:
-                    throw new Exception(refs.getMsg("libreHttpUnknown", in + "", null));
+                    throw new Exception(refs.getMsg("chatGPTUnknown", in + "", null));
             }
         }
     }
@@ -283,7 +282,6 @@ class TranslationChatCompletionRequest {
             this.additionalProperties = additionalProperties;
         }
 
-        // Use this method to create the schema with the correct required fields
         public static Schema createDefaultSchema() {
             return new Schema(
                     "object",
@@ -341,6 +339,12 @@ class ChatResponseParser {
         private String translation;
         private String reason;
 
+        public ChatResponse(boolean success, String translation, String reason) {
+            this.success = success;
+            this.translation = translation;
+            this.reason = reason;
+        }
+
         public boolean isSuccess() {
             return success;
         }
@@ -351,6 +355,18 @@ class ChatResponseParser {
 
         public String getReason() {
             return reason;
+        }
+    }
+
+    private static class OuterResponse {
+        private List<Choice> choices;
+
+        private static class Choice {
+            private Message message;
+        }
+
+        private static class Message {
+            private String content;
         }
     }
 
@@ -367,18 +383,6 @@ class ChatResponseParser {
             return chatResponse;
         }
 
-        return null; // or handle this case as appropriate
-    }
-
-    private static class OuterResponse {
-        private List<Choice> choices;
-
-        private static class Choice {
-            private Message message;
-        }
-
-        private static class Message {
-            private String content;
-        }
+        return null;
     }
 }

@@ -566,4 +566,6 @@ Messages:
   wwcAiSystemPromptLoaded: AI 시스템 프롬프트가 로드되었습니다.
   wwcAiSystemPromptBad: 잘못된 AI 시스템 프롬프트가 감지되었습니다.기본값 사용 중...
   wwcAiSupportedLangsBad: 잘못된 AI 지원 언어가 감지되었습니다.기본값 사용 중...
+  chatGPTUnknown: '알 수 없는 http 오류: {0}'
+  chatGPT500: 잘못된 요청이 ChatGPT에 전송되었습니다.이런 문제가 계속되면 개발자에게 문의하세요!
 

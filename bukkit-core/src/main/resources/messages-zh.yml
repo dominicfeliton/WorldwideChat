@@ -522,4 +522,6 @@ Messages:
   wwcAiSystemPromptLoaded: AI 系统提示符已加载。
   wwcAiSystemPromptBad: 检测到错误的 AI 系统提示符。使用我们的默认...
   wwcAiSupportedLangsBad: 检测到错误的 AI 支持的语言。使用我们的默认值...
+  chatGPTUnknown: 未知的 http 错误：{0}
+  chatGPT500: 向 ChatGPT 发送的请求不正确。如果这种情况仍然存在，请联系开发者！
 

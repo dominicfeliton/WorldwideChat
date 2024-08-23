@@ -10,8 +10,7 @@ import com.google.gson.JsonParser;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.net.ssl.HttpsURLConnection;
-import java.io.InputStream;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -70,6 +69,7 @@ public class LibreTranslation extends BasicTranslation {
 				Map<String, SupportedLang> inLangMap = new HashMap<>();
 
 				if (listResponseCode == HttpURLConnection.HTTP_OK) {
+					// TODO: make it better?
 					// Scan response
 					StringBuilder inLine = new StringBuilder();
 				    Scanner scanner = new Scanner(url.openStream());
@@ -94,7 +94,20 @@ public class LibreTranslation extends BasicTranslation {
 						inLangMap.put(currLang.getLangName(), currLang);
 					}
 				} else {
-					checkError(listResponseCode);
+					// Capture the error response
+					try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(conn.getErrorStream()))) {
+						String errorLine;
+						StringBuilder errorResponse = new StringBuilder();
+
+						while ((errorLine = errorReader.readLine()) != null) {
+							errorResponse.append(errorLine);
+						}
+
+						checkError(listResponseCode, errorResponse.toString());
+					} catch (IOException e) {
+						refs.debugMsg("Failed to read the error stream");
+						checkError(listResponseCode, "");
+					}
 				}
 				
 				/* Parse languages */
@@ -139,15 +152,32 @@ public class LibreTranslation extends BasicTranslation {
 	            /* Process response */
 				int statusCode = httpConn.getResponseCode();
 				if (statusCode == HttpURLConnection.HTTP_OK) {
-					InputStream responseStream = httpConn.getInputStream();
-					Scanner s = new Scanner(responseStream).useDelimiter("\\A");
-					String response = s.hasNext() ? s.next() : "";
+					try (BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()))) {
+						String inputLine;
+						StringBuilder response = new StringBuilder();
 
-					DetectResponse[] outArray = gson.fromJson(response, DetectResponse[].class);
-					inputLang = outArray[0].getLanguage();
+						while ((inputLine = in.readLine()) != null) {
+							response.append(inputLine);
+						}
+
+						DetectResponse[] outArray = gson.fromJson(response.toString(), DetectResponse[].class);
+						inputLang = outArray[0].getLanguage();
+					}
 				} else {
-					refs.debugMsg("Failed..." + statusCode);
-					checkError(statusCode);
+					// Capture the error response
+					try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(httpConn.getErrorStream()))) {
+						String errorLine;
+						StringBuilder errorResponse = new StringBuilder();
+
+						while ((errorLine = errorReader.readLine()) != null) {
+							errorResponse.append(errorLine);
+						}
+
+						checkError(statusCode, errorResponse.toString());
+					} catch (IOException e) {
+						refs.debugMsg("Failed to read the error stream");
+						checkError(statusCode, "");
+					}
 				}
 			}
 
@@ -163,7 +193,10 @@ public class LibreTranslation extends BasicTranslation {
 
 			OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
 
-			writer.write("q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) + "&source=" + inputLang + "&target=" + outputLang + "&format=text");
+			writer.write("q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) +
+					"&source=" + URLEncoder.encode(inputLang, StandardCharsets.UTF_8) +
+					"&target=" + URLEncoder.encode(outputLang, StandardCharsets.UTF_8) +
+					"&format=text");
 			writer.flush();
 			writer.close();
 			httpConn.getOutputStream().close();
@@ -171,20 +204,38 @@ public class LibreTranslation extends BasicTranslation {
 			/* Checking response */
 			int statusCode = httpConn.getResponseCode();
 			if (statusCode == HttpURLConnection.HTTP_OK) {
-				InputStream responseStream = httpConn.getInputStream();
-				Scanner s = new Scanner(responseStream).useDelimiter("\\A");
-				String response = s.hasNext() ? s.next() : "";
+				try (BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()))) {
+					String inputLine;
+					StringBuilder response = new StringBuilder();
 
-				return gson.fromJson(response, TranslateResponse.class).getTranslatedText();
+					while ((inputLine = in.readLine()) != null) {
+						response.append(inputLine);
+					}
+
+					return gson.fromJson(response.toString(), TranslateResponse.class).getTranslatedText();
+				}
 			} else {
-				refs.debugMsg("Failed..." + statusCode);
-				checkError(statusCode);
+				// Capture the error response
+				try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(httpConn.getErrorStream()))) {
+					String errorLine;
+					StringBuilder errorResponse = new StringBuilder();
+
+					while ((errorLine = errorReader.readLine()) != null) {
+						errorResponse.append(errorLine);
+					}
+
+					checkError(statusCode, errorResponse.toString());
+				} catch (IOException e) {
+					refs.debugMsg("Failed to read the error stream");
+					checkError(statusCode, "");
+				}
 			}
 			return textToTranslate;
 		}
 	}
 	
-	private void checkError(int in) throws Exception {
+	private void checkError(int in, String msg) throws Exception {
+		refs.debugMsg(msg);
 		switch (in) {
 		case 400:
 		case 403:
