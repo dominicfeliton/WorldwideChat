@@ -757,4 +757,21 @@ Messages:
   chatGPTUnknown: 'Error http desconocido: {0}'
   chatGPT500: Se ha enviado una solicitud incorrecta a ChatGPT. Si esto persiste,
     por favor, póngase en contacto con el desarrollador.
+  wwcConfigGUIAISettings: Configuración de IA
+  wwcConfigGUIChatGPTButton: Chat GPT
+  wwcConfigConversationChatGPTApiKeySuccess: La clave API ChatGPT se configuró correctamente.
+  wwcConfigGUAIPromptButton: Cambiar mensaje de IA
+  wwcConfigConversationChatGPTURLInput: La dirección URL actual es {0}. Introduce
+    una URL para ChatGPT o escribe 0 para volver.
+  wwcConfigConversationChatGPTApiKeyInput: La clave API actual es {0}. Ingrese una
+    clave API para ChatGPT, o escriba 0 para volver.
+  wwcConfigConversationChatGPTURLSuccess: La dirección URL de ChatGPT se configuró
+    correctamente.
+  wwcConfigConversationChatGPTModelInput: La versión actual es {0}. Por favor, introduzca
+    un modelo para ChatGPT, o escriba 0 para volver.
+  wwcConfigGUIChatGPTURLButton: Cambiar la URL de ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Cambiar la clave API de ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: El modelo ChatGPT se configuró correctamente.
+  wwcConfigGUIChatGPTModelButton: Cambiar el modelo ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Alternar ChatGPT
 

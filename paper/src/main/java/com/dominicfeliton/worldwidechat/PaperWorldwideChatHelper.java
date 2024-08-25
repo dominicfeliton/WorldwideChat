@@ -70,7 +70,8 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
         InventoryListener inv = new InventoryListener();
         pluginManager.registerEvents(inv, main);
         listenerQueue.add(inv);
-        main.getLogger().info(ChatColor.LIGHT_PURPLE
-                + refs.getMsg("wwcListenersInitialized", null));
+        main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
+                "",
+                "&d"));
     }
 }

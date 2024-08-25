@@ -40,21 +40,22 @@ public class WWCInventoryManager extends InventoryManager {
 		if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) == null) {
 			// Target player no longer online
 			player.closeInventory();
-			final TextComponent targetPlayerDC = Component.text()
-							.content(refs.getMsg("wwctGUITargetPlayerNull", player))
-							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC)
-					.build();
-			refs.sendMsg(player, targetPlayerDC);
+			refs.sendMsg("wwctGUITargetPlayerNull",
+					"",
+					"&c&o",
+					player);
 		}
 	}
 	
 	public void inventoryError(Player player, Exception e) {
-		final TextComponent inventoryError = Component.text()
-						.content(refs.getMsg("wwcInventoryErrorPlayer", player))
-						.color(NamedTextColor.RED)
-				.build();
-		refs.sendMsg(player, inventoryError);
-		main.getLogger().severe(refs.getMsg("wwcInventoryError", player.getName(), player));
+		refs.sendMsg("wwcInventoryErrorPlayer",
+				"",
+				"&c",
+				player);
+
+		main.getLogger().severe(refs.getPlainMsg("wwcInventoryError",
+				"&6"+player.getName(),
+				player));
 		e.printStackTrace();
 		player.closeInventory();
 	}
@@ -68,8 +69,10 @@ public class WWCInventoryManager extends InventoryManager {
 		ItemMeta pageMeta = pageButton.getItemMeta();
 		if (buttonType.equalsIgnoreCase("Previous")) {
 			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
-			pageMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIPreviousPageButton", player));
+			pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIPreviousPageButton",
+					"",
+					"&c",
+					player));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isFirst()) {
@@ -80,8 +83,10 @@ public class WWCInventoryManager extends InventoryManager {
 			}));
 		} else if (buttonType.equalsIgnoreCase("Next")) {
 			pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
-			pageMeta.setDisplayName(ChatColor.GREEN
-					+ refs.getMsg("wwcConfigGUINextPageButton", player));
+			pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUINextPageButton",
+					"",
+					"&a",
+					player));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isLast()) {
@@ -92,8 +97,10 @@ public class WWCInventoryManager extends InventoryManager {
 			}));
 		} else if (buttonType.equalsIgnoreCase("Page Number")) {
 			pageButton = XMaterial.LILY_PAD.parseItem();
-			pageMeta.setDisplayName(ChatColor.AQUA
-					+ refs.getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class)), player));
+			pageMeta.setDisplayName(refs.getPlainMsg("wwcGUIPageNumber",
+					"&6"+ args[0],
+					"&b",
+					player));
 			if (args[0].equals("1")) {
 				addGlowEffect(pageMeta);
 				pageButton.setItemMeta(pageMeta);
@@ -107,8 +114,10 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Quit")) {
 			pageButton = XMaterial.BARRIER.parseItem();
 			pageMeta = pageButton.getItemMeta();
-			pageMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIQuitButton", player));
+			pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIQuitButton",
+					"",
+					"&c",
+					player));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				main.reload(player, true);
@@ -143,8 +152,10 @@ public class WWCInventoryManager extends InventoryManager {
 			button = XMaterial.WRITABLE_BOOK.parseItem();
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
-		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ refs.getMsg(buttonName, player));
+		buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
+				"",
+				"&6",
+				player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			invToOpen.open(player);
@@ -163,13 +174,19 @@ public class WWCInventoryManager extends InventoryManager {
 			button = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
-		buttonMeta.setDisplayName(ChatColor.GOLD + refs.getMsg(configButtonName, player));
+		buttonMeta.setDisplayName(refs.getPlainMsg(configButtonName,
+				"",
+				"&6",
+				player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			if (!serverRestartRequired) {
 				main.addPlayerUsingConfigurationGUI(player);
 			} else {
-				refs.sendFancyMsg("wwcConfigGUIToggleRestartRequired", new String[]{}, "&e", player);
+				refs.sendMsg("wwcConfigGUIToggleRestartRequired",
+						"",
+						"&e",
+						player);
 			}
 			main.getConfigManager().getMainConfig().set(configValueName,
 					!(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
@@ -178,11 +195,11 @@ public class WWCInventoryManager extends InventoryManager {
                 refs.debugMsg("Disabling " + eaKey + "!");
                 main.getConfigManager().getMainConfig().set(eaKey, false);
             }
-            final TextComponent successfulChange = Component.text()
-							.content(refs.getMsg(messageOnChange, player))
-							.color(NamedTextColor.GREEN)
-					.build();
-			refs.sendMsg(player, successfulChange);
+			refs.sendMsg(messageOnChange,
+					"",
+					"&a",
+					player);
+
 			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
 		}));
 	}
@@ -192,14 +209,16 @@ public class WWCInventoryManager extends InventoryManager {
 				.withFirstPrompt(inPrompt);
 		ItemStack button = inMaterial.parseItem();
 		ItemMeta buttonMeta = button.getItemMeta();
-		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ refs.getMsg(buttonName, player));
+		buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
+				"",
+				"&6",
+				player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			if (!main.getCurrPlatform().equals("Folia")) {
 				genericConversation.buildConversation(player).begin();
 			} else {
-				refs.sendFancyMsg("wwcNoConvoFolia", "", "&c", player);
+				refs.sendMsg("wwcNoConvoFolia", "", "&c", player);
 			}
 		}));
 	}
@@ -230,11 +249,10 @@ public class WWCInventoryManager extends InventoryManager {
 				main.getConfigManager().getMainConfig().set(configValName[i], configVal[i]);
 			}
 			main.addPlayerUsingConfigurationGUI((currPlayer.getUniqueId()));
-			final TextComponent successfulChange = Component.text()
-					.content(refs.getMsg(successfulChangeMsg, currPlayer))
-					.color(NamedTextColor.GREEN)
-					.build();
-			refs.sendMsg(currPlayer, successfulChange);
+			refs.sendMsg(successfulChangeMsg,
+					"",
+					"&a",
+					currPlayer);
 		}
 		/* Re-open previous GUI */
 		prevInventory.open((Player)context.getForWhom());

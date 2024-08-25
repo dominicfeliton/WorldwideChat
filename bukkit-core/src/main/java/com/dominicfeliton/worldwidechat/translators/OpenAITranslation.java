@@ -12,9 +12,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.*;
 
 public class OpenAITranslation extends BasicTranslation {
@@ -56,23 +54,9 @@ public class OpenAITranslation extends BasicTranslation {
                 Map<String, SupportedLang> supportedLangs = new HashMap<>();
 
                 // https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt
-                ConfigurationSection langSection = aiConf.getConfigurationSection("supportedLangs");
-                if (langSection != null) {
-                    for (String key : langSection.getKeys(false)) {
-                        ConfigurationSection languageInfo = langSection.getConfigurationSection(key);
-
-                        if (languageInfo != null) {
-                            // Retrieve the 'code' and 'name' values
-                            String code = languageInfo.getString("code");
-                            String name = languageInfo.getString("name");
-
-                            supportedLangs.put(code, new SupportedLang(code, name));
-                            supportedLangs.put(name, new SupportedLang(code, name));
-                        }
-                    }
-                } else {
-                    // TODO: This can be better...
-                    throw new IllegalAccessException("Bad supportedLangs!");
+                Set<String> langs = new HashSet<>(aiConf.getStringList("supportedLangs"));
+                for (String key : langs) {
+                    supportedLangs.put(key, new SupportedLang(key));
                 }
 
                 /* Parse languages */
@@ -119,7 +103,7 @@ public class OpenAITranslation extends BasicTranslation {
             TranslationChatCompletionRequest.ResponseFormat responseFormat = new TranslationChatCompletionRequest.ResponseFormat("json_schema", jsonSchema);
 
             TranslationChatCompletionRequest request = new TranslationChatCompletionRequest(
-                    conf.getString("Translator.chatGPTVersion"),
+                    conf.getString("Translator.chatGPTModel"),
                     List.of(systemMsg, userMsg),
                     new TranslationChatCompletionRequest.ResponseFormat("json_schema", jsonSchema)
             );;
@@ -193,9 +177,9 @@ public class OpenAITranslation extends BasicTranslation {
                 case 403:
                 case 429:
                 case 500:
-                    throw new Exception(refs.getMsg("chatGPT500", null));
+                    throw new Exception(refs.getPlainMsg("chatGPT500"));
                 default:
-                    throw new Exception(refs.getMsg("chatGPTUnknown", in + "", null));
+                    throw new Exception(refs.getPlainMsg("chatGPTUnknown", in + ""));
             }
         }
     }

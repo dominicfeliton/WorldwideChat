@@ -18,16 +18,19 @@ public class TempItemInventory implements InventoryProvider {
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	private Player inPLayer;
+	private Player inPlayer;
 
 	public TempItemInventory(ItemStack displayedItem, Player inPlayer) {
 		this.displayedItem = displayedItem;
-		this.inPLayer = inPlayer;
+		this.inPlayer = inPlayer;
 	}
 
 	public SmartInventory getTempItemInventory() {
 		return SmartInventory.builder().id("tempItemMenu").provider(this).size(5, 9)
-				.manager(WorldwideChat.instance.getInventoryManager()).title(ChatColor.DARK_BLUE + refs.getMsg("wwcGUITempItem", inPLayer))
+				.manager(main.getInventoryManager()).title(refs.getPlainMsg("wwcGUITempItem",
+						"",
+						"&1",
+						inPlayer))
 				.build();
 	}
 

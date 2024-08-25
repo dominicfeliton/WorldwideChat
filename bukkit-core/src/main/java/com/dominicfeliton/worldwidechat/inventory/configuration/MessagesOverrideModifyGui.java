@@ -10,9 +10,6 @@ import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -46,7 +43,10 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 		return SmartInventory.builder().id("overrideModifyMenu")
 				.provider(this).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-					.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", inPlayer))
+					.title(refs.getPlainMsg("wwcConfigGUIChatMessagesModifyOverride",
+							"",
+							"&9",
+							inPlayer))
 				.build();
 	}
 	
@@ -63,7 +63,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();
 			ItemMeta deleteOverrideMeta = deleteOverrideButton.getItemMeta();
 			deleteOverrideMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", inPlayer));
+					+ refs.getPlainMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", inPlayer));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
 				BukkitRunnable saveMessages = new BukkitRunnable() {
@@ -74,11 +74,11 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 						main.getConfigManager().saveMessagesConfig(inLang, false);
 
 						main.addPlayerUsingConfigurationGUI(inPlayer.getUniqueId());
-						final TextComponent successfulChange = Component.text()
-										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess", inPlayer))
-										.color(NamedTextColor.GREEN)
-								.build();
-						refs.sendMsg(player, successfulChange);
+						refs.sendMsg("wwcConfigConversationOverrideDeletionSuccess",
+								"",
+								"&a",
+								inPlayer);
+
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {

@@ -50,11 +50,11 @@ public class TranslateInGameListener implements Listener {
 					BukkitRunnable out = new BukkitRunnable() {
 						@Override
 						public void run() {
-							refs.sendFancyMsg("wwcEntityTranslateStart", "", "&d&l", event.getPlayer());
+							refs.sendMsg("wwcEntityTranslateStart", "", "&d&l", event.getPlayer());
 							if (customName != null) {
-								refs.sendFancyMsg("wwcEntityTranslateDone", "&a&o" + refs.translateText(customName, event.getPlayer()), "&2&l", event.getPlayer());
+								refs.sendMsg("wwcEntityTranslateDone", "&a&o" + refs.translateText(customName, event.getPlayer()), "&2&l", event.getPlayer());
 							} else {
-								refs.sendFancyMsg("wwcEntityTranslateNoName", "", "&e&o", event.getPlayer());
+								refs.sendMsg("wwcEntityTranslateNoName", "", "&e&o", event.getPlayer());
 							}
 						}
 					};
@@ -96,11 +96,11 @@ public class TranslateInGameListener implements Listener {
 						List<String> translatedPages = new ArrayList<String>();
 
 						/* Send message */
-						refs.sendFancyMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
+						refs.sendMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
 
 						/* Translate title */
 						outTitle = refs.translateText(meta.getTitle(), currPlayer);
-						refs.sendFancyMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
+						refs.sendMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
 
 						/* Translate pages */
 						for (String eaPage : pages) {
@@ -110,7 +110,7 @@ public class TranslateInGameListener implements Listener {
 
 						if (currentBook != null) {
 							/* Set completed message */
-							refs.sendFancyMsg("wwcBookDone", "", "&a&o", currPlayer);
+							refs.sendMsg("wwcBookDone", "", "&a&o", currPlayer);
 						}
 
 						/* Create the modified book */
@@ -173,7 +173,7 @@ public class TranslateInGameListener implements Listener {
 						boolean textLimit = false;
 
 						/* Send message */
-						refs.sendFancyMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
+						refs.sendMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
 
 						/* Translate each line of sign */
 						for (int i = 0; i < changedSignText.length; i++) {
@@ -207,7 +207,7 @@ public class TranslateInGameListener implements Listener {
 								out += eaLine + "\n";
 						}
 						final TextComponent translationNoticeMsg = Component.text()
-								.content(refs.getMsg("wwcSignDeletedOrTooLong", event.getPlayer()))
+								.content(refs.getPlainMsg("wwcSignDeletedOrTooLong", event.getPlayer()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 								.decoration(TextDecoration.ITALIC, true)
 								.append(Component.text().content("\n" + "---------------")
@@ -219,7 +219,7 @@ public class TranslateInGameListener implements Listener {
 
 						if (!textLimit && currLoc != null) {
 							/* Set completed message */
-							refs.sendFancyMsg("wwcSignDone", "", "&a&o", event.getPlayer());
+							refs.sendMsg("wwcSignDone", "", "&a&o", event.getPlayer());
 						} else {
 							/* If we are here, sign is too long or deleted msg */
 							refs.sendMsg(event.getPlayer(), translationNoticeMsg);
@@ -266,15 +266,15 @@ public class TranslateInGameListener implements Listener {
 						ArrayList<String> outLore = new ArrayList<String>();
 
 						/* Send message */
-						refs.sendFancyMsg("wwcItemTranslateStart", "", "&d&l", event.getPlayer());
+						refs.sendMsg("wwcItemTranslateStart", "", "&d&l", event.getPlayer());
 
 						/* Translate item title */
 						if (meta.hasDisplayName()) {
 							translatedName = refs.translateText(meta.getDisplayName(), event.getPlayer());
 							/* Set completed message */
-							refs.sendFancyMsg("wwcItemTranslateTitleDone","", "&a&o", event.getPlayer());
+							refs.sendMsg("wwcItemTranslateTitleDone","", "&a&o", event.getPlayer());
 						} else {
-							refs.sendFancyMsg("wwcItemTranslateTitleStock","", "&e&o", event.getPlayer());
+							refs.sendMsg("wwcItemTranslateTitleStock","", "&e&o", event.getPlayer());
 							// Stock items not supported
 						}
 
@@ -283,14 +283,14 @@ public class TranslateInGameListener implements Listener {
 
 						/* Translate item lore */
 						if (meta.hasLore()) {
-							refs.sendFancyMsg("wwcItemTranslateLoreStart","", "&d&l", event.getPlayer());
+							refs.sendMsg("wwcItemTranslateLoreStart","", "&d&l", event.getPlayer());
 							outLore = new ArrayList<String>();
 							for (String eaLine : itemLore) {
 								String translatedLine = refs.translateText(eaLine, event.getPlayer());
 								outLore.add(translatedLine);
 							}
 							/* Set completed message */
-							refs.sendFancyMsg("wwcItemTranslateLoreDone", "", "&a&o", event.getPlayer());
+							refs.sendMsg("wwcItemTranslateLoreDone", "", "&a&o", event.getPlayer());
 						}
 
 						/* Create "fake" item to be displayed to user */

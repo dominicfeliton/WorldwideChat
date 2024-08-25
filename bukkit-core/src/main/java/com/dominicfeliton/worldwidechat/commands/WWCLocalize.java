@@ -27,13 +27,13 @@ public class WWCLocalize extends BasicCommand {
     public boolean processCommand() {
         // Simple command to set yours or a user's localization.
         if (args.length > 2) {
-            refs.sendFancyMsg("wwctInvalidArgs", "", "&c", sender);
+            refs.sendMsg("wwctInvalidArgs", "", "&c", sender);
             return false;
         }
 
         if (args.length == 0) {
             if (isConsoleSender) {
-                refs.sendFancyMsg("wwctInvalidArgs", "", "&c", sender);
+                refs.sendMsg("wwctInvalidArgs", "", "&c", sender);
                 return false;
             }
             return changeLocalization(sender.getName(), "stop");
@@ -60,7 +60,7 @@ public class WWCLocalize extends BasicCommand {
         }
 
         if (!refs.isSupportedLang(locale, "local") && !locale.equalsIgnoreCase("stop")) {
-            refs.sendFancyMsg("wwclLangInvalid", new String[] {"&6"+locale, "&6"+ refs.getFormattedLangCodes("local")}, sender);
+            refs.sendMsg("wwclLangInvalid", new String[] {"&6"+locale, "&6"+ refs.getFormattedLangCodes("local")}, sender);
             return false;
         }
 
@@ -84,14 +84,14 @@ public class WWCLocalize extends BasicCommand {
         } else {
             // Changing someone else's
             if (!locale.equalsIgnoreCase("stop")) {
-                refs.sendFancyMsg("wwclLangChangedOtherPlayerSender", new String[] {"&6"+inName, "&6"+locale}, sender);
+                refs.sendMsg("wwclLangChangedOtherPlayerSender", new String[] {"&6"+inName, "&6"+locale}, sender);
                 changeLangMsg(inPlayer, inName, locale);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
-                    refs.sendFancyMsg("wwclLangStoppedOtherPlayerSender", "&6"+inName, sender);
+                    refs.sendMsg("wwclLangStoppedOtherPlayerSender", "&6"+inName, sender);
                     stopLangMsg(inPlayer);
                 } else {
-                    refs.sendFancyMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6"+inName, sender);
+                    refs.sendMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6"+inName, sender);
                 }
             }
         }
@@ -101,8 +101,8 @@ public class WWCLocalize extends BasicCommand {
 
         if (!locale.isEmpty() && configs.getPluginLangConfigs().get(locale) == null) {
             refs.debugMsg("Not found in our YamlConfigs...check localization init logs!");
-            refs.sendFancyMsg("wwclLangNotLoaded", new String[] {"&c"+locale, "&6"+ refs.getFormattedLangCodes("local")}, "&e", sender);
-            main.getLogger().warning(refs.serial(refs.getFancyMsg("wwclLangNotLoadedConsole", new String[] {"&c"+locale}, "", null)));
+            refs.sendMsg("wwclLangNotLoaded", new String[] {"&c"+locale, "&6"+ refs.getFormattedLangCodes("local")}, "&e", sender);
+            main.getLogger().warning(refs.getPlainMsg("wwclLangNotLoadedConsole", locale));
             return false;
         }
         currRecord.setLocalizationCode(locale);
@@ -111,18 +111,18 @@ public class WWCLocalize extends BasicCommand {
     }
 
     private void playerNotFoundMsg(CommandSender sender, String inName) {
-        refs.sendFancyMsg("wwclLangPlayerNotValid", new String[] {"&6"+args[0]}, "&c", sender);
+        refs.sendMsg("wwclLangPlayerNotValid", "&6"+args[0], "&c", sender);
     }
 
     private void changeLangMsg(CommandSender sender, String inName, String locale) {
-        refs.sendFancyMsg("wwclLangChanged", new String[] {"&6"+locale}, sender);
+        refs.sendMsg("wwclLangChanged", "&6"+locale, sender);
     }
 
     private void stopLangMsg(CommandSender sender) {
-        refs.sendFancyMsg("wwclLangStopped", sender);
+        refs.sendMsg("wwclLangStopped", sender);
     }
 
     private void alreadyStoppedMsg(CommandSender sender) {
-        refs.sendFancyMsg("wwclLangAlreadyStopped", sender);
+        refs.sendMsg("wwclLangAlreadyStopped", sender);
     }
 }

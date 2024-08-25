@@ -41,7 +41,10 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 		return SmartInventory.builder().id("overrideMessagesMenu")
 				.provider(this).size(6, 9)
 				.manager(invManager)
-				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings", new String[] {inLang}, inPlayer))
+				.title(refs.getPlainMsg("wwcConfigGUIChatMessagesOverrideSettings",
+						inLang,
+						"&9",
+						inPlayer))
 				.build();
 	}
 
@@ -75,10 +78,10 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 					
 					currentEntryMeta.setDisplayName(entry.getKey());
 					ArrayList<String> lore = new ArrayList<>();
-					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel", inPlayer) + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null
+					lore.add(refs.getPlainMsg("wwcConfigGUIMessagesOverrideOriginalLabel", inPlayer) + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null
 							? messagesConfig.getString("Messages." + entry.getKey())
-							: refs.getMsg("wwcConfigGUIChatMessagesDeadOverride", inPlayer)));
-					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideCustomLabel", inPlayer) + ": " + entry.getValue());
+							: refs.getPlainMsg("wwcConfigGUIChatMessagesDeadOverride", inPlayer)));
+					lore.add(refs.getPlainMsg("wwcConfigGUIMessagesOverrideCustomLabel", inPlayer) + ": " + entry.getValue());
 					currentEntryMeta.setLore(lore);
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {

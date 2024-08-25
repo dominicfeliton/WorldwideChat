@@ -267,56 +267,40 @@ public class CommonRefs {
 		}
 	}
 
-	public String getMsg(String messageName, CommandSender sender) {
-		if (sender instanceof Player) {
-			return getMsg(messageName, (Player) sender);
-		} else {
-			return getMsg(messageName, null);
-		}
+	public String getPlainMsg(String messageName) {
+		return serial(getCompMsg(messageName, new String[]{}, "", null));
 	}
 
-	/**
-	 * Gets a message (with no replacements) from the currently selected messages-XX.yml.
-	 * @param messageName - The name of the message from messages-XX.yml.
-	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
-	 */
-	public String getMsg(String messageName, Player currPlayer) {
-		return getMsg(messageName, new String[0], currPlayer);
+	public String getPlainMsg(String messageName, CommandSender sender) {
+		return serial(getCompMsg(messageName, new String[]{}, "", sender));
 	}
 
-	public String getMsg(String messageName, String replacement, CommandSender sender) {
-		if (sender instanceof Player) {
-			return getMsg(messageName, replacement, (Player) sender);
-		} else {
-			return getMsg(messageName, replacement, null);
-		}
+	public String getPlainMsg(String messageName, String replacement) {
+		return serial(getCompMsg(messageName, new String[] {replacement}, "", null));
 	}
 
-	/**
-	 * Gets a message from the currently selected messages-XX.yml.
-	 * @param messageName - The name of the message from messages-XX.yml.
-	 * @param replacement - The replacement value for the selected message.
-	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
-	 */
-	public String getMsg(String messageName, String replacement, Player currPlayer) { return getMsg(messageName, new String[] {replacement}, currPlayer); }
-
-	public String getMsg(String messageName, String[] replacements, CommandSender sender) {
-		if (sender instanceof Player) {
-			return getMsg(messageName, replacements, (Player) sender);
-		} else {
-			return getMsg(messageName, replacements, null);
-		}
+	public String getPlainMsg(String messageName, String replacement, String resetCode) {
+		return serial(getCompMsg(messageName, new String[] {replacement}, resetCode, null));
 	}
 
-	/**
-	  * Gets a message from the currently selected messages-XX.yml.
-	  * @param messageName - The name of the message from messages-XX.yml.
-	  * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
-	  * @param currPlayer - The current player to be targetted.
-	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
-	  */
-	public String getMsg(String messageName, String[] replacements, Player currPlayer) {
-		return serial(getFancyMsg(messageName, replacements, "", currPlayer));
+	public String getPlainMsg(String messageName, String replacement, CommandSender sender) {
+		return serial(getCompMsg(messageName, new String[] {replacement}, "", sender));
+	}
+
+	public String getPlainMsg(String messageName, String[] replacements, CommandSender sender) {
+		return serial(getCompMsg(messageName, replacements, "", sender));
+	}
+
+	public String getPlainMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
+		return serial(getCompMsg(messageName, new String[] {replacement}, resetCode, sender));
+	}
+
+	public String getPlainMsg(String messageName, String[] replacements, String resetCode) {
+		return serial(getCompMsg(messageName, replacements, resetCode, null));
+	}
+
+	public String getPlainMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
+		return serial(getCompMsg(messageName, replacements, resetCode, sender));
 	}
 
 	/**
@@ -327,7 +311,7 @@ public class CommonRefs {
 	 * @param sender - The person/entity to be sent this message. Can be null for nobody in particular.
 	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	 */
-	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
+	public TextComponent getCompMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		String code = "";
 		String globalCode = main.getConfigManager().getMainConfig().getString("General.pluginLang");
@@ -370,38 +354,38 @@ public class CommonRefs {
 		return Component.text().content(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements)).build();
 	}
 
-	public void sendFancyMsg(String messageName, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, new String[]{}, "&r&d", sender));
+	public void sendMsg(String messageName, CommandSender sender) {
+		sendMsg(sender, getCompMsg(messageName, new String[]{}, "&r&d", sender));
 	}
 
-	public void sendFancyMsg(String messageName, String[] replacements, CommandSender sender) {
+	public void sendMsg(String messageName, String[] replacements, CommandSender sender) {
 		// Default WWC color is usually LIGHT_PURPLE (&d)
-		sendMsg(sender, getFancyMsg(messageName, replacements, "&r&d", sender));
+		sendMsg(sender, getCompMsg(messageName, replacements, "&r&d", sender));
 	}
 
-	public void sendFancyMsg(String messageName, String replacement, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r&d", sender));
+	public void sendMsg(String messageName, String replacement, CommandSender sender) {
+		sendMsg(sender, getCompMsg(messageName, new String[] {replacement}, "&r&d", sender));
 	}
 
-	public void sendFancyMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r"+resetCode, sender));
+	public void sendMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
+		sendMsg(sender, getCompMsg(messageName, new String[] {replacement}, "&r"+resetCode, sender));
 	}
 
-	public void sendFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, replacements, "&r"+resetCode, sender));
+	public void sendMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
+		sendMsg(sender, getCompMsg(messageName, replacements, "&r"+resetCode, sender));
 	}
 	
 	/**
 	  * Sends the user a properly formatted message through our adventure instance.
 	  * @param sender - The target sender. Can be any entity that can receive messages. CANNOT BE NULL.
-	  * @param originalMessage - The unformatted TextComponent that should be sent to sender.
+	  * @param originalMessage - The unformatted Component that should be sent to sender.
 	  * @return
 	  */
-	public void sendMsg(CommandSender sender, TextComponent originalMessage) {
+	public void sendMsg(CommandSender sender, Component originalMessage) {
 		try {
 			Audience adventureSender = main.adventure().sender(sender);
 			final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
-					.append(Component.text().content(" "))
+					.append(Component.space())
 					.append(originalMessage.asComponent())
 					.build();
 			if (sender instanceof ConsoleCommandSender) {
@@ -412,8 +396,8 @@ public class CommonRefs {
 		} catch (IllegalStateException e) {}
 	}
 
-	public void sendMsg(CommandSender sender, String originalMessage) {
-		sendMsg(sender, Component.text(ChatColor.translateAlternateColorCodes('&', originalMessage)));
+	public void sendMsg(CommandSender sender, String stringMsg) {
+		sendMsg(sender, deserial(stringMsg));
 	}
 
 	/**
@@ -480,11 +464,7 @@ public class CommonRefs {
 			/* Char limit check */
 			int limit = main.getMessageCharLimit();
 			if (inMessage.length() > limit) {
-				final TextComponent charLimit = Component.text()
-								.content(getMsg("wwcCharLimit", "" + limit, currPlayer))
-								.color(NamedTextColor.YELLOW)
-						.build();
-				sendMsg(currPlayer, charLimit);
+				sendMsg("wwcCharLimit", "&c"+limit, "&6", currPlayer);
 				return inMessage;
 			}
 
@@ -506,8 +486,8 @@ public class CommonRefs {
 				debugMsg("Checking blacklist!");
 				for (String eaWord : main.getBlacklistTerms()) {
 					if (inMessage.contains(eaWord)) {
-						sendFancyMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);
-						debugMsg(getMsg("wwcBlacklistedMsgDetected", new String[] {eaWord, inMessage}, null));
+						sendMsg("wwcBlacklistedMsg", new String[] {}, "&c", currPlayer);
+						debugMsg(getPlainMsg("wwcBlacklistedMsgDetected", new String[] {eaWord, inMessage}, ""));
 						return inMessage;
 					}
 				}
@@ -612,13 +592,9 @@ public class CommonRefs {
 			
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
-			final TextComponent playerError = Component.text()
-							.content(getMsg("wwcTranslatorError", currPlayer))
-							.color(NamedTextColor.RED)
-					.build();
-			sendMsg(currPlayer, playerError);
+			sendMsg("wwcTranslatorError", "", "&c", currPlayer);
 			main.getLogger()
-					.severe(getMsg("wwcTranslatorErrorConsole", currPlayer.getName(), null));
+					.severe(getPlainMsg("wwcTranslatorErrorConsole", "&6"+currPlayer.getName(), "&c", null));
 			debugMsg(ExceptionUtils.getStackTrace(e));
 
 			/* Write to log file */
@@ -650,8 +626,8 @@ public class CommonRefs {
 			
 			/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
 			if (main.getTranslatorErrorCount() >= main.getErrorLimit()) {
-				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReached", null));
-				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReachedCheckLogs", null));
+				main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReached"));
+				main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
 				wwcHelper.runSync(new BukkitRunnable() {
 					@Override
 					public void run() {
@@ -778,11 +754,7 @@ public class CommonRefs {
 	 * @return Returns false, so that a command can return this method.
 	 */
 	public boolean sendNoConsoleChatMsg(CommandSender sender) {
-		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
-						.content(getMsg("wwctCannotTranslateConsole", new String[0], null))
-						.color(NamedTextColor.RED)
-				.build();
-		sendMsg(sender, noConsoleChat);
+		sendMsg("wwctCannotTranslateConsole", "", "&c", sender);
 		return false;
 	}
 	
@@ -793,13 +765,9 @@ public class CommonRefs {
 	 */
 	public boolean sendTimeoutExceptionMsg(CommandSender sender) {
 		if (sender instanceof Player) {
-			main.getLogger().warning(getMsg("wwcTimeoutExceptionConsole", sender.getName(), (Player)sender));
+			main.getLogger().warning(getPlainMsg("wwcTimeoutExceptionConsole", sender.getName(), (Player)sender));
 		}
-		final TextComponent timeoutException = Component.text()
-						.content(getMsg("wwcTimeoutException", null))
-						.color(NamedTextColor.YELLOW)
-				.build();
-		sendMsg(sender, timeoutException);
+		sendMsg("wwcTimeoutException", sender);
 		return true;
 	}
 	
@@ -840,7 +808,7 @@ public class CommonRefs {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Map<String, String> tableSchema = CommonRefs.tableSchemas.get(tableName);
 		if (tableSchema == null) {
-			main.getLogger().severe(getMsg("wwcdBadTable", new String[] {tableName}, null));
+			main.getLogger().severe(getPlainMsg("wwcdBadTable", new String[] {"&6"+tableName}, "&c", null));
 			return false;
 		}
 
@@ -863,8 +831,8 @@ public class CommonRefs {
 
 					if (actualColumnType == null) {
 						// Column is missing
-						debugMsg(serial(getFancyMsg("wwcdColumnMissing", new String[] {"&b" + columnName, "&b" + tableName}, "&e", null)));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
+						debugMsg(getPlainMsg("wwcdColumnMissing", new String[] {"&b" + columnName, "&b" + tableName}, "&e", null));
+						main.getLogger().severe(getPlainMsg("wwcOldDatabaseStruct"));
 						return true;
 					}
 
@@ -875,8 +843,8 @@ public class CommonRefs {
 
 					if (!expectedColumnType.contains(actualColumnType)) {
 						// Column type doesn't match the expected type
-						debugMsg(serial(getFancyMsg("wwcdColumnBadType", new String[] {"&b" + columnName, "&b" + tableName, "&b" + actualColumnType, "&b"+expectedColumnType}, "&e", null)));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
+						debugMsg(getPlainMsg("wwcdColumnBadType", new String[] {"&b" + columnName, "&b" + tableName, "&b" + actualColumnType, "&b"+expectedColumnType}, "&e"));
+						main.getLogger().severe(getPlainMsg("wwcOldDatabaseStruct"));
 						return true;
 					}
 				}
@@ -893,7 +861,7 @@ public class CommonRefs {
 				}
 				*/
 
-				debugMsg(serial(getFancyMsg("wwcdGoodTable", new String[] {"&6MySQL", "&6"+tableName}, "&a", null)));
+				debugMsg(getPlainMsg("wwcdGoodTable", new String[] {"&6MySQL", "&6"+tableName}, "&a", null));
 				return false; // Table structure matches the schema
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -920,8 +888,8 @@ public class CommonRefs {
 
 					if (actualColumnType == null) {
 						// Column is missing
-						debugMsg(serial(getFancyMsg("wwcdColumnMissing", new String[] {"&b"+columnName, "&b"+tableName}, "&e", null)));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
+						debugMsg(getPlainMsg("wwcdColumnMissing", new String[] {"&b"+columnName, "&b"+tableName}, "&e", null));
+						main.getLogger().severe(getPlainMsg("wwcOldDatabaseStruct"));
 						return true;
 					}
 
@@ -936,13 +904,13 @@ public class CommonRefs {
 
 					if (!expectedColumnType.contains(actualColumnType)) {
 						// Column type doesn't match the expected type
-						debugMsg(serial(getFancyMsg("wwcdColumnBadType", new String[] {"&b"+columnName, "&b"+tableName, "&b"+actualColumnType, "&b"+expectedColumnType}, "&e", null)));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
+						debugMsg(getPlainMsg("wwcdColumnBadType", new String[] {"&b"+columnName, "&b"+tableName, "&b"+actualColumnType, "&b"+expectedColumnType}, "&e", null));
+						main.getLogger().severe(getPlainMsg("wwcOldDatabaseStruct"));
 						return true;
 					}
 				}
 
-				debugMsg(serial(getFancyMsg("wwcdGoodTable", new String[] {"&6PostgreSQL", "&6"+tableName}, "&a", null)));
+				debugMsg(getPlainMsg("wwcdGoodTable", new String[] {"&6PostgreSQL", "&6"+tableName}, "&a", null));
 				return false; // Table structure matches the schema
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -952,7 +920,7 @@ public class CommonRefs {
 		}
 		return true;
 	}
-	
+
 	/**
 	  * Checks if a provided exception is a no confidence one/one to be ignored from our target translator.
 	  * @param throwable - The exception to be checked
@@ -1003,7 +971,7 @@ public class CommonRefs {
 		if ((inMessage.contains("&") && main.isActiveTranslator(currPlayer) && !(main.getActiveTranslator(currPlayer)
 						.getCCWarning()))) // check if user has already been sent CC warning
 		{
-			sendFancyMsg("colorCodeWarning", "", "&d&o", currPlayer);
+			sendMsg("colorCodeWarning", "", "&d&o", currPlayer);
 			main.getActiveTranslator(currPlayer)
 					.setCCWarning(true);
 			// we're still gonna translate it but it won't look pretty
@@ -1022,12 +990,10 @@ public class CommonRefs {
 			Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
 			Instant currTime = Instant.now();
 			if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
-				final TextComponent rateLimit = Component.text()
-						.content(getMsg("wwcRateLimit", "" + ChronoUnit.SECONDS.between(currTime,
-								previous.plus(delay, ChronoUnit.SECONDS)), (Player)sender))
-								.color(NamedTextColor.YELLOW)
-						.build();
-				sendMsg(sender, rateLimit);
+				sendMsg("wwcRateLimit", "" + ChronoUnit.SECONDS.between(currTime,
+						previous.plus(delay, ChronoUnit.SECONDS)),
+						"&e",
+						sender);
 				return false;
 			} else {
 				currActiveTranslator.setRateLimitPreviousTime(Instant.now());
@@ -1054,7 +1020,7 @@ public class CommonRefs {
 	}
 
 	public void badPermsMessage(String correctPerm, CommandSender sender) {
-		sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
+		sendMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
 	}
 
 	public Component getChatChannelFormat(Component translateIcon, String translateFormat, String prefix, String username, String suffix, Player originPlayer, Player targetPlayer) {
@@ -1083,7 +1049,7 @@ public class CommonRefs {
 		Matcher match = local.matcher(parsedFormat);
 		while (match.find()) {
 			String extracted = match.group(1);
-			parsedFormat = parsedFormat.replace(match.group(0), getMsg(extracted, targetPlayer == null ? originPlayer : targetPlayer));
+			parsedFormat = parsedFormat.replace(match.group(0), getPlainMsg(extracted, targetPlayer == null ? originPlayer : targetPlayer));
 		}
 
 		// Handle Default Placeholders
@@ -1147,7 +1113,7 @@ public class CommonRefs {
 			}
 		} catch (Exception e) {
 			//e.printStackTrace();
-			if (!preInit) main.getLogger().warning(getMsg("wwcISOJSONFail", null));
+			if (!preInit) main.getLogger().warning(getPlainMsg("wwcISOJSONFail"));
 		}
 
 		return in;

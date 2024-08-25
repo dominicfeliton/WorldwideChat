@@ -11,7 +11,6 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -36,7 +35,10 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
         return SmartInventory.builder().id("overrideMessagesMenuPicker")
                 .provider(this).size(6, 9)
                 .manager(invManager)
-                .title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettingsPicker", inPlayer))
+                .title(refs.getPlainMsg("wwcConfigGUIChatMessagesOverrideSettingsPicker",
+                        "",
+                        "&9",
+                        inPlayer))
                 .build();
     }
 
@@ -62,11 +64,17 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
                 ArrayList<String> lore = new ArrayList<>();
                 if (code.equalsIgnoreCase(main.getPlayerRecord(player, true).getLocalizationCode())) {
                     invManager.addGlowEffect(currentEntryMeta);
-                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUICurrentPlayerLang", player));
+                    lore.add(refs.getPlainMsg("wwcConfigGUICurrentPlayerLang",
+                            "",
+                            "&e&o",
+                            player));
                 }
                 if (refs.isSameLang(code, main.getConfigManager().getMainConfig().getString("General.pluginLang"), "local")) {
-                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUIMessagesServerLang", player));
                     invManager.addGlowEffect(currentEntryMeta);
+                    lore.add(refs.getPlainMsg("wwcConfigGUIMessagesServerLang",
+                            "",
+                            "&e&o",
+                            player));
                 }
                 if (!eaLang.getNativeLangName().isEmpty() && !eaLang.getNativeLangName().equalsIgnoreCase(eaLang.getLangName())) {
                     lore.add(eaLang.getNativeLangName());

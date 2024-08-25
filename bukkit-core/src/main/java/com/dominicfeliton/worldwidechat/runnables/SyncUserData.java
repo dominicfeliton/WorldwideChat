@@ -25,7 +25,7 @@ public class SyncUserData implements Runnable {
 	public void run() {
 		final long startTime = System.nanoTime();
 		try {
-			refs.debugMsg(refs.getMsg("wwcSyncUserDataStart", null));
+			refs.debugMsg(refs.getPlainMsg("wwcSyncUserDataStart"));
 			DataStorageUtils.syncData();
 
 			final long converted = TimeUnit.MILLISECONDS.convert(System.nanoTime() - startTime, TimeUnit.NANOSECONDS);
@@ -35,15 +35,15 @@ public class SyncUserData implements Runnable {
 			else if (main.isMongoConnValid(true)) storageOption = "MongoDB";
 			else storageOption = "YAML";
 
-			refs.debugMsg(refs.serial(refs.getFancyMsg("wwcSyncUserDataComplete", new String[] {"&6"+storageOption, "&e(" + converted + "ms)"}, "&a",null)));
+			refs.debugMsg(refs.getPlainMsg("wwcSyncUserDataComplete", new String[] {"&6"+storageOption, "&e(" + converted + "ms)"}, "&a"));
 			if (player != null) {
-				refs.sendFancyMsg("wwcSyncUserDataComplete", new String[] {"&6"+storageOption, "&e(" + converted + "ms)"}, "&a", player);
+				refs.sendMsg("wwcSyncUserDataComplete", new String[] {"&6"+storageOption, "&e(" + converted + "ms)"}, "&a", player);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			main.getLogger().severe(refs.getMsg("wwcCouldNotSaveOhNo", null));
+			main.getLogger().severe(refs.getPlainMsg("wwcCouldNotSaveOhNo"));
 			if (player != null) {
-				refs.sendFancyMsg("wwcCouldNotSaveOhNo", "", "&c", player);
+				refs.sendMsg("wwcCouldNotSaveOhNo", "", "&c", player);
 			}
 		}
 	}

@@ -33,8 +33,10 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 	public WWCTranslateGuiChatMenu(String targetPlayerUUID, Player inPlayer) {
 		this.inPlayer = inPlayer;
 		this.targetPlayerUUID = targetPlayerUUID;
-		this.targetPlayerName = ChatColor.BLUE + refs.getMsg("wwctGUIChatMenu", main.getServer()
-				.getPlayer(UUID.fromString(targetPlayerUUID)).getName(), inPlayer);
+		this.targetPlayerName = refs.getPlainMsg("wwctGUIChatMenu",
+				main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(),
+				"&9",
+				inPlayer);
 	}
 
 	/* Get translation info */
@@ -62,11 +64,15 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 				ItemMeta outgoingChatMeta = outgoingChatButton.getItemMeta();
 				if (targetTranslator.getTranslatingChatOutgoing()) {
 					invManager.addGlowEffect(outgoingChatMeta);
-					outgoingChatMeta.setDisplayName(ChatColor.GREEN
-							+ refs.getMsg("wwctGUIChatOutgoingButton", inPlayer));
+					outgoingChatMeta.setDisplayName(refs.getPlainMsg("wwctGUIChatOutgoingButton",
+							"",
+							"&a",
+							inPlayer));
 				} else {
-					outgoingChatMeta.setDisplayName(ChatColor.YELLOW
-							+ refs.getMsg("wwctGUIChatOutgoingButton", inPlayer));
+					outgoingChatMeta.setDisplayName(refs.getPlainMsg("wwctGUIChatOutgoingButton",
+							"",
+							"&e",
+							inPlayer));
 				}
 				outgoingChatButton.setItemMeta(outgoingChatMeta);
 				contents.set(1, 3, ClickableItem.of(outgoingChatButton, e -> {
@@ -84,11 +90,15 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
     			ItemMeta incomingChatMeta = incomingChatButton.getItemMeta();
     			if (targetTranslator.getTranslatingChatIncoming()) {
     				invManager.addGlowEffect(incomingChatMeta);
-    				incomingChatMeta.setDisplayName(ChatColor.GREEN
-    						+ refs.getMsg("wwctGUIChatIncomingButton", inPlayer));
+    				incomingChatMeta.setDisplayName(refs.getPlainMsg("wwctGUIChatIncomingButton",
+							"",
+							"&a",
+							inPlayer));
     			} else {
-    				incomingChatMeta.setDisplayName(ChatColor.YELLOW
-    						+ refs.getMsg("wwctGUIChatIncomingButton", inPlayer));
+    				incomingChatMeta.setDisplayName(refs.getPlainMsg("wwctGUIChatIncomingButton",
+							"",
+							"&e",
+							inPlayer));
     			}
     			incomingChatButton.setItemMeta(incomingChatMeta);
     			contents.set(1, 5, ClickableItem.of(incomingChatButton, e -> {

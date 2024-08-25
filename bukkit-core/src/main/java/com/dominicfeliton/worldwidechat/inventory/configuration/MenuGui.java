@@ -37,7 +37,7 @@ public class MenuGui implements InventoryProvider {
 	}
 
 	public enum CONFIG_GUI_TAGS {
-		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, CHAT_CHANNEL_SET, TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
+		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, CHAT_CHANNEL_SET, TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, CHATGPT_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET, AI_SET;
 		
 		public SmartInventory smartInv;
 	}
@@ -72,22 +72,28 @@ public class MenuGui implements InventoryProvider {
 		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
 
 		MenuGui transGoogleSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Google"});
+		CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("googleTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"Google"});
 		
 		MenuGui transAmazonSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv = transAmazonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Amazon"});
+		CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv = transAmazonSet.genSmartInv("amazonTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"Amazon"});
 		
 		MenuGui transLibreSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv = transLibreSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Libre"});
+		CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv = transLibreSet.genSmartInv("libreTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"Libre"});
 		
 		MenuGui transDeepSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv = transDeepSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"DeepL"});
+		CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv = transDeepSet.genSmartInv("deepLTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"DeepL"});
 
 		MenuGui transAzureSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv = transAzureSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Azure"});
+		CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv = transAzureSet.genSmartInv("azureTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"Azure"});
 
 		MenuGui transSystranSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv = transSystranSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Systran"});
+		CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv = transSystranSet.genSmartInv("systranTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"Systran"});
+
+		MenuGui transChatGPTSet = new MenuGui(inPlayer, transName);
+		CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv = transChatGPTSet.genSmartInv("chatgptTranslator", "wwcConfigGUIEachTranslatorSettings", new String[] {"ChatGPT"});
+
+		MenuGui aiSet = new MenuGui(inPlayer, transName);
+		CONFIG_GUI_TAGS.AI_SET.smartInv = aiSet.genSmartInv("aiSettings", "wwcConfigGUIAISettings");
 
 		/* Generate inventory contents */
 		// General
@@ -229,10 +235,11 @@ public class MenuGui implements InventoryProvider {
         transSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 	    transSet.add(new SubMenuElement(1, 1, transName.equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton", CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv));
 	    transSet.add(new SubMenuElement(1, 2, transName.equals("Azure Translate"), "wwcConfigGUIAzureTranslateButton", CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv));
-		transSet.add(new SubMenuElement(1, 3, transName.equals("DeepL Translate"), "wwcConfigGUIDeepLTranslateButton", CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv));
-		transSet.add(new SubMenuElement(1, 4, transName.equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
-		transSet.add(new SubMenuElement(1, 5, transName.equals("Libre Translate"), "wwcConfigGUILibreTranslateButton", CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv));
-		transSet.add(new SubMenuElement(1, 6, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton", CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv));
+		transSet.add(new SubMenuElement(1, 3, transName.equals("ChatGPT"), "wwcConfigGUIChatGPTButton", CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv));
+		transSet.add(new SubMenuElement(1, 4, transName.equals("DeepL Translate"), "wwcConfigGUIDeepLTranslateButton", CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv));
+		transSet.add(new SubMenuElement(1, 5, transName.equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
+		transSet.add(new SubMenuElement(1, 6, transName.equals("Libre Translate"), "wwcConfigGUILibreTranslateButton", CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv));
+		transSet.add(new SubMenuElement(1, 7, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton", CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv));
 		transSet.add(new ConvoElement(2, 1, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.TranslationCache()));
 	    transSet.add(new ConvoElement(2, 2, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
@@ -244,6 +251,7 @@ public class MenuGui implements InventoryProvider {
 		transSet.add(new ConvoElement(2, 5, "wwcConfigGUIIgnoreErrorsButton", XMaterial.NAME_TAG,
 						new TranslatorSettingsConvos.IgnoreErrors()));
 		transSet.add(new ToggleElement(2, 6, "wwcConfigGUIPersistentCacheButton", "wwcConfigConversationPersistentCacheSuccess", "Translator.enablePersistentCache"));
+		transSet.add(new CommonElement(3, 6, "Next", new Object[] {CONFIG_GUI_TAGS.AI_SET.smartInv}));
 	    transSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(3, 4, "Quit"));
 		transSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
@@ -271,7 +279,21 @@ public class MenuGui implements InventoryProvider {
 		transAmazonSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transAmazonSet.add(new CommonElement(2, 4, "Quit"));
 		transAmazonSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
-		
+
+		// ChatGPT
+		transChatGPTSet.add(new BorderElement(XMaterial.BLACK_STAINED_GLASS_PANE));
+		transChatGPTSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleChatGPTButton", "wwcConfigGUIChatGPTToggleSuccess",
+				"Translator.useChatGPT", translatorToggles, false));
+		transChatGPTSet.add(new ConvoElement(1, 2, "wwcConfigGUIChatGPTURLButton", XMaterial.NAME_TAG,
+				new ChatGPTSettingsConvos.Url()));
+		transChatGPTSet.add(new ConvoElement(1, 3, "wwcConfigGUIChatGPTAPIKeyButton", XMaterial.NAME_TAG,
+				new ChatGPTSettingsConvos.ApiKey()));
+		transChatGPTSet.add(new ConvoElement(1, 4, "wwcConfigGUIChatGPTModelButton", XMaterial.NAME_TAG,
+				new ChatGPTSettingsConvos.Model()));
+		transChatGPTSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		transChatGPTSet.add(new CommonElement(2, 4, "Quit"));
+		transChatGPTSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
+
 		// Libre Translator
 		transLibreSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		transLibreSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleLibreTranslateButton", "wwcConfigConversationLibreTranslateToggleSuccess",
@@ -315,6 +337,17 @@ public class MenuGui implements InventoryProvider {
 		transSystranSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transSystranSet.add(new CommonElement(2, 4, "Quit"));
 		transSystranSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
+
+		// AI Settings
+		aiSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
+
+		/*
+		aiSet.add(new ConvoElement(1, 1, "wwcConfigGUAIJsonPromptButton", XMaterial.NAME_TAG,
+				new AISettingsConvos.JsonPrompt()));
+		aiSet.add(new ConvoElement(1, 2, "wwcConfigGUAIPlainTextPromptButton", XMaterial.NAME_TAG,
+				new AISettingsConvos.PlainTextPrompt()));
+		aiSet.add(new)
+		 */
 	}
 	
 	static abstract class Element {
@@ -477,13 +510,14 @@ public class MenuGui implements InventoryProvider {
 
 	@Override
 	public void update(Player player, InventoryContents contents) {}
-	
+
+	// TODO: Substitue ChatColor?
 	private SmartInventory genSmartInv(String id, int x, int y, ChatColor col, String titleTag, String[] args) {
 		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		return SmartInventory.builder().id(id)
 				.provider(this).size(x, y)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(col + refs.getMsg(titleTag, args,inPlayer))
+				.title(col + refs.getPlainMsg(titleTag, args,inPlayer))
 				.build();
 	}
 	
@@ -492,7 +526,7 @@ public class MenuGui implements InventoryProvider {
 		return SmartInventory.builder().id(id)
 		.provider(this).size(x, y)
 		.manager(WorldwideChat.instance.getInventoryManager())
-		.title(col + refs.getMsg(titleTag, inPlayer))
+		.title(col + refs.getPlainMsg(titleTag, inPlayer))
 		.build();
 	}
 	

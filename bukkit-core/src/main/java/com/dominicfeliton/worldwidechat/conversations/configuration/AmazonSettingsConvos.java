@@ -9,26 +9,30 @@ import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 
 public class AmazonSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
 
-	private static WWCInventoryManager invMan = new WWCInventoryManager();
+	private static WWCInventoryManager invMan = main.getInventoryManager();
 	
 	public static class AccessKey extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 		@Override
-		public String getPromptText(ConversationContext context) {
+		public @NotNull String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"), currPlayer);
+			return refs.getPlainMsg("wwcConfigConversationAmazonTranslateAccessKeyInput",
+					"&6REDACTED",
+					"&b",
+					currPlayer);
 		}
 
 		@Override
-		public Prompt acceptInput(ConversationContext context, String input) {
+		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
 			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateAccessKeySuccess",
 					new String[] {"Translator.amazonAccessKey", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
@@ -36,16 +40,20 @@ public class AmazonSettingsConvos {
 	
 	public static class Region extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
+
 		@Override
-		public String getPromptText(ConversationContext context) {
+		public @NotNull String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"), currPlayer);
+			return refs.getPlainMsg("wwcConfigConversationAmazonTranslateRegionInput",
+					"&6"+main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"),
+					"&b",
+					currPlayer);
 		}
 
 		@Override
-		public Prompt acceptInput(ConversationContext context, String input) {
+		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
 			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess",
 					new String[] {"Translator.amazonRegion", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
@@ -54,15 +62,18 @@ public class AmazonSettingsConvos {
 	public static class SecretKey extends StringPrompt {
 		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 		@Override
-		public String getPromptText(ConversationContext context) {
+		public @NotNull String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"), currPlayer);
+			return refs.getPlainMsg("wwcConfigConversationAmazonTranslateSecretKeyInput",
+					"&6"+main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"),
+					"&b",
+					currPlayer);
 		}
 
 		@Override
-		public Prompt acceptInput(ConversationContext context, String input) {
+		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
 			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateSecretKeySuccess",
 					new String[] {"Translator.amazonSecretKey", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}

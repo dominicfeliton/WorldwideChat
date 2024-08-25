@@ -46,7 +46,10 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 		return SmartInventory.builder().id("translateTargetLanguage")
 				.provider(this).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationTarget", inPlayer))
+				.title(refs.getPlainMsg("wwctGUINewTranslationTarget",
+						"",
+						"&9",
+						inPlayer))
 				.build();
 	}
 
@@ -91,15 +94,24 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 				/* Add Glow Effect */
 				if (unsupported) {
-					lore.add(ChatColor.RED + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceSameLang", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceSameLang",
+							"",
+							"&c&o",
+							inPlayer));
 				}
 				if (!unsupported && (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName()))) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceOrTargetTranslationAlreadyActive",
+							"",
+							"&e&o",
+							inPlayer));
 				} else if (!unsupported && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getOutLangCode().equalsIgnoreCase(currLang.getLangCode())) {
 					// If global translate is already using this as an outLang...
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal",
+							"",
+							"&e&o",
+							inPlayer));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
 				if (!currLang.getNativeLangName().isEmpty() && !currLang.getNativeLangName().equalsIgnoreCase(currLang.getLangName())) {

@@ -12,6 +12,7 @@ import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
@@ -26,16 +27,19 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 	}
 
 	@Override
-	public String getPromptText(ConversationContext context) {
+	public @NotNull String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		Player currPlayer = ((Player) context.getForWhom());
 		currPlayer.closeInventory();
-		return ChatColor.AQUA + refs.getMsg("wwctGUIConversationRateLimit", currTranslator.getRateLimit() + "", currPlayer);
+		return refs.getPlainMsg("wwctGUIConversationRateLimit",
+				"&6"+currTranslator.getRateLimit(),
+				"&b",
+				currPlayer);
 	}
 
 	@Override
-	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
+	protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
 		WWCTranslateRateLimit rateCommand;
 		if (input.intValue() > 0) { // Enable rate limit
 			rateCommand = new WWCTranslateRateLimit(((CommandSender) context.getForWhom()), null,

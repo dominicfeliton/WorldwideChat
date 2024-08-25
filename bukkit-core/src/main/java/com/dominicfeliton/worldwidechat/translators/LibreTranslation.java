@@ -241,9 +241,9 @@ public class LibreTranslation extends BasicTranslation {
 		case 403:
 		case 429:
 		case 500:
-			throw new Exception(refs.getMsg("libreHttp" + in, null));
+			throw new Exception(refs.getPlainMsg("libreHttp" + in));
 		default:
-			throw new Exception(refs.getMsg("libreHttpUnknown", in + "", null));
+			throw new Exception(refs.getPlainMsg("libreHttpUnknown", in + ""));
 		}
 	}
 }

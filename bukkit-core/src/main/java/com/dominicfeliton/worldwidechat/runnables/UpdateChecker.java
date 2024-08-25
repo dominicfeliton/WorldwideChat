@@ -34,25 +34,28 @@ public class UpdateChecker implements Runnable {
 			} catch (MalformedURLException e) {
 				latest = main.getPluginVersion() + ""; // Just set latest to the current plugin version, since we can't find
 														// a newer one
-				log.warning(refs.getMsg("wwcUpdaterConnectionFailed", null));
+				log.warning(refs.getPlainMsg("wwcUpdaterConnectionFailed"));
 			} catch (IOException e) {
 				latest = main.getPluginVersion() + "";
-				log.warning(refs.getMsg("wwcUpdaterParserFailed", null));
+				log.warning(refs.getPlainMsg("wwcUpdaterParserFailed"));
 			}
 
 			try {
 				if (main.getPluginVersion().equals(latest)) {
-					log.info(ChatColor.LIGHT_PURPLE
-							+ refs.getMsg("wwcUpdaterUpToDate", null));
+					log.info(refs.getPlainMsg("wwcUpdaterUpToDate",
+							"",
+							"&d"));
 				} else if (new ComparableVersion(main.getPluginVersion()).compareTo(new ComparableVersion(latest)) > 0) {
-					log.warning(refs.getMsg("wwcUpdaterFutureDate", latest, null));
+					log.warning(refs.getPlainMsg("wwcUpdaterFutureDate",
+							"&d"+latest,
+							"&e"));
 				} else {
-					log.warning(refs.getMsg("wwcUpdaterOutOfDate", latest, null));
+					log.warning(refs.getPlainMsg("wwcUpdaterOutOfDate", "&d"+latest, "&e"));
 					log.warning("https://github.com/dominicfeliton/WorldwideChat/releases");
 					main.setOutOfDate(true);
 				}
 			} catch (Exception e) {
-				log.warning(refs.getMsg("wwcUpdaterFailedGeneric", null));
+				log.warning(refs.getPlainMsg("wwcUpdaterFailedGeneric"));
 			}
 			return true;
 		};

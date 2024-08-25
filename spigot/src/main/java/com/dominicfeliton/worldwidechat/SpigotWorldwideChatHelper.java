@@ -47,7 +47,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         // Check if vault is installed at all
         if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
             main.setChat(null);
-            main.getLogger().warning(refs.getMsg("wwcNoVaultPlugin", null));
+            main.getLogger().warning(refs.getPlainMsg("wwcNoVaultPlugin"));
             return;
         }
 
@@ -55,10 +55,12 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         RegisteredServiceProvider<Chat> rsp = main.getServer().getServicesManager().getRegistration(Chat.class);
         if (rsp != null && rsp.getProvider() != null) {
             main.setChat(rsp.getProvider());
-            main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcVaultChatProviderFound", new String[] {rsp.getProvider().getName()}, null));
+            main.getLogger().info(refs.getPlainMsg("wwcVaultChatProviderFound",
+                    rsp.getProvider().getName(),
+                    "&d"));
         } else {
             main.setChat(null);
-            main.getLogger().warning(refs.getMsg("wwcNoVaultChatProvider", null));
+            main.getLogger().warning(refs.getPlainMsg("wwcNoVaultChatProvider"));
         }
     }
 
@@ -106,8 +108,9 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         pluginManager.registerEvents(inv, main);
         listenerQueue.add(inv);
 
-        main.getLogger().info(ChatColor.LIGHT_PURPLE
-                + refs.getMsg("wwcListenersInitialized", null));
+        main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
+                "",
+                "&d"));
     }
 
     @Override

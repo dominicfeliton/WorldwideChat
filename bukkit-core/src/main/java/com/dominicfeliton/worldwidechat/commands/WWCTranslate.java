@@ -36,10 +36,11 @@ public class WWCTranslate extends BasicCommand {
 		// 2) Make sure that when you stop a different translation session yours is not stopped as well
 		// TODO: Revamp GUI checks
 		// TODO: Perhaps put /wwct without stopping first?
+		// TODO: Fix bold calls
 		/* Sanitize args */
 		if ((isGlobal && args.length > 2) || (!isGlobal && args.length > 3)) {
 			// Too many args
-			refs.sendFancyMsg("wwctInvalidArgs", new String[] {}, "&c", sender);
+			refs.sendMsg("wwctInvalidArgs", "", "&c", sender);
 			return false;
 		}
 
@@ -71,7 +72,7 @@ public class WWCTranslate extends BasicCommand {
 					|| (args[0] instanceof String && args[0].equalsIgnoreCase(sender.getName()))) && main.isActiveTranslator(((Player)sender))) {
 				ActiveTranslator currTarget = main.getActiveTranslator(((Player)sender));
 				main.removeActiveTranslator(currTarget);
-				refs.sendFancyMsg("wwctTranslationStopped", sender);
+				refs.sendMsg("wwctTranslationStopped", sender);
 				if ((args.length >= 1 && args[0].equalsIgnoreCase("Stop")) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
 					return true;
 				}
@@ -84,8 +85,8 @@ public class WWCTranslate extends BasicCommand {
 
 				Player testPlayer = Bukkit.getServer().getPlayerExact(args[0]);
 				main.removeActiveTranslator(main.getActiveTranslator(testPlayer));
-				refs.sendFancyMsg("wwctTranslationStopped", testPlayer);
-				refs.sendFancyMsg("wwctTranslationStoppedOtherPlayer", "&6"+args[0], sender);
+				refs.sendMsg("wwctTranslationStopped", testPlayer);
+				refs.sendMsg("wwctTranslationStoppedOtherPlayer", "&6"+args[0], sender);
 				if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {
 					return true;
 				}
@@ -94,9 +95,9 @@ public class WWCTranslate extends BasicCommand {
 		} else if (args.length > 0 && isGlobal && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
 			main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 			for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-				refs.sendFancyMsg("wwcgTranslationStopped", eaPlayer);
+				refs.sendMsg("wwcgTranslationStopped", eaPlayer);
 			}
-			refs.sendFancyMsg("wwcgTranslationStopped", main.getServer().getConsoleSender());
+			refs.sendMsg("wwcgTranslationStopped", main.getServer().getConsoleSender());
 			if (args.length >= 1 && args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
 				return true;
 			}
@@ -141,7 +142,7 @@ public class WWCTranslate extends BasicCommand {
 	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
 		// Check if inLang/outLang are the same
 		if (inLang.equalsIgnoreCase(outLang) || refs.isSameLang(inLang, outLang, "all")) {
-			refs.sendFancyMsg("wwctSameLangError", refs.getFormattedLangCodes("in"), "&c", sender);
+			refs.sendMsg("wwctSameLangError", refs.getFormattedLangCodes("in"), "&c", sender);
 			return false;
 		}
 		/* NOTICE:
@@ -150,12 +151,12 @@ public class WWCTranslate extends BasicCommand {
 		// Check if valid inLang
 		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, "in")) ||
 				(inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
-			refs.sendFancyMsg("wwctInvalidInputLangCode", refs.getFormattedLangCodes("in"), "&c", sender);
+			refs.sendMsg("wwctInvalidInputLangCode", refs.getFormattedLangCodes("in"), "&c", sender);
 			return false;
 		}
 		// Check if valid outLang
 		if (!refs.isSupportedLang(outLang, "out")) {
-			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedLangCodes("out"), "&c", sender);
+			refs.sendMsg("wwctInvalidOutputLangCode", refs.getFormattedLangCodes("out"), "&c", sender);
 			return false;
 		}
 		// Check if target is valid player (if not global)
@@ -165,7 +166,7 @@ public class WWCTranslate extends BasicCommand {
 		if (!isGlobal) {
 			targetPlayer = Bukkit.getPlayerExact(inName);
 			if (targetPlayer == null) {
-				refs.sendFancyMsg("wwcPlayerNotFound", "&6"+inName, "&c", sender);
+				refs.sendMsg("wwcPlayerNotFound", "&6"+inName, "&c", sender);
 				return false;
 			}
 			inUUID = targetPlayer.getUniqueId().toString();
@@ -185,30 +186,30 @@ public class WWCTranslate extends BasicCommand {
 		if (!isGlobal) {
 			if (inLang.equalsIgnoreCase("None")) {
 				if (targetIsSelf) {
-					refs.sendFancyMsg("wwctAutoTranslateStart", "&6"+outLang, sender);
+					refs.sendMsg("wwctAutoTranslateStart", "&6"+outLang, sender);
 				} else {
-					refs.sendFancyMsg("wwctAutoTranslateStartOtherPlayer", new String[] {"&6"+targetPlayer.getName(), "&6"+outLang}, sender);
-					refs.sendFancyMsg("wwctAutoTranslateStart", "&6"+outLang, Bukkit.getPlayer(UUID.fromString(inUUID)));
+					refs.sendMsg("wwctAutoTranslateStartOtherPlayer", new String[] {"&6"+targetPlayer.getName(), "&6"+outLang}, sender);
+					refs.sendMsg("wwctAutoTranslateStart", "&6"+outLang, Bukkit.getPlayer(UUID.fromString(inUUID)));
 				}
 			} else {
                 if (targetIsSelf) {
-					refs.sendFancyMsg("wwctLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, sender);
+					refs.sendMsg("wwctLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, sender);
 				} else {
-					refs.sendFancyMsg("wwctLangToLangStartOtherPlayer", new String[] {"&6"+targetPlayer.getName(), "&6"+inLang, "&6"+outLang}, sender);
-					refs.sendFancyMsg("wwctLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, Bukkit.getPlayer(UUID.fromString(inUUID)));
+					refs.sendMsg("wwctLangToLangStartOtherPlayer", new String[] {"&6"+targetPlayer.getName(), "&6"+inLang, "&6"+outLang}, sender);
+					refs.sendMsg("wwctLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, Bukkit.getPlayer(UUID.fromString(inUUID)));
 				}
 			}
 		} else {
 			if (inLang.equalsIgnoreCase("None")) {
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-					refs.sendFancyMsg("wwcgAutoTranslateStart", "&6"+outLang, eaPlayer);
+					refs.sendMsg("wwcgAutoTranslateStart", "&6"+outLang, eaPlayer);
 				}
-				refs.sendFancyMsg("wwcgAutoTranslateStart", "&6"+outLang, main.getServer().getConsoleSender());
+				refs.sendMsg("wwcgAutoTranslateStart", "&6"+outLang, main.getServer().getConsoleSender());
 			} else {
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-					refs.sendFancyMsg("wwcgLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, eaPlayer);
+					refs.sendMsg("wwcgLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, eaPlayer);
 				}
-				refs.sendFancyMsg("wwcgLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, main.getServer().getConsoleSender());
+				refs.sendMsg("wwcgLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, main.getServer().getConsoleSender());
 			}
 		}
 		ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);

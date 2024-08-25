@@ -61,19 +61,19 @@ public class LoadUserData implements Runnable {
 		File cacheFolder = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
 
 		if (!userDataFolder.exists() && !userDataFolder.mkdir()) {
-			main.getLogger().severe(refs.getMsg("wwcLoadUserDataFolderFail", null));
+			main.getLogger().severe(refs.getPlainMsg("wwcLoadUserDataFolderFail"));
 			main.getServer().getPluginManager().disablePlugin(main);
 			return;
 		}
 
 		if (!statsFolder.exists() && !statsFolder.mkdir()) {
-			main.getLogger().severe(refs.getMsg("wwcLoadStatsFolderFail", null));
+			main.getLogger().severe(refs.getPlainMsg("wwcLoadStatsFolderFail"));
 			main.getServer().getPluginManager().disablePlugin(main);
 			return;
 		}
 
 		if (!cacheFolder.exists() && !cacheFolder.mkdir()) {
-			main.getLogger().severe(refs.getMsg("wwcLoadCacheFolderFail", null));
+			main.getLogger().severe(refs.getPlainMsg("wwcLoadCacheFolderFail"));
 			main.getServer().getPluginManager().disablePlugin(main);
 			return;
 		}
@@ -178,7 +178,7 @@ public class LoadUserData implements Runnable {
 					Reader currConfigStream = new InputStreamReader(main.getResource("default-player-record.yml"), "UTF-8");
 					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
 				} catch (Exception e) {
-					main.getLogger().warning(refs.getMsg("wwcConfigBadYaml", new String[] {eaFile.getAbsolutePath()}, null));
+					main.getLogger().warning(refs.getPlainMsg("wwcConfigBadYaml", eaFile.getAbsolutePath()));
 					continue;
 				}
 				currFileConfig.options().copyDefaults(true);
@@ -320,7 +320,7 @@ public class LoadUserData implements Runnable {
 					Reader currConfigStream = new InputStreamReader(main.getResource("default-active-translator.yml"), "UTF-8");
 					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
 				} catch (Exception e) {
-					main.getLogger().warning(refs.getMsg("wwcConfigBadYaml", new String[] {eaFile.getAbsolutePath()}, null));
+					main.getLogger().warning(refs.getPlainMsg("wwcConfigBadYaml", eaFile.getAbsolutePath()));
 					continue;
 				}
 				currFileConfig.options().copyDefaults(true);
@@ -440,7 +440,7 @@ public class LoadUserData implements Runnable {
 						Reader currConfigStream = new InputStreamReader(main.getResource("default-persistent-cache.yml"), "UTF-8");
 						currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
 					} catch (Exception e) {
-						main.getLogger().warning(refs.getMsg("wwcConfigBadYaml", new String[] {eaFile.getAbsolutePath()}, null));
+						main.getLogger().warning(refs.getPlainMsg("wwcConfigBadYaml", eaFile.getAbsolutePath()));
 						continue;
 					}
 					currFileConfig.options().copyDefaults(true);
@@ -464,8 +464,9 @@ public class LoadUserData implements Runnable {
 			}
 		}
 
-		main.getLogger().info(ChatColor.LIGHT_PURPLE
-				+ refs.getMsg("wwcUserDataReloaded", null));
+		main.getLogger().info(refs.getPlainMsg("wwcUserDataReloaded",
+				"",
+				"&d"));
 	}
 	
 	private boolean validLangCodes(String inLang, String outLang) {

@@ -28,7 +28,8 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     @Override
     public void checkVaultSupport() {
         // Vault is not supported on Folia
-        main.getLogger().warning(refs.getMsg("wwcNoVaultOnFolia", null));
+        // TODO: It actually might be, fix?
+        main.getLogger().warning(refs.getPlainMsg("wwcNoVaultOnFolia"));
         main.setChat(null); // jic
     }
 

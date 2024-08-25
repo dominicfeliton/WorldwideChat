@@ -26,13 +26,13 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		/* Sanitize args */
 		if (args.length > 2) {
 			// Not enough/too many args
-			refs.sendFancyMsg("wwctInvalidArgs", new String[] {}, "&c", sender);
+			refs.sendMsg("wwctInvalidArgs", "", "&c", sender);
 			return false;
 		}
 
 		/* Disable existing personal rate limit */
 		if (args.length == 0 && isConsoleSender) {
-			refs.sendFancyMsg("wwctInvalidArgs", "", "&c", null);
+			refs.sendMsg("wwctInvalidArgs", "", "&c", null);
 			return false;
 		} else if ((args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName())))) {
 			return changeRateLimit(sender.getName(), 0);
@@ -77,7 +77,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		} else if (!main.isActiveTranslator(inPlayer)) {
 			/* If translator is null, determine sender and send correct message */
 			if (!isConsoleSender && inName.equalsIgnoreCase(sender.getName())) {
-				refs.sendFancyMsg("wwctrlNotATranslator", "&c", sender);
+				refs.sendMsg("wwctrlNotATranslator", "", "&c", sender);
 				return false;
 			}
 			playerNotFoundMessage(sender, inName);
@@ -94,7 +94,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 				/* Disable rate limit */
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
-					refs.sendFancyMsg("wwctrlRateLimitAlreadyOffSender", "&e", inPlayer);
+					refs.sendMsg("wwctrlRateLimitAlreadyOffSender", "", "&e", inPlayer);
 				} else {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
@@ -107,17 +107,17 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			if (newLimit > 0) {
 				/* Enable rate limit */
 				currTranslator.setRateLimit(newLimit);
-				refs.sendFancyMsg("wwctrlRateLimitSetTarget", new String[] {"&6"+inPlayer.getName(), "&6"+newLimit}, "&d", sender);
+				refs.sendMsg("wwctrlRateLimitSetTarget", new String[] {"&6"+inPlayer.getName(), "&6"+newLimit}, "&d", sender);
 				enableRateLimitMessage(inPlayer, newLimit);
 			} else {
 				/* Disable rate limit */
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
-					refs.sendFancyMsg("wwctrlRateLimitAlreadyOffTarget", "&6"+inPlayer.getName(), "&e", sender);
+					refs.sendMsg("wwctrlRateLimitAlreadyOffTarget", "&6"+inPlayer.getName(), "&e", sender);
 				} else {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
-					refs.sendFancyMsg("wwctrlRateLimitOffTarget", "&6"+inPlayer.getName(), "&d", sender);
+					refs.sendMsg("wwctrlRateLimitOffTarget", "&6"+inPlayer.getName(), "&d", sender);
 					disableRateLimitMessage(inPlayer);
 				}
 			}
@@ -126,19 +126,19 @@ public class WWCTranslateRateLimit extends BasicCommand {
 	}
 
 	private void disableRateLimitMessage(Player inPlayer) {
-		refs.sendFancyMsg("wwctrlRateLimitOffSender", "&d", inPlayer);
+		refs.sendMsg("wwctrlRateLimitOffSender", "&d", inPlayer);
 	}
 
 	private void enableRateLimitMessage(Player inPlayer, int limit) {
-		refs.sendFancyMsg("wwctrlRateLimitSetSender", "&6"+limit, "&d", inPlayer);
+		refs.sendMsg("wwctrlRateLimitSetSender", "&6"+limit, "&d", inPlayer);
 	}
 
 	private void rateLimitBadIntMessage(CommandSender sender) {
-		refs.sendFancyMsg("wwctrlRateLimitBadInt", "&c", sender);
+		refs.sendMsg("wwctrlRateLimitBadInt", "&c", sender);
 	}
 
 	private void playerNotFoundMessage(CommandSender sender, String inName) {
-		refs.sendFancyMsg("wwctrlPlayerNotFound", "&6"+inName, "&c", sender);
+		refs.sendMsg("wwctrlPlayerNotFound", "&6"+inName, "&c", sender);
 	}
 
 }

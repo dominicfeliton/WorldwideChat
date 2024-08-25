@@ -3,17 +3,12 @@ package com.dominicfeliton.worldwidechat.inventory.configuration;
 import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
-import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -21,7 +16,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
@@ -48,7 +42,10 @@ public class BlacklistModifyGui implements InventoryProvider {
 		return SmartInventory.builder().id("blacklistModifyMenu")
 				.provider(this).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-					.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIBlacklistMessagesModify", new String[] {currentTerm}, inPlayer))
+					.title(refs.getPlainMsg("wwcConfigGUIBlacklistMessagesModify",
+							currentTerm,
+							"&9",
+							inPlayer))
 				.build();
 	}
 	
@@ -64,8 +61,10 @@ public class BlacklistModifyGui implements InventoryProvider {
 			/* Right Option: Delete override */
 			ItemStack deleteTermButton = XMaterial.BARRIER.parseItem();
 			ItemMeta deleteTermMeta = deleteTermButton.getItemMeta();
-			deleteTermMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIChatMessagesBlacklistDeleteButton", inPlayer));
+			deleteTermMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIChatMessagesBlacklistDeleteButton",
+					"",
+					"&c",
+					inPlayer));
 			deleteTermButton.setItemMeta(deleteTermMeta);
 			contents.set(1, 5, ClickableItem.of(deleteTermButton, e -> {
 				BukkitRunnable save = new BukkitRunnable() {
@@ -78,11 +77,8 @@ public class BlacklistModifyGui implements InventoryProvider {
 
 						main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getBlacklistFile(), false);
 						main.addPlayerUsingConfigurationGUI(inPlayer.getUniqueId());
-						final TextComponent successfulChange = Component.text()
-										.content(refs.getMsg("wwcConfigConversationBlacklistDeletionSuccess", inPlayer))
-										.color(NamedTextColor.GREEN)
-								.build();
-						refs.sendMsg(player, successfulChange);
+						refs.sendMsg("wwcConfigConversationBlacklistDeletionSuccess", "", "&a", inPlayer);
+
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {

@@ -11,7 +11,6 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -37,7 +36,7 @@ public class BlacklistGui implements InventoryProvider {
 		return SmartInventory.builder().id("blacklistMenu")
 				.provider(this).size(6, 9)
 				.manager(invManager)
-				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIModifyBlacklistSettings", new String[] {}, inPlayer))
+				.title(refs.getPlainMsg("wwcConfigGUIModifyBlacklistSettings", "", "&9", inPlayer))
 				.build();
 	}
 

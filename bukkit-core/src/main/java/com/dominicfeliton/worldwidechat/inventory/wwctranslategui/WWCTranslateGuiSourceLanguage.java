@@ -42,7 +42,10 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 		return SmartInventory.builder().id("translateSourceLanguage")
 				.provider(this).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationSource", inPlayer))
+				.title(refs.getPlainMsg("wwctGUINewTranslationSource",
+						"",
+						"&9",
+						inPlayer))
 				.build();
 	}
 
@@ -74,14 +77,23 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode()) || selectedSourceLanguage.equalsIgnoreCase(currLang.getLangName())) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceTranslationSelected",
+							"",
+							"&a&o",
+							inPlayer));
 				} else if (userLang.getLangCode().equalsIgnoreCase(currLang.getLangCode()) || userLang.getLangName().equalsIgnoreCase(currLang.getLangName())) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceOrTargetTranslationAlreadyActive",
+							"",
+							"&e&o",
+							inPlayer));
 				} else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getInLangCode().equalsIgnoreCase(currLang.getLangCode())) {
 					// If global translate is already using this as an inLang...
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal",
+							"",
+							"&e&o",
+							inPlayer));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
 				if (!currLang.getNativeLangName().isEmpty() && !currLang.getNativeLangName().equalsIgnoreCase(currLang.getLangName())) {
@@ -111,20 +123,31 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 			if (!main.getTranslatorName().equalsIgnoreCase("Amazon Translate")) {
 				ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
 				ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
-				skipSourceMeta.setDisplayName(ChatColor.YELLOW
-						+ refs.getMsg("wwctGUIAutoDetectButton", inPlayer));
+				skipSourceMeta.setDisplayName(refs.getPlainMsg("wwctGUIAutoDetectButton",
+						"",
+						"&e",
+						inPlayer));
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
 				if (selectedSourceLanguage.equalsIgnoreCase("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceTranslationSelected",
+							"",
+							"&a&o",
+							inPlayer));
 				} else if (currTranslator.getInLangCode().equals("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceOrTargetTranslationAlreadyActive",
+							"",
+							"&e&o",
+							inPlayer));
 				} else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getInLangCode().equalsIgnoreCase("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal", inPlayer));
+					lore.add(refs.getPlainMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal",
+							"",
+							"&e&o",
+							inPlayer));
 				}
 				skipSourceMeta.setLore(lore);
 				skipSourceButton.setItemMeta(skipSourceMeta);

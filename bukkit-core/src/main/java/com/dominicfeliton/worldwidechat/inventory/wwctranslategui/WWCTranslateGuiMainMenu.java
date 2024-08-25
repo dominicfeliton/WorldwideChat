@@ -44,10 +44,15 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 	public SmartInventory getTranslateMainMenu() {
 		String playerTitle = "";
 		if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
-			playerTitle = ChatColor.BLUE + refs.getMsg("wwctGUIMainMenuGlobal", inPlayer);
+			playerTitle = refs.getPlainMsg("wwctGUIMainMenuGlobal",
+					"",
+					"&9",
+					inPlayer);
 		} else {
-			playerTitle = ChatColor.BLUE + refs.getMsg("wwctGUIMainMenuPlayer", WorldwideChat.instance.getServer()
-					.getPlayer(UUID.fromString(targetPlayerUUID)).getName(), inPlayer);
+			playerTitle = refs.getPlainMsg("wwctGUIMainMenuPlayer",
+					main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(),
+					"&9",
+					inPlayer);
 		}
 		return SmartInventory.builder().id("translateMainMenu").provider(new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer))
 				.size(5, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
@@ -66,7 +71,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 			ItemStack translationButton = XMaterial.COMPASS.parseItem();
 			ItemMeta translationMeta = translationButton.getItemMeta();
 			translationMeta.setDisplayName(
-					refs.getMsg("wwctGUITranslationButton", inPlayer));
+					refs.getPlainMsg("wwctGUITranslationButton", inPlayer));
 			translationButton.setItemMeta(translationMeta);
 			contents.set(2, 4, ClickableItem.of(translationButton, e -> {
 				new WWCTranslateGuiSourceLanguage("", targetPlayerUUID, inPlayer).getSourceLanguageInventory().open(player);
@@ -81,13 +86,20 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 				ItemMeta localizationMeta = localizationButton.getItemMeta();
 				List<String> outLore = new ArrayList<>();
 				if (!currRecord.getLocalizationCode().isEmpty()) {
-					localizationMeta.setDisplayName(ChatColor.GREEN +
-							refs.getMsg("wwctGUILocalizationButton", inPlayer));
-					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUILocalizeExistingValue", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + currRecord.getLocalizationCode(), inPlayer));
+					localizationMeta.setDisplayName(refs.getPlainMsg("wwctGUILocalizationButton",
+									"",
+									"&a",
+									inPlayer));
+					outLore.add(refs.getPlainMsg("wwctGUILocalizeExistingValue",
+							"&d&o"+ currRecord.getLocalizationCode(),
+							"&d",
+							inPlayer));
 					invManager.addGlowEffect(localizationMeta);
 				} else {
-					localizationMeta.setDisplayName(ChatColor.YELLOW +
-							refs.getMsg("wwctGUILocalizationButton", inPlayer));
+					localizationMeta.setDisplayName(refs.getPlainMsg("wwctGUILocalizationButton",
+									"",
+									"&e",
+									inPlayer));
 				}
 				localizationMeta.setLore(outLore);
 				localizationButton.setItemMeta(localizationMeta);
@@ -102,24 +114,35 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 			if (main.isActiveTranslator(targetPlayerUUID)) {
 				/* Make compass enchanted */
 				invManager.addGlowEffect(translationMeta);
-				translationMeta.setDisplayName(refs.getMsg("wwctGUIExistingTranslationButton", inPlayer));
+				translationMeta.setDisplayName(refs.getPlainMsg("wwctGUIExistingTranslationButton", inPlayer));
 				List<String> outLore = new ArrayList<>();
 				SupportedLang inLang = refs.getSupportedLang(targetTranslator.getInLangCode(), "in");
 				SupportedLang outLang = refs.getSupportedLang(targetTranslator.getOutLangCode(), "out");
 				if (!targetTranslator.getInLangCode().equalsIgnoreCase("None")) {
-					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.GOLD + "" + ChatColor.BOLD + inLang.getLangCode() + "/" + inLang.getNativeLangName(), inPlayer));
+					outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationInput",
+							"&6&l"+inLang.getLangCode() + "/" + inLang.getNativeLangName(),
+							"&d",
+							inPlayer));
 				} else {
-					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.GOLD + "" + ChatColor.BOLD + "auto/None", inPlayer));
+					outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationInput",
+							 "&6&lauto/None",
+							"&d",
+							inPlayer));
 				}
-				outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationOutput", ChatColor.GOLD + "" + ChatColor.BOLD + outLang.getLangCode() + "/" + outLang.getNativeLangName(), inPlayer));
+				outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationOutput",
+						"&6&l" + outLang.getLangCode() + "/" + outLang.getNativeLangName(),
+						"&d",
+						inPlayer));
 				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
 
 				/* Stop Button: Stop translation if active */
 				ItemStack stopButton = XMaterial.BARRIER.parseItem();
 				ItemMeta stopMeta = stopButton.getItemMeta();
-				stopMeta.setDisplayName(ChatColor.RED
-						+ refs.getMsg("wwctGUIStopButton", inPlayer));
+				stopMeta.setDisplayName(refs.getPlainMsg("wwctGUIStopButton",
+						"",
+						"&c",
+						inPlayer));
 				stopButton.setItemMeta(stopMeta);
 				contents.set(1, 4, ClickableItem.of(stopButton, e -> {
 					String[] args;
@@ -149,12 +172,19 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					ArrayList<String> lore = new ArrayList<>();
 					if (targetTranslator.getRateLimit() > 0) {
 						invManager.addGlowEffect(rateMeta);
-						lore.add(refs.serial(refs.getFancyMsg("wwctGUIRateButtonLore", new String[] {"&6&l" + targetTranslator.getRateLimit()}, "&d", inPlayer)));
-						rateMeta.setDisplayName(ChatColor.GREEN
-								+ refs.getMsg("wwctGUIRateButton", inPlayer));
+						lore.add(refs.getPlainMsg("wwctGUIRateButtonLore",
+								"&6&l" + targetTranslator.getRateLimit(),
+								"&d",
+								inPlayer));
+						rateMeta.setDisplayName(refs.getPlainMsg("wwctGUIRateButton",
+								"",
+								"&a",
+								inPlayer));
 					} else {
-						rateMeta.setDisplayName(ChatColor.YELLOW
-								+ refs.getMsg("wwctGUIRateButton", inPlayer));
+						rateMeta.setDisplayName(refs.getPlainMsg("wwctGUIRateButton",
+								"",
+								"&e",
+								inPlayer));
 					}
 					rateMeta.setLore(lore);
 					rateButton.setItemMeta(rateMeta);
@@ -162,7 +192,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 						if (!main.getCurrPlatform().equals("Folia")) {
 							rateConvo.buildConversation(player).begin();
 						} else {
-							refs.sendFancyMsg("wwcRateNoConvoFolia", "", "&c", player);
+							refs.sendMsg("wwcRateNoConvoFolia", "", "&c", player);
 						}
 					}));
 				}
@@ -173,12 +203,16 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					ItemStack bookButton = XMaterial.WRITABLE_BOOK.parseItem();
 					ItemMeta bookMeta = bookButton.getItemMeta();
 					if (targetTranslator.getTranslatingBook()) {
-						bookMeta.setDisplayName(ChatColor.GREEN
-								+ refs.getMsg("wwctGUIBookButton", inPlayer));
+						bookMeta.setDisplayName(refs.getPlainMsg("wwctGUIBookButton",
+								"",
+								"&a",
+								inPlayer));
 						invManager.addGlowEffect(bookMeta);
 					} else {
-						bookMeta.setDisplayName(ChatColor.YELLOW
-								+ refs.getMsg("wwctGUIBookButton", inPlayer));
+						bookMeta.setDisplayName(refs.getPlainMsg("wwctGUIBookButton",
+								"",
+								"&e",
+								inPlayer));
 					}
 					bookButton.setItemMeta(bookMeta);
 					contents.set(2, 1, ClickableItem.of(bookButton, e -> {
@@ -196,12 +230,16 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					ItemStack signButton = XMaterial.OAK_SIGN.parseItem();
 					ItemMeta signMeta = signButton.getItemMeta();
 					if (targetTranslator.getTranslatingSign()) {
-						signMeta.setDisplayName(ChatColor.GREEN
-								+ refs.getMsg("wwctGUISignButton", inPlayer));
+						signMeta.setDisplayName(refs.getPlainMsg("wwctGUISignButton",
+								"",
+								"&a",
+								inPlayer));
 						invManager.addGlowEffect(signMeta);
 					} else {
-						signMeta.setDisplayName(ChatColor.YELLOW
-								+ refs.getMsg("wwctGUISignButton", inPlayer));
+						signMeta.setDisplayName(refs.getPlainMsg("wwctGUISignButton",
+								"",
+								"&e",
+								inPlayer));
 					}
 					signButton.setItemMeta(signMeta);
 					contents.set(2, 7, ClickableItem.of(signButton, e -> {
@@ -218,12 +256,16 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					ItemStack itemButton = XMaterial.GRASS_BLOCK.parseItem();
 					ItemMeta itemMeta = itemButton.getItemMeta();
 					if (targetTranslator.getTranslatingItem()) {
-						itemMeta.setDisplayName(ChatColor.GREEN
-								+ refs.getMsg("wwctGUIItemButton", inPlayer));
+						itemMeta.setDisplayName(refs.getPlainMsg("wwctGUIItemButton",
+								"",
+								"&a",
+								inPlayer));
 						invManager.addGlowEffect(itemMeta);
 					} else {
-						itemMeta.setDisplayName(ChatColor.YELLOW
-								+ refs.getMsg("wwctGUIItemButton", inPlayer));
+						itemMeta.setDisplayName(refs.getPlainMsg("wwctGUIItemButton",
+								"",
+								"&e",
+								inPlayer));
 					}
 					itemButton.setItemMeta(itemMeta);
 					contents.set(1, 7, ClickableItem.of(itemButton, e -> {
@@ -241,11 +283,15 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					ItemMeta entityMeta = entityButton.getItemMeta();
 					if (targetTranslator.getTranslatingEntity()) {
 						invManager.addGlowEffect(entityMeta);
-						entityMeta.setDisplayName(ChatColor.GREEN
-								+ refs.getMsg("wwctGUIEntityButton", inPlayer));
+						entityMeta.setDisplayName(refs.getPlainMsg("wwctGUIEntityButton",
+								"",
+								"&a",
+								inPlayer));
 					} else {
-						entityMeta.setDisplayName(ChatColor.YELLOW
-								+ refs.getMsg("wwctGUIEntityButton", inPlayer));
+						entityMeta.setDisplayName(refs.getPlainMsg("wwctGUIEntityButton",
+								"",
+								"&e",
+								inPlayer));
 					}
 					entityButton.setItemMeta(entityMeta);
 					contents.set(2, 2, ClickableItem.of(entityButton, e -> {
@@ -265,14 +311,18 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
 						invManager.addGlowEffect(chatMeta);
 						List<String> outLoreChat = new ArrayList<>();
-						outLoreChat.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingChatIncomingEnabled", refs.checkOrX(targetTranslator.getTranslatingChatIncoming()), inPlayer));
-						outLoreChat.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingChatOutgoingEnabled", refs.checkOrX(targetTranslator.getTranslatingChatOutgoing()), inPlayer));
+						outLoreChat.add(refs.getPlainMsg("wwctGUIExistingChatIncomingEnabled", refs.checkOrX(targetTranslator.getTranslatingChatIncoming()), "&d", inPlayer));
+						outLoreChat.add(refs.getPlainMsg("wwctGUIExistingChatOutgoingEnabled", refs.checkOrX(targetTranslator.getTranslatingChatOutgoing()), "&d", inPlayer));
 						chatMeta.setLore(outLoreChat);
-						chatMeta.setDisplayName(ChatColor.GREEN
-								+ refs.getMsg("wwctGUIChatButton", inPlayer));
+						chatMeta.setDisplayName(refs.getPlainMsg("wwctGUIChatButton",
+								"",
+								"&a",
+								inPlayer));
 					} else {
-						chatMeta.setDisplayName(ChatColor.YELLOW
-								+ refs.getMsg("wwctGUIChatButton", inPlayer));
+						chatMeta.setDisplayName(refs.getPlainMsg("wwctGUIChatButton",
+								"",
+								"&e",
+								inPlayer));
 					}
 					chatButton.setItemMeta(chatMeta);
 					contents.set(2, 6, ClickableItem.of(chatButton, e -> {

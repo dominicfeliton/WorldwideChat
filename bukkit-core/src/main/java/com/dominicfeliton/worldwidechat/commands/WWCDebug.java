@@ -39,11 +39,11 @@ public class WWCDebug extends BasicCommand {
         if (args.length == 1) {
             switch (args[0].toLowerCase()) {
                 case "debugenv":
-                    refs.sendFancyMsg("wwcdDebugEnvWarn", new String[] {"&6/wwcd debugenv enable"}, "&e", sender);
+                    refs.sendMsg("wwcdDebugEnvWarn", "&6/wwcd debugenv enable", "&e", sender);
                     return true;
                 case "reset":
                     // reset
-                    refs.sendFancyMsg("wwcdResetWarn", new String[] {"&6/wwcd reset confirm"}, "&c", sender);
+                    refs.sendMsg("wwcdResetWarn", "&6/wwcd reset confirm", "&c", sender);
                     return true;
                 default:
                     break;
@@ -54,13 +54,13 @@ public class WWCDebug extends BasicCommand {
                 if (args[1].equalsIgnoreCase("enable")) {
                     mainConfig.set("General.enableDebugMode", true);
                     mainConfig.set("Translator.testModeTranslator", true);
-                    refs.sendFancyMsg("wwcdDebugEnvEnabled", new String[]{}, "&a", sender);
+                    refs.sendMsg("wwcdDebugEnvEnabled", "", "&a", sender);
                     main.reload(sender, true);
                     return true;
                 } else if (args[1].equalsIgnoreCase("disable")) {
                     mainConfig.set("General.enableDebugMode", false);
                     mainConfig.set("Translator.testModeTranslator", false);
-                    refs.sendFancyMsg("wwcdDebugEnvDisabled", new String[]{}, "&a", sender);
+                    refs.sendMsg("wwcdDebugEnvDisabled", "", "&a", sender);
                     main.reload(sender, true);
                     return true;
                 }
@@ -73,9 +73,9 @@ public class WWCDebug extends BasicCommand {
                         public void run() {
                             try {
                                 DataStorageUtils.fullDataWipe();
-                                refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
+                                refs.sendMsg("wwcdResetNotif", "", "&a", sender);
                             } catch (Exception e) {
-                                refs.sendFancyMsg("wwcdResetNotifError", new String[]{}, "&c", sender);
+                                refs.sendMsg("wwcdResetNotifError", "", "&c", sender);
                             }
 
                             // Reload on main thread
@@ -100,7 +100,7 @@ public class WWCDebug extends BasicCommand {
 
         // Requires valid settings
         if (isInvalid) {
-            refs.sendFancyMsg("wwcdDebugBadState", new String[]{}, "&e", sender);
+            refs.sendMsg("wwcdDebugBadState", "", "&e", sender);
             return true;
         }
 
@@ -109,7 +109,7 @@ public class WWCDebug extends BasicCommand {
                 case "checkdb":
                     YamlConfiguration conf = main.getConfigManager().getMainConfig();
                     if (!main.isSQLConnValid(true) && !main.isPostgresConnValid(true)) {
-                        refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
+                        refs.sendMsg("wwcdSQLAllSet", "", "&a", sender);
                         return true;
                     }
 
@@ -121,9 +121,9 @@ public class WWCDebug extends BasicCommand {
                         public void run() {
                             conf.set("General.enableDebugMode", true);
                             if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
-                                refs.sendFancyMsg("wwcdOutdatedSQLStruct", new String[] {}, "&e", sender);
+                                refs.sendMsg("wwcdOutdatedSQLStruct", "", "&e", sender);
                             } else {
-                                refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
+                                refs.sendMsg("wwcdSQLAllSet", "", "&a", sender);
                             }
                             conf.set("General.enableDebugMode", debugBool);
                         }
@@ -133,7 +133,7 @@ public class WWCDebug extends BasicCommand {
                 case "cache":
                     // print cache
                     Set<Map.Entry<CachedTranslation, String>> cache = main.getCache().asMap().entrySet();
-                    refs.sendFancyMsg("wwcdCacheSize", new String[] {"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
+                    refs.sendMsg("wwcdCacheSize", new String[] {"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
                     int count = 1;
                     for (Map.Entry<CachedTranslation, String> eaEntry : main.getCache().asMap().entrySet()) {
                         if (count >= 100) {
@@ -142,7 +142,7 @@ public class WWCDebug extends BasicCommand {
                         }
 
                         CachedTranslation obj = eaEntry.getKey();
-                        refs.sendFancyMsg("wwcdCacheTerm", new String[] {"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
+                        refs.sendMsg("wwcdCacheTerm", new String[] {"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
                         count++;
                     }
                     return true;
@@ -177,7 +177,7 @@ public class WWCDebug extends BasicCommand {
                 if (args[1].equalsIgnoreCase("clear")) {
                     main.getCache().invalidateAll();
                     main.getCache().cleanUp();
-                    refs.sendFancyMsg("wwcdCacheCleared", new String[]{}, "&a", sender);
+                    refs.sendMsg("wwcdCacheCleared", "", "&a", sender);
                     return true;
                 }
                 return invalidCmd(sender);
@@ -189,7 +189,7 @@ public class WWCDebug extends BasicCommand {
     }
 
     private boolean invalidCmd(CommandSender sender) {
-        refs.sendFancyMsg("wwcdInvalidCmd", "", "&c", sender);
+        refs.sendMsg("wwcdInvalidCmd", "", "&c", sender);
         return false;
     }
 }
