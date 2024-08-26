@@ -279,6 +279,28 @@ public class WWCInventoryManager extends InventoryManager {
 
 			// Drop the writable book at the player's location
 			player.getWorld().dropItemNaturally(player.getLocation(), book);
+
+			// Queue auto-cleanup after 5 minutes
+			BukkitRunnable cleanup = new BukkitRunnable() {
+				@Override
+				public void run() {
+					if (!(main.getPlayerDataUsingGUI(player).length > 0)) {
+						refs.debugMsg("No cleanup for genericBookButton required");
+						return;
+					}
+					refs.debugMsg("Cleaning up genericBookButton...");
+
+					for (ItemStack item : player.getInventory().getContents()) {
+						if (item != null && item.hasItemMeta() && item.getItemMeta().equals(bookMeta)) {
+							player.getInventory().removeItem(item);
+							break;
+						}
+					}
+
+					main.removePlayerUsingConfigurationGUI(player);
+				}
+			};
+			wwcHelper.runSync(true, 6000, cleanup, ENTITY, new Object[] {player});
 		}));
 	}
 	

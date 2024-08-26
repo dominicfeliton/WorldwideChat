@@ -99,6 +99,7 @@ public class ConfigListener implements Listener {
 				for (ItemStack item : p.getInventory().getContents()) {
 					if (item != null && item.hasItemMeta() && item.getItemMeta().equals(meta)) {
 						p.getInventory().removeItem(item);
+						break;
 					}
 				}
 			}
@@ -108,6 +109,8 @@ public class ConfigListener implements Listener {
 		refs.debugMsg("Now opening previous GUI!");
 		if (changed) {
 			main.addPlayerUsingConfigurationGUI(p); // add player back as normal, queues up reminder message
+		} else {
+			main.removePlayerUsingConfigurationGUI(p);
 		}
 		inv.open(p);
 	}

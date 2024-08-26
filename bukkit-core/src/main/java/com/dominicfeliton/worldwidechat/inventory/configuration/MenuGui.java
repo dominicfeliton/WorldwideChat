@@ -48,6 +48,7 @@ public class MenuGui implements InventoryProvider {
 		// Perhaps generate each inv for every lang? mem impact worrisome but maybe
 		/* Generate inventories */
 		refs.debugMsg("Generating config GUIs!");
+		int pageNum = 1;
 		MenuGui generalSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIGeneralSettings");
 		
@@ -114,7 +115,7 @@ public class MenuGui implements InventoryProvider {
 		generalSet.add(new ToggleElement(2, 1, "wwcConfigGUILocalizeSyncButton", "wwcConfigConversationLocalizeSyncSuccess", "General.syncUserLocalization"));
 		generalSet.add(new CommonElement(3, 4, "Quit"));
 		generalSet.add(new CommonElement(3, 6, "Next", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
-		generalSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.GEN_SET.ordinal()+1 + ""}));
+		generalSet.add(new CommonElement(3, 8, "Page Number", new String[] {pageNum++ + ""}));
 		
 		// Storage
 		ArrayList<String> storageToggles = new ArrayList<>(Arrays.asList("Storage.useSQL", "Storage.useMongoDB", "Storage.usePostgreSQL"));
@@ -126,7 +127,7 @@ public class MenuGui implements InventoryProvider {
 		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.GEN_SET.smartInv}));
 		storageSet.add(new CommonElement(2, 4, "Quit"));
 		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
-		storageSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
+		storageSet.add(new CommonElement(2, 8, "Page Number", new String[] {pageNum++ + ""}));
 		
 		// SQL
 		sqlSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
@@ -147,7 +148,6 @@ public class MenuGui implements InventoryProvider {
 				new SQLSettingsConvos.OptionalArgs()));
 		sqlSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		sqlSet.add(new CommonElement(3, 4, "Quit"));
-		sqlSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 		
 		// MongoDB
 		mongoSet.add(new BorderElement(XMaterial.ORANGE_STAINED_GLASS_PANE));
@@ -167,7 +167,6 @@ public class MenuGui implements InventoryProvider {
 				new MongoSettingsConvos.OptionalArgs()));
 		mongoSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		mongoSet.add(new CommonElement(2, 4, "Quit"));
-		mongoSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 
 		// PostgreSQL
 		postgresSet.add(new BorderElement(XMaterial.GRAY_STAINED_GLASS_PANE));
@@ -188,7 +187,6 @@ public class MenuGui implements InventoryProvider {
 				new PostgresSettingsConvos.OptionalArgs()));
 		postgresSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		postgresSet.add(new CommonElement(3, 4, "Quit"));
-		postgresSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 
 		// Chat 
 		chatSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
@@ -212,7 +210,7 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		chatSet.add(new CommonElement(3, 4, "Quit"));
 		chatSet.add(new CommonElement(3, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
-		chatSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
+		chatSet.add(new CommonElement(3, 8, "Page Number", new String[] {pageNum++ + ""}));
 
 		// Translate (Chat) Channel
 		chatChannelSet.add(new BorderElement(XMaterial.PURPLE_STAINED_GLASS_PANE));
@@ -255,7 +253,7 @@ public class MenuGui implements InventoryProvider {
 		transSet.add(new CommonElement(3, 6, "Next", new Object[] {CONFIG_GUI_TAGS.AI_SET.smartInv}));
 	    transSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(3, 4, "Quit"));
-		transSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
+		transSet.add(new CommonElement(3, 8, "Page Number", new String[] {pageNum++ + ""}));
 
 		// Google Translator
 		transGoogleSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
@@ -265,7 +263,6 @@ public class MenuGui implements InventoryProvider {
 				new GoogleSettingsConvos.ApiKey()));
 		transGoogleSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transGoogleSet.add(new CommonElement(2, 4, "Quit"));
-		transGoogleSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 		
 		// Amazon Translator
 		transAmazonSet.add(new BorderElement(XMaterial.YELLOW_STAINED_GLASS_PANE));
@@ -279,7 +276,6 @@ public class MenuGui implements InventoryProvider {
 				new AmazonSettingsConvos.Region()));
 		transAmazonSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transAmazonSet.add(new CommonElement(2, 4, "Quit"));
-		transAmazonSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 
 		// ChatGPT
 		transChatGPTSet.add(new BorderElement(XMaterial.BLACK_STAINED_GLASS_PANE));
@@ -293,7 +289,6 @@ public class MenuGui implements InventoryProvider {
 				new ChatGPTSettingsConvos.Model()));
 		transChatGPTSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transChatGPTSet.add(new CommonElement(2, 4, "Quit"));
-		transChatGPTSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 
 		// Libre Translator
 		transLibreSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
@@ -305,7 +300,6 @@ public class MenuGui implements InventoryProvider {
 	    		new LibreSettingsConvos.ApiKey()));
 		transLibreSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transLibreSet.add(new CommonElement(2, 4, "Quit"));
-		transLibreSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 		
 		// DeepL Translator
 		transDeepSet.add(new BorderElement(XMaterial.BLUE_STAINED_GLASS_PANE));
@@ -315,7 +309,6 @@ public class MenuGui implements InventoryProvider {
 	    		new DeepLSettingsConvos.ApiKey()));
 		transDeepSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transDeepSet.add(new CommonElement(2, 4, "Quit"));
-		transDeepSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 
 		// Azure Translator
 		transAzureSet.add(new BorderElement(XMaterial.GREEN_STAINED_GLASS_PANE));
@@ -327,7 +320,6 @@ public class MenuGui implements InventoryProvider {
 				new AzureSettingsConvos.Region()));
 		transAzureSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transAzureSet.add(new CommonElement(2, 4, "Quit"));
-		transAzureSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 
 		// Systran Translator
 		transSystranSet.add(new BorderElement(XMaterial.CYAN_STAINED_GLASS_PANE));
@@ -337,7 +329,6 @@ public class MenuGui implements InventoryProvider {
 				new SystranSettingsConvos.ApiKey()));
 		transSystranSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transSystranSet.add(new CommonElement(2, 4, "Quit"));
-		transSystranSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 
 		// AI Settings
 		aiSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
@@ -350,7 +341,7 @@ public class MenuGui implements InventoryProvider {
 		}
 		aiSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		aiSet.add(new CommonElement(2, 4, "Quit"));
-		aiSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.TRANS_SET.ordinal()+1 + ""}));
+		aiSet.add(new CommonElement(2, 8, "Page Number", new String[] {pageNum++ + ""}));
 	}
 	
 	static abstract class Element {
