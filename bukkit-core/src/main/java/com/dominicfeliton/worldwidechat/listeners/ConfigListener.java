@@ -4,6 +4,7 @@ import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.SmartInventory;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.HumanEntity;
@@ -32,9 +33,9 @@ public class ConfigListener implements Listener {
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
 		Player currPlayer = (Player)e.getPlayer();
-		BukkitRunnable out = new BukkitRunnable() {
+		GenericRunnable out = new GenericRunnable() {
 			@Override
-			public void run() {
+			protected void execute() {
 				if (main.isPlayerUsingGUI(currPlayer)
 						&& currPlayer.getOpenInventory().getType() != InventoryType.CHEST
 						&& !(currPlayer).isConversing()
@@ -56,17 +57,19 @@ public class ConfigListener implements Listener {
 		}
 
 		Object[] data = main.getPlayerDataUsingGUI(p);
-		if (data != null && data.length >= 3
+		if (data != null && data.length >= 4
 				&& data[0] instanceof YamlConfiguration
 				&& data[1] instanceof String
-				&& data[2] instanceof SmartInventory) {
+				&& data[2] instanceof SmartInventory
+				&& data[3] instanceof GenericRunnable) {
 			YamlConfiguration config = (YamlConfiguration) data[0];
 			String key = (String) data[1];
 			SmartInventory inv = (SmartInventory) data[2];
+			GenericRunnable timeout = (GenericRunnable) data[3];
 
 			if (e.getPreviousBookMeta().getPages().equals(e.getNewBookMeta().getPages())) {
 				refs.debugMsg("Book UNCHANGED! Do not push changes...");
-				cleanupConfigBook(e, inv, false);
+				cleanupConfigBook(e, inv, timeout, false);
 				return;
 			}
 
@@ -79,23 +82,26 @@ public class ConfigListener implements Listener {
 			refs.debugMsg("Wrote " + out.length() + " chars to " + key + "! Cancelling event, our output only.");
 			refs.sendMsg("wwcLargeConfigInputSuccess", ""+out.length(), "&a", p);
 
-			cleanupConfigBook(e, inv, true);
+			cleanupConfigBook(e, inv, timeout, true);
 		} else {
 			refs.debugMsg("Invalid/no data in GUI map, not opening book and removing!");
 			main.removePlayerUsingConfigurationGUI(p);
 		}
 	}
 
-	private void cleanupConfigBook(PlayerEditBookEvent e, SmartInventory inv, boolean changed) {
+	private void cleanupConfigBook(PlayerEditBookEvent e, SmartInventory inv, GenericRunnable timeout, boolean changed) {
 		// always use old meta because we cancel the event
 		Player p = e.getPlayer();
 		ItemMeta meta = e.getPreviousBookMeta();
 		e.setCancelled(true);
 
 		refs.debugMsg("Schedule to delete book!");
-		BukkitRunnable remove = new BukkitRunnable() {
+
+		// cancel delayed task then manually remove items
+		timeout.cancel();
+		GenericRunnable remove = new GenericRunnable() {
 			@Override
-			public void run() {
+			protected void execute() {
 				for (ItemStack item : p.getInventory().getContents()) {
 					if (item != null && item.hasItemMeta() && item.getItemMeta().equals(meta)) {
 						p.getInventory().removeItem(item);

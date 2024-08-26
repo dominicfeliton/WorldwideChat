@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -66,9 +67,9 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 					+ refs.getPlainMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", inPlayer));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
-				BukkitRunnable saveMessages = new BukkitRunnable() {
+				GenericRunnable saveMessages = new GenericRunnable() {
 					@Override
-					public void run() {
+					protected void execute() {
 						YamlConfiguration msgConfigCustom = main.getConfigManager().getCustomMessagesConfig(inLang);
 						msgConfigCustom.set("Overrides." + currentOverrideName, null);
 						main.getConfigManager().saveMessagesConfig(inLang, false);
@@ -79,9 +80,9 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 								"&a",
 								inPlayer);
 
-						BukkitRunnable out = new BukkitRunnable() {
+						GenericRunnable out = new GenericRunnable() {
 							@Override
-							public void run() {
+							protected void execute() {
 								new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings().open(player);
 							}
 						};

@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.TempItemInventory;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -47,9 +48,9 @@ public class TranslateInGameListener implements Listener {
 			try {
 				if (main.getActiveTranslator(event.getPlayer()).getTranslatingEntity() && event.getRightClicked().isValid()) {
 					final String customName = event.getRightClicked().getCustomName();
-					BukkitRunnable out = new BukkitRunnable() {
+					GenericRunnable out = new GenericRunnable() {
 						@Override
-						public void run() {
+						protected void execute() {
 							refs.sendMsg("wwcEntityTranslateStart", "", "&d&l", event.getPlayer());
 							if (customName != null) {
 								refs.sendMsg("wwcEntityTranslateDone", "&a&o" + refs.translateText(customName, event.getPlayer()), "&2&l", event.getPlayer());
@@ -85,9 +86,9 @@ public class TranslateInGameListener implements Listener {
 					&& XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
 					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 				ItemStack currentBook = event.getItem().clone();
-				BukkitRunnable out = new BukkitRunnable() {
+				GenericRunnable out = new GenericRunnable() {
 					@Override
-					public void run() {
+					protected void execute() {
 						/* Init vars */
 						Player currPlayer = event.getPlayer();
 						BookMeta meta = (BookMeta) currentBook.getItemMeta();
@@ -126,9 +127,9 @@ public class TranslateInGameListener implements Listener {
 						newBook.setItemMeta(newMeta);
 
 						/* Get update status */
-						BukkitRunnable open = new BukkitRunnable() {
+						GenericRunnable open = new GenericRunnable() {
 							@Override
-							public void run() {
+							protected void execute() {
 								/* Version Check: For 1.13 and below compatibility */
 								try {
 									Player.class.getMethod("openBook", ItemStack.class);
@@ -164,9 +165,9 @@ public class TranslateInGameListener implements Listener {
 				/* Start sign translation */
 				Sign currentSign = (Sign) event.getClickedBlock().getState();
 
-				BukkitRunnable out = new BukkitRunnable() {
+				GenericRunnable out = new GenericRunnable() {
 					@Override
-					public void run() {
+					protected void execute() {
 						/* Init vars */
 						String[] signText = currentSign.getLines();
 						String[] changedSignText = new String[signText.length];
@@ -229,9 +230,9 @@ public class TranslateInGameListener implements Listener {
 						/* Get update status */
 						if (changedSignText != null && !refs.serverIsStopping()) {
 							final String[] finalText = changedSignText;
-							BukkitRunnable sign = new BukkitRunnable() {
+							GenericRunnable sign = new GenericRunnable() {
 								@Override
-								public void run() {
+								protected void execute() {
 									try {
 										event.getPlayer().sendSignChange(currLoc, finalText);
 									} catch (Exception e) {
@@ -256,9 +257,9 @@ public class TranslateInGameListener implements Listener {
 				/* Start item translation */
 				ItemStack currentItem = (ItemStack) getItemInMainHand(event);
 
-				BukkitRunnable out = new BukkitRunnable() {
+				GenericRunnable out = new GenericRunnable() {
 					@Override
-					public void run() {
+					protected void execute() {
 						/* Init vars */
 						ItemMeta meta = currentItem.getItemMeta();
 						String translatedName = "";
@@ -302,9 +303,9 @@ public class TranslateInGameListener implements Listener {
 
 						/* Return fake item */
 						if ((!translatedItem.getItemMeta().getDisplayName().equals("") || (!translatedItem.hasItemMeta() || !translatedItem.getItemMeta().getLore().isEmpty()))) {
-							BukkitRunnable open = new BukkitRunnable() {
+							GenericRunnable open = new GenericRunnable() {
 								@Override
-								public void run() {
+								protected void execute() {
 									new TempItemInventory(translatedItem, event.getPlayer()).getTempItemInventory().open(event.getPlayer());
 								}
 							};

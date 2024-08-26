@@ -391,9 +391,9 @@ public class WorldwideChat extends JavaPlugin {
 		new LoadUserData(tempTransName).run();
 
 		// Schedule automatic user data sync
-		BukkitRunnable sync = new BukkitRunnable() {
+		GenericRunnable sync = new GenericRunnable() {
 			@Override
-			public void run() {
+			protected void execute() {
 				new SyncUserData().run();
 			}
 		};
@@ -401,9 +401,9 @@ public class WorldwideChat extends JavaPlugin {
 		wwcHelper.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync, ASYNC, null);
 
 		// Enable tab completers (we run as a sync task to avoid using Bukkit API async)
-		BukkitRunnable tab = new BukkitRunnable() {
+		GenericRunnable tab = new GenericRunnable() {
 			@Override
-			public void run() {
+			protected void execute() {
 				registerTabCompleters();
 			}
 		};
@@ -414,9 +414,9 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Check for updates
-		BukkitRunnable update = new BukkitRunnable() {
+		GenericRunnable update = new GenericRunnable() {
 			@Override
-			public void run() {
+			protected void execute() {
 				new UpdateChecker().run();
 			}
 		};
@@ -425,14 +425,14 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Check for vault support + register event handlers
 		// Set our translator name just in case...
-		BukkitRunnable event = new BukkitRunnable() {
+		GenericRunnable event = new GenericRunnable() {
 			@Override
-			public void run() {
-			wwcHelper.checkVaultSupport();
-			wwcHelper.registerEventHandlers();
+			protected void execute() {
+				wwcHelper.checkVaultSupport();
+				wwcHelper.registerEventHandlers();
 
-			// Finish by setting translator name, which permits plugin usage ("Starting" does not)
-			translatorName = tempTransName;
+				// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+				translatorName = tempTransName;
 			}
 		};
 		if (isReloading) {
@@ -494,9 +494,9 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
-		BukkitRunnable reload = new BukkitRunnable() {
+		GenericRunnable reload = new GenericRunnable() {
 			@Override
-			public void run() {
+			protected void execute() {
 				final long currentDuration = System.nanoTime();
 				/* Cancel background tasks before main config saving */
 				// TODO: Add unit test to make sure that storage config changes do not apply until next run
@@ -797,7 +797,7 @@ public class WorldwideChat extends JavaPlugin {
 	public void addPlayerUsingConfigurationGUI(UUID in, Object[] data) {
 		playersUsingConfigGUI.put(in.toString(), data);
 		refs.debugMsg("UUID " + in
-				+ " has been added (or overwritten) to the internal hashmap of people that are using the configuration GUI. Waiting on BULK INPUT! Cancelling after 30sec.");
+				+ " has been added (or overwritten) to the internal hashmap of people that are using the configuration GUI. Waiting on BULK INPUT!");
 	}
 	
 	public void addPlayerUsingConfigurationGUI(Player in) {

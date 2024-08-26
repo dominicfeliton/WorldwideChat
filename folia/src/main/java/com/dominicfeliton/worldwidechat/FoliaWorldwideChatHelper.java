@@ -120,6 +120,11 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     }
 
     @Override
+    public void runAsync(Runnable in, SchedulerType schedulerType) {
+        runAsync(true, in, schedulerType, null);
+    }
+
+    @Override
     public void runAsync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(true, in, schedulerType, schedulerObj);
     }
@@ -157,6 +162,11 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     }
 
     // Wrappers for compatibility with Bukkit/Spigot
+    @Override
+    public void runSync(Runnable in, SchedulerType schedulerType) {
+        runSync(true, in, schedulerType, null);
+    }
+
     @Override
     public void runSync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(true, in, schedulerType, schedulerObj);

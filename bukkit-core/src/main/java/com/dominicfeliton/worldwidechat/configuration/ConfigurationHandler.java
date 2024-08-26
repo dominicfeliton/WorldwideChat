@@ -589,9 +589,9 @@ public class ConfigurationHandler {
 	public void saveMainConfig(boolean async) {
 		if (async) {
 			refs.debugMsg("Saving main config async!");
-			BukkitRunnable out = new BukkitRunnable() {
+			GenericRunnable out = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					saveMainConfig(false);
 				}
 			};
@@ -606,9 +606,9 @@ public class ConfigurationHandler {
 	public void saveMessagesConfig(String inLang, boolean async) {
 		if (async) {
 			refs.debugMsg("Saving messages config async!");
-			BukkitRunnable out = new BukkitRunnable() {
+			GenericRunnable out = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					saveMessagesConfig(inLang, false);
 				}
 			};
@@ -623,9 +623,9 @@ public class ConfigurationHandler {
 	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
 		if (async && main.isEnabled()) {
 			refs.debugMsg("Saving custom config async!");
-			BukkitRunnable out = new BukkitRunnable() {
+			GenericRunnable out = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					saveCustomConfig(inConfig, dest, false);
 				}
 			};

@@ -5,6 +5,7 @@ import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.InventoryManager;
 import fr.minuskube.inv.SmartInventory;
@@ -269,22 +270,11 @@ public class WWCInventoryManager extends InventoryManager {
 			bookMeta.setPages(pages);
 			book.setItemMeta(bookMeta);
 
-			main.addPlayerUsingConfigurationGUI(player.getUniqueId(), new Object[] {inConfig, inConfigVal, contents.inventory()});
-			player.closeInventory();
-
-			refs.sendMsg("wwcConfigInstructionsBulkBook",
-					"",
-					"&a",
-					player);
-
-			// Drop the writable book at the player's location
-			player.getWorld().dropItemNaturally(player.getLocation(), book);
-
 			// Queue auto-cleanup after 5 minutes
-			BukkitRunnable cleanup = new BukkitRunnable() {
+			GenericRunnable cleanup = new GenericRunnable() {
 				@Override
-				public void run() {
-					if (!(main.getPlayerDataUsingGUI(player).length > 0)) {
+				protected void execute() {
+					if (!main.isPlayerUsingGUI(player) || !(main.getPlayerDataUsingGUI(player).length > 0)) {
 						refs.debugMsg("No cleanup for genericBookButton required");
 						return;
 					}
@@ -301,6 +291,17 @@ public class WWCInventoryManager extends InventoryManager {
 				}
 			};
 			wwcHelper.runSync(true, 6000, cleanup, ENTITY, new Object[] {player});
+
+			main.addPlayerUsingConfigurationGUI(player.getUniqueId(), new Object[] {inConfig, inConfigVal, contents.inventory(), cleanup});
+			player.closeInventory();
+
+			refs.sendMsg("wwcConfigInstructionsBulkBook",
+					"",
+					"&a",
+					player);
+
+			// Drop the writable book at the player's location
+			player.getWorld().dropItemNaturally(player.getLocation(), book);
 		}));
 	}
 	

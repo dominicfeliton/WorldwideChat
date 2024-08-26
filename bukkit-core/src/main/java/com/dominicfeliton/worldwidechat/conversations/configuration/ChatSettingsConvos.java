@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -159,16 +160,16 @@ public class ChatSettingsConvos {
 		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-			BukkitRunnable open = new BukkitRunnable() {
+			GenericRunnable open = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					previousInventory.open((Player)context.getForWhom());
 				}
 			};
 
-			BukkitRunnable run = new BukkitRunnable() {
+			GenericRunnable run = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					if (!input.equals("0")) {
 						YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
 						Player currPlayer = ((Player) context.getForWhom());
@@ -221,16 +222,16 @@ public class ChatSettingsConvos {
 		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-			BukkitRunnable open = new BukkitRunnable() {
+			GenericRunnable open = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					previousInventory.open((Player)context.getForWhom());
 				}
 			};
 
-			BukkitRunnable async = new BukkitRunnable() {
+			GenericRunnable async = new GenericRunnable() {
 				@Override
-				public void run() {
+				protected void execute() {
 					if (!input.equals("0")) {
 						Player currPlayer = ((Player) context.getForWhom());
 						YamlConfiguration msgConfig = main.getConfigManager().getCustomMessagesConfig(inLang);

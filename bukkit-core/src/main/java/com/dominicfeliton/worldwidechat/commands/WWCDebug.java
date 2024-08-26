@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -68,9 +69,9 @@ public class WWCDebug extends BasicCommand {
             } else if (args[0].equalsIgnoreCase("reset")) {
                 if (args[1].equalsIgnoreCase("confirm")) {
                     // Begin Reset
-                    Runnable run = new BukkitRunnable() {
+                   GenericRunnable run = new GenericRunnable() {
                         @Override
-                        public void run() {
+                        protected void execute() {
                             try {
                                 DataStorageUtils.fullDataWipe();
                                 refs.sendMsg("wwcdResetNotif", "", "&a", sender);
@@ -83,9 +84,9 @@ public class WWCDebug extends BasicCommand {
                             main.getCache().cleanUp();
                             main.getActiveTranslators().clear();
                             main.getPlayerRecords().clear();
-                            BukkitRunnable reload = new BukkitRunnable() {
+                            GenericRunnable reload = new GenericRunnable() {
                                 @Override
-                                public void run() {
+                                protected void execute() {
                                     main.reload(sender, true);
                                 }
                             };
@@ -116,9 +117,9 @@ public class WWCDebug extends BasicCommand {
                     // Preserve original debug val
                     boolean debugBool = conf.getBoolean("General.enableDebugMode");
 
-                    BukkitRunnable run = new BukkitRunnable() {
+                    GenericRunnable run = new GenericRunnable() {
                         @Override
-                        public void run() {
+                        protected void execute() {
                             conf.set("General.enableDebugMode", true);
                             if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
                                 refs.sendMsg("wwcdOutdatedSQLStruct", "", "&e", sender);
@@ -148,9 +149,9 @@ public class WWCDebug extends BasicCommand {
                     return true;
                 case "save":
                     // force save
-                    Runnable save = new BukkitRunnable() {
+                    GenericRunnable save = new GenericRunnable() {
                         @Override
-                        public void run() {
+                        protected void execute() {
                             // Preserve original debug val
                             YamlConfiguration conf = main.getConfigManager().getMainConfig();
                             boolean debugBool = conf.getBoolean("General.enableDebugMode");

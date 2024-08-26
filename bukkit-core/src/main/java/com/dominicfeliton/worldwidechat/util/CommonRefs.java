@@ -628,9 +628,9 @@ public class CommonRefs {
 			if (main.getTranslatorErrorCount() >= main.getErrorLimit()) {
 				main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReached"));
 				main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
-				wwcHelper.runSync(new BukkitRunnable() {
+				wwcHelper.runSync(new GenericRunnable() {
 					@Override
-					public void run() {
+					protected void execute() {
 						main.reload();
 					}
 				}, GLOBAL, null);

@@ -182,6 +182,11 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
+    public void runAsync(Runnable in, SchedulerType schedulerType) {
+        runAsync(true, in, schedulerType, null);
+    }
+
+    @Override
     public void runAsync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(true, in, schedulerType, schedulerObj);
     }
@@ -193,47 +198,42 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     @Override
     public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
-        if (!(in instanceof BukkitRunnable)) {
-            refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
-            return;
-        } else {
-            refs.debugMsg("We are an async bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
-        }
+        refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
 
         if (!serverMustBeRunning) {
-            ((BukkitRunnable) in).runTaskLaterAsynchronously(main, delay);
+            Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay);
             return;
         }
 
         if (!refs.serverIsStopping()) {
-            ((BukkitRunnable) in).runTaskLaterAsynchronously(main, delay);
+            Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay);
         }
     }
 
     @Override
     public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
-        if (!(in instanceof BukkitRunnable)) {
-            refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
-            return;
-        } else {
-            refs.debugMsg("We are an async bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
-        }
+        refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
 
         if (!serverMustBeRunning) {
             // If server does not need to be running
-            ((BukkitRunnable) in).runTaskTimerAsynchronously(main, delay, repeatTime);
+            Bukkit.getScheduler().runTaskTimerAsynchronously(main, in, delay, repeatTime);
             return;
         }
 
         // If it does
         if (!refs.serverIsStopping()) {
-            ((BukkitRunnable) in).runTaskTimerAsynchronously(main, delay, repeatTime);
+            Bukkit.getScheduler().runTaskTimerAsynchronously(main, in, delay, repeatTime);
         }
     }
 
     @Override
     public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
+    }
+
+    @Override
+    public void runSync(Runnable in, SchedulerType schedulerType) {
+        runSync(true, in, schedulerType, null);
     }
 
     @Override
@@ -248,39 +248,29 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     @Override
     public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
-        if (!(in instanceof BukkitRunnable)) {
-            refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
-            return;
-        } else {
-            refs.debugMsg("We are a sync bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
-        }
+        refs.debugMsg("We are a sync runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
 
         if (!serverMustBeRunning) {
-            ((BukkitRunnable) in).runTaskLater(main, delay);
+            Bukkit.getScheduler().runTaskLater(main, in, delay);
             return;
         }
 
         if (!refs.serverIsStopping()) {
-            ((BukkitRunnable) in).runTaskLater(main, delay);
+            Bukkit.getScheduler().runTaskLater(main, in, delay);
         }
     }
 
     @Override
     public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
-        if (!(in instanceof BukkitRunnable)) {
-            refs.debugMsg("Not a Bukkit Runnable but we are on " + main.getCurrPlatform() + "!! INVESTIGATE!");
-            return;
-        } else {
-            refs.debugMsg("We are a sync bukkit runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
-        }
+        refs.debugMsg("We are a sync runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
 
         if (!serverMustBeRunning) {
-            ((BukkitRunnable) in).runTaskTimer(main, delay, repeatTime);
+            Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime);
             return;
         }
 
         if (!refs.serverIsStopping()) {
-            ((BukkitRunnable) in).runTaskTimer(main, delay, repeatTime);
+            Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime);
         }
     }
 

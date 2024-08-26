@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.AbstractPlayerLocaleListener;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -57,9 +58,9 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
 
         Player player = event.getPlayer();
 
-        BukkitRunnable change = new BukkitRunnable() {
+        GenericRunnable change = new GenericRunnable() {
             @Override
-            public void run() {
+            protected void execute() {
                 // Get locale
                 String locale = getLocale(player.getLocale());
                 if (locale == null) {

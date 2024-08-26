@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat.listeners;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -46,9 +47,9 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
 
         Player player = event.getPlayer();
 
-        BukkitRunnable change = new BukkitRunnable() {
+        GenericRunnable change = new GenericRunnable() {
             @Override
-            public void run() {
+            protected void execute() {
                 PaperPlayerLocaleListener.super.checkAndSetLocale(player, main.getServer().getPlayer(player.getUniqueId()).locale().getLanguage());
             }
         };

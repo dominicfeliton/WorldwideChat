@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -67,9 +68,9 @@ public class BlacklistModifyGui implements InventoryProvider {
 					inPlayer));
 			deleteTermButton.setItemMeta(deleteTermMeta);
 			contents.set(1, 5, ClickableItem.of(deleteTermButton, e -> {
-				BukkitRunnable save = new BukkitRunnable() {
+				GenericRunnable save = new GenericRunnable() {
 					@Override
-					public void run() {
+					protected void execute() {
 						YamlConfiguration config = main.getConfigManager().getBlacklistConfig();
 						Set<String> bannedWords = main.getBlacklistTerms();
 						bannedWords.remove(currentTerm); // Remove currentTerm from the list
@@ -79,9 +80,9 @@ public class BlacklistModifyGui implements InventoryProvider {
 						main.addPlayerUsingConfigurationGUI(inPlayer.getUniqueId());
 						refs.sendMsg("wwcConfigConversationBlacklistDeletionSuccess", "", "&a", inPlayer);
 
-						BukkitRunnable out = new BukkitRunnable() {
+						GenericRunnable out = new GenericRunnable() {
 							@Override
-							public void run() {
+							protected void execute() {
 								new BlacklistGui(inPlayer).getBlacklist().open(player);
 							}
 						};
