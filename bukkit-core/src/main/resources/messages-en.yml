@@ -120,6 +120,8 @@ Messages:
   wwcConfigGUIGeneralSettings: 'General Configuration'
   wwcConfigGUIStorageSettings: 'Storage Configuration'
   wwcConfigGUIAISettings: 'AI Configuration'
+  wwcConfigGUIAIJsonPromptButton: 'Change JSON AI Prompt'
+  wwcConfigGUIAIPlainTextPromptButton: 'Change Plain Text AI Prompt'
   wwcConfigGUIStorageTypeSettings: '{0} Configuration'
   wwcConfigGUIChatSettings: 'Chat Configuration'
   wwcConfigGUIChatChannelSettings: 'Chat Channel Configuration'
@@ -363,6 +365,8 @@ Messages:
   wwcAiSystemPromptBad: 'Bad AI System Prompt detected. Using our default...'
   wwcAiSystemPromptLoaded: 'AI System Prompt loaded.'
   wwcAiSupportedLangsBad: 'Bad AI Supported Languages detected. Using our defaults...'
+  wwcLargeConfigInputSuccess: 'Your large input of {0} characters has been processed.'
+  wwcConfigInstructionsBulkBook: 'Open the dropped book to see the current value. Sign the book to make changes to this value.'
   #------------------- /wwcr Messages -------------------
   wwcrBegin: 'Reloading WorldwideChat...'
   wwcrTransFail: 'Reloaded WorldwideChat but failed to enable a translator.'

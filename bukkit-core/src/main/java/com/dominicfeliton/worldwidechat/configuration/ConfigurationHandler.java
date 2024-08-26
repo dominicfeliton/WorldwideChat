@@ -104,18 +104,18 @@ public class ConfigurationHandler {
 		String systemPrompt = "";
 		if (mainConfig.getBoolean("Translator.useChatGPT")) {
 			refs.debugMsg("JSON sys prompt");
-			systemPrompt = aiConfig.getString("jsonSystemPrompt") == null ?
+			systemPrompt = aiConfig.getString("jsonOverrideSystemPrompt").equalsIgnoreCase("default") ?
 					aiConfig.getString("jsonDefaultSystemPrompt") :
-					aiConfig.getString("jsonSystemPrompt");
+					aiConfig.getString("jsonOverrideSystemPrompt");
 			if (systemPrompt == null) {
 				main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
 				systemPrompt = templateConfig.getString("jsonDefaultSystemPrompt");
 			}
 		} else {
 			refs.debugMsg("Plaintext sys prompt");
-			systemPrompt = aiConfig.getString("plainTextSystemPrompt") == null ?
+			systemPrompt = aiConfig.getString("plainTextOverrideSystemPrompt").equalsIgnoreCase("default")  ?
 					aiConfig.getString("plainTextDefaultSystemPrompt") :
-					aiConfig.getString("plainTextSystemPrompt");
+					aiConfig.getString("plainTextOverrideSystemPrompt");
 			if (systemPrompt == null) {
 				main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
 				systemPrompt = templateConfig.getString("plainTextDefaultSystemPrompt");
@@ -124,14 +124,14 @@ public class ConfigurationHandler {
 		main.setAISystemPrompt(systemPrompt);
 
 		// supportedLangs
-		// TODO: always copy supportedLangs?
-		if (!aiConfig.isConfigurationSection("supportedLangs")) {
+		// TODO: copy supportedLangs to mem instead of setting.
+		if (!aiConfig.isList("supportedLangs")) {
 			main.getLogger().warning(refs.getPlainMsg("wwcAiSupportedLangsBad"));
 			aiConfig.set("supportedLangs", templateConfig.getString("supportedLangs"));
 			return;
 		}
 
-		if (mainConfig.getBoolean(CommonRefs.translatorPairs.get("ChatGPT"))) {
+		if (mainConfig.getBoolean("Translator.useChatGPT")) {
 			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcAiSystemPromptLoaded"));
 		}
 	}
@@ -673,4 +673,7 @@ public class ConfigurationHandler {
 		return pluginLangConfigs;
 	}
 
+	public File getAIFile() {
+		return aiFile;
+	}
 }

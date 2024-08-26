@@ -39,13 +39,12 @@ import java.io.File;
 import java.util.*;
 import java.util.concurrent.*;
 
-import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
-import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.*;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersions;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "08242024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "08252024-2"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -55,6 +54,8 @@ public class WorldwideChat extends JavaPlugin {
 	private BukkitAudiences adventure;
 
 	private String currPlatform;
+
+	private String currMCVersion;
 
 	private WorldwideChatHelper wwcHelper;
 	private WWCInventoryManager inventoryManager;
@@ -71,16 +72,14 @@ public class WorldwideChat extends JavaPlugin {
 
 	private ServerAdapterFactory serverFactory;
 
-	private Object scheduler;
-
 	private CommonRefs refs;
 
 	private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
 	private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
-	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
-	private Set<String> blacklistTerms = new ConcurrentSkipListSet<>();
+	private Map<String, Object[]> playersUsingConfigGUI = new ConcurrentHashMap<>();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<>();
+	private Set<String> blacklistTerms = new ConcurrentSkipListSet<>();
 
 	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
 			.maximumSize(100)
@@ -355,6 +354,7 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Load methods
 		currPlatform = type;
+		currMCVersion = outputVersion;
 		refs = serverFactory.getCommonRefs();
 		wwcHelper = serverFactory.getWWCHelper();
 
@@ -468,10 +468,10 @@ public class WorldwideChat extends JavaPlugin {
 	/**
 	  * Reloads the plugin and sends a message to the caller
 	  * @param inSender - CommandSender who requested reload, null if none
-	  * @param saveMainConfig - whether to save the main config or not
+	  * @param saveConfigs - whether to save the plugin configs or not
 	  * THIS METHOD MUST BE RUN SYNCED TO MAIN THREAD
 	  */
-	public void reload(CommandSender inSender, boolean saveMainConfig) {
+	public void reload(CommandSender inSender, boolean saveConfigs) {
 		/* Put plugin into a reloading state */
 		// Check if plugin was previously "disabled" or "invalid"
 		boolean invalidState = translatorName.equalsIgnoreCase("Invalid");
@@ -509,9 +509,15 @@ public class WorldwideChat extends JavaPlugin {
 				}
 
 				/* Save main config on current thread BEFORE actual reload */
-				if (saveMainConfig) {
-					refs.debugMsg("Saving main config on async thread BEFORE actual reload...");
+				if (saveConfigs) {
+					refs.debugMsg("Saving ALL configs on async thread BEFORE actual reload...");
 					getConfigManager().saveMainConfig(false);
+					// TODO: Should we do this instead of force saving right away
+					// getConfigManager().saveMessagesConfig <-- No need, all changes are pushed right away in the GUI
+					// getConfigManager().saveBlacklistConfig <-- Same thing
+
+					// Save AI file
+					getConfigManager().saveCustomConfig(getConfigManager().getAIConfig(), getConfigManager().getAIFile(), false);
 				}
 
 				doStartupTasks(true);
@@ -783,12 +789,15 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void addPlayerUsingConfigurationGUI(UUID in) {
-		if (!playersUsingConfigGUI.contains(in.toString())) {
-			playersUsingConfigGUI.add(in.toString());
-			refs.debugMsg("UUID " + in
-					+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
-			return;
-		}
+		playersUsingConfigGUI.put(in.toString(), new Object[0]);
+		refs.debugMsg("UUID " + in
+				+ " has been added (or overwritten) to the internal hashmap of people that are using the configuration GUI.");
+	}
+
+	public void addPlayerUsingConfigurationGUI(UUID in, Object[] data) {
+		playersUsingConfigGUI.put(in.toString(), data);
+		refs.debugMsg("UUID " + in
+				+ " has been added (or overwritten) to the internal hashmap of people that are using the configuration GUI. Waiting on BULK INPUT! Cancelling after 30sec.");
 	}
 	
 	public void addPlayerUsingConfigurationGUI(Player in) {
@@ -1059,7 +1068,9 @@ public class WorldwideChat extends JavaPlugin {
 		return new PlayerRecord("", "", -1, -1);
 	}
 	
-	public boolean isPlayerUsingGUI(Player player) { return playersUsingConfigGUI.contains(player.getUniqueId().toString()); }
+	public boolean isPlayerUsingGUI(Player player) {
+		return playersUsingConfigGUI.containsKey(player.getUniqueId().toString());
+	}
 
 	public Map<String, ActiveTranslator> getActiveTranslators() {
 		return activeTranslators;
@@ -1073,7 +1084,7 @@ public class WorldwideChat extends JavaPlugin {
 		return playerRecords;
 	}
 
-	public List<String> getPlayersUsingGUI() {
+	public Map<String, Object[]> getPlayersUsingGUI() {
 		return playersUsingConfigGUI;
 	}
 	
@@ -1104,6 +1115,8 @@ public class WorldwideChat extends JavaPlugin {
 	public String getPluginVersion() { return this.getDescription().getVersion(); }
 
 	public String getCurrPlatform() { return currPlatform; }
+
+	public String getCurrMCVersion() { return currMCVersion; }
 
 	public int getUpdateCheckerDelay() {
 		return updateCheckerDelay;
@@ -1155,5 +1168,9 @@ public class WorldwideChat extends JavaPlugin {
 
 	public String getAISystemPrompt() {
 		return aiSystemPrompt;
+	}
+
+	public Object[] getPlayerDataUsingGUI(Player p) {
+		return playersUsingConfigGUI.get(p.getUniqueId().toString());
 	}
 }

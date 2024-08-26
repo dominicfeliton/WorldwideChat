@@ -9,6 +9,7 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
@@ -340,14 +341,16 @@ public class MenuGui implements InventoryProvider {
 
 		// AI Settings
 		aiSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
-
-		/*
-		aiSet.add(new ConvoElement(1, 1, "wwcConfigGUAIJsonPromptButton", XMaterial.NAME_TAG,
-				new AISettingsConvos.JsonPrompt()));
-		aiSet.add(new ConvoElement(1, 2, "wwcConfigGUAIPlainTextPromptButton", XMaterial.NAME_TAG,
-				new AISettingsConvos.PlainTextPrompt()));
-		aiSet.add(new)
-		 */
+		aiSet.add(new BulkInputElement(1, 1, "wwcConfigGUIAIJsonPromptButton", XMaterial.NAME_TAG,
+				main.getConfigManager().getAIConfig(), "jsonOverrideSystemPrompt"));
+		aiSet.add(new BulkInputElement(1, 2, "wwcConfigGUIAIPlainTextPromptButton", XMaterial.NAME_TAG,
+				main.getConfigManager().getAIConfig(), "plainTextOverrideSystemPrompt"));
+		if (!main.getCurrPlatform().equals("Folia")) {
+			//aiSet.add(new SubMenuElement(1, 3, "wwcConfigGUIAIChangeLangs", new MessagesOverridePickLangGui(inPlayer).getMessagesOverridePickLangGui()));
+		}
+		aiSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		aiSet.add(new CommonElement(2, 4, "Quit"));
+		aiSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.TRANS_SET.ordinal()+1 + ""}));
 	}
 	
 	static abstract class Element {
@@ -389,6 +392,28 @@ public class MenuGui implements InventoryProvider {
 			invManager.genericConversationButton(x, y, player, contents, prompt, blockIcon, buttonName);
 		}
 		
+	}
+
+	static class BulkInputElement extends Element {
+
+		public YamlConfiguration inConfig;
+
+		public String configVal;
+
+		private WWCInventoryManager invManager = instance.getInventoryManager();
+
+		public BulkInputElement(int x_, int y_, String buttonName_, XMaterial blockIcon_, YamlConfiguration inConfig_, String configVal_) {
+			super(x_, y_, buttonName_, blockIcon_);
+
+			inConfig = inConfig_;
+			configVal = configVal_;
+		}
+
+		@Override
+		public void rasterize(Player player, InventoryContents contents) {
+			invManager.genericBookButton(x, y, player, contents, inConfig, configVal, blockIcon, buttonName);
+		}
+
 	}
 	
 	static class ToggleElement extends Element {

@@ -104,7 +104,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         pluginManager.registerEvents(translate, main);
         listenerQueue.add(translate);
 
-        InventoryListener inv = new InventoryListener();
+        ConfigListener inv = new ConfigListener();
         pluginManager.registerEvents(inv, main);
         listenerQueue.add(inv);
 

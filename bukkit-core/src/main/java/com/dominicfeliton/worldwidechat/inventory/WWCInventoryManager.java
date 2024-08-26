@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat.inventory;
 import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.InventoryManager;
@@ -14,24 +15,31 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+
 public class WWCInventoryManager extends InventoryManager {
 	
 	private static WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
-	
+	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+
 	public WWCInventoryManager() {
 		super(main);
 	}
@@ -220,6 +228,57 @@ public class WWCInventoryManager extends InventoryManager {
 			} else {
 				refs.sendMsg("wwcNoConvoFolia", "", "&c", player);
 			}
+		}));
+	}
+
+	public void genericBookButton(int x, int y, Player player, InventoryContents contents, YamlConfiguration inConfig, String inConfigVal, XMaterial inMaterial, String buttonName) {
+		ItemStack button = inMaterial.parseItem();
+		ItemMeta buttonMeta = button.getItemMeta();
+		buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
+				"",
+				"&6",
+				player));
+		button.setItemMeta(buttonMeta);
+		contents.set(x, y, ClickableItem.of(button, e -> {
+			ItemStack book = XMaterial.WRITABLE_BOOK.parseItem();
+			BookMeta bookMeta = (BookMeta) book.getItemMeta();
+
+			char[] array = inConfig.getString(inConfigVal).toCharArray();
+			StringBuilder currPage = new StringBuilder();
+
+			ArrayList<String> pages = new ArrayList<>();
+			for (int i = 0; i < array.length; i++) {
+				currPage.append(array[i]);
+				if (currPage.length() >= 234) {
+					pages.add(currPage.toString());
+					currPage = new StringBuilder();
+				}
+			}
+
+			// add last page
+			if (currPage.length() > 0) {
+				pages.add(currPage.toString());
+			}
+
+			bookMeta.setAuthor(player.getName());
+			try {
+				/* Older MC versions do not have generation data */
+				bookMeta.setGeneration(bookMeta.getGeneration());
+			} catch (NoSuchMethodError no) {}
+			bookMeta.setTitle(inConfigVal);
+			bookMeta.setPages(pages);
+			book.setItemMeta(bookMeta);
+
+			main.addPlayerUsingConfigurationGUI(player.getUniqueId(), new Object[] {inConfig, inConfigVal, contents.inventory()});
+			player.closeInventory();
+
+			refs.sendMsg("wwcConfigInstructionsBulkBook",
+					"",
+					"&a",
+					player);
+
+			// Drop the writable book at the player's location
+			player.getWorld().dropItemNaturally(player.getLocation(), book);
 		}));
 	}
 	
