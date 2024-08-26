@@ -106,7 +106,7 @@ public class ConfigurationHandler {
 			refs.debugMsg("JSON sys prompt");
 			systemPrompt = aiConfig.getString("jsonOverrideSystemPrompt").equalsIgnoreCase("default") ?
 					aiConfig.getString("jsonDefaultSystemPrompt") :
-					aiConfig.getString("jsonOverrideSystemPrompt");
+					aiConfig.getString("jsonOverrideSystemPrompt").replace("{default}", aiConfig.getString("jsonDefaultSystemPrompt"));
 			if (systemPrompt == null) {
 				main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
 				systemPrompt = templateConfig.getString("jsonDefaultSystemPrompt");
@@ -115,7 +115,7 @@ public class ConfigurationHandler {
 			refs.debugMsg("Plaintext sys prompt");
 			systemPrompt = aiConfig.getString("plainTextOverrideSystemPrompt").equalsIgnoreCase("default")  ?
 					aiConfig.getString("plainTextDefaultSystemPrompt") :
-					aiConfig.getString("plainTextOverrideSystemPrompt");
+					aiConfig.getString("plainTextOverrideSystemPrompt").replace("{default}", aiConfig.getString("plainTextDefaultSystemPrompt"));
 			if (systemPrompt == null) {
 				main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
 				systemPrompt = templateConfig.getString("plainTextDefaultSystemPrompt");

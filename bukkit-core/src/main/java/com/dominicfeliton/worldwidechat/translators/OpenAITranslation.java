@@ -6,7 +6,6 @@ import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.SerializedName;
-import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.*;
@@ -149,6 +148,7 @@ public class OpenAITranslation extends BasicTranslation {
                     }
 
                     refs.debugMsg("OpenAI RESPONSE: "+ response.toString());
+                    refs.debugMsg("Prooompt: " + main.getAISystemPrompt());
                     return response.toString();
                 }
             } else {
