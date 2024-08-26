@@ -430,9 +430,6 @@ public class WorldwideChat extends JavaPlugin {
 			protected void execute() {
 				wwcHelper.checkVaultSupport();
 				wwcHelper.registerEventHandlers();
-
-				// Finish by setting translator name, which permits plugin usage ("Starting" does not)
-				translatorName = tempTransName;
 			}
 		};
 		if (isReloading) {
@@ -440,6 +437,9 @@ public class WorldwideChat extends JavaPlugin {
 		} else {
 			event.run();
 		}
+
+		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+		translatorName = tempTransName;
 	}
 
 	/**
@@ -524,6 +524,8 @@ public class WorldwideChat extends JavaPlugin {
 				
 				/* Send successfully reloaded message */
 				if (inSender != null) {
+					// TODO: Make sure this works with Libre on Folia??
+					// TODO: If libre says no API key, do not report to contact the dev
 					if ((getConfigManager().getMainConfig().getBoolean("Storage.useSQL") && !isSQLConnValid(true)) ||
 									(getConfigManager().getMainConfig().getBoolean("Storage.usePostgreSQL") && !isPostgresConnValid((true))) ||
 									(getConfigManager().getMainConfig().getBoolean("Storage.useMongoDB") && !isMongoConnValid(true))) {

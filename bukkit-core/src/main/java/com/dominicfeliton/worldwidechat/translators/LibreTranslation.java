@@ -53,10 +53,12 @@ public class LibreTranslation extends BasicTranslation {
 		public String call() throws Exception {
 			// Init vars
 			Gson gson = new Gson();
+			String service = System.getProperty("LIBRE_SERVICE_URL");
+			String key = System.getProperty("LIBRE_API_KEY");
 
 			if (isInitializing) {
 				/* Get languages */
-				URL url = new URL(System.getProperty("LIBRE_SERVICE_URL") + "/languages");
+				URL url = new URL(service + "/languages");
 				
 				HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 				conn.setRequestMethod("GET");
@@ -69,7 +71,6 @@ public class LibreTranslation extends BasicTranslation {
 				Map<String, SupportedLang> inLangMap = new HashMap<>();
 
 				if (listResponseCode == HttpURLConnection.HTTP_OK) {
-					// TODO: make it better?
 					// Scan response
 					StringBuilder inLine = new StringBuilder();
 				    Scanner scanner = new Scanner(url.openStream());
@@ -87,6 +88,7 @@ public class LibreTranslation extends BasicTranslation {
 						SupportedLang currLang = new SupportedLang(
 								eaProperty.get("code").getAsString(),
 								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString()));
+						// TODO: Avoid dupes like this
 						outLangMap.put(currLang.getLangCode(), currLang);
 						outLangMap.put(currLang.getLangName(), currLang);
 
@@ -133,7 +135,7 @@ public class LibreTranslation extends BasicTranslation {
 			/* Detect inputLang */
 			if (inputLang.equals("None")) { // if we do not know the input
 				/* Craft detection request */
-				URL url = new URL(System.getProperty("LIBRE_SERVICE_URL") + "/detect");
+				URL url = new URL(service + "/detect");
 				HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
 				httpConn.setRequestMethod("POST");
 
@@ -144,7 +146,11 @@ public class LibreTranslation extends BasicTranslation {
 
 				OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
 
-				writer.write("q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8));
+				String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8);
+				if (key != null) {
+					formatted += "&api_key=" + URLEncoder.encode(key, StandardCharsets.UTF_8);
+				}
+				writer.write(formatted);
 				writer.flush();
 				writer.close();
 				httpConn.getOutputStream().close();
@@ -182,7 +188,7 @@ public class LibreTranslation extends BasicTranslation {
 			}
 
 			/* Actual translation */
-			URL url = new URL(System.getProperty("LIBRE_SERVICE_URL") + "/translate");
+			URL url = new URL(service + "/translate");
 			HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
 			httpConn.setRequestMethod("POST");
 
@@ -193,10 +199,14 @@ public class LibreTranslation extends BasicTranslation {
 
 			OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
 
-			writer.write("q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) +
+			String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) +
 					"&source=" + URLEncoder.encode(inputLang, StandardCharsets.UTF_8) +
 					"&target=" + URLEncoder.encode(outputLang, StandardCharsets.UTF_8) +
-					"&format=text");
+					"&format=text";
+			if (key != null) {
+				formatted += "&api_key=" + URLEncoder.encode(key, StandardCharsets.UTF_8);
+			}
+			writer.write(formatted);
 			writer.flush();
 			writer.close();
 			httpConn.getOutputStream().close();
