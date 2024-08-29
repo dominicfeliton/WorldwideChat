@@ -33,17 +33,11 @@ public class SystranTranslation extends BasicTranslation {
     }
 
     @Override
-    public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-        Future<String> process = callbackExecutor.submit(new translationTask());
-        String finalOut;
-
-        /* Get translation */
-        finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-
-        return finalOut;
+    protected translationTask createTranslationTask() {
+        return new systranTask();
     }
 
-    private class translationTask implements Callable<String> {
+    private class systranTask extends translationTask {
         @Override
         public String call() throws Exception {
             // Init vars

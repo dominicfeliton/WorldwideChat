@@ -2,6 +2,9 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.CommonTask;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -114,46 +117,10 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void cleanupTasks(int taskID) {
+    public void cleanupTasks() {
         // Cancel + remove all tasks
         // Remember that the scheduler is thread safe on Bukkit, dork
         main.getServer().getScheduler().cancelTasks(main);
-
-        // Wait for completion + kill all background tasks
-        // Thanks to:
-        // https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
-        if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-            final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
-            final long asyncTasksStart = System.currentTimeMillis();
-            boolean asyncTasksTimeout = false;
-            while (getActiveAsyncTasks(taskID) > 0) {
-                // Send interrupt signal
-                try {
-                    for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
-                        if (worker.getOwner().equals(main) && worker.getTaskId() != taskID) {
-                            refs.debugMsg("Sending interrupt to task with ID " + worker.getTaskId() + "...");
-                            worker.getThread().interrupt();
-                        }
-                    }
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    refs.debugMsg("Thread successfully aborted and threw an InterruptedException.");
-                }
-
-                // Disable once we reach timeout
-                if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
-                    asyncTasksTimeout = true;
-                    refs.debugMsg(
-                            "Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
-                                    + " remaining async tasks to complete. Disabling/reloading regardless...");
-                    break;
-                }
-            }
-            final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
-            if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
-                refs.debugMsg("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
-            }
-        }
     }
 
     /**
@@ -182,100 +149,101 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     }
 
     @Override
-    public void runAsync(Runnable in, SchedulerType schedulerType) {
+    public void runAsync(GenericRunnable in, SchedulerType schedulerType) {
         runAsync(true, in, schedulerType, null);
     }
 
     @Override
-    public void runAsync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runAsync(GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(true, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runAsync(boolean serverMustBeRunning, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsync(serverMustBeRunning, 0, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runAsync(boolean serverMustBeRunning, int delay, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
 
+
         if (!serverMustBeRunning) {
-            Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay)));
             return;
         }
 
         if (!refs.serverIsStopping()) {
-            Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay)));
         }
     }
 
     @Override
-    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
 
         if (!serverMustBeRunning) {
             // If server does not need to be running
-            Bukkit.getScheduler().runTaskTimerAsynchronously(main, in, delay, repeatTime);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskTimerAsynchronously(main, in, delay, repeatTime)));
             return;
         }
 
         // If it does
         if (!refs.serverIsStopping()) {
-            Bukkit.getScheduler().runTaskTimerAsynchronously(main, in, delay, repeatTime);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskTimerAsynchronously(main, in, delay, repeatTime)));
         }
     }
 
     @Override
-    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runAsyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(Runnable in, SchedulerType schedulerType) {
+    public void runSync(GenericRunnable in, SchedulerType schedulerType) {
         runSync(true, in, schedulerType, null);
     }
 
     @Override
-    public void runSync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runSync(GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(true, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runSync(boolean serverMustBeRunning, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSync(serverMustBeRunning, 0, in, schedulerType, schedulerObj);
     }
 
     @Override
-    public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runSync(boolean serverMustBeRunning, int delay, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are a sync runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
 
         if (!serverMustBeRunning) {
-            Bukkit.getScheduler().runTaskLater(main, in, delay);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLater(main, in, delay)));
             return;
         }
 
         if (!refs.serverIsStopping()) {
-            Bukkit.getScheduler().runTaskLater(main, in, delay);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLater(main, in, delay)));
         }
     }
 
     @Override
-    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are a sync runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
 
         if (!serverMustBeRunning) {
-            Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime)));
             return;
         }
 
         if (!refs.serverIsStopping()) {
-            Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime);
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime)));
         }
     }
 
     @Override
-    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {
+    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 

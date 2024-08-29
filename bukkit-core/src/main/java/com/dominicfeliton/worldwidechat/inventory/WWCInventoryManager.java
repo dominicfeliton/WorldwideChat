@@ -290,6 +290,7 @@ public class WWCInventoryManager extends InventoryManager {
 					main.removePlayerUsingConfigurationGUI(player);
 				}
 			};
+			cleanup.setName("generic bulk book input");
 			wwcHelper.runSync(true, 6000, cleanup, ENTITY, new Object[] {player});
 
 			main.addPlayerUsingConfigurationGUI(player.getUniqueId(), new Object[] {inConfig, inConfigVal, contents.inventory(), cleanup});

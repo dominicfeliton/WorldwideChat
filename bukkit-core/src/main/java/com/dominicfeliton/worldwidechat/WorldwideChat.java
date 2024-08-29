@@ -30,7 +30,6 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 import net.milkbowl.vault.chat.Chat;
@@ -136,11 +135,6 @@ public class WorldwideChat extends JavaPlugin {
 	/* Default constructor */
 	public WorldwideChat() {
 		super();
-	}
-
-	/* MockBukkit required constructor */
-	protected WorldwideChat(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
-		super(loader, description, dataFolder, file);
 	}
 
 	/* Methods */
@@ -502,11 +496,7 @@ public class WorldwideChat extends JavaPlugin {
 				// TODO: Add unit test to make sure that storage config changes do not apply until next run
 				// TODO: Add unit test to make sure that storage defaults to YAML on conn failure
 				// TODO: Add case for if connection gets interrupted?
-				if (!currPlatform.equals("Folia")) {
-					cancelBackgroundTasks(true, invalidState, this.getTaskId());
-				} else {
-					cancelBackgroundTasks(true, invalidState);
-				}
+				cancelBackgroundTasks(true, invalidState, this.getTask());
 
 				/* Save main config on current thread BEFORE actual reload */
 				if (saveConfigs) {
@@ -587,27 +577,27 @@ public class WorldwideChat extends JavaPlugin {
 	  * @param wasPreviouslyInvalid - If we are reloading from an invalid state to begin with
 	  */
     public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid) {
-    	cancelBackgroundTasks(isReloading, wasPreviouslyInvalid, -1);
+    	cancelBackgroundTasks(isReloading, wasPreviouslyInvalid, null);
     }
 	
     /**
 	  * Wait for and cancel background tasks 
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
 	  * @param wasPreviouslyInvalid - If this plugin was previously in a soft "disabled" state (no functioning translator)
-	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
+	  * @param taskToIgnore - Task to ignore when cancelling tasks, in case this is being ran async
 	  */
-	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, int taskID) {
+	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, CommonTask taskToIgnore) {
 		// Do not do any of this if CommonRefs/WWCHelper/ServerFactory are null!
 		if (refs == null || wwcHelper == null || serverFactory == null) {
 			return;
 		}
 		refs.debugMsg("Cancel background tasks!");
 
-		// Shut down executors
+		// Shut down executors (translations)
 		callbackExecutor.shutdownNow();
 
 		// Cleanup background tasks
-		wwcHelper.cleanupTasks(taskID);
+		wwcHelper.cleanupTasks();
 
 		// Sync ActiveTranslators, playerRecords to disk
 		try {
@@ -631,6 +621,7 @@ public class WorldwideChat extends JavaPlugin {
 		postgresSession = null;
 
 		// Clear all active translating users, cache, playersUsingConfigGUI
+		playersUsingConfigGUI.clear();
 		supportedInputLangs.clear();
 		supportedOutputLangs.clear();
 		playerRecords.clear();

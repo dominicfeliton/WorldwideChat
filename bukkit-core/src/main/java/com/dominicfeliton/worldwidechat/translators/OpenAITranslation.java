@@ -27,17 +27,11 @@ public class OpenAITranslation extends BasicTranslation {
     }
 
     @Override
-    public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-        Future<String> process = callbackExecutor.submit(new translationTask());
-        String finalOut = "";
-
-        /* Get translation */
-        finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-
-        return finalOut;
+    protected BasicTranslation.translationTask createTranslationTask() {
+        return new openaiTask();
     }
 
-    private class translationTask implements Callable<String> {
+    private class openaiTask extends translationTask {
         CommonRefs refs = main.getServerFactory().getCommonRefs();
         YamlConfiguration conf = main.getConfigManager().getMainConfig();
         YamlConfiguration aiConf = main.getConfigManager().getAIConfig();

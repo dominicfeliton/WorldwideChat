@@ -1,5 +1,9 @@
 package com.dominicfeliton.worldwidechat;
 
+import com.dominicfeliton.worldwidechat.util.CommonTask;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import org.bukkit.entity.Panda;
+
 public abstract class WorldwideChatHelper {
     // Store additional, WorldwideChat-exclusive methods here
     // Also required for our maven setup
@@ -15,46 +19,29 @@ public abstract class WorldwideChatHelper {
         ASYNC;
     }
 
-    public void cleanupTasks(int taskID) {}
+    public abstract void cleanupTasks();
 
-    public void runAsync(Runnable in, SchedulerType schedulerType) {}
+    public abstract void runAsync(GenericRunnable in, SchedulerType schedulerType);
 
-    public void runAsync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runAsync(GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runAsync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runAsync(boolean serverMustBeRunning, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runAsync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runAsync(boolean serverMustBeRunning, int delay, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runSync(Runnable in, SchedulerType schedulerType) {}
+    public abstract void runSync(GenericRunnable in, SchedulerType schedulerType);
 
-    public void runSync(Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runSync(GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runSync(boolean serverMustBeRunning, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runSync(boolean serverMustBeRunning, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runSync(boolean serverMustBeRunning, int delay, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runSync(boolean serverMustBeRunning, int delay, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
+    public abstract void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
-    public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, Runnable in, SchedulerType schedulerType, Object[] schedulerObj) {}
-
-    // TODO:
-    /*
-    record Task(Object wrapped, Consumer<Object> canceller) {
-        void cancel() {
-            this.canceller.accept(this.wrapped);
-        }
-
-        static Task wrapBukkit(final BukkitRunnable runnable) {
-            return new Task(runnable, task -> ((BukkitRunnable) task).cancel());
-        }
-
-        static Task wrapFolia(final ScheduledTask scheduledTask) {
-            return new Task(scheduledTask, task -> ((ScheduledTask) task).cancel());
-        }
-    }
-    */
+    public abstract void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 }

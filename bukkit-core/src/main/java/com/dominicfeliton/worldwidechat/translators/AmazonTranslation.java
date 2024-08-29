@@ -32,18 +32,12 @@ public class AmazonTranslation extends BasicTranslation {
 		System.setProperty("AMAZON_REGION", region);
 	}
 
-	@Override
-	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		Future<String> process = callbackExecutor.submit(new translationTask());
-		String finalOut = "";
-		
-		/* Get test translation */
-		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		
-		return finalOut;
-	}
+    @Override
+    protected translationTask createTranslationTask() {
+        return new amazonTask();
+    }
 
-	private class translationTask implements Callable<String> {
+	private class amazonTask extends translationTask {
 
 		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		@Override

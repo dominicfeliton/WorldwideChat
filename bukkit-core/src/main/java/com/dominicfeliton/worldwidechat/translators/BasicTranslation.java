@@ -2,11 +2,9 @@ package com.dominicfeliton.worldwidechat.translators;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
-public class BasicTranslation {
+public abstract class BasicTranslation {
 	
 	public WorldwideChat main = WorldwideChat.instance;
 	
@@ -29,8 +27,21 @@ public class BasicTranslation {
 		this.callbackExecutor = callbackExecutor;
 		this.isInitializing = isInitializing;
 	}
-	
+
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		return textToTranslate;
+		Future<String> process = callbackExecutor.submit(createTranslationTask());
+		String finalOut = "";
+
+		/* Get translation */
+		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
+
+		return finalOut;
+	}
+
+	protected abstract translationTask createTranslationTask();
+
+	public abstract class translationTask implements Callable<String> {
+		@Override
+		public abstract String call() throws Exception;
 	}
 }

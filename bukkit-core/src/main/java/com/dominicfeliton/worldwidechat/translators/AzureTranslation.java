@@ -30,17 +30,11 @@ public class AzureTranslation extends BasicTranslation {
     }
 
     @Override
-    public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-        Future<String> process = callbackExecutor.submit(new AzureTranslation.translationTask());
-        String finalOut = "";
-
-        /* Get test translation */
-        finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-
-        return finalOut;
+    protected translationTask createTranslationTask() {
+        return new azureTask();
     }
 
-    private class translationTask implements Callable<String> {
+    private class azureTask extends translationTask {
 
         CommonRefs refs = main.getServerFactory().getCommonRefs();
         @Override
