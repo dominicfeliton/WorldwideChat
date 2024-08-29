@@ -81,14 +81,14 @@ public class OllamaTranslation extends BasicTranslation {
             // If we do not know the input lang, Ollama should guess.
 
             /* Actual translation */
-            PromptBuilder builder = new PromptBuilder().add(main.getAISystemPrompt())
+            PromptBuilder prompt = new PromptBuilder().add(main.getAISystemPrompt())
                     .addLine("Input Lang: " + inputLang)
                     .addLine("Output Lang: " + outputLang)
                     .addLine("Text To Translate: " + textToTranslate);
 
             OllamaResult response = api.generate(
                     conf.getString("Translator.ollamaModel"),
-                    builder.build(),
+                    prompt.build(),
                     false,
                     new OptionsBuilder().build());
 
