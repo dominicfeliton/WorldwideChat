@@ -13,7 +13,6 @@ import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.TextReplacementConfig;
-import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang3.StringUtils;
@@ -26,7 +25,6 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.IllegalPluginAccessException;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalTime;
@@ -48,7 +46,6 @@ import java.util.concurrent.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class CommonRefs {
@@ -81,6 +78,7 @@ public class CommonRefs {
 		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
 		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
 		translatorPairs.put("Translator.useChatGPT", "ChatGPT");
+		translatorPairs.put("Translator.useOllama", "Ollama");
 
 		// For testing only!
 		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
@@ -651,94 +649,73 @@ public class CommonRefs {
 
 		switch (translatorName) {
 			case "Google Translate":
-				GoogleTranslation googleTranslateInstance;
-				if (isInitializing) {
-					googleTranslateInstance = new GoogleTranslation(
-							mainConfig.getString("Translator.googleTranslateAPIKey"), true, main.getCallbackExecutor());
-				} else {
-					googleTranslateInstance = new GoogleTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = googleTranslateInstance.useTranslator();
+				GoogleTranslation googleTranslateInstance = new GoogleTranslation(
+						mainConfig.getString("Translator.googleTranslateAPIKey"),
+						isInitializing,
+						main.getCallbackExecutor()
+				);
+				out = googleTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "Amazon Translate":
-				AmazonTranslation amazonTranslateInstance;
-				if (isInitializing) {
-					amazonTranslateInstance = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
-							mainConfig.getString("Translator.amazonSecretKey"),
-							mainConfig.getString("Translator.amazonRegion"), true, main.getCallbackExecutor());
-				} else {
-					amazonTranslateInstance = new AmazonTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = amazonTranslateInstance.useTranslator();
+				AmazonTranslation amazonTranslateInstance = new AmazonTranslation(
+						mainConfig.getString("Translator.amazonAccessKey"),
+					mainConfig.getString("Translator.amazonSecretKey"),
+					mainConfig.getString("Translator.amazonRegion"),
+					isInitializing,
+					main.getCallbackExecutor());
+				out = amazonTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "Libre Translate":
-				LibreTranslation libreTranslateInstance;
-				if (isInitializing) {
-					libreTranslateInstance = new LibreTranslation(mainConfig.getString("Translator.libreAPIKey"),
-							mainConfig.getString("Translator.libreURL"), true, main.getCallbackExecutor());
-				} else {
-					libreTranslateInstance = new LibreTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = libreTranslateInstance.useTranslator();
+				LibreTranslation libreTranslateInstance = new LibreTranslation(
+						mainConfig.getString("Translator.libreAPIKey"),
+						mainConfig.getString("Translator.libreURL"),
+						isInitializing,
+						main.getCallbackExecutor());
+				out = libreTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "DeepL Translate":
-				DeepLTranslation deeplTranslateInstance;
-				if (isInitializing) {
-					deeplTranslateInstance = new DeepLTranslation(mainConfig.getString("Translator.deepLAPIKey"), true, main.getCallbackExecutor());
-				} else {
-					deeplTranslateInstance = new DeepLTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = deeplTranslateInstance.useTranslator();
+				DeepLTranslation deeplTranslateInstance = new DeepLTranslation(
+						mainConfig.getString("Translator.deepLAPIKey"),
+						isInitializing,
+						main.getCallbackExecutor());
+				out = deeplTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "Azure Translate":
-				AzureTranslation azureTranslateInstance;
-				if (isInitializing) {
-					azureTranslateInstance = new AzureTranslation(mainConfig.getString("Translator.azureAPIKey"),
-							mainConfig.getString("Translator.azureRegion"),
-							true, main.getCallbackExecutor());
-				} else {
-					azureTranslateInstance = new AzureTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = azureTranslateInstance.useTranslator();
+				AzureTranslation azureTranslateInstance = new AzureTranslation(
+						mainConfig.getString("Translator.azureAPIKey"),
+						mainConfig.getString("Translator.azureRegion"),
+						isInitializing,
+						main.getCallbackExecutor());
+				out = azureTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "Systran Translate":
-				SystranTranslation systranTranslateInstance;
-				if (isInitializing) {
-					systranTranslateInstance = new SystranTranslation(mainConfig.getString("Translator.systranAPIKey"),
-							true, main.getCallbackExecutor());
-				} else {
-					systranTranslateInstance = new SystranTranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = systranTranslateInstance.useTranslator();
+				SystranTranslation systranTranslateInstance = new SystranTranslation(
+						mainConfig.getString("Translator.systranAPIKey"),
+					isInitializing,
+						main.getCallbackExecutor());
+				out = systranTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "ChatGPT":
-				OpenAITranslation openAITranslationInstance;
-				if (isInitializing) {
-					openAITranslationInstance = new OpenAITranslation(mainConfig.getString("Translator.chatGPTAPIKey"),
-							mainConfig.getString("Translator.chatGPTURL"),
-							true, main.getCallbackExecutor());
-				} else {
-					openAITranslationInstance = new OpenAITranslation(inMessage,
-							inLangCode, outLangCode, main.getCallbackExecutor());
-				}
-				out = openAITranslationInstance.useTranslator();
+				OpenAITranslation openAITranslationInstance = new OpenAITranslation(
+						mainConfig.getString("Translator.chatGPTAPIKey"),
+						mainConfig.getString("Translator.chatGPTURL"),
+						isInitializing,
+						main.getCallbackExecutor());
+				out = openAITranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
+				break;
+			case "Ollama":
+				OllamaTranslation ollamaInstance = new OllamaTranslation(
+						mainConfig.getString("Translator.ollamaURL"),
+						isInitializing,
+						main.getCallbackExecutor());
+				out = ollamaInstance.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			case "JUnit/MockBukkit Testing Translator":
-				TestTranslation testTranslator;
-				if (isInitializing) {
-					testTranslator = new TestTranslation(
-							"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true, main.getCallbackExecutor());
-				} else {
-					testTranslator = new TestTranslation(inMessage, inLangCode,
-							outLangCode, main.getCallbackExecutor());
-				}
-				out = testTranslator.useTranslator();
+				TestTranslation testTranslator = new TestTranslation(
+						isInitializing,
+						main.getCallbackExecutor()
+				);
+				out = testTranslator.useTranslator(inMessage, inLangCode, outLangCode);
 				break;
 			default:
 				// Get here if we are adding a new translation service

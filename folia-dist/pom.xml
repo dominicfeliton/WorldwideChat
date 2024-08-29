@@ -122,6 +122,7 @@
               <include>org.jsoup:jsoup</include>
               <include>com.fasterxml.jackson.core:*</include>
               <include>com.fasterxml.jackson.dataformat:*</include>
+              <include>com.fasterxml.jackson.datatype:*</include>
               <include>org.apache.httpcomponents:*</include>
               <include>joda-time:*</include>
               <include>fr.minuskube.inv:folia-smart-invs</include>
@@ -136,6 +137,7 @@
               <include>io.github.brenoepics:*</include>
               <include>org.apache.logging.log4j:*</include>
               <include>org.postgresql:postgresql</include>
+              <include>io.github.ollama4j:*</include>
             </includes>
           </artifactSet>
           <filters>
@@ -306,6 +308,10 @@
             <relocation>
               <pattern>org.postgresql</pattern>
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.postgresql</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>io.github</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.github</shadedPattern>
             </relocation>
           </relocations>
         </configuration>

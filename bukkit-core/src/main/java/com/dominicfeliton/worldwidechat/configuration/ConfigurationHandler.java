@@ -131,7 +131,7 @@ public class ConfigurationHandler {
 			return;
 		}
 
-		if (mainConfig.getBoolean("Translator.useChatGPT")) {
+		if (mainConfig.getBoolean("Translator.useChatGPT") || mainConfig.getBoolean("Translator.useOllama")) {
 			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcAiSystemPromptLoaded"));
 		}
 	}

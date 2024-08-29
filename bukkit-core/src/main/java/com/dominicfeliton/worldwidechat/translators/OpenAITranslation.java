@@ -16,34 +16,34 @@ import java.util.concurrent.*;
 
 public class OpenAITranslation extends BasicTranslation {
 
-    public OpenAITranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
-        super(textToTranslate, inputLang, outputLang, callbackExecutor);
-    }
+    private final String apiKey;
+    private final String serviceUrl;
 
-    public OpenAITranslation(String apikey, String url, boolean isInitializing, ExecutorService callbackExecutor) {
+    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private YamlConfiguration conf = main.getConfigManager().getMainConfig();
+    private YamlConfiguration aiConf = main.getConfigManager().getAIConfig();
+
+    public OpenAITranslation(String apiKey, String url, boolean isInitializing, ExecutorService callbackExecutor) {
         super(isInitializing, callbackExecutor);
-        System.setProperty("OPENAI_KEY", apikey);
-        System.setProperty("OPENAI_URL", url);
+        this.apiKey = apiKey;
+        this.serviceUrl = url;
     }
 
     @Override
-    protected BasicTranslation.translationTask createTranslationTask() {
-        return new openaiTask();
+    protected BasicTranslation.translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+        return new openaiTask(textToTranslate, inputLang, outputLang);
     }
 
     private class openaiTask extends translationTask {
-        CommonRefs refs = main.getServerFactory().getCommonRefs();
-        YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        YamlConfiguration aiConf = main.getConfigManager().getAIConfig();
+        public openaiTask(String textToTranslate, String inputLang, String outputLang) {
+            super(textToTranslate, inputLang, outputLang);
+        }
 
         @Override
         public String call() throws Exception {
             // Init vars
-            Gson gson = new Gson();
-
             if (isInitializing) {
                 /* Get languages */
-                // TODO: Make this configurable
                 Map<String, SupportedLang> supportedLangs = new HashMap<>();
 
                 // https://help.openai.com/en/articles/8357869-how-to-change-your-language-setting-in-chatgpt
@@ -102,7 +102,7 @@ public class OpenAITranslation extends BasicTranslation {
             );;
 
             // Send the request
-            String jsonResponse = sendChatRequest(request);
+            String jsonResponse = sendChatRequest(request, textToTranslate);
 
             // Parse the response
             ChatResponseParser.ChatResponse response = ChatResponseParser.parseResponse(jsonResponse);
@@ -115,15 +115,15 @@ public class OpenAITranslation extends BasicTranslation {
             return textToTranslate;
         }
 
-        public String sendChatRequest(TranslationChatCompletionRequest request) throws Exception {
+        public String sendChatRequest(TranslationChatCompletionRequest request, String textToTranslate) throws Exception {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             String jsonRequest = gson.toJson(request);
 
-            URL url = new URL(System.getProperty("OPENAI_URL"));
+            URL url = new URL(serviceUrl);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
-            conn.setRequestProperty("Authorization", "Bearer " + System.getProperty("OPENAI_KEY"));
+            conn.setRequestProperty("Authorization", "Bearer " + apiKey);
             conn.setDoOutput(true);
 
             try (OutputStream os = conn.getOutputStream()) {

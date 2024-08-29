@@ -14,27 +14,26 @@ import java.util.concurrent.*;
 
 public class DeepLTranslation extends BasicTranslation {
 
-	public DeepLTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
-		super(textToTranslate, inputLang, outputLang, callbackExecutor);
-	}
-	
-	public DeepLTranslation(String apikey, boolean isInitializing, ExecutorService callbackExecutor) {
+	private Translator translate;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+	public DeepLTranslation(String apiKey, boolean isInitializing, ExecutorService callbackExecutor) {
 		super(isInitializing, callbackExecutor);
-		System.setProperty("DEEPL_API_KEY", apikey);
+		translate = new Translator(apiKey);
 	}
 
 	@Override
-	protected translationTask createTranslationTask() {
-		return new deeplTask();
+	protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+		return new deeplTask(textToTranslate, inputLang, outputLang);
 	}
 
 	private class deeplTask extends translationTask {
-		CommonRefs refs = main.getServerFactory().getCommonRefs();
+		public deeplTask(String textToTranslate, String inputLang, String outputLang) {
+			super(textToTranslate, inputLang, outputLang);
+		}
+
 		@Override
 		public String call() throws Exception {
-			/* Initialize translation object again */
-			Translator translate = new Translator(System.getProperty("DEEPL_API_KEY"));
-
 			if (isInitializing) {
 				/* Parse Supported Languages */
 				Map<String, SupportedLang> sourceLangs = new HashMap<>();

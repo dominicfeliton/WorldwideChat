@@ -14,27 +14,28 @@ import java.util.concurrent.*;
 
 public class GoogleTranslation extends BasicTranslation {
 
-	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
-		super(textToTranslate, inputLang, outputLang, callbackExecutor);
-	}
+	private Translate translate;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	public GoogleTranslation(String apikey, boolean isInitializing, ExecutorService callbackExecutor) {
+	public GoogleTranslation(String apiKey, boolean isInitializing, ExecutorService callbackExecutor) {
 		super(isInitializing, callbackExecutor);
-		System.setProperty("GOOGLE_API_KEY", apikey); // we do this because .setApi() spams console :(
+		System.setProperty("GOOGLE_API_KEY", apiKey); // we do this because .setApi() spams console :(
+		translate = TranslateOptions.getDefaultInstance().getService();
 	}
 
 	@Override
-	protected translationTask createTranslationTask() {
-		return new googleTask();
+	protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+		return new googleTask(textToTranslate, inputLang, outputLang);
 	}
 
 	private class googleTask extends translationTask {
-		CommonRefs refs = main.getServerFactory().getCommonRefs();
+		public googleTask(String textToTranslate, String inputLang, String outputLang) {
+			super(textToTranslate, inputLang, outputLang);
+		}
+
 		@Override
 		public String call() throws Exception {
 			/* Initialize translation object again */
-			Translate translate = TranslateOptions.getDefaultInstance().getService();
-
 			if (isInitializing) {
 				/* Get languages */
 				List<Language> allLanguages = translate.listSupportedLanguages();

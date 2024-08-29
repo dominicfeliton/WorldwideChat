@@ -75,6 +75,9 @@ Translator:
   chatGPTAPIKey: chatgpt_key_goes_here
   chatGPTModel: gpt-4o-2024-08-06
   chatGPTURL: "https://api.openai.com/v1/chat/completions"
+  useOllama: false
+  ollamaURL: ollama_url_goes_here
+  ollamaModel: ollama_model_goes_here
   translatorCacheSize: 100
   enablePersistentCache: false
   rateLimit: 0

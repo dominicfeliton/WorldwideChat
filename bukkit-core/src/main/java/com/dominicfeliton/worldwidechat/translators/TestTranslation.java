@@ -9,23 +9,23 @@ import java.util.concurrent.ExecutorService;
 
 public class TestTranslation extends BasicTranslation {
 
-	CommonRefs refs = main.getServerFactory().getCommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	public TestTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
-		super(textToTranslate, inputLang, outputLang, callbackExecutor);
-	}
-
-	public TestTranslation(String apikey, boolean isInitializing, ExecutorService callbackExecutor) {
+	public TestTranslation(boolean isInitializing, ExecutorService callbackExecutor) {
 		super(isInitializing, callbackExecutor);
-		System.setProperty("FAKE_API_KEY", apikey);
 	}
 
 	@Override
-	protected translationTask createTranslationTask() {
-		return new testTask();
+	protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+		return new testTask(textToTranslate, inputLang, outputLang);
 	}
 
 	private class testTask extends translationTask {
+
+		public testTask(String textToTranslate, String inputLang, String outputLang) {
+			super(textToTranslate, inputLang, outputLang);
+		}
+
 		@Override
 		public String call() throws Exception {
 			if (isInitializing) {

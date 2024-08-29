@@ -22,37 +22,40 @@ import java.util.concurrent.*;
 
 public class LibreTranslation extends BasicTranslation {
 
-	CommonRefs refs = main.getServerFactory().getCommonRefs();
-	public LibreTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
-		super(textToTranslate, inputLang, outputLang, callbackExecutor);
-	}
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	public LibreTranslation(String apikey, String serviceUrl, boolean isInitializing, ExecutorService callbackExecutor) {
+	private final String serviceUrl;
+	private final String apiKey;
+
+	public LibreTranslation(String apiKey, String serviceUrl, boolean isInitializing, ExecutorService callbackExecutor) {
 		super(isInitializing, callbackExecutor);
-		if (apikey == null || apikey.equalsIgnoreCase("none")) {
-			System.setProperty("LIBRE_API_KEY", "");
+		if (apiKey == null || apiKey.equalsIgnoreCase("none")) {
+			this.apiKey = "";
 		} else {
-			System.setProperty("LIBRE_API_KEY", apikey);
+			this.apiKey = apiKey;
 		}
-		System.setProperty("LIBRE_SERVICE_URL", serviceUrl);
+		this.serviceUrl = serviceUrl;
 	}
 
 	@Override
-	protected translationTask createTranslationTask() {
-		return new libreTask();
+	protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+		return new libreTask(textToTranslate, inputLang, outputLang);
 	}
 
 	private class libreTask extends translationTask {
+
+		public libreTask(String textToTranslate, String inputLang, String outputLang) {
+			super(textToTranslate, inputLang, outputLang);
+		}
+
 		@Override
 		public String call() throws Exception {
 			// Init vars
 			Gson gson = new Gson();
-			String service = System.getProperty("LIBRE_SERVICE_URL");
-			String key = System.getProperty("LIBRE_API_KEY");
 
 			if (isInitializing) {
 				/* Get languages */
-				URL url = new URL(service + "/languages");
+				URL url = new URL(serviceUrl + "/languages");
 				
 				HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 				conn.setRequestMethod("GET");
@@ -129,7 +132,7 @@ public class LibreTranslation extends BasicTranslation {
 			/* Detect inputLang */
 			if (inputLang.equals("None")) { // if we do not know the input
 				/* Craft detection request */
-				URL url = new URL(service + "/detect");
+				URL url = new URL(serviceUrl + "/detect");
 				HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
 				httpConn.setRequestMethod("POST");
 
@@ -141,8 +144,8 @@ public class LibreTranslation extends BasicTranslation {
 				OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
 
 				String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8);
-				if (key != null) {
-					formatted += "&api_key=" + URLEncoder.encode(key, StandardCharsets.UTF_8);
+				if (apiKey != null) {
+					formatted += "&api_key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
 				}
 				writer.write(formatted);
 				writer.flush();
@@ -182,7 +185,7 @@ public class LibreTranslation extends BasicTranslation {
 			}
 
 			/* Actual translation */
-			URL url = new URL(service + "/translate");
+			URL url = new URL(serviceUrl + "/translate");
 			HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
 			httpConn.setRequestMethod("POST");
 
@@ -197,8 +200,8 @@ public class LibreTranslation extends BasicTranslation {
 					"&source=" + URLEncoder.encode(inputLang, StandardCharsets.UTF_8) +
 					"&target=" + URLEncoder.encode(outputLang, StandardCharsets.UTF_8) +
 					"&format=text";
-			if (key != null) {
-				formatted += "&api_key=" + URLEncoder.encode(key, StandardCharsets.UTF_8);
+			if (apiKey != null) {
+				formatted += "&api_key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
 			}
 			writer.write(formatted);
 			writer.flush();

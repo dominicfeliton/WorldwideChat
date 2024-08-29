@@ -19,28 +19,28 @@ import java.util.concurrent.*;
 
 public class AzureTranslation extends BasicTranslation {
 
-    public AzureTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
-        super(textToTranslate, inputLang, outputLang, callbackExecutor);
-    }
+    private final AzureApi translate;
+    private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-    public AzureTranslation(String key, String region, boolean isInitializing, ExecutorService callbackExecutor) {
+    public AzureTranslation(String apiKey, String region, boolean isInitializing, ExecutorService callbackExecutor) {
         super(isInitializing, callbackExecutor);
-        System.setProperty("AZURE_KEY", key);
-        System.setProperty("AZURE_REGION", region);
+        translate = new AzureApiBuilder().setKey(apiKey).region(region).build();
     }
 
     @Override
-    protected translationTask createTranslationTask() {
-        return new azureTask();
+    protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+        return new azureTask(textToTranslate, inputLang, outputLang);
     }
 
     private class azureTask extends translationTask {
 
-        CommonRefs refs = main.getServerFactory().getCommonRefs();
+        public azureTask(String textToTranslate, String inputLang, String outputLang) {
+            super(textToTranslate, inputLang, outputLang);
+        }
+
         @Override
         public String call() throws Exception {
             /* Initialize AWS Creds + Translation Object */
-            AzureApi translate = new AzureApiBuilder().setKey(System.getProperty("AZURE_KEY")).region(System.getProperty("AZURE_REGION")).build();
             if (isInitializing) {
                 /* Get supported languages from AWS and set them */
                 Collection<Language> azLangs = translate.getAvailableLanguages(new AvailableLanguagesParams()).get().get();
