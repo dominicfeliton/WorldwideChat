@@ -97,28 +97,28 @@ public class ConfigurationHandler {
 		YamlConfiguration templateConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(main.getResource(name), StandardCharsets.UTF_8));
 
 		/* Validate the configuration */
-		// systemPrompt (jsonDefaultSystemPrompt should always be overwritten)
-		aiConfig.set("jsonDefaultSystemPrompt", templateConfig.getString("jsonDefaultSystemPrompt"));
-		aiConfig.set("plainTextDefaultSystemPrompt", templateConfig.getString("plainTextDefaultSystemPrompt"));
+		// systemPrompt (chatGPTDefaultSystemPrompt should always be overwritten)
+		aiConfig.set("chatGPTDefaultSystemPrompt", templateConfig.getString("chatGPTDefaultSystemPrompt"));
+		aiConfig.set("ollamaDefaultSystemPrompt", templateConfig.getString("ollamaDefaultSystemPrompt"));
 
 		String systemPrompt = "";
 		if (mainConfig.getBoolean("Translator.useChatGPT")) {
-			refs.debugMsg("JSON sys prompt");
-			systemPrompt = aiConfig.getString("jsonOverrideSystemPrompt").equalsIgnoreCase("default") ?
-					aiConfig.getString("jsonDefaultSystemPrompt") :
-					aiConfig.getString("jsonOverrideSystemPrompt").replace("{default}", aiConfig.getString("jsonDefaultSystemPrompt"));
+			refs.debugMsg("ChatGPT sys prompt");
+			systemPrompt = aiConfig.getString("chatGPTOverrideSystemPrompt").equalsIgnoreCase("default") ?
+					aiConfig.getString("chatGPTDefaultSystemPrompt") :
+					aiConfig.getString("chatGPTOverrideSystemPrompt").replace("{default}", aiConfig.getString("chatGPTDefaultSystemPrompt"));
 			if (systemPrompt == null) {
 				main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
-				systemPrompt = templateConfig.getString("jsonDefaultSystemPrompt");
+				systemPrompt = templateConfig.getString("chatGPTDefaultSystemPrompt");
 			}
 		} else {
-			refs.debugMsg("Plaintext sys prompt");
-			systemPrompt = aiConfig.getString("plainTextOverrideSystemPrompt").equalsIgnoreCase("default")  ?
-					aiConfig.getString("plainTextDefaultSystemPrompt") :
-					aiConfig.getString("plainTextOverrideSystemPrompt").replace("{default}", aiConfig.getString("plainTextDefaultSystemPrompt"));
+			refs.debugMsg("ollama sys prompt");
+			systemPrompt = aiConfig.getString("ollamaOverrideSystemPrompt").equalsIgnoreCase("default")  ?
+					aiConfig.getString("ollamaDefaultSystemPrompt") :
+					aiConfig.getString("ollamaOverrideSystemPrompt").replace("{default}", aiConfig.getString("ollamaDefaultSystemPrompt"));
 			if (systemPrompt == null) {
 				main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
-				systemPrompt = templateConfig.getString("plainTextDefaultSystemPrompt");
+				systemPrompt = templateConfig.getString("ollamaDefaultSystemPrompt");
 			}
 		}
 		main.setAISystemPrompt(systemPrompt);

@@ -77,7 +77,7 @@ Translator:
   chatGPTURL: "https://api.openai.com/v1/chat/completions"
   useOllama: false
   ollamaURL: ollama_url_goes_here
-  ollamaModel: ollama_model_goes_here
+  ollamaModel: thewindmom/hermes-3-llama-3.1-8b
   translatorCacheSize: 100
   enablePersistentCache: false
   rateLimit: 0

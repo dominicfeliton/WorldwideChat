@@ -5,6 +5,7 @@ import com.deepl.api.TextResult;
 import com.deepl.api.Translator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import com.google.gson.Gson;
 import io.github.ollama4j.OllamaAPI;
 import io.github.ollama4j.models.OllamaResult;
 import io.github.ollama4j.models.chat.OllamaChatRequestBuilder;
@@ -40,6 +41,30 @@ public class OllamaTranslation extends BasicTranslation {
     }
 
     private class ollamaTask extends translationTask {
+
+        public class Response {
+            private boolean success;
+            private String reason;
+            private String output;
+
+            public Response(boolean success, String reason, String output) {
+                this.success = success;
+                this.reason = reason;
+                this.output = output;
+            }
+
+            public boolean isSuccess() {
+                return success;
+            }
+
+            public String getReason() {
+                return reason;
+            }
+
+            public String getOutput() {
+                return output;
+            }
+        }
 
         public ollamaTask(String textToTranslate, String inputLang, String outputLang) {
             super(textToTranslate, inputLang, outputLang);
@@ -92,7 +117,8 @@ public class OllamaTranslation extends BasicTranslation {
                     false,
                     new OptionsBuilder().build());
 
-            return response.getResponse();
+            refs.debugMsg(response.getResponse());
+            return new Gson().fromJson(response.getResponse(), Response.class).getOutput();
         }
     }
 
