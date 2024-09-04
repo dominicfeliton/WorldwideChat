@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat.translators;
 import com.deepl.api.Language;
 import com.deepl.api.TextResult;
 import com.deepl.api.Translator;
+import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
@@ -116,6 +117,7 @@ public class OllamaTranslation extends BasicTranslation {
                     prompt.build(),
                     false,
                     new OptionsBuilder().build());
+            response.setResponseTime(WorldwideChat.translatorConnectionTimeoutSeconds);
 
             refs.debugMsg(response.getResponse());
             return new Gson().fromJson(response.getResponse(), Response.class).getOutput();
