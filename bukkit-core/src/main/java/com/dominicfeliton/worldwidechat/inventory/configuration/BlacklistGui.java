@@ -43,10 +43,6 @@ public class BlacklistGui implements InventoryProvider {
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
-			// TODO: Make sure new terms are immediately added.
-			// Fix this on override messages as well.
-			// Also TODO: Make sure that save operations are safe on both overrides/blacklist. Schedule an async>sync task if necessary.
-			// TODO: Add save button on override main page + modify main page.
 			/* Green stained glass borders */
 			invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
 			

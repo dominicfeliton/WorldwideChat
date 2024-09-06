@@ -153,7 +153,7 @@ public class ChatSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return refs.getPlainMsg("wwcConfigConversationAddBlacklist", currPlayer);
+			return refs.getPlainMsg("wwcConfigConversationAddBlacklist", new String[]{}, "&b", currPlayer);
 		}
 
 		@Override

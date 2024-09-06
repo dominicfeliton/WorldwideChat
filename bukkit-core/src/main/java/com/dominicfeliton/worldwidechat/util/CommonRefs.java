@@ -1053,6 +1053,41 @@ public class CommonRefs {
 		return out;
 	}
 
+	public SupportedLang fixLangName(String code) {
+		/*
+		Map<String, SupportedLang> temp = new HashMap<>();
+		temp.put(in.getLangCode(), in);
+		return fixLangNames(temp, false, false).get(0);
+		 */
+		// Adjust the file path as necessary
+		// TODO: Take in hashSet instead of converting? Seems really unnecessary...
+		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
+		ObjectMapper objectMapper = new ObjectMapper();
+		Map<String, ISOLanguage> languageMap;
+		SupportedLang out = new SupportedLang(code);
+
+		try {
+			languageMap = objectMapper.readValue(main.getResource(isoJsonFilePath), new TypeReference<Map<String, ISOLanguage>>(){});
+			// hashSet means less dupes
+			debugMsg("Trying to fix " + code + " from JSON...");
+			ISOLanguage jsonLang = languageMap.get(code);
+
+			if (jsonLang != null) {
+				out.setLangName(jsonLang.getIntName());
+				out.setNativeLangName(jsonLang.getNativeName());
+				return out;
+			} else {
+				debugMsg("Could not find " + code + " in JSON!");
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+			main.getLogger().warning(getPlainMsg("wwcISOJSONFail"));
+		}
+
+		// Return original
+		return out;
+	}
+
 	/**
 	 * Fixes a given map of SupportedLangs to include native names/language names
 	 *

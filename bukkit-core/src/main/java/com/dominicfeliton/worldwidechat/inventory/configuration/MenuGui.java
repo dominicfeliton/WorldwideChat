@@ -337,7 +337,7 @@ public class MenuGui implements InventoryProvider {
 		aiSet.add(new BulkInputElement(1, 2, "wwcConfigGUIOllamaPromptButton", XMaterial.NAME_TAG,
 				main.getConfigManager().getAIConfig(), "chatGPTOverrideSystemPrompt"));
 		if (!main.getCurrPlatform().equals("Folia")) {
-			//aiSet.add(new SubMenuElement(1, 3, "wwcConfigGUIAIChangeLangs", new MessagesOverridePickLangGui(inPlayer).getMessagesOverridePickLangGui()));
+			aiSet.add(new SubMenuElement(1, 3, "wwcConfigGUIAIChangeLangs", new AILangGui(inPlayer).getAILangs()));
 		}
 		aiSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		aiSet.add(new CommonElement(2, 4, "Quit"));
