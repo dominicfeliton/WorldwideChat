@@ -27,15 +27,6 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
         this.adapter = main.getServerFactory();
     }
 
-    // TODO: Make sure task cancellation works on folia like in paper identical 1:1
-    @Override
-    public void checkVaultSupport() {
-        // Vault is not supported on Folia
-        // TODO: It actually might be, fix?
-        main.getLogger().warning(refs.getPlainMsg("wwcNoVaultOnFolia"));
-        main.setChat(null); // jic
-    }
-
     // SCHEDULER (NEW)
     @Override
     public void cleanupTasks() {
