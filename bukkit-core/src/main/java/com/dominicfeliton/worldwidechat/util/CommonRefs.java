@@ -532,7 +532,7 @@ public class CommonRefs {
                     permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> checkForRateLimitPermissions(currPlayer)).get(3, TimeUnit.SECONDS);
                 } catch (TimeoutException | InterruptedException e) {
                     debugMsg("Timeout from permission checks should never happen, unless the server is stopping or /reloading. "
-                            + "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
+                            + "If it isn't, and we can't fetch a user permission in less than ~3 seconds, we have a problem.");
                     return inMessage;
                 }
             } else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
@@ -1040,6 +1040,10 @@ public class CommonRefs {
      */
     private String checkForRateLimitPermissions(Player currPlayer) {
         Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
+        if (perms.contains("worldwidechat.ratelimit.exempt")) {
+            return "worldwidechat.ratelimit.exempt";
+        }
+
         for (PermissionAttachmentInfo perm : perms) {
             if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
                 return perm.getPermission();
