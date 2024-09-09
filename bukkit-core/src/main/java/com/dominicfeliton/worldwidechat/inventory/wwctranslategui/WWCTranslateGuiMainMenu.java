@@ -90,7 +90,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                             "&a",
                             inPlayer));
                     outLore.add(refs.getPlainMsg("wwctGUILocalizeExistingValue",
-                            "&d&o" + currRecord.getLocalizationCode(),
+                            "&d&l" + currRecord.getLocalizationCode(),
                             "&d",
                             inPlayer));
                     invManager.addGlowEffect(localizationMeta);
