@@ -12,10 +12,12 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -27,7 +29,7 @@ public class AILangGui implements InventoryProvider {
     private WWCInventoryManager invManager = main.getInventoryManager();
 
     private Player inPlayer;
-    private Set<String> langs;
+    private Set<SupportedLang> langs;
 
     public AILangGui(Player inPlayer) {
         this.inPlayer = inPlayer;
@@ -46,9 +48,7 @@ public class AILangGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             // Refresh langs
-            for (SupportedLang eaLang : main.getSupportedInputLangs().values()) {
-                langs.add(eaLang.getLangCode());
-            }
+            langs.addAll(main.getSupportedInputLangs().values());
 
             // Fix this on override messages as well.
             /* Green stained glass borders */
@@ -61,11 +61,19 @@ public class AILangGui implements InventoryProvider {
             if (!langs.isEmpty()) {
                 refs.debugMsg("Adding existing AI langs to inventory! Amount of langs: " + currentLangs.length);
                 int currSpot = 0;
-                for (String lang : langs) {
+                for (SupportedLang lang : langs) {
                     ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
                     ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
-                    currentEntryMeta.setDisplayName(lang);
+                    currentEntryMeta.setDisplayName(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + lang.getLangCode());
+                    ArrayList<String> lore = new ArrayList<>();
+                    if (!lang.getLangName().isEmpty()) {
+                        lore.add(ChatColor.ITALIC + "" + ChatColor.LIGHT_PURPLE + lang.getLangName());
+                    }
+                    if (!lang.getNativeLangName().isEmpty()) {
+                        lore.add(ChatColor.ITALIC + "" + ChatColor.LIGHT_PURPLE + lang.getNativeLangName());
+                    }
+                    currentEntryMeta.setLore(lore);
                     currentEntry.setItemMeta(currentEntryMeta);
                     currentLangs[currSpot] = ClickableItem.of(currentEntry, e -> {
                         // Open Specific Override GUI

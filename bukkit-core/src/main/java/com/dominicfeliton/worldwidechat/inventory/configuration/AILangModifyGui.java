@@ -31,11 +31,11 @@ public class AILangModifyGui implements InventoryProvider {
 
     private WWCInventoryManager invManager = main.getInventoryManager();
 
-    private String currentLang = "";
+    private SupportedLang currentLang;
 
     private Player inPlayer;
 
-    public AILangModifyGui(String currentLang, Player inPlayer) {
+    public AILangModifyGui(SupportedLang currentLang, Player inPlayer) {
         this.currentLang = currentLang;
         this.inPlayer = inPlayer;
     }
@@ -45,7 +45,7 @@ public class AILangModifyGui implements InventoryProvider {
                 .provider(this).size(3, 9)
                 .manager(WorldwideChat.instance.getInventoryManager())
                 .title(refs.getPlainMsg("wwcConfigGUIAILangModify",
-                        currentLang,
+                        currentLang.getLangCode(),
                         "&9",
                         inPlayer))
                 .build();
@@ -73,21 +73,20 @@ public class AILangModifyGui implements InventoryProvider {
                     @Override
                     protected void execute() {
                         YamlConfiguration config = main.getConfigManager().getAIConfig();
-                        SupportedLang fixed = refs.fixLangName(currentLang);
                         Set<String> codesOnly = new TreeSet<>();
                         for (SupportedLang eaLang : main.getSupportedInputLangs().values()) {
                             codesOnly.add(eaLang.getLangCode());
                         }
 
-                        main.getSupportedInputLangs().remove(fixed.getLangCode());
-                        main.getSupportedInputLangs().remove(fixed.getLangName());
-                        main.getSupportedInputLangs().remove(fixed.getNativeLangName());
+                        main.getSupportedInputLangs().remove(currentLang.getLangCode());
+                        main.getSupportedInputLangs().remove(currentLang.getLangName());
+                        main.getSupportedInputLangs().remove(currentLang.getNativeLangName());
 
-                        main.getSupportedOutputLangs().remove(fixed.getLangCode());
-                        main.getSupportedOutputLangs().remove(fixed.getLangName());
-                        main.getSupportedOutputLangs().remove(fixed.getNativeLangName());
+                        main.getSupportedOutputLangs().remove(currentLang.getLangCode());
+                        main.getSupportedOutputLangs().remove(currentLang.getLangName());
+                        main.getSupportedOutputLangs().remove(currentLang.getNativeLangName());
 
-                        codesOnly.remove(fixed.getLangCode());
+                        codesOnly.remove(currentLang.getLangCode());
 
                         config.set("supportedLangs", new ArrayList<>(codesOnly)); // Save the updated list back to the config
 
