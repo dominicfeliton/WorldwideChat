@@ -3,7 +3,6 @@ package com.dominicfeliton.worldwidechat.conversations.configuration;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
@@ -15,7 +14,9 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.TreeSet;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
@@ -40,7 +41,7 @@ public class AISettingsConvos {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
-            return refs.getPlainMsg("wwcConfigConversationAddLang", new String[] {}, "&b", currPlayer);
+            return refs.getPlainMsg("wwcConfigConversationAddLang", new String[]{}, "&b", currPlayer);
         }
 
         @Override
@@ -50,7 +51,7 @@ public class AISettingsConvos {
             GenericRunnable open = new GenericRunnable() {
                 @Override
                 protected void execute() {
-                    previousInventory.open((Player)context.getForWhom());
+                    previousInventory.open((Player) context.getForWhom());
                 }
             };
 
@@ -94,7 +95,7 @@ public class AISettingsConvos {
 
                         main.getConfigManager().saveCustomConfig(config, main.getConfigManager().getAIFile(), false);
                     }
-                    wwcHelper.runSync(open, ENTITY, new Object[] {(Player) context.getForWhom()});
+                    wwcHelper.runSync(open, ENTITY, new Object[]{(Player) context.getForWhom()});
                 }
             };
             wwcHelper.runAsync(run, ASYNC, null);

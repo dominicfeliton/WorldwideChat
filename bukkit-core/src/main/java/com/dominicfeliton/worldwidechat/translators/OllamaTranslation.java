@@ -1,7 +1,6 @@
 package com.dominicfeliton.worldwidechat.translators;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import io.github.ollama4j.OllamaAPI;
@@ -20,7 +19,6 @@ public class OllamaTranslation extends BasicTranslation {
 
     private OllamaAPI api;
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
     private YamlConfiguration aiConf = main.getConfigManager().getAIConfig();
     private YamlConfiguration conf = main.getConfigManager().getMainConfig();
 

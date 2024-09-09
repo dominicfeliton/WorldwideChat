@@ -338,24 +338,17 @@ Messages:
     доор нь ямар нэгэн зүйл буцааж яваарай.
   wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
   wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт
-  libreHttp400: Муу хүсэлт Libre илгээсэн Translate! Хэрэв та ямар нэг зүйл хийж байгаа
-    бол та байх ёстой гэж, Хэрэв та энэ авч байх ёстой. Хөгжүүлэгчтэй холбоо барина
-    уу!
   wwcConfigGUILibreTranslateApiKeyButton: Чөлөөт өөрчлөлт API түлхүүр Translate
-  libreHttp403: Алга болсон Libre API Түлхүүр Translate, эсвэл та серверээс хориглосон
-    байна!
   wwcConfigConversationLibreURLSuccess: Чөлөөт URL амжилттай тогтоосон.
   wwcConfigConversationLibreTranslateApiKeyInput: Одоогийн API түлхүүр нь {0} байна.
     оруулах уу Libre нь API түлхүүр, эсвэл төрөл 0 буцах.
   wwcConfigGUILibreTranslateButton: Үнэгүй орчуулах
-  libreHttp429: улмаас серверээс түвшин хязгаар ямар ч итгэл.
   wwcConfigGUIToggleLibreTranslateButton: Чөлөөт Toggle орчуулах
   wwcConfigConversationLibreTranslateToggleSuccess: Амжилттай Translate Libre түлхүүр.
     Өөрчлөлтийг хүчин төгөлдөр болгохын тулд Дуут хувилбар.
   wwcConfigConversationLibreTranslateApiKeySuccess: Чөлөөт API түлхүүр амжилттай тогтоосон.
   wwcConfigConversationLibreURLInput: Одоогийн URL нь {0} байна. оруулах уу Libre
     нь URL, эсвэл төрөл 0 буцах.
-  libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: {0}'
   wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх
   wwcConfigConnectionFail: '{0} руу холбогдож чадсангүй.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB өгөгдлийн сангийн нэрийг
@@ -399,8 +392,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Өөрчлөлт MongoDB Порт
   wwcConfigInvalidFatalAsyncTimeout: Буруу аминд async хугацаа тогтоосон. 10 секунд
     хүртэл анхдагчууд...
-  libreHttp500: Таны сонгосон оролт, гаралтын хэлний хос дэмжигдээгүй байна. Өөр хэлний
-    багцыг сонгоно уу!
   wwcConfigGUIDeepLTranslateButton: DeepL орчуулах түлхүүр
   wwcConfigConversationDeepLTranslateToggleSuccess: Амжилттай DeepL Translate түлхүүр.
     Өөрчлөлтийг хүчин төгөлдөр болгохын тулд Дуут хувилбар.
@@ -468,10 +459,6 @@ Messages:
   wwcrTransFail: WorldwideChat-ийг дахин ачаалсан боловч орчуулагчийг идэвхжүүлж чадаагүй.
   wwcdCacheCleared: Орчуулгын кэш цэвэрлэгдсэн.
   wwcdInvalidCmd: Хүчингүй аргументууд!
-  systranHttpUnknown: 'Үл мэдэгдэх http алдаа: {0}'
-  systranHttp400: Systran руу илгээсэн муу параметрүүд. Муу хэлний хос байж болох
-    уу?
-  systranHttp500: Systran төгсгөлийн цэгээс ({0}) дотоод серверийн алдаа.
   wwcInvalidStorageSession: Таны config дээр {0} идэвхжсэн боловч холболт байгуулагдаагүй
     байна. Үүнийг засахын тулд дахин ачаалж үзээрэй, гэхдээ өмнө нь {0} -аас амжилттай
     холболтын мессеж авсан бол хөгжүүлэгчтэй холбоо барина уу.
@@ -730,9 +717,6 @@ Messages:
     нь...
   wwcAiSupportedLangsBad: Муу AI дэмжигдсэн хэл илэрсэн. Бидний анхдагч тохиргоог
     ашиглан...
-  chatGPTUnknown: 'Үл мэдэгдэх http алдаа: {0}'
-  chatGPT500: ChatGPT руу муу хүсэлт илгээсэн. Хэрэв энэ нь үргэлжилбэл хөгжүүлэгчтэй
-    холбоо барина уу!
   wwcConfigGUIAISettings: AI тохиргоо
   wwcConfigGUIChatGPTButton: ЧатГПТ
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API түлхүүр амжилттай тохируулагдсан.
@@ -765,4 +749,15 @@ Messages:
   wwcConfigGUIAIChangeLangs: Дэмжигдсэн AI хэлийг өөрчлөх
   wwcConfigConversationAILangAddSuccess: АИ-ийн дэмжлэгтэй хэлүүдэд шинэ хэлийг амжилттай
     нэмсэн.
+  translatorBadAPIKey: Муу API түлхүүр! Үүнийг зөв бичсэн эсэхийг шалгана уу.
+  translatorLimitExceeded: Та орчуулгын үйлчилгээнийхээ квотыг хэтрүүлсэн эсвэл хувь
+    хэмжээ хязгаарлагджээ. Дэлгэрэнгүй мэдээллийг үйлчилгээ үзүүлэгчээсээ шалгана
+    уу.
+  translatorServerError: Дотоод серверийн алдаа. Дараа нь дахин оролдоно уу.
+  translatorForbidden: Хандалтыг хориглоно! Зөвшөөрөлөө шалгана уу.
+  translatorBadRequest: Муу хүсэлт. Оролтоо шалгаад дахин оролдоно уу.
+  translatorUnknownError: 'Статусын кодтой үл мэдэгдэх алдаа гарлаа: {0}.'
+  translatorURLNotFound: Таны орчуулагч үйлчилгээний URL хүчин төгөлдөр бус байна.
+  translatorMethodNotAllowed: Орчуулгын үйлчилгээ нь энэ хүсэлтийн аргыг дэмждэггүй.
+  translatorNotFound: Хүсэлт гаргасан орчуулгын эх үүсвэр олдсонгүй.
 

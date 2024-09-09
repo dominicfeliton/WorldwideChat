@@ -339,22 +339,17 @@ Messages:
     или нещо под него, за да се върнете.
   wwcConfigConversationFatalAsyncSuccess: Async задача изчакване настроен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промяна на изчакване на задачи за асинхрон
-  libreHttp400: Лошо искане изпратено до Libre Translate! Освен ако не правите нещо,
-    което не трябва, не трябва да получавате това. Моля, свържете се с разработчика!
   wwcConfigGUILibreTranslateApiKeyButton: Промяна на свободен превод на API ключ
-  libreHttp403: Липсва Libre Translate API ключ, или сте забранени от сървъра!
   wwcConfigConversationLibreURLSuccess: Безплатен URL зададен успешно.
   wwcConfigConversationLibreTranslateApiKeyInput: Настоящият API ключ е {0}. Моля,
     въведете API ключ за Libre или въведете 0, за да се върнете.
   wwcConfigGUILibreTranslateButton: Свободен превод
-  libreHttp429: Няма доверие поради ограничение на тарифа от сървъра.
   wwcConfigGUIToggleLibreTranslateButton: Превключване на безплатен превод
   wwcConfigConversationLibreTranslateToggleSuccess: Успешно прекъсна Libre Translate.
     Презареждане, за да влязат в сила промените.
   wwcConfigConversationLibreTranslateApiKeySuccess: Безплатно API ключ набор успешно.
   wwcConfigConversationLibreURLInput: Текущият URL адрес е {0}. Моля, въведете URL
     адрес за Libre или въведете 0, за да се върнете.
-  libreHttpUnknown: 'Неизвестна http грешка: {0}'
   wwcConfigGUILibreTranslateURLButton: Промяна на безплатен превод URL
   wwcConfigConnectionFail: Неуспешно свързване към {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Успешно промени името на базата данни
@@ -396,8 +391,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Промяна на пристанището MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Невалиден фатален асинхронен комплект за изчакване.
     Неизпълнение до 10 секунди...
-  libreHttp500: Избраната от Вас двойка език за въвеждане и изход не се поддържа.
-    Моля, изберете различен набор от езици!
   wwcConfigGUIDeepLTranslateButton: Превключване на DeepL Превод
   wwcConfigConversationDeepLTranslateToggleSuccess: Успешно прекъсна DeepL Превод.
     Презареждане, за да влязат в сила промените.
@@ -467,9 +460,6 @@ Messages:
   wwcrTransFail: Презареден WorldwideChat, но не успя да активира преводач.
   wwcdCacheCleared: Кешът за превод беше изчистен.
   wwcdInvalidCmd: Невалидни аргументи!
-  systranHttpUnknown: 'Неизвестна http грешка: {0}'
-  systranHttp400: Лоши параметри, изпратени до Systran. Може да е лоша езикова двойка?
-  systranHttp500: Вътрешна грешка на сървъра от крайната точка на Systran ({0}).
   wwcInvalidStorageSession: '{0} е активиран във вашата конфигурация, но не е установена
     връзка. Моля, опитайте да презаредите, за да поправите това, но моля, свържете
     се с разработчика, ако преди това сте получили съобщение за успешно свързване
@@ -719,9 +709,6 @@ Messages:
   wwcAiSystemPromptBad: Открит е лош AI системен подказ. Използвайки нашия подразбиране...
   wwcAiSupportedLangsBad: Открити са лоши езици, поддържани от AI. Използвайки нашите
     настройки по подразбиране...
-  chatGPTUnknown: 'Неизвестна http грешка: {0}'
-  chatGPT500: Лоша заявка, изпратена до ChatGPT. Ако това продължава, моля, свържете
-    се с разработчика!
   wwcConfigGUIAISettings: AI конфигурация
   wwcConfigGUIChatGPTButton: ЧатGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API ключове са зададени успешно.
@@ -754,4 +741,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Промяна на поддържани AI езици
   wwcConfigConversationAILangAddSuccess: Успешно добави нов език към поддържаните
     от AI езици.
+  translatorBadAPIKey: Лош API ключ! Моля, уверете се, че сте го написали правилно.
+  translatorLimitExceeded: Или сте надвишили квотата за вашата преводаческа услуга,
+    или сте били ограничени. Моля, проверете вашия доставчик за повече подробности.
+  translatorServerError: Вътрешна грешка в сървъра. Моля, опитайте отново по-късно.
+  translatorForbidden: Достъпът е забранен! Моля, проверете разрешенията си.
+  translatorBadRequest: Лоша молба. Моля, проверете данните си и опитайте отново.
+  translatorUnknownError: 'Възникна неизвестна грешка с код на състоянието: {0}.'
+  translatorURLNotFound: URL адресът на услугата за преводачи е невалиден.
+  translatorMethodNotAllowed: Услугата за превод не поддържа този метод на заявка.
+  translatorNotFound: Исканият ресурс за превод не е намерен.
 

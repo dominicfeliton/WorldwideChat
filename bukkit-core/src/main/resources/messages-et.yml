@@ -319,22 +319,17 @@ Messages:
     või midagi selle alla minna tagasi.
   wwcConfigConversationFatalAsyncSuccess: Async ülesande ajalõpu seatud edukalt.
   wwcConfigGUIFatalAsyncAbortButton: Asynci ülesande ajalõpu muutmine
-  libreHttp400: Bad taotluse saadetakse Libre Tõlgi! Kui te teete midagi, mida sa
-    ei peaks, sa ei tohiks seda saada. Palun võtke ühendust arendajaga!
   wwcConfigGUILibreTranslateApiKeyButton: Muuda tasuta tõlkida API võti
-  libreHttp403: Kadunud Libre Tõlgi API Key, või teil on keelatud server!
   wwcConfigConversationLibreURLSuccess: Libre URL seatud edukalt.
   wwcConfigConversationLibreTranslateApiKeyInput: Praegune API võti on {0}. Sisestage
     Libre jaoks API võti või tüüp 0, et minna tagasi.
   wwcConfigGUILibreTranslateButton: Libre Tõlkimine
-  libreHttp429: Serveri määrapiirangu tõttu pole usaldust.
   wwcConfigGUIToggleLibreTranslateButton: Lülita Libre Tõlgi
   wwcConfigConversationLibreTranslateToggleSuccess: Edukalt lülitatud Libre Tõlgi.
     Muudatuste jõustumiseks laadige uuesti.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API võti seatud edukalt.
   wwcConfigConversationLibreURLInput: Praegune URL on {0}. Sisestage Libre URL või
     tippige 0, et minna tagasi.
-  libreHttpUnknown: 'Tundmatu http viga: {0}'
   wwcConfigGUILibreTranslateURLButton: Muuda Libre Tõlgi URL
   wwcConfigConnectionFail: Ühenduse loomine {0} nurjus.
   wwcConfigConversationMongoDatabaseNameSuccess: Edukalt muutnud MongoDB andmebaasi
@@ -372,8 +367,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Muuda MongoDB porti
   wwcConfigInvalidFatalAsyncTimeout: Kehtetu surmaga lõppenud asünc ajalõpu komplekt.
     Defaulting kuni 10 sekundit...
-  libreHttp500: Valitud sisend- ja väljundkeele paari ei toetata. Palun vali teine
-    keelekomplekt!
   wwcConfigGUIDeepLTranslateButton: Lülita DeepL tõlkimine
   wwcConfigConversationDeepLTranslateToggleSuccess: Edukalt lülitatud DeepL Tõlgi.
     Muudatuste jõustumiseks laadige uuesti.
@@ -440,9 +433,6 @@ Messages:
   wwcrTransFail: Laadisid WorldwideChati uuesti, kuid tõlkijat ei õnnestunud lubada.
   wwcdCacheCleared: Tõlke vahemälu tühjendati.
   wwcdInvalidCmd: Kehtetu argumendid!
-  systranHttpUnknown: 'Tundmatu http viga: {0}'
-  systranHttp400: Halvad parameetrid saadeti Systranile. Võib olla halb keelepaar?
-  systranHttp500: Sisemine serveri viga Systrani lõpppunktist ({0}).
   wwcInvalidStorageSession: '{0} on teie konfiguratsioonis lubatud, kuid ühendust
     pole loodud. Proovige selle parandamiseks uuesti laadida, kuid võtke ühendust
     arendajaga, kui olete varem saanud eduka ühenduse teate saidilt {0}.'
@@ -675,8 +665,6 @@ Messages:
   wwcAiSystemPromptBad: Tuvastati halb tehisintellekti süsteemi viip. Kasutades meie
     vaikimisi...
   wwcAiSupportedLangsBad: Tuvastati halvad AI toetatud keeled. Kasutades meie vaikeseadeid...
-  chatGPTUnknown: 'Tundmatu http viga: {0}'
-  chatGPT500: ChatGPT-le saadetud halb taotlus. Kui see püsib, võtke ühendust arendajaga!
   wwcConfigGUIAISettings: AI konfiguratsioon
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API võti seadistatud edukalt.
@@ -709,4 +697,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Toetatud AI keeli muutmine
   wwcConfigConversationAILangAddSuccess: Lisati edukalt tehisintellekti toetatud keeltesse
     uue keele.
+  translatorBadAPIKey: Halb API võti! Veenduge, et olete selle õigesti sisestanud.
+  translatorLimitExceeded: Olete kas ületanud oma tõlketeenuse kvoodi või on teie
+    määr piiratud. Lisateabe saamiseks küsige oma teenusepakkujat.
+  translatorServerError: Sisemine serveri viga. Palun proovige hiljem uuesti.
+  translatorForbidden: Juurdepääs on keelatud! Palun kontrollige oma õigusi.
+  translatorBadRequest: Halb taotlus. Kontrollige oma sisendit ja proovige uuesti.
+  translatorUnknownError: 'Olekukoodiga ilmnes tundmatu viga: {0}.'
+  translatorURLNotFound: Teie tõlketeenuse URL on vale.
+  translatorMethodNotAllowed: Tõlketeenus ei toeta seda taotlusmeetodit.
+  translatorNotFound: Taotletud tõlkeressurssi ei leitud.
 

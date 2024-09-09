@@ -4,7 +4,6 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -15,46 +14,46 @@ public class LibreSettingsConvos {
 
     private static WorldwideChat main = WorldwideChat.instance;
 
-	private static WWCInventoryManager invMan = main.getInventoryManager();
-	
-	public static class ApiKey extends StringPrompt {
-		@Override
-		public @NotNull String getPromptText(ConversationContext context) {
-			/* Close any open inventories */
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			Player currPlayer = ((Player) context.getForWhom());
-			currPlayer.closeInventory();
-			return refs.getPlainMsg("wwcConfigConversationLibreTranslateApiKeyInput",
-					"&cREDACTED",
-					"&b",
-					currPlayer);
-		}
+    private static WWCInventoryManager invMan = main.getInventoryManager();
 
-		@Override
-		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
-			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreTranslateApiKeySuccess",
-					new String[] {"Translator.libreAPIKey", "Translator.useLibreTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
-		}
-	}
-	
-	public static class Url extends StringPrompt {
-		@Override
-		public @NotNull String getPromptText(ConversationContext context) {
-			/* Close any open inventories */
-			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			Player currPlayer = ((Player) context.getForWhom());
-			currPlayer.closeInventory();
-			return refs.getPlainMsg("wwcConfigConversationLibreURLInput",
-					"&6"+main.getConfigManager().getMainConfig().getString("Translator.libreURL"),
-					"&b",
-					currPlayer);
-		}
+    public static class ApiKey extends StringPrompt {
+        @Override
+        public @NotNull String getPromptText(ConversationContext context) {
+            /* Close any open inventories */
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return refs.getPlainMsg("wwcConfigConversationLibreTranslateApiKeyInput",
+                    "&cREDACTED",
+                    "&b",
+                    currPlayer);
+        }
 
-		@Override
-		public Prompt acceptInput(@NotNull ConversationContext context, String input) {
-			return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreURLSuccess",
-					new String[] {"Translator.libreURL", "Translator.useLibreTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
-		}
-	}
-	
+        @Override
+        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreTranslateApiKeySuccess",
+                    new String[]{"Translator.libreAPIKey", "Translator.useLibreTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
+        }
+    }
+
+    public static class Url extends StringPrompt {
+        @Override
+        public @NotNull String getPromptText(ConversationContext context) {
+            /* Close any open inventories */
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return refs.getPlainMsg("wwcConfigConversationLibreURLInput",
+                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.libreURL"),
+                    "&b",
+                    currPlayer);
+        }
+
+        @Override
+        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreURLSuccess",
+                    new String[]{"Translator.libreURL", "Translator.useLibreTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
+        }
+    }
+
 }

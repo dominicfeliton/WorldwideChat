@@ -324,22 +324,17 @@ Messages:
     det for å gå tilbake.
   wwcConfigConversationFatalAsyncSuccess: Tidsavbrudd for async oppgave satt vellykket.
   wwcConfigGUIFatalAsyncAbortButton: Endre tidsavbrudd for async oppgave
-  libreHttp400: Dårlig forespørsel sendt til Libre Translate! Med mindre du gjør noe
-    du ikke burde, bør du ikke få dette. Ta kontakt med utvikleren!
   wwcConfigGUILibreTranslateApiKeyButton: Endre Gratis Oversett API-nøkkel
-  libreHttp403: Mangler Libre Translate API-nøkkel, eller du er utestengt fra serveren!
   wwcConfigConversationLibreURLSuccess: Libre URL satt vellykket.
   wwcConfigConversationLibreTranslateApiKeyInput: Gjeldende API-nøkkel er {0}. Skriv
     inn en API-nøkkel for Libre, eller skriv 0 for å gå tilbake.
   wwcConfigGUILibreTranslateButton: Libre Oversett
-  libreHttp429: Ingen tillit på grunn av hastighetsgrense fra serveren.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Oversett
   wwcConfigConversationLibreTranslateToggleSuccess: Vellykket vekslet Libre Translate.
     Last på nytt for at endringene skal tre i kraft.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-nøkkel sett vellykket.
   wwcConfigConversationLibreURLInput: Gjeldende URL er {0}. Skriv inn en URL for Libre,
     eller skriv inn 0 for å gå tilbake.
-  libreHttpUnknown: 'Ukjent http-feil: {0}'
   wwcConfigGUILibreTranslateURLButton: Endre Libre Oversett URL
   wwcConfigConnectionFail: Kan ikke koble til {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Vellykket endret MongoDB-databasenavnet.
@@ -374,8 +369,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Endre MongoDB-port
   wwcConfigInvalidFatalAsyncTimeout: Ugyldig dødelig tidsavbrudd for asynkronisering.
     Standarden til 10 sekunder...
-  libreHttp500: Ditt valgte inngangs- og utgangsspråkpar støttes ikke. Velg et annet
-    språksett!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Oversett
   wwcConfigConversationDeepLTranslateToggleSuccess: Vellykket vekslet DeepL Translate.
     Last på nytt for at endringene skal tre i kraft.
@@ -443,9 +436,6 @@ Messages:
   wwcrTransFail: Lastet WorldwideChat på nytt, men klarte ikke å aktivere en oversetter.
   wwcdCacheCleared: Oversettelsesbufferen ble tømt.
   wwcdInvalidCmd: Ugyldige argumenter!
-  systranHttpUnknown: 'Ukjent http-feil: {0}'
-  systranHttp400: Dårlige parametere sendt til Systran. Kan være et dårlig språkpar?
-  systranHttp500: Intern serverfeil fra Systran-endepunktet ({0}).
   wwcInvalidStorageSession: '{0} er aktivert i konfigurasjonen din, men en forbindelse
     er ikke etablert. Prøv å laste inn på nytt for å fikse dette, men kontakt utvikleren
     hvis du tidligere har mottatt en vellykket tilkoblingsmelding fra {0}.'
@@ -679,9 +669,6 @@ Messages:
   wwcAiSystemPromptBad: Dårlig AI-systemprompt oppdaget. Bruker vår standard...
   wwcAiSupportedLangsBad: Dårlige AI-støttede språk oppdaget. Bruker standardinnstillingene
     våre...
-  chatGPTUnknown: 'Ukjent http feil: {0}'
-  chatGPT500: Dårlig forespørsel sendt til ChatGPT. Hvis dette vedvarer, vennligst
-    kontakt utvikleren!
   wwcConfigGUIAISettings: AI-konfigurasjon
   wwcConfigGUIChatGPTButton: Chat GPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API-nøkkel satt vellykket.
@@ -714,4 +701,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: Endre støttede AI-språk
   wwcConfigConversationAILangAddSuccess: Vellykket lagt til et nytt språk til de AI-støttede
     språkene.
+  translatorBadAPIKey: Dårlig API-nøkkel! Forsikre deg om at du har skrevet den riktig.
+  translatorLimitExceeded: Du har enten overskredet kvoten for oversettelsestjenesten
+    din, eller du har blitt prisbegrenset. Vennligst sjekk leverandøren din for mer
+    informasjon.
+  translatorServerError: Intern serverfeil. Vennligst prøv igjen senere.
+  translatorForbidden: Tilgang er forbudt! Vennligst sjekk tillatelsene dine.
+  translatorBadRequest: Dårlig forespørsel. Vennligst sjekk inndataene dine og prøv
+    igjen.
+  translatorUnknownError: 'Det oppstod en ukjent feil med statuskode: {0}.'
+  translatorURLNotFound: URL-adressen til oversettertjenesten din er ugyldig.
+  translatorMethodNotAllowed: Oversettelsestjenesten støtter ikke denne forespørselsmetoden.
+  translatorNotFound: Den forespurte oversettelsesressursen ble ikke funnet.
 

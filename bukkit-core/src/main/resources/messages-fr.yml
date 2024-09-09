@@ -40,7 +40,6 @@ Messages:
     été modifié avec succès.
   wwcConfigConversationSQLOptionalArgsSuccess: Les arguments SQL facultatifs ont été
     modifiés avec succès.
-  libreHttpUnknown: 'Erreur HTTP inconnue: {0}'
   wwcUpdaterParserFailed: Impossible d'analyser les données de mise à jour depuis
     Github.
   wwctTranslationStoppedOtherPlayer: La session de traduction de {0} a été arrêtée.
@@ -89,8 +88,6 @@ Messages:
   wwctGUITranslationButton: Commencez à traduire
   wwcConfigConversationAmazonTranslateRegionInput: La région actuelle est {0}. Entrez
     une région pour Amazon ou saisissez 0 pour revenir en arrière.
-  libreHttp500: La paire de langues d'entrée et de sortie que vous avez sélectionnée
-    n'est pas prise en charge. Veuillez choisir un autre ensemble de langues!
   wwcConfigErrorsToIgnoreSuccess: Erreurs de traduction à ignorer correctement enregistrées.
   wwcConfigConversationOverrideTextChange: Tapez un nouveau message pour cette modification,
     ou tapez 0 pour revenir en arrière. N'oubliez pas d'inclure toutes les variables
@@ -108,8 +105,6 @@ Messages:
   wwctbNoMoreOldBooks: La traduction des livres ne fonctionne pas sur la version de
     votre serveur. Si vous utilisez une version plus récente de Minecraft et que cette
     erreur s'affiche, contactez le développeur.
-  systranHttp400: Mauvais paramètres envoyés à Systran. Peut-être une mauvaise paire
-    de langues?
   wwcConfigGUIMongoHostnameButton: Modifier le nom d'hôte MongoDB
   wwcConfigConversationPrefixInput: Le préfixe actuel est {0}. Veuillez en saisir
     un nouveau ou tapez 0 pour revenir en arrière.
@@ -175,7 +170,6 @@ Messages:
   wwcConfigConversationPostgresHostnameInput: Le nom d'hôte actuel est {0}. Tapez
     autre chose que 0 pour définir un nouveau nom d'hôte, ou tapez 0 pour revenir
     en arrière.
-  libreHttp429: Aucune confiance en raison de la limite de débit du serveur.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Le chat mondial est en
     cours de traduction, mais vous avez une session de traduction active de {0} à
     {1}.
@@ -204,10 +198,6 @@ Messages:
     de la souris sur un objet dans votre main principale pour le traduire!
   wwcsActiveTransEntity: 'Entité de traduction: {0}'
   wwcConfigGUIMongoPortButton: Modifier le port de MongoDB
-  libreHttp400: Mauvaise demande envoyée à Libre Translate! À moins que vous ne fassiez
-    quelque chose que vous ne devriez pas faire, vous ne devriez pas l'obtenir. Merci
-    de contacter le développeur!
-  libreHttp403: La clé API Libre Translate est manquante, ou vous êtes banni du serveur!
   wwcConfigConversationLangInvalid: Code de langue non valide!
   wwcConfigGUIToggleMongoButton: Activer/désactiver MongoDB
   wwcConfigGUIPostgresPortButton: Modifier le port PostgreSQL
@@ -215,8 +205,6 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: Envoyer un rappel par chat pour les mises à
     jour des plugins
   wwcsActiveTransItem: 'Objet à traduire: {0}'
-  systranHttp500: Erreur interne du serveur provenant du point de terminaison Systran
-    ({0}).
   wwctAutoTranslateStartOtherPlayer: Démarrage d'une nouvelle session de traduction
     de {0} à {1}.
   wwcConfigGUISystranTranslateButton: Systran Translate
@@ -264,7 +252,6 @@ Messages:
   wwctrlRateLimitSetSender: Réglez votre limite de débit à {0} secondes.
   wwcRateLimit: Vos traductions sont soumises à des tarifs limités. Veuillez patienter
     encore {0} secondes.
-  systranHttpUnknown: 'Erreur HTTP inconnue: {0}'
   wwcConfigErrorLimitEnabled: Limite d'erreur du traducteur définie sur {0}.
   wwcsActiveTransUUID: 'UUID: {0}'
   wwcConfigGUISendTranslationChatButton: Envoyer un rappel de chat à Active Translator
@@ -770,8 +757,6 @@ Messages:
     notre configuration par défaut...
   wwcAiSupportedLangsBad: Langues prises en charge par l'IA incorrectes détectées.
     En utilisant nos valeurs par défaut...
-  chatGPTUnknown: 'Erreur HTTP inconnue: {0}'
-  chatGPT500: Mauvaise demande envoyée à ChatGPT. Si cela persiste, contactez le développeur!
   wwcConfigGUIAISettings: Configuration de l'IA
   wwcConfigGUIChatGPTButton: Chat GPT
   wwcConfigConversationChatGPTApiKeySuccess: La clé d'API ChatGPT a été définie avec
@@ -805,3 +790,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: Modifier les langues d'IA prises en charge
   wwcConfigConversationAILangAddSuccess: Une nouvelle langue a été ajoutée avec succès
     aux langues prises en charge par l'IA.
+  translatorBadAPIKey: Mauvaise clé d'API! Assurez-vous de l'avoir saisi correctement.
+  translatorLimitExceeded: Soit vous avez dépassé le quota de votre service de traduction,
+    soit votre tarif a été limité. Veuillez consulter votre fournisseur pour plus
+    de détails.
+  translatorServerError: Erreur interne au serveur. Veuillez réessayer ultérieurement.
+  translatorForbidden: L'accès est interdit! Vérifiez vos autorisations.
+  translatorBadRequest: Mauvaise demande. Vérifiez votre saisie et réessayez.
+  translatorUnknownError: 'Une erreur inconnue s''est produite avec le code d''état:
+    {0}.'
+  translatorURLNotFound: L'URL de votre service de traduction n'est pas valide.
+  translatorMethodNotAllowed: Le service de traduction ne prend pas en charge cette
+    méthode de demande.
+  translatorNotFound: La ressource de traduction demandée n'a pas été trouvée.

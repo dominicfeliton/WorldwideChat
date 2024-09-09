@@ -1,25 +1,25 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.SerializedName;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.*;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
 
 public class OpenAITranslation extends BasicTranslation {
 
     private final String apiKey;
     private final String serviceUrl;
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
     private YamlConfiguration conf = main.getConfigManager().getMainConfig();
     private YamlConfiguration aiConf = main.getConfigManager().getAIConfig();
 
@@ -99,7 +99,8 @@ public class OpenAITranslation extends BasicTranslation {
                     conf.getString("Translator.chatGPTModel"),
                     List.of(systemMsg, userMsg),
                     new TranslationChatCompletionRequest.ResponseFormat("json_schema", jsonSchema)
-            );;
+            );
+            ;
 
             // Send the request
             String jsonResponse = sendChatRequest(request, textToTranslate);
@@ -141,7 +142,7 @@ public class OpenAITranslation extends BasicTranslation {
                         response.append(inputLine);
                     }
 
-                    refs.debugMsg("OpenAI RESPONSE: "+ response.toString());
+                    refs.debugMsg("OpenAI RESPONSE: " + response.toString());
                     refs.debugMsg("Prooompt: " + main.getAISystemPrompt());
                     return response.toString();
                 }
@@ -162,19 +163,6 @@ public class OpenAITranslation extends BasicTranslation {
                 }
             }
             return "";
-        }
-
-        private void checkError(int in, String msg) throws Exception {
-            refs.debugMsg(msg);
-            switch (in) {
-                case 400:
-                case 403:
-                case 429:
-                case 500:
-                    throw new Exception(refs.getPlainMsg("chatGPT500"));
-                default:
-                    throw new Exception(refs.getPlainMsg("chatGPTUnknown", in + ""));
-            }
         }
     }
 

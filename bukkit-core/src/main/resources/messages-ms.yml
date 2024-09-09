@@ -332,23 +332,17 @@ Messages:
     baru, atau apa-apa di bawahnya untuk kembali.
   wwcConfigConversationFatalAsyncSuccess: Async tugas tamat masa ditetapkan berjaya.
   wwcConfigGUIFatalAsyncAbortButton: Tukar Async Task Timeout
-  libreHttp400: Permintaan buruk dihantar ke Percuma Terjemah! Kecuali anda melakukan
-    sesuatu yang anda tidak sepatutnya, anda tidak sepatutnya mendapatkannya. Sila
-    hubungi pemaju!
   wwcConfigGUILibreTranslateApiKeyButton: Tukar Percuma Terjemah API Key
-  libreHttp403: Hilang Percuma Terjemah API Key, atau anda diharamkan daripada pelayan!
   wwcConfigConversationLibreURLSuccess: URL Percuma berjaya ditetapkan.
   wwcConfigConversationLibreTranslateApiKeyInput: Kunci API semasa adalah {0}. Sila
     masukkan kunci API untuk Percuma, atau taip 0 untuk kembali.
   wwcConfigGUILibreTranslateButton: Libre Terjemah
-  libreHttp429: Tiada keyakinan kerana had kadar dari pelayan.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Terjemah
   wwcConfigConversationLibreTranslateToggleSuccess: Berjaya ditogol Percuma Terjemah.
     Muat semula untuk perubahan berkuatkuasa.
   wwcConfigConversationLibreTranslateApiKeySuccess: Kunci API Percuma berjaya ditetapkan.
   wwcConfigConversationLibreURLInput: URL semasa adalah {0}. Sila masukkan URL untuk
     Percuma, atau taip 0 untuk kembali.
-  libreHttpUnknown: 'Ralat http tidak diketahui: {0}'
   wwcConfigGUILibreTranslateURLButton: Tukar Percuma Terjemah URL
   wwcConfigConnectionFail: Gagal menyambung ke {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Berjaya menukar nama pangkalan data
@@ -387,8 +381,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Tukar MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Set tamat tempoh async maut tidak sah. Mungkir
     ke 10 saat...
-  libreHttp500: Pasangan bahasa input dan output pilihan anda tidak disokong. Sila
-    pilih satu set bahasa yang berbeza!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Terjemah
   wwcConfigConversationDeepLTranslateToggleSuccess: Berjaya bertukar-tukar DeepL Translate.
     Muat semula untuk perubahan berkuatkuasa.
@@ -456,10 +448,6 @@ Messages:
   wwcrTransFail: Memuat semula WorldwideChat tetapi gagal mendayakan penterjemah.
   wwcdCacheCleared: Cache terjemahan telah dibersihkan.
   wwcdInvalidCmd: Hujah tidak sah!
-  systranHttpUnknown: 'Ralat http tidak diketahui: {0}'
-  systranHttp400: Parameter buruk dihantar ke Systran. Mungkin pasangan bahasa yang
-    buruk?
-  systranHttp500: Ralat pelayan dalaman dari titik akhir Systran ({0}).
   wwcInvalidStorageSession: '{0} diaktifkan dalam konfigurasi anda, tetapi sambungan
     tidak ditubuhkan. Sila cuba muat semula untuk memperbaikinya, tetapi sila hubungi
     pemaju jika anda sebelum ini menerima mesej sambungan yang berjaya dari {0}.'
@@ -696,9 +684,6 @@ Messages:
   wwcAiSystemPromptBad: Prompt Sistem AI yang buruk dikesan. Menggunakan lalai kami...
   wwcAiSupportedLangsBad: Bahasa yang Disokong AI yang buruk dikesan. Menggunakan
     default kami...
-  chatGPTUnknown: 'Ralat http tidak diketahui: {0}'
-  chatGPT500: Permintaan buruk dihantar ke ChatGPT. Jika ini berterusan, sila hubungi
-    pemaju!
   wwcConfigGUIAISettings: Konfigurasi AI
   wwcConfigGUIChatGPTButton: chatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Kekunci API ChatGPT berjaya ditetapkan.
@@ -731,4 +716,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: Ubah suai Bahasa AI yang Disokong
   wwcConfigConversationAILangAddSuccess: Berjaya menambah bahasa baru ke bahasa yang
     disokong AI.
+  translatorBadAPIKey: Kunci API yang buruk! Sila pastikan anda telah menaipkannya
+    dengan betul.
+  translatorLimitExceeded: Anda sama ada telah melebihi kuota untuk perkhidmatan terjemahan
+    anda atau anda telah dihadkan kadar. Sila semak pembekal anda untuk maklumat lanjut.
+  translatorServerError: Ralat pelayan dalaman. Sila cuba lagi nanti.
+  translatorForbidden: Akses dilarang! Sila semak kebenaran anda.
+  translatorBadRequest: Permintaan buruk. Sila semak input anda dan cuba lagi.
+  translatorUnknownError: 'Ralat yang tidak diketahui berlaku dengan kod status: {0}.'
+  translatorURLNotFound: URL perkhidmatan penterjemah anda tidak sah.
+  translatorMethodNotAllowed: Perkhidmatan terjemahan tidak menyokong kaedah permintaan
+    ini.
+  translatorNotFound: Sumber terjemahan yang diminta tidak dijumpai.
 

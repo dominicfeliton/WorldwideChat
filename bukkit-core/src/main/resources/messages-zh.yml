@@ -260,19 +260,15 @@ Messages:
   wwcConfigConversationFatalAsyncAbort: 当前中止所有异步任务的超时时间为 {0} 秒。键入大于7的任何内容以设置新的超时，或键入低于此值的任何内容以返回。
   wwcConfigConversationFatalAsyncSuccess: 异步任务超时设置成功。
   wwcConfigGUIFatalAsyncAbortButton: 更改异步任务超时
-  libreHttp400: 向 Libre Translate 发送了错误请求除非你正在做一些你不应该做的事情，否则你不应该得到这个。请联系开发者！
   wwcConfigGUILibreTranslateApiKeyButton: 更改 Libre 翻译 API 密钥
-  libreHttp403: 缺少 Libre 翻译 API 密钥，或者你被禁止进入服务器！
   wwcConfigConversationLibreURLSuccess: 已成功设置 Libre 网址。
   wwcConfigConversationLibreTranslateApiKeyInput: 当前的 API 密钥是 {0}。请输入 Libre 的 API
     密钥，或者键入 0 返回。
   wwcConfigGUILibreTranslateButton: Libre 翻译
-  libreHttp429: 由于服务器的速率限制，没有信心。
   wwcConfigGUIToggleLibreTranslateButton: 切换 Libre 翻译
   wwcConfigConversationLibreTranslateToggleSuccess: 成功切换 Libre 翻译。重新加载以使更改生效。
   wwcConfigConversationLibreTranslateApiKeySuccess: 已成功设置免费 API 密钥。
   wwcConfigConversationLibreURLInput: 当前的 URL 是 {0}。请输入 Libre 的 URL，或者键入 0 返回。
-  libreHttpUnknown: '未知的 http 错误: {0}'
   wwcConfigGUILibreTranslateURLButton: 更改 Libre 翻译网址
   wwcConfigConnectionFail: 连接到 {0} 失败。
   wwcConfigConversationMongoDatabaseNameSuccess: 成功更改了 MongoDB 数据库名称。
@@ -300,7 +296,6 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: 可选参数已成功清除。
   wwcConfigGUIMongoPortButton: 更改 MongoDB 端口
   wwcConfigInvalidFatalAsyncTimeout: 设置的致命异步超时无效。默认为 10 秒...
-  libreHttp500: 不支持您选择的输入和输出语言对。请选择其他语言集！
   wwcConfigGUIDeepLTranslateButton: 切换 DeepL 翻译
   wwcConfigConversationDeepLTranslateToggleSuccess: 成功切换了 DeepL 翻译。重新加载以使更改生效。
   wwcConfigGUIDeepLTranslateApiKeyButton: 更改 DeepL 翻译 API 密钥
@@ -357,9 +352,6 @@ Messages:
   wwcrTransFail: 已重新加载全球聊天，但未能启用翻译器。
   wwcdCacheCleared: 翻译缓存已清除。
   wwcdInvalidCmd: 参数无效！
-  systranHttpUnknown: 未知的 http 错误：{0}
-  systranHttp400: 向 Systran 发送的参数不正确。可能是一对不好的语言对吗？
-  systranHttp500: 来自 Systran 端点 ({0}) 的内部服务器错误。
   wwcInvalidStorageSession: '{0} 已在您的配置中启用，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 {0} 的成功连接消息，请联系开发者。'
   wwcConfigConversationPostgresDatabaseNameSuccess: 成功更改了 PostgreSQL 数据库名称。
   wwcConfigConversationPostgresOptionalArgsCleared: 已成功清除可选参数。
@@ -522,8 +514,6 @@ Messages:
   wwcAiSystemPromptLoaded: AI 系统提示符已加载。
   wwcAiSystemPromptBad: 检测到错误的 AI 系统提示符。使用我们的默认...
   wwcAiSupportedLangsBad: 检测到错误的 AI 支持的语言。使用我们的默认值...
-  chatGPTUnknown: 未知的 http 错误：{0}
-  chatGPT500: 向 ChatGPT 发送的请求不正确。如果这种情况仍然存在，请联系开发者！
   wwcConfigGUIAISettings: AI 配置
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API 密钥设置成功。
@@ -551,4 +541,13 @@ Messages:
   wwcConfigGUIAILangNewButton: 添加新语言
   wwcConfigGUIAIChangeLangs: 修改支持的 AI 语言
   wwcConfigConversationAILangAddSuccess: 成功向 AI 支持的语言添加了一种新语言。
+  translatorBadAPIKey: API 密钥错误！请确保您输入的内容正确。
+  translatorLimitExceeded: 您要么已超过翻译服务的配额，要么受到费率限制。请向您的提供商查询更多详情。
+  translatorServerError: 内部服务器错误。请稍后再试。
+  translatorForbidden: 禁止访问！请检查您的权限。
+  translatorBadRequest: 请求不正确。请检查您的输入并重试。
+  translatorUnknownError: 状态码出现未知错误：{0}。
+  translatorURLNotFound: 您的翻译服务 URL 无效。
+  translatorMethodNotAllowed: 翻译服务不支持此请求方法。
+  translatorNotFound: 找不到请求的翻译资源。
 

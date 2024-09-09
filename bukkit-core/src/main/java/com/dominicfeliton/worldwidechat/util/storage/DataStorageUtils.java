@@ -340,7 +340,7 @@ public class DataStorageUtils {
 
 
                 /* Sync Cache data to corresponding table */
-                if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
+                if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
                     tableName = "persistentCache";
                     schema = CommonRefs.tableSchemas.get(tableName);
 
@@ -492,7 +492,7 @@ public class DataStorageUtils {
             }
 
             /* Write Cache to DB */
-            if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
+            if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
                 final List<WriteModel<Document>> cacheWrites = new ArrayList<>();
 
                 /* Add New Cache Terms */
@@ -582,7 +582,7 @@ public class DataStorageUtils {
                 }
             });
 
-            if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
+            if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
                 /* Sync cache to disk */
                 //main.getLogger().warning(refs.getMsg("wwcPersistentCacheLoad", null));
                 main.getCache().asMap().entrySet().forEach((eaCache) -> {

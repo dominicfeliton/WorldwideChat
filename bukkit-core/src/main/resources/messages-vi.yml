@@ -339,16 +339,11 @@ Messages:
     mới, hoặc bất cứ thứ gì bên dưới nó để quay trở lại.
   wwcConfigConversationFatalAsyncSuccess: Async task timeout thiết lập thành công.
   wwcConfigGUIFatalAsyncAbortButton: Thay đổi Async Task Timeout
-  libreHttp400: Yêu cầu xấu gửi đến Libre Dịch! Trừ khi bạn đang làm điều gì đó mà
-    bạn không nên, bạn không nên nhận được điều này. Vui lòng liên hệ với nhà phát
-    triển!
   wwcConfigGUILibreTranslateApiKeyButton: Thay đổi Libre Translate API Key
-  libreHttp403: Thiếu Libre Dịch API Key, hoặc bạn bị cấm từ máy chủ!
   wwcConfigConversationLibreURLSuccess: Tự do URL thiết lập thành công.
   wwcConfigConversationLibreTranslateApiKeyInput: Khóa API hiện tại là {0}. Vui lòng
     nhập một khóa API cho Libre, hoặc gõ 0 để quay lại.
   wwcConfigGUILibreTranslateButton: Libre Translate
-  libreHttp429: Không tự tin do giới hạn tốc độ từ máy chủ.
   wwcConfigGUIToggleLibreTranslateButton: Bật tắt Libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Bật thành công Libre Translate.
     Tải lại để các thay đổi có hiệu lực.
@@ -356,7 +351,6 @@ Messages:
     công.
   wwcConfigConversationLibreURLInput: URL hiện tại là {0}. Vui lòng nhập URL cho Libre,
     hoặc gõ 0 để quay lại.
-  libreHttpUnknown: 'Lỗi http không xác định: {0}'
   wwcConfigGUILibreTranslateURLButton: Thay đổi URL Dịch tự do
   wwcConfigConnectionFail: Không thể kết nối với {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Thay đổi thành công tên cơ sở dữ
@@ -394,8 +388,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Thay đổi cổng MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Không hợp lệ gây tử vong async thời gian chờ
     đặt. Mặc định đến 10 giây...
-  libreHttp500: Cặp ngôn ngữ nhập và đầu ra đã chọn của bạn không được hỗ trợ. Vui
-    lòng chọn một bộ ngôn ngữ khác!
   wwcConfigGUIDeepLTranslateButton: Bật tắt DeepL Translate
   wwcConfigConversationDeepLTranslateToggleSuccess: Đã bật thành công DeepL Translate.
     Tải lại để các thay đổi có hiệu lực.
@@ -465,9 +457,6 @@ Messages:
   wwcrTransFail: Tải lại WorldwideChat nhưng không bật trình dịch.
   wwcdCacheCleared: Bộ nhớ cache dịch đã được xóa.
   wwcdInvalidCmd: Đối số không hợp lệ!
-  systranHttpUnknown: 'Lỗi http không xác định: {0}'
-  systranHttp400: Thông số xấu được gửi đến Systran. Có thể là một cặp ngôn ngữ xấu?
-  systranHttp500: Lỗi máy chủ nội bộ từ điểm cuối Systran ({0}).
   wwcInvalidStorageSession: '{0} được kích hoạt trong cấu hình của bạn, nhưng kết
     nối không được thiết lập. Vui lòng thử tải lại để khắc phục vấn đề này, nhưng
     vui lòng liên hệ với nhà phát triển nếu trước đây bạn nhận được thông báo kết
@@ -716,9 +705,6 @@ Messages:
     chúng tôi...
   wwcAiSupportedLangsBad: Phát hiện Ngôn ngữ được hỗ trợ AI xấu. Sử dụng mặc định
     của chúng tôi...
-  chatGPTUnknown: 'Lỗi http không xác định: {0}'
-  chatGPT500: Yêu cầu xấu được gửi đến ChatGPT. Nếu điều này vẫn tiếp diễn, vui lòng
-    liên hệ với nhà phát triển!
   wwcConfigGUIAISettings: Cấu hình AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Khóa API ChatGPT được thiết lập thành
@@ -752,4 +738,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: Sửa đổi ngôn ngữ AI được hỗ trợ
   wwcConfigConversationAILangAddSuccess: Đã thêm thành công một ngôn ngữ mới vào các
     ngôn ngữ được hỗ trợ AI.
+  translatorBadAPIKey: Khóa API xấu! Hãy chắc chắn rằng bạn đã nhập chính xác.
+  translatorLimitExceeded: Bạn đã vượt quá hạn ngạch cho dịch vụ dịch thuật của mình
+    hoặc bạn đã bị giới hạn mức giá. Vui lòng kiểm tra nhà cung cấp của bạn để biết
+    thêm chi tiết.
+  translatorServerError: Lỗi máy chủ nội bộ. Vui lòng thử lại sau.
+  translatorForbidden: Truy cập bị cấm! Vui lòng kiểm tra quyền của bạn.
+  translatorBadRequest: Yêu cầu xấu. Vui lòng kiểm tra thông tin đầu vào của bạn và
+    thử lại.
+  translatorUnknownError: 'Đã xảy ra lỗi không xác định với mã trạng thái: {0}.'
+  translatorURLNotFound: URL dịch vụ dịch vụ của bạn không hợp lệ.
+  translatorMethodNotAllowed: Dịch vụ dịch thuật không hỗ trợ phương thức yêu cầu
+    này.
+  translatorNotFound: Không tìm thấy tài nguyên dịch thuật được yêu cầu.
 

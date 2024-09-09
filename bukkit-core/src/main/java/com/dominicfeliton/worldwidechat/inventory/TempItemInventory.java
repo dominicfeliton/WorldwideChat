@@ -7,47 +7,47 @@ import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class TempItemInventory implements InventoryProvider {
 
-	private ItemStack displayedItem;
-	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private ItemStack displayedItem;
+    private WorldwideChat main = WorldwideChat.instance;
+    private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	private Player inPlayer;
+    private Player inPlayer;
 
-	public TempItemInventory(ItemStack displayedItem, Player inPlayer) {
-		this.displayedItem = displayedItem;
-		this.inPlayer = inPlayer;
-	}
+    public TempItemInventory(ItemStack displayedItem, Player inPlayer) {
+        this.displayedItem = displayedItem;
+        this.inPlayer = inPlayer;
+    }
 
-	public SmartInventory getTempItemInventory() {
-		return SmartInventory.builder().id("tempItemMenu").provider(this).size(5, 9)
-				.manager(main.getInventoryManager()).title(refs.getPlainMsg("wwcGUITempItem",
-						"",
-						"&1",
-						inPlayer))
-				.build();
-	}
+    public SmartInventory getTempItemInventory() {
+        return SmartInventory.builder().id("tempItemMenu").provider(this).size(5, 9)
+                .manager(main.getInventoryManager()).title(refs.getPlainMsg("wwcGUITempItem",
+                        "",
+                        "&1",
+                        inPlayer))
+                .build();
+    }
 
-	@Override
-	public void init(Player player, InventoryContents contents) {
-		/* Set borders to green */
-		ItemStack customDefaultBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
-		ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
-		defaultBorderMeta.setDisplayName(" ");
-		customDefaultBorders.setItemMeta(defaultBorderMeta);
-		contents.fillBorders(ClickableItem.empty(customDefaultBorders));
+    @Override
+    public void init(Player player, InventoryContents contents) {
+        /* Set borders to green */
+        ItemStack customDefaultBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
+        ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
+        defaultBorderMeta.setDisplayName(" ");
+        customDefaultBorders.setItemMeta(defaultBorderMeta);
+        contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 
-		/* Display item in center */
-		contents.set(2, 4, ClickableItem.empty(displayedItem));
-	}
+        /* Display item in center */
+        contents.set(2, 4, ClickableItem.empty(displayedItem));
+    }
 
-	@Override
-	public void update(Player player, InventoryContents contents) {}
+    @Override
+    public void update(Player player, InventoryContents contents) {
+    }
 
 }

@@ -328,22 +328,17 @@ Messages:
     chochote chini yake ili kurudi nyuma.
   wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
   wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async
-  libreHttp400: Ombi mbaya alimtuma Libre Tafsiri! Isipokuwa unafanya kitu ambacho
-    haipaswi, unapaswa kupata hii. Tafadhali wasiliana developer!
   wwcConfigGUILibreTranslateApiKeyButton: Badilisha Libre Kutafsiri API muhimu
-  libreHttp403: Kukosa Libre Tafsiri API Key, au wewe ni marufuku kutoka server!
   wwcConfigConversationLibreURLSuccess: URL ya Libre imewekwa kwa mafanikio.
   wwcConfigConversationLibreTranslateApiKeyInput: Kitufe cha sasa cha API ni {0}.
     Tafadhali ingiza ufunguo wa API kwa Libre, au funga 0 ili urejee.
   wwcConfigGUILibreTranslateButton: Libre Tafsiri
-  libreHttp429: Hakuna kujiamini kutokana na kiwango cha kikomo kutoka server.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Kutafsiri
   wwcConfigConversationLibreTranslateToggleSuccess: Mafanikio toggled Libre Tafsiri.
     Reload kwa mabadiliko ya kuchukua athari.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API muhimu kuweka mafanikio.
   wwcConfigConversationLibreURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya
     Libre, au funga 0 ili urejee.
-  libreHttpUnknown: 'Hitilafu isiyojulikana ya http: {0}'
   wwcConfigGUILibreTranslateURLButton: Badilisha Libre Kutafsiri URL
   wwcConfigConnectionFail: Imeshindwa kuungana na {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Kubadilisha kwa ufanisi jina la database
@@ -382,8 +377,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Badilisha bandari ya MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Batili mbaya async umeisha kuweka. Kushuka kwa
     sekunde 10...
-  libreHttp500: Jozi yako ya pembejeo na lugha ya pato haijaungwa mkono. Tafadhali
-    chagua lugha tofauti!
   wwcConfigGUIDeepLTranslateButton: Badilisha DeepL Kutafsiri
   wwcConfigConversationDeepLTranslateToggleSuccess: Mafanikio toggled DeepL Tafsiri.
     Reload kwa mabadiliko ya kuchukua athari.
@@ -452,11 +445,6 @@ Messages:
   wwcrTransFail: Imepakia upya WorldwideChat lakini ilishindwa kuwezesha mtafsiri.
   wwcdCacheCleared: Cache ya tafsiri ilifutwa.
   wwcdInvalidCmd: Hoja zisizofaa!
-  systranHttpUnknown: 'Hitilafu isiyojulikana ya http: {0}'
-  systranHttp400: Vigezo vibaya vilivyotumwa kwa Systran. Inaweza kuwa jozi mbaya
-    ya lugha?
-  systranHttp500: Hitilafu ya seva ya ndani kutoka kwa ajili ya mwisho ya Systran
-    ({0}).
   wwcInvalidStorageSession: '{0} imewezeshwa katika usanidi wako, lakini uunganisho
     haujaanzishwa. Tafadhali jaribu kupakia tena ili kurekebisha hii, lakini tafadhali
     wasiliana na msanidi programu ikiwa hapo awali ulipokea ujumbe wa unganisho uliofanikiwa
@@ -708,9 +696,6 @@ Messages:
     yetu...
   wwcAiSupportedLangsBad: Lugha mbaya zinazoungwa mkono na AI zil Kutumia maagizo
     yetu...
-  chatGPTUnknown: 'Hitilafu isiyojulikana ya http: {0}'
-  chatGPT500: Ombi mbaya lililotumwa kwa ChatGPT. Ikiwa hii inaendelea, tafadhali
-    wasiliana na msanidi programu!
   wwcConfigGUIAISettings: Usanidi wa AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Kitufe cha API cha ChatGPT imewekwa kwa
@@ -744,4 +729,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Badilisha Lugha zinazoungwa m
   wwcConfigConversationAILangAddSuccess: Alifanikiwa kuongeza lugha mpya kwenye lugha
     zinazoungwa mkono na AI.
+  translatorBadAPIKey: Kitufe mbaya cha API! Tafadhali hakikisha umeiandika kwa usahihi.
+  translatorLimitExceeded: Umezidi kiwango cha huduma yako ya tafsiri au umekuwa na
+    kiwango kidogo. Tafadhali angalia mtoa huduma wako kwa maelezo zaidi.
+  translatorServerError: Hitilafu ya seva ya ndani. Tafadhali jaribu tena baadaye.
+  translatorForbidden: Ufikiaji ni marufuku! Tafadhali angalia ruhusa zako.
+  translatorBadRequest: Ombi mbaya. Tafadhali angalia pembejeo yako na jaribu tena.
+  translatorUnknownError: 'Hitilafu isiyojulikana lilitokea na nambari ya hali: {0}.'
+  translatorURLNotFound: URL yako ya huduma ya mtafsiri haina halali.
+  translatorMethodNotAllowed: Huduma ya tafsiri haiunga mkono njia hii ya ombi.
+  translatorNotFound: Rasilimali ya tafsiri iliyoombwa haikupatikana.
 

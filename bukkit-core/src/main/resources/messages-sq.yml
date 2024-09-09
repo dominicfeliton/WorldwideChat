@@ -349,22 +349,17 @@ Messages:
     të re, ose ndonjë gjë poshtë saj për t'u kthyer prapa.
   wwcConfigConversationFatalAsyncSuccess: Asinkron detyrë timeout vendosur me sukses.
   wwcConfigGUIFatalAsyncAbortButton: Ndrysho Async Task Timeout
-  libreHttp400: Kërkesa e keqe dërguar Libre Translate! Nëse ju jeni duke bërë diçka
-    që ju nuk duhet, ju nuk duhet të merrni këtë. Ju lutemi kontaktoni zhvilluesin!
   wwcConfigGUILibreTranslateApiKeyButton: Ndrysho Libre Translate API Key
-  libreHttp403: Mungon Libre Translate API Key, ose ju jeni të ndaluar nga serveri!
   wwcConfigConversationLibreURLSuccess: Libre URL vendosur me sukses.
   wwcConfigConversationLibreTranslateApiKeyInput: Kyçi aktual API është {0}. Ju lutemi
     futni një çelës API për Libre, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigGUILibreTranslateButton: Libre Translate
-  libreHttp429: Nuk ka besim për shkak të kufirit të normës nga serveri.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Me sukses toggled Libre Translate.
     Rifresko për ndryshimet që do të hyjnë në fuqi.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kyç vendosur me sukses.
   wwcConfigConversationLibreURLInput: URL-ja aktuale është {0}. Ju lutemi, futni një
     URL për Libre, ose shkruani 0 për t'u kthyer prapa.
-  libreHttpUnknown: 'Gabim i panjohur http: {0}'
   wwcConfigGUILibreTranslateURLButton: Ndrysho Libre Translate URL
   wwcConfigConnectionFail: Dështoi të lidhej me {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës
@@ -408,8 +403,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Ndrysho Portin MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Invalid fatale async timeout set. Parazgjedhja
     në 10 sekonda...
-  libreHttp500: Çifti juaj i zgjedhur i gjuhës së hyrjes dhe daljes nuk mbështetet.
-    Ju lutemi zgjidhni një grup tjetër gjuhësh!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Translate
   wwcConfigConversationDeepLTranslateToggleSuccess: Me sukses toggled DeepL Translate.
     Rifresko për ndryshimet që do të hyjnë në fuqi.
@@ -479,10 +472,6 @@ Messages:
   wwcrTransFail: Rilarkoi WorldwideChat por nuk arriti të mundësojë një përkthyes.
   wwcdCacheCleared: Faqja e përkthimit është pastruar.
   wwcdInvalidCmd: Argumente të pavlefshme!
-  systranHttpUnknown: 'Gabim http i panjohur: {0}'
-  systranHttp400: Parametrat e këqij dërguar në Systran. Mund të jetë një palë gjuhësore
-    e keqe?
-  systranHttp500: Gabim i brendshëm i serverit nga pika përfundimtare Systran ({0}).
   wwcInvalidStorageSession: '{0} është aktivizuar në konfigurimin tuaj, por një lidhje
     nuk është krijuar. Ju lutemi provoni të rimbushni për ta rregulluar këtë, por
     ju lutemi kontaktoni zhvilluesin nëse më parë keni marrë një mesazh të suksesshëm
@@ -737,9 +726,6 @@ Messages:
     tonë...
   wwcAiSupportedLangsBad: Zbuluan gjuhët e mbështetura nga AI e keqe. Duke përdorur
     parametrat tona të paracaktuara...
-  chatGPTUnknown: 'Gabim http i panjohur: {0}'
-  chatGPT500: Kërkesë e keqe e dërguar në ChatGPT. Nëse kjo vazhdon, ju lutemi kontaktoni
-    zhvilluesin!
   wwcConfigGUIAISettings: Konfigurimi i AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Çelësi API ChatGPT u vendos me sukses.
@@ -772,4 +758,18 @@ Messages:
   wwcConfigGUIAIChangeLangs: Modifikoni gjuhët e mbështetura të AI
   wwcConfigConversationAILangAddSuccess: Shtoi me sukses një gjuhë të re në gjuhët
     e mbështetura nga AI.
+  translatorBadAPIKey: Çelësi i keq API! Ju lutemi sigurohuni që e keni shkruar në
+    mënyrë korrekte.
+  translatorLimitExceeded: Ju ose keni tejkaluar kuotën për shërbimin tuaj të përkthimit
+    ose keni qenë i kufizuar me norma. Ju lutemi kontrolloni ofruesin tuaj për më
+    shumë detaje.
+  translatorServerError: Gabim i brendshëm i serverit. Ju lutemi provoni përsëri më
+    vonë.
+  translatorForbidden: Qasja është e ndaluar! Ju lutemi kontrolloni lejet tuaja.
+  translatorBadRequest: Kërkesë e keqe. Ju lutemi kontrolloni hyrjen tuaj dhe provoni
+    përsëri.
+  translatorUnknownError: 'Një gabim i panjohur ndodhi me kodin e statusit: {0}.'
+  translatorURLNotFound: URL shërbimi juaj i përkthyesve është i pavlefshëm.
+  translatorMethodNotAllowed: Shërbimi i përkthimit nuk e mbështet këtë metodë kërkese.
+  translatorNotFound: Burimi i kërkuar i përkthimit nuk u gjet.
 

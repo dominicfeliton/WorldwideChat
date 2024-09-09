@@ -344,22 +344,17 @@ Messages:
     или нешто под него за да се вратите назад.
   wwcConfigConversationFatalAsyncSuccess: Async задача тајмаут постави успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промена Async Задача тајмаут
-  libreHttp400: Лошо барање испратено до Либре Преведете! Освен ако не правите нешто
-    што не треба, не треба да го добиете ова. Ве молиме контактирајте го инвеститорот!
   wwcConfigGUILibreTranslateApiKeyButton: Промена Слободен Преведете API клуч
-  libreHttp403: Недостасува Libre Преведете API клуч, или сте забранети од серверот!
   wwcConfigConversationLibreURLSuccess: Слободен URL поставено успешно.
   wwcConfigConversationLibreTranslateApiKeyInput: Тековниот API клуч е {0} Ве молиме
     внесете API клуч за Libre, или напишете 0 за да се вратите назад.
   wwcConfigGUILibreTranslateButton: Слободен Преведи
-  libreHttp429: Нема доверба поради ограничување на стапката од серверот.
   wwcConfigGUIToggleLibreTranslateButton: Вклучи слободен Преведи
   wwcConfigConversationLibreTranslateToggleSuccess: Успешно префрли Слободен Преведи.
     Вчитај повторно за промените да стапат на сила.
   wwcConfigConversationLibreTranslateApiKeySuccess: Слободен API клуч сет успешно.
   wwcConfigConversationLibreURLInput: Тековната URL адреса е {0} Ве молиме внесете
     URL за Libre, или напишете 0 за да се вратите назад.
-  libreHttpUnknown: 'Непозната http грешка: {0}'
   wwcConfigGUILibreTranslateURLButton: Промена Слободен Преведете URL
   wwcConfigConnectionFail: Не успеав да се поврзам со {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Успешно го смени името на базата
@@ -400,8 +395,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Промена на пристаништето MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Неважечки фатални async тајмаут сет. Неисправување
     до 10 секунди...
-  libreHttp500: Вашиот избран влезен и излезен јазичен пар не е поддржан. Ве молиме
-    изберете друг јазик во собата!
   wwcConfigGUIDeepLTranslateButton: Префрли DeepL Преведи
   wwcConfigConversationDeepLTranslateToggleSuccess: Успешно префрли DeepL Преведи.
     Вчитај повторно за промените да стапат на сила.
@@ -470,9 +463,6 @@ Messages:
   wwcrTransFail: Повторно се вчита WorldwideChat, но не успеа да овозможи преведувач.
   wwcdCacheCleared: Кешот за превод беше исчистен.
   wwcdInvalidCmd: Невалидни аргументи!
-  systranHttpUnknown: 'Непозната грешка http: {0}'
-  systranHttp400: Лоши параметри испратени до Systran. Можеби е лош јазичен пар?
-  systranHttp500: Внатрешна грешка на серверот од крајната точка на Systran ({0}).
   wwcInvalidStorageSession: '{0} е овозможено во вашата конфигурација, но врска не
     е воспоставена. Ве молиме обидете се со повторно вчитување за да го поправите
     ова, но ве молиме контактирајте го развивачот ако претходно сте добиле порака
@@ -726,9 +716,6 @@ Messages:
     го нашиот стандарден...
   wwcAiSupportedLangsBad: Откриени лоши јазици поддржани од АИ. Користејќи ги нашите
     стандардни поставки...
-  chatGPTUnknown: 'Непозната http грешка: {0}'
-  chatGPT500: Лошо барање испратено до ChatGPT. Ако ова продолжи, ве молиме контактирајте
-    го инвеститорот!
   wwcConfigGUIAISettings: АИ конфигурација
   wwcConfigGUIChatGPTButton: ЧатГПТ
   wwcConfigConversationChatGPTApiKeySuccess: Успешно поставен клучот за API за ChatGPT.
@@ -761,4 +748,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: Измени поддржани јазици за вештачка интел
   wwcConfigConversationAILangAddSuccess: Успешно додаден нов јазик на јазиците поддржани
     од вештачка интелигенција.
+  translatorBadAPIKey: Лош API клуч! Ве молиме проверете дали сте го напишале правилно.
+  translatorLimitExceeded: Или сте ја надминале квотата за вашата услуга за преведување
+    или сте биле ограничени стапките. Ве молиме проверете го вашиот провајдер за повеќе
+    детали.
+  translatorServerError: Внатрешна грешка на серверот. Ве молиме обидете се повторно
+    подоцна.
+  translatorForbidden: Пристапот е забранет! Ве молиме проверете ги вашите дозволи.
+  translatorBadRequest: Лошо барање. Ве молиме проверете го вашиот влез и обидете
+    се повторно.
+  translatorUnknownError: 'Се појави непозната грешка со статусниот код: {0}.'
+  translatorURLNotFound: URL-то на вашата услуга за преведувач е неважечка.
+  translatorMethodNotAllowed: Услугата за превод не го поддржува овој метод на барање.
+  translatorNotFound: Бараниот ресурс за превод не беше пронајден.
 

@@ -334,22 +334,17 @@ Messages:
     onder dit om terug te gaan.
   wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
   wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out
-  libreHttp400: Slegte versoek gestuur na Libre Translate! Tensy jy iets doen wat
-    jy nie moet nie, jy moet dit nie kry nie. Kontak asseblief die ontwikkelaar!
   wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API Sleutel
-  libreHttp403: Ontbreek Libre Translate API Sleutel, of jy verban uit die bediener!
   wwcConfigConversationLibreURLSuccess: Gratis URL stel suksesvol.
   wwcConfigConversationLibreTranslateApiKeyInput: Die huidige API sleutel is {0}.
     Voer asseblief 'n API sleutel in vir Libre, of tik 0 om terug te gaan.
   wwcConfigGUILibreTranslateButton: Gratis Vertaal
-  libreHttp429: Geen vertroue as gevolg van koers limiet van bediener.
   wwcConfigGUIToggleLibreTranslateButton: Skakel Libre Vertaal
   wwcConfigConversationLibreTranslateToggleSuccess: Suksesvol geskakel Libre Translate.
     Herlaai vir die veranderinge om in werking te tree.
   wwcConfigConversationLibreTranslateApiKeySuccess: Gratis API sleutel stel suksesvol.
   wwcConfigConversationLibreURLInput: Die huidige URL is {0}. Voer asseblief 'n Url
     in vir Libre, of tik 0 om terug te gaan.
-  libreHttpUnknown: 'Onbekende http fout: {0}'
   wwcConfigGUILibreTranslateURLButton: Verander Libre Translate URL
   wwcConfigConnectionFail: Misluk om aan {0} te koppel nie.
   wwcConfigConversationMongoDatabaseNameSuccess: Die MongoDB databasis naam suksesvol
@@ -388,8 +383,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Verander MongoDB-poort
   wwcConfigInvalidFatalAsyncTimeout: Ongeldige noodlottige async tydverstreke stel.
     Verstek na 10 sekondes...
-  libreHttp500: Jou gekose invoer- en uitvoertaalpaar word nie ondersteun nie. Kies
-    asseblief 'n ander taal stel!
   wwcConfigGUIDeepLTranslateButton: Skakel DeepL Vertaal
   wwcConfigConversationDeepLTranslateToggleSuccess: Suksesvol geskakel DeepL Translate.
     Herlaai vir die veranderinge om in werking te tree.
@@ -456,10 +449,6 @@ Messages:
   wwcrTransFail: Herlaai WorldwideChat, maar kon nie 'n vertaler moontlik gemaak nie.
   wwcdCacheCleared: Die vertaalkas is skoongemaak.
   wwcdInvalidCmd: Ongeldige argumente!
-  systranHttpUnknown: 'Onbekende http fout: {0}'
-  systranHttp400: Slegte parameters gestuur aan Systran. Miskien 'n slegte taalpaar
-    wees?
-  systranHttp500: Interne bedienerfout vanaf Systran-eindpunt ({0}).
   wwcInvalidStorageSession: '{0} is geaktiveer in jou konfigurasie, maar ''n verbinding
     word nie gevestig nie. Probeer asseblief weer laai om dit reg te stel, maar kontak
     asseblief die ontwikkelaar as u voorheen ''n suksesvolle verbindingsboodskap van
@@ -702,9 +691,6 @@ Messages:
   wwcAiSystemPromptBad: Slegte AI-stelsel Prop opgespoor. Gebruik ons standaard...
   wwcAiSupportedLangsBad: Slegte AI-ondersteunde tale opgespoor. Met behulp van ons
     standaard...
-  chatGPTUnknown: 'Onbekende http fout: {0}'
-  chatGPT500: Slegte versoek gestuur aan ChatGPT. As dit voortduur, kontak asseblief
-    die ontwikkelaar!
   wwcConfigGUIAISettings: AI-opset
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API-sleutelstel suksesvol.
@@ -737,4 +723,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: Verander ondersteunde AI-tale
   wwcConfigConversationAILangAddSuccess: '''n nuwe taal suksesvol by die AI ondersteunde
     tale gevoeg.'
+  translatorBadAPIKey: Slegte API-sleutel! Maak asseblief seker dat u dit korrek ingetik
+    het.
+  translatorLimitExceeded: Jy het óf die kwota vir jou vertaaldiens oorskry óf jy
+    is tarief beperk. Raadpleeg asseblief u verskaffer vir meer besonderhede.
+  translatorServerError: Interne bedienerfout. Probeer asseblief later weer.
+  translatorForbidden: Toegang is verbode! Kontroleer asseblief u toestemmings.
+  translatorBadRequest: Slegte versoek. Kontroleer asseblief u insette en probeer
+    weer.
+  translatorUnknownError: '''N Onbekende fout het plaasgevind met statuskode: {0}.'
+  translatorURLNotFound: Jou vertalerdiens-URL is ongeldig.
+  translatorMethodNotAllowed: Die vertaaldiens ondersteun nie hierdie versoekmetode
+    nie.
+  translatorNotFound: Die aangevraagde vertaalbron is nie gevind nie.
 

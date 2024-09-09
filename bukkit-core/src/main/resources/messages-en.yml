@@ -81,7 +81,7 @@ Messages:
   #------------------- Updater Messages -------------------
   wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
   wwcUpdaterParserFailed: 'Failed to parse update data from Github.'
-  wwcUpdaterUpToDate:  'WorldwideChat is up to date!'
+  wwcUpdaterUpToDate: 'WorldwideChat is up to date!'
   wwcUpdaterOutOfDate: 'WorldwideChat is out of date. Please update to the latest version, {0}.'
   wwcUpdaterFutureDate: 'This instance of WorldwideChat has a greater version than the latest public one.'
   wwcUpdaterFailedGeneric: 'Unable to check for WorldwideChat updates.'
@@ -154,7 +154,7 @@ Messages:
   wwcConfigGUIbStatsButton: 'Toggle bStats'
   wwcConfigGUIDebugModeButton: 'Toggle Debug Mode'
   wwcConfigGUILangButton: 'Change Plugin Language'
-  wwcConfigGUIFatalAsyncAbortButton: 'Change Async Task Timeout' 
+  wwcConfigGUIFatalAsyncAbortButton: 'Change Async Task Timeout'
   wwcConfigGUIUpdateCheckerButton: 'Change Check for Updates Delay'
   wwcConfigGUISyncUserDataButton: 'Change User Data Sync Delay'
   wwcConfigGUISQLMenuButton: 'Change SQL Settings'
@@ -529,20 +529,16 @@ Messages:
   wwctrlRateLimitOffTarget: 'Disabled the rate limit of {0}.'
   wwctrlRateLimitAlreadyOffTarget: 'The rate limit of {0} is already disabled.'
   wwctrlRateLimitBadInt: 'Your rate limit is not a valid integer.'
-  #------------------- Watson Translator Messages -------------------
+  #------------------- Generic Translator Messages -------------------
   watsonNotFoundExceptionNotification: 'Unable to translate your input any further.'
-  #------------------- Libre Translator Messages -------------------
-  libreHttp400: 'Bad request sent to Libre Translate! Unless you are doing something that you should not, you should not get this. Please contact the developer!'
-  libreHttp403: 'Missing Libre Translate API Key, or you are banned from the server!'
-  libreHttp429: 'No confidence due to rate limit from server.'
-  libreHttp500: 'Your selected input and output language pair is not supported. Please choose a different language set!'
-  libreHttpUnknown: 'Unknown http error: {0}'
-  #------------------- ChatGPT Messages -------------------
-  chatGPT500: 'Bad request sent to ChatGPT. If this persists, please contact the developer!'
-  chatGPTUnknown: 'Unknown http error: {0}'
-  #------------------- Systran Translator Message -------------------
-  systranHttp400: 'Bad parameters sent to Systran. Might be a bad language pair?'
-  systranHttp500: 'Internal server error from Systran endpoint ({0}).'
-  systranHttpUnknown: 'Unknown http error: {0}'
+  translatorBadAPIKey: 'Bad API key! Please make sure you have typed it correctly.'
+  translatorLimitExceeded: 'You have either exceeded the quota for your translation service or you have been rate limited. Please check your provider for more details.'
+  translatorURLNotFound: 'Your translator service URL is invalid.'
+  translatorForbidden: 'Access is forbidden! Please check your permissions.'
+  translatorNotFound: 'The requested translation resource was not found.'
+  translatorMethodNotAllowed: 'The translation service does not support this request method.'
+  translatorBadRequest: 'Bad request. Please check your input and try again.'
+  translatorServerError: 'Internal server error. Please try again later.'
+  translatorUnknownError: 'An unknown error occurred with status code: {0}.'
   #------------------- Other Messages -------------------
   wwcExampleMessage: 'This is a dummy message, and is meant to be overriden as an example.'

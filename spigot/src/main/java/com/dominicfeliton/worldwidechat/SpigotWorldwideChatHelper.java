@@ -1,25 +1,23 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.listeners.*;
+import com.dominicfeliton.worldwidechat.listeners.ConfigListener;
+import com.dominicfeliton.worldwidechat.listeners.NotifsOnJoinListener;
+import com.dominicfeliton.worldwidechat.listeners.SignListener;
+import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.dominicfeliton.worldwidechat.util.CommonTask;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitWorker;
-import org.bukkit.event.HandlerList;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
-import static com.dominicfeliton.worldwidechat.WorldwideChat.asyncTasksTimeoutSeconds;
 
 public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
@@ -45,7 +43,8 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         if (!main.isVaultSupport()) {
             main.setChat(null);
             return;
-        };
+        }
+        ;
 
         // Check if vault is installed at all
         if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
@@ -125,6 +124,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     /**
      * Get active asynchronous tasks
+     *
      * @return int - Number of active async tasks
      */
     private int getActiveAsyncTasks() {
@@ -133,6 +133,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
     /**
      * Get active asynchronous tasks (excluding a provided one)
+     *
      * @param excludedId - Task ID to be excluded from this count
      * @return int - Number of active async tasks, excluding excludedId
      */

@@ -1,7 +1,5 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -9,18 +7,19 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import javax.net.ssl.HttpsURLConnection;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
 
 public class SystranTranslation extends BasicTranslation {
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
     private final String apiKey;
 
     public SystranTranslation(String apiKey, boolean isInitializing, ExecutorService callbackExecutor) {
@@ -163,19 +162,6 @@ public class SystranTranslation extends BasicTranslation {
             }
 
             return textToTranslate;
-        }
-    }
-
-    private void checkError(int in, String msg) throws Exception {
-        refs.debugMsg(msg);
-        switch (in) {
-            case 400:
-            case 403:
-            case 429:
-            case 500:
-                throw new Exception(refs.getPlainMsg("chatGPT500"));
-            default:
-                throw new Exception(refs.getPlainMsg("chatGPTUnknown", in + ""));
         }
     }
 }

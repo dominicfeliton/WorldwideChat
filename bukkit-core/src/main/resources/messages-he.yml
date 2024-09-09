@@ -297,22 +297,17 @@ Messages:
     לחזור.
   wwcConfigConversationFatalAsyncSuccess: פסק זמן משימת Async מוגדר בהצלחה.
   wwcConfigGUIFatalAsyncAbortButton: שינוי הזמן הקצוב למשימה של Async
-  libreHttp400: בקשה גרועה שנשלחה ליברה תרגם! אלא אם כן אתה עושה משהו שאתה לא צריך,
-    אתה לא צריך לקבל את זה. אנא צרו קשר עם היזם!
   wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
-  libreHttp403: חסר Libre תרגום מפתח API, או שאתה מוחרם מהשרת!
   wwcConfigConversationLibreURLSuccess: URL חינם להגדיר בהצלחה.
   wwcConfigConversationLibreTranslateApiKeyInput: מפתח ה- API הנוכחי הוא {0}. אנא
     הזן מפתח API עבור Libre, או הקלד 0 כדי לחזור.
   wwcConfigGUILibreTranslateButton: תרגום חופשי
-  libreHttp429: אין אמון בשל מגבלת שיעור מהשרת.
   wwcConfigGUIToggleLibreTranslateButton: החלף חינם תרגם
   wwcConfigConversationLibreTranslateToggleSuccess: בהצלחה עבר ליברה תרגם. טען מחדש
     כדי שהשינויים ייכנסו לתוקף.
   wwcConfigConversationLibreTranslateApiKeySuccess: מפתח API חינם להגדיר בהצלחה.
   wwcConfigConversationLibreURLInput: כתובת האתר הנוכחית היא {0}. אנא הזן כתובת URL
     עבור Libre, או הקלד 0 כדי לחזור.
-  libreHttpUnknown: 'שגיאת HTTP לא ידועה: {0}'
   wwcConfigGUILibreTranslateURLButton: שינוי חינם תרגם את כתובת האתר
   wwcConfigConnectionFail: ההתחברות אל {0} נכשלה.
   wwcConfigConversationMongoDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים MongoDB.
@@ -347,7 +342,6 @@ Messages:
   wwcConfigGUIMongoPortButton: שינוי נמל MongoDB
   wwcConfigInvalidFatalAsyncTimeout: סט פסק זמן async קטלני לא חוקי. ברירת מחדל ל
     -10 שניות...
-  libreHttp500: זוג שפת הקלט והפלט שבחרת אינו נתמך. אנא בחר ערכת שפה אחרת!
   wwcConfigGUIDeepLTranslateButton: החלף את DeepL תרגם
   wwcConfigConversationDeepLTranslateToggleSuccess: בהצלחה עבר DeepL תרגם. טען מחדש
     כדי שהשינויים ייכנסו לתוקף.
@@ -413,9 +407,6 @@ Messages:
   wwcrTransFail: טען מחדש את WorldwideChat אך נכשל בהפעלת מתרגם.
   wwcdCacheCleared: מטמון התרגום נוקה.
   wwcdInvalidCmd: טיעונים לא חוקיים!
-  systranHttpUnknown: 'שגיאת http לא ידועה: {0}'
-  systranHttp400: פרמטרים רעים שנשלחו לסיסטרן. יכול להיות זוג שפות גרוע?
-  systranHttp500: שגיאת שרת פנימית מנקודת הקצה של Systran ({0}).
   wwcInvalidStorageSession: '{0} מופעל בתצורה שלך, אך חיבור לא נוצר. אנא נסה לטעון
     מחדש כדי לתקן זאת, אך אנא צור קשר עם המפתח אם קיבלת בעבר הודעת חיבור מוצלחת מ-
     {0}.'
@@ -627,8 +618,6 @@ Messages:
   wwcAiSystemPromptBad: הודעת מערכת AI גרועה זוהתה. באמצעות ברירת המחדל שלנו...
   wwcAiSupportedLangsBad: שפות נתמכות בינה מלאכותית גרועות זוהו. שימוש בברירת המחדל
     שלנו...
-  chatGPTUnknown: 'שגיאת http לא ידועה: {0}'
-  chatGPT500: בקשה גרועה נשלחה ל- ChatGPT. אם זה נמשך, אנא צור קשר עם היזם!
   wwcConfigGUIAISettings: תצורת AI
   wwcConfigGUIChatGPTButton: צ'אט GPT
   wwcConfigConversationChatGPTApiKeySuccess: מפתח ממשק ה- API של ChatGPT הוגדר בהצלחה.
@@ -659,4 +648,14 @@ Messages:
   wwcConfigGUIAILangNewButton: הוסף שפה חדשה
   wwcConfigGUIAIChangeLangs: שנה שפות AI נתמכות
   wwcConfigConversationAILangAddSuccess: הוסיף בהצלחה שפה חדשה לשפות הנתמכות ב- AI.
+  translatorBadAPIKey: מפתח API רע! אנא ודא שהקלדת אותו נכון.
+  translatorLimitExceeded: חרגת מהמכסה עבור שירות התרגום שלך או שהיית מוגבל בתעריף.
+    אנא בדוק את הספק שלך לפרטים נוספים.
+  translatorServerError: שגיאת שרת פנימית. אנא נסה שוב מאוחר יותר.
+  translatorForbidden: הגישה אסורה! אנא בדוק את ההרשאות שלך.
+  translatorBadRequest: בקשה גרועה. אנא בדוק את הקלט שלך ונסה שוב.
+  translatorUnknownError: 'אירעה שגיאה לא ידועה עם קוד מצב: {0}.'
+  translatorURLNotFound: כתובת האתר של שירות המתרגם שלך אינה חוקית.
+  translatorMethodNotAllowed: שירות התרגום אינו תומך בשיטת בקשה זו.
+  translatorNotFound: משאב התרגום המבוקש לא נמצא.
 

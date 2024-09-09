@@ -323,22 +323,17 @@ Messages:
     bagay ki anba a li yo ale tounen.
   wwcConfigConversationFatalAsyncSuccess: Async delè travay mete avèk siksè.
   wwcConfigGUIFatalAsyncAbortButton: Chanje Async Objektif Travay la Timeout
-  libreHttp400: Move demann voye nan Libre Translate! Sòf si w ap fè yon bagay ke
-    ou pa ta dwe, ou pa ta dwe jwenn sa a. Tanpri kontakte pwomotè a!
   wwcConfigGUILibreTranslateApiKeyButton: Chanje gratis Translate API kle
-  libreHttp403: Ki manke Libre Translate API kle, oswa w ap entèdi nan sèvè a!
   wwcConfigConversationLibreURLSuccess: Gratis URL mete avèk siksè.
   wwcConfigConversationLibreTranslateApiKeyInput: Kle API aktyèl la se % mwen. tanpri
     D 'yon kle API pou gratis, oswa tape 0 yo ale tounen.
   wwcConfigGUILibreTranslateButton: Libre Translate
-  libreHttp429: Pa gen konfyans akòz pousantaj limit soti nan sèvè.
   wwcConfigGUIToggleLibreTranslateButton: Baskile gratis tradwir
   wwcConfigConversationLibreTranslateToggleSuccess: Avèk siksè baskile Libre Translate.
     Reload pou chanjman yo pran efè.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kle mete avèk siksè.
   wwcConfigConversationLibreURLInput: URL la kounye a se % mwen. tanpri D 'yon URL
     pou gratis, oswa tape 0 yo ale tounen.
-  libreHttpUnknown: 'Unknown http erè: % mwen'
   wwcConfigGUILibreTranslateURLButton: Chanje gratis Translate URL
   wwcConfigConnectionFail: Echwe pou pou konekte pou % mwen.
   wwcConfigConversationMongoDatabaseNameSuccess: Avèk siksè chanje non an baz done
@@ -376,8 +371,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Chanje MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Envalid fatal async poz mete. Defaulting a 10
     segonn...
-  libreHttp500: D 'chwazi ou ak pè lang pwodiksyon pa sipòte. Tanpri chwazi yon seri
-    lang diferan!
   wwcConfigGUIDeepLTranslateButton: Translate DeepL baskil
   wwcConfigConversationDeepLTranslateToggleSuccess: Avèk siksè baskile DeepL Translate.
     Reload pou chanjman yo pran efè.
@@ -443,9 +436,6 @@ Messages:
   wwcrTransFail: Reloaded WorldwideChat men echwe pou pèmèt yon tradiktè.
   wwcdCacheCleared: Kachèt tradiksyon an te netwaye.
   wwcdInvalidCmd: Agiman envalid!
-  systranHttpUnknown: 'Erè http enkoni: {0}'
-  systranHttp400: Move paramèt voye bay Systran. Ta ka yon pè lang move?
-  systranHttp500: Erè sèvè entèn soti nan Systran endpoint ({0}).
   wwcInvalidStorageSession: Se {0} pèmèt nan config ou, men se yon koneksyon pa etabli.
     Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou deja te
     resevwa yon mesaj koneksyon siksè soti nan {0}.
@@ -676,9 +666,6 @@ Messages:
     an...
   wwcAiSupportedLangsBad: Move AI ki sipòte lang detekte. Lè l sèvi avèk defaults
     nou yo...
-  chatGPTUnknown: 'Erè http enkoni: {0}'
-  chatGPT500: Move demann voye nan ChatGPT. Si sa pèsiste, tanpri kontakte pwomotè
-    a!
   wwcConfigGUIAISettings: Konfigirasyon AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API kle mete avèk siksè.
@@ -711,4 +698,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Modifye Lang AI ki sipòte
   wwcConfigConversationAILangAddSuccess: Ajoute avèk siksè yon nouvo lang nan lang
     yo sipòte AI.
+  translatorBadAPIKey: Kle API move! Tanpri asire w ke ou te tape li kòrèkteman.
+  translatorLimitExceeded: Ou te swa depase kota a pou sèvis tradiksyon ou oswa ou
+    te pousantaj limite. Tanpri tcheke founisè ou pou plis detay.
+  translatorServerError: Erè sèvè entèn. Tanpri eseye ankò pita.
+  translatorForbidden: Aksè entèdi! Tanpri tcheke autorisations ou.
+  translatorBadRequest: Move demann. Tanpri tcheke opinyon ou epi eseye ankò.
+  translatorUnknownError: 'Yon erè enkoni te fèt ak kòd estati: {0}.'
+  translatorURLNotFound: URL sèvis tradiktè ou a envalid.
+  translatorMethodNotAllowed: Sèvis tradiksyon an pa sipòte metòd demann sa a.
+  translatorNotFound: Resous tradiksyon mande a pa te jwenn.
 

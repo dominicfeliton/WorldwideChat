@@ -344,22 +344,17 @@ Messages:
     timeout, կամ որեւէ բան ներքեւում այն վերադառնալ.'
   wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
   wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը
-  libreHttp400: 'Վատ խնդրանքը ուղարկվել է Libre Թարգմանել! Եթե դուք անում մի բան,
-    որ դուք չպետք է, Դուք չպետք է ստանալ այս. Խնդրում ենք կապնվել մշակողի հետ:'
   wwcConfigGUILibreTranslateApiKeyButton: Փոխել ազատ Թարգմանել API Key
-  libreHttp403: Missing Libre Թարգմանել API Key, կամ դուք արգելված է սերվերի!
   wwcConfigConversationLibreURLSuccess: Ազատ URL սահմանել հաջողությամբ.
   wwcConfigConversationLibreTranslateApiKeyInput: 'Ներկայիս API ստեղնը {0} է: Խնդրում
     ենք մուտքագրել API ստեղնը Libre- ի համար, կամ մուտքագրել 0, վերադառնալ:'
   wwcConfigGUILibreTranslateButton: Ազատ Թարգմանել
-  libreHttp429: Վստահություն սերվերից փոխարժեքի սահմանաչափի պատճառով.
   wwcConfigGUIToggleLibreTranslateButton: Toggle անվճար թարգմանել
   wwcConfigConversationLibreTranslateToggleSuccess: 'Հաջողությամբ toggled Libre Թարգմանել.
     Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
   wwcConfigConversationLibreTranslateApiKeySuccess: Ազատ API բանալին սահմանվել հաջողությամբ.
   wwcConfigConversationLibreURLInput: 'Ներկայիս URL- ն {0} է: Խնդրում ենք մուտքագրել
     URL Libre- ի համար, կամ մուտքագրել 0 ՝ վերադառնալու համար:'
-  libreHttpUnknown: 'Անհայտ http սխալ: {0}'
   wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL
   wwcConfigConnectionFail: 'Չհաջողվեց միանալ {0}- ին:'
   wwcConfigConversationMongoDatabaseNameSuccess: 'Հաջողությամբ փոխեց MongoDB տվյալների
@@ -402,8 +397,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Փոխել MongoDB նավահանգիստը
   wwcConfigInvalidFatalAsyncTimeout: 'Անվավեր ճակատագրական async timeout հավաքածու:
     Defaulting է 10 վայրկյան...'
-  libreHttp500: 'Ձեր ընտրած մուտքային և ելքային լեզվական զույգը չի ապահովվում: Խնդրում
-    ենք ընտրել այլ լեզվական հավաքածու:'
   wwcConfigGUIDeepLTranslateButton: Փոխել DeepL թարգմանել
   wwcConfigConversationDeepLTranslateToggleSuccess: 'Հաջողությամբ toggled DeepL թարգմանել.
     Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
@@ -475,10 +468,6 @@ Messages:
   wwcrTransFail: 'Վերաբեռնվել է WorldwideChat-ը, բայց չի հաջողվել թարգմանիչ միացնել:'
   wwcdCacheCleared: 'Թարգմանության քեշը մաքրվեց:'
   wwcdInvalidCmd: 'Անվավեր փաստարկներ:'
-  systranHttpUnknown: 'Անհայտ http սխալ: {0}'
-  systranHttp400: 'Վատ պարամետրերը ուղարկվել են Systran- ին: Կարող է վատ լեզվական
-    զույգ լինել:'
-  systranHttp500: 'Ներքին սերվերի սխալ Systran վերջնակետից ({0}):'
   wwcInvalidStorageSession: '{0} միացված է ձեր կոնֆիգուրացիայում, բայց կապ չի հաստատվում:
     Խնդրում ենք փորձել վերաբեռնումը շտկելու համար սա, բայց խնդրում ենք կապվել մշակողի
     հետ, եթե նախկինում հաջողված կապի հաղորդագրություն եք ստացել {0} -ից:'
@@ -730,9 +719,6 @@ Messages:
     լռելյայն...'
   wwcAiSupportedLangsBad: 'Հայտնաբերվել են վատ AI աջակցվող լեզուներ: Օգտագործելով
     մեր նախադրյալները...'
-  chatGPTUnknown: 'Անհայտ http սխալ: {0}'
-  chatGPT500: 'Վատ հարցում ուղարկվել է ChatGPT- ին: Եթե դա շարունակվի, խնդրում ենք
-    կապվել մշակողի հետ:'
   wwcConfigGUIAISettings: AI կոնֆիգուրացիա
   wwcConfigGUIChatGPTButton: ՉաթԳՊՏ
   wwcConfigConversationChatGPTApiKeySuccess: 'ChatGPT API- ի բանալին հաջողությամբ
@@ -767,4 +753,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: Փոփոխեք աջակցվող AI լեզուները
   wwcConfigConversationAILangAddSuccess: 'Հաջողությամբ նոր լեզու ավելացրեց AI- ի կողմից
     աջակցվող լեզուներին:'
+  translatorBadAPIKey: 'Վատ API բանալին: Խնդրում ենք համոզվել, որ ճիշտ եք մուտքագրել
+    այն:'
+  translatorLimitExceeded: 'Դուք կամ գերազանցել ուղեգիր ձեր թարգմանչական ծառայության
+    կամ դուք արդեն դրույքաչափը սահմանափակ. Լրացուցիչ մանրամասների համար խնդրում ենք
+    ստուգել ձեր մատակարարին:'
+  translatorServerError: 'Ներքին սերվերի սխալ: Խնդրում ենք կրկին փորձել ավելի ուշ:'
+  translatorForbidden: 'Մուտքն արգելված է: Խնդրում ենք ստուգել ձեր թույլտվությունները:'
+  translatorBadRequest: 'Վատ խնդրանք. Խնդրում ենք ստուգել ձեր մուտքը և կրկին փորձեք:'
+  translatorUnknownError: 'Անհայտ սխալ է տեղի ունեցել կարգավիճակի կոդի հետ ՝ {0}:'
+  translatorURLNotFound: 'Ձեր թարգմանչի ծառայության URL- ն անվավեր է:'
+  translatorMethodNotAllowed: 'Թարգմանչական ծառայությունը չի աջակցում այս հարցման
+    մեթոդին:'
+  translatorNotFound: 'Հայցված թարգմանության ռեսուրսը չի գտնվել:'
 

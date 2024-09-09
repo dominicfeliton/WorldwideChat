@@ -331,23 +331,17 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Sync کام کا ٹائم آؤٹ کامیابی سے متعین کیا
     گیا ہے۔
   wwcConfigGUIFatalAsyncAbortButton: ایسنک ٹاسک ٹائم آؤٹ تبدیل کریں
-  libreHttp400: بری درخواست Libri ترجمہ کرنے کے لئے بھیجا! جب تک آپ کچھ ایسا نہیں
-    کر رہے ہیں جو آپ کو نہیں کرنا چاہئے، آپ کو یہ نہیں ملنا چاہئے. ڈویلپر سے رابطہ
-    کریں!
   wwcConfigGUILibreTranslateApiKeyButton: مفت ترجمہ API کلید کو تبدیل کریں
-  libreHttp403: لاپتہ Libe API کلید ترجمہ کریں، یا آپ سرور سے پابندی عائد کر رہے ہیں!
   wwcConfigConversationLibreURLSuccess: مفت یو آر ایل کامیابی سے سیٹ کیا گیا ہے.
   wwcConfigConversationLibreTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم
     Libe کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
   wwcConfigGUILibreTranslateButton: مفت ترجمہ
-  libreHttp429: سرور سے شرح کی حد کی وجہ سے کوئی اعتماد نہیں.
   wwcConfigGUIToggleLibreTranslateButton: ٹوگل مفت ترجمہ کریں
   wwcConfigConversationLibreTranslateToggleSuccess: کامیابی کے ساتھ مفت ترجمہ ٹوگل.
     تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
   wwcConfigConversationLibreTranslateApiKeySuccess: مفت API کلید کامیابی سے سیٹ.
   wwcConfigConversationLibreURLInput: موجودہ URL {0} ہے، برائے مہربانی Libere کے لئے
     ایک URL ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
-  libreHttpUnknown: 'نامعلوم HTTP غلطی: {0}'
   wwcConfigGUILibreTranslateURLButton: مفت تبدیل کریں URL کا ترجمہ کریں
   wwcConfigConnectionFail: '{0} سے متصل ہونے میں ناکام.'
   wwcConfigConversationMongoDatabaseNameSuccess: کامیابی سے MongoDB ڈیٹا بیس کا نام
@@ -389,8 +383,6 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف ہو گئے۔
   wwcConfigGUIMongoPortButton: مونگو ڈی بی پورٹ تبدیل کریں
   wwcConfigInvalidFatalAsyncTimeout: غلط مہلک async ٹائم آؤٹ سیٹ. 10 سیکنڈ پر ناکامی...
-  libreHttp500: آپ کے منتخب کردہ ان پٹ اور آؤٹ پٹ زبان کے جوڑے کی حمایت نہیں کی جاتی
-    ہے. براہ کرم ایک مختلف زبان کا سیٹ منتخب کریں!
   wwcConfigGUIDeepLTranslateButton: دیپ ایل کا ترجمہ ٹوگل
   wwcConfigConversationDeepLTranslateToggleSuccess: کامیابی سے ڈیپ ایل ترجمہ ٹوگل.
     تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
@@ -462,9 +454,6 @@ Messages:
     رہا۔
   wwcdCacheCleared: ترجمہ کیشے صاف کر دیا گیا۔
   wwcdInvalidCmd: غلط دلائل!
-  systranHttpUnknown: 'نامعلوم HTTP غلطی: {0}'
-  systranHttp400: خراب پیرامیٹرز سسٹرن کو بھیجے شاید برا زبان کی جوڑی ہوسکتی ہے؟
-  systranHttp500: سیسٹرن اینڈ پوائنٹ ({0}) سے داخلی سرور کی خرابی۔
   wwcInvalidStorageSession: '{0} آپ کی ترتیب میں فعال ہے، لیکن کوئی کنکشن قائم نہیں
     ہے۔ براہ کرم اسے ٹھیک کرنے کے لئے دوبارہ لوڈ کرنے کی کوشش کریں، لیکن اگر آپ کو
     پہلے {0} سے کنکشن کا کامیاب پیغام ملا تو براہ کرم ڈویلپر سے رابطہ کریں۔'
@@ -709,9 +698,6 @@ Messages:
   wwcAiSystemPromptBad: خراب AI سسٹم پرامپٹ کا پتہ ہمارے ڈیفالٹ کا استعمال کرتے ہوئے...
   wwcAiSupportedLangsBad: خراب اے آئی کی تائید شدہ زبانوں ہمارے ڈیفالٹس کا استعمال
     کرتے ہوئے...
-  chatGPTUnknown: 'نامعلوم HTTP غلطی: {0}'
-  chatGPT500: ChatGPT کو خراب درخواست بھیجی گئی۔ اگر یہ برقرار ہے تو، براہ کرم ڈویلپر
-    سے رابطہ کریں!
   wwcConfigGUIAISettings: AI کنفیگریشن
   wwcConfigGUIChatGPTButton: چیٹ جی پی ٹی
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API کلید کامیابی کے ساتھ سیٹ
@@ -745,4 +731,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: معاون AI زبانوں میں ترمیم کریں
   wwcConfigConversationAILangAddSuccess: AI کی تائید شدہ زبانوں میں کامیابی کے ساتھ
     ایک نئی زبان شامل کی۔
+  translatorBadAPIKey: خراب API کلید! براہ کرم یقینی بنائیں کہ آپ نے اسے صحیح طور
+    پر ٹائپ کیا ہے۔
+  translatorLimitExceeded: آپ نے یا تو اپنی ترجمہ سروس کے کوٹے سے تجاوز کر چکے ہیں
+    یا آپ کی شرح محدود ہے۔ مزید تفصیلات کے لئے براہ کرم اپنے فراہم کنندہ کو چ
+  translatorServerError: اندرونی سرور کی خرابی. براہ کرم بعد میں دوبارہ کوشش کریں۔
+  translatorForbidden: رسائی ممنوع ہے! براہ کرم اپنی اجازتیں چیک کریں۔
+  translatorBadRequest: خراب درخواست. براہ کرم اپنا ان پٹ چیک کریں اور دوبارہ کوشش
+    کریں۔
+  translatorUnknownError: 'اسٹیٹس کوڈ کے ساتھ ایک نامعلوم غلطی ہوئی: {0}.'
+  translatorURLNotFound: آپ کی مترجم سروس یو آر ایل غلط ہے۔
+  translatorMethodNotAllowed: ترجمہ سروس اس درخواست کے طریقہ کار کی حمایت نہیں کرتی
+    ہے۔
+  translatorNotFound: درخواست کردہ ترجمہ کا وسیلہ نہیں ملا.
 

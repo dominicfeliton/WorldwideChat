@@ -3,7 +3,6 @@ package com.dominicfeliton.worldwidechat;
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import io.papermc.paper.event.player.AsyncChatEvent;
-import org.bukkit.ChatColor;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;

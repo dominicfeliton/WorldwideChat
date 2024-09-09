@@ -9,7 +9,6 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLocaleChangeEvent;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -71,7 +70,7 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
             }
         };
 
-        helper.runSync(true, 50, change, ENTITY, new Object[] {player});
+        helper.runSync(true, 50, change, ENTITY, new Object[]{player});
     }
 
     private String getLocale(String locale) {

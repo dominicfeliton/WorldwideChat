@@ -351,23 +351,17 @@ Messages:
     தட்டச்சு செய்க, அல்லது அதற்கு கீழே உள்ள எதையும் திரும்பிச் செல்ல.
   wwcConfigConversationFatalAsyncSuccess: Async பணி நேர முடிவின் வெற்றிகரமாக அமைக்க.
   wwcConfigGUIFatalAsyncAbortButton: Async பணி நேர முடிவை மாற்றவும்
-  libreHttp400: மொழிபெயர்ப்பு இலவச அனுப்பப்படும் பேட் கோரிக்கை! நீங்கள் ஏதாவது செய்கிறீர்கள்
-    வரை நீங்கள் கூடாது என்று, நீங்கள் இந்த பெற கூடாது. டெவலப்பர் தொடர்பு கொள்ளவும்!
   wwcConfigGUILibreTranslateApiKeyButton: மாற்றம் இலவச ஏபிஐ விசை மொழிபெயர்
-  libreHttp403: இலவச மொழிபெயர்க்க ஏபிஐ சாவி காணாமல், அல்லது நீங்கள் சர்வரில் இருந்து
-    தடை செய்யப்பட்டுள்ளன!
   wwcConfigConversationLibreURLSuccess: இலவச URL வெற்றிகரமாக அமைக்க.
   wwcConfigConversationLibreTranslateApiKeyInput: தற்போதைய API விசை {0} ஆகும். Libre
     க்கு ஒரு API விசை உள்ளீடு செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
   wwcConfigGUILibreTranslateButton: இலவச மொழிபெயர்க்க
-  libreHttp429: சர்வரில் இருந்து விகிதம் வரம்பு காரணமாக நம்பிக்கை இல்லை.
   wwcConfigGUIToggleLibreTranslateButton: இலவச மொழிபெயர்க்க மாற்று
   wwcConfigConversationLibreTranslateToggleSuccess: வெற்றிகரமாக லிப்ரே மொழிபெயர்க்கவும்
     மாற்றி. மாற்றங்கள் நடைமுறைக்கு ஏற்றவும்.
   wwcConfigConversationLibreTranslateApiKeySuccess: லிப்ரே ஏபிஐ விசை வெற்றிகரமாக அமைக்கப்பட்டது.
   wwcConfigConversationLibreURLInput: தற்போதைய URL {0} ஆகும். Libre க்கான URL ஐ உள்ளீடு
     செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
-  libreHttpUnknown: 'தெரியாத http பிழை: {0}'
   wwcConfigGUILibreTranslateURLButton: இலவச மொழிபெயர்க்க URL ஐ மாற்றவும்
   wwcConfigConnectionFail: '{0} உடன் இணைக்கத் தவறியது.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB தரவுத்தள பெயரை வெற்றிகரமாக
@@ -409,8 +403,6 @@ Messages:
   wwcConfigGUIMongoPortButton: மொங்கோடிபி துறைமுகத்தை மாற்றவும்
   wwcConfigInvalidFatalAsyncTimeout: தவறான அபாயகரமான ஒத்திசைவு நேர முடிவின் தொகுப்பு.
     10 விநாடிகள் வரை இயல்புநிலைக்கு...
-  libreHttp500: நீங்கள் தேர்ந்தெடுத்த உள்ளீடு மற்றும் வெளியீடு மொழி ஜோடி ஆதரவு இல்லை.
-    வேறு மொழி தொகுப்பு தேர்வு செய்க!
   wwcConfigGUIDeepLTranslateButton: மாற்று DeepL மொழிபெயர்க்க
   wwcConfigConversationDeepLTranslateToggleSuccess: வெற்றிகரமாக Toggled DePL மொழிபெயர்க்கவும்.
     மாற்றங்கள் நடைமுறைக்கு ஏற்றவும்.
@@ -480,9 +472,6 @@ Messages:
     இயக்கத் தவறிவிட்டது
   wwcdCacheCleared: மொழிபெயர்ப்பு கேச் அழிக்கப்பட்டது.
   wwcdInvalidCmd: தவறான வாதங்கள்!
-  systranHttpUnknown: 'அறியப்படாத http பிழை: {0}'
-  systranHttp400: மோசமான அளவுருக்கள் சிஸ்ட்ரானுக்கு அனுப்ப மோசமான மொழி ஜோடியாக இருக்கலாம்?
-  systranHttp500: சிஸ்ட்ரான் இறுதிப் புள்ளியிலிருந்து உள் சேவையக பிழை ({0}).
   wwcInvalidStorageSession: உங்கள் உள்ளமைவில் {0} இயக்கப்பட்டுள்ளது, ஆனால் இணைப்பு
     நிறுவப்படவில்லை. இதை சரிசெய்ய மறுசீரமைக்க முயற்சிக்கவும், ஆனால் முன்னர் {0} இலிருந்து
     வெற்றிகரமான இணைப்பு செய்தியைப் பெற்றிருந்தால் டெவலப்பரைத் தொடர்பு கொள்ளவும்.
@@ -730,9 +719,6 @@ Messages:
     பயன்படுத்துதல்...
   wwcAiSupportedLangsBad: மோசமான AI ஆதரவு மொழிகள் கண்டறியப்பட்டது. எங்கள் இயல்புநிலைகளைப்
     பயன்படுத்துதல்...
-  chatGPTUnknown: 'தெரியாத http பிழை: {0}'
-  chatGPT500: ChatGPT க்கு மோசமான கோரிக்கை அனுப்பப்பட்டது. இது தொடர்ந்தால், தயவுசெய்து
-    டெவலப்பரைத் தொடர்பு கொள்ளவும்!
   wwcConfigGUIAISettings: AI உள்ளமைவு
   wwcConfigGUIChatGPTButton: சாட்ஜிபிடி
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API விசை வெற்றிகரமாக அமைக்கப்பட்டது.
@@ -765,4 +751,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: ஆதரிக்கப்படும் AI மொழிகளை மாற்றவும்
   wwcConfigConversationAILangAddSuccess: AI ஆதரிக்கப்பட்ட மொழிகளில் வெற்றிகரமாக புதிய
     மொழியைச் சேர்த்தது.
+  translatorBadAPIKey: மோசமான API விசை! நீங்கள் அதை சரியாக தட்டச்சு செய்துள்ளீர்கள்
+    என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்.
+  translatorLimitExceeded: உங்கள் மொழிபெயர்ப்பு சேவைக்கான ஒதுக்கீட்டை நீங்கள் மீறியுள்ளீர்கள்
+    அல்லது நீங்கள் விகிதம் வரையறுக்கப்பட்டுள்ளீர்கள். மேலும் விவரங்களுக்கு உங்கள்
+    வழங்குநரை சரிபார்க்கவும்.
+  translatorServerError: உள் சேவையக பிழை. பின்னர் மீண்டும் முயற்சிக்கவும்.
+  translatorForbidden: அணுகல் தடைசெய்யப்பட்டுள்ளது! உங்கள் அனுமதிகளை சரிபார்க்கவும்.
+  translatorBadRequest: மோசமான கோரிக்கை. உங்கள் உள்ளீட்டை சரிபார்த்து மீண்டும் முயற்சிக்கவும்.
+  translatorUnknownError: 'நிலைக் குறியீட்டில் அறியப்படாத பிழை ஏற்பட்டது: {0}.'
+  translatorURLNotFound: உங்கள் மொழிபெயர்ப்பாளர் சேவை URL செல்லாதது.
+  translatorMethodNotAllowed: மொழிபெயர்ப்பு சேவை இந்த கோரிக்கை முறையை ஆதரிக்காது.
+  translatorNotFound: கோரப்பட்ட மொழிபெயர்ப்பு வளம் கண்டுபிடிக்கப்படவில்லை.
 

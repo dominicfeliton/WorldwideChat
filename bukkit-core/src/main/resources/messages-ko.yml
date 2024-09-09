@@ -273,21 +273,17 @@ Messages:
     입력하여 새 시간 제한을 설정하거나 그 아래에 있는 값을 입력하여 되돌아갑니다.
   wwcConfigConversationFatalAsyncSuccess: 비동기 작업 시간 초과가 성공적으로 설정되었습니다.
   wwcConfigGUIFatalAsyncAbortButton: 비동기 작업 시간 초과 변경
-  libreHttp400: 잘못된 요청이 전송되었습니다. 무료 번역!하지 말아야 할 일을 하지 않는 한, 이걸 얻어서는 안 됩니다.개발자에게 문의하세요!
   wwcConfigGUILibreTranslateApiKeyButton: 무료 번역 API 키 변경
-  libreHttp403: 무료 번역 API 키가 없거나 서버에서 금지되었습니다!
   wwcConfigConversationLibreURLSuccess: 자유 URL을 성공적으로 설정했습니다.
   wwcConfigConversationLibreTranslateApiKeyInput: 현재 API 키는 {0}입니다. Libre의 API 키를
     입력하거나 뒤로 돌아가려면 0을 입력하십시오.
   wwcConfigGUILibreTranslateButton: 리브레 번역
-  libreHttp429: 서버의 속도 제한으로 인해 확신이 없습니다.
   wwcConfigGUIToggleLibreTranslateButton: 무료 번역 토글
   wwcConfigConversationLibreTranslateToggleSuccess: 무료 번역을 토글했습니다.변경 사항을 적용하려면 다시
     로드합니다.
   wwcConfigConversationLibreTranslateApiKeySuccess: 자유 API 키가 성공적으로 설정되었습니다.
   wwcConfigConversationLibreURLInput: 현재 URL은 {0}입니다. Libre의 URL을 입력하거나 뒤로 돌아가려면 0을
     입력하십시오.
-  libreHttpUnknown: '알 수 없는 http 오류: {0}'
   wwcConfigGUILibreTranslateURLButton: 무료 번역 URL 변경
   wwcConfigConnectionFail: '{0}에 연결하지 못했습니다.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB 데이터베이스 이름을 성공적으로 변경했습니다.
@@ -320,7 +316,6 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: 선택적 인수가 성공적으로 지워졌습니다.
   wwcConfigGUIMongoPortButton: 몽고DB 포트 변경
   wwcConfigInvalidFatalAsyncTimeout: 치명적인 비동기 타임아웃 설정이 잘못되었습니다.기본값은 10초로 설정 중...
-  libreHttp500: 선택한 입력 및 출력 언어 쌍이 지원되지 않습니다.다른 언어 세트를 선택해 주세요!
   wwcConfigGUIDeepLTranslateButton: 딥L 트랜슬레이트를 전환하세요
   wwcConfigConversationDeepLTranslateToggleSuccess: DeepL 번역을 성공적으로 전환했습니다.변경 사항을
     적용하려면 다시 로드하십시오.
@@ -382,9 +377,6 @@ Messages:
   wwcrTransFail: WorldwideChat을 다시 로드했지만 번역기를 활성화하지 못했습니다.
   wwcdCacheCleared: 번역 캐시가 지워졌습니다.
   wwcdInvalidCmd: 잘못된 인수!
-  systranHttpUnknown: '알 수 없는 http 오류: {0}'
-  systranHttp400: 잘못된 파라미터가 Systran에 전송되었습니다.언어 쌍이 잘못되었을 수도 있나요?
-  systranHttp500: Systran 엔드포인트 ({0}) 의 내부 서버 오류가 발생했습니다.
   wwcInvalidStorageSession: 구성에서 {0} 이 (가) 활성화되었지만 연결이 설정되지 않았습니다.이 문제를 해결하려면 다시 로드해
     보십시오. 하지만 이전에 {0} 에서 연결 성공 메시지를 받은 경우 개발자에게 문의하세요.
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL 데이터베이스 이름을 성공적으로 변경했습니다.
@@ -566,8 +558,6 @@ Messages:
   wwcAiSystemPromptLoaded: AI 시스템 프롬프트가 로드되었습니다.
   wwcAiSystemPromptBad: 잘못된 AI 시스템 프롬프트가 감지되었습니다.기본값 사용 중...
   wwcAiSupportedLangsBad: 잘못된 AI 지원 언어가 감지되었습니다.기본값 사용 중...
-  chatGPTUnknown: '알 수 없는 http 오류: {0}'
-  chatGPT500: 잘못된 요청이 ChatGPT에 전송되었습니다.이런 문제가 계속되면 개발자에게 문의하세요!
   wwcConfigGUIAISettings: AI 컨피그레이션
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API 키가 성공적으로 설정되었습니다.
@@ -597,4 +587,13 @@ Messages:
   wwcConfigGUIAILangNewButton: 새 언어 추가
   wwcConfigGUIAIChangeLangs: 지원되는 AI 언어 수정
   wwcConfigConversationAILangAddSuccess: AI 지원 언어에 새 언어를 성공적으로 추가했습니다.
+  translatorBadAPIKey: API 키가 잘못되었습니다!정확하게 입력했는지 확인해 주세요.
+  translatorLimitExceeded: 번역 서비스 할당량을 초과했거나 요금 제한을 받았습니다.자세한 내용은 제공업체에 문의하세요.
+  translatorServerError: 내부 서버 오류입니다.나중에 다시 시도해 주세요.
+  translatorForbidden: 액세스가 금지되었습니다!권한을 확인해 주세요.
+  translatorBadRequest: 잘못된 요청입니다.입력한 내용을 확인하고 다시 시도하세요.
+  translatorUnknownError: '상태 코드에서 알 수 없는 오류가 발생했습니다: {0}.'
+  translatorURLNotFound: 번역기 서비스 URL이 유효하지 않습니다.
+  translatorMethodNotAllowed: 번역 서비스는 이 요청 방법을 지원하지 않습니다.
+  translatorNotFound: 요청한 번역 리소스를 찾을 수 없습니다.
 

@@ -11,7 +11,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.Map;
 import java.util.Set;
@@ -25,6 +24,7 @@ public class WWCDebug extends BasicCommand {
     private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
     private YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+
     public WWCDebug(CommandSender sender, Command command, String label, String[] args) {
         super(sender, command, label, args);
     }
@@ -69,7 +69,7 @@ public class WWCDebug extends BasicCommand {
             } else if (args[0].equalsIgnoreCase("reset")) {
                 if (args[1].equalsIgnoreCase("confirm")) {
                     // Begin Reset
-                   GenericRunnable run = new GenericRunnable() {
+                    GenericRunnable run = new GenericRunnable() {
                         @Override
                         protected void execute() {
                             try {
@@ -134,7 +134,7 @@ public class WWCDebug extends BasicCommand {
                 case "cache":
                     // print cache
                     Set<Map.Entry<CachedTranslation, String>> cache = main.getCache().asMap().entrySet();
-                    refs.sendMsg("wwcdCacheSize", new String[] {"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
+                    refs.sendMsg("wwcdCacheSize", new String[]{"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
                     int count = 1;
                     for (Map.Entry<CachedTranslation, String> eaEntry : main.getCache().asMap().entrySet()) {
                         if (count >= 100) {
@@ -143,7 +143,7 @@ public class WWCDebug extends BasicCommand {
                         }
 
                         CachedTranslation obj = eaEntry.getKey();
-                        refs.sendMsg("wwcdCacheTerm", new String[] {"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
+                        refs.sendMsg("wwcdCacheTerm", new String[]{"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
                         count++;
                     }
                     return true;
@@ -158,7 +158,7 @@ public class WWCDebug extends BasicCommand {
 
                             conf.set("General.enableDebugMode", true);
                             if (sender instanceof Player) {
-                                new SyncUserData((Player)sender).run();
+                                new SyncUserData((Player) sender).run();
                             } else {
                                 new SyncUserData().run();
                             }

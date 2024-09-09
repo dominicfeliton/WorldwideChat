@@ -328,23 +328,17 @@ Messages:
     da ke ƙasa da shi don komawa.
   wwcConfigConversationFatalAsyncSuccess: Lokacin aiki na Async ya saita nasara.
   wwcConfigGUIFatalAsyncAbortButton: Canja lokaci na Async
-  libreHttp400: Bad request aika zuwa Libre Translate! Sai dai idan kana yin wani
-    abu da bai kamata ka yi ba, bai kamata ka samu wannan ba. Da fatan a tuntubi mai
-    gabatarwa!
   wwcConfigGUILibreTranslateApiKeyButton: Canja Libre Fassara Maɓallin API
-  libreHttp403: Rashin Libre Fassara Maɓallin API, ko an dakatar da ku daga uwar garke!
   wwcConfigConversationLibreURLSuccess: Libre URL saita nasara.
   wwcConfigConversationLibreTranslateApiKeyInput: Maɓallin API na yanzu shine {0}.
     Da fatan za a shigar da maɓallin API don Libre, ko rubuta 0 don komawa.
   wwcConfigGUILibreTranslateButton: Fassara mai tsabta
-  libreHttp429: Babu amincewa saboda iyakacin kuɗi daga uwar garke.
   wwcConfigGUIToggleLibreTranslateButton: Translate Libre
   wwcConfigConversationLibreTranslateToggleSuccess: An samu nasarar daidaitawa Fassarar
     Libre. Sake saukewa don canje-canje don yin tasiri.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API maɓallin saita nasara.
   wwcConfigConversationLibreURLInput: URL na yanzu shine {0}. Da fatan za a shigar
     da URL don Libre, ko rubuta 0 don komawa.
-  libreHttpUnknown: 'Kuskuren http wanda ba a sani ba: {0}'
   wwcConfigGUILibreTranslateURLButton: Canja adireshin fassara na Libre
   wwcConfigConnectionFail: An kasa haɗi zuwa {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: An samu nasarar canza sunan ma'adanar
@@ -386,8 +380,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Canja tashar MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Saitin lokaci mara kyau na async. Defaulting
     zuwa 10 seconds...
-  libreHttp500: Ba a tallafa wa shigarwar da aka zaɓa da harshen fitarwa ba. Da fatan
-    za a zabi wani harshe daban!
   wwcConfigGUIDeepLTranslateButton: Fassara DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: An samu nasarar toggled DeepL
     Fassara. Sake saukewa don canje-canje don yin tasiri.
@@ -457,9 +449,6 @@ Messages:
   wwcrTransFail: An sake loda WorldwideChat amma ya kasa kunna mai fassara.
   wwcdCacheCleared: An share cache na fassara.
   wwcdInvalidCmd: Muhawara mara kyau!
-  systranHttpUnknown: 'Kuskuren http da ba a sani ba: {0}'
-  systranHttp400: Muggun sigogi da aka aika zuwa Systran. Zai iya zama mummunan harshe?
-  systranHttp500: Kuskuren uwar garken ciki daga ƙarshen Systran ({0}).
   wwcInvalidStorageSession: An kunna {0} a cikin daidaitawar ku, amma ba a kafa haɗin
     kai ba. Da fatan za a gwada sake loda don gyara wannan, amma da fatan za a tuntuɓi
     mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga {0}.
@@ -702,9 +691,6 @@ Messages:
   wwcAiSystemPromptBad: An gano mummunan Tsarin AI. Amfani da tsoho namu...
   wwcAiSupportedLangsBad: An gano yaruka masu goyon bayan AI mara kyau. Amfani da
     tsoffin mu...
-  chatGPTUnknown: 'Kuskuren http da ba a sani ba: {0}'
-  chatGPT500: Mummunan buƙata da aka aika zuwa ChatGPT. Idan wannan ya ci gaba, da
-    fatan za a tuntuɓi mai haɓakawa!
   wwcConfigGUIAISettings: Tsarin AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API maɓallin saita cikin nasara.
@@ -737,4 +723,18 @@ Messages:
   wwcConfigGUIAIChangeLangs: Gyara Harsunan AI masu tallafi
   wwcConfigConversationAILangAddSuccess: An sami nasarar ƙara sabon yare zuwa harsunan
     da ke tallafawa AI.
+  translatorBadAPIKey: Mabuɗin API mara kyau! Da fatan za a tabbatar kun buga shi
+    daidai.
+  translatorLimitExceeded: Ko dai kun wuce ƙimar sabis ɗin fassarar ku ko kuma an
+    iyakance ku. Da fatan za a duba mai bayarwa don ƙarin cikakkun bayanai.
+  translatorServerError: Kuskuren uwar garken ciki. Da fatan za a sake gwada daga
+    baya.
+  translatorForbidden: An haramta samun dama! Da fatan za a duba izinin ku.
+  translatorBadRequest: Mummunan buƙata. Da fatan za a duba shigarwar ku kuma sake
+    gwada.
+  translatorUnknownError: 'Kuskuren da ba a sani ba ya faru tare da lambar matsayi:
+    {0}.'
+  translatorURLNotFound: URL ɗin sabis ɗin fassara ba shi da inganci.
+  translatorMethodNotAllowed: Sabis ɗin fassara baya tallafawa wannan hanyar buƙata.
+  translatorNotFound: Ba a samu albarkatun fassarar da aka nema ba.
 

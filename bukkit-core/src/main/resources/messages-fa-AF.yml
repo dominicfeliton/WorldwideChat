@@ -328,15 +328,11 @@ Messages:
     بازگشت.
   wwcConfigConversationFatalAsyncSuccess: ایست وظیفه Async با موفقیت تنظیم شده است.
   wwcConfigGUIFatalAsyncAbortButton: تغییر Async وظیفه ایست
-  libreHttp400: درخواست بد ارسال به رایگان ترجمه! مگر اینکه شما کاری را انجام می دهید
-    که نباید انجام دهید، نباید این را دریافت کنید. لطفا با توسعه دهنده تماس بگیرید!
   wwcConfigGUILibreTranslateApiKeyButton: تغییر رایگان ترجمه API های کلیدی
-  libreHttp403: گمشده رایگان ترجمه API های کلیدی, و یا شما از سرور ممنوع!
   wwcConfigConversationLibreURLSuccess: URL رایگان با موفقیت تنظیم شده است.
   wwcConfigConversationLibreTranslateApiKeyInput: کلید API فعلی {0} است لطفا یک کلید
     API برای Libre وارد کنید، یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUILibreTranslateButton: رایگان ترجمه
-  libreHttp429: عدم اعتماد به نفس به دلیل محدودیت نرخ از سرور.
   wwcConfigGUIToggleLibreTranslateButton: تعویض رایگان ترجمه
   wwcConfigConversationLibreTranslateToggleSuccess: موفقیت جابجا رایگان ترجمه. بازنگری
     برای تغییرات به اثر.
@@ -344,7 +340,6 @@ Messages:
     شده است.
   wwcConfigConversationLibreURLInput: آدرس فعلی {0} است لطفا یک URL را برای Libre
     وارد کنید، یا 0 را برای بازگشت تایپ کنید.
-  libreHttpUnknown: 'خطای http ناشناخته: {0}'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
   wwcConfigConnectionFail: اتصال به {0} شکست خورد.
   wwcConfigConversationMongoDatabaseNameSuccess: نام پایگاه داده MongoDB را با موفقیت
@@ -386,8 +381,6 @@ Messages:
   wwcConfigGUIMongoPortButton: تغییر بندر مانگودیبی
   wwcConfigInvalidFatalAsyncTimeout: نامعتبر async کشنده مجموعه ایست. پیش فرض به 10
     ثانیه...
-  libreHttp500: جفت زبان ورودی و خروجی انتخاب شده شما پشتیبانی نمی شود. لطفا یک مجموعه
-    زبان های مختلف را انتخاب کنید!
   wwcConfigGUIDeepLTranslateButton: زدن ضامن ترجمه DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: با موفقیت جابجا DeepL ترجمه. بازنگری
     برای تغییرات به اثر.
@@ -458,9 +451,6 @@ Messages:
   wwcrTransFail: WorldwideChat را مجددا بارگذاری کرد اما موفق به فعال کردن مترجم نشد.
   wwcdCacheCleared: حافظه ترجمه پاک شد.
   wwcdInvalidCmd: استدلال نامعتبر!
-  systranHttpUnknown: 'خطای HTTP ناشناخته: {0}'
-  systranHttp400: پارامترهای بد ارسال شده به سیسترن آیا ممکن است یک جفت زبان بد باشد؟
-  systranHttp500: خطای سرور داخلی از نقطه انتهایی Systran ({0}).
   wwcInvalidStorageSession: '{0} در پیکربندی شما فعال است، اما اتصال ایجاد نشده است.
     لطفا برای رفع این موضوع دوباره بارگذاری کنید، اما اگر قبلاً پیام اتصال موفقیت
     آمیز از {0} دریافت کرده اید، لطفاً با توسعه دهنده تماس بگیرید.'
@@ -696,9 +686,6 @@ Messages:
     ما...
   wwcAiSupportedLangsBad: زبانهای پشتیبانی شده از AI بد شناسایی با استفاده از تنظیمات
     پیش فرض ما...
-  chatGPTUnknown: 'خطای HTTP ناشناخته: {0}'
-  chatGPT500: درخواست بد ارسال شده به ChatGPT. اگر این ادامه یابد، لطفا با توسعه دهنده
-    تماس بگیرید!
   wwcConfigGUIAISettings: پیکربندی AI
   wwcConfigGUIChatGPTButton: چت جی پی تی
   wwcConfigConversationChatGPTApiKeySuccess: کلید API ChatGPT با موفقیت تنظیم شده
@@ -732,4 +719,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: اصلاح زبان های AI پشتیبانی شده
   wwcConfigConversationAILangAddSuccess: با موفقیت یک زبان جدید به زبان های پشتیبانی
     شده توسط AI اضافه شد.
+  translatorBadAPIKey: کلید API بد! لطفا مطمئن شوید که آن را به درستی تایپ کرده اید.
+  translatorLimitExceeded: شما یا از سهمیه خدمات ترجمه خود فراتر رفته اید یا نرخ محدود
+    شده اید. لطفا برای جزئیات بیشتر ارائه دهنده خود را بررسی کنید.
+  translatorServerError: خطای سرور داخلی. لطفا بعدا دوباره امتحان کنید.
+  translatorForbidden: دسترسی ممنوع است! لطفا مجوزهای خود را بررسی کنید
+  translatorBadRequest: درخواست بد لطفا ورودی خود را بررسی کنید و دوباره امتحان کنید.
+  translatorUnknownError: 'خطای ناشناخته با کد وضعیت رخ داد: {0}.'
+  translatorURLNotFound: URL سرویس مترجم شما نامعتبر است.
+  translatorMethodNotAllowed: سرویس ترجمه از این روش درخواست پشتیبانی نمی کند.
+  translatorNotFound: منبع ترجمه درخواست شده یافت نشد.
 

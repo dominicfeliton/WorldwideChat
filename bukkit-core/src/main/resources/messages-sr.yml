@@ -327,15 +327,11 @@ Messages:
     ispod njega da se vrati.
   wwcConfigConversationFatalAsyncSuccess: Asinc zadatak timeout set uspešno.
   wwcConfigGUIFatalAsyncAbortButton: Promenite Asinc Task Timeout
-  libreHttp400: Loš zahtev poslat Libre Translate! Osim ako ne radite nešto što ne
-    biste trebali, ne biste trebali dobiti ovo. Molimo kontaktirajte programera!
   wwcConfigGUILibreTranslateApiKeyButton: Promena Free Translate API ključ
-  libreHttp403: Nedostaje Libre Translate API ključ, ili ste zabranjeni sa servera!
   wwcConfigConversationLibreURLSuccess: Free URL uspešno postavljen.
   wwcConfigConversationLibreTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
     unesite API ključ za Libre, ili unesite 0 da biste se vratili.
   wwcConfigGUILibreTranslateButton: Libre Prevod
-  libreHttp429: Nema poverenja zbog ograničenja stope sa servera.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Uspešno toggled Libre Translate.
     Ponovo učitajte da promene stupe na snagu.
@@ -343,7 +339,6 @@ Messages:
     postavljen.
   wwcConfigConversationLibreURLInput: Trenutni URL je {0}. Molimo unesite URL za Libre,
     ili unesite 0 da biste se vratili nazad.
-  libreHttpUnknown: 'Nepoznata http greška: {0}'
   wwcConfigGUILibreTranslateURLButton: Promena Besplatno Prevod URL
   wwcConfigConnectionFail: Neuspešno povezivanje sa {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Uspešno promenio ime MongoDB baze
@@ -384,8 +379,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Promenite MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Nevažeći fatalna asinc timeout set. Defaulting
     do 10 sekundi...
-  libreHttp500: Izabrani ulazni i izlazni jezički par nije podržan. Izaberite drugi
-    jezički skup!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Translate
   wwcConfigConversationDeepLTranslateToggleSuccess: Uspešno je prebacio DeepL Translate.
     Ponovo učitajte da promene stupe na snagu.
@@ -453,9 +446,6 @@ Messages:
   wwcrTransFail: Ponovo je učitao VorldWideChat, ali nije uspeo da omogući prevodioca.
   wwcdCacheCleared: Keš prevoda je izbrisan.
   wwcdInvalidCmd: Nevažeći argumenti!
-  systranHttpUnknown: 'Nepoznata http greška: {0}'
-  systranHttp400: Loši parametri poslati Sistranu. Možda je loš jezički par?
-  systranHttp500: Interna greška servera iz krajnje tačke Sistran ({0}).
   wwcInvalidStorageSession: '{0} je omogućeno u vašoj konfiguraciji, ali veza nije
     uspostavljena. Pokušajte ponovo da učitate da biste to rešili, ali kontaktirajte
     programera ako ste prethodno dobili uspešnu poruku o povezivanju od {0}.'
@@ -693,8 +683,6 @@ Messages:
   wwcAiSystemPromptBad: Otkriven je loš AI sistemski zahtev. Korišćenjem našeg podrazumevanog...
   wwcAiSupportedLangsBad: Otkriveni su loši jezici podržani za AI. Korišćenjem naših
     podrazumevanih vrednosti...
-  chatGPTUnknown: 'Nepoznata http greška: {0}'
-  chatGPT500: Loš zahtev poslat ChatGPT. Ako se ovo nastavi, kontaktirajte programera!
   wwcConfigGUIAISettings: AI konfiguracija
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API ključ je uspešno postavljen.
@@ -727,4 +715,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Izmenite podržane AI jezike
   wwcConfigConversationAILangAddSuccess: Uspešno je dodao novi jezik jezicima koji
     podržavaju AI.
+  translatorBadAPIKey: Loš API ključ! Uverite se da ste ga ispravno otkucali.
+  translatorLimitExceeded: Ili ste prekoračili kvotu za uslugu prevođenja ili ste
+    bili ograničeni. Molimo vas da proverite svog provajdera za više detalja.
+  translatorServerError: Interna greška servera. Pokušajte ponovo kasnije.
+  translatorForbidden: Pristup je zabranjen! Molimo proverite svoje dozvole.
+  translatorBadRequest: Loš zahtev. Proverite svoj unos i pokušajte ponovo.
+  translatorUnknownError: 'Došlo je do nepoznate greške sa statusnim kodom: {0}.'
+  translatorURLNotFound: URL usluge prevodioca je nevažeći.
+  translatorMethodNotAllowed: Usluga prevođenja ne podržava ovaj metod zahteva.
+  translatorNotFound: Traženi resurs za prevod nije pronađen.
 

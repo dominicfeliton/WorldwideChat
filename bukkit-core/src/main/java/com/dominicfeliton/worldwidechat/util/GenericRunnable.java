@@ -14,7 +14,7 @@ public abstract class GenericRunnable implements Cloneable, Runnable {
     public void run() {
         if (isCancelled) {
             // TODO: Logging could be platform-specific
-            refs.debugMsg("Task " + name +  " is already cancelled. Exiting.");
+            refs.debugMsg("Task " + name + " is already cancelled. Exiting.");
             task.cancel();
             return;
         }

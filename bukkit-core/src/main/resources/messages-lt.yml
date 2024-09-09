@@ -332,22 +332,17 @@ Messages:
     arba ką nors žemiau jo grįžti.
   wwcConfigConversationFatalAsyncSuccess: Async užduotis timeout nustatyti sėkmingai.
   wwcConfigGUIFatalAsyncAbortButton: Pakeisti Async Užduočių Laikas
-  libreHttp400: Blogas prašymas išsiųstas Libre Translate! Nebent jūs darote kažką,
-    ko neturėtumėte, neturėtumėte to gauti. Prašome susisiekti su kūrėju!
   wwcConfigGUILibreTranslateApiKeyButton: Keisti Nemokamai Versti API raktą
-  libreHttp403: Trūksta “Libre Translate API Key”, arba esate uždraustas iš serverio!
   wwcConfigConversationLibreURLSuccess: Nemokama URL sėkmingai nustatyti.
   wwcConfigConversationLibreTranslateApiKeyInput: Dabartinis API raktas yra {0}. Įveskite
     API raktą, skirtą “Libre”, arba įveskite 0, kad grįžtumėte.
   wwcConfigGUILibreTranslateButton: Nemokamai Versti
-  libreHttp429: Nėra pasitikėjimo dėl normos ribos nuo serverio.
   wwcConfigGUIToggleLibreTranslateButton: Perjungti Nemokamai Versti
   wwcConfigConversationLibreTranslateToggleSuccess: Sėkmingai perėjo Nemokamai Versti.
     Perkraukite, kad pakeitimai įsigaliotų.
   wwcConfigConversationLibreTranslateApiKeySuccess: Nemokamai API raktų rinkinys sėkmingai.
   wwcConfigConversationLibreURLInput: Dabartinis URL yra {0}. Įveskite URL, skirtą
     “Libre”, arba įveskite 0, kad grįžtumėte atgal.
-  libreHttpUnknown: 'Nežinoma http klaida: {0}'
   wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL
   wwcConfigConnectionFail: Nepavyko prisijungti prie {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Sėkmingai pakeitė MongoDB duomenų
@@ -393,8 +388,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Pakeisti MongoDB prievadą
   wwcConfigInvalidFatalAsyncTimeout: Neteisingas mirtinas async timeout rinkinys.
     Numatytasis iki 10 sekundžių...
-  libreHttp500: Pasirinkta įvesties ir išvesties kalbų pora nepalaikoma. Pasirinkite
-    kitą kalbos rinkinį!
   wwcConfigGUIDeepLTranslateButton: Perjungti DeepL versti
   wwcConfigConversationDeepLTranslateToggleSuccess: Sėkmingai perėjo DeepL Versti.
     Perkraukite, kad pakeitimai įsigaliotų.
@@ -462,9 +455,6 @@ Messages:
   wwcrTransFail: Iš naujo įkelta WorldwideChat, tačiau nepavyko įjungti vertėjo.
   wwcdCacheCleared: Vertimo talpykla buvo išvalyta.
   wwcdInvalidCmd: Neteisingi argumentai!
-  systranHttpUnknown: 'Nežinoma http klaida: {0}'
-  systranHttp400: Blogi parametrai išsiųsti “Systran”. Ar gali būti bloga kalbų pora?
-  systranHttp500: Vidinė serverio klaida iš Systran galutinio taško ({0}).
   wwcInvalidStorageSession: '{0} yra įjungta jūsų konfigūracijoje, tačiau ryšys nėra
     užmegztas. Pabandykite perkrauti, kad tai ištaisytumėte, tačiau kreipkitės į kūrėją,
     jei anksčiau gavote sėkmingo ryšio pranešimą iš {0}.'
@@ -713,8 +703,6 @@ Messages:
   wwcAiSystemPromptBad: Aptikta bloga AI sistemos raginimas. Naudojant mūsų numatytąjį...
   wwcAiSupportedLangsBad: Aptiktos blogos AI palaikomos kalbos. Naudojant mūsų numatytuosius
     nustatymus...
-  chatGPTUnknown: 'Nežinoma http klaida: {0}'
-  chatGPT500: Blogas prašymas išsiųstas ChatGPT. Jei tai išlieka, susisiekite su kūrėju!
   wwcConfigGUIAISettings: AI konfigūracija
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API raktas sėkmingai nustatytas.
@@ -747,4 +735,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: Pakeiskite palaikomas AI kalbas
   wwcConfigConversationAILangAddSuccess: Sėkmingai pridėta nauja kalba prie AI palaikomų
     kalbų.
+  translatorBadAPIKey: Blogas API raktas! Įsitikinkite, kad teisingai įvedėte.
+  translatorLimitExceeded: Jūs arba viršijote savo vertimo paslaugos kvotą, arba jums
+    buvo ribotas tarifas. Norėdami gauti daugiau informacijos, patikrinkite savo paslaugų
+    teikėją.
+  translatorServerError: Vidinė serverio klaida. Pabandykite dar kartą vėliau.
+  translatorForbidden: Prieiga draudžiama! Patikrinkite savo leidimus.
+  translatorBadRequest: Blogas prašymas. Patikrinkite savo įvestį ir bandykite dar
+    kartą.
+  translatorUnknownError: 'Įvyko nežinoma klaida naudojant būsenos kodą: {0}.'
+  translatorURLNotFound: Jūsų vertėjo paslaugos URL yra netinkamas.
+  translatorMethodNotAllowed: Vertimo paslauga nepalaiko šio užklausos metodo.
+  translatorNotFound: Prašomas vertimo šaltinis nerastas.
 

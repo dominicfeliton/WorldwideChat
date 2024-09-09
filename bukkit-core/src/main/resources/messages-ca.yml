@@ -351,16 +351,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async temps d'espera de tasques establert
     amb èxit.
   wwcConfigGUIFatalAsyncAbortButton: Canviar el temps d'espera de la tasca async
-  libreHttp400: Mal petició enviada a Libre Translate! A menys que vostè està fent
-    alguna cosa que vostè no ha, vostè no ha d'aconseguir això. Poseu-vos en contacte
-    amb el desenvolupador!
   wwcConfigGUILibreTranslateApiKeyButton: Canvia lliure Traduir API Key
-  libreHttp403: Falta Libre Translate API Key, o vostè està prohibit des del servidor!
   wwcConfigConversationLibreURLSuccess: URL lliure configurat correctament.
   wwcConfigConversationLibreTranslateApiKeyInput: La clau API actual és {0} Si us
     plau, introduïu una clau API per a Libre, o escriviu 0 per tornar enrere.
   wwcConfigGUILibreTranslateButton: Libre Traduir
-  libreHttp429: No hi ha confiança a causa del límit de velocitat del servidor.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traduir
   wwcConfigConversationLibreTranslateToggleSuccess: Successivament toggled Libre Translate.
     Torneu a carregar perquè els canvis tinguin efecte.
@@ -368,7 +363,6 @@ Messages:
     tecla API lliure.
   wwcConfigConversationLibreURLInput: L'URL actual és {0} Si us plau, introduïu un
     URL per a Libre, o escriviu 0 per tornar enrere.
-  libreHttpUnknown: 'Error http desconegut: {0}'
   wwcConfigGUILibreTranslateURLButton: Canvia l'URL de traducció lliure
   wwcConfigConnectionFail: No s'ha pogut connectar a {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: S'ha canviat correctament el nom
@@ -413,8 +407,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Canviar el port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Conjunt de temps d'espera asínc fatal no vàlid.
     Per defecte a 10 segons...
-  libreHttp500: El parell d'idiomes d'entrada i sortida seleccionat no és compatible.
-    Si us plau, tria un conjunt d'idiomes diferent!
   wwcConfigGUIDeepLTranslateButton: Commuta DeepL Traduir
   wwcConfigConversationDeepLTranslateToggleSuccess: Successivament Toggled DeepL Translate.
     Torneu a carregar perquè els canvis tinguin efecte.
@@ -488,10 +480,6 @@ Messages:
     un traductor.
   wwcdCacheCleared: La memòria cau de traducció s'ha esborrat.
   wwcdInvalidCmd: Arguments no vàlids!
-  systranHttpUnknown: 'Error http desconegut: {0}'
-  systranHttp400: Paràmetres dolents enviats a Systran. Pot ser un parell d'idiomes
-    dolent?
-  systranHttp500: Error intern del servidor des del punt final de Systran ({0}).
   wwcInvalidStorageSession: '{0} està activat a la vostra configuració, però no s''estableix
     una connexió. Si us plau, proveu de tornar a carregar per solucionar això, però
     poseu-vos en contacte amb el desenvolupador si prèviament heu rebut un missatge
@@ -752,9 +740,6 @@ Messages:
     nostre predeterminat...
   wwcAiSupportedLangsBad: Detectats llenguatges compatibles amb AI dolents. Utilitzant
     els nostres valors predeterminats...
-  chatGPTUnknown: 'Error http desconegut: {0}'
-  chatGPT500: Petició dolenta enviada a ChatGPT. Si això persisteix, poseu-vos en
-    contacte amb el desenvolupador!
   wwcConfigGUIAISettings: Configuració de la IA
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: La clau de l'API ChatGPT s'ha establert
@@ -788,4 +773,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: Modificar els llenguatges d'IA compatibles
   wwcConfigConversationAILangAddSuccess: S'ha afegit amb èxit un nou idioma als idiomes
     compatibles amb IA.
+  translatorBadAPIKey: Mala clau API! Assegureu-vos que l'heu escrit correctament.
+  translatorLimitExceeded: Has superat la quota del teu servei de traducció o t'han
+    limitat la tarifa. Consulteu el vostre proveïdor per obtenir més detalls.
+  translatorServerError: Error intern del servidor. Si us plau, torneu-ho a provar
+    més tard.
+  translatorForbidden: L'accés està prohibit! Si us plau, comproveu els vostres permisos.
+  translatorBadRequest: Mala petició. Si us plau, comproveu la vostra entrada i torneu
+    a intentar-ho.
+  translatorUnknownError: 'S''ha produït un error desconegut amb el codi d''estat:
+    {0}.'
+  translatorURLNotFound: L'URL del vostre servei de traductor no és vàlid.
+  translatorMethodNotAllowed: El servei de traducció no admet aquest mètode de sol·licitud.
+  translatorNotFound: No s'ha trobat el recurs de traducció sol·licitat.
 

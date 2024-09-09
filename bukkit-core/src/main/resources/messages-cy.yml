@@ -335,16 +335,11 @@ Messages:
     beth oddi tano i fynd yn ôl.
   wwcConfigConversationFatalAsyncSuccess: Amserlen tasg Async gosod yn llwyddiannus.
   wwcConfigGUIFatalAsyncAbortButton: Newid Amserlen Tasg Async
-  libreHttp400: Cais gwael wedi'i anfon i Libre Translate! Oni bai eich bod yn gwneud
-    rhywbeth na ddylech, ni ddylech gael hyn. Cysylltwch â'r datblygwr!
   wwcConfigGUILibreTranslateApiKeyButton: Newid Free Cyfieithu API Allweddol
-  libreHttp403: Ar goll Cyfieithu Allwedd API Libre, neu rydych yn cael eu gwahardd
-    o'r gweinydd!
   wwcConfigConversationLibreURLSuccess: URL Libre wedi'i osod yn llwyddiannus.
   wwcConfigConversationLibreTranslateApiKeyInput: Yr allwedd API gyfredol yw {0} Mewnbynnwch
     allwedd API ar gyfer Libre, neu deipiwch 0 i fynd yn ôl.
   wwcConfigGUILibreTranslateButton: Libre Cyfieithu
-  libreHttp429: Dim hyder oherwydd terfyn cyfradd o'r gweinydd.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Cyfieithu
   wwcConfigConversationLibreTranslateToggleSuccess: Toglo Libre Translate yn llwyddiannus.
     Ail-lwytho er mwyn i'r newidiadau ddod i rym.
@@ -352,7 +347,6 @@ Messages:
     yn llwyddiannus.
   wwcConfigConversationLibreURLInput: Yr URL cyfredol yw {0}, mewnbynnwch URL ar gyfer
     Libre, neu deipiwch 0 i fynd yn ôl.
-  libreHttpUnknown: 'Gwall http anhysbys: {0}'
   wwcConfigGUILibreTranslateURLButton: Newid Libre Cyfieithu URL
   wwcConfigConnectionFail: Methwyd cysylltu â {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Newid enw cronfa ddata MongoDB yn
@@ -389,8 +383,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Newid Porthladd MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Set amser async angheuol annilys. Yn ddiffygiol
     i 10 eiliad...
-  libreHttp500: Ni chefnogir eich pâr iaith mewnbwn ac allbwn a ddewiswyd. Dewiswch
-    set iaith wahanol!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Cyfieithu
   wwcConfigConversationDeepLTranslateToggleSuccess: Toglo DeepL Translate yn llwyddiannus.
     Ail-lwytho er mwyn i'r newidiadau ddod i rym.
@@ -462,10 +454,6 @@ Messages:
   wwcrTransFail: Aillwythwyd WorldwideChat ond methodd â galluogi cyfieithydd.
   wwcdCacheCleared: Cliriwyd y storfa cyfieithu.
   wwcdInvalidCmd: Dadleuon annilys!
-  systranHttpUnknown: 'Gwall http anhysbys: {0}'
-  systranHttp400: Paramedrau gwael a anfonwyd i Systran. Efallai bod yn bâr iaith
-    gwael?
-  systranHttp500: Gwall gweinydd mewnol o derfyn Systran ({0}).
   wwcInvalidStorageSession: Mae {0} wedi'i alluogi yn eich config, ond nid yw cysylltiad
     wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
     os cawsoch neges gysylltiad llwyddiannus o'r blaen gan {0}.
@@ -710,9 +698,6 @@ Messages:
   wwcAiSystemPromptBad: Canfuwyd Prompt System AI gwael. Gan ddefnyddio ein diofyn...
   wwcAiSupportedLangsBad: Canfuwyd Ieithoedd a Gefnogir AI gwael. Gan ddefnyddio ein
     rhagosodiadau...
-  chatGPTUnknown: 'Gwall http anhysbys: {0}'
-  chatGPT500: Cais gwael a anfonwyd i ChatGPT. Os bydd hyn yn parhau, cysylltwch â'r
-    datblygwr!
   wwcConfigGUIAISettings: Ffurfweddiad AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Gosodwyd allwedd API ChatGPT yn llwyddiannus.
@@ -745,4 +730,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: Addasu Ieithoedd AI a Gefnogir
   wwcConfigConversationAILangAddSuccess: Ychwanegodd iaith newydd yn llwyddiannus
     i'r ieithoedd a gefnogir gan AI.
+  translatorBadAPIKey: Allwedd API gwael! Gwnewch yn siŵr eich bod wedi ei deipio'n
+    gywir.
+  translatorLimitExceeded: Rydych naill ai wedi rhagori ar y cwota ar gyfer eich gwasanaeth
+    cyfieithu neu rydych wedi cael eich cyfyngu ar ardrethi. Gwiriwch eich darparwr
+    am fwy o fanylion.
+  translatorServerError: Gwall gweinydd mewnol. Rhowch gynnig eto yn nes ymlaen.
+  translatorForbidden: Gwaherddir mynediad! Gwiriwch eich caniatâd.
+  translatorBadRequest: Cais gwael. Gwiriwch eich mewnbwn a cheisiwch eto.
+  translatorUnknownError: 'Digwyddodd gwall anhysbys gyda''r cod statws: {0}.'
+  translatorURLNotFound: Mae URL eich gwasanaeth cyfieithu yn annilys.
+  translatorMethodNotAllowed: Nid yw'r gwasanaeth cyfieithu yn cefnogi'r dull cais
+    hwn.
+  translatorNotFound: Ni ddarganfuwyd yr adnodd cyfieithu gofynnwyd amdano.
 

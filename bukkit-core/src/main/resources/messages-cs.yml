@@ -332,22 +332,17 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Asynchronní časový limit úloh byl úspěšně
     nastaven.
   wwcConfigGUIFatalAsyncAbortButton: Změna časového limtu asynchronních úloh
-  libreHttp400: Špatný požadavek zaslán Libre Translate! Pokud neděláte něco, co byste
-    neměli, neměli byste to dostat. Kontaktujte vývojáře!
   wwcConfigGUILibreTranslateApiKeyButton: Změnit zdarma Přeložit API Key
-  libreHttp403: Chybějící Libre Translate API Key, nebo máte ze serveru zakázán!
   wwcConfigConversationLibreURLSuccess: Knihovna URL byla úspěšně nastavena.
   wwcConfigConversationLibreTranslateApiKeyInput: Aktuální klíč API je {0}. Zadejte
     prosím klíč API pro Libre, nebo zadejte 0, abyste se vrátili zpět.
   wwcConfigGUILibreTranslateButton: Libre Přeložit
-  libreHttp429: Žádná důvěra kvůli limitu rychlosti ze serveru.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Přeložit
   wwcConfigConversationLibreTranslateToggleSuccess: Úspěšně přepnout Libre Translate.
     Znovu načtěte, aby se změny projevily.
   wwcConfigConversationLibreTranslateApiKeySuccess: Klíč zdarma API úspěšně nastaven.
   wwcConfigConversationLibreURLInput: Aktuální URL je {0}. Zadejte prosím URL pro
     Libre, nebo zadejte 0 pro návrat zpět.
-  libreHttpUnknown: 'Neznámá chyba http: {0}'
   wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL
   wwcConfigConnectionFail: Připojení k {0} se nezdařilo.
   wwcConfigConversationMongoDatabaseNameSuccess: Úspěšně změnil název databáze MongoDB.
@@ -387,8 +382,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Změnit port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neplatná fatální asynchronní sada časového limitu.
     Výchozí nastavení na 10 sekund...
-  libreHttp500: Váš vybraný vstupní a výstupní jazykový pár není podporován. Zvolte
-    prosím jinou jazykovou sadu!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Přeložit
   wwcConfigConversationDeepLTranslateToggleSuccess: Úspěšně přepnout DeepL Translate.
     Znovu načtěte, aby se změny projevily.
@@ -457,10 +450,6 @@ Messages:
   wwcrTransFail: Přeinstalován WorldwideChat, ale nepodařilo se povolit překladač.
   wwcdCacheCleared: Mezipaměť překladu byla vymazána.
   wwcdInvalidCmd: Neplatné argumenty!
-  systranHttpUnknown: 'Neznámá chyba http: {0}'
-  systranHttp400: Špatné parametry odeslány do Systran. Může to být špatný jazykový
-    pár?
-  systranHttp500: Interní chyba serveru z koncového bodu Systran ({0}).
   wwcInvalidStorageSession: '{0} je ve vaší konfiguraci povoleno, ale spojení není
     navázáno. Zkuste to znovu načíst, ale kontaktujte vývojáře, pokud jste dříve obdrželi
     zprávu o úspěšném připojení od {0}.'
@@ -695,9 +684,6 @@ Messages:
   wwcAiSystemPromptBad: Byla zjištěna špatná systémová výzva AI. Pomocí našeho výchozího...
   wwcAiSupportedLangsBad: Byly zjištěny špatné jazyky podporované umělou inteligencí.
     Používáme naše výchozí hodnoty...
-  chatGPTUnknown: 'Neznámá chyba http: {0}'
-  chatGPT500: Špatný požadavek odeslán do ChatGPT. Pokud to přetrvává, kontaktujte
-    vývojáře!
   wwcConfigGUIAISettings: Konfigurace AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Klíč ChatGPT API byl úspěšně nastaven.
@@ -730,4 +716,15 @@ Messages:
   wwcConfigGUIAIChangeLangs: Upravit podporované jazyky AI
   wwcConfigConversationAILangAddSuccess: Úspěšně přidán nový jazyk do jazyků podporovaných
     umělou inteligencí.
+  translatorBadAPIKey: Špatný klíč API! Ujistěte se, že jste jej zadali správně.
+  translatorLimitExceeded: Buď jste překročili kvótu pro svou překladatelskou službu,
+    nebo jste byli omezeni sazbou. Další podrobnosti získáte u svého poskytovatele.
+  translatorServerError: Interní chyba serveru. Zkuste to prosím znovu později.
+  translatorForbidden: Přístup je zakázán! Zkontrolujte prosím svá oprávnění.
+  translatorBadRequest: Špatný požadavek. Zkontrolujte prosím svůj vstup a zkuste
+    to znovu.
+  translatorUnknownError: 'Došlo k neznámé chybě se stavovým kódem: {0}.'
+  translatorURLNotFound: Adresa URL služby překladatele je neplatná.
+  translatorMethodNotAllowed: Překladatelská služba tuto metodu požadavku nepodporuje.
+  translatorNotFound: Požadovaný zdroj překladu nebyl nalezen.
 

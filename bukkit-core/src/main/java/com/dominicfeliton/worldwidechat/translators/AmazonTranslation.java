@@ -1,17 +1,12 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.http.urlconnection.UrlConnectionHttpClient;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.translate.TranslateClient;
-import software.amazon.awssdk.services.translate.model.Language;
-import software.amazon.awssdk.services.translate.model.ListLanguagesRequest;
-import software.amazon.awssdk.services.translate.model.ListLanguagesResponse;
-import software.amazon.awssdk.services.translate.model.TranslateTextRequest;
-import software.amazon.awssdk.services.translate.model.TranslateTextResponse;
+import software.amazon.awssdk.services.translate.model.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -20,7 +15,6 @@ import java.util.concurrent.ExecutorService;
 
 public class AmazonTranslation extends BasicTranslation {
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
     private TranslateClient translate;
 
     public AmazonTranslation(String accessKeyId, String secretKeyId, String region, boolean isInitializing, ExecutorService callbackExecutor) {

@@ -1,8 +1,6 @@
 package com.dominicfeliton.worldwidechat.translators;
 
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import io.github.brenoepics.at4j.AzureApi;
 import io.github.brenoepics.at4j.AzureApiBuilder;
@@ -15,12 +13,12 @@ import io.github.brenoepics.at4j.data.response.DetectResponse;
 import io.github.brenoepics.at4j.data.response.TranslationResponse;
 
 import java.util.*;
-import java.util.concurrent.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
 
 public class AzureTranslation extends BasicTranslation {
 
     private final AzureApi translate;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
     public AzureTranslation(String apiKey, String region, boolean isInitializing, ExecutorService callbackExecutor) {
         super(isInitializing, callbackExecutor);

@@ -4,7 +4,6 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -33,7 +32,7 @@ public class ChatGPTSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatGPTApiKeySuccess",
-                    new String[] {"Translator.chatGPTAPIKey", "Translator.useChatGPT"}, new Object[] {input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
+                    new String[]{"Translator.chatGPTAPIKey", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
         }
     }
 
@@ -45,7 +44,7 @@ public class ChatGPTSettingsConvos {
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
             return refs.getPlainMsg("wwcConfigConversationChatGPTURLInput",
-                    "&6"+main.getConfigManager().getMainConfig().getString("Translator.chatGPTURL"),
+                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.chatGPTURL"),
                     "&b",
                     currPlayer);
         }
@@ -53,7 +52,7 @@ public class ChatGPTSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatGPTURLSuccess",
-                    new String[] {"Translator.chatGPTURL", "Translator.useChatGPT"}, new Object[] {input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
+                    new String[]{"Translator.chatGPTURL", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
         }
     }
 
@@ -65,7 +64,7 @@ public class ChatGPTSettingsConvos {
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
             return refs.getPlainMsg("wwcConfigConversationChatGPTVersionInput",
-                    "&6"+main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel"),
+                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel"),
                     "&b",
                     currPlayer);
         }
@@ -73,7 +72,7 @@ public class ChatGPTSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatGPTModelSuccess",
-                    new String[] {"Translator.chatGPTModel", "Translator.useChatGPT"}, new Object[] {input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
+                    new String[]{"Translator.chatGPTModel", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
         }
     }
 

@@ -16,7 +16,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -82,7 +81,7 @@ public class AILangGui implements InventoryProvider {
             pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 
             /* Save Button */
-            invManager.setCommonButton(5, 0, player, contents,"Quit");
+            invManager.setCommonButton(5, 0, player, contents, "Quit");
 
             /* Bottom Left Option: Previous Page */
             if (!pagination.isFirst()) {
@@ -92,7 +91,7 @@ public class AILangGui implements InventoryProvider {
             }
 
             /* Bottom Middle Option: Add new AI lang */
-            invManager.genericConversationButton(5 ,4, player, contents, new AISettingsConvos.AddLang(getAILangs()), XMaterial.WRITABLE_BOOK, "wwcConfigGUIAILangNewButton");
+            invManager.genericConversationButton(5, 4, player, contents, new AISettingsConvos.AddLang(getAILangs()), XMaterial.WRITABLE_BOOK, "wwcConfigGUIAILangNewButton");
 
             /* Bottom Right Option: Next Page */
             if (!pagination.isLast()) {
@@ -100,13 +99,14 @@ public class AILangGui implements InventoryProvider {
             }
 
             /* Last Option: Page Number */
-            invManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+            invManager.setCommonButton(5, 8, player, contents, "Page Number", new String[]{pagination.getPage() + 1 + ""});
         } catch (Exception e) {
             invManager.inventoryError(player, e);
         }
     }
 
     @Override
-    public void update(Player player, InventoryContents contents) {}
+    public void update(Player player, InventoryContents contents) {
+    }
 
 }

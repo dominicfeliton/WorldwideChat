@@ -337,16 +337,11 @@ Messages:
     yoki orqaga qaytish uchun uning ostidagi narsalarni kiriting.
   wwcConfigConversationFatalAsyncSuccess: Async vazifa vaqt muvaffaqiyatli belgilangan.
   wwcConfigGUIFatalAsyncAbortButton: Async Vazifa vaqtini o'zgartirish
-  libreHttp400: Yomon so'rov Libre Translate-ga yuborilgan! Agar siz buni qilmasligingiz
-    kerak bo'lgan biror narsa qilmasangiz, buni olmasligingiz kerak. Iltimos, ishlab
-    chiquvchi bilan bog'laning!
   wwcConfigGUILibreTranslateApiKeyButton: O'zgartirish Bepul API Kalit Tarjima
-  libreHttp403: Libre Tarjima API kalitini etishmayotgan yoki siz serverdan taqiqlangan!
   wwcConfigConversationLibreURLSuccess: Libre URL muvaffaqiyatli o'rnatildi.
   wwcConfigConversationLibreTranslateApiKeyInput: Joriy API kaliti {0}. Iltimos, Libre
     uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
   wwcConfigGUILibreTranslateButton: Free Tarjima
-  libreHttp429: Serverdan stavka cheklovi tufayli ishonch yo'q.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Bepul Tarjima
   wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate-ni muvaffaqiyatli
     almashtirdi. O'zgarishlar kuchga kirishi uchun qayta yuklang.
@@ -354,7 +349,6 @@ Messages:
     o'rnatildi.
   wwcConfigConversationLibreURLInput: Joriy URL {0}. Iltimos, Libre uchun URL manzilini
     kiriting yoki orqaga qaytish uchun 0 yozing.
-  libreHttpUnknown: 'Nomaʼlum http xatosi: {0}'
   wwcConfigGUILibreTranslateURLButton: Bepul Tarjima URL o'zgartirish
   wwcConfigConnectionFail: '{0} ga ulanib boʻlmadi.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ma'lumotlar bazasi nomini
@@ -397,8 +391,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB portini o'zgartiring
   wwcConfigInvalidFatalAsyncTimeout: Noto'g'ri halokatli async vaqt tugashi to'plami.
     10 soniyagacha defolt...
-  libreHttp500: Tanlangan kirish va chiqish tili juftligi qo'llab-quvvatlanmaydi.
-    Iltimos, boshqa til to'plamini tanlang!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Tarjimani
   wwcConfigConversationDeepLTranslateToggleSuccess: DeepL Translate-ni muvaffaqiyatli
     almashtirdi. O'zgarishlar kuchga kirishi uchun qayta yuklang.
@@ -471,10 +463,6 @@ Messages:
   wwcrTransFail: WorldwideChat-ni qayta yukladi, lekin tarjimonni yoqmadi.
   wwcdCacheCleared: Tarjima keshi tozalandi.
   wwcdInvalidCmd: Yaroqsiz dalillar!
-  systranHttpUnknown: 'Noma''lum http xatosi: {0}'
-  systranHttp400: Systranga yuborilgan yomon parametrlar. Yomon til juftligi bo'lishi
-    mumkinmi?
-  systranHttp500: Systran so'nggi nuqtasi ({0}) dan ichki server xatosi.
   wwcInvalidStorageSession: Sizning config da {0} yoqilgan, lekin ulanish o'rnatilmagan.
     Iltimos, buni tuzatish uchun qayta yuklashni sinab ko'ring, lekin iltimos, iltimos,
     {0} dan muvaffaqiyatli ulanish xabarini olgan bo'lsangiz, ishlab chiquvchiga murojaat
@@ -734,9 +722,6 @@ Messages:
     foydalanish...
   wwcAiSupportedLangsBad: Yomon AI qo'llab-quvvatlanadigan tillar aniqlandi. Bizning
     standart parametrlarimizdan foydalanish...
-  chatGPTUnknown: 'Noma''lum http xatosi: {0}'
-  chatGPT500: ChatGPT ga yomon so'rov yuborildi. Agar bu davom etsa, iltimos, ishlab
-    chiquvchiga murojaat qiling!
   wwcConfigGUIAISettings: AI konfiguratsiyasi
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API kaliti muvaffaqiyatli o'rnatildi.
@@ -770,4 +755,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: Qo'llab-quvvatlanadigan AI tillarini o'zgartiring
   wwcConfigConversationAILangAddSuccess: AI qo'llab-quvvatlanadigan tillarga yangi
     tilni muvaffaqiyatli qo'shdi.
+  translatorBadAPIKey: Yomon API kaliti! Iltimos, uni to'g'ri yozganingizga ishonch
+    hosil qiling.
+  translatorLimitExceeded: Siz yoki tarjima xizmati uchun kvota oshib ketdi yoki siz
+    stavkasi cheklangan edi. Batafsil ma'lumot uchun provayderingizni tekshiring.
+  translatorServerError: Ichki server xatosi. Iltimos, keyinroq qayta urinib ko'ring.
+  translatorForbidden: Kirish taqiqlangan! Iltimos, ruxsatnomalaringizni tekshiring.
+  translatorBadRequest: Yomon so'rov. Iltimos, kiritishingizni tekshiring va qayta
+    urinib ko'ring.
+  translatorUnknownError: 'Status kodi bilan noma''lum xato yuz berdi: {0}.'
+  translatorURLNotFound: Tarjimon xizmatingiz URL manzili yaroqsiz.
+  translatorMethodNotAllowed: Tarjima xizmati ushbu so'rov usulini qo'llab-quvvatlamaydi.
+  translatorNotFound: So'ralgan tarjima resursi topilmadi.
 

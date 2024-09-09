@@ -339,15 +339,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async časovna omejitev opravila je bila
     uspešno nastavljena.
   wwcConfigGUIFatalAsyncAbortButton: Spremeni časovno omejitev opravila Async
-  libreHttp400: Slaba zahteva, poslana Libre Translate! Razen če delaš nekaj, česar
-    ne bi smeli, tega ne bi smeli dobiti. Obrnite se na razvijalca!
   wwcConfigGUILibreTranslateApiKeyButton: Spremenite brezplačno prevajanje API Key
-  libreHttp403: Manjka Libre Translate API Key, ali ste prepovedani s strežnika!
   wwcConfigConversationLibreURLSuccess: Prosti URL uspešno nastavljen.
   wwcConfigConversationLibreTranslateApiKeyInput: Trenutni ključ API je {0}. Prosimo,
     vnesite API ključ za Libre ali vnesite 0, da se vrnete nazaj.
   wwcConfigGUILibreTranslateButton: Libre Prevedi
-  libreHttp429: Brez zaupanja zaradi omejitve stopnje iz strežnika.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Uspešno preusmerjen Libre Translate.
     Ponovno naložite, da bodo spremembe začele veljati.
@@ -355,7 +351,6 @@ Messages:
     nastavljen.
   wwcConfigConversationLibreURLInput: Trenutni URL je {0}. Prosimo, vnesite URL za
     Libre ali vnesite 0, da se vrnete nazaj.
-  libreHttpUnknown: 'Neznana napaka http: {0}'
   wwcConfigGUILibreTranslateURLButton: Spremeni URL za brezplačno prevajanje
   wwcConfigConnectionFail: Povezava z {0} ni uspela.
   wwcConfigConversationMongoDatabaseNameSuccess: Uspešno spremenil ime baze podatkov
@@ -395,8 +390,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Spremenite vrata MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neveljavna usodna async timeout niz. Defaulting
     do 10 sekund...
-  libreHttp500: Izbrani par vhodnih in izhodnih jezikov ni podprt. Izberite drug nabor
-    jezikov!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Prevedi
   wwcConfigConversationDeepLTranslateToggleSuccess: Uspešno preusmerjen DeepL Translate.
     Ponovno naložite, da bodo spremembe začele veljati.
@@ -466,9 +459,6 @@ Messages:
   wwcrTransFail: Ponovno naložil WorldwideChat, vendar ni uspel omogočiti prevajalca.
   wwcdCacheCleared: Prevodni predpomnilnik je bil izbrisan.
   wwcdInvalidCmd: Neveljavni argumenti!
-  systranHttpUnknown: 'Neznana napaka http: {0}'
-  systranHttp400: Slabi parametri poslani Systran. Je morda slab jezikovni par?
-  systranHttp500: Napaka notranjega strežnika iz končne točke Systran ({0}).
   wwcInvalidStorageSession: '{0} je omogočeno v vaši konfiguraciji, vendar povezava
     ni vzpostavljena. Če želite to popraviti, poskusite ponovno naložiti, vendar se
     obrnite na razvijalca, če ste prej prejeli sporočilo o uspešni povezavi od {0}.'
@@ -705,8 +695,6 @@ Messages:
   wwcAiSystemPromptBad: Zaznan je slab sistemski poziv AI. Uporaba našega privzetega...
   wwcAiSupportedLangsBad: Zaznani so slabi jeziki, ki podpirajo AI. Uporaba privzetih
     nastavitev...
-  chatGPTUnknown: 'Neznana napaka http: {0}'
-  chatGPT500: Slaba zahteva poslana ChatGPT. Če se to nadaljuje, se obrnite na razvijalca!
   wwcConfigGUIAISettings: Konfiguracija AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Uspešno nastavljen ključ API ChatGPT.
@@ -739,4 +727,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Spreminjanje podprtih jezikov AI
   wwcConfigConversationAILangAddSuccess: Uspešno dodal nov jezik jezikom, podprtim
     AI.
+  translatorBadAPIKey: Slab ključ API! Prepričajte se, da ste ga pravilno vnesli.
+  translatorLimitExceeded: Prekoračili ste kvoto za prevajalsko storitev ali pa ste
+    bili omejeni. Za več podrobnosti preverite svojega ponudnika.
+  translatorServerError: Napaka notranjega strežnika. Prosimo, poskusite znova kasneje.
+  translatorForbidden: Dostop je prepovedan! Prosimo, preverite svoja dovoljenja.
+  translatorBadRequest: Slaba zahteva. Prosimo, preverite svoj vnos in poskusite znova.
+  translatorUnknownError: 'Prišlo je do neznane napake s kodo stanja: {0}.'
+  translatorURLNotFound: URL storitve prevajalca ni veljaven.
+  translatorMethodNotAllowed: Prevajalska storitev ne podpira tega načina zahteve.
+  translatorNotFound: Zahtevanega vira za prevajanje ni bilo mogoče najti.
 

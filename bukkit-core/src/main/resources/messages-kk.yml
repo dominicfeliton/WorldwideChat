@@ -327,22 +327,17 @@ Messages:
     оралу үшін төмендегі нәрсені теріңіз.
   wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
   wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
-  libreHttp400: Жаман сұрау Libre Translate жіберілді! Егер сіз қажет емес нәрсе жасамасаңыз,
-    мұны алмауыңыз керек. Әзірлеушіге хабарласыңыз!
   wwcConfigGUILibreTranslateApiKeyButton: Өзгерту Тегін API кілт аудару
-  libreHttp403: Missing Libre API кілті Translate, немесе сіз серверден тыйым салынған!
   wwcConfigConversationLibreURLSuccess: Тегін URL сәтті орнатылған.
   wwcConfigConversationLibreTranslateApiKeyInput: Ағымдағы API кілті {0} болып табылады.
     Libre үшін API кілтін енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
   wwcConfigGUILibreTranslateButton: Тегін Аударма
-  libreHttp429: Серверден мөлшерлеме лимитіне байланысты сенімділік жоқ.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Тегін Аударма
   wwcConfigConversationLibreTranslateToggleSuccess: Табысты Toggled Libre Аударма.
     Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
   wwcConfigConversationLibreTranslateApiKeySuccess: Табысты орнату Тегін API кілті.
   wwcConfigConversationLibreURLInput: Ағымдағы URL {0} болып табылады. Libre үшін
     URL енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
-  libreHttpUnknown: 'Белгісіз http қатесі: {0}'
   wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL
   wwcConfigConnectionFail: '{0} қосыла алмады.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB дерекқорының атауын сәтті
@@ -382,8 +377,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB порты
   wwcConfigInvalidFatalAsyncTimeout: Жарамсыз өлімге async тайм-аут жиынтығы. 10 секундқа
     дейін дефолт...
-  libreHttp500: Таңдалған кіріс және шығыс тіл жұбына қолдау көрсетілмейді. Басқа
-    тіл жиынтығын таңдаңыз!
   wwcConfigGUIDeepLTranslateButton: DeepL аудармасын ауыстырыңыз
   wwcConfigConversationDeepLTranslateToggleSuccess: DeepL аудармасын сәтті ауыстырды.
     Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
@@ -450,10 +443,6 @@ Messages:
   wwcrTransFail: WorldwideChat-ті қайта жүктеді, бірақ аудармашы қосылмады.
   wwcdCacheCleared: Аударма кэші тазартылды.
   wwcdInvalidCmd: Жарамсыз дәлелдер!
-  systranHttpUnknown: 'Белгісіз http қатесі: {0}'
-  systranHttp400: Systran-ге жіберілген нашар параметрлер. Жаман тіл жұбы болуы мүмкін
-    бе?
-  systranHttp500: Systran соңғы нүктесінен ({0}) ішкі сервер қатесі.
   wwcInvalidStorageSession: '{0} сіздің конфигурацияңызда қосулы, бірақ байланыс орнатылмаған.
     Пожалуйста, мұны түзету үшін қайта жүктеп көріңіз, бірақ егер сіз бұрын {0} -дан
     сәтті қосылым туралы хабарды алған болсаңыз, әзірлеушіге хабарласыңыз.'
@@ -694,9 +683,6 @@ Messages:
   wwcAiSystemPromptBad: Нашар AI жүйесінің нұсқауы анықталды. Біздің әдепкі пайдалану...
   wwcAiSupportedLangsBad: Нашар AI қолдайтын тілдер анықталды. Біздің әдепкі параметрлерді
     пайдалану...
-  chatGPTUnknown: 'Белгісіз http қатесі: {0}'
-  chatGPT500: ChatGPT сайтына жіберілген нашар сұрау. Егер бұл сақталса, әзірлеушіге
-    хабарласыңыз!
   wwcConfigGUIAISettings: AI конфигурациясы
   wwcConfigGUIChatGPTButton: ЧатGPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API кілті сәтті орнатылды.
@@ -728,4 +714,14 @@ Messages:
   wwcConfigGUIAILangNewButton: Жаңа тіл қосу
   wwcConfigGUIAIChangeLangs: Қолдау көрсетілетін AI тілдерін өзгерту
   wwcConfigConversationAILangAddSuccess: AI қолдайтын тілдерге жаңа тіл сәтті қосты.
+  translatorBadAPIKey: Жаман API кілті! Оны дұрыс тергеніңізге көз жеткізіңіз.
+  translatorLimitExceeded: Сіз аударма қызметіңіздің квотасынан асып кеттіңіз немесе
+    мөлшерлеме шектеулі болдыңыз. Қосымша ақпарат алу үшін провайдеріңізді тексеріңіз.
+  translatorServerError: Ішкі сервер қатесі. Кейінірек қайталап көріңіз.
+  translatorForbidden: Кіруге тыйым салынады! Рұқсаттарыңызды тексеріңіз.
+  translatorBadRequest: Жаман сұрау. Енгізуді тексеріп, қайталап көріңіз.
+  translatorUnknownError: 'Күй кодымен белгісіз қате пайда болды: {0}.'
+  translatorURLNotFound: Аудармашы қызметінің URL мекенжайы жарамсыз.
+  translatorMethodNotAllowed: Аударма қызметі бұл сұрау әдісін қолдамайды.
+  translatorNotFound: Сұралған аударма ресурсы табылмады.
 

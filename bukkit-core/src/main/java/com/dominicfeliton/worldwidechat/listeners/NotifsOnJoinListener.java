@@ -16,59 +16,59 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class NotifsOnJoinListener implements Listener {
 
-	private WorldwideChat main = WorldwideChat.instance;
+    private WorldwideChat main = WorldwideChat.instance;
 
-	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	@EventHandler(priority = EventPriority.HIGHEST)
-	public void sendNotifsOnPlayerJoin(PlayerJoinEvent event) {
-		Player currPlayer = event.getPlayer();
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void sendNotifsOnPlayerJoin(PlayerJoinEvent event) {
+        Player currPlayer = event.getPlayer();
 
-		// Check if plugin has updates
-		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())
-				&& (currPlayer.hasPermission("worldwidechat.chatupdate"))) {
-			final TextComponent outOfDate = Component.text()
-					.content(refs.getPlainMsg("wwcUpdaterOutOfDateChat", currPlayer))
-					.color(NamedTextColor.YELLOW)
-					.append(Component.text().content(" (").color(NamedTextColor.GOLD))
-					.append(Component.text().content("https://github.com/dominicfeliton/WorldwideChat/releases")
-							.color(NamedTextColor.GOLD)
-							.clickEvent(ClickEvent.openUrl("https://github.com/dominicfeliton/WorldwideChat/releases"))
-							.decoration(TextDecoration.UNDERLINED, true))
-					.append(Component.text().content(")").color(NamedTextColor.GOLD)).build();
-			refs.sendMsg(currPlayer, outOfDate);
-		}
+        // Check if plugin has updates
+        if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())
+                && (currPlayer.hasPermission("worldwidechat.chatupdate"))) {
+            final TextComponent outOfDate = Component.text()
+                    .content(refs.getPlainMsg("wwcUpdaterOutOfDateChat", currPlayer))
+                    .color(NamedTextColor.YELLOW)
+                    .append(Component.text().content(" (").color(NamedTextColor.GOLD))
+                    .append(Component.text().content("https://github.com/dominicfeliton/WorldwideChat/releases")
+                            .color(NamedTextColor.GOLD)
+                            .clickEvent(ClickEvent.openUrl("https://github.com/dominicfeliton/WorldwideChat/releases"))
+                            .decoration(TextDecoration.UNDERLINED, true))
+                    .append(Component.text().content(")").color(NamedTextColor.GOLD)).build();
+            refs.sendMsg(currPlayer, outOfDate);
+        }
 
-		/* Global translate is disabled, and user has a translation config */
-		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
-				&& !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-				&& main.isActiveTranslator(currPlayer)) {
-			ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
-			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				refs.sendMsg("wwcOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", currPlayer);
-			} else {
-				refs.sendMsg("wwcOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", currPlayer);
-			}
-			/* Global translate is enabled, and user does not have a translation config */
-		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
-				&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-				&& !main.isActiveTranslator(event.getPlayer())) {
-			ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
-			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				refs.sendMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", currPlayer);
-			} else {
-				refs.sendMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", currPlayer);
-			}
-			/* Global translate is enabled, but user ALSO has a translation config */
-		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
-				&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-				&& main.isActiveTranslator(event.getPlayer())) {
-			ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
-			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", currPlayer);
-			} else {
-				refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", currPlayer);
-			}
-		}
-	}
+        /* Global translate is disabled, and user has a translation config */
+        if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
+                && !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+                && main.isActiveTranslator(currPlayer)) {
+            ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
+            if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
+                refs.sendMsg("wwcOnJoinTranslationNotificationSourceLang", new String[]{"&6" + currTranslator.getInLangCode(), "&6" + currTranslator.getOutLangCode()}, "&d", currPlayer);
+            } else {
+                refs.sendMsg("wwcOnJoinTranslationNotificationNoSourceLang", "&6" + currTranslator.getOutLangCode(), "&d", currPlayer);
+            }
+            /* Global translate is enabled, and user does not have a translation config */
+        } else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
+                && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+                && !main.isActiveTranslator(event.getPlayer())) {
+            ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+            if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
+                refs.sendMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[]{"&6" + currTranslator.getInLangCode(), "&6" + currTranslator.getOutLangCode()}, "&d", currPlayer);
+            } else {
+                refs.sendMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", "&6" + currTranslator.getOutLangCode(), "&d", currPlayer);
+            }
+            /* Global translate is enabled, but user ALSO has a translation config */
+        } else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
+                && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+                && main.isActiveTranslator(event.getPlayer())) {
+            ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
+            if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
+                refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[]{"&6" + currTranslator.getInLangCode(), "&6" + currTranslator.getOutLangCode()}, "&d", currPlayer);
+            } else {
+                refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", "&6" + currTranslator.getOutLangCode(), "&d", currPlayer);
+            }
+        }
+    }
 }

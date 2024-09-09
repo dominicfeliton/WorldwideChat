@@ -63,11 +63,11 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
 
                 if (taskObjs[0] instanceof Location) {
                     if (period > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runAtFixedRate(main, (Location)taskObjs[0], converted, delay, period));
+                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runAtFixedRate(main, (Location) taskObjs[0], converted, delay, period));
                     } else if (period == 0 && delay > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runDelayed(main, (Location)taskObjs[0], converted, delay));
+                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runDelayed(main, (Location) taskObjs[0], converted, delay));
                     } else {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().run(main, (Location)taskObjs[0], converted));
+                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().run(main, (Location) taskObjs[0], converted));
                     }
                 } else if (taskObjs[0] instanceof World) {
                     if (taskObjs.length < 3 || !(taskObjs[1] instanceof Integer) || !(taskObjs[2] instanceof Integer)) {
@@ -76,11 +76,11 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                     }
 
                     if (period > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runAtFixedRate(main, (World)taskObjs[0], (Integer)taskObjs[1], (Integer)taskObjs[2], converted, delay, period));
+                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runAtFixedRate(main, (World) taskObjs[0], (Integer) taskObjs[1], (Integer) taskObjs[2], converted, delay, period));
                     } else if (period == 0 && delay > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runDelayed(main, (World)taskObjs[0], (Integer)taskObjs[1], (Integer)taskObjs[2], converted, delay));
+                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runDelayed(main, (World) taskObjs[0], (Integer) taskObjs[1], (Integer) taskObjs[2], converted, delay));
                     } else {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().run(main, (World)taskObjs[0], (Integer)taskObjs[1], (Integer)taskObjs[2], converted));
+                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().run(main, (World) taskObjs[0], (Integer) taskObjs[1], (Integer) taskObjs[2], converted));
                     }
                 } else {
                     main.getLogger().severe("Requested region scheduler but did not pass a location/world! Please contact the dev.");
@@ -95,18 +95,18 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
                 Object taskObj = taskObjs[0];
 
                 if (period > 0) {
-                    commonTask = new FoliaTaskWrapper(((Entity)taskObj).getScheduler().runAtFixedRate(main, converted, null, delay, period));
+                    commonTask = new FoliaTaskWrapper(((Entity) taskObj).getScheduler().runAtFixedRate(main, converted, null, delay, period));
                 } else if (period == 0 && delay > 0) {
-                    commonTask = new FoliaTaskWrapper(((Entity)taskObj).getScheduler().runDelayed(main, converted, null, delay));
+                    commonTask = new FoliaTaskWrapper(((Entity) taskObj).getScheduler().runDelayed(main, converted, null, delay));
                 } else {
-                    commonTask = new FoliaTaskWrapper(((Entity)taskObj).getScheduler().run(main, converted, null));
+                    commonTask = new FoliaTaskWrapper(((Entity) taskObj).getScheduler().run(main, converted, null));
                 }
                 break;
             case ASYNC:
                 if (period > 0) {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runAtFixedRate(main, converted, delay/20, period/20, TimeUnit.SECONDS));
+                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runAtFixedRate(main, converted, delay / 20, period / 20, TimeUnit.SECONDS));
                 } else if (period == 0 && delay > 0) {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runDelayed(main, converted, delay/20, TimeUnit.SECONDS));
+                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runDelayed(main, converted, delay / 20, TimeUnit.SECONDS));
                 } else {
                     commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runNow(main, converted));
                 }

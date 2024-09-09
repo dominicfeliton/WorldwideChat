@@ -16,7 +16,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.TreeSet;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
@@ -99,7 +101,7 @@ public class AILangModifyGui implements InventoryProvider {
                                 new AILangGui(inPlayer).getAILangs().open(player);
                             }
                         };
-                        wwcHelper.runSync(out, ENTITY, new Object[] {player});
+                        wwcHelper.runSync(out, ENTITY, new Object[]{player});
                     }
                 };
                 wwcHelper.runAsync(save, ASYNC, null);
@@ -107,14 +109,15 @@ public class AILangModifyGui implements InventoryProvider {
 
 
             /* Left Option: Previous Page */
-            invManager.setCommonButton(1, 3, player, contents, "Previous", new Object[] {new AILangGui(inPlayer).getAILangs()});
+            invManager.setCommonButton(1, 3, player, contents, "Previous", new Object[]{new AILangGui(inPlayer).getAILangs()});
         } catch (Exception e) {
             invManager.inventoryError(player, e);
         }
     }
 
     @Override
-    public void update(Player player, InventoryContents contents) {}
+    public void update(Player player, InventoryContents contents) {
+    }
 
 }
 

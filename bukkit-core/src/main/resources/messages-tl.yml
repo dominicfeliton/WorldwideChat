@@ -365,17 +365,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Matagumpay na itinakda ang timeout ng pag-sync
     ng gawain.
   wwcConfigGUIFatalAsyncAbortButton: Baguhin ang Timeout ng Async Task
-  libreHttp400: Masamang kahilingan ipinadala sa Libre Translate! Maliban kung ikaw
-    ay gumagawa ng isang bagay na hindi mo dapat, hindi mo dapat makuha ito. Mangyaring
-    makipag-ugnay sa developer!
   wwcConfigGUILibreTranslateApiKeyButton: Baguhin ang Libre Isalin API Key
-  libreHttp403: Nawawalang Libre Translate API Key, o ikaw ay pinagbawalan mula sa
-    server!
   wwcConfigConversationLibreURLSuccess: Matagumpay na itinakda ang Libreng URL.
   wwcConfigConversationLibreTranslateApiKeyInput: Ang kasalukuyang API key ay {0}.
     Pakipasok ang API key para sa Libre, o i-type ang 0 upang bumalik.
   wwcConfigGUILibreTranslateButton: Libre Translate
-  libreHttp429: Walang kumpiyansa dahil sa limitasyon ng rate mula sa server.
   wwcConfigGUIToggleLibreTranslateButton: I-toggle Libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Matagumpay na toggled Libre Translate.
     I-reload para magkabisa ang mga pagbabago.
@@ -383,7 +377,6 @@ Messages:
     API key.
   wwcConfigConversationLibreURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang URL
     para sa Libre, o i-type ang 0 upang bumalik.
-  libreHttpUnknown: 'Hindi kilalang http error: {0}'
   wwcConfigGUILibreTranslateURLButton: Baguhin Libre Translate URL
   wwcConfigConnectionFail: Nabigong kumonekta sa {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Matagumpay na binago ang pangalan
@@ -429,8 +422,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Baguhin ang MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Di-wastong nakamamatay na hanay ng timeout ng
     async. Pag-default sa 10 segundo...
-  libreHttp500: Ang iyong napiling input at output na pares ng wika ay hindi suportado.
-    Mangyaring pumili ng ibang hanay ng wika!
   wwcConfigGUIDeepLTranslateButton: I-toggle ang DeepL Translate
   wwcConfigConversationDeepLTranslateToggleSuccess: Matagumpay na na-toggle ang DeepL
     Translate. I-reload para magkabisa ang mga pagbabago.
@@ -506,10 +497,6 @@ Messages:
     tagasalin.
   wwcdCacheCleared: Nilinis ang cache ng pagsasalin.
   wwcdInvalidCmd: Hindi wastong mga argumento!
-  systranHttpUnknown: 'Hindi kilalang error sa http: {0}'
-  systranHttp400: Masamang mga parameter na ipinadala sa Systran. Maaaring maging
-    isang masamang pares ng wika?
-  systranHttp500: Panloob na error sa server mula sa Systran endpoint ({0}).
   wwcInvalidStorageSession: Pinagana ang {0} sa iyong config, ngunit hindi itinatag
     ang koneksyon. Mangyaring subukang mag-reload upang ayusin ito, ngunit mangyaring
     makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay na mensahe
@@ -780,9 +767,6 @@ Messages:
   wwcAiSystemPromptBad: Nakita ang Bad AI System Prompt. Gamit ang aming default...
   wwcAiSupportedLangsBad: Nakita ang Bad AI na Mga Wika na Sinusuportahan. Gamit ang
     aming mga default...
-  chatGPTUnknown: 'Hindi kilalang error sa http: {0}'
-  chatGPT500: Masamang kahilingan na ipinadala sa ChatGPT. Kung nagpapatuloy ito,
-    mangyaring makipag-ugnay sa developer!
   wwcConfigGUIAISettings: Pagsasaayos ng AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Matagumpay na itinakda ang chatGPT API
@@ -817,4 +801,20 @@ Messages:
   wwcConfigGUIAIChangeLangs: Baguhin ang Mga Suportadong Wika
   wwcConfigConversationAILangAddSuccess: Matagumpay na nagdagdag ng bagong wika sa
     mga wika na sinusuportahan ng AI.
+  translatorBadAPIKey: Masamang susi ng API! Mangyaring siguraduhin na nai-type mo
+    ito nang tama.
+  translatorLimitExceeded: Lumampas ka sa quota para sa iyong serbisyo sa pagsasalin
+    o limitado ka ng rate. Mangyaring suriin ang iyong provider para sa karagdagang
+    detalye.
+  translatorServerError: Error sa panloob na server. Mangyaring subukang muli mamaya.
+  translatorForbidden: Ipinagbabawal ang pag-access! Mangyaring suriin ang iyong mga
+    pahintulot.
+  translatorBadRequest: Masamang kahilingan. Mangyaring suriin ang iyong input at
+    subukang muli.
+  translatorUnknownError: 'Isang hindi kilalang error ang naganap sa status code:
+    {0}.'
+  translatorURLNotFound: Hindi wasto ang URL ng iyong serbisyo ng tagasalin.
+  translatorMethodNotAllowed: Hindi sinusuportahan ng serbisyo sa pagsasalin ang paraan
+    ng kahilingan na ito.
+  translatorNotFound: Hindi natagpuan ang hiniling na mapagkukunan ng pagsasalin.
 

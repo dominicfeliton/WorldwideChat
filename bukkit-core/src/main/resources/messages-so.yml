@@ -350,15 +350,11 @@ Messages:
     feejignaan cusub, ama wax kasta oo ka hooseeya si aad dib ugu noqoto.
   wwcConfigConversationFatalAsyncSuccess: feejignaan hawsha Async guul dhigay.
   wwcConfigGUIFatalAsyncAbortButton: Beddel Async Task Feejignaan
-  libreHttp400: codsi xun u diray inay libre Translate! Haddii aad samaynayso wax
-    aan waa in aad, waa in aad si aad u hesho this. Fadlan la xiriir sameeysa ee!
   wwcConfigGUILibreTranslateApiKeyButton: Beddel Libre Translate Key API
-  libreHttp403: Maqan libre Translate Key API, ama aad waxaa laga mamnuucay server!
   wwcConfigConversationLibreURLSuccess: URL libre si guul dhigay.
   wwcConfigConversationLibreTranslateApiKeyInput: Furaha API ee hadda jira waa {0}.
     Fadlan geli furaha API ee Libre, ama nooca 0 si aad dib ugu noqoto.
   wwcConfigGUILibreTranslateButton: Siciid Translate
-  libreHttp429: Kalsooni ma laha sababtoo ah xadiga xadiga ka yimaada server.
   wwcConfigGUIToggleLibreTranslateButton: Toggle libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Si guul leh toggoliyay libre Translate.
     Reload isbedelada si ay u dhaqan.
@@ -366,7 +362,6 @@ Messages:
     leh dhigay.
   wwcConfigConversationLibreURLInput: URL hadda jira waa {0}. Fadlan geli URL Libre,
     ama nooca 0 si aad dib ugu noqoto.
-  libreHttpUnknown: 'Qaladka http oo aan la garanayn: {0}'
   wwcConfigGUILibreTranslateURLButton: Beddel libre Translate URL
   wwcConfigConnectionFail: Ku guuldareysatay in ay ku xidhmaan {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Si guul leh u bedelay magaca xogta
@@ -408,8 +403,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Beddel Dekedda MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Sax ahayn set fekero async dilaa ah. Defaulting
     in 10 seconds...
-  libreHttp500: Aqbasho aad dooratay iyo labada ciyaaryahan luqadda wax soo saarka
-    aan la taageeray. Fadlan dooro set luqad oo kala duwan!
   wwcConfigGUIDeepLTranslateButton: Toggle Deepl Translate
   wwcConfigConversationDeepLTranslateToggleSuccess: Si guul leh gool DeepL Translate.
     Reload isbedelada si ay u dhaqan.
@@ -479,9 +472,6 @@ Messages:
   wwcrTransFail: Reloaded WorldwideChat laakiin fashilmay inay u ogolaan tarjumaad.
   wwcdCacheCleared: Cashka tarjumada ayaa la saaray.
   wwcdInvalidCmd: Doodaha aan ah!
-  systranHttpUnknown: 'Khalad http la ogaan: {0}'
-  systranHttp400: Qalabka xun u diray Systran. Waa noqon karaa labaar luuqad xun ah?
-  systranHttp500: Khalad serverka gudaha oo ka socda Systran endpoint ({0}).
   wwcInvalidStorageSession: '{0} waxaa la ogolaaday config kaaga, laakiin xiriir lama
     dhiso. Fadlan isku dayi dib u qabsado si aad ku saxiyaan tan, laakiin fadlan la
     xiriir horumarka haddii aad horay heshay fariin xiriir guul ah oo ka dhacay {0'
@@ -716,8 +706,6 @@ Messages:
   wwcAiSystemPromptLoaded: Nidaamka AI oo xoog lahaa.
   wwcAiSystemPromptBad: Xumaan Nidaamka AI oo la ogaaday. Isticmaalaya default teena...
   wwcAiSupportedLangsBad: Xun AI oo Luuqada Taageeray. Isticmaalaya defaulteena...
-  chatGPTUnknown: 'Khalad http la ogaan: {0}'
-  chatGPT500: Codsi xun u diray ChatGPT. Haddii tan sii joogto, fadlan la xiriir horumarka!
   wwcConfigGUIAISettings: Sameynta AI
   wwcConfigGUIChatGPTButton: ChatGPT
   wwcConfigConversationChatGPTApiKeySuccess: Muuqda API ChatGPT oo si guul la dhigay.
@@ -750,4 +738,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Bedelka Luuqada AI Taageeraya
   wwcConfigConversationAILangAddSuccess: Si guul la daray luuqada cusub oo luuqada
     taageeray AI.
+  translatorBadAPIKey: Muuqda API xun! Fadlan ka hubain inaad si sax ah ku qortay.
+  translatorLimitExceeded: Waxaad ama ka badbaaday koobta adeegkaaga tarjumaadka ama
+    aad qiimaha koobsaday. Fadlan hubi bixinkaaga faahfaahin dheeraad ah.
+  translatorServerError: Khalad serverka gudaha. Fadlan dib markale isku dayo.
+  translatorForbidden: Gacanta waa mamnuucay! Fadlan hubi gaasilkaaga.
+  translatorBadRequest: Codsi xun. Fadlan hubi gelinkaaga oo mar kale isku dayo.
+  translatorUnknownError: 'Khalad aan la ogaan ayaa ka dhacay koodka status: {0}.'
+  translatorURLNotFound: Adeegga tarjumaadkaaga URL waa mid ah.
+  translatorMethodNotAllowed: Adeegga tarjimada ma taageerin habkan codsiga.
+  translatorNotFound: Kheyraadka tarjimada la codsaday lama helin.
 

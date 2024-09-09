@@ -1,11 +1,5 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import org.bukkit.World;
-
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
 public class TaskManager {
     // This task is not necessary right now.
     // Keeping it as it may be in the future if in-depth task management is ever needed.

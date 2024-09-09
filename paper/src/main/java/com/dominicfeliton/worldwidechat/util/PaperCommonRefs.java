@@ -17,7 +17,8 @@ public class PaperCommonRefs extends CommonRefs {
                     .append(originalMessage.asComponent())
                     .build();
             sender.sendMessage(outMessage);
-        } catch (IllegalStateException e) {}
+        } catch (IllegalStateException e) {
+        }
     }
 
 }

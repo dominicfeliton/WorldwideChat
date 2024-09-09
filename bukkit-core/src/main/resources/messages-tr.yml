@@ -325,22 +325,17 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Zaman uyumsuz görev zaman aşımı başarıyla
     ayarlandı.
   wwcConfigGUIFatalAsyncAbortButton: Zaman Eşzamanzamanlama Görev Zaman Aşımı Değiştir
-  libreHttp400: Libre Translate"e kötü istek gönderildi! Yapmamanız gereken bir şey
-    yapmıyorsanız, bunu almamalısın. Lütfen geliştiriciyle iletişime geçin!
   wwcConfigGUILibreTranslateApiKeyButton: Değiştir Ücretsiz API Anahtarı Çevir
-  libreHttp403: Eksiksiz Libre Çevir API Anahtarı, ya da sunucudan yasaklandın!
   wwcConfigConversationLibreURLSuccess: Libre URL başarıyla ayarlandı.
   wwcConfigConversationLibreTranslateApiKeyInput: Geçerli API anahtarı {0}. Lütfen
     Libre için bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwcConfigGUILibreTranslateButton: Libre Çevir
-  libreHttp429: Sunucudan gelen oran sınırı nedeniyle güven yok.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Çevir
   wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate başarıyla değiştirildi.
     Değişikliklerin etkili olması için yeniden yükleyin.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API anahtarı başarıyla ayarlandı.
   wwcConfigConversationLibreURLInput: Geçerli URL {0}. Lütfen Libre için bir URL girin
     veya geri dönmek için 0 yazın.
-  libreHttpUnknown: 'Bilinmeyen http hatası: {0}'
   wwcConfigGUILibreTranslateURLButton: Ücretsiz Çevir URL'sini değiştir
   wwcConfigConnectionFail: '{0} öğesine bağlanılamadı.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB veritabanı adını başarıyla
@@ -383,8 +378,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB Bağlantı Noktasını Değiştir
   wwcConfigInvalidFatalAsyncTimeout: Geçersiz ölümcül zaman aşımı ayarlandı. Varsayılan
     olarak 10 saniye...
-  libreHttp500: Seçtiğiniz giriş ve çıkış dili çifti desteklenmiyor. Lütfen farklı
-    bir dil seti seçin!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Çevir
   wwcConfigConversationDeepLTranslateToggleSuccess: DeepL Translate başarıyla değiştirildi.
     Değişikliklerin etkili olması için yeniden yükleyin.
@@ -452,9 +445,6 @@ Messages:
   wwcrTransFail: WorldwideChat yeniden yüklendi ancak bir çevirmeni etkinleştirilemedi.
   wwcdCacheCleared: Çeviri önbelleği temizlendi.
   wwcdInvalidCmd: Geçersiz argümanlar!
-  systranHttpUnknown: 'Bilinmeyen http hatası: {0}'
-  systranHttp400: Systran'a gönderilen kötü parametreler. Kötü bir dil çifti olabilir?
-  systranHttp500: Systran uç noktasından ({0}) dahili sunucu hatası.
   wwcInvalidStorageSession: '{0} yapılandırmanızda etkinleştirildi, ancak bir bağlantı
     kurulmadı. Lütfen bunu düzeltmek için yeniden yüklemeyi deneyin, ancak daha önce
     {0} adresinden başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
@@ -696,9 +686,6 @@ Messages:
   wwcAiSystemPromptBad: Kötü AI Sistem İstemi tespit edildi. Varsayılanımızı kullanarak...
   wwcAiSupportedLangsBad: Kötü AI Destekli Diller tespit edildi. Varsayılanlarımızı
     kullanarak...
-  chatGPTUnknown: 'Bilinmeyen http hatası: {0}'
-  chatGPT500: ChatGPT'ye kötü istek gönderildi. Bu devam ederse, lütfen geliştiriciyle
-    iletişime geçin!
   wwcConfigGUIAISettings: AI Yapılandırması
   wwcConfigGUIChatGPTButton: Sohbet GPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API anahtarı başarıyla ayarlandı.
@@ -731,4 +718,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Desteklenen Yapay Zeka Dillerini Değiştirme
   wwcConfigConversationAILangAddSuccess: AI destekli dillere başarıyla yeni bir dil
     eklendi.
+  translatorBadAPIKey: Kötü API anahtarı! Lütfen doğru yazdığınızdan emin olun.
+  translatorLimitExceeded: Ya çeviri hizmetinizin kotasını aştınız ya da ücret sınırlısınız.
+    Daha fazla ayrıntı için lütfen sağlayıcınızı kontrol edin.
+  translatorServerError: Dahili sunucu hatası. Lütfen daha sonra tekrar deneyin.
+  translatorForbidden: Erişim yasaktır! Lütfen izinlerinizi kontrol edin.
+  translatorBadRequest: Kötü istek. Lütfen girdilerinizi kontrol edin ve tekrar deneyin.
+  translatorUnknownError: 'Durum kodu ile bilinmeyen bir hata oluştu: {0}.'
+  translatorURLNotFound: Çevirmen hizmeti URL'niz geçersiz.
+  translatorMethodNotAllowed: Çeviri hizmeti bu istek yöntemini desteklemez.
+  translatorNotFound: İstenen çeviri kaynağı bulunamadı.
 

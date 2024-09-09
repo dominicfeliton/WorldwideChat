@@ -353,15 +353,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: El tiempo de espera de tarea asincrónica
     se estableció correctamente.
   wwcConfigGUIFatalAsyncAbortButton: Cambiar el tiempo de espera de tarea asincrónica
-  libreHttp400: ¡Mala solicitud enviada a Libre Translate! A menos que estés haciendo
-    algo que no deberías, no deberías conseguir esto. ¡Por favor contacte al desarrollador!
   wwcConfigGUILibreTranslateApiKeyButton: Cambiar Clave de API de Libre Translate
-  libreHttp403: Falta la clave API de Libre Translate, o estás prohibido en el servidor.
   wwcConfigConversationLibreURLSuccess: Libre URL establecida correctamente.
   wwcConfigConversationLibreTranslateApiKeyInput: La clave API actual es {0}. Por
     favor, ingrese una clave API para Libre, o escriba 0 para regresar.
   wwcConfigGUILibreTranslateButton: Libre Traducir
-  libreHttp429: Sin confianza debido al límite de velocidad del servidor.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traducir
   wwcConfigConversationLibreTranslateToggleSuccess: Aletó con éxito Libre Translate.
     Recargar para que los cambios surtan efecto.
@@ -369,7 +365,6 @@ Messages:
     correctamente.
   wwcConfigConversationLibreURLInput: La URL actual es {0}. Por favor, ingrese una
     URL para Libre, o escriba 0 para regresar.
-  libreHttpUnknown: 'Error http desconocido: {0}'
   wwcConfigGUILibreTranslateURLButton: Cambiar Libre Traducir URL
   wwcConfigConnectionFail: Error al conectarse a {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Se cambió correctamente el nombre
@@ -414,8 +409,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Cambiar puerto MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Conjunto de tiempo de espera asincrónico fatal
     no válido. Por defecto a 10 segundos...
-  libreHttp500: Su par de idiomas de entrada y salida seleccionado no es compatible.
-    ¡Por favor, elija un conjunto de idiomas diferente!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Traducir
   wwcConfigConversationDeepLTranslateToggleSuccess: Aletó con éxito DeepL Translate.
     Recargar para que los cambios surtan efecto.
@@ -488,10 +481,6 @@ Messages:
   wwcrTransFail: Se recargó WorldwideChat pero no se pudo habilitar un traductor.
   wwcdCacheCleared: Se borró la memoria caché de traducción.
   wwcdInvalidCmd: ¡Argumentos no válidos!
-  systranHttpUnknown: 'Error http desconocido: {0}'
-  systranHttp400: Parámetros incorrectos enviados a Systran. ¿Podría ser un mal par
-    de idiomas?
-  systranHttp500: Error interno del servidor desde el punto de enlace de Systran ({0}).
   wwcInvalidStorageSession: '{0} está habilitado en tu configuración, pero no se ha
     establecido una conexión. Intenta volver a cargar para solucionar este problema,
     pero ponte en contacto con el desarrollador si has recibido previamente un mensaje
@@ -754,9 +743,6 @@ Messages:
     nuestro valor predeterminado...
   wwcAiSupportedLangsBad: Se detectaron idiomas compatibles con IA incorrecta. Usando
     nuestros valores predeterminados...
-  chatGPTUnknown: 'Error http desconocido: {0}'
-  chatGPT500: Se ha enviado una solicitud incorrecta a ChatGPT. Si esto persiste,
-    por favor, póngase en contacto con el desarrollador.
   wwcConfigGUIAISettings: Configuración de IA
   wwcConfigGUIChatGPTButton: Chat GPT
   wwcConfigConversationChatGPTApiKeySuccess: La clave API ChatGPT se configuró correctamente.
@@ -791,4 +777,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: Modificar los idiomas de IA admitidos
   wwcConfigConversationAILangAddSuccess: Se agregó correctamente un nuevo idioma a
     los idiomas soportados por IA.
+  translatorBadAPIKey: ¡Clave API incorrecta! Por favor, asegúrese de que lo ha escrito
+    correctamente.
+  translatorLimitExceeded: Ha excedido la cuota para su servicio de traducción o ha
+    tenido una tarifa limitada. Consulte a su proveedor para obtener más detalles.
+  translatorServerError: Error interno del servidor. Inténtelo de nuevo más tarde.
+  translatorForbidden: ¡El acceso está prohibido! Por favor, compruebe sus permisos.
+  translatorBadRequest: Mala petición. Verifique su entrada e inténtelo de nuevo.
+  translatorUnknownError: 'Se ha producido un error desconocido con el código de estado:
+    {0}.'
+  translatorURLNotFound: La dirección URL del servicio de traductor no es válida.
+  translatorMethodNotAllowed: El servicio de traducción no admite este método de solicitud.
+  translatorNotFound: No se encontró el recurso de traducción solicitado.
 

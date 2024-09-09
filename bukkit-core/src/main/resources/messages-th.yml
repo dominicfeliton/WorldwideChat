@@ -293,20 +293,16 @@ Messages:
     {0} วินาทีพิมพ์อะไรก็ได้ข้างต้น 7 เพื่อตั้งค่าการหมดเวลาใหม่ หรืออะไรก็ตามที่อยู่ด้านล่างเพื่อย้อนกลับ
   wwcConfigConversationFatalAsyncSuccess: หมดเวลางาน Async ตั้งค่าเสร็จเรียบร้อยแล้ว
   wwcConfigGUIFatalAsyncAbortButton: เปลี่ยนหมดเวลางาน Async
-  libreHttp400: คำขอที่ไม่ดีส่งไปยังฟรีแปลภาษา!ถ้าคุณกำลังทำสิ่งที่คุณไม่ควร, คุณไม่ควรจะได้รับนี้.กรุณาติดต่อนักพัฒนา!
   wwcConfigGUILibreTranslateApiKeyButton: เปลี่ยนคีย์ API แปล Libre
-  libreHttp403: ขาดหายไป Libre แปล API คีย์, หรือคุณถูกห้ามจากเซิร์ฟเวอร์!
   wwcConfigConversationLibreURLSuccess: ตั้งค่า URL ฟรีเรียบร้อยแล้ว
   wwcConfigConversationLibreTranslateApiKeyInput: คีย์ API ปัจจุบันคือ {0} โปรดป้อนคีย์
     API สำหรับ Libre หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwcConfigGUILibreTranslateButton: ลิเบร แปลภาษา
-  libreHttp429: ไม่มีความเชื่อมั่นเนื่องจากการ จำกัด อัตราจากเซิร์ฟเวอร์
   wwcConfigGUIToggleLibreTranslateButton: สลับ ฟรีแปล
   wwcConfigConversationLibreTranslateToggleSuccess: ประสบความสำเร็จในการสลับฟรีแปลภาษาโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
   wwcConfigConversationLibreTranslateApiKeySuccess: ชุดคีย์ Libre API เรียบร้อยแล้ว
   wwcConfigConversationLibreURLInput: URL ปัจจุบันคือ {0} โปรดป้อน URL สำหรับ Libre
     หรือพิมพ์ 0 เพื่อย้อนกลับ
-  libreHttpUnknown: 'ไม่ทราบข้อผิดพลาด http: {0}'
   wwcConfigGUILibreTranslateURLButton: เปลี่ยน URL แปลภาษา Libre
   wwcConfigConnectionFail: ล้มเหลวในการเชื่อมต่อกับ {0}
   wwcConfigConversationMongoDatabaseNameSuccess: ประสบความสำเร็จในการเปลี่ยนชื่อฐานข้อมูล
@@ -344,7 +340,6 @@ Messages:
   wwcConfigGUIMongoPortButton: เปลี่ยนพอร์ต MongoDB
   wwcConfigInvalidFatalAsyncTimeout: ชุดหมดเวลาอะซิงค์ร้ายแรงไม่ถูกต้องเริ่มต้นที่
     10 วินาที...
-  libreHttp500: ไม่รองรับคู่ภาษาอินพุตและเอาต์พุตที่เลือกไว้โปรดเลือกชุดภาษาอื่น!
   wwcConfigGUIDeepLTranslateButton: สลับ DeepL แปล
   wwcConfigConversationDeepLTranslateToggleSuccess: สลับเรียบร้อยแล้ว DeepL แปลโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
   wwcConfigGUIDeepLTranslateApiKeyButton: เปลี่ยนคีย์ API ของ DeepL แปล
@@ -405,9 +400,6 @@ Messages:
   wwcrTransFail: โหลด WorldwideChat ใหม่ แต่ไม่สามารถเปิดใช้งานนักแปลได้
   wwcdCacheCleared: แคชการแปลถูกล้างแล้ว
   wwcdInvalidCmd: อาร์กิวเมนต์ไม่ถูกต้อง
-  systranHttpUnknown: 'ข้อผิดพลาด http ที่ไม่รู้จัก: {0}'
-  systranHttp400: พารามิเตอร์ที่ไม่ถูกส่งไปยัง Systranอาจเป็นคู่ภาษาที่ไม่ดี?
-  systranHttp500: ข้อผิดพลาดของเซิร์ฟเวอร์ภายในจากปลายทาง Systran ({0})
   wwcInvalidStorageSession: เปิดใช้งาน {0} ในการกำหนดค่าของคุณ แต่ไม่ได้สร้างการเชื่อมต่อโปรดลองโหลดใหม่เพื่อแก้ไขปัญหานี้
     แต่โปรดติดต่อนักพัฒนาหากคุณเคยได้รับข้อความการเชื่อมต่อที่ประสบความสำเร็จจาก {0}
   wwcConfigConversationPostgresDatabaseNameSuccess: เปลี่ยนชื่อฐานข้อมูล PostgreSQL
@@ -600,8 +592,6 @@ Messages:
   wwcAiSystemPromptLoaded: โหลดพรอมต์ระบบ AI
   wwcAiSystemPromptBad: ตรวจพบพรอมต์ระบบ AI ที่ไม่ดีใช้ค่าเริ่มต้นของเรา...
   wwcAiSupportedLangsBad: ตรวจพบภาษาที่รองรับ AI ไม่ดีใช้ค่าเริ่มต้นของเรา...
-  chatGPTUnknown: 'ข้อผิดพลาด http ที่ไม่รู้จัก: {0}'
-  chatGPT500: คำขอไม่ถูกส่งไปยัง ChatGPTหากยังคงมีอยู่โปรดติดต่อนักพัฒนา!
   wwcConfigGUIAISettings: การกำหนดค่า AI
   wwcConfigGUIChatGPTButton: แชทจีพีที
   wwcConfigConversationChatGPTApiKeySuccess: ชุดคีย์ API ChatGPT เรียบร้อยแล้ว
@@ -631,4 +621,13 @@ Messages:
   wwcConfigGUIAILangNewButton: เพิ่มภาษาใหม่
   wwcConfigGUIAIChangeLangs: แก้ไขภาษา AI ที่รองรับ
   wwcConfigConversationAILangAddSuccess: เพิ่มภาษาใหม่ลงในภาษาที่รองรับ AI สำเร็จแล้ว
+  translatorBadAPIKey: คีย์ API ไม่ดี!โปรดตรวจสอบให้แน่ใจว่าคุณได้พิมพ์อย่างถูกต้อง
+  translatorLimitExceeded: คุณได้เกินโควต้าสำหรับบริการแปลของคุณหรือคุณมีอัตรา จำกัดโปรดตรวจสอบผู้ให้บริการของคุณสำหรับรายละเอียดเพิ่มเติม
+  translatorServerError: ข้อผิดพลาดของเซิร์ฟเวอร์ภายในโปรดลองอีกครั้งในภายหลัง
+  translatorForbidden: ไม่อนุญาตให้เข้าถึง!โปรดตรวจสอบสิทธิ์ของคุณ
+  translatorBadRequest: คำขอไม่ดีโปรดตรวจสอบอินพุตของคุณและลองอีกครั้ง
+  translatorUnknownError: 'เกิดข้อผิดพลาดที่ไม่รู้จักกับรหัสสถานะ: {0}'
+  translatorURLNotFound: URL บริการนักแปลของคุณไม่ถูกต้อง
+  translatorMethodNotAllowed: บริการแปลไม่รองรับวิธีการร้องขอนี้
+  translatorNotFound: ไม่พบแหล่งข้อมูลการแปลที่ร้องขอ
 

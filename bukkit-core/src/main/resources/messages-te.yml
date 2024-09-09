@@ -329,22 +329,17 @@ Messages:
     టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి దాని క్రింద ఉన్న ఏదైనా.
   wwcConfigConversationFatalAsyncSuccess: Async పని సమయం ముగిసింది విజయవంతంగా సెట్.
   wwcConfigGUIFatalAsyncAbortButton: Async టాస్క్ టైమ్అవుట్ మార్చండి
-  libreHttp400: చెడు అభ్యర్థన లిబ్రే అనువదించు పంపిన! మీరు చేయకూడని పని చేస్తుంటే
-    తప్ప, మీరు దీన్ని పొందకూడదు. దయచేసి డెవలపర్ను సంప్రదించండి!
   wwcConfigGUILibreTranslateApiKeyButton: మార్చు ఉచిత అనువదించు API కీ
-  libreHttp403: మిస్సింగ్ లిబ్రే అనువదించు API కీ, లేదా మీరు సర్వర్ నుండి నిషేధించారు!
   wwcConfigConversationLibreURLSuccess: ఉచిత URL విజయవంతంగా సెట్.
   wwcConfigConversationLibreTranslateApiKeyInput: ప్రస్తుత API కీ {0}. Libre కొరకు
     దయచేసి ఒక API కీని ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigGUILibreTranslateButton: ఉచిత అనువదించు
-  libreHttp429: సర్వర్ నుండి రేటు పరిమితి కారణంగా విశ్వాసం లేదు.
   wwcConfigGUIToggleLibreTranslateButton: టోగుల్ ఉచిత అనువదించు
   wwcConfigConversationLibreTranslateToggleSuccess: విజయవంతంగా లిబ్రే అనువదించు toggled.
     మార్పులు అమలులోకి రావడానికి రీలోడ్ చేయండి.
   wwcConfigConversationLibreTranslateApiKeySuccess: ఉచిత API కీ విజయవంతంగా సెట్.
   wwcConfigConversationLibreURLInput: ప్రస్తుత URL {0}. దయచేసి లిబ్రే కొరకు URL ను
     ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
-  libreHttpUnknown: 'తెలియని http దోషం: {0}'
   wwcConfigGUILibreTranslateURLButton: మార్చు ఉచిత అనువదించు URL
   wwcConfigConnectionFail: '{0} కి కనెక్ట్ చేయడంలో విఫలమైంది.'
   wwcConfigConversationMongoDatabaseNameSuccess: మొంగోడిబి డేటాబేస్ పేరును విజయవంతంగా
@@ -385,8 +380,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB పోర్ట్ మార్చండి
   wwcConfigInvalidFatalAsyncTimeout: చెల్లని ప్రాణాంతకం async సమయం ముగిసింది సెట్.
     10 సెకన్లకు డిఫాల్టింగ్...
-  libreHttp500: మీరు ఎంచుకున్న ఇన్పుట్ మరియు అవుట్పుట్ భాషా జతకు మద్దతు లేదు. దయచేసి
-    వేరే భాషా సెట్ను ఎంచుకోండి!
   wwcConfigGUIDeepLTranslateButton: డీప్ఎల్ ట్రాన్స్లేట్ను టోగుల్ చేయండి
   wwcConfigConversationDeepLTranslateToggleSuccess: డీప్ఎల్ ట్రాన్స్లేట్ విజయవంతంగా
     టోగుల్ చేయబడింది. మార్పులు అమలులోకి రావడానికి రీలోడ్ చేయండి.
@@ -458,9 +451,6 @@ Messages:
     విఫలమైంది.
   wwcdCacheCleared: అనువాద కాష్ క్లియర్ చేయబడింది.
   wwcdInvalidCmd: చెల్లని వాదనలు!
-  systranHttpUnknown: 'తెలియని http లోపం: {0}'
-  systranHttp400: చెడ్డ పారామితులు సిస్ట్రాన్కు పంపబడ్డాయి. చెడ్డ భాషా జత కావచ్చు?
-  systranHttp500: సిస్ట్రాన్ ఎండ్పాయింట్ ({0}) నుండి అంతర్గత సర్వర్ లోపం.
   wwcInvalidStorageSession: మీ కాన్ఫిగర్లో {0} ప్రారంభించబడింది, కానీ ఒక కనెక్షన్
     స్థాపించబడలేదు. దయచేసి దీన్ని పరిష్కరించడానికి రీలోడ్ చేయడాన్ని ప్రయత్నించండి,
     కానీ మీరు గతంలో {0} నుండి విజయవంతమైన కనెక్షన్ సందేశాన్ని అందుకున్నట్లయితే దయచేసి
@@ -707,9 +697,6 @@ Messages:
   wwcAiSystemPromptBad: చెడు AI సిస్టమ్ ప్రాంప్ట్ కనుగొనబడింది. మా డిఫాల్ట్ ఉపయోగించి...
   wwcAiSupportedLangsBad: చెడు AI మద్దతు ఉన్న భాషలు కనుగొనబడ్డాయి. మా డిఫాల్ట్లను
     ఉపయోగించి...
-  chatGPTUnknown: 'తెలియని http లోపం: {0}'
-  chatGPT500: చెడు అభ్యర్థన ChatGPT కి పంపబడింది. ఇది కొనసాగితే, దయచేసి డెవలపర్ను
-    సంప్రదించండి!
   wwcConfigGUIAISettings: AI కాన్ఫిగరేషన్
   wwcConfigGUIChatGPTButton: చాట్జిపిటి
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API కీ విజయవంతంగా సెట్ చేయబడింది.
@@ -742,4 +729,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: మద్దతు ఉన్న AI భాషలను సవరించండి
   wwcConfigConversationAILangAddSuccess: AI మద్దతు ఉన్న భాషలకు కొత్త భాషను విజయవంతంగా
     జోడించారు.
+  translatorBadAPIKey: చెడు API కీ! దయచేసి మీరు దీన్ని సరిగ్గా టైప్ చేశారని నిర్ధారించుకోండి.
+  translatorLimitExceeded: మీరు గాని మీ అనువాద సేవ కోసం కోటా మించిపోయింది లేదా మీరు
+    రేటు పరిమితం చేశారు. దయచేసి మరిన్ని వివరాల కోసం మీ ప్రొవైడర్ను తనిఖీ చేయండి.
+  translatorServerError: అంతర్గత సర్వర్ లోపం. దయచేసి తరువాత మళ్ళీ ప్రయత్నించండి.
+  translatorForbidden: యాక్సెస్ నిషేధించబడింది! దయచేసి మీ అనుమతులను తనిఖీ చేయండి.
+  translatorBadRequest: చెడ్డ అభ్యర్థన. దయచేసి మీ ఇన్పుట్ను తనిఖీ చేసి మళ్ళీ ప్రయత్నించండి.
+  translatorUnknownError: 'స్థితి కోడ్తో తెలియని లోపం సంభవించింది: {0}.'
+  translatorURLNotFound: మీ అనువాదక సేవ URL చెల్లదు.
+  translatorMethodNotAllowed: అనువాద సేవ ఈ అభ్యర్థన పద్ధతికి మద్దతు ఇవ్వదు.
+  translatorNotFound: అభ్యర్థించిన అనువాద వనరు కనుగొనబడలేదు.
 

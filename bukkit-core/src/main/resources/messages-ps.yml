@@ -327,16 +327,11 @@ Messages:
     لاندې هرڅه بیرته لاړ شئ.
   wwcConfigConversationFatalAsyncSuccess: Async دنده مهال ویش په بریالیتوب سره ټاکل.
   wwcConfigGUIFatalAsyncAbortButton: د اسینک ټاسک وخت بدل کړئ
-  libreHttp400: خراب غوښتنه لیبر ژباړل ته لیږل شوې! تر هغه چې تاسو داسې څه نه کوئ
-    چې تاسو باید نه وي، تاسو باید دا ونه ترلاسه کړئ. مهرباني وکړئ د پراختیا ورکوونکي
-    سره اړیکه ونیسئ!
   wwcConfigGUILibreTranslateApiKeyButton: د لیبر ژباړې API کیلي بدلول
-  libreHttp403: Missing لیبر ژباړل API کیلي، یا تاسو د سرور څخه منع شوي یاست!
   wwcConfigConversationLibreURLSuccess: لیبر URL په بریالیتوب سره ټاکل شوی.
   wwcConfigConversationLibreTranslateApiKeyInput: اوسنی API کیلي {0} دی. مهرباني وکړئ
     د لیبر لپاره د API کیلي داخل کړئ، یا د بېرته تلو لپاره 0 ولیکئ.
   wwcConfigGUILibreTranslateButton: ليبر ژباړل
-  libreHttp429: د سرور څخه د نرخ حد له امله هیڅ باور نشته.
   wwcConfigGUIToggleLibreTranslateButton: ليګاره ژباړل
   wwcConfigConversationLibreTranslateToggleSuccess: په بریالیتوب سره لیبر ژباړل شوی.
     د بدلونونو لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
@@ -344,7 +339,6 @@ Messages:
     ټاکل شوی.
   wwcConfigConversationLibreURLInput: اوسنی URL دی {0}. مهرباني وکړئ د لیبر لپاره
     یو URL داخل کړئ، یا د بېرته تګ لپاره 0 ولیکئ.
-  libreHttpUnknown: 'ناپېژندلې http تېروتنه: {0}'
   wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول
   wwcConfigConnectionFail: .په نښلولو کې پاتې راغی {0}
   wwcConfigConversationMongoDatabaseNameSuccess: په بریالیتوب سره د MongoDB ډیټابیس
@@ -385,8 +379,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB بندر بدل کړئ
   wwcConfigInvalidFatalAsyncTimeout: د ناسم وژونکي async وخت ټاکل شوی. د 10 ثانیو
     ته Defaulting...
-  libreHttp500: ستاسو ټاکل شوي انډول او وتل د ژبې جوړه ملاتړ نه ده شوې مهرباني وکړئ
-    د بلې ژبې سیټ غوره کړئ!
   wwcConfigGUIDeepLTranslateButton: ژباړل ژباړل
   wwcConfigConversationDeepLTranslateToggleSuccess: په بریالیتوب سره د ډیپ ایل ژباړل
     ژباړل. د بدلونونو لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
@@ -457,9 +449,6 @@ Messages:
   wwcrTransFail: ورلډ ویډیکټ بیا لوډ شوی مګر د ژباړونې فعالولو کولو کې
   wwcdCacheCleared: د ژباړې کیش پاک شو.
   wwcdInvalidCmd: بې اعتبار دلائل!
-  systranHttpUnknown: 'ناپېژندل http تېروتنه: {0}'
-  systranHttp400: بد پیرامیټرونه سیستران ته لیږل شوي. کیدای شي د ژبې بد جوړۍ وي؟
-  systranHttp500: د سیسترن پایین نقطه څخه داخلي سرور تېروتنه ({0}).
   wwcInvalidStorageSession: '{0} ستاسو په کنفیګریشن کې فعال شوی، مګر یو اړیکه نه رامنځته
     شوی. مهرباني وکړئ د دې د اصلاح کولو لپاره بیا لوډ کولو هڅه وکړئ، مګر مهرباني وکړئ
     له پرمختګ سره اړیکه ونیسئ که تاسو مخکې له {0}'
@@ -685,9 +674,6 @@ Messages:
   wwcAiSystemPromptLoaded: د AI سیسټم سمتي لوډ شوی
   wwcAiSystemPromptBad: بد AI سیسټم سټم موندل شوی زموږ ډیفالټ کارول...
   wwcAiSupportedLangsBad: بد AI ملاتړ شوي ژبې موندل شوي. زموږ د ډیفالټونو کارولو...
-  chatGPTUnknown: 'ناپېژندل http غلطي: {0}'
-  chatGPT500: بد غوښتنه ChatGPT ته لیږل شوی. که دا دوام وکړي، مهرباني وکړئ د پرمختګ
-    سره اړی
   wwcConfigGUIAISettings: د AI کنفیگریشن
   wwcConfigGUIChatGPTButton: چیټجی پی ټي
   wwcConfigConversationChatGPTApiKeySuccess: د ChatGPT API کلیدي په بریالیتوب سره
@@ -722,4 +708,15 @@ Messages:
   wwcConfigGUIAIChangeLangs: ملاتړ شوي AI ژبې بدل کړئ
   wwcConfigConversationAILangAddSuccess: په بریالیتوب سره د AI ملاتړ شوي ژبو ته نوی
     ژبه اضافه کړه.
+  translatorBadAPIKey: خراب API کلید! مهرباني وکړئ ډاډ ترلاسه کړئ چې تاسو دا په سم
+    ټیپ
+  translatorLimitExceeded: تاسو یا ستاسو د ژباړې خدمت لپاره کوټا څخه زیاته کړی دی
+    یا تاسو نرخ محدود شوی دی. مهرباني وکړئ د نورو جزئیاتو لپاره خپل چمتو
+  translatorServerError: داخلي سرور تېروتنه. لطفا وروسته بیا هڅه وکړئ.
+  translatorForbidden: لاسرسي منع دی! مهرباني وکړئ خپل اجازتونه چک
+  translatorBadRequest: بد غوښتنه. مهرباني وکړئ خپل ننوتنه وګورئ او بیا
+  translatorUnknownError: 'د وضعیت کوډ سره یو نامعلومه تېروتنه رامنځته شوه: {0}'
+  translatorURLNotFound: ستاسو د ژباړونې خدمت URL اعتبار دی.
+  translatorMethodNotAllowed: د ژباړې خدمت د دې غوښتنې طریقه ملاتړ نه کوي.
+  translatorNotFound: غوښتل شوي ژباړې سرچینه ونه موندل شو.
 

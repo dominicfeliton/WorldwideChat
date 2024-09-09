@@ -337,23 +337,17 @@ Messages:
     എന്തും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ താഴെയുള്ള എന്തും.
   wwcConfigConversationFatalAsyncSuccess: അസമമായ ടാസ്ക് ടൈംഔട്ട് വിജയകരമായി സജ്ജമാക്കി.
   wwcConfigGUIFatalAsyncAbortButton: അസമമായ ടാസ്ക് ടൈംഔട്ട് മാറ്റുക
-  libreHttp400: ലിബ്രെ വിവർത്തനം അയച്ച മോശം അഭ്യർത്ഥന! നിങ്ങൾ പാടില്ലാത്ത എന്തെങ്കിലും
-    ചെയ്യുന്നില്ലെങ്കിൽ, ഈ നേടുകയും പാടില്ല. ഡവലപ്പറെ ബന്ധപ്പെടുക!
   wwcConfigGUILibreTranslateApiKeyButton: സൗജന്യ വിവർത്തനം API കീ മാറ്റുക
-  libreHttp403: ലിബ്രെ കാണാതായ API കീ വിവർത്തനം, അല്ലെങ്കിൽ നിങ്ങൾ സെർവറിൽ നിന്ന്
-    നിരോധിച്ചിരിക്കുന്നു!
   wwcConfigConversationLibreURLSuccess: സൗജന്യ URL വിജയകരമായി സജ്ജമാക്കി.
   wwcConfigConversationLibreTranslateApiKeyInput: നിലവിലെ API കീ {0} ആണ്. Libre- നായി
     ദയവായി ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUILibreTranslateButton: സൗജന്യ വിവർത്തനം
-  libreHttp429: സെർവറിൽ നിന്ന് നിരക്ക് പരിധി കാരണം ആത്മവിശ്വാസം ഇല്ല.
   wwcConfigGUIToggleLibreTranslateButton: സൗജന്യ ടോഗിൾ വിവർത്തനം
   wwcConfigConversationLibreTranslateToggleSuccess: വിജയകരമായി ലിബ്രെ വിവർത്തനം ടോഗിൾ.
     മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരുന്നതിന് വീണ്ടും ലോഡുചെയ്യുക.
   wwcConfigConversationLibreTranslateApiKeySuccess: വിജയകരമായി സ്വതന്ത്ര API കീ സെറ്റ്.
   wwcConfigConversationLibreURLInput: നിലവിലെ URL {0} ആണ്. Libre- നായി ദയവായി ഒരു
     URL ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
-  libreHttpUnknown: 'അജ്ഞാതമായ http പിശക്: {0}'
   wwcConfigGUILibreTranslateURLButton: മാറ്റുക സ്വതന്ത്ര URL വിവർത്തനം
   wwcConfigConnectionFail: '{0} ലേക്ക് കണക്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ഡാറ്റാബേസ് നാമം വിജയകരമായി
@@ -396,8 +390,6 @@ Messages:
   wwcConfigGUIMongoPortButton: മൊന്ഗൊദ്ബ് പോർട്ട് മാറ്റുക
   wwcConfigInvalidFatalAsyncTimeout: അസാധുവായ മാരകമായ അസിൻക് ടൈംഔട്ട് സെറ്റ്. 10 സെക്കൻഡ്
     വരെ സ്ഥിരസ്ഥിതിയാക്കുന്നു...
-  libreHttp500: നിങ്ങൾ തിരഞ്ഞെടുത്ത ഇൻപുട്ട്, output ട്ട്പുട്ട് ഭാഷാ ജോഡി പിന്തുണയ്ക്കുന്നില്ല.
-    മറ്റൊരു ഭാഷ സെറ്റ് തിരഞ്ഞെടുക്കുക!
   wwcConfigGUIDeepLTranslateButton: ഡീപ് എൽ വിവർത്തനം ടോഗിൾ ചെയ്യുക
   wwcConfigConversationDeepLTranslateToggleSuccess: വിജയകരമായി ടോഗിൾ ദെഎപ്ല് വിവർത്തനം.
     മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരുന്നതിന് വീണ്ടും ലോഡുചെയ്യുക.
@@ -469,9 +461,6 @@ Messages:
     പരാജയപ്പെട്ടു.
   wwcdCacheCleared: വിവർത്തന കാഷെ മായ്ച്ചു.
   wwcdInvalidCmd: അസാധുവായ വാദങ്ങൾ!
-  systranHttpUnknown: 'അറിയപ്പെടാത്ത http പിശക്: {0}'
-  systranHttp400: മോശം പാരാമീറ്ററുകൾ സിസ്ട്രാനിലേക്ക് അയച്ചു. ഒരു മോശം ഭാഷാ ജോഡിയായിരിക്കാം?
-  systranHttp500: സിസ്ട്രാൻ എൻഡ്പോയിന്റിൽ നിന്നുള്ള ആന്തരിക സെർവർ പിശക് ({0}).
   wwcInvalidStorageSession: '{0} നിങ്ങളുടെ കോൺഫിഗറിൽ പ്രാപ്തമാക്കിയിട്ടുണ്ടെങ്കിലും
     ഒരു കണക്ഷൻ സ്ഥാപിച്ചിട്ടില്ല. ഇത് പരിഹരിക്കുന്നതിന് ദയവായി റീലോഡിംഗ് ശ്രമിക്കുക,
     പക്ഷേ {0} -ൽ നിന്ന് നിങ്ങൾക്ക് മുമ്പ് വിജയകരമായ കണക്ഷൻ സന്ദേശം ലഭിച്ചിട്ടുണ്ടെങ്കിൽ
@@ -724,9 +713,6 @@ Messages:
     ഉപയോഗിക്കുന്നു...
   wwcAiSupportedLangsBad: മോശം AI പിന്തുണയ്ക്കുന്ന ഭാഷകൾ കണ്ടെത്തി. ഞങ്ങളുടെ സ്ഥിരസ്ഥിതികൾ
     ഉപയോഗിക്കുന്നു...
-  chatGPTUnknown: 'അജ്ഞാത http പിശക്: {0}'
-  chatGPT500: മോശം അഭ്യർത്ഥന ChatGPT- ലേക്ക് അയച്ചു. ഇത് നിലനിൽക്കുകയാണെങ്കിൽ, ദയവായി
-    ഡവലപ്പറെ ബന്ധപ്പെടുക!
   wwcConfigGUIAISettings: AI കോൺഫിഗറേഷൻ
   wwcConfigGUIChatGPTButton: ചാറ്റ്ജിപിടി
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API കീ വിജയകരമായി സജ്ജീകരിച്ചു.
@@ -760,4 +746,16 @@ Messages:
   wwcConfigGUIAIChangeLangs: പിന്തുണയ്ക്കുന്ന AI ഭാഷകൾ പരിഷ്ക്കരിക്കുക
   wwcConfigConversationAILangAddSuccess: AI പിന്തുണയ്ക്കുന്ന ഭാഷകളിലേക്ക് ഒരു പുതിയ
     ഭാഷ വിജയകരമായി ചേർത്തു.
+  translatorBadAPIKey: മോശം API കീ! നിങ്ങൾ ഇത് ശരിയായി ടൈപ്പ് ചെയ്തിട്ടുണ്ടെന്ന് ഉറപ്പാക്കുക.
+  translatorLimitExceeded: നിങ്ങളുടെ വിവർത്തന സേവനത്തിനുള്ള ക്വാട്ട നിങ്ങൾ കവിഞ്ഞിരിക്കുന്നു
+    അല്ലെങ്കിൽ നിങ്ങൾ നിരക്ക് പരിമിതപ്പെടുത്തിയിരിക്കുന്നു. കൂടുതൽ വിവരങ്ങൾക്ക് ദയവായി
+    നിങ്ങളുടെ ദാതാവിനെ പരിശോധിക്കുക.
+  translatorServerError: ആന്തരിക സെർവർ പിശക്. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.
+  translatorForbidden: പ്രവേശനം നിരോധിച്ചിരിക്കുന്നു! ദയവായി നിങ്ങളുടെ അനുമതികൾ പരിശോധിക്കുക.
+  translatorBadRequest: മോശം അഭ്യർത്ഥന. ദയവായി നിങ്ങളുടെ ഇൻപുട്ട് പരിശോധിച്ച് വീണ്ടും
+    ശ്രമിക്കുക.
+  translatorUnknownError: 'സ്റ്റാറ്റസ് കോഡിൽ അജ്ഞാതമായ പിശക് സംഭവിച്ചു: {0}.'
+  translatorURLNotFound: നിങ്ങളുടെ വിവർത്തക സേവന URL അസാധുവാണ്.
+  translatorMethodNotAllowed: വിവർത്തന സേവനം ഈ അഭ്യർത്ഥന രീതിയെ പിന്തുണയ്ക്കുന്നില്ല.
+  translatorNotFound: അഭ്യർത്ഥിച്ച വിവർത്തന വിഭവം കണ്ടെത്തിയില്ല.
 

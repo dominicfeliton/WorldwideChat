@@ -1,7 +1,5 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -10,7 +8,10 @@ import com.google.gson.JsonParser;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.net.ssl.HttpsURLConnection;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -18,257 +19,246 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
 
 public class LibreTranslation extends BasicTranslation {
 
-	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private final String serviceUrl;
+    private final String apiKey;
 
-	private final String serviceUrl;
-	private final String apiKey;
+    public LibreTranslation(String apiKey, String serviceUrl, boolean isInitializing, ExecutorService callbackExecutor) {
+        super(isInitializing, callbackExecutor);
+        if (apiKey == null || apiKey.equalsIgnoreCase("none")) {
+            this.apiKey = "";
+        } else {
+            this.apiKey = apiKey;
+        }
+        this.serviceUrl = serviceUrl;
+    }
 
-	public LibreTranslation(String apiKey, String serviceUrl, boolean isInitializing, ExecutorService callbackExecutor) {
-		super(isInitializing, callbackExecutor);
-		if (apiKey == null || apiKey.equalsIgnoreCase("none")) {
-			this.apiKey = "";
-		} else {
-			this.apiKey = apiKey;
-		}
-		this.serviceUrl = serviceUrl;
-	}
+    @Override
+    protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
+        return new libreTask(textToTranslate, inputLang, outputLang);
+    }
 
-	@Override
-	protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
-		return new libreTask(textToTranslate, inputLang, outputLang);
-	}
+    private class libreTask extends translationTask {
 
-	private class libreTask extends translationTask {
+        public libreTask(String textToTranslate, String inputLang, String outputLang) {
+            super(textToTranslate, inputLang, outputLang);
+        }
 
-		public libreTask(String textToTranslate, String inputLang, String outputLang) {
-			super(textToTranslate, inputLang, outputLang);
-		}
+        @Override
+        public String call() throws Exception {
+            // Init vars
+            Gson gson = new Gson();
 
-		@Override
-		public String call() throws Exception {
-			// Init vars
-			Gson gson = new Gson();
+            if (isInitializing) {
+                /* Get languages */
+                URL url = new URL(serviceUrl + "/languages");
 
-			if (isInitializing) {
-				/* Get languages */
-				URL url = new URL(serviceUrl + "/languages");
-				
-				HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
-				conn.setRequestMethod("GET");
-				conn.setRequestProperty("Content-Type", "application/json");
-				conn.connect();
-				
-				int listResponseCode = conn.getResponseCode();
-				
-				Map<String, SupportedLang> outLangMap = new HashMap<>();
-				Map<String, SupportedLang> inLangMap = new HashMap<>();
+                HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setRequestProperty("Content-Type", "application/json");
+                conn.connect();
 
-				if (listResponseCode == HttpURLConnection.HTTP_OK) {
-					// Scan response
-					StringBuilder inLine = new StringBuilder();
-				    Scanner scanner = new Scanner(url.openStream());
-				  
-				    while (scanner.hasNext()) {
-				       inLine.append(scanner.nextLine());
-				    }
-				    
-				    scanner.close();
-				    
-				    // Get lang code/name, remove spaces from name
-				    JsonElement jsonTree = JsonParser.parseString(inLine.toString());
-					for (JsonElement element : jsonTree.getAsJsonArray()) {
-						JsonObject eaProperty = (JsonObject) element;
-						SupportedLang currLang = new SupportedLang(
-								eaProperty.get("code").getAsString(),
-								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString()));
-						// TODO: Avoid dupes like this
-						outLangMap.put(currLang.getLangCode(), currLang);
-						outLangMap.put(currLang.getLangName(), currLang);
+                int listResponseCode = conn.getResponseCode();
 
-						inLangMap.put(currLang.getLangCode(), currLang);
-						inLangMap.put(currLang.getLangName(), currLang);
-					}
-				} else {
-					// Capture the error response
-					try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(conn.getErrorStream()))) {
-						String errorLine;
-						StringBuilder errorResponse = new StringBuilder();
+                Map<String, SupportedLang> outLangMap = new HashMap<>();
+                Map<String, SupportedLang> inLangMap = new HashMap<>();
 
-						while ((errorLine = errorReader.readLine()) != null) {
-							errorResponse.append(errorLine);
-						}
+                if (listResponseCode == HttpURLConnection.HTTP_OK) {
+                    // Scan response
+                    StringBuilder inLine = new StringBuilder();
+                    Scanner scanner = new Scanner(url.openStream());
 
-						checkError(listResponseCode, errorResponse.toString());
-					} catch (IOException e) {
-						refs.debugMsg("Failed to read the error stream");
-						checkError(listResponseCode, "");
-					}
-				}
-				
-				/* Parse languages */
-				main.setOutputLangs(refs.fixLangNames(outLangMap, true, false));
-				main.setInputLangs(refs.fixLangNames(inLangMap, true, false));
+                    while (scanner.hasNext()) {
+                        inLine.append(scanner.nextLine());
+                    }
 
-				/* Setup test translation */
-				inputLang = "en";
-				outputLang = "es";
-				textToTranslate = "How are you?";
-			}
-			
-			/* Get language code of current input/output language. 
-			 * APIs generally recognize language codes (en, es, etc.)
-			 * instead of full names (English, Spanish) */
-			if (!isInitializing) {
-				if (!inputLang.equals("None")) {
-					inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
-				}
-				outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
-			}
-			
-			/* Detect inputLang */
-			if (inputLang.equals("None")) { // if we do not know the input
-				/* Craft detection request */
-				URL url = new URL(serviceUrl + "/detect");
-				HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
-				httpConn.setRequestMethod("POST");
+                    scanner.close();
 
-				httpConn.setRequestProperty("accept", "application/json");
-				httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+                    // Get lang code/name, remove spaces from name
+                    JsonElement jsonTree = JsonParser.parseString(inLine.toString());
+                    for (JsonElement element : jsonTree.getAsJsonArray()) {
+                        JsonObject eaProperty = (JsonObject) element;
+                        SupportedLang currLang = new SupportedLang(
+                                eaProperty.get("code").getAsString(),
+                                StringUtils.deleteWhitespace(eaProperty.get("name").getAsString()));
+                        // we put names/codes because native terms are taken care of
+                        outLangMap.put(currLang.getLangCode(), currLang);
+                        outLangMap.put(currLang.getLangName(), currLang);
 
-				httpConn.setDoOutput(true);
+                        inLangMap.put(currLang.getLangCode(), currLang);
+                        inLangMap.put(currLang.getLangName(), currLang);
+                    }
+                } else {
+                    // Capture the error response
+                    try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(conn.getErrorStream()))) {
+                        String errorLine;
+                        StringBuilder errorResponse = new StringBuilder();
 
-				OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
+                        while ((errorLine = errorReader.readLine()) != null) {
+                            errorResponse.append(errorLine);
+                        }
 
-				String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8);
-				if (apiKey != null) {
-					formatted += "&api_key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
-				}
-				writer.write(formatted);
-				writer.flush();
-				writer.close();
-				httpConn.getOutputStream().close();
+                        checkError(listResponseCode, errorResponse.toString());
+                    } catch (IOException e) {
+                        refs.debugMsg("Failed to read the error stream");
+                        checkError(listResponseCode, "");
+                    }
+                }
 
-	            /* Process response */
-				int statusCode = httpConn.getResponseCode();
-				if (statusCode == HttpURLConnection.HTTP_OK) {
-					try (BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()))) {
-						String inputLine;
-						StringBuilder response = new StringBuilder();
+                /* Parse languages */
+                main.setOutputLangs(refs.fixLangNames(outLangMap, true, false));
+                main.setInputLangs(refs.fixLangNames(inLangMap, true, false));
 
-						while ((inputLine = in.readLine()) != null) {
-							response.append(inputLine);
-						}
+                /* Setup test translation */
+                inputLang = "en";
+                outputLang = "es";
+                textToTranslate = "How are you?";
+            }
 
-						DetectResponse[] outArray = gson.fromJson(response.toString(), DetectResponse[].class);
-						inputLang = outArray[0].getLanguage();
-					}
-				} else {
-					// Capture the error response
-					try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(httpConn.getErrorStream()))) {
-						String errorLine;
-						StringBuilder errorResponse = new StringBuilder();
+            /* Get language code of current input/output language.
+             * APIs generally recognize language codes (en, es, etc.)
+             * instead of full names (English, Spanish) */
+            if (!isInitializing) {
+                if (!inputLang.equals("None")) {
+                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                }
+                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+            }
 
-						while ((errorLine = errorReader.readLine()) != null) {
-							errorResponse.append(errorLine);
-						}
+            /* Detect inputLang */
+            if (inputLang.equals("None")) { // if we do not know the input
+                /* Craft detection request */
+                URL url = new URL(serviceUrl + "/detect");
+                HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+                httpConn.setRequestMethod("POST");
 
-						checkError(statusCode, errorResponse.toString());
-					} catch (IOException e) {
-						refs.debugMsg("Failed to read the error stream");
-						checkError(statusCode, "");
-					}
-				}
-			}
+                httpConn.setRequestProperty("accept", "application/json");
+                httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 
-			/* Actual translation */
-			URL url = new URL(serviceUrl + "/translate");
-			HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
-			httpConn.setRequestMethod("POST");
+                httpConn.setDoOutput(true);
 
-			httpConn.setRequestProperty("accept", "application/json");
-			httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+                OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
 
-			httpConn.setDoOutput(true);
+                String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8);
+                if (apiKey != null) {
+                    formatted += "&api_key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
+                }
+                writer.write(formatted);
+                writer.flush();
+                writer.close();
+                httpConn.getOutputStream().close();
 
-			OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
+                /* Process response */
+                int statusCode = httpConn.getResponseCode();
+                if (statusCode == HttpURLConnection.HTTP_OK) {
+                    try (BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()))) {
+                        String inputLine;
+                        StringBuilder response = new StringBuilder();
 
-			String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) +
-					"&source=" + URLEncoder.encode(inputLang, StandardCharsets.UTF_8) +
-					"&target=" + URLEncoder.encode(outputLang, StandardCharsets.UTF_8) +
-					"&format=text";
-			if (apiKey != null) {
-				formatted += "&api_key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
-			}
-			writer.write(formatted);
-			writer.flush();
-			writer.close();
-			httpConn.getOutputStream().close();
+                        while ((inputLine = in.readLine()) != null) {
+                            response.append(inputLine);
+                        }
 
-			/* Checking response */
-			int statusCode = httpConn.getResponseCode();
-			if (statusCode == HttpURLConnection.HTTP_OK) {
-				try (BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()))) {
-					String inputLine;
-					StringBuilder response = new StringBuilder();
+                        DetectResponse[] outArray = gson.fromJson(response.toString(), DetectResponse[].class);
+                        inputLang = outArray[0].getLanguage();
+                    }
+                } else {
+                    // Capture the error response
+                    try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(httpConn.getErrorStream()))) {
+                        String errorLine;
+                        StringBuilder errorResponse = new StringBuilder();
 
-					while ((inputLine = in.readLine()) != null) {
-						response.append(inputLine);
-					}
+                        while ((errorLine = errorReader.readLine()) != null) {
+                            errorResponse.append(errorLine);
+                        }
 
-					return gson.fromJson(response.toString(), TranslateResponse.class).getTranslatedText();
-				}
-			} else {
-				// Capture the error response
-				try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(httpConn.getErrorStream()))) {
-					String errorLine;
-					StringBuilder errorResponse = new StringBuilder();
+                        checkError(statusCode, errorResponse.toString());
+                    } catch (IOException e) {
+                        refs.debugMsg("Failed to read the error stream");
+                        checkError(statusCode, "");
+                    }
+                }
+            }
 
-					while ((errorLine = errorReader.readLine()) != null) {
-						errorResponse.append(errorLine);
-					}
+            /* Actual translation */
+            URL url = new URL(serviceUrl + "/translate");
+            HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+            httpConn.setRequestMethod("POST");
 
-					checkError(statusCode, errorResponse.toString());
-				} catch (IOException e) {
-					refs.debugMsg("Failed to read the error stream");
-					checkError(statusCode, "");
-				}
-			}
-			return textToTranslate;
-		}
-	}
-	
-	private void checkError(int in, String msg) throws Exception {
-		refs.debugMsg(msg);
-		switch (in) {
-		case 400:
-		case 403:
-		case 429:
-		case 500:
-			throw new Exception(refs.getPlainMsg("libreHttp" + in));
-		default:
-			throw new Exception(refs.getPlainMsg("libreHttpUnknown", in + ""));
-		}
-	}
+            httpConn.setRequestProperty("accept", "application/json");
+            httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+
+            httpConn.setDoOutput(true);
+
+            OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
+
+            String formatted = "q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) +
+                    "&source=" + URLEncoder.encode(inputLang, StandardCharsets.UTF_8) +
+                    "&target=" + URLEncoder.encode(outputLang, StandardCharsets.UTF_8) +
+                    "&format=text";
+            if (apiKey != null) {
+                formatted += "&api_key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8);
+            }
+            writer.write(formatted);
+            writer.flush();
+            writer.close();
+            httpConn.getOutputStream().close();
+
+            /* Checking response */
+            int statusCode = httpConn.getResponseCode();
+            if (statusCode == HttpURLConnection.HTTP_OK) {
+                try (BufferedReader in = new BufferedReader(new InputStreamReader(httpConn.getInputStream()))) {
+                    String inputLine;
+                    StringBuilder response = new StringBuilder();
+
+                    while ((inputLine = in.readLine()) != null) {
+                        response.append(inputLine);
+                    }
+
+                    return gson.fromJson(response.toString(), TranslateResponse.class).getTranslatedText();
+                }
+            } else {
+                // Capture the error response
+                try (BufferedReader errorReader = new BufferedReader(new InputStreamReader(httpConn.getErrorStream()))) {
+                    String errorLine;
+                    StringBuilder errorResponse = new StringBuilder();
+
+                    while ((errorLine = errorReader.readLine()) != null) {
+                        errorResponse.append(errorLine);
+                    }
+
+                    checkError(statusCode, errorResponse.toString());
+                } catch (IOException e) {
+                    refs.debugMsg("Failed to read the error stream");
+                    checkError(statusCode, "");
+                }
+            }
+            return textToTranslate;
+        }
+    }
 }
 
 class TranslateResponse {
-	String translatedText;
+    String translatedText;
 
-	public String getTranslatedText() {
-		return translatedText;
-	}
+    public String getTranslatedText() {
+        return translatedText;
+    }
 }
 
 class DetectResponse {
-	private String language;
+    private String language;
 
-	private double confidenceLevel;
+    private double confidenceLevel;
 
-	public String getLanguage() { return language; }
+    public String getLanguage() {
+        return language;
+    }
 
-	public Double getConfidenceLevel() { return confidenceLevel; }
+    public Double getConfidenceLevel() {
+        return confidenceLevel;
+    }
 }

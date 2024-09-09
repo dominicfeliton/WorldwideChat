@@ -25,14 +25,14 @@ Storage:
   sqlUsername: root
   sqlPassword: root
   sqlUseSSL: false
-  sqlOptionalArgs: []
+  sqlOptionalArgs: [ ]
   useMongoDB: false
   mongoHostname: localhost
   mongoPort: 27017
   mongoDatabaseName: cooldatabase
   mongoUsername: admin
   mongoPassword: password
-  mongoOptionalArgs: []
+  mongoOptionalArgs: [ ]
   usePostgreSQL: false
   postgresHostname: localhost
   postgresPort: 5432
@@ -40,7 +40,7 @@ Storage:
   postgresUsername: admin
   postgresPassword: password
   postgresSSL: false
-  postgresOptionalArgs: []
+  postgresOptionalArgs: [ ]
 Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true
@@ -84,7 +84,7 @@ Translator:
   messageCharLimit: 255
   errorLimit: 5
   errorsToIgnore:
-  - "confidence"
-  - "same as target"
-  - "detect the source language"
-  - "Unable to find model for specified languages"
+    - "confidence"
+    - "same as target"
+    - "detect the source language"
+    - "Unable to find model for specified languages"

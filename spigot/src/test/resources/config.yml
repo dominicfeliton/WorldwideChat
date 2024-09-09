@@ -25,7 +25,7 @@ Storage:
   sqlUsername: root
   sqlPassword: password
   sqlUseSSL: false
-  sqlOptionalArgs: []
+  sqlOptionalArgs: [ ]
   useMongoDB: false
   mongoHostname: localhost
   mongoPort: 27017
@@ -41,7 +41,7 @@ Storage:
   postgresUsername: admin
   postgresPassword: password
   postgresSSL: false
-  postgresOptionalArgs: []
+  postgresOptionalArgs: [ ]
 Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true

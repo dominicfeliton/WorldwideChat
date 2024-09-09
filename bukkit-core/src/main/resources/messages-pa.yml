@@ -332,16 +332,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਸਫਲਤਾਪੂਰਵਕ ਸੈੱਟ ਕੀਤਾ
     ਗਿਆ.
   wwcConfigGUIFatalAsyncAbortButton: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਬਦਲੋ
-  libreHttp400: Libre ਅਨੁਵਾਦ ਨੂੰ ਭੇਜੀ ਗਈ ਮਾੜੀ ਬੇਨਤੀ! ਜਦ ਤੱਕ ਤੁਸੀਂ ਕੁਝ ਨਹੀਂ ਕਰ ਰਹੇ
-    ਹੋ ਜੋ ਤੁਹਾਨੂੰ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ, ਤੁਹਾਨੂੰ ਇਹ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ. ਕਿਰਪਾ ਕਰਕੇ
-    ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!
   wwcConfigGUILibreTranslateApiKeyButton: ਮੁਫਤ ਬਦਲੋ ਅਨੁਵਾਦ API ਕੁੰਜੀ
-  libreHttp403: ਗੁੰਮ Libre ਅਨੁਵਾਦ API ਕੁੰਜੀ, ਜ ਤੁਹਾਨੂੰ ਸਰਵਰ ਤੇ ਪਾਬੰਦੀ ਰਹੇ ਹਨ!
   wwcConfigConversationLibreURLSuccess: ਮੁਫ਼ਤ URL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
   wwcConfigConversationLibreTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ
     Libre ਲਈ ਇੱਕ API ਕੁੰਜੀ ਦਿਓ, ਜਾਂ 0 ਨੂੰ ਵਾਪਸ ਜਾਣ ਲਈ ਟਾਈਪ ਕਰੋ।
   wwcConfigGUILibreTranslateButton: Libre ਅਨੁਵਾਦ
-  libreHttp429: ਸਰਵਰ ਤੋਂ ਰੇਟ ਸੀਮਾ ਦੇ ਕਾਰਨ ਕੋਈ ਵਿਸ਼ਵਾਸ ਨਹੀਂ.
   wwcConfigGUIToggleLibreTranslateButton: Libre ਅਨੁਵਾਦ ਬਦਲੋ
   wwcConfigConversationLibreTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ Libre ਅਨੁਵਾਦ ਨੂੰ ਚਾਲੂ
     ਕਰ ਦਿੱਤਾ। ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
@@ -349,7 +344,6 @@ Messages:
     ਸੈੱਟ ਕੀਤਾ.
   wwcConfigConversationLibreURLInput: ਮੌਜੂਦਾ URL {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਲਿਬਰੇ ਲਈ ਇੱਕ URL
     ਦਿਓ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
-  libreHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
   wwcConfigGUILibreTranslateURLButton: Libre ਅਨੁਵਾਦ URL ਨੂੰ ਬਦਲੋ
   wwcConfigConnectionFail: '{0} ਨਾਲ ਜੁੜਨ ਵਿੱਚ ਅਸਫਲ।'
   wwcConfigConversationMongoDatabaseNameSuccess: ਮੰਗੋਡੀਬੀ ਡੇਟਾਬੇਸ ਨਾਮ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ
@@ -387,8 +381,6 @@ Messages:
   wwcConfigGUIMongoPortButton: ਮੰਗੋਡੀਬੀ ਪੋਰਟ ਬਦਲੋ
   wwcConfigInvalidFatalAsyncTimeout: ਗਲਤ ਘਾਤਕ ਅਸਿੰਕ ਟਾਈਮਆਉਟ ਸੈਟ. 10 ਸਕਿੰਟ ਤੱਕ ਡਿਫੌਲਟ
     ਕਰਨਾ...
-  libreHttp500: ਤੁਹਾਡਾ ਚੁਣਿਆ ਇੰਪੁੱਟ ਅਤੇ ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ ਜੋੜਾ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ. ਕਿਰਪਾ
-    ਕਰਕੇ ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਸੈੱਟ ਚੁਣੋ!
   wwcConfigGUIDeepLTranslateButton: ਬਦਲੋ DeepL ਅਨੁਵਾਦ
   wwcConfigConversationDeepLTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਡੀਪੋਲ ਅਨੁਵਾਦ ਨੂੰ ਚਾਲੂ
     ਕੀਤਾ. ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
@@ -458,10 +450,6 @@ Messages:
   wwcrTransFail: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕੀਤਾ ਪਰ ਅਨੁਵਾਦਕ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲ
   wwcdCacheCleared: ਅਨੁਵਾਦ ਕੈਸ਼ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ ਸੀ।
   wwcdInvalidCmd: ਅਵੈਧ ਦਲੀਲਾਂ!
-  systranHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
-  systranHttp400: ਮਾੜੇ ਮਾਪਦੰਡ ਸਿਸਟ੍ਰਾਨ ਨੂੰ ਭੇਜੇ ਗਏ। ਸ਼ਾਇਦ ਇੱਕ ਮਾੜੀ ਭਾਸ਼ਾ ਦੀ ਜੋੜੀ ਹੋ
-    ਸਕਦੀ ਹੈ?
-  systranHttp500: ਸਿਸਟ੍ਰਾਨ ਐਂਡਪੁਆਇੰਟ ({0}) ਤੋਂ ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ.
   wwcInvalidStorageSession: '{0} ਤੁਹਾਡੀ ਕੌਂਫਿਗਰੇਸ਼ਨ ਵਿੱਚ ਸਮਰੱਥ ਹੈ, ਪਰ ਇੱਕ ਕੁਨੈਕਸ਼ਨ
     ਸਥਾਪਤ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼
     ਕਰੋ, ਪਰ ਕਿਰਪਾ ਕਰਕੇ ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਜੇਕਰ ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ {0} ਤੋਂ ਇੱਕ ਸਫਲ ਕੁਨੈਕਸ਼ਨ
@@ -703,9 +691,6 @@ Messages:
     ਹੋਏ...
   wwcAiSupportedLangsBad: ਖਰਾਬ AI ਸਮਰਥਿਤ ਭਾਸ਼ਾਵਾਂ ਲੱਭੀਆਂ ਗਈਆਂ ਸਾਡੇ ਡਿਫੌਲਟ ਦੀ ਵਰਤੋਂ
     ਕਰਦੇ ਹੋਏ...
-  chatGPTUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
-  chatGPT500: ChatGPT ਨੂੰ ਭੇਜੀ ਗਈ ਮਾੜੀ ਬੇਨਤੀ। ਜੇ ਇਹ ਕਾਇਮ ਹੈ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਡਿਵੈਲਪਰ
-    ਨਾਲ ਸੰਪਰਕ ਕਰੋ
   wwcConfigGUIAISettings: ਏਆਈ ਸੰਰਚਨਾ
   wwcConfigGUIChatGPTButton: ਚੈਟਜੀਪੀਟੀ
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API ਕੁੰਜੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤੀ
@@ -739,4 +724,17 @@ Messages:
   wwcConfigGUIAIChangeLangs: ਸਮਰਥਿਤ AI ਭਾਸ਼ਾਵਾਂ ਨੂੰ ਸੋਧੋ
   wwcConfigConversationAILangAddSuccess: AI ਸਮਰਥਿਤ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਸਫਲਤਾਪੂਰਵਕ ਇੱਕ ਨਵੀਂ
     ਭਾਸ਼ਾ ਸ਼ਾਮਲ ਕੀਤੀ ਗਈ।
+  translatorBadAPIKey: ਖਰਾਬ API ਕੁੰਜੀ! ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ ਇਸਨੂੰ ਸਹੀ ਢੰਗ
+    ਨਾਲ ਟਾਈਪ ਕੀਤਾ ਹੈ।
+  translatorLimitExceeded: ਤੁਸੀਂ ਜਾਂ ਤਾਂ ਆਪਣੀ ਅਨੁਵਾਦ ਸੇਵਾ ਲਈ ਕੋਟਾ ਨੂੰ ਪਾਰ ਕਰ ਚੁੱਕੇ
+    ਹੋ ਜਾਂ ਤੁਹਾਨੂੰ ਰੇਟ ਸੀਮਿਤ ਕੀਤਾ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਵੇਰਵਿਆਂ ਲਈ ਆਪਣੇ ਪ੍ਰਦਾਤਾ ਦੀ
+    ਜਾਂਚ ਕਰੋ।
+  translatorServerError: ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ. ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।
+  translatorForbidden: ਪਹੁੰਚ ਦੀ ਮਨਾਹੀ ਹੈ! ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀਆਂ ਆਗਿਆ ਦੀ ਜਾਂਚ ਕਰੋ।
+  translatorBadRequest: ਮਾੜੀ ਬੇਨਤੀ. ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਇਨਪੁਟ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼
+    ਕਰੋ।
+  translatorUnknownError: 'ਸਥਿਤੀ ਕੋਡ ਦੇ ਨਾਲ ਇੱਕ ਅਣਜਾਣ ਗਲਤੀ ਆਈ: {0}.'
+  translatorURLNotFound: ਤੁਹਾਡਾ ਅਨੁਵਾਦਕ ਸੇਵਾ URL ਅਵੈਧ ਹੈ।
+  translatorMethodNotAllowed: ਅਨੁਵਾਦ ਸੇਵਾ ਇਸ ਬੇਨਤੀ ਵਿਧੀ ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦੀ.
+  translatorNotFound: ਬੇਨਤੀ ਕੀਤਾ ਅਨੁਵਾਦ ਸਰੋਤ ਨਹੀਂ ਮਿਲਿਆ।
 

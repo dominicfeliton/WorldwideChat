@@ -326,22 +326,17 @@ Messages:
     tai mitä tahansa sen alapuolella palataksesi takaisin.
   wwcConfigConversationFatalAsyncSuccess: Async-tehtävän aikakatkaisu asetettu onnistuneesti.
   wwcConfigGUIFatalAsyncAbortButton: Muuta Async-tehtävän aikakatkaisu
-  libreHttp400: Huono pyyntö lähetetty Libre Translate -sivustolle! Ellet tee jotain,
-    mitä sinun ei pitäisi, sinun ei pitäisi saada tätä. Ota yhteyttä kehittäjään!
   wwcConfigGUILibreTranslateApiKeyButton: Muuta Libre Käännä API-avain
-  libreHttp403: Missing Libre Translate API Key, tai olet kielletty palvelimelta!
   wwcConfigConversationLibreURLSuccess: Libre URL asetettu onnistuneesti.
   wwcConfigConversationLibreTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna
     Libre-sovellusliittymän avain tai kirjoita 0 palataksesi takaisin.
   wwcConfigGUILibreTranslateButton: Libre Käännä
-  libreHttp429: Ei luottamusta palvelimen nopeusrajan vuoksi.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Käännä
   wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate onnistui vaihtamaan.
     Lataa uudelleen, jotta muutokset tulevat voimaan.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API -näppäin asetettu onnistuneesti.
   wwcConfigConversationLibreURLInput: Nykyinen URL-osoite on {0}. Anna Libren URL-osoite
     tai kirjoita 0 palataksesi takaisin.
-  libreHttpUnknown: 'Tuntematon http-virhe: {0}'
   wwcConfigGUILibreTranslateURLButton: Change Libre Käännä URL
   wwcConfigConnectionFail: Yhteyden muodostaminen kohteeseen {0} epäonnistui.
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB-tietokannan nimi muuttui
@@ -381,7 +376,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Vaihda MongoDB-portti
   wwcConfigInvalidFatalAsyncTimeout: Virheellinen kohtalokas asynkronoinnin aikakatkaisu
     asetettu. Oletusarvo 10 sekuntia...
-  libreHttp500: Valitsemaasi tulo- ja lähtökieliparia ei tueta. Valitse toinen kielisarja!
   wwcConfigGUIDeepLTranslateButton: Vaihda DeepL Käännä
   wwcConfigConversationDeepLTranslateToggleSuccess: Onnistuneesti vaihtanut DeepL
     Translate. Lataa uudelleen, jotta muutokset tulevat voimaan.
@@ -452,9 +446,6 @@ Messages:
     epäonnistui.
   wwcdCacheCleared: Käännösvälimuisti tyhjennettiin.
   wwcdInvalidCmd: Virheelliset argumentit!
-  systranHttpUnknown: 'Tuntematon http-virhe: {0}'
-  systranHttp400: Systranille lähetetyt huonot parametrit. Voi olla huono kielipari?
-  systranHttp500: Sisäinen palvelinvirhe Systran-päätepisteestä ({0}).
   wwcInvalidStorageSession: '{0} on käytössä kokoonpanossasi, mutta yhteyttä ei ole
     muodostettu. Yritä ladata uudelleen korjataksesi tämän, mutta ota yhteyttä kehittäjään,
     jos olet aiemmin saanut onnistuneen yhteysviestin osoitteesta {0}.'
@@ -695,9 +686,6 @@ Messages:
   wwcAiSystemPromptLoaded: AI System Prompt ladattu.
   wwcAiSystemPromptBad: Huono AI-järjestelmäkehote havaittu. Käyttämällä oletustamme...
   wwcAiSupportedLangsBad: Huonot tekoälyn tuetut kielet havaittu. Käyttämällä oletusarvojamme...
-  chatGPTUnknown: 'Tuntematon http-virhe: {0}'
-  chatGPT500: 'Huono pyyntö lähetetty ChatGPT: lle. Jos tämä jatkuu, ota yhteyttä
-    kehittäjään!'
   wwcConfigGUIAISettings: Tekoälyn kokoonpano
   wwcConfigGUIChatGPTButton: Chat GPT
   wwcConfigConversationChatGPTApiKeySuccess: ChatGPT-sovellusliittymän avain asetettiin
@@ -731,4 +719,14 @@ Messages:
   wwcConfigGUIAIChangeLangs: Muokkaa tuettuja tekoälykieliä
   wwcConfigConversationAILangAddSuccess: Lisätty uusi kieli onnistuneesti tekoälyn
     tuetuille kielille.
+  translatorBadAPIKey: Huono API-avain! Varmista, että olet kirjoittanut sen oikein.
+  translatorLimitExceeded: Olet joko ylittänyt käännöspalvelusi kiintiön tai olet
+    saanut hintarajoituksen. Tarkista palveluntarjoajaltasi lisätietoja.
+  translatorServerError: Sisäinen palvelinvirhe. Yritä myöhemmin uudelleen.
+  translatorForbidden: Pääsy on kielletty! Tarkista käyttöoikeutesi.
+  translatorBadRequest: Huono pyyntö. Tarkista syötteesi ja yritä uudelleen.
+  translatorUnknownError: 'Tuntematon virhe tapahtui tilakoodilla: {0}.'
+  translatorURLNotFound: Kääntäjäpalvelun URL-osoite on virheellinen.
+  translatorMethodNotAllowed: Käännöspalvelu ei tue tätä pyyntömenetelmää.
+  translatorNotFound: Pyydettyä käännösresurssia ei löytynyt.
 
