@@ -6,16 +6,17 @@
 
 #### PSA: If you are on 1.13-1.15, please use our Spigot jar regardless if you are using Paper or not. The adventure API + additional Paper components are not available before 1.16.
 
-### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+ on JDK 11+.
+### WorldwideChat is a translation plugin for Spigot, PaperMC, and Folia 1.13+ on JDK 11+.
 
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:
 
-- Amazon Translate, Azure Translate, DeepL Translate, Google Translate, Libre Translate, and Systran Translate support.
+- Amazon Translate, Azure Translate, ChatGPT, DeepL Translate, Google Translate, Libre Translate, Ollama, and Systran Translate support.
 - Translate incoming/outgoing chat, signs, entities, and written books with an interactive GUI.
 - Translation globally, for other players, or just you.
 - The plugin itself has been localized into more than 30 languages thanks to Amazon Translate.
 - A cache that stores the most used phrases by players on your server, improving speed/reliability/lower costs.
+- A blacklist to avoid translating certain phrases/words.
 - Configurable rate limits so your players don't rack up substantial translation costs.
 - Persistent translation sessions saved per player across server reboots and reloads.
 - Stat tracker to keep track of how your players use this plugin.
