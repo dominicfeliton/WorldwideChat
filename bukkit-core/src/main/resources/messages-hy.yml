@@ -344,22 +344,17 @@ Messages:
     timeout, կամ որեւէ բան ներքեւում այն վերադառնալ.'
   wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
   wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը
-  libreHttp400: 'Վատ խնդրանքը ուղարկվել է Libre Թարգմանել! Եթե դուք անում մի բան,
-    որ դուք չպետք է, Դուք չպետք է ստանալ այս. Խնդրում ենք կապնվել մշակողի հետ:'
   wwcConfigGUILibreTranslateApiKeyButton: Փոխել ազատ Թարգմանել API Key
-  libreHttp403: Missing Libre Թարգմանել API Key, կամ դուք արգելված է սերվերի!
   wwcConfigConversationLibreURLSuccess: Ազատ URL սահմանել հաջողությամբ.
   wwcConfigConversationLibreTranslateApiKeyInput: 'Ներկայիս API ստեղնը {0} է: Խնդրում
     ենք մուտքագրել API ստեղնը Libre- ի համար, կամ մուտքագրել 0, վերադառնալ:'
   wwcConfigGUILibreTranslateButton: Ազատ Թարգմանել
-  libreHttp429: Վստահություն սերվերից փոխարժեքի սահմանաչափի պատճառով.
   wwcConfigGUIToggleLibreTranslateButton: Toggle անվճար թարգմանել
   wwcConfigConversationLibreTranslateToggleSuccess: 'Հաջողությամբ toggled Libre Թարգմանել.
     Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
   wwcConfigConversationLibreTranslateApiKeySuccess: Ազատ API բանալին սահմանվել հաջողությամբ.
   wwcConfigConversationLibreURLInput: 'Ներկայիս URL- ն {0} է: Խնդրում ենք մուտքագրել
     URL Libre- ի համար, կամ մուտքագրել 0 ՝ վերադառնալու համար:'
-  libreHttpUnknown: 'Անհայտ http սխալ: {0}'
   wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL
   wwcConfigConnectionFail: 'Չհաջողվեց միանալ {0}- ին:'
   wwcConfigConversationMongoDatabaseNameSuccess: 'Հաջողությամբ փոխեց MongoDB տվյալների
@@ -402,8 +397,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Փոխել MongoDB նավահանգիստը
   wwcConfigInvalidFatalAsyncTimeout: 'Անվավեր ճակատագրական async timeout հավաքածու:
     Defaulting է 10 վայրկյան...'
-  libreHttp500: 'Ձեր ընտրած մուտքային և ելքային լեզվական զույգը չի ապահովվում: Խնդրում
-    ենք ընտրել այլ լեզվական հավաքածու:'
   wwcConfigGUIDeepLTranslateButton: Փոխել DeepL թարգմանել
   wwcConfigConversationDeepLTranslateToggleSuccess: 'Հաջողությամբ toggled DeepL թարգմանել.
     Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
@@ -475,10 +468,6 @@ Messages:
   wwcrTransFail: 'Վերաբեռնվել է WorldwideChat-ը, բայց չի հաջողվել թարգմանիչ միացնել:'
   wwcdCacheCleared: 'Թարգմանության քեշը մաքրվեց:'
   wwcdInvalidCmd: 'Անվավեր փաստարկներ:'
-  systranHttpUnknown: 'Անհայտ http սխալ: {0}'
-  systranHttp400: 'Վատ պարամետրերը ուղարկվել են Systran- ին: Կարող է վատ լեզվական
-    զույգ լինել:'
-  systranHttp500: 'Ներքին սերվերի սխալ Systran վերջնակետից ({0}):'
   wwcInvalidStorageSession: '{0} միացված է ձեր կոնֆիգուրացիայում, բայց կապ չի հաստատվում:
     Խնդրում ենք փորձել վերաբեռնումը շտկելու համար սա, բայց խնդրում ենք կապվել մշակողի
     հետ, եթե նախկինում հաջողված կապի հաղորդագրություն եք ստացել {0} -ից:'
@@ -725,4 +714,67 @@ Messages:
     ձեր տվյալների բազային:'
   colorCodeWarning: 'Գունային կոդերի օգտագործումը կարող է ձեզ անկանխատեսելի արդյունքներ
     տալ:'
+  wwcAiSystemPromptLoaded: 'AI համակարգի հուշումը բեռնված է:'
+  wwcAiSystemPromptBad: 'Հայտնաբերվել է AI համակարգի վատ հուշում: Օգտագործելով մեր
+    լռելյայն...'
+  wwcAiSupportedLangsBad: 'Հայտնաբերվել են վատ AI աջակցվող լեզուներ: Օգտագործելով
+    մեր նախադրյալները...'
+  wwcConfigGUIAISettings: AI կոնֆիգուրացիա
+  wwcConfigGUIChatGPTButton: ՉաթԳՊՏ
+  wwcConfigConversationChatGPTApiKeySuccess: 'ChatGPT API- ի բանալին հաջողությամբ
+    հավաքվել է:'
+  wwcConfigGUAIPromptButton: Փոխեք AI հուշումը
+  wwcConfigConversationChatGPTURLInput: 'Ներկայիս URL- ն {0} է: Խնդրում ենք մուտքագրել
+    URL- ը ChatGPT- ի համար կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationChatGPTApiKeyInput: 'Ներկայիս API- ի բանալին {0} է: Խնդրում
+    ենք մուտքագրել API բանալին ChatGPT- ի համար կամ մուտքագրել 0 հետ գնալու համար:'
+  wwcConfigConversationChatGPTURLSuccess: 'ChatGPT URL- ը հաջողությամբ սահմանվել է:'
+  wwcConfigGUIChatGPTURLButton: Փոխել ChatGPT URL- ը
+  wwcConfigGUIChatGPTAPIKeyButton: Փոխեք ChatGPT API բանալին
+  wwcConfigConversationChatGPTModelSuccess: 'ChatGPT մոդելը հաջողությամբ հավաքվել
+    է:'
+  wwcConfigGUIChatGPTModelButton: Փոխել ChatGPT մոդելը
+  wwcConfigGUIToggleChatGPTButton: Անջատել ChatGPT
+  wwcLargeConfigInputSuccess: '{0} նիշերի ձեր մեծ մուտքագրումը մշակվել է:'
+  wwcConfigInstructionsBulkBook: 'Ընթացիկ արժեքը տեսնելու համար բացեք թողնված գիրքը:
+    Ստորագրեք գիրքը այս արժեքում փոփոխություններ կատարելու համար:'
+  wwcConfigGUIChatGPTToggleSuccess: Հաջողությամբ միացվել է ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Փոխել տեղեկանքի հուշումը
+  wwcConfigGUIChatGPTPromptButton: Փոխել ChatGPT հուշումը
+  wwcConfigGUIModifyAILangsSettings: Փոփոխեք աջակցվող AI լեզուները
+  wwcConfigConversationAddLang: 'Մուտքագրեք նոր լեզուն, որը կցանկանայիք ավելացնել,
+    կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationAILangDeletionSuccess: 'Հաջողությամբ ջնջեց լեզուն:'
+  wwcConfigGUIAILangModify: Փոփոխել լեզուն ({0})
+  wwcConfigGUIAILangDeleteButton: Ջնջել լեզուն
+  wwcConfigGUIAILangNewButton: Ավելացնել նոր լեզու
+  wwcConfigGUIAIChangeLangs: Փոփոխեք աջակցվող AI լեզուները
+  wwcConfigConversationAILangAddSuccess: 'Հաջողությամբ նոր լեզու ավելացրեց AI- ի կողմից
+    աջակցվող լեզուներին:'
+  translatorBadAPIKey: 'Վատ API բանալին: Խնդրում ենք համոզվել, որ ճիշտ եք մուտքագրել
+    այն:'
+  translatorLimitExceeded: 'Դուք կամ գերազանցել ուղեգիր ձեր թարգմանչական ծառայության
+    կամ դուք արդեն դրույքաչափը սահմանափակ. Լրացուցիչ մանրամասների համար խնդրում ենք
+    ստուգել ձեր մատակարարին:'
+  translatorServerError: 'Ներքին սերվերի սխալ: Խնդրում ենք կրկին փորձել ավելի ուշ:'
+  translatorForbidden: 'Մուտքն արգելված է: Խնդրում ենք ստուգել ձեր թույլտվությունները:'
+  translatorBadRequest: 'Վատ խնդրանք. Խնդրում ենք ստուգել ձեր մուտքը և կրկին փորձեք:'
+  translatorUnknownError: 'Անհայտ սխալ է տեղի ունեցել կարգավիճակի կոդի հետ ՝ {0}:'
+  translatorURLNotFound: 'Ձեր թարգմանչի ծառայության URL- ն անվավեր է:'
+  translatorMethodNotAllowed: 'Թարգմանչական ծառայությունը չի աջակցում այս հարցման
+    մեթոդին:'
+  translatorNotFound: 'Հայցված թարգմանության ռեսուրսը չի գտնվել:'
+  wwcConfigConversationChatGPTModelInput: 'Ներկայիս մոդելը {0} է: Խնդրում ենք մուտքագրել
+    մոդել ChatGPT- ի համար կամ մուտքագրել 0-ը հետ գնալու համար:'
+  wwcConfigGUIOllamaModelButton: Փոխել Օգտագործման մոդելը
+  wwcConfigConversationOllamaURLSuccess: 'Տեղադրեք URL- ը հաջողությամբ:'
+  wwcConfigConversationOllamaModelInput: 'Ներկայիս մոդելը {0} է: Խնդրում ենք մուտքագրել
+    մոդել Ollama-ի համար կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigConversationOllamaURLInput: 'Ներկայիս URL- ն {0} է: Խնդրում ենք մուտքագրել
+    URL- ը Ollama- ի համար կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigGUIOllamaButton: Օլլամա
+  wwcConfigGUIOllamaToggleSuccess: 'Հաջողությամբ միացրեց Ollama-ն:'
+  wwcConfigGUIOllamaURLButton: Փոխել գրանցման URL- ը
+  wwcConfigConversationOllamaModelSuccess: 'Ollama մոդելի հավաքածուն հաջողությամբ:'
+  wwcConfigGUIToggleOllamaButton: Անջատեք Օգտագործումը
 

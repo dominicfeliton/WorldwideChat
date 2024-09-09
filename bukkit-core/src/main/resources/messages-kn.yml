@@ -335,16 +335,11 @@ Messages:
     ಹಿಂತಿರುಗಿ ಹೋಗಲು ಅದರ ಕೆಳಗೆ ಏನು.
   wwcConfigConversationFatalAsyncSuccess: Async ಕಾರ್ಯ ಸಮಯ ಯಶಸ್ವಿಯಾಗಿ ಸೆಟ್.
   wwcConfigGUIFatalAsyncAbortButton: Async ಟಾಸ್ಕ್ ಸಮಯ ಬದಲಾಯಿಸಿ
-  libreHttp400: ಕೆಟ್ಟ ವಿನಂತಿಯನ್ನು ಲಿಬ್ರೆ ಅನುವಾದಕ್ಕೆ ಕಳುಹಿಸಲಾಗಿದೆ! ನೀವು ಮಾಡಬಾರದು ಎಂದು
-    ನೀವು ಏನನ್ನಾದರೂ ಮಾಡುತ್ತಿಲ್ಲದಿದ್ದರೆ, ನೀವು ಇದನ್ನು ಪಡೆಯಬಾರದು. ದಯವಿಟ್ಟು ಡೆವಲಪರ್ ಅನ್ನು
-    ಸಂಪರ್ಕಿಸಿ!
   wwcConfigGUILibreTranslateApiKeyButton: ಉಚಿತ API ಕೀ ಭಾಷಾಂತರಿಸಿ ಬದಲಾಯಿಸಿ
-  libreHttp403: ಕಾಣೆಯಾಗಿದೆ ಲಿಬ್ರೆ ಭಾಷಾಂತರಿಸಿ API ಕೀ, ಅಥವಾ ನೀವು ಪರಿಚಾರಕದಿಂದ ನಿಷೇಧಿಸಲಾಗಿದೆ!
   wwcConfigConversationLibreURLSuccess: ಉಚಿತ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwcConfigConversationLibreTranslateApiKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿಯು {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು
     ಲಿಬ್ರೆ ಗಾಗಿ API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigGUILibreTranslateButton: ಲಿಬ್ರೆ ಭಾಷಾಂತರಿಸಿ
-  libreHttp429: ಸರ್ವರ್ನಿಂದ ದರ ಮಿತಿಯಿಂದಾಗಿ ಯಾವುದೇ ವಿಶ್ವಾಸವಿಲ್ಲ.
   wwcConfigGUIToggleLibreTranslateButton: ಉಚಿತ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
   wwcConfigConversationLibreTranslateToggleSuccess: ಲಿಬ್ರೆ ಅನುವಾದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ
     ಟಾಗಲ್ ಮಾಡಲಾಗಿದೆ. ಬದಲಾವಣೆಗಳು ಜಾರಿಗೆ ಬರುವಂತೆ ಮರುಲೋಡ್ ಮಾಡಿ.
@@ -352,7 +347,6 @@ Messages:
     ಹೊಂದಿಸಲಾಗಿದೆ.
   wwcConfigConversationLibreURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಲಿಬ್ರೆ ಗಾಗಿ
     ಒಂದು URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
-  libreHttpUnknown: 'ಗೊತ್ತಿಲ್ಲದ http ದೋಷ: {0}'
   wwcConfigGUILibreTranslateURLButton: ಉಚಿತ ಭಾಷಾಂತರಿಸಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigConnectionFail: '{0} ಗೆ ಸಂಪರ್ಕ ಕಲ್ಪಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ
@@ -395,8 +389,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB ಪೋರ್ಟ್ ಅನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigInvalidFatalAsyncTimeout: ಅಮಾನ್ಯ ಮಾರಕ ಅಸಿಕ್ ಸಮಯ ಸೆಟ್. 10 ಸೆಕೆಂಡುಗಳಿಗೆ ಡೀಫಾಲ್ಟ್
     ಮಾಡಲಾಗುತ್ತಿದೆ...
-  libreHttp500: ನಿಮ್ಮ ಆಯ್ಕೆ ಮಾಡಿದ ಇನ್ಪುಟ್ ಮತ್ತು ಔಟ್ಪುಟ್ ಭಾಷಾ ಜೋಡಿಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.
-    ದಯವಿಟ್ಟು ಬೇರೆ ಭಾಷೆಯ ಸೆಟ್ ಅನ್ನು ಆರಿಸಿ!
   wwcConfigGUIDeepLTranslateButton: ಡೀಪ್ಎಲ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
   wwcConfigConversationDeepLTranslateToggleSuccess: ಡೀಪ್ಎಲ್ ಅನುವಾದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ
     ಟಾಗಲ್ ಮಾಡಲಾಗಿದೆ. ಬದಲಾವಣೆಗಳು ಜಾರಿಗೆ ಬರುವಂತೆ ಮರುಲೋಡ್ ಮಾಡಿ.
@@ -465,9 +457,6 @@ Messages:
     ವಿಫಲವಾಯಿತು.
   wwcdCacheCleared: ಅನುವಾದ ಸಂಗ್ರಹ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ.
   wwcdInvalidCmd: ಅಮಾನ್ಯ ವಾದಗಳು!
-  systranHttpUnknown: 'ಅಜ್ಞಾತ http ದೋಷ: {0}'
-  systranHttp400: ಕೆಟ್ಟ ನಿಯತಾಂಕಗಳನ್ನು ಸಿಸ್ಟ್ರಾನ್ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ. ಕೆಟ್ಟ ಭಾಷಾ ಜೋಡಿಯಾಗಿರಬಹುದು?
-  systranHttp500: ಸಿಸ್ಟ್ರಾನ್ ಎಂಡ್ಪಾಯಿಂಟ್ ({0}) ನಿಂದ ಆಂತರಿಕ ಸರ್ವರ್ ದೋಷ.
   wwcInvalidStorageSession: ನಿಮ್ಮ ಕಾನ್ಫಿಗ್ನಲ್ಲಿ {0} ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ, ಆದರೆ
     ಸಂಪರ್ಕವನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ. ದಯವಿಟ್ಟು ಇದನ್ನು ಸರಿಪಡಿಸಲು ಮರುಲೋಡ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ,
     ಆದರೆ ನೀವು ಹಿಂದೆ {0} ನಿಂದ ಯಶಸ್ವಿ ಸಂಪರ್ಕ ಸಂದೇಶವನ್ನು ಸ್ವೀಕರಿಸಿದ್ದರೆ ದಯವಿಟ್ಟು ಡೆವಲಪರ್
@@ -707,4 +696,63 @@ Messages:
   wwcdResetNotifError: ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿಲ್ಲ. ನಿಮ್ಮ ಡೇಟಾಬೇಸ್ಗೆ ನೀವು
     ಸಂಪರ್ಕಗೊಂಡಿದ್ದೀರಾ?
   colorCodeWarning: ಬಣ್ಣ ಸಂಕೇತಗಳನ್ನು ಬಳಸುವುದು ನಿಮಗೆ ಅನಿರೀಕ್ಷಿತ ಫಲಿತಾಂಶಗಳನ್ನು ನೀಡಬಹುದು.
+  wwcAiSystemPromptLoaded: AI ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್ ಲೋಡ್ ಮಾಡಲಾಗಿದೆ.
+  wwcAiSystemPromptBad: ಕೆಟ್ಟ AI ಸಿಸ್ಟಮ್ ಪ್ರಾಂಪ್ಟ್ ಪತ್ತೆಯಾಗಿದೆ. ನಮ್ಮ ಡೀಫಾಲ್ಟ್ ಬಳಸಿ...
+  wwcAiSupportedLangsBad: ಕೆಟ್ಟ AI ಬೆಂಬಲಿತ ಭಾಷೆಗಳು ಪತ್ತೆಯಾಗಿವೆ. ನಮ್ಮ ಡೀಫಾಲ್ಟ್ಗಳನ್ನು
+    ಬಳಸುವುದು...
+  wwcConfigGUIAISettings: AI ಸಂರಚನೆ
+  wwcConfigGUIChatGPTButton: ಚಾಟ್ಜಿಪಿಟಿ
+  wwcConfigConversationChatGPTApiKeySuccess: ಚಾಟ್ಜಿಪಿಟಿ ಎಪಿಐ ಕೀ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUAIPromptButton: AI ಪ್ರಾಂಪ್ಟ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationChatGPTURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ChatGPT ಗಾಗಿ
+    URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationChatGPTApiKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿ {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ChatGPT
+    ಗಾಗಿ API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUIChatGPTURLButton: ಚಾಟ್ಜಿಪಿಟಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIChatGPTAPIKeyButton: ಚಾಟ್ಜಿಪಿಟಿ ಎಪಿಐ ಕೀಲಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationChatGPTModelSuccess: ಚಾಟ್ಜಿಪಿಟಿ ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUIChatGPTModelButton: ಚಾಟ್ಜಿಪಿಟಿ ಮಾದರಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIToggleChatGPTButton: ಚಾಟ್ಜಿಪಿಟಿಯನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcLargeConfigInputSuccess: '{0} ಅಕ್ಷರಗಳ ನಿಮ್ಮ ದೊಡ್ಡ ಇನ್ಪುಟ್ ಅನ್ನು ಸಂಸ್ಕರಿಸಲಾಗಿದೆ.'
+  wwcConfigInstructionsBulkBook: ಪ್ರಸ್ತುತ ಮೌಲ್ಯವನ್ನು ನೋಡಲು ಕೈಬಿಟ್ಟಿರುವ ಪುಸ್ತಕವನ್ನು
+    ತೆರೆಯಿರಿ. ಈ ಮೌಲ್ಯದಲ್ಲಿ ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಪುಸ್ತಕಕ್ಕೆ ಸಹಿ ಮಾಡಿ.
+  wwcConfigGUIChatGPTToggleSuccess: ಚಾಟ್ಜಿಪಿಟಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIOllamaPromptButton: ಪರೀಕ್ಷಾ ಪ್ರಾಂಪ್ಟ್ ಬದಲಾಯಿಸಿ
+  wwcConfigGUIChatGPTPromptButton: ಚಾಟ್ಜಿಪಿಟಿ ಪ್ರಾಂಪ್ಟ್ ಬದಲಾಯಿಸಿ
+  wwcConfigGUIModifyAILangsSettings: ಬೆಂಬಲಿತ AI ಭಾಷೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ
+  wwcConfigConversationAddLang: ನೀವು ಸೇರಿಸಲು ಬಯಸುವ ಹೊಸ ಭಾಷೆಯನ್ನು ನಮೂದಿಸಿ ಅಥವಾ ಹಿಂತಿರುಗಿ
+    ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationAILangDeletionSuccess: ಭಾಷೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ.
+  wwcConfigGUIAILangModify: ಭಾಷೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ ({0})
+  wwcConfigGUIAILangDeleteButton: ಭಾಷೆಯನ್ನು ಅಳಿಸಿ
+  wwcConfigGUIAILangNewButton: ಹೊಸ ಭಾಷೆಯನ್ನು ಸೇರಿಸಿ
+  wwcConfigGUIAIChangeLangs: ಬೆಂಬಲಿತ AI ಭಾಷೆಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ
+  wwcConfigConversationAILangAddSuccess: AI ಬೆಂಬಲಿತ ಭಾಷೆಗಳಿಗೆ ಹೊಸ ಭಾಷೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಸೇರಿಸಲಾಗಿದೆ.
+  translatorBadAPIKey: ಕೆಟ್ಟ ಎಪಿಐ ಕೀ! ದಯವಿಟ್ಟು ನೀವು ಅದನ್ನು ಸರಿಯಾಗಿ ಟೈಪ್ ಮಾಡಿದ್ದೀರಿ
+    ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
+  translatorLimitExceeded: ನಿಮ್ಮ ಅನುವಾದ ಸೇವೆಗಾಗಿ ನೀವು ಕೋಟಾವನ್ನು ಮೀರಿದ್ದೀರಿ ಅಥವಾ ನೀವು
+    ದರ ಸೀಮಿತಗೊಳಿಸಲಾಗಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಪೂರೈಕೆದಾರರನ್ನು ಪರಿಶೀಲಿಸಿ.
+  translatorServerError: ಆಂತರಿಕ ಸರ್ವರ್ ದೋಷ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.
+  translatorForbidden: ಪ್ರವೇಶವನ್ನು ನಿಷೇಧಿಸಲಾಗಿದೆ! ದಯವಿಟ್ಟು ನಿಮ್ಮ ಅನುಮತಿಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.
+  translatorBadRequest: ಕೆಟ್ಟ ವಿನಂತಿ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇನ್ಪುಟ್ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ
+    ಪ್ರಯತ್ನಿಸಿ.
+  translatorUnknownError: 'ಸ್ಥಿತಿ ಕೋಡ್ನೊಂದಿಗೆ ಅಪರಿಚಿತ ದೋಷ ಸಂಭವಿಸಿದೆ: {0}.'
+  translatorURLNotFound: ನಿಮ್ಮ ಅನುವಾದಕ ಸೇವಾ URL ಅಮಾನ್ಯವಾಗಿದೆ.
+  translatorMethodNotAllowed: ಅನುವಾದ ಸೇವೆಯು ಈ ವಿನಂತಿ ವಿಧಾನವನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.
+  translatorNotFound: ವಿನಂತಿಸಿದ ಅನುವಾದ ಸಂಪನ್ಮೂಲ ಕಂಡುಬಂದಿಲ್ಲ.
+  wwcConfigConversationChatGPTModelInput: ಪ್ರಸ್ತುತ ಮಾದರಿ {0}. ದಯವಿಟ್ಟು ChatGPT ಗಾಗಿ
+    ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIOllamaModelButton: ಓಲೆಮ್ ಮಾದರಿ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationOllamaURLSuccess: ಓಲಮಾ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOllamaModelInput: ಪ್ರಸ್ತುತ ಮಾದರಿ {0}. ದಯವಿಟ್ಟು ಓಲಾಮಾಕ್ಕಾಗಿ
+    ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationOllamaURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಓಲಾಮಾಕ್ಕಾಗಿ
+    URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIOllamaButton: ಒಲ್ಲಮಾ
+  wwcConfigGUIOllamaToggleSuccess: ಒಲ್ಲಾಮಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIOllamaURLButton: ಪಟ್ಟಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationOllamaModelSuccess: ಒಲ್ಲಾಮಾ ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUIToggleOllamaButton: ಟಾಗಲ್ ಓಲಾಮಾ
 

@@ -25,14 +25,14 @@ Storage:
   sqlUsername: root
   sqlPassword: root
   sqlUseSSL: false
-  sqlOptionalArgs: []
+  sqlOptionalArgs: [ ]
   useMongoDB: false
   mongoHostname: localhost
   mongoPort: 27017
   mongoDatabaseName: cooldatabase
   mongoUsername: admin
   mongoPassword: password
-  mongoOptionalArgs: []
+  mongoOptionalArgs: [ ]
   usePostgreSQL: false
   postgresHostname: localhost
   postgresPort: 5432
@@ -40,7 +40,7 @@ Storage:
   postgresUsername: admin
   postgresPassword: password
   postgresSSL: false
-  postgresOptionalArgs: []
+  postgresOptionalArgs: [ ]
 Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true
@@ -55,20 +55,27 @@ Chat:
     hoverFormat: "&o{local:wwcOrigHover}:"
     force: false
 Translator:
-  useGoogleTranslate: false
-  googleTranslateAPIKey: google_translate_key_goes_here
   useAmazonTranslate: false
   amazonAccessKey: amazon_translate_key_goes_here
   amazonSecretKey: amazon_translate_secret_goes_here
   amazonRegion: amazon_region_goes_here
-  useLibreTranslate: false
-  libreAPIKey: none
-  libreURL: libre_url_goes_here
-  useDeepLTranslate: false
-  deepLAPIKey: deepl_key_goes_here
   useAzureTranslate: false
   azureAPIKey: azure_key_goes_here
   azureRegion: azure_region_goes_here
+  useChatGPT: false
+  chatGPTAPIKey: chatgpt_key_goes_here
+  chatGPTModel: gpt-4o-2024-08-06
+  chatGPTURL: "https://api.openai.com/v1/chat/completions"
+  useDeepLTranslate: false
+  deepLAPIKey: deepl_key_goes_here
+  useGoogleTranslate: false
+  googleTranslateAPIKey: google_translate_key_goes_here
+  useLibreTranslate: false
+  libreAPIKey: none
+  libreURL: libre_url_goes_here
+  useOllama: false
+  ollamaURL: ollama_url_goes_here
+  ollamaModel: finalend/hermes-3-llama-3.1:8b
   useSystranTranslate: false
   systranAPIKey: systran_key_goes_here
   translatorCacheSize: 100
@@ -77,7 +84,7 @@ Translator:
   messageCharLimit: 255
   errorLimit: 5
   errorsToIgnore:
-  - "confidence"
-  - "same as target"
-  - "detect the source language"
-  - "Unable to find model for specified languages"
+    - "confidence"
+    - "same as target"
+    - "detect the source language"
+    - "Unable to find model for specified languages"

@@ -3,27 +3,15 @@ package com.dominicfeliton.worldwidechat.listeners;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import io.papermc.paper.chat.ChatRenderer;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
-import net.kyori.adventure.text.format.NamedTextColor;
-import net.kyori.adventure.text.format.TextDecoration;
-import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
-import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.eclipse.sisu.inject.Legacy;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener {
 
@@ -123,7 +111,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                 for (Audience eaRecipient : event.viewers()) {
                     Component outgoingMessage;
                     if (eaRecipient instanceof Player) {
-                        outgoingMessage = formatMessage(event, (Player)eaRecipient, outgoingText, event.message(), false);
+                        outgoingMessage = formatMessage(event, (Player) eaRecipient, outgoingText, event.message(), false);
                     } else {
                         outgoingMessage = formatMessage(event, null, outgoingText, event.message(), false);
                     }
@@ -146,7 +134,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
         // Add hover text w/original message
         if ((incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat"))
-        || (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
+                || (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
             refs.debugMsg("Add hover!");
             outMsg = outMsg
                     .hoverEvent(HoverEvent.showText(super.getVaultHoverMessage(event.getPlayer(), original, event.getPlayer().name(), targetPlayer)));

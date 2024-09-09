@@ -331,22 +331,17 @@ Messages:
     परत जाण्यासाठी त्याच्या खाली काहीही.
   wwcConfigConversationFatalAsyncSuccess: Async कार्य कालबाह्य यशस्वीरित्या सेट.
   wwcConfigGUIFatalAsyncAbortButton: Async कार्य कालबाह्य बदला
-  libreHttp400: खराब विनंती Libre भाषांतर पाठविले! आपण काहीतरी करत नाही तोपर्यंत आपण
-    नये, आपण हे प्राप्त करू नये. विकसक संपर्क साधा!
   wwcConfigGUILibreTranslateApiKeyButton: मोफत भाषांतर API की बदला
-  libreHttp403: Libre अनुवाद API की गहाळ, किंवा आपण सर्व्हर बंदी घालण्यात आली!
   wwcConfigConversationLibreURLSuccess: मोफत URL यशस्वीरित्या सेट.
   wwcConfigConversationLibreTranslateApiKeyInput: वर्तमान API की {0} आहे. कृपया Libre
     करीता API की इनपुट करा, किंवा परत जाण्यासाठी 0 टाइप करा.
   wwcConfigGUILibreTranslateButton: लिब्रे भाषांतर
-  libreHttp429: सर्व्हरवरून दर मर्यादेमुळे कोणताही आत्मविश्वास नाही.
   wwcConfigGUIToggleLibreTranslateButton: फ्री भाषांतर टॉगल करा
   wwcConfigConversationLibreTranslateToggleSuccess: यशस्वीरित्या Libre भाषांतर टॉगल
     केले. बदल प्रभावी होण्यासाठी रीलोड करा.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API की यशस्वीरित्या सेट.
   wwcConfigConversationLibreURLInput: वर्तमान URL {0} आहे. कृपया Libre साठी URL इनपुट
     करा, किंवा परत जाण्यासाठी 0 टाइप करा.
-  libreHttpUnknown: 'अपरिचीत HTTP त्रुटी: {0}'
   wwcConfigGUILibreTranslateURLButton: विनामूल्य भाषांतर URL बदला
   wwcConfigConnectionFail: '{0} शी कनेक्ट करण्यास अपयशी.'
   wwcConfigConversationMongoDatabaseNameSuccess: मोंगोडीबी डेटाबेस नाव यशस्वीरित्या
@@ -384,8 +379,6 @@ Messages:
   wwcConfigGUIMongoPortButton: मोंगोडीबी पोर्ट बदला
   wwcConfigInvalidFatalAsyncTimeout: अवैध जीवघेणा async कालबाह्य संच. 10 सेकंदांपर्यंत
     डीफॉल्ट करीत आहे...
-  libreHttp500: आपली निवडलेली इनपुट आणि आऊटपुट भाषा जोडी समर्थित नाही. कृपया भिन्न
-    भाषा संच निवडा!
   wwcConfigGUIDeepLTranslateButton: DeepL टॉगल करा भाषांतर
   wwcConfigConversationDeepLTranslateToggleSuccess: यशस्वीरित्या toggled DeepL भाषांतर.
     बदल प्रभावी होण्यासाठी रीलोड करा.
@@ -453,9 +446,6 @@ Messages:
   wwcrTransFail: वर्ल्डविडचॅट रीलोड केले गेले परंतु अनुवादक सक्षम करण्या
   wwcdCacheCleared: भाषांतर कॅशे साफ केले गेले.
   wwcdInvalidCmd: अवैध वाद!
-  systranHttpUnknown: 'अज्ञात HTTP त्रुटी: {0}'
-  systranHttp400: सिस्ट्रान यांना पाठविलेले वाईट वाईट भाषेची जोडी असू शकते?
-  systranHttp500: सिस्ट्रन एंडपॉइंट ({0}) मधील अंतर्गत सर्व्हर त्रुट
   wwcInvalidStorageSession: आपल्या कॉन्फिगरेशनमध्ये {0} सक्षम आहे, परंतु कनेक्शन स्थापित
     नाही. कृपया हे निराकरण करण्यासाठी रीलोड करण्याचा प्रयत्न करा, परंतु कृपया तुम्हाला
     आधी {0} कडून यशस्वी कनेक्शन संदेश
@@ -668,4 +658,61 @@ Messages:
   wwcdResetNotif: वर्ल्डविडचॅट रीसेट केले गेले आहे. रीलोड करत आहे...
   wwcdResetNotifError: सर्व डेटा यशस्वीरित्या हटविला तुम्ही आपल्या डेटाबेसशी कनेक्ट
   colorCodeWarning: रंग कोड वापरणे आपल्याला अनिश्चित परिणाम देऊ
+  wwcAiSystemPromptLoaded: एआय सिस्टम प्रॉम्प्ट लो
+  wwcAiSystemPromptBad: खराब एआय सिस्टम प्रॉम्प्ट आमचे डिफॉल्ट वापरणे...
+  wwcAiSupportedLangsBad: खराब एआय समर्थित भाषा श आमचे डीफॉल्ट्स वापरणे...
+  wwcConfigGUIAISettings: एआय संरचना
+  wwcConfigGUIChatGPTButton: चॅटजीपीटी
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API की यशस्वीरित्या सेट केली.
+  wwcConfigGUAIPromptButton: एआय प्रॉम्प्ट
+  wwcConfigConversationChatGPTURLInput: सध्याचा URL {0} आहे. कृपया ChatGPT साठी URL
+    इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationChatGPTApiKeyInput: सध्याची एपीआय की {0} आहे. कृपया ChatGPT
+    साठी एपीआय की इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL यशस्वीरित्या सेट केले.
+  wwcConfigGUIChatGPTURLButton: चॅटजीपीटी URL बदलणे
+  wwcConfigGUIChatGPTAPIKeyButton: चॅटजीपीटी एपीआय कीची
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT मॉडेल यशस्वीरित्या सेट.
+  wwcConfigGUIChatGPTModelButton: चॅटजीपीटी मॉडेल ब
+  wwcConfigGUIToggleChatGPTButton: चॅटजीपीटी टॉगल करा
+  wwcLargeConfigInputSuccess: '{0} अक्षरांच्या तुमच्या मोठ्या इनपुटवर प्रक्रिया केली'
+  wwcConfigInstructionsBulkBook: वर्तमान मूल्य पाहण्यासाठी ड्रॉप केलेले पुस्तक या
+    मूल्यात बदल करण्यासाठी पुस्तकावर साइन करा.
+  wwcConfigGUIChatGPTToggleSuccess: यशस्वीरित्या चाटजीपीटी टॉग
+  wwcConfigGUIOllamaPromptButton: प्रोम्प्ट बदल करा
+  wwcConfigGUIChatGPTPromptButton: चॅटजीपीटी प्रॉमप्ट
+  wwcConfigGUIModifyAILangsSettings: समर्थित एआय भाषा
+  wwcConfigConversationAddLang: आपण जोडायची असलेली नवीन भाषा प्रविष्ट करा किंवा परत
+    जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationAILangDeletionSuccess: भाषा यशस्वीरित्या हटवि
+  wwcConfigGUIAILangModify: भाषा सुधारित करा ({0})
+  wwcConfigGUIAILangDeleteButton: भाषा हटवा
+  wwcConfigGUIAILangNewButton: नवीन भाषा घाला
+  wwcConfigGUIAIChangeLangs: समर्थित एआय भाषा
+  wwcConfigConversationAILangAddSuccess: एआय समर्थित भाषांमध्ये यशस्वीरित्या नवीन
+    भाषा
+  translatorBadAPIKey: खराब एपीआय की! कृपया आपण ते योग्यरित्या टाइप केले आहे याची
+    खात्र
+  translatorLimitExceeded: आपण एकतर आपल्या भाषांतर सेवेसाठी कोटा ओलांडला आहे किंवा
+    आपल्याला दर मर्यादित आहे. अधिक तपशीलांसाठी कृपया आपला प्रदाता
+  translatorServerError: आंतरिक सर्व्हर त्रुट नंतर पुन्हा प्रयत्न करा.
+  translatorForbidden: प्रवेश प्रतिबंधित आहे! आपल्या परवानगी तपासा.
+  translatorBadRequest: खराब विनंती कृपया आपले इनपुट तपासा आणि पुन्हा
+  translatorUnknownError: 'स्थिती कोडसह एक अज्ञात त्रुटी आली: {0}.'
+  translatorURLNotFound: आपले अनुवादक सेवा URL अवैध आहे.
+  translatorMethodNotAllowed: भाषांतर सेवा या विनंती पद्धतीला समर्थन देत
+  translatorNotFound: विनंती केलेले भाषांतर संसाधन सापडले
+  wwcConfigConversationChatGPTModelInput: सध्याचे मॉडेल {0} आहे. कृपया ChatGPT साठी
+    एक मॉडेल इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIOllamaModelButton: बदल मॉडेल
+  wwcConfigConversationOllamaURLSuccess: URL यशस्वीरित्या सेट करा.
+  wwcConfigConversationOllamaModelInput: सध्याचे मॉडेल {0} आहे. कृपया ओलामासाठी एक
+    मॉडेल इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationOllamaURLInput: सध्याचा URL {0} आहे. कृपया Ollama साठी URL
+    इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIOllamaButton: ओल्लमा
+  wwcConfigGUIOllamaToggleSuccess: यशस्वीरित्या ओलामा टॉगल
+  wwcConfigGUIOllamaURLButton: प्रतिक्रिया URL बदलणे
+  wwcConfigConversationOllamaModelSuccess: ओलमा मॉडेल यशस्वीरित्या
+  wwcConfigGUIToggleOllamaButton: टॉगल ऑलमा
 

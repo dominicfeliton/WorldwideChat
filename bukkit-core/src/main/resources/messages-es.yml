@@ -355,17 +355,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: El tiempo de espera de tarea asíncrona se
     ha establecido correctamente
   wwcConfigGUIFatalAsyncAbortButton: Cambiar el tiempo de espera de tareas asíncronas
-  libreHttp400: ¡Solicitud incorrecta enviada a Libre Translate! A menos que estés
-    haciendo algo que no deberías, no deberías recibir esto. ¡Ponte en contacto con
-    el desarrollador!
   wwcConfigGUILibreTranslateApiKeyButton: Cambiar la clave API de Libre Translate
-  libreHttp403: Falta la clave de API de Libre Translate, o se le prohíbe el acceso
-    al servidor.
   wwcConfigConversationLibreURLSuccess: La URL libre se estableció correctamente.
   wwcConfigConversationLibreTranslateApiKeyInput: La clave de API actual es {0}. Introduce
     una clave de API para Libre o escribe 0 para volver atrás.
   wwcConfigGUILibreTranslateButton: Libre Traducir
-  libreHttp429: Falta de confianza debido al límite de velocidad del servidor.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Se ha conmutado correctamente
     Libre Translate. Recarga para que los cambios surtan efecto.
@@ -373,7 +367,6 @@ Messages:
     correctamente.
   wwcConfigConversationLibreURLInput: La URL actual es {0}. Introduzca una URL para
     Libre o escriba 0 para volver atrás.
-  libreHttpUnknown: 'Error http desconocido: {0}'
   wwcConfigGUILibreTranslateURLButton: Cambiar URL de Libre Translate
   wwcConfigConnectionFail: No se pudo conectar a {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Se cambió correctamente el nombre
@@ -419,8 +412,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Cambiar puerto de MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Se estableció un tiempo de espera asincrónico
     fatal no válido. Con un valor predeterminado de 10 segundos...
-  libreHttp500: No se admite el par de idiomas de entrada y salida seleccionado. ¡Elija
-    un conjunto de idiomas diferente!
   wwcConfigGUIDeepLTranslateButton: Activar el traductor de DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: Se activó correctamente el Traductor
     de DeepL. Vuelva a cargar para que los cambios surtan efecto.
@@ -495,10 +486,6 @@ Messages:
   wwcrTransFail: Se recargó WorldwideChat pero no se pudo habilitar un traductor.
   wwcdCacheCleared: Se borró la memoria caché de traducción.
   wwcdInvalidCmd: ¡Argumentos no válidos!
-  systranHttpUnknown: 'Error http desconocido: {0}'
-  systranHttp400: Se enviaron parámetros incorrectos a Systran. ¿Podría ser una mala
-    combinación de idiomas?
-  systranHttp500: Error interno del servidor desde el punto final de Systran ({0}).
   wwcInvalidStorageSession: '{0} está habilitado en tu configuración, pero no se ha
     establecido una conexión. Intenta volver a cargar para solucionarlo, pero ponte
     en contacto con el desarrollador si ya has recibido un mensaje de {0} para conectarte
@@ -762,4 +749,66 @@ Messages:
   wwcdResetNotifError: No se borraron correctamente todos los datos. ¿Está conectado
     a su base de datos?
   colorCodeWarning: El uso de códigos de colores puede dar resultados impredecibles.
+  wwcAiSystemPromptLoaded: Se cargó el mensaje del sistema AI.
+  wwcAiSystemPromptBad: Se detectó un mensaje incorrecto del sistema AI. Usando nuestro
+    predeterminado...
+  wwcAiSupportedLangsBad: Se detectaron idiomas incorrectos compatibles con la IA.
+    Utilizando nuestros valores predeterminados...
+  wwcConfigGUIAISettings: Configuración de IA
+  wwcConfigGUIChatGPTButton: Chat GPT
+  wwcConfigConversationChatGPTApiKeySuccess: La clave API de ChatGPT se estableció
+    correctamente.
+  wwcConfigGUAIPromptButton: Cambiar mensaje de IA
+  wwcConfigConversationChatGPTURLInput: La URL actual es {0}. Introduce una URL para
+    ChatGPT o escribe 0 para volver.
+  wwcConfigConversationChatGPTApiKeyInput: La clave de API actual es {0}. Introduce
+    una clave de API para ChatGPT o escribe 0 para volver atrás.
+  wwcConfigConversationChatGPTURLSuccess: La URL de ChatGPT se estableció correctamente.
+  wwcConfigGUIChatGPTURLButton: Cambiar la URL de ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Cambiar la clave de API de ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: El modelo ChatGPT se estableció correctamente.
+  wwcConfigGUIChatGPTModelButton: Cambiar el modelo de ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Alternar chat GPT
+  wwcLargeConfigInputSuccess: Se ha procesado la gran cantidad de caracteres {0} que
+    has introducido.
+  wwcConfigInstructionsBulkBook: Abre el libro caído para ver el valor actual. Firma
+    el libro para hacer cambios en este valor.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT se ha alterado correctamente.
+  wwcConfigGUIOllamaPromptButton: Cambiar mensaje de Ollama
+  wwcConfigGUIChatGPTPromptButton: Cambiar mensaje de ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Modificar los idiomas de IA compatibles
+  wwcConfigConversationAddLang: Ingresa el nuevo idioma que deseas agregar o escribe
+    0 para volver.
+  wwcConfigConversationAILangDeletionSuccess: Se ha eliminado correctamente el idioma.
+  wwcConfigGUIAILangModify: Modificar idioma ({0})
+  wwcConfigGUIAILangDeleteButton: Eliminar idioma
+  wwcConfigGUIAILangNewButton: Agregar nuevo idioma
+  wwcConfigGUIAIChangeLangs: Modificar los idiomas de IA compatibles
+  wwcConfigConversationAILangAddSuccess: Se agregó correctamente un nuevo idioma a
+    los idiomas compatibles con la IA.
+  translatorBadAPIKey: ¡Clave de API incorrecta! Asegúrese de que la ha escrito correctamente.
+  translatorLimitExceeded: Has superado la cuota de tu servicio de traducción o se
+    te ha limitado la tarifa. Consulta con tu proveedor para obtener más información.
+  translatorServerError: Error interno del servidor. Vuelva a intentarlo más tarde.
+  translatorForbidden: ¡El acceso está prohibido! Compruebe sus permisos.
+  translatorBadRequest: Solicitud incorrecta. Comprueba los datos introducidos e inténtalo
+    de nuevo.
+  translatorUnknownError: 'Se ha producido un error desconocido con el código de estado:
+    {0}.'
+  translatorURLNotFound: La URL del servicio de traducción no es válida.
+  translatorMethodNotAllowed: El servicio de traducción no admite este método de solicitud.
+  translatorNotFound: No se encontró el recurso de traducción solicitado.
+  wwcConfigConversationChatGPTModelInput: El modelo actual es el {0}. Introduce un
+    modelo para ChatGPT o escribe 0 para volver atrás.
+  wwcConfigGUIOllamaModelButton: Cambiar el modelo de Ollama
+  wwcConfigConversationOllamaURLSuccess: La URL de Ollama se estableció correctamente.
+  wwcConfigConversationOllamaModelInput: El modelo actual es el {0}. Introduzca un
+    modelo para Ollama o escriba 0 para volver atrás.
+  wwcConfigConversationOllamaURLInput: La URL actual es {0}. Introduce la URL de Ollama
+    o escribe 0 para volver.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Se ha alterado Ollama correctamente.
+  wwcConfigGUIOllamaURLButton: Cambiar la URL de Ollama
+  wwcConfigConversationOllamaModelSuccess: El modelo Ollama se configuró correctamente.
+  wwcConfigGUIToggleOllamaButton: Alternar Ollama
 

@@ -85,7 +85,7 @@ public class WWCTabCompleter implements TabCompleter {
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
                     for (String eaKey : main.getSupportedInputLangs().keySet()) {
                         if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])){
+                                eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }

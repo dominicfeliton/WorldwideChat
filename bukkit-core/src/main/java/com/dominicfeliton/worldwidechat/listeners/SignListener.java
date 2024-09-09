@@ -24,7 +24,7 @@ public class SignListener implements Listener {
             if (currTranslator.getTranslatingSign()) {
                 event.setCancelled(true);
                 if (!currTranslator.getSignWarning()) {
-                    refs.sendFancyMsg("wwctsWarning", "", "&d&o", currPlayer);
+                    refs.sendMsg("wwctsWarning", "", "&d&o", currPlayer);
                     currTranslator.setSignWarning(true);
                 }
             }

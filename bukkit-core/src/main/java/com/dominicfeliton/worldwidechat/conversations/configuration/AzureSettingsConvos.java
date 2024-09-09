@@ -4,50 +4,57 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 
 public class AzureSettingsConvos {
 
     private static WorldwideChat main = WorldwideChat.instance;
 
-    private static WWCInventoryManager invMan = new WWCInventoryManager();
+    private static WWCInventoryManager invMan = main.getInventoryManager();
 
     public static class ApiKey extends StringPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
         @Override
-        public String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAzureTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.azureAPIKey"), currPlayer);
+            return refs.getPlainMsg("wwcConfigConversationAzureTranslateApiKeyInput",
+                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.azureAPIKey"),
+                    "&b",
+                    currPlayer);
         }
 
         @Override
-        public Prompt acceptInput(ConversationContext context, String input) {
+        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAzureTranslateApiKeySuccess",
-                    new String[] {"Translator.azureAPIKey", "Translator.useAzureTranslate"}, new Object[] {input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv);
+                    new String[]{"Translator.azureAPIKey", "Translator.useAzureTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv);
         }
     }
 
     public static class Region extends StringPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
+
         @Override
-        public String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAzureTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.azureRegion"), currPlayer);
+            return refs.getPlainMsg("wwcConfigConversationAzureTranslateRegionInput",
+                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.azureRegion"),
+                    "&b",
+                    currPlayer);
         }
 
         @Override
-        public Prompt acceptInput(ConversationContext context, String input) {
+        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAzureTranslateRegionSuccess",
-                    new String[] {"Translator.azureRegion", "Translator.useAzureTranslate"}, new Object[] {input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv);
+                    new String[]{"Translator.azureRegion", "Translator.useAzureTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv);
         }
     }
 }

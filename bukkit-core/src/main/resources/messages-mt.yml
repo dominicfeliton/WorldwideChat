@@ -336,22 +336,17 @@ Messages:
     ġdid, jew xi ħaġa taħtha biex tmur lura.
   wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
   wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
-  libreHttp400: Talba ħażina mibgħuta lil Libre Translate! Sakemm ma tkunx qed tagħmel
-    xi ħaġa li m'għandekx, m'għandekx tikseb dan. Jekk jogħġbok ikkuntattja l-iżviluppatur!
   wwcConfigGUILibreTranslateApiKeyButton: Bidla Ħieles Ittraduċi API Ewlenin
-  libreHttp403: Nieqsa Libre Ittraduċi API Ewlenin, jew inti huma pprojbiti mis-server!
   wwcConfigConversationLibreURLSuccess: Free URL stabbiliti b'suċċess.
   wwcConfigConversationLibreTranslateApiKeyInput: Il-muftieħ API attwali huwa {0}.
     Jekk jogħġbok input ewlenin API għall Libre, jew it-tip 0 li jmorru lura.
   wwcConfigGUILibreTranslateButton: Free Ittraduċi
-  libreHttp429: L-ebda fiduċja minħabba l-limitu tar-rata mis-server.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Ħieles Ittraduċi
   wwcConfigConversationLibreTranslateToggleSuccess: B'suċċess toggled Libre Ittraduċi.
     Reload biex il-bidliet jidħlu fis-seħħ.
   wwcConfigConversationLibreTranslateApiKeySuccess: Free API sett ewlenin b'suċċess.
   wwcConfigConversationLibreURLInput: Il-URL attwali huwa {0}. Jekk jogħġbok input
     URL għall Libre, jew tip 0 li jmorru lura.
-  libreHttpUnknown: 'Mhux magħruf żball http: {0}'
   wwcConfigGUILibreTranslateURLButton: Bidla Free Ittraduċi URL
   wwcConfigConnectionFail: Naqas li jikkonnettja ma {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Biddel b'suċċess l-isem tad-database
@@ -389,8 +384,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Bidla Port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Sett ta 'timeout fatali invalidu tal-async. Defaulting
     li 10 sekondi...
-  libreHttp500: Il-par tal-lingwa tal-input u l-output magħżul tiegħek mhuwiex appoġġjat.
-    Jekk jogħġbok agħżel sett ta 'lingwi differenti!
   wwcConfigGUIDeepLTranslateButton: Ittraduċi DeepL Ittraduċi
   wwcConfigConversationDeepLTranslateToggleSuccess: B'suċċess toggled DeepL Translate.
     Reload biex il-bidliet jidħlu fis-seħħ.
@@ -460,10 +453,6 @@ Messages:
   wwcrTransFail: Mgħobbija mill-ġdid WorldwideChat iżda naqas milli jippermetti traduttur.
   wwcdCacheCleared: Il-cache tat-traduzzjoni ġie kklerjat.
   wwcdInvalidCmd: Argumenti invalidi!
-  systranHttpUnknown: 'Żball http mhux magħruf: {0}'
-  systranHttp400: Parametri ħżiena mibgħuta lil Systran. Jista 'jkun par lingwistiku
-    ħażin?
-  systranHttp500: Żball intern tas-server mill-endpoint ta' Systran ({0}).
   wwcInvalidStorageSession: '{0} huwa attivat fil-konfigurazzjoni tiegħek, iżda konnessjoni
     mhix stabbilita. Jekk jogħġbok ipprova tagħbija mill-ġdid biex tiffissa dan, imma
     jekk jogħġbok ikkuntattja lill-iżviluppatur jekk qabel irċevejt messaġġ ta ''konnessjoni
@@ -705,4 +694,68 @@ Messages:
   wwcdResetNotifError: Mhux id-dejta kollha tħassret b'suċċess. Int imqabbad mad-database
     tiegħek?
   colorCodeWarning: L-użu ta 'kodiċijiet tal-kulur jista' jagħtik riżultati imprevedibbli.
+  wwcAiSystemPromptLoaded: Sistema AI mgħobbija fil-pront.
+  wwcAiSystemPromptBad: Sistema ħażina tal-AI skoperta fil-pront. Bl-użu tad-default
+    tagħna...
+  wwcAiSupportedLangsBad: Lingwi Appoġġjati mill-AI ħżiena misjuba. Bl-użu tal-inadempjenti
+    tagħna...
+  wwcConfigGUIAISettings: Konfigurazzjoni AI
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API ċavetta stabbilita b'suċċess.
+  wwcConfigGUAIPromptButton: Ibdel l-AI Prompt
+  wwcConfigConversationChatGPTURLInput: L-URL attwali huwa {0}. Jekk jogħġbok daħħal
+    URL għal ChatGPT, jew ittajpja 0 biex tmur lura.
+  wwcConfigConversationChatGPTApiKeyInput: Iċ-ċavetta kurrenti tal-API hija {0}. Jekk
+    jogħġbok daħħal ċavetta API għal ChatGPT, jew ittajpja 0 biex tmur lura.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL issettjat b'suċċess.
+  wwcConfigGUIChatGPTURLButton: Ibdel l-URL ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Ibdel Ċavetta API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Mudell ChatGPT stabbilit b'suċċess.
+  wwcConfigGUIChatGPTModelButton: Ibdel il-Mudell ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Toggle ChatGPT
+  wwcLargeConfigInputSuccess: L-input kbir tiegħek ta 'karattri {0} ġie pproċessat.
+  wwcConfigInstructionsBulkBook: Iftaħ il-ktieb imwaqqa' biex tara l-valur kurrenti.
+    Iffirma l-ktieb biex tagħmel bidliet f'dan il-valur.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT imdawwar b'suċċess.
+  wwcConfigGUIOllamaPromptButton: Change Lock Prompt
+  wwcConfigGUIChatGPTPromptButton: Ibdel ChatGPT Prompt
+  wwcConfigGUIModifyAILangsSettings: Immodifika Lingwi tal-AI Appoġġjati
+  wwcConfigConversationAddLang: Daħħal il-lingwa l-ġdida li tixtieq iżżid, jew ittajpja
+    0 biex tmur lura.
+  wwcConfigConversationAILangDeletionSuccess: Imħassra b'suċċess il-lingwa.
+  wwcConfigGUIAILangModify: Imodifika l-Lingwa ({0})
+  wwcConfigGUIAILangDeleteButton: Ħassar il-Lingwa
+  wwcConfigGUIAILangNewButton: Żid Lingwa Ġdida
+  wwcConfigGUIAIChangeLangs: Immodifika Lingwi tal-AI Appoġġjati
+  wwcConfigConversationAILangAddSuccess: Żiedet b'suċċess lingwa ġdida mal-lingwi
+    appoġġjati mill-AI.
+  translatorBadAPIKey: Ċavetta API ħażina! Jekk jogħġbok kun żgur li ttajpjat b'mod
+    korrett.
+  translatorLimitExceeded: Inti jew qabżt il-kwota għas-servizz tat-traduzzjoni tiegħek
+    jew ġejt rata limitata. Jekk jogħġbok ivverifika l-fornitur tiegħek għal aktar
+    dettalji.
+  translatorServerError: Żball intern tas-server. Jekk jogħġbok ipprova mill-ġdid
+    aktar tard.
+  translatorForbidden: L-aċċess huwa pprojbit! Jekk jogħġbok ivverifika l-permessi
+    tiegħek.
+  translatorBadRequest: Talba ħażina. Jekk jogħġbok iċċekkja l-input tiegħek u ipprova
+    mill-ġdid.
+  translatorUnknownError: 'Seħħ żball mhux magħruf bil-kodiċi tal-istatus: {0}.'
+  translatorURLNotFound: L-URL tas-servizz tat-traduttur tiegħek huwa invalidu.
+  translatorMethodNotAllowed: Is-servizz tat-traduzzjoni ma jappoġġjax dan il-metodu
+    ta' talba.
+  translatorNotFound: Ir-riżorsa mitluba tat-traduzzjoni ma nstabx.
+  wwcConfigConversationChatGPTModelInput: Il-mudell attwali huwa {0}. Jekk jogħġbok
+    daħħal mudell għal ChatGPT, jew ittajpja 0 biex tmur lura.
+  wwcConfigGUIOllamaModelButton: Ibdel il-Mudell tal-Implimentazzjoni
+  wwcConfigConversationOllamaURLSuccess: Ollama URL issettjat b'suċċess.
+  wwcConfigConversationOllamaModelInput: Il-mudell attwali huwa {0}. Jekk jogħġbok
+    daħħal mudell għal Ollama, jew ittajpja 0 biex tmur lura.
+  wwcConfigConversationOllamaURLInput: L-URL attwali huwa {0}. Jekk jogħġbok daħħal
+    URL għal Ollama, jew ittajpja 0 biex tmur lura.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama tbiddel b'suċċess.
+  wwcConfigGUIOllamaURLButton: Ibdel l-URL tal-Logħob
+  wwcConfigConversationOllamaModelSuccess: Mudell Ollama stabbilit b'suċċess.
+  wwcConfigGUIToggleOllamaButton: Toggle Lock
 

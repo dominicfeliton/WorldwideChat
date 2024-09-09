@@ -45,11 +45,13 @@ public class ServerAdapterFactory {
                 Class.forName(entry.getValue());
 
                 // If we are Folia, check if we have isFoliaSupported in PluginMeta class
-                if (entry.getKey().equals("Folia")) Class.forName("io.papermc.paper.plugin.configuration.PluginMeta").getMethod("isFoliaSupported");
+                if (entry.getKey().equals("Folia"))
+                    Class.forName("io.papermc.paper.plugin.configuration.PluginMeta").getMethod("isFoliaSupported");
 
                 // We found class but continue loop, may be a fork (Bukkit -> Spigot -> Paper)
                 serverPlatform = entry.getKey();
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         }
 
         /* Version check */
@@ -89,20 +91,20 @@ public class ServerAdapterFactory {
 
     public CommonRefs getCommonRefs() {
         HashMap<String, String> commonRefsDefs = new HashMap<String, String>();
-        commonRefsDefs.put("Spigot","com.dominicfeliton.worldwidechat.util.CommonRefs");
-        commonRefsDefs.put("Bukkit","com.dominicfeliton.worldwidechat.util.CommonRefs");
-        commonRefsDefs.put("Paper","com.dominicfeliton.worldwidechat.util.PaperCommonRefs");
-        commonRefsDefs.put("Folia","com.dominicfeliton.worldwidechat.util.FoliaCommonRefs");
+        commonRefsDefs.put("Spigot", "com.dominicfeliton.worldwidechat.util.CommonRefs");
+        commonRefsDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.util.CommonRefs");
+        commonRefsDefs.put("Paper", "com.dominicfeliton.worldwidechat.util.PaperCommonRefs");
+        commonRefsDefs.put("Folia", "com.dominicfeliton.worldwidechat.util.FoliaCommonRefs");
 
         return (CommonRefs) getInstance(commonRefsDefs);
     }
 
     public WorldwideChatHelper getWWCHelper() {
         HashMap<String, String> wwcHelperDefs = new HashMap<String, String>();
-        wwcHelperDefs.put("Spigot","com.dominicfeliton.worldwidechat.SpigotWorldwideChatHelper");
-        wwcHelperDefs.put("Bukkit","com.dominicfeliton.worldwidechat.SpigotWorldwideChatHelper");
-        wwcHelperDefs.put("Paper","com.dominicfeliton.worldwidechat.PaperWorldwideChatHelper");
-        wwcHelperDefs.put("Folia","com.dominicfeliton.worldwidechat.FoliaWorldwideChatHelper");
+        wwcHelperDefs.put("Spigot", "com.dominicfeliton.worldwidechat.SpigotWorldwideChatHelper");
+        wwcHelperDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.SpigotWorldwideChatHelper");
+        wwcHelperDefs.put("Paper", "com.dominicfeliton.worldwidechat.PaperWorldwideChatHelper");
+        wwcHelperDefs.put("Folia", "com.dominicfeliton.worldwidechat.FoliaWorldwideChatHelper");
 
         return (WorldwideChatHelper) getInstance(wwcHelperDefs);
     }
@@ -111,7 +113,7 @@ public class ServerAdapterFactory {
         return getInstance(platformAndClass, null);
     }
 
-    private Object getInstance(HashMap<String, String> platformAndClass, Class<?>...parameterTypes) {
+    private Object getInstance(HashMap<String, String> platformAndClass, Class<?>... parameterTypes) {
         try {
             for (Map.Entry<String, String> entry : platformAndClass.entrySet()) {
                 // Return a class with parameters in constructor
@@ -119,7 +121,7 @@ public class ServerAdapterFactory {
                     Class clazz = Class.forName(entry.getValue());
                     Constructor<?> constClazz = clazz.getConstructor(parameterTypes);
                     return constClazz.newInstance();
-                // Return a class with no parameters in constructor (parameterTypes == null)
+                    // Return a class with no parameters in constructor (parameterTypes == null)
                 } else if (entry.getKey().equals(currPlatform)) {
                     Class clazz = Class.forName(entry.getValue());
                     Constructor<?> constClazz = clazz.getConstructor();
@@ -127,7 +129,7 @@ public class ServerAdapterFactory {
                 }
             }
         } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException |
-        InvocationTargetException e) {
+                 InvocationTargetException e) {
             e.printStackTrace();
         }
 

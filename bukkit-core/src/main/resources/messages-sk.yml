@@ -342,22 +342,17 @@ Messages:
     nový časový rámec, alebo čokoľvek pod ním, aby ste sa vrátili späť.
   wwcConfigConversationFatalAsyncSuccess: Časový údaj úlohy Async úspešne nastavený.
   wwcConfigGUIFatalAsyncAbortButton: Zmeniť časový interval úloh Async
-  libreHttp400: Zlá požiadavka zaslaná Libre Translate! Ak nerobíte niečo, čo by ste
-    nemali, nemali by ste to dostať. Kontaktujte vývojára!
   wwcConfigGUILibreTranslateApiKeyButton: Zmena bezplatného prekladu API kľúča
-  libreHttp403: Chýba Libre Translate API kľúč, alebo máte zakázaný zo servera!
   wwcConfigConversationLibreURLSuccess: Zadaná adresa URL bola úspešne nastavená.
   wwcConfigConversationLibreTranslateApiKeyInput: Aktuálny kľúč API je {0}. Zadajte
     prosím kľúč API pre Libre, alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUILibreTranslateButton: Libre Preklad
-  libreHttp429: Žiadna dôvera kvôli limitu rýchlosti zo servera.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Preklad
   wwcConfigConversationLibreTranslateToggleSuccess: Úspešne prepnúť Libre Translate.
     Znovu načítať, aby sa zmeny prejavili.
   wwcConfigConversationLibreTranslateApiKeySuccess: Bezplatná sada kľúčov API úspešne.
   wwcConfigConversationLibreURLInput: Aktuálna adresa URL je {0}. Zadajte adresu URL
     pre Libre alebo zadajte 0, aby ste sa vrátili späť.
-  libreHttpUnknown: 'Neznáma chyba http: {0}'
   wwcConfigGUILibreTranslateURLButton: Zmeniť URL prekladu zadarmo
   wwcConfigConnectionFail: Nepodarilo sa pripojiť k {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Úspešne zmenil názov databázy MongoDB.
@@ -397,8 +392,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Zmeniť port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neplatný fatálny async timeout set. Predvolené
     na 10 sekúnd...
-  libreHttp500: Váš vybraný vstupný a výstupný jazykový pár nie je podporovaný. Prosím,
-    vyberte inú jazykovú sadu!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Preložiť
   wwcConfigConversationDeepLTranslateToggleSuccess: Úspešne prepínal DeepL Translate.
     Znovu načítať, aby sa zmeny prejavili.
@@ -466,10 +459,6 @@ Messages:
   wwcrTransFail: Znovu načítal WorldwideChat, ale nepodarilo sa povoliť prekladateľ.
   wwcdCacheCleared: Vyrovnávacia pamäť prekladu bola vymazaná.
   wwcdInvalidCmd: Neplatné argumenty!
-  systranHttpUnknown: 'Neznáma chyba http: {0}'
-  systranHttp400: Zlé parametre odoslané spoločnosti Systran. Môže to byť zlý jazykový
-    pár?
-  systranHttp500: Interná chyba servera z koncového bodu Systran ({0}).
   wwcInvalidStorageSession: '{0} je povolené vo vašej konfigurácii, ale pripojenie
     nie je nadviazané. Skúste to znova načítať, ale ak ste predtým dostali správu
     o úspešnom pripojení od {0}, kontaktujte vývojára.'
@@ -701,4 +690,61 @@ Messages:
   wwcdResetNotifError: Nie všetky údaje boli úspešne vymazané. Ste pripojený k svojej
     databáze?
   colorCodeWarning: Použitie farebných kódov vám môže poskytnúť nepredvídateľné výsledky.
+  wwcAiSystemPromptLoaded: Načítaný systém AI System Prompt.
+  wwcAiSystemPromptBad: Zistila sa zlá výzva systému AI. Použitie nášho predvoleného...
+  wwcAiSupportedLangsBad: Zistili sa zlé jazyky podporované AI. Pomocou našich predvolených
+    nastavení...
+  wwcConfigGUIAISettings: Konfigurácia AI
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: Kľúč API ChatGPT bol úspešne nastavený.
+  wwcConfigGUAIPromptButton: Zmeniť výzvu AI
+  wwcConfigConversationChatGPTURLInput: Aktuálna adresa URL je {0}. Zadajte adresu
+    URL pre ChatGPT alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationChatGPTApiKeyInput: Aktuálny kľúč API je {0}. Zadajte kľúč
+    API pre ChatGPT alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL je úspešne nastavená.
+  wwcConfigGUIChatGPTURLButton: Zmena adresy ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Zmeniť kľúč API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT model bol úspešne nastavený.
+  wwcConfigGUIChatGPTModelButton: Zmeniť model ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Prepnúť ChatGPT
+  wwcLargeConfigInputSuccess: Váš veľký vstup znakov {0} bol spracovaný.
+  wwcConfigInstructionsBulkBook: Otvorte spustenú knihu, aby ste videli aktuálnu hodnotu.
+    Podpíšte knihu a vykonajte zmeny v tejto hodnote.
+  wwcConfigGUIChatGPTToggleSuccess: Úspešne prepnutý ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Zmeniť výzvu upozornenia
+  wwcConfigGUIChatGPTPromptButton: Zmeniť výzvu ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Upraviť podporované jazyky AI
+  wwcConfigConversationAddLang: Zadajte nový jazyk, ktorý chcete pridať, alebo zadajte
+    0, aby ste sa vrátili späť.
+  wwcConfigConversationAILangDeletionSuccess: Úspešne odstránený jazyk.
+  wwcConfigGUIAILangModify: Upraviť jazyk ({0})
+  wwcConfigGUIAILangDeleteButton: Odstrániť jazyk
+  wwcConfigGUIAILangNewButton: Pridať nový jazyk
+  wwcConfigGUIAIChangeLangs: Upraviť podporované jazyky AI
+  wwcConfigConversationAILangAddSuccess: Úspešne pridal nový jazyk do jazykov podporovaných
+    AI.
+  translatorBadAPIKey: Zlý kľúč API! Uistite sa, že ste ho zadali správne.
+  translatorLimitExceeded: Buď ste prekročili kvótu pre vašu prekladateľskú službu,
+    alebo ste boli sadzby obmedzené. Viac informácií nájdete vo svojom poskytovateľovi.
+  translatorServerError: Interná chyba servera. Skúste to znova neskôr.
+  translatorForbidden: Prístup je zakázaný! Skontrolujte svoje povolenia.
+  translatorBadRequest: Zlá požiadavka. Skontrolujte svoj vstup a skúste to znova.
+  translatorUnknownError: 'Vyskytla sa neznáma chyba so stavovým kódom: {0}.'
+  translatorURLNotFound: Vaša adresa prekladateľskej služby je neplatná.
+  translatorMethodNotAllowed: Prekladateľská služba túto metódu žiadosti nepodporuje.
+  translatorNotFound: Požadovaný prekladový zdroj nebol nájdený.
+  wwcConfigConversationChatGPTModelInput: Súčasný model je {0}. Zadajte model pre
+    ChatGPT alebo napíšte 0, aby ste sa vrátili späť.
+  wwcConfigGUIOllamaModelButton: Zmeniť model Ollama
+  wwcConfigConversationOllamaURLSuccess: Úspešne nastavená adresa URL.
+  wwcConfigConversationOllamaModelInput: Súčasný model je {0}. Zadajte model pre Ollama
+    alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationOllamaURLInput: Aktuálna adresa URL je {0}. Zadajte adresu
+    URL pre Ollama alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Úspešne prepnutý Ollama.
+  wwcConfigGUIOllamaURLButton: Zmeniť URL adresy
+  wwcConfigConversationOllamaModelSuccess: Model Ollama bol úspešne nastavený.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

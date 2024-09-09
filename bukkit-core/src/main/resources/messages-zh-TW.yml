@@ -260,19 +260,15 @@ Messages:
   wwcConfigConversationFatalAsyncAbort: 中止所有異步任務的當前超時時間為 {0} 秒。鍵入 7 以上的任何內容以設置新的超時，或者在其下方的任何內容返回。
   wwcConfigConversationFatalAsyncSuccess: 異步任務超時設置成功。
   wwcConfigGUIFatalAsyncAbortButton: 更改異步任務超時
-  libreHttp400: 錯誤的請求發送到自由翻譯!除非你正在做一些你不應該做的事情，否則你不應該得到這個。請聯繫開發人員！
   wwcConfigGUILibreTranslateApiKeyButton: 更改自由翻譯 API 密鑰
-  libreHttp403: 缺少免費翻譯 API 密鑰，或者您被禁止從服務器！
   wwcConfigConversationLibreURLSuccess: 免費網址設定成功。
   wwcConfigConversationLibreTranslateApiKeyInput: 目前的 API 金鑰是 {0}。請輸入自由報的 API 金鑰，或輸入
     0 返回。
   wwcConfigGUILibreTranslateButton: 免費翻譯
-  libreHttp429: 由於服務器的速率限制，沒有信心。
   wwcConfigGUIToggleLibreTranslateButton: 切換免費翻譯
   wwcConfigConversationLibreTranslateToggleSuccess: 成功切換免費翻譯.重新載入以使變更生效。
   wwcConfigConversationLibreTranslateApiKeySuccess: 自由 API 密鑰設置成功。
   wwcConfigConversationLibreURLInput: 目前的網址為 {0}。請輸入自由網址，或輸入 0 返回。
-  libreHttpUnknown: 未知的錯誤： {0}
   wwcConfigGUILibreTranslateURLButton: 更改免費翻譯網址
   wwcConfigConnectionFail: 無法連線至 {0}。
   wwcConfigConversationMongoDatabaseNameSuccess: 成功地更改了 MongoDB 的數據庫名稱。
@@ -302,7 +298,6 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: 成功清除選擇性引數。
   wwcConfigGUIMongoPortButton: 變更蒙古資料庫連接埠
   wwcConfigInvalidFatalAsyncTimeout: 無效的致命非同步逾時設定。預設為 10 秒...
-  libreHttp500: 不支援您選擇的輸入和輸出語言配對。請選擇不同的語言設定！
   wwcConfigGUIDeepLTranslateButton: 切換深層翻譯
   wwcConfigConversationDeepLTranslateToggleSuccess: 成功切換深層翻譯.重新載入以使變更生效。
   wwcConfigGUIDeepLTranslateApiKeyButton: 更改深層翻譯 API 密鑰
@@ -359,9 +354,6 @@ Messages:
   wwcrTransFail: 重新載入全球微信，但無法啟用翻譯器。
   wwcdCacheCleared: 翻譯快取已清除。
   wwcdInvalidCmd: 無效的引數！
-  systranHttpUnknown: 未知的 http 錯誤：{0}
-  systranHttp400: 錯誤的參數傳送給系斯特蘭。可能是一對不好的語言對？
-  systranHttp500: 來自 Systran 端點的內部伺服器錯誤 ({0})。
   wwcInvalidStorageSession: '{0} 已在您的配置中啟用，但未建立連接。請嘗試重新加載以解決此問題，但如果您之前收到來自 {0} 的成功連接消息，請聯繫開發人員。'
   wwcConfigConversationPostgresDatabaseNameSuccess: 成功變更 PostgreSQL 資料庫名稱。
   wwcConfigConversationPostgresOptionalArgsCleared: 選擇性參數已成功清除。
@@ -521,4 +513,52 @@ Messages:
   wwcdResetNotif: 全球微信已重設。重新載入...
   wwcdResetNotifError: 並非所有資料都已成功清除。您是否已連接到您的數據庫？
   colorCodeWarning: 使用顏色代碼可能會給您不可預測的結果。
+  wwcAiSystemPromptLoaded: AI 系統提示已載入。
+  wwcAiSystemPromptBad: 偵測到錯誤的 AI 系統提示。使用我們的默認...
+  wwcAiSupportedLangsBad: 偵測到不正確的 AI 支援語言。使用我們的預設值...
+  wwcConfigGUIAISettings: 人工智能配置
+  wwcConfigGUIChatGPTButton: 聊天 GPT
+  wwcConfigConversationChatGPTApiKeySuccess: 成功設定聊天 GPT API 金鑰。
+  wwcConfigGUAIPromptButton: 變更 AI 提示
+  wwcConfigConversationChatGPTURLInput: 目前的網址為 {0}。請輸入 ChatGPT 的網址，或輸入 0 以返回。
+  wwcConfigConversationChatGPTApiKeyInput: 目前的 API 密鑰是 {0}。請輸入 ChatGPT 的 API 密鑰，或鍵入
+    0 以返回。
+  wwcConfigConversationChatGPTURLSuccess: 成功設定聊天 GPT 網址。
+  wwcConfigGUIChatGPTURLButton: 更改聊天 GPT 網址
+  wwcConfigGUIChatGPTAPIKeyButton: 更改聊天 GPT API 密鑰
+  wwcConfigConversationChatGPTModelSuccess: 成功設定聊天 GPT 模型。
+  wwcConfigGUIChatGPTModelButton: 更改聊天 GPT 模型
+  wwcConfigGUIToggleChatGPTButton: 切換聊天 GPT
+  wwcLargeConfigInputSuccess: 您的大量輸入 {0} 字符已被處理。
+  wwcConfigInstructionsBulkBook: 開啟掉落的書冊以查看目前的值。簽署書籍以對此值進行變更。
+  wwcConfigGUIChatGPTToggleSuccess: 成功切換聊天 GPT。
+  wwcConfigGUIOllamaPromptButton: 變更注意事項提示
+  wwcConfigGUIChatGPTPromptButton: 變更聊天 GPT 提示
+  wwcConfigGUIModifyAILangsSettings: 修改支援的 AI 語言
+  wwcConfigConversationAddLang: 輸入您要添加的新語言，或鍵入 0 以返回。
+  wwcConfigConversationAILangDeletionSuccess: 成功刪除語言。
+  wwcConfigGUIAILangModify: 修改語言 ({0})
+  wwcConfigGUIAILangDeleteButton: 刪除語言
+  wwcConfigGUIAILangNewButton: 新增語言
+  wwcConfigGUIAIChangeLangs: 修改支援的 AI 語言
+  wwcConfigConversationAILangAddSuccess: 成功將新語言添加到 AI 支持的語言中。
+  translatorBadAPIKey: 錯誤的 API 密鑰！請確保您輸入正確。
+  translatorLimitExceeded: 您或是超過翻譯服務的配額，或者您受到價格限制。請查詢您的提供商以獲取更多詳細信息。
+  translatorServerError: 內部伺服器錯誤。請稍後再試一次。
+  translatorForbidden: 禁止進入！請檢查您的權限。
+  translatorBadRequest: 錯誤的請求。請檢查您的輸入，然後再試一次。
+  translatorUnknownError: 狀態代碼發生未知錯誤：{0}。
+  translatorURLNotFound: 您的翻譯服務 URL 無效。
+  translatorMethodNotAllowed: 翻譯服務不支援此請求方法。
+  translatorNotFound: 找不到請求的翻譯資源。
+  wwcConfigConversationChatGPTModelInput: 目前的模型是 {0}。請輸入 ChatGPT 的模型，或鍵入 0 以返回。
+  wwcConfigGUIOllamaModelButton: 變更模式
+  wwcConfigConversationOllamaURLSuccess: 已成功設定網址。
+  wwcConfigConversationOllamaModelInput: 目前的模型是 {0}。請輸入 Ollama 的模型，或鍵入 0 以返回。
+  wwcConfigConversationOllamaURLInput: 目前的網址為 {0}。請輸入 Ollama 的 URL，或輸入 0 以返回。
+  wwcConfigGUIOllamaButton: 奥尔拉马
+  wwcConfigGUIOllamaToggleSuccess: 成功切換「查看」。
+  wwcConfigGUIOllamaURLButton: 更改名稱網址
+  wwcConfigConversationOllamaModelSuccess: 奧拉瑪模型設置成功。
+  wwcConfigGUIToggleOllamaButton: 切換選項
 

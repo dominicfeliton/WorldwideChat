@@ -14,7 +14,6 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -44,7 +43,10 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
         return SmartInventory.builder().id("translateLocalization")
                 .provider(this).size(6, 9)
                 .manager(WorldwideChat.instance.getInventoryManager())
-                .title(ChatColor.BLUE + refs.getMsg("wwctGUILocalizeTitle", inPlayer))
+                .title(refs.getPlainMsg("wwctGUILocalizeTitle",
+                        "",
+                        "&9",
+                        inPlayer))
                 .build();
     }
 
@@ -80,10 +82,16 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                 refs.debugMsg(eaLang.toString());
                 if (userLang.equalsIgnoreCase(currLang)) {
                     invManager.addGlowEffect(itemForLangMeta);
-                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUICurrentPlayerLang", inPlayer));
+                    lore.add(refs.getPlainMsg("wwcConfigGUICurrentPlayerLang",
+                            "",
+                            "&e&o",
+                            inPlayer));
                 }
                 if (refs.isSameLang(currLang, main.getConfigManager().getMainConfig().getString("General.pluginLang"), "local")) {
-                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUILocalizationSameAsServer", player));
+                    lore.add(refs.getPlainMsg("wwctGUILocalizationSameAsServer",
+                            "",
+                            "&e&o",
+                            player));
                     invManager.addGlowEffect(itemForLangMeta);
                 }
                 if (!eaLang.getNativeLangName().isEmpty() && !eaLang.getNativeLangName().equalsIgnoreCase(eaLang.getLangName())) {
@@ -94,7 +102,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                 itemForLangMeta.setLore(lore);
                 itemForLang.setItemMeta(itemForLangMeta);
                 listOfAvailableLangs[i] = ClickableItem.of(itemForLang, e -> {
-                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[] {targetPlayer.getName(), currLang});
+                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[]{targetPlayer.getName(), currLang});
                     localize.processCommand();
                     new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu().open(player);
                 });
@@ -110,20 +118,22 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
             /* Bottom Left Option: Previous Page */
             if (!pagination.isFirst()) {
-                invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getLocalizationInventory()});
+                invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{getLocalizationInventory()});
             } else {
-                invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu()});
+                invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu()});
             }
 
             /* Bottom Middle Option: Stop */
             if (!currRecord.getLocalizationCode().isEmpty()) {
                 ItemStack stopButton = XMaterial.BARRIER.parseItem();
                 ItemMeta stopMeta = stopButton.getItemMeta();
-                stopMeta.setDisplayName(ChatColor.RED
-                        + refs.getMsg("wwctGUILocalizeStopButton", inPlayer));
+                stopMeta.setDisplayName(refs.getPlainMsg("wwctGUILocalizeStopButton",
+                        "",
+                        "&c",
+                        inPlayer));
                 stopButton.setItemMeta(stopMeta);
                 contents.set(5, 4, ClickableItem.of(stopButton, e -> {
-                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[] {targetPlayer.getName(), "stop"});
+                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[]{targetPlayer.getName(), "stop"});
                     localize.processCommand();
                     new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu().open(player);
                 }));
@@ -135,7 +145,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
             }
 
             /* Last Option: Page Number */
-            invManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+            invManager.setCommonButton(5, 8, player, contents, "Page Number", new String[]{pagination.getPage() + 1 + ""});
         } catch (Exception e) {
             invManager.inventoryError(player, e);
         }

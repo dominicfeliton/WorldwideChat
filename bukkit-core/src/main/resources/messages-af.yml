@@ -334,22 +334,17 @@ Messages:
     onder dit om terug te gaan.
   wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
   wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out
-  libreHttp400: Slegte versoek gestuur na Libre Translate! Tensy jy iets doen wat
-    jy nie moet nie, jy moet dit nie kry nie. Kontak asseblief die ontwikkelaar!
   wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API Sleutel
-  libreHttp403: Ontbreek Libre Translate API Sleutel, of jy verban uit die bediener!
   wwcConfigConversationLibreURLSuccess: Gratis URL stel suksesvol.
   wwcConfigConversationLibreTranslateApiKeyInput: Die huidige API sleutel is {0}.
     Voer asseblief 'n API sleutel in vir Libre, of tik 0 om terug te gaan.
   wwcConfigGUILibreTranslateButton: Gratis Vertaal
-  libreHttp429: Geen vertroue as gevolg van koers limiet van bediener.
   wwcConfigGUIToggleLibreTranslateButton: Skakel Libre Vertaal
   wwcConfigConversationLibreTranslateToggleSuccess: Suksesvol geskakel Libre Translate.
     Herlaai vir die veranderinge om in werking te tree.
   wwcConfigConversationLibreTranslateApiKeySuccess: Gratis API sleutel stel suksesvol.
   wwcConfigConversationLibreURLInput: Die huidige URL is {0}. Voer asseblief 'n Url
     in vir Libre, of tik 0 om terug te gaan.
-  libreHttpUnknown: 'Onbekende http fout: {0}'
   wwcConfigGUILibreTranslateURLButton: Verander Libre Translate URL
   wwcConfigConnectionFail: Misluk om aan {0} te koppel nie.
   wwcConfigConversationMongoDatabaseNameSuccess: Die MongoDB databasis naam suksesvol
@@ -388,8 +383,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Verander MongoDB-poort
   wwcConfigInvalidFatalAsyncTimeout: Ongeldige noodlottige async tydverstreke stel.
     Verstek na 10 sekondes...
-  libreHttp500: Jou gekose invoer- en uitvoertaalpaar word nie ondersteun nie. Kies
-    asseblief 'n ander taal stel!
   wwcConfigGUIDeepLTranslateButton: Skakel DeepL Vertaal
   wwcConfigConversationDeepLTranslateToggleSuccess: Suksesvol geskakel DeepL Translate.
     Herlaai vir die veranderinge om in werking te tree.
@@ -456,10 +449,6 @@ Messages:
   wwcrTransFail: Herlaai WorldwideChat, maar kon nie 'n vertaler moontlik gemaak nie.
   wwcdCacheCleared: Die vertaalkas is skoongemaak.
   wwcdInvalidCmd: Ongeldige argumente!
-  systranHttpUnknown: 'Onbekende http fout: {0}'
-  systranHttp400: Slegte parameters gestuur aan Systran. Miskien 'n slegte taalpaar
-    wees?
-  systranHttp500: Interne bedienerfout vanaf Systran-eindpunt ({0}).
   wwcInvalidStorageSession: '{0} is geaktiveer in jou konfigurasie, maar ''n verbinding
     word nie gevestig nie. Probeer asseblief weer laai om dit reg te stel, maar kontak
     asseblief die ontwikkelaar as u voorheen ''n suksesvolle verbindingsboodskap van
@@ -698,4 +687,64 @@ Messages:
   wwcdResetNotifError: Nie alle data is suksesvol uitgevee nie. Is jy gekoppel aan
     jou databasis?
   colorCodeWarning: Die gebruik van kleurkodes kan u onvoorspelbare resultate gee.
+  wwcAiSystemPromptLoaded: AI System Prompt gelaai.
+  wwcAiSystemPromptBad: Slegte AI-stelsel Prop opgespoor. Gebruik ons standaard...
+  wwcAiSupportedLangsBad: Slegte AI-ondersteunde tale opgespoor. Met behulp van ons
+    standaard...
+  wwcConfigGUIAISettings: AI-opset
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API-sleutelstel suksesvol.
+  wwcConfigGUAIPromptButton: Verander AI Prompt
+  wwcConfigConversationChatGPTURLInput: Die huidige URL is {0}. Voer asseblief 'n
+    URL vir ChatGPT in, of tik 0 om terug te gaan.
+  wwcConfigConversationChatGPTApiKeyInput: Die huidige API-sleutel is {0}. Voer asseblief
+    'n API-sleutel in vir ChatGPT, of tik 0 om terug te gaan.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT -URL suksesvol gestel.
+  wwcConfigGUIChatGPTURLButton: Verander ChatGPT URL
+  wwcConfigGUIChatGPTAPIKeyButton: Verander ChatGPT API-sleutel
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT model suksesvol gestel.
+  wwcConfigGUIChatGPTModelButton: Verander ChatGPT Model
+  wwcConfigGUIToggleChatGPTButton: Skakel ChatGPT
+  wwcLargeConfigInputSuccess: Jou groot invoer van {0} karakters is verwerk.
+  wwcConfigInstructionsBulkBook: Maak die gevalle boek oop om die huidige waarde te
+    sien. Teken die boek om veranderinge aan hierdie waarde aan te bring.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT suksesvol ingeskakel.
+  wwcConfigGUIOllamaPromptButton: Verander Ollama Prompt
+  wwcConfigGUIChatGPTPromptButton: Verander ChatGPT Prompt
+  wwcConfigGUIModifyAILangsSettings: Verander ondersteunde AI-tale
+  wwcConfigConversationAddLang: Voer die nuwe taal in wat u wil byvoeg, of tik 0 om
+    terug te gaan.
+  wwcConfigConversationAILangDeletionSuccess: Die taal suksesvol verwyder.
+  wwcConfigGUIAILangModify: Verander taal ({0})
+  wwcConfigGUIAILangDeleteButton: Verwyder taal
+  wwcConfigGUIAILangNewButton: Voeg nuwe taal by
+  wwcConfigGUIAIChangeLangs: Verander ondersteunde AI-tale
+  wwcConfigConversationAILangAddSuccess: '''n nuwe taal suksesvol by die AI ondersteunde
+    tale gevoeg.'
+  translatorBadAPIKey: Slegte API-sleutel! Maak asseblief seker dat u dit korrek ingetik
+    het.
+  translatorLimitExceeded: Jy het óf die kwota vir jou vertaaldiens oorskry óf jy
+    is tarief beperk. Raadpleeg asseblief u verskaffer vir meer besonderhede.
+  translatorServerError: Interne bedienerfout. Probeer asseblief later weer.
+  translatorForbidden: Toegang is verbode! Kontroleer asseblief u toestemmings.
+  translatorBadRequest: Slegte versoek. Kontroleer asseblief u insette en probeer
+    weer.
+  translatorUnknownError: '''N Onbekende fout het plaasgevind met statuskode: {0}.'
+  translatorURLNotFound: Jou vertalerdiens-URL is ongeldig.
+  translatorMethodNotAllowed: Die vertaaldiens ondersteun nie hierdie versoekmetode
+    nie.
+  translatorNotFound: Die aangevraagde vertaalbron is nie gevind nie.
+  wwcConfigConversationChatGPTModelInput: Die huidige model is {0}. Voer asseblief
+    'n model in vir ChatGPT, of tik 0 om terug te gaan.
+  wwcConfigGUIOllamaModelButton: Verander Ollama Model
+  wwcConfigConversationOllamaURLSuccess: Volle URL suksesvol gestel.
+  wwcConfigConversationOllamaModelInput: Die huidige model is {0}. Voer asseblief
+    'n model vir Ollama in, of tik 0 om terug te gaan.
+  wwcConfigConversationOllamaURLInput: Die huidige URL is {0}. Voer asseblief 'n URL
+    vir Ollama in, of tik 0 om terug te gaan.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama suksesvol ingeskakel.
+  wwcConfigGUIOllamaURLButton: Verander die URL van die URL
+  wwcConfigConversationOllamaModelSuccess: Ollama-model het suksesvol gestel.
+  wwcConfigGUIToggleOllamaButton: Skakel Ollama
 

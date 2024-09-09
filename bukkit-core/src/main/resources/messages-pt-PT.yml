@@ -347,16 +347,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Tempo de espera da tarefa assincronização
     definido com sucesso.
   wwcConfigGUIFatalAsyncAbortButton: Alterar Tempo de espera de tarefas assíncronas
-  libreHttp400: Pedido ruim enviado para Libre Translate! A menos que você esteja
-    fazendo algo que não deveria, você não deve entender isso. Entre em contato com
-    o desenvolvedor!
   wwcConfigGUILibreTranslateApiKeyButton: Change Libre Translate API Key
-  libreHttp403: Faltando Libre Translate API Key, ou você está banido do servidor!
   wwcConfigConversationLibreURLSuccess: URL livre definido com sucesso.
   wwcConfigConversationLibreTranslateApiKeyInput: A chave de API atual é {0}. Insira
     uma chave de API para Libre ou digite 0 para voltar.
   wwcConfigGUILibreTranslateButton: Libre Traduzir
-  libreHttp429: Sem confiança devido ao limite de taxa do servidor.
   wwcConfigGUIToggleLibreTranslateButton: Alternar Livre Traduzir
   wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate alternado com
     sucesso. Recarregue para que as alterações entrem em vigor.
@@ -364,7 +359,6 @@ Messages:
     sucesso.
   wwcConfigConversationLibreURLInput: O URL atual é {0}. Insira um URL para Libre
     ou digite 0 para voltar.
-  libreHttpUnknown: 'Erro http desconhecido: {0}'
   wwcConfigGUILibreTranslateURLButton: Alterar URL de tradução livre
   wwcConfigConnectionFail: Falha ao conectar a {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Alterado com sucesso o nome do banco
@@ -405,8 +399,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Alterar porta MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Tempo limite assíncrono fatal inválido. Predefinindo
     para 10 segundos...
-  libreHttp500: O par de idiomas de entrada e saída selecionado não é suportado. Escolha
-    um conjunto de idiomas diferente!
   wwcConfigGUIDeepLTranslateButton: Alternar o DeepL Translate
   wwcConfigConversationDeepLTranslateToggleSuccess: Alterne com êxito DeepL Translate.
     Recarregar para que as alterações tenham efeito.
@@ -474,10 +466,6 @@ Messages:
   wwcrTransFail: Recarregou o WorldwideChat mas não conseguiu activar um tradutor.
   wwcdCacheCleared: A cache de tradução foi limpa.
   wwcdInvalidCmd: Argumentos inválidos!
-  systranHttpUnknown: 'Erro http desconhecido: {0}'
-  systranHttp400: Parâmetros inválidos enviados para o Systran. Pode ser um mau par
-    de línguas?
-  systranHttp500: Erro interno do servidor do endpoint Systran ({0}).
   wwcInvalidStorageSession: '{0} está activado na sua configuração, mas não está estabelecida
     uma ligação. Tente recarregar para corrigir isto, mas contacte o programador se
     tiver recebido anteriormente uma mensagem de ligação bem-sucedida de {0}.'
@@ -728,4 +716,64 @@ Messages:
   wwcdResetNotifError: Nem todos os dados foram eliminados com êxito. Está ligado
     à sua base de dados?
   colorCodeWarning: A utilização de códigos de cores pode dar-lhe resultados imprevisíveis.
+  wwcAiSystemPromptLoaded: Prompt do sistema AI carregado.
+  wwcAiSystemPromptBad: Detectado um aviso de sistema AI inválido. Utilizando o nosso
+    padrão...
+  wwcAiSupportedLangsBad: Detectados idiomas suportados com IA inválidos. Utilizando
+    os nossos padrões...
+  wwcConfigGUIAISettings: Configuração de IA
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: Conjunto de chaves da API ChatGPT com
+    sucesso.
+  wwcConfigGUAIPromptButton: Alterar prompt de IA
+  wwcConfigConversationChatGPTURLInput: O URL actual é {0}. Introduza um URL para
+    o ChatGPT ou digite 0 para voltar atrás.
+  wwcConfigConversationChatGPTApiKeyInput: A chave API actual é {0}. Introduza uma
+    chave de API para o ChatGPT ou digite 0 para voltar atrás.
+  wwcConfigConversationChatGPTURLSuccess: URL do ChatGPT definido com sucesso.
+  wwcConfigGUIChatGPTURLButton: Alterar URL do ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Alterar chave da API do ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Modelo ChatGPT definido com sucesso.
+  wwcConfigGUIChatGPTModelButton: Alterar modelo do ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Alternar ChatGPT
+  wwcLargeConfigInputSuccess: A sua grande entrada de {0} caracteres foi processada.
+  wwcConfigInstructionsBulkBook: Abra o livro que caiu para ver o valor atual. Assine
+    o livro para fazer alterações a este valor.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT alternado com sucesso.
+  wwcConfigGUIOllamaPromptButton: Alterar Prompt Ollama
+  wwcConfigGUIChatGPTPromptButton: Alterar prompt ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Modificar idiomas de IA suportados
+  wwcConfigConversationAddLang: Introduza o novo idioma que gostaria de adicionar
+    ou digite 0 para voltar atrás.
+  wwcConfigConversationAILangDeletionSuccess: Eliminado com êxito o idioma.
+  wwcConfigGUIAILangModify: Modificar Idioma ({0})
+  wwcConfigGUIAILangDeleteButton: Eliminar Idioma
+  wwcConfigGUIAILangNewButton: Adicionar Novo Idioma
+  wwcConfigGUIAIChangeLangs: Modificar idiomas de IA suportados
+  wwcConfigConversationAILangAddSuccess: Adicionado com êxito um novo idioma aos idiomas
+    suportados pela IA.
+  translatorBadAPIKey: Chave API inválida! Certifique-se de que o digitou corretamente.
+  translatorLimitExceeded: Ou excedeu a quota do seu serviço de tradução ou teve uma
+    taxa limitada. Por favor, verifique o seu fornecedor para mais detalhes.
+  translatorServerError: Erro interno do servidor. Tente novamente mais tarde.
+  translatorForbidden: O acesso é proibido! Por favor, verifique as suas permissões.
+  translatorBadRequest: Pedido inválido. Por favor, verifique a sua entrada e tente
+    novamente.
+  translatorUnknownError: 'Ocorreu um erro desconhecido com o código de estado: {0}.'
+  translatorURLNotFound: O URL do serviço de tradução é inválido.
+  translatorMethodNotAllowed: O serviço de tradução não suporta este método de pedido.
+  translatorNotFound: O recurso de tradução solicitado não foi encontrado.
+  wwcConfigConversationChatGPTModelInput: O modelo atual é o {0}. Introduza um modelo
+    para ChatGPT ou digite 0 para voltar atrás.
+  wwcConfigGUIOllamaModelButton: Mudar Modelo Ollama
+  wwcConfigConversationOllamaURLSuccess: URL do Ollama definido com êxito.
+  wwcConfigConversationOllamaModelInput: O modelo atual é o {0}. Introduza um modelo
+    para o Ollama ou digite 0 para voltar atrás.
+  wwcConfigConversationOllamaURLInput: O URL actual é {0}. Introduza um URL para o
+    Ollama ou digite 0 para voltar atrás.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama alternado com sucesso.
+  wwcConfigGUIOllamaURLButton: Alterar URL do Ollama
+  wwcConfigConversationOllamaModelSuccess: Conjunto de modelos Ollama com sucesso.
+  wwcConfigGUIToggleOllamaButton: Alternar Ollama
 

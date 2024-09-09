@@ -339,22 +339,17 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Az aszinkron feladat időtúltolása sikeresen
     beállítva.
   wwcConfigGUIFatalAsyncAbortButton: Async Task Timeout módosítása
-  libreHttp400: Rossz kérés elküldve a Libre Fordítónak! Hacsak nem csinálsz valamit,
-    amit nem szabad, ezt nem szabad megkapnod. Kérjük, lépjen kapcsolatba a fejlesztővel!
   wwcConfigGUILibreTranslateApiKeyButton: Change Libre Fordítás API Key
-  libreHttp403: Hiányzik a Libre Translate API kulcs, vagy ki van tiltva a szerverről!
   wwcConfigConversationLibreURLSuccess: Libre URL beállítása sikeresen.
   wwcConfigConversationLibreTranslateApiKeyInput: Az aktuális API-kulcs {0}. Adjon
     meg egy API-kulcsot a Libre számára, vagy írja be a 0 értéket a visszalépéshez.
   wwcConfigGUILibreTranslateButton: Libre fordítás
-  libreHttp429: Nincs bizalom a szerver sebességkorlátozása miatt.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Ingyenes fordítás
   wwcConfigConversationLibreTranslateToggleSuccess: Sikeresen váltotta a Libre Translate
     programot. Töltse be újra a módosítások életbe lépését.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kulcs beállítása sikeresen.
   wwcConfigConversationLibreURLInput: Az aktuális URL {0}. Adjon meg egy URL-t a Libre
     számára, vagy írja be a 0 értéket a visszalépéshez.
-  libreHttpUnknown: 'Ismeretlen http hiba: {0}'
   wwcConfigGUILibreTranslateURLButton: Change Libre Translate
   wwcConfigConnectionFail: 'Nem sikerült csatlakozni a következőhöz: {0}.'
   wwcConfigConversationMongoDatabaseNameSuccess: Sikeresen módosította a MongoDB adatbázis
@@ -395,8 +390,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB port módosítása
   wwcConfigInvalidFatalAsyncTimeout: Érvénytelen halálos aszinkron időtúllépés beállítása.
     Alapértelmezés szerint 10 másodperc...
-  libreHttp500: A kiválasztott bemeneti és kimeneti nyelvpár nem támogatott. Kérjük,
-    válasszon másik nyelvi készletet!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL fordítás
   wwcConfigConversationDeepLTranslateToggleSuccess: Sikeresen váltotta DeepL Translate.
     Töltse be újra a módosítások életbe lépését.
@@ -464,10 +457,6 @@ Messages:
   wwcrTransFail: Újratöltötte a WorldwideChat-t, de nem sikerült engedélyezni a fordítót.
   wwcdCacheCleared: A fordítási gyorsítótár törlődött.
   wwcdInvalidCmd: Érvénytelen argumentumok!
-  systranHttpUnknown: 'Ismeretlen http hiba: {0}'
-  systranHttp400: Rossz paramétereket küldtek a Systran-nak. Lehet, hogy rossz nyelvi
-    pár?
-  systranHttp500: Belső kiszolgálóhiba a Systran végpontból ({0}).
   wwcInvalidStorageSession: '{0} engedélyezve van a konfigurációban, de kapcsolat
     nincs létrehozva. Kérjük, próbálja meg újratölteni ezt a megoldást, de kérjük,
     vegye fel a kapcsolatot a fejlesztővel, ha korábban sikeres csatlakozási üzenetet
@@ -712,4 +701,66 @@ Messages:
   wwcdResetNotif: A WorldwideChat visszaállításra került. Újratöltés...
   wwcdResetNotifError: Nem minden adatot töröltek sikeresen. Csatlakoztál az adatbázisához?
   colorCodeWarning: A színkódok használata kiszámíthatatlan eredményeket hozhat.
+  wwcAiSystemPromptLoaded: AI rendszerpromptja betöltve.
+  wwcAiSystemPromptBad: Rossz AI rendszerpromptját észlelték. Az alapértelmezett használat
+    használatával...
+  wwcAiSupportedLangsBad: Rossz AI által támogatott nyelvek észlelhetők. Alapértelmezett
+    beállításaink használatával...
+  wwcConfigGUIAISettings: AI konfiguráció
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: A ChatGPT API kulcs sikeresen beállított.
+  wwcConfigGUAIPromptButton: AI Prompt módosítása
+  wwcConfigConversationChatGPTURLInput: Az aktuális URL {0}. Kérjük, adja meg a ChatGPT
+    URL-jét, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationChatGPTApiKeyInput: Az aktuális API kulcs a {0}. Kérjük, írjon
+    be egy API-kulcsot a ChatGPT számára, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationChatGPTURLSuccess: A ChatGPT URL sikeresen beállítva.
+  wwcConfigGUIChatGPTURLButton: ChatGPT URL módosítása
+  wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API kulcs módosítása
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT modell sikeresen beállított.
+  wwcConfigGUIChatGPTModelButton: ChatGPT modell módosítása
+  wwcConfigGUIToggleChatGPTButton: ChatGPT kapcsolása
+  wwcLargeConfigInputSuccess: A nagy mennyiségű {0} karakter bevitele feldolgozásra
+    került.
+  wwcConfigInstructionsBulkBook: Nyissa meg az elhagyott könyvet az aktuális érték
+    megtekintéséhez. Írja alá a könyvet, hogy módosítsa ezt az értéket.
+  wwcConfigGUIChatGPTToggleSuccess: Sikeresen kapcsolta be a ChatGPT-t.
+  wwcConfigGUIOllamaPromptButton: Módosítsa a figyelmeztető üzenetet
+  wwcConfigGUIChatGPTPromptButton: ChatGPT promptjának módosítása
+  wwcConfigGUIModifyAILangsSettings: Támogatott AI nyelvek módosítása
+  wwcConfigConversationAddLang: Írja be az új nyelvet, amelyet hozzá szeretne adni,
+    vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationAILangDeletionSuccess: Sikeresen törölte a nyelvet.
+  wwcConfigGUIAILangModify: Nyelv módosítása ({0})
+  wwcConfigGUIAILangDeleteButton: Nyelv törlése
+  wwcConfigGUIAILangNewButton: Új nyelv hozzáadása
+  wwcConfigGUIAIChangeLangs: Támogatott AI nyelvek módosítása
+  wwcConfigConversationAILangAddSuccess: Sikeresen új nyelvet adott hozzá az AI által
+    támogatott nyelvekhez.
+  translatorBadAPIKey: Rossz API kulcs! Kérjük, győződjön meg róla, hogy helyesen
+    írta be.
+  translatorLimitExceeded: Vagy túllépte a fordítási szolgáltatás kvótáját, vagy korlátozott
+    mértékű volt. További részletekért kérjük, keresse meg szolgáltatóját.
+  translatorServerError: Belső szerver hiba. Kérjük, próbálkozzon újra később.
+  translatorForbidden: A belépés tilos! Kérjük, ellenőrizze az engedélyeket.
+  translatorBadRequest: Rossz kérés. Kérjük, ellenőrizze a bemenetet, és próbálja
+    újra.
+  translatorUnknownError: 'Ismeretlen hiba történt az állapotkóddal: {0}.'
+  translatorURLNotFound: A fordítószolgáltatás URL-je érvénytelen.
+  translatorMethodNotAllowed: A fordítási szolgáltatás nem támogatja ezt a kérési
+    módot.
+  translatorNotFound: A kért fordítási forrás nem található.
+  wwcConfigConversationChatGPTModelInput: A jelenlegi modell a {0}. Kérjük, adja meg
+    a ChatGPT modelljét, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigGUIOllamaModelButton: Ollama modell módosítása
+  wwcConfigConversationOllamaURLSuccess: Az Ollama URL sikeresen beállítva.
+  wwcConfigConversationOllamaModelInput: A jelenlegi modell a {0}. Kérjük, adja meg
+    az Ollama modelljét, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationOllamaURLInput: 'Az aktuális URL: {0}. Kérjük, írja be az Ollama
+    URL-jét, vagy írja be a 0 parancsot a visszalépéshez.'
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Sikeresen váltotta be az Ollamát.
+  wwcConfigGUIOllamaURLButton: Változtassa meg az Ollama URL-t
+  wwcConfigConversationOllamaModelSuccess: Ollama modellkészlet sikeresen.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

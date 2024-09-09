@@ -364,15 +364,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
     ασύγχρονης εργασίας.
   wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη
-  libreHttp400: Κακό αίτημα εστάλη στο Libre Μετάφραση! Αν δεν κάνετε κάτι που δεν
-    πρέπει, δεν πρέπει να το πάρετε αυτό. Παρακαλούμε επικοινωνήστε με τον προγραμματιστή!
   wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
-  libreHttp403: Λείπει Libre Μετάφραση API Key, ή έχετε απαγορευτεί από το διακομιστή!
   wwcConfigConversationLibreURLSuccess: Το Libre URL ορίστηκε επιτυχώς.
   wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}.
     Παρακαλώ εισάγετε ένα κλειδί API για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUILibreTranslateButton: Ελεύθερη Μετάφραση
-  libreHttp429: Δεν υπάρχει εμπιστοσύνη λόγω ορίου ρυθμού από το διακομιστή.
   wwcConfigGUIToggleLibreTranslateButton: Εναλλαγή μετάφρασης Libre
   wwcConfigConversationLibreTranslateToggleSuccess: Επιτυχής ενέγγει το Libre Translate.
     Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
@@ -380,7 +376,6 @@ Messages:
     επιτυχία.
   wwcConfigConversationLibreURLInput: Το τρέχον URL είναι {0}. Παρακαλώ εισάγετε ένα
     URL για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
-  libreHttpUnknown: 'Άγνωστο σφάλμα http: {0}'
   wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre
   wwcConfigConnectionFail: Αποτυχία σύνδεσης με το {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Επιτυχής αλλαγή του ονόματος της
@@ -425,8 +420,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Αλλαγή θύρας MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Μη έγκυρο χρονικό όριο ανεπανόρθωτου ασύγχρονος.
     Προεπιλογή σε 10 δευτερόλεπτα...
-  libreHttp500: Το επιλεγμένο ζεύγος γλωσσών εισόδου και εξόδου δεν υποστηρίζεται.
-    Παρακαλώ επιλέξτε ένα διαφορετικό σύνολο γλωσσών!
   wwcConfigGUIDeepLTranslateButton: Εναλλαγή μετάφρασης DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: Επιτυχής ενέγγει τη μετάφραση
     DeepL. Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
@@ -497,10 +490,6 @@ Messages:
     μεταφραστή.
   wwcdCacheCleared: Η προσωρινή μνήμη μετάφρασης εκκαθαρίστηκε.
   wwcdInvalidCmd: Μη έγκυρα επιχειρήματα!
-  systranHttpUnknown: 'Άγνωστο σφάλμα http: {0}'
-  systranHttp400: Κακές παράμετροι στάλθηκαν στο Systran. Μπορεί να είναι ένα κακό
-    ζευγάρι γλωσσών?
-  systranHttp500: Εσωτερικό σφάλμα διακομιστή από το τελικό σημείο Systran ({0}).
   wwcInvalidStorageSession: Το {0} είναι ενεργοποιημένο στη διαμόρφωσή σας, αλλά δεν
     δημιουργείται σύνδεση. Δοκιμάστε να φορτώσετε ξανά για να το διορθώσετε, αλλά
     επικοινωνήστε με τον προγραμματιστή εάν λάβατε προηγουμένως ένα επιτυχημένο μήνυμα
@@ -762,4 +751,65 @@ Messages:
   wwcdResetNotifError: Δεν διαγράφηκαν επιτυχώς όλα τα δεδομένα. Είστε συνδεδεμένοι
     στη βάση δεδομένων σας;
   colorCodeWarning: Η χρήση κωδικών χρώματος μπορεί να σας δώσει απρόβλεπτα αποτελέσματα.
+  wwcAiSystemPromptLoaded: Η προτροπή συστήματος AI φορτώθηκε.
+  wwcAiSystemPromptBad: Εντοπίστηκε κακή προτροπή συστήματος AI. Χρησιμοποιώντας την
+    προεπιλογή μας...
+  wwcAiSupportedLangsBad: Εντοπίστηκαν κακές υποστηριζόμενες γλώσσες AI. Χρησιμοποιώντας
+    τις προεπιλογές μας...
+  wwcConfigGUIAISettings: Διαμόρφωση AI
+  wwcConfigGUIChatGPTButton: Συνομιλία GPT
+  wwcConfigConversationChatGPTApiKeySuccess: Το κλειδί API ChatGPT ορίστηκε με επιτυχία.
+  wwcConfigGUAIPromptButton: Αλλαγή προτροπής AI
+  wwcConfigConversationChatGPTURLInput: Η τρέχουσα διεύθυνση URL είναι {0}. Εισαγάγετε
+    μια διεύθυνση URL για το ChatGPT ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationChatGPTApiKeyInput: Το τρέχον κλειδί API είναι {0}. Εισαγάγετε
+    ένα κλειδί API για το ChatGPT ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationChatGPTURLSuccess: Η διεύθυνση URL ChatGPT ορίστηκε με επιτυχία.
+  wwcConfigGUIChatGPTURLButton: Αλλαγή διεύθυνσης URL ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Αλλαγή κλειδιού API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Το μοντέλο ChatGPT ορίστηκε με επιτυχία.
+  wwcConfigGUIChatGPTModelButton: Αλλαγή μοντέλου ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Εναλλαγή ChatGPT
+  wwcLargeConfigInputSuccess: Η μεγάλη εισαγωγή των χαρακτήρων {0} έχει υποβληθεί
+    σε επεξεργασία.
+  wwcConfigInstructionsBulkBook: Ανοίξτε το βιβλίο που έπεσε για να δείτε την τρέχουσα
+    τιμή. Υπογράψτε το βιβλίο για να κάνετε αλλαγές σε αυτήν την τιμή.
+  wwcConfigGUIChatGPTToggleSuccess: Ενεργοποιήθηκε επιτυχώς το ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Αλλαγή προτροπής ελέγχου
+  wwcConfigGUIChatGPTPromptButton: Αλλαγή προτροπής ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Τροποποίηση υποστηριζόμενων γλωσσών AI
+  wwcConfigConversationAddLang: Εισαγάγετε τη νέα γλώσσα που θέλετε να προσθέσετε
+    ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationAILangDeletionSuccess: Διαγράφηκε επιτυχώς η γλώσσα.
+  wwcConfigGUIAILangModify: Τροποποίηση γλώσσας ({0})
+  wwcConfigGUIAILangDeleteButton: Διαγραφή γλώσσας
+  wwcConfigGUIAILangNewButton: Προσθήκη νέας γλώσσας
+  wwcConfigGUIAIChangeLangs: Τροποποίηση υποστηριζόμενων γλωσσών AI
+  wwcConfigConversationAILangAddSuccess: Προστέθηκε επιτυχώς μια νέα γλώσσα στις υποστηριζόμενες
+    γλώσσες AI.
+  translatorBadAPIKey: Κακό κλειδί API! Βεβαιωθείτε ότι το έχετε πληκτρολογήσει σωστά.
+  translatorLimitExceeded: Είτε έχετε υπερβεί το όριο για την υπηρεσία μετάφρασης
+    είτε έχετε περιοριστεί η τιμή. Ελέγξτε τον παροχέα σας για περισσότερες λεπτομέρειες.
+  translatorServerError: Εσωτερικό σφάλμα διακομιστή. Παρακαλώ δοκιμάστε ξανά αργότερα.
+  translatorForbidden: Η πρόσβαση απαγορεύεται! Ελέγξτε τα δικαιώματά σας.
+  translatorBadRequest: Κακό αίτημα. Ελέγξτε την εισαγωγή σας και δοκιμάστε ξανά.
+  translatorUnknownError: 'Παρουσιάστηκε ένα άγνωστο σφάλμα με τον κωδικό κατάστασης:
+    {0}.'
+  translatorURLNotFound: Η διεύθυνση URL της υπηρεσίας μεταφραστή σας δεν είναι έγκυρη.
+  translatorMethodNotAllowed: Η υπηρεσία μετάφρασης δεν υποστηρίζει αυτήν τη μέθοδο
+    αιτήματος.
+  translatorNotFound: Ο ζητούμενος πόρος μετάφρασης δεν βρέθηκε.
+  wwcConfigConversationChatGPTModelInput: Το τρέχον μοντέλο είναι {0}. Εισαγάγετε
+    ένα μοντέλο για το ChatGPT ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIOllamaModelButton: Αλλαγή μοντέλου Ollama
+  wwcConfigConversationOllamaURLSuccess: Ορίστηκε επιτυχώς η διεύθυνση URL.
+  wwcConfigConversationOllamaModelInput: Το τρέχον μοντέλο είναι {0}. Εισαγάγετε ένα
+    μοντέλο για Ollama ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationOllamaURLInput: Η τρέχουσα διεύθυνση URL είναι {0}. Εισαγάγετε
+    μια διεύθυνση URL για την Ollama ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIOllamaButton: Ολλαμα
+  wwcConfigGUIOllamaToggleSuccess: Ενεργοποιήθηκε με επιτυχία το Ollama.
+  wwcConfigGUIOllamaURLButton: Αλλαγή διεύθυνσης URL
+  wwcConfigConversationOllamaModelSuccess: Το μοντέλο Ollama ρυθμίστηκε με επιτυχία.
+  wwcConfigGUIToggleOllamaButton: Εναλλαγή επιλογής
 

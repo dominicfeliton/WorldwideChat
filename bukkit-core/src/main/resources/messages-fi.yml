@@ -326,22 +326,17 @@ Messages:
     tai mitä tahansa sen alapuolella palataksesi takaisin.
   wwcConfigConversationFatalAsyncSuccess: Async-tehtävän aikakatkaisu asetettu onnistuneesti.
   wwcConfigGUIFatalAsyncAbortButton: Muuta Async-tehtävän aikakatkaisu
-  libreHttp400: Huono pyyntö lähetetty Libre Translate -sivustolle! Ellet tee jotain,
-    mitä sinun ei pitäisi, sinun ei pitäisi saada tätä. Ota yhteyttä kehittäjään!
   wwcConfigGUILibreTranslateApiKeyButton: Muuta Libre Käännä API-avain
-  libreHttp403: Missing Libre Translate API Key, tai olet kielletty palvelimelta!
   wwcConfigConversationLibreURLSuccess: Libre URL asetettu onnistuneesti.
   wwcConfigConversationLibreTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna
     Libre-sovellusliittymän avain tai kirjoita 0 palataksesi takaisin.
   wwcConfigGUILibreTranslateButton: Libre Käännä
-  libreHttp429: Ei luottamusta palvelimen nopeusrajan vuoksi.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Käännä
   wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate onnistui vaihtamaan.
     Lataa uudelleen, jotta muutokset tulevat voimaan.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API -näppäin asetettu onnistuneesti.
   wwcConfigConversationLibreURLInput: Nykyinen URL-osoite on {0}. Anna Libren URL-osoite
     tai kirjoita 0 palataksesi takaisin.
-  libreHttpUnknown: 'Tuntematon http-virhe: {0}'
   wwcConfigGUILibreTranslateURLButton: Change Libre Käännä URL
   wwcConfigConnectionFail: Yhteyden muodostaminen kohteeseen {0} epäonnistui.
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB-tietokannan nimi muuttui
@@ -381,7 +376,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Vaihda MongoDB-portti
   wwcConfigInvalidFatalAsyncTimeout: Virheellinen kohtalokas asynkronoinnin aikakatkaisu
     asetettu. Oletusarvo 10 sekuntia...
-  libreHttp500: Valitsemaasi tulo- ja lähtökieliparia ei tueta. Valitse toinen kielisarja!
   wwcConfigGUIDeepLTranslateButton: Vaihda DeepL Käännä
   wwcConfigConversationDeepLTranslateToggleSuccess: Onnistuneesti vaihtanut DeepL
     Translate. Lataa uudelleen, jotta muutokset tulevat voimaan.
@@ -452,9 +446,6 @@ Messages:
     epäonnistui.
   wwcdCacheCleared: Käännösvälimuisti tyhjennettiin.
   wwcdInvalidCmd: Virheelliset argumentit!
-  systranHttpUnknown: 'Tuntematon http-virhe: {0}'
-  systranHttp400: Systranille lähetetyt huonot parametrit. Voi olla huono kielipari?
-  systranHttp500: Sisäinen palvelinvirhe Systran-päätepisteestä ({0}).
   wwcInvalidStorageSession: '{0} on käytössä kokoonpanossasi, mutta yhteyttä ei ole
     muodostettu. Yritä ladata uudelleen korjataksesi tämän, mutta ota yhteyttä kehittäjään,
     jos olet aiemmin saanut onnistuneen yhteysviestin osoitteesta {0}.'
@@ -692,4 +683,61 @@ Messages:
   wwcdResetNotifError: Kaikkia tietoja ei poistettu onnistuneesti. Oletko yhteydessä
     tietokantaasi?
   colorCodeWarning: Värikoodien käyttö voi antaa sinulle arvaamattomia tuloksia.
+  wwcAiSystemPromptLoaded: AI System Prompt ladattu.
+  wwcAiSystemPromptBad: Huono AI-järjestelmäkehote havaittu. Käyttämällä oletustamme...
+  wwcAiSupportedLangsBad: Huonot tekoälyn tuetut kielet havaittu. Käyttämällä oletusarvojamme...
+  wwcConfigGUIAISettings: Tekoälyn kokoonpano
+  wwcConfigGUIChatGPTButton: Chat GPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT-sovellusliittymän avain asetettiin
+    onnistuneesti.
+  wwcConfigGUAIPromptButton: Muuta AI-kehotetta
+  wwcConfigConversationChatGPTURLInput: 'Nykyinen URL-osoite on {0}. Anna ChatGPT:
+    n URL-osoite, tai kirjoita 0 palataksesi takaisin.'
+  wwcConfigConversationChatGPTApiKeyInput: 'Nykyinen API-avain on {0}. Anna API-avain
+    ChatGPT: lle tai kirjoita 0 palataksesi takaisin.'
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT-URL-osoite on määritetty onnistuneesti.
+  wwcConfigGUIChatGPTURLButton: Muuta ChatGPT-URL-osoitetta
+  wwcConfigGUIChatGPTAPIKeyButton: Muuta ChatGPT-sovellusliittymäavainta
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT-malli asetettiin onnistuneesti.
+  wwcConfigGUIChatGPTModelButton: Muuta ChatGPT-mallia
+  wwcConfigGUIToggleChatGPTButton: Vaihda ChatGPT
+  wwcLargeConfigInputSuccess: Suuri {0} -merkkien syöttö on käsitelty.
+  wwcConfigInstructionsBulkBook: Avaa pudotettu kirja nähdäksesi nykyisen arvon. Tee
+    muutoksia tähän arvoon allekirjoittamalla kirja.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT vaihdettiin onnistuneesti.
+  wwcConfigGUIOllamaPromptButton: Change Ollama Prompt
+  wwcConfigGUIChatGPTPromptButton: Muuta ChatGPT-kehote
+  wwcConfigGUIModifyAILangsSettings: Muokkaa tuettuja tekoälykieliä
+  wwcConfigConversationAddLang: Kirjoita uusi kieli, jonka haluat lisätä, tai kirjoita
+    0 palataksesi takaisin.
+  wwcConfigConversationAILangDeletionSuccess: Kieli poistettiin onnistuneesti.
+  wwcConfigGUIAILangModify: Muokkaa kieltä ({0})
+  wwcConfigGUIAILangDeleteButton: Poista kieli
+  wwcConfigGUIAILangNewButton: Lisää uusi kieli
+  wwcConfigGUIAIChangeLangs: Muokkaa tuettuja tekoälykieliä
+  wwcConfigConversationAILangAddSuccess: Lisätty uusi kieli onnistuneesti tekoälyn
+    tuetuille kielille.
+  translatorBadAPIKey: Huono API-avain! Varmista, että olet kirjoittanut sen oikein.
+  translatorLimitExceeded: Olet joko ylittänyt käännöspalvelusi kiintiön tai olet
+    saanut hintarajoituksen. Tarkista palveluntarjoajaltasi lisätietoja.
+  translatorServerError: Sisäinen palvelinvirhe. Yritä myöhemmin uudelleen.
+  translatorForbidden: Pääsy on kielletty! Tarkista käyttöoikeutesi.
+  translatorBadRequest: Huono pyyntö. Tarkista syötteesi ja yritä uudelleen.
+  translatorUnknownError: 'Tuntematon virhe tapahtui tilakoodilla: {0}.'
+  translatorURLNotFound: Kääntäjäpalvelun URL-osoite on virheellinen.
+  translatorMethodNotAllowed: Käännöspalvelu ei tue tätä pyyntömenetelmää.
+  translatorNotFound: Pyydettyä käännösresurssia ei löytynyt.
+  wwcConfigConversationChatGPTModelInput: Nykyinen malli on {0}. Anna ChatGPT-malli
+    tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIOllamaModelButton: Muuta Ollama-mallia
+  wwcConfigConversationOllamaURLSuccess: Ollaman URL-osoite on määritetty onnistuneesti.
+  wwcConfigConversationOllamaModelInput: Nykyinen malli on {0}. Anna malli Ollamalle,
+    tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationOllamaURLInput: Nykyinen URL-osoite on {0}. Anna URL-osoite
+    Ollamalle, tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama vaihdettiin onnistuneesti.
+  wwcConfigGUIOllamaURLButton: Muuta Ollama-URL-osoitetta
+  wwcConfigConversationOllamaModelSuccess: Ollama-malli asetettiin onnistuneesti.
+  wwcConfigGUIToggleOllamaButton: Toggle Layout
 

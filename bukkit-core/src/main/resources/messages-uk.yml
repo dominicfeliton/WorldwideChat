@@ -334,15 +334,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Асинхронний тайм-аут завдання встановлено
     успішно.
   wwcConfigGUIFatalAsyncAbortButton: Змінити час очікування завдання Async
-  libreHttp400: Поганий запит надіслано до Libre Translate! Якщо ви не робите те,
-    чого не слід, ви не повинні цього отримати. Звертайтеся до розробника!
   wwcConfigGUILibreTranslateApiKeyButton: Змінити безкоштовний переклад API ключа
-  libreHttp403: Відсутній Libre Translate API Key, або ви забанені з сервера!
   wwcConfigConversationLibreURLSuccess: Безкоштовна URL-адреса успішно встановлена.
   wwcConfigConversationLibreTranslateApiKeyInput: Поточний ключ API {0}. Будь ласка,
     введіть ключ API для Libre або введіть 0, щоб повернутися назад.
   wwcConfigGUILibreTranslateButton: Безкоштовно Перекласти
-  libreHttp429: Немає впевненості через обмеження швидкості від сервера.
   wwcConfigGUIToggleLibreTranslateButton: Переключити Безкоштовно Перекласти
   wwcConfigConversationLibreTranslateToggleSuccess: Успішно перемикається Libre Translate.
     Перезавантажте, щоб зміни вступили в силу.
@@ -350,7 +346,6 @@ Messages:
     встановлений.
   wwcConfigConversationLibreURLInput: Поточна URL-адреса {0}. Будь ласка, введіть
     URL-адресу для Libre або введіть 0, щоб повернутися назад.
-  libreHttpUnknown: 'Невідома помилка http: {0}'
   wwcConfigGUILibreTranslateURLButton: Змінити Libre Перекласти URL-адресу
   wwcConfigConnectionFail: Не вдалося з' єднатися з {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Успішно змінено ім'я бази даних MongoDB.
@@ -388,8 +383,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Змінити порт MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Некоректний фатальний асинхронний тайм-аут. За
     замовчуванням до 10 секунд...
-  libreHttp500: Обрана вами мовна пара вхідних і вихідних даних не підтримується.
-    Будь ласка, виберіть інший мовний набір!
   wwcConfigGUIDeepLTranslateButton: Переключити DeepL Перекласти
   wwcConfigConversationDeepLTranslateToggleSuccess: Успішно перемикається DeepL Translate.
     Перезавантажте, щоб зміни вступили в силу.
@@ -458,9 +451,6 @@ Messages:
   wwcrTransFail: Перезавантажено WorldwideChat, але не вдалося ввімкнути перекладач.
   wwcdCacheCleared: Кеш перекладу був очищений.
   wwcdInvalidCmd: Невірні аргументи!
-  systranHttpUnknown: 'Невідома помилка http: {0}'
-  systranHttp400: Погані параметри надіслані на Systran. Може бути погана мовна пара?
-  systranHttp500: Внутрішня помилка сервера з кінцевої точки Systran ({0}).
   wwcInvalidStorageSession: '{0} увімкнено у вашому конфігурації, але з''єднання не
     встановлено. Будь ласка, спробуйте перезавантажити, щоб виправити це, але, будь
     ласка, зв''яжіться з розробником, якщо ви раніше отримували повідомлення про успішне
@@ -697,4 +687,65 @@ Messages:
   wwcdResetNotifError: Не всі дані були успішно стерті. Ви підключені до своєї бази
     даних?
   colorCodeWarning: Використання кольорових кодів може дати вам непередбачувані результати.
+  wwcAiSystemPromptLoaded: Завантажено підказку системи AI.
+  wwcAiSystemPromptBad: Виявлено погану підказку системи AI. Використовуючи наше за
+    замовчуванням...
+  wwcAiSupportedLangsBad: Виявлено погані мови, що підтримуються AI. Використовуючи
+    наші налаштування за замовчуванням...
+  wwcConfigGUIAISettings: Конфігурація AI
+  wwcConfigGUIChatGPTButton: Чат GPT
+  wwcConfigConversationChatGPTApiKeySuccess: Ключ API ChatGPT успішно встановлено.
+  wwcConfigGUAIPromptButton: Змінити підказку AI
+  wwcConfigConversationChatGPTURLInput: Поточна URL-адреса {0}. Будь ласка, введіть
+    URL-адресу для ChatGPT або введіть 0, щоб повернутися назад.
+  wwcConfigConversationChatGPTApiKeyInput: Поточний ключ API - {0}. Будь ласка, введіть
+    ключ API для ChatGPT або введіть 0, щоб повернутися назад.
+  wwcConfigConversationChatGPTURLSuccess: Успішно встановлено URL-адресу ChatGPT.
+  wwcConfigGUIChatGPTURLButton: Змінити URL-адресу ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Змінити ключ API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Модель ChatGPT встановлена успішно.
+  wwcConfigGUIChatGPTModelButton: Змінити модель ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Переключити чатGPT
+  wwcLargeConfigInputSuccess: Ваше велике введення символів {0} було оброблено.
+  wwcConfigInstructionsBulkBook: Відкрийте скинуту книгу, щоб побачити поточне значення.
+    Підпишіть книгу, щоб внести зміни в це значення.
+  wwcConfigGUIChatGPTToggleSuccess: Успішно переключено ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Змінити підказку зміни
+  wwcConfigGUIChatGPTPromptButton: Змінити запит ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Змінити підтримувані мови AI
+  wwcConfigConversationAddLang: Введіть нову мову, яку ви хочете додати, або введіть
+    0, щоб повернутися назад.
+  wwcConfigConversationAILangDeletionSuccess: Успішно видалили мову.
+  wwcConfigGUIAILangModify: Змінити мову ({0})
+  wwcConfigGUIAILangDeleteButton: Видалити мову
+  wwcConfigGUIAILangNewButton: Додати нову мову
+  wwcConfigGUIAIChangeLangs: Змінити підтримувані мови AI
+  wwcConfigConversationAILangAddSuccess: Успішно додано нову мову до мов, що підтримуються
+    AI.
+  translatorBadAPIKey: Поганий ключ API! Будь ласка, переконайтеся, що ви ввели його
+    правильно.
+  translatorLimitExceeded: Ви або перевищили квоту на послуги перекладу, або були
+    обмежені тарифи. Будь ласка, перевірте свого постачальника для отримання додаткової
+    інформації.
+  translatorServerError: Внутрішня помилка сервера. Будь ласка, спробуйте ще раз пізніше.
+  translatorForbidden: Доступ заборонений! Будь ласка, перевірте свої дозволи.
+  translatorBadRequest: Поганий запит. Будь ласка, перевірте свої дані та спробуйте
+    ще раз.
+  translatorUnknownError: 'Сталася невідома помилка з кодом стану: {0}.'
+  translatorURLNotFound: Ваша URL-адреса служби перекладача недійсна.
+  translatorMethodNotAllowed: Служба перекладу не підтримує цей метод запиту.
+  translatorNotFound: Запитуваний ресурс перекладу не знайдено.
+  wwcConfigConversationChatGPTModelInput: Поточна модель - {0}. Будь ласка, введіть
+    модель для ChatGPT або введіть 0, щоб повернутися назад.
+  wwcConfigGUIOllamaModelButton: Змінити модель Оллама
+  wwcConfigConversationOllamaURLSuccess: Успішно встановлено URL-адресу Оллама.
+  wwcConfigConversationOllamaModelInput: Поточна модель - {0}. Будь ласка, введіть
+    модель для Ollama або введіть 0, щоб повернутися назад.
+  wwcConfigConversationOllamaURLInput: Поточна URL-адреса {0}. Будь ласка, введіть
+    URL-адресу для Ollama або введіть 0, щоб повернутися назад.
+  wwcConfigGUIOllamaButton: Оллама
+  wwcConfigGUIOllamaToggleSuccess: Успішно переключено Ollama.
+  wwcConfigGUIOllamaURLButton: Змінити URL-адресу
+  wwcConfigConversationOllamaModelSuccess: Модель Ollama встановлена успішно.
+  wwcConfigGUIToggleOllamaButton: Перемкнути перегляд
 

@@ -332,23 +332,17 @@ Messages:
     baru, atau apa pun di bawahnya untuk kembali.
   wwcConfigConversationFatalAsyncSuccess: Async tugas batas waktu ditetapkan berhasil.
   wwcConfigGUIFatalAsyncAbortButton: Ubah Async Task Timeout
-  libreHttp400: Permintaan buruk dikirim ke Libre Translate! Kecuali Anda melakukan
-    sesuatu yang seharusnya tidak Anda lakukan, Anda seharusnya tidak mendapatkan
-    ini. Silahkan hubungi pengembang!
   wwcConfigGUILibreTranslateApiKeyButton: Ubah Gratis Terjemahkan Kunci API
-  libreHttp403: Hilang Libre Terjemahkan API Key, atau Anda dilarang dari server!
   wwcConfigConversationLibreURLSuccess: URL Gratis berhasil diatur.
   wwcConfigConversationLibreTranslateApiKeyInput: Kunci API saat ini adalah {0}. Harap
     masukan kunci API untuk Libre, atau tipe 0 untuk kembali.
   wwcConfigGUILibreTranslateButton: Libre Terjemahkan
-  libreHttp429: Tidak percaya diri karena batas tingkat dari server.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Terjemahkan
   wwcConfigConversationLibreTranslateToggleSuccess: Berhasil toggled Gratis Translate.
     Muat ulang agar perubahan diterapkan.
   wwcConfigConversationLibreTranslateApiKeySuccess: Kunci API Libre berhasil ditetapkan.
   wwcConfigConversationLibreURLInput: URL saat ini adalah {0}. Silakan masukan URL
     untuk Libre, atau ketik 0 untuk kembali.
-  libreHttpUnknown: 'Galat http tidak dikenal: {0}'
   wwcConfigGUILibreTranslateURLButton: Ubah URL Terjemahkan Gratis
   wwcConfigConnectionFail: Gagal menyambung ke {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Berhasil mengubah nama database MongoDB.
@@ -385,8 +379,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Ubah MongoDB Pelabuhan
   wwcConfigInvalidFatalAsyncTimeout: Set batas waktu tunggu async fatal tidak valid.
     Default ke 10 detik...
-  libreHttp500: Pasangan bahasa input dan output yang Anda pilih tidak didukung. Silakan
-    pilih satu set bahasa yang berbeda!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Terjemahkan
   wwcConfigConversationDeepLTranslateToggleSuccess: Berhasil toggled DeepL Translate.
     Muat ulang agar perubahan diterapkan.
@@ -455,10 +447,6 @@ Messages:
   wwcrTransFail: Memuat ulang WorldwideChat tetapi gagal mengaktifkan penerjemah.
   wwcdCacheCleared: Cache terjemahan telah dihapus.
   wwcdInvalidCmd: Argumen tidak valid!
-  systranHttpUnknown: 'Kesalahan http tidak diketahui: {0}'
-  systranHttp400: Parameter buruk dikirim ke Systran. Mungkin pasangan bahasa yang
-    buruk?
-  systranHttp500: Kesalahan server internal dari titik akhir Systran ({0}).
   wwcInvalidStorageSession: '{0} diaktifkan di konfigurasi Anda, tetapi koneksi tidak
     dibuat. Silakan coba muat ulang untuk memperbaikinya, tetapi silakan hubungi pengembang
     jika sebelumnya Anda menerima pesan koneksi yang berhasil dari {0}.'
@@ -688,4 +676,65 @@ Messages:
   wwcdResetNotifError: Tidak semua data berhasil dihapus. Apakah Anda terhubung ke
     database Anda?
   colorCodeWarning: Menggunakan kode warna dapat memberi Anda hasil yang tidak terduga.
+  wwcAiSystemPromptLoaded: Prompt Sistem AI dimuat.
+  wwcAiSystemPromptBad: Prompt Sistem AI Buruk terdeteksi. Menggunakan default kami...
+  wwcAiSupportedLangsBad: Bahasa yang Didukung AI Buruk terdeteksi. Menggunakan default
+    kami...
+  wwcConfigGUIAISettings: Konfigurasi AI
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: Kunci API ChatGPT berhasil disetel.
+  wwcConfigGUAIPromptButton: Ubah Prompt AI
+  wwcConfigConversationChatGPTURLInput: URL saat ini adalah {0}. Silakan masukkan
+    URL untuk ChatGPT, atau ketik 0 untuk kembali.
+  wwcConfigConversationChatGPTApiKeyInput: Kunci API saat ini adalah {0}. Silakan
+    masukkan kunci API untuk ChatGPT, atau ketik 0 untuk kembali.
+  wwcConfigConversationChatGPTURLSuccess: URL ChatGPT berhasil disetel.
+  wwcConfigGUIChatGPTURLButton: Ubah URL ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Ubah Kunci API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Model ChatGPT berhasil disetel.
+  wwcConfigGUIChatGPTModelButton: Ubah Model ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Alihkan ChatGPT
+  wwcLargeConfigInputSuccess: Masukan besar karakter {0} Anda telah diproses.
+  wwcConfigInstructionsBulkBook: Buka buku yang dijatuhkan untuk melihat nilai saat
+    ini. Tanda tangani buku untuk membuat perubahan pada nilai ini.
+  wwcConfigGUIChatGPTToggleSuccess: Berhasil mengalihkan ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Ubah Prompt Ubah
+  wwcConfigGUIChatGPTPromptButton: Ubah Prompt ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Ubah Bahasa AI yang Didukung
+  wwcConfigConversationAddLang: Masukkan bahasa baru yang ingin Anda tambahkan, atau
+    ketik 0 untuk kembali.
+  wwcConfigConversationAILangDeletionSuccess: Berhasil menghapus bahasa.
+  wwcConfigGUIAILangModify: Ubah Bahasa ({0})
+  wwcConfigGUIAILangDeleteButton: Hapus Bahasa
+  wwcConfigGUIAILangNewButton: Tambahkan Bahasa Baru
+  wwcConfigGUIAIChangeLangs: Ubah Bahasa AI yang Didukung
+  wwcConfigConversationAILangAddSuccess: Berhasil menambahkan bahasa baru ke bahasa
+    yang didukung AI.
+  translatorBadAPIKey: Kunci API buruk! Harap pastikan Anda telah mengetiknya dengan
+    benar.
+  translatorLimitExceeded: Anda telah melampaui kuota untuk layanan terjemahan Anda
+    atau Anda telah dibatasi tarif. Silakan periksa penyedia Anda untuk detail lebih
+    lanjut.
+  translatorServerError: Kesalahan server internal. Silakan coba lagi nanti.
+  translatorForbidden: Akses dilarang! Silakan periksa izin Anda.
+  translatorBadRequest: Permintaan buruk. Silakan periksa masukan Anda dan coba lagi.
+  translatorUnknownError: 'Terjadi kesalahan yang tidak diketahui dengan kode status:
+    {0}.'
+  translatorURLNotFound: URL layanan penerjemah Anda tidak valid.
+  translatorMethodNotAllowed: Layanan terjemahan tidak mendukung metode permintaan
+    ini.
+  translatorNotFound: Sumber terjemahan yang diminta tidak ditemukan.
+  wwcConfigConversationChatGPTModelInput: Model saat ini adalah {0}. Silakan masukkan
+    model untuk ChatGPT, atau ketik 0 untuk kembali.
+  wwcConfigGUIOllamaModelButton: Ubah Model Ollama
+  wwcConfigConversationOllamaURLSuccess: URL ollama berhasil disetel.
+  wwcConfigConversationOllamaModelInput: Model saat ini adalah {0}. Silakan masukkan
+    model untuk Ollama, atau ketik 0 untuk kembali.
+  wwcConfigConversationOllamaURLInput: URL saat ini adalah {0}. Silakan masukkan URL
+    untuk Ollama, atau ketik 0 untuk kembali.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Berhasil mengalihkan Ollama.
+  wwcConfigGUIOllamaURLButton: Ubah URL Ollama
+  wwcConfigConversationOllamaModelSuccess: Model Ollama berhasil diatur.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

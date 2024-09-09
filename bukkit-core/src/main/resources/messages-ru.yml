@@ -338,22 +338,17 @@ Messages:
     новый тайм-аут, или значение ниже, чтобы вернуться.
   wwcConfigConversationFatalAsyncSuccess: Тайм-аут асинхронной задачи установлен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Изменить тайм-аут асинхронной задачи
-  libreHttp400: Неверный запрос отправлен в Libre Translate! Если вы не делаете то,
-    чего не должны делать, вы не должны этого делать. Обратитесь к разработчику!
   wwcConfigGUILibreTranslateApiKeyButton: Изменить ключ API перевода Libre
-  libreHttp403: Отсутствует ключ API Libre Translate, или вас забанили на сервере!
   wwcConfigConversationLibreURLSuccess: URL-адрес Libre успешно установлен.
   wwcConfigConversationLibreTranslateApiKeyInput: Текущий ключ API {0}. Введите ключ
     API для Libre или введите 0, чтобы вернуться назад.
   wwcConfigGUILibreTranslateButton: Libre Перевести
-  libreHttp429: Отсутствие доверия из-за ограничения скорости со стороны сервера.
   wwcConfigGUIToggleLibreTranslateButton: Переключить Libre Перевести
   wwcConfigConversationLibreTranslateToggleSuccess: Перевод Libre успешно переключен.
     Перезагрузите, чтобы изменения вступили в силу.
   wwcConfigConversationLibreTranslateApiKeySuccess: Ключ Libre API успешно установлен.
   wwcConfigConversationLibreURLInput: Текущий URL-адрес {0}. Введите URL-адрес для
     Libre или введите 0, чтобы вернуться назад.
-  libreHttpUnknown: 'Неизвестная ошибка http: {0}'
   wwcConfigGUILibreTranslateURLButton: Изменить URL-адрес перевода Libre
   wwcConfigConnectionFail: Не удалось подключиться к {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Имя базы данных MongoDB успешно изменено.
@@ -392,8 +387,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Изменить порт MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Неверный фатальный асинхронный тайм-аут. По умолчанию
     10 секунд...
-  libreHttp500: Выбранная вами языковая пара ввода и вывода не поддерживается. Выберите
-    другой языковой набор!
   wwcConfigGUIDeepLTranslateButton: Включить перевод DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: Переводчик DeepL успешно включен.
     Перезагрузите, чтобы изменения вступили в силу.
@@ -461,10 +454,6 @@ Messages:
   wwcrTransFail: Перезагрузил WorldwideChat, но не смог включить переводчика.
   wwcdCacheCleared: Кэш переводов был очищен.
   wwcdInvalidCmd: Неверные аргументы!
-  systranHttpUnknown: 'Неизвестная ошибка http: {0}'
-  systranHttp400: Неверные параметры отправлены в Systran. Возможно, это плохая языковая
-    пара?
-  systranHttp500: Внутренняя ошибка сервера в конечной точке Systran ({0}).
   wwcInvalidStorageSession: '{0} включен в вашей конфигурации, но соединение не установлено.
     Попробуйте перезагрузить, чтобы исправить эту проблему, но обратитесь к разработчику,
     если вы ранее получили сообщение об успешном подключении от {0}.'
@@ -704,4 +693,67 @@ Messages:
     данных?
   colorCodeWarning: Использование цветовых кодов может привести к непредсказуемым
     результатам.
+  wwcAiSystemPromptLoaded: Системная подсказка AI загружена.
+  wwcAiSystemPromptBad: Обнаружена неисправная системная подсказка искусственного
+    интеллекта. Используя наше значение по умолчанию...
+  wwcAiSupportedLangsBad: Обнаружены плохие языки, поддерживаемые искусственным интеллектом.
+    Используя наши настройки по умолчанию...
+  wwcConfigGUIAISettings: Конфигурация искусственного интеллекта
+  wwcConfigGUIChatGPTButton: Чат GPT
+  wwcConfigConversationChatGPTApiKeySuccess: Ключ API ChatGPT успешно установлен.
+  wwcConfigGUAIPromptButton: Запрос на изменение ИИ
+  wwcConfigConversationChatGPTURLInput: Текущий URL-адрес — {0}. Введите URL-адрес
+    ChatGPT или введите 0, чтобы вернуться назад.
+  wwcConfigConversationChatGPTApiKeyInput: Текущий ключ API — {0}. Введите ключ API
+    для ChatGPT или введите 0, чтобы вернуться назад.
+  wwcConfigConversationChatGPTURLSuccess: URL-адрес ChatGPT успешно установлен.
+  wwcConfigGUIChatGPTURLButton: Изменить URL-адрес ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Изменить ключ API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Модель ChatGPT успешно установлена.
+  wwcConfigGUIChatGPTModelButton: Изменить модель ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Переключить чат GPT
+  wwcLargeConfigInputSuccess: Ваш большой ввод символов {0} был обработан.
+  wwcConfigInstructionsBulkBook: Откройте выпавшую книгу, чтобы увидеть текущее значение.
+    Подпишите книгу, чтобы изменить это значение.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT успешно переключен.
+  wwcConfigGUIOllamaPromptButton: Подсказка «Изменить команду»
+  wwcConfigGUIChatGPTPromptButton: Изменить приглашение ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Измените поддерживаемые языки искусственного
+    интеллекта
+  wwcConfigConversationAddLang: Введите новый язык, который хотите добавить, или введите
+    0, чтобы вернуться назад.
+  wwcConfigConversationAILangDeletionSuccess: Язык успешно удален.
+  wwcConfigGUIAILangModify: Изменить язык ({0})
+  wwcConfigGUIAILangDeleteButton: Удалить язык
+  wwcConfigGUIAILangNewButton: Добавить новый язык
+  wwcConfigGUIAIChangeLangs: Измените поддерживаемые языки искусственного интеллекта
+  wwcConfigConversationAILangAddSuccess: Успешно добавлен новый язык к языкам, поддерживаемым
+    искусственным интеллектом.
+  translatorBadAPIKey: Неверный ключ API! Пожалуйста, убедитесь, что вы ввели его
+    правильно.
+  translatorLimitExceeded: Вы либо превысили квоту на услуги перевода, либо тариф
+    был ограничен. Для получения более подробной информации обратитесь к поставщику
+    услуг.
+  translatorServerError: Внутренняя ошибка сервера. Пожалуйста, повторите попытку
+    позже.
+  translatorForbidden: Доступ запрещен! Пожалуйста, проверьте свои разрешения.
+  translatorBadRequest: Неверный запрос. Пожалуйста, проверьте введенные данные и
+    попробуйте снова.
+  translatorUnknownError: 'Произошла неизвестная ошибка с кодом состояния: {0}.'
+  translatorURLNotFound: URL-адрес службы переводчика недействителен.
+  translatorMethodNotAllowed: Служба перевода не поддерживает этот метод запроса.
+  translatorNotFound: Запрошенный ресурс перевода не найден.
+  wwcConfigConversationChatGPTModelInput: Текущая модель — {0}. Введите модель для
+    ChatGPT или введите 0, чтобы вернуться назад.
+  wwcConfigGUIOllamaModelButton: Изменить модель Ollama
+  wwcConfigConversationOllamaURLSuccess: URL-адрес Ollama успешно установлен.
+  wwcConfigConversationOllamaModelInput: Текущая модель {0}. Введите модель для Ollama
+    или введите 0, чтобы вернуться назад.
+  wwcConfigConversationOllamaURLInput: В настоящее время используется URL-адрес {0}.
+    Введите URL-адрес Ollama или введите 0, чтобы вернуться назад.
+  wwcConfigGUIOllamaButton: Оллама
+  wwcConfigGUIOllamaToggleSuccess: Успешно переключил Ollama.
+  wwcConfigGUIOllamaURLButton: Изменить URL-адрес Ollama
+  wwcConfigConversationOllamaModelSuccess: Модель Ollama успешно установлена.
+  wwcConfigGUIToggleOllamaButton: Переключить Олламу
 

@@ -336,16 +336,11 @@ Messages:
     jaunu taimautu vai kaut ko zem tā, lai atgrieztos.
   wwcConfigConversationFatalAsyncSuccess: Asinc uzdevumu taimauts iestatīts veiksmīgi.
   wwcConfigGUIFatalAsyncAbortButton: Mainīt Asinc uzdevumu taimautu
-  libreHttp400: Slikts pieprasījums nosūtīts uz Libre Translate! Ja vien jūs darāt
-    kaut ko, kas jums nevajadzētu, jums nevajadzētu saņemt šo. Lūdzu, sazinieties
-    ar izstrādātāju!
   wwcConfigGUILibreTranslateApiKeyButton: Mainīt bezmaksas tulkot API atslēgu
-  libreHttp403: Trūkst Libre Tulkot API Key, vai jums ir aizliegts no servera!
   wwcConfigConversationLibreURLSuccess: Bezmaksas URL iestatīts veiksmīgi.
   wwcConfigConversationLibreTranslateApiKeyInput: Pašreizējā API atslēga ir {0}. Lūdzu,
     ievadiet API atslēgu Libre vai ierakstiet 0, lai atgrieztos.
   wwcConfigGUILibreTranslateButton: Bezmaksas tulkot
-  libreHttp429: Nav uzticības, jo likmes ierobežojums no servera.
   wwcConfigGUIToggleLibreTranslateButton: Pārslēgt bezmaksas tulkot
   wwcConfigConversationLibreTranslateToggleSuccess: Veiksmīgi pārcēlusies Libre Tulkot.
     Pārlādēt, lai izmaiņas stātos spēkā.
@@ -353,7 +348,6 @@ Messages:
     veiksmīgi.
   wwcConfigConversationLibreURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet Libre
     URL vai ierakstiet 0, lai atgrieztos.
-  libreHttpUnknown: 'Nezināma http kļūda: {0}'
   wwcConfigGUILibreTranslateURLButton: Mainīt bezmaksas tulkošanas URL
   wwcConfigConnectionFail: Neizdevās pieslēgties {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Veiksmīgi mainīts MongoDB datubāzes
@@ -393,8 +387,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Mainīt MongoDB portu
   wwcConfigInvalidFatalAsyncTimeout: Nederīga fatāla asinhronā taimauta kopa. Noklusējuma
     neizpilde līdz 10 sekundēm...
-  libreHttp500: Jūsu atlasītais ievades un izvades valodu pāris netiek atbalstīts.
-    Lūdzu, izvēlieties citu valodu komplektu!
   wwcConfigGUIDeepLTranslateButton: Pārslēgt DeepL tulkot
   wwcConfigConversationDeepLTranslateToggleSuccess: Veiksmīgi toggled DeepL tulkot.
     Pārlādēt, lai izmaiņas stātos spēkā.
@@ -462,9 +454,6 @@ Messages:
   wwcrTransFail: Pārlādēja WorldwideChat, bet neizdevās iespējot tulkotāju.
   wwcdCacheCleared: Tulkošanas kešatmiņa tika notīrīta.
   wwcdInvalidCmd: Nederīgi argumenti!
-  systranHttpUnknown: 'Nezināma http kļūda: {0}'
-  systranHttp400: Slikti parametri nosūtīti Systran. Varētu būt slikts valodu pāris?
-  systranHttp500: Iekšējā servera kļūda no Systran galapunkta ({0}).
   wwcInvalidStorageSession: Jūsu konfigurācijā ir iespējots {0}, bet savienojums nav
     izveidots. Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu, sazinieties
     ar izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu no {0}.
@@ -698,4 +687,64 @@ Messages:
   wwcdResetNotifError: Ne visi dati tika veiksmīgi notīrīti. Vai esat izveidojies
     savienojums ar savu datu bāzi?
   colorCodeWarning: Krāsu kodu izmantošana var dot neparedzamus rezultātus.
+  wwcAiSystemPromptLoaded: AI sistēmas uzvedne ielādēta.
+  wwcAiSystemPromptBad: Atklāta slikta AI sistēmas uzvedne. Izmantojot mūsu noklusējumu...
+  wwcAiSupportedLangsBad: Atklātas sliktas AI atbalstītās valodas. Izmantojot mūsu
+    noklusējuma iestatījumus...
+  wwcConfigGUIAISettings: AI konfigurācija
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API atslēga veiksmīgi iestatīta.
+  wwcConfigGUAIPromptButton: Mainīt AI uzvedni
+  wwcConfigConversationChatGPTURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet ChatGPT
+    URL vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationChatGPTApiKeyInput: Pašreizējā API atslēga ir {0}. Lūdzu, ievadiet
+    API atslēgu ChatGPT vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL ir veiksmīgi iestatīts.
+  wwcConfigGUIChatGPTURLButton: Mainīt ChatGPT URL
+  wwcConfigGUIChatGPTAPIKeyButton: Mainīt ChatGPT API atslēgu
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT modelis veiksmīgi iestatīts.
+  wwcConfigGUIChatGPTModelButton: Mainīt ChatGPT modeli
+  wwcConfigGUIToggleChatGPTButton: Pārslēgt ChatGPT
+  wwcLargeConfigInputSuccess: Jūsu lielā {0} rakstzīmju ievade ir apstrādāta.
+  wwcConfigInstructionsBulkBook: Atveriet nomesto grāmatu, lai redzētu pašreizējo
+    vērtību. Parakstiet grāmatu, lai veiktu izmaiņas šajā vērtībā.
+  wwcConfigGUIChatGPTToggleSuccess: Veiksmīgi pārslēgts ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Mainīt paziņojuma uzvedni
+  wwcConfigGUIChatGPTPromptButton: Mainīt ChatGPT uzvedni
+  wwcConfigGUIModifyAILangsSettings: Mainīt atbalstītās AI valodas
+  wwcConfigConversationAddLang: Ievadiet jauno valodu, kuru vēlaties pievienot, vai
+    ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationAILangDeletionSuccess: Veiksmīgi izdzēsta valodu.
+  wwcConfigGUIAILangModify: Mainīt valodu ({0})
+  wwcConfigGUIAILangDeleteButton: Dzēst valodu
+  wwcConfigGUIAILangNewButton: Pievienot jaunu valodu
+  wwcConfigGUIAIChangeLangs: Mainīt atbalstītās AI valodas
+  wwcConfigConversationAILangAddSuccess: Veiksmīgi pievienoja jaunu valodu AI atbalstītajām
+    valodām.
+  translatorBadAPIKey: Slikta API atslēga! Lūdzu, pārliecinieties, vai esat to pareizi
+    ierakstījis.
+  translatorLimitExceeded: Vai nu esat pārsniedzis tulkošanas pakalpojuma kvotu, vai
+    arī jums ir ierobežota likme. Lūdzu, pārbaudiet savu pakalpojumu sniedzēju, lai
+    iegūtu sīkāku informāciju.
+  translatorServerError: Iekšējā servera kļūda. Lūdzu, mēģiniet vēlreiz vēlāk.
+  translatorForbidden: Piekļuve ir aizliegta! Lūdzu, pārbaudiet savas atļaujas.
+  translatorBadRequest: Slikts pieprasījums. Lūdzu, pārbaudiet savu ievadi un mēģiniet
+    vēlreiz.
+  translatorUnknownError: 'Ar statusa kodu radās nezināma kļūda: {0}.'
+  translatorURLNotFound: Jūsu tulkotāja pakalpojuma URL nav derīgs.
+  translatorMethodNotAllowed: Tulkošanas pakalpojums neatbalsta šo pieprasījuma metodi.
+  translatorNotFound: Pieprasītais tulkošanas resurss netika atrasts.
+  wwcConfigConversationChatGPTModelInput: Pašreizējais modelis ir {0}. Lūdzu, ievadiet
+    ChatGPT modeli vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIOllamaModelButton: Mainīt Ollama modeli
+  wwcConfigConversationOllamaURLSuccess: Ollama URL ir veiksmīgi iestatīts.
+  wwcConfigConversationOllamaModelInput: Pašreizējais modelis ir {0}. Lūdzu, ievadiet
+    Ollama modeli vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationOllamaURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet Ollama
+    URL vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Veiksmīgi pārslēgts Ollama.
+  wwcConfigGUIOllamaURLButton: Mainīt adreses URL
+  wwcConfigConversationOllamaModelSuccess: Ollama modeļa komplekts veiksmīgi.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

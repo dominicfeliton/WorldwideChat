@@ -307,23 +307,18 @@ Messages:
     هي {0} ثانية. اكتب أي شيء فوق 7 لتعيين مهلة جديدة، أو أي شيء أسفله للعودة.
   wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
   wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة
-  libreHttp400: تم إرسال طلب سيء إلى Libre Translate! ما لم تكن تفعل شيئًا لا يجب
-    عليك فعله، فلا يجب أن تحصل عليه. يرجى الاتصال بالمطور!
   wwcConfigGUILibreTranslateApiKeyButton: تغيير مفتاح واجهة برمجة التطبيقات لترجمة
     Libre
-  libreHttp403: مفتاح واجهة برمجة تطبيقات Libre Translate مفقود، أو تم حظرك من الخادم!
   wwcConfigConversationLibreURLSuccess: تم تعيين عنوان URL Libre بنجاح.
   wwcConfigConversationLibreTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء
     إدخال مفتاح API لـ Libre، أو اكتب 0 للرجوع إليه.
   wwcConfigGUILibreTranslateButton: ترجمة ليبر
-  libreHttp429: عدم الثقة بسبب حد المعدل من الخادم.
   wwcConfigGUIToggleLibreTranslateButton: تبديل ليبر ترجمة
   wwcConfigConversationLibreTranslateToggleSuccess: تم تبديل ترجمة Libre بنجاح. أعد
     تحميل التغييرات لتصبح نافذة المفعول.
   wwcConfigConversationLibreTranslateApiKeySuccess: تم تعيين مفتاح Libre API بنجاح.
   wwcConfigConversationLibreURLInput: عنوان URL الحالي هو {0}. الرجاء إدخال عنوان
     URL لـ Libre، أو اكتب 0 للرجوع إليه.
-  libreHttpUnknown: 'خطأ http غير معروف: {0}'
   wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre
   wwcConfigConnectionFail: فشل الاتصال بـ {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات MongoDB
@@ -360,8 +355,6 @@ Messages:
   wwcConfigGUIMongoPortButton: تغيير منفذ MongoDB
   wwcConfigInvalidFatalAsyncTimeout: تم تعيين مهلة غير متزامنة قاتلة غير صالحة. الإعداد
     الافتراضي هو 10 ثوانٍ...
-  libreHttp500: زوج لغات الإدخال والإخراج المحدد غير مدعوم. يرجى اختيار مجموعة لغات
-    مختلفة!
   wwcConfigGUIDeepLTranslateButton: تبديل ترجمة DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: تم تبديل ترجمة DeepL بنجاح. أعد
     التحميل لتصبح التغييرات نافذة المفعول.
@@ -428,9 +421,6 @@ Messages:
   wwcrTransFail: تم إعادة تحميل WorldwideChat ولكنه فشل في تمكين المترجم.
   wwcdCacheCleared: تم مسح ذاكرة التخزين المؤقت للترجمة.
   wwcdInvalidCmd: حجج غير صالحة!
-  systranHttpUnknown: 'خطأ http غير معروف: {0}'
-  systranHttp400: تم إرسال المعلمات السيئة إلى Systran. قد يكون زوجًا لغويًا سيئًا؟
-  systranHttp500: خطأ خادم داخلي من نقطة نهاية النظام ({0}).
   wwcInvalidStorageSession: تم تمكين {0} في التكوين الخاص بك، ولكن لم يتم إنشاء اتصال.
     يرجى محاولة إعادة التحميل لإصلاح هذا، ولكن يرجى الاتصال بالمطور إذا كنت قد تلقيت
     سابقًا رسالة اتصال ناجحة من {0}.
@@ -648,4 +638,63 @@ Messages:
   wwcdResetNotifError: لم يتم مسح جميع البيانات بنجاح. هل أنت متصل بقاعدة البيانات
     الخاصة بك؟
   colorCodeWarning: قد يمنحك استخدام رموز الألوان نتائج غير متوقعة.
+  wwcAiSystemPromptLoaded: تم تحميل موجه نظام AI.
+  wwcAiSystemPromptBad: تم اكتشاف موجه نظام AI سيئ. باستخدام الإعداد الافتراضي الخاص
+    بنا...
+  wwcAiSupportedLangsBad: تم اكتشاف لغات سيئة مدعومة بالذكاء الاصطناعي. باستخدام الإعدادات
+    الافتراضية الخاصة بنا...
+  wwcConfigGUIAISettings: تكوين الذكاء الاصطناعي
+  wwcConfigGUIChatGPTButton: الدردشة GPT
+  wwcConfigConversationChatGPTApiKeySuccess: تم تعيين مفتاح واجهة برمجة تطبيقات ChatGPT
+    بنجاح.
+  wwcConfigGUAIPromptButton: تغيير موجه الذكاء الاصطناعي
+  wwcConfigConversationChatGPTURLInput: عنوان URL الحالي هو {0}. يرجى إدخال عنوان
+    URL لـ ChatGPT، أو اكتب 0 للعودة.
+  wwcConfigConversationChatGPTApiKeyInput: مفتاح API الحالي هو {0}. يرجى إدخال مفتاح
+    API لـ ChatGPT، أو اكتب 0 للعودة.
+  wwcConfigConversationChatGPTURLSuccess: تم تعيين عنوان URL الخاص بـ ChatGPT بنجاح.
+  wwcConfigGUIChatGPTURLButton: تغيير عنوان URL الخاص بـ ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: تغيير مفتاح واجهة برمجة تطبيقات ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: تم تعيين نموذج ChatGPT بنجاح.
+  wwcConfigGUIChatGPTModelButton: تغيير نموذج ChatGPT
+  wwcConfigGUIToggleChatGPTButton: تبديل الدردشة GPT
+  wwcLargeConfigInputSuccess: تمت معالجة إدخالك الكبير المكون من أحرف {0}.
+  wwcConfigInstructionsBulkBook: افتح الكتاب المسقط لرؤية القيمة الحالية. قم بتوقيع
+    الكتاب لإجراء تغييرات على هذه القيمة.
+  wwcConfigGUIChatGPTToggleSuccess: تم تبديل ChatGPT بنجاح.
+  wwcConfigGUIOllamaPromptButton: تغيير موجه Ollama
+  wwcConfigGUIChatGPTPromptButton: تغيير موجه ChatGPT
+  wwcConfigGUIModifyAILangsSettings: تعديل لغات الذكاء الاصطناعي المدعومة
+  wwcConfigConversationAddLang: أدخل اللغة الجديدة التي ترغب في إضافتها، أو اكتب 0
+    للعودة.
+  wwcConfigConversationAILangDeletionSuccess: تم حذف اللغة بنجاح.
+  wwcConfigGUIAILangModify: تعديل اللغة ({0})
+  wwcConfigGUIAILangDeleteButton: حذف اللغة
+  wwcConfigGUIAILangNewButton: إضافة لغة جديدة
+  wwcConfigGUIAIChangeLangs: تعديل لغات الذكاء الاصطناعي المدعومة
+  wwcConfigConversationAILangAddSuccess: تمت إضافة لغة جديدة بنجاح إلى اللغات المدعومة
+    بالذكاء الاصطناعي.
+  translatorBadAPIKey: مفتاح API غير صالح! يرجى التأكد من كتابتها بشكل صحيح.
+  translatorLimitExceeded: لقد تجاوزت الحصة المخصصة لخدمة الترجمة الخاصة بك أو تم
+    تحديد تقييمك. يرجى التحقق من مزود الخدمة الخاص بك لمزيد من التفاصيل.
+  translatorServerError: خطأ خادم داخلي. يرجى المحاولة مرة أخرى لاحقًا.
+  translatorForbidden: الوصول ممنوع! يرجى التحقق من الأذونات الخاصة بك.
+  translatorBadRequest: طلب سيء. يرجى التحقق من الإدخال والمحاولة مرة أخرى.
+  translatorUnknownError: 'حدث خطأ غير معروف مع رمز الحالة: {0}.'
+  translatorURLNotFound: عنوان URL الخاص بخدمة المترجم غير صالح.
+  translatorMethodNotAllowed: لا تدعم خدمة الترجمة طريقة الطلب هذه.
+  translatorNotFound: لم يتم العثور على مورد الترجمة المطلوب.
+  wwcConfigConversationChatGPTModelInput: النموذج الحالي هو {0}. يرجى إدخال نموذج
+    لـ ChatGPT، أو اكتب 0 للعودة.
+  wwcConfigGUIOllamaModelButton: تغيير نموذج أولما
+  wwcConfigConversationOllamaURLSuccess: تم تعيين عنوان URL الخاص بـ Ollama بنجاح.
+  wwcConfigConversationOllamaModelInput: النموذج الحالي هو {0}. يرجى إدخال نموذج لـ
+    Ollama، أو اكتب 0 للعودة.
+  wwcConfigConversationOllamaURLInput: عنوان URL الحالي هو {0}. يرجى إدخال عنوان URL
+    لـ Ollama، أو اكتب 0 للعودة.
+  wwcConfigGUIOllamaButton: أولاما
+  wwcConfigGUIOllamaToggleSuccess: تم تبديل Ollama بنجاح.
+  wwcConfigGUIOllamaURLButton: تغيير عنوان URL الخاص بـ Ollama
+  wwcConfigConversationOllamaModelSuccess: تم ضبط نموذج Ollama بنجاح.
+  wwcConfigGUIToggleOllamaButton: تبديل أوباما
 

@@ -5,11 +5,12 @@ import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.Map;
 import java.util.Set;
@@ -23,6 +24,7 @@ public class WWCDebug extends BasicCommand {
     private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
     private YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+
     public WWCDebug(CommandSender sender, Command command, String label, String[] args) {
         super(sender, command, label, args);
     }
@@ -38,11 +40,11 @@ public class WWCDebug extends BasicCommand {
         if (args.length == 1) {
             switch (args[0].toLowerCase()) {
                 case "debugenv":
-                    refs.sendFancyMsg("wwcdDebugEnvWarn", new String[] {"&6/wwcd debugenv enable"}, "&e", sender);
+                    refs.sendMsg("wwcdDebugEnvWarn", "&6/wwcd debugenv enable", "&e", sender);
                     return true;
                 case "reset":
                     // reset
-                    refs.sendFancyMsg("wwcdResetWarn", new String[] {"&6/wwcd reset confirm"}, "&c", sender);
+                    refs.sendMsg("wwcdResetWarn", "&6/wwcd reset confirm", "&c", sender);
                     return true;
                 default:
                     break;
@@ -53,13 +55,13 @@ public class WWCDebug extends BasicCommand {
                 if (args[1].equalsIgnoreCase("enable")) {
                     mainConfig.set("General.enableDebugMode", true);
                     mainConfig.set("Translator.testModeTranslator", true);
-                    refs.sendFancyMsg("wwcdDebugEnvEnabled", new String[]{}, "&a", sender);
+                    refs.sendMsg("wwcdDebugEnvEnabled", "", "&a", sender);
                     main.reload(sender, true);
                     return true;
                 } else if (args[1].equalsIgnoreCase("disable")) {
                     mainConfig.set("General.enableDebugMode", false);
                     mainConfig.set("Translator.testModeTranslator", false);
-                    refs.sendFancyMsg("wwcdDebugEnvDisabled", new String[]{}, "&a", sender);
+                    refs.sendMsg("wwcdDebugEnvDisabled", "", "&a", sender);
                     main.reload(sender, true);
                     return true;
                 }
@@ -67,14 +69,14 @@ public class WWCDebug extends BasicCommand {
             } else if (args[0].equalsIgnoreCase("reset")) {
                 if (args[1].equalsIgnoreCase("confirm")) {
                     // Begin Reset
-                    Runnable run = new BukkitRunnable() {
+                    GenericRunnable run = new GenericRunnable() {
                         @Override
-                        public void run() {
+                        protected void execute() {
                             try {
-                                main.getConfigManager().fullDataWipe();
-                                refs.sendFancyMsg("wwcdResetNotif", new String[]{}, "&a", sender);
+                                DataStorageUtils.fullDataWipe();
+                                refs.sendMsg("wwcdResetNotif", "", "&a", sender);
                             } catch (Exception e) {
-                                refs.sendFancyMsg("wwcdResetNotifError", new String[]{}, "&c", sender);
+                                refs.sendMsg("wwcdResetNotifError", "", "&c", sender);
                             }
 
                             // Reload on main thread
@@ -82,9 +84,9 @@ public class WWCDebug extends BasicCommand {
                             main.getCache().cleanUp();
                             main.getActiveTranslators().clear();
                             main.getPlayerRecords().clear();
-                            BukkitRunnable reload = new BukkitRunnable() {
+                            GenericRunnable reload = new GenericRunnable() {
                                 @Override
-                                public void run() {
+                                protected void execute() {
                                     main.reload(sender, true);
                                 }
                             };
@@ -99,7 +101,7 @@ public class WWCDebug extends BasicCommand {
 
         // Requires valid settings
         if (isInvalid) {
-            refs.sendFancyMsg("wwcdDebugBadState", new String[]{}, "&e", sender);
+            refs.sendMsg("wwcdDebugBadState", "", "&e", sender);
             return true;
         }
 
@@ -108,21 +110,21 @@ public class WWCDebug extends BasicCommand {
                 case "checkdb":
                     YamlConfiguration conf = main.getConfigManager().getMainConfig();
                     if (!main.isSQLConnValid(true) && !main.isPostgresConnValid(true)) {
-                        refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
+                        refs.sendMsg("wwcdSQLAllSet", "", "&a", sender);
                         return true;
                     }
 
                     // Preserve original debug val
                     boolean debugBool = conf.getBoolean("General.enableDebugMode");
 
-                    BukkitRunnable run = new BukkitRunnable() {
+                    GenericRunnable run = new GenericRunnable() {
                         @Override
-                        public void run() {
+                        protected void execute() {
                             conf.set("General.enableDebugMode", true);
                             if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
-                                refs.sendFancyMsg("wwcdOutdatedSQLStruct", new String[] {}, "&e", sender);
+                                refs.sendMsg("wwcdOutdatedSQLStruct", "", "&e", sender);
                             } else {
-                                refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
+                                refs.sendMsg("wwcdSQLAllSet", "", "&a", sender);
                             }
                             conf.set("General.enableDebugMode", debugBool);
                         }
@@ -132,7 +134,7 @@ public class WWCDebug extends BasicCommand {
                 case "cache":
                     // print cache
                     Set<Map.Entry<CachedTranslation, String>> cache = main.getCache().asMap().entrySet();
-                    refs.sendFancyMsg("wwcdCacheSize", new String[] {"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
+                    refs.sendMsg("wwcdCacheSize", new String[]{"&6" + cache.size(), "&6" + mainConfig.getInt("Translator.translatorCacheSize")}, sender);
                     int count = 1;
                     for (Map.Entry<CachedTranslation, String> eaEntry : main.getCache().asMap().entrySet()) {
                         if (count >= 100) {
@@ -141,22 +143,22 @@ public class WWCDebug extends BasicCommand {
                         }
 
                         CachedTranslation obj = eaEntry.getKey();
-                        refs.sendFancyMsg("wwcdCacheTerm", new String[] {"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
+                        refs.sendMsg("wwcdCacheTerm", new String[]{"&7" + count, "&6" + obj.getInputLang(), "&6" + obj.getOutputLang(), "&6" + obj.getInputPhrase(), "&6" + eaEntry.getValue()}, sender);
                         count++;
                     }
                     return true;
                 case "save":
                     // force save
-                    Runnable save = new BukkitRunnable() {
+                    GenericRunnable save = new GenericRunnable() {
                         @Override
-                        public void run() {
+                        protected void execute() {
                             // Preserve original debug val
                             YamlConfiguration conf = main.getConfigManager().getMainConfig();
                             boolean debugBool = conf.getBoolean("General.enableDebugMode");
 
                             conf.set("General.enableDebugMode", true);
                             if (sender instanceof Player) {
-                                new SyncUserData((Player)sender).run();
+                                new SyncUserData((Player) sender).run();
                             } else {
                                 new SyncUserData().run();
                             }
@@ -176,7 +178,7 @@ public class WWCDebug extends BasicCommand {
                 if (args[1].equalsIgnoreCase("clear")) {
                     main.getCache().invalidateAll();
                     main.getCache().cleanUp();
-                    refs.sendFancyMsg("wwcdCacheCleared", new String[]{}, "&a", sender);
+                    refs.sendMsg("wwcdCacheCleared", "", "&a", sender);
                     return true;
                 }
                 return invalidCmd(sender);
@@ -188,7 +190,7 @@ public class WWCDebug extends BasicCommand {
     }
 
     private boolean invalidCmd(CommandSender sender) {
-        refs.sendFancyMsg("wwcdInvalidCmd", "", "&c", sender);
+        refs.sendMsg("wwcdInvalidCmd", "", "&c", sender);
         return false;
     }
 }

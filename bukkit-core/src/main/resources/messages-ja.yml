@@ -264,19 +264,15 @@ Messages:
   wwcConfigConversationFatalAsyncAbort: すべての非同期タスクを中止する現在のタイムアウトは {0} 秒です。7 より大きい値を入力すると新しいタイムアウトが設定され、それより小さい値を入力すると戻ります。
   wwcConfigConversationFatalAsyncSuccess: 非同期タスクのタイムアウトが正常に設定されました。
   wwcConfigGUIFatalAsyncAbortButton: 非同期タスクタイムアウトの変更
-  libreHttp400: 不正なリクエストがLibre Translateに送信されました！やるべきでないことをしているのでなければ、これを得てはいけない。開発者に連絡してください！
   wwcConfigGUILibreTranslateApiKeyButton: リブレ翻訳 API キーを変更
-  libreHttp403: Libre Translate APIキーがないか、サーバーから禁止されています！
   wwcConfigConversationLibreURLSuccess: Libre URL が正常に設定されました。
   wwcConfigConversationLibreTranslateApiKeyInput: 現在の API キーは {0} です。Libre の API キーを入力するか、0
     を入力して戻ってください。
   wwcConfigGUILibreTranslateButton: リブレ翻訳
-  libreHttp429: サーバーからのレート制限のため、信頼性がありません。
   wwcConfigGUIToggleLibreTranslateButton: リブレ翻訳のトグル
   wwcConfigConversationLibreTranslateToggleSuccess: リブレ翻訳を正常に切り替えました。リロードして変更を有効にします。
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API キーが正常に設定されました。
   wwcConfigConversationLibreURLInput: 現在の URL は {0} です。Libre の URL を入力するか、0 を入力して戻ってください。
-  libreHttpUnknown: '不明な http エラー: {0}'
   wwcConfigGUILibreTranslateURLButton: リブレ翻訳 URL を変更
   wwcConfigConnectionFail: '{0} に接続できませんでした。'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB データベース名を正常に変更しました。
@@ -307,7 +303,6 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: オプションの引数は正常にクリアされました。
   wwcConfigGUIMongoPortButton: MongoDB ポートを変更
   wwcConfigInvalidFatalAsyncTimeout: 致命的な非同期タイムアウトセットが無効です。デフォルトは 10 秒です...
-  libreHttp500: 選択した入出力言語ペアはサポートされていません。別の言語セットを選択してください!
   wwcConfigGUIDeepLTranslateButton: DeepL 翻訳を切り替え
   wwcConfigConversationDeepLTranslateToggleSuccess: DeepL翻訳が正常に切り替わりました。リロードして変更を有効にします。
   wwcConfigGUIDeepLTranslateApiKeyButton: DeepL翻訳APIキーを変更
@@ -365,9 +360,6 @@ Messages:
   wwcrTransFail: WorldwideChatをリロードしましたが、トランスレータを有効にできませんでした。
   wwcdCacheCleared: 翻訳キャッシュがクリアされました。
   wwcdInvalidCmd: 引数が無効です!
-  systranHttpUnknown: 不明な HTTP エラー:{0}
-  systranHttp400: Systran に不正なパラメータが送信されました。言語ペアが間違っている可能性はありますか?
-  systranHttp500: Systran エンドポイント ({0}) からの内部サーバーエラー。
   wwcInvalidStorageSession: '{0} は設定で有効になっていますが、接続は確立されていません。これを修正するにはリロードを試みてください。ただし、以前に
     {0} から正常に接続されたというメッセージを受け取っている場合は、開発者に連絡してください。'
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL データベース名は正常に変更されました。
@@ -532,4 +524,52 @@ Messages:
   wwcdResetNotif: ワールドワイドチャットがリセットされました。リロード中...
   wwcdResetNotifError: すべてのデータが正常に消去されたわけではありません。データベースに接続していますか?
   colorCodeWarning: カラーコードを使用すると、予期しない結果になることがあります。
+  wwcAiSystemPromptLoaded: AI システムプロンプトが読み込まれました。
+  wwcAiSystemPromptBad: 不正な AI システムプロンプトが検出されました。デフォルトを使っています...
+  wwcAiSupportedLangsBad: AI がサポートする不適切な言語が検出されました。デフォルトを使っています...
+  wwcConfigGUIAISettings: AI コンフィギュレーション
+  wwcConfigGUIChatGPTButton: GPT チャット
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API キーが正常に設定されました。
+  wwcConfigGUAIPromptButton: AI プロンプトを変更
+  wwcConfigConversationChatGPTURLInput: 現在の URL は {0} です。ChatGPT の URL を入力するか、0 を入力して戻ってください。
+  wwcConfigConversationChatGPTApiKeyInput: 現在の API キーは {0} です。ChatGPT の API キーを入力するか、0
+    を入力して戻ってください。
+  wwcConfigConversationChatGPTURLSuccess: チャット GPT URL が正常に設定されました。
+  wwcConfigGUIChatGPTURLButton: チャット GPT の URL を変更
+  wwcConfigGUIChatGPTAPIKeyButton: チャットGPT API キーを変更
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT モデルが正常に設定されました。
+  wwcConfigGUIChatGPTModelButton: チャット GPT モデルの変更
+  wwcConfigGUIToggleChatGPTButton: チャット GPT の切り替え
+  wwcLargeConfigInputSuccess: '{0} 文字の大量入力が処理されました。'
+  wwcConfigInstructionsBulkBook: ドロップした本を開いて、現在の値を確認します。本に署名してこの値を変更してください。
+  wwcConfigGUIChatGPTToggleSuccess: チャット GPT が正常に切り替わりました。
+  wwcConfigGUIOllamaPromptButton: Ollama プロンプトを変更
+  wwcConfigGUIChatGPTPromptButton: チャット GPT プロンプトの変更
+  wwcConfigGUIModifyAILangsSettings: サポートされている AI 言語の変更
+  wwcConfigConversationAddLang: 追加したい新しい言語を入力するか、0 を入力して戻ってください。
+  wwcConfigConversationAILangDeletionSuccess: 言語は正常に削除されました。
+  wwcConfigGUIAILangModify: 言語を修正 ({0})
+  wwcConfigGUIAILangDeleteButton: 言語を削除
+  wwcConfigGUIAILangNewButton: 新しい言語を追加
+  wwcConfigGUIAIChangeLangs: サポートされている AI 言語の変更
+  wwcConfigConversationAILangAddSuccess: AI がサポートする言語に新しい言語が正常に追加されました。
+  translatorBadAPIKey: API キーが正しくありません!正しく入力したか確認してください。
+  translatorLimitExceeded: 翻訳サービスのクォータを超えているか、レート制限がかけられています。詳細については、ご利用のプロバイダにお問い合わせください。
+  translatorServerError: 内部サーバーエラーです。後でもう一度試してください。
+  translatorForbidden: アクセスは禁止されています！権限を確認してください。
+  translatorBadRequest: リクエストが不正です。入力内容を確認して、もう一度試してください。
+  translatorUnknownError: ステータスコード {0} で不明なエラーが発生しました。
+  translatorURLNotFound: 翻訳者サービス URL が無効です。
+  translatorMethodNotAllowed: 翻訳サービスはこのリクエスト方法をサポートしていません。
+  translatorNotFound: 要求された翻訳リソースが見つかりませんでした。
+  wwcConfigConversationChatGPTModelInput: 現在のモデルは {0} です。ChatGPT のモデルを入力するか、0 を入力して戻ってください。
+  wwcConfigGUIOllamaModelButton: Ollama モデルを変更
+  wwcConfigConversationOllamaURLSuccess: オラマ URL が正常に設定されました。
+  wwcConfigConversationOllamaModelInput: 現在のモデルは {0} です。Ollama のモデルを入力するか、0 を入力して戻ってください。
+  wwcConfigConversationOllamaURLInput: 現在の URL は {0} です。Ollama の URL を入力するか、0 を入力して戻ってください。
+  wwcConfigGUIOllamaButton: オラマ
+  wwcConfigGUIOllamaToggleSuccess: Ollamaが正常に切り替わりました。
+  wwcConfigGUIOllamaURLButton: オラマ URL を変更
+  wwcConfigConversationOllamaModelSuccess: Ollama モデルが正常に設定されました。
+  wwcConfigGUIToggleOllamaButton: トグルオラーマ
 

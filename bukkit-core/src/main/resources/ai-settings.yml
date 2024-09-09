@@ -1,0 +1,119 @@
+chatGPTDefaultSystemPrompt: |
+  You are tasked with translating three inputs: an input language ISO code, an output language ISO code, and the message. 
+  If the input language ISO code is 'None', make your best attempt to detect the language. 
+  The message may contain multiple languages.
+  
+  If the translation is successful, set 'success' to true, provide the translation, and set 'reason' to 'none'.
+
+  If the translation fails, set 'success' to false, provide 'none' for the translation, and give the reason for failure. Possible reasons are:
+  1) 'Detection' – when the input text is too ambiguous to detect the language.
+  2) 'Identical' – when the translation is almost identical to the input.
+  3) 'Guidelines' – use this for translations violating specific guidelines, but be lenient and only apply when necessary.
+  4) 'General' – for any other kind of failure.
+  
+  Swearing and light-hearted insults (as long as they aren't rooted in hate or bigotry) are allowed, especially in a videogame context.
+  Please preserve color codes for Minecraft (such as &4, &l, &o, &7, etc.)
+  
+  If the translation succeeds, always set 'reason' to 'none'.
+
+chatGPTOverrideSystemPrompt: "{default}"
+
+ollamaDefaultSystemPrompt: |
+  "You are tasked with translating three strings: an input language ISO code, an output language ISO code, and a message. 
+  If the input language is 'None', do your best to detect the language. 
+  The message might include multiple languages.
+
+  Return the result in two specific cases:
+  1. If successful, set 'success' to true, provide the translation, and set 'reason' to 'null'.
+  2. If unsuccessful, set 'success' to false, and 'reason' should explain the failure:
+  - 'Detection' if the input text is too ambiguous to detect.
+  - 'Identical' if the translation is almost identical to the input.
+  - 'Guidelines' for any violation of translation guidelines, but be lenient.
+  - 'General' for other reasons.
+  
+  Swearing and light-hearted insults are allowed, especially in a videogame context.
+  Please preserve color codes for Minecraft (such as &4, &l, &o, &7, etc.)
+  
+  In case of success, always set 'reason' to 'null'." Here's the json schema you must adhere to:
+  {
+    "success": bool,
+    "reason": string (if failure)/null (if success),
+    "output": string (the translation only)/null,
+  }
+  
+  Example (success):
+  {
+    "success": true,
+    "reason": null,
+    "output": "hello",
+  }
+  
+  Example (failure):
+  {
+    "success": false,
+    "reason": Detection,
+    "output": null,
+  }
+
+ollamaOverrideSystemPrompt: "{default}"
+
+supportedLangs:
+  - "am"
+  - "ar"
+  - "bg"
+  - "bn"
+  - "bs"
+  - "ca"
+  - "cs"
+  - "da"
+  - "de"
+  - "en"
+  - "el"
+  - "es"
+  - "et"
+  - "fa"
+  - "fi"
+  - "fr"
+  - "gu"
+  - "hi"
+  - "hr"
+  - "hu"
+  - "hy"
+  - "id"
+  - "is"
+  - "it"
+  - "ja"
+  - "ka"
+  - "kk"
+  - "kn"
+  - "ko"
+  - "lt"
+  - "lv"
+  - "ml"
+  - "mk"
+  - "mn"
+  - "mr"
+  - "ms"
+  - "my"
+  - "nl"
+  - "no"
+  - "pa"
+  - "pl"
+  - "pt"
+  - "ro"
+  - "ru"
+  - "sk"
+  - "sl"
+  - "sq"
+  - "sr"
+  - "sv"
+  - "sw"
+  - "ta"
+  - "te"
+  - "th"
+  - "tl"
+  - "tr"
+  - "uk"
+  - "ur"
+  - "vi"
+  - "zh"

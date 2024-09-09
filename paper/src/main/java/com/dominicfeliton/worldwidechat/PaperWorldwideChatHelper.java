@@ -3,7 +3,6 @@ package com.dominicfeliton.worldwidechat;
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import io.papermc.paper.event.player.AsyncChatEvent;
-import org.bukkit.ChatColor;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
@@ -67,10 +66,11 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
         pluginManager.registerEvents(translate, main);
         listenerQueue.add(translate);
 
-        InventoryListener inv = new InventoryListener();
+        ConfigListener inv = new ConfigListener();
         pluginManager.registerEvents(inv, main);
         listenerQueue.add(inv);
-        main.getLogger().info(ChatColor.LIGHT_PURPLE
-                + refs.getMsg("wwcListenersInitialized", null));
+        main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
+                "",
+                "&d"));
     }
 }

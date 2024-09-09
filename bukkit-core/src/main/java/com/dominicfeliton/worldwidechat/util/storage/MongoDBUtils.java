@@ -16,75 +16,75 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class MongoDBUtils {
-	private String host;
-	private String port;
-	private String databaseName;
-	private String username;
-	private String password;
-	private List<String> argList;
+    private String host;
+    private String port;
+    private String databaseName;
+    private String username;
+    private String password;
+    private List<String> argList;
 
-	private MongoClient client;
+    private MongoClient client;
 
-	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private WorldwideChat main = WorldwideChat.instance;
+    private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	public MongoDBUtils(String host, String port, String databaseName, String username, String password, List<String> argList) {
-		this.host = host;
-		this.port = port;
-		this.databaseName = databaseName;
-		this.username = username;
-		this.password = password;
-		this.argList = argList;
-	}
-	
-	public void connect() throws MongoException {
-		/* Check */
-		if (client != null) {
-			refs.debugMsg("Already connected???");
-			return;
-		}
+    public MongoDBUtils(String host, String port, String databaseName, String username, String password, List<String> argList) {
+        this.host = host;
+        this.port = port;
+        this.databaseName = databaseName;
+        this.username = username;
+        this.password = password;
+        this.argList = argList;
+    }
 
-		/* Setup valid mongoDB URL */
-		String connectionString = "";
-		if (argList != null && !argList.isEmpty()) {
-			String args = argList.stream()
-					.collect(Collectors.joining("&"));
+    public void connect() throws MongoException {
+        /* Check */
+        if (client != null) {
+            refs.debugMsg("Already connected???");
+            return;
+        }
 
-			connectionString = String.format("mongodb://%s:%s@%s:%s/?%s",
-					username, password, host, port, args);
-		} else {
-			connectionString = String.format("mongodb://%s:%s@%s:%s",
-					username, password, host, port);
-		}
+        /* Setup valid mongoDB URL */
+        String connectionString = "";
+        if (argList != null && !argList.isEmpty()) {
+            String args = argList.stream()
+                    .collect(Collectors.joining("&"));
 
-		MongoClientSettings settings = MongoClientSettings.builder()
-				.applyConnectionString(new ConnectionString(connectionString))
-				.build();
+            connectionString = String.format("mongodb://%s:%s@%s:%s/?%s",
+                    username, password, host, port, args);
+        } else {
+            connectionString = String.format("mongodb://%s:%s@%s:%s",
+                    username, password, host, port);
+        }
 
-		MongoClient testClient = MongoClients.create(settings);
-		
-		/* Attempt connection, test with ping command */
-		MongoDatabase database = testClient.getDatabase(databaseName);
-		Bson command = new BsonDocument("ping", new BsonInt64(1));
+        MongoClientSettings settings = MongoClientSettings.builder()
+                .applyConnectionString(new ConnectionString(connectionString))
+                .build();
+
+        MongoClient testClient = MongoClients.create(settings);
+
+        /* Attempt connection, test with ping command */
+        MongoDatabase database = testClient.getDatabase(databaseName);
+        Bson command = new BsonDocument("ping", new BsonInt64(1));
         database.runCommand(command);
-		
+
         /* Set client */
-		client = testClient;
-	}
+        client = testClient;
+    }
 
-	public void disconnect() {
-		if (isConnected()) {
-			client.close();
-			client = null;
-		}
-	}
+    public void disconnect() {
+        if (isConnected()) {
+            client.close();
+            client = null;
+        }
+    }
 
-	public boolean isConnected() {
-		return client != null;
-	}
+    public boolean isConnected() {
+        return client != null;
+    }
 
-	public MongoDatabase getActiveDatabase() {
-		return client.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
-	}
-	
+    public MongoDatabase getActiveDatabase() {
+        return client.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
+    }
+
 }

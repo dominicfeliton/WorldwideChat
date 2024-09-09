@@ -330,22 +330,17 @@ Messages:
     არაფერი ქვემოთ დაბრუნებას.
   wwcConfigConversationFatalAsyncSuccess: Async ამოცანა შეყოვნება მითითებული წარმატებით.
   wwcConfigGUIFatalAsyncAbortButton: ასინკის სამუშაო დროის შეცვლა
-  libreHttp400: ცუდი მოთხოვნა გაიგზავნა Libre Translate! თუ არ აკეთებთ იმას, რაც არ
-    უნდა, არ უნდა მიიღოთ ეს. გთხოვთ, დაუკავშირდეთ დეველოპერს!
   wwcConfigGUILibreTranslateApiKeyButton: შეცვლა უფასო თარგმნის API გასაღები
-  libreHttp403: დაკარგული უფასო Translate API Key, ან თქვენ აკრძალული სერვერზე!
   wwcConfigConversationLibreURLSuccess: უფასო URL მითითებული წარმატებით.
   wwcConfigConversationLibreTranslateApiKeyInput: მიმდინარე API გასაღები არის {0}.
     გთხოვთ შეიყვანოთ API გასაღები Libre, ან აკრიფოთ 0 დაბრუნდეს.
   wwcConfigGUILibreTranslateButton: უფასო თარგმნა
-  libreHttp429: ნდობის გამო განაკვეთი ლიმიტი სერვერზე.
   wwcConfigGUIToggleLibreTranslateButton: გადართვა უფასო თარგმნა
   wwcConfigConversationLibreTranslateToggleSuccess: წარმატებით გადართვა Libre Translate.
     განაახლეთ ცვლილებები ძალაში.
   wwcConfigConversationLibreTranslateApiKeySuccess: უფასო API გასაღები კომპლექტი წარმატებით.
   wwcConfigConversationLibreURLInput: მიმდინარე URL არის {0}. გთხოვთ, შეიყვანოთ URL
     უფასოდ, ან ჩაწერეთ 0 დასაბრუნებლად.
-  libreHttpUnknown: 'უცნობი http შეცდომა: {0}'
   wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL
   wwcConfigConnectionFail: '{0}- სთან დაკავშირება ვერ მოხერხდა.'
   wwcConfigConversationMongoDatabaseNameSuccess: წარმატებით შეიცვალა MongoDB მონაცემთა
@@ -388,8 +383,6 @@ Messages:
   wwcConfigGUIMongoPortButton: შეცვალეთ მონღოლეთის პორტი
   wwcConfigInvalidFatalAsyncTimeout: არასწორი ფატალური async შეყოვნება კომპლექტი.
     დეფოლტირება 10 წამში...
-  libreHttp500: თქვენი შერჩეული შემავალი და გამომავალი ენის წყვილი არ არის მხარდაჭერილი.
-    გთხოვთ, აირჩიოთ სხვა ენის ნაკრები!
   wwcConfigGUIDeepLTranslateButton: DeepL თარგმნის გადართვა
   wwcConfigConversationDeepLTranslateToggleSuccess: წარმატებით გადართვა DeepL თარგმნა.
     განაახლეთ ცვლილებები ძალაში.
@@ -457,9 +450,6 @@ Messages:
   wwcrTransFail: გადატვირთულია WorldwideChat, მაგრამ ვერ მოახერხა მთარგმნელის ჩართვა.
   wwcdCacheCleared: თარგმანის ქეში გაწმენდა.
   wwcdInvalidCmd: არასწორი არგუმენტები
-  systranHttpUnknown: 'უცნობი http შეცდომა: {0}'
-  systranHttp400: ცუდი პარამეტრები გაგზავნილია Systran— შეიძლება იყოს ცუდი ენის წყვილი?
-  systranHttp500: შიდა სერვერის შეცდომა Systran საბოლოო წერტილიდან ({0}).
   wwcInvalidStorageSession: '{0} ჩართულია თქვენს კონფიგურაციაში, მაგრამ კავშირი არ
     არის დამყარებული. გთხოვთ, სცადეთ გადატვირთვა ამის გამოსასწორებლად, მაგრამ გთხოვთ
     დაუკავშირდეთ დეველოპერს, თუ ადრე მიიღეთ წარმატებული კავშირის შეტ'
@@ -688,4 +678,61 @@ Messages:
   wwcdResetNotifError: ყველა მონაცემი წარმატებით არ გაწმენდა. დაკავშირებული ხართ თქვენს
     მონაცემთა ბაზასთან?
   colorCodeWarning: ფერის კოდების გამოყენებამ შეიძლება მოგაწოდოთ არაპროგნოზ
+  wwcAiSystemPromptLoaded: AI სისტემის სწრაფი იტვირთულია.
+  wwcAiSystemPromptBad: გამოვლინდა ცუდი AI სისტემის სწრაფვა ჩვენი სტანდარტული გამოყენებით...
+  wwcAiSupportedLangsBad: გამოვლინდა ცუდი AI მხარდაჭერილი ენ ჩვენი ნაგულისხმევი ნიშნების
+    გამოყენებით...
+  wwcConfigGUIAISettings: AI კონფიგურაცია
+  wwcConfigGUIChatGPTButton: ჩატგპტი
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API გასაღების დაყენება წარმატებით.
+  wwcConfigGUAIPromptButton: AI პრომენტის შეცვლა
+  wwcConfigConversationChatGPTURLInput: ამჟამინდელი URL მისამართია {0}. გთხოვთ, შეიყვანოთ
+    URL ChatGPT- ისთვის, ან დაბრუნებისთვის ჩაწერეთ 0.
+  wwcConfigConversationChatGPTApiKeyInput: მიმდინარე API გასაღები არის {0}. გთხოვთ,
+    შეიყვანოთ API გასაღები ChatGPT-ისთვის, ან დაბრუნებისთვის ჩაწერეთ 0.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL წარმატებით დაყენებულია.
+  wwcConfigGUIChatGPTURLButton: ChatGPT URL- ის შეცვლა
+  wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API გასაღების შეცვლა
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT მოდელის ნაკრები წარმატებით.
+  wwcConfigGUIChatGPTModelButton: ChatGPT მოდელის შეცვლა
+  wwcConfigGUIToggleChatGPTButton: ჩართეთ ChatGPT
+  wwcLargeConfigInputSuccess: დამუშავებულია თქვენი {0} სიმბოლოების დიდი შეყვანა.
+  wwcConfigInstructionsBulkBook: გახსენით დაცემული წიგნი მიმდინარე მნიშვნელობის სანახავად
+    ხელი მოაწერეთ წიგნს ამ მნიშვნელობაში ცვლილებების შესატანად.
+  wwcConfigGUIChatGPTToggleSuccess: წარმატებით ჩართული ChatGPT.
+  wwcConfigGUIOllamaPromptButton: შეცვლის შეცვლა
+  wwcConfigGUIChatGPTPromptButton: შეცვალეთ ChatGPT მოთხოვნა
+  wwcConfigGUIModifyAILangsSettings: შეცვალეთ მხარდაჭერილი AI
+  wwcConfigConversationAddLang: შეიყვანეთ ახალი ენა, რომლის დამატებაც გსურთ, ან დაბრუნებისთვის
+    აკრიფეთ 0.
+  wwcConfigConversationAILangDeletionSuccess: წარმატებით წაშალა ენა.
+  wwcConfigGUIAILangModify: ენის შეცვლა ({0})
+  wwcConfigGUIAILangDeleteButton: წაშალეთ ენა
+  wwcConfigGUIAILangNewButton: ახალი ენის დამატება
+  wwcConfigGUIAIChangeLangs: შეცვალეთ მხარდაჭერილი AI
+  wwcConfigConversationAILangAddSuccess: წარმატებით დაამატა ახალი ენა AI მხარდაჭერილი
+    ენებს.
+  translatorBadAPIKey: ცუდი API გასაღები! გთხოვთ, დარწმუნდეთ, რომ სწორად აკრიფეთ იგი.
+  translatorLimitExceeded: თქვენ ან გადააჭარბეთ თქვენი თარგმანული სერვისის კვოტა,
+    ან შეზღუდული ხართ შეფასება. გთხოვთ, შეამოწმეთ თქვენი პროვაიდერი დამატებითი
+  translatorServerError: შიდა სერვერი შეცდომა გთხოვთ, მოგვიანებით სცადოთ
+  translatorForbidden: წვდომა აკრძალულია! გთხოვთ შეამოწმოთ თქვენი ნებართვ
+  translatorBadRequest: ცუდი მოთხოვნა. გთხოვთ, შეამოწმოთ თქვენი შეყვანა და სცადოთ
+  translatorUnknownError: 'უცნობი შეცდომა მოხდა სტატუსის კოდთან: {0}.'
+  translatorURLNotFound: თქვენი მთარგმნელის სერვისის URL არასწორი
+  translatorMethodNotAllowed: თარგმანის სერვისი არ უჭერს მხარს ამ მოთხოვნის მეთ
+  translatorNotFound: მოთხოვნილი თარგმანის რესურსი ვერ მოძებნა
+  wwcConfigConversationChatGPTModelInput: ამჟამინდელი მოდელია {0}. გთხოვთ, შეიყვანოთ
+    მოდელი ChatGPT- ისთვის, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIOllamaModelButton: შეცვალეთ შეცვლის მოდელი
+  wwcConfigConversationOllamaURLSuccess: წარმატებით დაყენებულია URL მისამართი.
+  wwcConfigConversationOllamaModelInput: ამჟამინდელი მოდელია {0}. გთხოვთ, შეიყვანოთ
+    მოდელი Ollama-ისთვის, ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcConfigConversationOllamaURLInput: ამჟამინდელი URL მისამართია {0}. გთხოვთ, შეიყვანოთ
+    URL Ollama- ისთვის, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIOllamaButton: ოლლამა
+  wwcConfigGUIOllamaToggleSuccess: წარმატებით შეცვალა ოლლამა.
+  wwcConfigGUIOllamaURLButton: შეცვალეთ ჩანაწერის URL
+  wwcConfigConversationOllamaModelSuccess: Ollama მოდელის ნაკრები წარმატებით.
+  wwcConfigGUIToggleOllamaButton: შეცვლის შეცვლა
 

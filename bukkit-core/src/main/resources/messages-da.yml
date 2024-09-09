@@ -334,22 +334,17 @@ Messages:
     noget under det for at gå tilbage.
   wwcConfigConversationFatalAsyncSuccess: Async opgave timeout indstillet med succes.
   wwcConfigGUIFatalAsyncAbortButton: Skift Async-opgavetimeout
-  libreHttp400: Dårlig anmodning sendt til Libre Translate! Medmindre du laver noget,
-    som du ikke burde, bør du ikke få dette. Kontakt udvikleren!
   wwcConfigGUILibreTranslateApiKeyButton: Skift Libre Oversæt API Key
-  libreHttp403: Mangler Libre Translate API Key, eller du er forbudt fra serveren!
   wwcConfigConversationLibreURLSuccess: Libre URL indstillet med succes.
   wwcConfigConversationLibreTranslateApiKeyInput: Den nuværende API-nøgle er {0}.
     Indtast venligst en API-nøgle for Libre, eller skriv 0 for at gå tilbage.
   wwcConfigGUILibreTranslateButton: Libre Oversæt
-  libreHttp429: Ingen tillid på grund af hastighedsgrænse fra serveren.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Oversæt
   wwcConfigConversationLibreTranslateToggleSuccess: Succesfuldt slået Libre Translate.
     Genindlæs for at ændringerne træder i kraft.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-nøgle sæt med succes.
   wwcConfigConversationLibreURLInput: Den nuværende URL er {0}. Indtast venligst en
     URL for Libre, eller skriv 0 for at gå tilbage.
-  libreHttpUnknown: 'Ukendt http-fejl: {0}'
   wwcConfigGUILibreTranslateURLButton: Skift Libre Oversæt URL
   wwcConfigConnectionFail: Der kunne ikke oprettes forbindelse til {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Succesfuldt ændret MongoDB-databasenavnet.
@@ -385,8 +380,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Skift MongoDB-port
   wwcConfigInvalidFatalAsyncTimeout: Ugyldigt fatalt async timeout-sæt. Standard til
     10 sekunder...
-  libreHttp500: Dit valgte input- og outputsprogpar understøttes ikke. Vælg et andet
-    sprogsæt!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Oversæt
   wwcConfigConversationDeepLTranslateToggleSuccess: Succesfuldt slået DeepL Translate.
     Genindlæs for at ændringerne træder i kraft.
@@ -457,9 +450,6 @@ Messages:
   wwcrTransFail: Genindlæst WorldwideChat, men kunne ikke aktivere en oversætter.
   wwcdCacheCleared: Oversættelsescachen blev ryddet.
   wwcdInvalidCmd: Ugyldige argumenter!
-  systranHttpUnknown: 'Ukendt http fejl: {0}'
-  systranHttp400: Dårlige parametre sendt til Systran. Kan være et dårligt sprogpar?
-  systranHttp500: Intern serverfejl fra Systran-slutpunktet ({0}).
   wwcInvalidStorageSession: '{0} er aktiveret i din konfiguration, men en forbindelse
     er ikke etableret. Prøv at genindlæse for at løse dette, men kontakt venligst
     udvikleren, hvis du tidligere har modtaget en vellykket forbindelsesmeddelelse
@@ -696,4 +686,60 @@ Messages:
   wwcdResetNotifError: Ikke alle data blev slettet med succes. Har du forbindelse
     til din database?
   colorCodeWarning: Brug af farvekoder kan give dig uforudsigelige resultater.
+  wwcAiSystemPromptLoaded: AI System Prompt indlæst.
+  wwcAiSystemPromptBad: Dårlig AI-systemprompt opdaget. Brug af vores standard...
+  wwcAiSupportedLangsBad: Dårlige AI-understøttede sprog opdaget. Brug af vores standardindstillinger...
+  wwcConfigGUIAISettings: AI-konfiguration
+  wwcConfigGUIChatGPTButton: Chat GPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API-nøgle indstillet med succes.
+  wwcConfigGUAIPromptButton: Skift AI-prompt
+  wwcConfigConversationChatGPTURLInput: Den aktuelle URL er {0}. Indtast venligst
+    en URL til ChatGPT, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationChatGPTApiKeyInput: Den aktuelle API-nøgle er {0}. Indtast
+    venligst en API-nøgle til ChatGPT, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL indstillet med succes.
+  wwcConfigGUIChatGPTURLButton: Skift ChatGPT URL
+  wwcConfigGUIChatGPTAPIKeyButton: Skift ChatGPT API-nøgle
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT-modellen indstillet med succes.
+  wwcConfigGUIChatGPTModelButton: Skift ChatGPT-model
+  wwcConfigGUIToggleChatGPTButton: Slå ChatGPT til
+  wwcLargeConfigInputSuccess: Dit store input af {0} tegn er blevet behandlet.
+  wwcConfigInstructionsBulkBook: Åbn den tabte bog for at se den aktuelle værdi. Underskriv
+    bogen for at foretage ændringer i denne værdi.
+  wwcConfigGUIChatGPTToggleSuccess: Skiftet ChatGPT med succes.
+  wwcConfigGUIOllamaPromptButton: Change Prompt
+  wwcConfigGUIChatGPTPromptButton: Skift ChatGPT-prompt
+  wwcConfigGUIModifyAILangsSettings: Rediger understøttede AI-sprog
+  wwcConfigConversationAddLang: Indtast det nye sprog, du vil tilføje, eller skriv
+    0 for at gå tilbage.
+  wwcConfigConversationAILangDeletionSuccess: Slet sproget med succes.
+  wwcConfigGUIAILangModify: Ændre sprog ({0})
+  wwcConfigGUIAILangDeleteButton: Slet sprog
+  wwcConfigGUIAILangNewButton: Tilføj nyt sprog
+  wwcConfigGUIAIChangeLangs: Rediger understøttede AI-sprog
+  wwcConfigConversationAILangAddSuccess: Tilføjet et nyt sprog med succes til de AI-understøttede
+    sprog.
+  translatorBadAPIKey: Dårlig API-nøgle! Sørg for, at du har indtastet det korrekt.
+  translatorLimitExceeded: Du har enten overskredet kvoten for din oversættelsestjeneste,
+    eller du har været prisbegrænset. Tjek din udbyder for flere detaljer.
+  translatorServerError: Intern serverfejl. Prøv igen senere.
+  translatorForbidden: Adgang er forbudt! Tjek venligst dine tilladelser.
+  translatorBadRequest: Dårlig anmodning. Kontroller dit input, og prøv igen.
+  translatorUnknownError: 'Der opstod en ukendt fejl med statuskode: {0}.'
+  translatorURLNotFound: URL-adressen til din oversættelsestjeneste er ugyldig.
+  translatorMethodNotAllowed: Oversættelsestjenesten understøtter ikke denne anmodningsmetode.
+  translatorNotFound: Den ønskede oversættelsesressource blev ikke fundet.
+  wwcConfigConversationChatGPTModelInput: Den nuværende model er {0}. Indtast venligst
+    en model til ChatGPT, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIOllamaModelButton: Skift Ollama Model
+  wwcConfigConversationOllamaURLSuccess: URL-adressen er indstillet med succes.
+  wwcConfigConversationOllamaModelInput: Den nuværende model er {0}. Indtast en model
+    til Ollama, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationOllamaURLInput: Den aktuelle URL er {0}. Indtast venligst en
+    URL til Ollama, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Vellykket Ollama.
+  wwcConfigGUIOllamaURLButton: Skift URL-adresse
+  wwcConfigConversationOllamaModelSuccess: Ollama-modellen indstillet med succes.
+  wwcConfigGUIToggleOllamaButton: Toggle Option
 

@@ -326,16 +326,11 @@ Messages:
     જવા માટે તેની નીચે કંઈપણ.
   wwcConfigConversationFatalAsyncSuccess: Async કાર્ય સમયસમાપ્તિ સફળતાપૂર્વક સેટ.
   wwcConfigGUIFatalAsyncAbortButton: Async ટાસ્ક સમયસમાપ્તિ બદલો
-  libreHttp400: ખરાબ વિનંતી લિબ્રે અનુવાદ મોકલવામાં! જ્યાં સુધી તમે કંઈક કરી રહ્યા
-    ન હોવ જે તમારે ન કરવું જોઈએ, તમારે આ ન મેળવવું જોઈએ. કૃપા કરીને વિકાસકર્તાનો સંપર્ક
-    કરો!
   wwcConfigGUILibreTranslateApiKeyButton: નિઃશુલ્ક બદલો API કી અનુવાદ
-  libreHttp403: લિબ્રે ભાષાંતર API કી ખૂટે છે, અથવા તમને સર્વરથી પ્રતિબંધિત છે!
   wwcConfigConversationLibreURLSuccess: નિઃશુલ્ક URL સફળતાપૂર્વક સેટ.
   wwcConfigConversationLibreTranslateApiKeyInput: વર્તમાન API કી {0} છે મહેરબાની કરીને
     લિબ્રે માટે API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
   wwcConfigGUILibreTranslateButton: નિઃશુલ્ક અનુવાદ
-  libreHttp429: સર્વરથી દર મર્યાદાને કારણે કોઈ વિશ્વાસ નથી.
   wwcConfigGUIToggleLibreTranslateButton: મફત ટૉગલ અનુવાદ
   wwcConfigConversationLibreTranslateToggleSuccess: સફળતાપૂર્વક લિબ્રે અનુવાદને ટૉગલ
     કર્યું. ફેરફારોને પ્રભાવમાં લાવવા માટે ફરીથી લોડ કરો.
@@ -343,7 +338,6 @@ Messages:
     કરો.
   wwcConfigConversationLibreURLInput: વર્તમાન URL {0} છે મહેરબાની કરીને લિબ્રે માટે
     URL ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
-  libreHttpUnknown: 'અજ્ઞાત HTTP ભૂલ: {0}'
   wwcConfigGUILibreTranslateURLButton: મફત URL નું ભાષાંતર બદલો
   wwcConfigConnectionFail: '{0} સાથે જોડાવા માટે નિષ્ફળ.'
   wwcConfigConversationMongoDatabaseNameSuccess: સફળતાપૂર્વક MongoDB ડેટાબેઝ નામ બદલ્યું.
@@ -379,8 +373,6 @@ Messages:
   wwcConfigGUIMongoPortButton: મોંગોડીબી બંદર બદલો
   wwcConfigInvalidFatalAsyncTimeout: અમાન્ય જીવલેણ async સમયસમાપ્તિ સેટ. 10 સેકંડમાં
     ડિફોલ્ટિંગ...
-  libreHttp500: તમારી પસંદ કરેલ ઇનપુટ અને આઉટપુટ ભાષા જોડી આધારભૂત નથી. કૃપા કરીને
-    કોઈ અલગ ભાષા સેટ પસંદ કરો!
   wwcConfigGUIDeepLTranslateButton: DePL અનુવાદ ટૉગલ કરો
   wwcConfigConversationDeepLTranslateToggleSuccess: સફળતાપૂર્વક ડીપએલ અનુવાદને ટૉગલ
     કર્યું. ફેરફારોને પ્રભાવમાં લાવવા માટે ફરીથી લોડ કરો.
@@ -450,10 +442,6 @@ Messages:
     ગયો.
   wwcdCacheCleared: અનુવાદ કેશ સાફ કરવામાં આવી હતી.
   wwcdInvalidCmd: અમાન્ય દલીલો!
-  systranHttpUnknown: 'અજ્ઞાત http ભૂલ: {0}'
-  systranHttp400: ખરાબ પરિમાણો સિસ્ટ્રાનને મોકલવામાં આવ્યા છે. ખરાબ ભાષાની જોડી હોઈ
-    શકે છે?
-  systranHttp500: સિસ્ટ્રાન એન્ડપોઇન્ટ ({0}) માંથી આંતરિક સર્વર ભૂલ.
   wwcInvalidStorageSession: '{0} તમારી રૂપરેખાંકનમાં સક્ષમ છે, પરંતુ કનેક્શન સ્થાપિત
     થયેલ નથી. કૃપા કરીને આને ઠીક કરવા માટે ફરીથી લોડ કરવાનો પ્રયાસ કરો, પરંતુ કૃપા
     કરીને વિકાસકર્તાનો સંપર્ક કરો જો તમને અગાઉ {0} થી સફળ જોડાણ સંદેશ મળ્યો હોય.'
@@ -695,4 +683,66 @@ Messages:
   wwcdResetNotifError: તમામ ડેટા સફળતાપૂર્વક સાફ કરવામાં આવ્યો ન હતો. શું તમે તમારા
     ડેટાબેઝ સાથે જોડાયેલા છો?
   colorCodeWarning: રંગ કોડનો ઉપયોગ કરવાથી તમને અણધારી પરિણામો મળી શકે છે.
+  wwcAiSystemPromptLoaded: એઆઈ સિસ્ટમ પ્રોમ્પ્ટ લોડ થઈ છે.
+  wwcAiSystemPromptBad: ખરાબ એઆઈ સિસ્ટમ પ્રોમ્પ્ટ શોધાયેલ. અમારા ડિફૉલ્ટનો ઉપયોગ કરીને...
+  wwcAiSupportedLangsBad: ખરાબ એઆઈ સપોર્ટેડ ભાષાઓ શોધાઈ. અમારા ડિફૉલ્ટ્સનો ઉપયોગ કરીને...
+  wwcConfigGUIAISettings: AI રૂપરેખાંકન
+  wwcConfigGUIChatGPTButton: ચેટજીપીટી
+  wwcConfigConversationChatGPTApiKeySuccess: ચેટજીપીટી API કી સફળતાપૂર્વક સેટ થઈ છે.
+  wwcConfigGUAIPromptButton: એઆઈ પ્રોમ્પ્ટ બદલો
+  wwcConfigConversationChatGPTURLInput: વર્તમાન URL {0} છે. કૃપા કરીને ChatGPT માટે
+    URL ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationChatGPTApiKeyInput: વર્તમાન API કી {0} છે. કૃપા કરીને ChatGPT
+    માટે API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationChatGPTURLSuccess: ચેટજીપીટી URL સફળતાપૂર્વક સેટ કરવામાં આવ્યું
+    છે.
+  wwcConfigGUIChatGPTURLButton: ચેટજીપીટી URL બદલો
+  wwcConfigGUIChatGPTAPIKeyButton: ચેટજીપીટી API કી બદલો
+  wwcConfigConversationChatGPTModelSuccess: ચેટજીપીટી મોડેલ સફળતાપૂર્વક સેટ કરવામાં
+    આવ્યું છે.
+  wwcConfigGUIChatGPTModelButton: ચેટજીપીટી મોડેલ બદલો
+  wwcConfigGUIToggleChatGPTButton: ચેટજીપીટી ટૉગલ કરો
+  wwcLargeConfigInputSuccess: '{0} અક્ષરોના તમારા મોટા ઇનપુટની પ્રક્રિયા કરવામાં આવી
+    છે.'
+  wwcConfigInstructionsBulkBook: વર્તમાન મૂલ્ય જોવા માટે ડ્રોપ કરેલ પુસ્તક ખોલો. આ
+    મૂલ્યમાં ફેરફાર કરવા માટે પુસ્તક પર સાઇન ઇન કરો.
+  wwcConfigGUIChatGPTToggleSuccess: સફળતાપૂર્વક ચેટજીપીટીને ટૉગલ કર્યું.
+  wwcConfigGUIOllamaPromptButton: ચેન્જ પ્રોમ્પ્ટ બદલો
+  wwcConfigGUIChatGPTPromptButton: ચેટજીપીટી પ્રોમ્પ્ટ બદલો
+  wwcConfigGUIModifyAILangsSettings: સમર્થિત AI ભાષાઓમાં ફેરફાર કરો
+  wwcConfigConversationAddLang: તમે જે નવી ભાષા ઉમેરવા માંગો છો તે દાખલ કરો, અથવા
+    પાછા જવા માટે 0 લખો.
+  wwcConfigConversationAILangDeletionSuccess: સફળતાપૂર્વક ભાષા કાઢી નાખી.
+  wwcConfigGUIAILangModify: ભાષામાં ફેરફાર કરો ({0})
+  wwcConfigGUIAILangDeleteButton: ભાષા કાઢી નાખો
+  wwcConfigGUIAILangNewButton: નવી ભાષા ઉમેરો
+  wwcConfigGUIAIChangeLangs: સમર્થિત AI ભાષાઓમાં ફેરફાર કરો
+  wwcConfigConversationAILangAddSuccess: AI સપોર્ટેડ ભાષાઓમાં સફળતાપૂર્વક નવી ભાષા
+    ઉમેરી.
+  translatorBadAPIKey: ખરાબ API કી! કૃપા કરીને ખાતરી કરો કે તમે તેને યોગ્ય રીતે ટાઇપ
+    કર્યું છે.
+  translatorLimitExceeded: તમે ક્યાં તો તમારી અનુવાદ સેવા માટેના ક્વોટાને વટાવી ગયા
+    છો અથવા તમને રેટ મર્યાદિત કરવામાં આવ્યા છે. વધુ વિગતો માટે કૃપા કરીને તમારા પ્રદાતાને
+    તપાસો.
+  translatorServerError: આંતરિક સર્વર ભૂલ. કૃપા કરીને પછીથી ફરીથી પ્રયાસ કરો.
+  translatorForbidden: ઍક્સેસ પ્રતિબંધિત છે! કૃપા કરીને તમારી પરવાનગીઓ તપાસો.
+  translatorBadRequest: ખરાબ વિનંતી. કૃપા કરીને તમારું ઇનપુટ તપાસો અને ફરીથી પ્રયાસ
+    કરો.
+  translatorUnknownError: 'સ્થિતિ કોડ સાથે અજ્ઞાત ભૂલ આવી: {0}.'
+  translatorURLNotFound: તમારી અનુવાદક સેવા URL અમાન્ય છે.
+  translatorMethodNotAllowed: અનુવાદ સેવા આ વિનંતી પદ્ધતિને સપોર્ટ કરતી નથી.
+  translatorNotFound: વિનંતી કરેલ અનુવાદ સંસાધન મળ્યું નથી.
+  wwcConfigConversationChatGPTModelInput: વર્તમાન મોડેલ {0} છે. કૃપા કરીને ChatGPT
+    માટે એક મોડેલ ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIOllamaModelButton: ચેન્જ મોડેલ બદલો
+  wwcConfigConversationOllamaURLSuccess: URL ને સફળતાપૂર્વક સેટ કરો.
+  wwcConfigConversationOllamaModelInput: વર્તમાન મોડેલ {0} છે. કૃપા કરીને ઓલામા માટે
+    એક મોડેલ ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigConversationOllamaURLInput: વર્તમાન URL {0} છે. કૃપા કરીને ઓલામા માટે URL
+    ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUIOllamaButton: ઓલામા
+  wwcConfigGUIOllamaToggleSuccess: સફળતાપૂર્વક ઓલામાને ટૉગલ કર્યું.
+  wwcConfigGUIOllamaURLButton: યુઆરએલ બદલો
+  wwcConfigConversationOllamaModelSuccess: ઓલામા મોડેલ સફળતાપૂર્વક સેટ કર્યું.
+  wwcConfigGUIToggleOllamaButton: ટૉગલ ઓલામા
 

@@ -327,16 +327,11 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: অ্যাসিঙ্ক টাস্ক টাইমআউট সফলভাবে সেট করা
     হয়েছে।
   wwcConfigGUIFatalAsyncAbortButton: অ্যাসিঙ্ক টাস্ক টাইম- আউট পরিবর্তন করুন
-  libreHttp400: Libre অনুবাদ পাঠানো খারাপ অনুরোধ! যতক্ষণ না আপনি এমন কিছু করছেন যা
-    আপনার উচিত নয়, আপনাকে এটি পাওয়া উচিত নয়। বিকাশকারীর সাথে যোগাযোগ করুন!
   wwcConfigGUILibreTranslateApiKeyButton: বিনামূল্যে অনুবাদ API কী পরিবর্তন করুন
-  libreHttp403: অনুপস্থিত Libre অনুবাদ API কী, অথবা আপনি সার্ভার থেকে নিষিদ্ধ করা
-    হয়!
   wwcConfigConversationLibreURLSuccess: বিনামূল্যে URL সফলভাবে সেট করা হয়েছে।
   wwcConfigConversationLibreTranslateApiKeyInput: বর্তমান API কী হল {0}। অনুগ্রহ করে
     Libre এর জন্য একটি API কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigGUILibreTranslateButton: বিনামূল্যে অনুবাদ
-  libreHttp429: সার্ভার থেকে হার সীমা কারণে কোন আস্থা।
   wwcConfigGUIToggleLibreTranslateButton: বিনামূল্যে অনুবাদ টগল করুন
   wwcConfigConversationLibreTranslateToggleSuccess: সফলভাবে বিনামূল্যে অনুবাদ টগল
     করা হয়েছে। পরিবর্তনগুলি কার্যকর করার জন্য পুনরায় লোড করুন।
@@ -344,7 +339,6 @@ Messages:
     করুন।
   wwcConfigConversationLibreURLInput: বর্তমান URL হল {0}। অনুগ্রহ করে Libre এর জন্য
     একটি URL লিখুন, অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
-  libreHttpUnknown: 'অজানা http ত্রুটি: {0}'
   wwcConfigGUILibreTranslateURLButton: বিনামূল্যে পরিবর্তন করুন URL অনুবাদ করুন
   wwcConfigConnectionFail: '{0}- র সাথে সংযোগ করতে ব্যর্থ'
   wwcConfigConversationMongoDatabaseNameSuccess: সফলভাবে MongoDB ডাটাবেস নাম পরিবর্তন।
@@ -383,8 +377,6 @@ Messages:
   wwcConfigGUIMongoPortButton: মোঙ্গোডিবি পোর্ট পরিবর্তন করুন
   wwcConfigInvalidFatalAsyncTimeout: অকার্যকর মারাত্মক async সময়সীমা নির্ধারণ করা
     হয়েছে। ১০ সেকেন্ডে ডিফল্ট করা হচ্ছে...
-  libreHttp500: আপনার নির্বাচিত ইনপুট এবং আউটপুট ভাষা জোড়া সমর্থিত নয়। অনুগ্রহ করে
-    একটি ভিন্ন ভাষা সেট নির্বাচন করুন!
   wwcConfigGUIDeepLTranslateButton: গভীর অনুবাদ টগল করুন
   wwcConfigConversationDeepLTranslateToggleSuccess: সফলভাবে DeepL অনুবাদ টগল করা হয়েছে।
     পরিবর্তনগুলি কার্যকর করার জন্য পুনরায় লোড করুন।
@@ -452,9 +444,6 @@ Messages:
   wwcrTransFail: ওয়ার্ল্ডওয়াইডচ্যাট পুনরায় লোড করা হলেও অনুবাদক সক্ষম করতে ব্যর্থ
   wwcdCacheCleared: অনুবাদ ক্যাশে পরিষ্কার করা হয়েছে।
   wwcdInvalidCmd: অবৈধ যুক্তি!
-  systranHttpUnknown: 'অজানা এইচটিটিপি ত্রুটি: {0}'
-  systranHttp400: খারাপ পরামিতি সিস্ট্রানে পাঠানো হয়েছে। খারাপ ভাষার জোড়া হতে পারে?
-  systranHttp500: সিস্ট্রান এন্ডপয়েন্ট ({0}) থেকে অভ্যন্তরীণ সার্ভার ত্রুটি।
   wwcInvalidStorageSession: '{0} আপনার কনফিগারেশনে সক্ষম করা হয়েছে, কিন্তু কোনো সংযোগ
     স্থাপন করা হয়নি। এটি ঠিক করার জন্য দয়া করে পুনরায় লোড করার চেষ্টা করুন, তবে
     আপনি যদি পূর্বে {0} থেকে একটি সফল সংযোগ বার্তা পেয়েছেন তবে দয়া করে বিকাশকারীর
@@ -693,4 +682,64 @@ Messages:
   wwcdResetNotifError: সব তথ্য সফলভাবে মুছে ফেলা হয়নি। আপনি কি আপনার ডাটাবেসের সাথে
     সংযুক্ত?
   colorCodeWarning: রঙ কোড ব্যবহার করা আপনাকে অপ্রত্যাশিত ফলাফল দিতে পারে।
+  wwcAiSystemPromptLoaded: এআই সিস্টেম প্রম্পট লোড হয়েছে।
+  wwcAiSystemPromptBad: খারাপ AI সিস্টেম প্রম্পট সনাক্ত করা হয়েছে আমাদের ডিফল্ট ব্যবহার
+    করে...
+  wwcAiSupportedLangsBad: খারাপ AI সমর্থিত ভাষা সনাক্ত করা আমাদের ডিফল্টগুলি ব্যবহার
+    করে...
+  wwcConfigGUIAISettings: AI কনফিগারেশন
+  wwcConfigGUIChatGPTButton: চ্যাটজিপিটি
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT এপিআই কী সফলভাবে সেট করা হয়েছে।
+  wwcConfigGUAIPromptButton: AI প্রম্পট পরিবর্তন করুন
+  wwcConfigConversationChatGPTURLInput: বর্তমান ইউআরএল {0}। ChatGPT এর জন্য অনুগ্রহ
+    করে একটি ইউআরএল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationChatGPTApiKeyInput: বর্তমান এপিআই কী {0}। ChatGPT এর জন্য দয়া
+    করে একটি API কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT ইউআরএল সফলভাবে সেট করা হয়েছে।
+  wwcConfigGUIChatGPTURLButton: চ্যাটজিপিটি URL পরিবর্তন করুন
+  wwcConfigGUIChatGPTAPIKeyButton: চ্যাটজিপিটি এপিআই কী পরিবর্তন করুন
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT মডেল সফলভাবে সেট করা হয়েছে।
+  wwcConfigGUIChatGPTModelButton: চ্যাটজিপিটি মডেল পরিবর্তন করুন
+  wwcConfigGUIToggleChatGPTButton: চ্যাটজিপিটি টগল করুন
+  wwcLargeConfigInputSuccess: '{0} অক্ষরের আপনার বড় ইনপুট প্রক্রিয়া করা হয়েছে।'
+  wwcConfigInstructionsBulkBook: বর্তমান মান দেখতে ড্রপ করা বইটি খুলুন। এই মানটিতে
+    পরিবর্তন করতে বইটিতে স্বাক্ষর করুন।
+  wwcConfigGUIChatGPTToggleSuccess: সফলভাবে চ্যাটজিপিটি টগল করা হয়েছে।
+  wwcConfigGUIOllamaPromptButton: অলমা প্রম্পট পরিবর্তন করুন
+  wwcConfigGUIChatGPTPromptButton: ChatGPT প্রম্পট পরিবর্তন করুন
+  wwcConfigGUIModifyAILangsSettings: সমর্থিত AI ভাষা পরিবর্তন
+  wwcConfigConversationAddLang: আপনি যে নতুন ভাষা যুক্ত করতে চান তা লিখুন বা ফিরে
+    যেতে 0 টাইপ করুন।
+  wwcConfigConversationAILangDeletionSuccess: সফলভাবে ভাষা মুছে ফেলা হয়েছে।
+  wwcConfigGUIAILangModify: ভাষা পরিবর্তন করুন ({0})
+  wwcConfigGUIAILangDeleteButton: ভাষা মুছুন
+  wwcConfigGUIAILangNewButton: নতুন ভাষা যোগ করুন
+  wwcConfigGUIAIChangeLangs: সমর্থিত AI ভাষা পরিবর্তন
+  wwcConfigConversationAILangAddSuccess: এআই সমর্থিত ভাষাগুলিতে সফলভাবে একটি নতুন
+    ভাষা যুক্ত করা হয়েছে।
+  translatorBadAPIKey: খারাপ এপিআই কী! দয়া করে নিশ্চিত করুন যে আপনি এটি সঠিকভাবে
+    টাইপ করেছেন।
+  translatorLimitExceeded: আপনি হয় আপনার অনুবাদ পরিষেবার কোটা অতিক্রম করেছেন অথবা
+    আপনার রেট সীমিত হয়েছে। আরও বিস্তারিত জানার জন্য আপনার প্রদানকারীকে চেক করুন।
+  translatorServerError: অভ্যন্তর সার্ভার ত্রুটি পরে আবার চেষ্টা করুন।
+  translatorForbidden: অ্যাক্সেস নিষিদ্ধ! অনুগ্রহ করে আপনার অনুমতিগুলি পরীক্ষা করুন।
+  translatorBadRequest: খারাপ অনুরোধ। অনুগ্রহ করে আপনার ইনপুট পরীক্ষা করুন এবং আবার
+    চেষ্টা করুন।
+  translatorUnknownError: 'স্ট্যাটাস কোডের সাথে একটি অজানা ত্রুটি ঘটেছে: {0}।'
+  translatorURLNotFound: আপনার অনুবাদক পরিষেবা ইউআরএল অবৈধ।
+  translatorMethodNotAllowed: অনুবাদ পরিষেবা এই অনুরোধ পদ্ধতিটি সমর্থন করে না।
+  translatorNotFound: অনুরোধ করা অনুবাদ সম্পদ পাওয়া যায়নি।
+  wwcConfigConversationChatGPTModelInput: বর্তমান মডেলটি {0}। ChatGPT এর জন্য একটি
+    মডেল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIOllamaModelButton: অলমা মডেল পরিবর্তন করুন
+  wwcConfigConversationOllamaURLSuccess: সফলভাবে ইউআরএল সেট করুন।
+  wwcConfigConversationOllamaModelInput: বর্তমান মডেলটি {0}। দয়া করে Ollama এর জন্য
+    একটি মডেল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationOllamaURLInput: বর্তমান ইউআরএল {0}। দয়া করে Ollama এর জন্য
+    একটি ইউআরএল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIOllamaButton: অল্লামা
+  wwcConfigGUIOllamaToggleSuccess: সফলভাবে ওলামাকে টগল করেছিল।
+  wwcConfigGUIOllamaURLButton: আলোমার ইউআরএল পরিবর্তন
+  wwcConfigConversationOllamaModelSuccess: ওলামা মডেল সফলভাবে সেট করা হয়েছে।
+  wwcConfigGUIToggleOllamaButton: টগল অলামা
 

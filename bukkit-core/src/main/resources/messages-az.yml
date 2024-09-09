@@ -328,15 +328,11 @@ Messages:
     bir şey təyin etmək üçün 7-dən yuxarı bir şey yazın.
   wwcConfigConversationFatalAsyncSuccess: Aync tapşırıq zaman aşımı uğurla müəyyən.
   wwcConfigGUIFatalAsyncAbortButton: Aync Task Timeout Change
-  libreHttp400: Pulsuz Tərcümə göndərilən Bad sorğu! Siz lazım deyil ki, bir şey bunu
-    halda, Bu almaq lazım deyil. Geliştirici ilə əlaqə saxlayın!
   wwcConfigGUILibreTranslateApiKeyButton: Pulsuz Tərcümə API Açarını dəyişdirin
-  libreHttp403: Pulsuz Translate API Key itkin, və ya server qadağan!
   wwcConfigConversationLibreURLSuccess: Pulsuz URL uğurla təyin olundu.
   wwcConfigConversationLibreTranslateApiKeyInput: Mövcud API açarı {0}.Lütfən Pulsuz
     üçün bir API düyməsini daxil edin və ya geri dönmək üçün 0 yazın.
   wwcConfigGUILibreTranslateButton: Pulsuz Tərcümə
-  libreHttp429: Serverdən dərəcəsi limitinə görə güvən yoxdur.
   wwcConfigGUIToggleLibreTranslateButton: Pulsuz Tərcümə keçid
   wwcConfigConversationLibreTranslateToggleSuccess: Uğurla Pulsuz Tərcümə keçid. Dəyişikliklərin
     qüvvəyə minməsi üçün yenidən yüklə.
@@ -344,7 +340,6 @@ Messages:
     olundu.
   wwcConfigConversationLibreURLInput: Mövcud URL {0}.Lütfən Pulsuz üçün URL daxil
     edin və ya geri qayıtmaq üçün 0 yazın.
-  libreHttpUnknown: 'Bilinməyən http xətası: {0}'
   wwcConfigGUILibreTranslateURLButton: Pulsuz Tərcümə URL'sini dəyişdirin
   wwcConfigConnectionFail: '{0} şəbəkəsinə qoşulmaq mümkün olmadı.'
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB verilənlər bazası adını müvəffəqiyyətlə
@@ -382,8 +377,6 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB portunu dəyişdirin
   wwcConfigInvalidFatalAsyncTimeout: Yanlış ölümcül async zaman aşımı set. 10 saniyəyə
     qədər...
-  libreHttp500: Seçdiyiniz giriş və çıxış dil cütlüyü dəstəklənmir. Xahiş edirik fərqli
-    bir dil dəsti seçin!
   wwcConfigGUIDeepLTranslateButton: Deepl Translate keçid
   wwcConfigConversationDeepLTranslateToggleSuccess: Müvəffəqiyyətlə DeepL Translate
     keçid. Dəyişikliklərin qüvvəyə minməsi üçün yenidən yüklə.
@@ -450,9 +443,6 @@ Messages:
   wwcrTransFail: WorldwideChat-ı yenidən yüklədi, lakin tərcüməçini aktivləşdirə bilmədi.
   wwcdCacheCleared: Tərcümə önbelleği təmizləndi.
   wwcdInvalidCmd: Yanlış arqumentlər!
-  systranHttpUnknown: 'Naməlum http xətası: {0}'
-  systranHttp400: Systrana göndərilən pis parametrlər. Pis dil cütlüyü ola bilərmi?
-  systranHttp500: Systran son nöqtəsindən daxili server xətası ({0}).
   wwcInvalidStorageSession: Konfiqurasiyanızda {0} aktivdir, lakin əlaqə qurulmayıb.
     Zəhmət olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər {0}
     -dən uğurlu bir əlaqə mesajı alsanız, tərtibatçı ilə əla
@@ -687,4 +677,64 @@ Messages:
   wwcdResetNotif: WorldwideChat yenidən quruldu. Yenidən yükləmə...
   wwcdResetNotifError: Bütün məlumatlar uğurla silinmədi. Verilənlər bazanıza qoşulmusunuz?
   colorCodeWarning: Rəng kodlarından istifadə sizə gözlənilməz nəticələr verə bilər.
+  wwcAiSystemPromptLoaded: AI Sistem Prompt yükləndi.
+  wwcAiSystemPromptBad: Pis AI Sistem Tələbi aşkar edildi. Varsayımızdan istifadə
+    edərək...
+  wwcAiSupportedLangsBad: Pis AI dəstəklənən dillər aşkar edildi. Defaultlarımızdan
+    istifadə edərək...
+  wwcConfigGUIAISettings: AI Konfiqurasiyası
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API açarı uğurla quruldu.
+  wwcConfigGUAIPromptButton: AI sorğusunu dəyişdirin
+  wwcConfigConversationChatGPTURLInput: Cari URL {0} -dir. Zəhmət olmasa ChatGPT üçün
+    bir URL daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationChatGPTApiKeyInput: Cari API açarı {0} -dir. Zəhmət olmasa
+    ChatGPT üçün API açarını daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL uğurla quruldu.
+  wwcConfigGUIChatGPTURLButton: ChatGPT URL-sini dəyişdirin
+  wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API açarını dəyişdirin
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT model uğurla quruldu.
+  wwcConfigGUIChatGPTModelButton: ChatGPT modelini dəyişdirin
+  wwcConfigGUIToggleChatGPTButton: ChatGPT-ni dəyişdirin
+  wwcLargeConfigInputSuccess: '{0} simvolundan ibarət böyük girişiniz işləndi.'
+  wwcConfigInstructionsBulkBook: Cari dəyəri görmək üçün düşmüş kitabı açın. Bu dəyərə
+    dəyişiklik etmək üçün kitabı imzalayın.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT-ni uğurla dəyişdirdi.
+  wwcConfigGUIOllamaPromptButton: Change Lamp Prompt
+  wwcConfigGUIChatGPTPromptButton: ChatGPT Prompt-ı dəyişdirin
+  wwcConfigGUIModifyAILangsSettings: Dəstəklənən AI dillərini dəyişdir
+  wwcConfigConversationAddLang: Əlavə etmək istədiyiniz yeni dili daxil edin və ya
+    geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationAILangDeletionSuccess: Dili uğurla silindi.
+  wwcConfigGUIAILangModify: Dili dəyişdirin ({0})
+  wwcConfigGUIAILangDeleteButton: Dili silin
+  wwcConfigGUIAILangNewButton: Yeni dil əlavə edin
+  wwcConfigGUIAIChangeLangs: Dəstəklənən AI dillərini dəyişdir
+  wwcConfigConversationAILangAddSuccess: AI dəstəklənən dillərə uğurla yeni bir dil
+    əlavə etdi.
+  translatorBadAPIKey: Pis API açarı! Zəhmət olmasa düzgün yazdığınızdan əmin olun.
+  translatorLimitExceeded: Ya tərcümə xidmətinizin kvotasını aşdınız, ya da dərəcəniz
+    məhdudlaşdınız. Ətraflı məlumat üçün provayderinizi yoxlayın.
+  translatorServerError: Daxili server səhvi. Xahiş edirəm daha sonra yenidən cəhd
+    edin.
+  translatorForbidden: Giriş qadağandır! Xahiş edirəm icazələrinizi yoxlayın.
+  translatorBadRequest: Pis sorğu. Xahiş edirəm girişinizi yoxlayın və yenidən cəhd
+    edin.
+  translatorUnknownError: 'Status kodu ilə naməlum bir səhv meydana gəldi: {0}.'
+  translatorURLNotFound: Tərcüməçi xidmətinizin URL-i etibarsızdır.
+  translatorMethodNotAllowed: Tərcümə xidməti bu sorğu metodunu dəstəkləmir.
+  translatorNotFound: Tələb olunan tərcümə mənbəyi tapılmadı.
+  wwcConfigConversationChatGPTModelInput: Mövcud model {0} -dir. Zəhmət olmasa ChatGPT
+    üçün bir model daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIOllamaModelButton: Dəyişiklik modelini dəyişdirin
+  wwcConfigConversationOllamaURLSuccess: Ollama URL uğurla quruldu.
+  wwcConfigConversationOllamaModelInput: Mövcud model {0} -dir. Zəhmət olmasa Ollama
+    üçün bir model daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationOllamaURLInput: Cari URL {0} -dir. Zəhmət olmasa Ollama üçün
+    bir URL daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollamanı uğurla dəyişdirdi.
+  wwcConfigGUIOllamaURLButton: Advertising URL-ni dəyişdirin
+  wwcConfigConversationOllamaModelSuccess: Ollama model dəsti uğurla.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

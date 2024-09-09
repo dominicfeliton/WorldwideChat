@@ -5,75 +5,77 @@ import java.util.Date;
 
 public class PlayerRecord {
 
-	private int attemptedTranslations = 0;
-	private int successfulTranslations = 0;
+    private int attemptedTranslations = 0;
+    private int successfulTranslations = 0;
 
-	private String lastTranslationTime = "";
-	private String playerUUID = "";
-	private String localizationCode = "";
-	
-	private boolean hasBeenSaved = false;
+    private String lastTranslationTime = "";
+    private String playerUUID = "";
+    private String localizationCode = "";
 
-	public PlayerRecord(String lastTranslationTime, String playerUUID, int attemptedTranslations,
-			int successfulTranslations) {
-		this.attemptedTranslations = attemptedTranslations;
-		this.successfulTranslations = successfulTranslations;
-		this.lastTranslationTime = lastTranslationTime;  
-		this.playerUUID = playerUUID;
-	}
+    private boolean hasBeenSaved = false;
 
-	/* Getters */
-	public int getAttemptedTranslations() {
-		return attemptedTranslations;
-	}
+    public PlayerRecord(String lastTranslationTime, String playerUUID, int attemptedTranslations,
+                        int successfulTranslations) {
+        this.attemptedTranslations = attemptedTranslations;
+        this.successfulTranslations = successfulTranslations;
+        this.lastTranslationTime = lastTranslationTime;
+        this.playerUUID = playerUUID;
+    }
 
-	public int getSuccessfulTranslations() {
-		return successfulTranslations;
-	}
+    /* Getters */
+    public int getAttemptedTranslations() {
+        return attemptedTranslations;
+    }
 
-	public String getLastTranslationTime() {
-		return lastTranslationTime;
-	}
+    public int getSuccessfulTranslations() {
+        return successfulTranslations;
+    }
 
-	public String getUUID() {
-		return playerUUID;
-	}
+    public String getLastTranslationTime() {
+        return lastTranslationTime;
+    }
 
-	public String getLocalizationCode() { return localizationCode; }
-	
-	public boolean getHasBeenSaved() {
-		return hasBeenSaved;
-	}
+    public String getUUID() {
+        return playerUUID;
+    }
 
-	/* Setters */
-	public void setAttemptedTranslations(int i) {
-		hasBeenSaved = false;
-		attemptedTranslations = i;
-	}
+    public String getLocalizationCode() {
+        return localizationCode;
+    }
 
-	public void setSuccessfulTranslations(int i) {
-		hasBeenSaved = false;
-		successfulTranslations = i;
-	}
+    public boolean getHasBeenSaved() {
+        return hasBeenSaved;
+    }
 
-	public void setLastTranslationTime() {
-		hasBeenSaved = false;
-		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-		Date date = new Date();
-		lastTranslationTime = formatter.format(date);
-	}
+    /* Setters */
+    public void setAttemptedTranslations(int i) {
+        hasBeenSaved = false;
+        attemptedTranslations = i;
+    }
 
-	public void setUUID(String i) {
-		hasBeenSaved = false;
-		playerUUID = i;
-	}
+    public void setSuccessfulTranslations(int i) {
+        hasBeenSaved = false;
+        successfulTranslations = i;
+    }
 
-	public void setLocalizationCode(String s) {
-		hasBeenSaved = false;
-		localizationCode = s;
-	}
-	
-	public void setHasBeenSaved(boolean i) {
-		hasBeenSaved = i;
-	}
+    public void setLastTranslationTime() {
+        hasBeenSaved = false;
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        lastTranslationTime = formatter.format(date);
+    }
+
+    public void setUUID(String i) {
+        hasBeenSaved = false;
+        playerUUID = i;
+    }
+
+    public void setLocalizationCode(String s) {
+        hasBeenSaved = false;
+        localizationCode = s;
+    }
+
+    public void setHasBeenSaved(boolean i) {
+        hasBeenSaved = i;
+    }
 }

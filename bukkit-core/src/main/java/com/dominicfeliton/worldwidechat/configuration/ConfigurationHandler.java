@@ -2,1406 +2,681 @@ package com.dominicfeliton.worldwidechat.configuration;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
-import com.dominicfeliton.worldwidechat.util.*;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.util.Metrics;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
-import com.mongodb.MongoException;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.*;
-import com.mongodb.client.result.DeleteResult;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.bson.Document;
-import org.bson.conversions.Bson;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.event.EventPriority;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.threeten.bp.Instant;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.Reader;
 import java.nio.charset.StandardCharsets;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
 public class ConfigurationHandler {
 
-	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = main.getServerFactory().getCommonRefs();
-	private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    private WorldwideChat main = WorldwideChat.instance;
+    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    private ConfigurationGenerator configGen = new ConfigurationGenerator(this);
 
-	private File configFile;
-	private YamlConfiguration mainConfig;
+    private File configFile;
+    private YamlConfiguration mainConfig;
+    private YamlConfiguration aiConfig;
 
-	private File blacklistFile;
-	private YamlConfiguration blacklistConfig;
+    private File aiFile;
+    private File blacklistFile;
+    private YamlConfiguration blacklistConfig;
 
-	private ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 
-	/* Init Main Config Method */
-	public void initMainConfig() {
-		/* Init config file */
-		configFile = new File(main.getDataFolder(), "config.yml");
+    /* Init Main Config Method */
+    public void initMainConfig() {
+        /* Init config file */
+        String name = "config.yml";
+        configFile = new File(main.getDataFolder(), name);
+        mainConfig = configGen.setupConfig(configFile);
+        saveMainConfig(false);
+        YamlConfiguration templateConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(main.getResource(name), StandardCharsets.UTF_8));
 
-		/* Generate config file, if it does not exist */
-		if (!configFile.exists()) {
-			main.saveResource("config.yml", false);
-		}
+        /* Get plugin lang */
+        if (refs.isSupportedLang(mainConfig.getString("General.pluginLang"), "local")) {
+            main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
+            return;
+        }
 
-		/* Load main config */
-		mainConfig = YamlConfiguration.loadConfiguration(configFile);
+        mainConfig.set("General.pluginLang", "en");
+        main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
+    }
 
-		/* Add default options, if they do not exist */
-		Reader mainConfigStream = new InputStreamReader(main.getResource("config.yml"), StandardCharsets.UTF_8);
-		mainConfig.setDefaults(YamlConfiguration.loadConfiguration(mainConfigStream));
+    public void initBlacklistConfig() {
+        refs.debugMsg("Loading blacklist...");
 
-		mainConfig.options().copyDefaults(true);
-		saveMainConfig(false);
+        /* Init config file */
+        String name = "blacklist.yml";
+        blacklistFile = new File(main.getDataFolder(), name);
+        blacklistConfig = configGen.setupConfig(blacklistFile);
+        YamlConfiguration templateConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(main.getResource(name), StandardCharsets.UTF_8));
 
-		/* Get plugin lang */
-		if (refs.isSupportedLang(mainConfig.getString("General.pluginLang"), "local")) {
-			main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
-			return;
-		}
+        /* Validate the configuration */
+        if (!blacklistConfig.isList("bannedWords")) {
+            main.getLogger().warning(refs.getPlainMsg("wwcBlacklistBadFormat"));
+            blacklistConfig = null;
+            return;
+        }
+        List<String> bannedWords = blacklistConfig.getStringList("bannedWords");
+        if (bannedWords == null || bannedWords.contains(null)) {
+            main.getLogger().warning(refs.getPlainMsg("wwcBlacklistBadFormat"));
+            blacklistConfig = null;
+            return;
+        }
 
-		mainConfig.set("General.pluginLang", "en");
-		main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
-	}
+        main.setBlacklistTerms(bannedWords);
+        if (main.isBlacklistEnabled()) {
+            main.getLogger().info(refs.getPlainMsg("wwcBlacklistLoaded",
+                    new String[]{"&6" + bannedWords.size()},
+                    "&d"));
+        }
+    }
 
-	/* Init Messages Method */
-	public void initMessagesConfigs() {
-		// Init ALL message configs
-		main.getLogger().warning("Importing/upgrading localization files...");
-		Set<SupportedLang> uniqueLangs = new HashSet<>(supportedPluginLangCodes.values());
-		for (SupportedLang eaLang : uniqueLangs) {
-			String eaStr = eaLang.getLangCode();
-			refs.debugMsg("Checking " + eaStr + "...");
-			YamlConfiguration currConfig = generateMessagesConfig(eaStr);
-			if (currConfig == null) {
-				main.getLogger().warning(refs.serial(refs.getFancyMsg("wwclLangNotLoadedConsole", new String[] {"&c"+eaStr}, "&e", null)));
-				continue;
-			}
+    public void initAISettings() {
+        refs.debugMsg("Loading AI settings...");
 
-			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
-		}
-		main.getLogger().warning("Done.");
-	}
+        String name = "ai-settings.yml";
+        aiFile = new File(main.getDataFolder(), name);
+        aiConfig = configGen.setupConfig(aiFile);
+        YamlConfiguration templateConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(main.getResource(name), StandardCharsets.UTF_8));
 
-	public YamlConfiguration generateMessagesConfig(String inLocalLang) {
-		/* Init config file */
-		File msgFile = new File(main.getDataFolder(), "messages-" + inLocalLang + ".yml");
-		if (main.getResource("messages-" + inLocalLang + ".yml") == null) {
-			refs.debugMsg("!!! Skipping " + inLocalLang + ", not found in default resources??");
-			return null;
-		}
+        /* Validate the configuration */
+        // systemPrompt (chatGPTDefaultSystemPrompt should always be overwritten)
+        aiConfig.set("chatGPTDefaultSystemPrompt", templateConfig.getString("chatGPTDefaultSystemPrompt"));
+        aiConfig.set("ollamaDefaultSystemPrompt", templateConfig.getString("ollamaDefaultSystemPrompt"));
 
-		/* Save default messages file if it does not exist */
-		if (!msgFile.exists()) {
-			main.saveResource("messages-" + inLocalLang + ".yml", true);
+        String systemPrompt = "";
+        if (mainConfig.getBoolean("Translator.useChatGPT")) {
+            refs.debugMsg("ChatGPT sys prompt");
+            systemPrompt = aiConfig.getString("chatGPTOverrideSystemPrompt").equalsIgnoreCase("default") ?
+                    aiConfig.getString("chatGPTDefaultSystemPrompt") :
+                    aiConfig.getString("chatGPTOverrideSystemPrompt").replace("{default}", aiConfig.getString("chatGPTDefaultSystemPrompt"));
+            if (systemPrompt == null) {
+                main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
+                systemPrompt = templateConfig.getString("chatGPTDefaultSystemPrompt");
+            }
+        } else {
+            refs.debugMsg("ollama sys prompt");
+            systemPrompt = aiConfig.getString("ollamaOverrideSystemPrompt").equalsIgnoreCase("default") ?
+                    aiConfig.getString("ollamaDefaultSystemPrompt") :
+                    aiConfig.getString("ollamaOverrideSystemPrompt").replace("{default}", aiConfig.getString("ollamaDefaultSystemPrompt"));
+            if (systemPrompt == null) {
+                main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
+                systemPrompt = templateConfig.getString("ollamaDefaultSystemPrompt");
+            }
+        }
+        main.setAISystemPrompt(systemPrompt);
 
-			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(msgFile);
+        // supportedLangs
+        // TODO: copy supportedLangs to mem instead of setting.
+        if (!aiConfig.isList("supportedLangs")) {
+            main.getLogger().warning(refs.getPlainMsg("wwcAiSupportedLangsBad"));
+            aiConfig.set("supportedLangs", templateConfig.getString("supportedLangs"));
+            return;
+        }
 
-			tempConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
+        if (mainConfig.getBoolean("Translator.useChatGPT") || mainConfig.getBoolean("Translator.useOllama")) {
+            main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcAiSystemPromptLoaded"));
+        }
+    }
 
-			saveCustomConfig(tempConfig, msgFile, false);
-		}
+    /* Init Messages Method */
+    public void initMessagesConfigs() {
+        // Init ALL message configs
+        main.getLogger().warning("Importing/upgrading localization files...");
+        Set<SupportedLang> uniqueLangs = new HashSet<>(supportedPluginLangCodes.values());
+        for (SupportedLang eaLang : uniqueLangs) {
+            String eaStr = eaLang.getLangCode();
+            refs.debugMsg("Checking " + eaStr + "...");
+            YamlConfiguration currConfig = generateMessagesConfig(eaStr);
+            if (currConfig == null) {
+                main.getLogger().warning(refs.getPlainMsg("wwclLangNotLoadedConsole",
+                        new String[]{"&c" + eaStr},
+                        "&e"));
+                continue;
+            }
 
-		/* Load config */
-		YamlConfiguration msgConfig = YamlConfiguration.loadConfiguration(msgFile);
+            pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
+        }
+        main.getLogger().warning("Done.");
+    }
 
-		/* Check if version value is out of date...*/
-		if (msgConfig.getString("DoNotTouchThis.Version") == null || !msgConfig.getString("DoNotTouchThis.Version").equals(WorldwideChat.messagesConfigVersion)) {
-			refs.debugMsg("Upgrading out-of-date messages config!");
-			HashMap<String, String> oldOverrides = new HashMap<>();
+    public YamlConfiguration generateMessagesConfig(String inLocalLang) {
+        /* Init config file */
+        File msgFile = new File(main.getDataFolder(), "messages-" + inLocalLang + ".yml");
+        if (main.getResource("messages-" + inLocalLang + ".yml") == null) {
+            refs.debugMsg("!!! Skipping " + inLocalLang + ", not found in default resources??");
+            return null;
+        }
 
-			/* Copy overrides section */
-			if (msgConfig.getConfigurationSection("Overrides") != null) {
-				for (String eaKey : msgConfig.getConfigurationSection("Overrides").getKeys(true)) {
-					oldOverrides.put(eaKey, msgConfig.getString("Overrides." + eaKey));
-				}
-			}
+        /* Save default messages file if it does not exist */
+        if (!msgFile.exists()) {
+            main.saveResource("messages-" + inLocalLang + ".yml", true);
 
-			/* Delete old config */
-			if (msgFile.exists() && !msgFile.delete()) {
-				refs.debugMsg("Could not delete old messages file for " + inLocalLang + "! Perhaps bad permissions?");
-				return null;
-			}
+            YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(msgFile);
 
-			/* Copy newest config */
-			main.saveResource("messages-" + inLocalLang + ".yml", true);
-			msgConfig = YamlConfiguration.loadConfiguration(msgFile);
-			msgConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
+            tempConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
 
-			/* Paste overrides section */
-			if (!oldOverrides.isEmpty()) {
-				for (Map.Entry<String, String> entry : oldOverrides.entrySet()) {
-					msgConfig.set("Overrides." + entry.getKey(), entry.getValue());
-				}
-			}
+            saveCustomConfig(tempConfig, msgFile, false);
+        }
 
-			/* Save messages config */
-			saveCustomConfig(msgConfig, msgFile, false);
+        /* Load config */
+        YamlConfiguration msgConfig = YamlConfiguration.loadConfiguration(msgFile);
 
-			/* Success :) */
-			refs.debugMsg("Upgrade successful.");
-		}
+        /* Check if version value is out of date...*/
+        if (msgConfig.getString("DoNotTouchThis.Version") == null || !msgConfig.getString("DoNotTouchThis.Version").equals(WorldwideChat.messagesConfigVersion)) {
+            refs.debugMsg("Upgrading out-of-date messages config!");
+            HashMap<String, String> oldOverrides = new HashMap<>();
 
-		return msgConfig;
-	}
+            /* Copy overrides section */
+            if (msgConfig.getConfigurationSection("Overrides") != null) {
+                for (String eaKey : msgConfig.getConfigurationSection("Overrides").getKeys(true)) {
+                    oldOverrides.put(eaKey, msgConfig.getString("Overrides." + eaKey));
+                }
+            }
 
-	public YamlConfiguration getCustomMessagesConfig(String inLocalLang) {
-		return pluginLangConfigs.get(inLocalLang);
-	}
+            /* Delete old config */
+            if (msgFile.exists() && !msgFile.delete()) {
+                refs.debugMsg("Could not delete old messages file for " + inLocalLang + "! Perhaps bad permissions?");
+                return null;
+            }
 
-	public void initBlacklistConfig() {
-		refs.debugMsg("Loading blacklist...");
+            /* Copy newest config */
+            main.saveResource("messages-" + inLocalLang + ".yml", true);
+            msgConfig = YamlConfiguration.loadConfiguration(msgFile);
+            msgConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
 
-		/* Init config file */
-		blacklistFile = new File(main.getDataFolder(), "blacklist.yml");
+            /* Paste overrides section */
+            if (!oldOverrides.isEmpty()) {
+                for (Map.Entry<String, String> entry : oldOverrides.entrySet()) {
+                    msgConfig.set("Overrides." + entry.getKey(), entry.getValue());
+                }
+            }
 
-		/* Generate config file, if it does not exist */
-		if (!blacklistFile.exists()) {
-			main.saveResource("blacklist.yml", false);
-		}
+            /* Save messages config */
+            saveCustomConfig(msgConfig, msgFile, false);
 
-		/* Load main config */
-		blacklistConfig = YamlConfiguration.loadConfiguration(blacklistFile);
+            /* Success :) */
+            refs.debugMsg("Upgrade successful.");
+        }
 
-		/* Add default options, if they do not exist */
-		Reader blacklistConfigStream = new InputStreamReader(main.getResource("blacklist.yml"), StandardCharsets.UTF_8);
-		blacklistConfig.setDefaults(YamlConfiguration.loadConfiguration(blacklistConfigStream));
+        return msgConfig;
+    }
 
-		/* Validate the configuration */
-		if (!blacklistConfig.isList("bannedWords")) {
-			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
-			blacklistConfig = null;
-			return;
-		}
-		List<String> bannedWords = blacklistConfig.getStringList("bannedWords");
-		if (bannedWords == null || bannedWords.contains(null)) {
-			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
-			blacklistConfig = null;
-			return;
-		}
+    public YamlConfiguration getCustomMessagesConfig(String inLocalLang) {
+        return pluginLangConfigs.get(inLocalLang);
+    }
 
-		blacklistConfig.options().copyDefaults(true);
-		saveCustomConfig(blacklistConfig, blacklistFile, false);
-
-		main.setBlacklistTerms(bannedWords);
-		if (main.isBlacklistEnabled()) {
-			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcBlacklistLoaded", new String[] {bannedWords.size()+""}, null));
-		}
-	}
-
-	/* Load Main Settings Method */
-	public void loadMainSettings() {
-		/* Get rest of General Settings */
-		// Debug Mode
-		// Not stored in main, since we want debug MSGs ASAP
-		if (mainConfig.getBoolean("General.enableDebugMode")) {
-			main.getLogger().warning(refs.getMsg("wwcConfigEnabledDebugMode", null));
-		}
-		// Prefix
-		try {
-			if (!mainConfig.getString("General.prefixName").equalsIgnoreCase("Default")
-					&& !mainConfig.getString("General.prefixName").equalsIgnoreCase("WWC")) {
-				main.setPrefixName(mainConfig.getString("General.prefixName"));
-			} else {
-				main.setPrefixName("WWC"); // If default the entry for prefix, interpret as WWC
-			}
-		} catch (Exception e) {
-			main.setPrefixName("WWC");
-			main.getLogger().warning(refs.getMsg("wwcConfigInvalidPrefixSettings", null));
-		}
-		// Fatal Async Timeout Delay
-		try {
-			if (mainConfig.getInt("General.fatalAsyncTaskTimeout") > 7) {
-				WorldwideChat.translatorFatalAbortSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout");
-				WorldwideChat.translatorConnectionTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
-				WorldwideChat.asyncTasksTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
-			} else {
-				main.getLogger().warning(refs.getMsg("wwcConfigInvalidFatalAsyncTimeout", null));
-			}
-		} catch (Exception e) {
-			main.getLogger().warning(refs.getMsg("wwcConfigInvalidFatalAsyncTimeout", null));
-		}
-		// bStats
-		if (mainConfig.getBoolean("General.enablebStats")) {
-			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
-			main.getLogger()
-					.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEnabledbStats", null));
-		} else {
-			main.getLogger().warning(refs.getMsg("wwcConfigDisabledbStats", null));
-		}
-		// Update Checker Delay
-		try {
-			if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
-				main.setUpdateCheckerDelay(86400);
-				main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay", null));
-			} else {
-				main.setUpdateCheckerDelay(mainConfig.getInt("General.updateCheckerDelay"));
-			}
-		} catch (Exception e) {
-			main.setUpdateCheckerDelay(86400);
-			main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay", null));
-		}
-		// Sync User Data Delay
-		try {
-			if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
-				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigSyncDelayEnabled", mainConfig.getInt("General.syncUserDataDelay") + "", null));
-				main.setSyncUserDataDelay(mainConfig.getInt("General.syncUserDataDelay"));
-			} else {
-				main.setSyncUserDataDelay(7200);
-				main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
-			}
-		} catch (Exception e) {
-			main.setSyncUserDataDelay(7200);
-			main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
-		}
-		// Sync User Localizations
-		try {
-			main.setSyncUserLocal(mainConfig.getBoolean("General.syncUserLocalization"));
-		} catch (Exception e) {
-			main.setSyncUserLocal(true);
-			main.getLogger().warning(refs.getMsg("wwcConfigSyncUserLocalInvalid", null));
-		}
-		// Rate limit Settings
-		try {
-			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigRateLimitEnabled", "" + mainConfig.getInt("Translator.rateLimit"), null));
-				main.setGlobalRateLimit(mainConfig.getInt("Translator.rateLimit"));
-			} else {
-				main.setGlobalRateLimit(0);
-				main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
-			}
-		} catch (Exception e) {
-			main.setGlobalRateLimit(0);
-			main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
-		}
-		// Per-message Char Limit Settings
-		try {
-			if (mainConfig.getInt("Translator.messageCharLimit") >= 0 && mainConfig.getInt("Translator.messageCharLimit") <= 255) {
-				main.setMessageCharLimit(mainConfig.getInt("Translator.messageCharLimit"));
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigMessageCharLimitEnabled", "" + mainConfig.getInt("Translator.messageCharLimit"), null));
-			} else {
-				main.setMessageCharLimit(255);
-				main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
-			}
-		} catch (Exception e) {
-			main.setMessageCharLimit(255);
-			main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
-		}
-		// Chat Listener Priority
-		try {
-			EventPriority eventPriority = EventPriority.valueOf(mainConfig.getString("Chat.chatListenerPriority").toUpperCase());
-			main.setChatPriority(eventPriority);
-			main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEventPrioritySet", mainConfig.getString("Chat.chatListenerPriority"), null));
-		} catch (Exception e) {
-			main.setChatPriority(EventPriority.HIGHEST);
-			main.getLogger().warning(refs.getMsg("wwcConfigEventPriorityInvalid", "HIGHEST",null));
-		}
-		// Vault Support
-		try {
+    /* Load Main Settings Method */
+    public void loadMainSettings() {
+        /* Get rest of General Settings */
+        // Debug Mode
+        // Not stored in main, since we want debug MSGs ASAP
+        if (mainConfig.getBoolean("General.enableDebugMode")) {
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigEnabledDebugMode"));
+        }
+        // Prefix
+        try {
+            if (!mainConfig.getString("General.prefixName").equalsIgnoreCase("Default")
+                    && !mainConfig.getString("General.prefixName").equalsIgnoreCase("WWC")) {
+                main.setPrefixName(mainConfig.getString("General.prefixName"));
+            } else {
+                main.setPrefixName("WWC"); // If default the entry for prefix, interpret as WWC
+            }
+        } catch (Exception e) {
+            main.setPrefixName("WWC");
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigInvalidPrefixSettings"));
+        }
+        // Fatal Async Timeout Delay
+        try {
+            if (mainConfig.getInt("General.fatalAsyncTaskTimeout") > 7) {
+                WorldwideChat.translatorFatalAbortSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout");
+                WorldwideChat.translatorConnectionTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
+                WorldwideChat.asyncTasksTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
+            } else {
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigInvalidFatalAsyncTimeout"));
+            }
+        } catch (Exception e) {
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigInvalidFatalAsyncTimeout"));
+        }
+        // bStats
+        if (mainConfig.getBoolean("General.enablebStats")) {
+            Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
+            main.getLogger()
+                    .info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcConfigEnabledbStats"));
+        } else {
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigDisabledbStats"));
+        }
+        // Update Checker Delay
+        try {
+            if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
+                main.setUpdateCheckerDelay(86400);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigBadUpdateDelay"));
+            } else {
+                main.setUpdateCheckerDelay(mainConfig.getInt("General.updateCheckerDelay"));
+            }
+        } catch (Exception e) {
+            main.setUpdateCheckerDelay(86400);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigBadUpdateDelay"));
+        }
+        // Sync User Data Delay
+        try {
+            if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
+                main.getLogger().info(
+                        refs.getPlainMsg("wwcConfigSyncDelayEnabled",
+                                "&6" + mainConfig.getInt("General.syncUserDataDelay"),
+                                "&d"));
+                main.setSyncUserDataDelay(mainConfig.getInt("General.syncUserDataDelay"));
+            } else {
+                main.setSyncUserDataDelay(7200);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigSyncDelayInvalid"));
+            }
+        } catch (Exception e) {
+            main.setSyncUserDataDelay(7200);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigSyncDelayInvalid"));
+        }
+        // Sync User Localizations
+        try {
+            main.setSyncUserLocal(mainConfig.getBoolean("General.syncUserLocalization"));
+        } catch (Exception e) {
+            main.setSyncUserLocal(true);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigSyncUserLocalInvalid"));
+        }
+        // Rate limit Settings
+        try {
+            if (mainConfig.getInt("Translator.rateLimit") >= 0) {
+                main.getLogger().info(refs.getPlainMsg("wwcConfigRateLimitEnabled",
+                        "&6" + mainConfig.getInt("Translator.rateLimit"),
+                        "&d"));
+                main.setGlobalRateLimit(mainConfig.getInt("Translator.rateLimit"));
+            } else {
+                main.setGlobalRateLimit(0);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigRateLimitInvalid"));
+            }
+        } catch (Exception e) {
+            main.setGlobalRateLimit(0);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigRateLimitInvalid"));
+        }
+        // Per-message Char Limit Settings
+        try {
+            if (mainConfig.getInt("Translator.messageCharLimit") >= 0 && mainConfig.getInt("Translator.messageCharLimit") <= 255) {
+                main.setMessageCharLimit(mainConfig.getInt("Translator.messageCharLimit"));
+                main.getLogger().info(refs.getPlainMsg("wwcConfigMessageCharLimitEnabled",
+                        "&6" + mainConfig.getInt("Translator.messageCharLimit"),
+                        "&d"));
+            } else {
+                main.setMessageCharLimit(255);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigMessageCharLimitInvalid"));
+            }
+        } catch (Exception e) {
+            main.setMessageCharLimit(255);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigMessageCharLimitInvalid"));
+        }
+        // Chat Listener Priority
+        try {
+            EventPriority eventPriority = EventPriority.valueOf(mainConfig.getString("Chat.chatListenerPriority").toUpperCase());
+            main.setChatPriority(eventPriority);
+            main.getLogger().info(refs.getPlainMsg("wwcConfigEventPrioritySet",
+                    "&6" + mainConfig.getString("Chat.chatListenerPriority"),
+                    "&d"));
+        } catch (Exception e) {
+            main.setChatPriority(EventPriority.HIGHEST);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigEventPriorityInvalid",
+                    "&6HIGHEST",
+                    ""));
+        }
+        // Vault Support
+        try {
             main.setVaultSupport(mainConfig.getBoolean("Chat.useVault"));
-		} catch (Exception e) {
-			main.setVaultSupport(true);
-			main.getLogger().warning(refs.getMsg("wwcConfigVaultSupportInvalid", null));
-		}
-		// Blacklist
-		try {
-			main.setBlacklistStatus(mainConfig.getBoolean("Chat.enableBlacklist"));
-		} catch (Exception e) {
-			main.setBlacklistStatus(true);
-			main.getLogger().warning(refs.getMsg("wwcBlacklistBadFormat", null));
-		}
-		// Separate Chat Channel Prefix
-		try {
-			main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.icon"));
-		} catch (Exception e) {
-			main.setTranslateIcon("globe");
-			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelIconInvalid",
-					new String[] {refs.serial(main.getTranslateIcon())},
-					null));
-		}
-		// Separate Chat Channel Format
-		try {
-			String format = mainConfig.getString("Chat.separateChatChannel.format");
-			main.setTranslateFormat(format);
+        } catch (Exception e) {
+            main.setVaultSupport(true);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigVaultSupportInvalid"));
+        }
+        // Blacklist
+        try {
+            main.setBlacklistStatus(mainConfig.getBoolean("Chat.enableBlacklist"));
+        } catch (Exception e) {
+            main.setBlacklistStatus(true);
+            main.getLogger().warning(refs.getPlainMsg("wwcBlacklistBadFormat"));
+        }
+        // Separate Chat Channel Prefix
+        try {
+            main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.icon"));
+        } catch (Exception e) {
+            main.setTranslateIcon("globe");
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigChatChannelIconInvalid",
+                    "&6" + refs.serial(main.getTranslateIcon()),
+                    ""));
+        }
+        // Separate Chat Channel Format
+        try {
+            String format = mainConfig.getString("Chat.separateChatChannel.format");
+            main.setTranslateFormat(format);
 
-			int count = format.length() - format.replace("%", "").length();
-			if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigPAPIInstalled", null));
-			} else if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") == null) {
-				main.getLogger().warning(refs.getMsg("wwcConfigPAPINotInstalled", null));
-			}
-		} catch (Exception e) {
-			main.setTranslateFormat("{prefix}{username}{suffix}:");
-			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelFormatInvalid",
-					new String[] {"{prefix}{username}{suffix}:"},
-					null));
-		}
-		// Hover Text Format
-		try {
-			if (mainConfig.getBoolean("Chat.sendIncomingHoverTextChat") ||
-					mainConfig.getBoolean("Chat.sendOutgoingHoverTextChat")) {
-				String format = mainConfig.getString("Chat.separateChatChannel.hoverFormat");
-				main.setTranslateHoverFormat(format);
-			} else {
-				refs.debugMsg("Not setting hover text, setting to nothing");
-				main.setTranslateHoverFormat("");
-			}
+            int count = format.length() - format.replace("%", "").length();
+            if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+                main.getLogger().info(refs.getPlainMsg("wwcConfigPAPIInstalled", "", "&d"));
+            } else if (count > 1 && main.getServer().getPluginManager().getPlugin("PlaceholderAPI") == null) {
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigPAPINotInstalled"));
+            }
+        } catch (Exception e) {
+            main.setTranslateFormat("{prefix}{username}{suffix}:");
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigChatChannelFormatInvalid",
+                    "&6{prefix}{username}{suffix}:",
+                    ""));
+        }
+        // Hover Text Format
+        try {
+            if (mainConfig.getBoolean("Chat.sendIncomingHoverTextChat") ||
+                    mainConfig.getBoolean("Chat.sendOutgoingHoverTextChat")) {
+                String format = mainConfig.getString("Chat.separateChatChannel.hoverFormat");
+                main.setTranslateHoverFormat(format);
+            } else {
+                refs.debugMsg("Not setting hover text, setting to nothing");
+                main.setTranslateHoverFormat("");
+            }
 
-			// PAPI detection not needed, already sufficiently warned by Format
-		} catch (Exception e) {
-			main.setTranslateHoverFormat("&o{local:wwcOrigHover}:");
-			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelHoverFormatInvalid",
-					new String[] {"&o{local:wwcOrigHover}:"},
-					null));
-		}
-		// Always Force Separate Chat Channel
-		try {
-			if (mainConfig.getBoolean("Chat.separateChatChannel.force")) {
-				main.setForceSeparateChatChannel(true);
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigForceChatChannelEnabled", null));
-			} else {
-				main.setForceSeparateChatChannel(false);
-			}
-		} catch (Exception e) {
-			main.setForceSeparateChatChannel(false);
-			main.getLogger().warning(refs.getMsg("wwcConfigChatChannelInvalid", null));
-		}
-		// Cache Settings
-		try {
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
-				main.getLogger()
-						.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigCacheEnabled", mainConfig.getInt("Translator.translatorCacheSize") + "", null));
-			    // Set cache to size beforehand, so we can avoid expandCapacity :)
-				main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
-			} else {
-				main.setCacheProperties(0);
-				main.getLogger().warning(refs.getMsg("wwcConfigCacheDisabled", null));
-			}
-		} catch (Exception e) {
-			main.setCacheProperties(100);
-			main.getLogger().warning(refs.getMsg("wwcConfigCacheInvalid", null));
-		}
-		// Persistent Cache Settings
-		try {
-			if (mainConfig.getBoolean("Translator.enablePersistentCache")) {
-				main.getLogger()
-						.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigPersistentCacheEnabled", null));
-				main.setPersistentCache(true);
-			} else {
-				main.setPersistentCache(false);
-			}
-		} catch (Exception e) {
-			main.setPersistentCache(false);
-			main.getLogger().warning(refs.getMsg("wwcConfigPersistentCacheInvalid", null));
-		}
-		// Error Limit Settings
-		try {
-			if (mainConfig.getInt("Translator.errorLimit") > 0) {
-				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorLimitEnabled", mainConfig.getInt("Translator.errorLimit") + "", null));
-				main.setErrorLimit(mainConfig.getInt("Translator.errorLimit"));
-			} else {
-				main.setErrorLimit(5);
-				main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid", null));
-			}
-		} catch (Exception e) {
-			main.setErrorLimit(5);
-			main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid", null));
-		}
-		// List of Errors to Ignore Settings
-		try {
-			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getStringList("Translator.errorsToIgnore"));
-			main.getLogger().info(
-					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess", null));
-		} catch (Exception e) {
-			ArrayList<String> defaultArr = new ArrayList<>(Arrays.asList(new String[] {"confidence", "same as target", "detect the source language", "Unable to find model for specified languages"}));
-			main.setErrorsToIgnore(defaultArr);
-			main.getLogger().warning(refs.getMsg("wwcConfigErrorsToIgnoreInvalid", null));
-		}
-	}
-	
-	/* Storage Settings */
-	public void loadStorageSettings() {
-		if (mainConfig.getBoolean("Storage.useSQL")) {
-			try {
-				SQLUtils sql = new SQLUtils(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"),
-						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"),
-						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
-				sql.connect();
-				main.setSqlSession(sql);
-				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "SQL", null));
-			} catch (Exception e) {
-				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "SQL", null));
-				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				if (main.getSqlSession() != null) {
-					main.getSqlSession().disconnect();
-					main.setSqlSession(null);
-				}
-				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback", null));
-			}
-		} else if (mainConfig.getBoolean("Storage.useMongoDB")) {
-			try {
-				MongoDBUtils mongo = new MongoDBUtils(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"),
-						mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"),
-						mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
-				mongo.connect();
-				main.setMongoSession(mongo);
-				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "MongoDB", null));
-			} catch (Exception e) {
-				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "MongoDB", null));
-				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				if (main.getMongoSession() != null) {
-					main.getMongoSession().disconnect();
-					main.setMongoSession(null);
-				}
-				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback", null));
-			}
-		} else if (mainConfig.getBoolean("Storage.usePostgreSQL")) {
-			try {
-				PostgresUtils postgres = new PostgresUtils(mainConfig.getString("Storage.postgresHostname"), mainConfig.getString("Storage.postgresPort"),
-						mainConfig.getString("Storage.postgresDatabaseName"), mainConfig.getString("Storage.postgresUsername"), mainConfig.getString("Storage.postgresPassword"),
-						(List<String>) mainConfig.getList("Storage.postgresOptionalArgs"), mainConfig.getBoolean("Storage.postgresSSL"));
-				postgres.connect();
-				main.setPostgresSession(postgres);
-				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "Postgres", null));
-			} catch (Exception e) {
-				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "Postgres", null));
-				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				if (main.getPostgresSession() != null) {
-					main.getPostgresSession().disconnect();
-					main.setPostgresSession(null);
-				}
-				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback", null));
-			}
-		} else {
-			main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigYAMLDefault", null));
-		}
-	}
+            // PAPI detection not needed, already sufficiently warned by Format
+        } catch (Exception e) {
+            main.setTranslateHoverFormat("&o{local:wwcOrigHover}:");
+            // TODO: Escape &o?
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigChatChannelHoverFormatInvalid",
+                    "&o{local:wwcOrigHover}:",
+                    "&d"));
+        }
+        // Always Force Separate Chat Channel
+        try {
+            if (mainConfig.getBoolean("Chat.separateChatChannel.force")) {
+                main.setForceSeparateChatChannel(true);
+                main.getLogger().info(refs.getPlainMsg("wwcConfigForceChatChannelEnabled",
+                        "",
+                        "&d"));
+            } else {
+                main.setForceSeparateChatChannel(false);
+            }
+        } catch (Exception e) {
+            main.setForceSeparateChatChannel(false);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigChatChannelInvalid"));
+        }
+        // Cache Settings
+        try {
+            if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
+                main.getLogger()
+                        .info(refs.getPlainMsg("wwcConfigCacheEnabled",
+                                "&6" + mainConfig.getInt("Translator.translatorCacheSize"),
+                                "&d"));
+                // Set cache to size beforehand, so we can avoid expandCapacity :)
+                main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
+            } else {
+                main.setCacheProperties(0);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigCacheDisabled"));
+            }
+        } catch (Exception e) {
+            main.setCacheProperties(100);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigCacheInvalid"));
+        }
+        // Persistent Cache Settings
+        try {
+            if (mainConfig.getBoolean("Translator.enablePersistentCache")) {
+                main.getLogger()
+                        .info(refs.getPlainMsg("wwcConfigPersistentCacheEnabled",
+                                "",
+                                "&d"));
+                main.setPersistentCache(true);
+            } else {
+                main.setPersistentCache(false);
+            }
+        } catch (Exception e) {
+            main.setPersistentCache(false);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigPersistentCacheInvalid"));
+        }
+        // Error Limit Settings
+        try {
+            if (mainConfig.getInt("Translator.errorLimit") > 0) {
+                main.getLogger().info(
+                        refs.getPlainMsg("wwcConfigErrorLimitEnabled",
+                                "&6" + mainConfig.getInt("Translator.errorLimit"),
+                                "&d"));
+                main.setErrorLimit(mainConfig.getInt("Translator.errorLimit"));
+            } else {
+                main.setErrorLimit(5);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigErrorLimitInvalid"));
+            }
+        } catch (Exception e) {
+            main.setErrorLimit(5);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigErrorLimitInvalid"));
+        }
+        // List of Errors to Ignore Settings
+        try {
+            main.setErrorsToIgnore((ArrayList<String>) mainConfig.getStringList("Translator.errorsToIgnore"));
+            main.getLogger().info(
+                    refs.getPlainMsg("wwcConfigErrorsToIgnoreSuccess",
+                            "",
+                            "&d"));
+        } catch (Exception e) {
+            ArrayList<String> defaultArr = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
+            main.setErrorsToIgnore(defaultArr);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigErrorsToIgnoreInvalid"));
+        }
+    }
 
-	/* Translator Settings */
-	public String loadTranslatorSettings() {
-		String outName = "Invalid";
-		String attemptedTranslator = "";
-		final int maxTries = 3;
-		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
-			if (refs.serverIsStopping()) return outName;
-			try {
-				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}, null));
-				for (Map.Entry<String, String> eaPair : CommonRefs.translatorPairs.entrySet()) {
-					if (mainConfig.getBoolean(eaPair.getKey())) {
-						attemptedTranslator = eaPair.getValue();
-						refs.getTranslatorResult(eaPair.getValue(), true);
-						outName = eaPair.getValue();
-						break;
-					}
-				}
-				if (!outName.equals("Invalid")) break;
-			} catch (Exception e) {
-				main.getLogger().severe("(" + attemptedTranslator + ") " + e.getMessage());
-				e.printStackTrace();
-				outName = "Invalid";
-			}
-		}
-		if (outName.equals("Invalid")) {
-			main.getLogger().severe(refs.getMsg("wwcInvalidTranslator", null));
-		} else {
-			main.getLogger().info(ChatColor.GREEN
-					+ refs.getMsg("wwcConfigConnectionSuccess", outName, null));
-		}
-		refs.debugMsg("Landing on " + outName);
-		return outName;
-	}
-	
-	/* Main config save method */
-	public void saveMainConfig(boolean async) {
-		if (async) {
-			refs.debugMsg("Saving main config async!");
-			BukkitRunnable out = new BukkitRunnable() {
-				@Override
-				public void run() {
-					saveMainConfig(false);
-				}
-			};
-			wwcHelper.runAsync(out, ASYNC, null);
-			return;
-		}
-		refs.debugMsg("Saving main config sync!");
-		saveCustomConfig(mainConfig, configFile, false);
-	}
+    /* Storage Settings */
+    public void loadStorageSettings() {
+        if (mainConfig.getBoolean("Storage.useSQL")) {
+            try {
+                SQLUtils sql = new SQLUtils(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"),
+                        mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"),
+                        (List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
+                sql.connect();
+                main.setSqlSession(sql);
+                main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
+                        "&6SQL",
+                        "&a"));
+            } catch (Exception e) {
+                main.getLogger().severe(refs.getPlainMsg("wwcConfigConnectionFail",
+                        "&6SQL",
+                        "&a"));
+                main.getLogger().warning(ExceptionUtils.getMessage(e));
+                if (main.getSqlSession() != null) {
+                    main.getSqlSession().disconnect();
+                    main.setSqlSession(null);
+                }
+                main.getLogger().severe(refs.getPlainMsg("wwcConfigYAMLFallback"));
+            }
+        } else if (mainConfig.getBoolean("Storage.useMongoDB")) {
+            try {
+                MongoDBUtils mongo = new MongoDBUtils(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"),
+                        mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"),
+                        mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
+                mongo.connect();
+                main.setMongoSession(mongo);
+                main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
+                        "&6MongoDB",
+                        "&a"));
+            } catch (Exception e) {
+                main.getLogger().severe(refs.getPlainMsg("wwcConfigConnectionFail",
+                        "&6MongoDB",
+                        "&a"));
+                main.getLogger().warning(ExceptionUtils.getMessage(e));
+                if (main.getMongoSession() != null) {
+                    main.getMongoSession().disconnect();
+                    main.setMongoSession(null);
+                }
+                main.getLogger().severe(refs.getPlainMsg("wwcConfigYAMLFallback"));
+            }
+        } else if (mainConfig.getBoolean("Storage.usePostgreSQL")) {
+            try {
+                PostgresUtils postgres = new PostgresUtils(mainConfig.getString("Storage.postgresHostname"), mainConfig.getString("Storage.postgresPort"),
+                        mainConfig.getString("Storage.postgresDatabaseName"), mainConfig.getString("Storage.postgresUsername"), mainConfig.getString("Storage.postgresPassword"),
+                        (List<String>) mainConfig.getList("Storage.postgresOptionalArgs"), mainConfig.getBoolean("Storage.postgresSSL"));
+                postgres.connect();
+                main.setPostgresSession(postgres);
+                main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
+                        "&6Postgres",
+                        "&a"));
+            } catch (Exception e) {
+                main.getLogger().severe(refs.getPlainMsg("wwcConfigConnectionFail",
+                        "Postgres",
+                        ""));
+                main.getLogger().warning(ExceptionUtils.getMessage(e));
+                if (main.getPostgresSession() != null) {
+                    main.getPostgresSession().disconnect();
+                    main.setPostgresSession(null);
+                }
+                main.getLogger().severe(refs.getPlainMsg("wwcConfigYAMLFallback"));
+            }
+        } else {
+            main.getLogger().info(refs.getPlainMsg("wwcConfigYAMLDefault",
+                    "",
+                    "&a"));
+        }
+    }
 
-	/* Specific message config save method */
-	public void saveMessagesConfig(String inLang, boolean async) {
-		if (async) {
-			refs.debugMsg("Saving messages config async!");
-			BukkitRunnable out = new BukkitRunnable() {
-				@Override
-				public void run() {
-					saveMessagesConfig(inLang, false);
-				}
-			};
-			wwcHelper.runAsync(out, ASYNC, null);
-			return;
-		}
-		refs.debugMsg("Saving messages config sync!");
-		saveCustomConfig(pluginLangConfigs.get(inLang), new File(main.getDataFolder(), "messages-" + inLang + ".yml"), false);
-	}
-
-	/* Custom config save method */
-	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
-		if (async && main.isEnabled()) {
-			refs.debugMsg("Saving custom config async!");
-			BukkitRunnable out = new BukkitRunnable() {
-				@Override
-				public void run() {
-					saveCustomConfig(inConfig, dest, false);
-				}
-			};
-			wwcHelper.runAsync(out, ASYNC, null);
-			return;
-		}
-		if (inConfig != null && dest != null) {
-			refs.debugMsg("Saving custom config sync!");
-			try {
-				inConfig.save(dest);
-			} catch (IOException e) {
-				e.printStackTrace();
-				Bukkit.getPluginManager().disablePlugin(main);
-				return;
-			}
-		}
-	}
-	
-	/* Sync user data to storage default */
-	public void syncData() throws SQLException, MongoException {
-		syncData(main.getTranslatorName().equalsIgnoreCase("Invalid"));
-	}
-	
-	/* Sync user data to storage */
-	public void syncData(boolean wasPreviouslyInvalid) throws SQLException, MongoException {
-		/* If our translator is Invalid, do not run this code */
-		if (wasPreviouslyInvalid) {
-			return;
-		}
-
-		SQLUtils sql = main.getSqlSession();
-		MongoDBUtils mongo = main.getMongoSession();
-		PostgresUtils postgres = main.getPostgresSession();
-
-		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
-		if (main.isSQLConnValid(true)) {
-			// Our Generic Table Layout: 
-			// | Creation Date | Object Properties |  
-			try (Connection sqlConnection = sql.getConnection()) {
-				/* Sync ActiveTranslator data to corresponding table */
-				// Dynamically construct the SQL statement based on the schema
-				String tableName = "activeTranslators";
-				Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
-
-				// Columns and placeholders for the INSERT part
-				String columns = String.join(",", schema.keySet());
-				String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
-
-				// Dynamically create the ON DUPLICATE KEY UPDATE part
-				String onUpdate = schema.keySet().stream()
-						.map(column -> String.format("%s = VALUES(%s)", column, column))
-						.collect(Collectors.joining(", "));
-
-				String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
-						tableName, columns, placeholders, onUpdate);
-
-				try (PreparedStatement newActiveTranslator = sqlConnection.prepareStatement(sqlStatement)) {
-                    for (Map.Entry<String, ActiveTranslator> entry : main.getActiveTranslators().entrySet()) {
-                        String key = entry.getKey();
-                        ActiveTranslator val = entry.getValue();
-                        if (!val.getHasBeenSaved()) {
-                            int i = 1;
-                            newActiveTranslator.setString(i++, Instant.now().toString());
-                            newActiveTranslator.setString(i++, val.getUUID());
-                            newActiveTranslator.setString(i++, val.getInLangCode());
-                            newActiveTranslator.setString(i++, val.getOutLangCode());
-                            newActiveTranslator.setInt(i++, val.getRateLimit());
-                            newActiveTranslator.setString(i++, val.getRateLimitPreviousTime());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingChatOutgoing());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingChatIncoming());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingBook());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingSign());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingItem());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingEntity());
-
-                            // Add to batch
-                            newActiveTranslator.addBatch();
-                            refs.debugMsg("(SQL) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
-                        }
+    /* Translator Settings */
+    public String loadTranslatorSettings() {
+        String outName = "Invalid";
+        String attemptedTranslator = "";
+        final int maxTries = 3;
+        for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
+            if (refs.serverIsStopping()) return outName;
+            try {
+                main.getLogger().warning(refs.getPlainMsg("wwcTranslatorAttempt",
+                        new String[]{tryNumber + "", maxTries + ""},
+                        ""));
+                for (Map.Entry<String, String> eaPair : CommonRefs.translatorPairs.entrySet()) {
+                    if (mainConfig.getBoolean(eaPair.getKey())) {
+                        attemptedTranslator = eaPair.getValue();
+                        refs.getTranslatorResult(eaPair.getValue(), true);
+                        outName = eaPair.getValue();
+                        break;
                     }
-
-                    // Execute the batch
-					newActiveTranslator.executeBatch();
-					refs.debugMsg("(SQL) Batch executed, data saved or updated.");
-				}
-
-				/* Delete any old ActiveTranslators */
-				String deleteSql = "DELETE FROM activeTranslators WHERE playerUUID = ?";
-				try (PreparedStatement deleteOldItem = sqlConnection.prepareStatement(deleteSql);
-					 ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators")) {
-					while (rs.next()) {
-						String uuid = rs.getString("playerUUID");
-						if (!main.isActiveTranslator(uuid)) {
-							deleteOldItem.setString(1, uuid);
-							deleteOldItem.addBatch();
-							refs.debugMsg("(SQL) Prepared delete batch entry for " + uuid + ".");
-						}
-					}
-
-					// Execute all deletions in a single batch
-					deleteOldItem.executeBatch();
-					refs.debugMsg("(SQL) Batch delete executed, old active translators removed.");
-				}
-
-
-				/* Sync PlayerRecord data to corresponding table */
-				// Dynamically construct the SQL statement based on the schema
-				tableName = "playerRecords";
-				schema = CommonRefs.tableSchemas.get(tableName);
-
-				// Columns and placeholders for the INSERT part
-				columns = String.join(",", schema.keySet());
-				placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
-
-				// Dynamically create the ON DUPLICATE KEY UPDATE part
-				onUpdate = schema.keySet().stream()
-						.map(column -> String.format("%s = VALUES(%s)", column, column))
-						.collect(Collectors.joining(", "));
-
-				sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
-						tableName, columns, placeholders, onUpdate);
-
-				try (PreparedStatement newPlayerRecord = sqlConnection.prepareStatement(sqlStatement)) {
-                    for (Map.Entry<String, PlayerRecord> entry : main.getPlayerRecords().entrySet()) {
-                        String key = entry.getKey();
-                        PlayerRecord val = entry.getValue();
-                        if (!val.getHasBeenSaved()) {
-                            int i = 1;
-                            newPlayerRecord.setString(i++, Instant.now().toString());
-                            newPlayerRecord.setString(i++, val.getUUID());
-                            newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
-                            newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
-                            newPlayerRecord.setString(i++, val.getLastTranslationTime());
-                            newPlayerRecord.setString(i++, val.getLocalizationCode());
-
-                            // Add to batch
-                            newPlayerRecord.addBatch();
-                            refs.debugMsg("(SQL) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
-                        }
-                    }
-
-                    // Execute the batch
-					newPlayerRecord.executeBatch();
-					refs.debugMsg("(SQL) Batch executed, player records saved or updated.");
-				}
-
-				/* Sync Cache data to corresponding table */
-				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
-					/* Add Cache Terms */
-					tableName = "persistentCache";
-					schema = CommonRefs.tableSchemas.get(tableName);
-
-					columns = String.join(",", schema.keySet());
-					placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
-
-					onUpdate = schema.keySet().stream()
-							.map(column -> String.format("%s = VALUES(%s)", column, column))
-							.collect(Collectors.joining(", "));
-
-					sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
-							tableName, columns, placeholders, onUpdate);
-
-					try (PreparedStatement newCacheTerm = sqlConnection.prepareStatement(sqlStatement)) {
-                        for (Map.Entry<CachedTranslation, String> entry : main.getCache().asMap().entrySet()) {
-                            CachedTranslation val = entry.getKey();
-                            String value = entry.getValue();
-                            if (!val.hasBeenSaved()) {
-                                int i = 1;
-                                newCacheTerm.setString(i++, UUID.randomUUID().toString());
-                                newCacheTerm.setString(i++, val.getInputLang());
-                                newCacheTerm.setString(i++, val.getOutputLang());
-                                newCacheTerm.setString(i++, val.getInputPhrase());
-                                newCacheTerm.setString(i++, value);
-
-                                newCacheTerm.addBatch();
-                                refs.debugMsg("(SQL) Prepared batch entry for cache data.");
-                                val.setHasBeenSaved(true);
-                            }
-                        }
-
-                        // Execute all updates/inserts in a single batch
-						newCacheTerm.executeBatch();
-						refs.debugMsg("(SQL) Batch executed, cache data saved or updated.");
-					}
-				}
-
-				/* Delete Old Cache Terms */
-				deleteSql = "DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?";
-				try (PreparedStatement deleteOldItems = sqlConnection.prepareStatement(deleteSql);
-					 ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
-					 while (rs.next()) {
-						 String inputLang = rs.getString("inputLang");
-						 String outputLang = rs.getString("outputLang");
-						 String inputPhrase = rs.getString("inputPhrase");
-
-						 if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
-							 deleteOldItems.setString(1, inputLang);
-							 deleteOldItems.setString(2, outputLang);
-							 deleteOldItems.setString(3, inputPhrase);
-							 deleteOldItems.addBatch();
-							 refs.debugMsg("(SQL) Prepared delete batch entry for cache entry.");
-						 }
-					 }
-
-					// Execute all deletions in a single batch
-					deleteOldItems.executeBatch();
-					refs.debugMsg("(SQL) Batch delete executed, old cache entries removed.");
-				}
-			}
-		} else if (main.isPostgresConnValid(true)) {
-			// Our Generic Table Layout:
-			// | Creation Date | Object Properties |
-			try (Connection postgresConnection = postgres.getConnection()) {
-				/* Sync ActiveTranslator data to corresponding table */
-				String tableName = "activeTranslators";
-				Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
-
-				// Columns and placeholders for the INSERT part
-				String columns = String.join(",", schema.keySet());
-				String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
-
-				// Dynamically create the ON CONFLICT DO UPDATE part
-				String onConflictUpdate = schema.keySet().stream()
-						.filter(column -> !column.equals("playerUUID")) // Exclude the conflict target column
-						.map(column -> String.format("%s = EXCLUDED.%s", column, column))
-						.collect(Collectors.joining(", "));
-
-				String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
-						tableName, columns, placeholders, onConflictUpdate);
-
-				try (PreparedStatement newActiveTranslator = postgresConnection.prepareStatement(sqlStatement)) {
-                    for (Map.Entry<String, ActiveTranslator> entry : main.getActiveTranslators().entrySet()) {
-                        String key = entry.getKey();
-                        ActiveTranslator val = entry.getValue();
-                        if (!val.getHasBeenSaved()) {
-                            int i = 1;
-                            newActiveTranslator.setString(i++, Instant.now().toString());
-                            newActiveTranslator.setString(i++, val.getUUID());
-                            newActiveTranslator.setString(i++, val.getInLangCode());
-                            newActiveTranslator.setString(i++, val.getOutLangCode());
-                            newActiveTranslator.setInt(i++, val.getRateLimit());
-                            newActiveTranslator.setString(i++, val.getRateLimitPreviousTime());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingChatOutgoing());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingChatIncoming());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingBook());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingSign());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingItem());
-                            newActiveTranslator.setBoolean(i++, val.getTranslatingEntity());
-
-                            // Add to batch
-                            newActiveTranslator.addBatch();
-                            refs.debugMsg("(Postgres) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
-                        }
-                    }
-
-                    // Execute the batch
-					newActiveTranslator.executeBatch();
-					refs.debugMsg("(Postgres) Batch executed, data saved or updated.");
-				}
-
-				/* Delete any old ActiveTranslators */
-				try (PreparedStatement deleteOldItem = postgresConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
-					 ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT playerUUID FROM activeTranslators")) {
-					while (rs.next()) {
-						if (!main.isActiveTranslator(rs.getString("playerUUID"))) {
-							String uuid = rs.getString("playerUUID");
-							deleteOldItem.setString(1, uuid);
-							deleteOldItem.addBatch();
-							refs.debugMsg("(Postgres) Prepared delete batch entry for " + uuid + ".");
-						}
-					}
-					// Execute all deletions in a single batch
-					deleteOldItem.executeBatch();
-					refs.debugMsg("(Postgres) Batch delete executed, old active translators removed.");
-				}
-
-				/* Sync PlayerRecord data to corresponding table */
-				tableName = "playerRecords";
-				schema = CommonRefs.tableSchemas.get(tableName);
-
-				// Columns and placeholders for the INSERT part
-				columns = String.join(",", schema.keySet());
-				placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
-
-				// Dynamically create the ON CONFLICT DO UPDATE part
-				onConflictUpdate = schema.keySet().stream()
-						.filter(column -> !column.equals("playerUUID")) // Exclude the conflict target column
-						.map(column -> String.format("%s = EXCLUDED.%s", column, column))
-						.collect(Collectors.joining(", "));
-
-				sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
-						tableName, columns, placeholders, onConflictUpdate);
-
-				try (PreparedStatement newPlayerRecord = postgresConnection.prepareStatement(sqlStatement)) {
-                    for (Map.Entry<String, PlayerRecord> entry : main.getPlayerRecords().entrySet()) {
-                        String key = entry.getKey();
-                        PlayerRecord val = entry.getValue();
-                        if (!val.getHasBeenSaved()) {
-                            int i = 1;
-                            newPlayerRecord.setString(i++, Instant.now().toString());
-                            newPlayerRecord.setString(i++, val.getUUID());
-                            newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
-                            newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
-                            newPlayerRecord.setString(i++, val.getLastTranslationTime());
-                            newPlayerRecord.setString(i++, val.getLocalizationCode());
-
-                            // Add to batch
-                            newPlayerRecord.addBatch();
-                            refs.debugMsg("(Postgres) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
-                        }
-                    }
-
-                    // Execute the batch
-					newPlayerRecord.executeBatch();
-					refs.debugMsg("(Postgres) Batch executed, player records saved or updated.");
-				}
-
-
-				/* Sync Cache data to corresponding table */
-				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
-					tableName = "persistentCache";
-					schema = CommonRefs.tableSchemas.get(tableName);
-
-					// Columns and placeholders for the INSERT part
-					columns = String.join(",", schema.keySet());
-					placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
-
-					// Dynamically create the ON CONFLICT DO UPDATE part
-					 onConflictUpdate = schema.keySet().stream()
-							.filter(column -> !column.equals("randomUUID")) // Exclude the conflict target column
-							.map(column -> String.format("%s = EXCLUDED.%s", column, column))
-							.collect(Collectors.joining(", "));
-
-					sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (randomUUID) DO UPDATE SET %s",
-							tableName, columns, placeholders, onConflictUpdate);
-
-					try (PreparedStatement newCacheTerm = postgresConnection.prepareStatement(sqlStatement)) {
-                        for (Map.Entry<CachedTranslation, String> entry : main.getCache().asMap().entrySet()) {
-                            CachedTranslation val = entry.getKey();
-                            String value = entry.getValue();
-                            if (!val.hasBeenSaved()) {
-                                int i = 1;
-                                newCacheTerm.setString(i++, UUID.randomUUID().toString());
-                                newCacheTerm.setString(i++, val.getInputLang());
-                                newCacheTerm.setString(i++, val.getOutputLang());
-                                newCacheTerm.setString(i++, val.getInputPhrase());
-                                newCacheTerm.setString(i++, value);
-
-                                // Add to batch
-                                newCacheTerm.addBatch();
-                                refs.debugMsg("(Postgres) Prepared batch entry for cache data.");
-                                val.setHasBeenSaved(true);
-                            }
-                        }
-
-                        // Execute all updates/inserts in a single batch
-						newCacheTerm.executeBatch();
-						refs.debugMsg("(Postgres) Batch executed, cache data saved or updated.");
-					}
-
-					/* Delete Old Cache Terms */
-					try (PreparedStatement deleteOldItems = postgresConnection.prepareStatement(
-							"DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?")) {
-						ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM persistentCache");
-						while (rs.next()) {
-							String inputLang = rs.getString("inputLang");
-							String outputLang = rs.getString("outputLang");
-							String inputPhrase = rs.getString("inputPhrase");
-
-							if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
-								deleteOldItems.setString(1, inputLang);
-								deleteOldItems.setString(2, outputLang);
-								deleteOldItems.setString(3, inputPhrase);
-								deleteOldItems.addBatch();
-								refs.debugMsg("(Postgres) Prepared delete batch entry for cache entry.");
-							}
-						}
-
-						// Execute all deletions in a single batch
-						deleteOldItems.executeBatch();
-						refs.debugMsg("(Postgres) Batch delete executed, old cache entries removed.");
-					}
-				}
-			}
-		} else if (main.isMongoConnValid(true)) {
-			/* Initialize collections */
-			MongoDatabase database = mongo.getActiveDatabase();
-			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
-			MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
-			MongoCollection<Document> cacheCol = database.getCollection("PersistentCache");
-
-			// Preparing bulk operations
-			final List<WriteModel<Document>> writes = new ArrayList<>();
-
-			/* Add New Active Translators */
-			main.getActiveTranslators().forEach((key, val) -> {
-				refs.debugMsg("(MongoDB) Translation data of " + key + " save status: " + val.getHasBeenSaved());
-				if (!val.getHasBeenSaved()) {
-					Document currTranslator = new Document()
-							.append("creationDate", Instant.now().toString())
-							.append("playerUUID", val.getUUID())
-							.append("inLangCode", val.getInLangCode())
-							.append("outLangCode", val.getOutLangCode())
-							.append("rateLimit", val.getRateLimit())
-							.append("rateLimitPreviousTime", val.getRateLimitPreviousTime())
-							.append("translatingChatOutgoing", val.getTranslatingChatOutgoing())
-							.append("translatingChatIncoming", val.getTranslatingChatIncoming())
-							.append("translatingBook", val.getTranslatingBook())
-							.append("translatingSign", val.getTranslatingSign())
-							.append("translatingItem", val.getTranslatingItem())
-							.append("translatingEntity", val.getTranslatingEntity());
-
-					Bson filter = Filters.eq("playerUUID", val.getUUID());
-					ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
-					writes.add(new ReplaceOneModel<>(filter, currTranslator, replaceOptions));
-
-					val.setHasBeenSaved(true);
-				}
-			});
-
-			if (!writes.isEmpty()) {
-				activeTranslatorCol.bulkWrite(writes);
-				refs.debugMsg("(MongoDB) Bulk operation executed, data saved or updated.");
-			}
-
-			/* Delete Old Active Translators */
-			FindIterable<Document> iterDoc = activeTranslatorCol.find();
-			final List<WriteModel<Document>> deleteWrites = new ArrayList<>();
-			Consumer<Document> action = currDoc -> {
-				String uuid = currDoc.getString("playerUUID");
-				if (!main.isActiveTranslator(uuid)) {
-					Bson query = Filters.eq("playerUUID", uuid);
-					deleteWrites.add(new DeleteOneModel<>(query));
-					refs.debugMsg("(MongoDB) Prepared delete batch entry for " + uuid + ".");
-				}
-			};
-
-			iterDoc.forEach(action);
-
-			if (!deleteWrites.isEmpty()) {
-				activeTranslatorCol.bulkWrite(deleteWrites);
-				refs.debugMsg("(MongoDB) Bulk delete executed, old active translators removed.");
-			}
-
-			/* Write PlayerRecords to DB */
-			final List<WriteModel<Document>> recordWrites = new ArrayList<>();
-			main.getPlayerRecords().forEach((key, val) -> {
-				refs.debugMsg("(MongoDB) Record of " + key + " save status: " + val.getHasBeenSaved());
-				if (!val.getHasBeenSaved()) {
-					Document currPlayerRecord = new Document()
-							.append("creationDate", Instant.now().toString())
-							.append("playerUUID", val.getUUID())
-							.append("attemptedTranslations", val.getAttemptedTranslations())
-							.append("successfulTranslations", val.getSuccessfulTranslations())
-							.append("lastTranslationTime", val.getLastTranslationTime())
-							.append("localizationCode", val.getLocalizationCode());
-
-					Bson filter = Filters.eq("playerUUID", val.getUUID());
-					ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
-					recordWrites.add(new ReplaceOneModel<>(filter, currPlayerRecord, replaceOptions));
-
-					val.setHasBeenSaved(true);
-				}
-			});
-
-			if (!recordWrites.isEmpty()) {
-				playerRecordCol.bulkWrite(recordWrites);
-				refs.debugMsg("(MongoDB) Bulk operation executed, player records saved or updated.");
-			}
-
-			/* Write Cache to DB */
-			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
-				final List<WriteModel<Document>> cacheWrites = new ArrayList<>();
-
-				/* Add New Cache Terms */
-				main.getCache().asMap().entrySet().forEach(entry -> {
-					refs.debugMsg("(MongoDB) Cached entry " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
-					if (!entry.getKey().hasBeenSaved()) {
-						CachedTranslation val = entry.getKey();
-						UUID random = UUID.randomUUID();
-						Document currCache = new Document()
-								.append("randomUUID", random.toString())
-								.append("inputLang", val.getInputLang())
-								.append("outputLang", val.getOutputLang())
-								.append("inputPhrase", val.getInputPhrase())
-								.append("outputPhrase", entry.getValue());
-
-						Bson filter = Filters.eq("randomUUID", random.toString());
-						ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
-						cacheWrites.add(new ReplaceOneModel<>(filter, currCache, replaceOptions));
-
-						entry.getKey().setHasBeenSaved(true);
-					}
-				});
-
-				// Execute all updates/inserts in a single batch if there are entries to write
-				if (!cacheWrites.isEmpty()) {
-					cacheCol.bulkWrite(cacheWrites);
-					refs.debugMsg("(MongoDB) Bulk operation executed, cache data saved or updated.");
-				}
-
-				/* Delete old Cache from DB */
-				final List<WriteModel<Document>> deleteCacheWrites = new ArrayList<>();
-
-				FindIterable<Document> cacheIterDoc = cacheCol.find();
-				cacheIterDoc.forEach(document -> {
-					CachedTranslation temp = new CachedTranslation(document.getString("inputLang"), document.getString("outputLang"), document.getString("inputPhrase"));
-					if (!main.hasCacheTerm(temp)) {
-						String uuid = document.getString("randomUUID");
-						Bson query = Filters.eq("randomUUID", uuid);
-						deleteCacheWrites.add(new DeleteOneModel<>(query));
-						refs.debugMsg("(MongoDB) Prepared delete batch entry for cache term.");
-					}
-				});
-
-				// Execute all deletions in a single batch if there are entries to delete
-				if (!deleteCacheWrites.isEmpty()) {
-					cacheCol.bulkWrite(deleteCacheWrites);
-					refs.debugMsg("(MongoDB) Bulk delete executed, old cache entries removed.");
-				}
-			}
-		} else {
-			/* Last resort, sync activeTranslators to disk via YAML */
-			// Save all new activeTranslators
-			main.getActiveTranslators().entrySet().forEach((entry) -> {
-				refs.debugMsg("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-				if (!entry.getValue().getHasBeenSaved()) {
-					refs.debugMsg("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
-					entry.getValue().setHasBeenSaved(true);
-					createUserDataConfig(entry.getValue());
-				}
-			});
-			
-			// Delete any old activeTranslators
-			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
-			if (userSettingsDir.exists()) {
-				for (String eaName : userSettingsDir.list()) {
-					if (!eaName.endsWith(".yml")) {
-						refs.debugMsg("NOT deleting current old active trans file: " + eaName);
-						continue;
-					}
-					File currFile = new File(userSettingsDir, eaName);
-					String fileUUID = currFile.getName().substring(0, currFile.getName().indexOf("."));
-					if (!main.isActiveTranslator(fileUUID)) {
-						refs.debugMsg("(YAML) Deleted user data config of "
-								+ fileUUID + ".");
-						currFile.delete();
-					}
-				}
-			}
-
-			/* Sync playerRecords to disk */
-			main.getPlayerRecords().entrySet().forEach((entry) -> {
-				refs.debugMsg("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-				if (!entry.getValue().getHasBeenSaved()) {
-					refs.debugMsg("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
-					entry.getValue().setHasBeenSaved(true);
-					createStatsConfig(entry.getValue());
-				}
-			});
-
-			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
-				/* Sync cache to disk */
-				//main.getLogger().warning(refs.getMsg("wwcPersistentCacheLoad", null));
-				main.getCache().asMap().entrySet().forEach((eaCache) -> {
-					if (!eaCache.getKey().hasBeenSaved()) {
-						refs.debugMsg("(YAML) Created/updated cache term " + eaCache.getValue());
-						eaCache.getKey().setHasBeenSaved(true);
-						createCacheConfig(eaCache.getKey(), eaCache.getValue());
-					}
-				});
-
-				/* Delete any old cache files */
-				File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
-				if (cacheDir.exists()) {
-					for (String eaName : cacheDir.list()) {
-						if (!eaName.endsWith(".yml")) {
-							refs.debugMsg("NOT deleting current old cache file: " + eaName);
-							continue;
-						}
-						File currFile = new File(cacheDir, eaName);
-						try {
-							YamlConfiguration conf = YamlConfiguration.loadConfiguration(currFile);
-							CachedTranslation test = new CachedTranslation(conf.getString("inputLang"), conf.getString("outputLang"), conf.getString("inputPhrase"));
-							if (!main.hasCacheTerm(test)) {
-								refs.debugMsg("(YAML) Deleted cache term.");
-								currFile.delete();
-							}
-						} catch (Exception e) {
-							refs.debugMsg("Invalid cache file detected, ignoring (" + eaName + ")");
-						}
-					}
-				}
-			}
-		}
-	}
-
-	// PSA:
-	// Generally, NEVER USE THIS!
-	// We only use this in /wwcd.
-	public void fullDataWipe() throws SQLException, MongoException {
-		SQLUtils sql = main.getSqlSession();
-		MongoDBUtils mongo = main.getMongoSession();
-		PostgresUtils postgres = main.getPostgresSession();
-
-		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
-		if (main.isSQLConnValid(true)) {
-			// SQL database wipe
-			try (Connection sqlConnection = sql.getConnection()) {
-				/* Wipe ActiveTranslators */
-				try (PreparedStatement deleteStatement = sqlConnection.prepareStatement("DELETE FROM activeTranslators")) {
-					int rowsDeleted = deleteStatement.executeUpdate();
-					refs.debugMsg("(SQL) Wiped " + rowsDeleted + " records from ActiveTranslators.");
-				}
-
-				/* Wipe PlayerRecords */
-				try (PreparedStatement deleteStatement = sqlConnection.prepareStatement("DELETE FROM playerRecords")) {
-					int rowsDeleted = deleteStatement.executeUpdate();
-					refs.debugMsg("(SQL) Wiped " + rowsDeleted + " records from PlayerRecords.");
-				}
-
-				/* Wipe Cache */
-				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
-					try (PreparedStatement deleteStatement = sqlConnection.prepareStatement("DELETE FROM persistentCache")) {
-						int rowsDeleted = deleteStatement.executeUpdate();
-						refs.debugMsg("(SQL) Wiped " + rowsDeleted + " records from PersistentCache.");
-					}
-				}
-			}
-		} else if (main.isPostgresConnValid(true)) {
-			// Postgres database wipe
-			try (Connection postgresConnection = postgres.getConnection()) {
-				/* Wipe ActiveTranslators */
-				try (PreparedStatement deleteStatement = postgresConnection.prepareStatement("DELETE FROM activeTranslators")) {
-					int rowsDeleted = deleteStatement.executeUpdate();
-					refs.debugMsg("(Postgres) Wiped " + rowsDeleted + " records from ActiveTranslators.");
-				}
-
-				/* Wipe PlayerRecords */
-				try (PreparedStatement deleteStatement = postgresConnection.prepareStatement("DELETE FROM playerRecords")) {
-					int rowsDeleted = deleteStatement.executeUpdate();
-					refs.debugMsg("(Postgres) Wiped " + rowsDeleted + " records from PlayerRecords.");
-				}
-
-				/* Wipe Cache */
-				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
-					try (PreparedStatement deleteStatement = postgresConnection.prepareStatement("DELETE FROM persistentCache")) {
-						int rowsDeleted = deleteStatement.executeUpdate();
-						refs.debugMsg("(Postgres) Wiped " + rowsDeleted + " records from PersistentCache.");
-					}
-				}
-			}
-		} else if (main.isMongoConnValid(true)) {
-			// MongoDB wipe
-			MongoDatabase database = mongo.getActiveDatabase();
-			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
-			MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
-			MongoCollection<Document> cacheCol = database.getCollection("PersistentCache");
-
-			/* Wipe ActiveTranslators */
-			DeleteResult result = activeTranslatorCol.deleteMany(new Document());
-			refs.debugMsg("(MongoDB) Wiped " + result.getDeletedCount() + " records from ActiveTranslators.");
-
-			/* Wipe PlayerRecords */
-			result = playerRecordCol.deleteMany(new Document());
-			refs.debugMsg("(MongoDB) Wiped " + result.getDeletedCount() + " records from PlayerRecords.");
-
-			/* Wipe Cache */
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
-				result = cacheCol.deleteMany(new Document());
-				refs.debugMsg("(MongoDB) Wiped " + result.getDeletedCount() + " records from PersistentCache.");
-			}
-		} else {
-			// Last resort: Wipe from disk storage via YAML
-			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
-			if (userSettingsDir.exists()) {
-				for (File file : userSettingsDir.listFiles((dir, name) -> name.endsWith(".yml"))) {
-					if (file.delete()) {
-						refs.debugMsg("(YAML) Deleted user data config file: " + file.getName());
-					}
-				}
-			}
-
-			File playerRecordsDir = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
-			if (playerRecordsDir.exists()) {
-				for (File file : playerRecordsDir.listFiles((dir, name) -> name.endsWith(".yml"))) {
-					if (file.delete()) {
-						refs.debugMsg("(YAML) Deleted user record config file: " + file.getName());
-					}
-				}
-			}
-
-			File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
-			if (cacheDir.exists()) {
-				for (File file : cacheDir.listFiles((dir, name) -> name.endsWith(".yml"))) {
-					if (file.delete()) {
-						refs.debugMsg("(YAML) Deleted cache config file: " + file.getName());
-					}
-				}
-			}
-		}
-	}
-	
-	/* Translator YAML File Saver */
-	public void createUserDataConfig(ActiveTranslator inTranslator) {
-		File userSettingsFile;
-		YamlConfiguration userSettingsConfig;
-		userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator,
-				inTranslator.getUUID() + ".yml");
-
-		/* Load config */
-		userSettingsConfig = YamlConfiguration.loadConfiguration(userSettingsFile);
-
-		/* Set data */
-		userSettingsConfig.createSection("inLang");
-		userSettingsConfig.set("inLang", inTranslator.getInLangCode());
-
-		userSettingsConfig.createSection("outLang");
-		userSettingsConfig.set("outLang", inTranslator.getOutLangCode());
-
-		userSettingsConfig.createSection("bookTranslation");
-		userSettingsConfig.set("bookTranslation", inTranslator.getTranslatingBook());
-
-		userSettingsConfig.createSection("signTranslation");
-		userSettingsConfig.set("signTranslation", inTranslator.getTranslatingSign());
-
-		userSettingsConfig.createSection("itemTranslation");
-		userSettingsConfig.set("itemTranslation", inTranslator.getTranslatingItem());
-
-		userSettingsConfig.createSection("entityTranslation");
-		userSettingsConfig.set("entityTranslation", inTranslator.getTranslatingEntity());
-		
-		userSettingsConfig.createSection("chatTranslationOutgoing");
-		userSettingsConfig.set("chatTranslationOutgoing", inTranslator.getTranslatingChatOutgoing());
-		
-		userSettingsConfig.createSection("chatTranslationIncoming");
-		userSettingsConfig.set("chatTranslationIncoming", inTranslator.getTranslatingChatIncoming());
-		
-		userSettingsConfig.createSection("rateLimit");
-		userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
-
-		userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
-		userSettingsConfig.set("rateLimitPreviousRecordedTime", inTranslator.getRateLimitPreviousTime());
-		
-		saveCustomConfig(userSettingsConfig, userSettingsFile, false);
-	}
-
-	/* Stats YAML File Saver */
-	public void createStatsConfig(PlayerRecord inRecord) {
-		File userStatsDir = new File(main.getDataFolder() + File.separator + "stats");
-		File userStatsFile;
-		YamlConfiguration userStatsConfig;
-
-		userStatsFile = new File(userStatsDir + File.separator,
-				inRecord.getUUID() + ".yml");
-
-		/* Load config */
-		userStatsConfig = YamlConfiguration.loadConfiguration(userStatsFile);
-
-		/* Set data */
-		userStatsConfig.createSection("lastTranslationTime");
-		userStatsConfig.set("lastTranslationTime", inRecord.getLastTranslationTime());
-
-		userStatsConfig.createSection("attemptedTranslations");
-		userStatsConfig.set("attemptedTranslations", inRecord.getAttemptedTranslations());
-
-		userStatsConfig.createSection("successfulTranslations");
-		userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
-
-		userStatsConfig.createSection("localizationCode");
-		userStatsConfig.set("localizationCode", inRecord.getLocalizationCode());
-
-		saveCustomConfig(userStatsConfig, userStatsFile, false);
-	}
-
-	/* Cache YAML File Saver */
-    public void createCacheConfig(CachedTranslation trans, String out) {
-		File cacheDir = new File(main.getDataFolder() + File.separator + "cache");
-		File cacheFile;
-		YamlConfiguration cacheConfig;
-
-		cacheFile = new File(cacheDir + File.separator,
-				UUID.randomUUID() + ".yml");
-
-		cacheConfig = YamlConfiguration.loadConfiguration(cacheFile);
-
-		/* Set data */
-		cacheConfig.createSection("inputLang");
-		cacheConfig.set("inputLang", trans.getInputLang());
-
-		cacheConfig.createSection("outputLang");
-		cacheConfig.set("outputLang", trans.getOutputLang());
-
-		cacheConfig.createSection("inputPhrase");
-		cacheConfig.set("inputPhrase", trans.getInputPhrase());
-
-		cacheConfig.createSection("outputPhrase");
-		cacheConfig.set("outputPhrase", out);
-
-		saveCustomConfig(cacheConfig, cacheFile, false);
-	}
-
-	/* Getters */
-	public YamlConfiguration getMainConfig() {
-		return mainConfig;
-	}
-
-	public YamlConfiguration getBlacklistConfig() {
-		return blacklistConfig;
-	}
-
-	public YamlConfiguration getMsgsConfig() {
-		return pluginLangConfigs.get(mainConfig.getString("General.pluginLang"));
-	}
-
-	public File getConfigFile() {
-		return configFile;
-	}
-
-	public File getBlacklistFile() {
-		return blacklistFile;
-	}
-
-	public ConcurrentHashMap<String, YamlConfiguration> getPluginLangConfigs() {
-		return pluginLangConfigs;
-	}
-
+                }
+                if (!outName.equals("Invalid")) break;
+            } catch (Exception e) {
+                main.getLogger().severe("(" + attemptedTranslator + ") " + e.getMessage());
+                e.printStackTrace();
+                outName = "Invalid";
+            }
+        }
+        if (outName.equals("Invalid")) {
+            main.getLogger().severe(refs.getPlainMsg("wwcInvalidTranslator"));
+        } else {
+            main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
+                    "&6" + outName,
+                    "&a"));
+        }
+        refs.debugMsg("Landing on " + outName);
+        return outName;
+    }
+
+    /* Main config save method */
+    public void saveMainConfig(boolean async) {
+        if (async) {
+            refs.debugMsg("Saving main config async!");
+            GenericRunnable out = new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    saveMainConfig(false);
+                }
+            };
+            wwcHelper.runAsync(out, ASYNC, null);
+            return;
+        }
+        refs.debugMsg("Saving main config sync!");
+        saveCustomConfig(mainConfig, configFile, false);
+    }
+
+    /* Specific message config save method */
+    public void saveMessagesConfig(String inLang, boolean async) {
+        if (async) {
+            refs.debugMsg("Saving messages config async!");
+            GenericRunnable out = new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    saveMessagesConfig(inLang, false);
+                }
+            };
+            wwcHelper.runAsync(out, ASYNC, null);
+            return;
+        }
+        refs.debugMsg("Saving messages config sync!");
+        saveCustomConfig(pluginLangConfigs.get(inLang), new File(main.getDataFolder(), "messages-" + inLang + ".yml"), false);
+    }
+
+    /* Custom config save method */
+    public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
+        if (async && main.isEnabled()) {
+            refs.debugMsg("Saving custom config async!");
+            GenericRunnable out = new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    saveCustomConfig(inConfig, dest, false);
+                }
+            };
+            wwcHelper.runAsync(out, ASYNC, null);
+            return;
+        }
+        if (inConfig != null && dest != null) {
+            refs.debugMsg("Saving custom config sync!");
+            try {
+                inConfig.save(dest);
+            } catch (IOException e) {
+                e.printStackTrace();
+                Bukkit.getPluginManager().disablePlugin(main);
+                return;
+            }
+        }
+    }
+
+    /* Getters */
+    public YamlConfiguration getMainConfig() {
+        return mainConfig;
+    }
+
+    public YamlConfiguration getAIConfig() {
+        return aiConfig;
+    }
+
+    public YamlConfiguration getBlacklistConfig() {
+        return blacklistConfig;
+    }
+
+    public YamlConfiguration getMsgsConfig() {
+        return pluginLangConfigs.get(mainConfig.getString("General.pluginLang"));
+    }
+
+    public File getConfigFile() {
+        return configFile;
+    }
+
+    public File getBlacklistFile() {
+        return blacklistFile;
+    }
+
+    public ConcurrentHashMap<String, YamlConfiguration> getPluginLangConfigs() {
+        return pluginLangConfigs;
+    }
+
+    public File getAIFile() {
+        return aiFile;
+    }
 }

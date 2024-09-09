@@ -331,23 +331,17 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Sync کام کا ٹائم آؤٹ کامیابی سے متعین کیا
     گیا ہے۔
   wwcConfigGUIFatalAsyncAbortButton: ایسنک ٹاسک ٹائم آؤٹ تبدیل کریں
-  libreHttp400: بری درخواست Libri ترجمہ کرنے کے لئے بھیجا! جب تک آپ کچھ ایسا نہیں
-    کر رہے ہیں جو آپ کو نہیں کرنا چاہئے، آپ کو یہ نہیں ملنا چاہئے. ڈویلپر سے رابطہ
-    کریں!
   wwcConfigGUILibreTranslateApiKeyButton: مفت ترجمہ API کلید کو تبدیل کریں
-  libreHttp403: لاپتہ Libe API کلید ترجمہ کریں، یا آپ سرور سے پابندی عائد کر رہے ہیں!
   wwcConfigConversationLibreURLSuccess: مفت یو آر ایل کامیابی سے سیٹ کیا گیا ہے.
   wwcConfigConversationLibreTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم
     Libe کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
   wwcConfigGUILibreTranslateButton: مفت ترجمہ
-  libreHttp429: سرور سے شرح کی حد کی وجہ سے کوئی اعتماد نہیں.
   wwcConfigGUIToggleLibreTranslateButton: ٹوگل مفت ترجمہ کریں
   wwcConfigConversationLibreTranslateToggleSuccess: کامیابی کے ساتھ مفت ترجمہ ٹوگل.
     تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
   wwcConfigConversationLibreTranslateApiKeySuccess: مفت API کلید کامیابی سے سیٹ.
   wwcConfigConversationLibreURLInput: موجودہ URL {0} ہے، برائے مہربانی Libere کے لئے
     ایک URL ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
-  libreHttpUnknown: 'نامعلوم HTTP غلطی: {0}'
   wwcConfigGUILibreTranslateURLButton: مفت تبدیل کریں URL کا ترجمہ کریں
   wwcConfigConnectionFail: '{0} سے متصل ہونے میں ناکام.'
   wwcConfigConversationMongoDatabaseNameSuccess: کامیابی سے MongoDB ڈیٹا بیس کا نام
@@ -389,8 +383,6 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف ہو گئے۔
   wwcConfigGUIMongoPortButton: مونگو ڈی بی پورٹ تبدیل کریں
   wwcConfigInvalidFatalAsyncTimeout: غلط مہلک async ٹائم آؤٹ سیٹ. 10 سیکنڈ پر ناکامی...
-  libreHttp500: آپ کے منتخب کردہ ان پٹ اور آؤٹ پٹ زبان کے جوڑے کی حمایت نہیں کی جاتی
-    ہے. براہ کرم ایک مختلف زبان کا سیٹ منتخب کریں!
   wwcConfigGUIDeepLTranslateButton: دیپ ایل کا ترجمہ ٹوگل
   wwcConfigConversationDeepLTranslateToggleSuccess: کامیابی سے ڈیپ ایل ترجمہ ٹوگل.
     تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
@@ -462,9 +454,6 @@ Messages:
     رہا۔
   wwcdCacheCleared: ترجمہ کیشے صاف کر دیا گیا۔
   wwcdInvalidCmd: غلط دلائل!
-  systranHttpUnknown: 'نامعلوم HTTP غلطی: {0}'
-  systranHttp400: خراب پیرامیٹرز سسٹرن کو بھیجے شاید برا زبان کی جوڑی ہوسکتی ہے؟
-  systranHttp500: سیسٹرن اینڈ پوائنٹ ({0}) سے داخلی سرور کی خرابی۔
   wwcInvalidStorageSession: '{0} آپ کی ترتیب میں فعال ہے، لیکن کوئی کنکشن قائم نہیں
     ہے۔ براہ کرم اسے ٹھیک کرنے کے لئے دوبارہ لوڈ کرنے کی کوشش کریں، لیکن اگر آپ کو
     پہلے {0} سے کنکشن کا کامیاب پیغام ملا تو براہ کرم ڈویلپر سے رابطہ کریں۔'
@@ -705,4 +694,65 @@ Messages:
   wwcdResetNotifError: تمام اعداد و شمار کو کامیابی کے ساتھ ختم نہیں کیا گیا کیا آپ
     اپنے ڈیٹا بیس سے منسلک ہیں؟
   colorCodeWarning: رنگ کوڈز کا استعمال آپ کو غیر متوقع نتائج دے سکتے ہیں۔
+  wwcAiSystemPromptLoaded: AI سسٹم پرومپٹ لوڈ ہوا۔
+  wwcAiSystemPromptBad: خراب AI سسٹم پرامپٹ کا پتہ ہمارے ڈیفالٹ کا استعمال کرتے ہوئے...
+  wwcAiSupportedLangsBad: خراب اے آئی کی تائید شدہ زبانوں ہمارے ڈیفالٹس کا استعمال
+    کرتے ہوئے...
+  wwcConfigGUIAISettings: AI کنفیگریشن
+  wwcConfigGUIChatGPTButton: چیٹ جی پی ٹی
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API کلید کامیابی کے ساتھ سیٹ
+    کی گئی۔
+  wwcConfigGUAIPromptButton: AI پرامپٹ تبدیل کریں
+  wwcConfigConversationChatGPTURLInput: موجودہ یو آر ایل {0} ہے۔ براہ کرم ChatGPT
+    کے لیے ایک URL درج کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationChatGPTApiKeyInput: موجودہ API کلید {0} ہے۔ براہ کرم ChatGPT
+    کے لئے API کلید درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT URL کامیابی کے ساتھ سیٹ کیا گیا۔
+  wwcConfigGUIChatGPTURLButton: چیٹ جی پی ٹی یو آر ایل تبدیل کریں
+  wwcConfigGUIChatGPTAPIKeyButton: چیٹ جی پی ٹی اے پی آئی کلید تبدیل کریں
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT ماڈل کامیابی کے ساتھ سیٹ کیا گیا۔
+  wwcConfigGUIChatGPTModelButton: چیٹ جی پی ٹی ماڈل تبدیل کریں
+  wwcConfigGUIToggleChatGPTButton: چیٹ جی پی ٹی ٹوگل کریں
+  wwcLargeConfigInputSuccess: '{0} حروف کے آپ کے بڑے ان پٹ پر کارروائی کی گئی ہے۔'
+  wwcConfigInstructionsBulkBook: موجودہ قیمت دیکھنے کے لئے ڈراپ کردہ کتاب کھولیں۔
+    اس قدر میں تبدیلیاں لانے کے لئے کتاب پر دستخط کریں۔
+  wwcConfigGUIChatGPTToggleSuccess: کامیابی کے ساتھ ChatGPT کو ٹوگل کیا گیا۔
+  wwcConfigGUIOllamaPromptButton: پرومپٹ کو تبدیل کریں
+  wwcConfigGUIChatGPTPromptButton: چیٹ جی پی ٹی پرومپٹ کو تبدیل کریں
+  wwcConfigGUIModifyAILangsSettings: معاون AI زبانوں میں ترمیم کریں
+  wwcConfigConversationAddLang: وہ نئی زبان درج کریں جسے آپ شامل کرنا چاہتے ہیں، یا
+    واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationAILangDeletionSuccess: کامیابی کے ساتھ زبان کو حذف کردیا۔
+  wwcConfigGUIAILangModify: زبان میں ترمیم کریں ({0})
+  wwcConfigGUIAILangDeleteButton: زبان حذف کریں
+  wwcConfigGUIAILangNewButton: نئی زبان شامل کریں
+  wwcConfigGUIAIChangeLangs: معاون AI زبانوں میں ترمیم کریں
+  wwcConfigConversationAILangAddSuccess: AI کی تائید شدہ زبانوں میں کامیابی کے ساتھ
+    ایک نئی زبان شامل کی۔
+  translatorBadAPIKey: خراب API کلید! براہ کرم یقینی بنائیں کہ آپ نے اسے صحیح طور
+    پر ٹائپ کیا ہے۔
+  translatorLimitExceeded: آپ نے یا تو اپنی ترجمہ سروس کے کوٹے سے تجاوز کر چکے ہیں
+    یا آپ کی شرح محدود ہے۔ مزید تفصیلات کے لئے براہ کرم اپنے فراہم کنندہ کو چ
+  translatorServerError: اندرونی سرور کی خرابی. براہ کرم بعد میں دوبارہ کوشش کریں۔
+  translatorForbidden: رسائی ممنوع ہے! براہ کرم اپنی اجازتیں چیک کریں۔
+  translatorBadRequest: خراب درخواست. براہ کرم اپنا ان پٹ چیک کریں اور دوبارہ کوشش
+    کریں۔
+  translatorUnknownError: 'اسٹیٹس کوڈ کے ساتھ ایک نامعلوم غلطی ہوئی: {0}.'
+  translatorURLNotFound: آپ کی مترجم سروس یو آر ایل غلط ہے۔
+  translatorMethodNotAllowed: ترجمہ سروس اس درخواست کے طریقہ کار کی حمایت نہیں کرتی
+    ہے۔
+  translatorNotFound: درخواست کردہ ترجمہ کا وسیلہ نہیں ملا.
+  wwcConfigConversationChatGPTModelInput: موجودہ ماڈل {0} ہے۔ براہ کرم ChatGPT کے
+    لیے ایک ماڈل درج کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigGUIOllamaModelButton: اولما ماڈل تبدیل کریں
+  wwcConfigConversationOllamaURLSuccess: یو آر ایل کو کامیابی کے ساتھ سیٹ کریں۔
+  wwcConfigConversationOllamaModelInput: موجودہ ماڈل {0} ہے۔ براہ کرم اولاما کے لئے
+    ایک ماڈل درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationOllamaURLInput: موجودہ یو آر ایل {0} ہے۔ براہ کرم اولاما کے
+    لیے ایک یو آر ایل درج کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigGUIOllamaButton: اولامہ
+  wwcConfigGUIOllamaToggleSuccess: کامیابی کے ساتھ اولاما کو ٹوک کیا گیا۔
+  wwcConfigGUIOllamaURLButton: فہرست یو آر ایل تبدیل کریں
+  wwcConfigConversationOllamaModelSuccess: اولاما ماڈل کامیابی کے ساتھ سیٹ کیا۔
+  wwcConfigGUIToggleOllamaButton: ٹوگل اولما
 

@@ -351,22 +351,17 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Timeout activitate async setat cu succes.
   wwcConfigGUIFatalAsyncAbortButton: Modificarea timpului de expirare a activității
     async
-  libreHttp400: Cerere greșită trimisă la Libre Translate! Dacă nu faceți ceva ce
-    nu ar trebui, nu ar trebui să obțineți acest lucru. Vă rugăm să contactați dezvoltatorul!
   wwcConfigGUILibreTranslateApiKeyButton: Schimbați cheia API pentru traducerea gratuită
-  libreHttp403: Lipsește Libre Traduceți cheia API sau sunteți interzis de pe server
   wwcConfigConversationLibreURLSuccess: URL-ul gratuit a fost setat cu succes.
   wwcConfigConversationLibreTranslateApiKeyInput: Cheia API curentă este {0}. Introduceți
     o cheie API pentru Libre sau tastați 0 pentru a reveni.
   wwcConfigGUILibreTranslateButton: Traducere Libre
-  libreHttp429: Nicio încredere din cauza limitei ratei de la server.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Free Translate
   wwcConfigConversationLibreTranslateToggleSuccess: Comută cu succes Libre Translate.
     Reîncărcați pentru ca modificările să aibă efect.
   wwcConfigConversationLibreTranslateApiKeySuccess: Cheia API Libre setată cu succes.
   wwcConfigConversationLibreURLInput: Adresa URL curentă este {0}. Introduceți o adresă
     URL pentru Libre sau tastați 0 pentru a reveni.
-  libreHttpUnknown: 'Eroare http necunoscută: {0}'
   wwcConfigGUILibreTranslateURLButton: Schimbați URL-ul Traduceți gratuit
   wwcConfigConnectionFail: Conectarea la {0} nu a reușit.
   wwcConfigConversationMongoDatabaseNameSuccess: A schimbat cu succes numele bazei
@@ -409,8 +404,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Schimbați portul MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Set de expirare asincronă fatală nevalidă. Implicit
     la 10 secunde...
-  libreHttp500: Perechea de limbi de intrare și ieșire selectată nu este acceptată.
-    Vă rugăm să alegeți un alt set de limbi!
   wwcConfigGUIDeepLTranslateButton: Comutați traducerea DeepL
   wwcConfigConversationDeepLTranslateToggleSuccess: A fost comutată cu succes DeepL
     Translate. Reîncărcați pentru ca modificările să aibă efect.
@@ -481,10 +474,6 @@ Messages:
   wwcrTransFail: Reîncărcat WorldwideChat, dar nu a reușit să activeze un traducător.
   wwcdCacheCleared: Cache-ul de traducere a fost șters.
   wwcdInvalidCmd: Argumente nevalide!
-  systranHttpUnknown: 'Eroare http necunoscută: {0}'
-  systranHttp400: Parametrii greșiți trimiși la Systran. Ar putea fi o pereche de
-    limbi proaste?
-  systranHttp500: Eroare internă de server de la punctul final Systran ({0}).
   wwcInvalidStorageSession: '{0} este activat în configurația dvs., dar o conexiune
     nu este stabilită. Încercați să reîncărcați pentru a remedia acest lucru, dar
     vă rugăm să contactați dezvoltatorul dacă ați primit anterior un mesaj de conectare
@@ -735,4 +724,66 @@ Messages:
   wwcdResetNotifError: Nu toate datele au fost șterse cu succes. Sunteți conectat
     la baza dvs. de date?
   colorCodeWarning: Utilizarea codurilor de culoare vă poate oferi rezultate imprevizibile.
+  wwcAiSystemPromptLoaded: AI System Prompt încărcat.
+  wwcAiSystemPromptBad: A fost detectat un prompt de sistem AI greșit. Folosind implicit...
+  wwcAiSupportedLangsBad: Au fost detectate limbi acceptate de AI greșite. Folosind
+    valorile noastre implicite...
+  wwcConfigGUIAISettings: Configurare AI
+  wwcConfigGUIChatGPTButton: Chat GPT
+  wwcConfigConversationChatGPTApiKeySuccess: Cheia API ChatGPT setată cu succes.
+  wwcConfigGUAIPromptButton: Schimbați promptul AI
+  wwcConfigConversationChatGPTURLInput: Adresa URL curentă este {0}. Vă rugăm să introduceți
+    o adresă URL pentru ChatGPT sau tastați 0 pentru a reveni.
+  wwcConfigConversationChatGPTApiKeyInput: Cheia API curentă este {0}. Vă rugăm să
+    introduceți o cheie API pentru ChatGPT sau tastați 0 pentru a reveni.
+  wwcConfigConversationChatGPTURLSuccess: Adresa URL ChatGPT setată cu succes.
+  wwcConfigGUIChatGPTURLButton: Schimbați adresa URL ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Schimbați cheia API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Modelul ChatGPT setat cu succes.
+  wwcConfigGUIChatGPTModelButton: Schimbați modelul ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Comutați ChatGPT
+  wwcLargeConfigInputSuccess: Intrarea dvs. mare de caractere {0} a fost procesată.
+  wwcConfigInstructionsBulkBook: Deschideți cartea abandonată pentru a vedea valoarea
+    curentă. Semnează cartea pentru a modifica această valoare.
+  wwcConfigGUIChatGPTToggleSuccess: A comutat cu succes ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Change Alert Prompt
+  wwcConfigGUIChatGPTPromptButton: Schimbați promptul ChatGPT
+  wwcConfigGUIModifyAILangsSettings: Modificați limbile AI acceptate
+  wwcConfigConversationAddLang: Introduceți noua limbă pe care doriți să o adăugați
+    sau tastați 0 pentru a reveni.
+  wwcConfigConversationAILangDeletionSuccess: A șters cu succes limba.
+  wwcConfigGUIAILangModify: Modificați limba ({0})
+  wwcConfigGUIAILangDeleteButton: Ștergeți limba
+  wwcConfigGUIAILangNewButton: Adaugă o nouă limbă
+  wwcConfigGUIAIChangeLangs: Modificați limbile AI acceptate
+  wwcConfigConversationAILangAddSuccess: A adăugat cu succes o nouă limbă la limbile
+    acceptate de AI.
+  translatorBadAPIKey: Cheie API proastă! Vă rugăm să vă asigurați că l-ați tastat
+    corect.
+  translatorLimitExceeded: Fie ați depășit cota pentru serviciul dvs. de traducere,
+    fie ați primit un tarif limitat. Vă rugăm să verificați furnizorul dvs. pentru
+    mai multe detalii.
+  translatorServerError: Eroare internă a serverului. Vă rugăm să încercați din nou
+    mai târziu.
+  translatorForbidden: Accesul este interzis! Vă rugăm să verificați permisiunile.
+  translatorBadRequest: Cerere proastă. Vă rugăm să verificați datele introduse și
+    să încercați din nou.
+  translatorUnknownError: 'A apărut o eroare necunoscută cu codul de stare: {0}.'
+  translatorURLNotFound: Adresa URL a serviciului dvs. de traducător este nevalidă.
+  translatorMethodNotAllowed: Serviciul de traducere nu acceptă această metodă de
+    solicitare.
+  translatorNotFound: Resursa de traducere solicitată nu a fost găsită.
+  wwcConfigConversationChatGPTModelInput: Modelul actual este {0}. Vă rugăm să introduceți
+    un model pentru ChatGPT sau tastați 0 pentru a reveni.
+  wwcConfigGUIOllamaModelButton: Schimbați modelul Ollama
+  wwcConfigConversationOllamaURLSuccess: Adresă URL setată cu succes.
+  wwcConfigConversationOllamaModelInput: Modelul actual este {0}. Vă rugăm să introduceți
+    un model pentru Ollama sau tastați 0 pentru a reveni.
+  wwcConfigConversationOllamaURLInput: Adresa URL curentă este {0}. Vă rugăm să introduceți
+    o adresă URL pentru Ollama sau tastați 0 pentru a reveni.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: A comutat cu succes Ollama.
+  wwcConfigGUIOllamaURLButton: Schimbați adresa URL
+  wwcConfigConversationOllamaModelSuccess: Modelul Ollama a fost setat cu succes.
+  wwcConfigGUIToggleOllamaButton: Comutați Oblama
 

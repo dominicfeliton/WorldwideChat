@@ -355,16 +355,11 @@ Messages:
     nua, nó aon rud thíos é chun dul ar ais.
   wwcConfigConversationFatalAsyncSuccess: Async Teorainn ama tasc atá leagtha go rathúil.
   wwcConfigGUIFatalAsyncAbortButton: Athrú Asynchronc Tasc Teorainn Ama
-  libreHttp400: Droch iarraidh a sheoladh chuig Libre Translate! Mura bhfuil rud éigin
-    á dhéanamh agat nár cheart duit, níor cheart duit é seo a fháil. Téigh i dteagmháil
-    leis an bhforbróir!
   wwcConfigGUILibreTranslateApiKeyButton: Athraigh Free Translate API Key
-  libreHttp403: Missing Libre Translate API Key, nó má tá tú cosc ar an bhfreastalaí!
   wwcConfigConversationLibreURLSuccess: URL saor in aisce a leagtar go rathúil.
   wwcConfigConversationLibreTranslateApiKeyInput: Is é an eochair API atá ann faoi
     láthair {0}. ionchur eochair API do Libre, nó cineál 0 chun dul ar ais.
   wwcConfigGUILibreTranslateButton: Aistrigh Saor
-  libreHttp429: Gan aon mhuinín mar gheall ar theorainn rátaí ón bhfreastalaí.
   wwcConfigGUIToggleLibreTranslateButton: Scoránaigh Saor Aistrigh
   wwcConfigConversationLibreTranslateToggleSuccess: D'éirigh toggled Libre Translate.
     Athlódáil chun na hathruithe a chur i bhfeidhm.
@@ -372,7 +367,6 @@ Messages:
     go rathúil.
   wwcConfigConversationLibreURLInput: Is é an URL atá ann faoi láthair {0}. le do
     thoil ionchur URL do Libre, nó cineál 0 chun dul ar ais.
-  libreHttpUnknown: 'Earráid http anaithnid: {0}'
   wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL
   wwcConfigConnectionFail: Theip ar ceangal le {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: D'éirigh le hainm bunachar MongoDB
@@ -416,8 +410,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Athraigh Port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neamhbhailí marfach leagtha Teorainn ama async.
     Mainneachtana go 10 soicind...
-  libreHttp500: Ní thacaítear le do phéire teanga ionchuir agus aschuir roghnaithe.
-    Roghnaigh tacar teanga difriúil le do thoil!
   wwcConfigGUIDeepLTranslateButton: Scoránaigh DeepL Aistrigh
   wwcConfigConversationDeepLTranslateToggleSuccess: D'éirigh le DeepL Translate a
     scoráil. Athlódáil chun na hathruithe a chur i bhfeidhm.
@@ -488,10 +480,6 @@ Messages:
   wwcrTransFail: Athluchtaigh WorldwideChat ach theip air aistritheoir a chumasú.
   wwcdCacheCleared: Glanadh taisce an aistriúcháin.
   wwcdInvalidCmd: Argóintí míbhailí!
-  systranHttpUnknown: 'Earráid http anaithnid: {0}'
-  systranHttp400: Droch-pharaiméadair a seoltar chuig Systran. D'fhéadfadh a bheith
-    ina droch-phéire teanga?
-  systranHttp500: Earráid freastalaí inmheánach ó chríochphointe Systran ({0}).
   wwcInvalidStorageSession: Tá {0} cumasaithe i do chumraíocht, ach níl nasc bunaithe.
     Déan iarracht athluchtú chun é seo a shocrú, ach déan teagmháil leis an bhforbróir
     má fuair tú teachtaireacht nasc rathúil ó {0} roimhe seo.
@@ -733,4 +721,64 @@ Messages:
   wwcdResetNotifError: Níor scriosadh gach sonraí go rathúil. An bhfuil tú ceangailte
     le do bhunachar sonraí?
   colorCodeWarning: Féadfaidh úsáid cóid datha torthaí a thuar duit.
+  wwcAiSystemPromptLoaded: Córas AI Pras luchtaithe.
+  wwcAiSystemPromptBad: Braithíodh droch-Chóras AI Pras. Úsáid ár réamhshocraithe...
+  wwcAiSupportedLangsBad: Braithíodh Teangacha Tacaithe le Droch-AI. Ag baint úsáide
+    as ár réamhshocruithe...
+  wwcConfigGUIAISettings: Cumraíocht AI
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: Sraith eochair API ChatGPT go rathúil.
+  wwcConfigGUAIPromptButton: Athraigh AI Pras
+  wwcConfigConversationChatGPTURLInput: Is é an URL reatha {0}. Cuir isteach URL le
+    haghaidh ChatGPT, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationChatGPTApiKeyInput: Is é an eochair API reatha {0}. Cuir isteach
+    eochair API le haghaidh ChatGPT, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationChatGPTURLSuccess: Socraítear URL ChatGPT go rathúil.
+  wwcConfigGUIChatGPTURLButton: Athraigh URL ChatGPT
+  wwcConfigGUIChatGPTAPIKeyButton: Athraigh Eochair API ChatGPT
+  wwcConfigConversationChatGPTModelSuccess: Socraigh samhail ChatGPT go rathúil.
+  wwcConfigGUIChatGPTModelButton: Athraigh Múnla ChatGPT
+  wwcConfigGUIToggleChatGPTButton: Athraigh ChatGPT
+  wwcLargeConfigInputSuccess: Tá do ionchur mór de charachtair {0} próiseáilte.
+  wwcConfigInstructionsBulkBook: Oscail an leabhar titim chun an luach reatha a fheiceáil.
+    Sínigh an leabhar chun athruithe a dhéanamh ar an luach seo.
+  wwcConfigGUIChatGPTToggleSuccess: ChatGPT a thosc go rathúil.
+  wwcConfigGUIOllamaPromptButton: Athraigh Ollama Prant
+  wwcConfigGUIChatGPTPromptButton: Athraigh ChatGPT Prompt
+  wwcConfigGUIModifyAILangsSettings: Athraigh Teangacha AI Tacaithe
+  wwcConfigConversationAddLang: Cuir isteach an teanga nua ar mhaith leat a chur leis,
+    nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationAILangDeletionSuccess: Scrios an teanga go rathúil.
+  wwcConfigGUIAILangModify: Athraigh Teanga ({0})
+  wwcConfigGUIAILangDeleteButton: Scrios Teanga
+  wwcConfigGUIAILangNewButton: Cuir Teanga Nua leis
+  wwcConfigGUIAIChangeLangs: Athraigh Teangacha AI Tacaithe
+  wwcConfigConversationAILangAddSuccess: D'éirigh leis teanga nua leis na teangacha
+    a thacaítear le AI.
+  translatorBadAPIKey: Droch-eochair API! Déan cinnte go bhfuil tú clóscríobh i gceart
+    é.
+  translatorLimitExceeded: Tá tú tar éis an cuóta do sheirbhíse aistriúcháin sháraithe
+    nó tá ráta teoranta agat. Seiceáil do sholáthraí le haghaidh tuilleadh sonraí.
+  translatorServerError: Earráid freastalaí inmheánach Bain triail as arís níos déanaí.
+  translatorForbidden: Tá rochtain toirmiscthe! Seiceáil do cheadanna le do thoil.
+  translatorBadRequest: Droch-iarratas. Seiceáil d'ionchur le do thoil agus bain triail
+    as arís.
+  translatorUnknownError: 'Tharla earráid anaithnid le cód stádais: {0}.'
+  translatorURLNotFound: Tá URL do sheirbhíse aistritheora neamhbhailí.
+  translatorMethodNotAllowed: Ní thacaíonn an tseirbhís aistriúcháin leis an modh
+    iarratais seo.
+  translatorNotFound: Níor aimsíodh an acmhainn aistriúcháin a iarrtar.
+  wwcConfigConversationChatGPTModelInput: Is é an tsamhail reatha {0}. Cuir isteach
+    samhail le haghaidh ChatGPT, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIOllamaModelButton: Athraigh Samhail Ollama
+  wwcConfigConversationOllamaURLSuccess: Ollama URL socraithe go rathúil.
+  wwcConfigConversationOllamaModelInput: Is é an tsamhail reatha {0}. Cuir isteach
+    samhail le haghaidh Ollama, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationOllamaURLInput: Is é an URL reatha {0}. Cuir isteach URL le
+    haghaidh Ollama, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Tosaigh Ollama go rathúil.
+  wwcConfigGUIOllamaURLButton: Athraigh URL Ollama
+  wwcConfigConversationOllamaModelSuccess: Socraítear múnla Ollama go rathúil.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

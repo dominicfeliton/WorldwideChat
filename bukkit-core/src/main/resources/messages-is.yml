@@ -335,15 +335,11 @@ Messages:
     tímamörk, eða eitthvað fyrir neðan það til að fara aftur.
   wwcConfigConversationFatalAsyncSuccess: Async verkefni timeout sett með góðum árangri.
   wwcConfigGUIFatalAsyncAbortButton: Breyta Async Task Timeout
-  libreHttp400: Slæm beiðni send til Libre Translate! Nema þú ert að gera eitthvað
-    sem þú ættir ekki, þú ættir ekki að fá þetta. Vinsamlegast hafðu samband við framkvæmdaraðila!
   wwcConfigGUILibreTranslateApiKeyButton: Breyta Libre Þýða API Key
-  libreHttp403: Vantar Libre Translate API Key, eða þú ert bönnuð frá þjóninum!
   wwcConfigConversationLibreURLSuccess: Ókeypis URL sett með góðum árangri.
   wwcConfigConversationLibreTranslateApiKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     sláðu inn API lykil fyrir Libre, eða tegund 0 til að fara aftur.
   wwcConfigGUILibreTranslateButton: Libre Þýða
-  libreHttp429: Ekkert traust vegna hámarkshraða frá netþjóni.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Þýða
   wwcConfigConversationLibreTranslateToggleSuccess: Tókst að skipta um Libre Translate.
     Endurhlaða til að breytingarnar taki gildi.
@@ -351,7 +347,6 @@ Messages:
     árangri.
   wwcConfigConversationLibreURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
     inn vefslóð fyrir Libre, eða tegund 0 til að fara til baka.
-  libreHttpUnknown: 'Óþekkt http villa: {0}'
   wwcConfigGUILibreTranslateURLButton: Breyta Libre Þýða URL
   wwcConfigConnectionFail: Mistókst að tengjast {0}.
   wwcConfigConversationMongoDatabaseNameSuccess: Tókst að breyta MongoDB gagnagrunnsheiti.
@@ -391,8 +386,6 @@ Messages:
   wwcConfigGUIMongoPortButton: Breyta MongoDB höfn
   wwcConfigInvalidFatalAsyncTimeout: Ógildur banvæn async tímamörk sett. Sjálfgefið
     í 10 sekúndur...
-  libreHttp500: Valið inntak og úttak tungumál par er ekki stutt. Vinsamlegast veldu
-    annað tungumálasett!
   wwcConfigGUIDeepLTranslateButton: Toggle DeepL Þýða
   wwcConfigConversationDeepLTranslateToggleSuccess: Tókst að skipta DeepL Translate.
     Endurhlaða til að breytingarnar taki gildi.
@@ -463,9 +456,6 @@ Messages:
   wwcrTransFail: Endurhlaðið WorldwideChat en tókst ekki að virkja þýðanda.
   wwcdCacheCleared: Þýðingarskyndiminnið var hreinsað.
   wwcdInvalidCmd: Ógild rök!
-  systranHttpUnknown: 'Óþekkt http villa: {0}'
-  systranHttp400: Slæmar breytur sendar til Systran. Getur verið slæmt tungumálapar?
-  systranHttp500: Innri miðlara villa frá Systran endapunkti ({0}).
   wwcInvalidStorageSession: '{0} er virkt í stillingunni þinni, en tengingu er ekki
     komið á fót. Vinsamlegast reyndu að endurhlaða til að laga þetta, en vinsamlegast
     hafðu samband við verktaki ef þú fékkst áður árangursrík tengingarskilaboð frá
@@ -705,4 +695,64 @@ Messages:
   wwcdResetNotifError: Ekki voru öll gögn þurrkuð með góðum árangri. Ertu tengdur
     við gagnagrunninn þinn?
   colorCodeWarning: Notkun litakóða getur gefið þér ófyrirsjáanlegar niðurstöður.
+  wwcAiSystemPromptLoaded: AI System Prompt hlaðinn.
+  wwcAiSystemPromptBad: Slæm AI kerfi hvetja greind. Með því að nota sjálfgefna...
+  wwcAiSupportedLangsBad: Slæm AI studd tungumál greind. Með því að nota sjálfgefna
+    stillingar okkar...
+  wwcConfigGUIAISettings: AI stillingar
+  wwcConfigGUIChatGPTButton: ChatGPT
+  wwcConfigConversationChatGPTApiKeySuccess: ChatGPT API lykill settur með góðum árangri.
+  wwcConfigGUAIPromptButton: Breyta AI hvetja
+  wwcConfigConversationChatGPTURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
+    inn slóð fyrir ChatGPT, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationChatGPTApiKeyInput: Núverandi API lykill er {0}. Vinsamlegast
+    sláðu inn API lykil fyrir ChatGPT, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationChatGPTURLSuccess: ChatGPT vefslóð sett með góðum árangri.
+  wwcConfigGUIChatGPTURLButton: Breyta ChatGPT vefslóð
+  wwcConfigGUIChatGPTAPIKeyButton: Breyta ChatGPT API lykli
+  wwcConfigConversationChatGPTModelSuccess: ChatGPT líkan sett með góðum árangri.
+  wwcConfigGUIChatGPTModelButton: Breyta ChatGPT líkaninu
+  wwcConfigGUIToggleChatGPTButton: Skiptu á ChatGPT
+  wwcLargeConfigInputSuccess: Stórt inntak þitt af {0} stöfum hefur verið unnið.
+  wwcConfigInstructionsBulkBook: Opnaðu bókina sem sleppt er til að sjá núverandi
+    gildi. Skrifaðu undir bókina til að gera breytingar á þessu gildi.
+  wwcConfigGUIChatGPTToggleSuccess: Tekist að skipta um ChatGPT.
+  wwcConfigGUIOllamaPromptButton: Breyta tilkynningarhvetjandi
+  wwcConfigGUIChatGPTPromptButton: Breyta ChatGPT hvetja
+  wwcConfigGUIModifyAILangsSettings: Breyta studdum AI tungumálum
+  wwcConfigConversationAddLang: Sláðu inn nýja tungumálið sem þú vilt bæta við eða
+    sláðu inn 0 til að fara aftur.
+  wwcConfigConversationAILangDeletionSuccess: Tekist að eyða tungumálinu.
+  wwcConfigGUIAILangModify: Breyta tungumáli ({0})
+  wwcConfigGUIAILangDeleteButton: Eyða tungumáli
+  wwcConfigGUIAILangNewButton: Bæta við nýju tungumáli
+  wwcConfigGUIAIChangeLangs: Breyta studdum AI tungumálum
+  wwcConfigConversationAILangAddSuccess: Tekist að bæta nýju tungumáli við tungumálin
+    sem studd eru með AI.
+  translatorBadAPIKey: Slæmur API lykill! Vinsamlegast vertu viss um að þú hafir slegið
+    það rétt.
+  translatorLimitExceeded: Þú hefur annaðhvort farið yfir kvótann fyrir þýðingarþjónustu
+    þína eða þú hefur verið taxtakmarkaður. Vinsamlegast athugaðu þjónustuveituna
+    þína til að fá frekari upplýsingar.
+  translatorServerError: Innri netþjónn villa. Vinsamlegast reyndu aftur seinna.
+  translatorForbidden: Aðgangur er bannaður! Vinsamlegast athugaðu heimildir þínar.
+  translatorBadRequest: Slæm beiðni. Vinsamlegast athugaðu inntakið þitt og reyndu
+    aftur.
+  translatorUnknownError: 'Óþekkt villa kom upp með stöðukóða: {0}.'
+  translatorURLNotFound: Vefslóð þýðandaþjónustunnar er ógild.
+  translatorMethodNotAllowed: Þýðingaþjónustan styður ekki þessa beiðniaðferð.
+  translatorNotFound: Umbeðið þýðingaúrræði fannst ekki.
+  wwcConfigConversationChatGPTModelInput: Núverandi fyrirmynd er {0}. Vinsamlegast
+    sláðu inn líkan fyrir ChatGPT, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIOllamaModelButton: Breyta stillingarlíkaninu
+  wwcConfigConversationOllamaURLSuccess: Ollama slóð sett með góðum árangri.
+  wwcConfigConversationOllamaModelInput: Núverandi fyrirmynd er {0}. Vinsamlegast
+    sláðu inn líkan fyrir Ollama, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationOllamaURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
+    inn slóð fyrir Ollama, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Skiptist á Ollama með góðum árangri.
+  wwcConfigGUIOllamaURLButton: Breyta vefslóð
+  wwcConfigConversationOllamaModelSuccess: Ollama líkan sett með góðum árangri.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 
