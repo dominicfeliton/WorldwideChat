@@ -16,6 +16,7 @@ Some of its notable features include:
 - Translation globally, for other players, or just you.
 - The plugin itself has been localized into more than 30 languages thanks to Amazon Translate.
 - A cache that stores the most used phrases by players on your server, improving speed/reliability/lower costs.
+- Auto-adjust to match with the user's localization.
 - A blacklist to avoid translating certain phrases/words.
 - Configurable rate limits so your players don't rack up substantial translation costs.
 - Persistent translation sessions saved per player across server reboots and reloads.
