@@ -767,8 +767,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: La clé API actuelle est {0}. Entrez une
     clé API pour ChatGPT, ou tapez 0 pour revenir en arrière.
   wwcConfigConversationChatGPTURLSuccess: URL ChatGPT définie avec succès.
-  wwcConfigConversationChatGPTModelInput: La version actuelle est {0}. Entrez un modèle
-    pour ChatGPT, ou tapez 0 pour revenir en arrière.
   wwcConfigGUIChatGPTURLButton: Modifier l'URL de ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Modifier la clé d'API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Le modèle ChatGPT a été défini avec succès.
@@ -803,3 +801,16 @@ Messages:
   translatorMethodNotAllowed: Le service de traduction ne prend pas en charge cette
     méthode de demande.
   translatorNotFound: La ressource de traduction demandée n'a pas été trouvée.
+  wwcConfigConversationChatGPTModelInput: Le modèle actuel est {0}. Entrez un modèle
+    pour ChatGPT, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIOllamaModelButton: Modifier le modèle Ollama
+  wwcConfigConversationOllamaURLSuccess: L'URL d'Ollama a été définie avec succès.
+  wwcConfigConversationOllamaModelInput: Le modèle actuel est {0}. Entrez un modèle
+    pour Ollama, ou tapez 0 pour revenir en arrière.
+  wwcConfigConversationOllamaURLInput: L'URL actuelle est {0}. Entrez une URL pour
+    Ollama, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Vous avez activé Ollama avec succès.
+  wwcConfigGUIOllamaURLButton: Modifier l'URL d'Ollama
+  wwcConfigConversationOllamaModelSuccess: Le modèle Ollama a été créé avec succès.
+  wwcConfigGUIToggleOllamaButton: Activer/désactiver Ollama

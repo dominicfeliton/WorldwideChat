@@ -695,8 +695,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Geçerli API anahtarı {0} 'dir. Lütfen ChatGPT
     için bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL'si başarıyla ayarlandı.
-  wwcConfigConversationChatGPTModelInput: Şu anki sürüm {0}. Lütfen ChatGPT için bir
-    model girin veya geri dönmek için 0 yazın.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL'sini değiştir
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API Anahtarını Değiştir
   wwcConfigConversationChatGPTModelSuccess: ChatGPT modeli başarıyla ayarlandı.
@@ -728,4 +726,17 @@ Messages:
   translatorURLNotFound: Çevirmen hizmeti URL'niz geçersiz.
   translatorMethodNotAllowed: Çeviri hizmeti bu istek yöntemini desteklemez.
   translatorNotFound: İstenen çeviri kaynağı bulunamadı.
+  wwcConfigConversationChatGPTModelInput: Mevcut model {0}. Lütfen ChatGPT için bir
+    model girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIOllamaModelButton: Ollama Modelini Değiştir
+  wwcConfigConversationOllamaURLSuccess: Ollama URL'si başarıyla ayarlandı.
+  wwcConfigConversationOllamaModelInput: Mevcut model {0}. Lütfen Ollama için bir
+    model girin veya geri dönmek için 0 yazın.
+  wwcConfigConversationOllamaURLInput: Geçerli URL {0} 'dir. Lütfen Ollama için bir
+    URL girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama başarıyla değiştirildi.
+  wwcConfigGUIOllamaURLButton: Soru URL'sini değiştir
+  wwcConfigConversationOllamaModelSuccess: Ollama modeli başarıyla ayarlandı.
+  wwcConfigGUIToggleOllamaButton: Anahtarlamayı Aç/Kapat
 

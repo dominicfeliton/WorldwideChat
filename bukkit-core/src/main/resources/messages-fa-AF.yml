@@ -696,8 +696,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: کلید فعلی API {0} است. لطفا کلید API را
     برای ChatGPT وارد کنید یا 0 را تایپ کنید تا برگردید.
   wwcConfigConversationChatGPTURLSuccess: URL ChatGPT با موفقیت تنظیم شده است.
-  wwcConfigConversationChatGPTModelInput: نسخه فعلی {0} است. لطفا مدلی را برای ChatGPT
-    وارد کنید یا 0 را تایپ کنید تا برگردید.
   wwcConfigGUIChatGPTURLButton: تغییر URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: تغییر کلید API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: مدل ChatGPT با موفقیت تنظیم شده است.
@@ -729,4 +727,17 @@ Messages:
   translatorURLNotFound: URL سرویس مترجم شما نامعتبر است.
   translatorMethodNotAllowed: سرویس ترجمه از این روش درخواست پشتیبانی نمی کند.
   translatorNotFound: منبع ترجمه درخواست شده یافت نشد.
+  wwcConfigConversationChatGPTModelInput: مدل فعلی {0} است. لطفا مدلی را برای ChatGPT
+    وارد کنید یا 0 را تایپ کنید تا برگردید.
+  wwcConfigGUIOllamaModelButton: تغییر مدل فهرست
+  wwcConfigConversationOllamaURLSuccess: URL را با موفقیت تنظیم کنید.
+  wwcConfigConversationOllamaModelInput: مدل فعلی {0} است. لطفا مدلی را برای Ollama
+    وارد کنید یا 0 را تایپ کنید تا برگردید.
+  wwcConfigConversationOllamaURLInput: URL فعلی {0} است. لطفا یک URL را برای Ollama
+    وارد کنید یا 0 را تایپ کنید تا برگردید.
+  wwcConfigGUIOllamaButton: اولاما
+  wwcConfigGUIOllamaToggleSuccess: با موفقیت Ollama را تغییر داد.
+  wwcConfigGUIOllamaURLButton: تغییر آدرس آدرس
+  wwcConfigConversationOllamaModelSuccess: مدل Ollama با موفقیت مجموعه شده است.
+  wwcConfigGUIToggleOllamaButton: جابجایی را تغییر دهید
 

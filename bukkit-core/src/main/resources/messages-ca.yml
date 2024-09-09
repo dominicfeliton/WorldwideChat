@@ -750,8 +750,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: La clau de l'API actual és {0}. Si us plau,
     introduïu una clau API per ChatGPT, o escriviu 0 per tornar enrere.
   wwcConfigConversationChatGPTURLSuccess: L'URL de ChatGPT s'ha establert correctament.
-  wwcConfigConversationChatGPTModelInput: La versió actual és {0}. Si us plau, introduïu
-    un model per ChatGPT, o escriviu 0 per tornar enrere.
   wwcConfigGUIChatGPTURLButton: Canviar l'URL de ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Canviar la clau de l'API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: El model ChatGPT establert amb èxit.
@@ -786,4 +784,17 @@ Messages:
   translatorURLNotFound: L'URL del vostre servei de traductor no és vàlid.
   translatorMethodNotAllowed: El servei de traducció no admet aquest mètode de sol·licitud.
   translatorNotFound: No s'ha trobat el recurs de traducció sol·licitat.
+  wwcConfigConversationChatGPTModelInput: El model actual és {0}. Si us plau, introduïu
+    un model per ChatGPT, o escriviu 0 per tornar enrere.
+  wwcConfigGUIOllamaModelButton: Canviar el model d'inscripció
+  wwcConfigConversationOllamaURLSuccess: S'ha establert correctament l'URL de recollida.
+  wwcConfigConversationOllamaModelInput: El model actual és {0}. Si us plau, introduïu
+    un model per a Ollama, o escriviu 0 per tornar enrere.
+  wwcConfigConversationOllamaURLInput: L'URL actual és {0}. Si us plau, introduïu
+    una URL per a Ollama, o escriviu 0 per tornar enrere.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Canviat amb èxit Ollama.
+  wwcConfigGUIOllamaURLButton: Canviar la URL de la llista
+  wwcConfigConversationOllamaModelSuccess: El model Ollama es va establir amb èxit.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

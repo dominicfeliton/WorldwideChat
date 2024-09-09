@@ -653,8 +653,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: مفتاح API الحالي هو {0}. يرجى إدخال مفتاح
     API لـ ChatGPT، أو اكتب 0 للعودة.
   wwcConfigConversationChatGPTURLSuccess: تم تعيين عنوان URL الخاص بـ ChatGPT بنجاح.
-  wwcConfigConversationChatGPTModelInput: الإصدار الحالي هو {0}. يرجى إدخال نموذج
-    لـ ChatGPT، أو اكتب 0 للعودة.
   wwcConfigGUIChatGPTURLButton: تغيير عنوان URL الخاص بـ ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: تغيير مفتاح واجهة برمجة تطبيقات ChatGPT
   wwcConfigConversationChatGPTModelSuccess: تم تعيين نموذج ChatGPT بنجاح.
@@ -686,4 +684,17 @@ Messages:
   translatorURLNotFound: عنوان URL الخاص بخدمة المترجم غير صالح.
   translatorMethodNotAllowed: لا تدعم خدمة الترجمة طريقة الطلب هذه.
   translatorNotFound: لم يتم العثور على مورد الترجمة المطلوب.
+  wwcConfigConversationChatGPTModelInput: النموذج الحالي هو {0}. يرجى إدخال نموذج
+    لـ ChatGPT، أو اكتب 0 للعودة.
+  wwcConfigGUIOllamaModelButton: تغيير نموذج أولما
+  wwcConfigConversationOllamaURLSuccess: تم تعيين عنوان URL الخاص بـ Ollama بنجاح.
+  wwcConfigConversationOllamaModelInput: النموذج الحالي هو {0}. يرجى إدخال نموذج لـ
+    Ollama، أو اكتب 0 للعودة.
+  wwcConfigConversationOllamaURLInput: عنوان URL الحالي هو {0}. يرجى إدخال عنوان URL
+    لـ Ollama، أو اكتب 0 للعودة.
+  wwcConfigGUIOllamaButton: أولاما
+  wwcConfigGUIOllamaToggleSuccess: تم تبديل Ollama بنجاح.
+  wwcConfigGUIOllamaURLButton: تغيير عنوان URL الخاص بـ Ollama
+  wwcConfigConversationOllamaModelSuccess: تم ضبط نموذج Ollama بنجاح.
+  wwcConfigGUIToggleOllamaButton: تبديل أوباما
 

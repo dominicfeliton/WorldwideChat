@@ -63,7 +63,7 @@ public class ChatGPTSettingsConvos {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
-            return refs.getPlainMsg("wwcConfigConversationChatGPTVersionInput",
+            return refs.getPlainMsg("wwcConfigConversationChatGPTModelInput",
                     "&6" + main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel"),
                     "&b",
                     currPlayer);

@@ -703,8 +703,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Den aktuella API-nyckeln är {0}. Ange en
     API-nyckel för ChatGPT, eller skriv 0 för att gå tillbaka.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT-URL har ställts in framgångsrikt.
-  wwcConfigConversationChatGPTModelInput: Den nuvarande versionen är {0}. Ange en
-    modell för ChatGPT, eller skriv 0 för att gå tillbaka.
   wwcConfigGUIChatGPTURLButton: Ändra ChatGPT-URL
   wwcConfigGUIChatGPTAPIKeyButton: Ändra ChatGPT API-nyckel
   wwcConfigConversationChatGPTModelSuccess: ChatGPT-modellen har ställts in framgångsrikt.
@@ -736,4 +734,17 @@ Messages:
   translatorURLNotFound: Din URL för översättartjänsten är ogiltig.
   translatorMethodNotAllowed: Översättningstjänsten stöder inte denna förfrågningsmetod.
   translatorNotFound: Den begärda översättningsresursen hittades inte.
+  wwcConfigConversationChatGPTModelInput: Den nuvarande modellen är {0}. Ange en modell
+    för ChatGPT, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIOllamaModelButton: Ändra Ollama-modell
+  wwcConfigConversationOllamaURLSuccess: Ollama URL har ställts in framgångsrikt.
+  wwcConfigConversationOllamaModelInput: Den nuvarande modellen är {0}. Ange en modell
+    för Ollama, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationOllamaURLInput: Den aktuella webbadressen är {0}. Ange en URL
+    för Ollama, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Lyckades växla Ollama.
+  wwcConfigGUIOllamaURLButton: Ändra URL för registrering
+  wwcConfigConversationOllamaModelSuccess: Ollama-modellen har ställts in framgångsrikt.
+  wwcConfigGUIToggleOllamaButton: Toggle Layout
 

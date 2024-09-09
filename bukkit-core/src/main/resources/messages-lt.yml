@@ -712,8 +712,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Dabartinis API raktas yra {0}. Įveskite
     “ChatGPT” API raktą arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigConversationChatGPTURLSuccess: “ChatGPT” URL sėkmingai nustatytas.
-  wwcConfigConversationChatGPTModelInput: Dabartinė versija yra {0}. Įveskite “ChatGPT”
-    modelį arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIChatGPTURLButton: Pakeiskite “ChatGPT” URL
   wwcConfigGUIChatGPTAPIKeyButton: Pakeiskite “ChatGPT” API raktą
   wwcConfigConversationChatGPTModelSuccess: “ChatGPT” modelis sėkmingai nustatytas.
@@ -747,4 +745,17 @@ Messages:
   translatorURLNotFound: Jūsų vertėjo paslaugos URL yra netinkamas.
   translatorMethodNotAllowed: Vertimo paslauga nepalaiko šio užklausos metodo.
   translatorNotFound: Prašomas vertimo šaltinis nerastas.
+  wwcConfigConversationChatGPTModelInput: Dabartinis modelis yra {0}. Įveskite “ChatGPT”
+    modelį arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIOllamaModelButton: Keisti “Ollama” modelį
+  wwcConfigConversationOllamaURLSuccess: Sėkmingai nustatytas “Ollama” URL.
+  wwcConfigConversationOllamaModelInput: Dabartinis modelis yra {0}. Įveskite “Ollama”
+    modelį arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationOllamaURLInput: Dabartinis URL yra {0}. Įveskite “Ollama” URL
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Sėkmingai perjungta “Ollama”.
+  wwcConfigGUIOllamaURLButton: Keisti skelbimo URL
+  wwcConfigConversationOllamaModelSuccess: “Ollama” modelis sėkmingai nustatytas.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

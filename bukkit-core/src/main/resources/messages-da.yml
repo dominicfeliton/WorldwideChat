@@ -698,8 +698,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Den aktuelle API-nøgle er {0}. Indtast
     venligst en API-nøgle til ChatGPT, eller skriv 0 for at gå tilbage.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL indstillet med succes.
-  wwcConfigConversationChatGPTModelInput: Den nuværende version er {0}. Indtast venligst
-    en model til ChatGPT, eller skriv 0 for at gå tilbage.
   wwcConfigGUIChatGPTURLButton: Skift ChatGPT URL
   wwcConfigGUIChatGPTAPIKeyButton: Skift ChatGPT API-nøgle
   wwcConfigConversationChatGPTModelSuccess: ChatGPT-modellen indstillet med succes.
@@ -731,4 +729,17 @@ Messages:
   translatorURLNotFound: URL-adressen til din oversættelsestjeneste er ugyldig.
   translatorMethodNotAllowed: Oversættelsestjenesten understøtter ikke denne anmodningsmetode.
   translatorNotFound: Den ønskede oversættelsesressource blev ikke fundet.
+  wwcConfigConversationChatGPTModelInput: Den nuværende model er {0}. Indtast venligst
+    en model til ChatGPT, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIOllamaModelButton: Skift Ollama Model
+  wwcConfigConversationOllamaURLSuccess: URL-adressen er indstillet med succes.
+  wwcConfigConversationOllamaModelInput: Den nuværende model er {0}. Indtast en model
+    til Ollama, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationOllamaURLInput: Den aktuelle URL er {0}. Indtast venligst en
+    URL til Ollama, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Vellykket Ollama.
+  wwcConfigGUIOllamaURLButton: Skift URL-adresse
+  wwcConfigConversationOllamaModelSuccess: Ollama-modellen indstillet med succes.
+  wwcConfigGUIToggleOllamaButton: Toggle Option
 

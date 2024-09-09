@@ -707,8 +707,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Yr allwedd API gyfredol yw {0}. Mewnbynnwch
     allwedd API ar gyfer ChatGPT, neu deipiwch 0 i fynd yn ôl.
   wwcConfigConversationChatGPTURLSuccess: Gosodwyd URL ChatGPT yn llwyddiannus.
-  wwcConfigConversationChatGPTModelInput: Y fersiwn gyfredol yw {0}. Mewnbynnwch fodel
-    ar gyfer ChatGPT, neu deipiwch 0 i fynd yn ôl.
   wwcConfigGUIChatGPTURLButton: Newid URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Newid Allwedd API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Model ChatGPT wedi'i osod yn llwyddiannus.
@@ -743,4 +741,17 @@ Messages:
   translatorMethodNotAllowed: Nid yw'r gwasanaeth cyfieithu yn cefnogi'r dull cais
     hwn.
   translatorNotFound: Ni ddarganfuwyd yr adnodd cyfieithu gofynnwyd amdano.
+  wwcConfigConversationChatGPTModelInput: Y model presennol yw {0}. Mewnbynnwch fodel
+    ar gyfer ChatGPT, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIOllamaModelButton: Change Lamp Model
+  wwcConfigConversationOllamaURLSuccess: Gosodwyd URL yn llwyddiannus.
+  wwcConfigConversationOllamaModelInput: Y model presennol yw {0}. Mewnbynnwch fodel
+    ar gyfer Ollama, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationOllamaURLInput: Yr URL cyfredol yw {0}. Mewnbynnwch URL ar
+    gyfer Ollama, neu teipiwch 0 i fynd yn ôl.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Toglodd Ollama yn llwyddiannus.
+  wwcConfigGUIOllamaURLButton: Newid URL Advertising
+  wwcConfigConversationOllamaModelSuccess: Gosodwyd model Ollama yn llwyddiannus.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

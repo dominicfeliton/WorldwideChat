@@ -603,8 +603,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: አሁን ያለው ኤፒአይ ቁልፍ {0} ነው። እባክዎን ለ ChatGPT
     የ API ቁልፍ ያስገቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
   wwcConfigConversationChatGPTURLSuccess: ChatGPT ዩአርኤል በተሳካ ሁኔታ ተዘጋጅ
-  wwcConfigConversationChatGPTModelInput: የአሁኑ ስሪት {0} ነው። እባክዎን ለChatGPT ሞዴል ያስገቡ
-    ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
   wwcConfigGUIChatGPTURLButton: የቻትጂፒቲ ዩአርኤልን ይ
   wwcConfigGUIChatGPTAPIKeyButton: የ ChatGPT ኤፒአይ ቁልፍ ይለውጡ
   wwcConfigConversationChatGPTModelSuccess: ChatGPT ሞዴል በተሳካ ሁኔታ የተዘጋጀ።
@@ -634,4 +632,17 @@ Messages:
   translatorURLNotFound: የትርጓሚ አገልግሎትዎ ዩአርኤል ልክ የለውም
   translatorMethodNotAllowed: የትርጉም አገልግሎቱ ይህንን የጥያቄ ዘዴ አይደግፍም።
   translatorNotFound: የተጠየቀ የትርጉም ሀብት አልተገኘም።
+  wwcConfigConversationChatGPTModelInput: አሁን ያለው ሞዴል {0} ነው። እባክዎን ለChatGPT ሞዴል ያስገቡ
+    ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcConfigGUIOllamaModelButton: የመለወጫ ሞዴል ይለውጡ
+  wwcConfigConversationOllamaURLSuccess: የኦሎማ ዩአርኤል በተሳካ ሁኔታ ተ
+  wwcConfigConversationOllamaModelInput: አሁን ያለው ሞዴል {0} ነው። እባክዎን ለኦላማ ሞዴል ያስገቡ ወይም
+    ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcConfigConversationOllamaURLInput: የአሁኑ ዩአርኤል {0} ነው። እባክዎን ለኦላማ ዩአርኤል ያስገቡ ወይም
+    ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigGUIOllamaButton: ኦላማ
+  wwcConfigGUIOllamaToggleSuccess: ኦላማ በተሳካ ሁኔታ መቀየር።
+  wwcConfigGUIOllamaURLButton: የማስታወቂያ ዩአርኤልን
+  wwcConfigConversationOllamaModelSuccess: የኦላማ ሞዴል በተሳካ ሁኔታ የተዘጋ
+  wwcConfigGUIToggleOllamaButton: ማስተላለፊያ ቀይር
 

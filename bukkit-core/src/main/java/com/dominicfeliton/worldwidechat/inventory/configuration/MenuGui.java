@@ -38,7 +38,27 @@ public class MenuGui implements InventoryProvider {
     }
 
     public enum CONFIG_GUI_TAGS {
-        GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, CHAT_CHANNEL_SET, TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, CHATGPT_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET, AI_SET;
+        GEN_SET,
+
+        STORAGE_SET,
+        SQL_SET,
+        MONGO_SET,
+        POSTGRES_SET,
+
+        CHAT_SET,
+        CHAT_CHANNEL_SET,
+
+        TRANS_SET,
+        AMAZON_TRANS_SET,
+        AZURE_TRANS_SET,
+        CHATGPT_TRANS_SET,
+        DEEP_TRANS_SET,
+        GOOGLE_TRANS_SET,
+        LIBRE_TRANS_SET,
+        OLLAMA_TRANS_SET,
+        SYSTRAN_TRANS_SET,
+
+        AI_SET;
 
         public SmartInventory smartInv;
     }
@@ -71,7 +91,7 @@ public class MenuGui implements InventoryProvider {
         CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv = chatChannelSet.genSmartInv("chatChannelSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIChatChannelSettings");
 
         MenuGui transSet = new MenuGui(inPlayer, transName);
-        CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
+        CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 5, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
 
         MenuGui transGoogleSet = new MenuGui(inPlayer, transName);
         CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("googleTranslator", "wwcConfigGUIEachTranslatorSettings", new String[]{"Google"});
@@ -93,6 +113,9 @@ public class MenuGui implements InventoryProvider {
 
         MenuGui transChatGPTSet = new MenuGui(inPlayer, transName);
         CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv = transChatGPTSet.genSmartInv("chatgptTranslator", "wwcConfigGUIEachTranslatorSettings", new String[]{"ChatGPT"});
+
+        MenuGui transOllamaSet = new MenuGui(inPlayer, transName);
+        CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.smartInv = transOllamaSet.genSmartInv("ollamaTranslator", "wwcConfigGUIEachTranslatorSettings", new String[]{"Ollama"});
 
         MenuGui aiSet = new MenuGui(inPlayer, transName);
         CONFIG_GUI_TAGS.AI_SET.smartInv = aiSet.genSmartInv("aiSettings", "wwcConfigGUIAISettings");
@@ -238,22 +261,23 @@ public class MenuGui implements InventoryProvider {
         transSet.add(new SubMenuElement(1, 4, transName.equals("DeepL Translate"), "wwcConfigGUIDeepLTranslateButton", CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv));
         transSet.add(new SubMenuElement(1, 5, transName.equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
         transSet.add(new SubMenuElement(1, 6, transName.equals("Libre Translate"), "wwcConfigGUILibreTranslateButton", CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv));
-        transSet.add(new SubMenuElement(1, 7, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton", CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv));
-        transSet.add(new ConvoElement(2, 1, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
+        transSet.add(new SubMenuElement(1, 7, transName.equals("Ollama"), "wwcConfigGUIOllamaButton", CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.smartInv));
+        transSet.add(new SubMenuElement(2, 1, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton", CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv));
+        transSet.add(new ConvoElement(3, 1, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
                 new TranslatorSettingsConvos.TranslationCache()));
-        transSet.add(new ConvoElement(2, 2, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
+        transSet.add(new ConvoElement(3, 2, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
                 new TranslatorSettingsConvos.GlobalRateLimit()));
-        transSet.add(new ConvoElement(2, 3, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
+        transSet.add(new ConvoElement(3, 3, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
                 new TranslatorSettingsConvos.ErrorLimit()));
-        transSet.add(new ConvoElement(2, 4, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
+        transSet.add(new ConvoElement(3, 4, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
                 new TranslatorSettingsConvos.CharacterLimit()));
-        transSet.add(new ConvoElement(2, 5, "wwcConfigGUIIgnoreErrorsButton", XMaterial.NAME_TAG,
+        transSet.add(new ConvoElement(3, 5, "wwcConfigGUIIgnoreErrorsButton", XMaterial.NAME_TAG,
                 new TranslatorSettingsConvos.IgnoreErrors()));
-        transSet.add(new ToggleElement(2, 6, "wwcConfigGUIPersistentCacheButton", "wwcConfigConversationPersistentCacheSuccess", "Translator.enablePersistentCache"));
-        transSet.add(new CommonElement(3, 6, "Next", new Object[]{CONFIG_GUI_TAGS.AI_SET.smartInv}));
-        transSet.add(new CommonElement(3, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
-        transSet.add(new CommonElement(3, 4, "Quit"));
-        transSet.add(new CommonElement(3, 8, "Page Number", new String[]{pageNum++ + ""}));
+        transSet.add(new ToggleElement(3, 6, "wwcConfigGUIPersistentCacheButton", "wwcConfigConversationPersistentCacheSuccess", "Translator.enablePersistentCache"));
+        transSet.add(new CommonElement(4, 6, "Next", new Object[]{CONFIG_GUI_TAGS.AI_SET.smartInv}));
+        transSet.add(new CommonElement(4, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
+        transSet.add(new CommonElement(4, 4, "Quit"));
+        transSet.add(new CommonElement(4, 8, "Page Number", new String[]{pageNum++ + ""}));
 
         // Google Translator
         transGoogleSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
@@ -289,6 +313,17 @@ public class MenuGui implements InventoryProvider {
                 new ChatGPTSettingsConvos.Model()));
         transChatGPTSet.add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
         transChatGPTSet.add(new CommonElement(2, 4, "Quit"));
+
+        // Ollama
+        transOllamaSet.add(new BorderElement(XMaterial.LIME_STAINED_GLASS_PANE));
+        transOllamaSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleOllamaButton", "wwcConfigGUIOllamaToggleSuccess",
+                "Translator.useOllama", translatorToggles, false));
+        transOllamaSet.add(new ConvoElement(1, 2, "wwcConfigGUIOllamaURLButton", XMaterial.NAME_TAG,
+                new OllamaSettingsConvos.Url()));
+        transOllamaSet.add(new ConvoElement(1, 3, "wwcConfigGUIOllamaModelButton", XMaterial.NAME_TAG,
+                new OllamaSettingsConvos.Model()));
+        transOllamaSet.add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+        transOllamaSet.add(new CommonElement(2, 4, "Quit"));
 
         // Libre Translator
         transLibreSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));

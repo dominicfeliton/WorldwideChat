@@ -729,8 +729,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: 'Ներկայիս API- ի բանալին {0} է: Խնդրում
     ենք մուտքագրել API բանալին ChatGPT- ի համար կամ մուտքագրել 0 հետ գնալու համար:'
   wwcConfigConversationChatGPTURLSuccess: 'ChatGPT URL- ը հաջողությամբ սահմանվել է:'
-  wwcConfigConversationChatGPTModelInput: 'Ընթացիկ տարբերակը {0} է: Խնդրում ենք մուտքագրել
-    մոդել ChatGPT- ի համար կամ մուտքագրել 0-ը հետ գնալու համար:'
   wwcConfigGUIChatGPTURLButton: Փոխել ChatGPT URL- ը
   wwcConfigGUIChatGPTAPIKeyButton: Փոխեք ChatGPT API բանալին
   wwcConfigConversationChatGPTModelSuccess: 'ChatGPT մոդելը հաջողությամբ հավաքվել
@@ -766,4 +764,17 @@ Messages:
   translatorMethodNotAllowed: 'Թարգմանչական ծառայությունը չի աջակցում այս հարցման
     մեթոդին:'
   translatorNotFound: 'Հայցված թարգմանության ռեսուրսը չի գտնվել:'
+  wwcConfigConversationChatGPTModelInput: 'Ներկայիս մոդելը {0} է: Խնդրում ենք մուտքագրել
+    մոդել ChatGPT- ի համար կամ մուտքագրել 0-ը հետ գնալու համար:'
+  wwcConfigGUIOllamaModelButton: Փոխել Օգտագործման մոդելը
+  wwcConfigConversationOllamaURLSuccess: 'Տեղադրեք URL- ը հաջողությամբ:'
+  wwcConfigConversationOllamaModelInput: 'Ներկայիս մոդելը {0} է: Խնդրում ենք մուտքագրել
+    մոդել Ollama-ի համար կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigConversationOllamaURLInput: 'Ներկայիս URL- ն {0} է: Խնդրում ենք մուտքագրել
+    URL- ը Ollama- ի համար կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigGUIOllamaButton: Օլլամա
+  wwcConfigGUIOllamaToggleSuccess: 'Հաջողությամբ միացրեց Ollama-ն:'
+  wwcConfigGUIOllamaURLButton: Փոխել գրանցման URL- ը
+  wwcConfigConversationOllamaModelSuccess: 'Ollama մոդելի հավաքածուն հաջողությամբ:'
+  wwcConfigGUIToggleOllamaButton: Անջատեք Օգտագործումը
 

@@ -708,8 +708,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     sláðu inn API lykil fyrir ChatGPT, eða sláðu inn 0 til að fara aftur.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT vefslóð sett með góðum árangri.
-  wwcConfigConversationChatGPTModelInput: Núverandi útgáfa er {0}. Vinsamlegast sláðu
-    inn líkan fyrir ChatGPT, eða sláðu inn 0 til að fara aftur.
   wwcConfigGUIChatGPTURLButton: Breyta ChatGPT vefslóð
   wwcConfigGUIChatGPTAPIKeyButton: Breyta ChatGPT API lykli
   wwcConfigConversationChatGPTModelSuccess: ChatGPT líkan sett með góðum árangri.
@@ -744,4 +742,17 @@ Messages:
   translatorURLNotFound: Vefslóð þýðandaþjónustunnar er ógild.
   translatorMethodNotAllowed: Þýðingaþjónustan styður ekki þessa beiðniaðferð.
   translatorNotFound: Umbeðið þýðingaúrræði fannst ekki.
+  wwcConfigConversationChatGPTModelInput: Núverandi fyrirmynd er {0}. Vinsamlegast
+    sláðu inn líkan fyrir ChatGPT, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIOllamaModelButton: Breyta stillingarlíkaninu
+  wwcConfigConversationOllamaURLSuccess: Ollama slóð sett með góðum árangri.
+  wwcConfigConversationOllamaModelInput: Núverandi fyrirmynd er {0}. Vinsamlegast
+    sláðu inn líkan fyrir Ollama, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationOllamaURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
+    inn slóð fyrir Ollama, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Skiptist á Ollama með góðum árangri.
+  wwcConfigGUIOllamaURLButton: Breyta vefslóð
+  wwcConfigConversationOllamaModelSuccess: Ollama líkan sett með góðum árangri.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

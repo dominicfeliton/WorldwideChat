@@ -691,8 +691,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Cari API açarı {0} -dir. Zəhmət olmasa
     ChatGPT üçün API açarını daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL uğurla quruldu.
-  wwcConfigConversationChatGPTModelInput: Cari versiya {0} -dir. Zəhmət olmasa ChatGPT
-    üçün bir model daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL-sini dəyişdirin
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API açarını dəyişdirin
   wwcConfigConversationChatGPTModelSuccess: ChatGPT model uğurla quruldu.
@@ -726,4 +724,17 @@ Messages:
   translatorURLNotFound: Tərcüməçi xidmətinizin URL-i etibarsızdır.
   translatorMethodNotAllowed: Tərcümə xidməti bu sorğu metodunu dəstəkləmir.
   translatorNotFound: Tələb olunan tərcümə mənbəyi tapılmadı.
+  wwcConfigConversationChatGPTModelInput: Mövcud model {0} -dir. Zəhmət olmasa ChatGPT
+    üçün bir model daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIOllamaModelButton: Dəyişiklik modelini dəyişdirin
+  wwcConfigConversationOllamaURLSuccess: Ollama URL uğurla quruldu.
+  wwcConfigConversationOllamaModelInput: Mövcud model {0} -dir. Zəhmət olmasa Ollama
+    üçün bir model daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationOllamaURLInput: Cari URL {0} -dir. Zəhmət olmasa Ollama üçün
+    bir URL daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollamanı uğurla dəyişdirdi.
+  wwcConfigGUIOllamaURLButton: Advertising URL-ni dəyişdirin
+  wwcConfigConversationOllamaModelSuccess: Ollama model dəsti uğurla.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

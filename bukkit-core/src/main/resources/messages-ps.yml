@@ -684,8 +684,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: اوسنۍ API کلید {0} دی. مهرباني وکړئ د ChatGPT
     لپاره یو API کلید داخل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL په بریالیتوب سره ټاکل شوی.
-  wwcConfigConversationChatGPTModelInput: اوسنۍ نسخه {0} دی. مهرباني وکړئ د ChatGPT
-    لپاره یو ماډل داخل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
   wwcConfigGUIChatGPTURLButton: د ChatGPT URL بدل کړئ
   wwcConfigGUIChatGPTAPIKeyButton: د ChatGPT API کلید بدل کړئ
   wwcConfigConversationChatGPTModelSuccess: د ChatGPT ماډل په بریالیتوب سره تنظیم
@@ -719,4 +717,17 @@ Messages:
   translatorURLNotFound: ستاسو د ژباړونې خدمت URL اعتبار دی.
   translatorMethodNotAllowed: د ژباړې خدمت د دې غوښتنې طریقه ملاتړ نه کوي.
   translatorNotFound: غوښتل شوي ژباړې سرچینه ونه موندل شو.
+  wwcConfigConversationChatGPTModelInput: اوسنۍ ماډل {0} دی. مهرباني وکړئ د ChatGPT
+    لپاره یو ماډل داخل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
+  wwcConfigGUIOllamaModelButton: د اولیم ماډل بدل کړئ
+  wwcConfigConversationOllamaURLSuccess: یو آر ایل په بریالیتوب سره ټاکل کړئ.
+  wwcConfigConversationOllamaModelInput: اوسنۍ ماډل {0} دی. مهرباني وکړئ د Ollama
+    لپاره یو ماډل درج کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ
+  wwcConfigConversationOllamaURLInput: اوسنۍ URL {0} دی. مهرباني وکړئ د Ollama لپاره
+    یو URL داخل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
+  wwcConfigGUIOllamaButton: اولاما
+  wwcConfigGUIOllamaToggleSuccess: په بریالیتوب سره اولاما بدل شوی.
+  wwcConfigGUIOllamaURLButton: یو آر ایل بدل کړئ
+  wwcConfigConversationOllamaModelSuccess: د اولاما ماډل په بریالیتوب سره ټیک
+  wwcConfigGUIToggleOllamaButton: ټوګل اولاما
 

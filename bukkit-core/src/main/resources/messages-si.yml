@@ -691,8 +691,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: වත්මන් API යතුර {0} වේ. කරුණාකර ChatGPT
     සඳහා API යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL එක සාර්ථකව සකසා ඇත.
-  wwcConfigConversationChatGPTModelInput: වර්තමාන අනුවාදය {0} වේ. කරුණාකර ChatGPT
-    සඳහා ආකෘතියක් ඇතුළත් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL එක වෙනස් කරන්න
   wwcConfigGUIChatGPTAPIKeyButton: චැට්ජීපීටී ඒපීඅයි යතුර වෙනස් කරන්න
   wwcConfigConversationChatGPTModelSuccess: ChatGPT ආකෘතිය සාර්ථකව සකසා ඇත.
@@ -725,4 +723,17 @@ Messages:
   translatorURLNotFound: ඔබේ පරිවර්තක සේවා URL එක අවලංගු වේ.
   translatorMethodNotAllowed: පරිවර්තන සේවාව මෙම ඉල්ලීම් ක්රමයට සහාය නොදක්වයි.
   translatorNotFound: ඉල්ලූ පරිවර්තන සම්පත සොයාගත නොහැකි විය.
+  wwcConfigConversationChatGPTModelInput: වර්තමාන ආකෘතිය {0} වේ. කරුණාකර ChatGPT සඳහා
+    ආකෘතියක් ඇතුළත් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUIOllamaModelButton: ආකෘතිය වෙනස් කරන්න
+  wwcConfigConversationOllamaURLSuccess: URL එක සාර්ථකව සකසා ගන්න.
+  wwcConfigConversationOllamaModelInput: වර්තමාන ආකෘතිය {0} වේ. කරුණාකර ඔලමා සඳහා
+    ආකෘතියක් ඇතුළත් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationOllamaURLInput: වර්තමාන URL එක {0} වේ. කරුණාකර ඔලමා සඳහා URL
+    එකක් ඇතුළත් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUIOllamaButton: ඔලමා
+  wwcConfigGUIOllamaToggleSuccess: සාර්ථකව ඔලමා මාරු කළා.
+  wwcConfigGUIOllamaURLButton: ලිපින URL එක වෙනස් කරන්න
+  wwcConfigConversationOllamaModelSuccess: ඔලමා ආකෘතිය සාර්ථකව සකසා ඇත.
+  wwcConfigGUIToggleOllamaButton: ඔලමා ටොග්ල් කරන්න
 

@@ -706,8 +706,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: ప్రస్తుత API కీ {0}. దయచేసి ChatGPT కోసం
     ఒక API కీని ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL విజయవంతంగా సెట్ చేయబడింది.
-  wwcConfigConversationChatGPTModelInput: ప్రస్తుత వెర్షన్ {0}. దయచేసి ChatGPT కోసం
-    ఒక మోడల్ను ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigGUIChatGPTURLButton: చాట్జిపిటి URL ను మార్చండి
   wwcConfigGUIChatGPTAPIKeyButton: చాట్జిపిటి API కీని మార్చండి
   wwcConfigConversationChatGPTModelSuccess: ChatGPT మోడల్ విజయవంతంగా సెట్ చేయబడింది.
@@ -739,4 +737,17 @@ Messages:
   translatorURLNotFound: మీ అనువాదక సేవ URL చెల్లదు.
   translatorMethodNotAllowed: అనువాద సేవ ఈ అభ్యర్థన పద్ధతికి మద్దతు ఇవ్వదు.
   translatorNotFound: అభ్యర్థించిన అనువాద వనరు కనుగొనబడలేదు.
+  wwcConfigConversationChatGPTModelInput: ప్రస్తుత మోడల్ {0}. దయచేసి ChatGPT కోసం
+    ఒక మోడల్ను ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUIOllamaModelButton: మోడల్ మార్చండి
+  wwcConfigConversationOllamaURLSuccess: ఓలమా URL విజయవంతంగా సెట్ చేయబడింది.
+  wwcConfigConversationOllamaModelInput: ప్రస్తుత మోడల్ {0}. దయచేసి ఓల్లామా కోసం ఒక
+    మోడల్ను ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationOllamaURLInput: ప్రస్తుత URL {0}. దయచేసి ఓల్లామా కోసం ఒక URL
+    ను ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUIOllamaButton: ఒల్లామా
+  wwcConfigGUIOllamaToggleSuccess: ఓల్లామాను విజయవంతంగా టోగుల్ చేశారు.
+  wwcConfigGUIOllamaURLButton: URL ను మార్చండి
+  wwcConfigConversationOllamaModelSuccess: ఒల్లామా మోడల్ విజయవంతంగా సెట్ చేయబడింది.
+  wwcConfigGUIToggleOllamaButton: టోగుల్ ఓలామా
 

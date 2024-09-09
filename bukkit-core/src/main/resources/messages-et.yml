@@ -674,8 +674,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Praegune API võti on {0}. Sisestage ChatGPT
     jaoks API-võti või tippige tagasi minemiseks 0.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL seadistatud edukalt.
-  wwcConfigConversationChatGPTModelInput: Praegune versioon on {0}. Sisestage ChatGPT
-    mudel, või tippige tagasi minemiseks 0.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL-i muutmine
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API võtme muutmine
   wwcConfigConversationChatGPTModelSuccess: ChatGPT mudel seati edukalt.
@@ -707,4 +705,17 @@ Messages:
   translatorURLNotFound: Teie tõlketeenuse URL on vale.
   translatorMethodNotAllowed: Tõlketeenus ei toeta seda taotlusmeetodit.
   translatorNotFound: Taotletud tõlkeressurssi ei leitud.
+  wwcConfigConversationChatGPTModelInput: Praegune mudel on {0}. Sisestage ChatGPT
+    mudel, või tippige tagasi minemiseks 0.
+  wwcConfigGUIOllamaModelButton: Muuda Ollama mudelit
+  wwcConfigConversationOllamaURLSuccess: Ollama URL seadistatud edukalt.
+  wwcConfigConversationOllamaModelInput: Praegune mudel on {0}. Sisestage Ollama mudel
+    või tippige tagasi minemiseks 0.
+  wwcConfigConversationOllamaURLInput: Praegune URL on {0}. Sisestage Ollama URL või
+    tippige tagasi minemiseks 0.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Lülitati edukalt Ollama.
+  wwcConfigGUIOllamaURLButton: Muuda Ollama URL-i
+  wwcConfigConversationOllamaModelSuccess: Ollama mudel komplektis edukalt.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

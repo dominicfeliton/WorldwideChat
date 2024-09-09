@@ -601,8 +601,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: คีย์ API ปัจจุบันคือ {0}กรุณาป้อนคีย์ API
     สำหรับ ChatGPT หรือพิมพ์ 0 เพื่อกลับไป
   wwcConfigConversationChatGPTURLSuccess: การตั้งค่า URL ของ ChatGPT เรียบร้อยแล้ว
-  wwcConfigConversationChatGPTModelInput: เวอร์ชันปัจจุบันคือ {0}กรุณาป้อนโมเดลสำหรับ
-    ChatGPT หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwcConfigGUIChatGPTURLButton: เปลี่ยน URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: เปลี่ยนคีย์ API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: ชุดโมเดล ChatGPT ประสบความสำเร็จ
@@ -630,4 +628,17 @@ Messages:
   translatorURLNotFound: URL บริการนักแปลของคุณไม่ถูกต้อง
   translatorMethodNotAllowed: บริการแปลไม่รองรับวิธีการร้องขอนี้
   translatorNotFound: ไม่พบแหล่งข้อมูลการแปลที่ร้องขอ
+  wwcConfigConversationChatGPTModelInput: รุ่นปัจจุบันคือ {0}กรุณาป้อนโมเดลสำหรับ
+    ChatGPT หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIOllamaModelButton: เปลี่ยนโมเดล Ollama
+  wwcConfigConversationOllamaURLSuccess: ตั้งค่า URL เรียบร้อยแล้ว
+  wwcConfigConversationOllamaModelInput: รุ่นปัจจุบันคือ {0}กรุณาป้อนโมเดลสำหรับ Ollama
+    หรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigConversationOllamaURLInput: URL ปัจจุบันคือ {0}กรุณาป้อน URL สำหรับ Ollama
+    หรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigGUIOllamaButton: โอลลามา
+  wwcConfigGUIOllamaToggleSuccess: สวิตช์ Ollama ได้สำเร็จ
+  wwcConfigGUIOllamaURLButton: เปลี่ยน URL การบันทึก
+  wwcConfigConversationOllamaModelSuccess: ชุดโมเดล Ollama ประสบความสำเร็จ
+  wwcConfigGUIToggleOllamaButton: สวิตช์โกลลลามา
 

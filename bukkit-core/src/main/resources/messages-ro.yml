@@ -737,8 +737,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Cheia API curentă este {0}. Vă rugăm să
     introduceți o cheie API pentru ChatGPT sau tastați 0 pentru a reveni.
   wwcConfigConversationChatGPTURLSuccess: Adresa URL ChatGPT setată cu succes.
-  wwcConfigConversationChatGPTModelInput: Versiunea actuală este {0}. Vă rugăm să
-    introduceți un model pentru ChatGPT sau tastați 0 pentru a reveni.
   wwcConfigGUIChatGPTURLButton: Schimbați adresa URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Schimbați cheia API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Modelul ChatGPT setat cu succes.
@@ -775,4 +773,17 @@ Messages:
   translatorMethodNotAllowed: Serviciul de traducere nu acceptă această metodă de
     solicitare.
   translatorNotFound: Resursa de traducere solicitată nu a fost găsită.
+  wwcConfigConversationChatGPTModelInput: Modelul actual este {0}. Vă rugăm să introduceți
+    un model pentru ChatGPT sau tastați 0 pentru a reveni.
+  wwcConfigGUIOllamaModelButton: Schimbați modelul Ollama
+  wwcConfigConversationOllamaURLSuccess: Adresă URL setată cu succes.
+  wwcConfigConversationOllamaModelInput: Modelul actual este {0}. Vă rugăm să introduceți
+    un model pentru Ollama sau tastați 0 pentru a reveni.
+  wwcConfigConversationOllamaURLInput: Adresa URL curentă este {0}. Vă rugăm să introduceți
+    o adresă URL pentru Ollama sau tastați 0 pentru a reveni.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: A comutat cu succes Ollama.
+  wwcConfigGUIOllamaURLButton: Schimbați adresa URL
+  wwcConfigConversationOllamaModelSuccess: Modelul Ollama a fost setat cu succes.
+  wwcConfigGUIToggleOllamaButton: Comutați Oblama
 

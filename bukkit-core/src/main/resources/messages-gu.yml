@@ -696,8 +696,6 @@ Messages:
     માટે API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
   wwcConfigConversationChatGPTURLSuccess: ચેટજીપીટી URL સફળતાપૂર્વક સેટ કરવામાં આવ્યું
     છે.
-  wwcConfigConversationChatGPTModelInput: વર્તમાન સંસ્કરણ {0} છે. કૃપા કરીને ChatGPT
-    માટે મોડેલ ઇનપુટ કરો અથવા પાછા જવા માટે 0 લખો.
   wwcConfigGUIChatGPTURLButton: ચેટજીપીટી URL બદલો
   wwcConfigGUIChatGPTAPIKeyButton: ચેટજીપીટી API કી બદલો
   wwcConfigConversationChatGPTModelSuccess: ચેટજીપીટી મોડેલ સફળતાપૂર્વક સેટ કરવામાં
@@ -734,4 +732,17 @@ Messages:
   translatorURLNotFound: તમારી અનુવાદક સેવા URL અમાન્ય છે.
   translatorMethodNotAllowed: અનુવાદ સેવા આ વિનંતી પદ્ધતિને સપોર્ટ કરતી નથી.
   translatorNotFound: વિનંતી કરેલ અનુવાદ સંસાધન મળ્યું નથી.
+  wwcConfigConversationChatGPTModelInput: વર્તમાન મોડેલ {0} છે. કૃપા કરીને ChatGPT
+    માટે એક મોડેલ ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIOllamaModelButton: ચેન્જ મોડેલ બદલો
+  wwcConfigConversationOllamaURLSuccess: URL ને સફળતાપૂર્વક સેટ કરો.
+  wwcConfigConversationOllamaModelInput: વર્તમાન મોડેલ {0} છે. કૃપા કરીને ઓલામા માટે
+    એક મોડેલ ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigConversationOllamaURLInput: વર્તમાન URL {0} છે. કૃપા કરીને ઓલામા માટે URL
+    ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUIOllamaButton: ઓલામા
+  wwcConfigGUIOllamaToggleSuccess: સફળતાપૂર્વક ઓલામાને ટૉગલ કર્યું.
+  wwcConfigGUIOllamaURLButton: યુઆરએલ બદલો
+  wwcConfigConversationOllamaModelSuccess: ઓલામા મોડેલ સફળતાપૂર્વક સેટ કર્યું.
+  wwcConfigGUIToggleOllamaButton: ટૉગલ ઓલામા
 

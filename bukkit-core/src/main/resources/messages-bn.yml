@@ -696,8 +696,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: বর্তমান এপিআই কী {0}। ChatGPT এর জন্য দয়া
     করে একটি API কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigConversationChatGPTURLSuccess: ChatGPT ইউআরএল সফলভাবে সেট করা হয়েছে।
-  wwcConfigConversationChatGPTModelInput: বর্তমান সংস্করণটি {0}। ChatGPT এর জন্য একটি
-    মডেল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigGUIChatGPTURLButton: চ্যাটজিপিটি URL পরিবর্তন করুন
   wwcConfigGUIChatGPTAPIKeyButton: চ্যাটজিপিটি এপিআই কী পরিবর্তন করুন
   wwcConfigConversationChatGPTModelSuccess: ChatGPT মডেল সফলভাবে সেট করা হয়েছে।
@@ -731,4 +729,17 @@ Messages:
   translatorURLNotFound: আপনার অনুবাদক পরিষেবা ইউআরএল অবৈধ।
   translatorMethodNotAllowed: অনুবাদ পরিষেবা এই অনুরোধ পদ্ধতিটি সমর্থন করে না।
   translatorNotFound: অনুরোধ করা অনুবাদ সম্পদ পাওয়া যায়নি।
+  wwcConfigConversationChatGPTModelInput: বর্তমান মডেলটি {0}। ChatGPT এর জন্য একটি
+    মডেল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIOllamaModelButton: অলমা মডেল পরিবর্তন করুন
+  wwcConfigConversationOllamaURLSuccess: সফলভাবে ইউআরএল সেট করুন।
+  wwcConfigConversationOllamaModelInput: বর্তমান মডেলটি {0}। দয়া করে Ollama এর জন্য
+    একটি মডেল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationOllamaURLInput: বর্তমান ইউআরএল {0}। দয়া করে Ollama এর জন্য
+    একটি ইউআরএল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIOllamaButton: অল্লামা
+  wwcConfigGUIOllamaToggleSuccess: সফলভাবে ওলামাকে টগল করেছিল।
+  wwcConfigGUIOllamaURLButton: আলোমার ইউআরএল পরিবর্তন
+  wwcConfigConversationOllamaModelSuccess: ওলামা মডেল সফলভাবে সেট করা হয়েছে।
+  wwcConfigGUIToggleOllamaButton: টগল অলামা
 

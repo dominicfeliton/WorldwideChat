@@ -735,8 +735,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Çelësi aktual API është {0}. Ju lutemi
     futni një çelës API për ChatGPT, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigConversationChatGPTURLSuccess: URL-ja e ChatGPT vendosur me sukses.
-  wwcConfigConversationChatGPTModelInput: Versioni aktual është {0}. Ju lutemi futni
-    një model për ChatGPT, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigGUIChatGPTURLButton: Ndryshoni URL-në e ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Ndryshoni çelësin API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Modeli ChatGPT u vendos me sukses.
@@ -772,4 +770,17 @@ Messages:
   translatorURLNotFound: URL shërbimi juaj i përkthyesve është i pavlefshëm.
   translatorMethodNotAllowed: Shërbimi i përkthimit nuk e mbështet këtë metodë kërkese.
   translatorNotFound: Burimi i kërkuar i përkthimit nuk u gjet.
+  wwcConfigConversationChatGPTModelInput: Modeli aktual është {0}. Ju lutemi futni
+    një model për ChatGPT, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigGUIOllamaModelButton: Ndryshoni modelin e modelit
+  wwcConfigConversationOllamaURLSuccess: Zbuloni URL-në e vendosur me sukses.
+  wwcConfigConversationOllamaModelInput: Modeli aktual është {0}. Ju lutemi futni
+    një model për Ollama, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationOllamaURLInput: URL aktuale është {0}. Ju lutemi futni një
+    URL për Ollama, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ndërroi me sukses Ollama.
+  wwcConfigGUIOllamaURLButton: Ndrysho URL-në e adresës
+  wwcConfigConversationOllamaModelSuccess: Modeli i Ollama u vendos me sukses.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

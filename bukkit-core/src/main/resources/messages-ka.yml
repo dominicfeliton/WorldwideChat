@@ -691,8 +691,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: მიმდინარე API გასაღები არის {0}. გთხოვთ,
     შეიყვანოთ API გასაღები ChatGPT-ისთვის, ან დაბრუნებისთვის ჩაწერეთ 0.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL წარმატებით დაყენებულია.
-  wwcConfigConversationChatGPTModelInput: ამჟამინდელი ვერსია არის {0}. გთხოვთ, შეიყვანოთ
-    მოდელი ChatGPT- ისთვის, ან დაბრუნებისთვის აკრიფეთ 0.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL- ის შეცვლა
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API გასაღების შეცვლა
   wwcConfigConversationChatGPTModelSuccess: ChatGPT მოდელის ნაკრები წარმატებით.
@@ -724,4 +722,17 @@ Messages:
   translatorURLNotFound: თქვენი მთარგმნელის სერვისის URL არასწორი
   translatorMethodNotAllowed: თარგმანის სერვისი არ უჭერს მხარს ამ მოთხოვნის მეთ
   translatorNotFound: მოთხოვნილი თარგმანის რესურსი ვერ მოძებნა
+  wwcConfigConversationChatGPTModelInput: ამჟამინდელი მოდელია {0}. გთხოვთ, შეიყვანოთ
+    მოდელი ChatGPT- ისთვის, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIOllamaModelButton: შეცვალეთ შეცვლის მოდელი
+  wwcConfigConversationOllamaURLSuccess: წარმატებით დაყენებულია URL მისამართი.
+  wwcConfigConversationOllamaModelInput: ამჟამინდელი მოდელია {0}. გთხოვთ, შეიყვანოთ
+    მოდელი Ollama-ისთვის, ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcConfigConversationOllamaURLInput: ამჟამინდელი URL მისამართია {0}. გთხოვთ, შეიყვანოთ
+    URL Ollama- ისთვის, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIOllamaButton: ოლლამა
+  wwcConfigGUIOllamaToggleSuccess: წარმატებით შეცვალა ოლლამა.
+  wwcConfigGUIOllamaURLButton: შეცვალეთ ჩანაწერის URL
+  wwcConfigConversationOllamaModelSuccess: Ollama მოდელის ნაკრები წარმატებით.
+  wwcConfigGUIToggleOllamaButton: შეცვლის შეცვლა
 

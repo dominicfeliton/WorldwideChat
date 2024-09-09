@@ -731,8 +731,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Joriy API kaliti {0} hisoblanadi. Iltimos,
     ChatGPT uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL manzili muvaffaqiyatli o'rnatildi.
-  wwcConfigConversationChatGPTModelInput: Joriy versiya {0}. Iltimos, ChatGPT uchun
-    modelni kiriting yoki orqaga qaytish uchun 0 yozing.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL manzilini o'zgartiring
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API kalitini o'zgartiring
   wwcConfigConversationChatGPTModelSuccess: ChatGPT modeli muvaffaqiyatli o'rnatildi.
@@ -767,4 +765,17 @@ Messages:
   translatorURLNotFound: Tarjimon xizmatingiz URL manzili yaroqsiz.
   translatorMethodNotAllowed: Tarjima xizmati ushbu so'rov usulini qo'llab-quvvatlamaydi.
   translatorNotFound: So'ralgan tarjima resursi topilmadi.
+  wwcConfigConversationChatGPTModelInput: Hozirgi model {0}. Iltimos, ChatGPT uchun
+    modelni kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIOllamaModelButton: Foydalanish modelini o'zgartirish
+  wwcConfigConversationOllamaURLSuccess: Ollama URL manzili muvaffaqiyatli o'rnatildi.
+  wwcConfigConversationOllamaModelInput: Hozirgi model {0}. Iltimos, Ollama uchun
+    modelni kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationOllamaURLInput: Joriy URL manzili {0}. Iltimos, Ollama uchun
+    URL manzilini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollamani muvaffaqiyatli almashtirdi.
+  wwcConfigGUIOllamaURLButton: URL manzilini o'zgartirish
+  wwcConfigConversationOllamaModelSuccess: Ollama modeli muvaffaqiyatli o'rnatildi.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

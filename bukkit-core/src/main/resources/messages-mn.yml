@@ -726,8 +726,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Одоогийн API түлхүүр нь {0} юм. ChatGPT-ийн
     API түлхүүрийг оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL амжилттай тохируулагдсан.
-  wwcConfigConversationChatGPTModelInput: Одоогийн хувилбар нь {0} юм. ChatGPT загварыг
-    оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL-г өөрчлөх
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API түлхүүрийг өөрчлөх
   wwcConfigConversationChatGPTModelSuccess: ChatGPT загварыг амжилттай зохион байгууллаа.
@@ -760,4 +758,17 @@ Messages:
   translatorURLNotFound: Таны орчуулагч үйлчилгээний URL хүчин төгөлдөр бус байна.
   translatorMethodNotAllowed: Орчуулгын үйлчилгээ нь энэ хүсэлтийн аргыг дэмждэггүй.
   translatorNotFound: Хүсэлт гаргасан орчуулгын эх үүсвэр олдсонгүй.
+  wwcConfigConversationChatGPTModelInput: Одоогийн загвар нь {0} юм. ChatGPT загварыг
+    оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigGUIOllamaModelButton: Загварыг өөрчлөх
+  wwcConfigConversationOllamaURLSuccess: URL хаягийг амжилттай тохирууллаа.
+  wwcConfigConversationOllamaModelInput: Одоогийн загвар нь {0} юм. Ollama загварыг
+    оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationOllamaURLInput: Одоогийн URL нь {0} байна. Ollama гэсэн URL
+    оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigGUIOllamaButton: Оллама
+  wwcConfigGUIOllamaToggleSuccess: Олламаг амжилттай сольсон.
+  wwcConfigGUIOllamaURLButton: Захиалгын URL-г өөрчлөх
+  wwcConfigConversationOllamaModelSuccess: Ollama загварыг амжилттай зохион байгууллаа.
+  wwcConfigGUIToggleOllamaButton: Тоггле засварлана
 

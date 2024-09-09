@@ -524,7 +524,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: 目前的 API 密鑰是 {0}。請輸入 ChatGPT 的 API 密鑰，或鍵入
     0 以返回。
   wwcConfigConversationChatGPTURLSuccess: 成功設定聊天 GPT 網址。
-  wwcConfigConversationChatGPTModelInput: 目前的版本是 {0}。請輸入 ChatGPT 的模型，或鍵入 0 以返回。
   wwcConfigGUIChatGPTURLButton: 更改聊天 GPT 網址
   wwcConfigGUIChatGPTAPIKeyButton: 更改聊天 GPT API 密鑰
   wwcConfigConversationChatGPTModelSuccess: 成功設定聊天 GPT 模型。
@@ -552,4 +551,14 @@ Messages:
   translatorURLNotFound: 您的翻譯服務 URL 無效。
   translatorMethodNotAllowed: 翻譯服務不支援此請求方法。
   translatorNotFound: 找不到請求的翻譯資源。
+  wwcConfigConversationChatGPTModelInput: 目前的模型是 {0}。請輸入 ChatGPT 的模型，或鍵入 0 以返回。
+  wwcConfigGUIOllamaModelButton: 變更模式
+  wwcConfigConversationOllamaURLSuccess: 已成功設定網址。
+  wwcConfigConversationOllamaModelInput: 目前的模型是 {0}。請輸入 Ollama 的模型，或鍵入 0 以返回。
+  wwcConfigConversationOllamaURLInput: 目前的網址為 {0}。請輸入 Ollama 的 URL，或輸入 0 以返回。
+  wwcConfigGUIOllamaButton: 奥尔拉马
+  wwcConfigGUIOllamaToggleSuccess: 成功切換「查看」。
+  wwcConfigGUIOllamaURLButton: 更改名稱網址
+  wwcConfigConversationOllamaModelSuccess: 奧拉瑪模型設置成功。
+  wwcConfigGUIToggleOllamaButton: 切換選項
 

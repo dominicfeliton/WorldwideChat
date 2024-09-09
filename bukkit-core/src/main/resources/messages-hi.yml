@@ -717,8 +717,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: मौजूदा API कुंजी {0} है। कृपया ChatGPT
     के लिए API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwcConfigConversationChatGPTURLSuccess: चैटजीपीटी यूआरएल सफलतापूर्वक सेट किया गया।
-  wwcConfigConversationChatGPTModelInput: वर्तमान संस्करण {0} है। कृपया ChatGPT के
-    लिए एक मॉडल इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwcConfigGUIChatGPTURLButton: ChatGPT URL बदलें
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API कुंजी बदलें
   wwcConfigConversationChatGPTModelSuccess: ChatGPT मॉडल सफलतापूर्वक सेट किया गया।
@@ -752,4 +750,17 @@ Messages:
   translatorURLNotFound: आपकी अनुवादक सेवा का URL अमान्य है।
   translatorMethodNotAllowed: अनुवाद सेवा इस अनुरोध विधि का समर्थन नहीं करती है।
   translatorNotFound: अनुरोधित अनुवाद संसाधन नहीं मिला।
+  wwcConfigConversationChatGPTModelInput: मौजूदा मॉडल {0} है। कृपया ChatGPT के लिए
+    एक मॉडल इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIOllamaModelButton: ओलामा मॉडल बदलें
+  wwcConfigConversationOllamaURLSuccess: Ollama URL सफलतापूर्वक सेट किया गया।
+  wwcConfigConversationOllamaModelInput: मौजूदा मॉडल {0} है। कृपया ओलामा के लिए एक
+    मॉडल इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationOllamaURLInput: मौजूदा URL {0} है। कृपया ओलामा के लिए एक URL
+    इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIOllamaButton: ओलामा
+  wwcConfigGUIOllamaToggleSuccess: ओलामा को सफलतापूर्वक टॉगल किया।
+  wwcConfigGUIOllamaURLButton: ओलामा URL बदलें
+  wwcConfigConversationOllamaModelSuccess: ओलामा मॉडल सफलतापूर्वक सेट किया गया।
+  wwcConfigGUIToggleOllamaButton: टॉगल ओलामा
 

@@ -709,8 +709,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿ {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ChatGPT
     ಗಾಗಿ API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
-  wwcConfigConversationChatGPTModelInput: ಪ್ರಸ್ತುತ ಆವೃತ್ತಿ {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ChatGPT
-    ಗಾಗಿ ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigGUIChatGPTURLButton: ಚಾಟ್ಜಿಪಿಟಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigGUIChatGPTAPIKeyButton: ಚಾಟ್ಜಿಪಿಟಿ ಎಪಿಐ ಕೀಲಿಯನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigConversationChatGPTModelSuccess: ಚಾಟ್ಜಿಪಿಟಿ ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
@@ -744,4 +742,17 @@ Messages:
   translatorURLNotFound: ನಿಮ್ಮ ಅನುವಾದಕ ಸೇವಾ URL ಅಮಾನ್ಯವಾಗಿದೆ.
   translatorMethodNotAllowed: ಅನುವಾದ ಸೇವೆಯು ಈ ವಿನಂತಿ ವಿಧಾನವನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.
   translatorNotFound: ವಿನಂತಿಸಿದ ಅನುವಾದ ಸಂಪನ್ಮೂಲ ಕಂಡುಬಂದಿಲ್ಲ.
+  wwcConfigConversationChatGPTModelInput: ಪ್ರಸ್ತುತ ಮಾದರಿ {0}. ದಯವಿಟ್ಟು ChatGPT ಗಾಗಿ
+    ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIOllamaModelButton: ಓಲೆಮ್ ಮಾದರಿ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationOllamaURLSuccess: ಓಲಮಾ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOllamaModelInput: ಪ್ರಸ್ತುತ ಮಾದರಿ {0}. ದಯವಿಟ್ಟು ಓಲಾಮಾಕ್ಕಾಗಿ
+    ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationOllamaURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಓಲಾಮಾಕ್ಕಾಗಿ
+    URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIOllamaButton: ಒಲ್ಲಮಾ
+  wwcConfigGUIOllamaToggleSuccess: ಒಲ್ಲಾಮಾವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIOllamaURLButton: ಪಟ್ಟಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationOllamaModelSuccess: ಒಲ್ಲಾಮಾ ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUIToggleOllamaButton: ಟಾಗಲ್ ಓಲಾಮಾ
 

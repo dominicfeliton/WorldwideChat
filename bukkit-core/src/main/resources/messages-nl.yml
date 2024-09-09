@@ -721,8 +721,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: De huidige API-sleutel is {0}. Voer een
     API-sleutel in voor ChatGPT, of typ 0 om terug te gaan.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT-URL is succesvol ingesteld.
-  wwcConfigConversationChatGPTModelInput: De huidige versie is {0}. Voer een model
-    voor ChatGPT in, of typ 0 om terug te gaan.
   wwcConfigGUIChatGPTURLButton: ChatGPT-URL wijzigen
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API-sleutel wijzigen
   wwcConfigConversationChatGPTModelSuccess: Het ChatGPT-model is succesvol ingesteld.
@@ -755,4 +753,17 @@ Messages:
   translatorURLNotFound: De URL van je vertaalservice is ongeldig.
   translatorMethodNotAllowed: De vertaaldienst ondersteunt deze aanvraagmethode niet.
   translatorNotFound: De gevraagde vertaalbron is niet gevonden.
+  wwcConfigConversationChatGPTModelInput: Het huidige model is {0}. Voer een model
+    voor ChatGPT in, of typ 0 om terug te gaan.
+  wwcConfigGUIOllamaModelButton: Ollama-model wijzigen
+  wwcConfigConversationOllamaURLSuccess: Ollama URL is succesvol ingesteld.
+  wwcConfigConversationOllamaModelInput: Het huidige model is {0}. Voer een model
+    voor Ollama in, of typ 0 om terug te gaan.
+  wwcConfigConversationOllamaURLInput: De huidige URL is {0}. Voer een URL in voor
+    Ollama, of typ 0 om terug te gaan.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama is succesvol omgeschakeld.
+  wwcConfigGUIOllamaURLButton: Ollama URL wijzigen
+  wwcConfigConversationOllamaModelSuccess: Ollama model succesvol ingesteld.
+  wwcConfigGUIToggleOllamaButton: Schakel Ollama in
 

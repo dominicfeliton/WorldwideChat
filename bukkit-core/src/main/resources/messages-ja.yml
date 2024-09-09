@@ -535,7 +535,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: 現在の API キーは {0} です。ChatGPT の API キーを入力するか、0
     を入力して戻ってください。
   wwcConfigConversationChatGPTURLSuccess: チャット GPT URL が正常に設定されました。
-  wwcConfigConversationChatGPTModelInput: 現在のバージョンは {0} です。ChatGPT のモデルを入力するか、0 を入力して戻ってください。
   wwcConfigGUIChatGPTURLButton: チャット GPT の URL を変更
   wwcConfigGUIChatGPTAPIKeyButton: チャットGPT API キーを変更
   wwcConfigConversationChatGPTModelSuccess: ChatGPT モデルが正常に設定されました。
@@ -563,4 +562,14 @@ Messages:
   translatorURLNotFound: 翻訳者サービス URL が無効です。
   translatorMethodNotAllowed: 翻訳サービスはこのリクエスト方法をサポートしていません。
   translatorNotFound: 要求された翻訳リソースが見つかりませんでした。
+  wwcConfigConversationChatGPTModelInput: 現在のモデルは {0} です。ChatGPT のモデルを入力するか、0 を入力して戻ってください。
+  wwcConfigGUIOllamaModelButton: Ollama モデルを変更
+  wwcConfigConversationOllamaURLSuccess: オラマ URL が正常に設定されました。
+  wwcConfigConversationOllamaModelInput: 現在のモデルは {0} です。Ollama のモデルを入力するか、0 を入力して戻ってください。
+  wwcConfigConversationOllamaURLInput: 現在の URL は {0} です。Ollama の URL を入力するか、0 を入力して戻ってください。
+  wwcConfigGUIOllamaButton: オラマ
+  wwcConfigGUIOllamaToggleSuccess: Ollamaが正常に切り替わりました。
+  wwcConfigGUIOllamaURLButton: オラマ URL を変更
+  wwcConfigConversationOllamaModelSuccess: Ollama モデルが正常に設定されました。
+  wwcConfigGUIToggleOllamaButton: トグルオラーマ
 

@@ -706,8 +706,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Ufunguo wa sasa wa API ni {0}. Tafadhali
     ingiza ufunguo wa API kwa ChatGPT, au andika 0 ili kurudi nyuma.
   wwcConfigConversationChatGPTURLSuccess: URL ya ChatGPT imewekwa kwa mafanikio.
-  wwcConfigConversationChatGPTModelInput: Toleo la sasa ni {0}. Tafadhali ingiza mfano
-    wa ChatGPT, au andika 0 ili kurudi nyuma.
   wwcConfigGUIChatGPTURLButton: Badilisha URL ya ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Badilisha Kitufe cha API cha ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Mfano wa ChatGPT uliwekwa kwa mafanikio.
@@ -739,4 +737,17 @@ Messages:
   translatorURLNotFound: URL yako ya huduma ya mtafsiri haina halali.
   translatorMethodNotAllowed: Huduma ya tafsiri haiunga mkono njia hii ya ombi.
   translatorNotFound: Rasilimali ya tafsiri iliyoombwa haikupatikana.
+  wwcConfigConversationChatGPTModelInput: Mfano wa sasa ni {0}. Tafadhali ingiza mfano
+    wa ChatGPT, au andika 0 ili kurudi nyuma.
+  wwcConfigGUIOllamaModelButton: Change Ollama Model
+  wwcConfigConversationOllamaURLSuccess: Ollama URL iliyowekwa kwa mafanikio.
+  wwcConfigConversationOllamaModelInput: Mfano wa sasa ni {0}. Tafadhali ingiza mfano
+    wa Ollama, au andika 0 ili kurudi nyuma.
+  wwcConfigConversationOllamaURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya
+    Ollama, au andika 0 ili kurudi nyuma.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Alifanikiwa kubadilisha Ollama.
+  wwcConfigGUIOllamaURLButton: Badilisha URL ya Utaratibu
+  wwcConfigConversationOllamaModelSuccess: Mfano wa Ollama uliwekwa kwa ufanisi.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

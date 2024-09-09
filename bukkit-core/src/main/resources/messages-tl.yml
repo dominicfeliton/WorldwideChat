@@ -777,8 +777,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Ang kasalukuyang key ng API ay {0}. Mangyaring
     magpasok ng isang API key para sa ChatGPT, o i-type ang 0 upang bumalik.
   wwcConfigConversationChatGPTURLSuccess: Matagumpay na itinakda ang ChatGPT URL.
-  wwcConfigConversationChatGPTModelInput: Ang kasalukuyang bersyon ay {0}. Mangyaring
-    magpasok ng isang modelo para sa ChatGPT, o i-type ang 0 upang bumalik.
   wwcConfigGUIChatGPTURLButton: Baguhin ang URL ng ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Baguhin ang ChatGPT API Key
   wwcConfigConversationChatGPTModelSuccess: Matagumpay na nakatakda ang modelo ng
@@ -817,4 +815,17 @@ Messages:
   translatorMethodNotAllowed: Hindi sinusuportahan ng serbisyo sa pagsasalin ang paraan
     ng kahilingan na ito.
   translatorNotFound: Hindi natagpuan ang hiniling na mapagkukunan ng pagsasalin.
+  wwcConfigConversationChatGPTModelInput: Ang kasalukuyang modelo ay {0}. Mangyaring
+    magpasok ng isang modelo para sa ChatGPT, o i-type ang 0 upang bumalik.
+  wwcConfigGUIOllamaModelButton: Baguhin ang Modelo ng Ollama
+  wwcConfigConversationOllamaURLSuccess: Matagumpay na itinakda ang Ollama URL.
+  wwcConfigConversationOllamaModelInput: Ang kasalukuyang modelo ay {0}. Mangyaring
+    magpasok ng isang modelo para sa Ollama, o i-type ang 0 upang bumalik.
+  wwcConfigConversationOllamaURLInput: Ang kasalukuyang URL ay {0}. Mangyaring magpasok
+    ng URL para sa Ollama, o i-type ang 0 upang bumalik.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Matagumpay na i-toggle ang Ollama.
+  wwcConfigGUIOllamaURLButton: Baguhin ang URL ng Lama
+  wwcConfigConversationOllamaModelSuccess: Matagumpay na nakatakda ang modelo ng Ollama
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

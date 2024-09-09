@@ -567,8 +567,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: 현재 API 키는 {0} 입니다.ChatGPT용 API 키를 입력하거나
     돌아가려면 0을 입력하십시오.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL이 성공적으로 설정되었습니다.
-  wwcConfigConversationChatGPTModelInput: 현재 버전은 {0} 입니다.ChatGPT용 모델을 입력하거나 돌아가려면
-    0을 입력하십시오.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL 변경
   wwcConfigGUIChatGPTAPIKeyButton: 챗GPT API 키 변경
   wwcConfigConversationChatGPTModelSuccess: ChatGPT 모델이 성공적으로 설정되었습니다.
@@ -596,4 +594,17 @@ Messages:
   translatorURLNotFound: 번역기 서비스 URL이 유효하지 않습니다.
   translatorMethodNotAllowed: 번역 서비스는 이 요청 방법을 지원하지 않습니다.
   translatorNotFound: 요청한 번역 리소스를 찾을 수 없습니다.
+  wwcConfigConversationChatGPTModelInput: 현재 모델은 {0} 입니다.ChatGPT용 모델을 입력하거나 돌아가려면
+    0을 입력하십시오.
+  wwcConfigGUIOllamaModelButton: 올라마 모델 변경
+  wwcConfigConversationOllamaURLSuccess: 올라마 URL이 성공적으로 설정되었습니다.
+  wwcConfigConversationOllamaModelInput: 현재 모델은 {0} 입니다.Ollama의 모델을 입력하거나 돌아가려면 0을
+    입력하십시오.
+  wwcConfigConversationOllamaURLInput: 현재 URL은 {0} 입니다.Ollama의 URL을 입력하거나 돌아가려면 0을
+    입력하십시오.
+  wwcConfigGUIOllamaButton: 올라마
+  wwcConfigGUIOllamaToggleSuccess: 올라마를 성공적으로 전환했습니다.
+  wwcConfigGUIOllamaURLButton: 올라마 URL 변경
+  wwcConfigConversationOllamaModelSuccess: Ollama 모델이 성공적으로 설정되었습니다.
+  wwcConfigGUIToggleOllamaButton: 토글 올라 마
 

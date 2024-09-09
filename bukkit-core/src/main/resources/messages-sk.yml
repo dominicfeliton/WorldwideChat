@@ -703,8 +703,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Aktuálny kľúč API je {0}. Zadajte kľúč
     API pre ChatGPT alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL je úspešne nastavená.
-  wwcConfigConversationChatGPTModelInput: Aktuálna verzia je {0}. Zadajte model pre
-    ChatGPT alebo napíšte 0, aby ste sa vrátili späť.
   wwcConfigGUIChatGPTURLButton: Zmena adresy ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Zmeniť kľúč API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: ChatGPT model bol úspešne nastavený.
@@ -736,4 +734,17 @@ Messages:
   translatorURLNotFound: Vaša adresa prekladateľskej služby je neplatná.
   translatorMethodNotAllowed: Prekladateľská služba túto metódu žiadosti nepodporuje.
   translatorNotFound: Požadovaný prekladový zdroj nebol nájdený.
+  wwcConfigConversationChatGPTModelInput: Súčasný model je {0}. Zadajte model pre
+    ChatGPT alebo napíšte 0, aby ste sa vrátili späť.
+  wwcConfigGUIOllamaModelButton: Zmeniť model Ollama
+  wwcConfigConversationOllamaURLSuccess: Úspešne nastavená adresa URL.
+  wwcConfigConversationOllamaModelInput: Súčasný model je {0}. Zadajte model pre Ollama
+    alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationOllamaURLInput: Aktuálna adresa URL je {0}. Zadajte adresu
+    URL pre Ollama alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Úspešne prepnutý Ollama.
+  wwcConfigGUIOllamaURLButton: Zmeniť URL adresy
+  wwcConfigConversationOllamaModelSuccess: Model Ollama bol úspešne nastavený.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

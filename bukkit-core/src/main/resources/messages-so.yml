@@ -715,8 +715,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Muuqda API hadda waa {0}. Fadlan geliyo
     muuqda API ee ChatGPT, ama nooca 0 si aad dib ugu soo nooco.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL oo si guul la dhigay.
-  wwcConfigConversationChatGPTModelInput: Nooca hadda waa {0}. Fadlan gelin moodel
-    u loogu tala galay ChatGPT, ama nooca 0 si aad u dib ugu soo laabto.
   wwcConfigGUIChatGPTURLButton: Beddel ChatGPT URL
   wwcConfigGUIChatGPTAPIKeyButton: Beddel Keyfiga API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Moodel ChatGPT oo si guul la dhigay.
@@ -748,4 +746,17 @@ Messages:
   translatorURLNotFound: Adeegga tarjumaadkaaga URL waa mid ah.
   translatorMethodNotAllowed: Adeegga tarjimada ma taageerin habkan codsiga.
   translatorNotFound: Kheyraadka tarjimada la codsaday lama helin.
+  wwcConfigConversationChatGPTModelInput: Moodel hadda waa {0}. Fadlan gelin moodel
+    u loogu tala galay ChatGPT, ama nooca 0 si aad u dib ugu soo laabto.
+  wwcConfigGUIOllamaModelButton: Change Lamp Model
+  wwcConfigConversationOllamaURLSuccess: Ollama URL oo si guul la dhigay.
+  wwcConfigConversationOllamaModelInput: Moodel hadda waa {0}. Fadlan gelin moodeel
+    Ollama, ama nooca 0 si aad dib ugu nooco.
+  wwcConfigConversationOllamaURLInput: URL hadda waa {0}. Fadlan geliyay URL Ollama,
+    ama nooca 0 si aad u dib ugu nooco.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama si guul la toogay.
+  wwcConfigGUIOllamaURLButton: Change Lock URL
+  wwcConfigConversationOllamaModelSuccess: Moodel Ollama oo si guul la dhigay.
+  wwcConfigGUIToggleOllamaButton: Toggle Lock
 

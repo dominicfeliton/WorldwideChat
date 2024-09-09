@@ -689,8 +689,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Kunci API saat ini adalah {0}. Silakan
     masukkan kunci API untuk ChatGPT, atau ketik 0 untuk kembali.
   wwcConfigConversationChatGPTURLSuccess: URL ChatGPT berhasil disetel.
-  wwcConfigConversationChatGPTModelInput: Versi saat ini adalah {0}. Silakan masukkan
-    model untuk ChatGPT, atau ketik 0 untuk kembali.
   wwcConfigGUIChatGPTURLButton: Ubah URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Ubah Kunci API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Model ChatGPT berhasil disetel.
@@ -726,4 +724,17 @@ Messages:
   translatorMethodNotAllowed: Layanan terjemahan tidak mendukung metode permintaan
     ini.
   translatorNotFound: Sumber terjemahan yang diminta tidak ditemukan.
+  wwcConfigConversationChatGPTModelInput: Model saat ini adalah {0}. Silakan masukkan
+    model untuk ChatGPT, atau ketik 0 untuk kembali.
+  wwcConfigGUIOllamaModelButton: Ubah Model Ollama
+  wwcConfigConversationOllamaURLSuccess: URL ollama berhasil disetel.
+  wwcConfigConversationOllamaModelInput: Model saat ini adalah {0}. Silakan masukkan
+    model untuk Ollama, atau ketik 0 untuk kembali.
+  wwcConfigConversationOllamaURLInput: URL saat ini adalah {0}. Silakan masukkan URL
+    untuk Ollama, atau ketik 0 untuk kembali.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Berhasil mengalihkan Ollama.
+  wwcConfigGUIOllamaURLButton: Ubah URL Ollama
+  wwcConfigConversationOllamaModelSuccess: Model Ollama berhasil diatur.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

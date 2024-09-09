@@ -704,8 +704,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Trenutni ključ API je {0}. Prosimo, vnesite
     ključ API za ChatGPT ali vnesite 0, da se vrnete nazaj.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL je uspešno nastavljen.
-  wwcConfigConversationChatGPTModelInput: Trenutna različica je {0}. Prosimo, vnesite
-    model za ChatGPT ali vnesite 0, da se vrnete nazaj.
   wwcConfigGUIChatGPTURLButton: Spremenite URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Spremenite ključ API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Uspešno postavljen model ChatGPT.
@@ -737,4 +735,17 @@ Messages:
   translatorURLNotFound: URL storitve prevajalca ni veljaven.
   translatorMethodNotAllowed: Prevajalska storitev ne podpira tega načina zahteve.
   translatorNotFound: Zahtevanega vira za prevajanje ni bilo mogoče najti.
+  wwcConfigConversationChatGPTModelInput: Trenutni model je {0}. Prosimo, vnesite
+    model za ChatGPT ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUIOllamaModelButton: Spremeni model Ollama
+  wwcConfigConversationOllamaURLSuccess: Uspešno nastavljen URL za prijavo.
+  wwcConfigConversationOllamaModelInput: Trenutni model je {0}. Prosimo, vnesite model
+    za Ollama ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationOllamaURLInput: Trenutni URL je {0}. Prosimo, vnesite URL za
+    Ollama ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Uspešno preklopil Ollamo.
+  wwcConfigGUIOllamaURLButton: Spremeni URL naslova
+  wwcConfigConversationOllamaModelSuccess: Uspešno postavljen model Ollama.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

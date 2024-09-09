@@ -627,8 +627,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: מפתח ה- API הנוכחי הוא {0}. אנא הזן מפתח
     API עבור ChatGPT, או הקלד 0 כדי לחזור.
   wwcConfigConversationChatGPTURLSuccess: כתובת האתר של ChatGPT הוגדרה בהצלחה.
-  wwcConfigConversationChatGPTModelInput: הגרסה הנוכחית היא {0}. אנא הזן מודל עבור
-    ChatGPT, או הקלד 0 כדי לחזור.
   wwcConfigGUIChatGPTURLButton: שנה את כתובת האתר של ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: שינוי מפתח ממשק ה- API של ChatGPT
   wwcConfigConversationChatGPTModelSuccess: מודל ChatGPT הוגדר בהצלחה.
@@ -658,4 +656,17 @@ Messages:
   translatorURLNotFound: כתובת האתר של שירות המתרגם שלך אינה חוקית.
   translatorMethodNotAllowed: שירות התרגום אינו תומך בשיטת בקשה זו.
   translatorNotFound: משאב התרגום המבוקש לא נמצא.
+  wwcConfigConversationChatGPTModelInput: המודל הנוכחי הוא {0}. אנא הזן מודל עבור
+    ChatGPT, או הקלד 0 כדי לחזור.
+  wwcConfigGUIOllamaModelButton: שינוי מודל האולמה
+  wwcConfigConversationOllamaURLSuccess: כתובת האתר הוגדרה בהצלחה.
+  wwcConfigConversationOllamaModelInput: המודל הנוכחי הוא {0}. אנא הזן דגם עבור Ollama,
+    או הקלד 0 כדי לחזור.
+  wwcConfigConversationOllamaURLInput: כתובת האתר הנוכחית היא {0}. אנא הזן כתובת אתר
+    עבור Ollama, או הקלד 0 כדי לחזור.
+  wwcConfigGUIOllamaButton: אולמה
+  wwcConfigGUIOllamaToggleSuccess: החלף בהצלחה את אולמה.
+  wwcConfigGUIOllamaURLButton: שנה את כתובת האתר
+  wwcConfigConversationOllamaModelSuccess: מודל אולמה נקבע בהצלחה.
+  wwcConfigGUIToggleOllamaButton: החלף את הלחצן
 

@@ -734,8 +734,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Is é an eochair API reatha {0}. Cuir isteach
     eochair API le haghaidh ChatGPT, nó clóscríobh 0 chun dul ar ais.
   wwcConfigConversationChatGPTURLSuccess: Socraítear URL ChatGPT go rathúil.
-  wwcConfigConversationChatGPTModelInput: Is é an leagan reatha {0}. Cuir isteach
-    samhail le haghaidh ChatGPT, nó clóscríobh 0 chun dul ar ais.
   wwcConfigGUIChatGPTURLButton: Athraigh URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Athraigh Eochair API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Socraigh samhail ChatGPT go rathúil.
@@ -770,4 +768,17 @@ Messages:
   translatorMethodNotAllowed: Ní thacaíonn an tseirbhís aistriúcháin leis an modh
     iarratais seo.
   translatorNotFound: Níor aimsíodh an acmhainn aistriúcháin a iarrtar.
+  wwcConfigConversationChatGPTModelInput: Is é an tsamhail reatha {0}. Cuir isteach
+    samhail le haghaidh ChatGPT, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIOllamaModelButton: Athraigh Samhail Ollama
+  wwcConfigConversationOllamaURLSuccess: Ollama URL socraithe go rathúil.
+  wwcConfigConversationOllamaModelInput: Is é an tsamhail reatha {0}. Cuir isteach
+    samhail le haghaidh Ollama, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationOllamaURLInput: Is é an URL reatha {0}. Cuir isteach URL le
+    haghaidh Ollama, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Tosaigh Ollama go rathúil.
+  wwcConfigGUIOllamaURLButton: Athraigh URL Ollama
+  wwcConfigConversationOllamaModelSuccess: Socraítear múnla Ollama go rathúil.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

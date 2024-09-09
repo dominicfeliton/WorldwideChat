@@ -701,8 +701,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ChatGPT
     ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤਾ ਗਿਆ.
-  wwcConfigConversationChatGPTModelInput: ਮੌਜੂਦਾ ਸੰਸਕਰਣ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ChatGPT
-    ਲਈ ਇੱਕ ਮਾਡਲ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
   wwcConfigGUIChatGPTURLButton: ਚੈਟਜੀਪੀਟੀ ਯੂਆਰਐਲ ਬਦਲੋ
   wwcConfigGUIChatGPTAPIKeyButton: ਚੈਟਜੀਪੀਟੀ ਏਪੀਆਈ ਕੁੰਜੀ ਬਦਲੋ
   wwcConfigConversationChatGPTModelSuccess: ChatGPT ਮਾਡਲ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤਾ ਗਿਆ
@@ -737,4 +735,17 @@ Messages:
   translatorURLNotFound: ਤੁਹਾਡਾ ਅਨੁਵਾਦਕ ਸੇਵਾ URL ਅਵੈਧ ਹੈ।
   translatorMethodNotAllowed: ਅਨੁਵਾਦ ਸੇਵਾ ਇਸ ਬੇਨਤੀ ਵਿਧੀ ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦੀ.
   translatorNotFound: ਬੇਨਤੀ ਕੀਤਾ ਅਨੁਵਾਦ ਸਰੋਤ ਨਹੀਂ ਮਿਲਿਆ।
+  wwcConfigConversationChatGPTModelInput: ਮੌਜੂਦਾ ਮਾਡਲ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ChatGPT ਲਈ
+    ਇੱਕ ਮਾਡਲ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIOllamaModelButton: ਓਲਮਾ ਮਾਡਲ ਬਦਲੋ
+  wwcConfigConversationOllamaURLSuccess: URL ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤਾ ਗਿਆ ਹੈ।
+  wwcConfigConversationOllamaModelInput: ਮੌਜੂਦਾ ਮਾਡਲ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਓਲਾਮਾ ਲਈ ਇੱਕ
+    ਮਾਡਲ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationOllamaURLInput: ਮੌਜੂਦਾ URL {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਓਲਾਮਾ ਲਈ ਇੱਕ
+    URL ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIOllamaButton: ਓਲਾਮਾ
+  wwcConfigGUIOllamaToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਓਲਾਮਾ ਟੌਗਲ ਕੀਤਾ
+  wwcConfigGUIOllamaURLButton: ਡਾਊਨਲੋਡ ਯੂਆਰਐਲ ਬਦਲੋ
+  wwcConfigConversationOllamaModelSuccess: ਓਲਾਮਾ ਮਾਡਲ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ
+  wwcConfigGUIToggleOllamaButton: ਟੌਗਲ ਓਲਾਮਾ
 

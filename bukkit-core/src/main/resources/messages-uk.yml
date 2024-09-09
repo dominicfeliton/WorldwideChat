@@ -701,8 +701,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Поточний ключ API - {0}. Будь ласка, введіть
     ключ API для ChatGPT або введіть 0, щоб повернутися назад.
   wwcConfigConversationChatGPTURLSuccess: Успішно встановлено URL-адресу ChatGPT.
-  wwcConfigConversationChatGPTModelInput: Поточна версія {0}. Будь ласка, введіть
-    модель для ChatGPT або введіть 0, щоб повернутися назад.
   wwcConfigGUIChatGPTURLButton: Змінити URL-адресу ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Змінити ключ API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Модель ChatGPT встановлена успішно.
@@ -737,4 +735,17 @@ Messages:
   translatorURLNotFound: Ваша URL-адреса служби перекладача недійсна.
   translatorMethodNotAllowed: Служба перекладу не підтримує цей метод запиту.
   translatorNotFound: Запитуваний ресурс перекладу не знайдено.
+  wwcConfigConversationChatGPTModelInput: Поточна модель - {0}. Будь ласка, введіть
+    модель для ChatGPT або введіть 0, щоб повернутися назад.
+  wwcConfigGUIOllamaModelButton: Змінити модель Оллама
+  wwcConfigConversationOllamaURLSuccess: Успішно встановлено URL-адресу Оллама.
+  wwcConfigConversationOllamaModelInput: Поточна модель - {0}. Будь ласка, введіть
+    модель для Ollama або введіть 0, щоб повернутися назад.
+  wwcConfigConversationOllamaURLInput: Поточна URL-адреса {0}. Будь ласка, введіть
+    URL-адресу для Ollama або введіть 0, щоб повернутися назад.
+  wwcConfigGUIOllamaButton: Оллама
+  wwcConfigGUIOllamaToggleSuccess: Успішно переключено Ollama.
+  wwcConfigGUIOllamaURLButton: Змінити URL-адресу
+  wwcConfigConversationOllamaModelSuccess: Модель Ollama встановлена успішно.
+  wwcConfigGUIToggleOllamaButton: Перемкнути перегляд
 

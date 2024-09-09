@@ -725,8 +725,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Тековниот клуч за API е {0}. Ве молиме
     внесете API клуч за ChatGPT или напишете 0 за да се вратите назад.
   wwcConfigConversationChatGPTURLSuccess: Успешно поставена URL-адреса на ChatGPT.
-  wwcConfigConversationChatGPTModelInput: Тековната верзија е {0}. Ве молиме внесете
-    модел за ChatGPT или напишете 0 за да се вратите назад.
   wwcConfigGUIChatGPTURLButton: Промена на URL-то на ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Променете го клучот за API за ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Успешно поставен модел на ChatGPT.
@@ -761,4 +759,17 @@ Messages:
   translatorURLNotFound: URL-то на вашата услуга за преведувач е неважечка.
   translatorMethodNotAllowed: Услугата за превод не го поддржува овој метод на барање.
   translatorNotFound: Бараниот ресурс за превод не беше пронајден.
+  wwcConfigConversationChatGPTModelInput: Моменталниот модел е {0}. Ве молиме внесете
+    модел за ChatGPT или напишете 0 за да се вратите назад.
+  wwcConfigGUIOllamaModelButton: Променете го моделот на лаптоп
+  wwcConfigConversationOllamaURLSuccess: Успешно поставена URL адреса.
+  wwcConfigConversationOllamaModelInput: Моменталниот модел е {0}. Ве молиме внесете
+    модел за Ollama или напишете 0 за да се вратите назад.
+  wwcConfigConversationOllamaURLInput: Тековната URL адреса е {0}. Ве молиме внесете
+    URL за Ollama или напишете 0 за да се вратите назад.
+  wwcConfigGUIOllamaButton: Олама
+  wwcConfigGUIOllamaToggleSuccess: Успешно го вклучи Олама.
+  wwcConfigGUIOllamaURLButton: Промена на URL адреса
+  wwcConfigConversationOllamaModelSuccess: Успешно поставен модел на Ollama.
+  wwcConfigGUIToggleOllamaButton: Префрлете ја функцијата
 

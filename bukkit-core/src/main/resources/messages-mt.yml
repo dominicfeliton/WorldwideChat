@@ -708,8 +708,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Iċ-ċavetta kurrenti tal-API hija {0}. Jekk
     jogħġbok daħħal ċavetta API għal ChatGPT, jew ittajpja 0 biex tmur lura.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL issettjat b'suċċess.
-  wwcConfigConversationChatGPTModelInput: Il-verżjoni attwali hija {0}. Jekk jogħġbok
-    daħħal mudell għal ChatGPT, jew ittajpja 0 biex tmur lura.
   wwcConfigGUIChatGPTURLButton: Ibdel l-URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Ibdel Ċavetta API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Mudell ChatGPT stabbilit b'suċċess.
@@ -747,4 +745,17 @@ Messages:
   translatorMethodNotAllowed: Is-servizz tat-traduzzjoni ma jappoġġjax dan il-metodu
     ta' talba.
   translatorNotFound: Ir-riżorsa mitluba tat-traduzzjoni ma nstabx.
+  wwcConfigConversationChatGPTModelInput: Il-mudell attwali huwa {0}. Jekk jogħġbok
+    daħħal mudell għal ChatGPT, jew ittajpja 0 biex tmur lura.
+  wwcConfigGUIOllamaModelButton: Ibdel il-Mudell tal-Implimentazzjoni
+  wwcConfigConversationOllamaURLSuccess: Ollama URL issettjat b'suċċess.
+  wwcConfigConversationOllamaModelInput: Il-mudell attwali huwa {0}. Jekk jogħġbok
+    daħħal mudell għal Ollama, jew ittajpja 0 biex tmur lura.
+  wwcConfigConversationOllamaURLInput: L-URL attwali huwa {0}. Jekk jogħġbok daħħal
+    URL għal Ollama, jew ittajpja 0 biex tmur lura.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama tbiddel b'suċċess.
+  wwcConfigGUIOllamaURLButton: Ibdel l-URL tal-Logħob
+  wwcConfigConversationOllamaModelSuccess: Mudell Ollama stabbilit b'suċċess.
+  wwcConfigGUIToggleOllamaButton: Toggle Lock
 

@@ -696,8 +696,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: 'Nykyinen API-avain on {0}. Anna API-avain
     ChatGPT: lle tai kirjoita 0 palataksesi takaisin.'
   wwcConfigConversationChatGPTURLSuccess: ChatGPT-URL-osoite on määritetty onnistuneesti.
-  wwcConfigConversationChatGPTModelInput: Nykyinen versio on {0}. Anna ChatGPT-malli
-    tai kirjoita 0 palataksesi takaisin.
   wwcConfigGUIChatGPTURLButton: Muuta ChatGPT-URL-osoitetta
   wwcConfigGUIChatGPTAPIKeyButton: Muuta ChatGPT-sovellusliittymäavainta
   wwcConfigConversationChatGPTModelSuccess: ChatGPT-malli asetettiin onnistuneesti.
@@ -729,4 +727,17 @@ Messages:
   translatorURLNotFound: Kääntäjäpalvelun URL-osoite on virheellinen.
   translatorMethodNotAllowed: Käännöspalvelu ei tue tätä pyyntömenetelmää.
   translatorNotFound: Pyydettyä käännösresurssia ei löytynyt.
+  wwcConfigConversationChatGPTModelInput: Nykyinen malli on {0}. Anna ChatGPT-malli
+    tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIOllamaModelButton: Muuta Ollama-mallia
+  wwcConfigConversationOllamaURLSuccess: Ollaman URL-osoite on määritetty onnistuneesti.
+  wwcConfigConversationOllamaModelInput: Nykyinen malli on {0}. Anna malli Ollamalle,
+    tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationOllamaURLInput: Nykyinen URL-osoite on {0}. Anna URL-osoite
+    Ollamalle, tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Ollama vaihdettiin onnistuneesti.
+  wwcConfigGUIOllamaURLButton: Muuta Ollama-URL-osoitetta
+  wwcConfigConversationOllamaModelSuccess: Ollama-malli asetettiin onnistuneesti.
+  wwcConfigGUIToggleOllamaButton: Toggle Layout
 

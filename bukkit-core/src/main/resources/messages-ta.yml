@@ -728,8 +728,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: தற்போதைய API விசை {0} ஆகும். ChatGPT க்கான
     API விசையை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL வெற்றிகரமாக அமைக்கப்பட்டது.
-  wwcConfigConversationChatGPTModelInput: தற்போதைய பதிப்பு {0} ஆகும். தயவுசெய்து ChatGPT
-    க்கான மாதிரியை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL ஐ மாற்றவும்
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API விசையை மாற்றவும்
   wwcConfigConversationChatGPTModelSuccess: ChatGPT மாதிரி வெற்றிகரமாக அமைக்கப்பட்டது.
@@ -763,4 +761,17 @@ Messages:
   translatorURLNotFound: உங்கள் மொழிபெயர்ப்பாளர் சேவை URL செல்லாதது.
   translatorMethodNotAllowed: மொழிபெயர்ப்பு சேவை இந்த கோரிக்கை முறையை ஆதரிக்காது.
   translatorNotFound: கோரப்பட்ட மொழிபெயர்ப்பு வளம் கண்டுபிடிக்கப்படவில்லை.
+  wwcConfigConversationChatGPTModelInput: தற்போதைய மாதிரி {0} ஆகும். தயவுசெய்து ChatGPT
+    க்கான மாதிரியை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIOllamaModelButton: மாதிரி மாதிரியை மாற்றவும்
+  wwcConfigConversationOllamaURLSuccess: Ollama URL வெற்றிகரமாக அமைக்கப்பட்டது.
+  wwcConfigConversationOllamaModelInput: தற்போதைய மாதிரி {0} ஆகும். தயவுசெய்து Ollama
+    க்கான மாதிரியை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationOllamaURLInput: தற்போதைய URL {0} ஆகும். தயவுசெய்து Ollama க்கான
+    URL ஐ உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIOllamaButton: ஒல்லமா
+  wwcConfigGUIOllamaToggleSuccess: வெற்றிகரமாக ஒல்லாமாவை மாற்றினார்.
+  wwcConfigGUIOllamaURLButton: பதிவு URL ஐ மாற்றவும்
+  wwcConfigConversationOllamaModelSuccess: Ollama மாதிரி வெற்றிகரமாக அமைக்கப்பட்டது.
+  wwcConfigGUIToggleOllamaButton: டோகிள் ஓலாமா
 

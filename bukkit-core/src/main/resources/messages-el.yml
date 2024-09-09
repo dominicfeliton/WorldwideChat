@@ -765,8 +765,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Το τρέχον κλειδί API είναι {0}. Εισαγάγετε
     ένα κλειδί API για το ChatGPT ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigConversationChatGPTURLSuccess: Η διεύθυνση URL ChatGPT ορίστηκε με επιτυχία.
-  wwcConfigConversationChatGPTModelInput: Η τρέχουσα έκδοση είναι {0}. Εισαγάγετε
-    ένα μοντέλο για το ChatGPT ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIChatGPTURLButton: Αλλαγή διεύθυνσης URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Αλλαγή κλειδιού API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Το μοντέλο ChatGPT ορίστηκε με επιτυχία.
@@ -801,4 +799,17 @@ Messages:
   translatorMethodNotAllowed: Η υπηρεσία μετάφρασης δεν υποστηρίζει αυτήν τη μέθοδο
     αιτήματος.
   translatorNotFound: Ο ζητούμενος πόρος μετάφρασης δεν βρέθηκε.
+  wwcConfigConversationChatGPTModelInput: Το τρέχον μοντέλο είναι {0}. Εισαγάγετε
+    ένα μοντέλο για το ChatGPT ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIOllamaModelButton: Αλλαγή μοντέλου Ollama
+  wwcConfigConversationOllamaURLSuccess: Ορίστηκε επιτυχώς η διεύθυνση URL.
+  wwcConfigConversationOllamaModelInput: Το τρέχον μοντέλο είναι {0}. Εισαγάγετε ένα
+    μοντέλο για Ollama ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationOllamaURLInput: Η τρέχουσα διεύθυνση URL είναι {0}. Εισαγάγετε
+    μια διεύθυνση URL για την Ollama ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIOllamaButton: Ολλαμα
+  wwcConfigGUIOllamaToggleSuccess: Ενεργοποιήθηκε με επιτυχία το Ollama.
+  wwcConfigGUIOllamaURLButton: Αλλαγή διεύθυνσης URL
+  wwcConfigConversationOllamaModelSuccess: Το μοντέλο Ollama ρυθμίστηκε με επιτυχία.
+  wwcConfigGUIToggleOllamaButton: Εναλλαγή επιλογής
 

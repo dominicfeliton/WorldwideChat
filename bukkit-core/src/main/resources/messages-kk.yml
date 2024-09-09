@@ -692,8 +692,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Ағымдағы API кілті - {0}. ChatGPT үшін
     API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL мекенжайы сәтті орнатылды.
-  wwcConfigConversationChatGPTModelInput: Ағымдағы нұсқа - {0}. ChatGPT үлгісін енгізіңіз
-    немесе кері оралу үшін 0 деп теріңіз.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL мекенжайын өзгертіңіз
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API кілтін өзгерту
   wwcConfigConversationChatGPTModelSuccess: ChatGPT моделі сәтті орнатылды.
@@ -724,4 +722,17 @@ Messages:
   translatorURLNotFound: Аудармашы қызметінің URL мекенжайы жарамсыз.
   translatorMethodNotAllowed: Аударма қызметі бұл сұрау әдісін қолдамайды.
   translatorNotFound: Сұралған аударма ресурсы табылмады.
+  wwcConfigConversationChatGPTModelInput: Қазіргі модель - {0}. ChatGPT үлгісін енгізіңіз
+    немесе кері оралу үшін 0 деп теріңіз.
+  wwcConfigGUIOllamaModelButton: Өңдеу үлгісін өзгерту
+  wwcConfigConversationOllamaURLSuccess: URL мекенжайы сәтті орнатылды.
+  wwcConfigConversationOllamaModelInput: Қазіргі модель - {0}. Ollama үшін үлгіні
+    енгізіңіз немесе кері оралу үшін 0 деп теріңіз.
+  wwcConfigConversationOllamaURLInput: Ағымдағы URL мекенжайы {0}. Ollama үшін URL
+    мекенжайын енгізіңіз немесе кері оралу үшін 0 деп теріңіз.
+  wwcConfigGUIOllamaButton: Оллама
+  wwcConfigGUIOllamaToggleSuccess: Олламаны сәтті ауыстырды.
+  wwcConfigGUIOllamaURLButton: Жазба URL мекенжайын өзгерту
+  wwcConfigConversationOllamaModelSuccess: Ollama моделі сәтті орнатылды.
+  wwcConfigGUIToggleOllamaButton: Қабылдауды ауыстыру
 

@@ -715,8 +715,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Az aktuális API kulcs a {0}. Kérjük, írjon
     be egy API-kulcsot a ChatGPT számára, vagy írja be a 0 parancsot a visszalépéshez.
   wwcConfigConversationChatGPTURLSuccess: A ChatGPT URL sikeresen beállítva.
-  wwcConfigConversationChatGPTModelInput: A jelenlegi verzió {0}. Kérjük, adja meg
-    a ChatGPT modelljét, vagy írja be a 0 parancsot a visszalépéshez.
   wwcConfigGUIChatGPTURLButton: ChatGPT URL módosítása
   wwcConfigGUIChatGPTAPIKeyButton: ChatGPT API kulcs módosítása
   wwcConfigConversationChatGPTModelSuccess: ChatGPT modell sikeresen beállított.
@@ -752,4 +750,17 @@ Messages:
   translatorMethodNotAllowed: A fordítási szolgáltatás nem támogatja ezt a kérési
     módot.
   translatorNotFound: A kért fordítási forrás nem található.
+  wwcConfigConversationChatGPTModelInput: A jelenlegi modell a {0}. Kérjük, adja meg
+    a ChatGPT modelljét, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigGUIOllamaModelButton: Ollama modell módosítása
+  wwcConfigConversationOllamaURLSuccess: Az Ollama URL sikeresen beállítva.
+  wwcConfigConversationOllamaModelInput: A jelenlegi modell a {0}. Kérjük, adja meg
+    az Ollama modelljét, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationOllamaURLInput: 'Az aktuális URL: {0}. Kérjük, írja be az Ollama
+    URL-jét, vagy írja be a 0 parancsot a visszalépéshez.'
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Sikeresen váltotta be az Ollamát.
+  wwcConfigGUIOllamaURLButton: Változtassa meg az Ollama URL-t
+  wwcConfigConversationOllamaModelSuccess: Ollama modellkészlet sikeresen.
+  wwcConfigGUIToggleOllamaButton: Toggle Ollama
 

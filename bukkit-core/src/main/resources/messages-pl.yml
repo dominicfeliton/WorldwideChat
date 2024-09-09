@@ -707,8 +707,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Obecny klucz API to {0}. Wprowadź klucz
     API dla ChatGPT lub wpisz 0, aby wrócić.
   wwcConfigConversationChatGPTURLSuccess: Adres URL ChatGPT został pomyślnie ustawiony.
-  wwcConfigConversationChatGPTModelInput: Obecna wersja to {0}. Wprowadź model ChatGPT
-    lub wpisz 0, aby wrócić.
   wwcConfigGUIChatGPTURLButton: Zmień adres URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Zmień klucz interfejsu API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Pomyślnie ustawiono model ChatGPT.
@@ -740,4 +738,17 @@ Messages:
   translatorURLNotFound: Adres URL usługi tłumacza jest nieprawidłowy.
   translatorMethodNotAllowed: Usługa tłumaczeń nie obsługuje tej metody żądania.
   translatorNotFound: Żądane źródło tłumaczenia nie zostało znalezione.
+  wwcConfigConversationChatGPTModelInput: Obecny model to {0}. Wprowadź model ChatGPT
+    lub wpisz 0, aby wrócić.
+  wwcConfigGUIOllamaModelButton: Zmień model Ollama
+  wwcConfigConversationOllamaURLSuccess: Ustawienie adresu URL pomyślnie.
+  wwcConfigConversationOllamaModelInput: Obecny model to {0}. Wprowadź model dla Ollama
+    lub wpisz 0, aby wrócić.
+  wwcConfigConversationOllamaURLInput: Obecny adres URL to {0}. Wprowadź adres URL
+    dla Ollama lub wpisz 0, aby wrócić.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Pomyślnie przełączyłem Ollama.
+  wwcConfigGUIOllamaURLButton: Zmień adres URL Ollama
+  wwcConfigConversationOllamaModelSuccess: Zestaw modeli Ollama pomyślnie.
+  wwcConfigGUIToggleOllamaButton: Przełącz Ollama
 

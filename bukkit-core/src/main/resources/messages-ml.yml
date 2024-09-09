@@ -722,8 +722,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: നിലവിലെ API കീ {0} ആണ്. ChatGPT- നായി ദയവായി
     ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL വിജയകരമായി സജ്ജമാക്കി.
-  wwcConfigConversationChatGPTModelInput: ഇപ്പോഴത്തെ പതിപ്പ് {0} ആണ്. ദയവായി ChatGPT-
-    നായി ഒരു മോഡൽ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUIChatGPTURLButton: ചാറ്റ്ജിപിടി URL മാറ്റുക
   wwcConfigGUIChatGPTAPIKeyButton: ചാറ്റ്ജിപിടി എപിഐ കീ മാറ്റുക
   wwcConfigConversationChatGPTModelSuccess: ChatGPT മോഡൽ വിജയകരമായി സജ്ജീകരിച്ചു.
@@ -758,4 +756,17 @@ Messages:
   translatorURLNotFound: നിങ്ങളുടെ വിവർത്തക സേവന URL അസാധുവാണ്.
   translatorMethodNotAllowed: വിവർത്തന സേവനം ഈ അഭ്യർത്ഥന രീതിയെ പിന്തുണയ്ക്കുന്നില്ല.
   translatorNotFound: അഭ്യർത്ഥിച്ച വിവർത്തന വിഭവം കണ്ടെത്തിയില്ല.
+  wwcConfigConversationChatGPTModelInput: ഇപ്പോഴത്തെ മാതൃക {0} ആണ്. ദയവായി ChatGPT-
+    നായി ഒരു മോഡൽ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUIOllamaModelButton: ഓൾ മോഡൽ മാറ്റുക
+  wwcConfigConversationOllamaURLSuccess: URL വിജയകരമായി സജ്ജമാക്കി.
+  wwcConfigConversationOllamaModelInput: ഇപ്പോഴത്തെ മാതൃക {0} ആണ്. ദയവായി ഒല്ലാമയ്ക്കായി
+    ഒരു മോഡൽ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationOllamaURLInput: നിലവിലെ URL {0} ആണ്. ദയവായി ഒല്ലാമയ്ക്കായി
+    ഒരു URL ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUIOllamaButton: ഒല്ലമ
+  wwcConfigGUIOllamaToggleSuccess: ഒല്ലാമയെ വിജയകരമായി ടോഗുചെയ്തു.
+  wwcConfigGUIOllamaURLButton: ക്ലെയിം URL മാറ്റുക
+  wwcConfigConversationOllamaModelSuccess: ഒല്ലമ മോഡൽ വിജയകരമായി സജ്ജീകരിച്ചു.
+  wwcConfigGUIToggleOllamaButton: ടോഗിൾ ഓളമ
 

@@ -700,8 +700,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Pašreizējā API atslēga ir {0}. Lūdzu, ievadiet
     API atslēgu ChatGPT vai ierakstiet 0, lai atgrieztos.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL ir veiksmīgi iestatīts.
-  wwcConfigConversationChatGPTModelInput: Pašreizējā versija ir {0}. Lūdzu, ievadiet
-    ChatGPT modeli vai ierakstiet 0, lai atgrieztos.
   wwcConfigGUIChatGPTURLButton: Mainīt ChatGPT URL
   wwcConfigGUIChatGPTAPIKeyButton: Mainīt ChatGPT API atslēgu
   wwcConfigConversationChatGPTModelSuccess: ChatGPT modelis veiksmīgi iestatīts.
@@ -736,4 +734,17 @@ Messages:
   translatorURLNotFound: Jūsu tulkotāja pakalpojuma URL nav derīgs.
   translatorMethodNotAllowed: Tulkošanas pakalpojums neatbalsta šo pieprasījuma metodi.
   translatorNotFound: Pieprasītais tulkošanas resurss netika atrasts.
+  wwcConfigConversationChatGPTModelInput: Pašreizējais modelis ir {0}. Lūdzu, ievadiet
+    ChatGPT modeli vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIOllamaModelButton: Mainīt Ollama modeli
+  wwcConfigConversationOllamaURLSuccess: Ollama URL ir veiksmīgi iestatīts.
+  wwcConfigConversationOllamaModelInput: Pašreizējais modelis ir {0}. Lūdzu, ievadiet
+    Ollama modeli vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationOllamaURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet Ollama
+    URL vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Veiksmīgi pārslēgts Ollama.
+  wwcConfigGUIOllamaURLButton: Mainīt adreses URL
+  wwcConfigConversationOllamaModelSuccess: Ollama modeļa komplekts veiksmīgi.
+  wwcConfigGUIToggleOllamaButton: Toggle Lamp
 

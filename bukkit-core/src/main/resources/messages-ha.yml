@@ -700,8 +700,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Maɓallin API na yanzu shine {0}. Da fatan
     za a shigar da maɓallin API don ChatGPT, ko rubuta 0 don komawa.
   wwcConfigConversationChatGPTURLSuccess: ChatGPT URL ya saita cikin nasara.
-  wwcConfigConversationChatGPTModelInput: Sigar yanzu shine {0}. Da fatan za a shigar
-    da samfuri don ChatGPT, ko rubuta 0 don komawa.
   wwcConfigGUIChatGPTURLButton: Canja ChatGPT URL
   wwcConfigGUIChatGPTAPIKeyButton: Canja maɓallin API na ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Samfurin ChatGPT ya saita cikin nasara.
@@ -737,4 +735,17 @@ Messages:
   translatorURLNotFound: URL ɗin sabis ɗin fassara ba shi da inganci.
   translatorMethodNotAllowed: Sabis ɗin fassara baya tallafawa wannan hanyar buƙata.
   translatorNotFound: Ba a samu albarkatun fassarar da aka nema ba.
+  wwcConfigConversationChatGPTModelInput: Samfurin yanzu shine {0}. Da fatan za a
+    shigar da samfuri don ChatGPT, ko rubuta 0 don komawa.
+  wwcConfigGUIOllamaModelButton: Change Lamp Model
+  wwcConfigConversationOllamaURLSuccess: An saita URL ɗin da aka yi nasara.
+  wwcConfigConversationOllamaModelInput: Samfurin yanzu shine {0}. Da fatan za a shigar
+    da samfurin don Ollama, ko rubuta 0 don komawa.
+  wwcConfigConversationOllamaURLInput: URL ɗin yanzu shine {0}. Da fatan za a shigar
+    da URL don Ollama, ko rubuta 0 don komawa.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Nasarar juya Ollama.
+  wwcConfigGUIOllamaURLButton: Canza URL ɗin
+  wwcConfigConversationOllamaModelSuccess: Samfurin Ollama an saita cikin nasara.
+  wwcConfigGUIToggleOllamaButton: Toggle Lock
 

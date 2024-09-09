@@ -715,8 +715,6 @@ Messages:
   wwcConfigConversationChatGPTApiKeyInput: Khóa API hiện tại là {0}. Vui lòng nhập
     khóa API cho ChatGPT hoặc nhập 0 để quay trở lại.
   wwcConfigConversationChatGPTURLSuccess: URL ChatGPT được thiết lập thành công.
-  wwcConfigConversationChatGPTModelInput: Phiên bản hiện tại là {0}. Vui lòng nhập
-    một mô hình cho ChatGPT, hoặc nhập 0 để quay lại.
   wwcConfigGUIChatGPTURLButton: Thay đổi URL ChatGPT
   wwcConfigGUIChatGPTAPIKeyButton: Thay đổi khóa API ChatGPT
   wwcConfigConversationChatGPTModelSuccess: Mô hình ChatGPT thiết lập thành công.
@@ -751,4 +749,17 @@ Messages:
   translatorMethodNotAllowed: Dịch vụ dịch thuật không hỗ trợ phương thức yêu cầu
     này.
   translatorNotFound: Không tìm thấy tài nguyên dịch thuật được yêu cầu.
+  wwcConfigConversationChatGPTModelInput: Mô hình hiện tại là {0}. Vui lòng nhập một
+    mô hình cho ChatGPT, hoặc nhập 0 để quay lại.
+  wwcConfigGUIOllamaModelButton: Thay đổi mô hình Ollama
+  wwcConfigConversationOllamaURLSuccess: URL đã được thiết lập thành công.
+  wwcConfigConversationOllamaModelInput: Mô hình hiện tại là {0}. Vui lòng nhập một
+    mô hình cho Ollama, hoặc nhập 0 để quay lại.
+  wwcConfigConversationOllamaURLInput: URL hiện tại là {0}. Vui lòng nhập URL cho
+    Ollama, hoặc nhập 0 để quay lại.
+  wwcConfigGUIOllamaButton: Ollama
+  wwcConfigGUIOllamaToggleSuccess: Bật Ollama thành công.
+  wwcConfigGUIOllamaURLButton: Thay đổi URL trang web
+  wwcConfigConversationOllamaModelSuccess: Mô hình Ollama thiết lập thành công.
+  wwcConfigGUIToggleOllamaButton: Bật/tắt chức năng
 
