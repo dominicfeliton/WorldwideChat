@@ -15,7 +15,7 @@ chatGPTDefaultSystemPrompt: |
   
   If the translation succeeds, always set 'reason' to 'none'.
 
-chatGPTOverrideSystemPrompt: "default"
+chatGPTOverrideSystemPrompt: "{default}"
 
 ollamaDefaultSystemPrompt: |
   "You are tasked with translating three strings: an input language ISO code, an output language ISO code, and a message. 
@@ -53,7 +53,7 @@ ollamaDefaultSystemPrompt: |
     "output": null,
   }
 
-ollamaOverrideSystemPrompt: "default"
+ollamaOverrideSystemPrompt: "{default}"
 
 supportedLangs:
   - "am"
