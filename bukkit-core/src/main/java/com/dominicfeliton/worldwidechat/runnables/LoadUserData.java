@@ -29,7 +29,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class LoadUserData implements Runnable {
+public class LoadUserData {
 
     private WorldwideChat main = WorldwideChat.instance;
 
@@ -45,11 +45,12 @@ public class LoadUserData implements Runnable {
     private String transName;
 
     public LoadUserData(String transName) {
+
         this.transName = transName;
+        loadData();
     }
 
-    @Override
-    public void run() {
+    private void loadData() {
         //TODO: Sanitize for bad inputs/accommodate for obj upgrades; if data is bad, we definitely shouldn't add it
         /* Load all saved user data */
         refs.debugMsg("Starting LoadUserData!!!");

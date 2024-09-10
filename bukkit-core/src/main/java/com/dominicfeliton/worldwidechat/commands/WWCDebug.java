@@ -158,9 +158,9 @@ public class WWCDebug extends BasicCommand {
 
                             conf.set("General.enableDebugMode", true);
                             if (sender instanceof Player) {
-                                new SyncUserData((Player) sender).run();
+                                new SyncUserData((Player) sender);
                             } else {
-                                new SyncUserData().run();
+                                new SyncUserData();
                             }
 
                             conf.set("General.enableDebugMode", debugBool);

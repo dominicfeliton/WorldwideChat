@@ -386,13 +386,13 @@ public class WorldwideChat extends JavaPlugin {
 
         /* Run tasks after translator loaded */
         // Load saved user data
-        new LoadUserData(tempTransName).run();
+        new LoadUserData(tempTransName);
 
         // Schedule automatic user data sync
         GenericRunnable sync = new GenericRunnable() {
             @Override
             protected void execute() {
-                new SyncUserData().run();
+                new SyncUserData();
             }
         };
 
@@ -415,7 +415,7 @@ public class WorldwideChat extends JavaPlugin {
         GenericRunnable update = new GenericRunnable() {
             @Override
             protected void execute() {
-                new UpdateChecker().run();
+                new UpdateChecker();
             }
         };
 
