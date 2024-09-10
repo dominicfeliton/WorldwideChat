@@ -1038,10 +1038,6 @@ public class CommonRefs {
      * @param currPlayer - Player that is being checked.
      * @return String - Returns an empty string if no permission was found, or the permission name if it is
      */
-    // TODO: Rearchitect our approach to rate limits.
-    // Global should be a var in the main class. Therefore it should be a new config option.
-    // Per-user/group should stay as a permission. Should override global.
-    // If they are exempt, then they are exempt from everything. No exceptions!
     private String checkForRateLimitPermissions(Player currPlayer) {
         Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
         if (perms.contains("worldwidechat.ratelimit.exempt")) {
