@@ -218,10 +218,11 @@ public class TranslateInGameListener implements Listener {
                                                 .color(NamedTextColor.GOLD)))
                                 .build();
 
-                        if (!textLimit && currLoc != null) {
+                        boolean transFail = Arrays.equals(signText, changedSignText);
+                        if (!textLimit && currLoc != null && !transFail) {
                             /* Set completed message */
                             refs.sendMsg("wwcSignDone", "", "&a&o", event.getPlayer());
-                        } else if (Arrays.deepEquals(signText, changedSignText)) {
+                        } else if (transFail) {
                             refs.sendMsg("wwcSignNotTranslated", "", "&e&o", event.getPlayer());
                             changedSignText = null;
                         } else {
