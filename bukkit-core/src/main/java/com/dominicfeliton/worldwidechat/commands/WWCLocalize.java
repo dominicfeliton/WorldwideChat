@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -74,11 +75,14 @@ public class WWCLocalize extends BasicCommand {
             // Changing our own localization
             if (!locale.equalsIgnoreCase("stop")) {
                 changeLangMsg(sender, inName, locale);
+                startSound();
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     stopLangMsg(sender);
+                    stopSound();
                 } else {
                     alreadyStoppedMsg(sender);
+                    stopSound();
                 }
             }
         } else {
@@ -86,12 +90,15 @@ public class WWCLocalize extends BasicCommand {
             if (!locale.equalsIgnoreCase("stop")) {
                 refs.sendMsg("wwclLangChangedOtherPlayerSender", new String[]{"&6" + inName, "&6" + locale}, sender);
                 changeLangMsg(inPlayer, inName, locale);
+                startSound();
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     refs.sendMsg("wwclLangStoppedOtherPlayerSender", "&6" + inName, sender);
                     stopLangMsg(inPlayer);
+                    stopSound();
                 } else {
                     refs.sendMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6" + inName, sender);
+                    stopSound();
                 }
             }
         }
@@ -124,5 +131,20 @@ public class WWCLocalize extends BasicCommand {
 
     private void alreadyStoppedMsg(CommandSender sender) {
         refs.sendMsg("wwclLangAlreadyStopped", sender);
+    }
+
+    private void startSound() {
+        // Play subtle sound when enabling a feature
+        if (!isConsoleSender) {
+            Player p = (Player) sender;
+            p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_HAT, 0.75f, 1.0f);
+        }
+    }
+
+    private void stopSound() {
+        if (!isConsoleSender) {
+            Player p = (Player) sender;
+            p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_SNARE, 0.75f, 1.0f);
+        }
     }
 }

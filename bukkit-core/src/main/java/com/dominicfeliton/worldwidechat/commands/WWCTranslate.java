@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -74,6 +75,7 @@ public class WWCTranslate extends BasicCommand {
                 ActiveTranslator currTarget = main.getActiveTranslator(((Player) sender));
                 main.removeActiveTranslator(currTarget);
                 refs.sendMsg("wwctTranslationStopped", sender);
+                stopSound();
                 if ((args.length >= 1 && args[0].equalsIgnoreCase("Stop")) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
                     return true;
                 }
@@ -88,6 +90,7 @@ public class WWCTranslate extends BasicCommand {
                 main.removeActiveTranslator(main.getActiveTranslator(testPlayer));
                 refs.sendMsg("wwctTranslationStopped", testPlayer);
                 refs.sendMsg("wwctTranslationStoppedOtherPlayer", "&6" + args[0], sender);
+                stopSound();
                 if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {
                     return true;
                 }
@@ -98,6 +101,7 @@ public class WWCTranslate extends BasicCommand {
             for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
                 refs.sendMsg("wwcgTranslationStopped", eaPlayer);
             }
+            stopSound();
             refs.sendMsg("wwcgTranslationStopped", main.getServer().getConsoleSender());
             if (args.length >= 1 && args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
                 return true;
@@ -229,7 +233,16 @@ public class WWCTranslate extends BasicCommand {
             newTranslator.setInLangCode(inLang);
         }
         main.addActiveTranslator(newTranslator);
+        if (!isConsoleSender) {
+            ((Player)sender).playSound(((Player)sender).getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
+        }
         return true;
+    }
+
+    private void stopSound() {
+        if (!isConsoleSender) {
+            ((Player)sender).playSound(((Player)sender).getLocation(), Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f);
+        }
     }
 
 }
