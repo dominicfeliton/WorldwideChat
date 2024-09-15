@@ -38,7 +38,6 @@ public class WWCTranslate extends BasicCommand {
         // 2) Make sure that when you stop a different translation session yours is not stopped as well
         // TODO: Revamp GUI checks
         // TODO: Perhaps put /wwct without stopping first?
-        // TODO: Fix bold calls
         /* Sanitize args */
         if ((isGlobal && args.length > 2) || (!isGlobal && args.length > 3)) {
             // Too many args
@@ -75,7 +74,7 @@ public class WWCTranslate extends BasicCommand {
                 ActiveTranslator currTarget = main.getActiveTranslator(((Player) sender));
                 main.removeActiveTranslator(currTarget);
                 refs.sendMsg("wwctTranslationStopped", sender);
-                stopSound();
+                refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
                 if ((args.length >= 1 && args[0].equalsIgnoreCase("Stop")) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
                     return true;
                 }
@@ -90,7 +89,7 @@ public class WWCTranslate extends BasicCommand {
                 main.removeActiveTranslator(main.getActiveTranslator(testPlayer));
                 refs.sendMsg("wwctTranslationStopped", testPlayer);
                 refs.sendMsg("wwctTranslationStoppedOtherPlayer", "&6" + args[0], sender);
-                stopSound();
+                refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
                 if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {
                     return true;
                 }
@@ -101,7 +100,7 @@ public class WWCTranslate extends BasicCommand {
             for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
                 refs.sendMsg("wwcgTranslationStopped", eaPlayer);
             }
-            stopSound();
+            refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
             refs.sendMsg("wwcgTranslationStopped", main.getServer().getConsoleSender());
             if (args.length >= 1 && args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
                 return true;
@@ -149,7 +148,7 @@ public class WWCTranslate extends BasicCommand {
         String fOutLang = "";
 
         // Check if inLang/outLang are the same
-        if (inLang.equalsIgnoreCase(outLang) || refs.isSameLang(inLang, outLang, "all")) {
+        if (inLang.equalsIgnoreCase(outLang) || refs.isSameLang(inLang, outLang, CommonRefs.LangType.ALL)) {
             refs.sendMsg("wwctSameLangError", refs.getFormattedLangCodes("in"), "&c", sender);
             return false;
         }
@@ -157,13 +156,13 @@ public class WWCTranslate extends BasicCommand {
          * Do not let users use None inputLang with Amazon Translate.
          * Remove this if we ever find a workaround for each. */
         // Check if valid inLang
-        if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, "in")) ||
+        if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, CommonRefs.LangType.INPUT)) ||
                 (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
             refs.sendMsg("wwctInvalidInputLangCode", refs.getFormattedLangCodes("in"), "&c", sender);
             return false;
         }
         // Check if valid outLang
-        if (!refs.isSupportedLang(outLang, "out")) {
+        if (!refs.isSupportedLang(outLang, CommonRefs.LangType.OUTPUT)) {
             refs.sendMsg("wwctInvalidOutputLangCode", refs.getFormattedLangCodes("out"), "&c", sender);
             return false;
         }
@@ -174,10 +173,10 @@ public class WWCTranslate extends BasicCommand {
         Player targetPlayer = null;
 
         // Format langs to send to player
-        fInLang = refs.getSupportedLang(inLang, "in").getNativeLangName().isEmpty() ?
-                refs.getSupportedLang(inLang, "in").getLangCode() : refs.getSupportedLang(inLang, "in").getNativeLangName();
-        fOutLang = refs.getSupportedLang(outLang, "out").getNativeLangName().isEmpty() ?
-                refs.getSupportedLang(inLang, "in").getLangCode() : refs.getSupportedLang(outLang, "out").getNativeLangName();
+        fInLang = refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getNativeLangName().isEmpty() ?
+                refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getLangCode() : refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getNativeLangName();
+        fOutLang = refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getNativeLangName().isEmpty() ?
+                refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getLangCode() : refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getNativeLangName();
 
         if (!isGlobal) {
             targetPlayer = Bukkit.getPlayerExact(inName);
@@ -233,16 +232,8 @@ public class WWCTranslate extends BasicCommand {
             newTranslator.setInLangCode(inLang);
         }
         main.addActiveTranslator(newTranslator);
-        if (!isConsoleSender) {
-            ((Player)sender).playSound(((Player)sender).getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
-        }
+        refs.playSound(CommonRefs.SoundType.START_TRANSLATION, sender);
         return true;
-    }
-
-    private void stopSound() {
-        if (!isConsoleSender) {
-            ((Player)sender).playSound(((Player)sender).getLocation(), Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f);
-        }
     }
 
 }

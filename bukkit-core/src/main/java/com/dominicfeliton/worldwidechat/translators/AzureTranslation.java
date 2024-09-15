@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.translators;
 
-
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import io.github.brenoepics.at4j.AzureApi;
 import io.github.brenoepics.at4j.AzureApiBuilder;
@@ -67,9 +67,9 @@ public class AzureTranslation extends BasicTranslation {
              * instead of full names (English, Spanish) */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
 
             // Detect if None

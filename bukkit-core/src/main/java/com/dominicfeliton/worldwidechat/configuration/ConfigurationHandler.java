@@ -52,7 +52,7 @@ public class ConfigurationHandler {
         YamlConfiguration templateConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(main.getResource(name), StandardCharsets.UTF_8));
 
         /* Get plugin lang */
-        if (refs.isSupportedLang(mainConfig.getString("General.pluginLang"), "local")) {
+        if (refs.isSupportedLang(mainConfig.getString("General.pluginLang"), CommonRefs.LangType.LOCAL)) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
             return;
         }

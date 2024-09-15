@@ -69,7 +69,7 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
                             "&e&o",
                             player));
                 }
-                if (refs.isSameLang(code, main.getConfigManager().getMainConfig().getString("General.pluginLang"), "local")) {
+                if (refs.isSameLang(code, main.getConfigManager().getMainConfig().getString("General.pluginLang"), CommonRefs.LangType.LOCAL)) {
                     invManager.addGlowEffect(currentEntryMeta);
                     lore.add(refs.getPlainMsg("wwcConfigGUIMessagesServerLang",
                             "",

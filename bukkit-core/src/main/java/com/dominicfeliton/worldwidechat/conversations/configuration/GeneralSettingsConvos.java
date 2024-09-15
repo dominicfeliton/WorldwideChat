@@ -56,8 +56,8 @@ public class GeneralSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            if (refs.isSupportedLang(input, "local") || input.equals("0")) {
-                input = !input.equals("0") ? refs.getSupportedLang(input, "local").getLangCode() : "0";
+            if (refs.isSupportedLang(input, CommonRefs.LangType.LOCAL) || input.equals("0")) {
+                input = !input.equals("0") ? refs.getSupportedLang(input, CommonRefs.LangType.LOCAL).getLangCode() : "0";
                 return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
             }
             Player currPlayer = ((Player) context.getForWhom());

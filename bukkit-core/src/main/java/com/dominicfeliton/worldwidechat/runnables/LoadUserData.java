@@ -94,7 +94,9 @@ public class LoadUserData {
                                 rs.getInt("successfulTranslations")
                         );
                         recordToAdd.setLocalizationCode("");
-                        if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.isSupportedLang(rs.getString("localizationCode"), "local")) {
+                        if (rs.getString("localizationCode") != null &&
+                                !rs.getString("localizationCode").isEmpty() &&
+                                refs.isSupportedLang(rs.getString("localizationCode"), CommonRefs.LangType.LOCAL)) {
                             recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
                         }
                         recordToAdd.setHasBeenSaved(true);
@@ -152,7 +154,9 @@ public class LoadUserData {
                                 rs.getInt("successfulTranslations")
                         );
                         recordToAdd.setLocalizationCode("");
-                        if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.isSupportedLang(rs.getString("localizationCode"), "local")) {
+                        if (rs.getString("localizationCode") != null &&
+                                !rs.getString("localizationCode").isEmpty() &&
+                                refs.isSupportedLang(rs.getString("localizationCode"), CommonRefs.LangType.LOCAL)) {
                             recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
                         }
                         recordToAdd.setHasBeenSaved(true);
@@ -189,7 +193,9 @@ public class LoadUserData {
                         currFileConfig.getInt("attemptedTranslations"),
                         currFileConfig.getInt("successfulTranslations"));
                 currRecord.setLocalizationCode("");
-                if (currFileConfig.getString("localizationCode") != null && !currFileConfig.getString("localizationCode").isEmpty() && refs.isSupportedLang(currFileConfig.getString("localizationCode"), "local")) {
+                if (currFileConfig.getString("localizationCode") != null &&
+                        !currFileConfig.getString("localizationCode").isEmpty() &&
+                        refs.isSupportedLang(currFileConfig.getString("localizationCode"), CommonRefs.LangType.LOCAL)) {
                     currRecord.setLocalizationCode(currFileConfig.getString("localizationCode"));
                 }
                 currRecord.setHasBeenSaved(true);
@@ -470,16 +476,16 @@ public class LoadUserData {
 
     private boolean validLangCodes(String inLang, String outLang) {
         // If inLang is invalid, or None is associated with Amazon Translate
-        if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, "in"))
+        if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, CommonRefs.LangType.LOCAL))
                 || (inLang.equalsIgnoreCase("None") && transName.equalsIgnoreCase("Amazon Translate"))) {
             return false;
         }
         // If outLang code is not supported with current translator
-        if (!refs.isSupportedLang(outLang, "out")) {
+        if (!refs.isSupportedLang(outLang, CommonRefs.LangType.OUTPUT)) {
             return false;
         }
         // If inLang and outLang codes are equal
-        if (refs.getSupportedLang(outLang, "out").getLangCode().equals(refs.getSupportedLang(inLang, "in").getLangCode())) {
+        if (refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getLangCode().equals(refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getLangCode())) {
             refs.debugMsg("Langs are the same?");
             return false;
         }

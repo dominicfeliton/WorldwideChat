@@ -60,7 +60,7 @@ public class WWCLocalize extends BasicCommand {
             return false;
         }
 
-        if (!refs.isSupportedLang(locale, "local") && !locale.equalsIgnoreCase("stop")) {
+        if (!refs.isSupportedLang(locale, CommonRefs.LangType.LOCAL) && !locale.equalsIgnoreCase("stop")) {
             refs.sendMsg("wwclLangInvalid", new String[]{"&6" + locale, "&6" + refs.getFormattedLangCodes("local")}, sender);
             return false;
         }
@@ -75,14 +75,14 @@ public class WWCLocalize extends BasicCommand {
             // Changing our own localization
             if (!locale.equalsIgnoreCase("stop")) {
                 changeLangMsg(sender, inName, locale);
-                startSound();
+                refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     stopLangMsg(sender);
-                    stopSound();
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 } else {
                     alreadyStoppedMsg(sender);
-                    stopSound();
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
         } else {
@@ -90,21 +90,21 @@ public class WWCLocalize extends BasicCommand {
             if (!locale.equalsIgnoreCase("stop")) {
                 refs.sendMsg("wwclLangChangedOtherPlayerSender", new String[]{"&6" + inName, "&6" + locale}, sender);
                 changeLangMsg(inPlayer, inName, locale);
-                startSound();
+                refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     refs.sendMsg("wwclLangStoppedOtherPlayerSender", "&6" + inName, sender);
                     stopLangMsg(inPlayer);
-                    stopSound();
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 } else {
                     refs.sendMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6" + inName, sender);
-                    stopSound();
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
         }
 
         // Convert to lang code
-        locale = !locale.equalsIgnoreCase("stop") ? refs.getSupportedLang(locale, "local").getLangCode() : "";
+        locale = !locale.equalsIgnoreCase("stop") ? refs.getSupportedLang(locale, CommonRefs.LangType.LOCAL).getLangCode() : "";
 
         if (!locale.isEmpty() && configs.getPluginLangConfigs().get(locale) == null) {
             refs.debugMsg("Not found in our YamlConfigs...check localization init logs!");
@@ -131,20 +131,5 @@ public class WWCLocalize extends BasicCommand {
 
     private void alreadyStoppedMsg(CommandSender sender) {
         refs.sendMsg("wwclLangAlreadyStopped", sender);
-    }
-
-    private void startSound() {
-        // Play subtle sound when enabling a feature
-        if (!isConsoleSender) {
-            Player p = (Player) sender;
-            p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_HAT, 0.75f, 1.0f);
-        }
-    }
-
-    private void stopSound() {
-        if (!isConsoleSender) {
-            Player p = (Player) sender;
-            p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_SNARE, 0.75f, 1.0f);
-        }
     }
 }

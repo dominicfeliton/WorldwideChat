@@ -19,6 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.text.StringEscapeUtils;
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -124,6 +125,76 @@ public class CommonRefs {
         tableSchemas.put("persistentCache", cachedTermsSchema);
     }
 
+    public enum LangType {
+        INPUT("in"),
+        OUTPUT("out"),
+        ALL("all"),
+        LOCAL("local");
+
+        private final String type;
+
+        LangType(String type) {
+            this.type = type;
+        }
+
+        public String getType() {
+            return type;
+        }
+
+        public static LangType fromString(String type) {
+            for (LangType langType : LangType.values()) {
+                if (langType.type.equalsIgnoreCase(type)) {
+                    return langType;
+                }
+            }
+            throw new IllegalArgumentException("Unknown langType: " + type);
+        }
+    }
+
+    public enum SoundType {
+        SUBMENU_TOGGLE_ON("SUBMENU_TOGGLE_ON", Sound.BLOCK_NOTE_BLOCK_HAT, 0.5f, 1.0f),
+        SUBMENU_TOGGLE_OFF("SUBMENU_TOGGLE_OFF", Sound.BLOCK_NOTE_BLOCK_SNARE, 0.5f, 1.0f),
+        START_TRANSLATION("START_TRANSLATION", Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f),
+        STOP_TRANSLATION("STOP_TRANSLATION", Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f);
+
+        private final String name;
+        private final Sound sound;
+        private final Float float1;
+        private final Float float2;
+
+        SoundType(String name, Sound sound, Float float1, Float float2) {
+            this.name = name;
+            this.sound = sound;
+            this.float1 = float1;
+            this.float2 = float2;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public Sound getSound() {
+            return sound;
+        }
+
+        public Float getFloat1() {
+            return float1;
+        }
+
+        public Float getFloat2() {
+            return float2;
+        }
+
+        public static SoundType fromString(String name) {
+            for (SoundType soundType : SoundType.values()) {
+                if (soundType.name.equalsIgnoreCase(name)) {
+                    return soundType;
+                }
+            }
+            throw new IllegalArgumentException("Unknown soundType: " + name);
+        }
+    }
+
     /**
      * Compares two strings to check if they are the same language under the current translator.
      *
@@ -132,7 +203,7 @@ public class CommonRefs {
      * @param langType - 'out' or 'in' or 'local' are three valid inputs for this
      * @return Boolean - Whether languages are the same or not
      */
-    public boolean isSameLang(String first, String second, String langType) {
+    public boolean isSameLang(String first, String second, LangType langType) {
         return isSupportedLang(first, langType) && isSupportedLang(second, langType)
                 && getSupportedLang(first, langType).equals(getSupportedLang(second, langType));
     }
@@ -147,33 +218,50 @@ public class CommonRefs {
      *                 'local' will check local lang list
      * @return SupportedLanguageObject - Will be completely empty if the language is invalid
      */
-    // TODO: This should be enums not string
-    public SupportedLang getSupportedLang(String langName, String langType) {
-        /* Setup vars */
+    public SupportedLang getSupportedLang(String langName, LangType langType) {
+        // Setup vars
         SupportedLang invalidLang = new SupportedLang("", "", "");
         SupportedLang outLang;
 
-        /* Check langType */
-        if (langType.equalsIgnoreCase("in")) {
-            outLang = main.getSupportedInputLangs().get(langName);
-        } else if (langType.equalsIgnoreCase("out")) {
-            outLang = main.getSupportedOutputLangs().get(langName);
-        } else if (langType.equalsIgnoreCase("all")) {
-            outLang = main.getSupportedInputLangs().get(langName);
-            if (outLang == null) {
+        // Check langType using enum
+        switch (langType) {
+            case INPUT:
+                outLang = main.getSupportedInputLangs().get(langName);
+                break;
+            case OUTPUT:
                 outLang = main.getSupportedOutputLangs().get(langName);
-            }
-        } else if (langType.equalsIgnoreCase("local")) {
-            outLang = supportedPluginLangCodes.get(langName);
-        } else {
-            debugMsg("Invalid langType for getSupportedTranslatorLang()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
-            outLang = null;
+                break;
+            case ALL:
+                outLang = main.getSupportedInputLangs().get(langName);
+                if (outLang == null) {
+                    outLang = main.getSupportedOutputLangs().get(langName);
+                }
+                break;
+            case LOCAL:
+                outLang = supportedPluginLangCodes.get(langName);
+                break;
+            default:
+                debugMsg("Invalid langType for getSupportedTranslatorLang()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
+                outLang = null;
+                break;
         }
+
         if (outLang == null) {
             debugMsg("Lang " + langName + " not found in " + langType + "!");
             return invalidLang;
         }
+
         return outLang;
+    }
+
+    public void playSound(SoundType type, CommandSender sender) {
+        if (!main.isSoundEnabled() || !(sender instanceof Player)) {
+            debugMsg("No sound - not enabled or not a player!");
+            return;
+        }
+
+        Player player = (Player) sender;
+        player.playSound(player.getLocation(), type.sound, type.float1, type.float2);
     }
 
     /**
@@ -185,7 +273,7 @@ public class CommonRefs {
      *                 'all' will check both lists
      * @return true if supported, false otherwise
      */
-    public boolean isSupportedLang(String in, String langType) {
+    public boolean isSupportedLang(String in, LangType langType) {
         return !getSupportedLang(in, langType).getLangCode().isEmpty();
     }
 

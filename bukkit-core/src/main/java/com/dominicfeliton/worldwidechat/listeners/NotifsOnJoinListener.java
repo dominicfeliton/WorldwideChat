@@ -92,7 +92,7 @@ public class NotifsOnJoinListener implements Listener {
     }
 
     private String formatLangs(String code, String type) {
-        return refs.getSupportedLang(code, type).getNativeLangName().isEmpty() ?
-                refs.getSupportedLang(code, type).getLangCode() : refs.getSupportedLang(code, type).getNativeLangName();
+        return refs.getSupportedLang(code, CommonRefs.LangType.fromString(type)).getNativeLangName().isEmpty() ?
+                refs.getSupportedLang(code, CommonRefs.LangType.fromString(type)).getLangCode() : refs.getSupportedLang(code, CommonRefs.LangType.fromString(type)).getNativeLangName();
     }
 }

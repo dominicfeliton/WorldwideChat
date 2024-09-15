@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.translators;
 
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.cloud.translate.*;
 import com.google.cloud.translate.Translate.TranslateOption;
@@ -65,9 +66,9 @@ public class GoogleTranslation extends BasicTranslation {
              * instead of full names (English, Spanish) */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
 
             /* Detect inputLang */

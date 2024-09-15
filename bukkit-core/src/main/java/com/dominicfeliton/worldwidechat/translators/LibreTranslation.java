@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.translators;
 
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -7,13 +8,13 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.lang3.StringUtils;
 
-import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -56,7 +57,9 @@ public class LibreTranslation extends BasicTranslation {
                 /* Get languages */
                 URL url = new URL(serviceUrl + "/languages");
 
-                HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+                // Open a connection, no need to check the protocol
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
                 conn.setRequestMethod("GET");
                 conn.setRequestProperty("Content-Type", "application/json");
                 conn.connect();
@@ -123,9 +126,9 @@ public class LibreTranslation extends BasicTranslation {
              * instead of full names (English, Spanish) */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
 
             /* Detect inputLang */

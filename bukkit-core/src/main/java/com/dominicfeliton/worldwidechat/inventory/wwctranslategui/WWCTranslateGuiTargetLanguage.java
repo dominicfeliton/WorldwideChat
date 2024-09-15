@@ -71,7 +71,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
             /* Add each supported language from each respective translator */
             int i = 0;
-            SupportedLang userLang = refs.getSupportedLang(currTranslator.getOutLangCode(), "out");
+            SupportedLang userLang = refs.getSupportedLang(currTranslator.getOutLangCode(), CommonRefs.LangType.OUTPUT);
 
             for (SupportedLang currLang : cleanedOutLangs) {
                 boolean unsupported;

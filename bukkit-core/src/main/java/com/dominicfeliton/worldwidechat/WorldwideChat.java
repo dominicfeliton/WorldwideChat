@@ -131,6 +131,8 @@ public class WorldwideChat extends JavaPlugin {
 
     private String aiSystemPrompt = "";
 
+    private boolean enableSounds = true;
+
     /* Default constructor */
     public WorldwideChat() {
         super();
@@ -1198,4 +1200,6 @@ public class WorldwideChat extends JavaPlugin {
     public Object[] getPlayerDataUsingGUI(Player p) {
         return playersUsingConfigGUI.get(p.getUniqueId().toString());
     }
+
+    public boolean isSoundEnabled() { return enableSounds; }
 }

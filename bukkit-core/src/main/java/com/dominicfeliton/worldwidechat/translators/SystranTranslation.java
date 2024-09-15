@@ -1,16 +1,17 @@
 package com.dominicfeliton.worldwidechat.translators;
 
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
@@ -46,7 +47,7 @@ public class SystranTranslation extends BasicTranslation {
             if (isInitializing) {
                 /* Get supported languages */
                 URL url = new URL("https://api-translate.systran.net/translation/supportedLanguages");
-                HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod("GET");
                 conn.setRequestProperty("Authorization", "Key " + URLEncoder.encode(apiKey, StandardCharsets.UTF_8));
 
@@ -106,14 +107,14 @@ public class SystranTranslation extends BasicTranslation {
             /* Get language code of current input/output language */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
 
             /* Actual translation */
             URL url = new URL("https://api-translate.systran.net/translation/text/translate");
-            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Authorization", "Key " + URLEncoder.encode(apiKey, StandardCharsets.UTF_8));
             conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");

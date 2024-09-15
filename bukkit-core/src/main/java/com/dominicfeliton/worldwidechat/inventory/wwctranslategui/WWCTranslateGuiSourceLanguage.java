@@ -67,7 +67,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 
             /* Add each supported language from each respective translator */
             int i = 0;
-            SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), "in");
+            SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), CommonRefs.LangType.INPUT);
             for (SupportedLang currLang : cleanedInputLangs) {
                 ItemStack itemForLang = XMaterial.BOOK.parseItem();
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();
