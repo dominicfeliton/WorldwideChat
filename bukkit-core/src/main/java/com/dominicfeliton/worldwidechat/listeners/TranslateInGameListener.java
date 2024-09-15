@@ -27,6 +27,7 @@ import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
@@ -91,26 +92,29 @@ public class TranslateInGameListener implements Listener {
                         /* Init vars */
                         Player currPlayer = event.getPlayer();
                         BookMeta meta = (BookMeta) currentBook.getItemMeta();
-                        String outTitle = meta.getTitle();
+                        String outTitle;
                         List<String> pages = meta.getPages();
-                        List<String> translatedPages = new ArrayList<String>();
+                        List<String> translatedPages;
 
                         /* Send message */
                         refs.sendMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
 
                         /* Translate title */
                         outTitle = refs.translateText(meta.getTitle(), currPlayer);
-                        refs.sendMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
-
-                        /* Translate pages */
-                        for (String eaPage : pages) {
-                            String out = refs.translateText(eaPage, currPlayer);
-                            translatedPages.add(out);
+                        if (outTitle.equalsIgnoreCase(meta.getTitle())) {
+                            refs.sendMsg("wwcBookTranslateTitleFail", "", "&e&o", currPlayer);
+                        } else {
+                            refs.sendMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
                         }
 
-                        if (currentBook != null) {
+                        /* Translate pages */
+                        translatedPages = refs.translateText(pages, currPlayer, false);
+
+                        if (currentBook != null && !translatedPages.equals(pages)) {
                             /* Set completed message */
                             refs.sendMsg("wwcBookDone", "", "&a&o", currPlayer);
+                        } else {
+                            refs.sendMsg("wwcBookFail", "", "&e&o", currPlayer);
                         }
 
                         /* Create the modified book */
@@ -120,8 +124,7 @@ public class TranslateInGameListener implements Listener {
                         try {
                             /* Older MC versions do not have generation data */
                             newMeta.setGeneration(meta.getGeneration());
-                        } catch (NoSuchMethodError e) {
-                        }
+                        } catch (NoSuchMethodError e) {}
                         newMeta.setTitle(outTitle);
                         newMeta.setPages(translatedPages);
                         newBook.setItemMeta(newMeta);
@@ -170,20 +173,17 @@ public class TranslateInGameListener implements Listener {
                     protected void execute() {
                         /* Init vars */
                         String[] signText = currentSign.getLines();
-                        String[] changedSignText = new String[signText.length];
+                        String[] changedSignText = refs.translateText(signText, event.getPlayer(), true);
                         boolean textLimit = false;
 
                         /* Send message */
                         refs.sendMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
 
-                        /* Translate each line of sign */
-                        for (int i = 0; i < changedSignText.length; i++) {
-                            String eaLine = refs.translateText(signText[i], event.getPlayer());
-                            /* Save translated line */
-                            if (eaLine.length() > 15) {
+                        // Check each translated line to make sure length fits in sign
+                        for (String eaStr : changedSignText) {
+                            if (eaStr.length() > 15) {
                                 textLimit = true;
                             }
-                            changedSignText[i] = eaLine;
                         }
 
                         /* Version Check: For 1.13 and below compatibility */
@@ -221,6 +221,9 @@ public class TranslateInGameListener implements Listener {
                         if (!textLimit && currLoc != null) {
                             /* Set completed message */
                             refs.sendMsg("wwcSignDone", "", "&a&o", event.getPlayer());
+                        } else if (Arrays.deepEquals(signText, changedSignText)) {
+                            refs.sendMsg("wwcSignNotTranslated", "", "&e&o", event.getPlayer());
+                            changedSignText = null;
                         } else {
                             /* If we are here, sign is too long or deleted msg */
                             refs.sendMsg(event.getPlayer(), translationNoticeMsg);

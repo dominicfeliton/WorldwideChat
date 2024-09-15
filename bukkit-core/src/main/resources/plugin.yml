@@ -27,7 +27,7 @@ commands:
     permission-message: §4You do not have permission to run this command.
   wwcg:
     description: Enables chat translation to a certain language globally.
-    aliases: [ wwcglobal, gtranslate ]
+    aliases: [ wwcglobal, gtranslate, translateglobal ]
     usage: §4/wwcg (language-in) (language-out)
     permission: worldwidechat.wwcg
     permission-message: §4You do not have permission to run this command.

@@ -4,6 +4,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -140,6 +141,9 @@ public class WWCTranslate extends BasicCommand {
     }
 
     private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
+        String fInLang = "";
+        String fOutLang = "";
+
         // Check if inLang/outLang are the same
         if (inLang.equalsIgnoreCase(outLang) || refs.isSameLang(inLang, outLang, "all")) {
             refs.sendMsg("wwctSameLangError", refs.getFormattedLangCodes("in"), "&c", sender);
@@ -159,10 +163,18 @@ public class WWCTranslate extends BasicCommand {
             refs.sendMsg("wwctInvalidOutputLangCode", refs.getFormattedLangCodes("out"), "&c", sender);
             return false;
         }
+
         // Check if target is valid player (if not global)
         // Set UUID if valid, else exit
         String inUUID = "";
         Player targetPlayer = null;
+
+        // Format langs to send to player
+        fInLang = refs.getSupportedLang(inLang, "in").getNativeLangName().isEmpty() ?
+                refs.getSupportedLang(inLang, "in").getLangCode() : refs.getSupportedLang(inLang, "in").getNativeLangName();
+        fOutLang = refs.getSupportedLang(outLang, "out").getNativeLangName().isEmpty() ?
+                refs.getSupportedLang(inLang, "in").getLangCode() : refs.getSupportedLang(outLang, "out").getNativeLangName();
+
         if (!isGlobal) {
             targetPlayer = Bukkit.getPlayerExact(inName);
             if (targetPlayer == null) {
@@ -186,30 +198,30 @@ public class WWCTranslate extends BasicCommand {
         if (!isGlobal) {
             if (inLang.equalsIgnoreCase("None")) {
                 if (targetIsSelf) {
-                    refs.sendMsg("wwctAutoTranslateStart", "&6" + outLang, sender);
+                    refs.sendMsg("wwctAutoTranslateStart", "&6" + fOutLang, sender);
                 } else {
-                    refs.sendMsg("wwctAutoTranslateStartOtherPlayer", new String[]{"&6" + targetPlayer.getName(), "&6" + outLang}, sender);
-                    refs.sendMsg("wwctAutoTranslateStart", "&6" + outLang, Bukkit.getPlayer(UUID.fromString(inUUID)));
+                    refs.sendMsg("wwctAutoTranslateStartOtherPlayer", new String[]{"&6" + targetPlayer.getName(), "&6" + fOutLang}, sender);
+                    refs.sendMsg("wwctAutoTranslateStart", "&6" + fOutLang, Bukkit.getPlayer(UUID.fromString(inUUID)));
                 }
             } else {
                 if (targetIsSelf) {
-                    refs.sendMsg("wwctLangToLangStart", new String[]{"&6" + inLang, "&6" + outLang}, sender);
+                    refs.sendMsg("wwctLangToLangStart", new String[]{"&6" + fInLang, "&6" + fOutLang}, sender);
                 } else {
-                    refs.sendMsg("wwctLangToLangStartOtherPlayer", new String[]{"&6" + targetPlayer.getName(), "&6" + inLang, "&6" + outLang}, sender);
-                    refs.sendMsg("wwctLangToLangStart", new String[]{"&6" + inLang, "&6" + outLang}, Bukkit.getPlayer(UUID.fromString(inUUID)));
+                    refs.sendMsg("wwctLangToLangStartOtherPlayer", new String[]{"&6" + targetPlayer.getName(), "&6" + fInLang, "&6" + fOutLang}, sender);
+                    refs.sendMsg("wwctLangToLangStart", new String[]{"&6" + fInLang, "&6" + fOutLang}, Bukkit.getPlayer(UUID.fromString(inUUID)));
                 }
             }
         } else {
             if (inLang.equalsIgnoreCase("None")) {
                 for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-                    refs.sendMsg("wwcgAutoTranslateStart", "&6" + outLang, eaPlayer);
+                    refs.sendMsg("wwcgAutoTranslateStart", "&6" + fOutLang, eaPlayer);
                 }
-                refs.sendMsg("wwcgAutoTranslateStart", "&6" + outLang, main.getServer().getConsoleSender());
+                refs.sendMsg("wwcgAutoTranslateStart", "&6" + fOutLang, main.getServer().getConsoleSender());
             } else {
                 for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-                    refs.sendMsg("wwcgLangToLangStart", new String[]{"&6" + inLang, "&6" + outLang}, eaPlayer);
+                    refs.sendMsg("wwcgLangToLangStart", new String[]{"&6" + fInLang, "&6" + fOutLang}, eaPlayer);
                 }
-                refs.sendMsg("wwcgLangToLangStart", new String[]{"&6" + inLang, "&6" + outLang}, main.getServer().getConsoleSender());
+                refs.sendMsg("wwcgLangToLangStart", new String[]{"&6" + fInLang, "&6" + fOutLang}, main.getServer().getConsoleSender());
             }
         }
         ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);

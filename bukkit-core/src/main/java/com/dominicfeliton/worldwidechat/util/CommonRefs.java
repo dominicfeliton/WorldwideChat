@@ -438,13 +438,57 @@ public class CommonRefs {
     }
 
     /**
+     * Translates array of Strings.
+     * All of them can be marked as "1" translation and bypass the rate limit.
+     * @param arrayOfMsgs
+     * @param currPlayer
+     * @param countAsOneRequest
+     * @return
+     */
+    public String[] translateText(String[] arrayOfMsgs, Player currPlayer, boolean countAsOneRequest) {
+        // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
+        if (countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
+
+        // Either we are ignoring the rate limit or the user is not being rate limited here.
+        String[] out = new String[arrayOfMsgs.length];
+        for (int i = 0; i < arrayOfMsgs.length; i++) {
+            out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
+        }
+        return out;
+    }
+
+    /**
+     * Translates list of Strings.
+     * All of them can be marked as "1" translation and bypass the rate limit.
+     * @param listOfMsgs
+     * @param currPlayer
+     * @param countAsOneRequest
+     * @return
+     */
+    public List<String> translateText(List<String> listOfMsgs, Player currPlayer, boolean countAsOneRequest) {
+        // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
+        if (countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
+
+        // Either we are ignoring the rate limit or the user is not being rate limited here.
+        List<String> out = new ArrayList<>();
+        for (String str : listOfMsgs) {
+            out.add(translateText(str, currPlayer, countAsOneRequest));
+        }
+        return out;
+    }
+
+    public String translateText(String inMessage, Player currPlayer) {
+        return translateText(inMessage, currPlayer, false);
+    }
+
+    /**
      * Translates text using the selected translator.
      *
      * @param inMessage  - The original message to be translated.
      * @param currPlayer - The player who wants this message to be translated.
      * @return String - The translated message. If this is equal to inMessage, the translation failed.
      */
-    public String translateText(String inMessage, Player currPlayer) {
+    public String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit) {
         /* If translator settings are invalid, do not do this... */
         debugMsg("translateText() call using " + main.getTranslatorName());
         if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
@@ -455,9 +499,8 @@ public class CommonRefs {
         /* Main logic callback */
         Callable<String> result = () -> {
             // Init vars
-            boolean isExempt = false;
+            boolean isExempt = ignoreRateLimit;
             boolean isBlacklistExempt = false;
-            boolean hasPermission = false;
             int personalRateLimit = 0;
             String permissionCheck = "";
 
@@ -525,52 +568,9 @@ public class CommonRefs {
                         ChatColor.translateAlternateColorCodes('&', testCache));
             }
 
-            // Get permission from Bukkit API synchronously, since we do not want to risk
-            // concurrency problems
-            if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
-                try {
-                    permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> checkForRateLimitPermissions(currPlayer)).get(3, TimeUnit.SECONDS);
-                } catch (TimeoutException | InterruptedException e) {
-                    debugMsg("Timeout from permission checks should never happen, unless the server is stopping or /reloading. "
-                            + "If it isn't, and we can't fetch a user permission in less than ~3 seconds, we have a problem.");
-                    return inMessage;
-                }
-            } else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
-                // MockBukkit does not support callSyncMethod, not necessary on Folia
-                debugMsg("Checking permissions in translateText() WITHOUT callSyncMethod()...");
-                permissionCheck = checkForRateLimitPermissions(currPlayer);
-            }
-            debugMsg("rateLimit: " + permissionCheck);
-
-            // If exempt, set exempt to true; else, get the delay from the end of the
-            // permission string
-            if (permissionCheck.equalsIgnoreCase("worldwidechat.ratelimit.exempt")) {
-                isExempt = true;
-            } else {
-                String delayStr = CharMatcher.inRange('0', '9').retainFrom(permissionCheck);
-                if (!delayStr.isEmpty()) {
-                    personalRateLimit = Integer.parseInt(delayStr);
-                    hasPermission = true;
-                }
-            }
-
-            // Get user's personal rate limit, if permission is not set and they are an
-            // active translator.
-            if (!isExempt && !hasPermission && main.isActiveTranslator(currPlayer)) {
-                personalRateLimit = main
-                        .getActiveTranslator(currPlayer).getRateLimit();
-            }
-
-            // Personal Limits (Override Global)
-            if (!isExempt && personalRateLimit > 0) {
-                if (!checkForRateLimits(personalRateLimit, currActiveTranslator, currPlayer)) {
-                    return inMessage;
-                }
-                // Global Limits
-            } else if (!isExempt && main.getGlobalRateLimit() > 0) {
-                if (!checkForRateLimits(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
-                    return inMessage;
-                }
+            /* Check rate limit */
+            if (shouldRateLimit(ignoreRateLimit, currPlayer)) {
+                return inMessage;
             }
 
             /* Begin actual translation, set message to output */
@@ -1005,6 +1005,67 @@ public class CommonRefs {
         }
     }
 
+    private boolean shouldRateLimit(boolean skip, Player currPlayer) {
+        // Get permission from Bukkit API synchronously, since we do not want to risk
+        // concurrency problems
+        if (skip) return false;
+        boolean exempt = false;
+        int personalRateLimit = 0;
+        String permissionCheck = "";
+        ActiveTranslator currActiveTranslator = main.getActiveTranslator(currPlayer);
+
+        if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
+            try {
+                permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> checkForRateLimitPermissions(currPlayer)).get(3, TimeUnit.SECONDS);
+            } catch (TimeoutException | InterruptedException | ExecutionException e) {
+                debugMsg("Timeout from permission checks should never happen, unless the server is stopping or /reloading. "
+                        + "If it isn't, and we can't fetch a user permission in less than ~3 seconds, we have a problem.");
+                //return inMessage;
+                return true;
+            }
+        } else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") || main.getCurrPlatform().equals("Folia")) {
+            // MockBukkit does not support callSyncMethod, not necessary on Folia
+            debugMsg("Checking permissions in translateText() WITHOUT callSyncMethod()...");
+            permissionCheck = checkForRateLimitPermissions(currPlayer);
+        }
+        debugMsg("rateLimit: " + permissionCheck);
+
+        // If exempt, set exempt to true; else, get the delay from the end of the
+        // permission string
+        if (permissionCheck.equalsIgnoreCase("worldwidechat.ratelimit.exempt")) {
+            exempt = true;
+        } else {
+            String delayStr = CharMatcher.inRange('0', '9').retainFrom(permissionCheck);
+            if (!delayStr.isEmpty()) {
+                personalRateLimit = Integer.parseInt(delayStr);
+            }
+        }
+
+        // Get user's personal rate limit, if permission is not set and they are an
+        // active translator.
+        if (!exempt && personalRateLimit == 0 && main.isActiveTranslator(currPlayer)) {
+            personalRateLimit = main
+                    .getActiveTranslator(currPlayer).getRateLimit();
+        }
+
+        // Personal Limits (Override Global)
+        if (!exempt && personalRateLimit > 0) {
+            if (!isRateLimited(personalRateLimit, currActiveTranslator, currPlayer)) {
+                //return inMessage;
+                return true;
+            }
+            // Global Limits
+        } else if (!exempt && main.getGlobalRateLimit() > 0) {
+            if (!isRateLimited(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
+                //return inMessage;
+                return true;
+            }
+        }
+
+        // No rate limit
+        return false;
+    }
+
     /**
      * Ensures that an ActiveTranslator does not currently need to be rate limited.
      *
@@ -1013,7 +1074,7 @@ public class CommonRefs {
      * @param sender               - The sender of the original command
      * @return Boolean - Returns false if the user should currently be rate limited, and true otherwise.
      */
-    private boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
+    private boolean isRateLimited(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
         if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
             Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
             Instant currTime = Instant.now();
