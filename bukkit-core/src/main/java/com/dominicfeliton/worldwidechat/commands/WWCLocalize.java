@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -59,7 +60,7 @@ public class WWCLocalize extends BasicCommand {
             return false;
         }
 
-        if (!refs.isSupportedLang(locale, "local") && !locale.equalsIgnoreCase("stop")) {
+        if (!refs.isSupportedLang(locale, CommonRefs.LangType.LOCAL) && !locale.equalsIgnoreCase("stop")) {
             refs.sendMsg("wwclLangInvalid", new String[]{"&6" + locale, "&6" + refs.getFormattedLangCodes("local")}, sender);
             return false;
         }
@@ -74,9 +75,11 @@ public class WWCLocalize extends BasicCommand {
             // Changing our own localization
             if (!locale.equalsIgnoreCase("stop")) {
                 changeLangMsg(sender, inName, locale);
+                refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     stopLangMsg(sender);
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 } else {
                     alreadyStoppedMsg(sender);
                 }
@@ -86,10 +89,12 @@ public class WWCLocalize extends BasicCommand {
             if (!locale.equalsIgnoreCase("stop")) {
                 refs.sendMsg("wwclLangChangedOtherPlayerSender", new String[]{"&6" + inName, "&6" + locale}, sender);
                 changeLangMsg(inPlayer, inName, locale);
+                refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     refs.sendMsg("wwclLangStoppedOtherPlayerSender", "&6" + inName, sender);
                     stopLangMsg(inPlayer);
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 } else {
                     refs.sendMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6" + inName, sender);
                 }
@@ -97,7 +102,7 @@ public class WWCLocalize extends BasicCommand {
         }
 
         // Convert to lang code
-        locale = !locale.equalsIgnoreCase("stop") ? refs.getSupportedLang(locale, "local").getLangCode() : "";
+        locale = !locale.equalsIgnoreCase("stop") ? refs.getSupportedLang(locale, CommonRefs.LangType.LOCAL).getLangCode() : "";
 
         if (!locale.isEmpty() && configs.getPluginLangConfigs().get(locale) == null) {
             refs.debugMsg("Not found in our YamlConfigs...check localization init logs!");

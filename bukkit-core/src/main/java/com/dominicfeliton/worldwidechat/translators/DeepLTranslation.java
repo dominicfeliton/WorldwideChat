@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat.translators;
 import com.deepl.api.Language;
 import com.deepl.api.TextResult;
 import com.deepl.api.Translator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import org.apache.commons.lang3.StringUtils;
 
@@ -61,9 +62,9 @@ public class DeepLTranslation extends BasicTranslation {
              * instead of full names (English, Spanish) */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
 
             /* If inputLang set to None, set as null for translateText() */

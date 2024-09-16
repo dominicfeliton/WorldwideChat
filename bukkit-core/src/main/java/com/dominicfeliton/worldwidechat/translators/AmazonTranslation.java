@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat.translators;
 
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
@@ -63,9 +64,9 @@ public class AmazonTranslation extends BasicTranslation {
 
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
 
             TranslateTextRequest request = TranslateTextRequest.builder()

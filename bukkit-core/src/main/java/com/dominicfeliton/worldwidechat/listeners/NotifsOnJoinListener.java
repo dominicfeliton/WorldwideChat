@@ -44,31 +44,55 @@ public class NotifsOnJoinListener implements Listener {
                 && !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
                 && main.isActiveTranslator(currPlayer)) {
             ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
+            String out = currTranslator.getOutLangCode();
+            String in = currTranslator.getInLangCode();
+
+            String fOutLang = formatLangs(out, "out");
+            String fInLang = formatLangs(in, "in");
+
             if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-                refs.sendMsg("wwcOnJoinTranslationNotificationSourceLang", new String[]{"&6" + currTranslator.getInLangCode(), "&6" + currTranslator.getOutLangCode()}, "&d", currPlayer);
+                refs.sendMsg("wwcOnJoinTranslationNotificationSourceLang", new String[]{"&6" + fInLang, "&6" + fOutLang}, "&d", currPlayer);
             } else {
-                refs.sendMsg("wwcOnJoinTranslationNotificationNoSourceLang", "&6" + currTranslator.getOutLangCode(), "&d", currPlayer);
+                refs.sendMsg("wwcOnJoinTranslationNotificationNoSourceLang", "&6" + fOutLang, "&d", currPlayer);
             }
             /* Global translate is enabled, and user does not have a translation config */
         } else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
                 && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
                 && !main.isActiveTranslator(event.getPlayer())) {
             ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+            String out = currTranslator.getOutLangCode();
+            String in = currTranslator.getInLangCode();
+
+            String fOutLang = formatLangs(out, "out");
+            String fInLang = formatLangs(in, "in");
+
             if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-                refs.sendMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[]{"&6" + currTranslator.getInLangCode(), "&6" + currTranslator.getOutLangCode()}, "&d", currPlayer);
+                refs.sendMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[]{"&6" + fInLang, "&6" + fOutLang}, "&d", currPlayer);
             } else {
-                refs.sendMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", "&6" + currTranslator.getOutLangCode(), "&d", currPlayer);
+                refs.sendMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", "&6" + fOutLang, "&d", currPlayer);
             }
             /* Global translate is enabled, but user ALSO has a translation config */
         } else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
                 && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
                 && main.isActiveTranslator(event.getPlayer())) {
             ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
+
+            String out = currTranslator.getOutLangCode();
+            String in = currTranslator.getInLangCode();
+
+            String fOutLang = formatLangs(out, "out");
+            String fInLang = formatLangs(in, "in");
+
             if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-                refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[]{"&6" + currTranslator.getInLangCode(), "&6" + currTranslator.getOutLangCode()}, "&d", currPlayer);
+                refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[]{"&6" + fInLang, "&6" + fOutLang}, "&d", currPlayer);
             } else {
-                refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", "&6" + currTranslator.getOutLangCode(), "&d", currPlayer);
+                refs.sendMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", "&6" + fOutLang, "&d", currPlayer);
             }
         }
+    }
+
+    private String formatLangs(String code, String type) {
+        return refs.getSupportedLang(code, CommonRefs.LangType.fromString(type)).getNativeLangName().isEmpty() ?
+                refs.getSupportedLang(code, CommonRefs.LangType.fromString(type)).getLangCode() : refs.getSupportedLang(code, CommonRefs.LangType.fromString(type)).getNativeLangName();
     }
 }

@@ -8,7 +8,6 @@ public class SupportedLang implements Comparable<SupportedLang> {
     private String langName = "";
     private String nativeLangName = "";
 
-    // TODO: Fix redundant adding of SupportedLangs in each translator
     public SupportedLang(String langCode, String langName, String nativeLangName) {
         this.langCode = langCode;
         setLangName(langName);

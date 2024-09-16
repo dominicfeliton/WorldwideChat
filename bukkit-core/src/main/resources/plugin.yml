@@ -1,5 +1,5 @@
 name: WorldwideChat
-version: 1.19.0
+version: 1.19.1
 api-version: 1.13
 description: Break the blocky language barrier!
 author: Dominic Feliton
@@ -27,7 +27,7 @@ commands:
     permission-message: §4You do not have permission to run this command.
   wwcg:
     description: Enables chat translation to a certain language globally.
-    aliases: [ wwcglobal, gtranslate ]
+    aliases: [ wwcglobal, gtranslate, translateglobal ]
     usage: §4/wwcg (language-in) (language-out)
     permission: worldwidechat.wwcg
     permission-message: §4You do not have permission to run this command.

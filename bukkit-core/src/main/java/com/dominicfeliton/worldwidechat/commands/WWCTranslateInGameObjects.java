@@ -8,6 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.Sound;
 
 public class WWCTranslateInGameObjects extends BasicCommand {
 
@@ -101,9 +102,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                 if (currentTranslator.getTranslatingBook()) {
                     refs.sendMsg("wwctbOnSender", inPlayer);
                     refs.debugMsg("Book translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctbOffSender", inPlayer);
                     refs.debugMsg("Book translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
                 /* Toggle book translation for target! */
             } else {
@@ -111,10 +114,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                     refs.sendMsg("wwctbOnTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctbOnSender", inPlayer);
                     refs.debugMsg("Book translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctbOffTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctbOffSender", inPlayer);
                     refs.debugMsg("Book translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
             return true;
@@ -125,9 +130,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                 if (currentTranslator.getTranslatingSign()) {
                     refs.sendMsg("wwctsOnSender", inPlayer);
                     refs.debugMsg("Sign translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctsOffSender", inPlayer);
                     refs.debugMsg("Sign translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
                 /* Toggle sign translation for target! */
             } else {
@@ -135,10 +142,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                     refs.sendMsg("wwctsOnTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctsOnSender", inPlayer);
                     refs.debugMsg("Sign translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctsOffTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctsOffSender", inPlayer);
                     refs.debugMsg("Sign translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
             return true;
@@ -149,9 +158,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                 if (currentTranslator.getTranslatingItem()) {
                     refs.sendMsg("wwctiOnSender", inPlayer);
                     refs.debugMsg("Item translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctiOffSender", inPlayer);
                     refs.debugMsg("Item translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
                 /* Toggle item translation for target! */
             } else {
@@ -159,10 +170,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                     refs.sendMsg("wwctiOnTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctiOnSender", inPlayer);
                     refs.debugMsg("Item translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctiOffTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctiOffSender", inPlayer);
                     refs.debugMsg("Item translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
             return true;
@@ -173,9 +186,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                 if (currentTranslator.getTranslatingEntity()) {
                     refs.sendMsg("wwcteOnSender", inPlayer);
                     refs.debugMsg("Entity translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwcteOffSender", inPlayer);
                     refs.debugMsg("Entity translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
                 /* Toggle entity translation for target! */
             } else {
@@ -183,10 +198,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                     refs.sendMsg("wwcteOnTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwcteOnSender", inPlayer);
                     refs.debugMsg("Entity translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwcteOffTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwcteOffSender", inPlayer);
                     refs.debugMsg("Entity translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
             return true;
@@ -197,9 +214,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                 if (currentTranslator.getTranslatingChatOutgoing()) {
                     refs.sendMsg("wwctcoOnSender", inPlayer);
                     refs.debugMsg("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctcoOffSender", inPlayer);
                     refs.debugMsg("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
                 /* Toggle chat translation for target! */
             } else {
@@ -207,10 +226,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                     refs.sendMsg("wwctcoOnTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctcoOnSender", inPlayer);
                     refs.debugMsg("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctcoOffTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctcoOffSender", inPlayer);
                     refs.debugMsg("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
             return true;
@@ -221,9 +242,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                 if (currentTranslator.getTranslatingChatIncoming()) {
                     refs.sendMsg("wwctciOnSender", inPlayer);
                     refs.debugMsg("Incoming chat translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctciOffSender", inPlayer);
                     refs.debugMsg("Incoming chat translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
                 /* Toggle chat translation for target! */
             } else {
@@ -231,10 +254,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
                     refs.sendMsg("wwctciOnTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctciOnSender", inPlayer);
                     refs.debugMsg("Incoming chat translation enabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_ON, sender);
                 } else {
                     refs.sendMsg("wwctciOffTarget", "&6" + args[0], "&d", sender);
                     refs.sendMsg("wwctciOffSender", inPlayer);
                     refs.debugMsg("Incoming chat translation disabled for " + inPlayer.getName() + ".");
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
             return true;

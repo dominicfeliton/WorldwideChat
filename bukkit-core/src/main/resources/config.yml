@@ -17,6 +17,7 @@ General:
   fatalAsyncTaskTimeout: 10
   enableDebugMode: false
   syncUserLocalization: true
+  enableSounds: true
 Storage:
   useSQL: false
   sqlHostname: localhost

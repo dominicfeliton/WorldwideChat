@@ -40,7 +40,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "09092024-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "09152024-2"; // MMDDYYYY-revisionNumber
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -130,6 +130,8 @@ public class WorldwideChat extends JavaPlugin {
     private int errorLimit = 5;
 
     private String aiSystemPrompt = "";
+
+    private boolean enableSounds = true;
 
     /* Default constructor */
     public WorldwideChat() {
@@ -386,13 +388,13 @@ public class WorldwideChat extends JavaPlugin {
 
         /* Run tasks after translator loaded */
         // Load saved user data
-        new LoadUserData(tempTransName).run();
+        new LoadUserData(tempTransName);
 
         // Schedule automatic user data sync
         GenericRunnable sync = new GenericRunnable() {
             @Override
             protected void execute() {
-                new SyncUserData().run();
+                new SyncUserData();
             }
         };
 
@@ -415,7 +417,7 @@ public class WorldwideChat extends JavaPlugin {
         GenericRunnable update = new GenericRunnable() {
             @Override
             protected void execute() {
-                new UpdateChecker().run();
+                new UpdateChecker();
             }
         };
 
@@ -535,6 +537,7 @@ public class WorldwideChat extends JavaPlugin {
                                             .color(NamedTextColor.YELLOW))
                                     .build();
                             refs.sendMsg(inSender, wwcrStorageFail);
+                            refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                         } else {
                             final TextComponent wwcrStorageTranslatorFail = Component.text()
                                     .content(refs.getPlainMsg("wwcrStorageTranslatorFail", inSender))
@@ -544,6 +547,7 @@ public class WorldwideChat extends JavaPlugin {
                                             .color(NamedTextColor.YELLOW))
                                     .build();
                             refs.sendMsg(inSender, wwcrStorageTranslatorFail);
+                            refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                         }
                     } else if (translatorName.equals("Invalid")) {
                         final TextComponent wwcrTransFail = Component.text()
@@ -554,6 +558,7 @@ public class WorldwideChat extends JavaPlugin {
                                         .color(NamedTextColor.YELLOW))
                                 .build();
                         refs.sendMsg(inSender, wwcrTransFail);
+                        refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                     } else {
                         final TextComponent wwcrSuccess = Component.text()
                                 .content(refs.getPlainMsg("wwcrSuccess", inSender))
@@ -563,6 +568,7 @@ public class WorldwideChat extends JavaPlugin {
                                         .color(NamedTextColor.YELLOW))
                                 .build();
                         refs.sendMsg(inSender, wwcrSuccess);
+                        refs.playSound(CommonRefs.SoundType.RELOAD_SUCCESS, inSender);
                     }
                 }
             }
@@ -964,6 +970,10 @@ public class WorldwideChat extends JavaPlugin {
         aiSystemPrompt = i;
     }
 
+    public void setEnableSounds(boolean i) {
+        enableSounds = i;
+    }
+
     /* Getters */
     public Component getTranslateIcon() {
         return translateIcon == null ? Component.empty() : translateIcon;
@@ -1198,4 +1208,6 @@ public class WorldwideChat extends JavaPlugin {
     public Object[] getPlayerDataUsingGUI(Player p) {
         return playersUsingConfigGUI.get(p.getUniqueId().toString());
     }
+
+    public boolean isSoundEnabled() { return enableSounds; }
 }

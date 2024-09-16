@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.translators;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
 import io.github.ollama4j.OllamaAPI;
@@ -92,9 +93,9 @@ public class OllamaTranslation extends BasicTranslation {
              * instead of full names (English, Spanish) */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, CommonRefs.LangType.INPUT).getLangCode();
                 }
-                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, CommonRefs.LangType.OUTPUT).getLangCode();
             }
             // If we do not know the input lang, Ollama should guess.
 

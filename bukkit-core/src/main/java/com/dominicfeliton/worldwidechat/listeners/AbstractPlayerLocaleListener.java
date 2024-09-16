@@ -31,7 +31,7 @@ public abstract class AbstractPlayerLocaleListener implements Listener {
             return;
         }
 
-        if (!refs.isSupportedLang(code, "local")) {
+        if (!refs.isSupportedLang(code, CommonRefs.LangType.LOCAL)) {
             refs.debugMsg("This user's local is not something we support. Not setting.");
             return;
         }
@@ -42,7 +42,7 @@ public abstract class AbstractPlayerLocaleListener implements Listener {
         }
 
         // This is a supported lang
-        SupportedLang lang = refs.getSupportedLang(code, "local");
+        SupportedLang lang = refs.getSupportedLang(code, CommonRefs.LangType.LOCAL);
         record.setLocalizationCode(lang.getLangCode());
         refs.sendMsg("wwcOnJoinSetLocaleSuccess", new String[]{"&6" + lang.getNativeLangName(), "&6/translate"}, "&d", player);
     }

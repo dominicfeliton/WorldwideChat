@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 import java.util.concurrent.TimeUnit;
 
-public class SyncUserData implements Runnable {
+public class SyncUserData {
 
     private WorldwideChat main = WorldwideChat.instance;
 
@@ -16,14 +16,15 @@ public class SyncUserData implements Runnable {
     private Player player = null;
 
     public SyncUserData() {
+        sync();
     }
 
     public SyncUserData(Player player) {
         this.player = player;
+        sync();
     }
 
-    @Override
-    public void run() {
+    private void sync() {
         final long startTime = System.nanoTime();
         try {
             refs.debugMsg(refs.getPlainMsg("wwcSyncUserDataStart"));

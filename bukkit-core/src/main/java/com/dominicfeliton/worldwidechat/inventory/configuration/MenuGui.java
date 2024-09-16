@@ -136,6 +136,7 @@ public class MenuGui implements InventoryProvider {
         generalSet.add(new ToggleElement(1, 6, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats"));
         generalSet.add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode"));
         generalSet.add(new ToggleElement(2, 1, "wwcConfigGUILocalizeSyncButton", "wwcConfigConversationLocalizeSyncSuccess", "General.syncUserLocalization"));
+        generalSet.add(new ToggleElement(2, 2, "wwcConfigGUIEnableSoundsButton", "wwcConfigConversationEnableSoundsSuccess", "General.enableSounds"));
         generalSet.add(new CommonElement(3, 4, "Quit"));
         generalSet.add(new CommonElement(3, 6, "Next", new Object[]{CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
         generalSet.add(new CommonElement(3, 8, "Page Number", new String[]{pageNum++ + ""}));
@@ -566,7 +567,7 @@ public class MenuGui implements InventoryProvider {
     public void update(Player player, InventoryContents contents) {
     }
 
-    // TODO: Substitue ChatColor?
+    // TODO: Substitute ChatColor?
     private SmartInventory genSmartInv(String id, int x, int y, ChatColor col, String titleTag, String[] args) {
         CommonRefs refs = main.getServerFactory().getCommonRefs();
         return SmartInventory.builder().id(id)

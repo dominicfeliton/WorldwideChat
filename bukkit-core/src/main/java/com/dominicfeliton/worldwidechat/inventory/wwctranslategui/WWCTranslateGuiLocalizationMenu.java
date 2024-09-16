@@ -87,7 +87,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                             "&e&o",
                             inPlayer));
                 }
-                if (refs.isSameLang(currLang, main.getConfigManager().getMainConfig().getString("General.pluginLang"), "local")) {
+                if (refs.isSameLang(currLang, main.getConfigManager().getMainConfig().getString("General.pluginLang"), CommonRefs.LangType.LOCAL)) {
                     lore.add(refs.getPlainMsg("wwctGUILocalizationSameAsServer",
                             "",
                             "&e&o",
