@@ -157,6 +157,7 @@ public class CommonRefs {
         START_TRANSLATION("START_TRANSLATION", Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f),
         STOP_TRANSLATION("STOP_TRANSLATION", Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f);
 
+
         private final String name;
         private final Sound sound;
         private final Float float1;
