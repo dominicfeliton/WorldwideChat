@@ -40,7 +40,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "09152024-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "09152024-2"; // MMDDYYYY-revisionNumber
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -964,6 +964,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public void setAISystemPrompt(String i) {
         aiSystemPrompt = i;
+    }
+
+    public void setEnableSounds(boolean i) {
+        enableSounds = i;
     }
 
     /* Getters */

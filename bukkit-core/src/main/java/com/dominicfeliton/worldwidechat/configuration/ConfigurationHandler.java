@@ -301,6 +301,13 @@ public class ConfigurationHandler {
             main.setSyncUserLocal(true);
             main.getLogger().warning(refs.getPlainMsg("wwcConfigSyncUserLocalInvalid"));
         }
+        // Enable Sounds
+        try {
+            main.setEnableSounds(mainConfig.getBoolean("General.enableSounds"));
+        } catch (Exception e) {
+            main.setEnableSounds(true);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigEnableSoundsInvalid"));
+        }
         // Rate limit Settings
         try {
             if (mainConfig.getInt("Translator.rateLimit") >= 0) {

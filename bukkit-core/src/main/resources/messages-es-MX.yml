@@ -803,4 +803,9 @@ Messages:
   wwcBookFail: Su libro no se ha podido traducir.
   wwcSignNotTranslated: El signo de destino no se tradujo correctamente.
   wwcBookTranslateTitleFail: No se pudo traducir el título del libro.
+  wwcConfigEnableSoundsInvalid: No es válido habilitar sonidos de interfaz de usuario
+    configurados en config.yml. El valor predeterminado es true...
+  wwcConfigGUIEnableSoundsButton: Habilitar sonidos de interfaz de usuario
+  wwcConfigConversationEnableSoundsSuccess: Activar correctamente los sonidos activados
+    en las interfaces de usuario.
 
