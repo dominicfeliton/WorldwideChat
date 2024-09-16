@@ -155,8 +155,9 @@ public class CommonRefs {
         SUBMENU_TOGGLE_ON("SUBMENU_TOGGLE_ON", Sound.BLOCK_NOTE_BLOCK_HAT, 0.5f, 1.0f),
         SUBMENU_TOGGLE_OFF("SUBMENU_TOGGLE_OFF", Sound.BLOCK_NOTE_BLOCK_SNARE, 0.5f, 1.0f),
         START_TRANSLATION("START_TRANSLATION", Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f),
-        STOP_TRANSLATION("STOP_TRANSLATION", Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f);
-
+        STOP_TRANSLATION("STOP_TRANSLATION", Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f),
+        RELOAD_SUCCESS("RELOAD_SUCCESS", Sound.BLOCK_BEACON_ACTIVATE, 1.0f, 1.0f),
+        RELOAD_ERROR("RELOAD_ERROR", Sound.BLOCK_DISPENSER_FAIL, 1.0f, 1.0f);
 
         private final String name;
         private final Sound sound;
@@ -256,13 +257,20 @@ public class CommonRefs {
     }
 
     public void playSound(SoundType type, CommandSender sender) {
-        if (!main.isSoundEnabled() || !(sender instanceof Player)) {
+        if (!main.isSoundEnabled() || !(sender instanceof Player) || main.getTranslatorName().equalsIgnoreCase("JUnit/MockBukkit Testing Translator")) {
             debugMsg("No sound - not enabled or not a player!");
             return;
         }
 
-        Player player = (Player) sender;
-        player.playSound(player.getLocation(), type.sound, type.float1, type.float2);
+        GenericRunnable run = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                Player player = (Player) sender;
+                player.playSound(player.getLocation(), type.sound, type.float1, type.float2);
+            }
+        };
+
+        wwcHelper.runSync(run, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {(Player)sender});
     }
 
     /**

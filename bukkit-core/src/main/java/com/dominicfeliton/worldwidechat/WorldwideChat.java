@@ -537,6 +537,7 @@ public class WorldwideChat extends JavaPlugin {
                                             .color(NamedTextColor.YELLOW))
                                     .build();
                             refs.sendMsg(inSender, wwcrStorageFail);
+                            refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                         } else {
                             final TextComponent wwcrStorageTranslatorFail = Component.text()
                                     .content(refs.getPlainMsg("wwcrStorageTranslatorFail", inSender))
@@ -546,6 +547,7 @@ public class WorldwideChat extends JavaPlugin {
                                             .color(NamedTextColor.YELLOW))
                                     .build();
                             refs.sendMsg(inSender, wwcrStorageTranslatorFail);
+                            refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                         }
                     } else if (translatorName.equals("Invalid")) {
                         final TextComponent wwcrTransFail = Component.text()
@@ -556,6 +558,7 @@ public class WorldwideChat extends JavaPlugin {
                                         .color(NamedTextColor.YELLOW))
                                 .build();
                         refs.sendMsg(inSender, wwcrTransFail);
+                        refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                     } else {
                         final TextComponent wwcrSuccess = Component.text()
                                 .content(refs.getPlainMsg("wwcrSuccess", inSender))
@@ -565,6 +568,7 @@ public class WorldwideChat extends JavaPlugin {
                                         .color(NamedTextColor.YELLOW))
                                 .build();
                         refs.sendMsg(inSender, wwcrSuccess);
+                        refs.playSound(CommonRefs.SoundType.RELOAD_SUCCESS, inSender);
                     }
                 }
             }
