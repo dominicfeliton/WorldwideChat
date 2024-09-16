@@ -82,7 +82,6 @@ public class WWCLocalize extends BasicCommand {
                     refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 } else {
                     alreadyStoppedMsg(sender);
-                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
         } else {
@@ -98,7 +97,6 @@ public class WWCLocalize extends BasicCommand {
                     refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 } else {
                     refs.sendMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6" + inName, sender);
-                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 }
             }
         }
