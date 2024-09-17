@@ -24,6 +24,8 @@ public class WWCLocalize extends BasicCommand {
         super(sender, command, label, args);
     }
 
+    // TODO: Make GUI show native language name by default before lang code
+
     @Override
     public boolean processCommand() {
         // Simple command to set yours or a user's localization.

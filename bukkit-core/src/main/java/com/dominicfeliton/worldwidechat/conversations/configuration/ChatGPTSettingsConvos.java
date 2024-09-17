@@ -24,7 +24,7 @@ public class ChatGPTSettingsConvos {
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
             return refs.getPlainMsg("wwcConfigConversationChatGPTApiKeyInput",
-                    "&6REDACTED",
+                    "&cREDACTED",
                     "&b",
                     currPlayer);
         }

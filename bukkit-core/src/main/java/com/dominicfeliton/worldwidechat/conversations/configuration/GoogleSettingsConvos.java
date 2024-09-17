@@ -24,7 +24,7 @@ public class GoogleSettingsConvos {
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
             return refs.getPlainMsg("wwcConfigConversationGoogleTranslateAPIKeyInput",
-                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"),
+                    "&cREDACTED",
                     "&b",
                     currPlayer);
         }
