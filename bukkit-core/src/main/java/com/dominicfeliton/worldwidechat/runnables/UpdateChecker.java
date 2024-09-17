@@ -42,8 +42,7 @@ public class UpdateChecker {
     private void checkForUpdates() {
         refs.debugMsg("Starting UpdateChecker!!!");
 
-        //latestVersion = fetchLatestVersion();
-        latestVersion = "1.20.9";
+        latestVersion = fetchLatestVersion();
         compareVersions();
     }
 
