@@ -544,7 +544,17 @@ public class CommonRefs {
      */
     public String[] translateText(String[] arrayOfMsgs, Player currPlayer, boolean countAsOneRequest) {
         // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
-        if (countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
+        boolean inCache = false;
+        for (String msg : arrayOfMsgs) {
+            ActiveTranslator trans = main.getActiveTranslator(currPlayer);
+            if (main.hasCacheTerm(new CachedTranslation(trans.getInLangCode(), trans.getOutLangCode(), msg))) {
+                inCache = true;
+            } else {
+                inCache = false;
+                break;
+            }
+        }
+        if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
         String[] out = new String[arrayOfMsgs.length];
@@ -562,9 +572,20 @@ public class CommonRefs {
      * @param countAsOneRequest
      * @return
      */
+    // TODO: if phrases are in cache,
     public List<String> translateText(List<String> listOfMsgs, Player currPlayer, boolean countAsOneRequest) {
         // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
-        if (countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
+        boolean inCache = false;
+        for (String msg : listOfMsgs) {
+            ActiveTranslator trans = main.getActiveTranslator(currPlayer);
+            if (main.hasCacheTerm(new CachedTranslation(trans.getInLangCode(), trans.getOutLangCode(), msg))) {
+                inCache = true;
+            } else {
+                inCache = false;
+                break;
+            }
+        }
+        if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
         List<String> out = new ArrayList<>();
