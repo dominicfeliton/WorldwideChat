@@ -7,63 +7,86 @@ import org.apache.maven.artifact.versioning.ComparableVersion;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.logging.Logger;
 
 public class UpdateChecker {
 
+    // Indicates whether the plugin is up to date
     private boolean upToDate = false;
-    private String latest = "";
 
-    private WorldwideChat main = WorldwideChat.instance;
+    // Stores the latest version retrieved from the remote source
+    private String latestVersion = "";
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
-    private Logger log = main.getLogger();
+    // Reference to the main plugin instance
+    private final WorldwideChat main = WorldwideChat.instance;
 
+    // Common references utility
+    private final CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+    // Logger for logging messages
+    private final Logger log = main.getLogger();
+
+    // URL to fetch the latest version information
+    private static final String VERSION_URL = "https://raw.githubusercontent.com/dominicfeliton/WorldwideChat/master/latestVersion.txt";
+
+    /**
+     * Constructor initializes the UpdateChecker and starts the update check.
+     */
     public UpdateChecker() {
-        check();
+        checkForUpdates();
     }
 
-    private void check() {
+    private void checkForUpdates() {
         refs.debugMsg("Starting UpdateChecker!!!");
-        try (InputStream in = new URL(
-                "https://raw.githubusercontent.com/dominicfeliton/WorldwideChat/master/latestVersion.txt").openStream()) {
-            latest = IOUtils.readLines(in, StandardCharsets.UTF_8).get(1);
-        } catch (MalformedURLException e) {
-            latest = main.getPluginVersion() + ""; // Just set latest to the current plugin version, since we can't find
-            // a newer one
-            log.warning(refs.getPlainMsg("wwcUpdaterConnectionFailed"));
+
+        //latestVersion = fetchLatestVersion();
+        latestVersion = "1.20.9";
+        compareVersions();
+    }
+
+    private String fetchLatestVersion() {
+        try (InputStream in = new URL(VERSION_URL).openStream()) {
+            List<String> lines = IOUtils.readLines(in, StandardCharsets.UTF_8);
+
+            if (lines.size() > 1) {
+                return lines.get(1).trim();
+            } else if (!lines.isEmpty()) {
+                return lines.get(0).trim();
+            } else {
+                return main.getPluginVersion();
+            }
+
         } catch (IOException e) {
-            latest = main.getPluginVersion() + "";
-            log.warning(refs.getPlainMsg("wwcUpdaterParserFailed"));
+            return main.getPluginVersion();
         }
+    }
+
+    private void compareVersions() {
+        String currentVersion = main.getPluginVersion();
 
         try {
-            if (main.getPluginVersion().equals(latest)) {
-                log.info(refs.getPlainMsg("wwcUpdaterUpToDate",
-                        "",
-                        "&d"));
-            } else if (new ComparableVersion(main.getPluginVersion()).compareTo(new ComparableVersion(latest)) > 0) {
-                log.warning(refs.getPlainMsg("wwcUpdaterFutureDate",
-                        "&d" + latest,
-                        "&e"));
+            ComparableVersion current = new ComparableVersion(currentVersion);
+            ComparableVersion latest = new ComparableVersion(latestVersion);
+            refs.debugMsg("latest: "+ latestVersion);
+
+            int comparison = current.compareTo(latest);
+
+            if (comparison == 0) {
+                upToDate = true;
+                log.info(refs.getPlainMsg("wwcUpdaterUpToDate", "", "&d"));
+            } else if (comparison > 0) {
+                log.warning(refs.getPlainMsg("wwcUpdaterFutureDate", "", "&e"));
             } else {
-                log.warning(refs.getPlainMsg("wwcUpdaterOutOfDate", "&d" + latest, "&e"));
-                log.warning("https://github.com/dominicfeliton/WorldwideChat/releases");
+                log.warning(refs.getPlainMsg("wwcUpdaterOutOfDate", "&d" + latestVersion, "&e"));
+                log.warning("https://github.com/dominicfeliton/WorldwideChat/releases/tag/v" + latestVersion);
                 main.setOutOfDate(true);
             }
+
         } catch (Exception e) {
             log.warning(refs.getPlainMsg("wwcUpdaterFailedGeneric"));
         }
-    }
-
-    public boolean upToDate() {
-        return upToDate;
-    }
-
-    public String getLatestVersion() {
-        return latest;
     }
 }
