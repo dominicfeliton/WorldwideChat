@@ -157,7 +157,9 @@ public class CommonRefs {
         START_TRANSLATION("START_TRANSLATION", Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f),
         STOP_TRANSLATION("STOP_TRANSLATION", Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF, 1.0f, 1.0f),
         RELOAD_SUCCESS("RELOAD_SUCCESS", Sound.BLOCK_BEACON_ACTIVATE, 1.0f, 1.0f),
-        RELOAD_ERROR("RELOAD_ERROR", Sound.BLOCK_DISPENSER_FAIL, 1.0f, 1.0f);
+        RELOAD_ERROR("RELOAD_ERROR", Sound.BLOCK_DISPENSER_FAIL, 1.0f, 1.0f),
+        STATS_SUCCESS("STATS_SUCCESS", Sound.ITEM_BOOK_PAGE_TURN, 1.0f, 1.0f),
+        STATS_FAIL("STATS_FAIL", Sound.BLOCK_NOTE_BLOCK_BASS, 1.0f, 1.0f);
 
         private final String name;
         private final Sound sound;
@@ -224,6 +226,12 @@ public class CommonRefs {
         // Setup vars
         SupportedLang invalidLang = new SupportedLang("", "", "");
         SupportedLang outLang;
+
+        // Return None if none
+        if (langName.equalsIgnoreCase("None") || langName.equalsIgnoreCase("auto")) {
+            outLang = new SupportedLang("auto", "None", "None");
+            return outLang;
+        }
 
         // Check langType using enum
         switch (langType) {
@@ -545,15 +553,17 @@ public class CommonRefs {
     public String[] translateText(String[] arrayOfMsgs, Player currPlayer, boolean countAsOneRequest) {
         // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
         boolean inCache = false;
+        debugMsg(Arrays.toString(arrayOfMsgs));
         for (String msg : arrayOfMsgs) {
             ActiveTranslator trans = main.getActiveTranslator(currPlayer);
             if (main.hasCacheTerm(new CachedTranslation(trans.getInLangCode(), trans.getOutLangCode(), msg))) {
                 inCache = true;
-            } else {
+            } else if (!msg.isEmpty()) {
                 inCache = false;
                 break;
             }
         }
+        debugMsg(inCache + " <-- array in cache?");
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
@@ -580,7 +590,7 @@ public class CommonRefs {
             ActiveTranslator trans = main.getActiveTranslator(currPlayer);
             if (main.hasCacheTerm(new CachedTranslation(trans.getInLangCode(), trans.getOutLangCode(), msg))) {
                 inCache = true;
-            } else {
+            } else if (!msg.isEmpty()) {
                 inCache = false;
                 break;
             }
@@ -693,7 +703,7 @@ public class CommonRefs {
 
             /* Begin actual translation, set message to output */
             String out = inMessage;
-            debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+            debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
             out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
 
             /* Update stats */

@@ -122,18 +122,14 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 List<String> outLore = new ArrayList<>();
                 SupportedLang inLang = refs.getSupportedLang(targetTranslator.getInLangCode(), CommonRefs.LangType.INPUT);
                 SupportedLang outLang = refs.getSupportedLang(targetTranslator.getOutLangCode(), CommonRefs.LangType.OUTPUT);
-                if (!targetTranslator.getInLangCode().equalsIgnoreCase("auto")
-                    && !targetTranslator.getInLangCode().equalsIgnoreCase("None")) {
+                refs.debugMsg("Input lang for /wwct: " + inLang);
+                if (!inLang.getLangCode().equalsIgnoreCase("auto")
+                    && !inLang.getLangCode().equalsIgnoreCase("None")) {
                     String out = inLang.getNativeLangName().isEmpty() ?
                             inLang.getLangCode() :
                             inLang.getLangCode() + "/" + inLang.getNativeLangName();
                     outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationInput",
                             "&6&l" + out,
-                            "&d",
-                            inPlayer));
-                } else {
-                    outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationInput",
-                            "&6&lauto/None",
                             "&d",
                             inPlayer));
                 }

@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -69,12 +70,14 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
                 isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
                 ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
                 isActiveTranslatorMeta.setDisplayName(refs.getPlainMsg("wwcsIsActiveTranslator", refs.checkOrX(true), inPlayer));
+                SupportedLang inLang = refs.getSupportedLang(currTrans.getInLangCode(), CommonRefs.LangType.INPUT);
+                SupportedLang outLang = refs.getSupportedLang(currTrans.getOutLangCode(), CommonRefs.LangType.OUTPUT);
 
                 List<String> lore = new ArrayList<>();
                 lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransUUID", "&6" + currTrans.getUUID(), inPlayer));
                 lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransRateLimit", "&6" + currTrans.getRateLimit(), inPlayer));
-                lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransInLang", "&6" + currTrans.getInLangCode(), inPlayer));
-                lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransOutLang", "&6" + currTrans.getOutLangCode(), inPlayer));
+                lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransInLang", "&6" + inLang.toString(), inPlayer));
+                lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransOutLang", "&6" + outLang.toString(), inPlayer));
                 lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransOutgoing", refs.checkOrX(currTrans.getTranslatingChatOutgoing()), inPlayer));
                 lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransIncoming", refs.checkOrX(currTrans.getTranslatingChatIncoming()), inPlayer));
                 lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransBook", refs.checkOrX(currTrans.getTranslatingBook()), inPlayer));
@@ -112,7 +115,9 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             ItemStack local = XMaterial.BOOKSHELF.parseItem();
             ItemMeta localMeta = local.getItemMeta();
             localMeta.setDisplayName(refs.getPlainMsg("wwcsLocalization",
-                    "&b" + (currRecord.getLocalizationCode().isEmpty() ? refs.checkOrX(false) : currRecord.getLocalizationCode()),
+                    "&b" + (currRecord.getLocalizationCode().isEmpty()
+                            ? refs.checkOrX(false)
+                            : refs.getSupportedLang(currRecord.getLocalizationCode(), CommonRefs.LangType.LOCAL)),
                     inPlayer));
             local.setItemMeta(localMeta);
             contents.set(3, 4, ClickableItem.empty(local));

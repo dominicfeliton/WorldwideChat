@@ -3,10 +3,7 @@ package com.dominicfeliton.worldwidechat.commands;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.wwcstatsgui.WWCStatsGuiMainMenu;
-import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.dominicfeliton.worldwidechat.util.GenericRunnable;
-import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import com.dominicfeliton.worldwidechat.util.*;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -86,6 +83,7 @@ public class WWCStats extends BasicCommand {
                         if (!inPlayer.hasPlayedBefore()) {
                             // Target player not found
                             refs.sendMsg("wwcPlayerNotFound", "&6" + args[0], "&c", sender);
+                            refs.playSound(CommonRefs.SoundType.STATS_FAIL, sender);
                             return;
                         }
 
@@ -93,6 +91,7 @@ public class WWCStats extends BasicCommand {
                         // Check if PlayerRecord is valid
                         if (!main.isPlayerRecord(inPlayer.getUniqueId())) {
                             noRecordsMessage(inPlayer.getName());
+                            refs.playSound(CommonRefs.SoundType.STATS_FAIL, sender);
                             return;
                         }
                         // Is on record; continue
@@ -102,6 +101,7 @@ public class WWCStats extends BasicCommand {
                                 @Override
                                 protected void execute() {
                                     new WWCStatsGuiMainMenu(targetUUID, (Player) sender).getStatsMainMenu().open((Player) sender);
+                                    refs.playSound(CommonRefs.SoundType.STATS_SUCCESS, sender);
                                 }
                             };
 
@@ -119,7 +119,9 @@ public class WWCStats extends BasicCommand {
                                             .content("\n- " + refs.getPlainMsg("wwcsSuccessfulTranslations", record.getSuccessfulTranslations() + "", sender))
                                             .color(NamedTextColor.AQUA))
                                     .append(Component.text()
-                                            .content("\n- " + refs.getPlainMsg("wwcsLocalization", record.getLocalizationCode().isEmpty() ? refs.checkOrX(false) : record.getLocalizationCode(), sender))
+                                            .content("\n- " + refs.getPlainMsg("wwcsLocalization", record.getLocalizationCode().isEmpty()
+                                                    ? refs.checkOrX(false)
+                                                    : refs.getSupportedLang(record.getLocalizationCode(), CommonRefs.LangType.LOCAL).toString(), sender))
                                             .color(NamedTextColor.AQUA))
                                     .append(Component.text()
                                             .content("\n- " + refs.getPlainMsg("wwcsLastTranslationTime", record.getLastTranslationTime(), sender))
@@ -134,6 +136,8 @@ public class WWCStats extends BasicCommand {
                                 // Is currently an active translator
                                 // Therefore, append active translator stats
                                 ActiveTranslator currTrans = main.getActiveTranslator(inPlayer.getUniqueId());
+                                SupportedLang inLang = refs.getSupportedLang(currTrans.getInLangCode(), CommonRefs.LangType.INPUT);
+                                SupportedLang outLang = refs.getSupportedLang(currTrans.getOutLangCode(), CommonRefs.LangType.OUTPUT);
                                 isActiveTranslator = Component.text()
                                         .content("\n- " + refs.getPlainMsg("wwcsIsActiveTranslator", refs.checkOrX(true), sender))
                                         .color(NamedTextColor.AQUA)
@@ -144,10 +148,10 @@ public class WWCStats extends BasicCommand {
                                                 .content("\n  - " + refs.getPlainMsg("wwcsActiveTransRateLimit", ChatColor.GOLD + "" + currTrans.getRateLimit(), sender))
                                                 .color(NamedTextColor.LIGHT_PURPLE))
                                         .append(Component.text()
-                                                .content("\n  - " + refs.getPlainMsg("wwcsActiveTransInLang", ChatColor.GOLD + currTrans.getInLangCode(), sender))
+                                                .content("\n  - " + refs.getPlainMsg("wwcsActiveTransInLang", ChatColor.GOLD + inLang.toString(), sender))
                                                 .color(NamedTextColor.LIGHT_PURPLE))
                                         .append(Component.text()
-                                                .content("\n  - " + refs.getPlainMsg("wwcsActiveTransOutLang", ChatColor.GOLD + currTrans.getOutLangCode(), sender))
+                                                .content("\n  - " + refs.getPlainMsg("wwcsActiveTransOutLang", ChatColor.GOLD + outLang.toString(), sender))
                                                 .color(NamedTextColor.LIGHT_PURPLE))
                                         .append(Component.text()
                                                 .content("\n  - " + refs.getPlainMsg("wwcsActiveTransOutgoing", refs.checkOrX(currTrans.getTranslatingChatOutgoing()), sender))
