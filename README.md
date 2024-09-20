@@ -1,6 +1,6 @@
 # WorldwideChat
 
-![](https://github.com/dominicfeliton/WorldwideChat/blob/main/resources/Banner.png)
+![](https://github.com/dominicfeliton/WorldwideChat/blob/main/resources/wwc-clean.png)
 
 ## ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dominicfeliton/WorldwideChat/build-latest-worldwidechat-commit.yml?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/dominicfeliton/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
 
@@ -28,7 +28,9 @@ And much more to come!
 
 ## How to Setup
 
-Read the [Wiki](https://github.com/dominicfeliton/WorldwideChat/wiki). File an issue if you don't think something is
+This [youtube video](https://www.youtube.com/watch?v=vXl9KDFdPLQ&t=814s) should provide a good crash-course into the basics on how to use this plugin.
+
+If the video doesn't cover what you're looking for, please read the [Wiki](https://github.com/dominicfeliton/WorldwideChat/wiki). File an issue if you don't think something is
 working right!
 
 Additionally, if you want to test this plugin out before installing, you can!
