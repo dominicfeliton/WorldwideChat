@@ -90,7 +90,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
                     lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransColorWarning", refs.checkOrX(currTrans.getCCWarning()), inPlayer));
                     lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransSignWarning", refs.checkOrX(currTrans.getSignWarning()), inPlayer));
                     lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransSaved", refs.checkOrX(currTrans.getHasBeenSaved()), inPlayer));
-                    lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransPrevRate", ChatColor.GOLD + currTrans.getRateLimitPreviousTime(), inPlayer));
+                    lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getPlainMsg("wwcsActiveTransPrevRate", "&6" + currTrans.getRateLimitPreviousTime(), inPlayer));
                 }
                 isActiveTranslatorMeta.setLore(lore);
 

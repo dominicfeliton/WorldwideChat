@@ -36,6 +36,7 @@ import java.util.concurrent.*;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
+import static com.dominicfeliton.worldwidechat.util.CommonRefs.SoundType.WWC_VERSION;
 import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersions;
 
 public class WorldwideChat extends JavaPlugin {
@@ -228,6 +229,7 @@ public class WorldwideChat extends JavaPlugin {
                             .append((Component.text().content("Dominic Feliton")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
                             .append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
                     refs.sendMsg(sender, versionNotice);
+                    refs.playSound(WWC_VERSION, sender);
                     return true;
                 case "wwcr":
                     // Reload command

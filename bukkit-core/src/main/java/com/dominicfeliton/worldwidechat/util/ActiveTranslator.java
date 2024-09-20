@@ -12,7 +12,6 @@ public class ActiveTranslator {
     private String rateLimitPreviousTime = "None";
 
     private boolean hasBeenShownColorCodeWarning = false;
-
     private boolean hasBeenShownSignEditWarning = false;
     private boolean translatingChatOutgoing = true;
     private boolean translatingChatIncoming = false;
