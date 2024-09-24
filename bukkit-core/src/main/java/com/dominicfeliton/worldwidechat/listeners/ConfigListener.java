@@ -32,12 +32,19 @@ public class ConfigListener implements Listener {
         GenericRunnable out = new GenericRunnable() {
             @Override
             protected void execute() {
-                if (main.isPlayerUsingGUI(currPlayer)
-                        && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
-                        && !(currPlayer).isConversing()
-                        && !(main.getPlayerDataUsingGUI(currPlayer).length > 0)) {
-                    refs.sendMsg("wwcConfigGUIChangesNotSaved", "", "&e", currPlayer);
-                    main.removePlayerUsingConfigurationGUI(currPlayer);
+                try {
+                    if (main.isPlayerUsingGUI(currPlayer)
+                            && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
+                            && !(currPlayer).isConversing()
+                            && !(main.getPlayerDataUsingGUI(currPlayer).length > 0)) {
+                        refs.sendMsg("wwcConfigGUIChangesNotSaved", "", "&e", currPlayer);
+                        main.removePlayerUsingConfigurationGUI(currPlayer);
+                        refs.playSound(CommonRefs.SoundType.PENDING_RELOAD, currPlayer);
+                    }
+                } catch (IncompatibleClassChangeError | Exception ex) {
+                    // usually on lower MC versions, just disregard
+                    refs.debugMsg(ex.getMessage());
+                    refs.debugMsg("No config gui notif, exception above encountered...");
                 }
             }
         };

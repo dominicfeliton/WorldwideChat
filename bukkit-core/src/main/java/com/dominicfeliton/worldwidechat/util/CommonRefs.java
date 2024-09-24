@@ -165,7 +165,8 @@ public class CommonRefs {
                         XSound.matchXSound(Sound.ITEM_BOOK_PAGE_TURN).parseSound(),
                 1.0f, 1.0f),
         STATS_FAIL("STATS_FAIL", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_BASS).parseSound(), 1.0f, 1.0f),
-        WWC_VERSION("WWC_VERSION", XSound.matchXSound(Sound.ENTITY_PLAYER_LEVELUP).parseSound(), 1.0f, 1.0f);
+        WWC_VERSION("WWC_VERSION", XSound.matchXSound(Sound.ENTITY_PLAYER_LEVELUP).parseSound(), 1.0f, 1.0f),
+        PENDING_RELOAD("PENDING_RELOAD", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE).parseSound(), 1.0f, 1.0f);
 
         private final String name;
         private final Sound sound;
