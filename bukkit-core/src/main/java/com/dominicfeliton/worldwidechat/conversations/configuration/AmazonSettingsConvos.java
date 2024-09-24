@@ -25,7 +25,7 @@ public class AmazonSettingsConvos {
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
             return refs.getPlainMsg("wwcConfigConversationAmazonTranslateAccessKeyInput",
-                    "&6REDACTED",
+                    "&cREDACTED",
                     "&b",
                     currPlayer);
         }

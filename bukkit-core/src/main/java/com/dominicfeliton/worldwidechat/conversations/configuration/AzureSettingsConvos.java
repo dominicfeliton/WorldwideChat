@@ -25,7 +25,7 @@ public class AzureSettingsConvos {
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
             return refs.getPlainMsg("wwcConfigConversationAzureTranslateApiKeyInput",
-                    "&6" + main.getConfigManager().getMainConfig().getString("Translator.azureAPIKey"),
+                    "&cREDACTED",
                     "&b",
                     currPlayer);
         }

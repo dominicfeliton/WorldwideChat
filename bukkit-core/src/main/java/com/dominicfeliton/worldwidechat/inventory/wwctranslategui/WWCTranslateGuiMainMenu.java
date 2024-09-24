@@ -89,8 +89,13 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                             "",
                             "&a",
                             inPlayer));
+
+                    SupportedLang lang = refs.getSupportedLang(currRecord.getLocalizationCode(), CommonRefs.LangType.LOCAL);
+                    String out = lang.getNativeLangName().isEmpty() ?
+                            currRecord.getLocalizationCode() :
+                            currRecord.getLocalizationCode() + "/" + lang.getNativeLangName();
                     outLore.add(refs.getPlainMsg("wwctGUILocalizeExistingValue",
-                            "&d&l" + currRecord.getLocalizationCode(),
+                            "&6&l" + out,
                             "&d",
                             inPlayer));
                     invManager.addGlowEffect(localizationMeta);
@@ -117,19 +122,22 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 List<String> outLore = new ArrayList<>();
                 SupportedLang inLang = refs.getSupportedLang(targetTranslator.getInLangCode(), CommonRefs.LangType.INPUT);
                 SupportedLang outLang = refs.getSupportedLang(targetTranslator.getOutLangCode(), CommonRefs.LangType.OUTPUT);
-                if (!targetTranslator.getInLangCode().equalsIgnoreCase("None")) {
+                refs.debugMsg("Input lang for /wwct: " + inLang);
+                if (!inLang.getLangCode().equalsIgnoreCase("auto")
+                    && !inLang.getLangCode().equalsIgnoreCase("None")) {
+                    String out = inLang.getNativeLangName().isEmpty() ?
+                            inLang.getLangCode() :
+                            inLang.getLangCode() + "/" + inLang.getNativeLangName();
                     outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationInput",
-                            "&6&l" + inLang.getLangCode() + "/" + inLang.getNativeLangName(),
-                            "&d",
-                            inPlayer));
-                } else {
-                    outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationInput",
-                            "&6&lauto/None",
+                            "&6&l" + out,
                             "&d",
                             inPlayer));
                 }
+                String out = outLang.getNativeLangName().isEmpty() ?
+                        outLang.getLangCode() :
+                        outLang.getLangCode() + "/" + outLang.getNativeLangName();
                 outLore.add(refs.getPlainMsg("wwctGUIExistingTranslationOutput",
-                        "&6&l" + outLang.getLangCode() + "/" + outLang.getNativeLangName(),
+                        "&6&l" + out,
                         "&d",
                         inPlayer));
                 translationMeta.setLore(outLore);

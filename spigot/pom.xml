@@ -5,7 +5,7 @@
 
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat-spigot</artifactId>
-    <version>1.19.1</version>
+    <version>1.19.2</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -16,20 +16,20 @@
     <dependencies>
         <dependency>
             <groupId>com.github.seeseemelk</groupId>
-            <artifactId>MockBukkit-v1.21</artifactId>
-            <version>3.127.0</version>
+            <artifactId>MockBukkit-v1.20</artifactId>
+            <version>3.93.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.21.1-R0.1-SNAPSHOT</version>
+            <version>1.20.6-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.dominicfeliton.worldwidechat</groupId>
             <artifactId>WorldwideChat-bukkit-core</artifactId>
-            <version>1.19.1</version>
+            <version>1.19.2</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -82,7 +82,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.0</version>
                 <configuration>
-                    <skipTests>true</skipTests>
+                    <skipTests>false</skipTests>
                 </configuration>
             </plugin>
         </plugins>

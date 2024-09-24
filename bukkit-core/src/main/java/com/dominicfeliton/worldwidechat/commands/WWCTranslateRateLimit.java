@@ -88,6 +88,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
             /* If we are changing our own rate limit */
             if (newLimit > 0) {
                 /* Enable rate limit */
+                refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 currTranslator.setRateLimit(newLimit);
                 enableRateLimitMessage(inPlayer, newLimit);
             } else {
@@ -97,6 +98,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
                     refs.sendMsg("wwctrlRateLimitAlreadyOffSender", "", "&e", inPlayer);
                 } else {
                     /* Disable rate limit */
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                     currTranslator.setRateLimit(0);
                     disableRateLimitMessage(inPlayer);
                 }
@@ -106,6 +108,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
             /* If we are changing somebody else's rate limit */
             if (newLimit > 0) {
                 /* Enable rate limit */
+                refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                 currTranslator.setRateLimit(newLimit);
                 refs.sendMsg("wwctrlRateLimitSetTarget", new String[]{"&6" + inPlayer.getName(), "&6" + newLimit}, "&d", sender);
                 enableRateLimitMessage(inPlayer, newLimit);
@@ -116,6 +119,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
                     refs.sendMsg("wwctrlRateLimitAlreadyOffTarget", "&6" + inPlayer.getName(), "&e", sender);
                 } else {
                     /* Disable rate limit */
+                    refs.playSound(CommonRefs.SoundType.SUBMENU_TOGGLE_OFF, sender);
                     currTranslator.setRateLimit(0);
                     refs.sendMsg("wwctrlRateLimitOffTarget", "&6" + inPlayer.getName(), "&d", sender);
                     disableRateLimitMessage(inPlayer);

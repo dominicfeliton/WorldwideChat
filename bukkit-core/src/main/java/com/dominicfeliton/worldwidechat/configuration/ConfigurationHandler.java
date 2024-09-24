@@ -492,7 +492,7 @@ public class ConfigurationHandler {
             try {
                 SQLUtils sql = new SQLUtils(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"),
                         mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"),
-                        (List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
+                        mainConfig.getStringList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
                 sql.connect();
                 main.setSqlSession(sql);
                 main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
@@ -513,7 +513,7 @@ public class ConfigurationHandler {
             try {
                 MongoDBUtils mongo = new MongoDBUtils(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"),
                         mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"),
-                        mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
+                        mainConfig.getString("Storage.mongoPassword"), mainConfig.getStringList("Storage.mongoOptionalArgs"));
                 mongo.connect();
                 main.setMongoSession(mongo);
                 main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
@@ -534,7 +534,7 @@ public class ConfigurationHandler {
             try {
                 PostgresUtils postgres = new PostgresUtils(mainConfig.getString("Storage.postgresHostname"), mainConfig.getString("Storage.postgresPort"),
                         mainConfig.getString("Storage.postgresDatabaseName"), mainConfig.getString("Storage.postgresUsername"), mainConfig.getString("Storage.postgresPassword"),
-                        (List<String>) mainConfig.getList("Storage.postgresOptionalArgs"), mainConfig.getBoolean("Storage.postgresSSL"));
+                        mainConfig.getStringList("Storage.postgresOptionalArgs"), mainConfig.getBoolean("Storage.postgresSSL"));
                 postgres.connect();
                 main.setPostgresSession(postgres);
                 main.getLogger().info(refs.getPlainMsg("wwcConfigConnectionSuccess",
