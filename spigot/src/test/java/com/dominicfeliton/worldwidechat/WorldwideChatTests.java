@@ -1,14 +1,14 @@
 package com.dominicfeliton.worldwidechat;
 
-import be.seeseemelk.mockbukkit.MockBukkit;
-import be.seeseemelk.mockbukkit.ServerMock;
-import be.seeseemelk.mockbukkit.entity.PlayerMock;
 import com.dominicfeliton.worldwidechat.commands.TestCommands;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.util.TestTranslationUtils;
 import org.junit.jupiter.api.*;
+import org.mockbukkit.mockbukkit.MockBukkit;
+import org.mockbukkit.mockbukkit.ServerMock;
+import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
 import java.util.Random;
 

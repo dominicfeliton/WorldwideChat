@@ -1,8 +1,8 @@
 package com.dominicfeliton.worldwidechat.commands;
 
-import be.seeseemelk.mockbukkit.ServerMock;
-import be.seeseemelk.mockbukkit.entity.PlayerMock;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import org.mockbukkit.mockbukkit.ServerMock;
+import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
 public class TestCommands {
 
