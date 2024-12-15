@@ -22,6 +22,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.milkbowl.vault.chat.Chat;
 import org.apache.commons.lang3.tuple.Pair;
+import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -52,7 +53,7 @@ public class WorldwideChat extends JavaPlugin {
 
     private String currPlatform;
 
-    private String currMCVersion;
+    private ComparableVersion currMCVersion;
 
     private WorldwideChatHelper wwcHelper;
     private WWCInventoryManager inventoryManager;
@@ -354,7 +355,7 @@ public class WorldwideChat extends JavaPlugin {
 
         // Load methods
         currPlatform = type;
-        currMCVersion = outputVersion;
+        currMCVersion = new ComparableVersion(outputVersion);
         refs = serverFactory.getCommonRefs();
         wwcHelper = serverFactory.getWWCHelper();
 
@@ -1151,7 +1152,7 @@ public class WorldwideChat extends JavaPlugin {
         return currPlatform;
     }
 
-    public String getCurrMCVersion() {
+    public ComparableVersion getCurrMCVersion() {
         return currMCVersion;
     }
 

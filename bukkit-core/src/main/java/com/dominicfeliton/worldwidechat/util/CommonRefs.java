@@ -160,7 +160,7 @@ public class CommonRefs {
         RELOAD_SUCCESS("RELOAD_SUCCESS", XSound.matchXSound(Sound.BLOCK_BEACON_ACTIVATE).parseSound(), 1.0f, 1.0f),
         RELOAD_ERROR("RELOAD_ERROR", XSound.matchXSound(Sound.BLOCK_DISPENSER_FAIL).parseSound(), 1.0f, 1.0f),
         STATS_SUCCESS("STATS_SUCCESS",
-                main.getCurrMCVersion().contains("1.13") ?
+                main.getCurrMCVersion().toString().contains("1.13") ?
                         XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_PLING).parseSound() :
                         XSound.matchXSound(Sound.ITEM_BOOK_PAGE_TURN).parseSound(),
                 1.0f, 1.0f),
@@ -379,6 +379,10 @@ public class CommonRefs {
      * @param inMessage - The debug message that will be sent to the Console.
      */
     public void debugMsg(String inMessage) {
+        if (main.getConfigManager() == null) {
+            return;
+        }
+
         if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
             main.getLogger().warning("DEBUG: " + inMessage);
         }
@@ -667,7 +671,7 @@ public class CommonRefs {
                 return inMessage;
             }
 
-            /* Check blacklist */
+            // Check blacklist
             if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
                 try {
                     isBlacklistExempt = Bukkit.getScheduler().callSyncMethod(main, () -> currPlayer.hasPermission("worldwidechat.blacklist.exempt")).get(3, TimeUnit.SECONDS);
@@ -1143,11 +1147,13 @@ public class CommonRefs {
     private boolean shouldRateLimit(boolean skip, Player currPlayer) {
         // Get permission from Bukkit API synchronously, since we do not want to risk
         // concurrency problems
+
         if (skip) return false;
         boolean exempt = false;
         int personalRateLimit = 0;
         String permissionCheck = "";
         ActiveTranslator currActiveTranslator = main.getActiveTranslator(currPlayer);
+
 
         if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
             try {
