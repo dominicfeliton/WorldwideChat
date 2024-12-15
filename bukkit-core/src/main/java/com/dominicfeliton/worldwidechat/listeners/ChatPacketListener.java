@@ -38,6 +38,7 @@ public class ChatPacketListener {
             public void onPacketSending(PacketEvent event) {
                 if (event.isCancelled()) return;
 
+                refs.debugMsg("Not cancelled! (chat packets)");
                 Player player = event.getPlayer();
                 if (player == null) return;
                 if (!main.isActiveTranslator(player)) return;
@@ -64,11 +65,11 @@ public class ChatPacketListener {
                                 try {
                                     updatePacket(packet, translated);
                                     // Resend the modified packet
-                                    main.getProtocolManager().sendServerPacket(player, packet);
+                                    main.getProtocolManager().sendServerPacket(player, packet, false);
                                 } catch (Exception e) {
                                     main.getLogger().warning("Error sending translated packet: " + e.getMessage());
                                     // If translation fails, send the original packet
-                                    main.getProtocolManager().sendServerPacket(player, event.getPacket());
+                                    main.getProtocolManager().sendServerPacket(player, event.getPacket(), false);
                                 }
                             }
                         };
