@@ -1,13 +1,12 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.listeners.ConfigListener;
-import com.dominicfeliton.worldwidechat.listeners.NotifsOnJoinListener;
-import com.dominicfeliton.worldwidechat.listeners.SignListener;
-import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
+import com.comphenix.protocol.ProtocolLibrary;
+import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;
+import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
@@ -66,12 +65,16 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         }
     }
 
+    // TODO: Generalize this between spigot/paper
     @Override
     public void registerEventHandlers() {
         // Unregister all previously registered listeners for this plugin
         while (!listenerQueue.isEmpty()) {
             Listener listener = listenerQueue.poll();
             HandlerList.unregisterAll(listener);
+        }
+        if (main.getProtocolManager() != null) {
+            main.getProtocolManager().removePacketListeners(main);
         }
 
         // EventHandlers + check for plugins
@@ -88,7 +91,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         );
         listenerQueue.add(chat);
 
-        if (adapter.getServerInfo().getValue().contains("1.2")) {
+        if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.20")) >= 0) {
             SignListener sign = new SignListener();
             pluginManager.registerEvents(new SignListener(), main);
             listenerQueue.add(sign);
@@ -109,6 +112,16 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         ConfigListener inv = new ConfigListener();
         pluginManager.registerEvents(inv, main);
         listenerQueue.add(inv);
+
+        // ProtocolLib Setup
+        if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.19")) >= 0 &&
+                main.getServer().getPluginManager().getPlugin("ProtocolLib") != null) {
+            main.getLogger().info("DEBUG: PROTOCOL ENABLED!");
+            main.setProtocolManager(ProtocolLibrary.getProtocolManager());
+
+            // Register listeners
+            new ChatPacketListener();
+        }
 
         main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
                 "",

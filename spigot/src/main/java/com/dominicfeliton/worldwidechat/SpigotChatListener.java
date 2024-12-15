@@ -133,7 +133,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
     }
 
     private void sendChatMessage(Player eaRecipient, Component outMessage) {
-        if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
+        if (main.getCurrPlatform().equalsIgnoreCase("Paper")) {
             // If we are on Paper but using Spigot, we assume that Adventure is not installed.
             // Note that this does not support hover text.
             if (eaRecipient != null) {

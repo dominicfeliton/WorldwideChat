@@ -1,8 +1,11 @@
 package com.dominicfeliton.worldwidechat;
 
+import com.comphenix.protocol.ProtocolLibrary;
+import com.comphenix.protocol.ProtocolManager;
 import com.dominicfeliton.worldwidechat.commands.*;
 import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.listeners.ChatPacketListener;
 import com.dominicfeliton.worldwidechat.listeners.WWCTabCompleter;
 import com.dominicfeliton.worldwidechat.runnables.LoadUserData;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
@@ -30,6 +33,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.checkerframework.checker.units.qual.C;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
@@ -93,6 +97,8 @@ public class WorldwideChat extends JavaPlugin {
     private boolean outOfDate = false;
 
     private Chat chat;
+
+    private ProtocolManager protocolManager;
 
     private volatile String translatorName = "Starting";
 
@@ -977,6 +983,8 @@ public class WorldwideChat extends JavaPlugin {
         enableSounds = i;
     }
 
+    public void setProtocolManager(ProtocolManager i) { protocolManager = i; }
+
     /* Getters */
     public Component getTranslateIcon() {
         return translateIcon == null ? Component.empty() : translateIcon;
@@ -1213,4 +1221,6 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public boolean isSoundEnabled() { return enableSounds; }
+
+    public ProtocolManager getProtocolManager() { return protocolManager; }
 }

@@ -152,6 +152,10 @@
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
     </repository>
+    <repository>
+      <id>protocolLib-repo</id>
+      <url>https://repo.dmulloy2.net/repository/public/</url>
+    </repository>
   </repositories>
 
   <build>

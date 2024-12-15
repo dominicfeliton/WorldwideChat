@@ -10,7 +10,6 @@
 
   <artifactId>WorldwideChat-folia</artifactId>
   <version>${project.parent.version}</version>
-  <packaging>jar</packaging>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -41,6 +40,12 @@
       <groupId>com.github.placeholderapi</groupId>
       <artifactId>placeholderapi</artifactId>
       <version>2.11.6</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.comphenix.protocol</groupId>
+      <artifactId>ProtocolLib</artifactId>
+      <version>5.3.0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
