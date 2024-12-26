@@ -10,7 +10,11 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class CitizensListener implements Listener {
 
@@ -18,59 +22,66 @@ public class CitizensListener implements Listener {
     protected CommonRefs refs = main.getServerFactory().getCommonRefs();
     protected WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void onSpeech(SpeechEvent event) {
-        // This event is on the main thread
+        String originalMessage = event.getMessage();
+        Set<Player> targets = new HashSet<>();
 
-        // Who is the target/bystander? If not a Player, we can't translate for them.
-        Talkable npc = event.getContext().getTalker();
-
+        // First pass: identify players who need translation
         for (Talkable target : event.getContext()) {
-            // Check each recipient
             if (target == null || !(target.getEntity() instanceof Player)) {
                 refs.debugMsg("Not a player");
                 continue;
             }
-            Player player = (Player) target.getEntity();
 
-            // We are a translator and translating entities
-            refs.debugMsg("Player " + player.getName() + " entities: " + main.getActiveTranslator(player).getTranslatingEntity());
-            if (!main.isActiveTranslator(player) || !main.getActiveTranslator(player).getTranslatingEntity()) {
-                refs.debugMsg("Player does not have citizens translation enabled");
-                continue;
+            Player player = (Player) target.getEntity();
+            refs.debugMsg("Player " + player.getName() + " entities: " +
+                    (main.isActiveTranslator(player) ? main.getActiveTranslator(player).getTranslatingEntity() : "not translator"));
+
+            if (main.isActiveTranslator(player) && main.getActiveTranslator(player).getTranslatingEntity()) {
+                refs.debugMsg("Adding player to translation list: " + player.getName());
+                targets.add(player);
+            }
+        }
+
+        // If we have players to translate for, cancel the original event
+        if (!targets.isEmpty()) {
+            final String msgWithName = originalMessage.replace("<npc>", event.getContext().getTalker().getName());
+            event.setCancelled(true);
+
+            // Send custom messages to players who need translation
+            for (Player player : targets) {
+                GenericRunnable chat = new GenericRunnable() {
+                    @Override
+                    protected void execute() {
+                        String translated = refs.translateText(msgWithName, player);
+
+                        player.sendMessage(formatMessage(translated, msgWithName));
+                    }
+                };
+                wwcHelper.runAsync(chat, WorldwideChatHelper.SchedulerType.ASYNC);
             }
 
-            // Process translation for this recipient
-            refs.debugMsg("Attempting to translate player " + player.getName());
-            String npcName = npc.getName();
-            String originalMessage = event.getMessage();
-
-            GenericRunnable chat = new GenericRunnable() {
-                @Override
-                protected void execute() {
-                    String translated = refs.translateText(originalMessage, player);
-                    refs.sendMsg(player, formatMessage(npcName, player, translated, originalMessage));
+            // Send original message to players who don't need translation
+            for (Talkable target : event.getContext()) {
+                if (target != null && target.getEntity() instanceof Player) {
+                    Player player = (Player) target.getEntity();
+                    if (!targets.contains(player)) {
+                        player.sendMessage(msgWithName);
+                    }
                 }
-            };
-            wwcHelper.runAsync(chat, WorldwideChatHelper.SchedulerType.ASYNC);
+            }
         }
-
-        // Cancel the original event after processing all recipients
-        event.setCancelled(true);
     }
 
-    private Component formatMessage(String npcName, Player targetPlayer, String translation, String original) {
-        // Vault Support (if it exists)
-        Component outMsg = refs.getVaultMessage(targetPlayer, refs.deserial(translation), refs.deserial(npcName));
+    private String formatMessage(String translation, String original) {
+        Component outMsg = refs.deserial(translation);
 
-        // Add hover text w/original message
         if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
             refs.debugMsg("Add hover!");
-            outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(refs.getVaultHoverMessage(targetPlayer, refs.deserial(original), refs.deserial(npcName), null)));
+            outMsg = outMsg.hoverEvent(HoverEvent.showText(refs.deserial(original)));
         }
 
-        return outMsg;
+        return refs.serial(outMsg);
     }
-
 }
