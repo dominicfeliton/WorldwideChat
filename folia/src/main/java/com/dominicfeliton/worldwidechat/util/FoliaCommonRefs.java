@@ -7,15 +7,27 @@ import org.bukkit.command.CommandSender;
 public class FoliaCommonRefs extends CommonRefs {
 
     @Override
-    public void sendMsg(CommandSender sender, Component originalMessage) {
+    public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         try {
-            final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
-                    .append(Component.space())
-                    .append(originalMessage.asComponent())
-                    .build();
+            final TextComponent outMessage;
+
+            if (addPrefix) {
+                outMessage = Component.text().append(main.getPluginPrefix().asComponent())
+                        .append(Component.space())
+                        .append(originalMessage.asComponent())
+                        .build();
+            } else {
+                outMessage = Component.text().append(originalMessage.asComponent())
+                        .build();
+            }
             sender.sendMessage(outMessage);
         } catch (IllegalStateException e) {
         }
+    }
+
+    @Override
+    public void sendMsg(CommandSender sender, Component originalMessage) {
+        sendMsg(sender, originalMessage, true);
     }
 
     /**

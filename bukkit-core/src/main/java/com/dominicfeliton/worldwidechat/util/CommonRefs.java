@@ -508,24 +508,24 @@ public class CommonRefs {
     }
 
     public void sendMsg(String messageName, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, new String[]{}, "&r&d", sender));
+        sendMsg(sender, getCompMsg(messageName, new String[]{}, "&r&d", sender), true);
     }
 
     public void sendMsg(String messageName, String[] replacements, CommandSender sender) {
         // Default WWC color is usually LIGHT_PURPLE (&d)
-        sendMsg(sender, getCompMsg(messageName, replacements, "&r&d", sender));
+        sendMsg(sender, getCompMsg(messageName, replacements, "&r&d", sender), true);
     }
 
     public void sendMsg(String messageName, String replacement, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r&d", sender));
+        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r&d", sender), true);
     }
 
     public void sendMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r" + resetCode, sender));
+        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r" + resetCode, sender), true);
     }
 
     public void sendMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, replacements, "&r" + resetCode, sender));
+        sendMsg(sender, getCompMsg(messageName, replacements, "&r" + resetCode, sender), true);
     }
 
     /**
@@ -533,15 +533,21 @@ public class CommonRefs {
      *
      * @param sender          - The target sender. Can be any entity that can receive messages. CANNOT BE NULL.
      * @param originalMessage - The unformatted Component that should be sent to sender.
+     * @param addPrefix       - Whether the plugin prefix should be appended or not.
      * @return
      */
-    public void sendMsg(CommandSender sender, Component originalMessage) {
+    public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         try {
             Audience adventureSender = main.adventure().sender(sender);
-            final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
-                    .append(Component.space())
-                    .append(originalMessage.asComponent())
-                    .build();
+            final TextComponent outMessage;
+            if (addPrefix) {
+                outMessage = Component.text().append(main.getPluginPrefix().asComponent())
+                        .append(Component.space())
+                        .append(originalMessage.asComponent())
+                        .build();
+            } else {
+                outMessage = Component.text().append(originalMessage.asComponent()).build();
+            }
             if (sender instanceof ConsoleCommandSender) {
                 main.getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
             } else {
@@ -551,8 +557,10 @@ public class CommonRefs {
         }
     }
 
+    public void sendMsg(CommandSender sender, Component originalMessage) { sendMsg(sender, originalMessage, true); }
+
     public void sendMsg(CommandSender sender, String stringMsg) {
-        sendMsg(sender, deserial(stringMsg));
+        sendMsg(sender, deserial(stringMsg), true);
     }
 
     /**

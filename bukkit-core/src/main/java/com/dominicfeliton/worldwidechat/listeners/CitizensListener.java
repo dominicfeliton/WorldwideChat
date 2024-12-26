@@ -56,7 +56,7 @@ public class CitizensListener implements Listener {
                     protected void execute() {
                         String translated = refs.translateText(msgWithName, player);
 
-                        player.sendMessage(formatMessage(translated, msgWithName));
+                        refs.sendMsg(player, refs.deserial(formatMessage(translated, msgWithName)), false);
                     }
                 };
                 wwcHelper.runAsync(chat, WorldwideChatHelper.SchedulerType.ASYNC);
@@ -67,7 +67,7 @@ public class CitizensListener implements Listener {
                 if (target != null && target.getEntity() instanceof Player) {
                     Player player = (Player) target.getEntity();
                     if (!targets.contains(player)) {
-                        player.sendMessage(msgWithName);
+                        refs.sendMsg(player, refs.deserial(msgWithName), false);
                     }
                 }
             }
