@@ -23,35 +23,40 @@ public class CitizensListener implements Listener {
         // This event is on the main thread
 
         // Who is the target/bystander? If not a Player, we can't translate for them.
-        Talkable target = event.getContext().getTalker();
-        if (target == null || !(target.getEntity() instanceof Player)) {
-            refs.debugMsg("Not a player");
-            return;
-        }
-        Player player = (Player) target.getEntity();
+        Talkable npc = event.getContext().getTalker();
 
-        // We are a translator and translating entities
-        if (!main.isActiveTranslator(player) || !main.getActiveTranslator(player).getTranslatingEntity()) {
-            refs.debugMsg("Player does not have citizens translation enabled");
-            return;
-        }
-
-        // Cancel event + gather info
-        refs.debugMsg("Attempting to translate citizen");
-        event.setCancelled(true);
-        String npcName = event.getContext().getTalker().getName();
-        String originalMessage = event.getMessage();
-
-        GenericRunnable chat = new GenericRunnable() {
-            @Override
-            protected void execute() {
-                // Translate for this specific player
-                String translated = refs.translateText(originalMessage, player);
-
-                refs.sendMsg(player, formatMessage(npcName, player, translated, originalMessage));
+        for (Talkable target : event.getContext()) {
+            // Check each recipient
+            if (target == null || !(target.getEntity() instanceof Player)) {
+                refs.debugMsg("Not a player");
+                continue;
             }
-        };
-        wwcHelper.runAsync(chat, WorldwideChatHelper.SchedulerType.ASYNC);
+            Player player = (Player) target.getEntity();
+
+            // We are a translator and translating entities
+            refs.debugMsg("Player " + player.getName() + " entities: " + main.getActiveTranslator(player).getTranslatingEntity());
+            if (!main.isActiveTranslator(player) || !main.getActiveTranslator(player).getTranslatingEntity()) {
+                refs.debugMsg("Player does not have citizens translation enabled");
+                continue;
+            }
+
+            // Process translation for this recipient
+            refs.debugMsg("Attempting to translate player " + player.getName());
+            String npcName = npc.getName();
+            String originalMessage = event.getMessage();
+
+            GenericRunnable chat = new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    String translated = refs.translateText(originalMessage, player);
+                    refs.sendMsg(player, formatMessage(npcName, player, translated, originalMessage));
+                }
+            };
+            wwcHelper.runAsync(chat, WorldwideChatHelper.SchedulerType.ASYNC);
+        }
+
+        // Cancel the original event after processing all recipients
+        event.setCancelled(true);
     }
 
     private Component formatMessage(String npcName, Player targetPlayer, String translation, String original) {
