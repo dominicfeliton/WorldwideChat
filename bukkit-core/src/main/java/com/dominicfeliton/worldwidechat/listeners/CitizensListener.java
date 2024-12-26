@@ -67,7 +67,7 @@ public class CitizensListener implements Listener {
         if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
             refs.debugMsg("Add hover!");
             outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(refs.getVaultHoverMessage(null, refs.deserial(original), refs.deserial(npcName), targetPlayer)));
+                    .hoverEvent(HoverEvent.showText(refs.getVaultHoverMessage(targetPlayer, refs.deserial(original), refs.deserial(npcName), null)));
         }
 
         return outMsg;
