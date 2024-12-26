@@ -563,6 +563,10 @@ public class CommonRefs {
         sendMsg(sender, deserial(stringMsg), true);
     }
 
+    public void sendMsg(CommandSender sender, String stringMsg, boolean addPrefix) {
+        sendMsg(sender, deserial(stringMsg), addPrefix);
+    }
+
     /**
      * Shorthand for component to str
      *

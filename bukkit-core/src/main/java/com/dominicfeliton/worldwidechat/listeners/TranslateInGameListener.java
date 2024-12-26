@@ -144,11 +144,11 @@ public class TranslateInGameListener implements Listener {
                                     int middleIndex = dashes.length() / 2;
                                     for (String eachPage : translatedPages) {
                                         String result = dashes.substring(0, middleIndex) + " &2&l(&a&l" + page + "&2&l)&r&6 " + dashes.substring(middleIndex);
-                                        refs.sendMsg(currPlayer, "&6" + result);
-                                        refs.sendMsg(currPlayer, eachPage);
+                                        refs.sendMsg(currPlayer, "&6" + result, false);
+                                        refs.sendMsg(currPlayer, eachPage, false);
                                         page++;
                                     }
-                                    refs.sendMsg(currPlayer, "&6" + dashes + "----");
+                                    refs.sendMsg(currPlayer, "&6" + dashes + "----", false);
                                 }
                             }
                         };

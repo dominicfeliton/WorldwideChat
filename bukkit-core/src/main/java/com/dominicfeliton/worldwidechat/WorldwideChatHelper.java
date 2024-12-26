@@ -1,9 +1,6 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.listeners.CitizensListener;
-import com.dominicfeliton.worldwidechat.listeners.ConfigListener;
-import com.dominicfeliton.worldwidechat.listeners.NotifsOnJoinListener;
-import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
+import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.CommonTask;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
@@ -47,6 +44,16 @@ public abstract class WorldwideChatHelper {
             bukkitListenerQueue.add(citizens);
 
             main.getLogger().info(refs.getPlainMsg("wwcCitizensDetected",
+                    "",
+                    "&d"));
+        }
+
+        if (pluginManager.getPlugin("DecentHolograms") != null) {
+            HologramListener hologram = new HologramListener();
+            pluginManager.registerEvents(hologram, main);
+            bukkitListenerQueue.add(hologram);
+
+            main.getLogger().info(refs.getPlainMsg("wwcDecentHologramsDetected",
                     "",
                     "&d"));
         }
