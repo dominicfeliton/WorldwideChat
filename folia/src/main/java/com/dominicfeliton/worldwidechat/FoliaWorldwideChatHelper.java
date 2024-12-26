@@ -14,19 +14,6 @@ import java.util.function.Consumer;
 
 public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
 
-    WorldwideChat main;
-
-    CommonRefs refs;
-
-    ServerAdapterFactory adapter;
-
-    public FoliaWorldwideChatHelper() {
-        super();
-        this.main = WorldwideChat.instance;
-        this.refs = main.getServerFactory().getCommonRefs();
-        this.adapter = main.getServerFactory();
-    }
-
     // SCHEDULER (NEW)
     @Override
     public void cleanupTasks() {

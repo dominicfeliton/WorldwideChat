@@ -15,10 +15,6 @@ import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType
 
 public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
-    private WorldwideChatHelper helper = main.getServerFactory().getWWCHelper();
-
     @EventHandler(priority = EventPriority.LOWEST)
     public void detectLocalLang(PlayerJoinEvent e) {
         if (!main.getSyncUserLocal()) {

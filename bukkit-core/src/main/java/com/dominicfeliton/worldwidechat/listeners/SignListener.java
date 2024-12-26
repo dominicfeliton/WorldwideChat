@@ -11,8 +11,8 @@ import org.bukkit.event.player.PlayerSignOpenEvent;
 
 public class SignListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected WorldwideChat main = WorldwideChat.instance;
+    protected CommonRefs refs = main.getServerFactory().getCommonRefs();
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onSignEdit(PlayerSignOpenEvent event) {

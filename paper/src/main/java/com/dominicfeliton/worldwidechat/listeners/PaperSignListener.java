@@ -11,8 +11,8 @@ import org.bukkit.event.Listener;
 
 public class PaperSignListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected WorldwideChat main = WorldwideChat.instance;
+    protected CommonRefs refs = main.getServerFactory().getCommonRefs();
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onSignEdit(PlayerOpenSignEvent event) {

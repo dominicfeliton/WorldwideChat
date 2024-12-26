@@ -35,10 +35,10 @@ import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType
 
 public class TranslateInGameListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
+    protected WorldwideChat main = WorldwideChat.instance;
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
-    private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    protected CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
     /* Custom Entity Name Translation */
     @EventHandler(priority = EventPriority.HIGHEST)

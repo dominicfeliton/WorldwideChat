@@ -5,7 +5,7 @@ description: Break the blocky language barrier!
 author: Dominic Feliton
 main: com.dominicfeliton.worldwidechat.WorldwideChat
 folia-supported: false
-softdepend: [ Vault, PlaceholderAPI, ProtocolLib ]
+softdepend: [ Vault, PlaceholderAPI, Citizens ]
 commands:
   wwc:
     description: Prints WorldwideChat version.
@@ -73,12 +73,6 @@ commands:
     usage: §4/wwctci (playerName)
     permission: worldwidechat.wwctci
     permission-message: §4You do not have permission to run this command.
-  wwctcs:
-    description: Enables server chat translation to a certain language.
-    aliases: [ wwctranslatechatserver, translatechatserver ]
-    usage: §4/wwctcs (playerName)
-    permission: worldwidechat.wwctcs
-    permission-message: §4You do not have permission to run this command.
   wwcs:
     description: Gets translation stats for a specified user.
     aliases: [ wwctranslatestats, translatestats ]
@@ -126,8 +120,6 @@ permissions:
       worldwidechat.wwctco.otherplayers: true
       worldwidechat.wwctci: true
       worldwidechat.wwctci.otherplayers: true
-      worldwidechat.wwctcs: true
-      worldwidechat.wwctcs.otherplayers: true
       worldwidechat.wwcs: true
       worldwidechat.wwcc: true
       worldwidechat.wwctrl: true
@@ -190,9 +182,6 @@ permissions:
     default: true
   worldwidechat.wwctci.otherplayers:
     description: Gives access to /wwctci on target players.
-    default: op
-  worldwidechat.wwctcs.otherplayers:
-    description: Gives access to /wwctcs on target players.
     default: op
   worldwidechat.wwctcs:
     description: Gives access to /wwctcs.

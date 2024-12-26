@@ -16,6 +16,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.TextReplacementConfig;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
+import net.milkbowl.vault.chat.Chat;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.text.StringEscapeUtils;
@@ -53,9 +54,9 @@ import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType
 public class CommonRefs {
 
     /* Important vars */
-    private static WorldwideChat main = WorldwideChat.instance;
+    protected static WorldwideChat main = WorldwideChat.instance;
 
-    private static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
     public static String[] supportedMCVersions = {"1.21", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
 
@@ -153,20 +154,20 @@ public class CommonRefs {
     }
 
     public enum SoundType {
-        SUBMENU_TOGGLE_ON("SUBMENU_TOGGLE_ON", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_HAT).parseSound(), 0.5f, 1.0f),
-        SUBMENU_TOGGLE_OFF("SUBMENU_TOGGLE_OFF", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_SNARE).parseSound(), 0.5f, 1.0f),
-        START_TRANSLATION("START_TRANSLATION", XSound.matchXSound(Sound.ENTITY_EXPERIENCE_ORB_PICKUP).parseSound(), 1.0f, 1.0f),
-        STOP_TRANSLATION("STOP_TRANSLATION", XSound.matchXSound(Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF).parseSound(), 1.0f, 1.0f),
-        RELOAD_SUCCESS("RELOAD_SUCCESS", XSound.matchXSound(Sound.BLOCK_BEACON_ACTIVATE).parseSound(), 1.0f, 1.0f),
-        RELOAD_ERROR("RELOAD_ERROR", XSound.matchXSound(Sound.BLOCK_DISPENSER_FAIL).parseSound(), 1.0f, 1.0f),
+        SUBMENU_TOGGLE_ON("SUBMENU_TOGGLE_ON", safeSound(Sound.BLOCK_NOTE_BLOCK_HAT), 0.5f, 1.0f),
+        SUBMENU_TOGGLE_OFF("SUBMENU_TOGGLE_OFF", safeSound(Sound.BLOCK_NOTE_BLOCK_SNARE), 0.5f, 1.0f),
+        START_TRANSLATION("START_TRANSLATION", safeSound(Sound.ENTITY_EXPERIENCE_ORB_PICKUP), 1.0f, 1.0f),
+        STOP_TRANSLATION("STOP_TRANSLATION", safeSound(Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF), 1.0f, 1.0f),
+        RELOAD_SUCCESS("RELOAD_SUCCESS", safeSound(Sound.BLOCK_BEACON_ACTIVATE), 1.0f, 1.0f),
+        RELOAD_ERROR("RELOAD_ERROR", safeSound(Sound.BLOCK_DISPENSER_FAIL), 1.0f, 1.0f),
         STATS_SUCCESS("STATS_SUCCESS",
-                main.getCurrMCVersion().toString().contains("1.13") ?
-                        XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_PLING).parseSound() :
-                        XSound.matchXSound(Sound.ITEM_BOOK_PAGE_TURN).parseSound(),
+                main.getCurrMCVersion().toString().contains("1.13")
+                        ? safeSound(Sound.BLOCK_NOTE_BLOCK_PLING)
+                        : safeSound(Sound.ITEM_BOOK_PAGE_TURN),
                 1.0f, 1.0f),
-        STATS_FAIL("STATS_FAIL", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_BASS).parseSound(), 1.0f, 1.0f),
-        WWC_VERSION("WWC_VERSION", XSound.matchXSound(Sound.ENTITY_PLAYER_LEVELUP).parseSound(), 1.0f, 1.0f),
-        PENDING_RELOAD("PENDING_RELOAD", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE).parseSound(), 1.0f, 1.0f);
+        STATS_FAIL("STATS_FAIL", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 1.0f),
+        WWC_VERSION("WWC_VERSION", safeSound(Sound.ENTITY_PLAYER_LEVELUP), 1.0f, 1.0f),
+        PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f);
 
         private final String name;
         private final Sound sound;
@@ -194,6 +195,27 @@ public class CommonRefs {
 
         public Float getFloat2() {
             return float2;
+        }
+
+        private static Sound safeSound(Sound sound) {
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+            if (sound == null) {
+                refs.debugMsg("Null sound provided - defaulting to fallback sound");
+                return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
+            }
+
+            try {
+                Sound parsedSound = XSound.matchXSound(sound).parseSound();
+                if (parsedSound == null) {
+                    refs.debugMsg("Failed to parse sound: " + sound.getClass().getName() + " - defaulting to fallback sound");
+                    return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
+                }
+                return parsedSound;
+            } catch (Exception e) {
+                refs.debugMsg("Error processing sound: " + sound.getClass().getName() + " - " + e.getMessage());
+                return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
+            }
         }
 
         public static SoundType fromString(String name) {
@@ -1290,7 +1312,7 @@ public class CommonRefs {
                 debugMsg("Papi for player who sent message!");
                 parsedFormat = PlaceholderAPI.setPlaceholders(originPlayer, translateFormat);
             } else {
-                debugMsg("Removing papi placeholders for console.");
+                debugMsg("Removing papi placeholders for console/other entity.");
                 parsedFormat = translateFormat.replaceAll("%[^%]+%", "");
             }
         }
@@ -1327,6 +1349,39 @@ public class CommonRefs {
         out = out.replaceText(u);
 
         return out;
+    }
+
+    public Component getVaultMessage(Player eventPlayer, String message, String name) {
+        return getVaultMessage(eventPlayer, deserial(message), deserial(name));
+    }
+
+    // To provide one common method for spigot/paper/folia/etc.
+    // We assume that Vault is functional and has a valid ChatProvider set
+    // name field is for compatibility with spigot AND paper
+    public Component getVaultMessage(Player eventPlayer, Component message, Component name) {
+        Chat chat = main.getChat();
+        if (chat != null) {
+            return main.getTranslateFormat(chat.getPlayerPrefix(eventPlayer), serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer)
+                    .append(Component.space())
+                    .append(message);
+        } else {
+            return main.getTranslateFormat("", serial(name), "", eventPlayer)
+                    .append(Component.space())
+                    .append(message);
+        }
+    }
+
+    public Component getVaultHoverMessage(Player eventPlayer, Component message, Component name, Player targetPlayer) {
+        Chat chat = main.getChat();
+        if (chat != null) {
+            return main.getTranslateHoverFormat(chat.getPlayerPrefix(eventPlayer), serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer, targetPlayer)
+                    .append(Component.space())
+                    .append(message);
+        } else {
+            return main.getTranslateHoverFormat("", serial(name), "", eventPlayer, targetPlayer)
+                    .append(Component.space())
+                    .append(message);
+        }
     }
 
     /**

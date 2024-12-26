@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.comphenix.protocol.ProtocolLibrary;
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
@@ -20,22 +19,6 @@ import java.util.Queue;
 
 public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
-    WorldwideChat main;
-
-    CommonRefs refs;
-
-    ServerAdapterFactory adapter;
-
-    private final Queue<Listener> listenerQueue = new LinkedList<>();
-
-    public SpigotWorldwideChatHelper() {
-        super();
-        this.main = WorldwideChat.instance;
-        this.refs = main.getServerFactory().getCommonRefs();
-        this.adapter = main.getServerFactory();
-    }
-
-    // TODO: Make most of this logic common between us and Paper and derivs
     @Override
     public void checkVaultSupport() {
         // Skip if config says so
@@ -43,7 +26,6 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             main.setChat(null);
             return;
         }
-        ;
 
         // Check if vault is installed at all
         if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
@@ -65,16 +47,12 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         }
     }
 
-    // TODO: Generalize this between spigot/paper
     @Override
     public void registerEventHandlers() {
         // Unregister all previously registered listeners for this plugin
-        while (!listenerQueue.isEmpty()) {
-            Listener listener = listenerQueue.poll();
+        while (!bukkitListenerQueue.isEmpty()) {
+            Listener listener = bukkitListenerQueue.poll();
             HandlerList.unregisterAll(listener);
-        }
-        if (main.getProtocolManager() != null) {
-            main.getProtocolManager().removePacketListeners(main);
         }
 
         // EventHandlers + check for plugins
@@ -89,43 +67,20 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
                 },
                 main
         );
-        listenerQueue.add(chat);
+        bukkitListenerQueue.add(chat);
 
         if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.20")) >= 0) {
             SignListener sign = new SignListener();
             pluginManager.registerEvents(new SignListener(), main);
-            listenerQueue.add(sign);
+            bukkitListenerQueue.add(sign);
         }
-
-        NotifsOnJoinListener join = new NotifsOnJoinListener();
-        pluginManager.registerEvents(join, main);
-        listenerQueue.add(join);
 
         SpigotPlayerLocaleListener locale = new SpigotPlayerLocaleListener();
         pluginManager.registerEvents(locale, main);
-        listenerQueue.add(locale);
+        bukkitListenerQueue.add(locale);
 
-        TranslateInGameListener translate = new TranslateInGameListener();
-        pluginManager.registerEvents(translate, main);
-        listenerQueue.add(translate);
-
-        ConfigListener inv = new ConfigListener();
-        pluginManager.registerEvents(inv, main);
-        listenerQueue.add(inv);
-
-        // ProtocolLib Setup
-        if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.19")) >= 0 &&
-                main.getServer().getPluginManager().getPlugin("ProtocolLib") != null) {
-            main.getLogger().info("DEBUG: PROTOCOL ENABLED!");
-            main.setProtocolManager(ProtocolLibrary.getProtocolManager());
-
-            // Register listeners
-            new ChatPacketListener();
-        }
-
-        main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
-                "",
-                "&d"));
+        // Finish up
+        sharedBukkitEventHandlers();
     }
 
     @Override

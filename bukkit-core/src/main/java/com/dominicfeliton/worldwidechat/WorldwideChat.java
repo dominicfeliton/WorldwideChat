@@ -1,11 +1,8 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.comphenix.protocol.ProtocolLibrary;
-import com.comphenix.protocol.ProtocolManager;
 import com.dominicfeliton.worldwidechat.commands.*;
 import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
-import com.dominicfeliton.worldwidechat.listeners.ChatPacketListener;
 import com.dominicfeliton.worldwidechat.listeners.WWCTabCompleter;
 import com.dominicfeliton.worldwidechat.runnables.LoadUserData;
 import com.dominicfeliton.worldwidechat.runnables.SyncUserData;
@@ -33,7 +30,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.checkerframework.checker.units.qual.C;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
@@ -46,7 +42,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "09152024-2"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "12252024-1"; // MMDDYYYY-revisionNumber
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -97,8 +93,6 @@ public class WorldwideChat extends JavaPlugin {
     private boolean outOfDate = false;
 
     private Chat chat;
-
-    private ProtocolManager protocolManager;
 
     private volatile String translatorName = "Starting";
 
@@ -354,14 +348,14 @@ public class WorldwideChat extends JavaPlugin {
         }
 
         // If running Folia 1.19/1.18 (?)
-        if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
+        currMCVersion = new ComparableVersion(outputVersion);
+        if (type.equals("Folia") && (currMCVersion.toString().contains("1.19") || (currMCVersion.toString().contains("1.18")))) {
             getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
             return false;
         }
 
         // Load methods
         currPlatform = type;
-        currMCVersion = new ComparableVersion(outputVersion);
         refs = serverFactory.getCommonRefs();
         wwcHelper = serverFactory.getWWCHelper();
 
@@ -983,8 +977,6 @@ public class WorldwideChat extends JavaPlugin {
         enableSounds = i;
     }
 
-    public void setProtocolManager(ProtocolManager i) { protocolManager = i; }
-
     /* Getters */
     public Component getTranslateIcon() {
         return translateIcon == null ? Component.empty() : translateIcon;
@@ -1221,6 +1213,4 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public boolean isSoundEnabled() { return enableSounds; }
-
-    public ProtocolManager getProtocolManager() { return protocolManager; }
 }
