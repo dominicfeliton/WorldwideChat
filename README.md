@@ -23,6 +23,7 @@ Some of its notable features include:
 - Stat tracker to keep track of how your players use this plugin.
 - A configuration GUI to easily change your config.yml + add/override custom localizations.
 - SQL (MariaDB/MySQL) + PostgreSQL + MongoDB Support.
+- [Citizens](https://github.com/CitizensDev/Citizens2) (NPC Dialogue) + [DecentHolograms](https://github.com/DecentSoftware-eu/DecentHolograms) Support.
 
 And much more to come!
 
