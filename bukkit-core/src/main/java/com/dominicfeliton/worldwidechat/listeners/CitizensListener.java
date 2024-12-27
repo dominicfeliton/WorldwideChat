@@ -56,7 +56,7 @@ public class CitizensListener implements Listener {
                     protected void execute() {
                         String translated = refs.translateText(msgWithName, player);
 
-                        refs.sendMsg(player, formatMessage(translated, msgWithName), false);
+                        refs.sendMsg(player, formatMessage(player, translated, msgWithName), false);
                     }
                 };
                 wwcHelper.runAsync(chat, WorldwideChatHelper.SchedulerType.ASYNC);
@@ -74,14 +74,18 @@ public class CitizensListener implements Listener {
         }
     }
 
-    private Component formatMessage(String translation, String original) {
+    private Component formatMessage(Player p, String translation, String original) {
         Component outMsg = refs.deserial(translation);
 
         if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
             refs.debugMsg("Add hover!");
-            outMsg = outMsg.hoverEvent(HoverEvent.showText(refs.deserial(original)));
+            Component format = Component.empty()
+                    .append(main.getTranslateHoverFormat("","","", p, null))
+                    .append(Component.space())
+                    .append(Component.text(original));
+            outMsg = outMsg.hoverEvent(HoverEvent.showText(format));
         }
 
-        return outMsg;
+        return Component.empty().append(main.getTranslateIcon()).append(outMsg);
     }
 }
