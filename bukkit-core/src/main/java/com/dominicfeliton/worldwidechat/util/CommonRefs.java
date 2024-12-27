@@ -307,7 +307,7 @@ public class CommonRefs {
             }
         };
 
-        wwcHelper.runSync(run, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {(Player)sender});
+        wwcHelper.runSync(run, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {sender});
     }
 
     /**
@@ -672,10 +672,7 @@ public class CommonRefs {
         /* Main logic callback */
         Callable<String> result = () -> {
             // Init vars
-            boolean isExempt = ignoreRateLimit;
             boolean isBlacklistExempt = false;
-            int personalRateLimit = 0;
-            String permissionCheck = "";
 
             /* Detect color codes in message */
             detectColorCodes(inMessage, currPlayer);

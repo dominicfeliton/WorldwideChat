@@ -268,23 +268,12 @@ public class WWCTabCompleter implements TabCompleter {
                 if ("save".startsWith(args[0])) {
                     out.add("save");
                 }
-                if ("debugenv".startsWith(args[0])) {
-                    out.add("debugenv");
-                }
                 if ("reset".startsWith(args[0])) {
                     out.add("reset");
                 }
             } else if (args.length == 2) {
                 if (args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
                     out.add("clear");
-                }
-                if (args[0].equalsIgnoreCase("debugenv")) {
-                    if ("enable".startsWith(args[1])) {
-                        out.add("enable");
-                    }
-                    if ("disable".startsWith(args[1])) {
-                        out.add("disable");
-                    }
                 }
                 if (args[0].equalsIgnoreCase("reset") && "confirm".startsWith(args[1])) {
                     out.add("confirm");
