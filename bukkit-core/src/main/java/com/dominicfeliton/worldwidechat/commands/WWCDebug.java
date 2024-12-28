@@ -51,22 +51,7 @@ public class WWCDebug extends BasicCommand {
             }
         }
         if (args.length == 2) {
-            if (args[0].equalsIgnoreCase("debugenv")) {
-                if (args[1].equalsIgnoreCase("enable")) {
-                    mainConfig.set("General.enableDebugMode", true);
-                    mainConfig.set("Translator.testModeTranslator", true);
-                    refs.sendMsg("wwcdDebugEnvEnabled", "", "&a", sender);
-                    main.reload(sender, true);
-                    return true;
-                } else if (args[1].equalsIgnoreCase("disable")) {
-                    mainConfig.set("General.enableDebugMode", false);
-                    mainConfig.set("Translator.testModeTranslator", false);
-                    refs.sendMsg("wwcdDebugEnvDisabled", "", "&a", sender);
-                    main.reload(sender, true);
-                    return true;
-                }
-                return invalidCmd(sender);
-            } else if (args[0].equalsIgnoreCase("reset")) {
+            if (args[0].equalsIgnoreCase("reset")) {
                 if (args[1].equalsIgnoreCase("confirm")) {
                     // Begin Reset
                     GenericRunnable run = new GenericRunnable() {

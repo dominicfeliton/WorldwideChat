@@ -56,7 +56,9 @@ public class TestTranslation extends BasicTranslation {
             if (inputLang.equals("en") && outputLang.equals("es") && textToTranslate.equals("Hello, how are you?")) {
                 return "Hola, como estas?";
             }
-            return "Invalid test case!";
+
+            // Invalid test case
+            return textToTranslate;
         }
     }
 }

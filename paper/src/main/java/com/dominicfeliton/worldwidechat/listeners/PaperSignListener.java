@@ -9,12 +9,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 
-public class PaperSignListener implements Listener {
-
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+public class PaperSignListener extends AbstractSignListener<PlayerOpenSignEvent> implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
+    @Override
     public void onSignEdit(PlayerOpenSignEvent event) {
         Player currPlayer = event.getPlayer();
         if (main.isActiveTranslator(currPlayer)) {

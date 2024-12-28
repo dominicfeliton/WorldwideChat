@@ -82,7 +82,11 @@ public class WWCStats extends BasicCommand {
 
                         if (!inPlayer.hasPlayedBefore()) {
                             // Target player not found
-                            refs.sendMsg("wwcPlayerNotFound", "&6" + args[0], "&c", sender);
+                            if (args.length > 1) {
+                                refs.sendMsg("wwcPlayerNotFound", "&6" + args[0], "&c", sender);
+                            } else {
+                                refs.sendMsg("wwcPlayerNotFound", "&6"+sender.getName(), "&c", sender);
+                            }
                             refs.playSound(CommonRefs.SoundType.STATS_FAIL, sender);
                             return;
                         }

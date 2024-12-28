@@ -15,15 +15,6 @@ import java.util.Set;
 
 public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener {
 
-    private final WorldwideChat main;
-    private final CommonRefs refs;
-
-    public PaperChatListener() {
-        super();
-        this.main = WorldwideChat.instance;
-        this.refs = main.getServerFactory().getCommonRefs();
-    }
-
     @Override
     public void onPlayerChat(AsyncChatEvent event) {
         try {
@@ -130,14 +121,14 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
     private Component formatMessage(AsyncChatEvent event, Player targetPlayer, Component translation, Component original, boolean incoming) {
         // Vault Support (if it exists)
-        Component outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
+        Component outMsg = refs.getVaultMessage(event.getPlayer(), translation, event.getPlayer().name());
 
         // Add hover text w/original message
         if ((incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat"))
                 || (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
             refs.debugMsg("Add hover!");
             outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(super.getVaultHoverMessage(event.getPlayer(), original, event.getPlayer().name(), targetPlayer)));
+                    .hoverEvent(HoverEvent.showText(refs.getVaultHoverMessage(event.getPlayer(), original, event.getPlayer().name(), targetPlayer)));
         }
 
         return outMsg;

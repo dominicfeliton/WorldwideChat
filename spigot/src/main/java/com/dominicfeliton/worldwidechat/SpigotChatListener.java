@@ -14,15 +14,6 @@ import java.util.Set;
 
 public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEvent> implements Listener {
 
-    private final WorldwideChat main;
-    private final CommonRefs refs;
-
-    public SpigotChatListener() {
-        super();
-        this.main = WorldwideChat.instance;
-        this.refs = main.getServerFactory().getCommonRefs();
-    }
-
     @Override
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         try {
@@ -119,21 +110,20 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 
     private Component formatMessage(AsyncPlayerChatEvent event, Player targetPlayer, String translation, String original, boolean incoming) {
         // Vault Support (if it exists)
-        Component outMsg = super.getVaultMessage(event.getPlayer(), translation, event.getPlayer().getName());
-        ;
+        Component outMsg = refs.getVaultMessage(event.getPlayer(), translation, event.getPlayer().getName());
 
         if ((incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat"))
                 || (!incoming && main.getConfigManager().getMainConfig().getBoolean("Chat.sendOutgoingHoverTextChat"))) {
             refs.debugMsg("Add hover!");
             outMsg = outMsg
-                    .hoverEvent(HoverEvent.showText(super.getVaultHoverMessage(event.getPlayer(), refs.deserial(original), refs.deserial(event.getPlayer().getName()), targetPlayer)));
+                    .hoverEvent(HoverEvent.showText(refs.getVaultHoverMessage(event.getPlayer(), refs.deserial(original), refs.deserial(event.getPlayer().getName()), targetPlayer)));
         }
 
         return outMsg;
     }
 
     private void sendChatMessage(Player eaRecipient, Component outMessage) {
-        if (main.getServerFactory().getServerInfo().getKey().equals("Paper")) {
+        if (main.getCurrPlatform().equalsIgnoreCase("Paper")) {
             // If we are on Paper but using Spigot, we assume that Adventure is not installed.
             // Note that this does not support hover text.
             if (eaRecipient != null) {

@@ -4,7 +4,7 @@
 
   <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.19.2</version>
+  <version>1.20.0</version>
   <packaging>pom</packaging>
 
   <name>WorldwideChat</name>
@@ -30,7 +30,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.11.0</version>
+      <version>5.11.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -46,32 +46,32 @@
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.17.0</version>
+      <version>2.18.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>google-cloud-translate</artifactId>
-      <version>2.49.0</version>
+      <version>2.55.0</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>translate</artifactId>
-      <version>2.28.6</version>
+      <version>2.29.43</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.28.6</version>
+      <version>2.29.43</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>url-connection-client</artifactId>
-      <version>2.28.6</version>
+      <version>2.29.43</version>
     </dependency>
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
-      <version>1.18.1</version>
+      <version>1.18.3</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
@@ -82,12 +82,12 @@
     <dependency>
       <groupId>com.zaxxer</groupId>
       <artifactId>HikariCP</artifactId>
-      <version>6.0.0</version>
+      <version>6.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
       <artifactId>mysql-connector-j</artifactId>
-      <version>9.0.0</version>
+      <version>9.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -97,7 +97,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-text</artifactId>
-      <version>1.12.0</version>
+      <version>1.13.0</version>
     </dependency>
     <dependency>
       <groupId>com.github.ben-manes.caffeine</groupId>
@@ -107,17 +107,17 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>5.1.4</version>
+      <version>5.2.1</version>
     </dependency>
     <dependency>
       <groupId>com.deepl.api</groupId>
       <artifactId>deepl-java</artifactId>
-      <version>1.6.0</version>
+      <version>1.7.0</version>
     </dependency>
     <dependency>
       <groupId>io.github.ollama4j</groupId>
       <artifactId>ollama4j</artifactId>
-      <version>1.0.84</version>
+      <version>1.0.90</version>
     </dependency>
   </dependencies>
 
@@ -151,6 +151,14 @@
     <repository>
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
+    </repository>
+    <repository>
+      <id>citizens-repo</id>
+      <url>https://maven.citizensnpcs.co/repo</url>
+    </repository>
+    <repository>
+      <id>codemc</id>
+      <url>https://repo.codemc.io/repository/maven-public/</url>
     </repository>
   </repositories>
 

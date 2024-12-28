@@ -16,9 +16,9 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class NotifsOnJoinListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
+    protected WorldwideChat main = WorldwideChat.instance;
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected CommonRefs refs = main.getServerFactory().getCommonRefs();
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void sendNotifsOnPlayerJoin(PlayerJoinEvent event) {

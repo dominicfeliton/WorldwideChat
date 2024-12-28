@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
@@ -13,8 +14,9 @@ import org.bukkit.event.player.PlayerLocaleChangeEvent;
 
 public abstract class AbstractPlayerLocaleListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected WorldwideChat main = WorldwideChat.instance;
+    protected CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected WorldwideChatHelper helper = main.getServerFactory().getWWCHelper();
 
     @EventHandler(priority = EventPriority.LOWEST)
     public abstract void detectLocalLang(PlayerJoinEvent event);

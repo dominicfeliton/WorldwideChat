@@ -5,12 +5,11 @@
   <parent>
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.19.2</version>
+    <version>1.20.0</version>
   </parent>
 
   <artifactId>WorldwideChat-folia</artifactId>
   <version>${project.parent.version}</version>
-  <packaging>jar</packaging>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -22,13 +21,13 @@
     <dependency>
       <groupId>dev.folia</groupId>
       <artifactId>folia-api</artifactId>
-      <version>1.20.6-R0.1-SNAPSHOT</version>
+      <version>1.21.4-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-paper</artifactId>
-      <version>1.19.2</version>
+      <version>1.20.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -41,6 +40,18 @@
       <groupId>com.github.placeholderapi</groupId>
       <artifactId>placeholderapi</artifactId>
       <version>2.11.6</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.citizensnpcs</groupId>
+      <artifactId>citizens-main</artifactId>
+      <version>2.0.37-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.decentsoftware-eu</groupId>
+      <artifactId>decentholograms</artifactId>
+      <version>2.8.12</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

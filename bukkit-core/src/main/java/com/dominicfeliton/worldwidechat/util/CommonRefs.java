@@ -16,6 +16,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.TextReplacementConfig;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
+import net.milkbowl.vault.chat.Chat;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.text.StringEscapeUtils;
@@ -53,11 +54,11 @@ import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType
 public class CommonRefs {
 
     /* Important vars */
-    private static WorldwideChat main = WorldwideChat.instance;
+    protected static WorldwideChat main = WorldwideChat.instance;
 
-    private static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
-    public static String[] supportedMCVersions = {"1.21", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
+    public static String[] supportedMCVersions = {"1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
 
     public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 
@@ -153,20 +154,20 @@ public class CommonRefs {
     }
 
     public enum SoundType {
-        SUBMENU_TOGGLE_ON("SUBMENU_TOGGLE_ON", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_HAT).parseSound(), 0.5f, 1.0f),
-        SUBMENU_TOGGLE_OFF("SUBMENU_TOGGLE_OFF", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_SNARE).parseSound(), 0.5f, 1.0f),
-        START_TRANSLATION("START_TRANSLATION", XSound.matchXSound(Sound.ENTITY_EXPERIENCE_ORB_PICKUP).parseSound(), 1.0f, 1.0f),
-        STOP_TRANSLATION("STOP_TRANSLATION", XSound.matchXSound(Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF).parseSound(), 1.0f, 1.0f),
-        RELOAD_SUCCESS("RELOAD_SUCCESS", XSound.matchXSound(Sound.BLOCK_BEACON_ACTIVATE).parseSound(), 1.0f, 1.0f),
-        RELOAD_ERROR("RELOAD_ERROR", XSound.matchXSound(Sound.BLOCK_DISPENSER_FAIL).parseSound(), 1.0f, 1.0f),
+        SUBMENU_TOGGLE_ON("SUBMENU_TOGGLE_ON", safeSound(Sound.BLOCK_NOTE_BLOCK_HAT), 0.5f, 1.0f),
+        SUBMENU_TOGGLE_OFF("SUBMENU_TOGGLE_OFF", safeSound(Sound.BLOCK_NOTE_BLOCK_SNARE), 0.5f, 1.0f),
+        START_TRANSLATION("START_TRANSLATION", safeSound(Sound.ENTITY_EXPERIENCE_ORB_PICKUP), 1.0f, 1.0f),
+        STOP_TRANSLATION("STOP_TRANSLATION", safeSound(Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF), 1.0f, 1.0f),
+        RELOAD_SUCCESS("RELOAD_SUCCESS", safeSound(Sound.BLOCK_BEACON_ACTIVATE), 1.0f, 1.0f),
+        RELOAD_ERROR("RELOAD_ERROR", safeSound(Sound.BLOCK_DISPENSER_FAIL), 1.0f, 1.0f),
         STATS_SUCCESS("STATS_SUCCESS",
-                main.getCurrMCVersion().contains("1.13") ?
-                        XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_PLING).parseSound() :
-                        XSound.matchXSound(Sound.ITEM_BOOK_PAGE_TURN).parseSound(),
+                main.getCurrMCVersion().toString().contains("1.13")
+                        ? safeSound(Sound.BLOCK_NOTE_BLOCK_PLING)
+                        : safeSound(Sound.ITEM_BOOK_PAGE_TURN),
                 1.0f, 1.0f),
-        STATS_FAIL("STATS_FAIL", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_BASS).parseSound(), 1.0f, 1.0f),
-        WWC_VERSION("WWC_VERSION", XSound.matchXSound(Sound.ENTITY_PLAYER_LEVELUP).parseSound(), 1.0f, 1.0f),
-        PENDING_RELOAD("PENDING_RELOAD", XSound.matchXSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE).parseSound(), 1.0f, 1.0f);
+        STATS_FAIL("STATS_FAIL", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 1.0f),
+        WWC_VERSION("WWC_VERSION", safeSound(Sound.ENTITY_PLAYER_LEVELUP), 1.0f, 1.0f),
+        PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f);
 
         private final String name;
         private final Sound sound;
@@ -194,6 +195,27 @@ public class CommonRefs {
 
         public Float getFloat2() {
             return float2;
+        }
+
+        private static Sound safeSound(Sound sound) {
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+
+            if (sound == null) {
+                refs.debugMsg("Null sound provided - defaulting to fallback sound");
+                return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
+            }
+
+            try {
+                Sound parsedSound = XSound.matchXSound(sound).parseSound();
+                if (parsedSound == null) {
+                    refs.debugMsg("Failed to parse sound: " + sound.getClass().getName() + " - defaulting to fallback sound");
+                    return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
+                }
+                return parsedSound;
+            } catch (Exception e) {
+                refs.debugMsg("Error processing sound: " + sound.getClass().getName() + " - " + e.getMessage());
+                return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
+            }
         }
 
         public static SoundType fromString(String name) {
@@ -285,7 +307,7 @@ public class CommonRefs {
             }
         };
 
-        wwcHelper.runSync(run, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {(Player)sender});
+        wwcHelper.runSync(run, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {sender});
     }
 
     /**
@@ -379,6 +401,10 @@ public class CommonRefs {
      * @param inMessage - The debug message that will be sent to the Console.
      */
     public void debugMsg(String inMessage) {
+        if (main.getConfigManager() == null) {
+            return;
+        }
+
         if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
             main.getLogger().warning("DEBUG: " + inMessage);
         }
@@ -482,24 +508,24 @@ public class CommonRefs {
     }
 
     public void sendMsg(String messageName, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, new String[]{}, "&r&d", sender));
+        sendMsg(sender, getCompMsg(messageName, new String[]{}, "&r&d", sender), true);
     }
 
     public void sendMsg(String messageName, String[] replacements, CommandSender sender) {
         // Default WWC color is usually LIGHT_PURPLE (&d)
-        sendMsg(sender, getCompMsg(messageName, replacements, "&r&d", sender));
+        sendMsg(sender, getCompMsg(messageName, replacements, "&r&d", sender), true);
     }
 
     public void sendMsg(String messageName, String replacement, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r&d", sender));
+        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r&d", sender), true);
     }
 
     public void sendMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r" + resetCode, sender));
+        sendMsg(sender, getCompMsg(messageName, new String[]{replacement}, "&r" + resetCode, sender), true);
     }
 
     public void sendMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
-        sendMsg(sender, getCompMsg(messageName, replacements, "&r" + resetCode, sender));
+        sendMsg(sender, getCompMsg(messageName, replacements, "&r" + resetCode, sender), true);
     }
 
     /**
@@ -507,15 +533,21 @@ public class CommonRefs {
      *
      * @param sender          - The target sender. Can be any entity that can receive messages. CANNOT BE NULL.
      * @param originalMessage - The unformatted Component that should be sent to sender.
+     * @param addPrefix       - Whether the plugin prefix should be appended or not.
      * @return
      */
-    public void sendMsg(CommandSender sender, Component originalMessage) {
+    public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         try {
             Audience adventureSender = main.adventure().sender(sender);
-            final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
-                    .append(Component.space())
-                    .append(originalMessage.asComponent())
-                    .build();
+            final TextComponent outMessage;
+            if (addPrefix) {
+                outMessage = Component.text().append(main.getPluginPrefix().asComponent())
+                        .append(Component.space())
+                        .append(originalMessage.asComponent())
+                        .build();
+            } else {
+                outMessage = Component.text().append(originalMessage.asComponent()).build();
+            }
             if (sender instanceof ConsoleCommandSender) {
                 main.getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
             } else {
@@ -525,8 +557,14 @@ public class CommonRefs {
         }
     }
 
+    public void sendMsg(CommandSender sender, Component originalMessage) { sendMsg(sender, originalMessage, true); }
+
     public void sendMsg(CommandSender sender, String stringMsg) {
-        sendMsg(sender, deserial(stringMsg));
+        sendMsg(sender, deserial(stringMsg), true);
+    }
+
+    public void sendMsg(CommandSender sender, String stringMsg, boolean addPrefix) {
+        sendMsg(sender, deserial(stringMsg), addPrefix);
     }
 
     /**
@@ -634,10 +672,7 @@ public class CommonRefs {
         /* Main logic callback */
         Callable<String> result = () -> {
             // Init vars
-            boolean isExempt = ignoreRateLimit;
             boolean isBlacklistExempt = false;
-            int personalRateLimit = 0;
-            String permissionCheck = "";
 
             /* Detect color codes in message */
             detectColorCodes(inMessage, currPlayer);
@@ -667,7 +702,7 @@ public class CommonRefs {
                 return inMessage;
             }
 
-            /* Check blacklist */
+            // Check blacklist
             if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
                 try {
                     isBlacklistExempt = Bukkit.getScheduler().callSyncMethod(main, () -> currPlayer.hasPermission("worldwidechat.blacklist.exempt")).get(3, TimeUnit.SECONDS);
@@ -1143,11 +1178,13 @@ public class CommonRefs {
     private boolean shouldRateLimit(boolean skip, Player currPlayer) {
         // Get permission from Bukkit API synchronously, since we do not want to risk
         // concurrency problems
+
         if (skip) return false;
         boolean exempt = false;
         int personalRateLimit = 0;
         String permissionCheck = "";
         ActiveTranslator currActiveTranslator = main.getActiveTranslator(currPlayer);
+
 
         if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
             try {
@@ -1284,7 +1321,7 @@ public class CommonRefs {
                 debugMsg("Papi for player who sent message!");
                 parsedFormat = PlaceholderAPI.setPlaceholders(originPlayer, translateFormat);
             } else {
-                debugMsg("Removing papi placeholders for console.");
+                debugMsg("Removing papi placeholders for console/other entity.");
                 parsedFormat = translateFormat.replaceAll("%[^%]+%", "");
             }
         }
@@ -1321,6 +1358,39 @@ public class CommonRefs {
         out = out.replaceText(u);
 
         return out;
+    }
+
+    public Component getVaultMessage(Player eventPlayer, String message, String name) {
+        return getVaultMessage(eventPlayer, deserial(message), deserial(name));
+    }
+
+    // To provide one common method for spigot/paper/folia/etc.
+    // We assume that Vault is functional and has a valid ChatProvider set
+    // name field is for compatibility with spigot AND paper
+    public Component getVaultMessage(Player eventPlayer, Component message, Component name) {
+        Chat chat = main.getChat();
+        if (chat != null) {
+            return main.getTranslateFormat(chat.getPlayerPrefix(eventPlayer), serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer)
+                    .append(Component.space())
+                    .append(message);
+        } else {
+            return main.getTranslateFormat("", serial(name), "", eventPlayer)
+                    .append(Component.space())
+                    .append(message);
+        }
+    }
+
+    public Component getVaultHoverMessage(Player eventPlayer, Component message, Component name, Player targetPlayer) {
+        Chat chat = main.getChat();
+        if (chat != null) {
+            return main.getTranslateHoverFormat(chat.getPlayerPrefix(eventPlayer), serial(name), chat.getPlayerSuffix(eventPlayer), eventPlayer, targetPlayer)
+                    .append(Component.space())
+                    .append(message);
+        } else {
+            return main.getTranslateHoverFormat("", serial(name), "", eventPlayer, targetPlayer)
+                    .append(Component.space())
+                    .append(message);
+        }
     }
 
     /**

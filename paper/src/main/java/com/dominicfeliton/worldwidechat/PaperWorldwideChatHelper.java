@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat;
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import io.papermc.paper.event.player.AsyncChatEvent;
+import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
@@ -16,30 +17,22 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
     // (We extend Spigot because a lot of Spigot methods work on Paper)
     // (You can switch back to just WorldwideChatHelper if we no longer want to rely on spigot WWCHelper at all)
 
-    WorldwideChat main = WorldwideChat.instance;
-
-    CommonRefs refs = main.getServerFactory().getCommonRefs();
-
-    ServerAdapterFactory adapter = main.getServerFactory();
-
-    private final Queue<Listener> listenerQueue = new LinkedList<>();
-
     @Override
     public void registerEventHandlers() {
-        refs.debugMsg("Size of listener queue: " + listenerQueue.size());
+        refs.debugMsg("Size of listener queue: " + bukkitListenerQueue.size());
         // Unregister all previously registered listeners for this plugin
-        while (!listenerQueue.isEmpty()) {
-            Listener listener = listenerQueue.poll();
+        while (!bukkitListenerQueue.isEmpty()) {
+            Listener listener = bukkitListenerQueue.poll();
             HandlerList.unregisterAll(listener);
         }
 
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
-        if (adapter.getServerInfo().getValue().contains("1.2")) {
+        if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.20")) >= 0) {
             // 1.2x supports sign editing
             PaperSignListener sign = new PaperSignListener();
             pluginManager.registerEvents(sign, main);
-            listenerQueue.add(sign);
+            bukkitListenerQueue.add(sign);
         }
 
         PaperChatListener chat = new PaperChatListener();
@@ -52,25 +45,12 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
                 },
                 main
         );
-        listenerQueue.add(chat);
-
-        NotifsOnJoinListener join = new NotifsOnJoinListener();
-        pluginManager.registerEvents(join, main);
-        listenerQueue.add(join);
 
         PaperPlayerLocaleListener locale = new PaperPlayerLocaleListener();
         pluginManager.registerEvents(locale, main);
-        listenerQueue.add(locale);
+        bukkitListenerQueue.add(locale);
 
-        TranslateInGameListener translate = new TranslateInGameListener();
-        pluginManager.registerEvents(translate, main);
-        listenerQueue.add(translate);
-
-        ConfigListener inv = new ConfigListener();
-        pluginManager.registerEvents(inv, main);
-        listenerQueue.add(inv);
-        main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
-                "",
-                "&d"));
+        // Finish up
+        sharedBukkitEventHandlers();
     }
 }

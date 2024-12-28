@@ -22,6 +22,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.milkbowl.vault.chat.Chat;
 import org.apache.commons.lang3.tuple.Pair;
+import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -41,7 +42,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "09152024-2"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "12252024-2"; // MMDDYYYY-revisionNumber
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -52,7 +53,7 @@ public class WorldwideChat extends JavaPlugin {
 
     private String currPlatform;
 
-    private String currMCVersion;
+    private ComparableVersion currMCVersion;
 
     private WorldwideChatHelper wwcHelper;
     private WWCInventoryManager inventoryManager;
@@ -342,19 +343,19 @@ public class WorldwideChat extends JavaPlugin {
 
         // Not running a supported server version, default to latest
         if (outputVersion.isEmpty()) {
-            outputVersion = supportedMCVersions[supportedMCVersions.length - 1];
+            outputVersion = supportedMCVersions[0];
             getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
         }
 
         // If running Folia 1.19/1.18 (?)
-        if (type.equals("Folia") && (outputVersion.equals("1.19") || (outputVersion.equals("1.18")))) {
+        currMCVersion = new ComparableVersion(outputVersion);
+        if (type.equals("Folia") && (currMCVersion.toString().contains("1.19") || (currMCVersion.toString().contains("1.18")))) {
             getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
             return false;
         }
 
         // Load methods
         currPlatform = type;
-        currMCVersion = outputVersion;
         refs = serverFactory.getCommonRefs();
         wwcHelper = serverFactory.getWWCHelper();
 
@@ -1151,7 +1152,7 @@ public class WorldwideChat extends JavaPlugin {
         return currPlatform;
     }
 
-    public String getCurrMCVersion() {
+    public ComparableVersion getCurrMCVersion() {
         return currMCVersion;
     }
 

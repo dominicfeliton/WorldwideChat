@@ -20,10 +20,10 @@ import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType
 
 public class ConfigListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.instance;
+    protected WorldwideChat main = WorldwideChat.instance;
 
-    private CommonRefs refs = main.getServerFactory().getCommonRefs();
-    private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    protected CommonRefs refs = main.getServerFactory().getCommonRefs();
+    protected WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onInventoryCloseEvent(InventoryCloseEvent e) {

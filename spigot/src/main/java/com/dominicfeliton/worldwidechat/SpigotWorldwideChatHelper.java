@@ -1,13 +1,9 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.listeners.ConfigListener;
-import com.dominicfeliton.worldwidechat.listeners.NotifsOnJoinListener;
-import com.dominicfeliton.worldwidechat.listeners.SignListener;
-import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;
+import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
@@ -16,27 +12,8 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.scheduler.BukkitWorker;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
-    WorldwideChat main;
-
-    CommonRefs refs;
-
-    ServerAdapterFactory adapter;
-
-    private final Queue<Listener> listenerQueue = new LinkedList<>();
-
-    public SpigotWorldwideChatHelper() {
-        super();
-        this.main = WorldwideChat.instance;
-        this.refs = main.getServerFactory().getCommonRefs();
-        this.adapter = main.getServerFactory();
-    }
-
-    // TODO: Make most of this logic common between us and Paper and derivs
     @Override
     public void checkVaultSupport() {
         // Skip if config says so
@@ -44,7 +21,6 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
             main.setChat(null);
             return;
         }
-        ;
 
         // Check if vault is installed at all
         if (main.getServer().getPluginManager().getPlugin("Vault") == null) {
@@ -69,8 +45,8 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void registerEventHandlers() {
         // Unregister all previously registered listeners for this plugin
-        while (!listenerQueue.isEmpty()) {
-            Listener listener = listenerQueue.poll();
+        while (!bukkitListenerQueue.isEmpty()) {
+            Listener listener = bukkitListenerQueue.poll();
             HandlerList.unregisterAll(listener);
         }
 
@@ -86,33 +62,20 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
                 },
                 main
         );
-        listenerQueue.add(chat);
+        bukkitListenerQueue.add(chat);
 
-        if (adapter.getServerInfo().getValue().contains("1.2")) {
-            SignListener sign = new SignListener();
-            pluginManager.registerEvents(new SignListener(), main);
-            listenerQueue.add(sign);
+        if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.20")) >= 0) {
+            SpigotSignListener sign = new SpigotSignListener();
+            pluginManager.registerEvents(new SpigotSignListener(), main);
+            bukkitListenerQueue.add(sign);
         }
-
-        NotifsOnJoinListener join = new NotifsOnJoinListener();
-        pluginManager.registerEvents(join, main);
-        listenerQueue.add(join);
 
         SpigotPlayerLocaleListener locale = new SpigotPlayerLocaleListener();
         pluginManager.registerEvents(locale, main);
-        listenerQueue.add(locale);
+        bukkitListenerQueue.add(locale);
 
-        TranslateInGameListener translate = new TranslateInGameListener();
-        pluginManager.registerEvents(translate, main);
-        listenerQueue.add(translate);
-
-        ConfigListener inv = new ConfigListener();
-        pluginManager.registerEvents(inv, main);
-        listenerQueue.add(inv);
-
-        main.getLogger().info(refs.getPlainMsg("wwcListenersInitialized",
-                "",
-                "&d"));
+        // Finish up
+        sharedBukkitEventHandlers();
     }
 
     @Override
@@ -167,7 +130,10 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void runAsync(boolean serverMustBeRunning, int delay, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
-
+        if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLater(main, in, delay)));
+            return;
+        }
 
         if (!serverMustBeRunning) {
             in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay)));
@@ -182,6 +148,10 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
+        if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime)));
+            return;
+        }
 
         if (!serverMustBeRunning) {
             // If server does not need to be running
