@@ -1,7 +1,5 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.listeners.*;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;
@@ -13,9 +11,6 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.scheduler.BukkitWorker;
-
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
 
@@ -70,8 +65,8 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         bukkitListenerQueue.add(chat);
 
         if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.20")) >= 0) {
-            SignListener sign = new SignListener();
-            pluginManager.registerEvents(new SignListener(), main);
+            SpigotSignListener sign = new SpigotSignListener();
+            pluginManager.registerEvents(new SpigotSignListener(), main);
             bukkitListenerQueue.add(sign);
         }
 

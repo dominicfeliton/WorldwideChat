@@ -1,19 +1,21 @@
-package com.dominicfeliton.worldwidechat.listeners;
+package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
+import com.dominicfeliton.worldwidechat.listeners.AbstractSignListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import io.papermc.paper.event.player.PlayerOpenSignEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerSignOpenEvent;
 
-public class PaperSignListener extends AbstractSignListener<PlayerOpenSignEvent> implements Listener {
+public class SpigotSignListener extends AbstractSignListener<PlayerSignOpenEvent> implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     @Override
-    public void onSignEdit(PlayerOpenSignEvent event) {
+    public void onSignEdit(PlayerSignOpenEvent event) {
+        // Event name is different on Paper
+
         Player currPlayer = event.getPlayer();
         if (main.isActiveTranslator(currPlayer)) {
             ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);

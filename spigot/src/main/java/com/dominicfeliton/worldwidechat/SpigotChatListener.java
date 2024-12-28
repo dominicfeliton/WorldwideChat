@@ -14,15 +14,6 @@ import java.util.Set;
 
 public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEvent> implements Listener {
 
-    private final WorldwideChat main;
-    private final CommonRefs refs;
-
-    public SpigotChatListener() {
-        super();
-        this.main = WorldwideChat.instance;
-        this.refs = main.getServerFactory().getCommonRefs();
-    }
-
     @Override
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         try {
