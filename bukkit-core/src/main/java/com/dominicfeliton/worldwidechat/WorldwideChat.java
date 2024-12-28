@@ -343,7 +343,7 @@ public class WorldwideChat extends JavaPlugin {
 
         // Not running a supported server version, default to latest
         if (outputVersion.isEmpty()) {
-            outputVersion = supportedMCVersions[supportedMCVersions.length - 1];
+            outputVersion = supportedMCVersions[0];
             getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
         }
 

@@ -26,7 +26,6 @@ public class HologramListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onDecentHoloRightClick(HologramClickEvent event) {
-        // TODO: Test color codes/formatting
         if (!event.isAsynchronous()) {
             refs.debugMsg("HologramClickEvent ignored because it is synchronous");
             return;

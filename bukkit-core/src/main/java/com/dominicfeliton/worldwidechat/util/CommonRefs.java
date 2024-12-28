@@ -58,7 +58,7 @@ public class CommonRefs {
 
     protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
-    public static String[] supportedMCVersions = {"1.21", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
+    public static String[] supportedMCVersions = {"1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
 
     public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 
