@@ -135,7 +135,10 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void runAsync(boolean serverMustBeRunning, int delay, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "!");
-
+        if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLater(main, in, delay)));
+            return;
+        }
 
         if (!serverMustBeRunning) {
             in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskLaterAsynchronously(main, in, delay)));
@@ -150,6 +153,10 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         refs.debugMsg("We are an async runnable on " + main.getCurrPlatform() + " Scheduler Type " + schedulerType + "! Delay: " + delay + "! Repeat: " + repeatTime + "!");
+        if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+            in.setTask(new SpigotTaskWrapper(Bukkit.getScheduler().runTaskTimer(main, in, delay, repeatTime)));
+            return;
+        }
 
         if (!serverMustBeRunning) {
             // If server does not need to be running

@@ -1,16 +1,19 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.commands.CommandsTest;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.dominicfeliton.worldwidechat.util.TranslationTest;
+import com.dominicfeliton.worldwidechat.commands.Commands;
+import com.dominicfeliton.worldwidechat.util.DataRetention;
+import com.dominicfeliton.worldwidechat.util.Translation;
 import org.junit.jupiter.api.*;
 import org.mockbukkit.mockbukkit.MockBukkit;
 import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
-public class TestSetup {
+public class TestMain {
 
     // This is because MockBukkit doesn't fully deregister static variables. Very cool
 
@@ -31,9 +34,7 @@ public class TestSetup {
 
     @AfterEach
     public void resetWWC(TestInfo testInfo) {
-        server.executeConsole("wwcd", "reset confirm");
-        server.getScheduler().waitAsyncTasksFinished();
-        server.getScheduler().waitAsyncEventsFinished();
+        TestCommon.reload(server, plugin,true);
 
         String methodName = testInfo.getTestMethod().map(Method::getName).orElse("Unknown");
         plugin.getLogger().info("Completed Tests: " + methodName);
@@ -49,7 +50,7 @@ public class TestSetup {
         player2.setOp(true);
 
         // Execution
-        TranslationTest test = new TranslationTest(player1, player2, plugin, server);
+        Translation test = new Translation(player1, player2, plugin, server);
         test.testTranslationFunctionSourceTarget();
         test.testTranslationFunctionTarget();
         test.testTranslationFunctionSourceTargetOther();
@@ -67,7 +68,7 @@ public class TestSetup {
         playerA.setOp(true);
         playerB.setOp(true);
 
-        CommandsTest test = new CommandsTest(playerA, playerB, playerC, plugin, server);
+        Commands test = new Commands(playerA, playerB, playerC, plugin, server);
         test.testWwcVersionAndReloadCommands();
         test.testWwcStatsAndDebug();
         test.testWwcTranslateSelfAndStop();
@@ -78,6 +79,27 @@ public class TestSetup {
         test.testWwcTranslateChatIncomingOutgoing();
         test.testWwcRateLimit();
         test.testConsoleUsage();
+    }
+
+    @Order(3)
+    @Test
+    public void testDataRetention() {
+        PlayerMock p1 = server.addPlayer("user1");
+        PlayerMock p2 = server.addPlayer("user2");
+        p1.setOp(true);
+        p2.setOp(true);
+
+        DataRetention test = new DataRetention(p1, p2, plugin, server);
+        List<Runnable> tests = Arrays.asList(
+                test::testPluginDataRetentionMongoDB,
+                test::testPluginDataRetentionPostgres,
+                test::testPluginDataRetentionYAML,
+                test::testPluginDataRetentionSQL
+        );
+        Collections.shuffle(tests);
+        for (Runnable runnable : tests) {
+            runnable.run();
+        }
     }
 
 }

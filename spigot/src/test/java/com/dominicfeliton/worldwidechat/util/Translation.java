@@ -1,8 +1,6 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.dominicfeliton.worldwidechat.TestSetup;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import org.junit.jupiter.api.*;
 import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
@@ -15,14 +13,14 @@ import static org.junit.jupiter.api.Assertions.*;
  *   - usage of /wwct for self vs. other players
  *   - ensuring “None” is handled properly
  */
-public class TranslationTest {
+public class Translation {
 
     private PlayerMock player1, player2;
     private CommonRefs refs;
     private WorldwideChat plugin;
     private ServerMock server;
 
-    public TranslationTest(PlayerMock player1, PlayerMock player2, WorldwideChat plugin, ServerMock server) {
+    public Translation(PlayerMock player1, PlayerMock player2, WorldwideChat plugin, ServerMock server) {
         this.player1 = player1;
         this.player2 = player2;
         this.server = server;

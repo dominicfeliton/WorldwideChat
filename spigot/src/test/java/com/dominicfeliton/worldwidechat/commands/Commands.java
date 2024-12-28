@@ -1,12 +1,10 @@
 package com.dominicfeliton.worldwidechat.commands;
 
-import com.dominicfeliton.worldwidechat.TestSetup;
+import com.dominicfeliton.worldwidechat.TestCommon;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
-import org.junit.jupiter.api.*;
-import org.mockbukkit.mockbukkit.MockBukkit;
 import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
@@ -19,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *    /wwctco, /wwctci, /wwctrl,
  *    and user-based toggles.
  */
-public class CommandsTest {
+public class Commands {
 
     private WorldwideChat plugin;
     private ServerMock server;
@@ -28,7 +26,7 @@ public class CommandsTest {
     private PlayerMock playerC; // Non-op for partial perms testing
     private ConsoleCommandSender console;
 
-    public CommandsTest(PlayerMock playerA, PlayerMock playerB, PlayerMock playerC, WorldwideChat plugin, ServerMock server) {
+    public Commands(PlayerMock playerA, PlayerMock playerB, PlayerMock playerC, WorldwideChat plugin, ServerMock server) {
         this.playerA = playerA;
         this.playerB = playerB;
         this.playerC = playerC;
@@ -43,10 +41,8 @@ public class CommandsTest {
         // We simply check that no exception occurred.
 
         // /wwcr => reload plugin
-        playerA.performCommand("wwcr");
-
-        // Translator name should not be "Starting" if reload finished
-        server.getScheduler().waitAsyncTasksFinished();
+        TestCommon.reload(server, plugin);
+        plugin.getLogger().info("Current translator name: " + plugin.getTranslatorName());
         assertNotEquals("Starting", plugin.getTranslatorName());
     }
 
