@@ -1,8 +1,6 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;

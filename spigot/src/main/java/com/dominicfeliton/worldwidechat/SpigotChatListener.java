@@ -2,7 +2,6 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.AbstractChatListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
 import org.bukkit.entity.Player;

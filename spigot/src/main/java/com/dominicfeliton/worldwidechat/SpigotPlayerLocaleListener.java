@@ -1,7 +1,6 @@
 package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.AbstractPlayerLocaleListener;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

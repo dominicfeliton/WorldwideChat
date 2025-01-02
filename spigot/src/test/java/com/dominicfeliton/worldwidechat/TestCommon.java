@@ -1,11 +1,11 @@
 package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
-import org.bukkit.entity.Player;
 import org.mockbukkit.mockbukkit.ServerMock;
 
 import java.sql.SQLException;
 import java.util.function.BooleanSupplier;
+
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class TestCommon {

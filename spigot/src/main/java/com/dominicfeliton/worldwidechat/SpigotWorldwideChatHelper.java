@@ -5,8 +5,6 @@ import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;
 import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.Bukkit;
-import org.bukkit.event.HandlerList;
-import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -45,10 +43,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
     @Override
     public void registerEventHandlers() {
         // Unregister all previously registered listeners for this plugin
-        while (!bukkitListenerQueue.isEmpty()) {
-            Listener listener = bukkitListenerQueue.poll();
-            HandlerList.unregisterAll(listener);
-        }
+        unregisterListeners();
 
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
@@ -62,17 +57,14 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
                 },
                 main
         );
-        bukkitListenerQueue.add(chat);
 
         if (main.getCurrMCVersion().compareTo(new ComparableVersion("1.20")) >= 0) {
             SpigotSignListener sign = new SpigotSignListener();
-            pluginManager.registerEvents(new SpigotSignListener(), main);
-            bukkitListenerQueue.add(sign);
+            pluginManager.registerEvents(sign, main);
         }
 
         SpigotPlayerLocaleListener locale = new SpigotPlayerLocaleListener();
         pluginManager.registerEvents(locale, main);
-        bukkitListenerQueue.add(locale);
 
         // Finish up
         sharedBukkitEventHandlers();

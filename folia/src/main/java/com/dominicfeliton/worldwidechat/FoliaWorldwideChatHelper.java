@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat;
 
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.CommonTask;
 import com.dominicfeliton.worldwidechat.util.FoliaTaskWrapper;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;

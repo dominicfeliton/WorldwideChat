@@ -1,8 +1,6 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
-import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import io.papermc.paper.event.player.PlayerOpenSignEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
