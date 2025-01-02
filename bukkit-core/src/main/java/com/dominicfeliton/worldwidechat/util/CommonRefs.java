@@ -548,11 +548,7 @@ public class CommonRefs {
             } else {
                 outMessage = Component.text().append(originalMessage.asComponent()).build();
             }
-            if (sender instanceof ConsoleCommandSender) {
-                main.getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
-            } else {
-                adventureSender.sendMessage(outMessage);
-            }
+            adventureSender.sendMessage(outMessage);
         } catch (IllegalStateException e) {
         }
     }

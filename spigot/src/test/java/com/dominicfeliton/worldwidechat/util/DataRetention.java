@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat.util;
 
 import com.dominicfeliton.worldwidechat.TestCommon;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
@@ -26,9 +27,27 @@ public class DataRetention {
         this.refs = plugin.getServerFactory().getCommonRefs();
     }
 
+    private void assertConnected() {
+        YamlConfiguration config = plugin.getConfigManager().getMainConfig();
+        boolean mongo = plugin.isMongoConnValid(false);
+        boolean sql = plugin.isSQLConnValid(false);
+        boolean postgres = plugin.isPostgresConnValid(false);
+
+        if (config.getBoolean("Storage.useMongoDB")) {
+            assert mongo;
+        } else if (config.getBoolean("Storage.useSQL")) {
+            assert sql;
+        } else if (config.getBoolean("Storage.usePostgreSQL")) {
+            assert postgres;
+        } else {
+            assert !(mongo || sql || postgres);
+        }
+    }
+
     private void dataTest() {
         // Reload to apply config changes
         TestCommon.reload(server, plugin);
+        assertConnected();
 
         // Setup some translator states
         p1.performCommand("wwct en fr");
@@ -54,6 +73,7 @@ public class DataRetention {
 
         // Trigger save
         TestCommon.reload(server, plugin);
+        assertConnected();
 
         // Validate p1's translator
         ActiveTranslator t1 = plugin.getActiveTranslator(p1);

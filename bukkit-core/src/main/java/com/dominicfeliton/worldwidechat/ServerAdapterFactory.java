@@ -2,7 +2,6 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.Bukkit;
 
 import java.lang.reflect.Constructor;

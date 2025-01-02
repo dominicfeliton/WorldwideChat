@@ -1,8 +1,6 @@
-package com.dominicfeliton.worldwidechat;
+package com.dominicfeliton.worldwidechat.listeners;
 
-import com.dominicfeliton.worldwidechat.listeners.AbstractSignListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
-import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

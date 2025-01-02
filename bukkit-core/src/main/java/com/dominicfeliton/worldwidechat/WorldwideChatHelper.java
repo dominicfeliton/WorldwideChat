@@ -2,25 +2,36 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.listeners.*;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import com.dominicfeliton.worldwidechat.util.CommonTask;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
-import org.bukkit.entity.Panda;
-import org.bukkit.event.Listener;
+import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginManager;
+import org.bukkit.plugin.RegisteredListener;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
 
 public abstract class WorldwideChatHelper {
     protected WorldwideChat main = WorldwideChat.instance;
 
     protected CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-    protected final Queue<Listener> bukkitListenerQueue = new LinkedList<>();
-
     // Store additional, WorldwideChat-exclusive methods here
     // Also required for our maven setup
     public void checkVaultSupport() {
+    }
+
+    public void unregisterListeners() {
+        String nameToTarget = "com.dominicfeliton.worldwidechat.listeners";
+        ArrayList<RegisteredListener> listeners = HandlerList.getRegisteredListeners(main);
+        for (RegisteredListener listener : listeners) {
+            String name = listener.getListener().getClass().getName();
+            if (name.contains(nameToTarget)) {
+                refs.debugMsg("Unregistered listener: " + listener.getListener().getClass().getName());
+                HandlerList.unregisterAll(listener.getListener());
+            } else {
+                refs.debugMsg("Ignoring listener: " + listener.getListener().getClass().getName());
+            }
+        }
+        refs.debugMsg("Size of internal registered listeners post removal: " + HandlerList.getRegisteredListeners(main).size());
     }
 
     public void sharedBukkitEventHandlers() {
@@ -28,20 +39,16 @@ public abstract class WorldwideChatHelper {
 
         NotifsOnJoinListener join = new NotifsOnJoinListener();
         pluginManager.registerEvents(join, main);
-        bukkitListenerQueue.add(join);
 
         TranslateInGameListener translate = new TranslateInGameListener();
         pluginManager.registerEvents(translate, main);
-        bukkitListenerQueue.add(translate);
 
         ConfigListener inv = new ConfigListener();
         pluginManager.registerEvents(inv, main);
-        bukkitListenerQueue.add(inv);
 
         if (pluginManager.getPlugin("Citizens") != null) {
             CitizensListener citizens = new CitizensListener();
             pluginManager.registerEvents(citizens, main);
-            bukkitListenerQueue.add(citizens);
 
             main.getLogger().info(refs.getPlainMsg("wwcCitizensDetected",
                     "",
@@ -51,7 +58,6 @@ public abstract class WorldwideChatHelper {
         if (pluginManager.getPlugin("DecentHolograms") != null) {
             HologramListener hologram = new HologramListener();
             pluginManager.registerEvents(hologram, main);
-            bukkitListenerQueue.add(hologram);
 
             main.getLogger().info(refs.getPlainMsg("wwcDecentHologramsDetected",
                     "",
@@ -63,8 +69,7 @@ public abstract class WorldwideChatHelper {
                 "&d"));
     }
 
-    public void registerEventHandlers() {
-    }
+    public abstract void registerEventHandlers();
 
     // Scheduler Methods
     public enum SchedulerType {

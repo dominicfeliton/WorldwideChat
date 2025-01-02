@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.20.0</version>
+    <version>1.20.1</version>
   </parent>
 
   <artifactId>WorldwideChat-folia-dist</artifactId>
@@ -22,19 +22,19 @@
     <dependency>
       <groupId>dev.folia</groupId>
       <artifactId>folia-api</artifactId>
-      <version>1.20.6-R0.1-SNAPSHOT</version>
+      <version>1.21.4-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-bukkit-core</artifactId>
-      <version>1.20.0</version>
+      <version>1.20.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-folia</artifactId>
-      <version>1.20.0</version>
+      <version>1.20.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

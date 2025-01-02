@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.commands.Commands;
 import com.dominicfeliton.worldwidechat.util.DataRetention;
+import com.dominicfeliton.worldwidechat.util.Performance;
 import com.dominicfeliton.worldwidechat.util.Translation;
 import org.junit.jupiter.api.*;
 import org.mockbukkit.mockbukkit.MockBukkit;
@@ -81,7 +82,22 @@ public class TestMain {
         test.testConsoleUsage();
     }
 
+    /*
     @Order(3)
+    @Test
+    public void testPerformance() {
+        PlayerMock p1 = server.addPlayer("user1");
+        PlayerMock p2 = server.addPlayer("user2");
+        p1.setOp(true);
+        p2.setOp(true);
+
+        Performance test = new Performance(p1, p2, plugin, server);
+        test.testListenerRegistration();
+    }
+
+     */
+
+    @Order(4)
     @Test
     public void testDataRetention() {
         PlayerMock p1 = server.addPlayer("user1");

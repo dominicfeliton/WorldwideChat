@@ -229,7 +229,7 @@ public class WorldwideChat extends JavaPlugin {
                             .append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
                             .append((Component.text().content("Dominic Feliton")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
                             .append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
-                    refs.sendMsg(sender, versionNotice);
+                    refs.sendMsg(sender, versionNotice, true);
                     refs.playSound(WWC_VERSION, sender);
                     return true;
                 case "wwcr":
