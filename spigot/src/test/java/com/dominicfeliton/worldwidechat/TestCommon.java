@@ -33,7 +33,6 @@ public class TestCommon {
         }
         plugin.cancelBackgroundTasks(false);
         plugin.onEnable();
-
     }
 
     public static void waitForCondition(BooleanSupplier condition, long timeoutMillis, long checkIntervalMillis) {

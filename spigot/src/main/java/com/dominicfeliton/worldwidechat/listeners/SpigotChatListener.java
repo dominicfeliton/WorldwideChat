@@ -1,6 +1,5 @@
-package com.dominicfeliton.worldwidechat;
+package com.dominicfeliton.worldwidechat.listeners;
 
-import com.dominicfeliton.worldwidechat.listeners.AbstractChatListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;

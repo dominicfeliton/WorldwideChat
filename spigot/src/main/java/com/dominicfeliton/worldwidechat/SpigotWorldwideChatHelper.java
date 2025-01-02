@@ -1,5 +1,8 @@
 package com.dominicfeliton.worldwidechat;
 
+import com.dominicfeliton.worldwidechat.listeners.SpigotChatListener;
+import com.dominicfeliton.worldwidechat.listeners.SpigotPlayerLocaleListener;
+import com.dominicfeliton.worldwidechat.listeners.SpigotSignListener;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
 import net.milkbowl.vault.chat.Chat;

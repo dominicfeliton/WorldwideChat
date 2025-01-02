@@ -20,12 +20,15 @@ public abstract class WorldwideChatHelper {
     }
 
     public void unregisterListeners() {
+        String nameToTarget = "com.dominicfeliton.worldwidechat.listeners";
         ArrayList<RegisteredListener> listeners = HandlerList.getRegisteredListeners(main);
         for (RegisteredListener listener : listeners) {
             String name = listener.getListener().getClass().getName();
-            if (!name.contains("fr.minuskube.inv")) {
+            if (name.contains(nameToTarget)) {
                 refs.debugMsg("Unregistered listener: " + listener.getListener().getClass().getName());
                 HandlerList.unregisterAll(listener.getListener());
+            } else {
+                refs.debugMsg("Ignoring listener: " + listener.getListener().getClass().getName());
             }
         }
         refs.debugMsg("Size of internal registered listeners post removal: " + HandlerList.getRegisteredListeners(main).size());
