@@ -710,10 +710,13 @@ public class WorldwideChat extends JavaPlugin {
             return;
         }
 
-        if (i.equalsIgnoreCase("globe")) {
+        if (i.equalsIgnoreCase("globe") && currMCVersion.compareTo(new ComparableVersion("1.15")) >= 0) {
             translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
                     .append(Component.space());
             return;
+        } else if (i.equalsIgnoreCase("globe")) {
+            translateIcon = Component.text("+", NamedTextColor.LIGHT_PURPLE)
+                    .append(Component.space());
         }
 
         translateIcon = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
