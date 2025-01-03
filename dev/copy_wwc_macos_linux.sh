@@ -8,7 +8,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     cp /Users/$USER/Documents/GitHub/WorldwideChat/spigot-target/WorldwideChat-spigot.jar /Users/$USER/Documents/paper1132_wwc_test_server/plugins
     cp /Users/$USER/Documents/GitHub/WorldwideChat/paper-target/WorldwideChat-paper.jar /Users/$USER/Documents/wwc_test_server/plugins
     cp /Users/$USER/Documents/GitHub/WorldwideChat/folia-target/WorldwideChat-folia.jar /Users/$USER/Documents/folia_wwc_test_server/plugins
-    cd /Users/$USER/Documents/folia_wwc_test_server/
+    cd /Users/$USER/Documents/spigot_wwc_test_server/
     ./run.sh start --no-tmux
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux commands
