@@ -717,6 +717,7 @@ public class WorldwideChat extends JavaPlugin {
         } else if (i.equalsIgnoreCase("globe")) {
             translateIcon = Component.text("+", NamedTextColor.LIGHT_PURPLE)
                     .append(Component.space());
+            return;
         }
 
         translateIcon = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
