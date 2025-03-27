@@ -167,7 +167,7 @@ public class WorldwideChat extends JavaPlugin {
     @Override
     public void onEnable() {
         // Initialize critical instances
-        instance = this; // Static instance of this class
+        instance = this;
         serverFactory = new ServerAdapterFactory();
 
         // Check current server version + set adapters
@@ -566,9 +566,11 @@ public class WorldwideChat extends JavaPlugin {
                         final TextComponent wwcrSuccess = Component.text()
                                 .content(refs.getPlainMsg("wwcrSuccess", inSender))
                                 .color(NamedTextColor.GREEN)
+                                .append(Component.text().content(" ( ")).color(NamedTextColor.YELLOW)
                                 .append(Component.text()
-                                        .content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-                                        .color(NamedTextColor.YELLOW))
+                                        .content(""+TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS))
+                                        .color(NamedTextColor.YELLOW).decorate(TextDecoration.BOLD))
+                                .append(Component.text().content(" ms )").color(NamedTextColor.YELLOW))
                                 .build();
                         refs.sendMsg(inSender, wwcrSuccess);
                         refs.playSound(CommonRefs.SoundType.RELOAD_SUCCESS, inSender);
