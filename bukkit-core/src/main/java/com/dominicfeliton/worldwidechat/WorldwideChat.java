@@ -566,7 +566,7 @@ public class WorldwideChat extends JavaPlugin {
                         final TextComponent wwcrSuccess = Component.text()
                                 .content(refs.getPlainMsg("wwcrSuccess", inSender))
                                 .color(NamedTextColor.GREEN)
-                                .append(Component.text().content(" ( ")).color(NamedTextColor.YELLOW)
+                                .append(Component.text().content(" ( ").color(NamedTextColor.YELLOW))
                                 .append(Component.text()
                                         .content(""+TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS))
                                         .color(NamedTextColor.YELLOW).decorate(TextDecoration.BOLD))
