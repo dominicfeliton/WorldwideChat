@@ -4,7 +4,9 @@ import com.dominicfeliton.worldwidechat.listeners.PaperChatListener;
 import com.dominicfeliton.worldwidechat.listeners.PaperPlayerLocaleListener;
 import com.dominicfeliton.worldwidechat.listeners.PaperSignListener;
 import io.papermc.paper.event.player.AsyncChatEvent;
+import net.kyori.adventure.text.Component;
 import org.apache.maven.artifact.versioning.ComparableVersion;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginManager;
 
 public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
@@ -42,5 +44,10 @@ public class PaperWorldwideChatHelper extends SpigotWorldwideChatHelper {
 
         // Finish up
         sharedBukkitEventHandlers();
+    }
+
+    @Override
+    public void sendActionBar(Component message, CommandSender sender) {
+        sender.sendActionBar(message);
     }
 }

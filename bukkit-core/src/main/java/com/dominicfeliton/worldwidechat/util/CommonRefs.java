@@ -475,9 +475,11 @@ public class CommonRefs {
             }
         }
 
-        for (int i = 0; i < replacements.length; i++) {
-            // Translate color codes in replacements
-            replacements[i] = ChatColor.translateAlternateColorCodes('&', replacements[i] + resetCode);
+        if (replacements != null) {
+            for (int i = 0; i < replacements.length; i++) {
+                // Translate color codes in replacements
+                replacements[i] = ChatColor.translateAlternateColorCodes('&', replacements[i] + resetCode);
+            }
         }
 
         /* Get message from messages.yml */
@@ -623,7 +625,6 @@ public class CommonRefs {
      * @param countAsOneRequest
      * @return
      */
-    // TODO: if phrases are in cache,
     public List<String> translateText(List<String> listOfMsgs, Player currPlayer, boolean countAsOneRequest) {
         // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
         boolean inCache = false;
@@ -742,7 +743,27 @@ public class CommonRefs {
             /* Begin actual translation, set message to output */
             String out = inMessage;
             debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+
+            /* Init action bar */
+            GenericRunnable initAction = new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
+                }
+            };
+            wwcHelper.runSync(initAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+
+            // Do it!
             out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
+
+            /* End action bar */
+            GenericRunnable endAction = new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    wwcHelper.sendActionBar(Component.empty(), currPlayer);
+                }
+            };
+            wwcHelper.runSync(endAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
 
             /* Update stats */
             currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);

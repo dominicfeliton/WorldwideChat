@@ -5,9 +5,12 @@ import com.dominicfeliton.worldwidechat.listeners.SpigotPlayerLocaleListener;
 import com.dominicfeliton.worldwidechat.listeners.SpigotSignListener;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SpigotTaskWrapper;
+import net.kyori.adventure.text.Component;
+import net.md_5.bungee.api.ChatMessageType;
 import net.milkbowl.vault.chat.Chat;
 import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -213,4 +216,8 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         runSyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
 
+    @Override
+    public void sendActionBar(Component message, CommandSender sender) {
+        main.adventure().sender(sender).sendActionBar(message);
+    }
 }

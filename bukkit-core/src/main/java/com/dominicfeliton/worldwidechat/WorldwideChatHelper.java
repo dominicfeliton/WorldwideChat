@@ -6,6 +6,9 @@ import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredListener;
+import org.bukkit.command.CommandSender;
+
+import net.kyori.adventure.text.Component;
 
 import java.util.ArrayList;
 
@@ -104,4 +107,6 @@ public abstract class WorldwideChatHelper {
     public abstract void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
 
     public abstract void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj);
+
+    public abstract void sendActionBar(Component message, CommandSender sender);
 }

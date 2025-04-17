@@ -441,6 +441,8 @@ Messages:
   wwcsLastTranslationTime: 'Last (Successful) Translation Time: {0}'
   wwcsNotATranslator: 'There are no records yet available for {0}.'
   #------------------- /wwct Messages -------------------
+  wwctTranslationInitActionBar: 'Translating message...'
+  wwctTranslationFinishActionBar: 'Done!'
   wwctTranslationStopped: 'Your translation session has been stopped.'
   wwctTranslationStoppedOtherPlayer: 'Translation session for {0} has been stopped.'
   wwctInvalidArgs: 'Invalid arguments provided!'

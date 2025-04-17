@@ -4,8 +4,10 @@ import com.dominicfeliton.worldwidechat.util.CommonTask;
 import com.dominicfeliton.worldwidechat.util.FoliaTaskWrapper;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
+import net.kyori.adventure.text.Component;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 
 import java.util.concurrent.TimeUnit;
@@ -177,5 +179,4 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
     }
-
 }
