@@ -760,7 +760,15 @@ public class CommonRefs {
             GenericRunnable endAction = new GenericRunnable() {
                 @Override
                 protected void execute() {
-                    wwcHelper.sendActionBar(Component.empty(), currPlayer);
+                    wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
+                    /* Only show action bar for 1s */
+                    GenericRunnable clearAction = new GenericRunnable() {
+                        @Override
+                        protected void execute() {
+                            wwcHelper.sendActionBar(Component.empty(), currPlayer);
+                        }
+                    };
+                    wwcHelper.runSync(true, 15, clearAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
                 }
             };
             wwcHelper.runSync(endAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
