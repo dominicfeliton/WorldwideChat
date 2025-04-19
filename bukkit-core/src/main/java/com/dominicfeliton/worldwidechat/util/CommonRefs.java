@@ -600,7 +600,7 @@ public class CommonRefs {
 
     public void sendTransFinishAction(Player currPlayer) {
         YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        if (!conf.getBoolean("General.sendActionBar")) return;
+        if (!conf.getBoolean("Chat.sendActionBar")) return;
 
         GenericRunnable endAction = new GenericRunnable() {
             @Override
