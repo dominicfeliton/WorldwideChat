@@ -587,7 +587,7 @@ public class CommonRefs {
 
     public void sendTransInitAction(Player currPlayer) {
         YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        if (!conf.getBoolean("General.sendActionBar")) return;
+        if (!conf.getBoolean("Chat.sendActionBar")) return;
 
         GenericRunnable initAction = new GenericRunnable() {
             @Override
