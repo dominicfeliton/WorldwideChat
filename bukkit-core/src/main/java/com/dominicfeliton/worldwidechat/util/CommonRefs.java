@@ -585,6 +585,35 @@ public class CommonRefs {
         return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
     }
 
+    public void sendTransInitAction(Player currPlayer) {
+        /* Init action bar */
+        GenericRunnable initAction = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
+            }
+        };
+        wwcHelper.runSync(initAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+    }
+
+    public void sendTransFinishAction(Player currPlayer) {
+        GenericRunnable endAction = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
+                /* Only show action bar for 0.75s */
+                GenericRunnable clearAction = new GenericRunnable() {
+                    @Override
+                    protected void execute() {
+                        wwcHelper.sendActionBar(Component.empty(), currPlayer);
+                    }
+                };
+                wwcHelper.runSync(true, 15, clearAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+            }
+        };
+        wwcHelper.runSync(endAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+    }
+
     /**
      * Translates array of Strings.
      * All of them can be marked as "1" translation and bypass the rate limit.
@@ -610,10 +639,15 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
+        sendTransInitAction(currPlayer);
+
         String[] out = new String[arrayOfMsgs.length];
         for (int i = 0; i < arrayOfMsgs.length; i++) {
             out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
         }
+
+        sendTransFinishAction(currPlayer);
+
         return out;
     }
 
@@ -640,15 +674,28 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
+        sendTransInitAction(currPlayer);
+
         List<String> out = new ArrayList<>();
         for (String str : listOfMsgs) {
             out.add(translateText(str, currPlayer, countAsOneRequest));
         }
+
+        sendTransFinishAction(currPlayer);
+
         return out;
     }
 
     public String translateText(String inMessage, Player currPlayer) {
-        return translateText(inMessage, currPlayer, false);
+        /* Init action bar */
+        sendTransInitAction(currPlayer);
+
+        String out = translateText(inMessage, currPlayer, false);
+
+        /* End action bar */
+        sendTransFinishAction(currPlayer);
+
+        return out;
     }
 
     /**
@@ -661,7 +708,8 @@ public class CommonRefs {
     public String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit) {
         /* If translator settings are invalid, do not do this... */
         debugMsg("translateText() call using " + main.getTranslatorName());
-        if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
+        if (inMessage.length() <= 1 || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
+            debugMsg("Aborting translateText() due to length or plugin stopping");
             return inMessage;
         }
         YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
@@ -744,34 +792,8 @@ public class CommonRefs {
             String out = inMessage;
             debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
 
-            /* Init action bar */
-            GenericRunnable initAction = new GenericRunnable() {
-                @Override
-                protected void execute() {
-                    wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
-                }
-            };
-            wwcHelper.runSync(initAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
-
             // Do it!
             out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
-
-            /* End action bar */
-            GenericRunnable endAction = new GenericRunnable() {
-                @Override
-                protected void execute() {
-                    wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
-                    /* Only show action bar for 1s */
-                    GenericRunnable clearAction = new GenericRunnable() {
-                        @Override
-                        protected void execute() {
-                            wwcHelper.sendActionBar(Component.empty(), currPlayer);
-                        }
-                    };
-                    wwcHelper.runSync(true, 15, clearAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
-                }
-            };
-            wwcHelper.runSync(endAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
 
             /* Update stats */
             currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
