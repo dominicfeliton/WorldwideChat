@@ -32,7 +32,7 @@ public class GoogleSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess",
-                    new String[]{"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv);
+                    new String[]{"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.inv.get());
         }
     }
 

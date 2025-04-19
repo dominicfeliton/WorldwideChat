@@ -32,7 +32,7 @@ public class OllamaSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationOllamaURLSuccess",
-                    new String[]{"Translator.ollamaURL", "Translator.useOllama"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.smartInv);
+                    new String[]{"Translator.ollamaURL", "Translator.useOllama"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv.get());
         }
     }
 
@@ -52,7 +52,7 @@ public class OllamaSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationOllamaModelSuccess",
-                    new String[]{"Translator.ollamaModel", "Translator.useOllama"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.smartInv);
+                    new String[]{"Translator.ollamaModel", "Translator.useOllama"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv.get());
         }
     }
 

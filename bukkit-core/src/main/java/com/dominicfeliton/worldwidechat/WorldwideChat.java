@@ -135,6 +135,8 @@ public class WorldwideChat extends JavaPlugin {
 
     private boolean enableSounds = true;
 
+    private boolean sendActionBar = true;
+
     /* Default constructor */
     public WorldwideChat() {
         super();
@@ -983,6 +985,8 @@ public class WorldwideChat extends JavaPlugin {
         enableSounds = i;
     }
 
+    public void setSendActionBar(boolean i) { sendActionBar = i; }
+
     /* Getters */
     public Component getTranslateIcon() {
         return translateIcon == null ? Component.empty() : translateIcon;
@@ -1219,4 +1223,6 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public boolean isSoundEnabled() { return enableSounds; }
+
+    public boolean getSendActionBar() { return sendActionBar; }
 }

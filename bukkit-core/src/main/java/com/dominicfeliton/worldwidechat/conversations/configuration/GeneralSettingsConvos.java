@@ -34,7 +34,7 @@ public class GeneralSettingsConvos {
 
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, @NotNull Number input) {
-            return invMan.genericConfigConvo(input.intValue() >= 7, context, "wwcConfigConversationFatalAsyncSuccess", "General.fatalAsyncTaskTimeout", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+            return invMan.genericConfigConvo(input.intValue() >= 7, context, "wwcConfigConversationFatalAsyncSuccess", "General.fatalAsyncTaskTimeout", input, CONFIG_GUI_TAGS.GEN_SET.inv.get());
         }
 
     }
@@ -58,7 +58,7 @@ public class GeneralSettingsConvos {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             if (refs.isSupportedLang(input, CommonRefs.LangType.LOCAL) || input.equals("0")) {
                 input = !input.equals("0") ? refs.getSupportedLang(input, CommonRefs.LangType.LOCAL).getLangCode() : "0";
-                return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+                return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.inv.get());
             }
             Player currPlayer = ((Player) context.getForWhom());
             refs.sendMsg("wwcConfigConversationLangInvalid", "", "&c", currPlayer);
@@ -83,7 +83,7 @@ public class GeneralSettingsConvos {
 
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
-            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, CONFIG_GUI_TAGS.GEN_SET.inv.get());
         }
     }
 
@@ -103,7 +103,7 @@ public class GeneralSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return invMan.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationSyncUserDataDelaySuccess", "General.syncUserDataDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.smartInv);
+            return invMan.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationSyncUserDataDelaySuccess", "General.syncUserDataDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.inv.get());
         }
     }
 
@@ -123,7 +123,7 @@ public class GeneralSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            return invMan.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationUpdateCheckerSuccess", "General.updateCheckerDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.smartInv);
+            return invMan.genericConfigConvo(input.intValue() > 10, context, "wwcConfigConversationUpdateCheckerSuccess", "General.updateCheckerDelay", input.intValue(), CONFIG_GUI_TAGS.GEN_SET.inv.get());
         }
     }
 

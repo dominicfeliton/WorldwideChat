@@ -586,7 +586,9 @@ public class CommonRefs {
     }
 
     public void sendTransInitAction(Player currPlayer) {
-        /* Init action bar */
+        YamlConfiguration conf = main.getConfigManager().getMainConfig();
+        if (!conf.getBoolean("General.sendActionBar")) return;
+
         GenericRunnable initAction = new GenericRunnable() {
             @Override
             protected void execute() {
@@ -597,11 +599,14 @@ public class CommonRefs {
     }
 
     public void sendTransFinishAction(Player currPlayer) {
+        YamlConfiguration conf = main.getConfigManager().getMainConfig();
+        if (!conf.getBoolean("General.sendActionBar")) return;
+
         GenericRunnable endAction = new GenericRunnable() {
             @Override
             protected void execute() {
                 wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
-                /* Only show action bar for 0.75s */
+                // Only show action bar for 0.75s
                 GenericRunnable clearAction = new GenericRunnable() {
                     @Override
                     protected void execute() {

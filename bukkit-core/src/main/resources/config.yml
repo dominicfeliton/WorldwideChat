@@ -49,6 +49,7 @@ Chat:
   sendOutgoingHoverTextChat: true
   enableBlacklist: false
   useVault: true
+  sendActionBar: true
   chatListenerPriority: HIGHEST
   separateChatChannel:
     icon: globe
@@ -65,7 +66,7 @@ Translator:
   azureRegion: azure_region_goes_here
   useChatGPT: false
   chatGPTAPIKey: chatgpt_key_goes_here
-  chatGPTModel: gpt-4o-2024-08-06
+  chatGPTModel: gpt-4.1-2025-04-14
   chatGPTURL: "https://api.openai.com/v1/chat/completions"
   useDeepLTranslate: false
   deepLAPIKey: deepl_key_goes_here

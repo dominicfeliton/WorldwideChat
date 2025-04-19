@@ -32,7 +32,7 @@ public class DeepLSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationDeepLTranslateApiKeySuccess",
-                    new String[]{"Translator.deepLAPIKey", "Translator.useDeepLTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv);
+                    new String[]{"Translator.deepLAPIKey", "Translator.useDeepLTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.DEEP_TRANS_SET.inv.get());
         }
     }
 

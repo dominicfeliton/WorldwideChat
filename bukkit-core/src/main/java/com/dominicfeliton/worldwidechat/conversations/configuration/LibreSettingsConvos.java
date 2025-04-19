@@ -32,7 +32,7 @@ public class LibreSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreTranslateApiKeySuccess",
-                    new String[]{"Translator.libreAPIKey", "Translator.useLibreTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
+                    new String[]{"Translator.libreAPIKey", "Translator.useLibreTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.inv.get());
         }
     }
 
@@ -52,7 +52,7 @@ public class LibreSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreURLSuccess",
-                    new String[]{"Translator.libreURL", "Translator.useLibreTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
+                    new String[]{"Translator.libreURL", "Translator.useLibreTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.inv.get());
         }
     }
 

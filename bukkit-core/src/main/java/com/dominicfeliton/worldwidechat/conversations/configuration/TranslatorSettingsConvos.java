@@ -33,7 +33,7 @@ public class TranslatorSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() > 0 && input.intValue() <= 255, context, "wwcConfigConversationCharacterLimitSuccess",
-                    "Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
+                    "Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
@@ -53,7 +53,7 @@ public class TranslatorSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess",
-                    "Translator.errorLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
+                    "Translator.errorLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
@@ -73,7 +73,7 @@ public class TranslatorSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess",
-                    "Translator.rateLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
+                    "Translator.rateLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
@@ -93,7 +93,7 @@ public class TranslatorSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess",
-                    "Translator.translatorCacheSize", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
+                    "Translator.translatorCacheSize", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
@@ -123,7 +123,7 @@ public class TranslatorSettingsConvos {
                 return this;
             } else {
                 return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationIgnoreErrorsSuccess",
-                        new String[]{"Translator.errorsToIgnore"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.TRANS_SET.smartInv);
+                        new String[]{"Translator.errorsToIgnore"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.TRANS_SET.inv.get());
             }
         }
     }

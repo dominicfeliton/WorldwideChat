@@ -33,7 +33,7 @@ public class SQLSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLDatabaseNameSuccess",
-                    new String[]{"Storage.sqlDatabaseName"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
+                    new String[]{"Storage.sqlDatabaseName"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.inv.get());
         }
     }
 
@@ -53,7 +53,7 @@ public class SQLSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLHostnameSuccess",
-                    new String[]{"Storage.sqlHostname"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
+                    new String[]{"Storage.sqlHostname"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.inv.get());
         }
     }
 
@@ -83,7 +83,7 @@ public class SQLSettingsConvos {
                 return this;
             } else {
                 return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLOptionalArgsSuccess",
-                        new String[]{"Storage.sqlOptionalArgs"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
+                        new String[]{"Storage.sqlOptionalArgs"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.SQL_SET.inv.get());
             }
         }
     }
@@ -104,7 +104,7 @@ public class SQLSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLPasswordSuccess",
-                    new String[]{"Storage.sqlPassword"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
+                    new String[]{"Storage.sqlPassword"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.inv.get());
         }
     }
 
@@ -125,7 +125,7 @@ public class SQLSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationSQLPortSuccess",
-                    new String[]{"Storage.sqlPort"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
+                    new String[]{"Storage.sqlPort"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.inv.get());
         }
 
     }
@@ -146,7 +146,7 @@ public class SQLSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLUsernameSuccess",
-                    new String[]{"Storage.sqlUsername"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.smartInv);
+                    new String[]{"Storage.sqlUsername"}, new Object[]{input}, CONFIG_GUI_TAGS.SQL_SET.inv.get());
         }
     }
 

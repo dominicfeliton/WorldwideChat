@@ -46,7 +46,7 @@ public class ChatSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChannelIconSuccess",
-                    "Chat.separateChatChannel.icon", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
+                    "Chat.separateChatChannel.icon", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv.get());
         }
     }
 
@@ -69,7 +69,7 @@ public class ChatSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
-                    "Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
+                    "Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv.get());
         }
     }
 
@@ -92,7 +92,7 @@ public class ChatSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatHoverFormatSuccess",
-                    "Chat.separateChatChannel.hoverFormat", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.smartInv);
+                    "Chat.separateChatChannel.hoverFormat", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv.get());
         }
     }
 
@@ -123,7 +123,7 @@ public class ChatSettingsConvos {
 
             if (valid) {
                 return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatPrioritySuccess",
-                        "Chat.chatListenerPriority", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv);
+                        "Chat.chatListenerPriority", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.inv.get());
             }
             refs.sendMsg("wwcConfigConversationChatPriorityBadInput",
                     "&6" + Arrays.toString(EventPriority.values()),

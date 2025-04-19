@@ -4,6 +4,7 @@ import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
+import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.ClickableItem;
@@ -80,7 +81,10 @@ public class WWCInventoryManager extends InventoryManager {
                 if (!contents.pagination().isFirst()) {
                     contents.inventory().open(player, contents.pagination().getPage() - 1);
                 } else {
-                    ((SmartInventory) args[0]).open(player);
+                    SmartInventory target = (args[0] instanceof MenuGui.LazySmartInventory)
+                            ? ((MenuGui.LazySmartInventory) args[0]).get()
+                            : (SmartInventory) args[0];
+                    target.open(player);
                 }
             }));
         } else if (buttonType.equalsIgnoreCase("Next")) {
@@ -94,7 +98,10 @@ public class WWCInventoryManager extends InventoryManager {
                 if (!contents.pagination().isLast()) {
                     contents.inventory().open(player, contents.pagination().getPage() + 1);
                 } else {
-                    ((SmartInventory) args[0]).open(player);
+                    SmartInventory target = (args[0] instanceof MenuGui.LazySmartInventory)
+                        ? ((MenuGui.LazySmartInventory) args[0]).get()
+                        : (SmartInventory) args[0];
+                    target.open(player);
                 }
             }));
         } else if (buttonType.equalsIgnoreCase("Page Number")) {
@@ -103,16 +110,10 @@ public class WWCInventoryManager extends InventoryManager {
                     "&6" + args[0],
                     "&b",
                     player));
-            if (args[0].equals("1")) {
-                addGlowEffect(pageMeta);
-                pageButton.setItemMeta(pageMeta);
-                contents.set(x, y, ClickableItem.empty(pageButton));
-            } else {
-                pageButton.setItemMeta(pageMeta);
-                contents.set(x, y, ClickableItem.of(pageButton, e -> {
-                    contents.inventory().open(player, 0);
-                }));
-            }
+
+            addGlowEffect(pageMeta);
+            pageButton.setItemMeta(pageMeta);
+            contents.set(x, y, ClickableItem.empty(pageButton));
         } else if (buttonType.equalsIgnoreCase("Quit")) {
             pageButton = XMaterial.BARRIER.parseItem();
             pageMeta = pageButton.getItemMeta();

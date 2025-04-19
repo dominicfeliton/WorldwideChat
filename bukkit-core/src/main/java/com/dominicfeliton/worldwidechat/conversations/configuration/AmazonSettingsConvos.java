@@ -33,7 +33,7 @@ public class AmazonSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateAccessKeySuccess",
-                    new String[]{"Translator.amazonAccessKey", "Translator.useAmazonTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
+                    new String[]{"Translator.amazonAccessKey", "Translator.useAmazonTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.inv.get());
         }
     }
 
@@ -54,7 +54,7 @@ public class AmazonSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess",
-                    new String[]{"Translator.amazonRegion", "Translator.useAmazonTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
+                    new String[]{"Translator.amazonRegion", "Translator.useAmazonTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.inv.get());
         }
     }
 
@@ -75,7 +75,7 @@ public class AmazonSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateSecretKeySuccess",
-                    new String[]{"Translator.amazonSecretKey", "Translator.useAmazonTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
+                    new String[]{"Translator.amazonSecretKey", "Translator.useAmazonTranslate"}, new Object[]{input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.inv.get());
         }
     }
 
