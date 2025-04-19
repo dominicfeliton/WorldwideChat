@@ -128,14 +128,61 @@ public class MenuGui implements InventoryProvider {
         CONFIG_GUI_TAGS.TRANS_SET.inv = lazy("translatorSettingsMenu", 5, 9,
                 "wwcConfigGUITranslatorSettings", ChatColor.BLUE, this::buildTranslatorRoot);
 
-        CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.inv   = lazy("googleTranslator",   "wwcConfigGUIEachTranslatorSettings", this::buildGoogle,   "Google");
-        CONFIG_GUI_TAGS.AMAZON_TRANS_SET.inv   = lazy("amazonTranslator",   "wwcConfigGUIEachTranslatorSettings", this::buildAmazon,  "Amazon");
-        CONFIG_GUI_TAGS.LIBRE_TRANS_SET.inv    = lazy("libreTranslator",    "wwcConfigGUIEachTranslatorSettings", this::buildLibre,   "Libre");
-        CONFIG_GUI_TAGS.DEEP_TRANS_SET.inv     = lazy("deepLTranslator",    "wwcConfigGUIEachTranslatorSettings", this::buildDeepL,   "DeepL");
-        CONFIG_GUI_TAGS.AZURE_TRANS_SET.inv    = lazy("azureTranslator",    "wwcConfigGUIEachTranslatorSettings", this::buildAzure,   "Azure");
-        CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.inv  = lazy("systranTranslator",  "wwcConfigGUIEachTranslatorSettings", this::buildSystran, "Systran");
-        CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.inv  = lazy("chatgptTranslator",  "wwcConfigGUIEachTranslatorSettings", this::buildChatGPT, "ChatGPT");
-        CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv   = lazy("ollamaTranslator",   "wwcConfigGUIEachTranslatorSettings", this::buildOllama,  "Ollama");
+        CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("googleTranslator", "wwcConfigGUIEachTranslatorSettings", "Google");
+            g.buildGoogle();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.AMAZON_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("amazonTranslator", "wwcConfigGUIEachTranslatorSettings", "Amazon");
+            g.buildAmazon();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.LIBRE_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("libreTranslator", "wwcConfigGUIEachTranslatorSettings", "Libre");
+            g.buildLibre();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.DEEP_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("deepLTranslator", "wwcConfigGUIEachTranslatorSettings", "DeepL");
+            g.buildDeepL();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.AZURE_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("azureTranslator", "wwcConfigGUIEachTranslatorSettings", "Azure");
+            g.buildAzure();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("systranTranslator", "wwcConfigGUIEachTranslatorSettings", "Systran");
+            g.buildSystran();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("chatgptTranslator", "wwcConfigGUIEachTranslatorSettings", "ChatGPT");
+            g.buildChatGPT();
+            return inv;
+        });
+
+        CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("ollamaTranslator", "wwcConfigGUIEachTranslatorSettings", "Ollama");
+            g.buildOllama();
+            return inv;
+        });
 
         CONFIG_GUI_TAGS.AI_SET.inv = lazy("aiSettings", 3, 9,
                 "wwcConfigGUIAISettings", ChatColor.BLUE, this::buildAI);
