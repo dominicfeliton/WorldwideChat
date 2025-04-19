@@ -171,7 +171,6 @@ public class ChatSettingsConvos {
                         bannedWords.add(input); // Add currentTerm to the list
                         config.set("bannedWords", new ArrayList<String>(bannedWords)); // Save the updated list back to the config
 
-                        // TODO: Move addPlayerUsingConfigurationGUI to invMan
                         main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
                         refs.sendMsg("wwcConfigConversationBlacklistAddSuccess",
                                 "",
