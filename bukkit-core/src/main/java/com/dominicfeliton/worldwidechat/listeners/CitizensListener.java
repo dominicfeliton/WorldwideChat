@@ -81,6 +81,7 @@ public class CitizensListener implements Listener {
             refs.debugMsg("Add hover!");
             Component format = Component.empty()
                     .append(main.getTranslateHoverFormat("","","", p, null))
+                    .append(Component.space())
                     .append(Component.text(original));
             outMsg = outMsg.hoverEvent(HoverEvent.showText(format));
         }

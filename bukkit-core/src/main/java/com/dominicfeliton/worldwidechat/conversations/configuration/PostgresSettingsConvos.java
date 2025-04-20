@@ -33,7 +33,7 @@ public class PostgresSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresDatabaseNameSuccess",
-                    new String[]{"Storage.postgresDatabaseName"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
+                    new String[]{"Storage.postgresDatabaseName"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.inv.get());
         }
     }
 
@@ -53,7 +53,7 @@ public class PostgresSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresHostnameSuccess",
-                    new String[]{"Storage.postgresHostname"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
+                    new String[]{"Storage.postgresHostname"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.inv.get());
         }
     }
 
@@ -83,7 +83,7 @@ public class PostgresSettingsConvos {
                 return this;
             } else {
                 return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresOptionalArgsSuccess",
-                        new String[]{"Storage.postgresOptionalArgs"}, new Object[]{input.split(",")}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
+                        new String[]{"Storage.postgresOptionalArgs"}, new Object[]{input.split(",")}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.inv.get());
             }
         }
     }
@@ -104,7 +104,7 @@ public class PostgresSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresPasswordSuccess",
-                    new String[]{"Storage.postgresPassword"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
+                    new String[]{"Storage.postgresPassword"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.inv.get());
         }
     }
 
@@ -125,7 +125,7 @@ public class PostgresSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationPostgresPortSuccess",
-                    new String[]{"Storage.postgresPort"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
+                    new String[]{"Storage.postgresPort"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.inv.get());
         }
 
     }
@@ -146,7 +146,7 @@ public class PostgresSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresUsernameSuccess",
-                    new String[]{"Storage.postgresUsername"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.smartInv);
+                    new String[]{"Storage.postgresUsername"}, new Object[]{input}, MenuGui.CONFIG_GUI_TAGS.POSTGRES_SET.inv.get());
         }
     }
 }

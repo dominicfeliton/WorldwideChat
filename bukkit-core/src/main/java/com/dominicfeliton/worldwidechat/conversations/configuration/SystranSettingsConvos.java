@@ -33,7 +33,7 @@ public class SystranSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSystranTranslateApiKeySuccess",
-                    new String[]{"Translator.systranAPIKey", "Translator.useSystranTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv);
+                    new String[]{"Translator.systranAPIKey", "Translator.useSystranTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.inv.get());
         }
     }
 

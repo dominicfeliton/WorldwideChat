@@ -33,7 +33,7 @@ public class MongoSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoDatabaseNameSuccess",
-                    new String[]{"Storage.mongoDatabaseName"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
+                    new String[]{"Storage.mongoDatabaseName"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.inv.get());
         }
     }
 
@@ -53,7 +53,7 @@ public class MongoSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoHostnameSuccess",
-                    new String[]{"Storage.mongoHostname"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
+                    new String[]{"Storage.mongoHostname"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.inv.get());
         }
     }
 
@@ -83,7 +83,7 @@ public class MongoSettingsConvos {
                 return this;
             } else {
                 return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoOptionalArgsSuccess",
-                        new String[]{"Storage.mongoOptionalArgs"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
+                        new String[]{"Storage.mongoOptionalArgs"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.MONGO_SET.inv.get());
             }
         }
     }
@@ -104,7 +104,7 @@ public class MongoSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoPasswordSuccess",
-                    new String[]{"Storage.mongoPassword"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
+                    new String[]{"Storage.mongoPassword"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.inv.get());
         }
     }
 
@@ -125,7 +125,7 @@ public class MongoSettingsConvos {
         @Override
         protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
             return invMan.genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationMongoPortSuccess",
-                    new String[]{"Storage.mongoPort"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
+                    new String[]{"Storage.mongoPort"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.inv.get());
         }
 
     }
@@ -146,7 +146,7 @@ public class MongoSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoUsernameSuccess",
-                    new String[]{"Storage.mongoUsername"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
+                    new String[]{"Storage.mongoUsername"}, new Object[]{input}, CONFIG_GUI_TAGS.MONGO_SET.inv.get());
         }
     }
 

@@ -100,7 +100,7 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
             if (!pagination.isFirst()) {
                 invManager.setCommonButton(5, 2, player, contents, "Previous");
             } else {
-                invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{MenuGui.CONFIG_GUI_TAGS.CHAT_SET.smartInv});
+                invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{MenuGui.CONFIG_GUI_TAGS.CHAT_SET.inv.get()});
             }
 
             /* Bottom Right Option: Next Page */

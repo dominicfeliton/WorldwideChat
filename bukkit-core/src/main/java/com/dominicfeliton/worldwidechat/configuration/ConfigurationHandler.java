@@ -365,6 +365,13 @@ public class ConfigurationHandler {
             main.setBlacklistStatus(true);
             main.getLogger().warning(refs.getPlainMsg("wwcBlacklistBadFormat"));
         }
+        // Send Action Bar
+        try {
+            main.setSendActionBar(mainConfig.getBoolean("Chat.sendActionBar"));
+        } catch (Exception e) {
+            main.setSendActionBar(true);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigActionBarInvalid"));
+        }
         // Separate Chat Channel Prefix
         try {
             main.setTranslateIcon(mainConfig.getString("Chat.separateChatChannel.icon"));

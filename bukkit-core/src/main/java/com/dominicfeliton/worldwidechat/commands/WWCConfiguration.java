@@ -18,7 +18,7 @@ public class WWCConfiguration extends BasicCommand {
     public boolean processCommand() {
         MenuGui menuGui = new MenuGui((Player) sender, main.getTranslatorName());
         menuGui.genAllConfigUIs();
-        MenuGui.CONFIG_GUI_TAGS.GEN_SET.smartInv.open((Player) sender);
+        MenuGui.CONFIG_GUI_TAGS.GEN_SET.inv.get().open((Player) sender);
         return true;
     }
 

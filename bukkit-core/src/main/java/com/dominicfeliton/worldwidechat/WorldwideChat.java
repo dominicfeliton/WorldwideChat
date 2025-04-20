@@ -42,7 +42,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "12252024-2"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "04162024-1"; // MMDDYYYY-revisionNumber
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -135,6 +135,8 @@ public class WorldwideChat extends JavaPlugin {
 
     private boolean enableSounds = true;
 
+    private boolean sendActionBar = true;
+
     /* Default constructor */
     public WorldwideChat() {
         super();
@@ -167,7 +169,7 @@ public class WorldwideChat extends JavaPlugin {
     @Override
     public void onEnable() {
         // Initialize critical instances
-        instance = this; // Static instance of this class
+        instance = this;
         serverFactory = new ServerAdapterFactory();
 
         // Check current server version + set adapters
@@ -566,9 +568,11 @@ public class WorldwideChat extends JavaPlugin {
                         final TextComponent wwcrSuccess = Component.text()
                                 .content(refs.getPlainMsg("wwcrSuccess", inSender))
                                 .color(NamedTextColor.GREEN)
+                                .append(Component.text().content(" ( ").color(NamedTextColor.YELLOW))
                                 .append(Component.text()
-                                        .content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-                                        .color(NamedTextColor.YELLOW))
+                                        .content(""+TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS))
+                                        .color(NamedTextColor.YELLOW).decorate(TextDecoration.BOLD))
+                                .append(Component.text().content(" ms )").color(NamedTextColor.YELLOW))
                                 .build();
                         refs.sendMsg(inSender, wwcrSuccess);
                         refs.playSound(CommonRefs.SoundType.RELOAD_SUCCESS, inSender);
@@ -981,6 +985,8 @@ public class WorldwideChat extends JavaPlugin {
         enableSounds = i;
     }
 
+    public void setSendActionBar(boolean i) { sendActionBar = i; }
+
     /* Getters */
     public Component getTranslateIcon() {
         return translateIcon == null ? Component.empty() : translateIcon;
@@ -1217,4 +1223,6 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public boolean isSoundEnabled() { return enableSounds; }
+
+    public boolean getSendActionBar() { return sendActionBar; }
 }

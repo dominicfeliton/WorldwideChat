@@ -32,7 +32,7 @@ public class ChatGPTSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatGPTApiKeySuccess",
-                    new String[]{"Translator.chatGPTAPIKey", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
+                    new String[]{"Translator.chatGPTAPIKey", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.inv.get());
         }
     }
 
@@ -52,7 +52,7 @@ public class ChatGPTSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatGPTURLSuccess",
-                    new String[]{"Translator.chatGPTURL", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
+                    new String[]{"Translator.chatGPTURL", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.inv.get());
         }
     }
 
@@ -72,7 +72,7 @@ public class ChatGPTSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatGPTModelSuccess",
-                    new String[]{"Translator.chatGPTModel", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.smartInv);
+                    new String[]{"Translator.chatGPTModel", "Translator.useChatGPT"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.CHATGPT_TRANS_SET.inv.get());
         }
     }
 

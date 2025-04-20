@@ -33,7 +33,7 @@ public class AzureSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAzureTranslateApiKeySuccess",
-                    new String[]{"Translator.azureAPIKey", "Translator.useAzureTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv);
+                    new String[]{"Translator.azureAPIKey", "Translator.useAzureTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.inv.get());
         }
     }
 
@@ -54,7 +54,7 @@ public class AzureSettingsConvos {
         @Override
         public Prompt acceptInput(@NotNull ConversationContext context, String input) {
             return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAzureTranslateRegionSuccess",
-                    new String[]{"Translator.azureRegion", "Translator.useAzureTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv);
+                    new String[]{"Translator.azureRegion", "Translator.useAzureTranslate"}, new Object[]{input, false}, MenuGui.CONFIG_GUI_TAGS.AZURE_TRANS_SET.inv.get());
         }
     }
 }

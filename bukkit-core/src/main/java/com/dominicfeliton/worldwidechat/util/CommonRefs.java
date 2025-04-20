@@ -58,7 +58,7 @@ public class CommonRefs {
 
     protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
-    public static String[] supportedMCVersions = {"1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
+    public static String[] supportedMCVersions = {"1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
 
     public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 
@@ -475,9 +475,11 @@ public class CommonRefs {
             }
         }
 
-        for (int i = 0; i < replacements.length; i++) {
-            // Translate color codes in replacements
-            replacements[i] = ChatColor.translateAlternateColorCodes('&', replacements[i] + resetCode);
+        if (replacements != null) {
+            for (int i = 0; i < replacements.length; i++) {
+                // Translate color codes in replacements
+                replacements[i] = ChatColor.translateAlternateColorCodes('&', replacements[i] + resetCode);
+            }
         }
 
         /* Get message from messages.yml */
@@ -583,6 +585,40 @@ public class CommonRefs {
         return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
     }
 
+    public void sendTransInitAction(Player currPlayer) {
+        YamlConfiguration conf = main.getConfigManager().getMainConfig();
+        if (!conf.getBoolean("Chat.sendActionBar")) return;
+
+        GenericRunnable initAction = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
+            }
+        };
+        wwcHelper.runSync(initAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+    }
+
+    public void sendTransFinishAction(Player currPlayer) {
+        YamlConfiguration conf = main.getConfigManager().getMainConfig();
+        if (!conf.getBoolean("Chat.sendActionBar")) return;
+
+        GenericRunnable endAction = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
+                // Only show action bar for 0.75s
+                GenericRunnable clearAction = new GenericRunnable() {
+                    @Override
+                    protected void execute() {
+                        wwcHelper.sendActionBar(Component.empty(), currPlayer);
+                    }
+                };
+                wwcHelper.runSync(true, 15, clearAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+            }
+        };
+        wwcHelper.runSync(endAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+    }
+
     /**
      * Translates array of Strings.
      * All of them can be marked as "1" translation and bypass the rate limit.
@@ -608,10 +644,15 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
+        sendTransInitAction(currPlayer);
+
         String[] out = new String[arrayOfMsgs.length];
         for (int i = 0; i < arrayOfMsgs.length; i++) {
             out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
         }
+
+        sendTransFinishAction(currPlayer);
+
         return out;
     }
 
@@ -623,7 +664,6 @@ public class CommonRefs {
      * @param countAsOneRequest
      * @return
      */
-    // TODO: if phrases are in cache,
     public List<String> translateText(List<String> listOfMsgs, Player currPlayer, boolean countAsOneRequest) {
         // Don't translate if 1) we care about the rate limit and 2) they have a rate limit blocker
         boolean inCache = false;
@@ -639,15 +679,28 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
+        sendTransInitAction(currPlayer);
+
         List<String> out = new ArrayList<>();
         for (String str : listOfMsgs) {
             out.add(translateText(str, currPlayer, countAsOneRequest));
         }
+
+        sendTransFinishAction(currPlayer);
+
         return out;
     }
 
     public String translateText(String inMessage, Player currPlayer) {
-        return translateText(inMessage, currPlayer, false);
+        /* Init action bar */
+        sendTransInitAction(currPlayer);
+
+        String out = translateText(inMessage, currPlayer, false);
+
+        /* End action bar */
+        sendTransFinishAction(currPlayer);
+
+        return out;
     }
 
     /**
@@ -660,7 +713,8 @@ public class CommonRefs {
     public String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit) {
         /* If translator settings are invalid, do not do this... */
         debugMsg("translateText() call using " + main.getTranslatorName());
-        if (inMessage.isEmpty() || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
+        if (inMessage.length() <= 1 || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
+            debugMsg("Aborting translateText() due to length or plugin stopping");
             return inMessage;
         }
         YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
@@ -742,6 +796,8 @@ public class CommonRefs {
             /* Begin actual translation, set message to output */
             String out = inMessage;
             debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+
+            // Do it!
             out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
 
             /* Update stats */
@@ -1434,7 +1490,6 @@ public class CommonRefs {
      */
     public Map<String, SupportedLang> fixLangNames(Map<String, SupportedLang> in, boolean nativesOnly, boolean preInit) {
         // Adjust the file path as necessary
-        // TODO: Take in hashSet instead of converting? Seems really unnecessary...
         String isoJsonFilePath = "ISO_639-WWC-Modified.json";
         ObjectMapper objectMapper = new ObjectMapper();
         Map<String, ISOLanguage> languageMap;

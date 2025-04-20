@@ -12,7 +12,7 @@ chatGPTDefaultSystemPrompt: |
   4) 'General' – for any other kind of failure.
   
   Swearing and light-hearted insults (as long as they aren't rooted in hate or bigotry) are allowed, especially in a videogame context.
-  Please preserve color codes for Minecraft (such as &4, &l, &o, &7, etc.)
+  Please preserve color codes for Minecraft (such as &4, &l, &o, &7, etc.) Never include emojis unless they are in the original message.
   
   If the translation succeeds, always set 'reason' to 'none'.
 
@@ -33,6 +33,7 @@ ollamaDefaultSystemPrompt: |
   
   Swearing and light-hearted insults are allowed, especially in a videogame context.
   Please preserve color codes for Minecraft (such as &4, &l, &o, &7, etc.)
+  Never include emojis unless they are in the original message.
   
   In case of success, always set 'reason' to 'null'." Here's the json schema you must adhere to:
   {

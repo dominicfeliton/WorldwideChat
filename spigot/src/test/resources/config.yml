@@ -49,6 +49,7 @@ Chat:
   sendOutgoingHoverTextChat: false
   useVault: false
   chatListenerPriority: HIGHEST
+  sendActionBar: true
   separateChatChannel:
     icon: globe
     format: "{prefix}{username}{suffix}:"
@@ -56,9 +57,6 @@ Chat:
     force: false
 Translator:
   testModeTranslator: true
-  useWatsonTranslate: false
-  watsonAPIKey: watson_key_goes_here
-  watsonURL: watson_site_goes_here
   useGoogleTranslate: false
   googleTranslateAPIKey: google_translate_key_goes_here
   useAmazonTranslate: false
