@@ -52,6 +52,7 @@ public class WWCLocalize extends BasicCommand {
     }
 
     private boolean changeLocalization(String inName, String locale) {
+        // TODO: Send lang name not code to user
         Player inPlayer = Bukkit.getPlayerExact(inName);
 
         if (inPlayer == null) {
