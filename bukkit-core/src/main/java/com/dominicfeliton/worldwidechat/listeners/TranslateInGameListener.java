@@ -168,6 +168,9 @@ public class TranslateInGameListener implements Listener {
                 /* Start sign translation */
                 Sign currentSign = (Sign) event.getClickedBlock().getState();
 
+                /* Send message */
+                refs.sendMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
+
                 GenericRunnable out = new GenericRunnable() {
                     @Override
                     protected void execute() {
@@ -175,9 +178,6 @@ public class TranslateInGameListener implements Listener {
                         String[] signText = currentSign.getLines();
                         String[] changedSignText = refs.translateText(signText, event.getPlayer(), true);
                         boolean textLimit = false;
-
-                        /* Send message */
-                        refs.sendMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
 
                         // Check each translated line to make sure length fits in sign
                         for (String eaStr : changedSignText) {
