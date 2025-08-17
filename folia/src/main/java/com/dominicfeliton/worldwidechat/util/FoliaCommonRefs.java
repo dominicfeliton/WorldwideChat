@@ -1,7 +1,5 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.dominicfeliton.worldwidechat.util.GenericRunnable;
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import org.bukkit.Bukkit;
@@ -10,8 +8,12 @@ import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
-import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
-
+/**
+ * Folia implementation that mirrors {@link PaperCommonRefs} but without any
+ * thread‑scheduling logic.  Folia already runs on the main server thread
+ * for command‑sender messaging, and Adventure is natively available, so we
+ * simply use the standard Bukkit {@code sender.sendMessage(...)} call.
+ */
 public class FoliaCommonRefs extends CommonRefs {
 
     @Override
@@ -27,16 +29,9 @@ public class FoliaCommonRefs extends CommonRefs {
                 .build()
                 : Component.text().append(originalMessage.asComponent()).build();
 
-        // Adventure send – no Bukkit send attempt
-        if (sender instanceof Player) {
-            Player p = (Player) sender;
-            if (!p.isOnline()) return;
-            Audience adventureSender = main.adventure().sender(p);
-            adventureSender.sendMessage(outMessage);
-        } else {
-            Audience adventureSender = main.adventure().sender(sender);
-            adventureSender.sendMessage(outMessage);
-        }
+        // Do not attempt to send to offline players
+        if (sender instanceof Player && !((Player) sender).isOnline()) return;
+        sender.sendMessage(outMessage);
     }
 
     @Override
@@ -44,16 +39,12 @@ public class FoliaCommonRefs extends CommonRefs {
         sendMsg(sender, originalMessage, true);
     }
 
-    /**
-     * Checks if the server is stopping or reloading, by attempting to register a scheduler task.
-     * This will throw an IllegalPluginAccessException if we are on Bukkit or one of its derivatives.
-     *
-     * @return Boolean - Whether the server is reloading/stopping or not
-     */
     public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
         if (playerId == null || originalMessage == null) return;
+
         Player p = Bukkit.getPlayer(playerId);
         if (p == null || !p.isOnline()) return;
+
         TextComponent outMessage = addPrefix
                 ? Component.text()
                 .append(main.getPluginPrefix().asComponent())
@@ -61,8 +52,8 @@ public class FoliaCommonRefs extends CommonRefs {
                 .append(originalMessage.asComponent())
                 .build()
                 : Component.text().append(originalMessage.asComponent()).build();
-        Audience adventureSender = main.adventure().sender(p);
-        adventureSender.sendMessage(outMessage);
+
+        p.sendMessage(outMessage);
     }
 
     public void sendMsg(UUID playerId, Component originalMessage) {
