@@ -2,80 +2,81 @@ package com.dominicfeliton.worldwidechat.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class PlayerRecord {
 
-    private int attemptedTranslations = 0;
-    private int successfulTranslations = 0;
+    private final AtomicInteger attemptedTranslations = new AtomicInteger(0);
+    private final AtomicInteger successfulTranslations = new AtomicInteger(0);
 
-    private String lastTranslationTime = "";
-    private String playerUUID = "";
-    private String localizationCode = "";
+    private final AtomicReference<String> lastTranslationTime = new AtomicReference<>("");
+    private final AtomicReference<String> playerUUID = new AtomicReference<>("");
+    private final AtomicReference<String> localizationCode = new AtomicReference<>("");
 
-    private boolean hasBeenSaved = false;
+    private final AtomicBoolean hasBeenSaved = new AtomicBoolean(false);
 
     public PlayerRecord(String lastTranslationTime, String playerUUID, int attemptedTranslations,
                         int successfulTranslations) {
-        this.attemptedTranslations = attemptedTranslations;
-        this.successfulTranslations = successfulTranslations;
-        this.lastTranslationTime = lastTranslationTime;
-        this.playerUUID = playerUUID;
+        this.attemptedTranslations.set(attemptedTranslations);
+        this.successfulTranslations.set(successfulTranslations);
+        this.lastTranslationTime.set(lastTranslationTime);
+        this.playerUUID.set(playerUUID);
     }
 
-    /* Getters */
     public int getAttemptedTranslations() {
-        return attemptedTranslations;
+        return attemptedTranslations.get();
     }
 
     public int getSuccessfulTranslations() {
-        return successfulTranslations;
+        return successfulTranslations.get();
     }
 
     public String getLastTranslationTime() {
-        return lastTranslationTime;
+        return lastTranslationTime.get();
     }
 
     public String getUUID() {
-        return playerUUID;
+        return playerUUID.get();
     }
 
     public String getLocalizationCode() {
-        return localizationCode;
+        return localizationCode.get();
     }
 
     public boolean getHasBeenSaved() {
-        return hasBeenSaved;
+        return hasBeenSaved.get();
     }
 
-    /* Setters */
     public void setAttemptedTranslations(int i) {
-        hasBeenSaved = false;
-        attemptedTranslations = i;
+        hasBeenSaved.set(false);
+        attemptedTranslations.set(i);
     }
 
     public void setSuccessfulTranslations(int i) {
-        hasBeenSaved = false;
-        successfulTranslations = i;
+        hasBeenSaved.set(false);
+        successfulTranslations.set(i);
     }
 
     public void setLastTranslationTime() {
-        hasBeenSaved = false;
+        hasBeenSaved.set(false);
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
-        lastTranslationTime = formatter.format(date);
+        lastTranslationTime.set(formatter.format(date));
     }
 
     public void setUUID(String i) {
-        hasBeenSaved = false;
-        playerUUID = i;
+        hasBeenSaved.set(false);
+        playerUUID.set(i);
     }
 
     public void setLocalizationCode(String s) {
-        hasBeenSaved = false;
-        localizationCode = s;
+        hasBeenSaved.set(false);
+        localizationCode.set(s);
     }
 
     public void setHasBeenSaved(boolean i) {
-        hasBeenSaved = i;
+        hasBeenSaved.set(i);
     }
 }

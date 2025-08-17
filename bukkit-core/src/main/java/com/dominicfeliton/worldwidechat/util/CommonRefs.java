@@ -49,6 +49,7 @@ import java.util.concurrent.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class CommonRefs {
@@ -307,7 +308,7 @@ public class CommonRefs {
             }
         };
 
-        wwcHelper.runSync(run, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {sender});
+        wwcHelper.runSync(run, ENTITY, new Object[] {sender});
     }
 
     /**
@@ -539,20 +540,39 @@ public class CommonRefs {
      * @return
      */
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
+        if (sender == null || originalMessage == null) return;
+        Object anchor = (sender instanceof Player) ? sender : null;
+        if (!Bukkit.isPrimaryThread()) {
+            wwcHelper.runSync(true, 0, new GenericRunnable() {
+                @Override protected void execute() {
+                    sendMsg(sender, originalMessage, addPrefix);
+                }
+            }, ENTITY, new Object[]{anchor});
+            return;
+        }
+        if (sender instanceof Player && !((Player) sender).isOnline()) return;
         try {
             Audience adventureSender = main.adventure().sender(sender);
-            final TextComponent outMessage;
-            if (addPrefix) {
-                outMessage = Component.text().append(main.getPluginPrefix().asComponent())
-                        .append(Component.space())
-                        .append(originalMessage.asComponent())
-                        .build();
-            } else {
-                outMessage = Component.text().append(originalMessage.asComponent()).build();
-            }
+            TextComponent outMessage = addPrefix
+                    ? Component.text().append(main.getPluginPrefix().asComponent()).append(Component.space()).append(originalMessage.asComponent()).build()
+                    : Component.text().append(originalMessage.asComponent()).build();
             adventureSender.sendMessage(outMessage);
-        } catch (IllegalStateException e) {
+        } catch (IllegalStateException ignored) {}
+    }
+
+    public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
+        if (playerId == null || originalMessage == null) return;
+        if (!Bukkit.isPrimaryThread()) {
+            wwcHelper.runSync(true, 0, new GenericRunnable() {
+                @Override protected void execute() {
+                    sendMsg(playerId, originalMessage, addPrefix);
+                }
+            }, GLOBAL, new Object[]{});
+            return;
         }
+        Player p = Bukkit.getPlayer(playerId);
+        if (p == null || !p.isOnline()) return;
+        sendMsg(p, originalMessage, addPrefix);
     }
 
     public void sendMsg(CommandSender sender, Component originalMessage) { sendMsg(sender, originalMessage, true); }
@@ -595,7 +615,7 @@ public class CommonRefs {
                 wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
             }
         };
-        wwcHelper.runSync(initAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+        wwcHelper.runSync(initAction, ENTITY, new Object[] {currPlayer});
     }
 
     public void sendTransFinishAction(Player currPlayer) {
@@ -613,10 +633,10 @@ public class CommonRefs {
                         wwcHelper.sendActionBar(Component.empty(), currPlayer);
                     }
                 };
-                wwcHelper.runSync(true, 15, clearAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+                wwcHelper.runSync(true, 15, clearAction, ENTITY, new Object[] {currPlayer});
             }
         };
-        wwcHelper.runSync(endAction, WorldwideChatHelper.SchedulerType.ENTITY, new Object[] {currPlayer});
+        wwcHelper.runSync(endAction, ENTITY, new Object[] {currPlayer});
     }
 
     /**

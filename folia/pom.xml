@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.20.3</version>
+    <version>1.20.4</version>
   </parent>
 
   <artifactId>WorldwideChat-folia</artifactId>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>com.dominicfeliton.worldwidechat</groupId>
       <artifactId>WorldwideChat-paper</artifactId>
-      <version>1.20.3</version>
+      <version>1.20.4</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
