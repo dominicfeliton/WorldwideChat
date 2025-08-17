@@ -6,7 +6,6 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import eu.decentsoftware.holograms.api.actions.ClickType;
 import eu.decentsoftware.holograms.api.holograms.HologramLine;
 import eu.decentsoftware.holograms.api.holograms.HologramPage;
-import eu.decentsoftware.holograms.api.utils.collection.DList;
 import eu.decentsoftware.holograms.event.HologramClickEvent;
 import net.kyori.adventure.text.Component;
 import org.bukkit.entity.Player;
@@ -41,7 +40,7 @@ public class HologramListener implements Listener {
             return;
         }
 
-        DList<HologramPage> allText = event.getHologram().getPages();
+        List<HologramPage> allText = event.getHologram().getPages();
         List<Component> translations = new ArrayList<>();
 
         // Process each page
