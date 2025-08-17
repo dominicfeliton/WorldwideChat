@@ -34,9 +34,11 @@ public class WWCTabCompleter implements TabCompleter {
             switch (args.length) {
                 case 1:
                     // Add stop for sender
-                    if (main.isActiveTranslator((Player) sender) &&
-                            (prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
-                        out.add("stop");
+                    if (sender instanceof Player) {
+                        Player p = (Player) sender;
+                        if (main.isActiveTranslator(p) && (prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
+                            out.add("stop");
+                        }
                     }
 
                     // This argument could be another player
@@ -53,14 +55,12 @@ public class WWCTabCompleter implements TabCompleter {
                     // Add input and output languages
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
                     for (String eaKey : main.getSupportedInputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
                     for (String eaKey : main.getSupportedOutputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
@@ -74,8 +74,10 @@ public class WWCTabCompleter implements TabCompleter {
                     // Add stop for target player
                     // Do not add stop if user does not have permission
                     Player possiblePlayer = Bukkit.getPlayerExact(args[0]);
-                    if (main.isActiveTranslator(possiblePlayer) && (sender.hasPermission("worldwidechat.wwct.otherplayers") || args[0].equalsIgnoreCase(sender.getName()))
-                            && (prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
+                    if (possiblePlayer != null &&
+                            main.isActiveTranslator(possiblePlayer) &&
+                            (sender.hasPermission("worldwidechat.wwct.otherplayers") || args[0].equalsIgnoreCase(sender.getName())) &&
+                            (prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
                         out.add("stop");
                     }
 
@@ -83,14 +85,12 @@ public class WWCTabCompleter implements TabCompleter {
                     // Add input and output languages
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
                     for (String eaKey : main.getSupportedInputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
                     for (String eaKey : main.getSupportedOutputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
@@ -104,8 +104,7 @@ public class WWCTabCompleter implements TabCompleter {
                     // The third argument can only be outLang
                     // Therefore, simply add all possible output languages
                     for (String eaKey : main.getSupportedOutputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
@@ -127,14 +126,12 @@ public class WWCTabCompleter implements TabCompleter {
                     // Add input and output languages
                     // ** Only add if the previous argument is empty OR the user is typing this suggestion
                     for (String eaKey : main.getSupportedInputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
                     for (String eaKey : main.getSupportedOutputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
@@ -147,8 +144,7 @@ public class WWCTabCompleter implements TabCompleter {
 
                     // This argument can only be an outLang
                     for (String eaKey : main.getSupportedOutputLangs().keySet()) {
-                        if (prevEmptyArg ||
-                                eaKey.startsWith(args[args.length - 1])) {
+                        if (prevEmptyArg || eaKey.startsWith(args[args.length - 1])) {
                             out.add(eaKey);
                         }
                     }
@@ -186,14 +182,20 @@ public class WWCTabCompleter implements TabCompleter {
                         out.add(eaPlayer.getName());
                     }
                 }
-                if (main.isActiveTranslator((Player) sender)) {
-                    out.addAll(Arrays.asList(suggestedSeconds));
+                if (sender instanceof Player) {
+                    Player p = (Player) sender;
+                    if (main.isActiveTranslator(p)) {
+                        out.addAll(Arrays.asList(suggestedSeconds));
+                    }
                 }
             } else if (args.length == 1) {
-                if (StringUtils.isNumeric(args[0]) && main.isActiveTranslator((Player) sender)) {
-                    for (String eaStr : suggestedSeconds) {
-                        if (eaStr.startsWith(args[0])) {
-                            out.add(eaStr);
+                if (StringUtils.isNumeric(args[0]) && sender instanceof Player) {
+                    Player p = (Player) sender;
+                    if (main.isActiveTranslator(p)) {
+                        for (String eaStr : suggestedSeconds) {
+                            if (eaStr.startsWith(args[0])) {
+                                out.add(eaStr);
+                            }
                         }
                     }
                 } else {
@@ -234,9 +236,12 @@ public class WWCTabCompleter implements TabCompleter {
                     }
                 }
                 if ("stop".startsWith(args[0])
-                        && main.isPlayerRecord((Player) sender)
-                        && !main.getPlayerRecord((Player) sender, false).getLocalizationCode().isEmpty()) {
-                    out.add("stop");
+                        && sender instanceof Player) {
+                    Player p = (Player) sender;
+                    if (main.isPlayerRecord(p)
+                            && !main.getPlayerRecord(p, false).getLocalizationCode().isEmpty()) {
+                        out.add("stop");
+                    }
                 }
             } else if (args.length == 2) {
                 for (SupportedLang lang : CommonRefs.supportedPluginLangCodes.values()) {
