@@ -1,5 +1,7 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -16,11 +18,17 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
         if (!main.getSyncUserLocal()) return;
 
         Player player = e.getPlayer();
+        UUID uuid = player.getUniqueId();
         if (main.isPlayerRecord(player)) return;
 
-        String code = player.locale().getLanguage();
-        UUID uuid = player.getUniqueId();
-        super.checkAndSetLocaleAsync(uuid, code, player);
+        helper.runSync(true, 25, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                String code = player.locale().getLanguage();
+
+                PaperPlayerLocaleListener.super.checkAndSetLocaleAsync(uuid, code, player);
+            }
+        }, SchedulerType.ENTITY, new Object[]{player});
     }
 
     @EventHandler(priority = EventPriority.LOWEST)
@@ -28,8 +36,15 @@ public class PaperPlayerLocaleListener extends AbstractPlayerLocaleListener impl
         if (!main.getSyncUserLocal()) return;
 
         Player player = event.getPlayer();
-        String code = player.locale().getLanguage();
         UUID uuid = player.getUniqueId();
-        super.checkAndSetLocaleAsync(uuid, code, player);
+
+        helper.runSync(true, 25, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                String code = player.locale().getLanguage();
+
+                PaperPlayerLocaleListener.super.checkAndSetLocaleAsync(uuid, code, player);
+            }
+        }, SchedulerType.ENTITY, new Object[]{player});
     }
 }

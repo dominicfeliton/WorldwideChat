@@ -1,7 +1,5 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.dominicfeliton.worldwidechat.util.GenericRunnable;
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import org.bukkit.Bukkit;
@@ -27,13 +25,14 @@ public class PaperCommonRefs extends CommonRefs {
             return;
         }
         if (sender instanceof Player && !((Player) sender).isOnline()) return;
-        try {
-            Audience adventureSender = main.adventure().sender(sender);
-            TextComponent outMessage = addPrefix
-                    ? Component.text().append(main.getPluginPrefix().asComponent()).append(Component.space()).append(originalMessage.asComponent()).build()
-                    : Component.text().append(originalMessage.asComponent()).build();
-            adventureSender.sendMessage(outMessage);
-        } catch (IllegalStateException ignored) {}
+        final TextComponent outMessage = addPrefix
+                ? Component.text()
+                .append(main.getPluginPrefix().asComponent())
+                .append(Component.space())
+                .append(originalMessage.asComponent())
+                .build()
+                : Component.text().append(originalMessage.asComponent()).build();
+        sender.sendMessage(outMessage);
     }
 
     @Override

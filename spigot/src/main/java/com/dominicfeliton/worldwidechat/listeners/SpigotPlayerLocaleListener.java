@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -21,13 +22,18 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
         if (!main.getSyncUserLocal()) return;
 
         Player player = e.getPlayer();
+        UUID uuid = player.getUniqueId();
         if (main.isPlayerRecord(player)) return;
 
-        String code = getLocale(player.getLocale());
-        if (code == null) return;
+        helper.runSync(true, 25, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                String code = getLocale(player.getLocale());
+                if (code == null) return;
 
-        UUID uuid = player.getUniqueId();
-        super.checkAndSetLocaleAsync(uuid, code, player);
+                SpigotPlayerLocaleListener.super.checkAndSetLocaleAsync(uuid, code, player);
+            }
+        }, SchedulerType.ENTITY, new Object[]{player});
     }
 
     @EventHandler(priority = EventPriority.LOWEST)
@@ -35,11 +41,17 @@ public class SpigotPlayerLocaleListener extends AbstractPlayerLocaleListener imp
         if (!main.getSyncUserLocal()) return;
 
         Player player = event.getPlayer();
-        String code = getLocale(player.getLocale());
-        if (code == null) return;
-
         UUID uuid = player.getUniqueId();
-        super.checkAndSetLocaleAsync(uuid, code, player);
+
+        helper.runSync(true, 25, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                String code = getLocale(player.getLocale());
+                if (code == null) return;
+
+                SpigotPlayerLocaleListener.super.checkAndSetLocaleAsync(uuid, code, player);
+            }
+        }, SchedulerType.ENTITY, new Object[]{player});
     }
 
     private String getLocale(String locale) {

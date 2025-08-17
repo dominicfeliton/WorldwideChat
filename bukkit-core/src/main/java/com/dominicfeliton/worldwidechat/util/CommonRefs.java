@@ -541,6 +541,7 @@ public class CommonRefs {
      */
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         if (sender == null || originalMessage == null) return;
+
         Object anchor = (sender instanceof Player) ? sender : null;
         if (!Bukkit.isPrimaryThread()) {
             wwcHelper.runSync(true, 0, new GenericRunnable() {
@@ -550,14 +551,22 @@ public class CommonRefs {
             }, ENTITY, new Object[]{anchor});
             return;
         }
+
         if (sender instanceof Player && !((Player) sender).isOnline()) return;
+
         try {
-            Audience adventureSender = main.adventure().sender(sender);
+            Audience adv = main.adventure().sender(sender);
             TextComponent outMessage = addPrefix
-                    ? Component.text().append(main.getPluginPrefix().asComponent()).append(Component.space()).append(originalMessage.asComponent()).build()
+                    ? Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.space())
+                    .append(originalMessage.asComponent())
+                    .build()
                     : Component.text().append(originalMessage.asComponent()).build();
-            adventureSender.sendMessage(outMessage);
-        } catch (IllegalStateException ignored) {}
+            adv.sendMessage(outMessage);
+        } catch (IllegalStateException ignored) {
+            // In the unlikely case Adventure throws, we silently drop the message.
+        }
     }
 
     public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
@@ -573,6 +582,10 @@ public class CommonRefs {
         Player p = Bukkit.getPlayer(playerId);
         if (p == null || !p.isOnline()) return;
         sendMsg(p, originalMessage, addPrefix);
+    }
+
+    public void sendMsg(UUID playerId, Component originalMessage) {
+        sendMsg(playerId, originalMessage, true);
     }
 
     public void sendMsg(CommandSender sender, Component originalMessage) { sendMsg(sender, originalMessage, true); }
