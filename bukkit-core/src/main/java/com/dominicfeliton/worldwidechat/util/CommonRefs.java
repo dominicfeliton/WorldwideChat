@@ -542,16 +542,6 @@ public class CommonRefs {
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         if (sender == null || originalMessage == null) return;
 
-        Object anchor = (sender instanceof Player) ? sender : null;
-        if (!Bukkit.isPrimaryThread()) {
-            wwcHelper.runSync(true, 0, new GenericRunnable() {
-                @Override protected void execute() {
-                    sendMsg(sender, originalMessage, addPrefix);
-                }
-            }, ENTITY, new Object[]{anchor});
-            return;
-        }
-
         if (sender instanceof Player && !((Player) sender).isOnline()) return;
 
         try {
@@ -571,14 +561,6 @@ public class CommonRefs {
 
     public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
         if (playerId == null || originalMessage == null) return;
-        if (!Bukkit.isPrimaryThread()) {
-            wwcHelper.runSync(true, 0, new GenericRunnable() {
-                @Override protected void execute() {
-                    sendMsg(playerId, originalMessage, addPrefix);
-                }
-            }, GLOBAL, new Object[]{});
-            return;
-        }
         Player p = Bukkit.getPlayer(playerId);
         if (p == null || !p.isOnline()) return;
         sendMsg(p, originalMessage, addPrefix);
