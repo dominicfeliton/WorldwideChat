@@ -256,11 +256,7 @@ public class WWCInventoryManager extends InventoryManager {
             }
 
             bookMeta.setAuthor(player.getName());
-            try {
-                /* Older MC versions do not have generation data */
-                bookMeta.setGeneration(bookMeta.getGeneration());
-            } catch (NoSuchMethodError no) {
-            }
+            bookMeta.setGeneration(bookMeta.getGeneration());
             bookMeta.setTitle(inConfigVal);
             bookMeta.setPages(pages);
             book.setItemMeta(bookMeta);

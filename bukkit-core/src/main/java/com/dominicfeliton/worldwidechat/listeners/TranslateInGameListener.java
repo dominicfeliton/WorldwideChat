@@ -121,10 +121,7 @@ public class TranslateInGameListener implements Listener {
                         ItemStack newBook = XMaterial.WRITTEN_BOOK.parseItem();
                         BookMeta newMeta = (BookMeta) newBook.getItemMeta();
                         newMeta.setAuthor(meta.getAuthor());
-                        try {
-                            /* Older MC versions do not have generation data */
-                            newMeta.setGeneration(meta.getGeneration());
-                        } catch (NoSuchMethodError e) {}
+                        newMeta.setGeneration(meta.getGeneration());
                         newMeta.setTitle(outTitle);
                         newMeta.setPages(translatedPages);
                         newBook.setItemMeta(newMeta);
@@ -133,23 +130,7 @@ public class TranslateInGameListener implements Listener {
                         GenericRunnable open = new GenericRunnable() {
                             @Override
                             protected void execute() {
-                                /* Version Check: For 1.13 and below compatibility */
-                                try {
-                                    Player.class.getMethod("openBook", ItemStack.class);
-                                    currPlayer.openBook(newBook);
-                                } catch (Exception e) {
-                                    // Old version
-                                    int page = 1;
-                                    String dashes = "---------------------";
-                                    int middleIndex = dashes.length() / 2;
-                                    for (String eachPage : translatedPages) {
-                                        String result = dashes.substring(0, middleIndex) + " &2&l(&a&l" + page + "&2&l)&r&6 " + dashes.substring(middleIndex);
-                                        refs.sendMsg(currPlayer, "&6" + result, false);
-                                        refs.sendMsg(currPlayer, eachPage, false);
-                                        page++;
-                                    }
-                                    refs.sendMsg(currPlayer, "&6" + dashes + "----", false);
-                                }
+                                currPlayer.openBook(newBook);
                             }
                         };
 
@@ -184,15 +165,6 @@ public class TranslateInGameListener implements Listener {
                             if (eaStr.length() > 15) {
                                 textLimit = true;
                             }
-                        }
-
-                        /* Version Check: For 1.13 and below compatibility */
-                        try {
-                            Player.class.getMethod("sendSignChange", Location.class, String[].class);
-                        } catch (Exception e) {
-                            refs.debugMsg("No sendSignChange method found!");
-                            textLimit = true;
-                            // Always send the user the result via chat. sendSignChange() does not exist in Player.class before 1.14.
                         }
 
                         /*
@@ -240,8 +212,7 @@ public class TranslateInGameListener implements Listener {
                                     try {
                                         event.getPlayer().sendSignChange(currLoc, finalText);
                                     } catch (Exception e) {
-                                        // This might happen sometimes, send message until this is fixed.
-                                        refs.debugMsg("sendSignChange is broken?? cringe, fixme");
+                                        refs.debugMsg("sendSignChange failed; sending translated sign text in chat.");
                                         refs.sendMsg(event.getPlayer(), translationNoticeMsg);
                                     }
                                 }

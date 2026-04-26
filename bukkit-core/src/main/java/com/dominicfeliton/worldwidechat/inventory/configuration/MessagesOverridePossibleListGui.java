@@ -68,7 +68,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
             int currSpot = 0;
             refs.debugMsg("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
             for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
-                /* Init item, ensure pre-1.14 compatibility */
+                /* Init item */
                 ItemStack currentEntry = XMaterial.OAK_SIGN.parseItem();
                 ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 

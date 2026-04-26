@@ -233,7 +233,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 /* Sign Translation Button */
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts")
                         && (player.hasPermission("worldwidechat.wwcts.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-                    /* Init item, ensure pre-1.14 compatibility */
+                    /* Init item */
                     ItemStack signButton = XMaterial.OAK_SIGN.parseItem();
                     ItemMeta signMeta = signButton.getItemMeta();
                     if (targetTranslator.getTranslatingSign()) {

@@ -68,14 +68,6 @@ public class ServerAdapterFactory {
                 break;
         }
 
-        /* Additional checks */
-        if (serverPlatform.equals("Paper") && (serverVersion.contains("1.13") || serverVersion.contains("1.14") || serverVersion.contains("1.15"))) {
-            // These versions are so old that they lack much of what we take for granted in later versions of Paper.
-            // Paper on these versions is unsupported. Use the spigot version of the plugin instead.
-            // sendmsg(?) paper too old, default to spig
-            serverPlatform = "Spigot";
-        }
-
         if (serverPlatform.equals("Paper")) {
             try {
                 Class.forName("com.dominicfeliton.worldwidechat.PaperWorldwideChatHelper");

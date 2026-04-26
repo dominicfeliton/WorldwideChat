@@ -4,9 +4,7 @@
 
 ## ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dominicfeliton/WorldwideChat/build-latest-worldwidechat-commit.yml?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/dominicfeliton/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
 
-#### PSA: If you are on 1.13-1.15, please use our Spigot jar regardless if you are using Paper or not. The adventure API + additional Paper components are not available before 1.16.
-
-### WorldwideChat is a translation plugin for Spigot, PaperMC, and Folia 1.13+ on JDK 11+.
+### WorldwideChat is a translation plugin for Spigot, PaperMC, and Folia 1.17+ on Java 17+.
 
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:

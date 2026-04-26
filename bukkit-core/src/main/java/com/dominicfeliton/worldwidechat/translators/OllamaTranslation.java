@@ -4,7 +4,8 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
-import io.github.ollama4j.OllamaAPI;
+import io.github.ollama4j.Ollama;
+import io.github.ollama4j.models.generate.OllamaGenerateRequest;
 import io.github.ollama4j.models.response.OllamaResult;
 import io.github.ollama4j.utils.OptionsBuilder;
 import io.github.ollama4j.utils.PromptBuilder;
@@ -18,15 +19,15 @@ import java.util.concurrent.ExecutorService;
 
 public class OllamaTranslation extends BasicTranslation {
 
-    private OllamaAPI api;
+    private Ollama api;
 
     private YamlConfiguration aiConf = main.getConfigManager().getAIConfig();
     private YamlConfiguration conf = main.getConfigManager().getMainConfig();
 
     public OllamaTranslation(String url, boolean isInitializing, ExecutorService callbackExecutor) {
         super(isInitializing, callbackExecutor);
-        api = new OllamaAPI(url);
-        api.setVerbose(false);
+        api = new Ollama(url);
+        api.setRequestTimeoutSeconds(WorldwideChat.translatorConnectionTimeoutSeconds);
     }
 
     @Override
@@ -105,12 +106,14 @@ public class OllamaTranslation extends BasicTranslation {
                     .addLine("Output Lang: " + outputLang)
                     .addLine("Text To Translate: " + textToTranslate);
 
-            OllamaResult response = api.generate(
-                    conf.getString("Translator.ollamaModel"),
-                    prompt.build(),
-                    false,
-                    new OptionsBuilder().build());
-            response.setResponseTime(WorldwideChat.translatorConnectionTimeoutSeconds);
+            OllamaGenerateRequest request = OllamaGenerateRequest.builder()
+                    .withModel(conf.getString("Translator.ollamaModel"))
+                    .withPrompt(prompt.build())
+                    .withStreaming(false)
+                    .withOptions(new OptionsBuilder().build())
+                    .build();
+
+            OllamaResult response = api.generate(request, null);
 
             refs.debugMsg(response.getResponse());
             return new Gson().fromJson(response.getResponse(), Response.class).getOutput();

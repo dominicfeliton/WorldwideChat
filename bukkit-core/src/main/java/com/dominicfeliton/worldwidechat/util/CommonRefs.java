@@ -59,7 +59,7 @@ public class CommonRefs {
 
     protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
-    public static String[] supportedMCVersions = {"1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
+    public static String[] supportedMCVersions = {"26.1", "1.21.11", "1.21.10", "1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17"};
 
     public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 
@@ -161,11 +161,7 @@ public class CommonRefs {
         STOP_TRANSLATION("STOP_TRANSLATION", safeSound(Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF), 1.0f, 1.0f),
         RELOAD_SUCCESS("RELOAD_SUCCESS", safeSound(Sound.BLOCK_BEACON_ACTIVATE), 1.0f, 1.0f),
         RELOAD_ERROR("RELOAD_ERROR", safeSound(Sound.BLOCK_DISPENSER_FAIL), 1.0f, 1.0f),
-        STATS_SUCCESS("STATS_SUCCESS",
-                main.getCurrMCVersion().toString().contains("1.13")
-                        ? safeSound(Sound.BLOCK_NOTE_BLOCK_PLING)
-                        : safeSound(Sound.ITEM_BOOK_PAGE_TURN),
-                1.0f, 1.0f),
+        STATS_SUCCESS("STATS_SUCCESS", safeSound(Sound.ITEM_BOOK_PAGE_TURN), 1.0f, 1.0f),
         STATS_FAIL("STATS_FAIL", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 1.0f),
         WWC_VERSION("WWC_VERSION", safeSound(Sound.ENTITY_PLAYER_LEVELUP), 1.0f, 1.0f),
         PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f);

@@ -340,6 +340,7 @@ public class WorldwideChat extends JavaPlugin {
             if (version.contains(eaVer)) {
                 outputVersion = eaVer;
                 getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
+                break;
             }
         }
 
