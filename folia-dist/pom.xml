@@ -121,6 +121,7 @@
               <include>com.fasterxml.jackson.core:*</include>
               <include>com.fasterxml.jackson.dataformat:*</include>
               <include>com.fasterxml.jackson.datatype:*</include>
+              <include>tools.jackson.core:*</include>
               <include>org.apache.httpcomponents:*</include>
               <include>joda-time:*</include>
               <include>fr.minuskube.inv:folia-smart-invs</include>
@@ -217,6 +218,10 @@
             <relocation>
               <pattern>com.fasterxml.jackson</pattern>
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.fasterxml.jackson</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>tools.jackson</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.tools.jackson</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.jsoup</pattern>
