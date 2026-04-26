@@ -13,6 +13,12 @@ class InputMethodResolverTest {
     }
 
     @Test
+    void autoUsesPaperDialogsOnPaper261() {
+        assertEquals(InputMethod.PAPER_DIALOG, InputMethodResolver.resolve(
+                "auto", "Paper", new ComparableVersion("26.1"), true, true));
+    }
+
+    @Test
     void autoUsesConversationsOnOlderPaper() {
         assertEquals(InputMethod.CONVERSATION, InputMethodResolver.resolve(
                 "auto", "Paper", new ComparableVersion("1.21.6"), true, true));

@@ -32,20 +32,33 @@ public class PaperInputService implements InputService {
 
     protected InputMethod resolveMethod() {
         String configured = getConfiguredMethod();
+        boolean paperDialogsAvailable = paperDialogsAvailable();
+        boolean conversationsAvailable = conversationsAvailable();
         InputMethod resolved = InputMethodResolver.resolve(
                 configured,
                 main.getCurrPlatform(),
                 main.getCurrMCVersion(),
-                paperDialogsAvailable(),
-                conversationsAvailable()
+                paperDialogsAvailable,
+                conversationsAvailable
         );
         InputMethod requested = InputMethod.fromConfig(configured);
         if (requested != InputMethod.AUTO && requested != resolved && !warnedUnavailable) {
-            main.getLogger().warning("Input method '" + configured + "' is unavailable on " + main.getCurrPlatform()
-                    + " " + main.getCurrMCVersion() + "; falling back to " + resolved.getConfigValue() + ".");
+            String message = "Input method '" + configured + "' is unavailable on " + main.getCurrPlatform()
+                    + " " + main.getCurrMCVersion() + "; falling back to " + resolved.getConfigValue() + ".";
+            if (isDebugMode()) {
+                message += " Paper dialogs available: " + paperDialogsAvailable
+                        + "; conversations available: " + conversationsAvailable + ".";
+            }
+            main.getLogger().warning(message);
             warnedUnavailable = true;
         }
         return resolved;
+    }
+
+    private boolean isDebugMode() {
+        return main.getConfigManager() != null
+                && main.getConfigManager().getMainConfig() != null
+                && main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode");
     }
 
     private String getConfiguredMethod() {
