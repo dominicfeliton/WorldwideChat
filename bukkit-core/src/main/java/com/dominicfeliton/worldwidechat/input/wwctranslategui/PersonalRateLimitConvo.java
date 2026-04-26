@@ -1,4 +1,6 @@
-package com.dominicfeliton.worldwidechat.conversations.wwctranslategui;
+package com.dominicfeliton.worldwidechat.input.wwctranslategui;
+
+import com.dominicfeliton.worldwidechat.input.*;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.WWCTranslateRateLimit;
@@ -7,15 +9,12 @@ import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.NumericPrompt;
-import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
-public class PersonalRateLimitConvo extends NumericPrompt {
+public class PersonalRateLimitConvo extends NumericInputPrompt {
 
     private ActiveTranslator currTranslator;
 
@@ -26,7 +25,7 @@ public class PersonalRateLimitConvo extends NumericPrompt {
     }
 
     @Override
-    public @NotNull String getPromptText(ConversationContext context) {
+    public @NotNull String getPromptText(InputContext context) {
         /* Close any open inventories */
         CommonRefs refs = main.getServerFactory().getCommonRefs();
         Player currPlayer = ((Player) context.getForWhom());
@@ -38,7 +37,7 @@ public class PersonalRateLimitConvo extends NumericPrompt {
     }
 
     @Override
-    protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
+    protected InputResult acceptValidatedInput(@NotNull InputContext context, Number input) {
         WWCTranslateRateLimit rateCommand;
         if (input.intValue() > 0) { // Enable rate limit
             rateCommand = new WWCTranslateRateLimit(((CommandSender) context.getForWhom()), null,
@@ -50,7 +49,18 @@ public class PersonalRateLimitConvo extends NumericPrompt {
             rateCommand.processCommand();
         } // Go back
         new WWCTranslateGuiMainMenu(currTranslator.getUUID(), (Player) context.getForWhom()).getTranslateMainMenu().open((Player) context.getForWhom());
-        return END_OF_CONVERSATION;
+        return InputResult.complete();
+    }
+
+    @Override
+    public InputResult cancelInput(InputContext context) {
+        new WWCTranslateGuiMainMenu(currTranslator.getUUID(), context.getForWhom()).getTranslateMainMenu().open(context.getForWhom());
+        return InputResult.complete();
+    }
+
+    @Override
+    public String getUnavailableMessageKey() {
+        return "wwcRateNoConvoFolia";
     }
 
 }

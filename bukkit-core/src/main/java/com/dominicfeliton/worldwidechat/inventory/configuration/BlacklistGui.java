@@ -2,7 +2,7 @@ package com.dominicfeliton.worldwidechat.inventory.configuration;
 
 import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
+import com.dominicfeliton.worldwidechat.input.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
@@ -83,7 +83,7 @@ public class BlacklistGui implements InventoryProvider {
             }
 
             /* Bottom Middle Option: Add new override */
-            invManager.genericConversationButton(5, 4, player, contents, new ChatSettingsConvos.AddBlacklistTerm(getBlacklist()), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesBlacklistNewButton");
+            invManager.genericInputButton(5, 4, player, contents, new ChatSettingsConvos.AddBlacklistTerm(getBlacklist()), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesBlacklistNewButton");
 
             /* Bottom Right Option: Next Page */
             if (!pagination.isLast()) {

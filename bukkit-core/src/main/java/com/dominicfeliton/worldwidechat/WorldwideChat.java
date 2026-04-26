@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.commands.*;
 import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
+import com.dominicfeliton.worldwidechat.input.InputService;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.listeners.WWCTabCompleter;
 import com.dominicfeliton.worldwidechat.runnables.LoadUserData;
@@ -57,6 +58,7 @@ public class WorldwideChat extends JavaPlugin {
     private ComparableVersion currMCVersion;
 
     private WorldwideChatHelper wwcHelper;
+    private InputService inputService;
     private WWCInventoryManager inventoryManager;
 
     private ConfigurationHandler configurationManager;
@@ -157,6 +159,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public WWCInventoryManager getInventoryManager() {
         return inventoryManager;
+    }
+
+    public InputService getInputService() {
+        return inputService;
     }
 
     public void setConfigManager(ConfigurationHandler i) {
@@ -384,6 +390,7 @@ public class WorldwideChat extends JavaPlugin {
         configurationManager.initMessagesConfigs();
 
         configurationManager.loadMainSettings();
+        inputService = serverFactory.getInputService();
         configurationManager.loadStorageSettings();
         // we are storing the real translator name in tempTransName.
         // this is to prevent the plugin from being fully accessible to all users just yet.

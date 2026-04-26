@@ -3,7 +3,8 @@ package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.*;
-import com.dominicfeliton.worldwidechat.conversations.wwctranslategui.PersonalRateLimitConvo;
+import com.dominicfeliton.worldwidechat.input.InputRequest;
+import com.dominicfeliton.worldwidechat.input.wwctranslategui.PersonalRateLimitConvo;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
@@ -14,7 +15,6 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.command.CommandSender;
-import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -172,8 +172,6 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 /* Rate Limit Button: Set a rate limit for the current translator */
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctrl")
                         && (player.hasPermission("worldwidechat.wwctrl.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-                    ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
-                            .withFirstPrompt(new PersonalRateLimitConvo(targetTranslator));
                     ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
                     ItemMeta rateMeta = rateButton.getItemMeta();
                     ArrayList<String> lore = new ArrayList<>();
@@ -196,11 +194,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                     rateMeta.setLore(lore);
                     rateButton.setItemMeta(rateMeta);
                     contents.set(1, 1, ClickableItem.of(rateButton, e -> {
-                        if (!main.getCurrPlatform().equals("Folia")) {
-                            rateConvo.buildConversation(player).begin();
-                        } else {
-                            refs.sendMsg("wwcRateNoConvoFolia", "", "&c", player);
-                        }
+                        main.getInputService().open(player, InputRequest.fromPrompt(new PersonalRateLimitConvo(targetTranslator)));
                     }));
                 }
 

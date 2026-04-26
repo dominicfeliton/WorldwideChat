@@ -1,13 +1,11 @@
-package com.dominicfeliton.worldwidechat.conversations.configuration;
+package com.dominicfeliton.worldwidechat.input.configuration;
+
+import com.dominicfeliton.worldwidechat.input.*;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.NumericPrompt;
-import org.bukkit.conversations.Prompt;
-import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
@@ -17,9 +15,9 @@ public class TranslatorSettingsConvos {
 
     private static WWCInventoryManager invMan = main.getInventoryManager();
 
-    public static class CharacterLimit extends NumericPrompt {
+    public static class CharacterLimit extends NumericInputPrompt {
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -31,15 +29,15 @@ public class TranslatorSettingsConvos {
         }
 
         @Override
-        protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
-            return invMan.genericConfigConvo(input.intValue() > 0 && input.intValue() <= 255, context, "wwcConfigConversationCharacterLimitSuccess",
+        protected InputResult acceptValidatedInput(@NotNull InputContext context, Number input) {
+            return invMan.genericConfigInput(input.intValue() > 0 && input.intValue() <= 255, context, "wwcConfigConversationCharacterLimitSuccess",
                     "Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
-    public static class ErrorLimit extends NumericPrompt {
+    public static class ErrorLimit extends NumericInputPrompt {
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -51,15 +49,15 @@ public class TranslatorSettingsConvos {
         }
 
         @Override
-        protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
-            return invMan.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess",
+        protected InputResult acceptValidatedInput(@NotNull InputContext context, Number input) {
+            return invMan.genericConfigInput(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess",
                     "Translator.errorLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
-    public static class GlobalRateLimit extends NumericPrompt {
+    public static class GlobalRateLimit extends NumericInputPrompt {
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -71,15 +69,15 @@ public class TranslatorSettingsConvos {
         }
 
         @Override
-        protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
-            return invMan.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess",
+        protected InputResult acceptValidatedInput(@NotNull InputContext context, Number input) {
+            return invMan.genericConfigInput(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess",
                     "Translator.rateLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
-    public static class TranslationCache extends NumericPrompt {
+    public static class TranslationCache extends NumericInputPrompt {
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -91,15 +89,15 @@ public class TranslatorSettingsConvos {
         }
 
         @Override
-        protected Prompt acceptValidatedInput(@NotNull ConversationContext context, Number input) {
-            return invMan.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess",
+        protected InputResult acceptValidatedInput(@NotNull InputContext context, Number input) {
+            return invMan.genericConfigInput(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess",
                     "Translator.translatorCacheSize", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.inv.get());
         }
     }
 
-    public static class IgnoreErrors extends StringPrompt {
+    public static class IgnoreErrors extends StringInputPrompt {
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -111,7 +109,7 @@ public class TranslatorSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             if (input.equalsIgnoreCase("clear")) {
                 Player currPlayer = ((Player) context.getForWhom());
@@ -120,9 +118,9 @@ public class TranslatorSettingsConvos {
                         "",
                         "&e",
                         currPlayer);
-                return this;
+                return InputResult.repeat();
             } else {
-                return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationIgnoreErrorsSuccess",
+                return invMan.genericConfigInput(!input.equals("0"), context, "wwcConfigConversationIgnoreErrorsSuccess",
                         new String[]{"Translator.errorsToIgnore"}, new Object[]{input.split(",")}, CONFIG_GUI_TAGS.TRANS_SET.inv.get());
             }
         }

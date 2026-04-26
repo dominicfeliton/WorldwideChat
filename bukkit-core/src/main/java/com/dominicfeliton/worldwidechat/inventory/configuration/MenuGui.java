@@ -1,7 +1,8 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.*;
+import com.dominicfeliton.worldwidechat.input.InputPrompt;
+import com.dominicfeliton.worldwidechat.input.configuration.*;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
@@ -11,7 +12,6 @@ import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -556,16 +556,16 @@ public class MenuGui implements InventoryProvider {
     }
 
     static class ConvoElement extends Element {
-        public final Prompt prompt;
+        public final InputPrompt prompt;
         private final WWCInventoryManager invMgr = instance.getInventoryManager();
 
-        ConvoElement(int x, int y, String buttonName, Material icon, Prompt prompt) {
+        ConvoElement(int x, int y, String buttonName, Material icon, InputPrompt prompt) {
             super(x, y, buttonName, icon);
             this.prompt = prompt;
         }
         @Override
         void rasterize(Player player, InventoryContents contents) {
-            invMgr.genericConversationButton(x, y, player, contents, prompt, blockIcon, buttonName);
+            invMgr.genericInputButton(x, y, player, contents, prompt, blockIcon, buttonName);
         }
     }
 

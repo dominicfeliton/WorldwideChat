@@ -58,7 +58,7 @@ public class AILangModifyGui implements InventoryProvider {
             invManager.setBorders(contents, Material.ORANGE_STAINED_GLASS_PANE);
 
             /* Middle Option: Change existing text */
-            //invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+            //invManager.genericInputButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 
             /* Right Option: Delete override */
             ItemStack deleteLangButton = new ItemStack(Material.BARRIER);

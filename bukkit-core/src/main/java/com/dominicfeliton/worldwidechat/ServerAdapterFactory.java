@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat;
 
+import com.dominicfeliton.worldwidechat.input.InputService;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
@@ -99,6 +100,16 @@ public class ServerAdapterFactory {
         wwcHelperDefs.put("Folia", "com.dominicfeliton.worldwidechat.FoliaWorldwideChatHelper");
 
         return (WorldwideChatHelper) getInstance(wwcHelperDefs);
+    }
+
+    public InputService getInputService() {
+        HashMap<String, String> inputServiceDefs = new HashMap<String, String>();
+        inputServiceDefs.put("Spigot", "com.dominicfeliton.worldwidechat.input.SpigotConversationInputService");
+        inputServiceDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.input.SpigotConversationInputService");
+        inputServiceDefs.put("Paper", "com.dominicfeliton.worldwidechat.input.PaperInputService");
+        inputServiceDefs.put("Folia", "com.dominicfeliton.worldwidechat.input.FoliaInputService");
+
+        return (InputService) getInstance(inputServiceDefs);
     }
 
     private Object getInstance(HashMap<String, String> platformAndClass) {

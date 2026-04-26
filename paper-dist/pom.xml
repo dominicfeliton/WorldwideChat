@@ -178,6 +178,12 @@
                 <include>**</include>
               </includes>
             </filter>
+            <filter>
+              <artifact>com.dominicfeliton.worldwidechat:WorldwideChat-spigot</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
+            </filter>
           </filters>
           <relocations>
             <relocation>

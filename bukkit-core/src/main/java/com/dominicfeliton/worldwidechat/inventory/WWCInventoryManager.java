@@ -2,6 +2,10 @@ package com.dominicfeliton.worldwidechat.inventory;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
+import com.dominicfeliton.worldwidechat.input.InputContext;
+import com.dominicfeliton.worldwidechat.input.InputPrompt;
+import com.dominicfeliton.worldwidechat.input.InputRequest;
+import com.dominicfeliton.worldwidechat.input.InputResult;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
@@ -14,9 +18,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.ConversationFactory;
-import org.bukkit.conversations.Prompt;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
@@ -208,9 +209,7 @@ public class WWCInventoryManager extends InventoryManager {
         }));
     }
 
-    public void genericConversationButton(int x, int y, Player player, InventoryContents contents, Prompt inPrompt, Material inMaterial, String buttonName) {
-        ConversationFactory genericConversation = new ConversationFactory(main).withModality(true).withTimeout(600)
-                .withFirstPrompt(inPrompt);
+    public void genericInputButton(int x, int y, Player player, InventoryContents contents, InputPrompt inPrompt, Material inMaterial, String buttonName) {
         ItemStack button = new ItemStack(inMaterial);
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
@@ -219,11 +218,7 @@ public class WWCInventoryManager extends InventoryManager {
                 player));
         button.setItemMeta(buttonMeta);
         contents.set(x, y, ClickableItem.of(button, e -> {
-            if (!main.getCurrPlatform().equals("Folia")) {
-                genericConversation.buildConversation(player).begin();
-            } else {
-                refs.sendMsg("wwcNoConvoFolia", "", "&c", player);
-            }
+            main.getInputService().open(player, InputRequest.fromPrompt(inPrompt));
         }));
     }
 
@@ -307,17 +302,17 @@ public class WWCInventoryManager extends InventoryManager {
     }
 
     /**
-     * Returns the generic conversation for modifying values in our config.yml using the GUI.
+     * Returns the generic input result for modifying values in our config.yml using the GUI.
      *
      * @param exitCheck           - If this is false, then we will exit
-     * @param context             - The conversation context obj
+     * @param context             - The input context obj
      * @param successfulChangeMsg - Names of the message sent on successful change
      * @param configValName       - The names of the config value to be updated
      * @param configVal           - The new value
-     * @param prevInventory       - The previous inventory to open up after the conversation is over
-     * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
+     * @param prevInventory       - The previous inventory to open up after the input is over
+     * @return InputResult.complete() - This will ultimately be returned to end the input. If the length of configValName != the length of configVal, then null is returned.
      */
-    public Prompt genericConfigConvo(boolean exitCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
+    public InputResult genericConfigInput(boolean exitCheck, InputContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
         Player currPlayer = ((Player) context.getForWhom());
         if (configValName.length != configVal.length) {
             return null;
@@ -335,21 +330,21 @@ public class WWCInventoryManager extends InventoryManager {
         }
         /* Re-open previous GUI */
         prevInventory.open((Player) context.getForWhom());
-        return Prompt.END_OF_CONVERSATION;
+        return InputResult.complete();
     }
 
     /**
-     * Returns the generic conversation for modifying values in our config.yml using the GUI.
+     * Returns the generic input result for modifying values in our config.yml using the GUI.
      *
      * @param exitCheck           - If this is false, then we will exit
-     * @param context             - The conversation context obj
+     * @param context             - The input context obj
      * @param successfulChangeMsg - Name of the message sent on successful change
      * @param configValName       - The name of the config value to be updated
      * @param configVal           - The new value
-     * @param prevInventory       - The previous inventory to open up after the conversation is over
-     * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation.
+     * @param prevInventory       - The previous inventory to open up after the input is over
+     * @return InputResult.complete() - This will ultimately be returned to end the input.
      */
-    public Prompt genericConfigConvo(boolean exitCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
-        return genericConfigConvo(exitCheck, context, successfulChangeMsg, new String[]{configValName}, new Object[]{configVal}, prevInventory);
+    public InputResult genericConfigInput(boolean exitCheck, InputContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
+        return genericConfigInput(exitCheck, context, successfulChangeMsg, new String[]{configValName}, new Object[]{configVal}, prevInventory);
     }
 }

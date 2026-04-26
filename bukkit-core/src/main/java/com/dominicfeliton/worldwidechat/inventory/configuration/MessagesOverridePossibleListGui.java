@@ -2,7 +2,8 @@ package com.dominicfeliton.worldwidechat.inventory.configuration;
 
 import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
+import com.dominicfeliton.worldwidechat.input.InputRequest;
+import com.dominicfeliton.worldwidechat.input.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
@@ -12,7 +13,6 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -85,10 +85,8 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
                 currentEntryMeta.setLore(lore);
                 currentEntry.setItemMeta(currentEntryMeta);
                 currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
-                    // Start conversation
-                    ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-                            .withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey(), inLang));
-                    textConvo.buildConversation(player).begin();
+                    main.getInputService().open(player, InputRequest.fromPrompt(
+                            new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey(), inLang)));
                 });
                 currSpot++;
             }

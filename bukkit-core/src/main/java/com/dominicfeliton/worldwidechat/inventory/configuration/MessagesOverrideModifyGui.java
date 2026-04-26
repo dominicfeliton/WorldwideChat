@@ -3,7 +3,7 @@ package com.dominicfeliton.worldwidechat.inventory.configuration;
 import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
-import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
+import com.dominicfeliton.worldwidechat.input.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
@@ -57,7 +57,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
             invManager.setBorders(contents, Material.ORANGE_STAINED_GLASS_PANE);
 
             /* Middle Option: Change existing text */
-            invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+            invManager.genericInputButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 
             /* Right Option: Delete override */
             ItemStack deleteOverrideButton = new ItemStack(Material.BARRIER);

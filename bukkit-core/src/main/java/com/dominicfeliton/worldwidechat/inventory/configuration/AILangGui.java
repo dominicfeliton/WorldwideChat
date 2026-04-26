@@ -2,7 +2,7 @@ package com.dominicfeliton.worldwidechat.inventory.configuration;
 
 import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.AISettingsConvos;
+import com.dominicfeliton.worldwidechat.input.configuration.AISettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
@@ -99,7 +99,7 @@ public class AILangGui implements InventoryProvider {
             }
 
             /* Bottom Middle Option: Add new AI lang */
-            invManager.genericConversationButton(5, 4, player, contents, new AISettingsConvos.AddLang(getAILangs()), Material.WRITABLE_BOOK, "wwcConfigGUIAILangNewButton");
+            invManager.genericInputButton(5, 4, player, contents, new AISettingsConvos.AddLang(getAILangs()), Material.WRITABLE_BOOK, "wwcConfigGUIAILangNewButton");
 
             /* Bottom Right Option: Next Page */
             if (!pagination.isLast()) {

@@ -1,4 +1,6 @@
-package com.dominicfeliton.worldwidechat.conversations.configuration;
+package com.dominicfeliton.worldwidechat.input.configuration;
+
+import com.dominicfeliton.worldwidechat.input.*;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
@@ -8,9 +10,6 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import fr.minuskube.inv.SmartInventory;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.Prompt;
-import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventPriority;
 import org.jetbrains.annotations.NotNull;
@@ -28,11 +27,11 @@ public class ChatSettingsConvos {
 
     private static WWCInventoryManager invMan = main.getInventoryManager();
 
-    public static class ChannelIcon extends StringPrompt {
+    public static class ChannelIcon extends StringInputPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             // TODO: Display color codes properly
             Player currPlayer = ((Player) context.getForWhom());
@@ -44,18 +43,18 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
-            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChannelIconSuccess",
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
+            return invMan.genericConfigInput(!input.equals("0"), context, "wwcConfigConversationChannelIconSuccess",
                     "Chat.separateChatChannel.icon", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv.get());
         }
     }
 
-    public static class ChannelFormat extends StringPrompt {
+    public static class ChannelFormat extends StringInputPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
         private String vars = "{prefix}, {username}, {suffix}, {local:XXX}";
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
@@ -67,18 +66,18 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
-            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
+            return invMan.genericConfigInput(!input.equals("0"), context, "wwcConfigConversationChatFormatSuccess",
                     "Chat.separateChatChannel.format", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv.get());
         }
     }
 
-    public static class ChannelHoverFormat extends StringPrompt {
+    public static class ChannelHoverFormat extends StringInputPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
         private String vars = "{prefix}, {username}, {suffix}, {local:XXX}";
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
@@ -90,17 +89,17 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
-            return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatHoverFormatSuccess",
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
+            return invMan.genericConfigInput(!input.equals("0"), context, "wwcConfigConversationChatHoverFormatSuccess",
                     "Chat.separateChatChannel.hoverFormat", input, MenuGui.CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv.get());
         }
     }
 
-    public static class ModifyChatPriority extends StringPrompt {
+    public static class ModifyChatPriority extends StringInputPrompt {
         private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
@@ -112,7 +111,7 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(ConversationContext context, String input) {
+        public InputResult acceptInput(InputContext context, String input) {
             Player currPlayer = ((Player) context.getForWhom());
             boolean valid = false;
             for (EventPriority eaPriority : EventPriority.values()) {
@@ -122,18 +121,18 @@ public class ChatSettingsConvos {
             }
 
             if (valid) {
-                return invMan.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationChatPrioritySuccess",
+                return invMan.genericConfigInput(!input.equals("0"), context, "wwcConfigConversationChatPrioritySuccess",
                         "Chat.chatListenerPriority", input, MenuGui.CONFIG_GUI_TAGS.CHAT_SET.inv.get());
             }
             refs.sendMsg("wwcConfigConversationChatPriorityBadInput",
                     "&6" + Arrays.toString(EventPriority.values()),
                     "&c",
                     currPlayer);
-            return this;
+            return InputResult.repeat();
         }
     }
 
-    public static class AddBlacklistTerm extends StringPrompt {
+    public static class AddBlacklistTerm extends StringInputPrompt {
         private SmartInventory previousInventory;
         private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
@@ -142,7 +141,7 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -151,7 +150,7 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
 
             GenericRunnable open = new GenericRunnable() {
@@ -183,11 +182,11 @@ public class ChatSettingsConvos {
                 }
             };
             wwcHelper.runAsync(run, ASYNC, null);
-            return END_OF_CONVERSATION;
+            return InputResult.complete();
         }
     }
 
-    public static class ModifyOverrideText extends StringPrompt {
+    public static class ModifyOverrideText extends StringInputPrompt {
         private SmartInventory previousInventory;
 
         private String currentOverrideName;
@@ -203,7 +202,7 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -212,7 +211,7 @@ public class ChatSettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
 
             GenericRunnable open = new GenericRunnable() {
@@ -242,7 +241,7 @@ public class ChatSettingsConvos {
                 }
             };
             wwcHelper.runAsync(async, ASYNC, null);
-            return END_OF_CONVERSATION;
+            return InputResult.complete();
         }
     }
 

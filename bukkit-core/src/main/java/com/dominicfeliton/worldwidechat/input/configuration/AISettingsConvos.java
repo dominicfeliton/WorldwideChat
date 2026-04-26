@@ -1,4 +1,6 @@
-package com.dominicfeliton.worldwidechat.conversations.configuration;
+package com.dominicfeliton.worldwidechat.input.configuration;
+
+import com.dominicfeliton.worldwidechat.input.*;
 
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
@@ -8,9 +10,6 @@ import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import fr.minuskube.inv.SmartInventory;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.Prompt;
-import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
@@ -27,7 +26,7 @@ public class AISettingsConvos {
 
     private static WWCInventoryManager invMan = main.getInventoryManager();
 
-    public static class AddLang extends StringPrompt {
+    public static class AddLang extends StringInputPrompt {
         private SmartInventory previousInventory;
         private WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
@@ -36,7 +35,7 @@ public class AISettingsConvos {
         }
 
         @Override
-        public @NotNull String getPromptText(ConversationContext context) {
+        public @NotNull String getPromptText(InputContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
@@ -45,7 +44,7 @@ public class AISettingsConvos {
         }
 
         @Override
-        public Prompt acceptInput(@NotNull ConversationContext context, String input) {
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
 
             GenericRunnable open = new GenericRunnable() {
@@ -99,7 +98,7 @@ public class AISettingsConvos {
                 }
             };
             wwcHelper.runAsync(run, ASYNC, null);
-            return END_OF_CONVERSATION;
+            return InputResult.complete();
         }
     }
 
