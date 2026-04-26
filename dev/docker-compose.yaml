@@ -54,7 +54,7 @@ services:
       timeout: 5s
       retries: 24
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql
     restart: always
     networks:
       - backend
