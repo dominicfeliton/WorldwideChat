@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.wwcstatsgui;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
@@ -57,7 +57,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             PlayerRecord currRecord = main.getPlayerRecord(targetPlayerUUID, false);
 
             /* Default orange stained glass borders */
-            ItemStack customDefaultBorders = XMaterial.ORANGE_STAINED_GLASS_PANE.parseItem();
+            ItemStack customDefaultBorders = new ItemStack(Material.ORANGE_STAINED_GLASS_PANE);
             ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
             defaultBorderMeta.setDisplayName(" ");
             customDefaultBorders.setItemMeta(defaultBorderMeta);
@@ -67,7 +67,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             ItemStack isActiveTranslator;
             if (main.isActiveTranslator(targetPlayerUUID)) {
                 ActiveTranslator currTrans = main.getActiveTranslator(targetPlayerUUID);
-                isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
+                isActiveTranslator = new ItemStack(Material.GREEN_CONCRETE);
                 ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
                 isActiveTranslatorMeta.setDisplayName(refs.getPlainMsg("wwcsIsActiveTranslator", refs.checkOrX(true), inPlayer));
                 SupportedLang inLang = refs.getSupportedLang(currTrans.getInLangCode(), CommonRefs.LangType.INPUT);
@@ -96,7 +96,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 
                 isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
             } else {
-                isActiveTranslator = XMaterial.RED_CONCRETE.parseItem();
+                isActiveTranslator = new ItemStack(Material.RED_CONCRETE);
                 ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
                 isActiveTranslatorMeta.setDisplayName(refs.getPlainMsg("wwcsIsActiveTranslator", refs.checkOrX(false), inPlayer));
                 isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
@@ -104,7 +104,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             contents.set(2, 1, ClickableItem.empty(isActiveTranslator));
 
             /* Attempted translations button */
-            ItemStack attemptedTranslations = XMaterial.WRITABLE_BOOK.parseItem();
+            ItemStack attemptedTranslations = new ItemStack(Material.WRITABLE_BOOK);
             ItemMeta attemptedTranslationsMeta = attemptedTranslations.getItemMeta();
             attemptedTranslationsMeta.setDisplayName(refs.getPlainMsg("wwcsAttemptedTranslations",
                     "&b" + currRecord.getAttemptedTranslations(), inPlayer));
@@ -112,7 +112,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             contents.set(2, 3, ClickableItem.empty(attemptedTranslations));
 
             /* Successful translations button */
-            ItemStack local = XMaterial.BOOKSHELF.parseItem();
+            ItemStack local = new ItemStack(Material.BOOKSHELF);
             ItemMeta localMeta = local.getItemMeta();
             localMeta.setDisplayName(refs.getPlainMsg("wwcsLocalization",
                     "&b" + (currRecord.getLocalizationCode().isEmpty()
@@ -123,7 +123,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             contents.set(3, 4, ClickableItem.empty(local));
 
             /* Successful translations button */
-            ItemStack successfulTranslations = XMaterial.WRITTEN_BOOK.parseItem();
+            ItemStack successfulTranslations = new ItemStack(Material.WRITTEN_BOOK);
             ItemMeta successfulTranslationsMeta = successfulTranslations.getItemMeta();
             successfulTranslationsMeta.setDisplayName(refs.getPlainMsg("wwcsSuccessfulTranslations",
                     "&b" + currRecord.getSuccessfulTranslations(),
@@ -132,7 +132,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
             contents.set(2, 5, ClickableItem.empty(successfulTranslations));
 
             /* Last translation time button */
-            ItemStack lastTranslationTime = XMaterial.CLOCK.parseItem();
+            ItemStack lastTranslationTime = new ItemStack(Material.CLOCK);
             ItemMeta lastTranslationTimeMeta = lastTranslationTime.getItemMeta();
             lastTranslationTimeMeta.setDisplayName(refs.getPlainMsg("wwcsLastTranslationTime",
                     "&b" + currRecord.getLastTranslationTime(),

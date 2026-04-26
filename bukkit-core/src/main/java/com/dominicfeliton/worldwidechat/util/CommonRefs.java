@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.cryptomorin.xseries.XSound;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.translators.*;
@@ -195,24 +194,10 @@ public class CommonRefs {
         }
 
         private static Sound safeSound(Sound sound) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-
             if (sound == null) {
-                refs.debugMsg("Null sound provided - defaulting to fallback sound");
                 return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
             }
-
-            try {
-                Sound parsedSound = XSound.matchXSound(sound).parseSound();
-                if (parsedSound == null) {
-                    refs.debugMsg("Failed to parse sound: " + sound.getClass().getName() + " - defaulting to fallback sound");
-                    return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
-                }
-                return parsedSound;
-            } catch (Exception e) {
-                refs.debugMsg("Error processing sound: " + sound.getClass().getName() + " - " + e.getMessage());
-                return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
-            }
+            return sound;
         }
 
         public static SoundType fromString(String name) {

@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.WWCTranslateChatIncoming;
 import com.dominicfeliton.worldwidechat.commands.WWCTranslateChatOutgoing;
@@ -50,16 +50,16 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
             ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
 
             /* White stained glass borders as default, Green stained glass borders for active */
-            invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.WHITE_STAINED_GLASS_PANE);
 
             if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
-                invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
+                invManager.setBorders(contents, Material.GREEN_STAINED_GLASS_PANE);
             }
 
             /* Outgoing Chat Button */
             if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctco"))
                     || (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctco.otherplayers")) {
-                ItemStack outgoingChatButton = XMaterial.CHEST_MINECART.parseItem();
+                ItemStack outgoingChatButton = new ItemStack(Material.CHEST_MINECART);
                 ItemMeta outgoingChatMeta = outgoingChatButton.getItemMeta();
                 if (targetTranslator.getTranslatingChatOutgoing()) {
                     invManager.addGlowEffect(outgoingChatMeta);
@@ -85,7 +85,7 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
             /* Incoming Chat Button */
             if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctci"))
                     || (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctci.otherplayers")) {
-                ItemStack incomingChatButton = XMaterial.ANVIL.parseItem();
+                ItemStack incomingChatButton = new ItemStack(Material.ANVIL);
                 ItemMeta incomingChatMeta = incomingChatButton.getItemMeta();
                 if (targetTranslator.getTranslatingChatIncoming()) {
                     invManager.addGlowEffect(incomingChatMeta);

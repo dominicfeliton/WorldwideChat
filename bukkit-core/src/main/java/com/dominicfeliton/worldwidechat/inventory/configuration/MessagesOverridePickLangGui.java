@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
@@ -46,7 +46,7 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Yellow stained glass borders */
-            invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.YELLOW_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
@@ -57,7 +57,7 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
             int currSpot = 0;
             for (SupportedLang eaLang : filteredLocalLangs) {
                 String code = eaLang.getLangCode();
-                ItemStack currentEntry = XMaterial.BOOKSHELF.parseItem();
+                ItemStack currentEntry = new ItemStack(Material.BOOKSHELF);
                 ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
                 currentEntryMeta.setDisplayName("messages-" + code + ".yml");

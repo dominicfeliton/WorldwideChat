@@ -21,10 +21,12 @@
   </modules>
 
   <properties>
+    <flyway.version>12.0.0</flyway.version>
     <folia.api.version>1.21.11-R0.1-SNAPSHOT</folia.api.version>
     <junit.jupiter.version>6.0.3</junit.jupiter.version>
     <maven.compiler.release>17</maven.compiler.release>
     <mockbukkit.version>4.108.0</mockbukkit.version>
+    <mongock.version>5.5.1</mongock.version>
     <paper.api.version>1.21.11-R0.1-SNAPSHOT</paper.api.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spigot.api.version>1.21.11-R0.2-SNAPSHOT</spigot.api.version>
@@ -152,6 +154,31 @@
       <groupId>com.github.ben-manes.caffeine</groupId>
       <artifactId>caffeine</artifactId>
       <version>3.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+      <version>${flyway.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-mysql</artifactId>
+      <version>${flyway.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-postgresql</artifactId>
+      <version>${flyway.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.mongock</groupId>
+      <artifactId>mongock-standalone</artifactId>
+      <version>${mongock.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.mongock</groupId>
+      <artifactId>mongodb-sync-v4-driver</artifactId>
+      <version>${mongock.version}</version>
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>

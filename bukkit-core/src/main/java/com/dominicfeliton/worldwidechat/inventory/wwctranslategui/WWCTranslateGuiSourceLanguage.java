@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
@@ -52,9 +52,9 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Default white stained glass borders for inactive, yellow if player has existing translation session */
-            invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.WHITE_STAINED_GLASS_PANE);
             if (main.isActiveTranslator(targetPlayerUUID)) {
-                invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+                invManager.setBorders(contents, Material.YELLOW_STAINED_GLASS_PANE);
             }
 
             /* Init current active translator */
@@ -69,7 +69,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
             int i = 0;
             SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), CommonRefs.LangType.INPUT);
             for (SupportedLang currLang : cleanedInputLangs) {
-                ItemStack itemForLang = XMaterial.BOOK.parseItem();
+                ItemStack itemForLang = new ItemStack(Material.BOOK);
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 
                 /* Add Glow Effect */
@@ -120,7 +120,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
             /* Bottom Middle Option: Auto-detect Source Language */
             /* Disabled for Amazon Translate */
             if (!main.getTranslatorName().equalsIgnoreCase("Amazon Translate")) {
-                ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
+                ItemStack skipSourceButton = new ItemStack(Material.BOOKSHELF);
                 ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
                 skipSourceMeta.setDisplayName(refs.getPlainMsg("wwctGUIAutoDetectButton",
                         "",

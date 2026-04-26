@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
-import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.TempItemInventory;
@@ -13,6 +12,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -83,7 +83,7 @@ public class TranslateInGameListener implements Listener {
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             if (currTranslator.getTranslatingBook()
                     && event.getHand().equals(EquipmentSlot.HAND) && event.getItem() != null
-                    && XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
+                    && Material.WRITTEN_BOOK == event.getItem().getType()
                     && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
                 ItemStack currentBook = event.getItem().clone();
                 GenericRunnable out = new GenericRunnable() {
@@ -118,7 +118,7 @@ public class TranslateInGameListener implements Listener {
                         }
 
                         /* Create the modified book */
-                        ItemStack newBook = XMaterial.WRITTEN_BOOK.parseItem();
+                        ItemStack newBook = new ItemStack(Material.WRITTEN_BOOK);
                         BookMeta newMeta = (BookMeta) newBook.getItemMeta();
                         newMeta.setAuthor(meta.getAuthor());
                         newMeta.setGeneration(meta.getGeneration());
@@ -303,8 +303,8 @@ public class TranslateInGameListener implements Listener {
     private Object getItemInMainHand(PlayerInteractEvent event) {
         boolean hasItem = event.getPlayer().getInventory() != null
                 && event.getPlayer().getInventory().getItemInMainHand() != null
-                && event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.AIR.parseItem().getType()
-                && event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.WRITTEN_BOOK.parseItem().getType();
+                && event.getPlayer().getInventory().getItemInMainHand().getType() != Material.AIR
+                && event.getPlayer().getInventory().getItemInMainHand().getType() != Material.WRITTEN_BOOK;
         if (hasItem) {
             return event.getPlayer().getInventory().getItemInMainHand();
         }

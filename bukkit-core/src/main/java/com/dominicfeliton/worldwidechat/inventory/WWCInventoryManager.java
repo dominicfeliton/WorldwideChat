@@ -1,7 +1,5 @@
 package com.dominicfeliton.worldwidechat.inventory;
 
-import com.cryptomorin.xseries.XEnchantment;
-import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
@@ -13,10 +11,13 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.conversations.Prompt;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -68,10 +69,10 @@ public class WWCInventoryManager extends InventoryManager {
     }
 
     public void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType, Object[] args) {
-        ItemStack pageButton = XMaterial.WHITE_STAINED_GLASS.parseItem();
+        ItemStack pageButton = new ItemStack(Material.WHITE_STAINED_GLASS);
         ItemMeta pageMeta = pageButton.getItemMeta();
         if (buttonType.equalsIgnoreCase("Previous")) {
-            pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
+            pageButton = new ItemStack(Material.RED_STAINED_GLASS);
             pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIPreviousPageButton",
                     "",
                     "&c",
@@ -88,7 +89,7 @@ public class WWCInventoryManager extends InventoryManager {
                 }
             }));
         } else if (buttonType.equalsIgnoreCase("Next")) {
-            pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
+            pageButton = new ItemStack(Material.GREEN_STAINED_GLASS);
             pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUINextPageButton",
                     "",
                     "&a",
@@ -105,7 +106,7 @@ public class WWCInventoryManager extends InventoryManager {
                 }
             }));
         } else if (buttonType.equalsIgnoreCase("Page Number")) {
-            pageButton = XMaterial.LILY_PAD.parseItem();
+            pageButton = new ItemStack(Material.LILY_PAD);
             pageMeta.setDisplayName(refs.getPlainMsg("wwcGUIPageNumber",
                     "&6" + args[0],
                     "&b",
@@ -115,7 +116,7 @@ public class WWCInventoryManager extends InventoryManager {
             pageButton.setItemMeta(pageMeta);
             contents.set(x, y, ClickableItem.empty(pageButton));
         } else if (buttonType.equalsIgnoreCase("Quit")) {
-            pageButton = XMaterial.BARRIER.parseItem();
+            pageButton = new ItemStack(Material.BARRIER);
             pageMeta = pageButton.getItemMeta();
             pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIQuitButton",
                     "",
@@ -131,8 +132,8 @@ public class WWCInventoryManager extends InventoryManager {
         }
     }
 
-    public void setBorders(InventoryContents contents, XMaterial inMaterial) {
-        ItemStack customBorders = inMaterial.parseItem();
+    public void setBorders(InventoryContents contents, Material inMaterial) {
+        ItemStack customBorders = new ItemStack(inMaterial);
         ItemMeta borderMeta = customBorders.getItemMeta();
         borderMeta.setDisplayName(" ");
         customBorders.setItemMeta(borderMeta);
@@ -147,12 +148,12 @@ public class WWCInventoryManager extends InventoryManager {
         ItemStack button;
         if (preCondition != null) {
             if (preCondition) {
-                button = XMaterial.EMERALD_BLOCK.parseItem();
+                button = new ItemStack(Material.EMERALD_BLOCK);
             } else {
-                button = XMaterial.REDSTONE_BLOCK.parseItem();
+                button = new ItemStack(Material.REDSTONE_BLOCK);
             }
         } else {
-            button = XMaterial.WRITABLE_BOOK.parseItem();
+            button = new ItemStack(Material.WRITABLE_BOOK);
         }
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
@@ -170,11 +171,11 @@ public class WWCInventoryManager extends InventoryManager {
     }
 
     public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, List<String> configValsToDisable, boolean serverRestartRequired) {
-        ItemStack button = XMaterial.BEDROCK.parseItem();
+        ItemStack button = new ItemStack(Material.BEDROCK);
         if (main.getConfigManager().getMainConfig().getBoolean(configValueName)) {
-            button = XMaterial.EMERALD_BLOCK.parseItem();
+            button = new ItemStack(Material.EMERALD_BLOCK);
         } else {
-            button = XMaterial.REDSTONE_BLOCK.parseItem();
+            button = new ItemStack(Material.REDSTONE_BLOCK);
         }
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(configButtonName,
@@ -207,10 +208,10 @@ public class WWCInventoryManager extends InventoryManager {
         }));
     }
 
-    public void genericConversationButton(int x, int y, Player player, InventoryContents contents, Prompt inPrompt, XMaterial inMaterial, String buttonName) {
+    public void genericConversationButton(int x, int y, Player player, InventoryContents contents, Prompt inPrompt, Material inMaterial, String buttonName) {
         ConversationFactory genericConversation = new ConversationFactory(main).withModality(true).withTimeout(600)
                 .withFirstPrompt(inPrompt);
-        ItemStack button = inMaterial.parseItem();
+        ItemStack button = new ItemStack(inMaterial);
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
                 "",
@@ -226,8 +227,8 @@ public class WWCInventoryManager extends InventoryManager {
         }));
     }
 
-    public void genericBookButton(int x, int y, Player player, InventoryContents contents, YamlConfiguration inConfig, String inConfigVal, XMaterial inMaterial, String buttonName) {
-        ItemStack button = inMaterial.parseItem();
+    public void genericBookButton(int x, int y, Player player, InventoryContents contents, YamlConfiguration inConfig, String inConfigVal, Material inMaterial, String buttonName) {
+        ItemStack button = new ItemStack(inMaterial);
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
                 "",
@@ -235,7 +236,7 @@ public class WWCInventoryManager extends InventoryManager {
                 player));
         button.setItemMeta(buttonMeta);
         contents.set(x, y, ClickableItem.of(button, e -> {
-            ItemStack book = XMaterial.WRITABLE_BOOK.parseItem();
+            ItemStack book = new ItemStack(Material.WRITABLE_BOOK);
             BookMeta bookMeta = (BookMeta) book.getItemMeta();
 
             char[] array = inConfig.getString(inConfigVal).toCharArray();
@@ -299,7 +300,10 @@ public class WWCInventoryManager extends InventoryManager {
 
     public void addGlowEffect(ItemMeta meta) {
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        meta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+        Enchantment power = Enchantment.getByKey(NamespacedKey.minecraft("power"));
+        if (power != null) {
+            meta.addEnchant(power, 1, false);
+        }
     }
 
     /**

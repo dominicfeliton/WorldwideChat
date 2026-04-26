@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
@@ -44,7 +44,7 @@ public class BlacklistGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Green stained glass borders */
-            invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.GREEN_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
@@ -54,7 +54,7 @@ public class BlacklistGui implements InventoryProvider {
                 refs.debugMsg("Adding existing blacklist terms to inventory! Amount of terms: " + currentTerms.length);
                 int currSpot = 0;
                 for (String term : blacklist) {
-                    ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
+                    ItemStack currentEntry = new ItemStack(Material.WRITABLE_BOOK);
                     ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
                     currentEntryMeta.setDisplayName(term);
@@ -83,7 +83,7 @@ public class BlacklistGui implements InventoryProvider {
             }
 
             /* Bottom Middle Option: Add new override */
-            invManager.genericConversationButton(5, 4, player, contents, new ChatSettingsConvos.AddBlacklistTerm(getBlacklist()), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesBlacklistNewButton");
+            invManager.genericConversationButton(5, 4, player, contents, new ChatSettingsConvos.AddBlacklistTerm(getBlacklist()), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesBlacklistNewButton");
 
             /* Bottom Right Option: Next Page */
             if (!pagination.isLast()) {

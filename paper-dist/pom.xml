@@ -112,7 +112,6 @@
               <include>joda-time:*</include>
               <include>fr.minuskube.inv:bukkit-smart-invs</include>
               <include>org.apache.maven:maven-artifact</include>
-              <include>com.github.cryptomorin:XSeries</include>
               <include>com.zaxxer:HikariCP</include>
               <include>com.mysql:*</include>
               <include>com.github.ben-manes.caffeine:caffeine</include>
@@ -122,6 +121,9 @@
               <include>io.github.brenoepics:*</include>
               <include>org.apache.logging.log4j:*</include>
               <include>org.postgresql:postgresql</include>
+              <include>org.flywaydb:*</include>
+              <include>io.mongock:*</include>
+              <include>org.slf4j:*</include>
               <include>io.github.ollama4j:*</include>
               <include>com.google.protobuf:*</include>
             </includes>
@@ -135,17 +137,6 @@
                 <exclude>META-INF/*.MF</exclude>
                 <exclude>META-INF/*.DSA</exclude>
                 <exclude>META-INF/*.RSA</exclude>
-                <exclude>META-INF/**</exclude>
-                <exclude>com/cryptomorin/xseries/messages/*</exclude>
-                <exclude>com/cryptomorin/xseries/particles/*</exclude>
-                <exclude>com/cryptomorin/xseries/unused/*</exclude>
-                <exclude>com/cryptomorin/xseries/XBiome*</exclude>
-                <exclude>com/cryptomorin/xseries/NMSExtras*</exclude>
-                <exclude>com/cryptomorin/xseries/NoteBlockMusic*</exclude>
-                <exclude>com/cryptomorin/xseries/XEntity*</exclude>
-                <exclude>com/cryptomorin/xseries/XBlock*</exclude>
-                <exclude>com/cryptomorin/xseries/XPotion*</exclude>
-                <exclude>com/cryptomorin/xseries/Skull*</exclude>
               </excludes>
             </filter>
             <filter>
@@ -255,10 +246,6 @@
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
             </relocation>
             <relocation>
-              <pattern>com.cryptomorin.xseries</pattern>
-              <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
-            </relocation>
-            <relocation>
               <pattern>com.zaxxer</pattern>
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.com.zaxxer</shadedPattern>
             </relocation>
@@ -295,11 +282,28 @@
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.postgresql</shadedPattern>
             </relocation>
             <relocation>
+              <pattern>org.flywaydb</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.flywaydb</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>io.mongock</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.mongock</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>io.changock</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.changock</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.slf4j</pattern>
+              <shadedPattern>com.dominicfeliton.worldwidechat.libs.org.slf4j</shadedPattern>
+            </relocation>
+            <relocation>
               <pattern>io.github</pattern>
               <shadedPattern>com.dominicfeliton.worldwidechat.libs.io.github</shadedPattern>
             </relocation>
           </relocations>
           <transformers>
+            <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
               <manifestEntries>
                 <!-- This instructs Paper to treat your plugin as Mojang-mapped. -->

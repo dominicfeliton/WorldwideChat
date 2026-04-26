@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
@@ -55,13 +55,13 @@ public class AILangModifyGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Set borders to orange */
-            invManager.setBorders(contents, XMaterial.ORANGE_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.ORANGE_STAINED_GLASS_PANE);
 
             /* Middle Option: Change existing text */
-            //invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+            //invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName, inLang), Material.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 
             /* Right Option: Delete override */
-            ItemStack deleteLangButton = XMaterial.BARRIER.parseItem();
+            ItemStack deleteLangButton = new ItemStack(Material.BARRIER);
             ItemMeta deleteLangMeta = deleteLangButton.getItemMeta();
             deleteLangMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIAILangDeleteButton",
                     "",

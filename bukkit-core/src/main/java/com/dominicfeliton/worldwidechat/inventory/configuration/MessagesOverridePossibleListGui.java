@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
@@ -52,7 +52,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Yellow stained glass borders */
-            invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.YELLOW_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
@@ -69,7 +69,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
             refs.debugMsg("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
             for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
                 /* Init item */
-                ItemStack currentEntry = XMaterial.OAK_SIGN.parseItem();
+                ItemStack currentEntry = new ItemStack(Material.OAK_SIGN);
                 ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
                 currentEntryMeta.setDisplayName(entry.getKey());

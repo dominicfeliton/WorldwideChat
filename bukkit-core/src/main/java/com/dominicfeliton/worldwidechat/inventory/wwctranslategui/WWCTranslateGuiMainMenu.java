@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.*;
 import com.dominicfeliton.worldwidechat.conversations.wwctranslategui.PersonalRateLimitConvo;
@@ -61,13 +61,13 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Default white stained glass borders for inactive */
-            invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.WHITE_STAINED_GLASS_PANE);
             if (main.isActiveTranslator(targetPlayerUUID)) {
-                invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
+                invManager.setBorders(contents, Material.GREEN_STAINED_GLASS_PANE);
             }
 
             /* New translation button */
-            ItemStack translationButton = XMaterial.COMPASS.parseItem();
+            ItemStack translationButton = new ItemStack(Material.COMPASS);
             ItemMeta translationMeta = translationButton.getItemMeta();
             translationMeta.setDisplayName(
                     refs.getPlainMsg("wwctGUITranslationButton", inPlayer));
@@ -81,7 +81,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                     && (player.hasPermission("worldwidechat.wwcl.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
                 PlayerRecord currRecord = main.getPlayerRecord(targetPlayerUUID, true);
 
-                ItemStack localizationButton = XMaterial.PAPER.parseItem();
+                ItemStack localizationButton = new ItemStack(Material.PAPER);
                 ItemMeta localizationMeta = localizationButton.getItemMeta();
                 List<String> outLore = new ArrayList<>();
                 if (!currRecord.getLocalizationCode().isEmpty()) {
@@ -144,7 +144,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 translationButton.setItemMeta(translationMeta);
 
                 /* Stop Button: Stop translation if active */
-                ItemStack stopButton = XMaterial.BARRIER.parseItem();
+                ItemStack stopButton = new ItemStack(Material.BARRIER);
                 ItemMeta stopMeta = stopButton.getItemMeta();
                 stopMeta.setDisplayName(refs.getPlainMsg("wwctGUIStopButton",
                         "",
@@ -174,7 +174,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                         && (player.hasPermission("worldwidechat.wwctrl.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
                     ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
                             .withFirstPrompt(new PersonalRateLimitConvo(targetTranslator));
-                    ItemStack rateButton = XMaterial.SLIME_BLOCK.parseItem();
+                    ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
                     ItemMeta rateMeta = rateButton.getItemMeta();
                     ArrayList<String> lore = new ArrayList<>();
                     if (targetTranslator.getRateLimit() > 0) {
@@ -207,7 +207,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 /* Book Translation Button */
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb")
                         && (player.hasPermission("worldwidechat.wwctb.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-                    ItemStack bookButton = XMaterial.WRITABLE_BOOK.parseItem();
+                    ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
                     ItemMeta bookMeta = bookButton.getItemMeta();
                     if (targetTranslator.getTranslatingBook()) {
                         bookMeta.setDisplayName(refs.getPlainMsg("wwctGUIBookButton",
@@ -234,7 +234,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts")
                         && (player.hasPermission("worldwidechat.wwcts.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
                     /* Init item */
-                    ItemStack signButton = XMaterial.OAK_SIGN.parseItem();
+                    ItemStack signButton = new ItemStack(Material.OAK_SIGN);
                     ItemMeta signMeta = signButton.getItemMeta();
                     if (targetTranslator.getTranslatingSign()) {
                         signMeta.setDisplayName(refs.getPlainMsg("wwctGUISignButton",
@@ -260,7 +260,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 /* Item Translation Button */
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcti")
                         && (player.hasPermission("worldwidechat.wwcti.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-                    ItemStack itemButton = XMaterial.GRASS_BLOCK.parseItem();
+                    ItemStack itemButton = new ItemStack(Material.GRASS_BLOCK);
                     ItemMeta itemMeta = itemButton.getItemMeta();
                     if (targetTranslator.getTranslatingItem()) {
                         itemMeta.setDisplayName(refs.getPlainMsg("wwctGUIItemButton",
@@ -286,7 +286,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 /* Entity Translation Button */
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcte")
                         && (player.hasPermission("worldwidechat.wwcte.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-                    ItemStack entityButton = XMaterial.NAME_TAG.parseItem();
+                    ItemStack entityButton = new ItemStack(Material.NAME_TAG);
                     ItemMeta entityMeta = entityButton.getItemMeta();
                     if (targetTranslator.getTranslatingEntity()) {
                         invManager.addGlowEffect(entityMeta);
@@ -313,7 +313,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
                 if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")
                         && ((targetPlayerUUID.equals(player.getUniqueId().toString()) && (player.hasPermission("worldwidechat.wwctco") || player.hasPermission("worldwidechat.wwctci")))
                         || (!targetPlayerUUID.equals(player.getUniqueId().toString()) && (player.hasPermission("worldwidechat.wwctco.otherplayers") || player.hasPermission("worldwidechat.wwctci.otherplayers"))))) {
-                    ItemStack chatButton = XMaterial.PAINTING.parseItem();
+                    ItemStack chatButton = new ItemStack(Material.PAINTING);
                     ItemMeta chatMeta = chatButton.getItemMeta();
                     if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
                         invManager.addGlowEffect(chatMeta);

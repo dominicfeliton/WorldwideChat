@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.WWCGlobal;
 import com.dominicfeliton.worldwidechat.commands.WWCTranslate;
@@ -15,6 +14,7 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 import org.bukkit.command.CommandSender;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -56,9 +56,9 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Default white stained glass borders for inactive, yellow if player has existing translation session */
-            invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.WHITE_STAINED_GLASS_PANE);
             if (!main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals("")) {
-                invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+                invManager.setBorders(contents, Material.YELLOW_STAINED_GLASS_PANE);
             }
 
             /* Init current active translator */
@@ -76,14 +76,10 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
             for (SupportedLang currLang : cleanedOutLangs) {
                 boolean unsupported;
 
-                // Change item depending on version + condition
-                ItemStack itemForLang = XMaterial.ARROW.parseItem();
-                if (XMaterial.TARGET.parseItem() != null) {
-                    itemForLang = XMaterial.TARGET.parseItem();
-                }
+                ItemStack itemForLang = new ItemStack(Material.TARGET);
                 if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode())) {
                     refs.debugMsg("Skipping " + currLang.getLangCode() + " as it is source lang...");
-                    itemForLang = XMaterial.BARRIER.parseItem();
+                    itemForLang = new ItemStack(Material.BARRIER);
                     unsupported = true;
                 } else {
                     unsupported = false;
