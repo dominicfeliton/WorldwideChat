@@ -45,6 +45,8 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
     public static final String messagesConfigVersion = "04162024-1"; // MMDDYYYY-revisionNumber
+    private static final String SLF4J_INTERNAL_VERBOSITY_PROPERTY = "slf4j.internal.verbosity";
+    private static final String SLF4J_INTERNAL_VERBOSITY_ERROR = "ERROR";
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -171,6 +173,14 @@ public class WorldwideChat extends JavaPlugin {
 
     public ConfigurationHandler getConfigManager() {
         return configurationManager;
+    }
+
+    @Override
+    public void onLoad() {
+        // SLF4J reports provider discovery warnings directly to stderr before normal plugin logging exists.
+        if (System.getProperty(SLF4J_INTERNAL_VERBOSITY_PROPERTY) == null) {
+            System.setProperty(SLF4J_INTERNAL_VERBOSITY_PROPERTY, SLF4J_INTERNAL_VERBOSITY_ERROR);
+        }
     }
 
     @Override
