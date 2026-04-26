@@ -29,21 +29,21 @@ jobs:
         run: mvn -B clean package -Dyamltranslator.skip=true --file pom.xml
 
       - name: Upload Spigot JAR
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: WorldwideChat-spigot
           path: spigot-target/WorldwideChat-spigot.jar
           if-no-files-found: error
 
       - name: Upload Paper JAR
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: WorldwideChat-paper
           path: paper-target/WorldwideChat-paper.jar
           if-no-files-found: error
 
       - name: Upload Folia JAR
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: WorldwideChat-folia
           path: folia-target/WorldwideChat-folia.jar
