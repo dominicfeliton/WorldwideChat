@@ -23,12 +23,14 @@
   <properties>
     <flyway.version>12.4.0</flyway.version>
     <folia.api.version>1.21.11-R0.1-SNAPSHOT</folia.api.version>
+    <jackson.annotations.version>2.21</jackson.annotations.version>
     <junit.jupiter.version>6.0.3</junit.jupiter.version>
     <maven.compiler.release>17</maven.compiler.release>
     <mockbukkit.version>4.108.0</mockbukkit.version>
     <mongock.version>5.5.1</mongock.version>
     <paper.api.version>1.21.11-R0.1-SNAPSHOT</paper.api.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <slf4j.version>2.0.17</slf4j.version>
     <spigot.api.version>1.21.11-R0.2-SNAPSHOT</spigot.api.version>
   </properties>
 
@@ -95,6 +97,11 @@
       <version>2.14.0</version>
     </dependency>
     <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson.annotations.version}</version>
+    </dependency>
+    <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.22.0</version>
@@ -134,6 +141,11 @@
       <groupId>com.zaxxer</groupId>
       <artifactId>HikariCP</artifactId>
       <version>7.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
