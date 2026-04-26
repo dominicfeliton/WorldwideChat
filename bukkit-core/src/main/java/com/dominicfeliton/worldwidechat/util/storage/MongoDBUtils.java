@@ -84,7 +84,15 @@ public class MongoDBUtils {
     }
 
     public MongoDatabase getActiveDatabase() {
-        return client.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
+        return client.getDatabase(databaseName);
+    }
+
+    public MongoClient getClient() {
+        return client;
+    }
+
+    public String getDatabaseName() {
+        return databaseName;
     }
 
 }

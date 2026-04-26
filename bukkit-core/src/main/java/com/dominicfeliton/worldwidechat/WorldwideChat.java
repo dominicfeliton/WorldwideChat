@@ -12,6 +12,7 @@ import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
+import com.dominicfeliton.worldwidechat.util.storage.StorageMigrationUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
@@ -391,6 +392,15 @@ public class WorldwideChat extends JavaPlugin {
         configurationManager.initBlacklistConfig();
         configurationManager.initAISettings();
         String tempTransName = configurationManager.loadTranslatorSettings();
+        try {
+            StorageMigrationUtils.migrateCurrentBackend();
+        } catch (Exception e) {
+            getLogger().severe("Unable to migrate the configured WorldwideChat storage backend. Disabling plugin to avoid data loss.");
+            e.printStackTrace();
+            getServer().getPluginManager().disablePlugin(this);
+            translatorName = "Invalid";
+            return;
+        }
 
         /* Run tasks after translator loaded */
         // Load saved user data

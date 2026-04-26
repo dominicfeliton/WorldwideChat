@@ -4,8 +4,14 @@ import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import org.junit.jupiter.api.Test;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,6 +35,32 @@ class StorageRetentionTest extends WWCIntegrationTest {
     @Test
     void mongoPersistsTranslatorRecordsAndCacheAcrossReload() {
         assertPersistsTranslatorRecordsAndCacheAcrossReload(StorageBackend.MONGO);
+    }
+
+    @Test
+    void postgresLeavesPlayerRecordUnsavedWhenBatchFails() throws Exception {
+        WWCTestSupport.useStorageBackend(StorageBackend.POSTGRES);
+
+        String constraintName = "wwc_test_fail_sync";
+        try (Connection connection = plugin().getPostgresSession().getConnection();
+             Statement statement = connection.createStatement()) {
+            statement.executeUpdate("ALTER TABLE playerRecords DROP CONSTRAINT IF EXISTS " + constraintName);
+            statement.executeUpdate("ALTER TABLE playerRecords ADD CONSTRAINT " + constraintName
+                    + " CHECK (attemptedTranslations < 0)");
+        }
+
+        PlayerRecord record = new PlayerRecord("now", UUID.randomUUID().toString(), 1, 1);
+        plugin().addPlayerRecord(record);
+
+        try {
+            assertThrows(SQLException.class, () -> DataStorageUtils.syncData(false));
+            assertFalse(record.getHasBeenSaved(), "Failed DB writes must leave the record marked unsaved.");
+        } finally {
+            try (Connection connection = plugin().getPostgresSession().getConnection();
+                 Statement statement = connection.createStatement()) {
+                statement.executeUpdate("ALTER TABLE playerRecords DROP CONSTRAINT IF EXISTS " + constraintName);
+            }
+        }
     }
 
     private void assertPersistsTranslatorRecordsAndCacheAcrossReload(StorageBackend backend) {
