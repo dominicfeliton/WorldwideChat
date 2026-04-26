@@ -211,7 +211,6 @@ public class WorldwideChat extends JavaPlugin {
             adventure = null;
         }
         instance = null;
-        supportedMCVersions = null;
         serverFactory = null;
 
         // All done.

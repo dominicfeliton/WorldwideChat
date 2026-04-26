@@ -78,8 +78,19 @@ final class WWCTestSupport {
 
     static void reload() {
         plugin.cancelBackgroundTasks(false);
-        plugin.onEnable();
+        if (plugin.isEnabled()) {
+            plugin.onEnable();
+        } else {
+            server.getPluginManager().enablePlugin(plugin);
+        }
         waitForPluginReady();
+        drainScheduler();
+    }
+
+    static void reloadExpectingInvalidTranslator() {
+        plugin.cancelBackgroundTasks(false);
+        plugin.onEnable();
+        waitForCondition(() -> plugin != null && "Invalid".equals(plugin.getTranslatorName()));
         drainScheduler();
     }
 
@@ -117,7 +128,7 @@ final class WWCTestSupport {
         plugin.addCacheTerm(new CachedTranslation(inLang, outLang, inputPhrase), outputPhrase);
     }
 
-    private static void configureStorage(StorageBackend backend) {
+    static void configureStorage(StorageBackend backend) {
         YamlConfiguration config = plugin.getConfigManager().getMainConfig();
         backend.applyTo(config);
         config.set("Translator.testModeTranslator", true);
@@ -136,7 +147,7 @@ final class WWCTestSupport {
         plugin.getConfigManager().saveMainConfig(false);
     }
 
-    private static void wipeCurrentStorage() {
+    static void wipeCurrentStorage() {
         try {
             DataStorageUtils.fullDataWipe();
         } catch (SQLException e) {
@@ -144,7 +155,7 @@ final class WWCTestSupport {
         }
     }
 
-    private static void clearRuntimeState() {
+    static void clearRuntimeState() {
         new ArrayList<>(server.getOnlinePlayers()).forEach(PlayerMock::disconnect);
         plugin.getCache().invalidateAll();
         plugin.getCache().cleanUp();
