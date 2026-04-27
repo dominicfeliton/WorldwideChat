@@ -766,4 +766,42 @@ Messages:
   wwcConfigGUISendActionBarButton: Надіслати панелі дій
   wwcConfigActionBarInvalid: Невірний параметр панелі дій надсилання, встановлений
     у config.yml. За замовчуванням значення true...
+  wwcConfigGUIInputMethodConversation: Розмова
+  wwcAIGuidelinesBlocked: Це повідомлення було заблоковано нашими правилами щодо перекладу.
+  wwcConfigGUIGuidelinesAIModelButton: Змінити керівні принципи моделі AI
+  wwcConfigGUIOpenAICompatibleURLButton: Змінити сумісну URL-адресу OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Керівні принципи моделі штучного
+    інтелекту успішно встановлено.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI сумісний API ключ успішно
+    встановлений.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Успішно встановлено сумісну URL-адресу
+    OpenAI.
+  wwcConfigConversationOpenAICompatibleURLInput: Поточна URL-адреса {0}. Будь ласка,
+    введіть URL-адресу для OpenAI Compatible або введіть 0, щоб повернутися назад.
+  wwcConfigConversationOpenAICompatibleModelInput: Поточна модель - {0}. Будь ласка,
+    введіть модель для сумісності з OpenAI або введіть 0, щоб повернутися назад.
+  wwcConfigGUIGuidelinesAIPromptButton: Підказка про зміну інструкцій AI
+  wwcConfigGUIOpenAICompatiblePromptButton: Змінити сумісну підказку OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Перемкнути сумісність з OpenAI
+  wwcConfigConversationInputMethodSuccess: Метод введення встановлено на {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Сумісна модель встановлена
+    успішно.
+  wwcConfigGUIOpenAICompatibleButton: Сумісність з OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Діалог паперу
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Змініть сумісний ключ API OpenAI
+  wwcConfigGUIInputMethodButton: Спосіб введення
+  wwcConfigGUIInputMethodAuto: Авто
+  wwcConfigConversationGuidelinesAIModelInput: Поточна модель AI керівних принципів
+    - {0}. Будь ласка, введіть модель, введіть clear, щоб використовувати активну
+    модель провайдера, або введіть 0, щоб повернутися назад.
+  wwcConfigGUIOpenAICompatibleModelButton: Змінити сумісну модель OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Успішно переключено керівні принципи
+    перевірки штучного інтелекту.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Поточний ключ API - {0}. Будь
+    ласка, введіть ключ API для OpenAI Compatibility або введіть 0, щоб повернутися
+    назад.
+  wwcConfigGUIInputMethodCurrent: 'Поточний: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Успішно переключено OpenAI Сумісність.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Переключити правила перевірки штучного
+    інтелекту
 

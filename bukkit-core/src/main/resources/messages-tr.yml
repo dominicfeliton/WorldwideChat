@@ -757,4 +757,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Eylem Çubukları Gönderme
   wwcConfigActionBarInvalid: config.yml içinde geçersiz gönderme eylem çubuğu ayarı
     ayarlandı. Varsayılan olarak true olarak ayarlanıyor...
+  wwcConfigGUIInputMethodConversation: Konuşma
+  wwcAIGuidelinesBlocked: Bu mesaj çeviri yönergelerimiz tarafından engellendi.
+  wwcConfigGUIGuidelinesAIModelButton: Değişim Yönergeleri Yapay Zeka Modeli
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI Uyumlu URL'yi Değiştir
+  wwcConfigConversationGuidelinesAIModelSuccess: Yönergeler AI modeli başarıyla belirlendi.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI Uyumlu API anahtarı başarıyla
+    ayarlandı.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI Uyumlu URL başarıyla ayarlandı.
+  wwcConfigConversationOpenAICompatibleURLInput: Geçerli URL {0} 'dir. Lütfen OpenAI
+    Uyumlu için bir URL girin veya geri dönmek için 0 yazın.
+  wwcConfigConversationOpenAICompatibleModelInput: Mevcut model {0}. Lütfen OpenAI
+    Uyumlu için bir model girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIGuidelinesAIPromptButton: Değişim Yönergeleri AI İstemi
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI Uyumlu İstemi Değiştir
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI Uyumluluğunu Aç/Kapat
+  wwcConfigConversationInputMethodSuccess: Giriş yöntemi {0} olarak ayarlandı.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Uyumlu model başarıyla
+    ayarlandı.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Uyumlu
+  wwcConfigGUIInputMethodPaperDialog: Kağıt İletişim Kutusu
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI Uyumlu API Anahtarını Değiştir
+  wwcConfigGUIInputMethodButton: Giriş Yöntemi
+  wwcConfigGUIInputMethodAuto: Oto
+  wwcConfigConversationGuidelinesAIModelInput: Mevcut Yönergeler AI modeli {0} 'dir.
+    Lütfen bir model girin, aktif sağlayıcı modelini kullanmak için clear yazın veya
+    geri dönmek için 0 yazın.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI Uyumlu Modeli Değiştir
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Yönergeler AI kontrolleri başarıyla
+    değiştirildi.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Geçerli API anahtarı {0} 'dir.
+    Lütfen OpenAI Uyumlu için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIInputMethodCurrent: 'Güncel: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI Uyumlu başarıyla değiştirildi.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Yönergeleri Yapay Zeka Kontrollerini
+    Değiştir
 

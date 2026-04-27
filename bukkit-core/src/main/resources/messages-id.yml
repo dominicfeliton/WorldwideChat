@@ -756,4 +756,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Kirim Bilah Tindakan
   wwcConfigActionBarInvalid: Setelan bilah tindakan kirim tidak valid yang disetel
     di config.yml. Default menjadi true...
+  wwcConfigGUIInputMethodConversation: Percakapan
+  wwcAIGuidelinesBlocked: Pesan ini diblokir oleh pedoman terjemahan kami.
+  wwcConfigGUIGuidelinesAIModelButton: Ubah Pedoman Model AI
+  wwcConfigGUIOpenAICompatibleURLButton: Ubah URL Kompatibel OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Pedoman Model AI berhasil ditetapkan.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Kunci API yang Kompatibel OpenAI
+    berhasil disetel.
+  wwcConfigConversationOpenAICompatibleURLSuccess: URL yang kompatibel dengan OpenAI
+    berhasil disetel.
+  wwcConfigConversationOpenAICompatibleURLInput: URL saat ini adalah {0}. Silakan
+    masukkan URL untuk OpenAI Compatible, atau ketik 0 untuk kembali.
+  wwcConfigConversationOpenAICompatibleModelInput: Model saat ini adalah {0}. Silakan
+    masukkan model untuk OpenAI Compatible, atau ketik 0 untuk kembali.
+  wwcConfigGUIGuidelinesAIPromptButton: Ubah Pedoman AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Ubah Prompt Kompatibel OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Alihkan OpenAI Kompatibel
+  wwcConfigConversationInputMethodSuccess: Metode input diatur ke {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Model OpenAI Kompatibel berhasil
+    diatur.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Kompatibel
+  wwcConfigGUIInputMethodPaperDialog: Dialog Kertas
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Ubah Kunci API Kompatibel OpenAI
+  wwcConfigGUIInputMethodButton: Metode Input
+  wwcConfigGUIInputMethodAuto: Otomatis
+  wwcConfigConversationGuidelinesAIModelInput: Model Guidelines AI saat ini adalah
+    {0}. Silakan masukkan model, ketik clear untuk menggunakan model penyedia aktif,
+    atau ketik 0 untuk kembali.
+  wwcConfigGUIOpenAICompatibleModelButton: Ubah Model Kompatibel OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Berhasil mengalihkan pemeriksaan Pedoman
+    AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Kunci API saat ini adalah {0}.
+    Silakan masukkan kunci API untuk OpenAI Compatible, atau ketik 0 untuk kembali.
+  wwcConfigGUIInputMethodCurrent: 'Saat ini: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Berhasil mengaktifkan OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Alihkan Pedoman Pemeriksaan AI
 

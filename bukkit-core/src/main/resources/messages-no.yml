@@ -740,4 +740,38 @@ Messages:
   wwcConfigGUISendActionBarButton: Send handlingslinjer
   wwcConfigActionBarInvalid: Ugyldig innstilling for sending av handlingslinje angitt
     i config.yml. Standardiserer til sant...
+  wwcConfigGUIInputMethodConversation: Samtale
+  wwcAIGuidelinesBlocked: Denne meldingen ble blokkert av retningslinjene våre for
+    oversettelse.
+  wwcConfigGUIGuidelinesAIModelButton: Endre retningslinjer AI-modell
+  wwcConfigGUIOpenAICompatibleURLButton: Endre OpenAI-kompatibel URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Retningslinjer AI-modell satt vellykket.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-kompatibel API-nøkkel
+    satt vellykket.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-kompatibel URL satt vellykket.
+  wwcConfigConversationOpenAICompatibleURLInput: Den nåværende URL-adressen er {0}.
+    Vennligst skriv inn en URL for OpenAI Compatible, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationOpenAICompatibleModelInput: Den nåværende modellen er {0}.
+    Vennligst skriv inn en modell for OpenAI Compatible, eller skriv 0 for å gå tilbake.
+  wwcConfigGUIGuidelinesAIPromptButton: Endre retningslinjer AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Endre OpenAI-kompatibel ledetekst
+  wwcConfigGUIToggleOpenAICompatibleButton: Veksle OpenAI-kompatibel
+  wwcConfigConversationInputMethodSuccess: Inndatametode satt til {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-kompatibel modell satt
+    vellykket.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Kompatibel
+  wwcConfigGUIInputMethodPaperDialog: Papirdialogboks
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Endre OpenAI-kompatibel API-nøkkel
+  wwcConfigGUIInputMethodButton: Inndatametode
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Den nåværende Guidelines AI-modellen
+    er {0}. Vennligst skriv inn en modell, skriv clear for å bruke den aktive leverandørmodellen,
+    eller skriv 0 for å gå tilbake.
+  wwcConfigGUIOpenAICompatibleModelButton: Endre OpenAI-kompatibel modell
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Vellykket bytte retningslinjer AI-kontroller.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Gjeldende API-nøkkel er {0}. Vennligst
+    skriv inn en API-nøkkel for OpenAI-kompatibel, eller skriv 0 for å gå tilbake.
+  wwcConfigGUIInputMethodCurrent: 'Nåværende: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Vellykket OpenAI-kompatibel.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Bytt retningslinjer for AI-kontroller
 

@@ -585,4 +585,34 @@ Messages:
   wwcConfigConversationSendActionBarSuccess: 送信アクションバーが正常に切り替わりました。
   wwcConfigGUISendActionBarButton: アクションバーを送信
   wwcConfigActionBarInvalid: config.yml に設定されている送信アクションバーの設定が無効です。デフォルトは true に設定されています...
+  wwcConfigGUIInputMethodConversation: 会話
+  wwcAIGuidelinesBlocked: このメッセージは翻訳ガイドラインによりブロックされました。
+  wwcConfigGUIGuidelinesAIModelButton: 変更ガイドライン AI モデル
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI 互換 URL を変更
+  wwcConfigConversationGuidelinesAIModelSuccess: ガイドライン AI モデルが正常に設定されました。
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI 互換 API キーが正常に設定されました。
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI 互換 URL が正常に設定されました。
+  wwcConfigConversationOpenAICompatibleURLInput: 現在の URL は {0} です。OpenAI 互換の URL を入力するか、0
+    を入力して戻ってください。
+  wwcConfigConversationOpenAICompatibleModelInput: 現在のモデルは {0} です。OpenAI 互換のモデルを入力するか、0
+    を入力して戻ってください。
+  wwcConfigGUIGuidelinesAIPromptButton: ガイドライン変更 AI プロンプト
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI 互換プロンプトの変更
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI 互換の切り替え
+  wwcConfigConversationInputMethodSuccess: 入力メソッドを {0} に設定しました。
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI 互換モデルが正常に設定されました。
+  wwcConfigGUIOpenAICompatibleButton: オープンAI互換
+  wwcConfigGUIInputMethodPaperDialog: ペーパーダイアログ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI 互換 API キーを変更
+  wwcConfigGUIInputMethodButton: インプットメソッド
+  wwcConfigGUIInputMethodAuto: オート
+  wwcConfigConversationGuidelinesAIModelInput: 現在のガイドライン AI モデルは {0} です。モデルを入力するか、「clear」と入力してアクティブなプロバイダーモデルを使用するか、0
+    を入力して戻ってください。
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI 互換モデルの変更
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: ガイドライン AI チェックが正常に切り替えられました。
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 現在の API キーは {0} です。OpenAI Compatible
+    の API キーを入力するか、0 を入力して戻ってください。
+  wwcConfigGUIInputMethodCurrent: 現在のバージョン:{0}
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI 互換が正常に切り替えられました。
+  wwcConfigGUIToggleGuidelinesAIChecksButton: ガイドライン AI チェックの切り替え
 

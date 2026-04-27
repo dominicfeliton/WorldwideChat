@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-VERSION_PIN="26.1"
+VERSION_PIN="26.1.2"
 
 copy_plugin() {
     local source_jar="$1"
@@ -52,7 +52,6 @@ case "$(uname -s)" in
 
         copy_to_all "$repo_dir/spigot-target/WorldwideChat-spigot.jar" \
             "$documents_dir/spigot_wwc_test_server/plugins" \
-            "$documents_dir/magma_wwc_test_server/plugins" \
             "$documents_dir/paper1132_wwc_test_server/plugins"
 
         copy_plugin "$repo_dir/paper-target/WorldwideChat-paper.jar" \

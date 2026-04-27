@@ -847,4 +847,43 @@ Messages:
   wwcConfigGUISendActionBarButton: Magpadala ng Action Bar
   wwcConfigActionBarInvalid: Hindi wastong setting ng send action bar na nakatakda
     sa config.yml. Pag-default sa totoo...
+  wwcConfigGUIInputMethodConversation: Pag-uusap
+  wwcAIGuidelinesBlocked: Ang mensaheng ito ay hinarang ng aming mga alituntunin sa
+    pagsasalin.
+  wwcConfigGUIGuidelinesAIModelButton: Baguhin ang Mga Patnubay sa Modelo
+  wwcConfigGUIOpenAICompatibleURLButton: Baguhin ang Katugmang URL ng OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Matagumpay na itinakda ang mga alituntunin
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Matagumpay na nakatakda ang
+    OpenAI Compatible API key.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Matagumpay na itinakda ang OpenAI
+    Compatible URL.
+  wwcConfigConversationOpenAICompatibleURLInput: Ang kasalukuyang URL ay {0}. Mangyaring
+    magpasok ng isang URL para sa OpenAI Compatible, o i-type ang 0 upang bumalik.
+  wwcConfigConversationOpenAICompatibleModelInput: Ang kasalukuyang modelo ay {0}.
+    Mangyaring magpasok ng isang modelo para sa OpenAI Compatible, o i-type ang 0
+    upang bumalik.
+  wwcConfigGUIGuidelinesAIPromptButton: Baguhin ang Mga Alituntunin sa
+  wwcConfigGUIOpenAICompatiblePromptButton: Baguhin ang OpenAI Compatible Prompt
+  wwcConfigGUIToggleOpenAICompatibleButton: Toggle Compatible OpenAI
+  wwcConfigConversationInputMethodSuccess: Nakatakda ang pamamaraan ng pag-input sa
+    {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Matagumpay na nakatakda ang OpenAI
+    Compatible na modelo
+  wwcConfigGUIOpenAICompatibleButton: Katugma sa OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Dialog ng Papel
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Baguhin ang OpenAI Compatible API Key
+  wwcConfigGUIInputMethodButton: Paraan ng Pag-input
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Ang kasalukuyang modelo ng Guidelines
+    AI ay {0}. Mangyaring magpasok ng isang modelo, i-type ang clear upang magamit
+    ang modelo ng aktibong provider, o i-type ang 0 upang bumalik.
+  wwcConfigGUIOpenAICompatibleModelButton: Baguhin ang Modelo ng Katugma sa OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Matagumpay na naka-install ang mga
+    Tseke sa AI ng Mga
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Ang kasalukuyang key ng API ay
+    {0}. Mangyaring magpasok ng isang API key para sa OpenAI Compatible, o i-type
+    ang 0 upang bumalik.
+  wwcConfigGUIInputMethodCurrent: 'Kasalukuyang: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Matagumpay na i-toplug ang OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: I-Toggle Guidelines Mga Check sa AI
 

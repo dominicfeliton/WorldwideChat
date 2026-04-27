@@ -758,4 +758,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Lähetä toimintopalkit
   wwcConfigActionBarInvalid: 'Virheellinen lähetystoimintorivin asetus, joka on määritetty
     config.yml: ssä. Oletuksena on tosi...'
+  wwcConfigGUIInputMethodConversation: Keskustelu
+  wwcAIGuidelinesBlocked: Käännösohjeemme estävät tämän viestin.
+  wwcConfigGUIGuidelinesAIModelButton: Muuta ohjeita AI-malli
+  wwcConfigGUIOpenAICompatibleURLButton: Muuta OpenAI-yhteensopivaa URL-osoitetta
+  wwcConfigConversationGuidelinesAIModelSuccess: Ohjeet AI-malli asetettiin onnistuneesti.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-yhteensopiva API-avain
+    asetettiin onnistuneesti.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-yhteensopiva URL-osoite
+    on määritetty onnistuneesti.
+  wwcConfigConversationOpenAICompatibleURLInput: Nykyinen URL-osoite on {0}. Anna
+    URL-osoite OpenAI-yhteensopivalle tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationOpenAICompatibleModelInput: Nykyinen malli on {0}. Anna OpenAI-yhteensopiva
+    malli tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIGuidelinesAIPromptButton: Muuta ohjeita AI-kehote
+  wwcConfigGUIOpenAICompatiblePromptButton: Vaihda OpenAI-yhteensopiva kehote
+  wwcConfigGUIToggleOpenAICompatibleButton: Vaihda OpenAI-yhteensopiva
+  wwcConfigConversationInputMethodSuccess: Syöttötapa on asetettu arvoon {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-yhteensopiva malli asetettiin
+    onnistuneesti.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI-yhteensopiva
+  wwcConfigGUIInputMethodPaperDialog: Paperi-valintaikkuna
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Vaihda OpenAI-yhteensopiva API-avain
+  wwcConfigGUIInputMethodButton: Syöttömenetelmä
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Nykyinen Guidelines AI -malli on {0}.
+    Anna malli, kirjoita clear käyttääksesi aktiivisen palveluntarjoajan mallia tai
+    kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIOpenAICompatibleModelButton: Vaihda OpenAI-yhteensopiva malli
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Ohjeiden tekoälytarkastukset vaihdettiin
+    onnistuneesti.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Nykyinen API-avain on {0}. Anna
+    API-avain OpenAI-yhteensopivaan tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIInputMethodCurrent: 'Nykyinen: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI-yhteensopiva vaihdettiin onnistuneesti.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Vaihda ohjeet Tekoälyn tarkistukset
 

@@ -791,4 +791,43 @@ Messages:
   wwcConfigGUISendActionBarButton: Испратете решетки за акција
   wwcConfigActionBarInvalid: Невалидна поставка за лентата за акција за испраќање
     поставена во config.yml. Поставување на вистинито...
+  wwcConfigGUIInputMethodConversation: Разговор
+  wwcAIGuidelinesBlocked: Оваа порака беше блокирана со нашите упатства за превод.
+  wwcConfigGUIGuidelinesAIModelButton: Променете ги упатствата АИ модел
+  wwcConfigGUIOpenAICompatibleURLButton: Промена на URL компатибилна со OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Упатства за AI модел успешно поставени.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Клучот за компатибилен API со
+    OpenAI е успешно поставен.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Успешно поставена URL-адреса компатибилна
+    со OpenAI.
+  wwcConfigConversationOpenAICompatibleURLInput: Тековната URL адреса е {0}. Ве молиме
+    внесете URL за OpenAI Compatible или напишете 0 за да се вратите назад.
+  wwcConfigConversationOpenAICompatibleModelInput: Моменталниот модел е {0}. Ве молиме
+    внесете модел за OpenAI Compatible или напишете 0 за да се вратите назад.
+  wwcConfigGUIGuidelinesAIPromptButton: Промена на упатствата за АИ Примент
+  wwcConfigGUIOpenAICompatiblePromptButton: Променете го упатството компатибилно со
+    OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Вклучете го компатибилниот со OpenAI
+  wwcConfigConversationInputMethodSuccess: Методот на внесување поставен на {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Успешно поставен модел компатибилен
+    со OpenAI.
+  wwcConfigGUIOpenAICompatibleButton: Компатибилен со OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Дијалог за хартија
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Променете го клучот за API компатибилен
+    со OpenAI
+  wwcConfigGUIInputMethodButton: Метод на внесување
+  wwcConfigGUIInputMethodAuto: Авто
+  wwcConfigConversationGuidelinesAIModelInput: Тековниот модел за вештачка интелигенција
+    на упатствата е {0}. Ве молиме внесете модел, напишете јасно за да го користите
+    моделот на активен провајдер или напишете 0 за да се вратите назад.
+  wwcConfigGUIOpenAICompatibleModelButton: Променете го моделот компатибилен со OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Успешно вклучени упатства за проверки
+    на АИ.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Тековниот клуч за API е {0}. Ве
+    молиме внесете клуч API за компатибилен со OpenAI или напишете 0 за да се вратите
+    назад.
+  wwcConfigGUIInputMethodCurrent: 'Тековно: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Успешно вклучен компатибилен со OpenAI.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Вклучете ги упатствата за проверки на
+    АИ
 

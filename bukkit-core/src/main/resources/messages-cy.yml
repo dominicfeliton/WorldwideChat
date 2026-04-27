@@ -772,4 +772,40 @@ Messages:
   wwcConfigGUISendActionBarButton: Anfon Bariau Gweithredu
   wwcConfigActionBarInvalid: Gosodiad bar gweithredu anfon annilys wedi'i osod yn
     config.yml. Rhagosodiad i wir...
+  wwcConfigGUIInputMethodConversation: Sgwrs
+  wwcAIGuidelinesBlocked: Cafodd y neges hon ei rhwystro gan ein canllawiau cyfieithu.
+  wwcConfigGUIGuidelinesAIModelButton: Canllawiau Newid Model AI
+  wwcConfigGUIOpenAICompatibleURLButton: Newid URL Cyd-fynd â OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Canllawiau model AI wedi'u gosod
+    yn llwyddiannus.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Gosodwyd allwedd API cydnaws
+    OpenAI yn llwyddiannus.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Gosodwyd URL cydnaws OpenAI yn
+    llwyddiannus.
+  wwcConfigConversationOpenAICompatibleURLInput: Yr URL cyfredol yw {0}. Mewnbynnwch
+    URL ar gyfer OpenAI Cyd-fynd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationOpenAICompatibleModelInput: Y model presennol yw {0}. Mewnbynnwch
+    fodel ar gyfer OpenAI Compatible, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIGuidelinesAIPromptButton: Canllawiau Newid AI Prydlon
+  wwcConfigGUIOpenAICompatiblePromptButton: Newid Prompt Cydnaws OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Toglo OpenAI Cyd-fynd
+  wwcConfigConversationInputMethodSuccess: Dull mewnbwn wedi'i osod i {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Gosodwyd model cydnaws OpenAI
+    yn llwyddiannus.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Cyd-fynd
+  wwcConfigGUIInputMethodPaperDialog: Dialog Papur
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Newid Allwedd API Cydnaws OpenAI
+  wwcConfigGUIInputMethodButton: Dull Mewnbwn
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Y model AI Canllawiau presennol yw
+    {0}. Mewnbynnwch fodel, teipiwch glir i ddefnyddio'r model darparwr gweithredol,
+    neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIOpenAICompatibleModelButton: Newid Model Cydnaws OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Gwiriadau AI wedi tocio Canllawiau
+    yn llwyddiannus.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Yr allwedd API gyfredol yw {0}.
+    Mewnbynnwch allwedd API ar gyfer OpenAI Cyd-fynd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIInputMethodCurrent: 'Cyfredol: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Cyd-fynd â OpenAI yn llwyddiannus.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Toglo Canllawiau Gwiriadau AI
 

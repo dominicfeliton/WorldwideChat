@@ -684,4 +684,34 @@ Messages:
   wwcConfigGUISendActionBarButton: שלח סרגלי פעולה
   wwcConfigActionBarInvalid: הגדרת שורת פעולות שליחה לא חוקית שהוגדרה ב- config.yml.
     ברירת מחדל נכון...
+  wwcConfigGUIInputMethodConversation: שיחה
+  wwcAIGuidelinesBlocked: הודעה זו נחסמה על ידי הנחיות התרגום שלנו.
+  wwcConfigGUIGuidelinesAIModelButton: שינוי הנחיות מודל AI
+  wwcConfigGUIOpenAICompatibleURLButton: שנה כתובת אתר תואמת OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: הנחיות מודל AI נקבע בהצלחה.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: מפתח API תואם OpenAI הוגדר בהצלחה.
+  wwcConfigConversationOpenAICompatibleURLSuccess: כתובת אתר תואמת OpenAI הוגדרה בהצלחה.
+  wwcConfigConversationOpenAICompatibleURLInput: כתובת האתר הנוכחית היא {0}. אנא הזן
+    כתובת אתר עבור OpenAI Compatible, או הקלד 0 כדי לחזור.
+  wwcConfigConversationOpenAICompatibleModelInput: המודל הנוכחי הוא {0}. אנא הזן דגם
+    עבור OpenAI Compatible, או הקלד 0 כדי לחזור.
+  wwcConfigGUIGuidelinesAIPromptButton: שינוי הנחיות הבינה המלאכותית
+  wwcConfigGUIOpenAICompatiblePromptButton: שינוי הנחיה תואמת OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: החלף תואם OpenAI
+  wwcConfigConversationInputMethodSuccess: שיטת הקלט מוגדרת ל- {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: דגם תואם OpenAI הוגדר בהצלחה.
+  wwcConfigGUIOpenAICompatibleButton: תואם OpenAI
+  wwcConfigGUIInputMethodPaperDialog: דיאלוג נייר
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: שנה מפתח API תואם OpenAI
+  wwcConfigGUIInputMethodButton: שיטת קלט
+  wwcConfigGUIInputMethodAuto: אוטומטי
+  wwcConfigConversationGuidelinesAIModelInput: מודל ההנחיות הנוכחי של AI הוא {0}.
+    אנא הזן דגם, הקלד clear כדי להשתמש במודל הספק הפעיל, או הקלד 0 כדי לחזור.
+  wwcConfigGUIOpenAICompatibleModelButton: שנה דגם תואם OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: החלפת בהצלחה בדיקות בהנחיות AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: מפתח ה- API הנוכחי הוא {0}. אנא
+    הזן מפתח API עבור תואם OpenAI, או הקלד 0 כדי לחזור.
+  wwcConfigGUIInputMethodCurrent: 'נוכחי: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: החלפת תואמת OpenAI בהצלחה.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: החלפת הנחיות בדיקות AI
 

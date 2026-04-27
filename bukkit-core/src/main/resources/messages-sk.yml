@@ -764,4 +764,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Odoslať akčné lišty
   wwcConfigActionBarInvalid: Neplatné nastavenie panela akcií odoslať nastavené v
     config.yml. Predvolená hodnota true...
+  wwcConfigGUIInputMethodConversation: konverzácia
+  wwcAIGuidelinesBlocked: Táto správa bola zablokovaná našimi smernicami pre preklad.
+  wwcConfigGUIGuidelinesAIModelButton: Zmena usmernení modelu AI
+  wwcConfigGUIOpenAICompatibleURLButton: Zmena URL kompatibilnej s OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Usmernenia modelu AI boli úspešne
+    nastavené.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Kľúč API kompatibilný s OpenAI
+    je úspešne nastavený.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Úspešne nastavená webová adresa
+    URL kompatibilná s OpenAI.
+  wwcConfigConversationOpenAICompatibleURLInput: Aktuálna adresa URL je {0}. Zadajte
+    adresu URL pre OpenAI Compatible alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationOpenAICompatibleModelInput: Súčasný model je {0}. Zadajte model
+    pre kompatibilný s OpenAI alebo napíšte 0, aby ste sa vrátili späť.
+  wwcConfigGUIGuidelinesAIPromptButton: Výzva pre zmenu pokynov AI
+  wwcConfigGUIOpenAICompatiblePromptButton: Zmeniť výzvu kompatibilnú s OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Prepnúť kompatibilný s OpenAI
+  wwcConfigConversationInputMethodSuccess: Metóda vstupu nastavená na {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Kompatibilný model OpenAI bol
+    úspešne nastavený.
+  wwcConfigGUIOpenAICompatibleButton: Kompatibilné s OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Papierový dialóg
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Zmena kľúča API kompatibilného s OpenAI
+  wwcConfigGUIInputMethodButton: Metóda vstupu
+  wwcConfigGUIInputMethodAuto: auto
+  wwcConfigConversationGuidelinesAIModelInput: Súčasný model AI pre usmernenia je
+    {0}. Zadajte model, zadajte text clear, ak chcete použiť aktívny model poskytovateľa,
+    alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIOpenAICompatibleModelButton: Zmeňte model kompatibilný s OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Úspešne prepnuté pokyny kontroly AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Aktuálny kľúč API je {0}. Zadajte
+    kľúč API pre kompatibilný s OpenAI alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIInputMethodCurrent: 'Aktuálne: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Úspešne prepnutý kompatibilný s OpenAI.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Prepínanie pokynov Kontroly AI
 

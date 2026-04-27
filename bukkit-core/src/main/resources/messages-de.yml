@@ -835,4 +835,43 @@ Messages:
   wwcConfigGUISendActionBarButton: Aktionsleisten senden
   wwcConfigActionBarInvalid: In der Datei config.yml wurde eine ungültige Einstellung
     für die Aktionsleiste zum Senden festgelegt. Standardmäßig auf „true“ gesetzt...
+  wwcConfigGUIInputMethodConversation: Konversation
+  wwcAIGuidelinesBlocked: Diese Nachricht wurde durch unsere Übersetzungsrichtlinien
+    blockiert.
+  wwcConfigGUIGuidelinesAIModelButton: Richtlinien ändern KI-Modell
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI-kompatible URL ändern
+  wwcConfigConversationGuidelinesAIModelSuccess: Richtlinien Das KI-Modell wurde erfolgreich
+    festgelegt.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-kompatibler API-Schlüssel
+    erfolgreich gesetzt.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-kompatible URL wurde erfolgreich
+    gesetzt.
+  wwcConfigConversationOpenAICompatibleURLInput: Die aktuelle URL ist {0}. Bitte geben
+    Sie eine URL für OpenAI Compatible ein, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationOpenAICompatibleModelInput: Das aktuelle Modell ist {0}. Bitte
+    geben Sie ein Modell für OpenAI Compatible ein, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIGuidelinesAIPromptButton: Richtlinien ändern AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI-kompatible Eingabeaufforderung
+    ändern
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI-kompatibel umschalten
+  wwcConfigConversationInputMethodSuccess: Die Eingabemethode ist auf {0} gesetzt.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-kompatibles Modell erfolgreich
+    festgelegt.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI-kompatibel
+  wwcConfigGUIInputMethodPaperDialog: Papierdialog
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI-kompatiblen API-Schlüssel ändern
+  wwcConfigGUIInputMethodButton: Eingabemethode
+  wwcConfigGUIInputMethodAuto: Automatisch
+  wwcConfigConversationGuidelinesAIModelInput: Das aktuelle Guidelines KI-Modell ist
+    {0}. Bitte geben Sie ein Modell ein, geben Sie clear ein, um das aktive Anbietermodell
+    zu verwenden, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI-kompatibles Modell ändern
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: KI-Checks für Richtlinien wurden erfolgreich
+    umgeschaltet.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Der aktuelle API-Schlüssel ist
+    {0}. Bitte geben Sie einen API-Schlüssel für OpenAI Compatible ein, oder geben
+    Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIInputMethodCurrent: 'Aktuell: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI Compatible wurde erfolgreich umgeschaltet.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Richtlinien und KI-Prüfungen umschalten
 

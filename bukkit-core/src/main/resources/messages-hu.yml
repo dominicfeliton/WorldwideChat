@@ -781,4 +781,41 @@ Messages:
   wwcConfigGUISendActionBarButton: Műveleti sávok küldése
   wwcConfigActionBarInvalid: Érvénytelen küldési műveletsáv beállítása a config.yml-ben.
     Alapértelmezés szerint igaz...
+  wwcConfigGUIInputMethodConversation: Beszélgetés
+  wwcAIGuidelinesBlocked: Ezt az üzenetet a fordítási irányelveink blokkolták.
+  wwcConfigGUIGuidelinesAIModelButton: Az AI modell iránymutatások módosítása
+  wwcConfigGUIOpenAICompatibleURLButton: Az OpenAI kompatibilis URL módosítása
+  wwcConfigConversationGuidelinesAIModelSuccess: Útmutató Az AI modell sikeresen beállítása.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Az OpenAI kompatibilis API kulcskészlet
+    sikeresen.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Az OpenAI kompatibilis URL sikeresen
+    beállítva.
+  wwcConfigConversationOpenAICompatibleURLInput: 'Az aktuális URL: {0}. Kérjük, írja
+    be az OpenAI Compatible URL-jét, vagy írja be a 0 parancsot a visszalépéshez.'
+  wwcConfigConversationOpenAICompatibleModelInput: A jelenlegi modell a {0}. Kérjük,
+    adja meg az OpenAI Compatible modellt, vagy írja be a 0 parancsot a visszaállításhoz.
+  wwcConfigGUIGuidelinesAIPromptButton: Útmutató módosítása AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Az OpenAI kompatibilis promptjának módosítása
+  wwcConfigGUIToggleOpenAICompatibleButton: Az OpenAI kompatibilis váltás
+  wwcConfigConversationInputMethodSuccess: A beviteli módszer beállítása {0} értékre
+    van.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Az OpenAI kompatibilis modellkészlet
+    sikeresen.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI kompatibilis
+  wwcConfigGUIInputMethodPaperDialog: Papír párbeszédablak
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Az OpenAI kompatibilis API-kulcs módosítása
+  wwcConfigGUIInputMethodButton: Bemeneti módszer
+  wwcConfigGUIInputMethodAuto: autó
+  wwcConfigConversationGuidelinesAIModelInput: A jelenlegi Guidelines AI modell a
+    {0}. Adjon meg egy modellt, írja be a clear parancsot az aktív szolgáltatói modell
+    használatához, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigGUIOpenAICompatibleModelButton: Az OpenAI kompatibilis modell módosítása
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Sikeresen váltotta be az irányelvek
+    AI ellenőrzéseit.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Az aktuális API kulcs a {0}. Kérjük,
+    írjon be egy API-kulcsot az OpenAI kompatibilitáshoz, vagy írja be a 0 parancsot
+    a visszalépéshez.
+  wwcConfigGUIInputMethodCurrent: 'Aktuális: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Sikeresen kapcsolta be az OpenAI kompatibilitást.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Útmutató átkapcsolása AI-ellenőrzések
 

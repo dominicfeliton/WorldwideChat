@@ -31,9 +31,33 @@ class InputMethodResolverTest {
     }
 
     @Test
+    void forcedConversationOnPaperStaysConversation() {
+        assertEquals(InputMethod.CONVERSATION, InputMethodResolver.resolve(
+                "conversation", "Paper", new ComparableVersion("26.1"), true, true));
+    }
+
+    @Test
     void forcedUnavailableBackendFallsBackToAuto() {
         assertEquals(InputMethod.CONVERSATION, InputMethodResolver.resolve(
                 "paper-dialog", "Spigot", new ComparableVersion("1.21.11"), false, true));
+    }
+
+    @Test
+    void forcedPaperDialogUnavailableFallsBackToAutoBackend() {
+        assertEquals(InputMethod.CONVERSATION, InputMethodResolver.resolve(
+                "paper-dialog", "Paper", new ComparableVersion("26.1"), false, true));
+    }
+
+    @Test
+    void invalidConfigNormalizesToAuto() {
+        assertEquals(InputMethod.PAPER_DIALOG, InputMethodResolver.resolve(
+                "not-real", "Paper", new ComparableVersion("26.1"), true, true));
+    }
+
+    @Test
+    void blankConfigNormalizesToAuto() {
+        assertEquals(InputMethod.CONVERSATION, InputMethodResolver.resolve(
+                " ", "Spigot", new ComparableVersion("1.21.11"), false, true));
     }
 
     @Test

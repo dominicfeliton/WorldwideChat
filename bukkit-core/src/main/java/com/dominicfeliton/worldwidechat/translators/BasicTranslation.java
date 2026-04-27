@@ -17,12 +17,34 @@ public abstract class BasicTranslation {
         this.isInitializing = isInitializing;
     }
 
-    public String useTranslator(String textToTranslate, String inputLang, String outputLang) throws TimeoutException, ExecutionException, InterruptedException {
+    public String useTranslator(String textToTranslate, String inputLang, String outputLang) throws TimeoutException, ExecutionException, InterruptedException, TranslationFailureException {
         Future<String> process = callbackExecutor.submit(createTranslationTask(textToTranslate, inputLang, outputLang));
-        return process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
+        try {
+            return process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
+        } catch (ExecutionException e) {
+            if (e.getCause() instanceof TranslationFailureException translationFailure) {
+                throw translationFailure;
+            }
+            throw e;
+        }
     }
 
     protected abstract translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang);
+
+    protected static String formatTranslationInput(String inputLang, String outputLang, String textToTranslate) {
+        return "Input Lang: \"" + inputLang + "\"\n" +
+                "Output Lang: \"" + outputLang + "\"\n\n" +
+                formatUserQueryBlock(textToTranslate);
+    }
+
+    protected static String formatUserQueryBlock(String userQuery) {
+        String escapedQuery = userQuery == null ? "" : userQuery.replace("\"\"\"", "\\\"\\\"\\\"");
+        return "User Query:\n\"\"\"\n" + escapedQuery + "\n\"\"\"";
+    }
+
+    protected static boolean containsGuidelinesBlockedSentinel(String output) {
+        return output != null && output.matches("(?s).*\\bBLOCKED\\b.*");
+    }
 
     public abstract class translationTask implements Callable<String> {
         protected String textToTranslate;

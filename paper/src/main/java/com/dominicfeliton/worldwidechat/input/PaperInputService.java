@@ -19,6 +19,8 @@ public class PaperInputService implements InputService {
     @Override
     public void open(Player player, InputRequest request) {
         InputMethod resolved = resolveMethod();
+        refs.debugMsg("Opening input with backend " + resolved.getConfigValue()
+                + " (configured: " + getConfiguredMethod() + ").");
         if (resolved == InputMethod.PAPER_DIALOG) {
             getPaperDialogInputService().open(player, request);
             return;

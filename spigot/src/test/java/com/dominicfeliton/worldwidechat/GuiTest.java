@@ -2,9 +2,12 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.inventory.wwcstatsgui.WWCStatsGuiMainMenu;
+import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 import org.junit.jupiter.api.Test;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
@@ -78,8 +81,69 @@ class GuiTest extends WWCIntegrationTest {
         assertEquals(Material.NAME_TAG, player.getOpenInventory().getTopInventory().getItem(10).getType());
     }
 
+    @Test
+    void storageProviderMenusOpenDistinctProviderLayouts() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("StorageGuiUser");
+
+        player.performCommand("wwcc");
+        clickOpenItem(player, 3, 6, "Expected configuration next-page button.");
+
+        assertEquals("storageSettingsMenu", openedSmartInventory(player).getId());
+        ClickableItem sqlButton = clickableItem(player, 1, 1, "Expected SQL storage button.");
+        ClickableItem mongoButton = clickableItem(player, 1, 2, "Expected MongoDB storage button.");
+        ClickableItem postgresButton = clickableItem(player, 1, 3, "Expected PostgreSQL storage button.");
+
+        sqlButton.run((org.bukkit.event.inventory.InventoryClickEvent) null);
+        assertStorageProviderMenu(player, "sqlSettingsMenu", 4, "SQL Configuration",
+                "Toggle SQL", "Change SQL Hostname", 29, 31);
+
+        mongoButton.run((org.bukkit.event.inventory.InventoryClickEvent) null);
+        assertStorageProviderMenu(player, "mongoSettingsMenu", 3, "MongoDB Configuration",
+                "Toggle MongoDB", "Change MongoDB Hostname", 20, 22);
+
+        postgresButton.run((org.bukkit.event.inventory.InventoryClickEvent) null);
+        assertStorageProviderMenu(player, "postgresSettingsMenu", 4, "PostgreSQL Configuration",
+                "Toggle PostgreSQL", "Change PostgreSQL Hostname", 29, 31);
+    }
+
     private SmartInventory openedSmartInventory(PlayerMock player) {
         return plugin().getInventoryManager().getInventory(player)
                 .orElseThrow(() -> new AssertionError("Expected a SmartInventory to be open."));
+    }
+
+    private ClickableItem clickableItem(PlayerMock player, int row, int column, String failureMessage) {
+        return plugin().getInventoryManager()
+                .getContents(player)
+                .orElseThrow(() -> new AssertionError("Expected GUI contents to be available."))
+                .get(row, column)
+                .orElseThrow(() -> new AssertionError(failureMessage));
+    }
+
+    private void clickOpenItem(PlayerMock player, int row, int column, String failureMessage) {
+        clickableItem(player, row, column, failureMessage)
+                .run((org.bukkit.event.inventory.InventoryClickEvent) null);
+    }
+
+    private void assertStorageProviderMenu(PlayerMock player, String expectedId, int expectedRows,
+                                           String expectedTitle, String expectedToggleLabel,
+                                           String expectedHostnameLabel, int previousSlot, int quitSlot) {
+        SmartInventory inventory = openedSmartInventory(player);
+        assertEquals(expectedId, inventory.getId());
+        assertEquals(expectedRows, inventory.getRows());
+        assertEquals(9, inventory.getColumns());
+        assertEquals(expectedTitle, ChatColor.stripColor(inventory.getTitle()));
+
+        Inventory topInventory = player.getOpenInventory().getTopInventory();
+        assertEquals(expectedRows * 9, topInventory.getSize());
+        assertDisplayName(expectedToggleLabel, topInventory.getItem(10));
+        assertDisplayName(expectedHostnameLabel, topInventory.getItem(11));
+        assertEquals(Material.RED_STAINED_GLASS, topInventory.getItem(previousSlot).getType());
+        assertEquals(Material.BARRIER, topInventory.getItem(quitSlot).getType());
+    }
+
+    private void assertDisplayName(String expected, ItemStack item) {
+        assertNotNull(item);
+        assertTrue(item.hasItemMeta());
+        assertEquals(expected, ChatColor.stripColor(item.getItemMeta().getDisplayName()));
     }
 }

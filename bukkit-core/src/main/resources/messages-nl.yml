@@ -784,4 +784,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Actiebalken verzenden
   wwcConfigActionBarInvalid: Ongeldige instelling voor de verzendactiebalk die is
     ingesteld in config.yml. Standaard ingesteld op true...
+  wwcConfigGUIInputMethodConversation: Conversatie
+  wwcAIGuidelinesBlocked: Dit bericht is geblokkeerd door onze vertaalrichtlijnen.
+  wwcConfigGUIGuidelinesAIModelButton: AI-model voor wijzigingsrichtlijnen
+  wwcConfigGUIOpenAICompatibleURLButton: Wijzig de OpenAI-compatibele URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Richtlijnen AI-model succesvol ingesteld.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-compatibele API-sleutel
+    succesvol ingesteld.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-compatibele URL is succesvol
+    ingesteld.
+  wwcConfigConversationOpenAICompatibleURLInput: De huidige URL is {0}. Voer een URL
+    in voor OpenAI Compatible, of typ 0 om terug te gaan.
+  wwcConfigConversationOpenAICompatibleModelInput: Het huidige model is {0}. Voer
+    een model in voor OpenAI Compatible, of typ 0 om terug te gaan.
+  wwcConfigGUIGuidelinesAIPromptButton: Richtlijnen wijzigen AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Wijzig de OpenAI-compatibele prompt
+  wwcConfigGUIToggleOpenAICompatibleButton: Schakel OpenAI-compatibel in
+  wwcConfigConversationInputMethodSuccess: Invoermethode ingesteld op {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-compatibele modelset succesvol
+    ingesteld.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI-compatibel
+  wwcConfigGUIInputMethodPaperDialog: Dialoog op papier
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Wijzig de OpenAI-compatibele API-sleutel
+  wwcConfigGUIInputMethodButton: Invoermethode
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Het huidige AI-model van Guidelines
+    is {0}. Voer een model in, typ clear om het actieve providermodel te gebruiken,
+    of typ 0 om terug te gaan.
+  wwcConfigGUIOpenAICompatibleModelButton: Wijzig het OpenAI-compatibele model
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Met succes omgeschakeld tussen richtlijnen
+    en AI-controles.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: De huidige API-sleutel is {0}.
+    Voer een API-sleutel in voor OpenAI Compatible, of typ 0 om terug te gaan.
+  wwcConfigGUIInputMethodCurrent: 'Actueel: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI-compatibel met succes omgeschakeld.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Toggle Guidelines AI Checks
 

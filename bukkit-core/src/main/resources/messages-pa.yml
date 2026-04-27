@@ -764,4 +764,39 @@ Messages:
   wwcConfigGUISendActionBarButton: ਐਕਸ਼ਨ ਬਾਰ ਭੇਜੋ
   wwcConfigActionBarInvalid: ਅਵੈਧ ਭੇਜੋ ਐਕਸ਼ਨ ਬਾਰ ਸੈਟਿੰਗ config.yml ਵਿੱਚ ਸੈਟ ਕੀਤੀ ਗਈ
     ਹੈ। ਸੱਚ ਨੂੰ ਡਿਫੌਲਟ ਕਰਨਾ...
+  wwcConfigGUIInputMethodConversation: ਗੱਲਬਾਤ
+  wwcAIGuidelinesBlocked: ਇਹ ਸੁਨੇਹਾ ਸਾਡੇ ਅਨੁਵਾਦ ਦਿਸ਼ਾ ਨਿਰਦੇਸ਼ਾਂ ਦੁਆਰਾ ਬਲੌਕ ਕੀਤਾ ਗਿਆ
+    ਸੀ।
+  wwcConfigGUIGuidelinesAIModelButton: ਦਿਸ਼ਾ ਨਿਰਦੇਸ਼ ਏਆਈ ਮਾਡਲ ਬਦਲੋ
+  wwcConfigGUIOpenAICompatibleURLButton: ਓਪਨਏਆਈ ਅਨੁਕੂਲ URL ਬਦਲੋ
+  wwcConfigConversationGuidelinesAIModelSuccess: ਦਿਸ਼ਾ ਨਿਰਦੇਸ਼ AI ਮਾਡਲ ਸਫਲਤਾਪੂਰਵਕ
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI ਅਨੁਕੂਲ API ਕੁੰਜੀ ਸਫਲਤਾਪੂਰਵਕ
+    ਸੈਟ ਕੀਤੀ ਗਈ
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI ਅਨੁਕੂਲ URL ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ
+    ਕੀਤਾ ਗਿਆ.
+  wwcConfigConversationOpenAICompatibleURLInput: ਮੌਜੂਦਾ URL {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਓਪਨਏਆਈ
+    ਅਨੁਕੂਲ ਲਈ ਇੱਕ URL ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationOpenAICompatibleModelInput: ਮੌਜੂਦਾ ਮਾਡਲ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ
+    ਓਪਨਏਆਈ ਅਨੁਕੂਲ ਲਈ ਇੱਕ ਮਾਡਲ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIGuidelinesAIPromptButton: ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼ ਏਆਈ ਪ੍ਰੋਮਪਟ
+  wwcConfigGUIOpenAICompatiblePromptButton: ਓਪਨਏਆਈ ਅਨੁਕੂਲ ਪ੍ਰੋਂਪਟ ਬਦਲੋ
+  wwcConfigGUIToggleOpenAICompatibleButton: ਓਪਨਏਆਈ ਅਨੁਕੂਲ ਟੌਗਲ ਕਰੋ
+  wwcConfigConversationInputMethodSuccess: ਇੰਪੁੱਟ ਵਿਧੀ {0} ਤੇ ਸੈਟ ਕੀਤੀ ਗਈ ਹੈ.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI ਅਨੁਕੂਲ ਮਾਡਲ ਸਫਲਤਾਪੂਰਵਕ
+    ਸੈਟ ਕੀਤਾ
+  wwcConfigGUIOpenAICompatibleButton: ਓਪਨਏਆਈ ਅਨੁਕੂਲ
+  wwcConfigGUIInputMethodPaperDialog: ਪੇਪਰ ਡਾਇਲਾਗ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: ਓਪਨਏਆਈ ਅਨੁਕੂਲ ਏਪੀਆਈ ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIInputMethodButton: ਇੰਪੁੱਟ ਵਿਧੀ
+  wwcConfigGUIInputMethodAuto: ਆਟੋ
+  wwcConfigConversationGuidelinesAIModelInput: ਮੌਜੂਦਾ ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼ AI ਮਾਡਲ {0} ਹੈ।
+    ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਮਾਡਲ ਇਨਪੁਟ ਕਰੋ, ਕਿਰਿਆਸ਼ੀਲ ਪ੍ਰਦਾਤਾ ਮਾਡਲ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਲੀਅਰ ਟਾਈਪ
+    ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIOpenAICompatibleModelButton: ਓਪਨਏਆਈ ਅਨੁਕੂਲ ਮਾਡਲ ਬਦਲੋ
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਗਾਈਡਲਾਈਨਜ਼ ਏਆਈ ਚੈਕ
+  wwcConfigConversationOpenAICompatibleApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ। ਕਿਰਪਾ
+    ਕਰਕੇ ਓਪਨਏਆਈ ਅਨੁਕੂਲ ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIInputMethodCurrent: 'ਮੌਜੂਦਾ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ OpenAI ਅਨੁਕੂਲ ਟੌਗਲ ਕੀਤਾ ਗਿਆ
+  wwcConfigGUIToggleGuidelinesAIChecksButton: ਏਆਈ ਚੈਕਸ ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼ ਟੌਗਲ
 

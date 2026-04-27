@@ -766,4 +766,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Pošlji akcijske vrstice
   wwcConfigActionBarInvalid: Neveljavna nastavitev vrstice za pošiljanje dejanj, nastavljena
     v config.yml. Privzeta vrednost resnična...
+  wwcConfigGUIInputMethodConversation: Pogovor
+  wwcAIGuidelinesBlocked: To sporočilo so blokirale naše smernice za prevajanje.
+  wwcConfigGUIGuidelinesAIModelButton: Spremenite smernice Model AI
+  wwcConfigGUIOpenAICompatibleURLButton: Spremenite združljiv URL z OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Smernice modela AI so uspešno nastavljene.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Uspešno nastavljen ključ API
+    združljiv z OpenAI.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Uspešno nastavljen URL, združljiv
+    z OpenAI.
+  wwcConfigConversationOpenAICompatibleURLInput: Trenutni URL je {0}. Prosimo, vnesite
+    URL za OpenAI Compatible ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationOpenAICompatibleModelInput: Trenutni model je {0}. Prosimo,
+    vnesite model za OpenAI Compatible ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUIGuidelinesAIPromptButton: Sprememba smernic AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Spremenite poziv, združljiv z OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Preklopite združljiv z OpenAI
+  wwcConfigConversationInputMethodSuccess: Način vnosa je nastavljen na {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI združljiv model je uspešno
+    postavljen.
+  wwcConfigGUIOpenAICompatibleButton: Združljiv z OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Pogovorno okno za papir
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Spremenite ključ API, združljiv z OpenAI
+  wwcConfigGUIInputMethodButton: Način vnosa
+  wwcConfigGUIInputMethodAuto: Samodejno
+  wwcConfigConversationGuidelinesAIModelInput: Trenutni model AI smernic je {0}. Prosimo,
+    vnesite model, vnesite clear, da uporabite model aktivnega ponudnika, ali vnesite
+    0, da se vrnete nazaj.
+  wwcConfigGUIOpenAICompatibleModelButton: Spremenite model, združljiv z OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Uspešno preklopljene smernice preverjanja
+    AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Trenutni ključ API je {0}. Prosimo,
+    vnesite ključ API za OpenAI Compatible ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUIInputMethodCurrent: 'Trenutni: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Uspešno preklopljen OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Preklop smernic Preverjanje AI
 

@@ -101,30 +101,27 @@ public class ConfigurationHandler {
 
         /* Validate the configuration */
         // systemPrompt (chatGPTDefaultSystemPrompt should always be overwritten)
-        aiConfig.set("chatGPTDefaultSystemPrompt", templateConfig.getString("chatGPTDefaultSystemPrompt"));
-        aiConfig.set("ollamaDefaultSystemPrompt", templateConfig.getString("ollamaDefaultSystemPrompt"));
+        aiConfig.set("guardrailsDefaultPrompt", templateConfig.getString("guardrailsDefaultPrompt"));
+        String guardrailsPrompt = buildPrompt("guardrailsDefaultPrompt", "guardrailsOverridePrompt");
+        setDefaultPrompt("chatGPTDefaultSystemPrompt", templateConfig, guardrailsPrompt);
+        setDefaultPrompt("openAICompatibleDefaultSystemPrompt", templateConfig, guardrailsPrompt);
+        setDefaultPrompt("guidelinesAIDefaultPrompt", templateConfig, guardrailsPrompt);
+        setDefaultPrompt("ollamaDefaultSystemPrompt", templateConfig, guardrailsPrompt);
 
-        String systemPrompt = "";
+        String systemPrompt;
         if (mainConfig.getBoolean("Translator.useChatGPT")) {
             refs.debugMsg("ChatGPT sys prompt");
-            systemPrompt = aiConfig.getString("chatGPTOverrideSystemPrompt").equalsIgnoreCase("default") ?
-                    aiConfig.getString("chatGPTDefaultSystemPrompt") :
-                    aiConfig.getString("chatGPTOverrideSystemPrompt").replace("{default}", aiConfig.getString("chatGPTDefaultSystemPrompt"));
-            if (systemPrompt == null) {
-                main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
-                systemPrompt = templateConfig.getString("chatGPTDefaultSystemPrompt");
-            }
+            systemPrompt = buildPrompt("chatGPTDefaultSystemPrompt", "chatGPTOverrideSystemPrompt");
+        } else if (mainConfig.getBoolean("Translator.useOpenAICompatible")) {
+            refs.debugMsg("OpenAI Compatible sys prompt");
+            systemPrompt = buildPrompt("openAICompatibleDefaultSystemPrompt", "openAICompatibleOverrideSystemPrompt");
         } else {
             refs.debugMsg("ollama sys prompt");
-            systemPrompt = aiConfig.getString("ollamaOverrideSystemPrompt").equalsIgnoreCase("default") ?
-                    aiConfig.getString("ollamaDefaultSystemPrompt") :
-                    aiConfig.getString("ollamaOverrideSystemPrompt").replace("{default}", aiConfig.getString("ollamaDefaultSystemPrompt"));
-            if (systemPrompt == null) {
-                main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
-                systemPrompt = templateConfig.getString("ollamaDefaultSystemPrompt");
-            }
+            systemPrompt = buildPrompt("ollamaDefaultSystemPrompt", "ollamaOverrideSystemPrompt");
         }
         main.setAISystemPrompt(systemPrompt);
+
+        main.setGuidelinesAIPrompt(buildPrompt("guidelinesAIDefaultPrompt", "guidelinesAIOverridePrompt"));
 
         // supportedLangs
         // TODO: copy supportedLangs to mem instead of setting.
@@ -134,9 +131,30 @@ public class ConfigurationHandler {
             return;
         }
 
-        if (mainConfig.getBoolean("Translator.useChatGPT") || mainConfig.getBoolean("Translator.useOllama")) {
+        if (mainConfig.getBoolean("Translator.useChatGPT")
+                || mainConfig.getBoolean("Translator.useOpenAICompatible")
+                || mainConfig.getBoolean("Translator.useOllama")) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcAiSystemPromptLoaded"));
         }
+        saveCustomConfig(aiConfig, aiFile, false);
+    }
+
+    private void setDefaultPrompt(String defaultKey, YamlConfiguration templateConfig, String guardrailsPrompt) {
+        String templatePrompt = templateConfig.getString(defaultKey, "");
+        aiConfig.set(defaultKey, templatePrompt.replace("{guardrails}", guardrailsPrompt == null ? "" : guardrailsPrompt));
+    }
+
+    private String buildPrompt(String defaultKey, String overrideKey) {
+        String defaultPrompt = aiConfig.getString(defaultKey, "");
+        String overridePrompt = aiConfig.getString(overrideKey, "{default}");
+        String prompt = overridePrompt.equalsIgnoreCase("default") ?
+                defaultPrompt :
+                overridePrompt.replace("{default}", defaultPrompt);
+        if (prompt == null) {
+            main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
+            prompt = "";
+        }
+        return prompt;
     }
 
     /* Init Messages Method */

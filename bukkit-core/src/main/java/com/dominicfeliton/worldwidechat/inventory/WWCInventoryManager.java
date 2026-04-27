@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat.inventory;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.input.InputContext;
+import com.dominicfeliton.worldwidechat.input.InputMethod;
 import com.dominicfeliton.worldwidechat.input.InputPrompt;
 import com.dominicfeliton.worldwidechat.input.InputRequest;
 import com.dominicfeliton.worldwidechat.input.InputResult;
@@ -206,6 +207,71 @@ public class WWCInventoryManager extends InventoryManager {
                     player);
 
             genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
+        }));
+    }
+
+    public static Material getInputMethodButtonMaterial(String configuredValue) {
+        return switch (getConfigurableInputMethod(configuredValue)) {
+            case PAPER_DIALOG -> Material.EMERALD_BLOCK;
+            case CONVERSATION -> Material.REDSTONE_BLOCK;
+            default -> Material.GOLD_BLOCK;
+        };
+    }
+
+    public static String getNextInputMethodValue(String configuredValue) {
+        return switch (getConfigurableInputMethod(configuredValue)) {
+            case AUTO -> InputMethod.PAPER_DIALOG.getConfigValue();
+            case PAPER_DIALOG -> InputMethod.CONVERSATION.getConfigValue();
+            case CONVERSATION -> InputMethod.AUTO.getConfigValue();
+            default -> InputMethod.AUTO.getConfigValue();
+        };
+    }
+
+    private static InputMethod getConfigurableInputMethod(String configuredValue) {
+        InputMethod method = InputMethod.fromConfig(configuredValue);
+        if (method == InputMethod.PAPER_DIALOG || method == InputMethod.CONVERSATION) {
+            return method;
+        }
+        return InputMethod.AUTO;
+    }
+
+    private static String getInputMethodStateMessageKey(String configuredValue) {
+        return switch (getConfigurableInputMethod(configuredValue)) {
+            case PAPER_DIALOG -> "wwcConfigGUIInputMethodPaperDialog";
+            case CONVERSATION -> "wwcConfigGUIInputMethodConversation";
+            default -> "wwcConfigGUIInputMethodAuto";
+        };
+    }
+
+    private String getInputMethodDisplayName(String configuredValue, Player player) {
+        return refs.getPlainMsg(getInputMethodStateMessageKey(configuredValue), "", "&6", player);
+    }
+
+    public void genericInputMethodButton(int x, int y, Player player, InventoryContents contents) {
+        String configValueName = "General.inputMethod";
+        String currentValue = main.getConfigManager().getMainConfig().getString(configValueName, InputMethod.AUTO.getConfigValue());
+        ItemStack button = new ItemStack(getInputMethodButtonMaterial(currentValue));
+        ItemMeta buttonMeta = button.getItemMeta();
+        buttonMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIInputMethodButton",
+                "",
+                "&6",
+                player));
+        buttonMeta.setLore(List.of(refs.getPlainMsg("wwcConfigGUIInputMethodCurrent",
+                "&6" + getInputMethodDisplayName(currentValue, player),
+                "&b",
+                player)));
+        button.setItemMeta(buttonMeta);
+        contents.set(x, y, ClickableItem.of(button, e -> {
+            String nextValue = getNextInputMethodValue(main.getConfigManager().getMainConfig()
+                    .getString(configValueName, InputMethod.AUTO.getConfigValue()));
+            main.addPlayerUsingConfigurationGUI(player);
+            main.getConfigManager().getMainConfig().set(configValueName, nextValue);
+            refs.sendMsg("wwcConfigConversationInputMethodSuccess",
+                    "&6" + getInputMethodDisplayName(nextValue, player),
+                    "&a",
+                    player);
+
+            genericInputMethodButton(x, y, player, contents);
         }));
     }
 

@@ -22,6 +22,8 @@ public class SpigotConversationInputService implements InputService {
     @Override
     public void open(Player player, InputRequest request) {
         InputMethod resolved = resolveMethod();
+        refs.debugMsg("Opening input with backend conversation (configured: " + getConfiguredMethod()
+                + "; resolved: " + resolved.getConfigValue() + ").");
         if (resolved != InputMethod.CONVERSATION) {
             main.getLogger().warning("Input method '" + getConfiguredMethod() + "' is unavailable on " + main.getCurrPlatform()
                     + "; falling back to conversations.");

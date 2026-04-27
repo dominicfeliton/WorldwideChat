@@ -796,4 +796,42 @@ Messages:
   wwcConfigGUISendActionBarButton: Ուղարկեք գործողությունների բարեր
   wwcConfigActionBarInvalid: 'Անվավեր ուղարկման գործողությունների սանդղակի կարգավորումը,
     որը սահմանվել է config.yml- ում: Չարժևորելով ճշմարիտ...'
+  wwcConfigGUIInputMethodConversation: Զրույց
+  wwcAIGuidelinesBlocked: 'Այս հաղորդագրությունը արգելափակվել է մեր թարգմանության
+    ուղեցույցներով:'
+  wwcConfigGUIGuidelinesAIModelButton: Փոխեք ուղեցույցների AI մոդելը
+  wwcConfigGUIOpenAICompatibleURLButton: Փոխեք OpenAI- ի համատեղելի URL- ը
+  wwcConfigConversationGuidelinesAIModelSuccess: 'Ուղեցույցներ AI մոդելը հաջողությամբ
+    սահմանվել է:'
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: 'OpenAI Համատեղելի API ստեղները
+    հաջողությամբ հավաքվել են:'
+  wwcConfigConversationOpenAICompatibleURLSuccess: 'OpenAI Համատեղելի URL- ը հաջողությամբ
+    սահմանվել է:'
+  wwcConfigConversationOpenAICompatibleURLInput: 'Ընթացիկ URL- ն {0} է: Խնդրում ենք
+    մուտքագրել URL- ը OpenAI Compatible- ի համար կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationOpenAICompatibleModelInput: 'Ներկայիս մոդելը {0} է: Խնդրում
+    ենք մուտքագրել OpenAI Compatible մոդել կամ մուտքագրել 0 հետ գնալու համար:'
+  wwcConfigGUIGuidelinesAIPromptButton: Փոխել ուղեցույցները AI հուշում
+  wwcConfigGUIOpenAICompatiblePromptButton: Փոխեք OpenAI- ի համատեղելի հուշումը
+  wwcConfigGUIToggleOpenAICompatibleButton: Միացնել OpenAI- ի համատեղելիությունը
+  wwcConfigConversationInputMethodSuccess: 'Մուտքագրման մեթոդը սահմանվել է {0}:'
+  wwcConfigConversationOpenAICompatibleModelSuccess: 'OpenAI Համատեղելի մոդելը հաջողությամբ
+    հավաքվել է:'
+  wwcConfigGUIOpenAICompatibleButton: OpenAI համատեղելի է
+  wwcConfigGUIInputMethodPaperDialog: Թղթի երկխոսություն
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Փոխեք OpenAI համատեղելի API բանալին
+  wwcConfigGUIInputMethodButton: Մուտքի մեթոդ
+  wwcConfigGUIInputMethodAuto: Ավտո
+  wwcConfigConversationGuidelinesAIModelInput: 'Ներկայիս Ուղեցույցների AI մոդելը {0}
+    է: Խնդրում ենք մուտքագրել մոդել, մուտքագրել հստակ է օգտագործել ակտիվ մատակարարի
+    մոդելը, կամ մուտքագրել 0 հետ գնալ.'
+  wwcConfigGUIOpenAICompatibleModelButton: Փոխեք OpenAI համատեղելի մոդելը
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: 'Հաջողությամբ միացված ուղեցույցներ
+    AI ստուգումներ:'
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 'Ներկայիս API բանալին {0} է: Խնդրում
+    ենք մուտքագրել API բանալին OpenAI Compatible- ի համար կամ մուտքագրել 0 հետ գնալու
+    համար:'
+  wwcConfigGUIInputMethodCurrent: 'Ընթացիկ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: 'Հաջողությամբ միացված OpenAI- ի համատեղելիությունը:'
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Միացնել AI ստուգումների ուղեցույցները
 

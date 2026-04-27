@@ -44,7 +44,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "04162024-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "04272026-1"; // MMDDYYYY-revisionNumber
     private static final String SLF4J_INTERNAL_VERBOSITY_PROPERTY = "slf4j.internal.verbosity";
     private static final String SLF4J_INTERNAL_VERBOSITY_ERROR = "ERROR";
 
@@ -137,6 +137,8 @@ public class WorldwideChat extends JavaPlugin {
     private int errorLimit = 5;
 
     private String aiSystemPrompt = "";
+
+    private String guidelinesAIPrompt = "";
 
     private boolean enableSounds = true;
 
@@ -401,6 +403,9 @@ public class WorldwideChat extends JavaPlugin {
 
         configurationManager.loadMainSettings();
         inputService = serverFactory.getInputService();
+        refs.debugMsg("Input method configured: "
+                + configurationManager.getMainConfig().getString("General.inputMethod", "auto")
+                + "; active backend: " + inputService.getActiveBackendName() + ".");
         configurationManager.loadStorageSettings();
         // we are storing the real translator name in tempTransName.
         // this is to prevent the plugin from being fully accessible to all users just yet.
@@ -1008,6 +1013,10 @@ public class WorldwideChat extends JavaPlugin {
         aiSystemPrompt = i;
     }
 
+    public void setGuidelinesAIPrompt(String i) {
+        guidelinesAIPrompt = i;
+    }
+
     public void setEnableSounds(boolean i) {
         enableSounds = i;
     }
@@ -1243,6 +1252,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public String getAISystemPrompt() {
         return aiSystemPrompt;
+    }
+
+    public String getGuidelinesAIPrompt() {
+        return guidelinesAIPrompt;
     }
 
     public Object[] getPlayerDataUsingGUI(Player p) {

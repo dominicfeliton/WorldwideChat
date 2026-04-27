@@ -7,6 +7,7 @@ import org.mockbukkit.mockbukkit.MockBukkit;
 import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.sql.SQLException;
 import java.util.function.BooleanSupplier;
@@ -30,6 +31,8 @@ final class WWCTestSupport {
         server = MockBukkit.mock();
         plugin = MockBukkit.load(WorldwideChat.class);
         waitForPluginReady();
+        configureStorage(StorageBackend.YAML);
+        reload();
         assertEquals("JUnit/MockBukkit Testing Translator", plugin.getTranslatorName());
     }
 
@@ -139,6 +142,9 @@ final class WWCTestSupport {
         config.set("Translator.useAzureTranslate", false);
         config.set("Translator.useSystranTranslate", false);
         config.set("Translator.useChatGPT", false);
+        config.set("Translator.useOpenAICompatible", false);
+        config.set("Translator.enableGuidelinesAIChecks", false);
+        config.set("Translator.guidelinesAIModel", "");
         config.set("Translator.useOllama", false);
         config.set("General.enableDebugMode", false);
         config.set("General.enablebStats", false);
@@ -161,6 +167,16 @@ final class WWCTestSupport {
         plugin.getCache().cleanUp();
         plugin.getActiveTranslators().clear();
         plugin.getPlayerRecords().clear();
+    }
+
+    static void useDirectPermissionChecks() {
+        try {
+            Field currPlatform = WorldwideChat.class.getDeclaredField("currPlatform");
+            currPlatform.setAccessible(true);
+            currPlatform.set(plugin, "Folia");
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static void waitForPluginReady() {

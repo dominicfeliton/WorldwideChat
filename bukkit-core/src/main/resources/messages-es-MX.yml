@@ -819,4 +819,42 @@ Messages:
   wwcConfigGUISendActionBarButton: Enviar barras de acción
   wwcConfigActionBarInvalid: Configuración de barra de acción de envío no válida establecida
     en config.yml. El valor predeterminado es true...
+  wwcConfigGUIInputMethodConversation: Conversación
+  wwcAIGuidelinesBlocked: Este mensaje fue bloqueado por nuestras directrices de traducción.
+  wwcConfigGUIGuidelinesAIModelButton: Cambiar el modelo de IA de las directrices
+  wwcConfigGUIOpenAICompatibleURLButton: Cambiar URL compatible con OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Pautas El modelo de IA se estableció
+    correctamente.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: La clave de API compatible con
+    OpenAI se configuró correctamente.
+  wwcConfigConversationOpenAICompatibleURLSuccess: La dirección URL compatible con
+    OpenAI se configuró correctamente.
+  wwcConfigConversationOpenAICompatibleURLInput: La dirección URL actual es {0}. Introduzca
+    una URL para OpenAI Compatible o escriba 0 para volver.
+  wwcConfigConversationOpenAICompatibleModelInput: El modelo actual es {0}. Introduzca
+    un modelo para OpenAI Compatible o escriba 0 para volver.
+  wwcConfigGUIGuidelinesAIPromptButton: Guía de cambio AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Cambiar mensaje compatible con OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Alternar OpenAI Compatible
+  wwcConfigConversationInputMethodSuccess: Método de entrada establecido en {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Modelo compatible OpenAI configurado
+    correctamente.
+  wwcConfigGUIOpenAICompatibleButton: Compatible con OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Cuadro de diálogo de papel
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Cambiar clave API compatible con OpenAI
+  wwcConfigGUIInputMethodButton: Método de entrada
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: El modelo actual de Lineamientos AI
+    es {0}. Introduzca un modelo, escriba clear para usar el modelo de proveedor activo
+    o escriba 0 para volver.
+  wwcConfigGUIOpenAICompatibleModelButton: Cambiar modelo compatible con OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Las comprobaciones de IA de las directrices
+    se han alternado correctamente.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: La clave API actual es {0}. Introduzca
+    una clave API para OpenAI Compatible o escriba 0 para volver.
+  wwcConfigGUIInputMethodCurrent: 'Actual: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Se ha alternado correctamente OpenAI
+    Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Alternar directrices Verificaciones
+    de IA
 

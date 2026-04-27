@@ -572,4 +572,34 @@ Messages:
   wwcConfigConversationSendActionBarSuccess: 成功切换发送操作栏。
   wwcConfigGUISendActionBarButton: 发送操作栏
   wwcConfigActionBarInvalid: 在 config.yml 中设置的发送操作栏设置无效。默认为真...
+  wwcConfigGUIInputMethodConversation: 对话
+  wwcAIGuidelinesBlocked: 此消息已被我们的翻译指南屏蔽。
+  wwcConfigGUIGuidelinesAIModelButton: 变更指南 AI 模型
+  wwcConfigGUIOpenAICompatibleURLButton: 更改 OpenAI 兼容网址
+  wwcConfigConversationGuidelinesAIModelSuccess: 指南 AI 模型设置成功。
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: 已成功设置 OpenAI 兼容的 API 密钥。
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI 兼容网址设置成功。
+  wwcConfigConversationOpenAICompatibleURLInput: 当前 URL 是 {0}。请输入 OpenAI 兼容的网址，或键入
+    0 返回。
+  wwcConfigConversationOpenAICompatibleModelInput: 当前的模型是 {0}。请输入兼容 OpenAI 的型号，或键入
+    0 返回。
+  wwcConfigGUIGuidelinesAIPromptButton: 变更指南 AI 提示
+  wwcConfigGUIOpenAICompatiblePromptButton: 更改 OpenAI 兼容提示
+  wwcConfigGUIToggleOpenAICompatibleButton: 切换兼容 OpenAI
+  wwcConfigConversationInputMethodSuccess: 输入法设置为 {0}。
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI 兼容型号设置成功。
+  wwcConfigGUIOpenAICompatibleButton: 兼容 OpenAI
+  wwcConfigGUIInputMethodPaperDialog: 纸质对话框
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: 更改兼容 OpenAI 的 API 密钥
+  wwcConfigGUIInputMethodButton: 输入法
+  wwcConfigGUIInputMethodAuto: 汽车
+  wwcConfigConversationGuidelinesAIModelInput: 当前的指导方针人工智能模型是 {0}。请输入型号，键入 clear 以使用活动提供商模型，或键入
+    0 返回。
+  wwcConfigGUIOpenAICompatibleModelButton: 更改 OpenAI 兼容型号
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: 成功切换了指南 AI 检查。
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 当前 API 密钥是 {0}。请输入 OpenAI 兼容的
+    API 密钥，或键入 0 返回。
+  wwcConfigGUIInputMethodCurrent: 当前：{0}
+  wwcConfigGUIOpenAICompatibleToggleSuccess: 成功切换 OpenAI 兼容。
+  wwcConfigGUIToggleGuidelinesAIChecksButton: 切换指南 AI 检查
 

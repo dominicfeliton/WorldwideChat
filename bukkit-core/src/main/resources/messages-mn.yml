@@ -790,4 +790,38 @@ Messages:
   wwcConfigGUISendActionBarButton: Үйл ажиллагааны баар илгээх
   wwcConfigActionBarInvalid: Config.yml дээр тохируулсан илгээх үйлдлийн мөрний тохиргоог
     хүчин төгөлдөр бус байна. Үнэн гэж анхдагч байна...
+  wwcConfigGUIInputMethodConversation: Яриа
+  wwcAIGuidelinesBlocked: Энэ мессежийг манай орчуулгын удирдамжаар хаасан.
+  wwcConfigGUIGuidelinesAIModelButton: Удирдамж AI загварыг өөрчлөх
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI нийцтэй URL-г өөрчлөх
+  wwcConfigConversationGuidelinesAIModelSuccess: Удирдамж AI загварыг амжилттай тогтоосон.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI нийцтэй API түлхүүр амжилттай
+    багтсан.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI нийцтэй URL амжилттай тохируулагдсан.
+  wwcConfigConversationOpenAICompatibleURLInput: Одоогийн URL нь {0} байна. OpenAI
+    Compatible гэсэн URL оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationOpenAICompatibleModelInput: Одоогийн загвар нь {0} юм. OpenAI
+    Compatible загварыг оруулна уу, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigGUIGuidelinesAIPromptButton: AI Prompt удирдамжийг өөрчлөх
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI нийцтэй хүсэлтийг өөрчлөх
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI-тэй нийцтэй солих
+  wwcConfigConversationInputMethodSuccess: Оролтын аргыг {0} гэж тохируулсан.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI нийцтэй загвар амжилттай
+    багтсан.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI нийцтэй
+  wwcConfigGUIInputMethodPaperDialog: Цаасан харилцан яриа
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI нийцтэй API түлхүүрийг өөрчлөх
+  wwcConfigGUIInputMethodButton: Оролтын арга
+  wwcConfigGUIInputMethodAuto: Авто
+  wwcConfigConversationGuidelinesAIModelInput: Одоогийн удирдамжийн AI загвар нь {0}
+    юм. Загвар оруулах уу, идэвхтэй үйлчилгээ үзүүлэгчийн загварыг ашиглахын тулд
+    clear бичнэ үү, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI нийцтэй загварыг өөрчлөх
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Удирдамж AI шалгалтыг амжилттай сольсон.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Одоогийн API түлхүүр нь {0} юм.
+    OpenAI Compatible гэсэн API түлхүүрийг оруулна уу, эсвэл буцаж очихын тулд 0 гэж
+    бичнэ үү.
+  wwcConfigGUIInputMethodCurrent: 'Одоогийн: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI нийцтэй байдлыг амжилттай сольсон.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: АИ-ийн шалгалтыг өөрчлөх удирдамж
 

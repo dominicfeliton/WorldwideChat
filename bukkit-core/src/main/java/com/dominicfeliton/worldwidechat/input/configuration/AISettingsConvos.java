@@ -5,6 +5,8 @@ import com.dominicfeliton.worldwidechat.input.*;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
+import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
+import com.dominicfeliton.worldwidechat.translators.OpenAITranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
@@ -25,6 +27,43 @@ public class AISettingsConvos {
     private static WorldwideChat main = WorldwideChat.instance;
 
     private static WWCInventoryManager invMan = main.getInventoryManager();
+
+    public static class GuidelinesAIModel extends StringInputPrompt {
+        @Override
+        public @NotNull String getPromptText(InputContext context) {
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            String currentModel = OpenAITranslation.getGuidelinesAIModel(main.getConfigManager().getMainConfig(), getDefaultAIModel());
+            if (currentModel == null || currentModel.isBlank()) {
+                currentModel = getDefaultAIModel();
+            }
+            return refs.getPlainMsg("wwcConfigConversationGuidelinesAIModelInput",
+                    "&6" + currentModel,
+                    "&b",
+                    currPlayer);
+        }
+
+        @Override
+        public InputResult acceptInput(@NotNull InputContext context, String input) {
+            String guidelinesModel = input.equalsIgnoreCase("clear") ? "" : input;
+            return invMan.genericConfigInput(!input.equals("0"), context, "wwcConfigConversationGuidelinesAIModelSuccess",
+                    "Translator.guidelinesAIModel", guidelinesModel, MenuGui.CONFIG_GUI_TAGS.AI_SET.inv.get());
+        }
+    }
+
+    private static String getDefaultAIModel() {
+        if (main.getTranslatorName().equals("OpenAI Compatible")) {
+            return main.getConfigManager().getMainConfig().getString("Translator.openAICompatibleModel");
+        }
+        if (main.getTranslatorName().equals("ChatGPT")) {
+            return main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel");
+        }
+        if (main.getConfigManager().getMainConfig().getBoolean("Translator.useOpenAICompatible")) {
+            return main.getConfigManager().getMainConfig().getString("Translator.openAICompatibleModel");
+        }
+        return main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel");
+    }
 
     public static class AddLang extends StringInputPrompt {
         private SmartInventory previousInventory;

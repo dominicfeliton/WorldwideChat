@@ -753,4 +753,39 @@ Messages:
   wwcConfigGUISendActionBarButton: გაგზავნეთ მოქმედების
   wwcConfigActionBarInvalid: არასწორი გაგზავნის მოქმედების ზოლის პარამეტრი დაყენებულია
     config.yml- ში ნამდვილად არ შეესაბამება...
+  wwcConfigGUIInputMethodConversation: საუბარი
+  wwcAIGuidelinesBlocked: ეს შეტყობინება დაბლოკილი იყო ჩვენი თარგმანის სახელ
+  wwcConfigGUIGuidelinesAIModelButton: AI მოდელის მითითებების შეც
+  wwcConfigGUIOpenAICompatibleURLButton: შეცვალეთ OpenAI თავსებადი URL
+  wwcConfigConversationGuidelinesAIModelSuccess: მითითებები AI მოდელი წარმატებით შედგენილია.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI თავსებადი API გასაღების
+    დაყენება წარმატებით.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI თავსებადი URL წარმატებით
+    დაყენებულია.
+  wwcConfigConversationOpenAICompatibleURLInput: ამჟამინდელი URL მისამართია {0}. გთხოვთ,
+    შეიყვანოთ URL OpenAI თავსებადისთვის, ან დაბრუნებისთვის ჩაწერეთ 0.
+  wwcConfigConversationOpenAICompatibleModelInput: ამჟამინდელი მოდელია {0}. გთხოვთ,
+    შეიყვანოთ მოდელი OpenAI თავსებადისთვის, ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcConfigGUIGuidelinesAIPromptButton: AI მითითებების შეცვლა
+  wwcConfigGUIOpenAICompatiblePromptButton: შეცვალეთ OpenAI თავსებადი მითითება
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI თავსებადი ჩართვა
+  wwcConfigConversationInputMethodSuccess: შეყვანის მეთოდი დაყენებულია {0} -ზე.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI თავსებადი მოდელის ნაკრები
+    წარმატებით.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI თავსებადი
+  wwcConfigGUIInputMethodPaperDialog: ქაღალდის დიალОГ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: შეცვალეთ OpenAI თავსებადი API გასაღები
+  wwcConfigGUIInputMethodButton: შეყვანის მეთოდი
+  wwcConfigGUIInputMethodAuto: ავტო
+  wwcConfigConversationGuidelinesAIModelInput: მიმდინარე სახელმძღვანელო AI მოდელი
+    არის {0}. გთხოვთ, შეიყვანოთ მოდელი, აკრიფეთ მკაფიო აქტიური პროვაიდერის მოდელის
+    გამოსაყენებლად, ან დაუბრუნებისთვის
+  wwcConfigGUIOpenAICompatibleModelButton: შეცვალეთ OpenAI თავსებადი მოდელი
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: წარმატებით ჩართული სახელმძღვანელო ხელოვნების
+  wwcConfigConversationOpenAICompatibleApiKeyInput: მიმდინარე API გასაღები არის {0}.
+    გთხოვთ, შეიყვანოთ API გასაღები OpenAI თავსებადისთვის, ან დაბრუნებისთვის დააკრიფეთ
+    0.
+  wwcConfigGUIInputMethodCurrent: 'მიმდინარე: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: წარმატებით ჩართული OpenAI თავსებადი.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI შემოწმების მითითების შეცვლა
 

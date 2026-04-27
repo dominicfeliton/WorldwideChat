@@ -773,4 +773,43 @@ Messages:
   wwcConfigGUISendActionBarButton: ಆಕ್ಷನ್ ಬಾರ್ಗಳನ್ನು ಕಳುಹಿಸಿ
   wwcConfigActionBarInvalid: Config.yml ನಲ್ಲಿ ಸೆಟ್ ಆಕ್ಷನ್ ಬಾರ್ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಅಮಾನ್ಯ
     ಕಳುಹಿಸಿ. ನಿಜಕ್ಕೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcConfigGUIInputMethodConversation: ಸಂಭಾಷಣೆ
+  wwcAIGuidelinesBlocked: ನಮ್ಮ ಅನುವಾದ ಮಾರ್ಗಸೂಚಿಗಳಿಂದ ಈ ಸಂದೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ.
+  wwcConfigGUIGuidelinesAIModelButton: AI ಮಾದರಿ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI ಹೊಂದಾಣಿಕೆಯ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationGuidelinesAIModelSuccess: ಮಾರ್ಗಸೂಚಿಗಳು AI ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲ್ಪಟ್ಟಿವೆ.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯ API ಕೀಲಿಯನ್ನು
+    ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI ಹೊಂದಾಣಿಕೆಯ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು
+    OpenAI ಹೊಂದಾಣಿಕೆಗೆ URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationOpenAICompatibleModelInput: ಪ್ರಸ್ತುತ ಮಾದರಿ {0}. ದಯವಿಟ್ಟು OpenAI
+    ಹೊಂದಾಣಿಕೆಗೆ ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIGuidelinesAIPromptButton: AI ಪ್ರಾಂಪ್ಟ್ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI ಹೊಂದಾಣಿಕೆಯ ಪ್ರಾಂಪ್ಟ್ ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIToggleOpenAICompatibleButton: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigConversationInputMethodSuccess: ಇನ್ಪುಟ್ ವಿಧಾನವನ್ನು {0} ಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleModelSuccess: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯ ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUIOpenAICompatibleButton: ಓಪನ್ಎಐ ಹೊಂದಿಕೊಳ್ಳುತ್ತದೆ
+  wwcConfigGUIInputMethodPaperDialog: ಪೇಪರ್ ಡೈಲಾಗ್
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI ಹೊಂದಾಣಿಕೆಯ API ಕೀಲಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIInputMethodButton: ಇನ್ಪುಟ್ ವಿಧಾನ
+  wwcConfigGUIInputMethodAuto: ಆಟೋ
+  wwcConfigConversationGuidelinesAIModelInput: ಪ್ರಸ್ತುತ ಮಾರ್ಗಸೂಚಿಗಳ AI ಮಾದರಿ {0} ಆಗಿದೆ.
+    ದಯವಿಟ್ಟು ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಸಕ್ರಿಯ ಪೂರೈಕೆದಾರ ಮಾದರಿಯನ್ನು ಬಳಸಲು ಸ್ಪಷ್ಟವಾಗಿ
+    ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIOpenAICompatibleModelButton: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯ ಮಾದರಿ ಬದಲಾಯ
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: ಮಾರ್ಗಸೂಚಿಗಳ AI ಪರಿಶೀಲನೆಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿ {0} ಆಗಿದೆ. OpenAI
+    ಹೊಂದಾಣಿಕೆಗೆ ಒಂದು API ಕೀಲಿಯನ್ನು ದಯವಿಟ್ಟು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಟೈಪ್
+    ಮಾಡಿ.
+  wwcConfigGUIInputMethodCurrent: 'ಪ್ರಸ್ತುತ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್
+    ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI ಪರಿಶೀಲನೆಗಳ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಟಾಗಲ್
+    ಮಾಡಿ
 

@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs.GuidelinesCheckContext;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -28,10 +29,15 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
+            String originalText = refs.serial(event.originalMessage());
             Component outgoingText = event.message();
+            GuidelinesCheckContext guidelinesCheck = refs.createGuidelinesCheckContext(originalText, event.getPlayer());
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
                     || (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-                outgoingText = refs.deserial(refs.translateText(refs.serial(event.originalMessage()), event.getPlayer()));
+                outgoingText = refs.deserial(refs.translateTextForChat(originalText, event.getPlayer(), guidelinesCheck));
+                if (guidelinesCheck.isBlocked()) {
+                    return;
+                }
                 if (!channel) {
                     event.message(outgoingText);
                 }
@@ -81,7 +87,10 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                 // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + convert to Component
                 String savedText = refs.serial(outgoingText);
-                String translation = refs.translateText(savedText, currPlayer);
+                String translation = refs.translateTextForChat(savedText, currPlayer, guidelinesCheck);
+                if (guidelinesCheck.isBlocked()) {
+                    return;
+                }
                 if (translation.equalsIgnoreCase(savedText)) {
                     refs.debugMsg("Translation unsuccessful/same as original message for " + currPlayer.getName());
                     unmodifiedMessageRecipients.add(eaRecipient);

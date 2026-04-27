@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs.GuidelinesCheckContext;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
 import org.bukkit.entity.Player;
@@ -28,10 +29,15 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
-            String outgoingText = event.getMessage();
+            String originalText = event.getMessage();
+            String outgoingText = originalText;
+            GuidelinesCheckContext guidelinesCheck = refs.createGuidelinesCheckContext(originalText, event.getPlayer());
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
                     || (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-                outgoingText = refs.translateText(event.getMessage(), event.getPlayer());
+                outgoingText = refs.translateTextForChat(originalText, event.getPlayer(), guidelinesCheck);
+                if (guidelinesCheck.isBlocked()) {
+                    return;
+                }
                 if (!channel) {
                     event.setMessage(outgoingText);
                 }
@@ -72,7 +78,10 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 
                 // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + get original format
-                String translation = refs.translateText(outgoingText, eaRecipient);
+                String translation = refs.translateTextForChat(outgoingText, eaRecipient, guidelinesCheck);
+                if (guidelinesCheck.isBlocked()) {
+                    return;
+                }
                 if (translation.equalsIgnoreCase(event.getMessage())) {
                     refs.debugMsg("Translation unsuccessful/same as original message for " + eaRecipient.getName());
                     unmodifiedMessageRecipients.add(eaRecipient);

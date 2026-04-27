@@ -73,7 +73,7 @@ public class CommonRefs {
         supportedPluginLangCodes.putAll(fixedMap);
     }
 
-    public static final Map<String, String> translatorPairs = new HashMap<>();
+    public static final Map<String, String> translatorPairs = new LinkedHashMap<>();
 
     static {
         translatorPairs.put("Translator.useGoogleTranslate", "Google Translate");
@@ -83,6 +83,7 @@ public class CommonRefs {
         translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
         translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
         translatorPairs.put("Translator.useChatGPT", "ChatGPT");
+        translatorPairs.put("Translator.useOpenAICompatible", "OpenAI Compatible");
         translatorPairs.put("Translator.useOllama", "Ollama");
 
         // For testing only!
@@ -466,10 +467,19 @@ public class CommonRefs {
 
         /* Get message from messages.yml */
         String convertedOriginalMessage = resetCode;
-        if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-            convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
+        String messageKey = ChatColor.stripColor(messageName);
+        if (messagesConfig.getString("Overrides." + messageKey) != null) {
+            convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + messageKey));
         } else {
-            if (messagesConfig.getString("Messages." + ChatColor.stripColor(messageName)) == null) {
+            String configuredMessage = messagesConfig.getString("Messages." + messageKey);
+            if (configuredMessage == null) {
+                YamlConfiguration englishMessagesConfig = main.getConfigManager().getCustomMessagesConfig("en");
+                if (englishMessagesConfig != null) {
+                    configuredMessage = englishMessagesConfig.getString("Messages." + messageKey);
+                }
+            }
+
+            if (configuredMessage == null) {
                 if (code.isEmpty()) {
                     main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
                     return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.").build();
@@ -478,7 +488,7 @@ public class CommonRefs {
                     return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.").build();
                 }
             }
-            convertedOriginalMessage += messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
+            convertedOriginalMessage += configuredMessage;
         }
 
         // Translate color codes in the original message
@@ -699,6 +709,20 @@ public class CommonRefs {
         return out;
     }
 
+    public GuidelinesCheckContext createGuidelinesCheckContext(String originalMessage, Player notifyPlayer) {
+        return new GuidelinesCheckContext(originalMessage, notifyPlayer);
+    }
+
+    public String translateTextForChat(String inMessage, Player currPlayer, GuidelinesCheckContext guidelinesCheck) {
+        sendTransInitAction(currPlayer);
+
+        String out = translateText(inMessage, currPlayer, false, guidelinesCheck);
+
+        sendTransFinishAction(currPlayer);
+
+        return out;
+    }
+
     /**
      * Translates text using the selected translator.
      *
@@ -707,6 +731,10 @@ public class CommonRefs {
      * @return String - The translated message. If this is equal to inMessage, the translation failed.
      */
     public String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit) {
+        return translateText(inMessage, currPlayer, ignoreRateLimit, null);
+    }
+
+    private String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit, GuidelinesCheckContext guidelinesCheck) {
         /* If translator settings are invalid, do not do this... */
         debugMsg("translateText() call using " + main.getTranslatorName());
         if (inMessage.length() <= 1 || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
@@ -730,16 +758,7 @@ public class CommonRefs {
                 currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
 
             /* Initialize current vars + ActiveTranslator, sanity checks */
-            ActiveTranslator currActiveTranslator;
-            if (!main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-                    && (main.isActiveTranslator(currPlayer))) {
-                currActiveTranslator = main.getActiveTranslator(currPlayer);
-            } else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-                    && (main.isActiveTranslator(currPlayer))) {
-                currActiveTranslator = main.getActiveTranslator(currPlayer);
-            } else {
-                currActiveTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
-            }
+            ActiveTranslator currActiveTranslator = getActiveTranslatorFor(currPlayer);
 
             /* Char limit check */
             int limit = main.getMessageCharLimit();
@@ -793,7 +812,11 @@ public class CommonRefs {
             String out = inMessage;
             debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
 
-            // Do it!
+            if (guidelinesCheck == null) {
+                checkGuidelinesAI(inMessage);
+            } else {
+                guidelinesCheck.ensurePassed(this);
+            }
             out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
 
             /* Update stats */
@@ -814,10 +837,17 @@ public class CommonRefs {
             /* Get translation */
             finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
         } catch (TimeoutException | ExecutionException | InterruptedException e) {
+            TranslationFailureException failure = findTranslationFailure(e);
             /* Sanitize error before proceeding to write it to errorLog */
             if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
                 // If we are getting stopped by onDisable, end this immediately.
                 debugMsg("Interrupted translateText(), or server state is changing...");
+                return inMessage;
+            } else if (e instanceof ExecutionException && failure != null) {
+                if (guidelinesCheck != null && failure.isGuidelinesFailure()) {
+                    guidelinesCheck.markBlocked();
+                }
+                handleTranslationFailure(failure, guidelinesCheck == null ? currPlayer : guidelinesCheck.notifyPlayer());
                 return inMessage;
             } else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
                 // If the translator has low confidence
@@ -880,7 +910,123 @@ public class CommonRefs {
         return finalOut;
     }
 
-    public String getTranslatorResult(String translatorName, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException {
+    private ActiveTranslator getActiveTranslatorFor(Player currPlayer) {
+        if (main.isActiveTranslator(currPlayer)) {
+            return main.getActiveTranslator(currPlayer);
+        }
+        return main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+    }
+
+    private void checkGuidelinesAI(String inMessage) throws TranslationFailureException {
+        YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+        boolean guidelinesAIEnabled = mainConfig.getBoolean("Translator.enableGuidelinesAIChecks");
+        if (!guidelinesAIEnabled) {
+            return;
+        }
+
+        OpenAIProviderSettings settings = getOpenAIProviderSettings(main.getTranslatorName(), mainConfig);
+        if (settings == null) {
+            debugMsg("Guidelines AI check skipped because active translator is not an OpenAI-style provider.");
+            return;
+        }
+        String guidelinesModel = OpenAITranslation.getGuidelinesAIModel(mainConfig, settings.model());
+
+        try {
+            OpenAITranslation openAITranslationInstance = new OpenAITranslation(
+                    settings.apiKey(),
+                    settings.url(),
+                    guidelinesModel,
+                    main.getGuidelinesAIPrompt(),
+                    false,
+                    main.getCallbackExecutor());
+            openAITranslationInstance.checkGuidelines(inMessage);
+        } catch (TranslationFailureException e) {
+            throw e;
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            debugMsg("Guidelines AI check interrupted.");
+            throw new TranslationFailureException("General", "Guidelines AI check interrupted.", true);
+        } catch (Exception e) {
+            debugMsg("Guidelines AI check failed: " + ExceptionUtils.getMessage(e));
+            throw new TranslationFailureException("General", "Guidelines AI check failed.", true);
+        }
+    }
+
+    private OpenAIProviderSettings getOpenAIProviderSettings(String translatorName, YamlConfiguration mainConfig) {
+        return switch (translatorName) {
+            case "ChatGPT" -> new OpenAIProviderSettings(
+                    mainConfig.getString("Translator.chatGPTAPIKey"),
+                    mainConfig.getString("Translator.chatGPTURL"),
+                    mainConfig.getString("Translator.chatGPTModel"));
+            case "OpenAI Compatible" -> new OpenAIProviderSettings(
+                    mainConfig.getString("Translator.openAICompatibleAPIKey"),
+                    mainConfig.getString("Translator.openAICompatibleURL"),
+                    mainConfig.getString("Translator.openAICompatibleModel"));
+            default -> null;
+        };
+    }
+
+    private TranslationFailureException findTranslationFailure(Throwable throwable) {
+        Throwable current = throwable;
+        while (current != null) {
+            if (current instanceof TranslationFailureException failure) {
+                return failure;
+            }
+            current = current.getCause();
+        }
+        return null;
+    }
+
+    private void handleTranslationFailure(TranslationFailureException failure, Player currPlayer) {
+        debugMsg("Translation failed without counting as success: " + failure.getReason() + " (" + failure.getMessage() + ")");
+        if (failure.shouldNotifyPlayer()) {
+            sendMsg("wwcAIGuidelinesBlocked", "", "&c", currPlayer);
+        }
+    }
+
+    public static final class GuidelinesCheckContext {
+        private final String originalMessage;
+        private final Player notifyPlayer;
+        private boolean checked;
+        private boolean blocked;
+
+        private GuidelinesCheckContext(String originalMessage, Player notifyPlayer) {
+            this.originalMessage = originalMessage;
+            this.notifyPlayer = notifyPlayer;
+        }
+
+        private void ensurePassed(CommonRefs refs) throws TranslationFailureException {
+            if (checked) {
+                return;
+            }
+
+            checked = true;
+            try {
+                refs.checkGuidelinesAI(originalMessage);
+            } catch (TranslationFailureException e) {
+                blocked = true;
+                throw e;
+            }
+        }
+
+        private Player notifyPlayer() {
+            return notifyPlayer;
+        }
+
+        private void markBlocked() {
+            checked = true;
+            blocked = true;
+        }
+
+        public boolean isBlocked() {
+            return blocked;
+        }
+    }
+
+    private record OpenAIProviderSettings(String apiKey, String url, String model) {
+    }
+
+    public String getTranslatorResult(String translatorName, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException, TranslationFailureException {
         return getTranslatorResult(translatorName, "", "", "", true);
     }
 
@@ -897,7 +1043,7 @@ public class CommonRefs {
      * @throws InterruptedException - If we interrupt the callback
      * @throws TimeoutException     - If the callback times out
      */
-    public String getTranslatorResult(String translatorName, String inMessage, String inLangCode, String outLangCode, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException {
+    public String getTranslatorResult(String translatorName, String inMessage, String inLangCode, String outLangCode, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException, TranslationFailureException {
         String out = inMessage;
         YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 
@@ -950,12 +1096,26 @@ public class CommonRefs {
                 out = systranTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
                 break;
             case "ChatGPT":
-                OpenAITranslation openAITranslationInstance = new OpenAITranslation(
-                        mainConfig.getString("Translator.chatGPTAPIKey"),
-                        mainConfig.getString("Translator.chatGPTURL"),
+                OpenAIProviderSettings chatGPTSettings = getOpenAIProviderSettings(translatorName, mainConfig);
+                OpenAITranslation chatGPTTranslationInstance = new OpenAITranslation(
+                        chatGPTSettings.apiKey(),
+                        chatGPTSettings.url(),
+                        chatGPTSettings.model(),
+                        main.getAISystemPrompt(),
                         isInitializing,
                         main.getCallbackExecutor());
-                out = openAITranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
+                out = chatGPTTranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
+                break;
+            case "OpenAI Compatible":
+                OpenAIProviderSettings openAICompatibleSettings = getOpenAIProviderSettings(translatorName, mainConfig);
+                OpenAITranslation openAICompatibleTranslationInstance = new OpenAITranslation(
+                        openAICompatibleSettings.apiKey(),
+                        openAICompatibleSettings.url(),
+                        openAICompatibleSettings.model(),
+                        main.getAISystemPrompt(),
+                        isInitializing,
+                        main.getCallbackExecutor());
+                out = openAICompatibleTranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
                 break;
             case "Ollama":
                 OllamaTranslation ollamaInstance = new OllamaTranslation(

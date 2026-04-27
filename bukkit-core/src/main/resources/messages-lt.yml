@@ -776,4 +776,39 @@ Messages:
   wwcConfigGUISendActionBarButton: Siųsti veiksmų juostas
   wwcConfigActionBarInvalid: Neteisingas siuntimo veiksmų juostos nustatymas nustatytas
     config.yml. Numatyta tiesa...
+  wwcConfigGUIInputMethodConversation: Pokalbis
+  wwcAIGuidelinesBlocked: Šį pranešimą užblokavo mūsų vertimo gairės.
+  wwcConfigGUIGuidelinesAIModelButton: Pakeiskite gaires AI modelį
+  wwcConfigGUIOpenAICompatibleURLButton: Pakeiskite “OpenAI” suderinamą URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Sėkmingai nustatytas AI modelis.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: “OpenAI” suderinamas API raktas
+    sėkmingai nustatytas.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Su OpenAI suderinamas URL sėkmingai
+    nustatytas.
+  wwcConfigConversationOpenAICompatibleURLInput: Dabartinis URL yra {0}. Įveskite
+    “OpenAI Compatibility” URL arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationOpenAICompatibleModelInput: Dabartinis modelis yra {0}. Įveskite
+    “OpenAI Compatibility” modelį arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIGuidelinesAIPromptButton: Pakeiskite gaires AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Pakeiskite “OpenAI” suderinamą raginimą
+  wwcConfigGUIToggleOpenAICompatibleButton: Perjungti “OpenAI” suderinamumą
+  wwcConfigConversationInputMethodSuccess: Įvesties metodas nustatytas kaip {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: “OpenAI” suderinamas modelis
+    sėkmingai nustatytas.
+  wwcConfigGUIOpenAICompatibleButton: “OpenAI” suderinamas
+  wwcConfigGUIInputMethodPaperDialog: Popieriaus dialogas
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Pakeiskite “OpenAI” suderinamą API raktą
+  wwcConfigGUIInputMethodButton: Įvesties metodas
+  wwcConfigGUIInputMethodAuto: Automatinis
+  wwcConfigConversationGuidelinesAIModelInput: Dabartinis gairių AI modelis yra {0}.
+    Įveskite modelį, įveskite aišku, kad galėtumėte naudoti aktyvaus teikėjo modelį,
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIOpenAICompatibleModelButton: Pakeiskite “OpenAI” suderinamą modelį
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Sėkmingai perjungtos gairių AI patikrinimai.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Dabartinis API raktas yra {0}.
+    Įveskite API raktą, skirtą “OpenAI Compatibility”, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigGUIInputMethodCurrent: 'Dabartinis: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Sėkmingai perjungtas “OpenAI Compatibility”.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Perjungti gaires AI patikrinimus
 

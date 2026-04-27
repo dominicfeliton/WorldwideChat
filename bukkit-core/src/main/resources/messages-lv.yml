@@ -765,4 +765,40 @@ Messages:
   wwcConfigGUISendActionBarButton: Sūtīt darbības joslas
   wwcConfigActionBarInvalid: Nederīgs sūtīšanas darbības joslas iestatījums, kas iestatīts
     programmā config.yml. Noklusējuma iestatījums uz patiesu...
+  wwcConfigGUIInputMethodConversation: Saruna
+  wwcAIGuidelinesBlocked: Šo ziņojumu bloķēja mūsu tulkošanas vadlīnijas.
+  wwcConfigGUIGuidelinesAIModelButton: Mainīt vadlīnijas AI modeli
+  wwcConfigGUIOpenAICompatibleURLButton: Mainīt ar OpenAI saderīgu URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Vadlīnijas AI modelis ir veiksmīgi
+    iestatīts.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Ar OpenAI saderīgu API atslēgu
+    veiksmīgi iestatītu.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Ar OpenAI saderīgu URL veiksmīgi
+    iestatītu.
+  wwcConfigConversationOpenAICompatibleURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet
+    URL saderīgam ar OpenAI vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationOpenAICompatibleModelInput: Pašreizējais modelis ir {0}. Lūdzu,
+    ievadiet OpenAI saderīgu modeli vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIGuidelinesAIPromptButton: Mainīt vadlīnijas AI uzvedni
+  wwcConfigGUIOpenAICompatiblePromptButton: Mainīt ar OpenAI saderīgu uzvedni
+  wwcConfigGUIToggleOpenAICompatibleButton: Pārslēgt ar OpenAI saderību
+  wwcConfigConversationInputMethodSuccess: Ievades metode iestatīta uz {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI saderīgs modelis veiksmīgi
+    iestatīts.
+  wwcConfigGUIOpenAICompatibleButton: Saderīgs ar OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Papīra dialoglodziņš
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Mainīt ar OpenAI saderīgu API atslēgu
+  wwcConfigGUIInputMethodButton: Ievades metode
+  wwcConfigGUIInputMethodAuto: Automātiski
+  wwcConfigConversationGuidelinesAIModelInput: Pašreizējais vadlīniju AI modelis ir
+    {0}. Lūdzu, ievadiet modeli, ierakstiet clear, lai izmantotu aktīvo pakalpojumu
+    sniedzēja modeli, vai ierakstiet 0, lai atgrieztos atpakaļ.
+  wwcConfigGUIOpenAICompatibleModelButton: Mainīt OpenAI saderīgo modeli
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Veiksmīgi pārslēgtas vadlīnijas AI
+    pārbaudes.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Pašreizējā API atslēga ir {0}.
+    Lūdzu, ievadiet API atslēgu saderīgam ar OpenAI vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIInputMethodCurrent: 'Pašreizējais: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Veiksmīgi pārslēgts ar OpenAI saderību.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Pārslēgt vadlīnijas AI pārbaudes
 

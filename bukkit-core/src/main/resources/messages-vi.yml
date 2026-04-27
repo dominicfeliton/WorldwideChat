@@ -780,4 +780,40 @@ Messages:
   wwcConfigGUISendActionBarButton: Gửi thanh hành động
   wwcConfigActionBarInvalid: Cài đặt thanh hành động gửi không hợp lệ được đặt trong
     config.yml. Mặc định là true...
+  wwcConfigGUIInputMethodConversation: Cuộc trò chuyện
+  wwcAIGuidelinesBlocked: Thông báo này đã bị chặn bởi nguyên tắc dịch thuật của chúng
+    tôi.
+  wwcConfigGUIGuidelinesAIModelButton: Hướng dẫn thay đổi mô hình AI
+  wwcConfigGUIOpenAICompatibleURLButton: Thay đổi URL tương thích OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Hướng dẫn mô hình AI được thiết lập
+    thành công.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Khóa API tương thích OpenAI
+    đã thiết lập thành công.
+  wwcConfigConversationOpenAICompatibleURLSuccess: URL tương thích OpenAI được thiết
+    lập thành công.
+  wwcConfigConversationOpenAICompatibleURLInput: URL hiện tại là {0}. Vui lòng nhập
+    URL cho OpenAI Compatible, hoặc nhập 0 để quay lại.
+  wwcConfigConversationOpenAICompatibleModelInput: Mô hình hiện tại là {0}. Vui lòng
+    nhập mô hình cho OpenAI Compatible hoặc gõ 0 để quay trở lại.
+  wwcConfigGUIGuidelinesAIPromptButton: Hướng dẫn thay đổi AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Thay đổi lời nhắc tương thích OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Chuyển đổi tương thích OpenAI
+  wwcConfigConversationInputMethodSuccess: Phương thức nhập được đặt thành {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Mô hình tương thích OpenAI được
+    thiết lập thành công.
+  wwcConfigGUIOpenAICompatibleButton: Tương thích OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Hộp thoại giấy
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Thay đổi khóa API tương thích OpenAI
+  wwcConfigGUIInputMethodButton: Phương pháp nhập
+  wwcConfigGUIInputMethodAuto: Tự động
+  wwcConfigConversationGuidelinesAIModelInput: Mô hình Hướng dẫn AI hiện tại là {0}.
+    Vui lòng nhập một mô hình, nhập clear để sử dụng mô hình nhà cung cấp hoạt động
+    hoặc nhập 0 để quay lại.
+  wwcConfigGUIOpenAICompatibleModelButton: Thay đổi mô hình tương thích OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Bật thành công Hướng dẫn kiểm tra AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Khóa API hiện tại là {0}. Vui
+    lòng nhập khóa API cho OpenAI Compatible hoặc gõ 0 để quay trở lại.
+  wwcConfigGUIInputMethodCurrent: 'Hiện tại: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Bật thành công OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Chuyển đổi nguyên tắc Kiểm tra AI
 

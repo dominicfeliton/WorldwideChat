@@ -16,6 +16,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChat.instance;
@@ -29,7 +30,7 @@ public class MenuGui implements InventoryProvider {
     public enum CONFIG_GUI_TAGS {
         GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET,
         CHAT_SET, CHAT_CHANNEL_SET,
-        TRANS_SET, AMAZON_TRANS_SET, AZURE_TRANS_SET, CHATGPT_TRANS_SET,
+        TRANS_SET, AMAZON_TRANS_SET, AZURE_TRANS_SET, CHATGPT_TRANS_SET, OPENAI_COMPATIBLE_TRANS_SET,
         DEEP_TRANS_SET, GOOGLE_TRANS_SET, LIBRE_TRANS_SET, OLLAMA_TRANS_SET,
         SYSTRAN_TRANS_SET,
         AI_SET;
@@ -110,22 +111,22 @@ public class MenuGui implements InventoryProvider {
     private void buildLazyMenus() {
 
         CONFIG_GUI_TAGS.SQL_SET.inv = lazy("sqlSettingsMenu", 4, 9,
-                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, this::buildSQL);
+                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, MenuGui::buildSQL, "SQL");
 
         CONFIG_GUI_TAGS.MONGO_SET.inv = lazy("mongoSettingsMenu", 3, 9,
-                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, this::buildMongo);
+                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, MenuGui::buildMongo, "MongoDB");
 
         CONFIG_GUI_TAGS.POSTGRES_SET.inv = lazy("postgresSettingsMenu", 4, 9,
-                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, this::buildPostgres);
+                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, MenuGui::buildPostgres, "PostgreSQL");
 
         CONFIG_GUI_TAGS.CHAT_SET.inv = lazy("chatSettingsMenu", 4, 9,
-                "wwcConfigGUIChatSettings", ChatColor.BLUE, this::buildChat);
+                "wwcConfigGUIChatSettings", ChatColor.BLUE, MenuGui::buildChat);
 
         CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv = lazy("chatChannelSettingsMenu", 3, 9,
-                "wwcConfigGUIChatChannelSettings", ChatColor.BLUE, this::buildChatChannel);
+                "wwcConfigGUIChatChannelSettings", ChatColor.BLUE, MenuGui::buildChatChannel);
 
         CONFIG_GUI_TAGS.TRANS_SET.inv = lazy("translatorSettingsMenu", 5, 9,
-                "wwcConfigGUITranslatorSettings", ChatColor.BLUE, this::buildTranslatorRoot);
+                "wwcConfigGUITranslatorSettings", ChatColor.BLUE, MenuGui::buildTranslatorRoot);
 
         CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.inv = new LazySmartInventory(() -> {
             MenuGui g = new MenuGui(inPlayer, transName);
@@ -176,6 +177,13 @@ public class MenuGui implements InventoryProvider {
             return inv;
         });
 
+        CONFIG_GUI_TAGS.OPENAI_COMPATIBLE_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("openAICompatibleTranslator", "wwcConfigGUIEachTranslatorSettings", "OpenAI Compatible");
+            g.buildOpenAICompatible();
+            return inv;
+        });
+
         CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv = new LazySmartInventory(() -> {
             MenuGui g = new MenuGui(inPlayer, transName);
             SmartInventory inv = g.genSmartInv("ollamaTranslator", "wwcConfigGUIEachTranslatorSettings", "Ollama");
@@ -184,7 +192,7 @@ public class MenuGui implements InventoryProvider {
         });
 
         CONFIG_GUI_TAGS.AI_SET.inv = lazy("aiSettings", 3, 9,
-                "wwcConfigGUIAISettings", ChatColor.BLUE, this::buildAI);
+                "wwcConfigGUIAISettings", ChatColor.BLUE, MenuGui::buildAI);
     }
 
     /* ------------------------------------------------------------------ */
@@ -194,21 +202,24 @@ public class MenuGui implements InventoryProvider {
     private LazySmartInventory lazy(String id,
                                     int rows, int cols,
                                     String titleKey, ChatColor color,
-                                    Runnable bodyBuilder) {
+                                    Consumer<MenuGui> bodyBuilder,
+                                    String... titleArgs) {
         return new LazySmartInventory(() -> {
-            SmartInventory inv = genSmartInv(id, rows, cols, color, titleKey);
-            bodyBuilder.run();
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv(id, rows, cols, color, titleKey, titleArgs);
+            bodyBuilder.accept(g);
             return inv;
         });
     }
 
     private LazySmartInventory lazy(String id,
                                     String titleKey,
-                                    Runnable bodyBuilder,
+                                    Consumer<MenuGui> bodyBuilder,
                                     String... titleArgs) {
         return new LazySmartInventory(() -> {
-            SmartInventory inv = genSmartInv(id, 3, 9, ChatColor.BLUE, titleKey, titleArgs);
-            bodyBuilder.run();
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv(id, 3, 9, ChatColor.BLUE, titleKey, titleArgs);
+            bodyBuilder.accept(g);
             return inv;
         });
     }
@@ -345,6 +356,7 @@ public class MenuGui implements InventoryProvider {
                 "Chat.sendActionBar"));
         add(new ConvoElement(2, 1, "wwcConfigGUIChatListenerPriorityButton", Material.NAME_TAG,
                 new ChatSettingsConvos.ModifyChatPriority()));
+        add(new InputMethodElement(2, 5));
 
         if (!main.getCurrPlatform().equals("Folia")) {
             add(new SubMenuElement(2, 2, "wwcConfigGUIMessagesOverridePickChatButton",
@@ -398,7 +410,9 @@ public class MenuGui implements InventoryProvider {
                 CONFIG_GUI_TAGS.LIBRE_TRANS_SET.inv));
         add(new SubMenuElement(1, 7, transName.equals("Ollama"), "wwcConfigGUIOllamaButton",
                 CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv));
-        add(new SubMenuElement(2, 1, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton",
+        add(new SubMenuElement(2, 1, transName.equals("OpenAI Compatible"), "wwcConfigGUIOpenAICompatibleButton",
+                CONFIG_GUI_TAGS.OPENAI_COMPATIBLE_TRANS_SET.inv));
+        add(new SubMenuElement(2, 2, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton",
                 CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.inv));
         add(new ConvoElement(3, 1, "wwcConfigGUITranslatorCacheButton", Material.NAME_TAG,
                 new TranslatorSettingsConvos.TranslationCache()));
@@ -507,6 +521,21 @@ public class MenuGui implements InventoryProvider {
         add(new CommonElement(2, 4, "Quit"));
     }
 
+    private void buildOpenAICompatible() {
+        elements.clear();
+        add(new BorderElement(Material.GRAY_STAINED_GLASS_PANE));
+        add(new ToggleElement(1, 1, "wwcConfigGUIToggleOpenAICompatibleButton", "wwcConfigGUIOpenAICompatibleToggleSuccess",
+                "Translator.useOpenAICompatible", TRANSLATOR_TOGGLES, false));
+        add(new ConvoElement(1, 2, "wwcConfigGUIOpenAICompatibleURLButton", Material.NAME_TAG,
+                new OpenAICompatibleSettingsConvos.Url()));
+        add(new ConvoElement(1, 3, "wwcConfigGUIOpenAICompatibleAPIKeyButton", Material.NAME_TAG,
+                new OpenAICompatibleSettingsConvos.ApiKey()));
+        add(new ConvoElement(1, 4, "wwcConfigGUIOpenAICompatibleModelButton", Material.NAME_TAG,
+                new OpenAICompatibleSettingsConvos.Model()));
+        add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
+        add(new CommonElement(2, 4, "Quit"));
+    }
+
     private void buildOllama() {
         elements.clear();
         add(new BorderElement(Material.LIME_STAINED_GLASS_PANE));
@@ -526,9 +555,17 @@ public class MenuGui implements InventoryProvider {
         add(new BulkInputElement(1, 1, "wwcConfigGUIChatGPTPromptButton", Material.NAME_TAG,
                 main.getConfigManager().getAIConfig(), "chatGPTOverrideSystemPrompt"));
         add(new BulkInputElement(1, 2, "wwcConfigGUIOllamaPromptButton", Material.NAME_TAG,
-                main.getConfigManager().getAIConfig(), "chatGPTOverrideSystemPrompt"));
+                main.getConfigManager().getAIConfig(), "ollamaOverrideSystemPrompt"));
+        add(new BulkInputElement(1, 3, "wwcConfigGUIOpenAICompatiblePromptButton", Material.NAME_TAG,
+                main.getConfigManager().getAIConfig(), "openAICompatibleOverrideSystemPrompt"));
+        add(new ConvoElement(1, 4, "wwcConfigGUIGuidelinesAIModelButton", Material.NAME_TAG,
+                new AISettingsConvos.GuidelinesAIModel()));
+        add(new BulkInputElement(1, 5, "wwcConfigGUIGuidelinesAIPromptButton", Material.NAME_TAG,
+                main.getConfigManager().getAIConfig(), "guidelinesAIOverridePrompt"));
+        add(new ToggleElement(1, 6, "wwcConfigGUIToggleGuidelinesAIChecksButton", "wwcConfigGUIGuidelinesAIChecksToggleSuccess",
+                "Translator.enableGuidelinesAIChecks"));
         if (!main.getCurrPlatform().equals("Folia")) {
-            add(new SubMenuElement(1, 3, "wwcConfigGUIAIChangeLangs",
+            add(new SubMenuElement(1, 7, "wwcConfigGUIAIChangeLangs",
                     new LazySmartInventory(() -> new AILangGui(inPlayer).getAILangs())));
         }
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
@@ -606,6 +643,19 @@ public class MenuGui implements InventoryProvider {
         void rasterize(Player player, InventoryContents contents) {
             invMgr.genericToggleButton(x, y, player, contents, buttonName,
                     onSuccess, cfgName, disableList, restart);
+        }
+    }
+
+    static class InputMethodElement extends Element {
+        private final WWCInventoryManager invMgr = instance.getInventoryManager();
+
+        InputMethodElement(int x, int y) {
+            super(x, y, "wwcConfigGUIInputMethodButton", null);
+        }
+
+        @Override
+        void rasterize(Player player, InventoryContents contents) {
+            invMgr.genericInputMethodButton(x, y, player, contents);
         }
     }
 
