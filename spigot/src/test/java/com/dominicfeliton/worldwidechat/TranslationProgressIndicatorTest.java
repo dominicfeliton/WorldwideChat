@@ -3,6 +3,7 @@ package com.dominicfeliton.worldwidechat;
 import com.dominicfeliton.worldwidechat.util.TranslationProgressIndicator;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.junit.jupiter.api.Test;
@@ -98,7 +99,29 @@ class TranslationProgressIndicatorTest extends WWCIntegrationTest {
     }
 
     @Test
-    void closeFromFinallyClearsVisibleIndicator() {
+    void visibleErrorShowsRedErrorInsteadOfDone() {
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("FailedIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.begin(player);
+        WWCTestSupport.server().getScheduler().performTicks(9);
+        drainActionBars(player);
+
+        indicator.markError(player);
+        handle.close();
+        WWCTestSupport.server().getScheduler().performTicks(1);
+
+        List<String> actionBars = drainActionBars(player);
+        assertTrue(actionBars.stream().anyMatch(message ->
+                message.contains(ChatColor.RED.toString()) && message.contains("Error")));
+        assertTrue(actionBars.stream().noneMatch(message -> message.contains("Done!")));
+
+        WWCTestSupport.server().getScheduler().performTicks(20);
+        drainActionBars(player);
+        assertFalse(indicator.isTracking(player));
+    }
+
+    @Test
+    void closingWithoutErrorMarkClearsVisibleIndicator() {
         TranslationProgressIndicator indicator = installRecordingIndicator();
         PlayerMock player = WWCTestSupport.addOpPlayer("ErrorIndicator");
         TranslationProgressIndicator.Handle handle = indicator.begin(player);

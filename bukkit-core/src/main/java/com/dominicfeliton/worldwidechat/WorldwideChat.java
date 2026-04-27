@@ -44,7 +44,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "04272027-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "04272028-1"; // MMDDYYYY-revisionNumber
     private static final String SLF4J_INTERNAL_VERBOSITY_PROPERTY = "slf4j.internal.verbosity";
     private static final String SLF4J_INTERNAL_VERBOSITY_ERROR = "ERROR";
 

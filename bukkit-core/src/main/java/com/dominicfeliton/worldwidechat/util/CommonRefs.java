@@ -809,6 +809,7 @@ public class CommonRefs {
                 if (guidelinesCheck != null && failure.isGuidelinesFailure()) {
                     guidelinesCheck.markBlocked();
                 }
+                markTranslationIndicatorError(currPlayer);
                 handleTranslationFailure(failure, guidelinesCheck == null ? currPlayer : guidelinesCheck.notifyPlayer());
                 return inMessage;
             } else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
@@ -817,11 +818,13 @@ public class CommonRefs {
                 return inMessage;
             } else if (e instanceof TimeoutException) {
                 // If we get a timeoutexception
+                markTranslationIndicatorError(currPlayer);
                 sendTimeoutExceptionMsg(currPlayer);
                 return inMessage;
             }
 
             /* Add 1 to error count */
+            markTranslationIndicatorError(currPlayer);
             main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
             sendMsg("wwcTranslatorError", "", "&c", currPlayer);
             main.getLogger()
@@ -870,6 +873,13 @@ public class CommonRefs {
 
         /* Return final result */
         return finalOut;
+    }
+
+    private void markTranslationIndicatorError(Player currPlayer) {
+        TranslationProgressIndicator indicator = main.getTranslationProgressIndicator();
+        if (indicator != null) {
+            indicator.markError(currPlayer);
+        }
     }
 
     private ActiveTranslator getActiveTranslatorFor(Player currPlayer) {

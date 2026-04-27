@@ -17,6 +17,8 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 final class WWCTestSupport {
 
+    private static final int DEFAULT_TRANSLATOR_CACHE_SIZE = 100;
+
     private static ServerMock server;
     private static WorldwideChat plugin;
 
@@ -146,6 +148,7 @@ final class WWCTestSupport {
         config.set("Translator.enableGuidelinesAIChecks", false);
         config.set("Translator.guidelinesAIModel", "");
         config.set("Translator.useOllama", false);
+        config.set("Translator.translatorCacheSize", DEFAULT_TRANSLATOR_CACHE_SIZE);
         config.set("General.enableDebugMode", false);
         config.set("General.enablebStats", false);
         config.set("General.syncUserLocalization", true);
@@ -165,6 +168,8 @@ final class WWCTestSupport {
         new ArrayList<>(server.getOnlinePlayers()).forEach(PlayerMock::disconnect);
         plugin.getCache().invalidateAll();
         plugin.getCache().cleanUp();
+        plugin.getConfigManager().getMainConfig().set("Translator.translatorCacheSize", DEFAULT_TRANSLATOR_CACHE_SIZE);
+        plugin.setCacheProperties(DEFAULT_TRANSLATOR_CACHE_SIZE);
         plugin.getActiveTranslators().clear();
         plugin.getPlayerRecords().clear();
     }

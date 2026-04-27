@@ -57,6 +57,173 @@ class ListenerTest extends WWCIntegrationTest {
     }
 
     @Test
+    void multiPlayerChatTranslationRoutesOutgoingAndIncomingByTranslatorConfig() {
+        PlayerMock speaker = WWCTestSupport.addOpPlayer("Speaker");
+        PlayerMock sameConfigListener = WWCTestSupport.addOpPlayer("SameConfigListener");
+        PlayerMock englishListener = WWCTestSupport.addOpPlayer("EnglishListener");
+        PlayerMock frenchListener = WWCTestSupport.addOpPlayer("FrenchListener");
+        PlayerMock autoFrenchListener = WWCTestSupport.addOpPlayer("AutoFrenchListener");
+        PlayerMock untranslatedListener = WWCTestSupport.addOpPlayer("UntranslatedListener");
+        PlayerMock incomingDisabledListener = WWCTestSupport.addOpPlayer("IncomingDisabledListener");
+
+        speaker.performCommand("wwct en es");
+        sameConfigListener.performCommand("wwct en es");
+        sameConfigListener.performCommand("wwctci");
+        englishListener.performCommand("wwct es en");
+        englishListener.performCommand("wwctci");
+        frenchListener.performCommand("wwct es fr");
+        frenchListener.performCommand("wwctci");
+        autoFrenchListener.performCommand("wwct fr");
+        autoFrenchListener.performCommand("wwctci");
+        incomingDisabledListener.performCommand("wwct es en");
+
+        WWCTestSupport.addCacheTerm("es", "en", "Hola, como estas?", "English cached translation");
+        WWCTestSupport.addCacheTerm("es", "fr", "Hola, como estas?", "French cached translation");
+        WWCTestSupport.addCacheTerm("None", "fr", "Hola, como estas?", "Auto French cached translation");
+
+        drainPlayerMessages(speaker);
+        drainPlayerMessages(sameConfigListener);
+        drainPlayerMessages(englishListener);
+        drainPlayerMessages(frenchListener);
+        drainPlayerMessages(autoFrenchListener);
+        drainPlayerMessages(untranslatedListener);
+        drainPlayerMessages(incomingDisabledListener);
+
+        AsyncPlayerChatEvent event = new AsyncPlayerChatEvent(true, speaker,
+                "Hello, how are you?", new HashSet<>(Set.of(
+                sameConfigListener, englishListener, frenchListener, autoFrenchListener,
+                untranslatedListener, incomingDisabledListener)));
+
+        new SpigotChatListener().onPlayerChat(event);
+
+        assertEquals("Hola, como estas?", event.getMessage());
+        assertFalse(event.isCancelled());
+        assertTrue(event.getRecipients().contains(sameConfigListener));
+        assertTrue(event.getRecipients().contains(untranslatedListener));
+        assertTrue(event.getRecipients().contains(incomingDisabledListener));
+        assertFalse(event.getRecipients().contains(englishListener));
+        assertFalse(event.getRecipients().contains(frenchListener));
+        assertFalse(event.getRecipients().contains(autoFrenchListener));
+        assertTrue(drainPlayerMessages(sameConfigListener).isEmpty());
+        assertTrue(drainPlayerMessages(untranslatedListener).isEmpty());
+        assertTrue(drainPlayerMessages(incomingDisabledListener).isEmpty());
+        assertTrue(drainPlayerMessages(englishListener).stream()
+                .anyMatch(message -> message.contains("English cached translation")));
+        assertTrue(drainPlayerMessages(frenchListener).stream()
+                .anyMatch(message -> message.contains("French cached translation")));
+        assertTrue(drainPlayerMessages(autoFrenchListener).stream()
+                .anyMatch(message -> message.contains("Auto French cached translation")));
+    }
+
+    @Test
+    void bidirectionalTranslatorsRespectOutgoingAndIncomingPairDifferences() {
+        PlayerMock outgoingOnlySpeaker = WWCTestSupport.addOpPlayer("OutgoingOnlySpeaker");
+        PlayerMock samePairBidirectional = WWCTestSupport.addOpPlayer("SamePairBidirectional");
+        PlayerMock differentPairBidirectional = WWCTestSupport.addOpPlayer("DifferentPairBidirectional");
+
+        outgoingOnlySpeaker.performCommand("wwct en es");
+        samePairBidirectional.performCommand("wwct en es");
+        samePairBidirectional.performCommand("wwctci");
+        differentPairBidirectional.performCommand("wwct es fr");
+        differentPairBidirectional.performCommand("wwctci");
+
+        ActiveTranslator outgoingOnly = plugin().getActiveTranslator(outgoingOnlySpeaker);
+        ActiveTranslator samePair = plugin().getActiveTranslator(samePairBidirectional);
+        ActiveTranslator differentPair = plugin().getActiveTranslator(differentPairBidirectional);
+        assertTrue(outgoingOnly.getTranslatingChatOutgoing());
+        assertFalse(outgoingOnly.getTranslatingChatIncoming());
+        assertTrue(samePair.getTranslatingChatOutgoing());
+        assertTrue(samePair.getTranslatingChatIncoming());
+        assertEquals("en", samePair.getInLangCode());
+        assertEquals("es", samePair.getOutLangCode());
+        assertTrue(differentPair.getTranslatingChatOutgoing());
+        assertTrue(differentPair.getTranslatingChatIncoming());
+        assertEquals("es", differentPair.getInLangCode());
+        assertEquals("fr", differentPair.getOutLangCode());
+
+        WWCTestSupport.addCacheTerm("es", "fr", "Hola, como estas?", "Different pair incoming translation");
+        drainPlayerMessages(outgoingOnlySpeaker);
+        drainPlayerMessages(samePairBidirectional);
+        drainPlayerMessages(differentPairBidirectional);
+
+        AsyncPlayerChatEvent outgoingOnlyEvent = new AsyncPlayerChatEvent(true, outgoingOnlySpeaker,
+                "Hello, how are you?", new HashSet<>(Set.of(samePairBidirectional, differentPairBidirectional)));
+
+        new SpigotChatListener().onPlayerChat(outgoingOnlyEvent);
+
+        assertEquals("Hola, como estas?", outgoingOnlyEvent.getMessage());
+        assertFalse(outgoingOnlyEvent.isCancelled());
+        assertTrue(outgoingOnlyEvent.getRecipients().contains(samePairBidirectional));
+        assertFalse(outgoingOnlyEvent.getRecipients().contains(differentPairBidirectional));
+        assertTrue(drainPlayerMessages(samePairBidirectional).isEmpty());
+        assertTrue(drainPlayerMessages(differentPairBidirectional).stream()
+                .anyMatch(message -> message.contains("Different pair incoming translation")));
+
+        AsyncPlayerChatEvent bidirectionalSpeakerEvent = new AsyncPlayerChatEvent(true, samePairBidirectional,
+                "Hello, how are you?", new HashSet<>(Set.of(outgoingOnlySpeaker, differentPairBidirectional)));
+
+        new SpigotChatListener().onPlayerChat(bidirectionalSpeakerEvent);
+
+        assertEquals("Hola, como estas?", bidirectionalSpeakerEvent.getMessage());
+        assertFalse(bidirectionalSpeakerEvent.isCancelled());
+        assertTrue(bidirectionalSpeakerEvent.getRecipients().contains(outgoingOnlySpeaker));
+        assertFalse(bidirectionalSpeakerEvent.getRecipients().contains(differentPairBidirectional));
+        assertTrue(drainPlayerMessages(outgoingOnlySpeaker).isEmpty());
+        assertTrue(drainPlayerMessages(differentPairBidirectional).stream()
+                .anyMatch(message -> message.contains("Different pair incoming translation")));
+    }
+
+    @Test
+    void globalOutgoingChatTranslationMutatesMessageForNonTranslatorSpeaker() {
+        PlayerMock admin = WWCTestSupport.addOpPlayer("GlobalAdmin");
+        PlayerMock speaker = WWCTestSupport.addOpPlayer("GlobalSpeaker");
+        PlayerMock recipient = WWCTestSupport.addOpPlayer("GlobalRecipient");
+        admin.performCommand("wwcg en es");
+        drainPlayerMessages(admin);
+        drainPlayerMessages(speaker);
+        drainPlayerMessages(recipient);
+
+        AsyncPlayerChatEvent event = new AsyncPlayerChatEvent(true, speaker,
+                "Hello, how are you?", new HashSet<>(Set.of(recipient)));
+
+        new SpigotChatListener().onPlayerChat(event);
+
+        assertEquals("Hola, como estas?", event.getMessage());
+        assertFalse(event.isCancelled());
+        assertTrue(event.getRecipients().contains(recipient));
+        assertTrue(drainPlayerMessages(recipient).isEmpty());
+    }
+
+    @Test
+    void globalOutgoingChatFeedsIncomingRecipientTranslations() {
+        PlayerMock admin = WWCTestSupport.addOpPlayer("GlobalAdmin");
+        PlayerMock speaker = WWCTestSupport.addOpPlayer("GlobalSpeaker");
+        PlayerMock frenchListener = WWCTestSupport.addOpPlayer("GlobalFrenchListener");
+        PlayerMock untranslatedListener = WWCTestSupport.addOpPlayer("GlobalUntranslatedListener");
+        admin.performCommand("wwcg en es");
+        frenchListener.performCommand("wwct es fr");
+        frenchListener.performCommand("wwctci");
+        WWCTestSupport.addCacheTerm("es", "fr", "Hola, como estas?", "Global French cached translation");
+        drainPlayerMessages(admin);
+        drainPlayerMessages(speaker);
+        drainPlayerMessages(frenchListener);
+        drainPlayerMessages(untranslatedListener);
+
+        AsyncPlayerChatEvent event = new AsyncPlayerChatEvent(true, speaker,
+                "Hello, how are you?", new HashSet<>(Set.of(frenchListener, untranslatedListener)));
+
+        new SpigotChatListener().onPlayerChat(event);
+
+        assertEquals("Hola, como estas?", event.getMessage());
+        assertFalse(event.isCancelled());
+        assertFalse(event.getRecipients().contains(frenchListener));
+        assertTrue(event.getRecipients().contains(untranslatedListener));
+        assertTrue(drainPlayerMessages(frenchListener).stream()
+                .anyMatch(message -> message.contains("Global French cached translation")));
+        assertTrue(drainPlayerMessages(untranslatedListener).isEmpty());
+    }
+
+    @Test
     void incomingGuidelinesAIBlockRunsOnceAndLeavesOriginalRecipients() throws IOException {
         try (OpenAIStub stub = OpenAIStub.success("{\"translatable\":false}")) {
             configureChatGPTGuidelinesChecks(stub);
