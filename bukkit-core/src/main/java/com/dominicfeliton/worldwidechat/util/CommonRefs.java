@@ -591,40 +591,6 @@ public class CommonRefs {
         return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
     }
 
-    public void sendTransInitAction(Player currPlayer) {
-        YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        if (!conf.getBoolean("Chat.sendActionBar")) return;
-
-        GenericRunnable initAction = new GenericRunnable() {
-            @Override
-            protected void execute() {
-                wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
-            }
-        };
-        wwcHelper.runSync(initAction, ENTITY, new Object[] {currPlayer});
-    }
-
-    public void sendTransFinishAction(Player currPlayer) {
-        YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        if (!conf.getBoolean("Chat.sendActionBar")) return;
-
-        GenericRunnable endAction = new GenericRunnable() {
-            @Override
-            protected void execute() {
-                wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
-                // Only show action bar for 0.75s
-                GenericRunnable clearAction = new GenericRunnable() {
-                    @Override
-                    protected void execute() {
-                        wwcHelper.sendActionBar(Component.empty(), currPlayer);
-                    }
-                };
-                wwcHelper.runSync(true, 15, clearAction, ENTITY, new Object[] {currPlayer});
-            }
-        };
-        wwcHelper.runSync(endAction, ENTITY, new Object[] {currPlayer});
-    }
-
     /**
      * Translates array of Strings.
      * All of them can be marked as "1" translation and bypass the rate limit.
@@ -650,16 +616,16 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
-        sendTransInitAction(currPlayer);
-
-        String[] out = new String[arrayOfMsgs.length];
-        for (int i = 0; i < arrayOfMsgs.length; i++) {
-            out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            String[] out = new String[arrayOfMsgs.length];
+            for (int i = 0; i < arrayOfMsgs.length; i++) {
+                out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
+            }
+            return out;
+        } finally {
+            progress.close();
         }
-
-        sendTransFinishAction(currPlayer);
-
-        return out;
     }
 
     /**
@@ -685,28 +651,25 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
-        sendTransInitAction(currPlayer);
-
-        List<String> out = new ArrayList<>();
-        for (String str : listOfMsgs) {
-            out.add(translateText(str, currPlayer, countAsOneRequest));
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            List<String> out = new ArrayList<>();
+            for (String str : listOfMsgs) {
+                out.add(translateText(str, currPlayer, countAsOneRequest));
+            }
+            return out;
+        } finally {
+            progress.close();
         }
-
-        sendTransFinishAction(currPlayer);
-
-        return out;
     }
 
     public String translateText(String inMessage, Player currPlayer) {
-        /* Init action bar */
-        sendTransInitAction(currPlayer);
-
-        String out = translateText(inMessage, currPlayer, false);
-
-        /* End action bar */
-        sendTransFinishAction(currPlayer);
-
-        return out;
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            return translateText(inMessage, currPlayer, false);
+        } finally {
+            progress.close();
+        }
     }
 
     public GuidelinesCheckContext createGuidelinesCheckContext(String originalMessage, Player notifyPlayer) {
@@ -714,13 +677,12 @@ public class CommonRefs {
     }
 
     public String translateTextForChat(String inMessage, Player currPlayer, GuidelinesCheckContext guidelinesCheck) {
-        sendTransInitAction(currPlayer);
-
-        String out = translateText(inMessage, currPlayer, false, guidelinesCheck);
-
-        sendTransFinishAction(currPlayer);
-
-        return out;
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            return translateText(inMessage, currPlayer, false, guidelinesCheck);
+        } finally {
+            progress.close();
+        }
     }
 
     /**

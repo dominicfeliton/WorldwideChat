@@ -77,6 +77,8 @@ public class WorldwideChat extends JavaPlugin {
 
     private CommonRefs refs;
 
+    private TranslationProgressIndicator translationProgressIndicator;
+
     private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
     private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
     private Map<String, Object[]> playersUsingConfigGUI = new ConcurrentHashMap<>();
@@ -165,6 +167,13 @@ public class WorldwideChat extends JavaPlugin {
         return inventoryManager;
     }
 
+    public TranslationProgressIndicator getTranslationProgressIndicator() {
+        if (translationProgressIndicator == null && refs != null && wwcHelper != null) {
+            translationProgressIndicator = new TranslationProgressIndicator(this, refs, wwcHelper);
+        }
+        return translationProgressIndicator;
+    }
+
     public InputService getInputService() {
         return inputService;
     }
@@ -228,6 +237,7 @@ public class WorldwideChat extends JavaPlugin {
             adventure.close();
             adventure = null;
         }
+        translationProgressIndicator = null;
         instance = null;
         serverFactory = null;
 
@@ -379,6 +389,7 @@ public class WorldwideChat extends JavaPlugin {
         currPlatform = type;
         refs = serverFactory.getCommonRefs();
         wwcHelper = serverFactory.getWWCHelper();
+        translationProgressIndicator = new TranslationProgressIndicator(this, refs, wwcHelper);
 
         return refs != null && wwcHelper != null;
     }
@@ -647,6 +658,10 @@ public class WorldwideChat extends JavaPlugin {
             return;
         }
         refs.debugMsg("Cancel background tasks!");
+
+        if (translationProgressIndicator != null) {
+            translationProgressIndicator.clearAll();
+        }
 
         // Shut down executors (translations)
         callbackExecutor.shutdownNow();
