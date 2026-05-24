@@ -14,6 +14,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -47,6 +48,11 @@ public class TranslateInGameListener implements Listener {
             /* Entity Names */
             try {
                 if (main.getActiveTranslator(event.getPlayer()).getTranslatingEntity() && event.getRightClicked().isValid()) {
+                    if (isCitizensNpc(event.getRightClicked())) {
+                        refs.debugMsg("Skipping generic entity-name translation for Citizens NPC; Citizens speech handles the translated line.");
+                        return;
+                    }
+
                     Player player = event.getPlayer();
                     final String customName = event.getRightClicked().getCustomName();
                     TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcEntityTranslateStart", "", "&d&l", player);
@@ -79,6 +85,11 @@ public class TranslateInGameListener implements Listener {
                 //refs.debugMsg(ExceptionUtils.getStackTrace(e));
             }
         }
+    }
+
+    private boolean isCitizensNpc(Entity entity) {
+        return main.getServer().getPluginManager().getPlugin("Citizens") != null
+                && entity.hasMetadata("NPC");
     }
 
     /* Items (+ Lore), Books, Signs Translation */
