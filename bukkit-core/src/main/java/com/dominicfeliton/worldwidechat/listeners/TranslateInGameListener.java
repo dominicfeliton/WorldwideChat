@@ -213,17 +213,14 @@ public class TranslateInGameListener implements Listener {
                                         .append(Component.text("---------------", NamedTextColor.GOLD)));
 
                         boolean transFail = Arrays.equals(signText, changedSignText);
-                        if (!textLimit && currLoc != null && !transFail) {
-                            /* Set completed message */
-                            refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
-                        } else if (transFail) {
+                        if (transFail) {
                             refs.failStatusMsg(status, player);
                             refs.sendMsg("wwcSignNotTranslated", "", "&e&o", player);
                             changedSignText = null;
-                        } else {
+                        } else if (textLimit || currLoc == null) {
                             /* If we are here, sign is too long or deleted msg */
-                            refs.failStatusMsg(status, player);
                             refs.sendMsg(player, translationNoticeMsg);
+                            refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
                             changedSignText = null;
                         }
 
@@ -234,10 +231,21 @@ public class TranslateInGameListener implements Listener {
                                 @Override
                                 protected void execute() {
                                     try {
+                                        if (!currLoc.getBlock().getType().name().contains("SIGN")) {
+                                            refs.debugMsg("Sign no longer exists; sending translated sign text in chat.");
+                                            refs.sendMsg(player, translationNoticeMsg);
+                                            refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
+                                            return;
+                                        }
                                         player.sendSignChange(currLoc, finalText);
-                                    } catch (Exception e) {
-                                        refs.debugMsg("sendSignChange failed; sending translated sign text in chat.");
+                                        refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
+                                    } catch (IllegalArgumentException e) {
+                                        refs.debugMsg("sendSignChange rejected translated sign text; sending it in chat.");
                                         refs.sendMsg(player, translationNoticeMsg);
+                                        refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
+                                    } catch (RuntimeException e) {
+                                        refs.failStatusMsg(status, player);
+                                        throw e;
                                     }
                                 }
                             };

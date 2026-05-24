@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat;
 
+import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.TranslationProgressIndicator;
@@ -7,11 +8,19 @@ import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.block.Sign;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.junit.jupiter.api.Test;
+import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.CowMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
@@ -188,9 +197,175 @@ class ObjectTranslationStatusTest extends WWCIntegrationTest {
         }
     }
 
+    @Test
+    void signTooLongFallbackSendsChatAndReportsSuccess() {
+        PlayerMock player = signTranslator("SignTooLongFallback");
+        Block signBlock = signBlock(player, "batch-sign-too-long");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            fireSignTranslation(player, signBlock);
+            WWCTestSupport.drainScheduler();
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Translating target sign")));
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+
+            List<String> messages = drainPlayerMessages(player);
+            assertTrue(messages.stream()
+                    .anyMatch(message -> message.contains("Target sign was either deleted or the translation was too long")
+                            && message.contains("translated-batch-sign-too-long")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void signDeletedFallbackSendsChatAndReportsSuccess() {
+        PlayerMock player = signTranslator("SignDeletedFallback");
+        plugin().addCacheTerm(new CachedTranslation("en", "es", "ok"), "bien");
+        Block signBlock = signBlock(player, "ok");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            new TranslateInGameListener().onInGameObjTranslateRequest(signClick(player, signBlock));
+            signBlock.setType(Material.AIR);
+            WWCTestSupport.drainScheduler();
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Translating target sign")));
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+
+            List<String> messages = drainPlayerMessages(player);
+            assertTrue(messages.stream()
+                    .anyMatch(message -> message.contains("Target sign was either deleted or the translation was too long")
+                            && message.contains("bien")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void signSendLengthRejectionSendsChatAndReportsSuccess() {
+        PlayerMock player = signRejectingTranslator("SignSendLengthRejected");
+        plugin().addCacheTerm(new CachedTranslation("en", "es", "ok"), "bien");
+        Block signBlock = signBlock(player, "ok");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            fireSignTranslation(player, signBlock);
+            WWCTestSupport.drainScheduler();
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Translating target sign")));
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+
+            List<String> messages = drainPlayerMessages(player);
+            assertTrue(messages.stream()
+                    .anyMatch(message -> message.contains("Target sign was either deleted or the translation was too long")
+                            && message.contains("bien")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void signIdenticalTranslationStillShowsErrorAndNotTranslatedMessage() {
+        PlayerMock player = signTranslator("SignIdenticalFailure");
+        Block signBlock = signBlock(player, "same");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            fireSignTranslation(player, signBlock);
+            WWCTestSupport.drainScheduler();
+
+            assertTrue(drainActionBars(player).stream()
+                    .anyMatch(message -> message.contains("Error")));
+            assertTrue(drainPlayerMessages(player).stream()
+                    .anyMatch(message -> message.contains("Target sign was not successfully translated")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void signSendSuccessShowsTranslatedSuccessfullyStatus() {
+        PlayerMock player = signTranslator("SignSendSuccess");
+        plugin().addCacheTerm(new CachedTranslation("en", "es", "ok"), "bien");
+        Block signBlock = signBlock(player, "ok");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            fireSignTranslation(player, signBlock);
+            WWCTestSupport.drainScheduler();
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
     private void restoreActionBarEnabled() {
         plugin().setSendActionBar(true);
         plugin().getConfigManager().getMainConfig().set("Chat.sendActionBar", true);
+    }
+
+    private PlayerMock signTranslator(String name) {
+        PlayerMock player = WWCTestSupport.addOpPlayer(name);
+        enableSignTranslation(player);
+        return player;
+    }
+
+    private PlayerMock signRejectingTranslator(String name) {
+        SignRejectingPlayerMock player = new SignRejectingPlayerMock(WWCTestSupport.server(), name);
+        WWCTestSupport.server().addPlayer(player);
+        player.setOp(true);
+        enableSignTranslation(player);
+        return player;
+    }
+
+    private void enableSignTranslation(PlayerMock player) {
+        player.performCommand("wwct en es");
+        player.performCommand("wwcts");
+        drainPlayerMessages(player);
+    }
+
+    private Block signBlock(PlayerMock player, String firstLine) {
+        Block block = player.getWorld().getBlockAt(0, 64, 0);
+        block.setType(Material.OAK_SIGN);
+        Sign sign = (Sign) block.getState();
+        sign.setLine(0, firstLine);
+        sign.update();
+        return block;
+    }
+
+    private void fireSignTranslation(PlayerMock player, Block signBlock) {
+        new TranslateInGameListener().onInGameObjTranslateRequest(signClick(player, signBlock));
+    }
+
+    private PlayerInteractEvent signClick(PlayerMock player, Block signBlock) {
+        return new PlayerInteractEvent(player, Action.RIGHT_CLICK_BLOCK, null, signBlock, BlockFace.SELF, EquipmentSlot.HAND);
     }
 
     private Object installRecordingActionBarHelper() {
@@ -286,6 +461,17 @@ class ObjectTranslationStatusTest extends WWCIntegrationTest {
         public void runAsync(GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
             asyncSchedulerTypes.add(schedulerType);
             in.run();
+        }
+    }
+
+    private static final class SignRejectingPlayerMock extends PlayerMock {
+        private SignRejectingPlayerMock(ServerMock server, String name) {
+            super(server, name);
+        }
+
+        @Override
+        public void sendSignChange(Location loc, String[] lines) throws IllegalArgumentException {
+            throw new IllegalArgumentException("Line 1 is too long to fit on the sign");
         }
     }
 }
