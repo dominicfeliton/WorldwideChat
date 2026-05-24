@@ -624,4 +624,5 @@ Messages:
     {0} です。1 以上の数字を入力してください。
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml に設定されているオブジェクト翻訳の同時実行制限が無効です。値は
     1 以上でなければなりません。デフォルトは 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Guardrails を使用するには、AI プロバイダーが有効になっている必要があります。
 

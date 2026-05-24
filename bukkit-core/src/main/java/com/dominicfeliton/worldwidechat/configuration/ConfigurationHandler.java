@@ -122,6 +122,12 @@ public class ConfigurationHandler {
         main.setAISystemPrompt(systemPrompt);
 
         main.setGuidelinesAIPrompt(buildPrompt("guidelinesAIDefaultPrompt", "guidelinesAIOverridePrompt"));
+        if (!CommonRefs.isAIProviderEnabled(mainConfig)
+                && mainConfig.getBoolean("Translator.enableGuidelinesAIChecks")) {
+            refs.debugMsg("Disabling Guidelines AI checks because no AI provider is enabled.");
+            mainConfig.set("Translator.enableGuidelinesAIChecks", false);
+            saveMainConfig(false);
+        }
 
         // supportedLangs
         // TODO: copy supportedLangs to mem instead of setting.
@@ -131,9 +137,7 @@ public class ConfigurationHandler {
             return;
         }
 
-        if (mainConfig.getBoolean("Translator.useChatGPT")
-                || mainConfig.getBoolean("Translator.useOpenAICompatible")
-                || mainConfig.getBoolean("Translator.useOllama")) {
+        if (CommonRefs.isAIProviderEnabled(mainConfig)) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcAiSystemPromptLoaded"));
         }
         saveCustomConfig(aiConfig, aiFile, false);

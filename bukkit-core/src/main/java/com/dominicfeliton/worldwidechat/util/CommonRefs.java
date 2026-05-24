@@ -72,6 +72,10 @@ public class CommonRefs {
     }
 
     public static final Map<String, String> translatorPairs = new LinkedHashMap<>();
+    public static final Set<String> AI_PROVIDER_CONFIG_KEYS = Set.of(
+            "Translator.useChatGPT",
+            "Translator.useOpenAICompatible",
+            "Translator.useOllama");
 
     static {
         translatorPairs.put("Translator.useGoogleTranslate", "Google Translate");
@@ -86,6 +90,18 @@ public class CommonRefs {
 
         // For testing only!
         translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
+    }
+
+    public static boolean isAIProviderConfig(String configKey) {
+        return AI_PROVIDER_CONFIG_KEYS.contains(configKey);
+    }
+
+    public static boolean isAIProviderEnabled(YamlConfiguration mainConfig) {
+        if (mainConfig == null) return false;
+        for (String configKey : AI_PROVIDER_CONFIG_KEYS) {
+            if (mainConfig.getBoolean(configKey)) return true;
+        }
+        return false;
     }
 
     public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
@@ -162,7 +178,8 @@ public class CommonRefs {
         STATS_SUCCESS("STATS_SUCCESS", safeSound(Sound.ITEM_BOOK_PAGE_TURN), 1.0f, 1.0f),
         STATS_FAIL("STATS_FAIL", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 1.0f),
         WWC_VERSION("WWC_VERSION", safeSound(Sound.ENTITY_PLAYER_LEVELUP), 1.0f, 1.0f),
-        PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f);
+        PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f),
+        DISABLED_BUTTON("DISABLED_BUTTON", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 0.5f);
 
         private final String name;
         private final Sound sound;
@@ -1114,6 +1131,10 @@ public class CommonRefs {
         if (!guidelinesAIEnabled) {
             return;
         }
+        if (!isAIProviderEnabled(mainConfig)) {
+            debugMsg("Guidelines AI check skipped because no AI provider is enabled.");
+            return;
+        }
 
         OpenAIProviderSettings settings = getOpenAIProviderSettings(main.getTranslatorName(), mainConfig);
         if (settings == null) {
@@ -1671,14 +1692,23 @@ public class CommonRefs {
      * @return String - Returns an empty string if no permission was found, or the permission name if it is
      */
     private String checkForRateLimitPermissions(Player currPlayer) {
-        Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
-        if (perms.contains("worldwidechat.ratelimit.exempt")) {
+        if (currPlayer.hasPermission("worldwidechat.ratelimit.exempt")) {
             return "worldwidechat.ratelimit.exempt";
         }
 
+        Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
         for (PermissionAttachmentInfo perm : perms) {
-            if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
-                return perm.getPermission();
+            if (!perm.getValue()) {
+                continue;
+            }
+
+            String permission = perm.getPermission();
+            String prefix = "worldwidechat.ratelimit.";
+            if (permission.startsWith(prefix)) {
+                String delay = permission.substring(prefix.length());
+                if (!delay.isEmpty() && delay.chars().allMatch(Character::isDigit)) {
+                    return permission;
+                }
             }
         }
         return "";

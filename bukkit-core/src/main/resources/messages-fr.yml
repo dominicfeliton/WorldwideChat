@@ -885,3 +885,5 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limite de simultanéité de traduction
     d'objets non valide définie dans config.yml. La valeur doit être d'au moins 1.
     Par défaut, la valeur est 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Un fournisseur d'IA doit être autorisé à
+    utiliser Guardrails.

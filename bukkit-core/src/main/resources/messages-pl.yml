@@ -818,4 +818,6 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Nieprawidłowy limit współbieżności
     translacji obiektów ustawiony w config.yml. Wartość musi wynosić co najmniej 1.
     Domyślnie 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Dostawca sztucznej inteligencji musi być
+    włączony do korzystania z Guardrails.
 

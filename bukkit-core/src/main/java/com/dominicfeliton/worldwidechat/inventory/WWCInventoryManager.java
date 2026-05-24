@@ -194,19 +194,27 @@ public class WWCInventoryManager extends InventoryManager {
                         "&e",
                         player);
             }
-            main.getConfigManager().getMainConfig().set(configValueName,
-                    !(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
+            boolean enabled = !(main.getConfigManager().getMainConfig().getBoolean(configValueName));
+            main.getConfigManager().getMainConfig().set(configValueName, enabled);
             for (String eaKey : configValsToDisable) {
                 if (eaKey.equals(configValueName)) continue;
                 refs.debugMsg("Disabling " + eaKey + "!");
                 main.getConfigManager().getMainConfig().set(eaKey, false);
+            }
+            if (CommonRefs.translatorPairs.containsKey(configValueName)
+                    && !CommonRefs.isAIProviderEnabled(main.getConfigManager().getMainConfig())
+                    && main.getConfigManager().getMainConfig().getBoolean("Translator.enableGuidelinesAIChecks")) {
+                refs.debugMsg("Disabling Guidelines AI checks because no AI provider is enabled.");
+                main.getConfigManager().getMainConfig().set("Translator.enableGuidelinesAIChecks", false);
             }
             refs.sendMsg(messageOnChange,
                     "",
                     "&a",
                     player);
 
-            genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
+            if (e != null) {
+                genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
+            }
         }));
     }
 

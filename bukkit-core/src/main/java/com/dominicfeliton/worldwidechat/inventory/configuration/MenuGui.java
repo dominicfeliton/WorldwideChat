@@ -14,6 +14,7 @@ import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.*;
 import java.util.function.Consumer;
@@ -42,6 +43,7 @@ public class MenuGui implements InventoryProvider {
     /* ------------------------------------------------------------------ */
 
     private static final Map<String, String> CACHED_MSGS = new HashMap<>();
+    private static final String GUIDELINES_AI_DISABLED_REASON = "wwcConfigGUIGuidelinesAIDisabledReason";
 
     private static final List<String> TRANSLATOR_TOGGLES;
     private static final List<String> STORAGE_TOGGLES =
@@ -554,18 +556,25 @@ public class MenuGui implements InventoryProvider {
     private void buildAI() {
         elements.clear();
         add(new BorderElement(Material.RED_STAINED_GLASS_PANE));
+        boolean aiProviderEnabled = CommonRefs.isAIProviderEnabled(main.getConfigManager().getMainConfig());
         add(new BulkInputElement(1, 1, "wwcConfigGUIChatGPTPromptButton", Material.NAME_TAG,
                 main.getConfigManager().getAIConfig(), "chatGPTOverrideSystemPrompt"));
         add(new BulkInputElement(1, 2, "wwcConfigGUIOllamaPromptButton", Material.NAME_TAG,
                 main.getConfigManager().getAIConfig(), "ollamaOverrideSystemPrompt"));
         add(new BulkInputElement(1, 3, "wwcConfigGUIOpenAICompatiblePromptButton", Material.NAME_TAG,
                 main.getConfigManager().getAIConfig(), "openAICompatibleOverrideSystemPrompt"));
-        add(new ConvoElement(1, 4, "wwcConfigGUIGuidelinesAIModelButton", Material.NAME_TAG,
-                new AISettingsConvos.GuidelinesAIModel()));
-        add(new BulkInputElement(1, 5, "wwcConfigGUIGuidelinesAIPromptButton", Material.NAME_TAG,
-                main.getConfigManager().getAIConfig(), "guidelinesAIOverridePrompt"));
-        add(new ToggleElement(1, 6, "wwcConfigGUIToggleGuidelinesAIChecksButton", "wwcConfigGUIGuidelinesAIChecksToggleSuccess",
-                "Translator.enableGuidelinesAIChecks"));
+        if (aiProviderEnabled) {
+            add(new ConvoElement(1, 4, "wwcConfigGUIGuidelinesAIModelButton", Material.NAME_TAG,
+                    new AISettingsConvos.GuidelinesAIModel()));
+            add(new BulkInputElement(1, 5, "wwcConfigGUIGuidelinesAIPromptButton", Material.NAME_TAG,
+                    main.getConfigManager().getAIConfig(), "guidelinesAIOverridePrompt"));
+            add(new ToggleElement(1, 6, "wwcConfigGUIToggleGuidelinesAIChecksButton", "wwcConfigGUIGuidelinesAIChecksToggleSuccess",
+                    "Translator.enableGuidelinesAIChecks"));
+        } else {
+            add(new DisabledElement(1, 4, "wwcConfigGUIGuidelinesAIModelButton", GUIDELINES_AI_DISABLED_REASON));
+            add(new DisabledElement(1, 5, "wwcConfigGUIGuidelinesAIPromptButton", GUIDELINES_AI_DISABLED_REASON));
+            add(new DisabledElement(1, 6, "wwcConfigGUIToggleGuidelinesAIChecksButton", GUIDELINES_AI_DISABLED_REASON));
+        }
         if (!main.getCurrPlatform().equals("Folia")) {
             add(new SubMenuElement(1, 7, "wwcConfigGUIAIChangeLangs",
                     new LazySmartInventory(() -> new AILangGui(inPlayer).getAILangs())));
@@ -658,6 +667,26 @@ public class MenuGui implements InventoryProvider {
         @Override
         void rasterize(Player player, InventoryContents contents) {
             invMgr.genericInputMethodButton(x, y, player, contents);
+        }
+    }
+
+    static class DisabledElement extends Element {
+        private final CommonRefs refs = instance.getServerFactory().getCommonRefs();
+        private final String disabledReason;
+
+        DisabledElement(int x, int y, String buttonName, String disabledReason) {
+            super(x, y, buttonName, Material.BEDROCK);
+            this.disabledReason = disabledReason;
+        }
+
+        @Override
+        void rasterize(Player player, InventoryContents contents) {
+            ItemStack button = new ItemStack(blockIcon);
+            ItemMeta buttonMeta = button.getItemMeta();
+            buttonMeta.setDisplayName(refs.getPlainMsg(buttonName, "", "&6", player));
+            buttonMeta.setLore(List.of(refs.getPlainMsg(disabledReason, new String[]{}, "&7", player)));
+            button.setItemMeta(buttonMeta);
+            contents.set(x, y, ClickableItem.of(button, e -> refs.playSound(CommonRefs.SoundType.DISABLED_BUTTON, player)));
         }
     }
 

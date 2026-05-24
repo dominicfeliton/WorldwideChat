@@ -4,11 +4,13 @@ import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.input.InputContext;
 import com.dominicfeliton.worldwidechat.input.InputResult;
 import com.dominicfeliton.worldwidechat.input.configuration.GeneralSettingsConvos;
+import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.inventory.wwcstatsgui.WWCStatsGuiMainMenu;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.junit.jupiter.api.Test;
@@ -126,6 +128,62 @@ class GuiTest extends WWCIntegrationTest {
                 "Toggle PostgreSQL", "Change PostgreSQL Hostname", 29, 31);
     }
 
+    @Test
+    void aiSettingsDisablesGuidelinesControlsWhenNoAIProviderIsEnabled() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("AIGuardrailsDisabledUser");
+        YamlConfiguration config = plugin().getConfigManager().getMainConfig();
+        setAIProviderFlags(config, false, false, false);
+        config.set("Translator.enableGuidelinesAIChecks", false);
+
+        openAISettings(player);
+
+        Inventory topInventory = player.getOpenInventory().getTopInventory();
+        assertEquals(Material.BEDROCK, topInventory.getItem(13).getType());
+        assertEquals(Material.BEDROCK, topInventory.getItem(14).getType());
+        assertEquals(Material.BEDROCK, topInventory.getItem(15).getType());
+        assertDisabledGuidelinesLore(topInventory.getItem(13));
+        assertDisabledGuidelinesLore(topInventory.getItem(14));
+        assertDisabledGuidelinesLore(topInventory.getItem(15));
+
+        clickableItem(player, 1, 6, "Expected disabled Guidelines AI toggle button.")
+                .run((org.bukkit.event.inventory.InventoryClickEvent) null);
+
+        assertFalse(config.getBoolean("Translator.enableGuidelinesAIChecks"));
+        assertEquals("aiSettings", openedSmartInventory(player).getId());
+    }
+
+    @Test
+    void aiSettingsEnablesGuidelinesControlsWhenOllamaIsEnabled() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("AIGuardrailsOllamaUser");
+        YamlConfiguration config = plugin().getConfigManager().getMainConfig();
+        setAIProviderFlags(config, false, false, true);
+        config.set("Translator.enableGuidelinesAIChecks", false);
+
+        openAISettings(player);
+
+        Inventory topInventory = player.getOpenInventory().getTopInventory();
+        assertEquals(Material.NAME_TAG, topInventory.getItem(13).getType());
+        assertEquals(Material.NAME_TAG, topInventory.getItem(14).getType());
+        assertEquals(Material.REDSTONE_BLOCK, topInventory.getItem(15).getType());
+    }
+
+    @Test
+    void nonAITranslatorToggleClearsGuidelinesChecks() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("AIGuardrailsNonAIUser");
+        YamlConfiguration config = plugin().getConfigManager().getMainConfig();
+        setAIProviderFlags(config, true, false, false);
+        config.set("Translator.useGoogleTranslate", false);
+        config.set("Translator.enableGuidelinesAIChecks", true);
+
+        openGoogleTranslatorSettings(player);
+        clickableItem(player, 1, 1, "Expected Google Translate toggle button.")
+                .run((org.bukkit.event.inventory.InventoryClickEvent) null);
+
+        assertTrue(config.getBoolean("Translator.useGoogleTranslate"));
+        assertFalse(config.getBoolean("Translator.useChatGPT"));
+        assertFalse(config.getBoolean("Translator.enableGuidelinesAIChecks"));
+    }
+
     private SmartInventory openedSmartInventory(PlayerMock player) {
         return plugin().getInventoryManager().getInventory(player)
                 .orElseThrow(() -> new AssertionError("Expected a SmartInventory to be open."));
@@ -137,6 +195,30 @@ class GuiTest extends WWCIntegrationTest {
                 .orElseThrow(() -> new AssertionError("Expected GUI contents to be available."))
                 .get(row, column)
                 .orElseThrow(() -> new AssertionError(failureMessage));
+    }
+
+    private void openAISettings(PlayerMock player) {
+        new MenuGui(player, plugin().getTranslatorName()).genAllConfigUIs();
+        MenuGui.CONFIG_GUI_TAGS.AI_SET.inv.get().open(player);
+    }
+
+    private void openGoogleTranslatorSettings(PlayerMock player) {
+        new MenuGui(player, plugin().getTranslatorName()).genAllConfigUIs();
+        MenuGui.CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.inv.get().open(player);
+    }
+
+    private void setAIProviderFlags(YamlConfiguration config, boolean chatGPT, boolean openAICompatible, boolean ollama) {
+        config.set("Translator.useChatGPT", chatGPT);
+        config.set("Translator.useOpenAICompatible", openAICompatible);
+        config.set("Translator.useOllama", ollama);
+    }
+
+    private void assertDisabledGuidelinesLore(ItemStack item) {
+        assertNotNull(item);
+        assertNotNull(item.getItemMeta());
+        assertNotNull(item.getItemMeta().getLore());
+        assertEquals("An AI provider must be enabled to use Guardrails.",
+                ChatColor.stripColor(item.getItemMeta().getLore().getFirst()));
     }
 
     private void clickOpenItem(PlayerMock player, int row, int column, String failureMessage) {

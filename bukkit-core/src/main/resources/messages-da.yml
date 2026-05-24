@@ -807,4 +807,6 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ugyldig grænse for samtidighedsgrænse
     for objektoversættelse angivet i config.yml. Værdien skal være mindst 1. Standardindstilling
     til 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: En AI-udbyder skal være aktiveret for at
+    bruge Guardrails.
 

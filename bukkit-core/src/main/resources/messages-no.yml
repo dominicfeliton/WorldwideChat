@@ -784,4 +784,6 @@ Messages:
     for objektoversettelse er {0}. Skriv inn et nummer 1 eller større.
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ugyldig samtidsgrense for objektoversettelse
     angitt i config.yml. Verdien må være minst 1. Standard til 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: En AI-leverandør må være aktivert for å
+    bruke Guardrails.
 

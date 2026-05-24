@@ -816,4 +816,6 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Невірний ліміт паралельності
     перекладу об'єктів, встановлений у config.yml. Значення повинно бути не менше
     1. За замовчуванням до 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Постачальник штучного інтелекту повинен
+    бути увімкнений для використання Guardrails.
 

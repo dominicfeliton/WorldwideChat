@@ -236,6 +236,60 @@ class TranslationTest extends WWCIntegrationTest {
     }
 
     @Test
+    void rateLimitExemptPermissionOverridesNumericRateLimit() {
+        PlayerMock player = WWCTestSupport.addPlayer("RateLimitExempt");
+        player.addAttachment(plugin(), "worldwidechat.ratelimit.5", true);
+        player.addAttachment(plugin(), "worldwidechat.ratelimit.exempt", true);
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+
+        assertTwoImmediateBatchTranslationsAllowed(player, "batch-rate-exempt");
+        WWCTestSupport.drainScheduler();
+        assertTrue(drainPlayerMessages(player).stream()
+                        .noneMatch(message -> message.contains("rate limited")),
+                "Expected exempt player not to receive a rate-limit message.");
+    }
+
+    @Test
+    void numericRateLimitPermissionStillBlocksImmediateSecondTranslation() {
+        PlayerMock player = WWCTestSupport.addPlayer("RateLimitNumeric");
+        player.addAttachment(plugin(), "worldwidechat.ratelimit.5", true);
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+
+        String firstInput = "batch-rate-numeric-first";
+        String secondInput = "batch-rate-numeric-second";
+        CommonRefs refs = plugin().getServerFactory().getCommonRefs();
+
+        assertEquals("translated-" + firstInput, refs.translateText(firstInput, player));
+        assertEquals(secondInput, refs.translateText(secondInput, player));
+        WWCTestSupport.drainScheduler();
+        assertTrue(drainPlayerMessages(player).stream()
+                        .anyMatch(message -> message.contains("rate limited")),
+                "Expected numeric rate-limit permission to block the second immediate translation.");
+    }
+
+    @Test
+    void disabledNumericRateLimitPermissionIsIgnored() {
+        PlayerMock player = WWCTestSupport.addPlayer("RateLimitDisabledNumeric");
+        player.addAttachment(plugin(), "worldwidechat.ratelimit.5", false);
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+
+        assertTwoImmediateBatchTranslationsAllowed(player, "batch-rate-disabled-numeric");
+    }
+
+    @Test
+    void nonNumericRateLimitPermissionIsIgnored() {
+        PlayerMock player = WWCTestSupport.addPlayer("RateLimitNonNumeric");
+        player.addAttachment(plugin(), "worldwidechat.ratelimit.fast", true);
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+
+        assertTwoImmediateBatchTranslationsAllowed(player, "batch-rate-nonnumeric");
+    }
+
+    @Test
     void guidelinesAICheckUsesMainModelWhenDedicatedModelIsBlank() throws IOException {
         try (OpenAIStub stub = OpenAIStub.success("{\"translatable\":true}")) {
             configureChatGPTGuidelinesChecks(stub, "");
@@ -307,6 +361,26 @@ class TranslationTest extends WWCIntegrationTest {
     }
 
     @Test
+    void guidelinesAICheckSkipsAtRuntimeWhenNoAIProviderIsEnabled() throws IOException {
+        try (OpenAIStub stub = OpenAIStub.success("{\"translatable\":false}")) {
+            configureOpenAIProviderConfig(stub);
+            setAIProviderFlags(false, false, false);
+            plugin().setTranslatorName("ChatGPT");
+            WWCTestSupport.useDirectPermissionChecks();
+            plugin().getConfigManager().getMainConfig().set("Translator.enableGuidelinesAIChecks", true);
+            PlayerMock player = WWCTestSupport.addOpPlayer("GuidelinesNoAIProvider");
+            player.performCommand("wwct en es");
+
+            String translated = plugin().getServerFactory().getCommonRefs()
+                    .translateText("Hello, how are you?", player);
+
+            assertEquals("Hola, como estas?", translated);
+            assertEquals(0, stub.guidelinesRequestCount());
+            assertEquals(1, stub.translationRequestCount());
+        }
+    }
+
+    @Test
     void chatGPTTranslationUsesChatGPTConfigOnly() throws Exception {
         try (OpenAIStub stub = OpenAIStub.success("{\"translatable\":true}")) {
             configureOpenAIProviderConfig(stub);
@@ -360,6 +434,23 @@ class TranslationTest extends WWCIntegrationTest {
                 () -> assertPromptHasDefaultGuardrails(aiConfig.getString("ollamaDefaultSystemPrompt")),
                 () -> assertPromptHasDefaultGuardrails(plugin().getGuidelinesAIPrompt())
         );
+    }
+
+    @Test
+    void guidelinesAIChecksDisabledOnStartupWhenNoAIProviderIsEnabled() {
+        setAIProviderFlags(false, false, false);
+        plugin().getConfigManager().getMainConfig().set("Translator.enableGuidelinesAIChecks", true);
+
+        plugin().getConfigManager().initAISettings();
+
+        assertFalse(plugin().getConfigManager().getMainConfig().getBoolean("Translator.enableGuidelinesAIChecks"));
+    }
+
+    @Test
+    void guidelinesAIChecksStayEnabledOnStartupWhenAnyAIProviderIsEnabled() {
+        assertGuidelinesStartupAllowedFor("Translator.useChatGPT");
+        assertGuidelinesStartupAllowedFor("Translator.useOpenAICompatible");
+        assertGuidelinesStartupAllowedFor("Translator.useOllama");
     }
 
     @Test
@@ -530,6 +621,23 @@ class TranslationTest extends WWCIntegrationTest {
         plugin().setAISystemPrompt("Translate according to the schema.");
     }
 
+    private void assertGuidelinesStartupAllowedFor(String enabledProviderConfigKey) {
+        setAIProviderFlags(false, false, false);
+        plugin().getConfigManager().getMainConfig().set(enabledProviderConfigKey, true);
+        plugin().getConfigManager().getMainConfig().set("Translator.enableGuidelinesAIChecks", true);
+
+        plugin().getConfigManager().initAISettings();
+
+        assertTrue(plugin().getConfigManager().getMainConfig().getBoolean("Translator.enableGuidelinesAIChecks"),
+                enabledProviderConfigKey + " should allow Guidelines AI checks to remain enabled.");
+    }
+
+    private void setAIProviderFlags(boolean chatGPT, boolean openAICompatible, boolean ollama) {
+        plugin().getConfigManager().getMainConfig().set("Translator.useChatGPT", chatGPT);
+        plugin().getConfigManager().getMainConfig().set("Translator.useOpenAICompatible", openAICompatible);
+        plugin().getConfigManager().getMainConfig().set("Translator.useOllama", ollama);
+    }
+
     private static void assertPromptHasDefaultGuardrails(String prompt) {
         assertNotNull(prompt);
         assertTrue(prompt.contains("Translation guardrails:"));
@@ -556,6 +664,15 @@ class TranslationTest extends WWCIntegrationTest {
         }
         assertEquals(0, TestTranslation.getActiveTranslations(),
                 "Expected timed-out provider work to be cancelled.");
+    }
+
+    private void assertTwoImmediateBatchTranslationsAllowed(PlayerMock player, String inputPrefix) {
+        CommonRefs refs = plugin().getServerFactory().getCommonRefs();
+        String firstInput = inputPrefix + "-first";
+        String secondInput = inputPrefix + "-second";
+
+        assertEquals("translated-" + firstInput, refs.translateText(firstInput, player));
+        assertEquals("translated-" + secondInput, refs.translateText(secondInput, player));
     }
 
     private static List<String> drainPlayerMessages(PlayerMock player) {

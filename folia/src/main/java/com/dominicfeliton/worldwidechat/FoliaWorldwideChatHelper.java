@@ -1,20 +1,22 @@
 package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.CommonTask;
-import com.dominicfeliton.worldwidechat.util.FoliaTaskWrapper;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
-import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 
-import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
-
 public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
+    private final FoliaSchedulerDispatcher schedulerDispatcher;
+
+    public FoliaWorldwideChatHelper() {
+        this(new FoliaSchedulerDispatcher(new BukkitFoliaSchedulerAccess(WorldwideChat.instance)));
+    }
+
+    FoliaWorldwideChatHelper(FoliaSchedulerDispatcher schedulerDispatcher) {
+        this.schedulerDispatcher = schedulerDispatcher;
+    }
 
     // SCHEDULER (NEW)
     @Override
@@ -27,83 +29,10 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
 
     // Core method for running tasks + repeating tasks
     private void runTask(SchedulerType schedulerType, GenericRunnable task, Object[] taskObjs, long delay, long period) {
-        // TODO: Make sure /20 is correct for ticks
-        CommonTask commonTask = null;
-
-        // First convert to Consumer<ScheduledTask>
-        Consumer<ScheduledTask> converted = (run) -> task.run();
-
-        switch (schedulerType) {
-            case GLOBAL:
-                if (period > 0) {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getGlobalRegionScheduler().runAtFixedRate(main, converted, delay, period));
-                } else if (period == 0 && delay > 0) {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getGlobalRegionScheduler().runDelayed(main, converted, delay));
-                } else {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getGlobalRegionScheduler().run(main, converted));
-                }
-                break;
-            case REGION:
-                // TODO: TEST!
-                if (taskObjs == null || taskObjs.length == 0) {
-                    main.getLogger().severe("Requested region scheduler but did not pass a location/world! Please contact the dev.");
-                    return;
-                }
-
-                if (taskObjs[0] instanceof Location) {
-                    if (period > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runAtFixedRate(main, (Location) taskObjs[0], converted, delay, period));
-                    } else if (period == 0 && delay > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runDelayed(main, (Location) taskObjs[0], converted, delay));
-                    } else {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().run(main, (Location) taskObjs[0], converted));
-                    }
-                } else if (taskObjs[0] instanceof World) {
-                    if (taskObjs.length < 3 || !(taskObjs[1] instanceof Integer) || !(taskObjs[2] instanceof Integer)) {
-                        main.getLogger().severe("Requested region scheduler and passed a world but did not pass chunkX/Z! Please contact the dev.");
-                        return;
-                    }
-
-                    if (period > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runAtFixedRate(main, (World) taskObjs[0], (Integer) taskObjs[1], (Integer) taskObjs[2], converted, delay, period));
-                    } else if (period == 0 && delay > 0) {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().runDelayed(main, (World) taskObjs[0], (Integer) taskObjs[1], (Integer) taskObjs[2], converted, delay));
-                    } else {
-                        commonTask = new FoliaTaskWrapper(main.getServer().getRegionScheduler().run(main, (World) taskObjs[0], (Integer) taskObjs[1], (Integer) taskObjs[2], converted));
-                    }
-                } else {
-                    main.getLogger().severe("Requested region scheduler but did not pass a location/world! Please contact the dev.");
-                    return;
-                }
-                break;
-            case ENTITY:
-                if (taskObjs == null || taskObjs.length == 0 || !(taskObjs[0] instanceof Entity)) {
-                    main.getLogger().severe("Requested entity scheduler but did not pass an entity! Please contact the dev.");
-                    return;
-                }
-                Object taskObj = taskObjs[0];
-
-                if (period > 0) {
-                    commonTask = new FoliaTaskWrapper(((Entity) taskObj).getScheduler().runAtFixedRate(main, converted, null, delay, period));
-                } else if (period == 0 && delay > 0) {
-                    commonTask = new FoliaTaskWrapper(((Entity) taskObj).getScheduler().runDelayed(main, converted, null, delay));
-                } else {
-                    commonTask = new FoliaTaskWrapper(((Entity) taskObj).getScheduler().run(main, converted, null));
-                }
-                break;
-            case ASYNC:
-                if (period > 0) {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runAtFixedRate(main, converted, delay / 20, period / 20, TimeUnit.SECONDS));
-                } else if (period == 0 && delay > 0) {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runDelayed(main, converted, delay / 20, TimeUnit.SECONDS));
-                } else {
-                    commonTask = new FoliaTaskWrapper(main.getServer().getAsyncScheduler().runNow(main, converted));
-                }
-                break;
+        CommonTask commonTask = schedulerDispatcher.dispatch(schedulerType, task, taskObjs, delay, period);
+        if (commonTask != null) {
+            task.setTask(commonTask);
         }
-
-        // Set the task to GenericRunnable
-        task.setTask(commonTask);
     }
 
     @Override

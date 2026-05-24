@@ -887,4 +887,6 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ungültiges Limit für die Parallelität
     der Objektübersetzung, das in config.yml festgelegt wurde. Der Wert muss mindestens
     1 sein. Die Standardeinstellung ist 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Ein KI-Anbieter muss für die Verwendung
+    von Guardrails aktiviert sein.
 
