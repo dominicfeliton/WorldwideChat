@@ -687,4 +687,12 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: สลับเข้ากันได้กับ OpenAI สำเร็จ
   wwcConfigGUIToggleGuidelinesAIChecksButton: การสลับแนวทางการตรวจสอบ AI
   wwctTranslationErrorActionBar: ข้อผิดพลาด
+  wwcConfigConversationObjectTranslationConcurrencyInput: ขีดจำกัดความพร้อมกันการแปลวัตถุปัจจุบันคือ
+    {0}พิมพ์ตัวเลขตั้งแต่ 1 ถึง 4
+  wwcConfigGUIObjectTranslationConcurrencyButton: เปลี่ยนความพร้อมกันการแปลวัตถุ
+  wwcConfigObjectTranslationConcurrencyInvalid: ขีด จำกัด การแปลวัตถุที่ไม่ถูกต้องที่ตั้งไว้ใน
+    config.ymlค่าเริ่มต้นเป็น 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: กำหนดขีดจำกัดความพร้อมกันการแปลวัตถุเรียบร้อยแล้ว
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: ขีดจำกัดความพร้อมกันการแปลวัตถุต้องอยู่ระหว่าง
+    1 ถึง 4
 

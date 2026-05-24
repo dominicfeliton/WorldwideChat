@@ -37,6 +37,38 @@ public class GeneralSettingsConvos {
 
     }
 
+    public static class ObjectTranslationConcurrency extends NumericInputPrompt {
+
+        @Override
+        public @NotNull String getPromptText(InputContext context) {
+            /* Close any open inventories */
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return refs.getPlainMsg("wwcConfigConversationObjectTranslationConcurrencyInput",
+                    "&6" + main.getObjectTranslationConcurrencyLimit(),
+                    "&b",
+                    currPlayer);
+        }
+
+        @Override
+        protected InputResult acceptValidatedInput(@NotNull InputContext context, @NotNull Number input) {
+            int limit = input.intValue();
+            if (limit < 1 || limit > 4) {
+                CommonRefs refs = main.getServerFactory().getCommonRefs();
+                refs.sendMsg("wwcConfigConversationObjectTranslationConcurrencyInvalid", "", "&c", context.getForWhom());
+                return InputResult.repeat();
+            }
+
+            return invMan.genericConfigInput(true, context,
+                    "wwcConfigConversationObjectTranslationConcurrencySuccess",
+                    "General.objectTranslationConcurrencyLimit",
+                    limit,
+                    CONFIG_GUI_TAGS.GEN_SET.inv.get());
+        }
+
+    }
+
     public static class Lang extends StringInputPrompt {
 
         @Override

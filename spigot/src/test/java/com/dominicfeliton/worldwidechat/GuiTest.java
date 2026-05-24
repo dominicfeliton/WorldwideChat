@@ -1,6 +1,9 @@
 package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import com.dominicfeliton.worldwidechat.input.InputContext;
+import com.dominicfeliton.worldwidechat.input.InputResult;
+import com.dominicfeliton.worldwidechat.input.configuration.GeneralSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.wwcstatsgui.WWCStatsGuiMainMenu;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
@@ -79,6 +82,20 @@ class GuiTest extends WWCIntegrationTest {
         assertEquals(4, inventory.getRows());
         assertEquals(9, inventory.getColumns());
         assertEquals(Material.NAME_TAG, player.getOpenInventory().getTopInventory().getItem(10).getType());
+    }
+
+    @Test
+    void objectTranslationConcurrencyPromptAcceptsOnlyOneThroughFour() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("ConfigConcurrencyUser");
+        player.performCommand("wwcc");
+
+        GeneralSettingsConvos.ObjectTranslationConcurrency prompt = new GeneralSettingsConvos.ObjectTranslationConcurrency();
+        InputContext context = new InputContext(player);
+
+        assertEquals(InputResult.Action.REPEAT, prompt.acceptInput(context, "0").getAction());
+        assertEquals(InputResult.Action.REPEAT, prompt.acceptInput(context, "5").getAction());
+        assertEquals(InputResult.Action.COMPLETE, prompt.acceptInput(context, "3").getAction());
+        assertEquals(3, plugin().getConfigManager().getMainConfig().getInt("General.objectTranslationConcurrencyLimit"));
     }
 
     @Test

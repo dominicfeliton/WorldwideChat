@@ -825,4 +825,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI нийцтэй байдлыг амжилттай сольсон.
   wwcConfigGUIToggleGuidelinesAIChecksButton: АИ-ийн шалгалтыг өөрчлөх удирдамж
   wwctTranslationErrorActionBar: Алдаа
+  wwcConfigConversationObjectTranslationConcurrencyInput: Одоогийн объектын орчуулгын
+    зэрэгцээ хязгаар нь {0} байна. 1-ээс 4 хүртэлх тоог бичнэ үү.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Объектын орчуулгын зэрэглэлийг өөрчлөх
+  wwcConfigObjectTranslationConcurrencyInvalid: Config.yml дээр тогтоосон хүчин төгөлдөр
+    бус обьектын орчуулгын зэрэгцлийн хязгаар. Анхдагчаар 4 болж байна...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Объектын орчуулгын зэрэгцээ
+    хязгаарыг амжилттай тогтоосон.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Объектын орчуулгын зэрэгцлийн
+    хязгаар 1-ээс 4 хүртэлх байх ёстой.
 

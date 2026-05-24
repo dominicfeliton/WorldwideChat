@@ -856,4 +856,14 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Commuteu les directrius Comprovacions
     d'IA
   wwctTranslationErrorActionBar: Error
+  wwcConfigConversationObjectTranslationConcurrencyInput: El límit actual de simultaneïtat
+    de traducció d'objectes és {0}. Escriviu un número de l'1 al 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Canviar la simultaneïtat de traducció
+    d'objectes
+  wwcConfigObjectTranslationConcurrencyInvalid: Límit de simultaneïtat de traducció
+    d'objectes no vàlid establert a config.yml. Per defecte a 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: S'estableix amb èxit el
+    límit de simultaneïtat de traducció d'objectes.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: El límit de simultaneïtat
+    de traducció d'objectes ha de ser d'1 a 4.
 

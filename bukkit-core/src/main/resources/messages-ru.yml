@@ -815,4 +815,13 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Переключить рекомендации по проверке
     ИИ
   wwctTranslationErrorActionBar: Ошибка
+  wwcConfigConversationObjectTranslationConcurrencyInput: Текущий предел параллелизма
+    при трансляции объектов равен {0}. Введите число от 1 до 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Параллельное преобразование объектов
+  wwcConfigObjectTranslationConcurrencyInvalid: В config.yml задан неправильный предел
+    параллелизма при трансляции объектов. По умолчанию 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Предел параллелизма при
+    трансляции объектов успешно установлен.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Предельное значение параллелизма
+    при трансляции объектов должно быть от 1 до 4.
 

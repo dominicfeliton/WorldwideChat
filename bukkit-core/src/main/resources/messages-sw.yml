@@ -807,4 +807,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Imefanikiwa kubadilisha OpenAI Sambamba.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Badilisha Miongozo Ukaguzi wa AI
   wwctTranslationErrorActionBar: Hitilafu
+  wwcConfigConversationObjectTranslationConcurrencyInput: Kikomo cha sasa cha utafsiri
+    wa kitu ni {0}. Andika namba kutoka 1 hadi 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Badilisha Usawa wa Tafsiri ya Kitu
+  wwcConfigObjectTranslationConcurrencyInvalid: Kikomo halali cha tafsiri ya kitu
+    kilichowekwa katika config.yml. Kubadilisha kuwa 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Kikomo cha usawa wa tafsiri
+    ya kitu imewekwa kwa mafanikio
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Kikomo cha usawa wa tafsiri
+    ya kitu lazima iwe kutoka 1 hadi 4.
 

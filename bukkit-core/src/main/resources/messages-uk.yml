@@ -805,4 +805,14 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Переключити правила перевірки штучного
     інтелекту
   wwctTranslationErrorActionBar: Помилка
+  wwcConfigConversationObjectTranslationConcurrencyInput: Поточний ліміт паралельності
+    перекладу об'єктів становить {0}. Введіть число від 1 до 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Змінити паралельність перекладу
+    об'єктів
+  wwcConfigObjectTranslationConcurrencyInvalid: Невірний ліміт паралельності перекладу
+    об'єктів, встановлений у config.yml. За замовчуванням до 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Успішно встановлено ліміт
+    паралельності перекладу об'єктів.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Ліміт паралельності перекладу
+    об'єктів повинен бути від 1 до 4.
 

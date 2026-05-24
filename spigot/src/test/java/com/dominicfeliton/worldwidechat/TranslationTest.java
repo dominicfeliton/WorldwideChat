@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.translators.TestTranslation;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.junit.jupiter.api.Test;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
@@ -69,6 +70,67 @@ class TranslationTest extends WWCIntegrationTest {
         assertTrue(plugin().getEstimatedCacheSize() > 0);
         assertEquals("Hola, como estas?",
                 plugin().getCacheTerm(new CachedTranslation("en", "es", "Hello, how are you?")));
+    }
+
+    @Test
+    void objectBatchPreservesOrderAndCapsConcurrentTranslations() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("ObjectBatchCap");
+        player.performCommand("wwct en es");
+        plugin().setObjectTranslationConcurrencyLimit(4);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(75);
+
+        try {
+            List<String> input = List.of(
+                    "batch-0", "batch-1", "batch-2", "batch-3",
+                    "batch-4", "batch-5", "batch-6", "batch-7");
+
+            List<String> translated = plugin().getServerFactory().getCommonRefs()
+                    .translateObjectText(input, player);
+
+            assertEquals(List.of(
+                    "translated-batch-0", "translated-batch-1", "translated-batch-2", "translated-batch-3",
+                    "translated-batch-4", "translated-batch-5", "translated-batch-6", "translated-batch-7"), translated);
+            assertTrue(TestTranslation.getMaxActiveTranslations() > 1);
+            assertTrue(TestTranslation.getMaxActiveTranslations() <= 4);
+        } finally {
+            TestTranslation.resetConcurrencyTracking();
+        }
+    }
+
+    @Test
+    void objectBatchLimitOneKeepsTranslationSerial() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("ObjectBatchSerial");
+        player.performCommand("wwct en es");
+        plugin().setObjectTranslationConcurrencyLimit(1);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(25);
+
+        try {
+            List<String> translated = plugin().getServerFactory().getCommonRefs()
+                    .translateObjectText(List.of("batch-serial-0", "batch-serial-1", "batch-serial-2"), player);
+
+            assertEquals(List.of(
+                    "translated-batch-serial-0",
+                    "translated-batch-serial-1",
+                    "translated-batch-serial-2"), translated);
+            assertEquals(1, TestTranslation.getMaxActiveTranslations());
+        } finally {
+            TestTranslation.resetConcurrencyTracking();
+        }
+    }
+
+    @Test
+    void objectTranslationConcurrencyConfigDefaultsAndRejectsInvalidValues() {
+        assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", 2);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(2, plugin().getObjectTranslationConcurrencyLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", 5);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
     }
 
     @Test

@@ -109,7 +109,12 @@ public class TranslateInGameListener implements Listener {
 
                         /* Translate title */
                         try {
-                            outTitle = refs.translateText(title, currPlayer);
+                            List<String> bookText = new ArrayList<>();
+                            bookText.add(title);
+                            bookText.addAll(pages);
+                            List<String> translatedBookText = refs.translateObjectText(bookText, currPlayer);
+
+                            outTitle = translatedBookText.get(0);
                             if (outTitle.equalsIgnoreCase(title)) {
                                 refs.sendMsg("wwcBookTranslateTitleFail", "", "&e&o", currPlayer);
                             } else {
@@ -117,7 +122,7 @@ public class TranslateInGameListener implements Listener {
                             }
 
                             /* Translate pages */
-                            translatedPages = refs.translateText(pages, currPlayer, false);
+                            translatedPages = new ArrayList<>(translatedBookText.subList(1, translatedBookText.size()));
 
                             if (!translatedPages.equals(pages)) {
                                 /* Set completed message */
@@ -178,7 +183,7 @@ public class TranslateInGameListener implements Listener {
                         boolean textLimit = false;
 
                         try {
-                            changedSignText = refs.translateText(signText, player, true);
+                            changedSignText = refs.translateObjectText(signText, player);
                         } catch (RuntimeException | LinkageError e) {
                             refs.failStatusMsg(status, player);
                             throw e;
@@ -267,32 +272,42 @@ public class TranslateInGameListener implements Listener {
 
                         /* Translate item title */
                         try {
+                            if (!hasLore && !hasDisplayName) {
+                                refs.sendMsg("wwcItemTranslateTitleStock", "", "&e&o", player);
+                                refs.failStatusMsg(status, player);
+                                return;
+                            }
+
+                            List<String> itemText = new ArrayList<>();
+                            int displayNameIndex = -1;
                             if (hasDisplayName) {
-                                translatedName = refs.translateText(displayName, player);
+                                displayNameIndex = itemText.size();
+                                itemText.add(displayName);
+                            } else {
+                                refs.sendMsg("wwcItemTranslateTitleStock", "", "&e&o", player);
+                                // Stock item names are not supported.
+                            }
+
+                            int loreStartIndex = itemText.size();
+                            if (hasLore) {
+                                refs.sendStatusMsg("wwcItemTranslateLoreStart", "", "&d&l", player);
+                                itemText.addAll(itemLore);
+                            }
+
+                            List<String> translatedItemText = refs.translateObjectText(itemText, player);
+
+                            if (hasDisplayName) {
+                                translatedName = translatedItemText.get(displayNameIndex);
                                 if (!hasLore) {
                                     refs.finishStatusMsg(status, "wwcItemTranslateTitleDone", "", "&a&o", player);
                                 } else {
                                     refs.sendStatusMsg("wwcItemTranslateTitleDone", "", "&a&o", player);
                                 }
-                            } else {
-                                refs.sendMsg("wwcItemTranslateTitleStock", "", "&e&o", player);
-                                // Stock items not supported
-                            }
-
-                            // If we are stock item with no lore
-                            if (!hasLore && !hasDisplayName) {
-                                refs.failStatusMsg(status, player);
-                                return;
                             }
 
                             /* Translate item lore */
                             if (hasLore) {
-                                refs.sendStatusMsg("wwcItemTranslateLoreStart", "", "&d&l", player);
-                                outLore = new ArrayList<String>();
-                                for (String eaLine : itemLore) {
-                                    String translatedLine = refs.translateText(eaLine, player);
-                                    outLore.add(translatedLine);
-                                }
+                                outLore = new ArrayList<>(translatedItemText.subList(loreStartIndex, translatedItemText.size()));
                                 /* Set completed message */
                                 refs.finishStatusMsg(status, "wwcItemTranslateLoreDone", "", "&a&o", player);
                             }
@@ -311,8 +326,12 @@ public class TranslateInGameListener implements Listener {
                                     /* Create "fake" item to be displayed to user */
                                     ItemStack translatedItem = currentItem.clone();
                                     ItemMeta translatedMeta = translatedItem.getItemMeta();
-                                    translatedMeta.setDisplayName(finalTranslatedName);
-                                    translatedMeta.setLore(finalOutLore);
+                                    if (hasDisplayName) {
+                                        translatedMeta.setDisplayName(finalTranslatedName);
+                                    }
+                                    if (hasLore) {
+                                        translatedMeta.setLore(finalOutLore);
+                                    }
                                     translatedItem.setItemMeta(translatedMeta);
                                     try {
                                         new TempItemInventory(translatedItem, player).getTempItemInventory().open(player);

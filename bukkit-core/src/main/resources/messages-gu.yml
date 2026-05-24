@@ -800,4 +800,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: સફળતાપૂર્વક OpenAI સુસંગત ટૉગ કર્યું.
   wwcConfigGUIToggleGuidelinesAIChecksButton: માર્ગદર્શિકા AI તપાસને ટૉગલ કરો
   wwctTranslationErrorActionBar: ભૂલ
+  wwcConfigConversationObjectTranslationConcurrencyInput: વર્તમાન ઑબ્જેક્ટ ટ્રાન્સલેશન
+    સહવર્તી મર્યાદા {0} છે. 1 થી 4 સુધીનો નંબર લખો.
+  wwcConfigGUIObjectTranslationConcurrencyButton: ઑબ્જેક્ટ અનુવાદ સમન્વય બદલો
+  wwcConfigObjectTranslationConcurrencyInvalid: અમાન્ય ઑબ્જેક્ટ ટ્રાન્સલેશન સમવર્તી
+    મર્યાદા config.yml માં સેટ કરેલ છે. 4 પર ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ઑબ્જેક્ટ અનુવાદ સમવર્તી
+    મર્યાદા સફળતાપૂર્વક સેટ કરવામાં આવી
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: ઑબ્જેક્ટ ટ્રાન્સલેશન સહવર્તી
+    મર્યાદા 1 થી 4 સુધીની હોવી આવશ્યક છે.
 

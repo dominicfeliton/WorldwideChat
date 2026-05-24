@@ -691,4 +691,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI ተኳሃኝ በተሳካ ሁኔታ መቀየር።
   wwcConfigGUIToggleGuidelinesAIChecksButton: የ AI ቼኮችን መመሪያዎችን ይቀይሩ
   wwctTranslationErrorActionBar: ስህተት
+  wwcConfigConversationObjectTranslationConcurrencyInput: የአሁኑ የእቃው ትርጉም ተመሳሳይ ገደብ
+    {0} ነው። ከ 1 እስከ 4 ቁጥር ይተይቡ።
+  wwcConfigGUIObjectTranslationConcurrencyButton: የእቃዎች ትርጉም ተመሳሳይ
+  wwcConfigObjectTranslationConcurrencyInvalid: በconfig.yml ውስጥ የተቀናጀ ያልሆነ የእቃ ትርጉም
+    ተመሳሳይ ገደብ። ወደ 4 ነባሪ መሆን...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: የእቃ ትርጉም ተዛማጅ ገደብ በተሳካ
+    ሁኔታ
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: የእቃ ትርጉም ተመሳሳይ ገደብ ከ 1
+    እስከ 4 መሆን አለበት።
 

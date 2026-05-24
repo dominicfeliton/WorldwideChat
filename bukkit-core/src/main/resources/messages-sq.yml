@@ -840,4 +840,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Ndërroi me sukses OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Zëvendësoni Udhëzimet Kontrollet e AI
   wwctTranslationErrorActionBar: Gabim
+  wwcConfigConversationObjectTranslationConcurrencyInput: Kufiri aktual i njëkohshëm
+    i përkthimit të objektit është {0}. Shkruani një numër nga 1 në 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Ndryshoni njëkohësinë e përkthimit
+    të
+  wwcConfigObjectTranslationConcurrencyInvalid: Kufiri i njëkohshëm i përkthimit të
+    objektit i pavlefshëm i vendosur në config.yml. Parazgjedhja në 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Kufiri i njëkohshmërisë
+    së përkthimit të objektit vendoset
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Kufiri i njëkohshëm i
+    përkthimit të objektit duhet të jetë nga 1 në 4.
 

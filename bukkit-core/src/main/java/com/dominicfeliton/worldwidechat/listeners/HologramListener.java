@@ -49,7 +49,7 @@ public class HologramListener implements Listener {
             for (HologramLine eaLine : hologramPage.getLines()) {
                 currentPage.add(eaLine.getContent());
             }
-            List<String> translatedPage = refs.translateText(currentPage, p, true);
+            List<String> translatedPage = refs.translateObjectText(currentPage, p);
 
             Component out = Component.empty();
             for (int i = 0; i < translatedPage.size(); i++) {

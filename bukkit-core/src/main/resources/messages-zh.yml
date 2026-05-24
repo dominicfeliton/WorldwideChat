@@ -603,4 +603,10 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: 成功切换 OpenAI 兼容。
   wwcConfigGUIToggleGuidelinesAIChecksButton: 切换指南 AI 检查
   wwctTranslationErrorActionBar: 错误
+  wwcConfigConversationObjectTranslationConcurrencyInput: 当前的对象转换并发限制为 {0}。键入 1 到
+    4 之间的数字。
+  wwcConfigGUIObjectTranslationConcurrencyButton: 更改对象翻译并发性
+  wwcConfigObjectTranslationConcurrencyInvalid: 在 config.yml 中设置的对象转换并发限制无效。默认为 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: 已成功设置对象转换并发限制。
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: 对象转换并发限制必须介于 1 到 4 之间。
 

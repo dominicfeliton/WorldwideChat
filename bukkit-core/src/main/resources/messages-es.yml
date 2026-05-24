@@ -869,4 +869,15 @@ Messages:
     con OpenAI.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Toggle Guidelines AI Checks
   wwctTranslationErrorActionBar: Error
+  wwcConfigConversationObjectTranslationConcurrencyInput: El límite actual de simultaneidad
+    de traducción de objetos es {0}. Escriba un número del 1 al 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Cambiar la concurrencia de la traducción
+    de objetos
+  wwcConfigObjectTranslationConcurrencyInvalid: El límite de simultaneidad de traducción
+    de objetos establecido en config.yml no es válido. Con un valor predeterminado
+    de 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: El límite de simultaneidad
+    de la traducción de objetos se estableció correctamente.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: El límite de simultaneidad
+    de la traducción de objetos debe estar comprendido entre 1 y 4.
 

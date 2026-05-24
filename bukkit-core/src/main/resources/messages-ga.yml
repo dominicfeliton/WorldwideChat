@@ -837,4 +837,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Comhoiriúnach OpenAI a aistriú go rathúil.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Athraigh Treoirlínte Seiceálacha
   wwctTranslationErrorActionBar: Earráid
+  wwcConfigConversationObjectTranslationConcurrencyInput: Is é {0} an teorainn chomhréireachta
+    aistriúcháin réada reatha. Clóscríobh uimhir ó 1 go 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Athraigh Comhaonraíocht Aistriúchán
+  wwcConfigObjectTranslationConcurrencyInvalid: Teorainn chomhréireachta aistriúcháin
+    réada neamhbhailí atá leagtha amach i config.yml. Ag réamhshocrú go 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Socraítear teorainn chomhchomhthaíochta
+    aistriúcháin réada
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Caithfidh teorainn chomhréireachta
+    aistriúcháin réada a bheith ó 1 go 4.
 

@@ -15,6 +15,7 @@ General:
   updateCheckerDelay: 86400
   syncUserDataDelay: 7200
   fatalAsyncTaskTimeout: 10
+  objectTranslationConcurrencyLimit: 4
   enableDebugMode: false
   syncUserLocalization: true
   enableSounds: true

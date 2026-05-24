@@ -39,6 +39,21 @@ class PlayerRecordTest {
     }
 
     @Test
+    void atomicIncrementMethodsMarkRecordUnsaved() {
+        PlayerRecord record = new PlayerRecord("None", "player-uuid", 0, 0);
+
+        record.setHasBeenSaved(true);
+        assertEquals(1, record.incrementAttemptedTranslations());
+        assertFalse(record.getHasBeenSaved());
+        assertEquals(1, record.getAttemptedTranslations());
+
+        record.setHasBeenSaved(true);
+        assertEquals(1, record.incrementSuccessfulTranslations());
+        assertFalse(record.getHasBeenSaved());
+        assertEquals(1, record.getSuccessfulTranslations());
+    }
+
+    @Test
     void settingLastTranslationTimeReplacesPlaceholder() {
         PlayerRecord record = new PlayerRecord("None", "player-uuid", 0, 0);
 

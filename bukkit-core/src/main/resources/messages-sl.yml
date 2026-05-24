@@ -802,4 +802,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Uspešno preklopljen OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Preklop smernic Preverjanje AI
   wwctTranslationErrorActionBar: Napaka
+  wwcConfigConversationObjectTranslationConcurrencyInput: Trenutna omejitev sočasnosti
+    prevajanja predmetov je {0}. Vnesite številko od 1 do 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Spremeni sočasnost prevajanja predmetov
+  wwcConfigObjectTranslationConcurrencyInvalid: V config.yml je nastavljena neveljavna
+    omejitev sočasnosti prevajanja predmetov. Privzeta vrednost 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Uspešno nastavljena omejitev
+    sočasnosti prevajanja predmetov.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Omejitev sočasnosti prevajanja
+    predmetov mora biti od 1 do 4.
 

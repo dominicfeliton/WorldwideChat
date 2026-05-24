@@ -616,4 +616,12 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI 互換が正常に切り替えられました。
   wwcConfigGUIToggleGuidelinesAIChecksButton: ガイドライン AI チェックの切り替え
   wwctTranslationErrorActionBar: '[エラー]'
+  wwcConfigConversationObjectTranslationConcurrencyInput: 現在のオブジェクト翻訳の同時実行数の制限は {0}
+    です。1 ～ 4 の数値を入力します。
+  wwcConfigGUIObjectTranslationConcurrencyButton: オブジェクト翻訳の同時実行性を変更
+  wwcConfigObjectTranslationConcurrencyInvalid: config.yml に設定されているオブジェクト翻訳の同時実行制限が無効です。デフォルトは
+    4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: オブジェクト翻訳の同時実行制限が正常に設定されました。
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: オブジェクト変換の同時実行数の制限は 1 ～
+    4 でなければなりません。
 

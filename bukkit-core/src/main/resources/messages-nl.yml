@@ -820,4 +820,15 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI-compatibel met succes omgeschakeld.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Toggle Guidelines AI Checks
   wwctTranslationErrorActionBar: Fout
+  wwcConfigConversationObjectTranslationConcurrencyInput: De huidige limiet voor de
+    gelijktijdige omrekening van objecten is {0}. Typ een getal tussen 1 en 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Concurrentie van de vertaling van
+    objecten wijzigen
+  wwcConfigObjectTranslationConcurrencyInvalid: Ongeldige limiet voor de gelijktijdige
+    vertaling van objecten die is ingesteld in config.yml. Standaard ingesteld op
+    4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: De limiet voor de gelijktijdige
+    vertaling van objecten is succesvol ingesteld.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: De limiet voor de gelijktijdige
+    omrekening van objecten moet tussen 1 en 4 liggen.
 

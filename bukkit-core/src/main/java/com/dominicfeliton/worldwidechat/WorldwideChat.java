@@ -42,7 +42,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "04272028-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "05242026-1"; // MMDDYYYY-revisionNumber
     private static final String SLF4J_INTERNAL_VERBOSITY_PROPERTY = "slf4j.internal.verbosity";
     private static final String SLF4J_INTERNAL_VERBOSITY_ERROR = "ERROR";
 
@@ -116,6 +116,8 @@ public class WorldwideChat extends JavaPlugin {
     private int globalRateLimit = 0;
 
     private int messageCharLimit = 255;
+
+    private int objectTranslationConcurrencyLimit = 4;
 
     private boolean persistentCache = false;
 
@@ -959,6 +961,10 @@ public class WorldwideChat extends JavaPlugin {
         messageCharLimit = i;
     }
 
+    public void setObjectTranslationConcurrencyLimit(int i) {
+        objectTranslationConcurrencyLimit = i;
+    }
+
     public void setPersistentCache(boolean i) {
         persistentCache = i;
     }
@@ -1182,6 +1188,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public int getMessageCharLimit() {
         return messageCharLimit;
+    }
+
+    public int getObjectTranslationConcurrencyLimit() {
+        return objectTranslationConcurrencyLimit;
     }
 
     public boolean isPersistentCache() {

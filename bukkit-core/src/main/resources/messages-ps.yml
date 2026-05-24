@@ -784,4 +784,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: په بریالیتوب سره د OpenAI مطابقت لري.
   wwcConfigGUIToggleGuidelinesAIChecksButton: د AI چیک لارښوونې ټول کړئ
   wwctTranslationErrorActionBar: تېروتنه
+  wwcConfigConversationObjectTranslationConcurrencyInput: د اوسنۍ شی ژباړې همغږۍ حد
+    {0} دی. د 1 څخه څخه 4 پورې شمیره وټاکئ.
+  wwcConfigGUIObjectTranslationConcurrencyButton: د شی ژباړې همغږۍ بدل کړئ
+  wwcConfigObjectTranslationConcurrencyInvalid: د اعتبار توضیحات ژباړې همغږۍ حد په
+    config.yml کې ټاکل شوی. 4 ته ډیفالټ کول...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: د موضوع ژباړې همغږۍ حد
+    په بریالیتوب سره تنظیم
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: د مقصد ژباړې د همغږۍ حد
+    باید د 1 څخه 4 پورې وي.
 

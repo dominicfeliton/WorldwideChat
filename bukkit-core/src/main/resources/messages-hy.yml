@@ -835,4 +835,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: 'Հաջողությամբ միացված OpenAI- ի համատեղելիությունը:'
   wwcConfigGUIToggleGuidelinesAIChecksButton: Միացնել AI ստուգումների ուղեցույցները
   wwctTranslationErrorActionBar: Սխալ
+  wwcConfigConversationObjectTranslationConcurrencyInput: 'Ներկայիս օբյեկտի թարգմանության
+    համաժամանակության սահմանը {0} է: Մուտքագրեք թիվ 1-ից 4-ը:'
+  wwcConfigGUIObjectTranslationConcurrencyButton: Փոխել օբյեկտի թարգմանության համաժամանակությունը
+  wwcConfigObjectTranslationConcurrencyInvalid: 'Անվավեր օբյեկտի թարգմանության համաժամանակության
+    սահմանը, որը սահմանվել է config.yml- ում: Նախանցված է 4...'
+  wwcConfigConversationObjectTranslationConcurrencySuccess: 'Օբյեկտի թարգմանության
+    համաժամանակության սահմանը հաջողությամբ սահմանվել է:'
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: 'Օբյեկտի թարգմանության
+    համաժամանակության սահմանը պետք է լինի 1-ից 4-ը:'
 

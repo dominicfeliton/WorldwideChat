@@ -873,3 +873,13 @@ Messages:
     avec succès.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Toggle Guidelines AI Checks
   wwctTranslationErrorActionBar: Erreur
+  wwcConfigConversationObjectTranslationConcurrencyInput: La limite actuelle de simultanéité
+    des traductions d'objets est {0}. Tapez un nombre compris entre 1 et 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Modifier la simultanéité de traduction
+    d'objets
+  wwcConfigObjectTranslationConcurrencyInvalid: Limite de simultanéité de traduction
+    d'objets non valide définie dans config.yml. Par défaut, la valeur est 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Limite de simultanéité
+    de traduction d'objets définie avec succès.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: La limite de simultanéité
+    des traductions d'objets doit être comprise entre 1 et 4.

@@ -3,12 +3,22 @@ package com.dominicfeliton.worldwidechat;
 import com.dominicfeliton.worldwidechat.listeners.SpigotChatListener;
 import com.dominicfeliton.worldwidechat.listeners.SpigotPlayerLocaleListener;
 import com.dominicfeliton.worldwidechat.listeners.SpigotSignListener;
+import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
+import org.bukkit.Material;
+import org.bukkit.block.BlockFace;
 import org.bukkit.block.sign.Side;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerSignOpenEvent;
+import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.inventory.EquipmentSlot;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.BookMeta;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.junit.jupiter.api.Test;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
@@ -314,6 +324,80 @@ class ListenerTest extends WWCIntegrationTest {
     }
 
     @Test
+    void bookObjectTranslationBatchesTitleAndPagesThroughOneRateLimitWindow() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("BookBatch");
+        player.performCommand("wwct en es");
+        player.performCommand("wwctb");
+        player.performCommand("wwctrl 5");
+        drainPlayerMessages(player);
+
+        ItemStack book = new ItemStack(Material.WRITTEN_BOOK);
+        BookMeta meta = (BookMeta) book.getItemMeta();
+        meta.setAuthor("JUnit");
+        meta.setTitle("batch-book-title");
+        meta.setPages(List.of("batch-book-page-0", "batch-book-page-1"));
+        book.setItemMeta(meta);
+
+        new TranslateInGameListener().onInGameObjTranslateRequest(interactWith(player, book));
+        WWCTestSupport.drainScheduler();
+
+        assertEquals("translated-batch-book-title", plugin().getCacheTerm(new CachedTranslation("en", "es", "batch-book-title")));
+        assertEquals("translated-batch-book-page-0", plugin().getCacheTerm(new CachedTranslation("en", "es", "batch-book-page-0")));
+        assertEquals("translated-batch-book-page-1", plugin().getCacheTerm(new CachedTranslation("en", "es", "batch-book-page-1")));
+    }
+
+    @Test
+    void itemObjectTranslationHandlesTitleOnly() {
+        PlayerMock player = itemTranslator("ItemTitleOnly");
+        ItemStack item = namedItem("batch-item-title");
+
+        fireItemTranslation(player, item);
+
+        ItemMeta translatedMeta = translatedTempItem(player).getItemMeta();
+        assertTrue(translatedMeta.hasDisplayName());
+        assertEquals("translated-batch-item-title", translatedMeta.getDisplayName());
+        assertFalse(translatedMeta.hasLore());
+    }
+
+    @Test
+    void itemObjectTranslationHandlesLoreOnly() {
+        PlayerMock player = itemTranslator("ItemLoreOnly");
+        ItemStack item = loreItem(List.of("batch-lore-only-0", "batch-lore-only-1"));
+
+        fireItemTranslation(player, item);
+
+        ItemMeta translatedMeta = translatedTempItem(player).getItemMeta();
+        assertFalse(translatedMeta.hasDisplayName());
+        assertEquals(List.of("translated-batch-lore-only-0", "translated-batch-lore-only-1"), translatedMeta.getLore());
+    }
+
+    @Test
+    void itemObjectTranslationHandlesTitleAndLoreThroughOneRateLimitWindow() {
+        PlayerMock player = itemTranslator("ItemTitleLore");
+        ItemStack item = namedItem("batch-item-title");
+        ItemMeta meta = item.getItemMeta();
+        meta.setLore(List.of("batch-item-lore-0", "batch-item-lore-1"));
+        item.setItemMeta(meta);
+
+        fireItemTranslation(player, item);
+
+        ItemMeta translatedMeta = translatedTempItem(player).getItemMeta();
+        assertEquals("translated-batch-item-title", translatedMeta.getDisplayName());
+        assertEquals(List.of("translated-batch-item-lore-0", "translated-batch-item-lore-1"), translatedMeta.getLore());
+    }
+
+    @Test
+    void itemObjectTranslationRejectsStockItemWithNoLore() {
+        PlayerMock player = itemTranslator("ItemStock");
+
+        fireItemTranslation(player, new ItemStack(Material.DIAMOND));
+
+        assertEquals(InventoryType.CRAFTING, player.getOpenInventory().getType());
+        assertTrue(drainPlayerMessages(player).stream()
+                .anyMatch(message -> message.contains("Unable to translate default item names")));
+    }
+
+    @Test
     void localeListenerStoresSupportedLocaleCode() {
         PlayerMock player = WWCTestSupport.addOpPlayer("LocaleUser");
 
@@ -353,5 +437,46 @@ class ListenerTest extends WWCIntegrationTest {
         }
         fail("Player still had queued messages after draining 50 entries.");
         return messages;
+    }
+
+    private PlayerMock itemTranslator(String name) {
+        PlayerMock player = WWCTestSupport.addOpPlayer(name);
+        player.performCommand("wwct en es");
+        player.performCommand("wwcti");
+        player.performCommand("wwctrl 5");
+        drainPlayerMessages(player);
+        return player;
+    }
+
+    private void fireItemTranslation(PlayerMock player, ItemStack item) {
+        player.getInventory().setItemInMainHand(item);
+        new TranslateInGameListener().onInGameObjTranslateRequest(interactWith(player, item));
+        WWCTestSupport.drainScheduler();
+    }
+
+    private PlayerInteractEvent interactWith(PlayerMock player, ItemStack item) {
+        return new PlayerInteractEvent(player, Action.RIGHT_CLICK_AIR, item, null, BlockFace.SELF, EquipmentSlot.HAND);
+    }
+
+    private ItemStack namedItem(String displayName) {
+        ItemStack item = new ItemStack(Material.DIAMOND);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(displayName);
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    private ItemStack loreItem(List<String> lore) {
+        ItemStack item = new ItemStack(Material.DIAMOND);
+        ItemMeta meta = item.getItemMeta();
+        meta.setLore(lore);
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    private ItemStack translatedTempItem(PlayerMock player) {
+        ItemStack displayedItem = player.getOpenInventory().getTopInventory().getItem(22);
+        assertNotNull(displayedItem);
+        return displayedItem;
     }
 }

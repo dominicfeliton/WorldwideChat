@@ -752,4 +752,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: تم التبديل بنجاح إلى OpenAI المتوافق.
   wwcConfigGUIToggleGuidelinesAIChecksButton: تبديل الإرشادات وفحوصات الذكاء الاصطناعي
   wwctTranslationErrorActionBar: خطأ
+  wwcConfigConversationObjectTranslationConcurrencyInput: حد التزامن الحالي لترجمة
+    الكائن هو {0}. اكتب رقمًا من 1 إلى 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: تغيير تزامن ترجمة الكائن
+  wwcConfigObjectTranslationConcurrencyInvalid: تم تعيين حد التزامن غير صالح لترجمة
+    الكائنات في config.yml. الإعداد الافتراضي إلى 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: تم تعيين حد التزامن لترجمة
+    الكائنات بنجاح.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: يجب أن يكون حد التزامن
+    لترجمة الكائنات من 1 إلى 4.
 

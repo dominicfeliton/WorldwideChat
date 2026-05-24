@@ -809,4 +809,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Cyd-fynd â OpenAI yn llwyddiannus.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Toglo Canllawiau Gwiriadau AI
   wwctTranslationErrorActionBar: Gwall
+  wwcConfigConversationObjectTranslationConcurrencyInput: Y terfyn cydamserol cyfieithu
+    gwrthrych cyfredol yw {0}. Teipiwch rif o 1 i 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Newid Cyfnewidiad Cyfieithu Gwrthrych
+  wwcConfigObjectTranslationConcurrencyInvalid: Terfyn cydymffurfiaeth cyfieithu gwrthrych
+    annilys wedi'i osod yn config.yml. Rhagosodiad i 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Terfyn cydymffurfiaeth
+    cyfieithu gwrthrych wedi'i osod yn llwyddiannus.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Rhaid i derfyn cydymffurfiaeth
+    cyfieithu gwrthrych fod o 1 i 4.
 

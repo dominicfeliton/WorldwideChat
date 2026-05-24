@@ -802,4 +802,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Veiksmīgi pārslēgts ar OpenAI saderību.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Pārslēgt vadlīnijas AI pārbaudes
   wwctTranslationErrorActionBar: Kļūda
+  wwcConfigConversationObjectTranslationConcurrencyInput: Pašreizējais objektu tulkošanas
+    vienlaicības ierobežojums ir {0}. Ierakstiet skaitli no 1 līdz 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Mainīt objektu tulkošanas vienlaicīgumu
+  wwcConfigObjectTranslationConcurrencyInvalid: Nederīgs objektu tulkošanas vienlaicības
+    ierobežojums iestatīts programmā config.yml. Noklusējuma iestatījums uz 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Objekta tulkošanas vienlaicības
+    ierobežojums ir veiksmīgi iestatīts.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Objekta tulkošanas vienlaicīguma
+    ierobežojumam jābūt no 1 līdz 4.
 

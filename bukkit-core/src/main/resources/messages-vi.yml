@@ -817,4 +817,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Bật thành công OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Chuyển đổi nguyên tắc Kiểm tra AI
   wwctTranslationErrorActionBar: Lỗi
+  wwcConfigConversationObjectTranslationConcurrencyInput: Giới hạn đồng thời dịch
+    đối tượng hiện tại là {0}. Nhập một số từ 1 đến 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Thay đổi đồng thời dịch đối tượng
+  wwcConfigObjectTranslationConcurrencyInvalid: Giới hạn đồng thời dịch đối tượng
+    không hợp lệ được đặt trong config.yml. Mặc định là 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Giới hạn đồng thời dịch
+    thuật đối tượng được thiết lập thành công.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Giới hạn đồng thời dịch
+    thuật đối tượng phải từ 1 đến 4.
 

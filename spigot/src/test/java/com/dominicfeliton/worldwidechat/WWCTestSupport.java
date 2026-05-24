@@ -152,6 +152,7 @@ final class WWCTestSupport {
         config.set("General.enableDebugMode", false);
         config.set("General.enablebStats", false);
         config.set("General.syncUserLocalization", true);
+        config.set("General.objectTranslationConcurrencyLimit", 4);
         config.set("Chat.sendActionBar", true);
         config.set("Chat.separateChatChannel.force", false);
         plugin.getConfigManager().saveMainConfig(false);

@@ -31,7 +31,6 @@ import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalTime;
 import org.threeten.bp.ZoneId;
 import org.threeten.bp.format.DateTimeFormatter;
-import org.threeten.bp.temporal.ChronoUnit;
 import org.threeten.bp.zone.ZoneRulesException;
 
 import java.io.File;
@@ -732,6 +731,134 @@ public class CommonRefs {
         }
     }
 
+    public String[] translateObjectText(String[] arrayOfMsgs, Player currPlayer) {
+        List<String> out = translateObjectText(Arrays.asList(arrayOfMsgs), currPlayer);
+        return out.toArray(new String[0]);
+    }
+
+    public List<String> translateObjectText(List<String> listOfMsgs, Player currPlayer) {
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            return translateObjectTextInBatch(listOfMsgs, currPlayer);
+        } finally {
+            progress.close();
+        }
+    }
+
+    private List<String> translateObjectTextInBatch(List<String> listOfMsgs, Player currPlayer) {
+        List<String> original = new ArrayList<>(listOfMsgs);
+        if (original.isEmpty() || areAllObjectMessagesCached(original, currPlayer)) {
+            return translateObjectTextAfterRateLimit(original, currPlayer);
+        }
+
+        if (shouldRateLimit(false, currPlayer)) {
+            return original;
+        }
+
+        return translateObjectTextAfterRateLimit(original, currPlayer);
+    }
+
+    private List<String> translateObjectTextAfterRateLimit(List<String> original, Player currPlayer) {
+        List<String> out = new ArrayList<>(original);
+        List<Integer> workIndexes = getObjectTranslationWorkIndexes(original);
+        if (workIndexes.isEmpty()) {
+            return out;
+        }
+
+        int concurrencyLimit = Math.max(1, Math.min(main.getObjectTranslationConcurrencyLimit(), workIndexes.size()));
+        if (concurrencyLimit == 1) {
+            for (int index : workIndexes) {
+                out.set(index, translateText(original.get(index), currPlayer, true));
+            }
+            return out;
+        }
+
+        CompletionService<IndexedTranslation> completionService = new ExecutorCompletionService<>(main.getCallbackExecutor());
+        List<Future<IndexedTranslation>> futures = new ArrayList<>();
+        int nextIndexToSubmit = 0;
+        int completed = 0;
+
+        try {
+            while (nextIndexToSubmit < concurrencyLimit) {
+                futures.add(submitObjectTranslation(completionService, original, currPlayer, workIndexes.get(nextIndexToSubmit)));
+                nextIndexToSubmit++;
+            }
+
+            while (completed < workIndexes.size()) {
+                Future<IndexedTranslation> completedFuture = completionService.take();
+                IndexedTranslation result = completedFuture.get();
+                out.set(result.index(), result.value());
+                completed++;
+
+                if (nextIndexToSubmit < workIndexes.size()) {
+                    futures.add(submitObjectTranslation(completionService, original, currPlayer, workIndexes.get(nextIndexToSubmit)));
+                    nextIndexToSubmit++;
+                }
+            }
+        } catch (InterruptedException e) {
+            cancelTranslations(futures);
+            Thread.currentThread().interrupt();
+            debugMsg("Interrupted bounded object translation batch.");
+            return original;
+        } catch (ExecutionException e) {
+            cancelTranslations(futures);
+            Throwable cause = e.getCause();
+            if (cause instanceof RuntimeException runtimeException) {
+                throw runtimeException;
+            }
+            if (cause instanceof LinkageError linkageError) {
+                throw linkageError;
+            }
+            throw new RuntimeException(cause);
+        }
+
+        return out;
+    }
+
+    private Future<IndexedTranslation> submitObjectTranslation(CompletionService<IndexedTranslation> completionService,
+                                                              List<String> original,
+                                                              Player currPlayer,
+                                                              int index) {
+        return completionService.submit(() -> new IndexedTranslation(index, translateText(original.get(index), currPlayer, true)));
+    }
+
+    private void cancelTranslations(List<Future<IndexedTranslation>> futures) {
+        for (Future<IndexedTranslation> future : futures) {
+            future.cancel(true);
+        }
+    }
+
+    private List<Integer> getObjectTranslationWorkIndexes(List<String> messages) {
+        List<Integer> indexes = new ArrayList<>();
+        for (int i = 0; i < messages.size(); i++) {
+            if (requiresTranslatorRequest(messages.get(i))) {
+                indexes.add(i);
+            }
+        }
+        return indexes;
+    }
+
+    private boolean areAllObjectMessagesCached(List<String> messages, Player currPlayer) {
+        ActiveTranslator trans = getActiveTranslatorFor(currPlayer);
+        for (String msg : messages) {
+            if (!requiresTranslatorRequest(msg)) {
+                continue;
+            }
+
+            if (!main.hasCacheTerm(new CachedTranslation(trans.getInLangCode(), trans.getOutLangCode(), msg))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean requiresTranslatorRequest(String message) {
+        return message != null && message.length() > 1;
+    }
+
+    private record IndexedTranslation(int index, String value) {
+    }
+
     public String translateText(String inMessage, Player currPlayer) {
         TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
         try {
@@ -786,7 +913,7 @@ public class CommonRefs {
             PlayerRecord currPlayerRecord = main
                     .getPlayerRecord(currPlayer, true);
             if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null)
-                currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
+                currPlayerRecord.incrementAttemptedTranslations();
 
             /* Initialize current vars + ActiveTranslator, sanity checks */
             ActiveTranslator currActiveTranslator = getActiveTranslatorFor(currPlayer);
@@ -828,7 +955,7 @@ public class CommonRefs {
             String testCache = main.getCacheTerm(testTranslation);
 
             if (testCache != null) {
-                currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+                currPlayerRecord.incrementSuccessfulTranslations();
                 currPlayerRecord.setLastTranslationTime();
                 return StringEscapeUtils.unescapeJava(
                         ChatColor.translateAlternateColorCodes('&', testCache));
@@ -851,7 +978,7 @@ public class CommonRefs {
             out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
 
             /* Update stats */
-            currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+            currPlayerRecord.incrementSuccessfulTranslations();
             currPlayerRecord.setLastTranslationTime();
 
             /* Add to cache */
@@ -1433,7 +1560,7 @@ public class CommonRefs {
         boolean exempt = false;
         int personalRateLimit = 0;
         String permissionCheck = "";
-        ActiveTranslator currActiveTranslator = main.getActiveTranslator(currPlayer);
+        ActiveTranslator currActiveTranslator = getActiveTranslatorFor(currPlayer);
 
 
         if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
@@ -1472,13 +1599,13 @@ public class CommonRefs {
 
         // Personal Limits (Override Global)
         if (!exempt && personalRateLimit > 0) {
-            if (!isRateLimited(personalRateLimit, currActiveTranslator, currPlayer)) {
+            if (!passesRateLimit(personalRateLimit, currActiveTranslator, currPlayer)) {
                 //return inMessage;
                 return true;
             }
             // Global Limits
         } else if (!exempt && main.getGlobalRateLimit() > 0) {
-            if (!isRateLimited(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
+            if (!passesRateLimit(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
                 //return inMessage;
                 return true;
             }
@@ -1496,23 +1623,12 @@ public class CommonRefs {
      * @param sender               - The sender of the original command
      * @return Boolean - Returns false if the user should currently be rate limited, and true otherwise.
      */
-    private boolean isRateLimited(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
-        if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
-            Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
-            Instant currTime = Instant.now();
-            if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
-                sendMsg("wwcRateLimit", "" + ChronoUnit.SECONDS.between(currTime,
-                                previous.plus(delay, ChronoUnit.SECONDS)),
-                        "&e",
-                        sender);
-                return false;
-            } else {
-                currActiveTranslator.setRateLimitPreviousTime(Instant.now());
-            }
-        } else {
-            currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+    private boolean passesRateLimit(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
+        ActiveTranslator.RateLimitDecision decision = currActiveTranslator.tryAcquireRateLimitSlot(delay, Instant.now());
+        if (!decision.allowed()) {
+            sendMsg("wwcRateLimit", "" + decision.secondsRemaining(), "&e", sender);
         }
-        return true;
+        return decision.allowed();
     }
 
     /**

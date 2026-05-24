@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.util;
 
 import org.threeten.bp.Instant;
+import org.threeten.bp.temporal.ChronoUnit;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -98,6 +99,35 @@ public class ActiveTranslator {
         rateLimitPreviousTime.set(i.toString());
     }
 
+    public RateLimitDecision tryAcquireRateLimitSlot(int delaySeconds, Instant now) {
+        if (delaySeconds <= 0) {
+            return new RateLimitDecision(true, 0);
+        }
+
+        String nowString = now.toString();
+        while (true) {
+            String previous = rateLimitPreviousTime.get();
+            if (previous.equals("None")) {
+                if (rateLimitPreviousTime.compareAndSet(previous, nowString)) {
+                    hasBeenSaved.set(false);
+                    return new RateLimitDecision(true, 0);
+                }
+                continue;
+            }
+
+            Instant previousTime = Instant.parse(previous);
+            Instant nextAllowedTime = previousTime.plus(delaySeconds, ChronoUnit.SECONDS);
+            if (now.compareTo(nextAllowedTime) < 0) {
+                return new RateLimitDecision(false, ChronoUnit.SECONDS.between(now, nextAllowedTime));
+            }
+
+            if (rateLimitPreviousTime.compareAndSet(previous, nowString)) {
+                hasBeenSaved.set(false);
+                return new RateLimitDecision(true, 0);
+            }
+        }
+    }
+
     public int getRateLimit() {
         return rateLimit.get();
     }
@@ -152,5 +182,8 @@ public class ActiveTranslator {
 
     public String getRateLimitPreviousTime() {
         return rateLimitPreviousTime.get();
+    }
+
+    public record RateLimitDecision(boolean allowed, long secondsRemaining) {
     }
 }

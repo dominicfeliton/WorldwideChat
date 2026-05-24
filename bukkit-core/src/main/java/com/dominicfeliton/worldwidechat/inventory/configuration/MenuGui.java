@@ -235,19 +235,21 @@ public class MenuGui implements InventoryProvider {
                 new GeneralSettingsConvos.Prefix()));
         add(new ConvoElement(1, 2, "wwcConfigGUIFatalAsyncAbortButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.FatalAsyncAbort()));
-        add(new ConvoElement(1, 3, "wwcConfigGUILangButton", Material.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIObjectTranslationConcurrencyButton", Material.NAME_TAG,
+                new GeneralSettingsConvos.ObjectTranslationConcurrency()));
+        add(new ConvoElement(1, 4, "wwcConfigGUILangButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.Lang()));
-        add(new ConvoElement(1, 4, "wwcConfigGUIUpdateCheckerButton", Material.NAME_TAG,
+        add(new ConvoElement(1, 5, "wwcConfigGUIUpdateCheckerButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.UpdateChecker()));
-        add(new ConvoElement(1, 5, "wwcConfigGUISyncUserDataButton", Material.NAME_TAG,
+        add(new ConvoElement(1, 6, "wwcConfigGUISyncUserDataButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.SyncUserData()));
-        add(new ToggleElement(1, 6, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess",
+        add(new ToggleElement(1, 7, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess",
                 "General.enablebStats"));
-        add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess",
+        add(new ToggleElement(2, 1, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess",
                 "General.enableDebugMode"));
-        add(new ToggleElement(2, 1, "wwcConfigGUILocalizeSyncButton", "wwcConfigConversationLocalizeSyncSuccess",
+        add(new ToggleElement(2, 2, "wwcConfigGUILocalizeSyncButton", "wwcConfigConversationLocalizeSyncSuccess",
                 "General.syncUserLocalization"));
-        add(new ToggleElement(2, 2, "wwcConfigGUIEnableSoundsButton", "wwcConfigConversationEnableSoundsSuccess",
+        add(new ToggleElement(2, 3, "wwcConfigGUIEnableSoundsButton", "wwcConfigConversationEnableSoundsSuccess",
                 "General.enableSounds"));
         add(new CommonElement(3, 4, "Quit"));
         add(new CommonElement(3, 8, "Page Number", new String[]{"1"}));

@@ -276,6 +276,19 @@ public class ConfigurationHandler {
         } catch (Exception e) {
             main.getLogger().warning(refs.getPlainMsg("wwcConfigInvalidFatalAsyncTimeout"));
         }
+        // Object Translation Concurrency Limit
+        try {
+            int objectTranslationConcurrencyLimit = mainConfig.getInt("General.objectTranslationConcurrencyLimit");
+            if (objectTranslationConcurrencyLimit >= 1 && objectTranslationConcurrencyLimit <= 4) {
+                main.setObjectTranslationConcurrencyLimit(objectTranslationConcurrencyLimit);
+            } else {
+                main.setObjectTranslationConcurrencyLimit(4);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyInvalid"));
+            }
+        } catch (Exception e) {
+            main.setObjectTranslationConcurrencyLimit(4);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyInvalid"));
+        }
         // bStats
         if (mainConfig.getBoolean("General.enablebStats")) {
             Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);

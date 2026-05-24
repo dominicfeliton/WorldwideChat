@@ -838,4 +838,14 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: AI tekshiruvlarini almashtirish bo'yicha
     ko'rsatmalar
   wwctTranslationErrorActionBar: Xato
+  wwcConfigConversationObjectTranslationConcurrencyInput: Joriy ob'ektni tarjima qilish
+    bilan bir vaqtning o'zida chegarasi {0} hisoblanadi. 1 dan 4 gacha raqamni yozing.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Ob'ekt tarjimasining birgalikligini
+    o'zgartirish
+  wwcConfigObjectTranslationConcurrencyInvalid: Config.yml da o'rnatilgan yaroqsiz
+    ob'ekt tarjimasi concurrency chegarasi. Standart 4 ga sozlash...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Ob'ektni tarjima qilish
+    bilan bir qatorda chegarasi muvaffaqiyatli o'rnatildi
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Ob'ektni tarjima qilish
+    bilan bir qatorda chegarasi 1 dan 4 gacha bo'lishi kerak.
 

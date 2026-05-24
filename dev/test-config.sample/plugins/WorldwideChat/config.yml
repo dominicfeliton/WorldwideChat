@@ -35,6 +35,7 @@ General:
   syncUserLocalization: true
   setUserLocalizationOnFirstJoin: true
   fatalAsyncTaskTimeout: 30
+  objectTranslationConcurrencyLimit: 4
   prefixName: WWC
   enablebStats: true
   pluginLang: en

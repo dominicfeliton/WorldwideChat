@@ -792,4 +792,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Berhasil mengaktifkan OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Alihkan Pedoman Pemeriksaan AI
   wwctTranslationErrorActionBar: Kesalahan
+  wwcConfigConversationObjectTranslationConcurrencyInput: Batas konkurensi terjemahan
+    objek saat ini adalah {0}. Ketik angka dari 1 hingga 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Ubah Konkurensi Terjemahan Objek
+  wwcConfigObjectTranslationConcurrencyInvalid: Batas konkurensi terjemahan objek
+    tidak valid yang ditetapkan di config.yml. Default ke 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Batas konkurensi terjemahan
+    objek berhasil ditetapkan.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Batas konkurensi terjemahan
+    objek harus dari 1 hingga 4.
 

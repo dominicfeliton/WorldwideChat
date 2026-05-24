@@ -799,4 +799,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Uspješno je prebacio OpenAI kompatibilan.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Prebacite smjernice AI provjere
   wwctTranslationErrorActionBar: Pogreška
+  wwcConfigConversationObjectTranslationConcurrencyInput: Trenutna granica istovremenosti
+    prijevoda objekata je {0}. Upišite broj od 1 do 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Promjena istovremenosti prijevoda
+    objekata
+  wwcConfigObjectTranslationConcurrencyInvalid: Neispravno ograničenje istovremenosti
+    prijevoda objekata postavljeno u config.yml. Zadana vrijednost na 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Uspješno postavljeno ograničenje
+    istovremenosti prijevoda objekata.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Ograničenje istovremenosti
+    prijevoda predmeta mora biti od 1 do 4.
 

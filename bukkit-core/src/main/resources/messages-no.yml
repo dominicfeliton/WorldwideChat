@@ -775,4 +775,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Vellykket OpenAI-kompatibel.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Bytt retningslinjer for AI-kontroller
   wwctTranslationErrorActionBar: Feil
+  wwcConfigConversationObjectTranslationConcurrencyInput: Gjeldende samtidsgrense
+    for objektoversettelse er {0}. Skriv inn et tall fra 1 til 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Endre samtidig objektoversettelse
+  wwcConfigObjectTranslationConcurrencyInvalid: Ugyldig samtidsgrense for objektoversettelse
+    angitt i config.yml. Standard til 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Grensen for samtidighet
+    for objektoversettelse satt med hell.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Samtidsgrensen for objektoversettelse
+    må være fra 1 til 4.
 

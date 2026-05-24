@@ -819,4 +819,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Sikeresen kapcsolta be az OpenAI kompatibilitást.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Útmutató átkapcsolása AI-ellenőrzések
   wwctTranslationErrorActionBar: Hiba
+  wwcConfigConversationObjectTranslationConcurrencyInput: Az aktuális objektumfordítási
+    egyidejű korlát {0}. Írjon be egy 1-től 4-ig terjedő számot.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Objektumfordítás párhuzamosságának
+    módosítása
+  wwcConfigObjectTranslationConcurrencyInvalid: Érvénytelen objektumfordítási egyidejű
+    korlát beállítva a config.yml-ben. Alapértelmezés szerint 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Az objektumfordítás párhuzamos
+    korlátja sikeresen beállítva.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Az objektumfordítás párhuzamos
+    határának 1-től 4-ig kell lennie.
 

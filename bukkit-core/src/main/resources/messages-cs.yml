@@ -790,4 +790,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Úspěšně přepnul OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Přepnout pokyny Kontroly AI
   wwctTranslationErrorActionBar: Chyba
+  wwcConfigConversationObjectTranslationConcurrencyInput: Aktuální limit souběžnosti
+    překladu objektů je {0}. Zadejte číslo od 1 do 4.
+  wwcConfigGUIObjectTranslationConcurrencyButton: Změnit souběžnost překladu objektů
+  wwcConfigObjectTranslationConcurrencyInvalid: Neplatný limit souběžnosti překladu
+    objektů nastavený v config.yml. Výchozí hodnota 4...
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Úspěšně nastaven limit
+    souběžnosti překladu objektů.
+  wwcConfigConversationObjectTranslationConcurrencyInvalid: Limit souběžnosti překladu
+    objektů musí být od 1 do 4.
 
