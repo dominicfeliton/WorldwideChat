@@ -21,19 +21,19 @@
   </modules>
 
   <properties>
-    <adventure.version>5.1.1</adventure.version>
-    <flyway.version>12.6.1</flyway.version>
-    <folia.api.version>1.21.11-R0.1-SNAPSHOT</folia.api.version>
-    <jackson.annotations.version>2.21</jackson.annotations.version>
-    <junit.jupiter.version>6.0.3</junit.jupiter.version>
+    <adventure.version>5.1.2-SNAPSHOT</adventure.version>
+    <flyway.version>12.6.2</flyway.version>
+    <folia.api.version>26.1.2.build.8-stable</folia.api.version>
+    <jackson.annotations.version>3.0-rc5</jackson.annotations.version>
+    <junit.jupiter.version>6.2.0-SNAPSHOT</junit.jupiter.version>
     <maven.compiler.release>21</maven.compiler.release>
-    <mockbukkit.paper.api.version>26.1.2.build.57-stable</mockbukkit.paper.api.version>
+    <mockbukkit.paper.api.version>26.1.2.build.65-stable</mockbukkit.paper.api.version>
     <mockbukkit.version>4.113.1</mockbukkit.version>
     <mongock.version>5.5.1</mongock.version>
-    <paper.api.version>1.21.11-R0.1-SNAPSHOT</paper.api.version>
+    <paper.api.version>26.1.2.build.65-stable</paper.api.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <slf4j.version>2.0.18</slf4j.version>
-    <spigot.api.version>1.21.11-R0.2-SNAPSHOT</spigot.api.version>
+    <slf4j.version>2.1.0-alpha1</slf4j.version>
+    <spigot.api.version>26.1.2-R0.1-SNAPSHOT</spigot.api.version>
   </properties>
 
   <dependencyManagement>
@@ -116,17 +116,17 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>translate</artifactId>
-      <version>2.44.5</version>
+      <version>2.44.12</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.44.5</version>
+      <version>2.44.12</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>url-connection-client</artifactId>
-      <version>2.44.5</version>
+      <version>2.44.12</version>
     </dependency>
     <dependency>
       <groupId>org.jsoup</groupId>
@@ -136,7 +136,7 @@
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-artifact</artifactId>
-      <version>3.9.15</version>
+      <version>4.0.0-rc-5</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
     <dependency>
@@ -162,7 +162,7 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
-      <version>42.7.11</version>
+      <version>42.7.12-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -172,7 +172,7 @@
     <dependency>
       <groupId>com.github.ben-manes.caffeine</groupId>
       <artifactId>caffeine</artifactId>
-      <version>3.2.4</version>
+      <version>3.2.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -202,7 +202,7 @@
     <dependency>
       <groupId>org.mongodb</groupId>
       <artifactId>mongodb-driver-sync</artifactId>
-      <version>5.7.0</version>
+      <version>5.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.deepl.api</groupId>
