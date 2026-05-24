@@ -18,7 +18,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class WWCStatsGuiMainMenu implements InventoryProvider {
 
@@ -32,10 +31,9 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 
     private Player inPlayer;
 
-    public WWCStatsGuiMainMenu(String targetPlayerUUID, Player inPlayer) {
+    public WWCStatsGuiMainMenu(String targetPlayerUUID, String targetPlayerName, Player inPlayer) {
         this.targetPlayerUUID = targetPlayerUUID;
-        this.targetPlayerName = main.getServer()
-                .getOfflinePlayer(UUID.fromString(targetPlayerUUID)).getName();
+        this.targetPlayerName = targetPlayerName;
         this.inPlayer = inPlayer;
     }
 

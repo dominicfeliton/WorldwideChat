@@ -59,7 +59,7 @@ class GuiTest extends WWCIntegrationTest {
         PlayerMock player = WWCTestSupport.addOpPlayer("StatsGuiUser");
         plugin().addPlayerRecord(new PlayerRecord("None", player.getUniqueId().toString(), 7, 6));
 
-        new WWCStatsGuiMainMenu(player.getUniqueId().toString(), player)
+        new WWCStatsGuiMainMenu(player.getUniqueId().toString(), "PassedStatsName", player)
                 .getStatsMainMenu()
                 .open(player);
 
@@ -67,6 +67,7 @@ class GuiTest extends WWCIntegrationTest {
         assertEquals("statsMainMenu", inventory.getId());
         assertEquals(5, inventory.getRows());
         assertEquals(9, inventory.getColumns());
+        assertEquals("Record of PassedStatsName", ChatColor.stripColor(inventory.getTitle()));
         assertEquals(Material.WRITABLE_BOOK, player.getOpenInventory().getTopInventory().getItem(21).getType());
         assertEquals(Material.WRITTEN_BOOK, player.getOpenInventory().getTopInventory().getItem(23).getType());
     }

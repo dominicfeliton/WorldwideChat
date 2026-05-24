@@ -996,10 +996,12 @@ public class CommonRefs {
             finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
         } catch (TimeoutException | ExecutionException | InterruptedException e) {
             TranslationFailureException failure = findTranslationFailure(e);
+            TimeoutException timeout = findTimeout(e);
             /* Sanitize error before proceeding to write it to errorLog */
             if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
                 // If we are getting stopped by onDisable, end this immediately.
                 debugMsg("Interrupted translateText(), or server state is changing...");
+                process.cancel(true);
                 return inMessage;
             } else if (e instanceof ExecutionException && failure != null) {
                 if (guidelinesCheck != null && failure.isGuidelinesFailure()) {
@@ -1008,15 +1010,15 @@ public class CommonRefs {
                 markTranslationIndicatorError(currPlayer);
                 handleTranslationFailure(failure, guidelinesCheck == null ? currPlayer : guidelinesCheck.notifyPlayer());
                 return inMessage;
-            } else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
-                // If the translator has low confidence
-                debugMsg("Low confidence from current translator!");
-                return inMessage;
-            } else if (e instanceof TimeoutException) {
+            } else if (timeout != null) {
                 // If we get a timeoutexception
                 process.cancel(true);
                 markTranslationIndicatorError(currPlayer);
                 sendTimeoutExceptionMsg(currPlayer);
+                return inMessage;
+            } else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
+                // If the translator has low confidence
+                debugMsg("Low confidence from current translator!");
                 return inMessage;
             }
 
@@ -1140,6 +1142,17 @@ public class CommonRefs {
         while (current != null) {
             if (current instanceof TranslationFailureException failure) {
                 return failure;
+            }
+            current = current.getCause();
+        }
+        return null;
+    }
+
+    private TimeoutException findTimeout(Throwable throwable) {
+        Throwable current = throwable;
+        while (current != null) {
+            if (current instanceof TimeoutException timeout) {
+                return timeout;
             }
             current = current.getCause();
         }
@@ -1503,7 +1516,7 @@ public class CommonRefs {
         // TOOD: Make sure this works properly again
         String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
         if (exceptionMessage == null) {
-            // Usually just a timeout error. If a user gets this frequently they'll know something's wrong anyways
+            // Preserve legacy handling for message-less non-timeout translator exceptions.
             return true;
         }
 

@@ -1,10 +1,15 @@
 package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.PlayerRecord;
+import fr.minuskube.inv.SmartInventory;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.junit.jupiter.api.Test;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -154,5 +159,80 @@ class CommandTest extends WWCIntegrationTest {
         assertTrue(plugin().isActiveTranslator(target));
         assertEquals("en", translator.getInLangCode());
         assertEquals("es", translator.getOutLangCode());
+    }
+
+    @Test
+    void statsCommandOpensStatsGuiForOnlineSelfWithExistingRecord() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("StatsSelf");
+        plugin().addPlayerRecord(new PlayerRecord("None", player.getUniqueId().toString(), 7, 6));
+
+        player.performCommand("wwcs StatsSelf");
+        WWCTestSupport.drainScheduler();
+
+        assertEquals("statsMainMenu", openedSmartInventory(player).getId());
+        assertTrue(drainPlayerMessages(player).stream()
+                .noneMatch(message -> message.contains("not found")));
+    }
+
+    @Test
+    void statsCommandOpensStatsGuiForOnlineTargetWithExistingRecord() {
+        PlayerMock sender = WWCTestSupport.addOpPlayer("StatsSender");
+        PlayerMock target = WWCTestSupport.addOpPlayer("StatsTarget");
+        plugin().addPlayerRecord(new PlayerRecord("None", target.getUniqueId().toString(), 8, 5));
+
+        sender.performCommand("wwcs StatsTarget");
+        WWCTestSupport.drainScheduler();
+
+        assertEquals("statsMainMenu", openedSmartInventory(sender).getId());
+        assertTrue(drainPlayerMessages(sender).stream()
+                .noneMatch(message -> message.contains("not found")));
+    }
+
+    @Test
+    void statsCommandReportsRequestedUnknownPlayerName() {
+        PlayerMock sender = WWCTestSupport.addOpPlayer("StatsLookup");
+
+        sender.performCommand("wwcs MissingName");
+        WWCTestSupport.drainScheduler();
+
+        List<String> messages = drainPlayerMessages(sender);
+        assertTrue(messages.stream().anyMatch(message -> message.contains("MissingName") && message.contains("not found")),
+                "Expected /wwcs to report the requested missing target name.");
+    }
+
+    @Test
+    void statsCommandReportsNoRecordsForResolvedOnlinePlayerWithoutRecord() {
+        PlayerMock sender = WWCTestSupport.addOpPlayer("StatsOwner");
+        WWCTestSupport.addOpPlayer("NoRecord");
+
+        sender.performCommand("wwcs NoRecord");
+        WWCTestSupport.drainScheduler();
+
+        List<String> messages = drainPlayerMessages(sender);
+        assertTrue(messages.stream().anyMatch(message -> message.contains("no records yet available") && message.contains("NoRecord")),
+                "Expected online player without stats to be resolved as no-records, not missing.");
+        assertTrue(messages.stream().noneMatch(message -> message.contains("not found")));
+    }
+
+    private SmartInventory openedSmartInventory(PlayerMock player) {
+        return plugin().getInventoryManager().getInventory(player)
+                .orElseThrow(() -> new AssertionError("Expected a SmartInventory to be open."));
+    }
+
+    private static List<String> drainPlayerMessages(PlayerMock player) {
+        List<String> messages = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            try {
+                String message = player.nextMessage();
+                if (message == null) {
+                    return messages;
+                }
+                messages.add(message);
+            } catch (AssertionError noMoreMessages) {
+                return messages;
+            }
+        }
+        fail("Player still had queued messages after draining 50 entries.");
+        return messages;
     }
 }

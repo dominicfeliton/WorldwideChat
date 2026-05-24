@@ -32,6 +32,10 @@ public class TestTranslation extends BasicTranslation {
         return maxActiveTranslations.get();
     }
 
+    public static int getActiveTranslations() {
+        return activeTranslations.get();
+    }
+
     @Override
     protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
         return new testTask(textToTranslate, inputLang, outputLang);

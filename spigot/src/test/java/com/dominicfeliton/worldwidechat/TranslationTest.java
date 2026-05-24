@@ -10,6 +10,7 @@ import org.mockbukkit.mockbukkit.entity.PlayerMock;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -116,6 +117,44 @@ class TranslationTest extends WWCIntegrationTest {
                     "translated-batch-serial-2"), translated);
             assertEquals(1, TestTranslation.getMaxActiveTranslations());
         } finally {
+            TestTranslation.resetConcurrencyTracking();
+        }
+    }
+
+    @Test
+    void objectBatchTimeoutUsesTranslatorConnectionTimeoutAndCancelsProviderWork() throws InterruptedException {
+        int originalConnectionTimeout = WorldwideChat.translatorConnectionTimeoutSeconds;
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        PlayerMock player = WWCTestSupport.addOpPlayer("ObjectBatchTimeout");
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+        plugin().setObjectTranslationConcurrencyLimit(4);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(5000);
+
+        try {
+            WorldwideChat.translatorConnectionTimeoutSeconds = 1;
+            WorldwideChat.translatorFatalAbortSeconds = 6;
+            List<String> input = List.of("batch-timeout-0", "batch-timeout-1", "batch-timeout-2", "batch-timeout-3");
+
+            long startTime = System.nanoTime();
+            List<String> translated = plugin().getServerFactory().getCommonRefs()
+                    .translateObjectText(input, player);
+            long elapsedMillis = TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - startTime);
+
+            assertEquals(input, translated);
+            assertTrue(elapsedMillis < 4000,
+                    () -> "Expected object batch to timeout through translatorConnectionTimeoutSeconds, elapsed " + elapsedMillis + "ms.");
+            waitForActiveTranslationsToDrain();
+            WWCTestSupport.drainScheduler();
+            List<String> messages = drainPlayerMessages(player);
+            assertTrue(messages.stream().anyMatch(message -> message.contains("timed out")),
+                    () -> "Expected provider timeout to use the timeout message path. Messages: " + messages);
+            assertTrue(messages.stream().noneMatch(message -> message.contains("problem occurred")),
+                    "Expected provider timeout not to use the generic translator error path.");
+        } finally {
+            WorldwideChat.translatorConnectionTimeoutSeconds = originalConnectionTimeout;
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
             TestTranslation.resetConcurrencyTracking();
         }
     }
@@ -469,6 +508,15 @@ class TranslationTest extends WWCIntegrationTest {
         assertTrue(drainPlayerMessages(player).stream()
                         .anyMatch(message -> message.contains("translation guidelines")),
                 "Expected player to receive Guidelines AI block message.");
+    }
+
+    private static void waitForActiveTranslationsToDrain() throws InterruptedException {
+        long deadline = System.currentTimeMillis() + 1000;
+        while (TestTranslation.getActiveTranslations() != 0 && System.currentTimeMillis() < deadline) {
+            Thread.sleep(25);
+        }
+        assertEquals(0, TestTranslation.getActiveTranslations(),
+                "Expected timed-out provider work to be cancelled.");
     }
 
     private static List<String> drainPlayerMessages(PlayerMock player) {

@@ -21,6 +21,13 @@ public abstract class BasicTranslation {
         Future<String> process = callbackExecutor.submit(createTranslationTask(textToTranslate, inputLang, outputLang));
         try {
             return process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
+        } catch (TimeoutException e) {
+            process.cancel(true);
+            throw e;
+        } catch (InterruptedException e) {
+            process.cancel(true);
+            Thread.currentThread().interrupt();
+            throw e;
         } catch (ExecutionException e) {
             if (e.getCause() instanceof TranslationFailureException translationFailure) {
                 throw translationFailure;
