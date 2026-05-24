@@ -37,7 +37,7 @@ working right!
 Additionally, if you want to test this plugin out before installing, you can!
 
 - Check out our **Test Server** here:
-  ```152.67.252.19```
+  ```dominicplugins.airdns.org:18001```
 
 ## Installation
 
