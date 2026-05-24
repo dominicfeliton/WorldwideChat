@@ -549,6 +549,19 @@ public class CommonRefs {
         return TranslationProgressIndicator.Handle.noop();
     }
 
+    public TranslationProgressIndicator.Handle beginObjectStatusMsg(String messageName, String replacement, String resetCode, Player player) {
+        return beginObjectStatusMsg(messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public TranslationProgressIndicator.Handle beginObjectStatusMsg(String messageName, String[] replacements, String resetCode, Player player) {
+        if (shouldSendStatusActionBar(player)) {
+            return main.getTranslationProgressIndicator().beginObjectImmediately(player, getCompMsg(messageName, replacements, "&r" + resetCode, player));
+        }
+
+        sendMsg(messageName, replacements, resetCode, player);
+        return TranslationProgressIndicator.Handle.noop();
+    }
+
     public void finishStatusMsg(TranslationProgressIndicator.Handle status, String messageName, String replacement, String resetCode, Player player) {
         finishStatusMsg(status, messageName, new String[]{replacement}, resetCode, player);
     }
@@ -737,12 +750,7 @@ public class CommonRefs {
     }
 
     public List<String> translateObjectText(List<String> listOfMsgs, Player currPlayer) {
-        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
-        try {
-            return translateObjectTextInBatch(listOfMsgs, currPlayer);
-        } finally {
-            progress.close();
-        }
+        return translateObjectTextInBatch(listOfMsgs, currPlayer);
     }
 
     private List<String> translateObjectTextInBatch(List<String> listOfMsgs, Player currPlayer) {
@@ -768,7 +776,7 @@ public class CommonRefs {
         int concurrencyLimit = Math.max(1, Math.min(main.getObjectTranslationConcurrencyLimit(), workIndexes.size()));
         if (concurrencyLimit == 1) {
             for (int index : workIndexes) {
-                out.set(index, translateText(original.get(index), currPlayer, true));
+                out.set(index, translateObjectTextEntry(original.get(index), currPlayer));
             }
             return out;
         }
@@ -819,7 +827,11 @@ public class CommonRefs {
                                                               List<String> original,
                                                               Player currPlayer,
                                                               int index) {
-        return completionService.submit(() -> new IndexedTranslation(index, translateText(original.get(index), currPlayer, true)));
+        return completionService.submit(() -> new IndexedTranslation(index, translateObjectTextEntry(original.get(index), currPlayer)));
+    }
+
+    private String translateObjectTextEntry(String inMessage, Player currPlayer) {
+        return translateText(inMessage, currPlayer, true, null, false);
     }
 
     private void cancelTranslations(List<Future<IndexedTranslation>> futures) {
@@ -893,6 +905,10 @@ public class CommonRefs {
     }
 
     private String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit, GuidelinesCheckContext guidelinesCheck) {
+        return translateText(inMessage, currPlayer, ignoreRateLimit, guidelinesCheck, true);
+    }
+
+    private String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit, GuidelinesCheckContext guidelinesCheck, boolean markStatusErrors) {
         /* If translator settings are invalid, do not do this... */
         debugMsg("translateText() call using " + main.getTranslatorName());
         if (inMessage.length() <= 1 || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
@@ -1007,13 +1023,13 @@ public class CommonRefs {
                 if (guidelinesCheck != null && failure.isGuidelinesFailure()) {
                     guidelinesCheck.markBlocked();
                 }
-                markTranslationIndicatorError(currPlayer);
+                markTranslationIndicatorError(currPlayer, markStatusErrors);
                 handleTranslationFailure(failure, guidelinesCheck == null ? currPlayer : guidelinesCheck.notifyPlayer());
                 return inMessage;
             } else if (timeout != null) {
                 // If we get a timeoutexception
                 process.cancel(true);
-                markTranslationIndicatorError(currPlayer);
+                markTranslationIndicatorError(currPlayer, markStatusErrors);
                 sendTimeoutExceptionMsg(currPlayer);
                 return inMessage;
             } else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
@@ -1023,7 +1039,7 @@ public class CommonRefs {
             }
 
             /* Add 1 to error count */
-            markTranslationIndicatorError(currPlayer);
+            markTranslationIndicatorError(currPlayer, markStatusErrors);
             main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
             sendMsg("wwcTranslatorError", "", "&c", currPlayer);
             main.getLogger()
@@ -1074,7 +1090,11 @@ public class CommonRefs {
         return finalOut;
     }
 
-    private void markTranslationIndicatorError(Player currPlayer) {
+    private void markTranslationIndicatorError(Player currPlayer, boolean markStatusErrors) {
+        if (!markStatusErrors) {
+            return;
+        }
+
         TranslationProgressIndicator indicator = main.getTranslationProgressIndicator();
         if (indicator != null) {
             indicator.markError(currPlayer);

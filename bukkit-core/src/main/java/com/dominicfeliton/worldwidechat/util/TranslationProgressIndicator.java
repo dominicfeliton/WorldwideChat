@@ -40,10 +40,18 @@ public class TranslationProgressIndicator {
     }
 
     public Handle beginImmediately(Player player, Component loadingMessage) {
-        return begin(player, loadingMessage, true);
+        return begin(player, loadingMessage, true, true);
+    }
+
+    public Handle beginObjectImmediately(Player player, Component loadingMessage) {
+        return begin(player, loadingMessage, true, false);
     }
 
     private Handle begin(Player player, Component loadingMessage, boolean startImmediately) {
+        return begin(player, loadingMessage, startImmediately, true);
+    }
+
+    private Handle begin(Player player, Component loadingMessage, boolean startImmediately, boolean hardTimeoutEnabled) {
         if (!canDisplay(player)) {
             return Handle.noop();
         }
@@ -72,7 +80,9 @@ public class TranslationProgressIndicator {
                 } else {
                     scheduleDelayedStart(player, playerId, state, state.generation);
                 }
-                scheduleHardTimeout(player, playerId, state, state.generation);
+                if (hardTimeoutEnabled) {
+                    scheduleHardTimeout(player, playerId, state, state.generation);
+                }
             } else if (state.loadingMessage == null && loadingMessage != null) {
                 state.loadingMessage = loadingMessage;
             }

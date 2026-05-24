@@ -3,6 +3,8 @@ package com.dominicfeliton.worldwidechat.listeners;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.util.TranslationProgressIndicator;
 import eu.decentsoftware.holograms.api.actions.ClickType;
 import eu.decentsoftware.holograms.api.holograms.HologramLine;
 import eu.decentsoftware.holograms.api.holograms.HologramPage;
@@ -15,6 +17,8 @@ import org.bukkit.event.Listener;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 
 public class HologramListener implements Listener {
 
@@ -40,39 +44,84 @@ public class HologramListener implements Listener {
             return;
         }
 
-        List<HologramPage> allText = event.getHologram().getPages();
-        List<Component> translations = new ArrayList<>();
+        List<List<String>> allText = new ArrayList<>();
 
         // Process each page
-        for (HologramPage hologramPage : allText) {
+        for (HologramPage hologramPage : event.getHologram().getPages()) {
             List<String> currentPage = new ArrayList<>();
             for (HologramLine eaLine : hologramPage.getLines()) {
                 currentPage.add(eaLine.getContent());
             }
-            List<String> translatedPage = refs.translateObjectText(currentPage, p);
+            allText.add(currentPage);
+        }
 
-            Component out = Component.empty();
-            for (int i = 0; i < translatedPage.size(); i++) {
-                String line = translatedPage.get(i);
-                out = out.append(Component.text(line));
-                if (i+1 < translatedPage.size()) {
-                    out = out.append(Component.newline());
+        translateHologramPages(p, allText);
+    }
+
+    protected void translateHologramPages(Player player, List<List<String>> pages) {
+        TranslationProgressIndicator.Handle status = refs.beginObjectStatusMsg("wwcSignTranslateStart", "", "&d&l", player);
+
+        GenericRunnable translate = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                boolean anyPageTranslated = false;
+                int page = 1;
+
+                try {
+                    for (List<String> currentPage : pages) {
+                        List<String> translatedPage = translateHologramPage(currentPage, player);
+                        if (!translatedPage.equals(currentPage)) {
+                            anyPageTranslated = true;
+                        }
+                        sendHologramPage(player, page, translatedPage);
+                        page++;
+                    }
+
+                    refs.sendMsg(player, "&6" + getHologramDashes() + "----", false);
+                    if (anyPageTranslated) {
+                        refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
+                    } else {
+                        refs.failStatusMsg(status, player);
+                    }
+                } catch (RuntimeException | LinkageError e) {
+                    refs.failStatusMsg(status, player);
+                    throw e;
                 }
             }
-            translations.add(out);
-        }
+        };
 
-        // Send each hologram in chat
-        int page = 1;
-        String dashes = "---------------------";
-        int middleIndex = dashes.length() / 2;
-        for (Component eachPage : translations) {
-            String result = dashes.substring(0, middleIndex) + " &2&l(&a&l" + page + "&2&l)&r&6 " + dashes.substring(middleIndex);
-            refs.sendMsg(p, "&6" + result, false);
-            refs.sendMsg(p, eachPage, false);
-            page++;
+        wwcHelper.runAsync(translate, ASYNC, null);
+    }
+
+    protected List<String> translateHologramPage(List<String> currentPage, Player player) {
+        return refs.translateObjectText(currentPage, player);
+    }
+
+    private void sendHologramPage(Player player, int page, List<String> translatedPage) {
+        refs.sendMsg(player, "&6" + getHologramPageHeader(page), false);
+        refs.sendMsg(player, buildHologramPage(translatedPage), false);
+    }
+
+    private Component buildHologramPage(List<String> translatedPage) {
+        Component out = Component.empty();
+        for (int i = 0; i < translatedPage.size(); i++) {
+            String line = translatedPage.get(i);
+            out = out.append(Component.text(line));
+            if (i + 1 < translatedPage.size()) {
+                out = out.append(Component.newline());
+            }
         }
-        refs.sendMsg(p, "&6" + dashes + "----", false);
+        return out;
+    }
+
+    private String getHologramPageHeader(int page) {
+        String dashes = getHologramDashes();
+        int middleIndex = dashes.length() / 2;
+        return dashes.substring(0, middleIndex) + " &2&l(&a&l" + page + "&2&l)&r&6 " + dashes.substring(middleIndex);
+    }
+
+    private String getHologramDashes() {
+        return "---------------------";
     }
 
 }

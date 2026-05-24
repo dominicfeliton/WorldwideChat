@@ -100,7 +100,7 @@ public class TranslateInGameListener implements Listener {
                 String author = meta.getAuthor();
                 BookMeta.Generation generation = meta.getGeneration();
                 List<String> pages = new ArrayList<>(meta.getPages());
-                TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
+                TranslationProgressIndicator.Handle status = refs.beginObjectStatusMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
                 GenericRunnable out = new GenericRunnable() {
                     @Override
                     protected void execute() {
@@ -173,7 +173,7 @@ public class TranslateInGameListener implements Listener {
                 String[] currentSignText = currentSign.getLines();
                 final String[] signText = Arrays.copyOf(currentSignText, currentSignText.length);
                 Location currLoc = currentSign.getLocation();
-                TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcSignTranslateStart", "", "&d&l", player);
+                TranslationProgressIndicator.Handle status = refs.beginObjectStatusMsg("wwcSignTranslateStart", "", "&d&l", player);
 
                 GenericRunnable out = new GenericRunnable() {
                     @Override
@@ -269,7 +269,7 @@ public class TranslateInGameListener implements Listener {
                 String displayName = hasDisplayName ? meta.getDisplayName() : "";
                 boolean hasLore = meta.hasLore();
                 List<String> itemLore = hasLore ? new ArrayList<>(meta.getLore()) : new ArrayList<>();
-                TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcItemTranslateStart", "", "&d&l", player);
+                TranslationProgressIndicator.Handle status = refs.beginObjectStatusMsg("wwcItemTranslateStart", "", "&d&l", player);
 
                 GenericRunnable out = new GenericRunnable() {
                     @Override

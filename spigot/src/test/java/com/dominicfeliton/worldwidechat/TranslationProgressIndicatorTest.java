@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.TranslationProgressIndicator;
+import com.dominicfeliton.worldwidechat.translators.TestTranslation;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.ChatColor;
@@ -249,6 +250,60 @@ class TranslationProgressIndicatorTest extends WWCIntegrationTest {
         } finally {
             handle.close();
             WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+        }
+    }
+
+    @Test
+    void objectStatusDoesNotUseHardTimeout() {
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        WorldwideChat.translatorFatalAbortSeconds = 1;
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("ObjectNoHardTimeoutIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.beginObjectImmediately(player, Component.text("Translating target sign..."));
+        drainActionBars(player);
+
+        try {
+            WWCTestSupport.server().getScheduler().performTicks(60);
+            assertTrue(indicator.isTracking(player));
+            assertTrue(drainActionBars(player).stream().noneMatch(message -> message.contains("Error")));
+
+            handle.close(Component.text("Sign translated successfully."));
+            WWCTestSupport.server().getScheduler().performTicks(1);
+            assertTrue(drainActionBars(player).stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+        } finally {
+            handle.close();
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+        }
+    }
+
+    @Test
+    void singleMessageTimeoutStillMarksVisibleStatusFailed() {
+        int originalConnectionTimeout = WorldwideChat.translatorConnectionTimeoutSeconds;
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("SingleTimeoutIndicator");
+        player.performCommand("wwct en es");
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(5000);
+        TranslationProgressIndicator.Handle handle = indicator.beginImmediately(player, Component.text("Translating message..."));
+        drainActionBars(player);
+
+        try {
+            WorldwideChat.translatorConnectionTimeoutSeconds = 1;
+            WorldwideChat.translatorFatalAbortSeconds = 6;
+            assertEquals("batch-single-timeout",
+                    plugin().getServerFactory().getCommonRefs().translateText("batch-single-timeout", player, false));
+            handle.close();
+            WWCTestSupport.server().getScheduler().performTicks(1);
+
+            assertTrue(drainActionBars(player).stream()
+                    .anyMatch(message -> message.contains("Error")));
+        } finally {
+            handle.close();
+            WorldwideChat.translatorConnectionTimeoutSeconds = originalConnectionTimeout;
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+            TestTranslation.resetConcurrencyTracking();
         }
     }
 

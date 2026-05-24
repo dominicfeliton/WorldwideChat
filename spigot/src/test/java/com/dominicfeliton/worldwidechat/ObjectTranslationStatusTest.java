@@ -4,8 +4,10 @@ import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.TranslationProgressIndicator;
+import com.dominicfeliton.worldwidechat.listeners.HologramListener;
 import com.dominicfeliton.worldwidechat.listeners.TranslateInGameListener;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType;
+import com.dominicfeliton.worldwidechat.translators.TestTranslation;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import org.bukkit.Location;
@@ -326,6 +328,154 @@ class ObjectTranslationStatusTest extends WWCIntegrationTest {
         }
     }
 
+    @Test
+    void hologramTranslationSendsChatAndReportsSuccess() {
+        PlayerMock player = signTranslator("HologramSuccess");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            new TestableHologramListener().translate(player, List.of(List.of("batch-hologram-line")));
+            WWCTestSupport.drainScheduler();
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Translating target sign")));
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+
+            assertTrue(drainPlayerMessages(player).stream()
+                    .anyMatch(message -> message.contains("translated-batch-hologram-line")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void hologramTranslationPreservesPageOrder() {
+        PlayerMock player = signTranslator("HologramOrder");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            new TestableHologramListener().translate(player, List.of(
+                    List.of("batch-hologram-page-1"),
+                    List.of("batch-hologram-page-2")));
+            WWCTestSupport.drainScheduler();
+
+            List<String> messages = drainPlayerMessages(player);
+            int firstPage = indexOfMessageContaining(messages, "translated-batch-hologram-page-1");
+            int secondPage = indexOfMessageContaining(messages, "translated-batch-hologram-page-2");
+            assertTrue(firstPage >= 0);
+            assertTrue(secondPage >= 0);
+            assertTrue(firstPage < secondPage);
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void hologramPartialOriginalOutputStillReportsSuccess() {
+        PlayerMock player = signTranslator("HologramPartialOriginal");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            new TestableHologramListener().translate(player, List.of(List.of("same", "batch-hologram-partial")));
+            WWCTestSupport.drainScheduler();
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+
+            List<String> messages = drainPlayerMessages(player);
+            assertTrue(messages.stream().anyMatch(message -> message.contains("same")));
+            assertTrue(messages.stream().anyMatch(message -> message.contains("translated-batch-hologram-partial")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void hologramAllIdenticalOutputReportsError() {
+        PlayerMock player = signTranslator("HologramIdentical");
+        Object previousHelper = installRecordingActionBarHelper();
+
+        try {
+            new TestableHologramListener().translate(player, List.of(List.of("same")));
+            WWCTestSupport.drainScheduler();
+
+            assertTrue(drainActionBars(player).stream()
+                    .anyMatch(message -> message.contains("Error")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void hologramUncaughtTranslationExceptionReportsError() {
+        PlayerMock player = signTranslator("HologramException");
+        RecordingSchedulerHelper helper = new RecordingSchedulerHelper();
+        Object previousHelper = installRecordingActionBarHelper(helper);
+        ThrowingHologramListener listener = new ThrowingHologramListener();
+        installHologramHelper(listener, helper);
+
+        try {
+            assertThrows(IllegalStateException.class,
+                    () -> listener.translate(player, List.of(List.of("batch-hologram-throw"))));
+            WWCTestSupport.server().getScheduler().performTicks(1);
+
+            assertTrue(drainActionBars(player).stream()
+                    .anyMatch(message -> message.contains("Error")));
+        } finally {
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
+    @Test
+    void objectBatchEntryTimeoutDoesNotMarkObjectStatusFailed() {
+        int originalConnectionTimeout = WorldwideChat.translatorConnectionTimeoutSeconds;
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        PlayerMock player = signTranslator("ObjectTimeoutNoStatusPoison");
+        CommonRefs refs = plugin().getServerFactory().getCommonRefs();
+        Object previousHelper = installRecordingActionBarHelper();
+        plugin().setObjectTranslationConcurrencyLimit(2);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(5000);
+
+        try {
+            WorldwideChat.translatorConnectionTimeoutSeconds = 1;
+            WorldwideChat.translatorFatalAbortSeconds = 6;
+            TranslationProgressIndicator.Handle status = refs.beginObjectStatusMsg("wwcSignTranslateStart", "", "&d&l", player);
+
+            List<String> input = List.of("batch-object-timeout-0", "batch-object-timeout-1");
+            assertEquals(input, refs.translateObjectText(input, player));
+            WWCTestSupport.drainScheduler();
+            refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
+            WWCTestSupport.server().getScheduler().performTicks(1);
+
+            List<String> actionBars = drainActionBars(player);
+            assertTrue(actionBars.stream()
+                    .anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(actionBars.stream()
+                    .noneMatch(message -> message.contains("Error")));
+            assertTrue(drainPlayerMessages(player).stream()
+                    .anyMatch(message -> message.contains("timed out")));
+        } finally {
+            WorldwideChat.translatorConnectionTimeoutSeconds = originalConnectionTimeout;
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+            TestTranslation.resetConcurrencyTracking();
+            restoreActionBarEnabled();
+            restoreWWCHelper(previousHelper);
+        }
+    }
+
     private void restoreActionBarEnabled() {
         plugin().setSendActionBar(true);
         plugin().getConfigManager().getMainConfig().set("Chat.sendActionBar", true);
@@ -400,6 +550,25 @@ class ObjectTranslationStatusTest extends WWCIntegrationTest {
         }
     }
 
+    private void installHologramHelper(HologramListener listener, WorldwideChatHelper helper) {
+        try {
+            Field helperField = HologramListener.class.getDeclaredField("wwcHelper");
+            helperField.setAccessible(true);
+            helperField.set(listener, helper);
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private int indexOfMessageContaining(List<String> messages, String content) {
+        for (int i = 0; i < messages.size(); i++) {
+            if (messages.get(i).contains(content)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     private void restoreWWCHelper(Object previousState) {
         try {
             Object[] state = (Object[]) previousState;
@@ -461,6 +630,19 @@ class ObjectTranslationStatusTest extends WWCIntegrationTest {
         public void runAsync(GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
             asyncSchedulerTypes.add(schedulerType);
             in.run();
+        }
+    }
+
+    private static class TestableHologramListener extends HologramListener {
+        void translate(PlayerMock player, List<List<String>> pages) {
+            translateHologramPages(player, pages);
+        }
+    }
+
+    private static final class ThrowingHologramListener extends TestableHologramListener {
+        @Override
+        protected List<String> translateHologramPage(List<String> currentPage, Player player) {
+            throw new IllegalStateException("simulated hologram failure");
         }
     }
 
