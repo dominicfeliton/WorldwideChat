@@ -24,7 +24,7 @@
     <adventure.version>5.1.2-SNAPSHOT</adventure.version>
     <flyway.version>12.6.2</flyway.version>
     <folia.api.version>26.1.2.build.8-stable</folia.api.version>
-    <jackson.annotations.version>3.0-rc5</jackson.annotations.version>
+    <jackson.annotations.version>2.21</jackson.annotations.version>
     <junit.jupiter.version>6.2.0-SNAPSHOT</junit.jupiter.version>
     <maven.compiler.release>21</maven.compiler.release>
     <mockbukkit.paper.api.version>26.1.2.build.65-stable</mockbukkit.paper.api.version>
@@ -38,6 +38,13 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit.jupiter.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>com.dominicfeliton.worldwidechat</groupId>
         <artifactId>WorldwideChat-bukkit-core</artifactId>
@@ -84,8 +91,12 @@
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>${junit.jupiter.version}</version>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-launcher</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
