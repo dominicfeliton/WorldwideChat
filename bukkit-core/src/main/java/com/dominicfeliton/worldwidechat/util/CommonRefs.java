@@ -9,7 +9,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.CharMatcher;
 import fr.minuskube.inv.SmartInventory;
 import me.clip.placeholderapi.PlaceholderAPI;
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.TextReplacementConfig;
@@ -58,7 +57,7 @@ public class CommonRefs {
 
     protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
 
-    public static String[] supportedMCVersions = {"26.1", "1.21.11", "1.21.10", "1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17"};
+    public static String[] supportedMCVersions = {"26.1", "1.21.11", "1.21.10", "1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20"};
 
     public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 
@@ -482,10 +481,10 @@ public class CommonRefs {
             if (configuredMessage == null) {
                 if (code.isEmpty()) {
                     main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
-                    return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.").build();
+                    return Component.text(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
                 } else {
                     main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.");
-                    return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.").build();
+                    return Component.text(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.");
                 }
             }
             convertedOriginalMessage += configuredMessage;
@@ -498,7 +497,7 @@ public class CommonRefs {
         convertedOriginalMessage = convertedOriginalMessage.replace("'", "''").trim();
 
         // Return fixedMessage with replaced vars
-        return Component.text().content(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements)).build();
+        return Component.text(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements));
     }
 
     public void sendMsg(String messageName, CommandSender sender) {
@@ -522,6 +521,63 @@ public class CommonRefs {
         sendMsg(sender, getCompMsg(messageName, replacements, "&r" + resetCode, sender), true);
     }
 
+    public void sendStatusMsg(String messageName, String replacement, String resetCode, Player player) {
+        sendStatusMsg(messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public void sendStatusMsg(String messageName, String[] replacements, String resetCode, Player player) {
+        if (shouldSendStatusActionBar(player)) {
+            try {
+                wwcHelper.sendActionBar(getCompMsg(messageName, replacements, "&r" + resetCode, player), player);
+                return;
+            } catch (RuntimeException | LinkageError ignored) {
+            }
+        }
+
+        sendMsg(messageName, replacements, resetCode, player);
+    }
+
+    public TranslationProgressIndicator.Handle beginStatusMsg(String messageName, String replacement, String resetCode, Player player) {
+        return beginStatusMsg(messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public TranslationProgressIndicator.Handle beginStatusMsg(String messageName, String[] replacements, String resetCode, Player player) {
+        if (shouldSendStatusActionBar(player)) {
+            return main.getTranslationProgressIndicator().beginImmediately(player, getCompMsg(messageName, replacements, "&r" + resetCode, player));
+        }
+
+        sendMsg(messageName, replacements, resetCode, player);
+        return TranslationProgressIndicator.Handle.noop();
+    }
+
+    public void finishStatusMsg(TranslationProgressIndicator.Handle status, String messageName, String replacement, String resetCode, Player player) {
+        finishStatusMsg(status, messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public void finishStatusMsg(TranslationProgressIndicator.Handle status, String messageName, String[] replacements, String resetCode, Player player) {
+        if (status != null && status.isActive()) {
+            status.close(getCompMsg(messageName, replacements, "&r" + resetCode, player));
+            return;
+        }
+
+        sendStatusMsg(messageName, replacements, resetCode, player);
+    }
+
+    public void failStatusMsg(TranslationProgressIndicator.Handle status, Player player) {
+        if (status != null && status.isActive()) {
+            main.getTranslationProgressIndicator().markError(player);
+            status.close();
+        }
+    }
+
+    private boolean shouldSendStatusActionBar(Player player) {
+        return player != null
+                && main.isEnabled()
+                && main.getConfigManager() != null
+                && main.getSendActionBar()
+                && main.getConfigManager().getMainConfig().getBoolean("Chat.sendActionBar");
+    }
+
     /**
      * Sends the user a properly formatted message through our adventure instance.
      *
@@ -533,27 +589,40 @@ public class CommonRefs {
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         if (sender == null || originalMessage == null) return;
 
-        if (sender instanceof Player && !((Player) sender).isOnline()) return;
+        if (!Bukkit.isPrimaryThread()) {
+            wwcHelper.runSync(true, 0, new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    sendMsg(sender, originalMessage, addPrefix);
+                }
+            }, sender instanceof Player ? ENTITY : GLOBAL, sender instanceof Player ? new Object[]{sender} : null);
+            return;
+        }
 
+        Component outMessage = addPrefix
+                ? main.getPluginPrefix()
+                .append(Component.space())
+                .append(originalMessage)
+                : Component.empty().append(originalMessage);
         try {
-            Audience adv = main.adventure().sender(sender);
-            TextComponent outMessage = addPrefix
-                    ? Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.space())
-                    .append(originalMessage.asComponent())
-                    .build()
-                    : Component.text().append(originalMessage.asComponent()).build();
-            adv.sendMessage(outMessage);
-        } catch (IllegalStateException ignored) {
-            // In the unlikely case Adventure throws, we silently drop the message.
+            sender.sendMessage(serial(outMessage));
+        } catch (RuntimeException | LinkageError ignored) {
         }
     }
 
     public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
         if (playerId == null || originalMessage == null) return;
+        if (!Bukkit.isPrimaryThread()) {
+            wwcHelper.runSync(true, 0, new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    sendMsg(playerId, originalMessage, addPrefix);
+                }
+            }, GLOBAL, null);
+            return;
+        }
         Player p = Bukkit.getPlayer(playerId);
-        if (p == null || !p.isOnline()) return;
+        if (p == null) return;
         sendMsg(p, originalMessage, addPrefix);
     }
 
@@ -818,6 +887,7 @@ public class CommonRefs {
                 return inMessage;
             } else if (e instanceof TimeoutException) {
                 // If we get a timeoutexception
+                process.cancel(true);
                 markTranslationIndicatorError(currPlayer);
                 sendTimeoutExceptionMsg(currPlayer);
                 return inMessage;

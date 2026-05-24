@@ -11,7 +11,7 @@ assignees: ''
 _For example: 1.14.5 or 1.13.2._
 
 **What version of Minecraft/platform is your server running on?**
-_For example: My server is running minecraft version 1.19.3, with PaperMC._
+_For example: My server is running minecraft version 1.20.1, with PaperMC._
 
 **Describe the bug**
 _A clear and concise description of what the bug is._

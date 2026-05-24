@@ -1,16 +1,20 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
+import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs.GuidelinesCheckContext;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> implements Listener {
 
@@ -99,7 +103,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
 
                 // Re-render original message but with new text.
                 Component outMsg = formatMessage(event, currPlayer, refs.deserial(translation), refs.deserial(savedText), true);
-                currPlayer.sendMessage(outMsg);
+                refs.sendMsg(currPlayer, outMsg, false);
             }
             event.viewers().retainAll(unmodifiedMessageRecipients);
 
@@ -113,7 +117,7 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
                     } else {
                         outgoingMessage = formatMessage(event, null, outgoingText, event.message(), false);
                     }
-                    eaRecipient.sendMessage(outgoingMessage);
+                    sendChatMessage(eaRecipient, outgoingMessage);
                 }
 
                 refs.debugMsg("Cancelling chat event.");
@@ -139,5 +143,22 @@ public class PaperChatListener extends AbstractChatListener<AsyncChatEvent> impl
         }
 
         return outMsg;
+    }
+
+    private void sendChatMessage(Audience recipient, Component message) {
+        if (recipient instanceof CommandSender commandSender) {
+            refs.sendMsg(commandSender, message, false);
+            return;
+        }
+
+        main.getServerFactory().getWWCHelper().runSync(true, 0, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                try {
+                    recipient.sendMessage(message);
+                } catch (RuntimeException | LinkageError ignored) {
+                }
+            }
+        }, GLOBAL, null);
     }
 }

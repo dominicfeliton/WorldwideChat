@@ -4,7 +4,6 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.ClickEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
@@ -27,15 +26,13 @@ public class NotifsOnJoinListener implements Listener {
         // Check if plugin has updates
         if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())
                 && (currPlayer.hasPermission("worldwidechat.chatupdate"))) {
-            final TextComponent outOfDate = Component.text()
-                    .content(refs.getPlainMsg("wwcUpdaterOutOfDateChat", currPlayer))
-                    .color(NamedTextColor.YELLOW)
-                    .append(Component.text().content(" (").color(NamedTextColor.GOLD))
-                    .append(Component.text().content("https://github.com/dominicfeliton/WorldwideChat/releases")
+            final Component outOfDate = Component.text(refs.getPlainMsg("wwcUpdaterOutOfDateChat", currPlayer), NamedTextColor.YELLOW)
+                    .append(Component.text(" (", NamedTextColor.GOLD))
+                    .append(Component.text("https://github.com/dominicfeliton/WorldwideChat/releases")
                             .color(NamedTextColor.GOLD)
                             .clickEvent(ClickEvent.openUrl("https://github.com/dominicfeliton/WorldwideChat/releases"))
                             .decoration(TextDecoration.UNDERLINED, true))
-                    .append(Component.text().content(")").color(NamedTextColor.GOLD)).build();
+                    .append(Component.text(")", NamedTextColor.GOLD));
             refs.sendMsg(currPlayer, outOfDate);
         }
 

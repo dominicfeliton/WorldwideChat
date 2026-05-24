@@ -52,6 +52,67 @@ class TranslationProgressIndicatorTest extends WWCIntegrationTest {
     }
 
     @Test
+    void customStatusHandleShowsObjectSpinnerAndFinishMessage() {
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("ObjectIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.begin(player, Component.text("Translating target sign..."));
+
+        try {
+            WWCTestSupport.server().getScheduler().performTicks(9);
+
+            List<String> loadingBars = drainActionBars(player);
+            assertTrue(loadingBars.stream().anyMatch(message -> message.contains("Translating target sign")));
+            assertTrue(loadingBars.stream().noneMatch(message -> message.contains("Translating message")));
+
+            handle.close(Component.text("Sign translated successfully."));
+            WWCTestSupport.server().getScheduler().performTicks(1);
+
+            List<String> finishBars = drainActionBars(player);
+            assertTrue(finishBars.stream().anyMatch(message -> message.contains("Sign translated successfully")));
+            assertTrue(finishBars.stream().noneMatch(message -> message.contains("Done!")));
+        } finally {
+            handle.close();
+            WWCTestSupport.server().getScheduler().performTicks(20);
+            drainActionBars(player);
+        }
+    }
+
+    @Test
+    void immediateStatusHandleShowsObjectSpinnerWithoutDelay() {
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("ImmediateObjectIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.beginImmediately(player, Component.text("Translating target sign..."));
+
+        try {
+            List<String> loadingBars = drainActionBars(player);
+            assertTrue(loadingBars.stream().anyMatch(message -> message.contains("Translating target sign")));
+            assertTrue(loadingBars.stream().noneMatch(message -> message.contains("Translating message")));
+            assertTrue(indicator.isTracking(player));
+        } finally {
+            handle.close();
+            WWCTestSupport.server().getScheduler().performTicks(20);
+            drainActionBars(player);
+        }
+    }
+
+    @Test
+    void customStatusFinishShowsEvenBeforeSpinnerDelay() {
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("FastObjectIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.begin(player, Component.text("Translating target sign..."));
+
+        handle.close(Component.text("Sign translated successfully."));
+        WWCTestSupport.server().getScheduler().performTicks(1);
+
+        List<String> finishBars = drainActionBars(player);
+        assertTrue(finishBars.stream().anyMatch(message -> message.contains("Sign translated successfully")));
+        assertTrue(indicator.isTracking(player));
+        WWCTestSupport.server().getScheduler().performTicks(20);
+        drainActionBars(player);
+        assertFalse(indicator.isTracking(player));
+    }
+
+    @Test
     void overlappingHandlesShareSpinnerUntilAllClose() {
         TranslationProgressIndicator indicator = installRecordingIndicator();
         PlayerMock player = WWCTestSupport.addOpPlayer("OverlapIndicator");
@@ -139,6 +200,82 @@ class TranslationProgressIndicatorTest extends WWCIntegrationTest {
 
         assertTrue(drainActionBars(player).stream().anyMatch(message -> message.contains("Done!")));
         assertFalse(indicator.isTracking(player));
+    }
+
+    @Test
+    void indicatorHardTimeoutShowsErrorAndClears() {
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        WorldwideChat.translatorFatalAbortSeconds = 1;
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("HardTimeoutIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.beginImmediately(player, Component.text("Translating target sign..."));
+        drainActionBars(player);
+
+        try {
+            WWCTestSupport.server().getScheduler().performTicks(39);
+            assertTrue(indicator.isTracking(player));
+            assertTrue(drainActionBars(player).stream().noneMatch(message -> message.contains("Error")));
+
+            WWCTestSupport.server().getScheduler().performTicks(2);
+            assertTrue(drainActionBars(player).stream().anyMatch(message -> message.contains("Error")));
+            assertTrue(indicator.isTracking(player));
+
+            WWCTestSupport.server().getScheduler().performTicks(20);
+            drainActionBars(player);
+            assertFalse(indicator.isTracking(player));
+        } finally {
+            handle.close();
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+        }
+    }
+
+    @Test
+    void closingBeforeHardTimeoutCancelsTimeoutTask() {
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        WorldwideChat.translatorFatalAbortSeconds = 1;
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("HardTimeoutClosedIndicator");
+        TranslationProgressIndicator.Handle handle = indicator.beginImmediately(player, Component.text("Translating target sign..."));
+        drainActionBars(player);
+
+        try {
+            handle.close(Component.text("Sign translated successfully."));
+            WWCTestSupport.server().getScheduler().performTicks(1);
+            assertTrue(drainActionBars(player).stream().anyMatch(message -> message.contains("Sign translated successfully")));
+
+            WWCTestSupport.server().getScheduler().performTicks(50);
+            assertTrue(drainActionBars(player).stream().noneMatch(message -> message.contains("Error")));
+            assertFalse(indicator.isTracking(player));
+        } finally {
+            handle.close();
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+        }
+    }
+
+    @Test
+    void overlappingHandlesHardTimeoutTogether() {
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        WorldwideChat.translatorFatalAbortSeconds = 1;
+        TranslationProgressIndicator indicator = installRecordingIndicator();
+        PlayerMock player = WWCTestSupport.addOpPlayer("HardTimeoutOverlapIndicator");
+        TranslationProgressIndicator.Handle first = indicator.beginImmediately(player, Component.text("Translating target sign..."));
+        TranslationProgressIndicator.Handle second = indicator.begin(player);
+        drainActionBars(player);
+
+        try {
+            WWCTestSupport.server().getScheduler().performTicks(42);
+            assertTrue(drainActionBars(player).stream().anyMatch(message -> message.contains("Error")));
+
+            first.close();
+            second.close();
+            WWCTestSupport.server().getScheduler().performTicks(20);
+            drainActionBars(player);
+            assertFalse(indicator.isTracking(player));
+        } finally {
+            first.close();
+            second.close();
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+        }
     }
 
     private TranslationProgressIndicator installRecordingIndicator() {

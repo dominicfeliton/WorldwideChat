@@ -16,6 +16,8 @@ public class TranslationProgressIndicator {
     private static final int START_DELAY_TICKS = 8;
     private static final int PULSE_INTERVAL_TICKS = 4;
     private static final int FINISH_CLEAR_TICKS = 15;
+    private static final int HARD_TIMEOUT_GRACE_SECONDS = 1;
+    private static final int TICKS_PER_SECOND = 20;
     private static final String[] SPINNER_FRAMES = {"|", "/", "-", "\\"};
 
     private final WorldwideChat main;
@@ -30,6 +32,18 @@ public class TranslationProgressIndicator {
     }
 
     public Handle begin(Player player) {
+        return begin(player, null);
+    }
+
+    public Handle begin(Player player, Component loadingMessage) {
+        return begin(player, loadingMessage, false);
+    }
+
+    public Handle beginImmediately(Player player, Component loadingMessage) {
+        return begin(player, loadingMessage, true);
+    }
+
+    private Handle begin(Player player, Component loadingMessage, boolean startImmediately) {
         if (!canDisplay(player)) {
             return Handle.noop();
         }
@@ -45,10 +59,22 @@ public class TranslationProgressIndicator {
                 cancelTask(state.delayedStartTask);
                 cancelTask(state.pulseTask);
                 cancelTask(state.clearTask);
+                cancelTask(state.hardTimeoutTask);
                 state.visible = false;
                 state.failed = false;
+                state.hardTimedOut = false;
                 state.frameIndex = 0;
-                scheduleDelayedStart(player, playerId, state, state.generation);
+                state.loadingMessage = loadingMessage;
+                if (startImmediately) {
+                    state.visible = true;
+                    sendFrame(player, state);
+                    schedulePulse(player, playerId, state, state.generation);
+                } else {
+                    scheduleDelayedStart(player, playerId, state, state.generation);
+                }
+                scheduleHardTimeout(player, playerId, state, state.generation);
+            } else if (state.loadingMessage == null && loadingMessage != null) {
+                state.loadingMessage = loadingMessage;
             }
         }
 
@@ -82,22 +108,28 @@ public class TranslationProgressIndicator {
                 cancelTask(state.delayedStartTask);
                 cancelTask(state.pulseTask);
                 cancelTask(state.clearTask);
+                cancelTask(state.hardTimeoutTask);
                 state.activeCount = 0;
                 state.visible = false;
                 state.failed = false;
+                state.hardTimedOut = false;
                 state.generation++;
             }
         }
         playerStates.clear();
     }
 
-    private void finish(UUID playerId, Player player) {
+    private void finish(UUID playerId, Player player, Component finishMessage, boolean showFinishWhenHidden) {
         PlayerIndicatorState state = playerStates.get(playerId);
         if (state == null) {
             return;
         }
 
         synchronized (state) {
+            if (state.hardTimedOut) {
+                return;
+            }
+
             if (state.activeCount > 0) {
                 state.activeCount--;
             }
@@ -108,9 +140,11 @@ public class TranslationProgressIndicator {
 
             cancelTask(state.delayedStartTask);
             state.delayedStartTask = null;
+            cancelTask(state.hardTimeoutTask);
+            state.hardTimeoutTask = null;
             state.generation++;
 
-            if (!state.visible) {
+            if (!state.visible && !showFinishWhenHidden) {
                 playerStates.remove(playerId, state);
                 return;
             }
@@ -118,7 +152,8 @@ public class TranslationProgressIndicator {
             cancelTask(state.pulseTask);
             state.pulseTask = null;
             state.visible = false;
-            scheduleFinish(player, playerId, state, state.generation, state.failed);
+            state.loadingMessage = null;
+            scheduleFinish(player, playerId, state, state.generation, state.failed, finishMessage);
         }
     }
 
@@ -170,7 +205,42 @@ public class TranslationProgressIndicator {
         wwcHelper.runSyncRepeating(true, PULSE_INTERVAL_TICKS, PULSE_INTERVAL_TICKS, pulse, ENTITY, new Object[]{player});
     }
 
-    private void scheduleFinish(Player player, UUID playerId, PlayerIndicatorState state, long generation, boolean failed) {
+    private void scheduleHardTimeout(Player player, UUID playerId, PlayerIndicatorState state, long generation) {
+        GenericRunnable hardTimeout = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                PlayerIndicatorState currentState = playerStates.get(playerId);
+                if (currentState == null) {
+                    return;
+                }
+
+                synchronized (currentState) {
+                    if (currentState.generation != generation || currentState.activeCount <= 0) {
+                        return;
+                    }
+
+                    cancelTask(currentState.delayedStartTask);
+                    cancelTask(currentState.pulseTask);
+                    cancelTask(currentState.clearTask);
+                    currentState.delayedStartTask = null;
+                    currentState.pulseTask = null;
+                    currentState.clearTask = null;
+                    currentState.hardTimeoutTask = null;
+                    currentState.activeCount = 0;
+                    currentState.visible = false;
+                    currentState.failed = true;
+                    currentState.hardTimedOut = true;
+                    currentState.loadingMessage = null;
+                    currentState.generation++;
+                    scheduleFinish(player, playerId, currentState, currentState.generation, true, null);
+                }
+            }
+        };
+        state.hardTimeoutTask = hardTimeout;
+        wwcHelper.runSync(true, getHardTimeoutTicks(), hardTimeout, ENTITY, new Object[]{player});
+    }
+
+    private void scheduleFinish(Player player, UUID playerId, PlayerIndicatorState state, long generation, boolean failed, Component finishMessage) {
         GenericRunnable finish = new GenericRunnable() {
             @Override
             protected void execute() {
@@ -184,7 +254,7 @@ public class TranslationProgressIndicator {
                         return;
                     }
 
-                    sendActionBar(player, getFinishMessage(player, failed));
+                    sendActionBar(player, getFinishMessage(player, failed, finishMessage));
                     scheduleClear(player, playerId, currentState, generation);
                 }
             }
@@ -216,9 +286,12 @@ public class TranslationProgressIndicator {
         wwcHelper.runSync(true, FINISH_CLEAR_TICKS, clear, ENTITY, new Object[]{player});
     }
 
-    private Component getFinishMessage(Player player, boolean failed) {
+    private Component getFinishMessage(Player player, boolean failed, Component finishMessage) {
         if (failed) {
             return refs.getCompMsg("wwctTranslationErrorActionBar", null, "&o&c", player);
+        }
+        if (finishMessage != null) {
+            return finishMessage;
         }
         return refs.getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", player);
     }
@@ -227,7 +300,9 @@ public class TranslationProgressIndicator {
         String frame = SPINNER_FRAMES[state.frameIndex % SPINNER_FRAMES.length];
         state.frameIndex++;
         Component message = Component.text(frame + " ")
-                .append(refs.getCompMsg("wwctTranslationInitActionBar", null, "&o", player));
+                .append(state.loadingMessage != null
+                        ? state.loadingMessage
+                        : refs.getCompMsg("wwctTranslationInitActionBar", null, "&o", player));
         sendActionBar(player, message);
     }
 
@@ -240,11 +315,15 @@ public class TranslationProgressIndicator {
 
     private boolean canDisplay(Player player) {
         return player != null
-                && player.isOnline()
                 && main.isEnabled()
                 && main.getConfigManager() != null
                 && main.getSendActionBar()
                 && main.getConfigManager().getMainConfig().getBoolean("Chat.sendActionBar");
+    }
+
+    private int getHardTimeoutTicks() {
+        return Math.max(TICKS_PER_SECOND,
+                (WorldwideChat.translatorFatalAbortSeconds + HARD_TIMEOUT_GRACE_SECONDS) * TICKS_PER_SECOND);
     }
 
     private void cancelTask(GenericRunnable task) {
@@ -266,14 +345,24 @@ public class TranslationProgressIndicator {
             this.player = player;
         }
 
-        private static Handle noop() {
+        public static Handle noop() {
             return new Handle(null, null, null);
+        }
+
+        public boolean isActive() {
+            return indicator != null;
         }
 
         @Override
         public void close() {
             if (indicator != null && closed.compareAndSet(false, true)) {
-                indicator.finish(playerId, player);
+                indicator.finish(playerId, player, null, false);
+            }
+        }
+
+        public void close(Component finishMessage) {
+            if (indicator != null && closed.compareAndSet(false, true)) {
+                indicator.finish(playerId, player, finishMessage, finishMessage != null);
             }
         }
     }
@@ -283,9 +372,12 @@ public class TranslationProgressIndicator {
         private int frameIndex = 0;
         private boolean visible = false;
         private boolean failed = false;
+        private boolean hardTimedOut = false;
         private long generation = 0;
+        private Component loadingMessage;
         private GenericRunnable delayedStartTask;
         private GenericRunnable pulseTask;
         private GenericRunnable clearTask;
+        private GenericRunnable hardTimeoutTask;
     }
 }

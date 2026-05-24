@@ -1,37 +1,39 @@
 package com.dominicfeliton.worldwidechat.util;
 
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
+
 /**
- * Folia implementation that mirrors {@link PaperCommonRefs} but without any
- * thread‑scheduling logic.  Folia already runs on the main server thread
- * for command‑sender messaging, and Adventure is natively available, so we
- * simply use the standard Bukkit {@code sender.sendMessage(...)} call.
+ * Folia implementation that schedules command-sender messaging onto the
+ * correct entity or global scheduler before touching Bukkit send APIs.
  */
 public class FoliaCommonRefs extends CommonRefs {
 
     @Override
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         if (sender == null || originalMessage == null) return;
-
-        // Build the final component (with or without prefix)
-        TextComponent outMessage = addPrefix
-                ? Component.text()
-                .append(main.getPluginPrefix().asComponent())
+        Component outMessage = addPrefix
+                ? main.getPluginPrefix()
                 .append(Component.space())
-                .append(originalMessage.asComponent())
-                .build()
-                : Component.text().append(originalMessage.asComponent()).build();
+                .append(originalMessage)
+                : Component.empty().append(originalMessage);
 
-        // Do not attempt to send to offline players
-        if (sender instanceof Player && !((Player) sender).isOnline()) return;
-        sender.sendMessage(outMessage);
+        wwcHelper.runSync(true, 0, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                try {
+                    sender.sendMessage(outMessage);
+                } catch (RuntimeException | LinkageError ignored) {
+                }
+            }
+        }, sender instanceof Player ? ENTITY : GLOBAL, sender instanceof Player ? new Object[]{sender} : null);
     }
 
     @Override
@@ -42,18 +44,14 @@ public class FoliaCommonRefs extends CommonRefs {
     public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
         if (playerId == null || originalMessage == null) return;
 
-        Player p = Bukkit.getPlayer(playerId);
-        if (p == null || !p.isOnline()) return;
-
-        TextComponent outMessage = addPrefix
-                ? Component.text()
-                .append(main.getPluginPrefix().asComponent())
-                .append(Component.space())
-                .append(originalMessage.asComponent())
-                .build()
-                : Component.text().append(originalMessage.asComponent()).build();
-
-        p.sendMessage(outMessage);
+        wwcHelper.runSync(true, 0, new GenericRunnable() {
+            @Override
+            protected void execute() {
+                Player p = Bukkit.getPlayer(playerId);
+                if (p == null) return;
+                sendMsg(p, originalMessage, addPrefix);
+            }
+        }, GLOBAL, null);
     }
 
     public void sendMsg(UUID playerId, Component originalMessage) {

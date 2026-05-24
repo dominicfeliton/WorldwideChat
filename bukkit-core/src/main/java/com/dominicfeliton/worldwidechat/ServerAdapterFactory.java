@@ -84,8 +84,8 @@ public class ServerAdapterFactory {
 
     public CommonRefs getCommonRefs() {
         HashMap<String, String> commonRefsDefs = new HashMap<String, String>();
-        commonRefsDefs.put("Spigot", "com.dominicfeliton.worldwidechat.util.CommonRefs");
-        commonRefsDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.util.CommonRefs");
+        commonRefsDefs.put("Spigot", "com.dominicfeliton.worldwidechat.util.SpigotCommonRefs");
+        commonRefsDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.util.SpigotCommonRefs");
         commonRefsDefs.put("Paper", "com.dominicfeliton.worldwidechat.util.PaperCommonRefs");
         commonRefsDefs.put("Folia", "com.dominicfeliton.worldwidechat.util.FoliaCommonRefs");
 

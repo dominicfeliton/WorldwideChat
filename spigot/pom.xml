@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.dominicfeliton.worldwidechat</groupId>
     <artifactId>WorldwideChat</artifactId>
-    <version>1.21</version>
+    <version>1.50</version>
   </parent>
 
   <artifactId>WorldwideChat-spigot</artifactId>
@@ -13,12 +13,13 @@
   <dependencies>
     <dependency>
       <groupId>org.mockbukkit.mockbukkit</groupId>
-      <artifactId>mockbukkit-v1.21</artifactId>
+      <artifactId>mockbukkit-v26.1.2</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
+      <version>${mockbukkit.paper.api.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

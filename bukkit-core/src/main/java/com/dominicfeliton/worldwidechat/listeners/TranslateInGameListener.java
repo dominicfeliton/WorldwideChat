@@ -6,8 +6,8 @@ import com.dominicfeliton.worldwidechat.inventory.TempItemInventory;
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
+import com.dominicfeliton.worldwidechat.util.TranslationProgressIndicator;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -30,8 +30,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
-import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class TranslateInGameListener implements Listener {
 
@@ -47,20 +47,29 @@ public class TranslateInGameListener implements Listener {
             /* Entity Names */
             try {
                 if (main.getActiveTranslator(event.getPlayer()).getTranslatingEntity() && event.getRightClicked().isValid()) {
+                    Player player = event.getPlayer();
                     final String customName = event.getRightClicked().getCustomName();
+                    TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcEntityTranslateStart", "", "&d&l", player);
                     GenericRunnable out = new GenericRunnable() {
                         @Override
                         protected void execute() {
-                            refs.sendMsg("wwcEntityTranslateStart", "", "&d&l", event.getPlayer());
-                            if (customName != null) {
-                                refs.sendMsg("wwcEntityTranslateDone", "&a&o" + refs.translateText(customName, event.getPlayer()), "&2&l", event.getPlayer());
-                            } else {
-                                refs.sendMsg("wwcEntityTranslateNoName", "", "&e&o", event.getPlayer());
+                            try {
+                                if (customName != null) {
+                                    String translatedName = refs.translateText(customName, player);
+                                    refs.finishStatusMsg(status, "wwctTranslationFinishActionBar", "", "&o&a", player);
+                                    refs.sendMsg("wwcEntityTranslateDone", "&a&o" + translatedName, "&2&l", player);
+                                } else {
+                                    refs.failStatusMsg(status, player);
+                                    refs.sendMsg("wwcEntityTranslateNoName", "", "&e&o", player);
+                                }
+                            } catch (RuntimeException | LinkageError e) {
+                                refs.failStatusMsg(status, player);
+                                throw e;
                             }
                         }
                     };
 
-                    wwcHelper.runAsync(out, ENTITY, new Object[]{event.getPlayer()});
+                    wwcHelper.runAsync(out, ASYNC, null);
                 }
             } catch (Exception e) {
                 if (!refs.serverIsStopping()) {
@@ -85,59 +94,66 @@ public class TranslateInGameListener implements Listener {
                     && event.getHand().equals(EquipmentSlot.HAND) && event.getItem() != null
                     && Material.WRITTEN_BOOK == event.getItem().getType()
                     && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
-                ItemStack currentBook = event.getItem().clone();
+                Player currPlayer = event.getPlayer();
+                BookMeta meta = (BookMeta) event.getItem().getItemMeta();
+                String title = meta.getTitle();
+                String author = meta.getAuthor();
+                BookMeta.Generation generation = meta.getGeneration();
+                List<String> pages = new ArrayList<>(meta.getPages());
+                TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
                 GenericRunnable out = new GenericRunnable() {
                     @Override
                     protected void execute() {
-                        /* Init vars */
-                        Player currPlayer = event.getPlayer();
-                        BookMeta meta = (BookMeta) currentBook.getItemMeta();
                         String outTitle;
-                        List<String> pages = meta.getPages();
                         List<String> translatedPages;
 
-                        /* Send message */
-                        refs.sendMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
-
                         /* Translate title */
-                        outTitle = refs.translateText(meta.getTitle(), currPlayer);
-                        if (outTitle.equalsIgnoreCase(meta.getTitle())) {
-                            refs.sendMsg("wwcBookTranslateTitleFail", "", "&e&o", currPlayer);
-                        } else {
-                            refs.sendMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
+                        try {
+                            outTitle = refs.translateText(title, currPlayer);
+                            if (outTitle.equalsIgnoreCase(title)) {
+                                refs.sendMsg("wwcBookTranslateTitleFail", "", "&e&o", currPlayer);
+                            } else {
+                                refs.sendMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
+                            }
+
+                            /* Translate pages */
+                            translatedPages = refs.translateText(pages, currPlayer, false);
+
+                            if (!translatedPages.equals(pages)) {
+                                /* Set completed message */
+                                refs.finishStatusMsg(status, "wwcBookDone", "", "&a&o", currPlayer);
+                            } else {
+                                refs.failStatusMsg(status, currPlayer);
+                                refs.sendMsg("wwcBookFail", "", "&e&o", currPlayer);
+                            }
+                        } catch (RuntimeException | LinkageError e) {
+                            refs.failStatusMsg(status, currPlayer);
+                            throw e;
                         }
-
-                        /* Translate pages */
-                        translatedPages = refs.translateText(pages, currPlayer, false);
-
-                        if (currentBook != null && !translatedPages.equals(pages)) {
-                            /* Set completed message */
-                            refs.sendMsg("wwcBookDone", "", "&a&o", currPlayer);
-                        } else {
-                            refs.sendMsg("wwcBookFail", "", "&e&o", currPlayer);
-                        }
-
-                        /* Create the modified book */
-                        ItemStack newBook = new ItemStack(Material.WRITTEN_BOOK);
-                        BookMeta newMeta = (BookMeta) newBook.getItemMeta();
-                        newMeta.setAuthor(meta.getAuthor());
-                        newMeta.setGeneration(meta.getGeneration());
-                        newMeta.setTitle(outTitle);
-                        newMeta.setPages(translatedPages);
-                        newBook.setItemMeta(newMeta);
 
                         /* Get update status */
                         GenericRunnable open = new GenericRunnable() {
                             @Override
                             protected void execute() {
-                                currPlayer.openBook(newBook);
+                                /* Create the modified book */
+                                ItemStack newBook = new ItemStack(Material.WRITTEN_BOOK);
+                                BookMeta newMeta = (BookMeta) newBook.getItemMeta();
+                                newMeta.setAuthor(author);
+                                newMeta.setGeneration(generation);
+                                newMeta.setTitle(outTitle);
+                                newMeta.setPages(translatedPages);
+                                newBook.setItemMeta(newMeta);
+                                try {
+                                    currPlayer.openBook(newBook);
+                                } catch (RuntimeException | LinkageError ignored) {
+                                }
                             }
                         };
 
                         wwcHelper.runSync(open, ENTITY, new Object[]{currPlayer});
                     }
                 };
-                wwcHelper.runAsync(out, GLOBAL, null);
+                wwcHelper.runAsync(out, ASYNC, null);
             }
 
             /* Sign Translation */
@@ -147,18 +163,26 @@ public class TranslateInGameListener implements Listener {
                     && event.getHand().equals(EquipmentSlot.HAND)
                     && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 /* Start sign translation */
+                Player player = event.getPlayer();
                 Sign currentSign = (Sign) event.getClickedBlock().getState();
-
-                /* Send message */
-                refs.sendMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
+                String[] currentSignText = currentSign.getLines();
+                final String[] signText = Arrays.copyOf(currentSignText, currentSignText.length);
+                Location currLoc = currentSign.getLocation();
+                TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcSignTranslateStart", "", "&d&l", player);
 
                 GenericRunnable out = new GenericRunnable() {
                     @Override
                     protected void execute() {
                         /* Init vars */
-                        String[] signText = currentSign.getLines();
-                        String[] changedSignText = refs.translateText(signText, event.getPlayer(), true);
+                        String[] changedSignText;
                         boolean textLimit = false;
+
+                        try {
+                            changedSignText = refs.translateText(signText, player, true);
+                        } catch (RuntimeException | LinkageError e) {
+                            refs.failStatusMsg(status, player);
+                            throw e;
+                        }
 
                         // Check each translated line to make sure length fits in sign
                         for (String eaStr : changedSignText) {
@@ -171,35 +195,30 @@ public class TranslateInGameListener implements Listener {
                          * Change sign for this user only, if translationNotTooLong and sign still
                          * exists
                          */
-                        Location currLoc = currentSign.getLocation();
-
                         // Prep message if sign is too long
                         String out = "\n";
                         for (String eaLine : changedSignText) {
                             if (eaLine.length() > 1)
                                 out += eaLine + "\n";
                         }
-                        final TextComponent translationNoticeMsg = Component.text()
-                                .content(refs.getPlainMsg("wwcSignDeletedOrTooLong", event.getPlayer()))
-                                .color(NamedTextColor.LIGHT_PURPLE)
+                        final Component translationNoticeMsg = Component.text(refs.getPlainMsg("wwcSignDeletedOrTooLong", player), NamedTextColor.LIGHT_PURPLE)
                                 .decoration(TextDecoration.ITALIC, true)
-                                .append(Component.text().content("\n" + "---------------")
-                                        .color(NamedTextColor.GOLD)
-                                        .append(Component.text().content(out).color(NamedTextColor.WHITE))
-                                        .append(Component.text().content("---------------")
-                                                .color(NamedTextColor.GOLD)))
-                                .build();
+                                .append(Component.text("\n" + "---------------", NamedTextColor.GOLD)
+                                        .append(Component.text(out, NamedTextColor.WHITE))
+                                        .append(Component.text("---------------", NamedTextColor.GOLD)));
 
                         boolean transFail = Arrays.equals(signText, changedSignText);
                         if (!textLimit && currLoc != null && !transFail) {
                             /* Set completed message */
-                            refs.sendMsg("wwcSignDone", "", "&a&o", event.getPlayer());
+                            refs.finishStatusMsg(status, "wwcSignDone", "", "&a&o", player);
                         } else if (transFail) {
-                            refs.sendMsg("wwcSignNotTranslated", "", "&e&o", event.getPlayer());
+                            refs.failStatusMsg(status, player);
+                            refs.sendMsg("wwcSignNotTranslated", "", "&e&o", player);
                             changedSignText = null;
                         } else {
                             /* If we are here, sign is too long or deleted msg */
-                            refs.sendMsg(event.getPlayer(), translationNoticeMsg);
+                            refs.failStatusMsg(status, player);
+                            refs.sendMsg(player, translationNoticeMsg);
                             changedSignText = null;
                         }
 
@@ -210,19 +229,19 @@ public class TranslateInGameListener implements Listener {
                                 @Override
                                 protected void execute() {
                                     try {
-                                        event.getPlayer().sendSignChange(currLoc, finalText);
+                                        player.sendSignChange(currLoc, finalText);
                                     } catch (Exception e) {
                                         refs.debugMsg("sendSignChange failed; sending translated sign text in chat.");
-                                        refs.sendMsg(event.getPlayer(), translationNoticeMsg);
+                                        refs.sendMsg(player, translationNoticeMsg);
                                     }
                                 }
                             };
 
-                            wwcHelper.runSync(sign, ENTITY, new Object[]{event.getPlayer()});
+                            wwcHelper.runSync(sign, ENTITY, new Object[]{player});
                         }
                     }
                 };
-                wwcHelper.runAsync(out, GLOBAL, null);
+                wwcHelper.runAsync(out, ASYNC, null);
             }
 
             /* Item Translation */
@@ -230,66 +249,83 @@ public class TranslateInGameListener implements Listener {
                     && getItemInMainHand(event) != null
                     && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
                 /* Start item translation */
-                ItemStack currentItem = (ItemStack) getItemInMainHand(event);
+                Player player = event.getPlayer();
+                ItemStack currentItem = ((ItemStack) getItemInMainHand(event)).clone();
+                ItemMeta meta = currentItem.getItemMeta();
+                boolean hasDisplayName = meta.hasDisplayName();
+                String displayName = hasDisplayName ? meta.getDisplayName() : "";
+                boolean hasLore = meta.hasLore();
+                List<String> itemLore = hasLore ? new ArrayList<>(meta.getLore()) : new ArrayList<>();
+                TranslationProgressIndicator.Handle status = refs.beginStatusMsg("wwcItemTranslateStart", "", "&d&l", player);
 
                 GenericRunnable out = new GenericRunnable() {
                     @Override
                     protected void execute() {
                         /* Init vars */
-                        ItemMeta meta = currentItem.getItemMeta();
                         String translatedName = "";
-                        List<String> itemLore = meta.getLore();
                         ArrayList<String> outLore = new ArrayList<String>();
 
-                        /* Send message */
-                        refs.sendMsg("wwcItemTranslateStart", "", "&d&l", event.getPlayer());
-
                         /* Translate item title */
-                        if (meta.hasDisplayName()) {
-                            translatedName = refs.translateText(meta.getDisplayName(), event.getPlayer());
-                            /* Set completed message */
-                            refs.sendMsg("wwcItemTranslateTitleDone", "", "&a&o", event.getPlayer());
-                        } else {
-                            refs.sendMsg("wwcItemTranslateTitleStock", "", "&e&o", event.getPlayer());
-                            // Stock items not supported
-                        }
-
-                        // If we are stock item with no lore
-                        if (!meta.hasLore() && !meta.hasDisplayName()) return;
-
-                        /* Translate item lore */
-                        if (meta.hasLore()) {
-                            refs.sendMsg("wwcItemTranslateLoreStart", "", "&d&l", event.getPlayer());
-                            outLore = new ArrayList<String>();
-                            for (String eaLine : itemLore) {
-                                String translatedLine = refs.translateText(eaLine, event.getPlayer());
-                                outLore.add(translatedLine);
+                        try {
+                            if (hasDisplayName) {
+                                translatedName = refs.translateText(displayName, player);
+                                if (!hasLore) {
+                                    refs.finishStatusMsg(status, "wwcItemTranslateTitleDone", "", "&a&o", player);
+                                } else {
+                                    refs.sendStatusMsg("wwcItemTranslateTitleDone", "", "&a&o", player);
+                                }
+                            } else {
+                                refs.sendMsg("wwcItemTranslateTitleStock", "", "&e&o", player);
+                                // Stock items not supported
                             }
-                            /* Set completed message */
-                            refs.sendMsg("wwcItemTranslateLoreDone", "", "&a&o", event.getPlayer());
-                        }
 
-                        /* Create "fake" item to be displayed to user */
-                        ItemStack translatedItem = currentItem.clone();
-                        ItemMeta translatedMeta = translatedItem.getItemMeta();
-                        translatedMeta.setDisplayName(translatedName);
-                        translatedMeta.setLore(outLore);
-                        translatedItem.setItemMeta(translatedMeta);
+                            // If we are stock item with no lore
+                            if (!hasLore && !hasDisplayName) {
+                                refs.failStatusMsg(status, player);
+                                return;
+                            }
+
+                            /* Translate item lore */
+                            if (hasLore) {
+                                refs.sendStatusMsg("wwcItemTranslateLoreStart", "", "&d&l", player);
+                                outLore = new ArrayList<String>();
+                                for (String eaLine : itemLore) {
+                                    String translatedLine = refs.translateText(eaLine, player);
+                                    outLore.add(translatedLine);
+                                }
+                                /* Set completed message */
+                                refs.finishStatusMsg(status, "wwcItemTranslateLoreDone", "", "&a&o", player);
+                            }
+                        } catch (RuntimeException | LinkageError e) {
+                            refs.failStatusMsg(status, player);
+                            throw e;
+                        }
 
                         /* Return fake item */
-                        if ((!translatedItem.getItemMeta().getDisplayName().equals("") || (!translatedItem.hasItemMeta() || !translatedItem.getItemMeta().getLore().isEmpty()))) {
+                        if (!translatedName.equals("") || !outLore.isEmpty()) {
+                            final String finalTranslatedName = translatedName;
+                            final List<String> finalOutLore = new ArrayList<>(outLore);
                             GenericRunnable open = new GenericRunnable() {
                                 @Override
                                 protected void execute() {
-                                    new TempItemInventory(translatedItem, event.getPlayer()).getTempItemInventory().open(event.getPlayer());
+                                    /* Create "fake" item to be displayed to user */
+                                    ItemStack translatedItem = currentItem.clone();
+                                    ItemMeta translatedMeta = translatedItem.getItemMeta();
+                                    translatedMeta.setDisplayName(finalTranslatedName);
+                                    translatedMeta.setLore(finalOutLore);
+                                    translatedItem.setItemMeta(translatedMeta);
+                                    try {
+                                        new TempItemInventory(translatedItem, player).getTempItemInventory().open(player);
+                                    } catch (RuntimeException | LinkageError ignored) {
+                                    }
                                 }
                             };
 
-                            wwcHelper.runSync(open, ENTITY, new Object[]{event.getPlayer()});
+                            wwcHelper.runSync(open, ENTITY, new Object[]{player});
                         }
                     }
                 };
-                wwcHelper.runAsync(out, GLOBAL, null);
+                wwcHelper.runAsync(out, ASYNC, null);
             }
         } catch (Exception e) {
             if (!refs.serverIsStopping()) {

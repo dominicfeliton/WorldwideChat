@@ -5,6 +5,7 @@ import com.dominicfeliton.worldwidechat.util.FoliaTaskWrapper;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
 import net.kyori.adventure.text.Component;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
@@ -178,5 +179,37 @@ public class FoliaWorldwideChatHelper extends PaperWorldwideChatHelper {
     @Override
     public void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, GenericRunnable in, SchedulerType schedulerType, Object[] schedulerObj) {
         runSyncRepeating(serverMustBeRunning, 0, repeatTime, in, schedulerType, schedulerObj);
+    }
+
+    @Override
+    public void sendActionBar(Component message, CommandSender sender) {
+        if (!(sender instanceof Entity entity) || message == null) return;
+
+        GenericRunnable delivery = new GenericRunnable() {
+            @Override
+            protected void execute() {
+                sendActionBarNow(sender, message);
+            }
+        };
+
+        try {
+            if (Bukkit.isOwnedByCurrentRegion(entity)) {
+                delivery.run();
+                return;
+            }
+        } catch (RuntimeException | LinkageError ignored) {
+        }
+
+        try {
+            runSync(true, 0, delivery, SchedulerType.ENTITY, new Object[]{entity});
+        } catch (RuntimeException | LinkageError ignored) {
+        }
+    }
+
+    private void sendActionBarNow(CommandSender sender, Component message) {
+        try {
+            sender.sendActionBar(message);
+        } catch (RuntimeException | LinkageError ignored) {
+        }
     }
 }
