@@ -821,13 +821,13 @@ Messages:
     गया।
   wwcConfigGUIToggleGuidelinesAIChecksButton: टॉगल दिशानिर्देश AI चेक
   wwctTranslationErrorActionBar: एरर
-  wwcConfigConversationObjectTranslationConcurrencyInput: वर्तमान ऑब्जेक्ट अनुवाद
-    समवर्ती सीमा {0} है। 1 से 4 तक कोई संख्या टाइप करें।
   wwcConfigGUIObjectTranslationConcurrencyButton: ऑब्जेक्ट ट्रांसलेशन कॉन्करेंसी बदलें
-  wwcConfigObjectTranslationConcurrencyInvalid: config.yml में अमान्य ऑब्जेक्ट अनुवाद
-    समवर्ती सीमा सेट की गई है। डिफ़ॉल्ट रूप से 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: ऑब्जेक्ट अनुवाद समवर्ती
     सीमा सफलतापूर्वक सेट की गई।
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: ऑब्जेक्ट अनुवाद समवर्ती
-    सीमा 1 से 4 तक होनी चाहिए।
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ऑब्जेक्ट अनुवाद
+    समवर्ती सीमा 1 या उससे अधिक होनी चाहिए।
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: वर्तमान ऑब्जेक्ट
+    अनुवाद समवर्ती सीमा {0} है। नंबर 1 या इससे बड़ा टाइप करें।
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml में अमान्य ऑब्जेक्ट
+    अनुवाद समवर्ती सीमा सेट की गई है। मान कम से कम 1 होना चाहिए। डिफ़ॉल्ट रूप से 4...
 

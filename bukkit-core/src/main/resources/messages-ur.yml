@@ -810,13 +810,14 @@ Messages:
     کیا۔
   wwcConfigGUIToggleGuidelinesAIChecksButton: AI چیک کے رہنما خطوط ٹوگل
   wwctTranslationErrorActionBar: غلطی
-  wwcConfigConversationObjectTranslationConcurrencyInput: موجودہ آبجیکٹ ترجمے کی ہم
-    آہنگ حد {0} ہے۔ 1 سے 4 تک ایک نمبر ٹائپ کریں۔
   wwcConfigGUIObjectTranslationConcurrencyButton: آبجیکٹ ترجمہ ہم آہنگ تبدیل کریں
-  wwcConfigObjectTranslationConcurrencyInvalid: غلط آبجیکٹ ترجمہ ہم آہنگی کی حد config.yml
-    میں سیٹ کی گئی ہے۔ 4 پر ڈیفالٹ ہو رہا ہے...
   wwcConfigConversationObjectTranslationConcurrencySuccess: آبجیکٹ ترجمہ ہم آہنگی
     کی حد کامیابی کے ساتھ
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: آبجیکٹ ترجمہ ہم آہنگی
-    کی حد 1 سے 4 تک ہونی چاہئے۔
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: آبجیکٹ ترجمہ ہم
+    آہنگی کی حد 1 یا اس سے زیادہ ہونی چاہئے۔
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: موجودہ آبجیکٹ ترجمے
+    کی ہم آہنگ حد {0} ہے۔ نمبر 1 یا اس سے زیادہ ٹائپ کریں۔
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: غلط آبجیکٹ ترجمہ ہم آہنگی کی
+    حد config.yml میں سیٹ کی گئی ہے۔ قیمت کم از کم 1 ہونی چاہئے۔ 4 پر ڈیفالٹ ہو رہا
+    ہے...
 

@@ -875,16 +875,16 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI Compatible wurde erfolgreich umgeschaltet.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Richtlinien und KI-Prüfungen umschalten
   wwctTranslationErrorActionBar: Fehler
-  wwcConfigConversationObjectTranslationConcurrencyInput: Das aktuelle Limit für die
-    Parallelität der Objektübersetzung ist {0}. Geben Sie eine Zahl zwischen 1 und
-    4 ein.
   wwcConfigGUIObjectTranslationConcurrencyButton: Parallelität der Objektübersetzung
     ändern
-  wwcConfigObjectTranslationConcurrencyInvalid: Ungültiges Limit für die Parallelität
-    der Objektübersetzung, das in config.yml festgelegt wurde. Die Standardeinstellung
-    ist 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Das Limit für die Parallelität
     der Objektübersetzung wurde erfolgreich festgelegt.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Das Limit für die Parallelität
-    der Objektübersetzung muss zwischen 1 und 4 liegen.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Der Grenzwert für
+    die Parallelität der Objektübersetzung muss mindestens 1 sein.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Das aktuelle Limit
+    für die Parallelität der Objektübersetzung ist {0}. Geben Sie eine Zahl 1 oder
+    höher ein.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ungültiges Limit für die Parallelität
+    der Objektübersetzung, das in config.yml festgelegt wurde. Der Wert muss mindestens
+    1 sein. Die Standardeinstellung ist 4...
 

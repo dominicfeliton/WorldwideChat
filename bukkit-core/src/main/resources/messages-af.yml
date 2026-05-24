@@ -801,14 +801,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI versoenbaar suksesvol ingeskakel.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Skakel riglyne AI-kontroles
   wwctTranslationErrorActionBar: Fout
-  wwcConfigConversationObjectTranslationConcurrencyInput: Die huidige gelyktydige
-    limiet vir voorwerpvertaling is {0}. Tik 'n nommer van 1 tot 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Verander gelyktydige vertaling van
     voorwerp
-  wwcConfigObjectTranslationConcurrencyInvalid: Ongeldige voorwerpvertalingslimiet
-    gestel in config.yml. Standaard op 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Objekvertaling gelyktydige
     limiet suksesvol gestel.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Die gelyktydige limiet
-    vir voorwerpvertaling moet van 1 tot 4 wees.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Die gelyktydige
+    limiet vir voorwerpvertaling moet 1 of groter wees.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Die huidige gelyktydige
+    limiet vir voorwerpvertaling is {0}. Tik 'n nommer 1 of groter.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ongeldige voorwerpvertalingslimiet
+    gestel in config.yml. Die waarde moet minstens 1 wees. Standaard op 4...
 

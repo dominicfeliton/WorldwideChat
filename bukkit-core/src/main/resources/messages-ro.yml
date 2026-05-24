@@ -845,14 +845,15 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Comutați liniile directoare Verificări
     AI
   wwctTranslationErrorActionBar: Eroare
-  wwcConfigConversationObjectTranslationConcurrencyInput: Limita curentă de concurență
-    a traducerii obiectelor este {0}. Introduceți un număr de la 1 la 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Modificați concurența traducerii
     obiectelor
-  wwcConfigObjectTranslationConcurrencyInvalid: Limita de concurență a traducerii
-    obiectelor nevalidă setată în config.yml. Implicit la 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Limita de concurență a
     traducerii obiectelor setată cu succes.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Limita de concurență a
-    traducerii obiectelor trebuie să fie de la 1 la 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Limita de concurență
+    a traducerii obiectelor trebuie să fie de 1 sau mai mare.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Limita curentă de
+    concurență a traducerii obiectelor este {0}. Tastați un număr 1 sau mai mare.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limita de concurență a traducerii
+    obiectelor nevalidă setată în config.yml. Valoarea trebuie să fie de cel puțin
+    1. Implicit la 4...
 

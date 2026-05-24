@@ -793,13 +793,14 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Yönergeleri Yapay Zeka Kontrollerini
     Değiştir
   wwctTranslationErrorActionBar: Hata
-  wwcConfigConversationObjectTranslationConcurrencyInput: Geçerli nesne çevirme eşzamanlılığı
-    sınırı {0} 'dir. 1'den 4'e kadar bir sayı yazın.
   wwcConfigGUIObjectTranslationConcurrencyButton: Nesne Çevirisi Eşzamanlılığını Değiştir
-  wwcConfigObjectTranslationConcurrencyInvalid: config.yml içinde ayarlanmış geçersiz
-    nesne çeviri eşzamanlılık sınırı. Varsayılan olarak 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Nesne çevirisi eşzamanlılık
     sınırı başarıyla ayarlandı.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Nesne çevirisi eşzamanlılık
-    sınırı 1'den 4'e kadar olmalıdır.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Nesne çevirisi
+    eşzamanlılık sınırı 1 veya daha büyük olmalıdır.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Geçerli nesne çevirme
+    eşzamanlılığı sınırı {0} 'dir. 1 veya daha büyük bir sayı yazın.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml içinde ayarlanmış
+    geçersiz nesne çeviri eşzamanlılık sınırı. Değer en az 1 olmalıdır. Varsayılan
+    olarak 4...
 

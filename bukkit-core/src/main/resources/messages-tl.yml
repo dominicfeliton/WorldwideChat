@@ -887,14 +887,15 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Matagumpay na i-toplug ang OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: I-Toggle Guidelines Mga Check sa AI
   wwctTranslationErrorActionBar: Error
-  wwcConfigConversationObjectTranslationConcurrencyInput: Ang kasalukuyang limitasyon
-    ng pagsasalin ng bagay ay {0}. Mag-type ng isang numero mula 1 hanggang 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Baguhin ang Kasabay ng Pagsasalin
     ng Object
-  wwcConfigObjectTranslationConcurrencyInvalid: Hindi wastong limitasyon sa pagsasalin
-    ng bagay na nakatakda sa config.yml. Pag-default sa 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Matagumpay na itinakda
     ang limitasyon ng parehong pagsasalin ng
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Ang limitasyon ng parehong
-    pagsasalin ng bagay ay dapat mula 1 hanggang 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Ang limitasyon
+    ng parehong pagsasalin ng bagay ay dapat na 1 o mas malaki.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Ang kasalukuyang
+    limitasyon ng pagsasalin ng bagay ay {0}. Mag-type ng isang numero 1 o mas malaki.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Hindi wastong limitasyon sa
+    pagsasalin ng bagay na nakatakda sa config.yml. Ang halaga ay dapat na hindi bababa
+    sa 1. Pag-default sa 4...
 

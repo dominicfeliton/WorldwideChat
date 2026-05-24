@@ -809,13 +809,13 @@ Messages:
     árangri.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Skiptu um leiðbeiningar um AI athuganir
   wwctTranslationErrorActionBar: Villa
-  wwcConfigConversationObjectTranslationConcurrencyInput: Núverandi samtímamörk hlutarþýðingar
-    er {0}. Sláðu inn númer frá 1 til 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Breyta samtíma þýðingar á hlutum
-  wwcConfigObjectTranslationConcurrencyInvalid: Ógild hlutarþýðingartakmörk sett í
-    config.yml. Sjálfgefið að 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Samtímamörk fyrir þýðingu
     hlutar sett með góðum árangri.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Samtímamörk hlutarþýðingar
-    verða að vera frá 1 til 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Samtímamörk hlutarþýðingar
+    verða að vera 1 eða hærri.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Núverandi samtímamörk
+    hlutarþýðingar er {0}. Sláðu inn númer 1 eða stærra.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ógild hlutarþýðingartakmörk
+    sett í config.yml. Gildi verður að vera að minnsta kosti 1. Sjálfgefið að 4...
 

@@ -817,14 +817,15 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Превключване на насоки за проверки на
     AI
   wwctTranslationErrorActionBar: Грешка
-  wwcConfigConversationObjectTranslationConcurrencyInput: Текущата граница за едновременност
-    на превод на обекти е {0}. Въведете число от 1 до 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Промяна на едновременността на превода
     на обекти
-  wwcConfigObjectTranslationConcurrencyInvalid: Невалиден лимит за съвместимост на
-    превод на обекти, зададен в config.yml. По подразбиране на 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Лимитът за едновременност
     на превод на обекти е зададен успешно.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Ограничението за едновременност
-    на превода на обекти трябва да бъде от 1 до 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Ограничението за
+    едновременност на превода на обекти трябва да бъде 1 или по-голямо.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Текущата граница
+    за едновременност на превод на обекти е {0}. Въведете число 1 или по-голямо.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Невалиден лимит за съвместимост
+    на превод на обекти, зададен в config.yml. Стойността трябва да бъде най-малко
+    1. По подразбиране на 4...
 

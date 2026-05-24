@@ -279,15 +279,15 @@ public class ConfigurationHandler {
         // Object Translation Concurrency Limit
         try {
             int objectTranslationConcurrencyLimit = mainConfig.getInt("General.objectTranslationConcurrencyLimit");
-            if (objectTranslationConcurrencyLimit >= 1 && objectTranslationConcurrencyLimit <= 4) {
+            if (objectTranslationConcurrencyLimit >= 1) {
                 main.setObjectTranslationConcurrencyLimit(objectTranslationConcurrencyLimit);
             } else {
                 main.setObjectTranslationConcurrencyLimit(4);
-                main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyInvalid"));
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyMinimumInvalid"));
             }
         } catch (Exception e) {
             main.setObjectTranslationConcurrencyLimit(4);
-            main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyInvalid"));
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyMinimumInvalid"));
         }
         // bStats
         if (mainConfig.getBoolean("General.enablebStats")) {

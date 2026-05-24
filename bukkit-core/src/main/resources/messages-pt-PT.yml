@@ -834,14 +834,15 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Guias de alternância Verificações de
     IA
   wwctTranslationErrorActionBar: Erro
-  wwcConfigConversationObjectTranslationConcurrencyInput: O limite de concorrência
-    de tradução de objectos actual é {0}. Introduza um número de 1 a 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Alterar Concorrência de Tradução
     de Objetos
-  wwcConfigObjectTranslationConcurrencyInvalid: Limite de concorrência de tradução
-    de objectos inválido definido em config.yml. A predefinição é 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Limite de concorrência
     de tradução de objectos definido com êxito.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: O limite de concorrência
-    de tradução de objectos deve ser de 1 a 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: O limite de concorrência
+    de tradução de objectos deve ser igual ou superior a 1.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: O limite de concorrência
+    de conversão de objectos actual é {0}. Introduza um número 1 ou superior.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limite de concorrência de tradução
+    de objectos inválido definido em config.yml. O valor deve ser pelo menos 1. A
+    predefinição é 4...
 

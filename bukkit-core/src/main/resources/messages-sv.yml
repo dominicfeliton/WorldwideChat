@@ -801,13 +801,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Lyckades växla OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Växla riktlinjer AI-kontroller
   wwctTranslationErrorActionBar: Fel
-  wwcConfigConversationObjectTranslationConcurrencyInput: Den aktuella gränsen för
-    samtidighet för objektoversättning är {0}. Skriv ett nummer från 1 till 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Ändra samtidighet för objektoversättning
-  wwcConfigObjectTranslationConcurrencyInvalid: Ogiltig gräns för samtidighet för
-    objektöversättning inställd i config.yml. Standardinställt till 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Samtidsgräns för objektoversättning
     har ställts in framgångsrikt.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Objektöversättningens
-    samtidighetsgräns måste vara från 1 till 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Samtidsgränsen
+    för objektoversättning måste vara 1 eller högre.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Den aktuella gränsen
+    för samtidighet för objektoversättning är {0}. Skriv ett nummer 1 eller större.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ogiltig gräns för samtidighet
+    för objektöversättning inställd i config.yml. Värdet måste vara minst 1. Standardinställt
+    till 4...
 

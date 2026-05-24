@@ -789,13 +789,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: წარმატებით ჩართული OpenAI თავსებადი.
   wwcConfigGUIToggleGuidelinesAIChecksButton: AI შემოწმების მითითების შეცვლა
   wwctTranslationErrorActionBar: შეცდომა
-  wwcConfigConversationObjectTranslationConcurrencyInput: ობიექტის თარგმანის თანამედროვე
-    ლიმიტია {0}. ჩაწერეთ რიცხვი 1-დან 4-მდე.
   wwcConfigGUIObjectTranslationConcurrencyButton: შეცვალეთ ობიექტის თარგმანის
-  wwcConfigObjectTranslationConcurrencyInvalid: არასწორი ობიექტის თარგმანის თანამედროვე
-    ლიმიტი დაყენებულია config.yml-ში. არ შეესაბამება 4-ს...
   wwcConfigConversationObjectTranslationConcurrencySuccess: ობიექტის თარგმანის ერთდროულობის
     ლიმიტი წარმატებით
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: ობიექტის თარგმანის თანამედროვე
-    ლიმიტი უნდა იყოს 1-დან 4-მდე.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ობიექტის თარგმანის
+    თანამედროვე ლიმიტი უნდა იყოს 1 ან მეტი.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: ობიექტის თარგმანის
+    თანამედროვე ლიმიტია {0}. ჩაწერეთ ნომერი 1 ან მეტი.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: არასწორი ობიექტის თარგმანის
+    თანამედროვე ლიმიტი დაყენებულია config.yml-ში. ღირებულება უნდა იყოს მინიმუმ 1.
+    არ შეესაბამება 4-ს...
 

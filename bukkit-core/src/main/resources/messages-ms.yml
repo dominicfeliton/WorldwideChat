@@ -791,13 +791,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Berjaya menukar OpenAI Serasi.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Tukar Garis Panduan Cek AI
   wwctTranslationErrorActionBar: Ralat
-  wwcConfigConversationObjectTranslationConcurrencyInput: Had serentak terjemahan
-    objek semasa ialah {0}. Taipkan nombor dari 1 hingga 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Tukar Kesamaan Terjemahan Objek
-  wwcConfigObjectTranslationConcurrencyInvalid: Had serentak terjemahan objek tidak
-    sah ditetapkan dalam config.yml. Lalai kepada 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Had serentak terjemahan
     objek ditetapkan dengan jayanya.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Had serentak terjemahan
-    objek mestilah dari 1 hingga 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Had serentak terjemahan
+    objek mestilah 1 atau lebih besar.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Had serentak terjemahan
+    objek semasa ialah {0}. Taipkan nombor 1 atau lebih besar.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Had serentak terjemahan objek
+    tidak sah ditetapkan dalam config.yml. Nilai mestilah sekurang-kurangnya 1. Lalai
+    kepada 4...
 

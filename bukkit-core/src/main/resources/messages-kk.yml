@@ -789,13 +789,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI үйлесімді сәтті ауыстырылды.
   wwcConfigGUIToggleGuidelinesAIChecksButton: AI тексерулерінің нұсқауларын ауыстыру
   wwctTranslationErrorActionBar: Қате
-  wwcConfigConversationObjectTranslationConcurrencyInput: Объектінің аудармасының
-    ағымдағы сәйкестік шегі {0} болып табылады. 1-ден 4-ке дейінгі санды теріңіз.
   wwcConfigGUIObjectTranslationConcurrencyButton: Нысан аудармасының сәйкестігін өзгерту
-  wwcConfigObjectTranslationConcurrencyInvalid: Config.yml ішінде орнатылған жарамсыз
-    нысан аудармасының сәйкестік шегі. 4-ке дефолт...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Нысанды аударудың бір
     мезгілдік шегі сәтті орнатылды.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Нысан аудармасының сәйкестік
-    шегі 1-ден 4-ке дейін болуы керек.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Нысан аудармасының
+    сәйкестік шегі 1 немесе одан жоғары болуы керек.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Объектінің аудармасының
+    ағымдағы сәйкестік шегі {0} болып табылады. 1 немесе одан үлкен санды теріңіз.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Config.yml ішінде орнатылған
+    жарамсыз нысан аудармасының сәйкестік шегі. Мәні кем дегенде 1 болуы керек. 4-ке
+    дефолт...
 

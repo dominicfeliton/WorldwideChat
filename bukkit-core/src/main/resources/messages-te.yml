@@ -807,13 +807,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI అనుకూలంగా విజయవంతంగా టోగల్ చేయబడింది.
   wwcConfigGUIToggleGuidelinesAIChecksButton: మార్గదర్శకాలను AI తనిఖీలను టోగుల్ చేయండి
   wwctTranslationErrorActionBar: లోపం
-  wwcConfigConversationObjectTranslationConcurrencyInput: ప్రస్తుత వస్తువు అనువాద
-    సమసమాన పరిమితి {0}. 1 నుండి 4 వరకు సంఖ్యను టైప్ చేయండి.
   wwcConfigGUIObjectTranslationConcurrencyButton: ఆబ్జెక్ట్ అనువాద సమానతను మార్చండి
-  wwcConfigObjectTranslationConcurrencyInvalid: చెల్లని వస్తువు అనువాద సమసమాన పరిమితి
-    config.yml లో సెట్ చేయబడింది. 4 కు డిఫాల్టింగ్...
   wwcConfigConversationObjectTranslationConcurrencySuccess: ఆబ్జెక్ట్ అనువాద సమసమాన
     పరిమితి విజయవంతంగా సెట్ చేయబడింది.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: ఆబ్జెక్ట్ అనువాద సమసమాన
-    పరిమితి 1 నుండి 4 వరకు ఉండాలి.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ఆబ్జెక్ట్ అనువాద
+    సమసమాన పరిమితి 1 లేదా అంతకంటే ఎక్కువ ఉండాలి.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: ప్రస్తుత ఆబ్జెక్ట్
+    అనువాద సమసమాన పరిమితి {0}. సంఖ్య 1 లేదా అంతకంటే ఎక్కువ టైప్ చేయండి.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: చెల్లని వస్తువు అనువాద సమసమాన
+    పరిమితి config.yml లో సెట్ చేయబడింది. విలువ కనీసం 1 ఉండాలి. 4 కు డిఫాల్టింగ్...
 

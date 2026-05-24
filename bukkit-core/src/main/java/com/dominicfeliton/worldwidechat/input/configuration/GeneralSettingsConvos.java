@@ -45,7 +45,7 @@ public class GeneralSettingsConvos {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
-            return refs.getPlainMsg("wwcConfigConversationObjectTranslationConcurrencyInput",
+            return refs.getPlainMsg("wwcConfigConversationObjectTranslationConcurrencyMinimumInput",
                     "&6" + main.getObjectTranslationConcurrencyLimit(),
                     "&b",
                     currPlayer);
@@ -54,9 +54,9 @@ public class GeneralSettingsConvos {
         @Override
         protected InputResult acceptValidatedInput(@NotNull InputContext context, @NotNull Number input) {
             int limit = input.intValue();
-            if (limit < 1 || limit > 4) {
+            if (limit < 1) {
                 CommonRefs refs = main.getServerFactory().getCommonRefs();
-                refs.sendMsg("wwcConfigConversationObjectTranslationConcurrencyInvalid", "", "&c", context.getForWhom());
+                refs.sendMsg("wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid", "", "&c", context.getForWhom());
                 return InputResult.repeat();
             }
 

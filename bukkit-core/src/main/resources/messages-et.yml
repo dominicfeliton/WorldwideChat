@@ -772,13 +772,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Edukalt lülitatud OpenAI ühilduv.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Lülitage juhised tehisintellekti kontrollid
   wwctTranslationErrorActionBar: Viga
-  wwcConfigConversationObjectTranslationConcurrencyInput: Praegune objekti tõlke samaaegse
-    piirmäär on {0}. Sisestage number vahemikus 1 kuni 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Objektide tõlke samaaegsuse muutmine
-  wwcConfigObjectTranslationConcurrencyInvalid: Vale objektide tõlke samaaegse piirmäär
-    on määratud jaotises config.yml. Vaikimisi on 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Objektide tõlke samaaegse
     piirmäär seati edukalt.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Objekti tõlke samaaegse
-    piirmäär peab olema vahemikus 1 kuni 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Objekti tõlke samaaegse
+    piirmäär peab olema 1 või suurem.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Praegune objekti
+    tõlke samaaegse piirmäär on {0}. Sisestage number 1 või suurem.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Vale objektide tõlke samaaegse
+    piirmäär on määratud jaotises config.yml. Väärtus peab olema vähemalt 1. Vaikimisi
+    on 4...
 

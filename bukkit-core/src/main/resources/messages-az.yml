@@ -790,14 +790,15 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI Uyğunluğunu uğurla dəyişdirdi.
   wwcConfigGUIToggleGuidelinesAIChecksButton: AI yoxlamalarını dəyişdirin
   wwctTranslationErrorActionBar: Səhv
-  wwcConfigConversationObjectTranslationConcurrencyInput: Mövcud obyekt tərcümə uyğunluğu
-    həddi {0} -dir. 1-dən 4-ə qədər bir nömrə yazın.
   wwcConfigGUIObjectTranslationConcurrencyButton: Obyekt tərcüməsinin uyğunluğunu
     dəyişin
-  wwcConfigObjectTranslationConcurrencyInvalid: Config.yml-də təyin edilmiş etibarsız
-    obyekt tərcüməsi uyğunluğu həddi. Default olaraq 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Obyekt tərcüməsi eyni
     vaxtda limiti uğurla təyin edildi.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Obyekt tərcüməsi paralel
-    həddi 1-dən 4-ə qədər olmalıdır.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Obyekt tərcüməsi
+    paralel həddi 1 və ya daha çox olmalıdır.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Mövcud obyekt tərcümə
+    uyğunluğu həddi {0} -dir. 1 və ya daha böyük bir nömrəni yazın.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Config.yml-də təyin edilmiş
+    etibarsız obyekt tərcüməsi uyğunluğu həddi. Dəyər ən azı 1 olmalıdır. Default
+    olaraq 4...
 

@@ -813,14 +813,15 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Kompatibbli OpenAI imdawwar b'suċċess.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Toggle Linji Gwida Kontrolli tal-AI
   wwctTranslationErrorActionBar: Żball
-  wwcConfigConversationObjectTranslationConcurrencyInput: Il-limitu kurrenti ta' konkurrenza
-    tat-traduzzjoni tal-oġġett huwa {0}. Ittajpja numru minn 1 sa 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Bidla l-Konkurrenza tat-Traduzzjoni
     tal-Oġġ
-  wwcConfigObjectTranslationConcurrencyInvalid: Limitu ta 'konkurrenza ta' traduzzjoni
-    ta' oġġett invalidu stabbilit f'config.yml. Insuffiċjenza għal 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Limitu ta' konkurrenza
     tat-traduzzjoni tal-oġġett stabbilit b'suċċ
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Il-limitu ta' konkurrenza
-    tat-traduzzjoni tal-oġġett għandu jkun minn 1 sa 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Il-limitu ta' konkurrenza
+    tat-traduzzjoni tal-oġġett għandu jkun ta' 1 jew akbar.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Il-limitu kurrenti
+    tat-traduzzjoni tal-oġġett huwa {0}. Ittajpja numru 1 jew akbar.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limitu ta 'konkurrenza ta'
+    traduzzjoni ta' oġġett invalidu stabbilit f'config.yml. Il-valur għandu jkun mill-inqas
+    1. Insuffiċjenza għal 4...
 

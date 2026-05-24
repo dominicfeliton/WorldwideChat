@@ -828,13 +828,15 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI അനുയോജ്യമായ വിജയകരമായി ടോഗിൾ ചെയ്തു.
   wwcConfigGUIToggleGuidelinesAIChecksButton: AI ചെക്കുകൾ ടോഗിൾ മാർഗ്ഗനിർദ്ദേശങ്ങൾ
   wwctTranslationErrorActionBar: പിശക്
-  wwcConfigConversationObjectTranslationConcurrencyInput: നിലവിലെ ഒബ്ജക്റ്റ് ട്രാൻസ്ലേഷൻ
-    കൺകറൻസി പരിധി {0} ആണ്. 1 മുതൽ 4 വരെ ഒരു നമ്പർ ടൈപ്പുചെയ്യുക.
   wwcConfigGUIObjectTranslationConcurrencyButton: ഒബ്ജക്റ്റ് വിവർത്തന സമത്വം മാറ്റുക
-  wwcConfigObjectTranslationConcurrencyInvalid: അസാധുവായ ഒബ്ജക്റ്റ് വിവർത്തന കൺകറൻസി
-    പരിധി config.yml ൽ സജ്ജീകരിച്ചിരിക്കുന്നു. 4 ലേക്ക് ഡിഫോൾട്ട് ചെയ്യുന്നു...
   wwcConfigConversationObjectTranslationConcurrencySuccess: ഒബ്ജക്റ്റ് വിവർത്തന സമാന
     പരിധി വിജയകരമായി സജ്ജമാക്കി.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: ഒബ്ജക്റ്റ് വിവർത്തന കൺകറൻസി
-    പരിധി 1 മുതൽ 4 വരെയായിരിക്കണം.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ഒബ്ജക്റ്റ് വിവർത്തന
+    സമന്വയ പരിധി 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലായിരിക്കണം.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: നിലവിലെ ഒബ്ജക്റ്റ്
+    ട്രാൻസ്ലേഷൻ കൺകറൻസി പരിധി {0} ആണ്. ഒരു നമ്പർ 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലോ ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: അസാധുവായ ഒബ്ജക്റ്റ് വിവർത്തന
+    കൺകറൻസി പരിധി config.yml ൽ സജ്ജീകരിച്ചിരിക്കുന്നു. മൂല്യം കുറഞ്ഞത് 1 ആയിരിക്കണം.
+    4 ലേക്ക് ഡിഫോൾട്ട് ചെയ്യുന്നു...
 

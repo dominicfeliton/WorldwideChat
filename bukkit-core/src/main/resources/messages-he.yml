@@ -715,13 +715,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: החלפת תואמת OpenAI בהצלחה.
   wwcConfigGUIToggleGuidelinesAIChecksButton: החלפת הנחיות בדיקות AI
   wwctTranslationErrorActionBar: שגיאה
-  wwcConfigConversationObjectTranslationConcurrencyInput: מגבלת המקבילות הנוכחית של
-    תרגום אובייקטים היא {0}. הקלד מספר מ -1 עד 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: שינוי במקביל לתרגום אובייקט
-  wwcConfigObjectTranslationConcurrencyInvalid: מגבלת מקבילות תרגום אובייקטים לא חוקית
-    שהוגדרה ב- config.yml. ברירת מחדל ל -4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: מגבלת מקבילות תרגום אובייקטים
     מוגדרת בהצלחה.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: מגבלת מקבילות תרגום אובייקט
-    חייבת להיות בין 1 ל -4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: מגבלת מקבילות תרגום
+    אובייקט חייבת להיות 1 ומעלה.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: מגבלת המקבילות הנוכחית
+    של תרגום אובייקטים היא {0}. הקלד מספר 1 ומעלה.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: מגבלת מקבילות תרגום אובייקטים
+    לא חוקית שהוגדרה ב- config.yml. הערך חייב להיות לפחות 1. ברירת מחדל ל -4...
 

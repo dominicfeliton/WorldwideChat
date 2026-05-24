@@ -814,13 +814,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Ku guul la wareegay OpenAI oo sameynta.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Tilmaamaha Toggle Xeegiyada AI
   wwctTranslationErrorActionBar: Khalad
-  wwcConfigConversationObjectTranslationConcurrencyInput: Xadduudda tarjimada hadda
-    waxa uu yahay {0}. Nooca tiro laga bilaabo 1 ilaa 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Badel Tarjumada Object Concuracy
-  wwcConfigObjectTranslationConcurrencyInvalid: Xadduudda tarjimada ahayn ee xaddaa
-    la dhigay config.yml. Defaulting in 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Tarjumada Object Concurrency
     xilliga oo si guul la dhigay.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Xadduudda tarjimada waa
-    inay tahay 1 ilaa 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Xadduudda tarjimada
+    waa inuu noqdo 1 ama ka weyn.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Xadduudda tarjimada
+    hadda waxa uu yahay {0}. Nooca nambar 1 ama ka weyn.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Xadduudda tarjimada ahayn ee
+    xaddaa la dhigay config.yml. Qiimaha waa in uu noqdo ugu yaraan 1. Defaulting
+    in 4...
 

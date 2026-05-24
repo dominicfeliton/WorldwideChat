@@ -868,13 +868,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Ενεργοποιήθηκε επιτυχώς το OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Εναλλαγή οδηγιών Ελέγχου AI
   wwctTranslationErrorActionBar: Σφάλμα
-  wwcConfigConversationObjectTranslationConcurrencyInput: Το τρέχον όριο ταυτόχρονης
-    μετάφρασης αντικειμένων είναι {0}. Πληκτρολογήστε έναν αριθμό από 1 έως 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Αλλαγή ταυτόχρονης μετάφρασης αντικειμένου
-  wwcConfigObjectTranslationConcurrencyInvalid: Μη έγκυρο όριο ταυτόχρονης μετάφρασης
-    αντικειμένων που έχει οριστεί στο config.yml. Προεπιλογή σε 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Ορίστηκε με επιτυχία όριο
     ταυτόχρονης μετάφρασης αντικειμένων.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Το όριο ταυτόχρονης μετάφρασης
-    αντικειμένων πρέπει να είναι από 1 έως 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Το όριο ταυτόχρονης
+    μετάφρασης αντικειμένων πρέπει να είναι 1 ή μεγαλύτερο.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Το τρέχον όριο ταυτόχρονης
+    μετάφρασης αντικειμένων είναι {0}. Πληκτρολογήστε έναν αριθμό 1 ή μεγαλύτερο.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Μη έγκυρο όριο ταυτόχρονης
+    μετάφρασης αντικειμένων που έχει οριστεί στο config.yml. Η τιμή πρέπει να είναι
+    τουλάχιστον 1. Προεπιλογή σε 4...
 

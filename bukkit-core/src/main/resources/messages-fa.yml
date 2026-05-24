@@ -793,13 +793,13 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: با موفقیت سازگار OpenAI را تغییر داد.
   wwcConfigGUIToggleGuidelinesAIChecksButton: تغییر دستورالعمل های بررسی هوش مصنوعی
   wwctTranslationErrorActionBar: خطا
-  wwcConfigConversationObjectTranslationConcurrencyInput: محدودیت همزمان ترجمه شی
-    فعلی {0} است. یک عدد را از 1 تا 4 تایپ کنید.
   wwcConfigGUIObjectTranslationConcurrencyButton: تغییر همزمان ترجمه شیء
-  wwcConfigObjectTranslationConcurrencyInvalid: محدودیت همزمان ترجمه شیء نامعتبر در
-    config.yml تنظیم شده است. پیش فرض به 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: محدودیت همزمان ترجمه شی
     با موفقیت تنظیم شد.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: محدودیت همزمان ترجمه شی
-    باید از ۱ تا ۴ باشد.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: حد همزمان ترجمه
+    شیء باید ۱ یا بیشتر باشد.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: محدودیت همزمان ترجمه
+    شی فعلی {0} است. یک عدد 1 یا بیشتر را تایپ کنید.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: محدودیت همزمان ترجمه شیء نامعتبر
+    در config.yml تنظیم شده است. مقدار باید حداقل 1 باشد. پیش فرض به 4...
 

@@ -848,14 +848,16 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Attivato con successo OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Attiva/disattiva le linee guida AI Checks
   wwctTranslationErrorActionBar: Errore
-  wwcConfigConversationObjectTranslationConcurrencyInput: L'attuale limite di concorrenza
-    per la traduzione degli oggetti è {0}. Digitate un numero compreso tra 1 e 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Modifica la concorrenza della traduzione
     degli oggetti
-  wwcConfigObjectTranslationConcurrencyInvalid: Limite di concorrenza per la traduzione
-    di oggetti non valido impostato in config.yml. Il valore predefinito è 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Limite di concorrenza
     per la traduzione degli oggetti impostato correttamente.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Il limite di concorrenza
-    nella traduzione degli oggetti deve essere compreso tra 1 e 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Il limite di concorrenza
+    nella traduzione degli oggetti deve essere pari o superiore a 1.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: L'attuale limite
+    di concorrenza per la traduzione degli oggetti è {0}. Digitate un numero pari
+    o superiore a 1.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limite di concorrenza per la
+    traduzione di oggetti non valido impostato in config.yml. Il valore deve essere
+    almeno 1. Il valore predefinito è 4...
 

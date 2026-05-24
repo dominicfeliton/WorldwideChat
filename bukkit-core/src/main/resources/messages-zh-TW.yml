@@ -605,10 +605,11 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: 成功切換開放 AI 兼容。
   wwcConfigGUIToggleGuidelinesAIChecksButton: 切換指導方針 AI 檢查
   wwctTranslationErrorActionBar: 錯誤
-  wwcConfigConversationObjectTranslationConcurrencyInput: 目前的物件轉換並行性限制為 {0}。輸入從 1
-    到 4 的數字。
   wwcConfigGUIObjectTranslationConcurrencyButton: 變更物件轉換並行
-  wwcConfigObjectTranslationConcurrencyInvalid: 在 config.yml 中設置了無效的物件轉換並行限制。預設為 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: 成功設定物件轉換並行限制。
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: 物件轉換並行限制必須介於 1 到 4。
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: 物件轉換並行限制必須為 1 或更大。
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: 目前的物件轉換並行性限制為 {0}。輸入
+    1 或更大的數字。
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: 在 config.yml 中設置了無效的物件轉換並行限制。該值必須至少為
+    1。預設為 4...
 

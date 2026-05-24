@@ -651,12 +651,12 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI 호환을 성공적으로 전환했습니다.
   wwcConfigGUIToggleGuidelinesAIChecksButton: 토글 가이드라인 AI 검사
   wwctTranslationErrorActionBar: 오류
-  wwcConfigConversationObjectTranslationConcurrencyInput: 현재 객체 변환 동시성 제한은 {0} 입니다.1부터
-    4까지의 숫자를 입력합니다.
   wwcConfigGUIObjectTranslationConcurrencyButton: 객체 변환 동시성 변경
-  wwcConfigObjectTranslationConcurrencyInvalid: config.yml에 설정된 객체 변환 동시성 제한이 잘못되었습니다.기본값은
-    4입니다...
   wwcConfigConversationObjectTranslationConcurrencySuccess: 객체 변환 동시성 제한이 성공적으로 설정되었습니다.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: 객체 변환 동시성 제한은 1에서 4 사이여야
-    합니다.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: 객체 변환 동시성 제한은 1
+    이상이어야 합니다.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: 현재 객체 변환 동시성 제한은
+    {0} 입니다.1보다 큰 숫자를 입력하십시오.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml에 설정된 객체 변환 동시성 제한이
+    잘못되었습니다.값은 최소 1이어야 합니다.기본값은 4...
 

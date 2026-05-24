@@ -794,13 +794,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI-yhteensopiva vaihdettiin onnistuneesti.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Vaihda ohjeet Tekoälyn tarkistukset
   wwctTranslationErrorActionBar: Virhe
-  wwcConfigConversationObjectTranslationConcurrencyInput: Nykyinen objektien kääntämisen
-    samanaikaisuusraja on {0}. Kirjoita numero 1 - 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Muuta objektin käännöksen samanaikaisuutta
-  wwcConfigObjectTranslationConcurrencyInvalid: 'Virheellinen objektien käännöksen
-    samanaikaisuusraja, joka on asetettu config.yml: ssä. Oletuksena 4...'
   wwcConfigConversationObjectTranslationConcurrencySuccess: Objektien käännöksen samanaikaisuusraja
     on asetettu onnistuneesti.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Objektien käännöksen samanaikaisuuden
-    rajan on oltava 1 - 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Objektien käännöksen
+    samanaikaisuusrajan on oltava 1 tai suurempi.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Nykyinen objektien
+    kääntämisen samanaikaisuusraja on {0}. Kirjoita numero 1 tai suurempi.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: 'Virheellinen objektien käännöksen
+    samanaikaisuusraja, joka on asetettu config.yml: ssä. Arvon on oltava vähintään
+    1. Oletuksena 4...'
 

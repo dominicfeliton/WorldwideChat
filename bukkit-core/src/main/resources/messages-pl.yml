@@ -807,14 +807,15 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Pomyślnie przełączono OpenAI Compatible.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Przełącz wytyczne Kontrole AI
   wwctTranslationErrorActionBar: Błąd
-  wwcConfigConversationObjectTranslationConcurrencyInput: Bieżący limit współbieżności
-    translacji obiektów wynosi {0}. Wpisz liczbę od 1 do 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Zmień współbieżność tłumaczenia
     obiektów
-  wwcConfigObjectTranslationConcurrencyInvalid: Nieprawidłowy limit współbieżności
-    translacji obiektów ustawiony w config.yml. Domyślnie 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Limit współbieżności tłumaczenia
     obiektów został pomyślnie ustawiony.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Limit współbieżności tłumaczenia
-    obiektów musi wynosić od 1 do 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Limit współbieżności
+    tłumaczenia obiektów musi wynosić 1 lub więcej.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Bieżący limit współbieżności
+    translacji obiektów wynosi {0}. Wpisz liczbę 1 lub większą.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Nieprawidłowy limit współbieżności
+    translacji obiektów ustawiony w config.yml. Wartość musi wynosić co najmniej 1.
+    Domyślnie 4...
 

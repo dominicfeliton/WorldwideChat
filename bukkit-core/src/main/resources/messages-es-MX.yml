@@ -858,14 +858,15 @@ Messages:
   wwcConfigGUIToggleGuidelinesAIChecksButton: Alternar directrices Verificaciones
     de IA
   wwctTranslationErrorActionBar: Error
-  wwcConfigConversationObjectTranslationConcurrencyInput: El límite actual de concurrencia
-    de traducción de objetos es {0}. Escriba un número del 1 al 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Cambiar concurrencia de traducción
     de objetos
-  wwcConfigObjectTranslationConcurrencyInvalid: Límite de concurrencia de traducción
-    de objetos no válido establecido en config.yml. Por defecto a 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: El límite de concurrencia
     de traducción de objetos se estableció correctamente.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: El límite de concurrencia
-    de traducción de objetos debe ser de 1 a 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: El límite de concurrencia
+    de traducción de objetos debe ser 1 o mayor.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: El límite actual
+    de concurrencia de traducción de objetos es {0}. Escriba un número 1 o mayor.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Límite de concurrencia de traducción
+    de objetos no válido establecido en config.yml. El valor debe ser al menos 1.
+    El valor predeterminado es 4...
 

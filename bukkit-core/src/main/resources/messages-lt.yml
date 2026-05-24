@@ -812,13 +812,14 @@ Messages:
   wwcConfigGUIOpenAICompatibleToggleSuccess: Sėkmingai perjungtas “OpenAI Compatibility”.
   wwcConfigGUIToggleGuidelinesAIChecksButton: Perjungti gaires AI patikrinimus
   wwctTranslationErrorActionBar: Klaida
-  wwcConfigConversationObjectTranslationConcurrencyInput: Dabartinė objekto vertimo
-    lygiagretumo riba yra {0}. Įveskite skaičių nuo 1 iki 4.
   wwcConfigGUIObjectTranslationConcurrencyButton: Keisti objekto vertimo lygiagretumą
-  wwcConfigObjectTranslationConcurrencyInvalid: Neteisingas objekto vertimo lygiagretumo
-    apribojimas nustatytas config.yml. Numatytasis nustatymas į 4...
   wwcConfigConversationObjectTranslationConcurrencySuccess: Objekto vertimo lygiagretumo
     riba nustatyta sėkmingai.
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: Objekto vertimo lygiagretumo
-    riba turi būti nuo 1 iki 4.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Objekto vertimo
+    lygiagretumo riba turi būti 1 ar didesnė.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Dabartinė objekto
+    vertimo lygiagretumo riba yra {0}. Įveskite skaičių 1 ar didesnį.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Neteisingas objekto vertimo
+    lygiagretumo apribojimas nustatytas config.yml. Vertė turi būti bent 1. Numatytasis
+    nustatymas į 4...
 

@@ -797,13 +797,13 @@ Messages:
     হয়েছে।
   wwcConfigGUIToggleGuidelinesAIChecksButton: এআই চেকগুলি টগল গাইডলাইন
   wwctTranslationErrorActionBar: ত্রুটি
-  wwcConfigConversationObjectTranslationConcurrencyInput: বর্তমান অবজেক্ট অনুবাদ সমসাময়িক
-    সীমা {0}। 1 থেকে 4 পর্যন্ত একটি নম্বর টাইপ করুন।
   wwcConfigGUIObjectTranslationConcurrencyButton: অবজেক্ট অনুবাদ সমতা পরিবর্তন করুন
-  wwcConfigObjectTranslationConcurrencyInvalid: অবৈধ অবজেক্ট অনুবাদ সমসাময়িক সীমা
-    config.yml এ সেট করা হয়েছে। 4 এ ডিফল্ট করা হচ্ছে...
   wwcConfigConversationObjectTranslationConcurrencySuccess: বস্তু অনুবাদ সমসাময়িক
     সীমা সফলভাবে সেট
-  wwcConfigConversationObjectTranslationConcurrencyInvalid: অবজেক্ট অনুবাদ সমসাময়িক
-    সীমা অবশ্যই 1 থেকে 4 পর্যন্ত হতে হবে।
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: অবজেক্ট অনুবাদ
+    সমসাময়িক সীমা 1 বা তার বেশি হতে হবে।
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: বর্তমান অবজেক্ট অনুবাদ
+    সমসাময়িক সীমা {0}। একটি নম্বর 1 বা তার বেশি টাইপ করুন।
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: অবৈধ অবজেক্ট অনুবাদ সমসাময়িক
+    সীমা config.yml এ সেট করা হয়েছে। মান কমপক্ষে 1 হতে হবে। 4 এ ডিফল্ট করা হচ্ছে...
 

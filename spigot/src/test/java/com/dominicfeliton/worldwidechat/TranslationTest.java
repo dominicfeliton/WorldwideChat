@@ -122,6 +122,29 @@ class TranslationTest extends WWCIntegrationTest {
     }
 
     @Test
+    void objectBatchWideLimitOnlyRunsPendingEntries() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("ObjectBatchWide");
+        player.performCommand("wwct en es");
+        plugin().setObjectTranslationConcurrencyLimit(10);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(75);
+
+        try {
+            List<String> translated = plugin().getServerFactory().getCommonRefs()
+                    .translateObjectText(List.of("batch-wide-0", "batch-wide-1", "batch-wide-2"), player);
+
+            assertEquals(List.of(
+                    "translated-batch-wide-0",
+                    "translated-batch-wide-1",
+                    "translated-batch-wide-2"), translated);
+            assertTrue(TestTranslation.getMaxActiveTranslations() > 1);
+            assertTrue(TestTranslation.getMaxActiveTranslations() <= 3);
+        } finally {
+            TestTranslation.resetConcurrencyTracking();
+        }
+    }
+
+    @Test
     void objectBatchTimeoutUsesTranslatorConnectionTimeoutAndCancelsProviderWork() throws InterruptedException {
         int originalConnectionTimeout = WorldwideChat.translatorConnectionTimeoutSeconds;
         int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
@@ -160,7 +183,7 @@ class TranslationTest extends WWCIntegrationTest {
     }
 
     @Test
-    void objectTranslationConcurrencyConfigDefaultsAndRejectsInvalidValues() {
+    void objectTranslationConcurrencyConfigDefaultsAcceptsWideValuesAndRejectsBelowOne() {
         assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
 
         plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", 2);
@@ -168,6 +191,22 @@ class TranslationTest extends WWCIntegrationTest {
         assertEquals(2, plugin().getObjectTranslationConcurrencyLimit());
 
         plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", 5);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(5, plugin().getObjectTranslationConcurrencyLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", 32);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(32, plugin().getObjectTranslationConcurrencyLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", 0);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", -1);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", "many");
         plugin().getConfigManager().loadMainSettings();
         assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
     }

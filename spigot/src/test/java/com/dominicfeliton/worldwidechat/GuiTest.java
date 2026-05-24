@@ -86,7 +86,7 @@ class GuiTest extends WWCIntegrationTest {
     }
 
     @Test
-    void objectTranslationConcurrencyPromptAcceptsOnlyOneThroughFour() {
+    void objectTranslationConcurrencyPromptAcceptsOneOrGreater() {
         PlayerMock player = WWCTestSupport.addOpPlayer("ConfigConcurrencyUser");
         player.performCommand("wwcc");
 
@@ -94,9 +94,11 @@ class GuiTest extends WWCIntegrationTest {
         InputContext context = new InputContext(player);
 
         assertEquals(InputResult.Action.REPEAT, prompt.acceptInput(context, "0").getAction());
-        assertEquals(InputResult.Action.REPEAT, prompt.acceptInput(context, "5").getAction());
-        assertEquals(InputResult.Action.COMPLETE, prompt.acceptInput(context, "3").getAction());
-        assertEquals(3, plugin().getConfigManager().getMainConfig().getInt("General.objectTranslationConcurrencyLimit"));
+        assertEquals(InputResult.Action.REPEAT, prompt.acceptInput(context, "-1").getAction());
+        assertEquals(InputResult.Action.COMPLETE, prompt.acceptInput(context, "5").getAction());
+        assertEquals(5, plugin().getConfigManager().getMainConfig().getInt("General.objectTranslationConcurrencyLimit"));
+        assertEquals(InputResult.Action.COMPLETE, prompt.acceptInput(context, "32").getAction());
+        assertEquals(32, plugin().getConfigManager().getMainConfig().getInt("General.objectTranslationConcurrencyLimit"));
     }
 
     @Test
