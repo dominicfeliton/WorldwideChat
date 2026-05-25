@@ -812,4 +812,18 @@ Messages:
     Zadana vrijednost na 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Dobavljač umjetne inteligencije mora biti
     omogućen da koristi zaštitne ograde.
+  wwcConfigTranslationCapacityAuto: 'Kapacitet prevođenja automatski se rješava na
+    {0} aktivne prijevode i {1} prijevode u redu (JVM procesori: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Uspješno postavljeno ograničenje
+    kapaciteta prijevoda.
+  wwcConfigGUITranslationCapacityButton: Promijenite kapacitet prevođenja
+  wwcConfigTranslationCapacityInvalid: Neispravno ograničenje kapaciteta prijevoda
+    postavljeno u config.yml. Koristite 0 za automatsko ili 1 ili više. Zadana postavka
+    na automatsko...
+  wwcConfigTranslationCapacityManual: Kapacitet prevođenja postavljen na {0} aktivni
+    prijevodi i {1} prijevodi u redu.
+  wwcConfigConversationTranslationCapacityInvalid: Ograničenje kapaciteta prijevoda
+    mora biti 0 za automatsko ili 1 ili više.
+  wwcConfigConversationTranslationCapacityInput: Trenutno ograničenje kapaciteta prijevoda
+    je {0} ({1} aktivno, {2} u redu čekanja). Upišite 0 za auto ili broj 1 ili veći.
 

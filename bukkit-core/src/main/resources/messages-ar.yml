@@ -764,4 +764,16 @@ Messages:
     إلى 4...
   wwcConfigGUIGuidelinesAIDisabledReason: يجب تمكين موفر الذكاء الاصطناعي لاستخدام
     Guardrails.
+  wwcConfigTranslationCapacityAuto: 'تم حل سعة الترجمة تلقائيًا إلى الترجمات النشطة
+    {0} والترجمات {1} في قائمة الانتظار (معالجات JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: تم تعيين حد سعة الترجمة بنجاح.
+  wwcConfigGUITranslationCapacityButton: تغيير سعة الترجمة
+  wwcConfigTranslationCapacityInvalid: تم تعيين حد سعة ترجمة غير صالح في config.yml.
+    استخدم 0 تلقائيًا أو 1 أو أكبر. جاري الانتقال إلى الوضع التلقائي...
+  wwcConfigTranslationCapacityManual: تم تعيين سعة الترجمة إلى {0} للترجمات النشطة
+    والترجمات {1} في قائمة الانتظار.
+  wwcConfigConversationTranslationCapacityInvalid: يجب أن يكون حد سعة الترجمة 0 لـ
+    auto أو 1 أو أكثر.
+  wwcConfigConversationTranslationCapacityInput: الحد الأقصى لسعة الترجمة الحالية
+    هو {0} ({1} نشط، {2} في قائمة الانتظار). اكتب 0 للرقم التلقائي أو الرقم 1 أو أكبر.
 

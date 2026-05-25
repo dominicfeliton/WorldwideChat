@@ -880,4 +880,19 @@ Messages:
     τουλάχιστον 1. Προεπιλογή σε 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Ένας πάροχος AI πρέπει να είναι ενεργοποιημένος
     για να χρησιμοποιεί τα Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Η ικανότητα μετάφρασης επιλύεται αυτόματα σε
+    {0} ενεργές μεταφράσεις και {1} σε ουρές μεταφράσεων (επεξεργαστές JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Το όριο χωρητικότητας μετάφρασης
+    ορίστηκε με επιτυχία.
+  wwcConfigGUITranslationCapacityButton: Αλλαγή ικανότητας μετάφρασης
+  wwcConfigTranslationCapacityInvalid: Μη έγκυρο όριο χωρητικότητας μετάφρασης που
+    έχει οριστεί στο config.yml. Χρησιμοποιήστε το 0 για αυτόματο ή 1 ή μεγαλύτερο.
+    Προεπιλογή σε αυτόματο...
+  wwcConfigTranslationCapacityManual: Η ικανότητα μετάφρασης έχει οριστεί σε {0} ενεργές
+    μεταφράσεις και {1} μεταφράσεις σε ουρά.
+  wwcConfigConversationTranslationCapacityInvalid: Το όριο χωρητικότητας μετάφρασης
+    πρέπει να είναι 0 για αυτόματο ή 1 ή μεγαλύτερο.
+  wwcConfigConversationTranslationCapacityInput: Το τρέχον όριο χωρητικότητας μετάφρασης
+    είναι {0} ({1} ενεργό, {2} σε ουρά). Πληκτρολογήστε 0 για αυτόματο ή αριθμό 1
+    ή μεγαλύτερο.
 

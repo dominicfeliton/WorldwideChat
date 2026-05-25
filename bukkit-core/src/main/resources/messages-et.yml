@@ -784,4 +784,18 @@ Messages:
     on 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Tehisintellekti pakkujal peab olema lubatud
     kasutada kaitsehoidjaid.
+  wwcConfigTranslationCapacityAuto: 'Tõlkimisvõimsus lahendatakse automaatselt {0}
+    aktiivsete tõlkete ja {1} järjekorras olevate tõlketega (JVM-protsessorid: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Tõlkimisvõimsuse piirmäär on edukalt
+    määratud.
+  wwcConfigGUITranslationCapacityButton: Muuda tõlkekuutlikkust
+  wwcConfigTranslationCapacityInvalid: Config.yml-s on seatud vale tõlkimise võimsuse
+    piirang. Kasutage 0 automaatse või 1 või suurema versiooni puhul. Automaatne vaikimine...
+  wwcConfigTranslationCapacityManual: Tõlkimisvõime on seatud {0} aktiivsetele tõlgetele
+    ja {1} järjekorras olevatele tõlgetele.
+  wwcConfigConversationTranslationCapacityInvalid: Tõlkimisvõimsuse piirang peab olema
+    0 automaatse või 1 või suurema või suurema puhul.
+  wwcConfigConversationTranslationCapacityInput: Praegune tõlkimisvõimsuse piirang
+    on {0} ({1} aktiivne, {2} järjekorras). Tippige 0 automaatseks või numbriks 1
+    või suurem.
 

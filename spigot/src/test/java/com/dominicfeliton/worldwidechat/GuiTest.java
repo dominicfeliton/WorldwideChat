@@ -104,6 +104,21 @@ class GuiTest extends WWCIntegrationTest {
     }
 
     @Test
+    void translationCapacityPromptAcceptsAutoOrPositive() {
+        PlayerMock player = WWCTestSupport.addOpPlayer("ConfigCapacityUser");
+        player.performCommand("wwcc");
+
+        GeneralSettingsConvos.TranslationCapacity prompt = new GeneralSettingsConvos.TranslationCapacity();
+        InputContext context = new InputContext(player);
+
+        assertEquals(InputResult.Action.COMPLETE, prompt.acceptInput(context, "0").getAction());
+        assertEquals(0, plugin().getConfigManager().getMainConfig().getInt("General.translationCapacityLimit"));
+        assertEquals(InputResult.Action.REPEAT, prompt.acceptInput(context, "-1").getAction());
+        assertEquals(InputResult.Action.COMPLETE, prompt.acceptInput(context, "12").getAction());
+        assertEquals(12, plugin().getConfigManager().getMainConfig().getInt("General.translationCapacityLimit"));
+    }
+
+    @Test
     void storageProviderMenusOpenDistinctProviderLayouts() {
         PlayerMock player = WWCTestSupport.addOpPlayer("StorageGuiUser");
 

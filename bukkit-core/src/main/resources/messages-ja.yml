@@ -625,4 +625,14 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml に設定されているオブジェクト翻訳の同時実行制限が無効です。値は
     1 以上でなければなりません。デフォルトは 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Guardrails を使用するには、AI プロバイダーが有効になっている必要があります。
+  wwcConfigTranslationCapacityAuto: 翻訳キャパシティは、{0} 件のアクティブな翻訳と {1} 件の処理待ちの翻訳に自動的に解決されます
+    (JVM プロセッサ:{2})。
+  wwcConfigConversationTranslationCapacitySuccess: 翻訳容量制限が正常に設定されました。
+  wwcConfigGUITranslationCapacityButton: 翻訳キャパシティを変更
+  wwcConfigTranslationCapacityInvalid: config.yml に設定されている翻訳容量の制限が無効です。自動の場合は 0、1
+    以上を使用してください。デフォルトは auto...
+  wwcConfigTranslationCapacityManual: 翻訳キャパシティは {0} 件のアクティブな翻訳と {1} 件の処理待ちの翻訳に設定されています。
+  wwcConfigConversationTranslationCapacityInvalid: 翻訳容量制限は、自動の場合は0、1以上である必要があります。
+  wwcConfigConversationTranslationCapacityInput: 現在の翻訳容量制限は {0} ({1} アクティブ、{2} キュー中)
+    です。自動の場合は 0、1 以上の数値を入力します。
 

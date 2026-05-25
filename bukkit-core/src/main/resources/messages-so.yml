@@ -826,4 +826,17 @@ Messages:
     in 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Bixiye AI waa in la ogolaan inuu isticmaalo
     Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Awoodda tarjimada awoto-xaliyay {0} tarjimada
+    firfirka iyo {1} tarjimada safka ah (JVM hanayaasha: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Xadka awooda tarjumada oo si guul
+    la dhigay
+  wwcConfigGUITranslationCapacityButton: Bedel Awoodda Tarjumada
+  wwcConfigTranslationCapacityInvalid: Xadka awooda tarjumada ah oo lagu sameeyay
+    config.yml. Isticmaale 0 ee gaarka ama 1 ama ka weyn. Defaulting to auto...
+  wwcConfigTranslationCapacityManual: Awoodda tarjimada la dhigay {0} tarjimada firfiro
+    iyo {1} tarjimada safka ah.
+  wwcConfigConversationTranslationCapacityInvalid: Xadka awooda tarjumada waa in uu
+    noqdo 0 auto ama 1 ama weyn.
+  wwcConfigConversationTranslationCapacityInput: Xadka awooda tarjumada hadda waa
+    {0} ({1} firfirka, {2} safka). Nooca 0 ee gaarka ama nambar 1 ama ka weyn.
 

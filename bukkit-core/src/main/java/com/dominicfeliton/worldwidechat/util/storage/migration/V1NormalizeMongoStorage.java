@@ -1,11 +1,13 @@
 package com.dominicfeliton.worldwidechat.util.storage.migration;
 
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.DeleteOneModel;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.IndexOptions;
 import com.mongodb.client.model.Indexes;
+import com.mongodb.client.model.Sorts;
 import com.mongodb.client.model.UpdateOneModel;
 import com.mongodb.client.model.Updates;
 import com.mongodb.client.model.WriteModel;
@@ -15,9 +17,7 @@ import io.mongock.api.annotations.RollbackExecution;
 import org.bson.Document;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 @ChangeUnit(id = "normalize-storage-schema", order = "001", author = "WorldwideChat", transactional = false)
@@ -26,6 +26,7 @@ public class V1NormalizeMongoStorage {
     private static final String ACTIVE_TRANSLATORS = "ActiveTranslators";
     private static final String PLAYER_RECORDS = "PlayerRecords";
     private static final String PERSISTENT_CACHE = "PersistentCache";
+    private static final int WRITE_BATCH_SIZE = 1000;
 
     @Execution
     public void execution(MongoDatabase database) {
@@ -56,30 +57,44 @@ public class V1NormalizeMongoStorage {
 
     private void normalizePersistentCache(MongoCollection<Document> cacheCollection) {
         List<WriteModel<Document>> writes = new ArrayList<>();
-        Set<String> seenCacheKeys = new HashSet<>();
+        String lastCacheKey = null;
 
-        for (Document document : cacheCollection.find()) {
-            Object id = document.get("_id");
-            if (document.getString("randomUUID") == null || document.getString("randomUUID").isEmpty()) {
-                writes.add(new UpdateOneModel<>(Filters.eq("_id", id),
-                        Updates.set("randomUUID", UUID.randomUUID().toString())));
-            }
+        try (MongoCursor<Document> cursor = cacheCollection.find()
+                .sort(Sorts.ascending("inputLang", "outputLang", "inputPhrase", "_id"))
+                .iterator()) {
+            while (cursor.hasNext()) {
+                Document document = cursor.next();
+                Object id = document.get("_id");
+                String cacheKey = document.getString("inputLang") + "\u0000"
+                        + document.getString("outputLang") + "\u0000"
+                        + document.getString("inputPhrase");
 
-            String cacheKey = document.getString("inputLang") + "\u0000"
-                    + document.getString("outputLang") + "\u0000"
-                    + document.getString("inputPhrase");
-            if (!seenCacheKeys.add(cacheKey)) {
-                writes.add(new DeleteOneModel<>(Filters.eq("_id", id)));
+                if (cacheKey.equals(lastCacheKey)) {
+                    writes.add(new DeleteOneModel<>(Filters.eq("_id", id)));
+                } else {
+                    if (document.getString("randomUUID") == null || document.getString("randomUUID").isEmpty()) {
+                        writes.add(new UpdateOneModel<>(Filters.eq("_id", id),
+                                Updates.set("randomUUID", UUID.randomUUID().toString())));
+                    }
+                    lastCacheKey = cacheKey;
+                }
+
+                flushWrites(cacheCollection, writes, WRITE_BATCH_SIZE);
             }
         }
-
-        if (!writes.isEmpty()) {
-            cacheCollection.bulkWrite(writes);
-        }
+        flushWrites(cacheCollection, writes, 1);
 
         cacheCollection.createIndex(Indexes.ascending("randomUUID"),
                 new IndexOptions().unique(true).name("idx_persistent_cache_random"));
         cacheCollection.createIndex(Indexes.ascending("inputLang", "outputLang", "inputPhrase"),
                 new IndexOptions().unique(true).name("idx_persistent_cache_lookup"));
+    }
+
+    private void flushWrites(MongoCollection<Document> cacheCollection, List<WriteModel<Document>> writes,
+                             int minimumBatchSize) {
+        if (writes.size() >= minimumBatchSize) {
+            cacheCollection.bulkWrite(writes);
+            writes.clear();
+        }
     }
 }

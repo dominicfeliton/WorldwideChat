@@ -726,4 +726,16 @@ Messages:
     לא חוקית שהוגדרה ב- config.yml. הערך חייב להיות לפחות 1. ברירת מחדל ל -4...
   wwcConfigGUIGuidelinesAIDisabledReason: ספק AI חייב להיות מופעל כדי להשתמש במעקות
     בטיחות.
+  wwcConfigTranslationCapacityAuto: 'יכולת התרגום נפתרה אוטומטית לתרגומים פעילים {0}
+    ותרגומים בתורים {1} (מעבדי JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: מגבלת קיבולת התרגום הוגדרה בהצלחה.
+  wwcConfigGUITranslationCapacityButton: שינוי יכולת התרגום
+  wwcConfigTranslationCapacityInvalid: מגבלת קיבולת תרגום לא חוקית שהוגדרה ב- config.yml.
+    השתמש ב- 0 עבור אוטומטי או 1 ומעלה. ברירת מחדל לאוטומטי...
+  wwcConfigTranslationCapacityManual: קיבולת התרגום מוגדרת ל- {0} תרגומים פעילים ו-{1}
+    תרגומים בתורים.
+  wwcConfigConversationTranslationCapacityInvalid: מגבלת קיבולת התרגום חייבת להיות
+    0 עבור אוטומטי או 1 ומעלה.
+  wwcConfigConversationTranslationCapacityInput: מגבלת קיבולת התרגום הנוכחית היא {0}
+    ({1} פעיל, {2} בתור). הקלד 0 עבור אוטומטי או מספר 1 ומעלה.
 

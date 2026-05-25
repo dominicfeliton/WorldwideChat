@@ -803,4 +803,19 @@ Messages:
     olaraq 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Bir AI provayderi Guardrails-dən istifadə
     etmək üçün aktiv olmalıdır.
+  wwcConfigTranslationCapacityAuto: 'Tərcümə qabiliyyəti {0} aktiv tərcümələrə və
+    {1} növbəli tərcümələrə avtomatik olaraq həll olunur (JVM prosessorları: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Tərcümə tutumu həddi uğurla təyin
+    edildi
+  wwcConfigGUITranslationCapacityButton: Tərcümə qabiliyyətini dəyişin
+  wwcConfigTranslationCapacityInvalid: Config.yml-də təyin edilmiş etibarsız tərcümə
+    tutumu həddi. Avtomatik və ya 1 və ya daha böyük üçün 0 istifadə edin. Avtomatik
+    olaraq standart olaraq...
+  wwcConfigTranslationCapacityManual: Tərcümə qabiliyyəti {0} aktiv tərcümələrə və
+    {1} növbəli tərcümələrə təyin edilmişdir.
+  wwcConfigConversationTranslationCapacityInvalid: Tərcümə tutumu həddi avtomatik
+    və ya 1 və ya daha çox üçün 0 olmalıdır.
+  wwcConfigConversationTranslationCapacityInput: Cari tərcümə qabiliyyəti həddi {0}
+    ({1} aktiv, {2} növbədə) təşkil edir. Avtomatik və ya 1 və ya daha böyük nömrə
+    üçün 0 yazın.
 

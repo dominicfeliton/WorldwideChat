@@ -819,4 +819,18 @@ Messages:
     kuwa 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Mtoa huduma wa AI lazima awezeshwe kutumia
     Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Uwezo wa tafsiri utatuliwa kiotomatiki kwa {0}
+    tafsiri zinazotumika na tafsiri za {1} (wasindikaji wa JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Kikomo cha uwezo wa tafsiri kiliwekwa
+    kwa
+  wwcConfigGUITranslationCapacityButton: Badilisha Uwezo wa Tafsiri
+  wwcConfigTranslationCapacityInvalid: Kikomo cha uwezo wa tafsiri isiyo sahihi kiliwekwa
+    katika config.yml. Tumia 0 kwa kiotomatiki au 1 au zaidi. Kubadilisha kuwa kiotomatiki...
+  wwcConfigTranslationCapacityManual: Uwezo wa tafsiri uliwekwa kwa {0} tafsiri zinazofaa
+    na tafsiri za {1}.
+  wwcConfigConversationTranslationCapacityInvalid: Kikomo cha uwezo wa tafsiri lazima
+    iwe 0 kwa kiotomatiki au 1 au zaidi.
+  wwcConfigConversationTranslationCapacityInput: Kikomo cha uwezo wa sasa wa tafsiri
+    ni {0} ({1} inafanya kazi, {2} imewekwa foleni). Andika 0 kwa kiotomatiki au namba
+    1 au zaidi.
 

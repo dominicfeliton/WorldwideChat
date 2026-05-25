@@ -611,4 +611,12 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: 在 config.yml 中设置的对象转换并发限制无效。该值必须至少为
     1。默认为 4...
   wwcConfigGUIGuidelinesAIDisabledReason: 必须启用 AI 提供商才能使用 Guardrails。
+  wwcConfigTranslationCapacityAuto: 翻译容量自动解析为 {0} 活跃翻译和 {1} 队列翻译（JVM 处理器：{2}）。
+  wwcConfigConversationTranslationCapacitySuccess: 已成功设置翻译容量限制。
+  wwcConfigGUITranslationCapacityButton: 更改翻译容量
+  wwcConfigTranslationCapacityInvalid: 在 config.yml 中设置的翻译容量限制无效。使用 0 表示自动，使用 1 或更大。默认为自动...
+  wwcConfigTranslationCapacityManual: 翻译容量设置为 {0} 活跃翻译和 {1} 排队翻译。
+  wwcConfigConversationTranslationCapacityInvalid: 对于自动，翻译容量限制必须为 0，或大于 1。
+  wwcConfigConversationTranslationCapacityInput: 当前的翻译容量限制为 {0}（{1} 处于活动状态，{2} 已排队）。对于自动，键入
+    0 或数字 1 或更大。
 

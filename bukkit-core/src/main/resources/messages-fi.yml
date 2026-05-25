@@ -806,4 +806,20 @@ Messages:
     1. Oletuksena 4...'
   wwcConfigGUIGuidelinesAIDisabledReason: Tekoälyn tarjoajan on oltava käytössä Guardrailsin
     käyttämiseksi.
+  wwcConfigTranslationCapacityAuto: 'Käännöskapasiteetti ratkaistaan automaattisesti
+    aktiivisiin {0} -käännöksiin ja {1} jonotettuihin käännöksiin (JVM-prosessorit:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Käännöskapasiteetin raja on asetettu
+    onnistuneesti.
+  wwcConfigGUITranslationCapacityButton: Muuta käännöskapasiteettia
+  wwcConfigTranslationCapacityInvalid: 'Virheellinen käännöskapasiteetin raja, joka
+    on asetettu config.yml: ssä. Käytä 0 automaattiin tai 1 tai suurempaan. Oletuksena
+    on automaattinen...'
+  wwcConfigTranslationCapacityManual: Käännöskapasiteetti on asetettu arvoon {0} aktiiviset
+    käännökset ja {1} jonossa olevat käännökset.
+  wwcConfigConversationTranslationCapacityInvalid: Käännöskapasiteetin rajan on oltava
+    0 automaattisessa tai 1 tai suurempi.
+  wwcConfigConversationTranslationCapacityInput: Nykyinen käännöskapasiteetin raja
+    on {0} ({1} aktiivinen, {2} jonossa). Kirjoita 0 automaattia varten tai numero
+    1 tai suurempi.
 

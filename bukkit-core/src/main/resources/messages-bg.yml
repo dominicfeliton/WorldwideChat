@@ -830,4 +830,19 @@ Messages:
     1. По подразбиране на 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Доставчикът на AI трябва да има възможност
     да използва предпазни парапети.
+  wwcConfigTranslationCapacityAuto: 'Капацитетът за превод автоматично се решава до
+    {0} активни преводи и {1} преводи на опашка (JVM процесори: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Ограничението на капацитета за
+    превод е зададено успешно.
+  wwcConfigGUITranslationCapacityButton: Промяна на капацитета за превод
+  wwcConfigTranslationCapacityInvalid: Невалиден ограничение на капацитета за превод,
+    зададено в config.yml. Използвайте 0 за автоматично или 1 или по-голямо. По подразбиране
+    на автоматично...
+  wwcConfigTranslationCapacityManual: Капацитетът за превод е зададен на {0} активни
+    преводи и {1} преводи на опашка.
+  wwcConfigConversationTranslationCapacityInvalid: Ограничението на капацитета за
+    превод трябва да бъде 0 за автоматично или 1 или по-голямо.
+  wwcConfigConversationTranslationCapacityInput: Текущото ограничение на капацитета
+    за превод е {0} ({1} активен, {2} на опашка). Въведете 0 за автоматично или число
+    1 или по-голямо.
 

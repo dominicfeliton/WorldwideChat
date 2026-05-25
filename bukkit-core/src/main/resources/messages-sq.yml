@@ -853,4 +853,19 @@ Messages:
     1. Parazgjedhja në 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Një ofrues i AI duhet të jetë i aktivizuar
     për të përdorur Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Kapaciteti i përkthimit zgjidhet automatikisht
+    në përkthime aktive {0} dhe përkthime në radhë {1} (procesorë JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Kufiri i kapaciteteve të përkthimit
+    vendoset me
+  wwcConfigGUITranslationCapacityButton: Ndryshimi i kapaciteteve të
+  wwcConfigTranslationCapacityInvalid: Kufiri i pavlefshëm i kapacitetit të përkthimit
+    vendosur në config.yml. Përdorni 0 për automatikisht ose 1 ose më të madh. Parazgjedhja
+    në automatikisht...
+  wwcConfigTranslationCapacityManual: Kapaciteti i përkthimit vendosur në {0} përkthime
+    aktive dhe {1} përkthime në radhë.
+  wwcConfigConversationTranslationCapacityInvalid: Kufiri i kapacitetit të përkthimit
+    duhet të jetë 0 për automatikisht ose 1 ose më të madh.
+  wwcConfigConversationTranslationCapacityInput: Kufiri aktual i kapacitetit të përkthimit
+    është {0} ({1} aktiv, {2} në radhë). Shkruani 0 për automatikisht ose një numër
+    1 ose më të madh.
 

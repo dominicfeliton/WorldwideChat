@@ -818,4 +818,18 @@ Messages:
     పరిమితి config.yml లో సెట్ చేయబడింది. విలువ కనీసం 1 ఉండాలి. 4 కు డిఫాల్టింగ్...
   wwcConfigGUIGuidelinesAIDisabledReason: గార్డ్రెయిల్స్ ఉపయోగించడానికి AI ప్రొవైడర్ను
     తప్పనిసరిగా ఎనేబుల్ చేయాలి.
+  wwcConfigTranslationCapacityAuto: 'అనువాద సామర్థ్యం {0} క్రియాశీల అనువాదాలు మరియు
+    {1} క్యూడ్ అనువాదాలకు స్వయంచాలకంగా పరిష్కరించబడింది (JVM ప్రాసెసర్లు: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: అనువాద సామర్థ్య పరిమితి విజయవంతంగా
+    సెట్ చేయబడింది.
+  wwcConfigGUITranslationCapacityButton: అనువాద సామర్థ్యాన్ని మార్చండి
+  wwcConfigTranslationCapacityInvalid: config.yml లో చెల్లని అనువాద సామర్థ్య పరిమితి
+    సెట్ చేయబడింది. ఆటో లేదా 1 లేదా అంతకంటే ఎక్కువ కోసం 0 ఉపయోగించండి. ఆటోకు డిఫాల్టింగ్...
+  wwcConfigTranslationCapacityManual: అనువాద సామర్థ్యం {0} క్రియాశీల అనువాదాలు మరియు
+    {1} క్యూడ్ అనువాదాలకు సెట్ చేయబడింది.
+  wwcConfigConversationTranslationCapacityInvalid: అనువాద సామర్థ్య పరిమితి ఆటో లేదా
+    1 లేదా అంతకంటే ఎక్కువ కోసం 0 ఉండాలి.
+  wwcConfigConversationTranslationCapacityInput: ప్రస్తుత అనువాద సామర్థ్య పరిమితి
+    {0} ({1} యాక్టివ్, {2} క్యూడ్). ఆటో లేదా సంఖ్య 1 లేదా అంతకంటే ఎక్కువ కోసం 0 అని
+    టైప్ చేయండి.
 

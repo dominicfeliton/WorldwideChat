@@ -829,4 +829,17 @@ Messages:
     là 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Nhà cung cấp AI phải được bật để sử dụng
     Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Khả năng dịch tự động giải quyết thành bản dịch
+    đang hoạt động {0} và các bản dịch xếp hàng {1} (bộ xử lý JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Giới hạn khả năng dịch được thiết
+    lập thành công.
+  wwcConfigGUITranslationCapacityButton: Thay đổi khả năng dịch thuật
+  wwcConfigTranslationCapacityInvalid: Giới hạn dung lượng dịch không hợp lệ được
+    đặt trong config.yml. Sử dụng 0 cho tự động hoặc 1 trở lên. Mặc định là tự động...
+  wwcConfigTranslationCapacityManual: Khả năng dịch được đặt thành {0} bản dịch đang
+    hoạt động và {1} bản dịch xếp hàng.
+  wwcConfigConversationTranslationCapacityInvalid: Giới hạn khả năng dịch phải là
+    0 cho tự động hoặc 1 trở lên.
+  wwcConfigConversationTranslationCapacityInput: Giới hạn dung lượng dịch hiện tại
+    là {0} ({1} đang hoạt động, {2} xếp hàng). Nhập 0 cho tự động hoặc số 1 trở lên.
 

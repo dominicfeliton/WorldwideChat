@@ -832,4 +832,18 @@ Messages:
     अनुवाद समवर्ती सीमा सेट की गई है। मान कम से कम 1 होना चाहिए। डिफ़ॉल्ट रूप से 4...
   wwcConfigGUIGuidelinesAIDisabledReason: गार्डराइल्स का उपयोग करने के लिए AI प्रदाता
     को सक्षम होना चाहिए।
+  wwcConfigTranslationCapacityAuto: 'अनुवाद क्षमता {0} सक्रिय अनुवादों और {1} पंक्तिबद्ध
+    अनुवादों (JVM प्रोसेसर: {2}) के लिए स्वतः हल हो जाती है।'
+  wwcConfigConversationTranslationCapacitySuccess: अनुवाद क्षमता सीमा सफलतापूर्वक
+    सेट की गई।
+  wwcConfigGUITranslationCapacityButton: अनुवाद क्षमता बदलें
+  wwcConfigTranslationCapacityInvalid: config.yml में अमान्य अनुवाद क्षमता सीमा सेट
+    की गई है। ऑटो या 1 या उससे अधिक के लिए 0 का उपयोग करें। स्वचालित रूप से डिफ़ॉल्ट
+    रूप से...
+  wwcConfigTranslationCapacityManual: अनुवाद क्षमता {0} सक्रिय अनुवादों और {1} पंक्तिबद्ध
+    अनुवादों पर सेट की गई है।
+  wwcConfigConversationTranslationCapacityInvalid: ऑटो या 1 या उससे अधिक के लिए अनुवाद
+    क्षमता सीमा 0 होनी चाहिए।
+  wwcConfigConversationTranslationCapacityInput: वर्तमान अनुवाद क्षमता सीमा {0} ({1}
+    सक्रिय, {2} पंक्तिबद्ध) है। ऑटो या नंबर 1 या उससे अधिक के लिए 0 टाइप करें।
 

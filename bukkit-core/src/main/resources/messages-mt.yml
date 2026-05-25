@@ -826,4 +826,17 @@ Messages:
     1. Insuffiċjenza għal 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Fornitur tal-AI għandu jkun ippermettat
     li juża Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Kapaċità traduzzjoni auto-riżolta għal {0} traduzzjonijiet
+    attivi u {1} traduzzjonijiet kju (proċessuri JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limitu tal-kapaċità tat-traduzzjoni
+    stabbilit b'suċċess.
+  wwcConfigGUITranslationCapacityButton: Bidla l-Kapaċità tat-Traduzzjoni
+  wwcConfigTranslationCapacityInvalid: Limitu ta' kapaċità ta' traduzzjoni invalidu
+    stabbilit f'config.yml. Uża 0 għal auto jew 1 jew akbar. Insuffiċjenza għal auto...
+  wwcConfigTranslationCapacityManual: Kapaċità tat-traduzzjoni stabbilita għal {0}
+    traduzzjonijiet attivi u {1} traduzzjonijiet bil-kju.
+  wwcConfigConversationTranslationCapacityInvalid: Il-limitu tal-kapaċità tat-traduzzjoni
+    għandu jkun 0 għal auto jew 1 jew akbar.
+  wwcConfigConversationTranslationCapacityInput: Il-limitu attwali tal-kapaċità tat-traduzzjoni
+    huwa {0} ({1} attiva, {2} f'kju). Tip 0 għal auto jew numru 1 jew akbar.
 

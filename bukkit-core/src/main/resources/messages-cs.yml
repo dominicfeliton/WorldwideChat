@@ -802,4 +802,17 @@ Messages:
     4...
   wwcConfigGUIGuidelinesAIDisabledReason: Poskytovatel AI musí být povolen, aby mohl
     používat zábradlí.
+  wwcConfigTranslationCapacityAuto: 'Kapacita překladu se automaticky vyřeší na {0}
+    aktivní překlady a {1} překlady ve frontě (procesory JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limit kapacity překladu byl úspěšně
+    nastaven.
+  wwcConfigGUITranslationCapacityButton: Změna kapacity překladu
+  wwcConfigTranslationCapacityInvalid: Neplatný limit kapacity překladu nastaven v
+    config.yml. Použijte 0 pro auto nebo 1 nebo vyšší. Výchozí nastavení na auto...
+  wwcConfigTranslationCapacityManual: Kapacita překladu nastavena na {0} aktivní překlady
+    a {1} překlady ve frontě.
+  wwcConfigConversationTranslationCapacityInvalid: Limit překladové kapacity musí
+    být 0 pro auto nebo 1 nebo vyšší.
+  wwcConfigConversationTranslationCapacityInput: Aktuální limit kapacity překladu
+    je {0} ({1} aktivní, {2} ve frontě). Zadejte 0 pro auto nebo číslo 1 nebo vyšší.
 

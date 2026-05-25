@@ -803,4 +803,18 @@ Messages:
     kepada 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Pembekal AI mesti diaktifkan untuk menggunakan
     Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Kapasiti terjemahan diselesaikan secara automatik
+    kepada terjemahan aktif {0} dan terjemahan beratur {1} (pemproses JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Had kapasiti terjemahan ditetapkan
+    dengan jayanya.
+  wwcConfigGUITranslationCapacityButton: Tukar Kapasiti Terjemahan
+  wwcConfigTranslationCapacityInvalid: Had kapasiti terjemahan tidak sah ditetapkan
+    dalam config.yml. Gunakan 0 untuk automatik atau 1 atau lebih besar. Lalai kepada
+    automatik...
+  wwcConfigTranslationCapacityManual: Kapasiti terjemahan ditetapkan kepada {0} terjemahan
+    aktif dan terjemahan beratur {1}.
+  wwcConfigConversationTranslationCapacityInvalid: Had kapasiti terjemahan mestilah
+    0 untuk automatik atau 1 atau lebih besar.
+  wwcConfigConversationTranslationCapacityInput: Had kapasiti terjemahan semasa ialah
+    {0} ({1} aktif, {2} beratur). Taipkan 0 untuk auto atau nombor 1 atau lebih besar.
 

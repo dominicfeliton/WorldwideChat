@@ -803,4 +803,18 @@ Messages:
     na 4...
   wwcConfigGUIGuidelinesAIDisabledReason: AI dobavljaču mora biti omogućeno da koristi
     zaštitne ograde.
+  wwcConfigTranslationCapacityAuto: 'Kapacitet prevođenja automatski rešen na {0}
+    aktivne prevode i {1} prevode u redu (JVM procesori: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Ograničenje kapaciteta prevoda
+    uspešno postavljeno.
+  wwcConfigGUITranslationCapacityButton: Promenite kapacitet prevođenja
+  wwcConfigTranslationCapacityInvalid: Nevažeće ograničenje kapaciteta prevoda postavljeno
+    u config.iml. Koristite 0 za automatsko ili 1 ili više. Podrazumevano podešavanje
+    na automatsko...
+  wwcConfigTranslationCapacityManual: Kapacitet prevoda postavljen na {0} aktivni
+    prevodi i {1} prevode u redu.
+  wwcConfigConversationTranslationCapacityInvalid: Ograničenje kapaciteta prevođenja
+    mora biti 0 za auto ili 1 ili više.
+  wwcConfigConversationTranslationCapacityInput: Trenutno ograničenje kapaciteta prevoda
+    je {0} ({1} aktivno, {2} u redu čekanja). Unesite 0 za auto ili broj 1 ili veći.
 

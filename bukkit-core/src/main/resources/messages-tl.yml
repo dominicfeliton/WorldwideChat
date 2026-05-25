@@ -900,4 +900,20 @@ Messages:
     sa 1. Pag-default sa 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Dapat na paganahin ang isang tagapagbigay
     ng AI upang gumamit ng Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Awtomatikong nalutas ang kapasidad ng pagsasalin
+    sa {0} na mga aktibong pagsasalin at {1} na mga pagsasalin sa pila (mga processor
+    ng JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Matagumpay na itinakda ang limitasyon
+    ng kapasidad
+  wwcConfigGUITranslationCapacityButton: Baguhin ang Kapasidad ng Pag
+  wwcConfigTranslationCapacityInvalid: Hindi wastong limitasyon ng kapasidad ng pagsasalin
+    na nakatakda sa config.yml. Gumamit ng 0 para sa auto o 1 o higit pa. Pag-default
+    sa auto...
+  wwcConfigTranslationCapacityManual: Nakatakda ang kapasidad ng pagsasalin sa {0}
+    na mga aktibong pagsasalin at {1} na mga pagsasalin sa pila
+  wwcConfigConversationTranslationCapacityInvalid: Ang limitasyon ng kapasidad ng
+    pagsasalin ay dapat na 0 para sa auto o 1 o higit pa.
+  wwcConfigConversationTranslationCapacityInput: Ang kasalukuyang limitasyon ng kapasidad
+    ng pagsasalin ay {0} ({1} active, {2} queue). I-type ang 0 para sa auto o isang
+    numero 1 o mas malaki.
 

@@ -779,4 +779,17 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limit concurrency tradiksyon
     objè envalab mete nan config.yml. Valè a dwe omwen 1. Defaulting nan 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Dwe pèmèt yon founisè AI yo sèvi ak Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Kapasite tradiksyon oto-rezoud nan {0} tradiksyon
+    aktif ak {1} kedye tradiksyon (processeurs JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limit kapasite tradiksyon mete
+    avèk siksè.
+  wwcConfigGUITranslationCapacityButton: Chanje kapasite tradiksyon
+  wwcConfigTranslationCapacityInvalid: Limit kapasite tradiksyon envalid mete nan
+    config.yml. Sèvi ak 0 pou oto oswa 1 oswa pi gwo. Defaulting nan oto...
+  wwcConfigTranslationCapacityManual: Kapasite tradiksyon mete nan {0} tradiksyon
+    aktif ak {1} tradiksyon keu.
+  wwcConfigConversationTranslationCapacityInvalid: Limit kapasite tradiksyon dwe 0
+    pou oto oswa 1 oswa pi gwo.
+  wwcConfigConversationTranslationCapacityInput: Limit kapasite tradiksyon aktyèl
+    la se {0} ({1} aktif, {2} keu). Kalite 0 pou oto oswa yon nimewo 1 oswa pi gwo.
 

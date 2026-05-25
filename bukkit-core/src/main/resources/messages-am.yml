@@ -701,4 +701,15 @@ Messages:
   wwcConfigObjectTranslationConcurrencyMinimumInvalid: በconfig.yml ውስጥ የተቀናጀ ያልሆነ
     የእቃ ትርጉም ተመሳሳይ ገደብ። ዋጋው ቢያንስ 1 መሆን አለበት። ወደ 4 ነባሪ መሆን...
   wwcConfigGUIGuidelinesAIDisabledReason: የ AI አቅራቢ Guardrails ን ለመጠቀም ማንቃት አለበት።
+  wwcConfigTranslationCapacityAuto: 'የትርጉም አቅም በራስ-ሰር ወደ {0} ንቁ ትርጉሞች እና {1} ሰልፍ የተቀመጡ
+    ትርጉሞች (JVM ፕሮሰሰሮች: {2}'
+  wwcConfigConversationTranslationCapacitySuccess: የትርጉም አቅም ገደብ በተሳካ ሁኔታ
+  wwcConfigGUITranslationCapacityButton: የትርጉም አቅም ይቀ
+  wwcConfigTranslationCapacityInvalid: በconfig.yml ውስጥ የተቀመጠ ልክ ያልሆነ የትርጉም አቅም ገደብ።
+    ለራስ-ሰር ወይም ለ 1 ወይም ከዚያ በላይ 0 ይጠቀሙ። ወደ ራስ-ሰር ነባሪ መቀየር...
+  wwcConfigTranslationCapacityManual: የትርጉም አቅም በ {0} ንቁ ትርጉሞች እና {1} ሰልፍ የተቀመጡ ትርጉሞ
+  wwcConfigConversationTranslationCapacityInvalid: የትርጉም አቅም ገደብ ለራስ-ሰር ወይም 1 ወይም
+    ከዚያ በላይ 0 መሆን አለበት
+  wwcConfigConversationTranslationCapacityInput: የአሁኑ የትርጉም አቅም ገደብ {0} ({1} ንቁ፣ {2}
+    ሰልፍ) ነው። ለራስ-ሰር ወይም ለቁጥር 1 ወይም ከዚያ በላይ 0 ይተይቡ።
 

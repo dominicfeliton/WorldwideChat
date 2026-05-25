@@ -697,4 +697,16 @@ Messages:
     config.ymlค่าต้องมีอย่างน้อย 1ค่าเริ่มต้นเป็น 4...
   wwcConfigGUIGuidelinesAIDisabledReason: ผู้ให้บริการ AI จะต้องเปิดใช้งานเพื่อใช้
     Guardrails
+  wwcConfigTranslationCapacityAuto: 'ความสามารถในการแปลแก้ไขโดยอัตโนมัติเป็น {0} การแปลที่ใช้งานอยู่และการแปลในคิว
+    {1} (โปรเซสเซอร์ JVM: {2})'
+  wwcConfigConversationTranslationCapacitySuccess: กำหนดขีดจำกัดความสามารถในการแปลเรียบร้อยแล้ว
+  wwcConfigGUITranslationCapacityButton: เปลี่ยนความสามารถในการแปล
+  wwcConfigTranslationCapacityInvalid: ขีดจำกัดความสามารถในการแปลไม่ถูกต้องที่กำหนดไว้ใน
+    config.ymlใช้ 0 สำหรับอัตโนมัติ หรือ 1 ขึ้นไปค่าเริ่มต้นเป็นอัตโนมัติ...
+  wwcConfigTranslationCapacityManual: ความสามารถในการแปลที่ตั้งค่าเป็น {0} การแปลที่ใช้งานอยู่และ
+    {1} การแปลในคิว
+  wwcConfigConversationTranslationCapacityInvalid: ขีดจำกัดความสามารถในการแปลจะต้องเป็น
+    0 สำหรับอัตโนมัติ หรือ 1 ขึ้นไป
+  wwcConfigConversationTranslationCapacityInput: ขีดจำกัดความสามารถในการแปลปัจจุบันคือ
+    {0} (เปิดใช้งาน {1}, {2} อยู่ในคิว)พิมพ์ 0 สำหรับอัตโนมัติหรือหมายเลข 1 ขึ้นไป
 

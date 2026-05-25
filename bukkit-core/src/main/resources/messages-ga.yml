@@ -849,4 +849,19 @@ Messages:
     1 ar a laghad. Ag réamhshocrú go 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Caithfear soláthraí AI a chumasú chun Guardrails
     a úsáid.
+  wwcConfigTranslationCapacityAuto: Cumas aistriúcháin réitithe go huathoibríoch chuig
+    {0} aistriúcháin ghníomhacha agus {1} aistriúcháin scuaine (próiseálaithe J {2}
+  wwcConfigConversationTranslationCapacitySuccess: Socraítear teorainn cumais aistriúcháin
+    go rathúil
+  wwcConfigGUITranslationCapacityButton: Athraigh Cumas Aistriú
+  wwcConfigTranslationCapacityInvalid: Teorainn acmhainne aistriúcháin neamhbhailí
+    socraithe i config.yml. Úsáid 0 le haghaidh uathoibríoch nó 1 nó níos mó. Réamhshocrú
+    go huathoibríoch...
+  wwcConfigTranslationCapacityManual: Tá cumas aistriúcháin socraithe ar {0} aistriúcháin
+    ghníomhacha agus {1} aistriúcháin
+  wwcConfigConversationTranslationCapacityInvalid: Caithfidh teorainn acmhainne aistriúcháin
+    a bheith 0 do uathoibríoch nó 1 nó níos mó
+  wwcConfigConversationTranslationCapacityInput: Is é {0} an teorainn acmhainne aistriúcháin
+    reatha ({1} gníomhach, {2} cuainte). Cineál 0 le haghaidh uathoibríoch nó uimhir
+    1 nó níos mó.
 

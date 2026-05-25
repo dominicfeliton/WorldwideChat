@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.Metrics;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import com.dominicfeliton.worldwidechat.util.TranslationCapacityLimiter;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
@@ -293,6 +294,25 @@ public class ConfigurationHandler {
             main.setObjectTranslationConcurrencyLimit(4);
             main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyMinimumInvalid"));
         }
+        // Total Translation Capacity Limit
+        try {
+            if (!mainConfig.isInt("General.translationCapacityLimit")) {
+                throw new IllegalArgumentException("General.translationCapacityLimit must be an integer.");
+            }
+            int translationCapacityLimit = mainConfig.getInt("General.translationCapacityLimit");
+            if (translationCapacityLimit >= TranslationCapacityLimiter.AUTO_CONFIG_VALUE) {
+                main.setTranslationCapacityLimit(translationCapacityLimit);
+                logTranslationCapacity();
+            } else {
+                main.setTranslationCapacityLimit(TranslationCapacityLimiter.AUTO_CONFIG_VALUE);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigTranslationCapacityInvalid"));
+                logTranslationCapacity();
+            }
+        } catch (Exception e) {
+            main.setTranslationCapacityLimit(TranslationCapacityLimiter.AUTO_CONFIG_VALUE);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigTranslationCapacityInvalid"));
+            logTranslationCapacity();
+        }
         // bStats
         if (mainConfig.getBoolean("General.enablebStats")) {
             Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
@@ -526,6 +546,20 @@ public class ConfigurationHandler {
             main.setErrorsToIgnore(defaultArr);
             main.getLogger().warning(refs.getPlainMsg("wwcConfigErrorsToIgnoreInvalid"));
         }
+    }
+
+    private void logTranslationCapacity() {
+        TranslationCapacityLimiter limiter = main.getTranslationCapacityLimiter();
+        String[] replacements = new String[]{
+                "&6" + limiter.getActiveLimit(),
+                "&6" + limiter.getQueueLimit(),
+                "&6" + limiter.getAvailableProcessors()
+        };
+        if (main.getTranslationCapacityLimit() == TranslationCapacityLimiter.AUTO_CONFIG_VALUE) {
+            main.getLogger().info(refs.getPlainMsg("wwcConfigTranslationCapacityAuto", replacements, "&a"));
+            return;
+        }
+        main.getLogger().info(refs.getPlainMsg("wwcConfigTranslationCapacityManual", replacements, "&a"));
     }
 
     /* Storage Settings */

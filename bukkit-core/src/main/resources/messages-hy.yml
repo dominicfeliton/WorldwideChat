@@ -847,4 +847,19 @@ Messages:
     առնվազն 1: Նախանցված է 4...'
   wwcConfigGUIGuidelinesAIDisabledReason: 'AI մատակարարը պետք է միացված լինի Guardrails-
     ից օգտվելու համար:'
+  wwcConfigTranslationCapacityAuto: 'Թարգմանության հզորությունը auto-լուծվել է {0}
+    ակտիվ թարգմանությունների եւ {1} հերթում թարգմանությունների (JVM պրոցեսորներ: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: 'Թարգմանության հզորության սահմանը
+    հաջողությամբ սահմանվել է:'
+  wwcConfigGUITranslationCapacityButton: Փոխել թարգմանության կարողությունները
+  wwcConfigTranslationCapacityInvalid: 'Անվավեր թարգմանության հզորության սահմանը,
+    որը սահմանվել է config.yml- ում: Օգտագործեք 0-ը ավտոմատ կամ 1 կամ ավելի մեծ համար:
+    Ավտոմատիկ կանխադրում...'
+  wwcConfigTranslationCapacityManual: Թարգմանության հզորությունը սահմանված է {0} ակտիվ
+    թարգմանությունների եւ {1} հերթում թարգմանությունների.
+  wwcConfigConversationTranslationCapacityInvalid: 'Թարգմանության հզորության սահմանը
+    պետք է լինի 0 ավտոմատ կամ 1 կամ ավելի մեծ համար:'
+  wwcConfigConversationTranslationCapacityInput: 'Ներկայիս թարգմանության հզորության
+    սահմանաչափը {0} է ({1} ակտիվ, {2} հերթում): Մուտքագրեք 0-ը ավտոմատ կամ 1 կամ ավելի
+    մեծ թվի համար:'
 

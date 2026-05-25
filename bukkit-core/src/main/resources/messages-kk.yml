@@ -801,4 +801,20 @@ Messages:
     дефолт...
   wwcConfigGUIGuidelinesAIDisabledReason: Guardrails пайдалану үшін AI провайдері
     қосылуы керек.
+  wwcConfigTranslationCapacityAuto: 'Аударма сыйымдылығы {0} белсенді аудармаларға
+    және {1} кезекке қойылған аудармаларға (JVM процессорлары: {2}) автоматты түрде
+    шешіледі.'
+  wwcConfigConversationTranslationCapacitySuccess: Аударма сыйымдылығының шегі сәтті
+    орнатылды.
+  wwcConfigGUITranslationCapacityButton: Аударма қабілетін өзгертіңіз
+  wwcConfigTranslationCapacityInvalid: Config.yml бағдарламасында орнатылған аударма
+    сыйымдылығының жарамсыз шегі. Автоматты немесе 1 немесе одан жоғары үшін 0 пайдаланыңыз.
+    Автоматты дефолт...
+  wwcConfigTranslationCapacityManual: Аударма сыйымдылығы {0} белсенді аудармаларға
+    және {1} кезекке қойылған аудармаларға орнатылған.
+  wwcConfigConversationTranslationCapacityInvalid: Аударма сыйымдылығының шегі авто
+    немесе 1 немесе одан үлкен үшін 0 болуы керек.
+  wwcConfigConversationTranslationCapacityInput: Ағымдағы аударма сыйымдылығының шегі
+    - {0} ({1} белсенді, {2} кезекке қойылған). Автоматты немесе 1 немесе одан үлкен
+    сан үшін 0 теріңіз.
 

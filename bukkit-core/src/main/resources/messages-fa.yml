@@ -804,4 +804,17 @@ Messages:
     در config.yml تنظیم شده است. مقدار باید حداقل 1 باشد. پیش فرض به 4...
   wwcConfigGUIGuidelinesAIDisabledReason: یک ارائه دهنده هوش مصنوعی باید برای استفاده
     از Guardrails فعال باشد.
+  wwcConfigTranslationCapacityAuto: 'ظرفیت ترجمه به صورت خودکار به ترجمه فعال {0}
+    و ترجمه های صف دار {1} (پردازنده های JVM: {2}) حل شده است.'
+  wwcConfigConversationTranslationCapacitySuccess: محدودیت ظرفیت ترجمه با موفقیت تنظیم
+    شده است.
+  wwcConfigGUITranslationCapacityButton: تغییر ظرفیت ترجمه
+  wwcConfigTranslationCapacityInvalid: محدودیت ظرفیت ترجمه نامعتبر در config.yml تنظیم
+    شده است. از 0 برای خودکار یا 1 یا بیشتر استفاده کنید. به طور پیش فرض به خودکار...
+  wwcConfigTranslationCapacityManual: ظرفیت ترجمه به {0} ترجمه فعال و {1} ترجمه صف
+    تنظیم شده است.
+  wwcConfigConversationTranslationCapacityInvalid: محدودیت ظرفیت ترجمه باید 0 برای
+    خودکار یا 1 یا بیشتر باشد.
+  wwcConfigConversationTranslationCapacityInput: محدودیت ظرفیت ترجمه فعلی {0} ({1}
+    فعال، {2} صف) است. 0 را برای خودکار یا عدد 1 یا بیشتر تایپ کنید.
 

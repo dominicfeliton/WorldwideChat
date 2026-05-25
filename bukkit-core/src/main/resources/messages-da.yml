@@ -809,4 +809,17 @@ Messages:
     til 4...
   wwcConfigGUIGuidelinesAIDisabledReason: En AI-udbyder skal være aktiveret for at
     bruge Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Oversættelseskapacitet løses automatisk til {0}
+    aktive oversættelser og {1} køoversættelser (JVM-processorer: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Grænsen for oversættelseskapacitet
+    er indstillet korrekt.
+  wwcConfigGUITranslationCapacityButton: Skift oversættelseskapacitet
+  wwcConfigTranslationCapacityInvalid: Ugyldig grænse for oversættelseskapacitet angivet
+    i config.yml. Brug 0 til auto eller 1 eller højere. Standardindstilling til auto...
+  wwcConfigTranslationCapacityManual: Oversættelseskapacitet indstillet til {0} aktive
+    oversættelser og {1} oversættelser i kø.
+  wwcConfigConversationTranslationCapacityInvalid: Grænsen for oversættelseskapacitet
+    skal være 0 for automatisk eller 1 eller højere.
+  wwcConfigConversationTranslationCapacityInput: Den aktuelle grænse for oversættelseskapacitet
+    er {0} ({1} aktiv, {2} i kø). Skriv 0 for auto eller et tal 1 eller større.
 

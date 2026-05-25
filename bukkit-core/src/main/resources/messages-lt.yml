@@ -824,4 +824,19 @@ Messages:
     nustatymas į 4...
   wwcConfigGUIGuidelinesAIDisabledReason: AI teikėjas turi būti įgalintas naudoti
     “Guardrails”.
+  wwcConfigTranslationCapacityAuto: 'Vertimo talpa automatiškai išspręsta į {0} aktyvių
+    vertimų ir {1} eilės vertimų (JVM procesoriai: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Sėkmingai nustatytas vertimo pajėgumų
+    limitas.
+  wwcConfigGUITranslationCapacityButton: Pakeiskite vertimo pajėgumus
+  wwcConfigTranslationCapacityInvalid: Neteisingas vertimo pajėgumų apribojimas nustatytas
+    config.yml. Naudokite 0 automatiniam arba 1 ar didesniam. Numatytasis nustatymas
+    į automatinį...
+  wwcConfigTranslationCapacityManual: Vertimo pajėgumai nustatyti į {0} aktyvūs vertimai
+    ir {1} eilės vertimai.
+  wwcConfigConversationTranslationCapacityInvalid: Vertimo pajėgumo riba turi būti
+    0 automatiniam arba 1 ar didesniam.
+  wwcConfigConversationTranslationCapacityInput: Dabartinis vertimo pajėgumų limitas
+    yra {0} ({1} aktyvus, {2} eilėje). Įveskite 0 automatiniam arba skaičiui 1 ar
+    didesniam skaičiui.
 

@@ -1003,12 +1003,19 @@ public class CommonRefs {
             String out = inMessage;
             debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
 
-            if (guidelinesCheck == null) {
-                checkGuidelinesAI(inMessage);
-            } else {
-                guidelinesCheck.ensurePassed(this);
+            try (TranslationCapacityLimiter.Permit permit = main.getTranslationCapacityLimiter().acquire(getTranslationCapacityQueueWaitSeconds(), TimeUnit.SECONDS)) {
+                if (!permit.acquired()) {
+                    debugMsg("Translation capacity is busy (" + permit.rejectionReason() + "). Returning original text.");
+                    return inMessage;
+                }
+
+                if (guidelinesCheck == null) {
+                    checkGuidelinesAI(inMessage);
+                } else {
+                    guidelinesCheck.ensurePassed(this);
+                }
+                out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
             }
-            out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
 
             /* Update stats */
             currPlayerRecord.incrementSuccessfulTranslations();
@@ -1057,7 +1064,7 @@ public class CommonRefs {
 
             /* Add 1 to error count */
             markTranslationIndicatorError(currPlayer, markStatusErrors);
-            main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
+            int errorCount = main.incrementTranslatorErrorCount();
             sendMsg("wwcTranslatorError", "", "&c", currPlayer);
             main.getLogger()
                     .severe(getPlainMsg("wwcTranslatorErrorConsole", "&6" + currPlayer.getName(), "&c", null));
@@ -1088,10 +1095,10 @@ public class CommonRefs {
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-            debugMsg("Error Count: " + main.getTranslatorErrorCount());
+            debugMsg("Error Count: " + errorCount);
 
             /* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-            if (main.getTranslatorErrorCount() >= main.getErrorLimit()) {
+            if (errorCount >= main.getErrorLimit()) {
                 main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReached"));
                 main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
                 wwcHelper.runSync(new GenericRunnable() {
@@ -1198,6 +1205,10 @@ public class CommonRefs {
             current = current.getCause();
         }
         return null;
+    }
+
+    private long getTranslationCapacityQueueWaitSeconds() {
+        return Math.max(1, WorldwideChat.translatorFatalAbortSeconds - WorldwideChat.translatorConnectionTimeoutSeconds);
     }
 
     private void handleTranslationFailure(TranslationFailureException failure, Player currPlayer) {

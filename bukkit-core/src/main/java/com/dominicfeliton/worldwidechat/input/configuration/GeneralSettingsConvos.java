@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.TranslationCapacityLimiter;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
@@ -67,6 +68,40 @@ public class GeneralSettingsConvos {
                     CONFIG_GUI_TAGS.GEN_SET.inv.get());
         }
 
+    }
+
+    public static class TranslationCapacity extends NumericInputPrompt {
+
+        @Override
+        public @NotNull String getPromptText(InputContext context) {
+            CommonRefs refs = main.getServerFactory().getCommonRefs();
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            TranslationCapacityLimiter limiter = main.getTranslationCapacityLimiter();
+            String configuredLimit = main.getTranslationCapacityLimit() == TranslationCapacityLimiter.AUTO_CONFIG_VALUE
+                    ? "auto"
+                    : String.valueOf(main.getTranslationCapacityLimit());
+            return refs.getPlainMsg("wwcConfigConversationTranslationCapacityInput",
+                    new String[]{"&6" + configuredLimit, "&6" + limiter.getActiveLimit(), "&6" + limiter.getQueueLimit()},
+                    "&b",
+                    currPlayer);
+        }
+
+        @Override
+        protected InputResult acceptValidatedInput(@NotNull InputContext context, @NotNull Number input) {
+            int limit = input.intValue();
+            if (limit < TranslationCapacityLimiter.AUTO_CONFIG_VALUE) {
+                CommonRefs refs = main.getServerFactory().getCommonRefs();
+                refs.sendMsg("wwcConfigConversationTranslationCapacityInvalid", "", "&c", context.getForWhom());
+                return InputResult.repeat();
+            }
+
+            return invMan.genericConfigInput(true, context,
+                    "wwcConfigConversationTranslationCapacitySuccess",
+                    "General.translationCapacityLimit",
+                    limit,
+                    CONFIG_GUI_TAGS.GEN_SET.inv.get());
+        }
     }
 
     public static class Lang extends StringInputPrompt {

@@ -832,4 +832,20 @@ Messages:
     Alapértelmezés szerint 4...
   wwcConfigGUIGuidelinesAIDisabledReason: A mesterséges intelligencia-szolgáltatónak
     engedélyeznie kell a Guardrails használatát.
+  wwcConfigTranslationCapacityAuto: 'A fordítási kapacitás automatikusan feloldódik
+    {0} aktív fordításokra és {1} sorba helyezett fordításokra (JVM processzorok:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: A fordítási kapacitás korlátja
+    sikeresen beállítva.
+  wwcConfigGUITranslationCapacityButton: Fordítási kapacitás módosítása
+  wwcConfigTranslationCapacityInvalid: Érvénytelen fordítási kapacitási korlát beállítva
+    a config.yml fájlban. Használja a 0 értéket automatikus vagy 1 vagy annál nagyobb
+    értékekhez. Alapértelmezés szerint automatikus...
+  wwcConfigTranslationCapacityManual: A fordítási kapacitás {0} aktív fordításokra
+    és {1} sorba sorolt fordításokra van beállítva.
+  wwcConfigConversationTranslationCapacityInvalid: A fordítási kapacitás korlátozásának
+    automatikus vagy 1 vagy annál nagyobb érték esetén 0-nak kell lennie.
+  wwcConfigConversationTranslationCapacityInput: A fordítási kapacitás jelenlegi korlátja
+    {0} ({1} aktív, {2} sorban áll). Írja be a 0 parancsot az automatikus vagy az
+    1-es vagy annál nagyobb számhoz.
 

@@ -813,4 +813,17 @@ Messages:
     till 4...
   wwcConfigGUIGuidelinesAIDisabledReason: En AI-leverantör måste vara aktiverad för
     att kunna använda skyddsräcken.
+  wwcConfigTranslationCapacityAuto: 'Översättningskapacitet löses automatiskt till
+    {0} aktiva översättningar och {1} köade översättningar (JVM-processorer: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Gränsen för översättningskapacitet
+    har ställts in framgångsrikt.
+  wwcConfigGUITranslationCapacityButton: Ändra översättningskapacitet
+  wwcConfigTranslationCapacityInvalid: Ogiltig gräns för översättningskapacitet inställd
+    i config.yml. Använd 0 för auto eller 1 eller högre. Standardinställt till auto...
+  wwcConfigTranslationCapacityManual: Översättningskapacitet inställd på {0} aktiva
+    översättningar och {1} köade översättningar.
+  wwcConfigConversationTranslationCapacityInvalid: Gränsen för översättningskapacitet
+    måste vara 0 för auto eller 1 eller högre.
+  wwcConfigConversationTranslationCapacityInput: Den aktuella översättningskapacitetsgränsen
+    är {0} ({1} aktiv, {2} köad). Skriv 0 för auto eller ett nummer 1 eller högre.
 

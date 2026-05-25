@@ -827,4 +827,19 @@ Messages:
     По умолчанию 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Поставщик искусственного интеллекта должен
     иметь возможность использовать Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Объем переводов автоматически преобразован в
+    активные переводы {0} и переводы в очереди {1} (процессоры JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Предельное значение пропускной
+    способности перевода успешно установлено.
+  wwcConfigGUITranslationCapacityButton: Изменить объем перевода
+  wwcConfigTranslationCapacityInvalid: В config.yml установлен неправильный предел
+    пропускной способности перевода. Используйте 0 для автоматического режима или
+    1 или больше. По умолчанию установлено значение auto...
+  wwcConfigTranslationCapacityManual: Объем переводов установлен на {0} активных переводов
+    и {1} переводов в очереди.
+  wwcConfigConversationTranslationCapacityInvalid: Предельная пропускная способность
+    перевода должна быть равна 0 для авто или 1 или больше.
+  wwcConfigConversationTranslationCapacityInput: Текущее ограничение пропускной способности
+    перевода — {0} ({1} активно, {2} в очереди). Введите 0 в поле «Авто» или цифру
+    1 или больше.
 

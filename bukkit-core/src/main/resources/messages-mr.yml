@@ -774,4 +774,17 @@ Messages:
     ट्रान्सलेशन समर्याद सेट केली मूल्य किमान 1 असणे आवश्यक आहे. 4 वर डीफॉल्ट करणे...
   wwcConfigGUIGuidelinesAIDisabledReason: एआय प्रदाता गार्डरेल्स वापरण्यासाठी सक्षम
     असणे आवश्यक आहे
+  wwcConfigTranslationCapacityAuto: 'भाषांतर क्षमता {0} सक्रिय भाषांतर आणि {1} क्रियाकृत
+    भाषांतर (जेव्हीएम प्रोसेसर: {2}) यांचे'
+  wwcConfigConversationTranslationCapacitySuccess: भाषांतर क्षमता मर्यादा यशस्व
+  wwcConfigGUITranslationCapacityButton: भाषांतरण क्षमता
+  wwcConfigTranslationCapacityInvalid: config.yml मध्ये अवैध भाषांतर क्षमता मर्यादा
+    सेट केली. ऑटो किंवा 1 किंवा त्यापेक्षा जास्त साठी 0 वापरा. ऑटो डीफॉल्ट करणे...
+  wwcConfigTranslationCapacityManual: भाषांतर क्षमता {0} सक्रिय भाषांतर आणि {1} क्रियाकृत
+    भाषांतर वर
+  wwcConfigConversationTranslationCapacityInvalid: ऑटो किंवा 1 किंवा त्यापेक्षा जास्त
+    भाषांतर क्षमता मर्यादा 0 असावा
+  wwcConfigConversationTranslationCapacityInput: सध्याची भाषांतर क्षमता मर्यादा {0}
+    आहे ({1} सक्रिय, {2} रांगी). ऑटो किंवा 1 किंवा त्यापेक्षा जास्त क्रमांकासाठी 0
+    टाइप करा.
 

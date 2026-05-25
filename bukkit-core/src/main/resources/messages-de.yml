@@ -889,4 +889,20 @@ Messages:
     1 sein. Die Standardeinstellung ist 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Ein KI-Anbieter muss für die Verwendung
     von Guardrails aktiviert sein.
+  wwcConfigTranslationCapacityAuto: 'Die Übersetzungskapazität wurde automatisch auf
+    {0} aktive Übersetzungen und {1} Übersetzungen in der Warteschlange aufgelöst
+    (JVM-Prozessoren: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Das Übersetzungskapazitätslimit
+    wurde erfolgreich festgelegt.
+  wwcConfigGUITranslationCapacityButton: Übersetzungskapazität ändern
+  wwcConfigTranslationCapacityInvalid: In config.yml wurde ein ungültiges Übersetzungskapazitätslimit
+    festgelegt. Verwenden Sie 0 für Auto oder 1 oder höher. Standardmäßig auf Auto
+    eingestellt...
+  wwcConfigTranslationCapacityManual: Die Übersetzungskapazität ist auf {0} aktive
+    Übersetzungen und {1} Übersetzungen in der Warteschlange festgelegt.
+  wwcConfigConversationTranslationCapacityInvalid: Das Kapazitätslimit für die Übersetzung
+    muss 0 für Auto oder 1 oder höher sein.
+  wwcConfigConversationTranslationCapacityInput: Das aktuelle Übersetzungskapazitätslimit
+    ist {0} ({1} aktiv, {2} in der Warteschlange). Geben Sie 0 für automatisch oder
+    eine Zahl 1 oder höher ein.
 

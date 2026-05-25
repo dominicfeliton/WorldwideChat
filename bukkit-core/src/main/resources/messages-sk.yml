@@ -812,4 +812,18 @@ Messages:
     na 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Poskytovateľ AI musí mať povolený na používanie
     zábradlia.
+  wwcConfigTranslationCapacityAuto: 'Prekladová kapacita automaticky vyriešená na
+    {0} aktívne preklady a {1} preklady v rade (procesory JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Úspešne nastavený limit kapacity
+    prekladu.
+  wwcConfigGUITranslationCapacityButton: Zmeniť kapacitu prekladu
+  wwcConfigTranslationCapacityInvalid: Neplatný limit kapacity prekladu nastavený
+    v config.yml. Použite 0 pre automatické alebo 1 alebo vyššie. Predvolené nastavenie
+    automatického...
+  wwcConfigTranslationCapacityManual: Prekladateľská kapacita nastavená na {0} aktívne
+    preklady a {1} preklady v rade.
+  wwcConfigConversationTranslationCapacityInvalid: Limit kapacity prekladu musí byť
+    0 pre automatický alebo 1 alebo vyšší.
+  wwcConfigConversationTranslationCapacityInput: Aktuálny limit kapacity prekladu
+    je {0} ({1} aktívne, {2} v rade). Zadajte 0 pre auto alebo číslo 1 alebo vyššie.
 

@@ -837,4 +837,19 @@ Messages:
     Анхдагчаар 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Guardrails-ыг ашиглахын тулд AI үйлчилгээ
     үзүүлэгчийг идэвхжүүлсэн байх ёстой.
+  wwcConfigTranslationCapacityAuto: 'Орчуулгын хүчин чадал нь {0} идэвхтэй орчуулга
+    болон {1} дараалалтай орчуулга руу автоматаар шийдэгдсэн (JVM процессорууд: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Орчуулгын хүчин чадлын хязгаар
+    амжилттай тогтоогдсон.
+  wwcConfigGUITranslationCapacityButton: Орчуулгын чадавхийг өөрчлөх
+  wwcConfigTranslationCapacityInvalid: Config.yml дээр тогтоосон орчуулгын хүчин чадлын
+    хязгаар хүчин төгөлдөр бус. Автомат эсвэл 1 ба түүнээс дээш хувьд 0 ашиглана уу.
+    Автоматаар анхдагч байна...
+  wwcConfigTranslationCapacityManual: Орчуулгын хүчин чадал нь {0} идэвхтэй орчуулга
+    болон {1} дараалалтай орчуулга гэж тохируулсан.
+  wwcConfigConversationTranslationCapacityInvalid: Орчуулгын хүчин чадлын хязгаар
+    авто машины хувьд 0 эсвэл 1 ба түүнээс дээш байх ёстой.
+  wwcConfigConversationTranslationCapacityInput: Одоогийн орчуулгын хүчин чадлын хязгаар
+    нь {0} ({1} идэвхтэй, {2} дараалалтай) байна. Автомат эсвэл 1 ба түүнээс дээш
+    тооны хувьд 0 гэж бичнэ үү.
 

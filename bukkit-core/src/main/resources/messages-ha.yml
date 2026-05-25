@@ -814,4 +814,18 @@ Messages:
     aƙalla 1. Rarraba zuwa 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Dole ne a kunna mai ba da sabis na AI don
     amfani da Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Ƙarfin fassarar da aka warware ta atomatik zuwa
+    {0} fassarar aiki da fassarar {1} (masu sarrafa JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: An saita iyakar ƙarfin fassara
+    cikin nasara.
+  wwcConfigGUITranslationCapacityButton: Canja Ƙarfin fassara
+  wwcConfigTranslationCapacityInvalid: Iyakar ƙarfin fassara mara kyau wanda aka saita
+    a cikin config.yml. Yi amfani da 0 don atomatik ko 1 ko mafi girma. Rashin kai
+    zuwa atomatik...
+  wwcConfigTranslationCapacityManual: Ƙarfin fassara an saita zuwa {0} fassarar aiki
+    da fassarar {1} da fassarar da aka tsara.
+  wwcConfigConversationTranslationCapacityInvalid: Iyakar ƙarfin fassara dole ne ya
+    zama 0 don atomatik ko 1 ko mafi girma.
+  wwcConfigConversationTranslationCapacityInput: Iyakar ƙarfin fassara na yanzu shine
+    {0} ({1} aiki, {2} jerin). Rubuta 0 don atomatik ko lamba 1 ko mafi girma.
 

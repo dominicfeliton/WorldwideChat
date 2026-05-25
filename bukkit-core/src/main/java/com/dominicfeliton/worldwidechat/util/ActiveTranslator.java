@@ -94,38 +94,33 @@ public class ActiveTranslator {
         hasBeenSaved.set(i);
     }
 
-    public void setRateLimitPreviousTime(Instant i) {
+    public synchronized void setRateLimitPreviousTime(Instant i) {
         hasBeenSaved.set(false);
         rateLimitPreviousTime.set(i.toString());
     }
 
-    public RateLimitDecision tryAcquireRateLimitSlot(int delaySeconds, Instant now) {
+    public synchronized RateLimitDecision tryAcquireRateLimitSlot(int delaySeconds, Instant now) {
         if (delaySeconds <= 0) {
             return new RateLimitDecision(true, 0);
         }
 
         String nowString = now.toString();
-        while (true) {
-            String previous = rateLimitPreviousTime.get();
-            if (previous.equals("None")) {
-                if (rateLimitPreviousTime.compareAndSet(previous, nowString)) {
-                    hasBeenSaved.set(false);
-                    return new RateLimitDecision(true, 0);
-                }
-                continue;
-            }
-
-            Instant previousTime = Instant.parse(previous);
-            Instant nextAllowedTime = previousTime.plus(delaySeconds, ChronoUnit.SECONDS);
-            if (now.compareTo(nextAllowedTime) < 0) {
-                return new RateLimitDecision(false, ChronoUnit.SECONDS.between(now, nextAllowedTime));
-            }
-
-            if (rateLimitPreviousTime.compareAndSet(previous, nowString)) {
-                hasBeenSaved.set(false);
-                return new RateLimitDecision(true, 0);
-            }
+        String previous = rateLimitPreviousTime.get();
+        if (previous.equals("None")) {
+            rateLimitPreviousTime.set(nowString);
+            hasBeenSaved.set(false);
+            return new RateLimitDecision(true, 0);
         }
+
+        Instant previousTime = Instant.parse(previous);
+        Instant nextAllowedTime = previousTime.plus(delaySeconds, ChronoUnit.SECONDS);
+        if (now.compareTo(nextAllowedTime) < 0) {
+            return new RateLimitDecision(false, ChronoUnit.SECONDS.between(now, nextAllowedTime));
+        }
+
+        rateLimitPreviousTime.set(nowString);
+        hasBeenSaved.set(false);
+        return new RateLimitDecision(true, 0);
     }
 
     public int getRateLimit() {

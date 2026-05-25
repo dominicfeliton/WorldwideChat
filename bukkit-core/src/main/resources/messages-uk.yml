@@ -818,4 +818,18 @@ Messages:
     1. За замовчуванням до 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Постачальник штучного інтелекту повинен
     бути увімкнений для використання Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Можливість перекладу автоматично вирішується
+    до {0} активних перекладів та {1} перекладів у черзі (процесори JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Ліміт ємності перекладу встановлено
+    успішно.
+  wwcConfigGUITranslationCapacityButton: Змінити потужність перекладу
+  wwcConfigTranslationCapacityInvalid: Невірний ліміт ємності перекладу, встановлений
+    у config.yml. Використовуйте 0 для авто або 1 або більше. За замовчуванням автоматичне...
+  wwcConfigTranslationCapacityManual: Ємність перекладу встановлена на {0} активні
+    переклади та {1} переклади в черзі.
+  wwcConfigConversationTranslationCapacityInvalid: Обмеження ємності перекладу має
+    бути 0 для автоматичного або 1 або більше.
+  wwcConfigConversationTranslationCapacityInput: Поточний ліміт ємності перекладу
+    становить {0} ({1} активний, {2} в черзі). Введіть 0 для авто або число 1 або
+    більше.
 

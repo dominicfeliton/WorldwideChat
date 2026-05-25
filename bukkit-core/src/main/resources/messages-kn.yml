@@ -825,4 +825,19 @@ Messages:
     ಆಗಿದೆ...
   wwcConfigGUIGuidelinesAIDisabledReason: ಗಾರ್ಡ್ರೈಲ್ಗಳನ್ನು ಬಳಸಲು AI ಪೂರೈಕೆದಾರರನ್ನು
     ಸಕ್ರಿಯಗೊಳಿಸಬೇಕು.
+  wwcConfigTranslationCapacityAuto: '{0} ಸಕ್ರಿಯ ಅನುವಾದಗಳು ಮತ್ತು {1} ಕ್ಯೂಡ್ ಅನುವಾದಗಳಿಗೆ
+    ಅನುವಾದ ಸಾಮರ್ಥ್ಯವನ್ನು ಸ್ವಯಂ-ಪರಿಹರಿಸಲಾಗಿದೆ (ಜೆವಿಎಂ ಪ್ರೊಸೆಸರ್ಗಳು: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUITranslationCapacityButton: ಅನುವಾದ ಸಾಮರ್ಥ್ಯವನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigTranslationCapacityInvalid: ಅಮಾನ್ಯ ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿಯನ್ನು config.yml
+    ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ. ಸ್ವಯಂ ಅಥವಾ 1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನವುಗಳಿಗಾಗಿ 0 ಬಳಸಿ. ಸ್ವಯಂ
+    ಗೆ ಡೀಫಾಲ್ಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
+  wwcConfigTranslationCapacityManual: ಅನುವಾದ ಸಾಮರ್ಥ್ಯವನ್ನು {0} ಸಕ್ರಿಯ ಅನುವಾದಗಳು ಮತ್ತು
+    {1} ಕ್ಯೂಡ್ ಅನುವಾದಗಳಿಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationTranslationCapacityInvalid: ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿಯು ಸ್ವಯಂ ಅಥವಾ
+    1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿ 0 ಆಗಿರಬೇಕು.
+  wwcConfigConversationTranslationCapacityInput: ಪ್ರಸ್ತುತ ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿ {0}
+    ({1} ಸಕ್ರಿಯ, {2} ಕ್ಯೂಡ್) ಆಗಿದೆ. ಸ್ವಯಂ ಅಥವಾ ಸಂಖ್ಯೆ 1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಸಂಖ್ಯೆಗಾಗಿ
+    0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
 

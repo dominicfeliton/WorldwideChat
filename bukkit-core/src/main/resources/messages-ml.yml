@@ -841,4 +841,19 @@ Messages:
     4 ലേക്ക് ഡിഫോൾട്ട് ചെയ്യുന്നു...
   wwcConfigGUIGuidelinesAIDisabledReason: ഗാർഡ്രെയിലുകൾ ഉപയോഗിക്കുന്നതിന് ഒരു AI ദാതാവിനെ
     പ്രാപ്തമാക്കണം.
+  wwcConfigTranslationCapacityAuto: 'വിവർത്തന ശേഷി {0} സജീവ വിവർത്തനങ്ങളിലേക്കും {1}
+    ക്യൂഡ് വിവർത്തനങ്ങളിലേക്കും സ്വയമേവ പരിഹരിച്ചു (JVM പ്രോസസ്സറുകൾ: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: വിവർത്തന ശേഷി പരിധി വിജയകരമായി
+    സജ്ജമാക്കി.
+  wwcConfigGUITranslationCapacityButton: വിവർത്തന ശേഷി മാറ്റുക
+  wwcConfigTranslationCapacityInvalid: config.yml- ൽ അസാധുവായ വിവർത്തന ശേഷി പരിധി
+    സജ്ജീകരിച്ചിരിക്കുന്നു. യാന്ത്രികമോ 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലോ 0 ഉപയോഗിക്കുക. ഓട്ടോയിലേക്ക്
+    ഡിഫോൾട്ട് ചെയ്യുന്നു...
+  wwcConfigTranslationCapacityManual: വിവർത്തന ശേഷി {0} സജീവ വിവർത്തനങ്ങളും {1} ക്യൂ
+    ചെയ്ത വിവർത്തനങ്ങളും ആയി സജ്ജമാക്കി.
+  wwcConfigConversationTranslationCapacityInvalid: വിവർത്തന ശേഷി പരിധി ഓട്ടോയ്ക്ക്
+    0 അല്ലെങ്കിൽ 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലോ ആയിരിക്കണം.
+  wwcConfigConversationTranslationCapacityInput: നിലവിലെ വിവർത്തന ശേഷി പരിധി {0} ({1}
+    active, {2} ക്യൂഡ്) ആണ്. ഓട്ടോയ്ക്കായി 0 അല്ലെങ്കിൽ ഒരു നമ്പർ 1 അല്ലെങ്കിൽ അതിൽ
+    കൂടുതലോ ടൈപ്പ് ചെയ്യുക.
 

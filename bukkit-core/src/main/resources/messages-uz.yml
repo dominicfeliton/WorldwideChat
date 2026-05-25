@@ -852,4 +852,19 @@ Messages:
     4 ga sozlash...
   wwcConfigGUIGuidelinesAIDisabledReason: Guardrails-dan foydalanish uchun AI provayderi
     yoqilgan bo'lishi kerak.
+  wwcConfigTranslationCapacityAuto: '{0} faol tarjimalariga va {1} navbatdagi tarjimalarga
+    (JVM protsessorlari: {2}) tarjima sig''imi avtomatik ravishda hal qilinadi.'
+  wwcConfigConversationTranslationCapacitySuccess: Tarjima quvvati chegarasi muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigGUITranslationCapacityButton: Tarjima qobiliyatini o'zgartiring
+  wwcConfigTranslationCapacityInvalid: Config.yml da belgilangan yaroqsiz tarjima
+    imkoniyatlari chegarasi. Avtomatik yoki 1 yoki undan katta uchun 0 dan foydalaning.
+    Avtomatik parametrga sozlash...
+  wwcConfigTranslationCapacityManual: Tarjima quvvati {0} faol tarjimalar va {1} navbatdagi
+    tarjimalarga o'rnatilgan.
+  wwcConfigConversationTranslationCapacityInvalid: Tarjima quvvati chegarasi avto
+    yoki 1 yoki undan katta uchun 0 bo'lishi kerak.
+  wwcConfigConversationTranslationCapacityInput: Hozirgi tarjima quvvati chegarasi
+    {0} ({1} faol, {2} navbatga qo'yilgan). Avtomatik yoki 1 yoki undan katta raqam
+    uchun 0 yozing.
 

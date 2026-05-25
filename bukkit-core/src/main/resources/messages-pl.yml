@@ -820,4 +820,19 @@ Messages:
     Domyślnie 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Dostawca sztucznej inteligencji musi być
     włączony do korzystania z Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Pojemność tłumaczenia automatycznie rozdzielana
+    na {0} aktywne tłumaczenia i {1} tłumaczenia w kolejce (procesory JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limit pojemności tłumaczeń ustawiony
+    pomyślnie.
+  wwcConfigGUITranslationCapacityButton: Zmień pojemność tłumaczenia
+  wwcConfigTranslationCapacityInvalid: Nieprawidłowy limit pojemności tłumaczenia
+    ustawiony w config.yml. Użyj 0 dla automatycznego lub 1 lub większego. Domyślnie
+    ustawienie auto...
+  wwcConfigTranslationCapacityManual: Możliwość tłumaczenia ustawiona na {0} aktywne
+    tłumaczenia i {1} tłumaczenia w kolejce.
+  wwcConfigConversationTranslationCapacityInvalid: Limit pojemności tłumaczenia musi
+    wynosić 0 dla automatycznego lub 1 lub więcej.
+  wwcConfigConversationTranslationCapacityInput: Obecny limit pojemności tłumaczenia
+    wynosi {0} ({1} aktywny, {2} w kolejce). Wpisz 0 dla opcji auto lub liczbę 1 lub
+    większą.
 

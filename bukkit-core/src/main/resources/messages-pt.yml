@@ -837,4 +837,17 @@ Messages:
     1. O padrão é 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Um provedor de IA deve estar habilitado
     para usar o Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Capacidade de tradução resolvida automaticamente
+    para {0} traduções ativas e {1} traduções em fila (processadores JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limite de capacidade de tradução
+    definido com sucesso.
+  wwcConfigGUITranslationCapacityButton: Alterar a capacidade de tradução
+  wwcConfigTranslationCapacityInvalid: Limite de capacidade de tradução inválido definido
+    em config.yml. Use 0 para automático ou 1 ou superior. O padrão é automático...
+  wwcConfigTranslationCapacityManual: Capacidade de tradução definida para {0} traduções
+    ativas e {1} traduções em fila.
+  wwcConfigConversationTranslationCapacityInvalid: O limite da capacidade de tradução
+    deve ser 0 para automático ou 1 ou maior.
+  wwcConfigConversationTranslationCapacityInput: O limite atual da capacidade de tradução
+    é {0} ({1} ativo, {2} na fila). Digite 0 para automático ou um número 1 ou maior.
 

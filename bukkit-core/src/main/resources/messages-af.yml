@@ -813,4 +813,17 @@ Messages:
     gestel in config.yml. Die waarde moet minstens 1 wees. Standaard op 4...
   wwcConfigGUIGuidelinesAIDisabledReason: '''N AI-verskaffer moet in staat wees om
     Guardrails te gebruik.'
+  wwcConfigTranslationCapacityAuto: 'Vertaalkapasiteit outomaties opgelos na {0} aktiewe
+    vertalings en {1} stoeuvertalings (JVM-verwerkers: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Vertaalkapasiteitslimiet suksesvol
+    gestel.
+  wwcConfigGUITranslationCapacityButton: Verander vertaalkapasiteit
+  wwcConfigTranslationCapacityInvalid: Ongeldige vertaalkapasiteitslimiet gestel in
+    config.yml. Gebruik 0 vir outomaties of 1 of groter. Standaard tot outomaties...
+  wwcConfigTranslationCapacityManual: Vertaalkapasiteit ingestel op {0} aktiewe vertalings
+    en {1} stoeuvertalings.
+  wwcConfigConversationTranslationCapacityInvalid: Vertaalkapasiteitslimiet moet 0
+    wees vir outomaties of 1 of groter.
+  wwcConfigConversationTranslationCapacityInput: Die huidige vertaalkapasiteitslimiet
+    is {0} ({1} aktief, {2} ry). Tik 0 vir outomaties of 'n nommer 1 of groter.
 

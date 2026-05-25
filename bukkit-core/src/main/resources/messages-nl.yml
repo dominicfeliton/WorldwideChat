@@ -833,4 +833,19 @@ Messages:
     1 zijn. Standaard ingesteld op 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Een AI-provider moet in staat zijn om vangrails
     te gebruiken.
+  wwcConfigTranslationCapacityAuto: 'De vertaalcapaciteit wordt automatisch omgezet
+    naar {0} actieve vertalingen en {1} vertalingen in de wachtrij (JVM-processors:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: De limiet voor de vertaalcapaciteit
+    is succesvol ingesteld.
+  wwcConfigGUITranslationCapacityButton: Vertaalcapaciteit wijzigen
+  wwcConfigTranslationCapacityInvalid: Ongeldige limiet voor vertaalcapaciteit ingesteld
+    in config.yml. Gebruik 0 voor automatisch of 1 of hoger. Standaard ingesteld op
+    automatisch...
+  wwcConfigTranslationCapacityManual: De vertaalcapaciteit is ingesteld op {0} actieve
+    vertalingen en {1} vertalingen in de wachtrij.
+  wwcConfigConversationTranslationCapacityInvalid: De limiet voor de vertaalcapaciteit
+    moet 0 zijn voor automatisch of 1 of hoger.
+  wwcConfigConversationTranslationCapacityInput: De huidige limiet voor de vertaalcapaciteit
+    is {0} ({1} actief, {2} in de wachtrij). Typ 0 voor auto of een cijfer 1 of hoger.
 

@@ -795,4 +795,16 @@ Messages:
     حد په config.yml کې ټاکل شوی. ارزښت باید لږترلږه 1 وي. 4 ته ډیفالټ کول...
   wwcConfigGUIGuidelinesAIDisabledReason: یو AI چمتو کونکي باید د Guardrails کارولو
     لپاره فعال شي.
+  wwcConfigTranslationCapacityAuto: 'د ژباړې ظرفیت د {0} فعال ژباړې او {1} قطار ژباړې
+    (JVM پروسیسرز: {2}) ته اتوماتیک حل شوی.'
+  wwcConfigConversationTranslationCapacitySuccess: د ژباړې ظرفیت محدودیت په کامی
+  wwcConfigGUITranslationCapacityButton: ژباړې ظرفیت بدل
+  wwcConfigTranslationCapacityInvalid: د ژباړې د ظرفیت محدودیت په config.yml کې ټاکل
+    شوی. د اتومات یا 1 یا لوی لپاره 0 وکاروئ. خودکار ته ډیفولټ کول...
+  wwcConfigTranslationCapacityManual: د ژباړې ظرفیت د {0} فعال ژباړې او {1} قطارې
+    ژباړې ته ټاکل
+  wwcConfigConversationTranslationCapacityInvalid: د ژباړې ظرفیت محدودیت باید 0 د
+    خودکار یا 1 یا لوی لپاره وي.
+  wwcConfigConversationTranslationCapacityInput: د ژباړې اوسنۍ ظرفیت محدودیت {0} ({1}
+    فعال، {2} قطار) دی. د اتوماتیک یا یو شمیره 1 یا ډیر لپاره 0 ډول کړئ.
 

@@ -821,4 +821,18 @@ Messages:
     i 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Rhaid galluogi darparwr AI i ddefnyddio
     Rheiliau Gwarchod.
+  wwcConfigTranslationCapacityAuto: 'Capasiti cyfieithu wedi''i ddatrys yn awtomatig
+    i {0} cyfieithiadau gweithredol a {1} cyfieithiadau ciwio (proseswyr JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Terfyn capasiti cyfieithu wedi'i
+    osod yn llwyddiannus.
+  wwcConfigGUITranslationCapacityButton: Newid Capasiti Cyfieithu
+  wwcConfigTranslationCapacityInvalid: Terfyn capasiti cyfieithu annilys wedi'i osod
+    yn config.yml. Defnyddiwch 0 ar gyfer auto neu 1 neu fwy. Rhagosodiad i auto...
+  wwcConfigTranslationCapacityManual: Capasiti cyfieithu wedi'i osod i {0} cyfieithiadau
+    gweithredol a {1} cyfieithiadau wedi'u ciwio.
+  wwcConfigConversationTranslationCapacityInvalid: Rhaid i derfyn capasiti cyfieithu
+    fod 0 ar gyfer auto neu 1 neu fwy.
+  wwcConfigConversationTranslationCapacityInput: Y terfyn capasiti cyfieithu presennol
+    yw {0} ({1} yn weithredol, {2} wedi'i giwio). Teipiwch 0 ar gyfer auto neu rif
+    1 neu fwy.
 

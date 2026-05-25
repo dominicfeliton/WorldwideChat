@@ -812,4 +812,16 @@ Messages:
     ਰਿਹਾ ਹੈ...
   wwcConfigGUIGuidelinesAIDisabledReason: ਇੱਕ AI ਪ੍ਰਦਾਤਾ ਨੂੰ ਗਾਰਡਰੇਲਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਨ
     ਲਈ ਸਮਰੱਥ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।
+  wwcConfigTranslationCapacityAuto: 'ਅਨੁਵਾਦ ਸਮਰੱਥਾ {0} ਕਿਰਿਆਸ਼ੀਲ ਅਨੁਵਾਦਾਂ ਅਤੇ {1}
+    ਕਤਾਰ ਵਾਲੇ ਅਨੁਵਾਦਾਂ (JVM ਪ੍ਰੋਸੈਸਰ: {2}) ਲਈ ਸਵੈ-ਹੱਲ ਕੀਤੀ ਗਈ।'
+  wwcConfigConversationTranslationCapacitySuccess: ਅਨੁਵਾਦ ਸਮਰੱਥਾ ਦੀ ਸੀਮਾ ਸਫਲਤਾਪੂਰ
+  wwcConfigGUITranslationCapacityButton: ਅਨੁਵਾਦ ਸਮਰੱਥਾ ਬਦਲੋ
+  wwcConfigTranslationCapacityInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਅਨੁਵਾਦ ਸਮਰੱਥਾ ਸੀਮਾ ਨਿਰਧਾਰਤ
+    ਕੀਤੀ ਗਈ ਹੈ। ਆਟੋ ਜਾਂ 1 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਲਈ 0 ਦੀ ਵਰਤੋਂ ਕਰੋ। ਆਟੋ ਨੂੰ ਡਿਫੌਲਟ ਕਰਨਾ...
+  wwcConfigTranslationCapacityManual: ਅਨੁਵਾਦ ਸਮਰੱਥਾ {0} ਸਰਗਰਮ ਅਨੁਵਾਦ ਅਤੇ {1} ਕਤਾਰ
+    ਵਾਲੇ ਅਨੁਵਾਦਾਂ 'ਤੇ ਸੈਟ ਕੀਤੀ ਗਈ ਹੈ
+  wwcConfigConversationTranslationCapacityInvalid: ਅਨੁਵਾਦ ਸਮਰੱਥਾ ਸੀਮਾ ਆਟੋ ਜਾਂ 1 ਜਾਂ
+    ਇਸ ਤੋਂ ਵੱਧ ਲਈ 0 ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।
+  wwcConfigConversationTranslationCapacityInput: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਸਮਰੱਥਾ ਸੀਮਾ {0} ਹੈ
+    ({1} ਕਿਰਿਆਸ਼ੀਲ, {2} ਕਤਾਰ)। ਆਟੋ ਜਾਂ ਇੱਕ ਨੰਬਰ 1 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
 

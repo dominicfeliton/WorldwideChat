@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 public class V1__Normalize_storage_schema extends BaseJavaMigration {
 
+    private static final String CACHE_DEDUP_INDEX = "idx_persistent_cache_dedup_temp";
     private static final String CACHE_LOOKUP_INDEX = "idx_persistent_cache_lookup";
 
     @Override
@@ -108,27 +109,56 @@ public class V1__Normalize_storage_schema extends BaseJavaMigration {
                     + "AND pc.randomUUID > keep.randomUUID";
         }
 
+        createDedupeIndex(connection, postgres);
+        try {
+            try (Statement statement = connection.createStatement()) {
+                statement.executeUpdate(deleteDuplicates);
+            }
+        } finally {
+            dropDedupeIndex(connection, postgres);
+        }
+    }
+
+    private void createDedupeIndex(Connection connection, boolean postgres) throws Exception {
+        String columns = postgres ? "inputLang, outputLang, inputPhrase" : "inputLang(10), outputLang(10), inputPhrase(255)";
+        ensureIndex(connection, "persistentCache", CACHE_DEDUP_INDEX, columns, false, postgres);
+    }
+
+    private void dropDedupeIndex(Connection connection, boolean postgres) throws Exception {
+        if (!indexExists(connection, "persistentCache", CACHE_DEDUP_INDEX, postgres)) {
+            return;
+        }
+
+        String dropIndex = postgres ? "DROP INDEX IF EXISTS " + CACHE_DEDUP_INDEX
+                : "DROP INDEX " + CACHE_DEDUP_INDEX + " ON persistentCache";
         try (Statement statement = connection.createStatement()) {
-            statement.executeUpdate(deleteDuplicates);
+            statement.executeUpdate(dropIndex);
         }
     }
 
     private void ensureIndex(Connection connection, String tableName, String indexName, String columns,
                              boolean unique, boolean postgres) throws Exception {
-        DatabaseMetaData metaData = connection.getMetaData();
-        try (ResultSet indexes = metaData.getIndexInfo(catalog(connection, postgres), null, normalizeIdentifier(tableName, postgres), false, false)) {
-            while (indexes.next()) {
-                String existingName = indexes.getString("INDEX_NAME");
-                if (existingName != null && existingName.equalsIgnoreCase(indexName)) {
-                    return;
-                }
-            }
+        if (indexExists(connection, tableName, indexName, postgres)) {
+            return;
         }
 
         try (Statement statement = connection.createStatement()) {
             statement.executeUpdate("CREATE " + (unique ? "UNIQUE " : "") + "INDEX " + indexName
                     + " ON " + tableName + " (" + columns + ")");
         }
+    }
+
+    private boolean indexExists(Connection connection, String tableName, String indexName, boolean postgres) throws Exception {
+        DatabaseMetaData metaData = connection.getMetaData();
+        try (ResultSet indexes = metaData.getIndexInfo(catalog(connection, postgres), null, normalizeIdentifier(tableName, postgres), false, false)) {
+            while (indexes.next()) {
+                String existingName = indexes.getString("INDEX_NAME");
+                if (existingName != null && existingName.equalsIgnoreCase(indexName)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     private String normalizeIdentifier(String identifier, boolean postgres) {

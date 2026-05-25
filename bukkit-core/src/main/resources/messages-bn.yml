@@ -808,4 +808,17 @@ Messages:
     সীমা config.yml এ সেট করা হয়েছে। মান কমপক্ষে 1 হতে হবে। 4 এ ডিফল্ট করা হচ্ছে...
   wwcConfigGUIGuidelinesAIDisabledReason: একটি এআই সরবরাহকারীকে গার্ড্রেলস ব্যবহার
     করতে সক্ষম করতে হবে।
+  wwcConfigTranslationCapacityAuto: 'অনুবাদ ক্ষমতা {0} সক্রিয় অনুবাদ এবং {1} সারিযুক্ত
+    অনুবাদগুলিতে স্বয়ংক্রিয়ভাবে সমাধান করা হয়েছে (JVM প্রসেসর: {2})।'
+  wwcConfigConversationTranslationCapacitySuccess: অনুবাদ ক্ষমতা সীমা সফলভাবে সেট
+  wwcConfigGUITranslationCapacityButton: অনুবাদ ক্ষমতা পরিবর্তন
+  wwcConfigTranslationCapacityInvalid: config.yml এ অবৈধ অনুবাদ ক্ষমতা সীমা সেট করা
+    হয়েছে। অটো বা 1 বা তার বেশি জন্য 0 ব্যবহার করুন। স্বয়ংক্রিয়ভাবে ডিফল্ট করা
+    হচ্ছে...
+  wwcConfigTranslationCapacityManual: অনুবাদ ক্ষমতা {0} সক্রিয় অনুবাদ এবং {1} সারিযুক্ত
+    অনুবাদগুলিতে সেট করা হয়েছে।
+  wwcConfigConversationTranslationCapacityInvalid: অনুবাদ ক্ষমতা সীমা অটো বা 1 বা
+    তার বেশি জন্য 0 হতে হবে।
+  wwcConfigConversationTranslationCapacityInput: বর্তমান অনুবাদ ক্ষমতার সীমা {0} ({1}
+    সক্রিয়, {2} সারিযুক্ত)। অটো বা একটি সংখ্যা 1 বা তার বেশি জন্য 0 টাইপ করুন।
 

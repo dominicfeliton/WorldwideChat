@@ -2,14 +2,20 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
+import com.dominicfeliton.worldwidechat.util.TranslationCapacityLimiter;
 import com.dominicfeliton.worldwidechat.translators.TestTranslation;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.junit.jupiter.api.Test;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -56,6 +62,32 @@ class TranslationTest extends WWCIntegrationTest {
                 .translateText("This phrase should not change", player);
 
         assertEquals("This phrase should not change", translated);
+    }
+
+    @Test
+    void translationCapacityFullReturnsOriginalWithoutCountingTranslatorError() throws Exception {
+        PlayerMock player = WWCTestSupport.addOpPlayer("CapacityFull");
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+        TranslationCapacityLimiter originalLimiter = plugin().getTranslationCapacityLimiter();
+        TranslationCapacityLimiter limited = TranslationCapacityLimiter.forLimits(1, 0);
+        Field limiterField = WorldwideChat.class.getDeclaredField("translationCapacityLimiter");
+        limiterField.setAccessible(true);
+        limiterField.set(plugin(), limited);
+        plugin().setTranslatorErrorCount(0);
+
+        try (TranslationCapacityLimiter.Permit heldPermit = limited.acquire(1, TimeUnit.MILLISECONDS)) {
+            assertTrue(heldPermit.acquired());
+            String input = "capacity-full-translation";
+
+            String translated = plugin().getServerFactory().getCommonRefs()
+                    .translateText(input, player);
+
+            assertEquals(input, translated);
+            assertEquals(0, plugin().getTranslatorErrorCount());
+        } finally {
+            limiterField.set(plugin(), originalLimiter);
+        }
     }
 
     @Test
@@ -209,6 +241,68 @@ class TranslationTest extends WWCIntegrationTest {
         plugin().getConfigManager().getMainConfig().set("General.objectTranslationConcurrencyLimit", "many");
         plugin().getConfigManager().loadMainSettings();
         assertEquals(4, plugin().getObjectTranslationConcurrencyLimit());
+    }
+
+    @Test
+    void translationCapacityConfigAcceptsAutoOrPositiveAndRejectsBadValues() {
+        plugin().getConfigManager().getMainConfig().set("General.translationCapacityLimit", 0);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(0, plugin().getTranslationCapacityLimit());
+        assertEquals(
+                TranslationCapacityLimiter.resolveActiveLimit(0, Runtime.getRuntime().availableProcessors()),
+                plugin().getTranslationCapacityLimiter().getActiveLimit());
+        assertEquals(
+                TranslationCapacityLimiter.resolveQueueLimit(plugin().getTranslationCapacityLimiter().getActiveLimit()),
+                plugin().getTranslationCapacityLimiter().getQueueLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.translationCapacityLimit", 12);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(12, plugin().getTranslationCapacityLimit());
+        assertEquals(12, plugin().getTranslationCapacityLimiter().getActiveLimit());
+        assertEquals(48, plugin().getTranslationCapacityLimiter().getQueueLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.translationCapacityLimit", -1);
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(0, plugin().getTranslationCapacityLimit());
+
+        plugin().getConfigManager().getMainConfig().set("General.translationCapacityLimit", "many");
+        plugin().getConfigManager().loadMainSettings();
+        assertEquals(0, plugin().getTranslationCapacityLimit());
+    }
+
+    @Test
+    void translatorErrorCountIncrementsAtomically() throws Exception {
+        plugin().setTranslatorErrorCount(0);
+        int workers = 8;
+        int incrementsPerWorker = 250;
+        CountDownLatch ready = new CountDownLatch(workers);
+        CountDownLatch start = new CountDownLatch(1);
+        ExecutorService executor = Executors.newFixedThreadPool(workers);
+        List<Future<?>> futures = new ArrayList<>();
+
+        try {
+            for (int i = 0; i < workers; i++) {
+                futures.add(executor.submit(() -> {
+                    ready.countDown();
+                    assertTrue(start.await(1, TimeUnit.SECONDS));
+                    for (int j = 0; j < incrementsPerWorker; j++) {
+                        plugin().incrementTranslatorErrorCount();
+                    }
+                    return null;
+                }));
+            }
+
+            assertTrue(ready.await(1, TimeUnit.SECONDS));
+            start.countDown();
+            for (Future<?> future : futures) {
+                future.get(2, TimeUnit.SECONDS);
+            }
+
+            assertEquals(workers * incrementsPerWorker, plugin().getTranslatorErrorCount());
+        } finally {
+            executor.shutdownNow();
+            assertTrue(executor.awaitTermination(2, TimeUnit.SECONDS));
+        }
     }
 
     @Test

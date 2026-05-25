@@ -844,4 +844,19 @@ Messages:
     1. Стандардно на 4...
   wwcConfigGUIGuidelinesAIDisabledReason: На давателот на вештачка интелигенција мора
     да му биде овозможено да користи заштитни огради.
+  wwcConfigTranslationCapacityAuto: 'Капацитетот за превод автоматски решен на {0}
+    активни преводи и {1} редови преводи (JVM процесори: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Ограничувањето на капацитетот за
+    превод успешно поставено.
+  wwcConfigGUITranslationCapacityButton: Променете го капацитетот за превод
+  wwcConfigTranslationCapacityInvalid: Невалидно ограничување на капацитетот за превод
+    поставено во config.yml. Користете 0 за автоматско или 1 или повеќе. Стандардно
+    за автоматско...
+  wwcConfigTranslationCapacityManual: Капацитетот за превод поставен на {0} активни
+    преводи и {1} преводи во редови.
+  wwcConfigConversationTranslationCapacityInvalid: Ограничувањето на капацитетот за
+    превод мора да биде 0 за автоматско или 1 или поголемо.
+  wwcConfigConversationTranslationCapacityInput: Тековното ограничување на капацитетот
+    за превод е {0} ({1} активно, {2} во ред). Внесете 0 за автоматски или број 1
+    или поголем.
 

@@ -801,4 +801,17 @@ Messages:
     არ შეესაბამება 4-ს...
   wwcConfigGUIGuidelinesAIDisabledReason: AI პროვაიდერს უნდა ჰქონდეს შესაძლებელი გამოიყენოს
     Guardrails.
+  wwcConfigTranslationCapacityAuto: თარგმანის შესაძლებლობა ავტომატურად გადაწყვეტილია
+    {0} აქტიურ თარგმანებზე და {1} რიგში თარგმანებზე (JVM პროცესორები {2}
+  wwcConfigConversationTranslationCapacitySuccess: თარგმანის შესაძლებლობების ლიმიტი
+    წარმატებით
+  wwcConfigGUITranslationCapacityButton: შეცვალეთ თარგმანის
+  wwcConfigTranslationCapacityInvalid: არასწორი თარგმანის მოცულობის ლიმიტი დადგენილია
+    config.yml-ში. გამოიყენეთ 0 ავტომატური ან 1 ან მეტი. ავტომატური ჩამოყალიბება...
+  wwcConfigTranslationCapacityManual: თარგმანის შესაძლებლობა დაყენებულია {0} აქტიურ
+    თარგმანებზე და {1} რიგზე თარგმან
+  wwcConfigConversationTranslationCapacityInvalid: თარგმანის მოცულობის ლიმიტი უნდა
+    იყოს 0 ავტომატური ან 1 ან მეტი.
+  wwcConfigConversationTranslationCapacityInput: თარგმანის შესაძლებლობების მიმდინარე
+    ლიმიტია {0} ({1} აქტიური, {2} რიგში). აკრიფეთ 0 ავტომატური ან ნომერი 1 ან მეტი.
 

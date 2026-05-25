@@ -16,6 +16,7 @@ General:
   syncUserDataDelay: 7200
   fatalAsyncTaskTimeout: 10
   objectTranslationConcurrencyLimit: 4
+  translationCapacityLimit: 0
   enableDebugMode: false
   syncUserLocalization: true
   enableSounds: true

@@ -814,4 +814,20 @@ Messages:
     1. Noklusējuma iestatījums uz 4...
   wwcConfigGUIGuidelinesAIDisabledReason: AI pakalpojumu sniedzējam jābūt iespējotam,
     lai izmantotu aizsargas.
+  wwcConfigTranslationCapacityAuto: 'Tulkošanas jauda automātiski tiek atrisināta
+    līdz {0} aktīvajiem tulkojumiem un {1} rindā esošajiem tulkojumiem (JVM procesori:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Tulkošanas jaudas ierobežojums
+    ir veiksmīgi noteikts.
+  wwcConfigGUITranslationCapacityButton: Mainīt tulkošanas spēju
+  wwcConfigTranslationCapacityInvalid: Nederīgs tulkošanas jaudas ierobežojums iestatīts
+    programmā config.yml. Izmantojiet 0 automātiskai vai 1 vai lielākai versijai.
+    Noklusējuma iestatīšana uz automātisko...
+  wwcConfigTranslationCapacityManual: Tulkošanas jauda iestatīta uz {0} aktīviem tulkojumiem
+    un {1} tulkojumiem rindā.
+  wwcConfigConversationTranslationCapacityInvalid: Tulkošanas jaudas ierobežojumam
+    jābūt 0 automātiskajam vai 1 vai lielākam.
+  wwcConfigConversationTranslationCapacityInput: Pašreizējais tulkošanas jaudas ierobežojums
+    ir {0} ({1} aktīvs, {2} rindā). Ierakstiet 0 automātiskajam skaitlim vai skaitlim
+    1 vai lielāks.
 

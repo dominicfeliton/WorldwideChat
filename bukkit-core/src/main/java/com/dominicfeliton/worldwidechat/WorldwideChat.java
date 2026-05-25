@@ -34,6 +34,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
@@ -42,7 +43,7 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "05252026-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "05262026-1"; // MMDDYYYY-revisionNumber
     private static final String SLF4J_INTERNAL_VERBOSITY_PROPERTY = "slf4j.internal.verbosity";
     private static final String SLF4J_INTERNAL_VERBOSITY_ERROR = "ERROR";
 
@@ -69,6 +70,8 @@ public class WorldwideChat extends JavaPlugin {
 
     private ExecutorService callbackExecutor;
 
+    private volatile TranslationCapacityLimiter translationCapacityLimiter = TranslationCapacityLimiter.fromConfiguredLimit(0);
+
     private ServerAdapterFactory serverFactory;
 
     private CommonRefs refs;
@@ -91,7 +94,7 @@ public class WorldwideChat extends JavaPlugin {
             .maximumSize(100)
             .build();
 
-    private int translatorErrorCount = 0;
+    private final AtomicInteger translatorErrorCount = new AtomicInteger(0);
 
     private boolean outOfDate = false;
 
@@ -118,6 +121,8 @@ public class WorldwideChat extends JavaPlugin {
     private int messageCharLimit = 255;
 
     private int objectTranslationConcurrencyLimit = 4;
+
+    private int translationCapacityLimit = TranslationCapacityLimiter.AUTO_CONFIG_VALUE;
 
     private boolean persistentCache = false;
 
@@ -382,7 +387,7 @@ public class WorldwideChat extends JavaPlugin {
      */
     public void doStartupTasks(boolean isReloading) {
         // Start thread executor
-        callbackExecutor = Executors.newCachedThreadPool();
+        callbackExecutor = Executors.newVirtualThreadPerTaskExecutor();
 
         // Set config manager
         setConfigManager(new ConfigurationHandler());
@@ -513,7 +518,7 @@ public class WorldwideChat extends JavaPlugin {
         }
         translatorName = "Starting";
         refs.closeAllInvs();
-        translatorErrorCount = 0;
+        translatorErrorCount.set(0);
 
         /* Send start reload message */
         if (inSender != null) {
@@ -942,7 +947,7 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void setTranslatorErrorCount(int i) {
-        translatorErrorCount = i;
+        translatorErrorCount.set(i);
     }
 
     public void setUpdateCheckerDelay(int i) {
@@ -963,6 +968,11 @@ public class WorldwideChat extends JavaPlugin {
 
     public void setObjectTranslationConcurrencyLimit(int i) {
         objectTranslationConcurrencyLimit = i;
+    }
+
+    public void setTranslationCapacityLimit(int i) {
+        translationCapacityLimit = Math.max(TranslationCapacityLimiter.AUTO_CONFIG_VALUE, i);
+        translationCapacityLimiter = TranslationCapacityLimiter.fromConfiguredLimit(translationCapacityLimit);
     }
 
     public void setPersistentCache(boolean i) {
@@ -1155,7 +1165,11 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public int getTranslatorErrorCount() {
-        return translatorErrorCount;
+        return translatorErrorCount.get();
+    }
+
+    public int incrementTranslatorErrorCount() {
+        return translatorErrorCount.incrementAndGet();
     }
 
     public String getTranslatorName() {
@@ -1192,6 +1206,14 @@ public class WorldwideChat extends JavaPlugin {
 
     public int getObjectTranslationConcurrencyLimit() {
         return objectTranslationConcurrencyLimit;
+    }
+
+    public int getTranslationCapacityLimit() {
+        return translationCapacityLimit;
+    }
+
+    public TranslationCapacityLimiter getTranslationCapacityLimiter() {
+        return translationCapacityLimiter;
     }
 
     public boolean isPersistentCache() {

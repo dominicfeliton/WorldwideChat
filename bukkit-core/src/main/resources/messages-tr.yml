@@ -805,4 +805,19 @@ Messages:
     olarak 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Korkulukları kullanmak için bir AI sağlayıcısının
     etkinleştirilmesi gerekir.
+  wwcConfigTranslationCapacityAuto: 'Çeviri kapasitesi {0} aktif çevirilere ve {1}
+    kuyruklu çevirilere otomatik olarak çözülür (JVM işlemcileri: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Çeviri kapasitesi sınırı başarıyla
+    ayarlandı.
+  wwcConfigGUITranslationCapacityButton: Çeviri Kapasitesini Değiştir
+  wwcConfigTranslationCapacityInvalid: config.yml içinde ayarlanmış geçersiz çeviri
+    kapasitesi sınırı. Otomatik veya 1 veya daha büyük için 0 kullanın. Varsayılan
+    olarak otomatik...
+  wwcConfigTranslationCapacityManual: Çeviri kapasitesi {0} aktif çeviri ve {1} kuyruklu
+    çeviriler olarak ayarlanmıştır.
+  wwcConfigConversationTranslationCapacityInvalid: Çeviri kapasitesi sınırı otomatik
+    için 0 veya 1 veya daha yüksek olmalıdır.
+  wwcConfigConversationTranslationCapacityInput: Geçerli çeviri kapasitesi sınırı
+    {0} ({1} aktif, {2} kuyruklu). Otomatik veya 1 veya daha büyük bir sayı için 0
+    yazın.
 

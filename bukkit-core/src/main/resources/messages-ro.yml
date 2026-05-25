@@ -858,4 +858,19 @@ Messages:
     1. Implicit la 4...
   wwcConfigGUIGuidelinesAIDisabledReason: Un furnizor AI trebuie să fie activat pentru
     a utiliza Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Capacitatea de traducere rezolvată automat la
+    {0} traduceri active și {1} traduceri coadă (procesoare JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limita capacității de traducere
+    setată cu succes.
+  wwcConfigGUITranslationCapacityButton: Modificați capacitatea de traducere
+  wwcConfigTranslationCapacityInvalid: Limita de capacitate de traducere nevalidă
+    setată în config.yml. Utilizați 0 pentru automat sau 1 sau mai mare. Implicit
+    la automat...
+  wwcConfigTranslationCapacityManual: Capacitatea de traducere setată la {0} traduceri
+    active și {1} traduceri coadă.
+  wwcConfigConversationTranslationCapacityInvalid: Limita capacității de traducere
+    trebuie să fie 0 pentru automat sau 1 sau mai mare.
+  wwcConfigConversationTranslationCapacityInput: Limita curentă a capacității de traducere
+    este {0} ({1} activ, {2} în coadă). Tastați 0 pentru automat sau un număr 1 sau
+    mai mare.
 

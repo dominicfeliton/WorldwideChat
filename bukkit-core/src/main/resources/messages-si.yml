@@ -802,4 +802,18 @@ Messages:
     සීමාව config.yml හි සකසා ඇත. වටිනාකම අවම වශයෙන් 1 විය යුතුය. 4 දක්වා පෙරහැරීම...
   wwcConfigGUIGuidelinesAIDisabledReason: ගාඩ්රේල්ස් භාවිතා කිරීමට AI සැපයුම්කරුවෙකුට
     සක්රීය කළ යුතුය.
+  wwcConfigTranslationCapacityAuto: 'පරිවර්තන ධාරිතාව ස්වයංක්රීයව විසඳා {0} ක්රියාකාරී
+    පරිවර්තන සහ {1} පෝලිමේ පරිවර්තන (JVM සකසන්නන්: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: පරිවර්තන ධාරිතා සීමාව සාර්ථකව සකසා
+    ඇත.
+  wwcConfigGUITranslationCapacityButton: පරිවර්තන ධාරිතාව වෙනස් කරන්න
+  wwcConfigTranslationCapacityInvalid: අවලංගු පරිවර්තන ධාරිතා සීමාව config.yml හි
+    සකසා ඇත. ස්වයංක්රීය හෝ 1 හෝ ඊට වැඩි සඳහා 0 භාවිතා කරන්න. ස්වයංක්රීය ලෙස පෙරහැරීම...
+  wwcConfigTranslationCapacityManual: පරිවර්තන ධාරිතාව {0} සක්රීය පරිවර්තන සහ {1}
+    පෝලිමේ පරිවර්තන වලට සකසා ඇත.
+  wwcConfigConversationTranslationCapacityInvalid: පරිවර්තන ධාරිතා සීමාව ස්වයංක්රීය
+    සඳහා 0 හෝ 1 හෝ ඊට වැඩි විය යුතුය.
+  wwcConfigConversationTranslationCapacityInput: වර්තමාන පරිවර්තන ධාරිතා සීමාව {0}
+    ({1} ක්රියාකාරී, {2} පෝලිමේ) වේ. ස්වයංක්රීය හෝ අංක 1 හෝ ඊට වැඩි සංඛ්යාවක් සඳහා
+    0 ටයිප් කරන්න.
 

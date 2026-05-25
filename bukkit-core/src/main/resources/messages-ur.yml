@@ -822,4 +822,17 @@ Messages:
     ہے...
   wwcConfigGUIGuidelinesAIDisabledReason: اے آئی فراہم کنندہ کو گارڈریلز استعمال کرنے
     کے لئے قابل ہونا ضروری ہے۔
+  wwcConfigTranslationCapacityAuto: 'ترجمہ کی صلاحیت {0} فعال ترجموں اور {1} قطار
+    والے ترجموں (JVM پروسیسرز: {2}) پر خود کار طریقے سے حل ہوگئی۔'
+  wwcConfigConversationTranslationCapacitySuccess: ترجمہ کی صلاحیت کی حد کامیابی کے
+    ساتھ
+  wwcConfigGUITranslationCapacityButton: ترجمہ کی صلاحیت تبدیل
+  wwcConfigTranslationCapacityInvalid: config.yml میں ترجمہ کی صلاحیت کی غلط حد مقرر
+    کی گئی ہے۔ آٹو یا 1 یا اس سے زیادہ کے لئے 0 استعمال کریں۔ آٹو میں ڈیفالٹ کرنا...
+  wwcConfigTranslationCapacityManual: ترجمہ کی صلاحیت {0} فعال ترجمے اور {1} قطار
+    کے ترجمے پر سیٹ کی گئی ہے۔
+  wwcConfigConversationTranslationCapacityInvalid: ترجمہ کی صلاحیت کی حد آٹو یا 1
+    یا اس سے زیادہ کے لئے 0 ہونی چاہئے۔
+  wwcConfigConversationTranslationCapacityInput: موجودہ ترجمہ کی صلاحیت کی حد {0}
+    ہے ({1} فعال، {2} قطار) ۔ آٹو یا نمبر 1 یا اس سے زیادہ کے لیے 0 ٹائپ کریں۔
 

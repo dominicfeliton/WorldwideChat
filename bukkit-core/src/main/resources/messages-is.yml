@@ -820,4 +820,17 @@ Messages:
     sett í config.yml. Gildi verður að vera að minnsta kosti 1. Sjálfgefið að 4...
   wwcConfigGUIGuidelinesAIDisabledReason: AI-veitandi verður að vera virkur til að
     nota Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Þýðingargeta sjálfkrafa leyst í {0} virkar þýðingar
+    og {1} biðröð þýðingar (JVM örgjörvum: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Þýðingargetumörk sett með góðum
+    árangri.
+  wwcConfigGUITranslationCapacityButton: Breyta þýðingargetu
+  wwcConfigTranslationCapacityInvalid: Ógild þýðingargetumörk sett í config.yml. Notaðu
+    0 fyrir sjálfvirkt eða 1 eða meira. Sjálfgefið sjálfvirkt...
+  wwcConfigTranslationCapacityManual: Þýðingargeta stillt á {0} virkar þýðingar og
+    {1} í biðröð þýðingar.
+  wwcConfigConversationTranslationCapacityInvalid: Takmörk þýðingargetu verða að vera
+    0 fyrir sjálfvirkt eða 1 eða meira.
+  wwcConfigConversationTranslationCapacityInput: Núverandi þýðingargetumörk er {0}
+    ({1} virkur, {2} í biðröð). Sláðu inn 0 fyrir sjálfvirkt eða númer 1 eða stærri.
 
