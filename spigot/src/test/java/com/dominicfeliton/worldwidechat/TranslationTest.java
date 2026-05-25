@@ -91,6 +91,121 @@ class TranslationTest extends WWCIntegrationTest {
     }
 
     @Test
+    void queuedTranslationTimesOutWithoutCountingTranslatorError() throws Exception {
+        int originalConnectionTimeout = WorldwideChat.translatorConnectionTimeoutSeconds;
+        int originalFatalAbort = WorldwideChat.translatorFatalAbortSeconds;
+        PlayerMock player = WWCTestSupport.addOpPlayer("CapacityTimeout");
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+        plugin().setTranslationCapacityLimit(1);
+        plugin().setTranslatorErrorCount(0);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(2500);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        CommonRefs refs = plugin().getServerFactory().getCommonRefs();
+        String firstInput = "batch-capacity-timeout-first";
+        String secondInput = "batch-capacity-timeout-second";
+
+        try {
+            WorldwideChat.translatorConnectionTimeoutSeconds = 3;
+            WorldwideChat.translatorFatalAbortSeconds = 4;
+            Future<String> firstTranslation = executor.submit(() -> refs.translateText(firstInput, player));
+            WWCTestSupport.waitForCondition(() -> TestTranslation.getActiveTranslations() == 1);
+
+            Future<String> secondTranslation = executor.submit(() -> refs.translateText(secondInput, player));
+
+            assertEquals(secondInput, secondTranslation.get(3, TimeUnit.SECONDS));
+            assertEquals("translated-" + firstInput, firstTranslation.get(5, TimeUnit.SECONDS));
+            assertEquals(0, plugin().getTranslationCapacityLimiter().getQueuedWaiters());
+            assertEquals(1, TestTranslation.getMaxActiveTranslations());
+            assertEquals(0, plugin().getTranslatorErrorCount());
+        } finally {
+            WorldwideChat.translatorConnectionTimeoutSeconds = originalConnectionTimeout;
+            WorldwideChat.translatorFatalAbortSeconds = originalFatalAbort;
+            TestTranslation.resetConcurrencyTracking();
+            executor.shutdownNow();
+            assertTrue(executor.awaitTermination(2, TimeUnit.SECONDS));
+        }
+    }
+
+    @Test
+    void queuedTranslationSucceedsWhenCapacityFrees() throws Exception {
+        PlayerMock player = WWCTestSupport.addOpPlayer("CapacityQueuedSuccess");
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+        plugin().setTranslationCapacityLimit(1);
+        plugin().setTranslatorErrorCount(0);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(250);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        CommonRefs refs = plugin().getServerFactory().getCommonRefs();
+        String firstInput = "batch-capacity-queued-first";
+        String secondInput = "batch-capacity-queued-second";
+
+        try {
+            Future<String> firstTranslation = executor.submit(() -> refs.translateText(firstInput, player));
+            WWCTestSupport.waitForCondition(() -> TestTranslation.getActiveTranslations() == 1);
+
+            Future<String> secondTranslation = executor.submit(() -> refs.translateText(secondInput, player));
+
+            assertEquals("translated-" + firstInput, firstTranslation.get(3, TimeUnit.SECONDS));
+            assertEquals("translated-" + secondInput, secondTranslation.get(3, TimeUnit.SECONDS));
+            assertEquals(0, plugin().getTranslationCapacityLimiter().getQueuedWaiters());
+            assertEquals(1, TestTranslation.getMaxActiveTranslations());
+            assertEquals(0, plugin().getTranslatorErrorCount());
+        } finally {
+            TestTranslation.resetConcurrencyTracking();
+            executor.shutdownNow();
+            assertTrue(executor.awaitTermination(2, TimeUnit.SECONDS));
+        }
+    }
+
+    @Test
+    void translationCapacityReloadCancelsQueuedTranslationsWithoutGenericError() throws Exception {
+        PlayerMock player = WWCTestSupport.addOpPlayer("CapacityReload");
+        player.performCommand("wwct en es");
+        drainPlayerMessages(player);
+        plugin().getConfigManager().getMainConfig().set("General.translationCapacityLimit", 1);
+        plugin().getConfigManager().saveMainConfig(false);
+        plugin().getConfigManager().loadMainSettings();
+        plugin().setTranslatorErrorCount(0);
+        TestTranslation.resetConcurrencyTracking();
+        TestTranslation.setArtificialDelayMillis(5000);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        CommonRefs refs = plugin().getServerFactory().getCommonRefs();
+        TranslationCapacityLimiter limiter = plugin().getTranslationCapacityLimiter();
+        String firstInput = "batch-capacity-reload-first";
+        String secondInput = "batch-capacity-reload-second";
+
+        try {
+            Future<String> firstTranslation = executor.submit(() -> refs.translateText(firstInput, player));
+            WWCTestSupport.waitForCondition(() -> TestTranslation.getActiveTranslations() == 1);
+            Future<String> secondTranslation = executor.submit(() -> refs.translateText(secondInput, player));
+            WWCTestSupport.waitForCondition(() -> limiter.getQueuedWaiters() == 1);
+
+            WWCTestSupport.reload();
+
+            assertEquals(firstInput, firstTranslation.get(5, TimeUnit.SECONDS));
+            assertEquals(secondInput, secondTranslation.get(5, TimeUnit.SECONDS));
+            assertEquals(0, plugin().getTranslatorErrorCount());
+
+            TestTranslation.resetConcurrencyTracking();
+            PlayerMock afterReload = WWCTestSupport.addOpPlayer("CapacityReloadAfter");
+            afterReload.performCommand("wwct en es");
+            drainPlayerMessages(afterReload);
+
+            assertEquals("translated-batch-capacity-reload-after",
+                    plugin().getServerFactory().getCommonRefs()
+                            .translateText("batch-capacity-reload-after", afterReload));
+            assertEquals(1, plugin().getTranslationCapacityLimiter().getActiveLimit());
+        } finally {
+            TestTranslation.resetConcurrencyTracking();
+            executor.shutdownNow();
+            assertTrue(executor.awaitTermination(2, TimeUnit.SECONDS));
+        }
+    }
+
+    @Test
     void cachesSuccessfulTranslationsAndReusesResult() {
         PlayerMock player = WWCTestSupport.addOpPlayer("CacheUser");
         player.performCommand("wwct en es");

@@ -64,6 +64,32 @@ class TranslationCapacityLimiterTest {
         }
     }
 
+    @Test
+    void queuedAcquireTimesOutAndLeavesQueue() throws Exception {
+        TranslationCapacityLimiter limiter = TranslationCapacityLimiter.forLimits(1, 1);
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+
+        try (TranslationCapacityLimiter.Permit firstPermit = limiter.acquire(1, TimeUnit.MILLISECONDS)) {
+            assertTrue(firstPermit.acquired());
+            Future<TranslationCapacityLimiter.Permit> waitingPermit =
+                    executor.submit(() -> limiter.acquire(50, TimeUnit.MILLISECONDS));
+            waitForQueuedWaiter(limiter);
+
+            try (TranslationCapacityLimiter.Permit secondPermit = waitingPermit.get(1, TimeUnit.SECONDS)) {
+                assertFalse(secondPermit.acquired());
+                assertEquals(TranslationCapacityLimiter.RejectionReason.TIMED_OUT, secondPermit.rejectionReason());
+            }
+
+            assertEquals(0, limiter.getQueuedWaiters());
+            assertEquals(0, limiter.getAvailablePermits());
+        } finally {
+            executor.shutdownNow();
+            assertTrue(executor.awaitTermination(2, TimeUnit.SECONDS));
+        }
+
+        assertEquals(1, limiter.getAvailablePermits());
+    }
+
     private void waitForQueuedWaiter(TranslationCapacityLimiter limiter) throws InterruptedException {
         long deadline = System.currentTimeMillis() + 1000;
         while (limiter.getQueuedWaiters() == 0 && System.currentTimeMillis() < deadline) {
