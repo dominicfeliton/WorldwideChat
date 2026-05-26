@@ -134,6 +134,104 @@ class StorageMigrationTest extends WWCIntegrationTest {
     }
 
     @Test
+    void mongoDeduplicatesLegacyPlayerRecordsBeforeUniqueIndex() {
+        WWCTestSupport.useStorageBackend(StorageBackend.MONGO);
+
+        MongoDatabase database = plugin().getMongoSession().getActiveDatabase();
+        resetMongoSchema(database);
+        MongoCollection<Document> records = database.getCollection("PlayerRecords");
+        records.insertOne(new Document("creationDate", "2024-01-02T00:00:00Z")
+                .append("playerUUID", "duplicate-player")
+                .append("attemptedTranslations", 1)
+                .append("successfulTranslations", 1)
+                .append("lastTranslationTime", "01/01/2024 00:00:00")
+                .append("localizationCode", ""));
+        records.insertOne(new Document("creationDate", "2025-01-02T00:00:00Z")
+                .append("playerUUID", "duplicate-player")
+                .append("attemptedTranslations", 4)
+                .append("successfulTranslations", 3)
+                .append("lastTranslationTime", "02/01/2025 00:00:00")
+                .append("localizationCode", "fr"));
+
+        StorageMigrationUtils.migrateCurrentBackend();
+
+        assertEquals(1, records.countDocuments(new Document("playerUUID", "duplicate-player")));
+        Document record = records.find(new Document("playerUUID", "duplicate-player")).first();
+        assertNotNull(record);
+        assertEquals("2025-01-02T00:00:00Z", record.getString("creationDate"));
+        assertEquals(4, record.getInteger("attemptedTranslations"));
+        assertEquals(3, record.getInteger("successfulTranslations"));
+        assertEquals("02/01/2025 00:00:00", record.getString("lastTranslationTime"));
+        assertEquals("fr", record.getString("localizationCode"));
+        assertTrue(hasMongoIndex(records, "idx_player_records_player"));
+    }
+
+    @Test
+    void mongoDeduplicatesLegacyActiveTranslatorsBeforeUniqueIndex() {
+        WWCTestSupport.useStorageBackend(StorageBackend.MONGO);
+
+        MongoDatabase database = plugin().getMongoSession().getActiveDatabase();
+        resetMongoSchema(database);
+        MongoCollection<Document> translators = database.getCollection("ActiveTranslators");
+        translators.insertOne(new Document("creationDate", "2024-01-02T00:00:00Z")
+                .append("playerUUID", "duplicate-active")
+                .append("inLangCode", "en")
+                .append("outLangCode", "es")
+                .append("rateLimit", 1)
+                .append("rateLimitPreviousTime", "2024-01-02T01:00:00Z")
+                .append("translatingChatOutgoing", true)
+                .append("translatingChatIncoming", false)
+                .append("translatingBook", false)
+                .append("translatingSign", false)
+                .append("translatingItem", false)
+                .append("translatingEntity", false));
+        translators.insertOne(new Document("creationDate", "2025-01-02T00:00:00Z")
+                .append("playerUUID", "duplicate-active")
+                .append("inLangCode", "fr")
+                .append("outLangCode", "de")
+                .append("rateLimit", 9)
+                .append("rateLimitPreviousTime", "2025-01-02T01:00:00Z")
+                .append("translatingChatOutgoing", false)
+                .append("translatingChatIncoming", true)
+                .append("translatingBook", true)
+                .append("translatingSign", true)
+                .append("translatingItem", true)
+                .append("translatingEntity", true));
+
+        StorageMigrationUtils.migrateCurrentBackend();
+
+        assertEquals(1, translators.countDocuments(new Document("playerUUID", "duplicate-active")));
+        Document translator = translators.find(new Document("playerUUID", "duplicate-active")).first();
+        assertNotNull(translator);
+        assertEquals("2025-01-02T00:00:00Z", translator.getString("creationDate"));
+        assertEquals("fr", translator.getString("inLangCode"));
+        assertEquals("de", translator.getString("outLangCode"));
+        assertEquals(9, translator.getInteger("rateLimit"));
+        assertEquals("2025-01-02T01:00:00Z", translator.getString("rateLimitPreviousTime"));
+        assertFalse(translator.getBoolean("translatingChatOutgoing"));
+        assertTrue(translator.getBoolean("translatingChatIncoming"));
+        assertTrue(translator.getBoolean("translatingEntity"));
+        assertTrue(hasMongoIndex(translators, "idx_active_translators_player"));
+    }
+
+    @Test
+    void mongoMigrationFailsActionablyOnMissingPlayerUuid() {
+        WWCTestSupport.useStorageBackend(StorageBackend.MONGO);
+
+        MongoDatabase database = plugin().getMongoSession().getActiveDatabase();
+        resetMongoSchema(database);
+        database.getCollection("PlayerRecords").insertOne(new Document("creationDate", "old")
+                .append("playerUUID", " ")
+                .append("attemptedTranslations", 1));
+
+        RuntimeException failure = assertThrows(RuntimeException.class, StorageMigrationUtils::migrateCurrentBackend);
+
+        assertTrue(failureText(failure).contains("Cannot migrate PlayerRecords"));
+        assertTrue(failureText(failure).contains("missing playerUUID"));
+        resetMongoSchema(database);
+    }
+
+    @Test
     void migrationFailureDuringStartupDisablesBeforeDataLoad() throws Exception {
         WWCTestSupport.useStorageBackend(StorageBackend.POSTGRES);
         try (Connection connection = connectionFor(StorageBackend.POSTGRES);
@@ -456,5 +554,17 @@ class StorageMigrationTest extends WWCIntegrationTest {
             }
         }
         return count;
+    }
+
+    private String failureText(Throwable throwable) {
+        StringBuilder text = new StringBuilder();
+        Throwable current = throwable;
+        while (current != null) {
+            if (current.getMessage() != null) {
+                text.append(current.getMessage()).append('\n');
+            }
+            current = current.getCause();
+        }
+        return text.toString();
     }
 }

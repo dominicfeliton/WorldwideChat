@@ -100,6 +100,25 @@ class ActiveTranslatorTest {
     }
 
     @Test
+    @SuppressWarnings("unchecked")
+    void malformedStoredRateLimitTimestampIsTreatedAsAbsent() throws Exception {
+        ActiveTranslator translator = new ActiveTranslator("player-uuid", "en", "es");
+        translator.setHasBeenSaved(true);
+        var field = ActiveTranslator.class.getDeclaredField("rateLimitPreviousTime");
+        field.setAccessible(true);
+        ((java.util.concurrent.atomic.AtomicReference<String>) field.get(translator)).set("not-an-instant");
+        translator.setHasBeenSaved(true);
+        Instant now = Instant.parse("2026-01-02T03:04:05Z");
+
+        ActiveTranslator.RateLimitDecision decision = translator.tryAcquireRateLimitSlot(10, now);
+
+        assertTrue(decision.allowed());
+        assertEquals(0, decision.secondsRemaining());
+        assertEquals(now.toString(), translator.getRateLimitPreviousTime());
+        assertFalse(translator.getHasBeenSaved());
+    }
+
+    @Test
     void concurrentRateLimitSlotAcquisitionFromNoneAllowsOneCaller() throws Exception {
         ActiveTranslator translator = new ActiveTranslator("player-uuid", "en", "es");
         Instant now = Instant.parse("2026-01-02T03:04:05Z");

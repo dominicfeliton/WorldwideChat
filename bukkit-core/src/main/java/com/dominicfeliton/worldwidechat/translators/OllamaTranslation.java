@@ -4,6 +4,7 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 import io.github.ollama4j.Ollama;
 import io.github.ollama4j.models.generate.OllamaGenerateRequest;
 import io.github.ollama4j.models.response.OllamaResult;
@@ -110,10 +111,16 @@ public class OllamaTranslation extends BasicTranslation {
                     .withOptions(new OptionsBuilder().build())
                     .build();
 
+            refs.debugMsg("Using Ollama model: " + conf.getString("Translator.ollamaModel"));
             OllamaResult response = api.generate(request, null);
 
             refs.debugMsg(response.getResponse());
-            Response parsedResponse = new Gson().fromJson(response.getResponse(), Response.class);
+            Response parsedResponse;
+            try {
+                parsedResponse = new Gson().fromJson(response.getResponse(), Response.class);
+            } catch (JsonSyntaxException | IllegalStateException ex) {
+                throw new TranslationFailureException("General", "Ollama returned malformed JSON.", false);
+            }
             if (parsedResponse == null) {
                 throw new TranslationFailureException("General", "Ollama returned an empty response.", false);
             }

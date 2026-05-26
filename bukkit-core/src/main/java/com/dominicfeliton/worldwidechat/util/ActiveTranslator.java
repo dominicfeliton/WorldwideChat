@@ -106,13 +106,20 @@ public class ActiveTranslator {
 
         String nowString = now.toString();
         String previous = rateLimitPreviousTime.get();
-        if (previous.equals("None")) {
+        if (previous == null || previous.isBlank() || previous.equalsIgnoreCase("None")) {
             rateLimitPreviousTime.set(nowString);
             hasBeenSaved.set(false);
             return new RateLimitDecision(true, 0);
         }
 
-        Instant previousTime = Instant.parse(previous);
+        Instant previousTime;
+        try {
+            previousTime = Instant.parse(previous);
+        } catch (RuntimeException ex) {
+            rateLimitPreviousTime.set(nowString);
+            hasBeenSaved.set(false);
+            return new RateLimitDecision(true, 0);
+        }
         Instant nextAllowedTime = previousTime.plus(delaySeconds, ChronoUnit.SECONDS);
         if (now.compareTo(nextAllowedTime) < 0) {
             return new RateLimitDecision(false, ChronoUnit.SECONDS.between(now, nextAllowedTime));

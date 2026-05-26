@@ -350,6 +350,7 @@ public class WorldwideChat extends JavaPlugin {
                 break;
             default:
                 getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
+                type = "Bukkit";
                 break;
         }
 
@@ -628,7 +629,9 @@ public class WorldwideChat extends JavaPlugin {
         }
 
         // Shut down executors (translations)
-        callbackExecutor.shutdownNow();
+        if (callbackExecutor != null) {
+            callbackExecutor.shutdownNow();
+        }
 
         // Cleanup background tasks
         wwcHelper.cleanupTasks();

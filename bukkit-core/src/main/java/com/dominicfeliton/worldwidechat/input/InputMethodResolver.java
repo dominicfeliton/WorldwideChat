@@ -11,6 +11,10 @@ public final class InputMethodResolver {
     public static InputMethod resolve(String configuredMethod, String platform, ComparableVersion mcVersion,
                                       boolean paperDialogsAvailable, boolean conversationsAvailable) {
         InputMethod requested = InputMethod.fromConfig(configuredMethod);
+        if (requested == InputMethod.NONE) {
+            return InputMethod.NONE;
+        }
+
         InputMethod automatic = auto(platform, mcVersion, paperDialogsAvailable, conversationsAvailable);
         if (requested == InputMethod.AUTO) {
             return automatic;
@@ -34,8 +38,7 @@ public final class InputMethodResolver {
         return switch (method) {
             case PAPER_DIALOG -> paperDialogEligible(platform, mcVersion, paperDialogsAvailable);
             case CONVERSATION -> conversationsAvailable;
-            case AUTO -> true;
-            case NONE -> false;
+            case AUTO, NONE -> true;
         };
     }
 

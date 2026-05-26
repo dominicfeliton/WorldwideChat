@@ -37,6 +37,18 @@ class InputMethodResolverTest {
     }
 
     @Test
+    void configuredNoneDisablesInputEvenWhenBackendsExist() {
+        assertEquals(InputMethod.NONE, InputMethodResolver.resolve(
+                "none", "Paper", new ComparableVersion("26.1"), true, true));
+    }
+
+    @Test
+    void paperDialogUnderscoreAliasResolvesToPaperDialog() {
+        assertEquals(InputMethod.PAPER_DIALOG, InputMethodResolver.resolve(
+                "paper_dialog", "Paper", new ComparableVersion("26.1"), true, true));
+    }
+
+    @Test
     void forcedUnavailableBackendFallsBackToAuto() {
         assertEquals(InputMethod.CONVERSATION, InputMethodResolver.resolve(
                 "paper-dialog", "Spigot", new ComparableVersion("1.21.11"), false, true));

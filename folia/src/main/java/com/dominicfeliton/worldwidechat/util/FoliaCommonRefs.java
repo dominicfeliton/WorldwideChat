@@ -60,8 +60,15 @@ public class FoliaCommonRefs extends CommonRefs {
 
     @Override
     public boolean serverIsStopping() {
-        boolean stopping = !main.isEnabled() && main.getServer().isStopping();
-        debugMsg("Folia stop check: " + stopping);
-        return stopping;
+        boolean disabled = main == null || !main.isEnabled();
+        boolean stopping = false;
+        try {
+            stopping = main != null && main.getServer().isStopping();
+        } catch (RuntimeException | LinkageError ignored) {
+        }
+
+        boolean result = disabled || stopping;
+        debugMsg("Folia stop check: " + result);
+        return result;
     }
 }

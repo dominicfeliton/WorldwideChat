@@ -32,18 +32,41 @@ import java.util.stream.Collectors;
 
 public class DataStorageUtils {
 
-    private static WorldwideChat main = WorldwideChat.instance;
-    private static CommonRefs refs = main.getServerFactory().getCommonRefs();
-    private static ConfigurationHandler handler = main.getConfigManager();
-    private static YamlConfiguration mainConfig = handler.getMainConfig();
+    private static WorldwideChat main;
+    private static CommonRefs refs;
+    private static ConfigurationHandler handler;
+    private static YamlConfiguration mainConfig;
+
+    private static boolean refreshState() {
+        WorldwideChat current = WorldwideChat.instance;
+        if (current != null) {
+            main = current;
+        }
+        if (main == null) {
+            return false;
+        }
+        if (main.getServerFactory() == null || main.getConfigManager() == null) {
+            return false;
+        }
+        refs = main.getServerFactory().getCommonRefs();
+        handler = main.getConfigManager();
+        mainConfig = handler.getMainConfig();
+        return true;
+    }
 
     /* Sync user data to storage default */
     public static void syncData() throws SQLException, MongoException {
+        if (!refreshState()) {
+            return;
+        }
         syncData(main.getTranslatorName().equalsIgnoreCase("Invalid"));
     }
 
     /* Sync user data to storage */
     public static void syncData(boolean wasPreviouslyInvalid) throws SQLException, MongoException {
+        if (!refreshState()) {
+            return;
+        }
         /* If our translator is Invalid, do not run this code */
         if (wasPreviouslyInvalid) {
             return;
@@ -642,6 +665,9 @@ public class DataStorageUtils {
     // Generally, NEVER USE THIS!
     // We only use this in /wwcd.
     public static void fullDataWipe() throws SQLException, MongoException {
+        if (!refreshState()) {
+            return;
+        }
         SQLUtils sql = main.getSqlSession();
         MongoDBUtils mongo = main.getMongoSession();
         PostgresUtils postgres = main.getPostgresSession();
@@ -745,6 +771,9 @@ public class DataStorageUtils {
 
     /* Translator YAML File Saver */
     public static void createUserDataConfig(ActiveTranslator inTranslator) {
+        if (!refreshState()) {
+            return;
+        }
         File userSettingsFile;
         YamlConfiguration userSettingsConfig;
         userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator,
@@ -789,6 +818,9 @@ public class DataStorageUtils {
 
     /* Stats YAML File Saver */
     public static void createStatsConfig(PlayerRecord inRecord) {
+        if (!refreshState()) {
+            return;
+        }
         File userStatsDir = new File(main.getDataFolder() + File.separator + "stats");
         File userStatsFile;
         YamlConfiguration userStatsConfig;
@@ -817,6 +849,9 @@ public class DataStorageUtils {
 
     /* Cache YAML File Saver */
     public static void createCacheConfig(CachedTranslation trans, String out) {
+        if (!refreshState()) {
+            return;
+        }
         File cacheDir = new File(main.getDataFolder() + File.separator + "cache");
         File cacheFile;
         YamlConfiguration cacheConfig;

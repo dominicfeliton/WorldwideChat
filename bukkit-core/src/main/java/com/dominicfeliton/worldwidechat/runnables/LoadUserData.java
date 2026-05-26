@@ -205,9 +205,7 @@ public class LoadUserData {
                                 inLang,
                                 outLang
                         );
-                        if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-                            translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
-                        }
+                        applyRateLimitPreviousTime(translatorToAdd, rs.getString("rateLimitPreviousTime"));
                         translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
                         translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
                         translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
@@ -240,9 +238,7 @@ public class LoadUserData {
                                 inLang,
                                 outLang
                         );
-                        if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-                            translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
-                        }
+                        applyRateLimitPreviousTime(translatorToAdd, rs.getString("rateLimitPreviousTime"));
                         translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
                         translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
                         translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
@@ -278,9 +274,7 @@ public class LoadUserData {
                         inLang,
                         outLang
                 );
-                if (!currDoc.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-                    translatorToAdd.setRateLimitPreviousTime(Instant.parse(currDoc.getString("rateLimitPreviousTime")));
-                }
+                applyRateLimitPreviousTime(translatorToAdd, currDoc.getString("rateLimitPreviousTime"));
                 translatorToAdd.setTranslatingChatOutgoing(currDoc.getBoolean("translatingChatOutgoing"));
                 translatorToAdd.setTranslatingChatIncoming(currDoc.getBoolean("translatingChatIncoming"));
                 translatorToAdd.setTranslatingBook(currDoc.getBoolean("translatingBook"));
@@ -330,10 +324,7 @@ public class LoadUserData {
                 currentTranslator.setTranslatingChatOutgoing(currFileConfig.getBoolean("chatTranslationOutgoing"));
                 currentTranslator.setTranslatingChatIncoming(currFileConfig.getBoolean("chatTranslationIncoming"));
                 currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
-                if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
-                    currentTranslator.setRateLimitPreviousTime(
-                            Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));
-                }
+                applyRateLimitPreviousTime(currentTranslator, currFileConfig.getString("rateLimitPreviousRecordedTime"));
                 currentTranslator.setHasBeenSaved(true);
                 main.addActiveTranslator(currentTranslator);
             }
@@ -454,6 +445,9 @@ public class LoadUserData {
     }
 
     private boolean validLangCodes(String inLang, String outLang) {
+        if (inLang == null || outLang == null) {
+            return false;
+        }
         // If inLang is invalid, or None is associated with Amazon Translate
         if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, CommonRefs.LangType.LOCAL))
                 || (inLang.equalsIgnoreCase("None") && transName.equalsIgnoreCase("Amazon Translate"))) {
@@ -464,11 +458,31 @@ public class LoadUserData {
             return false;
         }
         // If inLang and outLang codes are equal
-        if (refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getLangCode().equals(refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getLangCode())) {
+        if (refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT) == null
+                || refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT) == null
+                || refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getLangCode().equals(refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getLangCode())) {
             refs.debugMsg("Langs are the same?");
             return false;
         }
         return true;
+    }
+
+    private void applyRateLimitPreviousTime(ActiveTranslator translator, String value) {
+        Instant parsed = parseInstantOrNull(value);
+        if (parsed != null) {
+            translator.setRateLimitPreviousTime(parsed);
+        }
+    }
+
+    private Instant parseInstantOrNull(String value) {
+        if (value == null || value.isBlank() || value.equalsIgnoreCase("None")) {
+            return null;
+        }
+        try {
+            return Instant.parse(value);
+        } catch (RuntimeException ex) {
+            return null;
+        }
     }
 
 }

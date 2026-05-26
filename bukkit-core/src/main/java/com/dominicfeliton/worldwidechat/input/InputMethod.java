@@ -22,7 +22,7 @@ public enum InputMethod {
         if (input == null || input.isBlank()) {
             return AUTO;
         }
-        String normalized = input.trim().toLowerCase(Locale.ROOT);
+        String normalized = input.trim().toLowerCase(Locale.ROOT).replace('_', '-');
         for (InputMethod method : values()) {
             if (method.configValue.equals(normalized)) {
                 return method;

@@ -28,6 +28,23 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean package -Dyamltranslator.skip=true --file pom.xml
 
+      - name: Verify packaged jars
+        run: |
+          set -euo pipefail
+
+          jar tf paper-target/WorldwideChat-paper.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperInputService.class'
+          jar tf paper-target/WorldwideChat-paper.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperDialogInputService.class'
+          jar tf paper-target/WorldwideChat-paper.jar | grep -q 'com/dominicfeliton/worldwidechat/input/SpigotConversationInputService.class'
+
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/FoliaInputService.class'
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/FoliaDialogInputService.class'
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperInputService.class'
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperDialogInputService.class'
+
+          unzip -p spigot-target/WorldwideChat-spigot.jar plugin.yml | grep -q 'folia-supported: false'
+          unzip -p paper-target/WorldwideChat-paper.jar plugin.yml | grep -q 'folia-supported: false'
+          unzip -p folia-target/WorldwideChat-folia.jar plugin.yml | grep -q 'folia-supported: true'
+
       - name: Upload Spigot JAR
         uses: actions/upload-artifact@v7
         with:
@@ -50,4 +67,5 @@ jobs:
           if-no-files-found: error
 
       - name: Stop Docker Compose (MySQL/MongoDB/PostgreSQL)
+        if: always()
         run: bash ./dev/takedown-dev-env.sh

@@ -95,6 +95,8 @@ commands:
     description: Sets a localization for a user.
     aliases: [ wwclocalize, translatelocalize ]
     usage: §4/wwcl (localization) or /wwcl (playerName) (localization)
+    permission: worldwidechat.wwcl
+    permission-message: §4You do not have permission to run this command.
 permissions:
   worldwidechat.*:
     description: Gives access to all WorldwideChat commands.
@@ -183,9 +185,6 @@ permissions:
   worldwidechat.wwctci.otherplayers:
     description: Gives access to /wwctci on target players.
     default: op
-  worldwidechat.wwctcs:
-    description: Gives access to /wwctcs.
-    default: true
   worldwidechat.wwcs:
     description: Gives access to /wwcs.
     default: op

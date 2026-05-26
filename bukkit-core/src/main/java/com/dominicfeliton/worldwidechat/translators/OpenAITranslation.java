@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -170,7 +171,16 @@ public class OpenAITranslation extends BasicTranslation {
     }
 
     private boolean usesResponsesAPI() {
-        return serviceUrl != null && serviceUrl.contains("/responses");
+        if (serviceUrl == null || serviceUrl.isBlank()) {
+            return false;
+        }
+
+        try {
+            String path = URI.create(serviceUrl).normalize().getPath();
+            return path != null && (path.equals("/v1/responses") || path.endsWith("/responses"));
+        } catch (IllegalArgumentException ex) {
+            return false;
+        }
     }
 
     private String sendOpenAIRequest(Object request, String promptForDebug) throws Exception {

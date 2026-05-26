@@ -60,9 +60,8 @@ public class PaperDialogInputService implements InputService {
         }
     }
 
-    private void handleCancel(InputRequest request, Audience audience) {
-        if (audience instanceof Player player) {
-            request.cancelInput(new InputContext(player));
-        }
+    void handleCancel(InputRequest request, Audience audience) {
+        // Paper dialog cancel is a pure close action. Routing through legacy "0"
+        // prompt cancellation can mutate numeric settings where zero is valid.
     }
 }

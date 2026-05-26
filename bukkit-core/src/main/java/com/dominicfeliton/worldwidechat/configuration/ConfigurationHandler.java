@@ -134,8 +134,7 @@ public class ConfigurationHandler {
         // TODO: copy supportedLangs to mem instead of setting.
         if (!aiConfig.isList("supportedLangs")) {
             main.getLogger().warning(refs.getPlainMsg("wwcAiSupportedLangsBad"));
-            aiConfig.set("supportedLangs", templateConfig.getString("supportedLangs"));
-            return;
+            aiConfig.set("supportedLangs", templateConfig.getStringList("supportedLangs"));
         }
 
         if (CommonRefs.isAIProviderEnabled(mainConfig)) {
@@ -536,7 +535,7 @@ public class ConfigurationHandler {
         }
         // List of Errors to Ignore Settings
         try {
-            main.setErrorsToIgnore((ArrayList<String>) mainConfig.getStringList("Translator.errorsToIgnore"));
+            main.setErrorsToIgnore(new ArrayList<>(mainConfig.getStringList("Translator.errorsToIgnore")));
             main.getLogger().info(
                     refs.getPlainMsg("wwcConfigErrorsToIgnoreSuccess",
                             "",
