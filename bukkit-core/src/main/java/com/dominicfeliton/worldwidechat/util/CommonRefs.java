@@ -1038,7 +1038,7 @@ public class CommonRefs {
             TranslationFailureException failure = findTranslationFailure(e);
             TimeoutException timeout = findTimeout(e);
             /* Sanitize error before proceeding to write it to errorLog */
-            if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
+            if (isTranslationCancellation(e) || main.getTranslatorName().equals("Starting") || serverIsStopping()) {
                 // If we are getting stopped by onDisable, end this immediately.
                 debugMsg("Interrupted translateText(), or server state is changing...");
                 process.cancel(true);
@@ -1205,6 +1205,19 @@ public class CommonRefs {
             current = current.getCause();
         }
         return null;
+    }
+
+    private boolean isTranslationCancellation(Throwable throwable) {
+        Throwable current = throwable;
+        while (current != null) {
+            if (current instanceof InterruptedException
+                    || current instanceof CancellationException
+                    || current instanceof RejectedExecutionException) {
+                return true;
+            }
+            current = current.getCause();
+        }
+        return false;
     }
 
     private long getTranslationCapacityQueueWaitSeconds() {

@@ -8,8 +8,11 @@ import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.entity.PlayerMock;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.Locale;
+import java.util.UUID;
 import java.util.function.BooleanSupplier;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -19,8 +22,14 @@ final class WWCTestSupport {
 
     private static final int DEFAULT_TRANSLATOR_CACHE_SIZE = 100;
 
+    private static final EnumMap<StorageBackend, String> storageDatabaseNames = new EnumMap<>(StorageBackend.class);
+
     private static ServerMock server;
     private static WorldwideChat plugin;
+
+    static {
+        refreshStorageDatabaseNames();
+    }
 
     private WWCTestSupport() {
     }
@@ -64,6 +73,7 @@ final class WWCTestSupport {
         start();
         wipeCurrentStorage();
         clearRuntimeState();
+        refreshStorageDatabaseNames();
         configureStorage(StorageBackend.YAML);
         reload();
     }
@@ -71,6 +81,7 @@ final class WWCTestSupport {
     static void useStorageBackend(StorageBackend backend) {
         start();
         backend.assertPortReady();
+        freshStorageDatabaseName(backend);
         configureStorage(backend);
         reload();
         if (!backend.isConnected(plugin)) {
@@ -159,6 +170,21 @@ final class WWCTestSupport {
         plugin.getConfigManager().saveMainConfig(false);
     }
 
+    static synchronized String storageDatabaseName(StorageBackend backend) {
+        if (backend == StorageBackend.YAML) {
+            return "wwc_test_yaml";
+        }
+        return storageDatabaseNames.computeIfAbsent(backend, WWCTestSupport::newStorageDatabaseName);
+    }
+
+    static synchronized String freshStorageDatabaseName(StorageBackend backend) {
+        String databaseName = newStorageDatabaseName(backend);
+        if (backend != StorageBackend.YAML) {
+            storageDatabaseNames.put(backend, databaseName);
+        }
+        return databaseName;
+    }
+
     static void wipeCurrentStorage() {
         try {
             DataStorageUtils.fullDataWipe();
@@ -189,5 +215,18 @@ final class WWCTestSupport {
 
     private static void waitForPluginReady() {
         waitForCondition(() -> plugin != null && !"Starting".equals(plugin.getTranslatorName()));
+    }
+
+    private static synchronized void refreshStorageDatabaseNames() {
+        for (StorageBackend backend : StorageBackend.values()) {
+            if (backend != StorageBackend.YAML) {
+                storageDatabaseNames.put(backend, newStorageDatabaseName(backend));
+            }
+        }
+    }
+
+    private static String newStorageDatabaseName(StorageBackend backend) {
+        String suffix = UUID.randomUUID().toString().replace("-", "");
+        return "wwc_test_" + backend.name().toLowerCase(Locale.ROOT) + "_" + suffix;
     }
 }

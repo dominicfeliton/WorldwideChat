@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Locale;
@@ -143,8 +142,8 @@ class StorageMigrationTest extends WWCIntegrationTest {
             assertTrue(plugin().getActiveTranslators().isEmpty());
             assertTrue(plugin().getPlayerRecords().isEmpty());
         } finally {
-            try (Connection connection = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/cooldatabase", "admin", "password");
+            try (Connection connection = StorageBackend.POSTGRES.adminConnection(
+                    WWCTestSupport.storageDatabaseName(StorageBackend.POSTGRES));
                  Statement statement = connection.createStatement()) {
                 resetJdbcSchema(statement);
             }

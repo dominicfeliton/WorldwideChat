@@ -16,21 +16,27 @@ class JdbcStorageUtilsTest extends WWCIntegrationTest {
     @Test
     void mysqlConnectsDisconnectsAndReconnects() throws Exception {
         StorageBackend.MYSQL.assertPortReady();
-        assertConnectDisconnectReconnect(new SQLUtils("localhost", "3306", "cooldatabase",
+        String databaseName = WWCTestSupport.freshStorageDatabaseName(StorageBackend.MYSQL);
+        StorageBackend.MYSQL.prepareDatabase(databaseName);
+        assertConnectDisconnectReconnect(new SQLUtils("localhost", "3306", databaseName,
                 "root", "password", List.of(), false));
     }
 
     @Test
     void postgresConnectsDisconnectsAndReconnects() throws Exception {
         StorageBackend.POSTGRES.assertPortReady();
-        assertConnectDisconnectReconnect(new PostgresUtils("localhost", "5432", "cooldatabase",
+        String databaseName = WWCTestSupport.freshStorageDatabaseName(StorageBackend.POSTGRES);
+        StorageBackend.POSTGRES.prepareDatabase(databaseName);
+        assertConnectDisconnectReconnect(new PostgresUtils("localhost", "5432", databaseName,
                 "admin", "password", List.of(), false));
     }
 
     @Test
     void failedMysqlConnectionDoesNotRemainConnected() {
         StorageBackend.MYSQL.assertPortReady();
-        SQLUtils sql = new SQLUtils("localhost", "3306", "cooldatabase",
+        String databaseName = WWCTestSupport.freshStorageDatabaseName(StorageBackend.MYSQL);
+        StorageBackend.MYSQL.prepareDatabase(databaseName);
+        SQLUtils sql = new SQLUtils("localhost", "3306", databaseName,
                 "root", "wrong-password", List.of(), false);
 
         assertThrows(SQLException.class, sql::connect);
@@ -42,7 +48,9 @@ class JdbcStorageUtilsTest extends WWCIntegrationTest {
     @Test
     void failedPostgresConnectionDoesNotRemainConnected() {
         StorageBackend.POSTGRES.assertPortReady();
-        PostgresUtils postgres = new PostgresUtils("localhost", "5432", "cooldatabase",
+        String databaseName = WWCTestSupport.freshStorageDatabaseName(StorageBackend.POSTGRES);
+        StorageBackend.POSTGRES.prepareDatabase(databaseName);
+        PostgresUtils postgres = new PostgresUtils("localhost", "5432", databaseName,
                 "admin", "wrong-password", List.of(), false);
 
         assertThrows(SQLException.class, postgres::connect);
