@@ -16,6 +16,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -23,22 +25,33 @@ import static org.junit.jupiter.api.Assertions.*;
 class MessageDeliveryTest extends WWCIntegrationTest {
 
     @Test
-    void spigotMessengerSchedulesAsyncMessageBeforeDelivery() {
+    void spigotMessengerDeliversMessageFromAsyncScheduler() throws InterruptedException {
         PlayerMock player = WWCTestSupport.addOpPlayer("AsyncMessageTarget");
         AtomicReference<Throwable> failure = new AtomicReference<>();
+        CountDownLatch asyncTaskFinished = new CountDownLatch(1);
 
         Bukkit.getScheduler().runTaskAsynchronously(plugin(), () -> {
             try {
                 SpigotComponentMessenger.INSTANCE.sendMessage(player, Component.text("Async hello"));
             } catch (Throwable thrown) {
                 failure.set(thrown);
+            } finally {
+                asyncTaskFinished.countDown();
             }
         });
 
-        WWCTestSupport.drainScheduler();
+        WWCTestSupport.server().getScheduler().performTicks(1);
+        WWCTestSupport.server().getScheduler().waitAsyncTasksFinished();
 
+        assertTrue(asyncTaskFinished.await(2, TimeUnit.SECONDS), "Async messenger task did not finish.");
         assertNull(failure.get());
-        assertTrue(drainPlayerMessages(player).stream().anyMatch(message -> message.contains("Async hello")));
+
+        WWCTestSupport.server().getScheduler().performTicks(5);
+
+        assertTrue(
+                drainPlayerMessages(player).stream().anyMatch(message -> message.contains("Async hello")),
+                "Async message should be delivered after the main-thread scheduler ticks."
+        );
     }
 
     @Test
