@@ -37,13 +37,23 @@ class StorageMigrationTest extends WWCIntegrationTest {
     }
 
     @Test
-    void mysqlRejectsUnrecoverableDuplicateLegacyPlayerRows() throws Exception {
-        assertDuplicateLegacyPlayerRowsFailMigration(StorageBackend.MYSQL);
+    void mysqlDeduplicatesLegacyPlayerRows() throws Exception {
+        assertDuplicateLegacyPlayerRowsMigrate(StorageBackend.MYSQL);
     }
 
     @Test
-    void postgresRejectsUnrecoverableDuplicateLegacyPlayerRows() throws Exception {
-        assertDuplicateLegacyPlayerRowsFailMigration(StorageBackend.POSTGRES);
+    void postgresDeduplicatesLegacyPlayerRows() throws Exception {
+        assertDuplicateLegacyPlayerRowsMigrate(StorageBackend.POSTGRES);
+    }
+
+    @Test
+    void mysqlDeduplicatesLegacyActiveTranslatorRows() throws Exception {
+        assertDuplicateLegacyActiveTranslatorRowsMigrate(StorageBackend.MYSQL);
+    }
+
+    @Test
+    void postgresDeduplicatesLegacyActiveTranslatorRows() throws Exception {
+        assertDuplicateLegacyActiveTranslatorRowsMigrate(StorageBackend.POSTGRES);
     }
 
     @Test
@@ -130,7 +140,7 @@ class StorageMigrationTest extends WWCIntegrationTest {
              Statement statement = connection.createStatement()) {
             resetJdbcSchema(statement);
             createFullActiveTranslatorsTable(statement);
-            createDuplicatePlayerRecordsTable(statement);
+            createInvalidPlayerRecordsTable(statement);
             createFullPersistentCacheTable(statement);
         }
 
@@ -212,7 +222,7 @@ class StorageMigrationTest extends WWCIntegrationTest {
         }
     }
 
-    private void assertDuplicateLegacyPlayerRowsFailMigration(StorageBackend backend) throws Exception {
+    private void assertDuplicateLegacyPlayerRowsMigrate(StorageBackend backend) throws Exception {
         WWCTestSupport.useStorageBackend(backend);
 
         try (Connection connection = connectionFor(backend);
@@ -222,7 +232,65 @@ class StorageMigrationTest extends WWCIntegrationTest {
         }
 
         try {
-            assertThrows(Exception.class, () -> StorageMigrationUtils.migrateCurrentBackend());
+            StorageMigrationUtils.migrateCurrentBackend();
+
+            try (Connection connection = connectionFor(backend);
+                 Statement statement = connection.createStatement()) {
+                assertEquals(1, jdbcInt(statement,
+                        "SELECT COUNT(*) FROM playerRecords WHERE playerUUID = 'duplicate-player'"));
+                assertEquals("2025-01-02T00:00:00Z", jdbcString(statement,
+                        "SELECT creationDate FROM playerRecords WHERE playerUUID = 'duplicate-player'"));
+                assertEquals(4, jdbcInt(statement,
+                        "SELECT attemptedTranslations FROM playerRecords WHERE playerUUID = 'duplicate-player'"));
+                assertEquals(3, jdbcInt(statement,
+                        "SELECT successfulTranslations FROM playerRecords WHERE playerUUID = 'duplicate-player'"));
+                assertEquals("02/01/2025 00:00:00", jdbcString(statement,
+                        "SELECT lastTranslationTime FROM playerRecords WHERE playerUUID = 'duplicate-player'"));
+                assertEquals("fr", jdbcString(statement,
+                        "SELECT localizationCode FROM playerRecords WHERE playerUUID = 'duplicate-player'"));
+            }
+        } finally {
+            try (Connection connection = connectionFor(backend);
+                 Statement statement = connection.createStatement()) {
+                resetJdbcSchema(statement);
+            }
+            StorageMigrationUtils.migrateCurrentBackend();
+        }
+    }
+
+    private void assertDuplicateLegacyActiveTranslatorRowsMigrate(StorageBackend backend) throws Exception {
+        WWCTestSupport.useStorageBackend(backend);
+
+        try (Connection connection = connectionFor(backend);
+             Statement statement = connection.createStatement()) {
+            resetJdbcSchema(statement);
+            createDuplicateActiveTranslatorsTable(statement);
+        }
+
+        try {
+            StorageMigrationUtils.migrateCurrentBackend();
+
+            try (Connection connection = connectionFor(backend);
+                 Statement statement = connection.createStatement()) {
+                assertEquals(1, jdbcInt(statement,
+                        "SELECT COUNT(*) FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertEquals("2025-01-02T00:00:00Z", jdbcString(statement,
+                        "SELECT creationDate FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertEquals("fr", jdbcString(statement,
+                        "SELECT inLangCode FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertEquals("de", jdbcString(statement,
+                        "SELECT outLangCode FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertEquals(9, jdbcInt(statement,
+                        "SELECT rateLimit FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertEquals("2025-01-02T01:00:00Z", jdbcString(statement,
+                        "SELECT rateLimitPreviousTime FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertFalse(jdbcBoolean(statement,
+                        "SELECT translatingChatOutgoing FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertTrue(jdbcBoolean(statement,
+                        "SELECT translatingChatIncoming FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+                assertTrue(jdbcBoolean(statement,
+                        "SELECT translatingEntity FROM activeTranslators WHERE playerUUID = 'duplicate-active'"));
+            }
         } finally {
             try (Connection connection = connectionFor(backend);
                  Statement statement = connection.createStatement()) {
@@ -264,9 +332,21 @@ class StorageMigrationTest extends WWCIntegrationTest {
     }
 
     private void createDuplicatePlayerRecordsTable(Statement statement) throws Exception {
+        statement.executeUpdate("CREATE TABLE playerRecords (creationDate VARCHAR(40), playerUUID VARCHAR(40), attemptedTranslations INT, successfulTranslations INT, lastTranslationTime VARCHAR(40), localizationCode VARCHAR(10))");
+        statement.executeUpdate("INSERT INTO playerRecords (creationDate, playerUUID, attemptedTranslations, successfulTranslations, lastTranslationTime, localizationCode) VALUES ('2024-01-02T00:00:00Z', 'duplicate-player', 1, 1, '01/01/2024 00:00:00', '')");
+        statement.executeUpdate("INSERT INTO playerRecords (creationDate, playerUUID, attemptedTranslations, successfulTranslations, lastTranslationTime, localizationCode) VALUES ('2025-01-02T00:00:00Z', 'duplicate-player', 4, 3, '02/01/2025 00:00:00', 'fr')");
+    }
+
+    private void createDuplicateActiveTranslatorsTable(Statement statement) throws Exception {
+        statement.executeUpdate("CREATE TABLE activeTranslators (creationDate VARCHAR(40), playerUUID VARCHAR(40), inLangCode VARCHAR(10), outLangCode VARCHAR(10), rateLimit INT, rateLimitPreviousTime VARCHAR(40), translatingChatOutgoing BOOLEAN, translatingChatIncoming BOOLEAN, translatingBook BOOLEAN, translatingSign BOOLEAN, translatingItem BOOLEAN, translatingEntity BOOLEAN)");
+        statement.executeUpdate("INSERT INTO activeTranslators (creationDate, playerUUID, inLangCode, outLangCode, rateLimit, rateLimitPreviousTime, translatingChatOutgoing, translatingChatIncoming, translatingBook, translatingSign, translatingItem, translatingEntity) VALUES ('2024-01-02T00:00:00Z', 'duplicate-active', 'en', 'es', 1, '2024-01-02T01:00:00Z', TRUE, FALSE, FALSE, FALSE, FALSE, FALSE)");
+        statement.executeUpdate("INSERT INTO activeTranslators (creationDate, playerUUID, inLangCode, outLangCode, rateLimit, rateLimitPreviousTime, translatingChatOutgoing, translatingChatIncoming, translatingBook, translatingSign, translatingItem, translatingEntity) VALUES ('2025-01-02T00:00:00Z', 'duplicate-active', 'fr', 'de', 9, '2025-01-02T01:00:00Z', FALSE, TRUE, TRUE, TRUE, TRUE, TRUE)");
+    }
+
+    private void createInvalidPlayerRecordsTable(Statement statement) throws Exception {
         statement.executeUpdate("CREATE TABLE playerRecords (creationDate VARCHAR(40), playerUUID VARCHAR(40), attemptedTranslations INT, successfulTranslations INT, lastTranslationTime VARCHAR(40))");
-        statement.executeUpdate("INSERT INTO playerRecords (creationDate, playerUUID, attemptedTranslations, successfulTranslations, lastTranslationTime) VALUES ('old', 'duplicate-player', 1, 1, 'first')");
-        statement.executeUpdate("INSERT INTO playerRecords (creationDate, playerUUID, attemptedTranslations, successfulTranslations, lastTranslationTime) VALUES ('old', 'duplicate-player', 2, 2, 'second')");
+        statement.executeUpdate("INSERT INTO playerRecords (creationDate, playerUUID, attemptedTranslations, successfulTranslations, lastTranslationTime) VALUES ('old', '', 1, 1, 'first')");
+        statement.executeUpdate("INSERT INTO playerRecords (creationDate, playerUUID, attemptedTranslations, successfulTranslations, lastTranslationTime) VALUES ('old', NULL, 2, 2, 'second')");
     }
 
     private void resetMongoSchema(MongoDatabase database) {
@@ -305,6 +385,13 @@ class StorageMigrationTest extends WWCIntegrationTest {
         try (ResultSet rs = statement.executeQuery(query)) {
             assertTrue(rs.next());
             return rs.getString(1);
+        }
+    }
+
+    private boolean jdbcBoolean(Statement statement, String query) throws Exception {
+        try (ResultSet rs = statement.executeQuery(query)) {
+            assertTrue(rs.next());
+            return rs.getBoolean(1);
         }
     }
 

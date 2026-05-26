@@ -30,7 +30,7 @@ public class UpdateChecker {
     private final Logger log = main.getLogger();
 
     // URL to fetch the latest version information
-    private static final String VERSION_URL = "https://raw.githubusercontent.com/dominicfeliton/WorldwideChat/master/latestVersion.txt";
+    private static final String VERSION_URL = "https://raw.githubusercontent.com/dominicfeliton/WorldwideChat/main/latestVersion.txt";
 
     /**
      * Constructor initializes the UpdateChecker and starts the update check.
