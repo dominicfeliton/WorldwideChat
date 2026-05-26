@@ -5,9 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 public class TranslationCapacityLimiter {
     public static final int AUTO_CONFIG_VALUE = 0;
-    private static final int AUTO_MIN_ACTIVE_LIMIT = 8;
-    private static final int AUTO_MAX_ACTIVE_LIMIT = 64;
-    private static final int AUTO_ACTIVE_PER_PROCESSOR = 4;
+    private static final int AUTO_MIN_ACTIVE_LIMIT = 64;
+    private static final int AUTO_MAX_ACTIVE_LIMIT = 2048;
+    private static final int AUTO_ACTIVE_PER_PROCESSOR = 64;
     private static final int QUEUE_MULTIPLIER = 4;
 
     private final int configuredLimit;

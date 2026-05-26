@@ -13,11 +13,11 @@ class TranslationCapacityLimiterTest {
 
     @Test
     void autoLimitScalesFromAvailableProcessorsWithinBounds() {
-        assertEquals(8, TranslationCapacityLimiter.resolveActiveLimit(0, 1));
-        assertEquals(8, TranslationCapacityLimiter.resolveActiveLimit(0, 2));
-        assertEquals(16, TranslationCapacityLimiter.resolveActiveLimit(0, 4));
-        assertEquals(64, TranslationCapacityLimiter.resolveActiveLimit(0, 16));
-        assertEquals(64, TranslationCapacityLimiter.resolveActiveLimit(0, 128));
+        assertEquals(64, TranslationCapacityLimiter.resolveActiveLimit(0, 1));
+        assertEquals(256, TranslationCapacityLimiter.resolveActiveLimit(0, 4));
+        assertEquals(1024, TranslationCapacityLimiter.resolveActiveLimit(0, 16));
+        assertEquals(2048, TranslationCapacityLimiter.resolveActiveLimit(0, 32));
+        assertEquals(2048, TranslationCapacityLimiter.resolveActiveLimit(0, 128));
     }
 
     @Test
