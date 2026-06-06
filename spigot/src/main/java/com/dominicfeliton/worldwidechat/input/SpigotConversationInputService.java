@@ -16,16 +16,21 @@ public class SpigotConversationInputService implements InputService {
 
     @Override
     public String getActiveBackendName() {
-        return "conversation";
+        return resolveMethod().getConfigValue();
     }
 
     @Override
     public void open(Player player, InputRequest request) {
+        String configured = getConfiguredMethod();
         InputMethod resolved = resolveMethod();
-        refs.debugMsg("Opening input with backend conversation (configured: " + getConfiguredMethod()
-                + "; resolved: " + resolved.getConfigValue() + ").");
+        refs.debugMsg("Opening input with backend " + resolved.getConfigValue()
+                + " (configured: " + configured + ").");
+        if (resolved == InputMethod.NONE) {
+            refs.sendMsg(request.getUnavailableMessageKey(), "", "&c", player);
+            return;
+        }
         if (resolved != InputMethod.CONVERSATION) {
-            main.getLogger().warning("Input method '" + getConfiguredMethod() + "' is unavailable on " + main.getCurrPlatform()
+            main.getLogger().warning("Input method '" + configured + "' is unavailable on " + main.getCurrPlatform()
                     + "; falling back to conversations.");
         }
         Prompt prompt = request.getInputType() == InputType.NUMBER
