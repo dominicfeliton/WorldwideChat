@@ -76,7 +76,7 @@ Translator:
   useOpenAICompatible: false
   openAICompatibleAPIKey: openai_compatible_key_goes_here
   openAICompatibleURL: openai_compatible_url_goes_here
-  openAICompatibleModel: openai_compatible_model_goes_here
+  openAICompatibleModel: google/translategemma-4b-it
   useDeepLTranslate: false
   deepLAPIKey: deepl_key_goes_here
   useGoogleTranslate: false
@@ -86,7 +86,7 @@ Translator:
   libreURL: libre_url_goes_here
   useOllama: false
   ollamaURL: ollama_url_goes_here
-  ollamaModel: mradermacher/translategemma-4b-it-GGUF
+  ollamaModel: hf.co/google/translategemma-4b-it
   useSystranTranslate: false
   systranAPIKey: systran_key_goes_here
   translatorCacheSize: 100

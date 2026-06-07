@@ -62,10 +62,10 @@ Translator:
   useOpenAICompatible: true
   openAICompatibleAPIKey: sample_value
   openAICompatibleURL: http://127.0.0.1:1234/v1/chat/completions
-  openAICompatibleModel: gemma-4-e4b-it-mlx
+  openAICompatibleModel: google/translategemma-4b-it
   useOllama: false
   ollamaURL: http://127.0.0.1:11434
-  ollamaModel: thewindmom/hermes-3-llama-3.1-8b
+  ollamaModel: hf.co/google/translategemma-4b-it
   chatGPTModel: gpt-4o-2024-08-06
   chatGPTURL: https://api.openai.com/v1/chat/completions
   useChatGPT: false
