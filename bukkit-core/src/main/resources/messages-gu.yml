@@ -762,4 +762,67 @@ Messages:
   wwcConfigGUISendActionBarButton: એક્શન બાર મોકલો
   wwcConfigActionBarInvalid: config.yml માં સેટ કરેલ એક્શન બાર સેટિંગ અમાન્ય મોકલો.
     સાચા પર ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcConfigGUIInputMethodConversation: વાતચીત
+  wwcAIGuidelinesBlocked: આ સંદેશને અમારા અનુવાદ માર્ગદર્શિકા દ્વારા અવરોધિત કરવામાં
+    આવ્યો હતો.
+  wwcConfigGUIGuidelinesAIModelButton: માર્ગદર્શિકા AI મોડેલ બદલો
+  wwcConfigGUIOpenAICompatibleURLButton: ઓપનએઆઈ સુસંગત URL બદલો
+  wwcConfigConversationGuidelinesAIModelSuccess: માર્ગદર્શિકા AI મોડેલ સફળતાપૂર્વક
+    સેટ કરવામાં આવી
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: ઓપનએઆઈ સુસંગત API કી સફળતાપૂર્વક
+    સેટ થઈ છે.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI સુસંગત URL સફળતાપૂર્વક સેટ
+    કર્યું છે.
+  wwcConfigConversationOpenAICompatibleURLInput: વર્તમાન URL {0} છે. કૃપા કરીને OpenAI
+    સુસંગત માટે URL ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigConversationOpenAICompatibleModelInput: વર્તમાન મોડેલ {0} છે. કૃપા કરીને
+    OpenAI સુસંગત માટે એક મોડેલ ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIGuidelinesAIPromptButton: માર્ગદર્શિકા એઆઈ પ્રોમ્પ્ટ
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI સુસંગત પ્રોમ્પ્ટ બદલો
+  wwcConfigGUIToggleOpenAICompatibleButton: ઓપનએઆઈ સુસંગત ટૉગલ કરો
+  wwcConfigConversationInputMethodSuccess: ઇનપુટ પદ્ધતિ {0} પર સેટ છે.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI સુસંગત મોડેલ સફળતાપૂર્વક
+    સેટ કરવામાં આવ્યું છે.
+  wwcConfigGUIOpenAICompatibleButton: ઓપનએઆઈ સુસંગત
+  wwcConfigGUIInputMethodPaperDialog: પેપર ડાયલોગ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: ઓપનએઆઈ સુસંગત API કી બદલો
+  wwcConfigGUIInputMethodButton: ઇનપુટ પદ્ધતિ
+  wwcConfigGUIInputMethodAuto: ઓટો
+  wwcConfigConversationGuidelinesAIModelInput: વર્તમાન માર્ગદર્શિકા AI મોડેલ {0} છે.
+    કૃપા કરીને એક મોડેલ ઇનપુટ કરો, સક્રિય પ્રદાતા મોડેલનો ઉપયોગ કરવા માટે સ્પષ્ટ ટાઇપ
+    કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI સુસંગત મોડેલ બદલો
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: સફળતાપૂર્વક માર્ગદર્શિકા AI તપાસને
+    ટૉગલ કરી.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: વર્તમાન API કી {0} છે. કૃપા કરીને
+    OpenAI સુસંગત માટે એક API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIInputMethodCurrent: 'વર્તમાન: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: સફળતાપૂર્વક OpenAI સુસંગત ટૉગ કર્યું.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: માર્ગદર્શિકા AI તપાસને ટૉગલ કરો
+  wwctTranslationErrorActionBar: ભૂલ
+  wwcConfigGUIObjectTranslationConcurrencyButton: ઑબ્જેક્ટ અનુવાદ સમન્વય બદલો
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ઑબ્જેક્ટ અનુવાદ સમવર્તી
+    મર્યાદા સફળતાપૂર્વક સેટ કરવામાં આવી
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ઑબ્જેક્ટ ટ્રાન્સલેશન
+    સહવર્તી મર્યાદા 1 અથવા તેથી વધુ હોવી આવશ્યક છે.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: વર્તમાન ઑબ્જેક્ટ
+    ટ્રાન્સલેશન સહવર્તી મર્યાદા {0} છે. નંબર 1 અથવા તેથી વધુ લખો.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: અમાન્ય ઑબ્જેક્ટ ટ્રાન્સલેશન
+    સમવર્તી મર્યાદા config.yml માં સેટ કરેલ છે. મૂલ્ય ઓછામાં ઓછું 1 હોવું જોઈએ. 4
+    પર ડિફોલ્ટ થઈ રહ્યું છે...
+  wwcConfigGUIGuidelinesAIDisabledReason: ગાર્ડરેલ્સનો ઉપયોગ કરવા માટે AI પ્રદાતાને
+    સક્ષમ હોવું આવશ્યક છે.
+  wwcConfigTranslationCapacityAuto: '{0} સક્રિય અનુવાદો અને {1} કતારવાળા અનુવાદો (જેવીએમ
+    પ્રોસેસર્સ: {2}) ને અનુવાદ ક્ષમતા સ્વતઃ ઉકેલાઈ.'
+  wwcConfigConversationTranslationCapacitySuccess: અનુવાદ ક્ષમતા મર્યાદા સફળતાપૂર્વક
+    સેટ.
+  wwcConfigGUITranslationCapacityButton: અનુવાદ ક્ષમતા બદલો
+  wwcConfigTranslationCapacityInvalid: config.yml માં સુયોજિત અમાન્ય અનુવાદ ક્ષમતા
+    મર્યાદા. ઓટો અથવા 1 અથવા તેથી વધુ માટે 0 નો ઉપયોગ કરો. ઓટો પર ડિફોલ્ટિંગ...
+  wwcConfigTranslationCapacityManual: અનુવાદ ક્ષમતા {0} સક્રિય અનુવાદો અને {1} કતારવાળા
+    અનુવાદો પર સેટ કરેલ છે.
+  wwcConfigConversationTranslationCapacityInvalid: ઓટો અથવા 1 અથવા તેથી વધુ માટે અનુવાદ
+    ક્ષમતાની મર્યાદા 0 હોવી આવશ્યક છે.
+  wwcConfigConversationTranslationCapacityInput: વર્તમાન અનુવાદ ક્ષમતાની મર્યાદા {0}
+    છે ({1} સક્રિય, {2} કતારવાળી). ઓટો અથવા નંબર 1 અથવા તેથી વધુ માટે 0 લખો.
 

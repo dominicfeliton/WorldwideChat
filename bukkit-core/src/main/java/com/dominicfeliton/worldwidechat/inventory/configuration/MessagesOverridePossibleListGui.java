@@ -1,8 +1,9 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.ChatSettingsConvos;
+import com.dominicfeliton.worldwidechat.input.InputRequest;
+import com.dominicfeliton.worldwidechat.input.configuration.ChatSettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
@@ -12,7 +13,6 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -52,7 +52,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Yellow stained glass borders */
-            invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.YELLOW_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
@@ -68,8 +68,8 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
             int currSpot = 0;
             refs.debugMsg("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
             for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
-                /* Init item, ensure pre-1.14 compatibility */
-                ItemStack currentEntry = XMaterial.OAK_SIGN.parseItem();
+                /* Init item */
+                ItemStack currentEntry = new ItemStack(Material.OAK_SIGN);
                 ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
                 currentEntryMeta.setDisplayName(entry.getKey());
@@ -85,10 +85,8 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
                 currentEntryMeta.setLore(lore);
                 currentEntry.setItemMeta(currentEntryMeta);
                 currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
-                    // Start conversation
-                    ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-                            .withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey(), inLang));
-                    textConvo.buildConversation(player).begin();
+                    main.getInputService().open(player, InputRequest.fromPrompt(
+                            new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey(), inLang)));
                 });
                 currSpot++;
             }

@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
@@ -50,7 +50,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
     public void init(Player player, InventoryContents contents) {
         try {
             /* Green stained glass borders */
-            invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.GREEN_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
@@ -71,7 +71,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
                 refs.debugMsg("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
                 int currSpot = 0;
                 for (Map.Entry<String, String> entry : overridesFromConfig.entrySet()) {
-                    ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
+                    ItemStack currentEntry = new ItemStack(Material.WRITABLE_BOOK);
                     ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
                     currentEntryMeta.setDisplayName(entry.getKey());

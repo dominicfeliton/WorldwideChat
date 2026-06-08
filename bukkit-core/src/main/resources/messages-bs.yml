@@ -763,4 +763,66 @@ Messages:
   wwcConfigGUISendActionBarButton: Pošalji akcijske trake
   wwcConfigActionBarInvalid: Nevažeća postavka trake akcija slanja postavljena u config.yml.
     Zadano na istinito...
+  wwcConfigGUIInputMethodConversation: Razgovor
+  wwcAIGuidelinesBlocked: Ova poruka je blokirana našim smjernicama za prijevod.
+  wwcConfigGUIGuidelinesAIModelButton: Promijenite smjernice AI model
+  wwcConfigGUIOpenAICompatibleURLButton: Promijenite OpenAI kompatibilni URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Smjernice AI model uspješno postavljene.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI kompatibilni API ključ
+    uspješno postavljen.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI kompatibilni URL je uspješno
+    postavljen.
+  wwcConfigConversationOpenAICompatibleURLInput: Trenutni URL je {0}. Unesite URL
+    za OpenAI Compatible ili upišite 0 da biste se vratili natrag.
+  wwcConfigConversationOpenAICompatibleModelInput: Trenutni model je {0}. Unesite
+    model za OpenAI Compatible ili upišite 0 da biste se vratili natrag.
+  wwcConfigGUIGuidelinesAIPromptButton: Promjena smjernica AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Promijenite OpenAI kompatibilni upit
+  wwcConfigGUIToggleOpenAICompatibleButton: Prebaci OpenAI kompatibilan
+  wwcConfigConversationInputMethodSuccess: Način unosa postavljen na {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Uspješno je postavljen OpenAI
+    kompatibilni model.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI kompatibilan
+  wwcConfigGUIInputMethodPaperDialog: Papirni dijalog
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Promijenite OpenAI kompatibilni API ključ
+  wwcConfigGUIInputMethodButton: Način unosa
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Trenutni AI model smjernica je {0}.
+    Unesite model, upišite jasno da biste koristili aktivni model pružatelja usluga
+    ili upišite 0 da biste se vratili natrag.
+  wwcConfigGUIOpenAICompatibleModelButton: Promijenite OpenAI kompatibilni model
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Uspješno prebačene smjernice AI provjere.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za OpenAI Compatible ili upišite 0 da biste se vratili natrag.
+  wwcConfigGUIInputMethodCurrent: 'Aktualno: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Uspješno je prebacio OpenAI kompatibilan.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Prebacite smjernice AI provjere
+  wwctTranslationErrorActionBar: Greška
+  wwcConfigGUIObjectTranslationConcurrencyButton: Promjena istovremenosti prijevoda
+    objekta
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Uspješno postavljeno ograničenje
+    istovremenosti prevođenja objekata.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Ograničenje istovremenosti
+    prevođenja objekata mora biti 1 ili više.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Trenutna granica
+    istovremenosti prijevoda objekata je {0}. Upišite broj 1 ili veći.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Neispravno ograničenje istovremenosti
+    prijevoda objekata postavljeno u config.yml. Vrijednost mora biti najmanje 1.
+    Zadano na 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: AI dobavljaču mora biti omogućeno korištenje
+    zaštitnih ograda.
+  wwcConfigTranslationCapacityAuto: 'Kapacitet prevođenja automatski se rješava na
+    {0} aktivne prijevode i {1} prijevode u redu (JVM procesori: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Uspješno postavljeno ograničenje
+    kapaciteta prevođenja.
+  wwcConfigGUITranslationCapacityButton: Promijenite kapacitet prevođenja
+  wwcConfigTranslationCapacityInvalid: Neispravno ograničenje kapaciteta prijevoda
+    postavljeno u config.yml. Koristite 0 za automatsko ili 1 ili više. Zadano podešavanje
+    na automatsko...
+  wwcConfigTranslationCapacityManual: Kapacitet prevođenja postavljen na {0} aktivni
+    prijevodi i {1} prijevodi u redu.
+  wwcConfigConversationTranslationCapacityInvalid: Ograničenje kapaciteta prevođenja
+    mora biti 0 za auto ili 1 ili više.
+  wwcConfigConversationTranslationCapacityInput: Trenutno ograničenje kapaciteta prevođenja
+    je {0} ({1} aktivno, {2} u redu čekanja). Upišite 0 za auto ili broj 1 ili veći.
 

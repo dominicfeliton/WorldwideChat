@@ -769,4 +769,70 @@ Messages:
   wwcConfigGUISendActionBarButton: Wyślij paski akcji
   wwcConfigActionBarInvalid: Nieprawidłowe ustawienie paska akcji wysyłania ustawione
     w config.yml. Domyślnie wartość true...
+  wwcConfigGUIInputMethodConversation: Rozmowa
+  wwcAIGuidelinesBlocked: Ta wiadomość została zablokowana przez nasze wytyczne dotyczące
+    tłumaczeń.
+  wwcConfigGUIGuidelinesAIModelButton: Zmień wytyczne modelu AI
+  wwcConfigGUIOpenAICompatibleURLButton: Zmień adres URL zgodny z OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Wytyczne modelu AI zostały pomyślnie
+    ustawione.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Pomyślnie ustawiono klucz API
+    zgodny z OpenAI.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Adres URL zgodny z OpenAI został
+    pomyślnie ustawiony.
+  wwcConfigConversationOpenAICompatibleURLInput: Obecny adres URL to {0}. Wprowadź
+    adres URL dla OpenAI Compatible lub wpisz 0, aby wrócić.
+  wwcConfigConversationOpenAICompatibleModelInput: Obecny model to {0}. Wprowadź model
+    dla OpenAI Compatible lub wpisz 0, aby wrócić.
+  wwcConfigGUIGuidelinesAIPromptButton: Zmień wytyczne AI Monit
+  wwcConfigGUIOpenAICompatiblePromptButton: Zmień komunikat zgodny z OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Przełącz zgodność z OpenAI
+  wwcConfigConversationInputMethodSuccess: Metoda wprowadzania ustawiona na {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Pomyślnie zestaw modeli zgodnych
+    z OpenAI.
+  wwcConfigGUIOpenAICompatibleButton: Kompatybilny z OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Okno dialogowe papieru
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Zmień klucz API zgodny z OpenAI
+  wwcConfigGUIInputMethodButton: Metoda wprowadzania
+  wwcConfigGUIInputMethodAuto: Automatyczny
+  wwcConfigConversationGuidelinesAIModelInput: Obecny model sztucznej inteligencji
+    Guidelines to {0}. Wprowadź model, wpisz clear, aby użyć aktywnego modelu dostawcy,
+    lub wpisz 0, aby wrócić.
+  wwcConfigGUIOpenAICompatibleModelButton: Zmień model zgodny z OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Pomyślnie przełączono wytyczne Kontrole
+    AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Obecny klucz API to {0}. Wprowadź
+    klucz API dla OpenAI Compatible lub wpisz 0, aby wrócić.
+  wwcConfigGUIInputMethodCurrent: 'Aktualny: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Pomyślnie przełączono OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Przełącz wytyczne Kontrole AI
+  wwctTranslationErrorActionBar: Błąd
+  wwcConfigGUIObjectTranslationConcurrencyButton: Zmień współbieżność tłumaczenia
+    obiektów
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Limit współbieżności tłumaczenia
+    obiektów został pomyślnie ustawiony.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Limit współbieżności
+    tłumaczenia obiektów musi wynosić 1 lub więcej.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Bieżący limit współbieżności
+    translacji obiektów wynosi {0}. Wpisz liczbę 1 lub większą.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Nieprawidłowy limit współbieżności
+    translacji obiektów ustawiony w config.yml. Wartość musi wynosić co najmniej 1.
+    Domyślnie 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Dostawca sztucznej inteligencji musi być
+    włączony do korzystania z Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Pojemność tłumaczenia automatycznie rozdzielana
+    na {0} aktywne tłumaczenia i {1} tłumaczenia w kolejce (procesory JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limit pojemności tłumaczeń ustawiony
+    pomyślnie.
+  wwcConfigGUITranslationCapacityButton: Zmień pojemność tłumaczenia
+  wwcConfigTranslationCapacityInvalid: Nieprawidłowy limit pojemności tłumaczenia
+    ustawiony w config.yml. Użyj 0 dla automatycznego lub 1 lub większego. Domyślnie
+    ustawienie auto...
+  wwcConfigTranslationCapacityManual: Możliwość tłumaczenia ustawiona na {0} aktywne
+    tłumaczenia i {1} tłumaczenia w kolejce.
+  wwcConfigConversationTranslationCapacityInvalid: Limit pojemności tłumaczenia musi
+    wynosić 0 dla automatycznego lub 1 lub więcej.
+  wwcConfigConversationTranslationCapacityInput: Obecny limit pojemności tłumaczenia
+    wynosi {0} ({1} aktywny, {2} w kolejce). Wpisz 0 dla opcji auto lub liczbę 1 lub
+    większą.
 

@@ -740,4 +740,63 @@ Messages:
   wwcConfigGUISendActionBarButton: Send handlingslinjer
   wwcConfigActionBarInvalid: Ugyldig innstilling for sending av handlingslinje angitt
     i config.yml. Standardiserer til sant...
+  wwcConfigGUIInputMethodConversation: Samtale
+  wwcAIGuidelinesBlocked: Denne meldingen ble blokkert av retningslinjene våre for
+    oversettelse.
+  wwcConfigGUIGuidelinesAIModelButton: Endre retningslinjer AI-modell
+  wwcConfigGUIOpenAICompatibleURLButton: Endre OpenAI-kompatibel URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Retningslinjer AI-modell satt vellykket.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-kompatibel API-nøkkel
+    satt vellykket.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-kompatibel URL satt vellykket.
+  wwcConfigConversationOpenAICompatibleURLInput: Den nåværende URL-adressen er {0}.
+    Vennligst skriv inn en URL for OpenAI Compatible, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationOpenAICompatibleModelInput: Den nåværende modellen er {0}.
+    Vennligst skriv inn en modell for OpenAI Compatible, eller skriv 0 for å gå tilbake.
+  wwcConfigGUIGuidelinesAIPromptButton: Endre retningslinjer AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Endre OpenAI-kompatibel ledetekst
+  wwcConfigGUIToggleOpenAICompatibleButton: Veksle OpenAI-kompatibel
+  wwcConfigConversationInputMethodSuccess: Inndatametode satt til {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-kompatibel modell satt
+    vellykket.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Kompatibel
+  wwcConfigGUIInputMethodPaperDialog: Papirdialogboks
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Endre OpenAI-kompatibel API-nøkkel
+  wwcConfigGUIInputMethodButton: Inndatametode
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Den nåværende Guidelines AI-modellen
+    er {0}. Vennligst skriv inn en modell, skriv clear for å bruke den aktive leverandørmodellen,
+    eller skriv 0 for å gå tilbake.
+  wwcConfigGUIOpenAICompatibleModelButton: Endre OpenAI-kompatibel modell
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Vellykket bytte retningslinjer AI-kontroller.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Gjeldende API-nøkkel er {0}. Vennligst
+    skriv inn en API-nøkkel for OpenAI-kompatibel, eller skriv 0 for å gå tilbake.
+  wwcConfigGUIInputMethodCurrent: 'Nåværende: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Vellykket OpenAI-kompatibel.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Bytt retningslinjer for AI-kontroller
+  wwctTranslationErrorActionBar: Feil
+  wwcConfigGUIObjectTranslationConcurrencyButton: Endre samtidig objektoversettelse
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Grensen for samtidighet
+    for objektoversettelse satt med hell.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Samtidsgrensen
+    for objektoversettelse må være 1 eller større.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Gjeldende samtidsgrense
+    for objektoversettelse er {0}. Skriv inn et nummer 1 eller større.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ugyldig samtidsgrense for objektoversettelse
+    angitt i config.yml. Verdien må være minst 1. Standard til 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: En AI-leverandør må være aktivert for å
+    bruke Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Oversettelseskapasitet løses automatisk til {0}
+    aktive oversettelser og {1} oversettelser i kø (JVM-prosessorer: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Oversettelseskapasitetsgrense satt
+    vellykket.
+  wwcConfigGUITranslationCapacityButton: Endre oversettelseskapasitet
+  wwcConfigTranslationCapacityInvalid: Ugyldig grense for oversettelseskapasitet angitt
+    i config.yml. Bruk 0 for auto eller 1 eller høyere. Standard til auto...
+  wwcConfigTranslationCapacityManual: Oversettelseskapasitet satt til {0} aktive oversettelser
+    og {1} oversettelser i kø.
+  wwcConfigConversationTranslationCapacityInvalid: Oversettelseskapasitetsgrense må
+    være 0 for automatisk eller 1 eller høyere.
+  wwcConfigConversationTranslationCapacityInput: Gjeldende grense for oversettelseskapasitet
+    er {0} ({1} aktiv, {2} i kø). Skriv inn 0 for auto eller et tall 1 eller høyere.
 

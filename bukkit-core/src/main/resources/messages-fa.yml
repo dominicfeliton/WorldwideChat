@@ -756,4 +756,65 @@ Messages:
   wwcConfigGUISendActionBarButton: ارسال میله های اکشن
   wwcConfigActionBarInvalid: تنظیم نوار عمل ارسال نامعتبر در config.yml تنظیم شده
     است. به طور پیش فرض به true تبدیل می شود...
+  wwcConfigGUIInputMethodConversation: مکالمه
+  wwcAIGuidelinesBlocked: این پیام توسط دستورالعمل های ترجمه ما مسدود شده است.
+  wwcConfigGUIGuidelinesAIModelButton: تغییر دستورالعمل مدل هوش مصنوعی
+  wwcConfigGUIOpenAICompatibleURLButton: تغییر آدرس سازگار با OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: دستورالعمل های مدل هوش مصنوعی با
+    موفقیت تنظیم شد.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: کلید API سازگار با OpenAI با
+    موفقیت تنظیم شد.
+  wwcConfigConversationOpenAICompatibleURLSuccess: آدرس سازگار با OpenAI با موفقیت
+    تنظیم شده است.
+  wwcConfigConversationOpenAICompatibleURLInput: URL فعلی {0} است. لطفا یک URL برای
+    OpenAI Compatible وارد کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationOpenAICompatibleModelInput: مدل فعلی {0} است. لطفاً مدلی را
+    برای OpenAI Compatible وارد کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIGuidelinesAIPromptButton: تغییر دستورالعمل های هوش مصنوعی
+  wwcConfigGUIOpenAICompatiblePromptButton: تغییر فرمان سازگار با OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: تعویض سازگار با OpenAI
+  wwcConfigConversationInputMethodSuccess: روش ورودی روی {0} تنظیم شده است.
+  wwcConfigConversationOpenAICompatibleModelSuccess: مدل سازگار OpenAI با موفقیت تنظیم
+    شده است.
+  wwcConfigGUIOpenAICompatibleButton: سازگار با OpenAI
+  wwcConfigGUIInputMethodPaperDialog: گفتگوی کاغذ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: کلید API سازگار با OpenAI را تغییر دهید
+  wwcConfigGUIInputMethodButton: روش ورودی
+  wwcConfigGUIInputMethodAuto: اتوموبیل
+  wwcConfigConversationGuidelinesAIModelInput: مدل کنونی دستورالعمل هوش مصنوعی {0}
+    است. لطفاً یک مدل را وارد کنید، clear را برای استفاده از مدل ارائه دهنده فعال
+    تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIOpenAICompatibleModelButton: مدل سازگار با OpenAI را تغییر دهید
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: چک های دستورالعمل هوش مصنوعی را با
+    موفقیت تغییر داد.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: کلید API فعلی {0} است. لطفاً یک
+    کلید API را برای OpenAI Compatible وارد کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIInputMethodCurrent: 'فعلی: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: با موفقیت سازگار OpenAI را تغییر داد.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: تغییر دستورالعمل های بررسی هوش مصنوعی
+  wwctTranslationErrorActionBar: خطا
+  wwcConfigGUIObjectTranslationConcurrencyButton: تغییر همزمان ترجمه شیء
+  wwcConfigConversationObjectTranslationConcurrencySuccess: محدودیت همزمان ترجمه شی
+    با موفقیت تنظیم شد.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: حد همزمان ترجمه
+    شیء باید ۱ یا بیشتر باشد.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: محدودیت همزمان ترجمه
+    شی فعلی {0} است. یک عدد 1 یا بیشتر را تایپ کنید.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: محدودیت همزمان ترجمه شیء نامعتبر
+    در config.yml تنظیم شده است. مقدار باید حداقل 1 باشد. پیش فرض به 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: یک ارائه دهنده هوش مصنوعی باید برای استفاده
+    از Guardrails فعال باشد.
+  wwcConfigTranslationCapacityAuto: 'ظرفیت ترجمه به صورت خودکار به ترجمه فعال {0}
+    و ترجمه های صف دار {1} (پردازنده های JVM: {2}) حل شده است.'
+  wwcConfigConversationTranslationCapacitySuccess: محدودیت ظرفیت ترجمه با موفقیت تنظیم
+    شده است.
+  wwcConfigGUITranslationCapacityButton: تغییر ظرفیت ترجمه
+  wwcConfigTranslationCapacityInvalid: محدودیت ظرفیت ترجمه نامعتبر در config.yml تنظیم
+    شده است. از 0 برای خودکار یا 1 یا بیشتر استفاده کنید. به طور پیش فرض به خودکار...
+  wwcConfigTranslationCapacityManual: ظرفیت ترجمه به {0} ترجمه فعال و {1} ترجمه صف
+    تنظیم شده است.
+  wwcConfigConversationTranslationCapacityInvalid: محدودیت ظرفیت ترجمه باید 0 برای
+    خودکار یا 1 یا بیشتر باشد.
+  wwcConfigConversationTranslationCapacityInput: محدودیت ظرفیت ترجمه فعلی {0} ({1}
+    فعال، {2} صف) است. 0 را برای خودکار یا عدد 1 یا بیشتر تایپ کنید.
 

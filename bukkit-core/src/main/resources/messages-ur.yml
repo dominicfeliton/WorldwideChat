@@ -773,4 +773,66 @@ Messages:
   wwcConfigGUISendActionBarButton: ایکشن بار بھیجیں
   wwcConfigActionBarInvalid: config.yml میں سیٹ کردہ ایکشن بار کی ترتیب کو غلط بھیجیں۔
     سچ میں ڈیفالٹ ہونا...
+  wwcConfigGUIInputMethodConversation: گفتگو
+  wwcAIGuidelinesBlocked: اس پیغام کو ہمارے ترجمے کے رہنما خطوط کے ذریعہ بلاک کیا
+  wwcConfigGUIGuidelinesAIModelButton: ہدایات AI ماڈل کو تبدیل کریں
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI ہم آہنگ یو آر ایل تبدیل کریں
+  wwcConfigConversationGuidelinesAIModelSuccess: ہدایات AI ماڈل کامیابی کے ساتھ سیٹ
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI ہم آہنگ API کلید کامیابی
+    کے ساتھ سیٹ کی گئی
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI ہم آہنگ یو آر ایل کامیابی
+    کے ساتھ سیٹ
+  wwcConfigConversationOpenAICompatibleURLInput: موجودہ یو آر ایل {0} ہے۔ براہ کرم
+    OpenAI مطابقت پذیر کے لئے ایک یو آر ایل درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigConversationOpenAICompatibleModelInput: موجودہ ماڈل {0} ہے۔ براہ کرم OpenAI
+    مطابقت پذیر کے لئے ایک ماڈل درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigGUIGuidelinesAIPromptButton: AI پرامپٹ کی رہنمائی کو
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI ہم آہنگ پرامپٹ تبدیل کریں
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI ہم آہنگ ٹوگل کریں
+  wwcConfigConversationInputMethodSuccess: ان پٹ کا طریقہ {0} پر سیٹ کیا گیا ہے۔
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI مطابقت پذیر ماڈل کامیابی
+    کے ساتھ سیٹ
+  wwcConfigGUIOpenAICompatibleButton: اوپناے آئی ہم آہنگ
+  wwcConfigGUIInputMethodPaperDialog: کاغذ ڈائیلاگ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: اوپن اے آئی ہم آہنگ API کلید تبدیل کریں
+  wwcConfigGUIInputMethodButton: ان پٹ کا طریقہ
+  wwcConfigGUIInputMethodAuto: گاڑی
+  wwcConfigConversationGuidelinesAIModelInput: موجودہ رہنما خطوط AI ماڈل {0} ہے۔ براہ
+    کرم ایک ماڈل درج کریں، فعال فراہم کنندہ ماڈل استعمال کرنے کے لیے کلیئر ٹائپ کریں،
+    یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI ہم آہنگ ماڈل تبدیل کریں
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: کامیابی کے ساتھ رہنما خطوط اے آئی چیک
+    کو
+  wwcConfigConversationOpenAICompatibleApiKeyInput: موجودہ API کلید {0} ہے۔ براہ کرم
+    OpenAI مطابقت پذیر کے لئے ایک API کلید درج کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
+  wwcConfigGUIInputMethodCurrent: 'موجودہ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: کامیابی کے ساتھ OpenAI مطابقت پذیر ٹوگل
+    کیا۔
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI چیک کے رہنما خطوط ٹوگل
+  wwctTranslationErrorActionBar: غلطی
+  wwcConfigGUIObjectTranslationConcurrencyButton: آبجیکٹ ترجمہ ہم آہنگ تبدیل کریں
+  wwcConfigConversationObjectTranslationConcurrencySuccess: آبجیکٹ ترجمہ ہم آہنگی
+    کی حد کامیابی کے ساتھ
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: آبجیکٹ ترجمہ ہم
+    آہنگی کی حد 1 یا اس سے زیادہ ہونی چاہئے۔
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: موجودہ آبجیکٹ ترجمے
+    کی ہم آہنگ حد {0} ہے۔ نمبر 1 یا اس سے زیادہ ٹائپ کریں۔
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: غلط آبجیکٹ ترجمہ ہم آہنگی کی
+    حد config.yml میں سیٹ کی گئی ہے۔ قیمت کم از کم 1 ہونی چاہئے۔ 4 پر ڈیفالٹ ہو رہا
+    ہے...
+  wwcConfigGUIGuidelinesAIDisabledReason: اے آئی فراہم کنندہ کو گارڈریلز استعمال کرنے
+    کے لئے قابل ہونا ضروری ہے۔
+  wwcConfigTranslationCapacityAuto: 'ترجمہ کی صلاحیت {0} فعال ترجموں اور {1} قطار
+    والے ترجموں (JVM پروسیسرز: {2}) پر خود کار طریقے سے حل ہوگئی۔'
+  wwcConfigConversationTranslationCapacitySuccess: ترجمہ کی صلاحیت کی حد کامیابی کے
+    ساتھ
+  wwcConfigGUITranslationCapacityButton: ترجمہ کی صلاحیت تبدیل
+  wwcConfigTranslationCapacityInvalid: config.yml میں ترجمہ کی صلاحیت کی غلط حد مقرر
+    کی گئی ہے۔ آٹو یا 1 یا اس سے زیادہ کے لئے 0 استعمال کریں۔ آٹو میں ڈیفالٹ کرنا...
+  wwcConfigTranslationCapacityManual: ترجمہ کی صلاحیت {0} فعال ترجمے اور {1} قطار
+    کے ترجمے پر سیٹ کی گئی ہے۔
+  wwcConfigConversationTranslationCapacityInvalid: ترجمہ کی صلاحیت کی حد آٹو یا 1
+    یا اس سے زیادہ کے لئے 0 ہونی چاہئے۔
+  wwcConfigConversationTranslationCapacityInput: موجودہ ترجمہ کی صلاحیت کی حد {0}
+    ہے ({1} فعال، {2} قطار) ۔ آٹو یا نمبر 1 یا اس سے زیادہ کے لیے 0 ٹائپ کریں۔
 

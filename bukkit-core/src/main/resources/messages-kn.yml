@@ -773,4 +773,71 @@ Messages:
   wwcConfigGUISendActionBarButton: ಆಕ್ಷನ್ ಬಾರ್ಗಳನ್ನು ಕಳುಹಿಸಿ
   wwcConfigActionBarInvalid: Config.yml ನಲ್ಲಿ ಸೆಟ್ ಆಕ್ಷನ್ ಬಾರ್ ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ಅಮಾನ್ಯ
     ಕಳುಹಿಸಿ. ನಿಜಕ್ಕೆ ಡೀಫಾಲ್ಟ್ ಆಗಿದೆ...
+  wwcConfigGUIInputMethodConversation: ಸಂಭಾಷಣೆ
+  wwcAIGuidelinesBlocked: ನಮ್ಮ ಅನುವಾದ ಮಾರ್ಗಸೂಚಿಗಳಿಂದ ಈ ಸಂದೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ.
+  wwcConfigGUIGuidelinesAIModelButton: AI ಮಾದರಿ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI ಹೊಂದಾಣಿಕೆಯ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationGuidelinesAIModelSuccess: ಮಾರ್ಗಸೂಚಿಗಳು AI ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲ್ಪಟ್ಟಿವೆ.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯ API ಕೀಲಿಯನ್ನು
+    ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI ಹೊಂದಾಣಿಕೆಯ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleURLInput: ಪ್ರಸ್ತುತ URL {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು
+    OpenAI ಹೊಂದಾಣಿಕೆಗೆ URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationOpenAICompatibleModelInput: ಪ್ರಸ್ತುತ ಮಾದರಿ {0}. ದಯವಿಟ್ಟು OpenAI
+    ಹೊಂದಾಣಿಕೆಗೆ ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIGuidelinesAIPromptButton: AI ಪ್ರಾಂಪ್ಟ್ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI ಹೊಂದಾಣಿಕೆಯ ಪ್ರಾಂಪ್ಟ್ ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIToggleOpenAICompatibleButton: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigConversationInputMethodSuccess: ಇನ್ಪುಟ್ ವಿಧಾನವನ್ನು {0} ಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleModelSuccess: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯ ಮಾದರಿ ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUIOpenAICompatibleButton: ಓಪನ್ಎಐ ಹೊಂದಿಕೊಳ್ಳುತ್ತದೆ
+  wwcConfigGUIInputMethodPaperDialog: ಪೇಪರ್ ಡೈಲಾಗ್
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI ಹೊಂದಾಣಿಕೆಯ API ಕೀಲಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIInputMethodButton: ಇನ್ಪುಟ್ ವಿಧಾನ
+  wwcConfigGUIInputMethodAuto: ಆಟೋ
+  wwcConfigConversationGuidelinesAIModelInput: ಪ್ರಸ್ತುತ ಮಾರ್ಗಸೂಚಿಗಳ AI ಮಾದರಿ {0} ಆಗಿದೆ.
+    ದಯವಿಟ್ಟು ಒಂದು ಮಾದರಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಸಕ್ರಿಯ ಪೂರೈಕೆದಾರ ಮಾದರಿಯನ್ನು ಬಳಸಲು ಸ್ಪಷ್ಟವಾಗಿ
+    ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIOpenAICompatibleModelButton: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯ ಮಾದರಿ ಬದಲಾಯ
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: ಮಾರ್ಗಸೂಚಿಗಳ AI ಪರಿಶೀಲನೆಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿ {0} ಆಗಿದೆ. OpenAI
+    ಹೊಂದಾಣಿಕೆಗೆ ಒಂದು API ಕೀಲಿಯನ್ನು ದಯವಿಟ್ಟು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಟೈಪ್
+    ಮಾಡಿ.
+  wwcConfigGUIInputMethodCurrent: 'ಪ್ರಸ್ತುತ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: ಓಪನ್ಎಐ ಹೊಂದಾಣಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟ್ಯಾಗ್
+    ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI ಪರಿಶೀಲನೆಗಳ ಮಾರ್ಗಸೂಚಿಗಳನ್ನು ಟಾಗಲ್
+    ಮಾಡಿ
+  wwctTranslationErrorActionBar: ದೋಷ
+  wwcConfigGUIObjectTranslationConcurrencyButton: ಆಬ್ಜೆಕ್ಟ್ ಅನುವಾದ ಏಕಕಾಲತೆಯನ್ನು ಬದಲಾಯ
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ಆಬ್ಜೆಕ್ಟ್ ಅನುವಾದ ಏಕಕಾಲದ
+    ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ಆಬ್ಜೆಕ್ಟ್ ಅನುವಾದ
+    ಏಕಕಾಲೀನ ಮಿತಿಯು 1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿರಬೇಕು.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: ಪ್ರಸ್ತುತ ವಸ್ತು ಅನುವಾದ
+    ಏಕಕಾಲೀನ ಮಿತಿಯು {0} ಆಗಿದೆ. ಸಂಖ್ಯೆ 1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಸಂಖ್ಯೆಯನ್ನು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: ಅಮಾನ್ಯ ಆಬ್ಜೆಕ್ಟ್ ಅನುವಾದ ಕಾನ್ಕರೆನ್ಸಿ
+    ಮಿತಿಯನ್ನು config.yml ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ. ಮೌಲ್ಯವು ಕನಿಷ್ಠ 1 ಆಗಿರಬೇಕು. 4 ಗೆ ಡೀಫಾಲ್ಟ್
+    ಆಗಿದೆ...
+  wwcConfigGUIGuidelinesAIDisabledReason: ಗಾರ್ಡ್ರೈಲ್ಗಳನ್ನು ಬಳಸಲು AI ಪೂರೈಕೆದಾರರನ್ನು
+    ಸಕ್ರಿಯಗೊಳಿಸಬೇಕು.
+  wwcConfigTranslationCapacityAuto: '{0} ಸಕ್ರಿಯ ಅನುವಾದಗಳು ಮತ್ತು {1} ಕ್ಯೂಡ್ ಅನುವಾದಗಳಿಗೆ
+    ಅನುವಾದ ಸಾಮರ್ಥ್ಯವನ್ನು ಸ್ವಯಂ-ಪರಿಹರಿಸಲಾಗಿದೆ (ಜೆವಿಎಂ ಪ್ರೊಸೆಸರ್ಗಳು: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigGUITranslationCapacityButton: ಅನುವಾದ ಸಾಮರ್ಥ್ಯವನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigTranslationCapacityInvalid: ಅಮಾನ್ಯ ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿಯನ್ನು config.yml
+    ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ. ಸ್ವಯಂ ಅಥವಾ 1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನವುಗಳಿಗಾಗಿ 0 ಬಳಸಿ. ಸ್ವಯಂ
+    ಗೆ ಡೀಫಾಲ್ಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
+  wwcConfigTranslationCapacityManual: ಅನುವಾದ ಸಾಮರ್ಥ್ಯವನ್ನು {0} ಸಕ್ರಿಯ ಅನುವಾದಗಳು ಮತ್ತು
+    {1} ಕ್ಯೂಡ್ ಅನುವಾದಗಳಿಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationTranslationCapacityInvalid: ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿಯು ಸ್ವಯಂ ಅಥವಾ
+    1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದಲ್ಲಿ 0 ಆಗಿರಬೇಕು.
+  wwcConfigConversationTranslationCapacityInput: ಪ್ರಸ್ತುತ ಅನುವಾದ ಸಾಮರ್ಥ್ಯದ ಮಿತಿ {0}
+    ({1} ಸಕ್ರಿಯ, {2} ಕ್ಯೂಡ್) ಆಗಿದೆ. ಸ್ವಯಂ ಅಥವಾ ಸಂಖ್ಯೆ 1 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಸಂಖ್ಯೆಗಾಗಿ
+    0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
 

@@ -2,6 +2,7 @@ package com.dominicfeliton.worldwidechat;
 
 import com.dominicfeliton.worldwidechat.commands.*;
 import com.dominicfeliton.worldwidechat.configuration.ConfigurationHandler;
+import com.dominicfeliton.worldwidechat.input.InputService;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.listeners.WWCTabCompleter;
 import com.dominicfeliton.worldwidechat.runnables.LoadUserData;
@@ -12,11 +13,10 @@ import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
+import com.dominicfeliton.worldwidechat.util.storage.StorageMigrationUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
-import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
@@ -34,6 +34,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ASYNC;
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
@@ -42,20 +43,21 @@ import static com.dominicfeliton.worldwidechat.util.CommonRefs.supportedMCVersio
 
 public class WorldwideChat extends JavaPlugin {
     public static final int bStatsID = 10562;
-    public static final String messagesConfigVersion = "04162024-1"; // MMDDYYYY-revisionNumber
+    public static final String messagesConfigVersion = "05262026-1"; // MMDDYYYY-revisionNumber
+    private static final String SLF4J_INTERNAL_VERBOSITY_PROPERTY = "slf4j.internal.verbosity";
+    private static final String SLF4J_INTERNAL_VERBOSITY_ERROR = "ERROR";
 
     public static int translatorFatalAbortSeconds = 10;
     public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
     public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 
     public static WorldwideChat instance;
-    private BukkitAudiences adventure;
-
     private String currPlatform;
 
     private ComparableVersion currMCVersion;
 
     private WorldwideChatHelper wwcHelper;
+    private InputService inputService;
     private WWCInventoryManager inventoryManager;
 
     private ConfigurationHandler configurationManager;
@@ -68,9 +70,13 @@ public class WorldwideChat extends JavaPlugin {
 
     private ExecutorService callbackExecutor;
 
+    private volatile TranslationCapacityLimiter translationCapacityLimiter = TranslationCapacityLimiter.fromConfiguredLimit(0);
+
     private ServerAdapterFactory serverFactory;
 
     private CommonRefs refs;
+
+    private TranslationProgressIndicator translationProgressIndicator;
 
     private Map<String, SupportedLang> supportedInputLangs = new ConcurrentHashMap<>();
     private Map<String, SupportedLang> supportedOutputLangs = new ConcurrentHashMap<>();
@@ -88,7 +94,7 @@ public class WorldwideChat extends JavaPlugin {
             .maximumSize(100)
             .build();
 
-    private int translatorErrorCount = 0;
+    private final AtomicInteger translatorErrorCount = new AtomicInteger(0);
 
     private boolean outOfDate = false;
 
@@ -97,10 +103,7 @@ public class WorldwideChat extends JavaPlugin {
     private volatile String translatorName = "Starting";
 
     /* Config values */
-    private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
-            .append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
-            .append(Component.text().content("]").color(NamedTextColor.DARK_RED))
-            .build();
+    private Component pluginPrefix = defaultPluginPrefix();
 
     private Component translateIcon = Component.text("\uD83C\uDF10", NamedTextColor.LIGHT_PURPLE)
             .append(Component.space());
@@ -116,6 +119,10 @@ public class WorldwideChat extends JavaPlugin {
     private int globalRateLimit = 0;
 
     private int messageCharLimit = 255;
+
+    private int objectTranslationConcurrencyLimit = 4;
+
+    private int translationCapacityLimit = TranslationCapacityLimiter.AUTO_CONFIG_VALUE;
 
     private boolean persistentCache = false;
 
@@ -133,6 +140,8 @@ public class WorldwideChat extends JavaPlugin {
 
     private String aiSystemPrompt = "";
 
+    private String guidelinesAIPrompt = "";
+
     private boolean enableSounds = true;
 
     private boolean sendActionBar = true;
@@ -143,13 +152,6 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     /* Methods */
-    public @NotNull BukkitAudiences adventure() {
-        if (adventure == null) {
-            throw new IllegalStateException("Tried to access Adventure when the plugin was disabled!");
-        }
-        return adventure;
-    }
-
     public ExecutorService getCallbackExecutor() {
         return callbackExecutor;
     }
@@ -158,12 +160,37 @@ public class WorldwideChat extends JavaPlugin {
         return inventoryManager;
     }
 
+    public TranslationProgressIndicator getTranslationProgressIndicator() {
+        if (translationProgressIndicator == null && refs != null && wwcHelper != null) {
+            translationProgressIndicator = new TranslationProgressIndicator(this, refs, wwcHelper);
+        }
+        return translationProgressIndicator;
+    }
+
+    private static Component defaultPluginPrefix() {
+        return Component.text("[", NamedTextColor.DARK_RED)
+                .append(Component.text("WWC", NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
+                .append(Component.text("]", NamedTextColor.DARK_RED));
+    }
+
+    public InputService getInputService() {
+        return inputService;
+    }
+
     public void setConfigManager(ConfigurationHandler i) {
         configurationManager = i;
     }
 
     public ConfigurationHandler getConfigManager() {
         return configurationManager;
+    }
+
+    @Override
+    public void onLoad() {
+        // SLF4J reports provider discovery warnings directly to stderr before normal plugin logging exists.
+        if (System.getProperty(SLF4J_INTERNAL_VERBOSITY_PROPERTY) == null) {
+            System.setProperty(SLF4J_INTERNAL_VERBOSITY_PROPERTY, SLF4J_INTERNAL_VERBOSITY_ERROR);
+        }
     }
 
     @Override
@@ -176,11 +203,6 @@ public class WorldwideChat extends JavaPlugin {
         if (!checkAndInitAdapters()) {
             getServer().getPluginManager().disablePlugin(this);
             return;
-        }
-
-        // Setup adventure if needed
-        if (currPlatform.equals("Bukkit") || currPlatform.equals("Spigot")) {
-            adventure = BukkitAudiences.create(this); // Adventure
         }
 
         // Setup inventory manager
@@ -205,12 +227,8 @@ public class WorldwideChat extends JavaPlugin {
         HandlerList.unregisterAll(this);
 
         // Set static vars to null
-        if (adventure != null) {
-            adventure.close();
-            adventure = null;
-        }
+        translationProgressIndicator = null;
         instance = null;
-        supportedMCVersions = null;
         serverFactory = null;
 
         // All done.
@@ -225,12 +243,11 @@ public class WorldwideChat extends JavaPlugin {
             switch (command.getName()) {
                 case "wwc":
                     // WWC version
-                    final TextComponent versionNotice = Component.text()
-                            .content(refs.getPlainMsg("wwcVersion", sender)).color(NamedTextColor.RED)
-                            .append((Component.text().content(" " + getPluginVersion())).color(NamedTextColor.LIGHT_PURPLE))
-                            .append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
-                            .append((Component.text().content("Dominic Feliton")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
-                            .append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
+                    final Component versionNotice = Component.text(refs.getPlainMsg("wwcVersion", sender), NamedTextColor.RED)
+                            .append(Component.text(" " + getPluginVersion(), NamedTextColor.LIGHT_PURPLE))
+                            .append(Component.text(" (Made with love by ", NamedTextColor.GOLD))
+                            .append(Component.text("Dominic Feliton", NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
+                            .append(Component.text(")", NamedTextColor.GOLD));
                     refs.sendMsg(sender, versionNotice, true);
                     refs.playSound(WWC_VERSION, sender);
                     return true;
@@ -333,6 +350,7 @@ public class WorldwideChat extends JavaPlugin {
                 break;
             default:
                 getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
+                type = "Bukkit";
                 break;
         }
 
@@ -340,26 +358,23 @@ public class WorldwideChat extends JavaPlugin {
             if (version.contains(eaVer)) {
                 outputVersion = eaVer;
                 getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
+                break;
             }
         }
 
-        // Not running a supported server version, default to latest
+        // Not running a supported server version; keep loading with the 1.20 path.
         if (outputVersion.isEmpty()) {
-            outputVersion = supportedMCVersions[0];
-            getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
+            outputVersion = supportedMCVersions[supportedMCVersions.length - 1];
+            getLogger().warning("##### Unsupported MC version: " + version + ". Falling forward to " + outputVersion + " compatibility... #####");
         }
 
-        // If running Folia 1.19/1.18 (?)
         currMCVersion = new ComparableVersion(outputVersion);
-        if (type.equals("Folia") && (currMCVersion.toString().contains("1.19") || (currMCVersion.toString().contains("1.18")))) {
-            getLogger().warning("##### Unsupported MC version: " + version + ". Folia detected, disabling... #####");
-            return false;
-        }
 
         // Load methods
         currPlatform = type;
         refs = serverFactory.getCommonRefs();
         wwcHelper = serverFactory.getWWCHelper();
+        translationProgressIndicator = new TranslationProgressIndicator(this, refs, wwcHelper);
 
         return refs != null && wwcHelper != null;
     }
@@ -373,7 +388,7 @@ public class WorldwideChat extends JavaPlugin {
      */
     public void doStartupTasks(boolean isReloading) {
         // Start thread executor
-        callbackExecutor = Executors.newCachedThreadPool();
+        callbackExecutor = Executors.newVirtualThreadPerTaskExecutor();
 
         // Set config manager
         setConfigManager(new ConfigurationHandler());
@@ -383,6 +398,10 @@ public class WorldwideChat extends JavaPlugin {
         configurationManager.initMessagesConfigs();
 
         configurationManager.loadMainSettings();
+        inputService = serverFactory.getInputService();
+        refs.debugMsg("Input method configured: "
+                + configurationManager.getMainConfig().getString("General.inputMethod", "auto")
+                + "; active backend: " + inputService.getActiveBackendName() + ".");
         configurationManager.loadStorageSettings();
         // we are storing the real translator name in tempTransName.
         // this is to prevent the plugin from being fully accessible to all users just yet.
@@ -390,6 +409,15 @@ public class WorldwideChat extends JavaPlugin {
         configurationManager.initBlacklistConfig();
         configurationManager.initAISettings();
         String tempTransName = configurationManager.loadTranslatorSettings();
+        try {
+            StorageMigrationUtils.migrateCurrentBackend();
+        } catch (Exception e) {
+            getLogger().severe("Unable to migrate the configured WorldwideChat storage backend. Disabling plugin to avoid data loss.");
+            e.printStackTrace();
+            getServer().getPluginManager().disablePlugin(this);
+            translatorName = "Invalid";
+            return;
+        }
 
         /* Run tasks after translator loaded */
         // Load saved user data
@@ -491,7 +519,7 @@ public class WorldwideChat extends JavaPlugin {
         }
         translatorName = "Starting";
         refs.closeAllInvs();
-        translatorErrorCount = 0;
+        translatorErrorCount.set(0);
 
         /* Send start reload message */
         if (inSender != null) {
@@ -534,46 +562,26 @@ public class WorldwideChat extends JavaPlugin {
                             (getConfigManager().getMainConfig().getBoolean("Storage.usePostgreSQL") && !isPostgresConnValid((true))) ||
                             (getConfigManager().getMainConfig().getBoolean("Storage.useMongoDB") && !isMongoConnValid(true))) {
                         if (!translatorName.equals("Invalid")) {
-                            final TextComponent wwcrStorageFail = Component.text()
-                                    .content(refs.getPlainMsg("wwcrStorageFail", inSender))
-                                    .color(NamedTextColor.RED)
-                                    .append(Component.text()
-                                            .content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-                                            .color(NamedTextColor.YELLOW))
-                                    .build();
+                            final Component wwcrStorageFail = Component.text(refs.getPlainMsg("wwcrStorageFail", inSender), NamedTextColor.RED)
+                                    .append(Component.text(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)", NamedTextColor.YELLOW));
                             refs.sendMsg(inSender, wwcrStorageFail);
                             refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                         } else {
-                            final TextComponent wwcrStorageTranslatorFail = Component.text()
-                                    .content(refs.getPlainMsg("wwcrStorageTranslatorFail", inSender))
-                                    .color(NamedTextColor.RED)
-                                    .append(Component.text()
-                                            .content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-                                            .color(NamedTextColor.YELLOW))
-                                    .build();
+                            final Component wwcrStorageTranslatorFail = Component.text(refs.getPlainMsg("wwcrStorageTranslatorFail", inSender), NamedTextColor.RED)
+                                    .append(Component.text(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)", NamedTextColor.YELLOW));
                             refs.sendMsg(inSender, wwcrStorageTranslatorFail);
                             refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                         }
                     } else if (translatorName.equals("Invalid")) {
-                        final TextComponent wwcrTransFail = Component.text()
-                                .content(refs.getPlainMsg("wwcrTransFail", inSender))
-                                .color(NamedTextColor.RED)
-                                .append(Component.text()
-                                        .content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-                                        .color(NamedTextColor.YELLOW))
-                                .build();
+                        final Component wwcrTransFail = Component.text(refs.getPlainMsg("wwcrTransFail", inSender), NamedTextColor.RED)
+                                .append(Component.text(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)", NamedTextColor.YELLOW));
                         refs.sendMsg(inSender, wwcrTransFail);
                         refs.playSound(CommonRefs.SoundType.RELOAD_ERROR, inSender);
                     } else {
-                        final TextComponent wwcrSuccess = Component.text()
-                                .content(refs.getPlainMsg("wwcrSuccess", inSender))
-                                .color(NamedTextColor.GREEN)
-                                .append(Component.text().content(" ( ").color(NamedTextColor.YELLOW))
-                                .append(Component.text()
-                                        .content(""+TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS))
-                                        .color(NamedTextColor.YELLOW).decorate(TextDecoration.BOLD))
-                                .append(Component.text().content(" ms )").color(NamedTextColor.YELLOW))
-                                .build();
+                        final Component wwcrSuccess = Component.text(refs.getPlainMsg("wwcrSuccess", inSender), NamedTextColor.GREEN)
+                                .append(Component.text(" ( ", NamedTextColor.YELLOW))
+                                .append(Component.text("" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS), NamedTextColor.YELLOW).decorate(TextDecoration.BOLD))
+                                .append(Component.text(" ms )", NamedTextColor.YELLOW));
                         refs.sendMsg(inSender, wwcrSuccess);
                         refs.playSound(CommonRefs.SoundType.RELOAD_SUCCESS, inSender);
                     }
@@ -616,8 +624,14 @@ public class WorldwideChat extends JavaPlugin {
         }
         refs.debugMsg("Cancel background tasks!");
 
+        if (translationProgressIndicator != null) {
+            translationProgressIndicator.clearAll();
+        }
+
         // Shut down executors (translations)
-        callbackExecutor.shutdownNow();
+        if (callbackExecutor != null) {
+            callbackExecutor.shutdownNow();
+        }
 
         // Cleanup background tasks
         wwcHelper.cleanupTasks();
@@ -678,10 +692,7 @@ public class WorldwideChat extends JavaPlugin {
      */
     private boolean hasValidTranslatorSettings(CommandSender sender) {
         if (getTranslatorName().equals("Starting")) {
-            final TextComponent notDone = Component.text()
-                    .content("WorldwideChat is still initializing, please try again shortly.")
-                    .color(NamedTextColor.YELLOW)
-                    .build();
+            final Component notDone = Component.text("WorldwideChat is still initializing, please try again shortly.", NamedTextColor.YELLOW);
             refs.sendMsg(sender, notDone);
             return false;
         } else if (getTranslatorName().equals("Invalid")) {
@@ -922,10 +933,7 @@ public class WorldwideChat extends JavaPlugin {
         if (!i.equalsIgnoreCase("WWC")) {
             pluginPrefix = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
         } else {
-            pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
-                    .append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
-                    .append(Component.text().content("]").color(NamedTextColor.DARK_RED))
-                    .build();
+            pluginPrefix = defaultPluginPrefix();
         }
     }
 
@@ -942,7 +950,7 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void setTranslatorErrorCount(int i) {
-        translatorErrorCount = i;
+        translatorErrorCount.set(i);
     }
 
     public void setUpdateCheckerDelay(int i) {
@@ -959,6 +967,15 @@ public class WorldwideChat extends JavaPlugin {
 
     public void setMessageCharLimit(int i) {
         messageCharLimit = i;
+    }
+
+    public void setObjectTranslationConcurrencyLimit(int i) {
+        objectTranslationConcurrencyLimit = i;
+    }
+
+    public void setTranslationCapacityLimit(int i) {
+        translationCapacityLimit = Math.max(TranslationCapacityLimiter.AUTO_CONFIG_VALUE, i);
+        translationCapacityLimiter = TranslationCapacityLimiter.fromConfiguredLimit(translationCapacityLimit);
     }
 
     public void setPersistentCache(boolean i) {
@@ -979,6 +996,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public void setAISystemPrompt(String i) {
         aiSystemPrompt = i;
+    }
+
+    public void setGuidelinesAIPrompt(String i) {
+        guidelinesAIPrompt = i;
     }
 
     public void setEnableSounds(boolean i) {
@@ -1138,7 +1159,7 @@ public class WorldwideChat extends JavaPlugin {
         return supportedOutputLangs;
     }
 
-    public TextComponent getPluginPrefix() {
+    public Component getPluginPrefix() {
         return pluginPrefix;
     }
 
@@ -1147,7 +1168,11 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public int getTranslatorErrorCount() {
-        return translatorErrorCount;
+        return translatorErrorCount.get();
+    }
+
+    public int incrementTranslatorErrorCount() {
+        return translatorErrorCount.incrementAndGet();
     }
 
     public String getTranslatorName() {
@@ -1180,6 +1205,18 @@ public class WorldwideChat extends JavaPlugin {
 
     public int getMessageCharLimit() {
         return messageCharLimit;
+    }
+
+    public int getObjectTranslationConcurrencyLimit() {
+        return objectTranslationConcurrencyLimit;
+    }
+
+    public int getTranslationCapacityLimit() {
+        return translationCapacityLimit;
+    }
+
+    public TranslationCapacityLimiter getTranslationCapacityLimiter() {
+        return translationCapacityLimiter;
     }
 
     public boolean isPersistentCache() {
@@ -1216,6 +1253,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public String getAISystemPrompt() {
         return aiSystemPrompt;
+    }
+
+    public String getGuidelinesAIPrompt() {
+        return guidelinesAIPrompt;
     }
 
     public Object[] getPlayerDataUsingGUI(Player p) {

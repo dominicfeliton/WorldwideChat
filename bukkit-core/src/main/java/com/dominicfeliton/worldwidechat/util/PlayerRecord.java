@@ -54,9 +54,19 @@ public class PlayerRecord {
         attemptedTranslations.set(i);
     }
 
+    public int incrementAttemptedTranslations() {
+        hasBeenSaved.set(false);
+        return attemptedTranslations.incrementAndGet();
+    }
+
     public void setSuccessfulTranslations(int i) {
         hasBeenSaved.set(false);
         successfulTranslations.set(i);
+    }
+
+    public int incrementSuccessfulTranslations() {
+        hasBeenSaved.set(false);
+        return successfulTranslations.incrementAndGet();
     }
 
     public void setLastTranslationTime() {

@@ -816,4 +816,70 @@ Messages:
   wwcConfigGUISendActionBarButton: Enviar barres d'acció
   wwcConfigActionBarInvalid: Configuració de la barra d'accions d'enviament no vàlida
     establerta a config.yml. Per defecte de veritat...
+  wwcConfigGUIInputMethodConversation: Conversa
+  wwcAIGuidelinesBlocked: Aquest missatge va ser bloquejat per les nostres directrius
+    de traducció.
+  wwcConfigGUIGuidelinesAIModelButton: Canviar les directrius del model d'IA
+  wwcConfigGUIOpenAICompatibleURLButton: Canviar l'URL compatible amb OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Pautes del model d'IA establert amb
+    èxit.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: S'estableix amb èxit la clau
+    API compatible amb OpenAI.
+  wwcConfigConversationOpenAICompatibleURLSuccess: L'URL compatible amb OpenAI s'estableix
+    amb èxit.
+  wwcConfigConversationOpenAICompatibleURLInput: L'URL actual és {0}. Si us plau,
+    introduïu una URL per OpenAI compatible, o escriviu 0 per tornar enrere.
+  wwcConfigConversationOpenAICompatibleModelInput: El model actual és {0}. Si us plau,
+    introduïu un model per OpenAI Compatible, o escriviu 0 per tornar enrere.
+  wwcConfigGUIGuidelinesAIPromptButton: Canviar les directrius AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Canviar el missatge compatible amb OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Canvia compatible amb OpenAI
+  wwcConfigConversationInputMethodSuccess: Mètode d'entrada establert a {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: El model compatible amb OpenAI
+    s'ha establert amb èxit.
+  wwcConfigGUIOpenAICompatibleButton: Compatible amb OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Diàleg de paper
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Canviar la clau API compatible amb OpenAI
+  wwcConfigGUIInputMethodButton: Mètode d'entrada
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: El model actual d'IA Directrius és
+    {0}. Si us plau, introduïu un model, escriviu clar per utilitzar el model de proveïdor
+    actiu o escriviu 0 per tornar enrere.
+  wwcConfigGUIOpenAICompatibleModelButton: Canviar el model compatible amb OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Comprovacions d'IA de directrius canviades
+    amb èxit.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: La clau de l'API actual és {0}.
+    Si us plau, introduïu una clau API per OpenAI Compatible, o escriviu 0 per tornar
+    enrere.
+  wwcConfigGUIInputMethodCurrent: 'Actualitat: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Canviat amb èxit OpenAI compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Commuteu les directrius Comprovacions
+    d'IA
+  wwctTranslationErrorActionBar: Error
+  wwcConfigGUIObjectTranslationConcurrencyButton: Canviar la simultaneïtat de traducció
+    d'objectes
+  wwcConfigConversationObjectTranslationConcurrencySuccess: S'estableix amb èxit el
+    límit de simultaneïtat de traducció d'objectes.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: El límit de simultaneïtat
+    de traducció d'objectes ha de ser 1 o superior.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: El límit actual de
+    simultaneïtat de traducció d'objectes és {0}. Escriviu un número 1 o superior.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Límit de simultaneïtat de traducció
+    d'objectes no vàlid establert a config.yml. El valor ha de ser com a mínim 1.
+    Per defecte a 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Un proveïdor d'IA ha d'estar habilitat per
+    utilitzar Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Capacitat de traducció resolta automàticament
+    a traduccions actives {0} i traduccions en cua {1} (processadors JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: El límit de capacitat de traducció
+    establert amb èxit.
+  wwcConfigGUITranslationCapacityButton: Canviar la capacitat de traducció
+  wwcConfigTranslationCapacityInvalid: Límit de capacitat de traducció no vàlid establert
+    a config.yml. Utilitzeu 0 per automàtic o 1 o superior. Per defecte a automàtic...
+  wwcConfigTranslationCapacityManual: Capacitat de traducció establerta a {0} traduccions
+    actives i {1} traduccions en cua.
+  wwcConfigConversationTranslationCapacityInvalid: El límit de capacitat de traducció
+    ha de ser 0 per a automàtica o 1 o superior.
+  wwcConfigConversationTranslationCapacityInput: El límit actual de capacitat de traducció
+    és {0} ({1} actiu, {2} fet cua). Escriviu 0 per automàtic o un número 1 o superior.
 

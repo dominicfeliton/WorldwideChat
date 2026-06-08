@@ -765,4 +765,67 @@ Messages:
   wwcConfigGUISendActionBarButton: Aika Sandunan Aiki
   wwcConfigActionBarInvalid: Saitin aika saiti mai aiki mara kyau wanda aka saita
     a cikin config.yml. Rashin gaskiya zuwa gaskiya...
+  wwcConfigGUIInputMethodConversation: Tattaunawa
+  wwcAIGuidelinesBlocked: An toshe wannan saƙon ta hanyar jagororin fassararmu.
+  wwcConfigGUIGuidelinesAIModelButton: Canja Jagororin Samfurin AI
+  wwcConfigGUIOpenAICompatibleURLButton: Canja URL mai dacewa na OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Jagororin samfurin AI sun saita cikin
+    nasara.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Maɓallin API mai dacewa na OpenAI
+    an saita cikin nasara.
+  wwcConfigConversationOpenAICompatibleURLSuccess: An saita URL mai dacewa ta OpenAI
+    cikin nasara.
+  wwcConfigConversationOpenAICompatibleURLInput: URL ɗin yanzu shine {0}. Da fatan
+    za a shigar da URL don OpenAI Mai jituwa, ko rubuta 0 don komawa.
+  wwcConfigConversationOpenAICompatibleModelInput: Samfurin yanzu shine {0}. Da fatan
+    za a shigar da samfurin don OpenAI Mai jituwa, ko rubuta 0 don komawa.
+  wwcConfigGUIGuidelinesAIPromptButton: Canza Jagororin AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Canja OpenAI mai dacewa da sauri
+  wwcConfigGUIToggleOpenAICompatibleButton: Canza OpenAI mai dacewa
+  wwcConfigConversationInputMethodSuccess: Hanyar shigarwa da aka saita zuwa {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Samfurin mai dacewa na OpenAI
+    an saita cikin nasara.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI mai dacewa
+  wwcConfigGUIInputMethodPaperDialog: Tattaunawa na Takarda
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Canja maɓallin API mai dacewa da OpenAI
+  wwcConfigGUIInputMethodButton: Hanyar shigarwa
+  wwcConfigGUIInputMethodAuto: Da kai
+  wwcConfigConversationGuidelinesAIModelInput: Tsarin Jagororin AI na yanzu shine
+    {0}. Da fatan za a shigar da samfurin, rubuta bayyane don amfani da samfurin mai
+    ba da aiki, ko rubuta 0 don komawa.
+  wwcConfigGUIOpenAICompatibleModelButton: Canja Samfurin Mai Dacewa na OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: An sami nasarar canza Jagororin binciken
+    AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Maɓallin API na yanzu shine {0}.
+    Da fatan za a shigar da maɓallin API don OpenAI Mai jituwa, ko rubuta 0 don komawa.
+  wwcConfigGUIInputMethodCurrent: 'Yanzu: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: An sami nasarar canza OpenAI mai dacewa.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Sauya Jagororin Binciken AI
+  wwctTranslationErrorActionBar: kuskure
+  wwcConfigGUIObjectTranslationConcurrencyButton: Canza Daidaitaccen Fassarar Abu
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Iyakar daidaitaccen fassarar
+    abu an saita cikin nasara.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Iyakar daidaitaccen
+    fassarar abu dole ne ya zama 1 ko mafi girma.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Iyakar daidaitaccen
+    fassarar abu na yanzu shine {0}. Rubuta lamba 1 ko mafi girma.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Iyakar daidaitaccen fassarar
+    abubuwa mara kyau wanda aka saita a cikin config.yml. Dole ne darajar ya zama
+    aƙalla 1. Rarraba zuwa 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Dole ne a kunna mai ba da sabis na AI don
+    amfani da Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Ƙarfin fassarar da aka warware ta atomatik zuwa
+    {0} fassarar aiki da fassarar {1} (masu sarrafa JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: An saita iyakar ƙarfin fassara
+    cikin nasara.
+  wwcConfigGUITranslationCapacityButton: Canja Ƙarfin fassara
+  wwcConfigTranslationCapacityInvalid: Iyakar ƙarfin fassara mara kyau wanda aka saita
+    a cikin config.yml. Yi amfani da 0 don atomatik ko 1 ko mafi girma. Rashin kai
+    zuwa atomatik...
+  wwcConfigTranslationCapacityManual: Ƙarfin fassara an saita zuwa {0} fassarar aiki
+    da fassarar {1} da fassarar da aka tsara.
+  wwcConfigConversationTranslationCapacityInvalid: Iyakar ƙarfin fassara dole ne ya
+    zama 0 don atomatik ko 1 ko mafi girma.
+  wwcConfigConversationTranslationCapacityInput: Iyakar ƙarfin fassara na yanzu shine
+    {0} ({1} aiki, {2} jerin). Rubuta 0 don atomatik ko lamba 1 ko mafi girma.
 

@@ -784,4 +784,68 @@ Messages:
   wwcConfigGUISendActionBarButton: Actiebalken verzenden
   wwcConfigActionBarInvalid: Ongeldige instelling voor de verzendactiebalk die is
     ingesteld in config.yml. Standaard ingesteld op true...
+  wwcConfigGUIInputMethodConversation: Conversatie
+  wwcAIGuidelinesBlocked: Dit bericht is geblokkeerd door onze vertaalrichtlijnen.
+  wwcConfigGUIGuidelinesAIModelButton: AI-model voor wijzigingsrichtlijnen
+  wwcConfigGUIOpenAICompatibleURLButton: Wijzig de OpenAI-compatibele URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Richtlijnen AI-model succesvol ingesteld.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-compatibele API-sleutel
+    succesvol ingesteld.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-compatibele URL is succesvol
+    ingesteld.
+  wwcConfigConversationOpenAICompatibleURLInput: De huidige URL is {0}. Voer een URL
+    in voor OpenAI Compatible, of typ 0 om terug te gaan.
+  wwcConfigConversationOpenAICompatibleModelInput: Het huidige model is {0}. Voer
+    een model in voor OpenAI Compatible, of typ 0 om terug te gaan.
+  wwcConfigGUIGuidelinesAIPromptButton: Richtlijnen wijzigen AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Wijzig de OpenAI-compatibele prompt
+  wwcConfigGUIToggleOpenAICompatibleButton: Schakel OpenAI-compatibel in
+  wwcConfigConversationInputMethodSuccess: Invoermethode ingesteld op {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-compatibele modelset succesvol
+    ingesteld.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI-compatibel
+  wwcConfigGUIInputMethodPaperDialog: Dialoog op papier
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Wijzig de OpenAI-compatibele API-sleutel
+  wwcConfigGUIInputMethodButton: Invoermethode
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Het huidige AI-model van Guidelines
+    is {0}. Voer een model in, typ clear om het actieve providermodel te gebruiken,
+    of typ 0 om terug te gaan.
+  wwcConfigGUIOpenAICompatibleModelButton: Wijzig het OpenAI-compatibele model
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Met succes omgeschakeld tussen richtlijnen
+    en AI-controles.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: De huidige API-sleutel is {0}.
+    Voer een API-sleutel in voor OpenAI Compatible, of typ 0 om terug te gaan.
+  wwcConfigGUIInputMethodCurrent: 'Actueel: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI-compatibel met succes omgeschakeld.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Toggle Guidelines AI Checks
+  wwctTranslationErrorActionBar: Fout
+  wwcConfigGUIObjectTranslationConcurrencyButton: Concurrentie van de vertaling van
+    objecten wijzigen
+  wwcConfigConversationObjectTranslationConcurrencySuccess: De limiet voor de gelijktijdige
+    vertaling van objecten is succesvol ingesteld.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: De gelijktijdigheidslimiet
+    voor de vertaling van objecten moet 1 of hoger zijn.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: De huidige limiet
+    voor de gelijktijdige omrekening van objecten is {0}. Typ een cijfer 1 of hoger.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ongeldige limiet voor de gelijktijdige
+    vertaling van objecten die is ingesteld in config.yml. De waarde moet minstens
+    1 zijn. Standaard ingesteld op 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Een AI-provider moet in staat zijn om vangrails
+    te gebruiken.
+  wwcConfigTranslationCapacityAuto: 'De vertaalcapaciteit wordt automatisch omgezet
+    naar {0} actieve vertalingen en {1} vertalingen in de wachtrij (JVM-processors:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: De limiet voor de vertaalcapaciteit
+    is succesvol ingesteld.
+  wwcConfigGUITranslationCapacityButton: Vertaalcapaciteit wijzigen
+  wwcConfigTranslationCapacityInvalid: Ongeldige limiet voor vertaalcapaciteit ingesteld
+    in config.yml. Gebruik 0 voor automatisch of 1 of hoger. Standaard ingesteld op
+    automatisch...
+  wwcConfigTranslationCapacityManual: De vertaalcapaciteit is ingesteld op {0} actieve
+    vertalingen en {1} vertalingen in de wachtrij.
+  wwcConfigConversationTranslationCapacityInvalid: De limiet voor de vertaalcapaciteit
+    moet 0 zijn voor automatisch of 1 of hoger.
+  wwcConfigConversationTranslationCapacityInput: De huidige limiet voor de vertaalcapaciteit
+    is {0} ({1} actief, {2} in de wachtrij). Typ 0 voor auto of een cijfer 1 of hoger.
 

@@ -800,4 +800,68 @@ Messages:
   wwcConfigGUISendActionBarButton: Seol Barraí Gníomhaíochta
   wwcConfigActionBarInvalid: Socrú barra gníomhaíochta seolta neamhbhailí atá leagtha
     síos i config.yml. Ag réamhshocrú go fíor...
+  wwcConfigGUIInputMethodConversation: Comhrá
+  wwcAIGuidelinesBlocked: Chuir ár dtreoirlínte aistriúcháin bac ar an teachtaire
+  wwcConfigGUIGuidelinesAIModelButton: Athraigh Treoirlínte Samhail
+  wwcConfigGUIOpenAICompatibleURLButton: Athraigh URL Comhoiriúnach OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Treoirlínte a leagtar samhail AI
+    go rathúil
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Leagtar eochair API Comhoiriúnach
+    OpenAI go rathúil.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Socraítear URL Comhoiriúnach OpenAI
+    go rathúil.
+  wwcConfigConversationOpenAICompatibleURLInput: Is é an URL reatha {0}. Cuir isteach
+    URL le haghaidh OpenAI Compatible, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationOpenAICompatibleModelInput: Is é an tsamhail reatha {0}. Cuir
+    isteach samhail le haghaidh OpenAI Compatible, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIGuidelinesAIPromptButton: Athraigh Treoirlínte AI Pr
+  wwcConfigGUIOpenAICompatiblePromptButton: Athraigh Pras Comhoiriúnach OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Toggle OpenAI Comhoiriúnach
+  wwcConfigConversationInputMethodSuccess: Modh ionchuir socraithe go {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Socraítear samhail Comhoiriúnach
+    OpenAI go rathúil.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Comhoiriúnach
+  wwcConfigGUIInputMethodPaperDialog: Dialóg Páipéar
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Athraigh Eochair API Comhoiriúnach OpenAI
+  wwcConfigGUIInputMethodButton: Modh Ionchuir
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Is é {0} an tsamhail AI faoi láthair
+    na Treoirlínte. Cuir isteach samhail le do thoil, clóscríobh soiléir chun an tsamhail
+    soláthraí gníomhach a úsáid, nó cineál 0 chun dul ar ais.
+  wwcConfigGUIOpenAICompatibleModelButton: Athraigh Múnla Comhoiriúnach OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Seiceálacha AI Treoirlínte a thaispeáil
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Is é an eochair API reatha {0}.
+    Cuir isteach eochair API le do thoil le haghaidh OpenAI Comhoiriúnach, nó clóscríobh
+    0 chun dul ar ais.
+  wwcConfigGUIInputMethodCurrent: 'Reatha: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Comhoiriúnach OpenAI a aistriú go rathúil.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Athraigh Treoirlínte Seiceálacha
+  wwctTranslationErrorActionBar: Earráid
+  wwcConfigGUIObjectTranslationConcurrencyButton: Athraigh Comhaonraíocht Aistriúchán
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Socraítear teorainn chomhchomhthaíochta
+    aistriúcháin réada
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Caithfidh teorainn
+    chomhréireachta aistriúcháin réada a bheith 1 nó níos mó.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Is é {0} an teorainn
+    chomhréireachta aistriúcháin réada reatha. Clóscríobh uimhir 1 nó níos mó.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Teorainn chomhréireachta aistriúcháin
+    réada neamhbhailí atá leagtha amach i config.yml. Caithfidh an luach a bheith
+    1 ar a laghad. Ag réamhshocrú go 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Caithfear soláthraí AI a chumasú chun Guardrails
+    a úsáid.
+  wwcConfigTranslationCapacityAuto: Cumas aistriúcháin réitithe go huathoibríoch chuig
+    {0} aistriúcháin ghníomhacha agus {1} aistriúcháin scuaine (próiseálaithe J {2}
+  wwcConfigConversationTranslationCapacitySuccess: Socraítear teorainn cumais aistriúcháin
+    go rathúil
+  wwcConfigGUITranslationCapacityButton: Athraigh Cumas Aistriú
+  wwcConfigTranslationCapacityInvalid: Teorainn acmhainne aistriúcháin neamhbhailí
+    socraithe i config.yml. Úsáid 0 le haghaidh uathoibríoch nó 1 nó níos mó. Réamhshocrú
+    go huathoibríoch...
+  wwcConfigTranslationCapacityManual: Tá cumas aistriúcháin socraithe ar {0} aistriúcháin
+    ghníomhacha agus {1} aistriúcháin
+  wwcConfigConversationTranslationCapacityInvalid: Caithfidh teorainn acmhainne aistriúcháin
+    a bheith 0 do uathoibríoch nó 1 nó níos mó
+  wwcConfigConversationTranslationCapacityInput: Is é {0} an teorainn acmhainne aistriúcháin
+    reatha ({1} gníomhach, {2} cuainte). Cineál 0 le haghaidh uathoibríoch nó uimhir
+    1 nó níos mó.
 

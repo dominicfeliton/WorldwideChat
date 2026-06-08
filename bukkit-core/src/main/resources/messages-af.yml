@@ -765,4 +765,65 @@ Messages:
   wwcConfigGUISendActionBarButton: Stuur aksiebalke
   wwcConfigActionBarInvalid: Ongeldige stuuraksiebalinstelling gestel in config.yml.
     Standaard tot waar...
+  wwcConfigGUIInputMethodConversation: Gesprek
+  wwcAIGuidelinesBlocked: Hierdie boodskap is geblokkeer deur ons vertaalriglyne.
+  wwcConfigGUIGuidelinesAIModelButton: Verander riglyne AI-model
+  wwcConfigGUIOpenAICompatibleURLButton: Verander OpenAI -versoenbare URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Riglyne AI-model suksesvol gestel.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI Versoenbare API-sleutelstel
+    suksesvol.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI Versoenbare URL suksesvol
+    gestel.
+  wwcConfigConversationOpenAICompatibleURLInput: Die huidige URL is {0}. Voer asseblief
+    'n URL in vir OpenAI Versoenbaar, of tik 0 om terug te gaan.
+  wwcConfigConversationOpenAICompatibleModelInput: Die huidige model is {0}. Voer
+    asseblief 'n model in vir OpenAI Versoenbaar, of tik 0 om terug te gaan.
+  wwcConfigGUIGuidelinesAIPromptButton: Verander riglyne AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Verander OpenAI -versoenbare aanspraak
+  wwcConfigGUIToggleOpenAICompatibleButton: Skakel OpenAI versoenbaar
+  wwcConfigConversationInputMethodSuccess: Invoermetode ingestel op {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Versoenbare modelgestel
+    suksesvol.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Versoenbaar
+  wwcConfigGUIInputMethodPaperDialog: Papierdialoog
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Verander OpenAI versoenbare API-sleutel
+  wwcConfigGUIInputMethodButton: Invoermetode
+  wwcConfigGUIInputMethodAuto: Outo
+  wwcConfigConversationGuidelinesAIModelInput: Die huidige Riglyne AI-model is {0}.
+    Voer asseblief 'n model in, tik duidelik om die aktiewe verskaffermodel te gebruik,
+    of tik 0 om terug te gaan.
+  wwcConfigGUIOpenAICompatibleModelButton: Verander OpenAI -versoenbare model
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Suksesvol ingeskakel van Riglyne AI-kontroles.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Die huidige API-sleutel is {0}.
+    Voer asseblief 'n API-sleutel in vir OpenAI Versoenbaar, of tik 0 om terug te
+    gaan.
+  wwcConfigGUIInputMethodCurrent: 'Huidige: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI versoenbaar suksesvol ingeskakel.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Skakel riglyne AI-kontroles
+  wwctTranslationErrorActionBar: Fout
+  wwcConfigGUIObjectTranslationConcurrencyButton: Verander gelyktydige vertaling van
+    voorwerp
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Objekvertaling gelyktydige
+    limiet suksesvol gestel.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Die gelyktydige
+    limiet vir voorwerpvertaling moet 1 of groter wees.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Die huidige gelyktydige
+    limiet vir voorwerpvertaling is {0}. Tik 'n nommer 1 of groter.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ongeldige voorwerpvertalingslimiet
+    gestel in config.yml. Die waarde moet minstens 1 wees. Standaard op 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: '''N AI-verskaffer moet in staat wees om
+    Guardrails te gebruik.'
+  wwcConfigTranslationCapacityAuto: 'Vertaalkapasiteit outomaties opgelos na {0} aktiewe
+    vertalings en {1} stoeuvertalings (JVM-verwerkers: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Vertaalkapasiteitslimiet suksesvol
+    gestel.
+  wwcConfigGUITranslationCapacityButton: Verander vertaalkapasiteit
+  wwcConfigTranslationCapacityInvalid: Ongeldige vertaalkapasiteitslimiet gestel in
+    config.yml. Gebruik 0 vir outomaties of 1 of groter. Standaard tot outomaties...
+  wwcConfigTranslationCapacityManual: Vertaalkapasiteit ingestel op {0} aktiewe vertalings
+    en {1} stoeuvertalings.
+  wwcConfigConversationTranslationCapacityInvalid: Vertaalkapasiteitslimiet moet 0
+    wees vir outomaties of 1 of groter.
+  wwcConfigConversationTranslationCapacityInput: Die huidige vertaalkapasiteitslimiet
+    is {0} ({1} aktief, {2} ry). Tik 0 vir outomaties of 'n nommer 1 of groter.
 

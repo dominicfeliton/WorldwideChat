@@ -23,7 +23,7 @@ public class MongoDBUtils {
     private String password;
     private List<String> argList;
 
-    private MongoClient client;
+    private volatile MongoClient client;
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
@@ -37,11 +37,14 @@ public class MongoDBUtils {
         this.argList = argList;
     }
 
-    public void connect() throws MongoException {
+    public synchronized void connect() throws MongoException {
         /* Check */
-        if (client != null) {
+        if (client != null && isConnected()) {
             refs.debugMsg("Already connected???");
             return;
+        }
+        if (client != null) {
+            disconnect();
         }
 
         /* Setup valid mongoDB URL */
@@ -64,27 +67,58 @@ public class MongoDBUtils {
         MongoClient testClient = MongoClients.create(settings);
 
         /* Attempt connection, test with ping command */
-        MongoDatabase database = testClient.getDatabase(databaseName);
-        Bson command = new BsonDocument("ping", new BsonInt64(1));
-        database.runCommand(command);
+        try {
+            ping(testClient);
+        } catch (RuntimeException e) {
+            testClient.close();
+            throw e;
+        }
 
         /* Set client */
         client = testClient;
     }
 
-    public void disconnect() {
-        if (isConnected()) {
-            client.close();
+    public synchronized void disconnect() {
+        MongoClient activeClient = client;
+        if (activeClient != null) {
             client = null;
+            activeClient.close();
         }
     }
 
     public boolean isConnected() {
-        return client != null;
+        MongoClient activeClient = client;
+        if (activeClient == null) {
+            return false;
+        }
+        try {
+            ping(activeClient);
+            return true;
+        } catch (MongoException | IllegalStateException e) {
+            return false;
+        }
     }
 
     public MongoDatabase getActiveDatabase() {
-        return client.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
+        MongoClient activeClient = client;
+        if (activeClient == null) {
+            throw new IllegalStateException("MongoDB client is not connected.");
+        }
+        return activeClient.getDatabase(databaseName);
+    }
+
+    public MongoClient getClient() {
+        return client;
+    }
+
+    public String getDatabaseName() {
+        return databaseName;
+    }
+
+    private void ping(MongoClient activeClient) {
+        MongoDatabase database = activeClient.getDatabase(databaseName);
+        Bson command = new BsonDocument("ping", new BsonInt64(1));
+        database.runCommand(command);
     }
 
 }

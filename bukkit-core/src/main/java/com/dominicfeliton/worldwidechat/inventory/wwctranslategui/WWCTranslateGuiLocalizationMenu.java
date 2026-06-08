@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory.wwctranslategui;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.commands.WWCLocalize;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
@@ -56,9 +56,9 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
             Player targetPlayer = Bukkit.getPlayer(UUID.fromString(targetPlayerUUID));
 
             /* Default white stained glass borders for inactive, yellow if player has existing translation session */
-            invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.WHITE_STAINED_GLASS_PANE);
             if (main.isPlayerRecord(targetPlayerUUID) && !main.getPlayerRecord(targetPlayerUUID, true).getLocalizationCode().isEmpty()) {
-                invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+                invManager.setBorders(contents, Material.YELLOW_STAINED_GLASS_PANE);
             }
 
             /* Init current active translator */
@@ -74,7 +74,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
             int i = 0;
             for (SupportedLang eaLang : filteredLocalLangs) {
                 String currLang = eaLang.getLangCode();
-                ItemStack itemForLang = XMaterial.BOOK.parseItem();
+                ItemStack itemForLang = new ItemStack(Material.BOOK);
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 
                 /* Add Glow Effects */
@@ -125,7 +125,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
             /* Bottom Middle Option: Stop */
             if (!currRecord.getLocalizationCode().isEmpty()) {
-                ItemStack stopButton = XMaterial.BARRIER.parseItem();
+                ItemStack stopButton = new ItemStack(Material.BARRIER);
                 ItemMeta stopMeta = stopButton.getItemMeta();
                 stopMeta.setDisplayName(refs.getPlainMsg("wwctGUILocalizeStopButton",
                         "",

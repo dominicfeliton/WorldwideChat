@@ -755,4 +755,67 @@ Messages:
   wwcConfigGUISendActionBarButton: Fəaliyyət barlarını göndərin
   wwcConfigActionBarInvalid: Config.yml-də təyin olunmuş yanlış göndərmə hərəkət çubuğu
     parametri. Doğruza defolt...
+  wwcConfigGUIInputMethodConversation: Söhbət
+  wwcAIGuidelinesBlocked: Bu mesaj tərcümə qaydalarımız ilə bloklandı.
+  wwcConfigGUIGuidelinesAIModelButton: AI modelini dəyişdirin təlimatları
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI uyğun URL-ni dəyişdirin
+  wwcConfigConversationGuidelinesAIModelSuccess: Təlimatlar AI modeli uğurla quruldu.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI Uyğun API açarı uğurla
+    dəsti.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI Uyğun URL uğurla quruldu.
+  wwcConfigConversationOpenAICompatibleURLInput: Cari URL {0} -dir. Zəhmət olmasa
+    OpenAI Compatible üçün bir URL daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationOpenAICompatibleModelInput: Mövcud model {0} -dir. Zəhmət olmasa
+    OpenAI Compatible üçün bir model daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIGuidelinesAIPromptButton: AI təlimatlarını dəyişdirin
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI uyğun tərzini dəyişdirin
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI uyğun olaraq dəyişdirin
+  wwcConfigConversationInputMethodSuccess: Giriş metodu {0} olaraq təyin edilmişdir.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Uyğun model uğurla dəsti.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Uyğun
+  wwcConfigGUIInputMethodPaperDialog: Kağız Dialoqu
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI uyğun API açarını dəyişdirin
+  wwcConfigGUIInputMethodButton: Giriş metodu
+  wwcConfigGUIInputMethodAuto: Avtomatik
+  wwcConfigConversationGuidelinesAIModelInput: Mövcud Təlimatlar AI modeli {0} -dir.
+    Zəhmət olmasa bir model daxil edin, aktiv provayder modelindən istifadə etmək
+    üçün clear yazın və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI Uyğun Modelini dəyişdirin
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Təlimatları AI yoxlamalarını uğurla
+    dəyişdirdi.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Cari API açarı {0} -dir. Zəhmət
+    olmasa OpenAI Compatible üçün API açarını daxil edin və ya geri qayıtmaq üçün
+    0 yazın.
+  wwcConfigGUIInputMethodCurrent: 'Cari: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI Uyğunluğunu uğurla dəyişdirdi.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI yoxlamalarını dəyişdirin
+  wwctTranslationErrorActionBar: Səhv
+  wwcConfigGUIObjectTranslationConcurrencyButton: Obyekt tərcüməsinin uyğunluğunu
+    dəyişin
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Obyekt tərcüməsi eyni
+    vaxtda limiti uğurla təyin edildi.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Obyekt tərcüməsi
+    paralel həddi 1 və ya daha çox olmalıdır.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Mövcud obyekt tərcümə
+    uyğunluğu həddi {0} -dir. 1 və ya daha böyük bir nömrəni yazın.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Config.yml-də təyin edilmiş
+    etibarsız obyekt tərcüməsi uyğunluğu həddi. Dəyər ən azı 1 olmalıdır. Default
+    olaraq 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Bir AI provayderi Guardrails-dən istifadə
+    etmək üçün aktiv olmalıdır.
+  wwcConfigTranslationCapacityAuto: 'Tərcümə qabiliyyəti {0} aktiv tərcümələrə və
+    {1} növbəli tərcümələrə avtomatik olaraq həll olunur (JVM prosessorları: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Tərcümə tutumu həddi uğurla təyin
+    edildi
+  wwcConfigGUITranslationCapacityButton: Tərcümə qabiliyyətini dəyişin
+  wwcConfigTranslationCapacityInvalid: Config.yml-də təyin edilmiş etibarsız tərcümə
+    tutumu həddi. Avtomatik və ya 1 və ya daha böyük üçün 0 istifadə edin. Avtomatik
+    olaraq standart olaraq...
+  wwcConfigTranslationCapacityManual: Tərcümə qabiliyyəti {0} aktiv tərcümələrə və
+    {1} növbəli tərcümələrə təyin edilmişdir.
+  wwcConfigConversationTranslationCapacityInvalid: Tərcümə tutumu həddi avtomatik
+    və ya 1 və ya daha çox üçün 0 olmalıdır.
+  wwcConfigConversationTranslationCapacityInput: Cari tərcümə qabiliyyəti həddi {0}
+    ({1} aktiv, {2} növbədə) təşkil edir. Avtomatik və ya 1 və ya daha böyük nömrə
+    üçün 0 yazın.
 

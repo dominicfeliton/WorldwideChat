@@ -1,6 +1,7 @@
 package com.dominicfeliton.worldwidechat.util;
 
 import org.threeten.bp.Instant;
+import org.threeten.bp.temporal.ChronoUnit;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -93,9 +94,40 @@ public class ActiveTranslator {
         hasBeenSaved.set(i);
     }
 
-    public void setRateLimitPreviousTime(Instant i) {
+    public synchronized void setRateLimitPreviousTime(Instant i) {
         hasBeenSaved.set(false);
         rateLimitPreviousTime.set(i.toString());
+    }
+
+    public synchronized RateLimitDecision tryAcquireRateLimitSlot(int delaySeconds, Instant now) {
+        if (delaySeconds <= 0) {
+            return new RateLimitDecision(true, 0);
+        }
+
+        String nowString = now.toString();
+        String previous = rateLimitPreviousTime.get();
+        if (previous == null || previous.isBlank() || previous.equalsIgnoreCase("None")) {
+            rateLimitPreviousTime.set(nowString);
+            hasBeenSaved.set(false);
+            return new RateLimitDecision(true, 0);
+        }
+
+        Instant previousTime;
+        try {
+            previousTime = Instant.parse(previous);
+        } catch (RuntimeException ex) {
+            rateLimitPreviousTime.set(nowString);
+            hasBeenSaved.set(false);
+            return new RateLimitDecision(true, 0);
+        }
+        Instant nextAllowedTime = previousTime.plus(delaySeconds, ChronoUnit.SECONDS);
+        if (now.compareTo(nextAllowedTime) < 0) {
+            return new RateLimitDecision(false, ChronoUnit.SECONDS.between(now, nextAllowedTime));
+        }
+
+        rateLimitPreviousTime.set(nowString);
+        hasBeenSaved.set(false);
+        return new RateLimitDecision(true, 0);
     }
 
     public int getRateLimit() {
@@ -152,5 +184,8 @@ public class ActiveTranslator {
 
     public String getRateLimitPreviousTime() {
         return rateLimitPreviousTime.get();
+    }
+
+    public record RateLimitDecision(boolean allowed, long secondsRemaining) {
     }
 }

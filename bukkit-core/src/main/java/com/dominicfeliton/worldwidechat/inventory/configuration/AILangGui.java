@@ -1,8 +1,8 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.AISettingsConvos;
+import com.dominicfeliton.worldwidechat.input.configuration.AISettingsConvos;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
@@ -52,7 +52,7 @@ public class AILangGui implements InventoryProvider {
 
             // Fix this on override messages as well.
             /* Green stained glass borders */
-            invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
+            invManager.setBorders(contents, Material.GREEN_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
@@ -62,7 +62,7 @@ public class AILangGui implements InventoryProvider {
                 refs.debugMsg("Adding existing AI langs to inventory! Amount of langs: " + currentLangs.length);
                 int currSpot = 0;
                 for (SupportedLang lang : langs) {
-                    ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
+                    ItemStack currentEntry = new ItemStack(Material.WRITABLE_BOOK);
                     ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 
                     currentEntryMeta.setDisplayName(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + lang.getLangCode());
@@ -99,7 +99,7 @@ public class AILangGui implements InventoryProvider {
             }
 
             /* Bottom Middle Option: Add new AI lang */
-            invManager.genericConversationButton(5, 4, player, contents, new AISettingsConvos.AddLang(getAILangs()), XMaterial.WRITABLE_BOOK, "wwcConfigGUIAILangNewButton");
+            invManager.genericInputButton(5, 4, player, contents, new AISettingsConvos.AddLang(getAILangs()), Material.WRITABLE_BOOK, "wwcConfigGUIAILangNewButton");
 
             /* Bottom Right Option: Next Page */
             if (!pagination.isLast()) {

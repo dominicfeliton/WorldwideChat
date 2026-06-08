@@ -1,5 +1,6 @@
 package com.dominicfeliton.worldwidechat;
 
+import com.dominicfeliton.worldwidechat.input.InputService;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
@@ -68,14 +69,6 @@ public class ServerAdapterFactory {
                 break;
         }
 
-        /* Additional checks */
-        if (serverPlatform.equals("Paper") && (serverVersion.contains("1.13") || serverVersion.contains("1.14") || serverVersion.contains("1.15"))) {
-            // These versions are so old that they lack much of what we take for granted in later versions of Paper.
-            // Paper on these versions is unsupported. Use the spigot version of the plugin instead.
-            // sendmsg(?) paper too old, default to spig
-            serverPlatform = "Spigot";
-        }
-
         if (serverPlatform.equals("Paper")) {
             try {
                 Class.forName("com.dominicfeliton.worldwidechat.PaperWorldwideChatHelper");
@@ -91,8 +84,8 @@ public class ServerAdapterFactory {
 
     public CommonRefs getCommonRefs() {
         HashMap<String, String> commonRefsDefs = new HashMap<String, String>();
-        commonRefsDefs.put("Spigot", "com.dominicfeliton.worldwidechat.util.CommonRefs");
-        commonRefsDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.util.CommonRefs");
+        commonRefsDefs.put("Spigot", "com.dominicfeliton.worldwidechat.util.SpigotCommonRefs");
+        commonRefsDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.util.SpigotCommonRefs");
         commonRefsDefs.put("Paper", "com.dominicfeliton.worldwidechat.util.PaperCommonRefs");
         commonRefsDefs.put("Folia", "com.dominicfeliton.worldwidechat.util.FoliaCommonRefs");
 
@@ -107,6 +100,16 @@ public class ServerAdapterFactory {
         wwcHelperDefs.put("Folia", "com.dominicfeliton.worldwidechat.FoliaWorldwideChatHelper");
 
         return (WorldwideChatHelper) getInstance(wwcHelperDefs);
+    }
+
+    public InputService getInputService() {
+        HashMap<String, String> inputServiceDefs = new HashMap<String, String>();
+        inputServiceDefs.put("Spigot", "com.dominicfeliton.worldwidechat.input.SpigotConversationInputService");
+        inputServiceDefs.put("Bukkit", "com.dominicfeliton.worldwidechat.input.SpigotConversationInputService");
+        inputServiceDefs.put("Paper", "com.dominicfeliton.worldwidechat.input.PaperInputService");
+        inputServiceDefs.put("Folia", "com.dominicfeliton.worldwidechat.input.FoliaInputService");
+
+        return (InputService) getInstance(inputServiceDefs);
     }
 
     private Object getInstance(HashMap<String, String> platformAndClass) {

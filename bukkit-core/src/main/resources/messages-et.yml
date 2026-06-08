@@ -736,4 +736,66 @@ Messages:
   wwcConfigGUISendActionBarButton: Saada tegevusribad
   wwcConfigActionBarInvalid: Config.yml-is on seatud vale saatmistoiminguriba säte.
     Vaikimisi tõeseks...
+  wwcConfigGUIInputMethodConversation: Vestlus
+  wwcAIGuidelinesBlocked: Selle sõnumi blokeerisid meie tõlkejuhised.
+  wwcConfigGUIGuidelinesAIModelButton: Muutke suuniseid AI mudelit
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI-ga ühilduva URL-i muutmine
+  wwcConfigConversationGuidelinesAIModelSuccess: Juhised AI mudel on edukalt seatud.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-ga ühilduv API-võti seati
+    edukalt.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-ga ühilduv URL seadistatud
+    edukalt.
+  wwcConfigConversationOpenAICompatibleURLInput: Praegune URL on {0}. Sisestage OpenAI
+    ühilduva URL või tippige tagasi minemiseks 0.
+  wwcConfigConversationOpenAICompatibleModelInput: Praegune mudel on {0}. Sisestage
+    OpenAI ühilduvuse mudel või tippige tagasi minemiseks 0.
+  wwcConfigGUIGuidelinesAIPromptButton: Muutke juhiseid AI viit
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI-ga ühilduva viisi muutmine
+  wwcConfigGUIToggleOpenAICompatibleButton: Lülitage OpenAI ühilduv
+  wwcConfigConversationInputMethodSuccess: Sisestusmeetod on seatud väärtuseks {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI ühilduv mudel on edukalt
+    seatud.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI ühilduv
+  wwcConfigGUIInputMethodPaperDialog: Paberidialoog
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI-ga ühilduva API-võti muutmine
+  wwcConfigGUIInputMethodButton: Sisendmeetod
+  wwcConfigGUIInputMethodAuto: Automaatne
+  wwcConfigConversationGuidelinesAIModelInput: Praegune suuniste tehisintellekti mudel
+    on {0}. Sisestage mudel, sisestage aktiivse teenusepakkuja mudeli kasutamiseks
+    sisestage selge või tippige tagasi minemiseks 0.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI-ga ühilduva mudeli muutmine
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Juhised tehisintellekti kontrollid
+    edukalt ümber lülitatud.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Praegune API võti on {0}. Palun
+    sisestage OpenAI ühilduvuse API-võti või tippige tagasi minemiseks 0.
+  wwcConfigGUIInputMethodCurrent: 'Praegune: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Edukalt lülitatud OpenAI ühilduv.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Lülitage juhised tehisintellekti kontrollid
+  wwctTranslationErrorActionBar: Viga
+  wwcConfigGUIObjectTranslationConcurrencyButton: Objektide tõlke samaaegsuse muutmine
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Objektide tõlke samaaegse
+    piirmäär seati edukalt.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Objekti tõlke samaaegse
+    piirmäär peab olema 1 või suurem.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Praegune objekti
+    tõlke samaaegse piirmäär on {0}. Sisestage number 1 või suurem.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Vale objektide tõlke samaaegse
+    piirmäär on määratud jaotises config.yml. Väärtus peab olema vähemalt 1. Vaikimisi
+    on 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Tehisintellekti pakkujal peab olema lubatud
+    kasutada kaitsehoidjaid.
+  wwcConfigTranslationCapacityAuto: 'Tõlkimisvõimsus lahendatakse automaatselt {0}
+    aktiivsete tõlkete ja {1} järjekorras olevate tõlketega (JVM-protsessorid: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Tõlkimisvõimsuse piirmäär on edukalt
+    määratud.
+  wwcConfigGUITranslationCapacityButton: Muuda tõlkekuutlikkust
+  wwcConfigTranslationCapacityInvalid: Config.yml-s on seatud vale tõlkimise võimsuse
+    piirang. Kasutage 0 automaatse või 1 või suurema versiooni puhul. Automaatne vaikimine...
+  wwcConfigTranslationCapacityManual: Tõlkimisvõime on seatud {0} aktiivsetele tõlgetele
+    ja {1} järjekorras olevatele tõlgetele.
+  wwcConfigConversationTranslationCapacityInvalid: Tõlkimisvõimsuse piirang peab olema
+    0 automaatse või 1 või suurema või suurema puhul.
+  wwcConfigConversationTranslationCapacityInput: Praegune tõlkimisvõimsuse piirang
+    on {0} ({1} aktiivne, {2} järjekorras). Tippige 0 automaatseks või numbriks 1
+    või suurem.
 

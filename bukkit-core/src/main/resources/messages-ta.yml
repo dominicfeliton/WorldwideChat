@@ -791,4 +791,65 @@ Messages:
   wwcConfigGUISendActionBarButton: செயல் பார்களை அனுப்பவும்
   wwcConfigActionBarInvalid: config.yml இல் அமைக்கப்பட்ட செயல் பட்டி அமைப்பு தவறான
     அனுப்புதல். உண்மையாக இயல்பாதது...
+  wwcConfigGUIInputMethodConversation: உரையாடல்
+  wwcAIGuidelinesBlocked: இந்த செய்தி எங்கள் மொழிபெயர்ப்பு வழிகாட்டுதல்களால் தடுக்கப்பட்டது.
+  wwcConfigGUIGuidelinesAIModelButton: AI மாதிரியை மாற்று வழிகாட்டு
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI இணக்கமான URL ஐ மாற்றவும்
+  wwcConfigConversationGuidelinesAIModelSuccess: வழிகாட்டுதல்கள் AI மாதிரி வெற்றிகரமாக
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI இணக்கமான API விசை வெற்றிகரமாக
+    அமைக்கப்பட்டது.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI இணக்கமான URL வெற்றிகரமாக
+    அமைக்கப்பட்டது.
+  wwcConfigConversationOpenAICompatibleURLInput: தற்போதைய URL {0} ஆகும். OpenAI இணக்கத்திற்கான
+    URL ஐ உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationOpenAICompatibleModelInput: தற்போதைய மாதிரி {0} ஆகும். OpenAI
+    இணக்கத்திற்கான மாதிரியை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIGuidelinesAIPromptButton: AI வழிகாட்டுதல்களை மாற்றவும்
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI இணக்கமான ப்ராம்ப்ட்டை மாற்றவும்
+  wwcConfigGUIToggleOpenAICompatibleButton: இணக்கமான OpenAI ஐ மாற்றவும்
+  wwcConfigConversationInputMethodSuccess: உள்ளீட்டு முறை {0} ஆக அமைக்கப்பட்டுள்ளது.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI இணக்கமான மாதிரி வெற்றிகரமாக
+    அமைக்கப்பட்டது.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI இணக்கமானது
+  wwcConfigGUIInputMethodPaperDialog: பேப்பர் டயலாக்
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI இணக்கமான API விசையை மாற்றவும்
+  wwcConfigGUIInputMethodButton: உள்ளீட்டு முறை
+  wwcConfigGUIInputMethodAuto: தானியங்கி
+  wwcConfigConversationGuidelinesAIModelInput: தற்போதைய வழிகாட்டுதல்கள் AI மாதிரி
+    {0} ஆகும். தயவுசெய்து ஒரு மாதிரியை உள்ளிடவும், செயலில் உள்ள வழங்குநர் மாதிரியைப்
+    பயன்படுத்த தெளிவாகத் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI இணக்கமான மாதிரியை மாற்றவும்
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: AI சோதனைகளை வெற்றிகரமாக மாற்றியமைத்தது.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: தற்போதைய API விசை {0} ஆகும். OpenAI
+    இணக்கத்திற்கான API விசையை உள்ளிடவும் அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIInputMethodCurrent: 'தற்போதைய: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: வெற்றிகரமாக OpenAI இணக்கமாக மாற்றப்பட்டது.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI சோதனைகள் வழிகாட்டுதல்களை மாற்றவும்
+  wwctTranslationErrorActionBar: பிழை
+  wwcConfigGUIObjectTranslationConcurrencyButton: பொருள் மொழிபெயர்ப்பு இணக்கத்தை மாற்றவும்
+  wwcConfigConversationObjectTranslationConcurrencySuccess: பொருள் மொழிபெயர்ப்பு ஒத்த
+    வரம்பு வெற்றிகரமாக அம
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: பொருள் மொழிபெயர்ப்பு
+    ஒத்த வரம்பு 1 அல்லது அதற்கு மேற்பட்டதாக இருக்க வேண்டும்
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: தற்போதைய பொருள் மொழிபெயர்ப்பு
+    ஒத்த வரம்பு {0} ஆகும். 1 அல்லது அதற்கு மேற்பட்ட எண்ணைத் தட்டச்சு செய்க.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: தவறான பொருள் மொழிபெயர்ப்பு
+    ஒத்த வரம்பு config.yml இல் அமைக்கப்பட்டுள்ளது. மதிப்பு குறைந்தது 1 ஆக இருக்க வேண்டும்.
+    4 ஆக இயல்பாதது...
+  wwcConfigGUIGuidelinesAIDisabledReason: கார்ட்ரைல்ஸைப் பயன்படுத்த AI வழங்குநர் இயக்கப்பட
+    வேண்டும்.
+  wwcConfigTranslationCapacityAuto: 'மொழிபெயர்ப்பு திறன் {0} செயலில் உள்ள மொழிபெயர்ப்புகள்
+    மற்றும் {1} வரிசையில் உள்ள மொழிபெயர்ப்புகள் (JVM செயலிகள்: {2}) ஆகியவற்றிற்கு'
+  wwcConfigConversationTranslationCapacitySuccess: மொழிபெயர்ப்பு திறன் வரம்பு வெற்றிகர
+  wwcConfigGUITranslationCapacityButton: மொழிபெயர்ப்பு திறனை மாற்ற
+  wwcConfigTranslationCapacityInvalid: தவறான மொழிபெயர்ப்பு திறன் வரம்பு config.yml
+    இல் அமைக்கப்பட்டுள்ளது. ஆட்டோ அல்லது 1 அல்லது அதற்கு மேற்பட்டவற்றுக்கு 0 ஐப் பயன்படுத்தவும்.
+    தானியங்கி இயல்புநிலை...
+  wwcConfigTranslationCapacityManual: மொழிபெயர்ப்பு திறன் {0} செயலில் உள்ள மொழிபெயர்ப்புகள்
+    மற்றும் {1} வரிசை மொழிபெயர்ப்ப
+  wwcConfigConversationTranslationCapacityInvalid: மொழிபெயர்ப்பு திறன் வரம்பு தானியங்கி
+    அல்லது 1 அல்லது அதற்கு மேற்பட்டதாக இருக்க வேண்டும்
+  wwcConfigConversationTranslationCapacityInput: தற்போதைய மொழிபெயர்ப்பு திறன் வரம்பு
+    {0} ({1} செயலில் உள்ளது, {2} வரிசையில்) ஆகும். ஆட்டோ அல்லது 1 அல்லது அதற்கு மேற்பட்ட
+    எண் 0 ஐ தட்டச்சு செய்க.
 

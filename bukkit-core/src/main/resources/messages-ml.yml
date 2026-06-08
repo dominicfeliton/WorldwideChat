@@ -789,4 +789,71 @@ Messages:
   wwcConfigGUISendActionBarButton: ആക്ഷൻ ബാറുകൾ അയയ്ക്കുക
   wwcConfigActionBarInvalid: config.yml- ൽ സജ്ജമാക്കിയ ആക്ഷൻ ബാർ ക്രമീകരണം അസാധുവായ
     അയയ്ക്കുക. സത്യമായി സ്ഥിരമായി മാറുന്നു...
+  wwcConfigGUIInputMethodConversation: സംഭാഷണം
+  wwcAIGuidelinesBlocked: ഞങ്ങളുടെ വിവർത്തന മാർഗ്ഗനിർദ്ദേശങ്ങൾ ഈ സന്ദേശം തടഞ്ഞു.
+  wwcConfigGUIGuidelinesAIModelButton: AI മോഡൽ മാർഗ്ഗനിർദ്ദേശങ്ങൾ മാറ്റുക
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI അനുയോജ്യമായ URL മാറ്റുക
+  wwcConfigConversationGuidelinesAIModelSuccess: മാർഗ്ഗനിർദ്ദേശങ്ങൾ AI മോഡൽ വിജയകരമായി
+    സജ്ജമാക്കി.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI അനുയോജ്യമായ API കീ വിജയകരമായി
+    സജ്ജീകരിച്ചു.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI അനുയോജ്യമായ URL വിജയകരമായി
+    സജ്ജമാക്കി.
+  wwcConfigConversationOpenAICompatibleURLInput: നിലവിലെ URL {0} ആണ്. OpenAI Compatible
+    എന്നതിനായി ദയവായി ഒരു URL ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationOpenAICompatibleModelInput: ഇപ്പോഴത്തെ മാതൃക {0} ആണ്. OpenAI
+    അനുയോജ്യമായ ഒരു മോഡൽ ദയവായി ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigGUIGuidelinesAIPromptButton: AI പ്രോംപ്റ്റ് മാർഗ്ഗനിർദ്ദേശങ്ങൾ മാറ്റുക
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI അനുയോജ്യമായ പ്രോംപ്റ്റ് മാറ്റുക
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI അനുയോജ്യമായ ടോഗിൾ ചെയ്യുക
+  wwcConfigConversationInputMethodSuccess: ഇൻപുട്ട് രീതി {0} ആയി സജ്ജമാക്കി.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI അനുയോജ്യമായ മോഡൽ വിജയകരമായി
+    സജ്ജീകരിച്ചു.
+  wwcConfigGUIOpenAICompatibleButton: ഓപ്പൺ എഐ അനുയോജ്യമാണ്
+  wwcConfigGUIInputMethodPaperDialog: പേപ്പർ ഡയലോഗ്
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI അനുയോജ്യമായ API കീ മാറ്റുക
+  wwcConfigGUIInputMethodButton: ഇൻപുട്ട് രീതി
+  wwcConfigGUIInputMethodAuto: ഓട്ടോ
+  wwcConfigConversationGuidelinesAIModelInput: നിലവിലെ മാർഗ്ഗനിർദ്ദേശങ്ങൾ AI മോഡൽ
+    {0} ആണ്. ദയവായി ഒരു മോഡൽ ഇൻപുട്ട് ചെയ്യുക, സജീവ ദാതാവിന്റെ മോഡൽ ഉപയോഗിക്കാൻ ക്ലിയർ
+    ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI അനുയോജ്യമായ മോഡൽ മാറ്റുക
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: മാർഗ്ഗനിർദ്ദേശങ്ങൾ AI ചെക്കുകൾ വിജയകരമായി
+    ടോഗിൾ ചെയ്തു.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: നിലവിലെ API കീ {0} ആണ്. OpenAI
+    അനുയോജ്യമായ ഒരു API കീ ദയവായി ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigGUIInputMethodCurrent: 'നിലവിലുള്ളത്: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI അനുയോജ്യമായ വിജയകരമായി ടോഗിൾ ചെയ്തു.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI ചെക്കുകൾ ടോഗിൾ മാർഗ്ഗനിർദ്ദേശങ്ങൾ
+  wwctTranslationErrorActionBar: പിശക്
+  wwcConfigGUIObjectTranslationConcurrencyButton: ഒബ്ജക്റ്റ് വിവർത്തന സമത്വം മാറ്റുക
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ഒബ്ജക്റ്റ് വിവർത്തന സമാന
+    പരിധി വിജയകരമായി സജ്ജമാക്കി.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ഒബ്ജക്റ്റ് വിവർത്തന
+    സമന്വയ പരിധി 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലായിരിക്കണം.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: നിലവിലെ ഒബ്ജക്റ്റ്
+    ട്രാൻസ്ലേഷൻ കൺകറൻസി പരിധി {0} ആണ്. ഒരു നമ്പർ 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലോ ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: അസാധുവായ ഒബ്ജക്റ്റ് വിവർത്തന
+    കൺകറൻസി പരിധി config.yml ൽ സജ്ജീകരിച്ചിരിക്കുന്നു. മൂല്യം കുറഞ്ഞത് 1 ആയിരിക്കണം.
+    4 ലേക്ക് ഡിഫോൾട്ട് ചെയ്യുന്നു...
+  wwcConfigGUIGuidelinesAIDisabledReason: ഗാർഡ്രെയിലുകൾ ഉപയോഗിക്കുന്നതിന് ഒരു AI ദാതാവിനെ
+    പ്രാപ്തമാക്കണം.
+  wwcConfigTranslationCapacityAuto: 'വിവർത്തന ശേഷി {0} സജീവ വിവർത്തനങ്ങളിലേക്കും {1}
+    ക്യൂഡ് വിവർത്തനങ്ങളിലേക്കും സ്വയമേവ പരിഹരിച്ചു (JVM പ്രോസസ്സറുകൾ: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: വിവർത്തന ശേഷി പരിധി വിജയകരമായി
+    സജ്ജമാക്കി.
+  wwcConfigGUITranslationCapacityButton: വിവർത്തന ശേഷി മാറ്റുക
+  wwcConfigTranslationCapacityInvalid: config.yml- ൽ അസാധുവായ വിവർത്തന ശേഷി പരിധി
+    സജ്ജീകരിച്ചിരിക്കുന്നു. യാന്ത്രികമോ 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലോ 0 ഉപയോഗിക്കുക. ഓട്ടോയിലേക്ക്
+    ഡിഫോൾട്ട് ചെയ്യുന്നു...
+  wwcConfigTranslationCapacityManual: വിവർത്തന ശേഷി {0} സജീവ വിവർത്തനങ്ങളും {1} ക്യൂ
+    ചെയ്ത വിവർത്തനങ്ങളും ആയി സജ്ജമാക്കി.
+  wwcConfigConversationTranslationCapacityInvalid: വിവർത്തന ശേഷി പരിധി ഓട്ടോയ്ക്ക്
+    0 അല്ലെങ്കിൽ 1 അല്ലെങ്കിൽ അതിൽ കൂടുതലോ ആയിരിക്കണം.
+  wwcConfigConversationTranslationCapacityInput: നിലവിലെ വിവർത്തന ശേഷി പരിധി {0} ({1}
+    active, {2} ക്യൂഡ്) ആണ്. ഓട്ടോയ്ക്കായി 0 അല്ലെങ്കിൽ ഒരു നമ്പർ 1 അല്ലെങ്കിൽ അതിൽ
+    കൂടുതലോ ടൈപ്പ് ചെയ്യുക.
 

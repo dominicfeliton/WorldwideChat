@@ -830,4 +830,71 @@ Messages:
   wwcConfigGUISendActionBarButton: Envoyer des barres d'action
   wwcConfigActionBarInvalid: Paramétrage de barre d'action d'envoi non valide défini
     dans config.yml. La valeur par défaut est true...
+  wwcConfigGUIInputMethodConversation: Conversation
+  wwcAIGuidelinesBlocked: Ce message a été bloqué par nos directives de traduction.
+  wwcConfigGUIGuidelinesAIModelButton: Modifier le modèle d'IA des lignes directrices
+  wwcConfigGUIOpenAICompatibleURLButton: Modifier l'URL compatible avec OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Lignes directrices Le modèle d'IA
+    a été établi avec succès.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Clé API compatible OpenAI définie
+    avec succès.
+  wwcConfigConversationOpenAICompatibleURLSuccess: URL compatible OpenAI définie avec
+    succès.
+  wwcConfigConversationOpenAICompatibleURLInput: L'URL actuelle est {0}. Veuillez
+    saisir une URL pour OpenAI Compatible, ou tapez 0 pour revenir en arrière.
+  wwcConfigConversationOpenAICompatibleModelInput: Le modèle actuel est {0}. Veuillez
+    saisir un modèle pour OpenAI Compatible, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIGuidelinesAIPromptButton: Invite IA pour modifier les lignes directrices
+  wwcConfigGUIOpenAICompatiblePromptButton: Modifier l'invite de compatibilité OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Activer la compatibilité avec OpenAI
+  wwcConfigConversationInputMethodSuccess: Méthode d'entrée définie sur {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Modèle compatible OpenAI défini
+    avec succès.
+  wwcConfigGUIOpenAICompatibleButton: Compatible avec OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Boîte de dialogue sur papier
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Modifier la clé API compatible OpenAI
+  wwcConfigGUIInputMethodButton: Méthode d'entrée
+  wwcConfigGUIInputMethodAuto: Automatique
+  wwcConfigConversationGuidelinesAIModelInput: Le modèle actuel de l'IA des Lignes
+    directrices est {0}. Veuillez saisir un modèle, taper clear pour utiliser le modèle
+    du fournisseur actif ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIOpenAICompatibleModelButton: Modifier le modèle compatible avec OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Effectué avec succès les vérifications
+    Guidelines AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: La clé API actuelle est {0}. Veuillez
+    saisir une clé API pour OpenAI Compatible, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIInputMethodCurrent: 'Actuel: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Accepté OpenAI Compatible avec succès.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Activer les vérifications de l'IA dans
+    les lignes directrices
+  wwctTranslationErrorActionBar: Erreur
+  wwcConfigGUIObjectTranslationConcurrencyButton: Concurrente de traduction d'objets
+    de modification
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Limite de simultanité
+    de traduction d'objets définie avec succès.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: La limite de simultanité
+    pour la traduction d'objets doit être égale ou supérieure à 1.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: La limite actuelle
+    de simultanité de traduction d'objets est {0}. Saisissez un nombre 1 ou plus.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Limite de simultanée de traduction
+    d'objets non valide définie dans config.yml. La valeur doit être d'au moins 1.
+    La valeur par défaut est 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Un fournisseur d'IA doit être autorisé à
+    utiliser Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Capacité de traduction résolue automatiquement
+    en {0} traductions actives et {1} traductions en file d''attente (processeurs
+    JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limite de capacité de traduction
+    définie avec succès.
+  wwcConfigGUITranslationCapacityButton: Modifier la capacité de traduction
+  wwcConfigTranslationCapacityInvalid: Limite de capacité de traduction non valide
+    définie dans config.yml. Utilisez 0 pour auto ou 1 ou plus. La valeur par défaut
+    est automatique...
+  wwcConfigTranslationCapacityManual: Capacité de traduction définie sur {0} traductions
+    actives et {1} traductions en file d'attente.
+  wwcConfigConversationTranslationCapacityInvalid: La limite de capacité de traduction
+    doit être de 0 pour les véhicules automatiques ou de 1 ou plus.
+  wwcConfigConversationTranslationCapacityInput: La limite actuelle de capacité de
+    traduction est {0} ({1} actif, {2} en file d'attente). Tapez 0 pour auto ou un
+    numéro 1 ou supérieur.
 

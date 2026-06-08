@@ -7,6 +7,7 @@ import com.dominicfeliton.worldwidechat.util.CachedTranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.storage.DataStorageUtils;
+import com.dominicfeliton.worldwidechat.util.storage.StorageMigrationUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -93,25 +94,19 @@ public class WWCDebug extends BasicCommand {
         if (args.length == 1) {
             switch (args[0].toLowerCase()) {
                 case "checkdb":
-                    YamlConfiguration conf = main.getConfigManager().getMainConfig();
-                    if (!main.isSQLConnValid(true) && !main.isPostgresConnValid(true)) {
+                    if (!main.isSQLConnValid(true) && !main.isPostgresConnValid(true) && !main.isMongoConnValid(true)) {
                         refs.sendMsg("wwcdSQLAllSet", "", "&a", sender);
                         return true;
                     }
 
-                    // Preserve original debug val
-                    boolean debugBool = conf.getBoolean("General.enableDebugMode");
-
                     GenericRunnable run = new GenericRunnable() {
                         @Override
                         protected void execute() {
-                            conf.set("General.enableDebugMode", true);
-                            if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
-                                refs.sendMsg("wwcdOutdatedSQLStruct", "", "&e", sender);
+                            if (StorageMigrationUtils.getLastStatus().isSuccess()) {
+                                refs.sendMsg(sender, "&a" + StorageMigrationUtils.getLastStatus().describe());
                             } else {
-                                refs.sendMsg("wwcdSQLAllSet", "", "&a", sender);
+                                refs.sendMsg("wwcdOutdatedSQLStruct", "", "&e", sender);
                             }
-                            conf.set("General.enableDebugMode", debugBool);
                         }
                     };
                     wwcHelper.runAsync(run, ASYNC, null);
@@ -179,4 +174,3 @@ public class WWCDebug extends BasicCommand {
         return false;
     }
 }
-

@@ -11,16 +11,22 @@ on:
 
 jobs:
   build:
+    if: github.event_name != 'pull_request' || github.actor == 'dominicfeliton' || github.actor == 'renovate[bot]'
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
-      - uses: actions/checkout@v5
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          persist-credentials: false
+      - name: Set up JDK 26
+        uses: actions/setup-java@be666c2fcd27ec809703dec50e508c2fdc7f6654
         with:
           distribution: 'adopt'
-          java-version: 21
+          java-version: 26
 
       - name: Start Docker Compose (MySQL/MongoDB/PostgreSQL)
         run: bash ./dev/setup-dev-env.sh
@@ -28,14 +34,44 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean package -Dyamltranslator.skip=true --file pom.xml
 
-      - name: Prepare final JARs
+      - name: Verify packaged jars
         run: |
-          mkdir staging
-          find . -path '*-target/WorldwideChat-*.jar' -exec cp {} staging/ \;
-      - uses: actions/upload-artifact@v4
+          set -euo pipefail
+
+          jar tf paper-target/WorldwideChat-paper.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperInputService.class'
+          jar tf paper-target/WorldwideChat-paper.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperDialogInputService.class'
+          jar tf paper-target/WorldwideChat-paper.jar | grep -q 'com/dominicfeliton/worldwidechat/input/SpigotConversationInputService.class'
+
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/FoliaInputService.class'
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/FoliaDialogInputService.class'
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperInputService.class'
+          jar tf folia-target/WorldwideChat-folia.jar | grep -q 'com/dominicfeliton/worldwidechat/input/PaperDialogInputService.class'
+
+          unzip -p spigot-target/WorldwideChat-spigot.jar plugin.yml | grep -q 'folia-supported: false'
+          unzip -p paper-target/WorldwideChat-paper.jar plugin.yml | grep -q 'folia-supported: false'
+          unzip -p folia-target/WorldwideChat-folia.jar plugin.yml | grep -q 'folia-supported: true'
+
+      - name: Upload Spigot JAR
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: WWC JARs
-          path: staging
+          name: WorldwideChat-spigot
+          path: spigot-target/WorldwideChat-spigot.jar
+          if-no-files-found: error
+
+      - name: Upload Paper JAR
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: WorldwideChat-paper
+          path: paper-target/WorldwideChat-paper.jar
+          if-no-files-found: error
+
+      - name: Upload Folia JAR
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: WorldwideChat-folia
+          path: folia-target/WorldwideChat-folia.jar
+          if-no-files-found: error
 
       - name: Stop Docker Compose (MySQL/MongoDB/PostgreSQL)
+        if: always()
         run: bash ./dev/takedown-dev-env.sh

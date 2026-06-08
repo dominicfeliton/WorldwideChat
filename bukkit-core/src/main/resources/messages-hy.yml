@@ -796,4 +796,70 @@ Messages:
   wwcConfigGUISendActionBarButton: Ուղարկեք գործողությունների բարեր
   wwcConfigActionBarInvalid: 'Անվավեր ուղարկման գործողությունների սանդղակի կարգավորումը,
     որը սահմանվել է config.yml- ում: Չարժևորելով ճշմարիտ...'
+  wwcConfigGUIInputMethodConversation: Զրույց
+  wwcAIGuidelinesBlocked: 'Այս հաղորդագրությունը արգելափակվել է մեր թարգմանության
+    ուղեցույցներով:'
+  wwcConfigGUIGuidelinesAIModelButton: Փոխեք ուղեցույցների AI մոդելը
+  wwcConfigGUIOpenAICompatibleURLButton: Փոխեք OpenAI- ի համատեղելի URL- ը
+  wwcConfigConversationGuidelinesAIModelSuccess: 'Ուղեցույցներ AI մոդելը հաջողությամբ
+    սահմանվել է:'
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: 'OpenAI Համատեղելի API ստեղները
+    հաջողությամբ հավաքվել են:'
+  wwcConfigConversationOpenAICompatibleURLSuccess: 'OpenAI Համատեղելի URL- ը հաջողությամբ
+    սահմանվել է:'
+  wwcConfigConversationOpenAICompatibleURLInput: 'Ընթացիկ URL- ն {0} է: Խնդրում ենք
+    մուտքագրել URL- ը OpenAI Compatible- ի համար կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationOpenAICompatibleModelInput: 'Ներկայիս մոդելը {0} է: Խնդրում
+    ենք մուտքագրել OpenAI Compatible մոդել կամ մուտքագրել 0 հետ գնալու համար:'
+  wwcConfigGUIGuidelinesAIPromptButton: Փոխել ուղեցույցները AI հուշում
+  wwcConfigGUIOpenAICompatiblePromptButton: Փոխեք OpenAI- ի համատեղելի հուշումը
+  wwcConfigGUIToggleOpenAICompatibleButton: Միացնել OpenAI- ի համատեղելիությունը
+  wwcConfigConversationInputMethodSuccess: 'Մուտքագրման մեթոդը սահմանվել է {0}:'
+  wwcConfigConversationOpenAICompatibleModelSuccess: 'OpenAI Համատեղելի մոդելը հաջողությամբ
+    հավաքվել է:'
+  wwcConfigGUIOpenAICompatibleButton: OpenAI համատեղելի է
+  wwcConfigGUIInputMethodPaperDialog: Թղթի երկխոսություն
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Փոխեք OpenAI համատեղելի API բանալին
+  wwcConfigGUIInputMethodButton: Մուտքի մեթոդ
+  wwcConfigGUIInputMethodAuto: Ավտո
+  wwcConfigConversationGuidelinesAIModelInput: 'Ներկայիս Ուղեցույցների AI մոդելը {0}
+    է: Խնդրում ենք մուտքագրել մոդել, մուտքագրել հստակ է օգտագործել ակտիվ մատակարարի
+    մոդելը, կամ մուտքագրել 0 հետ գնալ.'
+  wwcConfigGUIOpenAICompatibleModelButton: Փոխեք OpenAI համատեղելի մոդելը
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: 'Հաջողությամբ միացված ուղեցույցներ
+    AI ստուգումներ:'
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 'Ներկայիս API բանալին {0} է: Խնդրում
+    ենք մուտքագրել API բանալին OpenAI Compatible- ի համար կամ մուտքագրել 0 հետ գնալու
+    համար:'
+  wwcConfigGUIInputMethodCurrent: 'Ընթացիկ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: 'Հաջողությամբ միացված OpenAI- ի համատեղելիությունը:'
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Միացնել AI ստուգումների ուղեցույցները
+  wwctTranslationErrorActionBar: Սխալ
+  wwcConfigGUIObjectTranslationConcurrencyButton: Փոխել օբյեկտի թարգմանության համաժամանակությունը
+  wwcConfigConversationObjectTranslationConcurrencySuccess: 'Օբյեկտի թարգմանության
+    համաժամանակության սահմանը հաջողությամբ սահմանվել է:'
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: 'Օբյեկտի թարգմանության
+    համաժամանակության սահմանը պետք է լինի 1 կամ ավելի:'
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: 'Ներկայիս օբյեկտի
+    թարգմանության համաժամանակության սահմանը {0} է: Մուտքագրեք թիվ 1 կամ ավելի:'
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: 'Անվավեր օբյեկտի թարգմանության
+    համաժամանակության սահմանը, որը սահմանվել է config.yml- ում: Արժեքը պետք է լինի
+    առնվազն 1: Նախանցված է 4...'
+  wwcConfigGUIGuidelinesAIDisabledReason: 'AI մատակարարը պետք է միացված լինի Guardrails-
+    ից օգտվելու համար:'
+  wwcConfigTranslationCapacityAuto: 'Թարգմանության հզորությունը auto-լուծվել է {0}
+    ակտիվ թարգմանությունների եւ {1} հերթում թարգմանությունների (JVM պրոցեսորներ: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: 'Թարգմանության հզորության սահմանը
+    հաջողությամբ սահմանվել է:'
+  wwcConfigGUITranslationCapacityButton: Փոխել թարգմանության կարողությունները
+  wwcConfigTranslationCapacityInvalid: 'Անվավեր թարգմանության հզորության սահմանը,
+    որը սահմանվել է config.yml- ում: Օգտագործեք 0-ը ավտոմատ կամ 1 կամ ավելի մեծ համար:
+    Ավտոմատիկ կանխադրում...'
+  wwcConfigTranslationCapacityManual: Թարգմանության հզորությունը սահմանված է {0} ակտիվ
+    թարգմանությունների եւ {1} հերթում թարգմանությունների.
+  wwcConfigConversationTranslationCapacityInvalid: 'Թարգմանության հզորության սահմանը
+    պետք է լինի 0 ավտոմատ կամ 1 կամ ավելի մեծ համար:'
+  wwcConfigConversationTranslationCapacityInput: 'Ներկայիս թարգմանության հզորության
+    սահմանաչափը {0} է ({1} ակտիվ, {2} հերթում): Մուտքագրեք 0-ը ավտոմատ կամ 1 կամ ավելի
+    մեծ թվի համար:'
 

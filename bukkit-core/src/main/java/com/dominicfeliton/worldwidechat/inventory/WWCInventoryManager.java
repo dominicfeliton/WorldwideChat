@@ -1,9 +1,12 @@
 package com.dominicfeliton.worldwidechat.inventory;
 
-import com.cryptomorin.xseries.XEnchantment;
-import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
+import com.dominicfeliton.worldwidechat.input.InputContext;
+import com.dominicfeliton.worldwidechat.input.InputMethod;
+import com.dominicfeliton.worldwidechat.input.InputPrompt;
+import com.dominicfeliton.worldwidechat.input.InputRequest;
+import com.dominicfeliton.worldwidechat.input.InputResult;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
@@ -13,10 +16,10 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.ConversationContext;
-import org.bukkit.conversations.ConversationFactory;
-import org.bukkit.conversations.Prompt;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -68,10 +71,10 @@ public class WWCInventoryManager extends InventoryManager {
     }
 
     public void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType, Object[] args) {
-        ItemStack pageButton = XMaterial.WHITE_STAINED_GLASS.parseItem();
+        ItemStack pageButton = new ItemStack(Material.WHITE_STAINED_GLASS);
         ItemMeta pageMeta = pageButton.getItemMeta();
         if (buttonType.equalsIgnoreCase("Previous")) {
-            pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
+            pageButton = new ItemStack(Material.RED_STAINED_GLASS);
             pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIPreviousPageButton",
                     "",
                     "&c",
@@ -88,7 +91,7 @@ public class WWCInventoryManager extends InventoryManager {
                 }
             }));
         } else if (buttonType.equalsIgnoreCase("Next")) {
-            pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
+            pageButton = new ItemStack(Material.GREEN_STAINED_GLASS);
             pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUINextPageButton",
                     "",
                     "&a",
@@ -105,7 +108,7 @@ public class WWCInventoryManager extends InventoryManager {
                 }
             }));
         } else if (buttonType.equalsIgnoreCase("Page Number")) {
-            pageButton = XMaterial.LILY_PAD.parseItem();
+            pageButton = new ItemStack(Material.LILY_PAD);
             pageMeta.setDisplayName(refs.getPlainMsg("wwcGUIPageNumber",
                     "&6" + args[0],
                     "&b",
@@ -115,7 +118,7 @@ public class WWCInventoryManager extends InventoryManager {
             pageButton.setItemMeta(pageMeta);
             contents.set(x, y, ClickableItem.empty(pageButton));
         } else if (buttonType.equalsIgnoreCase("Quit")) {
-            pageButton = XMaterial.BARRIER.parseItem();
+            pageButton = new ItemStack(Material.BARRIER);
             pageMeta = pageButton.getItemMeta();
             pageMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIQuitButton",
                     "",
@@ -131,8 +134,8 @@ public class WWCInventoryManager extends InventoryManager {
         }
     }
 
-    public void setBorders(InventoryContents contents, XMaterial inMaterial) {
-        ItemStack customBorders = inMaterial.parseItem();
+    public void setBorders(InventoryContents contents, Material inMaterial) {
+        ItemStack customBorders = new ItemStack(inMaterial);
         ItemMeta borderMeta = customBorders.getItemMeta();
         borderMeta.setDisplayName(" ");
         customBorders.setItemMeta(borderMeta);
@@ -147,12 +150,12 @@ public class WWCInventoryManager extends InventoryManager {
         ItemStack button;
         if (preCondition != null) {
             if (preCondition) {
-                button = XMaterial.EMERALD_BLOCK.parseItem();
+                button = new ItemStack(Material.EMERALD_BLOCK);
             } else {
-                button = XMaterial.REDSTONE_BLOCK.parseItem();
+                button = new ItemStack(Material.REDSTONE_BLOCK);
             }
         } else {
-            button = XMaterial.WRITABLE_BOOK.parseItem();
+            button = new ItemStack(Material.WRITABLE_BOOK);
         }
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
@@ -170,11 +173,11 @@ public class WWCInventoryManager extends InventoryManager {
     }
 
     public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, List<String> configValsToDisable, boolean serverRestartRequired) {
-        ItemStack button = XMaterial.BEDROCK.parseItem();
+        ItemStack button = new ItemStack(Material.BEDROCK);
         if (main.getConfigManager().getMainConfig().getBoolean(configValueName)) {
-            button = XMaterial.EMERALD_BLOCK.parseItem();
+            button = new ItemStack(Material.EMERALD_BLOCK);
         } else {
-            button = XMaterial.REDSTONE_BLOCK.parseItem();
+            button = new ItemStack(Material.REDSTONE_BLOCK);
         }
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(configButtonName,
@@ -191,43 +194,97 @@ public class WWCInventoryManager extends InventoryManager {
                         "&e",
                         player);
             }
-            main.getConfigManager().getMainConfig().set(configValueName,
-                    !(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
+            boolean enabled = !(main.getConfigManager().getMainConfig().getBoolean(configValueName));
+            main.getConfigManager().getMainConfig().set(configValueName, enabled);
             for (String eaKey : configValsToDisable) {
                 if (eaKey.equals(configValueName)) continue;
                 refs.debugMsg("Disabling " + eaKey + "!");
                 main.getConfigManager().getMainConfig().set(eaKey, false);
+            }
+            if (CommonRefs.translatorPairs.containsKey(configValueName)
+                    && !CommonRefs.isAIProviderEnabled(main.getConfigManager().getMainConfig())
+                    && main.getConfigManager().getMainConfig().getBoolean("Translator.enableGuidelinesAIChecks")) {
+                refs.debugMsg("Disabling Guidelines AI checks because no AI provider is enabled.");
+                main.getConfigManager().getMainConfig().set("Translator.enableGuidelinesAIChecks", false);
             }
             refs.sendMsg(messageOnChange,
                     "",
                     "&a",
                     player);
 
-            genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
-        }));
-    }
-
-    public void genericConversationButton(int x, int y, Player player, InventoryContents contents, Prompt inPrompt, XMaterial inMaterial, String buttonName) {
-        ConversationFactory genericConversation = new ConversationFactory(main).withModality(true).withTimeout(600)
-                .withFirstPrompt(inPrompt);
-        ItemStack button = inMaterial.parseItem();
-        ItemMeta buttonMeta = button.getItemMeta();
-        buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
-                "",
-                "&6",
-                player));
-        button.setItemMeta(buttonMeta);
-        contents.set(x, y, ClickableItem.of(button, e -> {
-            if (!main.getCurrPlatform().equals("Folia")) {
-                genericConversation.buildConversation(player).begin();
-            } else {
-                refs.sendMsg("wwcNoConvoFolia", "", "&c", player);
+            if (e != null) {
+                genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable, serverRestartRequired);
             }
         }));
     }
 
-    public void genericBookButton(int x, int y, Player player, InventoryContents contents, YamlConfiguration inConfig, String inConfigVal, XMaterial inMaterial, String buttonName) {
-        ItemStack button = inMaterial.parseItem();
+    public static Material getInputMethodButtonMaterial(String configuredValue) {
+        return switch (getConfigurableInputMethod(configuredValue)) {
+            case PAPER_DIALOG -> Material.EMERALD_BLOCK;
+            case CONVERSATION -> Material.REDSTONE_BLOCK;
+            default -> Material.GOLD_BLOCK;
+        };
+    }
+
+    public static String getNextInputMethodValue(String configuredValue) {
+        return switch (getConfigurableInputMethod(configuredValue)) {
+            case AUTO -> InputMethod.PAPER_DIALOG.getConfigValue();
+            case PAPER_DIALOG -> InputMethod.CONVERSATION.getConfigValue();
+            case CONVERSATION -> InputMethod.AUTO.getConfigValue();
+            default -> InputMethod.AUTO.getConfigValue();
+        };
+    }
+
+    private static InputMethod getConfigurableInputMethod(String configuredValue) {
+        InputMethod method = InputMethod.fromConfig(configuredValue);
+        if (method == InputMethod.PAPER_DIALOG || method == InputMethod.CONVERSATION) {
+            return method;
+        }
+        return InputMethod.AUTO;
+    }
+
+    private static String getInputMethodStateMessageKey(String configuredValue) {
+        return switch (getConfigurableInputMethod(configuredValue)) {
+            case PAPER_DIALOG -> "wwcConfigGUIInputMethodPaperDialog";
+            case CONVERSATION -> "wwcConfigGUIInputMethodConversation";
+            default -> "wwcConfigGUIInputMethodAuto";
+        };
+    }
+
+    private String getInputMethodDisplayName(String configuredValue, Player player) {
+        return refs.getPlainMsg(getInputMethodStateMessageKey(configuredValue), "", "&6", player);
+    }
+
+    public void genericInputMethodButton(int x, int y, Player player, InventoryContents contents) {
+        String configValueName = "General.inputMethod";
+        String currentValue = main.getConfigManager().getMainConfig().getString(configValueName, InputMethod.AUTO.getConfigValue());
+        ItemStack button = new ItemStack(getInputMethodButtonMaterial(currentValue));
+        ItemMeta buttonMeta = button.getItemMeta();
+        buttonMeta.setDisplayName(refs.getPlainMsg("wwcConfigGUIInputMethodButton",
+                "",
+                "&6",
+                player));
+        buttonMeta.setLore(List.of(refs.getPlainMsg("wwcConfigGUIInputMethodCurrent",
+                "&6" + getInputMethodDisplayName(currentValue, player),
+                "&b",
+                player)));
+        button.setItemMeta(buttonMeta);
+        contents.set(x, y, ClickableItem.of(button, e -> {
+            String nextValue = getNextInputMethodValue(main.getConfigManager().getMainConfig()
+                    .getString(configValueName, InputMethod.AUTO.getConfigValue()));
+            main.addPlayerUsingConfigurationGUI(player);
+            main.getConfigManager().getMainConfig().set(configValueName, nextValue);
+            refs.sendMsg("wwcConfigConversationInputMethodSuccess",
+                    "&6" + getInputMethodDisplayName(nextValue, player),
+                    "&a",
+                    player);
+
+            genericInputMethodButton(x, y, player, contents);
+        }));
+    }
+
+    public void genericInputButton(int x, int y, Player player, InventoryContents contents, InputPrompt inPrompt, Material inMaterial, String buttonName) {
+        ItemStack button = new ItemStack(inMaterial);
         ItemMeta buttonMeta = button.getItemMeta();
         buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
                 "",
@@ -235,7 +292,20 @@ public class WWCInventoryManager extends InventoryManager {
                 player));
         button.setItemMeta(buttonMeta);
         contents.set(x, y, ClickableItem.of(button, e -> {
-            ItemStack book = XMaterial.WRITABLE_BOOK.parseItem();
+            main.getInputService().open(player, InputRequest.fromPrompt(inPrompt));
+        }));
+    }
+
+    public void genericBookButton(int x, int y, Player player, InventoryContents contents, YamlConfiguration inConfig, String inConfigVal, Material inMaterial, String buttonName) {
+        ItemStack button = new ItemStack(inMaterial);
+        ItemMeta buttonMeta = button.getItemMeta();
+        buttonMeta.setDisplayName(refs.getPlainMsg(buttonName,
+                "",
+                "&6",
+                player));
+        button.setItemMeta(buttonMeta);
+        contents.set(x, y, ClickableItem.of(button, e -> {
+            ItemStack book = new ItemStack(Material.WRITABLE_BOOK);
             BookMeta bookMeta = (BookMeta) book.getItemMeta();
 
             char[] array = inConfig.getString(inConfigVal).toCharArray();
@@ -256,11 +326,7 @@ public class WWCInventoryManager extends InventoryManager {
             }
 
             bookMeta.setAuthor(player.getName());
-            try {
-                /* Older MC versions do not have generation data */
-                bookMeta.setGeneration(bookMeta.getGeneration());
-            } catch (NoSuchMethodError no) {
-            }
+            bookMeta.setGeneration(bookMeta.getGeneration());
             bookMeta.setTitle(inConfigVal);
             bookMeta.setPages(pages);
             book.setItemMeta(bookMeta);
@@ -303,21 +369,24 @@ public class WWCInventoryManager extends InventoryManager {
 
     public void addGlowEffect(ItemMeta meta) {
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        meta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+        Enchantment power = Enchantment.getByKey(NamespacedKey.minecraft("power"));
+        if (power != null) {
+            meta.addEnchant(power, 1, false);
+        }
     }
 
     /**
-     * Returns the generic conversation for modifying values in our config.yml using the GUI.
+     * Returns the generic input result for modifying values in our config.yml using the GUI.
      *
      * @param exitCheck           - If this is false, then we will exit
-     * @param context             - The conversation context obj
+     * @param context             - The input context obj
      * @param successfulChangeMsg - Names of the message sent on successful change
      * @param configValName       - The names of the config value to be updated
      * @param configVal           - The new value
-     * @param prevInventory       - The previous inventory to open up after the conversation is over
-     * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
+     * @param prevInventory       - The previous inventory to open up after the input is over
+     * @return InputResult.complete() - This will ultimately be returned to end the input. If the length of configValName != the length of configVal, then null is returned.
      */
-    public Prompt genericConfigConvo(boolean exitCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
+    public InputResult genericConfigInput(boolean exitCheck, InputContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
         Player currPlayer = ((Player) context.getForWhom());
         if (configValName.length != configVal.length) {
             return null;
@@ -335,21 +404,21 @@ public class WWCInventoryManager extends InventoryManager {
         }
         /* Re-open previous GUI */
         prevInventory.open((Player) context.getForWhom());
-        return Prompt.END_OF_CONVERSATION;
+        return InputResult.complete();
     }
 
     /**
-     * Returns the generic conversation for modifying values in our config.yml using the GUI.
+     * Returns the generic input result for modifying values in our config.yml using the GUI.
      *
      * @param exitCheck           - If this is false, then we will exit
-     * @param context             - The conversation context obj
+     * @param context             - The input context obj
      * @param successfulChangeMsg - Name of the message sent on successful change
      * @param configValName       - The name of the config value to be updated
      * @param configVal           - The new value
-     * @param prevInventory       - The previous inventory to open up after the conversation is over
-     * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation.
+     * @param prevInventory       - The previous inventory to open up after the input is over
+     * @return InputResult.complete() - This will ultimately be returned to end the input.
      */
-    public Prompt genericConfigConvo(boolean exitCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
-        return genericConfigConvo(exitCheck, context, successfulChangeMsg, new String[]{configValName}, new Object[]{configVal}, prevInventory);
+    public InputResult genericConfigInput(boolean exitCheck, InputContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
+        return genericConfigInput(exitCheck, context, successfulChangeMsg, new String[]{configValName}, new Object[]{configVal}, prevInventory);
     }
 }

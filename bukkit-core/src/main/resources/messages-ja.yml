@@ -585,4 +585,54 @@ Messages:
   wwcConfigConversationSendActionBarSuccess: 送信アクションバーが正常に切り替わりました。
   wwcConfigGUISendActionBarButton: アクションバーを送信
   wwcConfigActionBarInvalid: config.yml に設定されている送信アクションバーの設定が無効です。デフォルトは true に設定されています...
+  wwcConfigGUIInputMethodConversation: 会話
+  wwcAIGuidelinesBlocked: このメッセージは翻訳ガイドラインによりブロックされました。
+  wwcConfigGUIGuidelinesAIModelButton: 変更ガイドライン AI モデル
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI 互換 URL を変更
+  wwcConfigConversationGuidelinesAIModelSuccess: ガイドライン AI モデルが正常に設定されました。
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI 互換 API キーが正常に設定されました。
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI 互換 URL が正常に設定されました。
+  wwcConfigConversationOpenAICompatibleURLInput: 現在の URL は {0} です。OpenAI 互換の URL を入力するか、0
+    を入力して戻ってください。
+  wwcConfigConversationOpenAICompatibleModelInput: 現在のモデルは {0} です。OpenAI 互換のモデルを入力するか、0
+    を入力して戻ってください。
+  wwcConfigGUIGuidelinesAIPromptButton: ガイドライン変更 AI プロンプト
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI 互換プロンプトの変更
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI 互換の切り替え
+  wwcConfigConversationInputMethodSuccess: 入力メソッドを {0} に設定しました。
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI 互換モデルが正常に設定されました。
+  wwcConfigGUIOpenAICompatibleButton: オープンAI互換
+  wwcConfigGUIInputMethodPaperDialog: ペーパーダイアログ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI 互換 API キーを変更
+  wwcConfigGUIInputMethodButton: インプットメソッド
+  wwcConfigGUIInputMethodAuto: オート
+  wwcConfigConversationGuidelinesAIModelInput: 現在のガイドライン AI モデルは {0} です。モデルを入力するか、「clear」と入力してアクティブなプロバイダーモデルを使用するか、0
+    を入力して戻ってください。
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI 互換モデルの変更
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: ガイドライン AI チェックが正常に切り替えられました。
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 現在の API キーは {0} です。OpenAI Compatible
+    の API キーを入力するか、0 を入力して戻ってください。
+  wwcConfigGUIInputMethodCurrent: 現在のバージョン:{0}
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI 互換が正常に切り替えられました。
+  wwcConfigGUIToggleGuidelinesAIChecksButton: ガイドライン AI チェックの切り替え
+  wwctTranslationErrorActionBar: '[エラー]'
+  wwcConfigGUIObjectTranslationConcurrencyButton: オブジェクト翻訳の同時実行性を変更
+  wwcConfigConversationObjectTranslationConcurrencySuccess: オブジェクト翻訳の同時実行制限が正常に設定されました。
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: オブジェクト翻訳の同時実行数の制限は
+    1 以上である必要があります。
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: 現在のオブジェクト翻訳の同時実行数の制限は
+    {0} です。1 以上の数字を入力してください。
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml に設定されているオブジェクト翻訳の同時実行制限が無効です。値は
+    1 以上でなければなりません。デフォルトは 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Guardrails を使用するには、AI プロバイダーが有効になっている必要があります。
+  wwcConfigTranslationCapacityAuto: 翻訳キャパシティは、{0} 件のアクティブな翻訳と {1} 件の処理待ちの翻訳に自動的に解決されます
+    (JVM プロセッサ:{2})。
+  wwcConfigConversationTranslationCapacitySuccess: 翻訳容量制限が正常に設定されました。
+  wwcConfigGUITranslationCapacityButton: 翻訳キャパシティを変更
+  wwcConfigTranslationCapacityInvalid: config.yml に設定されている翻訳容量の制限が無効です。自動の場合は 0、1
+    以上を使用してください。デフォルトは auto...
+  wwcConfigTranslationCapacityManual: 翻訳キャパシティは {0} 件のアクティブな翻訳と {1} 件の処理待ちの翻訳に設定されています。
+  wwcConfigConversationTranslationCapacityInvalid: 翻訳容量制限は、自動の場合は0、1以上である必要があります。
+  wwcConfigConversationTranslationCapacityInput: 現在の翻訳容量制限は {0} ({1} アクティブ、{2} キュー中)
+    です。自動の場合は 0、1 以上の数値を入力します。
 

@@ -780,4 +780,69 @@ Messages:
   wwcConfigGUISendActionBarButton: Изпращане на ленти за действие
   wwcConfigActionBarInvalid: Невалидна настройка на лентата за действие за изпращане,
     зададена в config.yml. По подразбиране на вярно...
+  wwcConfigGUIInputMethodConversation: Разговор
+  wwcAIGuidelinesBlocked: Това съобщение беше блокирано от нашите указания за превод.
+  wwcConfigGUIGuidelinesAIModelButton: Промяна на указанията за модела на AI
+  wwcConfigGUIOpenAICompatibleURLButton: Промяна на съвместим с OpenAI URL адрес
+  wwcConfigConversationGuidelinesAIModelSuccess: Насоки AI модел е зададен успешно.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Съвместим API ключ с OpenAI
+    е зададен успешно.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Съвместим URL адрес с OpenAI е
+    зададен успешно.
+  wwcConfigConversationOpenAICompatibleURLInput: Текущият URL адрес е {0}. Моля, въведете
+    URL адрес за OpenAI съвместим или въведете 0, за да се върнете назад.
+  wwcConfigConversationOpenAICompatibleModelInput: Настоящият модел е {0}. Моля, въведете
+    модел за OpenAI съвместим или въведете 0, за да се върнете назад.
+  wwcConfigGUIGuidelinesAIPromptButton: Промяна на насоките за AI подкана
+  wwcConfigGUIOpenAICompatiblePromptButton: Промяна на съвместим с OpenAI подкана
+  wwcConfigGUIToggleOpenAICompatibleButton: Превключване на съвместими с OpenAI
+  wwcConfigConversationInputMethodSuccess: Методът на въвеждане е зададен на {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Съвместим модел с OpenAI е набор
+    успешно.
+  wwcConfigGUIOpenAICompatibleButton: Съвместим с OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Хартиен диалог
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Промяна на OpenAI съвместим API ключ
+  wwcConfigGUIInputMethodButton: Метод на въвеждане
+  wwcConfigGUIInputMethodAuto: Авто
+  wwcConfigConversationGuidelinesAIModelInput: Настоящият модел на AI с насоки е {0}.
+    Моля, въведете модел, въведете clear, за да използвате модела на активния доставчик,
+    или въведете 0, за да се върнете назад.
+  wwcConfigGUIOpenAICompatibleModelButton: Промяна на съвместимия модел с OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Успешно превключени насоки за проверки
+    на AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Текущият API ключ е {0}. Моля,
+    въведете API ключ за OpenAI съвместим или въведете 0, за да се върнете назад.
+  wwcConfigGUIInputMethodCurrent: 'Текущ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Успешно превключен OpenAI съвместим.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Превключване на насоки за проверки на
+    AI
+  wwctTranslationErrorActionBar: Грешка
+  wwcConfigGUIObjectTranslationConcurrencyButton: Промяна на едновременността на превода
+    на обекти
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Лимитът за едновременност
+    на превод на обекти е зададен успешно.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Ограничението за
+    едновременност на превода на обекти трябва да бъде 1 или по-голямо.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Текущата граница
+    за едновременност на превод на обекти е {0}. Въведете число 1 или по-голямо.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Невалиден лимит за съвместимост
+    на превод на обекти, зададен в config.yml. Стойността трябва да бъде най-малко
+    1. По подразбиране на 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Доставчикът на AI трябва да има възможност
+    да използва предпазни парапети.
+  wwcConfigTranslationCapacityAuto: 'Капацитетът за превод автоматично се решава до
+    {0} активни преводи и {1} преводи на опашка (JVM процесори: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Ограничението на капацитета за
+    превод е зададено успешно.
+  wwcConfigGUITranslationCapacityButton: Промяна на капацитета за превод
+  wwcConfigTranslationCapacityInvalid: Невалиден ограничение на капацитета за превод,
+    зададено в config.yml. Използвайте 0 за автоматично или 1 или по-голямо. По подразбиране
+    на автоматично...
+  wwcConfigTranslationCapacityManual: Капацитетът за превод е зададен на {0} активни
+    преводи и {1} преводи на опашка.
+  wwcConfigConversationTranslationCapacityInvalid: Ограничението на капацитета за
+    превод трябва да бъде 0 за автоматично или 1 или по-голямо.
+  wwcConfigConversationTranslationCapacityInput: Текущото ограничение на капацитета
+    за превод е {0} ({1} активен, {2} на опашка). Въведете 0 за автоматично или число
+    1 или по-голямо.
 

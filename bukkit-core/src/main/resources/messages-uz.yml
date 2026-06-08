@@ -797,4 +797,74 @@ Messages:
   wwcConfigGUISendActionBarButton: Harakat majmualarini yuboring
   wwcConfigActionBarInvalid: Config.yml da o'rnatilgan harakatlar paneli sozlamasini
     yaroqsiz yuborish. To'g'ri deb hisoblash...
+  wwcConfigGUIInputMethodConversation: Suhbat
+  wwcAIGuidelinesBlocked: Ushbu xabar tarjima ko'rsatmalarimiz tomonidan bloklangan.
+  wwcConfigGUIGuidelinesAIModelButton: AI modelini o'zgartirish bo'yicha ko'rsatmalar
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI bilan mos keladigan URL manzilini
+    o'zgartiring
+  wwcConfigConversationGuidelinesAIModelSuccess: Ko'rsatmalar AI modeli muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI bilan mos keladigan API
+    kaliti muvaffaqiyatli o'rnatildi.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI bilan mos keladigan URL
+    muvaffaqiyatli o'rnatildi.
+  wwcConfigConversationOpenAICompatibleURLInput: Joriy URL manzili {0}. Iltimos, OpenAI
+    Compatible uchun URL manzilini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationOpenAICompatibleModelInput: Hozirgi model {0}. Iltimos, OpenAI
+    Compatible uchun modelni kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIGuidelinesAIPromptButton: AI Prompt-ni o'zgartirish bo'yicha ko'rsatmalar
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI bilan mos keladigan so'rovni o'zgartiring
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI-ga mos kelishini almashtirish
+  wwcConfigConversationInputMethodSuccess: Kirish usuli {0} ga o'rnatilgan.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI bilan mos keladigan model
+    muvaffaqiyatli o'rnatildi.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI bilan mos keladi
+  wwcConfigGUIInputMethodPaperDialog: Qog'oz muloqoti
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI mos keladigan API kalitini o'zgartiring
+  wwcConfigGUIInputMethodButton: Kirish usuli
+  wwcConfigGUIInputMethodAuto: Avtomatik
+  wwcConfigConversationGuidelinesAIModelInput: Joriy Guidelines AI modeli {0} hisoblanadi.
+    Iltimos, modelni kiriting, faol provayder modelini ishlatish uchun clear yozing
+    yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI mos modelini o'zgartiring
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Ko'rsatmalar AI tekshiruvlarini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Joriy API kaliti {0} hisoblanadi.
+    Iltimos, OpenAI Compatible uchun API kalitini kiriting yoki orqaga qaytish uchun
+    0 yozing.
+  wwcConfigGUIInputMethodCurrent: 'Hozirgi: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI bilan mos kelishini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI tekshiruvlarini almashtirish bo'yicha
+    ko'rsatmalar
+  wwctTranslationErrorActionBar: Xato
+  wwcConfigGUIObjectTranslationConcurrencyButton: Ob'ekt tarjimasining birgalikligini
+    o'zgartirish
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Ob'ektni tarjima qilish
+    bilan bir qatorda chegarasi muvaffaqiyatli o'rnatildi
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Ob'ektni tarjima
+    qilish bilan bir vaqtning o'zida chegarasi 1 yoki undan katta bo'lishi kerak.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Joriy ob'ektni tarjima
+    qilish bilan bir vaqtning o'zida chegarasi {0} hisoblanadi. 1 yoki undan katta
+    raqamni yozing.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Config.yml da o'rnatilgan yaroqsiz
+    ob'ekt tarjimasi concurrency chegarasi. Qiymat kamida 1 bo'lishi kerak. Standart
+    4 ga sozlash...
+  wwcConfigGUIGuidelinesAIDisabledReason: Guardrails-dan foydalanish uchun AI provayderi
+    yoqilgan bo'lishi kerak.
+  wwcConfigTranslationCapacityAuto: '{0} faol tarjimalariga va {1} navbatdagi tarjimalarga
+    (JVM protsessorlari: {2}) tarjima sig''imi avtomatik ravishda hal qilinadi.'
+  wwcConfigConversationTranslationCapacitySuccess: Tarjima quvvati chegarasi muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigGUITranslationCapacityButton: Tarjima qobiliyatini o'zgartiring
+  wwcConfigTranslationCapacityInvalid: Config.yml da belgilangan yaroqsiz tarjima
+    imkoniyatlari chegarasi. Avtomatik yoki 1 yoki undan katta uchun 0 dan foydalaning.
+    Avtomatik parametrga sozlash...
+  wwcConfigTranslationCapacityManual: Tarjima quvvati {0} faol tarjimalar va {1} navbatdagi
+    tarjimalarga o'rnatilgan.
+  wwcConfigConversationTranslationCapacityInvalid: Tarjima quvvati chegarasi avto
+    yoki 1 yoki undan katta uchun 0 bo'lishi kerak.
+  wwcConfigConversationTranslationCapacityInput: Hozirgi tarjima quvvati chegarasi
+    {0} ({1} faol, {2} navbatga qo'yilgan). Avtomatik yoki 1 yoki undan katta raqam
+    uchun 0 yozing.
 

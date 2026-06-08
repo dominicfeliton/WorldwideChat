@@ -764,4 +764,66 @@ Messages:
   wwcConfigGUISendActionBarButton: Skicka åtgärdsfält
   wwcConfigActionBarInvalid: Ogiltig inställning för åtgärdsfält för sändning inställd
     i config.yml. Standardinställt till sant...
+  wwcConfigGUIInputMethodConversation: Konversation
+  wwcAIGuidelinesBlocked: Detta meddelande blockerades av våra riktlinjer för översättning.
+  wwcConfigGUIGuidelinesAIModelButton: Ändra riktlinjer AI-modell
+  wwcConfigGUIOpenAICompatibleURLButton: Ändra OpenAI-kompatibel URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Riktlinjer AI-modellen har ställts
+    in framgångsrikt.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI-kompatibel API-nyckel
+    inställd framgångsrikt.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI-kompatibel URL har ställts
+    in framgångsrikt.
+  wwcConfigConversationOpenAICompatibleURLInput: Den aktuella webbadressen är {0}.
+    Ange en URL för OpenAI Compatible, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationOpenAICompatibleModelInput: Den nuvarande modellen är {0}.
+    Ange en modell för OpenAI Compatible, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIGuidelinesAIPromptButton: Ändra riktlinjer AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Ändra OpenAI-kompatibel prompt
+  wwcConfigGUIToggleOpenAICompatibleButton: Växla OpenAI-kompatibel
+  wwcConfigConversationInputMethodSuccess: Inmatningsmetod inställd på {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI-kompatibel modell har
+    ställts in framgångsrikt.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Kompatibel
+  wwcConfigGUIInputMethodPaperDialog: Pappersdialogruta
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Ändra OpenAI-kompatibel API-nyckel
+  wwcConfigGUIInputMethodButton: Inmatningsmetod
+  wwcConfigGUIInputMethodAuto: Bil
+  wwcConfigConversationGuidelinesAIModelInput: Den nuvarande AI-modellen för riktlinjer
+    är {0}. Ange en modell, skriv clear för att använda den aktiva leverantörsmodellen,
+    eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIOpenAICompatibleModelButton: Ändra OpenAI-kompatibel modell
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Har lyckats växla AI-kontroller av
+    riktlinjer.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Den aktuella API-nyckeln är {0}.
+    Ange en API-nyckel för OpenAI Compatible, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIInputMethodCurrent: 'Nuvarande: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Lyckades växla OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Växla riktlinjer AI-kontroller
+  wwctTranslationErrorActionBar: Fel
+  wwcConfigGUIObjectTranslationConcurrencyButton: Ändra samtidighet för objektoversättning
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Samtidsgräns för objektoversättning
+    har ställts in framgångsrikt.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Samtidsgränsen
+    för objektoversättning måste vara 1 eller högre.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Den aktuella gränsen
+    för samtidighet för objektoversättning är {0}. Skriv ett nummer 1 eller större.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ogiltig gräns för samtidighet
+    för objektöversättning inställd i config.yml. Värdet måste vara minst 1. Standardinställt
+    till 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: En AI-leverantör måste vara aktiverad för
+    att kunna använda skyddsräcken.
+  wwcConfigTranslationCapacityAuto: 'Översättningskapacitet löses automatiskt till
+    {0} aktiva översättningar och {1} köade översättningar (JVM-processorer: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Gränsen för översättningskapacitet
+    har ställts in framgångsrikt.
+  wwcConfigGUITranslationCapacityButton: Ändra översättningskapacitet
+  wwcConfigTranslationCapacityInvalid: Ogiltig gräns för översättningskapacitet inställd
+    i config.yml. Använd 0 för auto eller 1 eller högre. Standardinställt till auto...
+  wwcConfigTranslationCapacityManual: Översättningskapacitet inställd på {0} aktiva
+    översättningar och {1} köade översättningar.
+  wwcConfigConversationTranslationCapacityInvalid: Gränsen för översättningskapacitet
+    måste vara 0 för auto eller 1 eller högre.
+  wwcConfigConversationTranslationCapacityInput: Den aktuella översättningskapacitetsgränsen
+    är {0} ({1} aktiv, {2} köad). Skriv 0 för auto eller ett nummer 1 eller högre.
 

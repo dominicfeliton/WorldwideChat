@@ -756,4 +756,67 @@ Messages:
   wwcConfigGUISendActionBarButton: Kirim Bilah Tindakan
   wwcConfigActionBarInvalid: Setelan bilah tindakan kirim tidak valid yang disetel
     di config.yml. Default menjadi true...
+  wwcConfigGUIInputMethodConversation: Percakapan
+  wwcAIGuidelinesBlocked: Pesan ini diblokir oleh pedoman terjemahan kami.
+  wwcConfigGUIGuidelinesAIModelButton: Ubah Pedoman Model AI
+  wwcConfigGUIOpenAICompatibleURLButton: Ubah URL Kompatibel OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Pedoman Model AI berhasil ditetapkan.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Kunci API yang Kompatibel OpenAI
+    berhasil disetel.
+  wwcConfigConversationOpenAICompatibleURLSuccess: URL yang kompatibel dengan OpenAI
+    berhasil disetel.
+  wwcConfigConversationOpenAICompatibleURLInput: URL saat ini adalah {0}. Silakan
+    masukkan URL untuk OpenAI Compatible, atau ketik 0 untuk kembali.
+  wwcConfigConversationOpenAICompatibleModelInput: Model saat ini adalah {0}. Silakan
+    masukkan model untuk OpenAI Compatible, atau ketik 0 untuk kembali.
+  wwcConfigGUIGuidelinesAIPromptButton: Ubah Pedoman AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Ubah Prompt Kompatibel OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Alihkan OpenAI Kompatibel
+  wwcConfigConversationInputMethodSuccess: Metode input diatur ke {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Model OpenAI Kompatibel berhasil
+    diatur.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Kompatibel
+  wwcConfigGUIInputMethodPaperDialog: Dialog Kertas
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Ubah Kunci API Kompatibel OpenAI
+  wwcConfigGUIInputMethodButton: Metode Input
+  wwcConfigGUIInputMethodAuto: Otomatis
+  wwcConfigConversationGuidelinesAIModelInput: Model Guidelines AI saat ini adalah
+    {0}. Silakan masukkan model, ketik clear untuk menggunakan model penyedia aktif,
+    atau ketik 0 untuk kembali.
+  wwcConfigGUIOpenAICompatibleModelButton: Ubah Model Kompatibel OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Berhasil mengalihkan pemeriksaan Pedoman
+    AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Kunci API saat ini adalah {0}.
+    Silakan masukkan kunci API untuk OpenAI Compatible, atau ketik 0 untuk kembali.
+  wwcConfigGUIInputMethodCurrent: 'Saat ini: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Berhasil mengaktifkan OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Alihkan Pedoman Pemeriksaan AI
+  wwctTranslationErrorActionBar: Kesalahan
+  wwcConfigGUIObjectTranslationConcurrencyButton: Ubah Konkurensi Terjemahan Objek
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Batas konkurensi terjemahan
+    objek berhasil ditetapkan.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Batas konkurensi
+    terjemahan objek harus 1 atau lebih besar.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Batas konkurensi
+    terjemahan objek saat ini adalah {0}. Ketik angka 1 atau lebih besar.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Batas konkurensi terjemahan
+    objek tidak valid yang ditetapkan di config.yml. Nilai harus minimal 1. Default
+    ke 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Penyedia AI harus diaktifkan untuk menggunakan
+    Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Kapasitas terjemahan diselesaikan secara otomatis
+    ke terjemahan aktif {0} dan terjemahan antri {1} (prosesor JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Batas kapasitas terjemahan berhasil
+    ditetapkan.
+  wwcConfigGUITranslationCapacityButton: Ubah Kapasitas Terjemahan
+  wwcConfigTranslationCapacityInvalid: Batas kapasitas terjemahan tidak valid yang
+    ditetapkan di config.yml. Gunakan 0 untuk otomatis atau 1 atau lebih besar. Default
+    ke otomatis...
+  wwcConfigTranslationCapacityManual: Kapasitas terjemahan diatur ke {0} terjemahan
+    aktif dan {1} terjemahan antri.
+  wwcConfigConversationTranslationCapacityInvalid: Batas kapasitas terjemahan harus
+    0 untuk otomatis atau 1 atau lebih besar.
+  wwcConfigConversationTranslationCapacityInput: Batas kapasitas terjemahan saat ini
+    adalah {0} ({1} aktif, {2} antri). Ketik 0 untuk otomatis atau angka 1 atau lebih
+    besar.
 

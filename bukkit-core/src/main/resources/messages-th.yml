@@ -654,4 +654,59 @@ Messages:
   wwcConfigConversationSendActionBarSuccess: สลับแถบการดำเนินการส่งเรียบร้อยแล้ว
   wwcConfigGUISendActionBarButton: ส่งแถบแอ็คชั่น
   wwcConfigActionBarInvalid: ตั้งค่าแถบการดำเนินการส่งไม่ถูกต้องที่ตั้งค่าใน config.ymlค่าเริ่มต้นเป็นจริง...
+  wwcConfigGUIInputMethodConversation: การสนทนา
+  wwcAIGuidelinesBlocked: ข้อความนี้ถูกบล็อกโดยแนวทางการแปลของเรา
+  wwcConfigGUIGuidelinesAIModelButton: เปลี่ยนแนวทางแบบจำลอง AI
+  wwcConfigGUIOpenAICompatibleURLButton: เปลี่ยน URL ที่รองรับ OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: แนวทางกำหนดแบบจำลอง AI ประสบความสำเร็จ
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: ชุดคีย์ API ที่เข้ากันได้กับ
+    OpenAI เรียบร้อยแล้ว
+  wwcConfigConversationOpenAICompatibleURLSuccess: ตั้งค่า URL ที่เข้ากันได้กับ OpenAI
+    เรียบร้อยแล้ว
+  wwcConfigConversationOpenAICompatibleURLInput: URL ปัจจุบันคือ {0}กรุณาป้อน URL
+    สำหรับ OpenAI ที่รองรับ หรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigConversationOpenAICompatibleModelInput: รุ่นปัจจุบันคือ {0}โปรดป้อนรุ่นสำหรับ
+    OpenAI ที่รองรับ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIGuidelinesAIPromptButton: เปลี่ยนแนวทาง AI พรอมท์
+  wwcConfigGUIOpenAICompatiblePromptButton: เปลี่ยนพรอมต์ที่รองรับ OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: สลับเข้ากันได้กับ OpenAI
+  wwcConfigConversationInputMethodSuccess: ตั้งค่าวิธีการป้อนข้อมูลเป็น {0}
+  wwcConfigConversationOpenAICompatibleModelSuccess: ชุดโมเดลที่รองรับ OpenAI ประสบความสำเร็จ
+  wwcConfigGUIOpenAICompatibleButton: รองรับ OpenAI
+  wwcConfigGUIInputMethodPaperDialog: กล่องโต้ตอบกระดาษ
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: เปลี่ยนคีย์ API ที่รองรับ OpenAI
+  wwcConfigGUIInputMethodButton: วิธีการป้อนข้อมูล
+  wwcConfigGUIInputMethodAuto: รถยนต์
+  wwcConfigConversationGuidelinesAIModelInput: แบบจำลอง AI แนวทางปัจจุบันคือ {0}กรุณาป้อนโมเดล
+    พิมพ์clear เพื่อใช้โมเดลผู้ให้บริการที่ใช้งานอยู่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIOpenAICompatibleModelButton: เปลี่ยนโมเดลที่รองรับ OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: สลับการตรวจสอบ AI ตามแนวทางเรียบร้อยแล้ว
+  wwcConfigConversationOpenAICompatibleApiKeyInput: คีย์ API ปัจจุบันคือ {0}โปรดป้อนคีย์
+    API สำหรับ OpenAI ที่รองรับ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIInputMethodCurrent: 'ปัจจุบัน: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: สลับเข้ากันได้กับ OpenAI สำเร็จ
+  wwcConfigGUIToggleGuidelinesAIChecksButton: การสลับแนวทางการตรวจสอบ AI
+  wwctTranslationErrorActionBar: ข้อผิดพลาด
+  wwcConfigGUIObjectTranslationConcurrencyButton: เปลี่ยนความพร้อมกันการแปลวัตถุ
+  wwcConfigConversationObjectTranslationConcurrencySuccess: กำหนดขีดจำกัดความพร้อมกันการแปลวัตถุเรียบร้อยแล้ว
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ขีดจำกัดความพร้อมกันการแปลวัตถุต้องเป็น
+    1 ขึ้นไป
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: ขีดจำกัดความพร้อมกันการแปลวัตถุปัจจุบันคือ
+    {0}พิมพ์หมายเลข 1 ขึ้นไป
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: ขีด จำกัด การแปลวัตถุที่ไม่ถูกต้องที่ตั้งไว้ใน
+    config.ymlค่าต้องมีอย่างน้อย 1ค่าเริ่มต้นเป็น 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: ผู้ให้บริการ AI จะต้องเปิดใช้งานเพื่อใช้
+    Guardrails
+  wwcConfigTranslationCapacityAuto: 'ความสามารถในการแปลแก้ไขโดยอัตโนมัติเป็น {0} การแปลที่ใช้งานอยู่และการแปลในคิว
+    {1} (โปรเซสเซอร์ JVM: {2})'
+  wwcConfigConversationTranslationCapacitySuccess: กำหนดขีดจำกัดความสามารถในการแปลเรียบร้อยแล้ว
+  wwcConfigGUITranslationCapacityButton: เปลี่ยนความสามารถในการแปล
+  wwcConfigTranslationCapacityInvalid: ขีดจำกัดความสามารถในการแปลไม่ถูกต้องที่กำหนดไว้ใน
+    config.ymlใช้ 0 สำหรับอัตโนมัติ หรือ 1 ขึ้นไปค่าเริ่มต้นเป็นอัตโนมัติ...
+  wwcConfigTranslationCapacityManual: ความสามารถในการแปลที่ตั้งค่าเป็น {0} การแปลที่ใช้งานอยู่และ
+    {1} การแปลในคิว
+  wwcConfigConversationTranslationCapacityInvalid: ขีดจำกัดความสามารถในการแปลจะต้องเป็น
+    0 สำหรับอัตโนมัติ หรือ 1 ขึ้นไป
+  wwcConfigConversationTranslationCapacityInput: ขีดจำกัดความสามารถในการแปลปัจจุบันคือ
+    {0} (เปิดใช้งาน {1}, {2} อยู่ในคิว)พิมพ์ 0 สำหรับอัตโนมัติหรือหมายเลข 1 ขึ้นไป
 

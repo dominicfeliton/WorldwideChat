@@ -772,4 +772,67 @@ Messages:
   wwcConfigGUISendActionBarButton: Anfon Bariau Gweithredu
   wwcConfigActionBarInvalid: Gosodiad bar gweithredu anfon annilys wedi'i osod yn
     config.yml. Rhagosodiad i wir...
+  wwcConfigGUIInputMethodConversation: Sgwrs
+  wwcAIGuidelinesBlocked: Cafodd y neges hon ei rhwystro gan ein canllawiau cyfieithu.
+  wwcConfigGUIGuidelinesAIModelButton: Canllawiau Newid Model AI
+  wwcConfigGUIOpenAICompatibleURLButton: Newid URL Cyd-fynd â OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Canllawiau model AI wedi'u gosod
+    yn llwyddiannus.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Gosodwyd allwedd API cydnaws
+    OpenAI yn llwyddiannus.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Gosodwyd URL cydnaws OpenAI yn
+    llwyddiannus.
+  wwcConfigConversationOpenAICompatibleURLInput: Yr URL cyfredol yw {0}. Mewnbynnwch
+    URL ar gyfer OpenAI Cyd-fynd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationOpenAICompatibleModelInput: Y model presennol yw {0}. Mewnbynnwch
+    fodel ar gyfer OpenAI Compatible, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIGuidelinesAIPromptButton: Canllawiau Newid AI Prydlon
+  wwcConfigGUIOpenAICompatiblePromptButton: Newid Prompt Cydnaws OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Toglo OpenAI Cyd-fynd
+  wwcConfigConversationInputMethodSuccess: Dull mewnbwn wedi'i osod i {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Gosodwyd model cydnaws OpenAI
+    yn llwyddiannus.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Cyd-fynd
+  wwcConfigGUIInputMethodPaperDialog: Dialog Papur
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Newid Allwedd API Cydnaws OpenAI
+  wwcConfigGUIInputMethodButton: Dull Mewnbwn
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Y model AI Canllawiau presennol yw
+    {0}. Mewnbynnwch fodel, teipiwch glir i ddefnyddio'r model darparwr gweithredol,
+    neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIOpenAICompatibleModelButton: Newid Model Cydnaws OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Gwiriadau AI wedi tocio Canllawiau
+    yn llwyddiannus.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Yr allwedd API gyfredol yw {0}.
+    Mewnbynnwch allwedd API ar gyfer OpenAI Cyd-fynd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIInputMethodCurrent: 'Cyfredol: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Cyd-fynd â OpenAI yn llwyddiannus.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Toglo Canllawiau Gwiriadau AI
+  wwctTranslationErrorActionBar: Gwall
+  wwcConfigGUIObjectTranslationConcurrencyButton: Newid Cyfnewidiad Cyfieithu Gwrthrych
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Terfyn cydymffurfiaeth
+    cyfieithu gwrthrych wedi'i osod yn llwyddiannus.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Rhaid i derfyn
+    cydymffurfiaeth cyfieithu gwrthrych fod yn 1 neu'n fwy.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Y terfyn cydamserol
+    cyfieithu gwrthrych cyfredol yw {0}. Teipiwch rif 1 neu fwy.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Terfyn cydymffurfiaeth cyfieithu
+    gwrthrych annilys wedi'i osod yn config.yml. Rhaid i'r gwerth fod o leiaf 1. Rhagosodiad
+    i 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Rhaid galluogi darparwr AI i ddefnyddio
+    Rheiliau Gwarchod.
+  wwcConfigTranslationCapacityAuto: 'Capasiti cyfieithu wedi''i ddatrys yn awtomatig
+    i {0} cyfieithiadau gweithredol a {1} cyfieithiadau ciwio (proseswyr JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Terfyn capasiti cyfieithu wedi'i
+    osod yn llwyddiannus.
+  wwcConfigGUITranslationCapacityButton: Newid Capasiti Cyfieithu
+  wwcConfigTranslationCapacityInvalid: Terfyn capasiti cyfieithu annilys wedi'i osod
+    yn config.yml. Defnyddiwch 0 ar gyfer auto neu 1 neu fwy. Rhagosodiad i auto...
+  wwcConfigTranslationCapacityManual: Capasiti cyfieithu wedi'i osod i {0} cyfieithiadau
+    gweithredol a {1} cyfieithiadau wedi'u ciwio.
+  wwcConfigConversationTranslationCapacityInvalid: Rhaid i derfyn capasiti cyfieithu
+    fod 0 ar gyfer auto neu 1 neu fwy.
+  wwcConfigConversationTranslationCapacityInput: Y terfyn capasiti cyfieithu presennol
+    yw {0} ({1} yn weithredol, {2} wedi'i giwio). Teipiwch 0 ar gyfer auto neu rif
+    1 neu fwy.
 

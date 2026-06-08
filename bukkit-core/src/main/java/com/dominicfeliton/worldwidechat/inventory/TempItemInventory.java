@@ -1,6 +1,6 @@
 package com.dominicfeliton.worldwidechat.inventory;
 
-import com.cryptomorin.xseries.XMaterial;
+import org.bukkit.Material;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
@@ -36,7 +36,7 @@ public class TempItemInventory implements InventoryProvider {
     @Override
     public void init(Player player, InventoryContents contents) {
         /* Set borders to green */
-        ItemStack customDefaultBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
+        ItemStack customDefaultBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
         ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
         defaultBorderMeta.setDisplayName(" ");
         customDefaultBorders.setItemMeta(defaultBorderMeta);

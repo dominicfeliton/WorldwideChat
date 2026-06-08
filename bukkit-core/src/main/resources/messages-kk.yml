@@ -753,4 +753,68 @@ Messages:
   wwcConfigGUISendActionBarButton: Әрекет жолақтарын жіберу
   wwcConfigActionBarInvalid: Config.yml ішінде орнатылған әрекеттер жолағын жіберудің
     жарамсыз параметрі. Шын мәніне дефолт...
+  wwcConfigGUIInputMethodConversation: Әңгіме
+  wwcAIGuidelinesBlocked: Бұл хабарлама біздің аударма нұсқауларымызбен бұғатталды.
+  wwcConfigGUIGuidelinesAIModelButton: AI моделін өзгерту нұсқаулықтары
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI үйлесімді URL мекенжайын өзгертіңіз
+  wwcConfigConversationGuidelinesAIModelSuccess: Нұсқаулық AI моделі сәтті орнатылды.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI үйлесімді API кілті сәтті
+    орнатылды.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI үйлесімді URL мекенжайы
+    сәтті орнатылды.
+  wwcConfigConversationOpenAICompatibleURLInput: Ағымдағы URL мекенжайы {0}. OpenAI
+    Compatible үшін URL мекенжайын енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigConversationOpenAICompatibleModelInput: Қазіргі модель - {0}. OpenAI Compatible
+    үшін үлгіні енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUIGuidelinesAIPromptButton: AI нұсқауларын өзгерту
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI үйлесімді нұсқауын өзгертіңіз
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI үйлесімді қосыңыз
+  wwcConfigConversationInputMethodSuccess: Енгізу әдісі {0} мәніне орнатылған.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI үйлесімді модель сәтті
+    орнатылды.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI үйлесімді
+  wwcConfigGUIInputMethodPaperDialog: Қағаз диалогы
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI үйлесімді API кілтін өзгертіңіз
+  wwcConfigGUIInputMethodButton: Кіріс әдісі
+  wwcConfigGUIInputMethodAuto: Автоматты
+  wwcConfigConversationGuidelinesAIModelInput: Ағымдағы нұсқаулық AI моделі {0} болып
+    табылады. Модельді енгізіңіз, белсенді провайдер үлгісін пайдалану үшін clear
+    деп теріңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI үйлесімді моделін өзгертіңіз
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: AI тексерулері бойынша нұсқаулықтарды
+    сәтті ауыстырды.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Ағымдағы API кілті - {0}. OpenAI
+    үйлесімді үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUIInputMethodCurrent: 'Ағымдағы: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI үйлесімді сәтті ауыстырылды.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: AI тексерулерінің нұсқауларын ауыстыру
+  wwctTranslationErrorActionBar: Қате
+  wwcConfigGUIObjectTranslationConcurrencyButton: Нысан аудармасының сәйкестігін өзгерту
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Нысанды аударудың бір
+    мезгілдік шегі сәтті орнатылды.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Нысан аудармасының
+    сәйкестік шегі 1 немесе одан жоғары болуы керек.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Объектінің аудармасының
+    ағымдағы сәйкестік шегі {0} болып табылады. 1 немесе одан үлкен санды теріңіз.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Config.yml ішінде орнатылған
+    жарамсыз нысан аудармасының сәйкестік шегі. Мәні кем дегенде 1 болуы керек. 4-ке
+    дефолт...
+  wwcConfigGUIGuidelinesAIDisabledReason: Guardrails пайдалану үшін AI провайдері
+    қосылуы керек.
+  wwcConfigTranslationCapacityAuto: 'Аударма сыйымдылығы {0} белсенді аудармаларға
+    және {1} кезекке қойылған аудармаларға (JVM процессорлары: {2}) автоматты түрде
+    шешіледі.'
+  wwcConfigConversationTranslationCapacitySuccess: Аударма сыйымдылығының шегі сәтті
+    орнатылды.
+  wwcConfigGUITranslationCapacityButton: Аударма қабілетін өзгертіңіз
+  wwcConfigTranslationCapacityInvalid: Config.yml бағдарламасында орнатылған аударма
+    сыйымдылығының жарамсыз шегі. Автоматты немесе 1 немесе одан жоғары үшін 0 пайдаланыңыз.
+    Автоматты дефолт...
+  wwcConfigTranslationCapacityManual: Аударма сыйымдылығы {0} белсенді аудармаларға
+    және {1} кезекке қойылған аудармаларға орнатылған.
+  wwcConfigConversationTranslationCapacityInvalid: Аударма сыйымдылығының шегі авто
+    немесе 1 немесе одан үлкен үшін 0 болуы керек.
+  wwcConfigConversationTranslationCapacityInput: Ағымдағы аударма сыйымдылығының шегі
+    - {0} ({1} белсенді, {2} кезекке қойылған). Автоматты немесе 1 немесе одан үлкен
+    сан үшін 0 теріңіз.
 

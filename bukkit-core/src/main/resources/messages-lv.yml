@@ -765,4 +765,69 @@ Messages:
   wwcConfigGUISendActionBarButton: Sūtīt darbības joslas
   wwcConfigActionBarInvalid: Nederīgs sūtīšanas darbības joslas iestatījums, kas iestatīts
     programmā config.yml. Noklusējuma iestatījums uz patiesu...
+  wwcConfigGUIInputMethodConversation: Saruna
+  wwcAIGuidelinesBlocked: Šo ziņojumu bloķēja mūsu tulkošanas vadlīnijas.
+  wwcConfigGUIGuidelinesAIModelButton: Mainīt vadlīnijas AI modeli
+  wwcConfigGUIOpenAICompatibleURLButton: Mainīt ar OpenAI saderīgu URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Vadlīnijas AI modelis ir veiksmīgi
+    iestatīts.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Ar OpenAI saderīgu API atslēgu
+    veiksmīgi iestatītu.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Ar OpenAI saderīgu URL veiksmīgi
+    iestatītu.
+  wwcConfigConversationOpenAICompatibleURLInput: Pašreizējais URL ir {0}. Lūdzu, ievadiet
+    URL saderīgam ar OpenAI vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationOpenAICompatibleModelInput: Pašreizējais modelis ir {0}. Lūdzu,
+    ievadiet OpenAI saderīgu modeli vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIGuidelinesAIPromptButton: Mainīt vadlīnijas AI uzvedni
+  wwcConfigGUIOpenAICompatiblePromptButton: Mainīt ar OpenAI saderīgu uzvedni
+  wwcConfigGUIToggleOpenAICompatibleButton: Pārslēgt ar OpenAI saderību
+  wwcConfigConversationInputMethodSuccess: Ievades metode iestatīta uz {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI saderīgs modelis veiksmīgi
+    iestatīts.
+  wwcConfigGUIOpenAICompatibleButton: Saderīgs ar OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Papīra dialoglodziņš
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Mainīt ar OpenAI saderīgu API atslēgu
+  wwcConfigGUIInputMethodButton: Ievades metode
+  wwcConfigGUIInputMethodAuto: Automātiski
+  wwcConfigConversationGuidelinesAIModelInput: Pašreizējais vadlīniju AI modelis ir
+    {0}. Lūdzu, ievadiet modeli, ierakstiet clear, lai izmantotu aktīvo pakalpojumu
+    sniedzēja modeli, vai ierakstiet 0, lai atgrieztos atpakaļ.
+  wwcConfigGUIOpenAICompatibleModelButton: Mainīt OpenAI saderīgo modeli
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Veiksmīgi pārslēgtas vadlīnijas AI
+    pārbaudes.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Pašreizējā API atslēga ir {0}.
+    Lūdzu, ievadiet API atslēgu saderīgam ar OpenAI vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIInputMethodCurrent: 'Pašreizējais: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Veiksmīgi pārslēgts ar OpenAI saderību.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Pārslēgt vadlīnijas AI pārbaudes
+  wwctTranslationErrorActionBar: Kļūda
+  wwcConfigGUIObjectTranslationConcurrencyButton: Mainīt objektu tulkošanas vienlaicīgumu
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Objekta tulkošanas vienlaicības
+    ierobežojums ir veiksmīgi iestatīts.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Objekta tulkošanas
+    vienlaicīguma ierobežojumam jābūt 1 vai lielākam.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Pašreizējais objektu
+    tulkošanas vienlaicības ierobežojums ir {0}. Ierakstiet skaitli 1 vai lielāku.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Nederīgs objektu tulkošanas
+    vienlaicības ierobežojums iestatīts programmā config.yml. Vērtībai jābūt vismaz
+    1. Noklusējuma iestatījums uz 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: AI pakalpojumu sniedzējam jābūt iespējotam,
+    lai izmantotu aizsargas.
+  wwcConfigTranslationCapacityAuto: 'Tulkošanas jauda automātiski tiek atrisināta
+    līdz {0} aktīvajiem tulkojumiem un {1} rindā esošajiem tulkojumiem (JVM procesori:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Tulkošanas jaudas ierobežojums
+    ir veiksmīgi noteikts.
+  wwcConfigGUITranslationCapacityButton: Mainīt tulkošanas spēju
+  wwcConfigTranslationCapacityInvalid: Nederīgs tulkošanas jaudas ierobežojums iestatīts
+    programmā config.yml. Izmantojiet 0 automātiskai vai 1 vai lielākai versijai.
+    Noklusējuma iestatīšana uz automātisko...
+  wwcConfigTranslationCapacityManual: Tulkošanas jauda iestatīta uz {0} aktīviem tulkojumiem
+    un {1} tulkojumiem rindā.
+  wwcConfigConversationTranslationCapacityInvalid: Tulkošanas jaudas ierobežojumam
+    jābūt 0 automātiskajam vai 1 vai lielākam.
+  wwcConfigConversationTranslationCapacityInput: Pašreizējais tulkošanas jaudas ierobežojums
+    ir {0} ({1} aktīvs, {2} rindā). Ierakstiet 0 automātiskajam skaitlim vai skaitlim
+    1 vai lielāks.
 

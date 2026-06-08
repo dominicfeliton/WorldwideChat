@@ -8,7 +8,6 @@ import com.dominicfeliton.worldwidechat.util.PlayerRecord;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
-import com.mongodb.MongoCommandException;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -20,14 +19,9 @@ import java.io.File;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class LoadUserData {
 
@@ -81,9 +75,6 @@ public class LoadUserData {
         refs.debugMsg("Loading user records or /wwcs...");
         if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
             try (Connection sqlConnection = sql.getConnection()) {
-                /* Create tables if they do not exist already */
-                setupTables();
-
                 // Load PlayerRecord using SQL
                 try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
                     while (rs.next()) {
@@ -109,16 +100,7 @@ public class LoadUserData {
                 return;
             }
         } else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
-            /* Initialize collections, create if they do not exist */
             MongoDatabase database = mongo.getActiveDatabase();
-            try {
-                database.createCollection("ActiveTranslators");
-                database.createCollection("PlayerRecords");
-            } catch (MongoCommandException e) {
-                e.printStackTrace();
-                main.getServer().getPluginManager().disablePlugin(main);
-                return;
-            }
             MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
 
             // Load PlayerRecord using MongoDB
@@ -141,9 +123,6 @@ public class LoadUserData {
             }
         } else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
             try (Connection postgresConnection = postgres.getConnection()) {
-                /* Create tables if they do not exist already */
-                setupTables();
-
                 // Load PlayerRecord using Postgres
                 try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
                     while (rs.next()) {
@@ -226,9 +205,7 @@ public class LoadUserData {
                                 inLang,
                                 outLang
                         );
-                        if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-                            translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
-                        }
+                        applyRateLimitPreviousTime(translatorToAdd, rs.getString("rateLimitPreviousTime"));
                         translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
                         translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
                         translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
@@ -261,9 +238,7 @@ public class LoadUserData {
                                 inLang,
                                 outLang
                         );
-                        if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-                            translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
-                        }
+                        applyRateLimitPreviousTime(translatorToAdd, rs.getString("rateLimitPreviousTime"));
                         translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
                         translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
                         translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
@@ -299,9 +274,7 @@ public class LoadUserData {
                         inLang,
                         outLang
                 );
-                if (!currDoc.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-                    translatorToAdd.setRateLimitPreviousTime(Instant.parse(currDoc.getString("rateLimitPreviousTime")));
-                }
+                applyRateLimitPreviousTime(translatorToAdd, currDoc.getString("rateLimitPreviousTime"));
                 translatorToAdd.setTranslatingChatOutgoing(currDoc.getBoolean("translatingChatOutgoing"));
                 translatorToAdd.setTranslatingChatIncoming(currDoc.getBoolean("translatingChatIncoming"));
                 translatorToAdd.setTranslatingBook(currDoc.getBoolean("translatingBook"));
@@ -351,10 +324,7 @@ public class LoadUserData {
                 currentTranslator.setTranslatingChatOutgoing(currFileConfig.getBoolean("chatTranslationOutgoing"));
                 currentTranslator.setTranslatingChatIncoming(currFileConfig.getBoolean("chatTranslationIncoming"));
                 currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
-                if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
-                    currentTranslator.setRateLimitPreviousTime(
-                            Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));
-                }
+                applyRateLimitPreviousTime(currentTranslator, currFileConfig.getString("rateLimitPreviousRecordedTime"));
                 currentTranslator.setHasBeenSaved(true);
                 main.addActiveTranslator(currentTranslator);
             }
@@ -475,6 +445,9 @@ public class LoadUserData {
     }
 
     private boolean validLangCodes(String inLang, String outLang) {
+        if (inLang == null || outLang == null) {
+            return false;
+        }
         // If inLang is invalid, or None is associated with Amazon Translate
         if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, CommonRefs.LangType.LOCAL))
                 || (inLang.equalsIgnoreCase("None") && transName.equalsIgnoreCase("Amazon Translate"))) {
@@ -485,108 +458,31 @@ public class LoadUserData {
             return false;
         }
         // If inLang and outLang codes are equal
-        if (refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getLangCode().equals(refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getLangCode())) {
+        if (refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT) == null
+                || refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT) == null
+                || refs.getSupportedLang(outLang, CommonRefs.LangType.OUTPUT).getLangCode().equals(refs.getSupportedLang(inLang, CommonRefs.LangType.INPUT).getLangCode())) {
             refs.debugMsg("Langs are the same?");
             return false;
         }
         return true;
     }
 
-    private void setupTables() throws SQLException {
-        for (Map.Entry<String, Map<String, String>> entry : CommonRefs.tableSchemas.entrySet()) {
-            String tableName = entry.getKey();
-            Map<String, String> tableSchema = entry.getValue();
-            createOrUpdateTable(tableName, tableSchema);
-
-            // If creation did not succeed/bad state after attempted creation
-            refs.detectOutdatedTable(tableName);
+    private void applyRateLimitPreviousTime(ActiveTranslator translator, String value) {
+        Instant parsed = parseInstantOrNull(value);
+        if (parsed != null) {
+            translator.setRateLimitPreviousTime(parsed);
         }
     }
 
-    private void createOrUpdateTable(String tableName, Map<String, String> tableSchema) throws SQLException {
-        // TODO: Check case-sensitivity on MySql on WINDOWS
-        YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
-        String primaryKey = "playerUUID";
-        if (tableName.equals("persistentCache")) primaryKey = "randomUUID";
-
-        if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
-            try (Connection conn = sql.getConnection()) {
-                String createTableQuery = "CREATE TABLE IF NOT EXISTS " + tableName + " (";
-                createTableQuery += tableSchema.entrySet().stream()
-                        .map(column -> column.getKey() + " " + column.getValue())
-                        .collect(Collectors.joining(", "));
-                createTableQuery += String.format(", PRIMARY KEY (%s))", primaryKey);
-                refs.debugMsg(createTableQuery);
-
-                try (PreparedStatement createTable = conn.prepareStatement(createTableQuery)) {
-                    createTable.executeUpdate();
-                }
-
-                String getColumnsQuery = "SELECT COLUMN_NAME " +
-                        "FROM INFORMATION_SCHEMA.COLUMNS " +
-                        "WHERE TABLE_SCHEMA = (SELECT DATABASE()) AND TABLE_NAME = ?";
-                try (PreparedStatement getColumns = conn.prepareStatement(getColumnsQuery)) {
-                    getColumns.setString(1, tableName);
-                    ResultSet columnsResult = getColumns.executeQuery();
-
-                    Set<String> existingColumns = new HashSet<>();
-                    while (columnsResult.next()) {
-                        existingColumns.add(columnsResult.getString("COLUMN_NAME"));
-                    }
-
-                    for (Map.Entry<String, String> column : tableSchema.entrySet()) {
-                        String columnName = column.getKey();
-                        String columnType = column.getValue();
-                        if (!existingColumns.contains(columnName)) {
-                            refs.debugMsg("Adding column " + columnName);
-                            String addColumnQuery = "ALTER TABLE " + tableName + " ADD COLUMN " + columnName + " " + columnType;
-                            try (PreparedStatement addColumn = conn.prepareStatement(addColumnQuery)) {
-                                addColumn.executeUpdate();
-                            }
-                        }
-                    }
-                }
-                refs.debugMsg("Done with initial table creation/modification...");
-            }
-        } else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
-            try (Connection conn = postgres.getConnection()) {
-                String createTableQuery = "CREATE TABLE IF NOT EXISTS " + tableName + " (";
-                createTableQuery += tableSchema.entrySet().stream()
-                        .map(column -> column.getKey() + " " + column.getValue())
-                        .collect(Collectors.joining(", "));
-                createTableQuery += String.format(", PRIMARY KEY (%s))", primaryKey);
-                refs.debugMsg(createTableQuery);
-
-                try (PreparedStatement createTable = conn.prepareStatement(createTableQuery)) {
-                    createTable.executeUpdate();
-                }
-
-                String getColumnsQuery = "SELECT column_name " +
-                        "FROM information_schema.columns " +
-                        "WHERE table_schema = current_schema() AND table_name = ?";
-                try (PreparedStatement getColumns = conn.prepareStatement(getColumnsQuery)) {
-                    getColumns.setString(1, tableName.toLowerCase());
-                    ResultSet columnsResult = getColumns.executeQuery();
-
-                    Set<String> existingColumns = new HashSet<>();
-                    while (columnsResult.next()) {
-                        existingColumns.add(columnsResult.getString("column_name").toLowerCase());
-                    }
-
-                    for (Map.Entry<String, String> column : tableSchema.entrySet()) {
-                        String columnName = column.getKey().toLowerCase();
-                        String columnType = column.getValue();
-                        if (!existingColumns.contains(columnName)) {
-                            refs.debugMsg("Adding column " + columnName);
-                            String addColumnQuery = "ALTER TABLE " + tableName + " ADD COLUMN " + columnName + " " + columnType;
-                            try (PreparedStatement addColumn = conn.prepareStatement(addColumnQuery)) {
-                                addColumn.executeUpdate();
-                            }
-                        }
-                    }
-                }
-                refs.debugMsg("Done with initial table creation/modification for PostgreSQL...");
-            }
+    private Instant parseInstantOrNull(String value) {
+        if (value == null || value.isBlank() || value.equalsIgnoreCase("None")) {
+            return null;
+        }
+        try {
+            return Instant.parse(value);
+        } catch (RuntimeException ex) {
+            return null;
         }
     }
+
 }

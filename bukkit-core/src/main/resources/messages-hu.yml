@@ -781,4 +781,71 @@ Messages:
   wwcConfigGUISendActionBarButton: Műveleti sávok küldése
   wwcConfigActionBarInvalid: Érvénytelen küldési műveletsáv beállítása a config.yml-ben.
     Alapértelmezés szerint igaz...
+  wwcConfigGUIInputMethodConversation: Beszélgetés
+  wwcAIGuidelinesBlocked: Ezt az üzenetet a fordítási irányelveink blokkolták.
+  wwcConfigGUIGuidelinesAIModelButton: Az AI modell iránymutatások módosítása
+  wwcConfigGUIOpenAICompatibleURLButton: Az OpenAI kompatibilis URL módosítása
+  wwcConfigConversationGuidelinesAIModelSuccess: Útmutató Az AI modell sikeresen beállítása.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Az OpenAI kompatibilis API kulcskészlet
+    sikeresen.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Az OpenAI kompatibilis URL sikeresen
+    beállítva.
+  wwcConfigConversationOpenAICompatibleURLInput: 'Az aktuális URL: {0}. Kérjük, írja
+    be az OpenAI Compatible URL-jét, vagy írja be a 0 parancsot a visszalépéshez.'
+  wwcConfigConversationOpenAICompatibleModelInput: A jelenlegi modell a {0}. Kérjük,
+    adja meg az OpenAI Compatible modellt, vagy írja be a 0 parancsot a visszaállításhoz.
+  wwcConfigGUIGuidelinesAIPromptButton: Útmutató módosítása AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Az OpenAI kompatibilis promptjának módosítása
+  wwcConfigGUIToggleOpenAICompatibleButton: Az OpenAI kompatibilis váltás
+  wwcConfigConversationInputMethodSuccess: A beviteli módszer beállítása {0} értékre
+    van.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Az OpenAI kompatibilis modellkészlet
+    sikeresen.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI kompatibilis
+  wwcConfigGUIInputMethodPaperDialog: Papír párbeszédablak
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Az OpenAI kompatibilis API-kulcs módosítása
+  wwcConfigGUIInputMethodButton: Bemeneti módszer
+  wwcConfigGUIInputMethodAuto: autó
+  wwcConfigConversationGuidelinesAIModelInput: A jelenlegi Guidelines AI modell a
+    {0}. Adjon meg egy modellt, írja be a clear parancsot az aktív szolgáltatói modell
+    használatához, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigGUIOpenAICompatibleModelButton: Az OpenAI kompatibilis modell módosítása
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Sikeresen váltotta be az irányelvek
+    AI ellenőrzéseit.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Az aktuális API kulcs a {0}. Kérjük,
+    írjon be egy API-kulcsot az OpenAI kompatibilitáshoz, vagy írja be a 0 parancsot
+    a visszalépéshez.
+  wwcConfigGUIInputMethodCurrent: 'Aktuális: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Sikeresen kapcsolta be az OpenAI kompatibilitást.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Útmutató átkapcsolása AI-ellenőrzések
+  wwctTranslationErrorActionBar: Hiba
+  wwcConfigGUIObjectTranslationConcurrencyButton: Objektumfordítás párhuzamosságának
+    módosítása
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Az objektumfordítás párhuzamos
+    korlátja sikeresen beállítva.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Az objektumfordítás
+    párhuzamos határának 1-nek vagy annál nagyobbnak kell lennie.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Az aktuális objektumfordítási
+    egyidejű korlát {0}. Írjon be egy 1-es vagy annál nagyobb számot.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Érvénytelen objektumfordítási
+    egyidejű korlát beállítva a config.yml-ben. Az értéknek legalább 1-nek kell lennie.
+    Alapértelmezés szerint 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: A mesterséges intelligencia-szolgáltatónak
+    engedélyeznie kell a Guardrails használatát.
+  wwcConfigTranslationCapacityAuto: 'A fordítási kapacitás automatikusan feloldódik
+    {0} aktív fordításokra és {1} sorba helyezett fordításokra (JVM processzorok:
+    {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: A fordítási kapacitás korlátja
+    sikeresen beállítva.
+  wwcConfigGUITranslationCapacityButton: Fordítási kapacitás módosítása
+  wwcConfigTranslationCapacityInvalid: Érvénytelen fordítási kapacitási korlát beállítva
+    a config.yml fájlban. Használja a 0 értéket automatikus vagy 1 vagy annál nagyobb
+    értékekhez. Alapértelmezés szerint automatikus...
+  wwcConfigTranslationCapacityManual: A fordítási kapacitás {0} aktív fordításokra
+    és {1} sorba sorolt fordításokra van beállítva.
+  wwcConfigConversationTranslationCapacityInvalid: A fordítási kapacitás korlátozásának
+    automatikus vagy 1 vagy annál nagyobb érték esetén 0-nak kell lennie.
+  wwcConfigConversationTranslationCapacityInput: A fordítási kapacitás jelenlegi korlátja
+    {0} ({1} aktív, {2} sorban áll). Írja be a 0 parancsot az automatikus vagy az
+    1-es vagy annál nagyobb számhoz.
 

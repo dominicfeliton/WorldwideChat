@@ -715,4 +715,65 @@ Messages:
   wwcConfigGUISendActionBarButton: إرسال أشرطة الإجراءات
   wwcConfigActionBarInvalid: تم تعيين إعداد شريط إجراءات الإرسال غير صالح في config.yml.
     يتم الانتقال إلى «صحيح»...
+  wwcConfigGUIInputMethodConversation: محادثة
+  wwcAIGuidelinesBlocked: تم حظر هذه الرسالة من خلال إرشادات الترجمة الخاصة بنا.
+  wwcConfigGUIGuidelinesAIModelButton: 'إرشادات التغيير: نموذج الذكاء الاصطناعي'
+  wwcConfigGUIOpenAICompatibleURLButton: تغيير عنوان URL المتوافق مع OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: تم وضع نموذج إرشادات الذكاء الاصطناعي
+    بنجاح.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: تم تعيين مفتاح API المتوافق
+    مع OpenAI بنجاح.
+  wwcConfigConversationOpenAICompatibleURLSuccess: تم تعيين عنوان URL المتوافق مع
+    OpenAI بنجاح.
+  wwcConfigConversationOpenAICompatibleURLInput: عنوان URL الحالي هو {0}. يرجى إدخال
+    عنوان URL لـ OpenAI Compatible، أو اكتب 0 للعودة.
+  wwcConfigConversationOpenAICompatibleModelInput: النموذج الحالي هو {0}. يرجى إدخال
+    نموذج لـ OpenAI Compatible، أو اكتب 0 للعودة.
+  wwcConfigGUIGuidelinesAIPromptButton: موجه الذكاء الاصطناعي الخاص بإرشادات التغيير
+  wwcConfigGUIOpenAICompatiblePromptButton: تغيير المطالبة المتوافقة مع OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: التبديل بين التوافق مع الذكاء الاصطناعي
+  wwcConfigConversationInputMethodSuccess: تم تعيين أسلوب الإدخال إلى {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: تم تعيين الطراز المتوافق مع OpenAI
+    بنجاح.
+  wwcConfigGUIOpenAICompatibleButton: متوافق مع OpenAI
+  wwcConfigGUIInputMethodPaperDialog: مربع حوار ورقي
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: قم بتغيير مفتاح API المتوافق مع OpenAI
+  wwcConfigGUIInputMethodButton: طريقة الإدخال
+  wwcConfigGUIInputMethodAuto: السيارات
+  wwcConfigConversationGuidelinesAIModelInput: نموذج الإرشادات الحالي للذكاء الاصطناعي
+    هو {0}. يرجى إدخال نموذج أو كتابة clear لاستخدام نموذج الموفر النشط أو كتابة 0
+    للعودة.
+  wwcConfigGUIOpenAICompatibleModelButton: تغيير نموذج OpenAI المتوافق
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: تم تبديل اختبارات الذكاء الاصطناعي
+    الخاصة بالإرشادات بنجاح.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: مفتاح API الحالي هو {0}. يرجى
+    إدخال مفتاح API لـ OpenAI المتوافق، أو اكتب 0 للعودة.
+  wwcConfigGUIInputMethodCurrent: 'الحالي: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: تم التبديل بنجاح إلى OpenAI المتوافق.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: تبديل الإرشادات وفحوصات الذكاء الاصطناعي
+  wwctTranslationErrorActionBar: خطأ
+  wwcConfigGUIObjectTranslationConcurrencyButton: تغيير تزامن ترجمة الكائن
+  wwcConfigConversationObjectTranslationConcurrencySuccess: تم تعيين حد التزامن لترجمة
+    الكائنات بنجاح.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: يجب أن يكون حد
+    التزامن لترجمة الكائنات 1 أو أكثر.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: حد التزامن الحالي
+    لترجمة الكائن هو {0}. اكتب الرقم 1 أو أكبر.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: تم تعيين حد التزامن غير صالح
+    لترجمة الكائنات في config.yml. يجب أن تكون القيمة 1 على الأقل. الإعداد الافتراضي
+    إلى 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: يجب تمكين موفر الذكاء الاصطناعي لاستخدام
+    Guardrails.
+  wwcConfigTranslationCapacityAuto: 'تم حل سعة الترجمة تلقائيًا إلى الترجمات النشطة
+    {0} والترجمات {1} في قائمة الانتظار (معالجات JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: تم تعيين حد سعة الترجمة بنجاح.
+  wwcConfigGUITranslationCapacityButton: تغيير سعة الترجمة
+  wwcConfigTranslationCapacityInvalid: تم تعيين حد سعة ترجمة غير صالح في config.yml.
+    استخدم 0 تلقائيًا أو 1 أو أكبر. جاري الانتقال إلى الوضع التلقائي...
+  wwcConfigTranslationCapacityManual: تم تعيين سعة الترجمة إلى {0} للترجمات النشطة
+    والترجمات {1} في قائمة الانتظار.
+  wwcConfigConversationTranslationCapacityInvalid: يجب أن يكون حد سعة الترجمة 0 لـ
+    auto أو 1 أو أكثر.
+  wwcConfigConversationTranslationCapacityInput: الحد الأقصى لسعة الترجمة الحالية
+    هو {0} ({1} نشط، {2} في قائمة الانتظار). اكتب 0 للرقم التلقائي أو الرقم 1 أو أكبر.
 

@@ -1,6 +1,5 @@
 package com.dominicfeliton.worldwidechat.util;
 
-import com.cryptomorin.xseries.XSound;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.translators.*;
@@ -10,7 +9,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.CharMatcher;
 import fr.minuskube.inv.SmartInventory;
 import me.clip.placeholderapi.PlaceholderAPI;
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.TextReplacementConfig;
@@ -33,7 +31,6 @@ import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalTime;
 import org.threeten.bp.ZoneId;
 import org.threeten.bp.format.DateTimeFormatter;
-import org.threeten.bp.temporal.ChronoUnit;
 import org.threeten.bp.zone.ZoneRulesException;
 
 import java.io.File;
@@ -57,9 +54,9 @@ public class CommonRefs {
     /* Important vars */
     protected static WorldwideChat main = WorldwideChat.instance;
 
-    protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    protected static WorldwideChatHelper wwcHelper = main == null ? null : main.getServerFactory().getWWCHelper();
 
-    public static String[] supportedMCVersions = {"1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13"};
+    public static String[] supportedMCVersions = {"26.1", "1.21.11", "1.21.10", "1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20"};
 
     public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 
@@ -74,7 +71,11 @@ public class CommonRefs {
         supportedPluginLangCodes.putAll(fixedMap);
     }
 
-    public static final Map<String, String> translatorPairs = new HashMap<>();
+    public static final Map<String, String> translatorPairs = new LinkedHashMap<>();
+    public static final Set<String> AI_PROVIDER_CONFIG_KEYS = Set.of(
+            "Translator.useChatGPT",
+            "Translator.useOpenAICompatible",
+            "Translator.useOllama");
 
     static {
         translatorPairs.put("Translator.useGoogleTranslate", "Google Translate");
@@ -84,10 +85,31 @@ public class CommonRefs {
         translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
         translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
         translatorPairs.put("Translator.useChatGPT", "ChatGPT");
+        translatorPairs.put("Translator.useOpenAICompatible", "OpenAI Compatible");
         translatorPairs.put("Translator.useOllama", "Ollama");
 
         // For testing only!
         translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
+    }
+
+    public static boolean isAIProviderConfig(String configKey) {
+        return AI_PROVIDER_CONFIG_KEYS.contains(configKey);
+    }
+
+    public static boolean isAIProviderEnabled(YamlConfiguration mainConfig) {
+        if (mainConfig == null) return false;
+        for (String configKey : AI_PROVIDER_CONFIG_KEYS) {
+            if (mainConfig.getBoolean(configKey)) return true;
+        }
+        return false;
+    }
+
+    public static String resolveGuidelinesAIModel(YamlConfiguration mainConfig, String activeTranslatorModel) {
+        String guidelinesModel = mainConfig.getString("Translator.guidelinesAIModel", "");
+        if (guidelinesModel != null && !guidelinesModel.isBlank()) {
+            return guidelinesModel.trim();
+        }
+        return activeTranslatorModel == null ? "" : activeTranslatorModel;
     }
 
     public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
@@ -161,14 +183,11 @@ public class CommonRefs {
         STOP_TRANSLATION("STOP_TRANSLATION", safeSound(Sound.BLOCK_WOODEN_BUTTON_CLICK_OFF), 1.0f, 1.0f),
         RELOAD_SUCCESS("RELOAD_SUCCESS", safeSound(Sound.BLOCK_BEACON_ACTIVATE), 1.0f, 1.0f),
         RELOAD_ERROR("RELOAD_ERROR", safeSound(Sound.BLOCK_DISPENSER_FAIL), 1.0f, 1.0f),
-        STATS_SUCCESS("STATS_SUCCESS",
-                main.getCurrMCVersion().toString().contains("1.13")
-                        ? safeSound(Sound.BLOCK_NOTE_BLOCK_PLING)
-                        : safeSound(Sound.ITEM_BOOK_PAGE_TURN),
-                1.0f, 1.0f),
+        STATS_SUCCESS("STATS_SUCCESS", safeSound(Sound.ITEM_BOOK_PAGE_TURN), 1.0f, 1.0f),
         STATS_FAIL("STATS_FAIL", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 1.0f),
         WWC_VERSION("WWC_VERSION", safeSound(Sound.ENTITY_PLAYER_LEVELUP), 1.0f, 1.0f),
-        PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f);
+        PENDING_RELOAD("PENDING_RELOAD", safeSound(Sound.BLOCK_NOTE_BLOCK_XYLOPHONE), 1.0f, 1.0f),
+        DISABLED_BUTTON("DISABLED_BUTTON", safeSound(Sound.BLOCK_NOTE_BLOCK_BASS), 1.0f, 0.5f);
 
         private final String name;
         private final Sound sound;
@@ -199,24 +218,10 @@ public class CommonRefs {
         }
 
         private static Sound safeSound(Sound sound) {
-            CommonRefs refs = main.getServerFactory().getCommonRefs();
-
             if (sound == null) {
-                refs.debugMsg("Null sound provided - defaulting to fallback sound");
                 return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
             }
-
-            try {
-                Sound parsedSound = XSound.matchXSound(sound).parseSound();
-                if (parsedSound == null) {
-                    refs.debugMsg("Failed to parse sound: " + sound.getClass().getName() + " - defaulting to fallback sound");
-                    return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
-                }
-                return parsedSound;
-            } catch (Exception e) {
-                refs.debugMsg("Error processing sound: " + sound.getClass().getName() + " - " + e.getMessage());
-                return Sound.ENTITY_EXPERIENCE_ORB_PICKUP;
-            }
+            return sound;
         }
 
         public static SoundType fromString(String name) {
@@ -485,19 +490,28 @@ public class CommonRefs {
 
         /* Get message from messages.yml */
         String convertedOriginalMessage = resetCode;
-        if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-            convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
+        String messageKey = ChatColor.stripColor(messageName);
+        if (messagesConfig.getString("Overrides." + messageKey) != null) {
+            convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + messageKey));
         } else {
-            if (messagesConfig.getString("Messages." + ChatColor.stripColor(messageName)) == null) {
-                if (code.isEmpty()) {
-                    main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
-                    return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.").build();
-                } else {
-                    main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.");
-                    return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.").build();
+            String configuredMessage = messagesConfig.getString("Messages." + messageKey);
+            if (configuredMessage == null) {
+                YamlConfiguration englishMessagesConfig = main.getConfigManager().getCustomMessagesConfig("en");
+                if (englishMessagesConfig != null) {
+                    configuredMessage = englishMessagesConfig.getString("Messages." + messageKey);
                 }
             }
-            convertedOriginalMessage += messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
+
+            if (configuredMessage == null) {
+                if (code.isEmpty()) {
+                    main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
+                    return Component.text(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
+                } else {
+                    main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.");
+                    return Component.text(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.");
+                }
+            }
+            convertedOriginalMessage += configuredMessage;
         }
 
         // Translate color codes in the original message
@@ -507,7 +521,7 @@ public class CommonRefs {
         convertedOriginalMessage = convertedOriginalMessage.replace("'", "''").trim();
 
         // Return fixedMessage with replaced vars
-        return Component.text().content(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements)).build();
+        return Component.text(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements));
     }
 
     public void sendMsg(String messageName, CommandSender sender) {
@@ -531,6 +545,76 @@ public class CommonRefs {
         sendMsg(sender, getCompMsg(messageName, replacements, "&r" + resetCode, sender), true);
     }
 
+    public void sendStatusMsg(String messageName, String replacement, String resetCode, Player player) {
+        sendStatusMsg(messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public void sendStatusMsg(String messageName, String[] replacements, String resetCode, Player player) {
+        if (shouldSendStatusActionBar(player)) {
+            try {
+                wwcHelper.sendActionBar(getCompMsg(messageName, replacements, "&r" + resetCode, player), player);
+                return;
+            } catch (RuntimeException | LinkageError ignored) {
+            }
+        }
+
+        sendMsg(messageName, replacements, resetCode, player);
+    }
+
+    public TranslationProgressIndicator.Handle beginStatusMsg(String messageName, String replacement, String resetCode, Player player) {
+        return beginStatusMsg(messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public TranslationProgressIndicator.Handle beginStatusMsg(String messageName, String[] replacements, String resetCode, Player player) {
+        if (shouldSendStatusActionBar(player)) {
+            return main.getTranslationProgressIndicator().beginImmediately(player, getCompMsg(messageName, replacements, "&r" + resetCode, player));
+        }
+
+        sendMsg(messageName, replacements, resetCode, player);
+        return TranslationProgressIndicator.Handle.noop();
+    }
+
+    public TranslationProgressIndicator.Handle beginObjectStatusMsg(String messageName, String replacement, String resetCode, Player player) {
+        return beginObjectStatusMsg(messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public TranslationProgressIndicator.Handle beginObjectStatusMsg(String messageName, String[] replacements, String resetCode, Player player) {
+        if (shouldSendStatusActionBar(player)) {
+            return main.getTranslationProgressIndicator().beginObjectImmediately(player, getCompMsg(messageName, replacements, "&r" + resetCode, player));
+        }
+
+        sendMsg(messageName, replacements, resetCode, player);
+        return TranslationProgressIndicator.Handle.noop();
+    }
+
+    public void finishStatusMsg(TranslationProgressIndicator.Handle status, String messageName, String replacement, String resetCode, Player player) {
+        finishStatusMsg(status, messageName, new String[]{replacement}, resetCode, player);
+    }
+
+    public void finishStatusMsg(TranslationProgressIndicator.Handle status, String messageName, String[] replacements, String resetCode, Player player) {
+        if (status != null && status.isActive()) {
+            status.close(getCompMsg(messageName, replacements, "&r" + resetCode, player));
+            return;
+        }
+
+        sendStatusMsg(messageName, replacements, resetCode, player);
+    }
+
+    public void failStatusMsg(TranslationProgressIndicator.Handle status, Player player) {
+        if (status != null && status.isActive()) {
+            main.getTranslationProgressIndicator().markError(player);
+            status.close();
+        }
+    }
+
+    private boolean shouldSendStatusActionBar(Player player) {
+        return player != null
+                && main.isEnabled()
+                && main.getConfigManager() != null
+                && main.getSendActionBar()
+                && main.getConfigManager().getMainConfig().getBoolean("Chat.sendActionBar");
+    }
+
     /**
      * Sends the user a properly formatted message through our adventure instance.
      *
@@ -542,27 +626,40 @@ public class CommonRefs {
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         if (sender == null || originalMessage == null) return;
 
-        if (sender instanceof Player && !((Player) sender).isOnline()) return;
+        if (!Bukkit.isPrimaryThread()) {
+            wwcHelper.runSync(true, 0, new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    sendMsg(sender, originalMessage, addPrefix);
+                }
+            }, sender instanceof Player ? ENTITY : GLOBAL, sender instanceof Player ? new Object[]{sender} : null);
+            return;
+        }
 
+        Component outMessage = addPrefix
+                ? main.getPluginPrefix()
+                .append(Component.space())
+                .append(originalMessage)
+                : Component.empty().append(originalMessage);
         try {
-            Audience adv = main.adventure().sender(sender);
-            TextComponent outMessage = addPrefix
-                    ? Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.space())
-                    .append(originalMessage.asComponent())
-                    .build()
-                    : Component.text().append(originalMessage.asComponent()).build();
-            adv.sendMessage(outMessage);
-        } catch (IllegalStateException ignored) {
-            // In the unlikely case Adventure throws, we silently drop the message.
+            sender.sendMessage(serial(outMessage));
+        } catch (RuntimeException | LinkageError ignored) {
         }
     }
 
     public void sendMsg(UUID playerId, Component originalMessage, boolean addPrefix) {
         if (playerId == null || originalMessage == null) return;
+        if (!Bukkit.isPrimaryThread()) {
+            wwcHelper.runSync(true, 0, new GenericRunnable() {
+                @Override
+                protected void execute() {
+                    sendMsg(playerId, originalMessage, addPrefix);
+                }
+            }, GLOBAL, null);
+            return;
+        }
         Player p = Bukkit.getPlayer(playerId);
-        if (p == null || !p.isOnline()) return;
+        if (p == null) return;
         sendMsg(p, originalMessage, addPrefix);
     }
 
@@ -600,40 +697,6 @@ public class CommonRefs {
         return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
     }
 
-    public void sendTransInitAction(Player currPlayer) {
-        YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        if (!conf.getBoolean("Chat.sendActionBar")) return;
-
-        GenericRunnable initAction = new GenericRunnable() {
-            @Override
-            protected void execute() {
-                wwcHelper.sendActionBar(getCompMsg("wwctTranslationInitActionBar", null, "&o", currPlayer), currPlayer);
-            }
-        };
-        wwcHelper.runSync(initAction, ENTITY, new Object[] {currPlayer});
-    }
-
-    public void sendTransFinishAction(Player currPlayer) {
-        YamlConfiguration conf = main.getConfigManager().getMainConfig();
-        if (!conf.getBoolean("Chat.sendActionBar")) return;
-
-        GenericRunnable endAction = new GenericRunnable() {
-            @Override
-            protected void execute() {
-                wwcHelper.sendActionBar(getCompMsg("wwctTranslationFinishActionBar", null, "&o&a", currPlayer), currPlayer);
-                // Only show action bar for 0.75s
-                GenericRunnable clearAction = new GenericRunnable() {
-                    @Override
-                    protected void execute() {
-                        wwcHelper.sendActionBar(Component.empty(), currPlayer);
-                    }
-                };
-                wwcHelper.runSync(true, 15, clearAction, ENTITY, new Object[] {currPlayer});
-            }
-        };
-        wwcHelper.runSync(endAction, ENTITY, new Object[] {currPlayer});
-    }
-
     /**
      * Translates array of Strings.
      * All of them can be marked as "1" translation and bypass the rate limit.
@@ -659,16 +722,16 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return arrayOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
-        sendTransInitAction(currPlayer);
-
-        String[] out = new String[arrayOfMsgs.length];
-        for (int i = 0; i < arrayOfMsgs.length; i++) {
-            out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            String[] out = new String[arrayOfMsgs.length];
+            for (int i = 0; i < arrayOfMsgs.length; i++) {
+                out[i] = (translateText(arrayOfMsgs[i], currPlayer, countAsOneRequest));
+            }
+            return out;
+        } finally {
+            progress.close();
         }
-
-        sendTransFinishAction(currPlayer);
-
-        return out;
     }
 
     /**
@@ -694,28 +757,165 @@ public class CommonRefs {
         if (!inCache && countAsOneRequest && shouldRateLimit(false, currPlayer)) return listOfMsgs;
 
         // Either we are ignoring the rate limit or the user is not being rate limited here.
-        sendTransInitAction(currPlayer);
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            List<String> out = new ArrayList<>();
+            for (String str : listOfMsgs) {
+                out.add(translateText(str, currPlayer, countAsOneRequest));
+            }
+            return out;
+        } finally {
+            progress.close();
+        }
+    }
 
-        List<String> out = new ArrayList<>();
-        for (String str : listOfMsgs) {
-            out.add(translateText(str, currPlayer, countAsOneRequest));
+    public String[] translateObjectText(String[] arrayOfMsgs, Player currPlayer) {
+        List<String> out = translateObjectText(Arrays.asList(arrayOfMsgs), currPlayer);
+        return out.toArray(new String[0]);
+    }
+
+    public List<String> translateObjectText(List<String> listOfMsgs, Player currPlayer) {
+        return translateObjectTextInBatch(listOfMsgs, currPlayer);
+    }
+
+    private List<String> translateObjectTextInBatch(List<String> listOfMsgs, Player currPlayer) {
+        List<String> original = new ArrayList<>(listOfMsgs);
+        if (original.isEmpty() || areAllObjectMessagesCached(original, currPlayer)) {
+            return translateObjectTextAfterRateLimit(original, currPlayer);
         }
 
-        sendTransFinishAction(currPlayer);
+        if (shouldRateLimit(false, currPlayer)) {
+            return original;
+        }
+
+        return translateObjectTextAfterRateLimit(original, currPlayer);
+    }
+
+    private List<String> translateObjectTextAfterRateLimit(List<String> original, Player currPlayer) {
+        List<String> out = new ArrayList<>(original);
+        List<Integer> workIndexes = getObjectTranslationWorkIndexes(original);
+        if (workIndexes.isEmpty()) {
+            return out;
+        }
+
+        int concurrencyLimit = Math.max(1, Math.min(main.getObjectTranslationConcurrencyLimit(), workIndexes.size()));
+        if (concurrencyLimit == 1) {
+            for (int index : workIndexes) {
+                out.set(index, translateObjectTextEntry(original.get(index), currPlayer));
+            }
+            return out;
+        }
+
+        CompletionService<IndexedTranslation> completionService = new ExecutorCompletionService<>(main.getCallbackExecutor());
+        List<Future<IndexedTranslation>> futures = new ArrayList<>();
+        int nextIndexToSubmit = 0;
+        int completed = 0;
+
+        try {
+            while (nextIndexToSubmit < concurrencyLimit) {
+                futures.add(submitObjectTranslation(completionService, original, currPlayer, workIndexes.get(nextIndexToSubmit)));
+                nextIndexToSubmit++;
+            }
+
+            while (completed < workIndexes.size()) {
+                Future<IndexedTranslation> completedFuture = completionService.take();
+                IndexedTranslation result = completedFuture.get();
+                out.set(result.index(), result.value());
+                completed++;
+
+                if (nextIndexToSubmit < workIndexes.size()) {
+                    futures.add(submitObjectTranslation(completionService, original, currPlayer, workIndexes.get(nextIndexToSubmit)));
+                    nextIndexToSubmit++;
+                }
+            }
+        } catch (InterruptedException e) {
+            cancelTranslations(futures);
+            Thread.currentThread().interrupt();
+            debugMsg("Interrupted bounded object translation batch.");
+            return original;
+        } catch (ExecutionException e) {
+            cancelTranslations(futures);
+            Throwable cause = e.getCause();
+            if (cause instanceof RuntimeException runtimeException) {
+                throw runtimeException;
+            }
+            if (cause instanceof LinkageError linkageError) {
+                throw linkageError;
+            }
+            throw new RuntimeException(cause);
+        }
 
         return out;
     }
 
+    private Future<IndexedTranslation> submitObjectTranslation(CompletionService<IndexedTranslation> completionService,
+                                                              List<String> original,
+                                                              Player currPlayer,
+                                                              int index) {
+        return completionService.submit(() -> new IndexedTranslation(index, translateObjectTextEntry(original.get(index), currPlayer)));
+    }
+
+    private String translateObjectTextEntry(String inMessage, Player currPlayer) {
+        return translateText(inMessage, currPlayer, true, null, false);
+    }
+
+    private void cancelTranslations(List<Future<IndexedTranslation>> futures) {
+        for (Future<IndexedTranslation> future : futures) {
+            future.cancel(true);
+        }
+    }
+
+    private List<Integer> getObjectTranslationWorkIndexes(List<String> messages) {
+        List<Integer> indexes = new ArrayList<>();
+        for (int i = 0; i < messages.size(); i++) {
+            if (requiresTranslatorRequest(messages.get(i))) {
+                indexes.add(i);
+            }
+        }
+        return indexes;
+    }
+
+    private boolean areAllObjectMessagesCached(List<String> messages, Player currPlayer) {
+        ActiveTranslator trans = getActiveTranslatorFor(currPlayer);
+        for (String msg : messages) {
+            if (!requiresTranslatorRequest(msg)) {
+                continue;
+            }
+
+            if (!main.hasCacheTerm(new CachedTranslation(trans.getInLangCode(), trans.getOutLangCode(), msg))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean requiresTranslatorRequest(String message) {
+        return message != null && message.length() > 1;
+    }
+
+    private record IndexedTranslation(int index, String value) {
+    }
+
     public String translateText(String inMessage, Player currPlayer) {
-        /* Init action bar */
-        sendTransInitAction(currPlayer);
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            return translateText(inMessage, currPlayer, false);
+        } finally {
+            progress.close();
+        }
+    }
 
-        String out = translateText(inMessage, currPlayer, false);
+    public GuidelinesCheckContext createGuidelinesCheckContext(String originalMessage, Player notifyPlayer) {
+        return new GuidelinesCheckContext(originalMessage, notifyPlayer);
+    }
 
-        /* End action bar */
-        sendTransFinishAction(currPlayer);
-
-        return out;
+    public String translateTextForChat(String inMessage, Player currPlayer, GuidelinesCheckContext guidelinesCheck) {
+        TranslationProgressIndicator.Handle progress = main.getTranslationProgressIndicator().begin(currPlayer);
+        try {
+            return translateText(inMessage, currPlayer, false, guidelinesCheck);
+        } finally {
+            progress.close();
+        }
     }
 
     /**
@@ -726,6 +926,14 @@ public class CommonRefs {
      * @return String - The translated message. If this is equal to inMessage, the translation failed.
      */
     public String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit) {
+        return translateText(inMessage, currPlayer, ignoreRateLimit, null);
+    }
+
+    private String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit, GuidelinesCheckContext guidelinesCheck) {
+        return translateText(inMessage, currPlayer, ignoreRateLimit, guidelinesCheck, true);
+    }
+
+    private String translateText(String inMessage, Player currPlayer, boolean ignoreRateLimit, GuidelinesCheckContext guidelinesCheck, boolean markStatusErrors) {
         /* If translator settings are invalid, do not do this... */
         debugMsg("translateText() call using " + main.getTranslatorName());
         if (inMessage.length() <= 1 || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
@@ -746,19 +954,10 @@ public class CommonRefs {
             PlayerRecord currPlayerRecord = main
                     .getPlayerRecord(currPlayer, true);
             if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null)
-                currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
+                currPlayerRecord.incrementAttemptedTranslations();
 
             /* Initialize current vars + ActiveTranslator, sanity checks */
-            ActiveTranslator currActiveTranslator;
-            if (!main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-                    && (main.isActiveTranslator(currPlayer))) {
-                currActiveTranslator = main.getActiveTranslator(currPlayer);
-            } else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-                    && (main.isActiveTranslator(currPlayer))) {
-                currActiveTranslator = main.getActiveTranslator(currPlayer);
-            } else {
-                currActiveTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
-            }
+            ActiveTranslator currActiveTranslator = getActiveTranslatorFor(currPlayer);
 
             /* Char limit check */
             int limit = main.getMessageCharLimit();
@@ -797,7 +996,7 @@ public class CommonRefs {
             String testCache = main.getCacheTerm(testTranslation);
 
             if (testCache != null) {
-                currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+                currPlayerRecord.incrementSuccessfulTranslations();
                 currPlayerRecord.setLastTranslationTime();
                 return StringEscapeUtils.unescapeJava(
                         ChatColor.translateAlternateColorCodes('&', testCache));
@@ -812,11 +1011,22 @@ public class CommonRefs {
             String out = inMessage;
             debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from user " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
 
-            // Do it!
-            out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
+            try (TranslationCapacityLimiter.Permit permit = main.getTranslationCapacityLimiter().acquire(getTranslationCapacityQueueWaitSeconds(), TimeUnit.SECONDS)) {
+                if (!permit.acquired()) {
+                    debugMsg("Translation capacity is busy (" + permit.rejectionReason() + "). Returning original text.");
+                    return inMessage;
+                }
+
+                if (guidelinesCheck == null) {
+                    checkGuidelinesAI(inMessage);
+                } else {
+                    guidelinesCheck.ensurePassed(this);
+                }
+                out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
+            }
 
             /* Update stats */
-            currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+            currPlayerRecord.incrementSuccessfulTranslations();
             currPlayerRecord.setLastTranslationTime();
 
             /* Add to cache */
@@ -833,23 +1043,36 @@ public class CommonRefs {
             /* Get translation */
             finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
         } catch (TimeoutException | ExecutionException | InterruptedException e) {
+            TranslationFailureException failure = findTranslationFailure(e);
+            TimeoutException timeout = findTimeout(e);
             /* Sanitize error before proceeding to write it to errorLog */
-            if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
+            if (isTranslationCancellation(e) || main.getTranslatorName().equals("Starting") || serverIsStopping()) {
                 // If we are getting stopped by onDisable, end this immediately.
                 debugMsg("Interrupted translateText(), or server state is changing...");
+                process.cancel(true);
+                return inMessage;
+            } else if (e instanceof ExecutionException && failure != null) {
+                if (guidelinesCheck != null && failure.isGuidelinesFailure()) {
+                    guidelinesCheck.markBlocked();
+                }
+                markTranslationIndicatorError(currPlayer, markStatusErrors);
+                handleTranslationFailure(failure, guidelinesCheck == null ? currPlayer : guidelinesCheck.notifyPlayer());
+                return inMessage;
+            } else if (timeout != null) {
+                // If we get a timeoutexception
+                process.cancel(true);
+                markTranslationIndicatorError(currPlayer, markStatusErrors);
+                sendTimeoutExceptionMsg(currPlayer);
                 return inMessage;
             } else if (e instanceof ExecutionException && e.getCause() != null && isErrorToIgnore(e.getCause())) {
                 // If the translator has low confidence
                 debugMsg("Low confidence from current translator!");
                 return inMessage;
-            } else if (e instanceof TimeoutException) {
-                // If we get a timeoutexception
-                sendTimeoutExceptionMsg(currPlayer);
-                return inMessage;
             }
 
             /* Add 1 to error count */
-            main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
+            markTranslationIndicatorError(currPlayer, markStatusErrors);
+            int errorCount = main.incrementTranslatorErrorCount();
             sendMsg("wwcTranslatorError", "", "&c", currPlayer);
             main.getLogger()
                     .severe(getPlainMsg("wwcTranslatorErrorConsole", "&6" + currPlayer.getName(), "&c", null));
@@ -880,10 +1103,10 @@ public class CommonRefs {
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-            debugMsg("Error Count: " + main.getTranslatorErrorCount());
+            debugMsg("Error Count: " + errorCount);
 
             /* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-            if (main.getTranslatorErrorCount() >= main.getErrorLimit()) {
+            if (errorCount >= main.getErrorLimit()) {
                 main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReached"));
                 main.getLogger().severe(getPlainMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
                 wwcHelper.runSync(new GenericRunnable() {
@@ -899,7 +1122,189 @@ public class CommonRefs {
         return finalOut;
     }
 
-    public String getTranslatorResult(String translatorName, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException {
+    private void markTranslationIndicatorError(Player currPlayer, boolean markStatusErrors) {
+        if (!markStatusErrors) {
+            return;
+        }
+
+        TranslationProgressIndicator indicator = main.getTranslationProgressIndicator();
+        if (indicator != null) {
+            indicator.markError(currPlayer);
+        }
+    }
+
+    private ActiveTranslator getActiveTranslatorFor(Player currPlayer) {
+        if (main.isActiveTranslator(currPlayer)) {
+            return main.getActiveTranslator(currPlayer);
+        }
+        return main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+    }
+
+    private void checkGuidelinesAI(String inMessage) throws TranslationFailureException {
+        YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+        boolean guidelinesAIEnabled = mainConfig.getBoolean("Translator.enableGuidelinesAIChecks");
+        if (!guidelinesAIEnabled) {
+            return;
+        }
+        if (!isAIProviderEnabled(mainConfig)) {
+            debugMsg("Guidelines AI check skipped because no AI provider is enabled.");
+            return;
+        }
+
+        try {
+            String translatorName = main.getTranslatorName();
+            switch (translatorName) {
+                case "ChatGPT" -> {
+                    OpenAIProviderSettings settings = getOpenAIProviderSettings("ChatGPT", mainConfig);
+                    String guidelinesModel = resolveGuidelinesAIModel(mainConfig, settings.model());
+                    OpenAITranslation openAITranslationInstance = new OpenAITranslation(
+                            settings.apiKey(),
+                            settings.url(),
+                            guidelinesModel,
+                            main.getGuidelinesAIPrompt(),
+                            false,
+                            main.getCallbackExecutor());
+                    openAITranslationInstance.checkGuidelines(inMessage);
+                }
+                case "OpenAI Compatible" -> {
+                    OpenAIProviderSettings settings = getOpenAIProviderSettings("OpenAI Compatible", mainConfig);
+                    String guidelinesModel = resolveGuidelinesAIModel(mainConfig, settings.model());
+                    OpenAITranslation openAITranslationInstance = new OpenAITranslation(
+                            settings.apiKey(),
+                            settings.url(),
+                            guidelinesModel,
+                            main.getGuidelinesAIPrompt(),
+                            false,
+                            main.getCallbackExecutor());
+                    openAITranslationInstance.checkGuidelines(inMessage);
+                }
+                case "Ollama" -> {
+                    String guidelinesModel = resolveGuidelinesAIModel(
+                            mainConfig,
+                            mainConfig.getString("Translator.ollamaModel"));
+                    OllamaTranslation ollamaTranslationInstance = new OllamaTranslation(
+                            mainConfig.getString("Translator.ollamaURL"),
+                            false,
+                            main.getCallbackExecutor());
+                    ollamaTranslationInstance.checkGuidelines(inMessage, guidelinesModel, main.getGuidelinesAIPrompt());
+                }
+                default -> debugMsg("Guidelines AI check skipped because active translator does not support it.");
+            }
+        } catch (TranslationFailureException e) {
+            throw e;
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            debugMsg("Guidelines AI check interrupted.");
+            throw new TranslationFailureException("General", "Guidelines AI check interrupted.", true);
+        } catch (Exception e) {
+            debugMsg("Guidelines AI check failed: " + ExceptionUtils.getMessage(e));
+            throw new TranslationFailureException("General", "Guidelines AI check failed.", true);
+        }
+    }
+
+    private OpenAIProviderSettings getOpenAIProviderSettings(String translatorName, YamlConfiguration mainConfig) {
+        return switch (translatorName) {
+            case "ChatGPT" -> new OpenAIProviderSettings(
+                    mainConfig.getString("Translator.chatGPTAPIKey"),
+                    mainConfig.getString("Translator.chatGPTURL"),
+                    mainConfig.getString("Translator.chatGPTModel"));
+            case "OpenAI Compatible" -> new OpenAIProviderSettings(
+                    mainConfig.getString("Translator.openAICompatibleAPIKey"),
+                    mainConfig.getString("Translator.openAICompatibleURL"),
+                    mainConfig.getString("Translator.openAICompatibleModel"));
+            default -> null;
+        };
+    }
+
+    private TranslationFailureException findTranslationFailure(Throwable throwable) {
+        Throwable current = throwable;
+        while (current != null) {
+            if (current instanceof TranslationFailureException failure) {
+                return failure;
+            }
+            current = current.getCause();
+        }
+        return null;
+    }
+
+    private TimeoutException findTimeout(Throwable throwable) {
+        Throwable current = throwable;
+        while (current != null) {
+            if (current instanceof TimeoutException timeout) {
+                return timeout;
+            }
+            current = current.getCause();
+        }
+        return null;
+    }
+
+    private boolean isTranslationCancellation(Throwable throwable) {
+        Throwable current = throwable;
+        while (current != null) {
+            if (current instanceof InterruptedException
+                    || current instanceof CancellationException
+                    || current instanceof RejectedExecutionException) {
+                return true;
+            }
+            current = current.getCause();
+        }
+        return false;
+    }
+
+    private long getTranslationCapacityQueueWaitSeconds() {
+        return Math.max(1, WorldwideChat.translatorFatalAbortSeconds - WorldwideChat.translatorConnectionTimeoutSeconds);
+    }
+
+    private void handleTranslationFailure(TranslationFailureException failure, Player currPlayer) {
+        debugMsg("Translation failed without counting as success: " + failure.getReason() + " (" + failure.getMessage() + ")");
+        if (failure.shouldNotifyPlayer()) {
+            sendMsg("wwcAIGuidelinesBlocked", "", "&c", currPlayer);
+        }
+    }
+
+    public static final class GuidelinesCheckContext {
+        private final String originalMessage;
+        private final Player notifyPlayer;
+        private boolean checked;
+        private boolean blocked;
+
+        private GuidelinesCheckContext(String originalMessage, Player notifyPlayer) {
+            this.originalMessage = originalMessage;
+            this.notifyPlayer = notifyPlayer;
+        }
+
+        private void ensurePassed(CommonRefs refs) throws TranslationFailureException {
+            if (checked) {
+                return;
+            }
+
+            checked = true;
+            try {
+                refs.checkGuidelinesAI(originalMessage);
+            } catch (TranslationFailureException e) {
+                blocked = true;
+                throw e;
+            }
+        }
+
+        private Player notifyPlayer() {
+            return notifyPlayer;
+        }
+
+        private void markBlocked() {
+            checked = true;
+            blocked = true;
+        }
+
+        public boolean isBlocked() {
+            return blocked;
+        }
+    }
+
+    private record OpenAIProviderSettings(String apiKey, String url, String model) {
+    }
+
+    public String getTranslatorResult(String translatorName, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException, TranslationFailureException {
         return getTranslatorResult(translatorName, "", "", "", true);
     }
 
@@ -916,7 +1321,7 @@ public class CommonRefs {
      * @throws InterruptedException - If we interrupt the callback
      * @throws TimeoutException     - If the callback times out
      */
-    public String getTranslatorResult(String translatorName, String inMessage, String inLangCode, String outLangCode, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException {
+    public String getTranslatorResult(String translatorName, String inMessage, String inLangCode, String outLangCode, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException, TranslationFailureException {
         String out = inMessage;
         YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 
@@ -969,12 +1374,26 @@ public class CommonRefs {
                 out = systranTranslateInstance.useTranslator(inMessage, inLangCode, outLangCode);
                 break;
             case "ChatGPT":
-                OpenAITranslation openAITranslationInstance = new OpenAITranslation(
-                        mainConfig.getString("Translator.chatGPTAPIKey"),
-                        mainConfig.getString("Translator.chatGPTURL"),
+                OpenAIProviderSettings chatGPTSettings = getOpenAIProviderSettings(translatorName, mainConfig);
+                OpenAITranslation chatGPTTranslationInstance = new OpenAITranslation(
+                        chatGPTSettings.apiKey(),
+                        chatGPTSettings.url(),
+                        chatGPTSettings.model(),
+                        main.getAISystemPrompt(),
                         isInitializing,
                         main.getCallbackExecutor());
-                out = openAITranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
+                out = chatGPTTranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
+                break;
+            case "OpenAI Compatible":
+                OpenAIProviderSettings openAICompatibleSettings = getOpenAIProviderSettings(translatorName, mainConfig);
+                OpenAITranslation openAICompatibleTranslationInstance = new OpenAITranslation(
+                        openAICompatibleSettings.apiKey(),
+                        openAICompatibleSettings.url(),
+                        openAICompatibleSettings.model(),
+                        main.getAISystemPrompt(),
+                        isInitializing,
+                        main.getCallbackExecutor());
+                out = openAICompatibleTranslationInstance.useTranslator(inMessage, inLangCode, outLangCode);
                 break;
             case "Ollama":
                 OllamaTranslation ollamaInstance = new OllamaTranslation(
@@ -1193,7 +1612,7 @@ public class CommonRefs {
         // TOOD: Make sure this works properly again
         String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
         if (exceptionMessage == null) {
-            // Usually just a timeout error. If a user gets this frequently they'll know something's wrong anyways
+            // Preserve legacy handling for message-less non-timeout translator exceptions.
             return true;
         }
 
@@ -1250,7 +1669,7 @@ public class CommonRefs {
         boolean exempt = false;
         int personalRateLimit = 0;
         String permissionCheck = "";
-        ActiveTranslator currActiveTranslator = main.getActiveTranslator(currPlayer);
+        ActiveTranslator currActiveTranslator = getActiveTranslatorFor(currPlayer);
 
 
         if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !serverIsStopping() && !main.getCurrPlatform().equals("Folia")) {
@@ -1289,13 +1708,13 @@ public class CommonRefs {
 
         // Personal Limits (Override Global)
         if (!exempt && personalRateLimit > 0) {
-            if (!isRateLimited(personalRateLimit, currActiveTranslator, currPlayer)) {
+            if (!passesRateLimit(personalRateLimit, currActiveTranslator, currPlayer)) {
                 //return inMessage;
                 return true;
             }
             // Global Limits
         } else if (!exempt && main.getGlobalRateLimit() > 0) {
-            if (!isRateLimited(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
+            if (!passesRateLimit(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
                 //return inMessage;
                 return true;
             }
@@ -1313,23 +1732,12 @@ public class CommonRefs {
      * @param sender               - The sender of the original command
      * @return Boolean - Returns false if the user should currently be rate limited, and true otherwise.
      */
-    private boolean isRateLimited(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
-        if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
-            Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
-            Instant currTime = Instant.now();
-            if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
-                sendMsg("wwcRateLimit", "" + ChronoUnit.SECONDS.between(currTime,
-                                previous.plus(delay, ChronoUnit.SECONDS)),
-                        "&e",
-                        sender);
-                return false;
-            } else {
-                currActiveTranslator.setRateLimitPreviousTime(Instant.now());
-            }
-        } else {
-            currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+    private boolean passesRateLimit(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
+        ActiveTranslator.RateLimitDecision decision = currActiveTranslator.tryAcquireRateLimitSlot(delay, Instant.now());
+        if (!decision.allowed()) {
+            sendMsg("wwcRateLimit", "" + decision.secondsRemaining(), "&e", sender);
         }
-        return true;
+        return decision.allowed();
     }
 
     /**
@@ -1339,14 +1747,23 @@ public class CommonRefs {
      * @return String - Returns an empty string if no permission was found, or the permission name if it is
      */
     private String checkForRateLimitPermissions(Player currPlayer) {
-        Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
-        if (perms.contains("worldwidechat.ratelimit.exempt")) {
+        if (currPlayer.hasPermission("worldwidechat.ratelimit.exempt")) {
             return "worldwidechat.ratelimit.exempt";
         }
 
+        Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
         for (PermissionAttachmentInfo perm : perms) {
-            if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
-                return perm.getPermission();
+            if (!perm.getValue()) {
+                continue;
+            }
+
+            String permission = perm.getPermission();
+            String prefix = "worldwidechat.ratelimit.";
+            if (permission.startsWith(prefix)) {
+                String delay = permission.substring(prefix.length());
+                if (!delay.isEmpty() && delay.chars().allMatch(Character::isDigit)) {
+                    return permission;
+                }
             }
         }
         return "";

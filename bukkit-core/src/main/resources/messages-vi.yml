@@ -780,4 +780,66 @@ Messages:
   wwcConfigGUISendActionBarButton: Gửi thanh hành động
   wwcConfigActionBarInvalid: Cài đặt thanh hành động gửi không hợp lệ được đặt trong
     config.yml. Mặc định là true...
+  wwcConfigGUIInputMethodConversation: Cuộc trò chuyện
+  wwcAIGuidelinesBlocked: Thông báo này đã bị chặn bởi nguyên tắc dịch thuật của chúng
+    tôi.
+  wwcConfigGUIGuidelinesAIModelButton: Hướng dẫn thay đổi mô hình AI
+  wwcConfigGUIOpenAICompatibleURLButton: Thay đổi URL tương thích OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Hướng dẫn mô hình AI được thiết lập
+    thành công.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Khóa API tương thích OpenAI
+    đã thiết lập thành công.
+  wwcConfigConversationOpenAICompatibleURLSuccess: URL tương thích OpenAI được thiết
+    lập thành công.
+  wwcConfigConversationOpenAICompatibleURLInput: URL hiện tại là {0}. Vui lòng nhập
+    URL cho OpenAI Compatible, hoặc nhập 0 để quay lại.
+  wwcConfigConversationOpenAICompatibleModelInput: Mô hình hiện tại là {0}. Vui lòng
+    nhập mô hình cho OpenAI Compatible hoặc gõ 0 để quay trở lại.
+  wwcConfigGUIGuidelinesAIPromptButton: Hướng dẫn thay đổi AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Thay đổi lời nhắc tương thích OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Chuyển đổi tương thích OpenAI
+  wwcConfigConversationInputMethodSuccess: Phương thức nhập được đặt thành {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Mô hình tương thích OpenAI được
+    thiết lập thành công.
+  wwcConfigGUIOpenAICompatibleButton: Tương thích OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Hộp thoại giấy
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Thay đổi khóa API tương thích OpenAI
+  wwcConfigGUIInputMethodButton: Phương pháp nhập
+  wwcConfigGUIInputMethodAuto: Tự động
+  wwcConfigConversationGuidelinesAIModelInput: Mô hình Hướng dẫn AI hiện tại là {0}.
+    Vui lòng nhập một mô hình, nhập clear để sử dụng mô hình nhà cung cấp hoạt động
+    hoặc nhập 0 để quay lại.
+  wwcConfigGUIOpenAICompatibleModelButton: Thay đổi mô hình tương thích OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Bật thành công Hướng dẫn kiểm tra AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Khóa API hiện tại là {0}. Vui
+    lòng nhập khóa API cho OpenAI Compatible hoặc gõ 0 để quay trở lại.
+  wwcConfigGUIInputMethodCurrent: 'Hiện tại: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Bật thành công OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Chuyển đổi nguyên tắc Kiểm tra AI
+  wwctTranslationErrorActionBar: Lỗi
+  wwcConfigGUIObjectTranslationConcurrencyButton: Thay đổi đồng thời dịch đối tượng
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Giới hạn đồng thời dịch
+    thuật đối tượng được thiết lập thành công.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Giới hạn đồng thời
+    dịch thuật đối tượng phải từ 1 trở lên.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Giới hạn đồng thời
+    dịch đối tượng hiện tại là {0}. Nhập số 1 hoặc lớn hơn.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Giới hạn đồng thời dịch đối
+    tượng không hợp lệ được đặt trong config.yml. Giá trị phải ít nhất là 1. Mặc định
+    là 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Nhà cung cấp AI phải được bật để sử dụng
+    Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Khả năng dịch tự động giải quyết thành bản dịch
+    đang hoạt động {0} và các bản dịch xếp hàng {1} (bộ xử lý JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Giới hạn khả năng dịch được thiết
+    lập thành công.
+  wwcConfigGUITranslationCapacityButton: Thay đổi khả năng dịch thuật
+  wwcConfigTranslationCapacityInvalid: Giới hạn dung lượng dịch không hợp lệ được
+    đặt trong config.yml. Sử dụng 0 cho tự động hoặc 1 trở lên. Mặc định là tự động...
+  wwcConfigTranslationCapacityManual: Khả năng dịch được đặt thành {0} bản dịch đang
+    hoạt động và {1} bản dịch xếp hàng.
+  wwcConfigConversationTranslationCapacityInvalid: Giới hạn khả năng dịch phải là
+    0 cho tự động hoặc 1 trở lên.
+  wwcConfigConversationTranslationCapacityInput: Giới hạn dung lượng dịch hiện tại
+    là {0} ({1} đang hoạt động, {2} xếp hàng). Nhập 0 cho tự động hoặc số 1 trở lên.
 

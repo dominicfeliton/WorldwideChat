@@ -747,4 +747,64 @@ Messages:
   wwcConfigGUISendActionBarButton: ایکشن بارونه واستوئ
   wwcConfigActionBarInvalid: په config.yml کې ټاکل شوی د عمل بار ترتیب غير لاستوئ.
     ریښتینې ته ناپسند کول...
+  wwcConfigGUIInputMethodConversation: خبرې کول
+  wwcAIGuidelinesBlocked: دا پیغام زموږ د ژباړې لارښوونونو له خوا
+  wwcConfigGUIGuidelinesAIModelButton: د AI ماډل لارښوونې
+  wwcConfigGUIOpenAICompatibleURLButton: د OpenAI مطابقت پذیر URL بدل کړئ
+  wwcConfigConversationGuidelinesAIModelSuccess: لارښوونې AI ماډل په بریالیتوب
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI مطابقت پذیر API کلیدي
+    په کامیابۍ سره ټاکل
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI مطابقت پذیر URL په کامیابۍ
+    سره ټاکل
+  wwcConfigConversationOpenAICompatibleURLInput: اوسنۍ URL {0} دی. مهرباني وکړئ د
+    OpenAI مطابقت لپاره یو URL داخل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
+  wwcConfigConversationOpenAICompatibleModelInput: اوسنۍ ماډل {0} دی. مهرباني وکړئ
+    د OpenAI مطابقت لپاره یو ماډل داخل کړئ، یا بیرته لاړ شو لپاره 0 ډول وکړئ.
+  wwcConfigGUIGuidelinesAIPromptButton: لارښوونې بدلون د AI
+  wwcConfigGUIOpenAICompatiblePromptButton: د OpenAI مطابقت پټنګ بدل کړئ
+  wwcConfigGUIToggleOpenAICompatibleButton: د OpenAI سازگار ټینګل کړئ
+  wwcConfigConversationInputMethodSuccess: د ننوتلو طریقه {0} ته ټاکل شوی.
+  wwcConfigConversationOpenAICompatibleModelSuccess: د OpenAI مطابقت پذیر ماډل په
+    بریالیتوب سره
+  wwcConfigGUIOpenAICompatibleButton: د OpenAI مطابقت لري
+  wwcConfigGUIInputMethodPaperDialog: د کاغذ ډایلو
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: د OpenAI مطابقت پذیر API کلید بدل کړئ
+  wwcConfigGUIInputMethodButton: د ننوتلو طریقه
+  wwcConfigGUIInputMethodAuto: ګاډی
+  wwcConfigConversationGuidelinesAIModelInput: اوسنۍ لارښوونې AI ماډل {0} دی. مهرباني
+    وکړئ یو ماډل داخل کړئ، د فعال چمتو کونکي ماډل کارولو لپاره روښانه ډول کړئ، یا
+    بیرته لاړ شي
+  wwcConfigGUIOpenAICompatibleModelButton: د OpenAI سازگار ماډل بدل کړئ
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: په بریالیتوب سره لارښوونې د AI چیک
+    کولو
+  wwcConfigConversationOpenAICompatibleApiKeyInput: اوسنۍ API کلید {0} دی. مهرباني
+    وکړئ د OpenAI مطابقت لپاره یو API کلید داخل کړئ، یا بیرته لاړ شو لپاره 0 ډیټر
+    کړئ.
+  wwcConfigGUIInputMethodCurrent: 'اوسنۍ: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: په بریالیتوب سره د OpenAI مطابقت لري.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: د AI چیک لارښوونې ټول کړئ
+  wwctTranslationErrorActionBar: تېروتنه
+  wwcConfigGUIObjectTranslationConcurrencyButton: د شی ژباړې همغږۍ بدل کړئ
+  wwcConfigConversationObjectTranslationConcurrencySuccess: د موضوع ژباړې همغږۍ حد
+    په بریالیتوب سره تنظیم
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: د موضوع ژباړې د
+    همغږۍ حد باید 1 یا زیات وي.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: د اوسنۍ شی ژباړې
+    همغږۍ حد {0} دی. یو شمیره 1 یا ډیر وټاکئ.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: د اعتبار توضیحات ژباړې همغږۍ
+    حد په config.yml کې ټاکل شوی. ارزښت باید لږترلږه 1 وي. 4 ته ډیفالټ کول...
+  wwcConfigGUIGuidelinesAIDisabledReason: یو AI چمتو کونکي باید د Guardrails کارولو
+    لپاره فعال شي.
+  wwcConfigTranslationCapacityAuto: 'د ژباړې ظرفیت د {0} فعال ژباړې او {1} قطار ژباړې
+    (JVM پروسیسرز: {2}) ته اتوماتیک حل شوی.'
+  wwcConfigConversationTranslationCapacitySuccess: د ژباړې ظرفیت محدودیت په کامی
+  wwcConfigGUITranslationCapacityButton: ژباړې ظرفیت بدل
+  wwcConfigTranslationCapacityInvalid: د ژباړې د ظرفیت محدودیت په config.yml کې ټاکل
+    شوی. د اتومات یا 1 یا لوی لپاره 0 وکاروئ. خودکار ته ډیفولټ کول...
+  wwcConfigTranslationCapacityManual: د ژباړې ظرفیت د {0} فعال ژباړې او {1} قطارې
+    ژباړې ته ټاکل
+  wwcConfigConversationTranslationCapacityInvalid: د ژباړې ظرفیت محدودیت باید 0 د
+    خودکار یا 1 یا لوی لپاره وي.
+  wwcConfigConversationTranslationCapacityInput: د ژباړې اوسنۍ ظرفیت محدودیت {0} ({1}
+    فعال، {2} قطار) دی. د اتوماتیک یا یو شمیره 1 یا ډیر لپاره 0 ډول کړئ.
 

@@ -4,9 +4,9 @@
 
 ## ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dominicfeliton/WorldwideChat/build-latest-worldwidechat-commit.yml?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/dominicfeliton/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
 
-#### PSA: If you are on 1.13-1.15, please use our Spigot jar regardless if you are using Paper or not. The adventure API + additional Paper components are not available before 1.16.
+### WorldwideChat is a translation plugin for Spigot, PaperMC, and Folia 1.20+ on Java 21+.
 
-### WorldwideChat is a translation plugin for Spigot, PaperMC, and Folia 1.13+ on JDK 11+.
+WorldwideChat is compiled as Java 21 bytecode. Paper and MockBukkit 26.1.x require a newer Java runtime for those specific servers/tests; follow the Java requirement for the server version you run.
 
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:
@@ -37,7 +37,7 @@ working right!
 Additionally, if you want to test this plugin out before installing, you can!
 
 - Check out our **Test Server** here:
-  ```152.67.252.19```
+  ```dominicplugins.airdns.org:18001```
 
 ## Installation
 
@@ -49,7 +49,7 @@ its [SpigotMC](https://www.spigotmc.org/resources/worldwidechat.89910/) page.
 Pull requests are welcome. File issues in the **Issues** tab; include things like version number, server software,
 console logs, and a detailed description.
 
-_(If you would like to develop for this plugin, please check out ```dev/COMPILE.md```.)_
+_(If you would like to develop for this plugin, please check out `dev/COMPILE.md` for build commands, local database setup, and disposable `/tmp` test-server helpers.)_
 
 ## Credits
 

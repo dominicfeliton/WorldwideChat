@@ -730,4 +730,61 @@ Messages:
   wwcConfigGUISendActionBarButton: क्रिया बार पाठवा
   wwcConfigActionBarInvalid: config.yml मध्ये सेट केलेले अवैध पाठवा अॅक्शन बार सेटिंग.
     खरे म्हणून डीफॉल्ट करणे...
+  wwcConfigGUIInputMethodConversation: संभाषण
+  wwcAIGuidelinesBlocked: हा संदेश आमच्या भाषांतर मार्गदर्शक तत्त्
+  wwcConfigGUIGuidelinesAIModelButton: मार्गदर्शक तत्त्त्
+  wwcConfigGUIOpenAICompatibleURLButton: ओपनएआय सुसंगत URL बद
+  wwcConfigConversationGuidelinesAIModelSuccess: मार्गदर्शक तत्त्वे एआय
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: ओपनएआय सुसंगत API की यशस्वीरित्या
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI सुसंगत URL यशस्वीरित्या
+    सेट केल
+  wwcConfigConversationOpenAICompatibleURLInput: सध्याचा URL {0} आहे. कृपया ओपनएआय
+    सुसंगत साठी URL इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationOpenAICompatibleModelInput: सध्याचे मॉडेल {0} आहे. कृपया OpenAI
+    सुसंगत साठी एक मॉडेल इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIGuidelinesAIPromptButton: मार्गदर्शक तत्त्त्
+  wwcConfigGUIOpenAICompatiblePromptButton: ओपनएआय सुसंगत प्रॉम
+  wwcConfigGUIToggleOpenAICompatibleButton: ओपनएआय सुसंगत टॉग
+  wwcConfigConversationInputMethodSuccess: इनपुट पद्धत {0} वर सेट केली.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI सुसंगत मॉडेल यशस्वीरित्या
+  wwcConfigGUIOpenAICompatibleButton: ओपनएआय सुसंग
+  wwcConfigGUIInputMethodPaperDialog: पेपर संवाद
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: ओपनएएआय सुसंगत एपीआय
+  wwcConfigGUIInputMethodButton: इनपुट पधत
+  wwcConfigGUIInputMethodAuto: ऑटो
+  wwcConfigConversationGuidelinesAIModelInput: सध्याचे मार्गदर्शक एआय मॉडेल {0} कृपया
+    एक मॉडेल इनपुट करा, सक्रिय प्रदाता मॉडेल वापरण्यासाठी क्लियर टाइप करा किंवा परत
+    जाण्यासाठी 0
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI सुसंगत मॉडेल बदल
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: यशस्वीरित्या टॉगल मार्गदर्श
+  wwcConfigConversationOpenAICompatibleApiKeyInput: सध्याची एपीआय की {0} आहे. कृपया
+    ओपनएआय सुसंगत साठी एपीआय की इनपुट करा किंवा परत जाण्यासाठी 0 टाइप करा
+  wwcConfigGUIInputMethodCurrent: 'वर्तमान: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: यशस्वीरित्या ओपनएआय सुसंगत
+  wwcConfigGUIToggleGuidelinesAIChecksButton: एआय चेक मार्गदर्शक
+  wwctTranslationErrorActionBar: त्रुटी
+  wwcConfigGUIObjectTranslationConcurrencyButton: ऑब्जेक्ट भाषांतर समक्रम
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ऑब्जेक्ट भाषांतर समक्रमता
+    मर्यादा
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ऑब्जेक्ट भाषांतर
+    समक्रमता मर्यादा 1 किंवा त्यापेक्षा
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: वर्तमान ऑब्जेक्ट
+    ट्रांसलेशन समर्यादा {0} आहे क्रमांक 1 किंवा त्यापेक्षा जास्त टाइप
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml मध्ये अवैध ऑब्जेक्ट
+    ट्रान्सलेशन समर्याद सेट केली मूल्य किमान 1 असणे आवश्यक आहे. 4 वर डीफॉल्ट करणे...
+  wwcConfigGUIGuidelinesAIDisabledReason: एआय प्रदाता गार्डरेल्स वापरण्यासाठी सक्षम
+    असणे आवश्यक आहे
+  wwcConfigTranslationCapacityAuto: 'भाषांतर क्षमता {0} सक्रिय भाषांतर आणि {1} क्रियाकृत
+    भाषांतर (जेव्हीएम प्रोसेसर: {2}) यांचे'
+  wwcConfigConversationTranslationCapacitySuccess: भाषांतर क्षमता मर्यादा यशस्व
+  wwcConfigGUITranslationCapacityButton: भाषांतरण क्षमता
+  wwcConfigTranslationCapacityInvalid: config.yml मध्ये अवैध भाषांतर क्षमता मर्यादा
+    सेट केली. ऑटो किंवा 1 किंवा त्यापेक्षा जास्त साठी 0 वापरा. ऑटो डीफॉल्ट करणे...
+  wwcConfigTranslationCapacityManual: भाषांतर क्षमता {0} सक्रिय भाषांतर आणि {1} क्रियाकृत
+    भाषांतर वर
+  wwcConfigConversationTranslationCapacityInvalid: ऑटो किंवा 1 किंवा त्यापेक्षा जास्त
+    भाषांतर क्षमता मर्यादा 0 असावा
+  wwcConfigConversationTranslationCapacityInput: सध्याची भाषांतर क्षमता मर्यादा {0}
+    आहे ({1} सक्रिय, {2} रांगी). ऑटो किंवा 1 किंवा त्यापेक्षा जास्त क्रमांकासाठी 0
+    टाइप करा.
 

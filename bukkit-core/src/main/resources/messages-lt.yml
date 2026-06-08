@@ -776,4 +776,67 @@ Messages:
   wwcConfigGUISendActionBarButton: Siųsti veiksmų juostas
   wwcConfigActionBarInvalid: Neteisingas siuntimo veiksmų juostos nustatymas nustatytas
     config.yml. Numatyta tiesa...
+  wwcConfigGUIInputMethodConversation: Pokalbis
+  wwcAIGuidelinesBlocked: Šį pranešimą užblokavo mūsų vertimo gairės.
+  wwcConfigGUIGuidelinesAIModelButton: Pakeiskite gaires AI modelį
+  wwcConfigGUIOpenAICompatibleURLButton: Pakeiskite “OpenAI” suderinamą URL
+  wwcConfigConversationGuidelinesAIModelSuccess: Sėkmingai nustatytas AI modelis.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: “OpenAI” suderinamas API raktas
+    sėkmingai nustatytas.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Su OpenAI suderinamas URL sėkmingai
+    nustatytas.
+  wwcConfigConversationOpenAICompatibleURLInput: Dabartinis URL yra {0}. Įveskite
+    “OpenAI Compatibility” URL arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationOpenAICompatibleModelInput: Dabartinis modelis yra {0}. Įveskite
+    “OpenAI Compatibility” modelį arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIGuidelinesAIPromptButton: Pakeiskite gaires AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Pakeiskite “OpenAI” suderinamą raginimą
+  wwcConfigGUIToggleOpenAICompatibleButton: Perjungti “OpenAI” suderinamumą
+  wwcConfigConversationInputMethodSuccess: Įvesties metodas nustatytas kaip {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: “OpenAI” suderinamas modelis
+    sėkmingai nustatytas.
+  wwcConfigGUIOpenAICompatibleButton: “OpenAI” suderinamas
+  wwcConfigGUIInputMethodPaperDialog: Popieriaus dialogas
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Pakeiskite “OpenAI” suderinamą API raktą
+  wwcConfigGUIInputMethodButton: Įvesties metodas
+  wwcConfigGUIInputMethodAuto: Automatinis
+  wwcConfigConversationGuidelinesAIModelInput: Dabartinis gairių AI modelis yra {0}.
+    Įveskite modelį, įveskite aišku, kad galėtumėte naudoti aktyvaus teikėjo modelį,
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIOpenAICompatibleModelButton: Pakeiskite “OpenAI” suderinamą modelį
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Sėkmingai perjungtos gairių AI patikrinimai.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Dabartinis API raktas yra {0}.
+    Įveskite API raktą, skirtą “OpenAI Compatibility”, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigGUIInputMethodCurrent: 'Dabartinis: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Sėkmingai perjungtas “OpenAI Compatibility”.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Perjungti gaires AI patikrinimus
+  wwctTranslationErrorActionBar: Klaida
+  wwcConfigGUIObjectTranslationConcurrencyButton: Keisti objekto vertimo lygiagretumą
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Objekto vertimo lygiagretumo
+    riba nustatyta sėkmingai.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Objekto vertimo
+    lygiagretumo riba turi būti 1 ar didesnė.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Dabartinė objekto
+    vertimo lygiagretumo riba yra {0}. Įveskite skaičių 1 ar didesnį.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Neteisingas objekto vertimo
+    lygiagretumo apribojimas nustatytas config.yml. Vertė turi būti bent 1. Numatytasis
+    nustatymas į 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: AI teikėjas turi būti įgalintas naudoti
+    “Guardrails”.
+  wwcConfigTranslationCapacityAuto: 'Vertimo talpa automatiškai išspręsta į {0} aktyvių
+    vertimų ir {1} eilės vertimų (JVM procesoriai: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Sėkmingai nustatytas vertimo pajėgumų
+    limitas.
+  wwcConfigGUITranslationCapacityButton: Pakeiskite vertimo pajėgumus
+  wwcConfigTranslationCapacityInvalid: Neteisingas vertimo pajėgumų apribojimas nustatytas
+    config.yml. Naudokite 0 automatiniam arba 1 ar didesniam. Numatytasis nustatymas
+    į automatinį...
+  wwcConfigTranslationCapacityManual: Vertimo pajėgumai nustatyti į {0} aktyvūs vertimai
+    ir {1} eilės vertimai.
+  wwcConfigConversationTranslationCapacityInvalid: Vertimo pajėgumo riba turi būti
+    0 automatiniam arba 1 ar didesniam.
+  wwcConfigConversationTranslationCapacityInput: Dabartinis vertimo pajėgumų limitas
+    yra {0} ({1} aktyvus, {2} eilėje). Įveskite 0 automatiniam arba skaičiui 1 ar
+    didesniam skaičiui.
 

@@ -22,6 +22,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -31,18 +32,41 @@ import java.util.stream.Collectors;
 
 public class DataStorageUtils {
 
-    private static WorldwideChat main = WorldwideChat.instance;
-    private static CommonRefs refs = main.getServerFactory().getCommonRefs();
-    private static ConfigurationHandler handler = main.getConfigManager();
-    private static YamlConfiguration mainConfig = handler.getMainConfig();
+    private static WorldwideChat main;
+    private static CommonRefs refs;
+    private static ConfigurationHandler handler;
+    private static YamlConfiguration mainConfig;
+
+    private static boolean refreshState() {
+        WorldwideChat current = WorldwideChat.instance;
+        if (current != null) {
+            main = current;
+        }
+        if (main == null) {
+            return false;
+        }
+        if (main.getServerFactory() == null || main.getConfigManager() == null) {
+            return false;
+        }
+        refs = main.getServerFactory().getCommonRefs();
+        handler = main.getConfigManager();
+        mainConfig = handler.getMainConfig();
+        return true;
+    }
 
     /* Sync user data to storage default */
     public static void syncData() throws SQLException, MongoException {
+        if (!refreshState()) {
+            return;
+        }
         syncData(main.getTranslatorName().equalsIgnoreCase("Invalid"));
     }
 
     /* Sync user data to storage */
     public static void syncData(boolean wasPreviouslyInvalid) throws SQLException, MongoException {
+        if (!refreshState()) {
+            return;
+        }
         /* If our translator is Invalid, do not run this code */
         if (wasPreviouslyInvalid) {
             return;
@@ -73,6 +97,7 @@ public class DataStorageUtils {
                 String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
                         tableName, columns, placeholders, onUpdate);
 
+                List<ActiveTranslator> savedActiveTranslators = new ArrayList<>();
                 try (PreparedStatement newActiveTranslator = sqlConnection.prepareStatement(sqlStatement)) {
                     for (Map.Entry<String, ActiveTranslator> entry : main.getActiveTranslators().entrySet()) {
                         String key = entry.getKey();
@@ -95,12 +120,13 @@ public class DataStorageUtils {
                             // Add to batch
                             newActiveTranslator.addBatch();
                             refs.debugMsg("(SQL) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
+                            savedActiveTranslators.add(val);
                         }
                     }
 
                     // Execute the batch
                     newActiveTranslator.executeBatch();
+                    savedActiveTranslators.forEach(val -> val.setHasBeenSaved(true));
                     refs.debugMsg("(SQL) Batch executed, data saved or updated.");
                 }
 
@@ -140,6 +166,7 @@ public class DataStorageUtils {
                 sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
                         tableName, columns, placeholders, onUpdate);
 
+                List<PlayerRecord> savedPlayerRecords = new ArrayList<>();
                 try (PreparedStatement newPlayerRecord = sqlConnection.prepareStatement(sqlStatement)) {
                     for (Map.Entry<String, PlayerRecord> entry : main.getPlayerRecords().entrySet()) {
                         String key = entry.getKey();
@@ -156,12 +183,13 @@ public class DataStorageUtils {
                             // Add to batch
                             newPlayerRecord.addBatch();
                             refs.debugMsg("(SQL) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
+                            savedPlayerRecords.add(val);
                         }
                     }
 
                     // Execute the batch
                     newPlayerRecord.executeBatch();
+                    savedPlayerRecords.forEach(val -> val.setHasBeenSaved(true));
                     refs.debugMsg("(SQL) Batch executed, player records saved or updated.");
                 }
 
@@ -181,6 +209,7 @@ public class DataStorageUtils {
                     sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
                             tableName, columns, placeholders, onUpdate);
 
+                    List<CachedTranslation> savedCacheTerms = new ArrayList<>();
                     try (PreparedStatement newCacheTerm = sqlConnection.prepareStatement(sqlStatement)) {
                         for (Map.Entry<CachedTranslation, String> entry : main.getCache().asMap().entrySet()) {
                             CachedTranslation val = entry.getKey();
@@ -195,12 +224,13 @@ public class DataStorageUtils {
 
                                 newCacheTerm.addBatch();
                                 refs.debugMsg("(SQL) Prepared batch entry for cache data.");
-                                val.setHasBeenSaved(true);
+                                savedCacheTerms.add(val);
                             }
                         }
 
                         // Execute all updates/inserts in a single batch
                         newCacheTerm.executeBatch();
+                        savedCacheTerms.forEach(val -> val.setHasBeenSaved(true));
                         refs.debugMsg("(SQL) Batch executed, cache data saved or updated.");
                     }
                 }
@@ -249,6 +279,7 @@ public class DataStorageUtils {
                 String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
                         tableName, columns, placeholders, onConflictUpdate);
 
+                List<ActiveTranslator> savedActiveTranslators = new ArrayList<>();
                 try (PreparedStatement newActiveTranslator = postgresConnection.prepareStatement(sqlStatement)) {
                     for (Map.Entry<String, ActiveTranslator> entry : main.getActiveTranslators().entrySet()) {
                         String key = entry.getKey();
@@ -271,12 +302,13 @@ public class DataStorageUtils {
                             // Add to batch
                             newActiveTranslator.addBatch();
                             refs.debugMsg("(Postgres) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
+                            savedActiveTranslators.add(val);
                         }
                     }
 
                     // Execute the batch
                     newActiveTranslator.executeBatch();
+                    savedActiveTranslators.forEach(val -> val.setHasBeenSaved(true));
                     refs.debugMsg("(Postgres) Batch executed, data saved or updated.");
                 }
 
@@ -313,6 +345,7 @@ public class DataStorageUtils {
                 sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
                         tableName, columns, placeholders, onConflictUpdate);
 
+                List<PlayerRecord> savedPlayerRecords = new ArrayList<>();
                 try (PreparedStatement newPlayerRecord = postgresConnection.prepareStatement(sqlStatement)) {
                     for (Map.Entry<String, PlayerRecord> entry : main.getPlayerRecords().entrySet()) {
                         String key = entry.getKey();
@@ -329,12 +362,13 @@ public class DataStorageUtils {
                             // Add to batch
                             newPlayerRecord.addBatch();
                             refs.debugMsg("(Postgres) Prepared batch entry for " + key + ".");
-                            val.setHasBeenSaved(true);
+                            savedPlayerRecords.add(val);
                         }
                     }
 
                     // Execute the batch
                     newPlayerRecord.executeBatch();
+                    savedPlayerRecords.forEach(val -> val.setHasBeenSaved(true));
                     refs.debugMsg("(Postgres) Batch executed, player records saved or updated.");
                 }
 
@@ -350,13 +384,14 @@ public class DataStorageUtils {
 
                     // Dynamically create the ON CONFLICT DO UPDATE part
                     onConflictUpdate = schema.keySet().stream()
-                            .filter(column -> !column.equals("randomUUID")) // Exclude the conflict target column
+                            .filter(column -> !column.equals("inputLang") && !column.equals("outputLang") && !column.equals("inputPhrase"))
                             .map(column -> String.format("%s = EXCLUDED.%s", column, column))
                             .collect(Collectors.joining(", "));
 
-                    sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (randomUUID) DO UPDATE SET %s",
+                    sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (inputLang, outputLang, inputPhrase) DO UPDATE SET %s",
                             tableName, columns, placeholders, onConflictUpdate);
 
+                    List<CachedTranslation> savedCacheTerms = new ArrayList<>();
                     try (PreparedStatement newCacheTerm = postgresConnection.prepareStatement(sqlStatement)) {
                         for (Map.Entry<CachedTranslation, String> entry : main.getCache().asMap().entrySet()) {
                             CachedTranslation val = entry.getKey();
@@ -372,19 +407,21 @@ public class DataStorageUtils {
                                 // Add to batch
                                 newCacheTerm.addBatch();
                                 refs.debugMsg("(Postgres) Prepared batch entry for cache data.");
-                                val.setHasBeenSaved(true);
+                                savedCacheTerms.add(val);
                             }
                         }
 
                         // Execute all updates/inserts in a single batch
                         newCacheTerm.executeBatch();
+                        savedCacheTerms.forEach(val -> val.setHasBeenSaved(true));
                         refs.debugMsg("(Postgres) Batch executed, cache data saved or updated.");
                     }
 
                     /* Delete Old Cache Terms */
                     try (PreparedStatement deleteOldItems = postgresConnection.prepareStatement(
-                            "DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?")) {
-                        ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM persistentCache");
+                            "DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?");
+                         Statement selectCacheItems = postgresConnection.createStatement();
+                         ResultSet rs = selectCacheItems.executeQuery("SELECT * FROM persistentCache")) {
                         while (rs.next()) {
                             String inputLang = rs.getString("inputLang");
                             String outputLang = rs.getString("outputLang");
@@ -414,6 +451,7 @@ public class DataStorageUtils {
 
             // Preparing bulk operations
             final List<WriteModel<Document>> writes = new ArrayList<>();
+            final List<ActiveTranslator> savedActiveTranslators = new ArrayList<>();
 
             /* Add New Active Translators */
             main.getActiveTranslators().forEach((key, val) -> {
@@ -436,13 +474,13 @@ public class DataStorageUtils {
                     Bson filter = Filters.eq("playerUUID", val.getUUID());
                     ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
                     writes.add(new ReplaceOneModel<>(filter, currTranslator, replaceOptions));
-
-                    val.setHasBeenSaved(true);
+                    savedActiveTranslators.add(val);
                 }
             });
 
             if (!writes.isEmpty()) {
                 activeTranslatorCol.bulkWrite(writes);
+                savedActiveTranslators.forEach(val -> val.setHasBeenSaved(true));
                 refs.debugMsg("(MongoDB) Bulk operation executed, data saved or updated.");
             }
 
@@ -467,6 +505,7 @@ public class DataStorageUtils {
 
             /* Write PlayerRecords to DB */
             final List<WriteModel<Document>> recordWrites = new ArrayList<>();
+            final List<PlayerRecord> savedPlayerRecords = new ArrayList<>();
             main.getPlayerRecords().forEach((key, val) -> {
                 refs.debugMsg("(MongoDB) Record of " + key + " save status: " + val.getHasBeenSaved());
                 if (!val.getHasBeenSaved()) {
@@ -481,19 +520,20 @@ public class DataStorageUtils {
                     Bson filter = Filters.eq("playerUUID", val.getUUID());
                     ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
                     recordWrites.add(new ReplaceOneModel<>(filter, currPlayerRecord, replaceOptions));
-
-                    val.setHasBeenSaved(true);
+                    savedPlayerRecords.add(val);
                 }
             });
 
             if (!recordWrites.isEmpty()) {
                 playerRecordCol.bulkWrite(recordWrites);
+                savedPlayerRecords.forEach(val -> val.setHasBeenSaved(true));
                 refs.debugMsg("(MongoDB) Bulk operation executed, player records saved or updated.");
             }
 
             /* Write Cache to DB */
             if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
                 final List<WriteModel<Document>> cacheWrites = new ArrayList<>();
+                final List<CachedTranslation> savedCacheTerms = new ArrayList<>();
 
                 /* Add New Cache Terms */
                 main.getCache().asMap().entrySet().forEach(entry -> {
@@ -508,17 +548,20 @@ public class DataStorageUtils {
                                 .append("inputPhrase", val.getInputPhrase())
                                 .append("outputPhrase", entry.getValue());
 
-                        Bson filter = Filters.eq("randomUUID", random.toString());
+                        Bson filter = Filters.and(
+                                Filters.eq("inputLang", val.getInputLang()),
+                                Filters.eq("outputLang", val.getOutputLang()),
+                                Filters.eq("inputPhrase", val.getInputPhrase()));
                         ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
                         cacheWrites.add(new ReplaceOneModel<>(filter, currCache, replaceOptions));
-
-                        entry.getKey().setHasBeenSaved(true);
+                        savedCacheTerms.add(entry.getKey());
                     }
                 });
 
                 // Execute all updates/inserts in a single batch if there are entries to write
                 if (!cacheWrites.isEmpty()) {
                     cacheCol.bulkWrite(cacheWrites);
+                    savedCacheTerms.forEach(val -> val.setHasBeenSaved(true));
                     refs.debugMsg("(MongoDB) Bulk operation executed, cache data saved or updated.");
                 }
 
@@ -622,6 +665,9 @@ public class DataStorageUtils {
     // Generally, NEVER USE THIS!
     // We only use this in /wwcd.
     public static void fullDataWipe() throws SQLException, MongoException {
+        if (!refreshState()) {
+            return;
+        }
         SQLUtils sql = main.getSqlSession();
         MongoDBUtils mongo = main.getMongoSession();
         PostgresUtils postgres = main.getPostgresSession();
@@ -725,6 +771,9 @@ public class DataStorageUtils {
 
     /* Translator YAML File Saver */
     public static void createUserDataConfig(ActiveTranslator inTranslator) {
+        if (!refreshState()) {
+            return;
+        }
         File userSettingsFile;
         YamlConfiguration userSettingsConfig;
         userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator,
@@ -769,6 +818,9 @@ public class DataStorageUtils {
 
     /* Stats YAML File Saver */
     public static void createStatsConfig(PlayerRecord inRecord) {
+        if (!refreshState()) {
+            return;
+        }
         File userStatsDir = new File(main.getDataFolder() + File.separator + "stats");
         File userStatsFile;
         YamlConfiguration userStatsConfig;
@@ -797,6 +849,9 @@ public class DataStorageUtils {
 
     /* Cache YAML File Saver */
     public static void createCacheConfig(CachedTranslation trans, String out) {
+        if (!refreshState()) {
+            return;
+        }
         File cacheDir = new File(main.getDataFolder() + File.separator + "cache");
         File cacheFile;
         YamlConfiguration cacheConfig;

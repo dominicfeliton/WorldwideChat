@@ -755,4 +755,64 @@ Messages:
   wwcConfigGUISendActionBarButton: Odeslat pruhy akcí
   wwcConfigActionBarInvalid: Neplatné nastavení panelu akcí odeslání nastaveno v config.yml.
     Výchozí hodnota true...
+  wwcConfigGUIInputMethodConversation: Konverzace
+  wwcAIGuidelinesBlocked: Tato zpráva byla zablokována našimi pokyny pro překlad.
+  wwcConfigGUIGuidelinesAIModelButton: Změňte pokyny pro model AI
+  wwcConfigGUIOpenAICompatibleURLButton: Změna adresy URL kompatibilní s OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Pokyny Model AI byl úspěšně nastaven.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI Compatible API klíč byl
+    úspěšně nastaven.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI Kompatibilní adresa URL
+    byla úspěšně nastavena.
+  wwcConfigConversationOpenAICompatibleURLInput: Aktuální adresa URL je {0}. Zadejte
+    prosím adresu URL pro OpenAI Compatible, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationOpenAICompatibleModelInput: Současný model je {0}. Zadejte
+    model pro OpenAI Compatible, nebo zadejte 0 pro návrat.
+  wwcConfigGUIGuidelinesAIPromptButton: Výzva ke změně pokynů AI
+  wwcConfigGUIOpenAICompatiblePromptButton: Změnit výzvu kompatibilní s OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Přepnout OpenAI kompatibilní
+  wwcConfigConversationInputMethodSuccess: Vstupní metoda nastavena na {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Kompatibilní model byl
+    úspěšně nastaven.
+  wwcConfigGUIOpenAICompatibleButton: Kompatibilní s OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Papírové dialogové okno
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Změna klíče API kompatibilního s OpenAI
+  wwcConfigGUIInputMethodButton: Vstupní metoda
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Současný model Guidelines AI je {0}.
+    Zadejte model, zadejte příkaz clear, chcete-li použít aktivní model poskytovatele,
+    nebo zadejte 0 pro návrat zpět.
+  wwcConfigGUIOpenAICompatibleModelButton: Změna kompatibilního modelu OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Úspěšně přepnuté kontroly pokynů AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Aktuální klíč API je {0}. Zadejte
+    klíč API pro OpenAI Compatible, nebo zadejte 0 pro návrat.
+  wwcConfigGUIInputMethodCurrent: 'Aktuální: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Úspěšně přepnul OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Přepnout pokyny Kontroly AI
+  wwctTranslationErrorActionBar: Chyba
+  wwcConfigGUIObjectTranslationConcurrencyButton: Změnit souběžnost překladu objektů
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Úspěšně nastaven limit
+    souběžnosti překladu objektů.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Limit souběžnosti
+    překladu objektů musí být 1 nebo větší.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Aktuální limit souběžnosti
+    překladu objektů je {0}. Zadejte číslo 1 nebo větší.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Neplatný limit souběžnosti
+    překladu objektů nastavený v config.yml. Hodnota musí být alespoň 1. Výchozí hodnota
+    4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Poskytovatel AI musí být povolen, aby mohl
+    používat zábradlí.
+  wwcConfigTranslationCapacityAuto: 'Kapacita překladu se automaticky vyřeší na {0}
+    aktivní překlady a {1} překlady ve frontě (procesory JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Limit kapacity překladu byl úspěšně
+    nastaven.
+  wwcConfigGUITranslationCapacityButton: Změna kapacity překladu
+  wwcConfigTranslationCapacityInvalid: Neplatný limit kapacity překladu nastaven v
+    config.yml. Použijte 0 pro auto nebo 1 nebo vyšší. Výchozí nastavení na auto...
+  wwcConfigTranslationCapacityManual: Kapacita překladu nastavena na {0} aktivní překlady
+    a {1} překlady ve frontě.
+  wwcConfigConversationTranslationCapacityInvalid: Limit překladové kapacity musí
+    být 0 pro auto nebo 1 nebo vyšší.
+  wwcConfigConversationTranslationCapacityInput: Aktuální limit kapacity překladu
+    je {0} ({1} aktivní, {2} ve frontě). Zadejte 0 pro auto nebo číslo 1 nebo vyšší.
 

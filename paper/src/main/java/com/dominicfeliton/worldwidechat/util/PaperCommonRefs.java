@@ -1,7 +1,6 @@
 package com.dominicfeliton.worldwidechat.util;
 
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -9,6 +8,7 @@ import org.bukkit.entity.Player;
 import java.util.UUID;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.ENTITY;
+import static com.dominicfeliton.worldwidechat.WorldwideChatHelper.SchedulerType.GLOBAL;
 
 public class PaperCommonRefs extends CommonRefs {
 
@@ -16,23 +16,22 @@ public class PaperCommonRefs extends CommonRefs {
     public void sendMsg(CommandSender sender, Component originalMessage, boolean addPrefix) {
         if (sender == null || originalMessage == null) return;
         if (!Bukkit.isPrimaryThread()) {
-            Object anchor = (sender instanceof Player) ? sender : null;
             wwcHelper.runSync(true, 0, new GenericRunnable() {
                 @Override protected void execute() {
                     sendMsg(sender, originalMessage, addPrefix);
                 }
-            }, ENTITY, new Object[]{anchor});
+            }, sender instanceof Player ? ENTITY : GLOBAL, sender instanceof Player ? new Object[]{sender} : null);
             return;
         }
-        if (sender instanceof Player && !((Player) sender).isOnline()) return;
-        final TextComponent outMessage = addPrefix
-                ? Component.text()
-                .append(main.getPluginPrefix().asComponent())
+        final Component outMessage = addPrefix
+                ? main.getPluginPrefix()
                 .append(Component.space())
-                .append(originalMessage.asComponent())
-                .build()
-                : Component.text().append(originalMessage.asComponent()).build();
-        sender.sendMessage(outMessage);
+                .append(originalMessage)
+                : Component.empty().append(originalMessage);
+        try {
+            sender.sendMessage(outMessage);
+        } catch (RuntimeException | LinkageError ignored) {
+        }
     }
 
     @Override
@@ -47,11 +46,11 @@ public class PaperCommonRefs extends CommonRefs {
                 @Override protected void execute() {
                     sendMsg(playerId, originalMessage, addPrefix);
                 }
-            }, ENTITY, new Object[]{null});
+            }, GLOBAL, null);
             return;
         }
         Player p = Bukkit.getPlayer(playerId);
-        if (p == null || !p.isOnline()) return;
+        if (p == null) return;
         sendMsg(p, originalMessage, addPrefix);
     }
 

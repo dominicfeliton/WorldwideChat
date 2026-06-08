@@ -774,4 +774,72 @@ Messages:
   wwcConfigGUISendActionBarButton: Отправить панели действий
   wwcConfigActionBarInvalid: Неверный параметр панели действий отправки, заданный
     в config.yml. По умолчанию установлено значение true...
+  wwcConfigGUIInputMethodConversation: Беседа
+  wwcAIGuidelinesBlocked: Это сообщение было заблокировано в соответствии с нашими
+    рекомендациями по переводу.
+  wwcConfigGUIGuidelinesAIModelButton: Рекомендации по изменению модели искусственного
+    интеллекта
+  wwcConfigGUIOpenAICompatibleURLButton: Изменить URL-адрес, совместимый с OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Рекомендации. Модель искусственного
+    интеллекта успешно установлена.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Ключ API, совместимый с OpenAI,
+    успешно установлен.
+  wwcConfigConversationOpenAICompatibleURLSuccess: URL-адрес, совместимый с OpenAI,
+    успешно установлен.
+  wwcConfigConversationOpenAICompatibleURLInput: В настоящее время используется URL-адрес
+    {0}. Введите URL-адрес, совместимый с OpenAI, или введите 0, чтобы вернуться назад.
+  wwcConfigConversationOpenAICompatibleModelInput: Текущая модель — {0}. Введите модель,
+    совместимую с OpenAI, или введите 0, чтобы вернуться назад.
+  wwcConfigGUIGuidelinesAIPromptButton: Рекомендации по изменению AI Prompt
+  wwcConfigGUIOpenAICompatiblePromptButton: Изменить приглашение, совместимое с OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Переключить совместимость с OpenAI
+  wwcConfigConversationInputMethodSuccess: Для метода ввода задано значение {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Модель, совместимая с OpenAI,
+    успешно установлена.
+  wwcConfigGUIOpenAICompatibleButton: Совместимый с OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Диалог бумаги
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Измените ключ API, совместимый с OpenAI
+  wwcConfigGUIInputMethodButton: Метод ввода
+  wwcConfigGUIInputMethodAuto: авто
+  wwcConfigConversationGuidelinesAIModelInput: Текущая модель искусственного интеллекта
+    Guidelines — {0}. Введите модель, введите clear, чтобы использовать модель активного
+    поставщика, или 0, чтобы вернуться назад.
+  wwcConfigGUIOpenAICompatibleModelButton: Изменить модель, совместимую с OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Проверки искусственного интеллекта
+    в рекомендациях успешно переключены.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Текущий ключ API — {0}. Введите
+    ключ API, совместимый с OpenAI, или введите 0, чтобы вернуться назад.
+  wwcConfigGUIInputMethodCurrent: 'Текущий: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Успешно переключен на совместимость с
+    OpenAI.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Переключить рекомендации по проверке
+    ИИ
+  wwctTranslationErrorActionBar: Ошибка
+  wwcConfigGUIObjectTranslationConcurrencyButton: Параллельное преобразование объектов
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Предел параллелизма при
+    трансляции объектов успешно установлен.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Предельное значение
+    параллелизма при трансляции объектов должно быть равно 1 или более.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Текущий предел параллелизма
+    при трансляции объектов равен {0}. Введите число 1 или больше.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: В config.yml задан неправильный
+    предел параллелизма при трансляции объектов. Значение должно быть не менее 1.
+    По умолчанию 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Поставщик искусственного интеллекта должен
+    иметь возможность использовать Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Объем переводов автоматически преобразован в
+    активные переводы {0} и переводы в очереди {1} (процессоры JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Предельное значение пропускной
+    способности перевода успешно установлено.
+  wwcConfigGUITranslationCapacityButton: Изменить объем перевода
+  wwcConfigTranslationCapacityInvalid: В config.yml установлен неправильный предел
+    пропускной способности перевода. Используйте 0 для автоматического режима или
+    1 или больше. По умолчанию установлено значение auto...
+  wwcConfigTranslationCapacityManual: Объем переводов установлен на {0} активных переводов
+    и {1} переводов в очереди.
+  wwcConfigConversationTranslationCapacityInvalid: Предельная пропускная способность
+    перевода должна быть равна 0 для авто или 1 или больше.
+  wwcConfigConversationTranslationCapacityInput: Текущее ограничение пропускной способности
+    перевода — {0} ({1} активно, {2} в очереди). Введите 0 в поле «Авто» или цифру
+    1 или больше.
 

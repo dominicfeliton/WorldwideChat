@@ -6,6 +6,7 @@ import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.Metrics;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
+import com.dominicfeliton.worldwidechat.util.TranslationCapacityLimiter;
 import com.dominicfeliton.worldwidechat.util.storage.MongoDBUtils;
 import com.dominicfeliton.worldwidechat.util.storage.PostgresUtils;
 import com.dominicfeliton.worldwidechat.util.storage.SQLUtils;
@@ -101,42 +102,63 @@ public class ConfigurationHandler {
 
         /* Validate the configuration */
         // systemPrompt (chatGPTDefaultSystemPrompt should always be overwritten)
-        aiConfig.set("chatGPTDefaultSystemPrompt", templateConfig.getString("chatGPTDefaultSystemPrompt"));
-        aiConfig.set("ollamaDefaultSystemPrompt", templateConfig.getString("ollamaDefaultSystemPrompt"));
+        aiConfig.set("guardrailsDefaultPrompt", templateConfig.getString("guardrailsDefaultPrompt"));
+        String guardrailsPrompt = buildPrompt("guardrailsDefaultPrompt", "guardrailsOverridePrompt");
+        setDefaultPrompt("chatGPTDefaultSystemPrompt", templateConfig, guardrailsPrompt);
+        setDefaultPrompt("openAICompatibleDefaultSystemPrompt", templateConfig, guardrailsPrompt);
+        setDefaultPrompt("guidelinesAIDefaultPrompt", templateConfig, guardrailsPrompt);
+        setDefaultPrompt("ollamaDefaultSystemPrompt", templateConfig, guardrailsPrompt);
 
-        String systemPrompt = "";
+        String systemPrompt;
         if (mainConfig.getBoolean("Translator.useChatGPT")) {
             refs.debugMsg("ChatGPT sys prompt");
-            systemPrompt = aiConfig.getString("chatGPTOverrideSystemPrompt").equalsIgnoreCase("default") ?
-                    aiConfig.getString("chatGPTDefaultSystemPrompt") :
-                    aiConfig.getString("chatGPTOverrideSystemPrompt").replace("{default}", aiConfig.getString("chatGPTDefaultSystemPrompt"));
-            if (systemPrompt == null) {
-                main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
-                systemPrompt = templateConfig.getString("chatGPTDefaultSystemPrompt");
-            }
+            systemPrompt = buildPrompt("chatGPTDefaultSystemPrompt", "chatGPTOverrideSystemPrompt");
+        } else if (mainConfig.getBoolean("Translator.useOpenAICompatible")) {
+            refs.debugMsg("OpenAI Compatible sys prompt");
+            systemPrompt = buildPrompt("openAICompatibleDefaultSystemPrompt", "openAICompatibleOverrideSystemPrompt");
         } else {
             refs.debugMsg("ollama sys prompt");
-            systemPrompt = aiConfig.getString("ollamaOverrideSystemPrompt").equalsIgnoreCase("default") ?
-                    aiConfig.getString("ollamaDefaultSystemPrompt") :
-                    aiConfig.getString("ollamaOverrideSystemPrompt").replace("{default}", aiConfig.getString("ollamaDefaultSystemPrompt"));
-            if (systemPrompt == null) {
-                main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
-                systemPrompt = templateConfig.getString("ollamaDefaultSystemPrompt");
-            }
+            systemPrompt = buildPrompt("ollamaDefaultSystemPrompt", "ollamaOverrideSystemPrompt");
         }
         main.setAISystemPrompt(systemPrompt);
+
+        main.setGuidelinesAIPrompt(buildPrompt("guidelinesAIDefaultPrompt", "guidelinesAIOverridePrompt"));
+        if (!CommonRefs.isAIProviderEnabled(mainConfig)
+                && mainConfig.getBoolean("Translator.enableGuidelinesAIChecks")) {
+            refs.debugMsg("Disabling Guidelines AI checks because no AI provider is enabled.");
+            mainConfig.set("Translator.enableGuidelinesAIChecks", false);
+            saveMainConfig(false);
+        }
 
         // supportedLangs
         // TODO: copy supportedLangs to mem instead of setting.
         if (!aiConfig.isList("supportedLangs")) {
             main.getLogger().warning(refs.getPlainMsg("wwcAiSupportedLangsBad"));
-            aiConfig.set("supportedLangs", templateConfig.getString("supportedLangs"));
-            return;
+            aiConfig.set("supportedLangs", templateConfig.getStringList("supportedLangs"));
         }
 
-        if (mainConfig.getBoolean("Translator.useChatGPT") || mainConfig.getBoolean("Translator.useOllama")) {
+        if (CommonRefs.isAIProviderEnabled(mainConfig)) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getPlainMsg("wwcAiSystemPromptLoaded"));
         }
+        saveCustomConfig(aiConfig, aiFile, false);
+    }
+
+    private void setDefaultPrompt(String defaultKey, YamlConfiguration templateConfig, String guardrailsPrompt) {
+        String templatePrompt = templateConfig.getString(defaultKey, "");
+        aiConfig.set(defaultKey, templatePrompt.replace("{guardrails}", guardrailsPrompt == null ? "" : guardrailsPrompt));
+    }
+
+    private String buildPrompt(String defaultKey, String overrideKey) {
+        String defaultPrompt = aiConfig.getString(defaultKey, "");
+        String overridePrompt = aiConfig.getString(overrideKey, "{default}");
+        String prompt = overridePrompt.equalsIgnoreCase("default") ?
+                defaultPrompt :
+                overridePrompt.replace("{default}", defaultPrompt);
+        if (prompt == null) {
+            main.getLogger().warning(refs.getPlainMsg("wwcAiSystemPromptBad"));
+            prompt = "";
+        }
+        return prompt;
     }
 
     /* Init Messages Method */
@@ -257,6 +279,38 @@ public class ConfigurationHandler {
             }
         } catch (Exception e) {
             main.getLogger().warning(refs.getPlainMsg("wwcConfigInvalidFatalAsyncTimeout"));
+        }
+        // Object Translation Concurrency Limit
+        try {
+            int objectTranslationConcurrencyLimit = mainConfig.getInt("General.objectTranslationConcurrencyLimit");
+            if (objectTranslationConcurrencyLimit >= 1) {
+                main.setObjectTranslationConcurrencyLimit(objectTranslationConcurrencyLimit);
+            } else {
+                main.setObjectTranslationConcurrencyLimit(4);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyMinimumInvalid"));
+            }
+        } catch (Exception e) {
+            main.setObjectTranslationConcurrencyLimit(4);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigObjectTranslationConcurrencyMinimumInvalid"));
+        }
+        // Total Translation Capacity Limit
+        try {
+            if (!mainConfig.isInt("General.translationCapacityLimit")) {
+                throw new IllegalArgumentException("General.translationCapacityLimit must be an integer.");
+            }
+            int translationCapacityLimit = mainConfig.getInt("General.translationCapacityLimit");
+            if (translationCapacityLimit >= TranslationCapacityLimiter.AUTO_CONFIG_VALUE) {
+                main.setTranslationCapacityLimit(translationCapacityLimit);
+                logTranslationCapacity();
+            } else {
+                main.setTranslationCapacityLimit(TranslationCapacityLimiter.AUTO_CONFIG_VALUE);
+                main.getLogger().warning(refs.getPlainMsg("wwcConfigTranslationCapacityInvalid"));
+                logTranslationCapacity();
+            }
+        } catch (Exception e) {
+            main.setTranslationCapacityLimit(TranslationCapacityLimiter.AUTO_CONFIG_VALUE);
+            main.getLogger().warning(refs.getPlainMsg("wwcConfigTranslationCapacityInvalid"));
+            logTranslationCapacity();
         }
         // bStats
         if (mainConfig.getBoolean("General.enablebStats")) {
@@ -481,7 +535,7 @@ public class ConfigurationHandler {
         }
         // List of Errors to Ignore Settings
         try {
-            main.setErrorsToIgnore((ArrayList<String>) mainConfig.getStringList("Translator.errorsToIgnore"));
+            main.setErrorsToIgnore(new ArrayList<>(mainConfig.getStringList("Translator.errorsToIgnore")));
             main.getLogger().info(
                     refs.getPlainMsg("wwcConfigErrorsToIgnoreSuccess",
                             "",
@@ -491,6 +545,20 @@ public class ConfigurationHandler {
             main.setErrorsToIgnore(defaultArr);
             main.getLogger().warning(refs.getPlainMsg("wwcConfigErrorsToIgnoreInvalid"));
         }
+    }
+
+    private void logTranslationCapacity() {
+        TranslationCapacityLimiter limiter = main.getTranslationCapacityLimiter();
+        String[] replacements = new String[]{
+                "&6" + limiter.getActiveLimit(),
+                "&6" + limiter.getQueueLimit(),
+                "&6" + limiter.getAvailableProcessors()
+        };
+        if (main.getTranslationCapacityLimit() == TranslationCapacityLimiter.AUTO_CONFIG_VALUE) {
+            main.getLogger().info(refs.getPlainMsg("wwcConfigTranslationCapacityAuto", replacements, "&a"));
+            return;
+        }
+        main.getLogger().info(refs.getPlainMsg("wwcConfigTranslationCapacityManual", replacements, "&a"));
     }
 
     /* Storage Settings */

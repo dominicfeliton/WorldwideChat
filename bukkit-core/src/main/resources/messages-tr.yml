@@ -757,4 +757,67 @@ Messages:
   wwcConfigGUISendActionBarButton: Eylem Çubukları Gönderme
   wwcConfigActionBarInvalid: config.yml içinde geçersiz gönderme eylem çubuğu ayarı
     ayarlandı. Varsayılan olarak true olarak ayarlanıyor...
+  wwcConfigGUIInputMethodConversation: Konuşma
+  wwcAIGuidelinesBlocked: Bu mesaj çeviri yönergelerimiz tarafından engellendi.
+  wwcConfigGUIGuidelinesAIModelButton: Değişim Yönergeleri Yapay Zeka Modeli
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI Uyumlu URL'yi Değiştir
+  wwcConfigConversationGuidelinesAIModelSuccess: Yönergeler AI modeli başarıyla belirlendi.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI Uyumlu API anahtarı başarıyla
+    ayarlandı.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI Uyumlu URL başarıyla ayarlandı.
+  wwcConfigConversationOpenAICompatibleURLInput: Geçerli URL {0} 'dir. Lütfen OpenAI
+    Uyumlu için bir URL girin veya geri dönmek için 0 yazın.
+  wwcConfigConversationOpenAICompatibleModelInput: Mevcut model {0}. Lütfen OpenAI
+    Uyumlu için bir model girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIGuidelinesAIPromptButton: Değişim Yönergeleri AI İstemi
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI Uyumlu İstemi Değiştir
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI Uyumluluğunu Aç/Kapat
+  wwcConfigConversationInputMethodSuccess: Giriş yöntemi {0} olarak ayarlandı.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Uyumlu model başarıyla
+    ayarlandı.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI Uyumlu
+  wwcConfigGUIInputMethodPaperDialog: Kağıt İletişim Kutusu
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI Uyumlu API Anahtarını Değiştir
+  wwcConfigGUIInputMethodButton: Giriş Yöntemi
+  wwcConfigGUIInputMethodAuto: Oto
+  wwcConfigConversationGuidelinesAIModelInput: Mevcut Yönergeler AI modeli {0} 'dir.
+    Lütfen bir model girin, aktif sağlayıcı modelini kullanmak için clear yazın veya
+    geri dönmek için 0 yazın.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI Uyumlu Modeli Değiştir
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Yönergeler AI kontrolleri başarıyla
+    değiştirildi.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Geçerli API anahtarı {0} 'dir.
+    Lütfen OpenAI Uyumlu için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIInputMethodCurrent: 'Güncel: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI Uyumlu başarıyla değiştirildi.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Yönergeleri Yapay Zeka Kontrollerini
+    Değiştir
+  wwctTranslationErrorActionBar: Hata
+  wwcConfigGUIObjectTranslationConcurrencyButton: Nesne Çevirisi Eşzamanlılığını Değiştir
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Nesne çevirisi eşzamanlılık
+    sınırı başarıyla ayarlandı.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Nesne çevirisi
+    eşzamanlılık sınırı 1 veya daha büyük olmalıdır.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Geçerli nesne çevirme
+    eşzamanlılığı sınırı {0} 'dir. 1 veya daha büyük bir sayı yazın.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml içinde ayarlanmış
+    geçersiz nesne çeviri eşzamanlılık sınırı. Değer en az 1 olmalıdır. Varsayılan
+    olarak 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Korkulukları kullanmak için bir AI sağlayıcısının
+    etkinleştirilmesi gerekir.
+  wwcConfigTranslationCapacityAuto: 'Çeviri kapasitesi {0} aktif çevirilere ve {1}
+    kuyruklu çevirilere otomatik olarak çözülür (JVM işlemcileri: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Çeviri kapasitesi sınırı başarıyla
+    ayarlandı.
+  wwcConfigGUITranslationCapacityButton: Çeviri Kapasitesini Değiştir
+  wwcConfigTranslationCapacityInvalid: config.yml içinde ayarlanmış geçersiz çeviri
+    kapasitesi sınırı. Otomatik veya 1 veya daha büyük için 0 kullanın. Varsayılan
+    olarak otomatik...
+  wwcConfigTranslationCapacityManual: Çeviri kapasitesi {0} aktif çeviri ve {1} kuyruklu
+    çeviriler olarak ayarlanmıştır.
+  wwcConfigConversationTranslationCapacityInvalid: Çeviri kapasitesi sınırı otomatik
+    için 0 veya 1 veya daha yüksek olmalıdır.
+  wwcConfigConversationTranslationCapacityInput: Geçerli çeviri kapasitesi sınırı
+    {0} ({1} aktif, {2} kuyruklu). Otomatik veya 1 veya daha büyük bir sayı için 0
+    yazın.
 

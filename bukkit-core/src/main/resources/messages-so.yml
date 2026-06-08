@@ -778,4 +778,65 @@ Messages:
   wwcConfigGUISendActionBarButton: Diray Faction Bars
   wwcConfigActionBarInvalid: Aad ah u diray deegga barka tallaabka ah oo lagu sameeyay
     config.yml. Deegaanta in dhab...
+  wwcConfigGUIInputMethodConversation: wadahadal
+  wwcAIGuidelinesBlocked: Fariinkaan waxaa xaqayay tilmaamadeena tarjimada.
+  wwcConfigGUIGuidelinesAIModelButton: Beddel Tilmaamaha Moodel AI
+  wwcConfigGUIOpenAICompatibleURLButton: Bedelka OpenAI Url oo la taagsan
+  wwcConfigConversationGuidelinesAIModelSuccess: Tilmaamaha Moodel AI oo si guul la
+    dhigay
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI Muuqda API oo si guul
+    la dhigay.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI Url oo ku sameeyay si guul
+    la dhigay.
+  wwcConfigConversationOpenAICompatibleURLInput: URL hadda waa {0}. Fadlan gelin URL
+    loo sameeyo OpenAI, ama nooca 0 si aad dib ugu soo nooco.
+  wwcConfigConversationOpenAICompatibleModelInput: Moodel hadda waa {0}. Fadlan gelin
+    moodel ee OpenAI ku sameynta, ama nooca 0 si aad dib ugu soo nooco.
+  wwcConfigGUIGuidelinesAIPromptButton: Isbedelka Tilmaamaha AI Promo
+  wwcConfigGUIOpenAICompatiblePromptButton: Bedelka OpenAI Xoogga
+  wwcConfigGUIToggleOpenAICompatibleButton: Toggle OpenAI oo sameynta
+  wwcConfigConversationInputMethodSuccess: Habka gelinta lagu dhigay {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Moodel isagsan OpenAI oo si guul
+    ah la dhigay.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI oo sameynta
+  wwcConfigGUIInputMethodPaperDialog: Warqaadka Warqadda
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Bedelka OpenAI Muuqda API oo la taagsan
+  wwcConfigGUIInputMethodButton: Habka gelinta
+  wwcConfigGUIInputMethodAuto: Gaari
+  wwcConfigConversationGuidelinesAIModelInput: Tilmaamaha hadda ee Moodel AI waa {0}.
+    Fadlan galin moodel, nooca cad si aad u isticmaalaan moodel bixiyaha firfirsan,
+    ama nooca 0 si aad u dib ugu soo laabto.
+  wwcConfigGUIOpenAICompatibleModelButton: Bedelka Moodel Waddanka OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Ku guul la wareegay Tilmaamaha AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Muuqda API hadda waa {0}. Fadlan
+    geliyay muuqda API ee OpenAI ku sameynta, ama nooca 0 si aad dib ugu soo nooco.
+  wwcConfigGUIInputMethodCurrent: 'Hadda: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Ku guul la wareegay OpenAI oo sameynta.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Tilmaamaha Toggle Xeegiyada AI
+  wwctTranslationErrorActionBar: Khalad
+  wwcConfigGUIObjectTranslationConcurrencyButton: Badel Tarjumada Object Concuracy
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Tarjumada Object Concurrency
+    xilliga oo si guul la dhigay.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Xadduudda tarjimada
+    waa inuu noqdo 1 ama ka weyn.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Xadduudda tarjimada
+    hadda waxa uu yahay {0}. Nooca nambar 1 ama ka weyn.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Xadduudda tarjimada ahayn ee
+    xaddaa la dhigay config.yml. Qiimaha waa in uu noqdo ugu yaraan 1. Defaulting
+    in 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Bixiye AI waa in la ogolaan inuu isticmaalo
+    Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Awoodda tarjimada awoto-xaliyay {0} tarjimada
+    firfirka iyo {1} tarjimada safka ah (JVM hanayaasha: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Xadka awooda tarjumada oo si guul
+    la dhigay
+  wwcConfigGUITranslationCapacityButton: Bedel Awoodda Tarjumada
+  wwcConfigTranslationCapacityInvalid: Xadka awooda tarjumada ah oo lagu sameeyay
+    config.yml. Isticmaale 0 ee gaarka ama 1 ama ka weyn. Defaulting to auto...
+  wwcConfigTranslationCapacityManual: Awoodda tarjimada la dhigay {0} tarjimada firfiro
+    iyo {1} tarjimada safka ah.
+  wwcConfigConversationTranslationCapacityInvalid: Xadka awooda tarjumada waa in uu
+    noqdo 0 auto ama 1 ama weyn.
+  wwcConfigConversationTranslationCapacityInput: Xadka awooda tarjumada hadda waa
+    {0} ({1} firfirka, {2} safka). Nooca 0 ee gaarka ama nambar 1 ama ka weyn.
 

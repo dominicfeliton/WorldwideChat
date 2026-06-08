@@ -847,4 +847,73 @@ Messages:
   wwcConfigGUISendActionBarButton: Magpadala ng Action Bar
   wwcConfigActionBarInvalid: Hindi wastong setting ng send action bar na nakatakda
     sa config.yml. Pag-default sa totoo...
+  wwcConfigGUIInputMethodConversation: Pag-uusap
+  wwcAIGuidelinesBlocked: Ang mensaheng ito ay hinarang ng aming mga alituntunin sa
+    pagsasalin.
+  wwcConfigGUIGuidelinesAIModelButton: Baguhin ang Mga Patnubay sa Modelo
+  wwcConfigGUIOpenAICompatibleURLButton: Baguhin ang Katugmang URL ng OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Matagumpay na itinakda ang mga alituntunin
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Matagumpay na nakatakda ang
+    OpenAI Compatible API key.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Matagumpay na itinakda ang OpenAI
+    Compatible URL.
+  wwcConfigConversationOpenAICompatibleURLInput: Ang kasalukuyang URL ay {0}. Mangyaring
+    magpasok ng isang URL para sa OpenAI Compatible, o i-type ang 0 upang bumalik.
+  wwcConfigConversationOpenAICompatibleModelInput: Ang kasalukuyang modelo ay {0}.
+    Mangyaring magpasok ng isang modelo para sa OpenAI Compatible, o i-type ang 0
+    upang bumalik.
+  wwcConfigGUIGuidelinesAIPromptButton: Baguhin ang Mga Alituntunin sa
+  wwcConfigGUIOpenAICompatiblePromptButton: Baguhin ang OpenAI Compatible Prompt
+  wwcConfigGUIToggleOpenAICompatibleButton: Toggle Compatible OpenAI
+  wwcConfigConversationInputMethodSuccess: Nakatakda ang pamamaraan ng pag-input sa
+    {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Matagumpay na nakatakda ang OpenAI
+    Compatible na modelo
+  wwcConfigGUIOpenAICompatibleButton: Katugma sa OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Dialog ng Papel
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Baguhin ang OpenAI Compatible API Key
+  wwcConfigGUIInputMethodButton: Paraan ng Pag-input
+  wwcConfigGUIInputMethodAuto: Auto
+  wwcConfigConversationGuidelinesAIModelInput: Ang kasalukuyang modelo ng Guidelines
+    AI ay {0}. Mangyaring magpasok ng isang modelo, i-type ang clear upang magamit
+    ang modelo ng aktibong provider, o i-type ang 0 upang bumalik.
+  wwcConfigGUIOpenAICompatibleModelButton: Baguhin ang Modelo ng Katugma sa OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Matagumpay na naka-install ang mga
+    Tseke sa AI ng Mga
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Ang kasalukuyang key ng API ay
+    {0}. Mangyaring magpasok ng isang API key para sa OpenAI Compatible, o i-type
+    ang 0 upang bumalik.
+  wwcConfigGUIInputMethodCurrent: 'Kasalukuyang: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Matagumpay na i-toplug ang OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: I-Toggle Guidelines Mga Check sa AI
+  wwctTranslationErrorActionBar: Error
+  wwcConfigGUIObjectTranslationConcurrencyButton: Baguhin ang Kasabay ng Pagsasalin
+    ng Object
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Matagumpay na itinakda
+    ang limitasyon ng parehong pagsasalin ng
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Ang limitasyon
+    ng parehong pagsasalin ng bagay ay dapat na 1 o mas malaki.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Ang kasalukuyang
+    limitasyon ng pagsasalin ng bagay ay {0}. Mag-type ng isang numero 1 o mas malaki.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Hindi wastong limitasyon sa
+    pagsasalin ng bagay na nakatakda sa config.yml. Ang halaga ay dapat na hindi bababa
+    sa 1. Pag-default sa 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Dapat na paganahin ang isang tagapagbigay
+    ng AI upang gumamit ng Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Awtomatikong nalutas ang kapasidad ng pagsasalin
+    sa {0} na mga aktibong pagsasalin at {1} na mga pagsasalin sa pila (mga processor
+    ng JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Matagumpay na itinakda ang limitasyon
+    ng kapasidad
+  wwcConfigGUITranslationCapacityButton: Baguhin ang Kapasidad ng Pag
+  wwcConfigTranslationCapacityInvalid: Hindi wastong limitasyon ng kapasidad ng pagsasalin
+    na nakatakda sa config.yml. Gumamit ng 0 para sa auto o 1 o higit pa. Pag-default
+    sa auto...
+  wwcConfigTranslationCapacityManual: Nakatakda ang kapasidad ng pagsasalin sa {0}
+    na mga aktibong pagsasalin at {1} na mga pagsasalin sa pila
+  wwcConfigConversationTranslationCapacityInvalid: Ang limitasyon ng kapasidad ng
+    pagsasalin ay dapat na 0 para sa auto o 1 o higit pa.
+  wwcConfigConversationTranslationCapacityInput: Ang kasalukuyang limitasyon ng kapasidad
+    ng pagsasalin ay {0} ({1} active, {2} queue). I-type ang 0 para sa auto o isang
+    numero 1 o mas malaki.
 

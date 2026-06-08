@@ -1,8 +1,11 @@
 package com.dominicfeliton.worldwidechat.listeners;
 
 import com.dominicfeliton.worldwidechat.util.ActiveTranslator;
+import com.dominicfeliton.worldwidechat.util.CommonRefs.GuidelinesCheckContext;
+import com.dominicfeliton.worldwidechat.util.SpigotComponentMessenger;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
@@ -28,10 +31,15 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
-            String outgoingText = event.getMessage();
+            String originalText = event.getMessage();
+            String outgoingText = originalText;
+            GuidelinesCheckContext guidelinesCheck = refs.createGuidelinesCheckContext(originalText, event.getPlayer());
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
                     || (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-                outgoingText = refs.translateText(event.getMessage(), event.getPlayer());
+                outgoingText = refs.translateTextForChat(originalText, event.getPlayer(), guidelinesCheck);
+                if (guidelinesCheck.isBlocked()) {
+                    return;
+                }
                 if (!channel) {
                     event.setMessage(outgoingText);
                 }
@@ -72,7 +80,10 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
 
                 // If all checks pass, translate an incoming message for the current translator.
                 // Translate message + get original format
-                String translation = refs.translateText(outgoingText, eaRecipient);
+                String translation = refs.translateTextForChat(outgoingText, eaRecipient, guidelinesCheck);
+                if (guidelinesCheck.isBlocked()) {
+                    return;
+                }
                 if (translation.equalsIgnoreCase(event.getMessage())) {
                     refs.debugMsg("Translation unsuccessful/same as original message for " + eaRecipient.getName());
                     unmodifiedMessageRecipients.add(eaRecipient);
@@ -121,23 +132,7 @@ public class SpigotChatListener extends AbstractChatListener<AsyncPlayerChatEven
     }
 
     private void sendChatMessage(Player eaRecipient, Component outMessage) {
-        if (main.getCurrPlatform().equalsIgnoreCase("Paper")) {
-            // If we are on Paper but using Spigot, we assume that Adventure is not installed.
-            // Note that this does not support hover text.
-            if (eaRecipient != null) {
-                eaRecipient.sendMessage(refs.serial(outMessage));
-            } else {
-                main.getServer().getConsoleSender().sendMessage(refs.serial(outMessage));
-            }
-        } else {
-            try {
-                if (eaRecipient != null) {
-                    main.adventure().sender(eaRecipient).sendMessage(outMessage);
-                } else {
-                    main.adventure().console().sendMessage(outMessage);
-                }
-            } catch (IllegalStateException e) {
-            }
-        }
+        CommandSender recipient = eaRecipient == null ? main.getServer().getConsoleSender() : eaRecipient;
+        SpigotComponentMessenger.INSTANCE.sendMessage(recipient, outMessage);
     }
 }

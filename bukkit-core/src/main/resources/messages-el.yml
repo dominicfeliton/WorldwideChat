@@ -830,4 +830,69 @@ Messages:
   wwcConfigGUISendActionBarButton: Αποστολή γραμμών ενεργειών
   wwcConfigActionBarInvalid: Μη έγκυρη ρύθμιση γραμμής ενεργειών αποστολής που έχει
     οριστεί στο config.yml. Η προεπιλογή είναι αληθής...
+  wwcConfigGUIInputMethodConversation: Συνομιλία
+  wwcAIGuidelinesBlocked: Αυτό το μήνυμα αποκλείστηκε από τις οδηγίες μετάφρασης.
+  wwcConfigGUIGuidelinesAIModelButton: Αλλαγή οδηγιών Μοντέλο AI
+  wwcConfigGUIOpenAICompatibleURLButton: Αλλαγή συμβατής διεύθυνσης URL OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: Οι κατευθυντήριες γραμμές του μοντέλου
+    AI ορίστηκαν με επιτυχία.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: Το κλειδί API συμβατό με OpenAI
+    έχει οριστεί με επιτυχία.
+  wwcConfigConversationOpenAICompatibleURLSuccess: Η συμβατή διεύθυνση URL OpenAI
+    ορίστηκε με επιτυχία.
+  wwcConfigConversationOpenAICompatibleURLInput: Η τρέχουσα διεύθυνση URL είναι {0}.
+    Εισαγάγετε μια διεύθυνση URL για το OpenAI Compatible ή πληκτρολογήστε 0 για να
+    επιστρέψετε.
+  wwcConfigConversationOpenAICompatibleModelInput: Το τρέχον μοντέλο είναι {0}. Εισαγάγετε
+    ένα μοντέλο για συμβατό με το OpenAI ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIGuidelinesAIPromptButton: Προτροπή αλλαγής κατευθυντήριων γραμμών AI
+  wwcConfigGUIOpenAICompatiblePromptButton: Αλλαγή προτροπής συμβατής με OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: Εναλλαγή συμβατότητας με OpenAI
+  wwcConfigConversationInputMethodSuccess: Η μέθοδος εισαγωγής έχει οριστεί σε {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: Το συμβατό μοντέλο OpenAI ρυθμίστηκε
+    με επιτυχία.
+  wwcConfigGUIOpenAICompatibleButton: Συμβατό με OpenAI
+  wwcConfigGUIInputMethodPaperDialog: Διάλογος χαρτιού
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Αλλαγή κλειδιού API συμβατό με OpenAI
+  wwcConfigGUIInputMethodButton: Μέθοδος εισαγωγής
+  wwcConfigGUIInputMethodAuto: Αυτόματο
+  wwcConfigConversationGuidelinesAIModelInput: Το τρέχον μοντέλο Guidelines AI είναι
+    {0}. Εισαγάγετε ένα μοντέλο, πληκτρολογήστε clear για να χρησιμοποιήσετε το ενεργό
+    μοντέλο παροχέα ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIOpenAICompatibleModelButton: Αλλάξτε το συμβατό μοντέλο OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Επιτυχής εναλλαγή των ελέγχων Οδηγιών
+    AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Το τρέχον κλειδί API είναι {0}.
+    Εισαγάγετε ένα κλειδί API για συμβατό με το OpenAI ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIInputMethodCurrent: 'Τρέχον: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Ενεργοποιήθηκε επιτυχώς το OpenAI Compatible.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Εναλλαγή οδηγιών Ελέγχου AI
+  wwctTranslationErrorActionBar: Σφάλμα
+  wwcConfigGUIObjectTranslationConcurrencyButton: Αλλαγή ταυτόχρονης μετάφρασης αντικειμένου
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Ορίστηκε με επιτυχία όριο
+    ταυτόχρονης μετάφρασης αντικειμένων.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Το όριο ταυτόχρονης
+    μετάφρασης αντικειμένων πρέπει να είναι 1 ή μεγαλύτερο.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Το τρέχον όριο ταυτόχρονης
+    μετάφρασης αντικειμένων είναι {0}. Πληκτρολογήστε έναν αριθμό 1 ή μεγαλύτερο.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Μη έγκυρο όριο ταυτόχρονης
+    μετάφρασης αντικειμένων που έχει οριστεί στο config.yml. Η τιμή πρέπει να είναι
+    τουλάχιστον 1. Προεπιλογή σε 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: Ένας πάροχος AI πρέπει να είναι ενεργοποιημένος
+    για να χρησιμοποιεί τα Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Η ικανότητα μετάφρασης επιλύεται αυτόματα σε
+    {0} ενεργές μεταφράσεις και {1} σε ουρές μεταφράσεων (επεξεργαστές JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Το όριο χωρητικότητας μετάφρασης
+    ορίστηκε με επιτυχία.
+  wwcConfigGUITranslationCapacityButton: Αλλαγή ικανότητας μετάφρασης
+  wwcConfigTranslationCapacityInvalid: Μη έγκυρο όριο χωρητικότητας μετάφρασης που
+    έχει οριστεί στο config.yml. Χρησιμοποιήστε το 0 για αυτόματο ή 1 ή μεγαλύτερο.
+    Προεπιλογή σε αυτόματο...
+  wwcConfigTranslationCapacityManual: Η ικανότητα μετάφρασης έχει οριστεί σε {0} ενεργές
+    μεταφράσεις και {1} μεταφράσεις σε ουρά.
+  wwcConfigConversationTranslationCapacityInvalid: Το όριο χωρητικότητας μετάφρασης
+    πρέπει να είναι 0 για αυτόματο ή 1 ή μεγαλύτερο.
+  wwcConfigConversationTranslationCapacityInput: Το τρέχον όριο χωρητικότητας μετάφρασης
+    είναι {0} ({1} ενεργό, {2} σε ουρά). Πληκτρολογήστε 0 για αυτόματο ή αριθμό 1
+    ή μεγαλύτερο.
 

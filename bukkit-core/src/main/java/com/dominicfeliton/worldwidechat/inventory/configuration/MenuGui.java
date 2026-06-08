@@ -1,8 +1,8 @@
 package com.dominicfeliton.worldwidechat.inventory.configuration;
 
-import com.cryptomorin.xseries.XMaterial;
 import com.dominicfeliton.worldwidechat.WorldwideChat;
-import com.dominicfeliton.worldwidechat.conversations.configuration.*;
+import com.dominicfeliton.worldwidechat.input.InputPrompt;
+import com.dominicfeliton.worldwidechat.input.configuration.*;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import fr.minuskube.inv.ClickableItem;
@@ -12,11 +12,12 @@ import fr.minuskube.inv.content.InventoryProvider;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 import static com.dominicfeliton.worldwidechat.WorldwideChat.instance;
@@ -30,7 +31,7 @@ public class MenuGui implements InventoryProvider {
     public enum CONFIG_GUI_TAGS {
         GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET,
         CHAT_SET, CHAT_CHANNEL_SET,
-        TRANS_SET, AMAZON_TRANS_SET, AZURE_TRANS_SET, CHATGPT_TRANS_SET,
+        TRANS_SET, AMAZON_TRANS_SET, AZURE_TRANS_SET, CHATGPT_TRANS_SET, OPENAI_COMPATIBLE_TRANS_SET,
         DEEP_TRANS_SET, GOOGLE_TRANS_SET, LIBRE_TRANS_SET, OLLAMA_TRANS_SET,
         SYSTRAN_TRANS_SET,
         AI_SET;
@@ -42,6 +43,7 @@ public class MenuGui implements InventoryProvider {
     /* ------------------------------------------------------------------ */
 
     private static final Map<String, String> CACHED_MSGS = new HashMap<>();
+    private static final String GUIDELINES_AI_DISABLED_REASON = "wwcConfigGUIGuidelinesAIDisabledReason";
 
     private static final List<String> TRANSLATOR_TOGGLES;
     private static final List<String> STORAGE_TOGGLES =
@@ -111,22 +113,22 @@ public class MenuGui implements InventoryProvider {
     private void buildLazyMenus() {
 
         CONFIG_GUI_TAGS.SQL_SET.inv = lazy("sqlSettingsMenu", 4, 9,
-                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, this::buildSQL);
+                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, MenuGui::buildSQL, "SQL");
 
         CONFIG_GUI_TAGS.MONGO_SET.inv = lazy("mongoSettingsMenu", 3, 9,
-                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, this::buildMongo);
+                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, MenuGui::buildMongo, "MongoDB");
 
         CONFIG_GUI_TAGS.POSTGRES_SET.inv = lazy("postgresSettingsMenu", 4, 9,
-                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, this::buildPostgres);
+                "wwcConfigGUIStorageTypeSettings", ChatColor.BLUE, MenuGui::buildPostgres, "PostgreSQL");
 
         CONFIG_GUI_TAGS.CHAT_SET.inv = lazy("chatSettingsMenu", 4, 9,
-                "wwcConfigGUIChatSettings", ChatColor.BLUE, this::buildChat);
+                "wwcConfigGUIChatSettings", ChatColor.BLUE, MenuGui::buildChat);
 
         CONFIG_GUI_TAGS.CHAT_CHANNEL_SET.inv = lazy("chatChannelSettingsMenu", 3, 9,
-                "wwcConfigGUIChatChannelSettings", ChatColor.BLUE, this::buildChatChannel);
+                "wwcConfigGUIChatChannelSettings", ChatColor.BLUE, MenuGui::buildChatChannel);
 
         CONFIG_GUI_TAGS.TRANS_SET.inv = lazy("translatorSettingsMenu", 5, 9,
-                "wwcConfigGUITranslatorSettings", ChatColor.BLUE, this::buildTranslatorRoot);
+                "wwcConfigGUITranslatorSettings", ChatColor.BLUE, MenuGui::buildTranslatorRoot);
 
         CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.inv = new LazySmartInventory(() -> {
             MenuGui g = new MenuGui(inPlayer, transName);
@@ -177,6 +179,13 @@ public class MenuGui implements InventoryProvider {
             return inv;
         });
 
+        CONFIG_GUI_TAGS.OPENAI_COMPATIBLE_TRANS_SET.inv = new LazySmartInventory(() -> {
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv("openAICompatibleTranslator", "wwcConfigGUIEachTranslatorSettings", "OpenAI Compatible");
+            g.buildOpenAICompatible();
+            return inv;
+        });
+
         CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv = new LazySmartInventory(() -> {
             MenuGui g = new MenuGui(inPlayer, transName);
             SmartInventory inv = g.genSmartInv("ollamaTranslator", "wwcConfigGUIEachTranslatorSettings", "Ollama");
@@ -185,7 +194,7 @@ public class MenuGui implements InventoryProvider {
         });
 
         CONFIG_GUI_TAGS.AI_SET.inv = lazy("aiSettings", 3, 9,
-                "wwcConfigGUIAISettings", ChatColor.BLUE, this::buildAI);
+                "wwcConfigGUIAISettings", ChatColor.BLUE, MenuGui::buildAI);
     }
 
     /* ------------------------------------------------------------------ */
@@ -195,21 +204,24 @@ public class MenuGui implements InventoryProvider {
     private LazySmartInventory lazy(String id,
                                     int rows, int cols,
                                     String titleKey, ChatColor color,
-                                    Runnable bodyBuilder) {
+                                    Consumer<MenuGui> bodyBuilder,
+                                    String... titleArgs) {
         return new LazySmartInventory(() -> {
-            SmartInventory inv = genSmartInv(id, rows, cols, color, titleKey);
-            bodyBuilder.run();
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv(id, rows, cols, color, titleKey, titleArgs);
+            bodyBuilder.accept(g);
             return inv;
         });
     }
 
     private LazySmartInventory lazy(String id,
                                     String titleKey,
-                                    Runnable bodyBuilder,
+                                    Consumer<MenuGui> bodyBuilder,
                                     String... titleArgs) {
         return new LazySmartInventory(() -> {
-            SmartInventory inv = genSmartInv(id, 3, 9, ChatColor.BLUE, titleKey, titleArgs);
-            bodyBuilder.run();
+            MenuGui g = new MenuGui(inPlayer, transName);
+            SmartInventory inv = g.genSmartInv(id, 3, 9, ChatColor.BLUE, titleKey, titleArgs);
+            bodyBuilder.accept(g);
             return inv;
         });
     }
@@ -220,24 +232,28 @@ public class MenuGui implements InventoryProvider {
 
     private void buildGeneral() {
         elements.clear();
-        add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
-        add(new ConvoElement(1, 1, "wwcConfigGUIPrefixButton", XMaterial.NAME_TAG,
+        add(new BorderElement(Material.WHITE_STAINED_GLASS_PANE));
+        add(new ConvoElement(1, 1, "wwcConfigGUIPrefixButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.Prefix()));
-        add(new ConvoElement(1, 2, "wwcConfigGUIFatalAsyncAbortButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIFatalAsyncAbortButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.FatalAsyncAbort()));
-        add(new ConvoElement(1, 3, "wwcConfigGUILangButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIObjectTranslationConcurrencyButton", Material.NAME_TAG,
+                new GeneralSettingsConvos.ObjectTranslationConcurrency()));
+        add(new ConvoElement(1, 4, "wwcConfigGUITranslationCapacityButton", Material.NAME_TAG,
+                new GeneralSettingsConvos.TranslationCapacity()));
+        add(new ConvoElement(1, 5, "wwcConfigGUILangButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.Lang()));
-        add(new ConvoElement(1, 4, "wwcConfigGUIUpdateCheckerButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 6, "wwcConfigGUIUpdateCheckerButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.UpdateChecker()));
-        add(new ConvoElement(1, 5, "wwcConfigGUISyncUserDataButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 7, "wwcConfigGUISyncUserDataButton", Material.NAME_TAG,
                 new GeneralSettingsConvos.SyncUserData()));
-        add(new ToggleElement(1, 6, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess",
+        add(new ToggleElement(2, 1, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess",
                 "General.enablebStats"));
-        add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess",
+        add(new ToggleElement(2, 2, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess",
                 "General.enableDebugMode"));
-        add(new ToggleElement(2, 1, "wwcConfigGUILocalizeSyncButton", "wwcConfigConversationLocalizeSyncSuccess",
+        add(new ToggleElement(2, 3, "wwcConfigGUILocalizeSyncButton", "wwcConfigConversationLocalizeSyncSuccess",
                 "General.syncUserLocalization"));
-        add(new ToggleElement(2, 2, "wwcConfigGUIEnableSoundsButton", "wwcConfigConversationEnableSoundsSuccess",
+        add(new ToggleElement(2, 4, "wwcConfigGUIEnableSoundsButton", "wwcConfigConversationEnableSoundsSuccess",
                 "General.enableSounds"));
         add(new CommonElement(3, 4, "Quit"));
         add(new CommonElement(3, 8, "Page Number", new String[]{"1"}));
@@ -247,7 +263,7 @@ public class MenuGui implements InventoryProvider {
 
     private void buildStorage() {
         elements.clear();
-        add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.WHITE_STAINED_GLASS_PANE));
         add(new SubMenuElement(1, 1, instance.isSQLConnValid(true), "wwcConfigGUISQLMenuButton",
                 CONFIG_GUI_TAGS.SQL_SET.inv));
         add(new SubMenuElement(1, 2, instance.isMongoConnValid(true), "wwcConfigGUIMongoMenuButton",
@@ -262,22 +278,22 @@ public class MenuGui implements InventoryProvider {
 
     private void buildSQL() {
         elements.clear();
-        add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.WHITE_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleSQLButton", "wwcConfigConversationToggleSQLSuccess",
                 "Storage.useSQL", STORAGE_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUISQLHostnameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUISQLHostnameButton", Material.NAME_TAG,
                 new SQLSettingsConvos.Hostname()));
-        add(new ConvoElement(1, 3, "wwcConfigGUISQLPortButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUISQLPortButton", Material.NAME_TAG,
                 new SQLSettingsConvos.Port()));
-        add(new ConvoElement(1, 4, "wwcConfigGUISQLDatabaseNameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 4, "wwcConfigGUISQLDatabaseNameButton", Material.NAME_TAG,
                 new SQLSettingsConvos.Database()));
-        add(new ConvoElement(1, 5, "wwcConfigGUISQLUsernameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 5, "wwcConfigGUISQLUsernameButton", Material.NAME_TAG,
                 new SQLSettingsConvos.Username()));
-        add(new ConvoElement(1, 6, "wwcConfigGUISQLPasswordButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 6, "wwcConfigGUISQLPasswordButton", Material.NAME_TAG,
                 new SQLSettingsConvos.Password()));
         add(new ToggleElement(1, 7, "wwcConfigGUIToggleSQLSSLButton", "wwcConfigConversationToggleSQLSSLSuccess",
                 "Storage.sqlUseSSL"));
-        add(new ConvoElement(2, 1, "wwcConfigGUISQLOptionalArgsButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(2, 1, "wwcConfigGUISQLOptionalArgsButton", Material.NAME_TAG,
                 new SQLSettingsConvos.OptionalArgs()));
         add(new CommonElement(3, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.STORAGE_SET.inv}));
         add(new CommonElement(3, 4, "Quit"));
@@ -285,20 +301,20 @@ public class MenuGui implements InventoryProvider {
 
     private void buildMongo() {
         elements.clear();
-        add(new BorderElement(XMaterial.ORANGE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.ORANGE_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleMongoButton", "wwcConfigConversationToggleMongoSuccess",
                 "Storage.useMongoDB", STORAGE_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIMongoHostnameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIMongoHostnameButton", Material.NAME_TAG,
                 new MongoSettingsConvos.Hostname()));
-        add(new ConvoElement(1, 3, "wwcConfigGUIMongoPortButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIMongoPortButton", Material.NAME_TAG,
                 new MongoSettingsConvos.Port()));
-        add(new ConvoElement(1, 4, "wwcConfigGUIMongoDatabaseNameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 4, "wwcConfigGUIMongoDatabaseNameButton", Material.NAME_TAG,
                 new MongoSettingsConvos.Database()));
-        add(new ConvoElement(1, 5, "wwcConfigGUIMongoUsernameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 5, "wwcConfigGUIMongoUsernameButton", Material.NAME_TAG,
                 new MongoSettingsConvos.Username()));
-        add(new ConvoElement(1, 6, "wwcConfigGUIMongoPasswordButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 6, "wwcConfigGUIMongoPasswordButton", Material.NAME_TAG,
                 new MongoSettingsConvos.Password()));
-        add(new ConvoElement(1, 7, "wwcConfigGUIMongoOptionalArgsButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 7, "wwcConfigGUIMongoOptionalArgsButton", Material.NAME_TAG,
                 new MongoSettingsConvos.OptionalArgs()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.STORAGE_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -306,22 +322,22 @@ public class MenuGui implements InventoryProvider {
 
     private void buildPostgres() {
         elements.clear();
-        add(new BorderElement(XMaterial.GRAY_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.GRAY_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUITogglePostgresButton", "wwcConfigConversationTogglePostgresSuccess",
                 "Storage.usePostgreSQL", STORAGE_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIPostgresHostnameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIPostgresHostnameButton", Material.NAME_TAG,
                 new PostgresSettingsConvos.Hostname()));
-        add(new ConvoElement(1, 3, "wwcConfigGUIPostgresPortButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIPostgresPortButton", Material.NAME_TAG,
                 new PostgresSettingsConvos.Port()));
-        add(new ConvoElement(1, 4, "wwcConfigGUIPostgresDatabaseNameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 4, "wwcConfigGUIPostgresDatabaseNameButton", Material.NAME_TAG,
                 new PostgresSettingsConvos.Database()));
-        add(new ConvoElement(1, 5, "wwcConfigGUIPostgresUsernameButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 5, "wwcConfigGUIPostgresUsernameButton", Material.NAME_TAG,
                 new PostgresSettingsConvos.Username()));
-        add(new ConvoElement(1, 6, "wwcConfigGUIPostgresPasswordButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 6, "wwcConfigGUIPostgresPasswordButton", Material.NAME_TAG,
                 new PostgresSettingsConvos.Password()));
         add(new ToggleElement(1, 7, "wwcConfigGUITogglePostgresSSLButton", "wwcConfigConversationTogglePostgresSSLSuccess",
                 "Storage.postgresSSL"));
-        add(new ConvoElement(2, 1, "wwcConfigGUIPostgresOptionalArgsButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(2, 1, "wwcConfigGUIPostgresOptionalArgsButton", Material.NAME_TAG,
                 new PostgresSettingsConvos.OptionalArgs()));
         add(new CommonElement(3, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.STORAGE_SET.inv}));
         add(new CommonElement(3, 4, "Quit"));
@@ -329,7 +345,7 @@ public class MenuGui implements InventoryProvider {
 
     private void buildChat() {
         elements.clear();
-        add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.WHITE_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess",
                 "Chat.sendTranslationChat"));
         add(new ToggleElement(1, 2, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess",
@@ -344,8 +360,9 @@ public class MenuGui implements InventoryProvider {
                 "Chat.useVault"));
         add(new ToggleElement(1, 7, "wwcConfigGUISendActionBarButton", "wwcConfigConversationSendActionBarSuccess",
                 "Chat.sendActionBar"));
-        add(new ConvoElement(2, 1, "wwcConfigGUIChatListenerPriorityButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(2, 1, "wwcConfigGUIChatListenerPriorityButton", Material.NAME_TAG,
                 new ChatSettingsConvos.ModifyChatPriority()));
+        add(new InputMethodElement(2, 5));
 
         if (!main.getCurrPlatform().equals("Folia")) {
             add(new SubMenuElement(2, 2, "wwcConfigGUIMessagesOverridePickChatButton",
@@ -369,12 +386,12 @@ public class MenuGui implements InventoryProvider {
 
     private void buildChatChannel() {
         elements.clear();
-        add(new BorderElement(XMaterial.PURPLE_STAINED_GLASS_PANE));
-        add(new ConvoElement(1, 1, "wwcConfigGUISeparateChatChannelIconButton", XMaterial.NAME_TAG,
+        add(new BorderElement(Material.PURPLE_STAINED_GLASS_PANE));
+        add(new ConvoElement(1, 1, "wwcConfigGUISeparateChatChannelIconButton", Material.NAME_TAG,
                 new ChatSettingsConvos.ChannelIcon()));
-        add(new ConvoElement(1, 2, "wwcConfigGUISeparateChatChannelFormatButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUISeparateChatChannelFormatButton", Material.NAME_TAG,
                 new ChatSettingsConvos.ChannelFormat()));
-        add(new ConvoElement(1, 3, "wwcConfigGUISeparateChatChannelHoverFormatButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUISeparateChatChannelHoverFormatButton", Material.NAME_TAG,
                 new ChatSettingsConvos.ChannelHoverFormat()));
         add(new ToggleElement(1, 4, "wwcConfigGUISeparateChatChannelForceButton", "wwcConfigConversationSeparateChatChannelForceSuccess",
                 "Chat.separateChatChannel.force"));
@@ -384,7 +401,7 @@ public class MenuGui implements InventoryProvider {
 
     private void buildTranslatorRoot() {
         elements.clear();
-        add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.WHITE_STAINED_GLASS_PANE));
         add(new SubMenuElement(1, 1, transName.equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton",
                 CONFIG_GUI_TAGS.AMAZON_TRANS_SET.inv));
         add(new SubMenuElement(1, 2, transName.equals("Azure Translate"), "wwcConfigGUIAzureTranslateButton",
@@ -399,17 +416,19 @@ public class MenuGui implements InventoryProvider {
                 CONFIG_GUI_TAGS.LIBRE_TRANS_SET.inv));
         add(new SubMenuElement(1, 7, transName.equals("Ollama"), "wwcConfigGUIOllamaButton",
                 CONFIG_GUI_TAGS.OLLAMA_TRANS_SET.inv));
-        add(new SubMenuElement(2, 1, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton",
+        add(new SubMenuElement(2, 1, transName.equals("OpenAI Compatible"), "wwcConfigGUIOpenAICompatibleButton",
+                CONFIG_GUI_TAGS.OPENAI_COMPATIBLE_TRANS_SET.inv));
+        add(new SubMenuElement(2, 2, transName.equals("Systran Translate"), "wwcConfigGUISystranTranslateButton",
                 CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.inv));
-        add(new ConvoElement(3, 1, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(3, 1, "wwcConfigGUITranslatorCacheButton", Material.NAME_TAG,
                 new TranslatorSettingsConvos.TranslationCache()));
-        add(new ConvoElement(3, 2, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(3, 2, "wwcConfigGUIGlobalRateLimitButton", Material.NAME_TAG,
                 new TranslatorSettingsConvos.GlobalRateLimit()));
-        add(new ConvoElement(3, 3, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(3, 3, "wwcConfigGUIErrorLimitButton", Material.NAME_TAG,
                 new TranslatorSettingsConvos.ErrorLimit()));
-        add(new ConvoElement(3, 4, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(3, 4, "wwcConfigGUICharacterLimitButton", Material.NAME_TAG,
                 new TranslatorSettingsConvos.CharacterLimit()));
-        add(new ConvoElement(3, 5, "wwcConfigGUIIgnoreErrorsButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(3, 5, "wwcConfigGUIIgnoreErrorsButton", Material.NAME_TAG,
                 new TranslatorSettingsConvos.IgnoreErrors()));
         add(new ToggleElement(3, 6, "wwcConfigGUIPersistentCacheButton", "wwcConfigConversationPersistentCacheSuccess",
                 "Translator.enablePersistentCache"));
@@ -421,10 +440,10 @@ public class MenuGui implements InventoryProvider {
 
     private void buildGoogle() {
         elements.clear();
-        add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.RED_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleGoogleTranslateButton", "wwcConfigConversationGoogleTranslateToggleSuccess",
                 "Translator.useGoogleTranslate", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIGoogleTranslateAPIKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIGoogleTranslateAPIKeyButton", Material.NAME_TAG,
                 new GoogleSettingsConvos.ApiKey()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -432,14 +451,14 @@ public class MenuGui implements InventoryProvider {
 
     private void buildAmazon() {
         elements.clear();
-        add(new BorderElement(XMaterial.YELLOW_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.YELLOW_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleAmazonTranslateButton", "wwcConfigConversationAmazonTranslateToggleSuccess",
                 "Translator.useAmazonTranslate", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIAmazonTranslateAccessKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIAmazonTranslateAccessKeyButton", Material.NAME_TAG,
                 new AmazonSettingsConvos.AccessKey()));
-        add(new ConvoElement(1, 3, "wwcConfigGUIAmazonTranslateSecretKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIAmazonTranslateSecretKeyButton", Material.NAME_TAG,
                 new AmazonSettingsConvos.SecretKey()));
-        add(new ConvoElement(1, 4, "wwcConfigGUIAmazonTranslateRegionButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 4, "wwcConfigGUIAmazonTranslateRegionButton", Material.NAME_TAG,
                 new AmazonSettingsConvos.Region()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -447,12 +466,12 @@ public class MenuGui implements InventoryProvider {
 
     private void buildLibre() {
         elements.clear();
-        add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.WHITE_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleLibreTranslateButton", "wwcConfigConversationLibreTranslateToggleSuccess",
                 "Translator.useLibreTranslate", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUILibreTranslateURLButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUILibreTranslateURLButton", Material.NAME_TAG,
                 new LibreSettingsConvos.Url()));
-        add(new ConvoElement(1, 3, "wwcConfigGUILibreTranslateApiKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUILibreTranslateApiKeyButton", Material.NAME_TAG,
                 new LibreSettingsConvos.ApiKey()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -460,10 +479,10 @@ public class MenuGui implements InventoryProvider {
 
     private void buildDeepL() {
         elements.clear();
-        add(new BorderElement(XMaterial.BLUE_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.BLUE_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleDeepLTranslateButton", "wwcConfigConversationDeepLTranslateToggleSuccess",
                 "Translator.useDeepLTranslate", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIDeepLTranslateApiKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIDeepLTranslateApiKeyButton", Material.NAME_TAG,
                 new DeepLSettingsConvos.ApiKey()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -471,12 +490,12 @@ public class MenuGui implements InventoryProvider {
 
     private void buildAzure() {
         elements.clear();
-        add(new BorderElement(XMaterial.GREEN_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.GREEN_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleAzureTranslateButton", "wwcConfigConversationAzureTranslateToggleSuccess",
                 "Translator.useAzureTranslate", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIAzureTranslateApiKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIAzureTranslateApiKeyButton", Material.NAME_TAG,
                 new AzureSettingsConvos.ApiKey()));
-        add(new ConvoElement(1, 3, "wwcConfigGUIAzureTranslateRegionButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIAzureTranslateRegionButton", Material.NAME_TAG,
                 new AzureSettingsConvos.Region()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -484,10 +503,10 @@ public class MenuGui implements InventoryProvider {
 
     private void buildSystran() {
         elements.clear();
-        add(new BorderElement(XMaterial.CYAN_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.CYAN_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleSystranTranslateButton", "wwcConfigConversationSystranTranslateToggleSuccess",
                 "Translator.useSystranTranslate", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUISystranTranslateApiKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUISystranTranslateApiKeyButton", Material.NAME_TAG,
                 new SystranSettingsConvos.ApiKey()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -495,27 +514,42 @@ public class MenuGui implements InventoryProvider {
 
     private void buildChatGPT() {
         elements.clear();
-        add(new BorderElement(XMaterial.BLACK_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.BLACK_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleChatGPTButton", "wwcConfigGUIChatGPTToggleSuccess",
                 "Translator.useChatGPT", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIChatGPTURLButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIChatGPTURLButton", Material.NAME_TAG,
                 new ChatGPTSettingsConvos.Url()));
-        add(new ConvoElement(1, 3, "wwcConfigGUIChatGPTAPIKeyButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIChatGPTAPIKeyButton", Material.NAME_TAG,
                 new ChatGPTSettingsConvos.ApiKey()));
-        add(new ConvoElement(1, 4, "wwcConfigGUIChatGPTModelButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 4, "wwcConfigGUIChatGPTModelButton", Material.NAME_TAG,
                 new ChatGPTSettingsConvos.Model()));
+        add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
+        add(new CommonElement(2, 4, "Quit"));
+    }
+
+    private void buildOpenAICompatible() {
+        elements.clear();
+        add(new BorderElement(Material.GRAY_STAINED_GLASS_PANE));
+        add(new ToggleElement(1, 1, "wwcConfigGUIToggleOpenAICompatibleButton", "wwcConfigGUIOpenAICompatibleToggleSuccess",
+                "Translator.useOpenAICompatible", TRANSLATOR_TOGGLES, false));
+        add(new ConvoElement(1, 2, "wwcConfigGUIOpenAICompatibleURLButton", Material.NAME_TAG,
+                new OpenAICompatibleSettingsConvos.Url()));
+        add(new ConvoElement(1, 3, "wwcConfigGUIOpenAICompatibleAPIKeyButton", Material.NAME_TAG,
+                new OpenAICompatibleSettingsConvos.ApiKey()));
+        add(new ConvoElement(1, 4, "wwcConfigGUIOpenAICompatibleModelButton", Material.NAME_TAG,
+                new OpenAICompatibleSettingsConvos.Model()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
     }
 
     private void buildOllama() {
         elements.clear();
-        add(new BorderElement(XMaterial.LIME_STAINED_GLASS_PANE));
+        add(new BorderElement(Material.LIME_STAINED_GLASS_PANE));
         add(new ToggleElement(1, 1, "wwcConfigGUIToggleOllamaButton", "wwcConfigGUIOllamaToggleSuccess",
                 "Translator.useOllama", TRANSLATOR_TOGGLES, false));
-        add(new ConvoElement(1, 2, "wwcConfigGUIOllamaURLButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 2, "wwcConfigGUIOllamaURLButton", Material.NAME_TAG,
                 new OllamaSettingsConvos.Url()));
-        add(new ConvoElement(1, 3, "wwcConfigGUIOllamaModelButton", XMaterial.NAME_TAG,
+        add(new ConvoElement(1, 3, "wwcConfigGUIOllamaModelButton", Material.NAME_TAG,
                 new OllamaSettingsConvos.Model()));
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
         add(new CommonElement(2, 4, "Quit"));
@@ -523,13 +557,28 @@ public class MenuGui implements InventoryProvider {
 
     private void buildAI() {
         elements.clear();
-        add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
-        add(new BulkInputElement(1, 1, "wwcConfigGUIChatGPTPromptButton", XMaterial.NAME_TAG,
+        add(new BorderElement(Material.RED_STAINED_GLASS_PANE));
+        boolean aiProviderEnabled = CommonRefs.isAIProviderEnabled(main.getConfigManager().getMainConfig());
+        add(new BulkInputElement(1, 1, "wwcConfigGUIChatGPTPromptButton", Material.NAME_TAG,
                 main.getConfigManager().getAIConfig(), "chatGPTOverrideSystemPrompt"));
-        add(new BulkInputElement(1, 2, "wwcConfigGUIOllamaPromptButton", XMaterial.NAME_TAG,
-                main.getConfigManager().getAIConfig(), "chatGPTOverrideSystemPrompt"));
+        add(new BulkInputElement(1, 2, "wwcConfigGUIOllamaPromptButton", Material.NAME_TAG,
+                main.getConfigManager().getAIConfig(), "ollamaOverrideSystemPrompt"));
+        add(new BulkInputElement(1, 3, "wwcConfigGUIOpenAICompatiblePromptButton", Material.NAME_TAG,
+                main.getConfigManager().getAIConfig(), "openAICompatibleOverrideSystemPrompt"));
+        if (aiProviderEnabled) {
+            add(new ConvoElement(1, 4, "wwcConfigGUIGuidelinesAIModelButton", Material.NAME_TAG,
+                    new AISettingsConvos.GuidelinesAIModel()));
+            add(new BulkInputElement(1, 5, "wwcConfigGUIGuidelinesAIPromptButton", Material.NAME_TAG,
+                    main.getConfigManager().getAIConfig(), "guidelinesAIOverridePrompt"));
+            add(new ToggleElement(1, 6, "wwcConfigGUIToggleGuidelinesAIChecksButton", "wwcConfigGUIGuidelinesAIChecksToggleSuccess",
+                    "Translator.enableGuidelinesAIChecks"));
+        } else {
+            add(new DisabledElement(1, 4, "wwcConfigGUIGuidelinesAIModelButton", GUIDELINES_AI_DISABLED_REASON));
+            add(new DisabledElement(1, 5, "wwcConfigGUIGuidelinesAIPromptButton", GUIDELINES_AI_DISABLED_REASON));
+            add(new DisabledElement(1, 6, "wwcConfigGUIToggleGuidelinesAIChecksButton", GUIDELINES_AI_DISABLED_REASON));
+        }
         if (!main.getCurrPlatform().equals("Folia")) {
-            add(new SubMenuElement(1, 3, "wwcConfigGUIAIChangeLangs",
+            add(new SubMenuElement(1, 7, "wwcConfigGUIAIChangeLangs",
                     new LazySmartInventory(() -> new AILangGui(inPlayer).getAILangs())));
         }
         add(new CommonElement(2, 2, "Previous", new Object[]{CONFIG_GUI_TAGS.TRANS_SET.inv}));
@@ -545,9 +594,9 @@ public class MenuGui implements InventoryProvider {
         public final int      x;
         public final int      y;
         public final String   buttonName;
-        public final XMaterial blockIcon;
+        public final Material blockIcon;
 
-        Element(int x, int y, String buttonName, XMaterial icon) {
+        Element(int x, int y, String buttonName, Material icon) {
             this.x = x;
             this.y = y;
             this.buttonName = buttonName;
@@ -557,16 +606,16 @@ public class MenuGui implements InventoryProvider {
     }
 
     static class ConvoElement extends Element {
-        public final Prompt prompt;
+        public final InputPrompt prompt;
         private final WWCInventoryManager invMgr = instance.getInventoryManager();
 
-        ConvoElement(int x, int y, String buttonName, XMaterial icon, Prompt prompt) {
+        ConvoElement(int x, int y, String buttonName, Material icon, InputPrompt prompt) {
             super(x, y, buttonName, icon);
             this.prompt = prompt;
         }
         @Override
         void rasterize(Player player, InventoryContents contents) {
-            invMgr.genericConversationButton(x, y, player, contents, prompt, blockIcon, buttonName);
+            invMgr.genericInputButton(x, y, player, contents, prompt, blockIcon, buttonName);
         }
     }
 
@@ -575,7 +624,7 @@ public class MenuGui implements InventoryProvider {
         public final String            key;
         private final WWCInventoryManager invMgr = instance.getInventoryManager();
 
-        BulkInputElement(int x, int y, String buttonName, XMaterial icon,
+        BulkInputElement(int x, int y, String buttonName, Material icon,
                          YamlConfiguration cfg, String key) {
             super(x, y, buttonName, icon);
             this.cfg = cfg; this.key = key;
@@ -610,6 +659,39 @@ public class MenuGui implements InventoryProvider {
         }
     }
 
+    static class InputMethodElement extends Element {
+        private final WWCInventoryManager invMgr = instance.getInventoryManager();
+
+        InputMethodElement(int x, int y) {
+            super(x, y, "wwcConfigGUIInputMethodButton", null);
+        }
+
+        @Override
+        void rasterize(Player player, InventoryContents contents) {
+            invMgr.genericInputMethodButton(x, y, player, contents);
+        }
+    }
+
+    static class DisabledElement extends Element {
+        private final CommonRefs refs = instance.getServerFactory().getCommonRefs();
+        private final String disabledReason;
+
+        DisabledElement(int x, int y, String buttonName, String disabledReason) {
+            super(x, y, buttonName, Material.BEDROCK);
+            this.disabledReason = disabledReason;
+        }
+
+        @Override
+        void rasterize(Player player, InventoryContents contents) {
+            ItemStack button = new ItemStack(blockIcon);
+            ItemMeta buttonMeta = button.getItemMeta();
+            buttonMeta.setDisplayName(refs.getPlainMsg(buttonName, "", "&6", player));
+            buttonMeta.setLore(List.of(refs.getPlainMsg(disabledReason, new String[]{}, "&7", player)));
+            button.setItemMeta(buttonMeta);
+            contents.set(x, y, ClickableItem.of(button, e -> refs.playSound(CommonRefs.SoundType.DISABLED_BUTTON, player)));
+        }
+    }
+
     static class CommonElement extends Element {
         public final Object[] args;
         private final WWCInventoryManager invMgr = instance.getInventoryManager();
@@ -629,7 +711,7 @@ public class MenuGui implements InventoryProvider {
 
     static class BorderElement extends Element {
         private final WWCInventoryManager invMgr = instance.getInventoryManager();
-        BorderElement(XMaterial icon) { super(0, 0, "", icon); }
+        BorderElement(Material icon) { super(0, 0, "", icon); }
         @Override
         void rasterize(Player player, InventoryContents contents) {
             invMgr.setBorders(contents, blockIcon);

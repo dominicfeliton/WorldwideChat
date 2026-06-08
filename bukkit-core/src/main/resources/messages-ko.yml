@@ -620,4 +620,54 @@ Messages:
   wwcConfigConversationSendActionBarSuccess: 전송 작업 표시줄을 성공적으로 전환했습니다.
   wwcConfigGUISendActionBarButton: 액션 바 보내기
   wwcConfigActionBarInvalid: config.yml에 설정된 전송 작업 표시줄 설정이 잘못되었습니다.true로 기본 설정 중...
+  wwcConfigGUIInputMethodConversation: 대화
+  wwcAIGuidelinesBlocked: 이 메시지는 번역 가이드라인에 의해 차단되었습니다.
+  wwcConfigGUIGuidelinesAIModelButton: 변경 지침 AI 모델
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI 호환 URL 변경
+  wwcConfigConversationGuidelinesAIModelSuccess: 가이드라인 AI 모델 설정에 성공했습니다.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI 호환 API 키 세트를 성공적으로 열었습니다.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI 호환 URL이 성공적으로 설정되었습니다.
+  wwcConfigConversationOpenAICompatibleURLInput: 현재 URL은 {0} 입니다.OpenAI 호환 URL을 입력하거나
+    돌아가려면 0을 입력하십시오.
+  wwcConfigConversationOpenAICompatibleModelInput: 현재 모델은 {0} 입니다.OpenAI 호환 모델을 입력하거나
+    돌아가려면 0을 입력하십시오.
+  wwcConfigGUIGuidelinesAIPromptButton: 변경 지침 AI 프롬프트
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI 호환 프롬프트 변경
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI 호환 전환
+  wwcConfigConversationInputMethodSuccess: 입력 방법이 {0} 로 설정되었습니다.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI 호환 모델이 성공적으로 설정되었습니다.
+  wwcConfigGUIOpenAICompatibleButton: 오픈AI 호환
+  wwcConfigGUIInputMethodPaperDialog: 페이퍼 다이얼로그
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI 호환 API 키 변경
+  wwcConfigGUIInputMethodButton: 입력 방식
+  wwcConfigGUIInputMethodAuto: 자동
+  wwcConfigConversationGuidelinesAIModelInput: 현재 가이드라인 AI 모델은 {0} 입니다.모델을 입력하고 활성
+    제공자 모델을 사용하려면 clear를 입력하고, 돌아가려면 0을 입력하십시오.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI 호환 모델 변경
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: 가이드라인 AI 검사를 성공적으로 전환했습니다.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 현재 API 키는 {0} 입니다.OpenAI 호환용 API
+    키를 입력하거나 돌아가려면 0을 입력하십시오.
+  wwcConfigGUIInputMethodCurrent: '현재: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI 호환을 성공적으로 전환했습니다.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: 토글 가이드라인 AI 검사
+  wwctTranslationErrorActionBar: 오류
+  wwcConfigGUIObjectTranslationConcurrencyButton: 객체 변환 동시성 변경
+  wwcConfigConversationObjectTranslationConcurrencySuccess: 객체 변환 동시성 제한이 성공적으로 설정되었습니다.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: 객체 변환 동시성 제한은 1
+    이상이어야 합니다.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: 현재 객체 변환 동시성 제한은
+    {0} 입니다.1보다 큰 숫자를 입력하십시오.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml에 설정된 객체 변환 동시성 제한이
+    잘못되었습니다.값은 최소 1이어야 합니다.기본값은 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: AI 공급자가 가드레일을 사용할 수 있도록 활성화해야 합니다.
+  wwcConfigTranslationCapacityAuto: '번역 용량은 {0} 활성 번역 및 {1} 대기 중인 번역 (JVM 프로세서: {2})
+    으로 자동 해결됩니다.'
+  wwcConfigConversationTranslationCapacitySuccess: 번역 용량 제한이 성공적으로 설정되었습니다.
+  wwcConfigGUITranslationCapacityButton: 번역 용량 변경
+  wwcConfigTranslationCapacityInvalid: config.yml에 설정된 번역 용량 제한이 잘못되었습니다.자동의 경우 0을
+    사용하고 1 이상을 사용하십시오.기본값은 자동으로...
+  wwcConfigTranslationCapacityManual: 번역 용량은 {0} 활성 번역 및 {1} 대기 번역으로 설정되었습니다.
+  wwcConfigConversationTranslationCapacityInvalid: 번역 용량 제한은 자동의 경우 0이고 1 이상이어야 합니다.
+  wwcConfigConversationTranslationCapacityInput: 현재 번역 용량 제한은 {0} ({1} 활성, {2} 대기)
+    입니다.자동의 경우 0을 입력하고, 숫자 1 이상을 입력하십시오.
 

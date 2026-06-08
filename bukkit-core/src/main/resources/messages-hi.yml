@@ -782,4 +782,68 @@ Messages:
   wwcConfigGUISendActionBarButton: ऐक्शन बार भेजें
   wwcConfigActionBarInvalid: config.yml में अमान्य सेंड एक्शन बार सेटिंग सेट की गई
     है। डिफ़ॉल्ट रूप से सही हो रहा है...
+  wwcConfigGUIInputMethodConversation: वार्तालाप
+  wwcAIGuidelinesBlocked: यह संदेश हमारे अनुवाद दिशानिर्देशों द्वारा अवरुद्ध किया
+    गया था।
+  wwcConfigGUIGuidelinesAIModelButton: दिशानिर्देश बदलें AI मॉडल
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI संगत URL बदलें
+  wwcConfigConversationGuidelinesAIModelSuccess: दिशानिर्देश AI मॉडल सफलतापूर्वक सेट
+    किया गया।
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI संगत API कुंजी को सफलतापूर्वक
+    सेट किया गया।
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI संगत URL सफलतापूर्वक सेट
+    किया गया।
+  wwcConfigConversationOpenAICompatibleURLInput: मौजूदा URL {0} है। कृपया OpenAI Compatible
+    के लिए URL इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationOpenAICompatibleModelInput: मौजूदा मॉडल {0} है। कृपया OpenAI
+    Compatible के लिए एक मॉडल इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIGuidelinesAIPromptButton: दिशानिर्देश बदलें AI प्रॉम्प्ट
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI संगत प्रॉम्प्ट बदलें
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI संगत टॉगल करें
+  wwcConfigConversationInputMethodSuccess: इनपुट विधि {0} पर सेट है।
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI संगत मॉडल सफलतापूर्वक
+    सेट किया गया।
+  wwcConfigGUIOpenAICompatibleButton: OpenAI संगत
+  wwcConfigGUIInputMethodPaperDialog: पेपर डायलॉग
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI संगत API कुंजी बदलें
+  wwcConfigGUIInputMethodButton: इनपुट मेथड
+  wwcConfigGUIInputMethodAuto: अपने आप
+  wwcConfigConversationGuidelinesAIModelInput: मौजूदा दिशानिर्देश AI मॉडल {0} है।
+    कृपया एक मॉडल इनपुट करें, सक्रिय प्रदाता मॉडल का उपयोग करने के लिए clear टाइप
+    करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI संगत मॉडल बदलें
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: दिशानिर्देशों AI जाँचों को सफलतापूर्वक
+    टॉगल किया गया।
+  wwcConfigConversationOpenAICompatibleApiKeyInput: मौजूदा API कुंजी {0} है। कृपया
+    OpenAI Compatible के लिए API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIInputMethodCurrent: 'वर्तमान: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI संगत को सफलतापूर्वक टॉगल किया
+    गया।
+  wwcConfigGUIToggleGuidelinesAIChecksButton: टॉगल दिशानिर्देश AI चेक
+  wwctTranslationErrorActionBar: एरर
+  wwcConfigGUIObjectTranslationConcurrencyButton: ऑब्जेक्ट ट्रांसलेशन कॉन्करेंसी बदलें
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ऑब्जेक्ट अनुवाद समवर्ती
+    सीमा सफलतापूर्वक सेट की गई।
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ऑब्जेक्ट अनुवाद
+    समवर्ती सीमा 1 या उससे अधिक होनी चाहिए।
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: वर्तमान ऑब्जेक्ट
+    अनुवाद समवर्ती सीमा {0} है। नंबर 1 या इससे बड़ा टाइप करें।
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: config.yml में अमान्य ऑब्जेक्ट
+    अनुवाद समवर्ती सीमा सेट की गई है। मान कम से कम 1 होना चाहिए। डिफ़ॉल्ट रूप से 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: गार्डराइल्स का उपयोग करने के लिए AI प्रदाता
+    को सक्षम होना चाहिए।
+  wwcConfigTranslationCapacityAuto: 'अनुवाद क्षमता {0} सक्रिय अनुवादों और {1} पंक्तिबद्ध
+    अनुवादों (JVM प्रोसेसर: {2}) के लिए स्वतः हल हो जाती है।'
+  wwcConfigConversationTranslationCapacitySuccess: अनुवाद क्षमता सीमा सफलतापूर्वक
+    सेट की गई।
+  wwcConfigGUITranslationCapacityButton: अनुवाद क्षमता बदलें
+  wwcConfigTranslationCapacityInvalid: config.yml में अमान्य अनुवाद क्षमता सीमा सेट
+    की गई है। ऑटो या 1 या उससे अधिक के लिए 0 का उपयोग करें। स्वचालित रूप से डिफ़ॉल्ट
+    रूप से...
+  wwcConfigTranslationCapacityManual: अनुवाद क्षमता {0} सक्रिय अनुवादों और {1} पंक्तिबद्ध
+    अनुवादों पर सेट की गई है।
+  wwcConfigConversationTranslationCapacityInvalid: ऑटो या 1 या उससे अधिक के लिए अनुवाद
+    क्षमता सीमा 0 होनी चाहिए।
+  wwcConfigConversationTranslationCapacityInput: वर्तमान अनुवाद क्षमता सीमा {0} ({1}
+    सक्रिय, {2} पंक्तिबद्ध) है। ऑटो या नंबर 1 या उससे अधिक के लिए 0 टाइप करें।
 

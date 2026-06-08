@@ -769,4 +769,67 @@ Messages:
   wwcConfigGUISendActionBarButton: యాక్షన్ బార్లను పంపండి
   wwcConfigActionBarInvalid: config.yml లో సెట్ చేయబడిన యాక్షన్ బార్ సెట్టింగ్ చెల్లని
     పంపండి. నిజానికి డిఫాల్టింగ్...
+  wwcConfigGUIInputMethodConversation: సంభాషణ
+  wwcAIGuidelinesBlocked: ఈ సందేశం మా అనువాద మార్గదర్శకాల ద్వారా నిరోధించబడింది.
+  wwcConfigGUIGuidelinesAIModelButton: AI మోడల్ను మార్గదర్శకాలను మార్చండి
+  wwcConfigGUIOpenAICompatibleURLButton: OpenAI అనుకూల URL ను మార్చండి
+  wwcConfigConversationGuidelinesAIModelSuccess: మార్గదర్శకాలు AI మోడల్ విజయవంతంగా
+    సెట్ చేయబడింది.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI అనుకూల API కీ విజయవంతంగా
+    సెట్ చేయబడింది.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI అనుకూల URL విజయవంతంగా సెట్
+    చేయబడింది.
+  wwcConfigConversationOpenAICompatibleURLInput: ప్రస్తుత URL {0}. దయచేసి OpenAI అనుకూలమైన
+    కోసం ఒక URL ను ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationOpenAICompatibleModelInput: ప్రస్తుత మోడల్ {0}. దయచేసి OpenAI
+    అనుకూలమైన కోసం ఒక మోడల్ను ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUIGuidelinesAIPromptButton: మార్గదర్శకాలను మార్చండి AI ప్రాంప్ట్
+  wwcConfigGUIOpenAICompatiblePromptButton: OpenAI అనుకూల ప్రాంప్ట్ను మార్చండి
+  wwcConfigGUIToggleOpenAICompatibleButton: OpenAI అనుకూలంగా టోగుల్ చేయండి
+  wwcConfigConversationInputMethodSuccess: ఇన్పుట్ పద్ధతి {0} కు సెట్ చేయబడింది.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI అనుకూల మోడల్ విజయవంతంగా
+    సెట్ చేయబడింది.
+  wwcConfigGUIOpenAICompatibleButton: ఓపెన్ AI అనుకూలమైనది
+  wwcConfigGUIInputMethodPaperDialog: పేపర్ డైలాగ్
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: OpenAI అనుకూల API కీని మార్చండి
+  wwcConfigGUIInputMethodButton: ఇన్పుట్ విధానం
+  wwcConfigGUIInputMethodAuto: స్వయం చాలకంగా
+  wwcConfigConversationGuidelinesAIModelInput: ప్రస్తుత మార్గదర్శకాల AI మోడల్ {0}.
+    దయచేసి ఒక మోడల్ను ఇన్పుట్ చేయండి, క్రియాశీల ప్రొవైడర్ మోడల్ను ఉపయోగించడానికి క్లియర్
+    టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUIOpenAICompatibleModelButton: OpenAI అనుకూల మోడల్ను మార్చండి
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: మార్గదర్శకాలు AI తనిఖీలను విజయవంతంగా
+    టోగల్ చేశాయి.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: ప్రస్తుత API కీ {0}. దయచేసి OpenAI
+    అనుకూలమైన కోసం ఒక API కీని ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.
+  wwcConfigGUIInputMethodCurrent: 'ప్రస్తుత: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: OpenAI అనుకూలంగా విజయవంతంగా టోగల్ చేయబడింది.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: మార్గదర్శకాలను AI తనిఖీలను టోగుల్ చేయండి
+  wwctTranslationErrorActionBar: లోపం
+  wwcConfigGUIObjectTranslationConcurrencyButton: ఆబ్జెక్ట్ అనువాద సమానతను మార్చండి
+  wwcConfigConversationObjectTranslationConcurrencySuccess: ఆబ్జెక్ట్ అనువాద సమసమాన
+    పరిమితి విజయవంతంగా సెట్ చేయబడింది.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: ఆబ్జెక్ట్ అనువాద
+    సమసమాన పరిమితి 1 లేదా అంతకంటే ఎక్కువ ఉండాలి.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: ప్రస్తుత ఆబ్జెక్ట్
+    అనువాద సమసమాన పరిమితి {0}. సంఖ్య 1 లేదా అంతకంటే ఎక్కువ టైప్ చేయండి.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: చెల్లని వస్తువు అనువాద సమసమాన
+    పరిమితి config.yml లో సెట్ చేయబడింది. విలువ కనీసం 1 ఉండాలి. 4 కు డిఫాల్టింగ్...
+  wwcConfigGUIGuidelinesAIDisabledReason: గార్డ్రెయిల్స్ ఉపయోగించడానికి AI ప్రొవైడర్ను
+    తప్పనిసరిగా ఎనేబుల్ చేయాలి.
+  wwcConfigTranslationCapacityAuto: 'అనువాద సామర్థ్యం {0} క్రియాశీల అనువాదాలు మరియు
+    {1} క్యూడ్ అనువాదాలకు స్వయంచాలకంగా పరిష్కరించబడింది (JVM ప్రాసెసర్లు: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: అనువాద సామర్థ్య పరిమితి విజయవంతంగా
+    సెట్ చేయబడింది.
+  wwcConfigGUITranslationCapacityButton: అనువాద సామర్థ్యాన్ని మార్చండి
+  wwcConfigTranslationCapacityInvalid: config.yml లో చెల్లని అనువాద సామర్థ్య పరిమితి
+    సెట్ చేయబడింది. ఆటో లేదా 1 లేదా అంతకంటే ఎక్కువ కోసం 0 ఉపయోగించండి. ఆటోకు డిఫాల్టింగ్...
+  wwcConfigTranslationCapacityManual: అనువాద సామర్థ్యం {0} క్రియాశీల అనువాదాలు మరియు
+    {1} క్యూడ్ అనువాదాలకు సెట్ చేయబడింది.
+  wwcConfigConversationTranslationCapacityInvalid: అనువాద సామర్థ్య పరిమితి ఆటో లేదా
+    1 లేదా అంతకంటే ఎక్కువ కోసం 0 ఉండాలి.
+  wwcConfigConversationTranslationCapacityInput: ప్రస్తుత అనువాద సామర్థ్య పరిమితి
+    {0} ({1} యాక్టివ్, {2} క్యూడ్). ఆటో లేదా సంఖ్య 1 లేదా అంతకంటే ఎక్కువ కోసం 0 అని
+    టైప్ చేయండి.
 

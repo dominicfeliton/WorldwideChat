@@ -574,4 +574,51 @@ Messages:
   wwcConfigConversationSendActionBarSuccess: 成功切換傳送動作列。
   wwcConfigGUISendActionBarButton: 傳送動作列
   wwcConfigActionBarInvalid: 在 config.yml 中設定無效的傳送動作列設定。預設為 true...
+  wwcConfigGUIInputMethodConversation: 對話
+  wwcAIGuidelinesBlocked: 此訊息已被我們的翻譯準則封鎖。
+  wwcConfigGUIGuidelinesAIModelButton: 變更指引人工智慧模型
+  wwcConfigGUIOpenAICompatibleURLButton: 更改 OpenAI 相容的網址
+  wwcConfigConversationGuidelinesAIModelSuccess: 指南 AI 模型設置成功。
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: 成功設定 OpenAI 相容的 API 金鑰。
+  wwcConfigConversationOpenAICompatibleURLSuccess: 成功設定 OpenAI 相容網址。
+  wwcConfigConversationOpenAICompatibleURLInput: 目前的網址為 {0}。請輸入 OpenAI 相容的網址，或輸入 0
+    以返回。
+  wwcConfigConversationOpenAICompatibleModelInput: 目前的模型是 {0}。請輸入適用於 OpenAI 相容的模型，或輸入
+    0 以返回。
+  wwcConfigGUIGuidelinesAIPromptButton: 變更準則 AI 提示
+  wwcConfigGUIOpenAICompatiblePromptButton: 更改 OpenAI 兼容的提示
+  wwcConfigGUIToggleOpenAICompatibleButton: 切換與開放 AI 相容
+  wwcConfigConversationInputMethodSuccess: 輸入方法設定為 {0}。
+  wwcConfigConversationOpenAICompatibleModelSuccess: 成功設置 OpenAI 相容模型。
+  wwcConfigGUIOpenAICompatibleButton: 與開放 AI 相容
+  wwcConfigGUIInputMethodPaperDialog: 紙張對話方塊
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: 更改 OpenAI 相容的 API 密鑰
+  wwcConfigGUIInputMethodButton: 輸入方法
+  wwcConfigGUIInputMethodAuto: 汽車
+  wwcConfigConversationGuidelinesAIModelInput: 目前的指引人工智慧模型為 {0}。請輸入模型，輸入 clear 以使用活動提供者模型，或鍵入
+    0 返回。
+  wwcConfigGUIOpenAICompatibleModelButton: 更改 OpenAI 兼容模型
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: 成功切換指南 AI 檢查。
+  wwcConfigConversationOpenAICompatibleApiKeyInput: 目前的 API 密鑰是 {0}。請輸入適用於 OpenAI
+    相容的 API 密鑰，或鍵入 0 以返回。
+  wwcConfigGUIInputMethodCurrent: 當前：{0}
+  wwcConfigGUIOpenAICompatibleToggleSuccess: 成功切換開放 AI 兼容。
+  wwcConfigGUIToggleGuidelinesAIChecksButton: 切換指導方針 AI 檢查
+  wwctTranslationErrorActionBar: 錯誤
+  wwcConfigGUIObjectTranslationConcurrencyButton: 變更物件轉換並行
+  wwcConfigConversationObjectTranslationConcurrencySuccess: 成功設定物件轉換並行限制。
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: 物件轉換並行限制必須為 1 或更大。
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: 目前的物件轉換並行性限制為 {0}。輸入
+    1 或更大的數字。
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: 在 config.yml 中設置了無效的物件轉換並行限制。該值必須至少為
+    1。預設為 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: 必須啟用 AI 提供者才能使用護欄。
+  wwcConfigTranslationCapacityAuto: 翻譯容量會自動解析為 {0} 作用中翻譯和 {1} 佇列翻譯 (JVM 處理器：{2})。
+  wwcConfigConversationTranslationCapacitySuccess: 成功設定翻譯容量限制。
+  wwcConfigGUITranslationCapacityButton: 變更翻譯容量
+  wwcConfigTranslationCapacityInvalid: 在 config.yml 中設置了無效的翻譯容量限制。使用 0 表示自動或 1 或更高。預設為自動...
+  wwcConfigTranslationCapacityManual: 翻譯容量設定為 {0} 作用中翻譯和 {1} 佇列翻譯。
+  wwcConfigConversationTranslationCapacityInvalid: 自動轉譯容量限制必須為 0 或 1 或更高。
+  wwcConfigConversationTranslationCapacityInput: 目前的翻譯容量限制為 {0} ({1} 作用中、{2} 佇列)。輸入
+    0 表示自動或數字 1 或更大。
 

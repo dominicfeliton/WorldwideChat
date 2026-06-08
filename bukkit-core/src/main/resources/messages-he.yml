@@ -684,4 +684,58 @@ Messages:
   wwcConfigGUISendActionBarButton: שלח סרגלי פעולה
   wwcConfigActionBarInvalid: הגדרת שורת פעולות שליחה לא חוקית שהוגדרה ב- config.yml.
     ברירת מחדל נכון...
+  wwcConfigGUIInputMethodConversation: שיחה
+  wwcAIGuidelinesBlocked: הודעה זו נחסמה על ידי הנחיות התרגום שלנו.
+  wwcConfigGUIGuidelinesAIModelButton: שינוי הנחיות מודל AI
+  wwcConfigGUIOpenAICompatibleURLButton: שנה כתובת אתר תואמת OpenAI
+  wwcConfigConversationGuidelinesAIModelSuccess: הנחיות מודל AI נקבע בהצלחה.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: מפתח API תואם OpenAI הוגדר בהצלחה.
+  wwcConfigConversationOpenAICompatibleURLSuccess: כתובת אתר תואמת OpenAI הוגדרה בהצלחה.
+  wwcConfigConversationOpenAICompatibleURLInput: כתובת האתר הנוכחית היא {0}. אנא הזן
+    כתובת אתר עבור OpenAI Compatible, או הקלד 0 כדי לחזור.
+  wwcConfigConversationOpenAICompatibleModelInput: המודל הנוכחי הוא {0}. אנא הזן דגם
+    עבור OpenAI Compatible, או הקלד 0 כדי לחזור.
+  wwcConfigGUIGuidelinesAIPromptButton: שינוי הנחיות הבינה המלאכותית
+  wwcConfigGUIOpenAICompatiblePromptButton: שינוי הנחיה תואמת OpenAI
+  wwcConfigGUIToggleOpenAICompatibleButton: החלף תואם OpenAI
+  wwcConfigConversationInputMethodSuccess: שיטת הקלט מוגדרת ל- {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: דגם תואם OpenAI הוגדר בהצלחה.
+  wwcConfigGUIOpenAICompatibleButton: תואם OpenAI
+  wwcConfigGUIInputMethodPaperDialog: דיאלוג נייר
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: שנה מפתח API תואם OpenAI
+  wwcConfigGUIInputMethodButton: שיטת קלט
+  wwcConfigGUIInputMethodAuto: אוטומטי
+  wwcConfigConversationGuidelinesAIModelInput: מודל ההנחיות הנוכחי של AI הוא {0}.
+    אנא הזן דגם, הקלד clear כדי להשתמש במודל הספק הפעיל, או הקלד 0 כדי לחזור.
+  wwcConfigGUIOpenAICompatibleModelButton: שנה דגם תואם OpenAI
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: החלפת בהצלחה בדיקות בהנחיות AI.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: מפתח ה- API הנוכחי הוא {0}. אנא
+    הזן מפתח API עבור תואם OpenAI, או הקלד 0 כדי לחזור.
+  wwcConfigGUIInputMethodCurrent: 'נוכחי: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: החלפת תואמת OpenAI בהצלחה.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: החלפת הנחיות בדיקות AI
+  wwctTranslationErrorActionBar: שגיאה
+  wwcConfigGUIObjectTranslationConcurrencyButton: שינוי במקביל לתרגום אובייקט
+  wwcConfigConversationObjectTranslationConcurrencySuccess: מגבלת מקבילות תרגום אובייקטים
+    מוגדרת בהצלחה.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: מגבלת מקבילות תרגום
+    אובייקט חייבת להיות 1 ומעלה.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: מגבלת המקבילות הנוכחית
+    של תרגום אובייקטים היא {0}. הקלד מספר 1 ומעלה.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: מגבלת מקבילות תרגום אובייקטים
+    לא חוקית שהוגדרה ב- config.yml. הערך חייב להיות לפחות 1. ברירת מחדל ל -4...
+  wwcConfigGUIGuidelinesAIDisabledReason: ספק AI חייב להיות מופעל כדי להשתמש במעקות
+    בטיחות.
+  wwcConfigTranslationCapacityAuto: 'יכולת התרגום נפתרה אוטומטית לתרגומים פעילים {0}
+    ותרגומים בתורים {1} (מעבדי JVM: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: מגבלת קיבולת התרגום הוגדרה בהצלחה.
+  wwcConfigGUITranslationCapacityButton: שינוי יכולת התרגום
+  wwcConfigTranslationCapacityInvalid: מגבלת קיבולת תרגום לא חוקית שהוגדרה ב- config.yml.
+    השתמש ב- 0 עבור אוטומטי או 1 ומעלה. ברירת מחדל לאוטומטי...
+  wwcConfigTranslationCapacityManual: קיבולת התרגום מוגדרת ל- {0} תרגומים פעילים ו-{1}
+    תרגומים בתורים.
+  wwcConfigConversationTranslationCapacityInvalid: מגבלת קיבולת התרגום חייבת להיות
+    0 עבור אוטומטי או 1 ומעלה.
+  wwcConfigConversationTranslationCapacityInput: מגבלת קיבולת התרגום הנוכחית היא {0}
+    ({1} פעיל, {2} בתור). הקלד 0 עבור אוטומטי או מספר 1 ומעלה.
 

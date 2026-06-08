@@ -47,43 +47,8 @@ public class WWCTranslate extends BasicCommand {
             return true;
         }
 
-        /* Existing translator checks */
-        if (!isGlobal) {
-            // User wants to exit their own translation session.
-            if (!isConsoleSender && args.length > 0 && (Bukkit.getServer().getPlayerExact(args[0]) == null
-                    || args[0].equalsIgnoreCase(sender.getName())) && main.isActiveTranslator((Player) sender)) {
-                ActiveTranslator currTarget = main.getActiveTranslator((Player) sender);
-                main.removeActiveTranslator(currTarget);
-                refs.sendMsg("wwctTranslationStopped", sender);
-                refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
-                if ((args.length >= 1 && args[0].equalsIgnoreCase("Stop")) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
-                    return true;
-                }
-            } else if (args.length > 0 && Bukkit.getServer().getPlayerExact(args[0]) != null
-                    && main.isActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]))) {
-                if (!sender.hasPermission("worldwidechat.wwct.otherplayers")) {
-                    refs.badPermsMessage("worldwidechat.wwct.otherplayers", sender);
-                    return false;
-                }
-                Player testPlayer = Bukkit.getServer().getPlayerExact(args[0]);
-                main.removeActiveTranslator(main.getActiveTranslator(testPlayer));
-                refs.sendMsg("wwctTranslationStopped", testPlayer);
-                refs.sendMsg("wwctTranslationStoppedOtherPlayer", "&6" + args[0], sender);
-                refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
-                if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
-                    return true;
-                }
-            }
-        } else if (args.length > 0 && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
-            main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
-            for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-                refs.sendMsg("wwcgTranslationStopped", eaPlayer);
-            }
-            refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
-            refs.sendMsg("wwcgTranslationStopped", main.getServer().getConsoleSender());
-            if (args[0].equalsIgnoreCase("Stop")) {
-                return true;
-            }
+        if (handleStopRequests()) {
+            return true;
         }
 
         /* NEW TRANSLATION SESSION: Player has given us one argument */
@@ -117,6 +82,72 @@ public class WWCTranslate extends BasicCommand {
         }
 
         return false;
+    }
+
+    private boolean handleStopRequests() {
+        if (args.length == 0) {
+            return false;
+        }
+
+        if (isGlobal) {
+            if (args.length == 1 && isStopArg(args[0])) {
+                stopGlobalTranslation();
+                return true;
+            }
+            return false;
+        }
+
+        if (!isConsoleSender && args.length == 1 && isStopArg(args[0])) {
+            stopPlayerTranslation((Player) sender, true);
+            return true;
+        }
+
+        if (args.length == 2 && isStopArg(args[1])) {
+            Player target = Bukkit.getServer().getPlayerExact(args[0]);
+            if (target == null) {
+                refs.sendMsg("wwcPlayerNotFound", "&6" + args[0], "&c", sender);
+                return true;
+            }
+
+            boolean targetIsSelf = !isConsoleSender && target.getUniqueId().equals(((Player) sender).getUniqueId());
+            if (!targetIsSelf && !sender.hasPermission("worldwidechat.wwct.otherplayers")) {
+                refs.badPermsMessage("worldwidechat.wwct.otherplayers", sender);
+                return true;
+            }
+
+            stopPlayerTranslation(target, targetIsSelf);
+            return true;
+        }
+
+        return false;
+    }
+
+    private boolean isStopArg(String arg) {
+        return arg != null && arg.equalsIgnoreCase("stop");
+    }
+
+    private void stopPlayerTranslation(Player target, boolean targetIsSelf) {
+        if (main.isActiveTranslator(target)) {
+            main.removeActiveTranslator(main.getActiveTranslator(target));
+        }
+
+        refs.sendMsg("wwctTranslationStopped", target);
+        if (!targetIsSelf) {
+            refs.sendMsg("wwctTranslationStoppedOtherPlayer", "&6" + target.getName(), sender);
+        }
+        refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
+    }
+
+    private void stopGlobalTranslation() {
+        if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
+            main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+        }
+
+        for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
+            refs.sendMsg("wwcgTranslationStopped", eaPlayer);
+        }
+        refs.playSound(CommonRefs.SoundType.STOP_TRANSLATION, sender);
+        refs.sendMsg("wwcgTranslationStopped", main.getServer().getConsoleSender());
     }
 
     private boolean handleGuiRequests() {

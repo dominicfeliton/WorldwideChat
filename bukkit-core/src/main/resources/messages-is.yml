@@ -771,4 +771,66 @@ Messages:
   wwcConfigGUISendActionBarButton: Senda aðgerðastikur
   wwcConfigActionBarInvalid: Ógild stilling fyrir sendingarstiku sett í config.yml.
     Vanskil á satt...
+  wwcConfigGUIInputMethodConversation: Samtal
+  wwcAIGuidelinesBlocked: Þessi skilaboð var lokað af þýðingarleiðbeiningum okkar.
+  wwcConfigGUIGuidelinesAIModelButton: Breyta viðmiðunarreglum AI líkani
+  wwcConfigGUIOpenAICompatibleURLButton: Breyta OpenAI samhæfu vefslóð
+  wwcConfigConversationGuidelinesAIModelSuccess: Leiðbeiningar AI líkan settar með
+    góðum árangri.
+  wwcConfigConversationOpenAICompatibleApiKeySuccess: OpenAI samhæft API lykill sett
+    með góðum árangri.
+  wwcConfigConversationOpenAICompatibleURLSuccess: OpenAI samhæft vefslóð sett með
+    góðum árangri.
+  wwcConfigConversationOpenAICompatibleURLInput: Núverandi vefslóð er {0}. Vinsamlegast
+    sláðu inn slóð fyrir OpenAI Compatible, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationOpenAICompatibleModelInput: Núverandi fyrirmynd er {0}. Vinsamlegast
+    sláðu inn líkan fyrir OpenAI Compatible, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIGuidelinesAIPromptButton: Breytingarleiðbeiningar AI hvetja
+  wwcConfigGUIOpenAICompatiblePromptButton: Breyta OpenAI samhæft hvetja
+  wwcConfigGUIToggleOpenAICompatibleButton: Skiptu um OpenAI samhæft
+  wwcConfigConversationInputMethodSuccess: Inntaksaðferð stillt á {0}.
+  wwcConfigConversationOpenAICompatibleModelSuccess: OpenAI Samhæft líkan sett með
+    góðum árangri.
+  wwcConfigGUIOpenAICompatibleButton: OpenAI samhæft
+  wwcConfigGUIInputMethodPaperDialog: Pappírsgluggi
+  wwcConfigGUIOpenAICompatibleAPIKeyButton: Breyta OpenAI samhæft API lykil
+  wwcConfigGUIInputMethodButton: Inntaksaðferð
+  wwcConfigGUIInputMethodAuto: Sjálfvirkt
+  wwcConfigConversationGuidelinesAIModelInput: Núverandi leiðbeiningar AI líkan er
+    {0}. Vinsamlegast sláðu inn líkan, sláðu inn skýrt til að nota virka þjónustuveitulíkanið
+    eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIOpenAICompatibleModelButton: Breyta OpenAI samhæft líkan
+  wwcConfigGUIGuidelinesAIChecksToggleSuccess: Tekist að skipta um leiðbeiningar AI
+    eftirlit.
+  wwcConfigConversationOpenAICompatibleApiKeyInput: Núverandi API lykill er {0}. Vinsamlegast
+    sláðu inn API lykil fyrir OpenAI Compatible, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIInputMethodCurrent: 'Núverandi: {0}'
+  wwcConfigGUIOpenAICompatibleToggleSuccess: Skipt var um OpenAI samhæft með góðum
+    árangri.
+  wwcConfigGUIToggleGuidelinesAIChecksButton: Skiptu um leiðbeiningar um AI athuganir
+  wwctTranslationErrorActionBar: Villa
+  wwcConfigGUIObjectTranslationConcurrencyButton: Breyta samtíma þýðingar á hlutum
+  wwcConfigConversationObjectTranslationConcurrencySuccess: Samtímamörk fyrir þýðingu
+    hlutar sett með góðum árangri.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInvalid: Samtímamörk hlutarþýðingar
+    verða að vera 1 eða hærri.
+  wwcConfigConversationObjectTranslationConcurrencyMinimumInput: Núverandi samtímamörk
+    hlutarþýðingar er {0}. Sláðu inn númer 1 eða stærra.
+  wwcConfigObjectTranslationConcurrencyMinimumInvalid: Ógild hlutarþýðingartakmörk
+    sett í config.yml. Gildi verður að vera að minnsta kosti 1. Sjálfgefið að 4...
+  wwcConfigGUIGuidelinesAIDisabledReason: AI-veitandi verður að vera virkur til að
+    nota Guardrails.
+  wwcConfigTranslationCapacityAuto: 'Þýðingargeta sjálfkrafa leyst í {0} virkar þýðingar
+    og {1} biðröð þýðingar (JVM örgjörvum: {2}).'
+  wwcConfigConversationTranslationCapacitySuccess: Þýðingargetumörk sett með góðum
+    árangri.
+  wwcConfigGUITranslationCapacityButton: Breyta þýðingargetu
+  wwcConfigTranslationCapacityInvalid: Ógild þýðingargetumörk sett í config.yml. Notaðu
+    0 fyrir sjálfvirkt eða 1 eða meira. Sjálfgefið sjálfvirkt...
+  wwcConfigTranslationCapacityManual: Þýðingargeta stillt á {0} virkar þýðingar og
+    {1} í biðröð þýðingar.
+  wwcConfigConversationTranslationCapacityInvalid: Takmörk þýðingargetu verða að vera
+    0 fyrir sjálfvirkt eða 1 eða meira.
+  wwcConfigConversationTranslationCapacityInput: Núverandi þýðingargetumörk er {0}
+    ({1} virkur, {2} í biðröð). Sláðu inn 0 fyrir sjálfvirkt eða númer 1 eða stærri.
 

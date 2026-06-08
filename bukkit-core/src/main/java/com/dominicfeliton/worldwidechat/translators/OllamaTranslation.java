@@ -4,10 +4,11 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
 import com.google.gson.Gson;
-import io.github.ollama4j.OllamaAPI;
+import com.google.gson.JsonSyntaxException;
+import io.github.ollama4j.Ollama;
+import io.github.ollama4j.models.generate.OllamaGenerateRequest;
 import io.github.ollama4j.models.response.OllamaResult;
 import io.github.ollama4j.utils.OptionsBuilder;
-import io.github.ollama4j.utils.PromptBuilder;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.util.HashMap;
@@ -18,20 +19,62 @@ import java.util.concurrent.ExecutorService;
 
 public class OllamaTranslation extends BasicTranslation {
 
-    private OllamaAPI api;
+    private Ollama api;
 
     private YamlConfiguration aiConf = main.getConfigManager().getAIConfig();
     private YamlConfiguration conf = main.getConfigManager().getMainConfig();
 
     public OllamaTranslation(String url, boolean isInitializing, ExecutorService callbackExecutor) {
         super(isInitializing, callbackExecutor);
-        api = new OllamaAPI(url);
-        api.setVerbose(false);
+        api = new Ollama(url);
+        api.setRequestTimeoutSeconds(WorldwideChat.translatorConnectionTimeoutSeconds);
     }
 
     @Override
     protected translationTask createTranslationTask(String textToTranslate, String inputLang, String outputLang) {
         return new ollamaTask(textToTranslate, inputLang, outputLang);
+    }
+
+    public void checkGuidelines(String exactMessage, String model, String systemPrompt) throws Exception {
+        String activeModel = model;
+        if (activeModel == null || activeModel.isBlank()) {
+            activeModel = conf.getString("Translator.ollamaModel");
+        }
+
+        String prompt = (systemPrompt == null ? "" : systemPrompt) + "\n\n" + formatUserQueryBlock(exactMessage);
+        OllamaGenerateRequest request = OllamaGenerateRequest.builder()
+                .withModel(activeModel)
+                .withPrompt(prompt)
+                .withStreaming(false)
+                .withOptions(new OptionsBuilder().build())
+                .build();
+
+        refs.debugMsg("Using Ollama Guidelines AI model: " + activeModel);
+        OllamaResult rawResponse = api.generate(request, null);
+        String responseBody = rawResponse == null ? null : rawResponse.getResponse();
+        refs.debugMsg(responseBody);
+
+        validateGuidelinesResponse(responseBody);
+    }
+
+    static void validateGuidelinesResponse(String responseBody) throws TranslationFailureException {
+        GuidelinesAIResponseParser.GuidelinesAIResponse response =
+                GuidelinesAIResponseParser.parseRawResponse(responseBody);
+        if (response.isTranslatable()) {
+            return;
+        }
+        if ("Guidelines".equals(response.getReason())) {
+            throw new TranslationFailureException(
+                    "Guidelines",
+                    "Ollama Guidelines AI check blocked translation: " + response.getReason(),
+                    true
+            );
+        }
+        throw new TranslationFailureException(
+                "General",
+                "Ollama Guidelines AI check failed: " + response.getReason(),
+                true
+        );
     }
 
     private class ollamaTask extends translationTask {
@@ -100,20 +143,46 @@ public class OllamaTranslation extends BasicTranslation {
             // If we do not know the input lang, Ollama should guess.
 
             /* Actual translation */
-            PromptBuilder prompt = new PromptBuilder().add(main.getAISystemPrompt())
-                    .addLine("Input Lang: " + inputLang)
-                    .addLine("Output Lang: " + outputLang)
-                    .addLine("Text To Translate: " + textToTranslate);
+            String prompt = main.getAISystemPrompt() + "\n\n" +
+                    formatTranslationInput(inputLang, outputLang, textToTranslate);
 
-            OllamaResult response = api.generate(
-                    conf.getString("Translator.ollamaModel"),
-                    prompt.build(),
-                    false,
-                    new OptionsBuilder().build());
-            response.setResponseTime(WorldwideChat.translatorConnectionTimeoutSeconds);
+            OllamaGenerateRequest request = OllamaGenerateRequest.builder()
+                    .withModel(conf.getString("Translator.ollamaModel"))
+                    .withPrompt(prompt)
+                    .withStreaming(false)
+                    .withOptions(new OptionsBuilder().build())
+                    .build();
+
+            refs.debugMsg("Using Ollama model: " + conf.getString("Translator.ollamaModel"));
+            OllamaResult response = api.generate(request, null);
 
             refs.debugMsg(response.getResponse());
-            return new Gson().fromJson(response.getResponse(), Response.class).getOutput();
+            Response parsedResponse;
+            try {
+                parsedResponse = new Gson().fromJson(response.getResponse(), Response.class);
+            } catch (JsonSyntaxException | IllegalStateException ex) {
+                throw new TranslationFailureException("General", "Ollama returned malformed JSON.", false);
+            }
+            if (parsedResponse == null) {
+                throw new TranslationFailureException("General", "Ollama returned an empty response.", false);
+            }
+            if (!parsedResponse.isSuccess()) {
+                boolean guidelinesFailure = "Guidelines".equals(parsedResponse.getReason())
+                        || containsGuidelinesBlockedSentinel(parsedResponse.getOutput());
+                throw new TranslationFailureException(
+                        guidelinesFailure ? "Guidelines" : parsedResponse.getReason(),
+                        "Ollama translation failed: " + parsedResponse.getReason(),
+                        guidelinesFailure
+                );
+            }
+            if (containsGuidelinesBlockedSentinel(parsedResponse.getOutput())) {
+                throw new TranslationFailureException("Guidelines", "Ollama returned a blocked sentinel.", true);
+            }
+            if (parsedResponse.getOutput() == null || parsedResponse.getOutput().isBlank()
+                    || parsedResponse.getOutput().equalsIgnoreCase("none")) {
+                throw new TranslationFailureException("General", "Ollama returned an empty translation.", false);
+            }
+            return parsedResponse.getOutput();
         }
     }
 
