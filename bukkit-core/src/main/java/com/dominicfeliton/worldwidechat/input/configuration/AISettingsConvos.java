@@ -6,7 +6,6 @@ import com.dominicfeliton.worldwidechat.WorldwideChat;
 import com.dominicfeliton.worldwidechat.WorldwideChatHelper;
 import com.dominicfeliton.worldwidechat.inventory.WWCInventoryManager;
 import com.dominicfeliton.worldwidechat.inventory.configuration.MenuGui;
-import com.dominicfeliton.worldwidechat.translators.OpenAITranslation;
 import com.dominicfeliton.worldwidechat.util.CommonRefs;
 import com.dominicfeliton.worldwidechat.util.GenericRunnable;
 import com.dominicfeliton.worldwidechat.util.SupportedLang;
@@ -34,7 +33,9 @@ public class AISettingsConvos {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             Player currPlayer = ((Player) context.getForWhom());
             currPlayer.closeInventory();
-            String currentModel = OpenAITranslation.getGuidelinesAIModel(main.getConfigManager().getMainConfig(), getDefaultAIModel());
+            String currentModel = CommonRefs.resolveGuidelinesAIModel(
+                    main.getConfigManager().getMainConfig(),
+                    getDefaultAIModel());
             if (currentModel == null || currentModel.isBlank()) {
                 currentModel = getDefaultAIModel();
             }
@@ -56,11 +57,17 @@ public class AISettingsConvos {
         if (main.getTranslatorName().equals("OpenAI Compatible")) {
             return main.getConfigManager().getMainConfig().getString("Translator.openAICompatibleModel");
         }
+        if (main.getTranslatorName().equals("Ollama")) {
+            return main.getConfigManager().getMainConfig().getString("Translator.ollamaModel");
+        }
         if (main.getTranslatorName().equals("ChatGPT")) {
             return main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel");
         }
         if (main.getConfigManager().getMainConfig().getBoolean("Translator.useOpenAICompatible")) {
             return main.getConfigManager().getMainConfig().getString("Translator.openAICompatibleModel");
+        }
+        if (main.getConfigManager().getMainConfig().getBoolean("Translator.useOllama")) {
+            return main.getConfigManager().getMainConfig().getString("Translator.ollamaModel");
         }
         return main.getConfigManager().getMainConfig().getString("Translator.chatGPTModel");
     }

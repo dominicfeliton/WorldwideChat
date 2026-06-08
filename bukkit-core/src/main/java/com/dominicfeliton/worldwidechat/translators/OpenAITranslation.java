@@ -69,14 +69,6 @@ public class OpenAITranslation extends BasicTranslation {
         }
     }
 
-    public static String getGuidelinesAIModel(YamlConfiguration conf, String defaultModel) {
-        String guidelinesModel = conf.getString("Translator.guidelinesAIModel", "");
-        if (guidelinesModel != null && !guidelinesModel.isBlank()) {
-            return guidelinesModel.trim();
-        }
-        return defaultModel == null ? "" : defaultModel;
-    }
-
     private class OpenAITask extends translationTask {
         public OpenAITask(String textToTranslate, String inputLang, String outputLang) {
             super(textToTranslate, inputLang, outputLang);
@@ -701,6 +693,13 @@ class GuidelinesAIResponseParser {
             return failure("General");
         }
         return parseContent(responseContent.getText());
+    }
+
+    public static GuidelinesAIResponse parseRawResponse(String jsonResponse) {
+        if (jsonResponse == null || jsonResponse.isBlank()) {
+            return failure("General");
+        }
+        return parseContent(jsonResponse);
     }
 
     private static GuidelinesAIResponse parseContent(String content) {

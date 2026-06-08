@@ -54,7 +54,7 @@ public class CommonRefs {
     /* Important vars */
     protected static WorldwideChat main = WorldwideChat.instance;
 
-    protected static WorldwideChatHelper wwcHelper = main.getServerFactory().getWWCHelper();
+    protected static WorldwideChatHelper wwcHelper = main == null ? null : main.getServerFactory().getWWCHelper();
 
     public static String[] supportedMCVersions = {"26.1", "1.21.11", "1.21.10", "1.21.9", "1.21.8", "1.21.7", "1.21.6", "1.21.5", "1.21.4", "1.21.3", "1.21.2", "1.21.1", "1.20"};
 
@@ -102,6 +102,14 @@ public class CommonRefs {
             if (mainConfig.getBoolean(configKey)) return true;
         }
         return false;
+    }
+
+    public static String resolveGuidelinesAIModel(YamlConfiguration mainConfig, String activeTranslatorModel) {
+        String guidelinesModel = mainConfig.getString("Translator.guidelinesAIModel", "");
+        if (guidelinesModel != null && !guidelinesModel.isBlank()) {
+            return guidelinesModel.trim();
+        }
+        return activeTranslatorModel == null ? "" : activeTranslatorModel;
     }
 
     public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
@@ -1143,22 +1151,45 @@ public class CommonRefs {
             return;
         }
 
-        OpenAIProviderSettings settings = getOpenAIProviderSettings(main.getTranslatorName(), mainConfig);
-        if (settings == null) {
-            debugMsg("Guidelines AI check skipped because active translator is not an OpenAI-style provider.");
-            return;
-        }
-        String guidelinesModel = OpenAITranslation.getGuidelinesAIModel(mainConfig, settings.model());
-
         try {
-            OpenAITranslation openAITranslationInstance = new OpenAITranslation(
-                    settings.apiKey(),
-                    settings.url(),
-                    guidelinesModel,
-                    main.getGuidelinesAIPrompt(),
-                    false,
-                    main.getCallbackExecutor());
-            openAITranslationInstance.checkGuidelines(inMessage);
+            String translatorName = main.getTranslatorName();
+            switch (translatorName) {
+                case "ChatGPT" -> {
+                    OpenAIProviderSettings settings = getOpenAIProviderSettings("ChatGPT", mainConfig);
+                    String guidelinesModel = resolveGuidelinesAIModel(mainConfig, settings.model());
+                    OpenAITranslation openAITranslationInstance = new OpenAITranslation(
+                            settings.apiKey(),
+                            settings.url(),
+                            guidelinesModel,
+                            main.getGuidelinesAIPrompt(),
+                            false,
+                            main.getCallbackExecutor());
+                    openAITranslationInstance.checkGuidelines(inMessage);
+                }
+                case "OpenAI Compatible" -> {
+                    OpenAIProviderSettings settings = getOpenAIProviderSettings("OpenAI Compatible", mainConfig);
+                    String guidelinesModel = resolveGuidelinesAIModel(mainConfig, settings.model());
+                    OpenAITranslation openAITranslationInstance = new OpenAITranslation(
+                            settings.apiKey(),
+                            settings.url(),
+                            guidelinesModel,
+                            main.getGuidelinesAIPrompt(),
+                            false,
+                            main.getCallbackExecutor());
+                    openAITranslationInstance.checkGuidelines(inMessage);
+                }
+                case "Ollama" -> {
+                    String guidelinesModel = resolveGuidelinesAIModel(
+                            mainConfig,
+                            mainConfig.getString("Translator.ollamaModel"));
+                    OllamaTranslation ollamaTranslationInstance = new OllamaTranslation(
+                            mainConfig.getString("Translator.ollamaURL"),
+                            false,
+                            main.getCallbackExecutor());
+                    ollamaTranslationInstance.checkGuidelines(inMessage, guidelinesModel, main.getGuidelinesAIPrompt());
+                }
+                default -> debugMsg("Guidelines AI check skipped because active translator does not support it.");
+            }
         } catch (TranslationFailureException e) {
             throw e;
         } catch (InterruptedException e) {

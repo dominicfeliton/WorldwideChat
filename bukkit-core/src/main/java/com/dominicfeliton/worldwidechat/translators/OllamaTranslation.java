@@ -35,6 +35,48 @@ public class OllamaTranslation extends BasicTranslation {
         return new ollamaTask(textToTranslate, inputLang, outputLang);
     }
 
+    public void checkGuidelines(String exactMessage, String model, String systemPrompt) throws Exception {
+        String activeModel = model;
+        if (activeModel == null || activeModel.isBlank()) {
+            activeModel = conf.getString("Translator.ollamaModel");
+        }
+
+        String prompt = (systemPrompt == null ? "" : systemPrompt) + "\n\n" + formatUserQueryBlock(exactMessage);
+        OllamaGenerateRequest request = OllamaGenerateRequest.builder()
+                .withModel(activeModel)
+                .withPrompt(prompt)
+                .withStreaming(false)
+                .withOptions(new OptionsBuilder().build())
+                .build();
+
+        refs.debugMsg("Using Ollama Guidelines AI model: " + activeModel);
+        OllamaResult rawResponse = api.generate(request, null);
+        String responseBody = rawResponse == null ? null : rawResponse.getResponse();
+        refs.debugMsg(responseBody);
+
+        validateGuidelinesResponse(responseBody);
+    }
+
+    static void validateGuidelinesResponse(String responseBody) throws TranslationFailureException {
+        GuidelinesAIResponseParser.GuidelinesAIResponse response =
+                GuidelinesAIResponseParser.parseRawResponse(responseBody);
+        if (response.isTranslatable()) {
+            return;
+        }
+        if ("Guidelines".equals(response.getReason())) {
+            throw new TranslationFailureException(
+                    "Guidelines",
+                    "Ollama Guidelines AI check blocked translation: " + response.getReason(),
+                    true
+            );
+        }
+        throw new TranslationFailureException(
+                "General",
+                "Ollama Guidelines AI check failed: " + response.getReason(),
+                true
+        );
+    }
+
     private class ollamaTask extends translationTask {
 
         public class Response {
