@@ -6,7 +6,7 @@
 
 ### WorldwideChat is a translation plugin for Spigot, PaperMC, and Folia 1.20+ on Java 21+.
 
-WorldwideChat is compiled as Java 21 bytecode. Paper and MockBukkit 26.1.x require a newer Java runtime for those specific servers/tests; follow the Java requirement for the server version you run.
+WorldwideChat is compiled as Java 21 bytecode. Paper and MockBukkit 26.x require a newer Java runtime for those specific servers/tests; follow the Java requirement for the server version you run.
 
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:
