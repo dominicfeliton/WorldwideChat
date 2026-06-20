@@ -4,7 +4,7 @@
 
   <groupId>com.dominicfeliton.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.50</version>
+  <version>1.51</version>
   <packaging>pom</packaging>
 
   <name>WorldwideChat</name>
@@ -22,13 +22,14 @@
 
   <properties>
     <adventure.version>4.26.1</adventure.version>
-    <flyway.version>12.8.1</flyway.version>
+    <aws.sdk.version>2.46.15</aws.sdk.version>
+    <flyway.version>12.9.0</flyway.version>
     <folia.api.version>26.1.2.build.8-stable</folia.api.version>
     <jackson.annotations.version>2.22</jackson.annotations.version>
     <junit.jupiter.version>6.1.0</junit.jupiter.version>
     <maven.compiler.release>21</maven.compiler.release>
     <mockbukkit.paper.api.version>26.1.2.build.69-stable</mockbukkit.paper.api.version>
-    <mockbukkit.version>4.113.1</mockbukkit.version>
+    <mockbukkit.version>4.113.2</mockbukkit.version>
     <mongock.version>5.5.1</mongock.version>
     <paper.api.version>26.1.2.build.69-stable</paper.api.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -127,17 +128,17 @@
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>translate</artifactId>
-      <version>2.46.5</version>
+      <version>${aws.sdk.version}</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>s3</artifactId>
-      <version>2.46.5</version>
+      <version>${aws.sdk.version}</version>
     </dependency>
     <dependency>
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>url-connection-client</artifactId>
-      <version>2.46.5</version>
+      <version>${aws.sdk.version}</version>
     </dependency>
     <dependency>
       <groupId>org.jsoup</groupId>
@@ -153,7 +154,7 @@
     <dependency>
       <groupId>com.zaxxer</groupId>
       <artifactId>HikariCP</artifactId>
-      <version>7.0.2</version>
+      <version>7.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
